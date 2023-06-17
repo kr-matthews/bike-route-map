@@ -1,4 +1,4 @@
-# Cribbage
+# Bike Route Map
 
 <!-- TODO: add screenshot -->
 <!-- ![Screenshot](public/map.png) -->
@@ -33,6 +33,6 @@ Quick, clean, and simple implementation of a map with an easy-to-use data layer 
 
 ## Flaws
 
-See the [issues](https://github.com/kr-matthews/cribbage/issues) on GitHub, in addition to the following:
+See the [issues](https://github.com/kr-matthews/bike-route-map/issues) on GitHub, in addition to the following:
 
 - So far none, but many will appear...
