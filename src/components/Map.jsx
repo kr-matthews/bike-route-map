@@ -75,7 +75,9 @@ export default function Map() {
             route.segments.map((segment) => (
               <FeatureGroup key={route.name + segment.name}>
                 <Tooltip>
-                  {route.name} ({segment.name})
+                  {segment.name
+                    ? route.name + " (" + segment.name + ")"
+                    : route.name}
                 </Tooltip>
                 <Popup>
                   {/* // <iframe
