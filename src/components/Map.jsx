@@ -116,10 +116,13 @@ function getColour(direction) {
     case "eastbound":
       return "red";
     case "westbound":
-      return "green";
-    case "all":
       return "blue";
-    default:
+    case "northbound":
+      return "green";
+    case "southbound":
       return "purple";
+    case "all":
+    default:
+      return "black";
   }
 }
