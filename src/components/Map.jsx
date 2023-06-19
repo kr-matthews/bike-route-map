@@ -35,52 +35,34 @@ export default function Map() {
         >
           <TileLayer
             // key is required to force re-render when tile layer changes, since `url` is immutable
-            key={"tile-layer"}
+            // key={"tile-layer"}
             attribution={TILE_LAYER.attribution}
             url={TILE_LAYER.url}
           />
-          {/* {BIKE_ROUTE_SEGMENT_DATA.map(
-            (route) =>
-              route.positions.length > 0 && (
-                <Polyline
-                  key={route.name + route.segment + route.direction}
-                  positions={route.positions}
-                  pathOptions={{
-                    color: TILE_LAYER.recommendedColour,
-                    weight: 5,
-                  }}
-                >
-                  <Tooltip>
-                    {route.name} {route.segment}
-                  </Tooltip>
-                  <Popup>
-                    {" "}
-                    {route.video ? (
-                      <iframe
-                        width="300px"
-                        height="220px"
-                        src={route.video}
-                        // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        title="Embedded youtube"
-                      />
-                    ) : (
-                      "No video yet"
-                    )}
-                  </Popup>
-                </Polyline>
-              )
-          )} */}
           {BIKE_ROUTE_DATA.map((route) =>
-            route.segments.map((segment) => (
-              <FeatureGroup key={route.name + segment.name}>
-                <Tooltip>
-                  {segment.name
-                    ? route.name + " (" + segment.name + ")"
-                    : route.name}
-                </Tooltip>
-                <Popup>
-                  {/* // <iframe
+            route.legs.map((leg) => (
+              <FeatureGroup key={route.name + leg.name}>
+                {leg.segments.map(({ directions, positions, videos }) => {
+                  const availableVideos = (videos || directions).filter(
+                    (direction) => !!leg.videos[direction]
+                  );
+                  return (
+                    <Polyline
+                      key={positions.toString()}
+                      positions={positions}
+                      pathOptions={{
+                        color: getColour(directions),
+                        weight: 6,
+                      }}
+                    >
+                      <Tooltip sticky>
+                        {route.name}
+                        {leg.name && " (" + leg.name + ")"}
+                        {availableVideos.length > 0 && " [video]"}
+                      </Tooltip>
+                      {availableVideos.length > 0 && (
+                        <Popup>
+                          {/* // <iframe
                       //   width="300px"
                       //   height="220px"
                       //   src={route.video}
@@ -88,20 +70,12 @@ export default function Map() {
                       //   allowFullScreen
                       //   title="Embedded youtube"
                       // /> */}
-                  Videos: {Object.keys(segment.videos).length}
-                </Popup>
-                {Object.entries(segment.positions).map(
-                  ([direction, positions]) => (
-                    <Polyline
-                      key={direction}
-                      positions={positions}
-                      pathOptions={{
-                        color: getColour(direction),
-                        weight: 5,
-                      }}
-                    />
-                  )
-                )}
+                          Videos for: {availableVideos.join(", ")}
+                        </Popup>
+                      )}
+                    </Polyline>
+                  );
+                })}
               </FeatureGroup>
             ))
           )}
@@ -111,17 +85,24 @@ export default function Map() {
   );
 }
 
-function getColour(direction) {
-  switch (direction) {
+// TODO: display video(s) on click (outside of map? radio buttons per route?)
+// TODO: highlight route on hover (shrink/dim other routes? but keep the clicked route visible)
+// TODO: highlight videoed segments of route on click (maybe? shrink/dim other routes?)
+// TODO: allow filtering (by direction, to only official, by quality, etc)
+// TODO: indicate by default whether route has video (and/or quality of route, whether official or not (dashed line?), etc.)
+// TODO: put `onTop` segments at higher z-index
+
+function getColour(directions) {
+  if (directions.length > 1) return "green";
+  switch (directions[0]) {
     case "eastbound":
-      return "red";
-    case "westbound":
       return "blue";
+    case "westbound":
+      return "magenta";
     case "northbound":
-      return "green";
+      return "red";
     case "southbound":
       return "purple";
-    case "all":
     default:
       return "black";
   }
