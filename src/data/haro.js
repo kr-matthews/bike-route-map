@@ -10,6 +10,7 @@ export const HARO = {
       },
       segments: [
         {
+          description: "all",
           directions: ["eastbound", "westbound"],
           positions: [
             [49.28393, -123.12591],

@@ -11,6 +11,7 @@ export const MIDTOWN = {
       },
       segments: [
         {
+          description: "all",
           directions: ["eastbound", "westbound"],
           positions: [
             [49.2351, -123.19704],
@@ -129,6 +130,7 @@ export const MIDTOWN = {
       videos: { eastbound: null, westbound: null },
       segments: [
         {
+          description: "all",
           directions: ["eastbound", "westbound"],
           positions: [
             // TODO

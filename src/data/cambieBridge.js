@@ -124,7 +124,7 @@ export const CAMBIE_BRIDGE = {
           ],
         },
         {
-          description: "bridge",
+          description: "bridge north",
           onTop: true,
           directions: ["northbound"],
           positions: [
@@ -163,7 +163,7 @@ export const CAMBIE_BRIDGE = {
           ],
         },
         {
-          description: "bridge",
+          description: "bridge south",
           onTop: true,
           directions: ["southbound"],
           positions: [

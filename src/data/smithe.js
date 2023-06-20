@@ -10,6 +10,7 @@ export const SMITHE = {
       },
       segments: [
         {
+          description: "common",
           directions: ["eastbound", "westbound"],
           positions: [
             [49.28393, -123.12591],
@@ -34,6 +35,7 @@ export const SMITHE = {
           ],
         },
         {
+          description: "from bridge",
           directions: ["westbound"],
           positions: [
             [49.27578, -123.1147],

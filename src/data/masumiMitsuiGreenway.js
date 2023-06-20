@@ -10,6 +10,7 @@ export const MASUMI_MITSUI_GREENWAY = {
       },
       segments: [
         {
+          description: "east end",
           directions: ["eastbound"],
           positions: [
             [49.21762, -123.05579],
@@ -23,6 +24,7 @@ export const MASUMI_MITSUI_GREENWAY = {
           ],
         },
         {
+          description: "west start",
           directions: ["westbound"],
           positions: [
             [49.21806, -123.05057],
@@ -36,6 +38,7 @@ export const MASUMI_MITSUI_GREENWAY = {
           ],
         },
         {
+          description: "common",
           directions: ["eastbound", "westbound"],
           positions: [
             [49.21773, -123.14829],
