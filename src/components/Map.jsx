@@ -2,28 +2,30 @@ import {
   FeatureGroup,
   MapContainer,
   Polyline,
-  Popup,
   TileLayer,
   Tooltip,
 } from "react-leaflet";
 import { BIKE_ROUTE_DATA } from "../data";
 import { LatLngBounds } from "leaflet";
+import { createContext, useContext, useState } from "react";
+import DirectedPolyline from "./DirectedPolyline";
 
-// TODO: refine
 const VANCOUVER_BOUNDS = new LatLngBounds(
-  [49.164504, -123.300867],
-  [49.334827, -122.907843]
+  [49.32946, -123.27558],
+  [49.18965, -122.96316]
 );
 const TILE_LAYER = {
   attribution:
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-  recommendedColour: "#603cba",
 };
 
+const SelectedLeg = createContext();
+
 export default function Map() {
+  const [selectedLeg, setSelectedLeg] = useState(null);
   return (
-    <>
+    <SelectedLeg.Provider value={{ selectedLeg, setSelectedLeg }}>
       <div style={{ height: "500px" }}>
         <MapContainer
           style={{
@@ -34,76 +36,129 @@ export default function Map() {
           scrollWheelZoom
         >
           <TileLayer
-            // key is required to force re-render when tile layer changes, since `url` is immutable
-            // key={"tile-layer"}
             attribution={TILE_LAYER.attribution}
             url={TILE_LAYER.url}
           />
-          {BIKE_ROUTE_DATA.map((route) =>
-            route.legs.map((leg) => (
-              <FeatureGroup key={route.name + leg.name}>
-                {leg.segments.map(({ directions, positions, videos }) => {
-                  const availableVideos = (videos || directions).filter(
-                    (direction) => !!leg.videos[direction]
-                  );
-                  return (
-                    <Polyline
-                      key={positions.toString()}
-                      positions={positions}
-                      pathOptions={{
-                        color: getColour(directions),
-                        weight: 6,
-                      }}
-                    >
-                      <Tooltip sticky>
-                        {route.name}
-                        {leg.name && " (" + leg.name + ")"}
-                        {availableVideos.length > 0 && " [video]"}
-                      </Tooltip>
-                      {availableVideos.length > 0 && (
-                        <Popup>
-                          {/* // <iframe
-                      //   width="300px"
-                      //   height="220px"
-                      //   src={route.video}
-                      //   // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      //   allowFullScreen
-                      //   title="Embedded youtube"
-                      // /> */}
-                          Videos for: {availableVideos.join(", ")}
-                        </Popup>
-                      )}
-                    </Polyline>
-                  );
-                })}
-              </FeatureGroup>
-            ))
-          )}
+          {BIKE_ROUTE_DATA.map((route) => (
+            <Route route={route} key={route.name} />
+          ))}
         </MapContainer>
       </div>
-    </>
+    </SelectedLeg.Provider>
   );
 }
 
+function Route({ route }) {
+  return route.legs.map((leg) => (
+    <Leg key={route.name + leg.name} leg={leg} route={route} />
+  ));
+}
+
+function Leg({ route, leg }) {
+  const [isHovered, setIsHovered] = useState(false);
+  return (
+    <FeatureGroup
+      key={route.name + leg.name}
+      eventHandlers={{
+        mouseover: () => setIsHovered(true),
+        mouseout: () => setIsHovered(false),
+      }}
+    >
+      {leg.segments.map((segment) => (
+        <Segment
+          key={segment.positions.toString()}
+          route={route}
+          leg={leg}
+          segment={segment}
+          isHighlighted={isHovered}
+        />
+      ))}
+    </FeatureGroup>
+  );
+}
+
+function Segment({ route, leg, segment, isHighlighted }) {
+  const { videos, directions, positions } = segment;
+  const { selectedLeg, setSelectedLeg } = useContext(SelectedLeg);
+  const isNoneSelected = !selectedLeg;
+  const isSelected = selectedLeg === route.name + leg.name;
+  const availableVideos = (videos || directions).filter(
+    (direction) => !!leg.videos[direction]
+  );
+  const props = {
+    positions,
+    pathOptions: {
+      color: getColour(directions),
+      weight: isHighlighted ? 6 : 4,
+      opacity: isSelected || isNoneSelected ? 1 : 0.65,
+    },
+    eventHandlers: {
+      mouseup: () =>
+        setSelectedLeg((current) =>
+          current === route.name + leg.name ? null : route.name + leg.name
+        ),
+    },
+  };
+  const tooltipName = `${route.name}${
+    leg.name ? " (" + leg.name + ")" : ""
+  }${"*".repeat(availableVideos.length)}`;
+
+  return directions.length === 1 ? (
+    <DirectedPolyline {...props}>
+      <Tooltip sticky opacity={0.7}>
+        {tooltipName}
+      </Tooltip>
+    </DirectedPolyline>
+  ) : (
+    <Polyline {...props}>
+      <Tooltip sticky opacity={0.7}>
+        {tooltipName}
+      </Tooltip>
+    </Polyline>
+  );
+}
+
+// {availableVideos.length > 0 && (
+//   <Popup>
+//     <iframe
+//       width="300px"
+//       height="220px"
+//       src={route.videos}
+//       // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+//       allowFullScreen
+//       title="Embedded youtube"
+//     />
+//     Videos for: {availableVideos.join(", ")}
+//   </Popup>
+// )}
+
+// function HandleClicks() {
+//   const { setSelectedLeg } = useContext(SelectedLeg);
+//   useMapEvents({
+//     mousedown: () => setSelectedLeg((current) => (current ? null : current)),
+//   });
+//   return null;
+// }
+
 // TODO: display video(s) on click (outside of map? radio buttons per route?)
-// TODO: highlight route on hover (shrink/dim other routes? but keep the clicked route visible)
-// TODO: highlight videoed segments of route on click (maybe? shrink/dim other routes?)
+// TODO: highlight videoed segments of route on click/something (maybe? shrink/dim other routes?)
 // TODO: allow filtering (by direction, to only official, by quality, etc)
 // TODO: indicate by default whether route has video (and/or quality of route, whether official or not (dashed line?), etc.)
 // TODO: put `onTop` segments at higher z-index
 
 function getColour(directions) {
-  if (directions.length > 1) return "green";
-  switch (directions[0]) {
-    case "eastbound":
-      return "blue";
-    case "westbound":
-      return "magenta";
-    case "northbound":
-      return "red";
-    case "southbound":
-      return "purple";
-    default:
-      return "black";
-  }
+  if (directions.length > 1) return "DarkGreen";
+  return "blue";
+  // switch (directions[0]) {
+  //   case "eastbound":
+  //     return "blue";
+  //   case "westbound":
+  //     return "magenta";
+  //   case "northbound":
+  //     return "red";
+  //   case "southbound":
+  //     return "purple";
+  //   default:
+  //     return "black";
+  // }
 }
