@@ -1,3 +1,4 @@
+import { ASH_7TH, YUKON_5TH } from "./intersections";
 import { VIDEOS } from "./videos";
 
 export const CAMBIE_BRIDGE = {
@@ -15,10 +16,10 @@ export const CAMBIE_BRIDGE = {
           videos: ["southbound"],
           directions: ["northbound", "southbound", "eastbound", "westbound"],
           positions: [
-            [49.26608, -123.11743],
-            [49.26601, -123.11743],
+            ASH_7TH,
             [49.26579, -123.11742],
-            [49.26505, -123.11744],
+            [49.26601, -123.11743],
+            [49.26608, -123.11743],
           ],
         },
         {
@@ -26,14 +27,14 @@ export const CAMBIE_BRIDGE = {
           videos: ["southbound"],
           directions: ["northbound", "southbound", "eastbound", "westbound"],
           positions: [
-            [49.26661, -123.11534],
-            [49.26639, -123.11581],
-            [49.26634, -123.11593],
-            [49.26623, -123.11621],
-            [49.26614, -123.11654],
-            [49.2661, -123.11677],
-            [49.26608, -123.11704],
             [49.26608, -123.11743],
+            [49.26608, -123.11704],
+            [49.2661, -123.11677],
+            [49.26614, -123.11654],
+            [49.26623, -123.11621],
+            [49.26634, -123.11593],
+            [49.26639, -123.11581],
+            [49.26661, -123.11534],
           ],
         },
         {
@@ -117,10 +118,10 @@ export const CAMBIE_BRIDGE = {
           videos: ["northbound"],
           directions: ["northbound", "southbound", "eastbound", "westbound"],
           positions: [
-            [49.26664, -123.11278],
-            [49.26667, -123.11428],
-            [49.26665, -123.11435],
             [49.26666, -123.11446],
+            [49.26665, -123.11435],
+            [49.26667, -123.11428],
+            YUKON_5TH,
           ],
         },
         {
