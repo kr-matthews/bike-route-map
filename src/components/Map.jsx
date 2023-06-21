@@ -80,18 +80,20 @@ function Leg({ route, leg }) {
 function Segment({ route, leg, segment, isHighlighted }) {
   const { videos, directions, positions } = segment;
   const { selectedLeg, setSelectedLeg } = useContext(SelectedLeg);
-  const isNoneSelected = !selectedLeg;
-  const isSelected = selectedLeg === route.name + leg.name;
+
   const availableVideos = (videos || directions).filter(
     (direction) => !!leg.videos[direction]
   );
-  const props = {
+  const tooltipText = `${route.name}${
+    leg.name ? " (" + leg.name + ")" : ""
+  }${"*".repeat(availableVideos.length)}`;
+
+  const polylineProps = {
     positions,
-    pathOptions: {
-      color: getColour(directions),
-      weight: isHighlighted ? 6 : 4,
-      opacity: isSelected || isNoneSelected ? 1 : 0.65,
-    },
+    pathOptions: createPathOptions(route, leg, segment, {
+      selectedLeg,
+      isHighlighted,
+    }),
     eventHandlers: {
       mouseup: () =>
         setSelectedLeg((current) =>
@@ -99,21 +101,15 @@ function Segment({ route, leg, segment, isHighlighted }) {
         ),
     },
   };
-  const tooltipName = `${route.name}${
-    leg.name ? " (" + leg.name + ")" : ""
-  }${"*".repeat(availableVideos.length)}`;
+  const tooltipProps = { sticky: true, opacity: 0.7 };
 
   return directions.length === 1 ? (
-    <DirectedPolyline {...props}>
-      <Tooltip sticky opacity={0.7}>
-        {tooltipName}
-      </Tooltip>
+    <DirectedPolyline {...polylineProps}>
+      <Tooltip {...tooltipProps}>{tooltipText}</Tooltip>
     </DirectedPolyline>
   ) : (
-    <Polyline {...props}>
-      <Tooltip sticky opacity={0.7}>
-        {tooltipName}
-      </Tooltip>
+    <Polyline {...polylineProps}>
+      <Tooltip {...tooltipProps}>{tooltipText}</Tooltip>
     </Polyline>
   );
 }
@@ -146,19 +142,13 @@ function Segment({ route, leg, segment, isHighlighted }) {
 // TODO: indicate by default whether route has video (and/or quality of route, whether official or not (dashed line?), etc.)
 // TODO: put `onTop` segments at higher z-index
 
-function getColour(directions) {
-  if (directions.length > 1) return "DarkGreen";
-  return "blue";
-  // switch (directions[0]) {
-  //   case "eastbound":
-  //     return "blue";
-  //   case "westbound":
-  //     return "magenta";
-  //   case "northbound":
-  //     return "red";
-  //   case "southbound":
-  //     return "purple";
-  //   default:
-  //     return "black";
-  // }
+function createPathOptions(route, leg, segment, options, _settings) {
+  const isNoneSelected = !options.selectedLeg;
+  const isSelected = options.selectedLeg === route.name + leg.name;
+
+  return {
+    color: segment.directions.length > 1 ? "DarkGreen" : "Blue",
+    weight: options.isHighlighted ? 6 : 4,
+    opacity: isSelected || isNoneSelected ? 1 : 0.65,
+  };
 }
