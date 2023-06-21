@@ -1,3 +1,4 @@
+import { createContext, useContext, useState } from "react";
 import {
   FeatureGroup,
   MapContainer,
@@ -5,10 +6,10 @@ import {
   TileLayer,
   Tooltip,
 } from "react-leaflet";
-import { BIKE_ROUTE_DATA } from "../data";
 import { LatLngBounds } from "leaflet";
-import { createContext, useContext, useState } from "react";
 import DirectedPolyline from "./DirectedPolyline";
+import { createPathOptions } from "../utils/pathOptions";
+import { BIKE_ROUTE_DATA } from "../data";
 
 const VANCOUVER_BOUNDS = new LatLngBounds(
   [49.32946, -123.27558],
@@ -128,27 +129,8 @@ function Segment({ route, leg, segment, isHighlighted }) {
 //   </Popup>
 // )}
 
-// function HandleClicks() {
-//   const { setSelectedLeg } = useContext(SelectedLeg);
-//   useMapEvents({
-//     mousedown: () => setSelectedLeg((current) => (current ? null : current)),
-//   });
-//   return null;
-// }
-
 // TODO: display video(s) on click (outside of map? radio buttons per route?)
 // TODO: highlight videoed segments of route on click/something (maybe? shrink/dim other routes?)
 // TODO: allow filtering (by direction, to only official, by quality, etc)
 // TODO: indicate by default whether route has video (and/or quality of route, whether official or not (dashed line?), etc.)
 // TODO: put `onTop` segments at higher z-index
-
-function createPathOptions(route, leg, segment, options, _settings) {
-  const isNoneSelected = !options.selectedLeg;
-  const isSelected = options.selectedLeg === route.name + leg.name;
-
-  return {
-    color: segment.directions.length > 1 ? "DarkGreen" : "Blue",
-    weight: options.isHighlighted ? 6 : 4,
-    opacity: isSelected || isNoneSelected ? 1 : 0.65,
-  };
-}
