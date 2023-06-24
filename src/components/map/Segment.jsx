@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Polyline, Tooltip } from "react-leaflet";
-import DirectedPolyline from "../DirectedPolyline";
+import DirectedPolyline from "./DirectedPolyline";
 import { createPathOptions } from "../../utils/pathOptions";
 import { Selections } from "./Map";
 

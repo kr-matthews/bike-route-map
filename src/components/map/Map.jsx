@@ -24,10 +24,10 @@ export default function Map() {
     <Selections.Provider
       value={{ selected, setSelected, highlighted, setHighlighted }}
     >
-      <div style={{ height: "500px" }}>
+      <div style={{ height: "1em", width: "60vw" }}>
         <MapContainer
           style={{
-            width: "100vw",
+            width: "60vw",
             height: "100vh",
           }}
           bounds={VANCOUVER_BOUNDS}
