@@ -21,12 +21,16 @@ const TILE_LAYER = {
   url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
 };
 
-const SelectedLeg = createContext();
+const Selections = createContext();
 
 export default function Map() {
-  const [selectedLeg, setSelectedLeg] = useState(null);
+  const [highlighted, setHighlighted] = useState(null);
+  const [selected, setSelected] = useState(null);
+
   return (
-    <SelectedLeg.Provider value={{ selectedLeg, setSelectedLeg }}>
+    <Selections.Provider
+      value={{ selected, setSelected, highlighted, setHighlighted }}
+    >
       <div style={{ height: "500px" }}>
         <MapContainer
           style={{
@@ -45,7 +49,7 @@ export default function Map() {
           ))}
         </MapContainer>
       </div>
-    </SelectedLeg.Provider>
+    </Selections.Provider>
   );
 }
 
@@ -56,35 +60,29 @@ function Route({ route }) {
 }
 
 function Leg({ route, leg }) {
-  const [isHovered, setIsHovered] = useState(false);
   return (
-    <FeatureGroup
-      key={route.name + leg.name}
-      eventHandlers={{
-        mouseover: () => setIsHovered(true),
-        mouseout: () => setIsHovered(false),
-      }}
-    >
+    <FeatureGroup key={route.name + leg.name}>
       {leg.segments.map((segment) => (
         <Segment
           key={segment.positions.toString()}
           route={route}
           leg={leg}
           segment={segment}
-          isHighlighted={isHovered}
         />
       ))}
     </FeatureGroup>
   );
 }
 
-function Segment({ route, leg, segment, isHighlighted }) {
+function Segment({ route, leg, segment }) {
   const { videos, directions, positions } = segment;
-  const { selectedLeg, setSelectedLeg } = useContext(SelectedLeg);
+  const { selected, setSelected, highlighted, setHighlighted } =
+    useContext(Selections);
 
   const availableVideos = (videos || directions).filter(
     (direction) => !!leg.videos[direction]
   );
+  // TODO: refine tooltip
   const tooltipText = `${route.name}${
     leg.name ? " (" + leg.name + ")" : ""
   }${"*".repeat(availableVideos.length)}`;
@@ -92,18 +90,23 @@ function Segment({ route, leg, segment, isHighlighted }) {
   const polylineProps = {
     positions,
     pathOptions: createPathOptions(route, leg, segment, {
-      selectedLeg,
-      isHighlighted,
+      selected,
+      highlighted,
     }),
     eventHandlers: {
+      mouseover: () => setHighlighted(route.name + leg.name),
+      mouseout: () => setHighlighted(null),
+      // TODO: allow set of selected routes?
+      // mousedown: () => setSelected(),
       mouseup: () =>
-        setSelectedLeg((current) =>
+        setSelected((current) =>
           current === route.name + leg.name ? null : route.name + leg.name
         ),
     },
   };
   const tooltipProps = { sticky: true, opacity: 0.7 };
 
+  // FIXME: tool tip not showing on decorator arrows hover
   return directions.length === 1 ? (
     <DirectedPolyline {...polylineProps}>
       <Tooltip {...tooltipProps}>{tooltipText}</Tooltip>
