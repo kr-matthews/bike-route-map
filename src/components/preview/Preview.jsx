@@ -60,6 +60,30 @@ export default function Preview() {
             : `${route.name}: ${route.legs.map((leg) => leg.name).join(", ")}`}
         </div>
       ))}
+      <br />
+      {selected && (
+        <div style={{ display: "flex" }}>
+          {Object.entries(BIKE_ROUTE_DATA[7].legs[0].videos).map(
+            ([direction, video]) => (
+              <span key={direction}>
+                <span style={{ textTransform: "capitalize" }}>{direction}</span>
+                {video && (
+                  <div>
+                    <iframe
+                      width="300px"
+                      height="220px"
+                      src={video}
+                      // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      title="Embedded youtube"
+                    />
+                  </div>
+                )}
+              </span>
+            )
+          )}
+        </div>
+      )}
     </div>
   );
 }

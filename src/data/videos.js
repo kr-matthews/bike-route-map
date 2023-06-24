@@ -7,7 +7,7 @@ const VIDEOS = {
   alexanderEb: "5pjlcdGKa10",
   powellEb: "vTtdPgHQCp0",
   pandoraEb: "-vNVdK9fnMU",
-  cambieBridgeSmithNb: "-vNVdK9fnMU",
+  cambieBridgeSmithNb: "i_GE3QKQZBA",
   cambieBridgeNelsonSb: "FWN1apBAy3g",
   sixtySeventhPlusWb: "z5GzRN2_iNc",
   masumiMitsuiEb: "QVK6E_hmQFc",
