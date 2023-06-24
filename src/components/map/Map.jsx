@@ -7,9 +7,9 @@ import {
   Tooltip,
 } from "react-leaflet";
 import { LatLngBounds } from "leaflet";
-import DirectedPolyline from "./DirectedPolyline";
-import { createPathOptions } from "../utils/pathOptions";
-import { BIKE_ROUTE_DATA } from "../data";
+import DirectedPolyline from "../DirectedPolyline";
+import { createPathOptions } from "../../utils/pathOptions";
+import { BIKE_ROUTE_DATA } from "../../data";
 
 const VANCOUVER_BOUNDS = new LatLngBounds(
   [49.32946, -123.27558],
