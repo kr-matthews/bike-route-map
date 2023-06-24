@@ -47,7 +47,11 @@ export default function DirectedPolyline(props) {
         symbol: L.Symbol.arrowHead({
           pixelSize: 14,
           polygon: true,
-          pathOptions: { ...props.pathOptions },
+          pathOptions: {
+            ...props.pathOptions,
+            fill: props.pathOptions.color,
+            fillOpacity: props.pathOptions.opacity,
+          },
         }),
       };
 
