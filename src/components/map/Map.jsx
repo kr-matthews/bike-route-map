@@ -1,4 +1,3 @@
-import { createContext, useState } from "react";
 import { MapContainer, TileLayer } from "react-leaflet";
 import { LatLngBounds } from "leaflet";
 import { BIKE_ROUTE_DATA } from "../../data";
@@ -14,40 +13,22 @@ const TILE_LAYER = {
   url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
 };
 
-export const Selections = createContext();
-
 export default function Map() {
-  const [highlighted, setHighlighted] = useState(null);
-  const [selected, setSelected] = useState(null);
-
   return (
-    <Selections.Provider
-      value={{ selected, setSelected, highlighted, setHighlighted }}
-    >
-      <div style={{ height: "1em", width: "60vw" }}>
-        <MapContainer
-          style={{
-            width: "60vw",
-            height: "100vh",
-          }}
-          bounds={VANCOUVER_BOUNDS}
-          scrollWheelZoom
-        >
-          <TileLayer
-            attribution={TILE_LAYER.attribution}
-            url={TILE_LAYER.url}
-          />
-          {BIKE_ROUTE_DATA.map((route) => (
-            <Route route={route} key={route.name} />
-          ))}
-        </MapContainer>
-      </div>
-    </Selections.Provider>
+    <div style={{ height: "1em", width: "60vw" }}>
+      <MapContainer
+        style={{
+          width: "60vw",
+          height: "100vh",
+        }}
+        bounds={VANCOUVER_BOUNDS}
+        scrollWheelZoom
+      >
+        <TileLayer attribution={TILE_LAYER.attribution} url={TILE_LAYER.url} />
+        {BIKE_ROUTE_DATA.map((route) => (
+          <Route route={route} key={route.name} />
+        ))}
+      </MapContainer>
+    </div>
   );
 }
-
-// TODO: display video(s) on click (outside of map? radio buttons per route?)
-// TODO: highlight videoed segments of route on click/something (maybe? shrink/dim other routes?)
-// TODO: allow filtering (by direction, to only official, by quality, etc)
-// TODO: indicate by default whether route has video (and/or quality of route, whether official or not (dashed line?), etc.)
-// TODO: put `onTop` segments at higher z-index

@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Polyline, Tooltip } from "react-leaflet";
 import DirectedPolyline from "./DirectedPolyline";
 import { createPathOptions } from "../../utils/pathOptions";
-import { Selections } from "./Map";
+import { Selections } from "../../App";
 
 export default function Segment({ route, leg, segment }) {
   const { videos, directions, positions } = segment;
