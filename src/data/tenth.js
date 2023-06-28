@@ -1,4 +1,4 @@
-import { VICTORIA_BROADWAY } from "./intersections";
+import { TRAFALGAR_10TH, VICTORIA_BROADWAY } from "./intersections";
 import { VIDEOS } from "./videos";
 
 export const TENTH = {
@@ -14,7 +14,7 @@ export const TENTH = {
           description: "all",
           directions: ["eastbound", "westbound"],
           positions: [
-            [49.26305, -123.16469],
+            TRAFALGAR_10TH,
             [49.26302, -123.16242],
             [49.26298, -123.16006],
             [49.26295, -123.15771],

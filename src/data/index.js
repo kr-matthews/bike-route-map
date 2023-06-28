@@ -9,6 +9,7 @@ import { MIDTOWN } from "./midtown";
 import { OFF_BROADWAY } from "./offBroadway";
 import { SMITHE } from "./smithe";
 import { TENTH } from "./tenth";
+import { VALLEY } from "./valley";
 
 // convention: bi-directional paths are stored northbound, eastbound, or clockwise
 export const BIKE_ROUTE_DATA = [
@@ -21,4 +22,5 @@ export const BIKE_ROUTE_DATA = [
   CVG,
   TENTH,
   LIONS_GATE_BRIDGE,
+  VALLEY,
 ];
