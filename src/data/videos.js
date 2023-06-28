@@ -21,6 +21,7 @@ const VIDEOS = {
   haroWb: "gdsFxEtuepY",
   lionsGateBridgeNb: "KbhPPsdOzIE",
   lionsGateBridgeSb: "eHio3HMRIMw",
+  valleySb: "SDClkLpfIHc",
 };
 
 const urlPrefix = "https://www.youtube.com/embed/";
