@@ -1,4 +1,4 @@
-import { TRAFALGAR_10TH, VALLEY_33RD } from "./intersections";
+import { TRAFALGAR_10TH, TRAFALGAR_3RD, VALLEY_33RD } from "./intersections";
 import { VALLEY_29TH } from "./overlaps";
 import { VIDEOS } from "./videos";
 
@@ -54,7 +54,7 @@ export const VALLEY = {
             [49.2666, -123.16457],
             [49.26746, -123.16455],
             [49.26833, -123.16454],
-            [49.26923, -123.16451],
+            TRAFALGAR_3RD,
             [49.2701, -123.16447],
             [49.27098, -123.16443],
             [49.27188, -123.1644],
