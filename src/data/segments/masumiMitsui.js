@@ -99,7 +99,7 @@ export const MASUMI_MITSUI_GREENWAY = [
     routes: [ROUTES.masumiMitsui.name],
     description: "westbound branch",
     directions: ["westbound"],
-    videos: [VIDEOS.masumiMitsuiWb],
+    videos: [],
     positions: [
       [49.21806, -123.05057],
       [49.21807, -123.05126],

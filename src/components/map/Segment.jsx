@@ -16,21 +16,22 @@ export default function Segment(segment) {
 
   const polylineProps = {
     positions,
-    // TODO
+    // TODO: fix path options
     pathOptions: {},
     //  createPathOptions(routes[0], legs[0], segment, {
     //   selected,
     //   highlighted,
     // }),
     eventHandlers: {
-      // mouseover: () => setHighlighted(routes[0].name + legs[0].name),
+      mouseover: () => setHighlighted(routes[0]),
       mouseout: () => setHighlighted(null),
-      // TODO: allow set of selected routes?
+      // TODO: allow selecting _multiple_ routes?
+      // TODO: allow choosing route on shared segment
       // mousedown: () => setSelected(),
-      // mouseup:
-        // setSelected((current) =>
-        //   current === route.name + leg.name ? null : route.name + leg.name
-        // ),
+      mouseup: () => {
+        if (!routes || routes.length === 0) return;
+        setSelected((current) => (current === routes[0] ? null : routes[0]));
+      },
     },
   };
   const tooltipProps = { sticky: true, opacity: 0.7 };
