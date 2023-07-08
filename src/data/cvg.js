@@ -88,7 +88,6 @@ export const CVG = {
           description: "east",
           directions: ["eastbound", "westbound"],
           positions: [
-            // [49.26216, -123.06578],
             VICTORIA_BROADWAY,
             [49.26188, -123.06507],
             [49.26173, -123.06476],
