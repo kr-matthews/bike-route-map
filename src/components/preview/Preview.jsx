@@ -1,46 +1,34 @@
 import { useContext } from "react";
-import { BIKE_ROUTE_DATA } from "../../data";
+import { ROUTES } from "../../data/routes";
 import { Selections } from "../../App";
 
-const eastWest = BIKE_ROUTE_DATA.filter((route) =>
-  route.legs.some((leg) =>
-    ["eastbound", "westbound"].some(
-      (direction) => leg.videos[direction] !== undefined
-    )
-  )
-);
-const northSouth = BIKE_ROUTE_DATA.filter((route) =>
-  route.legs.some((leg) =>
-    ["northbound", "southbound"].some(
-      (direction) => leg.videos[direction] !== undefined
-    )
-  )
-);
+const directions = ["eastbound", "westbound", "northbound", "southbound"];
 
 // TODO: clean up logic & styling
 export default function Preview() {
   const { selected, setSelected, setHighlighted } = useContext(Selections);
 
+  // TODO: handle legs properly
+  const selectedRouteLeg =
+    selected &&
+    Object.values(ROUTES).find((route) => route.name === selected).legs[0];
+
+  // TODO: partition routes by e-w / n-s (or other?)
   return (
     <div>
-      East-West Routes:
-      {eastWest.map((route) => (
+      <h3>Routes</h3>
+      {Object.values(ROUTES).map((route) => (
         <div key={route.name}>
           {route.legs.length === 1 ? (
             <span
               style={{
-                fontWeight:
-                  selected === route.name + route.legs[0].name ? "bold" : "",
+                fontWeight: selected === route.name ? "bold" : "",
               }}
-              onMouseOver={() =>
-                setHighlighted(route.name + route.legs[0].name)
-              }
+              onMouseOver={() => setHighlighted(route.name)}
               onMouseOut={() => setHighlighted(null)}
               onMouseUp={() =>
                 setSelected((current) =>
-                  current === route.name + route.legs[0].name
-                    ? null
-                    : route.name + route.legs[0].name
+                  current === route.name ? null : route.name
                 )
               }
             >
@@ -52,35 +40,27 @@ export default function Preview() {
         </div>
       ))}
       <br />
-      North-South Routes:
-      {northSouth.map((route) => (
-        <div key={route.name}>
-          {route.legs.length === 1
-            ? route.name
-            : `${route.name}: ${route.legs.map((leg) => leg.name).join(", ")}`}
-        </div>
-      ))}
-      <br />
       {selected && (
         <div style={{ display: "flex" }}>
-          {Object.entries(BIKE_ROUTE_DATA[7].legs[0].videos).map(
-            ([direction, video]) => (
-              <span key={direction}>
-                <span style={{ textTransform: "capitalize" }}>{direction}</span>
-                {video && (
+          {directions.map(
+            (direction) =>
+              selectedRouteLeg.videos[direction] && (
+                <span key={direction}>
+                  <span style={{ textTransform: "capitalize" }}>
+                    {direction}
+                  </span>
                   <div>
                     <iframe
                       width="300px"
                       height="220px"
-                      src={video}
+                      src={selectedRouteLeg.videos[direction]}
                       // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                       title="Embedded youtube"
                     />
                   </div>
-                )}
-              </span>
-            )
+                </span>
+              )
           )}
         </div>
       )}
