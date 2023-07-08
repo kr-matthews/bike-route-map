@@ -1,3 +1,5 @@
+// convention: north-/south-bound street first
+
 const YUKON_5TH = [49.26664, -123.11276];
 const YUKON_7TH = [49.26482, -123.11283];
 const ASH_7TH = [49.26502, -123.11744];

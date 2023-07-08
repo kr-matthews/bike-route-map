@@ -5,6 +5,7 @@ import { OFF_BROADWAY } from "./offBroadway";
 import { TENTH } from "./tenth";
 import { THIRD } from "./third";
 
+// convention: bi-directional paths are stored northbound, eastbound, or clockwise
 export const SEGMENTS = [
   ...THIRD,
   ...OFF_BROADWAY,

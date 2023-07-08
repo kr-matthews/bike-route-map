@@ -9,11 +9,9 @@ import {
   YUKON_7TH,
 } from "./intersections";
 
-const YUKON_OFF_BROADWAY = [
-  YUKON_7TH,
-  [49.26571, -123.11278],
-  YUKON_5TH,
-];
+// TODO: delete this, move to the corresponding 'primary route' file
+
+const YUKON_OFF_BROADWAY = [YUKON_7TH, [49.26571, -123.11278], YUKON_5TH];
 const MOSAIC_OFF_BROADWAY = [WOODLAND_7TH, WOODLAND_GRANDVIEW];
 const SVG_OFF_BROADWAY = [WOODLAND_GRANDVIEW, COMMERCIAL_GRANDVIEW];
 const SVG_OFF_BROADWAY_N = [

@@ -20,8 +20,7 @@ export default function App() {
   );
 }
 
-// TODO: display video(s) on click (outside of map? radio buttons per route?)
 // TODO: highlight videoed segments of route on click/something (maybe? shrink/dim other routes?)
 // TODO: allow filtering (by direction, to only official, by quality, etc)
 // TODO: indicate by default whether route has video (and/or quality of route, whether official or not (dashed line?), etc.)
-// TODO: put `onTop` segments at higher z-index
+// TODO: put `onTop` segments at higher z-index or something
