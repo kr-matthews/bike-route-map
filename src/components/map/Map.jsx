@@ -1,7 +1,7 @@
 import { MapContainer, TileLayer } from "react-leaflet";
 import { LatLngBounds } from "leaflet";
-import { BIKE_ROUTE_DATA } from "../../data";
-import Route from "./Route";
+import { SEGMENTS } from "../../data/segments";
+import Segment from "./Segment";
 
 const VANCOUVER_BOUNDS = new LatLngBounds(
   [49.32946, -123.27558],
@@ -25,8 +25,8 @@ export default function Map() {
         scrollWheelZoom
       >
         <TileLayer attribution={TILE_LAYER.attribution} url={TILE_LAYER.url} />
-        {BIKE_ROUTE_DATA.map((route) => (
-          <Route route={route} key={route.name} />
+        {SEGMENTS.map((segment, index) => ( // TODO: don't use index
+          <Segment key={segment.description + index} {...segment} />
         ))}
       </MapContainer>
     </div>

@@ -4,40 +4,39 @@ import DirectedPolyline from "./DirectedPolyline";
 import { createPathOptions } from "../../utils/pathOptions";
 import { Selections } from "../../App";
 
-export default function Segment({ route, leg, segment }) {
-  const { videos, directions, positions } = segment;
+export default function Segment(segment) {
+  const { routes, legs, videos, directions, positions } = segment;
   const { selected, setSelected, highlighted, setHighlighted } =
     useContext(Selections);
 
-  const availableVideos = (videos || directions).filter(
-    (direction) => !!leg.videos[direction]
-  );
-  // TODO: refine tooltip
-  const tooltipText = `${route.name}${
-    leg.name ? " (" + leg.name + ")" : ""
-  }${"*".repeat(availableVideos.length)}`;
+  // TODO: fix & refine tooltip
+  const tooltipText = `${routes?.join(", ")}${
+    legs ? " (" + legs.join(", ") + ")" : ""
+  }${"*".repeat(videos?.length ?? 0)}`;
 
   const polylineProps = {
     positions,
-    pathOptions: createPathOptions(route, leg, segment, {
-      selected,
-      highlighted,
-    }),
+    // TODO
+    pathOptions: {},
+    //  createPathOptions(routes[0], legs[0], segment, {
+    //   selected,
+    //   highlighted,
+    // }),
     eventHandlers: {
-      mouseover: () => setHighlighted(route.name + leg.name),
+      // mouseover: () => setHighlighted(routes[0].name + legs[0].name),
       mouseout: () => setHighlighted(null),
       // TODO: allow set of selected routes?
       // mousedown: () => setSelected(),
-      mouseup: () =>
-        setSelected((current) =>
-          current === route.name + leg.name ? null : route.name + leg.name
-        ),
+      // mouseup:
+        // setSelected((current) =>
+        //   current === route.name + leg.name ? null : route.name + leg.name
+        // ),
     },
   };
   const tooltipProps = { sticky: true, opacity: 0.7 };
 
   // FIXME: tool tip not showing on decorator arrows hover
-  return directions.length === 1 ? (
+  return directions?.length === 1 ? (
     <DirectedPolyline {...polylineProps}>
       <Tooltip {...tooltipProps}>{tooltipText}</Tooltip>
     </DirectedPolyline>
