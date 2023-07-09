@@ -6,7 +6,7 @@ import { Selections } from "../../App";
 
 export default function Segment(segment) {
   const { routes, legs, videos, directions, positions } = segment;
-  const { selected, setSelected, highlighted, setHighlighted } =
+  const { selectedRoute, setSelected, highlighted, setHighlighted } =
     useContext(Selections);
 
   const primaryRoute = routes?.find((x) => x) || null;
@@ -15,7 +15,7 @@ export default function Segment(segment) {
   const polylineProps = {
     positions,
     pathOptions: createPathOptions(segment, {
-      selected,
+      selectedRoute,
       highlighted,
     }),
     eventHandlers: {
@@ -24,8 +24,8 @@ export default function Segment(segment) {
       // mousedown: () => setSelected(),
       mouseup: () => {
         if (!primaryRoute) return;
-        setSelected((current) =>
-          current === primaryRoute ? null : primaryRoute
+        setSelected((selected) =>
+          selected === primaryRoute ? null : primaryRoute
         );
       },
     },

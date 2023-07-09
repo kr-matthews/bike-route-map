@@ -4,7 +4,7 @@ import { Selections } from "../../App";
 
 // TODO: partition routes by e-w / n-s (or other?)
 export default function Routes() {
-  const { selected, setSelected, setHighlighted } = useContext(Selections);
+  const { selectedRoute, setSelected, setHighlighted } = useContext(Selections);
 
   return (
     <>
@@ -13,13 +13,13 @@ export default function Routes() {
         <div key={route.name}>
           <span
             style={{
-              fontWeight: selected === route.name ? "bold" : "",
+              fontWeight: selectedRoute?.name === route.name ? "bold" : "",
             }}
             onMouseOver={() => setHighlighted(route.name)}
             onMouseOut={() => setHighlighted(null)}
             onMouseUp={() =>
-              setSelected((current) =>
-                current === route.name ? null : route.name
+              setSelected((selected) =>
+                selected === route.name ? null : route.name
               )
             }
           >

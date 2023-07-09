@@ -5,16 +5,18 @@ const FULL_OPACITY = 1;
 const BIDIRECTIONAL_COLOUR = "DarkGreen";
 const UNIDIRECTIONAL_COLOUR = "Blue";
 
-export function createPathOptions(segment, selections, _settings) {
-  const isNoneSelected = !selections.selected;
-  const isSelected = (segment.routes ?? []).includes(selections.selected);
-  const isHighlighted = (segment.routes ?? []).includes(selections.highlighted);
+export function createPathOptions(
+  { routes, directions },
+  { selectedRoute, highlighted },
+  _settings
+) {
+  const isNoneSelected = !selectedRoute;
+  const isSelected = (routes ?? []).includes(selectedRoute?.name);
+  const isHighlighted = (routes ?? []).includes(highlighted);
 
   return {
     color:
-      segment.directions?.length === 1
-        ? UNIDIRECTIONAL_COLOUR
-        : BIDIRECTIONAL_COLOUR,
+      directions?.length === 1 ? UNIDIRECTIONAL_COLOUR : BIDIRECTIONAL_COLOUR,
     weight: isHighlighted ? WIDE_WEIGHT : NARROW_WEIGHT,
     opacity: isSelected || isNoneSelected ? FULL_OPACITY : DIM_OPACITY,
   };

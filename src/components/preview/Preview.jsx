@@ -5,12 +5,25 @@ import SelectedRoute from "./SelectedRoute";
 
 // TODO: clean up logic & styling
 export default function Preview() {
-  const { selected } = useContext(Selections);
-
   return (
     <div>
+      <Debug />
       <Routes />
-      {selected && <SelectedRoute />}
+      <SelectedRoute />
     </div>
   );
+}
+
+// ~ TEMP
+function Debug() {
+  const selections = useContext(Selections);
+  return Object.entries(selections).map(([key, value]) => (
+    <div key={key}>
+      {key}:{" "}
+      {value instanceof Function ? "(function)" : (value ?? "null").toString()}
+      {value instanceof Object &&
+        !(value instanceof Function) &&
+        " has name " + value.name}
+    </div>
+  ));
 }

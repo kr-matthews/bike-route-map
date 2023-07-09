@@ -4,18 +4,15 @@ import { Selections } from "../../App";
 import Leg from "./Leg";
 
 export default function SelectedRoute() {
-  const { selected } = useContext(Selections);
+  const { selectedRoute } = useContext(Selections);
 
-  // TODO: provide directly via context, instead of selected
-  const selectedRoute = Object.values(ROUTES).find(
-    (route) => route.name === selected
-  );
+  if (!selectedRoute) return null;
 
   return (
     <>
-      <h2>{selected}</h2>
+      <h2>{selectedRoute.name}</h2>
       {selectedRoute.legs.map((leg) => (
-        <Leg key={leg.name} leg={leg} />
+        <Leg key={selectedRoute.name + leg.name} leg={leg} />
       ))}
     </>
   );

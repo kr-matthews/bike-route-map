@@ -1,17 +1,15 @@
-import { createContext, useState } from "react";
+import { createContext } from "react";
 import Map from "./components/map/Map";
 import Preview from "./components/preview/Preview";
+import useSelections from "./components/hooks/useSelections";
 
 export const Selections = createContext();
 
 export default function App() {
-  const [highlighted, setHighlighted] = useState(null);
-  const [selected, setSelected] = useState(null);
+  const selections = useSelections();
 
   return (
-    <Selections.Provider
-      value={{ selected, setSelected, highlighted, setHighlighted }}
-    >
+    <Selections.Provider value={selections}>
       <div style={{ display: "flex" }}>
         <Map />
         <Preview />
