@@ -14,12 +14,10 @@ export default function Segment(segment) {
 
   const polylineProps = {
     positions,
-    // TODO: fix path options
-    pathOptions: {},
-    //  createPathOptions(routes[0], legs[0], segment, {
-    //   selected,
-    //   highlighted,
-    // }),
+    pathOptions: createPathOptions(segment, {
+      selected,
+      highlighted,
+    }),
     eventHandlers: {
       mouseover: () => setHighlighted(primaryRoute),
       mouseout: () => setHighlighted(null),
