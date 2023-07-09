@@ -5,7 +5,6 @@ import {
   VICTORIA_BROADWAY,
   WOODLAND_GRANDVIEW,
 } from "../intersections";
-import { SVG_OFF_BROADWAY, SVG_OFF_BROADWAY_N } from "../overlaps";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
@@ -15,6 +14,7 @@ import { VIDEOS } from "../videos";
 export const CVG = [
   {
     routes: [ROUTES.cvg.name],
+    legs: ["Vancouver"],
     description: "west of commercial",
     videos: [],
     positions: [
@@ -53,18 +53,21 @@ export const CVG = [
   },
   {
     routes: [ROUTES.cvg.name, ROUTES.offBroadway.name],
+    legs: ["Vancouver"],
     description: "cvg/off-broadway west",
     videos: [VIDEOS.offBroadwayWb],
-    positions: SVG_OFF_BROADWAY,
+    positions: [WOODLAND_GRANDVIEW, COMMERCIAL_GRANDVIEW],
   },
   {
     routes: [ROUTES.cvg.name, ROUTES.offBroadway.name],
+    legs: ["Vancouver"],
     description: "cvg/off-broadway east",
     videos: [VIDEOS.offBroadwayWb],
-    positions: SVG_OFF_BROADWAY_N,
+    positions: [COMMERCIAL_GRANDVIEW, [49.26372, -123.06966], GRANDVIEW_8TH],
   },
   {
     routes: [ROUTES.cvg.name],
+    legs: ["Vancouver"],
     description: "broadway eastbound",
     directions: ["eastbound"],
     videos: [],
@@ -82,6 +85,7 @@ export const CVG = [
   },
   {
     routes: [ROUTES.cvg.name],
+    legs: ["Vancouver"],
     description: "broadway westbound",
     directions: ["westbound"],
     videos: [],
@@ -99,6 +103,7 @@ export const CVG = [
   },
   {
     routes: [ROUTES.cvg.name],
+    legs: ["Vancouver"],
     description: "east of victoria",
     videos: [],
     positions: [
@@ -159,6 +164,7 @@ export const CVG = [
   },
   {
     routes: [ROUTES.cvg.name],
+    legs: ["Burnaby"],
     description: "burnaby",
     videos: [],
     positions: [BOUNDARY_CVG, [49.26244, -123.02309]],

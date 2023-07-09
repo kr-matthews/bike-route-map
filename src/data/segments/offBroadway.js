@@ -15,7 +15,7 @@ import {
   YUKON_5TH,
   YUKON_7TH,
 } from "../intersections";
-import { MOSAIC_OFF_BROADWAY, YUKON_OFF_BROADWAY } from "../overlaps";
+import { MOSAIC_OFF_BROADWAY } from "../overlaps";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
@@ -91,7 +91,7 @@ export const OFF_BROADWAY = [
     routes: [ROUTES.yukon.name, ROUTES.offBroadway.name],
     description: "yukon/off-broadway",
     videos: [VIDEOS.offBroadwayWb],
-    positions: YUKON_OFF_BROADWAY,
+    positions: [YUKON_7TH, [49.26571, -123.11278], YUKON_5TH],
   },
   {
     routes: [ROUTES.offBroadway.name],

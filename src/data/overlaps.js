@@ -9,7 +9,7 @@ import {
   YUKON_7TH,
 } from "./intersections";
 
-// TODO: delete this, move to the corresponding 'primary route' file
+// TODO: delete this, move to the corresponding 'primary route' file respectively
 
 const YUKON_OFF_BROADWAY = [YUKON_7TH, [49.26571, -123.11278], YUKON_5TH];
 const MOSAIC_OFF_BROADWAY = [WOODLAND_7TH, WOODLAND_GRANDVIEW];
@@ -28,9 +28,9 @@ const VALLEY_29TH = [
 ];
 
 export {
-  YUKON_OFF_BROADWAY,
-  MOSAIC_OFF_BROADWAY,
-  SVG_OFF_BROADWAY,
-  SVG_OFF_BROADWAY_N,
-  VALLEY_29TH,
+  YUKON_OFF_BROADWAY, // done
+  MOSAIC_OFF_BROADWAY, // pending: mosaic
+  SVG_OFF_BROADWAY, // done
+  SVG_OFF_BROADWAY_N, // done
+  VALLEY_29TH, // pending: 29th
 };
