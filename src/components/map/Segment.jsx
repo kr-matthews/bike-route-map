@@ -9,10 +9,8 @@ export default function Segment(segment) {
   const { selected, setSelected, highlighted, setHighlighted } =
     useContext(Selections);
 
-  // TODO: fix & refine tooltip
-  const tooltipText = `${routes?.join(", ")}${
-    legs ? " (" + legs.join(", ") + ")" : ""
-  }${"*".repeat(videos?.length ?? 0)}`;
+  const primaryRoute = routes?.find((x) => x) || null;
+  const tooltipContent = routes?.join("; ");
 
   const polylineProps = {
     positions,
@@ -23,14 +21,14 @@ export default function Segment(segment) {
     //   highlighted,
     // }),
     eventHandlers: {
-      mouseover: () => setHighlighted(routes[0]),
+      mouseover: () => setHighlighted(primaryRoute),
       mouseout: () => setHighlighted(null),
-      // TODO: allow selecting _multiple_ routes?
-      // TODO: allow choosing route on shared segment
       // mousedown: () => setSelected(),
       mouseup: () => {
-        if (!routes || routes.length === 0) return;
-        setSelected((current) => (current === routes[0] ? null : routes[0]));
+        if (!primaryRoute) return;
+        setSelected((current) =>
+          current === primaryRoute ? null : primaryRoute
+        );
       },
     },
   };
@@ -39,11 +37,11 @@ export default function Segment(segment) {
   // FIXME: tool tip not showing on decorator arrows hover
   return directions?.length === 1 ? (
     <DirectedPolyline {...polylineProps}>
-      <Tooltip {...tooltipProps}>{tooltipText}</Tooltip>
+      {tooltipContent && <Tooltip {...tooltipProps}>{tooltipContent}</Tooltip>}
     </DirectedPolyline>
   ) : (
     <Polyline {...polylineProps}>
-      <Tooltip {...tooltipProps}>{tooltipText}</Tooltip>
+      {tooltipContent && <Tooltip {...tooltipProps}>{tooltipContent}</Tooltip>}
     </Polyline>
   );
 }

@@ -25,9 +25,11 @@ export default function Map() {
         scrollWheelZoom
       >
         <TileLayer attribution={TILE_LAYER.attribution} url={TILE_LAYER.url} />
-        {SEGMENTS.map((segment, index) => (
-          // TODO: don't use index
-          <Segment key={segment.description + index} {...segment} />
+        {SEGMENTS.map((segment) => (
+          <Segment
+            key={segment.routes?.join() + segment.description}
+            {...segment}
+          />
         ))}
       </MapContainer>
     </div>

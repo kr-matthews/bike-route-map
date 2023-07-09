@@ -19,28 +19,25 @@ export default function Preview() {
       <h3>Routes</h3>
       {Object.values(ROUTES).map((route) => (
         <div key={route.name}>
-          {route.legs.length === 1 ? (
-            <span
-              style={{
-                fontWeight: selected === route.name ? "bold" : "",
-              }}
-              onMouseOver={() => setHighlighted(route.name)}
-              onMouseOut={() => setHighlighted(null)}
-              onMouseUp={() =>
-                setSelected((current) =>
-                  current === route.name ? null : route.name
-                )
-              }
-            >
-              {route.name}
-            </span>
-          ) : (
-            `${route.name}: ${route.legs.map((leg) => leg.name).join(", ")}`
-          )}
+          <span
+            style={{
+              fontWeight: selected === route.name ? "bold" : "",
+            }}
+            onMouseOver={() => setHighlighted(route.name)}
+            onMouseOut={() => setHighlighted(null)}
+            onMouseUp={() =>
+              setSelected((current) =>
+                current === route.name ? null : route.name
+              )
+            }
+          >
+            {route.name}
+          </span>
         </div>
       ))}
       <br />
       {selected && (
+        // TODO: account for multiple legs
         <div style={{ display: "flex" }}>
           {directions.map(
             (direction) =>
