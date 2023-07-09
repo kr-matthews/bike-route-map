@@ -4,6 +4,9 @@ import DirectedPolyline from "./DirectedPolyline";
 import { createPathOptions } from "../../utils/pathOptions";
 import { Selections } from "../../App";
 
+// TODO: indicate by default whether route/segment has video (and/or quality of route, whether official or not (dashed line?), etc.)
+// TODO: put `onTop` segments at higher z-index or something
+
 export default function Segment(segment) {
   const { routes, directions, positions } = segment;
   const { selectedRoute, setSelected, highlighted, setHighlighted, video } =

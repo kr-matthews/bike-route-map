@@ -133,7 +133,6 @@ export const MIDTOWN = {
           description: "all",
           directions: ["eastbound", "westbound"],
           positions: [
-            // TODO
             [49.24312, -123.02366],
             [49.24312, -123.02349],
           ],

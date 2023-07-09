@@ -124,7 +124,7 @@ export const MIDTOWN = [
     description: "primary",
     videos: [],
     positions: [
-      // TODO
+      // TODO: burnaby segments
       [49.24312, -123.02366],
       [49.24312, -123.02349],
     ],

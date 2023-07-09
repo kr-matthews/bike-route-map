@@ -4,6 +4,7 @@ import { Selections } from "../../App";
 
 // TODO: partition routes by e-w / n-s (or other?)
 // TODO: allow 'zoom to route'
+// TODO: allow filtering (by direction, to only official, by quality, etc)?
 export default function Routes() {
   const { selectedRoute, setSelected, setHighlighted } = useContext(Selections);
 
