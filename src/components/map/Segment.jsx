@@ -5,8 +5,8 @@ import { createPathOptions } from "../../utils/pathOptions";
 import { Selections } from "../../App";
 
 export default function Segment(segment) {
-  const { routes, legs, videos, directions, positions } = segment;
-  const { selectedRoute, setSelected, highlighted, setHighlighted } =
+  const { routes, directions, positions } = segment;
+  const { selectedRoute, setSelected, highlighted, setHighlighted, video } =
     useContext(Selections);
 
   const primaryRoute = routes?.find((x) => x) || null;
@@ -15,8 +15,9 @@ export default function Segment(segment) {
   const polylineProps = {
     positions,
     pathOptions: createPathOptions(segment, {
-      selectedRoute,
       highlighted,
+      selectedRoute,
+      video,
     }),
     eventHandlers: {
       mouseover: () => setHighlighted(primaryRoute),
@@ -31,8 +32,11 @@ export default function Segment(segment) {
   };
   const tooltipProps = { sticky: true, opacity: 0.7 };
 
+  // FIXME: arrows won't be removed when video is unselected
+  const showDirection = directions?.length === 1; // || videos?.includes(video);
+
   // FIXME: tool tip not showing on decorator arrows hover
-  return directions?.length === 1 ? (
+  return showDirection ? (
     <DirectedPolyline {...polylineProps}>
       {tooltipContent && <Tooltip {...tooltipProps}>{tooltipContent}</Tooltip>}
     </DirectedPolyline>
