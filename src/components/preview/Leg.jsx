@@ -1,7 +1,11 @@
+import { useContext } from "react";
+import { Selections } from "../../App";
+
 const directions = ["eastbound", "westbound", "northbound", "southbound"];
 
-// !!! allow selection of video, show corresponding segments on map
 export default function Leg({ leg }) {
+  const { video, setVideo } = useContext(Selections);
+
   return (
     <>
       {leg.name && <h3>{leg.name}</h3>}
@@ -10,7 +14,20 @@ export default function Leg({ leg }) {
           (direction) =>
             leg.videos[direction] && (
               <span key={direction}>
-                <h4 style={{ textTransform: "capitalize" }}>{direction}</h4>
+                <h4
+                  style={{ textTransform: "capitalize" }}
+                  onMouseUp={() =>
+                    setVideo((current) =>
+                      current === leg.videos[direction]
+                        ? null
+                        : leg.videos[direction]
+                    )
+                  }
+                >
+                  {`${direction}${
+                    video === leg.videos[direction] ? " (now showing)" : ""
+                  }`}
+                </h4>
                 <div>
                   <iframe
                     width="300px"
@@ -18,7 +35,7 @@ export default function Leg({ leg }) {
                     src={leg.videos[direction]}
                     // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                    title="Embedded youtube"
+                    title="Embedded YouTube"
                   />
                 </div>
               </span>
