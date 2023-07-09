@@ -16,7 +16,7 @@ export default function Leg({ leg }) {
               <span key={direction}>
                 <h4
                   style={{ textTransform: "capitalize" }}
-                  onMouseUp={() =>
+                  onMouseDown={() =>
                     setVideo((current) =>
                       current === leg.videos[direction]
                         ? null

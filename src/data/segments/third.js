@@ -45,17 +45,14 @@ export const THIRD = [
     ],
   },
   {
-    routes: [ROUTES.third.name],
     description: "connection with 4th",
     positions: [WALLACE_3RD, WALLACE_4TH],
   },
   {
-    routes: [ROUTES.third.name],
     description: "connection with valley",
     positions: [STEPHENS_3RD, TRAFALGAR_3RD],
   },
   {
-    routes: [ROUTES.third.name],
     description: "connection with seaside",
     positions: [STEPHENS_YORK, STEPHENS_POINT_GREY],
   },

@@ -3,6 +3,7 @@ import { ROUTES } from "../../data/routes";
 import { Selections } from "../../App";
 
 // TODO: partition routes by e-w / n-s (or other?)
+// TODO: allow 'zoom to route'
 export default function Routes() {
   const { selectedRoute, setSelected, setHighlighted } = useContext(Selections);
 
@@ -17,7 +18,7 @@ export default function Routes() {
             }}
             onMouseOver={() => setHighlighted(route.name)}
             onMouseOut={() => setHighlighted(null)}
-            onMouseUp={() =>
+            onMouseDown={() =>
               setSelected((selected) =>
                 selected === route.name ? null : route.name
               )

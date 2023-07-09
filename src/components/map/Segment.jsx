@@ -21,8 +21,7 @@ export default function Segment(segment) {
     eventHandlers: {
       mouseover: () => setHighlighted(primaryRoute),
       mouseout: () => setHighlighted(null),
-      // mousedown: () => setSelected(),
-      mouseup: () => {
+      mousedown: () => {
         if (!primaryRoute) return;
         setSelected((selected) =>
           selected === primaryRoute ? null : primaryRoute
