@@ -8,34 +8,15 @@ export const ROUTES = {
     name: "3rd",
     legs: [{ videos: { eastbound: VIDEOS.thirdEb, westbound: null } }],
   },
-  offBroadway: {
-    name: "Off-Broadway",
-    legs: [{ videos: { eastbound: null, westbound: VIDEOS.offBroadwayWb } }],
-  },
   tenth: {
     name: "10th",
     legs: [
       { videos: { eastbound: VIDEOS.tenthEb, westbound: VIDEOS.tenthWb } },
     ],
   },
-  hillcrest: {
-    name: "Hillcrest",
-    legs: [
-      {
-        videos: {
-          eastbound: VIDEOS.hillcrestEb,
-          westbound: VIDEOS.hillcrestWb,
-        },
-      },
-    ],
-  },
-  carrall: {
-    name: "Carrall",
-    legs: [
-      {
-        videos: { northbound: VIDEOS.carrallNb, southbound: null },
-      },
-    ],
+  twentyNinth: {
+    name: "29th",
+    legs: [{ videos: {} }],
   },
   alexander: {
     name: "Alexander",
@@ -48,10 +29,6 @@ export const ROUTES = {
       },
     ],
   },
-  powell: {
-    name: "Powell",
-    legs: [{ videos: { eastbound: VIDEOS.powellEb, westbound: null } }],
-  },
   cambieBridge: {
     name: "Cambie Bridge",
     legs: [
@@ -63,9 +40,57 @@ export const ROUTES = {
       },
     ],
   },
-  valley: {
-    name: "Valley",
-    legs: [{ videos: { northbound: null, southbound: VIDEOS.valleySb } }],
+  carrall: {
+    name: "Carrall",
+    legs: [
+      {
+        videos: { northbound: VIDEOS.carrallNb, southbound: null },
+      },
+    ],
+  },
+  cvg: {
+    name: "Central Valley Greenway",
+    legs: [
+      { name: "Vancouver", videos: {} },
+      { name: "Burnaby", videos: {} },
+    ],
+  },
+  haro: {
+    name: "Haro",
+    legs: [{ videos: { westbound: VIDEOS.haroWb } }],
+  },
+  hillcrest: {
+    name: "Hillcrest",
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.hillcrestEb,
+          westbound: VIDEOS.hillcrestWb,
+        },
+      },
+    ],
+  },
+  lionsGate: {
+    name: "Lions Gate Bridge",
+    legs: [
+      {
+        videos: {
+          northbound: VIDEOS.lionsGateBridgeNb,
+          southbound: VIDEOS.lionsGateBridgeSb,
+        },
+      },
+    ],
+  },
+  masumiMitsui: {
+    name: "Masumi Mitsui Greenway",
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.masumiMitsuiEb,
+          westbound: null,
+        },
+      },
+    ],
   },
   midtown: {
     name: "Midtown",
@@ -86,53 +111,28 @@ export const ROUTES = {
       },
     ],
   },
-  masumiMitsui: {
-    name: "Masumi Mitsui Greenway",
-    legs: [
-      {
-        videos: {
-          eastbound: VIDEOS.masumiMitsuiEb,
-          westbound: null,
-        },
-      },
-    ],
-  },
-  cvg: {
-    name: "Central Valley Greenway",
-    legs: [
-      { name: "Vancouver", videos: {} },
-      { name: "Burnaby", videos: {} },
-    ],
-  },
-  yukon: {
-    name: "Yukon",
-    legs: [{ videos: {} }],
-  },
   mosaic: {
     name: "Mosaic",
     legs: [{ videos: {} }],
   },
-  haro: {
-    name: "Haro",
-    legs: [{ videos: { westbound: VIDEOS.haroWb } }],
+  offBroadway: {
+    name: "Off-Broadway",
+    legs: [{ videos: { eastbound: null, westbound: VIDEOS.offBroadwayWb } }],
+  },
+  powell: {
+    name: "Powell",
+    legs: [{ videos: { eastbound: VIDEOS.powellEb, westbound: null } }],
   },
   smithe: {
     name: "Smithe",
     legs: [{ videos: { westbound: VIDEOS.cambieBridgeSmithNb } }],
   },
-  lionsGate: {
-    name: "Lions Gate Bridge",
-    legs: [
-      {
-        videos: {
-          northbound: VIDEOS.lionsGateBridgeNb,
-          southbound: VIDEOS.lionsGateBridgeSb,
-        },
-      },
-    ],
+  valley: {
+    name: "Valley",
+    legs: [{ videos: { northbound: null, southbound: VIDEOS.valleySb } }],
   },
-  twentyNinth: {
-    name: "29th",
+  yukon: {
+    name: "Yukon",
     legs: [{ videos: {} }],
   },
 };

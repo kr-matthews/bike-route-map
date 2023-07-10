@@ -42,7 +42,7 @@ export default function DirectedPolyline(props) {
   useEffect(
     function updateArrows() {
       const arrow = {
-        offset: "3%",
+        offset: "5%",
         repeat: 90,
         symbol: L.Symbol.arrowHead({
           pixelSize: 14,
