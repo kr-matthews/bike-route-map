@@ -109,4 +109,27 @@ export const ROUTES = {
     name: "Mosaic",
     legs: [{ videos: {} }],
   },
+  haro: {
+    name: "Haro",
+    legs: [{ videos: { westbound: VIDEOS.haroWb } }],
+  },
+  smithe: {
+    name: "Smithe",
+    legs: [{ videos: { westbound: VIDEOS.cambieBridgeSmithNb } }],
+  },
+  lionsGate: {
+    name: "Lions Gate Bridge",
+    legs: [
+      {
+        videos: {
+          northbound: VIDEOS.lionsGateBridgeNb,
+          southbound: VIDEOS.lionsGateBridgeSb,
+        },
+      },
+    ],
+  },
+  twentyNinth: {
+    name: "29th",
+    legs: [{ videos: {} }],
+  },
 };
