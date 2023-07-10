@@ -29,8 +29,8 @@ const VALLEY_29TH = [
 
 export {
   YUKON_OFF_BROADWAY, // done
-  MOSAIC_OFF_BROADWAY, // pending: mosaic
+  MOSAIC_OFF_BROADWAY, // done
   SVG_OFF_BROADWAY, // done
   SVG_OFF_BROADWAY_N, // done
-  VALLEY_29TH, // pending: 29th
+  VALLEY_29TH, // done
 };

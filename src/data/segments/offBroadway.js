@@ -12,10 +12,10 @@ import {
   ONTARIO_5TH,
   TRAFALGAR_8TH,
   WOODLAND_7TH,
+  WOODLAND_GRANDVIEW,
   YUKON_5TH,
   YUKON_7TH,
 } from "../intersections";
-import { MOSAIC_OFF_BROADWAY } from "../overlaps";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
@@ -132,7 +132,7 @@ export const OFF_BROADWAY = [
     routes: [ROUTES.mosaic.name, ROUTES.offBroadway.name],
     description: "mosaic/off-broadway",
     videos: [VIDEOS.offBroadwayWb],
-    positions: MOSAIC_OFF_BROADWAY,
+    positions: [WOODLAND_7TH, WOODLAND_GRANDVIEW],
   },
   {
     routes: [ROUTES.offBroadway.name],
