@@ -1,5 +1,8 @@
 import { VIDEOS } from "../videos";
 
+// !! add routes for existing videos
+// !! add missing un-named segments for existing routes
+
 export const ROUTES = {
   third: {
     name: "3rd",
