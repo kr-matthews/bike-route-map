@@ -1,7 +1,7 @@
 import { createContext } from "react";
 import Map from "./components/map/Map";
 import Preview from "./components/preview/Preview";
-import useSelections from "./components/hooks/useSelections";
+import useSelections from "./hooks/useSelections";
 
 export const Selections = createContext();
 

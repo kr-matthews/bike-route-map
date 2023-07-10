@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ROUTES } from "../../data/routes";
+import { ROUTES } from "../data/routes";
 
 // TODO: tidy up function name conventions
 export default function useSelections() {
