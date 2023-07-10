@@ -27,7 +27,11 @@ export default function Map() {
         <TileLayer attribution={TILE_LAYER.attribution} url={TILE_LAYER.url} />
         {SEGMENTS.map((segment) => (
           <Segment
-            key={segment.routes?.join() + segment.description}
+            key={
+              segment.routes?.join() +
+              segment.legs?.join() +
+              segment.description
+            }
             {...segment}
           />
         ))}
