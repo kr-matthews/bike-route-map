@@ -1,4 +1,4 @@
-import { ASH_7TH, YUKON_5TH } from "../intersections";
+import { ASH_7TH, BEATTY_NELSON, YUKON_5TH } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
@@ -54,7 +54,7 @@ export const CAMBIE_BRIDGE = [
     videos: [VIDEOS.cambieBridgeNelsonSb],
     elevated: true,
     positions: [
-      [49.27541, -123.11725],
+      BEATTY_NELSON,
       [49.27452, -123.11587],
       [49.27428, -123.11551],
       [49.27408, -123.1153],
