@@ -1,4 +1,7 @@
+import { BUTE } from "./bute";
 import { CAMBIE_BRIDGE } from "./cambieBridge";
+import { CARDERO } from "./cardero";
+import { CHILCO } from "./chilco";
 import { COMOX_HELMCKEN } from "./comoxHelmcken";
 import { CVG } from "./cvg";
 import { HARO } from "./haro";
@@ -14,7 +17,10 @@ import { VALLEY } from "./valley";
 
 // convention: bi-directional paths are stored northbound, eastbound, or clockwise
 export const SEGMENTS = [
+  ...BUTE,
   ...CAMBIE_BRIDGE,
+  ...CARDERO,
+  ...CHILCO,
   ...COMOX_HELMCKEN,
   ...CVG,
   ...HARO,

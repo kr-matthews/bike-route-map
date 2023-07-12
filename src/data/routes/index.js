@@ -36,8 +36,8 @@ export const ROUTES = {
     name: "45th",
     legs: [],
   },
-  sixtyThirdSixtyFourth: {
-    name: "63rd / 64th",
+  sixtySeventh: {
+    name: "67th",
     legs: [{ videos: { westbound: VIDEOS.sixtySeventhPlusWb } }],
   },
   adanac: {
@@ -252,7 +252,7 @@ export const ROUTES = {
     ],
   },
   masumiMitsui: {
-    name: "Masumi Mitsui Greenway",
+    name: "Masumi Mitsui Greenway (57th)",
     legs: [
       {
         videos: {
@@ -294,7 +294,7 @@ export const ROUTES = {
     legs: [{ videos: { eastbound: VIDEOS.cambieBridgeNelsonSb } }],
   },
   northArmBridge: {
-    name: "North Arm Bridge (aka Canada Line Bridge)",
+    name: "North Arm Bridge (Canada Line Bridge)",
     legs: [
       {
         videos: {

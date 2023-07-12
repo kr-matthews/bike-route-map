@@ -1,3 +1,4 @@
+import { CHILCO_GEORGIA } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
@@ -107,7 +108,7 @@ export const LIONS_GATE_BRIDGE = [
       [49.29501, -123.137],
       [49.29478, -123.13698],
       [49.29457, -123.13689],
-      [49.29442, -123.13675],
+      CHILCO_GEORGIA,
       [49.29353, -123.13537],
       [49.29257, -123.13383],
     ],

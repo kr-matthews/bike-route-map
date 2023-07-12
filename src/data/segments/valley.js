@@ -1,4 +1,6 @@
 import {
+  ANGUS_33RD,
+  ARBUTUS_GREENWAY_33RD,
   TRAFALGAR_10TH,
   TRAFALGAR_3RD,
   VALLEY_33RD,
@@ -83,5 +85,14 @@ export const VALLEY = [
       [49.27274, -123.16437],
       [49.27298, -123.16437],
     ],
+  },
+  {
+    description: "33rd west of valley",
+    positions: [[49.24208, -123.15224], VALLEY_33RD],
+  },
+  {
+    description: "33rd east of valley",
+    videos: [VIDEOS.valleySb],
+    positions: [VALLEY_33RD, ARBUTUS_GREENWAY_33RD, ANGUS_33RD],
   },
 ];
