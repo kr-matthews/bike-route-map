@@ -6,7 +6,7 @@ import SelectedRoute from "./SelectedRoute";
 // TODO: clean up logic & styling
 export default function Preview() {
   return (
-    <div>
+    <div style={{ height: "100vh", width: "100%", overflow: "auto" }}>
       <Debug />
       <Routes />
       <SelectedRoute />
