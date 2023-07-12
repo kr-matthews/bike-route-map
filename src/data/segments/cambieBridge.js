@@ -1,9 +1,24 @@
-import { ASH_7TH, BEATTY_NELSON, YUKON_5TH } from "../intersections";
+import {
+  ASH_2ND,
+  ASH_7TH,
+  BEATTY_NELSON,
+  CAMBIE_2ND_N,
+  CAMBIE_2ND_NW,
+  CAMBIE_2ND_SE,
+  CAMBIE_2ND_SW,
+  CAMBIE_LOOP_2ND_N,
+  CAMBIE_LOOP_2ND_S,
+  CAMBIE_NB_ON_RAMP,
+  CAMBIE_NB_ON_RAMP_JOIN,
+  CAMBIE_PARKING_ENTRANCE,
+  CAMBIE_SB_OFF_RAMP,
+  SMITHE_EXPO,
+  YUKON_5TH,
+} from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-// TODO: add missing segments: crossing 2nd under bridge; all north end
-// TODO: intersections
+// TODO: add missing segments: north end
 
 export const CAMBIE_BRIDGE = [
   {
@@ -13,10 +28,10 @@ export const CAMBIE_BRIDGE = [
     videos: [VIDEOS.cambieBridgeSmithNb],
     elevated: true,
     positions: [
-      [49.26695, -123.11447],
+      CAMBIE_NB_ON_RAMP,
       [49.26698, -123.11447],
       [49.26719, -123.11457],
-      [49.26738, -123.1146],
+      CAMBIE_NB_ON_RAMP_JOIN,
       [49.26866, -123.11467],
       [49.26948, -123.11476],
       [49.26992, -123.11475],
@@ -44,7 +59,7 @@ export const CAMBIE_BRIDGE = [
       [49.27544, -123.11452],
       [49.27547, -123.11458],
       [49.2756, -123.11463],
-      [49.27578, -123.1147],
+      SMITHE_EXPO,
     ],
   },
   {
@@ -77,104 +92,93 @@ export const CAMBIE_BRIDGE = [
       [49.26681, -123.11538],
       [49.26675, -123.11541],
       [49.26669, -123.11538],
-      [49.26661, -123.11534],
+      CAMBIE_SB_OFF_RAMP,
     ],
   },
   {
-    description: "connection to off-broadway via ash",
+    description: "connection to off-broadway via 2nd & ash",
     videos: [VIDEOS.cambieBridgeNelsonSb],
     positions: [
       ASH_7TH,
-      [49.26579, -123.11742],
+      ASH_2ND,
       [49.26601, -123.11743],
-      [49.26608, -123.11743],
-    ],
-  },
-  {
-    description: "2nd, north side, west of bridge",
-    videos: [VIDEOS.cambieBridgeNelsonSb],
-    positions: [
       [49.26608, -123.11743],
       [49.26608, -123.11704],
       [49.2661, -123.11677],
       [49.26614, -123.11654],
-      [49.26623, -123.11621],
+      CAMBIE_LOOP_2ND_N,
       [49.26634, -123.11593],
       [49.26639, -123.11581],
-      [49.26661, -123.11534],
+      CAMBIE_SB_OFF_RAMP,
     ],
   },
   {
     description: "2nd, north side, under bridge",
     positions: [
-      [49.26662, -123.11535],
+      CAMBIE_SB_OFF_RAMP,
       [49.2666, -123.11529],
       [49.26661, -123.11521],
-      [49.26677, -123.11485],
+      CAMBIE_2ND_NW,
+      CAMBIE_2ND_N,
       [49.26694, -123.1145],
-      [49.26695, -123.11447],
+      CAMBIE_NB_ON_RAMP,
     ],
   },
   {
     description: "2nd, south side",
     positions: [
-      [49.26579, -123.11742],
+      ASH_2ND,
       [49.26578, -123.11622],
       [49.26581, -123.1161],
       [49.26591, -123.11591],
       [49.26601, -123.11566],
       [49.26617, -123.11533],
       [49.26627, -123.11503],
-      [49.26648, -123.1147],
+      CAMBIE_2ND_SW,
       [49.26654, -123.11457],
       [49.2666, -123.11451],
-      [49.26666, -123.11446],
+      CAMBIE_2ND_SE,
     ],
   },
   {
     description: "crossing 2nd, east side",
     videos: [VIDEOS.cambieBridgeSmithNb],
-    positions: [
-      [49.26666, -123.11446],
-      [49.26668, -123.11444],
-      [49.26695, -123.11447],
-    ],
+    positions: [CAMBIE_2ND_SE, [49.26668, -123.11444], CAMBIE_NB_ON_RAMP],
   },
-  // crossing 2nd, middle
+  {
+    description: "crossing 2nd, under",
+    positions: [CAMBIE_2ND_NW, CAMBIE_2ND_SW],
+  },
   {
     description: "crossing 2nd, west side",
     positions: [
-      [49.26591, -123.11591],
+      CAMBIE_LOOP_2ND_S,
       [49.26599, -123.11603],
       [49.26614, -123.11614],
-      [49.26623, -123.11621],
+      CAMBIE_LOOP_2ND_N,
     ],
   },
   {
-    description: "northbound onramp",
+    description: "northbound alt on-ramp",
     positions: [
-      [49.26737, -123.11459],
+      CAMBIE_NB_ON_RAMP_JOIN,
       [49.26739, -123.11456],
       [49.26754, -123.11455],
       [49.26758, -123.11456],
       [49.2678, -123.11458],
       [49.26785, -123.11471],
-      [49.26787, -123.11487],
+      CAMBIE_PARKING_ENTRANCE,
     ],
   },
   {
     description: "under bridge",
-    positions: [
-      [49.26677, -123.11485],
-      [49.26787, -123.11487],
-      [49.26812, -123.11487],
-    ],
+    positions: [CAMBIE_2ND_N, CAMBIE_PARKING_ENTRANCE, [49.26812, -123.11487]],
   },
   {
     description: "connection to off-broadway via 5th",
     videos: [VIDEOS.cambieBridgeSmithNb],
     positions: [
-      [49.26666, -123.11446],
+      CAMBIE_2ND_SE,
       [49.26665, -123.11435],
       [49.26667, -123.11428],
       YUKON_5TH,

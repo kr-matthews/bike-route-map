@@ -1,3 +1,4 @@
+import { SMITHE_EXPO } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
@@ -34,7 +35,7 @@ export const SMITHE = [
     description: "uni-directional",
     videos: [VIDEOS.cambieBridgeSmithNb],
     positions: [
-      [49.27578, -123.1147],
+      SMITHE_EXPO,
       [49.276, -123.11484],
       [49.27613, -123.11496],
       [49.27629, -123.11512],

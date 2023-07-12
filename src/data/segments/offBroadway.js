@@ -6,7 +6,7 @@ import {
   BLANCA_8TH,
   COLUMBIA_5TH,
   GLEN_7TH,
-  GRANDVIEW_8TH,
+  GRANDVIEW_8TH_N,
   HIGHBURY_8TH,
   LAKEWOOD_8TH,
   ONTARIO_5TH,
@@ -139,7 +139,7 @@ export const OFF_BROADWAY = [
     description: "cvg/off-broadway east",
     videos: [VIDEOS.offBroadwayWb],
     positions: [
-      GRANDVIEW_8TH,
+      GRANDVIEW_8TH_N,
       [49.26325, -123.06818],
       [49.26326, -123.06806],
       [49.26325, -123.06592],

@@ -1,15 +1,23 @@
 import {
   BOUNDARY_CVG,
+  CLARK_6TH_NE,
+  CLARK_6TH_NW,
+  CLARK_6TH_SE,
+  CLARK_6TH_SW,
   COMMERCIAL_GRANDVIEW,
-  GRANDVIEW_8TH,
+  GLEN_6TH_N,
+  GLEN_6TH_S,
+  GRANDVIEW_8TH_N,
+  GRANDVIEW_8TH_S,
+  KEITH_6TH_NE,
+  KEITH_6TH_NW,
+  KEITH_6TH_SE,
+  KEITH_6TH_SW,
   VICTORIA_BROADWAY,
   WOODLAND_GRANDVIEW,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
-
-// TODO: shared intersections
-// TODO: add vcc alternates
 
 export const CVG = [
   {
@@ -39,17 +47,38 @@ export const CVG = [
       [49.26677, -123.08933],
       [49.26673, -123.08908],
       [49.26625, -123.08662],
-      [49.26531, -123.08175],
-      [49.26527, -123.08135],
-      [49.26524, -123.07941],
-      [49.26514, -123.0794],
-      [49.26512, -123.07739],
+      [49.26537, -123.08175],
+      GLEN_6TH_N,
+      KEITH_6TH_NW,
+      KEITH_6TH_NE,
+      KEITH_6TH_SE,
+      CLARK_6TH_SW,
+      CLARK_6TH_SE,
+      CLARK_6TH_NE,
       [49.26601, -123.07737],
       [49.26606, -123.07721],
       [49.26609, -123.07698],
       [49.26563, -123.07557],
       WOODLAND_GRANDVIEW,
     ],
+  },
+  {
+    routes: [ROUTES.cvg.name],
+    legs: ["Vancouver"],
+    description: "vcc alt. west",
+    positions: [GLEN_6TH_N, GLEN_6TH_S, KEITH_6TH_SW, KEITH_6TH_SE],
+  },
+  {
+    routes: [ROUTES.cvg.name],
+    legs: ["Vancouver"],
+    description: "vcc alt. mid",
+    positions: [KEITH_6TH_SW, KEITH_6TH_NW],
+  },
+  {
+    routes: [ROUTES.cvg.name],
+    legs: ["Vancouver"],
+    description: "vcc alt. east",
+    positions: [KEITH_6TH_NE, CLARK_6TH_NW, CLARK_6TH_SW],
   },
   {
     routes: [ROUTES.cvg.name, ROUTES.offBroadway.name],
@@ -63,7 +92,7 @@ export const CVG = [
     legs: ["Vancouver"],
     description: "cvg/off-broadway east",
     videos: [VIDEOS.offBroadwayWb],
-    positions: [COMMERCIAL_GRANDVIEW, [49.26372, -123.06966], GRANDVIEW_8TH],
+    positions: [COMMERCIAL_GRANDVIEW, [49.26372, -123.06966], GRANDVIEW_8TH_N],
   },
   {
     routes: [ROUTES.cvg.name],
@@ -74,7 +103,7 @@ export const CVG = [
     positions: [
       COMMERCIAL_GRANDVIEW,
       [49.26345, -123.0691],
-      [49.26313, -123.06833],
+      GRANDVIEW_8TH_S,
       [49.26257, -123.06697],
       [49.26251, -123.06688],
       [49.26241, -123.06681],
@@ -98,8 +127,12 @@ export const CVG = [
       [49.26259, -123.06674],
       [49.26262, -123.06687],
       [49.26277, -123.06724],
-      GRANDVIEW_8TH,
+      GRANDVIEW_8TH_N,
     ],
+  },
+  {
+    description: "median at 8th",
+    positions: [GRANDVIEW_8TH_S, GRANDVIEW_8TH_N],
   },
   {
     routes: [ROUTES.cvg.name],
