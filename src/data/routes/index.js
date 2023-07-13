@@ -71,6 +71,14 @@ export const ROUTES = {
     name: "Balaclava",
     legs: [],
   },
+  bcParkway: {
+    name: "BC Parkway",
+    legs: [
+      { name: "Vancouver", videos: {} },
+      { name: "Burnaby", videos: {} },
+      { name: "New Westminster", videos: {} },
+    ],
+  },
   beatty: {
     name: "Beatty",
     legs: [],
