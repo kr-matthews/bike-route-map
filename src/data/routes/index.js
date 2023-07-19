@@ -1,6 +1,5 @@
 import { VIDEOS } from "../videos";
 
-// !! add missing un-named segments for existing routes
 // TODO: separate by city? add cities: [...] property?
 // TODO: add remaining Vancouver routes (the confusing ones, like seaside (bypass)...)
 
@@ -137,6 +136,14 @@ export const ROUTES = {
     name: "Cassiar",
     legs: [],
   },
+  cvg: {
+    name: "Central Valley Greenway",
+    legs: [
+      { name: "Vancouver", videos: {} },
+      { name: "Burnaby", videos: {} },
+      { name: "New Westminster", videos: {} },
+    ],
+  },
   chilco: {
     name: "Chilco",
     legs: [],
@@ -154,14 +161,6 @@ export const ROUTES = {
           westbound: VIDEOS.comoxHelmckenWb,
         },
       },
-    ],
-  },
-  cvg: {
-    name: "Central Valley Greenway",
-    legs: [
-      { name: "Vancouver", videos: {} },
-      { name: "Burnaby", videos: {} },
-      { name: "New Westminster", videos: {} },
     ],
   },
   cypress: {
