@@ -13,6 +13,7 @@ import {
   KEITH_6TH_NW,
   KEITH_6TH_SE,
   KEITH_6TH_SW,
+  LAKEWOOD_GRANDVIEW,
   VICTORIA_BROADWAY,
   WOODLAND_GRANDVIEW,
 } from "../intersections";
@@ -146,8 +147,7 @@ export const CVG = [
       [49.26161, -123.06448],
       [49.26155, -123.06424],
       [49.26146, -123.06399],
-      [49.26069, -123.06208],
-      [49.26069, -123.06208],
+      LAKEWOOD_GRANDVIEW,
       [49.26036, -123.06117],
       [49.25995, -123.0602],
       [49.25984, -123.05998],

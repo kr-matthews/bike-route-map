@@ -1,4 +1,4 @@
-import {} from "../intersections";
+import { EARLES_VANNESS } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
@@ -102,7 +102,7 @@ export const MIDTOWN = [
       [49.23767, -123.04883],
       [49.23975, -123.0468],
       [49.24118, -123.04541],
-      [49.24312, -123.04358],
+      EARLES_VANNESS,
       [49.24456, -123.0422],
       [49.24453, -123.03663],
       [49.24451, -123.03404],
