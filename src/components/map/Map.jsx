@@ -15,10 +15,10 @@ const TILE_LAYER = {
 
 export default function Map() {
   return (
-    <div style={{ height: "1em", width: "60vw" }}>
+    <div style={{ height: "1em", width: "calc(100% - 625px)" }}>
       <MapContainer
         style={{
-          width: "60vw",
+          width: "100%",
           height: "100vh",
         }}
         bounds={VANCOUVER_BOUNDS}

@@ -10,9 +10,11 @@ export default function SelectedRoute() {
   return (
     <>
       <h2>{selectedRoute.name}</h2>
-      {selectedRoute.legs.map((leg) => (
-        <Leg key={selectedRoute.name + leg.name} leg={leg} />
-      ))}
+      <div style={{ height: "calc(50% - 70px)", overflow: "auto" }}>
+        {selectedRoute.legs.map((leg) => (
+          <Leg key={selectedRoute.name + leg.name} leg={leg} />
+        ))}
+      </div>
     </>
   );
 }
