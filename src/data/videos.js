@@ -1,5 +1,6 @@
 const VIDEOS = {
   alexanderEb: "5pjlcdGKa10",
+  bcParkwayBurnabyEb: "a9Rwmtu7SI0",
   cambieBridgeNelsonSb: "FWN1apBAy3g",
   cambieBridgeSmithNb: "i_GE3QKQZBA",
   cambieSeparatedNb: "c0Yjyt4isPs",

@@ -75,8 +75,9 @@ export const ROUTES = {
     name: "BC Parkway",
     legs: [
       { name: "Vancouver", videos: {} },
-      { name: "Burnaby", videos: {} },
+      { name: "Burnaby", videos: { eastbound: VIDEOS.bcParkwayBurnabyEb } },
       { name: "New Westminster", videos: {} },
+      { name: "Surrey", videos: {} },
     ],
   },
   beatty: {
@@ -160,6 +161,7 @@ export const ROUTES = {
     legs: [
       { name: "Vancouver", videos: {} },
       { name: "Burnaby", videos: {} },
+      { name: "New Westminster", videos: {} },
     ],
   },
   cypress: {

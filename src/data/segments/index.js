@@ -1,3 +1,4 @@
+import { BC_PARKWAY } from "./bcParkway";
 import { BUTE } from "./bute";
 import { CAMBIE_BRIDGE } from "./cambieBridge";
 import { CARDERO } from "./cardero";
@@ -17,6 +18,7 @@ import { VALLEY } from "./valley";
 
 // convention: bi-directional paths are stored northbound, eastbound, or clockwise
 export const SEGMENTS = [
+  ...BC_PARKWAY,
   ...BUTE,
   ...CAMBIE_BRIDGE,
   ...CARDERO,
