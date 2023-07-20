@@ -138,6 +138,7 @@ export const ROUTES = {
   },
   cvg: {
     name: "Central Valley Greenway",
+    shortName: "Central Valley G.",
     legs: [
       { name: "Vancouver", videos: {} },
       { name: "Burnaby", videos: {} },
@@ -262,6 +263,7 @@ export const ROUTES = {
   },
   masumiMitsui: {
     name: "Masumi Mitsui Greenway (57th)",
+    shortName: "Masumi Mitsui G.",
     legs: [
       {
         videos: {
@@ -304,6 +306,7 @@ export const ROUTES = {
   },
   northArmBridge: {
     name: "North Arm Bridge (Canada Line Bridge)",
+    shortName: "North Arm Bridge",
     legs: [
       {
         videos: {

@@ -59,7 +59,7 @@ function Route({ route }) {
           color: "White",
         }}
       >
-        {route.name}
+        {route.shortName ?? route.name}
       </span>
     </div>
   );
