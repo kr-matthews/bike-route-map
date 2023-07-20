@@ -9,7 +9,9 @@ export default function SelectedRoute() {
 
   return (
     <>
-      <h2>{selectedRoute.name}</h2>
+      <h2 style={{ textAlign: "center", marginBottom: "4px" }}>
+        {selectedRoute.name}
+      </h2>
       <div style={{ height: "calc(50% - 70px)", overflow: "auto" }}>
         {selectedRoute.legs.map((leg) => (
           <Leg key={selectedRoute.name + leg.name} leg={leg} />

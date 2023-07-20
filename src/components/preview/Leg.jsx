@@ -8,14 +8,29 @@ export default function Leg({ leg }) {
 
   return (
     <>
-      {leg.name && <h3>{leg.name}</h3>}
-      <div style={{ display: "flex" }}>
-        {directions.map(
-          (direction) =>
+      {leg.name && (
+        <h3 style={{ textAlign: "center", marginBottom: "4px" }}>{leg.name}</h3>
+      )}
+      <div style={{ display: "flex", marginBottom: "4px" }}>
+        {directions.map((direction) => {
+          const isShowing = video === leg.videos[direction];
+          return (
             leg.videos[direction] && (
               <span key={direction}>
                 <h4
-                  style={{ textTransform: "capitalize" }}
+                  style={{
+                    textTransform: "capitalize",
+                    fontWeight: "bold",
+                    textAlign: "center",
+                    backgroundColor: isShowing
+                      ? "RGBA(128,0,128,1)"
+                      : "RGBA(128,0,128,0.4)",
+                    borderRadius: "50px",
+                    padding: "10px 0",
+                    margin: "10px 40px",
+                    cursor: "pointer",
+                    color: "White",
+                  }}
                   onMouseDown={() =>
                     setVideo((current) =>
                       current === leg.videos[direction]
@@ -24,9 +39,7 @@ export default function Leg({ leg }) {
                     )
                   }
                 >
-                  {`${direction}${
-                    video === leg.videos[direction] ? " (now showing)" : ""
-                  }`}
+                  {direction}
                 </h4>
                 <div>
                   <iframe
@@ -40,7 +53,8 @@ export default function Leg({ leg }) {
                 </div>
               </span>
             )
-        )}
+          );
+        })}
       </div>
     </>
   );

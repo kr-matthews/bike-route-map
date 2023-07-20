@@ -8,7 +8,7 @@ import { Selections } from "../../App";
 export default function Routes() {
   return (
     <>
-      <h2>Routes</h2>
+      <h2 style={{ textAlign: "center" }}>Routes</h2>
       <div
         style={{
           height: "calc(50% - 70px)",
@@ -42,7 +42,7 @@ function Route({ route }) {
         width: "10em",
         backgroundColor: "DarkGreen",
         borderRadius: "10px",
-        padding: "4px 0",
+        padding: "6px 0",
         margin: "5px 0",
         cursor: "pointer",
         opacity: isSelected || isNoneSelected ? "100%" : "60%",
