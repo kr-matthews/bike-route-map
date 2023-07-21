@@ -9,11 +9,13 @@ import { COMOX_HELMCKEN } from "./comoxHelmcken";
 import { CVG } from "./cvg";
 import { FOURTH } from "./fourth";
 import { HARO } from "./haro";
+import { HILLCREST } from "./hillcrest";
 import { LIONS_GATE_BRIDGE } from "./lionsGateBridge";
 import { MASUMI_MITSUI_GREENWAY } from "./masumiMitsui";
 import { MIDTOWN } from "./midtown";
 import { NELSON } from "./nelson";
 import { OFF_BROADWAY } from "./offBroadway";
+import { PANDORA } from "./pandora";
 import { POWELL } from "./powell";
 import { SMITHE } from "./smithe";
 import { TENTH } from "./tenth";
@@ -34,11 +36,13 @@ export const SEGMENTS = [
   ...CVG,
   ...FOURTH,
   ...HARO,
+  ...HILLCREST,
   ...LIONS_GATE_BRIDGE,
   ...MASUMI_MITSUI_GREENWAY,
   ...MIDTOWN,
   ...NELSON,
   ...OFF_BROADWAY,
+  ...PANDORA,
   ...POWELL,
   ...SMITHE,
   ...TENTH,

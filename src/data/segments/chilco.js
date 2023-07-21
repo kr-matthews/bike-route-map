@@ -3,7 +3,7 @@ import {
   CHILCO_ALBERNI_W,
   CHILCO_BEACH,
   CHILCO_COMOX,
-  CHILCO_GEORGIA,
+  CHILCO_GEORGIA_S,
   CHILCO_HARO,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -28,6 +28,6 @@ export const CHILCO = [
     routes: [ROUTES.chilco.name],
     description: "connection from georgia",
     directions: ["southbound"],
-    positions: [CHILCO_GEORGIA, CHILCO_ALBERNI_E],
+    positions: [CHILCO_GEORGIA_S, CHILCO_ALBERNI_E],
   },
 ];

@@ -1,20 +1,75 @@
-import { CHILCO_GEORGIA } from "../intersections";
+import {
+  BURRARD_DUNSMUIR,
+  CARDERO_GEORGIA_N,
+  CARDERO_GEORGIA_S,
+  CHILCO_GEORGIA_N,
+  CHILCO_GEORGIA_S,
+  HORNBY_DUNSMUIR,
+  JERVIS_PENDER,
+  NICOLA_GEORGIA,
+  NICOLA_PENDER,
+} from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-// TODO: add connections at both ends
+// TODO: add connections in north vancouver
 
 export const LIONS_GATE_BRIDGE = [
+  {
+    directions: ["westbound"],
+    description: "melville",
+    videos: [VIDEOS.lionsGateBridgeNb],
+    positions: [
+      HORNBY_DUNSMUIR,
+      BURRARD_DUNSMUIR,
+      [49.28561, -123.11944],
+      [49.28577, -123.11971],
+      [49.28589, -123.11999],
+      [49.28598, -123.12036],
+      [49.28609, -123.12114],
+      [49.28614, -123.12137],
+      [49.28627, -123.1217],
+      [49.28647, -123.12202],
+      [49.28787, -123.12418],
+      [49.28858, -123.12525],
+      [49.28885, -123.12567],
+      [49.28895, -123.12566],
+      JERVIS_PENDER,
+    ],
+  },
+  {
+    directions: ["westbound"],
+    description: "pender",
+    type: "uncomfortable",
+    videos: [VIDEOS.lionsGateBridgeNb],
+    positions: [
+      JERVIS_PENDER,
+      [49.28962, -123.12737],
+      NICOLA_PENDER,
+      [49.29034, -123.12987],
+      CARDERO_GEORGIA_N,
+    ],
+  },
+  {
+    directions: ["westbound"],
+    description: "georgia westbound",
+    videos: [VIDEOS.lionsGateBridgeNb],
+    positions: [
+      CARDERO_GEORGIA_N,
+      [49.29164, -123.13209],
+      [49.29266, -123.13367],
+      [49.29374, -123.13532],
+      [49.29444, -123.13629],
+      CHILCO_GEORGIA_N,
+    ],
+  },
   {
     routes: [ROUTES.lionsGate.name],
     directions: ["northbound"],
     description: "northbound",
     videos: [VIDEOS.lionsGateBridgeNb],
     positions: [
-      [49.29266, -123.13367],
-      [49.29374, -123.13532],
-      [49.29444, -123.13629],
-      [49.2946, -123.13649],
+      CHILCO_GEORGIA_N,
       [49.29476, -123.13659],
       [49.29494, -123.13662],
       [49.2951, -123.1366],
@@ -108,9 +163,20 @@ export const LIONS_GATE_BRIDGE = [
       [49.29501, -123.137],
       [49.29478, -123.13698],
       [49.29457, -123.13689],
-      CHILCO_GEORGIA,
+      CHILCO_GEORGIA_S,
+    ],
+  },
+  {
+    directions: ["eastbound"],
+    description: "georgia eastbound",
+    videos: [VIDEOS.lionsGateBridgeSb],
+    positions: [
+      CHILCO_GEORGIA_S,
       [49.29353, -123.13537],
       [49.29257, -123.13383],
+      [49.29155, -123.13225],
+      CARDERO_GEORGIA_S,
+      NICOLA_GEORGIA,
     ],
   },
 ];
