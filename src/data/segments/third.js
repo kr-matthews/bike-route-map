@@ -6,7 +6,7 @@ import {
   STEPHENS_YORK,
   TRAFALGAR_3RD,
   WALLACE_3RD,
-  WALLACE_4TH,
+  WALLACE_4TH_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -46,7 +46,7 @@ export const THIRD = [
   },
   {
     description: "connection with 4th",
-    positions: [WALLACE_3RD, WALLACE_4TH],
+    positions: [WALLACE_3RD, WALLACE_4TH_S],
   },
   {
     description: "connection with valley",

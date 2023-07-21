@@ -1,4 +1,8 @@
-import { EARLES_VANNESS } from "../intersections";
+import {
+  CARIBOO_29TH,
+  EARLES_VANNESS,
+  KINGSWAY_EARLES,
+} from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
@@ -6,7 +10,7 @@ export const MIDTOWN = [
   {
     routes: [ROUTES.midtown.name],
     legs: ["Vancouver"],
-    description: "primary",
+    description: "west portion",
     videos: [VIDEOS.midtownVancouverEb],
     positions: [
       [49.2351, -123.19704],
@@ -99,14 +103,33 @@ export const MIDTOWN = [
       [49.23587, -123.053],
       [49.23586, -123.05169],
       [49.23586, -123.04886],
-      [49.23767, -123.04883],
+      KINGSWAY_EARLES,
+    ],
+  },
+  {
+    routes: [ROUTES.midtown.name],
+    legs: ["Vancouver"],
+    description: "earles & 29th",
+    type: "uncomfortable",
+    videos: [VIDEOS.midtownVancouverEb],
+    positions: [
+      KINGSWAY_EARLES,
       [49.23975, -123.0468],
       [49.24118, -123.04541],
       EARLES_VANNESS,
       [49.24456, -123.0422],
       [49.24453, -123.03663],
       [49.24451, -123.03404],
-      [49.24447, -123.02744],
+      CARIBOO_29TH,
+    ],
+  },
+  {
+    routes: [ROUTES.midtown.name],
+    legs: ["Vancouver"],
+    description: "east portion",
+    videos: [VIDEOS.midtownVancouverEb],
+    positions: [
+      CARIBOO_29TH,
       [49.24433, -123.02748],
       [49.24375, -123.02802],
       [49.24342, -123.02725],
