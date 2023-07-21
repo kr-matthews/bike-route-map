@@ -16,6 +16,7 @@ export function createPathOptions(
   const isHighlighted = (routes ?? []).includes(highlighted);
   const hasActiveVideo = videos?.includes(video);
   const isUnofficial = type === "unofficial";
+  const isUncomfortable = type === "uncomfortable";
 
   const nonVideoColour =
     directions?.length === 1 ? UNIDIRECTIONAL_COLOUR : BIDIRECTIONAL_COLOUR;
@@ -26,6 +27,6 @@ export function createPathOptions(
     color: hasActiveVideo ? VIDEO_COLOUR : nonVideoColour,
     weight: isHighlighted || hasActiveVideo ? WIDE_WEIGHT : NARROW_WEIGHT,
     opacity: isSelected || isNoneSelected ? FULL_OPACITY : DIM_OPACITY,
-    dashArray: isUnofficial ? DASH_PATTERN : undefined,
+    dashArray: isUnofficial || isUncomfortable ? DASH_PATTERN : undefined,
   };
 }
