@@ -4,19 +4,23 @@ import { Selections } from "../../App";
 
 // TODO: partition routes by e-w / n-s (or other?)
 // TODO: allow 'zoom to route'
+// TODO: allow searching
 // TODO: allow filtering (by direction, to only official, by quality, etc)?
 export default function Routes() {
+  const { selectedRoute } = useContext(Selections);
+  const isSomeRouteSelected = !!selectedRoute;
+  const height = isSomeRouteSelected ? "calc(50% - 70px)" : "calc(100% - 70px)";
+
   return (
     <>
       <h2 style={{ textAlign: "center" }}>Routes</h2>
       <div
         style={{
-          height: "calc(50% - 70px)",
+          height,
           width: "100%",
           overflow: "auto",
           display: "grid",
           gridTemplateColumns: "1fr 1fr 1fr",
-          // gap: "1re",
           font: "120% system-ui",
         }}
       >
