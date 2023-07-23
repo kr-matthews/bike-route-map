@@ -7,6 +7,7 @@ import { CARRALL } from "./carrall";
 import { CHILCO } from "./chilco";
 import { COMOX_HELMCKEN } from "./comoxHelmcken";
 import { CVG } from "./cvg";
+import { FORTY_FIFTH } from "./fortyFifth";
 import { FOURTH } from "./fourth";
 import { HARO } from "./haro";
 import { HILLCREST } from "./hillcrest";
@@ -34,6 +35,7 @@ export const SEGMENTS = [
   ...CHILCO,
   ...COMOX_HELMCKEN,
   ...CVG,
+  ...FORTY_FIFTH,
   ...FOURTH,
   ...HARO,
   ...HILLCREST,

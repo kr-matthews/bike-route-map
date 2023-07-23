@@ -24,6 +24,7 @@ export const BC_PARKWAY = [
     routes: [ROUTES.bcParkway.name],
     legs: ["Vancouver"],
     description: "primary",
+    videos: [VIDEOS.bcParkwayVancouverEb],
     positions: [
       LAKEWOOD_GRANDVIEW,
       [49.2595, -123.06208],

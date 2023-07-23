@@ -1,12 +1,14 @@
 const VIDEOS = {
   alexanderEb: "5pjlcdGKa10",
   bcParkwayBurnabyEb: "a9Rwmtu7SI0",
+  bcParkwayVancouverEb: "3giKczCLloI",
   cambieBridgeNelsonSb: "FWN1apBAy3g",
   cambieBridgeSmithNb: "i_GE3QKQZBA",
   cambieSeparatedNb: "c0Yjyt4isPs",
   carrallNb: "1KNO98tWduE",
   comoxHelmckenEb: "_u16UGWH4VQ",
   comoxHelmckenWb: "PgJUF6B4BMQ",
+  fortyFifthWb: "LWue1j2Ir4c",
   fourthEb: "19BLtcs-t7U",
   gardenCityNb: "CqETe9mI-SM",
   gardenCitySb: "3oyKPM5u3Ao",
@@ -32,6 +34,7 @@ const VIDEOS = {
 
 const urlPrefix = "https://www.youtube.com/embed/";
 
+// ! extract this to a helper function?
 Object.entries(VIDEOS).forEach(
   ([route, id]) => (VIDEOS[route] = `${urlPrefix}${id}`)
 );

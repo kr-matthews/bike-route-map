@@ -7,7 +7,7 @@ export const ROUTES = {
   // ? are these legs of seaside bypass?
   third: {
     name: "3rd",
-    legs: [{ videos: { eastbound: VIDEOS.thirdEb, westbound: null } }],
+    legs: [{ videos: { eastbound: VIDEOS.thirdEb } }],
   },
   fourth: {
     name: "4th",
@@ -29,11 +29,11 @@ export const ROUTES = {
   },
   twentyNinth: {
     name: "29th",
-    legs: [{ videos: {} }],
+    legs: [],
   },
   fortyFifth: {
     name: "45th",
-    legs: [],
+    legs: [{ videos: { westbound: VIDEOS.fortyFifthWb } }],
   },
   sixtySeventh: {
     name: "67th",
@@ -53,14 +53,7 @@ export const ROUTES = {
   },
   alexander: {
     name: "Alexander",
-    legs: [
-      {
-        videos: {
-          eastbound: VIDEOS.alexanderEb,
-          westbound: null,
-        },
-      },
-    ],
+    legs: [{ videos: { eastbound: VIDEOS.alexanderEb } }],
   },
   arbutus: {
     name: "Arbutus Greenway",
@@ -73,7 +66,7 @@ export const ROUTES = {
   bcParkway: {
     name: "BC Parkway",
     legs: [
-      { name: "Vancouver", videos: {} },
+      { name: "Vancouver", videos: { eastbound: VIDEOS.bcParkwayVancouverEb } },
       { name: "Burnaby", videos: { eastbound: VIDEOS.bcParkwayBurnabyEb } },
       { name: "New Westminster", videos: {} },
       { name: "Surrey", videos: {} },
@@ -128,7 +121,7 @@ export const ROUTES = {
     name: "Carrall",
     legs: [
       {
-        videos: { northbound: VIDEOS.carrallNb, southbound: null },
+        videos: { northbound: VIDEOS.carrallNb },
       },
     ],
   },
@@ -268,7 +261,6 @@ export const ROUTES = {
       {
         videos: {
           eastbound: VIDEOS.masumiMitsuiEb,
-          westbound: null,
         },
       },
     ],
@@ -280,15 +272,11 @@ export const ROUTES = {
         name: "Vancouver",
         videos: {
           eastbound: VIDEOS.midtownVancouverEb,
-          westbound: null,
         },
       },
       {
         name: "Burnaby",
-        videos: {
-          eastbound: null,
-          westbound: null,
-        },
+        videos: {},
       },
     ],
   },
@@ -318,7 +306,7 @@ export const ROUTES = {
   },
   offBroadway: {
     name: "Off-Broadway",
-    legs: [{ videos: { eastbound: null, westbound: VIDEOS.offBroadwayWb } }],
+    legs: [{ videos: { westbound: VIDEOS.offBroadwayWb } }],
   },
   ontario: {
     name: "Ontario",
@@ -330,7 +318,7 @@ export const ROUTES = {
   },
   powell: {
     name: "Powell",
-    legs: [{ videos: { eastbound: VIDEOS.powellEb, westbound: null } }],
+    legs: [{ videos: { eastbound: VIDEOS.powellEb } }],
   },
   princeEdward: {
     name: "Prince Edward",
@@ -358,7 +346,7 @@ export const ROUTES = {
   },
   valley: {
     name: "Valley",
-    legs: [{ videos: { northbound: null, southbound: VIDEOS.valleySb } }],
+    legs: [{ videos: { southbound: VIDEOS.valleySb } }],
   },
   walesDuchess: {
     name: "Wales Duchess",
@@ -374,6 +362,6 @@ export const ROUTES = {
   },
   yukon: {
     name: "Yukon",
-    legs: [{ videos: {} }],
+    legs: [],
   },
 };
