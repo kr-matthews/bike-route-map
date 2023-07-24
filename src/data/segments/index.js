@@ -18,6 +18,7 @@ import { NELSON } from "./nelson";
 import { OFF_BROADWAY } from "./offBroadway";
 import { PANDORA } from "./pandora";
 import { POWELL } from "./powell";
+import { RIDGEWAY } from "./ridgeway";
 import { SMITHE } from "./smithe";
 import { TENTH } from "./tenth";
 import { THIRD } from "./third";
@@ -46,6 +47,7 @@ export const SEGMENTS = [
   ...OFF_BROADWAY,
   ...PANDORA,
   ...POWELL,
+  ...RIDGEWAY,
   ...SMITHE,
   ...TENTH,
   ...THIRD,

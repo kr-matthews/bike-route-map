@@ -5,6 +5,7 @@ import {
   BALACLAVA_8TH,
   BLANCA_8TH,
   COLUMBIA_5TH,
+  DISCOVERY_8TH,
   GLEN_7TH,
   GRANDVIEW_8TH_N,
   HIGHBURY_8TH,
@@ -23,15 +24,23 @@ import { VIDEOS } from "../videos";
 
 export const OFF_BROADWAY = [
   {
-    routes: [ROUTES.offBroadway.name],
-    description: "west of yukon",
+    routes: [ROUTES.offBroadway.name, ROUTES.ridgeway.name],
+    description: "ridgeway overlap",
     videos: [VIDEOS.offBroadwayWb],
     positions: [
       BLANCA_8TH,
       [49.26563, -123.2121],
       [49.26559, -123.20901],
       [49.26552, -123.206],
-      [49.26548, -123.20298],
+      DISCOVERY_8TH,
+    ],
+  },
+  {
+    routes: [ROUTES.offBroadway.name],
+    description: "west of yukon",
+    videos: [VIDEOS.offBroadwayWb],
+    positions: [
+      DISCOVERY_8TH,
       [49.26545, -123.20139],
       [49.26542, -123.19979],
       [49.26539, -123.19691],

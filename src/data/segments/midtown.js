@@ -1,7 +1,10 @@
 import {
+  BALACLAVA_37TH,
   CARIBOO_29TH,
   EARLES_VANNESS,
   KINGSWAY_EARLES,
+  NANAIMO_38TH,
+  YEW_37TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -10,7 +13,7 @@ export const MIDTOWN = [
   {
     routes: [ROUTES.midtown.name],
     legs: ["Vancouver"],
-    description: "west portion",
+    description: "west of ridgeway",
     videos: [VIDEOS.midtownVancouverEb],
     positions: [
       [49.2351, -123.19704],
@@ -28,13 +31,32 @@ export const MIDTOWN = [
       [49.23778, -123.18203],
       [49.23855, -123.182],
       [49.23856, -123.17869],
-      [49.23853, -123.17578],
+      BALACLAVA_37TH,
+    ],
+  },
+  {
+    routes: [ROUTES.midtown.name, ROUTES.ridgeway.name],
+    legs: ["Vancouver"],
+    description: "west ridgeway overlap",
+    videos: [VIDEOS.midtownVancouverEb],
+    positions: [
+      BALACLAVA_37TH,
       [49.23853, -123.17302],
       [49.2385, -123.16806],
       [49.23847, -123.16575],
       [49.23843, -123.16398],
       [49.23841, -123.16261],
       [49.23837, -123.15977],
+      YEW_37TH,
+    ],
+  },
+  {
+    routes: [ROUTES.midtown.name, ROUTES.ridgeway.name],
+    legs: ["Vancouver"],
+    description: "east ridgeway overlap",
+    videos: [VIDEOS.midtownVancouverEb],
+    positions: [
+      YEW_37TH,
       [49.2383, -123.15526],
       [49.23826, -123.15191],
       [49.23824, -123.15045],
@@ -97,7 +119,16 @@ export const MIDTOWN = [
       [49.23595, -123.06564],
       [49.23594, -123.06551],
       [49.23592, -123.06209],
-      [49.23589, -123.05877],
+      NANAIMO_38TH,
+    ],
+  },
+  {
+    routes: [ROUTES.midtown.name],
+    legs: ["Vancouver"],
+    description: "ridgeway to kingsway",
+    videos: [VIDEOS.midtownVancouverEb],
+    positions: [
+      NANAIMO_38TH,
       [49.23588, -123.05546],
       [49.23587, -123.05422],
       [49.23587, -123.053],
