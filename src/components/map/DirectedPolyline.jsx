@@ -3,35 +3,30 @@ import { Polyline, useMap } from "react-leaflet";
 import L from "leaflet";
 import "leaflet-polylinedecorator";
 
-// const arrow = [
-//   {
-//     offset: "3%",
-//     repeat: 80,
-//     symbol: L.Symbol.arrowHead({
-//       pixelSize: 10,
-//       polygon: false,
-//       pathOptions: { stroke: true, color: "blue" },
-//     }),
-//   },
-// ];
-
-/** A Polyline, but with arrows indicating the direction. */
+/**
+ * A Polyline, but with arrows indicating the direction.
+ *
+ * The implementation is messy because react-leaflet doesn't
+ * seem to have proper support for this.
+ */
 export default function DirectedPolyline(props) {
   const map = useMap();
   const polylineRef = useRef();
   const [decorator, setDecorator] = useState();
-  // const isZoomedIn = map.getZoom() > 15;
+  // zooming in won't trigger const zoom = map.getZoom() to update itself for some reason
+  const [zoom, setZoom] = useState(map.getZoom());
+  const isZoomedIn = zoom >= 15;
 
-  // useEffect(function addZoomListener() {
-  //   map.addEventListener({ zoomend: (zoom) => console.log(zoom.target._zoom) });
-  // }, []);
+  useEffect(function addZoomListener() {
+    map.addEventListener({ zoomend: (zoom) => setZoom(zoom.target._zoom) });
+    // eslint-disable-next-line
+  }, []);
 
   useEffect(
-    function addDecorator() {
+    function createDecorator() {
       const decorator = L.polylineDecorator(polylineRef.current, {
         patterns: [],
       });
-      decorator.addTo(map);
       decorator.addEventListener(props.eventHandlers);
       setDecorator(decorator);
     },
@@ -40,9 +35,29 @@ export default function DirectedPolyline(props) {
   );
 
   useEffect(
+    function removeDecoratorWhenZoomedOut() {
+      if (!isZoomedIn && !!decorator) {
+        decorator.removeFrom(map);
+      }
+    },
+    // eslint-disable-next-line
+    [decorator, isZoomedIn]
+  );
+
+  useEffect(
+    function addDecoratorWhenZoomedIn() {
+      if (isZoomedIn) {
+        decorator.addTo(map);
+      }
+    },
+    // eslint-disable-next-line
+    [decorator, isZoomedIn]
+  );
+
+  useEffect(
     function updateArrows() {
       const arrow = {
-        offset: "5%",
+        offset: "12%",
         repeat: 90,
         symbol: L.Symbol.arrowHead({
           pixelSize: 14,
