@@ -13,7 +13,7 @@ import {
   MACKENZIE_QUESNEL,
   NANAIMO_38TH,
   NANAIMO_45TH,
-  QUESNEL_18TH,
+  QUESNEL_20TH,
   QUESNEL_KING_EDWARD_N,
   QUESNEL_KING_EDWARD_S,
   VIVIAN_45TH,
@@ -46,33 +46,7 @@ export const RIDGEWAY = [
       [49.25603, -123.17924],
       [49.25556, -123.17921],
       [49.25468, -123.17922],
-      QUESNEL_18TH,
-    ],
-  },
-  {
-    routes: [ROUTES.balaclava.name, ROUTES.ridgeway.name],
-    description: "ridgeway main", // TODO: move to balaclava file
-    positions: [
-      QUESNEL_18TH,
-      [49.25435, -123.17671],
-      [49.25337, -123.17599],
-      BALACLAVA_QUESNEL,
-    ],
-  },
-  {
-    routes: [ROUTES.balaclava.name, ROUTES.ridgeway.name],
-    description: "ridgeway alt", // TODO: move to balaclava file
-    positions: [
-      BALACLAVA_QUESNEL,
-      [49.25287, -123.17568],
-      [49.25194, -123.17569],
-      [49.25101, -123.1757],
-      [49.25019, -123.1757],
-      [49.24988, -123.1757],
-      [49.24904, -123.17571],
-      [49.24806, -123.17572],
-      [49.24709, -123.17573],
-      BALACLAVA_29TH,
+      QUESNEL_20TH,
     ],
   },
   {
@@ -83,11 +57,6 @@ export const RIDGEWAY = [
     ],
     description: "balaclava/ridgeway overlap", // TODO: move to 29th file
     positions: [BALACLAVA_29TH, CARNARVON_29TH],
-  },
-  {
-    routes: [ROUTES.balaclava.name, ROUTES.ridgeway.name],
-    description: "ridgeway overlap", // TODO: move to balaclava file
-    positions: [CARNARVON_29TH, CARNARVON_31ST],
   },
   {
     routes: [ROUTES.ridgeway.name],

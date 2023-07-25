@@ -23,7 +23,7 @@ export const BC_PARKWAY = [
   {
     routes: [ROUTES.bcParkway.name],
     legs: ["Vancouver"],
-    description: "primary",
+    description: "lakewood to sunrise",
     videos: [VIDEOS.bcParkwayVancouverEb],
     positions: [
       LAKEWOOD_GRANDVIEW,
@@ -63,6 +63,22 @@ export const BC_PARKWAY = [
       [49.24808, -123.05583],
       [49.24806, -123.05564],
       SLOCAN_BC_PARKWAY,
+    ],
+  },
+  {
+    routes: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
+    legs: ["Vancouver"],
+    description: "slocan",
+    type: "uncomfortable",
+    videos: [VIDEOS.bcParkwayVancouverEb],
+    positions: [SLOCAN_BC_PARKWAY, SLOCAN_29TH],
+  },
+  {
+    routes: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
+    legs: ["Vancouver"],
+    description: "sunrise",
+    videos: [VIDEOS.bcParkwayVancouverEb],
+    positions: [
       SLOCAN_29TH,
       [49.24452, -123.04957],
       [49.24452, -123.04718],
@@ -71,6 +87,15 @@ export const BC_PARKWAY = [
       [49.24401, -123.04609],
       [49.24364, -123.04521],
       [49.24372, -123.04514],
+      EARLES_VANNESS,
+    ],
+  },
+  {
+    routes: [ROUTES.bcParkway.name],
+    legs: ["Vancouver"],
+    description: "sunrise to boundary",
+    videos: [VIDEOS.bcParkwayVancouverEb],
+    positions: [
       EARLES_VANNESS,
       [49.24263, -123.04252],
       [49.24223, -123.04152],
@@ -107,11 +132,17 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routes: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
     legs: ["Vancouver"],
-    description: "29th alt",
+    description: "29th alt road",
+    type: "uncomfortable",
+    positions: [SLOCAN_29TH, [49.24463, -123.04702]],
+  },
+  {
+    routes: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
+    legs: ["Vancouver"],
+    description: "29th alt path",
     positions: [
-      SLOCAN_29TH,
       [49.24463, -123.04702],
       [49.2445, -123.04699],
       [49.24437, -123.04673],

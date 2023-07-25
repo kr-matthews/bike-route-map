@@ -1,4 +1,4 @@
-import {} from "../intersections";
+import { ASHBURN_UPLAND, VIVIAN_57TH, VIVIAN_LYNBROOK } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
@@ -76,7 +76,7 @@ export const MASUMI_MITSUI_GREENWAY = [
       [49.21797, -123.05696],
       [49.21788, -123.05651],
       [49.21778, -123.05613],
-      [49.21762, -123.05579],
+      ASHBURN_UPLAND,
     ],
   },
   {
@@ -85,14 +85,14 @@ export const MASUMI_MITSUI_GREENWAY = [
     directions: ["eastbound"],
     videos: [VIDEOS.masumiMitsuiEb],
     positions: [
-      [49.21762, -123.05579],
+      ASHBURN_UPLAND,
       [49.21734, -123.05541],
       [49.21711, -123.05522],
       [49.21696, -123.05514],
       [49.21709, -123.05446],
       [49.21715, -123.05374],
       [49.2171, -123.05201],
-      [49.21706, -123.05059],
+      VIVIAN_LYNBROOK,
     ],
   },
   {
@@ -101,14 +101,14 @@ export const MASUMI_MITSUI_GREENWAY = [
     directions: ["westbound"],
     videos: [],
     positions: [
-      [49.21806, -123.05057],
+      VIVIAN_57TH,
       [49.21807, -123.05126],
       [49.21798, -123.05429],
       [49.2185, -123.05473],
       [49.21839, -123.055],
       [49.21812, -123.05518],
       [49.21793, -123.05534],
-      [49.21762, -123.05579],
+      ASHBURN_UPLAND,
     ],
   },
 ];

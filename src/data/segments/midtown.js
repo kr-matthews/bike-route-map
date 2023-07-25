@@ -1,6 +1,7 @@
 import {
   BALACLAVA_37TH,
   CARIBOO_29TH,
+  EARLES_38TH,
   EARLES_VANNESS,
   KINGSWAY_EARLES,
   NANAIMO_38TH,
@@ -125,7 +126,7 @@ export const MIDTOWN = [
   {
     routes: [ROUTES.midtown.name],
     legs: ["Vancouver"],
-    description: "ridgeway to kingsway",
+    description: "ridgeway to earles",
     videos: [VIDEOS.midtownVancouverEb],
     positions: [
       NANAIMO_38TH,
@@ -133,8 +134,27 @@ export const MIDTOWN = [
       [49.23587, -123.05422],
       [49.23587, -123.053],
       [49.23586, -123.05169],
-      [49.23586, -123.04886],
+      EARLES_38TH,
+    ],
+  },
+  {
+    routes: [ROUTES.sunrise.name, ROUTES.midtown.name],
+    legs: [undefined, "Vancouver"],
+    description: "earles to kingsway",
+    videos: [VIDEOS.midtownVancouverEb],
+    positions: [EARLES_38TH, KINGSWAY_EARLES],
+  },
+  {
+    routes: [ROUTES.midtown.name, ROUTES.sunrise.name],
+    legs: [undefined, "Vancouver"],
+    description: "earles & 29th",
+    type: "uncomfortable",
+    videos: [VIDEOS.midtownVancouverEb],
+    positions: [
       KINGSWAY_EARLES,
+      [49.23977, -123.04681],
+      [49.2412, -123.04542],
+      EARLES_VANNESS,
     ],
   },
   {
@@ -144,9 +164,6 @@ export const MIDTOWN = [
     type: "uncomfortable",
     videos: [VIDEOS.midtownVancouverEb],
     positions: [
-      KINGSWAY_EARLES,
-      [49.23975, -123.0468],
-      [49.24118, -123.04541],
       EARLES_VANNESS,
       [49.24456, -123.0422],
       [49.24453, -123.03663],

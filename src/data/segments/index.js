@@ -1,4 +1,5 @@
 import { ALEXANDER } from "./alexander";
+import { BALACLAVA } from "./balaclava";
 import { BC_PARKWAY } from "./bcParkway";
 import { BUTE } from "./bute";
 import { CAMBIE_BRIDGE } from "./cambieBridge";
@@ -20,6 +21,7 @@ import { PANDORA } from "./pandora";
 import { POWELL } from "./powell";
 import { RIDGEWAY } from "./ridgeway";
 import { SMITHE } from "./smithe";
+import { SUNRISE } from "./sunrise";
 import { TENTH } from "./tenth";
 import { THIRD } from "./third";
 import { TWENTY_SECOND } from "./twentySecond";
@@ -28,6 +30,7 @@ import { VALLEY } from "./valley";
 // convention: bi-directional paths are stored northbound, eastbound, or clockwise
 export const SEGMENTS = [
   ...ALEXANDER,
+  ...BALACLAVA,
   ...BC_PARKWAY,
   ...BUTE,
   ...CAMBIE_BRIDGE,
@@ -49,6 +52,7 @@ export const SEGMENTS = [
   ...POWELL,
   ...RIDGEWAY,
   ...SMITHE,
+  ...SUNRISE,
   ...TENTH,
   ...THIRD,
   ...TWENTY_SECOND,
