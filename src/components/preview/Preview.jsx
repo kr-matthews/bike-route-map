@@ -6,10 +6,10 @@ export default function Preview() {
   return (
     <div
       style={{
+        display: "flex",
+        flexDirection: "column",
         height: "100vh",
         width: "625px",
-        paddingLeft: "1em",
-        overflow: "hidden",
       }}
     >
       <Routes />

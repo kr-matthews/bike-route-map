@@ -8,15 +8,24 @@ export default function SelectedRoute() {
   if (!selectedRoute) return null;
 
   return (
-    <>
+    <div
+      style={{
+        paddingLeft: "1em",
+        minHeight: "350px",
+        maxHeight: "450px",
+        display: "flex",
+        flexDirection: "column",
+        backgroundColor: "LightGreen",
+      }}
+    >
       <h2 style={{ textAlign: "center", marginBottom: "4px" }}>
         {selectedRoute.name}
       </h2>
-      <div style={{ height: "calc(50% - 70px)", overflow: "auto" }}>
+      <div style={{ overflow: "auto" }}>
         {selectedRoute.legs.map((leg) => (
           <Leg key={selectedRoute.name + leg.name} leg={leg} />
         ))}
       </div>
-    </>
+    </div>
   );
 }

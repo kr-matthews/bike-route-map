@@ -7,17 +7,22 @@ import { Selections } from "../../App";
 // TODO: allow searching
 // TODO: allow filtering (by direction, to only official, by quality, etc)?
 export default function Routes() {
-  const { selectedRoute } = useContext(Selections);
-  const isSomeRouteSelected = !!selectedRoute;
-  const height = isSomeRouteSelected ? "calc(50% - 70px)" : "calc(100% - 70px)";
-
   return (
-    <>
+    <div
+      style={{
+        paddingLeft: "1em",
+        flex: "1",
+        overflow: "auto",
+        display: "flex",
+        flexDirection: "column",
+        maxHeight: "100vh",
+        backgroundColor: "AliceBlue",
+      }}
+    >
       <h2 style={{ textAlign: "center" }}>Routes</h2>
       <div
         style={{
-          height,
-          width: "100%",
+          flex: 2,
           overflow: "auto",
           display: "grid",
           gridTemplateColumns: "1fr 1fr 1fr",
@@ -28,7 +33,7 @@ export default function Routes() {
           <Route key={route.name} route={route} />
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
