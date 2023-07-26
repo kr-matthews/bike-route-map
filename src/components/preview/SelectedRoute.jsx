@@ -5,27 +5,29 @@ import Leg from "./Leg";
 export default function SelectedRoute() {
   const { selectedRoute } = useContext(Selections);
 
-  if (!selectedRoute) return null;
-
   return (
     <div
       style={{
         paddingLeft: "1em",
-        minHeight: "350px",
-        maxHeight: "450px",
+        height: selectedRoute ? "425px" : 0,
         display: "flex",
         flexDirection: "column",
         backgroundColor: "LightGreen",
+        transition: "height 0.7s linear",
       }}
     >
-      <h2 style={{ textAlign: "center", marginBottom: "4px" }}>
-        {selectedRoute.name}
-      </h2>
-      <div style={{ overflow: "auto" }}>
-        {selectedRoute.legs.map((leg) => (
-          <Leg key={selectedRoute.name + leg.name} leg={leg} />
-        ))}
-      </div>
+      {selectedRoute && (
+        <>
+          <h2 style={{ textAlign: "center", marginBottom: "4px" }}>
+            {selectedRoute.name}
+          </h2>
+          <div style={{ overflow: "auto" }}>
+            {selectedRoute.legs.map((leg) => (
+              <Leg key={selectedRoute.name + leg.name} leg={leg} />
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 }

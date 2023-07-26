@@ -10,6 +10,8 @@ export default function Preview() {
         flexDirection: "column",
         height: "100vh",
         width: "625px",
+        // required to hide animation bug when transitioning height
+        overflow: "hidden",
       }}
     >
       <Routes />
