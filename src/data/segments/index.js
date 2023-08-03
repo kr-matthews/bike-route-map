@@ -9,6 +9,7 @@ import { CHILCO } from "./chilco";
 import { COMOX_HELMCKEN } from "./comoxHelmcken";
 import { CVG } from "./cvg";
 import { FORTY_FIFTH } from "./fortyFifth";
+import { FOURTEENTH } from "./fourteenth";
 import { FOURTH } from "./fourth";
 import { HARO } from "./haro";
 import { HILLCREST } from "./hillcrest";
@@ -24,6 +25,7 @@ import { SMITHE } from "./smithe";
 import { SUNRISE } from "./sunrise";
 import { TENTH } from "./tenth";
 import { THIRD } from "./third";
+import { TWENTY_NINTH } from "./twentyNinth";
 import { TWENTY_SECOND } from "./twentySecond";
 import { VALLEY } from "./valley";
 
@@ -40,6 +42,7 @@ export const SEGMENTS = [
   ...COMOX_HELMCKEN,
   ...CVG,
   ...FORTY_FIFTH,
+  ...FOURTEENTH,
   ...FOURTH,
   ...HARO,
   ...HILLCREST,
@@ -55,6 +58,7 @@ export const SEGMENTS = [
   ...SUNRISE,
   ...TENTH,
   ...THIRD,
+  ...TWENTY_NINTH,
   ...TWENTY_SECOND,
   ...VALLEY,
 ];
