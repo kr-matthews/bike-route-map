@@ -292,6 +292,10 @@ export const ROUTES = {
     name: "Nelson",
     legs: [{ videos: { eastbound: VIDEOS.cambieBridgeNelsonSb } }],
   },
+  nicola: {
+    name: "Nicola",
+    legs: [],
+  },
   northArmBridge: {
     name: "North Arm Bridge (Canada Line Bridge)",
     shortName: "North Arm Bridge",

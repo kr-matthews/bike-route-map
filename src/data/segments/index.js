@@ -1,6 +1,8 @@
+import { ALBERNI } from "./alberni";
 import { ALEXANDER } from "./alexander";
 import { BALACLAVA } from "./balaclava";
 import { BC_PARKWAY } from "./bcParkway";
+import { BURNABY } from "./burnaby";
 import { BUTE } from "./bute";
 import { CAMBIE_BRIDGE } from "./cambieBridge";
 import { CARDERO } from "./cardero";
@@ -17,6 +19,7 @@ import { LIONS_GATE_BRIDGE } from "./lionsGateBridge";
 import { MASUMI_MITSUI_GREENWAY } from "./masumiMitsui";
 import { MIDTOWN } from "./midtown";
 import { NELSON } from "./nelson";
+import { NICOLA } from "./nicola";
 import { OFF_BROADWAY } from "./offBroadway";
 import { PANDORA } from "./pandora";
 import { POWELL } from "./powell";
@@ -31,9 +34,11 @@ import { VALLEY } from "./valley";
 
 // convention: bi-directional paths are stored northbound, eastbound, or clockwise
 export const SEGMENTS = [
+  ...ALBERNI,
   ...ALEXANDER,
   ...BALACLAVA,
   ...BC_PARKWAY,
+  ...BURNABY,
   ...BUTE,
   ...CAMBIE_BRIDGE,
   ...CARDERO,
@@ -50,6 +55,7 @@ export const SEGMENTS = [
   ...MASUMI_MITSUI_GREENWAY,
   ...MIDTOWN,
   ...NELSON,
+  ...NICOLA,
   ...OFF_BROADWAY,
   ...PANDORA,
   ...POWELL,

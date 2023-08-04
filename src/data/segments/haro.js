@@ -2,6 +2,7 @@ import {
   BUTE_HARO,
   CARDERO_HARO,
   CHILCO_HARO,
+  NICOLA_HARO,
   THURLOW_HARO,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -24,7 +25,7 @@ export const HARO = [
       [49.29078, -123.1365],
       [49.28976, -123.13492],
       CARDERO_HARO,
-      [49.28798, -123.13217],
+      NICOLA_HARO,
       [49.28722, -123.131],
       [49.28632, -123.12962],
       BUTE_HARO,
