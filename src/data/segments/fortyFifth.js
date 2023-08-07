@@ -88,13 +88,6 @@ export const FORTY_FIFTH = [
       INVERNESS_45TH,
     ],
   },
-  // TODO: move to Inverness
-  {
-    routes: [ROUTES.inverness.name, ROUTES.fortyFifth.name],
-    description: "inverness",
-    videos: [VIDEOS.fortyFifthWb],
-    positions: [INVERNESS_45TH, INVERNESS_47TH],
-  },
   {
     routes: [ROUTES.fortyFifth.name],
     description: "inverness to ridgeway",

@@ -217,7 +217,7 @@ export const ROUTES = {
   },
   inverness: {
     name: "Inverness",
-    legs: [],
+    legs: [{ videos: { southbound: VIDEOS.invernessSb } }],
   },
   keefer: {
     name: "Keefer",

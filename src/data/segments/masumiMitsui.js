@@ -1,4 +1,9 @@
-import { ASHBURN_UPLAND, VIVIAN_57TH, VIVIAN_LYNBROOK } from "../intersections";
+import {
+  ASHBURN_UPLAND,
+  INVERNESS_59TH,
+  VIVIAN_57TH,
+  VIVIAN_LYNBROOK,
+} from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
@@ -54,7 +59,7 @@ export const MASUMI_MITSUI_GREENWAY = [
       [49.21646, -123.08549],
       [49.21641, -123.08162],
       [49.21641, -123.08082],
-      [49.21643, -123.08008],
+      INVERNESS_59TH,
       [49.2164, -123.07705],
       [49.21639, -123.0746],
       [49.21634, -123.07403],

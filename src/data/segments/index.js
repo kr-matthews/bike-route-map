@@ -15,6 +15,7 @@ import { FOURTEENTH } from "./fourteenth";
 import { FOURTH } from "./fourth";
 import { HARO } from "./haro";
 import { HILLCREST } from "./hillcrest";
+import { INVERNESS } from "./inverness";
 import { LIONS_GATE_BRIDGE } from "./lionsGateBridge";
 import { MASUMI_MITSUI_GREENWAY } from "./masumiMitsui";
 import { MIDTOWN } from "./midtown";
@@ -51,6 +52,7 @@ export const SEGMENTS = [
   ...FOURTH,
   ...HARO,
   ...HILLCREST,
+  ...INVERNESS,
   ...LIONS_GATE_BRIDGE,
   ...MASUMI_MITSUI_GREENWAY,
   ...MIDTOWN,
