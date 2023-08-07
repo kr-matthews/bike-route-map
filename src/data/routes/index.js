@@ -140,7 +140,7 @@ export const ROUTES = {
   },
   chilco: {
     name: "Chilco",
-    legs: [],
+    legs: [{ videos: { southbound: VIDEOS.chilcoSb } }],
   },
   columbia: {
     name: "Columbia",
@@ -294,7 +294,7 @@ export const ROUTES = {
   },
   nicola: {
     name: "Nicola",
-    legs: [],
+    legs: [{ videos: { northbound: VIDEOS.nicolaNb } }],
   },
   northArmBridge: {
     name: "North Arm Bridge (Canada Line Bridge)",

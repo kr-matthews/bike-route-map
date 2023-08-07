@@ -7,11 +7,13 @@ import {
   CHILCO_HARO,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const CHILCO = [
   {
     routes: [ROUTES.chilco.name],
     description: "primary",
+    videos: [VIDEOS.chilcoSb],
     positions: [
       CHILCO_BEACH,
       [49.28988, -123.14369],
@@ -28,6 +30,7 @@ export const CHILCO = [
     routes: [ROUTES.chilco.name],
     description: "connection from georgia",
     directions: ["southbound"],
+    videos: [VIDEOS.chilcoSb],
     positions: [CHILCO_GEORGIA_S, CHILCO_ALBERNI_E],
   },
 ];
