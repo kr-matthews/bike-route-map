@@ -4,6 +4,7 @@ import { BALACLAVA } from "./balaclava";
 import { BC_PARKWAY } from "./bcParkway";
 import { BURNABY } from "./burnaby";
 import { BUTE } from "./bute";
+import { CAMBIE } from "./cambie";
 import { CAMBIE_BRIDGE } from "./cambieBridge";
 import { CARDERO } from "./cardero";
 import { CARRALL } from "./carrall";
@@ -25,6 +26,7 @@ import { OFF_BROADWAY } from "./offBroadway";
 import { PANDORA } from "./pandora";
 import { POWELL } from "./powell";
 import { RIDGEWAY } from "./ridgeway";
+import { SIXTY_SEVENTH } from "./sixtySeventh";
 import { SMITHE } from "./smithe";
 import { SUNRISE } from "./sunrise";
 import { TENTH } from "./tenth";
@@ -41,6 +43,7 @@ export const SEGMENTS = [
   ...BC_PARKWAY,
   ...BURNABY,
   ...BUTE,
+  ...CAMBIE,
   ...CAMBIE_BRIDGE,
   ...CARDERO,
   ...CARRALL,
@@ -62,6 +65,7 @@ export const SEGMENTS = [
   ...PANDORA,
   ...POWELL,
   ...RIDGEWAY,
+  ...SIXTY_SEVENTH,
   ...SMITHE,
   ...SUNRISE,
   ...TENTH,
