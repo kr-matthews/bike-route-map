@@ -113,6 +113,26 @@ export const ROUTES = {
       },
     ],
   },
+  canadaLine: {
+    name: "Canada Line Path",
+    // TODO: replace videos, remove legs
+    legs: [
+      { name: "Richmond", videos: {} },
+      {
+        name: "North Arm Bridge",
+        videos: {
+          northbound: VIDEOS.northArmBridgeNb,
+          southbound: VIDEOS.northArmBridgeSb,
+        },
+      },
+      {
+        name: "Vancouver",
+        videos: {
+          northbound: VIDEOS.cambieSeparatedNb,
+        },
+      },
+    ],
+  },
   cardero: {
     name: "Cardero",
     legs: [],
@@ -295,18 +315,6 @@ export const ROUTES = {
   nicola: {
     name: "Nicola",
     legs: [{ videos: { northbound: VIDEOS.nicolaNb } }],
-  },
-  northArmBridge: {
-    name: "North Arm Bridge (Canada Line Bridge)",
-    shortName: "North Arm Bridge",
-    legs: [
-      {
-        videos: {
-          northbound: VIDEOS.northArmBridgeNb,
-          southbound: VIDEOS.northArmBridgeSb,
-        },
-      },
-    ],
   },
   offBroadway: {
     name: "Off-Broadway",
