@@ -49,13 +49,14 @@ export const RIDGEWAY = [
       QUESNEL_20TH,
     ],
   },
+  // TODO: move to 29th file
   {
     routes: [
       ROUTES.twentyNinth.name,
       ROUTES.balaclava.name,
       ROUTES.ridgeway.name,
     ],
-    description: "balaclava/ridgeway overlap", // TODO: move to 29th file
+    description: "balaclava/ridgeway overlap",
     positions: [BALACLAVA_29TH, CARNARVON_29TH],
   },
   {

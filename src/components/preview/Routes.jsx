@@ -2,10 +2,11 @@ import { useContext } from "react";
 import { ROUTES } from "../../data/routes";
 import { Selections } from "../../App";
 
-// TODO: partition routes by e-w / n-s (or other?)
-// TODO: allow 'zoom to route'
-// TODO: allow searching
-// TODO: allow filtering (by direction, to only official, by quality, etc)?
+// !! partition routes by e-w / n-s, by city, by other?
+// !!! allow 'zoom to route'
+// !!! allow searching
+// !! allow filtering (by direction, to only official, by quality, etc)?
+
 export default function Routes() {
   return (
     <div
@@ -49,7 +50,7 @@ function Route({ route }) {
       style={{
         textAlign: "center",
         width: "10em",
-        backgroundColor: isSelected ? "DarkGreen" : "#009E60", // TODO: single source of truth for these
+        backgroundColor: isSelected ? "DarkGreen" : "#009E60", // !!! single source of truth for these
         borderRadius: "10px",
         padding: "6px 0",
         margin: "5px 0",

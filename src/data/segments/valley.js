@@ -10,8 +10,6 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-// TODO: add connection to ag & cypress
-
 export const VALLEY = [
   {
     routes: [ROUTES.valley.name],
@@ -87,7 +85,7 @@ export const VALLEY = [
     ],
   },
   {
-    description: "33rd west of valley",
+    description: "connection along 33rd west of valley",
     positions: [[49.24208, -123.15224], VALLEY_33RD],
   },
   {

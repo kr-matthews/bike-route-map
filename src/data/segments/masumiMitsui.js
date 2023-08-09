@@ -7,8 +7,6 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-// TODO: shared intersections
-
 export const MASUMI_MITSUI_GREENWAY = [
   {
     routes: [ROUTES.masumiMitsui.name],

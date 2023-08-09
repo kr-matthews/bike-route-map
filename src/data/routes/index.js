@@ -1,7 +1,6 @@
 import { VIDEOS } from "../videos";
 
-// TODO: separate by city? add cities: [...] property?
-// TODO: add remaining Vancouver routes (the confusing ones, like seaside (bypass)...)
+// !! add remaining Vancouver routes (the confusing ones, like seaside (bypass)...)
 
 export const ROUTES = {
   // ? are these legs of seaside bypass?
@@ -115,7 +114,7 @@ export const ROUTES = {
   },
   canadaLine: {
     name: "Canada Line Path",
-    // TODO: replace videos, remove legs
+    // !!! replace videos, remove legs
     legs: [
       { name: "Richmond", videos: {} },
       {

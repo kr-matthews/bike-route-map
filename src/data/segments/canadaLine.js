@@ -17,7 +17,7 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-// TODO: remove legs, replace with single video
+// !!! remove legs, replace with single video
 
 export const CANADA_LINE = [
   // richmond

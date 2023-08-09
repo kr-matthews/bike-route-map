@@ -12,7 +12,7 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-// TODO: add connections in north vancouver
+// !!! add connections in north vancouver
 
 export const LIONS_GATE_BRIDGE = [
   {

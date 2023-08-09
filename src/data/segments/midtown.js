@@ -11,6 +11,8 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+// !!! revisit and adjust
+
 export const MIDTOWN = [
   {
     routes: [ROUTES.midtown.name],
@@ -196,7 +198,7 @@ export const MIDTOWN = [
     description: "primary",
     videos: [],
     positions: [
-      // TODO: burnaby segments
+      // !! burnaby segments
       [49.24312, -123.02366],
       [49.24312, -123.02349],
     ],

@@ -20,8 +20,6 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-// TODO: shared intersections
-
 export const OFF_BROADWAY = [
   {
     routes: [ROUTES.offBroadway.name, ROUTES.ridgeway.name],

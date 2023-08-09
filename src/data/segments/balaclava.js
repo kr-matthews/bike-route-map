@@ -16,7 +16,7 @@ import { ROUTES } from "../routes";
 
 export const BALACLAVA = [
   {
-    // TODO: separate initial part of this segment into Fraser River Trail
+    // ! separate (initial part of?) this segment into Fraser River Trail?
     description: "celtic",
     positions: [
       [49.2148, -123.16516],
