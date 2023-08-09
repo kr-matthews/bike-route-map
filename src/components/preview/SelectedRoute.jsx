@@ -13,7 +13,7 @@ export default function SelectedRoute() {
         display: "flex",
         flexDirection: "column",
         backgroundColor: "LightGreen",
-        transition: "height 0.7s linear",
+        transition: "height 0.7s",
       }}
     >
       {selectedRoute && (
