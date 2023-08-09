@@ -10,8 +10,7 @@ import { VIDEOS } from "../videos";
 
 export const NELSON = [
   {
-    routes: [ROUTES.nelson.name],
-    // technically is one way, but since hidden, don't specify
+    directions: ["southbound"],
     description: "unofficial part",
     type: "unofficial",
     videos: [VIDEOS.cambieBridgeNelsonSb],

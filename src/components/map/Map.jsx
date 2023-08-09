@@ -1,4 +1,4 @@
-import { MapContainer, TileLayer } from "react-leaflet";
+import { MapContainer, Pane, TileLayer } from "react-leaflet";
 import { LatLngBounds } from "leaflet";
 import { SEGMENTS } from "../../data/segments";
 import Segment from "./Segment";
@@ -24,6 +24,10 @@ export default function Map() {
         bounds={VANCOUVER_BOUNDS}
         scrollWheelZoom
       >
+        <Pane name="elevated-segments" style={{ zIndex: 303 }} />
+        <Pane name="shared-segments" style={{ zIndex: 302 }} />
+        <Pane name="single-segments" style={{ zIndex: 301 }} />
+        <Pane name="connection-segments" style={{ zIndex: 300 }} />
         <TileLayer attribution={TILE_LAYER.attribution} url={TILE_LAYER.url} />
         {SEGMENTS.map((segment) => (
           <Segment

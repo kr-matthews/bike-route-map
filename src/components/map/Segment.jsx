@@ -8,12 +8,21 @@ import { Selections } from "../../App";
 // TODO: put `onTop` segments at higher z-index or something
 
 export default function Segment(segment) {
-  const { routes, directions, positions } = segment;
+  const { routes, directions, positions, elevated, description } = segment;
   const { selectedRoute, setSelected, highlighted, setHighlighted, video } =
     useContext(Selections);
 
   const primaryRoute = routes?.find((x) => x) || null;
   const tooltipContent = routes?.join("; ");
+  const hasMultipleRoutes = (routes?.length ?? 0) > 1;
+  const isConnection = description.includes("connection");
+  const pane = elevated
+    ? "elevated-segments"
+    : isConnection
+    ? "connection-segments"
+    : hasMultipleRoutes
+    ? "shared-segments"
+    : "single-segments";
 
   const polylineProps = {
     positions,
@@ -32,6 +41,7 @@ export default function Segment(segment) {
         );
       },
     },
+    pane,
   };
   const tooltipProps = { sticky: true, opacity: 0.7 };
 
