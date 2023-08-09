@@ -22,9 +22,7 @@ export default function Leg({ leg }) {
                     textTransform: "capitalize",
                     fontWeight: "bold",
                     textAlign: "center",
-                    backgroundColor: isShowing
-                      ? "RGBA(128,0,128,1)"
-                      : "RGBA(128,0,128,0.4)",
+                    backgroundColor: isShowing ? "RGBA(128,0,128,1)" : "Grey",
                     borderRadius: "50px",
                     padding: "10px 0",
                     margin: "10px 40px",

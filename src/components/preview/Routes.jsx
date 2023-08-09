@@ -49,12 +49,12 @@ function Route({ route }) {
       style={{
         textAlign: "center",
         width: "10em",
-        backgroundColor: "DarkGreen",
+        backgroundColor: isSelected ? "DarkGreen" : "#009E60", // TODO: single source of truth for these
         borderRadius: "10px",
         padding: "6px 0",
         margin: "5px 0",
         cursor: "pointer",
-        opacity: isSelected || isNoneSelected ? "100%" : "60%",
+        // opacity: isSelected || isNoneSelected ? "100%" : "60%",
       }}
       onMouseOver={() => setHighlighted(route.name)}
       onMouseOut={() => setHighlighted(null)}

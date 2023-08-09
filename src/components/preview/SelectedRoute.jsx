@@ -12,7 +12,8 @@ export default function SelectedRoute() {
         height: selectedRoute ? "425px" : 0,
         display: "flex",
         flexDirection: "column",
-        backgroundColor: "LightGreen",
+        backgroundColor: "DarkGreen",
+        color: "White",
         transition: "height 0.7s",
       }}
     >
