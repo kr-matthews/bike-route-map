@@ -89,7 +89,7 @@ export const VALLEY = [
     positions: [[49.24208, -123.15224], VALLEY_33RD],
   },
   {
-    description: "33rd east of valley",
+    description: "connection along 33rd east of valley",
     videos: [VIDEOS.valleySb],
     positions: [VALLEY_33RD, ARBUTUS_GREENWAY_33RD, ANGUS_33RD],
   },

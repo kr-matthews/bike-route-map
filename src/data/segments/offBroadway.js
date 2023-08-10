@@ -3,7 +3,7 @@ import {
   ARBUTUS_GREENWAY_7TH,
   ASH_7TH,
   BALACLAVA_8TH,
-  BLANCA_8TH,
+  BLANCA_8TH_E,
   COLUMBIA_5TH,
   DISCOVERY_8TH,
   GLEN_7TH,
@@ -26,7 +26,7 @@ export const OFF_BROADWAY = [
     description: "ridgeway overlap",
     videos: [VIDEOS.offBroadwayWb],
     positions: [
-      BLANCA_8TH,
+      BLANCA_8TH_E,
       [49.26563, -123.2121],
       [49.26559, -123.20901],
       [49.26552, -123.206],

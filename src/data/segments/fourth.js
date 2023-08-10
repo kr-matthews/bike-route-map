@@ -1,5 +1,6 @@
 import {
-  BLANCA_4TH,
+  BLANCA_4TH_E,
+  BLANCA_4TH_W,
   CHANCELLOR_4TH,
   DRUMMOND_4TH,
   HIGHBURY_4TH_N,
@@ -54,7 +55,8 @@ export const FOURTH = [
     positions: [
       DRUMMOND_4TH,
       [49.26912, -123.2178],
-      BLANCA_4TH,
+      BLANCA_4TH_W,
+      BLANCA_4TH_E,
       [49.26907, -123.21195],
       [49.26902, -123.20889],
       [49.26897, -123.20627],

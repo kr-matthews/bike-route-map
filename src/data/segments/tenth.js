@@ -1,4 +1,8 @@
-import { TRAFALGAR_10TH, VICTORIA_BROADWAY } from "../intersections";
+import {
+  ALDER_10TH,
+  TRAFALGAR_10TH,
+  VICTORIA_BROADWAY,
+} from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
@@ -26,7 +30,7 @@ export const TENTH = [
       [49.26263, -123.13859],
       [49.2626, -123.13618],
       [49.26257, -123.13374],
-      [49.26253, -123.13139],
+      ALDER_10TH,
       [49.26249, -123.12903],
       [49.26245, -123.12665],
       [49.26242, -123.12424],
