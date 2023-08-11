@@ -1,5 +1,5 @@
-const NARROW_WEIGHT = 6;
-const WIDE_WEIGHT = 9;
+const NARROW_WEIGHT = 4;
+const WIDE_WEIGHT = 8;
 // const DIM_OPACITY = 0.5;
 // const FULL_OPACITY = 1;
 const VIDEO_BIDIRECTIONAL_COLOUR = "Purple";
