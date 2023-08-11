@@ -1,4 +1,11 @@
-import { SMITHE_EXPO } from "../intersections";
+import {
+  BEATTY_SMITHE_N,
+  BEATTY_SMITHE_S,
+  RICHARDS_SMITHE,
+  SMITHE_EXPO_N,
+  SMITHE_SMITHE_PATH,
+  THURLOW_HARO,
+} from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
@@ -8,7 +15,7 @@ export const SMITHE = [
     description: "bi-directional",
     videos: [VIDEOS.cambieBridgeSmithNb],
     positions: [
-      [49.28393, -123.12591],
+      THURLOW_HARO,
       [49.28391, -123.12584],
       [49.28382, -123.12571],
       [49.28371, -123.12557],
@@ -26,7 +33,7 @@ export const SMITHE = [
       [49.28097, -123.12239],
       [49.28033, -123.12135],
       [49.2797, -123.12038],
-      [49.27906, -123.11941],
+      RICHARDS_SMITHE,
     ],
   },
   {
@@ -35,17 +42,27 @@ export const SMITHE = [
     description: "uni-directional",
     videos: [VIDEOS.cambieBridgeSmithNb],
     positions: [
-      SMITHE_EXPO,
-      [49.276, -123.11484],
-      [49.27613, -123.11496],
-      [49.27629, -123.11512],
-      [49.2764, -123.11528],
-      [49.27656, -123.11554],
+      BEATTY_SMITHE_N,
       [49.27718, -123.11652],
       [49.27751, -123.117],
-      [49.27777, -123.11745],
-      [49.27844, -123.11848],
-      [49.27906, -123.11941],
+      [49.27777, -123.11741],
+      [49.27844, -123.11846],
+      RICHARDS_SMITHE,
+    ],
+  },
+  {
+    routes: [ROUTES.smithe.name],
+    description: "beatty to expo",
+    videos: [VIDEOS.cambieBridgeSmithNb],
+    positions: [
+      BEATTY_SMITHE_N,
+      BEATTY_SMITHE_S,
+      [49.2764, -123.11524],
+      [49.27629, -123.11508],
+      [49.27613, -123.11486],
+      [49.276, -123.11476],
+      SMITHE_EXPO_N,
+      SMITHE_SMITHE_PATH,
     ],
   },
 ];
