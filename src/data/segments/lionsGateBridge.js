@@ -6,13 +6,16 @@ import {
   CHILCO_GEORGIA_S,
   HORNBY_DUNSMUIR,
   JERVIS_PENDER,
+  LIONS_GATE_KLAHANIE,
+  LIONS_GATE_NORTHBOUND_OFF_RAMP_SPLIT,
+  LIONS_GATE_SOUTHBOUND_ON_RAMP_MERGE,
+  LIONS_GATE_SPIRIT_TRAIL_E,
+  LIONS_GATE_SPIRIT_TRAIL_W,
   NICOLA_GEORGIA,
   NICOLA_PENDER,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
-
-// !!! add connections in north vancouver
 
 export const LIONS_GATE_BRIDGE = [
   {
@@ -119,7 +122,7 @@ export const LIONS_GATE_BRIDGE = [
       [49.32524, -123.1293],
       [49.32539, -123.12901],
       [49.32548, -123.12877],
-      [49.32551, -123.12856],
+      LIONS_GATE_NORTHBOUND_OFF_RAMP_SPLIT,
     ],
   },
   {
@@ -128,8 +131,8 @@ export const LIONS_GATE_BRIDGE = [
     description: "southbound",
     videos: [VIDEOS.lionsGateBridgeSb],
     positions: [
-      [49.3249, -123.13027],
-      [49.32402, -123.1308],
+      LIONS_GATE_SOUTHBOUND_ON_RAMP_MERGE,
+      [49.32405, -123.13074],
       [49.32344, -123.1313],
       [49.32199, -123.13266],
       [49.31867, -123.13579],
@@ -177,6 +180,82 @@ export const LIONS_GATE_BRIDGE = [
       [49.29155, -123.13225],
       CARDERO_GEORGIA_S,
       NICOLA_GEORGIA,
+    ],
+  },
+  {
+    directions: ["eastbound"],
+    description: "connection to marine eastbound",
+    positions: [
+      LIONS_GATE_NORTHBOUND_OFF_RAMP_SPLIT,
+      [49.32559, -123.12836],
+      [49.3256, -123.12812],
+      [49.32558, -123.12785],
+      [49.32547, -123.12725],
+      [49.32543, -123.12677],
+    ],
+  },
+  {
+    description: "connection to spirit",
+    videos: [VIDEOS.lionsGateBridgeNb],
+    positions: [
+      LIONS_GATE_NORTHBOUND_OFF_RAMP_SPLIT,
+      [49.3246, -123.12935],
+      [49.32413, -123.13004],
+      [49.32363, -123.13051],
+      [49.32354, -123.13068],
+      LIONS_GATE_SPIRIT_TRAIL_E,
+    ],
+  },
+  {
+    description: "connection from spirit",
+    videos: [VIDEOS.lionsGateBridgeSb],
+    positions: [
+      LIONS_GATE_SOUTHBOUND_ON_RAMP_MERGE,
+      [49.32492, -123.13036],
+      [49.32432, -123.13075],
+      LIONS_GATE_SPIRIT_TRAIL_W,
+    ],
+  },
+  {
+    description: "connection around loops",
+    positions: [
+      LIONS_GATE_SOUTHBOUND_ON_RAMP_MERGE,
+      [49.32518, -123.13012],
+      [49.32528, -123.12996],
+      [49.32565, -123.12974],
+      [49.32585, -123.12977],
+      [49.326, -123.12983],
+      [49.32622, -123.13009],
+      [49.32635, -123.1304],
+      [49.3263, -123.13049],
+      [49.32645, -123.13105],
+      [49.3265, -123.13109],
+      [49.32664, -123.13103],
+      [49.32679, -123.13093],
+      [49.32691, -123.1308],
+      [49.32692, -123.13067],
+      [49.32687, -123.13039],
+      [49.32664, -123.12932],
+      [49.3271, -123.12895],
+      [49.3272, -123.12859],
+      [49.32713, -123.12768],
+      [49.32701, -123.12729],
+      [49.32684, -123.12705],
+      LIONS_GATE_KLAHANIE,
+    ],
+  },
+  {
+    description: "connection from marine westbound",
+    directions: ["westbound"],
+    positions: [
+      [49.32547, -123.12615],
+      [49.32557, -123.1264],
+      [49.3257, -123.12667],
+      [49.32583, -123.12689],
+      [49.32603, -123.12699],
+      [49.32622, -123.12699],
+      [49.32647, -123.12695],
+      LIONS_GATE_KLAHANIE,
     ],
   },
 ];

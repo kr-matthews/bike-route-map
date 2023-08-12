@@ -114,7 +114,7 @@ export const ROUTES = {
   },
   canadaLine: {
     name: "Canada Line Path",
-    // !!! replace videos, remove legs
+    // !!! CLP: replace videos, remove legs
     legs: [
       { name: "Richmond", videos: {} },
       {
@@ -369,6 +369,10 @@ export const ROUTES = {
   },
   windsor: {
     name: "Windsor",
+    legs: [],
+  },
+  york: {
+    name: "York",
     legs: [],
   },
   yukon: {

@@ -13,6 +13,7 @@ import { CARRALL } from "./carrall";
 import { CHILCO } from "./chilco";
 import { COMOX_HELMCKEN } from "./comoxHelmcken";
 import { CVG } from "./cvg";
+import { DUNBAR } from "./dunbar";
 import { FORTY_FIFTH } from "./fortyFifth";
 import { FOURTEENTH } from "./fourteenth";
 import { FOURTH } from "./fourth";
@@ -38,6 +39,7 @@ import { THIRD } from "./third";
 import { TWENTY_NINTH } from "./twentyNinth";
 import { TWENTY_SECOND } from "./twentySecond";
 import { VALLEY } from "./valley";
+import { YORK } from "./york";
 
 // convention: bi-directional paths are stored northbound, eastbound, or clockwise
 export const SEGMENTS = [
@@ -56,6 +58,7 @@ export const SEGMENTS = [
   ...CHILCO,
   ...COMOX_HELMCKEN,
   ...CVG,
+  ...DUNBAR,
   ...FORTY_FIFTH,
   ...FOURTEENTH,
   ...FOURTH,
@@ -81,4 +84,5 @@ export const SEGMENTS = [
   ...TWENTY_NINTH,
   ...TWENTY_SECOND,
   ...VALLEY,
+  ...YORK,
 ];
