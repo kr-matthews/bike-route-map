@@ -64,6 +64,7 @@ export default function DirectedPolyline(props) {
           polygon: true,
           pathOptions: {
             ...props.pathOptions,
+            dashArray: undefined,
             fill: props.pathOptions.color,
             fillOpacity: props.pathOptions.opacity,
           },
