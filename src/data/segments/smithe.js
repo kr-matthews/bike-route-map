@@ -1,6 +1,7 @@
 import {
   BEATTY_SMITHE_N,
   BEATTY_SMITHE_S,
+  BURRARD_SMITHE,
   RICHARDS_SMITHE,
   SMITHE_EXPO_N,
   SMITHE_SMITHE_PATH,
@@ -27,7 +28,7 @@ export const SMITHE = [
       [49.28271, -123.12493],
       [49.28258, -123.12482],
       [49.28246, -123.12467],
-      [49.28232, -123.12448],
+      BURRARD_SMITHE,
       [49.28225, -123.12435],
       [49.28159, -123.12332],
       [49.28097, -123.12239],

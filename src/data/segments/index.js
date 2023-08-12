@@ -5,6 +5,7 @@ import { BALACLAVA } from "./balaclava";
 import { BC_PARKWAY } from "./bcParkway";
 import { BLANCA } from "./blanca";
 import { BURNABY } from "./burnaby";
+import { BURRARD } from "./burrard";
 import { BUTE } from "./bute";
 import { CAMBIE_BRIDGE } from "./cambieBridge";
 import { CANADA_LINE } from "./canadaLine";
@@ -50,6 +51,7 @@ export const SEGMENTS = [
   ...BC_PARKWAY,
   ...BLANCA,
   ...BURNABY,
+  ...BURRARD,
   ...BUTE,
   ...CAMBIE_BRIDGE,
   ...CANADA_LINE,

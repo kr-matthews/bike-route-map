@@ -1,4 +1,4 @@
-import { STEPHENS_YORK } from "../intersections";
+import { CHESTNUT_YORK, STEPHENS_YORK } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
@@ -22,7 +22,7 @@ export const YORK = [
       [49.2716, -123.15019],
       [49.27156, -123.14787],
       [49.27156, -123.14779],
-      [49.27153, -123.1464],
+      CHESTNUT_YORK,
     ],
   },
 ];
