@@ -2,10 +2,13 @@ import { STEPHENS_YORK } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+// !!! video includes chestnut to 1st
+
 export const YORK = [
   {
     routes: [ROUTES.york.name],
     description: "primary",
+    videos: [VIDEOS.yorkEb],
     positions: [
       STEPHENS_YORK,
       [49.27189, -123.1645],

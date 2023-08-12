@@ -54,6 +54,7 @@ export const THIRD = [
   },
   {
     description: "connection with seaside",
+    videos: [VIDEOS.yorkEb],
     positions: [STEPHENS_YORK, STEPHENS_POINT_GREY],
   },
 ];

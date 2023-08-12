@@ -186,7 +186,7 @@ export const ROUTES = {
   },
   dunbar: {
     name: "Dunbar",
-    legs: [],
+    legs: [{ videos: { northbound: VIDEOS.dunbarNb } }],
   },
   dunsmuir: {
     name: "Dunsmuir",
@@ -217,7 +217,7 @@ export const ROUTES = {
   },
   highbury: {
     name: "Highbury",
-    legs: [],
+    legs: [{ videos: { northbound: VIDEOS.highburyNb } }],
   },
   hillcrest: {
     name: "Hillcrest",
@@ -373,7 +373,7 @@ export const ROUTES = {
   },
   york: {
     name: "York",
-    legs: [],
+    legs: [{ videos: { eastbound: VIDEOS.yorkEb } }],
   },
   yukon: {
     name: "Yukon",

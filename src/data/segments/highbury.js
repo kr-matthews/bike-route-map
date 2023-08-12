@@ -6,11 +6,13 @@ import {
   HIGHBURY_POINT_GREY,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const HIGHBURY = [
   {
     routes: [ROUTES.highbury.name],
     description: "all",
+    videos: [VIDEOS.highburyNb],
     positions: [
       HIGHBURY_8TH,
       [49.26694, -123.18772],
