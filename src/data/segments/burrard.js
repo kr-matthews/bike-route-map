@@ -14,16 +14,19 @@ import {
   BURRARD_DRAKE_E,
   BURRARD_DRAKE_W,
   BURRARD_DUNSMUIR,
+  BURRARD_ELEVATED_START_SB,
   BURRARD_HASTINGS,
   BURRARD_NORTHBOUND_SPLIT,
   BURRARD_PACIFIC_NE,
-  BURRARD_PACIFIC_SW,
+  BURRARD_PACIFIC_NW,
   BURRARD_SMITHE,
   BURRARD_SOUTHBOUND_MERGE,
   BURRARD_YORK,
   CHESTNUT_CORNWALL,
   CHESTNUT_YORK,
   HORNBY_DRAKE,
+  PACIFIC_BRIDGE_MERGE,
+  PACIFIC_BRIDGE_SPLIT,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -104,6 +107,16 @@ export const BURRARD = [
   },
   // north end
   {
+    description: "from pacific eb",
+    directions: ["eastbound"],
+    positions: [PACIFIC_BRIDGE_SPLIT, BURRARD_SOUTHBOUND_MERGE],
+  },
+  {
+    description: "to pacific eb",
+    directions: ["eastbound"],
+    positions: [BURRARD_NORTHBOUND_SPLIT, PACIFIC_BRIDGE_MERGE],
+  },
+  {
     description: "drake connection with hornby",
     positions: [
       BURRARD_DRAKE_W,
@@ -136,8 +149,9 @@ export const BURRARD = [
       BURRARD_BURNABY_W,
       BURRARD_DRAKE_W,
       [49.27775, -123.13142],
-      BURRARD_PACIFIC_SW,
+      BURRARD_PACIFIC_NW,
       BURRARD_SOUTHBOUND_MERGE,
+      BURRARD_ELEVATED_START_SB,
     ],
   },
   {
@@ -146,7 +160,7 @@ export const BURRARD = [
     directions: ["southbound"],
     elevated: true,
     positions: [
-      BURRARD_SOUTHBOUND_MERGE,
+      BURRARD_ELEVATED_START_SB,
       [49.27622, -123.135],
       [49.27579, -123.13633],
       [49.27541, -123.13748],

@@ -15,6 +15,7 @@ import { CHILCO } from "./chilco";
 import { COMOX_HELMCKEN } from "./comoxHelmcken";
 import { CVG } from "./cvg";
 import { DUNBAR } from "./dunbar";
+import { DUNSMUIR } from "./dunsmuir";
 import { FORTY_FIFTH } from "./fortyFifth";
 import { FOURTEENTH } from "./fourteenth";
 import { FOURTH } from "./fourth";
@@ -61,6 +62,7 @@ export const SEGMENTS = [
   ...COMOX_HELMCKEN,
   ...CVG,
   ...DUNBAR,
+  ...DUNSMUIR,
   ...FORTY_FIFTH,
   ...FOURTEENTH,
   ...FOURTH,
