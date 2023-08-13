@@ -30,8 +30,9 @@ import { VIDEOS } from "../videos";
 export const CAMBIE_BRIDGE = [
   {
     routes: [ROUTES.cambieBridge.name],
-    description: "northbound bridge",
+    description: "northbound pre-bridge",
     directions: ["northbound"],
+    elevatedAdj: true,
     videos: [VIDEOS.cambieBridgeSmithNb],
     positions: [
       CAMBIE_NB_ON_RAMP,
@@ -77,6 +78,7 @@ export const CAMBIE_BRIDGE = [
     routes: [ROUTES.cambieBridge.name],
     description: "northbound post-bridge",
     directions: ["northbound"],
+    elevatedAdj: true,
     videos: [VIDEOS.cambieBridgeSmithNb],
     positions: [
       [49.27532, -123.11445], //
@@ -104,10 +106,24 @@ export const CAMBIE_BRIDGE = [
       MARINASIDE_SEAWALL,
     ],
   },
+  // !!! improve; the whole spiral should be elevated (change to specifying 'elevated' & 'below something'?)
   {
     description: "north spiral connection",
+    elevated: true,
+    positions: [CAMBIE_SPIRAL_MIDDLE, [49.27392, -123.11433]],
+  },
+  {
+    description: "north spiral connection middle",
+    elevatedAdj: true,
     positions: [
-      CAMBIE_SPIRAL_MIDDLE,
+      [49.27392, -123.11433],
+      [49.27394, -123.11431],
+    ],
+  },
+  {
+    description: "north spiral connection bottom",
+    positions: [
+      [49.27394, -123.11431],
       [49.27413, -123.11412],
       [49.27411, -123.11403],
       [49.27384, -123.11427],
@@ -149,6 +165,7 @@ export const CAMBIE_BRIDGE = [
   },
   {
     description: "connection to off-broadway via 2nd & ash",
+    elevatedAdj: true,
     videos: [VIDEOS.cambieBridgeNelsonSb],
     positions: [
       ASH_7TH,
@@ -166,6 +183,7 @@ export const CAMBIE_BRIDGE = [
   },
   {
     description: "2nd, north side, under bridge",
+    elevatedAdj: true,
     positions: [
       CAMBIE_SB_OFF_RAMP,
       [49.2666, -123.11529],

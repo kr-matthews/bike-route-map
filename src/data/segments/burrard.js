@@ -47,6 +47,7 @@ export const BURRARD = [
     routes: [ROUTES.burrard.name],
     description: "northbound pre-bridge",
     directions: ["northbound"],
+    elevatedAdj: true,
     videos: [VIDEOS.burrardNb],
     positions: [
       BURRARD_4TH,
@@ -84,6 +85,7 @@ export const BURRARD = [
     routes: [ROUTES.burrard.name],
     description: "northbound post-bridge",
     directions: ["northbound"],
+    elevatedAdj: true,
     videos: [VIDEOS.burrardNb],
     positions: [
       [49.27661, -123.13313],
@@ -115,6 +117,7 @@ export const BURRARD = [
     routes: [ROUTES.burrard.name],
     description: "southbound pre-bridge",
     directions: ["southbound"],
+    elevatedAdj: true,
     positions: [
       BURRARD_HASTINGS,
       [49.28665, -123.11792],
@@ -156,6 +159,7 @@ export const BURRARD = [
     routes: [ROUTES.burrard.name],
     description: "southbound post-bridge",
     directions: ["southbound"],
+    elevatedAdj: true,
     positions: [
       [49.27337, -123.14377],
       [49.27325, -123.14414],

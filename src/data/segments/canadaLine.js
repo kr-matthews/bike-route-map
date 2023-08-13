@@ -77,6 +77,7 @@ export const CANADA_LINE = [
     routes: [ROUTES.canadaLine.name],
     legs: ["North Arm Bridge"],
     description: "pre-bridge",
+    elevatedAdj: true,
     videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
     positions: [VAN_HORNE_RIVER_N, [49.19896, -123.11896]],
   },
@@ -125,6 +126,7 @@ export const CANADA_LINE = [
     routes: [ROUTES.canadaLine.name],
     legs: ["North Arm Bridge"],
     description: "post-bridge",
+    elevatedAdj: true,
     videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
     positions: [
       [49.20561, -123.11767],

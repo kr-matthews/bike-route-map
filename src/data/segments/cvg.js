@@ -243,6 +243,16 @@ export const CVG = [
       [49.25833, -122.96541],
       [49.25785, -122.96498],
       [49.25771, -122.9647],
+    ],
+  },
+  {
+    routes: [ROUTES.cvg.name],
+    legs: ["Burnaby"],
+    description: "pre-overpass",
+    elevatedAdj: true,
+    videos: [],
+    positions: [
+      [49.25771, -122.9647],
       [49.25731, -122.96468],
     ],
   },
@@ -270,10 +280,20 @@ export const CVG = [
   {
     routes: [ROUTES.cvg.name],
     legs: ["Burnaby"],
-    description: "east of overpass",
+    description: "post-overpass",
+    elevatedAdj: true,
     videos: [],
     positions: [
       [49.25834, -122.96427],
+      [49.25823, -122.96428],
+    ],
+  },
+  {
+    routes: [ROUTES.cvg.name],
+    legs: ["Burnaby"],
+    description: "east of overpass",
+    videos: [],
+    positions: [
       [49.25823, -122.96428],
       [49.25805, -122.96423],
       [49.25715, -122.96314],

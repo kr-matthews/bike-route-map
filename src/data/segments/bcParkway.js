@@ -207,6 +207,7 @@ export const BC_PARKWAY = [
     routes: [ROUTES.bcParkway.name],
     legs: ["Burnaby"],
     description: "central park split to southridge overpass",
+    elevatedAdj: true,
     videos: [VIDEOS.bcParkwayBurnabyEb],
     positions: [
       CENTRAL_PARK_BC_PARKWAY_EAST_SPLIT,
@@ -285,6 +286,7 @@ export const BC_PARKWAY = [
     routes: [ROUTES.bcParkway.name],
     legs: ["Burnaby"],
     description: "southridge overpass to new westminster",
+    elevatedAdj: true,
     videos: [VIDEOS.bcParkwayBurnabyEb],
     positions: [
       [49.20443, -122.95896],
