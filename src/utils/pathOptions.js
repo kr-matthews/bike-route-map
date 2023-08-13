@@ -1,5 +1,6 @@
 const NARROW_WEIGHT = 4;
 const WIDE_WEIGHT = 8;
+const BORDER_WEIGHT = 3;
 // const DIM_OPACITY = 0.5;
 // const FULL_OPACITY = 1;
 const VIDEO_BIDIRECTIONAL_COLOUR = "Purple";
@@ -8,6 +9,7 @@ const BIDIRECTIONAL_COLOUR_FULL = "DarkGreen";
 const BIDIRECTIONAL_COLOUR_LIGHT = "#009E60";
 const UNIDIRECTIONAL_COLOUR_FULL = "Blue";
 const UNIDIRECTIONAL_COLOUR_LIGHT = "#6495ED";
+const BORDER_COLOUR = "Black";
 const DASH_PATTERN = "6, 10";
 
 export function createPathOptions(
@@ -43,6 +45,25 @@ export function createPathOptions(
     // explicit opacity required to show hidden routes when video is selected
     opacity: 100,
     // opacity: isSelected || isNoneSelected ? FULL_OPACITY : DIM_OPACITY,
+    dashArray: isUnofficial || isUncomfortable ? DASH_PATTERN : undefined,
+  };
+}
+
+export function createBorderPathOptions(
+  { routes, type, elevated },
+  { highlighted }
+) {
+  const isHighlighted = (routes ?? []).includes(highlighted);
+  const isUnofficial = type === "unofficial";
+  const isUncomfortable = type === "uncomfortable";
+
+  if (!elevated) return null;
+
+  return {
+    color: BORDER_COLOUR,
+    weight: (isHighlighted ? WIDE_WEIGHT : NARROW_WEIGHT) + BORDER_WEIGHT,
+    // explicit opacity required to show hidden routes when video is selected
+    opacity: 100,
     dashArray: isUnofficial || isUncomfortable ? DASH_PATTERN : undefined,
   };
 }

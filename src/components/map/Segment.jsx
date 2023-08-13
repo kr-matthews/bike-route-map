@@ -1,8 +1,11 @@
 import { useContext } from "react";
-import { Polyline, Tooltip } from "react-leaflet";
-import DirectedPolyline from "./DirectedPolyline";
-import { createPathOptions } from "../../utils/pathOptions";
+import { Tooltip } from "react-leaflet";
+import {
+  createBorderPathOptions,
+  createPathOptions,
+} from "../../utils/pathOptions";
 import { Selections } from "../../App";
+import MyPolyline from "./MyPolyline";
 
 // !! indicate by default whether route/segment has video (and/or quality of route, whether official or not (dashed line?), etc.)
 
@@ -42,19 +45,26 @@ export default function Segment(segment) {
     },
     pane,
   };
+
+  const borderProps = {
+    positions,
+    pathOptions: createBorderPathOptions(segment, { highlighted }),
+    pane: "elevation-borders",
+  };
+
   const tooltipProps = { sticky: true, opacity: 0.7 };
 
   // FIXME: arrows won't be removed when video is unselected
   const showDirection = directions?.length === 1; // || videos?.includes(video);
 
   // FIXME: tool tip not showing on decorator arrows hover
-  return showDirection ? (
-    <DirectedPolyline {...polylineProps}>
+  return (
+    <MyPolyline
+      isDirected={showDirection}
+      polylineProps={polylineProps}
+      borderProps={elevated && borderProps}
+    >
       {tooltipContent && <Tooltip {...tooltipProps}>{tooltipContent}</Tooltip>}
-    </DirectedPolyline>
-  ) : (
-    <Polyline {...polylineProps}>
-      {tooltipContent && <Tooltip {...tooltipProps}>{tooltipContent}</Tooltip>}
-    </Polyline>
+    </MyPolyline>
   );
 }

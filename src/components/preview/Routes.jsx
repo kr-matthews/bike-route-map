@@ -43,7 +43,6 @@ function Route({ route }) {
     useContext(Selections);
   const isHighlighted = highlighted === route.name;
   const isSelected = selectedRoute?.name === route.name;
-  const isNoneSelected = !selectedRoute;
 
   return (
     <div

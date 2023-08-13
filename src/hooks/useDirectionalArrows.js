@@ -1,57 +1,66 @@
-import { useEffect, useRef, useState } from "react";
-import { Polyline, useMap } from "react-leaflet";
+import { useEffect, useState } from "react";
+import { useMap } from "react-leaflet";
 import L from "leaflet";
 import "leaflet-polylinedecorator";
 
 /**
- * A Polyline, but with arrows indicating the direction.
- *
  * The implementation is messy because react-leaflet doesn't
  * seem to have proper support for this.
  */
-export default function DirectedPolyline(props) {
+export default function useDirectionalArrows(
+  isActive,
+  polylineRef,
+  pathOptions,
+  eventHandlers
+) {
   const map = useMap();
-  const polylineRef = useRef();
   const [decorator, setDecorator] = useState();
   // zooming in won't trigger const zoom = map.getZoom() to update itself for some reason
   const [zoom, setZoom] = useState(map.getZoom());
   const isZoomedIn = zoom >= 15;
 
-  useEffect(function addZoomListener() {
-    map.addEventListener({ zoomend: (zoom) => setZoom(zoom.target._zoom) });
+  useEffect(
+    function addZoomListener() {
+      if (isActive) {
+        map.addEventListener({ zoomend: (zoom) => setZoom(zoom.target._zoom) });
+      }
+    },
     // eslint-disable-next-line
-  }, []);
+    [isActive]
+  );
 
   useEffect(
     function createDecorator() {
       const decorator = L.polylineDecorator(polylineRef.current, {
         patterns: [],
       });
-      decorator.addEventListener(props.eventHandlers);
-      setDecorator(decorator);
+      if (isActive) {
+        decorator.addEventListener(eventHandlers);
+        setDecorator(decorator);
+      }
     },
     // eslint-disable-next-line
-    []
+    [isActive]
   );
 
   useEffect(
     function removeDecoratorWhenZoomedOut() {
-      if (!isZoomedIn && !!decorator) {
+      if (isActive && !isZoomedIn && !!decorator) {
         decorator.removeFrom(map);
       }
     },
     // eslint-disable-next-line
-    [decorator, isZoomedIn]
+    [isActive, decorator, isZoomedIn]
   );
 
   useEffect(
     function addDecoratorWhenZoomedIn() {
-      if (isZoomedIn) {
+      if (isActive && isZoomedIn) {
         decorator.addTo(map);
       }
     },
     // eslint-disable-next-line
-    [decorator, isZoomedIn]
+    [isActive, decorator, isZoomedIn]
   );
 
   useEffect(
@@ -63,20 +72,18 @@ export default function DirectedPolyline(props) {
           pixelSize: 14,
           polygon: true,
           pathOptions: {
-            ...props.pathOptions,
+            ...pathOptions,
             dashArray: undefined,
-            fill: props.pathOptions.color,
-            fillOpacity: props.pathOptions.opacity,
+            fill: pathOptions.color,
+            fillOpacity: pathOptions.opacity,
           },
         }),
       };
 
-      if (decorator) {
+      if (isActive && decorator) {
         decorator.setPatterns([arrow]);
       }
     },
-    [decorator, props.pathOptions]
+    [isActive, decorator, pathOptions]
   );
-
-  return <Polyline ref={polylineRef} {...props} />;
 }
