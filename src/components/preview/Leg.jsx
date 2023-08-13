@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { Selections } from "../../App";
+import { VIDEO_UNIDIRECTIONAL_COLOUR } from "../../utils/params";
 
 const directions = ["eastbound", "westbound", "northbound", "southbound"];
 
@@ -22,7 +23,9 @@ export default function Leg({ leg }) {
                     textTransform: "capitalize",
                     fontWeight: "bold",
                     textAlign: "center",
-                    backgroundColor: isShowing ? "RGBA(128,0,128,1)" : "Grey",
+                    backgroundColor: isShowing
+                      ? VIDEO_UNIDIRECTIONAL_COLOUR
+                      : "Grey",
                     borderRadius: "50px",
                     padding: "10px 0",
                     margin: "10px 40px",

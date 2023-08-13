@@ -1,6 +1,10 @@
 import { useContext } from "react";
 import { ROUTES } from "../../data/routes";
 import { Selections } from "../../App";
+import {
+  BIDIRECTIONAL_COLOUR_FULL,
+  BIDIRECTIONAL_COLOUR_LIGHT,
+} from "../../utils/params";
 
 // !! partition routes by e-w / n-s, by city, by other?
 // !!! allow 'zoom to route'
@@ -49,12 +53,13 @@ function Route({ route }) {
       style={{
         textAlign: "center",
         width: "10em",
-        backgroundColor: isSelected ? "DarkGreen" : "#009E60", // !!! single source of truth for these
+        backgroundColor: isSelected
+          ? BIDIRECTIONAL_COLOUR_FULL
+          : BIDIRECTIONAL_COLOUR_LIGHT,
         borderRadius: "10px",
         padding: "6px 0",
         margin: "5px 0",
         cursor: "pointer",
-        // opacity: isSelected || isNoneSelected ? "100%" : "60%",
       }}
       onMouseOver={() => setHighlighted(route.name)}
       onMouseOut={() => setHighlighted(null)}
