@@ -19,6 +19,8 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+// !!! put alternatives and connections at the TOP of files (too brittle?)
+
 export const BC_PARKWAY = [
   {
     routes: [ROUTES.bcParkway.name],
@@ -204,7 +206,7 @@ export const BC_PARKWAY = [
   {
     routes: [ROUTES.bcParkway.name],
     legs: ["Burnaby"],
-    description: "east of central park split",
+    description: "central park split to southridge overpass",
     videos: [VIDEOS.bcParkwayBurnabyEb],
     positions: [
       CENTRAL_PARK_BC_PARKWAY_EAST_SPLIT,
@@ -265,6 +267,26 @@ export const BC_PARKWAY = [
       [49.20765, -122.95702],
       [49.20693, -122.95735],
       [49.20568, -122.95839],
+      [49.20483, -122.95879],
+    ],
+  },
+  {
+    routes: [ROUTES.bcParkway.name],
+    legs: ["Burnaby"],
+    description: "southridge overpass",
+    elevated: true,
+    videos: [VIDEOS.bcParkwayBurnabyEb],
+    positions: [
+      [49.20483, -122.95879],
+      [49.20443, -122.95896],
+    ],
+  },
+  {
+    routes: [ROUTES.bcParkway.name],
+    legs: ["Burnaby"],
+    description: "southridge overpass to new westminster",
+    videos: [VIDEOS.bcParkwayBurnabyEb],
+    positions: [
       [49.20443, -122.95896],
       [49.20429, -122.95913],
       [49.20403, -122.95923],

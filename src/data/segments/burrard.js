@@ -45,7 +45,7 @@ export const BURRARD = [
   },
   {
     routes: [ROUTES.burrard.name],
-    description: "northbound",
+    description: "northbound pre-bridge",
     directions: ["northbound"],
     videos: [VIDEOS.burrardNb],
     positions: [
@@ -62,11 +62,31 @@ export const BURRARD = [
       [49.27274, -123.14462],
       [49.27296, -123.14428],
       [49.27323, -123.14368],
+    ],
+  },
+  {
+    routes: [ROUTES.burrard.name],
+    description: "northbound bridge",
+    directions: ["northbound"],
+    elevated: true,
+    videos: [VIDEOS.burrardNb],
+    positions: [
+      [49.27323, -123.14368],
       [49.27394, -123.14146],
       [49.27468, -123.13917],
       [49.27526, -123.13737],
       [49.27564, -123.13616],
       [49.27647, -123.13358],
+      [49.27661, -123.13313],
+    ],
+  },
+  {
+    routes: [ROUTES.burrard.name],
+    description: "northbound post-bridge",
+    directions: ["northbound"],
+    videos: [VIDEOS.burrardNb],
+    positions: [
+      [49.27661, -123.13313],
       BURRARD_NORTHBOUND_SPLIT,
       [49.27685, -123.13242],
       BURRARD_PACIFIC_NE,
@@ -93,7 +113,7 @@ export const BURRARD = [
   // southbound
   {
     routes: [ROUTES.burrard.name],
-    description: "downtown",
+    description: "southbound pre-bridge",
     directions: ["southbound"],
     positions: [
       BURRARD_HASTINGS,
@@ -115,11 +135,28 @@ export const BURRARD = [
       [49.27775, -123.13142],
       BURRARD_PACIFIC_SW,
       BURRARD_SOUTHBOUND_MERGE,
+    ],
+  },
+  {
+    routes: [ROUTES.burrard.name],
+    description: "southbound bridge",
+    directions: ["southbound"],
+    elevated: true,
+    positions: [
+      BURRARD_SOUTHBOUND_MERGE,
       [49.27622, -123.135],
       [49.27579, -123.13633],
       [49.27541, -123.13748],
       [49.27497, -123.13884],
       [49.27423, -123.14109],
+      [49.27337, -123.14377],
+    ],
+  },
+  {
+    routes: [ROUTES.burrard.name],
+    description: "southbound post-bridge",
+    directions: ["southbound"],
+    positions: [
       [49.27337, -123.14377],
       [49.27325, -123.14414],
       [49.27303, -123.14483],

@@ -30,13 +30,22 @@ import { VIDEOS } from "../videos";
 export const CAMBIE_BRIDGE = [
   {
     routes: [ROUTES.cambieBridge.name],
-    description: "northbound side",
+    description: "northbound bridge",
+    directions: ["northbound"],
+    videos: [VIDEOS.cambieBridgeSmithNb],
+    positions: [
+      CAMBIE_NB_ON_RAMP,
+      [49.26698, -123.11447],
+      [49.26719, -123.11457],
+    ],
+  },
+  {
+    routes: [ROUTES.cambieBridge.name],
+    description: "northbound bridge",
     directions: ["northbound"],
     videos: [VIDEOS.cambieBridgeSmithNb],
     elevated: true,
     positions: [
-      CAMBIE_NB_ON_RAMP,
-      [49.26698, -123.11447],
       [49.26719, -123.11457],
       CAMBIE_NB_ON_RAMP_JOIN,
       [49.26866, -123.11467],
@@ -61,7 +70,16 @@ export const CAMBIE_BRIDGE = [
       [49.27422, -123.11455],
       [49.27465, -123.11452],
       [49.27495, -123.11447],
-      [49.27532, -123.11445],
+      [49.27532, -123.11445], //
+    ],
+  },
+  {
+    routes: [ROUTES.cambieBridge.name],
+    description: "northbound post-bridge",
+    directions: ["northbound"],
+    videos: [VIDEOS.cambieBridgeSmithNb],
+    positions: [
+      [49.27532, -123.11445], //
       [49.2754, -123.11452],
       SMITHE_SMITHE_PATH,
     ],
@@ -193,6 +211,7 @@ export const CAMBIE_BRIDGE = [
     ],
   },
   {
+    // !!! partially elevated
     description: "northbound alt on-ramp",
     positions: [
       CAMBIE_NB_ON_RAMP_JOIN,

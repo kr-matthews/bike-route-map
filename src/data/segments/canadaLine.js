@@ -76,10 +76,17 @@ export const CANADA_LINE = [
   {
     routes: [ROUTES.canadaLine.name],
     legs: ["North Arm Bridge"],
+    description: "pre-bridge",
+    videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
+    positions: [VAN_HORNE_RIVER_N, [49.19896, -123.11896]],
+  },
+  {
+    routes: [ROUTES.canadaLine.name],
+    legs: ["North Arm Bridge"],
     description: "bridge",
+    elevated: true,
     videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
     positions: [
-      VAN_HORNE_RIVER_N,
       [49.19896, -123.11896],
       [49.19903, -123.11854],
       [49.19911, -123.11858],
@@ -98,9 +105,28 @@ export const CANADA_LINE = [
       [49.20552, -123.11761],
       [49.20552, -123.11775],
       [49.20495, -123.11778],
+    ],
+  },
+  {
+    routes: [ROUTES.canadaLine.name],
+    legs: ["North Arm Bridge"],
+    description: "partial vancouver ramp",
+    elevated: true,
+    videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
+    positions: [
+      [49.20495, -123.11778],
       [49.20495, -123.11759],
       [49.20502, -123.11759],
       [49.20521, -123.11769],
+      [49.20561, -123.11767],
+    ],
+  },
+  {
+    routes: [ROUTES.canadaLine.name],
+    legs: ["North Arm Bridge"],
+    description: "post-bridge",
+    videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
+    positions: [
       [49.20561, -123.11767],
       [49.2057, -123.11769],
       [49.20554, -123.11888],

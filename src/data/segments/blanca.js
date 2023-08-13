@@ -41,7 +41,7 @@ export const BLANCA = [
   },
   {
     routes: [ROUTES.blanca.name],
-    description: "southbound",
+    description: "southbound with lane",
     directions: ["southbound"],
     positions: [
       BLANCA_6TH,
@@ -56,7 +56,7 @@ export const BLANCA = [
   },
   {
     routes: [ROUTES.blanca.name],
-    description: "southbound",
+    description: "southbound no lane",
     type: "uncomfortable",
     directions: ["southbound"],
     positions: [BLANCA_15TH, [49.2588, -123.21569], BLANCA_16TH_TRAIL],
