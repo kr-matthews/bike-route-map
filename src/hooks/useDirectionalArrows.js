@@ -3,6 +3,8 @@ import { useMap } from "react-leaflet";
 import L from "leaflet";
 import "leaflet-polylinedecorator";
 
+const ZOOM_CUTOFF = 16;
+
 /**
  * The implementation is messy because react-leaflet doesn't
  * seem to have proper support for this.
@@ -17,7 +19,7 @@ export default function useDirectionalArrows(
   const [decorator, setDecorator] = useState();
   // zooming in won't trigger const zoom = map.getZoom() to update itself for some reason
   const [zoom, setZoom] = useState(map.getZoom());
-  const isZoomedIn = zoom >= 15;
+  const isZoomedIn = zoom >= ZOOM_CUTOFF;
 
   useEffect(
     function addZoomListener() {
