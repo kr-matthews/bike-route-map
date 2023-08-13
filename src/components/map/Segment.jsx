@@ -10,7 +10,8 @@ import MyPolyline from "./MyPolyline";
 // !! indicate by default whether route/segment has video (and/or quality of route, whether official or not (dashed line?), etc.)
 
 export default function Segment(segment) {
-  const { routes, directions, positions, elevated, description } = segment;
+  const { routes, directions, positions, elevated, elevatedAdj, description } =
+    segment;
   const { selectedRoute, setSelected, highlighted, setHighlighted, video } =
     useContext(Selections);
 
@@ -20,6 +21,8 @@ export default function Segment(segment) {
   const isConnection = description.includes("connection");
   const pane = elevated
     ? "elevated-segments"
+    : elevatedAdj
+    ? "elevated-adj-segments"
     : isConnection
     ? "connection-segments"
     : hasMultipleRoutes

@@ -24,7 +24,8 @@ export default function Map() {
         bounds={VANCOUVER_BOUNDS}
         scrollWheelZoom
       >
-        <Pane name="elevated-segments" style={{ zIndex: 304 }} />
+        <Pane name="elevated-segments" style={{ zIndex: 305 }} />
+        <Pane name="elevated-adj-segments" style={{ zIndex: 304 }} />
         <Pane name="elevation-borders" style={{ zIndex: 303 }} />
         <Pane name="shared-segments" style={{ zIndex: 302 }} />
         <Pane name="single-segments" style={{ zIndex: 301 }} />
