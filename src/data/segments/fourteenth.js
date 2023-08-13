@@ -7,11 +7,13 @@ import {
   YUKON_14TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const FOURTEENTH = [
   {
     routes: [ROUTES.fourteenth.name],
     description: "alder to heather",
+    videos: [VIDEOS.fourteenthWb],
     positions: [
       ALDER_14TH,
       [49.25876, -123.12917],
@@ -25,11 +27,13 @@ export const FOURTEENTH = [
     // TODO: move to heather file
     routes: [ROUTES.heather.name, ROUTES.fourteenth.name],
     description: "14th",
+    videos: [VIDEOS.fourteenthWb],
     positions: [HEATHER_14TH_S, HEATHER_14TH_N],
   },
   {
     routes: [ROUTES.fourteenth.name],
     description: "heather to prince edward",
+    videos: [VIDEOS.fourteenthWb],
     positions: [
       HEATHER_14TH_N,
       [49.25878, -123.1177],

@@ -20,7 +20,7 @@ export const ROUTES = {
   },
   fourteenth: {
     name: "14th",
-    legs: [],
+    legs: [{ videos: { westbound: VIDEOS.fourteenthWb } }],
   },
   twentySecond: {
     name: "22nd",
@@ -48,7 +48,7 @@ export const ROUTES = {
   },
   alder: {
     name: "Alder",
-    legs: [],
+    legs: [{ videos: { northbound: VIDEOS.alderNb } }],
   },
   alexander: {
     name: "Alexander",
@@ -85,7 +85,7 @@ export const ROUTES = {
   },
   burrard: {
     name: "Burrard",
-    legs: [],
+    legs: [{ videos: { northbound: VIDEOS.burrardNb } }],
   },
   bute: {
     name: "Bute",

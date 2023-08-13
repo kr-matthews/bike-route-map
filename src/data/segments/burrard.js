@@ -26,6 +26,7 @@ import {
   HORNBY_DRAKE,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const BURRARD = [
   // northbound
@@ -35,6 +36,7 @@ export const BURRARD = [
     directions: ["northbound"],
     type: "unofficial",
     hideUnlessVideo: true,
+    videos: [VIDEOS.burrardNb],
     positions: [
       BURRARD_ARBUTUS_GREENWAY_E,
       [49.26716, -123.14554],
@@ -45,6 +47,7 @@ export const BURRARD = [
     routes: [ROUTES.burrard.name],
     description: "northbound",
     directions: ["northbound"],
+    videos: [VIDEOS.burrardNb],
     positions: [
       BURRARD_4TH,
       [49.26889, -123.14547],

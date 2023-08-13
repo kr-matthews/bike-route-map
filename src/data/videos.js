@@ -1,7 +1,9 @@
 const VIDEOS = {
+  alderNb: "ixJ03H36AII",
   alexanderEb: "5pjlcdGKa10",
   bcParkwayBurnabyEb: "a9Rwmtu7SI0",
   bcParkwayVancouverEb: "3giKczCLloI",
+  burrardNb: "62m58RRdHcg",
   cambieBridgeNelsonSb: "FWN1apBAy3g",
   cambieBridgeSmithNb: "i_GE3QKQZBA",
   cambieSeparatedNb: "c0Yjyt4isPs",
@@ -11,6 +13,7 @@ const VIDEOS = {
   comoxHelmckenWb: "PgJUF6B4BMQ",
   dunbarNb: "jonrkkkL57o",
   fortyFifthWb: "LWue1j2Ir4c",
+  fourteenthWb: "_13c2Bcl_4Y",
   fourthEb: "19BLtcs-t7U",
   gardenCityNb: "CqETe9mI-SM",
   gardenCitySb: "3oyKPM5u3Ao",
