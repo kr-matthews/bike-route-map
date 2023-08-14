@@ -17,6 +17,9 @@ import {
   KEITH_6TH_SW,
   LAKEWOOD_GRANDVIEW,
   NORTH_CVG,
+  ONTARIO_PATH_SEASIDE,
+  RUPERT_CVG_E,
+  RUPERT_CVG_W,
   SLOCAN_N_GRANDVIEW,
   VICTORIA_BROADWAY,
   WOODLAND_GRANDVIEW,
@@ -24,14 +27,40 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const BEFORE_OVERPASS = [49.25771, -122.9647];
+const OVERPASS_START = [49.25731, -122.96468];
+const OVERPASS_END = [49.25834, -122.96427];
+const AFTER_OVERPASS = [49.25823, -122.96428];
+
 export const CVG = [
+  // alternates
+
+  {
+    routes: [ROUTES.cvg.name],
+    legs: ["Vancouver"],
+    description: "vcc alt. west",
+    positions: [GLEN_6TH_N, GLEN_6TH_S, KEITH_6TH_SW, KEITH_6TH_SE],
+  },
+  {
+    routes: [ROUTES.cvg.name],
+    legs: ["Vancouver"],
+    description: "vcc alt. mid",
+    positions: [KEITH_6TH_SW, KEITH_6TH_NW],
+  },
+  {
+    routes: [ROUTES.cvg.name],
+    legs: ["Vancouver"],
+    description: "vcc alt. east",
+    positions: [KEITH_6TH_NE, CLARK_6TH_NW, CLARK_6TH_SW],
+  },
+  // vancouver
   {
     routes: [ROUTES.cvg.name],
     legs: ["Vancouver"],
     description: "west of commercial",
     videos: [],
     positions: [
-      [49.27198, -123.10433],
+      ONTARIO_PATH_SEASIDE,
       [49.27151, -123.10434],
       [49.27022, -123.1044],
       [49.27018, -123.10261],
@@ -66,24 +95,6 @@ export const CVG = [
       [49.26563, -123.07557],
       WOODLAND_GRANDVIEW,
     ],
-  },
-  {
-    routes: [ROUTES.cvg.name],
-    legs: ["Vancouver"],
-    description: "vcc alt. west",
-    positions: [GLEN_6TH_N, GLEN_6TH_S, KEITH_6TH_SW, KEITH_6TH_SE],
-  },
-  {
-    routes: [ROUTES.cvg.name],
-    legs: ["Vancouver"],
-    description: "vcc alt. mid",
-    positions: [KEITH_6TH_SW, KEITH_6TH_NW],
-  },
-  {
-    routes: [ROUTES.cvg.name],
-    legs: ["Vancouver"],
-    description: "vcc alt. east",
-    positions: [KEITH_6TH_NE, CLARK_6TH_NW, CLARK_6TH_SW],
   },
   {
     routes: [ROUTES.cvg.name, ROUTES.offBroadway.name],
@@ -184,9 +195,9 @@ export const CVG = [
       [49.2599, -123.0377],
       [49.2602, -123.03522],
       [49.26036, -123.03432],
-      [49.26044, -123.03397],
+      RUPERT_CVG_W,
       [49.26064, -123.03396],
-      [49.26067, -123.03351],
+      RUPERT_CVG_E,
       [49.26076, -123.03344],
       [49.26089, -123.03301],
       [49.26089, -123.03267],
@@ -199,6 +210,7 @@ export const CVG = [
       BOUNDARY_CVG,
     ],
   },
+  // burnaby
   {
     routes: [ROUTES.cvg.name],
     legs: ["Burnaby"],
@@ -242,7 +254,7 @@ export const CVG = [
       [49.25893, -122.96618],
       [49.25833, -122.96541],
       [49.25785, -122.96498],
-      [49.25771, -122.9647],
+      BEFORE_OVERPASS,
     ],
   },
   {
@@ -251,10 +263,7 @@ export const CVG = [
     description: "pre-overpass",
     elevatedAdj: true,
     videos: [],
-    positions: [
-      [49.25771, -122.9647],
-      [49.25731, -122.96468],
-    ],
+    positions: [BEFORE_OVERPASS, OVERPASS_START],
   },
   {
     routes: [ROUTES.cvg.name],
@@ -263,7 +272,7 @@ export const CVG = [
     elevated: true,
     videos: [],
     positions: [
-      [49.25731, -122.96468],
+      OVERPASS_START,
       [49.25733, -122.96489],
       [49.2574, -122.96503],
       [49.25775, -122.96532],
@@ -274,7 +283,7 @@ export const CVG = [
       [49.25835, -122.96391],
       [49.25839, -122.96403],
       [49.25839, -122.96415],
-      [49.25834, -122.96427],
+      OVERPASS_END,
     ],
   },
   {
@@ -283,10 +292,7 @@ export const CVG = [
     description: "post-overpass",
     elevatedAdj: true,
     videos: [],
-    positions: [
-      [49.25834, -122.96427],
-      [49.25823, -122.96428],
-    ],
+    positions: [OVERPASS_END, AFTER_OVERPASS],
   },
   {
     routes: [ROUTES.cvg.name],
@@ -294,7 +300,7 @@ export const CVG = [
     description: "east of overpass",
     videos: [],
     positions: [
-      [49.25823, -122.96428],
+      AFTER_OVERPASS,
       [49.25805, -122.96423],
       [49.25715, -122.96314],
       [49.2563, -122.9621],

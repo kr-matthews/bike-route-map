@@ -16,6 +16,7 @@ import {
   YUKON_29TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const TWENTY_NINTH = [
   {
@@ -56,6 +57,18 @@ export const TWENTY_NINTH = [
       [49.24598, -123.15856],
       [49.24627, -123.15822],
       [49.24655, -123.15772],
+      VALLEY_EDDINGTON,
+    ],
+  },
+  {
+    routes: [ROUTES.twentyNinth.name, ROUTES.valley.name],
+    description: "valley",
+    videos: [VIDEOS.valleySb],
+    positions: [
+      YEW_EDDINGTON,
+      [49.24698, -123.15558],
+      [49.24697, -123.15606],
+      [49.24692, -123.15645],
       VALLEY_EDDINGTON,
     ],
   },

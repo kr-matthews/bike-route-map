@@ -3,6 +3,7 @@ import {
   BUTE_COMOX,
   BUTE_HARO,
   BUTE_NELSON,
+  BUTE_ROBSON,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
@@ -17,9 +18,9 @@ export const BUTE = [
       BUTE_COMOX,
       [49.28391, -123.13018],
       BUTE_NELSON,
-      [49.28462, -123.12911],
+      [49.28461, -123.12911],
       BUTE_HARO,
-      [49.28599, -123.12698],
+      BUTE_ROBSON,
     ],
   },
 ];

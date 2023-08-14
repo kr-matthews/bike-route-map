@@ -14,22 +14,31 @@ import {
   BURRARD_DRAKE_E,
   BURRARD_DRAKE_W,
   BURRARD_DUNSMUIR,
-  BURRARD_ELEVATED_START_SB,
   BURRARD_HASTINGS,
-  BURRARD_NORTHBOUND_SPLIT,
   BURRARD_PACIFIC_NE,
   BURRARD_PACIFIC_NW,
+  BURRARD_PACIFIC_SE_E,
+  BURRARD_PACIFIC_SE_W,
+  BURRARD_PACIFIC_SW,
   BURRARD_SMITHE,
-  BURRARD_SOUTHBOUND_MERGE,
   BURRARD_YORK,
   CHESTNUT_CORNWALL,
   CHESTNUT_YORK,
+  CYPRESS_CORNWALL_N,
+  CYPRESS_CORNWALL_S,
   HORNBY_DRAKE,
-  PACIFIC_BRIDGE_MERGE,
-  PACIFIC_BRIDGE_SPLIT,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
+
+const BURRARD_NORTHBOUND_SPLIT = [49.2768, -123.13249];
+const BURRARD_SOUTHBOUND_MERGE = [49.27692, -123.13289];
+const NORTHBOUND_ELEVATION_START = [49.27323, -123.14368];
+const NORTHBOUND_ELEVATION_END = [49.27661, -123.13313];
+const SOUTHBOUND_ELEVATED_START = [49.2768, -123.1332];
+const SOUTHBOUND_ELEVATED_END = [49.27337, -123.14377];
+const NORTHBOUND_ENDPOINT = [49.27851, -123.12991];
+const SOUTHBOUND_ENDPOINT = [49.26517, -123.14582];
 
 export const BURRARD = [
   // northbound
@@ -65,7 +74,7 @@ export const BURRARD = [
       [49.27243, -123.14499],
       [49.27274, -123.14462],
       [49.27296, -123.14428],
-      [49.27323, -123.14368],
+      NORTHBOUND_ELEVATION_START,
     ],
   },
   {
@@ -75,13 +84,13 @@ export const BURRARD = [
     elevated: true,
     videos: [VIDEOS.burrardNb],
     positions: [
-      [49.27323, -123.14368],
+      NORTHBOUND_ELEVATION_START,
       [49.27394, -123.14146],
       [49.27468, -123.13917],
       [49.27526, -123.13737],
       [49.27564, -123.13616],
       [49.27647, -123.13358],
-      [49.27661, -123.13313],
+      NORTHBOUND_ELEVATION_END,
     ],
   },
   {
@@ -91,9 +100,9 @@ export const BURRARD = [
     elevatedAdj: true,
     videos: [VIDEOS.burrardNb],
     positions: [
-      [49.27661, -123.13313],
+      NORTHBOUND_ELEVATION_END,
       BURRARD_NORTHBOUND_SPLIT,
-      [49.27685, -123.13242],
+      BURRARD_PACIFIC_SE_W,
       BURRARD_PACIFIC_NE,
       BURRARD_DRAKE_E,
       BURRARD_BURNABY_E,
@@ -103,18 +112,18 @@ export const BURRARD = [
     routes: [ROUTES.burrard.name],
     description: "northbound end",
     directions: ["northbound"],
-    positions: [BURRARD_BURNABY_E, [49.27851, -123.12991]],
+    positions: [BURRARD_BURNABY_E, NORTHBOUND_ENDPOINT],
   },
   // north end
   {
     description: "from pacific eb",
     directions: ["eastbound"],
-    positions: [PACIFIC_BRIDGE_SPLIT, BURRARD_SOUTHBOUND_MERGE],
+    positions: [BURRARD_PACIFIC_SW, BURRARD_SOUTHBOUND_MERGE],
   },
   {
     description: "to pacific eb",
     directions: ["eastbound"],
-    positions: [BURRARD_NORTHBOUND_SPLIT, PACIFIC_BRIDGE_MERGE],
+    positions: [BURRARD_NORTHBOUND_SPLIT, BURRARD_PACIFIC_SE_E],
   },
   {
     description: "drake connection with hornby",
@@ -151,7 +160,7 @@ export const BURRARD = [
       [49.27775, -123.13142],
       BURRARD_PACIFIC_NW,
       BURRARD_SOUTHBOUND_MERGE,
-      BURRARD_ELEVATED_START_SB,
+      SOUTHBOUND_ELEVATED_START,
     ],
   },
   {
@@ -160,13 +169,13 @@ export const BURRARD = [
     directions: ["southbound"],
     elevated: true,
     positions: [
-      BURRARD_ELEVATED_START_SB,
+      SOUTHBOUND_ELEVATED_START,
       [49.27622, -123.135],
       [49.27579, -123.13633],
       [49.27541, -123.13748],
       [49.27497, -123.13884],
       [49.27423, -123.14109],
-      [49.27337, -123.14377],
+      SOUTHBOUND_ELEVATED_END,
     ],
   },
   {
@@ -175,7 +184,7 @@ export const BURRARD = [
     directions: ["southbound"],
     elevatedAdj: true,
     positions: [
-      [49.27337, -123.14377],
+      SOUTHBOUND_ELEVATED_END,
       [49.27325, -123.14414],
       [49.27303, -123.14483],
       [49.27286, -123.14511],
@@ -212,7 +221,7 @@ export const BURRARD = [
     routes: [ROUTES.burrard.name],
     description: "southbound end",
     directions: ["southbound"],
-    positions: [BURRARD_7TH, [49.26517, -123.14582]],
+    positions: [BURRARD_7TH, SOUTHBOUND_ENDPOINT],
   },
   // south end
   {
@@ -228,8 +237,7 @@ export const BURRARD = [
     description: "cypress to burrard connection",
     directions: ["eastbound"],
     positions: [
-      [49.27238, -123.14786],
-      [49.27238, -123.14773],
+      CYPRESS_CORNWALL_S,
       [49.27235, -123.14635],
       [49.2723, -123.14585],
       BURRARD_CORNWALL_SW,
@@ -256,7 +264,7 @@ export const BURRARD = [
       CHESTNUT_CORNWALL,
       [49.27256, -123.14656],
       [49.27253, -123.1467],
-      [49.27254, -123.14779],
+      CYPRESS_CORNWALL_N,
     ],
   },
 ];

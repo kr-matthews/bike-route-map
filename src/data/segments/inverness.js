@@ -40,11 +40,6 @@ export const INVERNESS = [
         [49.22533, -123.08006],
         [49.22699, -123.08001],
         INVERNESS_47TH,
-        INVERNESS_45TH,
-        INVERNESS_43RD,
-        [49.23274, -123.07981],
-        [49.23482, -123.07975],
-        INVERNESS_37TH,
       ],
     ],
   },
@@ -59,7 +54,11 @@ export const INVERNESS = [
     videos: [VIDEOS.invernessSb],
     description: "45th to midtown",
     positions: [
-      //
+      INVERNESS_45TH,
+      INVERNESS_43RD,
+      [49.23274, -123.07981],
+      [49.23482, -123.07975],
+      INVERNESS_37TH,
     ],
   },
 ];

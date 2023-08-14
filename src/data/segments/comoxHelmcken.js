@@ -5,6 +5,8 @@ import {
   CHILCO_COMOX,
   HOMER_HELMCKEN,
   HORNBY_HELMCKEN,
+  MAINLAND_HELMCKEN,
+  PARK_COMOX,
   RICHARDS_HELMCKEN,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -16,7 +18,7 @@ export const COMOX_HELMCKEN = [
     description: "official portion",
     videos: [VIDEOS.comoxHelmckenEb, VIDEOS.comoxHelmckenWb],
     positions: [
-      [49.29186, -123.14468],
+      PARK_COMOX,
       [49.29182, -123.14449],
       [49.29162, -123.14417],
       [49.29147, -123.14403],
@@ -66,6 +68,6 @@ export const COMOX_HELMCKEN = [
     routes: [ROUTES.comoxHelmcken.name],
     description: "tail end",
     type: "unofficial",
-    positions: [HOMER_HELMCKEN, [49.27592, -123.12107], [49.27558, -123.12055]],
+    positions: [HOMER_HELMCKEN, [49.27592, -123.12107], MAINLAND_HELMCKEN],
   },
 ];

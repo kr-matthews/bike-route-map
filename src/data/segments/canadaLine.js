@@ -19,6 +19,10 @@ import { VIDEOS } from "../videos";
 
 // !!! remove legs, replace with single video
 
+const ELEVATED_START = [49.19896, -123.11896];
+const ELEVATED_END = [49.20561, -123.11767];
+const SPIRAL_MIDPOINT = [49.20495, -123.11778];
+
 export const CANADA_LINE = [
   // richmond
   {
@@ -79,7 +83,7 @@ export const CANADA_LINE = [
     description: "pre-bridge",
     elevatedAdj: true,
     videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
-    positions: [VAN_HORNE_RIVER_N, [49.19896, -123.11896]],
+    positions: [VAN_HORNE_RIVER_N, ELEVATED_START],
   },
   {
     routes: [ROUTES.canadaLine.name],
@@ -88,7 +92,7 @@ export const CANADA_LINE = [
     elevated: true,
     videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
     positions: [
-      [49.19896, -123.11896],
+      ELEVATED_START,
       [49.19903, -123.11854],
       [49.19911, -123.11858],
       [49.19907, -123.11886],
@@ -105,7 +109,7 @@ export const CANADA_LINE = [
       [49.20488, -123.11766],
       [49.20552, -123.11761],
       [49.20552, -123.11775],
-      [49.20495, -123.11778],
+      SPIRAL_MIDPOINT,
     ],
   },
   {
@@ -115,11 +119,11 @@ export const CANADA_LINE = [
     elevated: true,
     videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
     positions: [
-      [49.20495, -123.11778],
+      SPIRAL_MIDPOINT,
       [49.20495, -123.11759],
       [49.20502, -123.11759],
       [49.20521, -123.11769],
-      [49.20561, -123.11767],
+      ELEVATED_END,
     ],
   },
   {
@@ -129,7 +133,7 @@ export const CANADA_LINE = [
     elevatedAdj: true,
     videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
     positions: [
-      [49.20561, -123.11767],
+      ELEVATED_END,
       [49.2057, -123.11769],
       [49.20554, -123.11888],
       [49.20557, -123.11901],

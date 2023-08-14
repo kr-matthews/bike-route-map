@@ -4,6 +4,7 @@ import {
   STEPHENS_3RD,
   STEPHENS_POINT_GREY,
   STEPHENS_YORK,
+  THIRD_SEASIDE,
   TRAFALGAR_3RD,
   WALLACE_3RD,
   WALLACE_4TH_S,
@@ -13,11 +14,24 @@ import { VIDEOS } from "../videos";
 
 export const THIRD = [
   {
+    description: "connection with 4th",
+    positions: [WALLACE_3RD, WALLACE_4TH_S],
+  },
+  {
+    description: "connection with valley",
+    positions: [STEPHENS_3RD, TRAFALGAR_3RD],
+  },
+  {
+    description: "connection with seaside",
+    videos: [VIDEOS.yorkEb],
+    positions: [STEPHENS_YORK, STEPHENS_POINT_GREY],
+  },
+  {
     routes: [ROUTES.third.name],
     description: "primary",
     videos: [VIDEOS.thirdEb],
     positions: [
-      [49.27175, -123.1935],
+      THIRD_SEASIDE,
       [49.27161, -123.19324],
       [49.27152, -123.19314],
       [49.27148, -123.19303],
@@ -43,18 +57,5 @@ export const THIRD = [
       [49.27186, -123.16623],
       STEPHENS_YORK,
     ],
-  },
-  {
-    description: "connection with 4th",
-    positions: [WALLACE_3RD, WALLACE_4TH_S],
-  },
-  {
-    description: "connection with valley",
-    positions: [STEPHENS_3RD, TRAFALGAR_3RD],
-  },
-  {
-    description: "connection with seaside",
-    videos: [VIDEOS.yorkEb],
-    positions: [STEPHENS_YORK, STEPHENS_POINT_GREY],
   },
 ];

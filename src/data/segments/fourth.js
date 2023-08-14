@@ -14,7 +14,16 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const CHANCELLOR_4TH_N = [49.26906, -123.22552];
+const CHANCELLOR_4TH_S = [49.26896, -123.22563];
+
 export const FOURTH = [
+  {
+    routes: [ROUTES.fourth.name],
+    description: "connection between chancellor and 4th",
+    videos: [VIDEOS.fourthEb],
+    positions: [CHANCELLOR_4TH, CHANCELLOR_4TH_S],
+  },
   {
     routes: [ROUTES.fourth.name],
     description: "chancellor blvd eastbound",
@@ -22,8 +31,7 @@ export const FOURTH = [
     videos: [VIDEOS.fourthEb],
     directions: ["eastbound"],
     positions: [
-      CHANCELLOR_4TH,
-      [49.26896, -123.22563],
+      CHANCELLOR_4TH_S,
       [49.26874, -123.22495],
       [49.2686, -123.2242],
       [49.26856, -123.22351],
@@ -44,8 +52,8 @@ export const FOURTH = [
       [49.26865, -123.22354],
       [49.2687, -123.2242],
       [49.26885, -123.22491],
-      [49.26906, -123.22552],
-      CHANCELLOR_4TH,
+      CHANCELLOR_4TH_N,
+      CHANCELLOR_4TH_S,
     ],
   },
   {

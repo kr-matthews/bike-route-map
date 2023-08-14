@@ -4,28 +4,31 @@ import {
   BEATTY_NELSON,
   CAMBIE_1ST_N,
   CAMBIE_1ST_S,
-  CAMBIE_2ND_N,
-  CAMBIE_2ND_NW,
+  CAMBIE_2ND_N_E,
+  CAMBIE_2ND_N_W,
   CAMBIE_2ND_SE,
   CAMBIE_2ND_SW,
+  CAMBIE_2ND_NE,
+  CAMBIE_2ND_NW,
   CAMBIE_LOOP_2ND_N,
   CAMBIE_LOOP_2ND_S,
-  CAMBIE_NB_ON_RAMP,
-  CAMBIE_NB_ON_RAMP_JOIN,
-  CAMBIE_PARKING_ENTRANCE,
-  CAMBIE_SB_OFF_RAMP,
-  CAMBIE_SPIRAL_BOTTOM,
-  CAMBIE_SPIRAL_MIDDLE,
   MARINASIDE_SEAWALL,
   SMITHE_SMITHE_PATH,
   SPYGLASS_1ST,
   SPYGLASS_COMMODORE,
-  SPYGLASS_LOOP_S,
   SPYGLASS_SEAWALL,
   YUKON_5TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
+
+const NORTHBOUND_ELEVATED_START = [49.26719, -123.11457];
+const NORTHBOUND_ELEVATED_END = [49.27495, -123.11447];
+const NORTHBOUND_ON_RAMP_MERGE = [49.26737, -123.11459];
+const UNDER_BRIDGE_NODE = [49.26787, -123.11487];
+const SPIRAL_MIDPOINT = [49.27389, -123.11434];
+const SPIRAL_BOTTOM = [49.27383, -123.11435];
+const SPYGLASS_LOOP_S = [49.27042, -123.11521];
 
 export const CAMBIE_BRIDGE = [
   {
@@ -35,9 +38,9 @@ export const CAMBIE_BRIDGE = [
     elevatedAdj: true,
     videos: [VIDEOS.cambieBridgeSmithNb],
     positions: [
-      CAMBIE_NB_ON_RAMP,
-      [49.26698, -123.11447],
-      [49.26719, -123.11457],
+      CAMBIE_2ND_NE,
+      [49.26703, -123.11446],
+      NORTHBOUND_ELEVATED_START,
     ],
   },
   {
@@ -47,8 +50,8 @@ export const CAMBIE_BRIDGE = [
     videos: [VIDEOS.cambieBridgeSmithNb],
     elevated: true,
     positions: [
-      [49.26719, -123.11457],
-      CAMBIE_NB_ON_RAMP_JOIN,
+      NORTHBOUND_ELEVATED_START,
+      NORTHBOUND_ON_RAMP_MERGE,
       [49.26866, -123.11467],
       [49.26948, -123.11476],
       [49.26992, -123.11475],
@@ -65,13 +68,12 @@ export const CAMBIE_BRIDGE = [
       [49.27414, -123.11407],
       [49.27393, -123.11425],
       [49.2739, -123.11429],
-      CAMBIE_SPIRAL_MIDDLE,
+      SPIRAL_MIDPOINT,
       [49.27389, -123.11454],
       [49.27392, -123.11455],
       [49.27422, -123.11455],
       [49.27465, -123.11452],
-      [49.27495, -123.11447],
-      [49.27532, -123.11445], //
+      NORTHBOUND_ELEVATED_END,
     ],
   },
   {
@@ -81,7 +83,8 @@ export const CAMBIE_BRIDGE = [
     elevatedAdj: true,
     videos: [VIDEOS.cambieBridgeSmithNb],
     positions: [
-      [49.27532, -123.11445], //
+      NORTHBOUND_ELEVATED_END,
+      [49.27532, -123.11445],
       [49.2754, -123.11452],
       SMITHE_SMITHE_PATH,
     ],
@@ -100,7 +103,7 @@ export const CAMBIE_BRIDGE = [
       [49.27431, -123.11491],
       [49.27423, -123.11494],
       [49.27414, -123.11484],
-      CAMBIE_SPIRAL_BOTTOM,
+      SPIRAL_BOTTOM,
       [49.27364, -123.11465],
       [49.27359, -123.11476],
       MARINASIDE_SEAWALL,
@@ -110,7 +113,7 @@ export const CAMBIE_BRIDGE = [
   {
     description: "north spiral connection",
     elevated: true,
-    positions: [CAMBIE_SPIRAL_MIDDLE, [49.27392, -123.11433]],
+    positions: [SPIRAL_MIDPOINT, [49.27392, -123.11433]],
   },
   {
     description: "north spiral connection middle",
@@ -127,7 +130,7 @@ export const CAMBIE_BRIDGE = [
       [49.27413, -123.11412],
       [49.27411, -123.11403],
       [49.27384, -123.11427],
-      CAMBIE_SPIRAL_BOTTOM,
+      SPIRAL_BOTTOM,
     ],
   },
   {
@@ -160,7 +163,7 @@ export const CAMBIE_BRIDGE = [
       [49.26681, -123.11538],
       [49.26675, -123.11541],
       [49.26669, -123.11538],
-      CAMBIE_SB_OFF_RAMP,
+      CAMBIE_2ND_NW,
     ],
   },
   {
@@ -178,20 +181,19 @@ export const CAMBIE_BRIDGE = [
       CAMBIE_LOOP_2ND_N,
       [49.26634, -123.11593],
       [49.26639, -123.11581],
-      CAMBIE_SB_OFF_RAMP,
+      CAMBIE_2ND_NW,
     ],
   },
   {
     description: "2nd, north side, under bridge",
     elevatedAdj: true,
     positions: [
-      CAMBIE_SB_OFF_RAMP,
+      CAMBIE_2ND_NW,
       [49.2666, -123.11529],
       [49.26661, -123.11521],
-      CAMBIE_2ND_NW,
-      CAMBIE_2ND_N,
-      [49.26694, -123.1145],
-      CAMBIE_NB_ON_RAMP,
+      CAMBIE_2ND_N_W,
+      CAMBIE_2ND_N_E,
+      CAMBIE_2ND_NE,
     ],
   },
   {
@@ -213,11 +215,11 @@ export const CAMBIE_BRIDGE = [
   {
     description: "crossing 2nd, east side",
     videos: [VIDEOS.cambieBridgeSmithNb],
-    positions: [CAMBIE_2ND_SE, [49.26668, -123.11444], CAMBIE_NB_ON_RAMP],
+    positions: [CAMBIE_2ND_SE, CAMBIE_2ND_NE],
   },
   {
     description: "crossing 2nd, under",
-    positions: [CAMBIE_2ND_NW, CAMBIE_2ND_SW],
+    positions: [CAMBIE_2ND_N_W, CAMBIE_2ND_SW],
   },
   {
     description: "crossing 2nd, west side",
@@ -232,23 +234,18 @@ export const CAMBIE_BRIDGE = [
     // !!! partially elevated
     description: "northbound alt on-ramp",
     positions: [
-      CAMBIE_NB_ON_RAMP_JOIN,
+      NORTHBOUND_ON_RAMP_MERGE,
       [49.26739, -123.11456],
       [49.26754, -123.11455],
       [49.26758, -123.11456],
       [49.2678, -123.11458],
       [49.26785, -123.11471],
-      CAMBIE_PARKING_ENTRANCE,
+      UNDER_BRIDGE_NODE,
     ],
   },
   {
     description: "under bridge",
-    positions: [
-      CAMBIE_2ND_N,
-      CAMBIE_PARKING_ENTRANCE,
-      CAMBIE_1ST_S,
-      CAMBIE_1ST_N,
-    ],
+    positions: [CAMBIE_2ND_N_E, UNDER_BRIDGE_NODE, CAMBIE_1ST_S, CAMBIE_1ST_N],
   },
   {
     description: "beside bridge",

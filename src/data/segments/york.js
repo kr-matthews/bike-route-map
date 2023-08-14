@@ -1,8 +1,6 @@
-import { CHESTNUT_YORK, STEPHENS_YORK } from "../intersections";
+import { CHESTNUT_1ST, CHESTNUT_YORK, STEPHENS_YORK } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
-
-// !!! video includes chestnut to 1st
 
 export const YORK = [
   {
@@ -24,5 +22,11 @@ export const YORK = [
       [49.27156, -123.14779],
       CHESTNUT_YORK,
     ],
+  },
+  // !! move to seaside bypass (?)
+  {
+    description: "to york",
+    videos: [VIDEOS.yorkEb],
+    positions: [CHESTNUT_1ST, CHESTNUT_YORK],
   },
 ];

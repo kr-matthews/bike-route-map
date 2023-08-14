@@ -2,6 +2,7 @@ import {
   BUTE_HARO,
   CARDERO_HARO,
   CHILCO_HARO,
+  LAGOON_HARO,
   NICOLA_HARO,
   THURLOW_HARO,
 } from "../intersections";
@@ -14,7 +15,7 @@ export const HARO = [
     description: "primary",
     videos: [VIDEOS.haroWb],
     positions: [
-      [49.2932, -123.14024],
+      LAGOON_HARO,
       [49.29316, -123.14024],
       [49.29309, -123.14021],
       [49.29304, -123.14016],

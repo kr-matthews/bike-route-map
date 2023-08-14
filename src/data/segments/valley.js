@@ -3,6 +3,7 @@ import {
   ARBUTUS_GREENWAY_33RD,
   TRAFALGAR_10TH,
   TRAFALGAR_3RD,
+  TRAFALGAR_POINT_GREY,
   VALLEY_33RD,
   VALLEY_EDDINGTON,
   YEW_EDDINGTON,
@@ -13,7 +14,7 @@ import { VIDEOS } from "../videos";
 export const VALLEY = [
   {
     routes: [ROUTES.valley.name],
-    description: "north of 29th",
+    description: "south of 29th",
     videos: [VIDEOS.valleySb],
     positions: [
       VALLEY_33RD,
@@ -28,22 +29,9 @@ export const VALLEY = [
       YEW_EDDINGTON,
     ],
   },
-  // TODO: move to 29th file
-  {
-    routes: [ROUTES.twentyNinth.name, ROUTES.valley.name],
-    description: "all",
-    videos: [VIDEOS.valleySb],
-    positions: [
-      YEW_EDDINGTON,
-      [49.24698, -123.15558],
-      [49.24697, -123.15606],
-      [49.24692, -123.15645],
-      VALLEY_EDDINGTON,
-    ],
-  },
   {
     routes: [ROUTES.valley.name],
-    description: "all",
+    description: "north of 29th",
     videos: [VIDEOS.valleySb],
     positions: [
       VALLEY_EDDINGTON,
@@ -81,7 +69,7 @@ export const VALLEY = [
       [49.27098, -123.16443],
       [49.27188, -123.1644],
       [49.27274, -123.16437],
-      [49.27298, -123.16437],
+      TRAFALGAR_POINT_GREY,
     ],
   },
   {
