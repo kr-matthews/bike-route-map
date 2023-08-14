@@ -192,6 +192,10 @@ export const ROUTES = {
     name: "Dunsmuir",
     legs: [],
   },
+  francesUnion: {
+    name: "Frances Union",
+    legs: [],
+  },
   gardenCity: {
     name: "Garden City",
     legs: [

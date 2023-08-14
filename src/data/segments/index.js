@@ -1,3 +1,4 @@
+import { ADANAC } from "./adanac";
 import { ALBERNI } from "./alberni";
 import { ALDER } from "./alder";
 import { ALEXANDER } from "./alexander";
@@ -19,6 +20,7 @@ import { DUNSMUIR } from "./dunsmuir";
 import { FORTY_FIFTH } from "./fortyFifth";
 import { FOURTEENTH } from "./fourteenth";
 import { FOURTH } from "./fourth";
+import { FRANCES_UNION } from "./francesUnion";
 import { HARO } from "./haro";
 import { HIGHBURY } from "./highbury";
 import { HILLCREST } from "./hillcrest";
@@ -45,6 +47,7 @@ import { YORK } from "./york";
 
 // convention: bi-directional paths are stored northbound, eastbound, or clockwise
 export const SEGMENTS = [
+  ...ADANAC,
   ...ALBERNI,
   ...ALDER,
   ...ALEXANDER,
@@ -66,6 +69,7 @@ export const SEGMENTS = [
   ...FORTY_FIFTH,
   ...FOURTEENTH,
   ...FOURTH,
+  ...FRANCES_UNION,
   ...HARO,
   ...HIGHBURY,
   ...HILLCREST,
