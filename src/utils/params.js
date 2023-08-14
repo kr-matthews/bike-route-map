@@ -1,4 +1,4 @@
-export const NARROW_WEIGHT = 5;
+export const NARROW_WEIGHT = 4;
 export const WIDE_WEIGHT = 8;
 export const BORDER_WEIGHT = 4;
 

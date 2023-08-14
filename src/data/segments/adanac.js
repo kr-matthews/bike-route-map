@@ -25,15 +25,18 @@ export const ADANAC = [
   {
     description: "dunsmuir off-ramp eb",
     directions: ["eastbound"],
+    elevatedAdj: true,
     positions: [MAIN_DUNSMUIR, MAIN_UNION_SE],
   },
   {
     description: "dunsmuir on-ramp wb",
     directions: ["westbound"],
+    elevatedAdj: true,
     positions: [MAIN_UNION_N, MAIN_DUNSMUIR],
   },
   {
     description: "dunsmuir 'nb'",
+    elevatedAdj: true,
     positions: [MAIN_DUNSMUIR, MAIN_UNION_SW, MAIN_UNION_NW],
   },
   {
