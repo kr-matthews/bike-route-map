@@ -24,13 +24,6 @@ export const FOURTEENTH = [
     ],
   },
   {
-    // TODO: move to heather file
-    routes: [ROUTES.heather.name, ROUTES.fourteenth.name],
-    description: "14th",
-    videos: [VIDEOS.fourteenthWb],
-    positions: [HEATHER_14TH_S, HEATHER_14TH_N],
-  },
-  {
     routes: [ROUTES.fourteenth.name],
     description: "heather to prince edward",
     videos: [VIDEOS.fourteenthWb],

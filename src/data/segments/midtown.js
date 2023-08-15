@@ -22,6 +22,7 @@ import {
   PATTERSON_MOSCROP,
   PRINCE_EDWARD_37TH,
   WILLINGDON_DEER_LAKE,
+  WILLOW_37TH,
   WINDSOR_37TH,
   YEW_37TH,
 } from "../intersections";
@@ -73,7 +74,7 @@ export const MIDTOWN = [
   {
     routes: [ROUTES.midtown.name, ROUTES.ridgeway.name],
     legs: ["Vancouver"],
-    description: "east ridgeway overlap",
+    description: "yew to willow",
     videos: [VIDEOS.midtownVancouverEb],
     positions: [
       YEW_37TH,
@@ -88,7 +89,22 @@ export const MIDTOWN = [
       [49.23774, -123.1302],
       [49.23769, -123.12869],
       [49.23766, -123.12795],
-      [49.23752, -123.12372],
+      WILLOW_37TH,
+    ],
+  },
+  {
+    routes: [ROUTES.midtown.name, ROUTES.ridgeway.name, ROUTES.heather.name],
+    legs: ["Vancouver"],
+    description: "heather overlap",
+    videos: [VIDEOS.midtownVancouverEb],
+    positions: [WILLOW_37TH, HEATHER_37TH],
+  },
+  {
+    routes: [ROUTES.midtown.name, ROUTES.ridgeway.name],
+    legs: ["Vancouver"],
+    description: "heather to nanaimo",
+    videos: [VIDEOS.midtownVancouverEb],
+    positions: [
       HEATHER_37TH,
       [49.23736, -123.11925],
       [49.23731, -123.11775],

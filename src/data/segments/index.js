@@ -22,6 +22,7 @@ import { FOURTEENTH } from "./fourteenth";
 import { FOURTH } from "./fourth";
 import { FRANCES_UNION } from "./francesUnion";
 import { HARO } from "./haro";
+import { HEATHER } from "./heather";
 import { HIGHBURY } from "./highbury";
 import { HILLCREST } from "./hillcrest";
 import { IMPERIAL } from "./imperial";
@@ -71,6 +72,7 @@ export const SEGMENTS = [
   ...FOURTH,
   ...FRANCES_UNION,
   ...HARO,
+  ...HEATHER,
   ...HIGHBURY,
   ...HILLCREST,
   ...IMPERIAL,

@@ -97,12 +97,6 @@ export const TWENTY_NINTH = [
     ],
   },
   {
-    // TODO: move to heather file
-    routes: [ROUTES.heather.name, ROUTES.twentyNinth.name],
-    description: "29th",
-    positions: [HEATHER_28TH, HEATHER_29TH],
-  },
-  {
     routes: [ROUTES.twentyNinth.name],
     description: "heather to ontario",
     positions: [

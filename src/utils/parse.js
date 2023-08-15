@@ -6,7 +6,7 @@ export function parse(str) {
   while (hasParens(result)) {
     result = removeParenPair(result);
   }
-  return "[" + result + "]";
+  return result;
 }
 
 function hasParens(str) {
