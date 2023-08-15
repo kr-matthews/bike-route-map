@@ -1,0 +1,9 @@
+/* prevents black box outline from appearing on click */
+
+g:focus {
+  outline: none;
+}
+
+path:focus {
+  outline: none;
+}

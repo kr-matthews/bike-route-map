@@ -2,6 +2,7 @@ import { MapContainer, Pane, TileLayer } from "react-leaflet";
 import { LatLngBounds } from "leaflet";
 import { SEGMENTS } from "../../data/segments";
 import Segment from "./Segment";
+import "./map.css";
 
 const VANCOUVER_BOUNDS = new LatLngBounds(
   [49.32946, -123.27558],
