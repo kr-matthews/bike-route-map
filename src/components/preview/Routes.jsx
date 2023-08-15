@@ -1,17 +1,30 @@
-import { useContext } from "react";
+import { useContext, useMemo, useState } from "react";
 import { ROUTES } from "../../data/routes";
 import { Selections } from "../../App";
+import { Search } from "./Search";
 import {
   BIDIRECTIONAL_COLOUR_FULL,
   BIDIRECTIONAL_COLOUR_LIGHT,
 } from "../../utils/params";
+import { isSubsequence, removeWhiteSpaces } from "../../utils/strings";
 
 // !! partition routes by e-w / n-s, by city, by other?
 // !!! allow 'zoom to route'
-// !!! allow searching
 // !! allow filtering (by direction, to only official, by quality, etc)?
 
 export default function Routes() {
+  const [searchText, setSearchText] = useState("");
+  const routesToShow = useMemo(
+    () =>
+      Object.values(ROUTES).filter(({ name }) =>
+        isSubsequence(
+          removeWhiteSpaces(searchText.toLowerCase()),
+          name.toLowerCase()
+        )
+      ),
+    [searchText]
+  );
+
   return (
     <div
       style={{
@@ -20,21 +33,23 @@ export default function Routes() {
         overflow: "auto",
         display: "flex",
         flexDirection: "column",
-        maxHeight: "100vh",
         backgroundColor: "AliceBlue",
+        position: "relative",
       }}
     >
-      <h2 style={{ textAlign: "center" }}>Routes</h2>
+      <h2 style={{ paddingLeft: 15 }}>Routes</h2>
+      <Search text={searchText} setText={setSearchText} />
       <div
         style={{
           flex: 2,
-          overflow: "auto",
+          overflowY: "scroll",
           display: "grid",
           gridTemplateColumns: "1fr 1fr 1fr",
+          gridTemplateRows: "repeat(1000, auto)",
           font: "120% system-ui",
         }}
       >
-        {Object.values(ROUTES).map((route) => (
+        {routesToShow.map((route) => (
           <Route key={route.name} route={route} />
         ))}
       </div>
