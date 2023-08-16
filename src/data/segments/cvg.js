@@ -17,6 +17,7 @@ import {
   KEITH_6TH_SW,
   LAKEWOOD_GRANDVIEW,
   NORTH_CVG,
+  ONTARIO_PATH_ATHLETES,
   ONTARIO_PATH_SEASIDE,
   RUPERT_CVG_E,
   RUPERT_CVG_W,
@@ -61,7 +62,7 @@ export const CVG = [
     videos: [],
     positions: [
       ONTARIO_PATH_SEASIDE,
-      [49.27151, -123.10434],
+      ONTARIO_PATH_ATHLETES,
       [49.27022, -123.1044],
       [49.27018, -123.10261],
       [49.27014, -123.10066],

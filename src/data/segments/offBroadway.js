@@ -95,13 +95,6 @@ export const OFF_BROADWAY = [
       YUKON_7TH,
     ],
   },
-  // TODO: move to yukon file
-  {
-    routes: [ROUTES.yukon.name, ROUTES.offBroadway.name],
-    description: "yukon/off-broadway",
-    videos: [VIDEOS.offBroadwayWb],
-    positions: [YUKON_7TH, [49.26571, -123.11279], YUKON_5TH],
-  },
   {
     routes: [ROUTES.offBroadway.name],
     description: "yukon to mosaic",

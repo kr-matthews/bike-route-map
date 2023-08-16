@@ -1,5 +1,6 @@
 import {
   ANGUS_37TH,
+  ARBUTUS_GREENWAY_37TH,
   BALACLAVA_37TH,
   BOUNDARY_MOSCROP,
   CAMBIE_37TH_E,
@@ -78,7 +79,7 @@ export const MIDTOWN = [
     videos: [VIDEOS.midtownVancouverEb],
     positions: [
       YEW_37TH,
-      [49.2383, -123.15526],
+      ARBUTUS_GREENWAY_37TH,
       [49.23824, -123.15191],
       [49.23822, -123.15045],
       [49.2382, -123.14902],

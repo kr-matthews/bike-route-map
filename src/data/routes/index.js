@@ -54,7 +54,7 @@ export const ROUTES = {
     name: "Alexander",
     legs: [{ videos: { eastbound: VIDEOS.alexanderEb } }],
   },
-  arbutus: {
+  arbutusGreenway: {
     name: "Arbutus Greenway",
     legs: [],
   },
@@ -278,7 +278,7 @@ export const ROUTES = {
     ],
   },
   masumiMitsui: {
-    name: "Masumi Mitsui Greenway (57th)",
+    name: "Masumi Mitsui Greenway (59th)",
     shortName: "Masumi Mitsui G.",
     legs: [
       {

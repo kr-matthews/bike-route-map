@@ -18,7 +18,7 @@ import { VIDEOS } from "../videos";
 export const MASUMI_MITSUI_GREENWAY = [
   {
     routes: [ROUTES.masumiMitsui.name],
-    description: "primary",
+    description: "angus to ontario",
     videos: [VIDEOS.masumiMitsuiEb],
     positions: [
       ANGUS_59TH,
@@ -58,6 +58,13 @@ export const MASUMI_MITSUI_GREENWAY = [
       [49.21767, -123.10669],
       [49.21769, -123.10645],
       ONTARIO_58TH,
+    ],
+  },
+  {
+    routes: [ROUTES.masumiMitsui.name],
+    description: "ontario to split",
+    videos: [VIDEOS.masumiMitsuiEb],
+    positions: [
       ONTARIO_59TH,
       [49.21676, -123.10195],
       PRINCE_EDWARD_59TH,
