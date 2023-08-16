@@ -1,7 +1,7 @@
 import {
   BIDIRECTIONAL_COLOUR_FULL,
   BIDIRECTIONAL_COLOUR_LIGHT,
-  BORDER_COLOUR,
+  ELEVATED_BORDER_COLOUR,
   BORDER_WEIGHT,
   DASH_PATTERN,
   NARROW_WEIGHT,
@@ -10,6 +10,7 @@ import {
   VIDEO_BIDIRECTIONAL_COLOUR,
   VIDEO_UNIDIRECTIONAL_COLOUR,
   WIDE_WEIGHT,
+  UNDERGROUND_BORDER_COLOUR,
 } from "./params";
 
 export function createPathOptions(
@@ -50,20 +51,52 @@ export function createPathOptions(
 }
 
 export function createBorderPathOptions(
-  { routes, type, elevated },
+  { routes, elevation },
   { highlighted }
 ) {
   const isHighlighted = (routes ?? []).includes(highlighted);
-  const isUnofficial = type === "unofficial";
-  const isUncomfortable = type === "uncomfortable";
 
-  if (!elevated) return null;
+  if (!elevation) return null;
 
   return {
-    color: BORDER_COLOUR,
+    color: elevation > 0 ? ELEVATED_BORDER_COLOUR : UNDERGROUND_BORDER_COLOUR,
     weight: (isHighlighted ? WIDE_WEIGHT : NARROW_WEIGHT) + BORDER_WEIGHT,
     // explicit opacity required to show hidden routes when video is selected
     opacity: 100,
-    dashArray: isUnofficial || isUncomfortable ? DASH_PATTERN : undefined,
   };
+}
+
+export function getSegmentPane(elevation, hasMultipleRoutes) {
+  switch (elevation) {
+    case 2:
+      return "elevated-2";
+    case 1.5:
+      return "elevated-2-adj";
+    case 1:
+      return "elevated-1";
+    case 0.5:
+      return "elevated-1-adj";
+    case -0.5:
+      return "underground-1-adj";
+    case -1:
+      return "underground-1";
+
+    default:
+      return hasMultipleRoutes ? "shared" : "solo";
+  }
+}
+
+export function getBorderPane(elevation) {
+  switch (elevation) {
+    case 2:
+      return "elevated-2-border";
+    case 1.5:
+    case 1:
+      return "elevated-1-border";
+    case -1:
+      return "underground-1-border";
+
+    default:
+      return undefined;
+  }
 }

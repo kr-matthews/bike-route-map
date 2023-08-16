@@ -3,6 +3,8 @@ import { Tooltip } from "react-leaflet";
 import {
   createBorderPathOptions,
   createPathOptions,
+  getBorderPane,
+  getSegmentPane,
 } from "../../utils/pathOptions";
 import { Selections } from "../../App";
 import MyPolyline from "./MyPolyline";
@@ -10,24 +12,13 @@ import MyPolyline from "./MyPolyline";
 // !! indicate by default whether route/segment has video (and/or quality of route, whether official or not (dashed line?), etc.)
 
 export default function Segment(segment) {
-  const { routes, directions, positions, elevated, elevatedAdj, description } =
-    segment;
+  const { routes, directions, positions, elevation } = segment;
   const { selectedRoute, setSelected, highlighted, setHighlighted, video } =
     useContext(Selections);
 
   const primaryRoute = routes?.find((x) => x) || null;
-  const tooltipContent = routes?.join("; ");
   const hasMultipleRoutes = (routes?.length ?? 0) > 1;
-  const isConnection = description.includes("connection");
-  const pane = elevated
-    ? "elevated-segments"
-    : elevatedAdj
-    ? "elevated-adj-segments"
-    : isConnection
-    ? "connection-segments"
-    : hasMultipleRoutes
-    ? "shared-segments"
-    : "single-segments";
+  const pane = getSegmentPane(elevation, hasMultipleRoutes);
 
   const polylineProps = {
     positions,
@@ -49,13 +40,16 @@ export default function Segment(segment) {
     pane,
   };
 
+  const hasBorder = elevation >= 1 || elevation <= -1;
   const borderProps = {
     positions,
     pathOptions: createBorderPathOptions(segment, { highlighted }),
-    pane: "elevation-borders",
+    pane: getBorderPane(elevation),
   };
 
+  // !!! improve tooltip content
   const tooltipProps = { sticky: true, opacity: 0.7 };
+  const tooltipContent = routes?.join("; ");
 
   // FIXME: arrows won't be removed when video is unselected
   const showDirection = directions?.length === 1; // || videos?.includes(video);
@@ -65,7 +59,7 @@ export default function Segment(segment) {
     <MyPolyline
       isDirected={showDirection}
       polylineProps={polylineProps}
-      borderProps={elevated && borderProps}
+      borderProps={hasBorder ? borderProps : undefined}
     >
       {tooltipContent && <Tooltip {...tooltipProps}>{tooltipContent}</Tooltip>}
     </MyPolyline>

@@ -10,6 +10,7 @@ export const UNIDIRECTIONAL_COLOUR_FULL = "Blue";
 export const VIDEO_BIDIRECTIONAL_COLOUR = "Purple";
 export const VIDEO_UNIDIRECTIONAL_COLOUR = "Purple";
 
-export const BORDER_COLOUR = "Black";
+export const ELEVATED_BORDER_COLOUR = "Black";
+export const UNDERGROUND_BORDER_COLOUR = "#00000080";
 
 export const DASH_PATTERN = "6, 10";

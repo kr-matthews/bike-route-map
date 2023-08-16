@@ -17,11 +17,12 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-// !!! remove legs, replace with single video
-
 const ELEVATED_START = [49.19896, -123.11896];
 const ELEVATED_END = [49.20561, -123.11767];
-const SPIRAL_MIDPOINT = [49.20495, -123.11778];
+const SPIRAL_MIDPOINT_1 = [49.20442, -123.11761];
+const SPIRAL_MIDPOINT_2 = [49.20488, -123.11766];
+const SPIRAL_MIDPOINT_3 = [49.20552, -123.11775];
+const SPIRAL_MIDPOINT_4 = [49.20495, -123.11778];
 
 export const CANADA_LINE = [
   // richmond
@@ -81,7 +82,7 @@ export const CANADA_LINE = [
     routes: [ROUTES.canadaLine.name],
     legs: ["North Arm Bridge"],
     description: "pre-bridge",
-    elevatedAdj: true,
+    elevation: 0.5,
     videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
     positions: [VAN_HORNE_RIVER_N, ELEVATED_START],
   },
@@ -89,7 +90,7 @@ export const CANADA_LINE = [
     routes: [ROUTES.canadaLine.name],
     legs: ["North Arm Bridge"],
     description: "bridge",
-    elevated: true,
+    elevation: 1,
     videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
     positions: [
       ELEVATED_START,
@@ -105,21 +106,41 @@ export const CANADA_LINE = [
       [49.20182, -123.11783],
       [49.20321, -123.1177],
       [49.20406, -123.11763],
-      [49.20442, -123.11761],
-      [49.20488, -123.11766],
-      [49.20552, -123.11761],
-      [49.20552, -123.11775],
-      SPIRAL_MIDPOINT,
+      SPIRAL_MIDPOINT_1,
     ],
   },
   {
     routes: [ROUTES.canadaLine.name],
     legs: ["North Arm Bridge"],
-    description: "partial vancouver ramp",
-    elevated: true,
+    description: "ramp down 1",
+    elevation: 1.5,
+    videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
+    positions: [SPIRAL_MIDPOINT_1, SPIRAL_MIDPOINT_2],
+  },
+  {
+    routes: [ROUTES.canadaLine.name],
+    legs: ["North Arm Bridge"],
+    description: "ramp down 2",
+    elevation: 2,
+    videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
+    positions: [SPIRAL_MIDPOINT_2, [49.20552, -123.11761], SPIRAL_MIDPOINT_3],
+  },
+  {
+    routes: [ROUTES.canadaLine.name],
+    legs: ["North Arm Bridge"],
+    description: "ramp down 3",
+    elevation: 1.5,
+    videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
+    positions: [SPIRAL_MIDPOINT_3, SPIRAL_MIDPOINT_4],
+  },
+  {
+    routes: [ROUTES.canadaLine.name],
+    legs: ["North Arm Bridge"],
+    description: "ramp down 4",
+    elevation: 1,
     videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
     positions: [
-      SPIRAL_MIDPOINT,
+      SPIRAL_MIDPOINT_4,
       [49.20495, -123.11759],
       [49.20502, -123.11759],
       [49.20521, -123.11769],
@@ -130,7 +151,7 @@ export const CANADA_LINE = [
     routes: [ROUTES.canadaLine.name],
     legs: ["North Arm Bridge"],
     description: "post-bridge",
-    elevatedAdj: true,
+    elevation: 0.5,
     videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
     positions: [
       ELEVATED_END,

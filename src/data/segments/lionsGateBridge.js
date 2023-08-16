@@ -76,7 +76,7 @@ export const LIONS_GATE_BRIDGE = [
     routes: [ROUTES.lionsGate.name],
     directions: ["northbound"],
     description: "northbound causeway",
-    elevatedAdj: true,
+    elevation: 0.5,
     videos: [VIDEOS.lionsGateBridgeNb],
     positions: [
       CHILCO_GEORGIA_N,
@@ -125,7 +125,7 @@ export const LIONS_GATE_BRIDGE = [
     routes: [ROUTES.lionsGate.name],
     directions: ["northbound"],
     description: "northbound bridge",
-    elevated: true,
+    elevation: 1,
     videos: [VIDEOS.lionsGateBridgeNb],
     positions: [
       NORTHBOUND_ELEVATED_START,
@@ -143,7 +143,7 @@ export const LIONS_GATE_BRIDGE = [
     routes: [ROUTES.lionsGate.name],
     directions: ["northbound"],
     description: "northbound post-bridge",
-    elevatedAdj: true,
+    elevation: 0.5,
     videos: [VIDEOS.lionsGateBridgeNb],
     positions: [
       NORTHBOUND_ELEVATED_END,
@@ -158,7 +158,7 @@ export const LIONS_GATE_BRIDGE = [
     routes: [ROUTES.lionsGate.name],
     directions: ["southbound"],
     description: "southbound pre-bridge",
-    elevatedAdj: true,
+    elevation: 0.5,
     videos: [VIDEOS.lionsGateBridgeSb],
     positions: [SOUTHBOUND_ON_RAMP_MERGE, SOUTHBOUND_ELEVATED_START],
   },
@@ -166,7 +166,7 @@ export const LIONS_GATE_BRIDGE = [
     routes: [ROUTES.lionsGate.name],
     directions: ["southbound"],
     description: "southbound bridge",
-    elevated: true,
+    elevation: 1,
     videos: [VIDEOS.lionsGateBridgeSb],
     positions: [
       SOUTHBOUND_ELEVATED_START,
@@ -181,7 +181,7 @@ export const LIONS_GATE_BRIDGE = [
     routes: [ROUTES.lionsGate.name],
     directions: ["southbound"],
     description: "southbound causeway",
-    elevatedAdj: true,
+    elevation: 0.5,
     videos: [VIDEOS.lionsGateBridgeSb],
     positions: [
       SOUTHBOUND_ELEVATED_END,

@@ -31,7 +31,7 @@ export const NELSON = [
     routes: [ROUTES.nelson.name],
     directions: ["eastbound"],
     description: "official part",
-    elevatedAdj: true,
+    elevation: 0.5,
     videos: [VIDEOS.cambieBridgeNelsonSb],
     positions: [
       RICHARDS_NELSON,

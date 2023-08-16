@@ -3,7 +3,8 @@ import { useMap } from "react-leaflet";
 import L from "leaflet";
 import "leaflet-polylinedecorator";
 
-const ZOOM_CUTOFF = 16;
+const SOMEWHAT_ZOOMED_IN = 16;
+const VERY_ZOOMED_IN = 18;
 
 /**
  * The implementation is messy because react-leaflet doesn't
@@ -19,7 +20,8 @@ export default function useDirectionalArrows(
   const [decorator, setDecorator] = useState();
   // zooming in won't trigger const zoom = map.getZoom() to update itself for some reason
   const [zoom, setZoom] = useState(map.getZoom());
-  const isZoomedIn = zoom >= ZOOM_CUTOFF;
+  const isZoomedIn = zoom >= SOMEWHAT_ZOOMED_IN;
+  const isVeryZoomedIn = zoom >= VERY_ZOOMED_IN;
 
   useEffect(
     function addZoomListener() {
@@ -68,8 +70,9 @@ export default function useDirectionalArrows(
   useEffect(
     function updateArrows() {
       const arrow = {
-        offset: "12%",
-        repeat: 90,
+        // somewhat arbitrary, but made to work with cambie bridge nb loop-ramp
+        offset: isVeryZoomedIn ? 45 : 20,
+        repeat: isVeryZoomedIn ? 100 : 70,
         symbol: L.Symbol.arrowHead({
           pixelSize: 14,
           polygon: true,
@@ -86,6 +89,6 @@ export default function useDirectionalArrows(
         decorator.setPatterns([arrow]);
       }
     },
-    [isActive, decorator, pathOptions]
+    [isActive, isVeryZoomedIn, decorator, pathOptions]
   );
 }

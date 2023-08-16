@@ -35,7 +35,6 @@ const AFTER_OVERPASS = [49.25823, -122.96428];
 
 export const CVG = [
   // alternates
-
   {
     routes: [ROUTES.cvg.name],
     legs: ["Vancouver"],
@@ -262,7 +261,7 @@ export const CVG = [
     routes: [ROUTES.cvg.name],
     legs: ["Burnaby"],
     description: "pre-overpass",
-    elevatedAdj: true,
+    elevation: 0.5,
     videos: [],
     positions: [BEFORE_OVERPASS, OVERPASS_START],
   },
@@ -270,7 +269,7 @@ export const CVG = [
     routes: [ROUTES.cvg.name],
     legs: ["Burnaby"],
     description: "train overpass",
-    elevated: true,
+    elevation: 1,
     videos: [],
     positions: [
       OVERPASS_START,
@@ -291,7 +290,7 @@ export const CVG = [
     routes: [ROUTES.cvg.name],
     legs: ["Burnaby"],
     description: "post-overpass",
-    elevatedAdj: true,
+    elevation: 0.5,
     videos: [],
     positions: [OVERPASS_END, AFTER_OVERPASS],
   },

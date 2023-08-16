@@ -108,13 +108,13 @@ export const FRANCES_UNION = [
   {
     routes: [ROUTES.francesUnion.name],
     description: "wb pre-overpass",
-    elevatedAdj: true,
+    elevation: 0.5,
     positions: [OVERPASS_ADJ_N, HASTINGS_OVERPASS_N],
   },
   {
     routes: [ROUTES.francesUnion.name],
     description: "hastings overpass",
-    elevated: true,
+    elevation: 1,
     positions: [
       HASTINGS_OVERPASS_N,
       [49.28035, -122.96047],
@@ -127,7 +127,7 @@ export const FRANCES_UNION = [
   {
     routes: [ROUTES.francesUnion.name],
     description: "wb post-overpass",
-    elevatedAdj: true,
+    elevation: 0.5,
     positions: [HASTINGS_OVERPASS_S, OVERPASS_ADJ_S],
   },
   {

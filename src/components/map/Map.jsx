@@ -25,13 +25,20 @@ export default function Map() {
         bounds={VANCOUVER_BOUNDS}
         scrollWheelZoom
       >
-        <Pane name="elevated-segments" style={{ zIndex: 305 }} />
-        <Pane name="elevated-adj-segments" style={{ zIndex: 304 }} />
-        <Pane name="elevation-borders" style={{ zIndex: 303 }} />
-        <Pane name="shared-segments" style={{ zIndex: 302 }} />
-        <Pane name="single-segments" style={{ zIndex: 301 }} />
-        <Pane name="connection-segments" style={{ zIndex: 300 }} />
+        <Pane name="elevated-2" style={{ zIndex: 311 }} />
+        <Pane name="elevated-2-adj" style={{ zIndex: 310 }} />
+        <Pane name="elevated-2-border" style={{ zIndex: 309 }} />
+        <Pane name="elevated-1" style={{ zIndex: 308 }} />
+        <Pane name="elevated-1-adj" style={{ zIndex: 307 }} />
+        <Pane name="elevated-1-border" style={{ zIndex: 306 }} />
+        <Pane name="shared" style={{ zIndex: 305 }} />
+        <Pane name="solo" style={{ zIndex: 304 }} />
+        <Pane name="underground-1" style={{ zIndex: 302 }} />
+        <Pane name="underground-1-adj" style={{ zIndex: 301 }} />
+        <Pane name="underground-1-border" style={{ zIndex: 300 }} />
+
         <TileLayer attribution={TILE_LAYER.attribution} url={TILE_LAYER.url} />
+
         {SEGMENTS.map((segment) => (
           <Segment
             key={

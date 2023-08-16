@@ -13,7 +13,7 @@ export const DUNSMUIR = [
   {
     routes: [ROUTES.dunsmuir.name],
     description: "downtown",
-    elevatedAdj: true,
+    elevation: 0.5,
     positions: [
       HORNBY_DUNSMUIR,
       [49.28431, -123.1174],
@@ -32,7 +32,7 @@ export const DUNSMUIR = [
   {
     routes: [ROUTES.dunsmuir.name],
     description: "viaduct",
-    elevated: true,
+    elevation: 1,
     positions: [
       CITADEL_PARADE_DUNSMUIR,
       [49.27893, -123.10909],
