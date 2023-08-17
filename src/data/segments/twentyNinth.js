@@ -39,6 +39,15 @@ export const TWENTY_NINTH = [
     ],
   },
   {
+    routes: [
+      ROUTES.twentyNinth.name,
+      ROUTES.balaclava.name,
+      ROUTES.ridgeway.name,
+    ],
+    description: "balaclava/ridgeway overlap",
+    positions: [BALACLAVA_29TH, CARNARVON_29TH],
+  },
+  {
     routes: [ROUTES.twentyNinth.name],
     description: "balaclava/ridgeway to valley",
     positions: [

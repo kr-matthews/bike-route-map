@@ -1,9 +1,7 @@
 import {
-  BALACLAVA_29TH,
   BALACLAVA_37TH,
   BALACLAVA_QUESNEL,
   BOUNDARY_45TH,
-  CARNARVON_29TH,
   CARNARVON_31ST,
   DISCOVERY_8TH,
   DISCOVER_14TH,
@@ -49,16 +47,6 @@ export const RIDGEWAY = [
       [49.25468, -123.17922],
       QUESNEL_20TH,
     ],
-  },
-  // TODO: move to 29th file
-  {
-    routes: [
-      ROUTES.twentyNinth.name,
-      ROUTES.balaclava.name,
-      ROUTES.ridgeway.name,
-    ],
-    description: "balaclava/ridgeway overlap",
-    positions: [BALACLAVA_29TH, CARNARVON_29TH],
   },
   {
     routes: [ROUTES.ridgeway.name],

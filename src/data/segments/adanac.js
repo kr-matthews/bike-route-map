@@ -108,6 +108,11 @@ export const ADANAC = [
     ],
   },
   {
+    routes: [ROUTES.adanac.name, ROUTES.sunrise.name],
+    description: "sunrise",
+    positions: [SLOCAN_ADANAC, KASLO_ADANAC],
+  },
+  {
     routes: [ROUTES.adanac.name],
     description: "sunrise to boundary",
     positions: [

@@ -108,12 +108,6 @@ export const SUNRISE = [
       SLOCAN_ADANAC,
     ],
   },
-  // TODO: move to adanac file
-  {
-    routes: [ROUTES.adanac.name, ROUTES.sunrise.name],
-    description: "sunrise",
-    positions: [SLOCAN_ADANAC, KASLO_ADANAC],
-  },
   {
     routes: [ROUTES.sunrise.name],
     description: "adanac to wall",
