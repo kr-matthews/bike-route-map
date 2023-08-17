@@ -2,7 +2,7 @@ import {
   BIDIRECTIONAL_COLOUR_FULL,
   BIDIRECTIONAL_COLOUR_LIGHT,
   ELEVATED_BORDER_COLOUR,
-  BORDER_WEIGHT,
+  BORDER_WEIGHT_ADD_ON,
   DASH_PATTERN,
   NARROW_WEIGHT,
   UNIDIRECTIONAL_COLOUR_FULL,
@@ -11,13 +11,13 @@ import {
   VIDEO_UNIDIRECTIONAL_COLOUR,
   WIDE_WEIGHT,
   UNDERGROUND_BORDER_COLOUR,
+  UNDERGROUND_WEIGHT,
 } from "./params";
 
 export function createPathOptions(
-  { routes, directions, videos, type, hideUnlessVideo },
+  { routes, directions, videos, type, hideUnlessVideo, elevation },
   { highlighted, selectedRoute, video }
 ) {
-  // const isNoneSelected = !selectedRoute;
   const isSelected = (routes ?? []).includes(selectedRoute?.name);
   const isHighlighted = (routes ?? []).includes(highlighted);
   const hasActiveVideo = videos?.includes(video);
@@ -38,14 +38,15 @@ export function createPathOptions(
       ? VIDEO_UNIDIRECTIONAL_COLOUR
       : VIDEO_BIDIRECTIONAL_COLOUR;
 
+  const nonUndergroundWeight = isHighlighted ? WIDE_WEIGHT : NARROW_WEIGHT;
+
   if (hideUnlessVideo && !hasActiveVideo) return { weight: 0, opacity: 0 };
 
   return {
     color: hasActiveVideo ? videoColour : nonVideoColour,
-    weight: isHighlighted ? WIDE_WEIGHT : NARROW_WEIGHT,
+    weight: elevation <= -1 ? UNDERGROUND_WEIGHT : nonUndergroundWeight,
     // explicit opacity required to show hidden routes when video is selected
     opacity: 100,
-    // opacity: isSelected || isNoneSelected ? FULL_OPACITY : DIM_OPACITY,
     dashArray: isUnofficial || isUncomfortable ? DASH_PATTERN : undefined,
   };
 }
@@ -60,7 +61,8 @@ export function createBorderPathOptions(
 
   return {
     color: elevation > 0 ? ELEVATED_BORDER_COLOUR : UNDERGROUND_BORDER_COLOUR,
-    weight: (isHighlighted ? WIDE_WEIGHT : NARROW_WEIGHT) + BORDER_WEIGHT,
+    weight:
+      (isHighlighted ? WIDE_WEIGHT : NARROW_WEIGHT) + BORDER_WEIGHT_ADD_ON,
     // explicit opacity required to show hidden routes when video is selected
     opacity: 100,
   };

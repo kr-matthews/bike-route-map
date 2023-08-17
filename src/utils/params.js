@@ -1,6 +1,7 @@
+export const UNDERGROUND_WEIGHT = 0;
 export const NARROW_WEIGHT = 4;
 export const WIDE_WEIGHT = 8;
-export const BORDER_WEIGHT = 4;
+export const BORDER_WEIGHT_ADD_ON = 4;
 
 export const BIDIRECTIONAL_COLOUR_LIGHT = "#009E60";
 export const BIDIRECTIONAL_COLOUR_FULL = "DarkGreen";
@@ -11,6 +12,6 @@ export const VIDEO_BIDIRECTIONAL_COLOUR = "Purple";
 export const VIDEO_UNIDIRECTIONAL_COLOUR = "Purple";
 
 export const ELEVATED_BORDER_COLOUR = "Black";
-export const UNDERGROUND_BORDER_COLOUR = "#00000080";
+export const UNDERGROUND_BORDER_COLOUR = "#967969";
 
 export const DASH_PATTERN = "6, 10";

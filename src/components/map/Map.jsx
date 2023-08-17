@@ -33,9 +33,9 @@ export default function Map() {
         <Pane name="elevated-1-border" style={{ zIndex: 306 }} />
         <Pane name="shared" style={{ zIndex: 305 }} />
         <Pane name="solo" style={{ zIndex: 304 }} />
-        <Pane name="underground-1" style={{ zIndex: 302 }} />
-        <Pane name="underground-1-adj" style={{ zIndex: 301 }} />
-        <Pane name="underground-1-border" style={{ zIndex: 300 }} />
+        <Pane name="underground-1-border" style={{ zIndex: 303 }} />
+        <Pane name="underground-1" style={{ zIndex: 301 }} />
+        <Pane name="underground-1-adj" style={{ zIndex: 300 }} />
 
         <TileLayer attribution={TILE_LAYER.attribution} url={TILE_LAYER.url} />
 
