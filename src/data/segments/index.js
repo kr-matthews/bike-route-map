@@ -41,6 +41,7 @@ import { ONTARIO } from "./ontario";
 import { PANDORA } from "./pandora";
 import { POWELL } from "./powell";
 import { RIDGEWAY } from "./ridgeway";
+import { SECOND_NARROWS_BRIDGE } from "./secondNarrowsBridge";
 import { SIXTY_SEVENTH } from "./sixtySeventh";
 import { SMITHE } from "./smithe";
 import { SUNRISE } from "./sunrise";
@@ -97,6 +98,7 @@ export const SEGMENTS = [
   ...PANDORA,
   ...POWELL,
   ...RIDGEWAY,
+  ...SECOND_NARROWS_BRIDGE,
   ...SIXTY_SEVENTH,
   ...SMITHE,
   ...SUNRISE,

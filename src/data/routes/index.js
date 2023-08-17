@@ -351,6 +351,11 @@ export const ROUTES = {
     name: "Rupert",
     legs: [],
   },
+  secondNarrowsBridge: {
+    name: "Second Narrows Bridge",
+    shortName: "Second Narrows B.",
+    legs: [],
+  },
   smithe: {
     name: "Smithe",
     legs: [{ videos: { westbound: VIDEOS.cambieBridgeSmithNb } }],
