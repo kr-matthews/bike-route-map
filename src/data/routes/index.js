@@ -28,7 +28,7 @@ export const ROUTES = {
   },
   twentyNinth: {
     name: "29th",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   fortyFifth: {
     name: "45th",
@@ -40,11 +40,11 @@ export const ROUTES = {
   },
   adanac: {
     name: "Adanac",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   alberni: {
     name: "Alberni",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   alder: {
     name: "Alder",
@@ -56,11 +56,11 @@ export const ROUTES = {
   },
   arbutusGreenway: {
     name: "Arbutus Greenway",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   balaclava: {
     name: "Balaclava",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   bcParkway: {
     name: "BC Parkway",
@@ -73,15 +73,15 @@ export const ROUTES = {
   },
   beatty: {
     name: "Beatty",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   blanca: {
     name: "Blanca",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   burnaby: {
     name: "Burnaby",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   burrard: {
     name: "Burrard",
@@ -89,17 +89,11 @@ export const ROUTES = {
   },
   bute: {
     name: "Bute",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   cambie: {
     name: "Cambie",
-    legs: [
-      {
-        name: "Marine Drive Station Separated Path",
-        videos: { northbound: VIDEOS.cambieSeparatedNb },
-      },
-      { name: "On-Street", videos: {} },
-    ],
+    legs: [{ videos: {} }],
   },
   cambieBridge: {
     name: "Cambie Bridge",
@@ -134,7 +128,7 @@ export const ROUTES = {
   },
   cardero: {
     name: "Cardero",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   carrall: {
     name: "Carrall",
@@ -146,7 +140,7 @@ export const ROUTES = {
   },
   cassiar: {
     name: "Cassiar",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   cvg: {
     name: "Central Valley Greenway",
@@ -163,7 +157,7 @@ export const ROUTES = {
   },
   columbia: {
     name: "Columbia",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   comoxHelmcken: {
     name: "Comox Helmcken",
@@ -178,11 +172,11 @@ export const ROUTES = {
   },
   cypress: {
     name: "Cypress",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   dumfries: {
     name: "Dumfries",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   dunbar: {
     name: "Dunbar",
@@ -190,11 +184,11 @@ export const ROUTES = {
   },
   dunsmuir: {
     name: "Dunsmuir",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   francesUnion: {
     name: "Frances Union",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   gardenCity: {
     name: "Garden City",
@@ -209,7 +203,7 @@ export const ROUTES = {
   },
   gladstone: {
     name: "Gladstone",
-    legs: [],
+    legs: [{ videos: { northbound: VIDEOS.gladstoneNb } }],
   },
   haro: {
     name: "Haro",
@@ -217,7 +211,7 @@ export const ROUTES = {
   },
   heather: {
     name: "Heather",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   highbury: {
     name: "Highbury",
@@ -236,7 +230,7 @@ export const ROUTES = {
   },
   hornby: {
     name: "Hornby",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   inverness: {
     name: "Inverness",
@@ -244,27 +238,27 @@ export const ROUTES = {
   },
   keefer: {
     name: "Keefer",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   kent: {
     name: "Kent",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   kerr: {
     name: "Kerr",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   killarney: {
     name: "Killarney",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   kingEdward: {
     name: "King Edward",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   lakewood: {
     name: "Lakewood",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   lionsGate: {
     name: "Lions Gate Bridge",
@@ -309,7 +303,7 @@ export const ROUTES = {
   },
   nanaimo: {
     name: "Nanaimo",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   nelson: {
     name: "Nelson",
@@ -325,7 +319,7 @@ export const ROUTES = {
   },
   ontario: {
     name: "Ontario",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   pandora: {
     name: "Pandora",
@@ -333,7 +327,7 @@ export const ROUTES = {
   },
   portside: {
     name: "Portside",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   powell: {
     name: "Powell",
@@ -341,24 +335,24 @@ export const ROUTES = {
   },
   princeEdward: {
     name: "Prince Edward",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   richards: {
     name: "Richards",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   ridgeway: {
     name: "Ridgeway",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   rupert: {
     name: "Rupert",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   secondNarrowsBridge: {
     name: "Second Narrows Bridge",
     shortName: "Second Narrows B.",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   smithe: {
     name: "Smithe",
@@ -366,7 +360,7 @@ export const ROUTES = {
   },
   sunrise: {
     name: "Sunrise",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   valley: {
     name: "Valley",
@@ -374,15 +368,15 @@ export const ROUTES = {
   },
   walesDuchess: {
     name: "Wales Duchess",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   windermere: {
     name: "Windermere",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   windsor: {
     name: "Windsor",
-    legs: [],
+    legs: [{ videos: {} }],
   },
   york: {
     name: "York",
@@ -390,6 +384,6 @@ export const ROUTES = {
   },
   yukon: {
     name: "Yukon",
-    legs: [],
+    legs: [{ videos: {} }],
   },
 };

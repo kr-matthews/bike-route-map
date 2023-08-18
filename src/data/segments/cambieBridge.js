@@ -1,7 +1,7 @@
 import {
   ASH_2ND,
   ASH_7TH,
-  BEATTY_NELSON,
+  BEATTY_NELSON_SE,
   CAMBIE_1ST_N,
   CAMBIE_1ST_S,
   CAMBIE_2ND_N_E,
@@ -182,7 +182,7 @@ export const CAMBIE_BRIDGE = [
     videos: [VIDEOS.cambieBridgeNelsonSb],
     elevation: 1,
     positions: [
-      BEATTY_NELSON,
+      BEATTY_NELSON_SE,
       [49.27452, -123.1158],
       [49.27428, -123.11546],
       [49.27408, -123.11526],

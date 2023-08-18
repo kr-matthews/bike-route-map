@@ -1,5 +1,6 @@
 import {
-  BEATTY_NELSON,
+  BEATTY_NELSON_SE,
+  BEATTY_NELSON_SW,
   BURRARD_NELSON,
   BUTE_NELSON,
   HOMER_NELSON,
@@ -39,7 +40,8 @@ export const NELSON = [
       [49.27695, -123.11954],
       [49.27661, -123.11898],
       [49.27607, -123.11816],
-      BEATTY_NELSON,
+      BEATTY_NELSON_SW,
+      BEATTY_NELSON_SE,
     ],
   },
 ];

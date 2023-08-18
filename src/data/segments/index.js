@@ -5,6 +5,7 @@ import { ALEXANDER } from "./alexander";
 import { ARBUTUS_GREENWAY } from "./arbutusGreenway";
 import { BALACLAVA } from "./balaclava";
 import { BC_PARKWAY } from "./bcParkway";
+import { BEATTY } from "./beatty";
 import { BLANCA } from "./blanca";
 import { BURNABY } from "./burnaby";
 import { BURRARD } from "./burrard";
@@ -64,6 +65,7 @@ export const SEGMENTS = [
   ...ARBUTUS_GREENWAY,
   ...BALACLAVA,
   ...BC_PARKWAY,
+  ...BEATTY,
   ...BLANCA,
   ...BURNABY,
   ...BURRARD,

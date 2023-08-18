@@ -1,10 +1,12 @@
 import { GLADSTONE_38TH, GLADSTONE_BC_PARKWAY } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const GLADSTONE = [
   {
     routes: [ROUTES.gladstone.name],
     description: "primary",
+    videos: [VIDEOS.gladstoneNb],
     positions: [
       GLADSTONE_38TH,
       [49.23747, -123.06208],

@@ -14,6 +14,8 @@ import { VIDEOS } from "../videos";
 
 const NANAIMO_BC_PARKWAY_SPLIT_EAST = [49.24877, -123.05681];
 const NANAIMO_BC_PARKWAY_SPLIT_WEST = [49.24953, -123.05897];
+const PENTICTON_BC_PARKWAY = [49.24655, -123.05204];
+const PENTICTON_29TH = [49.24463, -123.05206];
 const BC_PARKWAY_29TH_STATION = [49.24432, -123.04668];
 const JOYCE_BC_PARKWAY_SPLIT_EAST = [49.23733, -123.02949];
 const JOYCE_BC_PARKWAY_SPLIT_WEST = [49.23789, -123.03033];
@@ -39,18 +41,20 @@ export const BC_PARKWAY = [
     routes: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
     legs: ["Vancouver"],
     description: "29th alt road",
+    oneWay: "recommended",
     type: "uncomfortable",
-    positions: [SLOCAN_29TH, [49.24463, -123.04702]],
+    positions: [[49.24463, -123.04702], SLOCAN_29TH],
   },
   {
     routes: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
     legs: ["Vancouver"],
     description: "29th alt path",
+    oneWay: "recommended",
     positions: [
-      [49.24463, -123.04702],
-      [49.2445, -123.04699],
-      [49.24437, -123.04673],
       BC_PARKWAY_29TH_STATION,
+      [49.24437, -123.04673],
+      [49.2445, -123.04699],
+      [49.24463, -123.04702],
     ],
   },
   {
@@ -62,6 +66,21 @@ export const BC_PARKWAY = [
       [49.23774, -123.03046],
       JOYCE_BC_PARKWAY_SPLIT_EAST,
     ],
+  },
+  {
+    routes: [ROUTES.bcParkway.name],
+    legs: ["Vancouver"],
+    description: "29th alt. wb to penticton",
+    type: "uncomfortable",
+    oneWay: "recommended",
+    positions: [SLOCAN_29TH, PENTICTON_29TH],
+  },
+  {
+    routes: [ROUTES.bcParkway.name],
+    legs: ["Vancouver"],
+    description: "penticton alt. wb",
+    oneWay: "recommended",
+    positions: [PENTICTON_29TH, PENTICTON_BC_PARKWAY],
   },
   // vancouver
   {
@@ -106,6 +125,7 @@ export const BC_PARKWAY = [
       [49.24837, -123.05649],
       [49.24808, -123.05583],
       [49.24806, -123.05564],
+      PENTICTON_BC_PARKWAY,
       SLOCAN_BC_PARKWAY,
     ],
   },
@@ -120,12 +140,21 @@ export const BC_PARKWAY = [
   {
     routes: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
     legs: ["Vancouver"],
-    description: "sunrise",
+    description: "29th path",
     videos: [VIDEOS.bcParkwayVancouverEb],
     positions: [
       SLOCAN_29TH,
       [49.24452, -123.04957],
       [49.24452, -123.04718],
+      BC_PARKWAY_29TH_STATION,
+    ],
+  },
+  {
+    routes: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
+    legs: ["Vancouver"],
+    description: "sunrise",
+    videos: [VIDEOS.bcParkwayVancouverEb],
+    positions: [
       BC_PARKWAY_29TH_STATION,
       [49.24415, -123.0463],
       [49.24401, -123.04609],
