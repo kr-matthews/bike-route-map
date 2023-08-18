@@ -49,6 +49,16 @@ export const RIDGEWAY = [
     ],
   },
   {
+    routes: [ROUTES.ridgeway.name, ROUTES.balaclava.name],
+    description: "ridgeway main",
+    positions: [
+      QUESNEL_20TH,
+      [49.25435, -123.17671],
+      [49.25337, -123.17599],
+      BALACLAVA_QUESNEL,
+    ],
+  },
+  {
     routes: [ROUTES.ridgeway.name],
     description: "extra bit",
     positions: [

@@ -51,6 +51,17 @@ export const HEATHER = [
   },
   // 41st
   {
+    description: "41st wb",
+    oneWay: "required",
+    positions: [
+      [49.2262, -123.11726],
+      [49.2263, -123.12042],
+      [49.22642, -123.12361],
+      [49.22654, -123.12669],
+      [49.22659, -123.12771],
+    ],
+  },
+  {
     description: "41st eb 1",
     oneWay: "required",
     positions: [
@@ -80,17 +91,6 @@ export const HEATHER = [
       [49.22617, -123.11896],
       [49.22613, -123.11807],
       CAMBIE_49TH_SW,
-    ],
-  },
-  {
-    description: "41st wb",
-    oneWay: "required",
-    positions: [
-      [49.2262, -123.11726],
-      [49.2263, -123.12042],
-      [49.22642, -123.12361],
-      [49.22654, -123.12669],
-      [49.22659, -123.12771],
     ],
   },
   // rest
