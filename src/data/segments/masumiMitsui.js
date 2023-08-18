@@ -15,6 +15,9 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const ELLIOTT_57TH = [49.21799, -123.05422];
+const ELLIOTT_ASHBURN = [49.21855, -123.05467];
+
 export const MASUMI_MITSUI_GREENWAY = [
   {
     routes: [ROUTES.masumiMitsui.name],
@@ -101,7 +104,7 @@ export const MASUMI_MITSUI_GREENWAY = [
   {
     routes: [ROUTES.masumiMitsui.name],
     description: "eastbound branch",
-    directions: ["eastbound"],
+    oneWay: "recommended",
     videos: [VIDEOS.masumiMitsuiEb],
     positions: [
       ASHBURN_UPLAND,
@@ -116,14 +119,22 @@ export const MASUMI_MITSUI_GREENWAY = [
   },
   {
     routes: [ROUTES.masumiMitsui.name],
-    description: "westbound branch",
-    directions: ["westbound"],
-    videos: [],
+    description: "westbound branch 57th",
+    oneWay: "recommended",
+    positions: [VIVIAN_57TH, [49.21806, -123.05126], ELLIOTT_57TH],
+  },
+  {
+    routes: [ROUTES.masumiMitsui.name],
+    description: "westbound branch elliott path",
+    oneWay: "required",
+    positions: [ELLIOTT_57TH, [49.21841, -123.05461], ELLIOTT_ASHBURN],
+  },
+  {
+    routes: [ROUTES.masumiMitsui.name],
+    description: "westbound branch ashburn",
+    oneWay: "recommended",
     positions: [
-      VIVIAN_57TH,
-      [49.21806, -123.05126],
-      [49.21799, -123.05422],
-      [49.21851, -123.05471],
+      ELLIOTT_ASHBURN,
       [49.21839, -123.055],
       [49.21815, -123.05518],
       [49.21793, -123.05541],

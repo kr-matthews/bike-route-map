@@ -95,8 +95,7 @@ export const CVG = [
     routes: [ROUTES.cvg.name],
     legs: ["Vancouver"],
     description: "1st eb",
-    directions: ["eastbound"],
-    videos: [],
+    oneWay: "required",
     positions: [
       ONTARIO_1ST_SE,
       QUEBEC_1ST_SW,
@@ -109,8 +108,7 @@ export const CVG = [
     routes: [ROUTES.cvg.name],
     legs: ["Vancouver"],
     description: "1st wb",
-    directions: ["westbound"],
-    videos: [],
+    oneWay: "required",
     positions: [
       MAIN_1ST_E,
       MAIN_1ST_NW,
@@ -123,7 +121,6 @@ export const CVG = [
     routes: [ROUTES.cvg.name],
     legs: ["Vancouver"],
     description: "1st to commercial",
-    videos: [],
     positions: [
       MAIN_1ST_E,
       [49.26921, -123.09887],
@@ -174,8 +171,7 @@ export const CVG = [
     routes: [ROUTES.cvg.name],
     legs: ["Vancouver"],
     description: "broadway eastbound",
-    directions: ["eastbound"],
-    videos: [],
+    oneWay: "required",
     positions: [
       COMMERCIAL_GRANDVIEW,
       [49.26345, -123.0691],
@@ -192,8 +188,7 @@ export const CVG = [
     routes: [ROUTES.cvg.name],
     legs: ["Vancouver"],
     description: "broadway westbound",
-    directions: ["westbound"],
-    videos: [],
+    oneWay: "required",
     positions: [
       VICTORIA_BROADWAY,
       [49.26236, -123.06579],

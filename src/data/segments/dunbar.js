@@ -76,17 +76,17 @@ export const DUNBAR = [
   },
   {
     description: "16th eastbound connection",
-    directions: ["eastbound"],
+    oneWay: "required",
     positions: [[49.25785, -123.18594], DUNBAR_16TH_S, [49.25783, -123.18408]],
   },
   {
     description: "16th westbound connection east",
-    directions: ["westbound"],
+    oneWay: "required",
     positions: [[49.258, -123.18408], DUNBAR_16TH_N],
   },
   {
     description: "16th westbound connection west",
-    directions: ["westbound"],
+    oneWay: "required",
     videos: [VIDEOS.dunbarNb],
     positions: [DUNBAR_16TH_N, [49.25802, -123.18605]],
   },

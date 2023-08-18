@@ -15,7 +15,7 @@ import {
 } from "./params";
 
 export function createPathOptions(
-  { routes, directions, videos, type, hideUnlessVideo, elevation },
+  { routes, oneWay, videos, type, hideUnlessVideo, elevation },
   { highlighted, selectedRoute, video }
 ) {
   const isSelected = (routes ?? []).includes(selectedRoute?.name);
@@ -32,9 +32,9 @@ export function createPathOptions(
     : BIDIRECTIONAL_COLOUR_LIGHT;
 
   const nonVideoColour =
-    directions?.length === 1 ? unidirectionalColour : bidirectionalColour;
+    oneWay === "required" ? unidirectionalColour : bidirectionalColour;
   const videoColour =
-    directions?.length === 1
+    oneWay === "required"
       ? VIDEO_UNIDIRECTIONAL_COLOUR
       : VIDEO_BIDIRECTIONAL_COLOUR;
 

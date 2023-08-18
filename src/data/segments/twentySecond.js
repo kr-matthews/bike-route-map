@@ -13,7 +13,7 @@ export const TWENTY_SECOND = [
   {
     routes: [ROUTES.twentySecond.name],
     description: "with lane eb",
-    directions: ["eastbound"],
+    oneWay: "required",
     positions: [
       [49.25059, -123.05649],
       [49.25061, -123.05223],
@@ -25,7 +25,7 @@ export const TWENTY_SECOND = [
   {
     routes: [ROUTES.twentySecond.name],
     description: "with lane wb",
-    directions: ["westbound"],
+    oneWay: "required",
     videos: [VIDEOS.twentySecondEb],
     positions: [
       RENFREW_22ND_E,

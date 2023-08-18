@@ -64,7 +64,7 @@ export const CANADA_LINE = [
   },
   {
     description: "road: van horne",
-    directions: ["southbound"],
+    oneWay: "required",
     videos: [VIDEOS.northArmBridgeSb],
     positions: [
       VAN_HORNE_RIVER_N,

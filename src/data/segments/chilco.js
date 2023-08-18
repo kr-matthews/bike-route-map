@@ -29,7 +29,7 @@ export const CHILCO = [
   {
     routes: [ROUTES.chilco.name],
     description: "connection from georgia",
-    directions: ["southbound"],
+    oneWay: "required",
     videos: [VIDEOS.chilcoSb],
     positions: [CHILCO_GEORGIA_S, CHILCO_ALBERNI_E],
   },

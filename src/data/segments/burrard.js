@@ -45,7 +45,7 @@ export const BURRARD = [
   {
     routes: [ROUTES.burrard.name],
     description: "6th to 4th nb",
-    directions: ["northbound"],
+    oneWay: "required",
     type: "unofficial",
     hideUnlessVideo: true,
     videos: [VIDEOS.burrardNb],
@@ -58,7 +58,7 @@ export const BURRARD = [
   {
     routes: [ROUTES.burrard.name],
     description: "northbound pre-bridge",
-    directions: ["northbound"],
+    oneWay: "required",
     elevation: 0.5,
     videos: [VIDEOS.burrardNb],
     positions: [
@@ -80,7 +80,7 @@ export const BURRARD = [
   {
     routes: [ROUTES.burrard.name],
     description: "northbound bridge",
-    directions: ["northbound"],
+    oneWay: "required",
     elevation: 1,
     videos: [VIDEOS.burrardNb],
     positions: [
@@ -96,7 +96,7 @@ export const BURRARD = [
   {
     routes: [ROUTES.burrard.name],
     description: "northbound post-bridge",
-    directions: ["northbound"],
+    oneWay: "required",
     elevation: 0.5,
     videos: [VIDEOS.burrardNb],
     positions: [
@@ -111,18 +111,18 @@ export const BURRARD = [
   {
     routes: [ROUTES.burrard.name],
     description: "northbound end",
-    directions: ["northbound"],
+    oneWay: "required",
     positions: [BURRARD_BURNABY_E, NORTHBOUND_ENDPOINT],
   },
   // north end
   {
     description: "from pacific eb",
-    directions: ["eastbound"],
+    oneWay: "required",
     positions: [BURRARD_PACIFIC_SW, BURRARD_SOUTHBOUND_MERGE],
   },
   {
     description: "to pacific eb",
-    directions: ["eastbound"],
+    oneWay: "required",
     positions: [BURRARD_NORTHBOUND_SPLIT, BURRARD_PACIFIC_SE_E],
   },
   {
@@ -138,7 +138,7 @@ export const BURRARD = [
   {
     routes: [ROUTES.burrard.name],
     description: "southbound pre-bridge",
-    directions: ["southbound"],
+    oneWay: "required",
     elevation: 0.5,
     positions: [
       BURRARD_HASTINGS,
@@ -166,7 +166,7 @@ export const BURRARD = [
   {
     routes: [ROUTES.burrard.name],
     description: "southbound bridge",
-    directions: ["southbound"],
+    oneWay: "required",
     elevation: 1,
     positions: [
       SOUTHBOUND_ELEVATED_START,
@@ -181,7 +181,7 @@ export const BURRARD = [
   {
     routes: [ROUTES.burrard.name],
     description: "southbound post-bridge",
-    directions: ["southbound"],
+    oneWay: "required",
     elevation: 0.5,
     positions: [
       SOUTHBOUND_ELEVATED_END,
@@ -204,7 +204,7 @@ export const BURRARD = [
   {
     routes: [ROUTES.burrard.name],
     description: "kits",
-    directions: ["southbound"],
+    oneWay: "required",
     positions: [
       BURRARD_YORK,
       [49.27162, -123.14561],
@@ -220,7 +220,7 @@ export const BURRARD = [
   {
     routes: [ROUTES.burrard.name],
     description: "southbound end",
-    directions: ["southbound"],
+    oneWay: "required",
     positions: [BURRARD_7TH, SOUTHBOUND_ENDPOINT],
   },
   // south end
@@ -235,7 +235,7 @@ export const BURRARD = [
   },
   {
     description: "cypress to burrard connection",
-    directions: ["eastbound"],
+    oneWay: "required",
     positions: [
       CYPRESS_CORNWALL_S,
       [49.27235, -123.14635],
@@ -259,7 +259,7 @@ export const BURRARD = [
   },
   {
     description: "chestnut to cypress connection",
-    directions: ["westbound"],
+    oneWay: "required",
     positions: [
       CHESTNUT_CORNWALL,
       [49.27256, -123.14656],

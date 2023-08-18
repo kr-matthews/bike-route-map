@@ -10,8 +10,8 @@ import { VIDEOS } from "../videos";
 
 export const NELSON = [
   {
-    directions: ["southbound"],
     description: "unofficial part",
+    oneWay: "required",
     type: "unofficial",
     videos: [VIDEOS.cambieBridgeNelsonSb],
     hideUnlessVideo: true,
@@ -29,7 +29,7 @@ export const NELSON = [
   },
   {
     routes: [ROUTES.nelson.name],
-    directions: ["eastbound"],
+    oneWay: "required",
     description: "official part",
     elevation: 0.5,
     videos: [VIDEOS.cambieBridgeNelsonSb],

@@ -39,8 +39,8 @@ export const SMITHE = [
   },
   {
     routes: [ROUTES.smithe.name],
-    directions: ["westbound"],
     description: "uni-directional",
+    oneWay: "required",
     videos: [VIDEOS.cambieBridgeSmithNb],
     positions: [
       BEATTY_SMITHE_N,

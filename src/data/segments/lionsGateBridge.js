@@ -25,8 +25,8 @@ const SOUTHBOUND_ON_RAMP_MERGE = [49.32494, -123.13028];
 
 export const LIONS_GATE_BRIDGE = [
   {
-    directions: ["westbound"],
     description: "melville",
+    oneWay: "required",
     videos: [VIDEOS.lionsGateBridgeNb],
     positions: [
       HORNBY_DUNSMUIR,
@@ -47,8 +47,8 @@ export const LIONS_GATE_BRIDGE = [
     ],
   },
   {
-    directions: ["westbound"],
     description: "pender",
+    oneWay: "required",
     type: "uncomfortable",
     videos: [VIDEOS.lionsGateBridgeNb],
     positions: [
@@ -60,8 +60,8 @@ export const LIONS_GATE_BRIDGE = [
     ],
   },
   {
-    directions: ["westbound"],
     description: "georgia westbound",
+    oneWay: "required",
     videos: [VIDEOS.lionsGateBridgeNb],
     positions: [
       CARDERO_GEORGIA_N,
@@ -74,8 +74,8 @@ export const LIONS_GATE_BRIDGE = [
   },
   {
     routes: [ROUTES.lionsGate.name],
-    directions: ["northbound"],
     description: "northbound causeway",
+    oneWay: "required",
     elevation: 0.5,
     videos: [VIDEOS.lionsGateBridgeNb],
     positions: [
@@ -123,8 +123,8 @@ export const LIONS_GATE_BRIDGE = [
   },
   {
     routes: [ROUTES.lionsGate.name],
-    directions: ["northbound"],
     description: "northbound bridge",
+    oneWay: "required",
     elevation: 1,
     videos: [VIDEOS.lionsGateBridgeNb],
     positions: [
@@ -141,8 +141,8 @@ export const LIONS_GATE_BRIDGE = [
   },
   {
     routes: [ROUTES.lionsGate.name],
-    directions: ["northbound"],
     description: "northbound post-bridge",
+    oneWay: "required",
     elevation: 0.5,
     videos: [VIDEOS.lionsGateBridgeNb],
     positions: [
@@ -156,16 +156,16 @@ export const LIONS_GATE_BRIDGE = [
   },
   {
     routes: [ROUTES.lionsGate.name],
-    directions: ["southbound"],
     description: "southbound pre-bridge",
+    oneWay: "required",
     elevation: 0.5,
     videos: [VIDEOS.lionsGateBridgeSb],
     positions: [SOUTHBOUND_ON_RAMP_MERGE, SOUTHBOUND_ELEVATED_START],
   },
   {
     routes: [ROUTES.lionsGate.name],
-    directions: ["southbound"],
     description: "southbound bridge",
+    oneWay: "required",
     elevation: 1,
     videos: [VIDEOS.lionsGateBridgeSb],
     positions: [
@@ -179,8 +179,8 @@ export const LIONS_GATE_BRIDGE = [
   },
   {
     routes: [ROUTES.lionsGate.name],
-    directions: ["southbound"],
     description: "southbound causeway",
+    oneWay: "required",
     elevation: 0.5,
     videos: [VIDEOS.lionsGateBridgeSb],
     positions: [
@@ -219,8 +219,8 @@ export const LIONS_GATE_BRIDGE = [
     ],
   },
   {
-    directions: ["eastbound"],
     description: "georgia eastbound",
+    oneWay: "required",
     videos: [VIDEOS.lionsGateBridgeSb],
     positions: [
       CHILCO_GEORGIA_S,
@@ -232,8 +232,8 @@ export const LIONS_GATE_BRIDGE = [
     ],
   },
   {
-    directions: ["eastbound"],
     description: "connection to marine eastbound",
+    oneWay: "required",
     positions: [
       NORTHBOUND_OFF_RAMP_SPLIT,
       [49.32559, -123.12836],
@@ -295,7 +295,7 @@ export const LIONS_GATE_BRIDGE = [
   },
   {
     description: "connection from marine westbound",
-    directions: ["westbound"],
+    oneWay: "required",
     positions: [
       [49.32547, -123.12615],
       [49.32557, -123.1264],

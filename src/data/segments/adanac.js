@@ -24,13 +24,13 @@ import { ROUTES } from "../routes";
 export const ADANAC = [
   {
     description: "dunsmuir off-ramp eb",
-    directions: ["eastbound"],
+    oneWay: "required",
     elevation: 0.5,
     positions: [MAIN_DUNSMUIR, MAIN_UNION_SE],
   },
   {
     description: "dunsmuir on-ramp wb",
-    directions: ["westbound"],
+    oneWay: "required",
     elevation: 0.5,
     positions: [MAIN_UNION_N, MAIN_DUNSMUIR],
   },
@@ -42,7 +42,7 @@ export const ADANAC = [
   {
     routes: [ROUTES.adanac.name],
     description: "downtown eastbound",
-    directions: ["eastbound"],
+    oneWay: "required",
     positions: [
       EXPO_UNION,
       [49.27757, -123.10316],
@@ -60,7 +60,8 @@ export const ADANAC = [
   {
     routes: [ROUTES.adanac.name],
     description: "downtown westbound",
-    directions: ["westbound"],
+    oneWay: "required",
+
     positions: [
       DUNLEVY_UNION,
       [49.27763, -123.09563],

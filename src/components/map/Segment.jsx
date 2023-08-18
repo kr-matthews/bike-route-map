@@ -12,7 +12,7 @@ import MyPolyline from "./MyPolyline";
 // !! indicate by default whether route/segment has video (and/or quality of route, whether official or not (dashed line?), etc.)
 
 export default function Segment(segment) {
-  const { routes, directions, positions, elevation } = segment;
+  const { routes, oneWay, hideArrows, positions, elevation } = segment;
   const { selectedRoute, setSelected, highlighted, setHighlighted, video } =
     useContext(Selections);
 
@@ -51,13 +51,12 @@ export default function Segment(segment) {
   const tooltipProps = { sticky: true, opacity: 0.7 };
   const tooltipContent = routes?.join("; ");
 
-  // FIXME: arrows won't be removed when video is unselected
-  const showDirection = directions?.length === 1; // || videos?.includes(video);
-
   // FIXME: tool tip not showing on decorator arrows hover
   return (
     <MyPolyline
-      isDirected={showDirection}
+      showArrows={
+        !hideArrows && (oneWay === "required" || oneWay === "recommended")
+      }
       polylineProps={polylineProps}
       borderProps={hasBorder ? borderProps : undefined}
     >

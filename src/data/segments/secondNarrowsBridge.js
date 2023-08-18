@@ -49,6 +49,7 @@ export const SECOND_NARROWS_BRIDGE = [
   {
     routes: [ROUTES.secondNarrowsBridge.name],
     description: "cassiar to bridge",
+    oneWay: "recommended",
     elevation: 0.5,
     positions: [
       CASSIAR_SKEENA_PATH,
@@ -64,7 +65,7 @@ export const SECOND_NARROWS_BRIDGE = [
   {
     routes: [ROUTES.secondNarrowsBridge.name],
     description: "bridge nb",
-    directions: ["northbound"],
+    oneWay: "required",
     elevation: 1,
     positions: [
       NORTHBOUND_ELEVATION_START,
@@ -86,7 +87,7 @@ export const SECOND_NARROWS_BRIDGE = [
   {
     routes: [ROUTES.secondNarrowsBridge.name],
     description: "nb off ramp",
-    directions: ["northbound"],
+    oneWay: "required",
     elevation: 0.5,
     positions: [
       NORTHBOUND_ELEVATION_END,
@@ -104,7 +105,7 @@ export const SECOND_NARROWS_BRIDGE = [
   {
     routes: [ROUTES.secondNarrowsBridge.name],
     description: "sb on-ramp",
-    directions: ["southbound"],
+    oneWay: "required",
     elevation: 0.5,
     positions: [
       [49.30453, -123.02987],
@@ -120,7 +121,7 @@ export const SECOND_NARROWS_BRIDGE = [
   {
     routes: [ROUTES.secondNarrowsBridge.name],
     description: "sb bridge",
-    directions: ["southbound"],
+    oneWay: "required",
     elevation: 1,
     positions: [
       SOUTHBOUND_ELEVATION_START,
@@ -141,7 +142,7 @@ export const SECOND_NARROWS_BRIDGE = [
   {
     routes: [ROUTES.secondNarrowsBridge.name],
     description: "sb post-bridge",
-    directions: ["southbound"],
+    oneWay: "required",
     elevation: 0.5,
     positions: [
       SOUTHBOUND_ELEVATION_END,

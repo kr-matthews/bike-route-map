@@ -1,10 +1,10 @@
-import { BOUNDARY_ADANAC, CLIFF_UNION } from "../intersections";
+import { BARNET_RIDGE, BOUNDARY_ADANAC, CLIFF_UNION } from "../intersections";
 import { ROUTES } from "../routes";
 
-// !! unclear which portions are one-way
-// !!! generalize concept of one-way to: no, optional, mandatory
+const BARNET_INLET = [49.28822, -122.94958];
 
-const OVERPASS_ADJ_N = [49.28095, -122.96044];
+const INLET_BAYVIEW_W = [49.28676, -122.95342];
+const CLIFF_WESTRIDGE_PARK = [49.28122, -122.95928];
 const HASTINGS_OVERPASS_N = [49.28086, -122.96047];
 const HASTINGS_OVERPASS_S = [49.27997, -122.96001];
 const OVERPASS_ADJ_S = [49.28002, -122.96012];
@@ -57,11 +57,27 @@ export const FRANCES_UNION = [
       [49.28038, -122.95339],
       [49.2824, -122.95338],
       [49.28296, -122.95337],
-      [49.2833, -122.95354],
+      BARNET_RIDGE,
+    ],
+  },
+  {
+    routes: [ROUTES.francesUnion.name],
+    description: "eb to highway",
+    oneWay: "recommended",
+    positions: [
+      BARNET_RIDGE,
       [49.28524, -122.95271],
       [49.28631, -122.95222],
       [49.28684, -122.95162],
-      [49.28822, -122.94958],
+      BARNET_INLET,
+    ],
+  },
+  {
+    routes: [ROUTES.francesUnion.name],
+    description: "eb ramp",
+    oneWay: "required",
+    positions: [
+      BARNET_INLET,
       [49.28826, -122.94963],
       [49.28826, -122.9497],
       [49.28825, -122.94976],
@@ -73,10 +89,15 @@ export const FRANCES_UNION = [
   },
   {
     routes: [ROUTES.francesUnion.name],
+    description: "crossing inlet at bayview",
+    positions: [[49.28666, -122.9532], INLET_BAYVIEW_W],
+  },
+  {
+    routes: [ROUTES.francesUnion.name],
     description: "wb to overpass",
+    oneWay: "recommended",
     positions: [
-      [49.28666, -122.9532],
-      [49.28676, -122.95342],
+      INLET_BAYVIEW_W,
       [49.28671, -122.95361],
       [49.28675, -122.95384],
       [49.28681, -122.95395],
@@ -97,19 +118,22 @@ export const FRANCES_UNION = [
       [49.28235, -122.95901],
       [49.28175, -122.95901],
       [49.28135, -122.95921],
-      [49.28122, -122.9593],
-      [49.28105, -122.95942],
-      [49.28096, -122.95967],
-      [49.28097, -122.96016],
-      [49.281, -122.96032],
-      OVERPASS_ADJ_N,
+      CLIFF_WESTRIDGE_PARK,
     ],
   },
   {
     routes: [ROUTES.francesUnion.name],
     description: "wb pre-overpass",
     elevation: 0.5,
-    positions: [OVERPASS_ADJ_N, HASTINGS_OVERPASS_N],
+    positions: [
+      CLIFF_WESTRIDGE_PARK,
+      [49.28105, -122.95942],
+      [49.28096, -122.95967],
+      [49.28097, -122.96016],
+      [49.281, -122.96032],
+      [49.28095, -122.96044],
+      HASTINGS_OVERPASS_N,
+    ],
   },
   {
     routes: [ROUTES.francesUnion.name],

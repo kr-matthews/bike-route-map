@@ -3,14 +3,14 @@ import { Polyline } from "react-leaflet";
 import useDirectionalArrows from "../../hooks/useDirectionalArrows";
 
 export default function MyPolyline({
-  isDirected,
+  showArrows,
   polylineProps,
   borderProps,
   children,
 }) {
   const polylineRef = useRef();
   useDirectionalArrows(
-    isDirected,
+    showArrows,
     polylineRef,
     polylineProps.pathOptions,
     polylineProps.eventHandlers

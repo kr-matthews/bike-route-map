@@ -43,7 +43,7 @@ export const CAMBIE_BRIDGE = [
   {
     routes: [ROUTES.cambieBridge.name],
     description: "northbound pre-bridge",
-    directions: ["northbound"],
+    oneWay: "required",
     elevation: 0.5,
     videos: [VIDEOS.cambieBridgeSmithNb],
     positions: [
@@ -55,7 +55,7 @@ export const CAMBIE_BRIDGE = [
   {
     routes: [ROUTES.cambieBridge.name],
     description: "northbound bridge 1",
-    directions: ["northbound"],
+    oneWay: "required",
     videos: [VIDEOS.cambieBridgeSmithNb],
     elevation: 1,
     positions: [
@@ -73,7 +73,7 @@ export const CAMBIE_BRIDGE = [
   {
     routes: [ROUTES.cambieBridge.name],
     description: "northbound bridge 2",
-    directions: ["northbound"],
+    oneWay: "required",
     videos: [VIDEOS.cambieBridgeSmithNb],
     elevation: 1.5,
     positions: [SPIRAL_PRE_SPLIT_1, SPIRAL_PRE_SPLIT_2],
@@ -81,7 +81,8 @@ export const CAMBIE_BRIDGE = [
   {
     routes: [ROUTES.cambieBridge.name],
     description: "northbound bridge spiral 1",
-    directions: ["northbound"],
+    oneWay: "required",
+    hideArrows: true,
     videos: [VIDEOS.cambieBridgeSmithNb],
     elevation: 2,
     positions: [
@@ -98,7 +99,8 @@ export const CAMBIE_BRIDGE = [
   {
     routes: [ROUTES.cambieBridge.name],
     description: "northbound bridge spiral 2",
-    directions: ["northbound"],
+    oneWay: "required",
+    hideArrows: "true",
     videos: [VIDEOS.cambieBridgeSmithNb],
     elevation: 1.5,
     positions: [SPIRAL_PRE_SPLIT_3, [49.27393, -123.11425], SPIRAL_PRE_SPLIT_4],
@@ -106,7 +108,7 @@ export const CAMBIE_BRIDGE = [
   {
     routes: [ROUTES.cambieBridge.name],
     description: "northbound bridge post-spiral",
-    directions: ["northbound"],
+    oneWay: "required",
     videos: [VIDEOS.cambieBridgeSmithNb],
     elevation: 1,
     positions: [
@@ -122,7 +124,7 @@ export const CAMBIE_BRIDGE = [
   {
     routes: [ROUTES.cambieBridge.name],
     description: "northbound post-bridge",
-    directions: ["northbound"],
+    oneWay: "required",
     elevation: 0.5,
     videos: [VIDEOS.cambieBridgeSmithNb],
     positions: [
@@ -176,7 +178,7 @@ export const CAMBIE_BRIDGE = [
   {
     routes: [ROUTES.cambieBridge.name],
     description: "southbound side",
-    directions: ["southbound"],
+    oneWay: "required",
     videos: [VIDEOS.cambieBridgeNelsonSb],
     elevation: 1,
     positions: [
@@ -311,7 +313,7 @@ export const CAMBIE_BRIDGE = [
   // if you want to be pedantic about the parking lot loop, but it makes the map too confusing
   // {
   //   description: "spyglass loop nb",
-  //   directions: ["northbound"],
+  //   oneway: "required",
   //   positions: [
   //     SPYGLASS_LOOP_S,
   //     [49.27058, -123.11498],
@@ -322,12 +324,12 @@ export const CAMBIE_BRIDGE = [
   // },
   // {
   //   description: "spyglass loop sb",
-  //   directions: ["southbound"],
+  //   oneWay: "required",
   //   positions: [SPYGLASS_SEAWALL, SPYGLASS_LOOP_S],
   // },
   {
     description: "connection 1st to spyglass",
-    directions: ["northbound"],
+    oneWay: "required",
     positions: [CAMBIE_1ST_N, [49.2682, -123.11514], SPYGLASS_1ST],
   },
   {

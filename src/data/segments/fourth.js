@@ -29,7 +29,7 @@ export const FOURTH = [
     description: "chancellor blvd eastbound",
     type: "uncomfortable",
     videos: [VIDEOS.fourthEb],
-    directions: ["eastbound"],
+    oneWay: "required",
     positions: [
       CHANCELLOR_4TH_S,
       [49.26874, -123.22495],
@@ -44,7 +44,7 @@ export const FOURTH = [
     routes: [ROUTES.fourth.name],
     description: "chancellor blvd westbound",
     type: "uncomfortable",
-    directions: ["westbound"],
+    oneWay: "required",
     positions: [
       DRUMMOND_4TH,
       [49.26902, -123.21963],
@@ -79,7 +79,7 @@ export const FOURTH = [
     routes: [ROUTES.fourth.name],
     description: "eastbound portion",
     videos: [VIDEOS.fourthEb],
-    directions: ["eastbound"],
+    oneWay: "required",
     positions: [
       MARINE_4TH_W,
       MARINE_4TH_S,
@@ -95,7 +95,7 @@ export const FOURTH = [
     routes: [ROUTES.fourth.name],
     description: "westbound portion",
     type: "uncomfortable",
-    directions: ["westbound"],
+    oneWay: "required",
     positions: [
       HIGHBURY_4TH_N,
       [49.26871, -123.18874],

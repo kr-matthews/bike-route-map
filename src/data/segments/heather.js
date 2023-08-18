@@ -41,18 +41,18 @@ export const HEATHER = [
   },
   {
     description: "33rd eb",
-    directions: ["eastbound"],
+    oneWay: "required",
     positions: [WILLOW_33RD_SW, [49.24122, -123.1236], HEATHER_33RD_S],
   },
   {
     description: "33rd wb",
-    directions: ["westbound"],
+    oneWay: "required",
     positions: [HEATHER_33RD_N, [49.24132, -123.12364], WILLOW_33RD_SW],
   },
   // 41st
   {
     description: "41st eb 1",
-    directions: ["eastbound"],
+    oneWay: "required",
     positions: [
       [49.22649, -123.12773],
       [49.22645, -123.12675],
@@ -63,18 +63,18 @@ export const HEATHER = [
   {
     routes: [ROUTES.heather.name],
     description: "41st eb 2",
-    directions: ["eastbound"],
+    oneWay: "required",
     positions: [HEATHER_49TH_S, TISDALL_49TH_SW],
   },
   {
     routes: [ROUTES.heather.name],
     description: "41st eb 3",
-    directions: ["eastbound"],
+    oneWay: "required",
     positions: [TISDALL_49TH_SW, TISDALL_49TH_SE],
   },
   {
     description: "41st eb 4",
-    directions: ["eastbound"],
+    oneWay: "required",
     positions: [
       TISDALL_49TH_SE,
       [49.22617, -123.11896],
@@ -84,7 +84,7 @@ export const HEATHER = [
   },
   {
     description: "41st wb",
-    directions: ["westbound"],
+    oneWay: "required",
     positions: [
       [49.2262, -123.11726],
       [49.2263, -123.12042],
@@ -121,7 +121,7 @@ export const HEATHER = [
   {
     routes: [ROUTES.heather.name],
     description: "nb to 49th",
-    directions: ["northbound"],
+    oneWay: "recommended",
     positions: [
       HEATHER_52ND,
       [49.22386, -123.12368],
@@ -132,7 +132,7 @@ export const HEATHER = [
   {
     routes: [ROUTES.heather.name],
     description: "sb from 49th",
-    directions: ["southbound"],
+    oneWay: "recommended",
     positions: [
       TISDALL_49TH_SE,
       [49.22537, -123.12091],

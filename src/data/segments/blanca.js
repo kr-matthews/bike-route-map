@@ -20,7 +20,7 @@ export const BLANCA = [
     routes: [ROUTES.blanca.name],
     description: "northbound",
     type: "uncomfortable",
-    directions: ["northbound"],
+    oneWay: "required",
     positions: [
       BLANCA_16TH_SE,
       BLANCA_16TH_NE,
@@ -36,13 +36,13 @@ export const BLANCA = [
     routes: [ROUTES.blanca.name],
     description: "4th to 6th",
     type: "uncomfortable",
-    directions: ["southbound"],
+    oneWay: "required",
     positions: [BLANCA_4TH_W, BLANCA_6TH],
   },
   {
     routes: [ROUTES.blanca.name],
     description: "southbound with lane",
-    directions: ["southbound"],
+    oneWay: "required",
     positions: [
       BLANCA_6TH,
       BLANCA_8TH_NW,
@@ -58,7 +58,7 @@ export const BLANCA = [
     routes: [ROUTES.blanca.name],
     description: "southbound no lane",
     type: "uncomfortable",
-    directions: ["southbound"],
+    oneWay: "required",
     positions: [BLANCA_15TH, [49.2588, -123.21569], BLANCA_16TH_TRAIL],
   },
 ];
