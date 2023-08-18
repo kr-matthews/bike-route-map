@@ -1,6 +1,7 @@
 import { useContext, useEffect } from "react";
 import { Selections } from "../../App";
 import Leg from "./Leg";
+import { SEGMENTS } from "../../data/segments";
 
 export default function SelectedRoute() {
   const { selectedRoute, setSelected } = useContext(Selections);
@@ -48,6 +49,9 @@ export default function SelectedRoute() {
             Close
           </button>
           <div style={{ overflow: "auto" }}>
+            {!SEGMENTS.some(({ routes }) =>
+              (routes ?? []).includes(selectedRoute.name)
+            ) && "No visual on the map... yet. Come back later."}
             {selectedRoute.legs.map((leg) => (
               <Leg key={selectedRoute.name + leg.name} leg={leg} />
             ))}

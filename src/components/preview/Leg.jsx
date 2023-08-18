@@ -4,6 +4,7 @@ import { VIDEO_UNIDIRECTIONAL_COLOUR } from "../../utils/params";
 
 export default function Leg({ leg }) {
   const { video: selectedVideo, setVideo } = useContext(Selections);
+  const hasNoVideos = Object.entries(leg.videos).length === 0;
 
   return (
     <>
@@ -11,6 +12,7 @@ export default function Leg({ leg }) {
         <h3 style={{ textAlign: "center", marginBottom: "4px" }}>{leg.name}</h3>
       )}
       <div style={{ display: "flex", marginBottom: "4px" }}>
+        {hasNoVideos && "No videos... yet. Come back later."}
         {Object.entries(leg.videos).map(([direction, video]) => {
           const isShowing = video === selectedVideo;
           return (
