@@ -331,6 +331,10 @@ export const ROUTES = {
     name: "Pandora",
     legs: [{ videos: { eastbound: VIDEOS.pandoraEb } }],
   },
+  portside: {
+    name: "Portside",
+    legs: [],
+  },
   powell: {
     name: "Powell",
     legs: [{ videos: { eastbound: VIDEOS.powellEb } }],

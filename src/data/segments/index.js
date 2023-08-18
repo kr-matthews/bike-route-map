@@ -13,6 +13,7 @@ import { CAMBIE_BRIDGE } from "./cambieBridge";
 import { CANADA_LINE } from "./canadaLine";
 import { CARDERO } from "./cardero";
 import { CARRALL } from "./carrall";
+import { CASSIAR } from "./cassiar";
 import { CHILCO } from "./chilco";
 import { COLUMBIA } from "./columbia";
 import { COMOX_HELMCKEN } from "./comoxHelmcken";
@@ -39,6 +40,7 @@ import { NICOLA } from "./nicola";
 import { OFF_BROADWAY } from "./offBroadway";
 import { ONTARIO } from "./ontario";
 import { PANDORA } from "./pandora";
+import { PORTSIDE } from "./portside";
 import { POWELL } from "./powell";
 import { RIDGEWAY } from "./ridgeway";
 import { SECOND_NARROWS_BRIDGE } from "./secondNarrowsBridge";
@@ -70,6 +72,7 @@ export const SEGMENTS = [
   ...CANADA_LINE,
   ...CARDERO,
   ...CARRALL,
+  ...CASSIAR,
   ...CHILCO,
   ...COLUMBIA,
   ...COMOX_HELMCKEN,
@@ -96,6 +99,7 @@ export const SEGMENTS = [
   ...OFF_BROADWAY,
   ...ONTARIO,
   ...PANDORA,
+  ...PORTSIDE,
   ...POWELL,
   ...RIDGEWAY,
   ...SECOND_NARROWS_BRIDGE,

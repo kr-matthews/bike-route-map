@@ -1,11 +1,10 @@
 import {
-  CASSIAR_CAMBRIDGE,
+  CASSIAR_SKEENA_PATH,
   SECOND_NARROWS_BRIDGE_FELLOWS,
   SKEENA_SECOND_NARROWS_BRIDGE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
-const NORTHBOUND_SKEENA_JOIN = [49.28802, -123.02874];
 const NORTHBOUND_ELEVATION_START = [49.29164, -123.02604];
 const NORTHBOUND_ELEVATION_END = [49.30367, -123.02652];
 
@@ -30,7 +29,7 @@ export const SECOND_NARROWS_BRIDGE = [
     description: "skeena pre-tunnel",
     elevation: -0.5,
     positions: [
-      NORTHBOUND_SKEENA_JOIN,
+      CASSIAR_SKEENA_PATH,
       [49.28795, -123.02851],
       [49.28793, -123.02824],
       TUNNEL_SOUTH_END,
@@ -52,10 +51,7 @@ export const SECOND_NARROWS_BRIDGE = [
     description: "cassiar to bridge",
     elevation: 0.5,
     positions: [
-      CASSIAR_CAMBRIDGE,
-      [49.28701, -123.02976],
-      [49.28742, -123.02922],
-      NORTHBOUND_SKEENA_JOIN,
+      CASSIAR_SKEENA_PATH,
       [49.28839, -123.0285],
       [49.28924, -123.02774],
       [49.29041, -123.02658],
