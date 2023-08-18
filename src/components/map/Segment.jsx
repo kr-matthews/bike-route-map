@@ -17,6 +17,7 @@ export default function Segment(segment) {
     useContext(Selections);
 
   const primaryRoute = routes?.find((x) => x) || null;
+  const hasAnyRoutes = (routes?.length ?? 0) > 0;
   const hasMultipleRoutes = (routes?.length ?? 0) > 1;
   const pane = getSegmentPane(elevation, hasMultipleRoutes);
 
@@ -47,9 +48,7 @@ export default function Segment(segment) {
     pane: getBorderPane(elevation),
   };
 
-  // !!! improve tooltip content
-  const tooltipProps = { sticky: true, opacity: 0.7 };
-  const tooltipContent = routes?.join("; ");
+  const tooltipProps = { sticky: true, opacity: 0.7, className: "tooltip" };
 
   // FIXME: tool tip not showing on decorator arrows hover
   return (
@@ -60,7 +59,15 @@ export default function Segment(segment) {
       polylineProps={polylineProps}
       borderProps={hasBorder ? borderProps : undefined}
     >
-      {tooltipContent && <Tooltip {...tooltipProps}>{tooltipContent}</Tooltip>}
+      {hasAnyRoutes && (
+        <Tooltip {...tooltipProps}>
+          {routes.map((route) => (
+            <div key={route}>
+              {primaryRoute === route ? <b>{route}</b> : route}
+            </div>
+          ))}
+        </Tooltip>
+      )}
     </MyPolyline>
   );
 }
