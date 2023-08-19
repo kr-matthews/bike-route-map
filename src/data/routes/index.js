@@ -1,9 +1,6 @@
 import { VIDEOS } from "../videos";
 
-// !! add remaining Vancouver routes (the confusing ones, like seaside (bypass)...)
-
 export const ROUTES = {
-  // ? are these legs of seaside bypass?
   third: {
     name: "3rd",
     legs: [{ videos: { eastbound: VIDEOS.thirdEb } }],
@@ -21,6 +18,10 @@ export const ROUTES = {
   fourteenth: {
     name: "14th",
     legs: [{ videos: { westbound: VIDEOS.fourteenthWb } }],
+  },
+  sixteenth: {
+    name: "16th",
+    legs: [{ videos: {} }],
   },
   twentySecond: {
     name: "22nd",
@@ -56,6 +57,11 @@ export const ROUTES = {
   },
   arbutusGreenway: {
     name: "Arbutus Greenway",
+    legs: [{ videos: {} }],
+  },
+  arthurLaingBridge: {
+    name: "Arthur Laing Bridge",
+    // shortName: "Arthur Laing B.",
     legs: [{ videos: {} }],
   },
   balaclava: {
@@ -120,9 +126,7 @@ export const ROUTES = {
       },
       {
         name: "Vancouver",
-        videos: {
-          northbound: VIDEOS.cambieSeparatedNb,
-        },
+        videos: { northbound: VIDEOS.cambieSeparatedNb },
       },
     ],
   },
@@ -132,11 +136,7 @@ export const ROUTES = {
   },
   carrall: {
     name: "Carrall",
-    legs: [
-      {
-        videos: { northbound: VIDEOS.carrallNb },
-      },
-    ],
+    legs: [{ videos: { northbound: VIDEOS.carrallNb } }],
   },
   cassiar: {
     name: "Cassiar",
@@ -144,12 +144,16 @@ export const ROUTES = {
   },
   cvg: {
     name: "Central Valley Greenway",
-    shortName: "Central Valley G.",
+    shortName: "Central Valley Gr.",
     legs: [
       { name: "Vancouver", videos: {} },
       { name: "Burnaby", videos: {} },
       { name: "New Westminster", videos: {} },
     ],
+  },
+  chancellor: {
+    name: "Chancellor",
+    legs: [{ videos: {} }],
   },
   chilco: {
     name: "Chilco",
@@ -188,6 +192,10 @@ export const ROUTES = {
   },
   francesUnion: {
     name: "Frances Union",
+    legs: [{ videos: {} }],
+  },
+  fraserRiverTrail: {
+    name: "Fraser River Trail",
     legs: [{ videos: {} }],
   },
   gardenCity: {
@@ -271,30 +279,23 @@ export const ROUTES = {
       },
     ],
   },
+  marine: {
+    name: "Marine",
+    legs: [{ videos: {} }],
+  },
   masumiMitsui: {
-    name: "Masumi Mitsui Greenway (59th)",
-    shortName: "Masumi Mitsui G.",
-    legs: [
-      {
-        videos: {
-          eastbound: VIDEOS.masumiMitsuiEb,
-        },
-      },
-    ],
+    name: "Masumi Mitsui Greenway",
+    shortName: "Masumi Mitsui Gr.",
+    legs: [{ videos: { eastbound: VIDEOS.masumiMitsuiEb } }],
   },
   midtown: {
     name: "Midtown",
     legs: [
       {
         name: "Vancouver",
-        videos: {
-          eastbound: VIDEOS.midtownVancouverEb,
-        },
+        videos: { eastbound: VIDEOS.midtownVancouverEb },
       },
-      {
-        name: "Burnaby",
-        videos: {},
-      },
+      { name: "Burnaby", videos: {} },
     ],
   },
   mosaic: {
@@ -345,21 +346,45 @@ export const ROUTES = {
     name: "Ridgeway",
     legs: [{ videos: {} }],
   },
+  rumble: {
+    name: "Rumble",
+    legs: [{ videos: {} }],
+  },
   rupert: {
     name: "Rupert",
     legs: [{ videos: {} }],
   },
+  seaside: {
+    name: "Seaside",
+    legs: [{ videos: {} }],
+  },
+  seasideBypass: {
+    name: "Seaside Bypass",
+    legs: [{ videos: {} }],
+  },
+  seaToRiver: {
+    name: "Sea to River",
+    legs: [{ videos: {} }],
+  },
   secondNarrowsBridge: {
     name: "Second Narrows Bridge",
-    shortName: "Second Narrows B.",
+    shortName: "Second Narrows Br.",
     legs: [{ videos: {} }],
   },
   smithe: {
     name: "Smithe",
     legs: [{ videos: { westbound: VIDEOS.cambieBridgeSmithNb } }],
   },
+  stanleyParkLoop: {
+    name: "Stanley Park Loop",
+    legs: [{ videos: {} }],
+  },
   sunrise: {
     name: "Sunrise",
+    legs: [{ videos: {} }],
+  },
+  university: {
+    name: "University",
     legs: [{ videos: {} }],
   },
   valley: {
