@@ -37,9 +37,9 @@ export const NELSON = [
     positions: [
       RICHARDS_NELSON,
       HOMER_NELSON,
-      [49.27695, -123.11954],
-      [49.27661, -123.11898],
-      [49.27607, -123.11816],
+      [49.27695, -123.11956],
+      [49.27659, -123.11899],
+      [49.27604, -123.11817],
       BEATTY_NELSON_SW,
       BEATTY_NELSON_SE,
     ],

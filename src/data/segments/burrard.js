@@ -25,7 +25,8 @@ import {
   CHESTNUT_CORNWALL,
   CHESTNUT_YORK,
   CYPRESS_CORNWALL_N,
-  CYPRESS_CORNWALL_S,
+  CYPRESS_CORNWALL_SE,
+  CYPRESS_CORNWALL_SW,
   HORNBY_DRAKE,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -237,7 +238,8 @@ export const BURRARD = [
     description: "cypress to burrard connection",
     oneWay: "required",
     positions: [
-      CYPRESS_CORNWALL_S,
+      CYPRESS_CORNWALL_SW,
+      CYPRESS_CORNWALL_SE,
       [49.27235, -123.14635],
       [49.2723, -123.14585],
       BURRARD_CORNWALL_SW,

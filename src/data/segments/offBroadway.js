@@ -6,6 +6,7 @@ import {
   BLANCA_8TH_E,
   BURRARD_7TH,
   COLUMBIA_5TH,
+  CYPRESS_7TH,
   DISCOVERY_8TH,
   GLEN_7TH,
   GRANDVIEW_8TH_N,
@@ -16,6 +17,8 @@ import {
   TRAFALGAR_8TH,
   WOODLAND_7TH,
   WOODLAND_GRANDVIEW,
+  YEW_10TH,
+  YEW_8TH,
   YUKON_5TH,
   YUKON_7TH,
 } from "../intersections";
@@ -23,6 +26,10 @@ import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 export const OFF_BROADWAY = [
+  {
+    description: "yew connection with 10th",
+    positions: [YEW_10TH, YEW_8TH],
+  },
   {
     routes: [ROUTES.offBroadway.name, ROUTES.ridgeway.name],
     description: "ridgeway overlap",
@@ -67,7 +74,7 @@ export const OFF_BROADWAY = [
       [49.2649, -123.16237],
       [49.26486, -123.16001],
       [49.26482, -123.15763],
-      [49.26478, -123.15529],
+      YEW_8TH,
       [49.26561, -123.15526],
       [49.2656, -123.15421],
       [49.26563, -123.15408],
@@ -75,7 +82,7 @@ export const OFF_BROADWAY = [
       [49.26559, -123.15277],
       ARBUTUS_GREENWAY_7TH,
       [49.26555, -123.15048],
-      [49.26551, -123.14806],
+      CYPRESS_7TH,
       BURRARD_7TH,
       [49.26543, -123.14333],
       [49.26539, -123.14091],

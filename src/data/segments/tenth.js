@@ -9,6 +9,7 @@ import {
   VICTORIA_BROADWAY,
   WINDSOR_10TH,
   WOODLAND_10TH,
+  YEW_10TH,
   YUKON_10TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -25,7 +26,7 @@ export const TENTH = [
       [49.26298, -123.16006],
       [49.26295, -123.15771],
       [49.26293, -123.15766],
-      [49.26289, -123.15533],
+      YEW_10TH,
       [49.26284, -123.15303],
       [49.26288, -123.15288],
       ARBUTUS_GREENWAY_10TH,

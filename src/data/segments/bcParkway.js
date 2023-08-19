@@ -132,14 +132,6 @@ export const BC_PARKWAY = [
   {
     routes: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
     legs: ["Vancouver"],
-    description: "slocan",
-    type: "uncomfortable",
-    videos: [VIDEOS.bcParkwayVancouverEb],
-    positions: [SLOCAN_BC_PARKWAY, SLOCAN_29TH],
-  },
-  {
-    routes: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
-    legs: ["Vancouver"],
     description: "29th path",
     videos: [VIDEOS.bcParkwayVancouverEb],
     positions: [

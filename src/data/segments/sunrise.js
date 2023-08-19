@@ -9,6 +9,7 @@ import {
   KASLO_WALL,
   SLOCAN_22ND_N,
   SLOCAN_22ND_S,
+  SLOCAN_29TH,
   SLOCAN_ADANAC,
   SLOCAN_BC_PARKWAY,
   SLOCAN_N_GRANDVIEW,
@@ -18,6 +19,7 @@ import {
   VIVIAN_LYNBROOK,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const SUNRISE = [
   {
@@ -71,6 +73,14 @@ export const SUNRISE = [
       [49.23404, -123.04878],
       EARLES_38TH,
     ],
+  },
+  {
+    routes: [ROUTES.sunrise.name, ROUTES.bcParkway.name],
+    legs: ["Vancouver"],
+    description: "slocan",
+    type: "uncomfortable",
+    videos: [VIDEOS.bcParkwayVancouverEb],
+    positions: [SLOCAN_BC_PARKWAY, SLOCAN_29TH],
   },
   {
     routes: [ROUTES.sunrise.name],

@@ -19,6 +19,7 @@ import { CHILCO } from "./chilco";
 import { COLUMBIA } from "./columbia";
 import { COMOX_HELMCKEN } from "./comoxHelmcken";
 import { CVG } from "./cvg";
+import { CYPRESS } from "./cypress";
 import { DUNBAR } from "./dunbar";
 import { DUNSMUIR } from "./dunsmuir";
 import { FORTY_FIFTH } from "./fortyFifth";
@@ -43,6 +44,7 @@ import { ONTARIO } from "./ontario";
 import { PANDORA } from "./pandora";
 import { PORTSIDE } from "./portside";
 import { POWELL } from "./powell";
+import { RICHARDS } from "./richards";
 import { RIDGEWAY } from "./ridgeway";
 import { SECOND_NARROWS_BRIDGE } from "./secondNarrowsBridge";
 import { SIXTY_SEVENTH } from "./sixtySeventh";
@@ -79,6 +81,7 @@ export const SEGMENTS = [
   ...COLUMBIA,
   ...COMOX_HELMCKEN,
   ...CVG,
+  ...CYPRESS,
   ...DUNBAR,
   ...DUNSMUIR,
   ...FORTY_FIFTH,
@@ -103,6 +106,7 @@ export const SEGMENTS = [
   ...PANDORA,
   ...PORTSIDE,
   ...POWELL,
+  ...RICHARDS,
   ...RIDGEWAY,
   ...SECOND_NARROWS_BRIDGE,
   ...SIXTY_SEVENTH,

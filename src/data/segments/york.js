@@ -1,4 +1,10 @@
-import { CHESTNUT_1ST, CHESTNUT_YORK, STEPHENS_YORK } from "../intersections";
+import {
+  CHESTNUT_1ST,
+  CHESTNUT_YORK,
+  CYPRESS_YORK_SE,
+  CYPRESS_YORK_SW,
+  STEPHENS_YORK,
+} from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
@@ -18,8 +24,8 @@ export const YORK = [
       [49.27166, -123.15265],
       [49.27162, -123.15028],
       [49.2716, -123.15019],
-      [49.27156, -123.14787],
-      [49.27156, -123.14779],
+      CYPRESS_YORK_SW,
+      CYPRESS_YORK_SE,
       CHESTNUT_YORK,
     ],
   },
