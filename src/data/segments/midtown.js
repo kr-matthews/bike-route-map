@@ -4,6 +4,7 @@ import {
   BALACLAVA_37TH,
   BOUNDARY_MOSCROP,
   CAMBIE_37TH_E,
+  CAMOSUN_MARINE_N,
   CARIBOO_29TH,
   CARLETON_MOSCROP,
   CARNARVON_37TH,
@@ -18,6 +19,8 @@ import {
   HEATHER_37TH,
   INVERNESS_37TH,
   KINGSWAY_EARLES,
+  MARINE_41ST_NW,
+  CAMOSUN_MARINE_S,
   NANAIMO_38TH,
   ONTARIO_37TH,
   PATTERSON_MOSCROP,
@@ -26,19 +29,31 @@ import {
   WILLOW_37TH,
   WINDSOR_37TH,
   YEW_37TH,
+  MARINE_41ST_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 export const MIDTOWN = [
   {
+    description: "crossing marine sb",
+    oneWay: "required",
+    positions: [CAMOSUN_MARINE_N, CAMOSUN_MARINE_S],
+  },
+  {
+    description: "crossing marine nb",
+    oneWay: "recommended",
+    videos: [VIDEOS.midtownVancouverEb],
+    positions: [MARINE_41ST_SW, MARINE_41ST_NW],
+  },
+  {
     routes: [ROUTES.midtown.name],
     legs: ["Vancouver"],
     description: "west of ridgeway",
     videos: [VIDEOS.midtownVancouverEb],
     positions: [
-      [49.2351, -123.19704],
-      [49.2354, -123.19686],
+      CAMOSUN_MARINE_N,
+      [49.2354, -123.19688],
       [49.23555, -123.19683],
       [49.23647, -123.19685],
       [49.23647, -123.19372],

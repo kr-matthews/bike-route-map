@@ -5,6 +5,8 @@ import {
   ARBUTUS_GREENWAY_64TH,
   ARBUTUS_GREENWAY_68TH,
   ARBUTUS_GREENWAY_7TH,
+  ARBUTUS_GREENWAY_MARINE_N,
+  ARBUTUS_GREENWAY_MARINE_S,
   ARBUTUS_GREENWAY_NANTON,
   ARBUTUS_KING_EDWARD_NE,
   ARBUTUS_KING_EDWARD_SE,
@@ -12,6 +14,7 @@ import {
   BURRARD_ARBUTUS_GREENWAY_W,
   CYPRESS_ARBUTUS_GREENWAY,
   EAST_BLVD_45TH,
+  MILTON_ARBUTUS_GREENWAY,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
@@ -20,13 +23,13 @@ export const ARBUTUS_GREENWAY = [
     routes: [ROUTES.arbutusGreenway.name],
     description: "primary",
     positions: [
-      [49.20477, -123.14134],
+      MILTON_ARBUTUS_GREENWAY,
       [49.20604, -123.14283],
       [49.20649, -123.14333],
       [49.20716, -123.14376],
       [49.20802, -123.14418],
-      [49.20852, -123.14442],
-      [49.20862, -123.14444],
+      ARBUTUS_GREENWAY_MARINE_S,
+      ARBUTUS_GREENWAY_MARINE_N,
       [49.20872, -123.14441],
       [49.20881, -123.14448],
       [49.20885, -123.14461],

@@ -281,7 +281,10 @@ export const ROUTES = {
   },
   marine: {
     name: "Marine",
-    legs: [{ videos: {} }],
+    legs: [
+      { name: "SW Marine", videos: {} },
+      { name: "NW Marine", videos: {} },
+    ],
   },
   masumiMitsui: {
     name: "Masumi Mitsui Greenway",

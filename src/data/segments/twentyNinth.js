@@ -18,6 +18,9 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const PUGET_29TH = [49.2461, -123.16597];
+const PUGET_EDDINGTON = [49.24505, -123.16339];
+
 export const TWENTY_NINTH = [
   {
     routes: [ROUTES.twentyNinth.name],
@@ -49,14 +52,25 @@ export const TWENTY_NINTH = [
   },
   {
     routes: [ROUTES.twentyNinth.name],
-    description: "balaclava/ridgeway to valley",
+    description: "balaclava/ridgeway to puget",
     positions: [
       CARNARVON_29TH,
       [49.24612, -123.1702],
       MACDONALD_29TH,
-      [49.2461, -123.16597],
-      [49.24521, -123.16368],
-      [49.24505, -123.16339],
+      PUGET_29TH,
+    ],
+  },
+  {
+    routes: [ROUTES.twentyNinth.name],
+    description: "puget",
+    type: "uncomfortable",
+    positions: [PUGET_29TH, [49.24521, -123.16368], PUGET_EDDINGTON],
+  },
+  {
+    routes: [ROUTES.twentyNinth.name],
+    description: "puget to valley",
+    positions: [
+      PUGET_EDDINGTON,
       [49.24518, -123.16312],
       [49.2451, -123.16255],
       [49.24508, -123.1613],

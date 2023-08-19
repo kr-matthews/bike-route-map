@@ -35,6 +35,7 @@ import { IMPERIAL } from "./imperial";
 import { INVERNESS } from "./inverness";
 import { KILLARNEY } from "./killarney";
 import { LIONS_GATE_BRIDGE } from "./lionsGateBridge";
+import { MARINE } from "./marine";
 import { MASUMI_MITSUI_GREENWAY } from "./masumiMitsui";
 import { MIDTOWN } from "./midtown";
 import { NELSON } from "./nelson";
@@ -44,6 +45,7 @@ import { ONTARIO } from "./ontario";
 import { PANDORA } from "./pandora";
 import { PORTSIDE } from "./portside";
 import { POWELL } from "./powell";
+import { PRINCE_EDWARD } from "./princeEdward";
 import { RICHARDS } from "./richards";
 import { RIDGEWAY } from "./ridgeway";
 import { SECOND_NARROWS_BRIDGE } from "./secondNarrowsBridge";
@@ -97,6 +99,7 @@ export const SEGMENTS = [
   ...INVERNESS,
   ...KILLARNEY,
   ...LIONS_GATE_BRIDGE,
+  ...MARINE,
   ...MASUMI_MITSUI_GREENWAY,
   ...MIDTOWN,
   ...NELSON,
@@ -106,6 +109,7 @@ export const SEGMENTS = [
   ...PANDORA,
   ...PORTSIDE,
   ...POWELL,
+  ...PRINCE_EDWARD,
   ...RICHARDS,
   ...RIDGEWAY,
   ...SECOND_NARROWS_BRIDGE,

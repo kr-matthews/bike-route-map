@@ -8,7 +8,8 @@ import {
   DUNBAR_39TH,
   DUNBAR_40TH_LANE,
   DUNBAR_KING_EDWARD_LANE,
-  DUNBAR_MARINE,
+  DUNBAR_MARINE_N,
+  DUNBAR_MARINE_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -21,7 +22,8 @@ export const DUNBAR = [
     videos: [VIDEOS.dunbarNb],
     positions: [
       [
-        DUNBAR_MARINE,
+        DUNBAR_MARINE_S,
+        DUNBAR_MARINE_N,
         [49.23284, -123.18538],
         [49.23477, -123.18534],
         DUNBAR_40TH_LANE,

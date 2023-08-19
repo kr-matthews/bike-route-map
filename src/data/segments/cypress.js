@@ -23,6 +23,7 @@ import {
   CYPRESS_WHITE,
   CYPRESS_YORK_SE,
   CYPRESS_YORK_SW,
+  MARINE_70TH_N,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
@@ -30,15 +31,11 @@ export const CYPRESS = [
   {
     routes: [ROUTES.cypress.name],
     description: "cornish",
-    positions: [
-      [49.20858, -123.14215], // CORNISH_MARINE_N
-      CORNISH_68TH,
-    ],
+    positions: [MARINE_70TH_N, CORNISH_68TH],
   },
   {
     routes: [ROUTES.cypress.name],
     description: "68th to king edward",
-    // description: "angus to 1st",
     positions: [
       ADERA_68TH,
       [49.2123, -123.14356],
@@ -153,7 +150,7 @@ export const CYPRESS = [
   },
   {
     routes: [ROUTES.cypress.name],
-    description: "1st to cornwall",
+    description: "crossing cornwall",
     positions: [CYPRESS_CORNWALL_SE, CYPRESS_CORNWALL_N],
   },
   {
