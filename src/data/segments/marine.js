@@ -30,6 +30,7 @@ const SPANISH_BANKS_BUS_LOOP = [49.27607, -123.21541];
 const BEYOND_CECIL_GREEN_PARK = [49.27056, -123.25527];
 
 export const MARINE = [
+  // sw marine
   {
     description: "connection with arbutus greenway",
     type: "uncomfortable",
@@ -66,6 +67,7 @@ export const MARINE = [
     routes: [ROUTES.marine.name],
     description: "parallel to granville",
     type: "uncomfortable",
+    videos: [VIDEOS.swMarineEb, VIDEOS.arthurLaingSb],
     positions: [
       GRANVILLE_MARINE,
       [49.20532, -123.14134],
@@ -79,14 +81,20 @@ export const MARINE = [
       [49.20801, -123.14222],
       [49.20844, -123.14219],
       MARINE_70TH_S,
-      MARINE_70TH_N,
     ],
+  },
+  {
+    routes: [ROUTES.marine.name],
+    description: "crossing granville at cornish",
+    type: "uncomfortable",
+    positions: [MARINE_70TH_S, MARINE_70TH_N],
   },
   {
     routes: [ROUTES.marine.name],
     description: "to arthur laing",
     type: "uncomfortable",
     oneWay: "required",
+    videos: [VIDEOS.swMarineEb, VIDEOS.arthurLaingSb],
     positions: [
       GRANVILLE_MARINE,
       [49.20507, -123.14074],
@@ -219,8 +227,9 @@ export const MARINE = [
   },
   {
     routes: [ROUTES.marine.name],
-    description: "sw marine sb primary",
+    description: "sw marine eb primary",
     oneWay: "required",
+    videos: [VIDEOS.swMarineEb],
     positions: [
       MARINE_MARINE,
       [49.25654, -123.25256],
@@ -327,6 +336,7 @@ export const MARINE = [
     routes: [ROUTES.marine.name],
     description: "just beyond arbutus greenway eb",
     oneWay: "required",
+    videos: [VIDEOS.swMarineEb, VIDEOS.arthurLaingSb],
     positions: [ARBUTUS_GREENWAY_MARINE_S, EAST_BLVD_MARINE_S],
   },
   {
@@ -334,8 +344,10 @@ export const MARINE = [
     description: "arbutus greenway-ish to 70th",
     type: "uncomfortable",
     oneWay: "required",
+    videos: [VIDEOS.swMarineEb, VIDEOS.arthurLaingSb],
     positions: [EAST_BLVD_MARINE_S, [49.20852, -123.14366], MARINE_70TH_S],
   },
+  // nw marine
   {
     routes: [ROUTES.marine.name],
     description: "ubc to west mall-ish",

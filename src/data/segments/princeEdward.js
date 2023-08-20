@@ -5,11 +5,13 @@ import {
   PRINCE_EDWARD_59TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const PRINCE_EDWARD = [
   {
     routes: [ROUTES.princeEdward.name],
     description: "primary",
+    videos: [VIDEOS.princeEdwardNb],
     positions: [
       PRINCE_EDWARD_59TH,
       [49.21751, -123.09778],

@@ -62,7 +62,7 @@ export const ROUTES = {
   arthurLaingBridge: {
     name: "Arthur Laing Bridge",
     // shortName: "Arthur Laing B.",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.arthurLaingSb } }],
   },
   balaclava: {
     name: "Balaclava",
@@ -282,7 +282,7 @@ export const ROUTES = {
   marine: {
     name: "Marine",
     legs: [
-      { name: "SW Marine", videos: {} },
+      { name: "SW Marine", videos: { eastbound: VIDEOS.swMarineEb } },
       { name: "NW Marine", videos: {} },
     ],
   },
@@ -339,7 +339,7 @@ export const ROUTES = {
   },
   princeEdward: {
     name: "Prince Edward",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.princeEdwardNb } }],
   },
   richards: {
     name: "Richards",
