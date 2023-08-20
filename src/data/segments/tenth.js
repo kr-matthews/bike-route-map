@@ -3,7 +3,8 @@ import {
   ARBUTUS_GREENWAY_10TH,
   CYPRESS_10TH,
   GLEN_10TH,
-  HEATHER_10TH,
+  HEATHER_10TH_N,
+  HEATHER_10TH_S,
   ONTARIO_10TH,
   TRAFALGAR_10TH,
   VICTORIA_BROADWAY,
@@ -15,10 +16,13 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const OAK_10TH_W = [49.26245, -123.12669];
+const ASH_10TH_E = [49.2623, -123.1175];
+
 export const TENTH = [
   {
     routes: [ROUTES.tenth.name],
-    description: "primary",
+    description: "west of hospital",
     videos: [VIDEOS.tenthEb, VIDEOS.tenthWb],
     positions: [
       TRAFALGAR_10TH,
@@ -41,11 +45,47 @@ export const TENTH = [
       [49.26257, -123.13374],
       ALDER_10TH,
       [49.26249, -123.12903],
-      [49.26245, -123.12665],
-      [49.26242, -123.12424],
-      [49.26239, -123.12186],
-      HEATHER_10TH,
-      [49.2623, -123.11753],
+      OAK_10TH_W,
+    ],
+  },
+  {
+    routes: [ROUTES.tenth.name],
+    description: "hospital eb",
+    oneWay: "required",
+    videos: [VIDEOS.tenthEb],
+    positions: [
+      OAK_10TH_W,
+      [49.2624, -123.12649],
+      [49.26238, -123.12538],
+      [49.26236, -123.12423],
+      [49.26232, -123.12187],
+      HEATHER_10TH_S,
+      [49.26227, -123.11758],
+      ASH_10TH_E,
+    ],
+  },
+  {
+    routes: [ROUTES.tenth.name],
+    description: "hospital wb",
+    oneWay: "required",
+    videos: [VIDEOS.tenthWb],
+    positions: [
+      ASH_10TH_E,
+      [49.26234, -123.1176],
+      HEATHER_10TH_N,
+      [49.26242, -123.12188],
+      [49.26245, -123.12424],
+      [49.26247, -123.12539],
+      [49.26249, -123.12654],
+      OAK_10TH_W,
+    ],
+  },
+  {
+    routes: [ROUTES.tenth.name],
+    description: "east of hospital",
+    videos: [VIDEOS.tenthEb, VIDEOS.tenthWb],
+    positions: [
+      ASH_10TH_E,
       [49.26226, -123.11492],
       YUKON_10TH,
       [49.26219, -123.11099],

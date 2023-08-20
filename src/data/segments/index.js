@@ -15,10 +15,10 @@ import { CANADA_LINE } from "./canadaLine";
 import { CARDERO } from "./cardero";
 import { CARRALL } from "./carrall";
 import { CASSIAR } from "./cassiar";
+import { CENTRAL_VALLEY_GREENWAY } from "./centralValleyGreenway";
 import { CHILCO } from "./chilco";
 import { COLUMBIA } from "./columbia";
 import { COMOX_HELMCKEN } from "./comoxHelmcken";
-import { CVG } from "./cvg";
 import { CYPRESS } from "./cypress";
 import { DUNBAR } from "./dunbar";
 import { DUNSMUIR } from "./dunsmuir";
@@ -79,10 +79,10 @@ export const SEGMENTS = [
   ...CARDERO,
   ...CARRALL,
   ...CASSIAR,
+  ...CENTRAL_VALLEY_GREENWAY,
   ...CHILCO,
   ...COLUMBIA,
   ...COMOX_HELMCKEN,
-  ...CVG,
   ...CYPRESS,
   ...DUNBAR,
   ...DUNSMUIR,

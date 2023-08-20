@@ -45,7 +45,7 @@ const OVERPASS_START = [49.25731, -122.96468];
 const OVERPASS_END = [49.25834, -122.96427];
 const AFTER_OVERPASS = [49.25823, -122.96428];
 
-export const CVG = [
+export const CENTRAL_VALLEY_GREENWAY = [
   // connections
   {
     description: "connection with cvg",
@@ -54,26 +54,26 @@ export const CVG = [
   },
   // alternates
   {
-    routes: [ROUTES.cvg.name],
+    routes: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "vcc alt. west",
     positions: [GLEN_6TH_N, GLEN_6TH_S, KEITH_6TH_SW, KEITH_6TH_SE],
   },
   {
-    routes: [ROUTES.cvg.name],
+    routes: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "vcc alt. mid",
     positions: [KEITH_6TH_SW, KEITH_6TH_NW],
   },
   {
-    routes: [ROUTES.cvg.name],
+    routes: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "vcc alt. east",
     positions: [KEITH_6TH_NE, CLARK_6TH_NW, CLARK_6TH_SW],
   },
   // vancouver
   {
-    routes: [ROUTES.cvg.name],
+    routes: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "east park path",
     videos: [],
@@ -85,14 +85,14 @@ export const CVG = [
     ],
   },
   {
-    routes: [ROUTES.cvg.name],
+    routes: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "crossing 1st path",
     videos: [],
     positions: [ONTARIO_1ST_NE, ONTARIO_1ST_SE],
   },
   {
-    routes: [ROUTES.cvg.name],
+    routes: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "1st eb",
     oneWay: "required",
@@ -105,7 +105,7 @@ export const CVG = [
     ],
   },
   {
-    routes: [ROUTES.cvg.name],
+    routes: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "1st wb",
     oneWay: "required",
@@ -118,7 +118,7 @@ export const CVG = [
     ],
   },
   {
-    routes: [ROUTES.cvg.name],
+    routes: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "1st to commercial",
     positions: [
@@ -154,21 +154,21 @@ export const CVG = [
     ],
   },
   {
-    routes: [ROUTES.cvg.name, ROUTES.offBroadway.name],
+    routes: [ROUTES.centralValleyGreenway.name, ROUTES.offBroadway.name],
     legs: ["Vancouver"],
     description: "cvg/off-broadway west",
     videos: [VIDEOS.offBroadwayWb],
     positions: [WOODLAND_GRANDVIEW, COMMERCIAL_GRANDVIEW],
   },
   {
-    routes: [ROUTES.cvg.name, ROUTES.offBroadway.name],
+    routes: [ROUTES.centralValleyGreenway.name, ROUTES.offBroadway.name],
     legs: ["Vancouver"],
     description: "cvg/off-broadway east",
     videos: [VIDEOS.offBroadwayWb],
     positions: [COMMERCIAL_GRANDVIEW, [49.26372, -123.06966], GRANDVIEW_8TH_N],
   },
   {
-    routes: [ROUTES.cvg.name],
+    routes: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "broadway eastbound",
     oneWay: "required",
@@ -185,7 +185,7 @@ export const CVG = [
     ],
   },
   {
-    routes: [ROUTES.cvg.name],
+    routes: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "broadway westbound",
     oneWay: "required",
@@ -206,7 +206,7 @@ export const CVG = [
     positions: [GRANDVIEW_8TH_S, GRANDVIEW_8TH_N],
   },
   {
-    routes: [ROUTES.cvg.name],
+    routes: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "east of victoria",
     videos: [],
@@ -267,7 +267,7 @@ export const CVG = [
   },
   // burnaby
   {
-    routes: [ROUTES.cvg.name],
+    routes: [ROUTES.centralValleyGreenway.name],
     legs: ["Burnaby"],
     description: "burnaby west of overpass",
     videos: [],
@@ -313,7 +313,7 @@ export const CVG = [
     ],
   },
   {
-    routes: [ROUTES.cvg.name],
+    routes: [ROUTES.centralValleyGreenway.name],
     legs: ["Burnaby"],
     description: "pre-overpass",
     elevation: 0.5,
@@ -321,7 +321,7 @@ export const CVG = [
     positions: [BEFORE_OVERPASS, OVERPASS_START],
   },
   {
-    routes: [ROUTES.cvg.name],
+    routes: [ROUTES.centralValleyGreenway.name],
     legs: ["Burnaby"],
     description: "train overpass",
     elevation: 1,
@@ -342,7 +342,7 @@ export const CVG = [
     ],
   },
   {
-    routes: [ROUTES.cvg.name],
+    routes: [ROUTES.centralValleyGreenway.name],
     legs: ["Burnaby"],
     description: "post-overpass",
     elevation: 0.5,
@@ -350,7 +350,7 @@ export const CVG = [
     positions: [OVERPASS_END, AFTER_OVERPASS],
   },
   {
-    routes: [ROUTES.cvg.name],
+    routes: [ROUTES.centralValleyGreenway.name],
     legs: ["Burnaby"],
     description: "east of overpass",
     videos: [],

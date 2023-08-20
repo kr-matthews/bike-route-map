@@ -1,5 +1,6 @@
 import {
   BURRARD_COMOX,
+  BURRARD_HELMCKEN_SE,
   BUTE_COMOX,
   CARDERO_COMOX,
   CHILCO_COMOX,
@@ -38,8 +39,8 @@ export const COMOX_HELMCKEN = [
       [49.28191, -123.12927],
       [49.28184, -123.12911],
       BURRARD_COMOX,
-      [49.28036, -123.1271],
-      [49.28006, -123.12755],
+      [49.28032, -123.1271],
+      BURRARD_HELMCKEN_SE,
       [49.27949, -123.12668],
       HORNBY_HELMCKEN,
     ],

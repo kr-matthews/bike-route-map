@@ -15,6 +15,8 @@ import {
   BURRARD_DRAKE_W,
   BURRARD_DUNSMUIR,
   BURRARD_HASTINGS,
+  BURRARD_HELMCKEN_SE,
+  BURRARD_HELMCKEN_SW,
   BURRARD_PACIFIC_NE,
   BURRARD_PACIFIC_NW,
   BURRARD_PACIFIC_SE_E,
@@ -42,6 +44,11 @@ const NORTHBOUND_ENDPOINT = [49.27851, -123.12991];
 const SOUTHBOUND_ENDPOINT = [49.26517, -123.14582];
 
 export const BURRARD = [
+  {
+    description: "left onto helmcken",
+    oneWay: "required",
+    positions: [BURRARD_HELMCKEN_SW, BURRARD_HELMCKEN_SE],
+  },
   // northbound
   {
     routes: [ROUTES.burrard.name],
@@ -153,7 +160,7 @@ export const BURRARD = [
       [49.28194, -123.12502],
       [49.28125, -123.12606],
       BURRARD_COMOX,
-      [49.28018, -123.12768],
+      BURRARD_HELMCKEN_SW,
       [49.2795, -123.12873],
       [49.27914, -123.12926],
       BURRARD_BURNABY_W,

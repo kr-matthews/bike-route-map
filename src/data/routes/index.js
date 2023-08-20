@@ -142,7 +142,7 @@ export const ROUTES = {
     name: "Cassiar",
     legs: [{ videos: {} }],
   },
-  cvg: {
+  centralValleyGreenway: {
     name: "Central Valley Greenway",
     shortName: "Central Valley Gr.",
     legs: [
