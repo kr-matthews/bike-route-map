@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/bike-route-map/static/css/main.e6c13ad2.css",
-    "main.js": "/bike-route-map/static/js/main.298838ba.js",
+    "main.css": "/bike-route-map/static/css/main.e2180261.css",
+    "main.js": "/bike-route-map/static/js/main.aebfbdd1.js",
     "index.html": "/bike-route-map/index.html",
-    "main.e6c13ad2.css.map": "/bike-route-map/static/css/main.e6c13ad2.css.map",
-    "main.298838ba.js.map": "/bike-route-map/static/js/main.298838ba.js.map"
+    "main.e2180261.css.map": "/bike-route-map/static/css/main.e2180261.css.map",
+    "main.aebfbdd1.js.map": "/bike-route-map/static/js/main.aebfbdd1.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.298838ba.js"
+    "static/css/main.e2180261.css",
+    "static/js/main.aebfbdd1.js"
   ]
 }
