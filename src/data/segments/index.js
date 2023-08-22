@@ -20,6 +20,7 @@ import { CHILCO } from "./chilco";
 import { COLUMBIA } from "./columbia";
 import { COMOX_HELMCKEN } from "./comoxHelmcken";
 import { CYPRESS } from "./cypress";
+import { DUMFRIES } from "./dumfries";
 import { DUNBAR } from "./dunbar";
 import { DUNSMUIR } from "./dunsmuir";
 import { FORTY_FIFTH } from "./fortyFifth";
@@ -57,6 +58,8 @@ import { THIRD } from "./third";
 import { TWENTY_NINTH } from "./twentyNinth";
 import { TWENTY_SECOND } from "./twentySecond";
 import { VALLEY } from "./valley";
+import { WINDERMERE } from "./windermere";
+import { WINDSOR } from "./windsor";
 import { YORK } from "./york";
 import { YUKON } from "./yukon";
 
@@ -84,6 +87,7 @@ export const SEGMENTS = [
   ...COLUMBIA,
   ...COMOX_HELMCKEN,
   ...CYPRESS,
+  ...DUMFRIES,
   ...DUNBAR,
   ...DUNSMUIR,
   ...FORTY_FIFTH,
@@ -121,6 +125,8 @@ export const SEGMENTS = [
   ...TWENTY_NINTH,
   ...TWENTY_SECOND,
   ...VALLEY,
+  ...WINDERMERE,
+  ...WINDSOR,
   ...YORK,
   ...YUKON,
 ];

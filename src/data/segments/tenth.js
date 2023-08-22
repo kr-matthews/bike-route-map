@@ -82,7 +82,7 @@ export const TENTH = [
   },
   {
     routes: [ROUTES.tenth.name],
-    description: "east of hospital",
+    description: "hospital to windsor",
     videos: [VIDEOS.tenthEb, VIDEOS.tenthWb],
     positions: [
       ASH_10TH_E,
@@ -107,6 +107,19 @@ export const TENTH = [
       [49.26151, -123.0872],
       [49.26149, -123.08525],
       WINDSOR_10TH,
+    ],
+  },
+  {
+    routes: [ROUTES.tenth.name, ROUTES.windsor.name],
+    description: "windsor",
+    videos: [VIDEOS.tenthEb, VIDEOS.tenthWb],
+    positions: [WINDSOR_10TH, GLEN_10TH],
+  },
+  {
+    routes: [ROUTES.tenth.name],
+    description: "windsor to victoria",
+    videos: [VIDEOS.tenthEb, VIDEOS.tenthWb],
+    positions: [
       GLEN_10TH,
       [49.26145, -123.07944],
       [49.26144, -123.07866],

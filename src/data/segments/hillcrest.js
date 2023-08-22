@@ -31,13 +31,6 @@ export const HILLCREST = [
       WINDSOR_31ST,
     ],
   },
-  // TODO: move to windsor file
-  {
-    routes: [ROUTES.windsor.name, ROUTES.hillcrest.name],
-    description: "hillcrest overlap",
-    videos: [VIDEOS.hillcrestEb, VIDEOS.hillcrestWb],
-    positions: [WINDSOR_31ST, WINDSOR_29TH],
-  },
   {
     routes: [ROUTES.hillcrest.name],
     description: "east of windsor",
