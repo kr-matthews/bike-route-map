@@ -20,11 +20,11 @@ export const ROUTES = {
     legs: [{ videos: { westbound: VIDEOS.fourteenthWb } }],
   },
   sixteenth: {
-    name: "16th",
+    name: "16th Ave",
     legs: [{ videos: {} }],
   },
   twentySecond: {
-    name: "22nd",
+    name: "22nd Ave",
     legs: [{ videos: { westbound: VIDEOS.twentySecondEb } }],
   },
   twentyNinth: {
@@ -44,7 +44,7 @@ export const ROUTES = {
     legs: [{ videos: {} }],
   },
   alberni: {
-    name: "Alberni",
+    name: "Alberni St",
     legs: [{ videos: {} }],
   },
   alder: {
@@ -78,11 +78,11 @@ export const ROUTES = {
     ],
   },
   beatty: {
-    name: "Beatty",
+    name: "Beatty St",
     legs: [{ videos: {} }],
   },
   blanca: {
-    name: "Blanca",
+    name: "Blanca St",
     legs: [{ videos: {} }],
   },
   burnaby: {
@@ -90,7 +90,7 @@ export const ROUTES = {
     legs: [{ videos: {} }],
   },
   burrard: {
-    name: "Burrard",
+    name: "Burrard St",
     legs: [{ videos: { northbound: VIDEOS.burrardNb } }],
   },
   bute: {
@@ -98,7 +98,11 @@ export const ROUTES = {
     legs: [{ videos: {} }],
   },
   cambie: {
-    name: "Cambie",
+    name: "Cambie St",
+    legs: [{ videos: {} }],
+  },
+  cambieGastown: {
+    name: "Cambie St (Gastown)",
     legs: [{ videos: {} }],
   },
   cambieBridge: {
@@ -152,7 +156,7 @@ export const ROUTES = {
     ],
   },
   chancellor: {
-    name: "Chancellor",
+    name: "Chancellor Blvd",
     legs: [{ videos: {} }],
   },
   chilco: {
@@ -183,7 +187,7 @@ export const ROUTES = {
     legs: [{ videos: {} }],
   },
   dunbar: {
-    name: "Dunbar",
+    name: "Dunbar St",
     legs: [{ videos: { northbound: VIDEOS.dunbarNb } }],
   },
   dunsmuir: {
@@ -199,7 +203,7 @@ export const ROUTES = {
     legs: [{ videos: {} }],
   },
   gardenCity: {
-    name: "Garden City",
+    name: "Garden City Rd",
     legs: [
       {
         videos: {
@@ -222,7 +226,7 @@ export const ROUTES = {
     legs: [{ videos: {} }],
   },
   highbury: {
-    name: "Highbury",
+    name: "Highbury St",
     legs: [{ videos: { northbound: VIDEOS.highburyNb } }],
   },
   hillcrest: {
@@ -253,7 +257,7 @@ export const ROUTES = {
     legs: [{ videos: {} }],
   },
   kerr: {
-    name: "Kerr",
+    name: "Kerr St",
     legs: [{ videos: {} }],
   },
   killarney: {
@@ -261,7 +265,7 @@ export const ROUTES = {
     legs: [{ videos: {} }],
   },
   kingEdward: {
-    name: "King Edward",
+    name: "King Edward Ave",
     legs: [{ videos: {} }],
   },
   lakewood: {
@@ -306,11 +310,11 @@ export const ROUTES = {
     legs: [{ videos: {} }],
   },
   nanaimo: {
-    name: "Nanaimo",
+    name: "Nanaimo St",
     legs: [{ videos: {} }],
   },
   nelson: {
-    name: "Nelson",
+    name: "Nelson St",
     legs: [{ videos: { eastbound: VIDEOS.cambieBridgeNelsonSb } }],
   },
   nicola: {
@@ -354,7 +358,7 @@ export const ROUTES = {
     legs: [{ videos: {} }],
   },
   rupert: {
-    name: "Rupert",
+    name: "Rupert St",
     legs: [{ videos: {} }],
   },
   seaside: {
@@ -389,7 +393,7 @@ export const ROUTES = {
     legs: [{ videos: {} }],
   },
   smithe: {
-    name: "Smithe",
+    name: "Smithe St",
     legs: [{ videos: { westbound: VIDEOS.cambieBridgeSmithNb } }],
   },
   stanleyParkLoop: {
@@ -404,7 +408,7 @@ export const ROUTES = {
     legs: [{ videos: {} }],
   },
   university: {
-    name: "University",
+    name: "University Blvd",
     legs: [{ videos: {} }],
   },
   valley: {
