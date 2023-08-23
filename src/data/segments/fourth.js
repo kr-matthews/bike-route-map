@@ -7,7 +7,6 @@ import {
   HIGHBURY_4TH_S,
   MARINE_4TH_N,
   MARINE_4TH_S,
-  MARINE_4TH_W,
   WALLACE_4TH_N,
   WALLACE_4TH_S,
 } from "../intersections";
@@ -16,6 +15,8 @@ import { VIDEOS } from "../videos";
 
 const CHANCELLOR_4TH_N = [49.26906, -123.22552];
 const CHANCELLOR_4TH_S = [49.26896, -123.22563];
+
+const SPLIT_WEST_OF_MARINE = [49.26843, -123.20086];
 
 export const FOURTH = [
   {
@@ -72,39 +73,62 @@ export const FOURTH = [
       [49.26826, -123.20319],
       [49.26821, -123.20224],
       [49.26829, -123.20135],
-      MARINE_4TH_W,
+      SPLIT_WEST_OF_MARINE,
     ],
   },
   {
     routes: [ROUTES.fourth.name],
-    description: "eastbound portion",
+    description: "brief eb to marine",
+    type: "uncomfortable",
+    oneWay: "required",
+    videos: [VIDEOS.fourthEb],
+    positions: [SPLIT_WEST_OF_MARINE, MARINE_4TH_S],
+  },
+  {
+    routes: [ROUTES.fourth.name, ROUTES.seasideBypass.name],
+    description: "eb to wallace",
     videos: [VIDEOS.fourthEb],
     oneWay: "required",
     positions: [
-      MARINE_4TH_W,
       MARINE_4TH_S,
       [49.26873, -123.19938],
       [49.26872, -123.19806],
       [49.26862, -123.19345],
       WALLACE_4TH_S,
-      [49.26863, -123.18871],
-      HIGHBURY_4TH_S,
     ],
   },
   {
     routes: [ROUTES.fourth.name],
-    description: "westbound portion",
+    description: "wallace to highbury",
+    videos: [VIDEOS.fourthEb],
+    oneWay: "required",
+    positions: [WALLACE_4TH_S, [49.26863, -123.18871], HIGHBURY_4TH_S],
+  },
+  {
+    routes: [ROUTES.fourth.name],
+    description: "highbury to wallace",
+    type: "uncomfortable",
+    oneWay: "required",
+    positions: [HIGHBURY_4TH_N, [49.26871, -123.18874], WALLACE_4TH_N],
+  },
+  {
+    routes: [ROUTES.fourth.name, ROUTES.seasideBypass.name],
+    description: "wallace to marine",
     type: "uncomfortable",
     oneWay: "required",
     positions: [
-      HIGHBURY_4TH_N,
-      [49.26871, -123.18874],
       WALLACE_4TH_N,
       [49.26883, -123.19343],
       [49.26889, -123.19803],
       [49.26889, -123.19942],
       MARINE_4TH_N,
-      MARINE_4TH_W,
     ],
+  },
+  {
+    routes: [ROUTES.fourth.name],
+    description: "brief wb beyond marin",
+    type: "uncomfortable",
+    oneWay: "required",
+    positions: [MARINE_4TH_N, SPLIT_WEST_OF_MARINE],
   },
 ];

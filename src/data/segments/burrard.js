@@ -34,8 +34,8 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-const BURRARD_NORTHBOUND_SPLIT = [49.2768, -123.13249];
-const BURRARD_SOUTHBOUND_MERGE = [49.27692, -123.13289];
+const BURRARD_NORTHBOUND_SPLIT = [49.2767, -123.13279];
+const BURRARD_SOUTHBOUND_MERGE = [49.27687, -123.13302];
 const NORTHBOUND_ELEVATION_START = [49.27323, -123.14368];
 const NORTHBOUND_ELEVATION_END = [49.27661, -123.13313];
 const SOUTHBOUND_ELEVATED_START = [49.2768, -123.1332];
@@ -110,6 +110,7 @@ export const BURRARD = [
     positions: [
       NORTHBOUND_ELEVATION_END,
       BURRARD_NORTHBOUND_SPLIT,
+      [49.2768, -123.13249],
       BURRARD_PACIFIC_SE_W,
       BURRARD_PACIFIC_NE,
       BURRARD_DRAKE_E,
@@ -126,12 +127,20 @@ export const BURRARD = [
   {
     description: "from pacific eb",
     oneWay: "required",
-    positions: [BURRARD_PACIFIC_SW, BURRARD_SOUTHBOUND_MERGE],
+    positions: [
+      BURRARD_PACIFIC_SW,
+      [49.27695, -123.13289],
+      BURRARD_SOUTHBOUND_MERGE,
+    ],
   },
   {
     description: "to pacific eb",
     oneWay: "required",
-    positions: [BURRARD_NORTHBOUND_SPLIT, BURRARD_PACIFIC_SE_E],
+    positions: [
+      BURRARD_NORTHBOUND_SPLIT,
+      [49.27678, -123.13244],
+      BURRARD_PACIFIC_SE_E,
+    ],
   },
   {
     description: "drake connection with hornby",
@@ -167,6 +176,7 @@ export const BURRARD = [
       BURRARD_DRAKE_W,
       [49.27775, -123.13142],
       BURRARD_PACIFIC_NW,
+      [49.27692, -123.13289],
       BURRARD_SOUTHBOUND_MERGE,
       SOUTHBOUND_ELEVATED_START,
     ],

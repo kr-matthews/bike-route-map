@@ -1,5 +1,4 @@
 import {
-  CHESTNUT_1ST,
   CHESTNUT_YORK,
   CYPRESS_YORK_SE,
   CYPRESS_YORK_SW,
@@ -10,7 +9,7 @@ import { VIDEOS } from "../videos";
 
 export const YORK = [
   {
-    routes: [ROUTES.york.name],
+    routes: [ROUTES.york.name, ROUTES.seasideBypass.name],
     description: "primary",
     videos: [VIDEOS.yorkEb],
     positions: [
@@ -26,13 +25,12 @@ export const YORK = [
       [49.2716, -123.15019],
       CYPRESS_YORK_SW,
       CYPRESS_YORK_SE,
-      CHESTNUT_YORK,
     ],
   },
-  // !! move to seaside bypass (?)
   {
-    description: "to york",
+    routes: [ROUTES.york.name],
+    description: "york to chestnut",
     videos: [VIDEOS.yorkEb],
-    positions: [CHESTNUT_1ST, CHESTNUT_YORK],
+    positions: [CYPRESS_YORK_SE, CHESTNUT_YORK],
   },
 ];

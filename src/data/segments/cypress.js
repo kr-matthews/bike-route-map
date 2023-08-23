@@ -138,15 +138,16 @@ export const CYPRESS = [
     ],
   },
   {
-    routes: [ROUTES.cypress.name],
-    description: "1st to cornwall",
+    routes: [ROUTES.cypress.name, ROUTES.seasideBypass.name],
+    description: "1st to york",
     oneWay: "required",
-    positions: [
-      CYPRESS_1ST,
-      CYPRESS_1ST_NE,
-      CYPRESS_YORK_SE,
-      CYPRESS_CORNWALL_SE,
-    ],
+    positions: [CYPRESS_1ST, CYPRESS_1ST_NE, CYPRESS_YORK_SE],
+  },
+  {
+    routes: [ROUTES.cypress.name],
+    description: "york to cornwall",
+    oneWay: "required",
+    positions: [CYPRESS_YORK_SE, CYPRESS_CORNWALL_SE],
   },
   {
     routes: [ROUTES.cypress.name],
@@ -155,14 +156,14 @@ export const CYPRESS = [
   },
   {
     routes: [ROUTES.cypress.name],
-    description: "cornwall to 1st",
+    description: "cornwall to york",
     oneWay: "required",
-    positions: [
-      CYPRESS_CORNWALL_N,
-      CYPRESS_CORNWALL_SW,
-      CYPRESS_YORK_SW,
-      CYPRESS_1ST_NW,
-      CYPRESS_1ST,
-    ],
+    positions: [CYPRESS_CORNWALL_N, CYPRESS_CORNWALL_SW, CYPRESS_YORK_SW],
+  },
+  {
+    routes: [ROUTES.cypress.name, ROUTES.seasideBypass.name],
+    description: "york to 1st",
+    oneWay: "required",
+    positions: [CYPRESS_YORK_SW, CYPRESS_1ST_NW, CYPRESS_1ST],
   },
 ];

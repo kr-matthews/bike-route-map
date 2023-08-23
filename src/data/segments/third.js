@@ -7,16 +7,11 @@ import {
   THIRD_SEASIDE,
   TRAFALGAR_3RD,
   WALLACE_3RD,
-  WALLACE_4TH_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 export const THIRD = [
-  {
-    description: "connection with 4th",
-    positions: [WALLACE_3RD, WALLACE_4TH_S],
-  },
   {
     description: "connection with valley",
     positions: [STEPHENS_3RD, TRAFALGAR_3RD],
@@ -28,7 +23,7 @@ export const THIRD = [
   },
   {
     routes: [ROUTES.third.name],
-    description: "primary",
+    description: "beach to bypass",
     videos: [VIDEOS.thirdEb],
     positions: [
       THIRD_SEASIDE,
@@ -40,6 +35,14 @@ export const THIRD = [
       [49.27071, -123.19208],
       [49.27012, -123.19205],
       [49.27011, -123.19061],
+      WALLACE_3RD,
+    ],
+  },
+  {
+    routes: [ROUTES.third.name, ROUTES.seasideBypass.name],
+    description: "primary",
+    videos: [VIDEOS.thirdEb],
+    positions: [
       WALLACE_3RD,
       HIGHBURY_3RD,
       [49.26952, -123.18569],

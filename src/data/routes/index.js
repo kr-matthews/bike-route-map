@@ -359,11 +359,25 @@ export const ROUTES = {
   },
   seaside: {
     name: "Seaside",
-    legs: [{ videos: {} }],
+    legs: [
+      { name: "Coal Harbour", videos: {} },
+      { name: "Stanley Park", videos: {} },
+      { name: "False Creek", videos: {} },
+      { name: "Kitsilano", videos: {} },
+      { name: "Jericho & Spanish Banks", videos: {} },
+    ],
   },
   seasideBypass: {
     name: "Seaside Bypass",
-    legs: [{ videos: {} }],
+    legs: [
+      { name: "Beach", videos: {} },
+      { name: "Pacific/Expo & Quebec", videos: {} },
+      { name: "False Creek South", videos: {} },
+      // whyte
+      { name: "York", videos: { eastbound: VIDEOS.yorkEb } },
+      { name: "3rd", videos: { eastbound: VIDEOS.thirdEb } },
+      { name: "NW Marine & 4th", videos: {} },
+    ],
   },
   seaToRiver: {
     name: "Sea to River",
@@ -380,7 +394,10 @@ export const ROUTES = {
   },
   stanleyParkLoop: {
     name: "Stanley Park Loop",
-    legs: [{ videos: {} }],
+    legs: [
+      { name: "Seawall", videos: {} },
+      { name: "Lost Lagoon", videos: {} },
+    ],
   },
   sunrise: {
     name: "Sunrise",
