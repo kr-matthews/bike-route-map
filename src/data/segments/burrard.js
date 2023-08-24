@@ -159,6 +159,7 @@ export const BURRARD = [
     elevation: 0.5,
     positions: [
       BURRARD_HASTINGS,
+      [49.28713, -123.1172],
       [49.28665, -123.11792],
       BURRARD_DUNSMUIR,
       [49.28522, -123.12009],

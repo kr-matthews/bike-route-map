@@ -34,6 +34,7 @@ import { HARO } from "./haro";
 import { HEATHER } from "./heather";
 import { HIGHBURY } from "./highbury";
 import { HILLCREST } from "./hillcrest";
+import { HORNBY } from "./hornby";
 import { IMPERIAL } from "./imperial";
 import { INVERNESS } from "./inverness";
 import { KERR } from "./kerr";
@@ -106,6 +107,7 @@ export const SEGMENTS = [
   ...HEATHER,
   ...HIGHBURY,
   ...HILLCREST,
+  ...HORNBY,
   ...IMPERIAL,
   ...INVERNESS,
   ...KERR,

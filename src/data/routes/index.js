@@ -268,6 +268,10 @@ export const ROUTES = {
     name: "King Edward Ave",
     legs: [{ videos: {} }],
   },
+  knightStreetBridge: {
+    name: "Knight Street Bridge",
+    legs: [{ videos: {} }],
+  },
   lakewood: {
     name: "Lakewood",
     legs: [{ videos: {} }],

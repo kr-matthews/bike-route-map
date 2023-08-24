@@ -5,7 +5,8 @@ import {
   CARDERO_COMOX,
   CHILCO_COMOX,
   HOMER_HELMCKEN,
-  HORNBY_HELMCKEN,
+  HORNBY_HELMCKEN_E,
+  HORNBY_HELMCKEN_SE,
   MAINLAND_HELMCKEN,
   PARK_COMOX,
   RICHARDS_HELMCKEN,
@@ -42,7 +43,7 @@ export const COMOX_HELMCKEN = [
       [49.28032, -123.1271],
       BURRARD_HELMCKEN_SE,
       [49.27949, -123.12668],
-      HORNBY_HELMCKEN,
+      HORNBY_HELMCKEN_SE,
     ],
   },
   {
@@ -51,7 +52,7 @@ export const COMOX_HELMCKEN = [
     type: "unofficial",
     videos: [VIDEOS.comoxHelmckenEb, VIDEOS.comoxHelmckenWb],
     positions: [
-      HORNBY_HELMCKEN,
+      HORNBY_HELMCKEN_E,
       [49.27884, -123.1256],
       [49.27819, -123.12458],
       [49.27757, -123.12364],

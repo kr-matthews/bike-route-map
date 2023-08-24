@@ -4,6 +4,7 @@ import {
   BURRARD_NELSON,
   BUTE_NELSON,
   HOMER_NELSON,
+  HORNBY_NELSON_E,
   RICHARDS_NELSON,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -20,7 +21,7 @@ export const NELSON = [
       BUTE_NELSON,
       [49.2825, -123.12801],
       BURRARD_NELSON,
-      [49.28053, -123.12498],
+      HORNBY_NELSON_E,
       [49.2799, -123.12401],
       [49.27926, -123.12304],
       [49.27863, -123.12203],
