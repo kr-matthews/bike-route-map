@@ -11,6 +11,8 @@ export const UNIDIRECTIONAL_COLOUR_FULL = "Blue";
 export const VIDEO_BIDIRECTIONAL_COLOUR = "Purple";
 export const VIDEO_UNIDIRECTIONAL_COLOUR = "Purple";
 
+export const CLOSED_COLOUR = "Red";
+
 export const ELEVATED_BORDER_COLOUR = "Black";
 export const UNDERGROUND_BORDER_COLOUR = "#967969";
 

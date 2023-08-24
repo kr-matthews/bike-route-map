@@ -18,10 +18,12 @@ import {
 } from "../intersections";
 import { ROUTES } from "../routes";
 
+const ARBUTUS_GREENWAY_8TH = [49.26473, -123.15236];
+
 export const ARBUTUS_GREENWAY = [
   {
     routes: [ROUTES.arbutusGreenway.name],
-    description: "primary",
+    description: "south of 10th",
     positions: [
       MILTON_ARBUTUS_GREENWAY,
       [49.20604, -123.14283],
@@ -110,8 +112,23 @@ export const ARBUTUS_GREENWAY = [
       [49.25913, -123.15255],
       [49.26099, -123.15248],
       ARBUTUS_GREENWAY_10TH,
+    ],
+  },
+  {
+    routes: [ROUTES.arbutusGreenway.name],
+    description: "10th to 8th",
+    isClosed: true,
+    positions: [
+      ARBUTUS_GREENWAY_10TH,
       [49.26384, -123.15239],
-      [49.26473, -123.15236],
+      ARBUTUS_GREENWAY_8TH,
+    ],
+  },
+  {
+    routes: [ROUTES.arbutusGreenway.name],
+    description: "north of 8th",
+    positions: [
+      ARBUTUS_GREENWAY_8TH,
       [49.26511, -123.15236],
       [49.26534, -123.1523],
       ARBUTUS_GREENWAY_7TH,

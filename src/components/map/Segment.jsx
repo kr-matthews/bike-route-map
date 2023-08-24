@@ -12,7 +12,8 @@ import MyPolyline from "./MyPolyline";
 // !! indicate by default whether route/segment has video (and/or quality of route, whether official or not (dashed line?), etc.)
 
 export default function Segment(segment) {
-  const { routes, oneWay, hideArrows, positions, elevation } = segment;
+  const { routes, oneWay, hideArrows, isClosed, positions, elevation } =
+    segment;
   const { selectedRoute, setSelected, highlighted, setHighlighted, video } =
     useContext(Selections);
 
@@ -61,6 +62,11 @@ export default function Segment(segment) {
     >
       {hasAnyRoutes && (
         <Tooltip {...tooltipProps}>
+          {isClosed && (
+            <div>
+              <b>[SEGMENT CLOSED]</b>
+            </div>
+          )}
           {routes.map((route) => (
             <div key={route}>
               {primaryRoute === route ? <b>{route}</b> : route}

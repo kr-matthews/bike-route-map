@@ -12,10 +12,11 @@ import {
   WIDE_WEIGHT,
   UNDERGROUND_BORDER_COLOUR,
   UNDERGROUND_WEIGHT,
+  CLOSED_COLOUR,
 } from "./params";
 
 export function createPathOptions(
-  { routes, oneWay, videos, type, hideUnlessVideo, elevation },
+  { routes, oneWay, isClosed, videos, type, hideUnlessVideo, elevation },
   { highlighted, selectedRoute, video }
 ) {
   const isSelected = (routes ?? []).includes(selectedRoute?.name);
@@ -43,7 +44,11 @@ export function createPathOptions(
   if (hideUnlessVideo && !hasActiveVideo) return { weight: 0, opacity: 0 };
 
   return {
-    color: hasActiveVideo ? videoColour : nonVideoColour,
+    color: isClosed
+      ? CLOSED_COLOUR
+      : hasActiveVideo
+      ? videoColour
+      : nonVideoColour,
     weight: elevation <= -1 ? UNDERGROUND_WEIGHT : nonUndergroundWeight,
     // explicit opacity required to show hidden routes when video is selected
     opacity: 100,
