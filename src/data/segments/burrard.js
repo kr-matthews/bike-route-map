@@ -157,6 +157,7 @@ export const BURRARD = [
     description: "southbound pre-bridge",
     oneWay: "required",
     elevation: 0.5,
+    videos: [VIDEOS.burrardSb],
     positions: [
       BURRARD_HASTINGS,
       [49.28713, -123.1172],
@@ -187,6 +188,7 @@ export const BURRARD = [
     description: "southbound bridge",
     oneWay: "required",
     elevation: 1,
+    videos: [VIDEOS.burrardSb],
     positions: [
       SOUTHBOUND_ELEVATED_START,
       [49.27622, -123.135],
@@ -202,6 +204,7 @@ export const BURRARD = [
     description: "southbound post-bridge",
     oneWay: "required",
     elevation: 0.5,
+    videos: [VIDEOS.burrardSb],
     positions: [
       SOUTHBOUND_ELEVATED_END,
       [49.27325, -123.14414],
@@ -213,6 +216,7 @@ export const BURRARD = [
   {
     routes: [ROUTES.burrard.name],
     description: "york bi-directional",
+    videos: [VIDEOS.burrardSb],
     positions: [
       BURRARD_YORK,
       [49.27218, -123.14563],
@@ -224,6 +228,7 @@ export const BURRARD = [
     routes: [ROUTES.burrard.name],
     description: "kits",
     oneWay: "required",
+    videos: [VIDEOS.burrardSb],
     positions: [
       BURRARD_YORK,
       [49.27162, -123.14561],

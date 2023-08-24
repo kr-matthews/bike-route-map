@@ -91,7 +91,11 @@ export const ROUTES = {
   },
   burrard: {
     name: "Burrard St",
-    legs: [{ videos: { northbound: VIDEOS.burrardNb } }],
+    legs: [
+      {
+        videos: { northbound: VIDEOS.burrardNb, southbound: VIDEOS.burrardSb },
+      },
+    ],
   },
   bute: {
     name: "Bute",
@@ -103,7 +107,7 @@ export const ROUTES = {
   },
   cambieGastown: {
     name: "Cambie St (Gastown)",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.cambieGastownNb } }],
   },
   cambieBridge: {
     name: "Cambie Bridge",

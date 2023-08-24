@@ -7,6 +7,7 @@ export const CAMBIE_GASTOWN = [
     routes: [ROUTES.cambieGastown.name],
     description: "primary",
     oneWay: "required",
+    videos: [VIDEOS.cambieGastownNb],
     positions: [
       CAMBIE_DUNSMUIR,
       [49.28143, -123.11002],
