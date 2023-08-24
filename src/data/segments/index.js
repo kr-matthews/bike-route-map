@@ -12,6 +12,7 @@ import { BURNABY } from "./burnaby";
 import { BURRARD } from "./burrard";
 import { BUTE } from "./bute";
 import { CAMBIE_BRIDGE } from "./cambieBridge";
+import { CAMBIE_GASTOWN } from "./cambieGastown";
 import { CANADA_LINE } from "./canadaLine";
 import { CARDERO } from "./cardero";
 import { CARRALL } from "./carrall";
@@ -35,7 +36,9 @@ import { HIGHBURY } from "./highbury";
 import { HILLCREST } from "./hillcrest";
 import { IMPERIAL } from "./imperial";
 import { INVERNESS } from "./inverness";
+import { KERR } from "./kerr";
 import { KILLARNEY } from "./killarney";
+import { LAKEWOOD } from "./lakewood";
 import { LIONS_GATE_BRIDGE } from "./lionsGateBridge";
 import { MARINE } from "./marine";
 import { MASUMI_MITSUI_GREENWAY } from "./masumiMitsui";
@@ -81,6 +84,7 @@ export const SEGMENTS = [
   ...BURRARD,
   ...BUTE,
   ...CAMBIE_BRIDGE,
+  ...CAMBIE_GASTOWN,
   ...CANADA_LINE,
   ...CARDERO,
   ...CARRALL,
@@ -104,7 +108,9 @@ export const SEGMENTS = [
   ...HILLCREST,
   ...IMPERIAL,
   ...INVERNESS,
+  ...KERR,
   ...KILLARNEY,
+  ...LAKEWOOD,
   ...LIONS_GATE_BRIDGE,
   ...MARINE,
   ...MASUMI_MITSUI_GREENWAY,

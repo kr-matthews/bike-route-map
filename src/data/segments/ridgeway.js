@@ -15,6 +15,7 @@ import {
   QUESNEL_20TH,
   QUESNEL_KING_EDWARD_N,
   QUESNEL_KING_EDWARD_S,
+  RUPERT_45TH,
   VIVIAN_45TH,
   WALES_45TH,
   YEW_37TH,
@@ -154,7 +155,7 @@ export const RIDGEWAY = [
     positions: [
       EARLES_45TH,
       KILLARNEY_45TH,
-      [49.22929, -123.04313],
+      RUPERT_45TH,
       [49.22928, -123.04079],
       [49.22928, -123.03863],
       [49.22927, -123.03642],
