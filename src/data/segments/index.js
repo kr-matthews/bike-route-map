@@ -39,6 +39,7 @@ import { IMPERIAL } from "./imperial";
 import { INVERNESS } from "./inverness";
 import { KERR } from "./kerr";
 import { KILLARNEY } from "./killarney";
+import { KNIGHT_ST_BRIDGE } from "./knightStBridge";
 import { LAKEWOOD } from "./lakewood";
 import { LIONS_GATE_BRIDGE } from "./lionsGateBridge";
 import { MARINE } from "./marine";
@@ -116,6 +117,7 @@ export const SEGMENTS = [
   ...INVERNESS,
   ...KERR,
   ...KILLARNEY,
+  ...KNIGHT_ST_BRIDGE,
   ...LAKEWOOD,
   ...LIONS_GATE_BRIDGE,
   ...MARINE,

@@ -61,6 +61,7 @@ export const BLANCA_16TH_NE = [49.2585, -123.21535];
 export const BLANCA_16TH_SE = [49.25829, -123.21536];
 export const BLANCA_16TH_TRAIL = [49.25864, -123.21598];
 export const BORDEN_59TH = [49.21633, -123.07403];
+export const BORDEN_KENT_N = [49.20953, -123.07401];
 export const BOUNDARY_45TH = [49.22923, -123.02341];
 export const BOUNDARY_ADANAC = [49.2775, -123.02355];
 export const BOUNDARY_CVG = [49.26245, -123.02363];
