@@ -137,13 +137,6 @@ export const OFF_BROADWAY = [
       WOODLAND_7TH,
     ],
   },
-  // TODO: move to mosaic file
-  {
-    routes: [ROUTES.mosaic.name, ROUTES.offBroadway.name],
-    description: "mosaic/off-broadway",
-    videos: [VIDEOS.offBroadwayWb],
-    positions: [WOODLAND_7TH, WOODLAND_GRANDVIEW],
-  },
   {
     routes: [ROUTES.offBroadway.name],
     description: "cvg/off-broadway east",

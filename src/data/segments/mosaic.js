@@ -45,6 +45,12 @@ export const MOSAIC = [
     ],
   },
   {
+    routes: [ROUTES.mosaic.name, ROUTES.offBroadway.name],
+    description: "mosaic/off-broadway",
+    videos: [VIDEOS.offBroadwayWb],
+    positions: [WOODLAND_7TH, WOODLAND_GRANDVIEW],
+  },
+  {
     routes: [ROUTES.mosaic.name],
     description: "grandview to franklin",
     positions: [

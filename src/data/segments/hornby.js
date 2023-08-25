@@ -18,7 +18,6 @@ export const HORNBY = [
     routes: [ROUTES.hornby.name],
     description: "primary",
     positions: [
-      // !!! add skipped intersections, name seaside x2 and beach
       HORNBY_SEABREEZE,
       [49.27521, -123.13304],
       [49.27523, -123.13292],
