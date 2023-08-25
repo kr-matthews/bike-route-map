@@ -1,4 +1,9 @@
-import { RUPERT_22ND, SLOCAN_22ND_N, SLOCAN_22ND_S } from "../intersections";
+import {
+  RUPERT_22ND_E,
+  RUPERT_22ND_W,
+  SLOCAN_22ND_N,
+  SLOCAN_22ND_S,
+} from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
@@ -58,7 +63,8 @@ export const TWENTY_SECOND = [
     positions: [
       RENFREW_22ND_E,
       [49.2506, -123.03901],
-      RUPERT_22ND,
+      RUPERT_22ND_W,
+      RUPERT_22ND_E,
       [49.25063, -123.0285],
       [49.25064, -123.02338],
     ],

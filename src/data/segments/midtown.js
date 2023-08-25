@@ -30,6 +30,9 @@ import {
   WINDSOR_37TH,
   YEW_37TH,
   MARINE_41ST_SW,
+  WALES_38TH,
+  RUPERT_29TH_E,
+  RUPERT_29TH_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -185,7 +188,7 @@ export const MIDTOWN = [
       [49.23588, -123.05546],
       [49.23587, -123.05422],
       [49.23587, -123.053],
-      [49.23586, -123.05169],
+      WALES_38TH,
       EARLES_38TH,
     ],
   },
@@ -199,7 +202,7 @@ export const MIDTOWN = [
   {
     routes: [ROUTES.midtown.name, ROUTES.sunrise.name],
     legs: [undefined, "Vancouver"],
-    description: "earles & 29th",
+    description: "earles",
     type: "uncomfortable",
     videos: [VIDEOS.midtownVancouverEb],
     positions: [
@@ -212,14 +215,15 @@ export const MIDTOWN = [
   {
     routes: [ROUTES.midtown.name],
     legs: ["Vancouver"],
-    description: "earles & 29th",
+    description: "29th",
     type: "uncomfortable",
     videos: [VIDEOS.midtownVancouverEb],
     positions: [
       EARLES_VANNESS,
       [49.24456, -123.0422],
       [49.24454, -123.03663],
-      [49.24453, -123.03404],
+      RUPERT_29TH_W,
+      RUPERT_29TH_E,
       CARIBOO_29TH,
     ],
   },

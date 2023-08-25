@@ -1,4 +1,4 @@
-import { DISCOVER_14TH, IMPERIAL_16TH, IMPERIAL_29TH } from "../intersections";
+import { DISCOVER_15TH, IMPERIAL_16TH, IMPERIAL_29TH } from "../intersections";
 
 export const IMPERIAL = [
   {
@@ -22,6 +22,6 @@ export const IMPERIAL = [
   {
     description: "connection to ridgeway",
     type: "unofficial",
-    positions: [IMPERIAL_16TH, DISCOVER_14TH],
+    positions: [IMPERIAL_16TH, DISCOVER_15TH],
   },
 ];

@@ -5,9 +5,10 @@ import {
   EARLES_VANNESS,
   GLADSTONE_BC_PARKWAY,
   LAKEWOOD_GRANDVIEW,
-  LAKEWOOD_MOSAIC,
+  LAKEWOOD_JOHN_HENDRY_PARK,
   SLOCAN_29TH,
   SLOCAN_BC_PARKWAY,
+  TODD_VANNESS,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -92,7 +93,7 @@ export const BC_PARKWAY = [
       LAKEWOOD_GRANDVIEW,
       [49.2595, -123.06208],
       [49.25859, -123.06209],
-      LAKEWOOD_MOSAIC,
+      LAKEWOOD_JOHN_HENDRY_PARK,
       [49.25791, -123.06212],
       [49.25789, -123.06087],
       [49.25782, -123.06049],
@@ -152,6 +153,7 @@ export const BC_PARKWAY = [
       [49.24401, -123.04609],
       [49.24364, -123.04521],
       [49.24372, -123.04514],
+      TODD_VANNESS,
       EARLES_VANNESS,
     ],
   },

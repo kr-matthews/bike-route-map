@@ -44,6 +44,7 @@ import { LIONS_GATE_BRIDGE } from "./lionsGateBridge";
 import { MARINE } from "./marine";
 import { MASUMI_MITSUI_GREENWAY } from "./masumiMitsui";
 import { MIDTOWN } from "./midtown";
+import { MOSAIC } from "./mosaic";
 import { NELSON } from "./nelson";
 import { NICOLA } from "./nicola";
 import { OFF_BROADWAY } from "./offBroadway";
@@ -54,6 +55,7 @@ import { POWELL } from "./powell";
 import { PRINCE_EDWARD } from "./princeEdward";
 import { RICHARDS } from "./richards";
 import { RIDGEWAY } from "./ridgeway";
+import { RUPERT } from "./rupert";
 import { SEASIDE_BYPASS } from "./seasideBypass";
 import { SECOND_NARROWS_BRIDGE } from "./secondNarrowsBridge";
 import { SIXTY_SEVENTH } from "./sixtySeventh";
@@ -64,6 +66,8 @@ import { THIRD } from "./third";
 import { TWENTY_NINTH } from "./twentyNinth";
 import { TWENTY_SECOND } from "./twentySecond";
 import { VALLEY } from "./valley";
+import { WALES_DUCHESS } from "./walesDuchess";
+import { WATERFRONT } from "./waterfront";
 import { WINDERMERE } from "./windermere";
 import { WINDSOR } from "./windsor";
 import { YORK } from "./york";
@@ -117,6 +121,7 @@ export const SEGMENTS = [
   ...MARINE,
   ...MASUMI_MITSUI_GREENWAY,
   ...MIDTOWN,
+  ...MOSAIC,
   ...NELSON,
   ...NICOLA,
   ...OFF_BROADWAY,
@@ -127,6 +132,7 @@ export const SEGMENTS = [
   ...PRINCE_EDWARD,
   ...RICHARDS,
   ...RIDGEWAY,
+  ...RUPERT,
   ...SEASIDE_BYPASS,
   ...SECOND_NARROWS_BRIDGE,
   ...SIXTY_SEVENTH,
@@ -137,6 +143,8 @@ export const SEGMENTS = [
   ...TWENTY_NINTH,
   ...TWENTY_SECOND,
   ...VALLEY,
+  ...WALES_DUCHESS,
+  ...WATERFRONT,
   ...WINDERMERE,
   ...WINDSOR,
   ...YORK,

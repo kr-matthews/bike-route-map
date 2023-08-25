@@ -341,6 +341,10 @@ export const ROUTES = {
     name: "Pandora",
     legs: [{ videos: { eastbound: VIDEOS.pandoraEb } }],
   },
+  pender: {
+    name: "Pender St",
+    legs: [{ videos: {} }],
+  },
   portside: {
     name: "Portside",
     legs: [{ videos: {} }],
@@ -425,6 +429,10 @@ export const ROUTES = {
   },
   walesDuchess: {
     name: "Wales Duchess",
+    legs: [{ videos: {} }],
+  },
+  waterfront: {
+    name: "Waterfront St",
     legs: [{ videos: {} }],
   },
   windermere: {

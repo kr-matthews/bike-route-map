@@ -569,7 +569,7 @@ export const SEASIDE_BYPASS = [
   },
   {
     routes: [ROUTES.seasideBypass.name],
-    description: "quebec sb",
+    description: "quebec sb no lane",
     oneWay: "required",
     type: "uncomfortable",
     positions: [
@@ -591,7 +591,7 @@ export const SEASIDE_BYPASS = [
   },
   {
     routes: [ROUTES.seasideBypass.name],
-    description: "quebec sb",
+    description: "quebec sb lane",
     oneWay: "required",
     positions: [
       QUEBEC_TERMINAL_SW,
