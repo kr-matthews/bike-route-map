@@ -39,7 +39,7 @@ import { IMPERIAL } from "./imperial";
 import { INVERNESS } from "./inverness";
 import { KERR } from "./kerr";
 import { KILLARNEY } from "./killarney";
-import { KNIGHT_ST_BRIDGE } from "./knightStBridge";
+import { KNIGHT_STREET_BRIDGE } from "./knightStBridge";
 import { LAKEWOOD } from "./lakewood";
 import { LIONS_GATE_BRIDGE } from "./lionsGateBridge";
 import { MARINE } from "./marine";
@@ -48,6 +48,7 @@ import { MIDTOWN } from "./midtown";
 import { MOSAIC } from "./mosaic";
 import { NELSON } from "./nelson";
 import { NICOLA } from "./nicola";
+import { OAK_STREET_BRIDGE } from "./oakStBridge";
 import { OFF_BROADWAY } from "./offBroadway";
 import { ONTARIO } from "./ontario";
 import { PANDORA } from "./pandora";
@@ -117,7 +118,7 @@ export const SEGMENTS = [
   ...INVERNESS,
   ...KERR,
   ...KILLARNEY,
-  ...KNIGHT_ST_BRIDGE,
+  ...KNIGHT_STREET_BRIDGE,
   ...LAKEWOOD,
   ...LIONS_GATE_BRIDGE,
   ...MARINE,
@@ -126,6 +127,7 @@ export const SEGMENTS = [
   ...MOSAIC,
   ...NELSON,
   ...NICOLA,
+  ...OAK_STREET_BRIDGE,
   ...OFF_BROADWAY,
   ...ONTARIO,
   ...PANDORA,

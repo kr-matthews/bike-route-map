@@ -25,7 +25,7 @@ const SOUTHBOUND_ELEVATION_END_1 = [49.20732, -123.07754];
 const SOUTHBOUND_ELEVATION_START_2 = [49.20566, -123.07767];
 const SOUTHBOUND_ELEVATION_END_2 = [49.19489, -123.07759];
 
-export const KNIGHT_ST_BRIDGE = [
+export const KNIGHT_STREET_BRIDGE = [
   // northbound
   {
     routes: [ROUTES.knightStreetBridge.name],

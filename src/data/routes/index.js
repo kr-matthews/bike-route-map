@@ -329,6 +329,10 @@ export const ROUTES = {
     name: "Nicola",
     legs: [{ videos: { northbound: VIDEOS.nicolaNb } }],
   },
+  oakStreetBridge: {
+    name: "Oak Street Bridge",
+    legs: [{ videos: {} }],
+  },
   offBroadway: {
     name: "Off-Broadway",
     legs: [{ videos: { westbound: VIDEOS.offBroadwayWb } }],
