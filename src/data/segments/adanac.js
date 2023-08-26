@@ -20,6 +20,7 @@ import {
   WINDERMERE_ADANAC,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const ADANAC = [
   {
@@ -111,6 +112,7 @@ export const ADANAC = [
   {
     routes: [ROUTES.adanac.name, ROUTES.sunrise.name],
     description: "sunrise",
+    videos: [VIDEOS.sunriseNb],
     positions: [SLOCAN_ADANAC, KASLO_ADANAC],
   },
   {

@@ -193,18 +193,11 @@ export const MIDTOWN = [
     ],
   },
   {
-    routes: [ROUTES.sunrise.name, ROUTES.midtown.name],
-    legs: [undefined, "Vancouver"],
-    description: "earles to kingsway",
-    videos: [VIDEOS.midtownVancouverEb],
-    positions: [EARLES_38TH, KINGSWAY_EARLES],
-  },
-  {
     routes: [ROUTES.midtown.name, ROUTES.sunrise.name],
     legs: [undefined, "Vancouver"],
     description: "earles",
     type: "uncomfortable",
-    videos: [VIDEOS.midtownVancouverEb],
+    videos: [VIDEOS.midtownVancouverEb, VIDEOS.sunriseNb],
     positions: [
       KINGSWAY_EARLES,
       [49.23977, -123.04681],

@@ -262,7 +262,7 @@ export const ROUTES = {
   },
   kerr: {
     name: "Kerr St",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.kerrSb } }],
   },
   killarney: {
     name: "Killarney",
@@ -421,7 +421,7 @@ export const ROUTES = {
   },
   sunrise: {
     name: "Sunrise",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.sunriseNb } }],
   },
   university: {
     name: "University Blvd",
@@ -433,7 +433,7 @@ export const ROUTES = {
   },
   walesDuchess: {
     name: "Wales Duchess",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.walesDuchessSb } }],
   },
   waterfront: {
     name: "Waterfront St",

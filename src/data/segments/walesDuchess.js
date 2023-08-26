@@ -5,11 +5,13 @@ import {
   WALES_46TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const WALES_DUCHESS = [
   {
     routes: [ROUTES.walesDuchess.name],
     description: "primary",
+    videos: [VIDEOS.walesDuchessSb],
     positions: [
       WALES_46TH,
       WALES_45TH,

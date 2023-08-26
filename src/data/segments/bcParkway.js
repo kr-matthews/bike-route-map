@@ -44,6 +44,7 @@ export const BC_PARKWAY = [
     description: "29th alt road",
     oneWay: "recommended",
     type: "uncomfortable",
+    videos: [VIDEOS.sunriseNb],
     positions: [[49.24463, -123.04702], SLOCAN_29TH],
   },
   {
@@ -51,6 +52,7 @@ export const BC_PARKWAY = [
     legs: ["Vancouver"],
     description: "29th alt path",
     oneWay: "recommended",
+    videos: [VIDEOS.sunriseNb],
     positions: [
       BC_PARKWAY_29TH_STATION,
       [49.24437, -123.04673],
@@ -146,7 +148,7 @@ export const BC_PARKWAY = [
     routes: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
     legs: ["Vancouver"],
     description: "sunrise",
-    videos: [VIDEOS.bcParkwayVancouverEb],
+    videos: [VIDEOS.bcParkwayVancouverEb, VIDEOS.sunriseNb],
     positions: [
       BC_PARKWAY_29TH_STATION,
       [49.24415, -123.0463],

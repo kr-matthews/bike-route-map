@@ -26,6 +26,7 @@ const VIDEOS = {
   hillcrestEb: "gwZnVGbA4x4",
   hillcrestWb: "wnFFioj6OVA",
   invernessSb: "eim5zDSdA2I",
+  kerrSb: "A_MpEUYNWxE",
   lionsGateBridgeNb: "KbhPPsdOzIE",
   lionsGateBridgeSb: "eHio3HMRIMw",
   masumiMitsuiEb: "QVK6E_hmQFc",
@@ -39,12 +40,14 @@ const VIDEOS = {
   powellEb: "vTtdPgHQCp0",
   princeEdwardNb: "A91bdcMUC98",
   sixtySeventhPlusWb: "z5GzRN2_iNc",
+  sunriseNb: "YGhkRf0VmKw",
   swMarineEb: "l-DWh9zHOAo",
   tenthEb: "wgLoXc7ydDA",
   tenthWb: "R9Im8PUzSlM",
   thirdEb: "B5KPg3I32Ws",
   twentySecondEb: "4vjaCs_VJTg",
   valleySb: "SDClkLpfIHc",
+  walesDuchessSb: "q-4HxNr0aWA",
   yorkEb: "kLMm6tBVuXc",
 };
 

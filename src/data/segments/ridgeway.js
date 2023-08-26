@@ -145,7 +145,7 @@ export const RIDGEWAY = [
   {
     routes: [ROUTES.ridgeway.name, ROUTES.sunrise.name],
     description: "sunrise",
-    videos: [VIDEOS.fortyFifthWb],
+    videos: [VIDEOS.fortyFifthWb, VIDEOS.sunriseNb],
     positions: [VIVIAN_45TH, EARLES_45TH],
   },
   {

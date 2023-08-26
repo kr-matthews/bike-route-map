@@ -7,6 +7,7 @@ import {
   KASLO_ADANAC,
   KASLO_PANDORA,
   KASLO_WALL,
+  KINGSWAY_EARLES,
   SLOCAN_22ND_N,
   SLOCAN_22ND_S,
   SLOCAN_29TH,
@@ -25,12 +26,14 @@ export const SUNRISE = [
   {
     routes: [ROUTES.sunrise.name],
     description: "kent to marine",
+    videos: [VIDEOS.sunriseNb],
     positions: [ELLIOTT_KENT, ELLIOTT_MARINE],
   },
   {
     routes: [ROUTES.sunrise.name],
     description: "marine to vivian",
     type: "uncomfortable",
+    videos: [VIDEOS.sunriseNb],
     positions: [
       ELLIOTT_MARINE,
       [49.20761, -123.05686],
@@ -45,6 +48,7 @@ export const SUNRISE = [
   {
     routes: [ROUTES.sunrise.name],
     description: "kent to ridgeway",
+    videos: [VIDEOS.sunriseNb],
     positions: [
       ELLIOTT_VIVIAN,
       [49.21273, -123.05487],
@@ -66,6 +70,7 @@ export const SUNRISE = [
   {
     routes: [ROUTES.sunrise.name],
     description: "ridgeway to midtown",
+    videos: [VIDEOS.sunriseNb],
     positions: [
       EARLES_45TH,
       [49.23116, -123.04881],
@@ -75,17 +80,25 @@ export const SUNRISE = [
     ],
   },
   {
+    routes: [ROUTES.sunrise.name, ROUTES.midtown.name],
+    legs: [undefined, "Vancouver"],
+    description: "earles to kingsway",
+    videos: [VIDEOS.sunriseNb, VIDEOS.midtownVancouverEb],
+    positions: [EARLES_38TH, KINGSWAY_EARLES],
+  },
+  {
     routes: [ROUTES.sunrise.name, ROUTES.bcParkway.name],
     legs: ["Vancouver"],
     description: "slocan",
     type: "uncomfortable",
-    videos: [VIDEOS.bcParkwayVancouverEb],
+    videos: [VIDEOS.sunriseNb, VIDEOS.bcParkwayVancouverEb],
     positions: [SLOCAN_BC_PARKWAY, SLOCAN_29TH],
   },
   {
     routes: [ROUTES.sunrise.name],
     description: "bc parkway to 22nd",
     type: "uncomfortable",
+    videos: [VIDEOS.sunriseNb],
     positions: [
       SLOCAN_BC_PARKWAY,
       [49.24793, -123.04965],
@@ -97,6 +110,7 @@ export const SUNRISE = [
   {
     routes: [ROUTES.sunrise.name],
     description: "22nd to adanac",
+    videos: [VIDEOS.sunriseNb],
     positions: [
       SLOCAN_22ND_N,
       [49.25154, -123.04961],
@@ -121,6 +135,7 @@ export const SUNRISE = [
   {
     routes: [ROUTES.sunrise.name],
     description: "adanac to wall",
+    videos: [VIDEOS.sunriseNb],
     positions: [
       KASLO_ADANAC,
       [49.27772, -123.04672],
