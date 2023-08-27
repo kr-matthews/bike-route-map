@@ -2,7 +2,7 @@ import Routes from "./Routes";
 import SelectedRoute from "./SelectedRoute";
 
 // !!! move styling to css files
-export default function Preview() {
+export default function Preview({ mapRef }) {
   return (
     <div
       style={{
@@ -15,7 +15,7 @@ export default function Preview() {
       }}
     >
       <Routes />
-      <SelectedRoute />
+      <SelectedRoute mapRef={mapRef} />
     </div>
   );
 }

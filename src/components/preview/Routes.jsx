@@ -9,7 +9,6 @@ import {
 import { isSubsequence, removeWhiteSpaces } from "../../utils/strings";
 
 // !! partition routes by e-w / n-s, by city, by other?
-// !!! allow 'zoom to route'
 // !! allow filtering (by direction, to only official, by quality, etc)?
 
 export default function Routes() {

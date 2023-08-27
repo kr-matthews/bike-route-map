@@ -1,20 +1,10 @@
 import { MapContainer, Pane, TileLayer } from "react-leaflet";
-import { LatLngBounds } from "leaflet";
 import { SEGMENTS } from "../../data/segments";
 import Segment from "./Segment";
+import { TILE_LAYER, DEFAULT_BOUNDS } from "../../utils/map";
 import "./map.css";
 
-const VANCOUVER_BOUNDS = new LatLngBounds(
-  [49.32946, -123.27558],
-  [49.18965, -122.96316]
-);
-const TILE_LAYER = {
-  attribution:
-    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-  url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-};
-
-export default function Map() {
+export default function Map({ setMapRef }) {
   return (
     <div style={{ height: "1em", width: "calc(100% - 625px)" }}>
       <MapContainer
@@ -22,8 +12,9 @@ export default function Map() {
           width: "100%",
           height: "100vh",
         }}
-        bounds={VANCOUVER_BOUNDS}
+        bounds={DEFAULT_BOUNDS}
         scrollWheelZoom
+        whenReady={({ target: mapRef }) => setMapRef(mapRef)}
       >
         <Pane name="elevated-2" style={{ zIndex: 311 }} />
         <Pane name="elevated-2-adj" style={{ zIndex: 310 }} />

@@ -2,8 +2,9 @@ import { useContext, useEffect } from "react";
 import { Selections } from "../../App";
 import Leg from "./Leg";
 import { SEGMENTS } from "../../data/segments";
+import { getRouteBounds } from "../../utils/map";
 
-export default function SelectedRoute() {
+export default function SelectedRoute({ mapRef }) {
   const { selectedRoute, setSelected } = useContext(Selections);
 
   useEffect(
@@ -34,6 +35,17 @@ export default function SelectedRoute() {
     >
       {selectedRoute && (
         <>
+          <button
+            style={{
+              position: "absolute",
+              top: 25,
+              left: 20,
+              cursor: "pointer",
+            }}
+            onClick={() => mapRef.fitBounds(getRouteBounds(selectedRoute.name))}
+          >
+            Zoom to
+          </button>
           <h2 style={{ textAlign: "center", marginBottom: "4px" }}>
             {selectedRoute.name}
           </h2>
