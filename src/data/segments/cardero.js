@@ -13,6 +13,17 @@ import { ROUTES } from "../routes";
 export const CARDERO = [
   {
     routes: [ROUTES.cardero.name],
+    description: "seawall to beach",
+    isClosed: true,
+    positions: [
+      [49.28294, -123.14212],
+      [49.28298, -123.14201],
+      [49.28304, -123.14195],
+      CARDERO_BEACH,
+    ],
+  },
+  {
+    routes: [ROUTES.cardero.name],
     description: "primary",
     positions: [
       CARDERO_BEACH,

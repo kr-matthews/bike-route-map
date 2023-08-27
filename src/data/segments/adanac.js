@@ -14,6 +14,10 @@ import {
   MCLEAN_ADANAC,
   NANAIMO_ADANAC_E,
   NANAIMO_ADANAC_W,
+  QUEBEC_UNION_NE,
+  QUEBEC_UNION_NW,
+  QUEBEC_UNION_SE,
+  QUEBEC_UNION_SW,
   SLOCAN_ADANAC,
   VERNON_ADANAC,
   VERNON_UNION,
@@ -21,6 +25,8 @@ import {
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
+
+const UNION_SPLIT = [49.27761, -123.10316];
 
 export const ADANAC = [
   {
@@ -42,14 +48,18 @@ export const ADANAC = [
   },
   {
     routes: [ROUTES.adanac.name],
+    description: "east end merged",
+    positions: [EXPO_UNION, UNION_SPLIT],
+  },
+  {
+    routes: [ROUTES.adanac.name],
     description: "downtown eastbound",
     oneWay: "required",
     positions: [
-      EXPO_UNION,
-      [49.27757, -123.10316],
+      UNION_SPLIT,
       [49.27756, -123.10282],
-      [49.27762, -123.10218],
-      [49.27762, -123.1021],
+      QUEBEC_UNION_SW,
+      QUEBEC_UNION_SE,
       [49.27767, -123.10143],
       MAIN_UNION_SW,
       MAIN_UNION_SE,
@@ -72,10 +82,10 @@ export const ADANAC = [
       MAIN_UNION_NW,
       [49.27773, -123.10054],
       [49.27773, -123.10144],
-      [49.27769, -123.10211],
-      [49.27768, -123.1022],
+      QUEBEC_UNION_NE,
+      QUEBEC_UNION_NW,
       [49.27763, -123.10298],
-      EXPO_UNION,
+      UNION_SPLIT,
     ],
   },
   {

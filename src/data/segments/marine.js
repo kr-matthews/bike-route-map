@@ -21,6 +21,7 @@ import {
   MARINE_CHANCELLOR_SE,
   MARINE_4TH_N,
   MARINE_4TH_S,
+  MARINE_SEAWALL,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -32,6 +33,10 @@ const MARINE_WEST_MALL_ISH = [49.268, -123.25956];
 const MARINE_WEST_MALL = [49.26862, -123.25881];
 const SPANISH_BANKS_BUS_LOOP = [49.27607, -123.21541];
 const BEYOND_CECIL_GREEN_PARK = [49.27056, -123.25527];
+
+const SPANISH_BANKS_CONNECTION_1 = [49.27726, -123.22283];
+const SPANISH_BANKS_CONNECTION_2 = [49.27596, -123.2151];
+const SPANISH_BANKS_CONNECTION_3 = [49.27483, -123.20574];
 
 export const MARINE = [
   // sw marine
@@ -353,6 +358,18 @@ export const MARINE = [
   },
   // nw marine
   {
+    description: "spanish banks connection 1",
+    positions: [SPANISH_BANKS_CONNECTION_1, [49.2773, -123.2228]],
+  },
+  {
+    description: "spanish banks connection 2",
+    positions: [SPANISH_BANKS_CONNECTION_2, [49.27604, -123.21505]],
+  },
+  {
+    description: "spanish banks connection 3",
+    positions: [SPANISH_BANKS_CONNECTION_3, MARINE_SEAWALL],
+  },
+  {
     routes: [ROUTES.marine.name],
     description: "ubc to west mall-ish",
     type: "uncomfortable",
@@ -555,7 +572,7 @@ export const MARINE = [
       [49.27742, -123.22417],
       [49.27738, -123.22364],
       [49.27734, -123.22327],
-      [49.27726, -123.22288],
+      SPANISH_BANKS_CONNECTION_1,
       [49.27714, -123.22235],
       [49.27677, -123.2208],
       [49.27659, -123.22007],
@@ -576,7 +593,7 @@ export const MARINE = [
     description: "spanish banks to 4th",
     positions: [
       SPANISH_BANKS_BUS_LOOP,
-      [49.27596, -123.2151],
+      SPANISH_BANKS_CONNECTION_2,
       [49.27581, -123.21473],
       [49.27572, -123.21444],
       [49.27544, -123.2135],
@@ -593,7 +610,7 @@ export const MARINE = [
       [49.27478, -123.20646],
       [49.27486, -123.20594],
       [49.27485, -123.20582],
-      [49.27483, -123.20574],
+      SPANISH_BANKS_CONNECTION_3,
       [49.27478, -123.20568],
       [49.27473, -123.20565],
       [49.27362, -123.20569],

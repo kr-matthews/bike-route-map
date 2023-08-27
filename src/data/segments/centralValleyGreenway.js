@@ -39,6 +39,12 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const SCOTIA_1ST = [49.26837, -123.09735];
+const THORNTON_1ST = [49.26766, -123.09488];
+const WESTBOUND_CLOSURE = [49.26725, -123.0933];
+const THORNTON_GREAT_NORTHERN = [49.26694, -123.09508];
+const GREAT_NORTHERN_SPLIT = [49.26691, -123.09309];
+
 const EAST_PARK_S = [49.27036, -123.10443];
 
 const BEFORE_OVERPASS = [49.25771, -122.9647];
@@ -114,19 +120,70 @@ export const CENTRAL_VALLEY_GREENWAY = [
   {
     routes: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
+    description: "thornton construction, gone",
+    isClosed: true,
+    positions: [THORNTON_GREAT_NORTHERN, [49.2671, -123.09508], THORNTON_1ST],
+  },
+  {
+    description: "thornton north",
+    positions: [THORNTON_1ST, [49.26845, -123.09456]],
+  },
+  {
+    routes: [ROUTES.centralValleyGreenway.name],
+    legs: ["Vancouver"],
+    description: "1st scotia to thornton",
+    positions: [
+      SCOTIA_1ST,
+      [49.26782, -123.0964],
+      [49.26779, -123.09622],
+      [49.26773, -123.09603],
+      [49.26771, -123.09595],
+      [49.26769, -123.0958],
+      THORNTON_1ST,
+    ],
+  },
+  {
+    routes: [ROUTES.centralValleyGreenway.name],
+    legs: ["Vancouver"],
+    description: "subway construction, gone",
+    isClosed: true,
+    positions: [
+      THORNTON_1ST,
+      [49.26764, -123.0946],
+      [49.26762, -123.09446],
+      [49.26739, -123.09411],
+      [49.26735, -123.09398],
+      WESTBOUND_CLOSURE,
+    ],
+  },
+  {
+    routes: [ROUTES.centralValleyGreenway.name],
+    legs: ["Vancouver"],
+    description: "east portion of subway construction",
+    positions: [
+      WESTBOUND_CLOSURE,
+      [49.26721, -123.09324],
+      GREAT_NORTHERN_SPLIT,
+    ],
+  },
+  {
+    routes: [ROUTES.centralValleyGreenway.name],
+    legs: ["Vancouver"],
     description: "1st to commercial",
     positions: [
       MAIN_1ST_E,
       [49.26921, -123.09887],
-      [49.26837, -123.09735],
+      SCOTIA_1ST,
       [49.2678, -123.09808],
       [49.2673, -123.09724],
       [49.26718, -123.09697],
       [49.26703, -123.09656],
-      [49.26696, -123.09623],
       [49.26692, -123.09588],
       [49.2669, -123.09561],
-      [49.26691, -123.09308],
+      [49.26691, -123.09531],
+      [49.26694, -123.09524],
+      THORNTON_GREAT_NORTHERN,
+      GREAT_NORTHERN_SPLIT,
       [49.26689, -123.09084],
       [49.26688, -123.08983],
       [49.26684, -123.08933],

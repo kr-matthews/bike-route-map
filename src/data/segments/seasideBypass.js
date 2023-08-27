@@ -1,4 +1,5 @@
 import {
+  ARBUTUS_WHYTE,
   BURRARD_1ST_E,
   BURRARD_1ST_W,
   BURRARD_PACIFIC_NE,
@@ -18,8 +19,12 @@ import {
   COLUMBIA_1ST_N,
   COLUMBIA_1ST_S,
   CYPRESS_1ST,
+  CYPRESS_WHYTE,
   EXPO_UNION,
+  GRANVILLE_SEABREEZE,
+  HOMER_BEACH,
   HOMER_PACIFIC_S,
+  HORNBY_BEACH,
   HORNBY_PACIFIC_NE,
   HORNBY_PACIFIC_SE,
   NELSON_PACIFIC_SE,
@@ -32,10 +37,22 @@ import {
   QUEBEC_1ST_SE,
   QUEBEC_1ST_SW,
   QUEBEC_5TH,
+  QUEBEC_KEEFER_E,
+  QUEBEC_KEEFER_W,
+  QUEBEC_UNION_NE,
+  QUEBEC_UNION_NW,
+  QUEBEC_UNION_SE,
+  QUEBEC_UNION_SW,
+  RICHARDS_BEACH,
   RICHARDS_PACIFIC_NE,
   RICHARDS_PACIFIC_SE,
+  SEAWALL_BEACH,
+  SEAWALL_DAVIE_E,
+  SEAWALL_DAVIE_W,
+  SEAWALL_WHYTE,
   SMITHE_EXPO_N,
   SPYGLASS_COMMODORE,
+  THURLOW_SEAWALL,
   WALLACE_3RD,
   WALLACE_4TH_S,
   WYLIE_1ST_N,
@@ -56,12 +73,31 @@ const THURLOW_PACIFIC_N = [49.27832, -123.13436];
 const THURLOW_PACIFIC_W = [49.27833, -123.13447];
 
 const EASTBOUND_SPLIT_AT_BURRARD = [49.27704, -123.13263];
-const QUEBEC_QUEBEC_W = [49.27633, -123.10282];
+const QUEBEC_QUEBEC_NW = [49.27634, -123.10282];
+const QUEBEC_QUEBEC_SW = [49.27628, -123.10277];
 const QUEBEC_TERMINAL_SW = [49.27288, -123.10192];
 const QUEBEC_3RD = [49.26822, -123.10276];
 
 const JERVIS_BEACH_SW = [49.28071, -123.13823];
 const BEACH_SPLIT = [49.28129, -123.13918];
+const BEACH_JERVIS_SPLIT = [49.28052, -123.13843];
+const THURLOW_BEACH = [49.27757, -123.13548];
+const THURLOW_SEASIDE_PATH = [49.27751, -123.13542];
+const GRANVILLE_BEACH = [49.2741, -123.13082];
+
+const PACIFIC_DAVIE_NE = [49.27413, -123.12143];
+const PACIFIC_DAVIE_NW = [49.27409, -123.12158];
+const MARINASIDE_DAVIE_NW = [49.27309, -123.12002];
+const MARINASIDE_DAVIE_NE = [49.27315, -123.11992];
+const MARINASIDE_DAVIE_W = [49.27293, -123.11995];
+const MARINASIDE_DAVIE_E = [49.27313, -123.11967];
+
+const QUEBEC_SEAWALL = [49.27563, -123.10317];
+const QUEBEC_PATH_SPLIT = [49.27621, -123.10287];
+const QUEBEC_EXPO_SE = [49.2766, -123.10222];
+const QUEBEC_EXPO_NE = [49.27671, -123.1023];
+
+const CASTINGS_LAMEYS_MILL = [49.26646, -123.13076];
 
 export const SEASIDE_BYPASS = [
   // connections
@@ -162,7 +198,7 @@ export const SEASIDE_BYPASS = [
       [49.26669, -123.13209],
       [49.26661, -123.13167],
       [49.26649, -123.13096],
-      [49.26646, -123.13075],
+      CASTINGS_LAMEYS_MILL,
       [49.26643, -123.13045],
       [49.26641, -123.13006],
       [49.2664, -123.12943],
@@ -301,8 +337,8 @@ export const SEASIDE_BYPASS = [
       [49.27606, -123.10205],
       [49.27635, -123.10212],
       [49.27655, -123.1022],
-      [49.27661, -123.10223],
-      [49.27668, -123.10228],
+      QUEBEC_EXPO_SE,
+      QUEBEC_EXPO_NE,
       [49.27678, -123.10236],
       [49.27689, -123.10244],
       [49.27699, -123.10253],
@@ -424,8 +460,8 @@ export const SEASIDE_BYPASS = [
       [49.27454, -123.1198],
       [49.27449, -123.12001],
       [49.27429, -123.1208],
-      [49.27415, -123.12137],
-      [49.27409, -123.12159],
+      PACIFIC_DAVIE_NE,
+      PACIFIC_DAVIE_NW,
       [49.27387, -123.1224],
       [49.27351, -123.12375],
       [49.27329, -123.12456],
@@ -564,7 +600,7 @@ export const SEASIDE_BYPASS = [
       [49.27688, -123.10354],
       [49.27677, -123.10332],
       [49.27659, -123.1031],
-      QUEBEC_QUEBEC_W,
+      QUEBEC_QUEBEC_NW,
     ],
   },
   {
@@ -573,7 +609,8 @@ export const SEASIDE_BYPASS = [
     oneWay: "required",
     type: "uncomfortable",
     positions: [
-      QUEBEC_QUEBEC_W,
+      QUEBEC_QUEBEC_NW,
+      QUEBEC_QUEBEC_SW,
       [49.27618, -123.10266],
       [49.27601, -123.10249],
       [49.27586, -123.10236],
@@ -668,6 +705,233 @@ export const SEASIDE_BYPASS = [
       BEACH_SPLIT,
       [49.28112, -123.13889],
       JERVIS_BEACH_SW,
+    ],
+  },
+  // other bypasses
+  {
+    description: "beach-beach",
+    positions: [BEACH_JERVIS_SPLIT, JERVIS_BEACH_SW],
+  },
+  {
+    description: "beach: beach to hornby",
+    positions: [
+      BEACH_SPLIT,
+      [49.2807, -123.1386],
+      BEACH_JERVIS_SPLIT,
+      [49.28041, -123.13832],
+      [49.27991, -123.13781],
+      [49.27926, -123.13715],
+      THURLOW_BEACH,
+      THURLOW_SEASIDE_PATH,
+      [49.27688, -123.13479],
+      [49.27642, -123.13436],
+      [49.27614, -123.13406],
+      [49.27608, -123.13398],
+      [49.276, -123.13384],
+      [49.27538, -123.1329],
+      HORNBY_BEACH,
+    ],
+  },
+  {
+    description: "beach: hornby to granville",
+    type: "unofficial",
+    positions: [HORNBY_BEACH, [49.27473, -123.13183], GRANVILLE_BEACH],
+  },
+  {
+    description: "under granville bridge",
+    positions: [GRANVILLE_BEACH, GRANVILLE_SEABREEZE],
+  },
+  {
+    description: "beach east of granville",
+    positions: [
+      GRANVILLE_BEACH,
+      [49.27343, -123.1298],
+      [49.27335, -123.12967],
+      [49.27333, -123.12963],
+      [49.27329, -123.12954],
+      [49.27325, -123.12941],
+      [49.27324, -123.12935],
+      [49.27325, -123.12924],
+      [49.27325, -123.12916],
+      [49.27328, -123.12906],
+      [49.27329, -123.12895],
+      [49.2733, -123.12883],
+      [49.27329, -123.12871],
+      [49.27327, -123.12862],
+      [49.27325, -123.12852],
+      [49.27321, -123.12842],
+      RICHARDS_BEACH,
+      [49.27311, -123.12827],
+      [49.27307, -123.12823],
+      [49.27301, -123.12818],
+      [49.27297, -123.12817],
+      [49.27291, -123.12814],
+      [49.27286, -123.12814],
+      [49.2728, -123.12814],
+      [49.27274, -123.12816],
+      [49.27262, -123.1282],
+      [49.27255, -123.1282],
+      [49.27248, -123.12819],
+      [49.27243, -123.12816],
+      [49.2724, -123.12814],
+      [49.27227, -123.12798],
+      [49.27187, -123.12739],
+      HOMER_BEACH,
+      SEAWALL_BEACH,
+    ],
+  },
+  {
+    description: "thurlow: seawall to beach",
+    isClosed: true,
+    positions: [
+      THURLOW_SEAWALL,
+      [49.27732, -123.13606],
+      [49.27732, -123.13582],
+      [49.27736, -123.13563],
+      THURLOW_SEASIDE_PATH,
+    ],
+  },
+  {
+    description: "thurlow: beach to pacific",
+    positions: [THURLOW_BEACH, THURLOW_PACIFIC_N],
+  },
+  {
+    description: "davie: pacific to marinaside",
+    oneWay: "required",
+    positions: [
+      PACIFIC_DAVIE_NW,
+      MARINASIDE_DAVIE_NW,
+      [49.27304, -123.12003],
+      [49.27298, -123.12001],
+      MARINASIDE_DAVIE_W,
+      [49.2729, -123.11989],
+      [49.27289, -123.11982],
+      [49.27291, -123.11971],
+      [49.27296, -123.11963],
+      [49.27302, -123.11961],
+      [49.27308, -123.11962],
+      MARINASIDE_DAVIE_E,
+      [49.27316, -123.11976],
+      [49.27316, -123.11981],
+      MARINASIDE_DAVIE_NE,
+      PACIFIC_DAVIE_NE,
+    ],
+  },
+  {
+    description: "davie: pacific to marinaside",
+    oneWay: "required",
+    hideArrows: true,
+    positions: [MARINASIDE_DAVIE_NE, MARINASIDE_DAVIE_NW],
+  },
+  {
+    description: "davie: west connection to seawall",
+    positions: [
+      SEAWALL_DAVIE_W,
+      [49.27277, -123.11987],
+      [49.27281, -123.11992],
+      MARINASIDE_DAVIE_W,
+    ],
+  },
+  {
+    description: "davie: east connection to seawall",
+    positions: [
+      MARINASIDE_DAVIE_E,
+      [49.27312, -123.11957],
+      [49.27314, -123.11951],
+      SEAWALL_DAVIE_E,
+    ],
+  },
+  {
+    description: "seawall to quebec/pacific",
+    positions: [
+      QUEBEC_SEAWALL,
+      [49.27565, -123.10301],
+      [49.27564, -123.10245],
+      [49.27567, -123.10238],
+      [49.27574, -123.10239],
+      [49.27585, -123.10249],
+      QUEBEC_PATH_SPLIT,
+    ],
+  },
+  {
+    description: "quebec connection to union nb",
+    oneWay: "required",
+    positions: [
+      QUEBEC_PATH_SPLIT,
+      QUEBEC_QUEBEC_SW,
+      [49.27633, -123.10267],
+      [49.27642, -123.10247],
+      [49.27651, -123.10232],
+      QUEBEC_EXPO_SE,
+      [49.27669, -123.10215],
+      [49.27681, -123.1021],
+      [49.2769, -123.10209],
+      QUEBEC_UNION_SE,
+      QUEBEC_UNION_NE,
+      [49.27792, -123.10208],
+      [49.27865, -123.10209],
+      [49.27887, -123.10209],
+      [49.27903, -123.1021],
+      [49.27915, -123.10212],
+      QUEBEC_KEEFER_E,
+    ],
+  },
+  {
+    description: "quebec connection from union sb",
+    oneWay: "required",
+    positions: [
+      QUEBEC_KEEFER_W,
+      [49.27916, -123.10221],
+      [49.2791, -123.1022],
+      [49.279, -123.10218],
+      [49.27866, -123.10218],
+      QUEBEC_UNION_NW,
+      QUEBEC_UNION_SW,
+      [49.27717, -123.10223],
+      [49.27688, -123.10224],
+      [49.2768, -123.10225],
+      QUEBEC_EXPO_NE,
+      [49.2766, -123.10239],
+      [49.27641, -123.10272],
+      QUEBEC_QUEBEC_NW,
+      [49.27628, -123.10289],
+      [49.27623, -123.10289],
+      QUEBEC_PATH_SPLIT,
+    ],
+  },
+  {
+    description: "castings connection",
+    positions: [
+      [49.26713, -123.13161],
+      [49.26687, -123.13127],
+      [49.2667, -123.13085],
+      [49.26664, -123.13079],
+      [49.26659, -123.13074],
+      CASTINGS_LAMEYS_MILL,
+    ],
+  },
+  {
+    routes: [ROUTES.seasideBypass.name],
+    description: "whyte",
+    positions: [
+      ARBUTUS_WHYTE,
+      [49.27538, -123.15009],
+      CYPRESS_WHYTE,
+      [49.27531, -123.14623],
+      [49.27531, -123.14593],
+      [49.2753, -123.14574],
+      [49.27526, -123.14558],
+      [49.27521, -123.14545],
+      [49.27513, -123.14523],
+      [49.27508, -123.14507],
+      [49.27506, -123.14492],
+      [49.27503, -123.14467],
+      [49.27503, -123.14435],
+      [49.27507, -123.14405],
+      [49.27513, -123.14378],
+      [49.27521, -123.14352],
+      [49.27547, -123.14295],
+      SEAWALL_WHYTE,
     ],
   },
 ];
