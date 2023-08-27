@@ -103,11 +103,10 @@ export const ROUTES = {
   },
   cambie: {
     name: "Cambie St",
-    legs: [{ videos: {} }],
-  },
-  cambieGastown: {
-    name: "Cambie St (Gastown)",
-    legs: [{ videos: { northbound: VIDEOS.cambieGastownNb } }],
+    legs: [
+      { name: "South Vancouver", videos: {} },
+      { name: "Gastown", videos: { northbound: VIDEOS.cambieGastownNb } },
+    ],
   },
   cambieBridge: {
     name: "Cambie Bridge",

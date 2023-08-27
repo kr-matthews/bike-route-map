@@ -11,8 +11,8 @@ import { BLANCA } from "./blanca";
 import { BURNABY } from "./burnaby";
 import { BURRARD } from "./burrard";
 import { BUTE } from "./bute";
+import { CAMBIE } from "./cambie";
 import { CAMBIE_BRIDGE } from "./cambieBridge";
-import { CAMBIE_GASTOWN } from "./cambieGastown";
 import { CANADA_LINE } from "./canadaLine";
 import { CARDERO } from "./cardero";
 import { CARRALL } from "./carrall";
@@ -90,8 +90,8 @@ export const SEGMENTS = [
   ...BURNABY,
   ...BURRARD,
   ...BUTE,
+  ...CAMBIE,
   ...CAMBIE_BRIDGE,
-  ...CAMBIE_GASTOWN,
   ...CANADA_LINE,
   ...CARDERO,
   ...CARRALL,

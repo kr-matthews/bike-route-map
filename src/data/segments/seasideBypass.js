@@ -796,7 +796,7 @@ export const SEASIDE_BYPASS = [
     positions: [THURLOW_BEACH, THURLOW_PACIFIC_N],
   },
   {
-    description: "davie: pacific to marinaside",
+    description: "davie: pacific to marinaside and back",
     oneWay: "required",
     positions: [
       PACIFIC_DAVIE_NW,
@@ -818,7 +818,7 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    description: "davie: pacific to marinaside",
+    description: "davie/marinaside circle completion",
     oneWay: "required",
     hideArrows: true,
     positions: [MARINASIDE_DAVIE_NE, MARINASIDE_DAVIE_NW],

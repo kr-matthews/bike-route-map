@@ -1,4 +1,5 @@
 import {
+  CAMBIE_49TH_SE,
   CAMBIE_49TH_SW,
   HEATHER_10TH_N,
   HEATHER_10TH_S,
@@ -92,6 +93,7 @@ export const HEATHER = [
       [49.22617, -123.11896],
       [49.22613, -123.11807],
       CAMBIE_49TH_SW,
+      CAMBIE_49TH_SE,
     ],
   },
   // rest
