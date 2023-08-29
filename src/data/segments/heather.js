@@ -83,18 +83,24 @@ export const HEATHER = [
     routes: [ROUTES.heather.name],
     description: "41st eb 3",
     oneWay: "required",
+    videos: [VIDEOS.cambieSb],
     positions: [TISDALL_49TH_SW, TISDALL_49TH_SE],
   },
   {
     description: "41st eb 4",
     oneWay: "required",
+    videos: [VIDEOS.cambieSb],
     positions: [
       TISDALL_49TH_SE,
       [49.22617, -123.11896],
       [49.22613, -123.11807],
       CAMBIE_49TH_SW,
-      CAMBIE_49TH_SE,
     ],
+  },
+  {
+    description: "41st eb 5",
+    oneWay: "required",
+    positions: [CAMBIE_49TH_SW, CAMBIE_49TH_SE],
   },
   // rest
   {

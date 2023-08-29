@@ -44,6 +44,7 @@ export const CAMBIE = [
     routes: [ROUTES.cambie.name],
     description: "sb",
     oneWay: "required",
+    videos: [VIDEOS.cambieSb],
     positions: [
       CAMBIE_49TH_SW,
       [49.22522, -123.11674],

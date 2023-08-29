@@ -6,6 +6,7 @@ const VIDEOS = {
   bcParkwayVancouverEb: "3giKczCLloI",
   burrardNb: "62m58RRdHcg",
   burrardSb: "pFj4NnJ80Fk",
+  cambieSb: "RNDV1Zc8rB8",
   cambieBridgeNelsonSb: "FWN1apBAy3g",
   cambieBridgeSmithNb: "i_GE3QKQZBA",
   cambieGastownNb: "kLbDio3XorY",
