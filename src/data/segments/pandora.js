@@ -2,7 +2,8 @@ import {
   KASLO_PANDORA,
   LAKEWOOD_PANDORA,
   MCLEAN_FRANKLIN,
-  NANAIMO_PANDORA,
+  NANAIMO_PANDORA_E,
+  NANAIMO_PANDORA_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -23,7 +24,8 @@ export const PANDORA = [
       LAKEWOOD_PANDORA,
       [49.283, -123.05973],
       [49.28301, -123.05779],
-      NANAIMO_PANDORA,
+      NANAIMO_PANDORA_W,
+      NANAIMO_PANDORA_E,
       [49.28299, -123.05457],
       [49.28298, -123.05194],
       [49.28298, -123.04931],

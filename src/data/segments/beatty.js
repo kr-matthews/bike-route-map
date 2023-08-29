@@ -3,6 +3,10 @@ import {
   BEATTY_DUNSMUIR_NW,
   BEATTY_NELSON_SE,
   BEATTY_NELSON_SW,
+  BEATTY_PENDER_NE,
+  BEATTY_PENDER_NW,
+  BEATTY_PENDER_SE,
+  BEATTY_PENDER_SW,
   BEATTY_SMITHE_N,
   BEATTY_SMITHE_S,
 } from "../intersections";
@@ -23,7 +27,8 @@ export const BEATTY = [
       [49.27754, -123.11397],
       [49.27868, -123.11225],
       BEATTY_DUNSMUIR_NE,
-      [49.28116, -123.1085],
+      BEATTY_PENDER_SE,
+      BEATTY_PENDER_NE,
     ],
   },
   {
@@ -31,7 +36,8 @@ export const BEATTY = [
     description: "wb",
     oneWay: "required",
     positions: [
-      [49.28118, -123.10865],
+      BEATTY_PENDER_NW,
+      BEATTY_PENDER_SW,
       BEATTY_DUNSMUIR_NW,
       [49.27878, -123.11231],
       [49.27763, -123.11404],

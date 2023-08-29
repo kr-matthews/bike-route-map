@@ -11,13 +11,16 @@ import {
   CAMBIE_49TH_SE,
   CAMBIE_45TH_E,
   CAMBIE_37TH_E,
+  CAMBIE_PENDER_SE,
+  CAMBIE_PENDER_NE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 const CAMBIE_42ND_E = [49.23254, -123.11606];
 
-// !!! add connections: 42nd, 33rd, king edward, bit of cambie near 35th
+// !!! add connections: 42nd, 33rd, king edward, 24th
+// !!! add bit of sb cambie near 35th
 
 export const CAMBIE = [
   // gastown
@@ -28,8 +31,8 @@ export const CAMBIE = [
     videos: [VIDEOS.cambieGastownNb],
     positions: [
       CAMBIE_DUNSMUIR,
-      [49.28143, -123.11002],
-      [49.2816, -123.10989],
+      CAMBIE_PENDER_SE,
+      CAMBIE_PENDER_NE,
       [49.28251, -123.10949],
       [49.28347, -123.10908],
       [49.2842, -123.10878],

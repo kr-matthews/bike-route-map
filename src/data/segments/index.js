@@ -34,9 +34,11 @@ import { HARO } from "./haro";
 import { HEATHER } from "./heather";
 import { HIGHBURY } from "./highbury";
 import { HILLCREST } from "./hillcrest";
+import { HOMER } from "./homer";
 import { HORNBY } from "./hornby";
 import { IMPERIAL } from "./imperial";
 import { INVERNESS } from "./inverness";
+import { KEEFER } from "./keefer";
 import { KERR } from "./kerr";
 import { KILLARNEY } from "./killarney";
 import { KNIGHT_STREET_BRIDGE } from "./knightStBridge";
@@ -46,12 +48,14 @@ import { MARINE } from "./marine";
 import { MASUMI_MITSUI_GREENWAY } from "./masumiMitsui";
 import { MIDTOWN } from "./midtown";
 import { MOSAIC } from "./mosaic";
+import { NANAIMO } from "./nanaimo";
 import { NELSON } from "./nelson";
 import { NICOLA } from "./nicola";
 import { OAK_STREET_BRIDGE } from "./oakStBridge";
 import { OFF_BROADWAY } from "./offBroadway";
 import { ONTARIO } from "./ontario";
 import { PANDORA } from "./pandora";
+import { PENDER } from "./pender";
 import { PORTSIDE } from "./portside";
 import { POWELL } from "./powell";
 import { PRINCE_EDWARD } from "./princeEdward";
@@ -113,9 +117,11 @@ export const SEGMENTS = [
   ...HEATHER,
   ...HIGHBURY,
   ...HILLCREST,
+  ...HOMER,
   ...HORNBY,
   ...IMPERIAL,
   ...INVERNESS,
+  ...KEEFER,
   ...KERR,
   ...KILLARNEY,
   ...KNIGHT_STREET_BRIDGE,
@@ -125,12 +131,14 @@ export const SEGMENTS = [
   ...MASUMI_MITSUI_GREENWAY,
   ...MIDTOWN,
   ...MOSAIC,
+  ...NANAIMO,
   ...NELSON,
   ...NICOLA,
   ...OAK_STREET_BRIDGE,
   ...OFF_BROADWAY,
   ...ONTARIO,
   ...PANDORA,
+  ...PENDER,
   ...PORTSIDE,
   ...POWELL,
   ...PRINCE_EDWARD,
