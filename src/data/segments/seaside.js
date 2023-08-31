@@ -6,7 +6,11 @@ import {
   CARDERO_SEAWALL_S,
   CARRALL_SEAWALL,
   CASTINGS_SEAWALL,
+  CHESTNUT_OGDEN,
+  CHILCO_SEAWALL,
   CYPRESS_OGDEN,
+  DENMAN_GEORGIA_N,
+  FIR_1ST_N,
   GRANVILLE_SEABREEZE,
   HIGHBURY_POINT_GREY,
   HORNBY_SEABREEZE,
@@ -15,6 +19,7 @@ import {
   MARINE_SEAWALL_CONNECTION_1,
   MARINE_SEAWALL_CONNECTION_2,
   ONTARIO_PATH_SEASIDE,
+  PINE_1ST,
   QUEBEC_SEAWALL,
   SEASIDE_W_END,
   SEAWALL_BEACH,
@@ -32,13 +37,44 @@ import { ROUTES } from "../routes";
 
 const SEASIDE_POINT_GREY_W = [49.27133, -123.19079];
 const SEASIDE_WHYTE_E = [49.27631, -123.14042];
+const CREEKSIDE_1ST = [49.2714, -123.14019];
+const FIR_1ST_NW = [49.27089, -123.14144];
 
 const SEAWALL_LOST_LAGOON = [49.29522, -123.13589];
+const DENMAN_SEAWALL = [49.29345, -123.13229];
 
 const SEAWALL_STANLEY_PARK_WEST_END = [49.29031, -123.14571];
 const SEAWALL_UNDER_BURRARD_N = [49.27587, -123.13547];
 
+// !! connections: bc place? to confirm
+
 export const SEASIDE = [
+  // connections
+  {
+    description: "denman",
+    positions: [DENMAN_GEORGIA_N, [49.29341, -123.13255], DENMAN_SEAWALL],
+  },
+  {
+    description: "road/path connection",
+    positions: [FIR_1ST_NW, FIR_1ST_N],
+  },
+  {
+    description: "1st/fir connection",
+    positions: [
+      PINE_1ST,
+      [49.27067, -123.14319],
+      [49.27066, -123.14179],
+      [49.27074, -123.14161],
+      FIR_1ST_NW,
+      [49.27098, -123.14133],
+      [49.27102, -123.14126],
+      [49.27108, -123.14114],
+      [49.27117, -123.14092],
+      [49.2714, -123.14028],
+      CREEKSIDE_1ST,
+    ],
+  },
+  // sections
   {
     routes: [ROUTES.seaside.name],
     description: "spanish banks & jericho",
@@ -228,7 +264,7 @@ export const SEASIDE = [
       [49.27693, -123.1483],
       CYPRESS_OGDEN,
       [49.2768, -123.14746],
-      [49.27679, -123.14618],
+      CHESTNUT_OGDEN,
       [49.27725, -123.14617],
       [49.27729, -123.14609],
       [49.2774, -123.14587],
@@ -288,7 +324,7 @@ export const SEASIDE = [
       [49.27267, -123.14083],
       [49.27254, -123.1408],
       [49.27146, -123.1402],
-      [49.2714, -123.14019], // connection?
+      CREEKSIDE_1ST,
       [49.27137, -123.1402],
       [49.27134, -123.14019],
       [49.27128, -123.14019],
@@ -664,7 +700,8 @@ export const SEASIDE = [
     positions: [
       SEAWALL_STANLEY_PARK_WEST_END,
       [49.29012, -123.14541],
-      [49.28943, -123.14433], // chilco connection
+      [49.28943, -123.14433],
+      CHILCO_SEAWALL,
       [49.28853, -123.14294],
       [49.2884, -123.14276],
       [49.28827, -123.14264],
@@ -765,9 +802,9 @@ export const SEASIDE = [
       [49.29382, -123.13282],
       [49.29368, -123.13268],
       [49.29359, -123.13254],
-      [49.29352, -123.13244], // connection
+      [49.29352, -123.13244],
       [49.29351, -123.13237],
-      [49.29345, -123.13229],
+      DENMAN_SEAWALL,
       [49.29345, -123.13223],
       [49.29351, -123.13212],
       [49.29305, -123.13141],

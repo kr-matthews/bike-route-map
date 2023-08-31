@@ -25,6 +25,8 @@ import {
   BURRARD_SMITHE,
   BURRARD_YORK,
   CHESTNUT_CORNWALL,
+  CHESTNUT_OGDEN,
+  CHESTNUT_WHYTE,
   CHESTNUT_YORK,
   CYPRESS_CORNWALL_N,
   CYPRESS_CORNWALL_SE,
@@ -44,6 +46,23 @@ const NORTHBOUND_ENDPOINT = [49.27851, -123.12991];
 const SOUTHBOUND_ENDPOINT = [49.26517, -123.14582];
 
 export const BURRARD = [
+  // chestnut
+  {
+    description: "chestnut",
+    positions: [
+      CHESTNUT_CORNWALL,
+      [49.27267, -123.14633],
+      [49.27296, -123.14634],
+      [49.27305, -123.14636],
+      [49.27352, -123.14633],
+      [49.27358, -123.14631],
+      [49.27442, -123.14626],
+      CHESTNUT_WHYTE,
+      [49.27675, -123.14616],
+      CHESTNUT_OGDEN,
+    ],
+  },
+  // connection
   {
     description: "left onto helmcken",
     oneWay: "required",
@@ -276,7 +295,7 @@ export const BURRARD = [
     description: "southbound to chestnut connection",
     positions: [
       CHESTNUT_CORNWALL,
-      [49.27254, -123.14592],
+      [49.27254, -123.14596],
       [49.27252, -123.14577],
       [49.27258, -123.14554],
       BURRARD_CORNWALL_NW,

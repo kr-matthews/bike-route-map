@@ -5,11 +5,19 @@ import {
   CHILCO_COMOX,
   CHILCO_GEORGIA_S,
   CHILCO_HARO,
+  CHILCO_SEAWALL,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 export const CHILCO = [
+  {
+    routes: [ROUTES.chilco.name],
+    description: "closed",
+    isClosed: true,
+    videos: [VIDEOS.chilcoSb],
+    positions: [CHILCO_SEAWALL, CHILCO_BEACH],
+  },
   {
     routes: [ROUTES.chilco.name],
     description: "primary",
