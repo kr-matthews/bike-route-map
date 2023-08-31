@@ -385,6 +385,7 @@ export const ROUTES = {
     legs: [
       { name: "Coal Harbour", videos: {} },
       { name: "Stanley Park", videos: {} },
+      { name: "West End", videos: {} },
       { name: "False Creek", videos: {} },
       { name: "Kitsilano", videos: {} },
       { name: "Jericho & Spanish Banks", videos: {} },
@@ -394,9 +395,10 @@ export const ROUTES = {
     name: "Seaside Bypass",
     legs: [
       { name: "Beach", videos: {} },
-      { name: "Pacific/Expo & Quebec", videos: {} },
+      { name: "Pacific/Expo", videos: {} },
+      // includes quebec
       { name: "False Creek South", videos: {} },
-      // whyte
+      // whyte?
       { name: "York", videos: { eastbound: VIDEOS.yorkEb } },
       { name: "3rd", videos: { eastbound: VIDEOS.thirdEb } },
       { name: "NW Marine & 4th", videos: {} },

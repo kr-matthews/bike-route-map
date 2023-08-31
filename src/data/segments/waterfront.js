@@ -1,4 +1,4 @@
-import { MAIN_ALEXANDER } from "../intersections";
+import { MAIN_ALEXANDER, SEAWALL_WATERFRONT } from "../intersections";
 import { ROUTES } from "../routes";
 
 const MAIN_ELEVATED_N = [49.28522, -123.10017];
@@ -13,7 +13,7 @@ export const WATERFRONT = [
     description: "pre-underground",
     type: "unofficial",
     elevation: -0.5,
-    positions: [[49.28981, -123.11882], UNDERGROUND_W],
+    positions: [SEAWALL_WATERFRONT, UNDERGROUND_W],
   },
   {
     routes: [ROUTES.waterfront.name],

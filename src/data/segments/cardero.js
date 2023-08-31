@@ -6,7 +6,8 @@ import {
   CARDERO_GEORGIA_N,
   CARDERO_GEORGIA_S,
   CARDERO_HARO,
-  CARDERO_SEAWALL,
+  CARDERO_SEAWALL_N,
+  CARDERO_SEAWALL_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
@@ -16,7 +17,7 @@ export const CARDERO = [
     description: "seawall to beach",
     isClosed: true,
     positions: [
-      [49.28294, -123.14212],
+      CARDERO_SEAWALL_S,
       [49.28298, -123.14201],
       [49.28304, -123.14195],
       CARDERO_BEACH,
@@ -39,7 +40,9 @@ export const CARDERO = [
       CARDERO_ALBERNI,
       CARDERO_GEORGIA_S,
       CARDERO_GEORGIA_N,
-      CARDERO_SEAWALL,
+      [49.29182, -123.12873],
+      [49.29183, -123.12864],
+      CARDERO_SEAWALL_N,
     ],
   },
 ];

@@ -22,11 +22,12 @@ import {
   MARINE_4TH_N,
   MARINE_4TH_S,
   MARINE_SEAWALL,
+  SEASIDE_W_END,
+  MARINE_SEAWALL_CONNECTION_1,
+  MARINE_SEAWALL_CONNECTION_2,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
-
-const SEASIDE_END = [49.27864, -123.23624];
 
 const GRANVILLE_GAS_STATION = [49.20539, -123.14034];
 const MARINE_WEST_MALL_ISH = [49.268, -123.25956];
@@ -359,11 +360,11 @@ export const MARINE = [
   // nw marine
   {
     description: "spanish banks connection 1",
-    positions: [SPANISH_BANKS_CONNECTION_1, [49.2773, -123.2228]],
+    positions: [SPANISH_BANKS_CONNECTION_1, MARINE_SEAWALL_CONNECTION_1],
   },
   {
     description: "spanish banks connection 2",
-    positions: [SPANISH_BANKS_CONNECTION_2, [49.27604, -123.21505]],
+    positions: [SPANISH_BANKS_CONNECTION_2, MARINE_SEAWALL_CONNECTION_2],
   },
   {
     description: "spanish banks connection 3",
@@ -542,7 +543,7 @@ export const MARINE = [
       [49.27914, -123.2387],
       [49.27903, -123.2379],
       [49.27886, -123.2371],
-      SEASIDE_END,
+      SEASIDE_W_END,
     ],
   },
   {
@@ -550,7 +551,7 @@ export const MARINE = [
     description: "shared lane portion",
     type: "uncomfortable",
     positions: [
-      SEASIDE_END,
+      SEASIDE_W_END,
       [49.27826, -123.23481],
       [49.27822, -123.23462],
       [49.27816, -123.23429],

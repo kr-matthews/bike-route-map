@@ -62,6 +62,7 @@ import { PRINCE_EDWARD } from "./princeEdward";
 import { RICHARDS } from "./richards";
 import { RIDGEWAY } from "./ridgeway";
 import { RUPERT } from "./rupert";
+import { SEASIDE } from "./seaside";
 import { SEASIDE_BYPASS } from "./seasideBypass";
 import { SECOND_NARROWS_BRIDGE } from "./secondNarrowsBridge";
 import { SIXTY_SEVENTH } from "./sixtySeventh";
@@ -145,6 +146,7 @@ export const SEGMENTS = [
   ...RICHARDS,
   ...RIDGEWAY,
   ...RUPERT,
+  ...SEASIDE,
   ...SEASIDE_BYPASS,
   ...SECOND_NARROWS_BRIDGE,
   ...SIXTY_SEVENTH,
