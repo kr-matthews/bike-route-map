@@ -15,11 +15,23 @@ import { VIDEOS } from "../videos";
 export const YUKON = [
   {
     routes: [ROUTES.yukon.name],
-    description: "29th to 7th",
+    description: "29th to king edward",
     positions: [
       YUKON_29TH,
       [49.24697, -123.11228],
+      [49.2486, -123.11221],
       YUKON_KING_EDWARD_SE,
+    ],
+  },
+  {
+    routes: [ROUTES.yukon.name],
+    description: "king edward overlap",
+    positions: [YUKON_KING_EDWARD_SE, YUKON_KING_EDWARD_SW],
+  },
+  {
+    routes: [ROUTES.yukon.name],
+    description: "king edward to 7th",
+    positions: [
       YUKON_KING_EDWARD_SW,
       [49.25005, -123.11279],
       [49.252, -123.1127],

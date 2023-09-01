@@ -5,10 +5,9 @@ import {
   HEATHER_10TH_S,
   HEATHER_14TH_N,
   HEATHER_14TH_S,
+  HEATHER_24TH,
   HEATHER_28TH,
   HEATHER_29TH,
-  HEATHER_33RD_N,
-  HEATHER_33RD_S,
   HEATHER_37TH,
   HEATHER_49TH_S,
   HEATHER_52ND,
@@ -26,6 +25,9 @@ import {
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
+
+const HEATHER_33RD_N = [49.24122, -123.12065];
+const HEATHER_33RD_S = [49.24112, -123.12065];
 
 export const HEATHER = [
   // willow/33rd extras
@@ -197,7 +199,7 @@ export const HEATHER = [
       [49.2471, -123.12045],
       [49.248, -123.12042],
       [49.24907, -123.12038],
-      [49.25009, -123.12034],
+      HEATHER_24TH,
       [49.25156, -123.1203],
       [49.25339, -123.12023],
       [49.2552, -123.12016],

@@ -41,6 +41,7 @@ import { INVERNESS } from "./inverness";
 import { KEEFER } from "./keefer";
 import { KERR } from "./kerr";
 import { KILLARNEY } from "./killarney";
+import { KING_EDWARD } from "./kingEdward";
 import { KNIGHT_STREET_BRIDGE } from "./knightStBridge";
 import { LAKEWOOD } from "./lakewood";
 import { LIONS_GATE_BRIDGE } from "./lionsGateBridge";
@@ -125,6 +126,7 @@ export const SEGMENTS = [
   ...KEEFER,
   ...KERR,
   ...KILLARNEY,
+  ...KING_EDWARD,
   ...KNIGHT_STREET_BRIDGE,
   ...LAKEWOOD,
   ...LIONS_GATE_BRIDGE,

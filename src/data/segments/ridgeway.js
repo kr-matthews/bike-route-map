@@ -79,7 +79,6 @@ export const RIDGEWAY = [
       [49.25106, -123.17305],
       [49.2509, -123.17284],
       QUESNEL_KING_EDWARD_N,
-      QUESNEL_KING_EDWARD_S,
     ],
   },
   {
@@ -87,6 +86,7 @@ export const RIDGEWAY = [
     description: "quesnel uncomfortable",
     type: "uncomfortable",
     positions: [
+      QUESNEL_KING_EDWARD_N,
       QUESNEL_KING_EDWARD_S,
       [49.24838, -123.17091],
       [49.24805, -123.17038],

@@ -149,6 +149,10 @@ export const ROUTES = {
     name: "Cassiar",
     legs: [{ videos: {} }],
   },
+  centralParkLoop: {
+    name: "Central Park Loop",
+    legs: [{ videos: {} }],
+  },
   centralValleyGreenway: {
     name: "Central Valley Greenway",
     shortName: "Central Valley Gr.",
@@ -223,6 +227,17 @@ export const ROUTES = {
   haro: {
     name: "Haro",
     legs: [{ videos: { westbound: VIDEOS.haroWb } }],
+  },
+  hastingsPark: {
+    name: "Hastings Park",
+    legs: [
+      { name: "Pandora <-> Windermere", videos: {} },
+      { name: "Pandora <-> Cassiar", videos: {} },
+      { name: "Pandora <-> Portside", videos: {} },
+      { name: "Windermere <-> Cassiar", videos: {} },
+      { name: "Windermere <-> Portside", videos: {} },
+      { name: "Cassiar <-> Portside", videos: {} },
+    ],
   },
   heather: {
     name: "Heather",

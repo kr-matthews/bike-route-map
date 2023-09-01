@@ -13,16 +13,32 @@ import {
   CAMBIE_37TH_E,
   CAMBIE_PENDER_SE,
   CAMBIE_PENDER_NE,
+  HEATHER_33RD,
+  ONTARIO_42ND,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-const CAMBIE_42ND_E = [49.23254, -123.11606];
-
-// !!! add connections: 42nd, 33rd, king edward, 24th
-// !!! add bit of sb cambie near 35th
+const CAMBIE_42ND_E = [49.23252, -123.11606];
+const CAMBIE_33RD_E = [49.24108, -123.11824];
 
 export const CAMBIE = [
+  // canada line station (and other) connections
+  {
+    description: "42nd",
+    positions: [
+      CAMBIE_42ND_E,
+      [49.23244, -123.1135],
+      [49.23234, -123.1108],
+      [49.23228, -123.10814],
+      ONTARIO_42ND,
+    ],
+  },
+  {
+    description: "33rd",
+    type: "uncomfortable",
+    positions: [HEATHER_33RD, CAMBIE_33RD_E],
+  },
   // gastown
   {
     routes: [ROUTES.cambie.name],
@@ -40,6 +56,15 @@ export const CAMBIE = [
     ],
   },
   // south vancouver
+  {
+    routes: [ROUTES.cambie.name],
+    description: "sb brief lane",
+    oneWay: "required",
+    positions: [
+      [49.24032, -123.11839],
+      [49.23902, -123.11693],
+    ],
+  },
   {
     routes: [ROUTES.cambie.name],
     description: "sb",
@@ -99,7 +124,7 @@ export const CAMBIE = [
       [49.24053, -123.11812],
       [49.24065, -123.11818],
       [49.24085, -123.11824],
-      [49.24106, -123.11824],
+      CAMBIE_33RD_E,
       [49.24201, -123.11818],
       [49.24245, -123.11812],
       [49.24265, -123.11807],
