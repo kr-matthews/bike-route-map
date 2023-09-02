@@ -172,7 +172,7 @@ export const ROUTES = {
   },
   columbia: {
     name: "Columbia",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.columbiaNb } }],
   },
   comoxHelmcken: {
     name: "Comox Helmcken",
@@ -473,6 +473,6 @@ export const ROUTES = {
   },
   yukon: {
     name: "Yukon",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.yukonSb } }],
   },
 };

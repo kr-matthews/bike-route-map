@@ -240,6 +240,14 @@ export const SEASIDE_BYPASS = [
       [49.26734, -123.1165],
       [49.26784, -123.11549],
       SPYGLASS_COMMODORE,
+    ],
+  },
+  {
+    routes: [ROUTES.seasideBypass.name],
+    description: "false creek east of spyglass",
+    videos: [VIDEOS.yukonSb],
+    positions: [
+      SPYGLASS_COMMODORE,
       CAMBIE_1ST_N,
       [49.26819, -123.11478],
       [49.26819, -123.11468],
@@ -250,12 +258,21 @@ export const SEASIDE_BYPASS = [
   },
   {
     routes: [ROUTES.seasideBypass.name],
-    description: "1st eb",
+    description: "1st eb 1",
     oneWay: "required",
+    videos: [VIDEOS.yukonSb],
     positions: [
       FIRST_AVE_SPLIT,
       [49.26815, -123.11416],
       [49.26818, -123.11401],
+      WYLIE_1ST_S,
+    ],
+  },
+  {
+    routes: [ROUTES.seasideBypass.name],
+    description: "1st eb 2",
+    oneWay: "required",
+    positions: [
       WYLIE_1ST_S,
       [49.26899, -123.11235],
       [49.26936, -123.11159],

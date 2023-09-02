@@ -26,6 +26,7 @@ export const CAMBIE = [
   // canada line station (and other) connections
   {
     description: "42nd",
+    videos: [VIDEOS.fortySecondEb],
     positions: [
       CAMBIE_42ND_E,
       [49.23244, -123.1135],

@@ -303,6 +303,7 @@ export const CAMBIE_BRIDGE = [
   },
   {
     description: "beside bridge",
+    videos: [VIDEOS.yukonSb],
     positions: [
       SPYGLASS_1ST,
       [49.26912, -123.11526],
@@ -335,6 +336,7 @@ export const CAMBIE_BRIDGE = [
   },
   {
     description: "connection commodore from spyglass",
+    videos: [VIDEOS.yukonSb],
     positions: [SPYGLASS_1ST, SPYGLASS_COMMODORE],
   },
   {

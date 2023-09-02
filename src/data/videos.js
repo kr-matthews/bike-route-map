@@ -13,10 +13,12 @@ const VIDEOS = {
   cambieSeparatedNb: "c0Yjyt4isPs",
   carrallNb: "1KNO98tWduE",
   chilcoSb: "WZIDTdlVxZY",
+  columbiaNb: "4E3xRV-qHOc",
   comoxHelmckenEb: "_u16UGWH4VQ",
   comoxHelmckenWb: "PgJUF6B4BMQ",
   dunbarNb: "jonrkkkL57o",
   fortyFifthWb: "LWue1j2Ir4c",
+  fortySecondEb: "Mz7lLKjdmQw",
   fourteenthWb: "_13c2Bcl_4Y",
   fourthEb: "19BLtcs-t7U",
   gardenCityNb: "CqETe9mI-SM",
@@ -50,6 +52,7 @@ const VIDEOS = {
   valleySb: "SDClkLpfIHc",
   walesDuchessSb: "q-4HxNr0aWA",
   yorkEb: "kLMm6tBVuXc",
+  yukonSb: "-XZwVM_8zBY",
 };
 
 const urlPrefix = "https://www.youtube.com/embed/";

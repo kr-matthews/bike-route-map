@@ -5,11 +5,13 @@ import {
   COLUMBIA_SEAWALL,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const COLUMBIA = [
   {
     routes: [ROUTES.columbia.name],
     description: "primary",
+    videos: [VIDEOS.columbiaNb],
     positions: [
       COLUMBIA_5TH,
       [49.26749, -123.10944],
