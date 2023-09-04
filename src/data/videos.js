@@ -51,6 +51,7 @@ const VIDEOS = {
   twentySecondEb: "4vjaCs_VJTg",
   valleySb: "SDClkLpfIHc",
   walesDuchessSb: "q-4HxNr0aWA",
+  windsorNb: "azxidzxMgzI",
   yorkEb: "kLMm6tBVuXc",
   yukonSb: "-XZwVM_8zBY",
 };

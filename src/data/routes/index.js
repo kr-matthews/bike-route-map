@@ -465,7 +465,7 @@ export const ROUTES = {
   },
   windsor: {
     name: "Windsor",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.windsorNb } }],
   },
   york: {
     name: "York",

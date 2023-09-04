@@ -112,7 +112,7 @@ export const TENTH = [
   {
     routes: [ROUTES.tenth.name, ROUTES.windsor.name],
     description: "windsor",
-    videos: [VIDEOS.tenthEb, VIDEOS.tenthWb],
+    videos: [VIDEOS.tenthEb, VIDEOS.tenthWb, VIDEOS.windsorNb],
     positions: [WINDSOR_10TH, GLEN_10TH],
   },
   {
