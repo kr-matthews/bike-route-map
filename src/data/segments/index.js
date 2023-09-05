@@ -39,6 +39,7 @@ import { HORNBY } from "./hornby";
 import { IMPERIAL } from "./imperial";
 import { INVERNESS } from "./inverness";
 import { KEEFER } from "./keefer";
+import { KENT } from "./kent";
 import { KERR } from "./kerr";
 import { KILLARNEY } from "./killarney";
 import { KING_EDWARD } from "./kingEdward";
@@ -124,6 +125,7 @@ export const SEGMENTS = [
   ...IMPERIAL,
   ...INVERNESS,
   ...KEEFER,
+  ...KENT,
   ...KERR,
   ...KILLARNEY,
   ...KING_EDWARD,

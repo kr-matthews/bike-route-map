@@ -15,7 +15,6 @@ import {
   ONTARIO_5TH,
   ONTARIO_63RD,
   ONTARIO_KENT_N,
-  ONTARIO_KENT_S,
   ONTARIO_PATH_ATHLETES,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -25,7 +24,6 @@ export const ONTARIO = [
     routes: [ROUTES.ontario.name],
     description: "kent to 59th",
     positions: [
-      ONTARIO_KENT_S,
       ONTARIO_KENT_N,
       [49.20939, -123.1067],
       [49.20946, -123.10677],
