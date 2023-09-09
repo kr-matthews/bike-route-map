@@ -12,6 +12,7 @@ const VIDEOS = {
   cambieGastownNb: "kLbDio3XorY",
   cambieSeparatedNb: "c0Yjyt4isPs",
   carrallNb: "1KNO98tWduE",
+  centralValleyVancouverEb: "UkRTUCueaYA",
   chilcoSb: "WZIDTdlVxZY",
   columbiaNb: "4E3xRV-qHOc",
   comoxHelmckenEb: "_u16UGWH4VQ",

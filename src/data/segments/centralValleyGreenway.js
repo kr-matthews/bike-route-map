@@ -88,7 +88,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routes: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "east park path",
-    videos: [],
+    videos: [VIDEOS.centralValleyVancouverEb],
     positions: [
       ONTARIO_PATH_SEASIDE,
       ONTARIO_PATH_ATHLETES,
@@ -100,7 +100,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routes: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "crossing 1st path",
-    videos: [],
+    videos: [VIDEOS.centralValleyVancouverEb],
     positions: [ONTARIO_1ST_NE, ONTARIO_1ST_SE],
   },
   {
@@ -108,6 +108,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     legs: ["Vancouver"],
     description: "1st quebec to main",
     oneWay: "required",
+    videos: [VIDEOS.centralValleyVancouverEb],
     positions: [QUEBEC_1ST_SE, MAIN_1ST_SW, MAIN_1ST_E],
   },
   {
@@ -131,7 +132,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
   {
     routes: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
-    description: "1st scotia to thornton",
+    description: "1st: scotia to thornton",
     positions: [
       SCOTIA_1ST,
       [49.26782, -123.0964],
@@ -170,6 +171,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routes: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "1st to commercial",
+    videos: [VIDEOS.centralValleyVancouverEb],
     positions: [
       MAIN_1ST_E,
       [49.26921, -123.09887],
@@ -209,14 +211,14 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routes: [ROUTES.centralValleyGreenway.name, ROUTES.offBroadway.name],
     legs: ["Vancouver"],
     description: "cvg/off-broadway west",
-    videos: [VIDEOS.offBroadwayWb],
+    videos: [VIDEOS.centralValleyVancouverEb, VIDEOS.offBroadwayWb],
     positions: [WOODLAND_GRANDVIEW, COMMERCIAL_GRANDVIEW],
   },
   {
     routes: [ROUTES.centralValleyGreenway.name, ROUTES.offBroadway.name],
     legs: ["Vancouver"],
     description: "cvg/off-broadway east",
-    videos: [VIDEOS.offBroadwayWb],
+    videos: [VIDEOS.centralValleyGreenway, VIDEOS.offBroadwayWb],
     positions: [COMMERCIAL_GRANDVIEW, [49.26372, -123.06966], GRANDVIEW_8TH_N],
   },
   {
@@ -224,6 +226,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     legs: ["Vancouver"],
     description: "broadway eastbound",
     oneWay: "required",
+    videos: [VIDEOS.centralValleyVancouverEb],
     positions: [
       COMMERCIAL_GRANDVIEW,
       [49.26345, -123.0691],
@@ -261,7 +264,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routes: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "east of victoria",
-    videos: [],
+    videos: [VIDEOS.centralValleyVancouverEb],
     positions: [
       VICTORIA_BROADWAY,
       [49.26188, -123.06507],

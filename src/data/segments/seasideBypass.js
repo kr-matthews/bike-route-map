@@ -313,6 +313,7 @@ export const SEASIDE_BYPASS = [
     routes: [ROUTES.seasideBypass.name, ROUTES.centralValleyGreenway.name],
     description: "1st ontario to quebec",
     oneWay: "required",
+    videos: [VIDEOS.centralValleyVancouverEb],
     positions: [ONTARIO_1ST_SE, QUEBEC_1ST_SW, QUEBEC_1ST_SE],
   },
   {

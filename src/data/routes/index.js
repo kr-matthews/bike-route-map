@@ -157,7 +157,10 @@ export const ROUTES = {
     name: "Central Valley Greenway",
     shortName: "Central Valley Gr.",
     legs: [
-      { name: "Vancouver", videos: {} },
+      {
+        name: "Vancouver",
+        videos: { eastbound: VIDEOS.centralValleyVancouverEb },
+      },
       { name: "Burnaby", videos: {} },
       { name: "New Westminster", videos: {} },
     ],
