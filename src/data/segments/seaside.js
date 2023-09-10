@@ -25,9 +25,12 @@ import {
   SEAWALL_BEACH,
   SEAWALL_DAVIE_E,
   SEAWALL_DAVIE_W,
+  STANLEY_PARK_LOOP_JOIN_E,
   SEAWALL_WATERFRONT,
   SEAWALL_WHYTE,
   SPYGLASS_SEAWALL,
+  STANLEY_PARK_LANE_BEACH,
+  STANLEY_PARK_LOOP_SPLIT_W,
   STEPHENS_POINT_GREY,
   THIRD_SEASIDE,
   THURLOW_SEAWALL,
@@ -40,7 +43,6 @@ const SEASIDE_WHYTE_E = [49.27631, -123.14042];
 const CREEKSIDE_1ST = [49.2714, -123.14019];
 const FIR_1ST_NW = [49.27089, -123.14144];
 
-const SEAWALL_LOST_LAGOON = [49.29522, -123.13589];
 const DENMAN_SEAWALL = [49.29345, -123.13229];
 
 const SEAWALL_STANLEY_PARK_WEST_END = [49.29031, -123.14571];
@@ -50,6 +52,10 @@ const SEAWALL_UNDER_BURRARD_N = [49.27587, -123.13547];
 
 export const SEASIDE = [
   // connections
+  {
+    description: "seaside bypass end",
+    positions: [SEAWALL_STANLEY_PARK_WEST_END, STANLEY_PARK_LANE_BEACH],
+  },
   {
     description: "denman",
     positions: [DENMAN_GEORGIA_N, [49.29341, -123.13255], DENMAN_SEAWALL],
@@ -780,9 +786,37 @@ export const SEASIDE = [
   },
   {
     routes: [ROUTES.seaside.name],
+    description: "stanley park non-loop",
+    positions: [
+      STANLEY_PARK_LOOP_SPLIT_W,
+      [49.29426, -123.14917],
+      [49.29423, -123.14921],
+      [49.29415, -123.14932],
+      [49.29397, -123.14952],
+      [49.29387, -123.14961],
+      [49.29374, -123.14969],
+      [49.2933, -123.14972],
+      [49.29321, -123.14972],
+      [49.29306, -123.14969],
+      [49.29282, -123.14954],
+      [49.29258, -123.1493],
+      [49.29175, -123.14835],
+      [49.29093, -123.14732],
+      [49.29083, -123.14723],
+      [49.29072, -123.1471],
+      [49.29058, -123.1469],
+      [49.2905, -123.14671],
+      [49.2904, -123.14645],
+      [49.29035, -123.14606],
+      [49.29033, -123.14576],
+      SEAWALL_STANLEY_PARK_WEST_END,
+    ],
+  },
+  {
+    routes: [ROUTES.seaside.name],
     description: "coal harbour",
     positions: [
-      SEAWALL_LOST_LAGOON,
+      STANLEY_PARK_LOOP_JOIN_E,
       [49.29515, -123.13588],
       [49.29502, -123.13577],
       [49.29497, -123.13569],

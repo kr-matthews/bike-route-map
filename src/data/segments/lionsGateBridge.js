@@ -2,7 +2,6 @@ import {
   BURRARD_DUNSMUIR,
   CARDERO_GEORGIA_N,
   CARDERO_GEORGIA_S,
-  CHILCO_GEORGIA_N,
   CHILCO_GEORGIA_S,
   DENMAN_GEORGIA_N,
   HORNBY_DUNSMUIR,
@@ -12,6 +11,7 @@ import {
   LIONS_GATE_SPIRIT_TRAIL_W,
   NICOLA_GEORGIA,
   NICOLA_PENDER,
+  STANLEY_PARK_LOOP_CAUSEWAY_UNDERPASS_SPLIT,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -21,10 +21,66 @@ const NORTHBOUND_ELEVATED_END = [49.32399, -123.13058];
 const SOUTHBOUND_ELEVATED_START = [49.32405, -123.13074];
 const SOUTHBOUND_ELEVATED_END = [49.31204, -123.14182];
 
+const NORTHBOUND_LAGOON_OVERPASS_START = [49.29476, -123.13659];
+const NORTHBOUND_LAGOON_OVERPASS_END = [49.2951, -123.1366];
+const SOUTHBOUND_LAGOON_OVERPASS_START = [49.29501, -123.137];
+const SOUTHBOUND_LAGOON_OVERPASS_END = [49.29457, -123.13689];
+
+const NORTHBOUND_CAR_OVERPASS_START = [49.29714, -123.13652];
+const NORTHBOUND_CAR_OVERPASS_END = [49.29747, -123.1368];
+const SOUTHBOUND_CAR_OVERPASS_START = [49.29732, -123.13697];
+const SOUTHBOUND_CAR_OVERPASS_END = [49.29703, -123.13672];
+
 const NORTHBOUND_OFF_RAMP_SPLIT = [49.32551, -123.12856];
 const SOUTHBOUND_ON_RAMP_MERGE = [49.32494, -123.13028];
 
+const NORTHBOUND_ON_PATH_1 = [49.29646, -123.1361];
+const NORTHBOUND_ON_PATH_2 = [49.29793, -123.13745];
+const SOUTHBOUND_OFF_TRAIL = [49.29807, -123.13803];
+
 export const LIONS_GATE_BRIDGE = [
+  // connections
+  {
+    description: "lagoon dr off-trail",
+    oneWay: "required",
+    positions: [
+      SOUTHBOUND_OFF_TRAIL,
+      [49.29778, -123.1377],
+      [49.29751, -123.13737],
+      [49.29725, -123.13709],
+      [49.29717, -123.13695],
+    ],
+  },
+  {
+    description: "lagoon dr on-path",
+    oneWay: "recommended",
+    positions: [
+      [49.29744, -123.13644],
+      [49.29749, -123.13648],
+      [49.29775, -123.13647],
+      [49.29785, -123.13665],
+      [49.2979, -123.13682],
+      [49.29794, -123.13704],
+      [49.29794, -123.13719],
+      [49.29792, -123.13729],
+      NORTHBOUND_ON_PATH_2,
+    ],
+  },
+  {
+    description: "lagoon path on-path",
+    oneWay: "recommended",
+    positions: [
+      STANLEY_PARK_LOOP_CAUSEWAY_UNDERPASS_SPLIT,
+      [49.29521, -123.1364],
+      [49.29612, -123.13591],
+      [49.29625, -123.13596],
+      [49.2964, -123.13597],
+      [49.29646, -123.136],
+      NORTHBOUND_ON_PATH_1,
+    ],
+  },
+
+  // northbound
   {
     description: "melville",
     oneWay: "required",
@@ -63,6 +119,7 @@ export const LIONS_GATE_BRIDGE = [
   {
     description: "georgia westbound",
     oneWay: "required",
+    elevation: 0.5,
     videos: [VIDEOS.lionsGateBridgeNb],
     positions: [
       CARDERO_GEORGIA_N,
@@ -70,8 +127,46 @@ export const LIONS_GATE_BRIDGE = [
       DENMAN_GEORGIA_N,
       [49.29374, -123.13532],
       [49.29444, -123.13629],
-      CHILCO_GEORGIA_N,
+      [49.2946, -123.13649],
+      NORTHBOUND_LAGOON_OVERPASS_START,
     ],
+  },
+  {
+    routes: [ROUTES.lionsGate.name],
+    description: "nb lagoon overpass",
+    oneWay: "required",
+    elevation: 1,
+    videos: [VIDEOS.lionsGateBridgeNb],
+    positions: [
+      NORTHBOUND_LAGOON_OVERPASS_START,
+      [49.29494, -123.13662],
+      NORTHBOUND_LAGOON_OVERPASS_END,
+    ],
+  },
+  {
+    routes: [ROUTES.lionsGate.name],
+    description: "northbound between overpasses",
+    oneWay: "required",
+    elevation: 0.5,
+    videos: [VIDEOS.lionsGateBridgeNb],
+    positions: [
+      NORTHBOUND_LAGOON_OVERPASS_END,
+      [49.29593, -123.13612],
+      [49.29615, -123.13602],
+      [49.2963, -123.1361],
+      NORTHBOUND_ON_PATH_1,
+      [49.29657, -123.13614],
+      [49.29684, -123.13627],
+      NORTHBOUND_CAR_OVERPASS_START,
+    ],
+  },
+  {
+    routes: [ROUTES.lionsGate.name],
+    description: "northbound car overpass",
+    oneWay: "required",
+    elevation: 1,
+    videos: [VIDEOS.lionsGateBridgeNb],
+    positions: [NORTHBOUND_CAR_OVERPASS_START, NORTHBOUND_CAR_OVERPASS_END],
   },
   {
     routes: [ROUTES.lionsGate.name],
@@ -80,19 +175,9 @@ export const LIONS_GATE_BRIDGE = [
     elevation: 0.5,
     videos: [VIDEOS.lionsGateBridgeNb],
     positions: [
-      CHILCO_GEORGIA_N,
-      [49.29476, -123.13659],
-      [49.29494, -123.13662],
-      [49.2951, -123.1366],
-      [49.29593, -123.13612],
-      [49.29615, -123.13602],
-      [49.2963, -123.1361],
-      [49.29657, -123.13616],
-      [49.29684, -123.13631],
-      [49.29714, -123.13649],
-      [49.29739, -123.13671],
+      NORTHBOUND_CAR_OVERPASS_END,
       [49.29765, -123.13698],
-      [49.29793, -123.13745],
+      NORTHBOUND_ON_PATH_2,
       [49.29809, -123.13779],
       [49.29849, -123.13883],
       [49.29883, -123.13976],
@@ -155,6 +240,8 @@ export const LIONS_GATE_BRIDGE = [
       NORTHBOUND_OFF_RAMP_SPLIT,
     ],
   },
+
+  // southbound
   {
     routes: [ROUTES.lionsGate.name],
     description: "southbound pre-bridge",
@@ -203,21 +290,55 @@ export const LIONS_GATE_BRIDGE = [
       [49.2999, -123.14211],
       [49.29919, -123.14092],
       [49.29861, -123.13963],
-      [49.29807, -123.13802],
+      SOUTHBOUND_OFF_TRAIL,
       [49.29785, -123.13758],
       [49.29761, -123.13726],
-      [49.29728, -123.13696],
-      [49.29703, -123.13672],
+      SOUTHBOUND_CAR_OVERPASS_START,
+    ],
+  },
+  {
+    routes: [ROUTES.lionsGate.name],
+    description: "southbound causeway car overpass",
+    oneWay: "required",
+    elevation: 1,
+    videos: [VIDEOS.lionsGateBridgeSb],
+    positions: [SOUTHBOUND_CAR_OVERPASS_START, SOUTHBOUND_CAR_OVERPASS_END],
+  },
+  {
+    routes: [ROUTES.lionsGate.name],
+    description: "southbound causeway between overpasses",
+    oneWay: "required",
+    elevation: 0.5,
+    videos: [VIDEOS.lionsGateBridgeSb],
+    positions: [
+      SOUTHBOUND_CAR_OVERPASS_END,
       [49.29663, -123.13653],
       [49.29644, -123.13645],
       [49.29625, -123.13642],
       [49.29597, -123.13652],
       [49.2953, -123.13692],
-      [49.29501, -123.137],
-      [49.29478, -123.13698],
-      [49.29457, -123.13689],
-      CHILCO_GEORGIA_S,
+      SOUTHBOUND_LAGOON_OVERPASS_START,
     ],
+  },
+  {
+    routes: [ROUTES.lionsGate.name],
+    description: "southbound lagoon overpass",
+    oneWay: "required",
+    elevation: 1,
+    videos: [VIDEOS.lionsGateBridgeSb],
+    positions: [
+      SOUTHBOUND_LAGOON_OVERPASS_START,
+      [49.29478, -123.13698],
+      SOUTHBOUND_LAGOON_OVERPASS_END,
+    ],
+  },
+  {
+    routes: [ROUTES.lionsGate.name],
+    description: "southbound lagoon overpass to chilco",
+    oneWay: "required",
+    elevation: 0.5,
+    videos: [VIDEOS.lionsGateBridgeSb],
+    positions: [SOUTHBOUND_LAGOON_OVERPASS_END, CHILCO_GEORGIA_S],
   },
   {
     description: "georgia eastbound",

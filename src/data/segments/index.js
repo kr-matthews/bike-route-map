@@ -69,6 +69,7 @@ import { SEASIDE_BYPASS } from "./seasideBypass";
 import { SECOND_NARROWS_BRIDGE } from "./secondNarrowsBridge";
 import { SIXTY_SEVENTH } from "./sixtySeventh";
 import { SMITHE } from "./smithe";
+import { STANLEY_PARK_LOOP } from "./stanleyPark";
 import { SUNRISE } from "./sunrise";
 import { TENTH } from "./tenth";
 import { THIRD } from "./third";
@@ -155,6 +156,7 @@ export const SEGMENTS = [
   ...SECOND_NARROWS_BRIDGE,
   ...SIXTY_SEVENTH,
   ...SMITHE,
+  ...STANLEY_PARK_LOOP,
   ...SUNRISE,
   ...TENTH,
   ...THIRD,

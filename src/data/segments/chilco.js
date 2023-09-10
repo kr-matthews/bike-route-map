@@ -6,11 +6,16 @@ import {
   CHILCO_GEORGIA_S,
   CHILCO_HARO,
   CHILCO_SEAWALL,
+  STANLEY_PARK_LOOP_ALBERNI,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 export const CHILCO = [
+  {
+    description: "connection to stanley park loop",
+    positions: [STANLEY_PARK_LOOP_ALBERNI, CHILCO_ALBERNI_W],
+  },
   {
     routes: [ROUTES.chilco.name],
     description: "closed",

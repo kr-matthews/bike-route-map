@@ -58,6 +58,7 @@ import {
   SEAWALL_WHYTE,
   SMITHE_EXPO_N,
   SPYGLASS_COMMODORE,
+  STANLEY_PARK_LANE_BEACH,
   THURLOW_SEAWALL,
   WALLACE_3RD,
   WALLACE_4TH_S,
@@ -696,7 +697,7 @@ export const SEASIDE_BYPASS = [
     routes: [ROUTES.seasideBypass.name],
     description: "beach: to jervis",
     positions: [
-      [49.29035, -123.14566],
+      STANLEY_PARK_LANE_BEACH,
       [49.29017, -123.14537],
       CHILCO_BEACH,
       [49.28859, -123.1429],
