@@ -5,6 +5,7 @@ import {
   INVERNESS_MARINE,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const BORDEN_64TH = [49.21199, -123.07409];
 
@@ -179,6 +180,7 @@ export const KNIGHT_STREET_BRIDGE = [
   },
   {
     description: "nb crossing marine",
+    videos: [VIDEOS.dumfriesNb],
     positions: [
       NORTHBOUND_SPLIT_2,
       [49.21089, -123.07498],
@@ -189,6 +191,7 @@ export const KNIGHT_STREET_BRIDGE = [
   },
   {
     description: "up borden",
+    videos: [VIDEOS.dumfriesNb],
     positions: [
       NORTHBOUND_SPLIT_3,
       [49.21119, -123.07552],
@@ -204,6 +207,7 @@ export const KNIGHT_STREET_BRIDGE = [
   },
   {
     description: "borden south of marine",
+    videos: [VIDEOS.dumfriesNb],
     positions: [
       NORTHBOUND_SPLIT_2,
       [49.21088, -123.07474],

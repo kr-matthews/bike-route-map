@@ -44,7 +44,7 @@ export const OFF_BROADWAY = [
   },
   {
     routes: [ROUTES.offBroadway.name],
-    description: "west of yukon",
+    description: "west of heather",
     videos: [VIDEOS.offBroadwayWb],
     positions: [
       DISCOVERY_8TH,
@@ -95,6 +95,19 @@ export const OFF_BROADWAY = [
       [49.26512, -123.12412],
       [49.26508, -123.12175],
       HEATHER_7TH,
+    ],
+  },
+  {
+    routes: [ROUTES.offBroadway.name],
+    description: "heather to ash",
+    videos: [VIDEOS.offBroadwayWb, VIDEOS.heatherSb],
+    positions: [HEATHER_7TH, ASH_7TH],
+  },
+  {
+    routes: [ROUTES.offBroadway.name],
+    description: "ash to yukon",
+    videos: [VIDEOS.offBroadwayWb],
+    positions: [
       ASH_7TH,
       [49.26498, -123.11508],
       [49.2649, -123.11461],

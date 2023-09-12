@@ -85,7 +85,7 @@ export const HEATHER = [
     routes: [ROUTES.heather.name],
     description: "41st eb 3",
     oneWay: "required",
-    videos: [VIDEOS.cambieSb],
+    videos: [VIDEOS.heatherSb, VIDEOS.cambieSb],
     positions: [TISDALL_49TH_SW, TISDALL_49TH_SE],
   },
   {
@@ -108,6 +108,7 @@ export const HEATHER = [
   {
     routes: [ROUTES.heather.name],
     description: "marpole",
+    videos: [VIDEOS.heatherSb],
     positions: [
       HEATHER_KENT_N,
       [49.20698, -123.12434],
@@ -144,6 +145,7 @@ export const HEATHER = [
     routes: [ROUTES.heather.name],
     description: "sb from 49th",
     oneWay: "recommended",
+    videos: [VIDEOS.heatherSb],
     positions: [
       TISDALL_49TH_SE,
       [49.22537, -123.12091],
@@ -155,11 +157,13 @@ export const HEATHER = [
   {
     routes: [ROUTES.heather.name],
     description: "49th to 46th",
+    videos: [VIDEOS.heatherSb],
     positions: [TISDALL_49TH_SW, TISDALL_46TH],
   },
   {
     routes: [ROUTES.heather.name],
     description: "46th to 37th",
+    videos: [VIDEOS.heatherSb],
     positions: [
       WILLOW_46TH,
       [49.23053, -123.12336],
@@ -175,6 +179,7 @@ export const HEATHER = [
   {
     routes: [ROUTES.heather.name],
     description: "37th to 29th",
+    videos: [VIDEOS.heatherSb],
     positions: [
       HEATHER_37TH,
       [49.23982, -123.1207],
@@ -189,11 +194,13 @@ export const HEATHER = [
   {
     routes: [ROUTES.heather.name, ROUTES.twentyNinth.name],
     description: "29th",
+    videos: [VIDEOS.heatherSb],
     positions: [HEATHER_28TH, HEATHER_29TH],
   },
   {
     routes: [ROUTES.heather.name],
     description: "28th to 14th",
+    videos: [VIDEOS.heatherSb],
     positions: [
       HEATHER_28TH,
       [49.2471, -123.12045],
@@ -211,12 +218,13 @@ export const HEATHER = [
   {
     routes: [ROUTES.heather.name, ROUTES.fourteenth.name],
     description: "14th",
-    videos: [VIDEOS.fourteenthWb],
+    videos: [VIDEOS.heatherSb, VIDEOS.fourteenthWb],
     positions: [HEATHER_14TH_S, HEATHER_14TH_N],
   },
   {
     routes: [ROUTES.heather.name],
     description: "14th to 7th",
+    videos: [VIDEOS.heatherSb],
     positions: [
       HEATHER_14TH_N,
       [49.2595, -123.12003],

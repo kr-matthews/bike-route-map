@@ -6,11 +6,13 @@ import {
   WOODLAND_14TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const DUMFRIES = [
   {
     routes: [ROUTES.dumfries.name],
     description: "primary",
+    videos: [VIDEOS.dumfriesNb],
     positions: [
       BORDEN_59TH,
       [49.21725, -123.07405],

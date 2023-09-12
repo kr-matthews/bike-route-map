@@ -60,7 +60,7 @@ export const FORTY_FIFTH = [
   {
     routes: [ROUTES.fortyFifth.name, ROUTES.heather.name],
     description: "heather",
-    videos: [VIDEOS.fortyFifthWb],
+    videos: [VIDEOS.fortyFifthWb, VIDEOS.heatherSb],
     positions: [WILLOW_46TH, TISDALL_46TH],
   },
   {

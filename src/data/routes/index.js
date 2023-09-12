@@ -194,7 +194,7 @@ export const ROUTES = {
   },
   dumfries: {
     name: "Dumfries",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.dumfriesNb } }],
   },
   dunbar: {
     name: "Dunbar St",
@@ -244,7 +244,7 @@ export const ROUTES = {
   },
   heather: {
     name: "Heather",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.heatherSb } }],
   },
   highbury: {
     name: "Highbury St",

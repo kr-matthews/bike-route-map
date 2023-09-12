@@ -115,7 +115,7 @@ export const MIDTOWN = [
     routes: [ROUTES.midtown.name, ROUTES.ridgeway.name, ROUTES.heather.name],
     legs: ["Vancouver"],
     description: "heather overlap",
-    videos: [VIDEOS.midtownVancouverEb],
+    videos: [VIDEOS.midtownVancouverEb, VIDEOS.heatherSb],
     positions: [WILLOW_37TH, HEATHER_37TH],
   },
   {
