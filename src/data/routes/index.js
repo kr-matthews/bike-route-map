@@ -446,6 +446,10 @@ export const ROUTES = {
     name: "Sunrise",
     legs: [{ videos: { northbound: VIDEOS.sunriseNb } }],
   },
+  terminalPath: {
+    name: "Terminal Ave Path",
+    legs: [{ videos: {} }],
+  },
   university: {
     name: "University Blvd",
     legs: [{ videos: {} }],

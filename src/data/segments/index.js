@@ -72,6 +72,7 @@ import { SMITHE } from "./smithe";
 import { STANLEY_PARK_LOOP } from "./stanleyPark";
 import { SUNRISE } from "./sunrise";
 import { TENTH } from "./tenth";
+import { TERMINAL_PATH } from "./terminalPath";
 import { THIRD } from "./third";
 import { TWENTY_NINTH } from "./twentyNinth";
 import { TWENTY_SECOND } from "./twentySecond";
@@ -159,6 +160,7 @@ export const SEGMENTS = [
   ...STANLEY_PARK_LOOP,
   ...SUNRISE,
   ...TENTH,
+  ...TERMINAL_PATH,
   ...THIRD,
   ...TWENTY_NINTH,
   ...TWENTY_SECOND,
