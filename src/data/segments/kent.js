@@ -18,7 +18,8 @@ const MORNINGSTAR_PARK_W = [49.20587, -123.0544];
 const MORNINGSTAR_PARK_E = [49.20593, -123.05372];
 const KINROSS_KENT = [49.20614, -123.0367];
 const KINROSS_KENT_S = [49.2061, -123.0367];
-const KENT_CONSTRUCTION_SPLIT = [49.20546, -123.03223];
+const KENT_CONSTRUCTION_SPLIT = [49.20567, -123.03369];
+const JACK_UPPAL_KENT_S = [49.20531, -123.03383];
 const RIVER_DISTRICT_CROSSING_KENT_S = [49.20504, -123.03116];
 const RIVER_DISTRICT_CROSSING_KENT_N = [49.2053, -123.03107];
 
@@ -212,7 +213,7 @@ export const KENT = [
       [49.20553, -123.03576],
       [49.20537, -123.03454],
       [49.20531, -123.03404],
-      [49.20531, -123.03383],
+      JACK_UPPAL_KENT_S,
       [49.20526, -123.03383],
       [49.20518, -123.03387],
       [49.20508, -123.03395],
@@ -249,20 +250,28 @@ export const KENT = [
   },
   {
     routes: [ROUTES.kent.name],
-    description: "kent n: east stub",
-    positions: [KENT_CONSTRUCTION_SPLIT, RIVER_DISTRICT_CROSSING_KENT_N],
+    description: "uppal kent s to n",
+    isClosed: true,
+    positions: [KENT_CONSTRUCTION_SPLIT, JACK_UPPAL_KENT_S],
   },
   {
     routes: [ROUTES.kent.name],
-    description: "kent n: closed",
-    isClosed: true,
+    description: "kent n: uppal to river district crossing",
     positions: [
-      KINROSS_KENT,
-      [49.2061, -123.03655],
-      [49.20577, -123.03421],
-      [49.20577, -123.03359],
-      [49.20566, -123.03362],
       KENT_CONSTRUCTION_SPLIT,
+      [49.20546, -123.03223],
+      RIVER_DISTRICT_CROSSING_KENT_N,
     ],
   },
+  // {
+  //   routes: [ROUTES.kent.name],
+  //   description: "kent n: closed",
+  //   isClosed: true,
+  //   positions: [
+  //     KINROSS_KENT,
+  //     [49.2061, -123.03655],
+  //     [49.20577, -123.03421],
+  //     KENT_CONSTRUCTION_SPLIT, // actually [49.20577, -123.03359]
+  //   ],
+  // },
 ];
