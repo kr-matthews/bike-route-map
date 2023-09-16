@@ -45,6 +45,7 @@ const VIDEOS = {
   pandoraEb: "-vNVdK9fnMU",
   powellEb: "vTtdPgHQCp0",
   princeEdwardNb: "A91bdcMUC98",
+  rupertNb: "VYxXQDWhq5Q",
   sixtySeventhPlusWb: "z5GzRN2_iNc",
   sunriseNb: "YGhkRf0VmKw",
   swMarineEb: "l-DWh9zHOAo",

@@ -7,12 +7,14 @@ import {
   RUPERT_CVG_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const RUPERT = [
   {
     routes: [ROUTES.rupert.name],
     description: "nb",
     oneWay: "required",
+    videos: [VIDEOS.rupertNb],
     positions: [
       RUPERT_29TH_E,
       [49.24475, -123.03383],

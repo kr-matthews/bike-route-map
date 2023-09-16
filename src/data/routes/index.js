@@ -396,7 +396,7 @@ export const ROUTES = {
   },
   rupert: {
     name: "Rupert St",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.rupertNb } }],
   },
   seaside: {
     name: "Seaside",
