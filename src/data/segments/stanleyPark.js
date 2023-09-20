@@ -6,6 +6,8 @@ import {
 } from "../intersections";
 import { ROUTES } from "../routes";
 
+const ONE_WAY_END = [49.29592, -123.15089];
+
 export const STANLEY_PARK_LOOP = [
   {
     routes: [ROUTES.stanleyParkLoop.name, ROUTES.seaside.name],
@@ -429,7 +431,23 @@ export const STANLEY_PARK_LOOP = [
       [49.29567, -123.15135],
       [49.29571, -123.15116],
       [49.29589, -123.15092],
-      [49.29592, -123.15085],
+      ONE_WAY_END,
+    ],
+  },
+  {
+    description: "bridle path",
+    positions: [
+      ONE_WAY_END,
+      [49.29599, -123.15096],
+      [49.29608, -123.151],
+      [49.29619, -123.15096],
+    ],
+  },
+  {
+    routes: [ROUTES.stanleyParkLoop.name],
+    description: "second beach",
+    positions: [
+      ONE_WAY_END,
       [49.29592, -123.15057],
       [49.29589, -123.15049],
       [49.29583, -123.15039],
