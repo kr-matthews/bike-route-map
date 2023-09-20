@@ -1,7 +1,6 @@
 import { useContext, useEffect } from "react";
 import { Selections } from "../../App";
 import Leg from "./Leg";
-import { SEGMENTS } from "../../data/segments";
 import { getRouteBounds } from "../../utils/map";
 
 export default function SelectedRoute({ mapRef }) {
@@ -61,9 +60,8 @@ export default function SelectedRoute({ mapRef }) {
             Close
           </button>
           <div style={{ overflow: "auto" }}>
-            {!SEGMENTS.some(({ routes }) =>
-              (routes ?? []).includes(selectedRoute.name)
-            ) && "No visual on the map... yet. Come back later."}
+            {selectedRoute.isIncomplete &&
+              "Note: Route drawn on map is incomplete. Come back later."}
             {selectedRoute.legs.map((leg) => (
               <Leg key={selectedRoute.name + leg.name} leg={leg} />
             ))}

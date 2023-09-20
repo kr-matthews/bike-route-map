@@ -22,6 +22,7 @@ export const ROUTES = {
   sixteenth: {
     name: "16th Ave",
     legs: [{ videos: {} }],
+    isIncomplete: true,
   },
   twentySecond: {
     name: "22nd Ave",
@@ -76,6 +77,7 @@ export const ROUTES = {
       { name: "New Westminster", videos: {} },
       { name: "Surrey", videos: {} },
     ],
+    isIncomplete: true,
   },
   beatty: {
     name: "Beatty St",
@@ -152,6 +154,7 @@ export const ROUTES = {
   centralParkLoop: {
     name: "Central Park Loop",
     legs: [{ videos: {} }],
+    isIncomplete: true,
   },
   centralValleyGreenway: {
     name: "Central Valley Greenway",
@@ -168,6 +171,7 @@ export const ROUTES = {
   chancellor: {
     name: "Chancellor Blvd",
     legs: [{ videos: {} }],
+    isIncomplete: true,
   },
   chilco: {
     name: "Chilco",
@@ -211,6 +215,7 @@ export const ROUTES = {
   fraserRiverTrail: {
     name: "Fraser River Trail",
     legs: [{ videos: {} }],
+    isIncomplete: true,
   },
   gardenCity: {
     name: "Garden City Rd",
@@ -222,6 +227,7 @@ export const ROUTES = {
         },
       },
     ],
+    isIncomplete: true,
   },
   gladstone: {
     name: "Gladstone",
@@ -241,6 +247,7 @@ export const ROUTES = {
       { name: "Windermere <-> Portside", videos: {} },
       { name: "Cassiar <-> Portside", videos: {} },
     ],
+    isIncomplete: true,
   },
   heather: {
     name: "Heather",
@@ -393,6 +400,7 @@ export const ROUTES = {
   rumble: {
     name: "Rumble",
     legs: [{ videos: {} }],
+    isIncomplete: true,
   },
   rupert: {
     name: "Rupert St",
@@ -425,6 +433,7 @@ export const ROUTES = {
   seaToRiver: {
     name: "Sea to River",
     legs: [{ videos: {} }],
+    isIncomplete: true,
   },
   secondNarrowsBridge: {
     name: "Second Narrows Bridge",
@@ -453,6 +462,7 @@ export const ROUTES = {
   university: {
     name: "University Blvd",
     legs: [{ videos: {} }],
+    isIncomplete: true,
   },
   valley: {
     name: "Valley",
