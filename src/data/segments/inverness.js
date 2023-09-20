@@ -1,6 +1,5 @@
 import {
   CROMPTON_KENT_N,
-  CROMPTON_KENT_S,
   INVERNESS_37TH,
   INVERNESS_43RD,
   INVERNESS_45TH,
@@ -13,13 +12,6 @@ import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 export const INVERNESS = [
-  {
-    // !!! move to kent
-    routes: [ROUTES.kent.name],
-    videos: [VIDEOS.invernessSb],
-    description: "kent to 45th",
-    positions: [CROMPTON_KENT_S, CROMPTON_KENT_N],
-  },
   {
     routes: [ROUTES.inverness.name],
     videos: [VIDEOS.invernessSb],

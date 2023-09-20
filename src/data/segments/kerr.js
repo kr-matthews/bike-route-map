@@ -99,13 +99,6 @@ export const KERR = [
     ],
   },
   {
-    // !!! move to kent
-    routes: [ROUTES.kent.name, ROUTES.kerr.name],
-    description: "crossing kerr",
-    videos: [VIDEOS.kerrSb],
-    positions: [KERR_KENT_N_SW, KERR_KENT_N_SE],
-  },
-  {
     routes: [ROUTES.kerr.name],
     description: "to 45th",
     type: "uncomfortable",

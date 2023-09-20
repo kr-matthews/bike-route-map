@@ -11,6 +11,7 @@ import {
   ONTARIO_KENT_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const GLADSTONE_KENT = [49.20641, -123.06229];
 const ELLIOTT_KENT_W = [49.20582, -123.05698];
@@ -67,6 +68,12 @@ export const KENT = [
       [49.20872, -123.082],
       CROMPTON_KENT_S,
     ],
+  },
+  {
+    routes: [ROUTES.kent.name],
+    videos: [VIDEOS.invernessSb],
+    description: "kent to 45th",
+    positions: [CROMPTON_KENT_S, CROMPTON_KENT_N],
   },
   {
     routes: [ROUTES.kent.name],
@@ -187,6 +194,12 @@ export const KENT = [
       [49.20674, -123.0424],
       KERR_KENT_N_SW,
     ],
+  },
+  {
+    routes: [ROUTES.kent.name, ROUTES.kerr.name],
+    description: "crossing kerr",
+    videos: [VIDEOS.kerrSb],
+    positions: [KERR_KENT_N_SW, KERR_KENT_N_SE],
   },
   {
     routes: [ROUTES.kent.name],
