@@ -18,28 +18,6 @@ import { ROUTES } from "../routes";
 
 export const BALACLAVA = [
   {
-    // ! separate (initial part of?) this segment into Fraser River Trail?
-    description: "celtic",
-    positions: [
-      [49.2148, -123.16516],
-      [49.21531, -123.16658],
-      [49.21563, -123.16796],
-      [49.21583, -123.16809],
-      [49.21586, -123.16824],
-      [49.21577, -123.16856],
-      [49.2161, -123.17026],
-      [49.21615, -123.17136],
-      [49.21614, -123.17412],
-      [49.21618, -123.17475],
-      [49.21644, -123.17548],
-      [49.21649, -123.17604],
-      [49.21668, -123.17607],
-      [49.21681, -123.17616],
-      [49.21767, -123.17615],
-      BALACLAVA_CELTIC,
-    ],
-  },
-  {
     routes: [ROUTES.balaclava.name],
     description: "celtic to 45th",
     positions: [

@@ -212,10 +212,15 @@ export const ROUTES = {
     name: "Frances Union",
     legs: [{ videos: {} }],
   },
+  fraserForeshoreTrail: {
+    name: "Fraser Foreshore Urban Trail",
+    shortName: "Fraser Foreshore T.",
+    legs: [{ videos: {} }],
+    isIncomplete: true,
+  },
   fraserRiverTrail: {
     name: "Fraser River Trail",
     legs: [{ videos: {} }],
-    isIncomplete: true,
   },
   gardenCity: {
     name: "Garden City Rd",

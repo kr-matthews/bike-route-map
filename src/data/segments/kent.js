@@ -4,16 +4,19 @@ import {
   CROMPTON_KENT_N,
   CROMPTON_KENT_S,
   ELLIOTT_KENT,
+  ELLIOTT_KENT_PATH,
+  GLADSTONE_KENT,
   HEATHER_KENT_N,
   KERR_KENT_N_SE,
   KERR_KENT_N_SW,
   ONTARIO_KENT_N,
   ONTARIO_KENT_S,
+  RIVER_DISTRICT_CROSSING_DETOUR_SPLIT,
+  VICTORIA_KENT_N,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-const GLADSTONE_KENT = [49.20641, -123.06229];
 const ELLIOTT_KENT_W = [49.20582, -123.05698];
 const MORNINGSTAR_PARK_W = [49.20587, -123.0544];
 const MORNINGSTAR_PARK_E = [49.20593, -123.05372];
@@ -72,7 +75,7 @@ export const KENT = [
   {
     routes: [ROUTES.kent.name],
     videos: [VIDEOS.invernessSb],
-    description: "kent to 45th",
+    description: "crompton",
     positions: [CROMPTON_KENT_S, CROMPTON_KENT_N],
   },
   {
@@ -94,7 +97,7 @@ export const KENT = [
       [49.20898, -123.07132],
       [49.20824, -123.06876],
       [49.20798, -123.06781],
-      [49.20749, -123.06613],
+      VICTORIA_KENT_N,
       [49.20723, -123.06523],
       [49.20659, -123.06299],
       GLADSTONE_KENT,
@@ -164,6 +167,7 @@ export const KENT = [
     positions: [
       ELLIOTT_KENT_W,
       [49.20575, -123.05698],
+      ELLIOTT_KENT_PATH,
       [49.20575, -123.05648],
       [49.20576, -123.05598],
       [49.2058, -123.05528],
@@ -238,7 +242,8 @@ export const KENT = [
       [49.20372, -123.03425],
       [49.20361, -123.03384],
       [49.20375, -123.03219],
-      [49.20412, -123.03169],
+      RIVER_DISTRICT_CROSSING_DETOUR_SPLIT,
+      [49.20417, -123.03165],
       [49.20441, -123.03148],
       [49.20467, -123.03132],
       [49.20486, -123.03122],
