@@ -311,7 +311,7 @@ export const ROUTES = {
   },
   lakewood: {
     name: "Lakewood",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.lakewoodNb } }],
   },
   lionsGate: {
     name: "Lions Gate Bridge",
@@ -352,7 +352,7 @@ export const ROUTES = {
   },
   nanaimo: {
     name: "Nanaimo St",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.nanaimoSb } }],
   },
   nelson: {
     name: "Nelson St",

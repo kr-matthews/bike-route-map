@@ -5,6 +5,7 @@ import {
   NANAIMO_PANDORA_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const NANAIMO_CHARLES_E = [49.27295, -123.05651];
 const NANAIMO_CHARLES_W = [49.27295, -123.05669];
@@ -54,6 +55,7 @@ export const NANAIMO = [
     routes: [ROUTES.nanaimo.name],
     description: "sb",
     oneWay: "required",
+    videos: [VIDEOS.nanaimoSb],
     positions: [
       NANAIMO_PANDORA_W,
       [49.28208, -123.05668],

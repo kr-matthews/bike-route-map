@@ -6,11 +6,13 @@ import {
   WALL_OXFORD_PARK,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const LAKEWOOD = [
   {
     routes: [ROUTES.lakewood.name],
     description: "primary",
+    videos: [VIDEOS.lakewoodNb],
     positions: [
       LAKEWOOD_GRANDVIEW,
       [49.26228, -123.06203],
