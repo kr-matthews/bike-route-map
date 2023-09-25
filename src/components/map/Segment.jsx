@@ -60,20 +60,24 @@ export default function Segment(segment) {
       polylineProps={polylineProps}
       borderProps={hasBorder ? borderProps : undefined}
     >
-      {hasAnyRoutes && (
-        <Tooltip {...tooltipProps}>
-          {isClosed && (
-            <div>
-              <b>[SEGMENT CLOSED]</b>
-            </div>
-          )}
-          {routes.map((route) => (
-            <div key={route}>
-              {primaryRoute === route ? <b>{route}</b> : route}
-            </div>
-          ))}
-        </Tooltip>
-      )}
+      <Tooltip {...tooltipProps}>
+        {hasAnyRoutes ? (
+          <>
+            {isClosed && (
+              <div>
+                <b>[SEGMENT CLOSED]</b>
+              </div>
+            )}
+            {routes.map((route) => (
+              <div key={route}>
+                {primaryRoute === route ? <b>{route}</b> : route}
+              </div>
+            ))}
+          </>
+        ) : (
+          <>Alternative option or connection between routes</>
+        )}
+      </Tooltip>
     </MyPolyline>
   );
 }
