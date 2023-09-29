@@ -11,7 +11,7 @@ import { isSubsequence, removeWhiteSpaces } from "../../utils/strings";
 // !! partition routes by e-w / n-s, by city, by other?
 // !! allow filtering (by direction, to only official, by quality, etc)?
 
-export default function Routes() {
+export default function Routes({ showLegend }) {
   const [searchText, setSearchText] = useState("");
   const routesToShow = useMemo(
     () =>
@@ -38,6 +38,17 @@ export default function Routes() {
     >
       <h2 style={{ paddingLeft: 15 }}>Routes</h2>
       <Search text={searchText} setText={setSearchText} />
+      <button
+        style={{
+          position: "absolute",
+          top: 25,
+          right: 20,
+          cursor: "pointer",
+        }}
+        onClick={showLegend}
+      >
+        Show Legend
+      </button>
       <div
         style={{
           flex: 2,

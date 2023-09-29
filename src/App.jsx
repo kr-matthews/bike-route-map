@@ -16,6 +16,7 @@ export default function App() {
     <Selections.Provider value={selections}>
       <div style={{ display: "flex" }}>
         <Map setMapRef={setMapRef} />
+        {/* // !! add wrapper component with drop-down to select child: Preview, Legend, etc */}
         <Preview mapRef={mapRef} />
       </div>
     </Selections.Provider>

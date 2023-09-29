@@ -1,8 +1,12 @@
+import { useState } from "react";
 import Routes from "./Routes";
 import SelectedRoute from "./SelectedRoute";
+import Legend from "./Legend";
 
 // !!! move styling to css files
 export default function Preview({ mapRef }) {
+  const [isLegendVisible, setIsLegendVisible] = useState(false);
+
   return (
     <div
       style={{
@@ -14,8 +18,14 @@ export default function Preview({ mapRef }) {
         overflow: "hidden",
       }}
     >
-      <Routes />
-      <SelectedRoute mapRef={mapRef} />
+      {isLegendVisible ? (
+        <Legend hide={() => setIsLegendVisible(false)} />
+      ) : (
+        <>
+          <Routes showLegend={() => setIsLegendVisible(true)} />
+          <SelectedRoute mapRef={mapRef} />
+        </>
+      )}
     </div>
   );
 }
