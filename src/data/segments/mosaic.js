@@ -73,7 +73,7 @@ export const MOSAIC = [
     ],
   },
   {
-    routes: [ROUTES.mosaic.name, ROUTES.pandora.name],
+    routes: [ROUTES.mosaic.name],
     description: "pandora",
     videos: [VIDEOS.pandoraEb],
     positions: [MCLEAN_FRANKLIN, [49.28321, -123.07408], MCLEAN_POWELL],
