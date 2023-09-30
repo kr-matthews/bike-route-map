@@ -285,6 +285,7 @@ export const HIGHBURY_4TH_S = [49.26863, -123.18765];
 export const HIGHBURY_8TH = [49.26526, -123.1878];
 export const HIGHBURY_POINT_GREY = [49.27234, -123.18751];
 export const HOMER_BEACH = [49.27156, -123.12693];
+export const HOMER_DUNSMUIR = [49.28175, -123.11343];
 export const HOMER_HELMCKEN = [49.27629, -123.12167];
 export const HOMER_NELSON = [49.2773, -123.12012];
 export const HOMER_PACIFIC_N = [49.27317, -123.12588];

@@ -801,8 +801,12 @@ export const SEASIDE_BYPASS = [
       [49.27227, -123.12798],
       [49.27187, -123.12739],
       HOMER_BEACH,
-      SEAWALL_BEACH,
     ],
+  },
+  {
+    description: "homer to seaside",
+    videos: [VIDEOS.homerNb],
+    positions: [HOMER_BEACH, SEAWALL_BEACH],
   },
   {
     description: "thurlow: seawall to beach",

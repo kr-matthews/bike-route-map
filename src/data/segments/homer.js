@@ -1,5 +1,6 @@
 import {
   HOMER_BEACH,
+  HOMER_DUNSMUIR,
   HOMER_HELMCKEN,
   HOMER_NELSON,
   HOMER_PACIFIC_N,
@@ -7,11 +8,15 @@ import {
   HOMER_SMITHE,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
+
+const HOMER_ROBSON = [49.27944, -123.11691];
 
 export const HOMER = [
   {
     routes: [ROUTES.homer.name],
     description: "south of pacific",
+    videos: [VIDEOS.homerNb],
     positions: [
       HOMER_BEACH,
       [49.27197, -123.1263],
@@ -27,8 +32,9 @@ export const HOMER = [
   },
   {
     routes: [ROUTES.homer.name],
-    description: "north of pacific",
+    description: "pacific to robson",
     oneWay: "required",
+    videos: [VIDEOS.homerNb],
     positions: [
       HOMER_PACIFIC_N,
       [49.27326, -123.12586],
@@ -43,7 +49,16 @@ export const HOMER = [
       HOMER_HELMCKEN,
       HOMER_NELSON,
       HOMER_SMITHE,
-      [49.27944, -123.11691],
+      HOMER_ROBSON,
     ],
+  },
+  {
+    routes: [ROUTES.homer.name],
+    description: "north of robson",
+    hideUnlessVideo: true,
+    type: "unofficial",
+    oneWay: "required",
+    videos: [VIDEOS.homerNb],
+    positions: [HOMER_ROBSON, HOMER_DUNSMUIR],
   },
 ];

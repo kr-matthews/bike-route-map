@@ -277,7 +277,7 @@ export const ROUTES = {
   },
   homer: {
     name: "Homer St",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.homerNb } }],
   },
   hornby: {
     name: "Hornby",
@@ -382,7 +382,7 @@ export const ROUTES = {
   },
   pender: {
     name: "Pender St",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.penderEb } }],
   },
   portside: {
     name: "Portside",

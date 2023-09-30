@@ -11,6 +11,7 @@ import {
   CARRALL_PENDER_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const TAYLOR_PENDER = [49.28079, -123.10559];
 
@@ -19,6 +20,7 @@ export const PENDER = [
     routes: [ROUTES.pender.name],
     description: "eb",
     oneWay: "required",
+    videos: [VIDEOS.penderEb],
     positions: [
       CAMBIE_PENDER_SE,
       [49.28137, -123.10963],
@@ -27,8 +29,14 @@ export const PENDER = [
       [49.28102, -123.1076],
       [49.28065, -123.10563],
       CARRALL_PENDER_SW,
-      CARRALL_PENDER_SE,
     ],
+  },
+  {
+    routes: [ROUTES.pender.name],
+    description: "eb carrall intersection",
+    oneWay: "required",
+    hideArrows: true,
+    positions: [CARRALL_PENDER_SW, CARRALL_PENDER_SE],
   },
   {
     routes: [ROUTES.pender.name],
