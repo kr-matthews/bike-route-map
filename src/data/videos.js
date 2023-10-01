@@ -1,9 +1,11 @@
 const VIDEOS = {
+  adanacWb: "ZDvPnT7PrUo",
   alderNb: "ixJ03H36AII",
   alexanderEb: "5pjlcdGKa10",
   arthurLaingSb: "JtDYj7aNwJo",
   bcParkwayBurnabyEb: "a9Rwmtu7SI0",
   bcParkwayVancouverEb: "3giKczCLloI",
+  beattySb: "Kqxlkrkb33s",
   burrardNb: "62m58RRdHcg",
   burrardSb: "pFj4NnJ80Fk",
   cambieSb: "RNDV1Zc8rB8",

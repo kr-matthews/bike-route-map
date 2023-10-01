@@ -11,11 +11,12 @@ import {
   BEATTY_SMITHE_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const BEATTY = [
   {
     routes: [ROUTES.beatty.name],
-    description: "eb",
+    description: "nb",
     oneWay: "required",
     elevation: 0.5,
     positions: [
@@ -33,8 +34,9 @@ export const BEATTY = [
   },
   {
     routes: [ROUTES.beatty.name],
-    description: "wb",
+    description: "sb",
     oneWay: "required",
+    videos: [VIDEOS.beattySb],
     positions: [
       BEATTY_PENDER_NW,
       BEATTY_PENDER_SW,

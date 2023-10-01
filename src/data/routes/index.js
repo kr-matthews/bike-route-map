@@ -44,7 +44,7 @@ export const ROUTES = {
   },
   adanac: {
     name: "Adanac",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { westbound: VIDEOS.adanacWb } }],
   },
   alberni: {
     name: "Alberni St",
@@ -83,7 +83,7 @@ export const ROUTES = {
   },
   beatty: {
     name: "Beatty St",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.beattySb } }],
   },
   blanca: {
     name: "Blanca St",

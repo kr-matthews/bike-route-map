@@ -50,6 +50,7 @@ export const ADANAC = [
   {
     routes: [ROUTES.adanac.name],
     description: "east end merged",
+    videos: [VIDEOS.adanacWb],
     positions: [EXPO_UNION, UNION_SPLIT],
   },
   {
@@ -73,7 +74,7 @@ export const ADANAC = [
     routes: [ROUTES.adanac.name],
     description: "downtown westbound",
     oneWay: "required",
-
+    videos: [VIDEOS.adanacWb],
     positions: [
       DUNLEVY_UNION,
       [49.27763, -123.09563],
@@ -92,6 +93,7 @@ export const ADANAC = [
   {
     routes: [ROUTES.adanac.name],
     description: "dunlevy to sunrise",
+    videos: [VIDEOS.adanacWb],
     positions: [
       DUNLEVY_UNION,
       [49.27756, -123.09357],
@@ -123,12 +125,13 @@ export const ADANAC = [
   {
     routes: [ROUTES.adanac.name, ROUTES.sunrise.name],
     description: "sunrise",
-    videos: [VIDEOS.sunriseNb],
+    videos: [VIDEOS.adanacWb, VIDEOS.sunriseNb],
     positions: [SLOCAN_ADANAC, KASLO_ADANAC],
   },
   {
     routes: [ROUTES.adanac.name],
     description: "sunrise to boundary",
+    videos: [VIDEOS.adanacWb],
     positions: [
       KASLO_ADANAC,
       [49.27745, -123.0441],
