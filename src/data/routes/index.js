@@ -309,7 +309,7 @@ export const ROUTES = {
   },
   knightStreetBridge: {
     name: "Knight Street Bridge",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.knightStBridgeSb } }],
   },
   lakewood: {
     name: "Lakewood",

@@ -247,6 +247,7 @@ export const KNIGHT_STREET_BRIDGE = [
     description: "sb on-ramp",
     oneWay: "required",
     elevation: 0.5,
+    videos: [VIDEOS.knightStBridgeSb],
     positions: [
       INVERNESS_MARINE,
       [49.21099, -123.07971],
@@ -278,6 +279,7 @@ export const KNIGHT_STREET_BRIDGE = [
     description: "sb elevation 1",
     oneWay: "required",
     elevation: 1,
+    videos: [VIDEOS.knightStBridgeSb],
     positions: [SOUTHBOUND_ELEVATION_START_1, SOUTHBOUND_ELEVATION_END_1],
   },
   {
@@ -285,6 +287,7 @@ export const KNIGHT_STREET_BRIDGE = [
     description: "sb mitchell island",
     oneWay: "required",
     elevation: 0.5,
+    videos: [VIDEOS.knightStBridgeSb],
     positions: [
       SOUTHBOUND_ELEVATION_END_1,
       [49.20722, -123.07756],
@@ -310,6 +313,7 @@ export const KNIGHT_STREET_BRIDGE = [
     description: "sb elevation 2",
     oneWay: "required",
     elevation: 1,
+    videos: [VIDEOS.knightStBridgeSb],
     positions: [
       SOUTHBOUND_ELEVATION_START_2,
       [49.20425, -123.07766],
@@ -326,6 +330,7 @@ export const KNIGHT_STREET_BRIDGE = [
     description: "sb off-ramp",
     oneWay: "required",
     elevation: 0.5,
+    videos: [VIDEOS.knightStBridgeSb],
     positions: [
       SOUTHBOUND_ELEVATION_END_2,
       [49.19388, -123.07766],

@@ -36,6 +36,7 @@ const VIDEOS = {
   homerNb: "1zkLD7aOBUc",
   invernessSb: "eim5zDSdA2I",
   kerrSb: "A_MpEUYNWxE",
+  knightStBridgeSb: "wzeQhznjo6U",
   lakewoodNb: "xKlYQByxty4",
   lionsGateBridgeNb: "KbhPPsdOzIE",
   lionsGateBridgeSb: "eHio3HMRIMw",
