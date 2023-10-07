@@ -173,7 +173,6 @@ export const ROUTES = {
   chancellor: {
     name: "Chancellor Blvd",
     legs: [{ videos: {} }],
-    isIncomplete: true,
   },
   chilco: {
     name: "Chilco",

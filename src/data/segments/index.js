@@ -18,6 +18,7 @@ import { CARDERO } from "./cardero";
 import { CARRALL } from "./carrall";
 import { CASSIAR } from "./cassiar";
 import { CENTRAL_VALLEY_GREENWAY } from "./centralValleyGreenway";
+import { CHANCELLOR } from "./chancellor";
 import { CHILCO } from "./chilco";
 import { COLUMBIA } from "./columbia";
 import { COMOX_HELMCKEN } from "./comoxHelmcken";
@@ -107,6 +108,7 @@ export const SEGMENTS = [
   ...CARRALL,
   ...CASSIAR,
   ...CENTRAL_VALLEY_GREENWAY,
+  ...CHANCELLOR,
   ...CHILCO,
   ...COLUMBIA,
   ...COMOX_HELMCKEN,

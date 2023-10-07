@@ -1,5 +1,6 @@
 // convention: north-/south-bound street first
 
+export const ACADIA_CHANCELLOR = [49.27335, -123.24209];
 export const ADERA_68TH = [49.21057, -123.14365];
 export const ALDER_7TH = [49.26524, -123.1313];
 export const ALDER_10TH = [49.26253, -123.1314];
@@ -57,8 +58,8 @@ export const BLANCA_4TH_E = [49.26911, -123.21498];
 export const BLANCA_4TH_W = [49.26911, -123.21512];
 export const BLANCA_6TH = [49.26738, -123.21518];
 export const BLANCA_8TH_E = [49.26568, -123.21508];
-export const BLANCA_8TH_NW = [49.26577, -123.21525];
-export const BLANCA_8TH_SW = [49.26557, -123.21525];
+export const BLANCA_8TH_NW = [49.26575, -123.21525];
+export const BLANCA_8TH_SW = [49.26561, -123.21525];
 export const BLANCA_10TH_E = [49.26392, -123.21515];
 export const BLANCA_10TH_NW = [49.26402, -123.21532];
 export const BLANCA_10TH_SW = [49.2638, -123.21533];
@@ -354,7 +355,7 @@ export const MARINE_70TH_N = [49.2086, -123.14215];
 export const MARINE_70TH_S = [49.20848, -123.14218];
 export const MARINE_ARTHUR_LAING_N = [49.20451, -123.13844];
 export const MARINE_ARTHUR_LAING_S = [49.20435, -123.1386];
-export const MARINE_CHANCELLOR_N = [49.27139, -123.25405];
+export const MARINE_CHANCELLOR_N = [49.27136, -123.25404];
 export const MARINE_CHANCELLOR_SE = [49.27114, -123.25391];
 export const MARINE_MARINE = [49.25674, -123.25295];
 export const MARINE_SEAWALL = [49.275, -123.20567];
@@ -466,6 +467,7 @@ export const STANLEY_PARK_LOOP_SPLIT_W = [49.29446, -123.14858];
 export const STEPHENS_3RD = [49.26924, -123.16634];
 export const STEPHENS_POINT_GREY = [49.27222, -123.16634];
 export const STEPHENS_YORK = [49.27192, -123.16616];
+export const TASMANIA_CHANCELLOR = [49.26804, -123.22379];
 export const THIRD_SEASIDE = [49.27175, -123.19346];
 export const THURLOW_HARO = [49.28393, -123.12591];
 export const THURLOW_SEAWALL = [49.27734, -123.1362];
