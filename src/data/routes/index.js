@@ -89,6 +89,11 @@ export const ROUTES = {
     name: "Blanca St",
     legs: [{ videos: {} }],
   },
+  bridgeportTrail: {
+    name: "Bridgeport Trail",
+    legs: [{ videos: {} }],
+    isIncomplete: true,
+  },
   burnaby: {
     name: "Burnaby",
     legs: [{ videos: {} }],
@@ -239,6 +244,11 @@ export const ROUTES = {
     name: "Gladstone",
     legs: [{ videos: { northbound: VIDEOS.gladstoneNb } }],
   },
+  granville: {
+    name: "Granville Ave",
+    legs: [{ videos: {} }],
+    isIncomplete: true,
+  },
   haro: {
     name: "Haro",
     legs: [{ videos: { westbound: VIDEOS.haroWb } }],
@@ -325,6 +335,11 @@ export const ROUTES = {
       },
     ],
   },
+  lougheed: {
+    name: "Lougheed Highway",
+    legs: [{ videos: {} }],
+    isIncomplete: true,
+  },
   marine: {
     name: "Marine",
     legs: [
@@ -395,6 +410,11 @@ export const ROUTES = {
     name: "Prince Edward",
     legs: [{ videos: { northbound: VIDEOS.princeEdwardNb } }],
   },
+  railwayGreenway: {
+    name: "Railway Greenway",
+    legs: [{ videos: {} }],
+    isIncomplete: true,
+  },
   richards: {
     name: "Richards",
     legs: [{ videos: {} }],
@@ -446,9 +466,19 @@ export const ROUTES = {
     shortName: "Second Narrows Br.",
     legs: [{ videos: {} }],
   },
+  shellRoad: {
+    name: "Shell Road",
+    legs: [{ videos: {} }],
+    isIncomplete: true,
+  },
   smithe: {
     name: "Smithe St",
     legs: [{ videos: { westbound: VIDEOS.cambieBridgeSmithNb } }],
+  },
+  spiritTrail: {
+    name: "Spirit Trail",
+    legs: [{ videos: {} }],
+    isIncomplete: true,
   },
   stanleyParkLoop: {
     name: "Stanley Park Loop",
