@@ -99,7 +99,8 @@ export default function Legend({ hide }) {
       >
         Show Routes
       </button>
-      <div>
+
+      <p style={{ marginLeft: "auto", marginRight: "auto" }}>
         <span>Select type: </span>
         <select
           value={selectedTypeIndex}
@@ -111,8 +112,15 @@ export default function Legend({ hide }) {
             </option>
           ))}
         </select>
-      </div>
-      <div style={{ height: mapHeight, width: mapWidth }}>
+      </p>
+      <div
+        style={{
+          marginLeft: "auto",
+          marginRight: "auto",
+          height: mapHeight,
+          width: mapWidth,
+        }}
+      >
         <MapContainer
           key={selectedTypeIndex}
           style={{ width: mapWidth, height: mapHeight }}
@@ -144,7 +152,9 @@ export default function Legend({ hide }) {
           <Segment {...otherSegment} />
         </MapContainer>
       </div>
-      Note: one-way arrows may only appear at certain zoom levels.
+      <p style={{ marginLeft: "auto", marginRight: "auto" }}>
+        Note: one-way arrows may only appear at certain zoom levels.
+      </p>
     </div>
   );
 }
