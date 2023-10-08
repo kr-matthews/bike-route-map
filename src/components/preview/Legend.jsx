@@ -100,6 +100,30 @@ export default function Legend({ hide }) {
         Show Routes
       </button>
 
+      <p style={{ marginLeft: "auto", marginRight: "auto", color: "red" }}>
+        Note: This project is still a work-in-progress. Some routes aren't drawn
+        yet.
+      </p>
+      <p>
+        This is a map of bike routes in and around Vancouver. All bike routes in
+        Vancouver are present (let me know if any are missing). Major bike
+        routes in adjacent cities (including UBC) are usually present, but there
+        are plenty more that are not on this map.
+      </p>
+      <p>
+        You can select (click on) a route via the list on the side panel, or
+        directly on the map. Either way, existing videos (if any) will be shown
+        for that route. If you select a video, then the segments that it
+        includes will show up in purple. The video has chapters at the bottom
+        for quickly finding a particular segment of a route (make the video
+        fullscreen to see them more easily).
+      </p>
+      <p>
+        See the dropdown and map below for an illustration of the types of
+        routes shown. Note that arrows for one-way routes only appear if you
+        zoom in sufficiently.
+      </p>
+
       <p style={{ marginLeft: "auto", marginRight: "auto" }}>
         <span>Select type: </span>
         <select
@@ -152,9 +176,6 @@ export default function Legend({ hide }) {
           <Segment {...otherSegment} />
         </MapContainer>
       </div>
-      <p style={{ marginLeft: "auto", marginRight: "auto" }}>
-        Note: one-way arrows may only appear at certain zoom levels.
-      </p>
     </div>
   );
 }
