@@ -2,9 +2,7 @@ import { useEffect, useState } from "react";
 import { useMap } from "react-leaflet";
 import L from "leaflet";
 import "leaflet-polylinedecorator";
-
-const SOMEWHAT_ZOOMED_IN = 16;
-const VERY_ZOOMED_IN = 18;
+import { SOMEWHAT_ZOOMED_IN, VERY_ZOOMED_IN } from "../utils/params";
 
 /**
  * The implementation is messy because react-leaflet doesn't
@@ -49,7 +47,7 @@ export default function useDirectionalArrows(
 
   useEffect(
     function removeDecoratorWhenZoomedOut() {
-      if (isActive && !isZoomedIn && !!decorator) {
+      if (isActive && !isZoomedIn && decorator) {
         decorator.removeFrom(map);
       }
     },
@@ -59,7 +57,7 @@ export default function useDirectionalArrows(
 
   useEffect(
     function addDecoratorWhenZoomedIn() {
-      if (isActive && isZoomedIn) {
+      if (isActive && isZoomedIn && decorator) {
         decorator.addTo(map);
       }
     },

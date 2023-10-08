@@ -17,3 +17,6 @@ export const ELEVATED_BORDER_COLOUR = "Black";
 export const UNDERGROUND_BORDER_COLOUR = "#967969";
 
 export const DASH_PATTERN = "6, 10";
+
+export const SOMEWHAT_ZOOMED_IN = 16;
+export const VERY_ZOOMED_IN = 18;
