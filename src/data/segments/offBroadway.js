@@ -151,7 +151,7 @@ export const OFF_BROADWAY = [
   },
   {
     routes: [ROUTES.offBroadway.name],
-    description: "cvg/off-broadway east",
+    description: "cvg/off broadway east",
     videos: [VIDEOS.offBroadwayWb],
     positions: [
       GRANDVIEW_8TH_N,

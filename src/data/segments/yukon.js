@@ -51,7 +51,7 @@ export const YUKON = [
   },
   {
     routes: [ROUTES.yukon.name, ROUTES.offBroadway.name],
-    description: "off-broadway",
+    description: "off broadway",
     videos: [VIDEOS.yukonSb, VIDEOS.offBroadwayWb],
     positions: [YUKON_7TH, [49.26571, -123.11279], YUKON_5TH],
   },

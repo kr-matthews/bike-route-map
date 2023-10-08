@@ -49,7 +49,7 @@ export const MOSAIC = [
   },
   {
     routes: [ROUTES.mosaic.name, ROUTES.offBroadway.name],
-    description: "mosaic/off-broadway",
+    description: "mosaic/off broadway",
     videos: [VIDEOS.mosaicSb, VIDEOS.offBroadwayWb],
     positions: [WOODLAND_7TH, WOODLAND_GRANDVIEW],
   },

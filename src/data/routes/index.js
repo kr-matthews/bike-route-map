@@ -368,7 +368,7 @@ export const ROUTES = {
     legs: [{ videos: {} }],
   },
   offBroadway: {
-    name: "Off-Broadway",
+    name: "Off Broadway",
     legs: [{ videos: { westbound: VIDEOS.offBroadwayWb } }],
   },
   ontario: {

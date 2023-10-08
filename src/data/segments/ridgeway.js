@@ -26,7 +26,7 @@ import { VIDEOS } from "../videos";
 export const RIDGEWAY = [
   {
     routes: [ROUTES.ridgeway.name],
-    description: "off-broadway to balaclava",
+    description: "off broadway to balaclava",
     positions: [
       DISCOVERY_8TH,
       [49.26374, -123.20305],

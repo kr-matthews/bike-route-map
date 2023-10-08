@@ -210,13 +210,13 @@ export const CAMBIE_BRIDGE = [
     ],
   },
   {
-    description: "connection to off-broadway via ash",
+    description: "connection to off broadway via ash",
     elevation: 0.5,
     videos: [VIDEOS.cambieBridgeNelsonSb, VIDEOS.heatherSb],
     positions: [ASH_7TH, ASH_2ND],
   },
   {
-    description: "connection to off-broadway via 2nd",
+    description: "connection to off broadway via 2nd",
     elevation: 0.5,
     videos: [VIDEOS.cambieBridgeNelsonSb],
     positions: [
@@ -352,7 +352,7 @@ export const CAMBIE_BRIDGE = [
     positions: [SPYGLASS_1ST, SPYGLASS_COMMODORE],
   },
   {
-    description: "connection to off-broadway via 5th",
+    description: "connection to off broadway via 5th",
     videos: [VIDEOS.cambieBridgeSmithNb],
     positions: [
       CAMBIE_2ND_SE,

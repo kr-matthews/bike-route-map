@@ -218,14 +218,14 @@ export const CENTRAL_VALLEY_GREENWAY = [
   {
     routes: [ROUTES.centralValleyGreenway.name, ROUTES.offBroadway.name],
     legs: ["Vancouver"],
-    description: "cvg/off-broadway west",
+    description: "cvg/off broadway west",
     videos: [VIDEOS.centralValleyVancouverEb, VIDEOS.offBroadwayWb],
     positions: [WOODLAND_GRANDVIEW, COMMERCIAL_GRANDVIEW],
   },
   {
     routes: [ROUTES.centralValleyGreenway.name, ROUTES.offBroadway.name],
     legs: ["Vancouver"],
-    description: "cvg/off-broadway east",
+    description: "cvg/off broadway east",
     videos: [VIDEOS.centralValleyGreenway, VIDEOS.offBroadwayWb],
     positions: [COMMERCIAL_GRANDVIEW, [49.26372, -123.06966], GRANDVIEW_8TH_N],
   },
