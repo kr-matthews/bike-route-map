@@ -6,6 +6,7 @@ import {
   QUEBEC_KEEFER_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const GORE_KEEFER = [49.27944, -123.09719];
 
@@ -14,6 +15,7 @@ export const KEEFER = [
     routes: [ROUTES.keefer.name],
     description: "west",
     type: "uncomfortable",
+    videos: [VIDEOS.keeferEb],
     positions: [
       CARRALL_KEEFER_W,
       CARRALL_KEEFER_E,
@@ -34,6 +36,7 @@ export const KEEFER = [
   {
     routes: [ROUTES.keefer.name],
     description: "east",
+    videos: [VIDEOS.keeferEb],
     positions: [
       GORE_KEEFER,
       [49.27944, -123.09719],

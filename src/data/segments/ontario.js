@@ -18,11 +18,13 @@ import {
   ONTARIO_PATH_ATHLETES,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const ONTARIO = [
   {
     routes: [ROUTES.ontario.name],
     description: "kent to 59th",
+    videos: [VIDEOS.ontarioNb],
     positions: [
       ONTARIO_KENT_N,
       [49.20939, -123.1067],
@@ -37,11 +39,13 @@ export const ONTARIO = [
   {
     routes: [ROUTES.ontario.name, ROUTES.masumiMitsui.name],
     description: "masumi mitsui",
+    videos: [VIDEOS.ontarioNb],
     positions: [ONTARIO_59TH, ONTARIO_58TH],
   },
   {
     routes: [ROUTES.ontario.name],
     description: "58th to false creek",
+    videos: [VIDEOS.ontarioNb],
     positions: [
       ONTARIO_58TH,
       [49.21854, -123.10621],

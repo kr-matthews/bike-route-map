@@ -288,7 +288,7 @@ export const ROUTES = {
   },
   keefer: {
     name: "Keefer",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.keeferEb } }],
   },
   kent: {
     name: "Kent",
@@ -349,7 +349,7 @@ export const ROUTES = {
   },
   mosaic: {
     name: "Mosaic",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.mosaicSb } }],
   },
   nanaimo: {
     name: "Nanaimo St",
@@ -373,7 +373,7 @@ export const ROUTES = {
   },
   ontario: {
     name: "Ontario",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.ontarioNb } }],
   },
   pandora: {
     name: "Pandora",
