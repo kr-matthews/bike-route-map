@@ -444,7 +444,7 @@ export const STANLEY_PARK_LOOP = [
     ],
   },
   {
-    routes: [ROUTES.stanleyParkLoop.name],
+    routes: [ROUTES.stanleyParkLoop.name, ROUTES.seaside.name],
     description: "second beach",
     positions: [
       ONE_WAY_END,
