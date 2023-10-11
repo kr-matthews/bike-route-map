@@ -37,6 +37,7 @@ import {
   TRAFALGAR_POINT_GREY,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const SEASIDE_POINT_GREY_W = [49.27133, -123.19079];
 const SEASIDE_WHYTE_E = [49.27631, -123.14042];
@@ -192,6 +193,14 @@ export const SEASIDE = [
       [49.27199, -123.19411],
       [49.27177, -123.19362],
       THIRD_SEASIDE,
+    ],
+  },
+  {
+    routes: [ROUTES.seaside.name],
+    description: "jericho/kits overlap",
+    videos: [VIDEOS.seasideKitsWb],
+    positions: [
+      THIRD_SEASIDE,
       [49.27172, -123.19274],
       [49.27134, -123.19088],
       SEASIDE_POINT_GREY_W,
@@ -200,6 +209,7 @@ export const SEASIDE = [
   {
     routes: [ROUTES.seaside.name],
     description: "kits",
+    videos: [VIDEOS.seasideKitsWb],
     positions: [
       SEASIDE_POINT_GREY_W,
       [49.27165, -123.18951],
@@ -299,13 +309,13 @@ export const SEASIDE = [
       [49.27735, -123.14102],
       [49.27645, -123.14044],
       SEASIDE_WHYTE_E,
+      SEAWALL_WHYTE,
     ],
   },
   {
     routes: [ROUTES.seaside.name],
     description: "false creek south",
     positions: [
-      SEASIDE_WHYTE_E,
       SEAWALL_WHYTE,
       [49.27524, -123.14003],
       [49.27519, -123.14004],

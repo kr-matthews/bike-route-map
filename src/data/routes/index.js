@@ -439,7 +439,7 @@ export const ROUTES = {
       { name: "Stanley Park", videos: {} },
       { name: "West End", videos: {} },
       { name: "False Creek", videos: {} },
-      { name: "Kitsilano", videos: {} },
+      { name: "Kitsilano", videos: { westbound: VIDEOS.seasideKitsWb } },
       { name: "Jericho & Spanish Banks", videos: {} },
     ],
   },
