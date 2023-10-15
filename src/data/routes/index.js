@@ -32,7 +32,7 @@ export const ROUTES = {
   },
   twentyNinth: {
     name: "29th",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { westbound: VIDEOS.twentyNinthWb } }],
   },
   fortyFifth: {
     name: "45th",

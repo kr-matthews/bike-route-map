@@ -194,7 +194,7 @@ export const HEATHER = [
   {
     routes: [ROUTES.heather.name, ROUTES.twentyNinth.name],
     description: "29th",
-    videos: [VIDEOS.heatherSb],
+    videos: [VIDEOS.heatherSb, VIDEOS.twentyNinthWb],
     positions: [HEATHER_28TH, HEATHER_29TH],
   },
   {
