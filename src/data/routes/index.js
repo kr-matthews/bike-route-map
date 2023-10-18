@@ -350,7 +350,14 @@ export const ROUTES = {
   masumiMitsui: {
     name: "Masumi Mitsui Greenway",
     shortName: "Masumi Mitsui Gr.",
-    legs: [{ videos: { eastbound: VIDEOS.masumiMitsuiEb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.masumiMitsuiEb,
+          westbound: VIDEOS.masumiMitsuiWb,
+        },
+      },
+    ],
   },
   midtown: {
     name: "Midtown",

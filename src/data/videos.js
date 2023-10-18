@@ -42,6 +42,7 @@ const VIDEOS = {
   lionsGateBridgeNb: "KbhPPsdOzIE",
   lionsGateBridgeSb: "eHio3HMRIMw",
   masumiMitsuiEb: "QVK6E_hmQFc",
+  masumiMitsuiWb: "lc-lYIQvaww",
   midtownVancouverEb: "3qGbnTOYyL0",
   moray: "wSwMTjMlKt4",
   mosaicSb: "uDSSzA4ZN0Q",

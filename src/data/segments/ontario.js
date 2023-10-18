@@ -39,7 +39,7 @@ export const ONTARIO = [
   {
     routes: [ROUTES.ontario.name, ROUTES.masumiMitsui.name],
     description: "masumi mitsui",
-    videos: [VIDEOS.ontarioNb],
+    videos: [VIDEOS.ontarioNb, VIDEOS.masumiMitsuiEb, VIDEOS.masumiMitsuiWb],
     positions: [ONTARIO_59TH, ONTARIO_58TH],
   },
   {
