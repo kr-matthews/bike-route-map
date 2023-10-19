@@ -79,7 +79,6 @@ export const ROUTES = {
       { name: "New Westminster", videos: {} },
       { name: "Surrey", videos: {} },
     ],
-    isIncomplete: true,
   },
   beatty: {
     name: "Beatty St",
