@@ -160,7 +160,6 @@ export const ROUTES = {
   centralParkLoop: {
     name: "Central Park Loop",
     legs: [{ videos: {} }],
-    isIncomplete: true,
   },
   centralValleyGreenway: {
     name: "Central Valley Greenway",

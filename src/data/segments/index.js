@@ -17,6 +17,7 @@ import { CANADA_LINE } from "./canadaLine";
 import { CARDERO } from "./cardero";
 import { CARRALL } from "./carrall";
 import { CASSIAR } from "./cassiar";
+import { CENTRAL_PARK_LOOP } from "./centralPark";
 import { CENTRAL_VALLEY_GREENWAY } from "./centralValleyGreenway";
 import { CHANCELLOR } from "./chancellor";
 import { CHILCO } from "./chilco";
@@ -107,6 +108,7 @@ export const SEGMENTS = [
   ...CARDERO,
   ...CARRALL,
   ...CASSIAR,
+  ...CENTRAL_PARK_LOOP,
   ...CENTRAL_VALLEY_GREENWAY,
   ...CHANCELLOR,
   ...CHILCO,

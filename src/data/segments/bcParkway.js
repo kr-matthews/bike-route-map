@@ -2,15 +2,19 @@ import {
   BC_PARKWAY_10TH,
   BC_PARKWAY_CVG_SPLIT,
   BOUNDARY_VANNESS,
-  CENTRAL_PARK_LOOP_NW,
+  CENTRAL_PARK_BC_PARKWAY_WEST_SPLIT,
+  CENTRAL_PARK_BC_PARKWAY_NE,
+  CENTRAL_PARK_NW,
   EARLES_VANNESS,
   GLADSTONE_BC_PARKWAY,
   LAKEWOOD_GRANDVIEW,
   LAKEWOOD_JOHN_HENDRY_PARK,
+  PATTERSON_BC_PARKWAY,
   QUAYSIDE_JOIN,
   SLOCAN_29TH,
   SLOCAN_BC_PARKWAY,
   TODD_VANNESS,
+  BOUNDARY_VANNESS_E,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -23,7 +27,6 @@ const BC_PARKWAY_29TH_STATION = [49.24432, -123.04668];
 const JOYCE_BC_PARKWAY_SPLIT_EAST = [49.23733, -123.02949];
 const JOYCE_BC_PARKWAY_SPLIT_WEST = [49.23789, -123.03033];
 const CENTRAL_PARK_BC_PARKWAY_EAST_SPLIT = [49.23126, -123.01657];
-const CENTRAL_PARK_BC_PARKWAY_WEST_SPLIT = [49.23212, -123.019];
 const SOUTHRIDGE_OVERPASS_N = [49.20483, -122.95879];
 const SOUTHRIDGE_OVERPASS_S = [49.20443, -122.95896];
 const QUEENSBOROUGH_LOOPS_ELEVATION_START = [49.19922, -122.9508];
@@ -52,7 +55,6 @@ export const BC_PARKWAY = [
   // vancouver alternates
   {
     routes: [ROUTES.bcParkway.name],
-    legs: ["Vancouver"],
     description: "Nanaimo alt",
     positions: [
       NANAIMO_BC_PARKWAY_SPLIT_WEST,
@@ -63,7 +65,6 @@ export const BC_PARKWAY = [
   },
   {
     routes: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
-    legs: ["Vancouver"],
     description: "29th alt road",
     oneWay: "recommended",
     type: "uncomfortable",
@@ -72,7 +73,6 @@ export const BC_PARKWAY = [
   },
   {
     routes: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
-    legs: ["Vancouver"],
     description: "29th alt path",
     oneWay: "recommended",
     videos: [VIDEOS.sunriseNb],
@@ -85,7 +85,6 @@ export const BC_PARKWAY = [
   },
   {
     routes: [ROUTES.bcParkway.name],
-    legs: ["Vancouver"],
     description: "Joyce alt",
     positions: [
       JOYCE_BC_PARKWAY_SPLIT_WEST,
@@ -95,7 +94,6 @@ export const BC_PARKWAY = [
   },
   {
     routes: [ROUTES.bcParkway.name],
-    legs: ["Vancouver"],
     description: "29th alt. wb to penticton",
     type: "uncomfortable",
     oneWay: "recommended",
@@ -103,7 +101,6 @@ export const BC_PARKWAY = [
   },
   {
     routes: [ROUTES.bcParkway.name],
-    legs: ["Vancouver"],
     description: "penticton alt. wb",
     oneWay: "recommended",
     positions: [PENTICTON_29TH, PENTICTON_BC_PARKWAY],
@@ -112,7 +109,6 @@ export const BC_PARKWAY = [
   // vancouver
   {
     routes: [ROUTES.bcParkway.name],
-    legs: ["Vancouver"],
     description: "lakewood to sunrise",
     videos: [VIDEOS.bcParkwayVancouverEb],
     positions: [
@@ -158,7 +154,6 @@ export const BC_PARKWAY = [
   },
   {
     routes: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
-    legs: ["Vancouver"],
     description: "29th path",
     videos: [VIDEOS.bcParkwayVancouverEb],
     positions: [
@@ -170,7 +165,6 @@ export const BC_PARKWAY = [
   },
   {
     routes: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
-    legs: ["Vancouver"],
     description: "sunrise",
     videos: [VIDEOS.bcParkwayVancouverEb, VIDEOS.sunriseNb],
     positions: [
@@ -185,7 +179,6 @@ export const BC_PARKWAY = [
   },
   {
     routes: [ROUTES.bcParkway.name],
-    legs: ["Vancouver"],
     description: "sunrise to boundary",
     videos: [VIDEOS.bcParkwayVancouverEb],
     positions: [
@@ -216,13 +209,32 @@ export const BC_PARKWAY = [
 
   // burnaby alternates
   {
+    description: "skytrain from boundary",
+    positions: [
+      BOUNDARY_VANNESS_E,
+      [49.23422, -123.02304],
+      [49.2342, -123.02285],
+      [49.23409, -123.0225],
+      [49.2336, -123.02138],
+      [49.2335, -123.02117],
+      [49.23336, -123.02074],
+      [49.23331, -123.02066],
+    ],
+  },
+  {
     routes: [ROUTES.bcParkway.name],
-    legs: ["Burnaby"],
     description: "south central park split",
     videos: [VIDEOS.bcParkwayBurnabyEb],
     positions: [
       CENTRAL_PARK_BC_PARKWAY_WEST_SPLIT,
-      [49.23131, -123.01722],
+      [49.23208, -123.01885],
+      [49.23194, -123.01855],
+      [49.2318, -123.01835],
+      [49.23176, -123.01812],
+      [49.2314, -123.01754],
+      [49.23129, -123.01722],
+      [49.23132, -123.01692],
+      [49.23128, -123.01676],
       CENTRAL_PARK_BC_PARKWAY_EAST_SPLIT,
     ],
   },
@@ -230,12 +242,11 @@ export const BC_PARKWAY = [
   // burnaby
   {
     routes: [ROUTES.bcParkway.name],
-    legs: ["Burnaby"],
-    description: "west of central park split",
+    description: "west of central park loop",
     videos: [VIDEOS.bcParkwayBurnabyEb],
     positions: [
       BOUNDARY_VANNESS,
-      [49.23435, -123.02333],
+      BOUNDARY_VANNESS_E,
       [49.23415, -123.0233],
       [49.23392, -123.02317],
       [49.23312, -123.02317],
@@ -245,34 +256,31 @@ export const BC_PARKWAY = [
       [49.23248, -123.02328],
       [49.23218, -123.02328],
       [49.232, -123.02293],
-      CENTRAL_PARK_LOOP_NW,
-      [49.2321, -123.02198],
-      [49.23215, -123.02002],
-      [49.23206, -123.01955],
-      [49.23216, -123.01931],
-      CENTRAL_PARK_BC_PARKWAY_WEST_SPLIT,
+      CENTRAL_PARK_NW,
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
-    legs: ["Burnaby"],
+    description: "skytrain to kingsway",
+    positions: [CENTRAL_PARK_BC_PARKWAY_NE, [49.2325, -123.01929]],
+  },
+  {
+    routes: [ROUTES.bcParkway.name, ROUTES.centralParkLoop.name],
     description: "north central park split",
-    positions: [
-      CENTRAL_PARK_BC_PARKWAY_WEST_SPLIT,
-      [49.23214, -123.01887],
-      [49.23221, -123.01865],
-      CENTRAL_PARK_BC_PARKWAY_EAST_SPLIT,
-    ],
+    positions: [CENTRAL_PARK_BC_PARKWAY_NE, CENTRAL_PARK_BC_PARKWAY_EAST_SPLIT],
+  },
+  {
+    routes: [ROUTES.bcParkway.name, ROUTES.centralParkLoop.name],
+    description: "central park split to patterson",
+    videos: [VIDEOS.bcParkwayBurnabyEb],
+    positions: [CENTRAL_PARK_BC_PARKWAY_EAST_SPLIT, PATTERSON_BC_PARKWAY],
   },
   {
     routes: [ROUTES.bcParkway.name],
-    legs: ["Burnaby"],
-    description: "central park split to southridge overpass",
+    description: "central park to southridge overpass",
     elevation: 0.5,
     videos: [VIDEOS.bcParkwayBurnabyEb],
     positions: [
-      CENTRAL_PARK_BC_PARKWAY_EAST_SPLIT,
-      [49.22954, -123.01279],
+      PATTERSON_BC_PARKWAY,
       [49.22953, -123.01256],
       [49.22913, -123.01167],
       [49.22898, -123.01147],
@@ -359,7 +367,6 @@ export const BC_PARKWAY = [
   },
   {
     routes: [ROUTES.bcParkway.name],
-    legs: ["Burnaby"],
     description: "southridge overpass",
     elevation: 1,
     videos: [VIDEOS.bcParkwayBurnabyEb],
@@ -367,7 +374,6 @@ export const BC_PARKWAY = [
   },
   {
     routes: [ROUTES.bcParkway.name],
-    legs: ["Burnaby"],
     description: "southridge overpass to new westminster",
     elevation: 0.5,
     videos: [VIDEOS.bcParkwayBurnabyEb],
