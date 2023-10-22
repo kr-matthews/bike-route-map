@@ -13,11 +13,13 @@ import {
   HORNBY_SMITHE,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const HORNBY = [
   {
     routes: [ROUTES.hornby.name],
     description: "primary",
+    videos: [VIDEOS.hornbyNb],
     positions: [
       HORNBY_SEABREEZE,
       [49.27521, -123.13304],

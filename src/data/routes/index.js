@@ -288,7 +288,7 @@ export const ROUTES = {
   },
   hornby: {
     name: "Hornby",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.hornbyNb } }],
   },
   inverness: {
     name: "Inverness",
@@ -515,7 +515,7 @@ export const ROUTES = {
   },
   waterfront: {
     name: "Waterfront St",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.waterfrontEb } }],
   },
   windermere: {
     name: "Windermere",

@@ -49,6 +49,8 @@ const DENMAN_SEAWALL = [49.29345, -123.13229];
 const SEAWALL_STANLEY_PARK_WEST_END = [49.29031, -123.14571];
 const SEAWALL_UNDER_BURRARD_N = [49.27587, -123.13547];
 
+const MID_CONVENTION_CENTER = [49.28962, -123.11524];
+
 // !! connections: bc place? to confirm
 
 export const SEASIDE = [
@@ -824,7 +826,7 @@ export const SEASIDE = [
   },
   {
     routes: [ROUTES.seaside.name],
-    description: "coal harbour",
+    description: "coal harbour (minus half con. cen.)",
     positions: [
       STANLEY_PARK_LOOP_JOIN_E,
       [49.29515, -123.13588],
@@ -906,7 +908,15 @@ export const SEASIDE = [
       [49.29032, -123.11765],
       [49.29003, -123.11671],
       [49.2899, -123.11629],
-      [49.28962, -123.11524],
+      MID_CONVENTION_CENTER,
+    ],
+  },
+  {
+    routes: [ROUTES.seaside.name],
+    description: "half convention center",
+    videos: [VIDEOS.hornbyNb],
+    positions: [
+      MID_CONVENTION_CENTER,
       [49.28944, -123.11443],
       [49.28939, -123.11431],
       [49.28933, -123.11428],

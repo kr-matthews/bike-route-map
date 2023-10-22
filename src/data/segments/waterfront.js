@@ -1,5 +1,6 @@
 import { MAIN_ALEXANDER, SEAWALL_WATERFRONT } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const MAIN_ELEVATED_N = [49.28522, -123.10017];
 const MAIN_ELEVATED_S = [49.28425, -123.09945];
@@ -13,6 +14,7 @@ export const WATERFRONT = [
     description: "pre-underground",
     type: "unofficial",
     elevation: -0.5,
+    videos: [VIDEOS.waterfrontEb],
     positions: [SEAWALL_WATERFRONT, UNDERGROUND_W],
   },
   {
@@ -20,6 +22,7 @@ export const WATERFRONT = [
     description: "underground",
     type: "unofficial",
     elevation: -1,
+    videos: [VIDEOS.waterfrontEb],
     positions: [
       UNDERGROUND_W,
       [49.28913, -123.11808],
@@ -35,6 +38,7 @@ export const WATERFRONT = [
     description: "waterfront",
     type: "unofficial",
     elevation: -0.5,
+    videos: [VIDEOS.waterfrontEb],
     positions: [
       UNDERGROUND_E,
       [49.28709, -123.11211],
@@ -60,6 +64,7 @@ export const WATERFRONT = [
     description: "underground to loop",
     type: "unofficial",
     elevation: 0.5,
+    videos: [VIDEOS.waterfrontEb],
     positions: [MAIN_WATERFRONT, MAIN_ELEVATED_N],
   },
   {
@@ -67,6 +72,7 @@ export const WATERFRONT = [
     description: "loop",
     type: "unofficial",
     elevation: 1,
+    videos: [VIDEOS.waterfrontEb],
     positions: [
       MAIN_ELEVATED_N,
       [49.28524, -123.09988],
@@ -84,6 +90,7 @@ export const WATERFRONT = [
     description: "post-loop",
     type: "unofficial",
     elevation: 0.5,
+    videos: [VIDEOS.waterfrontEb],
     positions: [MAIN_ELEVATED_S, MAIN_ALEXANDER],
   },
 ];
