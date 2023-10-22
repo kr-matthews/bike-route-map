@@ -8,8 +8,12 @@ import {
 } from "../../utils/pathOptions";
 import { Selections } from "../../App";
 import MyPolyline from "./MyPolyline";
+import { hasVideo } from "../../utils/routes";
+import videoIcon from "../../images/video.svg";
 
 // !! indicate by default whether route/segment has video (and/or quality of route, whether official or not (dashed line?), etc.)
+
+// !!! make route vs routeName consistent everywhere
 
 export default function Segment(segment) {
   const { routes, oneWay, hideArrows, isClosed, positions, elevation } =
@@ -70,12 +74,19 @@ export default function Segment(segment) {
             )}
             {routes.map((route) => (
               <div key={route}>
+                {hasVideo(segment, route) && (
+                  <img
+                    src={videoIcon}
+                    alt="has video"
+                    style={{ marginRight: "0.5em", height: "0.8em" }}
+                  />
+                )}
                 {primaryRoute === route ? <b>{route}</b> : route}
               </div>
             ))}
           </>
         ) : (
-          <>Alternative option or connection between routes</>
+          "Alternative option or connection between routes"
         )}
       </Tooltip>
     </MyPolyline>
