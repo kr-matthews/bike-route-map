@@ -11,7 +11,7 @@ import { ROUTES } from "../routes";
 
 export const RICHARDS = [
   {
-    routes: [ROUTES.richards.name],
+    routeNames: [ROUTES.richards.name],
     description: "primary",
     positions: [
       RICHARDS_BEACH,

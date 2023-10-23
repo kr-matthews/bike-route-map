@@ -17,7 +17,7 @@ import { VIDEOS } from "../videos";
 
 export const HORNBY = [
   {
-    routes: [ROUTES.hornby.name],
+    routeNames: [ROUTES.hornby.name],
     description: "primary",
     videos: [VIDEOS.hornbyNb],
     positions: [

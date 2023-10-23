@@ -70,7 +70,7 @@ export const BURRARD = [
   },
   // northbound
   {
-    routes: [ROUTES.burrard.name],
+    routeNames: [ROUTES.burrard.name],
     description: "6th to 4th nb",
     oneWay: "required",
     type: "unofficial",
@@ -83,7 +83,7 @@ export const BURRARD = [
     ],
   },
   {
-    routes: [ROUTES.burrard.name],
+    routeNames: [ROUTES.burrard.name],
     description: "northbound pre-bridge",
     oneWay: "required",
     elevation: 0.5,
@@ -105,7 +105,7 @@ export const BURRARD = [
     ],
   },
   {
-    routes: [ROUTES.burrard.name],
+    routeNames: [ROUTES.burrard.name],
     description: "northbound bridge",
     oneWay: "required",
     elevation: 1,
@@ -121,7 +121,7 @@ export const BURRARD = [
     ],
   },
   {
-    routes: [ROUTES.burrard.name],
+    routeNames: [ROUTES.burrard.name],
     description: "northbound post-bridge",
     oneWay: "required",
     elevation: 0.5,
@@ -137,7 +137,7 @@ export const BURRARD = [
     ],
   },
   {
-    routes: [ROUTES.burrard.name],
+    routeNames: [ROUTES.burrard.name],
     description: "northbound end",
     oneWay: "required",
     positions: [BURRARD_BURNABY_E, NORTHBOUND_ENDPOINT],
@@ -172,7 +172,7 @@ export const BURRARD = [
   },
   // southbound
   {
-    routes: [ROUTES.burrard.name],
+    routeNames: [ROUTES.burrard.name],
     description: "southbound pre-bridge",
     oneWay: "required",
     elevation: 0.5,
@@ -203,7 +203,7 @@ export const BURRARD = [
     ],
   },
   {
-    routes: [ROUTES.burrard.name],
+    routeNames: [ROUTES.burrard.name],
     description: "southbound bridge",
     oneWay: "required",
     elevation: 1,
@@ -219,7 +219,7 @@ export const BURRARD = [
     ],
   },
   {
-    routes: [ROUTES.burrard.name],
+    routeNames: [ROUTES.burrard.name],
     description: "southbound post-bridge",
     oneWay: "required",
     elevation: 0.5,
@@ -233,7 +233,7 @@ export const BURRARD = [
     ],
   },
   {
-    routes: [ROUTES.burrard.name],
+    routeNames: [ROUTES.burrard.name],
     description: "york bi-directional",
     videos: [VIDEOS.burrardSb],
     positions: [
@@ -244,7 +244,7 @@ export const BURRARD = [
     ],
   },
   {
-    routes: [ROUTES.burrard.name],
+    routeNames: [ROUTES.burrard.name],
     description: "kits",
     oneWay: "required",
     videos: [VIDEOS.burrardSb],
@@ -261,7 +261,7 @@ export const BURRARD = [
     ],
   },
   {
-    routes: [ROUTES.burrard.name],
+    routeNames: [ROUTES.burrard.name],
     description: "southbound end",
     oneWay: "required",
     positions: [BURRARD_7TH, SOUTHBOUND_ENDPOINT],

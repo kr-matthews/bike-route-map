@@ -18,7 +18,7 @@ import { ROUTES } from "../routes";
 
 export const BALACLAVA = [
   {
-    routes: [ROUTES.balaclava.name],
+    routeNames: [ROUTES.balaclava.name],
     description: "celtic to 45th",
     positions: [
       BALACLAVA_CELTIC,
@@ -33,7 +33,7 @@ export const BALACLAVA = [
     ],
   },
   {
-    routes: [ROUTES.balaclava.name],
+    routeNames: [ROUTES.balaclava.name],
     description: "45th to ridgeway",
     positions: [
       CARNARVON_45TH,
@@ -48,12 +48,12 @@ export const BALACLAVA = [
     ],
   },
   {
-    routes: [ROUTES.balaclava.name, ROUTES.ridgeway.name],
+    routeNames: [ROUTES.balaclava.name, ROUTES.ridgeway.name],
     description: "ridgeway alt overlap carnarvon",
     positions: [CARNARVON_31ST, CARNARVON_29TH],
   },
   {
-    routes: [ROUTES.balaclava.name, ROUTES.ridgeway.name],
+    routeNames: [ROUTES.balaclava.name, ROUTES.ridgeway.name],
     description: "ridgeway alt overlap balaclava",
     positions: [
       BALACLAVA_29TH,
@@ -69,7 +69,7 @@ export const BALACLAVA = [
     ],
   },
   {
-    routes: [ROUTES.balaclava.name],
+    routeNames: [ROUTES.balaclava.name],
     description: "north",
     positions: [
       QUESNEL_20TH,

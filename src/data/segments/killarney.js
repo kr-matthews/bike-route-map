@@ -8,7 +8,7 @@ import { ROUTES } from "../routes";
 
 export const KILLARNEY = [
   {
-    routes: [ROUTES.killarney.name],
+    routeNames: [ROUTES.killarney.name],
     description: "primary",
     positions: [
       NANAIMO_46TH,

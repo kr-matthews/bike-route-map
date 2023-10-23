@@ -9,7 +9,7 @@ import { ROUTES } from "../routes";
 
 export const BUTE = [
   {
-    routes: [ROUTES.bute.name],
+    routeNames: [ROUTES.bute.name],
     description: "primary",
     positions: [
       BUTE_BURNABY,

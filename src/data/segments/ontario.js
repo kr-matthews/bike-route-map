@@ -22,7 +22,7 @@ import { VIDEOS } from "../videos";
 
 export const ONTARIO = [
   {
-    routes: [ROUTES.ontario.name],
+    routeNames: [ROUTES.ontario.name],
     description: "kent to 59th",
     videos: [VIDEOS.ontarioNb],
     positions: [
@@ -37,13 +37,13 @@ export const ONTARIO = [
     ],
   },
   {
-    routes: [ROUTES.ontario.name, ROUTES.masumiMitsui.name],
+    routeNames: [ROUTES.ontario.name, ROUTES.masumiMitsui.name],
     description: "masumi mitsui",
     videos: [VIDEOS.ontarioNb, VIDEOS.masumiMitsuiEb, VIDEOS.masumiMitsuiWb],
     positions: [ONTARIO_59TH, ONTARIO_58TH],
   },
   {
-    routes: [ROUTES.ontario.name],
+    routeNames: [ROUTES.ontario.name],
     description: "58th to false creek",
     videos: [VIDEOS.ontarioNb],
     positions: [

@@ -20,13 +20,13 @@ import { VIDEOS } from "../videos";
 
 export const FORTY_FIFTH = [
   {
-    routes: [ROUTES.fortyFifth.name, ROUTES.balaclava.name],
+    routeNames: [ROUTES.fortyFifth.name, ROUTES.balaclava.name],
     description: "balaclava",
     videos: [VIDEOS.fortyFifthWb],
     positions: [BALACLAVA_45TH, CARNARVON_45TH],
   },
   {
-    routes: [ROUTES.fortyFifth.name],
+    routeNames: [ROUTES.fortyFifth.name],
     description: "balaclava to heather",
     videos: [VIDEOS.fortyFifthWb],
     positions: [
@@ -58,13 +58,13 @@ export const FORTY_FIFTH = [
     ],
   },
   {
-    routes: [ROUTES.fortyFifth.name, ROUTES.heather.name],
+    routeNames: [ROUTES.fortyFifth.name, ROUTES.heather.name],
     description: "heather",
     videos: [VIDEOS.fortyFifthWb, VIDEOS.heatherSb],
     positions: [WILLOW_46TH, TISDALL_46TH],
   },
   {
-    routes: [ROUTES.fortyFifth.name],
+    routeNames: [ROUTES.fortyFifth.name],
     description: "heather to inverness",
     videos: [VIDEOS.fortyFifthWb],
     positions: [
@@ -89,7 +89,7 @@ export const FORTY_FIFTH = [
     ],
   },
   {
-    routes: [ROUTES.fortyFifth.name],
+    routeNames: [ROUTES.fortyFifth.name],
     description: "inverness to ridgeway",
     videos: [VIDEOS.fortyFifthWb],
     positions: [

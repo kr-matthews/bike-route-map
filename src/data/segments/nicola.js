@@ -4,7 +4,7 @@ import { VIDEOS } from "../videos";
 
 export const NICOLA = [
   {
-    routes: [ROUTES.nicola.name],
+    routeNames: [ROUTES.nicola.name],
     description: "primary",
     videos: [VIDEOS.nicolaNb],
     positions: [

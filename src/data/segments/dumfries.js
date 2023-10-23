@@ -10,7 +10,7 @@ import { VIDEOS } from "../videos";
 
 export const DUMFRIES = [
   {
-    routes: [ROUTES.dumfries.name],
+    routeNames: [ROUTES.dumfries.name],
     description: "primary",
     videos: [VIDEOS.dumfriesNb],
     positions: [

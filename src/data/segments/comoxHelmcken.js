@@ -16,7 +16,7 @@ import { VIDEOS } from "../videos";
 
 export const COMOX_HELMCKEN = [
   {
-    routes: [ROUTES.comoxHelmcken.name],
+    routeNames: [ROUTES.comoxHelmcken.name],
     description: "official portion",
     videos: [VIDEOS.comoxHelmckenEb, VIDEOS.comoxHelmckenWb],
     positions: [
@@ -47,7 +47,7 @@ export const COMOX_HELMCKEN = [
     ],
   },
   {
-    routes: [ROUTES.comoxHelmcken.name],
+    routeNames: [ROUTES.comoxHelmcken.name],
     description: "unofficial part",
     type: "unofficial",
     videos: [VIDEOS.comoxHelmckenEb, VIDEOS.comoxHelmckenWb],
@@ -60,14 +60,14 @@ export const COMOX_HELMCKEN = [
     ],
   },
   {
-    routes: [ROUTES.comoxHelmcken.name],
+    routeNames: [ROUTES.comoxHelmcken.name],
     description: "richards to homer",
     type: "unofficial",
     videos: [VIDEOS.comoxHelmckenEb],
     positions: [RICHARDS_HELMCKEN, HOMER_HELMCKEN],
   },
   {
-    routes: [ROUTES.comoxHelmcken.name],
+    routeNames: [ROUTES.comoxHelmcken.name],
     description: "tail end",
     type: "unofficial",
     positions: [HOMER_HELMCKEN, [49.27592, -123.12107], MAINLAND_HELMCKEN],

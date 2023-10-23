@@ -9,7 +9,7 @@ import { VIDEOS } from "../videos";
 
 export const YORK = [
   {
-    routes: [ROUTES.york.name, ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.york.name, ROUTES.seasideBypass.name],
     description: "primary",
     videos: [VIDEOS.yorkEb],
     positions: [
@@ -28,7 +28,7 @@ export const YORK = [
     ],
   },
   {
-    routes: [ROUTES.york.name],
+    routeNames: [ROUTES.york.name],
     description: "york to chestnut",
     videos: [VIDEOS.yorkEb],
     positions: [CYPRESS_YORK_SE, CHESTNUT_YORK],

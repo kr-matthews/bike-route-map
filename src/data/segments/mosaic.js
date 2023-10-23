@@ -25,7 +25,7 @@ export const MOSAIC = [
     ],
   },
   {
-    routes: [ROUTES.mosaic.name],
+    routeNames: [ROUTES.mosaic.name],
     description: "14th",
     videos: [VIDEOS.mosaicSb],
     positions: [
@@ -36,7 +36,7 @@ export const MOSAIC = [
     ],
   },
   {
-    routes: [ROUTES.mosaic.name],
+    routeNames: [ROUTES.mosaic.name],
     description: "14th to 7th",
     videos: [VIDEOS.mosaicSb],
     positions: [
@@ -48,13 +48,13 @@ export const MOSAIC = [
     ],
   },
   {
-    routes: [ROUTES.mosaic.name, ROUTES.offBroadway.name],
+    routeNames: [ROUTES.mosaic.name, ROUTES.offBroadway.name],
     description: "mosaic/off broadway",
     videos: [VIDEOS.mosaicSb, VIDEOS.offBroadwayWb],
     positions: [WOODLAND_7TH, WOODLAND_GRANDVIEW],
   },
   {
-    routes: [ROUTES.mosaic.name],
+    routeNames: [ROUTES.mosaic.name],
     description: "grandview to franklin",
     videos: [VIDEOS.mosaicSb],
     positions: [
@@ -77,7 +77,7 @@ export const MOSAIC = [
     ],
   },
   {
-    routes: [ROUTES.mosaic.name],
+    routeNames: [ROUTES.mosaic.name],
     description: "pandora",
     videos: [VIDEOS.mosaicSb, VIDEOS.pandoraEb],
     positions: [MCLEAN_FRANKLIN, [49.28321, -123.07408], MCLEAN_POWELL],

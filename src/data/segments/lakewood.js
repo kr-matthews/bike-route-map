@@ -10,7 +10,7 @@ import { VIDEOS } from "../videos";
 
 export const LAKEWOOD = [
   {
-    routes: [ROUTES.lakewood.name],
+    routeNames: [ROUTES.lakewood.name],
     description: "primary",
     videos: [VIDEOS.lakewoodNb],
     positions: [

@@ -50,7 +50,7 @@ export const MIDTOWN = [
     positions: [MARINE_41ST_SW, MARINE_41ST_NW],
   },
   {
-    routes: [ROUTES.midtown.name],
+    routeNames: [ROUTES.midtown.name],
     legs: ["Vancouver"],
     description: "west of ridgeway",
     videos: [VIDEOS.midtownVancouverEb],
@@ -74,7 +74,7 @@ export const MIDTOWN = [
     ],
   },
   {
-    routes: [ROUTES.midtown.name, ROUTES.ridgeway.name],
+    routeNames: [ROUTES.midtown.name, ROUTES.ridgeway.name],
     legs: ["Vancouver"],
     description: "west ridgeway overlap",
     videos: [VIDEOS.midtownVancouverEb],
@@ -91,7 +91,7 @@ export const MIDTOWN = [
     ],
   },
   {
-    routes: [ROUTES.midtown.name, ROUTES.ridgeway.name],
+    routeNames: [ROUTES.midtown.name, ROUTES.ridgeway.name],
     legs: ["Vancouver"],
     description: "yew to willow",
     videos: [VIDEOS.midtownVancouverEb],
@@ -112,14 +112,18 @@ export const MIDTOWN = [
     ],
   },
   {
-    routes: [ROUTES.midtown.name, ROUTES.ridgeway.name, ROUTES.heather.name],
+    routeNames: [
+      ROUTES.midtown.name,
+      ROUTES.ridgeway.name,
+      ROUTES.heather.name,
+    ],
     legs: ["Vancouver"],
     description: "heather overlap",
     videos: [VIDEOS.midtownVancouverEb, VIDEOS.heatherSb],
     positions: [WILLOW_37TH, HEATHER_37TH],
   },
   {
-    routes: [ROUTES.midtown.name, ROUTES.ridgeway.name],
+    routeNames: [ROUTES.midtown.name, ROUTES.ridgeway.name],
     legs: ["Vancouver"],
     description: "heather to nanaimo",
     videos: [VIDEOS.midtownVancouverEb],
@@ -179,7 +183,7 @@ export const MIDTOWN = [
     ],
   },
   {
-    routes: [ROUTES.midtown.name],
+    routeNames: [ROUTES.midtown.name],
     legs: ["Vancouver"],
     description: "ridgeway to earles",
     videos: [VIDEOS.midtownVancouverEb],
@@ -193,7 +197,7 @@ export const MIDTOWN = [
     ],
   },
   {
-    routes: [ROUTES.midtown.name, ROUTES.sunrise.name],
+    routeNames: [ROUTES.midtown.name, ROUTES.sunrise.name],
     legs: [undefined, "Vancouver"],
     description: "earles",
     type: "uncomfortable",
@@ -206,7 +210,7 @@ export const MIDTOWN = [
     ],
   },
   {
-    routes: [ROUTES.midtown.name],
+    routeNames: [ROUTES.midtown.name],
     legs: ["Vancouver"],
     description: "29th",
     type: "uncomfortable",
@@ -221,7 +225,7 @@ export const MIDTOWN = [
     ],
   },
   {
-    routes: [ROUTES.midtown.name],
+    routeNames: [ROUTES.midtown.name],
     legs: ["Vancouver"],
     description: "east portion",
     videos: [VIDEOS.midtownVancouverEb],
@@ -239,7 +243,7 @@ export const MIDTOWN = [
     ],
   },
   {
-    routes: [ROUTES.midtown.name],
+    routeNames: [ROUTES.midtown.name],
     legs: ["Burnaby"],
     description: "primary",
     positions: [

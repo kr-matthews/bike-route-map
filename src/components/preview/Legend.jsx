@@ -7,7 +7,7 @@ import { SOMEWHAT_ZOOMED_IN } from "../../utils/params";
 const intersection = [49.26208, -123.10495];
 
 const segment = {
-  routes: ["Route Name"],
+  routeNames: ["Route Name"],
   description: "for the legend",
   positions: [
     [49.26217, -123.10949],
@@ -18,7 +18,7 @@ const segment = {
   ],
 };
 const otherSegment = {
-  routes: ["Another Route"],
+  routeNames: ["Another Route"],
   description: "to show comparison",
   positions: [
     [49.26027, -123.10503],
@@ -154,7 +154,7 @@ export default function Legend({ hide }) {
           scrollWheelZoom
         >
           {/* panes required as <Segment /> assumes they exist */}
-          {/* TODO: de-duplicate */}
+          {/* // !!!: de-duplicate */}
           <Pane name="elevated-2" style={{ zIndex: 311 }} />
           <Pane name="elevated-2-adj" style={{ zIndex: 310 }} />
           <Pane name="elevated-2-border" style={{ zIndex: 309 }} />

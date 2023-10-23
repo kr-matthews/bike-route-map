@@ -15,7 +15,7 @@ import { VIDEOS } from "../videos";
 
 export const BEATTY = [
   {
-    routes: [ROUTES.beatty.name],
+    routeNames: [ROUTES.beatty.name],
     description: "nb",
     oneWay: "required",
     elevation: 0.5,
@@ -33,7 +33,7 @@ export const BEATTY = [
     ],
   },
   {
-    routes: [ROUTES.beatty.name],
+    routeNames: [ROUTES.beatty.name],
     description: "sb",
     oneWay: "required",
     videos: [VIDEOS.beattySb],

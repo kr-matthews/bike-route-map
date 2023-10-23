@@ -31,7 +31,7 @@ export const OFF_BROADWAY = [
     positions: [YEW_10TH, YEW_8TH],
   },
   {
-    routes: [ROUTES.offBroadway.name, ROUTES.ridgeway.name],
+    routeNames: [ROUTES.offBroadway.name, ROUTES.ridgeway.name],
     description: "ridgeway overlap",
     videos: [VIDEOS.offBroadwayWb],
     positions: [
@@ -43,7 +43,7 @@ export const OFF_BROADWAY = [
     ],
   },
   {
-    routes: [ROUTES.offBroadway.name],
+    routeNames: [ROUTES.offBroadway.name],
     description: "west of heather",
     videos: [VIDEOS.offBroadwayWb],
     positions: [
@@ -98,13 +98,13 @@ export const OFF_BROADWAY = [
     ],
   },
   {
-    routes: [ROUTES.offBroadway.name],
+    routeNames: [ROUTES.offBroadway.name],
     description: "heather to ash",
     videos: [VIDEOS.offBroadwayWb, VIDEOS.heatherSb],
     positions: [HEATHER_7TH, ASH_7TH],
   },
   {
-    routes: [ROUTES.offBroadway.name],
+    routeNames: [ROUTES.offBroadway.name],
     description: "ash to yukon",
     videos: [VIDEOS.offBroadwayWb],
     positions: [
@@ -116,7 +116,7 @@ export const OFF_BROADWAY = [
     ],
   },
   {
-    routes: [ROUTES.offBroadway.name],
+    routeNames: [ROUTES.offBroadway.name],
     description: "yukon to mosaic",
     videos: [VIDEOS.offBroadwayWb],
     positions: [
@@ -150,7 +150,7 @@ export const OFF_BROADWAY = [
     ],
   },
   {
-    routes: [ROUTES.offBroadway.name],
+    routeNames: [ROUTES.offBroadway.name],
     description: "cvg/off broadway east",
     videos: [VIDEOS.offBroadwayWb],
     positions: [

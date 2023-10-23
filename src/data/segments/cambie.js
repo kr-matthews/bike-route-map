@@ -42,7 +42,7 @@ export const CAMBIE = [
   },
   // gastown
   {
-    routes: [ROUTES.cambie.name],
+    routeNames: [ROUTES.cambie.name],
     description: "gastown",
     oneWay: "required",
     videos: [VIDEOS.cambieGastownNb],
@@ -58,7 +58,7 @@ export const CAMBIE = [
   },
   // south vancouver
   {
-    routes: [ROUTES.cambie.name],
+    routeNames: [ROUTES.cambie.name],
     description: "sb brief lane",
     oneWay: "required",
     positions: [
@@ -67,7 +67,7 @@ export const CAMBIE = [
     ],
   },
   {
-    routes: [ROUTES.cambie.name],
+    routeNames: [ROUTES.cambie.name],
     description: "sb",
     oneWay: "required",
     videos: [VIDEOS.cambieSb],
@@ -88,7 +88,7 @@ export const CAMBIE = [
     ],
   },
   {
-    routes: [ROUTES.cambie.name],
+    routeNames: [ROUTES.cambie.name],
     description: "nb",
     oneWay: "required",
     positions: [

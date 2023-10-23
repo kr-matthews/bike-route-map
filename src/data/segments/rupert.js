@@ -11,7 +11,7 @@ import { VIDEOS } from "../videos";
 
 export const RUPERT = [
   {
-    routes: [ROUTES.rupert.name],
+    routeNames: [ROUTES.rupert.name],
     description: "nb",
     oneWay: "required",
     videos: [VIDEOS.rupertNb],
@@ -36,7 +36,7 @@ export const RUPERT = [
     ],
   },
   {
-    routes: [ROUTES.rupert.name],
+    routeNames: [ROUTES.rupert.name],
     description: "sb",
     oneWay: "required",
     positions: [

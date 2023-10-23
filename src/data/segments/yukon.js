@@ -14,7 +14,7 @@ import { VIDEOS } from "../videos";
 
 export const YUKON = [
   {
-    routes: [ROUTES.yukon.name],
+    routeNames: [ROUTES.yukon.name],
     description: "29th to king edward",
     videos: [VIDEOS.yukonSb],
     positions: [
@@ -25,13 +25,13 @@ export const YUKON = [
     ],
   },
   {
-    routes: [ROUTES.yukon.name],
+    routeNames: [ROUTES.yukon.name],
     description: "king edward overlap",
     videos: [VIDEOS.yukonSb],
     positions: [YUKON_KING_EDWARD_SE, YUKON_KING_EDWARD_SW],
   },
   {
-    routes: [ROUTES.yukon.name],
+    routeNames: [ROUTES.yukon.name],
     description: "king edward to 7th",
     videos: [VIDEOS.yukonSb],
     positions: [
@@ -50,13 +50,13 @@ export const YUKON = [
     ],
   },
   {
-    routes: [ROUTES.yukon.name, ROUTES.offBroadway.name],
+    routeNames: [ROUTES.yukon.name, ROUTES.offBroadway.name],
     description: "off broadway",
     videos: [VIDEOS.yukonSb, VIDEOS.offBroadwayWb],
     positions: [YUKON_7TH, [49.26571, -123.11279], YUKON_5TH],
   },
   {
-    routes: [ROUTES.yukon.name],
+    routeNames: [ROUTES.yukon.name],
     description: "7th to 1st",
     videos: [VIDEOS.yukonSb],
     positions: [
@@ -68,7 +68,7 @@ export const YUKON = [
     ],
   },
   {
-    routes: [ROUTES.yukon.name],
+    routeNames: [ROUTES.yukon.name],
     description: "crossing 1st",
     positions: [WYLIE_1ST_S, WYLIE_1ST_N],
   },

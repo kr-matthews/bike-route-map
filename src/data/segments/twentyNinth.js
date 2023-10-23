@@ -23,7 +23,7 @@ const PUGET_EDDINGTON = [49.24505, -123.16339];
 
 export const TWENTY_NINTH = [
   {
-    routes: [ROUTES.twentyNinth.name],
+    routeNames: [ROUTES.twentyNinth.name],
     description: "imperial to balaclava/ridgeway",
     videos: [VIDEOS.twentyNinthWb],
     positions: [
@@ -43,7 +43,7 @@ export const TWENTY_NINTH = [
     ],
   },
   {
-    routes: [
+    routeNames: [
       ROUTES.twentyNinth.name,
       ROUTES.balaclava.name,
       ROUTES.ridgeway.name,
@@ -53,7 +53,7 @@ export const TWENTY_NINTH = [
     positions: [BALACLAVA_29TH, CARNARVON_29TH],
   },
   {
-    routes: [ROUTES.twentyNinth.name],
+    routeNames: [ROUTES.twentyNinth.name],
     description: "balaclava/ridgeway to puget",
     videos: [VIDEOS.twentyNinthWb],
     positions: [
@@ -64,14 +64,14 @@ export const TWENTY_NINTH = [
     ],
   },
   {
-    routes: [ROUTES.twentyNinth.name],
+    routeNames: [ROUTES.twentyNinth.name],
     description: "puget",
     type: "uncomfortable",
     videos: [VIDEOS.twentyNinthWb],
     positions: [PUGET_29TH, [49.24521, -123.16368], PUGET_EDDINGTON],
   },
   {
-    routes: [ROUTES.twentyNinth.name],
+    routeNames: [ROUTES.twentyNinth.name],
     description: "puget to valley",
     videos: [VIDEOS.twentyNinthWb],
     positions: [
@@ -89,7 +89,7 @@ export const TWENTY_NINTH = [
     ],
   },
   {
-    routes: [ROUTES.twentyNinth.name, ROUTES.valley.name],
+    routeNames: [ROUTES.twentyNinth.name, ROUTES.valley.name],
     description: "valley",
     videos: [VIDEOS.twentyNinthWb, VIDEOS.valleySb],
     positions: [
@@ -101,7 +101,7 @@ export const TWENTY_NINTH = [
     ],
   },
   {
-    routes: [ROUTES.twentyNinth.name],
+    routeNames: [ROUTES.twentyNinth.name],
     description: "valley to heather",
     videos: [VIDEOS.twentyNinthWb],
     positions: [
@@ -126,7 +126,7 @@ export const TWENTY_NINTH = [
     ],
   },
   {
-    routes: [ROUTES.twentyNinth.name],
+    routeNames: [ROUTES.twentyNinth.name],
     description: "heather to ontario",
     videos: [VIDEOS.twentyNinthWb],
     positions: [

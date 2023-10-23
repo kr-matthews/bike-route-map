@@ -9,7 +9,7 @@ import { VIDEOS } from "../videos";
 
 export const SIXTY_SEVENTH = [
   {
-    routes: [ROUTES.sixtySeventh.name],
+    routeNames: [ROUTES.sixtySeventh.name],
     description: "greenway to adera",
     videos: [VIDEOS.sixtySeventhPlusWb],
     positions: [
@@ -20,13 +20,13 @@ export const SIXTY_SEVENTH = [
     ],
   },
   {
-    routes: [ROUTES.sixtySeventh.name, ROUTES.cypress.name],
+    routeNames: [ROUTES.sixtySeventh.name, ROUTES.cypress.name],
     description: "cypress overlap",
     videos: [VIDEOS.sixtySeventhPlusWb],
     positions: [ADERA_68TH, CORNISH_68TH],
   },
   {
-    routes: [ROUTES.sixtySeventh.name],
+    routeNames: [ROUTES.sixtySeventh.name],
     description: "east of cypress",
     videos: [VIDEOS.sixtySeventhPlusWb],
     positions: [

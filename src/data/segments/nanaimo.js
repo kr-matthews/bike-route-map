@@ -32,7 +32,7 @@ export const NANAIMO = [
     ],
   },
   {
-    routes: [ROUTES.nanaimo.name],
+    routeNames: [ROUTES.nanaimo.name],
     description: "nb",
     oneWay: "required",
     positions: [
@@ -52,7 +52,7 @@ export const NANAIMO = [
     ],
   },
   {
-    routes: [ROUTES.nanaimo.name],
+    routeNames: [ROUTES.nanaimo.name],
     description: "sb",
     oneWay: "required",
     videos: [VIDEOS.nanaimoSb],

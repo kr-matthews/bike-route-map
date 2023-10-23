@@ -17,7 +17,7 @@ import { ROUTES } from "../routes";
 
 export const BLANCA = [
   {
-    routes: [ROUTES.blanca.name],
+    routeNames: [ROUTES.blanca.name],
     description: "northbound",
     type: "uncomfortable",
     oneWay: "required",
@@ -33,14 +33,14 @@ export const BLANCA = [
     ],
   },
   {
-    routes: [ROUTES.blanca.name],
+    routeNames: [ROUTES.blanca.name],
     description: "4th to 6th",
     type: "uncomfortable",
     oneWay: "required",
     positions: [BLANCA_4TH_W, BLANCA_6TH],
   },
   {
-    routes: [ROUTES.blanca.name],
+    routeNames: [ROUTES.blanca.name],
     description: "southbound with lane",
     oneWay: "required",
     positions: [
@@ -55,7 +55,7 @@ export const BLANCA = [
     ],
   },
   {
-    routes: [ROUTES.blanca.name],
+    routeNames: [ROUTES.blanca.name],
     description: "southbound no lane",
     type: "uncomfortable",
     oneWay: "required",

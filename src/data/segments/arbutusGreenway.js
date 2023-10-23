@@ -22,7 +22,7 @@ const ARBUTUS_GREENWAY_8TH = [49.26473, -123.15236];
 
 export const ARBUTUS_GREENWAY = [
   {
-    routes: [ROUTES.arbutusGreenway.name],
+    routeNames: [ROUTES.arbutusGreenway.name],
     description: "south of 10th",
     positions: [
       MILTON_ARBUTUS_GREENWAY,
@@ -115,7 +115,7 @@ export const ARBUTUS_GREENWAY = [
     ],
   },
   {
-    routes: [ROUTES.arbutusGreenway.name],
+    routeNames: [ROUTES.arbutusGreenway.name],
     description: "10th to 8th",
     isClosed: true,
     positions: [
@@ -125,7 +125,7 @@ export const ARBUTUS_GREENWAY = [
     ],
   },
   {
-    routes: [ROUTES.arbutusGreenway.name],
+    routeNames: [ROUTES.arbutusGreenway.name],
     description: "north of 8th",
     positions: [
       ARBUTUS_GREENWAY_8TH,

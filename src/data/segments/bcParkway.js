@@ -54,7 +54,7 @@ const UNIVERSITY_OLD_YALE = [49.18587, -122.8517];
 export const BC_PARKWAY = [
   // vancouver alternates
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "Nanaimo alt",
     positions: [
       NANAIMO_BC_PARKWAY_SPLIT_WEST,
@@ -64,7 +64,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
+    routeNames: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
     description: "29th alt road",
     oneWay: "recommended",
     type: "uncomfortable",
@@ -72,7 +72,7 @@ export const BC_PARKWAY = [
     positions: [[49.24463, -123.04702], SLOCAN_29TH],
   },
   {
-    routes: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
+    routeNames: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
     description: "29th alt path",
     oneWay: "recommended",
     videos: [VIDEOS.sunriseNb],
@@ -84,7 +84,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "Joyce alt",
     positions: [
       JOYCE_BC_PARKWAY_SPLIT_WEST,
@@ -93,14 +93,14 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "29th alt. wb to penticton",
     type: "uncomfortable",
     oneWay: "recommended",
     positions: [SLOCAN_29TH, PENTICTON_29TH],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "penticton alt. wb",
     oneWay: "recommended",
     positions: [PENTICTON_29TH, PENTICTON_BC_PARKWAY],
@@ -108,7 +108,7 @@ export const BC_PARKWAY = [
 
   // vancouver
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "lakewood to sunrise",
     videos: [VIDEOS.bcParkwayVancouverEb],
     positions: [
@@ -153,7 +153,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
+    routeNames: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
     description: "29th path",
     videos: [VIDEOS.bcParkwayVancouverEb],
     positions: [
@@ -164,7 +164,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
+    routeNames: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
     description: "sunrise",
     videos: [VIDEOS.bcParkwayVancouverEb, VIDEOS.sunriseNb],
     positions: [
@@ -178,7 +178,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "sunrise to boundary",
     videos: [VIDEOS.bcParkwayVancouverEb],
     positions: [
@@ -222,7 +222,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "south central park split",
     videos: [VIDEOS.bcParkwayBurnabyEb],
     positions: [
@@ -241,7 +241,7 @@ export const BC_PARKWAY = [
 
   // burnaby
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "west of central park loop",
     videos: [VIDEOS.bcParkwayBurnabyEb],
     positions: [
@@ -264,18 +264,18 @@ export const BC_PARKWAY = [
     positions: [CENTRAL_PARK_BC_PARKWAY_NE, [49.2325, -123.01929]],
   },
   {
-    routes: [ROUTES.bcParkway.name, ROUTES.centralParkLoop.name],
+    routeNames: [ROUTES.bcParkway.name, ROUTES.centralParkLoop.name],
     description: "north central park split",
     positions: [CENTRAL_PARK_BC_PARKWAY_NE, CENTRAL_PARK_BC_PARKWAY_EAST_SPLIT],
   },
   {
-    routes: [ROUTES.bcParkway.name, ROUTES.centralParkLoop.name],
+    routeNames: [ROUTES.bcParkway.name, ROUTES.centralParkLoop.name],
     description: "central park split to patterson",
     videos: [VIDEOS.bcParkwayBurnabyEb],
     positions: [CENTRAL_PARK_BC_PARKWAY_EAST_SPLIT, PATTERSON_BC_PARKWAY],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "central park to southridge overpass",
     elevation: 0.5,
     videos: [VIDEOS.bcParkwayBurnabyEb],
@@ -366,14 +366,14 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "southridge overpass",
     elevation: 1,
     videos: [VIDEOS.bcParkwayBurnabyEb],
     positions: [SOUTHRIDGE_OVERPASS_N, SOUTHRIDGE_OVERPASS_S],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "southridge overpass to new westminster",
     elevation: 0.5,
     videos: [VIDEOS.bcParkwayBurnabyEb],
@@ -391,7 +391,7 @@ export const BC_PARKWAY = [
 
   // new westminster
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "burnaby to queensborough loops",
     elevation: 0.5,
     positions: [
@@ -429,7 +429,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "queensborough loops",
     elevation: 1,
     positions: [
@@ -438,7 +438,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "queensborough dog area",
     elevation: 0.5,
     positions: [
@@ -455,7 +455,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "queensborough bridge sidewalk",
     elevation: 1,
     positions: [
@@ -465,13 +465,13 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "queensborough bridge post-sidewalk",
     elevation: 0.5,
     positions: [QUEENSBOROUGH_ELEVATION_END, QUEENSBOROUGH_POST_RAMP],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "stewardson way",
     positions: [
       QUEENSBOROUGH_POST_RAMP,
@@ -541,14 +541,14 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "third ave pre-overpass",
     type: "uncomfortable",
     elevation: 0.5,
     positions: [THIRD_STEWARDSON, THIRD_ELEVATION_START],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "third ave overpass",
     type: "uncomfortable",
     elevation: 1,
@@ -560,7 +560,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "quayside overpass to split",
     type: "uncomfortable",
     elevation: 0.5,
@@ -583,7 +583,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "quayside waterfront path",
     positions: [
       QUAYSIDE_SPLIT,
@@ -620,7 +620,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "quayside road option",
     type: "uncomfortable",
     positions: [
@@ -650,7 +650,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "to pattullo bridge",
     positions: [
       BC_PARKWAY_CVG_SPLIT,
@@ -666,13 +666,13 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "pre pattullo bridge",
     elevation: 0.5,
     positions: [PATTULLO_PRE_ELEVATION_START, PATTULLO_ELEVATION_START],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "pattullo bridge",
     elevation: 1,
     positions: [
@@ -699,13 +699,13 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "post pattullo bridge",
     elevation: 0.5,
     positions: [PATTULLO_ELEVATION_END, PATTULLO_POST_ELEVATION_END],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "bridge to 111a av",
     positions: [
       PATTULLO_POST_ELEVATION_END,
@@ -716,7 +716,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "111a ave & 110 ave",
     type: "uncomfortable",
     positions: [
@@ -745,7 +745,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "126a st/king george blvd separated path",
     positions: [
       ONE_ONE_ZERO_AV_END,
@@ -836,7 +836,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "university sb 1",
     oneWay: "required",
     type: "uncomfortable",
@@ -853,7 +853,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "university sb 2",
     oneWay: "required",
     positions: [
@@ -872,7 +872,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "university sb 3",
     oneWay: "required",
     type: "uncomfortable",
@@ -897,7 +897,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "university nb 1",
     oneWay: "required",
     type: "uncomfortable",
@@ -921,7 +921,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "university nb 2",
     oneWay: "required",
     positions: [
@@ -940,7 +940,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "university nb 3",
     oneWay: "required",
     type: "uncomfortable",
@@ -957,7 +957,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routes: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "holland park",
     positions: [
       UNIVERSITY_OLD_YALE,

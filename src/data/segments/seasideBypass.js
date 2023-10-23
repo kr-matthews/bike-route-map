@@ -118,7 +118,7 @@ export const SEASIDE_BYPASS = [
     positions: [EASTBOUND_SPLIT_AT_BURRARD, BURRARD_PACIFIC_SE_W],
   },
   {
-    routes: [ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.seasideBypass.name],
     description: "4th to 3rd",
     positions: [WALLACE_4TH_S, WALLACE_3RD],
   },
@@ -129,7 +129,7 @@ export const SEASIDE_BYPASS = [
   },
   // false creek south
   {
-    routes: [ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.seasideBypass.name],
     description: "cypress to fir",
     positions: [
       CYPRESS_1ST,
@@ -141,7 +141,7 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    routes: [ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.seasideBypass.name],
     description: "1st to fir via parking lot",
     oneWay: "required",
     positions: [
@@ -152,7 +152,7 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    routes: [ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.seasideBypass.name],
     description: "fir to 1st",
     oneWay: "recommended",
     positions: [
@@ -163,7 +163,7 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    routes: [ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.seasideBypass.name],
     description: "false creek primary",
     positions: [
       FIR_1ST_E,
@@ -244,7 +244,7 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    routes: [ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.seasideBypass.name],
     description: "false creek east of spyglass",
     videos: [VIDEOS.yukonSb],
     positions: [
@@ -258,7 +258,7 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    routes: [ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.seasideBypass.name],
     description: "1st eb 1",
     oneWay: "required",
     videos: [VIDEOS.yukonSb],
@@ -270,7 +270,7 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    routes: [ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.seasideBypass.name],
     description: "1st eb 2",
     oneWay: "required",
     positions: [
@@ -290,7 +290,7 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    routes: [ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.seasideBypass.name],
     description: "1st wb",
     oneWay: "required",
     positions: [
@@ -311,14 +311,14 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    routes: [ROUTES.seasideBypass.name, ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.seasideBypass.name, ROUTES.centralValleyGreenway.name],
     description: "1st ontario to quebec",
     oneWay: "required",
     videos: [VIDEOS.centralValleyVancouverEb],
     positions: [ONTARIO_1ST_SE, QUEBEC_1ST_SW, QUEBEC_1ST_SE],
   },
   {
-    routes: [ROUTES.seasideBypass.name, ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.seasideBypass.name, ROUTES.centralValleyGreenway.name],
     description: "1st quebec to ontario",
     oneWay: "required",
     positions: [QUEBEC_1ST_NW, ONTARIO_1ST_NE],
@@ -340,7 +340,7 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    routes: [ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.seasideBypass.name],
     description: "quebec -> expo",
     oneWay: "required",
     positions: [
@@ -376,7 +376,7 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    routes: [ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.seasideBypass.name],
     description: "expo bi-directional",
     positions: [
       CARRALL_EXPO_NW,
@@ -390,7 +390,7 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    routes: [ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.seasideBypass.name],
     description: "expo pre-tunnel",
     oneWay: "required",
     elevation: -0.5,
@@ -421,7 +421,7 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    routes: [ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.seasideBypass.name],
     description: "bc place",
     oneWay: "required",
     elevation: -1,
@@ -449,7 +449,7 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    routes: [ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.seasideBypass.name],
     description: "expo -> pacific",
     oneWay: "required",
     elevation: -0.5,
@@ -508,7 +508,7 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    routes: [ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.seasideBypass.name],
     description: "wb under granville",
     oneWay: "required",
     type: "uncomfortable",
@@ -523,7 +523,7 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    routes: [ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.seasideBypass.name],
     description: "wb around burrard",
     oneWay: "required",
     positions: [
@@ -538,7 +538,7 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    routes: [ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.seasideBypass.name],
     description: "pacific eb",
     oneWay: "required",
     positions: [
@@ -628,7 +628,7 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    routes: [ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.seasideBypass.name],
     description: "quebec sb no lane",
     oneWay: "required",
     type: "uncomfortable",
@@ -651,7 +651,7 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    routes: [ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.seasideBypass.name],
     description: "quebec sb lane",
     oneWay: "required",
     positions: [
@@ -683,7 +683,7 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    routes: [ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.seasideBypass.name],
     description: "pacific: beach to burrard",
     type: "uncomfortable",
     positions: [
@@ -694,7 +694,7 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    routes: [ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.seasideBypass.name],
     description: "beach: to jervis",
     positions: [
       STANLEY_PARK_LANE_BEACH,
@@ -939,7 +939,7 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    routes: [ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.seasideBypass.name],
     description: "whyte",
     positions: [
       ARBUTUS_WHYTE,

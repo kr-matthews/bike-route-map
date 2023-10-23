@@ -42,7 +42,7 @@ const SPIRAL_BOTTOM = [49.27383, -123.11435];
 
 export const CAMBIE_BRIDGE = [
   {
-    routes: [ROUTES.cambieBridge.name],
+    routeNames: [ROUTES.cambieBridge.name],
     description: "northbound pre-bridge",
     oneWay: "required",
     elevation: 0.5,
@@ -54,7 +54,7 @@ export const CAMBIE_BRIDGE = [
     ],
   },
   {
-    routes: [ROUTES.cambieBridge.name],
+    routeNames: [ROUTES.cambieBridge.name],
     description: "northbound bridge 1",
     oneWay: "required",
     videos: [VIDEOS.cambieBridgeSmithNb],
@@ -72,7 +72,7 @@ export const CAMBIE_BRIDGE = [
     ],
   },
   {
-    routes: [ROUTES.cambieBridge.name],
+    routeNames: [ROUTES.cambieBridge.name],
     description: "northbound bridge 2",
     oneWay: "required",
     videos: [VIDEOS.cambieBridgeSmithNb],
@@ -80,7 +80,7 @@ export const CAMBIE_BRIDGE = [
     positions: [SPIRAL_PRE_SPLIT_1, SPIRAL_PRE_SPLIT_2],
   },
   {
-    routes: [ROUTES.cambieBridge.name],
+    routeNames: [ROUTES.cambieBridge.name],
     description: "northbound bridge spiral 1",
     oneWay: "required",
     hideArrows: true,
@@ -98,7 +98,7 @@ export const CAMBIE_BRIDGE = [
     ],
   },
   {
-    routes: [ROUTES.cambieBridge.name],
+    routeNames: [ROUTES.cambieBridge.name],
     description: "northbound bridge spiral 2",
     oneWay: "required",
     hideArrows: "true",
@@ -107,7 +107,7 @@ export const CAMBIE_BRIDGE = [
     positions: [SPIRAL_PRE_SPLIT_3, [49.27393, -123.11425], SPIRAL_PRE_SPLIT_4],
   },
   {
-    routes: [ROUTES.cambieBridge.name],
+    routeNames: [ROUTES.cambieBridge.name],
     description: "northbound bridge post-spiral",
     oneWay: "required",
     videos: [VIDEOS.cambieBridgeSmithNb],
@@ -123,7 +123,7 @@ export const CAMBIE_BRIDGE = [
     ],
   },
   {
-    routes: [ROUTES.cambieBridge.name],
+    routeNames: [ROUTES.cambieBridge.name],
     description: "northbound post-bridge",
     oneWay: "required",
     elevation: 0.5,
@@ -177,7 +177,7 @@ export const CAMBIE_BRIDGE = [
     positions: [SPIRAL_PRE_BOTTOM, SPIRAL_BOTTOM],
   },
   {
-    routes: [ROUTES.cambieBridge.name],
+    routeNames: [ROUTES.cambieBridge.name],
     description: "southbound side",
     oneWay: "required",
     videos: [VIDEOS.cambieBridgeNelsonSb],

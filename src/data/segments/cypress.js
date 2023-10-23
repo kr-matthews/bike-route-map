@@ -29,12 +29,12 @@ import { ROUTES } from "../routes";
 
 export const CYPRESS = [
   {
-    routes: [ROUTES.cypress.name],
+    routeNames: [ROUTES.cypress.name],
     description: "cornish",
     positions: [MARINE_70TH_N, CORNISH_68TH],
   },
   {
-    routes: [ROUTES.cypress.name],
+    routeNames: [ROUTES.cypress.name],
     description: "68th to king edward",
     positions: [
       ADERA_68TH,
@@ -74,7 +74,7 @@ export const CYPRESS = [
     ],
   },
   {
-    routes: [ROUTES.cypress.name],
+    routeNames: [ROUTES.cypress.name],
     description: "angus to 1st",
     positions: [
       ANGUS_MATTHEWS_E,
@@ -100,7 +100,7 @@ export const CYPRESS = [
     ],
   },
   {
-    routes: [ROUTES.cypress.name],
+    routeNames: [ROUTES.cypress.name],
     description: "north end",
     positions: [
       CYPRESS_CORNWALL_N,
@@ -112,7 +112,7 @@ export const CYPRESS = [
     ],
   },
   {
-    routes: [ROUTES.cypress.name],
+    routeNames: [ROUTES.cypress.name],
     description: "angus median nb",
     oneWay: "required",
     positions: [
@@ -125,7 +125,7 @@ export const CYPRESS = [
     ],
   },
   {
-    routes: [ROUTES.cypress.name],
+    routeNames: [ROUTES.cypress.name],
     description: "angus median sb",
     oneWay: "required",
     positions: [
@@ -138,30 +138,30 @@ export const CYPRESS = [
     ],
   },
   {
-    routes: [ROUTES.cypress.name, ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.cypress.name, ROUTES.seasideBypass.name],
     description: "1st to york",
     oneWay: "required",
     positions: [CYPRESS_1ST, CYPRESS_1ST_NE, CYPRESS_YORK_SE],
   },
   {
-    routes: [ROUTES.cypress.name],
+    routeNames: [ROUTES.cypress.name],
     description: "york to cornwall",
     oneWay: "required",
     positions: [CYPRESS_YORK_SE, CYPRESS_CORNWALL_SE],
   },
   {
-    routes: [ROUTES.cypress.name],
+    routeNames: [ROUTES.cypress.name],
     description: "crossing cornwall",
     positions: [CYPRESS_CORNWALL_SE, CYPRESS_CORNWALL_N],
   },
   {
-    routes: [ROUTES.cypress.name],
+    routeNames: [ROUTES.cypress.name],
     description: "cornwall to york",
     oneWay: "required",
     positions: [CYPRESS_CORNWALL_N, CYPRESS_CORNWALL_SW, CYPRESS_YORK_SW],
   },
   {
-    routes: [ROUTES.cypress.name, ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.cypress.name, ROUTES.seasideBypass.name],
     description: "york to 1st",
     oneWay: "required",
     positions: [CYPRESS_YORK_SW, CYPRESS_1ST_NW, CYPRESS_1ST],

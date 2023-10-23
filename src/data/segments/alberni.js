@@ -3,7 +3,7 @@ import { ROUTES } from "../routes";
 
 export const ALBERNI = [
   {
-    routes: [ROUTES.alberni.name],
+    routeNames: [ROUTES.alberni.name],
     description: "primary",
     positions: [
       CHILCO_ALBERNI_E,

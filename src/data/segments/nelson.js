@@ -30,7 +30,7 @@ export const NELSON = [
     ],
   },
   {
-    routes: [ROUTES.nelson.name],
+    routeNames: [ROUTES.nelson.name],
     oneWay: "required",
     description: "official part",
     elevation: 0.5,

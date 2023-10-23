@@ -24,13 +24,13 @@ import { VIDEOS } from "../videos";
 
 export const SUNRISE = [
   {
-    routes: [ROUTES.sunrise.name],
+    routeNames: [ROUTES.sunrise.name],
     description: "kent to marine",
     videos: [VIDEOS.sunriseNb],
     positions: [ELLIOTT_KENT, ELLIOTT_MARINE],
   },
   {
-    routes: [ROUTES.sunrise.name],
+    routeNames: [ROUTES.sunrise.name],
     description: "marine to vivian",
     type: "uncomfortable",
     videos: [VIDEOS.sunriseNb],
@@ -46,7 +46,7 @@ export const SUNRISE = [
     ],
   },
   {
-    routes: [ROUTES.sunrise.name],
+    routeNames: [ROUTES.sunrise.name],
     description: "kent to ridgeway",
     videos: [VIDEOS.sunriseNb],
     positions: [
@@ -68,7 +68,7 @@ export const SUNRISE = [
     ],
   },
   {
-    routes: [ROUTES.sunrise.name],
+    routeNames: [ROUTES.sunrise.name],
     description: "ridgeway to midtown",
     videos: [VIDEOS.sunriseNb],
     positions: [
@@ -80,14 +80,14 @@ export const SUNRISE = [
     ],
   },
   {
-    routes: [ROUTES.sunrise.name, ROUTES.midtown.name],
+    routeNames: [ROUTES.sunrise.name, ROUTES.midtown.name],
     legs: [undefined, "Vancouver"],
     description: "earles to kingsway",
     videos: [VIDEOS.sunriseNb, VIDEOS.midtownVancouverEb],
     positions: [EARLES_38TH, KINGSWAY_EARLES],
   },
   {
-    routes: [ROUTES.sunrise.name, ROUTES.bcParkway.name],
+    routeNames: [ROUTES.sunrise.name, ROUTES.bcParkway.name],
     legs: ["Vancouver"],
     description: "slocan",
     type: "uncomfortable",
@@ -95,7 +95,7 @@ export const SUNRISE = [
     positions: [SLOCAN_BC_PARKWAY, SLOCAN_29TH],
   },
   {
-    routes: [ROUTES.sunrise.name],
+    routeNames: [ROUTES.sunrise.name],
     description: "bc parkway to 22nd",
     type: "uncomfortable",
     videos: [VIDEOS.sunriseNb],
@@ -108,7 +108,7 @@ export const SUNRISE = [
     ],
   },
   {
-    routes: [ROUTES.sunrise.name],
+    routeNames: [ROUTES.sunrise.name],
     description: "22nd to adanac",
     videos: [VIDEOS.sunriseNb],
     positions: [
@@ -133,7 +133,7 @@ export const SUNRISE = [
     ],
   },
   {
-    routes: [ROUTES.sunrise.name],
+    routeNames: [ROUTES.sunrise.name],
     description: "adanac to wall",
     videos: [VIDEOS.sunriseNb],
     positions: [

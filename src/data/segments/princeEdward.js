@@ -9,7 +9,7 @@ import { VIDEOS } from "../videos";
 
 export const PRINCE_EDWARD = [
   {
-    routes: [ROUTES.princeEdward.name],
+    routeNames: [ROUTES.princeEdward.name],
     description: "primary",
     videos: [VIDEOS.princeEdwardNb],
     positions: [

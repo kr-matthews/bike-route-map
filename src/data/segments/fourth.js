@@ -20,13 +20,13 @@ const SPLIT_WEST_OF_MARINE = [49.26843, -123.20086];
 
 export const FOURTH = [
   {
-    routes: [ROUTES.fourth.name],
+    routeNames: [ROUTES.fourth.name],
     description: "connection between chancellor and 4th",
     videos: [VIDEOS.fourthEb],
     positions: [CHANCELLOR_4TH, CHANCELLOR_4TH_S],
   },
   {
-    routes: [ROUTES.fourth.name],
+    routeNames: [ROUTES.fourth.name],
     description: "chancellor blvd eastbound",
     type: "uncomfortable",
     videos: [VIDEOS.fourthEb],
@@ -42,7 +42,7 @@ export const FOURTH = [
     ],
   },
   {
-    routes: [ROUTES.fourth.name],
+    routeNames: [ROUTES.fourth.name],
     description: "chancellor blvd westbound",
     type: "uncomfortable",
     oneWay: "required",
@@ -58,7 +58,7 @@ export const FOURTH = [
     ],
   },
   {
-    routes: [ROUTES.fourth.name],
+    routeNames: [ROUTES.fourth.name],
     description: "west portion",
     videos: [VIDEOS.fourthEb],
     positions: [
@@ -77,7 +77,7 @@ export const FOURTH = [
     ],
   },
   {
-    routes: [ROUTES.fourth.name],
+    routeNames: [ROUTES.fourth.name],
     description: "brief eb to marine",
     type: "uncomfortable",
     oneWay: "required",
@@ -85,7 +85,7 @@ export const FOURTH = [
     positions: [SPLIT_WEST_OF_MARINE, MARINE_4TH_S],
   },
   {
-    routes: [ROUTES.fourth.name, ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.fourth.name, ROUTES.seasideBypass.name],
     description: "eb to wallace",
     videos: [VIDEOS.fourthEb],
     oneWay: "required",
@@ -98,21 +98,21 @@ export const FOURTH = [
     ],
   },
   {
-    routes: [ROUTES.fourth.name],
+    routeNames: [ROUTES.fourth.name],
     description: "wallace to highbury",
     videos: [VIDEOS.fourthEb],
     oneWay: "required",
     positions: [WALLACE_4TH_S, [49.26863, -123.18871], HIGHBURY_4TH_S],
   },
   {
-    routes: [ROUTES.fourth.name],
+    routeNames: [ROUTES.fourth.name],
     description: "highbury to wallace",
     type: "uncomfortable",
     oneWay: "required",
     positions: [HIGHBURY_4TH_N, [49.26871, -123.18874], WALLACE_4TH_N],
   },
   {
-    routes: [ROUTES.fourth.name, ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.fourth.name, ROUTES.seasideBypass.name],
     description: "wallace to marine",
     type: "uncomfortable",
     oneWay: "required",
@@ -125,7 +125,7 @@ export const FOURTH = [
     ],
   },
   {
-    routes: [ROUTES.fourth.name],
+    routeNames: [ROUTES.fourth.name],
     description: "brief wb beyond marin",
     type: "uncomfortable",
     oneWay: "required",

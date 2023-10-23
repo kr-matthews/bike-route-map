@@ -76,13 +76,13 @@ export const HEATHER = [
     ],
   },
   {
-    routes: [ROUTES.heather.name],
+    routeNames: [ROUTES.heather.name],
     description: "41st eb 2",
     oneWay: "required",
     positions: [HEATHER_49TH_S, TISDALL_49TH_SW],
   },
   {
-    routes: [ROUTES.heather.name],
+    routeNames: [ROUTES.heather.name],
     description: "41st eb 3",
     oneWay: "required",
     videos: [VIDEOS.heatherSb, VIDEOS.cambieSb],
@@ -106,7 +106,7 @@ export const HEATHER = [
   },
   // rest
   {
-    routes: [ROUTES.heather.name],
+    routeNames: [ROUTES.heather.name],
     description: "marpole",
     videos: [VIDEOS.heatherSb],
     positions: [
@@ -131,7 +131,7 @@ export const HEATHER = [
     ],
   },
   {
-    routes: [ROUTES.heather.name],
+    routeNames: [ROUTES.heather.name],
     description: "nb to 49th",
     oneWay: "recommended",
     positions: [
@@ -142,7 +142,7 @@ export const HEATHER = [
     ],
   },
   {
-    routes: [ROUTES.heather.name],
+    routeNames: [ROUTES.heather.name],
     description: "sb from 49th",
     oneWay: "recommended",
     videos: [VIDEOS.heatherSb],
@@ -155,13 +155,13 @@ export const HEATHER = [
     ],
   },
   {
-    routes: [ROUTES.heather.name],
+    routeNames: [ROUTES.heather.name],
     description: "49th to 46th",
     videos: [VIDEOS.heatherSb],
     positions: [TISDALL_49TH_SW, TISDALL_46TH],
   },
   {
-    routes: [ROUTES.heather.name],
+    routeNames: [ROUTES.heather.name],
     description: "46th to 37th",
     videos: [VIDEOS.heatherSb],
     positions: [
@@ -177,7 +177,7 @@ export const HEATHER = [
     ],
   },
   {
-    routes: [ROUTES.heather.name],
+    routeNames: [ROUTES.heather.name],
     description: "37th to 29th",
     videos: [VIDEOS.heatherSb],
     positions: [
@@ -192,13 +192,13 @@ export const HEATHER = [
     ],
   },
   {
-    routes: [ROUTES.heather.name, ROUTES.twentyNinth.name],
+    routeNames: [ROUTES.heather.name, ROUTES.twentyNinth.name],
     description: "29th",
     videos: [VIDEOS.heatherSb, VIDEOS.twentyNinthWb],
     positions: [HEATHER_28TH, HEATHER_29TH],
   },
   {
-    routes: [ROUTES.heather.name],
+    routeNames: [ROUTES.heather.name],
     description: "28th to 14th",
     videos: [VIDEOS.heatherSb],
     positions: [
@@ -216,13 +216,13 @@ export const HEATHER = [
     ],
   },
   {
-    routes: [ROUTES.heather.name, ROUTES.fourteenth.name],
+    routeNames: [ROUTES.heather.name, ROUTES.fourteenth.name],
     description: "14th",
     videos: [VIDEOS.heatherSb, VIDEOS.fourteenthWb],
     positions: [HEATHER_14TH_S, HEATHER_14TH_N],
   },
   {
-    routes: [ROUTES.heather.name],
+    routeNames: [ROUTES.heather.name],
     description: "14th to 7th",
     videos: [VIDEOS.heatherSb],
     positions: [

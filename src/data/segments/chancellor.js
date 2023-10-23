@@ -12,7 +12,7 @@ import { ROUTES } from "../routes";
 
 export const CHANCELLOR = [
   {
-    routes: [ROUTES.chancellor.name],
+    routeNames: [ROUTES.chancellor.name],
     description: "middle shared path",
     positions: [
       ACADIA_CHANCELLOR,
@@ -43,7 +43,7 @@ export const CHANCELLOR = [
     ],
   },
   {
-    routes: [ROUTES.chancellor.name],
+    routeNames: [ROUTES.chancellor.name],
     description: "east portion, eb",
     oneWay: "required",
     positions: [
@@ -65,7 +65,7 @@ export const CHANCELLOR = [
     ],
   },
   {
-    routes: [ROUTES.chancellor.name],
+    routeNames: [ROUTES.chancellor.name],
     description: "east portion, wb",
     oneWay: "required",
     positions: [
@@ -88,7 +88,7 @@ export const CHANCELLOR = [
     ],
   },
   {
-    routes: [ROUTES.chancellor.name],
+    routeNames: [ROUTES.chancellor.name],
     description: "west portion, eb",
     oneWay: "required",
     positions: [
@@ -119,7 +119,7 @@ export const CHANCELLOR = [
     ],
   },
   {
-    routes: [ROUTES.chancellor.name],
+    routeNames: [ROUTES.chancellor.name],
     description: "west portion, wb",
     oneWay: "required",
     positions: [

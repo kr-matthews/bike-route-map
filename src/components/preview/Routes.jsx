@@ -8,8 +8,7 @@ import {
 } from "../../utils/params";
 import { isSubsequence, removeWhiteSpaces } from "../../utils/strings";
 
-// !! partition routes by e-w / n-s, by city, by other?
-// !! allow filtering (by direction, to only official, by quality, etc)?
+// !!! allow filtering (by direction (only show east-west), by city, by quality (future), etc)?
 
 export default function Routes({ showLegend }) {
   const [searchText, setSearchText] = useState("");

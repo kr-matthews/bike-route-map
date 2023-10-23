@@ -14,7 +14,7 @@ const HOMER_ROBSON = [49.27944, -123.11691];
 
 export const HOMER = [
   {
-    routes: [ROUTES.homer.name],
+    routeNames: [ROUTES.homer.name],
     description: "south of pacific",
     videos: [VIDEOS.homerNb],
     positions: [
@@ -31,7 +31,7 @@ export const HOMER = [
     ],
   },
   {
-    routes: [ROUTES.homer.name],
+    routeNames: [ROUTES.homer.name],
     description: "pacific to robson",
     oneWay: "required",
     videos: [VIDEOS.homerNb],
@@ -53,7 +53,7 @@ export const HOMER = [
     ],
   },
   {
-    routes: [ROUTES.homer.name],
+    routeNames: [ROUTES.homer.name],
     description: "north of robson",
     hideUnlessVideo: true,
     type: "unofficial",

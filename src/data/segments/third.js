@@ -22,7 +22,7 @@ export const THIRD = [
     positions: [STEPHENS_YORK, STEPHENS_POINT_GREY],
   },
   {
-    routes: [ROUTES.third.name],
+    routeNames: [ROUTES.third.name],
     description: "beach to bypass",
     videos: [VIDEOS.thirdEb],
     positions: [
@@ -39,7 +39,7 @@ export const THIRD = [
     ],
   },
   {
-    routes: [ROUTES.third.name, ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.third.name, ROUTES.seasideBypass.name],
     description: "primary",
     videos: [VIDEOS.thirdEb],
     positions: [

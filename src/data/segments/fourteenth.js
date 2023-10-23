@@ -11,7 +11,7 @@ import { VIDEOS } from "../videos";
 
 export const FOURTEENTH = [
   {
-    routes: [ROUTES.fourteenth.name],
+    routeNames: [ROUTES.fourteenth.name],
     description: "alder to heather",
     videos: [VIDEOS.fourteenthWb],
     positions: [
@@ -24,7 +24,7 @@ export const FOURTEENTH = [
     ],
   },
   {
-    routes: [ROUTES.fourteenth.name],
+    routeNames: [ROUTES.fourteenth.name],
     description: "heather to prince edward",
     videos: [VIDEOS.fourteenthWb],
     positions: [

@@ -10,7 +10,7 @@ import { VIDEOS } from "../videos";
 
 export const CENTRAL_PARK_LOOP = [
   {
-    routes: [ROUTES.centralParkLoop.name, ROUTES.bcParkway.name],
+    routeNames: [ROUTES.centralParkLoop.name, ROUTES.bcParkway.name],
     description: "north side (west)",
     videos: [VIDEOS.bcParkwayBurnabyEb],
     positions: [
@@ -23,7 +23,7 @@ export const CENTRAL_PARK_LOOP = [
     ],
   },
   {
-    routes: [ROUTES.centralParkLoop.name, ROUTES.bcParkway.name],
+    routeNames: [ROUTES.centralParkLoop.name, ROUTES.bcParkway.name],
     legs: ["Burnaby"],
     description: "north side (east)",
     positions: [
@@ -33,7 +33,7 @@ export const CENTRAL_PARK_LOOP = [
     ],
   },
   {
-    routes: [ROUTES.centralParkLoop.name],
+    routeNames: [ROUTES.centralParkLoop.name],
     description: "non-overlap",
     positions: [
       PATTERSON_BC_PARKWAY,

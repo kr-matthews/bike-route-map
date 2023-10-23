@@ -132,7 +132,7 @@ export const LIONS_GATE_BRIDGE = [
     ],
   },
   {
-    routes: [ROUTES.lionsGate.name],
+    routeNames: [ROUTES.lionsGate.name],
     description: "nb lagoon overpass",
     oneWay: "required",
     elevation: 1,
@@ -144,7 +144,7 @@ export const LIONS_GATE_BRIDGE = [
     ],
   },
   {
-    routes: [ROUTES.lionsGate.name],
+    routeNames: [ROUTES.lionsGate.name],
     description: "northbound between overpasses",
     oneWay: "required",
     elevation: 0.5,
@@ -161,7 +161,7 @@ export const LIONS_GATE_BRIDGE = [
     ],
   },
   {
-    routes: [ROUTES.lionsGate.name],
+    routeNames: [ROUTES.lionsGate.name],
     description: "northbound car overpass",
     oneWay: "required",
     elevation: 1,
@@ -169,7 +169,7 @@ export const LIONS_GATE_BRIDGE = [
     positions: [NORTHBOUND_CAR_OVERPASS_START, NORTHBOUND_CAR_OVERPASS_END],
   },
   {
-    routes: [ROUTES.lionsGate.name],
+    routeNames: [ROUTES.lionsGate.name],
     description: "northbound causeway",
     oneWay: "required",
     elevation: 0.5,
@@ -208,7 +208,7 @@ export const LIONS_GATE_BRIDGE = [
     ],
   },
   {
-    routes: [ROUTES.lionsGate.name],
+    routeNames: [ROUTES.lionsGate.name],
     description: "northbound bridge",
     oneWay: "required",
     elevation: 1,
@@ -226,7 +226,7 @@ export const LIONS_GATE_BRIDGE = [
     ],
   },
   {
-    routes: [ROUTES.lionsGate.name],
+    routeNames: [ROUTES.lionsGate.name],
     description: "northbound post-bridge",
     oneWay: "required",
     elevation: 0.5,
@@ -243,7 +243,7 @@ export const LIONS_GATE_BRIDGE = [
 
   // southbound
   {
-    routes: [ROUTES.lionsGate.name],
+    routeNames: [ROUTES.lionsGate.name],
     description: "southbound pre-bridge",
     oneWay: "required",
     elevation: 0.5,
@@ -251,7 +251,7 @@ export const LIONS_GATE_BRIDGE = [
     positions: [SOUTHBOUND_ON_RAMP_MERGE, SOUTHBOUND_ELEVATED_START],
   },
   {
-    routes: [ROUTES.lionsGate.name],
+    routeNames: [ROUTES.lionsGate.name],
     description: "southbound bridge",
     oneWay: "required",
     elevation: 1,
@@ -266,7 +266,7 @@ export const LIONS_GATE_BRIDGE = [
     ],
   },
   {
-    routes: [ROUTES.lionsGate.name],
+    routeNames: [ROUTES.lionsGate.name],
     description: "southbound causeway",
     oneWay: "required",
     elevation: 0.5,
@@ -297,7 +297,7 @@ export const LIONS_GATE_BRIDGE = [
     ],
   },
   {
-    routes: [ROUTES.lionsGate.name],
+    routeNames: [ROUTES.lionsGate.name],
     description: "southbound causeway car overpass",
     oneWay: "required",
     elevation: 1,
@@ -305,7 +305,7 @@ export const LIONS_GATE_BRIDGE = [
     positions: [SOUTHBOUND_CAR_OVERPASS_START, SOUTHBOUND_CAR_OVERPASS_END],
   },
   {
-    routes: [ROUTES.lionsGate.name],
+    routeNames: [ROUTES.lionsGate.name],
     description: "southbound causeway between overpasses",
     oneWay: "required",
     elevation: 0.5,
@@ -321,7 +321,7 @@ export const LIONS_GATE_BRIDGE = [
     ],
   },
   {
-    routes: [ROUTES.lionsGate.name],
+    routeNames: [ROUTES.lionsGate.name],
     description: "southbound lagoon overpass",
     oneWay: "required",
     elevation: 1,
@@ -333,7 +333,7 @@ export const LIONS_GATE_BRIDGE = [
     ],
   },
   {
-    routes: [ROUTES.lionsGate.name],
+    routeNames: [ROUTES.lionsGate.name],
     description: "southbound lagoon overpass to chilco",
     oneWay: "required",
     elevation: 0.5,

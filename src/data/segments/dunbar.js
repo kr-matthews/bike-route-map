@@ -16,7 +16,7 @@ import { VIDEOS } from "../videos";
 
 export const DUNBAR = [
   {
-    routes: [ROUTES.dunbar.name],
+    routeNames: [ROUTES.dunbar.name],
     description: "marine to 41st",
     type: "uncomfortable",
     videos: [VIDEOS.dunbarNb],
@@ -31,7 +31,7 @@ export const DUNBAR = [
     ],
   },
   {
-    routes: [ROUTES.dunbar.name],
+    routeNames: [ROUTES.dunbar.name],
     description: "41st to king edward",
     videos: [VIDEOS.dunbarNb],
     positions: [
@@ -49,14 +49,14 @@ export const DUNBAR = [
     ],
   },
   {
-    routes: [ROUTES.dunbar.name],
+    routeNames: [ROUTES.dunbar.name],
     description: "king edward",
     type: "uncomfortable",
     videos: [VIDEOS.dunbarNb],
     positions: [[DUNBAR_KING_EDWARD_LANE, DUNBAR_24TH_LANE]],
   },
   {
-    routes: [ROUTES.dunbar.name],
+    routeNames: [ROUTES.dunbar.name],
     description: "king edward to 18th",
     videos: [VIDEOS.dunbarNb],
     positions: [
@@ -70,7 +70,7 @@ export const DUNBAR = [
     ],
   },
   {
-    routes: [ROUTES.dunbar.name],
+    routeNames: [ROUTES.dunbar.name],
     description: "18th to 16th",
     type: "uncomfortable",
     videos: [VIDEOS.dunbarNb],

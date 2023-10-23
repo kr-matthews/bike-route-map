@@ -4,7 +4,7 @@ import { VIDEOS } from "../videos";
 
 export const ALDER = [
   {
-    routes: [ROUTES.alder.name],
+    routeNames: [ROUTES.alder.name],
     description: "all",
     videos: [VIDEOS.alderNb],
     positions: [ALDER_14TH, [49.26068, -123.13148], ALDER_10TH, ALDER_7TH],

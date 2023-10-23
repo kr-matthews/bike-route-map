@@ -13,7 +13,7 @@ import { VIDEOS } from "../videos";
 
 export const INVERNESS = [
   {
-    routes: [ROUTES.inverness.name],
+    routeNames: [ROUTES.inverness.name],
     videos: [VIDEOS.invernessSb],
     description: "kent to 45th",
     positions: [
@@ -40,13 +40,13 @@ export const INVERNESS = [
     ],
   },
   {
-    routes: [ROUTES.inverness.name, ROUTES.fortyFifth.name],
+    routeNames: [ROUTES.inverness.name, ROUTES.fortyFifth.name],
     description: "45th",
     videos: [VIDEOS.invernessSb, VIDEOS.fortyFifthWb],
     positions: [INVERNESS_45TH, INVERNESS_47TH],
   },
   {
-    routes: [ROUTES.inverness.name],
+    routeNames: [ROUTES.inverness.name],
     videos: [VIDEOS.invernessSb],
     description: "45th to midtown",
     positions: [

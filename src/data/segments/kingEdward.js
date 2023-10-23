@@ -71,7 +71,7 @@ export const KING_EDWARD = [
   },
   // arbutus ridge
   {
-    routes: [ROUTES.kingEdward.name],
+    routeNames: [ROUTES.kingEdward.name],
     description: "eb",
     oneWay: "required",
     positions: [
@@ -131,7 +131,7 @@ export const KING_EDWARD = [
     ],
   },
   {
-    routes: [ROUTES.kingEdward.name],
+    routeNames: [ROUTES.kingEdward.name],
     description: "wb",
     oneWay: "required",
     positions: [

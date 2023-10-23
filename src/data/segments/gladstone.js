@@ -4,7 +4,7 @@ import { VIDEOS } from "../videos";
 
 export const GLADSTONE = [
   {
-    routes: [ROUTES.gladstone.name],
+    routeNames: [ROUTES.gladstone.name],
     description: "primary",
     videos: [VIDEOS.gladstoneNb],
     positions: [

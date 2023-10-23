@@ -8,7 +8,7 @@ import { ROUTES } from "../routes";
 
 export const BURNABY = [
   {
-    routes: [ROUTES.burnaby.name],
+    routeNames: [ROUTES.burnaby.name],
     description: "primary",
     positions: [
       CARDERO_BURNABY,

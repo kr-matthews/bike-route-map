@@ -20,13 +20,13 @@ const NORTH_SPLIT = [49.28302, -123.10426];
 
 export const CARRALL = [
   {
-    routes: [ROUTES.carrall.name],
+    routeNames: [ROUTES.carrall.name],
     description: "seawall end",
     videos: [VIDEOS.carrallNb],
     positions: [CARRALL_SEAWALL, [49.27596, -123.10653], SEAWALL_SPLIT],
   },
   {
-    routes: [ROUTES.carrall.name],
+    routeNames: [ROUTES.carrall.name],
     description: "nb",
     oneWay: "required",
     videos: [VIDEOS.carrallNb],
@@ -62,7 +62,7 @@ export const CARRALL = [
     ],
   },
   {
-    routes: [ROUTES.carrall.name],
+    routeNames: [ROUTES.carrall.name],
     description: "sb",
     oneWay: "required",
     positions: [
@@ -99,7 +99,7 @@ export const CARRALL = [
     ],
   },
   {
-    routes: [ROUTES.carrall.name],
+    routeNames: [ROUTES.carrall.name],
     description: "north end",
     videos: [VIDEOS.carrallNb],
     positions: [NORTH_SPLIT, [49.28323, -123.10422], ALEXANDER_POWELL],

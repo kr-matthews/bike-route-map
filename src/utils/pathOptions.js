@@ -16,11 +16,11 @@ import {
 } from "./params";
 
 export function createPathOptions(
-  { routes, oneWay, isClosed, videos, type, hideUnlessVideo, elevation },
-  { highlighted, selectedRoute, video }
+  { routeNames, oneWay, isClosed, videos, type, hideUnlessVideo, elevation },
+  { highlighted, selected, video }
 ) {
-  const isSelected = (routes ?? []).includes(selectedRoute?.name);
-  const isHighlighted = (routes ?? []).includes(highlighted);
+  const isSelected = (routeNames ?? []).includes(selected);
+  const isHighlighted = (routeNames ?? []).includes(highlighted);
   const hasActiveVideo = videos?.includes(video);
   const isUnofficial = type === "unofficial";
   const isUncomfortable = type === "uncomfortable";
@@ -57,10 +57,10 @@ export function createPathOptions(
 }
 
 export function createBorderPathOptions(
-  { routes, elevation },
+  { routeNames, elevation },
   { highlighted }
 ) {
-  const isHighlighted = (routes ?? []).includes(highlighted);
+  const isHighlighted = (routeNames ?? []).includes(highlighted);
 
   if (!elevation) return null;
 

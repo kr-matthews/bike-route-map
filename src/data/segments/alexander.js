@@ -8,7 +8,7 @@ import { VIDEOS } from "../videos";
 
 export const ALEXANDER = [
   {
-    routes: [ROUTES.alexander.name],
+    routeNames: [ROUTES.alexander.name],
     description: "primary",
     videos: [VIDEOS.alexanderEb],
     positions: [

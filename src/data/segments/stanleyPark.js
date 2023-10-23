@@ -10,7 +10,7 @@ const ONE_WAY_END = [49.29592, -123.15089];
 
 export const STANLEY_PARK_LOOP = [
   {
-    routes: [ROUTES.stanleyParkLoop.name, ROUTES.seaside.name],
+    routeNames: [ROUTES.stanleyParkLoop.name, ROUTES.seaside.name],
     description: "seawall",
     oneWay: "required",
     positions: [
@@ -444,7 +444,7 @@ export const STANLEY_PARK_LOOP = [
     ],
   },
   {
-    routes: [ROUTES.stanleyParkLoop.name, ROUTES.seaside.name],
+    routeNames: [ROUTES.stanleyParkLoop.name, ROUTES.seaside.name],
     description: "second beach",
     positions: [
       ONE_WAY_END,
@@ -463,7 +463,7 @@ export const STANLEY_PARK_LOOP = [
     ],
   },
   {
-    routes: [ROUTES.stanleyParkLoop.name],
+    routeNames: [ROUTES.stanleyParkLoop.name],
     description: "lost lagoon",
     positions: [
       STANLEY_PARK_LOOP_SPLIT_W,

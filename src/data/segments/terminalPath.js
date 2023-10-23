@@ -2,7 +2,7 @@ import { ROUTES } from "../routes";
 
 export const TERMINAL_PATH = [
   {
-    routes: [ROUTES.terminalPath.name],
+    routeNames: [ROUTES.terminalPath.name],
     description: "primary",
     positions: [
       [49.27178, -123.09803],

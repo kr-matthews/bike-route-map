@@ -15,7 +15,7 @@ import { VIDEOS } from "../videos";
 
 export const VALLEY = [
   {
-    routes: [ROUTES.valley.name],
+    routeNames: [ROUTES.valley.name],
     description: "south of 29th",
     videos: [VIDEOS.valleySb],
     positions: [
@@ -32,7 +32,7 @@ export const VALLEY = [
     ],
   },
   {
-    routes: [ROUTES.valley.name],
+    routeNames: [ROUTES.valley.name],
     description: "north of 29th",
     videos: [VIDEOS.valleySb],
     positions: [

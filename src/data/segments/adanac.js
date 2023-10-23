@@ -48,13 +48,13 @@ export const ADANAC = [
     positions: [MAIN_DUNSMUIR, MAIN_UNION_SW, MAIN_UNION_NW],
   },
   {
-    routes: [ROUTES.adanac.name],
+    routeNames: [ROUTES.adanac.name],
     description: "east end merged",
     videos: [VIDEOS.adanacWb],
     positions: [EXPO_UNION, UNION_SPLIT],
   },
   {
-    routes: [ROUTES.adanac.name],
+    routeNames: [ROUTES.adanac.name],
     description: "downtown eastbound",
     oneWay: "required",
     positions: [
@@ -71,7 +71,7 @@ export const ADANAC = [
     ],
   },
   {
-    routes: [ROUTES.adanac.name],
+    routeNames: [ROUTES.adanac.name],
     description: "downtown westbound",
     oneWay: "required",
     videos: [VIDEOS.adanacWb],
@@ -91,7 +91,7 @@ export const ADANAC = [
     ],
   },
   {
-    routes: [ROUTES.adanac.name],
+    routeNames: [ROUTES.adanac.name],
     description: "dunlevy to sunrise",
     videos: [VIDEOS.adanacWb],
     positions: [
@@ -123,13 +123,13 @@ export const ADANAC = [
     ],
   },
   {
-    routes: [ROUTES.adanac.name, ROUTES.sunrise.name],
+    routeNames: [ROUTES.adanac.name, ROUTES.sunrise.name],
     description: "sunrise",
     videos: [VIDEOS.adanacWb, VIDEOS.sunriseNb],
     positions: [SLOCAN_ADANAC, KASLO_ADANAC],
   },
   {
-    routes: [ROUTES.adanac.name],
+    routeNames: [ROUTES.adanac.name],
     description: "sunrise to boundary",
     videos: [VIDEOS.adanacWb],
     positions: [

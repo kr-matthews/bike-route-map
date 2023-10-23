@@ -10,7 +10,7 @@ import { VIDEOS } from "../videos";
 
 export const HILLCREST = [
   {
-    routes: [ROUTES.hillcrest.name],
+    routeNames: [ROUTES.hillcrest.name],
     description: "west of windsor",
     videos: [VIDEOS.hillcrestEb, VIDEOS.hillcrestWb],
     positions: [
@@ -32,7 +32,7 @@ export const HILLCREST = [
     ],
   },
   {
-    routes: [ROUTES.hillcrest.name],
+    routeNames: [ROUTES.hillcrest.name],
     description: "east of windsor",
     videos: [VIDEOS.hillcrestEb, VIDEOS.hillcrestWb],
     positions: [

@@ -74,26 +74,26 @@ export const CENTRAL_VALLEY_GREENWAY = [
   },
   // alternates
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "vcc alt. west",
     positions: [GLEN_6TH_NE, GLEN_6TH_SE, KEITH_6TH_SW, KEITH_6TH_SE],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "vcc alt. mid",
     positions: [KEITH_6TH_SW, KEITH_6TH_NW],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "vcc alt. east",
     positions: [KEITH_6TH_NE, CLARK_6TH_NW, CLARK_6TH_SW],
   },
   // vancouver
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "east park path",
     videos: [VIDEOS.centralValleyVancouverEb],
@@ -105,14 +105,14 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "crossing 1st path",
     videos: [VIDEOS.centralValleyVancouverEb],
     positions: [ONTARIO_1ST_NE, ONTARIO_1ST_SE],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "1st quebec to main",
     oneWay: "required",
@@ -120,14 +120,14 @@ export const CENTRAL_VALLEY_GREENWAY = [
     positions: [QUEBEC_1ST_SE, MAIN_1ST_SW, MAIN_1ST_E],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "1st main to quebec",
     oneWay: "required",
     positions: [MAIN_1ST_E, MAIN_1ST_NW, QUEBEC_1ST_NE, QUEBEC_1ST_NW],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "thornton construction, gone",
     isClosed: true,
@@ -138,7 +138,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     positions: [THORNTON_1ST, [49.26845, -123.09456]],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "1st: scotia to thornton",
     positions: [
@@ -152,7 +152,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "subway construction, gone",
     isClosed: true,
@@ -166,7 +166,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "east portion of subway construction",
     positions: [
@@ -176,7 +176,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "1st to commercial",
     videos: [VIDEOS.centralValleyVancouverEb],
@@ -216,21 +216,21 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name, ROUTES.offBroadway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.offBroadway.name],
     legs: ["Vancouver"],
     description: "cvg/off broadway west",
     videos: [VIDEOS.centralValleyVancouverEb, VIDEOS.offBroadwayWb],
     positions: [WOODLAND_GRANDVIEW, COMMERCIAL_GRANDVIEW],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name, ROUTES.offBroadway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.offBroadway.name],
     legs: ["Vancouver"],
     description: "cvg/off broadway east",
     videos: [VIDEOS.centralValleyGreenway, VIDEOS.offBroadwayWb],
     positions: [COMMERCIAL_GRANDVIEW, [49.26372, -123.06966], GRANDVIEW_8TH_N],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "broadway eastbound",
     oneWay: "required",
@@ -248,7 +248,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "broadway westbound",
     oneWay: "required",
@@ -269,7 +269,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     positions: [GRANDVIEW_8TH_S, GRANDVIEW_8TH_N],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     legs: ["Vancouver"],
     description: "east of victoria",
     videos: [VIDEOS.centralValleyVancouverEb],
@@ -331,7 +331,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
   },
   // burnaby
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     legs: ["Burnaby"],
     description: "burnaby west of overpass",
     videos: [],
@@ -377,7 +377,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     legs: ["Burnaby"],
     description: "pre-overpass",
     elevation: 0.5,
@@ -385,7 +385,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     positions: [BEFORE_OVERPASS, OVERPASS_START],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     legs: ["Burnaby"],
     description: "train overpass",
     elevation: 1,
@@ -406,7 +406,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     legs: ["Burnaby"],
     description: "post-overpass",
     elevation: 0.5,
@@ -414,7 +414,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     positions: [OVERPASS_END, AFTER_OVERPASS],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     legs: ["Burnaby"],
     description: "east of overpass",
     videos: [],
@@ -494,7 +494,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
 
   // new westminster
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     description: "hume park (north portion)",
     positions: [
       NORTH_CVG,
@@ -541,7 +541,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     description: "columbia: north part, nb",
     oneWay: "required",
     positions: [
@@ -557,7 +557,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     description: "columbia: north part, sb",
     oneWay: "required",
     positions: [
@@ -572,7 +572,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     description: "columbia: separated part",
     positions: [
       COLUMBIA_BRUNETTE,
@@ -635,12 +635,12 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
     description: "columbia: separated part - overlap",
     positions: [BC_PARKWAY_CVG_SPLIT, [49.20694, -122.90122], ELLIOT_COLUMBIA],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
     description: "columbia: south part, wb",
     oneWay: "required",
     positions: [
@@ -657,7 +657,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
     description: "columbia: south part, eb",
     oneWay: "required",
     positions: [
@@ -674,7 +674,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
-    routes: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
     description: "quayside/begbie",
     type: "uncomfortable",
     positions: [

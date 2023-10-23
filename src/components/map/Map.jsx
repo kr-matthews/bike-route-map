@@ -33,7 +33,7 @@ export default function Map({ setMapRef }) {
         {SEGMENTS.map((segment) => (
           <Segment
             key={
-              segment.routes?.join() +
+              segment.routeNames?.join() +
               segment.legs?.join() +
               segment.description
             }

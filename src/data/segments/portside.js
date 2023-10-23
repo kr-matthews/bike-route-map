@@ -20,7 +20,7 @@ export const PORTSIDE = [
     ],
   },
   {
-    routes: [ROUTES.portside.name],
+    routeNames: [ROUTES.portside.name],
     description: "primary",
     positions: [
       WALL_OXFORD_PARK,

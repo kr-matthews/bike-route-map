@@ -11,16 +11,16 @@ export default function useSelections() {
     (route) => route.name === selected
   );
   // videos live within a route, so clear video on route change
-  function setSelectedRouteName(route) {
+  function setSelectedAndClearVideo(routeName) {
     setVideo(null);
-    setSelected(route);
+    setSelected(routeName);
   }
 
   return {
     highlighted,
     setHighlighted,
     selectedRoute,
-    setSelected: setSelectedRouteName,
+    setSelected: setSelectedAndClearVideo,
     video,
     setVideo,
   };

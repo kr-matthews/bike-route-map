@@ -29,7 +29,7 @@ const SOUTHBOUND_ELEVATION_END_2 = [49.19489, -123.07759];
 export const KNIGHT_STREET_BRIDGE = [
   // northbound
   {
-    routes: [ROUTES.knightStreetBridge.name],
+    routeNames: [ROUTES.knightStreetBridge.name],
     description: "nb richmond",
     oneWay: "required",
     elevation: 0.5,
@@ -51,7 +51,7 @@ export const KNIGHT_STREET_BRIDGE = [
     ],
   },
   {
-    routes: [ROUTES.knightStreetBridge.name],
+    routeNames: [ROUTES.knightStreetBridge.name],
     description: "nb elevated 1",
     oneWay: "required",
     elevation: 1,
@@ -73,7 +73,7 @@ export const KNIGHT_STREET_BRIDGE = [
     ],
   },
   {
-    routes: [ROUTES.knightStreetBridge.name],
+    routeNames: [ROUTES.knightStreetBridge.name],
     description: "nb mitchell island",
     oneWay: "required",
     elevation: 0.5,
@@ -93,7 +93,7 @@ export const KNIGHT_STREET_BRIDGE = [
     ],
   },
   {
-    routes: [ROUTES.knightStreetBridge.name],
+    routeNames: [ROUTES.knightStreetBridge.name],
     description: "nb elevated 2",
     oneWay: "required",
     elevation: 1,
@@ -106,7 +106,7 @@ export const KNIGHT_STREET_BRIDGE = [
     ],
   },
   {
-    routes: [ROUTES.knightStreetBridge.name],
+    routeNames: [ROUTES.knightStreetBridge.name],
     description: "nb post-bridge",
     oneWay: "required",
     elevation: 0.5,
@@ -117,7 +117,7 @@ export const KNIGHT_STREET_BRIDGE = [
     ],
   },
   {
-    routes: [ROUTES.knightStreetBridge.name],
+    routeNames: [ROUTES.knightStreetBridge.name],
     description: "nb post-bridge straight",
     oneWay: "required",
     elevation: 0.5,
@@ -131,14 +131,14 @@ export const KNIGHT_STREET_BRIDGE = [
     ],
   },
   {
-    routes: [ROUTES.knightStreetBridge.name],
+    routeNames: [ROUTES.knightStreetBridge.name],
     description: "nb over marine",
     oneWay: "required",
     elevation: 1,
     positions: [NORTHBOUND_ELEVATION_START_3, NORTHBOUND_ELEVATION_END_3],
   },
   {
-    routes: [ROUTES.knightStreetBridge.name],
+    routeNames: [ROUTES.knightStreetBridge.name],
     description: "nb to 64th",
     oneWay: "required",
     elevation: 0.5,
@@ -159,7 +159,7 @@ export const KNIGHT_STREET_BRIDGE = [
     positions: [LOOP_AT_64TH, [49.21198, -123.07642], BORDEN_64TH],
   },
   {
-    routes: [ROUTES.knightStreetBridge.name],
+    routeNames: [ROUTES.knightStreetBridge.name],
     description: "nb ramp to marine",
     oneWay: "recommended",
     positions: [
@@ -243,7 +243,7 @@ export const KNIGHT_STREET_BRIDGE = [
   },
   // southbound
   {
-    routes: [ROUTES.knightStreetBridge.name],
+    routeNames: [ROUTES.knightStreetBridge.name],
     description: "sb on-ramp",
     oneWay: "required",
     elevation: 0.5,
@@ -275,7 +275,7 @@ export const KNIGHT_STREET_BRIDGE = [
     ],
   },
   {
-    routes: [ROUTES.knightStreetBridge.name],
+    routeNames: [ROUTES.knightStreetBridge.name],
     description: "sb elevation 1",
     oneWay: "required",
     elevation: 1,
@@ -283,7 +283,7 @@ export const KNIGHT_STREET_BRIDGE = [
     positions: [SOUTHBOUND_ELEVATION_START_1, SOUTHBOUND_ELEVATION_END_1],
   },
   {
-    routes: [ROUTES.knightStreetBridge.name],
+    routeNames: [ROUTES.knightStreetBridge.name],
     description: "sb mitchell island",
     oneWay: "required",
     elevation: 0.5,
@@ -309,7 +309,7 @@ export const KNIGHT_STREET_BRIDGE = [
     ],
   },
   {
-    routes: [ROUTES.knightStreetBridge.name],
+    routeNames: [ROUTES.knightStreetBridge.name],
     description: "sb elevation 2",
     oneWay: "required",
     elevation: 1,
@@ -326,7 +326,7 @@ export const KNIGHT_STREET_BRIDGE = [
     ],
   },
   {
-    routes: [ROUTES.knightStreetBridge.name],
+    routeNames: [ROUTES.knightStreetBridge.name],
     description: "sb off-ramp",
     oneWay: "required",
     elevation: 0.5,

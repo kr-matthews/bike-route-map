@@ -7,7 +7,7 @@ import { ROUTES } from "../routes";
 
 export const CASSIAR = [
   {
-    routes: [ROUTES.cassiar.name],
+    routeNames: [ROUTES.cassiar.name],
     description: "primary",
     positions: [
       CASSIAR_ADANAC,

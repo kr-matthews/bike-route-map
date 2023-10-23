@@ -10,7 +10,7 @@ const UNDERGROUND_W = [49.28957, -123.11852];
 
 export const WATERFRONT = [
   {
-    routes: [ROUTES.waterfront.name],
+    routeNames: [ROUTES.waterfront.name],
     description: "pre-underground",
     type: "unofficial",
     elevation: -0.5,
@@ -18,7 +18,7 @@ export const WATERFRONT = [
     positions: [SEAWALL_WATERFRONT, UNDERGROUND_W],
   },
   {
-    routes: [ROUTES.waterfront.name],
+    routeNames: [ROUTES.waterfront.name],
     description: "underground",
     type: "unofficial",
     elevation: -1,
@@ -34,7 +34,7 @@ export const WATERFRONT = [
     ],
   },
   {
-    routes: [ROUTES.waterfront.name],
+    routeNames: [ROUTES.waterfront.name],
     description: "waterfront",
     type: "unofficial",
     elevation: -0.5,
@@ -60,7 +60,7 @@ export const WATERFRONT = [
     ],
   },
   {
-    routes: [ROUTES.waterfront.name],
+    routeNames: [ROUTES.waterfront.name],
     description: "underground to loop",
     type: "unofficial",
     elevation: 0.5,
@@ -68,7 +68,7 @@ export const WATERFRONT = [
     positions: [MAIN_WATERFRONT, MAIN_ELEVATED_N],
   },
   {
-    routes: [ROUTES.waterfront.name],
+    routeNames: [ROUTES.waterfront.name],
     description: "loop",
     type: "unofficial",
     elevation: 1,
@@ -86,7 +86,7 @@ export const WATERFRONT = [
     ],
   },
   {
-    routes: [ROUTES.waterfront.name],
+    routeNames: [ROUTES.waterfront.name],
     description: "post-loop",
     type: "unofficial",
     elevation: 0.5,

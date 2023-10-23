@@ -17,7 +17,7 @@ const TAYLOR_PENDER = [49.28079, -123.10559];
 
 export const PENDER = [
   {
-    routes: [ROUTES.pender.name],
+    routeNames: [ROUTES.pender.name],
     description: "eb",
     oneWay: "required",
     videos: [VIDEOS.penderEb],
@@ -32,21 +32,21 @@ export const PENDER = [
     ],
   },
   {
-    routes: [ROUTES.pender.name],
+    routeNames: [ROUTES.pender.name],
     description: "eb carrall intersection",
     oneWay: "required",
     hideArrows: true,
     positions: [CARRALL_PENDER_SW, CARRALL_PENDER_SE],
   },
   {
-    routes: [ROUTES.pender.name],
+    routeNames: [ROUTES.pender.name],
     description: "wb no lane",
     oneWay: "required",
     type: "uncomfortable",
     positions: [CARRALL_PENDER_NE, CARRALL_PENDER_NW, TAYLOR_PENDER],
   },
   {
-    routes: [ROUTES.pender.name],
+    routeNames: [ROUTES.pender.name],
     description: "wb lane",
     oneWay: "required",
     positions: [

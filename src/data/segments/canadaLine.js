@@ -27,7 +27,7 @@ const SPIRAL_MIDPOINT_4 = [49.20495, -123.11778];
 export const CANADA_LINE = [
   // richmond
   {
-    routes: [ROUTES.canadaLine.name],
+    routeNames: [ROUTES.canadaLine.name],
     legs: ["Richmond"],
     description: "path: great canadian",
     positions: [
@@ -46,7 +46,7 @@ export const CANADA_LINE = [
     ],
   },
   {
-    routes: [ROUTES.canadaLine.name],
+    routeNames: [ROUTES.canadaLine.name],
     legs: ["Richmond"],
     description: "path: van horne",
     videos: [VIDEOS.northArmBridgeNb],
@@ -79,7 +79,7 @@ export const CANADA_LINE = [
   },
   // bridge
   {
-    routes: [ROUTES.canadaLine.name],
+    routeNames: [ROUTES.canadaLine.name],
     legs: ["North Arm Bridge"],
     description: "pre-bridge",
     elevation: 0.5,
@@ -87,7 +87,7 @@ export const CANADA_LINE = [
     positions: [VAN_HORNE_RIVER_N, ELEVATED_START],
   },
   {
-    routes: [ROUTES.canadaLine.name],
+    routeNames: [ROUTES.canadaLine.name],
     legs: ["North Arm Bridge"],
     description: "bridge",
     elevation: 1,
@@ -110,7 +110,7 @@ export const CANADA_LINE = [
     ],
   },
   {
-    routes: [ROUTES.canadaLine.name],
+    routeNames: [ROUTES.canadaLine.name],
     legs: ["North Arm Bridge"],
     description: "ramp down 1",
     elevation: 1.5,
@@ -118,7 +118,7 @@ export const CANADA_LINE = [
     positions: [SPIRAL_MIDPOINT_1, SPIRAL_MIDPOINT_2],
   },
   {
-    routes: [ROUTES.canadaLine.name],
+    routeNames: [ROUTES.canadaLine.name],
     legs: ["North Arm Bridge"],
     description: "ramp down 2",
     elevation: 2,
@@ -126,7 +126,7 @@ export const CANADA_LINE = [
     positions: [SPIRAL_MIDPOINT_2, [49.20552, -123.11761], SPIRAL_MIDPOINT_3],
   },
   {
-    routes: [ROUTES.canadaLine.name],
+    routeNames: [ROUTES.canadaLine.name],
     legs: ["North Arm Bridge"],
     description: "ramp down 3",
     elevation: 1.5,
@@ -134,7 +134,7 @@ export const CANADA_LINE = [
     positions: [SPIRAL_MIDPOINT_3, SPIRAL_MIDPOINT_4],
   },
   {
-    routes: [ROUTES.canadaLine.name],
+    routeNames: [ROUTES.canadaLine.name],
     legs: ["North Arm Bridge"],
     description: "ramp down 4",
     elevation: 1,
@@ -148,7 +148,7 @@ export const CANADA_LINE = [
     ],
   },
   {
-    routes: [ROUTES.canadaLine.name],
+    routeNames: [ROUTES.canadaLine.name],
     legs: ["North Arm Bridge"],
     description: "post-bridge",
     elevation: 0.5,
@@ -168,7 +168,7 @@ export const CANADA_LINE = [
     positions: [CAMBIE_KENT_N_S, CAMBIE_KENT_N_NE],
   },
   {
-    routes: [ROUTES.canadaLine.name],
+    routeNames: [ROUTES.canadaLine.name],
     description: "kent to 63rd",
     videos: [VIDEOS.cambieSeparatedNb],
     positions: [
@@ -189,7 +189,7 @@ export const CANADA_LINE = [
     ],
   },
   {
-    routes: [ROUTES.canadaLine.name],
+    routeNames: [ROUTES.canadaLine.name],
     description: "63rd to 64th",
     videos: [VIDEOS.cambieSeparatedNb, VIDEOS.sixtySeventhPlusWb],
     positions: [CAMBIE_PATH_64TH, CAMBIE_PATH_63RD],

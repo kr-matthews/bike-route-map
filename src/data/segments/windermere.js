@@ -3,7 +3,7 @@ import { ROUTES } from "../routes";
 
 export const WINDERMERE = [
   {
-    routes: [ROUTES.windermere.name],
+    routeNames: [ROUTES.windermere.name],
     description: "primary",
     positions: [
       WINDERMERE_ADANAC,

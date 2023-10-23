@@ -25,7 +25,7 @@ export const WINDSOR = [
     positions: [LOOP_NE, [49.23125, -123.0851], LOOP_NW],
   },
   {
-    routes: [ROUTES.windsor.name],
+    routeNames: [ROUTES.windsor.name],
     description: "43rd",
     videos: [VIDEOS.windsorNb],
     positions: [
@@ -39,7 +39,7 @@ export const WINDSOR = [
     ],
   },
   {
-    routes: [ROUTES.windsor.name],
+    routeNames: [ROUTES.windsor.name],
     description: "park nb",
     oneWay: "required",
     videos: [VIDEOS.windsorNb],
@@ -55,7 +55,7 @@ export const WINDSOR = [
     ],
   },
   {
-    routes: [ROUTES.windsor.name],
+    routeNames: [ROUTES.windsor.name],
     description: "park sb",
     oneWay: "required",
     positions: [
@@ -72,7 +72,7 @@ export const WINDSOR = [
     ],
   },
   {
-    routes: [ROUTES.windsor.name],
+    routeNames: [ROUTES.windsor.name],
     description: "park to hillcrest",
     videos: [VIDEOS.windsorNb],
     positions: [
@@ -91,13 +91,13 @@ export const WINDSOR = [
     ],
   },
   {
-    routes: [ROUTES.windsor.name, ROUTES.hillcrest.name],
+    routeNames: [ROUTES.windsor.name, ROUTES.hillcrest.name],
     description: "hillcrest overlap",
     videos: [VIDEOS.windsorNb, VIDEOS.hillcrestEb, VIDEOS.hillcrestWb],
     positions: [WINDSOR_31ST, WINDSOR_29TH],
   },
   {
-    routes: [ROUTES.windsor.name],
+    routeNames: [ROUTES.windsor.name],
     description: "hillcrest to 10th",
     videos: [VIDEOS.windsorNb],
     positions: [
@@ -118,7 +118,7 @@ export const WINDSOR = [
     ],
   },
   {
-    routes: [ROUTES.windsor.name],
+    routeNames: [ROUTES.windsor.name],
     description: "10th to cvg",
     videos: [VIDEOS.windsorNb],
     positions: [

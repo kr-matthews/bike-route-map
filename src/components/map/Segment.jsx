@@ -11,35 +11,31 @@ import MyPolyline from "./MyPolyline";
 import { hasVideo } from "../../utils/routes";
 import videoIcon from "../../images/video.svg";
 
-// !! indicate by default whether route/segment has video (and/or quality of route, whether official or not (dashed line?), etc.)
-
-// !!! make route vs routeName consistent everywhere
-
 export default function Segment(segment) {
-  const { routes, oneWay, hideArrows, isClosed, positions, elevation } =
+  const { routeNames, oneWay, hideArrows, isClosed, positions, elevation } =
     segment;
   const { selectedRoute, setSelected, highlighted, setHighlighted, video } =
     useContext(Selections);
 
-  const primaryRoute = routes?.find((x) => x) || null;
-  const hasAnyRoutes = (routes?.length ?? 0) > 0;
-  const hasMultipleRoutes = (routes?.length ?? 0) > 1;
+  const primaryRouteName = routeNames?.find((x) => x) || null;
+  const hasAnyRoutes = (routeNames?.length ?? 0) > 0;
+  const hasMultipleRoutes = (routeNames?.length ?? 0) > 1;
   const pane = getSegmentPane(elevation, hasMultipleRoutes);
 
   const polylineProps = {
     positions,
     pathOptions: createPathOptions(segment, {
       highlighted,
-      selectedRoute,
+      selected: selectedRoute?.name,
       video,
     }),
     eventHandlers: {
-      mouseover: () => setHighlighted(primaryRoute),
+      mouseover: () => setHighlighted(primaryRouteName),
       mouseout: () => setHighlighted(null),
       mousedown: () => {
-        if (!primaryRoute) return;
+        if (!primaryRouteName) return;
         setSelected((selected) =>
-          selected === primaryRoute ? null : primaryRoute
+          selected === primaryRouteName ? null : primaryRouteName
         );
       },
     },
@@ -72,16 +68,20 @@ export default function Segment(segment) {
                 <b>[SEGMENT CLOSED]</b>
               </div>
             )}
-            {routes.map((route) => (
-              <div key={route}>
-                {hasVideo(segment, route) && (
+            {routeNames.map((routeName) => (
+              <div key={routeName}>
+                {hasVideo(segment, routeName) && (
                   <img
                     src={videoIcon}
-                    alt="has video"
+                    alt="video"
                     style={{ marginRight: "0.5em", height: "0.8em" }}
                   />
                 )}
-                {primaryRoute === route ? <b>{route}</b> : route}
+                {primaryRouteName === routeName ? (
+                  <b>{routeName}</b>
+                ) : (
+                  routeName
+                )}
               </div>
             ))}
           </>

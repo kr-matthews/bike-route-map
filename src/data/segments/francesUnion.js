@@ -11,7 +11,7 @@ const OVERPASS_ADJ_S = [49.28002, -122.96012];
 
 export const FRANCES_UNION = [
   {
-    routes: [ROUTES.francesUnion.name],
+    routeNames: [ROUTES.francesUnion.name],
     description: "primary",
     positions: [
       BOUNDARY_ADANAC,
@@ -61,7 +61,7 @@ export const FRANCES_UNION = [
     ],
   },
   {
-    routes: [ROUTES.francesUnion.name],
+    routeNames: [ROUTES.francesUnion.name],
     description: "eb to highway",
     oneWay: "recommended",
     positions: [
@@ -73,7 +73,7 @@ export const FRANCES_UNION = [
     ],
   },
   {
-    routes: [ROUTES.francesUnion.name],
+    routeNames: [ROUTES.francesUnion.name],
     description: "eb ramp",
     oneWay: "required",
     positions: [
@@ -88,12 +88,12 @@ export const FRANCES_UNION = [
     ],
   },
   {
-    routes: [ROUTES.francesUnion.name],
+    routeNames: [ROUTES.francesUnion.name],
     description: "crossing inlet at bayview",
     positions: [[49.28666, -122.9532], INLET_BAYVIEW_W],
   },
   {
-    routes: [ROUTES.francesUnion.name],
+    routeNames: [ROUTES.francesUnion.name],
     description: "wb to overpass",
     oneWay: "recommended",
     positions: [
@@ -122,7 +122,7 @@ export const FRANCES_UNION = [
     ],
   },
   {
-    routes: [ROUTES.francesUnion.name],
+    routeNames: [ROUTES.francesUnion.name],
     description: "wb pre-overpass",
     elevation: 0.5,
     positions: [
@@ -136,7 +136,7 @@ export const FRANCES_UNION = [
     ],
   },
   {
-    routes: [ROUTES.francesUnion.name],
+    routeNames: [ROUTES.francesUnion.name],
     description: "hastings overpass",
     elevation: 1,
     positions: [
@@ -149,13 +149,13 @@ export const FRANCES_UNION = [
     ],
   },
   {
-    routes: [ROUTES.francesUnion.name],
+    routeNames: [ROUTES.francesUnion.name],
     description: "wb post-overpass",
     elevation: 0.5,
     positions: [HASTINGS_OVERPASS_S, OVERPASS_ADJ_S],
   },
   {
-    routes: [ROUTES.francesUnion.name],
+    routeNames: [ROUTES.francesUnion.name],
     description: "overpass to union",
     positions: [
       OVERPASS_ADJ_S,

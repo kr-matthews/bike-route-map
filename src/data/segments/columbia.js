@@ -9,7 +9,7 @@ import { VIDEOS } from "../videos";
 
 export const COLUMBIA = [
   {
-    routes: [ROUTES.columbia.name],
+    routeNames: [ROUTES.columbia.name],
     description: "primary",
     videos: [VIDEOS.columbiaNb],
     positions: [

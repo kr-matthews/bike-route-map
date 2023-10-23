@@ -85,7 +85,7 @@ export const SEASIDE = [
   },
   // sections
   {
-    routes: [ROUTES.seaside.name],
+    routeNames: [ROUTES.seaside.name],
     description: "spanish banks & jericho",
     positions: [
       SEASIDE_W_END,
@@ -198,7 +198,7 @@ export const SEASIDE = [
     ],
   },
   {
-    routes: [ROUTES.seaside.name],
+    routeNames: [ROUTES.seaside.name],
     description: "jericho/kits overlap",
     videos: [VIDEOS.seasideKitsWb],
     positions: [
@@ -209,7 +209,7 @@ export const SEASIDE = [
     ],
   },
   {
-    routes: [ROUTES.seaside.name],
+    routeNames: [ROUTES.seaside.name],
     description: "kits",
     videos: [VIDEOS.seasideKitsWb],
     positions: [
@@ -315,7 +315,7 @@ export const SEASIDE = [
     ],
   },
   {
-    routes: [ROUTES.seaside.name],
+    routeNames: [ROUTES.seaside.name],
     description: "false creek south",
     positions: [
       SEAWALL_WHYTE,
@@ -567,7 +567,7 @@ export const SEASIDE = [
     ],
   },
   {
-    routes: [ROUTES.seaside.name],
+    routeNames: [ROUTES.seaside.name],
     description: "false creek north - open",
     positions: [
       HORNBY_SEABREEZE,
@@ -694,7 +694,7 @@ export const SEASIDE = [
     ],
   },
   {
-    routes: [ROUTES.seaside.name],
+    routeNames: [ROUTES.seaside.name],
     description: "false creek north - closed",
     isClosed: true,
     positions: [
@@ -712,7 +712,7 @@ export const SEASIDE = [
     ],
   },
   {
-    routes: [ROUTES.seaside.name],
+    routeNames: [ROUTES.seaside.name],
     description: "west end - closed",
     isClosed: true,
     positions: [
@@ -797,7 +797,7 @@ export const SEASIDE = [
     ],
   },
   {
-    routes: [ROUTES.seaside.name],
+    routeNames: [ROUTES.seaside.name],
     description: "stanley park non-loop",
     positions: [
       STANLEY_PARK_LOOP_SPLIT_W,
@@ -825,7 +825,7 @@ export const SEASIDE = [
     ],
   },
   {
-    routes: [ROUTES.seaside.name],
+    routeNames: [ROUTES.seaside.name],
     description: "coal harbour (minus half con. cen.)",
     positions: [
       STANLEY_PARK_LOOP_JOIN_E,
@@ -912,7 +912,7 @@ export const SEASIDE = [
     ],
   },
   {
-    routes: [ROUTES.seaside.name],
+    routeNames: [ROUTES.seaside.name],
     description: "half convention center",
     videos: [VIDEOS.hornbyNb],
     positions: [

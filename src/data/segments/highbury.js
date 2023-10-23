@@ -10,7 +10,7 @@ import { VIDEOS } from "../videos";
 
 export const HIGHBURY = [
   {
-    routes: [ROUTES.highbury.name],
+    routeNames: [ROUTES.highbury.name],
     description: "all",
     videos: [VIDEOS.highburyNb],
     positions: [

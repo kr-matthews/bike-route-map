@@ -11,7 +11,7 @@ import { VIDEOS } from "../videos";
 
 export const HARO = [
   {
-    routes: [ROUTES.haro.name],
+    routeNames: [ROUTES.haro.name],
     description: "primary",
     videos: [VIDEOS.haroWb],
     positions: [

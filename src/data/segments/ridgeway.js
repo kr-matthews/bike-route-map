@@ -25,7 +25,7 @@ import { VIDEOS } from "../videos";
 
 export const RIDGEWAY = [
   {
-    routes: [ROUTES.ridgeway.name],
+    routeNames: [ROUTES.ridgeway.name],
     description: "off broadway to balaclava",
     positions: [
       DISCOVERY_8TH,
@@ -50,7 +50,7 @@ export const RIDGEWAY = [
     ],
   },
   {
-    routes: [ROUTES.ridgeway.name, ROUTES.balaclava.name],
+    routeNames: [ROUTES.ridgeway.name, ROUTES.balaclava.name],
     description: "ridgeway main",
     positions: [
       QUESNEL_20TH,
@@ -60,7 +60,7 @@ export const RIDGEWAY = [
     ],
   },
   {
-    routes: [ROUTES.ridgeway.name],
+    routeNames: [ROUTES.ridgeway.name],
     description: "extra bit",
     positions: [
       CARNARVON_31ST,
@@ -71,7 +71,7 @@ export const RIDGEWAY = [
     ],
   },
   {
-    routes: [ROUTES.ridgeway.name],
+    routeNames: [ROUTES.ridgeway.name],
     description: "balaclava to king edward",
     positions: [
       BALACLAVA_QUESNEL,
@@ -82,7 +82,7 @@ export const RIDGEWAY = [
     ],
   },
   {
-    routes: [ROUTES.ridgeway.name],
+    routeNames: [ROUTES.ridgeway.name],
     description: "quesnel uncomfortable",
     type: "uncomfortable",
     positions: [
@@ -94,7 +94,7 @@ export const RIDGEWAY = [
     ],
   },
   {
-    routes: [ROUTES.ridgeway.name],
+    routeNames: [ROUTES.ridgeway.name],
     description: "mackenzie to midtown",
     positions: [
       MACKENZIE_QUESNEL,
@@ -126,7 +126,7 @@ export const RIDGEWAY = [
     ],
   },
   {
-    routes: [ROUTES.ridgeway.name],
+    routeNames: [ROUTES.ridgeway.name],
     description: "nanaimo",
     positions: [
       NANAIMO_38TH,
@@ -137,19 +137,19 @@ export const RIDGEWAY = [
     ],
   },
   {
-    routes: [ROUTES.ridgeway.name],
+    routeNames: [ROUTES.ridgeway.name],
     description: "nanaimo to sunrise",
     videos: [VIDEOS.fortyFifthWb],
     positions: [NANAIMO_45TH, [49.22939, -123.05492], WALES_45TH, VIVIAN_45TH],
   },
   {
-    routes: [ROUTES.ridgeway.name, ROUTES.sunrise.name],
+    routeNames: [ROUTES.ridgeway.name, ROUTES.sunrise.name],
     description: "sunrise",
     videos: [VIDEOS.fortyFifthWb, VIDEOS.sunriseNb],
     positions: [VIVIAN_45TH, EARLES_45TH],
   },
   {
-    routes: [ROUTES.ridgeway.name],
+    routeNames: [ROUTES.ridgeway.name],
     description: "sunrise to boundary",
     videos: [VIDEOS.fortyFifthWb],
     positions: [

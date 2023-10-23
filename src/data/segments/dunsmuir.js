@@ -12,7 +12,7 @@ import { ROUTES } from "../routes";
 
 export const DUNSMUIR = [
   {
-    routes: [ROUTES.dunsmuir.name],
+    routeNames: [ROUTES.dunsmuir.name],
     description: "downtown",
     elevation: 0.5,
     positions: [
@@ -31,7 +31,7 @@ export const DUNSMUIR = [
     ],
   },
   {
-    routes: [ROUTES.dunsmuir.name],
+    routeNames: [ROUTES.dunsmuir.name],
     description: "viaduct",
     elevation: 1,
     positions: [

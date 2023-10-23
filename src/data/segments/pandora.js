@@ -10,7 +10,7 @@ import { VIDEOS } from "../videos";
 
 export const PANDORA = [
   {
-    routes: [ROUTES.pandora.name],
+    routeNames: [ROUTES.pandora.name],
     description: "primary",
     videos: [VIDEOS.pandoraEb],
     positions: [

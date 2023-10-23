@@ -14,7 +14,7 @@ const RIVER_DISTRICT_CROSSING_FRASER_RIVER = [49.20301, -123.03199];
 
 export const FRASER_RIVER_TRAIL = [
   {
-    routes: [ROUTES.fraserRiverTrail.name],
+    routeNames: [ROUTES.fraserRiverTrail.name],
     description: "southlands",
     positions: [
       BALACLAVA_CELTIC,
@@ -43,7 +43,7 @@ export const FRASER_RIVER_TRAIL = [
     ],
   },
   {
-    routes: [ROUTES.fraserRiverTrail.name],
+    routeNames: [ROUTES.fraserRiverTrail.name],
     description: "marpole",
     positions: [
       [49.20107, -123.13972],
@@ -70,7 +70,7 @@ export const FRASER_RIVER_TRAIL = [
     positions: [VICTORIA_FRASER_RIVER, [49.20721, -123.06619], VICTORIA_KENT_N],
   },
   {
-    routes: [ROUTES.fraserRiverTrail.name],
+    routeNames: [ROUTES.fraserRiverTrail.name],
     description: "victoria-fraserview",
     positions: [
       [49.20831, -123.07008],
@@ -133,7 +133,7 @@ export const FRASER_RIVER_TRAIL = [
     ],
   },
   {
-    routes: [ROUTES.fraserRiverTrail.name],
+    routeNames: [ROUTES.fraserRiverTrail.name],
     description: "river district",
     positions: [
       ELLIOTT_KENT_PATH,

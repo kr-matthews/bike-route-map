@@ -29,7 +29,7 @@ const RIVER_DISTRICT_CROSSING_KENT_N = [49.2053, -123.03107];
 
 export const KENT = [
   {
-    routes: [ROUTES.kent.name],
+    routeNames: [ROUTES.kent.name],
     description: "kent n: heather to ontario",
     type: "uncomfortable",
     positions: [
@@ -51,12 +51,12 @@ export const KENT = [
     ],
   },
   {
-    routes: [ROUTES.kent.name],
+    routeNames: [ROUTES.kent.name],
     description: "ontario",
     positions: [ONTARIO_KENT_S, ONTARIO_KENT_N],
   },
   {
-    routes: [ROUTES.kent.name],
+    routeNames: [ROUTES.kent.name],
     description: "kent s: ontario to crompton",
     positions: [
       ONTARIO_KENT_S,
@@ -73,13 +73,13 @@ export const KENT = [
     ],
   },
   {
-    routes: [ROUTES.kent.name],
+    routeNames: [ROUTES.kent.name],
     videos: [VIDEOS.invernessSb],
     description: "crompton",
     positions: [CROMPTON_KENT_S, CROMPTON_KENT_N],
   },
   {
-    routes: [ROUTES.kent.name],
+    routeNames: [ROUTES.kent.name],
     description: "kent n: crompton to portside-ish",
     positions: [
       CROMPTON_KENT_N,
@@ -104,7 +104,7 @@ export const KENT = [
     ],
   },
   {
-    routes: [ROUTES.kent.name],
+    routeNames: [ROUTES.kent.name],
     description: "kent n: portside-ish to path at elliott",
     positions: [
       GLADSTONE_KENT,
@@ -122,7 +122,7 @@ export const KENT = [
     ],
   },
   {
-    routes: [ROUTES.kent.name],
+    routeNames: [ROUTES.kent.name],
     description: "kent n: elliott to morningstar park",
     positions: [
       ELLIOTT_KENT_W,
@@ -136,7 +136,7 @@ export const KENT = [
     ],
   },
   {
-    routes: [ROUTES.kent.name],
+    routeNames: [ROUTES.kent.name],
     description: "kent n: morningstar park to kinross",
     positions: [
       MORNINGSTAR_PARK_E,
@@ -162,7 +162,7 @@ export const KENT = [
     ],
   },
   {
-    routes: [ROUTES.kent.name],
+    routeNames: [ROUTES.kent.name],
     description: "kent n path: elliott to morningstar park",
     positions: [
       ELLIOTT_KENT_W,
@@ -176,12 +176,12 @@ export const KENT = [
     ],
   },
   {
-    routes: [ROUTES.kent.name],
+    routeNames: [ROUTES.kent.name],
     description: "kent n path: morningstar park",
     positions: [MORNINGSTAR_PARK_W, MORNINGSTAR_PARK_E],
   },
   {
-    routes: [ROUTES.kent.name],
+    routeNames: [ROUTES.kent.name],
     description: "kent n path: morningstar park to kerr",
     positions: [
       MORNINGSTAR_PARK_E,
@@ -200,13 +200,13 @@ export const KENT = [
     ],
   },
   {
-    routes: [ROUTES.kent.name, ROUTES.kerr.name],
+    routeNames: [ROUTES.kent.name, ROUTES.kerr.name],
     description: "crossing kerr",
     videos: [VIDEOS.kerrSb],
     positions: [KERR_KENT_N_SW, KERR_KENT_N_SE],
   },
   {
-    routes: [ROUTES.kent.name],
+    routeNames: [ROUTES.kent.name],
     description: "kent n path: kerr to kinross",
     positions: [
       KERR_KENT_N_SE,
@@ -218,7 +218,7 @@ export const KENT = [
     ],
   },
   {
-    routes: [ROUTES.kent.name],
+    routeNames: [ROUTES.kent.name],
     description: "river district detour",
     positions: [
       KINROSS_KENT,
@@ -252,12 +252,12 @@ export const KENT = [
     ],
   },
   {
-    routes: [ROUTES.kent.name],
+    routeNames: [ROUTES.kent.name],
     description: "kent n: river district",
     positions: [RIVER_DISTRICT_CROSSING_KENT_N, [49.20422, -123.02343]],
   },
   {
-    routes: [ROUTES.kent.name],
+    routeNames: [ROUTES.kent.name],
     description: "kent s: river district",
     positions: [
       RIVER_DISTRICT_CROSSING_KENT_S,
@@ -267,13 +267,13 @@ export const KENT = [
     ],
   },
   {
-    routes: [ROUTES.kent.name],
+    routeNames: [ROUTES.kent.name],
     description: "uppal kent s to n",
     isClosed: true,
     positions: [KENT_CONSTRUCTION_SPLIT, JACK_UPPAL_KENT_S],
   },
   {
-    routes: [ROUTES.kent.name],
+    routeNames: [ROUTES.kent.name],
     description: "kent n: uppal to river district crossing",
     positions: [
       KENT_CONSTRUCTION_SPLIT,
@@ -282,7 +282,7 @@ export const KENT = [
     ],
   },
   // {
-  //   routes: [ROUTES.kent.name],
+  //   routeNames: [ROUTES.kent.name],
   //   description: "kent n: closed",
   //   isClosed: true,
   //   positions: [

@@ -12,7 +12,7 @@ const GORE_KEEFER = [49.27944, -123.09719];
 
 export const KEEFER = [
   {
-    routes: [ROUTES.keefer.name],
+    routeNames: [ROUTES.keefer.name],
     description: "west",
     type: "uncomfortable",
     videos: [VIDEOS.keeferEb],
@@ -34,7 +34,7 @@ export const KEEFER = [
     ],
   },
   {
-    routes: [ROUTES.keefer.name],
+    routeNames: [ROUTES.keefer.name],
     description: "east",
     videos: [VIDEOS.keeferEb],
     positions: [

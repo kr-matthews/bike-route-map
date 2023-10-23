@@ -20,7 +20,7 @@ const ELLIOTT_ASHBURN = [49.21855, -123.05467];
 
 export const MASUMI_MITSUI_GREENWAY = [
   {
-    routes: [ROUTES.masumiMitsui.name],
+    routeNames: [ROUTES.masumiMitsui.name],
     description: "angus to ontario",
     videos: [VIDEOS.masumiMitsuiEb, VIDEOS.masumiMitsuiWb],
     positions: [
@@ -64,7 +64,7 @@ export const MASUMI_MITSUI_GREENWAY = [
     ],
   },
   {
-    routes: [ROUTES.masumiMitsui.name],
+    routeNames: [ROUTES.masumiMitsui.name],
     description: "ontario to split",
     videos: [VIDEOS.masumiMitsuiEb, VIDEOS.masumiMitsuiWb],
     positions: [
@@ -102,7 +102,7 @@ export const MASUMI_MITSUI_GREENWAY = [
     ],
   },
   {
-    routes: [ROUTES.masumiMitsui.name],
+    routeNames: [ROUTES.masumiMitsui.name],
     description: "eastbound branch",
     oneWay: "recommended",
     videos: [VIDEOS.masumiMitsuiEb],
@@ -118,21 +118,21 @@ export const MASUMI_MITSUI_GREENWAY = [
     ],
   },
   {
-    routes: [ROUTES.masumiMitsui.name],
+    routeNames: [ROUTES.masumiMitsui.name],
     description: "westbound branch 57th",
     oneWay: "recommended",
     videos: [VIDEOS.masumiMitsuiWb],
     positions: [VIVIAN_57TH, [49.21806, -123.05126], ELLIOTT_57TH],
   },
   {
-    routes: [ROUTES.masumiMitsui.name],
+    routeNames: [ROUTES.masumiMitsui.name],
     description: "westbound branch elliott path",
     oneWay: "required",
     videos: [VIDEOS.masumiMitsuiWb],
     positions: [ELLIOTT_57TH, [49.21841, -123.05461], ELLIOTT_ASHBURN],
   },
   {
-    routes: [ROUTES.masumiMitsui.name],
+    routeNames: [ROUTES.masumiMitsui.name],
     description: "westbound branch ashburn",
     oneWay: "recommended",
     videos: [VIDEOS.masumiMitsuiWb],

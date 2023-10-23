@@ -17,14 +17,14 @@ export const CHILCO = [
     positions: [STANLEY_PARK_LOOP_ALBERNI, CHILCO_ALBERNI_W],
   },
   {
-    routes: [ROUTES.chilco.name],
+    routeNames: [ROUTES.chilco.name],
     description: "closed",
     isClosed: true,
     videos: [VIDEOS.chilcoSb],
     positions: [CHILCO_SEAWALL, CHILCO_BEACH],
   },
   {
-    routes: [ROUTES.chilco.name],
+    routeNames: [ROUTES.chilco.name],
     description: "primary",
     videos: [VIDEOS.chilcoSb],
     positions: [
@@ -40,7 +40,7 @@ export const CHILCO = [
     ],
   },
   {
-    routes: [ROUTES.chilco.name],
+    routeNames: [ROUTES.chilco.name],
     description: "connection from georgia",
     oneWay: "required",
     videos: [VIDEOS.chilcoSb],

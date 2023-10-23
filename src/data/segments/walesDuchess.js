@@ -9,7 +9,7 @@ import { VIDEOS } from "../videos";
 
 export const WALES_DUCHESS = [
   {
-    routes: [ROUTES.walesDuchess.name],
+    routeNames: [ROUTES.walesDuchess.name],
     description: "primary",
     videos: [VIDEOS.walesDuchessSb],
     positions: [

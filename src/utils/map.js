@@ -13,8 +13,8 @@ export const DEFAULT_BOUNDS = new LatLngBounds(
 );
 
 export function getRouteBounds(name) {
-  const routeSegments = SEGMENTS.filter(
-    ({ routes }) => routes && routes.includes(name)
+  const routeSegments = SEGMENTS.filter(({ routeNames }) =>
+    (routeNames ?? []).includes(name)
   );
 
   if (routeSegments.length === 0) return DEFAULT_BOUNDS;
