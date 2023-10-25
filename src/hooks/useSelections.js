@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { ROUTES } from "../data/routes";
 
-// !! tidy up function name conventions
 export default function useSelections() {
   const [highlighted, setHighlighted] = useState(null);
   const [selected, setSelected] = useState(null);

@@ -1,8 +1,8 @@
 import { useRef } from "react";
-import { Polyline } from "react-leaflet";
+import { Polyline as LeafletPolyline } from "react-leaflet";
 import useDirectionalArrows from "../../hooks/useDirectionalArrows";
 
-export default function MyPolyline({
+export default function Polyline({
   showArrows,
   polylineProps,
   borderProps,
@@ -19,10 +19,10 @@ export default function MyPolyline({
   // mimic border by drawing thicker line underneath
   return (
     <>
-      {borderProps && <Polyline {...borderProps} />}
-      <Polyline ref={polylineRef} {...polylineProps}>
+      {borderProps && <LeafletPolyline {...borderProps} />}
+      <LeafletPolyline ref={polylineRef} {...polylineProps}>
         {children}
-      </Polyline>
+      </LeafletPolyline>
     </>
   );
 }

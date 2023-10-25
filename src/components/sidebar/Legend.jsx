@@ -154,7 +154,7 @@ export default function Legend({ hide }) {
           scrollWheelZoom
         >
           {/* panes required as <Segment /> assumes they exist */}
-          {/* // !!!: de-duplicate */}
+          {/* // !!!: de-duplicate <-- */}
           <Pane name="elevated-2" style={{ zIndex: 311 }} />
           <Pane name="elevated-2-adj" style={{ zIndex: 310 }} />
           <Pane name="elevated-2-border" style={{ zIndex: 309 }} />

@@ -4,7 +4,7 @@ import Segment from "./Segment";
 import { TILE_LAYER, DEFAULT_BOUNDS } from "../../utils/map";
 import "./map.css";
 
-export default function Map({ setMapRef }) {
+export default function MainMap({ setMapRef }) {
   return (
     <div style={{ height: "1em", width: "calc(100% - 625px)" }}>
       <MapContainer

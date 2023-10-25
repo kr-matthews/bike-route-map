@@ -7,7 +7,7 @@ import {
   getSegmentPane,
 } from "../../utils/pathOptions";
 import { Selections } from "../../App";
-import MyPolyline from "./MyPolyline";
+import Polyline from "./Polyline";
 import { hasVideo } from "../../utils/routes";
 import videoIcon from "../../images/video.svg";
 
@@ -53,7 +53,7 @@ export default function Segment(segment) {
 
   // FIXME: tool tip not showing on decorator arrows hover
   return (
-    <MyPolyline
+    <Polyline
       showArrows={
         !hideArrows && (oneWay === "required" || oneWay === "recommended")
       }
@@ -89,6 +89,6 @@ export default function Segment(segment) {
           "Alternative option or connection between routes"
         )}
       </Tooltip>
-    </MyPolyline>
+    </Polyline>
   );
 }

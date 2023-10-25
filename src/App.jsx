@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
-import Map from "./components/map/Map";
-import Preview from "./components/preview/Preview";
+import MainMap from "./components/map/MainMap";
+import Sidebar from "./components/sidebar/Sidebar";
 import useSelections from "./hooks/useSelections";
 import { useHiddenParser } from "./hooks/useHiddenParser";
 
@@ -15,9 +15,8 @@ export default function App() {
   return (
     <Selections.Provider value={selections}>
       <div style={{ display: "flex" }}>
-        <Map setMapRef={setMapRef} />
-        {/* // !! add wrapper component with drop-down to select child: Preview, Legend, etc */}
-        <Preview mapRef={mapRef} />
+        <MainMap setMapRef={setMapRef} />
+        <Sidebar mapRef={mapRef} />
       </div>
     </Selections.Provider>
   );
