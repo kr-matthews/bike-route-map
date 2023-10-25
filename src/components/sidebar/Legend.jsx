@@ -1,7 +1,7 @@
-import { MapContainer, Pane, TileLayer } from "react-leaflet";
-import Segment from "../map/Segment";
-import { TILE_LAYER } from "../../utils/map";
 import { useState } from "react";
+import { MapContainer } from "react-leaflet";
+import Segment from "../map/Segment";
+import PanesAndTiles from "../map/PanesAndTiles";
 import { SOMEWHAT_ZOOMED_IN } from "../../utils/params";
 
 const intersection = [49.26208, -123.10495];
@@ -153,24 +153,7 @@ export default function Legend({ hide }) {
           zoom={mapZoom}
           scrollWheelZoom
         >
-          {/* panes required as <Segment /> assumes they exist */}
-          {/* // !!!: de-duplicate <-- */}
-          <Pane name="elevated-2" style={{ zIndex: 311 }} />
-          <Pane name="elevated-2-adj" style={{ zIndex: 310 }} />
-          <Pane name="elevated-2-border" style={{ zIndex: 309 }} />
-          <Pane name="elevated-1" style={{ zIndex: 308 }} />
-          <Pane name="elevated-1-adj" style={{ zIndex: 307 }} />
-          <Pane name="elevated-1-border" style={{ zIndex: 306 }} />
-          <Pane name="shared" style={{ zIndex: 305 }} />
-          <Pane name="solo" style={{ zIndex: 304 }} />
-          <Pane name="underground-1-border" style={{ zIndex: 303 }} />
-          <Pane name="underground-1" style={{ zIndex: 301 }} />
-          <Pane name="underground-1-adj" style={{ zIndex: 300 }} />
-
-          <TileLayer
-            attribution={TILE_LAYER.attribution}
-            url={TILE_LAYER.url}
-          />
+          <PanesAndTiles />
 
           <Segment {...segment} {...segmentTypes[selectedTypeIndex].props} />
           <Segment {...otherSegment} />
