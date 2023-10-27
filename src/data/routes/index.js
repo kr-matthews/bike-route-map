@@ -503,7 +503,6 @@ export const ROUTES = {
   university: {
     name: "University Blvd",
     legs: [{ videos: {} }],
-    isIncomplete: true,
   },
   valley: {
     name: "Valley",

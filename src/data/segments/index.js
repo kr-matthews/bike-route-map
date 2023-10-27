@@ -79,6 +79,7 @@ import { TERMINAL_PATH } from "./terminalPath";
 import { THIRD } from "./third";
 import { TWENTY_NINTH } from "./twentyNinth";
 import { TWENTY_SECOND } from "./twentySecond";
+import { UNIVERSITY } from "./university";
 import { VALLEY } from "./valley";
 import { WALES_DUCHESS } from "./walesDuchess";
 import { WATERFRONT } from "./waterfront";
@@ -170,6 +171,7 @@ export const SEGMENTS = [
   ...THIRD,
   ...TWENTY_NINTH,
   ...TWENTY_SECOND,
+  ...UNIVERSITY,
   ...VALLEY,
   ...WALES_DUCHESS,
   ...WATERFRONT,
