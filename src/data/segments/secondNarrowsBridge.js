@@ -4,6 +4,7 @@ import {
   SKEENA_SECOND_NARROWS_BRIDGE,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const NORTHBOUND_ELEVATION_START = [49.29164, -123.02604];
 const NORTHBOUND_ELEVATION_END = [49.30367, -123.02652];
@@ -28,6 +29,7 @@ export const SECOND_NARROWS_BRIDGE = [
   {
     description: "skeena pre-tunnel",
     elevation: -0.5,
+    videos: [VIDEOS.portsideEb, VIDEOS.cassiarSb],
     positions: [
       CASSIAR_SKEENA_PATH,
       [49.28795, -123.02851],
@@ -38,11 +40,13 @@ export const SECOND_NARROWS_BRIDGE = [
   {
     description: "skeena tunnel",
     elevation: -1,
+    videos: [VIDEOS.portsideEb, VIDEOS.cassiarSb],
     positions: [TUNNEL_SOUTH_END, [49.28889, -123.02824], TUNNEL_NORTH_END],
   },
   {
     description: "skeena post-tunnel",
     elevation: -0.5,
+    videos: [VIDEOS.portsideEb, VIDEOS.cassiarSb],
     positions: [TUNNEL_NORTH_END, SKEENA_SECOND_NARROWS_BRIDGE],
   },
   // northbound

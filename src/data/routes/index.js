@@ -155,7 +155,7 @@ export const ROUTES = {
   },
   cassiar: {
     name: "Cassiar",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.cassiarSb } }],
   },
   centralParkLoop: {
     name: "Central Park Loop",
@@ -405,7 +405,7 @@ export const ROUTES = {
   },
   portside: {
     name: "Portside",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.portsideEb } }],
   },
   powell: {
     name: "Powell",

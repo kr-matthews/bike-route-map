@@ -6,10 +6,12 @@ import {
   WALL_OXFORD_PARK,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const PORTSIDE = [
   {
     description: "connection with second narrows bridge",
+    videos: [VIDEOS.portsideEb, VIDEOS.cassiarSb],
     positions: [
       SKEENA_BRIDGEWAY,
       [49.29054, -123.02848],
@@ -22,6 +24,7 @@ export const PORTSIDE = [
   {
     routeNames: [ROUTES.portside.name],
     description: "primary",
+    videos: [VIDEOS.portsideEb],
     positions: [
       WALL_OXFORD_PARK,
       [49.28606, -123.06198],
