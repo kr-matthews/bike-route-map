@@ -129,21 +129,7 @@ export const ROUTES = {
   },
   canadaLine: {
     name: "Canada Line Path",
-    // !!! CLP: replace videos, remove legs
-    legs: [
-      { name: "Richmond", videos: {} },
-      {
-        name: "North Arm Bridge",
-        videos: {
-          northbound: VIDEOS.northArmBridgeNb,
-          southbound: VIDEOS.northArmBridgeSb,
-        },
-      },
-      {
-        name: "Vancouver",
-        videos: { northbound: VIDEOS.cambieSeparatedNb },
-      },
-    ],
+    legs: [{ videos: {} }],
   },
   cardero: {
     name: "Cardero",
@@ -236,7 +222,6 @@ export const ROUTES = {
         },
       },
     ],
-    isIncomplete: true,
   },
   gladstone: {
     name: "Gladstone",

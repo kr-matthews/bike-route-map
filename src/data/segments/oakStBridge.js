@@ -1,4 +1,7 @@
-import {} from "../intersections";
+import {
+  GARDEN_CITY_PATTERSON_E,
+  GREAT_CANADIAN_SEA_ISLAND_NE,
+} from "../intersections";
 import { ROUTES } from "../routes";
 
 const SOUTHBOUND_ELEVATION_START = [49.20542, -123.13025];
@@ -6,6 +9,7 @@ const SOUTHBOUND_ELEVATION_END = [49.19153, -123.11989];
 const SOUTHBOUND_SPLIT = [49.19144, -123.12005];
 const BRIDGEPORT_SPLIT = [49.19187, -123.11961];
 const SEA_ISLAND_SPLIT = [49.19153, -123.1189];
+const SEA_ISLAND_PATH_END = [49.19118, -123.1237];
 const PATH_PATTERSON = [49.19019, -123.11692];
 const NORTHBOUND_SIDEWALK_START = [49.19028, -123.11582];
 const NORTHBOUND_ELEVATION_START = [49.19119, -123.1174];
@@ -26,8 +30,16 @@ export const OAK_STREET_BRIDGE = [
       [49.19121, -123.12096],
       [49.19119, -123.12123],
       [49.19118, -123.12192],
-      [49.19118, -123.1237],
+      SEA_ISLAND_PATH_END,
     ],
+  },
+  {
+    routeNames: [ROUTES.oakStreetBridge.name],
+    description: "sea island way missing end",
+    type: "uncomfortable",
+    oneWay: "required",
+    hideArrows: true,
+    positions: [SEA_ISLAND_PATH_END, GREAT_CANADIAN_SEA_ISLAND_NE],
   },
   {
     routeNames: [ROUTES.oakStreetBridge.name],
@@ -81,6 +93,10 @@ export const OAK_STREET_BRIDGE = [
       [49.19145, -123.11898],
       SEA_ISLAND_SPLIT,
     ],
+  },
+  {
+    description: "patterson from garden city",
+    positions: [GARDEN_CITY_PATTERSON_E, PATH_PATTERSON],
   },
   // southbound
   {

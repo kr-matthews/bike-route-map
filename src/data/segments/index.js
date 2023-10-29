@@ -32,6 +32,7 @@ import { FOURTEENTH } from "./fourteenth";
 import { FOURTH } from "./fourth";
 import { FRANCES_UNION } from "./francesUnion";
 import { FRASER_RIVER_TRAIL } from "./fraserRiverTrail";
+import { GARDEN_CITY } from "./gardenCity";
 import { GLADSTONE } from "./gladstone";
 import { HARO } from "./haro";
 import { HEATHER } from "./heather";
@@ -124,6 +125,7 @@ export const SEGMENTS = [
   ...FOURTH,
   ...FRANCES_UNION,
   ...FRASER_RIVER_TRAIL,
+  ...GARDEN_CITY,
   ...GLADSTONE,
   ...HARO,
   ...HEATHER,
