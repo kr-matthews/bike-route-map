@@ -16,6 +16,7 @@ import {
   VAN_HORNE_RIVER_N,
   VAN_HORNE_RIVER_SE,
   GARDEN_CITY_SEA_ISLAND_SW,
+  BRIDGEPORT_TRAIL_VAN_HORNE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -186,7 +187,7 @@ export const CANADA_LINE = [
     videos: [VIDEOS.northArmBridgeNb],
     positions: [
       GREAT_CANADIAN_VAN_HORNE_SE,
-      [49.19512, -123.12402],
+      BRIDGEPORT_TRAIL_VAN_HORNE,
       [49.19597, -123.12184],
       [49.19667, -123.11944],
       [49.19681, -123.11915],

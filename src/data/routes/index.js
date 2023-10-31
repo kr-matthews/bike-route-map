@@ -91,7 +91,6 @@ export const ROUTES = {
   bridgeportTrail: {
     name: "Bridgeport Trail",
     legs: [{ videos: {} }],
-    isIncomplete: true,
   },
   burnaby: {
     name: "Burnaby",
