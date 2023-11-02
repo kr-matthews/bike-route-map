@@ -8,8 +8,8 @@ export const TILE_LAYER = {
 };
 
 export const DEFAULT_BOUNDS = new LatLngBounds(
-  [49.32946, -123.26558],
-  [49.16, -122.84116]
+  [49.33, -123.27],
+  [49.12, -122.84]
 );
 
 export function getRouteBounds(name) {
