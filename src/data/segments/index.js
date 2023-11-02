@@ -66,6 +66,7 @@ import { PENDER } from "./pender";
 import { PORTSIDE } from "./portside";
 import { POWELL } from "./powell";
 import { PRINCE_EDWARD } from "./princeEdward";
+import { RAILWAY_GREENWAY } from "./railwayGreenway";
 import { RICHARDS } from "./richards";
 import { RIDGEWAY } from "./ridgeway";
 import { RUPERT } from "./rupert";
@@ -160,6 +161,7 @@ export const SEGMENTS = [
   ...PORTSIDE,
   ...POWELL,
   ...PRINCE_EDWARD,
+  ...RAILWAY_GREENWAY,
   ...RICHARDS,
   ...RIDGEWAY,
   ...RUPERT,

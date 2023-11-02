@@ -402,7 +402,6 @@ export const ROUTES = {
   railwayGreenway: {
     name: "Railway Greenway",
     legs: [{ videos: {} }],
-    isIncomplete: true,
   },
   richards: {
     name: "Richards",
