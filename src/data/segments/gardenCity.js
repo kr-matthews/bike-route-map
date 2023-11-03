@@ -1,6 +1,8 @@
 import {
   GARDEN_CITY_GRANVILLE_NE,
   GARDEN_CITY_GRANVILLE_NW,
+  GARDEN_CITY_GRANVILLE_S,
+  GARDEN_CITY_GRANVILLE_W,
   GARDEN_CITY_PATTERSON_E,
   GARDEN_CITY_SB_ROAD_START,
   GARDEN_CITY_SB_START,
@@ -11,7 +13,6 @@ import { VIDEOS } from "../videos";
 
 const GARDEN_CITY_CITATION = [49.16518, -123.12488];
 const GARDEN_CITY_GRANVILLE_N = [49.16311, -123.12566];
-const GARDEN_CITY_GRANVILLE_S = [49.16259, -123.12543];
 const GARDEN_CITY_GRANVILLE_SE = [49.16288, -123.1253];
 const GARDEN_CITY_FRANCIS_SS = [49.14774, -123.12516];
 
@@ -84,9 +85,18 @@ export const GARDEN_CITY = [
     positions: [
       GARDEN_CITY_GRANVILLE_N,
       [49.16302, -123.1257],
-      [49.1629, -123.1257],
+      GARDEN_CITY_GRANVILLE_W,
       [49.16275, -123.1255],
       GARDEN_CITY_GRANVILLE_S,
+    ],
+  },
+  {
+    description: "from granville to nb",
+    oneWay: "required",
+    positions: [
+      GARDEN_CITY_GRANVILLE_W,
+      [49.16308, -123.12534],
+      GARDEN_CITY_GRANVILLE_NE,
     ],
   },
 

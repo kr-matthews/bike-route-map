@@ -229,7 +229,6 @@ export const ROUTES = {
   granville: {
     name: "Granville Ave",
     legs: [{ videos: {} }],
-    isIncomplete: true,
   },
   haro: {
     name: "Haro",

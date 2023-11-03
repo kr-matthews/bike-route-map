@@ -1,4 +1,7 @@
-import {} from "../intersections";
+import {
+  RAILWAY_GREENWAY_GRANVILLE_N,
+  RAILWAY_GREENWAY_GRANVILLE_S,
+} from "../intersections";
 import { ROUTES } from "../routes";
 
 export const RAILWAY_GREENWAY = [
@@ -50,7 +53,8 @@ export const RAILWAY_GREENWAY = [
       [49.15908, -123.17008],
       [49.16262, -123.17009],
       [49.16276, -123.17016],
-      [49.16292, -123.17019],
+      RAILWAY_GREENWAY_GRANVILLE_S,
+      RAILWAY_GREENWAY_GRANVILLE_N,
       [49.16987, -123.17013],
       [49.17007, -123.16992],
       [49.17345, -123.16988],
