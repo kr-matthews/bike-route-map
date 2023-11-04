@@ -142,8 +142,9 @@ export const ROUTES = {
     name: "Cassiar",
     legs: [{ videos: { southbound: VIDEOS.cassiarSb } }],
   },
-  centralParkLoop: {
-    name: "Central Park Loop",
+  centralParkPerimeterTrail: {
+    name: "Central Park Perimeter Trail",
+    shortName: "Central Park Per. T.",
     legs: [{ videos: {} }],
   },
   centralValleyGreenway: {
@@ -453,8 +454,8 @@ export const ROUTES = {
     shortName: "Second Narrows Br.",
     legs: [{ videos: {} }],
   },
-  shellRoad: {
-    name: "Shell Road",
+  shellRoadTrail: {
+    name: "Shell Road Trail",
     legs: [{ videos: {} }],
     isIncomplete: true,
   },

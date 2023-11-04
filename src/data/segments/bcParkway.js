@@ -242,7 +242,7 @@ export const BC_PARKWAY = [
   // burnaby
   {
     routeNames: [ROUTES.bcParkway.name],
-    description: "west of central park loop",
+    description: "west of central park perimeter trail",
     videos: [VIDEOS.bcParkwayBurnabyEb],
     positions: [
       BOUNDARY_VANNESS,
@@ -264,12 +264,12 @@ export const BC_PARKWAY = [
     positions: [CENTRAL_PARK_BC_PARKWAY_NE, [49.2325, -123.01929]],
   },
   {
-    routeNames: [ROUTES.bcParkway.name, ROUTES.centralParkLoop.name],
+    routeNames: [ROUTES.bcParkway.name, ROUTES.centralParkPerimeterTrail.name],
     description: "north central park split",
     positions: [CENTRAL_PARK_BC_PARKWAY_NE, CENTRAL_PARK_BC_PARKWAY_EAST_SPLIT],
   },
   {
-    routeNames: [ROUTES.bcParkway.name, ROUTES.centralParkLoop.name],
+    routeNames: [ROUTES.bcParkway.name, ROUTES.centralParkPerimeterTrail.name],
     description: "central park split to patterson",
     videos: [VIDEOS.bcParkwayBurnabyEb],
     positions: [CENTRAL_PARK_BC_PARKWAY_EAST_SPLIT, PATTERSON_BC_PARKWAY],

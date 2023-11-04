@@ -8,9 +8,9 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-export const CENTRAL_PARK_LOOP = [
+export const CENTRAL_PARK_PERIMETER_TRAIL = [
   {
-    routeNames: [ROUTES.centralParkLoop.name, ROUTES.bcParkway.name],
+    routeNames: [ROUTES.centralParkPerimeterTrail.name, ROUTES.bcParkway.name],
     description: "north side (west)",
     videos: [VIDEOS.bcParkwayBurnabyEb],
     positions: [
@@ -23,7 +23,7 @@ export const CENTRAL_PARK_LOOP = [
     ],
   },
   {
-    routeNames: [ROUTES.centralParkLoop.name, ROUTES.bcParkway.name],
+    routeNames: [ROUTES.centralParkPerimeterTrail.name, ROUTES.bcParkway.name],
     legs: ["Burnaby"],
     description: "north side (east)",
     positions: [
@@ -33,7 +33,7 @@ export const CENTRAL_PARK_LOOP = [
     ],
   },
   {
-    routeNames: [ROUTES.centralParkLoop.name],
+    routeNames: [ROUTES.centralParkPerimeterTrail.name],
     description: "non-overlap",
     positions: [
       PATTERSON_BC_PARKWAY,
