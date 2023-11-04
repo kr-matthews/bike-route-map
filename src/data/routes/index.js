@@ -74,7 +74,13 @@ export const ROUTES = {
   bcParkway: {
     name: "BC Parkway",
     legs: [
-      { name: "Vancouver", videos: { eastbound: VIDEOS.bcParkwayVancouverEb } },
+      {
+        name: "Vancouver",
+        videos: {
+          eastbound: VIDEOS.bcParkwayVancouverEb,
+          westbound: VIDEOS.bcParkwayVancouverWb,
+        },
+      },
       { name: "Burnaby", videos: { eastbound: VIDEOS.bcParkwayBurnabyEb } },
       { name: "New Westminster", videos: {} },
       { name: "Surrey", videos: {} },
@@ -144,8 +150,8 @@ export const ROUTES = {
   },
   centralParkPerimeterTrail: {
     name: "Central Park Perimeter Trail",
-    shortName: "Central Park Per. T.",
-    legs: [{ videos: {} }],
+    shortName: "Central Park Perim.",
+    legs: [{ videos: { clockwise: VIDEOS.centralParkPerimeterTrailCw } }],
   },
   centralValleyGreenway: {
     name: "Central Valley Greenway",
@@ -292,7 +298,7 @@ export const ROUTES = {
   },
   killarney: {
     name: "Killarney",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.killarneyEb } }],
   },
   kingEdward: {
     name: "King Edward Ave",

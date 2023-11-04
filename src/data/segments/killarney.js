@@ -5,11 +5,13 @@ import {
   WALES_46TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const KILLARNEY = [
   {
     routeNames: [ROUTES.killarney.name],
     description: "primary",
+    videos: [VIDEOS.killarneyEb],
     positions: [
       NANAIMO_46TH,
       [49.22848, -123.05464],

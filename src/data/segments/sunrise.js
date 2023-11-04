@@ -81,17 +81,19 @@ export const SUNRISE = [
   },
   {
     routeNames: [ROUTES.sunrise.name, ROUTES.midtown.name],
-    legs: [undefined, "Vancouver"],
     description: "earles to kingsway",
     videos: [VIDEOS.sunriseNb, VIDEOS.midtownVancouverEb],
     positions: [EARLES_38TH, KINGSWAY_EARLES],
   },
   {
     routeNames: [ROUTES.sunrise.name, ROUTES.bcParkway.name],
-    legs: ["Vancouver"],
     description: "slocan",
     type: "uncomfortable",
-    videos: [VIDEOS.sunriseNb, VIDEOS.bcParkwayVancouverEb],
+    videos: [
+      VIDEOS.sunriseNb,
+      VIDEOS.bcParkwayVancouverEb,
+      VIDEOS.bcParkwayVancouverWb,
+    ],
     positions: [SLOCAN_BC_PARKWAY, SLOCAN_29TH],
   },
   {

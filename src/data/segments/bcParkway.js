@@ -56,6 +56,7 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "Nanaimo alt",
+    videos: [VIDEOS.bcParkwayVancouverWb],
     positions: [
       NANAIMO_BC_PARKWAY_SPLIT_WEST,
       [49.24954, -123.05865],
@@ -109,8 +110,8 @@ export const BC_PARKWAY = [
   // vancouver
   {
     routeNames: [ROUTES.bcParkway.name],
-    description: "lakewood to sunrise",
-    videos: [VIDEOS.bcParkwayVancouverEb],
+    description: "lakewood to nanaimo split",
+    videos: [VIDEOS.bcParkwayVancouverEb, VIDEOS.bcParkwayVancouverWb],
     positions: [
       LAKEWOOD_GRANDVIEW,
       [49.2595, -123.06208],
@@ -141,8 +142,24 @@ export const BC_PARKWAY = [
       GLADSTONE_BC_PARKWAY,
       [49.24971, -123.05944],
       NANAIMO_BC_PARKWAY_SPLIT_WEST,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "nanaimo split south",
+    videos: [VIDEOS.bcParkwayVancouverEb],
+    positions: [
+      NANAIMO_BC_PARKWAY_SPLIT_WEST,
       [49.24943, -123.05889],
       [49.24866, -123.05709],
+      NANAIMO_BC_PARKWAY_SPLIT_EAST,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "nanaimo split to sunrise",
+    videos: [VIDEOS.bcParkwayVancouverEb, VIDEOS.bcParkwayVancouverWb],
+    positions: [
       NANAIMO_BC_PARKWAY_SPLIT_EAST,
       [49.24876, -123.0565],
       [49.24837, -123.05649],
@@ -155,7 +172,7 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
     description: "29th path",
-    videos: [VIDEOS.bcParkwayVancouverEb],
+    videos: [VIDEOS.bcParkwayVancouverEb, VIDEOS.bcParkwayVancouverWb],
     positions: [
       SLOCAN_29TH,
       [49.24452, -123.04957],
@@ -166,7 +183,11 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
     description: "sunrise",
-    videos: [VIDEOS.bcParkwayVancouverEb, VIDEOS.sunriseNb],
+    videos: [
+      VIDEOS.bcParkwayVancouverEb,
+      VIDEOS.bcParkwayVancouverWb,
+      VIDEOS.sunriseNb,
+    ],
     positions: [
       BC_PARKWAY_29TH_STATION,
       [49.24415, -123.0463],
@@ -180,7 +201,7 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "sunrise to boundary",
-    videos: [VIDEOS.bcParkwayVancouverEb],
+    videos: [VIDEOS.bcParkwayVancouverEb, VIDEOS.bcParkwayVancouverWb],
     positions: [
       EARLES_VANNESS,
       [49.24263, -123.04252],
@@ -266,12 +287,13 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name, ROUTES.centralParkPerimeterTrail.name],
     description: "north central park split",
+    videos: [VIDEOS.centralParkPerimeterTrailCw],
     positions: [CENTRAL_PARK_BC_PARKWAY_NE, CENTRAL_PARK_BC_PARKWAY_EAST_SPLIT],
   },
   {
     routeNames: [ROUTES.bcParkway.name, ROUTES.centralParkPerimeterTrail.name],
     description: "central park split to patterson",
-    videos: [VIDEOS.bcParkwayBurnabyEb],
+    videos: [VIDEOS.bcParkwayBurnabyEb, VIDEOS.centralParkPerimeterTrailCw],
     positions: [CENTRAL_PARK_BC_PARKWAY_EAST_SPLIT, PATTERSON_BC_PARKWAY],
   },
   {
