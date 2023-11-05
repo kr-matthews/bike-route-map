@@ -1,4 +1,8 @@
 import { Marker, Tooltip } from "react-leaflet";
+import L from "leaflet";
+import startIcon from "../../images/marker-green.svg";
+import endIcon from "../../images/marker-red.svg";
+import combinedIcon from "../../images/marker-yellow.svg";
 
 const startText = "Video Starts Here";
 const endText = "Video Ends Here";
@@ -43,8 +47,16 @@ export default function VideoMarkers({ segment, video }) {
 function VideoMarker({ position, type }) {
   const text =
     type === "start" ? startText : type === "end" ? endText : combinedText;
+  const iconUrl =
+    type === "start" ? startIcon : type === "end" ? endIcon : combinedIcon;
+  const icon = L.icon({
+    iconUrl,
+    iconSize: [38, 95],
+    iconAnchor: [19, 65],
+  });
+
   return (
-    <Marker position={position} opacity={0.85}>
+    <Marker position={position} icon={icon} opacity={0.75}>
       <Tooltip>{text}</Tooltip>
     </Marker>
   );
