@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { Fragment, useContext } from "react";
 import { Tooltip } from "react-leaflet";
 import {
   createBorderPathOptions,
@@ -10,6 +10,7 @@ import { Selections } from "../../App";
 import Polyline from "./Polyline";
 import { hasVideo } from "../../utils/routes";
 import videoIcon from "../../images/video.svg";
+import VideoMarkers from "./VideoMarkers";
 
 export default function Segment(segment) {
   const { routeNames, oneWay, hideArrows, isClosed, positions, elevation } =
@@ -53,42 +54,45 @@ export default function Segment(segment) {
 
   // FIXME: tool tip not showing on decorator arrows hover
   return (
-    <Polyline
-      showArrows={
-        !hideArrows && (oneWay === "required" || oneWay === "recommended")
-      }
-      polylineProps={polylineProps}
-      borderProps={hasBorder ? borderProps : undefined}
-    >
-      <Tooltip {...tooltipProps}>
-        {hasAnyRoutes ? (
-          <>
-            {isClosed && (
-              <div>
-                <b>[SEGMENT CLOSED]</b>
-              </div>
-            )}
-            {routeNames.map((routeName) => (
-              <div key={routeName}>
-                {hasVideo(segment, routeName) && (
-                  <img
-                    src={videoIcon}
-                    alt="video"
-                    style={{ marginRight: "0.5em", height: "0.8em" }}
-                  />
-                )}
-                {primaryRouteName === routeName ? (
-                  <b>{routeName}</b>
-                ) : (
-                  routeName
-                )}
-              </div>
-            ))}
-          </>
-        ) : (
-          "Alternative option or connection between routes"
-        )}
-      </Tooltip>
-    </Polyline>
+    <Fragment>
+      <Polyline
+        showArrows={
+          !hideArrows && (oneWay === "required" || oneWay === "recommended")
+        }
+        polylineProps={polylineProps}
+        borderProps={hasBorder ? borderProps : undefined}
+      >
+        <Tooltip {...tooltipProps}>
+          {hasAnyRoutes ? (
+            <>
+              {isClosed && (
+                <div>
+                  <b>[SEGMENT CLOSED]</b>
+                </div>
+              )}
+              {routeNames.map((routeName) => (
+                <div key={routeName}>
+                  {hasVideo(segment, routeName) && (
+                    <img
+                      src={videoIcon}
+                      alt="video"
+                      style={{ marginRight: "0.5em", height: "0.8em" }}
+                    />
+                  )}
+                  {primaryRouteName === routeName ? (
+                    <b>{routeName}</b>
+                  ) : (
+                    routeName
+                  )}
+                </div>
+              ))}
+            </>
+          ) : (
+            "Alternative option or connection between routes"
+          )}
+        </Tooltip>
+      </Polyline>
+      {video && <VideoMarkers segment={segment} video={video} />}
+    </Fragment>
   );
 }
