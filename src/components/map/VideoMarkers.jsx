@@ -3,6 +3,7 @@ import L from "leaflet";
 import startIcon from "../../images/marker-green.svg";
 import endIcon from "../../images/marker-red.svg";
 import combinedIcon from "../../images/marker-yellow.svg";
+import { Fragment } from "react";
 
 const startText = "Video Starts Here";
 const endText = "Video Ends Here";
@@ -12,36 +13,23 @@ export default function VideoMarkers({ segment, video }) {
   const firstPosition = segment.positions[0];
   const lastPosition = segment.positions[segment.positions.length - 1];
 
-  const videoStartsAtStart = (segment.videosStartAtStart ?? []).includes(video);
-  const videoStartsAtEnd = (segment.videosStartAtEnd ?? []).includes(video);
-  const videoEndsAtStart = (segment.videosEndAtStart ?? []).includes(video);
-  const videoEndsAtEnd = (segment.videosEndAtEnd ?? []).includes(video);
-  const videoLoopsAtStart = (segment.videosLoopAtStart ?? []).includes(video);
-  const videoLoopsAtEnd = (segment.videosLoopAtEnd ?? []).includes(video);
+  const startsAtStart = (segment.videosStartAtStart ?? []).includes(video);
+  const startsAtEnd = (segment.videosStartAtEnd ?? []).includes(video);
+  const endsAtStart = (segment.videosEndAtStart ?? []).includes(video);
+  const endsAtEnd = (segment.videosEndAtEnd ?? []).includes(video);
+  const loopsAtStart = (segment.videosLoopAtStart ?? []).includes(video);
+  const loopsAtEnd = (segment.videosLoopAtEnd ?? []).includes(video);
 
-  if (videoStartsAtStart) {
-    return <VideoMarker type={"start"} position={firstPosition} />;
-  }
-
-  if (videoStartsAtEnd) {
-    return <VideoMarker type={"start"} position={lastPosition} />;
-  }
-
-  if (videoEndsAtStart) {
-    return <VideoMarker type={"end"} position={firstPosition} />;
-  }
-
-  if (videoEndsAtEnd) {
-    return <VideoMarker type={"end"} position={lastPosition} />;
-  }
-
-  if (videoLoopsAtStart) {
-    return <VideoMarker type={"loop"} position={firstPosition} />;
-  }
-
-  if (videoLoopsAtEnd) {
-    return <VideoMarker type={"loop"} position={lastPosition} />;
-  }
+  return (
+    <Fragment>
+      {startsAtStart && <VideoMarker type="start" position={firstPosition} />}
+      {startsAtEnd && <VideoMarker type="start" position={lastPosition} />}
+      {endsAtStart && <VideoMarker type="end" position={firstPosition} />}
+      {endsAtEnd && <VideoMarker type="end" position={lastPosition} />}
+      {loopsAtStart && <VideoMarker type="loop" position={firstPosition} />}
+      {loopsAtEnd && <VideoMarker type="loop" position={lastPosition} />}
+    </Fragment>
+  );
 }
 
 function VideoMarker({ position, type }) {
