@@ -15,6 +15,7 @@ import {
   SLOCAN_BC_PARKWAY,
   TODD_VANNESS,
   BOUNDARY_VANNESS_E,
+  GILLEY_RUMBLE_NW,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -352,7 +353,7 @@ export const BC_PARKWAY = [
       [49.21566, -122.97369],
       [49.2152, -122.97261],
       [49.21498, -122.97245],
-      [49.21483, -122.97214],
+      GILLEY_RUMBLE_NW,
       [49.21483, -122.97176],
       [49.21487, -122.97149],
       [49.21484, -122.97069],

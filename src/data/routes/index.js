@@ -418,9 +418,9 @@ export const ROUTES = {
     legs: [{ videos: {} }],
   },
   rumble: {
-    name: "Rumble",
+    name: "Rumble Street Urban Trail",
+    shortName: "Rumble Urban Trail",
     legs: [{ videos: {} }],
-    isIncomplete: true,
   },
   rupert: {
     name: "Rupert St",
