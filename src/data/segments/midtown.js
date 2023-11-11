@@ -37,6 +37,8 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const EAST_OF_BOUNDARY = [49.24311, -123.02253];
+
 export const MIDTOWN = [
   {
     description: "crossing marine sb",
@@ -244,10 +246,15 @@ export const MIDTOWN = [
   },
   {
     routeNames: [ROUTES.midtown.name],
-    legs: ["Burnaby"],
-    description: "primary",
+    description: "beginning of boundary",
+    videos: [VIDEOS.midtownVancouverEb],
+    positions: [BOUNDARY_MOSCROP, EAST_OF_BOUNDARY],
+  },
+  {
+    routeNames: [ROUTES.midtown.name],
+    description: "boundary-ish to willingdon",
     positions: [
-      BOUNDARY_MOSCROP,
+      EAST_OF_BOUNDARY,
       [49.24311, -123.01983],
       PATTERSON_MOSCROP,
       CARLETON_MOSCROP,
@@ -258,12 +265,12 @@ export const MIDTOWN = [
       [49.24303, -123.00706],
       [49.24307, -123.00678],
       WILLINGDON_DEER_LAKE,
-      [49.24301, -123.00232],
-      [49.24279, -123.00155],
-      [49.24203, -122.99974],
-      [49.24186, -122.9991],
-      [49.24177, -122.99822],
-      [49.24172, -122.99797],
+    ],
+  },
+  {
+    routeNames: [ROUTES.midtown.name],
+    description: "garden grove to deer lake ave",
+    positions: [
       GARDEN_GROVE_DEER_LAKE,
       [49.2417, -122.99482],
       [49.24173, -122.99197],
@@ -275,6 +282,12 @@ export const MIDTOWN = [
       [49.24183, -122.9817],
       [49.24181, -122.97729],
       DEER_LAKE_GILPIN_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.midtown.name],
+    description: "deer lake pkwy to east end",
+    positions: [
       DEER_LAKE_GILPIN_SW,
       [49.24174, -122.97551],
       [49.24173, -122.97305],

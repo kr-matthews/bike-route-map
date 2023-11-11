@@ -192,6 +192,11 @@ export const ROUTES = {
     name: "Cypress",
     legs: [{ videos: {} }],
   },
+  deerLakeParkway: {
+    name: "Deer Lake Parkway Urban Trail",
+    shortName: "Deer Lake Pkwy T.",
+    legs: [{ videos: {} }],
+  },
   dumfries: {
     name: "Dumfries",
     legs: [{ videos: { northbound: VIDEOS.dumfriesNb } }],

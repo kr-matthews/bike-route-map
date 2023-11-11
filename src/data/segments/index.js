@@ -25,6 +25,7 @@ import { CHILCO } from "./chilco";
 import { COLUMBIA } from "./columbia";
 import { COMOX_HELMCKEN } from "./comoxHelmcken";
 import { CYPRESS } from "./cypress";
+import { DEER_LAKE_PARKWAY } from "./deerLakeParkway";
 import { DUMFRIES } from "./dumfries";
 import { DUNBAR } from "./dunbar";
 import { DUNSMUIR } from "./dunsmuir";
@@ -122,6 +123,7 @@ export const SEGMENTS = [
   ...COLUMBIA,
   ...COMOX_HELMCKEN,
   ...CYPRESS,
+  ...DEER_LAKE_PARKWAY,
   ...DUMFRIES,
   ...DUNBAR,
   ...DUNSMUIR,
