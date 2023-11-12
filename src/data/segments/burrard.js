@@ -248,6 +248,7 @@ export const BURRARD = [
     description: "kits",
     oneWay: "required",
     videos: [VIDEOS.burrardSb],
+    videosEndAtEnd: [VIDEOS.burrardSb],
     positions: [
       BURRARD_YORK,
       [49.27162, -123.14561],

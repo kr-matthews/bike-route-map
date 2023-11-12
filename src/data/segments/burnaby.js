@@ -5,6 +5,7 @@ import {
   CARDERO_BURNABY,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const BURNABY = [
   {
@@ -18,7 +19,13 @@ export const BURNABY = [
       BUTE_BURNABY,
       [49.27967, -123.13225],
       BURRARD_BURNABY_W,
-      BURRARD_BURNABY_E,
     ],
+  },
+  {
+    routeNames: [ROUTES.burnaby.name],
+    description: "crossing burrard",
+    videos: [VIDEOS.burrardNb],
+    videosEndAtStart: [VIDEOS.burrardNb],
+    positions: [BURRARD_BURNABY_W, BURRARD_BURNABY_E],
   },
 ];

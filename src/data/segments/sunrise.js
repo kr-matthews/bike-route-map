@@ -138,6 +138,7 @@ export const SUNRISE = [
     routeNames: [ROUTES.sunrise.name],
     description: "adanac to wall",
     videos: [VIDEOS.sunriseNb],
+    videosEndAtEnd: [VIDEOS.sunriseNb],
     positions: [
       KASLO_ADANAC,
       [49.27772, -123.04672],

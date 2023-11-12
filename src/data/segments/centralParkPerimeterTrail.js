@@ -34,7 +34,7 @@ export const CENTRAL_PARK_PERIMETER_TRAIL = [
   },
   {
     routeNames: [ROUTES.centralParkPerimeterTrail.name],
-    description: "non-overlap",
+    description: "non-overlap ccw of 45th",
     videos: [VIDEOS.centralParkPerimeterTrailCw],
     positions: [
       PATTERSON_BC_PARKWAY,
@@ -78,6 +78,15 @@ export const CENTRAL_PARK_PERIMETER_TRAIL = [
       [49.22471, -123.02332],
       [49.22675, -123.02333],
       [49.22796, -123.02337],
+      BOUNDARY_45TH,
+    ],
+  },
+  {
+    routeNames: [ROUTES.centralParkPerimeterTrail.name],
+    description: "non-overlap cw of 45th",
+    videos: [VIDEOS.centralParkPerimeterTrailCw],
+    videosLoopAtStart: [VIDEOS.centralParkPerimeterTrailCw],
+    positions: [
       BOUNDARY_45TH,
       [49.22946, -123.02285],
       [49.2296, -123.02283],

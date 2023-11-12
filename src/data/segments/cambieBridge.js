@@ -213,6 +213,7 @@ export const CAMBIE_BRIDGE = [
     description: "connection to off broadway via ash",
     elevation: 0.5,
     videos: [VIDEOS.cambieBridgeNelsonSb, VIDEOS.heatherSb],
+    videosEndAtStart: [VIDEOS.cambieBridgeNelsonSb],
     positions: [ASH_7TH, ASH_2ND],
   },
   {
@@ -275,7 +276,8 @@ export const CAMBIE_BRIDGE = [
   {
     description: "crossing 2nd, under",
     videos: [VIDEOS.heatherSb],
-    positions: [CAMBIE_2ND_N_W, CAMBIE_2ND_SW],
+    videosStartAtEnd: [VIDEOS.heatherSb],
+    positions: [CAMBIE_2ND_SW, CAMBIE_2ND_N_W],
   },
   {
     description: "crossing 2nd, west side",
@@ -354,6 +356,7 @@ export const CAMBIE_BRIDGE = [
   {
     description: "connection to off broadway via 5th",
     videos: [VIDEOS.cambieBridgeSmithNb],
+    videosStartAtEnd: [VIDEOS.cambieBridgeSmithNb],
     positions: [
       CAMBIE_2ND_SE,
       [49.26665, -123.11435],

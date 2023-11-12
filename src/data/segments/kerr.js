@@ -18,6 +18,7 @@ export const KERR = [
     routeNames: [ROUTES.kerr.name],
     description: "south tip",
     videos: [VIDEOS.kerrSb],
+    videosEndAtStart: [VIDEOS.kerrSb],
     positions: [KERR_FRASER_TRAIL, KERR_KENT_N_SE],
   },
   {
@@ -103,6 +104,7 @@ export const KERR = [
     description: "to 45th",
     type: "uncomfortable",
     videos: [VIDEOS.kerrSb],
+    videosStartAtEnd: [VIDEOS.kerrSb],
     positions: [
       KERR_49TH_N,
       [49.22623, -123.04099],

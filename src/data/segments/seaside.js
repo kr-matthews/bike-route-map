@@ -35,6 +35,7 @@ import {
   THIRD_SEASIDE,
   THURLOW_SEAWALL,
   TRAFALGAR_POINT_GREY,
+  COLUMBIA_SEAWALL,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -50,6 +51,10 @@ const SEAWALL_STANLEY_PARK_WEST_END = [49.29031, -123.14571];
 const SEAWALL_UNDER_BURRARD_N = [49.27587, -123.13547];
 
 const MID_CONVENTION_CENTER = [49.28962, -123.11524];
+const NORTH_OF_CANADA_PLACE = [49.28832, -123.11518];
+const WEST_OF_COLUMBIA = [49.27181, -123.11004];
+const EAST_OF_TRAFALGAR = [49.27359, -123.16412];
+const EAST_OF_SPYGLASS = [49.2712, -123.11435];
 
 // !! connections: bc place? to confirm
 
@@ -201,6 +206,7 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "jericho/kits overlap",
     videos: [VIDEOS.seasideKitsWb],
+    videosEndAtStart: [VIDEOS.seasideKitsWb],
     positions: [
       THIRD_SEASIDE,
       [49.27172, -123.19274],
@@ -210,7 +216,7 @@ export const SEASIDE = [
   },
   {
     routeNames: [ROUTES.seaside.name],
-    description: "kits",
+    description: "kits: point grey to trafalgar",
     videos: [VIDEOS.seasideKitsWb],
     positions: [
       SEASIDE_POINT_GREY_W,
@@ -251,9 +257,27 @@ export const SEASIDE = [
       STEPHENS_POINT_GREY,
       [49.27276, -123.16499],
       TRAFALGAR_POINT_GREY,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "kits - bit near trafalgar",
+    videos: [VIDEOS.seasideKitsWb, VIDEOS.valleySb],
+    videosStartAtEnd: [VIDEOS.valleySb],
+    positions: [
+      TRAFALGAR_POINT_GREY,
       [49.27338, -123.16434],
       [49.27347, -123.1643],
-      [49.27359, -123.16412],
+      EAST_OF_TRAFALGAR,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "kits - trafalgar to whyte",
+    videos: [VIDEOS.seasideKitsWb],
+    videosStartAtEnd: [VIDEOS.seasideKitsWb],
+    positions: [
+      EAST_OF_TRAFALGAR,
       [49.2736, -123.16393],
       [49.27357, -123.16206],
       [49.27355, -123.16014],
@@ -316,7 +340,7 @@ export const SEASIDE = [
   },
   {
     routeNames: [ROUTES.seaside.name],
-    description: "false creek south",
+    description: "false creek south: whyte to spyglass",
     positions: [
       SEAWALL_WHYTE,
       [49.27524, -123.14003],
@@ -494,11 +518,27 @@ export const SEASIDE = [
       [49.27078, -123.1155],
       [49.2708, -123.11538],
       SPYGLASS_SEAWALL,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "false creek south: under cambie bridge",
+    videos: [VIDEOS.yukonSb],
+    videosStartAtEnd: [VIDEOS.yukonSb],
+    positions: [
+      SPYGLASS_SEAWALL,
       [49.27085, -123.11515],
       [49.27105, -123.11491],
       [49.27112, -123.11473],
       [49.27114, -123.11467],
-      [49.2712, -123.11435],
+      EAST_OF_SPYGLASS,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "false creek south: cambie bridge to columbia-ish",
+    positions: [
+      EAST_OF_SPYGLASS,
       [49.27121, -123.11419],
       [49.27118, -123.11404],
       [49.27105, -123.1138],
@@ -520,11 +560,28 @@ export const SEASIDE = [
       [49.27168, -123.11031],
       [49.27172, -123.1102],
       [49.27175, -123.11012],
-      [49.27181, -123.11004],
+      WEST_OF_COLUMBIA,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "false creek south - little bit west of columbia",
+    videos: [VIDEOS.columbiaNb],
+    videosEndAtStart: [VIDEOS.columbiaNb],
+    positions: [
+      WEST_OF_COLUMBIA,
       [49.27215, -123.1097],
       [49.27219, -123.10962],
       [49.2722, -123.10958],
       [49.27221, -123.10947],
+      COLUMBIA_SEAWALL,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "false creek south - east of columbia",
+    positions: [
+      COLUMBIA_SEAWALL,
       [49.27219, -123.10827],
       [49.27217, -123.1082],
       [49.27169, -123.10797],
@@ -915,6 +972,7 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "half convention center",
     videos: [VIDEOS.hornbyNb],
+    videosEndAtStart: [VIDEOS.hornbyNb],
     positions: [
       MID_CONVENTION_CENTER,
       [49.28944, -123.11443],
@@ -923,8 +981,15 @@ export const SEASIDE = [
       [49.28925, -123.11432],
       [49.28893, -123.11469],
       [49.28852, -123.11514],
-      [49.28832, -123.11518],
-      BURRARD_CANADA_PLACE,
+      NORTH_OF_CANADA_PLACE,
+      NORTH_OF_CANADA_PLACE,
     ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "tip connecting to burrard",
+    videos: [VIDEOS.burrardSb, VIDEOS.hornbyNb],
+    videosStartAtStart: [VIDEOS.burrardSb],
+    positions: [NORTH_OF_CANADA_PLACE, BURRARD_CANADA_PLACE],
   },
 ];

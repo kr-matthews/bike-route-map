@@ -37,6 +37,8 @@ export const BEATTY = [
     description: "sb",
     oneWay: "required",
     videos: [VIDEOS.beattySb],
+    videosStartAtStart: [VIDEOS.beattySb],
+    videosEndAtEnd: [VIDEOS.beattySb],
     positions: [
       BEATTY_PENDER_NW,
       BEATTY_PENDER_SW,

@@ -32,6 +32,7 @@ export const POWELL = [
     description: "post-overpass",
     elevation: 0.5,
     videos: [VIDEOS.powellEb],
+    videosEndAtEnd: [VIDEOS.powellEb],
     positions: [
       OVERPASS_END,
       [49.28301, -123.07924],

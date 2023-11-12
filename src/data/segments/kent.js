@@ -27,6 +27,9 @@ const JACK_UPPAL_KENT_S = [49.20531, -123.03383];
 const RIVER_DISTRICT_CROSSING_KENT_S = [49.20504, -123.03116];
 const RIVER_DISTRICT_CROSSING_KENT_N = [49.2053, -123.03107];
 
+const WEST_OF_BORDEN = [49.20954, -123.07496];
+const EAST_OF_ONTARIO = [49.20667, -123.10586];
+
 export const KENT = [
   {
     routeNames: [ROUTES.kent.name],
@@ -53,13 +56,21 @@ export const KENT = [
   {
     routeNames: [ROUTES.kent.name],
     description: "ontario",
+    videos: [VIDEOS.ontarioNb],
     positions: [ONTARIO_KENT_S, ONTARIO_KENT_N],
+  },
+  {
+    routeNames: [ROUTES.kent.name],
+    description: "kent s: near ontario",
+    videos: [VIDEOS.ontarioNb],
+    videosStartAtEnd: [VIDEOS.ontarioNb],
+    positions: [ONTARIO_KENT_S, EAST_OF_ONTARIO],
   },
   {
     routeNames: [ROUTES.kent.name],
     description: "kent s: ontario to crompton",
     positions: [
-      ONTARIO_KENT_S,
+      EAST_OF_ONTARIO,
       [49.2068, -123.10446],
       [49.20697, -123.10246],
       [49.20768, -123.09401],
@@ -74,22 +85,39 @@ export const KENT = [
   },
   {
     routeNames: [ROUTES.kent.name],
-    videos: [VIDEOS.invernessSb],
     description: "crompton",
+    videos: [VIDEOS.invernessSb],
+    videosEndAtStart: [VIDEOS.invernessSb],
     positions: [CROMPTON_KENT_S, CROMPTON_KENT_N],
   },
   {
     routeNames: [ROUTES.kent.name],
-    description: "kent n: crompton to portside-ish",
+    description: "kent n: crompton to borden-ish",
     positions: [
       CROMPTON_KENT_N,
       [49.2092, -123.0792],
       [49.20934, -123.07757],
       [49.2094, -123.0768],
       [49.20953, -123.07527],
-      [49.20954, -123.07496],
+      WEST_OF_BORDEN,
+    ],
+  },
+  {
+    routeNames: [ROUTES.kent.name],
+    description: "kent n: little bit west of borden",
+    videos: [VIDEOS.dumfriesNb],
+    videosStartAtStart: [VIDEOS.dumfriesNb],
+    positions: [
+      WEST_OF_BORDEN,
       [49.20955, -123.07458],
       [49.20954, -123.07416],
+      BORDEN_KENT_N,
+    ],
+  },
+  {
+    routeNames: [ROUTES.kent.name],
+    description: "kent n: borden to portside-ish",
+    positions: [
       BORDEN_KENT_N,
       [49.20949, -123.07359],
       [49.20943, -123.07318],
@@ -123,9 +151,14 @@ export const KENT = [
   },
   {
     routeNames: [ROUTES.kent.name],
+    description: "kent n: elliott bit",
+    videos: [VIDEOS.sunriseNb],
+    positions: [ELLIOTT_KENT_W, ELLIOTT_KENT],
+  },
+  {
+    routeNames: [ROUTES.kent.name],
     description: "kent n: elliott to morningstar park",
     positions: [
-      ELLIOTT_KENT_W,
       ELLIOTT_KENT,
       [49.20582, -123.05638],
       [49.20583, -123.05606],
@@ -163,10 +196,14 @@ export const KENT = [
   },
   {
     routeNames: [ROUTES.kent.name],
+    description: "kent n path: elliott little bit",
+    videos: [VIDEOS.sunriseNb],
+    positions: [ELLIOTT_KENT_W, [49.20575, -123.05698], ELLIOTT_KENT_PATH],
+  },
+  {
+    routeNames: [ROUTES.kent.name],
     description: "kent n path: elliott to morningstar park",
     positions: [
-      ELLIOTT_KENT_W,
-      [49.20575, -123.05698],
       ELLIOTT_KENT_PATH,
       [49.20575, -123.05648],
       [49.20576, -123.05598],

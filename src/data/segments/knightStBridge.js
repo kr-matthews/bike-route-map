@@ -26,6 +26,8 @@ const SOUTHBOUND_ELEVATION_END_1 = [49.20732, -123.07754];
 const SOUTHBOUND_ELEVATION_START_2 = [49.20566, -123.07767];
 const SOUTHBOUND_ELEVATION_END_2 = [49.19489, -123.07759];
 
+const BRIDGEPORT_OFF_RAMP = [49.19216, -123.07924];
+
 export const KNIGHT_STREET_BRIDGE = [
   // northbound
   {
@@ -344,7 +346,21 @@ export const KNIGHT_STREET_BRIDGE = [
       [49.19233, -123.07871],
       [49.19226, -123.07889],
       [49.19221, -123.07906],
-      [49.19216, -123.07924],
+      BRIDGEPORT_OFF_RAMP,
+    ],
+  },
+  {
+    description: "after off-ramp",
+    oneWay: "recommended",
+    type: "uncomfortable",
+    hideUnlessVideo: true,
+    videos: [VIDEOS.knightStBridgeSb],
+    videosEndAtEnd: [VIDEOS.knightStBridgeSb],
+    positions: [
+      BRIDGEPORT_OFF_RAMP,
+      [49.19213, -123.07924],
+      [49.192, -123.07994],
+      [49.19198, -123.08234],
     ],
   },
 ];

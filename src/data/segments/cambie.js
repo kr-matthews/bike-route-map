@@ -22,6 +22,8 @@ import { VIDEOS } from "../videos";
 const CAMBIE_42ND_E = [49.23252, -123.11606];
 const CAMBIE_33RD_E = [49.24108, -123.11824];
 
+const SOUTHBOUND_END = [49.21019, -123.11731];
+
 export const CAMBIE = [
   // canada line station (and other) connections
   {
@@ -46,6 +48,7 @@ export const CAMBIE = [
     description: "gastown",
     oneWay: "required",
     videos: [VIDEOS.cambieGastownNb],
+    videosEndAtEnd: [VIDEOS.cambieGastownNb],
     positions: [
       CAMBIE_DUNSMUIR,
       CAMBIE_PENDER_SE,
@@ -84,8 +87,18 @@ export const CAMBIE = [
       [49.2132, -123.1172],
       CAMBIE_64TH_W,
       [49.21143, -123.1173],
-      [49.21019, -123.11731],
+      SOUTHBOUND_END,
     ],
+  },
+  {
+    routeNames: [ROUTES.cambie.name],
+    description: "post-sb",
+    oneWay: "recommended",
+    type: "unofficial",
+    hideUnlessVideo: true,
+    videos: [VIDEOS.cambieSb],
+    videosEndAtEnd: [VIDEOS.cambieSb],
+    positions: [SOUTHBOUND_END, [49.20995, -123.11725], [49.20903, -123.11729]],
   },
   {
     routeNames: [ROUTES.cambie.name],

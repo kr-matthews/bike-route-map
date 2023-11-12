@@ -9,11 +9,14 @@ import {
   RICHARDS_DUNSMUIR,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
+
+const WEST_OF_CAMBIE = [49.28084, -123.11197];
 
 export const DUNSMUIR = [
   {
     routeNames: [ROUTES.dunsmuir.name],
-    description: "downtown",
+    description: "downtown to just before cambie",
     elevation: 0.5,
     positions: [
       HORNBY_DUNSMUIR,
@@ -23,6 +26,22 @@ export const DUNSMUIR = [
       RICHARDS_DUNSMUIR,
       HOMER_DUNSMUIR,
       [49.28114, -123.11245],
+      WEST_OF_CAMBIE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.dunsmuir.name],
+    description: "just before cambie",
+    elevation: 0.5,
+    videos: [VIDEOS.cambieGastownNb],
+    videosStartAtStart: [VIDEOS.cambieGastownNb],
+    positions: [WEST_OF_CAMBIE, CAMBIE_DUNSMUIR],
+  },
+  {
+    routeNames: [ROUTES.dunsmuir.name],
+    description: "cambie to out of downtown",
+    elevation: 0.5,
+    positions: [
       CAMBIE_DUNSMUIR,
       BEATTY_DUNSMUIR_NW,
       BEATTY_DUNSMUIR_NE,

@@ -8,11 +8,14 @@ import {
   RICHARDS_SMITHE,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
+
+const NORTH_OF_HELMCKEN = [49.2772, -123.12214];
 
 export const RICHARDS = [
   {
     routeNames: [ROUTES.richards.name],
-    description: "primary",
+    description: "south of helmcken",
     positions: [
       RICHARDS_BEACH,
       [49.27345, -123.12792],
@@ -22,6 +25,20 @@ export const RICHARDS = [
       [49.27481, -123.12578],
       [49.27584, -123.12419],
       RICHARDS_HELMCKEN,
+    ],
+  },
+  {
+    routeNames: [ROUTES.richards.name],
+    description: "little bit north of helmcken",
+    videos: [VIDEOS.comoxHelmckenWb],
+    videosStartAtEnd: [VIDEOS.comoxHelmckenWb],
+    positions: [RICHARDS_HELMCKEN, NORTH_OF_HELMCKEN],
+  },
+  {
+    routeNames: [ROUTES.richards.name],
+    description: "north of helmcken",
+    positions: [
+      NORTH_OF_HELMCKEN,
       RICHARDS_NELSON,
       RICHARDS_SMITHE,
       [49.28008, -123.11783],

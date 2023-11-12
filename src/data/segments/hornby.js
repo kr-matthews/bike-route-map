@@ -20,6 +20,7 @@ export const HORNBY = [
     routeNames: [ROUTES.hornby.name],
     description: "primary",
     videos: [VIDEOS.hornbyNb],
+    videosStartAtStart: [VIDEOS.hornbyNb],
     positions: [
       HORNBY_SEABREEZE,
       [49.27521, -123.13304],
@@ -45,6 +46,14 @@ export const HORNBY = [
       [49.28591, -123.11678],
       [49.28659, -123.11574],
       [49.28704, -123.11643],
+      BURRARD_HASTINGS,
+    ],
+  },
+  {
+    routeNames: [ROUTES.hornby.name],
+    description: "north end along burrard",
+    videos: [VIDEOS.hornbyNb, VIDEOS.burrardSb],
+    positions: [
       BURRARD_HASTINGS,
       [49.2876, -123.11649],
       [49.28761, -123.11642],

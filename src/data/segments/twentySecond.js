@@ -53,6 +53,7 @@ export const TWENTY_SECOND = [
     oneWay: "required",
     type: "uncomfortable",
     videos: [VIDEOS.twentySecondEb],
+    videosEndAtEnd: [VIDEOS.twentySecondEb],
     positions: [WESTBOUND_LANE_END, [49.25071, -123.05649]],
   },
   {
@@ -60,6 +61,7 @@ export const TWENTY_SECOND = [
     description: "without lane",
     type: "uncomfortable",
     videos: [VIDEOS.twentySecondEb],
+    videosStartAtEnd: [VIDEOS.twentySecondEb],
     positions: [
       RENFREW_22ND_E,
       [49.2506, -123.03901],

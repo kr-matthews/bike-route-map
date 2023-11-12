@@ -152,6 +152,7 @@ export const RIDGEWAY = [
     routeNames: [ROUTES.ridgeway.name],
     description: "sunrise to boundary",
     videos: [VIDEOS.fortyFifthWb],
+    videosStartAtEnd: [VIDEOS.fortyFifthWb],
     positions: [
       EARLES_45TH,
       KILLARNEY_45TH,

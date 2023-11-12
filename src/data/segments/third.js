@@ -19,12 +19,14 @@ export const THIRD = [
   {
     description: "connection with seaside",
     videos: [VIDEOS.yorkEb],
+    videosStartAtEnd: [VIDEOS.yorkEb],
     positions: [STEPHENS_YORK, STEPHENS_POINT_GREY],
   },
   {
     routeNames: [ROUTES.third.name],
     description: "beach to bypass",
     videos: [VIDEOS.thirdEb],
+    videosStartAtStart: [VIDEOS.thirdEb],
     positions: [
       THIRD_SEASIDE,
       [49.27161, -123.19324],
@@ -42,6 +44,7 @@ export const THIRD = [
     routeNames: [ROUTES.third.name, ROUTES.seasideBypass.name],
     description: "primary",
     videos: [VIDEOS.thirdEb],
+    videosEndAtEnd: [VIDEOS.thirdEb],
     positions: [
       WALLACE_3RD,
       HIGHBURY_3RD,

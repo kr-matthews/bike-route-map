@@ -37,6 +37,7 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const CULLODEN_37TH_SW = [49.23649, -123.07912];
 const EAST_OF_BOUNDARY = [49.24311, -123.02253];
 
 export const MIDTOWN = [
@@ -53,7 +54,6 @@ export const MIDTOWN = [
   },
   {
     routeNames: [ROUTES.midtown.name],
-    legs: ["Vancouver"],
     description: "west of ridgeway",
     videos: [VIDEOS.midtownVancouverEb],
     positions: [
@@ -77,7 +77,6 @@ export const MIDTOWN = [
   },
   {
     routeNames: [ROUTES.midtown.name, ROUTES.ridgeway.name],
-    legs: ["Vancouver"],
     description: "west ridgeway overlap",
     videos: [VIDEOS.midtownVancouverEb],
     positions: [
@@ -94,7 +93,6 @@ export const MIDTOWN = [
   },
   {
     routeNames: [ROUTES.midtown.name, ROUTES.ridgeway.name],
-    legs: ["Vancouver"],
     description: "yew to willow",
     videos: [VIDEOS.midtownVancouverEb],
     positions: [
@@ -119,15 +117,13 @@ export const MIDTOWN = [
       ROUTES.ridgeway.name,
       ROUTES.heather.name,
     ],
-    legs: ["Vancouver"],
     description: "heather overlap",
     videos: [VIDEOS.midtownVancouverEb, VIDEOS.heatherSb],
     positions: [WILLOW_37TH, HEATHER_37TH],
   },
   {
     routeNames: [ROUTES.midtown.name, ROUTES.ridgeway.name],
-    legs: ["Vancouver"],
-    description: "heather to nanaimo",
+    description: "heather to inverness",
     videos: [VIDEOS.midtownVancouverEb],
     positions: [
       HEATHER_37TH,
@@ -162,9 +158,21 @@ export const MIDTOWN = [
       [49.23644, -123.08038],
       [49.23644, -123.08023],
       INVERNESS_37TH,
-      [49.23645, -123.07956],
-      [49.2365, -123.07929],
-      [49.23649, -123.07912],
+    ],
+  },
+  {
+    routeNames: [ROUTES.midtown.name, ROUTES.ridgeway.name],
+    description: "inverness parklet",
+    videos: [VIDEOS.midtownVancouverEb, VIDEOS.invernessSb],
+    videosStartAtEnd: [VIDEOS.invernessSb],
+    positions: [INVERNESS_37TH, [49.23649, -123.07937], CULLODEN_37TH_SW],
+  },
+  {
+    routeNames: [ROUTES.midtown.name, ROUTES.ridgeway.name],
+    description: "culloden to nanaimo",
+    videos: [VIDEOS.midtownVancouverEb],
+    positions: [
+      CULLODEN_37TH_SW,
       [49.23689, -123.07911],
       [49.23686, -123.07693],
       DUMFRIES_37TH,
@@ -186,7 +194,6 @@ export const MIDTOWN = [
   },
   {
     routeNames: [ROUTES.midtown.name],
-    legs: ["Vancouver"],
     description: "ridgeway to earles",
     videos: [VIDEOS.midtownVancouverEb],
     positions: [
@@ -200,7 +207,6 @@ export const MIDTOWN = [
   },
   {
     routeNames: [ROUTES.midtown.name, ROUTES.sunrise.name],
-    legs: [undefined, "Vancouver"],
     description: "earles",
     type: "uncomfortable",
     videos: [VIDEOS.midtownVancouverEb, VIDEOS.sunriseNb],
@@ -213,7 +219,6 @@ export const MIDTOWN = [
   },
   {
     routeNames: [ROUTES.midtown.name],
-    legs: ["Vancouver"],
     description: "29th",
     type: "uncomfortable",
     videos: [VIDEOS.midtownVancouverEb],
@@ -228,7 +233,6 @@ export const MIDTOWN = [
   },
   {
     routeNames: [ROUTES.midtown.name],
-    legs: ["Vancouver"],
     description: "east portion",
     videos: [VIDEOS.midtownVancouverEb],
     positions: [
@@ -248,6 +252,7 @@ export const MIDTOWN = [
     routeNames: [ROUTES.midtown.name],
     description: "beginning of boundary",
     videos: [VIDEOS.midtownVancouverEb],
+    videosEndAtEnd: [VIDEOS.midtownVancouverEb],
     positions: [BOUNDARY_MOSCROP, EAST_OF_BOUNDARY],
   },
   {

@@ -8,10 +8,12 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const GARDEN_PANDORA = [49.28301, -123.05779];
+
 export const PANDORA = [
   {
     routeNames: [ROUTES.pandora.name],
-    description: "primary",
+    description: "west of garden",
     videos: [VIDEOS.pandoraEb],
     positions: [
       MCLEAN_FRANKLIN,
@@ -23,7 +25,22 @@ export const PANDORA = [
       [49.28303, -123.06362],
       LAKEWOOD_PANDORA,
       [49.283, -123.05973],
-      [49.28301, -123.05779],
+      GARDEN_PANDORA,
+    ],
+  },
+  {
+    routeNames: [ROUTES.pandora.name],
+    description: "garden to nanaimo",
+    videos: [VIDEOS.pandoraEb, VIDEOS.nanaimoSb],
+    videosStartAtStart: [VIDEOS.nanaimoSb],
+    positions: [GARDEN_PANDORA, NANAIMO_PANDORA_W],
+  },
+  {
+    routeNames: [ROUTES.pandora.name],
+    description: "east of nanaimo",
+    videos: [VIDEOS.pandoraEb],
+    videosEndAtEnd: [VIDEOS.pandoraEb],
+    positions: [
       NANAIMO_PANDORA_W,
       NANAIMO_PANDORA_E,
       [49.28299, -123.05457],

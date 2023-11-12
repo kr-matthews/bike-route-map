@@ -25,6 +25,8 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const WEST_OF_HIGHBURY = [49.26528, -123.18939];
+
 export const OFF_BROADWAY = [
   {
     description: "yew connection with 10th",
@@ -34,6 +36,7 @@ export const OFF_BROADWAY = [
     routeNames: [ROUTES.offBroadway.name, ROUTES.ridgeway.name],
     description: "ridgeway overlap",
     videos: [VIDEOS.offBroadwayWb],
+    videosEndAtStart: [VIDEOS.offBroadwayWb],
     positions: [
       BLANCA_8TH_E,
       [49.26563, -123.2121],
@@ -44,7 +47,7 @@ export const OFF_BROADWAY = [
   },
   {
     routeNames: [ROUTES.offBroadway.name],
-    description: "west of heather",
+    description: "west of highbury",
     videos: [VIDEOS.offBroadwayWb],
     positions: [
       DISCOVERY_8TH,
@@ -59,6 +62,21 @@ export const OFF_BROADWAY = [
       [49.26529, -123.19335],
       [49.26533, -123.19323],
       [49.26533, -123.19309],
+      WEST_OF_HIGHBURY,
+    ],
+  },
+  {
+    routeNames: [ROUTES.offBroadway.name],
+    description: "little bit west of highbury",
+    videos: [VIDEOS.offBroadwayWb, VIDEOS.highburyNb],
+    videosStartAtStart: [VIDEOS.highburyNb],
+    positions: [WEST_OF_HIGHBURY, HIGHBURY_8TH],
+  },
+  {
+    routeNames: [ROUTES.offBroadway.name],
+    description: "highbury to heather",
+    videos: [VIDEOS.offBroadwayWb],
+    positions: [
       HIGHBURY_8TH,
       [49.26524, -123.18582],
       [49.2652, -123.18376],
@@ -153,6 +171,7 @@ export const OFF_BROADWAY = [
     routeNames: [ROUTES.offBroadway.name],
     description: "cvg/off broadway east",
     videos: [VIDEOS.offBroadwayWb],
+    videosStartAtEnd: [VIDEOS.offBroadwayWb],
     positions: [
       GRANDVIEW_8TH_N,
       [49.26325, -123.06818],

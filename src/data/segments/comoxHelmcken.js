@@ -19,6 +19,8 @@ export const COMOX_HELMCKEN = [
     routeNames: [ROUTES.comoxHelmcken.name],
     description: "official portion",
     videos: [VIDEOS.comoxHelmckenEb, VIDEOS.comoxHelmckenWb],
+    videosStartAtStart: [VIDEOS.comoxHelmckenEb],
+    videosEndAtStart: [VIDEOS.comoxHelmckenWb],
     positions: [
       PARK_COMOX,
       [49.29182, -123.14449],
@@ -64,6 +66,7 @@ export const COMOX_HELMCKEN = [
     description: "richards to homer",
     type: "unofficial",
     videos: [VIDEOS.comoxHelmckenEb],
+    videosEndAtEnd: [VIDEOS.comoxHelmckenEb],
     positions: [RICHARDS_HELMCKEN, HOMER_HELMCKEN],
   },
   {

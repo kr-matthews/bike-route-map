@@ -20,6 +20,8 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const NORTH_OF_ONTARIO_33RD = [49.24148, -123.10533];
+
 export const ONTARIO = [
   {
     routeNames: [ROUTES.ontario.name],
@@ -44,7 +46,7 @@ export const ONTARIO = [
   },
   {
     routeNames: [ROUTES.ontario.name],
-    description: "58th to false creek",
+    description: "58th to 33rd",
     videos: [VIDEOS.ontarioNb],
     positions: [
       ONTARIO_58TH,
@@ -61,6 +63,21 @@ export const ONTARIO = [
       [49.23551, -123.10556],
       ONTARIO_37TH,
       ONTARIO_33RD,
+    ],
+  },
+  {
+    routeNames: [ROUTES.ontario.name],
+    description: "just north of 33rd",
+    videos: [VIDEOS.ontarioNb, VIDEOS.twentyNinthWb],
+    videosStartAtEnd: [VIDEOS.twentyNinthWb],
+    positions: [ONTARIO_33RD, NORTH_OF_ONTARIO_33RD],
+  },
+  {
+    routeNames: [ROUTES.ontario.name],
+    description: "just north of 33rd to false creek",
+    videos: [VIDEOS.ontarioNb],
+    positions: [
+      NORTH_OF_ONTARIO_33RD,
       ONTARIO_30TH,
       [49.24453, -123.10519],
       [49.24605, -123.10512],

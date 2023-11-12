@@ -1,5 +1,6 @@
 import { BARNET_RIDGE, BOUNDARY_ADANAC, CLIFF_UNION } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const BARNET_INLET = [49.28822, -122.94958];
 
@@ -9,13 +10,25 @@ const HASTINGS_OVERPASS_N = [49.28086, -122.96047];
 const HASTINGS_OVERPASS_S = [49.27997, -122.96001];
 const OVERPASS_ADJ_S = [49.28002, -122.96012];
 
+const EAST_OF_BOUNDARY_ADANAC = [49.27756, -123.0221];
+
 export const FRANCES_UNION = [
+  {
+    routeNames: [ROUTES.francesUnion.name],
+    description: "just east of boundary",
+    videos: [VIDEOS.adanacWb],
+    videosStartAtEnd: [VIDEOS.adanacWb],
+    positions: [
+      BOUNDARY_ADANAC,
+      [49.27757, -123.02325],
+      EAST_OF_BOUNDARY_ADANAC,
+    ],
+  },
   {
     routeNames: [ROUTES.francesUnion.name],
     description: "primary",
     positions: [
-      BOUNDARY_ADANAC,
-      [49.27757, -123.02325],
+      EAST_OF_BOUNDARY_ADANAC,
       [49.27755, -123.0211],
       [49.27752, -123.01867],
       [49.2793, -123.01865],

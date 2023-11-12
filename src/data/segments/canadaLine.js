@@ -47,8 +47,15 @@ export const CANADA_LINE = [
       [49.19678, -123.11946],
       [49.19605, -123.12195],
       GREAT_CANADIAN_VAN_HORNE_NE,
-      GREAT_CANADIAN_VAN_HORNE_NW,
     ],
+  },
+  {
+    description: "road: van horne crossing great canadian way",
+    oneWay: "required",
+    hideArrows: true,
+    videos: [VIDEOS.gardenCitySb, VIDEOS.northArmBridgeSb],
+    videosStartAtStart: [VIDEOS.gardenCitySb],
+    positions: [GREAT_CANADIAN_VAN_HORNE_NE, GREAT_CANADIAN_VAN_HORNE_NW],
   },
   {
     description: "cross seas island way south",
@@ -64,6 +71,7 @@ export const CANADA_LINE = [
     description: "road: great canadian way nb to van horne",
     oneWay: "required",
     videos: [VIDEOS.gardenCityNb],
+    videosEndAtEnd: [VIDEOS.gardenCityNb],
     positions: [
       GARDEN_CITY_SEA_ISLAND_SE,
       GREAT_CANADIAN_SEA_ISLAND_NE,
@@ -311,6 +319,7 @@ export const CANADA_LINE = [
   {
     description: "63rd connection to ontario",
     videos: [VIDEOS.sixtySeventhPlusWb],
+    videosStartAtEnd: [VIDEOS.sixtySeventhPlusWb],
     positions: [
       CAMBIE_PATH_63RD,
       [49.21317, -123.11462],

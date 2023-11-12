@@ -16,6 +16,7 @@ export const KEEFER = [
     description: "west",
     type: "uncomfortable",
     videos: [VIDEOS.keeferEb],
+    videosStartAtStart: [VIDEOS.keeferEb],
     positions: [
       CARRALL_KEEFER_W,
       CARRALL_KEEFER_E,
@@ -37,6 +38,7 @@ export const KEEFER = [
     routeNames: [ROUTES.keefer.name],
     description: "east",
     videos: [VIDEOS.keeferEb],
+    videosEndAtEnd: [VIDEOS.keeferEb],
     positions: [
       GORE_KEEFER,
       [49.27944, -123.09719],

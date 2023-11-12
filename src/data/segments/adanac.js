@@ -49,8 +49,9 @@ export const ADANAC = [
   },
   {
     routeNames: [ROUTES.adanac.name],
-    description: "east end merged",
+    description: "west end merged",
     videos: [VIDEOS.adanacWb],
+    videosEndAtStart: [VIDEOS.adanacWb],
     positions: [EXPO_UNION, UNION_SPLIT],
   },
   {

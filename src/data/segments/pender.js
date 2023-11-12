@@ -21,6 +21,8 @@ export const PENDER = [
     description: "eb",
     oneWay: "required",
     videos: [VIDEOS.penderEb],
+    videosStartAtStart: [VIDEOS.penderEb],
+    videosEndAtEnd: [VIDEOS.penderEb],
     positions: [
       CAMBIE_PENDER_SE,
       [49.28137, -123.10963],

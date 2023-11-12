@@ -7,6 +7,7 @@ export const NICOLA = [
     routeNames: [ROUTES.nicola.name],
     description: "primary",
     videos: [VIDEOS.nicolaNb],
+    videosEndAtEnd: [VIDEOS.nicolaNb],
     positions: [
       NICOLA_HARO,
       [49.28869, -123.13111],

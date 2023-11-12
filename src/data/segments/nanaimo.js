@@ -10,6 +10,8 @@ import { VIDEOS } from "../videos";
 const NANAIMO_CHARLES_E = [49.27295, -123.05651];
 const NANAIMO_CHARLES_W = [49.27295, -123.05669];
 
+const NANAIMO_2ND_W = [49.26863, -123.05672];
+
 export const NANAIMO = [
   {
     description: "charles crossing",
@@ -69,7 +71,15 @@ export const NANAIMO = [
       [49.27119, -123.05668],
       [49.26961, -123.05671],
       [49.26936, -123.05671],
-      [49.26863, -123.05672],
+      NANAIMO_2ND_W,
     ],
+  },
+  {
+    routeNames: [ROUTES.nanaimo.name],
+    description: "leaving via 2nd",
+    hideUnlessVideo: true,
+    videos: [VIDEOS.nanaimoSb],
+    videosEndAtStart: [VIDEOS.nanaimoSb],
+    positions: [[49.26861, -123.05803], [49.2686, -123.05672], NANAIMO_2ND_W],
   },
 ];

@@ -17,6 +17,7 @@ export const YUKON = [
     routeNames: [ROUTES.yukon.name],
     description: "29th to king edward",
     videos: [VIDEOS.yukonSb],
+    videosEndAtStart: [VIDEOS.yukonSb],
     positions: [
       YUKON_29TH,
       [49.24697, -123.11228],

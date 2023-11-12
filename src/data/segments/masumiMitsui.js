@@ -23,6 +23,8 @@ export const MASUMI_MITSUI_GREENWAY = [
     routeNames: [ROUTES.masumiMitsui.name],
     description: "angus to ontario",
     videos: [VIDEOS.masumiMitsuiEb, VIDEOS.masumiMitsuiWb],
+    videosStartAtStart: [VIDEOS.masumiMitsuiEb],
+    videosEndAtStart: [VIDEOS.masumiMitsuiWb],
     positions: [
       ANGUS_59TH,
       [49.21768, -123.14384],
@@ -106,6 +108,7 @@ export const MASUMI_MITSUI_GREENWAY = [
     description: "eastbound branch",
     oneWay: "recommended",
     videos: [VIDEOS.masumiMitsuiEb],
+    videosEndAtEnd: [VIDEOS.masumiMitsuiEb],
     positions: [
       ASHBURN_UPLAND,
       [49.21734, -123.05541],
@@ -122,6 +125,7 @@ export const MASUMI_MITSUI_GREENWAY = [
     description: "westbound branch 57th",
     oneWay: "recommended",
     videos: [VIDEOS.masumiMitsuiWb],
+    videosStartAtStart: [VIDEOS.masumiMitsuiWb],
     positions: [VIVIAN_57TH, [49.21806, -123.05126], ELLIOTT_57TH],
   },
   {

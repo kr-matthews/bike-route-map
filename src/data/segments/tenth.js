@@ -24,6 +24,8 @@ export const TENTH = [
     routeNames: [ROUTES.tenth.name],
     description: "west of hospital",
     videos: [VIDEOS.tenthEb, VIDEOS.tenthWb],
+    videosStartAtStart: [VIDEOS.tenthEb],
+    videosEndAtStart: [VIDEOS.tenthWb],
     positions: [
       TRAFALGAR_10TH,
       [49.26302, -123.16242],
@@ -119,6 +121,8 @@ export const TENTH = [
     routeNames: [ROUTES.tenth.name],
     description: "windsor to victoria",
     videos: [VIDEOS.tenthEb, VIDEOS.tenthWb],
+    videosStartAtEnd: [VIDEOS.tenthWb],
+    videosEndAtEnd: [VIDEOS.tenthEb],
     positions: [
       GLEN_10TH,
       [49.26145, -123.07944],

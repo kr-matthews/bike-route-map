@@ -18,11 +18,14 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const NANAIMO_47TH = [49.22759, -123.05908];
+
 export const FORTY_FIFTH = [
   {
     routeNames: [ROUTES.fortyFifth.name, ROUTES.balaclava.name],
     description: "balaclava",
     videos: [VIDEOS.fortyFifthWb],
+    videosEndAtStart: [VIDEOS.fortyFifthWb],
     positions: [BALACLAVA_45TH, CARNARVON_45TH],
   },
   {
@@ -90,7 +93,7 @@ export const FORTY_FIFTH = [
   },
   {
     routeNames: [ROUTES.fortyFifth.name],
-    description: "inverness to ridgeway",
+    description: "inverness to nanaimo",
     videos: [VIDEOS.fortyFifthWb],
     positions: [
       INVERNESS_47TH,
@@ -105,9 +108,20 @@ export const FORTY_FIFTH = [
       [49.22761, -123.06575],
       [49.22767, -123.06559],
       [49.22762, -123.06227],
-      [49.22759, -123.05908],
-      NANAIMO_46TH,
-      NANAIMO_45TH,
+      NANAIMO_47TH,
     ],
+  },
+  {
+    routeNames: [ROUTES.fortyFifth.name],
+    description: "nanaimo: 47 to 46",
+    videos: [VIDEOS.fortyFifthWb, VIDEOS.killarneyEb],
+    videosStartAtStart: [VIDEOS.killarneyEb],
+    positions: [NANAIMO_47TH, NANAIMO_46TH],
+  },
+  {
+    routeNames: [ROUTES.fortyFifth.name],
+    description: "nanaimo: 46 to 45",
+    videos: [VIDEOS.fortyFifthWb],
+    positions: [NANAIMO_46TH, NANAIMO_45TH],
   },
 ];

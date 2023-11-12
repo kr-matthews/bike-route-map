@@ -11,18 +11,33 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const INVERNESS_63RD = [49.21286, -123.07987];
+
 export const INVERNESS = [
   {
     routeNames: [ROUTES.inverness.name],
+    description: "crompton & se marine",
     videos: [VIDEOS.invernessSb],
-    description: "kent to 45th",
+    positions: [CROMPTON_KENT_N, [49.21102, -123.08071], INVERNESS_MARINE],
+  },
+  {
+    routeNames: [ROUTES.inverness.name],
+    description: "marine to 63rd",
+    videos: [VIDEOS.invernessSb, VIDEOS.knightStBridgeSb],
+    videosStartAtEnd: [VIDEOS.knightStBridgeSb],
     positions: [
-      CROMPTON_KENT_N,
-      [49.21102, -123.08071],
       INVERNESS_MARINE,
       INVERNESS_64TH_ALLEY,
       [49.21197, -123.0799],
-      [49.21286, -123.07987],
+      INVERNESS_63RD,
+    ],
+  },
+  {
+    routeNames: [ROUTES.inverness.name],
+    description: "63rd to 45th",
+    videos: [VIDEOS.invernessSb],
+    positions: [
+      INVERNESS_63RD,
       [49.21328, -123.07988],
       [49.2137, -123.08015],
       [49.21466, -123.08013],

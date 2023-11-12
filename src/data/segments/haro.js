@@ -9,11 +9,14 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const EAST_OF_NICOLA = [49.28772, -123.13177];
+
 export const HARO = [
   {
     routeNames: [ROUTES.haro.name],
-    description: "primary",
+    description: "west of nicola",
     videos: [VIDEOS.haroWb],
+    videosEndAtStart: [VIDEOS.haroWb],
     positions: [
       LAGOON_HARO,
       [49.29316, -123.14024],
@@ -27,6 +30,22 @@ export const HARO = [
       [49.28976, -123.13492],
       CARDERO_HARO,
       NICOLA_HARO,
+    ],
+  },
+  {
+    routeNames: [ROUTES.haro.name],
+    description: "near nicola",
+    videos: [VIDEOS.haroWb, VIDEOS.nicolaNb],
+    videosStartAtEnd: [VIDEOS.nicolaNb],
+    positions: [NICOLA_HARO, EAST_OF_NICOLA],
+  },
+  {
+    routeNames: [ROUTES.haro.name],
+    description: "east of nicola",
+    videos: [VIDEOS.haroWb],
+    videosStartAtEnd: [VIDEOS.haroWb],
+    positions: [
+      EAST_OF_NICOLA,
       [49.28722, -123.131],
       [49.28632, -123.12962],
       BUTE_HARO,

@@ -12,6 +12,8 @@ export const WALES_DUCHESS = [
     routeNames: [ROUTES.walesDuchess.name],
     description: "primary",
     videos: [VIDEOS.walesDuchessSb],
+    videosStartAtEnd: [VIDEOS.walesDuchessSb],
+    videosEndAtStart: [VIDEOS.walesDuchessSb],
     positions: [
       WALES_46TH,
       WALES_45TH,

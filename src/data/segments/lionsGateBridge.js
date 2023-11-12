@@ -85,6 +85,7 @@ export const LIONS_GATE_BRIDGE = [
     description: "melville",
     oneWay: "required",
     videos: [VIDEOS.lionsGateBridgeNb],
+    videosStartAtStart: [VIDEOS.lionsGateBridgeNb],
     positions: [
       HORNBY_DUNSMUIR,
       BURRARD_DUNSMUIR,
@@ -325,7 +326,8 @@ export const LIONS_GATE_BRIDGE = [
     description: "southbound lagoon overpass",
     oneWay: "required",
     elevation: 1,
-    videos: [VIDEOS.lionsGateBridgeSb],
+    videos: [VIDEOS.lionsGateBridgeSb, VIDEOS.chilcoSb],
+    videosStartAtStart: [VIDEOS.chilcoSb],
     positions: [
       SOUTHBOUND_LAGOON_OVERPASS_START,
       [49.29478, -123.13698],
@@ -337,13 +339,14 @@ export const LIONS_GATE_BRIDGE = [
     description: "southbound lagoon overpass to chilco",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.lionsGateBridgeSb],
+    videos: [VIDEOS.lionsGateBridgeSb, VIDEOS.chilcoSb],
     positions: [SOUTHBOUND_LAGOON_OVERPASS_END, CHILCO_GEORGIA_S],
   },
   {
     description: "georgia eastbound",
     oneWay: "required",
     videos: [VIDEOS.lionsGateBridgeSb],
+    videosEndAtEnd: [VIDEOS.lionsGateBridgeSb],
     positions: [
       CHILCO_GEORGIA_S,
       [49.29353, -123.13537],
@@ -368,6 +371,7 @@ export const LIONS_GATE_BRIDGE = [
   {
     description: "connection to spirit",
     videos: [VIDEOS.lionsGateBridgeNb],
+    videosEndAtEnd: [VIDEOS.lionsGateBridgeNb],
     positions: [
       NORTHBOUND_OFF_RAMP_SPLIT,
       [49.3246, -123.12935],
@@ -380,6 +384,8 @@ export const LIONS_GATE_BRIDGE = [
   {
     description: "connection from spirit",
     videos: [VIDEOS.lionsGateBridgeSb],
+    // !!! actually starts a bit early (but spirit not added yet)
+    videosStartAtEnd: [VIDEOS.lionsGateBridgeSb],
     positions: [
       SOUTHBOUND_ON_RAMP_MERGE,
       [49.32492, -123.13036],

@@ -17,6 +17,7 @@ export const MOSAIC = [
   {
     description: "trout lake alley",
     videos: [VIDEOS.mosaicSb],
+    videosEndAtEnd: [VIDEOS.mosaicSb],
     positions: [
       JOHN_HENDRY_PARK_14TH,
       [49.25816, -123.06529],
@@ -78,8 +79,9 @@ export const MOSAIC = [
   },
   {
     routeNames: [ROUTES.mosaic.name],
-    description: "pandora",
+    description: "north tip",
     videos: [VIDEOS.mosaicSb, VIDEOS.pandoraEb],
+    videosStartAtEnd: [VIDEOS.mosaicSb, VIDEOS.pandoraEb],
     positions: [MCLEAN_FRANKLIN, [49.28321, -123.07408], MCLEAN_POWELL],
   },
 ];

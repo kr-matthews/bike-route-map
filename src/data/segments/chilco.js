@@ -27,6 +27,7 @@ export const CHILCO = [
     routeNames: [ROUTES.chilco.name],
     description: "primary",
     videos: [VIDEOS.chilcoSb],
+    videosEndAtStart: [VIDEOS.chilcoSb],
     positions: [
       CHILCO_BEACH,
       [49.28988, -123.14369],

@@ -17,11 +17,17 @@ import { VIDEOS } from "../videos";
 export const DUNBAR = [
   {
     routeNames: [ROUTES.dunbar.name],
+    description: "crossing marine",
+    type: "uncomfortable",
+    positions: [DUNBAR_MARINE_S, DUNBAR_MARINE_N],
+  },
+  {
+    routeNames: [ROUTES.dunbar.name],
     description: "marine to 41st",
     type: "uncomfortable",
     videos: [VIDEOS.dunbarNb],
+    videosStartAtStart: [VIDEOS.dunbarNb],
     positions: [
-      DUNBAR_MARINE_S,
       DUNBAR_MARINE_N,
       [49.23284, -123.18538],
       [49.23477, -123.18534],
@@ -84,6 +90,7 @@ export const DUNBAR = [
     description: "16th westbound connection west",
     oneWay: "required",
     videos: [VIDEOS.dunbarNb],
+    videosEndAtEnd: [VIDEOS.dunbarNb],
     positions: [DUNBAR_16TH_N, [49.25802, -123.18605]],
   },
 ];

@@ -52,6 +52,9 @@ const UNIVERSITY_NB_LANE_START = [49.1888, -122.84979];
 const UNIVERSITY_NB_LANE_END = [49.19156, -122.85037];
 const UNIVERSITY_OLD_YALE = [49.18587, -122.8517];
 
+const NORTH_OF_GLADSTONE = [49.25029, -123.06026];
+const SOUTH_OF_NORTH_GRANDVIEW = [49.2599, -123.06208];
+
 export const BC_PARKWAY = [
   // vancouver alternates
   {
@@ -111,11 +114,23 @@ export const BC_PARKWAY = [
   // vancouver
   {
     routeNames: [ROUTES.bcParkway.name],
-    description: "lakewood to nanaimo split",
+    description: "little bit after lakewood",
+    videos: [
+      VIDEOS.bcParkwayVancouverEb,
+      VIDEOS.bcParkwayVancouverWb,
+      VIDEOS.lakewoodNb,
+    ],
+    videosStartAtStart: [VIDEOS.bcParkwayVancouverEb],
+    videosEndAtStart: [VIDEOS.bcParkwayVancouverWb],
+    videosStartAtEnd: [VIDEOS.lakewoodNb],
+    positions: [LAKEWOOD_GRANDVIEW, SOUTH_OF_NORTH_GRANDVIEW],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "most of lakewood to gladstone",
     videos: [VIDEOS.bcParkwayVancouverEb, VIDEOS.bcParkwayVancouverWb],
     positions: [
-      LAKEWOOD_GRANDVIEW,
-      [49.2595, -123.06208],
+      SOUTH_OF_NORTH_GRANDVIEW,
       [49.25859, -123.06209],
       LAKEWOOD_JOHN_HENDRY_PARK,
       [49.25791, -123.06212],
@@ -139,7 +154,29 @@ export const BC_PARKWAY = [
       [49.25307, -123.05982],
       [49.25248, -123.06014],
       [49.25218, -123.05909],
-      [49.25029, -123.06026],
+      NORTH_OF_GLADSTONE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "little bit north of gladstone",
+    videos: [
+      VIDEOS.bcParkwayVancouverEb,
+      VIDEOS.bcParkwayVancouverWb,
+      VIDEOS.gladstoneNb,
+    ],
+    videosEndAtStart: [VIDEOS.gladstoneNb],
+    positions: [
+      NORTH_OF_GLADSTONE,
+      [49.24999, -123.05988],
+      GLADSTONE_BC_PARKWAY,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "gladstone to nanaimo split",
+    videos: [VIDEOS.bcParkwayVancouverEb, VIDEOS.bcParkwayVancouverWb],
+    positions: [
       GLADSTONE_BC_PARKWAY,
       [49.24971, -123.05944],
       NANAIMO_BC_PARKWAY_SPLIT_WEST,
@@ -203,6 +240,8 @@ export const BC_PARKWAY = [
     routeNames: [ROUTES.bcParkway.name],
     description: "sunrise to boundary",
     videos: [VIDEOS.bcParkwayVancouverEb, VIDEOS.bcParkwayVancouverWb],
+    videosEndAtEnd: [VIDEOS.bcParkwayVancouverEb],
+    videosStartAtEnd: [VIDEOS.bcParkwayVancouverWb],
     positions: [
       EARLES_VANNESS,
       [49.24263, -123.04252],
@@ -266,6 +305,7 @@ export const BC_PARKWAY = [
     routeNames: [ROUTES.bcParkway.name],
     description: "west of central park perimeter trail",
     videos: [VIDEOS.bcParkwayBurnabyEb],
+    videosStartAtStart: [VIDEOS.bcParkwayBurnabyEb],
     positions: [
       BOUNDARY_VANNESS,
       BOUNDARY_VANNESS_E,
@@ -400,6 +440,7 @@ export const BC_PARKWAY = [
     description: "southridge overpass to new westminster",
     elevation: 0.5,
     videos: [VIDEOS.bcParkwayBurnabyEb],
+    videosEndAtEnd: [VIDEOS.bcParkwayBurnabyEb],
     positions: [
       SOUTHRIDGE_OVERPASS_S,
       [49.20427, -122.95913],

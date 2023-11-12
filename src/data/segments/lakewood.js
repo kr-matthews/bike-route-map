@@ -8,10 +8,12 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const LAKEWOOD_DUNDAS = [49.28481, -123.06164];
+
 export const LAKEWOOD = [
   {
     routeNames: [ROUTES.lakewood.name],
-    description: "primary",
+    description: "south of dundas",
     videos: [VIDEOS.lakewoodNb],
     positions: [
       LAKEWOOD_GRANDVIEW,
@@ -32,7 +34,16 @@ export const LAKEWOOD = [
       [49.28025, -123.06173],
       [49.28209, -123.06168],
       LAKEWOOD_PANDORA,
-      [49.28481, -123.06164],
+      LAKEWOOD_DUNDAS,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lakewood.name],
+    description: "north of dundas",
+    videos: [VIDEOS.lakewoodNb, VIDEOS.portsideEb],
+    videosStartAtStart: [VIDEOS.portsideEb],
+    positions: [
+      LAKEWOOD_DUNDAS,
       [49.28567, -123.06164],
       [49.2857, -123.06168],
       [49.28571, -123.06198],

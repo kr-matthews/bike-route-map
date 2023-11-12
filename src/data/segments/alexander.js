@@ -6,6 +6,8 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const NORTH_OF_POWELL = [49.28347, -123.08705];
+
 export const ALEXANDER = [
   {
     routeNames: [ROUTES.alexander.name],
@@ -25,8 +27,15 @@ export const ALEXANDER = [
       [49.28391, -123.08945],
       [49.28389, -123.0883],
       [49.28356, -123.08711],
-      [49.28347, -123.08705],
-      HAWKS_POWELL,
+      NORTH_OF_POWELL,
     ],
+  },
+  {
+    routeNames: [ROUTES.alexander.name],
+    description: "hawks",
+    videos: [VIDEOS.alexanderEb, VIDEOS.powellEb],
+    videosEndAtEnd: [VIDEOS.alexanderEb],
+    videosStartAtStart: [VIDEOS.powellEb],
+    positions: [NORTH_OF_POWELL, HAWKS_POWELL],
   },
 ];

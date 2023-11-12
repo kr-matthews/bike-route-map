@@ -30,6 +30,7 @@ export const SECOND_NARROWS_BRIDGE = [
     description: "skeena pre-tunnel",
     elevation: -0.5,
     videos: [VIDEOS.portsideEb, VIDEOS.cassiarSb],
+    videosEndAtStart: [VIDEOS.portsideEb],
     positions: [
       CASSIAR_SKEENA_PATH,
       [49.28795, -123.02851],

@@ -39,6 +39,9 @@ const SPANISH_BANKS_CONNECTION_1 = [49.27726, -123.22283];
 const SPANISH_BANKS_CONNECTION_2 = [49.27596, -123.2151];
 const SPANISH_BANKS_CONNECTION_3 = [49.27483, -123.20574];
 
+const WEST_OF_MARINE_MARINE = [49.25727, -123.25394];
+const WEST_OF_CAMOSUN = [49.23506, -123.1977];
+
 export const MARINE = [
   // sw marine
   {
@@ -105,6 +108,7 @@ export const MARINE = [
     type: "uncomfortable",
     oneWay: "required",
     videos: [VIDEOS.swMarineEb, VIDEOS.arthurLaingSb],
+    videosEndAtEnd: [VIDEOS.swMarineEb],
     positions: [
       GRANVILLE_MARINE,
       [49.20507, -123.14074],
@@ -237,7 +241,7 @@ export const MARINE = [
   },
   {
     routeNames: [ROUTES.marine.name],
-    description: "sw marine eb primary",
+    description: "sw marine eb to camosun-ish",
     oneWay: "required",
     videos: [VIDEOS.swMarineEb],
     positions: [
@@ -285,8 +289,23 @@ export const MARINE = [
       [49.23716, -123.20546],
       [49.23607, -123.20145],
       [49.23563, -123.19981],
-      [49.23506, -123.1977],
-      CAMOSUN_MARINE_S,
+      WEST_OF_CAMOSUN,
+    ],
+  },
+  {
+    routeNames: [ROUTES.marine.name],
+    description: "sw marine eb near camosun",
+    oneWay: "required",
+    videos: [VIDEOS.swMarineEb, VIDEOS.midtownVancouverEb],
+    videosStartAtStart: [VIDEOS.midtownVancouverEb],
+    positions: [WEST_OF_CAMOSUN, CAMOSUN_MARINE_S, MARINE_41ST_SW],
+  },
+  {
+    routeNames: [ROUTES.marine.name],
+    description: "sw marine eb from camosun",
+    oneWay: "required",
+    videos: [VIDEOS.swMarineEb],
+    positions: [
       MARINE_41ST_SW,
       [49.23457, -123.1962],
       [49.23436, -123.19563],
@@ -347,6 +366,7 @@ export const MARINE = [
     description: "just beyond arbutus greenway eb",
     oneWay: "required",
     videos: [VIDEOS.swMarineEb, VIDEOS.arthurLaingSb],
+    videosStartAtStart: [VIDEOS.arthurLaingSb],
     positions: [ARBUTUS_GREENWAY_MARINE_S, EAST_BLVD_MARINE_S],
   },
   {
@@ -372,13 +392,23 @@ export const MARINE = [
   },
   {
     routeNames: [ROUTES.marine.name],
-    description: "ubc to west mall-ish",
+    description: "just west of marine-marine",
     type: "uncomfortable",
+    videos: [VIDEOS.swMarineEb],
+    videosStartAtEnd: [VIDEOS.swMarineEb],
     positions: [
       MARINE_MARINE,
       [49.25694, -123.25349],
       [49.25707, -123.25369],
-      [49.25727, -123.25394],
+      WEST_OF_MARINE_MARINE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.marine.name],
+    description: "ubc-ish to west mall-ish",
+    type: "uncomfortable",
+    positions: [
+      WEST_OF_MARINE_MARINE,
       [49.25751, -123.25411],
       [49.25775, -123.25422],
       [49.25793, -123.25428],

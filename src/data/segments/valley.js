@@ -82,6 +82,7 @@ export const VALLEY = [
   {
     description: "connection along 33rd east of valley",
     videos: [VIDEOS.valleySb],
+    videosEndAtEnd: [VIDEOS.valleySb],
     positions: [VALLEY_33RD, ARBUTUS_GREENWAY_33RD, ANGUS_33RD],
   },
 ];

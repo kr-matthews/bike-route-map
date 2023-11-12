@@ -110,6 +110,7 @@ export const SEASIDE_BYPASS = [
   {
     description: "chestnut bypass",
     videos: [VIDEOS.yorkEb],
+    videosEndAtStart: [VIDEOS.yorkEb],
     positions: [CHESTNUT_1ST, CHESTNUT_YORK],
   },
   {
@@ -806,6 +807,7 @@ export const SEASIDE_BYPASS = [
   {
     description: "homer to seaside",
     videos: [VIDEOS.homerNb],
+    videosStartAtEnd: [VIDEOS.homerNb],
     positions: [HOMER_BEACH, SEAWALL_BEACH],
   },
   {

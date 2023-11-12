@@ -15,6 +15,7 @@ export const WATERFRONT = [
     type: "unofficial",
     elevation: -0.5,
     videos: [VIDEOS.waterfrontEb],
+    videosStartAtStart: [VIDEOS.waterfrontEb],
     positions: [SEAWALL_WATERFRONT, UNDERGROUND_W],
   },
   {
@@ -91,6 +92,7 @@ export const WATERFRONT = [
     type: "unofficial",
     elevation: 0.5,
     videos: [VIDEOS.waterfrontEb],
+    videosEndAtEnd: [VIDEOS.waterfrontEb],
     positions: [MAIN_ELEVATED_S, MAIN_ALEXANDER],
   },
 ];

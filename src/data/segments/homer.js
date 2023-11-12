@@ -59,6 +59,7 @@ export const HOMER = [
     type: "unofficial",
     oneWay: "required",
     videos: [VIDEOS.homerNb],
+    videosEndAtEnd: [VIDEOS.homerNb],
     positions: [HOMER_ROBSON, HOMER_DUNSMUIR],
   },
 ];

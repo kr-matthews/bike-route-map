@@ -7,6 +7,7 @@ export const GLADSTONE = [
     routeNames: [ROUTES.gladstone.name],
     description: "primary",
     videos: [VIDEOS.gladstoneNb],
+    videosStartAtStart: [VIDEOS.gladstoneNb],
     positions: [
       GLADSTONE_38TH,
       [49.23747, -123.06208],

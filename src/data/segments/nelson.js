@@ -17,6 +17,7 @@ export const NELSON = [
     type: "unofficial",
     videos: [VIDEOS.cambieBridgeNelsonSb],
     hideUnlessVideo: true,
+    videosStartAtStart: [VIDEOS.cambieBridgeNelsonSb],
     positions: [
       BUTE_NELSON,
       [49.2825, -123.12801],

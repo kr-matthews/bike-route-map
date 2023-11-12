@@ -12,6 +12,8 @@ export const PRINCE_EDWARD = [
     routeNames: [ROUTES.princeEdward.name],
     description: "primary",
     videos: [VIDEOS.princeEdwardNb],
+    videosStartAtStart: [VIDEOS.princeEdwardNb],
+    videosEndAtEnd: [VIDEOS.princeEdwardNb],
     positions: [
       PRINCE_EDWARD_59TH,
       [49.21751, -123.09778],

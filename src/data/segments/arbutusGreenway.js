@@ -17,6 +17,7 @@ import {
   MILTON_ARBUTUS_GREENWAY,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const ARBUTUS_GREENWAY_8TH = [49.26473, -123.15236];
 
@@ -126,7 +127,7 @@ export const ARBUTUS_GREENWAY = [
   },
   {
     routeNames: [ROUTES.arbutusGreenway.name],
-    description: "north of 8th",
+    description: "8th to burrard",
     positions: [
       ARBUTUS_GREENWAY_8TH,
       [49.26511, -123.15236],
@@ -142,6 +143,19 @@ export const ARBUTUS_GREENWAY = [
       CYPRESS_ARBUTUS_GREENWAY,
       [49.26649, -123.14599],
       BURRARD_ARBUTUS_GREENWAY_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.arbutusGreenway.name],
+    description: "crossing burrard",
+    videos: [VIDEOS.burrardNb],
+    videosStartAtStart: [VIDEOS.burrardNb],
+    positions: [BURRARD_ARBUTUS_GREENWAY_W, BURRARD_ARBUTUS_GREENWAY_E],
+  },
+  {
+    routeNames: [ROUTES.arbutusGreenway.name],
+    description: "burrard to fir",
+    positions: [
       BURRARD_ARBUTUS_GREENWAY_E,
       [49.26649, -123.14532],
       [49.26644, -123.14328],

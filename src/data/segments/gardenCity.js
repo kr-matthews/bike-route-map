@@ -147,6 +147,8 @@ export const GARDEN_CITY = [
     routeNames: [ROUTES.gardenCity.name],
     description: "williams to francis",
     videos: [VIDEOS.gardenCityNb, VIDEOS.gardenCitySb],
+    videosStartAtStart: [VIDEOS.gardenCityNb],
+    videosEndAtStart: [VIDEOS.gardenCitySb],
     positions: [
       [49.14087, -123.12528],
       [49.14145, -123.12527],

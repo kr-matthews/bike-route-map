@@ -29,6 +29,8 @@ import { VIDEOS } from "../videos";
 const HEATHER_33RD_N = [49.24122, -123.12065];
 const HEATHER_33RD_S = [49.24112, -123.12065];
 
+const NORTH_OF_49TH = [49.22709, -123.12176];
+
 export const HEATHER = [
   // willow/33rd extras
   {
@@ -104,11 +106,13 @@ export const HEATHER = [
     oneWay: "required",
     positions: [CAMBIE_49TH_SW, CAMBIE_49TH_SE],
   },
-  // rest
+
+  // primary
   {
     routeNames: [ROUTES.heather.name],
-    description: "marpole",
+    description: "kent to 67",
     videos: [VIDEOS.heatherSb],
+    videosEndAtStart: [VIDEOS.heatherSb],
     positions: [
       HEATHER_KENT_N,
       [49.20698, -123.12434],
@@ -118,7 +122,19 @@ export const HEATHER = [
       [49.20838, -123.12421],
       [49.20954, -123.12417],
       HEATHER_67TH,
-      [49.21136, -123.1241],
+    ],
+  },
+  {
+    routeNames: [ROUTES.heather.name],
+    description: "67 to 64",
+    videos: [VIDEOS.heatherSb, VIDEOS.sixtySeventhPlusWb],
+    positions: [HEATHER_67TH, [49.21136, -123.1241], HEATHER_64TH],
+  },
+  {
+    routeNames: [ROUTES.heather.name],
+    description: "64 to 52",
+    videos: [VIDEOS.heatherSb],
+    positions: [
       HEATHER_64TH,
       [49.21334, -123.12403],
       [49.21469, -123.12399],
@@ -156,9 +172,16 @@ export const HEATHER = [
   },
   {
     routeNames: [ROUTES.heather.name],
-    description: "49th to 46th",
+    description: "just north of 49th",
+    videos: [VIDEOS.heatherSb, VIDEOS.cambieSb],
+    videosStartAtEnd: [VIDEOS.cambieSb],
+    positions: [TISDALL_49TH_SW, NORTH_OF_49TH],
+  },
+  {
+    routeNames: [ROUTES.heather.name],
+    description: "just north of 49th to 46th",
     videos: [VIDEOS.heatherSb],
-    positions: [TISDALL_49TH_SW, TISDALL_46TH],
+    positions: [NORTH_OF_49TH, TISDALL_46TH],
   },
   {
     routeNames: [ROUTES.heather.name],

@@ -26,6 +26,7 @@ export const TWENTY_NINTH = [
     routeNames: [ROUTES.twentyNinth.name],
     description: "imperial to balaclava/ridgeway",
     videos: [VIDEOS.twentyNinthWb],
+    videosEndAtStart: [VIDEOS.twentyNinthWb],
     positions: [
       IMPERIAL_29TH,
       [49.24926, -123.20485],

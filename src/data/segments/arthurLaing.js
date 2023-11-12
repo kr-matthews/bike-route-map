@@ -20,6 +20,7 @@ export const ARTHUR_LAING = [
   {
     description: "sb path split",
     videos: [VIDEOS.arthurLaingSb],
+    videosEndAtEnd: [VIDEOS.arthurLaingSb],
     positions: [SOUTHBOUND_SPLIT, [49.19548, -123.14004]],
   },
   {

@@ -8,9 +8,12 @@ import {
   VICTORIA_KENT_N,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const VICTORIA_FRASER_RIVER = [49.20683, -123.06619];
 const RIVER_DISTRICT_CROSSING_FRASER_RIVER = [49.20301, -123.03199];
+
+const EAST_OF_ELLIOTT = [49.20553, -123.05646];
 
 export const FRASER_RIVER_TRAIL = [
   {
@@ -134,7 +137,9 @@ export const FRASER_RIVER_TRAIL = [
   },
   {
     routeNames: [ROUTES.fraserRiverTrail.name],
-    description: "river district",
+    description: "river district - near elliott",
+    videos: [VIDEOS.sunriseNb],
+    videosStartAtEnd: [VIDEOS.sunriseNb],
     positions: [
       ELLIOTT_KENT_PATH,
       [49.20571, -123.05676],
@@ -142,7 +147,14 @@ export const FRASER_RIVER_TRAIL = [
       [49.20564, -123.05692],
       [49.20563, -123.05676],
       [49.2056, -123.05667],
-      [49.20553, -123.05646],
+      EAST_OF_ELLIOTT,
+    ],
+  },
+  {
+    routeNames: [ROUTES.fraserRiverTrail.name],
+    description: "river district - minus bit at elliott",
+    positions: [
+      EAST_OF_ELLIOTT,
       [49.20554, -123.05569],
       [49.20561, -123.05524],
       [49.20566, -123.05469],

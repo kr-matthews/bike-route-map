@@ -12,6 +12,7 @@ export const SIXTY_SEVENTH = [
     routeNames: [ROUTES.sixtySeventh.name],
     description: "greenway to adera",
     videos: [VIDEOS.sixtySeventhPlusWb],
+    videosEndAtStart: [VIDEOS.sixtySeventhPlusWb],
     positions: [
       ARBUTUS_GREENWAY_68TH,
       [49.21064, -123.14522],

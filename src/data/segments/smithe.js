@@ -17,6 +17,7 @@ export const SMITHE = [
     routeNames: [ROUTES.smithe.name],
     description: "bi-directional",
     videos: [VIDEOS.cambieBridgeSmithNb],
+    videosEndAtStart: [VIDEOS.cambieBridgeSmithNb],
     positions: [
       THURLOW_HARO,
       [49.28391, -123.12584],
