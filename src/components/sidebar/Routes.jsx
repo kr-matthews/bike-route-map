@@ -31,7 +31,6 @@ export default function Routes({ showLegend }) {
         overflow: "auto",
         display: "flex",
         flexDirection: "column",
-        backgroundColor: "AliceBlue",
         position: "relative",
       }}
     >

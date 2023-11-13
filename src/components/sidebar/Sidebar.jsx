@@ -18,6 +18,7 @@ export default function Sidebar({ mapRef }) {
         width: "625px",
         // required to hide animation bug when transitioning height
         overflow: "hidden",
+        backgroundColor: "AliceBlue",
       }}
     >
       {isLegendVisible ? (

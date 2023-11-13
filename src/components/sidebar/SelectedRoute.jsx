@@ -24,6 +24,8 @@ export default function SelectedRoute({ mapRef }) {
       style={{
         paddingLeft: "0.5em",
         height: selectedRoute ? "425px" : 0,
+        borderTopLeftRadius: "1em",
+        borderTopRightRadius: "1em",
         display: "flex",
         flexDirection: "column",
         backgroundColor: "DarkGreen",
@@ -60,8 +62,11 @@ export default function SelectedRoute({ mapRef }) {
             Close
           </button>
           <div style={{ overflow: "auto" }}>
-            {selectedRoute.isIncomplete &&
-              "Note: Route drawn on map is incomplete. Come back later."}
+            {selectedRoute.isIncomplete && (
+              <p style={{ paddingLeft: "1em" }}>
+                Note: Route drawn on map is incomplete. Come back later.
+              </p>
+            )}
             {selectedRoute.legs.map((leg) => (
               <Leg key={selectedRoute.name + leg.name} leg={leg} />
             ))}
