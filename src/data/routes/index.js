@@ -195,7 +195,7 @@ export const ROUTES = {
   deerLakeParkway: {
     name: "Deer Lake Parkway Urban Trail",
     shortName: "Deer Lake Pkwy T.",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.deerLakePkwyEb } }],
   },
   dumfries: {
     name: "Dumfries",
@@ -359,7 +359,7 @@ export const ROUTES = {
         name: "Vancouver",
         videos: { eastbound: VIDEOS.midtownVancouverEb },
       },
-      { name: "Burnaby", videos: {} },
+      { name: "Burnaby", videos: { westbound: VIDEOS.midtownBurnabyWb } },
     ],
   },
   mosaic: {

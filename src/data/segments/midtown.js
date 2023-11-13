@@ -39,8 +39,10 @@ import { VIDEOS } from "../videos";
 
 const CULLODEN_37TH_SW = [49.23649, -123.07912];
 const EAST_OF_BOUNDARY = [49.24311, -123.02253];
+const WEST_OF_BOUNDARY = [49.24257, -123.02484];
 
 export const MIDTOWN = [
+  // vancouver
   {
     description: "crossing marine sb",
     oneWay: "required",
@@ -233,7 +235,7 @@ export const MIDTOWN = [
   },
   {
     routeNames: [ROUTES.midtown.name],
-    description: "east portion",
+    description: "cariboo to boundary-ish",
     videos: [VIDEOS.midtownVancouverEb],
     positions: [
       CARIBOO_29TH,
@@ -242,22 +244,34 @@ export const MIDTOWN = [
       [49.24342, -123.02725],
       [49.24332, -123.02693],
       [49.24261, -123.0251],
-      [49.24257, -123.02484],
+      WEST_OF_BOUNDARY,
+    ],
+  },
+  {
+    routeNames: [ROUTES.midtown.name],
+    description: "just west of boundary",
+    videos: [VIDEOS.midtownVancouverEb, VIDEOS.midtownBurnabyWb],
+    videosEndAtStart: [VIDEOS.midtownBurnabyWb],
+    positions: [
+      WEST_OF_BOUNDARY,
       [49.24257, -123.02383],
       [49.24312, -123.02383],
       BOUNDARY_MOSCROP,
     ],
   },
+
+  // burnaby
   {
     routeNames: [ROUTES.midtown.name],
     description: "beginning of boundary",
-    videos: [VIDEOS.midtownVancouverEb],
+    videos: [VIDEOS.midtownVancouverEb, VIDEOS.midtownBurnabyWb],
     videosEndAtEnd: [VIDEOS.midtownVancouverEb],
     positions: [BOUNDARY_MOSCROP, EAST_OF_BOUNDARY],
   },
   {
     routeNames: [ROUTES.midtown.name],
     description: "boundary-ish to willingdon",
+    videos: [VIDEOS.midtownBurnabyWb],
     positions: [
       EAST_OF_BOUNDARY,
       [49.24311, -123.01983],
@@ -275,6 +289,7 @@ export const MIDTOWN = [
   {
     routeNames: [ROUTES.midtown.name],
     description: "garden grove to deer lake ave",
+    videos: [VIDEOS.midtownBurnabyWb],
     positions: [
       GARDEN_GROVE_DEER_LAKE,
       [49.2417, -122.99482],
@@ -292,6 +307,8 @@ export const MIDTOWN = [
   {
     routeNames: [ROUTES.midtown.name],
     description: "deer lake pkwy to east end",
+    videos: [VIDEOS.midtownBurnabyWb],
+    videosStartAtEnd: [VIDEOS.midtownBurnabyWb],
     positions: [
       DEER_LAKE_GILPIN_SW,
       [49.24174, -122.97551],
