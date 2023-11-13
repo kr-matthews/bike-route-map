@@ -9,7 +9,9 @@ export default function Leg({ leg }) {
         <h3 style={{ textAlign: "center", marginBottom: "4px" }}>{leg.name}</h3>
       )}
       <div style={{ display: "flex", marginBottom: "4px" }}>
-        {hasNoVideos && <p>No videos, yet. Come back later.</p>}
+        {hasNoVideos && (
+          <p style={{ paddingLeft: "1em" }}>No videos, yet. Come back later.</p>
+        )}
         {Object.entries(leg.videos).map(([direction, video]) => (
           <Video key={video} video={video} direction={direction} />
         ))}

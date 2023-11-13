@@ -22,7 +22,7 @@ export default function SelectedRoute({ mapRef }) {
   return (
     <div
       style={{
-        paddingLeft: "1em",
+        paddingLeft: "0.5em",
         height: selectedRoute ? "425px" : 0,
         display: "flex",
         flexDirection: "column",

@@ -1,35 +1,46 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Selections } from "../../App";
 import { VIDEO_UNIDIRECTIONAL_COLOUR } from "../../utils/params";
 
 export default function Video({ video, direction }) {
   const { video: selectedVideo, setVideo } = useContext(Selections);
   const isShowing = video === selectedVideo;
+  const backgroundColor = isShowing ? VIDEO_UNIDIRECTIONAL_COLOUR : "Grey";
+
+  const [isHovering, setIsHovering] = useState(false);
 
   return (
-    <span>
+    <span
+      className="video"
+      style={{
+        backgroundColor,
+        borderRadius: "1em",
+        padding: "0.5em",
+        margin: "0.25em",
+        cursor: "pointer",
+      }}
+      onMouseDown={() =>
+        setVideo((current) => (current === video ? null : video))
+      }
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
+    >
       <h4
+        className="video-header"
         style={{
           textTransform: "capitalize",
-          fontWeight: "bold",
+          fontWeight: isHovering || isShowing ? "Bold" : "Normal",
           textAlign: "center",
-          backgroundColor: isShowing ? VIDEO_UNIDIRECTIONAL_COLOUR : "Grey",
-          borderRadius: "50px",
-          padding: "10px 0",
-          margin: "10px 40px",
-          cursor: "pointer",
-          color: "White",
+          padding: "3px 0",
+          margin: "2px 40px 10px",
         }}
-        onMouseDown={() =>
-          setVideo((current) => (current === video ? null : video))
-        }
       >
         {direction}
       </h4>
       <div>
         <iframe
-          width="300px"
-          height="220px"
+          width="275px"
+          height="155px"
           src={video}
           // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
