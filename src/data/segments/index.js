@@ -53,6 +53,7 @@ import { KING_EDWARD } from "./kingEdward";
 import { KNIGHT_STREET_BRIDGE } from "./knightStBridge";
 import { LAKEWOOD } from "./lakewood";
 import { LIONS_GATE_BRIDGE } from "./lionsGateBridge";
+import { LOUGHEED } from "./lougheed";
 import { MARINE } from "./marine";
 import { MASUMI_MITSUI_GREENWAY } from "./masumiMitsui";
 import { MIDTOWN } from "./midtown";
@@ -151,6 +152,7 @@ export const SEGMENTS = [
   ...KNIGHT_STREET_BRIDGE,
   ...LAKEWOOD,
   ...LIONS_GATE_BRIDGE,
+  ...LOUGHEED,
   ...MARINE,
   ...MASUMI_MITSUI_GREENWAY,
   ...MIDTOWN,

@@ -331,7 +331,6 @@ export const ROUTES = {
   lougheed: {
     name: "Lougheed Highway",
     legs: [{ videos: {} }],
-    isIncomplete: true,
   },
   marine: {
     name: "Marine",
@@ -397,6 +396,11 @@ export const ROUTES = {
   pender: {
     name: "Pender St",
     legs: [{ videos: { eastbound: VIDEOS.penderEb } }],
+  },
+  portMannBridge: {
+    name: "Port Mann Bridge",
+    legs: [{ videos: {} }],
+    isIncomplete: true,
   },
   portside: {
     name: "Portside",

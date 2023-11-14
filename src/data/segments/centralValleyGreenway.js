@@ -37,6 +37,7 @@ import {
   WOODLAND_GRANDVIEW,
   BC_PARKWAY_CVG_SPLIT,
   QUAYSIDE_JOIN,
+  SPERLING_WINSTON,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -417,7 +418,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "east of overpass",
     positions: [
       AFTER_OVERPASS,
-      [49.25805, -122.96423],
+      SPERLING_WINSTON,
       [49.25715, -122.96314],
       [49.2563, -122.9621],
       [49.25623, -122.96214],
