@@ -278,7 +278,7 @@ export const LOUGHEED = [
     description: "wb: mary hill to elevation",
     oneWay: "required",
     positions: [
-      [49.22829, -122.81952],
+      UNITED_MARY_HILL_NW,
       [49.22833, -122.81971],
       [49.22843, -122.81994],
       [49.22849, -122.82044],
@@ -473,7 +473,7 @@ export const LOUGHEED = [
       [49.26587, -123.02213],
       [49.26585, -123.02244],
       [49.26582, -123.02279],
-      UNITED_MARY_HILL_NW,
+      [49.26574, -123.02338],
     ],
   },
 ];

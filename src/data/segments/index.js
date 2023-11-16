@@ -66,6 +66,7 @@ import { OFF_BROADWAY } from "./offBroadway";
 import { ONTARIO } from "./ontario";
 import { PANDORA } from "./pandora";
 import { PENDER } from "./pender";
+import { PORT_MANN_BRIDGE } from "./portMannBridge";
 import { PORTSIDE } from "./portside";
 import { POWELL } from "./powell";
 import { PRINCE_EDWARD } from "./princeEdward";
@@ -165,6 +166,7 @@ export const SEGMENTS = [
   ...ONTARIO,
   ...PANDORA,
   ...PENDER,
+  ...PORT_MANN_BRIDGE,
   ...PORTSIDE,
   ...POWELL,
   ...PRINCE_EDWARD,
