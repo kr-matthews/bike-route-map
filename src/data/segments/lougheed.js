@@ -22,6 +22,15 @@ const WESTBOUND_ELEVATION_1_END = [49.23005, -122.83592];
 const WESTBOUND_ELEVATION_1_POST = [49.23017, -122.83782];
 const SPERLING_LOUGHEED_NE = [49.2597, -122.96443];
 
+const EASTBOUND_BRUNETTE_FRASER_PRE = [49.25199, -122.91085];
+const EASTBOUND_BRUNETTE_FRASER_START = [49.25194, -122.91008];
+const EASTBOUND_BRUNETTE_FRASER_END = [49.2518, -122.90909];
+const EASTBOUND_BRUNETTE_FRASER_POST = [49.25138, -122.90613];
+const WESTBOUND_BRUNETTE_FRASER_PRE = [49.25181, -122.90764];
+const WESTBOUND_BRUNETTE_FRASER_START = [49.25199, -122.90903];
+const WESTBOUND_BRUNETTE_FRASER_END = [49.2521, -122.90992];
+const WESTBOUND_BRUNETTE_FRASER_POST = [49.2522, -122.91042];
+
 export const LOUGHEED = [
   // connections
   {
@@ -85,7 +94,7 @@ export const LOUGHEED = [
   },
   {
     routeNames: [ROUTES.lougheed.name],
-    description: "eb: delta to elevation",
+    description: "eb: delta to brunette fraser overpass",
     oneWay: "required",
     positions: [
       DELTA_LOUGHEED,
@@ -145,10 +154,36 @@ export const LOUGHEED = [
       [49.2523, -122.91275],
       [49.25226, -122.91246], // Gaglardi
       [49.25217, -122.91204],
-      [49.25199, -122.91085],
-      [49.25194, -122.91008],
-      [49.25178, -122.90889],
-      [49.25138, -122.90613],
+      EASTBOUND_BRUNETTE_FRASER_PRE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "eb: pre brunette fraser overpass",
+    oneWay: "required",
+    elevation: 0.5,
+    positions: [EASTBOUND_BRUNETTE_FRASER_PRE, EASTBOUND_BRUNETTE_FRASER_START],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "eb: brunette fraser overpass",
+    oneWay: "required",
+    elevation: 1,
+    positions: [EASTBOUND_BRUNETTE_FRASER_START, EASTBOUND_BRUNETTE_FRASER_END],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "eb: post brunette fraser overpass",
+    oneWay: "required",
+    elevation: 0.5,
+    positions: [EASTBOUND_BRUNETTE_FRASER_END, EASTBOUND_BRUNETTE_FRASER_POST],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "eb: brunette fraser overpass to elevation",
+    oneWay: "required",
+    positions: [
+      EASTBOUND_BRUNETTE_FRASER_POST,
       [49.25112, -122.90438],
       [49.25099, -122.90377],
       [49.25085, -122.90316],
@@ -326,7 +361,7 @@ export const LOUGHEED = [
   },
   {
     routeNames: [ROUTES.lougheed.name],
-    description: "wb: elevation to boundary",
+    description: "wb: elevation to brunette fraser overpass",
     oneWay: "required",
     positions: [
       WESTBOUND_ELEVATION_1_POST,
@@ -376,9 +411,36 @@ export const LOUGHEED = [
       [49.2515, -122.90498],
       [49.25169, -122.90674],
       [49.25175, -122.90724],
-      [49.25181, -122.90764],
-      [49.25199, -122.90903],
-      [49.2522, -122.91042],
+      WESTBOUND_BRUNETTE_FRASER_PRE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "wb: pre brunette fraser overpass",
+    oneWay: "required",
+    elevation: 0.5,
+    positions: [WESTBOUND_BRUNETTE_FRASER_PRE, WESTBOUND_BRUNETTE_FRASER_START],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "wb: brunette fraser overpass",
+    oneWay: "required",
+    elevation: 1,
+    positions: [WESTBOUND_BRUNETTE_FRASER_START, WESTBOUND_BRUNETTE_FRASER_END],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "wb: post brunette fraser overpass",
+    oneWay: "required",
+    elevation: 0.5,
+    positions: [WESTBOUND_BRUNETTE_FRASER_END, WESTBOUND_BRUNETTE_FRASER_POST],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "wb: brunette fraser overpass to boundary",
+    oneWay: "required",
+    positions: [
+      WESTBOUND_BRUNETTE_FRASER_POST,
       [49.25251, -122.91237],
       [49.25258, -122.91311],
       [49.25339, -122.91882],
