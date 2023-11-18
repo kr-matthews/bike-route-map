@@ -17,6 +17,7 @@ const CHANCELLOR_4TH_N = [49.26906, -123.22552];
 const CHANCELLOR_4TH_S = [49.26896, -123.22563];
 
 const SPLIT_WEST_OF_MARINE = [49.26843, -123.20086];
+const WESTBOUND_LANE_START = [49.26889, -123.19803];
 
 export const FOURTH = [
   {
@@ -115,16 +116,16 @@ export const FOURTH = [
   },
   {
     routeNames: [ROUTES.fourth.name, ROUTES.seasideBypass.name],
-    description: "wallace to marine",
+    description: "wb wallace to before marine",
     type: "uncomfortable",
     oneWay: "required",
-    positions: [
-      WALLACE_4TH_N,
-      [49.26883, -123.19343],
-      [49.26889, -123.19803],
-      [49.26889, -123.19942],
-      MARINE_4TH_N,
-    ],
+    positions: [WALLACE_4TH_N, [49.26883, -123.19343], WESTBOUND_LANE_START],
+  },
+  {
+    routeNames: [ROUTES.fourth.name, ROUTES.seasideBypass.name],
+    description: "wb before marine",
+    oneWay: "required",
+    positions: [WESTBOUND_LANE_START, [49.26889, -123.19942], MARINE_4TH_N],
   },
   {
     routeNames: [ROUTES.fourth.name],
