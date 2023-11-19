@@ -71,6 +71,11 @@ export const ROUTES = {
     name: "Balaclava",
     legs: [{ videos: {} }],
   },
+  barnet: {
+    name: "Barnet Highway",
+    legs: [{ videos: {} }],
+    isIncomplete: true,
+  },
   bcParkway: {
     name: "BC Parkway",
     legs: [
@@ -102,6 +107,12 @@ export const ROUTES = {
     name: "Brunette Fraser Regional Greenway",
     shortName: "Brunette Fraser G.",
     legs: [{ videos: {} }],
+  },
+  bryneCreek: {
+    name: "Bryne Creek Urban Trail",
+    shortName: "Bryne Creek Trail",
+    legs: [{ videos: {} }],
+    isIncomplete: true,
   },
   burnaby: {
     name: "Burnaby",
@@ -243,6 +254,11 @@ export const ROUTES = {
     name: "Gladstone",
     legs: [{ videos: { northbound: VIDEOS.gladstoneNb } }],
   },
+  glenlyon: {
+    name: "Glenlyon Urban Trail",
+    legs: [{ videos: {} }],
+    isIncomplete: true,
+  },
   granville: {
     name: "Granville Ave",
     legs: [{ videos: {} }],
@@ -318,6 +334,11 @@ export const ROUTES = {
     name: "Knight Street Bridge",
     legs: [{ videos: { southbound: VIDEOS.knightStBridgeSb } }],
   },
+  lakes: {
+    name: "Lakes",
+    legs: [{ videos: {} }],
+    isIncomplete: true,
+  },
   lakewood: {
     name: "Lakewood",
     legs: [{ videos: { northbound: VIDEOS.lakewoodNb } }],
@@ -343,6 +364,11 @@ export const ROUTES = {
       { name: "SW Marine", videos: { eastbound: VIDEOS.swMarineEb } },
       { name: "NW Marine", videos: {} },
     ],
+  },
+  marineWay: {
+    name: "Marine Way",
+    legs: [{ videos: {} }],
+    isIncomplete: true,
   },
   masumiMitsui: {
     name: "Masumi Mitsui Greenway",
@@ -405,7 +431,6 @@ export const ROUTES = {
   portMannBridge: {
     name: "Port Mann Bridge",
     legs: [{ videos: {} }],
-    isIncomplete: true,
   },
   portside: {
     name: "Portside",
@@ -518,6 +543,18 @@ export const ROUTES = {
   waterfront: {
     name: "Waterfront St",
     legs: [{ videos: { eastbound: VIDEOS.waterfrontEb } }],
+  },
+  willingdon: {
+    name: "Willingdon Urban Trail",
+    shortName: "Willingdon Trail",
+    legs: [{ videos: {} }],
+    isIncomplete: true,
+  },
+  willingdonLinear: {
+    name: "Willingdon Linear Park",
+    shortName: "Willingdon L. Park",
+    legs: [{ videos: {} }],
+    isIncomplete: true,
   },
   windermere: {
     name: "Windermere",
