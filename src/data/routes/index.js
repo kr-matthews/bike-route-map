@@ -98,6 +98,11 @@ export const ROUTES = {
     name: "Bridgeport Trail",
     legs: [{ videos: {} }],
   },
+  brunetteFraser: {
+    name: "Brunette Fraser Regional Greenway",
+    shortName: "Brunette Fraser G.",
+    legs: [{ videos: {} }],
+  },
   burnaby: {
     name: "Burnaby",
     legs: [{ videos: {} }],

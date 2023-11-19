@@ -1,4 +1,9 @@
-import { BARNET_RIDGE, BOUNDARY_ADANAC, CLIFF_UNION } from "../intersections";
+import {
+  BARNET_RIDGE,
+  BOUNDARY_ADANAC,
+  CLIFF_BRUNETTE_FRASER,
+  CLIFF_UNION,
+} from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
@@ -172,15 +177,15 @@ export const FRANCES_UNION = [
     description: "overpass to union",
     positions: [
       OVERPASS_ADJ_S,
-      [49.28, -122.96029],
-      [49.27992, -122.96037],
-      [49.27981, -122.96031],
-      [49.27976, -122.96003],
-      [49.27977, -122.95975],
-      [49.27996, -122.95934],
-      [49.27999, -122.95907],
-      [49.27995, -122.95899],
-      [49.27986, -122.95894],
+      [49.27999, -122.96028],
+      [49.27992, -122.96034],
+      [49.27981, -122.96028],
+      [49.27977, -122.96003],
+      [49.27979, -122.95975],
+      [49.27997, -122.95937],
+      [49.27997, -122.95919],
+      [49.2799, -122.95899],
+      CLIFF_BRUNETTE_FRASER,
       [49.27974, -122.95894],
       CLIFF_UNION,
     ],

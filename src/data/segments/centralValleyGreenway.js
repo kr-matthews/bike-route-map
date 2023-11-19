@@ -38,6 +38,11 @@ import {
   BC_PARKWAY_CVG_SPLIT,
   QUAYSIDE_JOIN,
   SPERLING_WINSTON,
+  CARIBOO_GOVERNMENT,
+  BRUNETTE_FRASER_CVG_SW,
+  BRUNETTE_FRASER_CVG_SE,
+  BRUNETTE_FRASER_CVG_NE,
+  COLUMBIA_CUMBERLAND_SE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -415,7 +420,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
-    description: "east of overpass",
+    description: "overpass to cariboo",
     positions: [
       AFTER_OVERPASS,
       SPERLING_WINSTON,
@@ -441,13 +446,21 @@ export const CENTRAL_VALLEY_GREENWAY = [
       [49.24821, -122.92589],
       [49.24824, -122.92524],
       [49.24988, -122.91914],
-      [49.24985, -122.91886],
-      [49.25042, -122.91668],
-      [49.25059, -122.91573],
-      [49.25066, -122.91506],
-      [49.25066, -122.91409],
-      [49.24962, -122.9141],
-      [49.24936, -122.91418],
+      [49.2498, -122.9191],
+      [49.25044, -122.91668],
+      [49.25061, -122.91573],
+      [49.25067, -122.91506],
+      CARIBOO_GOVERNMENT,
+    ],
+  },
+  {
+    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.brunetteFraser.name],
+    description: "government to north",
+    positions: [
+      CARIBOO_GOVERNMENT,
+      [49.24962, -122.91413],
+      [49.2494, -122.91424],
+      [49.24935, -122.9141],
       [49.24921, -122.91393],
       [49.24872, -122.91375],
       [49.24829, -122.91326],
@@ -492,8 +505,8 @@ export const CENTRAL_VALLEY_GREENWAY = [
 
   // new westminster
   {
-    routeNames: [ROUTES.centralValleyGreenway.name],
-    description: "hume park (north portion)",
+    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.brunetteFraser.name],
+    description: "north and/to brunette fraser split",
     positions: [
       NORTH_CVG,
       [49.23729, -122.89264],
@@ -522,11 +535,25 @@ export const CENTRAL_VALLEY_GREENWAY = [
       [49.23487, -122.88962],
       [49.23488, -122.88946],
       [49.23489, -122.88936],
-      [49.23494, -122.88916],
+      BRUNETTE_FRASER_CVG_SW,
+    ],
+  },
+
+  // new westminster
+
+  {
+    description: "brunette fraser alt connection",
+    positions: [BRUNETTE_FRASER_CVG_SE, BRUNETTE_FRASER_CVG_NE],
+  },
+  {
+    routeNames: [ROUTES.centralValleyGreenway.name],
+    description: "brunette fraser split to columbia",
+    positions: [
+      BRUNETTE_FRASER_CVG_SW,
       [49.235, -122.889],
       [49.235, -122.88883],
       [49.23496, -122.88873],
-      [49.23487, -122.88855],
+      BRUNETTE_FRASER_CVG_SE,
       [49.23325, -122.88862],
       [49.23317, -122.88865],
       [49.23314, -122.88876],
@@ -581,7 +608,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
       [49.22047, -122.89322],
       [49.22039, -122.89323],
       [49.22035, -122.89322],
-      [49.22027, -122.89319],
+      COLUMBIA_CUMBERLAND_SE,
       [49.21997, -122.89319],
       [49.21965, -122.89325],
       [49.21938, -122.89323],

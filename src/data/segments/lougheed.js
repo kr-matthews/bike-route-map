@@ -1,4 +1,6 @@
 import {
+  KING_EDWARD_LOUGHEED_NW,
+  KING_EDWARD_LOUGHEED_SW,
   LEEDER_UNITED,
   SPERLING_WINSTON,
   UNITED_MARY_HILL_NW,
@@ -218,8 +220,8 @@ export const LOUGHEED = [
       [49.23551, -122.86702],
       [49.23502, -122.86483],
       [49.23446, -122.8622],
-      [49.23435, -122.8617],
-      [49.23432, -122.86156], // King Edward
+      KING_EDWARD_LOUGHEED_SW,
+      [49.23432, -122.86156],
       [49.23347, -122.85737],
       [49.23299, -122.85501],
       [49.23252, -122.85276],
@@ -379,7 +381,7 @@ export const LOUGHEED = [
       [49.2332, -122.85486],
       [49.23358, -122.85667],
       [49.23392, -122.85845],
-      [49.23458, -122.86165], // King Edward
+      KING_EDWARD_LOUGHEED_NW,
       [49.23518, -122.8646],
       [49.23594, -122.86795],
       [49.23621, -122.86918],
