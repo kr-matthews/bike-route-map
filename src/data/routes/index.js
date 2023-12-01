@@ -491,7 +491,6 @@ export const ROUTES = {
   seaToRiver: {
     name: "Sea to River",
     legs: [{ videos: {} }],
-    isIncomplete: true,
   },
   secondNarrowsBridge: {
     name: "Second Narrows Bridge",

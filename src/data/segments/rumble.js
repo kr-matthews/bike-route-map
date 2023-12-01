@@ -1,4 +1,4 @@
-import { GILLEY_RUMBLE_NW } from "../intersections";
+import { GILLEY_RUMBLE_NW, MCKAY_RUMBLE } from "../intersections";
 import { ROUTES } from "../routes";
 
 export const RUMBLE = [
@@ -10,7 +10,7 @@ export const RUMBLE = [
       [49.2149, -123.02091],
       [49.21492, -123.01508],
       [49.21492, -123.01241],
-      [49.21492, -123.00868],
+      MCKAY_RUMBLE,
       [49.21492, -123.00494],
       [49.21491, -122.99938],
       [49.21492, -122.99387],

@@ -4,6 +4,7 @@ import {
   CENTRAL_PARK_BC_PARKWAY_NE,
   CENTRAL_PARK_NW,
   PATTERSON_BC_PARKWAY,
+  PATTERSON_MAYWOOD_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -40,7 +41,7 @@ export const CENTRAL_PARK_PERIMETER_TRAIL = [
       PATTERSON_BC_PARKWAY,
       [49.22862, -123.01275],
       [49.22673, -123.01273],
-      [49.22538, -123.01272],
+      PATTERSON_MAYWOOD_W,
       [49.22515, -123.01272],
       [49.2251, -123.01277],
       [49.22456, -123.01277],

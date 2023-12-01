@@ -11,6 +11,8 @@ import {
 } from "../intersections";
 import { ROUTES } from "../routes";
 
+// ! bridges
+
 export const BRUNETTE_FRASER = [
   {
     description: "united connection with lougheed",

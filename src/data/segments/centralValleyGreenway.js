@@ -334,6 +334,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
       BOUNDARY_CVG,
     ],
   },
+
   // burnaby
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
@@ -342,14 +343,15 @@ export const CENTRAL_VALLEY_GREENWAY = [
     videosEndAtEnd: [VIDEOS.centralValleyVancouverEb],
     positions: [BOUNDARY_CVG, EAST_OF_BOUNDARY],
   },
-  // burnaby
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
-    description: "burnaby west of overpass",
+    description: "boundary to gilmore",
+    positions: [EAST_OF_BOUNDARY, [49.26235, -123.01782], GILMORE_CVG],
+  },
+  {
+    routeNames: [ROUTES.centralValleyGreenway.name],
+    description: "gilmore to overpass",
     positions: [
-      EAST_OF_BOUNDARY,
-      [49.26235, -123.01782],
-      GILMORE_CVG,
       GILMORE_STILL_CREEK,
       [49.2609, -123.01268],
       [49.26072, -123.01178],

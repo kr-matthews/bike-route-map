@@ -1,4 +1,8 @@
 import {
+  GILMORE_LOUGHEED_NE,
+  GILMORE_LOUGHEED_NW,
+  GILMORE_LOUGHEED_SE,
+  GILMORE_LOUGHEED_SW,
   KING_EDWARD_LOUGHEED_NW,
   KING_EDWARD_LOUGHEED_SW,
   LEEDER_UNITED,
@@ -55,15 +59,29 @@ export const LOUGHEED = [
   // eastbound
   {
     routeNames: [ROUTES.lougheed.name],
-    description: "eb: boundary to beta",
+    description: "eb: boundary to gilmore",
     oneWay: "required",
     positions: [
       [49.26564, -123.02192],
       [49.26569, -123.02022],
       [49.26576, -123.01881],
       [49.26588, -123.01658],
-      [49.26602, -123.0145], // Gilmore
-      [49.26604, -123.01414],
+      GILMORE_LOUGHEED_SW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name, ROUTES.seaToRiver.name],
+    description: "eb: crossing gilmore",
+    oneWay: "required",
+    hideArrows: true,
+    positions: [GILMORE_LOUGHEED_SW, GILMORE_LOUGHEED_SE],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "eb: gilmore to beta",
+    oneWay: "required",
+    positions: [
+      GILMORE_LOUGHEED_SE,
       [49.26617, -123.01182],
       [49.26623, -123.0106],
       [49.26633, -123.00877],
@@ -528,8 +546,8 @@ export const LOUGHEED = [
       [49.26656, -123.0088],
       [49.26645, -123.01061],
       [49.26637, -123.01189],
-      [49.26625, -123.01423],
-      [49.26624, -123.01439],
+      GILMORE_LOUGHEED_NE,
+      GILMORE_LOUGHEED_NW,
       [49.26613, -123.01651],
       [49.26594, -123.0194],
       [49.26597, -123.0195],

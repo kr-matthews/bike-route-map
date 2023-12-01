@@ -270,12 +270,21 @@ export const MIDTOWN = [
   },
   {
     routeNames: [ROUTES.midtown.name],
-    description: "boundary-ish to willingdon",
+    description: "boundary-ish to patterson",
+    videos: [VIDEOS.midtownBurnabyWb],
+    positions: [EAST_OF_BOUNDARY, [49.24311, -123.01983], PATTERSON_MOSCROP],
+  },
+  {
+    routeNames: [ROUTES.midtown.name, ROUTES.seaToRiver.name],
+    description: "patterson to carleton",
+    videos: [VIDEOS.midtownBurnabyWb],
+    positions: [PATTERSON_MOSCROP, CARLETON_MOSCROP],
+  },
+  {
+    routeNames: [ROUTES.midtown.name],
+    description: "carleton to willingdon",
     videos: [VIDEOS.midtownBurnabyWb],
     positions: [
-      EAST_OF_BOUNDARY,
-      [49.24311, -123.01983],
-      PATTERSON_MOSCROP,
       CARLETON_MOSCROP,
       [49.24305, -123.01113],
       [49.24303, -123.01063],

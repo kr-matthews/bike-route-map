@@ -1,6 +1,7 @@
 import {
   BARNET_RIDGE,
   BOUNDARY_ADANAC,
+  CARLETON_FRANCES,
   CLIFF_BRUNETTE_FRASER,
   CLIFF_UNION,
 } from "../intersections";
@@ -38,6 +39,7 @@ export const FRANCES_UNION = [
       [49.27752, -123.01867],
       [49.2793, -123.01865],
       [49.27927, -123.01421],
+      CARLETON_FRANCES,
       [49.27923, -123.00869],
       [49.27919, -123.00306],
       [49.27917, -122.99748],
