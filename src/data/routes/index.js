@@ -24,7 +24,6 @@ export const ROUTES = {
   sixteenth: {
     name: "16th Ave",
     legs: [{ videos: {} }],
-    isIncomplete: true,
   },
   twentySecond: {
     name: "22nd Ave",

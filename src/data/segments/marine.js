@@ -25,6 +25,8 @@ import {
   SEASIDE_W_END,
   MARINE_SEAWALL_CONNECTION_1,
   MARINE_SEAWALL_CONNECTION_2,
+  MARINE_16TH_NNE,
+  MARINE_16TH_SSE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -38,6 +40,9 @@ const BEYOND_CECIL_GREEN_PARK = [49.27056, -123.25527];
 const SPANISH_BANKS_CONNECTION_1 = [49.27726, -123.22283];
 const SPANISH_BANKS_CONNECTION_2 = [49.27596, -123.2151];
 const SPANISH_BANKS_CONNECTION_3 = [49.27483, -123.20574];
+
+const POST_TO_16TH_SLIP = [49.25165, -123.24589];
+const PRE_FROM_16TH_SLIP = [49.25239, -123.24712];
 
 const WEST_OF_MARINE_MARINE = [49.25727, -123.25394];
 const WEST_OF_CAMOSUN = [49.23506, -123.1977];
@@ -191,7 +196,7 @@ export const MARINE = [
   },
   {
     routeNames: [ROUTES.marine.name],
-    description: "sw marine wb primary from camosun",
+    description: "sw marine wb camosun to 16th",
     oneWay: "required",
     positions: [
       CAMOSUN_MARINE_N,
@@ -220,12 +225,42 @@ export const MARINE = [
       [49.24858, -123.24036],
       [49.2496, -123.2422],
       [49.25057, -123.24392],
-      [49.25121, -123.24507],
-      [49.25166, -123.24589],
-      [49.25197, -123.2464],
-      [49.2521, -123.24664],
-      [49.25239, -123.24712],
-      [49.25274, -123.24756],
+      MARINE_16TH_SSE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.marine.name],
+    description: "sw marine wb 16th off ramp",
+    type: "uncomfortable",
+    oneWay: "required",
+    hideArrows: true,
+    positions: [MARINE_16TH_SSE, POST_TO_16TH_SLIP],
+  },
+  {
+    routeNames: [ROUTES.marine.name],
+    description: "sw marine wb crossing 16th",
+    oneWay: "required",
+    positions: [
+      POST_TO_16TH_SLIP,
+      [49.25194, -123.2464],
+      [49.25209, -123.24664],
+      PRE_FROM_16TH_SLIP,
+    ],
+  },
+  {
+    routeNames: [ROUTES.marine.name],
+    description: "sw marine wb 16th on ramp",
+    type: "uncomfortable",
+    oneWay: "required",
+    hideArrows: true,
+    positions: [PRE_FROM_16TH_SLIP, MARINE_16TH_NNE],
+  },
+  {
+    routeNames: [ROUTES.marine.name],
+    description: "sw marine wb 16th to nw marine",
+    oneWay: "required",
+    positions: [
+      MARINE_16TH_NNE,
       [49.25329, -123.24823],
       [49.25412, -123.24918],
       [49.25446, -123.24957],

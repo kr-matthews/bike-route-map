@@ -2,10 +2,8 @@ import {
   BLANCA_10TH_E,
   BLANCA_10TH_NW,
   BLANCA_10TH_SW,
-  BLANCA_15TH,
   BLANCA_16TH_NE,
-  BLANCA_16TH_SE,
-  BLANCA_16TH_TRAIL,
+  BLANCA_16TH_NW_SLIP,
   BLANCA_4TH_E,
   BLANCA_4TH_W,
   BLANCA_6TH,
@@ -15,6 +13,8 @@ import {
 } from "../intersections";
 import { ROUTES } from "../routes";
 
+export const SOUTHBOUND_LANE_END = [49.25914, -123.21549];
+
 export const BLANCA = [
   {
     routeNames: [ROUTES.blanca.name],
@@ -22,7 +22,7 @@ export const BLANCA = [
     type: "uncomfortable",
     oneWay: "required",
     positions: [
-      BLANCA_16TH_SE,
+      // BLANCA_16TH_SE,
       BLANCA_16TH_NE,
       [49.26029, -123.21528],
       [49.26211, -123.21522],
@@ -51,7 +51,7 @@ export const BLANCA = [
       BLANCA_10TH_SW,
       [49.26209, -123.2154],
       [49.26027, -123.21546],
-      BLANCA_15TH,
+      SOUTHBOUND_LANE_END,
     ],
   },
   {
@@ -59,6 +59,7 @@ export const BLANCA = [
     description: "southbound no lane",
     type: "uncomfortable",
     oneWay: "required",
-    positions: [BLANCA_15TH, [49.2588, -123.21569], BLANCA_16TH_TRAIL],
+    hideArrows: true,
+    positions: [SOUTHBOUND_LANE_END, BLANCA_16TH_NW_SLIP],
   },
 ];

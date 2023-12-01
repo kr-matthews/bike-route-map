@@ -79,6 +79,7 @@ import { RUPERT } from "./rupert";
 import { SEASIDE } from "./seaside";
 import { SEASIDE_BYPASS } from "./seasideBypass";
 import { SECOND_NARROWS_BRIDGE } from "./secondNarrowsBridge";
+import { SIXTEENTH } from "./sixteenth";
 import { SIXTY_SEVENTH } from "./sixtySeventh";
 import { SMITHE } from "./smithe";
 import { STANLEY_PARK_LOOP } from "./stanleyPark";
@@ -180,6 +181,7 @@ export const SEGMENTS = [
   ...SEASIDE,
   ...SEASIDE_BYPASS,
   ...SECOND_NARROWS_BRIDGE,
+  ...SIXTEENTH,
   ...SIXTY_SEVENTH,
   ...SMITHE,
   ...STANLEY_PARK_LOOP,
