@@ -3,6 +3,14 @@ import { MapContainer } from "react-leaflet";
 import Segment from "../map/Segment";
 import PanesAndTiles from "../map/PanesAndTiles";
 import { SOMEWHAT_ZOOMED_IN } from "../../utils/params";
+import mapIcon from "../../images/marker-yellow.svg";
+import videoIcon from "../../images/video.svg";
+import {
+  HeavyFooter,
+  HomeLink,
+  CodeLink,
+  Link,
+} from "footer-dependency/dist/lib";
 
 const intersection = [49.26208, -123.10495];
 
@@ -170,6 +178,27 @@ export default function Legend({ hide }) {
           <Segment {...segment} {...segmentTypes[selectedTypeIndex].props} />
           <Segment {...otherSegment} />
         </MapContainer>
+      </div>
+      <div style={{ paddingTop: "3em" }}>
+        <HeavyFooter>
+          <HomeLink />
+          <CodeLink gitHubRepoName="bike-route-map" themeType="light" />
+          <Link
+            url="https://www.youtube.com/channel/UCgzTHi3DEAYwPyR1M7P_AeQ"
+            image={videoIcon}
+            description="Associated YouTube Channel"
+          />
+          <Link
+            url="https://vancouver.ca/files/cov/map-cycling-vancouver.pdf"
+            image={mapIcon}
+            description="City of Vancouver Cycling Map"
+          />
+          <Link
+            url="https://www.translink.ca/-/media/translink/documents/rider-guide/cycling/2021-cycling-maps/tl-cyclerouteseastwest_v2021web.pdf"
+            image={mapIcon}
+            description="TransLink Cycling Map"
+          />
+        </HeavyFooter>
       </div>
     </div>
   );
