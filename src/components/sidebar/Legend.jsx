@@ -43,31 +43,40 @@ const mapZoom = SOMEWHAT_ZOOMED_IN;
 
 const segmentTypes = [
   {
-    text: "Standard",
+    name: "Standard",
+    description: "Local street, separated lane/path, or painted lane.",
     props: {},
   },
   {
-    text: "Uncomfortable or unofficial",
+    name: "Uncomfortable/Unofficial",
+    description: "Shared lane with high-volume and/or high-speed traffic.",
     props: { type: "uncomfortable" },
   },
   {
-    text: "One-way",
+    name: "One-way",
+    description: "Only one direction of travel is allowed.",
     props: { oneWay: "required" },
   },
   {
-    text: "Two-way allowed, but one-way recommended",
+    name: "One-way recommended",
+    description:
+      "Both directions of travel are allowed, but typically only one is useful.",
     props: { oneWay: "recommended" },
   },
   {
-    text: "Elevated (a bridge)",
+    name: "Elevated",
+    description:
+      "Bridge or other elevated surface, you can't directly turn to/from the roads below.",
     props: { elevation: 1 },
   },
   {
-    text: "Underground (a tunnel)",
+    name: "Underground",
+    description: "A tunnel; you can't directly turn to/from the roads above.",
     props: { elevation: -1 },
   },
   {
-    text: "Closed long-term (for construction, etc.)",
+    name: "Closed",
+    description: "For long-term construction or other reasons.",
     props: { isClosed: true },
   },
 ];
@@ -124,18 +133,21 @@ export default function Legend({ hide }) {
         zoom in sufficiently.
       </p>
 
-      <p style={{ marginLeft: "auto", marginRight: "auto" }}>
+      <p style={{ width: mapWidth, marginLeft: "auto", marginRight: "auto" }}>
         <span>Select type: </span>
         <select
           value={selectedTypeIndex}
           onChange={(e) => setSelectedTypeIndex(parseInt(e.target.value) || 0)}
         >
-          {segmentTypes.map(({ text }, index) => (
-            <option key={text} value={index}>
-              {text}
+          {segmentTypes.map(({ name }, index) => (
+            <option key={name} value={index}>
+              {name}
             </option>
           ))}
         </select>
+        <br />
+        <br />
+        <span>{segmentTypes[selectedTypeIndex].description}</span>
       </p>
       <div
         style={{
