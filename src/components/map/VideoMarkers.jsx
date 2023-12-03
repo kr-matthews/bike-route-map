@@ -39,8 +39,8 @@ function VideoMarker({ position, type }) {
     type === "start" ? startIcon : type === "end" ? endIcon : combinedIcon;
   const icon = L.icon({
     iconUrl,
-    iconSize: [38, 95],
-    iconAnchor: [19, 65],
+    iconSize: [38, 45],
+    iconAnchor: [19, 40],
   });
 
   return (
