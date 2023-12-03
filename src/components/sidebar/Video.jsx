@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { Selections } from "../../App";
 import { VIDEO_UNIDIRECTIONAL_COLOUR } from "../../utils/params";
 
@@ -7,36 +7,49 @@ export default function Video({ video, direction }) {
   const isShowing = video === selectedVideo;
   const backgroundColor = isShowing ? VIDEO_UNIDIRECTIONAL_COLOUR : "Grey";
 
-  const [isHovering, setIsHovering] = useState(false);
+  // !!! add date info to videos
+  const dateText = null; // "September 2023";
 
   return (
     <span
-      className="video"
       style={{
         backgroundColor,
         borderRadius: "1em",
         padding: "0.5em",
         margin: "0.25em",
-        cursor: "pointer",
       }}
-      onMouseDown={() =>
-        setVideo((current) => (current === video ? null : video))
-      }
-      onMouseEnter={() => setIsHovering(true)}
-      onMouseLeave={() => setIsHovering(false)}
     >
-      <h4
-        className="video-header"
-        style={{
-          textTransform: "capitalize",
-          fontWeight: isHovering || isShowing ? "Bold" : "Normal",
-          textAlign: "center",
-          padding: "3px 0",
-          margin: "2px 40px 10px",
-        }}
-      >
-        {direction}
-      </h4>
+      <div style={{ margin: "0px 5px 5px", position: "relative" }}>
+        <span>
+          <span
+            style={{
+              textTransform: "capitalize",
+              fontWeight: "Bold",
+              fontSize: "90%",
+            }}
+          >
+            {direction}
+          </span>
+          {dateText && (
+            <>
+              {", "}
+              <span style={{ fontSize: "70%" }}>September 2023</span>
+            </>
+          )}
+        </span>
+        <button
+          style={{
+            position: "absolute",
+            right: 0,
+            cursor: "pointer",
+          }}
+          onClick={() =>
+            setVideo((current) => (current === video ? null : video))
+          }
+        >
+          <span style={{ fontSize: "90%" }}>{isShowing ? "Hide" : "Show"}</span>
+        </button>
+      </div>
       <div>
         <iframe
           width="275px"
