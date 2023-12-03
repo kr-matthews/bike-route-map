@@ -26,16 +26,19 @@ import {
   MARINE_70TH_N,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const CYPRESS = [
   {
     routeNames: [ROUTES.cypress.name],
     description: "cornish",
+    videos: [VIDEOS.cypressNb],
     positions: [MARINE_70TH_N, CORNISH_68TH],
   },
   {
     routeNames: [ROUTES.cypress.name],
     description: "68th to king edward",
+    videos: [VIDEOS.cypressNb],
     positions: [
       ADERA_68TH,
       [49.2123, -123.14356],
@@ -76,8 +79,8 @@ export const CYPRESS = [
   {
     routeNames: [ROUTES.cypress.name],
     description: "angus to 1st",
+    videos: [VIDEOS.cypressNb],
     positions: [
-      ANGUS_MATTHEWS_E,
       ANGUS_MATTHEWS_W,
       [49.25126, -123.14725],
       [49.25115, -123.148],
@@ -102,6 +105,8 @@ export const CYPRESS = [
   {
     routeNames: [ROUTES.cypress.name],
     description: "north end",
+    videos: [VIDEOS.cypressNb],
+    videosEndAtEnd: [VIDEOS.cypressNb],
     positions: [
       CYPRESS_CORNWALL_N,
       [49.27347, -123.14777],
@@ -115,6 +120,7 @@ export const CYPRESS = [
     routeNames: [ROUTES.cypress.name],
     description: "angus median nb",
     oneWay: "required",
+    videos: [VIDEOS.cypressNb],
     positions: [
       ANGUS_KING_EDWARD_S,
       ANGUS_KING_EDWARD_NE,
@@ -122,6 +128,7 @@ export const CYPRESS = [
       [49.25029, -123.14589],
       [49.25071, -123.14575],
       ANGUS_MATTHEWS_E,
+      ANGUS_MATTHEWS_W,
     ],
   },
   {
@@ -141,17 +148,20 @@ export const CYPRESS = [
     routeNames: [ROUTES.cypress.name, ROUTES.seasideBypass.name],
     description: "1st to york",
     oneWay: "required",
+    videos: [VIDEOS.cypressNb],
     positions: [CYPRESS_1ST, CYPRESS_1ST_NE, CYPRESS_YORK_SE],
   },
   {
     routeNames: [ROUTES.cypress.name],
     description: "york to cornwall",
     oneWay: "required",
+    videos: [VIDEOS.cypressNb],
     positions: [CYPRESS_YORK_SE, CYPRESS_CORNWALL_SE],
   },
   {
     routeNames: [ROUTES.cypress.name],
     description: "crossing cornwall",
+    videos: [VIDEOS.cypressNb],
     positions: [CYPRESS_CORNWALL_SE, CYPRESS_CORNWALL_N],
   },
   {

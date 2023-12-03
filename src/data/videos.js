@@ -22,6 +22,7 @@ const VIDEOS = {
   columbiaNb: "4E3xRV-qHOc",
   comoxHelmckenEb: "_u16UGWH4VQ",
   comoxHelmckenWb: "PgJUF6B4BMQ",
+  cypressNb: "6Gyv4URZdvQ",
   deerLakePkwyEb: "php-7VypXRw",
   dumfriesNb: "g0qsUEDx--8",
   dunbarNb: "jonrkkkL57o",

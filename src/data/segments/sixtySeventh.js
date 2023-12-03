@@ -23,7 +23,7 @@ export const SIXTY_SEVENTH = [
   {
     routeNames: [ROUTES.sixtySeventh.name, ROUTES.cypress.name],
     description: "cypress overlap",
-    videos: [VIDEOS.sixtySeventhPlusWb],
+    videos: [VIDEOS.sixtySeventhPlusWb, VIDEOS.cypressNb],
     positions: [ADERA_68TH, CORNISH_68TH],
   },
   {

@@ -47,6 +47,8 @@ const PRE_FROM_16TH_SLIP = [49.25239, -123.24712];
 const WEST_OF_MARINE_MARINE = [49.25727, -123.25394];
 const WEST_OF_CAMOSUN = [49.23506, -123.1977];
 
+const MARINE_AVERY = [49.20801, -123.14222];
+
 export const MARINE = [
   // sw marine
   {
@@ -96,15 +98,22 @@ export const MARINE = [
       [49.20597, -123.14228],
       [49.20627, -123.14228],
       [49.20709, -123.14226],
-      [49.20801, -123.14222],
-      [49.20844, -123.14219],
-      MARINE_70TH_S,
+      MARINE_AVERY,
     ],
+  },
+  {
+    routeNames: [ROUTES.marine.name],
+    description: "parallel to granville - last bit",
+    type: "uncomfortable",
+    videos: [VIDEOS.swMarineEb, VIDEOS.arthurLaingSb, VIDEOS.cypressNb],
+    videosStartAtStart: [VIDEOS.cypressNb],
+    positions: [MARINE_AVERY, [49.20844, -123.14219], MARINE_70TH_S],
   },
   {
     routeNames: [ROUTES.marine.name],
     description: "crossing granville at cornish",
     type: "uncomfortable",
+    videos: [VIDEOS.cypressNb],
     positions: [MARINE_70TH_S, MARINE_70TH_N],
   },
   {

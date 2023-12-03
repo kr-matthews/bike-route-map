@@ -205,7 +205,7 @@ export const ROUTES = {
   },
   cypress: {
     name: "Cypress",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.cypressNb } }],
   },
   deerLakeParkway: {
     name: "Deer Lake Parkway Urban Trail",
