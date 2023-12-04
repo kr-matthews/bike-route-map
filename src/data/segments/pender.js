@@ -20,9 +20,9 @@ export const PENDER = [
     routeNames: [ROUTES.pender.name],
     description: "eb",
     oneWay: "required",
-    videos: [VIDEOS.penderEb],
-    videosStartAtStart: [VIDEOS.penderEb],
-    videosEndAtEnd: [VIDEOS.penderEb],
+    videos: [VIDEOS.penderEb.id],
+    videosStartAtStart: [VIDEOS.penderEb.id],
+    videosEndAtEnd: [VIDEOS.penderEb.id],
     positions: [
       CAMBIE_PENDER_SE,
       [49.28137, -123.10963],

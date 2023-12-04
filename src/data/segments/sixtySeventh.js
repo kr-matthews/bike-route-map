@@ -11,8 +11,8 @@ export const SIXTY_SEVENTH = [
   {
     routeNames: [ROUTES.sixtySeventh.name],
     description: "greenway to adera",
-    videos: [VIDEOS.sixtySeventhPlusWb],
-    videosEndAtStart: [VIDEOS.sixtySeventhPlusWb],
+    videos: [VIDEOS.sixtySeventhPlusWb.id],
+    videosEndAtStart: [VIDEOS.sixtySeventhPlusWb.id],
     positions: [
       ARBUTUS_GREENWAY_68TH,
       [49.21064, -123.14522],
@@ -23,13 +23,13 @@ export const SIXTY_SEVENTH = [
   {
     routeNames: [ROUTES.sixtySeventh.name, ROUTES.cypress.name],
     description: "cypress overlap",
-    videos: [VIDEOS.sixtySeventhPlusWb, VIDEOS.cypressNb],
+    videos: [VIDEOS.sixtySeventhPlusWb.id, VIDEOS.cypressNb.id],
     positions: [ADERA_68TH, CORNISH_68TH],
   },
   {
     routeNames: [ROUTES.sixtySeventh.name],
     description: "east of cypress",
-    videos: [VIDEOS.sixtySeventhPlusWb],
+    videos: [VIDEOS.sixtySeventhPlusWb.id],
     positions: [
       CORNISH_68TH,
       [49.21052, -123.14037],

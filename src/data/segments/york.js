@@ -11,7 +11,7 @@ export const YORK = [
   {
     routeNames: [ROUTES.york.name, ROUTES.seasideBypass.name],
     description: "primary",
-    videos: [VIDEOS.yorkEb],
+    videos: [VIDEOS.yorkEb.id],
     videosStartAtStart: [],
     positions: [
       STEPHENS_YORK,
@@ -31,7 +31,7 @@ export const YORK = [
   {
     routeNames: [ROUTES.york.name],
     description: "york to chestnut",
-    videos: [VIDEOS.yorkEb],
+    videos: [VIDEOS.yorkEb.id],
     positions: [CYPRESS_YORK_SE, CHESTNUT_YORK],
   },
 ];

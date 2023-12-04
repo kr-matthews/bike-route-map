@@ -148,8 +148,8 @@ export const ARBUTUS_GREENWAY = [
   {
     routeNames: [ROUTES.arbutusGreenway.name],
     description: "crossing burrard",
-    videos: [VIDEOS.burrardNb],
-    videosStartAtStart: [VIDEOS.burrardNb],
+    videos: [VIDEOS.burrardNb.id],
+    videosStartAtStart: [VIDEOS.burrardNb.id],
     positions: [BURRARD_ARBUTUS_GREENWAY_W, BURRARD_ARBUTUS_GREENWAY_E],
   },
   {

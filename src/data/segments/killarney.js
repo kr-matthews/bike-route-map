@@ -11,8 +11,8 @@ export const KILLARNEY = [
   {
     routeNames: [ROUTES.killarney.name],
     description: "primary",
-    videos: [VIDEOS.killarneyEb],
-    videosEndAtEnd: [VIDEOS.killarneyEb],
+    videos: [VIDEOS.killarneyEb.id],
+    videosEndAtEnd: [VIDEOS.killarneyEb.id],
     positions: [
       NANAIMO_46TH,
       [49.22848, -123.05464],

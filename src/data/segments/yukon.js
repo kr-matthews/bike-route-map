@@ -16,8 +16,8 @@ export const YUKON = [
   {
     routeNames: [ROUTES.yukon.name],
     description: "29th to king edward",
-    videos: [VIDEOS.yukonSb],
-    videosEndAtStart: [VIDEOS.yukonSb],
+    videos: [VIDEOS.yukonSb.id],
+    videosEndAtStart: [VIDEOS.yukonSb.id],
     positions: [
       YUKON_29TH,
       [49.24697, -123.11228],
@@ -28,13 +28,13 @@ export const YUKON = [
   {
     routeNames: [ROUTES.yukon.name],
     description: "king edward overlap",
-    videos: [VIDEOS.yukonSb],
+    videos: [VIDEOS.yukonSb.id],
     positions: [YUKON_KING_EDWARD_SE, YUKON_KING_EDWARD_SW],
   },
   {
     routeNames: [ROUTES.yukon.name],
     description: "king edward to 7th",
-    videos: [VIDEOS.yukonSb],
+    videos: [VIDEOS.yukonSb.id],
     positions: [
       YUKON_KING_EDWARD_SW,
       [49.25005, -123.11279],
@@ -53,13 +53,13 @@ export const YUKON = [
   {
     routeNames: [ROUTES.yukon.name, ROUTES.offBroadway.name],
     description: "off broadway",
-    videos: [VIDEOS.yukonSb, VIDEOS.offBroadwayWb],
+    videos: [VIDEOS.yukonSb.id, VIDEOS.offBroadwayWb.id],
     positions: [YUKON_7TH, [49.26571, -123.11279], YUKON_5TH],
   },
   {
     routeNames: [ROUTES.yukon.name],
     description: "7th to 1st",
-    videos: [VIDEOS.yukonSb],
+    videos: [VIDEOS.yukonSb.id],
     positions: [
       YUKON_5TH,
       [49.26737, -123.11272],

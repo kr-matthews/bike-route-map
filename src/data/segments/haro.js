@@ -15,8 +15,8 @@ export const HARO = [
   {
     routeNames: [ROUTES.haro.name],
     description: "west of nicola",
-    videos: [VIDEOS.haroWb],
-    videosEndAtStart: [VIDEOS.haroWb],
+    videos: [VIDEOS.haroWb.id],
+    videosEndAtStart: [VIDEOS.haroWb.id],
     positions: [
       LAGOON_HARO,
       [49.29316, -123.14024],
@@ -35,15 +35,15 @@ export const HARO = [
   {
     routeNames: [ROUTES.haro.name],
     description: "near nicola",
-    videos: [VIDEOS.haroWb, VIDEOS.nicolaNb],
-    videosStartAtEnd: [VIDEOS.nicolaNb],
+    videos: [VIDEOS.haroWb.id, VIDEOS.nicolaNb.id],
+    videosStartAtEnd: [VIDEOS.nicolaNb.id],
     positions: [NICOLA_HARO, EAST_OF_NICOLA],
   },
   {
     routeNames: [ROUTES.haro.name],
     description: "east of nicola",
-    videos: [VIDEOS.haroWb],
-    videosStartAtEnd: [VIDEOS.haroWb],
+    videos: [VIDEOS.haroWb.id],
+    videosStartAtEnd: [VIDEOS.haroWb.id],
     positions: [
       EAST_OF_NICOLA,
       [49.28722, -123.131],

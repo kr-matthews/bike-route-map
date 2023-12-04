@@ -12,9 +12,9 @@ export const HILLCREST = [
   {
     routeNames: [ROUTES.hillcrest.name],
     description: "west of windsor",
-    videos: [VIDEOS.hillcrestEb, VIDEOS.hillcrestWb],
-    videosStartAtStart: [VIDEOS.hillcrestEb],
-    videosEndAtStart: [VIDEOS.hillcrestWb],
+    videos: [VIDEOS.hillcrestEb.id, VIDEOS.hillcrestWb.id],
+    videosStartAtStart: [VIDEOS.hillcrestEb.id],
+    videosEndAtStart: [VIDEOS.hillcrestWb.id],
     positions: [
       ONTARIO_30TH,
       [49.24333, -123.10392],
@@ -36,9 +36,9 @@ export const HILLCREST = [
   {
     routeNames: [ROUTES.hillcrest.name],
     description: "east of windsor",
-    videos: [VIDEOS.hillcrestEb, VIDEOS.hillcrestWb],
-    videosEndAtEnd: [VIDEOS.hillcrestEb],
-    videosStartAtEnd: [VIDEOS.hillcrestWb],
+    videos: [VIDEOS.hillcrestEb.id, VIDEOS.hillcrestWb.id],
+    videosEndAtEnd: [VIDEOS.hillcrestEb.id],
+    videosStartAtEnd: [VIDEOS.hillcrestWb.id],
     positions: [
       WINDSOR_29TH,
       [49.2446, -123.08134],

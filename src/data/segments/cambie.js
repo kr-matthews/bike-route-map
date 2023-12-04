@@ -28,7 +28,7 @@ export const CAMBIE = [
   // canada line station (and other) connections
   {
     description: "42nd",
-    videos: [VIDEOS.fortySecondEb],
+    videos: [VIDEOS.fortySecondEb.id],
     positions: [
       CAMBIE_42ND_E,
       [49.23244, -123.1135],
@@ -47,8 +47,8 @@ export const CAMBIE = [
     routeNames: [ROUTES.cambie.name],
     description: "gastown",
     oneWay: "required",
-    videos: [VIDEOS.cambieGastownNb],
-    videosEndAtEnd: [VIDEOS.cambieGastownNb],
+    videos: [VIDEOS.cambieGastownNb.id],
+    videosEndAtEnd: [VIDEOS.cambieGastownNb.id],
     positions: [
       CAMBIE_DUNSMUIR,
       CAMBIE_PENDER_SE,
@@ -73,7 +73,7 @@ export const CAMBIE = [
     routeNames: [ROUTES.cambie.name],
     description: "sb",
     oneWay: "required",
-    videos: [VIDEOS.cambieSb],
+    videos: [VIDEOS.cambieSb.id],
     positions: [
       CAMBIE_49TH_SW,
       [49.22522, -123.11674],
@@ -96,8 +96,8 @@ export const CAMBIE = [
     oneWay: "recommended",
     type: "unofficial",
     hideUnlessVideo: true,
-    videos: [VIDEOS.cambieSb],
-    videosEndAtEnd: [VIDEOS.cambieSb],
+    videos: [VIDEOS.cambieSb.id],
+    videosEndAtEnd: [VIDEOS.cambieSb.id],
     positions: [SOUTHBOUND_END, [49.20995, -123.11725], [49.20903, -123.11729]],
   },
   {

@@ -20,14 +20,14 @@ export const CHILCO = [
     routeNames: [ROUTES.chilco.name],
     description: "closed",
     isClosed: true,
-    videos: [VIDEOS.chilcoSb],
+    videos: [VIDEOS.chilcoSb.id],
     positions: [CHILCO_SEAWALL, CHILCO_BEACH],
   },
   {
     routeNames: [ROUTES.chilco.name],
     description: "primary",
-    videos: [VIDEOS.chilcoSb],
-    videosEndAtStart: [VIDEOS.chilcoSb],
+    videos: [VIDEOS.chilcoSb.id],
+    videosEndAtStart: [VIDEOS.chilcoSb.id],
     positions: [
       CHILCO_BEACH,
       [49.28988, -123.14369],
@@ -44,7 +44,7 @@ export const CHILCO = [
     routeNames: [ROUTES.chilco.name],
     description: "connection from georgia",
     oneWay: "required",
-    videos: [VIDEOS.chilcoSb],
+    videos: [VIDEOS.chilcoSb.id],
     positions: [CHILCO_GEORGIA_S, CHILCO_ALBERNI_E],
   },
 ];

@@ -36,9 +36,9 @@ export const BEATTY = [
     routeNames: [ROUTES.beatty.name],
     description: "sb",
     oneWay: "required",
-    videos: [VIDEOS.beattySb],
-    videosStartAtStart: [VIDEOS.beattySb],
-    videosEndAtEnd: [VIDEOS.beattySb],
+    videos: [VIDEOS.beattySb.id],
+    videosStartAtStart: [VIDEOS.beattySb.id],
+    videosEndAtEnd: [VIDEOS.beattySb.id],
     positions: [
       BEATTY_PENDER_NW,
       BEATTY_PENDER_SW,

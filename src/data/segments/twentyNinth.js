@@ -25,8 +25,8 @@ export const TWENTY_NINTH = [
   {
     routeNames: [ROUTES.twentyNinth.name],
     description: "imperial to balaclava/ridgeway",
-    videos: [VIDEOS.twentyNinthWb],
-    videosEndAtStart: [VIDEOS.twentyNinthWb],
+    videos: [VIDEOS.twentyNinthWb.id],
+    videosEndAtStart: [VIDEOS.twentyNinthWb.id],
     positions: [
       IMPERIAL_29TH,
       [49.24926, -123.20485],
@@ -50,13 +50,13 @@ export const TWENTY_NINTH = [
       ROUTES.ridgeway.name,
     ],
     description: "balaclava/ridgeway overlap",
-    videos: [VIDEOS.twentyNinthWb],
+    videos: [VIDEOS.twentyNinthWb.id],
     positions: [BALACLAVA_29TH, CARNARVON_29TH],
   },
   {
     routeNames: [ROUTES.twentyNinth.name],
     description: "balaclava/ridgeway to puget",
-    videos: [VIDEOS.twentyNinthWb],
+    videos: [VIDEOS.twentyNinthWb.id],
     positions: [
       CARNARVON_29TH,
       [49.24612, -123.1702],
@@ -68,13 +68,13 @@ export const TWENTY_NINTH = [
     routeNames: [ROUTES.twentyNinth.name],
     description: "puget",
     type: "uncomfortable",
-    videos: [VIDEOS.twentyNinthWb],
+    videos: [VIDEOS.twentyNinthWb.id],
     positions: [PUGET_29TH, [49.24521, -123.16368], PUGET_EDDINGTON],
   },
   {
     routeNames: [ROUTES.twentyNinth.name],
     description: "puget to valley",
-    videos: [VIDEOS.twentyNinthWb],
+    videos: [VIDEOS.twentyNinthWb.id],
     positions: [
       PUGET_EDDINGTON,
       [49.24518, -123.16312],
@@ -92,7 +92,7 @@ export const TWENTY_NINTH = [
   {
     routeNames: [ROUTES.twentyNinth.name, ROUTES.valley.name],
     description: "valley",
-    videos: [VIDEOS.twentyNinthWb, VIDEOS.valleySb],
+    videos: [VIDEOS.twentyNinthWb.id, VIDEOS.valleySb.id],
     positions: [
       YEW_EDDINGTON,
       [49.24698, -123.15558],
@@ -104,7 +104,7 @@ export const TWENTY_NINTH = [
   {
     routeNames: [ROUTES.twentyNinth.name],
     description: "valley to heather",
-    videos: [VIDEOS.twentyNinthWb],
+    videos: [VIDEOS.twentyNinthWb.id],
     positions: [
       YEW_EDDINGTON,
       [49.24766, -123.15472],
@@ -129,7 +129,7 @@ export const TWENTY_NINTH = [
   {
     routeNames: [ROUTES.twentyNinth.name],
     description: "heather to ontario",
-    videos: [VIDEOS.twentyNinthWb],
+    videos: [VIDEOS.twentyNinthWb.id],
     positions: [
       HEATHER_29TH,
       CAMBIE_29TH_W,

@@ -13,8 +13,8 @@ const NORTH_OF_LAKEWOOD = [49.28663, -123.0615];
 export const PORTSIDE = [
   {
     description: "connection with second narrows bridge",
-    videos: [VIDEOS.portsideEb, VIDEOS.cassiarSb],
-    videosStartAtStart: [VIDEOS.cassiarSb],
+    videos: [VIDEOS.portsideEb.id, VIDEOS.cassiarSb.id],
+    videosStartAtStart: [VIDEOS.cassiarSb.id],
     positions: [
       SKEENA_BRIDGEWAY,
       [49.29054, -123.02848],
@@ -27,14 +27,14 @@ export const PORTSIDE = [
   {
     routeNames: [ROUTES.portside.name],
     description: "initial bit from lakewood",
-    videos: [VIDEOS.portsideEb, VIDEOS.lakewoodNb],
-    videosEndAtEnd: [VIDEOS.lakewoodNb],
+    videos: [VIDEOS.portsideEb.id, VIDEOS.lakewoodNb.id],
+    videosEndAtEnd: [VIDEOS.lakewoodNb.id],
     positions: [WALL_OXFORD_PARK, [49.28606, -123.06198], NORTH_OF_LAKEWOOD],
   },
   {
     routeNames: [ROUTES.portside.name],
     description: "primary",
-    videos: [VIDEOS.portsideEb],
+    videos: [VIDEOS.portsideEb.id],
     positions: [
       NORTH_OF_LAKEWOOD,
       [49.28761, -123.0607],

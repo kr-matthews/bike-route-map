@@ -30,8 +30,8 @@ export const RICHARDS = [
   {
     routeNames: [ROUTES.richards.name],
     description: "little bit north of helmcken",
-    videos: [VIDEOS.comoxHelmckenWb],
-    videosStartAtEnd: [VIDEOS.comoxHelmckenWb],
+    videos: [VIDEOS.comoxHelmckenWb.id],
+    videosStartAtEnd: [VIDEOS.comoxHelmckenWb.id],
     positions: [RICHARDS_HELMCKEN, NORTH_OF_HELMCKEN],
   },
   {

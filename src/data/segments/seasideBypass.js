@@ -109,8 +109,8 @@ export const SEASIDE_BYPASS = [
   // connections
   {
     description: "chestnut bypass",
-    videos: [VIDEOS.yorkEb],
-    videosEndAtStart: [VIDEOS.yorkEb],
+    videos: [VIDEOS.yorkEb.id],
+    videosEndAtStart: [VIDEOS.yorkEb.id],
     positions: [CHESTNUT_1ST, CHESTNUT_YORK],
   },
   {
@@ -247,7 +247,7 @@ export const SEASIDE_BYPASS = [
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "false creek east of spyglass",
-    videos: [VIDEOS.yukonSb],
+    videos: [VIDEOS.yukonSb.id],
     positions: [
       SPYGLASS_COMMODORE,
       CAMBIE_1ST_N,
@@ -262,7 +262,7 @@ export const SEASIDE_BYPASS = [
     routeNames: [ROUTES.seasideBypass.name],
     description: "1st eb 1",
     oneWay: "required",
-    videos: [VIDEOS.yukonSb],
+    videos: [VIDEOS.yukonSb.id],
     positions: [
       FIRST_AVE_SPLIT,
       [49.26815, -123.11416],
@@ -315,7 +315,7 @@ export const SEASIDE_BYPASS = [
     routeNames: [ROUTES.seasideBypass.name, ROUTES.centralValleyGreenway.name],
     description: "1st ontario to quebec",
     oneWay: "required",
-    videos: [VIDEOS.centralValleyVancouverEb],
+    videos: [VIDEOS.centralValleyVancouverEb.id],
     positions: [ONTARIO_1ST_SE, QUEBEC_1ST_SW, QUEBEC_1ST_SE],
   },
   {
@@ -806,8 +806,8 @@ export const SEASIDE_BYPASS = [
   },
   {
     description: "homer to seaside",
-    videos: [VIDEOS.homerNb],
-    videosStartAtEnd: [VIDEOS.homerNb],
+    videos: [VIDEOS.homerNb.id],
+    videosStartAtEnd: [VIDEOS.homerNb.id],
     positions: [HOMER_BEACH, SEAWALL_BEACH],
   },
   {

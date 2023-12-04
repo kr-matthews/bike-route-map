@@ -75,7 +75,7 @@ export const BURRARD = [
     oneWay: "required",
     type: "unofficial",
     hideUnlessVideo: true,
-    videos: [VIDEOS.burrardNb],
+    videos: [VIDEOS.burrardNb.id],
     positions: [
       BURRARD_ARBUTUS_GREENWAY_E,
       [49.26716, -123.14554],
@@ -87,7 +87,7 @@ export const BURRARD = [
     description: "northbound pre-bridge",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.burrardNb],
+    videos: [VIDEOS.burrardNb.id],
     positions: [
       BURRARD_4TH,
       [49.26889, -123.14547],
@@ -109,7 +109,7 @@ export const BURRARD = [
     description: "northbound bridge",
     oneWay: "required",
     elevation: 1,
-    videos: [VIDEOS.burrardNb],
+    videos: [VIDEOS.burrardNb.id],
     positions: [
       NORTHBOUND_ELEVATION_START,
       [49.27394, -123.14146],
@@ -125,7 +125,7 @@ export const BURRARD = [
     description: "northbound post-bridge",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.burrardNb],
+    videos: [VIDEOS.burrardNb.id],
     positions: [
       NORTHBOUND_ELEVATION_END,
       BURRARD_NORTHBOUND_SPLIT,
@@ -176,7 +176,7 @@ export const BURRARD = [
     description: "southbound pre-bridge",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.burrardSb],
+    videos: [VIDEOS.burrardSb.id],
     positions: [
       BURRARD_HASTINGS,
       [49.28713, -123.1172],
@@ -207,7 +207,7 @@ export const BURRARD = [
     description: "southbound bridge",
     oneWay: "required",
     elevation: 1,
-    videos: [VIDEOS.burrardSb],
+    videos: [VIDEOS.burrardSb.id],
     positions: [
       SOUTHBOUND_ELEVATED_START,
       [49.27622, -123.135],
@@ -223,7 +223,7 @@ export const BURRARD = [
     description: "southbound post-bridge",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.burrardSb],
+    videos: [VIDEOS.burrardSb.id],
     positions: [
       SOUTHBOUND_ELEVATED_END,
       [49.27325, -123.14414],
@@ -235,7 +235,7 @@ export const BURRARD = [
   {
     routeNames: [ROUTES.burrard.name],
     description: "york bi-directional",
-    videos: [VIDEOS.burrardSb],
+    videos: [VIDEOS.burrardSb.id],
     positions: [
       BURRARD_YORK,
       [49.27218, -123.14563],
@@ -247,8 +247,8 @@ export const BURRARD = [
     routeNames: [ROUTES.burrard.name],
     description: "kits",
     oneWay: "required",
-    videos: [VIDEOS.burrardSb],
-    videosEndAtEnd: [VIDEOS.burrardSb],
+    videos: [VIDEOS.burrardSb.id],
+    videosEndAtEnd: [VIDEOS.burrardSb.id],
     positions: [
       BURRARD_YORK,
       [49.27162, -123.14561],

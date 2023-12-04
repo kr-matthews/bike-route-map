@@ -16,8 +16,8 @@ const JOHN_HENDRY_PARK_14TH = [49.25771, -123.0653];
 export const MOSAIC = [
   {
     description: "trout lake alley",
-    videos: [VIDEOS.mosaicSb],
-    videosEndAtEnd: [VIDEOS.mosaicSb],
+    videos: [VIDEOS.mosaicSb.id],
+    videosEndAtEnd: [VIDEOS.mosaicSb.id],
     positions: [
       JOHN_HENDRY_PARK_14TH,
       [49.25816, -123.06529],
@@ -28,7 +28,7 @@ export const MOSAIC = [
   {
     routeNames: [ROUTES.mosaic.name],
     description: "14th",
-    videos: [VIDEOS.mosaicSb],
+    videos: [VIDEOS.mosaicSb.id],
     positions: [
       WOODLAND_14TH,
       [49.25775, -123.06984],
@@ -39,7 +39,7 @@ export const MOSAIC = [
   {
     routeNames: [ROUTES.mosaic.name],
     description: "14th to 7th",
-    videos: [VIDEOS.mosaicSb],
+    videos: [VIDEOS.mosaicSb.id],
     positions: [
       WOODLAND_14TH,
       [49.25959, -123.07369],
@@ -51,13 +51,13 @@ export const MOSAIC = [
   {
     routeNames: [ROUTES.mosaic.name, ROUTES.offBroadway.name],
     description: "mosaic/off broadway",
-    videos: [VIDEOS.mosaicSb, VIDEOS.offBroadwayWb],
+    videos: [VIDEOS.mosaicSb.id, VIDEOS.offBroadwayWb.id],
     positions: [WOODLAND_7TH, WOODLAND_GRANDVIEW],
   },
   {
     routeNames: [ROUTES.mosaic.name],
     description: "grandview to franklin",
-    videos: [VIDEOS.mosaicSb],
+    videos: [VIDEOS.mosaicSb.id],
     positions: [
       WOODLAND_GRANDVIEW,
       [49.26601, -123.07357],
@@ -80,8 +80,8 @@ export const MOSAIC = [
   {
     routeNames: [ROUTES.mosaic.name],
     description: "north tip",
-    videos: [VIDEOS.mosaicSb, VIDEOS.pandoraEb],
-    videosStartAtEnd: [VIDEOS.mosaicSb, VIDEOS.pandoraEb],
+    videos: [VIDEOS.mosaicSb.id, VIDEOS.pandoraEb.id],
+    videosStartAtEnd: [VIDEOS.mosaicSb.id, VIDEOS.pandoraEb.id],
     positions: [MCLEAN_FRANKLIN, [49.28321, -123.07408], MCLEAN_POWELL],
   },
 ];

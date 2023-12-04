@@ -32,13 +32,13 @@ export const CYPRESS = [
   {
     routeNames: [ROUTES.cypress.name],
     description: "cornish",
-    videos: [VIDEOS.cypressNb],
+    videos: [VIDEOS.cypressNb.id],
     positions: [MARINE_70TH_N, CORNISH_68TH],
   },
   {
     routeNames: [ROUTES.cypress.name],
     description: "68th to king edward",
-    videos: [VIDEOS.cypressNb],
+    videos: [VIDEOS.cypressNb.id],
     positions: [
       ADERA_68TH,
       [49.2123, -123.14356],
@@ -79,7 +79,7 @@ export const CYPRESS = [
   {
     routeNames: [ROUTES.cypress.name],
     description: "angus to 1st",
-    videos: [VIDEOS.cypressNb],
+    videos: [VIDEOS.cypressNb.id],
     positions: [
       ANGUS_MATTHEWS_W,
       [49.25126, -123.14725],
@@ -105,8 +105,8 @@ export const CYPRESS = [
   {
     routeNames: [ROUTES.cypress.name],
     description: "north end",
-    videos: [VIDEOS.cypressNb],
-    videosEndAtEnd: [VIDEOS.cypressNb],
+    videos: [VIDEOS.cypressNb.id],
+    videosEndAtEnd: [VIDEOS.cypressNb.id],
     positions: [
       CYPRESS_CORNWALL_N,
       [49.27347, -123.14777],
@@ -120,7 +120,7 @@ export const CYPRESS = [
     routeNames: [ROUTES.cypress.name],
     description: "angus median nb",
     oneWay: "required",
-    videos: [VIDEOS.cypressNb],
+    videos: [VIDEOS.cypressNb.id],
     positions: [
       ANGUS_KING_EDWARD_S,
       ANGUS_KING_EDWARD_NE,
@@ -148,20 +148,20 @@ export const CYPRESS = [
     routeNames: [ROUTES.cypress.name, ROUTES.seasideBypass.name],
     description: "1st to york",
     oneWay: "required",
-    videos: [VIDEOS.cypressNb],
+    videos: [VIDEOS.cypressNb.id],
     positions: [CYPRESS_1ST, CYPRESS_1ST_NE, CYPRESS_YORK_SE],
   },
   {
     routeNames: [ROUTES.cypress.name],
     description: "york to cornwall",
     oneWay: "required",
-    videos: [VIDEOS.cypressNb],
+    videos: [VIDEOS.cypressNb.id],
     positions: [CYPRESS_YORK_SE, CYPRESS_CORNWALL_SE],
   },
   {
     routeNames: [ROUTES.cypress.name],
     description: "crossing cornwall",
-    videos: [VIDEOS.cypressNb],
+    videos: [VIDEOS.cypressNb.id],
     positions: [CYPRESS_CORNWALL_SE, CYPRESS_CORNWALL_N],
   },
   {

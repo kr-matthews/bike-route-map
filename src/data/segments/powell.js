@@ -10,14 +10,14 @@ export const POWELL = [
     routeNames: [ROUTES.powell.name],
     description: "pre-overpass",
     elevation: 0.5,
-    videos: [VIDEOS.powellEb],
+    videos: [VIDEOS.powellEb.id],
     positions: [HAWKS_POWELL, [49.28298, -123.08546], OVERPASS_START],
   },
   {
     routeNames: [ROUTES.powell.name],
     description: "overpass",
     elevation: 1,
-    videos: [VIDEOS.powellEb],
+    videos: [VIDEOS.powellEb.id],
     positions: [
       OVERPASS_START,
       [49.28282, -123.0844],
@@ -31,8 +31,8 @@ export const POWELL = [
     routeNames: [ROUTES.powell.name],
     description: "post-overpass",
     elevation: 0.5,
-    videos: [VIDEOS.powellEb],
-    videosEndAtEnd: [VIDEOS.powellEb],
+    videos: [VIDEOS.powellEb.id],
+    videosEndAtEnd: [VIDEOS.powellEb.id],
     positions: [
       OVERPASS_END,
       [49.28301, -123.07924],

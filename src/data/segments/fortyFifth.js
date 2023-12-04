@@ -24,14 +24,14 @@ export const FORTY_FIFTH = [
   {
     routeNames: [ROUTES.fortyFifth.name, ROUTES.balaclava.name],
     description: "balaclava",
-    videos: [VIDEOS.fortyFifthWb],
-    videosEndAtStart: [VIDEOS.fortyFifthWb],
+    videos: [VIDEOS.fortyFifthWb.id],
+    videosEndAtStart: [VIDEOS.fortyFifthWb.id],
     positions: [BALACLAVA_45TH, CARNARVON_45TH],
   },
   {
     routeNames: [ROUTES.fortyFifth.name],
     description: "balaclava to heather",
-    videos: [VIDEOS.fortyFifthWb],
+    videos: [VIDEOS.fortyFifthWb.id],
     positions: [
       CARNARVON_45TH,
       [49.23099, -123.1716],
@@ -63,13 +63,13 @@ export const FORTY_FIFTH = [
   {
     routeNames: [ROUTES.fortyFifth.name, ROUTES.heather.name],
     description: "heather",
-    videos: [VIDEOS.fortyFifthWb, VIDEOS.heatherSb],
+    videos: [VIDEOS.fortyFifthWb.id, VIDEOS.heatherSb.id],
     positions: [WILLOW_46TH, TISDALL_46TH],
   },
   {
     routeNames: [ROUTES.fortyFifth.name],
     description: "heather to inverness",
-    videos: [VIDEOS.fortyFifthWb],
+    videos: [VIDEOS.fortyFifthWb.id],
     positions: [
       TISDALL_46TH,
       [49.23001, -123.12164],
@@ -94,7 +94,7 @@ export const FORTY_FIFTH = [
   {
     routeNames: [ROUTES.fortyFifth.name],
     description: "inverness to nanaimo",
-    videos: [VIDEOS.fortyFifthWb],
+    videos: [VIDEOS.fortyFifthWb.id],
     positions: [
       INVERNESS_47TH,
       [49.22766, -123.07723],
@@ -114,14 +114,14 @@ export const FORTY_FIFTH = [
   {
     routeNames: [ROUTES.fortyFifth.name],
     description: "nanaimo: 47 to 46",
-    videos: [VIDEOS.fortyFifthWb, VIDEOS.killarneyEb],
-    videosStartAtStart: [VIDEOS.killarneyEb],
+    videos: [VIDEOS.fortyFifthWb.id, VIDEOS.killarneyEb.id],
+    videosStartAtStart: [VIDEOS.killarneyEb.id],
     positions: [NANAIMO_47TH, NANAIMO_46TH],
   },
   {
     routeNames: [ROUTES.fortyFifth.name],
     description: "nanaimo: 46 to 45",
-    videos: [VIDEOS.fortyFifthWb],
+    videos: [VIDEOS.fortyFifthWb.id],
     positions: [NANAIMO_46TH, NANAIMO_45TH],
   },
 ];

@@ -26,7 +26,7 @@ export const ONTARIO = [
   {
     routeNames: [ROUTES.ontario.name],
     description: "kent to 59th",
-    videos: [VIDEOS.ontarioNb],
+    videos: [VIDEOS.ontarioNb.id],
     positions: [
       ONTARIO_KENT_N,
       [49.20939, -123.1067],
@@ -41,13 +41,17 @@ export const ONTARIO = [
   {
     routeNames: [ROUTES.ontario.name, ROUTES.masumiMitsui.name],
     description: "masumi mitsui",
-    videos: [VIDEOS.ontarioNb, VIDEOS.masumiMitsuiEb, VIDEOS.masumiMitsuiWb],
+    videos: [
+      VIDEOS.ontarioNb.id,
+      VIDEOS.masumiMitsuiEb.id,
+      VIDEOS.masumiMitsuiWb.id,
+    ],
     positions: [ONTARIO_59TH, ONTARIO_58TH],
   },
   {
     routeNames: [ROUTES.ontario.name],
     description: "58th to 33rd",
-    videos: [VIDEOS.ontarioNb],
+    videos: [VIDEOS.ontarioNb.id],
     positions: [
       ONTARIO_58TH,
       [49.21854, -123.10621],
@@ -68,14 +72,14 @@ export const ONTARIO = [
   {
     routeNames: [ROUTES.ontario.name],
     description: "just north of 33rd",
-    videos: [VIDEOS.ontarioNb, VIDEOS.twentyNinthWb],
-    videosStartAtEnd: [VIDEOS.twentyNinthWb],
+    videos: [VIDEOS.ontarioNb.id, VIDEOS.twentyNinthWb.id],
+    videosStartAtEnd: [VIDEOS.twentyNinthWb.id],
     positions: [ONTARIO_33RD, NORTH_OF_ONTARIO_33RD],
   },
   {
     routeNames: [ROUTES.ontario.name],
     description: "just north of 33rd to false creek",
-    videos: [VIDEOS.ontarioNb],
+    videos: [VIDEOS.ontarioNb.id],
     positions: [
       NORTH_OF_ONTARIO_33RD,
       ONTARIO_30TH,

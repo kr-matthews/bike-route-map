@@ -16,8 +16,8 @@ export const SMITHE = [
   {
     routeNames: [ROUTES.smithe.name],
     description: "bi-directional",
-    videos: [VIDEOS.cambieBridgeSmithNb],
-    videosEndAtStart: [VIDEOS.cambieBridgeSmithNb],
+    videos: [VIDEOS.cambieBridgeSmithNb.id],
+    videosEndAtStart: [VIDEOS.cambieBridgeSmithNb.id],
     positions: [
       THURLOW_HARO,
       [49.28391, -123.12584],
@@ -44,7 +44,7 @@ export const SMITHE = [
     routeNames: [ROUTES.smithe.name],
     description: "uni-directional",
     oneWay: "required",
-    videos: [VIDEOS.cambieBridgeSmithNb],
+    videos: [VIDEOS.cambieBridgeSmithNb.id],
     positions: [
       BEATTY_SMITHE_N,
       [49.27718, -123.11652],
@@ -57,7 +57,7 @@ export const SMITHE = [
   {
     routeNames: [ROUTES.smithe.name],
     description: "beatty to expo",
-    videos: [VIDEOS.cambieBridgeSmithNb],
+    videos: [VIDEOS.cambieBridgeSmithNb.id],
     positions: [
       BEATTY_SMITHE_N,
       BEATTY_SMITHE_S,

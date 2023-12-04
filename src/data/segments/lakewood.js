@@ -14,7 +14,7 @@ export const LAKEWOOD = [
   {
     routeNames: [ROUTES.lakewood.name],
     description: "south of dundas",
-    videos: [VIDEOS.lakewoodNb],
+    videos: [VIDEOS.lakewoodNb.id],
     positions: [
       LAKEWOOD_GRANDVIEW,
       [49.26228, -123.06203],
@@ -40,8 +40,8 @@ export const LAKEWOOD = [
   {
     routeNames: [ROUTES.lakewood.name],
     description: "north of dundas",
-    videos: [VIDEOS.lakewoodNb, VIDEOS.portsideEb],
-    videosStartAtStart: [VIDEOS.portsideEb],
+    videos: [VIDEOS.lakewoodNb.id, VIDEOS.portsideEb.id],
+    videosStartAtStart: [VIDEOS.portsideEb.id],
     positions: [
       LAKEWOOD_DUNDAS,
       [49.28567, -123.06164],

@@ -17,7 +17,7 @@ export const VALLEY = [
   {
     routeNames: [ROUTES.valley.name],
     description: "south of 29th",
-    videos: [VIDEOS.valleySb],
+    videos: [VIDEOS.valleySb.id],
     positions: [
       VALLEY_33RD,
       [49.24246, -123.1498],
@@ -34,7 +34,7 @@ export const VALLEY = [
   {
     routeNames: [ROUTES.valley.name],
     description: "north of 29th",
-    videos: [VIDEOS.valleySb],
+    videos: [VIDEOS.valleySb.id],
     positions: [
       VALLEY_EDDINGTON,
       [49.24718, -123.15741],
@@ -81,8 +81,8 @@ export const VALLEY = [
   },
   {
     description: "connection along 33rd east of valley",
-    videos: [VIDEOS.valleySb],
-    videosEndAtEnd: [VIDEOS.valleySb],
+    videos: [VIDEOS.valleySb.id],
+    videosEndAtEnd: [VIDEOS.valleySb.id],
     positions: [VALLEY_33RD, ARBUTUS_GREENWAY_33RD, ANGUS_33RD],
   },
 ];

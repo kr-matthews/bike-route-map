@@ -14,8 +14,8 @@ export const RUPERT = [
     routeNames: [ROUTES.rupert.name],
     description: "nb",
     oneWay: "required",
-    videos: [VIDEOS.rupertNb],
-    videosStartAtStart: [VIDEOS.rupertNb],
+    videos: [VIDEOS.rupertNb.id],
+    videosStartAtStart: [VIDEOS.rupertNb.id],
     positions: [
       RUPERT_29TH_E,
       [49.24475, -123.03383],

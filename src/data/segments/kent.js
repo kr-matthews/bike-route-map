@@ -56,14 +56,14 @@ export const KENT = [
   {
     routeNames: [ROUTES.kent.name],
     description: "ontario",
-    videos: [VIDEOS.ontarioNb],
+    videos: [VIDEOS.ontarioNb.id],
     positions: [ONTARIO_KENT_S, ONTARIO_KENT_N],
   },
   {
     routeNames: [ROUTES.kent.name],
     description: "kent s: near ontario",
-    videos: [VIDEOS.ontarioNb],
-    videosStartAtEnd: [VIDEOS.ontarioNb],
+    videos: [VIDEOS.ontarioNb.id],
+    videosStartAtEnd: [VIDEOS.ontarioNb.id],
     positions: [ONTARIO_KENT_S, EAST_OF_ONTARIO],
   },
   {
@@ -86,8 +86,8 @@ export const KENT = [
   {
     routeNames: [ROUTES.kent.name],
     description: "crompton",
-    videos: [VIDEOS.invernessSb],
-    videosEndAtStart: [VIDEOS.invernessSb],
+    videos: [VIDEOS.invernessSb.id],
+    videosEndAtStart: [VIDEOS.invernessSb.id],
     positions: [CROMPTON_KENT_S, CROMPTON_KENT_N],
   },
   {
@@ -105,8 +105,8 @@ export const KENT = [
   {
     routeNames: [ROUTES.kent.name],
     description: "kent n: little bit west of borden",
-    videos: [VIDEOS.dumfriesNb],
-    videosStartAtStart: [VIDEOS.dumfriesNb],
+    videos: [VIDEOS.dumfriesNb.id],
+    videosStartAtStart: [VIDEOS.dumfriesNb.id],
     positions: [
       WEST_OF_BORDEN,
       [49.20955, -123.07458],
@@ -152,7 +152,7 @@ export const KENT = [
   {
     routeNames: [ROUTES.kent.name],
     description: "kent n: elliott bit",
-    videos: [VIDEOS.sunriseNb],
+    videos: [VIDEOS.sunriseNb.id],
     positions: [ELLIOTT_KENT_W, ELLIOTT_KENT],
   },
   {
@@ -197,7 +197,7 @@ export const KENT = [
   {
     routeNames: [ROUTES.kent.name],
     description: "kent n path: elliott little bit",
-    videos: [VIDEOS.sunriseNb],
+    videos: [VIDEOS.sunriseNb.id],
     positions: [ELLIOTT_KENT_W, [49.20575, -123.05698], ELLIOTT_KENT_PATH],
   },
   {
@@ -239,7 +239,7 @@ export const KENT = [
   {
     routeNames: [ROUTES.kent.name, ROUTES.kerr.name],
     description: "crossing kerr",
-    videos: [VIDEOS.kerrSb],
+    videos: [VIDEOS.kerrSb.id],
     positions: [KERR_KENT_N_SW, KERR_KENT_N_SE],
   },
   {

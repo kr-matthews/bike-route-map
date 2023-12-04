@@ -182,7 +182,7 @@ export const KNIGHT_STREET_BRIDGE = [
   },
   {
     description: "nb crossing marine",
-    videos: [VIDEOS.dumfriesNb],
+    videos: [VIDEOS.dumfriesNb.id],
     positions: [
       NORTHBOUND_SPLIT_2,
       [49.21089, -123.07498],
@@ -193,7 +193,7 @@ export const KNIGHT_STREET_BRIDGE = [
   },
   {
     description: "up borden",
-    videos: [VIDEOS.dumfriesNb],
+    videos: [VIDEOS.dumfriesNb.id],
     positions: [
       NORTHBOUND_SPLIT_3,
       [49.21119, -123.07552],
@@ -209,7 +209,7 @@ export const KNIGHT_STREET_BRIDGE = [
   },
   {
     description: "borden south of marine",
-    videos: [VIDEOS.dumfriesNb],
+    videos: [VIDEOS.dumfriesNb.id],
     positions: [
       NORTHBOUND_SPLIT_2,
       [49.21088, -123.07474],
@@ -249,7 +249,7 @@ export const KNIGHT_STREET_BRIDGE = [
     description: "sb on-ramp",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.knightStBridgeSb],
+    videos: [VIDEOS.knightStBridgeSb.id],
     positions: [
       INVERNESS_MARINE,
       [49.21099, -123.07971],
@@ -281,7 +281,7 @@ export const KNIGHT_STREET_BRIDGE = [
     description: "sb elevation 1",
     oneWay: "required",
     elevation: 1,
-    videos: [VIDEOS.knightStBridgeSb],
+    videos: [VIDEOS.knightStBridgeSb.id],
     positions: [SOUTHBOUND_ELEVATION_START_1, SOUTHBOUND_ELEVATION_END_1],
   },
   {
@@ -289,7 +289,7 @@ export const KNIGHT_STREET_BRIDGE = [
     description: "sb mitchell island",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.knightStBridgeSb],
+    videos: [VIDEOS.knightStBridgeSb.id],
     positions: [
       SOUTHBOUND_ELEVATION_END_1,
       [49.20722, -123.07756],
@@ -315,7 +315,7 @@ export const KNIGHT_STREET_BRIDGE = [
     description: "sb elevation 2",
     oneWay: "required",
     elevation: 1,
-    videos: [VIDEOS.knightStBridgeSb],
+    videos: [VIDEOS.knightStBridgeSb.id],
     positions: [
       SOUTHBOUND_ELEVATION_START_2,
       [49.20425, -123.07766],
@@ -332,7 +332,7 @@ export const KNIGHT_STREET_BRIDGE = [
     description: "sb off-ramp",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.knightStBridgeSb],
+    videos: [VIDEOS.knightStBridgeSb.id],
     positions: [
       SOUTHBOUND_ELEVATION_END_2,
       [49.19388, -123.07766],
@@ -354,8 +354,8 @@ export const KNIGHT_STREET_BRIDGE = [
     oneWay: "recommended",
     type: "uncomfortable",
     hideUnlessVideo: true,
-    videos: [VIDEOS.knightStBridgeSb],
-    videosEndAtEnd: [VIDEOS.knightStBridgeSb],
+    videos: [VIDEOS.knightStBridgeSb.id],
+    videosEndAtEnd: [VIDEOS.knightStBridgeSb.id],
     positions: [
       BRIDGEPORT_OFF_RAMP,
       [49.19213, -123.07924],

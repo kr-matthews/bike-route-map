@@ -12,7 +12,7 @@ export const ALEXANDER = [
   {
     routeNames: [ROUTES.alexander.name],
     description: "primary",
-    videos: [VIDEOS.alexanderEb],
+    videos: [VIDEOS.alexanderEb.id],
     positions: [
       ALEXANDER_POWELL,
       [49.28347, -123.10385],
@@ -33,9 +33,9 @@ export const ALEXANDER = [
   {
     routeNames: [ROUTES.alexander.name],
     description: "hawks",
-    videos: [VIDEOS.alexanderEb, VIDEOS.powellEb],
-    videosEndAtEnd: [VIDEOS.alexanderEb],
-    videosStartAtStart: [VIDEOS.powellEb],
+    videos: [VIDEOS.alexanderEb.id, VIDEOS.powellEb.id],
+    videosEndAtEnd: [VIDEOS.alexanderEb.id],
+    videosStartAtStart: [VIDEOS.powellEb.id],
     positions: [NORTH_OF_POWELL, HAWKS_POWELL],
   },
 ];

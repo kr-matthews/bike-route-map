@@ -23,8 +23,8 @@ export const FOURTH = [
   {
     routeNames: [ROUTES.fourth.name],
     description: "connection between chancellor and 4th",
-    videos: [VIDEOS.fourthEb],
-    videosStartAtStart: [VIDEOS.fourthEb],
+    videos: [VIDEOS.fourthEb.id],
+    videosStartAtStart: [VIDEOS.fourthEb.id],
     positions: [CHANCELLOR_4TH, CHANCELLOR_4TH_S],
   },
   {
@@ -32,7 +32,7 @@ export const FOURTH = [
     description: "chancellor blvd eastbound",
     type: "uncomfortable",
     oneWay: "required",
-    videos: [VIDEOS.fourthEb],
+    videos: [VIDEOS.fourthEb.id],
     positions: [
       CHANCELLOR_4TH_S,
       [49.26874, -123.22495],
@@ -62,7 +62,7 @@ export const FOURTH = [
   {
     routeNames: [ROUTES.fourth.name],
     description: "west portion",
-    videos: [VIDEOS.fourthEb],
+    videos: [VIDEOS.fourthEb.id],
     positions: [
       DRUMMOND_4TH,
       [49.26912, -123.2178],
@@ -83,14 +83,14 @@ export const FOURTH = [
     description: "brief eb to marine",
     type: "uncomfortable",
     oneWay: "required",
-    videos: [VIDEOS.fourthEb],
+    videos: [VIDEOS.fourthEb.id],
     positions: [SPLIT_WEST_OF_MARINE, MARINE_4TH_S],
   },
   {
     routeNames: [ROUTES.fourth.name, ROUTES.seasideBypass.name],
     description: "eb to wallace",
     oneWay: "required",
-    videos: [VIDEOS.fourthEb],
+    videos: [VIDEOS.fourthEb.id],
     positions: [
       MARINE_4TH_S,
       [49.26873, -123.19938],
@@ -103,8 +103,8 @@ export const FOURTH = [
     routeNames: [ROUTES.fourth.name],
     description: "wallace to highbury",
     oneWay: "required",
-    videos: [VIDEOS.fourthEb],
-    videosEndAtEnd: [VIDEOS.fourthEb],
+    videos: [VIDEOS.fourthEb.id],
+    videosEndAtEnd: [VIDEOS.fourthEb.id],
     positions: [WALLACE_4TH_S, [49.26863, -123.18871], HIGHBURY_4TH_S],
   },
   {

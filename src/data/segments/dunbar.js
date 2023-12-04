@@ -25,8 +25,8 @@ export const DUNBAR = [
     routeNames: [ROUTES.dunbar.name],
     description: "marine to 41st",
     type: "uncomfortable",
-    videos: [VIDEOS.dunbarNb],
-    videosStartAtStart: [VIDEOS.dunbarNb],
+    videos: [VIDEOS.dunbarNb.id],
+    videosStartAtStart: [VIDEOS.dunbarNb.id],
     positions: [
       DUNBAR_MARINE_N,
       [49.23284, -123.18538],
@@ -37,7 +37,7 @@ export const DUNBAR = [
   {
     routeNames: [ROUTES.dunbar.name],
     description: "41st to king edward",
-    videos: [VIDEOS.dunbarNb],
+    videos: [VIDEOS.dunbarNb.id],
     positions: [
       DUNBAR_40TH_LANE,
       DUNBAR_39TH,
@@ -54,13 +54,13 @@ export const DUNBAR = [
     routeNames: [ROUTES.dunbar.name],
     description: "king edward",
     type: "uncomfortable",
-    videos: [VIDEOS.dunbarNb],
+    videos: [VIDEOS.dunbarNb.id],
     positions: [DUNBAR_KING_EDWARD_LANE, DUNBAR_24TH_LANE],
   },
   {
     routeNames: [ROUTES.dunbar.name],
     description: "king edward to 18th",
-    videos: [VIDEOS.dunbarNb],
+    videos: [VIDEOS.dunbarNb.id],
     positions: [
       DUNBAR_24TH_LANE,
       [49.25195, -123.18517],
@@ -73,7 +73,7 @@ export const DUNBAR = [
     routeNames: [ROUTES.dunbar.name],
     description: "18th to 16th",
     type: "uncomfortable",
-    videos: [VIDEOS.dunbarNb],
+    videos: [VIDEOS.dunbarNb.id],
     positions: [DUNBAR_18TH_LANE, DUNBAR_18TH, DUNBAR_16TH_S, DUNBAR_16TH_N],
   },
   {
@@ -89,8 +89,8 @@ export const DUNBAR = [
   {
     description: "16th westbound connection west",
     oneWay: "required",
-    videos: [VIDEOS.dunbarNb],
-    videosEndAtEnd: [VIDEOS.dunbarNb],
+    videos: [VIDEOS.dunbarNb.id],
+    videosEndAtEnd: [VIDEOS.dunbarNb.id],
     positions: [DUNBAR_16TH_N, [49.25802, -123.18605]],
   },
 ];

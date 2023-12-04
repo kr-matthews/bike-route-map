@@ -1,4 +1,4 @@
-const VIDEOS = {
+const OLD_VIDEOS = {
   adanacWb: "ZDvPnT7PrUo",
   alderNb: "ixJ03H36AII",
   alexanderEb: "5pjlcdGKa10",
@@ -83,11 +83,10 @@ const VIDEOS = {
   yukonSb: "-XZwVM_8zBY",
 };
 
-const urlPrefix = "https://www.youtube.com/embed/";
+const VIDEOS = {
+};
 
-// ! extract this to a helper function?
-Object.entries(VIDEOS).forEach(
-  ([route, id]) => (VIDEOS[route] = `${urlPrefix}${id}`)
-);
+// !!! temporary - add date info to videos
+Object.entries(OLD_VIDEOS).forEach(([route, id]) => (VIDEOS[route] = { id }));
 
 export { VIDEOS };

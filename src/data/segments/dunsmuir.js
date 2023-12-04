@@ -33,8 +33,8 @@ export const DUNSMUIR = [
     routeNames: [ROUTES.dunsmuir.name],
     description: "just before cambie",
     elevation: 0.5,
-    videos: [VIDEOS.cambieGastownNb],
-    videosStartAtStart: [VIDEOS.cambieGastownNb],
+    videos: [VIDEOS.cambieGastownNb.id],
+    videosStartAtStart: [VIDEOS.cambieGastownNb.id],
     positions: [WEST_OF_CAMBIE, CAMBIE_DUNSMUIR],
   },
   {

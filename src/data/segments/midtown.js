@@ -51,13 +51,13 @@ export const MIDTOWN = [
   {
     description: "crossing marine nb",
     oneWay: "recommended",
-    videos: [VIDEOS.midtownVancouverEb],
+    videos: [VIDEOS.midtownVancouverEb.id],
     positions: [MARINE_41ST_SW, MARINE_41ST_NW],
   },
   {
     routeNames: [ROUTES.midtown.name],
     description: "west of ridgeway",
-    videos: [VIDEOS.midtownVancouverEb],
+    videos: [VIDEOS.midtownVancouverEb.id],
     positions: [
       CAMOSUN_MARINE_N,
       [49.2354, -123.19688],
@@ -80,7 +80,7 @@ export const MIDTOWN = [
   {
     routeNames: [ROUTES.midtown.name, ROUTES.ridgeway.name],
     description: "west ridgeway overlap",
-    videos: [VIDEOS.midtownVancouverEb],
+    videos: [VIDEOS.midtownVancouverEb.id],
     positions: [
       BALACLAVA_37TH,
       CARNARVON_37TH,
@@ -96,7 +96,7 @@ export const MIDTOWN = [
   {
     routeNames: [ROUTES.midtown.name, ROUTES.ridgeway.name],
     description: "yew to willow",
-    videos: [VIDEOS.midtownVancouverEb],
+    videos: [VIDEOS.midtownVancouverEb.id],
     positions: [
       YEW_37TH,
       ARBUTUS_GREENWAY_37TH,
@@ -120,13 +120,13 @@ export const MIDTOWN = [
       ROUTES.heather.name,
     ],
     description: "heather overlap",
-    videos: [VIDEOS.midtownVancouverEb, VIDEOS.heatherSb],
+    videos: [VIDEOS.midtownVancouverEb.id, VIDEOS.heatherSb.id],
     positions: [WILLOW_37TH, HEATHER_37TH],
   },
   {
     routeNames: [ROUTES.midtown.name, ROUTES.ridgeway.name],
     description: "heather to inverness",
-    videos: [VIDEOS.midtownVancouverEb],
+    videos: [VIDEOS.midtownVancouverEb.id],
     positions: [
       HEATHER_37TH,
       [49.23736, -123.11925],
@@ -165,14 +165,14 @@ export const MIDTOWN = [
   {
     routeNames: [ROUTES.midtown.name, ROUTES.ridgeway.name],
     description: "inverness parklet",
-    videos: [VIDEOS.midtownVancouverEb, VIDEOS.invernessSb],
-    videosStartAtEnd: [VIDEOS.invernessSb],
+    videos: [VIDEOS.midtownVancouverEb.id, VIDEOS.invernessSb.id],
+    videosStartAtEnd: [VIDEOS.invernessSb.id],
     positions: [INVERNESS_37TH, [49.23649, -123.07937], CULLODEN_37TH_SW],
   },
   {
     routeNames: [ROUTES.midtown.name, ROUTES.ridgeway.name],
     description: "culloden to nanaimo",
-    videos: [VIDEOS.midtownVancouverEb],
+    videos: [VIDEOS.midtownVancouverEb.id],
     positions: [
       CULLODEN_37TH_SW,
       [49.23689, -123.07911],
@@ -197,7 +197,7 @@ export const MIDTOWN = [
   {
     routeNames: [ROUTES.midtown.name],
     description: "ridgeway to earles",
-    videos: [VIDEOS.midtownVancouverEb],
+    videos: [VIDEOS.midtownVancouverEb.id],
     positions: [
       NANAIMO_38TH,
       [49.23588, -123.05546],
@@ -211,7 +211,7 @@ export const MIDTOWN = [
     routeNames: [ROUTES.midtown.name, ROUTES.sunrise.name],
     description: "earles",
     type: "uncomfortable",
-    videos: [VIDEOS.midtownVancouverEb, VIDEOS.sunriseNb],
+    videos: [VIDEOS.midtownVancouverEb.id, VIDEOS.sunriseNb.id],
     positions: [
       KINGSWAY_EARLES,
       [49.23977, -123.04681],
@@ -223,7 +223,7 @@ export const MIDTOWN = [
     routeNames: [ROUTES.midtown.name],
     description: "29th",
     type: "uncomfortable",
-    videos: [VIDEOS.midtownVancouverEb],
+    videos: [VIDEOS.midtownVancouverEb.id],
     positions: [
       EARLES_VANNESS,
       [49.24456, -123.0422],
@@ -236,7 +236,7 @@ export const MIDTOWN = [
   {
     routeNames: [ROUTES.midtown.name],
     description: "cariboo to boundary-ish",
-    videos: [VIDEOS.midtownVancouverEb],
+    videos: [VIDEOS.midtownVancouverEb.id],
     positions: [
       CARIBOO_29TH,
       [49.24433, -123.02751],
@@ -250,8 +250,8 @@ export const MIDTOWN = [
   {
     routeNames: [ROUTES.midtown.name],
     description: "just west of boundary",
-    videos: [VIDEOS.midtownVancouverEb, VIDEOS.midtownBurnabyWb],
-    videosEndAtStart: [VIDEOS.midtownBurnabyWb],
+    videos: [VIDEOS.midtownVancouverEb.id, VIDEOS.midtownBurnabyWb.id],
+    videosEndAtStart: [VIDEOS.midtownBurnabyWb.id],
     positions: [
       WEST_OF_BOUNDARY,
       [49.24257, -123.02383],
@@ -264,26 +264,26 @@ export const MIDTOWN = [
   {
     routeNames: [ROUTES.midtown.name],
     description: "beginning of boundary",
-    videos: [VIDEOS.midtownVancouverEb, VIDEOS.midtownBurnabyWb],
-    videosEndAtEnd: [VIDEOS.midtownVancouverEb],
+    videos: [VIDEOS.midtownVancouverEb.id, VIDEOS.midtownBurnabyWb.id],
+    videosEndAtEnd: [VIDEOS.midtownVancouverEb.id],
     positions: [BOUNDARY_MOSCROP, EAST_OF_BOUNDARY],
   },
   {
     routeNames: [ROUTES.midtown.name],
     description: "boundary-ish to patterson",
-    videos: [VIDEOS.midtownBurnabyWb],
+    videos: [VIDEOS.midtownBurnabyWb.id],
     positions: [EAST_OF_BOUNDARY, [49.24311, -123.01983], PATTERSON_MOSCROP],
   },
   {
     routeNames: [ROUTES.midtown.name, ROUTES.seaToRiver.name],
     description: "patterson to carleton",
-    videos: [VIDEOS.midtownBurnabyWb],
+    videos: [VIDEOS.midtownBurnabyWb.id],
     positions: [PATTERSON_MOSCROP, CARLETON_MOSCROP],
   },
   {
     routeNames: [ROUTES.midtown.name],
     description: "carleton to willingdon",
-    videos: [VIDEOS.midtownBurnabyWb],
+    videos: [VIDEOS.midtownBurnabyWb.id],
     positions: [
       CARLETON_MOSCROP,
       [49.24305, -123.01113],
@@ -298,7 +298,7 @@ export const MIDTOWN = [
   {
     routeNames: [ROUTES.midtown.name],
     description: "garden grove to deer lake ave",
-    videos: [VIDEOS.midtownBurnabyWb],
+    videos: [VIDEOS.midtownBurnabyWb.id],
     positions: [
       GARDEN_GROVE_DEER_LAKE,
       [49.2417, -122.99482],
@@ -316,8 +316,8 @@ export const MIDTOWN = [
   {
     routeNames: [ROUTES.midtown.name],
     description: "deer lake pkwy to east end",
-    videos: [VIDEOS.midtownBurnabyWb],
-    videosStartAtEnd: [VIDEOS.midtownBurnabyWb],
+    videos: [VIDEOS.midtownBurnabyWb.id],
+    videosStartAtEnd: [VIDEOS.midtownBurnabyWb.id],
     positions: [
       DEER_LAKE_GILPIN_SW,
       [49.24174, -122.97551],

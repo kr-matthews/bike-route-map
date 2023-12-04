@@ -12,8 +12,8 @@ export const DUMFRIES = [
   {
     routeNames: [ROUTES.dumfries.name],
     description: "primary",
-    videos: [VIDEOS.dumfriesNb],
-    videosEndAtEnd: [VIDEOS.dumfriesNb],
+    videos: [VIDEOS.dumfriesNb.id],
+    videosEndAtEnd: [VIDEOS.dumfriesNb.id],
     positions: [
       BORDEN_59TH,
       [49.21725, -123.07405],

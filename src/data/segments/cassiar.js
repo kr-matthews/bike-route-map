@@ -10,8 +10,8 @@ export const CASSIAR = [
   {
     routeNames: [ROUTES.cassiar.name],
     description: "primary",
-    videos: [VIDEOS.cassiarSb],
-    videosEndAtStart: [VIDEOS.cassiarSb],
+    videos: [VIDEOS.cassiarSb.id],
+    videosEndAtStart: [VIDEOS.cassiarSb.id],
     positions: [
       CASSIAR_ADANAC,
       [49.27782, -123.03086],

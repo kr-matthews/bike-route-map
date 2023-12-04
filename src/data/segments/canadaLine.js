@@ -38,7 +38,7 @@ export const CANADA_LINE = [
   {
     description: "road: van horne",
     oneWay: "required",
-    videos: [VIDEOS.northArmBridgeSb],
+    videos: [VIDEOS.northArmBridgeSb.id],
     positions: [
       VAN_HORNE_RIVER_N,
       [49.19875, -123.11912],
@@ -53,8 +53,8 @@ export const CANADA_LINE = [
     description: "road: van horne crossing great canadian way",
     oneWay: "required",
     hideArrows: true,
-    videos: [VIDEOS.gardenCitySb, VIDEOS.northArmBridgeSb],
-    videosStartAtStart: [VIDEOS.gardenCitySb],
+    videos: [VIDEOS.gardenCitySb.id, VIDEOS.northArmBridgeSb.id],
+    videosStartAtStart: [VIDEOS.gardenCitySb.id],
     positions: [GREAT_CANADIAN_VAN_HORNE_NE, GREAT_CANADIAN_VAN_HORNE_NW],
   },
   {
@@ -70,8 +70,8 @@ export const CANADA_LINE = [
   {
     description: "road: great canadian way nb to van horne",
     oneWay: "required",
-    videos: [VIDEOS.gardenCityNb],
-    videosEndAtEnd: [VIDEOS.gardenCityNb],
+    videos: [VIDEOS.gardenCityNb.id],
+    videosEndAtEnd: [VIDEOS.gardenCityNb.id],
     positions: [
       GARDEN_CITY_SEA_ISLAND_SE,
       GREAT_CANADIAN_SEA_ISLAND_NE,
@@ -113,7 +113,7 @@ export const CANADA_LINE = [
   {
     description: "road: great canadian way sb lane from van horne",
     oneWay: "required",
-    videos: [VIDEOS.gardenCitySb],
+    videos: [VIDEOS.gardenCitySb.id],
     positions: [
       GREAT_CANADIAN_VAN_HORNE_NW,
       [49.1948, -123.12497],
@@ -127,7 +127,7 @@ export const CANADA_LINE = [
     description: "road: great canadian way sb to path",
     oneWay: "required",
     hideArrows: true,
-    videos: [VIDEOS.gardenCitySb],
+    videos: [VIDEOS.gardenCitySb.id],
     positions: [GREAT_CANADIAN_BRIDGEPORT_NW, CANADA_LINE_PATH_BRIDGEPORT_S],
   },
   {
@@ -162,7 +162,7 @@ export const CANADA_LINE = [
   {
     routeNames: [ROUTES.canadaLine.name],
     description: "path: great canadian to bridgeport",
-    videos: [VIDEOS.gardenCitySb],
+    videos: [VIDEOS.gardenCitySb.id],
     positions: [
       GARDEN_CITY_SB_START,
       [49.19027, -123.12494],
@@ -192,7 +192,7 @@ export const CANADA_LINE = [
   {
     routeNames: [ROUTES.canadaLine.name],
     description: "path: van horne",
-    videos: [VIDEOS.northArmBridgeNb],
+    videos: [VIDEOS.northArmBridgeNb.id],
     positions: [
       GREAT_CANADIAN_VAN_HORNE_SE,
       BRIDGEPORT_TRAIL_VAN_HORNE,
@@ -211,14 +211,14 @@ export const CANADA_LINE = [
     routeNames: [ROUTES.canadaLine.name],
     description: "pre-bridge",
     elevation: 0.5,
-    videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
+    videos: [VIDEOS.northArmBridgeNb.id, VIDEOS.northArmBridgeSb.id],
     positions: [VAN_HORNE_RIVER_N, ELEVATED_START],
   },
   {
     routeNames: [ROUTES.canadaLine.name],
     description: "bridge",
     elevation: 1,
-    videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
+    videos: [VIDEOS.northArmBridgeNb.id, VIDEOS.northArmBridgeSb.id],
     positions: [
       ELEVATED_START,
       [49.19903, -123.11854],
@@ -240,28 +240,28 @@ export const CANADA_LINE = [
     routeNames: [ROUTES.canadaLine.name],
     description: "ramp down 1",
     elevation: 1.5,
-    videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
+    videos: [VIDEOS.northArmBridgeNb.id, VIDEOS.northArmBridgeSb.id],
     positions: [SPIRAL_MIDPOINT_1, SPIRAL_MIDPOINT_2],
   },
   {
     routeNames: [ROUTES.canadaLine.name],
     description: "ramp down 2",
     elevation: 2,
-    videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
+    videos: [VIDEOS.northArmBridgeNb.id, VIDEOS.northArmBridgeSb.id],
     positions: [SPIRAL_MIDPOINT_2, [49.20552, -123.11761], SPIRAL_MIDPOINT_3],
   },
   {
     routeNames: [ROUTES.canadaLine.name],
     description: "ramp down 3",
     elevation: 1.5,
-    videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
+    videos: [VIDEOS.northArmBridgeNb.id, VIDEOS.northArmBridgeSb.id],
     positions: [SPIRAL_MIDPOINT_3, SPIRAL_MIDPOINT_4],
   },
   {
     routeNames: [ROUTES.canadaLine.name],
     description: "ramp down 4",
     elevation: 1,
-    videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
+    videos: [VIDEOS.northArmBridgeNb.id, VIDEOS.northArmBridgeSb.id],
     positions: [
       SPIRAL_MIDPOINT_4,
       [49.20495, -123.11759],
@@ -274,7 +274,7 @@ export const CANADA_LINE = [
     routeNames: [ROUTES.canadaLine.name],
     description: "post-bridge",
     elevation: 0.5,
-    videos: [VIDEOS.northArmBridgeNb, VIDEOS.northArmBridgeSb],
+    videos: [VIDEOS.northArmBridgeNb.id, VIDEOS.northArmBridgeSb.id],
     positions: [
       ELEVATED_END,
       [49.2057, -123.11769],
@@ -292,7 +292,7 @@ export const CANADA_LINE = [
   {
     routeNames: [ROUTES.canadaLine.name],
     description: "kent to 63rd",
-    videos: [VIDEOS.cambieSeparatedNb],
+    videos: [VIDEOS.cambieSeparatedNb.id],
     positions: [
       CAMBIE_KENT_N_NE,
       [49.20634, -123.11728],
@@ -313,13 +313,13 @@ export const CANADA_LINE = [
   {
     routeNames: [ROUTES.canadaLine.name],
     description: "63rd to 64th",
-    videos: [VIDEOS.cambieSeparatedNb, VIDEOS.sixtySeventhPlusWb],
+    videos: [VIDEOS.cambieSeparatedNb.id, VIDEOS.sixtySeventhPlusWb.id],
     positions: [CAMBIE_PATH_64TH, CAMBIE_PATH_63RD],
   },
   {
     description: "63rd connection to ontario",
-    videos: [VIDEOS.sixtySeventhPlusWb],
-    videosStartAtEnd: [VIDEOS.sixtySeventhPlusWb],
+    videos: [VIDEOS.sixtySeventhPlusWb.id],
+    videosStartAtEnd: [VIDEOS.sixtySeventhPlusWb.id],
     positions: [
       CAMBIE_PATH_63RD,
       [49.21317, -123.11462],
@@ -331,7 +331,7 @@ export const CANADA_LINE = [
   },
   {
     description: "64th connection to heather",
-    videos: [VIDEOS.sixtySeventhPlusWb],
+    videos: [VIDEOS.sixtySeventhPlusWb.id],
     positions: [
       HEATHER_64TH,
       [49.21232, -123.12173],

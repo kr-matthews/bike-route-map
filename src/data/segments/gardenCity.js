@@ -22,7 +22,7 @@ export const GARDEN_CITY = [
     routeNames: [ROUTES.gardenCity.name],
     description: "sb to citation shortcut",
     oneWay: "required",
-    videos: [VIDEOS.gardenCitySb],
+    videos: [VIDEOS.gardenCitySb.id],
     positions: [
       GARDEN_CITY_SB_START,
       GARDEN_CITY_SB_ROAD_START,
@@ -50,7 +50,7 @@ export const GARDEN_CITY = [
     routeNames: [ROUTES.gardenCity.name],
     description: "sb past citation",
     oneWay: "required",
-    videos: [VIDEOS.gardenCitySb],
+    videos: [VIDEOS.gardenCitySb.id],
     positions: [
       GARDEN_CITY_CITATION,
       [49.1643, -123.12488],
@@ -66,7 +66,7 @@ export const GARDEN_CITY = [
   {
     routeNames: [ROUTES.gardenCity.name],
     description: "sb to granville split",
-    videos: [VIDEOS.gardenCitySb],
+    videos: [VIDEOS.gardenCitySb.id],
     positions: [GARDEN_CITY_GRANVILLE_NW, GARDEN_CITY_GRANVILLE_N],
   },
   {
@@ -81,7 +81,7 @@ export const GARDEN_CITY = [
     routeNames: [ROUTES.gardenCity.name],
     description: "sb through granville",
     oneWay: "required",
-    videos: [VIDEOS.gardenCitySb],
+    videos: [VIDEOS.gardenCitySb.id],
     positions: [
       GARDEN_CITY_GRANVILLE_N,
       [49.16302, -123.1257],
@@ -104,7 +104,7 @@ export const GARDEN_CITY = [
     routeNames: [ROUTES.gardenCity.name],
     description: "nb from granville",
     oneWay: "required",
-    videos: [VIDEOS.gardenCityNb],
+    videos: [VIDEOS.gardenCityNb.id],
     positions: [
       GARDEN_CITY_GRANVILLE_S,
       [49.16277, -123.12538],
@@ -146,9 +146,9 @@ export const GARDEN_CITY = [
   {
     routeNames: [ROUTES.gardenCity.name],
     description: "williams to francis",
-    videos: [VIDEOS.gardenCityNb, VIDEOS.gardenCitySb],
-    videosStartAtStart: [VIDEOS.gardenCityNb],
-    videosEndAtStart: [VIDEOS.gardenCitySb],
+    videos: [VIDEOS.gardenCityNb.id, VIDEOS.gardenCitySb.id],
+    videosStartAtStart: [VIDEOS.gardenCityNb.id],
+    videosEndAtStart: [VIDEOS.gardenCitySb.id],
     positions: [
       [49.14087, -123.12528],
       [49.14145, -123.12527],
@@ -161,7 +161,7 @@ export const GARDEN_CITY = [
     routeNames: [ROUTES.gardenCity.name],
     description: "francis to granville",
     type: "uncomfortable",
-    videos: [VIDEOS.gardenCityNb, VIDEOS.gardenCitySb],
+    videos: [VIDEOS.gardenCityNb.id, VIDEOS.gardenCitySb.id],
     positions: [
       GARDEN_CITY_FRANCIS_SS,
       [49.14821, -123.12517],

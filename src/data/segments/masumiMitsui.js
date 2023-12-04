@@ -22,9 +22,9 @@ export const MASUMI_MITSUI_GREENWAY = [
   {
     routeNames: [ROUTES.masumiMitsui.name],
     description: "angus to ontario",
-    videos: [VIDEOS.masumiMitsuiEb, VIDEOS.masumiMitsuiWb],
-    videosStartAtStart: [VIDEOS.masumiMitsuiEb],
-    videosEndAtStart: [VIDEOS.masumiMitsuiWb],
+    videos: [VIDEOS.masumiMitsuiEb.id, VIDEOS.masumiMitsuiWb.id],
+    videosStartAtStart: [VIDEOS.masumiMitsuiEb.id],
+    videosEndAtStart: [VIDEOS.masumiMitsuiWb.id],
     positions: [
       ANGUS_59TH,
       [49.21768, -123.14384],
@@ -68,7 +68,7 @@ export const MASUMI_MITSUI_GREENWAY = [
   {
     routeNames: [ROUTES.masumiMitsui.name],
     description: "ontario to split",
-    videos: [VIDEOS.masumiMitsuiEb, VIDEOS.masumiMitsuiWb],
+    videos: [VIDEOS.masumiMitsuiEb.id, VIDEOS.masumiMitsuiWb.id],
     positions: [
       ONTARIO_59TH,
       [49.21676, -123.10195],
@@ -107,8 +107,8 @@ export const MASUMI_MITSUI_GREENWAY = [
     routeNames: [ROUTES.masumiMitsui.name],
     description: "eastbound branch",
     oneWay: "recommended",
-    videos: [VIDEOS.masumiMitsuiEb],
-    videosEndAtEnd: [VIDEOS.masumiMitsuiEb],
+    videos: [VIDEOS.masumiMitsuiEb.id],
+    videosEndAtEnd: [VIDEOS.masumiMitsuiEb.id],
     positions: [
       ASHBURN_UPLAND,
       [49.21734, -123.05541],
@@ -124,22 +124,22 @@ export const MASUMI_MITSUI_GREENWAY = [
     routeNames: [ROUTES.masumiMitsui.name],
     description: "westbound branch 57th",
     oneWay: "recommended",
-    videos: [VIDEOS.masumiMitsuiWb],
-    videosStartAtStart: [VIDEOS.masumiMitsuiWb],
+    videos: [VIDEOS.masumiMitsuiWb.id],
+    videosStartAtStart: [VIDEOS.masumiMitsuiWb.id],
     positions: [VIVIAN_57TH, [49.21806, -123.05126], ELLIOTT_57TH],
   },
   {
     routeNames: [ROUTES.masumiMitsui.name],
     description: "westbound branch elliott path",
     oneWay: "required",
-    videos: [VIDEOS.masumiMitsuiWb],
+    videos: [VIDEOS.masumiMitsuiWb.id],
     positions: [ELLIOTT_57TH, [49.21841, -123.05461], ELLIOTT_ASHBURN],
   },
   {
     routeNames: [ROUTES.masumiMitsui.name],
     description: "westbound branch ashburn",
     oneWay: "recommended",
-    videos: [VIDEOS.masumiMitsuiWb],
+    videos: [VIDEOS.masumiMitsuiWb.id],
     positions: [
       ELLIOTT_ASHBURN,
       [49.21839, -123.055],

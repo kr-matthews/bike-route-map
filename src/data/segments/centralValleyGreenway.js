@@ -98,28 +98,28 @@ export const CENTRAL_VALLEY_GREENWAY = [
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
     description: "east park path - north",
-    videos: [VIDEOS.centralValleyVancouverEb, VIDEOS.ontarioNb],
-    videosStartAtStart: [VIDEOS.centralValleyVancouverEb],
-    videosEndAtStart: [VIDEOS.ontarioNb],
+    videos: [VIDEOS.centralValleyVancouverEb.id, VIDEOS.ontarioNb.id],
+    videosStartAtStart: [VIDEOS.centralValleyVancouverEb.id],
+    videosEndAtStart: [VIDEOS.ontarioNb.id],
     positions: [ONTARIO_PATH_SEASIDE, ONTARIO_PATH_ATHLETES],
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
     description: "east park path - south",
-    videos: [VIDEOS.centralValleyVancouverEb],
+    videos: [VIDEOS.centralValleyVancouverEb.id],
     positions: [ONTARIO_PATH_ATHLETES, EAST_PARK_S, ONTARIO_1ST_NE],
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
     description: "crossing 1st path",
-    videos: [VIDEOS.centralValleyVancouverEb],
+    videos: [VIDEOS.centralValleyVancouverEb.id],
     positions: [ONTARIO_1ST_NE, ONTARIO_1ST_SE],
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
     description: "1st quebec to main",
     oneWay: "required",
-    videos: [VIDEOS.centralValleyVancouverEb],
+    videos: [VIDEOS.centralValleyVancouverEb.id],
     positions: [QUEBEC_1ST_SE, MAIN_1ST_SW, MAIN_1ST_E],
   },
   {
@@ -176,7 +176,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
     description: "1st to commercial",
-    videos: [VIDEOS.centralValleyVancouverEb],
+    videos: [VIDEOS.centralValleyVancouverEb.id],
     positions: [
       MAIN_1ST_E,
       [49.26921, -123.09887],
@@ -215,20 +215,20 @@ export const CENTRAL_VALLEY_GREENWAY = [
   {
     routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.offBroadway.name],
     description: "cvg/off broadway west",
-    videos: [VIDEOS.centralValleyVancouverEb, VIDEOS.offBroadwayWb],
+    videos: [VIDEOS.centralValleyVancouverEb.id, VIDEOS.offBroadwayWb.id],
     positions: [WOODLAND_GRANDVIEW, COMMERCIAL_GRANDVIEW],
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.offBroadway.name],
     description: "cvg/off broadway east",
-    videos: [VIDEOS.centralValleyGreenway, VIDEOS.offBroadwayWb],
+    videos: [VIDEOS.offBroadwayWb.id],
     positions: [COMMERCIAL_GRANDVIEW, [49.26372, -123.06966], GRANDVIEW_8TH_N],
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
     description: "broadway eastbound",
     oneWay: "required",
-    videos: [VIDEOS.centralValleyVancouverEb],
+    videos: [VIDEOS.centralValleyVancouverEb.id],
     positions: [
       COMMERCIAL_GRANDVIEW,
       [49.26345, -123.0691],
@@ -264,7 +264,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
     description: "victoria to rupert",
-    videos: [VIDEOS.centralValleyVancouverEb],
+    videos: [VIDEOS.centralValleyVancouverEb.id],
     positions: [
       VICTORIA_BROADWAY,
       [49.26188, -123.06507],
@@ -311,14 +311,14 @@ export const CENTRAL_VALLEY_GREENWAY = [
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
     description: "crossing rupert",
-    videos: [VIDEOS.centralValleyVancouverEb, VIDEOS.rupertNb],
-    videosEndAtStart: [VIDEOS.rupertNb],
+    videos: [VIDEOS.centralValleyVancouverEb.id, VIDEOS.rupertNb.id],
+    videosEndAtStart: [VIDEOS.rupertNb.id],
     positions: [RUPERT_CVG_W, [49.26067, -123.03395], RUPERT_CVG_E],
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
     description: "rupert to boundary",
-    videos: [VIDEOS.centralValleyVancouverEb],
+    videos: [VIDEOS.centralValleyVancouverEb.id],
     positions: [
       RUPERT_CVG_E,
       [49.26067, -123.03347],
@@ -339,8 +339,8 @@ export const CENTRAL_VALLEY_GREENWAY = [
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
     description: "just east of boundary",
-    videos: [VIDEOS.centralValleyVancouverEb],
-    videosEndAtEnd: [VIDEOS.centralValleyVancouverEb],
+    videos: [VIDEOS.centralValleyVancouverEb.id],
+    videosEndAtEnd: [VIDEOS.centralValleyVancouverEb.id],
     positions: [BOUNDARY_CVG, EAST_OF_BOUNDARY],
   },
   {

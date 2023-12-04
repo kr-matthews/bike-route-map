@@ -139,20 +139,20 @@ export const RIDGEWAY = [
   {
     routeNames: [ROUTES.ridgeway.name],
     description: "nanaimo to sunrise",
-    videos: [VIDEOS.fortyFifthWb],
+    videos: [VIDEOS.fortyFifthWb.id],
     positions: [NANAIMO_45TH, [49.22939, -123.05492], WALES_45TH, VIVIAN_45TH],
   },
   {
     routeNames: [ROUTES.ridgeway.name, ROUTES.sunrise.name],
     description: "sunrise",
-    videos: [VIDEOS.fortyFifthWb, VIDEOS.sunriseNb],
+    videos: [VIDEOS.fortyFifthWb.id, VIDEOS.sunriseNb.id],
     positions: [VIVIAN_45TH, EARLES_45TH],
   },
   {
     routeNames: [ROUTES.ridgeway.name],
     description: "sunrise to boundary",
-    videos: [VIDEOS.fortyFifthWb],
-    videosStartAtEnd: [VIDEOS.fortyFifthWb],
+    videos: [VIDEOS.fortyFifthWb.id],
+    videosStartAtEnd: [VIDEOS.fortyFifthWb.id],
     positions: [
       EARLES_45TH,
       KILLARNEY_45TH,

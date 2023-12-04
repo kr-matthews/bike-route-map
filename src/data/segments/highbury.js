@@ -12,8 +12,8 @@ export const HIGHBURY = [
   {
     routeNames: [ROUTES.highbury.name],
     description: "all",
-    videos: [VIDEOS.highburyNb],
-    videosEndAtEnd: [VIDEOS.highburyNb],
+    videos: [VIDEOS.highburyNb.id],
+    videosEndAtEnd: [VIDEOS.highburyNb.id],
     positions: [
       HIGHBURY_8TH,
       [49.26694, -123.18772],

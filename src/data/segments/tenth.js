@@ -23,9 +23,9 @@ export const TENTH = [
   {
     routeNames: [ROUTES.tenth.name],
     description: "west of hospital",
-    videos: [VIDEOS.tenthEb, VIDEOS.tenthWb],
-    videosStartAtStart: [VIDEOS.tenthEb],
-    videosEndAtStart: [VIDEOS.tenthWb],
+    videos: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
+    videosStartAtStart: [VIDEOS.tenthEb.id],
+    videosEndAtStart: [VIDEOS.tenthWb.id],
     positions: [
       TRAFALGAR_10TH,
       [49.26302, -123.16242],
@@ -54,7 +54,7 @@ export const TENTH = [
     routeNames: [ROUTES.tenth.name],
     description: "hospital eb",
     oneWay: "required",
-    videos: [VIDEOS.tenthEb],
+    videos: [VIDEOS.tenthEb.id],
     positions: [
       OAK_10TH_W,
       [49.2624, -123.12649],
@@ -70,7 +70,7 @@ export const TENTH = [
     routeNames: [ROUTES.tenth.name],
     description: "hospital wb",
     oneWay: "required",
-    videos: [VIDEOS.tenthWb],
+    videos: [VIDEOS.tenthWb.id],
     positions: [
       ASH_10TH_E,
       [49.26234, -123.1176],
@@ -85,7 +85,7 @@ export const TENTH = [
   {
     routeNames: [ROUTES.tenth.name],
     description: "hospital to windsor",
-    videos: [VIDEOS.tenthEb, VIDEOS.tenthWb],
+    videos: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
     positions: [
       ASH_10TH_E,
       [49.26226, -123.11492],
@@ -114,15 +114,15 @@ export const TENTH = [
   {
     routeNames: [ROUTES.tenth.name, ROUTES.windsor.name],
     description: "windsor",
-    videos: [VIDEOS.tenthEb, VIDEOS.tenthWb, VIDEOS.windsorNb],
+    videos: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id, VIDEOS.windsorNb.id],
     positions: [WINDSOR_10TH, GLEN_10TH],
   },
   {
     routeNames: [ROUTES.tenth.name],
     description: "windsor to victoria",
-    videos: [VIDEOS.tenthEb, VIDEOS.tenthWb],
-    videosStartAtEnd: [VIDEOS.tenthWb],
-    videosEndAtEnd: [VIDEOS.tenthEb],
+    videos: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
+    videosStartAtEnd: [VIDEOS.tenthWb.id],
+    videosEndAtEnd: [VIDEOS.tenthEb.id],
     positions: [
       GLEN_10TH,
       [49.26145, -123.07944],

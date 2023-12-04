@@ -17,14 +17,14 @@ export const INVERNESS = [
   {
     routeNames: [ROUTES.inverness.name],
     description: "crompton & se marine",
-    videos: [VIDEOS.invernessSb],
+    videos: [VIDEOS.invernessSb.id],
     positions: [CROMPTON_KENT_N, [49.21102, -123.08071], INVERNESS_MARINE],
   },
   {
     routeNames: [ROUTES.inverness.name],
     description: "marine to 63rd",
-    videos: [VIDEOS.invernessSb, VIDEOS.knightStBridgeSb],
-    videosStartAtEnd: [VIDEOS.knightStBridgeSb],
+    videos: [VIDEOS.invernessSb.id, VIDEOS.knightStBridgeSb.id],
+    videosStartAtEnd: [VIDEOS.knightStBridgeSb.id],
     positions: [
       INVERNESS_MARINE,
       INVERNESS_64TH_ALLEY,
@@ -35,7 +35,7 @@ export const INVERNESS = [
   {
     routeNames: [ROUTES.inverness.name],
     description: "63rd to 45th",
-    videos: [VIDEOS.invernessSb],
+    videos: [VIDEOS.invernessSb.id],
     positions: [
       INVERNESS_63RD,
       [49.21328, -123.07988],
@@ -57,12 +57,12 @@ export const INVERNESS = [
   {
     routeNames: [ROUTES.inverness.name, ROUTES.fortyFifth.name],
     description: "45th",
-    videos: [VIDEOS.invernessSb, VIDEOS.fortyFifthWb],
+    videos: [VIDEOS.invernessSb.id, VIDEOS.fortyFifthWb.id],
     positions: [INVERNESS_45TH, INVERNESS_47TH],
   },
   {
     routeNames: [ROUTES.inverness.name],
-    videos: [VIDEOS.invernessSb],
+    videos: [VIDEOS.invernessSb.id],
     description: "45th to midtown",
     positions: [
       INVERNESS_45TH,

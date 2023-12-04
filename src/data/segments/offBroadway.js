@@ -35,8 +35,8 @@ export const OFF_BROADWAY = [
   {
     routeNames: [ROUTES.offBroadway.name, ROUTES.ridgeway.name],
     description: "ridgeway overlap",
-    videos: [VIDEOS.offBroadwayWb],
-    videosEndAtStart: [VIDEOS.offBroadwayWb],
+    videos: [VIDEOS.offBroadwayWb.id],
+    videosEndAtStart: [VIDEOS.offBroadwayWb.id],
     positions: [
       BLANCA_8TH_E,
       [49.26563, -123.2121],
@@ -48,7 +48,7 @@ export const OFF_BROADWAY = [
   {
     routeNames: [ROUTES.offBroadway.name],
     description: "west of highbury",
-    videos: [VIDEOS.offBroadwayWb],
+    videos: [VIDEOS.offBroadwayWb.id],
     positions: [
       DISCOVERY_8TH,
       [49.26547, -123.20139],
@@ -68,14 +68,14 @@ export const OFF_BROADWAY = [
   {
     routeNames: [ROUTES.offBroadway.name],
     description: "little bit west of highbury",
-    videos: [VIDEOS.offBroadwayWb, VIDEOS.highburyNb],
-    videosStartAtStart: [VIDEOS.highburyNb],
+    videos: [VIDEOS.offBroadwayWb.id, VIDEOS.highburyNb.id],
+    videosStartAtStart: [VIDEOS.highburyNb.id],
     positions: [WEST_OF_HIGHBURY, HIGHBURY_8TH],
   },
   {
     routeNames: [ROUTES.offBroadway.name],
     description: "highbury to heather",
-    videos: [VIDEOS.offBroadwayWb],
+    videos: [VIDEOS.offBroadwayWb.id],
     positions: [
       HIGHBURY_8TH,
       [49.26524, -123.18582],
@@ -118,13 +118,13 @@ export const OFF_BROADWAY = [
   {
     routeNames: [ROUTES.offBroadway.name],
     description: "heather to ash",
-    videos: [VIDEOS.offBroadwayWb, VIDEOS.heatherSb],
+    videos: [VIDEOS.offBroadwayWb.id, VIDEOS.heatherSb.id],
     positions: [HEATHER_7TH, ASH_7TH],
   },
   {
     routeNames: [ROUTES.offBroadway.name],
     description: "ash to yukon",
-    videos: [VIDEOS.offBroadwayWb],
+    videos: [VIDEOS.offBroadwayWb.id],
     positions: [
       ASH_7TH,
       [49.26498, -123.11508],
@@ -136,7 +136,7 @@ export const OFF_BROADWAY = [
   {
     routeNames: [ROUTES.offBroadway.name],
     description: "yukon to mosaic",
-    videos: [VIDEOS.offBroadwayWb],
+    videos: [VIDEOS.offBroadwayWb.id],
     positions: [
       YUKON_5TH,
       [49.2666, -123.11078],
@@ -170,8 +170,8 @@ export const OFF_BROADWAY = [
   {
     routeNames: [ROUTES.offBroadway.name],
     description: "cvg/off broadway east",
-    videos: [VIDEOS.offBroadwayWb],
-    videosStartAtEnd: [VIDEOS.offBroadwayWb],
+    videos: [VIDEOS.offBroadwayWb.id],
+    videosStartAtEnd: [VIDEOS.offBroadwayWb.id],
     positions: [
       GRANDVIEW_8TH_N,
       [49.26325, -123.06818],

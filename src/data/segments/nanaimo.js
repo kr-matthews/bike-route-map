@@ -57,7 +57,7 @@ export const NANAIMO = [
     routeNames: [ROUTES.nanaimo.name],
     description: "sb",
     oneWay: "required",
-    videos: [VIDEOS.nanaimoSb],
+    videos: [VIDEOS.nanaimoSb.id],
     positions: [
       NANAIMO_PANDORA_W,
       [49.28208, -123.05668],
@@ -78,8 +78,8 @@ export const NANAIMO = [
     routeNames: [ROUTES.nanaimo.name],
     description: "leaving via 2nd",
     hideUnlessVideo: true,
-    videos: [VIDEOS.nanaimoSb],
-    videosEndAtStart: [VIDEOS.nanaimoSb],
+    videos: [VIDEOS.nanaimoSb.id],
+    videosEndAtStart: [VIDEOS.nanaimoSb.id],
     positions: [[49.26861, -123.05803], [49.2686, -123.05672], NANAIMO_2ND_W],
   },
 ];

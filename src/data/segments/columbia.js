@@ -11,8 +11,8 @@ export const COLUMBIA = [
   {
     routeNames: [ROUTES.columbia.name],
     description: "primary",
-    videos: [VIDEOS.columbiaNb],
-    videosStartAtStart: [VIDEOS.columbiaNb],
+    videos: [VIDEOS.columbiaNb.id],
+    videosStartAtStart: [VIDEOS.columbiaNb.id],
     positions: [
       COLUMBIA_5TH,
       [49.26749, -123.10944],

@@ -15,9 +15,9 @@ export const NELSON = [
     description: "unofficial part",
     oneWay: "required",
     type: "unofficial",
-    videos: [VIDEOS.cambieBridgeNelsonSb],
+    videos: [VIDEOS.cambieBridgeNelsonSb.id],
     hideUnlessVideo: true,
-    videosStartAtStart: [VIDEOS.cambieBridgeNelsonSb],
+    videosStartAtStart: [VIDEOS.cambieBridgeNelsonSb.id],
     positions: [
       BUTE_NELSON,
       [49.2825, -123.12801],
@@ -35,7 +35,7 @@ export const NELSON = [
     oneWay: "required",
     description: "official part",
     elevation: 0.5,
-    videos: [VIDEOS.cambieBridgeNelsonSb],
+    videos: [VIDEOS.cambieBridgeNelsonSb.id],
     positions: [
       RICHARDS_NELSON,
       HOMER_NELSON,
