@@ -11,6 +11,7 @@ export default function Video({ video, direction }) {
     month: "long",
     year: "numeric",
   });
+  const durationText = `${video.minutes} min`;
 
   return (
     <span
@@ -32,12 +33,10 @@ export default function Video({ video, direction }) {
           >
             {direction}
           </span>
-          {dateText && (
-            <>
-              {", "}
-              <span style={{ fontSize: "70%" }}>{dateText}</span>
-            </>
-          )}
+          {", "}
+          <span style={{ fontSize: "70%" }}>
+            {dateText}, {durationText}
+          </span>
         </span>
         <button
           style={{
