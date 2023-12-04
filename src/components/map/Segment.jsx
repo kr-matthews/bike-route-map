@@ -28,7 +28,7 @@ export default function Segment(segment) {
     pathOptions: createPathOptions(segment, {
       highlighted,
       selected: selectedRoute?.name,
-      video,
+      video: video?.id,
     }),
     eventHandlers: {
       mouseover: () => setHighlighted(primaryRouteName),
@@ -92,7 +92,7 @@ export default function Segment(segment) {
           )}
         </Tooltip>
       </Polyline>
-      {video && <VideoMarkers segment={segment} video={video} />}
+      {video && <VideoMarkers segment={segment} videoId={video.id} />}
     </Fragment>
   );
 }

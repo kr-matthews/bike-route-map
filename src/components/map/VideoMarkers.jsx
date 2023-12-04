@@ -9,16 +9,16 @@ const startText = "Video Starts Here";
 const endText = "Video Ends Here";
 const combinedText = "Video Starts/Ends Here";
 
-export default function VideoMarkers({ segment, video }) {
+export default function VideoMarkers({ segment, videoId }) {
   const firstPosition = segment.positions[0];
   const lastPosition = segment.positions[segment.positions.length - 1];
 
-  const startsAtStart = (segment.videosStartAtStart ?? []).includes(video);
-  const startsAtEnd = (segment.videosStartAtEnd ?? []).includes(video);
-  const endsAtStart = (segment.videosEndAtStart ?? []).includes(video);
-  const endsAtEnd = (segment.videosEndAtEnd ?? []).includes(video);
-  const loopsAtStart = (segment.videosLoopAtStart ?? []).includes(video);
-  const loopsAtEnd = (segment.videosLoopAtEnd ?? []).includes(video);
+  const startsAtStart = (segment.videosStartAtStart ?? []).includes(videoId);
+  const startsAtEnd = (segment.videosStartAtEnd ?? []).includes(videoId);
+  const endsAtStart = (segment.videosEndAtStart ?? []).includes(videoId);
+  const endsAtEnd = (segment.videosEndAtEnd ?? []).includes(videoId);
+  const loopsAtStart = (segment.videosLoopAtStart ?? []).includes(videoId);
+  const loopsAtEnd = (segment.videosLoopAtEnd ?? []).includes(videoId);
 
   return (
     <Fragment>

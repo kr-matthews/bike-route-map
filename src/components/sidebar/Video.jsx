@@ -3,12 +3,14 @@ import { Selections } from "../../App";
 import { VIDEO_UNIDIRECTIONAL_COLOUR } from "../../utils/params";
 
 export default function Video({ video, direction }) {
-  const { video: selectedVideo, setVideo } = useContext(Selections);
-  const isShowing = video === selectedVideo;
+  const { video: selectedVideo, setVideoId } = useContext(Selections);
+  const isShowing = video.id === selectedVideo?.id;
   const backgroundColor = isShowing ? VIDEO_UNIDIRECTIONAL_COLOUR : "Grey";
 
-  // !!! add date info to videos
-  const dateText = null; // "September 2023";
+  const dateText = video.date.toLocaleString("en-US", {
+    month: "long",
+    year: "numeric",
+  });
 
   return (
     <span
@@ -33,7 +35,7 @@ export default function Video({ video, direction }) {
           {dateText && (
             <>
               {", "}
-              <span style={{ fontSize: "70%" }}>September 2023</span>
+              <span style={{ fontSize: "70%" }}>{dateText}</span>
             </>
           )}
         </span>
@@ -44,7 +46,7 @@ export default function Video({ video, direction }) {
             cursor: "pointer",
           }}
           onClick={() =>
-            setVideo((current) => (current === video ? null : video))
+            setVideoId((current) => (current === video.id ? null : video.id))
           }
         >
           <span style={{ fontSize: "90%" }}>{isShowing ? "Hide" : "Show"}</span>
@@ -54,7 +56,7 @@ export default function Video({ video, direction }) {
         <iframe
           width="275px"
           height="155px"
-          src={video}
+          src={createUrl(video)}
           // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
           title="Embedded YouTube"
@@ -62,4 +64,10 @@ export default function Video({ video, direction }) {
       </div>
     </span>
   );
+}
+
+const YOUTUBE_PREFIX = "https://www.youtube.com/embed/";
+
+function createUrl(video) {
+  return `${YOUTUBE_PREFIX}${video.id}`;
 }
