@@ -141,7 +141,7 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.cambieBridgeSmithNb,
+          northbound: VIDEOS.cambieBridgeSmitheNb,
           southbound: VIDEOS.cambieBridgeNelsonSb,
         },
       },
@@ -504,7 +504,7 @@ export const ROUTES = {
   },
   smithe: {
     name: "Smithe St",
-    legs: [{ videos: { westbound: VIDEOS.cambieBridgeSmithNb } }],
+    legs: [{ videos: { westbound: VIDEOS.cambieBridgeSmitheNb } }],
   },
   spiritTrail: {
     name: "Spirit Trail",

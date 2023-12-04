@@ -46,7 +46,7 @@ export const CAMBIE_BRIDGE = [
     description: "northbound pre-bridge",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.cambieBridgeSmithNb.id],
+    videos: [VIDEOS.cambieBridgeSmitheNb.id],
     positions: [
       CAMBIE_2ND_NE,
       [49.26703, -123.11446],
@@ -57,7 +57,7 @@ export const CAMBIE_BRIDGE = [
     routeNames: [ROUTES.cambieBridge.name],
     description: "northbound bridge 1",
     oneWay: "required",
-    videos: [VIDEOS.cambieBridgeSmithNb.id],
+    videos: [VIDEOS.cambieBridgeSmitheNb.id],
     elevation: 1,
     positions: [
       NORTHBOUND_ELEVATED_START,
@@ -75,7 +75,7 @@ export const CAMBIE_BRIDGE = [
     routeNames: [ROUTES.cambieBridge.name],
     description: "northbound bridge 2",
     oneWay: "required",
-    videos: [VIDEOS.cambieBridgeSmithNb.id],
+    videos: [VIDEOS.cambieBridgeSmitheNb.id],
     elevation: 1.5,
     positions: [SPIRAL_PRE_SPLIT_1, SPIRAL_PRE_SPLIT_2],
   },
@@ -84,7 +84,7 @@ export const CAMBIE_BRIDGE = [
     description: "northbound bridge spiral 1",
     oneWay: "required",
     hideArrows: true,
-    videos: [VIDEOS.cambieBridgeSmithNb.id],
+    videos: [VIDEOS.cambieBridgeSmitheNb.id],
     elevation: 2,
     positions: [
       SPIRAL_PRE_SPLIT_2,
@@ -102,7 +102,7 @@ export const CAMBIE_BRIDGE = [
     description: "northbound bridge spiral 2",
     oneWay: "required",
     hideArrows: "true",
-    videos: [VIDEOS.cambieBridgeSmithNb.id],
+    videos: [VIDEOS.cambieBridgeSmitheNb.id],
     elevation: 1.5,
     positions: [SPIRAL_PRE_SPLIT_3, [49.27393, -123.11425], SPIRAL_PRE_SPLIT_4],
   },
@@ -110,7 +110,7 @@ export const CAMBIE_BRIDGE = [
     routeNames: [ROUTES.cambieBridge.name],
     description: "northbound bridge post-spiral",
     oneWay: "required",
-    videos: [VIDEOS.cambieBridgeSmithNb.id],
+    videos: [VIDEOS.cambieBridgeSmitheNb.id],
     elevation: 1,
     positions: [
       SPIRAL_PRE_SPLIT_4,
@@ -127,7 +127,7 @@ export const CAMBIE_BRIDGE = [
     description: "northbound post-bridge",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.cambieBridgeSmithNb.id],
+    videos: [VIDEOS.cambieBridgeSmitheNb.id],
     positions: [
       NORTHBOUND_ELEVATED_END,
       [49.27532, -123.11445],
@@ -270,7 +270,7 @@ export const CAMBIE_BRIDGE = [
   },
   {
     description: "crossing 2nd, east side",
-    videos: [VIDEOS.cambieBridgeSmithNb.id],
+    videos: [VIDEOS.cambieBridgeSmitheNb.id],
     positions: [CAMBIE_2ND_SE, CAMBIE_2ND_NE],
   },
   {
@@ -355,8 +355,8 @@ export const CAMBIE_BRIDGE = [
   },
   {
     description: "connection to off broadway via 5th",
-    videos: [VIDEOS.cambieBridgeSmithNb.id],
-    videosStartAtEnd: [VIDEOS.cambieBridgeSmithNb.id],
+    videos: [VIDEOS.cambieBridgeSmitheNb.id],
+    videosStartAtEnd: [VIDEOS.cambieBridgeSmitheNb.id],
     positions: [
       CAMBIE_2ND_SE,
       [49.26665, -123.11435],
