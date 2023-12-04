@@ -2,6 +2,8 @@ import { VIDEOS } from "../videos";
 
 // !!! handle non-routes, allow them to be previewed sometimes?
 
+// !! add distance to each leg
+
 export const ROUTES = {
   third: {
     name: "3rd",
