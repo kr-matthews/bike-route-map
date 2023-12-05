@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Routes from "./Routes";
 import SelectedRoute from "./SelectedRoute";
 import Legend from "./Legend";

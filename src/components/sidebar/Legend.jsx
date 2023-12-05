@@ -3,14 +3,6 @@ import { MapContainer } from "react-leaflet";
 import Segment from "../map/Segment";
 import PanesAndTiles from "../map/PanesAndTiles";
 import { SOMEWHAT_ZOOMED_IN } from "../../utils/params";
-import mapIcon from "../../images/marker-yellow.svg";
-import videoIcon from "../../images/video.svg";
-import {
-  HeavyFooter,
-  HomeLink,
-  CodeLink,
-  Link,
-} from "footer-dependency/dist/lib";
 
 const intersection = [49.26208, -123.10495];
 
@@ -95,7 +87,8 @@ export default function Legend({ goBack }) {
   return (
     <div
       style={{
-        paddingLeft: "1em",
+        paddingLeft: "2em",
+        paddingRight: "2em",
         flex: "1",
         overflow: "auto",
         display: "flex",
@@ -117,24 +110,6 @@ export default function Legend({ goBack }) {
         Menu
       </button>
 
-      <p style={{ marginLeft: "auto", marginRight: "auto", color: "red" }}>
-        Note: This project is still a work-in-progress. Some routes aren't drawn
-        yet.
-      </p>
-      <p>
-        This is a map of bike routes in and around Vancouver. All bike routes in
-        Vancouver are present (let me know if any are missing). Major bike
-        routes in adjacent cities (including UBC) are usually present, but there
-        are plenty more that are not on this map.
-      </p>
-      <p>
-        You can select (click on) a route via the list on the side panel, or
-        directly on the map. Either way, existing videos (if any) will be shown
-        for that route. If you select a video, then the segments that it
-        includes will show up in purple. The video has chapters at the bottom
-        for quickly finding a particular segment of a route (make the video
-        fullscreen to see them more easily).
-      </p>
       <p>
         See the dropdown and map below for an illustration of the types of
         routes shown. Note that arrows for one-way routes only appear if you
@@ -178,27 +153,6 @@ export default function Legend({ goBack }) {
           <Segment {...segment} {...segmentTypes[selectedTypeIndex].props} />
           <Segment {...otherSegment} />
         </MapContainer>
-      </div>
-      <div style={{ paddingTop: "3em" }}>
-        <HeavyFooter>
-          <HomeLink />
-          <CodeLink gitHubRepoName="bike-route-map" themeType="light" />
-          <Link
-            url="https://www.youtube.com/channel/UCgzTHi3DEAYwPyR1M7P_AeQ"
-            image={videoIcon}
-            description="Associated YouTube Channel"
-          />
-          <Link
-            url="https://vancouver.ca/files/cov/map-cycling-vancouver.pdf"
-            image={mapIcon}
-            description="City of Vancouver Cycling Map"
-          />
-          <Link
-            url="https://www.translink.ca/-/media/translink/documents/rider-guide/cycling/2021-cycling-maps/tl-cyclerouteseastwest_v2021web.pdf"
-            image={mapIcon}
-            description="TransLink Cycling Map"
-          />
-        </HeavyFooter>
       </div>
     </div>
   );
