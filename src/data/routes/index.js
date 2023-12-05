@@ -7,70 +7,73 @@ import { VIDEOS } from "../videos";
 export const ROUTES = {
   third: {
     name: "3rd",
-    legs: [{ videos: { eastbound: VIDEOS.thirdEb } }],
+    legs: [{ distance: 2.4, videos: { eastbound: VIDEOS.thirdEb } }],
   },
   fourth: {
     name: "4th",
-    legs: [{ videos: { eastbound: VIDEOS.fourthEb } }],
+    legs: [{ distance: 2.8, videos: { eastbound: VIDEOS.fourthEb } }],
   },
   tenth: {
     name: "10th",
     legs: [
-      { videos: { eastbound: VIDEOS.tenthEb, westbound: VIDEOS.tenthWb } },
+      {
+        distance: 7.3,
+        videos: { eastbound: VIDEOS.tenthEb, westbound: VIDEOS.tenthWb },
+      },
     ],
   },
   fourteenth: {
     name: "14th",
-    legs: [{ videos: { westbound: VIDEOS.fourteenthWb } }],
+    legs: [{ distance: 2.5, videos: { westbound: VIDEOS.fourteenthWb } }],
   },
   sixteenth: {
     name: "16th Ave",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 2.5, videos: {} }],
   },
   twentySecond: {
     name: "22nd Ave",
-    legs: [{ videos: { westbound: VIDEOS.twentySecondEb } }],
+    legs: [{ distance: 2.4, videos: { westbound: VIDEOS.twentySecondEb } }],
   },
   twentyNinth: {
     name: "29th",
-    legs: [{ videos: { westbound: VIDEOS.twentyNinthWb } }],
+    legs: [{ distance: 7.8, videos: { westbound: VIDEOS.twentyNinthWb } }],
   },
   fortyFifth: {
     name: "45th",
-    legs: [{ videos: { westbound: VIDEOS.fortyFifthWb } }],
+    legs: [{ distance: 9.2, videos: { westbound: VIDEOS.fortyFifthWb } }],
   },
   sixtySeventh: {
     name: "67th",
-    legs: [{ videos: { westbound: VIDEOS.sixtySeventhPlusWb } }],
+    legs: [{ distance: 1.6, videos: { westbound: VIDEOS.sixtySeventhPlusWb } }],
   },
   adanac: {
     name: "Adanac",
-    legs: [{ videos: { westbound: VIDEOS.adanacWb } }],
+    legs: [{ distance: 5.8, videos: { westbound: VIDEOS.adanacWb } }],
   },
   alberni: {
     name: "Alberni St",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 0.6, videos: {} }],
   },
   alder: {
     name: "Alder",
-    legs: [{ videos: { northbound: VIDEOS.alderNb } }],
+    legs: [{ distance: 0.7, videos: { northbound: VIDEOS.alderNb } }],
   },
   alexander: {
     name: "Alexander",
-    legs: [{ videos: { eastbound: VIDEOS.alexanderEb } }],
+    legs: [{ distance: 1.3, videos: { eastbound: VIDEOS.alexanderEb } }],
   },
   arbutusGreenway: {
     name: "Arbutus Greenway",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 8.5, videos: {} }],
   },
   arthurLaingBridge: {
     name: "Arthur Laing Bridge",
     // shortName: "Arthur Laing B.",
-    legs: [{ videos: { southbound: VIDEOS.arthurLaingSb } }],
+    legs: [{ distance: 1.3, videos: { southbound: VIDEOS.arthurLaingSb } }],
   },
   balaclava: {
     name: "Balaclava",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 6.7, videos: {} }],
   },
   barnet: {
     name: "Barnet Highway",
@@ -82,32 +85,40 @@ export const ROUTES = {
     legs: [
       {
         name: "Vancouver",
+        distance: 4.7,
         videos: {
           eastbound: VIDEOS.bcParkwayVancouverEb,
           westbound: VIDEOS.bcParkwayVancouverWb,
         },
       },
-      { name: "Burnaby", videos: { eastbound: VIDEOS.bcParkwayBurnabyEb } },
-      { name: "New Westminster", videos: {} },
-      { name: "Surrey", videos: {} },
+      {
+        name: "Burnaby",
+        distance: 7,
+        videos: { eastbound: VIDEOS.bcParkwayBurnabyEb },
+      },
+      { name: "New Westminster", distance: 6.8, videos: {} },
+      { name: "Surrey", distance: 6.4, videos: {} },
     ],
   },
   beatty: {
     name: "Beatty St",
-    legs: [{ videos: { southbound: VIDEOS.beattySb } }],
+    legs: [{ distance: 0.9, videos: { southbound: VIDEOS.beattySb } }],
   },
   blanca: {
     name: "Blanca St",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 1.2, videos: {} }],
   },
   bridgeportTrail: {
     name: "Bridgeport Trail",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 1.5, videos: {} }],
   },
   brunetteFraser: {
     name: "Brunette Fraser Regional Greenway",
     shortName: "Brunette Fraser G.",
-    legs: [{ videos: {} }],
+    legs: [
+      { name: "Burnaby", distance: 9.1, videos: {} },
+      { name: "New Westminster", distance: 4.4, videos: {} },
+    ],
   },
   bryneCreek: {
     name: "Bryne Creek Urban Trail",
@@ -117,31 +128,43 @@ export const ROUTES = {
   },
   burnaby: {
     name: "Burnaby",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 0.9, videos: {} }],
   },
   burrard: {
     name: "Burrard St",
     legs: [
       {
+        distanceMin: 1.7,
+        distanceMax: 3.4,
         videos: { northbound: VIDEOS.burrardNb, southbound: VIDEOS.burrardSb },
       },
     ],
   },
   bute: {
     name: "Bute",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 0.9, videos: {} }],
   },
   cambie: {
     name: "Cambie St",
     legs: [
-      { name: "South Vancouver", videos: { southbound: VIDEOS.cambieSb } },
-      { name: "Gastown", videos: { northbound: VIDEOS.cambieGastownNb } },
+      {
+        name: "South Vancouver",
+        distanceMax: 4,
+        distanceMin: 1.7,
+        videos: { southbound: VIDEOS.cambieSb },
+      },
+      {
+        name: "Gastown",
+        distance: 0.4,
+        videos: { northbound: VIDEOS.cambieGastownNb },
+      },
     ],
   },
   cambieBridge: {
     name: "Cambie Bridge",
     legs: [
       {
+        distance: 1,
         videos: {
           northbound: VIDEOS.cambieBridgeSmitheNb,
           southbound: VIDEOS.cambieBridgeNelsonSb,
@@ -151,24 +174,29 @@ export const ROUTES = {
   },
   canadaLine: {
     name: "Canada Line Path",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 3.2, videos: {} }],
   },
   cardero: {
     name: "Cardero",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 1.4, videos: {} }],
   },
   carrall: {
     name: "Carrall",
-    legs: [{ videos: { northbound: VIDEOS.carrallNb } }],
+    legs: [{ distance: 0.9, videos: { northbound: VIDEOS.carrallNb } }],
   },
   cassiar: {
     name: "Cassiar",
-    legs: [{ videos: { southbound: VIDEOS.cassiarSb } }],
+    legs: [{ distance: 1.2, videos: { southbound: VIDEOS.cassiarSb } }],
   },
   centralParkPerimeterTrail: {
     name: "Central Park Perimeter Trail",
     shortName: "Central Park Perim.",
-    legs: [{ videos: { clockwise: VIDEOS.centralParkPerimeterTrailCw } }],
+    legs: [
+      {
+        distance: 3.5,
+        videos: { clockwise: VIDEOS.centralParkPerimeterTrailCw },
+      },
+    ],
   },
   centralValleyGreenway: {
     name: "Central Valley Greenway",
@@ -176,28 +204,30 @@ export const ROUTES = {
     legs: [
       {
         name: "Vancouver",
+        distance: 6.7,
         videos: { eastbound: VIDEOS.centralValleyVancouverEb },
       },
-      { name: "Burnaby", videos: {} },
-      { name: "New Westminster", videos: {} },
+      { name: "Burnaby", distance: 11.9, videos: {} },
+      { name: "New Westminster", distance: 5.4, videos: {} },
     ],
   },
   chancellor: {
     name: "Chancellor Blvd",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 3.1, videos: {} }],
   },
   chilco: {
     name: "Chilco",
-    legs: [{ videos: { southbound: VIDEOS.chilcoSb } }],
+    legs: [{ distance: 0.7, videos: { southbound: VIDEOS.chilcoSb } }],
   },
   columbia: {
     name: "Columbia",
-    legs: [{ videos: { northbound: VIDEOS.columbiaNb } }],
+    legs: [{ distance: 0.6, videos: { northbound: VIDEOS.columbiaNb } }],
   },
   comoxHelmcken: {
     name: "Comox Helmcken",
     legs: [
       {
+        distance: 2.5,
         videos: {
           eastbound: VIDEOS.comoxHelmckenEb,
           westbound: VIDEOS.comoxHelmckenWb,
@@ -207,28 +237,28 @@ export const ROUTES = {
   },
   cypress: {
     name: "Cypress",
-    legs: [{ videos: { northbound: VIDEOS.cypressNb } }],
+    legs: [{ distance: 8.4, videos: { northbound: VIDEOS.cypressNb } }],
   },
   deerLakeParkway: {
     name: "Deer Lake Parkway Urban Trail",
     shortName: "Deer Lake Pkwy T.",
-    legs: [{ videos: { eastbound: VIDEOS.deerLakePkwyEb } }],
+    legs: [{ distance: 2.4, videos: { eastbound: VIDEOS.deerLakePkwyEb } }],
   },
   dumfries: {
     name: "Dumfries",
-    legs: [{ videos: { northbound: VIDEOS.dumfriesNb } }],
+    legs: [{ distance: 4.9, videos: { northbound: VIDEOS.dumfriesNb } }],
   },
   dunbar: {
     name: "Dunbar St",
-    legs: [{ videos: { northbound: VIDEOS.dunbarNb } }],
+    legs: [{ distance: 3, videos: { northbound: VIDEOS.dunbarNb } }],
   },
   dunsmuir: {
     name: "Dunsmuir",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 1.6, videos: {} }],
   },
   francesUnion: {
     name: "Frances Union",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 6.8, videos: {} }],
   },
   fraserForeshoreTrail: {
     name: "Fraser Foreshore Urban Trail",
@@ -244,6 +274,7 @@ export const ROUTES = {
     name: "Garden City Rd",
     legs: [
       {
+        distance: 5.6,
         videos: {
           northbound: VIDEOS.gardenCityNb,
           southbound: VIDEOS.gardenCitySb,
@@ -253,7 +284,7 @@ export const ROUTES = {
   },
   gladstone: {
     name: "Gladstone",
-    legs: [{ videos: { northbound: VIDEOS.gladstoneNb } }],
+    legs: [{ distance: 1.7, videos: { northbound: VIDEOS.gladstoneNb } }],
   },
   glenlyon: {
     name: "Glenlyon Urban Trail",
@@ -262,11 +293,11 @@ export const ROUTES = {
   },
   granville: {
     name: "Granville Ave",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 4, videos: {} }],
   },
   haro: {
     name: "Haro",
-    legs: [{ videos: { westbound: VIDEOS.haroWb } }],
+    legs: [{ distance: 1.4, videos: { westbound: VIDEOS.haroWb } }],
   },
   hastingsPark: {
     name: "Hastings Park",
@@ -282,16 +313,17 @@ export const ROUTES = {
   },
   heather: {
     name: "Heather",
-    legs: [{ videos: { southbound: VIDEOS.heatherSb } }],
+    legs: [{ distance: 7.3, videos: { southbound: VIDEOS.heatherSb } }],
   },
   highbury: {
     name: "Highbury St",
-    legs: [{ videos: { northbound: VIDEOS.highburyNb } }],
+    legs: [{ distance: 0.8, videos: { northbound: VIDEOS.highburyNb } }],
   },
   hillcrest: {
     name: "Hillcrest",
     legs: [
       {
+        distance: 2.6,
         videos: {
           eastbound: VIDEOS.hillcrestEb,
           westbound: VIDEOS.hillcrestWb,
@@ -301,39 +333,39 @@ export const ROUTES = {
   },
   homer: {
     name: "Homer St",
-    legs: [{ videos: { northbound: VIDEOS.homerNb } }],
+    legs: [{ distance: 1.1, videos: { northbound: VIDEOS.homerNb } }],
   },
   hornby: {
     name: "Hornby",
-    legs: [{ videos: { northbound: VIDEOS.hornbyNb } }],
+    legs: [{ distance: 2.1, videos: { northbound: VIDEOS.hornbyNb } }],
   },
   inverness: {
     name: "Inverness",
-    legs: [{ videos: { southbound: VIDEOS.invernessSb } }],
+    legs: [{ distance: 3.1, videos: { southbound: VIDEOS.invernessSb } }],
   },
   keefer: {
     name: "Keefer",
-    legs: [{ videos: { eastbound: VIDEOS.keeferEb } }],
+    legs: [{ distance: 1.2, videos: { eastbound: VIDEOS.keeferEb } }],
   },
   kent: {
     name: "Kent",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 7.5, videos: {} }],
   },
   kerr: {
     name: "Kerr St",
-    legs: [{ videos: { southbound: VIDEOS.kerrSb } }],
+    legs: [{ distance: 2.6, videos: { southbound: VIDEOS.kerrSb } }],
   },
   killarney: {
     name: "Killarney",
-    legs: [{ videos: { eastbound: VIDEOS.killarneyEb } }],
+    legs: [{ distance: 1, videos: { eastbound: VIDEOS.killarneyEb } }],
   },
   kingEdward: {
     name: "King Edward Ave",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 2.1, videos: {} }],
   },
   knightStreetBridge: {
     name: "Knight Street Bridge",
-    legs: [{ videos: { southbound: VIDEOS.knightStBridgeSb } }],
+    legs: [{ distance: 2.2, videos: { southbound: VIDEOS.knightStBridgeSb } }],
   },
   lakes: {
     name: "Lakes",
@@ -342,12 +374,13 @@ export const ROUTES = {
   },
   lakewood: {
     name: "Lakewood",
-    legs: [{ videos: { northbound: VIDEOS.lakewoodNb } }],
+    legs: [{ distance: 2.8, videos: { northbound: VIDEOS.lakewoodNb } }],
   },
   lionsGate: {
     name: "Lions Gate Bridge",
     legs: [
       {
+        distance: 4,
         videos: {
           northbound: VIDEOS.lionsGateBridgeNb,
           southbound: VIDEOS.lionsGateBridgeSb,
@@ -357,13 +390,17 @@ export const ROUTES = {
   },
   lougheed: {
     name: "Lougheed Highway",
-    legs: [{ videos: {} }],
+    legs: [{ distanceMax: 15.8, distanceMin: 15.1, videos: {} }],
   },
   marine: {
     name: "Marine",
     legs: [
-      { name: "SW Marine", videos: { eastbound: VIDEOS.swMarineEb } },
-      { name: "NW Marine", videos: {} },
+      { name: "NW Marine", distance: 7.1, videos: {} },
+      {
+        name: "SW Marine",
+        distance: 10.7,
+        videos: { eastbound: VIDEOS.swMarineEb },
+      },
     ],
   },
   marineWay: {
@@ -376,6 +413,7 @@ export const ROUTES = {
     shortName: "Masumi Mitsui Gr.",
     legs: [
       {
+        distance: 7.3,
         videos: {
           eastbound: VIDEOS.masumiMitsuiEb,
           westbound: VIDEOS.masumiMitsuiWb,
@@ -388,83 +426,90 @@ export const ROUTES = {
     legs: [
       {
         name: "Vancouver",
+        distance: 14.1,
         videos: { eastbound: VIDEOS.midtownVancouverEb },
       },
-      { name: "Burnaby", videos: { westbound: VIDEOS.midtownBurnabyWb } },
+      {
+        name: "Burnaby",
+        distance: 8.4,
+        videos: { westbound: VIDEOS.midtownBurnabyWb },
+      },
     ],
   },
   mosaic: {
     name: "Mosaic",
-    legs: [{ videos: { southbound: VIDEOS.mosaicSb } }],
+    legs: [{ distance: 3.5, videos: { southbound: VIDEOS.mosaicSb } }],
   },
   nanaimo: {
     name: "Nanaimo St",
-    legs: [{ videos: { southbound: VIDEOS.nanaimoSb } }],
+    legs: [{ distance: 1.6, videos: { southbound: VIDEOS.nanaimoSb } }],
   },
   nelson: {
     name: "Nelson St",
-    legs: [{ videos: { eastbound: VIDEOS.cambieBridgeNelsonSb } }],
+    legs: [
+      { distance: 0.4, videos: { eastbound: VIDEOS.cambieBridgeNelsonSb } },
+    ],
   },
   nicola: {
     name: "Nicola",
-    legs: [{ videos: { northbound: VIDEOS.nicolaNb } }],
+    legs: [{ distance: 0.3, videos: { northbound: VIDEOS.nicolaNb } }],
   },
   oakStreetBridge: {
     name: "Oak Street Bridge",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 1.9, videos: {} }],
   },
   offBroadway: {
     name: "Off Broadway",
-    legs: [{ videos: { westbound: VIDEOS.offBroadwayWb } }],
+    legs: [{ distance: 11.7, videos: { westbound: VIDEOS.offBroadwayWb } }],
   },
   ontario: {
     name: "Ontario",
-    legs: [{ videos: { northbound: VIDEOS.ontarioNb } }],
+    legs: [{ distance: 7.3, videos: { northbound: VIDEOS.ontarioNb } }],
   },
   pandora: {
     name: "Pandora",
-    legs: [{ videos: { eastbound: VIDEOS.pandoraEb } }],
+    legs: [{ distance: 2.2, videos: { eastbound: VIDEOS.pandoraEb } }],
   },
   pender: {
     name: "Pender St",
-    legs: [{ videos: { eastbound: VIDEOS.penderEb } }],
+    legs: [{ distance: 0.4, videos: { eastbound: VIDEOS.penderEb } }],
   },
   portMannBridge: {
     name: "Port Mann Bridge",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 3.1, videos: {} }],
   },
   portside: {
     name: "Portside",
-    legs: [{ videos: { eastbound: VIDEOS.portsideEb } }],
+    legs: [{ distance: 3, videos: { eastbound: VIDEOS.portsideEb } }],
   },
   powell: {
     name: "Powell",
-    legs: [{ videos: { eastbound: VIDEOS.powellEb } }],
+    legs: [{ distance: 0.9, videos: { eastbound: VIDEOS.powellEb } }],
   },
   princeEdward: {
     name: "Prince Edward",
-    legs: [{ videos: { northbound: VIDEOS.princeEdwardNb } }],
+    legs: [{ distance: 4.6, videos: { northbound: VIDEOS.princeEdwardNb } }],
   },
   railwayGreenway: {
     name: "Railway Greenway",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 5, videos: {} }],
   },
   richards: {
     name: "Richards",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 1.7, videos: {} }],
   },
   ridgeway: {
     name: "Ridgeway",
-    legs: [{ videos: {} }],
+    legs: [{ distanceMin: 17.3, distanceMax: 18.2, videos: {} }],
   },
   rumble: {
     name: "Rumble Street Urban Trail",
     shortName: "Rumble Urban Trail",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 3.3, videos: {} }],
   },
   rupert: {
     name: "Rupert St",
-    legs: [{ videos: { northbound: VIDEOS.rupertNb } }],
+    legs: [{ distance: 1.8, videos: { northbound: VIDEOS.rupertNb } }],
   },
   seaside: {
     name: "Seaside",
@@ -473,8 +518,12 @@ export const ROUTES = {
       { name: "Stanley Park", videos: {} },
       { name: "West End", videos: {} },
       { name: "False Creek", videos: {} },
-      { name: "Kitsilano", videos: { westbound: VIDEOS.seasideKitsWb } },
-      { name: "Jericho & Spanish Banks", videos: {} },
+      {
+        name: "Kitsilano",
+        distance: 4.6,
+        videos: { westbound: VIDEOS.seasideKitsWb },
+      },
+      { name: "Jericho & Spanish Banks", distance: 3.7, videos: {} },
     ],
   },
   seasideBypass: {
@@ -485,19 +534,19 @@ export const ROUTES = {
       // includes quebec
       { name: "False Creek South", videos: {} },
       // whyte?
-      { name: "York", videos: { eastbound: VIDEOS.yorkEb } },
-      { name: "3rd", videos: { eastbound: VIDEOS.thirdEb } },
-      { name: "NW Marine & 4th", videos: {} },
+      { name: "York", distance: 1.4, videos: { eastbound: VIDEOS.yorkEb } },
+      { name: "3rd", distance: 2.4, videos: { eastbound: VIDEOS.thirdEb } },
+      { name: "NW Marine & 4th", distance: 4, videos: {} },
     ],
   },
   seaToRiver: {
     name: "Sea to River",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 9.6, videos: {} }],
   },
   secondNarrowsBridge: {
     name: "Second Narrows Bridge",
     shortName: "Second Narrows Br.",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 2, videos: {} }],
   },
   shellRoadTrail: {
     name: "Shell Road Trail",
@@ -506,7 +555,9 @@ export const ROUTES = {
   },
   smithe: {
     name: "Smithe St",
-    legs: [{ videos: { westbound: VIDEOS.cambieBridgeSmitheNb } }],
+    legs: [
+      { distance: 1.2, videos: { westbound: VIDEOS.cambieBridgeSmitheNb } },
+    ],
   },
   spiritTrail: {
     name: "Spirit Trail",
@@ -516,33 +567,33 @@ export const ROUTES = {
   stanleyParkLoop: {
     name: "Stanley Park Loop",
     legs: [
-      { name: "Seawall", videos: {} },
-      { name: "Lost Lagoon", videos: {} },
+      { name: "Seawall", distance: 8.3, videos: {} },
+      { name: "Lost Lagoon", distance: 1.1, videos: {} },
     ],
   },
   sunrise: {
     name: "Sunrise",
-    legs: [{ videos: { northbound: VIDEOS.sunriseNb } }],
+    legs: [{ distance: 10.4, videos: { northbound: VIDEOS.sunriseNb } }],
   },
   terminalPath: {
     name: "Terminal Ave Path",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 1, videos: {} }],
   },
   university: {
     name: "University Blvd",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 2.6, videos: {} }],
   },
   valley: {
     name: "Valley",
-    legs: [{ videos: { southbound: VIDEOS.valleySb } }],
+    legs: [{ distance: 3.9, videos: { southbound: VIDEOS.valleySb } }],
   },
   walesDuchess: {
     name: "Wales Duchess",
-    legs: [{ videos: { southbound: VIDEOS.walesDuchessSb } }],
+    legs: [{ distance: 2.1, videos: { southbound: VIDEOS.walesDuchessSb } }],
   },
   waterfront: {
     name: "Waterfront St",
-    legs: [{ videos: { eastbound: VIDEOS.waterfrontEb } }],
+    legs: [{ distance: 1.7, videos: { eastbound: VIDEOS.waterfrontEb } }],
   },
   willingdon: {
     name: "Willingdon Urban Trail",
@@ -558,18 +609,18 @@ export const ROUTES = {
   },
   windermere: {
     name: "Windermere",
-    legs: [{ videos: {} }],
+    legs: [{ distance: 0.4, videos: {} }],
   },
   windsor: {
     name: "Windsor",
-    legs: [{ videos: { northbound: VIDEOS.windsorNb } }],
+    legs: [{ distance: 4.4, videos: { northbound: VIDEOS.windsorNb } }],
   },
   york: {
     name: "York",
-    legs: [{ videos: { eastbound: VIDEOS.yorkEb } }],
+    legs: [{ distance: 1.4, videos: { eastbound: VIDEOS.yorkEb } }],
   },
   yukon: {
     name: "Yukon",
-    legs: [{ videos: { southbound: VIDEOS.yukonSb } }],
+    legs: [{ distance: 2.7, videos: { southbound: VIDEOS.yukonSb } }],
   },
 };
