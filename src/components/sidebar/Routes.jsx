@@ -10,7 +10,7 @@ import { isSubsequence, removeWhiteSpaces } from "../../utils/strings";
 
 // !!! allow filtering (by direction (only show east-west), by city, by quality (future), etc)?
 
-export default function Routes({ showLegend }) {
+export default function Routes({ goBack }) {
   const [searchText, setSearchText] = useState("");
   const routesToShow = useMemo(
     () =>
@@ -43,9 +43,9 @@ export default function Routes({ showLegend }) {
           right: 20,
           cursor: "pointer",
         }}
-        onClick={showLegend}
+        onClick={goBack}
       >
-        Show Legend
+        Menu
       </button>
       <div
         style={{

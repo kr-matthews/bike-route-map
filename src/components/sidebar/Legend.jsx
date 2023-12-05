@@ -89,7 +89,7 @@ const segmentTypes = [
   },
 ];
 
-export default function Legend({ hide }) {
+export default function Legend({ goBack }) {
   const [selectedTypeIndex, setSelectedTypeIndex] = useState(0);
 
   return (
@@ -112,9 +112,9 @@ export default function Legend({ hide }) {
           right: 20,
           cursor: "pointer",
         }}
-        onClick={hide}
+        onClick={goBack}
       >
-        Show Routes
+        Menu
       </button>
 
       <p style={{ marginLeft: "auto", marginRight: "auto", color: "red" }}>

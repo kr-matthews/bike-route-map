@@ -2,12 +2,22 @@ import { useState } from "react";
 import Routes from "./Routes";
 import SelectedRoute from "./SelectedRoute";
 import Legend from "./Legend";
+import Menu from "./Menu";
 
 // !! move styling to css files
-// !! add wrapper component with drop-down to select child: Preview, Legend, etc
+
+const ID_LEGEND = "legend";
+const ID_ROUTES = "routes";
+
+const menuOptions = [
+  { id: ID_LEGEND, name: "Legend" },
+  { id: ID_ROUTES, name: "Routes" },
+];
 
 export default function Sidebar({ mapRef }) {
-  const [isLegendVisible, setIsLegendVisible] = useState(false);
+  // !!! store in local storage
+  const [selectedOptionId, setSelectedOptionId] = useState();
+  const backToMenu = () => setSelectedOptionId();
 
   return (
     <div
@@ -21,11 +31,15 @@ export default function Sidebar({ mapRef }) {
         backgroundColor: "AliceBlue",
       }}
     >
-      {isLegendVisible ? (
-        <Legend hide={() => setIsLegendVisible(false)} />
-      ) : (
+      {!selectedOptionId && (
+        <Menu options={menuOptions} setSelectedId={setSelectedOptionId} />
+      )}
+
+      {selectedOptionId === ID_LEGEND && <Legend goBack={backToMenu} />}
+
+      {selectedOptionId === ID_ROUTES && (
         <>
-          <Routes showLegend={() => setIsLegendVisible(true)} />
+          <Routes goBack={backToMenu} />
           <SelectedRoute mapRef={mapRef} />
         </>
       )}
