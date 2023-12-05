@@ -3,11 +3,13 @@ import Routes from "./Routes";
 import SelectedRoute from "./SelectedRoute";
 import Legend from "./Legend";
 import Menu from "./Menu";
+import { useSavedState } from "../../hooks/useSavedState";
 
 // !! move styling to css files
 
 const ID_LEGEND = "legend";
 const ID_ROUTES = "routes";
+const ID_NONE = "none";
 
 const menuOptions = [
   { id: ID_LEGEND, name: "Legend" },
@@ -15,9 +17,12 @@ const menuOptions = [
 ];
 
 export default function Sidebar({ mapRef }) {
-  // !!! store in local storage
-  const [selectedOptionId, setSelectedOptionId] = useState();
-  const backToMenu = () => setSelectedOptionId();
+  const [selectedOptionId, setSelectedOptionId] = useSavedState(
+    "menu_selection",
+    ID_NONE
+  );
+  const backToMenu = () => setSelectedOptionId(ID_NONE);
+  const isNoneSelected = menuOptions.every(({ id }) => id !== selectedOptionId);
 
   return (
     <div
@@ -31,7 +36,7 @@ export default function Sidebar({ mapRef }) {
         backgroundColor: "AliceBlue",
       }}
     >
-      {!selectedOptionId && (
+      {isNoneSelected && (
         <Menu options={menuOptions} setSelectedId={setSelectedOptionId} />
       )}
 
