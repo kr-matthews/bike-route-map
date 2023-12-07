@@ -1,16 +1,20 @@
 import {
+  BARNET_INLET_N,
   BARNET_RIDGE,
   BOUNDARY_ADANAC,
   CARLETON_FRANCES,
   CLIFF_BRUNETTE_FRASER,
   CLIFF_UNION,
+  INLET_BAYVIEW_E,
+  INLET_BAYVIEW_W,
+  INLET_RIDGE_E,
+  INLET_RIDGE_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-const BARNET_INLET = [49.28822, -122.94958];
+const BARNET_INLET_S = [49.28822, -122.94958];
 
-const INLET_BAYVIEW_W = [49.28676, -122.95342];
 const CLIFF_WESTRIDGE_PARK = [49.28122, -122.95928];
 const HASTINGS_OVERPASS_N = [49.28086, -122.96047];
 const HASTINGS_OVERPASS_S = [49.27997, -122.96001];
@@ -19,6 +23,18 @@ const OVERPASS_ADJ_S = [49.28002, -122.96012];
 const EAST_OF_BOUNDARY_ADANAC = [49.27756, -123.0221];
 
 export const FRANCES_UNION = [
+  {
+    description: "connection via ridge dr",
+    type: "shared-pedestrian",
+    positions: [
+      INLET_RIDGE_W,
+      INLET_RIDGE_E,
+      [49.28347, -122.95529],
+      [49.28347, -122.95399],
+      [49.28346, -122.95379],
+      BARNET_RIDGE,
+    ],
+  },
   {
     routeNames: [ROUTES.francesUnion.name],
     description: "just east of boundary",
@@ -89,7 +105,7 @@ export const FRANCES_UNION = [
       [49.28524, -122.95271],
       [49.28631, -122.95222],
       [49.28684, -122.95162],
-      BARNET_INLET,
+      BARNET_INLET_S,
     ],
   },
   {
@@ -97,20 +113,20 @@ export const FRANCES_UNION = [
     description: "eb ramp",
     oneWay: "required",
     positions: [
-      BARNET_INLET,
+      BARNET_INLET_S,
       [49.28826, -122.94963],
-      [49.28826, -122.9497],
+      [49.28825, -122.9497],
       [49.28825, -122.94976],
-      [49.28826, -122.94982],
-      [49.2883, -122.94982],
-      [49.28835, -122.94974],
-      [49.28839, -122.94972],
+      [49.28826, -122.94981],
+      [49.28829, -122.94981],
+      [49.28835, -122.94973],
+      BARNET_INLET_N,
     ],
   },
   {
-    routeNames: [ROUTES.francesUnion.name],
     description: "crossing inlet at bayview",
-    positions: [[49.28666, -122.9532], INLET_BAYVIEW_W],
+    type: "shared-pedestrian",
+    positions: [INLET_BAYVIEW_E, INLET_BAYVIEW_W],
   },
   {
     routeNames: [ROUTES.francesUnion.name],
@@ -119,24 +135,24 @@ export const FRANCES_UNION = [
     positions: [
       INLET_BAYVIEW_W,
       [49.28671, -122.95361],
-      [49.28675, -122.95384],
-      [49.28681, -122.95395],
-      [49.28692, -122.95425],
-      [49.28693, -122.95452],
-      [49.2869, -122.95482],
-      [49.28693, -122.95524],
+      [49.28676, -122.95389],
+      [49.28682, -122.95395],
+      [49.28693, -122.95425],
+      [49.28694, -122.95452],
+      [49.28691, -122.95482],
+      [49.28692, -122.95524],
       [49.28688, -122.95578],
-      [49.28676, -122.95611],
+      [49.28676, -122.95607],
       [49.28655, -122.95643],
       [49.286, -122.95885],
-      [49.28596, -122.95897],
-      [49.28553, -122.95897],
-      [49.28457, -122.95898],
-      [49.28344, -122.959],
-      [49.28299, -122.95879],
-      [49.28282, -122.95878],
-      [49.28235, -122.95901],
-      [49.28175, -122.95901],
+      [49.28596, -122.959],
+      [49.28553, -122.959],
+      [49.28457, -122.95901],
+      [49.28344, -122.95902],
+      [49.28299, -122.9588],
+      [49.28282, -122.95881],
+      [49.28235, -122.959],
+      [49.28185, -122.95901],
       [49.28135, -122.95921],
       CLIFF_WESTRIDGE_PARK,
     ],

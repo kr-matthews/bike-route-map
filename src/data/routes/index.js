@@ -75,8 +75,7 @@ export const ROUTES = {
   },
   barnet: {
     name: "Barnet Highway",
-    legs: [{ videos: {} }],
-    isIncomplete: true,
+    legs: [{ distance: 8.3, videos: {} }],
   },
   bcParkway: {
     name: "BC Parkway",
