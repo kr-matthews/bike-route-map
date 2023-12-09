@@ -5,9 +5,14 @@ import PanesAndTiles from "./PanesAndTiles";
 import { DEFAULT_BOUNDS } from "../../utils/map";
 import "./map.css";
 
-export default function MainMap({ setMapRef }) {
+export default function MainMap({ setMapRef, fullWidth = false }) {
   return (
-    <div style={{ height: "1em", width: "calc(100% - 625px)" }}>
+    <div
+      style={{
+        height: "1em",
+        width: fullWidth ? "100%" : "calc(100% - 625px)",
+      }}
+    >
       <MapContainer
         style={{
           width: "100%",
