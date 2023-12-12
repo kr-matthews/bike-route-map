@@ -487,6 +487,10 @@ export const ROUTES = {
     name: "Prince Edward",
     legs: [{ distance: 4.6, videos: { northbound: VIDEOS.princeEdwardNb } }],
   },
+  railway: {
+    name: "Railway St",
+    legs: [{ distance: 4.2, videos: {} }],
+  },
   railwayGreenway: {
     name: "Railway Greenway",
     legs: [{ distance: 5, videos: {} }],

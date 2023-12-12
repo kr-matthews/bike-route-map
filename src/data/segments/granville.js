@@ -2,16 +2,15 @@ import {
   GARDEN_CITY_GRANVILLE_NW,
   GARDEN_CITY_GRANVILLE_S,
   GARDEN_CITY_GRANVILLE_W,
+  RAILWAY_GRANVILLE_MIDDLE,
+  RAILWAY_GRANVILLE_NW,
+  RAILWAY_GRANVILLE_SE,
   RAILWAY_GREENWAY_GRANVILLE_N,
   RAILWAY_GREENWAY_GRANVILLE_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
 const RAILWAY_GRANVILLE_N = [49.1626, -123.16888];
-const RAILWAY_GRANVILLE_NW = [49.16261, -123.16955];
-const RAILWAY_GRANVILLE_SE = [49.16234, -123.16901];
-const RAILWAY_GRANVILLE_SW = [49.16223, -123.16949];
-const RAILWAY_GRANVILLE_MIDDLE = [49.16242, -123.16924];
 const GARDEN_CITY_GRANVILLE_SW = [49.16272, -123.12627];
 
 export const GRANVILLE = [
@@ -47,18 +46,6 @@ export const GRANVILLE = [
       RAILWAY_GRANVILLE_NW,
       RAILWAY_GRANVILLE_MIDDLE,
       RAILWAY_GRANVILLE_SE,
-    ],
-  },
-  // !!! move to railway
-  {
-    description: "railway split to continue sb",
-    oneWay: "required",
-    positions: [
-      RAILWAY_GRANVILLE_NW,
-      [49.1625, -123.16945],
-      [49.16242, -123.16941],
-      [49.16231, -123.16944],
-      RAILWAY_GRANVILLE_SW,
     ],
   },
   {
