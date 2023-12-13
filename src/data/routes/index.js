@@ -117,9 +117,9 @@ export const ROUTES = {
       { name: "New Westminster", distance: 4.4, videos: {} },
     ],
   },
-  bryneCreek: {
-    name: "Bryne Creek Urban Trail",
-    shortName: "Bryne Creek Trail",
+  byrneCreek: {
+    name: "Byrne Creek Urban Trail",
+    shortName: "Byrne Creek Trail",
     legs: [{ videos: {} }],
     isIncomplete: true,
   },
@@ -260,8 +260,7 @@ export const ROUTES = {
   fraserForeshoreTrail: {
     name: "Fraser Foreshore Urban Trail",
     shortName: "Fraser Foreshore T.",
-    legs: [{ videos: {} }],
-    isIncomplete: true,
+    legs: [{ distance: 3.4, videos: {} }],
   },
   fraserRiverTrail: {
     name: "Fraser River Trail",
