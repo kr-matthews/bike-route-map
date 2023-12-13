@@ -8,11 +8,13 @@ import {
   GILMORE_LOUGHEED_SW,
   GILMORE_STILL_CREEK,
   MCKAY_RUMBLE,
+  NEW_HAVEN_MARINE,
   PATTERSON_MAYWOOD_W,
   PATTERSON_MOSCROP,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
+const MCKAY_BOXER = [49.21028, -123.00869];
 const PATTERSON_MAYWOOD = [49.22539, -123.01264];
 const GILMORE_HALIFAX_SE = [49.26797, -123.01417];
 const GILMORE_HALIFAX_SW = [49.26797, -123.01432];
@@ -27,17 +29,23 @@ export const SEA_TO_RIVER = [
     positions: [PATTERSON_MAYWOOD_W, PATTERSON_MAYWOOD],
   },
   {
-    routeNames: [ROUTES.seaToRiver.name],
-    description: "marine dr to central park",
+    description: "trail: marine dr to boxer",
     positions: [
-      [49.20912, -123.00838],
+      NEW_HAVEN_MARINE,
       [49.20916, -123.00835],
       [49.20927, -123.00835],
       [49.20966, -123.00835],
       [49.20985, -123.00843],
       [49.20989, -123.00861],
       [49.21017, -123.00861],
-      [49.21028, -123.00869],
+      MCKAY_BOXER,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaToRiver.name],
+    description: "boxer to central park",
+    positions: [
+      MCKAY_BOXER,
       [49.21222, -123.00869],
       MCKAY_RUMBLE,
       [49.21661, -123.0087],

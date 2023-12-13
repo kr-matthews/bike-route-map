@@ -284,8 +284,7 @@ export const ROUTES = {
   },
   glenlyon: {
     name: "Glenlyon Urban Trail",
-    legs: [{ videos: {} }],
-    isIncomplete: true,
+    legs: [{ distance: 2.4, videos: {} }],
   },
   granville: {
     name: "Granville Ave",
