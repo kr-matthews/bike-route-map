@@ -13,9 +13,13 @@ import { ROUTES } from "../routes";
 
 // ! bridges
 
+const KING_EDWARD_ELEVATION_START = [49.23141, -122.86171];
+const KING_EDWARD_ELEVATION_END = [49.23318, -122.86179];
+
 export const BRUNETTE_FRASER = [
   {
-    description: "united connection with lougheed",
+    description: "united connection with lougheed, minus bridge",
+    elevation: 0.5,
     positions: [
       CANFOR_BRAID,
       [49.22978, -122.87835],
@@ -41,8 +45,19 @@ export const BRUNETTE_FRASER = [
       [49.23057, -122.86286],
       [49.23061, -122.86184],
       [49.23068, -122.86176],
-      [49.23141, -122.86171], // bridge start
-      [49.23318, -122.86179],
+      KING_EDWARD_ELEVATION_START,
+    ],
+  },
+  {
+    description: "king edward bridge",
+    elevation: 1,
+    positions: [KING_EDWARD_ELEVATION_START, KING_EDWARD_ELEVATION_END],
+  },
+  {
+    description: "king edward bridge north side",
+    elevation: 0.5,
+    positions: [
+      KING_EDWARD_ELEVATION_END,
       [49.23416, -122.86184],
       [49.23428, -122.86192],
       KING_EDWARD_LOUGHEED_SW,
