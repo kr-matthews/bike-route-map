@@ -2,6 +2,10 @@ import {
   BLANCA_10TH_E,
   BLANCA_10TH_NW,
   BLANCA_10TH_SW,
+  WESBROOK_UNIVERSITY_NE,
+  WESBROOK_UNIVERSITY_NW,
+  WESBROOK_UNIVERSITY_SE,
+  WESBROOK_UNIVERSITY_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
@@ -37,8 +41,8 @@ export const UNIVERSITY = [
       [49.26706, -123.24172],
       [49.26696, -123.24248],
       [49.26671, -123.24416],
-      [49.26645, -123.24546],
-      [49.26637, -123.24572],
+      WESBROOK_UNIVERSITY_NE,
+      WESBROOK_UNIVERSITY_NW,
       [49.2662, -123.24678],
       [49.26611, -123.24734],
       [49.26592, -123.24866],
@@ -50,8 +54,8 @@ export const UNIVERSITY = [
       [49.2658, -123.24863],
       [49.26602, -123.24721],
       [49.26622, -123.24582],
-      [49.26626, -123.2456],
-      [49.26632, -123.24527],
+      WESBROOK_UNIVERSITY_SW,
+      WESBROOK_UNIVERSITY_SE,
       [49.26644, -123.24464],
       [49.26653, -123.244],
       [49.26679, -123.24235],

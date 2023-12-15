@@ -2,6 +2,14 @@ import {
   BLANCA_16TH_NW_SLIP,
   MARINE_16TH_NNE,
   MARINE_16TH_SSE,
+  WESBROOK_16TH_EN,
+  WESBROOK_16TH_ES,
+  WESBROOK_16TH_NE,
+  WESBROOK_16TH_NW,
+  WESBROOK_16TH_SE,
+  WESBROOK_16TH_SW,
+  WESBROOK_16TH_WN,
+  WESBROOK_16TH_WS,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
@@ -17,7 +25,7 @@ export const SIXTEENTH = [
   // },
   {
     routeNames: [ROUTES.sixteenth.name],
-    description: "eb",
+    description: "eb: to wesbrook",
     oneWay: "required",
     positions: [
       MARINE_16TH_SSE,
@@ -40,6 +48,7 @@ export const SIXTEENTH = [
       [49.25388, -123.24125],
       [49.25385, -123.24111],
       [49.25381, -123.24103], // EAST_MALL_16TH_SW
+      [49.25389, -123.24086],
       [49.25393, -123.24068], // EAST_MALL_16TH_SE
       [49.25403, -123.24066],
       [49.25411, -123.24055], // EAST_MALL_16TH_ES
@@ -48,12 +57,38 @@ export const SIXTEENTH = [
       [49.25481, -123.2387],
       [49.2554, -123.23702],
       [49.25539, -123.23695],
-      [49.25546, -123.23669], // WESBROOK_16TH_WS
-      [49.25539, -123.23625], // WESBROOK_16TH_SW
-      [49.2555, -123.23594], // WESBROOK_16TH_SE
+      WESBROOK_16TH_WS,
+    ],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name, ROUTES.wesbrook.name],
+    description: "eb: wesbrook SW",
+    oneWay: "recommended",
+    positions: [WESBROOK_16TH_WS, WESBROOK_16TH_SW],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "eb: crossing wesbrook",
+    oneWay: "recommended",
+    positions: [WESBROOK_16TH_SW, WESBROOK_16TH_SE],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name, ROUTES.wesbrook.name],
+    description: "eb: wesbrook SE",
+    oneWay: "recommended",
+    positions: [
+      WESBROOK_16TH_SE,
       [49.25559, -123.23591],
       [49.25568, -123.23586],
-      [49.25572, -123.23581], // WESBROOK_16TH_ES
+      WESBROOK_16TH_ES,
+    ],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "eb: from wesbrook",
+    oneWay: "required",
+    positions: [
+      WESBROOK_16TH_ES,
       [49.25587, -123.23565],
       [49.25633, -123.23432],
       [49.25692, -123.23268],
@@ -74,7 +109,7 @@ export const SIXTEENTH = [
   },
   {
     routeNames: [ROUTES.sixteenth.name],
-    description: "wb",
+    description: "wb: to wesbrook",
     oneWay: "required",
     positions: [
       BLANCA_16TH_NW_SLIP,
@@ -105,13 +140,38 @@ export const SIXTEENTH = [
       [49.25637, -123.23466],
       [49.25615, -123.23534],
       [49.25601, -123.23576],
-      [49.25601, -123.23601], // WESBROOK_16TH_EN
-      [49.25607, -123.23631],
-      [49.25611, -123.23641], // WESBROOK_16TH_NE
-      [49.25599, -123.23676], // WESBROOK_16TH_NW
+      WESBROOK_16TH_EN,
+    ],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name, ROUTES.wesbrook.name],
+    description: "wb: wesbrook NE",
+    oneWay: "recommended",
+    positions: [WESBROOK_16TH_EN, [49.25607, -123.23631], WESBROOK_16TH_NE],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "wb: crossing wesbrook",
+    oneWay: "recommended",
+    positions: [WESBROOK_16TH_NE, WESBROOK_16TH_NW],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name, ROUTES.wesbrook.name],
+    description: "wb: wesbrook NW",
+    oneWay: "recommended",
+    positions: [
+      WESBROOK_16TH_NW,
       [49.25591, -123.23679],
       [49.25581, -123.23685],
-      [49.2557, -123.23693], // WESBROOK_16TH_WN
+      WESBROOK_16TH_WN,
+    ],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "wb: from wesbrook",
+    oneWay: "required",
+    positions: [
+      WESBROOK_16TH_WN,
       [49.25556, -123.23734],
       [49.2555, -123.23736],
       [49.25498, -123.23883],
@@ -121,7 +181,8 @@ export const SIXTEENTH = [
       [49.25442, -123.24069], // EAST_MALL_16TH_EN
       [49.25446, -123.24096],
       [49.25453, -123.24114], // EAST_MALL_16TH_NE
-      [49.25442, -123.24154], // EAST_MALL_16TH_NW
+      [49.25444, -123.24132],
+      [49.25443, -123.24154], // EAST_MALL_16TH_NW
       [49.25429, -123.24156],
       [49.2542, -123.24164], // EAST_MALL_16TH_WN
       [49.25409, -123.2418],

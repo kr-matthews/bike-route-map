@@ -594,6 +594,10 @@ export const ROUTES = {
     name: "Waterfront St",
     legs: [{ distance: 1.7, videos: { eastbound: VIDEOS.waterfrontEb } }],
   },
+  wesbrook: {
+    name: "Wesbrook Mall",
+    legs: [{ distance: 3.4, videos: {} }],
+  },
   willingdon: {
     name: "Willingdon Urban Trail",
     shortName: "Willingdon Trail",

@@ -27,6 +27,9 @@ import {
   MARINE_SEAWALL_CONNECTION_2,
   MARINE_16TH_NNE,
   MARINE_16TH_SSE,
+  WESBROOK_MARINE_N,
+  WESBROOK_MARINE_PRE_SLIP,
+  WESBROOK_MARINE_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -230,8 +233,8 @@ export const MARINE = [
       [49.24224, -123.22824],
       [49.2431, -123.22998],
       [49.24389, -123.23139],
-      [49.24493, -123.23334],
-      [49.24507, -123.23357],
+      WESBROOK_MARINE_PRE_SLIP,
+      WESBROOK_MARINE_N,
       [49.2462, -123.23576],
       [49.24694, -123.23731],
       [49.24754, -123.23849],
@@ -313,7 +316,7 @@ export const MARINE = [
       [49.2467, -123.23753],
       [49.24557, -123.23511],
       [49.24523, -123.23452],
-      [49.24486, -123.23386],
+      WESBROOK_MARINE_S,
       [49.24379, -123.23194],
       [49.24288, -123.2303],
       [49.24232, -123.22921],

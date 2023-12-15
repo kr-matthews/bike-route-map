@@ -7,10 +7,26 @@ import {
   MARINE_CHANCELLOR_N,
   MARINE_CHANCELLOR_SE,
   TASMANIA_CHANCELLOR,
+  WESBROOK_CHANCELLOR_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
+const WESBROOK_CHANCELLOR_ES = [49.27315, -123.24832];
+const WESBROOK_CHANCELLOR_WS = [49.27301, -123.24909];
+const WESBROOK_CHANCELLOR_EN = [49.27335, -123.24838];
+const WESBROOK_CHANCELLOR_WN = [49.2732, -123.24919];
+
 export const CHANCELLOR = [
+  {
+    description: "crossing at wesbrook nb",
+    oneWay: "recommended",
+    positions: [WESBROOK_CHANCELLOR_ES, WESBROOK_CHANCELLOR_EN],
+  },
+  {
+    description: "crossing at wesbrook sb",
+    oneWay: "recommended",
+    positions: [WESBROOK_CHANCELLOR_WN, WESBROOK_CHANCELLOR_WS],
+  },
   {
     routeNames: [ROUTES.chancellor.name],
     description: "middle shared path",
@@ -100,13 +116,13 @@ export const CHANCELLOR = [
       [49.27267, -123.2505],
       [49.27282, -123.24993],
       [49.27294, -123.24944],
-      [49.27301, -123.24909],
+      WESBROOK_CHANCELLOR_WS,
       [49.27301, -123.24893],
-      [49.27292, -123.24878],
+      WESBROOK_CHANCELLOR_SW,
       [49.27295, -123.24865],
       [49.27303, -123.24865],
       [49.27309, -123.24862],
-      [49.27315, -123.24832],
+      WESBROOK_CHANCELLOR_ES,
       [49.27321, -123.24788],
       [49.27329, -123.24715],
       [49.27334, -123.24638],
@@ -131,12 +147,13 @@ export const CHANCELLOR = [
       [49.27352, -123.24688],
       [49.27349, -123.24728],
       [49.27339, -123.2481],
+      WESBROOK_CHANCELLOR_EN,
       [49.27332, -123.24852],
       [49.27329, -123.24871],
       [49.2733, -123.24884],
       [49.27328, -123.24896],
       [49.27323, -123.24905],
-      [49.2732, -123.24919],
+      WESBROOK_CHANCELLOR_WN,
       [49.27316, -123.2494],
       [49.2731, -123.2497],
       [49.27286, -123.25062],

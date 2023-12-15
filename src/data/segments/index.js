@@ -98,6 +98,7 @@ import { UNIVERSITY } from "./university";
 import { VALLEY } from "./valley";
 import { WALES_DUCHESS } from "./walesDuchess";
 import { WATERFRONT } from "./waterfront";
+import { WESBROOK } from "./wesbrook";
 import { WINDERMERE } from "./windermere";
 import { WINDSOR } from "./windsor";
 import { YORK } from "./york";
@@ -205,6 +206,7 @@ export const SEGMENTS = [
   ...VALLEY,
   ...WALES_DUCHESS,
   ...WATERFRONT,
+  ...WESBROOK,
   ...WINDERMERE,
   ...WINDSOR,
   ...YORK,
