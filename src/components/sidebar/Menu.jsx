@@ -11,6 +11,7 @@ import {
   CodeLink,
   Link,
 } from "footer-dependency/dist/lib";
+import { disclaimer } from "../../utils/strings";
 
 export default function Menu({ options, setSelectedId }) {
   return (
@@ -23,31 +24,26 @@ export default function Menu({ options, setSelectedId }) {
         ))}
 
         <div>
-          <p
-            style={{
-              marginLeft: "auto",
-              marginRight: "auto",
-              color: "red",
-              fontSize: "125%",
-            }}
-          >
+          <p style={{ color: "red" }}>
             Note: This project is still a work-in-progress. Some routes aren't
             drawn yet.
           </p>
           <p>
             This is a map of bike routes in and around Vancouver. All bike
             routes in Vancouver are present (let me know if any are missing).
-            Major bike routes in adjacent cities (including UBC) are usually
-            present, but there are plenty more that are not on this map.
+            Major bike routes in adjacent cities (as well as UBC) are usually
+            present, but there are plenty more bike routes (and other instances
+            of bike infrastructure) that are not on this map.
           </p>
           <p>
-            You can select (click on) a route via the list on the side panel, or
-            directly on the map. Either way, existing videos (if any) will be
+            You can select (click on) a route via the 'Routes' side panel above,
+            or directly on the map. Either way, existing videos (if any) will be
             shown for that route. If you select a video, then the segments that
             it includes will show up in purple. The video has chapters at the
-            bottom for quickly finding a particular segment of a route (make the
-            video fullscreen to see them more easily).
+            bottom for quickly finding a particular segment of a route -- make
+            the video fullscreen to see them more easily.
           </p>
+          <p style={{ color: "red" }}>{disclaimer}</p>
         </div>
       </div>
 
