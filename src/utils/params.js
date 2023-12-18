@@ -7,6 +7,8 @@ export const BIDIRECTIONAL_COLOUR_LIGHT = "#009E60";
 export const BIDIRECTIONAL_COLOUR_FULL = "DarkGreen";
 export const UNIDIRECTIONAL_COLOUR_LIGHT = "#6495ED";
 export const UNIDIRECTIONAL_COLOUR_FULL = "Blue";
+export const SHOULDER_COLOUR_LIGHT = "#954535";
+export const SHOULDER_COLOUR_FULL = "#800020";
 
 export const VIDEO_BIDIRECTIONAL_COLOUR = "Purple";
 export const VIDEO_UNIDIRECTIONAL_COLOUR = "Purple";

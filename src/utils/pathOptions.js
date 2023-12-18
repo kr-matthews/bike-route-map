@@ -13,6 +13,8 @@ import {
   UNDERGROUND_BORDER_COLOUR,
   UNDERGROUND_WEIGHT,
   CLOSED_COLOUR,
+  SHOULDER_COLOUR_FULL,
+  SHOULDER_COLOUR_LIGHT,
 } from "./params";
 
 export function createPathOptions(
@@ -22,8 +24,11 @@ export function createPathOptions(
   const isSelected = (routeNames ?? []).includes(selected);
   const isHighlighted = (routeNames ?? []).includes(highlighted);
   const hasActiveVideo = videos?.includes(video);
+
+  const isOneWay = oneWay === "required";
   const isUnofficial = type === "unofficial";
   const isUncomfortable = type === "uncomfortable";
+  const isShoulder = type === "shoulder";
 
   const unidirectionalColour = isSelected
     ? UNIDIRECTIONAL_COLOUR_FULL
@@ -31,13 +36,18 @@ export function createPathOptions(
   const bidirectionalColour = isSelected
     ? BIDIRECTIONAL_COLOUR_FULL
     : BIDIRECTIONAL_COLOUR_LIGHT;
+  const shoulderColour = isSelected
+    ? SHOULDER_COLOUR_FULL
+    : SHOULDER_COLOUR_LIGHT;
 
-  const nonVideoColour =
-    oneWay === "required" ? unidirectionalColour : bidirectionalColour;
-  const videoColour =
-    oneWay === "required"
-      ? VIDEO_UNIDIRECTIONAL_COLOUR
-      : VIDEO_BIDIRECTIONAL_COLOUR;
+  const nonVideoColour = isShoulder
+    ? shoulderColour
+    : isOneWay
+    ? unidirectionalColour
+    : bidirectionalColour;
+  const videoColour = isOneWay
+    ? VIDEO_UNIDIRECTIONAL_COLOUR
+    : VIDEO_BIDIRECTIONAL_COLOUR;
 
   const nonUndergroundWeight = isHighlighted ? WIDE_WEIGHT : NARROW_WEIGHT;
 

@@ -48,11 +48,6 @@ const segmentTypes = [
     props: {},
   },
   {
-    name: "Uncomfortable/Unofficial",
-    description: "Shared lane with high-volume and/or high-speed traffic.",
-    props: { type: "uncomfortable" },
-  },
-  {
     name: "One-way",
     description: "Only one direction of travel is allowed.",
     props: { oneWay: "required" },
@@ -62,6 +57,17 @@ const segmentTypes = [
     description:
       "Both directions of travel are allowed, but typically only one is useful.",
     props: { oneWay: "recommended" },
+  },
+  {
+    name: "Uncomfortable",
+    description: "Shared lane with high-volume and/or high-speed traffic.",
+    props: { type: "uncomfortable" },
+  },
+  {
+    name: "Highway Shoulder",
+    description:
+      "Unprotected shoulder beside very high-speed traffic. Always one-way.",
+    props: { type: "shoulder", oneWay: "required" },
   },
   {
     name: "Elevated",
