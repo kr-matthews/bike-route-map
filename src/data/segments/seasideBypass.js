@@ -128,10 +128,12 @@ export const SEASIDE_BYPASS = [
     type: "unofficial",
     positions: [QUEBEC_3RD, QUEBEC_5TH],
   },
+
   // false creek south
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "cypress to fir",
+    videos: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
     positions: [
       CYPRESS_1ST,
       CHESTNUT_1ST,
@@ -145,6 +147,7 @@ export const SEASIDE_BYPASS = [
     routeNames: [ROUTES.seasideBypass.name],
     description: "1st to fir via parking lot",
     oneWay: "required",
+    videos: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
     positions: [
       PARKING_LOT_ON_1ST,
       [49.27059, -123.14165],
@@ -166,6 +169,7 @@ export const SEASIDE_BYPASS = [
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "false creek primary",
+    videos: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
     positions: [
       FIR_1ST_E,
       [49.27051, -123.14104],
@@ -247,7 +251,7 @@ export const SEASIDE_BYPASS = [
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "false creek east of spyglass",
-    videos: [VIDEOS.yukonSb.id],
+    videos: [VIDEOS.seasideBypassFalseCreekSouthEb.id, VIDEOS.yukonSb.id],
     positions: [
       SPYGLASS_COMMODORE,
       CAMBIE_1ST_N,
@@ -262,7 +266,7 @@ export const SEASIDE_BYPASS = [
     routeNames: [ROUTES.seasideBypass.name],
     description: "1st eb 1",
     oneWay: "required",
-    videos: [VIDEOS.yukonSb.id],
+    videos: [VIDEOS.seasideBypassFalseCreekSouthEb.id, VIDEOS.yukonSb.id],
     positions: [
       FIRST_AVE_SPLIT,
       [49.26815, -123.11416],
@@ -274,6 +278,7 @@ export const SEASIDE_BYPASS = [
     routeNames: [ROUTES.seasideBypass.name],
     description: "1st eb 2",
     oneWay: "required",
+    videos: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
     positions: [
       WYLIE_1ST_S,
       [49.26899, -123.11235],
@@ -315,7 +320,10 @@ export const SEASIDE_BYPASS = [
     routeNames: [ROUTES.seasideBypass.name, ROUTES.centralValleyGreenway.name],
     description: "1st ontario to quebec",
     oneWay: "required",
-    videos: [VIDEOS.centralValleyVancouverEb.id],
+    videos: [
+      VIDEOS.seasideBypassFalseCreekSouthEb.id,
+      VIDEOS.centralValleyVancouverEb.id,
+    ],
     positions: [ONTARIO_1ST_SE, QUEBEC_1ST_SW, QUEBEC_1ST_SE],
   },
   {
@@ -344,6 +352,8 @@ export const SEASIDE_BYPASS = [
     routeNames: [ROUTES.seasideBypass.name],
     description: "quebec -> expo",
     oneWay: "required",
+    videos: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
+    videosEndAtEnd: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
     positions: [
       QUEBEC_1ST_SE,
       QUEBEC_1ST_NE,

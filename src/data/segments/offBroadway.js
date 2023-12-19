@@ -30,6 +30,7 @@ const WEST_OF_HIGHBURY = [49.26528, -123.18939];
 export const OFF_BROADWAY = [
   {
     description: "yew connection with 10th",
+    videos: [VIDEOS.arbutusGreenwayNb.id],
     positions: [YEW_10TH, YEW_8TH],
   },
   {
@@ -74,7 +75,7 @@ export const OFF_BROADWAY = [
   },
   {
     routeNames: [ROUTES.offBroadway.name],
-    description: "highbury to heather",
+    description: "highbury to yew",
     videos: [VIDEOS.offBroadwayWb.id],
     positions: [
       HIGHBURY_8TH,
@@ -93,11 +94,27 @@ export const OFF_BROADWAY = [
       [49.26486, -123.16001],
       [49.26482, -123.15763],
       YEW_8TH,
+    ],
+  },
+  {
+    routeNames: [ROUTES.offBroadway.name],
+    description: "yew to arbutus greenway",
+    videos: [VIDEOS.offBroadwayWb.id, VIDEOS.arbutusGreenwayNb.id],
+    positions: [
+      YEW_8TH,
       [49.26561, -123.15526],
       [49.2656, -123.15421],
       [49.26563, -123.15408],
       [49.26562, -123.15303],
       [49.26559, -123.15277],
+      ARBUTUS_GREENWAY_7TH,
+    ],
+  },
+  {
+    routeNames: [ROUTES.offBroadway.name],
+    description: "arbutus greenway to heather",
+    videos: [VIDEOS.offBroadwayWb.id],
+    positions: [
       ARBUTUS_GREENWAY_7TH,
       [49.26555, -123.15048],
       CYPRESS_7TH,

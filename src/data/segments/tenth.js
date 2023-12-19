@@ -22,7 +22,7 @@ const ASH_10TH_E = [49.2623, -123.1175];
 export const TENTH = [
   {
     routeNames: [ROUTES.tenth.name],
-    description: "west of hospital",
+    description: "west of yew",
     videos: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
     videosStartAtStart: [VIDEOS.tenthEb.id],
     videosEndAtStart: [VIDEOS.tenthWb.id],
@@ -33,8 +33,24 @@ export const TENTH = [
       [49.26295, -123.15771],
       [49.26293, -123.15766],
       YEW_10TH,
+    ],
+  },
+  {
+    routeNames: [ROUTES.tenth.name],
+    description: "yew to arbutus greenway",
+    videos: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id, VIDEOS.arbutusGreenwayNb.id],
+    positions: [
+      YEW_10TH,
       [49.26284, -123.15303],
       [49.26288, -123.15288],
+      ARBUTUS_GREENWAY_10TH,
+    ],
+  },
+  {
+    routeNames: [ROUTES.tenth.name],
+    description: "arbutus greenway to oak",
+    videos: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
+    positions: [
       ARBUTUS_GREENWAY_10TH,
       [49.26285, -123.15062],
       [49.26283, -123.15053],

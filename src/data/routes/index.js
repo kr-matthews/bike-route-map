@@ -62,7 +62,7 @@ export const ROUTES = {
   },
   arbutusGreenway: {
     name: "Arbutus Greenway",
-    legs: [{ distance: 8.5, videos: {} }],
+    legs: [{ distance: 8.5, videos: { northbound: VIDEOS.arbutusGreenwayNb } }],
   },
   arthurLaingBridge: {
     name: "Arthur Laing Bridge",
@@ -400,8 +400,7 @@ export const ROUTES = {
   },
   marineWay: {
     name: "Marine Way",
-    legs: [{ videos: {} }],
-    isIncomplete: true,
+    legs: [{ distance: 6.5, videos: {} }],
   },
   masumiMitsui: {
     name: "Masumi Mitsui Greenway",
@@ -530,8 +529,12 @@ export const ROUTES = {
     legs: [
       { name: "Beach", videos: {} },
       { name: "Pacific/Expo", videos: {} },
-      // includes quebec
-      { name: "False Creek South", videos: {} },
+      {
+        // includes quebec
+        name: "False Creek South",
+        distance: 4.5,
+        videos: { eastbound: VIDEOS.seasideBypassFalseCreekSouthEb },
+      },
       // whyte?
       { name: "York", distance: 1.4, videos: { eastbound: VIDEOS.yorkEb } },
       { name: "3rd", distance: 2.4, videos: { eastbound: VIDEOS.thirdEb } },

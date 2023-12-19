@@ -174,6 +174,8 @@ export const CYPRESS = [
     routeNames: [ROUTES.cypress.name, ROUTES.seasideBypass.name],
     description: "york to 1st",
     oneWay: "required",
+    videos: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
+    videosStartAtStart: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
     positions: [CYPRESS_YORK_SW, CYPRESS_1ST_NW, CYPRESS_1ST],
   },
 ];

@@ -14,6 +14,11 @@ const VIDEOS = {
     date: new Date("2023 05 30"),
     minutes: 3,
   },
+  arbutusGreenwayNb: {
+    id: "EyhC1Qqacy8",
+    date: new Date("2023 12 16"),
+    minutes: 28,
+  },
   arthurLaingSb: {
     id: "JtDYj7aNwJo",
     date: new Date("2023 08 19"),
@@ -333,6 +338,11 @@ const VIDEOS = {
     id: "VYxXQDWhq5Q",
     date: new Date("2023 09 15"),
     minutes: 5,
+  },
+  seasideBypassFalseCreekSouthEb: {
+    id: "8xY4bwZ0GrE",
+    date: new Date("2023 12 16"),
+    minutes: 15,
   },
   seasideKitsWb: {
     id: "htrdfMC4NBg",

@@ -57,6 +57,7 @@ export const MARINE = [
   {
     description: "connection with arbutus greenway",
     type: "uncomfortable",
+    videos: [VIDEOS.arbutusGreenwayNb.id],
     positions: [
       MILTON_ARBUTUS_GREENWAY,
       [49.20497, -123.14113],
@@ -68,6 +69,8 @@ export const MARINE = [
     description: "from arthur laing",
     type: "uncomfortable",
     oneWay: "required",
+    videos: [VIDEOS.arbutusGreenwayNb.id],
+    videosStartAtStart: [VIDEOS.arbutusGreenwayNb.id],
     positions: [
       MARINE_ARTHUR_LAING_N,
       [49.2049, -123.13956],
@@ -84,6 +87,7 @@ export const MARINE = [
     description: "crossing granville",
     type: "uncomfortable",
     oneWay: "recommended",
+    videos: [VIDEOS.arbutusGreenwayNb.id],
     positions: [GRANVILLE_GAS_STATION, [49.20525, -123.1406], GRANVILLE_MARINE],
   },
   {
@@ -428,6 +432,7 @@ export const MARINE = [
     videos: [VIDEOS.swMarineEb.id, VIDEOS.arthurLaingSb.id],
     positions: [EAST_BLVD_MARINE_S, [49.20852, -123.14366], MARINE_70TH_S],
   },
+
   // nw marine
   {
     description: "spanish banks connection 1",

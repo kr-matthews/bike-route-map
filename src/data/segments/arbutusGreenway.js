@@ -25,6 +25,7 @@ export const ARBUTUS_GREENWAY = [
   {
     routeNames: [ROUTES.arbutusGreenway.name],
     description: "south of 10th",
+    videos: [VIDEOS.arbutusGreenwayNb.id],
     positions: [
       MILTON_ARBUTUS_GREENWAY,
       [49.20604, -123.14283],
@@ -127,11 +128,19 @@ export const ARBUTUS_GREENWAY = [
   },
   {
     routeNames: [ROUTES.arbutusGreenway.name],
-    description: "8th to burrard",
+    description: "8th to 7th",
     positions: [
       ARBUTUS_GREENWAY_8TH,
       [49.26511, -123.15236],
       [49.26534, -123.1523],
+      ARBUTUS_GREENWAY_7TH,
+    ],
+  },
+  {
+    routeNames: [ROUTES.arbutusGreenway.name],
+    description: "7th to burrard",
+    videos: [VIDEOS.arbutusGreenwayNb.id],
+    positions: [
       ARBUTUS_GREENWAY_7TH,
       [49.26584, -123.15196],
       [49.26603, -123.15173],
@@ -148,13 +157,15 @@ export const ARBUTUS_GREENWAY = [
   {
     routeNames: [ROUTES.arbutusGreenway.name],
     description: "crossing burrard",
-    videos: [VIDEOS.burrardNb.id],
+    videos: [VIDEOS.arbutusGreenwayNb.id, VIDEOS.burrardNb.id],
     videosStartAtStart: [VIDEOS.burrardNb.id],
     positions: [BURRARD_ARBUTUS_GREENWAY_W, BURRARD_ARBUTUS_GREENWAY_E],
   },
   {
     routeNames: [ROUTES.arbutusGreenway.name],
     description: "burrard to fir",
+    videos: [VIDEOS.arbutusGreenwayNb.id],
+    videosEndAtEnd: [VIDEOS.arbutusGreenwayNb.id],
     positions: [
       BURRARD_ARBUTUS_GREENWAY_E,
       [49.26649, -123.14532],
