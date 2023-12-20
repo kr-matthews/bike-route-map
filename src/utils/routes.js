@@ -7,7 +7,7 @@ export function hasVideo(segment, routeName) {
 
   const routeVideos = route.legs.flatMap(({ videos }) => Object.values(videos));
 
-  return (segment.videos ?? []).some((video) =>
-    (routeVideos ?? []).includes(video)
+  return (segment.videos ?? []).some((videoId) =>
+    (routeVideos ?? []).map(({ id }) => id).includes(videoId)
   );
 }
