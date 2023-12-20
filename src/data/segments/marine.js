@@ -217,6 +217,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "sw marine wb camosun to 16th",
+    type: "shoulder",
     oneWay: "required",
     positions: [
       CAMOSUN_MARINE_N,
@@ -259,6 +260,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "sw marine wb crossing 16th",
+    type: "shoulder",
     oneWay: "required",
     positions: [
       POST_TO_16TH_SLIP,
@@ -278,6 +280,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "sw marine wb 16th to nw marine",
+    type: "shoulder",
     oneWay: "required",
     positions: [
       MARINE_16TH_NNE,
@@ -297,6 +300,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "sw marine eb to camosun-ish",
+    type: "shoulder",
     oneWay: "required",
     videos: [VIDEOS.swMarineEb.id],
     positions: [

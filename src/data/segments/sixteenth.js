@@ -13,6 +13,9 @@ import {
 } from "../intersections";
 import { ROUTES } from "../routes";
 
+const SHOULDER_END = [49.25357, -123.24221];
+const SHOULDER_START = [49.25373, -123.24262];
+
 export const SIXTEENTH = [
   // {
   //   routeNames: [ROUTES.sixteenth.name],
@@ -25,7 +28,8 @@ export const SIXTEENTH = [
   // },
   {
     routeNames: [ROUTES.sixteenth.name],
-    description: "eb: to wesbrook",
+    description: "eb: initial shoulder",
+    type: "shoulder",
     oneWay: "required",
     positions: [
       MARINE_16TH_SSE,
@@ -39,7 +43,15 @@ export const SIXTEENTH = [
       [49.25231, -123.24565],
       [49.25239, -123.24552],
       [49.25246, -123.24536],
-      [49.25357, -123.24221],
+      SHOULDER_END,
+    ],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "eb: shoulder to wesbrook",
+    oneWay: "required",
+    positions: [
+      SHOULDER_END,
       [49.2537, -123.24193],
       [49.25369, -123.24185],
       [49.25383, -123.24165],
@@ -188,6 +200,16 @@ export const SIXTEENTH = [
       [49.25409, -123.2418],
       [49.25399, -123.24205],
       [49.25393, -123.24207],
+      SHOULDER_START,
+    ],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "wb: end shoulder",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
+      SHOULDER_START,
       [49.25313, -123.24436],
       [49.25253, -123.24604],
       [49.25245, -123.24636],

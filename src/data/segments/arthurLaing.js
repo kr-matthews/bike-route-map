@@ -14,6 +14,7 @@ export const ARTHUR_LAING = [
   // ends
   {
     description: "sb ground cont.",
+    type: "shoulder",
     oneWay: "required",
     positions: [SOUTHBOUND_SPLIT, [49.19517, -123.14015]],
   },
@@ -25,6 +26,7 @@ export const ARTHUR_LAING = [
   },
   {
     description: "nb ground pre",
+    type: "shoulder",
     oneWay: "required",
     hideArrows: true,
     positions: [[49.19498, -123.14015], NORTHBOUND_MERGE],
@@ -37,6 +39,7 @@ export const ARTHUR_LAING = [
   {
     routeNames: [ROUTES.arthurLaingBridge.name],
     description: "sb pre-elevation",
+    type: "uncomfortable",
     elevation: 0.5,
     oneWay: "required",
     hideArrows: true,
@@ -46,6 +49,7 @@ export const ARTHUR_LAING = [
   {
     routeNames: [ROUTES.arthurLaingBridge.name],
     description: "sb elevated",
+    type: "shoulder",
     elevation: 1,
     oneWay: "required",
     videos: [VIDEOS.arthurLaingSb.id],
@@ -87,6 +91,7 @@ export const ARTHUR_LAING = [
   {
     routeNames: [ROUTES.arthurLaingBridge.name],
     description: "sb ground",
+    type: "shoulder",
     elevation: 0.5,
     oneWay: "required",
     videos: [VIDEOS.arthurLaingSb.id],
@@ -104,6 +109,7 @@ export const ARTHUR_LAING = [
   {
     routeNames: [ROUTES.arthurLaingBridge.name],
     description: "nb pre-elevation",
+    type: "shoulder",
     elevation: 0.5,
     oneWay: "required",
     positions: [
@@ -119,6 +125,7 @@ export const ARTHUR_LAING = [
   {
     routeNames: [ROUTES.arthurLaingBridge.name],
     description: "nb elevated",
+    type: "shoulder",
     elevation: 1,
     oneWay: "required",
     positions: [
@@ -157,6 +164,7 @@ export const ARTHUR_LAING = [
   {
     routeNames: [ROUTES.arthurLaingBridge.name],
     description: "nb post-elevation",
+    type: "uncomfortable",
     elevation: 0.5,
     oneWay: "required",
     hideArrows: true,

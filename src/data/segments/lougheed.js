@@ -12,7 +12,7 @@ import {
 import { ROUTES } from "../routes";
 
 const BETA_LOUGHEED = [49.26613, -122.99753];
-const DELTA_LOUGHEED = [49.26505, -122.99205];
+const DELTA_LOUGHEED_SE = [49.26505, -122.99205];
 const SPERLING_LOUGHEED_SE = [49.2595, -122.96446];
 const EASTBOUND_ELEVATION_1_PRE = [49.23167, -122.8489];
 const EASTBOUND_ELEVATION_1_START = [49.23143, -122.84848];
@@ -28,7 +28,7 @@ const WESTBOUND_ELEVATION_1_END = [49.23005, -122.83592];
 const WESTBOUND_ELEVATION_1_POST = [49.23017, -122.83782];
 const SPERLING_LOUGHEED_NE = [49.2597, -122.96443];
 
-const EASTBOUND_BRUNETTE_FRASER_PRE = [49.25199, -122.91085];
+const EASTBOUND_BRUNETTE_FRASER_PRE = [49.25217, -122.91204];
 const EASTBOUND_BRUNETTE_FRASER_START = [49.25194, -122.91008];
 const EASTBOUND_BRUNETTE_FRASER_END = [49.2518, -122.90909];
 const EASTBOUND_BRUNETTE_FRASER_POST = [49.25138, -122.90613];
@@ -36,6 +36,18 @@ const WESTBOUND_BRUNETTE_FRASER_PRE = [49.25181, -122.90764];
 const WESTBOUND_BRUNETTE_FRASER_START = [49.25199, -122.90903];
 const WESTBOUND_BRUNETTE_FRASER_END = [49.2521, -122.90992];
 const WESTBOUND_BRUNETTE_FRASER_POST = [49.2522, -122.91042];
+
+const POST_DELTA_SHOULDER_START = [49.26498, -122.99093];
+const AUSTIN_LOUGHEED_SW = [49.24856, -122.8978];
+const BRUNETTE_LOUGHEED_SE = [49.23651, -122.87167];
+const WOOLRIDGE_LOUGHEED_S = [49.23587, -122.86868];
+const MARY_HILL_JOIN = [49.22939, -122.83789];
+
+const WOOLRIDGE_LOUGHEED_NW = [49.23621, -122.86918];
+const BRUNETTE_LOUGHEED_N = [49.23674, -122.87171];
+const AUSTIN_LOUGHEED_NW = [49.24872, -122.89757];
+const GAGLARDI_LOUGHEED_NE = [49.25251, -122.91237];
+const BEYOND_BETA_SHOULDER_END = [49.26645, -122.99871];
 
 export const LOUGHEED = [
   // connections
@@ -109,17 +121,26 @@ export const LOUGHEED = [
       [49.26524, -122.9935],
       [49.26518, -122.99302],
       [49.26509, -122.9925],
-      DELTA_LOUGHEED,
+      DELTA_LOUGHEED_SE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "eb: just beyond delta",
+    oneWay: "required",
+    positions: [
+      DELTA_LOUGHEED_SE,
+      [49.26499, -122.99148],
+      POST_DELTA_SHOULDER_START,
     ],
   },
   {
     routeNames: [ROUTES.lougheed.name],
     description: "eb: delta to brunette fraser overpass",
+    type: "shoulder",
     oneWay: "required",
     positions: [
-      DELTA_LOUGHEED,
-      [49.26499, -122.99148],
-      [49.26498, -122.99083],
+      POST_DELTA_SHOULDER_START,
       [49.26496, -122.98816],
       [49.26497, -122.98706],
       [49.26498, -122.9835],
@@ -170,10 +191,9 @@ export const LOUGHEED = [
       [49.25397, -122.92428],
       [49.25322, -122.91913],
       [49.25307, -122.91808],
-      [49.25243, -122.91352],
-      [49.2523, -122.91275],
-      [49.25226, -122.91246], // Gaglardi
-      [49.25217, -122.91204],
+      [49.25241, -122.91352],
+      [49.25229, -122.91275],
+      [49.25224, -122.91246], // Gaglardi
       EASTBOUND_BRUNETTE_FRASER_PRE,
     ],
   },
@@ -182,7 +202,11 @@ export const LOUGHEED = [
     description: "eb: pre brunette fraser overpass",
     oneWay: "required",
     elevation: 0.5,
-    positions: [EASTBOUND_BRUNETTE_FRASER_PRE, EASTBOUND_BRUNETTE_FRASER_START],
+    positions: [
+      EASTBOUND_BRUNETTE_FRASER_PRE,
+      [49.25199, -122.91085],
+      EASTBOUND_BRUNETTE_FRASER_START,
+    ],
   },
   {
     routeNames: [ROUTES.lougheed.name],
@@ -200,7 +224,7 @@ export const LOUGHEED = [
   },
   {
     routeNames: [ROUTES.lougheed.name],
-    description: "eb: brunette fraser overpass to elevation",
+    description: "eb: brunette fraser overpass to austin",
     oneWay: "required",
     positions: [
       EASTBOUND_BRUNETTE_FRASER_POST,
@@ -213,7 +237,16 @@ export const LOUGHEED = [
       [49.25008, -122.90075],
       [49.24971, -122.90001],
       [49.24931, -122.89924],
-      [49.24856, -122.8978],
+      AUSTIN_LOUGHEED_SW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "eb: austin to brunette",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
+      AUSTIN_LOUGHEED_SW,
       [49.24842, -122.89755],
       [49.24682, -122.89461],
       [49.24645, -122.89396],
@@ -233,8 +266,27 @@ export const LOUGHEED = [
       [49.23746, -122.87632],
       [49.23706, -122.8743],
       [49.23682, -122.87313],
+      BRUNETTE_LOUGHEED_SE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "eb: brunette to woolridge",
+    type: "uncomfortable",
+    oneWay: "required",
+    positions: [
+      BRUNETTE_LOUGHEED_SE,
       [49.23635, -122.87087],
-      [49.23587, -122.86868],
+      WOOLRIDGE_LOUGHEED_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "eb: woolridge to elevation",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
+      WOOLRIDGE_LOUGHEED_S,
       [49.23551, -122.86702],
       [49.23502, -122.86483],
       [49.23446, -122.8622],
@@ -251,6 +303,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "eb: elevation 1a",
+    type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
     positions: [EASTBOUND_ELEVATION_1_PRE, EASTBOUND_ELEVATION_1_START],
@@ -258,6 +311,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "eb: elevation 1b",
+    type: "shoulder",
     oneWay: "required",
     elevation: 1,
     positions: [
@@ -271,6 +325,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "eb: elevation 1c",
+    type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
     positions: [EASTBOUND_ELEVATION_1_END, EASTBOUND_ELEVATION_1_POST],
@@ -278,6 +333,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "eb: between elevations",
+    type: "shoulder",
     oneWay: "required",
     positions: [
       EASTBOUND_ELEVATION_1_POST,
@@ -296,7 +352,7 @@ export const LOUGHEED = [
   },
   {
     routeNames: [ROUTES.lougheed.name],
-    description: "eb: elevation 2b",
+    description: "eb: elevation 2b part1",
     oneWay: "required",
     elevation: 1,
     positions: [
@@ -304,7 +360,17 @@ export const LOUGHEED = [
       [49.22915, -122.83823],
       [49.22915, -122.83816],
       [49.22917, -122.83813],
-      [49.22939, -122.83789],
+      MARY_HILL_JOIN,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "eb: elevation 2b part2",
+    type: "shoulder",
+    oneWay: "required",
+    elevation: 1,
+    positions: [
+      MARY_HILL_JOIN,
       [49.22916, -122.83583],
       [49.22904, -122.8349],
       [49.22888, -122.83417],
@@ -314,6 +380,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "eb: to leeder exit",
+    type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
     positions: [
@@ -331,6 +398,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "wb: mary hill to elevation",
+    type: "shoulder",
     oneWay: "required",
     positions: [
       UNITED_MARY_HILL_NW,
@@ -355,6 +423,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "wb: pre-elevation",
+    type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
     positions: [WESTBOUND_ELEVATION_1_PRE, WESTBOUND_ELEVATION_1_START],
@@ -362,6 +431,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "wb: elevation",
+    type: "shoulder",
     oneWay: "required",
     elevation: 1,
     positions: [
@@ -375,13 +445,15 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "wb: post-elevation",
+    type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
     positions: [WESTBOUND_ELEVATION_1_END, WESTBOUND_ELEVATION_1_POST],
   },
   {
     routeNames: [ROUTES.lougheed.name],
-    description: "wb: elevation to brunette fraser overpass",
+    description: "wb: elevation to woolridge",
+    type: "shoulder",
     oneWay: "required",
     positions: [
       WESTBOUND_ELEVATION_1_POST,
@@ -402,8 +474,23 @@ export const LOUGHEED = [
       KING_EDWARD_LOUGHEED_NW,
       [49.23518, -122.8646],
       [49.23594, -122.86795],
-      [49.23621, -122.86918],
-      [49.23674, -122.87171],
+      WOOLRIDGE_LOUGHEED_NW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "wb: woolridge to brunette",
+    type: "uncomfortable",
+    oneWay: "required",
+    positions: [WOOLRIDGE_LOUGHEED_NW, BRUNETTE_LOUGHEED_N],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "wb: brunette to austin",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
+      BRUNETTE_LOUGHEED_N,
       [49.23702, -122.87312],
       [49.23758, -122.8759],
       [49.23782, -122.87686],
@@ -418,8 +505,16 @@ export const LOUGHEED = [
       [49.24545, -122.89165],
       [49.24635, -122.89327],
       [49.24711, -122.89466],
-      [49.2487, -122.89753],
-      [49.24877, -122.89759], // Austin
+      AUSTIN_LOUGHEED_NW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "wb: austin to brunette fraser overpass",
+    oneWay: "required",
+    positions: [
+      AUSTIN_LOUGHEED_NW,
+      [49.24878, -122.89762],
       [49.24942, -122.89887],
       [49.24987, -122.89974],
       [49.25027, -122.90056],
@@ -457,11 +552,17 @@ export const LOUGHEED = [
   },
   {
     routeNames: [ROUTES.lougheed.name],
-    description: "wb: brunette fraser overpass to boundary",
+    description: "wb: brunette fraser overpass to gaglardi",
+    oneWay: "required",
+    positions: [WESTBOUND_BRUNETTE_FRASER_POST, GAGLARDI_LOUGHEED_NE],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "wb: gaglardi to beta-ish",
+    type: "shoulder",
     oneWay: "required",
     positions: [
-      WESTBOUND_BRUNETTE_FRASER_POST,
-      [49.25251, -122.91237],
+      GAGLARDI_LOUGHEED_NE,
       [49.25258, -122.91311],
       [49.25339, -122.91882],
       [49.25347, -122.91928],
@@ -530,7 +631,15 @@ export const LOUGHEED = [
       [49.26638, -122.99718],
       [49.26641, -122.99762],
       [49.26643, -122.99801],
-      [49.26645, -122.99871],
+      BEYOND_BETA_SHOULDER_END,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "wb: beta-ish to boundary",
+    oneWay: "required",
+    positions: [
+      BEYOND_BETA_SHOULDER_END,
       [49.26649, -122.99889],
       [49.26651, -123.0004],
       [49.26651, -123.0006],
