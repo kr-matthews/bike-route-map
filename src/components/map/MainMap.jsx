@@ -1,10 +1,11 @@
 import { useContext, useEffect } from "react";
 import { MapContainer } from "react-leaflet";
 import { SEGMENTS } from "../../data/segments";
+import { DEFAULT_BOUNDS } from "../../utils/map";
 import { Selections } from "../../App";
 import Segment from "./Segment";
 import PanesAndTiles from "./PanesAndTiles";
-import { DEFAULT_BOUNDS } from "../../utils/map";
+import PolylineCreator from "./PolylineCreator";
 import "./map.css";
 
 export default function MainMap({ setMapRef, fullWidth = false }) {
@@ -39,6 +40,8 @@ export default function MainMap({ setMapRef, fullWidth = false }) {
         scrollWheelZoom
         whenReady={({ target: mapRef }) => setMapRef(mapRef)}
       >
+        <PolylineCreator />
+
         <PanesAndTiles />
 
         {SEGMENTS.map((segment) => (
