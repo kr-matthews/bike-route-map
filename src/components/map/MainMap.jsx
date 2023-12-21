@@ -1,11 +1,28 @@
+import { useContext, useEffect } from "react";
 import { MapContainer } from "react-leaflet";
 import { SEGMENTS } from "../../data/segments";
+import { Selections } from "../../App";
 import Segment from "./Segment";
 import PanesAndTiles from "./PanesAndTiles";
 import { DEFAULT_BOUNDS } from "../../utils/map";
 import "./map.css";
 
 export default function MainMap({ setMapRef, fullWidth = false }) {
+  const { setSelected } = useContext(Selections);
+
+  useEffect(
+    function closeOnEsc() {
+      const onKeyDown = async (e) => {
+        if (e.key === "Escape") {
+          setSelected(null);
+        }
+      };
+      document.addEventListener("keydown", onKeyDown);
+      return () => document.removeEventListener("keydown", onKeyDown);
+    },
+    [setSelected]
+  );
+
   return (
     <div
       style={{

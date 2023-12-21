@@ -1,23 +1,10 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { Selections } from "../../App";
 import Leg from "./Leg";
 import { getRouteBounds } from "../../utils/map";
 
 export default function SelectedRoute({ mapRef }) {
   const { selectedRoute, setSelected } = useContext(Selections);
-
-  useEffect(
-    function closeOnEsc() {
-      const onKeyDown = async (e) => {
-        if (e.key === "Escape") {
-          setSelected(null);
-        }
-      };
-      document.addEventListener("keydown", onKeyDown);
-      return () => document.removeEventListener("keydown", onKeyDown);
-    },
-    [setSelected]
-  );
 
   return (
     <div
