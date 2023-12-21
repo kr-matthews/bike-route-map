@@ -120,8 +120,7 @@ export const ROUTES = {
   byrneCreek: {
     name: "Byrne Creek Urban Trail",
     shortName: "Byrne Creek Trail",
-    legs: [{ videos: {} }],
-    isIncomplete: true,
+    legs: [{ distance: 2.9, videos: {} }],
   },
   burnaby: {
     name: "Burnaby",

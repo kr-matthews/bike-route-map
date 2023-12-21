@@ -17,6 +17,8 @@ import {
   BOUNDARY_VANNESS_E,
   GILLEY_RUMBLE_NW,
   QUEENSBOROUGH_POST_RAMP,
+  BC_PARKWAY_SOUTHRIDGE_TRAIL,
+  BC_PARKWAY_BYRNE_CREEK,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -416,6 +418,7 @@ export const BC_PARKWAY = [
       [49.2132, -122.96088],
       [49.21291, -122.96093],
       [49.21267, -122.96088],
+      BC_PARKWAY_BYRNE_CREEK,
       [49.21238, -122.96052],
       [49.21225, -122.96027],
       [49.21169, -122.95968],
@@ -428,6 +431,7 @@ export const BC_PARKWAY = [
       [49.20765, -122.95698],
       [49.20696, -122.95734],
       [49.20568, -122.95837],
+      BC_PARKWAY_SOUTHRIDGE_TRAIL,
       SOUTHRIDGE_OVERPASS_N,
     ],
   },

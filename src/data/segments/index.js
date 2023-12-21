@@ -14,6 +14,7 @@ import { BRUNETTE_FRASER } from "./brunetteFraser";
 import { BURNABY } from "./burnaby";
 import { BURRARD } from "./burrard";
 import { BUTE } from "./bute";
+import { BYRNE_CREEK } from "./byrneCreek";
 import { CAMBIE } from "./cambie";
 import { CAMBIE_BRIDGE } from "./cambieBridge";
 import { CANADA_LINE } from "./canadaLine";
@@ -123,6 +124,7 @@ export const SEGMENTS = [
   ...BURNABY,
   ...BURRARD,
   ...BUTE,
+  ...BYRNE_CREEK,
   ...CAMBIE,
   ...CAMBIE_BRIDGE,
   ...CANADA_LINE,
