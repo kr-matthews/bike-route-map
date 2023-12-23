@@ -153,7 +153,14 @@ export const SEA_TO_RIVER = [
   {
     routeNames: [ROUTES.seaToRiver.name, ROUTES.centralValleyGreenway.name],
     description: "gilmore",
-    positions: [GILMORE_STILL_CREEK, GILMORE_CVG],
+    positions: [
+      GILMORE_STILL_CREEK,
+      [49.26144, -123.01447],
+      [49.26155, -123.0145],
+      [49.26172, -123.0145],
+      [49.26188, -123.01446],
+      GILMORE_CVG,
+    ],
   },
   {
     routeNames: [ROUTES.seaToRiver.name],

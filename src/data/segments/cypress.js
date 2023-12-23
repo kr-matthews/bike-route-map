@@ -1,6 +1,7 @@
 import {
   ADERA_68TH,
-  ANGUS_33RD,
+  ANGUS_33RD_N,
+  ANGUS_33RD_S,
   ANGUS_45TH,
   ANGUS_59TH,
   ANGUS_KING_EDWARD_NE,
@@ -66,7 +67,8 @@ export const CYPRESS = [
       [49.23879, -123.14572],
       [49.23905, -123.14564],
       [49.23994, -123.1456],
-      ANGUS_33RD,
+      ANGUS_33RD_S,
+      ANGUS_33RD_N,
       [49.2436, -123.1455],
       [49.24563, -123.14545],
       [49.24611, -123.14559],

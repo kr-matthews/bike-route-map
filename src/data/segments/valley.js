@@ -1,25 +1,52 @@
 import {
-  ANGUS_33RD,
-  ARBUTUS_GREENWAY_33RD,
+  ARBUTUS_GREENWAY_33RD_S,
+  ANGUS_33RD_S,
   TRAFALGAR_10TH,
   TRAFALGAR_3RD,
   TRAFALGAR_POINT_GREY,
-  VALLEY_33RD,
   VALLEY_EDDINGTON,
   VALLEY_KING_EDWARD_N,
   VALLEY_KING_EDWARD_S,
   YEW_EDDINGTON,
+  ANGUS_33RD_N,
+  ARBUTUS_GREENWAY_33RD_N,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const VALLEY_33RD_N = [49.24208, -123.14949];
+const VALLEY_33RD_S = [49.24201, -123.14941];
+
 export const VALLEY = [
+  {
+    description: "33rd: valley to cypress",
+    oneWay: "required",
+    videos: [VIDEOS.valleySb.id],
+    videosEndAtEnd: [VIDEOS.valleySb.id],
+    positions: [VALLEY_33RD_S, ARBUTUS_GREENWAY_33RD_S, ANGUS_33RD_S],
+  },
+  {
+    description: "33rd: cypress to valley",
+    oneWay: "required",
+    positions: [ANGUS_33RD_N, ARBUTUS_GREENWAY_33RD_N, VALLEY_33RD_N],
+  },
+  {
+    description: "33rd: arbutus to valley",
+    oneWay: "required",
+    positions: [[49.24205, -123.15217], VALLEY_33RD_S],
+  },
+  {
+    description: "33rd: valley to arbutus",
+    oneWay: "required",
+    positions: [VALLEY_33RD_N, [49.24212, -123.15238]],
+  },
   {
     routeNames: [ROUTES.valley.name],
     description: "south of 29th",
     videos: [VIDEOS.valleySb.id],
     positions: [
-      VALLEY_33RD,
+      VALLEY_33RD_S,
+      VALLEY_33RD_N,
       [49.24246, -123.1498],
       [49.24314, -123.15034],
       [49.24367, -123.15082],
@@ -74,15 +101,5 @@ export const VALLEY = [
       [49.27274, -123.16437],
       TRAFALGAR_POINT_GREY,
     ],
-  },
-  {
-    description: "connection along 33rd west of valley",
-    positions: [[49.24208, -123.15224], VALLEY_33RD],
-  },
-  {
-    description: "connection along 33rd east of valley",
-    videos: [VIDEOS.valleySb.id],
-    videosEndAtEnd: [VIDEOS.valleySb.id],
-    positions: [VALLEY_33RD, ARBUTUS_GREENWAY_33RD, ANGUS_33RD],
   },
 ];
