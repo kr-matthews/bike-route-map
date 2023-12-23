@@ -5,7 +5,7 @@ import { Search } from "./Search";
 import {
   BIDIRECTIONAL_COLOUR_FULL,
   BIDIRECTIONAL_COLOUR_LIGHT,
-} from "../../utils/params";
+} from "../../utils/constants";
 import { isSubsequence, removeWhiteSpaces } from "../../utils/strings";
 
 // !!! allow filtering (by direction (only show east-west), by city, by quality (future), etc)?

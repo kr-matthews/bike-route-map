@@ -1,5 +1,5 @@
 import Polyline from "./Polyline";
-import { NARROW_WEIGHT } from "../../utils/params";
+import { NARROW_WEIGHT } from "../../utils/constants";
 import { usePolylineCreator } from "../../hooks/usePolylineCreator";
 
 export default function PolylineCreator() {

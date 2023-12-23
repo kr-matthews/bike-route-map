@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useMap } from "react-leaflet";
 import L from "leaflet";
 import "leaflet-polylinedecorator";
-import { SOMEWHAT_ZOOMED_IN, VERY_ZOOMED_IN } from "../utils/params";
+import { SOMEWHAT_ZOOMED_IN, VERY_ZOOMED_IN } from "../utils/constants";
 
 /**
  * The implementation is messy because react-leaflet doesn't

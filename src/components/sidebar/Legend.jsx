@@ -2,7 +2,7 @@ import { useState } from "react";
 import { MapContainer } from "react-leaflet";
 import Segment from "../map/Segment";
 import PanesAndTiles from "../map/PanesAndTiles";
-import { SOMEWHAT_ZOOMED_IN } from "../../utils/params";
+import { SOMEWHAT_ZOOMED_IN } from "../../utils/constants";
 
 const intersection = [49.26208, -123.10495];
 
@@ -53,15 +53,15 @@ const segmentTypes = [
     props: { oneWay: "required" },
   },
   {
-    name: "One-way recommended",
+    name: "One-way Recommended",
     description:
       "Both directions of travel are allowed, but typically only one is useful.",
     props: { oneWay: "recommended" },
   },
   {
-    name: "Uncomfortable",
+    name: "Shared Lane",
     description: "Shared lane with high-volume and/or high-speed traffic.",
-    props: { type: "uncomfortable" },
+    props: { type: "shared" },
   },
   {
     name: "Highway Shoulder",

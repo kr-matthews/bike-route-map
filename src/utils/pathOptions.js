@@ -1,21 +1,30 @@
 import {
   BIDIRECTIONAL_COLOUR_FULL,
   BIDIRECTIONAL_COLOUR_LIGHT,
-  ELEVATED_BORDER_COLOUR,
   BORDER_WEIGHT_ADD_ON,
+  CLOSED_COLOUR,
   DASH_PATTERN,
+  ELEVATED_BORDER_COLOUR,
   NARROW_WEIGHT,
+  SHOULDER_COLOUR_FULL,
+  SHOULDER_COLOUR_LIGHT,
+  UNDERGROUND_BORDER_COLOUR,
+  UNDERGROUND_WEIGHT,
   UNIDIRECTIONAL_COLOUR_FULL,
   UNIDIRECTIONAL_COLOUR_LIGHT,
   VIDEO_BIDIRECTIONAL_COLOUR,
   VIDEO_UNIDIRECTIONAL_COLOUR,
   WIDE_WEIGHT,
-  UNDERGROUND_BORDER_COLOUR,
-  UNDERGROUND_WEIGHT,
-  CLOSED_COLOUR,
-  SHOULDER_COLOUR_FULL,
-  SHOULDER_COLOUR_LIGHT,
-} from "./params";
+} from "./constants";
+
+const comfortableTypes = [
+  "dedicated",
+  "combined",
+  "mixed-use",
+  "quiet",
+  "comfortable", // catch-all
+  undefined, // catch-all
+];
 
 export function createPathOptions(
   { routeNames, oneWay, isClosed, videos, type, hideUnlessVideo, elevation },
@@ -26,9 +35,12 @@ export function createPathOptions(
   const hasActiveVideo = videos?.includes(video);
 
   const isOneWay = oneWay === "required";
-  const isUnofficial = type === "unofficial";
-  const isUncomfortable = type === "uncomfortable";
+
+  const isComfortable = comfortableTypes.includes(type);
+  const isPainted = type === "painted";
+  const isShared = type === "shared";
   const isShoulder = type === "shoulder";
+  const isOther = type === "other";
 
   const unidirectionalColour = isSelected
     ? UNIDIRECTIONAL_COLOUR_FULL
@@ -62,7 +74,7 @@ export function createPathOptions(
     weight: elevation <= -1 ? UNDERGROUND_WEIGHT : nonUndergroundWeight,
     // explicit opacity required to show hidden routes when video is selected
     opacity: 100,
-    dashArray: isUnofficial || isUncomfortable ? DASH_PATTERN : undefined,
+    dashArray: isShared ? DASH_PATTERN : undefined,
   };
 }
 

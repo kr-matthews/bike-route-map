@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Selections } from "../../App";
-import { VIDEO_UNIDIRECTIONAL_COLOUR } from "../../utils/params";
+import { VIDEO_UNIDIRECTIONAL_COLOUR } from "../../utils/constants";
 
 export default function Video({ video, direction }) {
   const { video: selectedVideo, setVideoId } = useContext(Selections);

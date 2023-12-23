@@ -2,7 +2,7 @@ import { useState } from "react";
 import {
   UNIDIRECTIONAL_COLOUR_FULL,
   UNIDIRECTIONAL_COLOUR_LIGHT,
-} from "../../utils/params";
+} from "../../utils/constants";
 import mapIcon from "../../images/marker-yellow.svg";
 import videoIcon from "../../images/video.svg";
 import {
