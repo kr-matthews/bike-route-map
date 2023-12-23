@@ -61,7 +61,8 @@ export function createPathOptions(
     colour = COLOUR_VIDEO;
   }
 
-  const nonUndergroundWeight = isHighlighted ? WEIGHT_WIDE : WEIGHT_NARROW;
+  const nonUndergroundWeight =
+    isHighlighted || isSelected ? WEIGHT_WIDE : WEIGHT_NARROW;
 
   if (hideUnlessVideo && !hasActiveVideo) return { weight: 0, opacity: 0 };
 
@@ -75,8 +76,9 @@ export function createPathOptions(
 
 export function createBorderPathOptions(
   { routeNames, elevation },
-  { highlighted }
+  { highlighted, selected }
 ) {
+  const isSelected = (routeNames ?? []).includes(selected);
   const isHighlighted = (routeNames ?? []).includes(highlighted);
 
   if (!elevation) return null;
@@ -84,7 +86,8 @@ export function createBorderPathOptions(
   return {
     color: elevation > 0 ? COLOUR_ELEVATED_BORDER : COLOUR_UNDERGROUND_BORDER,
     weight:
-      (isHighlighted ? WEIGHT_WIDE : WEIGHT_NARROW) + WEIGHT_BORDER_ADD_ON,
+      (isHighlighted || isSelected ? WEIGHT_WIDE : WEIGHT_NARROW) +
+      WEIGHT_BORDER_ADD_ON,
     // explicit opacity required to show hidden routes when video is selected
     opacity: 100,
   };

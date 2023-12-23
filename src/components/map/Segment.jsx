@@ -46,7 +46,10 @@ export default function Segment(segment) {
   const hasBorder = elevation >= 1 || elevation <= -1;
   const borderProps = {
     positions,
-    pathOptions: createBorderPathOptions(segment, { highlighted }),
+    pathOptions: createBorderPathOptions(segment, {
+      highlighted,
+      selected: selectedRoute?.name,
+    }),
     pane: getBorderPane(elevation),
   };
 
