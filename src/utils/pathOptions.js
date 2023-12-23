@@ -11,6 +11,7 @@ import {
   COLOUR_SHOULDER_ONE_WAY,
   COLOUR_UNDERGROUND_BORDER,
   COLOUR_VIDEO,
+  DASH_PATTERN,
   WEIGHT_BORDER_ADD_ON,
   WEIGHT_NARROW,
   WEIGHT_UNDERGROUND,
@@ -20,9 +21,9 @@ import {
 const comfortableTypes = [
   "dedicated",
   "combined",
-  "mixed-use",
+  "mixed",
   "quiet",
-  "comfortable", // catch-all
+  "comfortable", // a mix of the above
   undefined, // catch-all
 ];
 
@@ -71,6 +72,7 @@ export function createPathOptions(
     weight: elevation <= -1 ? WEIGHT_UNDERGROUND : nonUndergroundWeight,
     // explicit opacity required to show hidden routes when video is selected
     opacity: 100,
+    dashArray: hideUnlessVideo ? DASH_PATTERN : undefined,
   };
 }
 
