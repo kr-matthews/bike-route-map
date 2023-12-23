@@ -4,6 +4,7 @@ import {
   WILLINGDON_SANDERSON,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const OVERPASS_START = [49.25712, -123.00387];
 const OVERPASS_END = [49.25813, -123.00382];
@@ -14,6 +15,8 @@ export const WILLINGDON = [
     description: "deer lake to overpass",
     type: "mixed-use",
     elevation: 0.5,
+    videos: [VIDEOS.willingdonSb.id],
+    videosEndAtStart: [VIDEOS.willingdonSb.id],
     positions: [
       WILLINGDON_DEER_LAKE,
       [49.24313, -123.00313],
@@ -61,6 +64,7 @@ export const WILLINGDON = [
     description: "overpass",
     type: "mixed-use",
     elevation: 1,
+    videos: [VIDEOS.willingdonSb.id],
     positions: [OVERPASS_START, OVERPASS_END],
   },
   {
@@ -68,6 +72,8 @@ export const WILLINGDON = [
     description: "overpass to central valley greenway",
     type: "mixed-use",
     elevation: 0.5,
+    videos: [VIDEOS.willingdonSb.id],
+    videosStartAtEnd: [VIDEOS.willingdonSb.id],
     positions: [
       OVERPASS_END,
       [49.25889, -123.00378],

@@ -603,7 +603,7 @@ export const ROUTES = {
   willingdon: {
     name: "Willingdon Urban Trail",
     shortName: "Willingdon Trail",
-    legs: [{ distance: 2.2, videos: {} }],
+    legs: [{ distance: 2.2, videos: { southbound: VIDEOS.willingdonSb } }],
   },
   willingdonLinear: {
     name: "Willingdon Linear Park Urban Trail",
