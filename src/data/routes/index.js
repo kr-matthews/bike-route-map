@@ -603,14 +603,12 @@ export const ROUTES = {
   willingdon: {
     name: "Willingdon Urban Trail",
     shortName: "Willingdon Trail",
-    legs: [{ videos: {} }],
-    isIncomplete: true,
+    legs: [{ distance: 2.2, videos: {} }],
   },
   willingdonLinear: {
-    name: "Willingdon Linear Park",
+    name: "Willingdon Linear Park Urban Trail",
     shortName: "Willingdon L. Park",
-    legs: [{ videos: {} }],
-    isIncomplete: true,
+    legs: [{ distance: 1.3, videos: {} }],
   },
   windermere: {
     name: "Windermere",

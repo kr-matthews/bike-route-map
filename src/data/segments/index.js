@@ -101,6 +101,8 @@ import { VALLEY } from "./valley";
 import { WALES_DUCHESS } from "./walesDuchess";
 import { WATERFRONT } from "./waterfront";
 import { WESBROOK } from "./wesbrook";
+import { WILLINGDON } from "./willingdon";
+import { WILLINGDON_LINEAR_PARK } from "./willingdonLinearPark";
 import { WINDERMERE } from "./windermere";
 import { WINDSOR } from "./windsor";
 import { YORK } from "./york";
@@ -211,6 +213,8 @@ export const SEGMENTS = [
   ...WALES_DUCHESS,
   ...WATERFRONT,
   ...WESBROOK,
+  ...WILLINGDON,
+  ...WILLINGDON_LINEAR_PARK,
   ...WINDERMERE,
   ...WINDSOR,
   ...YORK,

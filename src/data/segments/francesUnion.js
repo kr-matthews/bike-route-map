@@ -9,6 +9,7 @@ import {
   INLET_BAYVIEW_W,
   INLET_RIDGE_E,
   INLET_RIDGE_W,
+  WILLINGDON_FRANCES,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -57,7 +58,7 @@ export const FRANCES_UNION = [
       [49.27927, -123.01421],
       CARLETON_FRANCES,
       [49.27923, -123.00869],
-      [49.27919, -123.00306],
+      WILLINGDON_FRANCES,
       [49.27917, -122.99748],
       [49.27914, -122.9921],
       [49.27913, -122.98785],
