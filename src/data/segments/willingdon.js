@@ -1,7 +1,8 @@
 import {
   EASTBROOK_STILL_CREEK,
+  GILMORE_KINCAID_NW,
   WILLINGDON_DEER_LAKE,
-  WILLINGDON_SANDERSON,
+  WILLINGDON_SANDERSON_NE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -10,6 +11,33 @@ const OVERPASS_START = [49.25712, -123.00387];
 const OVERPASS_END = [49.25813, -123.00382];
 
 export const WILLINGDON = [
+  {
+    description: "gilmore connection via sanderson",
+    type: "mixed-use",
+    positions: [
+      GILMORE_KINCAID_NW,
+      [49.2493, -123.01019],
+      [49.24927, -123.0101],
+      [49.24924, -123.00998],
+      [49.24923, -123.00986],
+      [49.24912, -123.00958],
+      [49.24902, -123.00938],
+      [49.24888, -123.00913],
+      [49.24876, -123.00896],
+      [49.24856, -123.00872],
+      [49.2484, -123.00848],
+      [49.24821, -123.00824],
+      [49.24807, -123.00807],
+      [49.2479, -123.00775],
+      [49.24777, -123.00742],
+      [49.24764, -123.00691],
+      [49.24756, -123.00644],
+      [49.24757, -123.00582],
+      [49.24759, -123.00559],
+      [49.24781, -123.00445],
+      WILLINGDON_SANDERSON_NE,
+    ],
+  },
   {
     routeNames: [ROUTES.willingdon.name],
     description: "deer lake to overpass",
@@ -32,8 +60,8 @@ export const WILLINGDON = [
       [49.24674, -123.00328],
       [49.24719, -123.0035],
       [49.24751, -123.00376],
-      [49.24788, -123.00404],
-      WILLINGDON_SANDERSON,
+      WILLINGDON_SANDERSON_NE,
+      [49.24793, -123.00406],
       [49.24803, -123.00406],
       [49.24833, -123.00413],
       [49.25037, -123.00412],
