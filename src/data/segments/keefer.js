@@ -14,7 +14,7 @@ export const KEEFER = [
   {
     routeNames: [ROUTES.keefer.name],
     description: "west",
-    type: "uncomfortable",
+    type: "shared",
     videos: [VIDEOS.keeferEb.id],
     videosStartAtStart: [VIDEOS.keeferEb.id],
     positions: [

@@ -86,7 +86,7 @@ export const RIDGEWAY = [
   {
     routeNames: [ROUTES.ridgeway.name],
     description: "quesnel uncomfortable",
-    type: "uncomfortable",
+    type: "shared",
     positions: [
       QUESNEL_KING_EDWARD_N,
       QUESNEL_KING_EDWARD_S,

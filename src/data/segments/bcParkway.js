@@ -80,7 +80,7 @@ export const BC_PARKWAY = [
     routeNames: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
     description: "29th alt road",
     oneWay: "recommended",
-    type: "uncomfortable",
+    type: "shared",
     videos: [VIDEOS.sunriseNb.id],
     positions: [[49.24463, -123.04702], SLOCAN_29TH],
   },
@@ -108,7 +108,7 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "29th alt. wb to penticton",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "recommended",
     positions: [SLOCAN_29TH, PENTICTON_29TH],
   },
@@ -675,14 +675,14 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "third ave pre-overpass",
-    type: "uncomfortable",
+    type: "shared",
     elevation: 0.5,
     positions: [THIRD_STEWARDSON, THIRD_ELEVATION_START],
   },
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "third ave overpass",
-    type: "uncomfortable",
+    type: "shared",
     elevation: 1,
     positions: [
       THIRD_ELEVATION_START,
@@ -694,7 +694,7 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "quayside overpass to split",
-    type: "uncomfortable",
+    type: "shared",
     elevation: 0.5,
     positions: [
       THIRD_ELEVATION_END,
@@ -754,7 +754,7 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "quayside road option",
-    type: "uncomfortable",
+    type: "shared",
     positions: [
       QUAYSIDE_SPLIT,
       [49.19928, -122.9211],
@@ -889,7 +889,7 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "wb: 110 ave no lane",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     positions: [ONE_ONE_ZERO_AV_END_N, ONE_ONE_ZERO_125TH_N],
   },
@@ -1051,7 +1051,7 @@ export const BC_PARKWAY = [
     routeNames: [ROUTES.bcParkway.name],
     description: "university sb 1",
     oneWay: "required",
-    type: "uncomfortable",
+    type: "shared",
     positions: [
       UNIVERSITY_105A,
       [49.1945, -122.85095],
@@ -1087,7 +1087,7 @@ export const BC_PARKWAY = [
     routeNames: [ROUTES.bcParkway.name],
     description: "university sb 3",
     oneWay: "required",
-    type: "uncomfortable",
+    type: "shared",
     positions: [
       UNIVERSITY_SB_LANE_END,
       [49.1888, -122.85001],
@@ -1112,7 +1112,7 @@ export const BC_PARKWAY = [
     routeNames: [ROUTES.bcParkway.name],
     description: "university nb 1",
     oneWay: "required",
-    type: "uncomfortable",
+    type: "shared",
     positions: [
       UNIVERSITY_OLD_YALE,
       [49.18595, -122.85172],
@@ -1155,7 +1155,7 @@ export const BC_PARKWAY = [
     routeNames: [ROUTES.bcParkway.name],
     description: "university nb 3",
     oneWay: "required",
-    type: "uncomfortable",
+    type: "shared",
     positions: [
       UNIVERSITY_NB_LANE_END,
       [49.19174, -122.85057],

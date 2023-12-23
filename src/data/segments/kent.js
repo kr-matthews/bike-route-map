@@ -34,7 +34,7 @@ export const KENT = [
   {
     routeNames: [ROUTES.kent.name],
     description: "kent n: heather to ontario",
-    type: "uncomfortable",
+    type: "shared",
     positions: [
       HEATHER_KENT_N,
       [49.20533, -123.12124],

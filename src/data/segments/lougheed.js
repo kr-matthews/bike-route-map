@@ -272,7 +272,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "eb: brunette to woolridge",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     positions: [
       BRUNETTE_LOUGHEED_SE,
@@ -480,7 +480,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "wb: woolridge to brunette",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     positions: [WOOLRIDGE_LOUGHEED_NW, BRUNETTE_LOUGHEED_N],
   },

@@ -39,7 +39,7 @@ export const CAMBIE = [
   },
   {
     description: "33rd",
-    type: "uncomfortable",
+    type: "shared",
     positions: [HEATHER_33RD, CAMBIE_33RD_E],
   },
   // gastown
@@ -94,7 +94,7 @@ export const CAMBIE = [
     routeNames: [ROUTES.cambie.name],
     description: "post-sb",
     oneWay: "recommended",
-    type: "unofficial",
+    type: "shared",
     hideUnlessVideo: true,
     videos: [VIDEOS.cambieSb.id],
     videosEndAtEnd: [VIDEOS.cambieSb.id],

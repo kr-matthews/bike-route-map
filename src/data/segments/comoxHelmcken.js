@@ -51,7 +51,7 @@ export const COMOX_HELMCKEN = [
   {
     routeNames: [ROUTES.comoxHelmcken.name],
     description: "unofficial part",
-    type: "unofficial",
+    type: "shared",
     videos: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
     positions: [
       HORNBY_HELMCKEN_E,
@@ -64,7 +64,7 @@ export const COMOX_HELMCKEN = [
   {
     routeNames: [ROUTES.comoxHelmcken.name],
     description: "richards to homer",
-    type: "unofficial",
+    type: "shared",
     videos: [VIDEOS.comoxHelmckenEb.id],
     videosEndAtEnd: [VIDEOS.comoxHelmckenEb.id],
     positions: [RICHARDS_HELMCKEN, HOMER_HELMCKEN],
@@ -72,7 +72,7 @@ export const COMOX_HELMCKEN = [
   {
     routeNames: [ROUTES.comoxHelmcken.name],
     description: "tail end",
-    type: "unofficial",
+    type: "shared",
     positions: [HOMER_HELMCKEN, [49.27592, -123.12107], MAINLAND_HELMCKEN],
   },
 ];

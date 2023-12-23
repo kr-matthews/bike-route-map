@@ -58,7 +58,7 @@ export const MARINE = [
   // sw marine
   {
     description: "connection with arbutus greenway",
-    type: "uncomfortable",
+    type: "shared",
     videos: [VIDEOS.arbutusGreenwayNb.id],
     positions: [
       MILTON_ARBUTUS_GREENWAY,
@@ -69,7 +69,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "from arthur laing",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     videos: [VIDEOS.arbutusGreenwayNb.id],
     videosStartAtStart: [VIDEOS.arbutusGreenwayNb.id],
@@ -87,7 +87,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "crossing granville",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "recommended",
     videos: [VIDEOS.arbutusGreenwayNb.id],
     positions: [GRANVILLE_GAS_STATION, [49.20525, -123.1406], GRANVILLE_MARINE],
@@ -95,7 +95,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "parallel to granville",
-    type: "uncomfortable",
+    type: "shared",
     videos: [VIDEOS.swMarineEb.id, VIDEOS.arthurLaingSb.id],
     positions: [
       GRANVILLE_MARINE,
@@ -113,7 +113,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "parallel to granville - last bit",
-    type: "uncomfortable",
+    type: "shared",
     videos: [
       VIDEOS.swMarineEb.id,
       VIDEOS.arthurLaingSb.id,
@@ -125,14 +125,14 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "crossing granville at cornish",
-    type: "uncomfortable",
+    type: "shared",
     videos: [VIDEOS.cypressNb.id],
     positions: [MARINE_70TH_S, MARINE_70TH_N],
   },
   {
     routeNames: [ROUTES.marine.name],
     description: "to arthur laing",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     videos: [VIDEOS.swMarineEb.id, VIDEOS.arthurLaingSb.id],
     videosEndAtEnd: [VIDEOS.swMarineEb.id],
@@ -255,7 +255,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "sw marine wb 16th off ramp",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     hideArrows: true,
     positions: [MARINE_16TH_SSE, POST_TO_16TH_SLIP],
@@ -275,7 +275,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "sw marine wb 16th on ramp",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     hideArrows: true,
     positions: [PRE_FROM_16TH_SLIP, MARINE_16TH_NNE],
@@ -434,7 +434,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "arbutus greenway-ish to 70th",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     videos: [VIDEOS.swMarineEb.id, VIDEOS.arthurLaingSb.id],
     positions: [EAST_BLVD_MARINE_S, [49.20852, -123.14366], MARINE_70TH_S],
@@ -460,7 +460,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "just west of marine-marine",
-    type: "uncomfortable",
+    type: "shared",
     videos: [VIDEOS.swMarineEb.id],
     videosStartAtEnd: [VIDEOS.swMarineEb.id],
     positions: [
@@ -473,7 +473,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "ubc-ish to west mall-ish",
-    type: "uncomfortable",
+    type: "shared",
     positions: [
       WEST_OF_MARINE_MARINE,
       [49.25751, -123.25411],
@@ -532,7 +532,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "west mall-ish eb",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     positions: [
       MARINE_WEST_MALL_ISH,
@@ -570,7 +570,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "cecil-ish to west mall",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     positions: [
       BEYOND_CECIL_GREEN_PARK,
@@ -586,13 +586,13 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "crossing chancellor",
-    type: "uncomfortable",
+    type: "shared",
     positions: [MARINE_CHANCELLOR_SE, MARINE_CHANCELLOR_N],
   },
   {
     routeNames: [ROUTES.marine.name],
     description: "the hill",
-    type: "uncomfortable",
+    type: "shared",
     positions: [
       MARINE_CHANCELLOR_N,
       [49.27167, -123.25408],
@@ -646,7 +646,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name, ROUTES.seasideBypass.name],
     description: "shared lane portion",
-    type: "uncomfortable",
+    type: "shared",
     positions: [
       SEASIDE_W_END,
       [49.27826, -123.23481],
@@ -750,7 +750,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "eb: crossing 4th",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     positions: [
       MARINE_4TH_NW,

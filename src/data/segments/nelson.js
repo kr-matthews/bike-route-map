@@ -14,7 +14,7 @@ export const NELSON = [
   {
     description: "unofficial part",
     oneWay: "required",
-    type: "unofficial",
+    type: "shared",
     videos: [VIDEOS.cambieBridgeNelsonSb.id],
     hideUnlessVideo: true,
     videosStartAtStart: [VIDEOS.cambieBridgeNelsonSb.id],

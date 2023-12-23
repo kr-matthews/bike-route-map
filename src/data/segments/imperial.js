@@ -3,7 +3,7 @@ import { DISCOVER_15TH, IMPERIAL_16TH, IMPERIAL_29TH } from "../intersections";
 export const IMPERIAL = [
   {
     description: "imperial",
-    type: "uncomfortable",
+    type: "shared",
     positions: [
       IMPERIAL_29TH,
       [49.24943, -123.20478],
@@ -21,7 +21,7 @@ export const IMPERIAL = [
   },
   {
     description: "connection to ridgeway",
-    type: "unofficial",
+    type: "quiet",
     positions: [IMPERIAL_16TH, DISCOVER_15TH],
   },
 ];

@@ -20,7 +20,7 @@ export const WATERFRONT = [
   {
     routeNames: [ROUTES.waterfront.name],
     description: "underground",
-    type: "uncomfortable",
+    type: "shared",
     elevation: -1,
     videos: [VIDEOS.waterfrontEb.id],
     positions: [
@@ -36,7 +36,7 @@ export const WATERFRONT = [
   {
     routeNames: [ROUTES.waterfront.name],
     description: "waterfront",
-    type: "uncomfortable",
+    type: "shared",
     elevation: -0.5,
     videos: [VIDEOS.waterfrontEb.id],
     positions: [
@@ -62,7 +62,7 @@ export const WATERFRONT = [
   {
     routeNames: [ROUTES.waterfront.name],
     description: "underground to loop",
-    type: "uncomfortable",
+    type: "shared",
     elevation: 0.5,
     videos: [VIDEOS.waterfrontEb.id],
     positions: [MAIN_WATERFRONT, MAIN_ELEVATED_N],
@@ -70,7 +70,7 @@ export const WATERFRONT = [
   {
     routeNames: [ROUTES.waterfront.name],
     description: "loop",
-    type: "uncomfortable",
+    type: "shared",
     elevation: 1,
     videos: [VIDEOS.waterfrontEb.id],
     positions: [
@@ -88,7 +88,7 @@ export const WATERFRONT = [
   {
     routeNames: [ROUTES.waterfront.name],
     description: "post-loop",
-    type: "uncomfortable",
+    type: "shared",
     elevation: 0.5,
     videos: [VIDEOS.waterfrontEb.id],
     videosEndAtEnd: [VIDEOS.waterfrontEb.id],

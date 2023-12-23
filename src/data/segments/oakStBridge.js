@@ -36,7 +36,7 @@ export const OAK_STREET_BRIDGE = [
   {
     routeNames: [ROUTES.oakStreetBridge.name],
     description: "sea island way missing end",
-    type: "uncomfortable",
+    type: "other",
     oneWay: "required",
     hideArrows: true,
     positions: [SEA_ISLAND_PATH_END, GREAT_CANADIAN_SEA_ISLAND_NE],

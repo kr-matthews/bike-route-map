@@ -38,7 +38,7 @@ export const FOURTH = [
   {
     routeNames: [ROUTES.fourth.name],
     description: "eb: chancellor blvd",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     videos: [VIDEOS.fourthEb.id],
     positions: [
@@ -77,7 +77,7 @@ export const FOURTH = [
   {
     routeNames: [ROUTES.fourth.name],
     description: "eb: sasamat to trimble",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     videos: [VIDEOS.fourthEb.id],
     positions: [
@@ -110,7 +110,7 @@ export const FOURTH = [
   {
     routeNames: [ROUTES.fourth.name],
     description: "eb: before marine",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     videos: [VIDEOS.fourthEb.id],
     positions: [
@@ -123,7 +123,7 @@ export const FOURTH = [
   {
     routeNames: [ROUTES.fourth.name, ROUTES.seasideBypass.name],
     description: "eb: after marine",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     videos: [VIDEOS.fourthEb.id],
     positions: [
@@ -158,14 +158,14 @@ export const FOURTH = [
   {
     routeNames: [ROUTES.fourth.name],
     description: "highbury to wallace",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     positions: [HIGHBURY_4TH_N, [49.26873, -123.18874], WALLACE_4TH_N],
   },
   {
     routeNames: [ROUTES.fourth.name, ROUTES.seasideBypass.name],
     description: "wb wallace to before marine",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     positions: [WALLACE_4TH_N, [49.26882, -123.19343], WB_BEFORE_MARINE],
   },
@@ -183,7 +183,7 @@ export const FOURTH = [
   {
     routeNames: [ROUTES.fourth.name],
     description: "wb: crossing marine",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     positions: [
       MARINE_4TH_NE,
@@ -224,7 +224,7 @@ export const FOURTH = [
   {
     routeNames: [ROUTES.fourth.name],
     description: "wb: drummond and beyond",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     positions: [
       DRUMMOND_4TH_N,

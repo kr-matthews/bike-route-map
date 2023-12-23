@@ -212,7 +212,7 @@ export const MIDTOWN = [
   {
     routeNames: [ROUTES.midtown.name, ROUTES.sunrise.name],
     description: "earles",
-    type: "uncomfortable",
+    type: "shared",
     videos: [VIDEOS.midtownVancouverEb.id, VIDEOS.sunriseNb.id],
     positions: [
       KINGSWAY_EARLES,
@@ -224,7 +224,7 @@ export const MIDTOWN = [
   {
     routeNames: [ROUTES.midtown.name],
     description: "29th",
-    type: "uncomfortable",
+    type: "shared",
     videos: [VIDEOS.midtownVancouverEb.id],
     positions: [
       EARLES_VANNESS,

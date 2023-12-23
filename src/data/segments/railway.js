@@ -51,7 +51,7 @@ export const RAILWAY = [
   {
     routeNames: [ROUTES.railway.name],
     description: "nb: pre-steveston",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     positions: [NB_PRE_STEVESTON, RAILWAY_STEVESTON_SE],
   },
@@ -71,7 +71,7 @@ export const RAILWAY = [
   {
     routeNames: [ROUTES.railway.name],
     description: "nb: pre-williams",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     positions: [NB_PRE_WILLIAMS, RAILWAY_WILLIAMS_SE],
   },
@@ -89,7 +89,7 @@ export const RAILWAY = [
   {
     routeNames: [ROUTES.railway.name],
     description: "nb: pre-francis",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     positions: [NB_PRE_FRANCIS, RAILWAY_FRANCIS_SE],
   },
@@ -102,7 +102,7 @@ export const RAILWAY = [
   {
     routeNames: [ROUTES.railway.name],
     description: "nb: blundell",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     positions: [NB_PRE_BLUNDELL, [49.15567, -123.16977], NB_POST_BLUNDELL],
   },
@@ -146,7 +146,7 @@ export const RAILWAY = [
   {
     routeNames: [ROUTES.railway.name],
     description: "sb: pre-blundell",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     positions: [SB_PRE_BLUNDELL, RAILWAY_BLUNDELL_NW],
   },
@@ -171,7 +171,7 @@ export const RAILWAY = [
   {
     routeNames: [ROUTES.railway.name],
     description: "sb: pre-stevenson",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     positions: [SB_PRE_STEVESTON, RAILWAY_STEVESTON_NW],
   },

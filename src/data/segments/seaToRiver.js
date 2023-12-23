@@ -31,6 +31,7 @@ export const SEA_TO_RIVER = [
   },
   {
     description: "trail: marine dr to boxer",
+    type: "other",
     positions: [
       NEW_HAVEN_MARINE,
       [49.20916, -123.00835],
@@ -65,7 +66,7 @@ export const SEA_TO_RIVER = [
   {
     routeNames: [ROUTES.seaToRiver.name],
     description: "maywood to moscrop",
-    type: "uncomfortable",
+    type: "shared",
     positions: [
       PATTERSON_MAYWOOD,
       [49.22679, -123.01265],
@@ -184,7 +185,7 @@ export const SEA_TO_RIVER = [
     routeNames: [ROUTES.seaToRiver.name],
     description: "nb: lougheed to halifax part 1",
     oneWay: "required",
-    type: "uncomfortable",
+    type: "shared",
     positions: [
       GILMORE_LOUGHEED_SE,
       GILMORE_LOUGHEED_NE,
@@ -209,13 +210,8 @@ export const SEA_TO_RIVER = [
     routeNames: [ROUTES.seaToRiver.name],
     description: "sb: halifax to lougheed",
     oneWay: "required",
-    type: "uncomfortable",
-    positions: [
-      GILMORE_HALIFAX_SW,
-      //
-      GILMORE_LOUGHEED_NW,
-      GILMORE_LOUGHEED_SW,
-    ],
+    type: "shared",
+    positions: [GILMORE_HALIFAX_SW, GILMORE_LOUGHEED_NW, GILMORE_LOUGHEED_SW],
   },
   {
     routeNames: [ROUTES.seaToRiver.name],

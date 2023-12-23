@@ -909,7 +909,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
   {
     routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
     description: "quayside/begbie",
-    type: "uncomfortable",
+    type: "shared",
     positions: [
       QUAYSIDE_JOIN,
       [49.20064, -122.91055],

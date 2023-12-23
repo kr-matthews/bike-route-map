@@ -31,7 +31,7 @@ export const TWENTY_SECOND = [
     routeNames: [ROUTES.twentySecond.name],
     description: "without lane wb 1",
     oneWay: "required",
-    type: "uncomfortable",
+    type: "shared",
     videos: [VIDEOS.twentySecondEb.id],
     positions: [RENFREW_22ND_E, RENFREW_22ND_N, WESTBOUND_LANE_START],
   },
@@ -51,7 +51,7 @@ export const TWENTY_SECOND = [
     routeNames: [ROUTES.twentySecond.name],
     description: "without lane wb 2",
     oneWay: "required",
-    type: "uncomfortable",
+    type: "shared",
     videos: [VIDEOS.twentySecondEb.id],
     videosEndAtEnd: [VIDEOS.twentySecondEb.id],
     positions: [WESTBOUND_LANE_END, [49.25071, -123.05649]],
@@ -59,7 +59,7 @@ export const TWENTY_SECOND = [
   {
     routeNames: [ROUTES.twentySecond.name],
     description: "without lane",
-    type: "uncomfortable",
+    type: "shared",
     videos: [VIDEOS.twentySecondEb.id],
     videosStartAtEnd: [VIDEOS.twentySecondEb.id],
     positions: [

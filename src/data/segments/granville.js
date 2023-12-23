@@ -51,7 +51,7 @@ export const GRANVILLE = [
   {
     description: "to garden city sb",
     oneWay: "required",
-    type: "uncomfortable",
+    type: "shared",
     positions: [
       GARDEN_CITY_GRANVILLE_SW,
       [49.16271, -123.12576],

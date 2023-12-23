@@ -171,7 +171,7 @@ export const WESBROOK = [
   {
     routeNames: [ROUTES.wesbrook.name],
     description: "campus to chancellor",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     positions: [
       WESBROOK_CAMPUS,

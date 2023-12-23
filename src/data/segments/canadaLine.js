@@ -58,13 +58,13 @@ export const CANADA_LINE = [
     positions: [GREAT_CANADIAN_VAN_HORNE_NE, GREAT_CANADIAN_VAN_HORNE_NW],
   },
   {
-    description: "cross seas island way south",
-    type: "uncomfortable",
+    description: "cross sea island way south",
+    type: "shared",
     positions: [GARDEN_CITY_SEA_ISLAND_SW, GARDEN_CITY_SEA_ISLAND_SE],
   },
   {
     description: "cross sea island way north",
-    type: "uncomfortable",
+    type: "shared",
     positions: [GREAT_CANADIAN_SEA_ISLAND_NE, GREAT_CANADIAN_SEA_ISLAND_NW],
   },
   {
@@ -132,7 +132,7 @@ export const CANADA_LINE = [
   },
   {
     description: "road: great canadian way sb no lane",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     positions: [
       GREAT_CANADIAN_BRIDGEPORT_NW,

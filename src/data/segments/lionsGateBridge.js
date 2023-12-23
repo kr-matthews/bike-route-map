@@ -107,7 +107,7 @@ export const LIONS_GATE_BRIDGE = [
   {
     description: "pender",
     oneWay: "required",
-    type: "uncomfortable",
+    type: "shared",
     videos: [VIDEOS.lionsGateBridgeNb.id],
     positions: [
       JERVIS_PENDER,

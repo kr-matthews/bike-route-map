@@ -73,7 +73,7 @@ export const BURRARD = [
     routeNames: [ROUTES.burrard.name],
     description: "6th to 4th nb",
     oneWay: "required",
-    type: "unofficial",
+    type: "shared",
     hideUnlessVideo: true,
     videos: [VIDEOS.burrardNb.id],
     positions: [

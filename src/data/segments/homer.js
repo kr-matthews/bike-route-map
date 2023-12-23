@@ -56,7 +56,7 @@ export const HOMER = [
     routeNames: [ROUTES.homer.name],
     description: "north of robson",
     hideUnlessVideo: true,
-    type: "unofficial",
+    type: "shared",
     oneWay: "required",
     videos: [VIDEOS.homerNb.id],
     videosEndAtEnd: [VIDEOS.homerNb.id],

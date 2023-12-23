@@ -32,7 +32,7 @@ export const SUNRISE = [
   {
     routeNames: [ROUTES.sunrise.name],
     description: "marine to vivian",
-    type: "uncomfortable",
+    type: "shared",
     videos: [VIDEOS.sunriseNb.id],
     positions: [
       ELLIOTT_MARINE,
@@ -88,7 +88,7 @@ export const SUNRISE = [
   {
     routeNames: [ROUTES.sunrise.name, ROUTES.bcParkway.name],
     description: "slocan",
-    type: "uncomfortable",
+    type: "shared",
     videos: [
       VIDEOS.sunriseNb.id,
       VIDEOS.bcParkwayVancouverEb.id,
@@ -99,7 +99,7 @@ export const SUNRISE = [
   {
     routeNames: [ROUTES.sunrise.name],
     description: "bc parkway to 22nd",
-    type: "uncomfortable",
+    type: "shared",
     videos: [VIDEOS.sunriseNb.id],
     positions: [
       SLOCAN_BC_PARKWAY,

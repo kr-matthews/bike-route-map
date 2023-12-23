@@ -160,7 +160,7 @@ export const GARDEN_CITY = [
   {
     routeNames: [ROUTES.gardenCity.name],
     description: "francis to granville",
-    type: "uncomfortable",
+    type: "shared",
     videos: [VIDEOS.gardenCityNb.id, VIDEOS.gardenCitySb.id],
     positions: [
       GARDEN_CITY_FRANCIS_SS,

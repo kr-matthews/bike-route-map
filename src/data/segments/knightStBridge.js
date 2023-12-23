@@ -352,7 +352,7 @@ export const KNIGHT_STREET_BRIDGE = [
   {
     description: "after off-ramp",
     oneWay: "recommended",
-    type: "uncomfortable",
+    type: "shared",
     hideUnlessVideo: true,
     videos: [VIDEOS.knightStBridgeSb.id],
     videosEndAtEnd: [VIDEOS.knightStBridgeSb.id],

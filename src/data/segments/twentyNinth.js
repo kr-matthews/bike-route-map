@@ -69,7 +69,7 @@ export const TWENTY_NINTH = [
   {
     routeNames: [ROUTES.twentyNinth.name],
     description: "puget",
-    type: "uncomfortable",
+    type: "shared",
     videos: [VIDEOS.twentyNinthWb.id],
     positions: [PUGET_29TH, [49.24521, -123.16368], PUGET_EDDINGTON],
   },

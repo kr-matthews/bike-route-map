@@ -125,7 +125,7 @@ export const SEASIDE_BYPASS = [
   },
   {
     description: "quebec: 5th to 3rd",
-    type: "unofficial",
+    type: "quiet",
     positions: [QUEBEC_3RD, QUEBEC_5TH],
   },
 
@@ -521,8 +521,8 @@ export const SEASIDE_BYPASS = [
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "wb under granville",
+    type: "shared",
     oneWay: "required",
-    type: "uncomfortable",
     positions: [
       SEYMOUR_PACIFIC,
       [49.27472, -123.12875],
@@ -642,7 +642,7 @@ export const SEASIDE_BYPASS = [
     routeNames: [ROUTES.seasideBypass.name],
     description: "quebec sb no lane",
     oneWay: "required",
-    type: "uncomfortable",
+    type: "shared",
     positions: [
       QUEBEC_QUEBEC_NW,
       QUEBEC_QUEBEC_SW,
@@ -696,7 +696,7 @@ export const SEASIDE_BYPASS = [
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "pacific: beach to burrard",
-    type: "uncomfortable",
+    type: "shared",
     positions: [
       JERVIS_BEACH_SW,
       [49.2807, -123.13814],
@@ -769,7 +769,7 @@ export const SEASIDE_BYPASS = [
   },
   {
     description: "beach: hornby to granville",
-    type: "unofficial",
+    type: "shared",
     positions: [HORNBY_BEACH, [49.27473, -123.13183], GRANVILLE_BEACH],
   },
   {

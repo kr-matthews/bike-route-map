@@ -61,7 +61,7 @@ export const DUNBAR = [
   {
     routeNames: [ROUTES.dunbar.name],
     description: "nb: crossing marine",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     hideArrows: true,
     positions: [DUNBAR_MARINE_S, DUNBAR_MARINE_NE],
@@ -69,7 +69,7 @@ export const DUNBAR = [
   {
     routeNames: [ROUTES.dunbar.name],
     description: "nb: marine to before 41st",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     videos: [VIDEOS.dunbarNb.id],
     videosStartAtStart: [VIDEOS.dunbarNb.id],
@@ -85,7 +85,7 @@ export const DUNBAR = [
   {
     routeNames: [ROUTES.dunbar.name],
     description: "nb: after 41st",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     videos: [VIDEOS.dunbarNb.id],
     positions: [DUNBAR_41ST_SE, DUNBAR_NB_AFTER_41ST],
@@ -110,7 +110,7 @@ export const DUNBAR = [
   {
     routeNames: [ROUTES.dunbar.name],
     description: "nb: crossing king edward",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     videos: [VIDEOS.dunbarNb.id],
     positions: [DUNBAR_NB_BEFORE_KING_EDWARD, DUNBAR_NB_AFTER_KING_EDWARD],
@@ -132,7 +132,7 @@ export const DUNBAR = [
   {
     routeNames: [ROUTES.dunbar.name],
     description: "nb: after 18th to 16th",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     videos: [VIDEOS.dunbarNb.id],
     positions: [
@@ -151,7 +151,7 @@ export const DUNBAR = [
   {
     routeNames: [ROUTES.dunbar.name],
     description: "sb: 16th through intersection",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     hideArrows: true,
     positions: [
@@ -164,7 +164,7 @@ export const DUNBAR = [
   {
     routeNames: [ROUTES.dunbar.name],
     description: "sb: 16th to beyond 18th",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     positions: [DUNBAR_16TH_SW, DUNBAR_18TH_W, DUNBAR_SB_BEYOND_18TH],
   },
@@ -183,7 +183,7 @@ export const DUNBAR = [
   {
     routeNames: [ROUTES.dunbar.name],
     description: "sb: crossing king edward ",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     positions: [DUNBAR_SB_BEFORE_KING_EDWARD, DUNBAR_SB_AFTER_KING_EDWARD],
   },
@@ -206,7 +206,7 @@ export const DUNBAR = [
   {
     routeNames: [ROUTES.dunbar.name],
     description: "sb: 40th to marine",
-    type: "uncomfortable",
+    type: "shared",
     oneWay: "required",
     positions: [
       DUNBAR_40TH_W,

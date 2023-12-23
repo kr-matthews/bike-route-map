@@ -39,7 +39,7 @@ export const ARTHUR_LAING = [
   {
     routeNames: [ROUTES.arthurLaingBridge.name],
     description: "sb pre-elevation",
-    type: "uncomfortable",
+    type: "shared",
     elevation: 0.5,
     oneWay: "required",
     hideArrows: true,
@@ -164,7 +164,7 @@ export const ARTHUR_LAING = [
   {
     routeNames: [ROUTES.arthurLaingBridge.name],
     description: "nb post-elevation",
-    type: "uncomfortable",
+    type: "shared",
     elevation: 0.5,
     oneWay: "required",
     hideArrows: true,

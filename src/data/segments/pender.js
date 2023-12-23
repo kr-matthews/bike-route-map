@@ -44,7 +44,7 @@ export const PENDER = [
     routeNames: [ROUTES.pender.name],
     description: "wb no lane",
     oneWay: "required",
-    type: "uncomfortable",
+    type: "shared",
     positions: [CARRALL_PENDER_NE, CARRALL_PENDER_NW, TAYLOR_PENDER],
   },
   {

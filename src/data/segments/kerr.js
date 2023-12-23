@@ -52,7 +52,7 @@ export const KERR = [
     routeNames: [ROUTES.kerr.name],
     description: "nb ending",
     oneWay: "required",
-    type: "uncomfortable",
+    type: "shared",
     positions: [NORTHBOUND_LANE_ENDS, [49.22465, -123.04099], KERR_49TH_N],
   },
   {
@@ -72,7 +72,7 @@ export const KERR = [
     routeNames: [ROUTES.kerr.name],
     description: "sb 2",
     oneWay: "required",
-    type: "uncomfortable",
+    type: "shared",
     videos: [VIDEOS.kerrSb.id],
     positions: [SOUTHBOUND_LANE_ENDS, SOUTHBOUND_LANE_STARTS_AGAIN],
   },
@@ -102,7 +102,7 @@ export const KERR = [
   {
     routeNames: [ROUTES.kerr.name],
     description: "to 45th",
-    type: "uncomfortable",
+    type: "shared",
     videos: [VIDEOS.kerrSb.id],
     videosStartAtEnd: [VIDEOS.kerrSb.id],
     positions: [
