@@ -13,14 +13,14 @@ import {
   CAMBIE_37TH_E,
   CAMBIE_PENDER_SE,
   CAMBIE_PENDER_NE,
-  HEATHER_33RD,
+  HEATHER_33RD_N,
   ONTARIO_42ND,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 const CAMBIE_42ND_E = [49.23252, -123.11606];
-const CAMBIE_33RD_E = [49.24108, -123.11824];
+const CAMBIE_33RD_E = [49.24112, -123.11824];
 
 const SOUTHBOUND_END = [49.21019, -123.11731];
 
@@ -39,9 +39,11 @@ export const CAMBIE = [
   },
   {
     description: "33rd",
-    type: "shared",
-    positions: [HEATHER_33RD, CAMBIE_33RD_E],
+    type: "painted",
+    oneWay: "required",
+    positions: [CAMBIE_33RD_E, HEATHER_33RD_N],
   },
+
   // gastown
   {
     routeNames: [ROUTES.cambie.name],

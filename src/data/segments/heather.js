@@ -8,6 +8,7 @@ import {
   HEATHER_24TH,
   HEATHER_28TH,
   HEATHER_29TH,
+  HEATHER_33RD_N,
   HEATHER_37TH,
   HEATHER_49TH_S,
   HEATHER_52ND,
@@ -26,7 +27,6 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-const HEATHER_33RD_N = [49.24122, -123.12065];
 const HEATHER_33RD_S = [49.24112, -123.12065];
 
 const NORTH_OF_49TH = [49.22709, -123.12176];
