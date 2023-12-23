@@ -1,5 +1,5 @@
 import Polyline from "./Polyline";
-import { NARROW_WEIGHT } from "../../utils/constants";
+import { WEIGHT_NARROW } from "../../utils/constants";
 import { usePolylineCreator } from "../../hooks/usePolylineCreator";
 
 export default function PolylineCreator() {
@@ -9,7 +9,7 @@ export default function PolylineCreator() {
     positions,
     pathOptions: {
       color: "Black",
-      weight: NARROW_WEIGHT,
+      weight: WEIGHT_NARROW,
       opacity: 100,
     },
   };

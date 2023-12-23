@@ -1,8 +1,4 @@
 import { useState } from "react";
-import {
-  UNIDIRECTIONAL_COLOUR_FULL,
-  UNIDIRECTIONAL_COLOUR_LIGHT,
-} from "../../utils/constants";
 import mapIcon from "../../images/marker-yellow.svg";
 import videoIcon from "../../images/video.svg";
 import {
@@ -12,6 +8,7 @@ import {
   Link,
 } from "footer-dependency/dist/lib";
 import { disclaimer } from "../../utils/strings";
+import { DARK_BLUE, LIGHT_BLUE } from "../../utils/colours";
 
 export default function Menu({ options, setSelectedId }) {
   return (
@@ -78,9 +75,7 @@ function Option({ name, onClick }) {
   return (
     <div
       style={{
-        backgroundColor: hover
-          ? UNIDIRECTIONAL_COLOUR_FULL
-          : UNIDIRECTIONAL_COLOUR_LIGHT,
+        backgroundColor: hover ? DARK_BLUE : LIGHT_BLUE,
         borderRadius: "1em",
         padding: "1em",
         marginTop: "1em",

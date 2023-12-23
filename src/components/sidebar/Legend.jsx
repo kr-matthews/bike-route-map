@@ -2,7 +2,7 @@ import { useState } from "react";
 import { MapContainer } from "react-leaflet";
 import Segment from "../map/Segment";
 import PanesAndTiles from "../map/PanesAndTiles";
-import { SOMEWHAT_ZOOMED_IN } from "../../utils/constants";
+import { ZOOMED_IN_A_BIT } from "../../utils/constants";
 
 const intersection = [49.26208, -123.10495];
 
@@ -39,7 +39,7 @@ const mapHeight = "150px";
 // );
 
 const mapCenter = intersection;
-const mapZoom = SOMEWHAT_ZOOMED_IN;
+const mapZoom = ZOOMED_IN_A_BIT;
 
 const segmentTypes = [
   {

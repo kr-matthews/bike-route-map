@@ -1,20 +1,20 @@
+import { BLACK } from "./colours";
 import {
-  BIDIRECTIONAL_COLOUR_FULL,
-  BIDIRECTIONAL_COLOUR_LIGHT,
-  BORDER_WEIGHT_ADD_ON,
-  CLOSED_COLOUR,
-  DASH_PATTERN,
-  ELEVATED_BORDER_COLOUR,
-  NARROW_WEIGHT,
-  SHOULDER_COLOUR_FULL,
-  SHOULDER_COLOUR_LIGHT,
-  UNDERGROUND_BORDER_COLOUR,
-  UNDERGROUND_WEIGHT,
-  UNIDIRECTIONAL_COLOUR_FULL,
-  UNIDIRECTIONAL_COLOUR_LIGHT,
-  VIDEO_BIDIRECTIONAL_COLOUR,
-  VIDEO_UNIDIRECTIONAL_COLOUR,
-  WIDE_WEIGHT,
+  COLOUR_CLOSED,
+  COLOUR_COMFORTABLE,
+  COLOUR_COMFORTABLE_ONE_WAY,
+  COLOUR_ELEVATED_BORDER,
+  COLOUR_OTHER,
+  COLOUR_OTHER_ONE_WAY,
+  COLOUR_PAINTED_ONE_WAY,
+  COLOUR_SHARED_ONE_WAY,
+  COLOUR_SHOULDER_ONE_WAY,
+  COLOUR_UNDERGROUND_BORDER,
+  COLOUR_VIDEO,
+  WEIGHT_BORDER_ADD_ON,
+  WEIGHT_NARROW,
+  WEIGHT_UNDERGROUND,
+  WEIGHT_WIDE,
 } from "./constants";
 
 const comfortableTypes = [
@@ -42,39 +42,34 @@ export function createPathOptions(
   const isShoulder = type === "shoulder";
   const isOther = type === "other";
 
-  const unidirectionalColour = isSelected
-    ? UNIDIRECTIONAL_COLOUR_FULL
-    : UNIDIRECTIONAL_COLOUR_LIGHT;
-  const bidirectionalColour = isSelected
-    ? BIDIRECTIONAL_COLOUR_FULL
-    : BIDIRECTIONAL_COLOUR_LIGHT;
-  const shoulderColour = isSelected
-    ? SHOULDER_COLOUR_FULL
-    : SHOULDER_COLOUR_LIGHT;
+  let colour = BLACK;
+  if (isComfortable) {
+    colour = isOneWay ? COLOUR_COMFORTABLE_ONE_WAY : COLOUR_COMFORTABLE;
+  } else if (isPainted) {
+    colour = COLOUR_PAINTED_ONE_WAY;
+  } else if (isShared) {
+    colour = COLOUR_SHARED_ONE_WAY;
+  } else if (isShoulder) {
+    colour = COLOUR_SHOULDER_ONE_WAY;
+  } else if (isOther) {
+    colour = isOneWay ? COLOUR_OTHER_ONE_WAY : COLOUR_OTHER;
+  }
+  if (isClosed) {
+    colour = COLOUR_CLOSED;
+  }
+  if (hasActiveVideo) {
+    colour = COLOUR_VIDEO;
+  }
 
-  const nonVideoColour = isShoulder
-    ? shoulderColour
-    : isOneWay
-    ? unidirectionalColour
-    : bidirectionalColour;
-  const videoColour = isOneWay
-    ? VIDEO_UNIDIRECTIONAL_COLOUR
-    : VIDEO_BIDIRECTIONAL_COLOUR;
-
-  const nonUndergroundWeight = isHighlighted ? WIDE_WEIGHT : NARROW_WEIGHT;
+  const nonUndergroundWeight = isHighlighted ? WEIGHT_WIDE : WEIGHT_NARROW;
 
   if (hideUnlessVideo && !hasActiveVideo) return { weight: 0, opacity: 0 };
 
   return {
-    color: isClosed
-      ? CLOSED_COLOUR
-      : hasActiveVideo
-      ? videoColour
-      : nonVideoColour,
-    weight: elevation <= -1 ? UNDERGROUND_WEIGHT : nonUndergroundWeight,
+    color: colour,
+    weight: elevation <= -1 ? WEIGHT_UNDERGROUND : nonUndergroundWeight,
     // explicit opacity required to show hidden routes when video is selected
     opacity: 100,
-    dashArray: isShared ? DASH_PATTERN : undefined,
   };
 }
 
@@ -87,9 +82,9 @@ export function createBorderPathOptions(
   if (!elevation) return null;
 
   return {
-    color: elevation > 0 ? ELEVATED_BORDER_COLOUR : UNDERGROUND_BORDER_COLOUR,
+    color: elevation > 0 ? COLOUR_ELEVATED_BORDER : COLOUR_UNDERGROUND_BORDER,
     weight:
-      (isHighlighted ? WIDE_WEIGHT : NARROW_WEIGHT) + BORDER_WEIGHT_ADD_ON,
+      (isHighlighted ? WEIGHT_WIDE : WEIGHT_NARROW) + WEIGHT_BORDER_ADD_ON,
     // explicit opacity required to show hidden routes when video is selected
     opacity: 100,
   };

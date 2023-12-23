@@ -1,11 +1,11 @@
 import { useContext } from "react";
 import { Selections } from "../../App";
-import { VIDEO_UNIDIRECTIONAL_COLOUR } from "../../utils/constants";
+import { COLOUR_NO_VIDEO, COLOUR_VIDEO } from "../../utils/constants";
 
 export default function Video({ video, direction }) {
   const { video: selectedVideo, setVideoId } = useContext(Selections);
   const isShowing = video.id === selectedVideo?.id;
-  const backgroundColor = isShowing ? VIDEO_UNIDIRECTIONAL_COLOUR : "Grey";
+  const backgroundColor = isShowing ? COLOUR_VIDEO : COLOUR_NO_VIDEO;
 
   const dateText = video.date.toLocaleString("en-US", {
     month: "long",

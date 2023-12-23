@@ -2,11 +2,8 @@ import { useContext, useMemo, useState } from "react";
 import { ROUTES } from "../../data/routes";
 import { Selections } from "../../App";
 import { Search } from "./Search";
-import {
-  BIDIRECTIONAL_COLOUR_FULL,
-  BIDIRECTIONAL_COLOUR_LIGHT,
-} from "../../utils/constants";
 import { isSubsequence, removeWhiteSpaces } from "../../utils/strings";
+import { DARK_GREEN, LIGHT_GREEN } from "../../utils/colours";
 
 // !!! allow filtering (by direction (only show east-west), by city, by quality (future), etc)?
 
@@ -76,9 +73,7 @@ function Route({ route }) {
       style={{
         textAlign: "center",
         width: "10em",
-        backgroundColor: isSelected
-          ? BIDIRECTIONAL_COLOUR_FULL
-          : BIDIRECTIONAL_COLOUR_LIGHT,
+        backgroundColor: isSelected ? DARK_GREEN : LIGHT_GREEN,
         borderRadius: "10px",
         padding: "6px 0",
         margin: "5px 0",

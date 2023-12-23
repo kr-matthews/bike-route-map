@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useMap } from "react-leaflet";
 import L from "leaflet";
 import "leaflet-polylinedecorator";
-import { SOMEWHAT_ZOOMED_IN, VERY_ZOOMED_IN } from "../utils/constants";
+import { ZOOMED_IN_A_BIT, ZOOMED_IN_A_LOT } from "../utils/constants";
 
 /**
  * The implementation is messy because react-leaflet doesn't
@@ -18,8 +18,8 @@ export default function useDirectionalArrows(
   const [decorator, setDecorator] = useState();
   // zooming in won't trigger const zoom = map.getZoom() to update itself for some reason
   const [zoom, setZoom] = useState(map.getZoom());
-  const isZoomedIn = zoom >= SOMEWHAT_ZOOMED_IN;
-  const isVeryZoomedIn = zoom >= VERY_ZOOMED_IN;
+  const isZoomedIn = zoom >= ZOOMED_IN_A_BIT;
+  const isVeryZoomedIn = zoom >= ZOOMED_IN_A_LOT;
 
   useEffect(
     function addZoomListener() {
