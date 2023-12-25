@@ -33,6 +33,7 @@ export const NELSON = [
   {
     routeNames: [ROUTES.nelson.name],
     oneWay: "required",
+    type: "dedicated",
     description: "official part",
     elevation: 0.5,
     videos: [VIDEOS.cambieBridgeNelsonSb.id],

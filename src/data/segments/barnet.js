@@ -14,7 +14,7 @@ const BARNET_UNION = [49.28608, -122.86771];
 export const BARNET = [
   {
     description: "connection to spring st",
-    type: "shared-pedestrian", // well, 2nd half local-street
+    type: "comfortable",
     positions: [
       BARNET_VIEW_W,
       [49.27966, -122.86661],
@@ -57,7 +57,7 @@ export const BARNET = [
   {
     routeNames: [ROUTES.barnet.name],
     description: "eb: ridge-ish to sidewalk",
-    type: "shoulder", // well, brief shared-pedestrian
+    type: "shoulder", // well, trans-canada brief overlap is dedicated
     oneWay: "required",
     positions: [
       [49.28259, -122.95641],
@@ -209,7 +209,7 @@ export const BARNET = [
   {
     routeNames: [ROUTES.barnet.name],
     description: "eb: sidewalk",
-    type: "shared-pedestrian",
+    type: "mixed",
     oneWay: "recommended",
     positions: [
       BARNET_UNION,

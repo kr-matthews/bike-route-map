@@ -13,6 +13,7 @@ export const RUPERT = [
   {
     routeNames: [ROUTES.rupert.name],
     description: "nb",
+    type: "painted",
     oneWay: "required",
     videos: [VIDEOS.rupertNb.id],
     videosStartAtStart: [VIDEOS.rupertNb.id],
@@ -39,6 +40,7 @@ export const RUPERT = [
   {
     routeNames: [ROUTES.rupert.name],
     description: "sb",
+    type: "painted",
     oneWay: "required",
     positions: [
       RUPERT_CVG_W,

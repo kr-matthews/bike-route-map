@@ -1,13 +1,16 @@
 import {
   BORDEN_59TH,
-  BORDEN_KENT_N,
+  BORDEN_KENT_N_S,
   INVERNESS_64TH_ALLEY,
-  INVERNESS_MARINE,
+  INVERNESS_MARINE_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 const BORDEN_64TH = [49.21199, -123.07409];
+const BORDEN_MARINE_N = [49.21119, -123.0741];
+const MARINE_WB_TO_BUS = [49.21117, -123.07631];
+const MARINE_WB_TRANSITION = [49.2112, -123.07803];
 
 const NORTHBOUND_ELEVATION_START_1 = [49.19489, -123.07727];
 const NORTHBOUND_ELEVATION_END_1 = [49.20566, -123.07725];
@@ -25,6 +28,7 @@ const SOUTHBOUND_ELEVATION_START_1 = [49.20946, -123.07742];
 const SOUTHBOUND_ELEVATION_END_1 = [49.20732, -123.07754];
 const SOUTHBOUND_ELEVATION_START_2 = [49.20566, -123.07767];
 const SOUTHBOUND_ELEVATION_END_2 = [49.19489, -123.07759];
+const SB_ON_RAMP_BARRIER = [49.21026, -123.07881];
 
 const BRIDGEPORT_OFF_RAMP = [49.19216, -123.07924];
 
@@ -33,6 +37,7 @@ export const KNIGHT_STREET_BRIDGE = [
   {
     routeNames: [ROUTES.knightStreetBridge.name],
     description: "nb richmond",
+    type: "other",
     oneWay: "required",
     elevation: 0.5,
     positions: [
@@ -55,6 +60,7 @@ export const KNIGHT_STREET_BRIDGE = [
   {
     routeNames: [ROUTES.knightStreetBridge.name],
     description: "nb elevated 1",
+    type: "other",
     oneWay: "required",
     elevation: 1,
     positions: [
@@ -77,6 +83,7 @@ export const KNIGHT_STREET_BRIDGE = [
   {
     routeNames: [ROUTES.knightStreetBridge.name],
     description: "nb mitchell island",
+    type: "other",
     oneWay: "required",
     elevation: 0.5,
     positions: [
@@ -97,6 +104,7 @@ export const KNIGHT_STREET_BRIDGE = [
   {
     routeNames: [ROUTES.knightStreetBridge.name],
     description: "nb elevated 2",
+    type: "other",
     oneWay: "required",
     elevation: 1,
     positions: [
@@ -110,6 +118,7 @@ export const KNIGHT_STREET_BRIDGE = [
   {
     routeNames: [ROUTES.knightStreetBridge.name],
     description: "nb post-bridge",
+    type: "other",
     oneWay: "required",
     elevation: 0.5,
     positions: [
@@ -121,6 +130,7 @@ export const KNIGHT_STREET_BRIDGE = [
   {
     routeNames: [ROUTES.knightStreetBridge.name],
     description: "nb post-bridge straight",
+    type: "mixed",
     oneWay: "required",
     elevation: 0.5,
     positions: [
@@ -135,6 +145,7 @@ export const KNIGHT_STREET_BRIDGE = [
   {
     routeNames: [ROUTES.knightStreetBridge.name],
     description: "nb over marine",
+    type: "other",
     oneWay: "required",
     elevation: 1,
     positions: [NORTHBOUND_ELEVATION_START_3, NORTHBOUND_ELEVATION_END_3],
@@ -142,6 +153,7 @@ export const KNIGHT_STREET_BRIDGE = [
   {
     routeNames: [ROUTES.knightStreetBridge.name],
     description: "nb to 64th",
+    type: "other",
     oneWay: "required",
     elevation: 0.5,
     positions: [
@@ -157,12 +169,13 @@ export const KNIGHT_STREET_BRIDGE = [
   {
     description: "64th",
     oneWay: "recommended",
-    elevation: 0.5,
+    type: "quiet",
     positions: [LOOP_AT_64TH, [49.21198, -123.07642], BORDEN_64TH],
   },
   {
     routeNames: [ROUTES.knightStreetBridge.name],
     description: "nb ramp to marine",
+    type: "mixed",
     oneWay: "recommended",
     positions: [
       NORTHBOUND_SPLIT_1,
@@ -192,12 +205,17 @@ export const KNIGHT_STREET_BRIDGE = [
     ],
   },
   {
+    description: "marine sidewalk",
+    type: "other",
+    videos: [VIDEOS.dumfriesNb.id],
+    positions: [NORTHBOUND_SPLIT_3, [49.21119, -123.07552], BORDEN_MARINE_N],
+  },
+  {
     description: "up borden",
+    type: "quiet",
     videos: [VIDEOS.dumfriesNb.id],
     positions: [
-      NORTHBOUND_SPLIT_3,
-      [49.21119, -123.07552],
-      [49.21119, -123.0741],
+      BORDEN_MARINE_N,
       BORDEN_64TH,
       [49.21287, -123.07408],
       [49.21373, -123.07405],
@@ -216,19 +234,32 @@ export const KNIGHT_STREET_BRIDGE = [
       [49.21092, -123.07454],
       [49.21093, -123.07396],
       [49.2096, -123.074],
-      BORDEN_KENT_N,
+      BORDEN_KENT_N_S,
     ],
   },
   {
-    description: "to inverness",
+    description: "marine wb 1",
+    type: "shared",
+    oneWay: "required",
+    positions: [NORTHBOUND_SPLIT_3, [49.21116, -123.07599], MARINE_WB_TO_BUS],
+  },
+  {
+    description: "marine wb 2",
+    type: "comfortable",
     oneWay: "required",
     positions: [
-      NORTHBOUND_SPLIT_3,
-      [49.21116, -123.07599],
-      [49.21117, -123.07631],
+      MARINE_WB_TO_BUS,
       [49.21118, -123.0764],
       [49.2112, -123.0773],
-      [49.2112, -123.07803],
+      MARINE_WB_TRANSITION,
+    ],
+  },
+  {
+    description: "marine wb 3",
+    type: "comfortable",
+    oneWay: "required",
+    positions: [
+      MARINE_WB_TRANSITION,
       [49.21119, -123.07809],
       [49.21123, -123.0781],
       [49.21124, -123.07869],
@@ -240,18 +271,20 @@ export const KNIGHT_STREET_BRIDGE = [
   },
   {
     description: "alley to inverness",
+    type: "quiet",
     oneWay: "recommended",
     positions: [ALLEY_START, INVERNESS_64TH_ALLEY],
   },
+
   // southbound
   {
     routeNames: [ROUTES.knightStreetBridge.name],
     description: "sb on-ramp",
+    type: "painted",
     oneWay: "required",
-    elevation: 0.5,
     videos: [VIDEOS.knightStBridgeSb.id],
     positions: [
-      INVERNESS_MARINE,
+      INVERNESS_MARINE_S,
       [49.21099, -123.07971],
       [49.21092, -123.07951],
       [49.21087, -123.07937],
@@ -261,7 +294,18 @@ export const KNIGHT_STREET_BRIDGE = [
       [49.21056, -123.079],
       [49.21042, -123.0789],
       [49.21038, -123.07889],
-      [49.21026, -123.07881],
+      SB_ON_RAMP_BARRIER,
+    ],
+  },
+  {
+    routeNames: [ROUTES.knightStreetBridge.name],
+    description: "sb on-ramp protected",
+    type: "dedicated",
+    oneWay: "required",
+    elevation: 0.5,
+    videos: [VIDEOS.knightStBridgeSb.id],
+    positions: [
+      SB_ON_RAMP_BARRIER,
       [49.21011, -123.07863],
       [49.21001, -123.0784],
       [49.20995, -123.07819],
@@ -279,6 +323,7 @@ export const KNIGHT_STREET_BRIDGE = [
   {
     routeNames: [ROUTES.knightStreetBridge.name],
     description: "sb elevation 1",
+    type: "other",
     oneWay: "required",
     elevation: 1,
     videos: [VIDEOS.knightStBridgeSb.id],
@@ -287,6 +332,7 @@ export const KNIGHT_STREET_BRIDGE = [
   {
     routeNames: [ROUTES.knightStreetBridge.name],
     description: "sb mitchell island",
+    type: "other",
     oneWay: "required",
     elevation: 0.5,
     videos: [VIDEOS.knightStBridgeSb.id],
@@ -313,6 +359,7 @@ export const KNIGHT_STREET_BRIDGE = [
   {
     routeNames: [ROUTES.knightStreetBridge.name],
     description: "sb elevation 2",
+    type: "other",
     oneWay: "required",
     elevation: 1,
     videos: [VIDEOS.knightStBridgeSb.id],
@@ -330,6 +377,7 @@ export const KNIGHT_STREET_BRIDGE = [
   {
     routeNames: [ROUTES.knightStreetBridge.name],
     description: "sb off-ramp",
+    type: "other",
     oneWay: "required",
     elevation: 0.5,
     videos: [VIDEOS.knightStBridgeSb.id],

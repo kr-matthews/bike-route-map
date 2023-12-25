@@ -17,6 +17,7 @@ export const BEATTY = [
   {
     routeNames: [ROUTES.beatty.name],
     description: "nb",
+    type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
     positions: [
@@ -34,13 +35,22 @@ export const BEATTY = [
   },
   {
     routeNames: [ROUTES.beatty.name],
-    description: "sb",
+    description: "sb: crossing pender",
+    type: "shared",
     oneWay: "required",
+    hideUnlessVideo: true,
     videos: [VIDEOS.beattySb.id],
     videosStartAtStart: [VIDEOS.beattySb.id],
+    positions: [BEATTY_PENDER_NW, BEATTY_PENDER_SW],
+  },
+  {
+    routeNames: [ROUTES.beatty.name],
+    description: "sb",
+    type: "dedicated",
+    oneWay: "required",
+    videos: [VIDEOS.beattySb.id],
     videosEndAtEnd: [VIDEOS.beattySb.id],
     positions: [
-      BEATTY_PENDER_NW,
       BEATTY_PENDER_SW,
       BEATTY_DUNSMUIR_NW,
       [49.27878, -123.11231],

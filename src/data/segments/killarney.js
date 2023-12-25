@@ -11,6 +11,7 @@ export const KILLARNEY = [
   {
     routeNames: [ROUTES.killarney.name],
     description: "primary",
+    type: "quiet",
     videos: [VIDEOS.killarneyEb.id],
     videosEndAtEnd: [VIDEOS.killarneyEb.id],
     positions: [

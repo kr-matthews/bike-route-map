@@ -1,5 +1,6 @@
 import {
-  CARDERO_ALBERNI,
+  CARDERO_ALBERNI_N,
+  CARDERO_ALBERNI_S,
   CARDERO_BEACH,
   CARDERO_BURNABY,
   CARDERO_COMOX,
@@ -26,6 +27,7 @@ export const CARDERO = [
   {
     routeNames: [ROUTES.cardero.name],
     description: "primary",
+    type: "comfortable",
     positions: [
       CARDERO_BEACH,
       [49.28382, -123.14081],
@@ -37,7 +39,8 @@ export const CARDERO = [
       [49.28805, -123.1344],
       CARDERO_HARO,
       [49.28946, -123.13227],
-      CARDERO_ALBERNI,
+      CARDERO_ALBERNI_S,
+      CARDERO_ALBERNI_N,
       CARDERO_GEORGIA_S,
       CARDERO_GEORGIA_N,
       [49.29182, -123.12873],

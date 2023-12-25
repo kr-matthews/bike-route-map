@@ -117,11 +117,6 @@ export const ROUTES = {
       { name: "New Westminster", distance: 4.4, videos: {} },
     ],
   },
-  byrneCreek: {
-    name: "Byrne Creek Urban Trail",
-    shortName: "Byrne Creek Trail",
-    legs: [{ distance: 2.9, videos: {} }],
-  },
   burnaby: {
     name: "Burnaby",
     legs: [{ distance: 0.9, videos: {} }],
@@ -139,6 +134,11 @@ export const ROUTES = {
   bute: {
     name: "Bute",
     legs: [{ distance: 0.9, videos: {} }],
+  },
+  byrneCreek: {
+    name: "Byrne Creek Urban Trail",
+    shortName: "Byrne Creek Trail",
+    legs: [{ distance: 2.9, videos: {} }],
   },
   cambie: {
     name: "Cambie St",
@@ -483,13 +483,13 @@ export const ROUTES = {
     name: "Prince Edward",
     legs: [{ distance: 4.6, videos: { northbound: VIDEOS.princeEdwardNb } }],
   },
-  railway: {
-    name: "Railway St",
-    legs: [{ distance: 4.2, videos: {} }],
-  },
   railwayGreenway: {
     name: "Railway Greenway",
     legs: [{ distance: 5, videos: {} }],
+  },
+  railway: {
+    name: "Railway St",
+    legs: [{ distance: 4.2, videos: {} }],
   },
   richards: {
     name: "Richards",
@@ -502,7 +502,7 @@ export const ROUTES = {
   rumble: {
     name: "Rumble Street Urban Trail",
     shortName: "Rumble Urban Trail",
-    legs: [{ distance: 3.3, videos: {} }],
+    legs: [{ distance: 3.7, videos: {} }],
   },
   rupert: {
     name: "Rupert St",

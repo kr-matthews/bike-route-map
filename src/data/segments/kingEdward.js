@@ -21,6 +21,7 @@ export const KING_EDWARD = [
   // cambie
   {
     description: "24th",
+    type: "quiet",
     positions: [
       HEATHER_24TH,
       [49.25005, -123.11837],
@@ -38,11 +39,13 @@ export const KING_EDWARD = [
   },
   {
     description: "king edward/cambie 1",
+    type: "dedicated",
     oneWay: "required",
     positions: [[49.24886, -123.11429], YUKON_KING_EDWARD_SW],
   },
   {
     description: "king edward/cambie 2",
+    type: "dedicated",
     oneWay: "required",
     positions: [
       YUKON_KING_EDWARD_SE,
@@ -53,6 +56,7 @@ export const KING_EDWARD = [
   },
   {
     description: "columbia/26th",
+    type: "quiet",
     oneWay: "recommended",
     positions: [
       COLUMBIA_KING_EDWARD,
@@ -63,16 +67,19 @@ export const KING_EDWARD = [
   },
   {
     description: "king edward/cambie 3",
+    type: "dedicated",
     oneWay: "required",
     positions: [
       [49.24881, -123.10743],
       [49.24879, -123.10603],
     ],
   },
+
   // arbutus ridge
   {
     routeNames: [ROUTES.kingEdward.name],
     description: "eb",
+    type: "painted",
     oneWay: "required",
     positions: [
       QUESNEL_KING_EDWARD_S,
@@ -133,6 +140,7 @@ export const KING_EDWARD = [
   {
     routeNames: [ROUTES.kingEdward.name],
     description: "wb",
+    type: "painted",
     oneWay: "required",
     positions: [
       ANGUS_KING_EDWARD_NE,

@@ -6,6 +6,7 @@ export const ALDER = [
   {
     routeNames: [ROUTES.alder.name],
     description: "all",
+    type: "quiet",
     videos: [VIDEOS.alderNb.id],
     videosStartAtStart: [VIDEOS.alderNb.id],
     videosEndAtEnd: [VIDEOS.alderNb.id],

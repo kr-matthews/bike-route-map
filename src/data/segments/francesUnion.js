@@ -1,6 +1,5 @@
 import {
   BARNET_INLET_N,
-  BARNET_RIDGE,
   BOUNDARY_ADANAC,
   CARLETON_FRANCES,
   CLIFF_BRUNETTE_FRASER,
@@ -17,16 +16,18 @@ import { VIDEOS } from "../videos";
 const BARNET_INLET_S = [49.28822, -122.94958];
 
 const CLIFF_WESTRIDGE_PARK = [49.28122, -122.95928];
-const HASTINGS_OVERPASS_N = [49.28086, -122.96047];
+const HASTINGS_OVERPASS_N = [49.28086, -122.96046];
 const HASTINGS_OVERPASS_S = [49.27997, -122.96001];
-const OVERPASS_ADJ_S = [49.28002, -122.96012];
 
 const EAST_OF_BOUNDARY_ADANAC = [49.27756, -123.0221];
+
+const DUTHIE_UNION = [49.27776, -122.95342];
+const BARNET_RIDGE = [49.2833, -122.95354];
 
 export const FRANCES_UNION = [
   {
     description: "connection via ridge dr",
-    type: "shared-pedestrian",
+    type: "mixed",
     positions: [
       INLET_RIDGE_W,
       INLET_RIDGE_E,
@@ -49,7 +50,7 @@ export const FRANCES_UNION = [
   },
   {
     routeNames: [ROUTES.francesUnion.name],
-    description: "primary",
+    description: "adanac to duthie",
     positions: [
       EAST_OF_BOUNDARY_ADANAC,
       [49.27755, -123.0211],
@@ -90,7 +91,15 @@ export const FRANCES_UNION = [
       [49.27779, -122.96227],
       CLIFF_UNION,
       [49.27778, -122.95627],
-      [49.27776, -122.95342],
+      DUTHIE_UNION,
+    ],
+  },
+  {
+    routeNames: [ROUTES.francesUnion.name],
+    description: "duthie",
+    type: "shared",
+    positions: [
+      DUTHIE_UNION,
       [49.28038, -122.95339],
       [49.2824, -122.95338],
       [49.28296, -122.95337],
@@ -126,7 +135,7 @@ export const FRANCES_UNION = [
   },
   {
     description: "crossing inlet at bayview",
-    type: "shared-pedestrian",
+    type: "mixed",
     positions: [INLET_BAYVIEW_E, INLET_BAYVIEW_W],
   },
   {
@@ -164,11 +173,19 @@ export const FRANCES_UNION = [
     elevation: 0.5,
     positions: [
       CLIFF_WESTRIDGE_PARK,
-      [49.28105, -122.95942],
-      [49.28096, -122.95967],
-      [49.28097, -122.96016],
-      [49.281, -122.96032],
-      [49.28095, -122.96044],
+      [49.28112, -122.95933],
+      [49.28107, -122.95938],
+      [49.28101, -122.95952],
+      [49.28097, -122.95961],
+      [49.28096, -122.95972],
+      [49.28095, -122.95989],
+      [49.28095, -122.96003],
+      [49.28097, -122.96015],
+      [49.28099, -122.96024],
+      [49.28099, -122.96034],
+      [49.28097, -122.9604],
+      [49.28094, -122.96044],
+      [49.28091, -122.96046],
       HASTINGS_OVERPASS_N,
     ],
   },
@@ -178,32 +195,41 @@ export const FRANCES_UNION = [
     elevation: 1,
     positions: [
       HASTINGS_OVERPASS_N,
-      [49.28035, -122.96047],
-      [49.27986, -122.96027],
-      [49.27982, -122.96014],
-      [49.27988, -122.96001],
+      [49.28035, -122.96045],
+      [49.27994, -122.96029],
+      [49.27986, -122.96025],
+      [49.27983, -122.96019],
+      [49.27982, -122.96013],
+      [49.27983, -122.96007],
+      [49.27985, -122.96002],
+      [49.27989, -122.95999],
+      [49.27991, -122.95999],
+      [49.27994, -122.96],
       HASTINGS_OVERPASS_S,
     ],
   },
   {
     routeNames: [ROUTES.francesUnion.name],
-    description: "wb post-overpass",
-    elevation: 0.5,
-    positions: [HASTINGS_OVERPASS_S, OVERPASS_ADJ_S],
-  },
-  {
-    routeNames: [ROUTES.francesUnion.name],
     description: "overpass to union",
+    elevation: 0.5,
     positions: [
-      OVERPASS_ADJ_S,
-      [49.27999, -122.96028],
-      [49.27992, -122.96034],
-      [49.27981, -122.96028],
-      [49.27977, -122.96003],
-      [49.27979, -122.95975],
-      [49.27997, -122.95937],
-      [49.27997, -122.95919],
-      [49.2799, -122.95899],
+      HASTINGS_OVERPASS_S,
+      [49.28, -122.96009],
+      [49.28001, -122.96014],
+      [49.27999, -122.96025],
+      [49.27998, -122.96033],
+      [49.27989, -122.96034],
+      [49.27984, -122.96031],
+      [49.27981, -122.96025],
+      [49.27979, -122.96014],
+      [49.27978, -122.96004],
+      [49.27977, -122.95991],
+      [49.27981, -122.95971],
+      [49.27984, -122.95964],
+      [49.27995, -122.95942],
+      [49.27998, -122.95927],
+      [49.27997, -122.95918],
+      [49.27994, -122.95908],
       CLIFF_BRUNETTE_FRASER,
       [49.27974, -122.95894],
       CLIFF_UNION,

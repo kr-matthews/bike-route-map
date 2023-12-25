@@ -34,12 +34,14 @@ export const DUNBAR = [
   {
     routeNames: [ROUTES.dunbar.name],
     description: "16th wb: part 1",
+    type: "painted",
     oneWay: "required",
     positions: [[49.25803, -123.1841], DUNBAR_16TH_NW],
   },
   {
     routeNames: [ROUTES.dunbar.name],
     description: "16th wb: part 2",
+    type: "painted",
     oneWay: "required",
     videos: [VIDEOS.dunbarNb.id],
     videosEndAtEnd: [VIDEOS.dunbarNb.id],
@@ -48,6 +50,7 @@ export const DUNBAR = [
   {
     routeNames: [ROUTES.dunbar.name],
     description: "16th eb",
+    type: "painted",
     oneWay: "required",
     positions: [
       [49.25784, -123.1859],
@@ -78,6 +81,7 @@ export const DUNBAR = [
   {
     routeNames: [ROUTES.dunbar.name],
     description: "nb: before 41st",
+    type: "painted",
     oneWay: "required",
     videos: [VIDEOS.dunbarNb.id],
     positions: [DUNBAR_NB_BEFORE_41ST, DUNBAR_41ST_SE],
@@ -93,6 +97,7 @@ export const DUNBAR = [
   {
     routeNames: [ROUTES.dunbar.name],
     description: "nb: after 41st to before king edward",
+    type: "painted",
     oneWay: "required",
     videos: [VIDEOS.dunbarNb.id],
     positions: [
@@ -118,6 +123,7 @@ export const DUNBAR = [
   {
     routeNames: [ROUTES.dunbar.name],
     description: "nb: after king edward to after 18th",
+    type: "painted",
     oneWay: "required",
     videos: [VIDEOS.dunbarNb.id],
     positions: [
@@ -145,6 +151,7 @@ export const DUNBAR = [
   {
     routeNames: [ROUTES.dunbar.name],
     description: "16th: wb dunbar to dunbar",
+    type: "painted",
     oneWay: "required",
     positions: [[49.25799, -123.18409], DUNBAR_16TH_NE],
   },
@@ -171,6 +178,7 @@ export const DUNBAR = [
   {
     routeNames: [ROUTES.dunbar.name],
     description: "sb: beyond 16th to before king edward",
+    type: "painted",
     oneWay: "required",
     positions: [
       DUNBAR_SB_BEYOND_18TH,
@@ -190,6 +198,7 @@ export const DUNBAR = [
   {
     routeNames: [ROUTES.dunbar.name],
     description: "sb: after king edward to 40th",
+    type: "painted",
     oneWay: "required",
     positions: [
       DUNBAR_SB_AFTER_KING_EDWARD,

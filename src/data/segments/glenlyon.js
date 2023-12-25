@@ -9,6 +9,7 @@ export const GLENLYON = [
   {
     routeNames: [ROUTES.glenlyon.name],
     description: "west portion",
+    type: "mixed",
     positions: [
       GLENLYON_FRASER_FORESHORE,
       [49.19773, -123.00893],
@@ -43,6 +44,7 @@ export const GLENLYON = [
   {
     routeNames: [ROUTES.glenlyon.name, ROUTES.fraserForeshoreTrail.name],
     description: "fraser foreshore trail",
+    type: "mixed",
     positions: [
       GLENLYON_FRASER_FORESHORE,
       [49.19728, -123.00814],
@@ -66,6 +68,7 @@ export const GLENLYON = [
   {
     routeNames: [ROUTES.glenlyon.name],
     description: "east portion",
+    type: "mixed",
     positions: [
       GLENLYON_BYRNE_CREEK,
       [49.19526, -123.00075],

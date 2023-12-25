@@ -7,6 +7,7 @@ import {
   MARINE_CHANCELLOR_N,
   MARINE_CHANCELLOR_SE,
   TASMANIA_CHANCELLOR,
+  WESBROOK_CHANCELLOR_SE,
   WESBROOK_CHANCELLOR_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -30,6 +31,7 @@ export const CHANCELLOR = [
   {
     routeNames: [ROUTES.chancellor.name],
     description: "middle shared path",
+    type: "mixed",
     positions: [
       ACADIA_CHANCELLOR,
       [49.27333, -123.24171],
@@ -61,6 +63,7 @@ export const CHANCELLOR = [
   {
     routeNames: [ROUTES.chancellor.name],
     description: "east portion, eb",
+    type: "quiet",
     oneWay: "required",
     positions: [
       TASMANIA_CHANCELLOR,
@@ -83,6 +86,7 @@ export const CHANCELLOR = [
   {
     routeNames: [ROUTES.chancellor.name],
     description: "east portion, wb",
+    type: "quiet",
     oneWay: "required",
     positions: [
       BLANCA_8TH_E,
@@ -105,7 +109,8 @@ export const CHANCELLOR = [
   },
   {
     routeNames: [ROUTES.chancellor.name],
-    description: "west portion, eb",
+    description: "eb: to wesbrook",
+    type: "painted",
     oneWay: "required",
     positions: [
       MARINE_CHANCELLOR_SE,
@@ -117,11 +122,29 @@ export const CHANCELLOR = [
       [49.27282, -123.24993],
       [49.27294, -123.24944],
       WESBROOK_CHANCELLOR_WS,
+    ],
+  },
+  {
+    routeNames: [ROUTES.chancellor.name],
+    description: "eb: wesbrook",
+    type: "comfortable",
+    oneWay: "required",
+    positions: [
+      WESBROOK_CHANCELLOR_WS,
       [49.27301, -123.24893],
       WESBROOK_CHANCELLOR_SW,
-      [49.27295, -123.24865],
+      WESBROOK_CHANCELLOR_SE,
       [49.27303, -123.24865],
       [49.27309, -123.24862],
+      WESBROOK_CHANCELLOR_ES,
+    ],
+  },
+  {
+    routeNames: [ROUTES.chancellor.name],
+    description: "eb: from wesbrook",
+    type: "painted",
+    oneWay: "required",
+    positions: [
       WESBROOK_CHANCELLOR_ES,
       [49.27321, -123.24788],
       [49.27329, -123.24715],
@@ -136,7 +159,8 @@ export const CHANCELLOR = [
   },
   {
     routeNames: [ROUTES.chancellor.name],
-    description: "west portion, wb",
+    description: "wb: to wesbrook",
+    type: "painted",
     oneWay: "required",
     positions: [
       ACADIA_CHANCELLOR,
@@ -148,11 +172,29 @@ export const CHANCELLOR = [
       [49.27349, -123.24728],
       [49.27339, -123.2481],
       WESBROOK_CHANCELLOR_EN,
+    ],
+  },
+  {
+    routeNames: [ROUTES.chancellor.name],
+    description: "wb: wesbrook",
+    type: "comfortable",
+    oneWay: "required",
+    positions: [
+      WESBROOK_CHANCELLOR_EN,
       [49.27332, -123.24852],
       [49.27329, -123.24871],
       [49.2733, -123.24884],
       [49.27328, -123.24896],
       [49.27323, -123.24905],
+      WESBROOK_CHANCELLOR_WN,
+    ],
+  },
+  {
+    routeNames: [ROUTES.chancellor.name],
+    description: "wb: from wesbrook",
+    type: "painted",
+    oneWay: "required",
+    positions: [
       WESBROOK_CHANCELLOR_WN,
       [49.27316, -123.2494],
       [49.2731, -123.2497],

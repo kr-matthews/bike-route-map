@@ -43,7 +43,7 @@ import {
   QUEBEC_1ST_SW,
   QUEBEC_5TH,
   QUEBEC_KEEFER_E,
-  QUEBEC_KEEFER_W,
+  QUEBEC_KEEFER_SW,
   QUEBEC_SEAWALL,
   QUEBEC_UNION_NE,
   QUEBEC_UNION_NW,
@@ -84,6 +84,7 @@ const QUEBEC_QUEBEC_NW = [49.27634, -123.10282];
 const QUEBEC_QUEBEC_SW = [49.27628, -123.10277];
 const QUEBEC_TERMINAL_SW = [49.27288, -123.10192];
 const QUEBEC_3RD = [49.26822, -123.10276];
+const QUEBEC_NB_PROTECTION_END = [49.27224, -123.10165];
 
 const JERVIS_BEACH_SW = [49.28071, -123.13823];
 const BEACH_SPLIT = [49.28129, -123.13918];
@@ -105,6 +106,13 @@ const QUEBEC_EXPO_NE = [49.27671, -123.1023];
 
 const CASTINGS_LAMEYS_MILL = [49.26646, -123.13076];
 
+const BURRARD_PACIFIC_SE = [49.27689, -123.13243];
+const PACIFIC_EB_PROTECTION_END = [49.27338, -123.12708];
+const CAMBIE_PACIFIC_EE = [49.27435, -123.11415];
+const SMITHE_PACIFIC_SW = [49.27474, -123.11294];
+const QUEBEC_BEFORE_SWITCHMEN = [49.27152, -123.10228];
+const QUEBEC_SB_AFTER_UNION = [49.27725, -123.10222];
+
 export const SEASIDE_BYPASS = [
   // connections
   {
@@ -115,12 +123,14 @@ export const SEASIDE_BYPASS = [
   },
   {
     oneWay: "required",
+    type: "shared",
     description: "left onto burrard",
     positions: [EASTBOUND_SPLIT_AT_BURRARD, BURRARD_PACIFIC_SE_W],
   },
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "4th to 3rd",
+    type: "quiet",
     positions: [WALLACE_4TH_S, WALLACE_3RD],
   },
   {
@@ -265,6 +275,7 @@ export const SEASIDE_BYPASS = [
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "1st eb 1",
+    type: "painted",
     oneWay: "required",
     videos: [VIDEOS.seasideBypassFalseCreekSouthEb.id, VIDEOS.yukonSb.id],
     positions: [
@@ -277,6 +288,7 @@ export const SEASIDE_BYPASS = [
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "1st eb 2",
+    type: "painted",
     oneWay: "required",
     videos: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
     positions: [
@@ -298,6 +310,7 @@ export const SEASIDE_BYPASS = [
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "1st wb",
+    type: "painted",
     oneWay: "required",
     positions: [
       ONTARIO_1ST_NE,
@@ -319,6 +332,7 @@ export const SEASIDE_BYPASS = [
   {
     routeNames: [ROUTES.seasideBypass.name, ROUTES.centralValleyGreenway.name],
     description: "1st ontario to quebec",
+    type: "dedicated",
     oneWay: "required",
     videos: [
       VIDEOS.seasideBypassFalseCreekSouthEb.id,
@@ -329,11 +343,13 @@ export const SEASIDE_BYPASS = [
   {
     routeNames: [ROUTES.seasideBypass.name, ROUTES.centralValleyGreenway.name],
     description: "1st quebec to ontario",
+    type: "dedicated",
     oneWay: "required",
     positions: [QUEBEC_1ST_NW, ONTARIO_1ST_NE],
   },
   {
     description: "quebec 3rd to 1st",
+    type: "dedicated",
     oneWay: "required",
     positions: [
       QUEBEC_3RD,
@@ -350,10 +366,10 @@ export const SEASIDE_BYPASS = [
   },
   {
     routeNames: [ROUTES.seasideBypass.name],
-    description: "quebec -> expo",
+    description: "nb: quebec protected",
+    type: "dedicated",
     oneWay: "required",
     videos: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
-    videosEndAtEnd: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
     positions: [
       QUEBEC_1ST_SE,
       QUEBEC_1ST_NE,
@@ -361,7 +377,18 @@ export const SEASIDE_BYPASS = [
       [49.27088, -123.1023],
       [49.2712, -123.10216],
       [49.27188, -123.10179],
-      [49.27224, -123.10165],
+      QUEBEC_NB_PROTECTION_END,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seasideBypass.name],
+    description: "nb: quebec -> expo",
+    type: "painted",
+    oneWay: "required",
+    videos: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
+    videosEndAtEnd: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
+    positions: [
+      QUEBEC_NB_PROTECTION_END,
       [49.27243, -123.10163],
       [49.27287, -123.1016],
       [49.27311, -123.10158],
@@ -389,6 +416,7 @@ export const SEASIDE_BYPASS = [
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "expo bi-directional",
+    type: "dedicated",
     positions: [
       CARRALL_EXPO_NW,
       CARRALL_EXPO_NE,
@@ -403,6 +431,7 @@ export const SEASIDE_BYPASS = [
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "expo pre-tunnel",
+    type: "painted",
     oneWay: "required",
     elevation: -0.5,
     positions: [
@@ -434,6 +463,7 @@ export const SEASIDE_BYPASS = [
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "bc place",
+    type: "painted",
     oneWay: "required",
     elevation: -1,
     hideArrows: true,
@@ -462,6 +492,7 @@ export const SEASIDE_BYPASS = [
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "expo -> pacific",
+    type: "painted",
     oneWay: "required",
     elevation: -0.5,
     positions: [
@@ -536,6 +567,7 @@ export const SEASIDE_BYPASS = [
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "wb around burrard",
+    type: "dedicated",
     oneWay: "required",
     positions: [
       HOWE_PACIFIC,
@@ -550,7 +582,8 @@ export const SEASIDE_BYPASS = [
   },
   {
     routeNames: [ROUTES.seasideBypass.name],
-    description: "pacific eb",
+    description: "pacific eb: to burrard",
+    type: "dedicated",
     oneWay: "required",
     positions: [
       THURLOW_PACIFIC_W,
@@ -563,7 +596,22 @@ export const SEASIDE_BYPASS = [
       BURRARD_PACIFIC_SW,
       [49.27698, -123.1328],
       EASTBOUND_SPLIT_AT_BURRARD,
-      [49.27689, -123.13243],
+    ],
+  },
+  {
+    routeNames: [ROUTES.seasideBypass.name],
+    description: "pacific eb: crossing burrard",
+    type: "shared",
+    oneWay: "required",
+    positions: [EASTBOUND_SPLIT_AT_BURRARD, BURRARD_PACIFIC_SE],
+  },
+  {
+    routeNames: [ROUTES.seasideBypass.name],
+    description: "pacific eb: burrard to beyond richards",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      BURRARD_PACIFIC_SE,
       BURRARD_PACIFIC_SE_E,
       [49.2766, -123.13204],
       HORNBY_PACIFIC_SE,
@@ -577,7 +625,16 @@ export const SEASIDE_BYPASS = [
       [49.27384, -123.12787],
       RICHARDS_PACIFIC_SE,
       [49.27341, -123.12719],
-      [49.27338, -123.12708],
+      PACIFIC_EB_PROTECTION_END,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seasideBypass.name],
+    description: "pacific eb: beyond richards to cambie",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      PACIFIC_EB_PROTECTION_END,
       [49.27334, -123.12701],
       [49.27322, -123.12676],
       [49.27314, -123.12654],
@@ -610,11 +667,29 @@ export const SEASIDE_BYPASS = [
       [49.27417, -123.11476],
       [49.27429, -123.11437],
       [49.27435, -123.11423],
-      [49.27435, -123.11415],
+      CAMBIE_PACIFIC_EE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seasideBypass.name],
+    description: "pacific eb: under cambie off ramp",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      CAMBIE_PACIFIC_EE,
       [49.27433, -123.114],
       [49.27433, -123.11392],
       [49.27458, -123.11329],
-      [49.27474, -123.11294],
+      SMITHE_PACIFIC_SW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seasideBypass.name],
+    description: "pacific eb: smithe to quebec",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      SMITHE_PACIFIC_SW,
       [49.27481, -123.11282],
       [49.27506, -123.11236],
       [49.27549, -123.1115],
@@ -641,8 +716,8 @@ export const SEASIDE_BYPASS = [
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "quebec sb no lane",
-    oneWay: "required",
     type: "shared",
+    oneWay: "required",
     positions: [
       QUEBEC_QUEBEC_NW,
       QUEBEC_QUEBEC_SW,
@@ -663,13 +738,24 @@ export const SEASIDE_BYPASS = [
   },
   {
     routeNames: [ROUTES.seasideBypass.name],
-    description: "quebec sb lane",
+    description: "quebec sb painted",
+    type: "painted",
     oneWay: "required",
     positions: [
       QUEBEC_TERMINAL_SW,
       [49.27255, -123.10191],
       [49.27207, -123.102],
       [49.27179, -123.10213],
+      QUEBEC_BEFORE_SWITCHMEN,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seasideBypass.name],
+    description: "quebec sb protected",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      QUEBEC_BEFORE_SWITCHMEN,
       [49.27127, -123.10242],
       [49.27104, -123.1026],
       [49.27091, -123.10266],
@@ -680,6 +766,7 @@ export const SEASIDE_BYPASS = [
   },
   {
     description: "quebec 1st to 3rd",
+    type: "dedicated",
     oneWay: "required",
     positions: [
       QUEBEC_1ST_NW,
@@ -836,10 +923,16 @@ export const SEASIDE_BYPASS = [
     positions: [THURLOW_BEACH, THURLOW_PACIFIC_N],
   },
   {
-    description: "davie: pacific to marinaside and back",
+    description: "davie: pacific to marinaside",
+    type: "painted",
+    oneWay: "required",
+    positions: [PACIFIC_DAVIE_NW, MARINASIDE_DAVIE_NW],
+  },
+  {
+    description: "marinaside circle mostly",
+    type: "shared",
     oneWay: "required",
     positions: [
-      PACIFIC_DAVIE_NW,
       MARINASIDE_DAVIE_NW,
       [49.27304, -123.12003],
       [49.27298, -123.12001],
@@ -854,11 +947,17 @@ export const SEASIDE_BYPASS = [
       [49.27316, -123.11976],
       [49.27316, -123.11981],
       MARINASIDE_DAVIE_NE,
-      PACIFIC_DAVIE_NE,
     ],
   },
   {
+    description: "davie: pacific to marinaside and back",
+    type: "painted",
+    oneWay: "required",
+    positions: [MARINASIDE_DAVIE_NE, PACIFIC_DAVIE_NE],
+  },
+  {
     description: "davie/marinaside circle completion",
+    type: "shared",
     oneWay: "required",
     hideArrows: true,
     positions: [MARINASIDE_DAVIE_NE, MARINASIDE_DAVIE_NW],
@@ -895,6 +994,7 @@ export const SEASIDE_BYPASS = [
   },
   {
     description: "quebec connection to union nb",
+    type: "dedicated",
     oneWay: "required",
     positions: [
       QUEBEC_PATH_SPLIT,
@@ -907,6 +1007,14 @@ export const SEASIDE_BYPASS = [
       [49.27681, -123.1021],
       [49.2769, -123.10209],
       QUEBEC_UNION_SE,
+    ],
+  },
+  {
+    description: "quebec nb to keefer",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      QUEBEC_UNION_SE,
       QUEBEC_UNION_NE,
       [49.27792, -123.10208],
       [49.27865, -123.10209],
@@ -917,16 +1025,26 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    description: "quebec connection from union sb",
+    description: "quebec connection from keefer sb",
     oneWay: "required",
+    type: "painted",
     positions: [
-      QUEBEC_KEEFER_W,
+      QUEBEC_KEEFER_SW,
       [49.27916, -123.10221],
       [49.2791, -123.1022],
       [49.279, -123.10218],
       [49.27866, -123.10218],
       QUEBEC_UNION_NW,
       QUEBEC_UNION_SW,
+      QUEBEC_SB_AFTER_UNION,
+    ],
+  },
+  {
+    description: "quebec: beyond union to expo",
+    oneWay: "required",
+    type: "dedicated",
+    positions: [
+      QUEBEC_SB_AFTER_UNION,
       [49.27717, -123.10223],
       [49.27688, -123.10224],
       [49.2768, -123.10225],

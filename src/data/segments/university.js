@@ -12,7 +12,8 @@ import { ROUTES } from "../routes";
 export const UNIVERSITY = [
   {
     routeNames: [ROUTES.university.name],
-    description: "all",
+    description: "wb",
+    type: "painted",
     oneWay: "required",
     positions: [
       BLANCA_10TH_E,
@@ -43,6 +44,15 @@ export const UNIVERSITY = [
       [49.26671, -123.24416],
       WESBROOK_UNIVERSITY_NE,
       WESBROOK_UNIVERSITY_NW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.university.name],
+    description: "loop",
+    type: "quiet",
+    oneWay: "required",
+    positions: [
+      WESBROOK_UNIVERSITY_NW,
       [49.2662, -123.24678],
       [49.26611, -123.24734],
       [49.26592, -123.24866],
@@ -54,6 +64,15 @@ export const UNIVERSITY = [
       [49.2658, -123.24863],
       [49.26602, -123.24721],
       [49.26622, -123.24582],
+      WESBROOK_UNIVERSITY_SW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.university.name],
+    description: "eb",
+    type: "painted",
+    oneWay: "required",
+    positions: [
       WESBROOK_UNIVERSITY_SW,
       WESBROOK_UNIVERSITY_SE,
       [49.26644, -123.24464],

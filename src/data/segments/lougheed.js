@@ -28,17 +28,22 @@ const WESTBOUND_ELEVATION_1_END = [49.23005, -122.83592];
 const WESTBOUND_ELEVATION_1_POST = [49.23017, -122.83782];
 const SPERLING_LOUGHEED_NE = [49.2597, -122.96443];
 
-const EASTBOUND_BRUNETTE_FRASER_PRE = [49.25217, -122.91204];
+const EASTBOUND_BRUNETTE_FRASER_PRE = [49.25215, -122.91204];
 const EASTBOUND_BRUNETTE_FRASER_START = [49.25194, -122.91008];
 const EASTBOUND_BRUNETTE_FRASER_END = [49.2518, -122.90909];
-const EASTBOUND_BRUNETTE_FRASER_POST = [49.25138, -122.90613];
-const WESTBOUND_BRUNETTE_FRASER_PRE = [49.25181, -122.90764];
-const WESTBOUND_BRUNETTE_FRASER_START = [49.25199, -122.90903];
+const EASTBOUND_BRUNETTE_FRASER_POST = [49.25137, -122.90615];
+const WESTBOUND_BRUNETTE_FRASER_PRE = [49.25179, -122.90763];
+const WESTBOUND_BRUNETTE_FRASER_START = [49.25198, -122.90903];
 const WESTBOUND_BRUNETTE_FRASER_END = [49.2521, -122.90992];
-const WESTBOUND_BRUNETTE_FRASER_POST = [49.2522, -122.91042];
+const WESTBOUND_BRUNETTE_FRASER_POST = [49.25218, -122.91042];
+
+const EB_AFTER_MADISON = [49.26636, -123.00736];
+const WILLINGDON_LOUGHEED_SW = [49.26628, -123.00341];
+const WILLINGDON_LOUGHEED_NE = [49.26657, -123.00302];
+const WB_BEFORE_BOUNDARY = [49.26597, -123.0195];
 
 const POST_DELTA_SHOULDER_START = [49.26498, -122.99093];
-const AUSTIN_LOUGHEED_SW = [49.24856, -122.8978];
+const AUSTIN_LOUGHEED_SW = [49.24856, -122.89783];
 const BRUNETTE_LOUGHEED_SE = [49.23651, -122.87167];
 const WOOLRIDGE_LOUGHEED_S = [49.23587, -122.86868];
 const MARY_HILL_JOIN = [49.22939, -122.83789];
@@ -46,7 +51,7 @@ const MARY_HILL_JOIN = [49.22939, -122.83789];
 const WOOLRIDGE_LOUGHEED_NW = [49.23621, -122.86918];
 const BRUNETTE_LOUGHEED_N = [49.23674, -122.87171];
 const AUSTIN_LOUGHEED_NW = [49.24872, -122.89757];
-const GAGLARDI_LOUGHEED_NE = [49.25251, -122.91237];
+const GAGLARDI_LOUGHEED_NE = [49.25248, -122.91237];
 const BEYOND_BETA_SHOULDER_END = [49.26645, -122.99871];
 
 export const LOUGHEED = [
@@ -54,6 +59,7 @@ export const LOUGHEED = [
   {
     // !! move to Lakes (if/when it's added)
     description: "sperling",
+    type: "mixed",
     positions: [
       SPERLING_WINSTON,
       [49.25827, -122.96436],
@@ -72,6 +78,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "eb: boundary to gilmore",
+    type: "painted",
     oneWay: "required",
     positions: [
       [49.26564, -123.02192],
@@ -84,13 +91,15 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name, ROUTES.seaToRiver.name],
     description: "eb: crossing gilmore",
+    type: "painted",
     oneWay: "required",
     hideArrows: true,
     positions: [GILMORE_LOUGHEED_SW, GILMORE_LOUGHEED_SE],
   },
   {
     routeNames: [ROUTES.lougheed.name],
-    description: "eb: gilmore to beta",
+    description: "eb: gilmore to after madison",
+    type: "painted",
     oneWay: "required",
     positions: [
       GILMORE_LOUGHEED_SE,
@@ -98,9 +107,27 @@ export const LOUGHEED = [
       [49.26623, -123.0106],
       [49.26633, -123.00877],
       [49.26638, -123.00743],
-      [49.26636, -123.00736],
+      EB_AFTER_MADISON,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "eb: protected to willingdon",
+    type: "comfortable",
+    oneWay: "required",
+    positions: [
+      EB_AFTER_MADISON,
       [49.26636, -123.00602],
-      [49.26628, -123.00341], // Willingdon
+      WILLINGDON_LOUGHEED_SW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "eb: gilmore to beta",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      WILLINGDON_LOUGHEED_SW,
       [49.2663, -123.00301],
       [49.26624, -123.00041],
       [49.2662, -122.99855],
@@ -111,6 +138,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "eb: beta to delta",
+    type: "dedicated",
     oneWay: "recommended",
     positions: [
       BETA_LOUGHEED,
@@ -127,6 +155,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "eb: just beyond delta",
+    type: "dedicated",
     oneWay: "required",
     positions: [
       DELTA_LOUGHEED_SE,
@@ -204,7 +233,11 @@ export const LOUGHEED = [
     elevation: 0.5,
     positions: [
       EASTBOUND_BRUNETTE_FRASER_PRE,
-      [49.25199, -122.91085],
+      [49.25213, -122.9119],
+      [49.25208, -122.9118],
+      [49.25204, -122.91153],
+      [49.25205, -122.91144],
+      [49.25198, -122.91083],
       EASTBOUND_BRUNETTE_FRASER_START,
     ],
   },
@@ -228,15 +261,22 @@ export const LOUGHEED = [
     oneWay: "required",
     positions: [
       EASTBOUND_BRUNETTE_FRASER_POST,
-      [49.25112, -122.90438],
-      [49.25099, -122.90377],
-      [49.25085, -122.90316],
-      [49.2507, -122.9025],
-      [49.25054, -122.90198],
-      [49.25035, -122.90141],
-      [49.25008, -122.90075],
-      [49.24971, -122.90001],
-      [49.24931, -122.89924],
+      [49.25109, -122.90424],
+      [49.25097, -122.90369],
+      [49.25094, -122.90348],
+      [49.25092, -122.90331],
+      [49.25082, -122.90291],
+      [49.25081, -122.90282],
+      [49.25078, -122.90277],
+      [49.25073, -122.90256],
+      [49.2505, -122.90184],
+      [49.25031, -122.90129],
+      [49.25011, -122.90081],
+      [49.24996, -122.90048],
+      [49.24988, -122.90035],
+      [49.24933, -122.89927],
+      [49.24917, -122.89895],
+      [49.24891, -122.89846],
       AUSTIN_LOUGHEED_SW,
     ],
   },
@@ -346,6 +386,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "eb: elevation 2a",
+    type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
     positions: [EASTBOUND_ELEVATION_2_PRE, EASTBOUND_ELEVATION_2_START],
@@ -353,6 +394,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "eb: elevation 2b part1",
+    type: "dedicated",
     oneWay: "required",
     elevation: 1,
     positions: [
@@ -514,18 +556,26 @@ export const LOUGHEED = [
     oneWay: "required",
     positions: [
       AUSTIN_LOUGHEED_NW,
-      [49.24878, -122.89762],
-      [49.24942, -122.89887],
-      [49.24987, -122.89974],
-      [49.25027, -122.90056],
-      [49.25057, -122.90128],
-      [49.25078, -122.90191],
-      [49.25099, -122.9026],
-      [49.25113, -122.90312],
-      [49.25136, -122.90431],
-      [49.2515, -122.90498],
-      [49.25169, -122.90674],
-      [49.25175, -122.90724],
+      [49.24879, -122.89764],
+      [49.24901, -122.89804],
+      [49.24931, -122.89866],
+      [49.24937, -122.8988],
+      [49.24987, -122.89972],
+      [49.24993, -122.89988],
+      [49.25017, -122.90037],
+      [49.25039, -122.90088],
+      [49.25054, -122.90128],
+      [49.25064, -122.90155],
+      [49.25083, -122.90215],
+      [49.25106, -122.90294],
+      [49.25128, -122.90398],
+      [49.25132, -122.90422],
+      [49.25137, -122.90452],
+      [49.2514, -122.90465],
+      [49.25147, -122.90487],
+      [49.25151, -122.90513],
+      [49.25151, -122.9055],
+      [49.25163, -122.90634],
       WESTBOUND_BRUNETTE_FRASER_PRE,
     ],
   },
@@ -534,7 +584,11 @@ export const LOUGHEED = [
     description: "wb: pre brunette fraser overpass",
     oneWay: "required",
     elevation: 0.5,
-    positions: [WESTBOUND_BRUNETTE_FRASER_PRE, WESTBOUND_BRUNETTE_FRASER_START],
+    positions: [
+      WESTBOUND_BRUNETTE_FRASER_PRE,
+      [49.25191, -122.90857],
+      WESTBOUND_BRUNETTE_FRASER_START,
+    ],
   },
   {
     routeNames: [ROUTES.lougheed.name],
@@ -636,7 +690,8 @@ export const LOUGHEED = [
   },
   {
     routeNames: [ROUTES.lougheed.name],
-    description: "wb: beta-ish to boundary",
+    description: "wb: beta-ish to willingdon",
+    type: "dedicated",
     oneWay: "required",
     positions: [
       BEYOND_BETA_SHOULDER_END,
@@ -646,7 +701,16 @@ export const LOUGHEED = [
       [49.26657, -123.00095],
       [49.26659, -123.0015],
       [49.26655, -123.0016],
-      [49.26657, -123.00302],
+      WILLINGDON_LOUGHEED_NE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "wb: willingdon to near-boundary",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      WILLINGDON_LOUGHEED_NE,
       [49.26655, -123.00335],
       [49.26658, -123.00463],
       [49.26663, -123.00602],
@@ -659,7 +723,16 @@ export const LOUGHEED = [
       GILMORE_LOUGHEED_NW,
       [49.26613, -123.01651],
       [49.26594, -123.0194],
-      [49.26597, -123.0195],
+      WB_BEFORE_BOUNDARY,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "wb: just before boundary",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      WB_BEFORE_BOUNDARY,
       [49.26594, -123.02059],
       [49.26587, -123.02213],
       [49.26585, -123.02244],

@@ -19,6 +19,7 @@ export const FRASER_RIVER_TRAIL = [
   {
     routeNames: [ROUTES.fraserRiverTrail.name],
     description: "southlands",
+    type: "mixed",
     positions: [
       BALACLAVA_CELTIC,
       [49.21763, -123.17615],
@@ -48,6 +49,7 @@ export const FRASER_RIVER_TRAIL = [
   {
     routeNames: [ROUTES.fraserRiverTrail.name],
     description: "marpole",
+    type: "mixed",
     positions: [
       [49.20107, -123.13972],
       [49.20103, -123.13963],
@@ -70,11 +72,13 @@ export const FRASER_RIVER_TRAIL = [
   },
   {
     description: "victoria st connection",
+    type: "comfortable",
     positions: [VICTORIA_FRASER_RIVER, [49.20721, -123.06619], VICTORIA_KENT_N],
   },
   {
     routeNames: [ROUTES.fraserRiverTrail.name],
     description: "victoria-fraserview",
+    type: "comfortable",
     positions: [
       [49.20831, -123.07008],
       [49.20794, -123.07006],
@@ -138,6 +142,7 @@ export const FRASER_RIVER_TRAIL = [
   {
     routeNames: [ROUTES.fraserRiverTrail.name],
     description: "river district - near elliott",
+    type: "other",
     videos: [VIDEOS.sunriseNb.id],
     videosStartAtEnd: [VIDEOS.sunriseNb.id],
     positions: [

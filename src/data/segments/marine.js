@@ -37,6 +37,7 @@ import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 const GRANVILLE_GAS_STATION = [49.20539, -123.14034];
+const GRANVILLE_SIDEWALK_START = [49.20515, -123.14013];
 const MARINE_WEST_MALL_ISH = [49.268, -123.25956];
 const MARINE_WEST_MALL = [49.26862, -123.25881];
 const BEYOND_CECIL_GREEN_PARK = [49.27056, -123.25527];
@@ -77,7 +78,17 @@ export const MARINE = [
       MARINE_ARTHUR_LAING_N,
       [49.2049, -123.13956],
       [49.20504, -123.13993],
-      [49.20515, -123.14013],
+      GRANVILLE_SIDEWALK_START,
+    ],
+  },
+  {
+    routeNames: [ROUTES.marine.name],
+    description: "gas station sidewalk",
+    type: "other",
+    oneWay: "required",
+    videos: [VIDEOS.arbutusGreenwayNb.id],
+    positions: [
+      GRANVILLE_SIDEWALK_START,
       [49.20522, -123.14015],
       [49.2053, -123.14026],
       [49.20536, -123.14031],
@@ -149,6 +160,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "sw marine wb primary to camosun",
+    type: "painted",
     oneWay: "required",
     positions: [
       MARINE_70TH_N,
@@ -213,6 +225,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "sw marine wb at camosun",
+    type: "painted",
     oneWay: "required",
     videos: [VIDEOS.midtownVancouverEb.id],
     positions: [MARINE_41ST_NW, CAMOSUN_MARINE_N],
@@ -357,6 +370,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "sw marine eb near camosun",
+    type: "painted",
     oneWay: "required",
     videos: [VIDEOS.swMarineEb.id, VIDEOS.midtownVancouverEb.id],
     videosStartAtStart: [VIDEOS.midtownVancouverEb.id],
@@ -365,6 +379,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "sw marine eb from camosun",
+    type: "painted",
     oneWay: "required",
     videos: [VIDEOS.swMarineEb.id],
     positions: [
@@ -426,6 +441,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "just beyond arbutus greenway eb",
+    type: "dedicated",
     oneWay: "required",
     videos: [VIDEOS.swMarineEb.id, VIDEOS.arthurLaingSb.id],
     videosStartAtStart: [VIDEOS.arthurLaingSb.id],
@@ -544,6 +560,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "west mall to chancellor",
+    type: "painted",
     oneWay: "required",
     positions: [
       MARINE_WEST_MALL,
@@ -558,6 +575,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name],
     description: "chancellor to cecil-ish",
+    type: "painted",
     oneWay: "required",
     positions: [
       MARINE_CHANCELLOR_N,
@@ -690,6 +708,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name, ROUTES.seasideBypass.name],
     description: "eb: spanish banks to 4th",
+    type: "painted",
     oneWay: "required",
     positions: [
       SPANISH_BANKS_CONNECTION_2,
@@ -762,6 +781,7 @@ export const MARINE = [
   {
     routeNames: [ROUTES.marine.name, ROUTES.seasideBypass.name],
     description: "wb: 4th to spanish banks",
+    type: "painted",
     oneWay: "required",
     positions: [
       MARINE_4TH_NE,

@@ -5,6 +5,7 @@ export const WINDERMERE = [
   {
     routeNames: [ROUTES.windermere.name],
     description: "primary",
+    type: "quiet",
     positions: [
       WINDERMERE_ADANAC,
       [49.27784, -123.03622],

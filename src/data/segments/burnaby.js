@@ -11,6 +11,7 @@ export const BURNABY = [
   {
     routeNames: [ROUTES.burnaby.name],
     description: "primary",
+    type: "quiet",
     positions: [
       CARDERO_BURNABY,
       [49.28375, -123.13854],

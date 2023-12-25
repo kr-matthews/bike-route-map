@@ -2,10 +2,14 @@ import { GLADSTONE_38TH, GLADSTONE_BC_PARKWAY } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const GLADSTONE_30TH_S = [49.2428, -123.06268];
+const GLADSTONE_KINGSWAY_N = [49.24359, -123.06178];
+
 export const GLADSTONE = [
   {
     routeNames: [ROUTES.gladstone.name],
-    description: "primary",
+    description: "38th to 30th lanes",
+    type: "quiet",
     videos: [VIDEOS.gladstoneNb.id],
     videosStartAtStart: [VIDEOS.gladstoneNb.id],
     positions: [
@@ -16,8 +20,41 @@ export const GLADSTONE = [
       [49.23979, -123.06288],
       [49.24149, -123.06283],
       [49.24272, -123.06278],
-      [49.24282, -123.06265],
-      [49.24356, -123.06182],
+      GLADSTONE_30TH_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.gladstone.name],
+    description: "lanes nb",
+    type: "dedicated",
+    oneWay: "required",
+    videos: [VIDEOS.gladstoneNb.id],
+    positions: [
+      GLADSTONE_30TH_S,
+      [49.24287, -123.0625],
+      [49.24343, -123.06188],
+      GLADSTONE_KINGSWAY_N,
+    ],
+  },
+  {
+    routeNames: [ROUTES.gladstone.name],
+    description: "lanes sb",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      GLADSTONE_KINGSWAY_N,
+      [49.24348, -123.062],
+      [49.24293, -123.06264],
+      GLADSTONE_30TH_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.gladstone.name],
+    description: "kingsway to bc parkway",
+    type: "quiet",
+    videos: [VIDEOS.gladstoneNb.id],
+    positions: [
+      GLADSTONE_KINGSWAY_N,
       [49.24473, -123.0605],
       [49.2449, -123.06044],
       [49.24669, -123.06042],
@@ -25,10 +62,10 @@ export const GLADSTONE = [
       [49.24812, -123.0605],
       [49.24886, -123.06048],
       [49.24995, -123.06044],
-      [49.25002, -123.06035],
-      [49.24996, -123.06022],
-      [49.24995, -123.06008],
-      [49.24989, -123.05994],
+      [49.25002, -123.06033],
+      [49.24998, -123.06024],
+      [49.24995, -123.06011],
+      [49.24988, -123.05989],
       GLADSTONE_BC_PARKWAY,
     ],
   },

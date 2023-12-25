@@ -19,6 +19,7 @@ export const PENDER = [
   {
     routeNames: [ROUTES.pender.name],
     description: "eb",
+    type: "painted",
     oneWay: "required",
     videos: [VIDEOS.penderEb.id],
     videosStartAtStart: [VIDEOS.penderEb.id],
@@ -36,6 +37,7 @@ export const PENDER = [
   {
     routeNames: [ROUTES.pender.name],
     description: "eb carrall intersection",
+    type: "painted",
     oneWay: "required",
     hideArrows: true,
     positions: [CARRALL_PENDER_SW, CARRALL_PENDER_SE],
@@ -43,13 +45,14 @@ export const PENDER = [
   {
     routeNames: [ROUTES.pender.name],
     description: "wb no lane",
-    oneWay: "required",
     type: "shared",
+    oneWay: "required",
     positions: [CARRALL_PENDER_NE, CARRALL_PENDER_NW, TAYLOR_PENDER],
   },
   {
     routeNames: [ROUTES.pender.name],
     description: "wb lane",
+    type: "painted",
     oneWay: "required",
     positions: [
       TAYLOR_PENDER,

@@ -15,6 +15,7 @@ const NANAIMO_2ND_W = [49.26863, -123.05672];
 export const NANAIMO = [
   {
     description: "charles crossing",
+    type: "dedicated",
     positions: [
       NANAIMO_CHARLES_W,
       NANAIMO_CHARLES_E,
@@ -26,6 +27,7 @@ export const NANAIMO = [
   },
   {
     description: "cambridge crossing",
+    type: "dedicated",
     positions: [
       [49.2866, -123.0566],
       [49.2866, -123.05631],
@@ -36,6 +38,7 @@ export const NANAIMO = [
   {
     routeNames: [ROUTES.nanaimo.name],
     description: "nb",
+    type: "painted",
     oneWay: "required",
     positions: [
       [49.26855, -123.05648],
@@ -56,6 +59,7 @@ export const NANAIMO = [
   {
     routeNames: [ROUTES.nanaimo.name],
     description: "sb",
+    type: "painted",
     oneWay: "required",
     videos: [VIDEOS.nanaimoSb.id],
     positions: [
@@ -77,6 +81,7 @@ export const NANAIMO = [
   {
     routeNames: [ROUTES.nanaimo.name],
     description: "leaving via 2nd",
+    type: "quiet",
     hideUnlessVideo: true,
     videos: [VIDEOS.nanaimoSb.id],
     videosEndAtStart: [VIDEOS.nanaimoSb.id],

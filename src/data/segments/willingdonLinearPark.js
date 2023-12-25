@@ -5,7 +5,7 @@ export const WILLINGDON_LINEAR_PARK = [
   {
     routeNames: [ROUTES.willingdonLinear.name],
     description: "primary",
-    type: "mixed-use",
+    type: "mixed",
     positions: [
       [49.26972, -123.00298],
       [49.27029, -123.003],

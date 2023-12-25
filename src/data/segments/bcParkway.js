@@ -26,8 +26,8 @@ const BC_PARKWAY_10TH = [49.20226, -122.95859];
 const CITY_PARKWAY_108_NW = [49.19907, -122.84896];
 const CITY_PARKWAY_107A_SW = [49.19734, -122.84891];
 
-const NANAIMO_BC_PARKWAY_SPLIT_EAST = [49.24877, -123.05681];
-const NANAIMO_BC_PARKWAY_SPLIT_WEST = [49.24953, -123.05897];
+const NANAIMO_BC_PARKWAY_SPLIT_EAST = [49.24868, -123.05684];
+const NANAIMO_BC_PARKWAY_SPLIT_WEST = [49.24953, -123.05896];
 const PENTICTON_BC_PARKWAY = [49.24655, -123.05204];
 const PENTICTON_29TH = [49.24463, -123.05206];
 const BC_PARKWAY_29TH_STATION = [49.24432, -123.04668];
@@ -63,6 +63,9 @@ const UNIVERSITY_OLD_YALE = [49.18587, -122.8517];
 const NORTH_OF_GLADSTONE = [49.25029, -123.06026];
 const SOUTH_OF_NORTH_GRANDVIEW = [49.2599, -123.06208];
 
+const CENTRAL_IMPERIAL_SW = [49.22187, -122.99727];
+const JUBILEE_IMPERIAL_SE = [49.22187, -122.99573];
+
 export const BC_PARKWAY = [
   // vancouver alternates
   {
@@ -71,8 +74,14 @@ export const BC_PARKWAY = [
     videos: [VIDEOS.bcParkwayVancouverWb.id],
     positions: [
       NANAIMO_BC_PARKWAY_SPLIT_WEST,
-      [49.24954, -123.05865],
-      [49.24883, -123.05683],
+      [49.24955, -123.05883],
+      [49.24954, -123.05869],
+      [49.24948, -123.05846],
+      [49.24924, -123.05785],
+      [49.24906, -123.05745],
+      [49.24894, -123.05714],
+      [49.2488, -123.05684],
+      [49.24877, -123.05681],
       NANAIMO_BC_PARKWAY_SPLIT_EAST,
     ],
   },
@@ -186,7 +195,7 @@ export const BC_PARKWAY = [
     videos: [VIDEOS.bcParkwayVancouverEb.id, VIDEOS.bcParkwayVancouverWb.id],
     positions: [
       GLADSTONE_BC_PARKWAY,
-      [49.24971, -123.05944],
+      [49.24972, -123.05944],
       NANAIMO_BC_PARKWAY_SPLIT_WEST,
     ],
   },
@@ -196,8 +205,15 @@ export const BC_PARKWAY = [
     videos: [VIDEOS.bcParkwayVancouverEb.id],
     positions: [
       NANAIMO_BC_PARKWAY_SPLIT_WEST,
-      [49.24943, -123.05889],
-      [49.24866, -123.05709],
+      [49.24945, -123.05888],
+      [49.24936, -123.05869],
+      [49.24929, -123.05847],
+      [49.24921, -123.05832],
+      [49.24911, -123.05807],
+      [49.24898, -123.05779],
+      [49.24866, -123.05702],
+      [49.2487, -123.05695],
+      [49.24871, -123.0569],
       NANAIMO_BC_PARKWAY_SPLIT_EAST,
     ],
   },
@@ -207,7 +223,7 @@ export const BC_PARKWAY = [
     videos: [VIDEOS.bcParkwayVancouverEb.id, VIDEOS.bcParkwayVancouverWb.id],
     positions: [
       NANAIMO_BC_PARKWAY_SPLIT_EAST,
-      [49.24876, -123.0565],
+      [49.24867, -123.05649],
       [49.24837, -123.05649],
       [49.24808, -123.05583],
       [49.24806, -123.05564],
@@ -350,8 +366,7 @@ export const BC_PARKWAY = [
   },
   {
     routeNames: [ROUTES.bcParkway.name],
-    description: "central park to southridge overpass",
-    elevation: 0.5,
+    description: "central park to imperial",
     videos: [VIDEOS.bcParkwayBurnabyEb.id],
     positions: [
       PATTERSON_BC_PARKWAY,
@@ -381,8 +396,22 @@ export const BC_PARKWAY = [
       [49.22398, -123.00043],
       [49.22263, -122.99741],
       [49.22237, -122.99728],
-      [49.22187, -122.99727],
-      [49.22187, -122.99573],
+      CENTRAL_IMPERIAL_SW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "imperial sidewalk",
+    videos: [VIDEOS.bcParkwayBurnabyEb.id],
+    positions: [CENTRAL_IMPERIAL_SW, JUBILEE_IMPERIAL_SE],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "imperial to overpass",
+    elevation: 0.5,
+    videos: [VIDEOS.bcParkwayBurnabyEb.id],
+    positions: [
+      JUBILEE_IMPERIAL_SE,
       [49.22159, -122.99524],
       [49.2214, -122.99476],
       [49.22128, -122.99416],
@@ -806,6 +835,7 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "pattullo bridge",
+    type: "other",
     elevation: 1,
     positions: [
       PATTULLO_ELEVATION_START,
@@ -850,6 +880,7 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "eb: 111a ave & 110 ave",
+    type: "painted",
     oneWay: "required",
     positions: [
       ONE_ONE_ONE_AV_START_N,
@@ -896,6 +927,7 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "wb: 111a ave & 110 ave",
+    type: "painted",
     oneWay: "required",
     positions: [
       ONE_ONE_ZERO_125TH_N,
@@ -999,6 +1031,7 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "nb: city parkway",
+    type: "painted",
     oneWay: "required",
     positions: [
       CITY_PARKWAY_107A_SW,
@@ -1014,6 +1047,7 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "sb: city parkway",
+    type: "painted",
     oneWay: "required",
     positions: [
       CITY_PARKWAY_108_NW,
@@ -1067,6 +1101,7 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "university sb 2",
+    type: "painted",
     oneWay: "required",
     positions: [
       UNIVERSITY_SB_LANE_START,
@@ -1135,6 +1170,7 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "university nb 2",
+    type: "painted",
     oneWay: "required",
     positions: [
       UNIVERSITY_NB_LANE_START,

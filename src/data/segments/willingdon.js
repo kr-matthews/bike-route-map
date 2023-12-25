@@ -10,10 +10,13 @@ import { VIDEOS } from "../videos";
 const OVERPASS_START = [49.25712, -123.00387];
 const OVERPASS_END = [49.25813, -123.00382];
 
+const SIDEWALK_START = [49.25476, -123.00409];
+const SIDEWALK_END = [49.25521, -123.00411];
+
 export const WILLINGDON = [
   {
     description: "gilmore connection via sanderson",
-    type: "mixed-use",
+    type: "mixed",
     positions: [
       GILMORE_KINCAID_NW,
       [49.2493, -123.01019],
@@ -40,9 +43,8 @@ export const WILLINGDON = [
   },
   {
     routeNames: [ROUTES.willingdon.name],
-    description: "deer lake to overpass",
-    type: "mixed-use",
-    elevation: 0.5,
+    description: "deer lake to sidewalk",
+    type: "mixed",
     videos: [VIDEOS.willingdonSb.id],
     videosEndAtStart: [VIDEOS.willingdonSb.id],
     positions: [
@@ -72,9 +74,24 @@ export const WILLINGDON = [
       [49.25361, -123.00406],
       [49.25446, -123.00406],
       [49.2545, -123.00409],
-      [49.25476, -123.00409],
-      [49.2548, -123.00411],
-      [49.25521, -123.00411],
+      SIDEWALK_START,
+    ],
+  },
+  {
+    routeNames: [ROUTES.willingdon.name],
+    description: "deer lake to overpass",
+    type: "other",
+    videos: [VIDEOS.willingdonSb.id],
+    positions: [SIDEWALK_START, [49.2548, -123.00411], SIDEWALK_END],
+  },
+  {
+    routeNames: [ROUTES.willingdon.name],
+    description: "sidewalk to overpass",
+    type: "mixed",
+    elevation: 0.5,
+    videos: [VIDEOS.willingdonSb.id],
+    positions: [
+      SIDEWALK_END,
       [49.25561, -123.00402],
       [49.25571, -123.00396],
       [49.25582, -123.00393],
@@ -90,7 +107,7 @@ export const WILLINGDON = [
   {
     routeNames: [ROUTES.willingdon.name],
     description: "overpass",
-    type: "mixed-use",
+    type: "mixed",
     elevation: 1,
     videos: [VIDEOS.willingdonSb.id],
     positions: [OVERPASS_START, OVERPASS_END],
@@ -98,7 +115,7 @@ export const WILLINGDON = [
   {
     routeNames: [ROUTES.willingdon.name],
     description: "overpass to central valley greenway",
-    type: "mixed-use",
+    type: "mixed",
     elevation: 0.5,
     videos: [VIDEOS.willingdonSb.id],
     videosStartAtEnd: [VIDEOS.willingdonSb.id],

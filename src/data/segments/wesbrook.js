@@ -7,6 +7,7 @@ import {
   WESBROOK_16TH_SW,
   WESBROOK_16TH_WN,
   WESBROOK_16TH_WS,
+  WESBROOK_CHANCELLOR_SE,
   WESBROOK_CHANCELLOR_SW,
   WESBROOK_MARINE_N,
   WESBROOK_MARINE_PRE_SLIP,
@@ -24,6 +25,18 @@ const ROUNDABOUT_N = [49.24738, -123.23178];
 const WESBROOK_BERTON = [49.255, -123.23568];
 const WESBROOK_CAMPUS = [49.27044, -123.2477];
 
+const NB_AFTER_16TH = [49.25626, -123.23663];
+const WESBROOK_THUNDERBIRD_NE = [49.26181, -123.24151];
+const WESBROOK_BUS_LOOP_E = [49.26763, -123.24649];
+const WESBROOK_STUDENT_UNION_E = [49.26938, -123.24747];
+const WESBROOK_IONA_NE = [49.27226, -123.24835];
+
+const SB_AFTER_STUDENT_UNION = [49.2689, -123.24748];
+const SB_BEFORE_BUS_LOOP = [49.26782, -123.24685];
+const SB_AFTER_UNIVERSITY = [49.26586, -123.24526];
+const WESBROOK_THUNDERBIRD_NW = [49.2616, -123.24167];
+const SB_BEFORE_16TH = [49.25618, -123.23686];
+
 export const WESBROOK = [
   {
     description: "from marine wb",
@@ -31,7 +44,7 @@ export const WESBROOK = [
     positions: [WESBROOK_MARINE_PRE_SLIP, WESBROOK_MARINE_POST_SLIP],
   },
   {
-    description: "crossing marin",
+    description: "crossing marine",
     positions: [WESBROOK_MARINE_S, WESBROOK_MARINE_N],
   },
   {
@@ -135,18 +148,32 @@ export const WESBROOK = [
   },
   {
     routeNames: [ROUTES.wesbrook.name],
-    description: "16th to campus",
+    description: "nb: after 16th",
+    oneWay: "required",
+    positions: [WESBROOK_16TH_NE, [49.25623, -123.23658], NB_AFTER_16TH],
+  },
+  {
+    routeNames: [ROUTES.wesbrook.name],
+    description: "16th to thunderbird",
+    type: "painted",
     oneWay: "required",
     positions: [
-      WESBROOK_16TH_NE,
-      [49.25623, -123.23658],
-      [49.25626, -123.23663],
+      NB_AFTER_16TH,
       [49.25748, -123.23767],
       [49.259, -123.23903],
       [49.26023, -123.24011],
       [49.26159, -123.24132],
       [49.26169, -123.2414],
-      [49.26181, -123.24151],
+      WESBROOK_THUNDERBIRD_NE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.wesbrook.name],
+    description: "thunderbird to university",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      WESBROOK_THUNDERBIRD_NE,
       [49.2619, -123.2415],
       [49.26273, -123.24222],
       [49.26277, -123.24236],
@@ -157,20 +184,44 @@ export const WESBROOK = [
       [49.26511, -123.24428],
       [49.26575, -123.24481],
       WESBROOK_UNIVERSITY_SE,
-      WESBROOK_UNIVERSITY_NE,
-      [49.26665, -123.24563],
-      [49.26707, -123.24597],
-      [49.26763, -123.24649],
-      [49.26806, -123.24686],
-      [49.26851, -123.24715],
-      [49.26892, -123.24733],
-      [49.26938, -123.24747],
-      WESBROOK_CAMPUS,
     ],
   },
   {
     routeNames: [ROUTES.wesbrook.name],
-    description: "campus to chancellor",
+    description: "university to bus loop",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      WESBROOK_UNIVERSITY_SE,
+      WESBROOK_UNIVERSITY_NE,
+      [49.26665, -123.24563],
+      [49.26707, -123.24597],
+      WESBROOK_BUS_LOOP_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.wesbrook.name],
+    description: "bus loop to student union",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      WESBROOK_BUS_LOOP_E,
+      [49.26806, -123.24686],
+      [49.26851, -123.24715],
+      [49.26892, -123.24733],
+      WESBROOK_STUDENT_UNION_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.wesbrook.name],
+    description: "student union to campus",
+    type: "painted",
+    oneWay: "required",
+    positions: [WESBROOK_STUDENT_UNION_E, WESBROOK_CAMPUS],
+  },
+  {
+    routeNames: [ROUTES.wesbrook.name],
+    description: "campus to iona",
     type: "shared",
     oneWay: "required",
     positions: [
@@ -179,13 +230,24 @@ export const WESBROOK = [
       [49.27085, -123.24785],
       [49.27149, -123.24806],
       [49.27213, -123.2483],
-      [49.27274, -123.2486],
-      [49.27293, -123.24869],
+      WESBROOK_IONA_NE,
     ],
   },
   {
     routeNames: [ROUTES.wesbrook.name],
-    description: "chancellor to 16th",
+    description: "iona to chancellor",
+    type: "mixed",
+    oneWay: "required",
+    positions: [
+      WESBROOK_IONA_NE,
+      [49.27227, -123.24831],
+      WESBROOK_CHANCELLOR_SE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.wesbrook.name],
+    description: "chancellor to student union-ish",
+    type: "painted",
     oneWay: "required",
     positions: [
       WESBROOK_CHANCELLOR_SW,
@@ -196,16 +258,43 @@ export const WESBROOK = [
       [49.27036, -123.2478],
       [49.26995, -123.24772],
       [49.26934, -123.24761],
-      [49.2689, -123.24748],
+      SB_AFTER_STUDENT_UNION,
+    ],
+  },
+  {
+    routeNames: [ROUTES.wesbrook.name],
+    description: "student union-ish to bus loop",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      SB_AFTER_STUDENT_UNION,
       [49.26865, -123.24738],
       [49.26816, -123.24712],
-      [49.26782, -123.24685],
+      SB_BEFORE_BUS_LOOP,
+    ],
+  },
+  {
+    routeNames: [ROUTES.wesbrook.name],
+    description: "bus loop to university-ish",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      SB_BEFORE_BUS_LOOP,
       [49.26759, -123.24665],
       [49.26699, -123.24613],
       [49.26658, -123.24581],
       WESBROOK_UNIVERSITY_NW,
       WESBROOK_UNIVERSITY_SW,
-      [49.26586, -123.24526],
+      SB_AFTER_UNIVERSITY,
+    ],
+  },
+  {
+    routeNames: [ROUTES.wesbrook.name],
+    description: "university-ish to thunderbird",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      SB_AFTER_UNIVERSITY,
       [49.26583, -123.24526],
       [49.26539, -123.24489],
       [49.26491, -123.24448],
@@ -221,16 +310,29 @@ export const WESBROOK = [
       [49.26238, -123.24246],
       [49.26229, -123.24239],
       [49.26227, -123.24228],
-      [49.2616, -123.24167],
+      WESBROOK_THUNDERBIRD_NW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.wesbrook.name],
+    description: "thunderbird to 16th",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      WESBROOK_THUNDERBIRD_NW,
       [49.26148, -123.24156],
       [49.2605, -123.24071],
       [49.26011, -123.24036],
       [49.25889, -123.23927],
       [49.25773, -123.23826],
       [49.25653, -123.23719],
-      [49.25618, -123.23686],
-      [49.25608, -123.23683],
-      WESBROOK_16TH_NW,
+      SB_BEFORE_16TH,
     ],
+  },
+  {
+    routeNames: [ROUTES.wesbrook.name],
+    description: "sb: before thunderbird",
+    oneWay: "required",
+    positions: [SB_BEFORE_16TH, [49.25608, -123.23683], WESBROOK_16TH_NW],
   },
 ];

@@ -20,7 +20,7 @@ export const WATERFRONT = [
   {
     routeNames: [ROUTES.waterfront.name],
     description: "underground",
-    type: "shared",
+    type: "shared", // ! technically some is comfortable
     elevation: -1,
     videos: [VIDEOS.waterfrontEb.id],
     positions: [

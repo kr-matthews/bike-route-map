@@ -1,7 +1,9 @@
 import {
-  BORDEN_KENT_N,
+  ARGYLE_KENT_N_E,
+  BORDEN_KENT_N_S,
   CAMBIE_KENT_N_S,
-  CROMPTON_KENT_N,
+  CROMPTON_KENT_N_N,
+  CROMPTON_KENT_N_S,
   CROMPTON_KENT_S,
   ELLIOTT_KENT,
   ELLIOTT_KENT_PATH,
@@ -27,7 +29,7 @@ const JACK_UPPAL_KENT_S = [49.20531, -123.03383];
 const RIVER_DISTRICT_CROSSING_KENT_S = [49.20504, -123.03116];
 const RIVER_DISTRICT_CROSSING_KENT_N = [49.2053, -123.03107];
 
-const WEST_OF_BORDEN = [49.20954, -123.07496];
+const EB_BEFORE_BORDEN = [49.20952, -123.07505];
 const EAST_OF_ONTARIO = [49.20667, -123.10586];
 
 export const KENT = [
@@ -88,46 +90,78 @@ export const KENT = [
     description: "crompton",
     videos: [VIDEOS.invernessSb.id],
     videosEndAtStart: [VIDEOS.invernessSb.id],
-    positions: [CROMPTON_KENT_S, CROMPTON_KENT_N],
+    positions: [CROMPTON_KENT_S, CROMPTON_KENT_N_S],
   },
   {
     routeNames: [ROUTES.kent.name],
-    description: "kent n: crompton to borden-ish",
+    description: "kent n: eb: crompton to borden-ish",
+    type: "painted",
+    oneWay: "required",
     positions: [
-      CROMPTON_KENT_N,
-      [49.2092, -123.0792],
-      [49.20934, -123.07757],
-      [49.2094, -123.0768],
-      [49.20953, -123.07527],
-      WEST_OF_BORDEN,
+      CROMPTON_KENT_N_S,
+      [49.20932, -123.07752],
+      [49.2095, -123.07536],
+      EB_BEFORE_BORDEN,
     ],
   },
   {
     routeNames: [ROUTES.kent.name],
-    description: "kent n: little bit west of borden",
+    description: "kent n: eb: before borden",
+    type: "painted",
+    oneWay: "required",
     videos: [VIDEOS.dumfriesNb.id],
     videosStartAtStart: [VIDEOS.dumfriesNb.id],
     positions: [
-      WEST_OF_BORDEN,
-      [49.20955, -123.07458],
-      [49.20954, -123.07416],
-      BORDEN_KENT_N,
+      EB_BEFORE_BORDEN,
+      [49.20953, -123.07462],
+      [49.20952, -123.07414],
+      BORDEN_KENT_N_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.kent.name],
+    description: "kent n: eb: borden to argyle",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      BORDEN_KENT_N_S,
+      [49.20947, -123.07356],
+      [49.20937, -123.07288],
+      [49.20921, -123.07224],
+      [49.20897, -123.07135],
+      ARGYLE_KENT_N_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.kent.name],
+    description: "kent n: wb: argyle to crompton",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      ARGYLE_KENT_N_E,
+      [49.20901, -123.07135],
+      [49.20926, -123.07225],
+      [49.20936, -123.07266],
+      [49.2094, -123.07282],
+      [49.2095, -123.07349],
+      [49.20953, -123.07376],
+      [49.20956, -123.074],
+      [49.20957, -123.07458],
+      [49.20956, -123.07505],
+      [49.20939, -123.07724],
+      CROMPTON_KENT_N_N,
     ],
   },
   {
     routeNames: [ROUTES.kent.name],
     description: "kent n: borden to portside-ish",
     positions: [
-      BORDEN_KENT_N,
-      [49.20949, -123.07359],
-      [49.20943, -123.07318],
-      [49.20938, -123.07281],
-      [49.20898, -123.07132],
-      [49.20824, -123.06876],
-      [49.20798, -123.06781],
+      ARGYLE_KENT_N_E,
+      [49.20799, -123.06787],
       VICTORIA_KENT_N,
-      [49.20723, -123.06523],
-      [49.20659, -123.06299],
+      [49.20725, -123.06525],
+      [49.20722, -123.0652],
+      [49.20654, -123.0628],
       GLADSTONE_KENT,
     ],
   },
@@ -256,7 +290,7 @@ export const KENT = [
   },
   {
     routeNames: [ROUTES.kent.name],
-    description: "river district detour",
+    description: "kent s bit",
     positions: [
       KINROSS_KENT,
       KINROSS_KENT_S,
@@ -267,6 +301,12 @@ export const KENT = [
       [49.20553, -123.03576],
       [49.20537, -123.03454],
       [49.20531, -123.03404],
+      JACK_UPPAL_KENT_S,
+    ],
+  },
+  {
+    description: "river district detour",
+    positions: [
       JACK_UPPAL_KENT_S,
       [49.20526, -123.03383],
       [49.20518, -123.03387],
@@ -285,8 +325,12 @@ export const KENT = [
       [49.20467, -123.03132],
       [49.20486, -123.03122],
       RIVER_DISTRICT_CROSSING_KENT_S,
-      RIVER_DISTRICT_CROSSING_KENT_N,
     ],
+  },
+  {
+    routeNames: [ROUTES.kent.name],
+    description: "river district crossing switch",
+    positions: [RIVER_DISTRICT_CROSSING_KENT_S, RIVER_DISTRICT_CROSSING_KENT_N],
   },
   {
     routeNames: [ROUTES.kent.name],
@@ -306,7 +350,6 @@ export const KENT = [
   {
     routeNames: [ROUTES.kent.name],
     description: "uppal kent s to n",
-    isClosed: true,
     positions: [KENT_CONSTRUCTION_SPLIT, JACK_UPPAL_KENT_S],
   },
   {

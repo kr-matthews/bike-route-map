@@ -13,7 +13,16 @@ import {
 } from "../intersections";
 import { ROUTES } from "../routes";
 
-const SHOULDER_END = [49.25357, -123.24221];
+const SHOULDER_END = [49.25349, -123.24245];
+const EB_BEFORE_EAST_MALL = [49.2537, -123.24193];
+const EB_AFTER_EAST_MALL = [49.25434, -123.24003];
+const EB_BEFORE_WESBROOK = [49.2554, -123.23702];
+const EB_AFTER_WESBROOK = [49.25587, -123.23565];
+
+const WB_BEFORE_WESBROOK = [49.25601, -123.23576];
+const WB_AFTER_WESBROOK = [49.2555, -123.23736];
+const WB_BEFORE_EAST_MALL = [49.25452, -123.24016];
+const WB_AFTER_EAST_MALL = [49.25393, -123.24207];
 const SHOULDER_START = [49.25373, -123.24262];
 
 export const SIXTEENTH = [
@@ -26,6 +35,8 @@ export const SIXTEENTH = [
   //     //
   //   ],
   // },
+
+  // eb
   {
     routeNames: [ROUTES.sixteenth.name],
     description: "eb: initial shoulder",
@@ -48,11 +59,18 @@ export const SIXTEENTH = [
   },
   {
     routeNames: [ROUTES.sixteenth.name],
-    description: "eb: shoulder to wesbrook",
+    description: "eb: after shoulder",
+    type: "painted",
+    oneWay: "required",
+    positions: [SHOULDER_END, EB_BEFORE_EAST_MALL],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "eb: crossing east mall",
+    type: "comfortable",
     oneWay: "required",
     positions: [
-      SHOULDER_END,
-      [49.2537, -123.24193],
+      EB_BEFORE_EAST_MALL,
       [49.25369, -123.24185],
       [49.25383, -123.24165],
       [49.25387, -123.2415],
@@ -65,12 +83,22 @@ export const SIXTEENTH = [
       [49.25403, -123.24066],
       [49.25411, -123.24055], // EAST_MALL_16TH_ES
       [49.25428, -123.24007],
-      [49.25434, -123.24003],
-      [49.25481, -123.2387],
-      [49.2554, -123.23702],
-      [49.25539, -123.23695],
-      WESBROOK_16TH_WS,
+      EB_AFTER_EAST_MALL,
     ],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "eb: east mall to wesbrook",
+    type: "painted",
+    oneWay: "required",
+    positions: [EB_AFTER_EAST_MALL, [49.25481, -123.2387], EB_BEFORE_WESBROOK],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "eb: before wesbrook",
+    type: "comfortable",
+    oneWay: "required",
+    positions: [EB_BEFORE_WESBROOK, [49.25539, -123.23695], WESBROOK_16TH_WS],
   },
   {
     routeNames: [ROUTES.sixteenth.name, ROUTES.wesbrook.name],
@@ -97,11 +125,17 @@ export const SIXTEENTH = [
   },
   {
     routeNames: [ROUTES.sixteenth.name],
-    description: "eb: from wesbrook",
+    description: "eb: after wesbrook",
+    oneWay: "required",
+    positions: [WESBROOK_16TH_ES, EB_AFTER_WESBROOK],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "eb: wesbrook to blanca",
+    type: "painted",
     oneWay: "required",
     positions: [
-      WESBROOK_16TH_ES,
-      [49.25587, -123.23565],
+      EB_AFTER_WESBROOK,
       [49.25633, -123.23432],
       [49.25692, -123.23268],
       [49.25731, -123.23161], // BINNING
@@ -119,9 +153,12 @@ export const SIXTEENTH = [
       [49.25828, -123.21566],
     ],
   },
+
+  // wb
   {
     routeNames: [ROUTES.sixteenth.name],
-    description: "wb: to wesbrook",
+    description: "wb: 16th to wesbrook",
+    type: "painted",
     oneWay: "required",
     positions: [
       BLANCA_16TH_NW_SLIP,
@@ -151,9 +188,14 @@ export const SIXTEENTH = [
       [49.25663, -123.23396],
       [49.25637, -123.23466],
       [49.25615, -123.23534],
-      [49.25601, -123.23576],
-      WESBROOK_16TH_EN,
+      WB_BEFORE_WESBROOK,
     ],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "wb: before wesbrook",
+    oneWay: "required",
+    positions: [WB_BEFORE_WESBROOK, WESBROOK_16TH_EN],
   },
   {
     routeNames: [ROUTES.sixteenth.name, ROUTES.wesbrook.name],
@@ -180,14 +222,23 @@ export const SIXTEENTH = [
   },
   {
     routeNames: [ROUTES.sixteenth.name],
-    description: "wb: from wesbrook",
+    description: "wb: after wesbrook",
+    oneWay: "required",
+    positions: [WESBROOK_16TH_WN, [49.25556, -123.23734], WB_AFTER_WESBROOK],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "wb: wesbrook to east mall",
+    type: "painted",
+    oneWay: "required",
+    positions: [WB_AFTER_WESBROOK, [49.25498, -123.23883], WB_BEFORE_EAST_MALL],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "wb: crossing east mall",
     oneWay: "required",
     positions: [
-      WESBROOK_16TH_WN,
-      [49.25556, -123.23734],
-      [49.2555, -123.23736],
-      [49.25498, -123.23883],
-      [49.25452, -123.24016],
+      WB_BEFORE_EAST_MALL,
       [49.25452, -123.24031],
       [49.25443, -123.24053],
       [49.25442, -123.24069], // EAST_MALL_16TH_EN
@@ -199,9 +250,15 @@ export const SIXTEENTH = [
       [49.2542, -123.24164], // EAST_MALL_16TH_WN
       [49.25409, -123.2418],
       [49.25399, -123.24205],
-      [49.25393, -123.24207],
-      SHOULDER_START,
+      WB_AFTER_EAST_MALL,
     ],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "wb: after east mall",
+    type: "painted",
+    oneWay: "required",
+    positions: [WB_AFTER_EAST_MALL, SHOULDER_START],
   },
   {
     routeNames: [ROUTES.sixteenth.name],

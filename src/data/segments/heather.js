@@ -35,6 +35,7 @@ export const HEATHER = [
   // willow/33rd extras
   {
     description: "willow extra",
+    type: "comfortable",
     positions: [
       WILLOW_37TH,
       [49.2383, -123.12372],
@@ -47,17 +48,21 @@ export const HEATHER = [
   },
   {
     description: "33rd eb",
+    type: "painted",
     oneWay: "required",
     positions: [WILLOW_33RD_SW, [49.24122, -123.1236], HEATHER_33RD_S],
   },
   {
     description: "33rd wb",
+    type: "dedicated",
     oneWay: "required",
     positions: [HEATHER_33RD_N, [49.24132, -123.12364], WILLOW_33RD_SW],
   },
+
   // 41st
   {
-    description: "41st wb",
+    description: "49th wb",
+    type: "painted",
     oneWay: "required",
     positions: [
       [49.2262, -123.11726],
@@ -68,7 +73,8 @@ export const HEATHER = [
     ],
   },
   {
-    description: "41st eb 1",
+    description: "49th eb 1",
+    type: "painted",
     oneWay: "required",
     positions: [
       [49.22649, -123.12773],
@@ -79,19 +85,22 @@ export const HEATHER = [
   },
   {
     routeNames: [ROUTES.heather.name],
-    description: "41st eb 2",
+    description: "49th eb 2",
+    type: "painted",
     oneWay: "required",
     positions: [HEATHER_49TH_S, TISDALL_49TH_SW],
   },
   {
     routeNames: [ROUTES.heather.name],
-    description: "41st eb 3",
+    description: "49th eb 3",
+    type: "painted",
     oneWay: "required",
     videos: [VIDEOS.heatherSb.id, VIDEOS.cambieSb.id],
     positions: [TISDALL_49TH_SW, TISDALL_49TH_SE],
   },
   {
-    description: "41st eb 4",
+    description: "49th eb 4",
+    type: "painted",
     oneWay: "required",
     videos: [VIDEOS.cambieSb.id],
     positions: [
@@ -103,6 +112,7 @@ export const HEATHER = [
   },
   {
     description: "41st eb 5",
+    type: "painted",
     oneWay: "required",
     positions: [CAMBIE_49TH_SW, CAMBIE_49TH_SE],
   },

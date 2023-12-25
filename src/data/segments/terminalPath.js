@@ -4,6 +4,7 @@ export const TERMINAL_PATH = [
   {
     routeNames: [ROUTES.terminalPath.name],
     description: "primary",
+    type: "mixed",
     positions: [
       [49.27178, -123.09803],
       [49.27178, -123.09793],

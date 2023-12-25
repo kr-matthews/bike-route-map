@@ -45,6 +45,6 @@ export const CHILCO = [
     description: "connection from georgia",
     oneWay: "required",
     videos: [VIDEOS.chilcoSb.id],
-    positions: [CHILCO_GEORGIA_S, CHILCO_ALBERNI_E],
+    positions: [CHILCO_GEORGIA_S, [49.29436, -123.13677], CHILCO_ALBERNI_E],
   },
 ];

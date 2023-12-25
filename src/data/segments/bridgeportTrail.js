@@ -5,6 +5,7 @@ export const BRIDGEPORT_TRAIL = [
   {
     routeNames: [ROUTES.bridgeportTrail.name],
     description: "primary",
+    type: "mixed",
     positions: [
       BRIDGEPORT_TRAIL_VAN_HORNE,
       [49.19489, -123.12364],

@@ -7,11 +7,12 @@ import {
   HEATHER_10TH_S,
   ONTARIO_10TH,
   TRAFALGAR_10TH,
-  VICTORIA_BROADWAY,
+  VICTORIA_BROADWAY_SE,
   WINDSOR_10TH,
   WOODLAND_10TH,
   YEW_10TH,
-  YUKON_10TH,
+  YUKON_10TH_E,
+  YUKON_10TH_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -69,6 +70,7 @@ export const TENTH = [
   {
     routeNames: [ROUTES.tenth.name],
     description: "hospital eb",
+    type: "dedicated",
     oneWay: "required",
     videos: [VIDEOS.tenthEb.id],
     positions: [
@@ -85,6 +87,7 @@ export const TENTH = [
   {
     routeNames: [ROUTES.tenth.name],
     description: "hospital wb",
+    type: "dedicated",
     oneWay: "required",
     videos: [VIDEOS.tenthWb.id],
     positions: [
@@ -105,7 +108,8 @@ export const TENTH = [
     positions: [
       ASH_10TH_E,
       [49.26226, -123.11492],
-      YUKON_10TH,
+      YUKON_10TH_W,
+      YUKON_10TH_E,
       [49.26219, -123.11099],
       [49.26217, -123.10949],
       [49.26212, -123.10689],
@@ -116,7 +120,7 @@ export const TENTH = [
       [49.26199, -123.09865],
       [49.26198, -123.09616],
       [49.26193, -123.09608],
-      [49.26163, -123.09609],
+      [49.26163, -123.09609], // ! technically: kingsway lanes
       [49.26159, -123.096],
       [49.26159, -123.09494],
       [49.26157, -123.09303],
@@ -150,9 +154,9 @@ export const TENTH = [
       WOODLAND_10TH,
       [49.26137, -123.06984],
       [49.26135, -123.06969],
-      [49.26132, -123.06581],
-      [49.26212, -123.06581],
-      VICTORIA_BROADWAY,
+      [49.26132, -123.06583],
+      [49.2621, -123.06581],
+      VICTORIA_BROADWAY_SE,
     ],
   },
 ];

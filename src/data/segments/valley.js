@@ -21,22 +21,26 @@ export const VALLEY = [
   {
     description: "33rd: valley to cypress",
     oneWay: "required",
+    type: "painted",
     videos: [VIDEOS.valleySb.id],
     videosEndAtEnd: [VIDEOS.valleySb.id],
     positions: [VALLEY_33RD_S, ARBUTUS_GREENWAY_33RD_S, ANGUS_33RD_S],
   },
   {
     description: "33rd: cypress to valley",
+    type: "painted",
     oneWay: "required",
     positions: [ANGUS_33RD_N, ARBUTUS_GREENWAY_33RD_N, VALLEY_33RD_N],
   },
   {
     description: "33rd: arbutus to valley",
+    type: "painted",
     oneWay: "required",
     positions: [[49.24205, -123.15217], VALLEY_33RD_S],
   },
   {
     description: "33rd: valley to arbutus",
+    type: "painted",
     oneWay: "required",
     positions: [VALLEY_33RD_N, [49.24212, -123.15238]],
   },

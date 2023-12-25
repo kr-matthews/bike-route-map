@@ -7,8 +7,8 @@ import { ROUTES } from "../routes";
 const SOUTHBOUND_ELEVATION_START = [49.20542, -123.13025];
 const SOUTHBOUND_ELEVATION_END = [49.19153, -123.11989];
 const SOUTHBOUND_SPLIT = [49.19144, -123.12005];
-const BRIDGEPORT_SPLIT = [49.19187, -123.11961];
-const SEA_ISLAND_SPLIT = [49.19153, -123.1189];
+const BRIDGEPORT_SPLIT = [49.19195, -123.11957];
+const SEA_ISLAND_SPLIT = [49.19157, -123.11884];
 const SEA_ISLAND_PATH_END = [49.19118, -123.1237];
 const PATH_PATTERSON = [49.19019, -123.11692];
 const NORTHBOUND_SIDEWALK_START = [49.19028, -123.11582];
@@ -20,6 +20,7 @@ export const OAK_STREET_BRIDGE = [
   {
     routeNames: [ROUTES.oakStreetBridge.name],
     description: "sea island way",
+    type: "mixed",
     oneWay: "required",
     positions: [
       SOUTHBOUND_SPLIT,
@@ -38,8 +39,14 @@ export const OAK_STREET_BRIDGE = [
     description: "sea island way missing end",
     type: "other",
     oneWay: "required",
-    hideArrows: true,
-    positions: [SEA_ISLAND_PATH_END, GREAT_CANADIAN_SEA_ISLAND_NE],
+    positions: [
+      SEA_ISLAND_PATH_END,
+      [49.19116, -123.12396],
+      [49.19118, -123.12408],
+      [49.19123, -123.1242],
+      [49.19119, -123.12428],
+      GREAT_CANADIAN_SEA_ISLAND_NE,
+    ],
   },
   {
     routeNames: [ROUTES.oakStreetBridge.name],
@@ -53,6 +60,7 @@ export const OAK_STREET_BRIDGE = [
       [49.19168, -123.11978],
       [49.19174, -123.11971],
       [49.19183, -123.11963],
+      [49.19187, -123.11961],
       BRIDGEPORT_SPLIT,
     ],
   },
@@ -60,37 +68,31 @@ export const OAK_STREET_BRIDGE = [
     description: "sb following bus",
     positions: [
       BRIDGEPORT_SPLIT,
-      [49.19188, -123.11948],
-      [49.19188, -123.11934],
-      [49.19187, -123.11925],
-      [49.19183, -123.11914],
-      [49.19178, -123.11907],
-      [49.19172, -123.11901],
-      [49.19167, -123.11896],
+      [49.19193, -123.11942],
+      [49.19192, -123.11934],
+      [49.19187, -123.1192],
+      [49.1918, -123.11909],
+      [49.19171, -123.11896],
       SEA_ISLAND_SPLIT,
     ],
   },
   {
     description: "connection with bridgeport",
-    positions: [
-      [49.19195, -123.12034],
-      [49.19195, -123.11957],
-      BRIDGEPORT_SPLIT,
-    ],
+    positions: [[49.19195, -123.12035], BRIDGEPORT_SPLIT],
   },
   {
     description: "connection with patterson",
     positions: [
       PATH_PATTERSON,
-      [49.1903, -123.11695],
-      [49.19049, -123.1172],
-      [49.1906, -123.1175],
-      [49.19068, -123.11798],
-      [49.1907, -123.11829],
-      [49.19072, -123.11868],
-      [49.19073, -123.11897],
-      [49.19086, -123.11898],
-      [49.19145, -123.11898],
+      [49.19031, -123.11692],
+      [49.19053, -123.11723],
+      [49.19064, -123.11766],
+      [49.19069, -123.1181],
+      [49.19071, -123.1185],
+      [49.19072, -123.11896],
+      [49.19146, -123.11898],
+      [49.19151, -123.11895],
+      [49.19154, -123.11891],
       SEA_ISLAND_SPLIT,
     ],
   },
@@ -98,10 +100,12 @@ export const OAK_STREET_BRIDGE = [
     description: "patterson from garden city",
     positions: [GARDEN_CITY_PATTERSON_E, PATH_PATTERSON],
   },
+
   // southbound
   {
     routeNames: [ROUTES.oakStreetBridge.name],
     description: "sb pre-bridge",
+    type: "mixed",
     oneWay: "required",
     elevation: 0.5,
     positions: [
@@ -114,6 +118,7 @@ export const OAK_STREET_BRIDGE = [
   {
     routeNames: [ROUTES.oakStreetBridge.name],
     description: "sb bridge",
+    type: "mixed",
     oneWay: "required",
     elevation: 1,
     positions: [
@@ -152,6 +157,7 @@ export const OAK_STREET_BRIDGE = [
   {
     routeNames: [ROUTES.oakStreetBridge.name],
     description: "sb pre-split",
+    type: "mixed",
     oneWay: "required",
     hideArrows: true,
     elevation: 0.5,
@@ -161,6 +167,7 @@ export const OAK_STREET_BRIDGE = [
       SOUTHBOUND_SPLIT,
     ],
   },
+
   // northbound
   {
     routeNames: [ROUTES.oakStreetBridge.name],
@@ -168,8 +175,8 @@ export const OAK_STREET_BRIDGE = [
     oneWay: "recommended",
     positions: [
       SEA_ISLAND_SPLIT,
-      [49.19156, -123.11875],
-      [49.19157, -123.11867],
+      [49.19159, -123.11875],
+      [49.19158, -123.11867],
       [49.19157, -123.11858],
       [49.19149, -123.11818],
       [49.19149, -123.11808],
@@ -191,12 +198,14 @@ export const OAK_STREET_BRIDGE = [
     positions: [
       NORTHBOUND_SIDEWALK_START,
       [49.1904, -123.11602],
+      [49.19109, -123.11724],
       NORTHBOUND_ELEVATION_START,
     ],
   },
   {
     routeNames: [ROUTES.oakStreetBridge.name],
     description: "nb bridge",
+    type: "mixed",
     oneWay: "required",
     elevation: 1,
     positions: [
@@ -237,7 +246,7 @@ export const OAK_STREET_BRIDGE = [
       [49.20485, -123.1294],
       [49.2049, -123.12934],
       [49.20492, -123.12929],
-      [49.20508, -123.12893],
+      [49.20507, -123.12893],
     ],
   },
 ];

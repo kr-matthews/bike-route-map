@@ -28,6 +28,8 @@ import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 const UNION_SPLIT = [49.27761, -123.10316];
+const OVERPASS_W = [49.27744, -123.03193];
+const OVERPASS_E = [49.27745, -123.03111];
 
 export const ADANAC = [
   {
@@ -131,7 +133,8 @@ export const ADANAC = [
   },
   {
     routeNames: [ROUTES.adanac.name],
-    description: "sunrise to boundary",
+    description: "sunrise to highway",
+    elevation: 0.5,
     videos: [VIDEOS.adanacWb.id],
     positions: [
       KASLO_ADANAC,
@@ -140,6 +143,23 @@ export const ADANAC = [
       [49.27745, -123.03884],
       WINDERMERE_ADANAC,
       [49.27745, -123.03359],
+      OVERPASS_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.adanac.name],
+    description: "highway overpass",
+    elevation: 1,
+    videos: [VIDEOS.adanacWb.id],
+    positions: [OVERPASS_W, OVERPASS_E],
+  },
+  {
+    routeNames: [ROUTES.adanac.name],
+    description: "highway to boundary",
+    elevation: 0.5,
+    videos: [VIDEOS.adanacWb.id],
+    positions: [
+      OVERPASS_E,
       CASSIAR_ADANAC,
       [49.27745, -123.02832],
       [49.27744, -123.02571],

@@ -7,6 +7,9 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const KERR_MARINE_SE = [49.208, -123.04217];
+const KERR_MARINE_SW = [49.20799, -123.04234];
+
 const NORTHBOUND_LANE_ENDS = [49.22386, -123.04102];
 const SOUTHBOUND_LANE_ENDS = [49.2207, -123.04134];
 const SOUTHBOUND_LANE_STARTS_AGAIN = [49.22013, -123.04137];
@@ -17,18 +20,30 @@ export const KERR = [
   {
     routeNames: [ROUTES.kerr.name],
     description: "south tip",
+    type: "dedicated",
     videos: [VIDEOS.kerrSb.id],
     videosEndAtStart: [VIDEOS.kerrSb.id],
-    positions: [KERR_FRASER_TRAIL, KERR_KENT_N_SE],
+    positions: [
+      KERR_FRASER_TRAIL,
+      [49.20611, -123.04221],
+      [49.20668, -123.04219],
+      KERR_KENT_N_SE,
+    ],
   },
   {
     routeNames: [ROUTES.kerr.name],
-    description: "nb",
+    description: "nb protected",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [KERR_KENT_N_SE, [49.207, -123.04218], KERR_MARINE_SE],
+  },
+  {
+    routeNames: [ROUTES.kerr.name],
+    description: "nb painted",
+    type: "painted",
     oneWay: "required",
     positions: [
-      KERR_KENT_N_SE,
-      [49.207, -123.04218],
-      [49.208, -123.04217],
+      KERR_MARINE_SE,
       [49.20823, -123.04217],
       [49.20873, -123.04215],
       [49.20925, -123.04207],
@@ -58,6 +73,7 @@ export const KERR = [
   {
     routeNames: [ROUTES.kerr.name],
     description: "sb 1",
+    type: "painted",
     oneWay: "required",
     videos: [VIDEOS.kerrSb.id],
     positions: [
@@ -79,6 +95,7 @@ export const KERR = [
   {
     routeNames: [ROUTES.kerr.name],
     description: "sb 3",
+    type: "painted",
     oneWay: "required",
     videos: [VIDEOS.kerrSb.id],
     positions: [
@@ -95,9 +112,16 @@ export const KERR = [
       [49.2093, -123.04221],
       [49.20873, -123.0423],
       [49.20821, -123.04233],
-      [49.20799, -123.04234],
-      KERR_KENT_N_SW,
+      KERR_MARINE_SW,
     ],
+  },
+  {
+    routeNames: [ROUTES.kerr.name],
+    description: "sb 4",
+    type: "dedicated",
+    oneWay: "required",
+    videos: [VIDEOS.kerrSb.id],
+    positions: [KERR_MARINE_SW, KERR_KENT_N_SW],
   },
   {
     routeNames: [ROUTES.kerr.name],

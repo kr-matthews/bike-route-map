@@ -15,6 +15,7 @@ export const BYRNE_CREEK = [
   },
   {
     description: "southridge connection",
+    type: "dedicated",
     positions: [
       BYRNEPARK_SOUTHRIDGE,
       [49.20583, -122.96831],
@@ -40,6 +41,7 @@ export const BYRNE_CREEK = [
   {
     routeNames: [ROUTES.byrneCreek.name],
     description: "primary",
+    type: "dedicated",
     positions: [
       [49.19977, -122.98921],
       [49.2008, -122.98736],

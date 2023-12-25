@@ -1,5 +1,4 @@
 import {
-  CAMBIE_29TH_E,
   CAMBIE_49TH_SW,
   CAMBIE_59TH_NE,
   CAMBIE_59TH_NW,
@@ -15,6 +14,7 @@ import {
   CAMBIE_PENDER_NE,
   HEATHER_33RD_N,
   ONTARIO_42ND,
+  CAMBIE_29TH_SE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -29,6 +29,7 @@ export const CAMBIE = [
   {
     description: "42nd",
     videos: [VIDEOS.fortySecondEb.id],
+    type: "quiet",
     positions: [
       CAMBIE_42ND_E,
       [49.23244, -123.1135],
@@ -48,6 +49,7 @@ export const CAMBIE = [
   {
     routeNames: [ROUTES.cambie.name],
     description: "gastown",
+    type: "dedicated",
     oneWay: "required",
     videos: [VIDEOS.cambieGastownNb.id],
     videosEndAtEnd: [VIDEOS.cambieGastownNb.id],
@@ -61,10 +63,12 @@ export const CAMBIE = [
       [49.28427, -123.10877],
     ],
   },
+
   // south vancouver
   {
     routeNames: [ROUTES.cambie.name],
     description: "sb brief lane",
+    type: "dedicated",
     oneWay: "required",
     positions: [
       [49.24032, -123.11839],
@@ -74,6 +78,7 @@ export const CAMBIE = [
   {
     routeNames: [ROUTES.cambie.name],
     description: "sb",
+    type: "painted",
     oneWay: "required",
     videos: [VIDEOS.cambieSb.id],
     positions: [
@@ -95,8 +100,8 @@ export const CAMBIE = [
   {
     routeNames: [ROUTES.cambie.name],
     description: "post-sb",
-    oneWay: "recommended",
     type: "shared",
+    oneWay: "recommended",
     hideUnlessVideo: true,
     videos: [VIDEOS.cambieSb.id],
     videosEndAtEnd: [VIDEOS.cambieSb.id],
@@ -105,6 +110,7 @@ export const CAMBIE = [
   {
     routeNames: [ROUTES.cambie.name],
     description: "nb",
+    type: "painted",
     oneWay: "required",
     positions: [
       CAMBIE_MARINE_NE,
@@ -155,7 +161,7 @@ export const CAMBIE = [
       [49.24461, -123.11561],
       [49.24487, -123.11543],
       [49.24506, -123.11533],
-      CAMBIE_29TH_E,
+      CAMBIE_29TH_SE,
     ],
   },
 ];

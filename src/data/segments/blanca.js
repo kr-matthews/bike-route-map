@@ -44,6 +44,7 @@ export const BLANCA = [
   {
     routeNames: [ROUTES.blanca.name],
     description: "southbound with lane",
+    type: "painted",
     oneWay: "required",
     positions: [
       BLANCA_6TH,

@@ -1,7 +1,7 @@
 import {
   ALDER_7TH,
   ARBUTUS_GREENWAY_7TH,
-  ASH_7TH,
+  ASH_7TH_W,
   BALACLAVA_8TH,
   BLANCA_8TH_E,
   BURRARD_7TH,
@@ -19,13 +19,18 @@ import {
   WOODLAND_7TH,
   YEW_10TH,
   YEW_8TH,
-  YUKON_5TH,
-  YUKON_7TH,
+  YUKON_5TH_E,
+  YUKON_5TH_W,
+  YUKON_7TH_NE,
+  YUKON_7TH_NW,
+  YUKON_7TH_SE,
+  YUKON_7TH_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 const WEST_OF_HIGHBURY = [49.26528, -123.18939];
+const CAMBIE_7TH_W = [49.26496, -123.11495];
 
 export const OFF_BROADWAY = [
   {
@@ -136,26 +141,65 @@ export const OFF_BROADWAY = [
     routeNames: [ROUTES.offBroadway.name],
     description: "heather to ash",
     videos: [VIDEOS.offBroadwayWb.id, VIDEOS.heatherSb.id],
-    positions: [HEATHER_7TH, ASH_7TH],
+    positions: [HEATHER_7TH, ASH_7TH_W],
   },
   {
     routeNames: [ROUTES.offBroadway.name],
-    description: "ash to yukon",
+    description: "ash to cambie",
+    type: "quiet",
+    videos: [VIDEOS.offBroadwayWb.id],
+    positions: [ASH_7TH_W, [49.26498, -123.11508], CAMBIE_7TH_W],
+  },
+  {
+    routeNames: [ROUTES.offBroadway.name],
+    description: "eb: cambie to yukon",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      CAMBIE_7TH_W,
+      [49.26488, -123.11464],
+      [49.26485, -123.11444],
+      [49.26484, -123.11425],
+      [49.26483, -123.11404],
+      YUKON_7TH_SW,
+      YUKON_7TH_SE,
+    ],
+  },
+  {
+    description: "wb: crossing yukon",
+    type: "painted",
+    oneWay: "required",
+    hideArrows: true,
+    positions: [YUKON_7TH_NE, YUKON_7TH_NW],
+  },
+  {
+    routeNames: [ROUTES.offBroadway.name],
+    description: "wb: yukon to cambie",
+    type: "painted",
+    oneWay: "required",
     videos: [VIDEOS.offBroadwayWb.id],
     positions: [
-      ASH_7TH,
-      [49.26498, -123.11508],
-      [49.2649, -123.11461],
-      [49.26486, -123.11428],
-      YUKON_7TH,
+      YUKON_7TH_NW,
+      [49.26489, -123.11348],
+      [49.2649, -123.11394],
+      [49.26491, -123.11417],
+      [49.26492, -123.11438],
+      [49.26495, -123.11458],
+      CAMBIE_7TH_W,
     ],
+  },
+  {
+    routeNames: [ROUTES.offBroadway.name],
+    description: "crossing yukon",
+    videos: [VIDEOS.offBroadwayWb.id],
+    positions: [YUKON_5TH_W, YUKON_5TH_E],
   },
   {
     routeNames: [ROUTES.offBroadway.name],
     description: "yukon to mosaic",
     videos: [VIDEOS.offBroadwayWb.id],
     positions: [
-      YUKON_5TH,
+      YUKON_5TH_E,
       [49.2666, -123.11078],
       COLUMBIA_5TH,
       [49.26652, -123.10667],

@@ -12,6 +12,7 @@ export const HILLCREST = [
   {
     routeNames: [ROUTES.hillcrest.name],
     description: "west of windsor",
+    type: "quiet",
     videos: [VIDEOS.hillcrestEb.id, VIDEOS.hillcrestWb.id],
     videosStartAtStart: [VIDEOS.hillcrestEb.id],
     videosEndAtStart: [VIDEOS.hillcrestWb.id],
@@ -36,6 +37,7 @@ export const HILLCREST = [
   {
     routeNames: [ROUTES.hillcrest.name],
     description: "east of windsor",
+    type: "quiet",
     videos: [VIDEOS.hillcrestEb.id, VIDEOS.hillcrestWb.id],
     videosEndAtEnd: [VIDEOS.hillcrestEb.id],
     videosStartAtEnd: [VIDEOS.hillcrestWb.id],

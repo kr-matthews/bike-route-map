@@ -25,6 +25,7 @@ export const RAILWAY = [
   {
     description: "railway split to continue sb",
     oneWay: "required",
+    type: "shared",
     positions: [
       RAILWAY_GRANVILLE_NW,
       [49.1625, -123.16945],
@@ -33,9 +34,12 @@ export const RAILWAY = [
       RAILWAY_GRANVILLE_SW,
     ],
   },
+
+  // nb
   {
     routeNames: [ROUTES.railway.name],
     description: "nb: pre-moncton to steveston",
+    type: "painted",
     oneWay: "required",
     positions: [
       [49.12474, -123.16975],
@@ -58,6 +62,7 @@ export const RAILWAY = [
   {
     routeNames: [ROUTES.railway.name],
     description: "nb: steveston to williams",
+    type: "painted",
     oneWay: "required",
     positions: [
       RAILWAY_STEVESTON_SE,
@@ -78,6 +83,7 @@ export const RAILWAY = [
   {
     routeNames: [ROUTES.railway.name],
     description: "nb: williams to francis",
+    type: "painted",
     oneWay: "required",
     positions: [
       RAILWAY_WILLIAMS_SE,
@@ -96,6 +102,7 @@ export const RAILWAY = [
   {
     routeNames: [ROUTES.railway.name],
     description: "nb: francis to blundell",
+    type: "painted",
     oneWay: "required",
     positions: [RAILWAY_FRANCIS_SE, [49.15248, -123.16977], NB_PRE_BLUNDELL],
   },
@@ -109,6 +116,7 @@ export const RAILWAY = [
   {
     routeNames: [ROUTES.railway.name],
     description: "nb: blundell to granville",
+    type: "painted",
     oneWay: "required",
     positions: [
       NB_POST_BLUNDELL,
@@ -122,15 +130,19 @@ export const RAILWAY = [
       RAILWAY_GRANVILLE_SE,
     ],
   },
+
+  // sb
   {
     routeNames: [ROUTES.railway.name],
     description: "sb: granville to slip",
+    type: "painted",
     oneWay: "required",
     positions: [RAILWAY_GRANVILLE_MIDDLE, RAILWAY_GRANVILLE_SW],
   },
   {
     routeNames: [ROUTES.railway.name],
     description: "sb: granville to blundell",
+    type: "painted",
     oneWay: "required",
     positions: [
       RAILWAY_GRANVILLE_SW,
@@ -153,6 +165,7 @@ export const RAILWAY = [
   {
     routeNames: [ROUTES.railway.name],
     description: "sb: blundell to steveston",
+    type: "painted",
     oneWay: "required",
     positions: [
       RAILWAY_BLUNDELL_NW,
@@ -178,6 +191,7 @@ export const RAILWAY = [
   {
     routeNames: [ROUTES.railway.name],
     description: "sb: steveston to post-moncton",
+    type: "painted",
     oneWay: "required",
     positions: [
       RAILWAY_STEVESTON_NW,

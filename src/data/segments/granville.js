@@ -12,12 +12,14 @@ import { ROUTES } from "../routes";
 
 const RAILWAY_GRANVILLE_N = [49.1626, -123.16888];
 const GARDEN_CITY_GRANVILLE_SW = [49.16272, -123.12627];
+const WB_LANE_START = [49.16268, -123.16942];
 
 export const GRANVILLE = [
   // eb
   {
     routeNames: [ROUTES.granville.name],
     description: "from no. 1",
+    type: "painted",
     oneWay: "required",
     positions: [
       [49.16279, -123.18107],
@@ -29,6 +31,7 @@ export const GRANVILLE = [
   {
     routeNames: [ROUTES.granville.name],
     description: "greenway to railway split",
+    type: "painted",
     oneWay: "required",
     positions: [
       RAILWAY_GREENWAY_GRANVILLE_S,
@@ -41,6 +44,7 @@ export const GRANVILLE = [
   {
     routeNames: [ROUTES.granville.name],
     description: "railway split to continue eb",
+    type: "shared",
     oneWay: "required",
     positions: [
       RAILWAY_GRANVILLE_NW,
@@ -61,6 +65,7 @@ export const GRANVILLE = [
   {
     routeNames: [ROUTES.granville.name],
     description: "primary eb",
+    type: "painted",
     oneWay: "required",
     positions: [
       RAILWAY_GRANVILLE_SE,
@@ -90,12 +95,23 @@ export const GRANVILLE = [
   // wb
   {
     routeNames: [ROUTES.granville.name],
-    description: "railway to greenway wb",
+    description: "railway to greenway wb 1",
+    type: "shared",
     oneWay: "required",
     positions: [
       RAILWAY_GRANVILLE_N,
       [49.16256, -123.16911],
       [49.16261, -123.16933],
+      WB_LANE_START,
+    ],
+  },
+  {
+    routeNames: [ROUTES.granville.name],
+    description: "railway to greenway wb 2",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      WB_LANE_START,
       [49.16275, -123.16959],
       [49.16284, -123.1698],
       [49.16289, -123.17],
@@ -105,6 +121,7 @@ export const GRANVILLE = [
   {
     description: "wb continue to sb",
     oneWay: "required",
+    type: "painted",
     positions: [
       RAILWAY_GRANVILLE_N,
       [49.16251, -123.16908],
@@ -114,6 +131,7 @@ export const GRANVILLE = [
   {
     routeNames: [ROUTES.granville.name],
     description: "primary wb",
+    type: "painted",
     oneWay: "required",
     positions: [
       GARDEN_CITY_GRANVILLE_NW,
@@ -144,6 +162,7 @@ export const GRANVILLE = [
   {
     routeNames: [ROUTES.granville.name],
     description: "to no. 1",
+    type: "painted",
     oneWay: "required",
     positions: [
       RAILWAY_GREENWAY_GRANVILLE_N,

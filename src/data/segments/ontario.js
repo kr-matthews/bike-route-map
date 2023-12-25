@@ -6,7 +6,8 @@ import {
   ONTARIO_1ST_S,
   ONTARIO_26TH_S,
   ONTARIO_30TH,
-  ONTARIO_33RD,
+  ONTARIO_33RD_N,
+  ONTARIO_33RD_S,
   ONTARIO_37TH,
   ONTARIO_42ND,
   ONTARIO_45TH,
@@ -57,7 +58,7 @@ export const ONTARIO = [
       [49.21854, -123.10621],
       [49.22024, -123.10614],
       [49.22204, -123.10609],
-      [49.22383, -123.10602],
+      [49.22383, -123.10602], // ! ontario barriers
       [49.22574, -123.10597],
       [49.22766, -123.1059],
       ONTARIO_45TH,
@@ -66,7 +67,8 @@ export const ONTARIO = [
       [49.23368, -123.10564],
       [49.23551, -123.10556],
       ONTARIO_37TH,
-      ONTARIO_33RD,
+      ONTARIO_33RD_S,
+      ONTARIO_33RD_N,
     ],
   },
   {
@@ -74,7 +76,7 @@ export const ONTARIO = [
     description: "just north of 33rd",
     videos: [VIDEOS.ontarioNb.id, VIDEOS.twentyNinthWb.id],
     videosStartAtEnd: [VIDEOS.twentyNinthWb.id],
-    positions: [ONTARIO_33RD, NORTH_OF_ONTARIO_33RD],
+    positions: [ONTARIO_33RD_N, NORTH_OF_ONTARIO_33RD],
   },
   {
     routeNames: [ROUTES.ontario.name],

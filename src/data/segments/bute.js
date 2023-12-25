@@ -11,6 +11,7 @@ export const BUTE = [
   {
     routeNames: [ROUTES.bute.name],
     description: "primary",
+    type: "comfortable",
     positions: [
       BUTE_BURNABY,
       [49.28179, -123.13337],

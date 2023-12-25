@@ -17,6 +17,7 @@ export const DUNSMUIR = [
   {
     routeNames: [ROUTES.dunsmuir.name],
     description: "downtown to just before cambie",
+    type: "dedicated",
     elevation: 0.5,
     positions: [
       HORNBY_DUNSMUIR,
@@ -32,6 +33,7 @@ export const DUNSMUIR = [
   {
     routeNames: [ROUTES.dunsmuir.name],
     description: "just before cambie",
+    type: "dedicated",
     elevation: 0.5,
     videos: [VIDEOS.cambieGastownNb.id],
     videosStartAtStart: [VIDEOS.cambieGastownNb.id],
@@ -40,6 +42,7 @@ export const DUNSMUIR = [
   {
     routeNames: [ROUTES.dunsmuir.name],
     description: "cambie to out of downtown",
+    type: "dedicated",
     elevation: 0.5,
     positions: [
       CAMBIE_DUNSMUIR,
@@ -52,6 +55,7 @@ export const DUNSMUIR = [
   {
     routeNames: [ROUTES.dunsmuir.name],
     description: "viaduct",
+    type: "dedicated",
     elevation: 1,
     positions: [
       CITADEL_PARADE_DUNSMUIR,

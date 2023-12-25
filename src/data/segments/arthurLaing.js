@@ -20,6 +20,7 @@ export const ARTHUR_LAING = [
   },
   {
     description: "sb path split",
+    type: "dedicated",
     videos: [VIDEOS.arthurLaingSb.id],
     videosEndAtEnd: [VIDEOS.arthurLaingSb.id],
     positions: [SOUTHBOUND_SPLIT, [49.19548, -123.14004]],
@@ -33,8 +34,10 @@ export const ARTHUR_LAING = [
   },
   {
     description: "nb path join",
+    type: "dedicated",
     positions: [NORTHBOUND_MERGE, [49.19488, -123.14]],
   },
+
   // sb
   {
     routeNames: [ROUTES.arthurLaingBridge.name],
@@ -105,6 +108,7 @@ export const ARTHUR_LAING = [
       SOUTHBOUND_SPLIT,
     ],
   },
+
   // nb
   {
     routeNames: [ROUTES.arthurLaingBridge.name],
