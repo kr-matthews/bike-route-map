@@ -43,20 +43,16 @@ const mapZoom = ZOOMED_IN_A_BIT;
 
 const segmentTypes = [
   {
-    name: "Standard",
-    description: "Local street, separated lane/path, or painted lane.",
+    name: "Comfortable",
+    description:
+      "Local street, dedicated/protected lane/path, or mixed with pedestrians.",
     props: {},
   },
   {
-    name: "One-way",
-    description: "Only one direction of travel is allowed.",
-    props: { oneWay: "required" },
-  },
-  {
-    name: "One-way Recommended",
+    name: "Painted Lane",
     description:
-      "Both directions of travel are allowed, but typically only one is useful.",
-    props: { oneWay: "recommended" },
+      "Painted lane beside high-volume and/or high-speed traffic without significant physical protection. May or may not be directly beside parked cars.",
+    props: { type: "painted" },
   },
   {
     name: "Shared Lane",
@@ -65,20 +61,38 @@ const segmentTypes = [
   },
   {
     name: "Highway Shoulder",
+    description: "Unprotected shoulder beside very high-speed traffic.",
+    props: { type: "shoulder" },
+  },
+  {
+    name: "Other",
     description:
-      "Unprotected shoulder beside very high-speed traffic. Always one-way.",
-    props: { type: "shoulder", oneWay: "required" },
+      "Separated from traffic but poor quality, such as a narrow sidewalk shared with pedestrians.",
+    props: { type: "other" },
   },
   {
     name: "Elevated",
     description:
-      "Bridge or other elevated surface, you can't directly turn to/from the roads below.",
+      "Bridge or other elevated surface. You can't directly connect to/from the roads/paths below.",
     props: { elevation: 1 },
   },
   {
     name: "Underground",
-    description: "A tunnel; you can't directly turn to/from the roads above.",
+    description:
+      "A tunnel. You can't directly connect to/from the roads/paths above.",
     props: { elevation: -1 },
+  },
+  {
+    name: "One-way",
+    description:
+      "Only one direction of travel is allowed. A lighter colour. Directional arrows only appear when sufficiently zoomed in.",
+    props: { oneWay: "required" },
+  },
+  {
+    name: "One-way Recommended",
+    description:
+      "Only applies to comfortable. Both directions of travel are allowed, but typically only one is useful. Directional arrows only appear when sufficiently zoomed in.",
+    props: { oneWay: "recommended" },
   },
   {
     name: "Closed",
