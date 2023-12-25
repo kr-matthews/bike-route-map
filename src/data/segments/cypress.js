@@ -2,13 +2,12 @@ import {
   ADERA_68TH,
   ANGUS_33RD_N,
   ANGUS_33RD_S,
+  ANGUS_37TH,
   ANGUS_45TH,
   ANGUS_59TH,
   ANGUS_KING_EDWARD_NE,
   ANGUS_KING_EDWARD_NW,
   ANGUS_KING_EDWARD_S,
-  ANGUS_MATTHEWS_E,
-  ANGUS_MATTHEWS_W,
   ANGUS_NANTON,
   CORNISH_68TH,
   CYPRESS_10TH,
@@ -28,6 +27,9 @@ import {
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
+
+const ANGUS_MATTHEWS_E = [49.25158, -123.14538];
+const ANGUS_MATTHEWS_W = [49.25155, -123.14557];
 
 export const CYPRESS = [
   {
@@ -62,6 +64,7 @@ export const CYPRESS = [
       [49.23727, -123.1476],
       [49.2376, -123.14743],
       [49.23781, -123.14718],
+      ANGUS_37TH,
       [49.23847, -123.14608],
       [49.23858, -123.1459],
       [49.23879, -123.14572],
@@ -130,8 +133,15 @@ export const CYPRESS = [
       [49.25029, -123.14589],
       [49.25071, -123.14575],
       ANGUS_MATTHEWS_E,
-      ANGUS_MATTHEWS_W,
     ],
+  },
+  {
+    routeNames: [ROUTES.cypress.name],
+    description: "crossing angus at matthews",
+    oneWay: "recommended",
+    hideArrows: true,
+    videos: [VIDEOS.cypressNb.id],
+    positions: [ANGUS_MATTHEWS_E, ANGUS_MATTHEWS_W],
   },
   {
     routeNames: [ROUTES.cypress.name],

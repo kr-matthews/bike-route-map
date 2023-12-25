@@ -11,7 +11,6 @@ import {
   HEATHER_33RD_N,
   HEATHER_37TH,
   HEATHER_49TH_S,
-  HEATHER_52ND,
   HEATHER_59TH,
   HEATHER_64TH,
   HEATHER_67TH,
@@ -20,7 +19,6 @@ import {
   TISDALL_46TH,
   TISDALL_49TH_SE,
   TISDALL_49TH_SW,
-  WILLOW_33RD_SW,
   WILLOW_37TH,
   WILLOW_46TH,
 } from "../intersections";
@@ -28,7 +26,8 @@ import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 const HEATHER_33RD_S = [49.24112, -123.12065];
-
+const WILLOW_33RD_SW = [49.24118, -123.12371];
+const HEATHER_52ND = [49.22326, -123.12369];
 const NORTH_OF_49TH = [49.22709, -123.12176];
 
 export const HEATHER = [

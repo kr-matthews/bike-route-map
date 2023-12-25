@@ -2,7 +2,6 @@ import {
   BEATTY_DUNSMUIR_NE,
   BEATTY_DUNSMUIR_NW,
   CAMBIE_DUNSMUIR,
-  CITADEL_PARADE_DUNSMUIR,
   HOMER_DUNSMUIR,
   HORNBY_DUNSMUIR,
   MAIN_DUNSMUIR,
@@ -12,6 +11,7 @@ import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 const WEST_OF_CAMBIE = [49.28084, -123.11197];
+const CITADEL_PARADE_DUNSMUIR = [49.27951, -123.10996];
 
 export const DUNSMUIR = [
   {

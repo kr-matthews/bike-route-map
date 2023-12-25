@@ -1,16 +1,12 @@
 import {
   BURRARD_1ST_E,
   BURRARD_1ST_W,
-  BURRARD_4TH,
-  BURRARD_7TH,
+  BURRARD_7TH_W,
   BURRARD_ARBUTUS_GREENWAY_E,
   BURRARD_ARBUTUS_GREENWAY_W,
   BURRARD_BURNABY_E,
   BURRARD_BURNABY_W,
   BURRARD_COMOX,
-  BURRARD_CORNWALL_E,
-  BURRARD_CORNWALL_NW,
-  BURRARD_CORNWALL_SW,
   BURRARD_DRAKE_E,
   BURRARD_DRAKE_W,
   BURRARD_DUNSMUIR,
@@ -23,7 +19,6 @@ import {
   BURRARD_PACIFIC_SE_W,
   BURRARD_PACIFIC_SW,
   BURRARD_SMITHE,
-  BURRARD_YORK,
   CHESTNUT_CORNWALL,
   CHESTNUT_OGDEN,
   CHESTNUT_WHYTE,
@@ -36,6 +31,11 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const BURRARD_YORK = [49.27172, -123.14565];
+const BURRARD_4TH_E = [49.26806, -123.1455];
+const BURRARD_CORNWALL_E = [49.27232, -123.14504];
+const BURRARD_CORNWALL_SW = [49.27231, -123.14556];
+const BURRARD_CORNWALL_NW = [49.2726, -123.14538];
 const BURRARD_NORTHBOUND_SPLIT = [49.2767, -123.13279];
 const BURRARD_SOUTHBOUND_MERGE = [49.27687, -123.13302];
 const NORTHBOUND_ELEVATION_START = [49.27323, -123.14368];
@@ -82,7 +82,7 @@ export const BURRARD = [
     positions: [
       BURRARD_ARBUTUS_GREENWAY_E,
       [49.26716, -123.14554],
-      BURRARD_4TH,
+      BURRARD_4TH_E,
     ],
   },
   {
@@ -93,7 +93,7 @@ export const BURRARD = [
     elevation: 0.5,
     videos: [VIDEOS.burrardNb.id],
     positions: [
-      BURRARD_4TH,
+      BURRARD_4TH_E,
       [49.26889, -123.14547],
       [49.26977, -123.14543],
       BURRARD_1ST_E,
@@ -297,7 +297,7 @@ export const BURRARD = [
       [49.26801, -123.14577],
       [49.26717, -123.14578],
       BURRARD_ARBUTUS_GREENWAY_W,
-      BURRARD_7TH,
+      BURRARD_7TH_W,
     ],
   },
   {
@@ -305,7 +305,7 @@ export const BURRARD = [
     description: "southbound end",
     type: "dedicated",
     oneWay: "required",
-    positions: [BURRARD_7TH, SOUTHBOUND_ENDPOINT],
+    positions: [BURRARD_7TH_W, SOUTHBOUND_ENDPOINT],
   },
 
   // south end

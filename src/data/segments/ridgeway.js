@@ -10,7 +10,6 @@ import {
   EARLES_45TH,
   KILLARNEY_45TH,
   MACDONALD_29TH,
-  MACKENZIE_QUESNEL,
   NANAIMO_38TH,
   NANAIMO_45TH,
   QUESNEL_20TH,
@@ -23,6 +22,8 @@ import {
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
+
+const MACKENZIE_QUESNEL = [49.24786, -123.17022];
 
 export const RIDGEWAY = [
   {

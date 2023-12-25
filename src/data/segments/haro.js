@@ -2,7 +2,6 @@ import {
   BUTE_HARO,
   CARDERO_HARO,
   CHILCO_HARO,
-  LAGOON_HARO,
   NICOLA_HARO,
   THURLOW_HARO,
 } from "../intersections";
@@ -10,6 +9,7 @@ import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 const EAST_OF_NICOLA = [49.28772, -123.13177];
+const LAGOON_HARO = [49.2932, -123.14024];
 
 export const HARO = [
   {

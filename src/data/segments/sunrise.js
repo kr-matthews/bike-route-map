@@ -3,7 +3,6 @@ import {
   EARLES_45TH,
   ELLIOTT_KENT,
   ELLIOTT_MARINE,
-  ELLIOTT_VIVIAN,
   KASLO_ADANAC,
   KASLO_PANDORA,
   KASLO_WALL,
@@ -21,6 +20,8 @@ import {
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
+
+const ELLIOTT_VIVIAN = [49.21271, -123.05513];
 
 export const SUNRISE = [
   {

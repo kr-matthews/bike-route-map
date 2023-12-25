@@ -8,7 +8,6 @@ import {
   YUKON_29TH_S,
   YUKON_5TH_E,
   YUKON_5TH_W,
-  YUKON_7TH,
   YUKON_7TH_NE,
   YUKON_7TH_NW,
   YUKON_7TH_SE,
@@ -142,14 +141,6 @@ export const YUKON = [
       YUKON_10TH_W,
       [49.26049, -123.11308],
       YUKON_12TH,
-    ],
-  },
-  {
-    routeNames: [ROUTES.yukon.name, ROUTES.offBroadway.name],
-    description: "off broadway",
-    videos: [VIDEOS.yukonSb.id, VIDEOS.offBroadwayWb.id],
-    positions: [
-      // YUKON_7TH, [49.26571, -123.11279], YUKON_5TH_E
     ],
   },
   {

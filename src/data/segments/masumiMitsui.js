@@ -1,6 +1,5 @@
 import {
   ANGUS_59TH,
-  ASHBURN_UPLAND,
   BORDEN_59TH,
   CAMBIE_59TH_NE_E,
   CAMBIE_59TH_NW,
@@ -17,6 +16,7 @@ import { VIDEOS } from "../videos";
 
 const ELLIOTT_57TH = [49.21799, -123.05422];
 const ELLIOTT_ASHBURN = [49.21855, -123.05467];
+const ASHBURN_UPLAND = [49.21764, -123.05581];
 
 export const MASUMI_MITSUI_GREENWAY = [
   {

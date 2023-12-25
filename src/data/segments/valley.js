@@ -10,6 +10,7 @@ import {
   YEW_EDDINGTON,
   ANGUS_33RD_N,
   ARBUTUS_GREENWAY_33RD_N,
+  TRAFALGAR_8TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -93,7 +94,7 @@ export const VALLEY = [
       [49.26221, -123.16473],
       TRAFALGAR_10TH,
       [49.26403, -123.16468],
-      [49.26492, -123.16464],
+      TRAFALGAR_8TH,
       [49.26576, -123.16461],
       [49.2666, -123.16457],
       [49.26746, -123.16455],

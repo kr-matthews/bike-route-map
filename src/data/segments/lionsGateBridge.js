@@ -5,7 +5,6 @@ import {
   CHILCO_GEORGIA_S,
   DENMAN_GEORGIA_N,
   HORNBY_DUNSMUIR,
-  JERVIS_PENDER,
   LIONS_GATE_KLAHANIE,
   LIONS_GATE_SPIRIT_TRAIL_E,
   LIONS_GATE_SPIRIT_TRAIL_W,
@@ -15,6 +14,8 @@ import {
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
+
+const JERVIS_PENDER = [49.28908, -123.12549];
 
 const NORTHBOUND_ELEVATED_START = [49.31196, -123.14164];
 const NORTHBOUND_ELEVATED_END = [49.32399, -123.13057];

@@ -7,12 +7,13 @@ import {
   HOMER_HELMCKEN,
   HORNBY_HELMCKEN_E,
   HORNBY_HELMCKEN_SE,
-  MAINLAND_HELMCKEN,
-  PARK_COMOX,
   RICHARDS_HELMCKEN,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
+
+const MAINLAND_HELMCKEN = [49.27558, -123.12055];
+const PARK_COMOX = [49.29186, -123.14468];
 
 export const COMOX_HELMCKEN = [
   {

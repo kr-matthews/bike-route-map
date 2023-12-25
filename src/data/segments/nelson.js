@@ -1,7 +1,6 @@
 import {
   BEATTY_NELSON_SE,
   BEATTY_NELSON_SW,
-  BURRARD_NELSON,
   BUTE_NELSON,
   HOMER_NELSON,
   HORNBY_NELSON_E,
@@ -9,6 +8,8 @@ import {
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
+
+const BURRARD_NELSON = [49.2812, -123.12604];
 
 export const NELSON = [
   {

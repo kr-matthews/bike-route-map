@@ -7,14 +7,14 @@ import {
   BLANCA_4TH_N,
   BLANCA_4TH_SE,
   BLANCA_4TH_SW,
-  BLANCA_6TH,
   BLANCA_8TH_E,
   BLANCA_8TH_NW,
   BLANCA_8TH_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
-export const SOUTHBOUND_LANE_END = [49.25914, -123.21549];
+const BLANCA_6TH = [49.26738, -123.21518];
+const SOUTHBOUND_LANE_END = [49.25914, -123.21549];
 
 export const BLANCA = [
   {
