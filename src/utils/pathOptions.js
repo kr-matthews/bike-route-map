@@ -7,6 +7,7 @@ import {
   COLOUR_OTHER,
   COLOUR_OTHER_ONE_WAY,
   COLOUR_PAINTED_ONE_WAY,
+  COLOUR_SHARED,
   COLOUR_SHARED_ONE_WAY,
   COLOUR_SHOULDER_ONE_WAY,
   COLOUR_UNDERGROUND_BORDER,
@@ -49,7 +50,7 @@ export function createPathOptions(
   } else if (isPainted) {
     colour = COLOUR_PAINTED_ONE_WAY;
   } else if (isShared) {
-    colour = COLOUR_SHARED_ONE_WAY;
+    colour = isOneWay ? COLOUR_SHARED_ONE_WAY : COLOUR_SHARED;
   } else if (isShoulder) {
     colour = COLOUR_SHOULDER_ONE_WAY;
   } else if (isOther) {
