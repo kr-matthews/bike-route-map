@@ -280,7 +280,7 @@ export const MIDTOWN = [
   {
     routeNames: [ROUTES.midtown.name, ROUTES.seaToRiver.name],
     description: "patterson to carleton",
-    videos: [VIDEOS.midtownBurnabyWb.id],
+    videos: [VIDEOS.midtownBurnabyWb.id, VIDEOS.seaToRiverNb.id],
     positions: [PATTERSON_MOSCROP, CARLETON_MOSCROP],
   },
   {

@@ -1,4 +1,5 @@
 import {
+  ARGYLE_KENT_N_E,
   BALACLAVA_CELTIC,
   BOUNDARY_FRASER_RIVER,
   ELLIOTT_KENT_PATH,
@@ -10,6 +11,7 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const FRASERVIEW_START = [49.20832, -123.07006];
 const VICTORIA_FRASER_RIVER = [49.20683, -123.06619];
 const RIVER_DISTRICT_CROSSING_FRASER_RIVER = [49.20301, -123.03199];
 
@@ -76,11 +78,25 @@ export const FRASER_RIVER_TRAIL = [
     positions: [VICTORIA_FRASER_RIVER, [49.20721, -123.06619], VICTORIA_KENT_N],
   },
   {
+    description: "from kent to fraserview portion",
+    type: "shared",
+    hideUnlessVideo: true,
+    videos: [VIDEOS.fraserRiverFraserviewEb.id],
+    positions: [
+      ARGYLE_KENT_N_E,
+      [49.20886, -123.07136],
+      [49.20872, -123.07144],
+      FRASERVIEW_START,
+    ],
+  },
+  {
     routeNames: [ROUTES.fraserRiverTrail.name],
     description: "victoria-fraserview",
     type: "comfortable",
+    videos: [VIDEOS.fraserRiverFraserviewEb.id],
     positions: [
-      [49.20831, -123.07008],
+      FRASERVIEW_START,
+      [49.20826, -123.07009],
       [49.20794, -123.07006],
       [49.20776, -123.06989],
       [49.20756, -123.06972],
@@ -143,7 +159,7 @@ export const FRASER_RIVER_TRAIL = [
     routeNames: [ROUTES.fraserRiverTrail.name],
     description: "river district - near elliott",
     type: "other",
-    videos: [VIDEOS.sunriseNb.id],
+    videos: [VIDEOS.fraserRiverFraserviewEb.id, VIDEOS.sunriseNb.id],
     videosStartAtEnd: [VIDEOS.sunriseNb.id],
     positions: [
       ELLIOTT_KENT_PATH,
@@ -157,7 +173,9 @@ export const FRASER_RIVER_TRAIL = [
   },
   {
     routeNames: [ROUTES.fraserRiverTrail.name],
-    description: "river district - minus bit at elliott",
+    description: "fraserview - elliott to kerr",
+    videos: [VIDEOS.fraserRiverFraserviewEb.id],
+    videosEndAtEnd: [VIDEOS.fraserRiverFraserviewEb.id],
     positions: [
       EAST_OF_ELLIOTT,
       [49.20554, -123.05569],
@@ -209,6 +227,13 @@ export const FRASER_RIVER_TRAIL = [
       [49.2057, -123.04304],
       [49.20572, -123.0429],
       [49.20569, -123.04271],
+      KERR_FRASER_TRAIL,
+    ],
+  },
+  {
+    routeNames: [ROUTES.fraserRiverTrail.name],
+    description: "river district - kerr to boundary",
+    positions: [
       KERR_FRASER_TRAIL,
       [49.20569, -123.0421],
       [49.20559, -123.04185],

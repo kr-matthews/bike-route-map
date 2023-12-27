@@ -12,14 +12,18 @@ import {
   NEW_HAVEN_MARINE,
   PATTERSON_MAYWOOD_W,
   PATTERSON_MOSCROP,
+  SKEENA_BRIDGEWAY,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const MCKAY_BOXER = [49.21028, -123.00869];
 const PATTERSON_MAYWOOD = [49.22539, -123.01264];
 const GILMORE_HALIFAX_SE = [49.26797, -123.01417];
 const GILMORE_HALIFAX_SW = [49.26797, -123.01432];
 const GILMORE_LANE_START = [49.26723, -123.01416];
+
+const CARLETON_YALE = [49.29001, -123.01108];
 
 const HIGHWAY_OVERPASS_START = [49.2573, -123.01212];
 const HIGHWAY_OVERPASS_END = [49.25829, -123.01213];
@@ -32,12 +36,21 @@ export const SEA_TO_RIVER = [
   {
     description: "trail: marine dr to boxer",
     type: "other",
+    videos: [VIDEOS.seaToRiverNb.id, VIDEOS.glenlyonNb.id],
+    videosEndAtEnd: [VIDEOS.glenlyonNb.id],
+    videosStartAtStart: [VIDEOS.seaToRiverNb.id],
     positions: [
       NEW_HAVEN_MARINE,
       [49.20916, -123.00835],
-      [49.20927, -123.00835],
-      [49.20966, -123.00835],
-      [49.20985, -123.00843],
+      [49.20926, -123.00835],
+      [49.20926, -123.00846],
+      [49.20931, -123.00851],
+      [49.20939, -123.00857],
+      [49.20951, -123.00857],
+      [49.20956, -123.00854],
+      [49.20976, -123.00854],
+      [49.20983, -123.00857],
+      [49.20988, -123.00858],
       [49.20989, -123.00861],
       [49.21017, -123.00861],
       MCKAY_BOXER,
@@ -46,6 +59,7 @@ export const SEA_TO_RIVER = [
   {
     routeNames: [ROUTES.seaToRiver.name],
     description: "boxer to central park",
+    videos: [VIDEOS.seaToRiverNb.id],
     positions: [
       MCKAY_BOXER,
       [49.21222, -123.00869],
@@ -67,6 +81,7 @@ export const SEA_TO_RIVER = [
     routeNames: [ROUTES.seaToRiver.name],
     description: "maywood to moscrop",
     type: "shared",
+    videos: [VIDEOS.seaToRiverNb.id],
     positions: [
       PATTERSON_MAYWOOD,
       [49.22679, -123.01265],
@@ -85,6 +100,7 @@ export const SEA_TO_RIVER = [
     routeNames: [ROUTES.seaToRiver.name],
     description: "moscrop to highway",
     elevation: 0.5,
+    videos: [VIDEOS.seaToRiverNb.id],
     positions: [
       CARLETON_MOSCROP,
       [49.24477, -123.01253],
@@ -132,12 +148,14 @@ export const SEA_TO_RIVER = [
     routeNames: [ROUTES.seaToRiver.name],
     description: "highway overpass",
     elevation: 1,
+    videos: [VIDEOS.seaToRiverNb.id],
     positions: [HIGHWAY_OVERPASS_START, HIGHWAY_OVERPASS_END],
   },
   {
     routeNames: [ROUTES.seaToRiver.name],
     description: "highway to still creek",
     elevation: 0.5,
+    videos: [VIDEOS.seaToRiverNb.id],
     positions: [
       HIGHWAY_OVERPASS_END,
       [49.25854, -123.01216],
@@ -155,6 +173,7 @@ export const SEA_TO_RIVER = [
   {
     routeNames: [ROUTES.seaToRiver.name, ROUTES.centralValleyGreenway.name],
     description: "gilmore",
+    videos: [VIDEOS.seaToRiverNb.id],
     positions: [
       GILMORE_STILL_CREEK,
       [49.26144, -123.01447],
@@ -167,6 +186,7 @@ export const SEA_TO_RIVER = [
   {
     routeNames: [ROUTES.seaToRiver.name],
     description: "cvg to lougheed",
+    videos: [VIDEOS.seaToRiverNb.id],
     positions: [
       GILMORE_CVG,
       [49.26275, -123.0145],
@@ -186,6 +206,7 @@ export const SEA_TO_RIVER = [
     description: "nb: lougheed to halifax part 1",
     oneWay: "required",
     type: "shared",
+    videos: [VIDEOS.seaToRiverNb.id],
     positions: [
       GILMORE_LOUGHEED_SE,
       GILMORE_LOUGHEED_NE,
@@ -197,6 +218,7 @@ export const SEA_TO_RIVER = [
     routeNames: [ROUTES.seaToRiver.name],
     description: "nb: lougheed to halifax part 2",
     oneWay: "required",
+    videos: [VIDEOS.seaToRiverNb.id],
     positions: [GILMORE_LANE_START, GILMORE_HALIFAX_SE],
   },
   {
@@ -216,6 +238,7 @@ export const SEA_TO_RIVER = [
   {
     routeNames: [ROUTES.seaToRiver.name],
     description: "halifax to trans canada trail",
+    videos: [VIDEOS.seaToRiverNb.id],
     positions: [
       GILMORE_HALIFAX_SE,
       [49.26812, -123.01417],
@@ -244,7 +267,51 @@ export const SEA_TO_RIVER = [
       [49.28647, -123.01129],
       [49.28828, -123.01124],
       [49.28997, -123.0112],
-      [49.29001, -123.01108],
+      CARLETON_YALE,
+    ],
+  },
+  {
+    description: "trans canada trail bit",
+    hideUnlessVideo: true,
+    videos: [VIDEOS.seaToRiverNb.id],
+    videosEndAtStart: [VIDEOS.seaToRiverNb.id],
+    positions: [
+      SKEENA_BRIDGEWAY,
+      [49.29081, -123.02836],
+      [49.29108, -123.02804],
+      [49.29153, -123.02735],
+      [49.29193, -123.02662],
+      [49.29225, -123.02588],
+      [49.29233, -123.02564],
+      [49.29241, -123.02533],
+      [49.29248, -123.02488],
+      [49.29259, -123.02428],
+      [49.29264, -123.02404],
+      [49.2927, -123.02387],
+      [49.2927, -123.02313],
+      [49.29263, -123.02212],
+      [49.29262, -123.02166],
+      [49.29261, -123.02145],
+      [49.29249, -123.02059],
+      [49.29228, -123.01941],
+      [49.29218, -123.01883],
+      [49.29207, -123.01748],
+      [49.29205, -123.01706],
+      [49.29204, -123.01609],
+      [49.29199, -123.01543],
+      [49.29171, -123.01399],
+      [49.29169, -123.01385],
+      [49.29159, -123.01362],
+      [49.29123, -123.01279],
+      [49.29116, -123.01265],
+      [49.29105, -123.01254],
+      [49.2909, -123.01234],
+      [49.29074, -123.0121],
+      [49.29068, -123.01196],
+      [49.29055, -123.01163],
+      [49.29045, -123.01147],
+      [49.29017, -123.01114],
+      CARLETON_YALE,
     ],
   },
 ];

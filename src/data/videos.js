@@ -159,6 +159,16 @@ const VIDEOS = {
     date: new Date("2023 06 07"),
     minutes: 5,
   },
+  fraserRiverFraserviewEb: {
+    id: "Ak5JhRWDMKw",
+    date: new Date("2023 12 23"),
+    minutes: 9,
+  },
+  fraserForeshoreEb: {
+    id: "JpuMhCUJYSU",
+    date: new Date("2023 12 23"),
+    minutes: 10,
+  },
   gardenCityNb: {
     id: "CqETe9mI-SM",
     date: new Date("2023 07 05"),
@@ -173,6 +183,11 @@ const VIDEOS = {
     id: "zOUHEenuUnQ",
     date: new Date("2023 08 17"),
     minutes: 5,
+  },
+  glenlyonNb: {
+    id: "MAR219VGiFA",
+    date: new Date("2023 08 17"),
+    minutes: 10,
   },
   haroWb: {
     id: "gdsFxEtuepY",
@@ -348,6 +363,11 @@ const VIDEOS = {
     id: "htrdfMC4NBg",
     date: new Date("2023 10 09"),
     minutes: 14,
+  },
+  seaToRiverNb: {
+    id: "Fuq2nBBk0IM",
+    date: new Date("2023 12 23"),
+    minutes: 40,
   },
   sixtySeventhPlusWb: {
     id: "z5GzRN2_iNc",

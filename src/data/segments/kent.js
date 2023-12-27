@@ -123,6 +123,8 @@ export const KENT = [
     description: "kent n: eb: borden to argyle",
     type: "painted",
     oneWay: "required",
+    videos: [VIDEOS.fraserRiverFraserviewEb.id],
+    videosStartAtStart: [VIDEOS.fraserRiverFraserviewEb.id],
     positions: [
       BORDEN_KENT_N_S,
       [49.20947, -123.07356],
@@ -168,6 +170,7 @@ export const KENT = [
   {
     routeNames: [ROUTES.kent.name],
     description: "kent n: portside-ish to path at elliott",
+    videos: [VIDEOS.fraserRiverFraserviewEb.id],
     positions: [
       GLADSTONE_KENT,
       [49.20638, -123.06219],
@@ -231,7 +234,7 @@ export const KENT = [
   {
     routeNames: [ROUTES.kent.name],
     description: "kent n path: elliott little bit",
-    videos: [VIDEOS.sunriseNb.id],
+    videos: [VIDEOS.fraserRiverFraserviewEb.id, VIDEOS.sunriseNb.id],
     positions: [ELLIOTT_KENT_W, [49.20575, -123.05698], ELLIOTT_KENT_PATH],
   },
   {

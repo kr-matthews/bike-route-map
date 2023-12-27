@@ -10,6 +10,7 @@ import {
   UNITED_MARY_HILL_NW,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const BETA_LOUGHEED = [49.26613, -122.99753];
 const DELTA_LOUGHEED_SE = [49.26505, -122.99205];
@@ -94,6 +95,7 @@ export const LOUGHEED = [
     type: "painted",
     oneWay: "required",
     hideArrows: true,
+    videos: [VIDEOS.seaToRiverNb.id],
     positions: [GILMORE_LOUGHEED_SW, GILMORE_LOUGHEED_SE],
   },
   {

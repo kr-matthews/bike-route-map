@@ -259,11 +259,20 @@ export const ROUTES = {
   fraserForeshoreTrail: {
     name: "Fraser Foreshore Urban Trail",
     shortName: "Fraser Foreshore T.",
-    legs: [{ distance: 3.4, videos: {} }],
+    legs: [{ distance: 3.4, videos: { eastbound: VIDEOS.fraserForeshoreEb } }],
   },
   fraserRiverTrail: {
     name: "Fraser River Trail",
-    legs: [{ videos: {} }],
+    legs: [
+      { name: "Southlands", distance: 1, videos: {} },
+      { name: "Marpole", distance: 0.3, videos: {} },
+      {
+        name: "Fraserview",
+        distance: 1.9,
+        videos: { eastbound: VIDEOS.fraserRiverFraserviewEb },
+      },
+      { name: "River District", distance: 1.6, videos: {} },
+    ],
   },
   gardenCity: {
     name: "Garden City Rd",
@@ -283,7 +292,7 @@ export const ROUTES = {
   },
   glenlyon: {
     name: "Glenlyon Urban Trail",
-    legs: [{ distance: 2.4, videos: {} }],
+    legs: [{ distance: 2.4, videos: { northbound: VIDEOS.glenlyonNb } }],
   },
   granville: {
     name: "Granville Ave",
@@ -542,7 +551,7 @@ export const ROUTES = {
   },
   seaToRiver: {
     name: "Sea to River",
-    legs: [{ distance: 9.6, videos: {} }],
+    legs: [{ distance: 9.6, videos: { northbound: VIDEOS.seaToRiverNb } }],
   },
   secondNarrowsBridge: {
     name: "Second Narrows Bridge",
