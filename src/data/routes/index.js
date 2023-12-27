@@ -265,6 +265,7 @@ export const ROUTES = {
     name: "Fraser River Trail",
     legs: [
       { name: "Southlands", distance: 1, videos: {} },
+      { name: "Fraser River Park", distance: 0.6, videos: {} },
       { name: "Marpole", distance: 0.3, videos: {} },
       {
         name: "Fraserview",
