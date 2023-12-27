@@ -1,6 +1,7 @@
 import {
   CASSIAR_ADANAC,
   CASSIAR_CAMBRIDGE,
+  CASSIAR_DUNDAS_S,
   CASSIAR_SKEENA_PATH,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -25,7 +26,7 @@ export const CASSIAR = [
       [49.28206, -123.03083],
       [49.28295, -123.03087],
       [49.28385, -123.03088],
-      [49.2847, -123.03088],
+      CASSIAR_DUNDAS_S,
       [49.28557, -123.03087],
       [49.28567, -123.03082],
       [49.28634, -123.03032],

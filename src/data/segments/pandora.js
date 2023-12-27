@@ -4,6 +4,7 @@ import {
   MCLEAN_FRANKLIN,
   NANAIMO_PANDORA_E,
   NANAIMO_PANDORA_W,
+  RENFREW_PANDORA,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -47,7 +48,8 @@ export const PANDORA = [
       [49.28298, -123.05194],
       [49.28298, -123.04931],
       KASLO_PANDORA,
-      [49.28298, -123.04419],
+      [49.28298, -123.04433],
+      RENFREW_PANDORA,
     ],
   },
 ];

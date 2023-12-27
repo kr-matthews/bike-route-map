@@ -1,4 +1,4 @@
-import { WINDERMERE_ADANAC, WINDERMERE_HASTINGS } from "../intersections";
+import { WINDERMERE_ADANAC, WINDERMERE_HASTINGS_N } from "../intersections";
 import { ROUTES } from "../routes";
 
 export const WINDERMERE = [
@@ -12,7 +12,7 @@ export const WINDERMERE = [
       [49.27825, -123.03621],
       [49.27907, -123.03621],
       [49.28021, -123.03621],
-      WINDERMERE_HASTINGS,
+      WINDERMERE_HASTINGS_N,
     ],
   },
 ];

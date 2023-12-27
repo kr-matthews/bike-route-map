@@ -312,7 +312,6 @@ export const ROUTES = {
       { name: "Windermere <-> Portside", videos: {} },
       { name: "Cassiar <-> Portside", videos: {} },
     ],
-    isIncomplete: true,
   },
   heather: {
     name: "Heather",
