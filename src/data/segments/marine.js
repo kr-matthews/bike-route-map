@@ -68,7 +68,7 @@ export const MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineSw.name],
     description: "from arthur laing",
     type: "shared",
     oneWay: "required",
@@ -82,7 +82,7 @@ export const MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineSw.name],
     description: "gas station sidewalk",
     type: "other",
     oneWay: "required",
@@ -96,7 +96,7 @@ export const MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineSw.name],
     description: "crossing granville",
     type: "shared",
     oneWay: "recommended",
@@ -104,7 +104,7 @@ export const MARINE = [
     positions: [GRANVILLE_GAS_STATION, [49.20525, -123.1406], GRANVILLE_MARINE],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineSw.name],
     description: "parallel to granville",
     type: "shared",
     videos: [VIDEOS.swMarineEb.id, VIDEOS.arthurLaingSb.id],
@@ -122,7 +122,7 @@ export const MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineSw.name],
     description: "parallel to granville - last bit",
     type: "shared",
     videos: [
@@ -134,14 +134,14 @@ export const MARINE = [
     positions: [MARINE_AVERY, [49.20844, -123.14219], MARINE_70TH_S],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineSw.name],
     description: "crossing granville at cornish",
     type: "shared",
     videos: [VIDEOS.cypressNb.id],
     positions: [MARINE_70TH_S, MARINE_70TH_N],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineSw.name],
     description: "to arthur laing",
     type: "shared",
     oneWay: "required",
@@ -158,7 +158,7 @@ export const MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineSw.name],
     description: "sw marine wb primary to camosun",
     type: "painted",
     oneWay: "required",
@@ -223,7 +223,7 @@ export const MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineSw.name],
     description: "sw marine wb at camosun",
     type: "painted",
     oneWay: "required",
@@ -231,7 +231,7 @@ export const MARINE = [
     positions: [MARINE_41ST_NW, CAMOSUN_MARINE_N],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineSw.name],
     description: "sw marine wb camosun to 16th",
     type: "shoulder",
     oneWay: "required",
@@ -266,7 +266,7 @@ export const MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineSw.name],
     description: "sw marine wb 16th off ramp",
     type: "shared",
     oneWay: "required",
@@ -274,7 +274,7 @@ export const MARINE = [
     positions: [MARINE_16TH_SSE, POST_TO_16TH_SLIP],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineSw.name],
     description: "sw marine wb crossing 16th",
     type: "shoulder",
     oneWay: "required",
@@ -286,7 +286,7 @@ export const MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineSw.name],
     description: "sw marine wb 16th on ramp",
     type: "shared",
     oneWay: "required",
@@ -294,7 +294,7 @@ export const MARINE = [
     positions: [PRE_FROM_16TH_SLIP, MARINE_16TH_NNE],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineSw.name],
     description: "sw marine wb 16th to nw marine",
     type: "shoulder",
     oneWay: "required",
@@ -314,7 +314,7 @@ export const MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineSw.name],
     description: "sw marine eb to camosun-ish",
     type: "shoulder",
     oneWay: "required",
@@ -368,7 +368,7 @@ export const MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineSw.name],
     description: "sw marine eb near camosun",
     type: "painted",
     oneWay: "required",
@@ -377,7 +377,7 @@ export const MARINE = [
     positions: [WEST_OF_CAMOSUN, CAMOSUN_MARINE_S, MARINE_41ST_SW],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineSw.name],
     description: "sw marine eb from camosun",
     type: "painted",
     oneWay: "required",
@@ -439,7 +439,7 @@ export const MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineSw.name],
     description: "just beyond arbutus greenway eb",
     type: "dedicated",
     oneWay: "required",
@@ -448,7 +448,7 @@ export const MARINE = [
     positions: [ARBUTUS_GREENWAY_MARINE_S, EAST_BLVD_MARINE_S],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineSw.name],
     description: "arbutus greenway-ish to 70th",
     type: "shared",
     oneWay: "required",
@@ -474,7 +474,7 @@ export const MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineNw.name],
     description: "just west of marine-marine",
     type: "shared",
     videos: [VIDEOS.swMarineEb.id],
@@ -487,7 +487,7 @@ export const MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineNw.name],
     description: "ubc-ish to west mall-ish",
     type: "shared",
     positions: [
@@ -546,7 +546,7 @@ export const MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineNw.name],
     description: "west mall-ish eb",
     type: "shared",
     oneWay: "required",
@@ -558,7 +558,7 @@ export const MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineNw.name],
     description: "west mall to chancellor",
     type: "painted",
     oneWay: "required",
@@ -573,7 +573,7 @@ export const MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineNw.name],
     description: "chancellor to cecil-ish",
     type: "painted",
     oneWay: "required",
@@ -586,7 +586,7 @@ export const MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineNw.name],
     description: "cecil-ish to west mall",
     type: "shared",
     oneWay: "required",
@@ -602,13 +602,13 @@ export const MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineNw.name],
     description: "crossing chancellor",
     type: "shared",
     positions: [MARINE_CHANCELLOR_SE, MARINE_CHANCELLOR_N],
   },
   {
-    routeNames: [ROUTES.marine.name],
+    routeNames: [ROUTES.marineNw.name],
     description: "the hill",
     type: "shared",
     positions: [
@@ -662,7 +662,7 @@ export const MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.marine.name, ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.marineNw.name, ROUTES.seasideBypass.name],
     description: "shared lane portion",
     type: "shared",
     positions: [
@@ -706,7 +706,7 @@ export const MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.marine.name, ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.marineNw.name, ROUTES.seasideBypass.name],
     description: "eb: spanish banks to 4th",
     type: "painted",
     oneWay: "required",
@@ -779,7 +779,7 @@ export const MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.marine.name, ROUTES.seasideBypass.name],
+    routeNames: [ROUTES.marineNw.name, ROUTES.seasideBypass.name],
     description: "wb: 4th to spanish banks",
     type: "painted",
     oneWay: "required",

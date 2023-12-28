@@ -47,7 +47,7 @@ export const CAMBIE = [
 
   // gastown
   {
-    routeNames: [ROUTES.cambie.name],
+    routeNames: [ROUTES.cambieGastown.name],
     description: "gastown",
     type: "dedicated",
     oneWay: "required",

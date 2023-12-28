@@ -144,13 +144,16 @@ export const ROUTES = {
     name: "Cambie St",
     legs: [
       {
-        name: "South Vancouver",
         distanceMax: 4,
         distanceMin: 1.7,
         videos: { southbound: VIDEOS.cambieSb },
       },
+    ],
+  },
+  cambieGastown: {
+    name: "Cambie St (Gastown)",
+    legs: [
       {
-        name: "Gastown",
         distance: 0.4,
         videos: { northbound: VIDEOS.cambieGastownNb },
       },
@@ -395,16 +398,13 @@ export const ROUTES = {
     name: "Lougheed Highway",
     legs: [{ distanceMax: 15.8, distanceMin: 15.1, videos: {} }],
   },
-  marine: {
-    name: "Marine",
-    legs: [
-      { name: "NW Marine", distance: 7.1, videos: {} },
-      {
-        name: "SW Marine",
-        distance: 10.7,
-        videos: { eastbound: VIDEOS.swMarineEb },
-      },
-    ],
+  marineNw: {
+    name: "NW Marine",
+    legs: [{ distance: 7.1, videos: {} }],
+  },
+  marineSw: {
+    name: "SW Marine",
+    legs: [{ distance: 10.7, videos: { eastbound: VIDEOS.swMarineEb } }],
   },
   marineWay: {
     name: "Marine Way",
