@@ -1,8 +1,10 @@
-import Routes from "./Routes";
-import SelectedRoute from "./SelectedRoute";
+import { useCallback } from "react";
 import Legend from "./Legend";
 import Menu from "./Menu";
-import { useSavedState } from "../../hooks/useSavedState";
+import Routes from "./Routes";
+import SelectedRoute from "./SelectedRoute";
+import useRoutesAutoSelect from "../../hooks/useRoutesAutoSelect";
+import useSavedState from "../../hooks/useSavedState";
 
 // !! move styling to css files
 
@@ -22,6 +24,13 @@ export default function Sidebar({ mapRef }) {
   );
   const backToMenu = () => setSelectedOptionId(ID_NONE);
   const isNoneSelected = menuOptions.every(({ id }) => id !== selectedOptionId);
+
+  const isOnMenu = selectedOptionId === ID_NONE;
+  const goToRoutes = useCallback(
+    () => setSelectedOptionId(ID_ROUTES),
+    [setSelectedOptionId]
+  );
+  useRoutesAutoSelect(isOnMenu, goToRoutes);
 
   return (
     <div

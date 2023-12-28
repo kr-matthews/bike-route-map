@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 
 /**
  * Essentially [useState], but it stores the state in local storage
@@ -8,7 +8,7 @@ import { useState } from "react";
  * @param {any} initialValue - starting value if none exists in local storage
  * @returns
  */
-export function useSavedState(key, initialValue) {
+export default function useSavedState(key, initialValue) {
   const savedValue = JSON.parse(localStorage.getItem(key));
   const [value, setValue] = useState(() => {
     if (savedValue === null) {
@@ -19,10 +19,13 @@ export function useSavedState(key, initialValue) {
     }
   });
 
-  function setLocalValue(newValue) {
-    setValue(newValue);
-    localStorage.setItem(key, JSON.stringify(newValue));
-  }
+  const setLocalValue = useCallback(
+    (newValue) => {
+      setValue(newValue);
+      localStorage.setItem(key, JSON.stringify(newValue));
+    },
+    [key]
+  );
 
   return [value, setLocalValue];
 }
