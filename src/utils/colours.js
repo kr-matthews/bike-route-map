@@ -12,4 +12,5 @@ export const DARK_GREY = "DarkGrey";
 export const BLACK = "Black";
 export const RED = "Red";
 export const PURPLE = "Purple";
+export const MAGENTA = "Magenta";
 export const ORANGE_BROWN = "#967969";

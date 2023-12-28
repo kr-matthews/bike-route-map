@@ -8,6 +8,7 @@ import {
   LIGHT_GREEN,
   LIGHT_GREY,
   LIGHT_YELLOW,
+  MAGENTA,
   ORANGE_BROWN,
   PURPLE,
   RED,
@@ -41,6 +42,7 @@ export const COLOUR_OTHER = DARK_GREY;
 export const COLOUR_OTHER_ONE_WAY = LIGHT_GREY;
 
 export const COLOUR_CLOSED = RED;
+export const COLOUR_HIGHLIGHTED = MAGENTA;
 export const COLOUR_VIDEO = PURPLE;
 export const COLOUR_NO_VIDEO = LIGHT_GREY;
 

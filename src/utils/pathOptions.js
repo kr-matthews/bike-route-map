@@ -4,6 +4,7 @@ import {
   COLOUR_COMFORTABLE,
   COLOUR_COMFORTABLE_ONE_WAY,
   COLOUR_ELEVATED_BORDER,
+  COLOUR_HIGHLIGHTED,
   COLOUR_OTHER,
   COLOUR_OTHER_ONE_WAY,
   COLOUR_PAINTED_ONE_WAY,
@@ -25,7 +26,7 @@ const comfortableTypes = [
   "mixed",
   "quiet",
   "comfortable", // a mix of the above
-  undefined, // catch-all
+  undefined, // catch-all (mostly for legacy reasons)
 ];
 
 export function createPathOptions(
@@ -62,9 +63,11 @@ export function createPathOptions(
   if (hasActiveVideo) {
     colour = COLOUR_VIDEO;
   }
+  if (isHighlighted) {
+    colour = COLOUR_HIGHLIGHTED;
+  }
 
-  const nonUndergroundWeight =
-    isHighlighted || isSelected ? WEIGHT_WIDE : WEIGHT_NARROW;
+  const nonUndergroundWeight = isSelected ? WEIGHT_WIDE : WEIGHT_NARROW;
 
   if (hideUnlessVideo && !hasActiveVideo) return { weight: 0, opacity: 0 };
 
@@ -79,18 +82,15 @@ export function createPathOptions(
 
 export function createBorderPathOptions(
   { routeNames, elevation },
-  { highlighted, selected }
+  { selected }
 ) {
   const isSelected = (routeNames ?? []).includes(selected);
-  const isHighlighted = (routeNames ?? []).includes(highlighted);
 
   if (!elevation) return null;
 
   return {
     color: elevation > 0 ? COLOUR_ELEVATED_BORDER : COLOUR_UNDERGROUND_BORDER,
-    weight:
-      (isHighlighted || isSelected ? WEIGHT_WIDE : WEIGHT_NARROW) +
-      WEIGHT_BORDER_ADD_ON,
+    weight: (isSelected ? WEIGHT_WIDE : WEIGHT_NARROW) + WEIGHT_BORDER_ADD_ON,
     // explicit opacity required to show hidden routes when video is selected
     opacity: 100,
   };
