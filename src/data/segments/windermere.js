@@ -1,11 +1,15 @@
 import { WINDERMERE_ADANAC, WINDERMERE_HASTINGS_N } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const WINDERMERE = [
   {
     routeNames: [ROUTES.windermere.name],
     description: "primary",
     type: "quiet",
+    videos: [VIDEOS.windermereSb.id],
+    videosStartAtEnd: [VIDEOS.windermereSb.id],
+    videosEndAtStart: [VIDEOS.windermereSb.id],
     positions: [
       WINDERMERE_ADANAC,
       [49.27784, -123.03622],

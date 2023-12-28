@@ -194,6 +194,11 @@ const VIDEOS = {
     date: new Date("2023 06 03"),
     minutes: 4,
   },
+  hastingsPortsideWindermere: {
+    id: "DMYMtO0aF5A",
+    date: new Date("2023 12 23"),
+    minutes: 3,
+  },
   heatherSb: {
     id: "IOQ6E28a5CE",
     date: new Date("2023 09 10"),
@@ -428,6 +433,11 @@ const VIDEOS = {
     id: "s58YehJpLE4",
     date: new Date("2023 12 22"),
     minutes: 11,
+  },
+  windermereSb: {
+    id: "wzduU1Z4UHY",
+    date: new Date("2023 12 23"),
+    minutes: 1,
   },
   windsorNb: {
     id: "azxidzxMgzI",
