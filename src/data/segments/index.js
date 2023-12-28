@@ -90,6 +90,7 @@ import { SECOND_NARROWS_BRIDGE } from "./secondNarrowsBridge";
 import { SIXTEENTH } from "./sixteenth";
 import { SIXTY_SEVENTH } from "./sixtySeventh";
 import { SMITHE } from "./smithe";
+import { SPIRIT_TRAIL } from "./spiritTrail";
 import { STANLEY_PARK_LOOP } from "./stanleyPark";
 import { SUNRISE } from "./sunrise";
 import { TENTH } from "./tenth";
@@ -203,6 +204,7 @@ export const SEGMENTS = [
   ...SIXTEENTH,
   ...SIXTY_SEVENTH,
   ...SMITHE,
+  ...SPIRIT_TRAIL,
   ...STANLEY_PARK_LOOP,
   ...SUNRISE,
   ...TENTH,

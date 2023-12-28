@@ -428,8 +428,6 @@ export const LIONS_GATE_BRIDGE = [
   {
     description: "connection from spirit",
     videos: [VIDEOS.lionsGateBridgeSb.id],
-    // !! actually starts a bit early (but spirit not added yet)
-    videosStartAtStart: [VIDEOS.lionsGateBridgeSb.id],
     positions: [
       LIONS_GATE_SPIRIT_TRAIL_W,
       [49.32432, -123.13075],

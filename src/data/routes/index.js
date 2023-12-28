@@ -571,8 +571,7 @@ export const ROUTES = {
   },
   spiritTrail: {
     name: "Spirit Trail",
-    legs: [{ videos: {} }],
-    isIncomplete: true,
+    legs: [{ distance: 11.0, videos: {} }],
   },
   stanleyParkLoop: {
     name: "Stanley Park Loop",
