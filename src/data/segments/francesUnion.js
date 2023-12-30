@@ -231,8 +231,6 @@ export const FRANCES_UNION = [
       [49.27997, -122.95918],
       [49.27994, -122.95908],
       CLIFF_BRUNETTE_FRASER,
-      [49.27974, -122.95894],
-      CLIFF_UNION,
     ],
   },
 ];

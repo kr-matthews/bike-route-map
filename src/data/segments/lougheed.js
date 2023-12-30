@@ -6,7 +6,8 @@ import {
   KING_EDWARD_LOUGHEED_NW,
   KING_EDWARD_LOUGHEED_SW,
   LEEDER_UNITED,
-  SPERLING_WINSTON,
+  SPERLING_LOUGHEED_NE,
+  SPERLING_LOUGHEED_SE,
   UNITED_MARY_HILL_NW,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -14,7 +15,6 @@ import { VIDEOS } from "../videos";
 
 const BETA_LOUGHEED = [49.26613, -122.99753];
 const DELTA_LOUGHEED_SE = [49.26505, -122.99205];
-const SPERLING_LOUGHEED_SE = [49.2595, -122.96446];
 const EASTBOUND_ELEVATION_1_PRE = [49.23167, -122.8489];
 const EASTBOUND_ELEVATION_1_START = [49.23143, -122.84848];
 const EASTBOUND_ELEVATION_1_END = [49.2301, -122.84571];
@@ -27,7 +27,6 @@ const WESTBOUND_ELEVATION_1_PRE = [49.22982, -122.83067];
 const WESTBOUND_ELEVATION_1_START = [49.22984, -122.8322];
 const WESTBOUND_ELEVATION_1_END = [49.23005, -122.83592];
 const WESTBOUND_ELEVATION_1_POST = [49.23017, -122.83782];
-const SPERLING_LOUGHEED_NE = [49.2597, -122.96443];
 
 const EASTBOUND_BRUNETTE_FRASER_PRE = [49.25215, -122.91204];
 const EASTBOUND_BRUNETTE_FRASER_START = [49.25194, -122.91008];
@@ -56,25 +55,6 @@ const GAGLARDI_LOUGHEED_NE = [49.25248, -122.91237];
 const BEYOND_BETA_SHOULDER_END = [49.26645, -122.99871];
 
 export const LOUGHEED = [
-  // connections
-  {
-    // !! move to Lakes (if/when it's added)
-    description: "sperling",
-    type: "mixed",
-    positions: [
-      SPERLING_WINSTON,
-      [49.25827, -122.96436],
-      [49.2584, -122.96439],
-      [49.25879, -122.96447],
-      [49.25889, -122.96444],
-      [49.25922, -122.96445],
-      [49.25932, -122.96435],
-      [49.25941, -122.96446],
-      SPERLING_LOUGHEED_SE,
-      SPERLING_LOUGHEED_NE,
-    ],
-  },
-
   // eastbound
   {
     routeNames: [ROUTES.lougheed.name],

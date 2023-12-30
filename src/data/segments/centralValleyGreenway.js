@@ -31,6 +31,8 @@ import {
   SPERLING_WINSTON,
   VICTORIA_BROADWAY_SE,
   WOODLAND_GRANDVIEW,
+  LAKES_CVG_S,
+  KENSINGTON_CVG,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -64,7 +66,6 @@ const VICTORIA_BROADWAY_NE = [49.2624, -123.06573];
 
 const EAST_PARK_S = [49.27036, -123.10443];
 
-const BEFORE_OVERPASS = [49.2573, -122.96466];
 const OVERPASS_START = [49.2573, -122.9647];
 const OVERPASS_END = [49.25833, -122.96425];
 
@@ -478,7 +479,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
       [49.26078, -122.97033],
       [49.26035, -122.96933],
       [49.26023, -122.9691],
-      [49.25995, -122.96831],
+      KENSINGTON_CVG,
       [49.25986, -122.96805],
       [49.25974, -122.96778],
       [49.25969, -122.9676],
@@ -490,17 +491,17 @@ export const CENTRAL_VALLEY_GREENWAY = [
       [49.25772, -122.96473],
       [49.25768, -122.96469],
       [49.2576, -122.96467],
-      BEFORE_OVERPASS,
+      LAKES_CVG_S,
     ],
   },
   {
-    routeNames: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.lakes.name],
     description: "pre-overpass",
     elevation: 0.5,
-    positions: [BEFORE_OVERPASS, OVERPASS_START],
+    positions: [LAKES_CVG_S, OVERPASS_START],
   },
   {
-    routeNames: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.lakes.name],
     description: "train overpass",
     elevation: 1,
     positions: [
@@ -529,7 +530,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
-    routeNames: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.lakes.name],
     description: "post-overpass",
     elevation: 0.5,
     positions: [OVERPASS_END, [49.25827, -122.96429], SPERLING_WINSTON],

@@ -357,6 +357,11 @@ export const ROUTES = {
     name: "Keefer",
     legs: [{ distance: 1.2, videos: { eastbound: VIDEOS.keeferEb } }],
   },
+  kensington: {
+    name: "Kensington Urban Trail",
+    shortName: "Kensington Trail",
+    legs: [{ distance: 2.3, videos: {} }],
+  },
   kent: {
     name: "Kent",
     legs: [{ distance: 7.5, videos: {} }],
@@ -379,8 +384,7 @@ export const ROUTES = {
   },
   lakes: {
     name: "Lakes",
-    legs: [{ videos: {} }],
-    isIncomplete: true,
+    legs: [{ distance: 9.8, videos: {} }],
   },
   lakewood: {
     name: "Lakewood",

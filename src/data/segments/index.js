@@ -52,11 +52,13 @@ import { HORNBY } from "./hornby";
 import { IMPERIAL } from "./imperial";
 import { INVERNESS } from "./inverness";
 import { KEEFER } from "./keefer";
+import { KENSINGTON } from "./kensington";
 import { KENT } from "./kent";
 import { KERR } from "./kerr";
 import { KILLARNEY } from "./killarney";
 import { KING_EDWARD } from "./kingEdward";
 import { KNIGHT_STREET_BRIDGE } from "./knightStBridge";
+import { LAKES } from "./lakes";
 import { LAKEWOOD } from "./lakewood";
 import { LIONS_GATE_BRIDGE } from "./lionsGateBridge";
 import { LOUGHEED } from "./lougheed";
@@ -166,11 +168,13 @@ export const SEGMENTS = [
   ...IMPERIAL,
   ...INVERNESS,
   ...KEEFER,
+  ...KENSINGTON,
   ...KENT,
   ...KERR,
   ...KILLARNEY,
   ...KING_EDWARD,
   ...KNIGHT_STREET_BRIDGE,
+  ...LAKES,
   ...LAKEWOOD,
   ...LIONS_GATE_BRIDGE,
   ...LOUGHEED,
