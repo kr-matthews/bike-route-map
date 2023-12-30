@@ -399,6 +399,16 @@ const VIDEOS = {
     date: new Date("2023 05 28"),
     minutes: 22,
   },
+  terminalEb: {
+    id: "R1Mye7FjTTM",
+    date: new Date("2023 12 24"),
+    minutes: 4,
+  },
+  terminalWb: {
+    id: "r9922u4S6YY",
+    date: new Date("2023 12 24"),
+    minutes: 3,
+  },
   thirdEb: {
     id: "B5KPg3I32Ws",
     date: new Date("2023 06 07"),

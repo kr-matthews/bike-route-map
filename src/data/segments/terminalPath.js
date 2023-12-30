@@ -1,12 +1,55 @@
+import { MAIN_1ST_E } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
+
+const MAIN_INDUSTRIAL_E = [49.27045, -123.10051];
+const PATH_W = [49.27178, -123.09803];
 
 export const TERMINAL_PATH = [
+  {
+    description: "connection from cvg: main",
+    type: "shared",
+    oneWay: "required",
+    hideUnlessVideo: true,
+    videos: [VIDEOS.terminalEb.id],
+    videosStartAtStart: [VIDEOS.terminalEb.id],
+    positions: [
+      MAIN_1ST_E,
+      [49.27016, -123.1004],
+      [49.2702, -123.10052],
+      MAIN_INDUSTRIAL_E,
+    ],
+  },
+  {
+    description: "connection from cvg: the rest",
+    type: "quiet",
+    hideUnlessVideo: true,
+    videos: [VIDEOS.terminalEb.id],
+    positions: [
+      MAIN_INDUSTRIAL_E,
+      [49.2705, -123.10045],
+      [49.27049, -123.10021],
+      [49.27046, -123.10004],
+      [49.27031, -123.09953],
+      [49.26995, -123.09832],
+      [49.26991, -123.09816],
+      [49.27005, -123.09809],
+      [49.27055, -123.09809],
+      [49.27108, -123.09807],
+      [49.27178, -123.09807],
+      PATH_W,
+    ],
+  },
   {
     routeNames: [ROUTES.terminalPath.name],
     description: "primary",
     type: "mixed",
+    videos: [VIDEOS.terminalEb.id, VIDEOS.terminalWb.id],
+    videosStartAtEnd: [VIDEOS.terminalWb.id],
+    videosEndAtStart: [VIDEOS.terminalWb.id],
+    videosEndAtEnd: [VIDEOS.terminalEb.id],
     positions: [
-      [49.27178, -123.09803],
+      PATH_W,
       [49.27178, -123.09793],
       [49.27142, -123.09574],
       [49.27134, -123.09532],

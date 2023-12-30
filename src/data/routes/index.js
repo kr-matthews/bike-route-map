@@ -604,7 +604,12 @@ export const ROUTES = {
   },
   terminalPath: {
     name: "Terminal Ave Path",
-    legs: [{ distance: 1, videos: {} }],
+    legs: [
+      {
+        distance: 1.0,
+        videos: { eastbound: VIDEOS.terminalEb, westbound: VIDEOS.terminalWb },
+      },
+    ],
   },
   university: {
     name: "University Blvd",
