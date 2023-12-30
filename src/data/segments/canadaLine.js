@@ -30,6 +30,9 @@ const GREAT_CANADIAN_VAN_HORNE_NW = [49.19484, -123.125];
 const GREAT_CANADIAN_BRIDGEPORT_NW = [49.19211, -123.12452];
 const CANADA_LINE_PATH_BRIDGEPORT_S = [49.19198, -123.12457];
 
+const MCLENNAN_RIVER_NE = [49.19776, -123.1075];
+const MCLENNAN_RIVER_NW = [49.19789, -123.10812];
+
 const ASH_KENT_NE = [49.20578, -123.11908];
 const CAMBIE_KENT_N_NE = [49.20612, -123.11721];
 
@@ -38,6 +41,57 @@ const CAMBIE_PATH_64TH = [49.2123, -123.11679];
 
 export const CANADA_LINE = [
   // richmond alternates
+  {
+    description: "river dr path",
+    type: "mixed",
+    positions: [
+      VAN_HORNE_RIVER_SE,
+      [49.19879, -123.11882],
+      [49.19904, -123.11731],
+      [49.19905, -123.11719],
+      [49.19906, -123.11402],
+      [49.19904, -123.11379],
+      [49.19904, -123.11367],
+      [49.19849, -123.11122],
+      [49.19776, -123.10803],
+      [49.19774, -123.10798],
+      [49.19771, -123.10794],
+      [49.19762, -123.10793],
+      [49.19762, -123.10775],
+      [49.19764, -123.1077],
+      [49.19767, -123.10766],
+      [49.19767, -123.1076],
+      [49.1966, -123.10284],
+      [49.19675, -123.10283],
+    ],
+  },
+  {
+    description: "river dr lane 1",
+    type: "painted",
+    oneWay: "required",
+    positions: [[49.19674, -123.10297], MCLENNAN_RIVER_NE],
+  },
+  {
+    description: "river dr roundabout",
+    type: "shared",
+    oneWay: "required",
+    positions: [
+      MCLENNAN_RIVER_NE,
+      [49.1978, -123.10761],
+      [49.19783, -123.10768],
+      [49.19786, -123.10775],
+      [49.19787, -123.10781],
+      [49.19786, -123.10788],
+      [49.19786, -123.10799],
+      MCLENNAN_RIVER_NW,
+    ],
+  },
+  {
+    description: "river dr lane 2",
+    type: "painted",
+    oneWay: "required",
+    positions: [MCLENNAN_RIVER_NW, [49.19916, -123.11368]],
+  },
   {
     description: "road: van horne",
     type: "painted",
