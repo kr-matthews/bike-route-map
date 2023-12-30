@@ -12,17 +12,18 @@ On GitHub Pages at [https://kr-matthews.github.io/bike-route-map](https://kr-mat
 
 ### Current
 
-- View bike routes on zoom-able map.
-- Distinguish between certain types of bike route (standard, uncomfortable, elevated, underground, one-way, etc.).
-- Select a route.
-- View videos of selected route via embedded YouTube video (for most routes).
+- View named bike routes on zoom-able map.
+- Distinguish between types of bike infrastructure (comfortable, painted lane, shared lane with cars, highway shoulder, narrow sidewalk).
+- Bridges and tunnels/undercover routes visually distinct.
+- Select a route to see information and embedded YouTube video (if available).
 - Explanatory legend.
 
 ### Potential Future
 
 See [enhancements](https://github.com/kr-matthews/bike-route-map/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement) on GitHub.
 
-- More precise information about each segment (e.g. quiet local street, painted lane, physically separated lane, shared use path with pedestrians, etc.).
+- Ability to filter what types of infrastructure are shown (that is, filter to only show comfortable segments).
+- More routes in surrounding cities/areas.
 
 ## Original Intentions
 
@@ -41,3 +42,5 @@ See the [issues](https://github.com/kr-matthews/bike-route-map/issues) on GitHub
 - UI is far from perfect, and potentially unintuitive in places.
 - Data is all hard-coded into the frontend, rather than utilizing some sort of database.
 - There are 0 tests.
+- Unclear when an area has additional bike routes but they just haven't been added to this map (yet).
+- Data can easily get out-of-date.

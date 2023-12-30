@@ -2,6 +2,16 @@ import { VIDEOS } from "../videos";
 
 // !!! handle non-routes, allow them to be previewed sometimes?
 
+// Potential future additions
+// Burnaby: north-south; royal oak; burris/oakland; southeast; victory; sfu; broadway; joe sakic; big bend path; beresford; cariboo; willingdon overpass lane
+// UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
+// Richmond: no. 3; williams; river pkwy; minoru; francis (shell); ash; westminster hwy; no. 6 paths; lynas; no. 2 path; west-most n-s; dyke
+// YVR: ferguson; russ baker; sea island/bridgeport bridges; paths
+// New Westminster: queensborough bridge, london, 7th, 5th, carnarvon
+// North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
+// West Vancouver: marine dr; mathers+; old train; hwy; keith;
+// Surrey: scott rd; alex fraser; timbers; fraser hwy;
+
 export const ROUTES = {
   third: {
     name: "3rd",
