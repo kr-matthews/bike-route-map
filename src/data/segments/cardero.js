@@ -11,6 +11,7 @@ import {
   CARDERO_SEAWALL_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const CARDERO = [
   {
@@ -28,6 +29,9 @@ export const CARDERO = [
     routeNames: [ROUTES.cardero.name],
     description: "primary",
     type: "comfortable",
+    videos: [VIDEOS.carderoNb.id],
+    videosStartAtStart: [VIDEOS.carderoNb.id],
+    videosEndAtEnd: [VIDEOS.carderoNb.id],
     positions: [
       CARDERO_BEACH,
       [49.28382, -123.14081],

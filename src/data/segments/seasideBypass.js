@@ -386,7 +386,6 @@ export const SEASIDE_BYPASS = [
     type: "painted",
     oneWay: "required",
     videos: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
-    videosEndAtEnd: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
     positions: [
       QUEBEC_NB_PROTECTION_END,
       [49.27243, -123.10163],
@@ -399,6 +398,21 @@ export const SEASIDE_BYPASS = [
       [49.27606, -123.10205],
       [49.27635, -123.10212],
       [49.27655, -123.1022],
+      QUEBEC_EXPO_SE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seasideBypass.name],
+    description: "nb: expo: quebec to union",
+    type: "painted",
+    oneWay: "required",
+    videos: [
+      VIDEOS.seasideBypassFalseCreekSouthEb.id,
+      VIDEOS.seasideBypassExpoWb.id,
+    ],
+    videosEndAtEnd: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
+    videosStartAtStart: [VIDEOS.seasideBypassExpoWb.id],
+    positions: [
       QUEBEC_EXPO_SE,
       QUEBEC_EXPO_NE,
       [49.27678, -123.10236],
@@ -417,6 +431,7 @@ export const SEASIDE_BYPASS = [
     routeNames: [ROUTES.seasideBypass.name],
     description: "expo bi-directional",
     type: "dedicated",
+    videos: [VIDEOS.seasideBypassExpoWb.id],
     positions: [
       CARRALL_EXPO_NW,
       CARRALL_EXPO_NE,
@@ -434,6 +449,7 @@ export const SEASIDE_BYPASS = [
     type: "painted",
     oneWay: "required",
     elevation: -0.5,
+    videos: [VIDEOS.seasideBypassExpoWb.id],
     positions: [
       CARRALL_EXPO_NW,
       [49.27813, -123.10632],
@@ -467,6 +483,7 @@ export const SEASIDE_BYPASS = [
     oneWay: "required",
     elevation: -1,
     hideArrows: true,
+    videos: [VIDEOS.seasideBypassExpoWb.id],
     positions: [
       BC_PLACE_TUNNEL_START,
       [49.27789, -123.11137],
@@ -495,6 +512,7 @@ export const SEASIDE_BYPASS = [
     type: "painted",
     oneWay: "required",
     elevation: -0.5,
+    videos: [VIDEOS.seasideBypassExpoWb.id],
     positions: [
       BC_PLACE_TUNNEL_END,
       [49.27643, -123.11402],
@@ -554,6 +572,7 @@ export const SEASIDE_BYPASS = [
     description: "wb under granville",
     type: "shared",
     oneWay: "required",
+    videos: [VIDEOS.seasideBypassExpoWb.id],
     positions: [
       SEYMOUR_PACIFIC,
       [49.27472, -123.12875],
@@ -569,6 +588,7 @@ export const SEASIDE_BYPASS = [
     description: "wb around burrard",
     type: "dedicated",
     oneWay: "required",
+    videos: [VIDEOS.seasideBypassExpoWb.id],
     positions: [
       HOWE_PACIFIC,
       HORNBY_PACIFIC_NE,
@@ -784,6 +804,7 @@ export const SEASIDE_BYPASS = [
     routeNames: [ROUTES.seasideBypass.name],
     description: "pacific: beach to burrard",
     type: "shared",
+    videos: [VIDEOS.seasideBypassExpoWb.id],
     positions: [
       JERVIS_BEACH_SW,
       [49.2807, -123.13814],
@@ -793,7 +814,7 @@ export const SEASIDE_BYPASS = [
   },
   {
     routeNames: [ROUTES.seasideBypass.name],
-    description: "beach: to jervis",
+    description: "beach: to split before jervis",
     positions: [
       STANLEY_PARK_LANE_BEACH,
       [49.29017, -123.14537],
@@ -825,9 +846,14 @@ export const SEASIDE_BYPASS = [
       [49.28154, -123.13952],
       [49.28136, -123.13927],
       BEACH_SPLIT,
-      [49.28112, -123.13889],
-      JERVIS_BEACH_SW,
     ],
+  },
+  {
+    routeNames: [ROUTES.seasideBypass.name],
+    description: "beach: little bit to jervis",
+    videos: [VIDEOS.seasideBypassExpoWb.id],
+    videosEndAtStart: [VIDEOS.seasideBypassExpoWb.id],
+    positions: [BEACH_SPLIT, [49.28112, -123.13889], JERVIS_BEACH_SW],
   },
   // other bypasses
   {

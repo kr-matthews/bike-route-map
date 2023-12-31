@@ -143,7 +143,7 @@ export const ROUTES = {
   },
   bute: {
     name: "Bute",
-    legs: [{ distance: 0.9, videos: {} }],
+    legs: [{ distance: 0.9, videos: { southbound: VIDEOS.buteSb } }],
   },
   byrneCreek: {
     name: "Byrne Creek Urban Trail",
@@ -187,7 +187,7 @@ export const ROUTES = {
   },
   cardero: {
     name: "Cardero",
-    legs: [{ distance: 1.4, videos: {} }],
+    legs: [{ distance: 1.4, videos: { northbound: VIDEOS.carderoNb } }],
   },
   carrall: {
     name: "Carrall",
@@ -554,7 +554,11 @@ export const ROUTES = {
     name: "Seaside Bypass",
     legs: [
       { name: "Beach", videos: {} },
-      { name: "Pacific/Expo", videos: {} },
+      {
+        name: "Pacific/Expo",
+        distance: 3.3,
+        videos: { westbound: VIDEOS.seasideBypassExpoWb },
+      },
       {
         // includes quebec
         name: "False Creek South",

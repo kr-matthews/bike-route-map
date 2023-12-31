@@ -54,6 +54,11 @@ const VIDEOS = {
     date: new Date("2023 08 21"),
     minutes: 12,
   },
+  buteSb: {
+    id: "bcwRc5Bg550",
+    date: new Date("2023 12 24"),
+    minutes: 3,
+  },
   cambieSb: {
     id: "RNDV1Zc8rB8",
     date: new Date("2023 08 27"),
@@ -78,6 +83,11 @@ const VIDEOS = {
     id: "c0Yjyt4isPs",
     date: new Date("2023 07 05"),
     minutes: 4,
+  },
+  carderoNb: {
+    id: "tsSkeanHrXM",
+    date: new Date("2023 12 24"),
+    minutes: 5,
   },
   carrallNb: {
     id: "1KNO98tWduE",
@@ -363,6 +373,11 @@ const VIDEOS = {
     id: "8xY4bwZ0GrE",
     date: new Date("2023 12 16"),
     minutes: 15,
+  },
+  seasideBypassExpoWb: {
+    id: "i2Kdrs7DJGk",
+    date: new Date("2023 12 24"),
+    minutes: 13,
   },
   seasideKitsWb: {
     id: "htrdfMC4NBg",

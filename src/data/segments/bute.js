@@ -5,6 +5,7 @@ import {
   BUTE_NELSON,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const BUTE_ROBSON = [49.286, -123.12698];
 
@@ -13,6 +14,9 @@ export const BUTE = [
     routeNames: [ROUTES.bute.name],
     description: "primary",
     type: "comfortable",
+    videos: [VIDEOS.buteSb.id],
+    videosStartAtEnd: [VIDEOS.buteSb.id],
+    videosEndAtStart: [VIDEOS.buteSb.id],
     positions: [
       BUTE_BURNABY,
       [49.28179, -123.13337],
