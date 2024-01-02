@@ -1,7 +1,9 @@
 import { DISCOVER_15TH, IMPERIAL_16TH, IMPERIAL_29TH } from "../intersections";
+import { ROUTES } from "../routes";
 
 export const IMPERIAL = [
   {
+    routeNames: [ROUTES.imperial.name],
     description: "imperial",
     type: "shared",
     positions: [

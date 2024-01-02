@@ -58,8 +58,9 @@ const UNIVERSITY_105A = [49.19458, -122.85067];
 const UNIVERSITY_SB_LANE_START = [49.19156, -122.85063];
 const UNIVERSITY_SB_LANE_END = [49.18891, -122.85];
 const UNIVERSITY_NB_LANE_START = [49.1888, -122.84979];
-const UNIVERSITY_NB_LANE_END = [49.19156, -122.85037];
+const UNIVERSITY_NB_LANE_END = [49.19144, -122.85026];
 const UNIVERSITY_OLD_YALE = [49.18587, -122.8517];
+const UNIVERSITY_105_NE = [49.1932, -122.85082];
 
 const NORTH_OF_GLADSTONE = [49.25029, -123.06026];
 const SOUTH_OF_NORTH_GRANDVIEW = [49.2599, -123.06208];
@@ -782,7 +783,6 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routeNames: [ROUTES.bcParkway.name],
     description: "quayside road option",
     type: "shared",
     positions: [
@@ -1029,27 +1029,27 @@ export const BC_PARKWAY = [
       CITY_PARKWAY_108_NW,
     ],
   },
-  {
-    routeNames: [ROUTES.bcParkway.name],
-    description: "nb: city parkway",
-    type: "painted",
-    oneWay: "required",
-    positions: [
-      CITY_PARKWAY_107A_SW,
-      [49.19735, -122.84879],
-      [49.19802, -122.84877],
-      [49.19815, -122.84875],
-      [49.19882, -122.84874],
-      [49.19902, -122.84871],
-      [49.19906, -122.84872],
-      CITY_PARKWAY_108_NW,
-    ],
-  },
+  // was removed in 2023
+  // {
+  //   routeNames: [ROUTES.bcParkway.name],
+  //   description: "nb: city parkway",
+  //   type: "painted",
+  //   oneWay: "required",
+  //   positions: [
+  //     CITY_PARKWAY_107A_SW,
+  //     [49.19735, -122.84879],
+  //     [49.19802, -122.84877],
+  //     [49.19815, -122.84875],
+  //     [49.19882, -122.84874],
+  //     [49.19902, -122.84871],
+  //     [49.19906, -122.84872],
+  //     CITY_PARKWAY_108_NW,
+  //   ],
+  // },
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "sb: city parkway",
-    type: "painted",
-    oneWay: "required",
+    type: "dedicated",
     positions: [
       CITY_PARKWAY_108_NW,
       [49.19899, -122.84896],
@@ -1191,19 +1191,27 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "university nb 3",
-    oneWay: "required",
-    type: "shared",
+    oneWay: "recommended",
+    type: "dedicated",
     positions: [
       UNIVERSITY_NB_LANE_END,
-      [49.19174, -122.85057],
-      [49.19195, -122.85071],
-      [49.19207, -122.85076],
-      [49.19226, -122.85082],
-      [49.19235, -122.85083],
-      [49.19312, -122.85082],
-      [49.19444, -122.85082],
-      UNIVERSITY_105A,
+      [49.19154, -122.85029],
+      [49.19176, -122.85046],
+      [49.19187, -122.85054],
+      [49.19203, -122.85063],
+      [49.19217, -122.8507],
+      [49.19229, -122.85072],
+      [49.19248, -122.85073],
+      [49.19306, -122.85073],
+      UNIVERSITY_105_NE,
     ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "university nb 4",
+    oneWay: "required",
+    type: "shared",
+    positions: [UNIVERSITY_105_NE, [49.19444, -122.85082], UNIVERSITY_105A],
   },
   {
     routeNames: [ROUTES.bcParkway.name],

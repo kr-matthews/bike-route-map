@@ -50,8 +50,7 @@ export const COMOX_HELMCKEN = [
     ],
   },
   {
-    routeNames: [ROUTES.comoxHelmcken.name],
-    description: "unofficial part",
+    description: "helmcken unofficial part",
     type: "shared",
     videos: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
     positions: [
@@ -63,7 +62,6 @@ export const COMOX_HELMCKEN = [
     ],
   },
   {
-    routeNames: [ROUTES.comoxHelmcken.name],
     description: "richards to homer",
     type: "shared",
     videos: [VIDEOS.comoxHelmckenEb.id],
@@ -71,7 +69,6 @@ export const COMOX_HELMCKEN = [
     positions: [RICHARDS_HELMCKEN, HOMER_HELMCKEN],
   },
   {
-    routeNames: [ROUTES.comoxHelmcken.name],
     description: "tail end",
     type: "shared",
     positions: [HOMER_HELMCKEN, [49.27592, -123.12107], MAINLAND_HELMCKEN],

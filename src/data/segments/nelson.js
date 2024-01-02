@@ -13,7 +13,7 @@ const BURRARD_NELSON = [49.2812, -123.12604];
 
 export const NELSON = [
   {
-    description: "unofficial part",
+    description: "nelson unofficial part",
     oneWay: "required",
     type: "shared",
     videos: [VIDEOS.cambieBridgeNelsonSb.id],

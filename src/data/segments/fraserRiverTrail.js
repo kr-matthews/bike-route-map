@@ -17,6 +17,9 @@ const RIVER_DISTRICT_CROSSING_FRASER_RIVER = [49.20301, -123.03199];
 
 const EAST_OF_ELLIOTT = [49.20553, -123.05646];
 
+const DUDLEY_CREEK_W = [49.20234, -123.02829];
+const DUDLEY_CREEK_E = [49.20222, -123.02782];
+
 export const FRASER_RIVER_TRAIL = [
   {
     routeNames: [ROUTES.fraserRiverTrail.name],
@@ -333,7 +336,27 @@ export const FRASER_RIVER_TRAIL = [
       [49.20254, -123.02927],
       [49.20238, -123.02867],
       [49.20234, -123.02843],
-      [49.20234, -123.02829],
+      DUDLEY_CREEK_W,
+      [49.20232, -123.02823],
+      [49.20229, -123.02817],
+      [49.20226, -123.02812],
+      [49.20223, -123.028],
+      [49.20223, -123.02787],
+      DUDLEY_CREEK_E,
+      [49.20206, -123.0268],
+      [49.20197, -123.02615],
+      [49.20183, -123.02543],
+      [49.20176, -123.02487],
+      [49.20171, -123.02463],
+      [49.20148, -123.02368],
+      BOUNDARY_FRASER_RIVER,
+    ],
+  },
+  {
+    routeNames: [ROUTES.fraserRiverTrail.name],
+    description: "river district - dudley creek bump",
+    positions: [
+      DUDLEY_CREEK_W,
       [49.20267, -123.0282],
       [49.20289, -123.02823],
       [49.20298, -123.02821],
@@ -345,14 +368,7 @@ export const FRASER_RIVER_TRAIL = [
       [49.20253, -123.02789],
       [49.20233, -123.0279],
       [49.20228, -123.02788],
-      [49.20222, -123.02782],
-      [49.20206, -123.0268],
-      [49.20197, -123.02615],
-      [49.20183, -123.02543],
-      [49.20176, -123.02487],
-      [49.20171, -123.02463],
-      [49.20148, -123.02368],
-      BOUNDARY_FRASER_RIVER,
+      DUDLEY_CREEK_E,
     ],
   },
 ];

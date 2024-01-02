@@ -162,6 +162,7 @@ export const ROUTES = {
   },
   cambieGastown: {
     name: "Cambie St (Gastown)",
+    shortName: "Cambie (Gastown)",
     legs: [
       {
         distance: 0.4,
@@ -358,6 +359,10 @@ export const ROUTES = {
   hornby: {
     name: "Hornby",
     legs: [{ distance: 2.1, videos: { northbound: VIDEOS.hornbyNb } }],
+  },
+  imperial: {
+    name: "Imperial Dr",
+    legs: [{ distance: 1.1, videos: {} }],
   },
   inverness: {
     name: "Inverness",

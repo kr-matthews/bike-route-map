@@ -124,9 +124,9 @@ export const KERR = [
     positions: [KERR_MARINE_SW, KERR_KENT_N_SW],
   },
   {
-    routeNames: [ROUTES.kerr.name],
     description: "to 45th",
     type: "shared",
+    hideUnlessVideo: true,
     videos: [VIDEOS.kerrSb.id],
     videosStartAtEnd: [VIDEOS.kerrSb.id],
     positions: [
