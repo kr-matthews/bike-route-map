@@ -646,7 +646,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
-    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.brunetteFraser.name],
+    routeNames: [ROUTES.centralValleyGreenway.name],
     description: "government",
     positions: [
       BRIGHTON_WINSTON_SW,
