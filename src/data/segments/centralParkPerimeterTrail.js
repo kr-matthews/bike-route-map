@@ -16,6 +16,7 @@ export const CENTRAL_PARK_PERIMETER_TRAIL = [
     videos: [
       VIDEOS.centralParkPerimeterTrailCw.id,
       VIDEOS.bcParkwayBurnabyEb.id,
+      VIDEOS.bcParkwayBurnabyWb.id,
     ],
     positions: [
       CENTRAL_PARK_NW,
@@ -29,7 +30,10 @@ export const CENTRAL_PARK_PERIMETER_TRAIL = [
   {
     routeNames: [ROUTES.centralParkPerimeterTrail.name, ROUTES.bcParkway.name],
     description: "north side (east)",
-    videos: [VIDEOS.centralParkPerimeterTrailCw.id],
+    videos: [
+      VIDEOS.centralParkPerimeterTrailCw.id,
+      VIDEOS.bcParkwayBurnabyWb.id,
+    ],
     positions: [
       CENTRAL_PARK_BC_PARKWAY_WEST_SPLIT,
       [49.23214, -123.01887],

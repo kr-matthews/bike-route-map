@@ -5,10 +5,12 @@ import {
   QUEENSBOROUGH_POST_RAMP,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const KINROSS_MARINE_SW = [49.20678, -123.03674];
 const KINROSS_MARINE_SE = [49.20678, -123.0366];
 const BOUNDARY_MARINE_SW = [49.20523, -123.02377];
+const BOUNDARY_MARINE_SE = [49.20532, -123.02303];
 
 const NORTH_FRASER_MARINE_NE = [49.19671, -122.96848];
 const NORTH_FRASER_MARINE_SE = [49.19651, -122.96853];
@@ -85,6 +87,8 @@ export const MARINE_WAY = [
     routeNames: [ROUTES.marineWay.name],
     description: "eb: vancouver",
     oneWay: "required",
+    videos: [VIDEOS.marineWayEb.id],
+    videosStartAtStart: [VIDEOS.marineWayEb.id],
     positions: [
       [49.20687, -123.03341],
       [49.20688, -123.0332],
@@ -114,6 +118,21 @@ export const MARINE_WAY = [
       [49.20529, -123.02409],
       [49.20526, -123.02385],
       BOUNDARY_MARINE_SW,
+    ],
+  },
+  {
+    description: "vancouver to burnaby",
+    oneWay: "required",
+    type: "shared",
+    hideArrows: true,
+    hideUnlessVideo: true,
+    videos: [VIDEOS.marineWayEb.id],
+    positions: [
+      BOUNDARY_MARINE_SW,
+      [49.20526, -123.02372],
+      [49.2053, -123.02372],
+      [49.20533, -123.02377],
+      BOUNDARY_MARINE_SE,
     ],
   },
   {
@@ -241,8 +260,9 @@ export const MARINE_WAY = [
     description: "eb: burnaby",
     type: "shoulder",
     oneWay: "required",
+    videos: [VIDEOS.marineWayEb.id],
     positions: [
-      [49.20532, -123.02303],
+      BOUNDARY_MARINE_SE,
       [49.20533, -123.02066],
       [49.20535, -123.01786],
       [49.20535, -123.01408],
@@ -346,6 +366,7 @@ export const MARINE_WAY = [
   {
     description: "eb: transition to bc parkway",
     oneWay: "required",
+    videos: [VIDEOS.marineWayEb.id],
     positions: [
       STEWARDSON_MARINE,
       [49.19752, -122.95068],

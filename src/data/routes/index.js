@@ -101,10 +101,24 @@ export const ROUTES = {
       {
         name: "Burnaby",
         distance: 7,
-        videos: { eastbound: VIDEOS.bcParkwayBurnabyEb },
+        videos: {
+          eastbound: VIDEOS.bcParkwayBurnabyEb,
+          westbound: VIDEOS.bcParkwayBurnabyWb,
+        },
       },
-      { name: "New Westminster", distance: 6.8, videos: {} },
-      { name: "Surrey", distance: 6.4, videos: {} },
+      {
+        name: "New Westminster",
+        distance: 6.8,
+        videos: { westbound: VIDEOS.bcParkwayNewWestminsterWb },
+      },
+      {
+        name: "Surrey",
+        distance: 6.4,
+        videos: {
+          eastbound: VIDEOS.bcParkwaySurreyEb,
+          westbound: VIDEOS.bcParkwaySurreyWb,
+        },
+      },
     ],
   },
   beatty: {
@@ -431,7 +445,7 @@ export const ROUTES = {
   },
   marineWay: {
     name: "Marine Way",
-    legs: [{ distance: 6.5, videos: {} }],
+    legs: [{ distance: 6.5, videos: { eastbound: VIDEOS.marineWayEb } }],
   },
   masumiMitsui: {
     name: "Masumi Mitsui Greenway",

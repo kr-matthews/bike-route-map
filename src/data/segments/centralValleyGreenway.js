@@ -917,6 +917,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
   {
     routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
     description: "columbia: separated part - overlap",
+    videos: [VIDEOS.bcParkwayNewWestminsterWb.id],
     positions: [BC_PARKWAY_CVG_SPLIT, [49.20694, -122.90122], ELLIOT_COLUMBIA],
   },
   {
@@ -924,6 +925,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "columbia: south part, wb",
     type: "painted",
     oneWay: "required",
+    videos: [VIDEOS.bcParkwayNewWestminsterWb.id],
     positions: [
       ELLIOT_COLUMBIA,
       [49.20648, -122.90195],
@@ -959,6 +961,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
     description: "quayside/begbie",
     type: "shared",
+    videos: [VIDEOS.bcParkwayNewWestminsterWb.id],
     positions: [
       QUAYSIDE_JOIN,
       [49.20064, -122.91055],

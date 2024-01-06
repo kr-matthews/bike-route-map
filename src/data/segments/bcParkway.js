@@ -16,6 +16,7 @@ import {
   SLOCAN_29TH,
   SLOCAN_BC_PARKWAY,
   TODD_VANNESS,
+  BC_PARKWAY_LONDON,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -41,6 +42,7 @@ const QUEENSBOROUGH_LOOPS_ELEVATION_START = [49.19922, -122.9508];
 const QUEENSBOROUGH_LOOPS_ELEVATION_END = [49.19867, -122.95059];
 const QUEENSBOROUGH_ELEVATION_START = [49.19839, -122.94945];
 const QUEENSBOROUGH_ELEVATION_END = [49.19762, -122.95014];
+const UNDER_QUEENSBOROUGH_BRIDGE = [49.19785, -122.94901];
 const THIRD_STEWARDSON = [49.20227, -122.92662];
 const THIRD_ELEVATION_START = [49.2021, -122.92687];
 const THIRD_ELEVATION_END = [49.20076, -122.9275];
@@ -330,8 +332,9 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "west of central park perimeter trail",
-    videos: [VIDEOS.bcParkwayBurnabyEb.id],
+    videos: [VIDEOS.bcParkwayBurnabyEb.id, VIDEOS.bcParkwayBurnabyWb.id],
     videosStartAtStart: [VIDEOS.bcParkwayBurnabyEb.id],
+    videosEndAtStart: [VIDEOS.bcParkwayBurnabyWb.id],
     positions: [
       BOUNDARY_VANNESS,
       BOUNDARY_VANNESS_E,
@@ -354,7 +357,10 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name, ROUTES.centralParkPerimeterTrail.name],
     description: "north central park split",
-    videos: [VIDEOS.centralParkPerimeterTrailCw.id],
+    videos: [
+      VIDEOS.bcParkwayBurnabyWb.id,
+      VIDEOS.centralParkPerimeterTrailCw.id,
+    ],
     positions: [CENTRAL_PARK_BC_PARKWAY_NE, CENTRAL_PARK_BC_PARKWAY_EAST_SPLIT],
   },
   {
@@ -362,6 +368,7 @@ export const BC_PARKWAY = [
     description: "central park split to patterson",
     videos: [
       VIDEOS.bcParkwayBurnabyEb.id,
+      VIDEOS.bcParkwayBurnabyWb.id,
       VIDEOS.centralParkPerimeterTrailCw.id,
     ],
     positions: [CENTRAL_PARK_BC_PARKWAY_EAST_SPLIT, PATTERSON_BC_PARKWAY],
@@ -369,7 +376,7 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "central park to imperial",
-    videos: [VIDEOS.bcParkwayBurnabyEb.id],
+    videos: [VIDEOS.bcParkwayBurnabyEb.id, VIDEOS.bcParkwayBurnabyWb.id],
     positions: [
       PATTERSON_BC_PARKWAY,
       [49.22953, -123.01256],
@@ -404,14 +411,14 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "imperial sidewalk",
-    videos: [VIDEOS.bcParkwayBurnabyEb.id],
+    videos: [VIDEOS.bcParkwayBurnabyEb.id, VIDEOS.bcParkwayBurnabyWb.id],
     positions: [CENTRAL_IMPERIAL_SW, JUBILEE_IMPERIAL_SE],
   },
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "imperial to overpass",
     elevation: 0.5,
-    videos: [VIDEOS.bcParkwayBurnabyEb.id],
+    videos: [VIDEOS.bcParkwayBurnabyEb.id, VIDEOS.bcParkwayBurnabyWb.id],
     positions: [
       JUBILEE_IMPERIAL_SE,
       [49.22159, -122.99524],
@@ -524,15 +531,14 @@ export const BC_PARKWAY = [
     routeNames: [ROUTES.bcParkway.name],
     description: "southridge overpass",
     elevation: 1,
-    videos: [VIDEOS.bcParkwayBurnabyEb.id],
+    videos: [VIDEOS.bcParkwayBurnabyEb.id, VIDEOS.bcParkwayBurnabyWb.id],
     positions: [SOUTHRIDGE_OVERPASS_N, SOUTHRIDGE_OVERPASS_S],
   },
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "southridge overpass to new westminster",
     elevation: 0.5,
-    videos: [VIDEOS.bcParkwayBurnabyEb.id],
-    videosEndAtEnd: [VIDEOS.bcParkwayBurnabyEb.id],
+    videos: [VIDEOS.bcParkwayBurnabyEb.id, VIDEOS.bcParkwayBurnabyWb.id],
     positions: [
       SOUTHRIDGE_OVERPASS_S,
       [49.2044, -122.95897],
@@ -555,8 +561,11 @@ export const BC_PARKWAY = [
   // new westminster
   {
     routeNames: [ROUTES.bcParkway.name],
-    description: "burnaby to queensborough loops",
+    description: "burnaby to london",
     elevation: 0.5,
+    videos: [VIDEOS.bcParkwayBurnabyEb.id, VIDEOS.bcParkwayBurnabyWb.id],
+    videosStartAtEnd: [VIDEOS.bcParkwayBurnabyWb.id],
+    videosEndAtEnd: [VIDEOS.bcParkwayBurnabyEb.id],
     positions: [
       BC_PARKWAY_10TH,
       [49.2021, -122.9585],
@@ -566,7 +575,17 @@ export const BC_PARKWAY = [
       [49.2014, -122.95792],
       [49.20118, -122.95787],
       [49.20118, -122.95787],
-      [49.20102, -122.95767],
+      BC_PARKWAY_LONDON,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "london to queensborough loops",
+    elevation: 0.5,
+    videos: [VIDEOS.bcParkwayNewWestminsterWb.id],
+    videosEndAtStart: [VIDEOS.bcParkwayNewWestminsterWb.id],
+    positions: [
+      BC_PARKWAY_LONDON,
       [49.20084, -122.95744],
       [49.20072, -122.95727],
       [49.20057, -122.95707],
@@ -595,6 +614,7 @@ export const BC_PARKWAY = [
     routeNames: [ROUTES.bcParkway.name],
     description: "queensborough loops",
     elevation: 1,
+    videos: [VIDEOS.bcParkwayNewWestminsterWb.id],
     positions: [
       QUEENSBOROUGH_LOOPS_ELEVATION_START,
       QUEENSBOROUGH_LOOPS_ELEVATION_END,
@@ -604,6 +624,7 @@ export const BC_PARKWAY = [
     routeNames: [ROUTES.bcParkway.name],
     description: "queensborough dog area",
     elevation: 0.5,
+    videos: [VIDEOS.bcParkwayNewWestminsterWb.id],
     positions: [
       QUEENSBOROUGH_LOOPS_ELEVATION_END,
       [49.19864, -122.95051],
@@ -621,6 +642,7 @@ export const BC_PARKWAY = [
     routeNames: [ROUTES.bcParkway.name],
     description: "queensborough bridge sidewalk",
     elevation: 1,
+    videos: [VIDEOS.bcParkwayNewWestminsterWb.id],
     positions: [
       QUEENSBOROUGH_ELEVATION_START,
       [49.19781, -122.94883],
@@ -631,16 +653,27 @@ export const BC_PARKWAY = [
     routeNames: [ROUTES.bcParkway.name],
     description: "queensborough bridge post-sidewalk",
     elevation: 0.5,
+    videos: [VIDEOS.bcParkwayNewWestminsterWb.id],
     positions: [QUEENSBOROUGH_ELEVATION_END, QUEENSBOROUGH_POST_RAMP],
   },
   {
     routeNames: [ROUTES.bcParkway.name],
-    description: "stewardson way",
+    description: "stewardson way little bit",
+    videos: [VIDEOS.bcParkwayNewWestminsterWb.id, VIDEOS.marineWayEb.id],
+    videosEndAtEnd: [VIDEOS.marineWayEb.id],
     positions: [
       QUEENSBOROUGH_POST_RAMP,
       [49.19773, -122.94982],
       [49.19779, -122.9494],
-      [49.19785, -122.94901],
+      UNDER_QUEENSBOROUGH_BRIDGE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "stewardson way",
+    videos: [VIDEOS.bcParkwayNewWestminsterWb.id],
+    positions: [
+      UNDER_QUEENSBOROUGH_BRIDGE,
       [49.19792, -122.94863],
       [49.19799, -122.94836],
       [49.19807, -122.94815],
@@ -708,6 +741,7 @@ export const BC_PARKWAY = [
     description: "third ave pre-overpass",
     type: "shared",
     elevation: 0.5,
+    videos: [VIDEOS.bcParkwayNewWestminsterWb.id],
     positions: [THIRD_STEWARDSON, THIRD_ELEVATION_START],
   },
   {
@@ -715,6 +749,7 @@ export const BC_PARKWAY = [
     description: "third ave overpass",
     type: "shared",
     elevation: 1,
+    videos: [VIDEOS.bcParkwayNewWestminsterWb.id],
     positions: [
       THIRD_ELEVATION_START,
       [49.2013, -122.92833],
@@ -727,6 +762,7 @@ export const BC_PARKWAY = [
     description: "quayside overpass to split",
     type: "shared",
     elevation: 0.5,
+    videos: [VIDEOS.bcParkwayNewWestminsterWb.id],
     positions: [
       THIRD_ELEVATION_END,
       [49.20069, -122.9273],
@@ -748,6 +784,7 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "quayside waterfront path",
+    videos: [VIDEOS.bcParkwayNewWestminsterWb.id],
     positions: [
       QUAYSIDE_SPLIT,
       [49.19948, -122.92174],
@@ -814,6 +851,13 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "to pattullo bridge",
+    videos: [
+      VIDEOS.bcParkwayNewWestminsterWb.id,
+      VIDEOS.bcParkwaySurreyEb.id,
+      VIDEOS.bcParkwaySurreyWb.id,
+    ],
+    videosStartAtStart: [VIDEOS.bcParkwaySurreyEb.id],
+    videosEndAtStart: [VIDEOS.bcParkwaySurreyWb.id],
     positions: [
       BC_PARKWAY_CVG_SPLIT,
       [49.20749, -122.9009],
@@ -831,6 +875,11 @@ export const BC_PARKWAY = [
     routeNames: [ROUTES.bcParkway.name],
     description: "pre pattullo bridge",
     elevation: 0.5,
+    videos: [
+      VIDEOS.bcParkwayNewWestminsterWb.id,
+      VIDEOS.bcParkwaySurreyEb.id,
+      VIDEOS.bcParkwaySurreyWb.id,
+    ],
     positions: [PATTULLO_PRE_ELEVATION_START, PATTULLO_ELEVATION_START],
   },
   {
@@ -838,6 +887,11 @@ export const BC_PARKWAY = [
     description: "pattullo bridge",
     type: "other",
     elevation: 1,
+    videos: [
+      VIDEOS.bcParkwayNewWestminsterWb.id,
+      VIDEOS.bcParkwaySurreyEb.id,
+      VIDEOS.bcParkwaySurreyWb.id,
+    ],
     positions: [
       PATTULLO_ELEVATION_START,
       [49.20911, -122.89903],
@@ -865,11 +919,22 @@ export const BC_PARKWAY = [
     routeNames: [ROUTES.bcParkway.name],
     description: "post pattullo bridge",
     elevation: 0.5,
+    videos: [
+      VIDEOS.bcParkwayNewWestminsterWb.id,
+      VIDEOS.bcParkwaySurreyEb.id,
+      VIDEOS.bcParkwaySurreyWb.id,
+    ],
     positions: [PATTULLO_ELEVATION_END, PATTULLO_POST_ELEVATION_END],
   },
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "bridge to 111a av",
+    videos: [
+      VIDEOS.bcParkwayNewWestminsterWb.id,
+      VIDEOS.bcParkwaySurreyEb.id,
+      VIDEOS.bcParkwaySurreyWb.id,
+    ],
+    videosStartAtEnd: [VIDEOS.bcParkwayNewWestminsterWb.id],
     positions: [
       PATTULLO_POST_ELEVATION_END,
       [49.20579, -122.88092],
@@ -883,6 +948,7 @@ export const BC_PARKWAY = [
     description: "eb: 111a ave & 110 ave",
     type: "painted",
     oneWay: "required",
+    videos: [VIDEOS.bcParkwaySurreyEb.id],
     positions: [
       ONE_ONE_ONE_AV_START_N,
       ONE_ONE_ONE_AV_START_S,
@@ -923,6 +989,7 @@ export const BC_PARKWAY = [
     description: "wb: 110 ave no lane",
     type: "shared",
     oneWay: "required",
+    videos: [VIDEOS.bcParkwaySurreyWb.id],
     positions: [ONE_ONE_ZERO_AV_END_N, ONE_ONE_ZERO_125TH_N],
   },
   {
@@ -930,6 +997,7 @@ export const BC_PARKWAY = [
     description: "wb: 111a ave & 110 ave",
     type: "painted",
     oneWay: "required",
+    videos: [VIDEOS.bcParkwaySurreyWb.id],
     positions: [
       ONE_ONE_ZERO_125TH_N,
       [49.20269, -122.87686],
@@ -959,6 +1027,7 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "126a st/king george blvd separated path",
+    videos: [VIDEOS.bcParkwaySurreyWb.id, VIDEOS.bcParkwaySurreyEb.id],
     positions: [
       ONE_ONE_ZERO_AV_END_N,
       [49.20351, -122.87231],
@@ -1050,6 +1119,7 @@ export const BC_PARKWAY = [
     routeNames: [ROUTES.bcParkway.name],
     description: "sb: city parkway",
     type: "dedicated",
+    videos: [VIDEOS.bcParkwaySurreyWb.id, VIDEOS.bcParkwaySurreyEb.id],
     positions: [
       CITY_PARKWAY_108_NW,
       [49.19899, -122.84896],
@@ -1063,6 +1133,7 @@ export const BC_PARKWAY = [
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "tom binnie park",
+    videos: [VIDEOS.bcParkwaySurreyWb.id, VIDEOS.bcParkwaySurreyEb.id],
     positions: [
       CITY_PARKWAY_107A_SW,
       [49.1973, -122.84911],
@@ -1087,6 +1158,7 @@ export const BC_PARKWAY = [
     description: "university sb 1",
     oneWay: "required",
     type: "shared",
+    videos: [VIDEOS.bcParkwaySurreyEb.id],
     positions: [
       UNIVERSITY_105A,
       [49.1945, -122.85095],
@@ -1104,6 +1176,7 @@ export const BC_PARKWAY = [
     description: "university sb 2",
     type: "painted",
     oneWay: "required",
+    videos: [VIDEOS.bcParkwaySurreyEb.id],
     positions: [
       UNIVERSITY_SB_LANE_START,
       [49.19119, -122.85033],
@@ -1124,6 +1197,7 @@ export const BC_PARKWAY = [
     description: "university sb 3",
     oneWay: "required",
     type: "shared",
+    videos: [VIDEOS.bcParkwaySurreyEb.id],
     positions: [
       UNIVERSITY_SB_LANE_END,
       [49.1888, -122.85001],
@@ -1149,6 +1223,7 @@ export const BC_PARKWAY = [
     description: "university nb 1",
     oneWay: "required",
     type: "shared",
+    videos: [VIDEOS.bcParkwaySurreyWb.id],
     positions: [
       UNIVERSITY_OLD_YALE,
       [49.18595, -122.85172],
@@ -1173,6 +1248,7 @@ export const BC_PARKWAY = [
     description: "university nb 2",
     type: "painted",
     oneWay: "required",
+    videos: [VIDEOS.bcParkwaySurreyWb.id],
     positions: [
       UNIVERSITY_NB_LANE_START,
       [49.18901, -122.84976],
@@ -1193,6 +1269,7 @@ export const BC_PARKWAY = [
     description: "university nb 3",
     oneWay: "recommended",
     type: "dedicated",
+    videos: [VIDEOS.bcParkwaySurreyWb.id],
     positions: [
       UNIVERSITY_NB_LANE_END,
       [49.19154, -122.85029],
@@ -1211,11 +1288,15 @@ export const BC_PARKWAY = [
     description: "university nb 4",
     oneWay: "required",
     type: "shared",
+    videos: [VIDEOS.bcParkwaySurreyWb.id],
     positions: [UNIVERSITY_105_NE, [49.19444, -122.85082], UNIVERSITY_105A],
   },
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "holland park",
+    videos: [VIDEOS.bcParkwaySurreyWb.id, VIDEOS.bcParkwaySurreyEb.id],
+    videosStartAtEnd: [VIDEOS.bcParkwaySurreyWb.id],
+    videosEndAtEnd: [VIDEOS.bcParkwaySurreyEb.id],
     positions: [
       UNIVERSITY_OLD_YALE,
       [49.18571, -122.8513],

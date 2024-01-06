@@ -29,6 +29,26 @@ const VIDEOS = {
     date: new Date("2023 07 14"),
     minutes: 21,
   },
+  bcParkwayBurnabyWb: {
+    id: "beBp-SfFijM",
+    date: new Date("2024 01 01"),
+    minutes: 25,
+  },
+  bcParkwayNewWestminsterWb: {
+    id: "hi6hp9mxW3g",
+    date: new Date("2024 01 01"),
+    minutes: 26,
+  },
+  bcParkwaySurreyEb: {
+    id: "z1GbbXnFnpU",
+    date: new Date("2024 01 01"),
+    minutes: 27,
+  },
+  bcParkwaySurreyWb: {
+    id: "HEfpTO9Eyjg",
+    date: new Date("2024 01 01"),
+    minutes: 26,
+  },
   bcParkwayVancouverEb: {
     id: "3giKczCLloI",
     date: new Date("2023 07 22"),
@@ -403,6 +423,11 @@ const VIDEOS = {
     id: "l-DWh9zHOAo",
     date: new Date("2023 08 19"),
     minutes: 23,
+  },
+  marineWayEb: {
+    id: "EHjWLoIMeGU",
+    date: new Date("2024 01 01"),
+    minutes: 18,
   },
   tenthEb: {
     id: "wgLoXc7ydDA",
