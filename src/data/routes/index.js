@@ -125,6 +125,10 @@ export const ROUTES = {
     name: "Beatty St",
     legs: [{ distance: 0.9, videos: { southbound: VIDEOS.beattySb } }],
   },
+  bigBendPath: {
+    name: "Big Bend Path",
+    legs: [{ distance: 4.7, videos: {} }],
+  },
   blanca: {
     name: "Blanca St",
     legs: [{ distance: 1.2, videos: {} }],
