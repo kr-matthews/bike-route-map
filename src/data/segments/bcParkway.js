@@ -17,6 +17,8 @@ import {
   SLOCAN_BC_PARKWAY,
   TODD_VANNESS,
   BC_PARKWAY_LONDON,
+  BULLER_BERESFORD_W,
+  PRENTER_RUMBLE_ISH,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -450,6 +452,7 @@ export const BC_PARKWAY = [
       [49.21836, -122.98014],
       [49.21807, -122.97904],
       [49.21783, -122.97824],
+      BULLER_BERESFORD_W,
       [49.21757, -122.97755],
       [49.21747, -122.97755],
       [49.21583, -122.97408],
@@ -476,7 +479,7 @@ export const BC_PARKWAY = [
       [49.21492, -122.96288],
       [49.21483, -122.96247],
       [49.21475, -122.96225],
-      [49.21475, -122.96174],
+      PRENTER_RUMBLE_ISH,
       [49.21459, -122.96174],
       [49.21451, -122.9616],
       [49.21445, -122.96155],

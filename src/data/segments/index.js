@@ -8,6 +8,7 @@ import { BALACLAVA } from "./balaclava";
 import { BARNET } from "./barnet";
 import { BC_PARKWAY } from "./bcParkway";
 import { BEATTY } from "./beatty";
+import { BERESFORD } from "./beresford";
 import { BIG_BEND_PATH } from "./bigBendPath";
 import { BLANCA } from "./blanca";
 import { BRIDGEPORT_TRAIL } from "./bridgeportTrail";
@@ -125,6 +126,7 @@ export const SEGMENTS = [
   ...BARNET,
   ...BC_PARKWAY,
   ...BEATTY,
+  ...BERESFORD,
   ...BIG_BEND_PATH,
   ...BLANCA,
   ...BRIDGEPORT_TRAIL,
