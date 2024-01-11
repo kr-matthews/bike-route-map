@@ -2,6 +2,7 @@ import {
   DEER_LAKE_GILPIN_SW,
   DEER_LAKE_GILPIN_W,
   GARDEN_GROVE_DEER_LAKE,
+  ROYAL_OAK_DEER_LAKE_NW,
   WILLINGDON_DEER_LAKE,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -43,7 +44,7 @@ export const DEER_LAKE_PARKWAY = [
       [49.24002, -122.98995],
       [49.24003, -122.9895],
       [49.24006, -122.98932],
-      [49.23998, -122.9892],
+      ROYAL_OAK_DEER_LAKE_NW,
       [49.23998, -122.98888],
       [49.24008, -122.9887],
       [49.24003, -122.98846],

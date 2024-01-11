@@ -85,6 +85,7 @@ import { RAILWAY } from "./railway";
 import { RAILWAY_GREENWAY } from "./railwayGreenway";
 import { RICHARDS } from "./richards";
 import { RIDGEWAY } from "./ridgeway";
+import { ROYAL_OAK } from "./royalOak";
 import { RUMBLE } from "./rumble";
 import { RUPERT } from "./rupert";
 import { SEA_TO_RIVER } from "./seaToRiver";
@@ -203,6 +204,7 @@ export const SEGMENTS = [
   ...RAILWAY_GREENWAY,
   ...RICHARDS,
   ...RIDGEWAY,
+  ...ROYAL_OAK,
   ...RUMBLE,
   ...RUPERT,
   ...SEA_TO_RIVER,

@@ -3,7 +3,7 @@ import { VIDEOS } from "../videos";
 // !!! handle non-routes, allow them to be previewed sometimes?
 
 // Potential future additions
-// Burnaby: north-south; royal oak; burris/oakland; southeast; victory; sfu; broadway; joe sakic; big bend path; cariboo; willingdon overpass lane
+// Burnaby: north-south; nelson; burris/oakland; southeast; victory; sfu; broadway; joe sakic; big bend path; cariboo; willingdon overpass lane
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
 // Richmond: no. 3; williams; river pkwy; minoru; francis (shell); ash; westminster hwy; no. 6 paths; lynas; no. 2 path; west-most n-s; dyke
 // YVR: ferguson; russ baker; sea island/bridgeport bridges; paths
@@ -552,6 +552,10 @@ export const ROUTES = {
   ridgeway: {
     name: "Ridgeway",
     legs: [{ distanceMin: 17.3, distanceMax: 18.2, videos: {} }],
+  },
+  royalOak: {
+    name: "Royal Oak",
+    legs: [{ distance: 1.3, videos: {} }],
   },
   rumble: {
     name: "Rumble Street Urban Trail",
