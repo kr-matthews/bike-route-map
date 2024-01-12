@@ -3,7 +3,7 @@ import { VIDEOS } from "../videos";
 // !!! handle non-routes, allow them to be previewed sometimes?
 
 // Potential future additions
-// Burnaby: north-south; nelson; burris/oakland; southeast; victory; sfu; broadway; joe sakic; big bend path; cariboo; willingdon overpass lane
+// Burnaby: north-south; burris/oakland; southeast; victory; sfu; broadway; joe sakic; big bend path; cariboo; willingdon overpass lane
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
 // Richmond: no. 3; williams; river pkwy; minoru; francis (shell); ash; westminster hwy; no. 6 paths; lynas; no. 2 path; west-most n-s; dyke
 // YVR: ferguson; russ baker; sea island/bridgeport bridges; paths
@@ -468,6 +468,10 @@ export const ROUTES = {
       },
     ],
   },
+  metrotown: {
+    name: "Metrotown",
+    legs: [{ distance: 2.5, videos: {} }],
+  },
   midtown: {
     name: "Midtown",
     legs: [
@@ -497,9 +501,17 @@ export const ROUTES = {
       { distance: 0.4, videos: { eastbound: VIDEOS.cambieBridgeNelsonSb } },
     ],
   },
+  nelsonAve: {
+    name: "Nelson Ave Path",
+    legs: [{ distance: 0.4, videos: {} }],
+  },
   nicola: {
     name: "Nicola",
     legs: [{ distance: 0.3, videos: { northbound: VIDEOS.nicolaNb } }],
+  },
+  northSouth: {
+    name: "North/South",
+    legs: [{ distance: 2.9, videos: {} }],
   },
   oakStreetBridge: {
     name: "Oak Street Bridge",

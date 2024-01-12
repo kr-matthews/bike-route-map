@@ -67,11 +67,14 @@ import { LOUGHEED } from "./lougheed";
 import { MARINE } from "./marine";
 import { MARINE_WAY } from "./marineWay";
 import { MASUMI_MITSUI_GREENWAY } from "./masumiMitsui";
+import { METROTOWN } from "./metrotown";
 import { MIDTOWN } from "./midtown";
 import { MOSAIC } from "./mosaic";
 import { NANAIMO } from "./nanaimo";
 import { NELSON } from "./nelson";
+import { NELSON_AVE } from "./nelsonAve";
 import { NICOLA } from "./nicola";
+import { NORTH_SOUTH } from "./northSouth";
 import { OAK_STREET_BRIDGE } from "./oakStBridge";
 import { OFF_BROADWAY } from "./offBroadway";
 import { ONTARIO } from "./ontario";
@@ -186,11 +189,14 @@ export const SEGMENTS = [
   ...MARINE,
   ...MARINE_WAY,
   ...MASUMI_MITSUI_GREENWAY,
+  ...METROTOWN,
   ...MIDTOWN,
   ...MOSAIC,
   ...NANAIMO,
   ...NELSON,
+  ...NELSON_AVE,
   ...NICOLA,
+  ...NORTH_SOUTH,
   ...OAK_STREET_BRIDGE,
   ...OFF_BROADWAY,
   ...ONTARIO,
