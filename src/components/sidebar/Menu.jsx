@@ -21,26 +21,28 @@ export default function Menu({ options, setSelectedId }) {
         ))}
 
         <div>
-          <p style={{ color: "red" }}>
-            Note: This project is still a work-in-progress. Some routes aren't
-            drawn yet.
-          </p>
           <p>
             This is a map of bike routes in and around Vancouver. All bike
-            routes in Vancouver are present (let me know if any are missing).
-            Major bike routes in adjacent cities (as well as UBC) are usually
-            present, but there are plenty more bike routes (and other instances
-            of bike infrastructure) that are not on this map.
+            routes in Vancouver are present. Most bike routes in Burnaby are
+            present. Major bike routes in adjacent cities (as well as UBC) are
+            usually present, but there are plenty more bike routes (and other
+            instances of bike infrastructure) that are not on this map. More
+            routes may (slowly) be added over time.
           </p>
           <p>
             You can select (click on) a route via the 'Routes' side panel above,
             or directly on the map. Either way, existing videos (if any) will be
             shown for that route. If you select a video, then the segments that
-            it includes will show up in purple. The video has chapters at the
-            bottom for quickly finding a particular segment of a route -- make
-            the video fullscreen to see them more easily.
+            it covers will be emphasized. The videos have chapters at the bottom
+            for quickly finding a particular segment -- make a video fullscreen
+            to see these chapters more easily.
           </p>
-          <p style={{ color: "red" }}>{disclaimer}</p>
+          <p style={{ color: "red" }}>
+            {disclaimer}{" "}
+            <span style={{ color: "black" }}>
+              If you see any errors, let me know via GitHub below.
+            </span>
+          </p>
         </div>
       </div>
 
