@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { Selections } from "../../App";
 import { COLOUR_NO_VIDEO, COLOUR_VIDEO } from "../../utils/constants";
+import startIcon from "../../images/marker-green.svg";
+import "./toggleSwitch.css";
 
 export default function Video({ video, direction }) {
   const { video: selectedVideo, setVideoId } = useContext(Selections);
@@ -13,6 +15,9 @@ export default function Video({ video, direction }) {
   });
   const durationText = `${video.minutes} min`;
 
+  const updateVideo = () =>
+    setVideoId((current) => (current === video.id ? null : video.id));
+
   return (
     <span
       style={{
@@ -22,7 +27,7 @@ export default function Video({ video, direction }) {
         margin: "0.25em",
       }}
     >
-      <div style={{ margin: "0px 5px 5px", position: "relative" }}>
+      <div style={{ margin: "0px 0px 5px 5px", position: "relative" }}>
         <span>
           <span
             style={{
@@ -38,18 +43,21 @@ export default function Video({ video, direction }) {
             {dateText}, {durationText}
           </span>
         </span>
-        <button
+        <span
           style={{
             position: "absolute",
             right: 0,
+            width: "3em",
             cursor: "pointer",
           }}
-          onClick={() =>
-            setVideoId((current) => (current === video.id ? null : video.id))
-          }
+          onClick={updateVideo}
         >
-          <span style={{ fontSize: "90%" }}>{isShowing ? "Hide" : "Show"}</span>
-        </button>
+          <label className="container">
+            <input type="checkbox" checked={isShowing} onChange={updateVideo} />
+            <span className="slider" />
+          </label>
+          <img src={startIcon} style={{ height: "14px", paddingLeft: "4px" }} />
+        </span>
       </div>
       <div>
         <iframe
