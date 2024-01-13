@@ -1,4 +1,4 @@
-import { VIDEOS } from "../videos";
+import { VIDEOS } from "./videos";
 
 // !!! handle non-routes, allow them to be previewed sometimes?
 
