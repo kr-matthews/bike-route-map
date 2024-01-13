@@ -14,6 +14,7 @@ import {
   COLOUR_UNDERGROUND_BORDER,
   ZOOMED_IN_A_BIT,
 } from "../../utils/constants";
+import { DARK_BLUE, LIGHT_BLUE, WHITE } from "../../utils/colours";
 
 const intersection = [49.26208, -123.10495];
 
@@ -145,6 +146,9 @@ export default function Legend({ goBack }) {
           top: 25,
           right: 20,
           cursor: "pointer",
+          color: WHITE,
+          backgroundColor: LIGHT_BLUE,
+          borderColor: DARK_BLUE,
         }}
         onClick={goBack}
       >

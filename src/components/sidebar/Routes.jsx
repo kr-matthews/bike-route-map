@@ -3,7 +3,14 @@ import { ROUTES } from "../../data/routes";
 import { Selections } from "../../App";
 import { Search } from "./Search";
 import { isSubsequence, removeWhiteSpaces } from "../../utils/strings";
-import { BLACK, DARK_GREEN, LIGHT_GREEN, WHITE } from "../../utils/colours";
+import {
+  BLACK,
+  DARK_BLUE,
+  DARK_GREEN,
+  LIGHT_BLUE,
+  LIGHT_GREEN,
+  WHITE,
+} from "../../utils/colours";
 import { COLOUR_HIGHLIGHTED } from "../../utils/constants";
 
 // !!! allow filtering (by direction (only show east-west), by city, by quality (future), etc?
@@ -40,6 +47,9 @@ export default function Routes({ goBack }) {
           top: 25,
           right: 20,
           cursor: "pointer",
+          color: WHITE,
+          backgroundColor: LIGHT_BLUE,
+          borderColor: DARK_BLUE,
         }}
         onClick={goBack}
       >
