@@ -3,7 +3,8 @@ import { ROUTES } from "../../data/routes";
 import { Selections } from "../../App";
 import { Search } from "./Search";
 import { isSubsequence, removeWhiteSpaces } from "../../utils/strings";
-import { DARK_GREEN, LIGHT_GREEN } from "../../utils/colours";
+import { BLACK, DARK_GREEN, LIGHT_GREEN, WHITE } from "../../utils/colours";
+import { COLOUR_HIGHLIGHTED } from "../../utils/constants";
 
 // !!! allow filtering (by direction (only show east-west), by city, by quality (future), etc?
 
@@ -73,7 +74,11 @@ function Route({ route }) {
       style={{
         textAlign: "center",
         width: "10em",
-        backgroundColor: isSelected ? DARK_GREEN : LIGHT_GREEN,
+        backgroundColor: isHighlighted
+          ? COLOUR_HIGHLIGHTED
+          : isSelected
+          ? DARK_GREEN
+          : LIGHT_GREEN,
         borderRadius: "10px",
         padding: "6px 0",
         margin: "5px 0",
@@ -87,8 +92,8 @@ function Route({ route }) {
     >
       <span
         style={{
-          fontWeight: isHighlighted ? "bold" : "",
-          color: "White",
+          fontWeight: isSelected ? "bold" : "",
+          color: isHighlighted ? BLACK : WHITE,
         }}
       >
         {route.shortName ?? route.name}

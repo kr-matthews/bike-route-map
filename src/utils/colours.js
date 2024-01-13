@@ -10,7 +10,9 @@ export const LIGHT_GREY = "Grey";
 export const DARK_GREY = "DarkGrey";
 
 export const BLACK = "Black";
+export const WHITE = "White";
 export const RED = "Red";
 export const PURPLE = "Purple";
 export const MAGENTA = "Magenta";
+export const CYAN = "Cyan";
 export const ORANGE_BROWN = "#967969";

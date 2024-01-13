@@ -1,5 +1,6 @@
 import {
   BLACK,
+  CYAN,
   DARK_BLUE,
   DARK_BROWN,
   DARK_GREEN,
@@ -42,9 +43,9 @@ export const COLOUR_OTHER = DARK_GREY;
 export const COLOUR_OTHER_ONE_WAY = LIGHT_GREY;
 
 export const COLOUR_CLOSED = RED;
-export const COLOUR_HIGHLIGHTED = MAGENTA;
-export const COLOUR_VIDEO = PURPLE;
-export const COLOUR_NO_VIDEO = LIGHT_GREY;
+export const COLOUR_HIGHLIGHTED = CYAN;
+export const COLOUR_VIDEO = MAGENTA;
+export const COLOUR_NO_VIDEO = PURPLE;
 
 export const COLOUR_ELEVATED_BORDER = BLACK;
 export const COLOUR_UNDERGROUND_BORDER = ORANGE_BROWN;
