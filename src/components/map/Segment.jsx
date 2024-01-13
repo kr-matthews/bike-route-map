@@ -1,6 +1,7 @@
 import { Fragment, useContext } from "react";
 import { Tooltip } from "react-leaflet";
 import {
+  comfortableTypes,
   createBorderPathOptions,
   createPathOptions,
   getBorderPane,
@@ -13,8 +14,15 @@ import videoIcon from "../../images/video.svg";
 import VideoMarkers from "./VideoMarkers";
 
 export default function Segment(segment) {
-  const { routeNames, oneWay, hideArrows, isClosed, positions, elevation } =
-    segment;
+  const {
+    routeNames,
+    type,
+    oneWay,
+    elevation,
+    hideArrows,
+    isClosed,
+    positions,
+  } = segment;
   const { selectedRoute, setSelected, highlighted, setHighlighted, video } =
     useContext(Selections);
 
@@ -55,6 +63,25 @@ export default function Segment(segment) {
 
   const tooltipProps = { sticky: true, opacity: 0.7, className: "tooltip" };
 
+  const isComfortable = comfortableTypes.includes(type);
+  const isPainted = type === "painted";
+  const isShared = type === "shared";
+  const isShoulder = type === "shoulder";
+  const isOther = type === "other";
+
+  let typeText;
+  if (isComfortable) {
+    typeText = "Comfortable";
+  } else if (isPainted) {
+    typeText = "Painted Lane";
+  } else if (isShared) {
+    typeText = "Shared Lane";
+  } else if (isShoulder) {
+    typeText = "Highway Shoulder";
+  } else if (isOther) {
+    typeText = "Narrow Sidewalk";
+  }
+
   // FIXME: tool tip not showing on decorator arrows hover
   return (
     <Fragment>
@@ -66,33 +93,33 @@ export default function Segment(segment) {
         borderProps={hasBorder ? borderProps : undefined}
       >
         <Tooltip {...tooltipProps}>
-          {hasAnyRoutes ? (
-            <>
-              {isClosed && (
-                <div>
-                  <b>[SEGMENT CLOSED]</b>
-                </div>
-              )}
-              {routeNames.map((routeName) => (
-                <div key={routeName}>
-                  {hasVideo(segment, routeName) && (
-                    <img
-                      src={videoIcon}
-                      alt="video"
-                      style={{ marginRight: "0.5em", height: "0.8em" }}
-                    />
-                  )}
-                  {primaryRouteName === routeName ? (
-                    <b>{routeName}</b>
-                  ) : (
-                    routeName
-                  )}
-                </div>
-              ))}
-            </>
-          ) : (
-            "Alternative option or connection between routes"
-          )}
+          <>
+            <div>
+              <em>
+                {typeText}
+                {oneWay === "required" && " - One way"}
+              </em>
+              {isClosed && <b> [CLOSED]</b>}
+            </div>
+            {hasAnyRoutes
+              ? routeNames.map((routeName) => (
+                  <div key={routeName}>
+                    {hasVideo(segment, routeName) && (
+                      <img
+                        src={videoIcon}
+                        alt="video"
+                        style={{ marginRight: "0.5em", height: "0.8em" }}
+                      />
+                    )}
+                    {primaryRouteName === routeName ? (
+                      <b>{routeName}</b>
+                    ) : (
+                      routeName
+                    )}
+                  </div>
+                ))
+              : "Alternative option or connection between routes"}
+          </>
         </Tooltip>
       </Polyline>
       {video && <VideoMarkers segment={segment} videoId={video.id} />}

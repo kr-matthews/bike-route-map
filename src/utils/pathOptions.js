@@ -20,7 +20,7 @@ import {
   WEIGHT_WIDE,
 } from "./constants";
 
-const comfortableTypes = [
+export const comfortableTypes = [
   "dedicated",
   "combined",
   "mixed",
