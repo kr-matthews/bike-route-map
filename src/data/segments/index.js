@@ -120,6 +120,8 @@ import { WINDSOR } from "./windsor";
 import { YORK } from "./york";
 import { YUKON } from "./yukon";
 
+// !!! tests for correct number of start/end points per video
+
 // convention: bi-directional paths are stored northbound, eastbound, or clockwise
 export const SEGMENTS = [
   ...ADANAC,

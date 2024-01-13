@@ -3,7 +3,7 @@ import { VIDEOS } from "../videos";
 // !!! handle non-routes, allow them to be previewed sometimes?
 
 // Potential future additions
-// Burnaby: burris/oakland; victory; broadway; joe sakic/vista cr
+// Burnaby: burris/oakland; victory; broadway; joe sakic/vista cr/byrne creek secondary
 // SFU
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
 // Richmond: no. 3; williams; river pkwy; minoru; francis (shell); ash; westminster hwy; no. 6 paths; lynas; no. 2 path; west-most n-s; dyke
