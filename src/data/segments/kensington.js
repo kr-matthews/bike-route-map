@@ -1,6 +1,7 @@
 import {
   KENSINGTON_CANADA_NW,
   KENSINGTON_CVG,
+  KENSINGTON_SPROTT_E,
   KENSINGTON_SPROTT_W,
   SPERLING_JOE_SAKIC_N,
 } from "../intersections";
@@ -13,7 +14,62 @@ const KENSINGTON_STILL_CREEK_N = [49.25951, -122.96914];
 const LOUGHEED_OVERPASS_N = [49.26076, -122.96791];
 const LOUGHEED_OVERPASS_S = [49.25985, -122.96896];
 
+const OVERPASS_START = [49.24353, -122.96785];
+const OVERPASS_END = [49.24417, -122.96764];
+
+const LANE_OVERPASS_START = [49.24335, -122.96756];
+const LANE_OVERPASS_END = [49.24401, -122.96733];
+
 export const KENSINGTON = [
+  {
+    description: "nb shoulder",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
+      [49.24202, -122.968],
+      [49.24258, -122.96777],
+    ],
+  },
+  {
+    description: "nb lane 1",
+    type: "painted",
+    oneWay: "required",
+    elevation: 0.5,
+    positions: [
+      [49.24275, -122.96774],
+      [49.24314, -122.96763],
+      LANE_OVERPASS_START,
+    ],
+  },
+  {
+    description: "nb lane 2",
+    type: "painted",
+    oneWay: "required",
+    elevation: 1,
+    positions: [LANE_OVERPASS_START, LANE_OVERPASS_END],
+  },
+  {
+    description: "nb lane 3",
+    type: "painted",
+    oneWay: "required",
+    elevation: 0.5,
+    positions: [
+      LANE_OVERPASS_END,
+      [49.24467, -122.9671],
+      [49.24485, -122.96707],
+      [49.24533, -122.96694],
+      [49.24579, -122.96685],
+      [49.24643, -122.96673],
+      [49.24702, -122.96658],
+      [49.24736, -122.96651],
+      [49.24775, -122.96645],
+      [49.24831, -122.96637],
+      [49.24881, -122.96636],
+      [49.24939, -122.96638],
+      [49.2498, -122.96641],
+      KENSINGTON_SPROTT_E,
+    ],
+  },
   {
     description: "connection to lakes",
     positions: [
@@ -43,9 +99,11 @@ export const KENSINGTON = [
       KENSINGTON_CVG,
     ],
   },
+
   {
     routeNames: [ROUTES.kensington.name, ROUTES.lakes.name],
-    description: "west side: south of sprott",
+    description: "west side: canada way to highway",
+    elevation: 0.5,
     positions: [
       KENSINGTON_CANADA_NW,
       [49.24209, -122.96855],
@@ -58,8 +116,23 @@ export const KENSINGTON = [
       [49.24313, -122.96806],
       [49.24322, -122.96798],
       [49.24328, -122.96793],
-      [49.24353, -122.96785],
-      [49.24417, -122.96764],
+      OVERPASS_START,
+    ],
+  },
+
+  {
+    routeNames: [ROUTES.kensington.name, ROUTES.lakes.name],
+    description: "west side: overpass",
+    elevation: 1,
+    positions: [OVERPASS_START, OVERPASS_END],
+  },
+
+  {
+    routeNames: [ROUTES.kensington.name, ROUTES.lakes.name],
+    description: "west side: highway to sprott",
+    elevation: 0.5,
+    positions: [
+      OVERPASS_END,
       [49.24514, -122.96734],
       [49.24531, -122.96732],
       [49.24539, -122.96734],

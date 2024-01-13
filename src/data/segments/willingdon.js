@@ -13,7 +13,47 @@ const OVERPASS_END = [49.25813, -123.00382];
 const SIDEWALK_START = [49.25476, -123.00409];
 const SIDEWALK_END = [49.25521, -123.00411];
 
+const LANE_OVERPASS_START = [49.25814, -123.00427];
+const LANE_OVERPASS_END = [49.25712, -123.00433];
+
 export const WILLINGDON = [
+  {
+    description: "sb lane 1",
+    type: "painted",
+    oneWay: "required",
+    elevation: 0.5,
+    positions: [
+      [49.26007, -123.00418],
+      [49.25992, -123.00423],
+      [49.25975, -123.00426],
+      [49.25957, -123.00428],
+      [49.25938, -123.0043],
+      [49.25914, -123.00426],
+      [49.25889, -123.00427],
+      [49.25867, -123.00427],
+      LANE_OVERPASS_START,
+    ],
+  },
+  {
+    description: "sb lane 2",
+    type: "painted",
+    oneWay: "required",
+    elevation: 1,
+    positions: [LANE_OVERPASS_START, [49.25747, -123.00431], LANE_OVERPASS_END],
+  },
+  {
+    description: "sb lane 3",
+    type: "painted",
+    oneWay: "required",
+    elevation: 0.5,
+    positions: [
+      LANE_OVERPASS_END,
+      [49.25627, -123.00443],
+      [49.25606, -123.00445],
+      [49.25548, -123.00449],
+      [49.25483, -123.00451],
+    ],
+  },
   {
     description: "gilmore connection via sanderson",
     type: "mixed",

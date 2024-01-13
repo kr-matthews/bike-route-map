@@ -8,6 +8,7 @@ import {
   GILMORE_LOUGHEED_SE,
   GILMORE_LOUGHEED_SW,
   GILMORE_STILL_CREEK,
+  MCKAY_BC_PARKWAY,
   MCKAY_RUMBLE,
   NEW_HAVEN_MARINE,
   PATTERSON_MAYWOOD_W,
@@ -18,6 +19,7 @@ import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 const MCKAY_BOXER = [49.21028, -123.00869];
+const MCKAY_MAYWOOD = [49.22372, -123.00896];
 const PATTERSON_MAYWOOD = [49.22539, -123.01264];
 const GILMORE_HALIFAX_SE = [49.26797, -123.01417];
 const GILMORE_HALIFAX_SW = [49.26797, -123.01432];
@@ -29,6 +31,17 @@ const HIGHWAY_OVERPASS_START = [49.2573, -123.01212];
 const HIGHWAY_OVERPASS_END = [49.25829, -123.01213];
 
 export const SEA_TO_RIVER = [
+  {
+    description: "mckay connection to bc parkway/metrotown",
+    positions: [
+      MCKAY_MAYWOOD,
+      [49.22381, -123.00892],
+      [49.22641, -123.00617],
+      [49.22644, -123.00597],
+      [49.2265, -123.00591],
+      MCKAY_BC_PARKWAY,
+    ],
+  },
   {
     description: "central park - maywood",
     positions: [PATTERSON_MAYWOOD_W, PATTERSON_MAYWOOD],
@@ -69,7 +82,7 @@ export const SEA_TO_RIVER = [
       [49.22027, -123.00874],
       [49.22191, -123.00876],
       [49.222, -123.00898],
-      [49.22372, -123.00896],
+      MCKAY_MAYWOOD,
       [49.2246, -123.01085],
       [49.22515, -123.01206],
       [49.22536, -123.01251],

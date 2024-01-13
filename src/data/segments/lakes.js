@@ -2,6 +2,7 @@ import {
   CLIFF_BRUNETTE_FRASER,
   CLIFF_UNION,
   DEER_LAKE_CANADA_W,
+  KENSINGTON_SPROTT_E,
   KENSINGTON_SPROTT_W,
   LAKES_CVG_S,
   SPERLING_JOE_SAKIC_N,
@@ -133,7 +134,7 @@ export const LAKES = [
     type: "comfortable",
     positions: [
       KENSINGTON_SPROTT_W,
-      [49.24993, -122.96642],
+      KENSINGTON_SPROTT_E,
       [49.24993, -122.96466],
       [49.25211, -122.96465],
       SPERLING_JOE_SAKIC_N,
