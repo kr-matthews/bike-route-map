@@ -5,7 +5,7 @@ import { Search } from "./Search";
 import { isSubsequence, removeWhiteSpaces } from "../../utils/strings";
 import { DARK_GREEN, LIGHT_GREEN } from "../../utils/colours";
 
-// !!! allow filtering (by direction (only show east-west), by city, by quality (future), etc)?
+// !!! allow filtering (by direction (only show east-west), by city, by quality (future), etc?
 
 export default function Routes({ goBack }) {
   const [searchText, setSearchText] = useState("");

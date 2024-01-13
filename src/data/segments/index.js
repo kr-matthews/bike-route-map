@@ -21,6 +21,7 @@ import { CAMBIE } from "./cambie";
 import { CAMBIE_BRIDGE } from "./cambieBridge";
 import { CANADA_LINE } from "./canadaLine";
 import { CARDERO } from "./cardero";
+import { CARIBOO } from "./cariboo";
 import { CARRALL } from "./carrall";
 import { CASSIAR } from "./cassiar";
 import { CENTRAL_PARK_PERIMETER_TRAIL } from "./centralParkPerimeterTrail";
@@ -98,6 +99,7 @@ import { SECOND_NARROWS_BRIDGE } from "./secondNarrowsBridge";
 import { SIXTEENTH } from "./sixteenth";
 import { SIXTY_SEVENTH } from "./sixtySeventh";
 import { SMITHE } from "./smithe";
+import { SOUTHEAST } from "./southeast";
 import { SPIRIT_TRAIL } from "./spiritTrail";
 import { STANLEY_PARK_LOOP } from "./stanleyPark";
 import { SUNRISE } from "./sunrise";
@@ -143,6 +145,7 @@ export const SEGMENTS = [
   ...CAMBIE_BRIDGE,
   ...CANADA_LINE,
   ...CARDERO,
+  ...CARIBOO,
   ...CARRALL,
   ...CASSIAR,
   ...CENTRAL_PARK_PERIMETER_TRAIL,
@@ -220,6 +223,7 @@ export const SEGMENTS = [
   ...SIXTEENTH,
   ...SIXTY_SEVENTH,
   ...SMITHE,
+  ...SOUTHEAST,
   ...SPIRIT_TRAIL,
   ...STANLEY_PARK_LOOP,
   ...SUNRISE,

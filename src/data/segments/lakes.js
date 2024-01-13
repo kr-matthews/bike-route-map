@@ -5,6 +5,7 @@ import {
   KENSINGTON_SPROTT_E,
   KENSINGTON_SPROTT_W,
   LAKES_CVG_S,
+  MARY_12TH,
   SPERLING_JOE_SAKIC_N,
   SPERLING_LOUGHEED_NE,
   SPERLING_LOUGHEED_SE,
@@ -20,7 +21,7 @@ export const LAKES = [
     routeNames: [ROUTES.lakes.name],
     description: "southeast to midtown",
     positions: [
-      [49.21607, -122.93765], // MARY_12TH
+      MARY_12TH,
       [49.21697, -122.93885],
       [49.21793, -122.94012],
       [49.21806, -122.94017],

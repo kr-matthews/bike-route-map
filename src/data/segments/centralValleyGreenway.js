@@ -33,6 +33,7 @@ import {
   WOODLAND_GRANDVIEW,
   LAKES_CVG_S,
   KENSINGTON_CVG,
+  CARIBOO_CARIBOO_PL_E,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -670,7 +671,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
       [49.2506, -122.91411],
       [49.24962, -122.91414],
       [49.24947, -122.91421],
-      [49.2494, -122.91423],
+      CARIBOO_CARIBOO_PL_E,
       [49.24938, -122.91418],
       [49.24932, -122.91405],
       [49.24922, -122.91393],

@@ -3,7 +3,8 @@ import { VIDEOS } from "../videos";
 // !!! handle non-routes, allow them to be previewed sometimes?
 
 // Potential future additions
-// Burnaby: burris/oakland; southeast; victory; sfu; broadway; joe sakic; cariboo
+// Burnaby: burris/oakland; victory; broadway; joe sakic/vista cr
+// SFU
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
 // Richmond: no. 3; williams; river pkwy; minoru; francis (shell); ash; westminster hwy; no. 6 paths; lynas; no. 2 path; west-most n-s; dyke
 // YVR: ferguson; russ baker; sea island/bridgeport bridges; paths
@@ -211,6 +212,10 @@ export const ROUTES = {
   cardero: {
     name: "Cardero",
     legs: [{ distance: 1.4, videos: { northbound: VIDEOS.carderoNb } }],
+  },
+  cariboo: {
+    name: "Cariboo",
+    legs: [{ distanceMax: 2.2, distanceMin: 1.8, videos: {} }],
   },
   carrall: {
     name: "Carrall",
@@ -633,6 +638,10 @@ export const ROUTES = {
     legs: [
       { distance: 1.2, videos: { westbound: VIDEOS.cambieBridgeSmitheNb } },
     ],
+  },
+  southeast: {
+    name: "Southeast",
+    legs: [{ distance: 5.3, videos: {} }],
   },
   spiritTrail: {
     name: "Spirit Trail",

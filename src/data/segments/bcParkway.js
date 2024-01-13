@@ -22,6 +22,7 @@ import {
   NELSON_BC_PARKWAY_W,
   BONSOR_BC_PARKWAY,
   MCKAY_BC_PARKWAY,
+  STATION_HILL_SOUTHPOINT_E,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -519,7 +520,7 @@ export const BC_PARKWAY = [
       [49.21108, -122.95902],
       [49.21079, -122.95881],
       [49.21, -122.95825],
-      [49.20993, -122.9582],
+      STATION_HILL_SOUTHPOINT_E,
       [49.20983, -122.95815],
       [49.2098, -122.95815],
       [49.20952, -122.95798],

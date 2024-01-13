@@ -15,6 +15,7 @@ import {
   DUNBAR_39TH_W,
   EARLES_38TH,
   EARLES_VANNESS,
+  FOURTH_13TH,
   GARDEN_GROVE_DEER_LAKE,
   GLADSTONE_38TH,
   HEATHER_37TH,
@@ -416,7 +417,7 @@ export const MIDTOWN = [
       [49.22508, -122.93052],
       [49.22406, -122.92921],
       [49.22343, -122.92842],
-      [49.22281, -122.92762],
+      FOURTH_13TH,
     ],
   },
 ];
