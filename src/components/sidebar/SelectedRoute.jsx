@@ -4,7 +4,7 @@ import Leg from "./Leg";
 import { getRouteBounds } from "../../utils/map";
 
 export default function SelectedRoute({ mapRef }) {
-  const { selectedRoute, setSelected } = useContext(Selections);
+  const { selectedRoute, setSelected, setHighlighted } = useContext(Selections);
 
   return (
     <div
@@ -31,11 +31,18 @@ export default function SelectedRoute({ mapRef }) {
               cursor: "pointer",
             }}
             onClick={() => mapRef.fitBounds(getRouteBounds(selectedRoute.name))}
+            onMouseOver={() => setHighlighted(selectedRoute.name)}
+            onMouseOut={() => setHighlighted(null)}
           >
             Zoom to
           </button>
           <h2 style={{ textAlign: "center", marginBottom: "4px" }}>
-            {selectedRoute.name}
+            <span
+              onMouseOver={() => setHighlighted(selectedRoute.name)}
+              onMouseOut={() => setHighlighted(null)}
+            >
+              {selectedRoute.name}
+            </span>
           </h2>
           <button
             style={{
