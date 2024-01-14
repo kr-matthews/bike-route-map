@@ -145,7 +145,7 @@ export const YUKON = [
   },
   {
     routeNames: [ROUTES.yukon.name],
-    description: "7th to 1st",
+    description: "2nd to 1st",
     videos: [VIDEOS.yukonSb.id],
     positions: [WYLIE_2ND_N, WYLIE_1ST_S],
   },

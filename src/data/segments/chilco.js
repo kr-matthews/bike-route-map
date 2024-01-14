@@ -20,7 +20,6 @@ export const CHILCO = [
     routeNames: [ROUTES.chilco.name],
     description: "closed",
     isClosed: true,
-    videos: [VIDEOS.chilcoSb.id],
     positions: [CHILCO_SEAWALL, CHILCO_BEACH],
   },
   {

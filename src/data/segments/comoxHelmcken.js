@@ -5,7 +5,6 @@ import {
   CARDERO_COMOX,
   CHILCO_COMOX,
   HOMER_HELMCKEN,
-  HORNBY_HELMCKEN_E,
   HORNBY_HELMCKEN_SE,
   RICHARDS_HELMCKEN,
 } from "../intersections";
@@ -54,7 +53,8 @@ export const COMOX_HELMCKEN = [
     type: "shared",
     videos: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
     positions: [
-      HORNBY_HELMCKEN_E,
+      HORNBY_HELMCKEN_SE,
+      [49.27944, -123.12649],
       [49.27884, -123.1256],
       [49.27819, -123.12458],
       [49.27757, -123.12364],
