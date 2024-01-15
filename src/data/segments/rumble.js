@@ -1,4 +1,8 @@
-import { GILLEY_RUMBLE_NW, MCKAY_RUMBLE } from "../intersections";
+import {
+  BULLER_RUMBLE_N,
+  GILLEY_RUMBLE_NW,
+  MCKAY_RUMBLE,
+} from "../intersections";
 import { ROUTES } from "../routes";
 
 const ROYAL_OAK_RUMBLE_NW = [49.21494, -122.98862];
@@ -33,7 +37,7 @@ export const RUMBLE = [
     type: "mixed",
     positions: [
       MACPHERSON_RUMBLE_N,
-      [49.21488, -122.97753],
+      BULLER_RUMBLE_N,
       [49.21485, -122.97474],
       [49.2148, -122.97222],
       GILLEY_RUMBLE_NW,

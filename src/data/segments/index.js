@@ -110,6 +110,7 @@ import { TWENTY_NINTH } from "./twentyNinth";
 import { TWENTY_SECOND } from "./twentySecond";
 import { UNIVERSITY } from "./university";
 import { VALLEY } from "./valley";
+import { VICTORY } from "./victory";
 import { WALES_DUCHESS } from "./walesDuchess";
 import { WATERFRONT } from "./waterfront";
 import { WESBROOK } from "./wesbrook";
@@ -119,8 +120,6 @@ import { WINDERMERE } from "./windermere";
 import { WINDSOR } from "./windsor";
 import { YORK } from "./york";
 import { YUKON } from "./yukon";
-
-// !!! tests for correct number of start/end points per video
 
 // convention: bi-directional paths are stored northbound, eastbound, or clockwise
 export const SEGMENTS = [
@@ -236,6 +235,7 @@ export const SEGMENTS = [
   ...TWENTY_SECOND,
   ...UNIVERSITY,
   ...VALLEY,
+  ...VICTORY,
   ...WALES_DUCHESS,
   ...WATERFRONT,
   ...WESBROOK,
