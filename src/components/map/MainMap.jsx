@@ -9,7 +9,9 @@ import PolylineCreator from "./PolylineCreator";
 import "./map.css";
 
 export default function MainMap({ setMapRef, fullWidth = false }) {
-  const { setSelected } = useContext(Selections);
+  const { setSelected, isVisible } = useContext(Selections);
+
+  const visibleSegments = SEGMENTS.filter((segment) => isVisible(segment));
 
   useEffect(
     function closeOnEsc() {
@@ -44,7 +46,7 @@ export default function MainMap({ setMapRef, fullWidth = false }) {
 
         <PanesAndTiles />
 
-        {SEGMENTS.map((segment) => (
+        {visibleSegments.map((segment) => (
           <Segment
             key={segment.routeNames?.join(",") + "|" + segment.description}
             {...segment}
