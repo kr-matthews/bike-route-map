@@ -46,11 +46,7 @@ export default function MainMap({ setMapRef, fullWidth = false }) {
 
         {SEGMENTS.map((segment) => (
           <Segment
-            key={
-              segment.routeNames?.join() +
-              segment.legs?.join() +
-              segment.description
-            }
+            key={segment.routeNames?.join(",") + "|" + segment.description}
             {...segment}
           />
         ))}
