@@ -69,8 +69,6 @@ export function createPathOptions(
 
   const nonUndergroundWeight = isSelected ? WEIGHT_WIDE : WEIGHT_NARROW;
 
-  if (hideUnlessVideo && !hasActiveVideo) return { weight: 0, opacity: 0 };
-
   return {
     color: colour,
     weight: elevation <= -1 ? WEIGHT_UNDERGROUND : nonUndergroundWeight,

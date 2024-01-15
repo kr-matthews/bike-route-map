@@ -69,8 +69,10 @@ export default function useSelections() {
     settingsReducer,
     defaultSettings
   );
-  // !!! move hidden video logic here
   const isVisible = (segment) => {
+    if (segment.hideUnlessVideo && !segment.videos?.includes(video?.id)) {
+      return false;
+    }
     if (comfortableTypes.includes(segment.type)) {
       return settings.showComfortable;
     }
