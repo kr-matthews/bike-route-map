@@ -155,32 +155,31 @@ export default function Legend({ goBack }) {
         Menu
       </button>
 
-      <p>
-        See the dropdown and map below for an illustration of the types of
-        routes shown. Note that arrows for one-way routes only appear if you
-        zoom in sufficiently.
-      </p>
-
-      <p style={{ width: mapWidth, marginLeft: "auto", marginRight: "auto" }}>
-        <span>Select type: </span>
-        <select
-          value={selectedTypeIndex}
-          onChange={(e) => setSelectedTypeIndex(parseInt(e.target.value) || 0)}
-        >
-          {segmentTypes.map(({ name, colour }, index) => (
-            <option
-              key={name}
-              value={index}
-              style={{ color: "White", backgroundColor: colour }}
-            >
-              {name}
-            </option>
-          ))}
-        </select>
-        <br />
-        <br />
-        <span>{segmentTypes[selectedTypeIndex].description}</span>
-      </p>
+      {segmentTypes.map(({ name, colour }, index) => (
+        <div key={name} style={{ padding: "5px" }}>
+          <input
+            type="radio"
+            id="key"
+            name="name"
+            style={{ cursor: "pointer" }}
+            checked={selectedTypeIndex === index}
+            onChange={() => setSelectedTypeIndex(index)}
+          />
+          <label
+            htmlFor="comfortable"
+            style={{
+              cursor: "pointer",
+              color: WHITE,
+              backgroundColor: colour,
+              padding: "4px",
+            }}
+            onClick={() => setSelectedTypeIndex(index)}
+          >
+            {name}
+          </label>
+        </div>
+      ))}
+      <br />
       <div
         style={{
           marginLeft: "auto",
@@ -203,6 +202,9 @@ export default function Legend({ goBack }) {
           <Segment {...otherSegment} />
         </MapContainer>
       </div>
+      <p style={{ width: mapWidth, marginLeft: "auto", marginRight: "auto" }}>
+        <span>{segmentTypes[selectedTypeIndex].description}</span>
+      </p>
     </div>
   );
 }

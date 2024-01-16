@@ -33,15 +33,15 @@ const defaultSettings = {
 };
 
 export const availableTypeSettings = [
-  { key: "showComfortable", name: "Comfortable", color: COLOUR_COMFORTABLE },
-  { key: "showPainted", name: "Painted Lanes", color: COLOUR_PAINTED_ONE_WAY },
-  { key: "showShared", name: "Shared Lanes", color: COLOUR_SHARED },
+  { key: "showComfortable", name: "Comfortable", colour: COLOUR_COMFORTABLE },
+  { key: "showPainted", name: "Painted Lanes", colour: COLOUR_PAINTED_ONE_WAY },
+  { key: "showShared", name: "Shared Lanes", colour: COLOUR_SHARED },
   {
     key: "showShoulders",
     name: "Highway Shoulders",
-    color: COLOUR_SHOULDER_ONE_WAY,
+    colour: COLOUR_SHOULDER_ONE_WAY,
   },
-  { key: "showOther", name: "Narrow Sidewalks", color: COLOUR_OTHER },
+  { key: "showOther", name: "Other", colour: COLOUR_OTHER },
 ];
 
 export default function useSelections() {

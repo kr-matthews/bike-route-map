@@ -37,7 +37,7 @@ export default function Settings({ goBack }) {
         Menu
       </button>
 
-      {availableTypeSettings.map(({ key, name, color }) => (
+      {availableTypeSettings.map(({ key, name, colour }) => (
         <div key={key} style={{ padding: "5px" }}>
           <input
             type="checkbox"
@@ -52,7 +52,7 @@ export default function Settings({ goBack }) {
             style={{
               cursor: "pointer",
               color: WHITE,
-              backgroundColor: color,
+              backgroundColor: colour,
               padding: "4px",
             }}
             onClick={() => dispatchSettings({ type: "toggle", key })}
