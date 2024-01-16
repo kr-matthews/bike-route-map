@@ -482,7 +482,6 @@ export const SEASIDE_BYPASS = [
     type: "painted",
     oneWay: "required",
     elevation: -1,
-    hideArrows: true,
     videos: [VIDEOS.seasideBypassExpoWb.id],
     positions: [
       BC_PLACE_TUNNEL_START,

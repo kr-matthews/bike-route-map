@@ -1,20 +1,18 @@
-import { useState } from "react";
+import { useReducer } from "react";
 import { MapContainer } from "react-leaflet";
 import Segment from "../map/Segment";
 import PanesAndTiles from "../map/PanesAndTiles";
+import { ZOOMED_IN_A_BIT } from "../../utils/constants";
+import { BLACK, DARK_BLUE, LIGHT_BLUE, WHITE } from "../../utils/colours";
 import {
-  COLOUR_CLOSED,
-  COLOUR_COMFORTABLE,
-  COLOUR_COMFORTABLE_ONE_WAY,
-  COLOUR_ELEVATED_BORDER,
-  COLOUR_OTHER,
-  COLOUR_PAINTED_ONE_WAY,
-  COLOUR_SHARED,
-  COLOUR_SHOULDER_ONE_WAY,
-  COLOUR_UNDERGROUND_BORDER,
-  ZOOMED_IN_A_BIT,
-} from "../../utils/constants";
-import { DARK_BLUE, LIGHT_BLUE, WHITE } from "../../utils/colours";
+  DIRECTION_TYPES,
+  ELEVATION_TYPES,
+  TYPE_TYPES,
+} from "../../utils/segmentTypes";
+
+// !!! disallow combinations
+// !!! de-duplicate, clean up
+// !!! re-use for settings
 
 const intersection = [49.26208, -123.10495];
 
@@ -30,7 +28,7 @@ const segment = {
   ],
 };
 const otherSegment = {
-  routeNames: ["Another Route"],
+  routeNames: ["Route 2", "Route 3"],
   description: "to show comparison",
   positions: [
     [49.26027, -123.10503],
@@ -41,7 +39,7 @@ const otherSegment = {
 };
 
 const mapWidth = "400px";
-const mapHeight = "150px";
+const mapHeight = "200px";
 
 // const lats = segment.positions.map((x) => x[0]);
 // const longs = segment.positions.map((x) => x[1]);
@@ -53,84 +51,62 @@ const mapHeight = "150px";
 const mapCenter = intersection;
 const mapZoom = ZOOMED_IN_A_BIT;
 
-const segmentTypes = [
-  {
-    name: "Comfortable",
-    colour: COLOUR_COMFORTABLE,
-    description:
-      "Local street, dedicated/protected lane/path, or mixed with pedestrians.",
-    props: {},
+// reducer
+
+const reducer = (state, action) => {
+  let newState = {
+    ...state,
+    key: state.key + 1,
+    segmentProps: { ...state.segmentProps, ...action.data.props },
+  };
+  switch (action.type) {
+    case "type":
+      newState.typeDescription = action.data.description;
+      break;
+
+    case "direction":
+      newState.directionDescription = action.data.description;
+      break;
+
+    case "elevation":
+      newState.elevationDescription = action.data.description;
+      break;
+
+    default:
+      return state;
+  }
+  return newState;
+};
+
+const initialState = {
+  key: 1,
+  segmentProps: {
+    ...TYPE_TYPES[0].props,
+    ...DIRECTION_TYPES[0].props,
+    ...ELEVATION_TYPES[1].props,
   },
-  {
-    name: "Painted Lane",
-    colour: COLOUR_PAINTED_ONE_WAY,
-    description:
-      "Painted lane beside high-volume and/or high-speed traffic without significant physical protection. May or may not be directly beside parked cars.",
-    props: { type: "painted", oneWay: "required" },
-  },
-  {
-    name: "Shared Lane",
-    colour: COLOUR_SHARED,
-    description: "Shared lane with high-volume and/or high-speed traffic.",
-    props: { type: "shared" },
-  },
-  {
-    name: "Highway Shoulder",
-    colour: COLOUR_SHOULDER_ONE_WAY,
-    description: "Unprotected shoulder beside very high-speed traffic.",
-    props: { type: "shoulder", oneWay: "required" },
-  },
-  {
-    name: "Other",
-    colour: COLOUR_OTHER,
-    description:
-      "Separated from traffic but poor quality, such as a narrow sidewalk shared with pedestrians.",
-    props: { type: "other" },
-  },
-  {
-    name: "Elevated",
-    colour: COLOUR_ELEVATED_BORDER,
-    description:
-      "Bridge or other elevated surface. You can't directly connect to/from the roads/paths below.",
-    props: { elevation: 1 },
-  },
-  {
-    name: "Underground/Covered",
-    colour: COLOUR_UNDERGROUND_BORDER,
-    description:
-      "A tunnel or other covered area. You can't directly connect to/from the roads/paths above.",
-    props: { elevation: -1 },
-  },
-  {
-    name: "One-way",
-    colour: COLOUR_COMFORTABLE_ONE_WAY,
-    description:
-      "Only one direction of travel is allowed. A lighter colour. Directional arrows only appear when sufficiently zoomed in.",
-    props: { oneWay: "required" },
-  },
-  {
-    name: "One-way Recommended",
-    colour: COLOUR_COMFORTABLE,
-    description:
-      "Only applies to comfortable. Both directions of travel are allowed, but typically only one is useful. Directional arrows only appear when sufficiently zoomed in.",
-    props: { oneWay: "recommended" },
-  },
-  {
-    name: "Closed",
-    colour: COLOUR_CLOSED,
-    description: "For long-term construction or other reasons.",
-    props: { isClosed: true },
-  },
-];
+  typeDescription: TYPE_TYPES[0].description,
+  directionDescription: DIRECTION_TYPES[0].description,
+  elevationDescription: ELEVATION_TYPES[1].description,
+};
 
 export default function Legend({ goBack }) {
-  const [selectedTypeIndex, setSelectedTypeIndex] = useState(0);
+  const [
+    {
+      key,
+      segmentProps,
+      typeDescription,
+      directionDescription,
+      elevationDescription,
+    },
+    dispatch,
+  ] = useReducer(reducer, initialState);
 
   return (
     <div
       style={{
-        paddingLeft: "2em",
-        paddingRight: "2em",
+        paddingLeft: "0.5em",
+        paddingRight: "0.5em",
         flex: "1",
         overflow: "auto",
         display: "flex",
@@ -155,30 +131,105 @@ export default function Legend({ goBack }) {
         Menu
       </button>
 
-      {segmentTypes.map(({ name, colour }, index) => (
-        <div key={name} style={{ padding: "5px" }}>
-          <input
-            type="radio"
-            id="key"
-            name="name"
-            style={{ cursor: "pointer" }}
-            checked={selectedTypeIndex === index}
-            onChange={() => setSelectedTypeIndex(index)}
-          />
-          <label
-            htmlFor="comfortable"
-            style={{
-              cursor: "pointer",
-              color: WHITE,
-              backgroundColor: colour,
-              padding: "4px",
-            }}
-            onClick={() => setSelectedTypeIndex(index)}
-          >
-            {name}
-          </label>
-        </div>
-      ))}
+      <table>
+        <tbody>
+          <tr>
+            <td style={{ verticalAlign: "top" }}>
+              {TYPE_TYPES.map(({ name, colour }, index) => {
+                const data = TYPE_TYPES[index];
+                const action = () => dispatch({ type: "type", data });
+                return (
+                  <div key={name} style={{ padding: "5px" }}>
+                    <input
+                      type="radio"
+                      id="key"
+                      name="type"
+                      style={{ cursor: "pointer" }}
+                      checked={segmentProps.type === data.props.type}
+                      onChange={action}
+                    />
+                    <label
+                      htmlFor="comfortable"
+                      style={{
+                        cursor: "pointer",
+                        color: WHITE,
+                        backgroundColor: colour,
+                        padding: "4px",
+                      }}
+                      onClick={action}
+                    >
+                      {name}
+                    </label>
+                  </div>
+                );
+              })}
+            </td>
+
+            <td style={{ verticalAlign: "top" }}>
+              {DIRECTION_TYPES.map(({ name, colour }, index) => {
+                const data = DIRECTION_TYPES[index];
+                const action = () => dispatch({ type: "direction", data });
+                return (
+                  <div key={name} style={{ padding: "5px" }}>
+                    <input
+                      type="radio"
+                      id="key"
+                      name="direction"
+                      style={{ cursor: "pointer" }}
+                      checked={segmentProps.oneWay === data.props.oneWay}
+                      onChange={action}
+                    />
+                    <label
+                      htmlFor="comfortable"
+                      style={{
+                        cursor: "pointer",
+                        color: WHITE,
+                        backgroundColor: colour,
+                        padding: "4px",
+                      }}
+                      onClick={action}
+                    >
+                      {name}
+                    </label>
+                  </div>
+                );
+              })}
+            </td>
+
+            <td style={{ verticalAlign: "top" }}>
+              {ELEVATION_TYPES.map(({ name, colour }, index) => {
+                const data = ELEVATION_TYPES[index];
+                const action = () => dispatch({ type: "elevation", data });
+                return (
+                  <div key={name} style={{ padding: "5px" }}>
+                    <input
+                      type="radio"
+                      id="key"
+                      name="elevation"
+                      style={{ cursor: "pointer" }}
+                      checked={segmentProps.elevation === data.props.elevation}
+                      onChange={action}
+                    />
+                    <label
+                      htmlFor="comfortable"
+                      style={{
+                        cursor: "pointer",
+                        color: colour ? WHITE : BLACK,
+                        backgroundColor: colour,
+                        padding: "4px",
+                      }}
+                      onClick={action}
+                    >
+                      {name}
+                    </label>
+                  </div>
+                );
+              })}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
       <br />
       <div
         style={{
@@ -189,7 +240,8 @@ export default function Legend({ goBack }) {
         }}
       >
         <MapContainer
-          key={selectedTypeIndex}
+          // key required to trigger new map to remove old arrows
+          key={key}
           style={{ width: mapWidth, height: mapHeight }}
           // bounds={mapBounds}
           center={mapCenter}
@@ -198,13 +250,26 @@ export default function Legend({ goBack }) {
         >
           <PanesAndTiles />
 
-          <Segment {...segment} {...segmentTypes[selectedTypeIndex].props} />
+          <Segment {...segment} {...segmentProps} />
           <Segment {...otherSegment} />
         </MapContainer>
       </div>
-      <p style={{ width: mapWidth, marginLeft: "auto", marginRight: "auto" }}>
-        <span>{segmentTypes[selectedTypeIndex].description}</span>
-      </p>
+
+      {typeDescription && (
+        <p style={{ width: mapWidth, marginLeft: "auto", marginRight: "auto" }}>
+          {typeDescription}
+        </p>
+      )}
+      {directionDescription && (
+        <p style={{ width: mapWidth, marginLeft: "auto", marginRight: "auto" }}>
+          {directionDescription}
+        </p>
+      )}
+      {elevationDescription && (
+        <p style={{ width: mapWidth, marginLeft: "auto", marginRight: "auto" }}>
+          {elevationDescription}
+        </p>
+      )}
     </div>
   );
 }
