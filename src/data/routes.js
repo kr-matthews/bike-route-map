@@ -3,7 +3,7 @@ import { VIDEOS } from "./videos";
 // !!! handle non-routes, allow them to be previewed sometimes?
 
 // Potential future additions
-// Burnaby: burris/oakland; joe sakic/vista cr/byrne creek secondary
+// Burnaby: joe sakic/vista cr/byrne creek secondary
 // SFU
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
 // Richmond: no. 3; williams; river pkwy; minoru; francis (shell); ash; westminster hwy; no. 6 paths; lynas; no. 2 path; west-most n-s; dyke
@@ -521,6 +521,11 @@ export const ROUTES = {
   oakStreetBridge: {
     name: "Oak Street Bridge",
     legs: [{ distance: 1.9, videos: {} }],
+  },
+  oaklandBurris: {
+    name: "Oakland St/Burris St",
+    shortName: "Oakland St",
+    legs: [{ distance: 2.5, videos: {} }],
   },
   offBroadway: {
     name: "Off Broadway",

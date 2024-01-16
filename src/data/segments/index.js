@@ -77,6 +77,7 @@ import { NELSON_AVE } from "./nelsonAve";
 import { NICOLA } from "./nicola";
 import { NORTH_SOUTH } from "./northSouth";
 import { OAK_STREET_BRIDGE } from "./oakStBridge";
+import { OAKLAND_BURRIS } from "./oaklandBurris";
 import { OFF_BROADWAY } from "./offBroadway";
 import { ONTARIO } from "./ontario";
 import { PANDORA } from "./pandora";
@@ -202,6 +203,7 @@ export const SEGMENTS = [
   ...NICOLA,
   ...NORTH_SOUTH,
   ...OAK_STREET_BRIDGE,
+  ...OAKLAND_BURRIS,
   ...OFF_BROADWAY,
   ...ONTARIO,
   ...PANDORA,

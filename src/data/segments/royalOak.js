@@ -1,4 +1,8 @@
-import { ROYAL_OAK_DEER_LAKE_NW, ROYAL_OAK_DOVER_SW } from "../intersections";
+import {
+  ROYAL_OAK_DEER_LAKE_NW,
+  ROYAL_OAK_DOVER_NW,
+  ROYAL_OAK_DOVER_SW,
+} from "../intersections";
 import { ROUTES } from "../routes";
 
 const ROYAL_OAK_SANDERS_NW = [49.22801, -122.9891];
@@ -35,7 +39,7 @@ export const ROYAL_OAK = [
       [49.22912, -122.98913],
       [49.22975, -122.98915],
       ROYAL_OAK_DOVER_SW,
-      [49.23, -122.98915],
+      ROYAL_OAK_DOVER_NW,
       [49.23006, -122.98913],
       [49.23026, -122.98909],
       [49.23039, -122.98903],
