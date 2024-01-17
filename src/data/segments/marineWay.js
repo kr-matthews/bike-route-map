@@ -3,7 +3,7 @@ import {
   BYRNE_CREEK_MARINE_S,
   KINROSS_KENT,
   NORTH_FRASER_MARINE_SE,
-  QUEENSBOROUGH_POST_RAMP,
+  QUEENSBOROUGH_STEWARDSON_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -371,7 +371,7 @@ export const MARINE_WAY = [
       STEWARDSON_MARINE,
       [49.19752, -122.95068],
       [49.19762, -122.95031],
-      QUEENSBOROUGH_POST_RAMP,
+      QUEENSBOROUGH_STEWARDSON_W,
     ],
   },
 ];

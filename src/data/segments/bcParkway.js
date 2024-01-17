@@ -1,7 +1,17 @@
 import {
+  ANTRIM_BC_PARKWAY,
+  BC_PARKWAY_7TH,
+  BC_PARKWAY_14TH,
   BC_PARKWAY_BYRNE_CREEK,
   BC_PARKWAY_CVG_SPLIT,
+  BC_PARKWAY_EDMONDS_GOOD,
+  BC_PARKWAY_EDMONDS_BAD,
+  BC_PARKWAY_LONDON,
+  BC_PARKWAY_MISSION,
   BC_PARKWAY_SOUTHRIDGE_TRAIL,
+  BONSOR_BC_PARKWAY,
+  BULLER_BERESFORD_W,
+  BULLER_PRENTER,
   CENTRAL_PARK_BC_PARKWAY_WEST_SPLIT,
   CENTRAL_PARK_BC_PARKWAY_NE,
   CENTRAL_PARK_NW,
@@ -10,25 +20,17 @@ import {
   GLADSTONE_BC_PARKWAY,
   LAKEWOOD_GRANDVIEW,
   LAKEWOOD_JOHN_HENDRY_PARK,
+  MCKAY_BC_PARKWAY,
+  NELSON_BC_PARKWAY_W,
   PATTERSON_BC_PARKWAY,
+  PRENTER_RUMBLE_ISH,
   QUAYSIDE_JOIN,
-  QUEENSBOROUGH_POST_RAMP,
+  QUEENSBOROUGH_STEWARDSON_E,
+  QUEENSBOROUGH_STEWARDSON_W,
   SLOCAN_29TH,
   SLOCAN_BC_PARKWAY,
-  TODD_VANNESS,
-  BC_PARKWAY_LONDON,
-  BULLER_BERESFORD_W,
-  PRENTER_RUMBLE_ISH,
-  NELSON_BC_PARKWAY_W,
-  BONSOR_BC_PARKWAY,
-  MCKAY_BC_PARKWAY,
   STATION_HILL_SOUTHPOINT_E,
-  BULLER_PRENTER,
-  ANTRIM_BC_PARKWAY,
-  BC_PARKWAY_14TH,
-  BC_PARKWAY_EDMONDS_GOOD,
-  BC_PARKWAY_EDMONDS_BAD,
-  BC_PARKWAY_MISSION,
+  TODD_VANNESS,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -50,10 +52,6 @@ const JOYCE_BC_PARKWAY_SPLIT_WEST = [49.23789, -123.03033];
 const CENTRAL_PARK_BC_PARKWAY_EAST_SPLIT = [49.23126, -123.01657];
 const SOUTHRIDGE_OVERPASS_N = [49.20483, -122.95879];
 const SOUTHRIDGE_OVERPASS_S = [49.20443, -122.95896];
-const QUEENSBOROUGH_LOOPS_ELEVATION_START = [49.19922, -122.9508];
-const QUEENSBOROUGH_LOOPS_ELEVATION_END = [49.19867, -122.95059];
-const QUEENSBOROUGH_ELEVATION_START = [49.19839, -122.94945];
-const QUEENSBOROUGH_ELEVATION_END = [49.19762, -122.95014];
 const UNDER_QUEENSBOROUGH_BRIDGE = [49.19785, -122.94901];
 const THIRD_STEWARDSON = [49.20227, -122.92662];
 const THIRD_ELEVATION_START = [49.2021, -122.92687];
@@ -627,55 +625,8 @@ export const BC_PARKWAY = [
       [49.19951, -122.95208],
       [49.19956, -122.95171],
       [49.19961, -122.95143],
-      [49.19922, -122.95097],
-      QUEENSBOROUGH_LOOPS_ELEVATION_START,
+      BC_PARKWAY_7TH,
     ],
-  },
-  {
-    routeNames: [ROUTES.bcParkway.name],
-    description: "queensborough loops",
-    elevation: 1,
-    videos: [VIDEOS.bcParkwayNewWestminsterWb.id],
-    positions: [
-      QUEENSBOROUGH_LOOPS_ELEVATION_START,
-      QUEENSBOROUGH_LOOPS_ELEVATION_END,
-    ],
-  },
-  {
-    routeNames: [ROUTES.bcParkway.name],
-    description: "queensborough dog area",
-    elevation: 0.5,
-    videos: [VIDEOS.bcParkwayNewWestminsterWb.id],
-    positions: [
-      QUEENSBOROUGH_LOOPS_ELEVATION_END,
-      [49.19864, -122.95051],
-      [49.19863, -122.95043],
-      [49.19864, -122.95037],
-      [49.19867, -122.95022],
-      [49.19868, -122.95012],
-      [49.19868, -122.95007],
-      [49.19859, -122.94974],
-      [49.19854, -122.94965],
-      QUEENSBOROUGH_ELEVATION_START,
-    ],
-  },
-  {
-    routeNames: [ROUTES.bcParkway.name],
-    description: "queensborough bridge sidewalk",
-    elevation: 1,
-    videos: [VIDEOS.bcParkwayNewWestminsterWb.id],
-    positions: [
-      QUEENSBOROUGH_ELEVATION_START,
-      [49.19781, -122.94883],
-      QUEENSBOROUGH_ELEVATION_END,
-    ],
-  },
-  {
-    routeNames: [ROUTES.bcParkway.name],
-    description: "queensborough bridge post-sidewalk",
-    elevation: 0.5,
-    videos: [VIDEOS.bcParkwayNewWestminsterWb.id],
-    positions: [QUEENSBOROUGH_ELEVATION_END, QUEENSBOROUGH_POST_RAMP],
   },
   {
     routeNames: [ROUTES.bcParkway.name],
@@ -683,7 +634,7 @@ export const BC_PARKWAY = [
     videos: [VIDEOS.bcParkwayNewWestminsterWb.id, VIDEOS.marineWayEb.id],
     videosEndAtEnd: [VIDEOS.marineWayEb.id],
     positions: [
-      QUEENSBOROUGH_POST_RAMP,
+      QUEENSBOROUGH_STEWARDSON_W,
       [49.19773, -122.94982],
       [49.19779, -122.9494],
       UNDER_QUEENSBOROUGH_BRIDGE,
@@ -700,7 +651,7 @@ export const BC_PARKWAY = [
       [49.19807, -122.94815],
       [49.1982, -122.94789],
       [49.19831, -122.94776],
-      [49.1985, -122.94759],
+      QUEENSBOROUGH_STEWARDSON_E,
       [49.19886, -122.94732],
       [49.19906, -122.94713],
       [49.19918, -122.947],

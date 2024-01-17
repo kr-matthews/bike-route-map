@@ -86,6 +86,7 @@ import { PORT_MANN_BRIDGE } from "./portMannBridge";
 import { PORTSIDE } from "./portside";
 import { POWELL } from "./powell";
 import { PRINCE_EDWARD } from "./princeEdward";
+import { QUEENSBOROUGH_BRIDGE } from "./queensboroughBridge";
 import { RAILWAY } from "./railway";
 import { RAILWAY_GREENWAY } from "./railwayGreenway";
 import { RICHARDS } from "./richards";
@@ -212,6 +213,7 @@ export const SEGMENTS = [
   ...PORTSIDE,
   ...POWELL,
   ...PRINCE_EDWARD,
+  ...QUEENSBOROUGH_BRIDGE,
   ...RAILWAY,
   ...RAILWAY_GREENWAY,
   ...RICHARDS,

@@ -8,7 +8,7 @@ import { VIDEOS } from "./videos";
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
 // Richmond: no. 3; williams; river pkwy; minoru; francis (shell); ash; westminster hwy; no. 6 paths; lynas; no. 2 path; west-most n-s; dyke
 // YVR: ferguson; russ baker; sea island/bridgeport bridges; paths
-// New Westminster: queensborough bridge, london, 7th, 5th, carnarvon
+// New Westminster: london, crosstown, 5th, carnarvon
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
 // West Vancouver: marine dr; mathers+; old train; hwy; keith;
 // Surrey: scott rd; alex fraser; timbers; fraser hwy;
@@ -558,6 +558,11 @@ export const ROUTES = {
   princeEdward: {
     name: "Prince Edward",
     legs: [{ distance: 4.6, videos: { northbound: VIDEOS.princeEdwardNb } }],
+  },
+  queensboroughBridge: {
+    name: "Queensborough Bridge",
+    shortName: "Queensborough B.",
+    legs: [{ distance: 1.1, videos: {} }],
   },
   railwayGreenway: {
     name: "Railway Greenway",
