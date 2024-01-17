@@ -1,4 +1,5 @@
 import {
+  BC_PARKWAY_14TH,
   CARIBOO_ARMSTRONG_E,
   CASCADE_ARMSTRONG,
   FOURTH_13TH,
@@ -12,7 +13,94 @@ const CUMBERLAND_ARMSTRONG = [49.22973, -122.91514];
 const CARIBOO_ARMSTRONG_W_SPLIT = [49.23536, -122.90469];
 const FIFTEENTH_13TH_W = [49.21325, -122.94556];
 
+const EIGHTEENTH_STRIDE_W = [49.21231, -122.95355];
+const OVERPASS_14TH_W = [49.20913, -122.95711];
+const OVERPASS_14TH_E = [49.20896, -122.95666];
+const OVERPASS_GRIFFITHS_W = [49.20858, -122.95376];
+const OVERPASS_GRIFFITHS_E = [49.20912, -122.95276];
+
 export const SOUTHEAST = [
+  {
+    description: "byrne creek secondary: from bc parkway",
+    type: "mixed",
+    elevation: 0.5,
+    positions: [
+      BC_PARKWAY_14TH,
+      [49.20913, -122.9575],
+      [49.20914, -122.95739],
+      [49.20914, -122.95718],
+      OVERPASS_14TH_W,
+    ],
+  },
+  {
+    description: "overpass near 14th",
+    type: "mixed",
+    elevation: 1,
+    positions: [OVERPASS_14TH_W, OVERPASS_14TH_E],
+  },
+  {
+    description: "14th to griffiths",
+    type: "mixed",
+    elevation: 0.5,
+    positions: [
+      OVERPASS_14TH_E,
+      [49.20888, -122.95646],
+      [49.20881, -122.95624],
+      [49.20873, -122.95592],
+      [49.20868, -122.95574],
+      [49.20839, -122.95518],
+      [49.20835, -122.95498],
+      [49.20832, -122.95477],
+      [49.20832, -122.95454],
+      [49.20834, -122.95433],
+      [49.20839, -122.95412],
+      [49.20845, -122.95394],
+      OVERPASS_GRIFFITHS_W,
+    ],
+  },
+  {
+    description: "griffiths overpass",
+    type: "mixed",
+    elevation: 1,
+    positions: [
+      OVERPASS_GRIFFITHS_W,
+      [49.20871, -122.95358],
+      [49.20887, -122.95341],
+      [49.20891, -122.95336],
+      [49.20893, -122.9533],
+      [49.20899, -122.95298],
+      [49.20901, -122.9529],
+      [49.20904, -122.95285],
+      OVERPASS_GRIFFITHS_E,
+    ],
+  },
+  {
+    description: "griffiths to stride",
+    type: "mixed",
+    elevation: 0.5,
+    positions: [
+      OVERPASS_GRIFFITHS_E,
+      [49.20915, -122.95269],
+      [49.20937, -122.95257],
+      [49.20944, -122.95255],
+      [49.20972, -122.9525],
+      [49.20992, -122.95232],
+      [49.21016, -122.95206],
+      [49.21032, -122.95188],
+      [49.21059, -122.95167],
+      [49.21065, -122.95164],
+      [49.21077, -122.95168],
+      [49.21083, -122.95174],
+      [49.21135, -122.95239],
+      [49.21147, -122.95256],
+      [49.2116, -122.95242],
+      [49.21193, -122.95285],
+      [49.212, -122.95312],
+      [49.21226, -122.95348],
+      EIGHTEENTH_STRIDE_W,
+    ],
+  },
+
   {
     description: "15th nb",
     type: "combined",
@@ -59,7 +147,7 @@ export const SOUTHEAST = [
       [49.21129, -122.9554],
       [49.2115, -122.95504],
       [49.21166, -122.95476],
-      [49.21231, -122.95355],
+      EIGHTEENTH_STRIDE_W,
       [49.21327, -122.95177],
       [49.21419, -122.95006],
       [49.21524, -122.94812],

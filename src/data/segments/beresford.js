@@ -1,12 +1,32 @@
-import { BULLER_BERESFORD_W, PRENTER_RUMBLE_ISH } from "../intersections";
+import {
+  BC_PARKWAY_EDMONDS_BAD,
+  BC_PARKWAY_EDMONDS_GOOD,
+  BULLER_BERESFORD_W,
+  PRENTER_RUMBLE_ISH,
+} from "../intersections";
 import { ROUTES } from "../routes";
 
 const TO_BC_PARKWAY = [49.21701, -122.96235];
 const SALISBURY_BERESFORD_SE = [49.21686, -122.95743];
+const EDMONDS_BAD_PATH_E = [49.21302, -122.95976];
 
 export const BERESFORD = [
   {
-    description: "connection to edmonds",
+    description: "edmonds to bc parkway bad",
+    type: "other",
+    positions: [
+      BC_PARKWAY_EDMONDS_BAD,
+      [49.21236, -122.9603],
+      [49.21245, -122.96027],
+      [49.21256, -122.96016],
+      [49.21275, -122.96008],
+      [49.21294, -122.96001],
+      [49.21297, -122.95991],
+      EDMONDS_BAD_PATH_E,
+    ],
+  },
+  {
+    description: "connection to bc parkway via edmonds",
     type: "mixed",
     positions: [
       SALISBURY_BERESFORD_SE,
@@ -30,6 +50,21 @@ export const BERESFORD = [
       [49.21299, -122.95812],
       [49.21297, -122.95818],
       [49.21259, -122.95887],
+      [49.21252, -122.9589],
+      [49.21246, -122.95898],
+      [49.21252, -122.9592],
+      [49.21285, -122.95946],
+      [49.2129, -122.95955],
+      [49.21302, -122.9597],
+      EDMONDS_BAD_PATH_E,
+      [49.21304, -122.95986],
+      [49.21308, -122.95992],
+      [49.21311, -122.96],
+      [49.21314, -122.96003],
+      [49.21319, -122.96013],
+      [49.21348, -122.96036],
+      [49.21358, -122.96036],
+      BC_PARKWAY_EDMONDS_GOOD,
     ],
   },
   {
