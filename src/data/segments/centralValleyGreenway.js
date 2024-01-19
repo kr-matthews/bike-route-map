@@ -3,8 +3,10 @@ import {
   BRUNETTE_FRASER_CVG_NE,
   BRUNETTE_FRASER_CVG_SE,
   BRUNETTE_FRASER_CVG_SW,
+  CARIBOO_CARIBOO_PL_E,
   CARIBOO_GOVERNMENT,
   COLUMBIA_CUMBERLAND_SE,
+  COLUMBIA_SHERBROOKE_W,
   EASTBROOK_STILL_CREEK,
   GILMORE_CVG,
   GILMORE_STILL_CREEK,
@@ -14,6 +16,8 @@ import {
   GLEN_6TH_SE,
   GRANDVIEW_8TH_N,
   GRANDVIEW_8TH_S,
+  KENSINGTON_CVG,
+  LAKES_CVG_S,
   LAKEWOOD_GRANDVIEW,
   MAIN_1ST_E,
   ONTARIO_1ST_NE,
@@ -31,9 +35,6 @@ import {
   SPERLING_WINSTON,
   VICTORIA_BROADWAY_SE,
   WOODLAND_GRANDVIEW,
-  LAKES_CVG_S,
-  KENSINGTON_CVG,
-  CARIBOO_CARIBOO_PL_E,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -74,7 +75,7 @@ const WINSTON_GREENWOOD_NE = [49.2564, -122.96221];
 const BRIGHTON_WINSTON_NW = [49.24991, -122.91918];
 const BRIGHTON_WINSTON_SW = [49.24983, -122.91915];
 
-const COLUMBIA_SHERBROOKE = [49.22789, -122.89275];
+const COLUMBIA_SHERBROOKE_E = [49.22789, -122.89275];
 const COLUMBIA_BRUNETTE = [49.22223, -122.89306];
 const ELLIOT_COLUMBIA = [49.20658, -122.90185];
 const BEGBIE_COLUMBIA_N = [49.20189, -122.91045];
@@ -811,12 +812,19 @@ export const CENTRAL_VALLEY_GREENWAY = [
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
-    description: "brunette fraser split to columbia",
+    description: "brunette fraser split south triangle leg",
     positions: [
       BRUNETTE_FRASER_CVG_SW,
       [49.235, -122.889],
       [49.235, -122.88883],
       [49.23496, -122.88873],
+      BRUNETTE_FRASER_CVG_SE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.crosstown.name],
+    description: "brunette fraser split to columbia",
+    positions: [
       BRUNETTE_FRASER_CVG_SE,
       [49.23325, -122.88862],
       [49.23317, -122.88865],
@@ -826,7 +834,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
       [49.23158, -122.89015],
       [49.22967, -122.8902],
       [49.22788, -122.89024],
-      COLUMBIA_SHERBROOKE,
+      COLUMBIA_SHERBROOKE_E,
     ],
   },
   {
@@ -843,8 +851,14 @@ export const CENTRAL_VALLEY_GREENWAY = [
       [49.22556, -122.89281],
       [49.22645, -122.89279],
       [49.22787, -122.89275],
-      COLUMBIA_SHERBROOKE,
+      COLUMBIA_SHERBROOKE_E,
     ],
+  },
+  {
+    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.crosstown.name],
+    description: "crossing columbia",
+    type: "comfortable",
+    positions: [COLUMBIA_SHERBROOKE_W, COLUMBIA_SHERBROOKE_E],
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
@@ -852,8 +866,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     type: "painted",
     oneWay: "required",
     positions: [
-      COLUMBIA_SHERBROOKE,
-      [49.22789, -122.89289],
+      COLUMBIA_SHERBROOKE_W,
       [49.22646, -122.89294],
       [49.22556, -122.89296],
       [49.22461, -122.89299],

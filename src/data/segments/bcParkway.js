@@ -31,6 +31,8 @@ import {
   SLOCAN_BC_PARKWAY,
   STATION_HILL_SOUTHPOINT_E,
   TODD_VANNESS,
+  BC_PARKWAY_22ND_STATION_SPLIT,
+  STEWARDSON_GRIMSTON_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -624,7 +626,7 @@ export const BC_PARKWAY = [
       [49.19947, -122.95244],
       [49.19951, -122.95208],
       [49.19956, -122.95171],
-      [49.19961, -122.95143],
+      BC_PARKWAY_22ND_STATION_SPLIT,
       BC_PARKWAY_7TH,
     ],
   },
@@ -673,7 +675,7 @@ export const BC_PARKWAY = [
       [49.20128, -122.94186],
       [49.20137, -122.94171],
       [49.20149, -122.94145],
-      [49.20162, -122.9411],
+      STEWARDSON_GRIMSTON_S,
       [49.2019, -122.9403],
       [49.20198, -122.94007],
       [49.20214, -122.93942],

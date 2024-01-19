@@ -30,6 +30,7 @@ import { CHANCELLOR } from "./chancellor";
 import { CHILCO } from "./chilco";
 import { COLUMBIA } from "./columbia";
 import { COMOX_HELMCKEN } from "./comoxHelmcken";
+import { CROSSTOWN } from "./crosstown";
 import { CYPRESS } from "./cypress";
 import { DEER_LAKE_PARKWAY } from "./deerLakeParkway";
 import { DUMFRIES } from "./dumfries";
@@ -64,6 +65,7 @@ import { KNIGHT_STREET_BRIDGE } from "./knightStBridge";
 import { LAKES } from "./lakes";
 import { LAKEWOOD } from "./lakewood";
 import { LIONS_GATE_BRIDGE } from "./lionsGateBridge";
+import { LONDON_DUBLIN_GREENWAY } from "./londonDublin";
 import { LOUGHEED } from "./lougheed";
 import { MARINE } from "./marine";
 import { MARINE_WAY } from "./marineWay";
@@ -157,6 +159,7 @@ export const SEGMENTS = [
   ...CHILCO,
   ...COLUMBIA,
   ...COMOX_HELMCKEN,
+  ...CROSSTOWN,
   ...CYPRESS,
   ...DEER_LAKE_PARKWAY,
   ...DUMFRIES,
@@ -191,6 +194,7 @@ export const SEGMENTS = [
   ...LAKES,
   ...LAKEWOOD,
   ...LIONS_GATE_BRIDGE,
+  ...LONDON_DUBLIN_GREENWAY,
   ...LOUGHEED,
   ...MARINE,
   ...MARINE_WAY,

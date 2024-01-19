@@ -8,7 +8,7 @@ import { VIDEOS } from "./videos";
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
 // Richmond: no. 3; williams; river pkwy; minoru; francis (shell); ash; westminster hwy; no. 6 paths; lynas; no. 2 path; west-most n-s; dyke
 // YVR: ferguson; russ baker; sea island/bridgeport bridges; paths
-// New Westminster: london, crosstown, 5th, carnarvon
+// New Westminster: agnes, carnarvon (begbie conn.), millennium trail, merivale -> 4th st -> 3rd ave -> 5th st
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
 // West Vancouver: marine dr; mathers+; old train; hwy; keith;
 // Surrey: scott rd; alex fraser; timbers; fraser hwy;
@@ -144,7 +144,7 @@ export const ROUTES = {
   },
   brunetteFraser: {
     name: "Brunette Fraser Regional Greenway",
-    shortName: "Brunette Fraser G.",
+    shortName: "Brunette Fraser Gr.",
     legs: [
       { name: "Burnaby", distance: 9.1, videos: {} },
       { name: "New Westminster", distance: 4.4, videos: {} },
@@ -271,6 +271,11 @@ export const ROUTES = {
         },
       },
     ],
+  },
+  crosstown: {
+    name: "Crosstown Greenway",
+    shortName: "Crosstown Gr.",
+    legs: [{ distanceMin: 7.0, distanceMax: 7.5, videos: {} }],
   },
   cypress: {
     name: "Cypress",
@@ -443,6 +448,11 @@ export const ROUTES = {
         },
       },
     ],
+  },
+  londonDublin: {
+    name: "London/Dublin Greenway",
+    shortName: "London/Dublin Gr.",
+    legs: [{ distance: 2.7, videos: {} }],
   },
   lougheed: {
     name: "Lougheed Highway",

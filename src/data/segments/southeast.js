@@ -2,6 +2,7 @@ import {
   BC_PARKWAY_14TH,
   CARIBOO_ARMSTRONG_E,
   CASCADE_ARMSTRONG,
+  FIFTEENTH_LONDON,
   FOURTH_13TH,
   MARY_12TH,
   STATION_HILL_SOUTHPOINT_E,
@@ -12,6 +13,8 @@ const GRIFFITHS_SOUTHPOINT_E = [49.21124, -122.95556];
 const CUMBERLAND_ARMSTRONG = [49.22973, -122.91514];
 const CARIBOO_ARMSTRONG_W_SPLIT = [49.23536, -122.90469];
 const FIFTEENTH_13TH_W = [49.21325, -122.94556];
+const FIFTEENTH_12TH = [49.21242, -122.94433];
+const FIFTEENTH_11TH = [49.2117, -122.94339];
 
 const EIGHTEENTH_STRIDE_W = [49.21231, -122.95355];
 const OVERPASS_14TH_W = [49.20913, -122.95711];
@@ -120,10 +123,22 @@ export const SOUTHEAST = [
     description: "15th",
     type: "mixed",
     positions: [
+      FIFTEENTH_11TH,
       [49.21173, -122.9435],
       [49.2124, -122.9444],
       [49.21323, -122.94552],
       FIFTEENTH_13TH_W,
+    ],
+  },
+  {
+    description: "connection to london",
+    type: "comfortable",
+    positions: [
+      FIFTEENTH_LONDON,
+      [49.21081, -122.94259],
+      [49.21102, -122.94249],
+      FIFTEENTH_11TH,
+      FIFTEENTH_12TH,
     ],
   },
 
@@ -153,7 +168,7 @@ export const SOUTHEAST = [
       [49.21524, -122.94812],
       [49.21433, -122.94692], // FIFTEENTH_14TH_N
       [49.21329, -122.9455], // FIFTEENTH_13TH_N
-      [49.21242, -122.94433], // FIFTEENTH_12TH
+      FIFTEENTH_12TH,
       [49.21367, -122.94203],
       [49.21484, -122.93988],
       [49.21554, -122.93861],

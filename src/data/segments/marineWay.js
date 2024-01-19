@@ -4,6 +4,7 @@ import {
   KINROSS_KENT,
   NORTH_FRASER_MARINE_SE,
   QUEENSBOROUGH_STEWARDSON_W,
+  TWENTY_THIRD_7TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -162,7 +163,7 @@ export const MARINE_WAY = [
     description: "wb: getting onto marine way",
     oneWay: "required",
     positions: [
-      [49.19847, -122.95244],
+      TWENTY_THIRD_7TH,
       [49.19821, -122.95212],
       [49.19817, -122.95209],
       TWENTY_THIRD_MARINE,
