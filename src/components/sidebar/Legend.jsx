@@ -8,6 +8,9 @@ import {
   DIRECTION_TYPES,
   ELEVATION_TYPES,
   TYPE_TYPES,
+  getDirection,
+  getElevation,
+  getType,
 } from "../../utils/segmentTypes";
 import SegmentForm from "./SegmentForm";
 
@@ -54,19 +57,22 @@ const reducer = (state, action) => {
   let newState = {
     ...state,
     key: state.key + 1,
-    segmentProps: { ...state.segmentProps, ...action.data.props },
+    segmentProps: { ...state.segmentProps },
   };
   switch (action.type) {
     case "type":
-      newState.typeDescription = action.data.description;
+      newState.typeDescription = getType(action.key).description;
+      newState.segmentProps.type = action.key;
       break;
 
     case "direction":
-      newState.directionDescription = action.data.description;
+      newState.directionDescription = getDirection(action.key).description;
+      newState.segmentProps.oneWay = action.key;
       break;
 
     case "elevation":
-      newState.elevationDescription = action.data.description;
+      newState.elevationDescription = getElevation(action.key).description;
+      newState.segmentProps.elevation = action.key;
       break;
 
     default:
@@ -78,9 +84,9 @@ const reducer = (state, action) => {
 const initialState = {
   key: 1,
   segmentProps: {
-    ...TYPE_TYPES[0].props,
-    ...DIRECTION_TYPES[2].props,
-    ...ELEVATION_TYPES[1].props,
+    type: TYPE_TYPES[0].key,
+    oneWay: DIRECTION_TYPES[2].key,
+    elevation: ELEVATION_TYPES[1].key,
   },
   typeDescription: TYPE_TYPES[0].description,
   directionDescription: DIRECTION_TYPES[2].description,
@@ -102,21 +108,21 @@ export default function Legend({ goBack }) {
   const types = TYPE_TYPES.reduce(
     (acc, t) => ({
       ...acc,
-      [t.props.type]: t.props.type === segmentProps.type,
+      [t.key]: t.key === segmentProps.type,
     }),
     {}
   );
   const directions = DIRECTION_TYPES.reduce(
     (acc, d) => ({
       ...acc,
-      [d.props.oneWay]: d.props.oneWay === segmentProps.oneWay,
+      [d.key]: d.key === segmentProps.oneWay,
     }),
     {}
   );
   const elevations = ELEVATION_TYPES.reduce(
     (acc, e) => ({
       ...acc,
-      [e.props.elevation ?? 0]: e.props.elevation === segmentProps.elevation,
+      [e.key ?? 0]: e.key === segmentProps.elevation,
     }),
     {}
   );

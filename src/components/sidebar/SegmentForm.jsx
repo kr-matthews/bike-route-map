@@ -18,10 +18,10 @@ export default function SegmentForm({
   // const isFilter = view === "filter";
 
   const isAnAlwaysOneWayTypeSelected = TYPE_TYPES.some(
-    (t) => types[t.props.type] && isAlwaysOneWay(t)
+    (t) => types[t.key] && isAlwaysOneWay(t)
   );
   const isAOneWayDirectionSelected = DIRECTION_TYPES.some(
-    (d) => directions[d.props.oneWay] && isOneWay(d)
+    (d) => directions[d.key] && isOneWay(d)
   );
 
   return (
@@ -29,21 +29,21 @@ export default function SegmentForm({
       <tbody>
         <tr>
           <td style={{ verticalAlign: "top" }}>
-            {TYPE_TYPES.map((data) => {
+            {TYPE_TYPES.map((type) => {
               const isDisabled =
-                isLegend && isAlwaysOneWay(data) && !isAOneWayDirectionSelected;
+                isLegend && isAlwaysOneWay(type) && !isAOneWayDirectionSelected;
               const action = isDisabled
                 ? undefined
-                : () => dispatch({ type: "type", data });
+                : () => dispatch({ type: "type", key: type.key });
               return (
-                <div key={data.name} style={{ padding: "5px" }}>
+                <div key={type.name} style={{ padding: "5px" }}>
                   <input
                     type={isLegend ? "radio" : "checkbox"}
                     id="key"
                     name="type"
                     style={{ cursor: isDisabled ? undefined : "pointer" }}
                     disabled={isDisabled}
-                    checked={types[data.props.type]}
+                    checked={types[type.key]}
                     onChange={action}
                   />
                   <label
@@ -52,12 +52,12 @@ export default function SegmentForm({
                       cursor: isDisabled ? undefined : "pointer",
                       color: WHITE,
                       opacity: isDisabled ? 0.2 : 1,
-                      backgroundColor: data.colour,
+                      backgroundColor: type.colour,
                       padding: "4px",
                     }}
                     onClick={action}
                   >
-                    {data.name}
+                    {type.name}
                   </label>
                 </div>
               );
@@ -65,21 +65,23 @@ export default function SegmentForm({
           </td>
 
           <td style={{ verticalAlign: "top" }}>
-            {DIRECTION_TYPES.map((data) => {
+            {DIRECTION_TYPES.map((direction) => {
               const isDisabled =
-                isLegend && isAnAlwaysOneWayTypeSelected && !isOneWay(data);
+                isLegend &&
+                isAnAlwaysOneWayTypeSelected &&
+                !isOneWay(direction);
               const action = isDisabled
                 ? undefined
-                : () => dispatch({ type: "direction", data });
+                : () => dispatch({ type: "direction", key: direction.key });
               return (
-                <div key={data.name} style={{ padding: "5px" }}>
+                <div key={direction.name} style={{ padding: "5px" }}>
                   <input
                     type={isLegend ? "radio" : "checkbox"}
                     id="key"
                     name="direction"
                     style={{ cursor: isDisabled ? undefined : "pointer" }}
                     disabled={isDisabled}
-                    checked={directions[data.props.oneWay]}
+                    checked={directions[direction.key]}
                     onChange={action}
                   />
                   <label
@@ -88,12 +90,12 @@ export default function SegmentForm({
                       cursor: isDisabled ? undefined : "pointer",
                       color: WHITE,
                       opacity: isDisabled ? 0.2 : 1,
-                      backgroundColor: data.colour,
+                      backgroundColor: direction.colour,
                       padding: "4px",
                     }}
                     onClick={action}
                   >
-                    {data.name}
+                    {direction.name}
                   </label>
                 </div>
               );
@@ -101,29 +103,30 @@ export default function SegmentForm({
           </td>
 
           <td style={{ verticalAlign: "top" }}>
-            {ELEVATION_TYPES.map((data) => {
-              const action = () => dispatch({ type: "elevation", data });
+            {ELEVATION_TYPES.map((elevation) => {
+              const action = () =>
+                dispatch({ type: "elevation", key: elevation.key });
               return (
-                <div key={data.name} style={{ padding: "5px" }}>
+                <div key={elevation.name} style={{ padding: "5px" }}>
                   <input
                     type={isLegend ? "radio" : "checkbox"}
                     id="key"
                     name="elevation"
                     style={{ cursor: "pointer" }}
-                    checked={elevations[data.props.elevation]}
+                    checked={elevations[elevation.key]}
                     onChange={action}
                   />
                   <label
                     htmlFor="comfortable"
                     style={{
                       cursor: "pointer",
-                      color: data.colour ? WHITE : BLACK,
-                      backgroundColor: data.colour,
+                      color: elevation.colour ? WHITE : BLACK,
+                      backgroundColor: elevation.colour,
                       padding: "4px",
                     }}
                     onClick={action}
                   >
-                    {data.name}
+                    {elevation.name}
                   </label>
                 </div>
               );
