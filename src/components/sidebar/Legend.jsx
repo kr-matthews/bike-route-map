@@ -10,7 +10,6 @@ import {
   TYPE_TYPES,
 } from "../../utils/segmentTypes";
 
-// !!! disallow combinations
 // !!! de-duplicate, clean up
 // !!! re-use for settings
 
@@ -90,6 +89,8 @@ const initialState = {
   elevationDescription: ELEVATION_TYPES[1].description,
 };
 
+const alwaysOneWayTypes = ["painted", "shoulder"];
+
 export default function Legend({ goBack }) {
   const [
     {
@@ -101,6 +102,9 @@ export default function Legend({ goBack }) {
     },
     dispatch,
   ] = useReducer(reducer, initialState);
+
+  const isTypeAlwaysOneWay = alwaysOneWayTypes.includes(segmentProps.type);
+  const isDirectionTwoWay = !segmentProps.oneWay;
 
   return (
     <div
@@ -137,22 +141,29 @@ export default function Legend({ goBack }) {
             <td style={{ verticalAlign: "top" }}>
               {TYPE_TYPES.map(({ name, colour }, index) => {
                 const data = TYPE_TYPES[index];
-                const action = () => dispatch({ type: "type", data });
+                const isDisabled =
+                  alwaysOneWayTypes.includes(data.props.type) &&
+                  !isDirectionTwoWay;
+                const action = isDisabled
+                  ? undefined
+                  : () => dispatch({ type: "type", data });
                 return (
                   <div key={name} style={{ padding: "5px" }}>
                     <input
                       type="radio"
                       id="key"
                       name="type"
-                      style={{ cursor: "pointer" }}
+                      style={{ cursor: isDisabled ? undefined : "pointer" }}
+                      disabled={isDisabled}
                       checked={segmentProps.type === data.props.type}
                       onChange={action}
                     />
                     <label
                       htmlFor="comfortable"
                       style={{
-                        cursor: "pointer",
+                        cursor: isDisabled ? undefined : "pointer",
                         color: WHITE,
+                        opacity: isDisabled ? 0.2 : 1,
                         backgroundColor: colour,
                         padding: "4px",
                       }}
@@ -168,22 +179,27 @@ export default function Legend({ goBack }) {
             <td style={{ verticalAlign: "top" }}>
               {DIRECTION_TYPES.map(({ name, colour }, index) => {
                 const data = DIRECTION_TYPES[index];
-                const action = () => dispatch({ type: "direction", data });
+                const isDisabled = isTypeAlwaysOneWay && data.props.oneWay;
+                const action = isDisabled
+                  ? undefined
+                  : () => dispatch({ type: "direction", data });
                 return (
                   <div key={name} style={{ padding: "5px" }}>
                     <input
                       type="radio"
                       id="key"
                       name="direction"
-                      style={{ cursor: "pointer" }}
+                      style={{ cursor: isDisabled ? undefined : "pointer" }}
+                      disabled={isDisabled}
                       checked={segmentProps.oneWay === data.props.oneWay}
                       onChange={action}
                     />
                     <label
                       htmlFor="comfortable"
                       style={{
-                        cursor: "pointer",
+                        cursor: isDisabled ? undefined : "pointer",
                         color: WHITE,
+                        opacity: isDisabled ? 0.2 : 1,
                         backgroundColor: colour,
                         padding: "4px",
                       }}
