@@ -23,7 +23,7 @@ import { normalizeType } from "./segmentTypes";
 
 export function createPathOptions(
   { routeNames, oneWay, isClosed, videos, type, hideUnlessVideo, elevation },
-  { highlighted, selected, video }
+  { highlighted, selected, video, isHidden }
 ) {
   const isSelected = (routeNames ?? []).includes(selected);
   const isHighlighted = (routeNames ?? []).includes(highlighted);
@@ -63,7 +63,11 @@ export function createPathOptions(
 
   return {
     color: colour,
-    weight: elevation <= -1 ? WEIGHT_UNDERGROUND : nonUndergroundWeight,
+    weight: isHidden
+      ? 0
+      : elevation <= -1
+      ? WEIGHT_UNDERGROUND
+      : nonUndergroundWeight,
     // explicit opacity required to show hidden routes when video is selected
     opacity: 100,
     dashArray: hideUnlessVideo ? DASH_PATTERN : undefined,
@@ -72,7 +76,7 @@ export function createPathOptions(
 
 export function createBorderPathOptions(
   { routeNames, elevation },
-  { selected }
+  { selected, isHidden }
 ) {
   const isSelected = (routeNames ?? []).includes(selected);
 
@@ -80,7 +84,9 @@ export function createBorderPathOptions(
 
   return {
     color: elevation > 0 ? COLOUR_ELEVATED_BORDER : COLOUR_UNDERGROUND_BORDER,
-    weight: (isSelected ? WEIGHT_WIDE : WEIGHT_NARROW) + WEIGHT_BORDER_ADD_ON,
+    weight: isHidden
+      ? 0
+      : (isSelected ? WEIGHT_WIDE : WEIGHT_NARROW) + WEIGHT_BORDER_ADD_ON,
     // explicit opacity required to show hidden routes when video is selected
     opacity: 100,
   };

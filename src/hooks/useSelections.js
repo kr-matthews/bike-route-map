@@ -75,7 +75,7 @@ export default function useSelections() {
     settingsReducer,
     defaultSettings
   );
-  const isHidden = (segment) => {
+  const isSegmentHidden = (segment) => {
     if (segment.hideUnlessVideo && !segment.videos?.includes(video?.id)) {
       return true;
     }
@@ -103,7 +103,7 @@ export default function useSelections() {
     video,
     setVideoId,
     settings,
-    isHidden,
+    isSegmentHidden,
     dispatchSettings,
   };
 }

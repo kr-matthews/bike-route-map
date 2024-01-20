@@ -9,9 +9,7 @@ import PolylineCreator from "./PolylineCreator";
 import "./map.css";
 
 export default function MainMap({ setMapRef, fullWidth = false }) {
-  const { setSelected, isHidden } = useContext(Selections);
-
-  const visibleSegments = SEGMENTS.filter((segment) => !isHidden(segment));
+  const { setSelected } = useContext(Selections);
 
   useEffect(
     function closeOnEsc() {
@@ -46,7 +44,8 @@ export default function MainMap({ setMapRef, fullWidth = false }) {
 
         <PanesAndTiles />
 
-        {visibleSegments.map((segment) => (
+        {/* pass in all segments, including hidden ones, due to directional arrow bug */}
+        {SEGMENTS.map((segment) => (
           <Segment
             key={segment.routeNames?.join(",") + "|" + segment.description}
             {...segment}

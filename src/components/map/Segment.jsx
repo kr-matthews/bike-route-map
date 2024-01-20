@@ -23,13 +23,20 @@ export default function Segment(segment) {
     isClosed,
     positions,
   } = segment;
-  const { selectedRoute, setSelected, highlighted, setHighlighted, video } =
-    useContext(Selections);
+  const {
+    selectedRoute,
+    setSelected,
+    highlighted,
+    setHighlighted,
+    video,
+    isSegmentHidden,
+  } = useContext(Selections);
 
   const primaryRouteName = routeNames?.find((x) => x) || null;
   const hasAnyRoutes = (routeNames?.length ?? 0) > 0;
   const hasMultipleRoutes = (routeNames?.length ?? 0) > 1;
   const pane = getSegmentPane(elevation, hasMultipleRoutes);
+  const isHidden = isSegmentHidden(segment);
 
   const polylineProps = {
     positions,
@@ -37,6 +44,7 @@ export default function Segment(segment) {
       highlighted,
       selected: selectedRoute?.name,
       video: video?.id,
+      isHidden,
     }),
     eventHandlers: {
       mouseover: () => setHighlighted(primaryRouteName),
@@ -57,6 +65,7 @@ export default function Segment(segment) {
     pathOptions: createBorderPathOptions(segment, {
       highlighted,
       selected: selectedRoute?.name,
+      isHidden,
     }),
     pane: getBorderPane(elevation),
   };
@@ -82,12 +91,16 @@ export default function Segment(segment) {
     typeText = "Narrow Sidewalk or Rough Trail";
   }
 
+  // !!! allow tool tip on border
+
   // FIXME: tool tip not showing on decorator arrows hover
   return (
     <Fragment>
       <Polyline
         showArrows={
-          !hideArrows && (oneWay === "required" || oneWay === "recommended")
+          !hideArrows &&
+          !isHidden &&
+          (oneWay === "required" || oneWay === "recommended")
         }
         polylineProps={polylineProps}
         borderProps={hasBorder ? borderProps : undefined}
@@ -95,11 +108,11 @@ export default function Segment(segment) {
         <Tooltip {...tooltipProps}>
           <>
             <div>
+              {isClosed && <b>[CLOSED] </b>}
               <em>
                 {typeText}
                 {oneWay === "required" && " - One way"}
               </em>
-              {isClosed && <b> [CLOSED]</b>}
             </div>
             {hasAnyRoutes
               ? routeNames.map((routeName) => (
