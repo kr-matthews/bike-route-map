@@ -3,20 +3,33 @@ import { ROUTES } from "../data/routes";
 import { VIDEOS } from "../data/videos";
 import { comfortableTypes } from "../utils/pathOptions";
 import {
-  COLOUR_COMFORTABLE,
-  COLOUR_OTHER,
-  COLOUR_PAINTED_ONE_WAY,
-  COLOUR_SHARED,
-  COLOUR_SHOULDER_ONE_WAY,
-} from "../utils/constants";
+  DIRECTION_TYPES,
+  ELEVATION_TYPES,
+  TYPE_TYPES,
+} from "../utils/segmentTypes";
 
 const settingsReducer = (state, action) => {
   switch (action.type) {
     case "reset":
       return defaultSettings;
 
-    case "toggle":
-      return { ...state, [action.key]: !state[action.key] };
+    case "type": {
+      const newTypes = { ...state.types };
+      newTypes[action.key] = !newTypes[action.key];
+      return { ...state, types: newTypes };
+    }
+
+    case "direction": {
+      const newDirections = { ...state.directions };
+      newDirections[action.key] = !newDirections[action.key];
+      return { ...state, directions: newDirections };
+    }
+
+    case "elevation": {
+      const newElevations = { ...state.elevations };
+      newElevations[action.key] = !newElevations[action.key];
+      return { ...state, elevations: newElevations };
+    }
 
     default:
       return state;
@@ -24,25 +37,17 @@ const settingsReducer = (state, action) => {
 };
 
 const defaultSettings = {
-  showComfortable: true,
-  showPainted: true,
-  showShared: true,
-  showShoulders: true,
-  showOther: true,
-  hideNonVideo: false,
+  types: TYPE_TYPES.reduce((acc, t) => ({ ...acc, [t.key]: true }), {}),
+  directions: DIRECTION_TYPES.reduce(
+    (acc, d) => ({ ...acc, [d.key]: true }),
+    {}
+  ),
+  elevations: ELEVATION_TYPES.reduce(
+    (acc, e) => ({ ...acc, [e.key]: true }),
+    {}
+  ),
+  videos: undefined, // using true, false, and undefined is probably a bad idea...
 };
-
-export const availableTypeSettings = [
-  { key: "showComfortable", name: "Comfortable", colour: COLOUR_COMFORTABLE },
-  { key: "showPainted", name: "Painted Lanes", colour: COLOUR_PAINTED_ONE_WAY },
-  { key: "showShared", name: "Shared Lanes", colour: COLOUR_SHARED },
-  {
-    key: "showShoulders",
-    name: "Highway Shoulders",
-    colour: COLOUR_SHOULDER_ONE_WAY,
-  },
-  { key: "showOther", name: "Other", colour: COLOUR_OTHER },
-];
 
 export default function useSelections() {
   // interactions
@@ -74,21 +79,9 @@ export default function useSelections() {
       return false;
     }
     if (comfortableTypes.includes(segment.type)) {
-      return settings.showComfortable;
+      return settings.types["comfortable"];
     }
-    switch (segment.type) {
-      case "painted":
-        return settings.showPainted;
-      case "shared":
-        return settings.showShared;
-      case "shoulder":
-        return settings.showShoulders;
-      case "other":
-        return settings.showOther;
-
-      default:
-        return false;
-    }
+    return settings.types[segment.type];
   };
 
   return {
