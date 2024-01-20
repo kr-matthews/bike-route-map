@@ -3,15 +3,13 @@ import { MapContainer } from "react-leaflet";
 import Segment from "../map/Segment";
 import PanesAndTiles from "../map/PanesAndTiles";
 import { ZOOMED_IN_A_BIT } from "../../utils/constants";
-import { BLACK, DARK_BLUE, LIGHT_BLUE, WHITE } from "../../utils/colours";
+import { DARK_BLUE, LIGHT_BLUE, WHITE } from "../../utils/colours";
 import {
   DIRECTION_TYPES,
   ELEVATION_TYPES,
   TYPE_TYPES,
 } from "../../utils/segmentTypes";
-
-// !!! de-duplicate, clean up
-// !!! re-use for settings
+import SegmentForm from "./SegmentForm";
 
 const intersection = [49.26208, -123.10495];
 
@@ -81,15 +79,13 @@ const initialState = {
   key: 1,
   segmentProps: {
     ...TYPE_TYPES[0].props,
-    ...DIRECTION_TYPES[0].props,
+    ...DIRECTION_TYPES[2].props,
     ...ELEVATION_TYPES[1].props,
   },
   typeDescription: TYPE_TYPES[0].description,
-  directionDescription: DIRECTION_TYPES[0].description,
+  directionDescription: DIRECTION_TYPES[2].description,
   elevationDescription: ELEVATION_TYPES[1].description,
 };
-
-const alwaysOneWayTypes = ["painted", "shoulder"];
 
 export default function Legend({ goBack }) {
   const [
@@ -103,8 +99,13 @@ export default function Legend({ goBack }) {
     dispatch,
   ] = useReducer(reducer, initialState);
 
-  const isTypeAlwaysOneWay = alwaysOneWayTypes.includes(segmentProps.type);
-  const isDirectionTwoWay = !segmentProps.oneWay;
+  const types = TYPE_TYPES.map((t) => t.props.type === segmentProps.type);
+  const directions = DIRECTION_TYPES.map(
+    (t) => t.props.oneWay === segmentProps.oneWay
+  );
+  const elevations = ELEVATION_TYPES.map(
+    (t) => t.props.elevation === segmentProps.elevation
+  );
 
   return (
     <div
@@ -135,116 +136,13 @@ export default function Legend({ goBack }) {
         Menu
       </button>
 
-      <table>
-        <tbody>
-          <tr>
-            <td style={{ verticalAlign: "top" }}>
-              {TYPE_TYPES.map(({ name, colour }, index) => {
-                const data = TYPE_TYPES[index];
-                const isDisabled =
-                  alwaysOneWayTypes.includes(data.props.type) &&
-                  !isDirectionTwoWay;
-                const action = isDisabled
-                  ? undefined
-                  : () => dispatch({ type: "type", data });
-                return (
-                  <div key={name} style={{ padding: "5px" }}>
-                    <input
-                      type="radio"
-                      id="key"
-                      name="type"
-                      style={{ cursor: isDisabled ? undefined : "pointer" }}
-                      disabled={isDisabled}
-                      checked={segmentProps.type === data.props.type}
-                      onChange={action}
-                    />
-                    <label
-                      htmlFor="comfortable"
-                      style={{
-                        cursor: isDisabled ? undefined : "pointer",
-                        color: WHITE,
-                        opacity: isDisabled ? 0.2 : 1,
-                        backgroundColor: colour,
-                        padding: "4px",
-                      }}
-                      onClick={action}
-                    >
-                      {name}
-                    </label>
-                  </div>
-                );
-              })}
-            </td>
-
-            <td style={{ verticalAlign: "top" }}>
-              {DIRECTION_TYPES.map(({ name, colour }, index) => {
-                const data = DIRECTION_TYPES[index];
-                const isDisabled = isTypeAlwaysOneWay && data.props.oneWay;
-                const action = isDisabled
-                  ? undefined
-                  : () => dispatch({ type: "direction", data });
-                return (
-                  <div key={name} style={{ padding: "5px" }}>
-                    <input
-                      type="radio"
-                      id="key"
-                      name="direction"
-                      style={{ cursor: isDisabled ? undefined : "pointer" }}
-                      disabled={isDisabled}
-                      checked={segmentProps.oneWay === data.props.oneWay}
-                      onChange={action}
-                    />
-                    <label
-                      htmlFor="comfortable"
-                      style={{
-                        cursor: isDisabled ? undefined : "pointer",
-                        color: WHITE,
-                        opacity: isDisabled ? 0.2 : 1,
-                        backgroundColor: colour,
-                        padding: "4px",
-                      }}
-                      onClick={action}
-                    >
-                      {name}
-                    </label>
-                  </div>
-                );
-              })}
-            </td>
-
-            <td style={{ verticalAlign: "top" }}>
-              {ELEVATION_TYPES.map(({ name, colour }, index) => {
-                const data = ELEVATION_TYPES[index];
-                const action = () => dispatch({ type: "elevation", data });
-                return (
-                  <div key={name} style={{ padding: "5px" }}>
-                    <input
-                      type="radio"
-                      id="key"
-                      name="elevation"
-                      style={{ cursor: "pointer" }}
-                      checked={segmentProps.elevation === data.props.elevation}
-                      onChange={action}
-                    />
-                    <label
-                      htmlFor="comfortable"
-                      style={{
-                        cursor: "pointer",
-                        color: colour ? WHITE : BLACK,
-                        backgroundColor: colour,
-                        padding: "4px",
-                      }}
-                      onClick={action}
-                    >
-                      {name}
-                    </label>
-                  </div>
-                );
-              })}
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <SegmentForm
+        view="legend"
+        types={types}
+        directions={directions}
+        elevations={elevations}
+        dispatch={dispatch}
+      />
 
       <br />
       <div

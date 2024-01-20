@@ -50,27 +50,10 @@ export const TYPE_TYPES = [
   },
 ];
 
-export const ELEVATION_TYPES = [
-  {
-    name: "Elevated",
-    colour: COLOUR_ELEVATED_BORDER,
-    description:
-      "Bridge or other elevated surface. You can't directly connect to/from the roads/paths below.",
-    props: { elevation: 1 },
-  },
-  {
-    name: "Surface Level",
-    description: "",
-    props: { elevation: 0 },
-  },
-  {
-    name: "Underground/ Covered",
-    colour: COLOUR_UNDERGROUND_BORDER,
-    description:
-      "A tunnel or other covered area. You can't directly connect to/from the roads/paths above.",
-    props: { elevation: -1 },
-  },
-];
+const alwaysOneWayTypes = ["painted", "shoulder"];
+
+export const isAlwaysOneWay = (typeObject) =>
+  alwaysOneWayTypes.includes(typeObject.props.type);
 
 export const DIRECTION_TYPES = [
   {
@@ -92,6 +75,31 @@ export const DIRECTION_TYPES = [
     description:
       "Only one direction of travel is allowed. A lighter colour. Directional arrows only appear when sufficiently zoomed in.",
     props: { oneWay: "required" },
+  },
+];
+
+export const isOneWay = (directionObject) =>
+  directionObject.props.oneWay === "required";
+
+export const ELEVATION_TYPES = [
+  {
+    name: "Elevated",
+    colour: COLOUR_ELEVATED_BORDER,
+    description:
+      "Bridge or other elevated surface. You can't directly connect to/from the roads/paths below.",
+    props: { elevation: 1 },
+  },
+  {
+    name: "Surface Level",
+    description: "",
+    props: { elevation: 0 },
+  },
+  {
+    name: "Underground/ Covered",
+    colour: COLOUR_UNDERGROUND_BORDER,
+    description:
+      "A tunnel or other covered area. You can't directly connect to/from the roads/paths above.",
+    props: { elevation: -1 },
   },
 ];
 
