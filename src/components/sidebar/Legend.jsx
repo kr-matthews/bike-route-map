@@ -99,12 +99,26 @@ export default function Legend({ goBack }) {
     dispatch,
   ] = useReducer(reducer, initialState);
 
-  const types = TYPE_TYPES.map((t) => t.props.type === segmentProps.type);
-  const directions = DIRECTION_TYPES.map(
-    (t) => t.props.oneWay === segmentProps.oneWay
+  const types = TYPE_TYPES.reduce(
+    (acc, t) => ({
+      ...acc,
+      [t.props.type]: t.props.type === segmentProps.type,
+    }),
+    {}
   );
-  const elevations = ELEVATION_TYPES.map(
-    (t) => t.props.elevation === segmentProps.elevation
+  const directions = DIRECTION_TYPES.reduce(
+    (acc, d) => ({
+      ...acc,
+      [d.props.oneWay]: d.props.oneWay === segmentProps.oneWay,
+    }),
+    {}
+  );
+  const elevations = ELEVATION_TYPES.reduce(
+    (acc, e) => ({
+      ...acc,
+      [e.props.elevation ?? 0]: e.props.elevation === segmentProps.elevation,
+    }),
+    {}
   );
 
   return (
