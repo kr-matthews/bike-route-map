@@ -45,7 +45,7 @@ export const TYPE_TYPES = [
     dispatchKey: "showOther",
     colour: COLOUR_OTHER,
     description:
-      "Separated from traffic but poor quality, such as a narrow sidewalk shared with pedestrians.",
+      "Separated from traffic but poor quality, such as a narrow sidewalk shared with pedestrians or a rough trail.",
     props: { type: "other" },
   },
 ];

@@ -79,7 +79,7 @@ export default function Segment(segment) {
   } else if (isShoulder) {
     typeText = "Highway Shoulder";
   } else if (isOther) {
-    typeText = "Narrow Sidewalk";
+    typeText = "Narrow Sidewalk or Rough Trail";
   }
 
   // FIXME: tool tip not showing on decorator arrows hover
