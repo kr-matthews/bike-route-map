@@ -1,7 +1,6 @@
 import { Fragment, useContext } from "react";
 import { Tooltip } from "react-leaflet";
 import {
-  comfortableTypes,
   createBorderPathOptions,
   createPathOptions,
   getBorderPane,
@@ -12,6 +11,7 @@ import Polyline from "./Polyline";
 import { hasVideo } from "../../utils/routes";
 import videoIcon from "../../images/video.svg";
 import VideoMarkers from "./VideoMarkers";
+import { normalizeElevation, normalizeType } from "../../utils/segmentTypes";
 
 export default function Segment(segment) {
   const {
@@ -51,7 +51,7 @@ export default function Segment(segment) {
     pane,
   };
 
-  const hasBorder = elevation >= 1 || elevation <= -1;
+  const hasBorder = normalizeElevation(elevation) !== 0;
   const borderProps = {
     positions,
     pathOptions: createBorderPathOptions(segment, {
@@ -63,7 +63,7 @@ export default function Segment(segment) {
 
   const tooltipProps = { sticky: true, opacity: 0.7, className: "tooltip" };
 
-  const isComfortable = comfortableTypes.includes(type);
+  const isComfortable = normalizeType(type) === "comfortable";
   const isPainted = type === "painted";
   const isShared = type === "shared";
   const isShoulder = type === "shoulder";

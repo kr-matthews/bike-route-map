@@ -1,11 +1,12 @@
 import { useReducer, useState } from "react";
 import { ROUTES } from "../data/routes";
 import { VIDEOS } from "../data/videos";
-import { comfortableTypes } from "../utils/pathOptions";
 import {
   DIRECTION_TYPES,
   ELEVATION_TYPES,
   TYPE_TYPES,
+  normalizeElevation,
+  normalizeType,
 } from "../utils/segmentTypes";
 
 const settingsReducer = (state, action) => {
@@ -74,14 +75,24 @@ export default function useSelections() {
     settingsReducer,
     defaultSettings
   );
-  const isVisible = (segment) => {
+  const isHidden = (segment) => {
     if (segment.hideUnlessVideo && !segment.videos?.includes(video?.id)) {
-      return false;
+      return true;
     }
-    if (comfortableTypes.includes(segment.type)) {
-      return settings.types["comfortable"];
+
+    if (!settings.types[normalizeType(segment.type)]) {
+      return true;
     }
-    return settings.types[segment.type];
+
+    if (!settings.directions[segment.oneWay]) {
+      return true;
+    }
+
+    if (!settings.elevations[normalizeElevation(segment.elevation)]) {
+      return true;
+    }
+
+    return false;
   };
 
   return {
@@ -92,7 +103,7 @@ export default function useSelections() {
     video,
     setVideoId,
     settings,
-    isVisible,
+    isHidden,
     dispatchSettings,
   };
 }

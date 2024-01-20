@@ -47,9 +47,21 @@ export const TYPE_TYPES = [
   },
 ];
 
-const alwaysOneWayTypes = ["painted", "shoulder"];
+const comfortableTypes = [
+  "dedicated",
+  "combined",
+  "mixed",
+  "quiet",
+  "comfortable", // a mix of the above
+  undefined, // catch-all (mostly for legacy reasons)
+];
 
 export const getType = (key) => TYPE_TYPES.find((t) => t.key === key);
+
+export const normalizeType = (type) =>
+  comfortableTypes.includes(type) ? "comfortable" : type;
+
+const alwaysOneWayTypes = ["painted", "shoulder"];
 
 export const isAlwaysOneWay = (typeObject) =>
   alwaysOneWayTypes.includes(typeObject.key);
@@ -105,11 +117,12 @@ export const ELEVATION_TYPES = [
 
 export const getElevation = (key) => ELEVATION_TYPES.find((e) => e.key === key);
 
-// export const TODO_TYPES = [
-//   {
-//     name: "Closed",
-//     colour: COLOUR_CLOSED,
-//     description: "For long-term construction or other reasons.",
-//     props: { isClosed: true },
-//   },
-// ];
+export const normalizeElevation = (elevation) =>
+  elevation <= -1 ? -1 : elevation >= 1 ? 1 : 0;
+
+// export const CLOSED_TYPE = {
+//   name: "Closed",
+//   colour: COLOUR_CLOSED,
+//   description: "For long-term construction or other reasons.",
+//   props: { isClosed: true },
+// };

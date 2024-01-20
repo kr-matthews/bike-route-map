@@ -19,15 +19,7 @@ import {
   WEIGHT_UNDERGROUND,
   WEIGHT_WIDE,
 } from "./constants";
-
-export const comfortableTypes = [
-  "dedicated",
-  "combined",
-  "mixed",
-  "quiet",
-  "comfortable", // a mix of the above
-  undefined, // catch-all (mostly for legacy reasons)
-];
+import { normalizeType } from "./segmentTypes";
 
 export function createPathOptions(
   { routeNames, oneWay, isClosed, videos, type, hideUnlessVideo, elevation },
@@ -39,7 +31,7 @@ export function createPathOptions(
 
   const isOneWay = oneWay === "required";
 
-  const isComfortable = comfortableTypes.includes(type);
+  const isComfortable = normalizeType(type) === "comfortable";
   const isPainted = type === "painted";
   const isShared = type === "shared";
   const isShoulder = type === "shoulder";

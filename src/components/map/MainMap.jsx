@@ -9,9 +9,9 @@ import PolylineCreator from "./PolylineCreator";
 import "./map.css";
 
 export default function MainMap({ setMapRef, fullWidth = false }) {
-  const { setSelected, isVisible } = useContext(Selections);
+  const { setSelected, isHidden } = useContext(Selections);
 
-  const visibleSegments = SEGMENTS.filter((segment) => isVisible(segment));
+  const visibleSegments = SEGMENTS.filter((segment) => !isHidden(segment));
 
   useEffect(
     function closeOnEsc() {
