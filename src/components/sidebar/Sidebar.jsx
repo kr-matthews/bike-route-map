@@ -5,19 +5,19 @@ import Routes from "./Routes";
 import SelectedRoute from "./SelectedRoute";
 import useRoutesAutoSelect from "../../hooks/useRoutesAutoSelect";
 import useSavedState from "../../hooks/useSavedState";
-import Settings from "./Settings";
+import Filters from "./Filters";
 
 // !! move styling to css files
 
 const ID_LEGEND = "legend";
 const ID_ROUTES = "routes";
-const ID_SETTINGS = "settings";
+const ID_FILTERS = "filters";
 const ID_NONE = "none";
 
 const menuOptions = [
   { id: ID_LEGEND, name: "Legend" },
   { id: ID_ROUTES, name: "Routes" },
-  { id: ID_SETTINGS, name: "Settings" },
+  { id: ID_FILTERS, name: "Filters" },
 ];
 
 export default function Sidebar({ mapRef }) {
@@ -60,7 +60,7 @@ export default function Sidebar({ mapRef }) {
         </>
       )}
 
-      {selectedOptionId === ID_SETTINGS && <Settings goBack={backToMenu} />}
+      {selectedOptionId === ID_FILTERS && <Filters goBack={backToMenu} />}
     </div>
   );
 }

@@ -9,10 +9,10 @@ import {
   normalizeType,
 } from "../utils/segmentTypes";
 
-const settingsReducer = (state, action) => {
+const filtersReducer = (state, action) => {
   switch (action.type) {
     case "reset":
-      return defaultSettings;
+      return defaultFilters;
 
     case "type": {
       const newTypes = { ...state.types };
@@ -41,7 +41,7 @@ const settingsReducer = (state, action) => {
   }
 };
 
-const defaultSettings = {
+const defaultFilters = {
   types: TYPE_TYPES.reduce((acc, t) => ({ ...acc, [t.key]: true }), {}),
   directions: DIRECTION_TYPES.reduce(
     (acc, d) => ({ ...acc, [d.key]: true }),
@@ -73,33 +73,30 @@ export default function useSelections() {
     setSelected(routeName);
   }
 
-  // settings
+  // filters
 
-  const [settings, dispatchSettings] = useReducer(
-    settingsReducer,
-    defaultSettings
-  );
+  const [filters, dispatchFilters] = useReducer(filtersReducer, defaultFilters);
   const isSegmentHidden = (segment) => {
     if (segment.hideUnlessVideo && !segment.videos?.includes(video?.id)) {
       return true;
     }
 
     if (
-      settings.videos !== undefined &&
-      settings.videos === ((segment.videos ?? []).length === 0)
+      filters.videos !== undefined &&
+      filters.videos === ((segment.videos ?? []).length === 0)
     ) {
       return true;
     }
 
-    if (!settings.types[normalizeType(segment.type)]) {
+    if (!filters.types[normalizeType(segment.type)]) {
       return true;
     }
 
-    if (!settings.directions[segment.oneWay]) {
+    if (!filters.directions[segment.oneWay]) {
       return true;
     }
 
-    if (!settings.elevations[normalizeElevation(segment.elevation)]) {
+    if (!filters.elevations[normalizeElevation(segment.elevation)]) {
       return true;
     }
 
@@ -113,8 +110,8 @@ export default function useSelections() {
     setSelected: setSelectedAndClearVideo,
     video,
     setVideoId,
-    settings,
+    filters,
     isSegmentHidden,
-    dispatchSettings,
+    dispatchFilters,
   };
 }

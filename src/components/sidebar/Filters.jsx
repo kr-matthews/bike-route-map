@@ -8,8 +8,8 @@ const videoOptions = [undefined, true, false];
 const getName = (option) =>
   option ? "With video" : option === false ? "Without video" : "All";
 
-export default function Settings({ goBack }) {
-  const { settings, dispatchSettings } = useContext(Selections);
+export default function Filters({ goBack }) {
+  const { filters, dispatchFilters } = useContext(Selections);
 
   return (
     <div
@@ -24,7 +24,7 @@ export default function Settings({ goBack }) {
         position: "relative",
       }}
     >
-      <h2 style={{ paddingLeft: 15 }}>Settings</h2>
+      <h2 style={{ paddingLeft: 15 }}>Filters</h2>
       <button
         style={{
           position: "absolute",
@@ -45,24 +45,24 @@ export default function Settings({ goBack }) {
           cursor: "pointer",
           margin: "0 20em 1em 20em",
         }}
-        onClick={() => dispatchSettings({ type: "reset" })}
+        onClick={() => dispatchFilters({ type: "reset" })}
       >
         Reset
       </button>
 
       <SegmentForm
         view="filter"
-        types={settings.types}
-        directions={settings.directions}
-        elevations={settings.elevations}
-        dispatch={dispatchSettings}
+        types={filters.types}
+        directions={filters.directions}
+        elevations={filters.elevations}
+        dispatch={dispatchFilters}
       />
 
       <br />
 
       {videoOptions.map((videoOption) => {
         const action = () => {
-          dispatchSettings({ type: "video", value: videoOption });
+          dispatchFilters({ type: "video", value: videoOption });
         };
         return (
           <label
@@ -79,7 +79,7 @@ export default function Settings({ goBack }) {
               id={(videoOption ?? "both").toString()}
               name="videos"
               style={{ cursor: "pointer" }}
-              checked={settings.videos === videoOption}
+              checked={filters.videos === videoOption}
               onChange={() => {}}
             />
             {getName(videoOption)}
