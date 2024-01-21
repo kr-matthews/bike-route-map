@@ -1,6 +1,7 @@
 import "@testing-library/jest-dom";
 import { SEGMENTS } from "../segments";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 // helpers
 
@@ -99,5 +100,12 @@ describe("data", () => {
         expect(unmatchedSeams).toHaveLength(0);
       });
     });
+  });
+
+  test("no unused videos", () => {
+    const unusedVideos = Object.values(VIDEOS).filter(
+      (video) => !routeVideos.includes(video.id)
+    );
+    expect(unusedVideos).toHaveLength(0);
   });
 });

@@ -28,7 +28,7 @@ export const CAMBIE = [
   // canada line station (and other) connections
   {
     description: "42nd",
-    videos: [VIDEOS.fortySecondEb.id],
+    // videos: [VIDEOS.fortySecondEb.id], // !!
     type: "quiet",
     positions: [
       CAMBIE_42ND_E,

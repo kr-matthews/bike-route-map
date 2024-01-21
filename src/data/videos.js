@@ -99,11 +99,12 @@ const VIDEOS = {
     date: new Date("2023 08 21"),
     minutes: 2,
   },
-  cambieSeparatedNb: {
-    id: "c0Yjyt4isPs",
-    date: new Date("2023 07 05"),
-    minutes: 4,
-  },
+  // does not correspond to route/leg
+  // cambieSeparatedNb: {
+  //   id: "c0Yjyt4isPs",
+  //   date: new Date("2023 07 05"),
+  //   minutes: 4,
+  // },
   carderoNb: {
     id: "tsSkeanHrXM",
     date: new Date("2023 12 24"),
@@ -174,11 +175,12 @@ const VIDEOS = {
     date: new Date("2023 07 22"),
     minutes: 31,
   },
-  fortySecondEb: {
-    id: "Mz7lLKjdmQw",
-    date: new Date("2023 08 31"),
-    minutes: 2,
-  },
+  // !! bring back
+  // fortySecondEb: {
+  //   id: "Mz7lLKjdmQw",
+  //   date: new Date("2023 08 31"),
+  //   minutes: 2,
+  // },
   fourteenthWb: {
     id: "_13c2Bcl_4Y",
     date: new Date("2023 08 12"),
@@ -319,11 +321,12 @@ const VIDEOS = {
     date: new Date("2023 06 10"),
     minutes: 45,
   },
-  moray: {
-    id: "wSwMTjMlKt4",
-    date: new Date("2023 08 19"),
-    minutes: 3,
-  },
+  // !! bring back
+  // moray: {
+  //   id: "wSwMTjMlKt4",
+  //   date: new Date("2023 08 19"),
+  //   minutes: 3,
+  // },
   mosaicSb: {
     id: "uDSSzA4ZN0Q",
     date: new Date("2023 10 07"),
@@ -339,16 +342,18 @@ const VIDEOS = {
     date: new Date("2023 08 03"),
     minutes: 1,
   },
-  northArmBridgeNb: {
-    id: "SANpYy0-wFc",
-    date: new Date("2023 07 05"),
-    minutes: 6,
-  },
-  northArmBridgeSb: {
-    id: "ujANKTjcu1A",
-    date: new Date("2023 07 05"),
-    minutes: 6,
-  },
+  // does not correspond to route/leg
+  // northArmBridgeNb: {
+  //   id: "SANpYy0-wFc",
+  //   date: new Date("2023 07 05"),
+  //   minutes: 6,
+  // },
+  // does not correspond to route/leg
+  // northArmBridgeSb: {
+  //   id: "ujANKTjcu1A",
+  //   date: new Date("2023 07 05"),
+  //   minutes: 6,
+  // },
   offBroadwayWb: {
     id: "7nKl_moRiog",
     date: new Date("2023 06 07"),
