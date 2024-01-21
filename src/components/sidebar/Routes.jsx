@@ -13,8 +13,6 @@ import {
 } from "../../utils/colours";
 import { COLOUR_HIGHLIGHTED } from "../../utils/constants";
 
-// !!! allow filtering (by direction (only show east-west), by city, by quality (future), etc?
-
 export default function Routes({ goBack }) {
   const [searchText, setSearchText] = useState("");
   const routesToShow = useMemo(

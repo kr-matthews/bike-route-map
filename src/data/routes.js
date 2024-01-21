@@ -1,7 +1,5 @@
 import { VIDEOS } from "./videos";
 
-// !!! handle non-routes, allow them to be previewed sometimes?
-
 // Potential future additions
 // Burnaby:
 // SFU: (to do)

@@ -3,6 +3,13 @@ import { DARK_BLUE, LIGHT_BLUE, WHITE } from "../../utils/colours";
 import { Selections } from "../../App";
 import SegmentForm from "./SegmentForm";
 
+// !!! reconfigure to routes being home page
+// !!! replace buttons with icons when appropriate
+// !!! show tooltips on border (and on arrows??)
+// !!! general clean up and de-duplication
+// !! add leg data and highlight on hover
+// !! handle non-routes, allow them to be previewed when they have a video
+
 const videoOptions = [undefined, true, false];
 
 const getName = (option) =>

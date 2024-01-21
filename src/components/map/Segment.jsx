@@ -91,8 +91,6 @@ export default function Segment(segment) {
     typeText = "Narrow Sidewalk or Rough Trail";
   }
 
-  // !!! allow tool tip on border
-
   // FIXME: tool tip not showing on decorator arrows hover
   return (
     <Fragment>
