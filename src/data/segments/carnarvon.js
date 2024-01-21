@@ -11,7 +11,7 @@ const FOURTH_CARNARVON = [49.20546, -122.90638];
 
 export const CARNARVON = [
   {
-    description: "connection to cvg",
+    description: "begbie connection to cvg",
     type: "shared",
     positions: [BEGBIE_COLUMBIA_N, BEGBIE_CARNARVON],
   },
@@ -26,7 +26,7 @@ export const CARNARVON = [
   },
   {
     routeNames: [ROUTES.carnarvon.name],
-    description: "all",
+    description: "west portion",
     type: "shared",
     positions: [
       [49.20175, -122.91311],
@@ -38,7 +38,7 @@ export const CARNARVON = [
   },
   {
     routeNames: [ROUTES.carnarvon.name],
-    description: "all",
+    description: "east portion",
     type: "quiet",
     positions: [
       SIXTH_CARNARVON,
