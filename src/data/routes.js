@@ -8,7 +8,7 @@ import { VIDEOS } from "./videos";
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
 // Richmond: no. 3; williams; river pkwy; minoru; francis (shell); ash; westminster hwy; no. 6 paths; lynas; no. 2 path; west-most n-s; dyke
 // YVR: ferguson; russ baker; sea island/bridgeport bridges; paths
-// New Westminster: agnes, carnarvon (begbie conn.), millennium trail, merivale -> 4th st -> 3rd ave -> 5th st
+// New Westminster: merivale -> 4th st -> 3rd ave -> 5th st, millennium trail
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
 // West Vancouver: marine dr; mathers+; old train; hwy; keith;
 // Surrey: scott rd; alex fraser; timbers; fraser hwy;
@@ -58,6 +58,10 @@ export const ROUTES = {
   adanac: {
     name: "Adanac",
     legs: [{ distance: 5.8, videos: { westbound: VIDEOS.adanacWb } }],
+  },
+  agnes: {
+    name: "Agnes St",
+    legs: [{ distance: 0.9, videos: {} }],
   },
   alberni: {
     name: "Alberni St",
@@ -216,6 +220,10 @@ export const ROUTES = {
   cariboo: {
     name: "Cariboo",
     legs: [{ distanceMax: 2.2, distanceMin: 1.8, videos: {} }],
+  },
+  carnarvon: {
+    name: "Carnarvon St",
+    legs: [{ distance: 0.9, videos: {} }],
   },
   carrall: {
     name: "Carrall",

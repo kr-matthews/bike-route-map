@@ -1,4 +1,5 @@
 import { ADANAC } from "./adanac";
+import { AGNES } from "./agnes";
 import { ALBERNI } from "./alberni";
 import { ALDER } from "./alder";
 import { ALEXANDER } from "./alexander";
@@ -22,6 +23,7 @@ import { CAMBIE_BRIDGE } from "./cambieBridge";
 import { CANADA_LINE } from "./canadaLine";
 import { CARDERO } from "./cardero";
 import { CARIBOO } from "./cariboo";
+import { CARNARVON } from "./carnarvon";
 import { CARRALL } from "./carrall";
 import { CASSIAR } from "./cassiar";
 import { CENTRAL_PARK_PERIMETER_TRAIL } from "./centralParkPerimeterTrail";
@@ -128,6 +130,7 @@ import { YUKON } from "./yukon";
 // convention: bi-directional paths are stored northbound, eastbound, or clockwise
 export const SEGMENTS = [
   ...ADANAC,
+  ...AGNES,
   ...ALBERNI,
   ...ALDER,
   ...ALEXANDER,
@@ -151,6 +154,7 @@ export const SEGMENTS = [
   ...CANADA_LINE,
   ...CARDERO,
   ...CARIBOO,
+  ...CARNARVON,
   ...CARRALL,
   ...CASSIAR,
   ...CENTRAL_PARK_PERIMETER_TRAIL,
