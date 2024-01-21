@@ -6,7 +6,7 @@ import { VIDEOS } from "./videos";
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
 // Richmond: no. 3; williams; river pkwy; minoru; francis (shell); ash; westminster hwy; no. 6 paths; lynas; no. 2 path; west-most n-s; dyke
 // YVR: ferguson; russ baker; sea island/bridgeport bridges; paths
-// New Westminster: merivale -> 4th st -> 3rd ave -> 5th st, millennium trail
+// New Westminster: millennium trail
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
 // West Vancouver: marine dr; mathers+; old train; hwy; keith;
 // Surrey: scott rd; alex fraser; timbers; fraser hwy;
@@ -696,6 +696,10 @@ export const ROUTES = {
   university: {
     name: "University Blvd",
     legs: [{ distance: 2.6, videos: {} }],
+  },
+  uptownDowntown: {
+    name: "Uptown/Downtown",
+    legs: [{ distance: 2.0, videos: {} }],
   },
   valley: {
     name: "Valley",

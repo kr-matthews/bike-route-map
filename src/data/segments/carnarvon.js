@@ -38,7 +38,7 @@ export const CARNARVON = [
   },
   {
     routeNames: [ROUTES.carnarvon.name],
-    description: "east portion",
+    description: "sixth to merivale",
     type: "quiet",
     positions: [
       SIXTH_CARNARVON,
@@ -46,7 +46,12 @@ export const CARNARVON = [
       [49.20578, -122.90577],
       [49.2058, -122.90567],
       MERIVALE_CARNARVON,
-      ELLIOT_CARNARVON,
     ],
+  },
+  {
+    routeNames: [ROUTES.carnarvon.name, ROUTES.uptownDowntown.name],
+    description: "merivale to elliot",
+    type: "quiet",
+    positions: [MERIVALE_CARNARVON, ELLIOT_CARNARVON],
   },
 ];

@@ -115,6 +115,7 @@ import { THIRD } from "./third";
 import { TWENTY_NINTH } from "./twentyNinth";
 import { TWENTY_SECOND } from "./twentySecond";
 import { UNIVERSITY } from "./university";
+import { UPTOWN_DOWNTOWN } from "./uptown";
 import { VALLEY } from "./valley";
 import { VICTORY } from "./victory";
 import { WALES_DUCHESS } from "./walesDuchess";
@@ -246,6 +247,7 @@ export const SEGMENTS = [
   ...TWENTY_NINTH,
   ...TWENTY_SECOND,
   ...UNIVERSITY,
+  ...UPTOWN_DOWNTOWN,
   ...VALLEY,
   ...VICTORY,
   ...WALES_DUCHESS,
