@@ -7,6 +7,7 @@ const MAIN_ELEVATED_S = [49.28425, -123.09945];
 const MAIN_WATERFRONT = [49.28513, -123.10043];
 const UNDERGROUND_E = [49.28736, -123.11275];
 const UNDERGROUND_W = [49.28957, -123.11852];
+const WATERFRONT_W = [49.28892, -123.1181];
 
 export const WATERFRONT = [
   {
@@ -15,18 +16,24 @@ export const WATERFRONT = [
     elevation: -0.5,
     videos: [VIDEOS.waterfrontEb.id],
     videosStartAtStart: [VIDEOS.waterfrontEb.id],
-    positions: [SEAWALL_WATERFRONT, UNDERGROUND_W],
+    positions: [SEAWALL_WATERFRONT, [49.28964, -123.11859], UNDERGROUND_W],
   },
   {
     routeNames: [ROUTES.waterfront.name],
-    description: "underground",
-    type: "shared", // ! technically some is comfortable
+    description: "underground path",
+    type: "mixed",
+    elevation: -1,
+    videos: [VIDEOS.waterfrontEb.id],
+    positions: [UNDERGROUND_W, [49.28913, -123.11808], WATERFRONT_W],
+  },
+  {
+    routeNames: [ROUTES.waterfront.name],
+    description: "waterfront underground",
+    type: "shared",
     elevation: -1,
     videos: [VIDEOS.waterfrontEb.id],
     positions: [
-      UNDERGROUND_W,
-      [49.28913, -123.11808],
-      [49.28892, -123.1181],
+      WATERFRONT_W,
       [49.28891, -123.11801],
       [49.28832, -123.11581],
       [49.28785, -123.1142],
@@ -35,7 +42,7 @@ export const WATERFRONT = [
   },
   {
     routeNames: [ROUTES.waterfront.name],
-    description: "waterfront",
+    description: "waterfront surface",
     type: "shared",
     elevation: -0.5,
     videos: [VIDEOS.waterfrontEb.id],
@@ -61,7 +68,7 @@ export const WATERFRONT = [
   },
   {
     routeNames: [ROUTES.waterfront.name],
-    description: "underground to loop",
+    description: "pre-loop",
     type: "shared",
     elevation: 0.5,
     videos: [VIDEOS.waterfrontEb.id],

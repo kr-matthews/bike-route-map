@@ -31,6 +31,8 @@ const CARLETON_YALE = [49.29001, -123.01108];
 const HIGHWAY_OVERPASS_START = [49.2573, -123.01212];
 const HIGHWAY_OVERPASS_END = [49.25829, -123.01213];
 
+const TRANS_CANADA_PAVEMENT_END = [49.29225, -123.02588];
+
 export const SEA_TO_RIVER = [
   {
     description: "mckay connection to bc parkway/metrotown",
@@ -285,7 +287,7 @@ export const SEA_TO_RIVER = [
     ],
   },
   {
-    description: "trans canada trail bit",
+    description: "trans canada trail bit, west",
     hideUnlessVideo: true,
     videos: [VIDEOS.seaToRiverNb.id],
     videosEndAtStart: [VIDEOS.seaToRiverNb.id],
@@ -295,7 +297,16 @@ export const SEA_TO_RIVER = [
       [49.29108, -123.02804],
       [49.29153, -123.02735],
       [49.29193, -123.02662],
-      [49.29225, -123.02588],
+      TRANS_CANADA_PAVEMENT_END,
+    ],
+  },
+  {
+    description: "trans canada trail bit, east",
+    type: "other",
+    hideUnlessVideo: true,
+    videos: [VIDEOS.seaToRiverNb.id],
+    positions: [
+      TRANS_CANADA_PAVEMENT_END,
       [49.29233, -123.02564],
       [49.29241, -123.02533],
       [49.29248, -123.02488],
