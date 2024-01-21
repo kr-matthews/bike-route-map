@@ -19,6 +19,7 @@ const intersection = [49.26208, -123.10495];
 const segment = {
   routeNames: ["Route Name"],
   description: "for the legend",
+  filterImmune: true,
   positions: [
     [49.26217, -123.10949],
     [49.26212, -123.10689],
@@ -30,6 +31,7 @@ const segment = {
 const otherSegment = {
   routeNames: ["Route 2", "Route 3"],
   description: "to show comparison",
+  filterImmune: true,
   positions: [
     [49.26027, -123.10503],
     intersection,

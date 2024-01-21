@@ -81,6 +81,10 @@ export default function useSelections() {
       return true;
     }
 
+    if (segment.filterImmune) {
+      return false;
+    }
+
     if (
       filters.videos !== undefined &&
       filters.videos === ((segment.videos ?? []).length === 0)
