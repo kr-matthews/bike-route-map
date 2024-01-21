@@ -32,6 +32,10 @@ const settingsReducer = (state, action) => {
       return { ...state, elevations: newElevations };
     }
 
+    case "video": {
+      return { ...state, videos: action.value };
+    }
+
     default:
       return state;
   }
@@ -77,6 +81,13 @@ export default function useSelections() {
   );
   const isSegmentHidden = (segment) => {
     if (segment.hideUnlessVideo && !segment.videos?.includes(video?.id)) {
+      return true;
+    }
+
+    if (
+      settings.videos !== undefined &&
+      settings.videos === ((segment.videos ?? []).length === 0)
+    ) {
       return true;
     }
 

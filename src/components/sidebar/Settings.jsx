@@ -3,7 +3,10 @@ import { DARK_BLUE, LIGHT_BLUE, WHITE } from "../../utils/colours";
 import { Selections } from "../../App";
 import SegmentForm from "./SegmentForm";
 
-// !!! fix arrows staying on map - probably need to keep the segment on the map but with 0 opacity/width
+const videoOptions = [undefined, true, false];
+
+const getName = (option) =>
+  option ? "With video" : option === false ? "Without video" : "All";
 
 export default function Settings({ goBack }) {
   const { settings, dispatchSettings } = useContext(Selections);
@@ -44,6 +47,34 @@ export default function Settings({ goBack }) {
         elevations={settings.elevations}
         dispatch={dispatchSettings}
       />
+
+      <br />
+
+      {videoOptions.map((videoOption) => {
+        const action = () => {
+          dispatchSettings({ type: "video", value: videoOption });
+        };
+        return (
+          <label
+            key={videoOption ?? "both"}
+            htmlFor="videos"
+            style={{
+              cursor: "pointer",
+              padding: "4px",
+            }}
+            onClick={action}
+          >
+            <input
+              type="radio"
+              id={videoOption}
+              name="videos"
+              style={{ cursor: "pointer" }}
+              checked={settings.videos === videoOption}
+            />
+            {getName(videoOption)}
+          </label>
+        );
+      })}
     </div>
   );
 }
