@@ -66,10 +66,11 @@ export default function Settings({ goBack }) {
           >
             <input
               type="radio"
-              id={videoOption}
+              id={(videoOption ?? "both").toString()}
               name="videos"
               style={{ cursor: "pointer" }}
               checked={settings.videos === videoOption}
+              onChange={() => {}}
             />
             {getName(videoOption)}
           </label>
