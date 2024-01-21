@@ -40,6 +40,16 @@ export default function Settings({ goBack }) {
         Menu
       </button>
 
+      <button
+        style={{
+          cursor: "pointer",
+          margin: "0 20em 1em 20em",
+        }}
+        onClick={() => dispatchSettings({ type: "reset" })}
+      >
+        Reset
+      </button>
+
       <SegmentForm
         view="filter"
         types={settings.types}
