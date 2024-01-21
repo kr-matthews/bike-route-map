@@ -33,16 +33,26 @@ export default function useDirectionalArrows(
 
   useEffect(
     function createDecorator() {
-      const decorator = L.polylineDecorator(polylineRef.current, {
+      const _decorator = L.polylineDecorator(polylineRef.current, {
         patterns: [],
       });
-      if (isActive) {
-        decorator.addEventListener(eventHandlers);
-        setDecorator(decorator);
+      if (isActive && !decorator) {
+        _decorator.addEventListener(eventHandlers);
+        setDecorator(_decorator);
       }
     },
     // eslint-disable-next-line
     [isActive]
+  );
+
+  useEffect(
+    function removeDecoratorWhenInactive() {
+      if (!isActive && decorator) {
+        decorator.removeFrom(map);
+      }
+    },
+    // eslint-disable-next-line
+    [isActive, decorator]
   );
 
   useEffect(
