@@ -74,6 +74,7 @@ import { MARINE_WAY } from "./marineWay";
 import { MASUMI_MITSUI_GREENWAY } from "./masumiMitsui";
 import { METROTOWN } from "./metrotown";
 import { MIDTOWN } from "./midtown";
+import { MILLENNIUM_TRAIL } from "./millenniumTrail";
 import { MOSAIC } from "./mosaic";
 import { NANAIMO } from "./nanaimo";
 import { NELSON } from "./nelson";
@@ -206,6 +207,7 @@ export const SEGMENTS = [
   ...MASUMI_MITSUI_GREENWAY,
   ...METROTOWN,
   ...MIDTOWN,
+  ...MILLENNIUM_TRAIL,
   ...MOSAIC,
   ...NANAIMO,
   ...NELSON,
