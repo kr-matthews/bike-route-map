@@ -24,7 +24,7 @@ export const FORTY_FIFTH = [
   {
     routeNames: [ROUTES.fortyFifth.name, ROUTES.balaclava.name],
     description: "balaclava",
-    videos: [VIDEOS.fortyFifthWb.id],
+    videos: [VIDEOS.fortyFifthWb.id, VIDEOS.balaclavaNb.id],
     videosEndAtStart: [VIDEOS.fortyFifthWb.id],
     positions: [BALACLAVA_45TH, CARNARVON_45TH],
   },

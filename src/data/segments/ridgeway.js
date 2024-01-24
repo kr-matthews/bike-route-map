@@ -62,6 +62,7 @@ export const RIDGEWAY = [
   {
     routeNames: [ROUTES.ridgeway.name, ROUTES.balaclava.name],
     description: "ridgeway main",
+    videos: [VIDEOS.balaclavaNb.id],
     positions: [
       QUESNEL_20TH,
       [49.25438, -123.17673],

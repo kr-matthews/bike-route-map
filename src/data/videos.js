@@ -24,6 +24,11 @@ const VIDEOS = {
     date: new Date("2023 08 19"),
     minutes: 5,
   },
+  balaclavaNb: {
+    id: "_t7bbctCh1g",
+    date: new Date("2024 01 21"),
+    minutes: 23,
+  },
   bcParkwayBurnabyEb: {
     id: "a9Rwmtu7SI0",
     date: new Date("2023 07 14"),

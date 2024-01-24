@@ -56,7 +56,7 @@ export const TWENTY_NINTH = [
       ROUTES.ridgeway.name,
     ],
     description: "balaclava/ridgeway overlap",
-    videos: [VIDEOS.twentyNinthWb.id],
+    videos: [VIDEOS.twentyNinthWb.id, VIDEOS.balaclavaNb.id],
     positions: [BALACLAVA_29TH, CARNARVON_29TH],
   },
   {

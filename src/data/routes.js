@@ -84,7 +84,7 @@ export const ROUTES = {
   },
   balaclava: {
     name: "Balaclava",
-    legs: [{ distance: 6.7, videos: {} }],
+    legs: [{ distance: 6.7, videos: { northbound: VIDEOS.balaclavaNb } }],
   },
   barnet: {
     name: "Barnet Highway",
