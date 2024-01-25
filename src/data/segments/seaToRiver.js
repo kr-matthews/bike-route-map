@@ -1,5 +1,6 @@
 import {
   CARLETON_FRANCES,
+  CARLETON_KINCAID,
   CARLETON_MOSCROP,
   GILMORE_CVG,
   GILMORE_KINCAID_NW,
@@ -114,8 +115,7 @@ export const SEA_TO_RIVER = [
   },
   {
     routeNames: [ROUTES.seaToRiver.name],
-    description: "moscrop to highway",
-    elevation: 0.5,
+    description: "moscrop to kincaid",
     videos: [VIDEOS.seaToRiverNb.id],
     positions: [
       CARLETON_MOSCROP,
@@ -127,7 +127,15 @@ export const SEA_TO_RIVER = [
       [49.24826, -123.01247],
       [49.24842, -123.0124],
       [49.24855, -123.01239],
-      [49.24879, -123.01247],
+      CARLETON_KINCAID,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaToRiver.name],
+    description: "kincaid",
+    videos: [VIDEOS.seaToRiverNb.id, VIDEOS.twentySecondEb.id],
+    positions: [
+      CARLETON_KINCAID,
       [49.24892, -123.01248],
       [49.249, -123.01245],
       [49.24909, -123.01232],
@@ -136,6 +144,15 @@ export const SEA_TO_RIVER = [
       [49.2492, -123.01063],
       [49.24918, -123.01047],
       [49.24919, -123.01037],
+      GILMORE_KINCAID_NW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaToRiver.name],
+    description: "kincaid to highway",
+    elevation: 0.5,
+    videos: [VIDEOS.seaToRiverNb.id],
+    positions: [
       GILMORE_KINCAID_NW,
       [49.24942, -123.01022],
       [49.24951, -123.01019],

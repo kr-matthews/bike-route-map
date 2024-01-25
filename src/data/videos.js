@@ -316,6 +316,11 @@ const VIDEOS = {
     date: new Date("2023 10 16"),
     minutes: 23,
   },
+  metrotownCcw: {
+    id: "EJCsejPUpnA",
+    date: new Date("2024 01 23"),
+    minutes: 13,
+  },
   midtownBurnabyWb: {
     id: "chQm0UsQBMg",
     date: new Date("2023 11 11"),
@@ -359,6 +364,11 @@ const VIDEOS = {
   //   date: new Date("2023 07 05"),
   //   minutes: 6,
   // },
+  northSouthSb: {
+    id: "lF8k9ry1lsI",
+    date: new Date("2024 01 23"),
+    minutes: 11,
+  },
   offBroadwayWb: {
     id: "7nKl_moRiog",
     date: new Date("2023 06 07"),
@@ -470,6 +480,11 @@ const VIDEOS = {
     minutes: 25,
   },
   twentySecondEb: {
+    id: "jZJkX092X3A",
+    date: new Date("2024 01 23"),
+    minutes: 13,
+  },
+  twentySecondWb: {
     id: "4vjaCs_VJTg",
     date: new Date("2023 06 10"),
     minutes: 6,

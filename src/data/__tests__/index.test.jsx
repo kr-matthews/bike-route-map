@@ -2,6 +2,7 @@ import "@testing-library/jest-dom";
 import { SEGMENTS } from "../segments";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
+import { MCKAY_BC_PARKWAY, MCKAY_CENTRAL_SE } from "../intersections";
 
 // helpers
 
@@ -18,6 +19,13 @@ const getARouteName = (videoId) => {
     )?.name ?? "NO ROUTE"
   );
 };
+
+const EXCEPTIONAL_SEAMS = [
+  // metrotown ccw loop point
+  MCKAY_BC_PARKWAY,
+  // metrotown ccw triple-intersection
+  MCKAY_CENTRAL_SE,
+];
 
 // calculations
 
@@ -93,8 +101,9 @@ describe("data", () => {
         });
 
         const unmatchedSeams = seams.filter(
-          // if a video overlaps itself, this may fail; consider changing to `=== 1`
-          (seam) => seams.filter((s) => positionsMatch(seam, s)).length !== 2
+          (seam) =>
+            seams.filter((s) => positionsMatch(seam, s)).length !== 2 &&
+            !EXCEPTIONAL_SEAMS.some((s) => positionsMatch(seam, s))
         );
 
         expect(unmatchedSeams).toHaveLength(0);

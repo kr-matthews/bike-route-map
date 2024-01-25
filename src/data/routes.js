@@ -39,7 +39,15 @@ export const ROUTES = {
   },
   twentySecond: {
     name: "22nd Ave",
-    legs: [{ distance: 2.4, videos: { westbound: VIDEOS.twentySecondEb } }],
+    legs: [
+      {
+        distance: 2.4,
+        videos: {
+          eastbound: VIDEOS.twentySecondEb,
+          westbound: VIDEOS.twentySecondWb,
+        },
+      },
+    ],
   },
   twentyNinth: {
     name: "29th",
@@ -491,7 +499,9 @@ export const ROUTES = {
   },
   metrotown: {
     name: "Metrotown",
-    legs: [{ distance: 2.5, videos: {} }],
+    legs: [
+      { distance: 2.5, videos: { counterclockwise: VIDEOS.metrotownCcw } },
+    ],
   },
   midtown: {
     name: "Midtown",
@@ -536,7 +546,7 @@ export const ROUTES = {
   },
   northSouth: {
     name: "North/South",
-    legs: [{ distance: 2.9, videos: {} }],
+    legs: [{ distance: 2.9, videos: { southbound: VIDEOS.northSouthSb } }],
   },
   oakStreetBridge: {
     name: "Oak Street Bridge",

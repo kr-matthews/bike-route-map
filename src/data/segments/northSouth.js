@@ -4,6 +4,7 @@ import {
   SUSSEX_HAZEL_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const SUSSEX_GRANGE_N = [49.23005, -122.99778];
 const WAYBURNE_DEER_LAKE_SE = [49.24157, -122.99795];
@@ -13,7 +14,7 @@ const WAYBURNE_NB_LANE_END = [49.25169, -122.99529];
 export const NORTH_SOUTH = [
   {
     routeNames: [ROUTES.northSouth.name],
-    description: "sussex south end sb",
+    description: "sussex south end nb",
     type: "dedicated",
     oneWay: "required",
     positions: [
@@ -25,20 +26,24 @@ export const NORTH_SOUTH = [
   },
   {
     routeNames: [ROUTES.northSouth.name],
-    description: "sussex south end nb",
+    description: "sussex south end sb",
     type: "shared",
     oneWay: "required",
-    positions: [
-      SUSSEX_GRANGE_N,
-      [49.22994, -122.99787],
-      SUSSEX_HAZEL_NW,
-      SUSSEX_HAZEL_S,
-    ],
+    videos: [VIDEOS.northSouthSb.id],
+    videosEndAtEnd: [VIDEOS.northSouthSb.id],
+    positions: [SUSSEX_GRANGE_N, [49.22994, -122.99787], SUSSEX_HAZEL_NW],
+  },
+  {
+    routeNames: [ROUTES.northSouth.name],
+    description: "crossing hazel sb",
+    type: "shared",
+    positions: [SUSSEX_HAZEL_NW, SUSSEX_HAZEL_S],
   },
   {
     routeNames: [ROUTES.northSouth.name],
     description: "sussex",
     type: "quiet",
+    videos: [VIDEOS.northSouthSb.id],
     positions: [
       SUSSEX_GRANGE_N,
       [49.23011, -122.99777],
@@ -122,6 +127,8 @@ export const NORTH_SOUTH = [
     description: "wayburne sb",
     type: "shared",
     oneWay: "required",
+    videos: [VIDEOS.northSouthSb.id],
+    videosStartAtStart: [VIDEOS.northSouthSb.id],
     positions: [
       [49.25442, -122.99357],
       [49.25428, -122.99358],

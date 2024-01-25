@@ -1,17 +1,18 @@
 import {
   BONSOR_BC_PARKWAY,
   MCKAY_BC_PARKWAY,
+  MCKAY_CENTRAL_SE,
   NELSON_BENNETT_SW,
   SUSSEX_HAZEL_NE,
   SUSSEX_HAZEL_NW,
   SUSSEX_HAZEL_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const MCKAY_HAZEL_SW = [49.23023, -123.00209];
 const MCKAY_KINGSWAY_NW = [49.22966, -123.0027];
 const MCKAY_KINGSWAY_SW = [49.22947, -123.00289];
-const MCKAY_CENTRAL_SE = [49.22674, -123.00566];
 const BONSOR_CENTRAL_SW = [49.22347, -122.9986];
 const MCMURRAY_HAZEL_NW = [49.22859, -122.99659];
 
@@ -26,13 +27,19 @@ export const METROTOWN = [
   {
     description: "bc parkway connection - mckay",
     type: "comfortable",
+    videos: [VIDEOS.metrotownCcw.id],
+    videosLoopAtStart: [VIDEOS.metrotownCcw.id],
     positions: [
       MCKAY_BC_PARKWAY,
       [49.22659, -123.00574],
       [49.22667, -123.00572],
       MCKAY_CENTRAL_SE,
-      MCKAY_CENTRAL_NE,
     ],
+  },
+  {
+    description: "mckay crossing central",
+    type: "shared",
+    positions: [MCKAY_CENTRAL_SE, MCKAY_CENTRAL_NE],
   },
   {
     description: "bc parkway connection - bonsor",
@@ -74,6 +81,7 @@ export const METROTOWN = [
     description: "ccw: sussex to mckay",
     type: "shared",
     oneWay: "required",
+    videos: [VIDEOS.metrotownCcw.id],
     positions: [
       SUSSEX_HAZEL_NE,
       SUSSEX_HAZEL_NW,
@@ -87,6 +95,7 @@ export const METROTOWN = [
     description: "ccw: hazel to kingsway",
     type: "combined",
     oneWay: "required",
+    videos: [VIDEOS.metrotownCcw.id],
     positions: [
       MCKAY_HAZEL_SW,
       [49.23017, -123.00216],
@@ -101,6 +110,7 @@ export const METROTOWN = [
     description: "ccw: kingsway to mcmurray",
     type: "shared",
     oneWay: "required",
+    videos: [VIDEOS.metrotownCcw.id],
     positions: [
       MCKAY_KINGSWAY_NW,
       MCKAY_KINGSWAY_SW,
@@ -145,6 +155,7 @@ export const METROTOWN = [
     description: "ccw: mcmurray to sussex",
     type: "combined",
     oneWay: "required",
+    videos: [VIDEOS.metrotownCcw.id],
     positions: [MCMURRAY_HAZEL_NW, SUSSEX_HAZEL_NE],
   },
 

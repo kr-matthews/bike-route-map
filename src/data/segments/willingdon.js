@@ -57,6 +57,8 @@ export const WILLINGDON = [
   {
     description: "gilmore connection via sanderson",
     type: "mixed",
+    videos: [VIDEOS.twentySecondEb.id],
+    videosEndAtEnd: [VIDEOS.twentySecondEb.id],
     positions: [
       GILMORE_KINCAID_NW,
       [49.2493, -123.01019],
