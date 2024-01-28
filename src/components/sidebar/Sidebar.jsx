@@ -1,3 +1,4 @@
+import About from "./About";
 import Filters from "./Filters";
 import Legend from "./Legend";
 import Routes from "./Routes";
@@ -7,9 +8,9 @@ import useSavedState from "../../hooks/useSavedState";
 
 export const VIEWS = {
   routes: { key: "routes", name: "Routes" },
+  about: { key: "about", name: "About" },
   legend: { key: "legend", name: "Legend" },
   filters: { key: "filters", name: "Filters" },
-  about: { key: "about", name: "About" },
 };
 
 export default function Sidebar({ mapRef }) {
@@ -42,7 +43,7 @@ export default function Sidebar({ mapRef }) {
 
       {viewKey === VIEWS.filters.key && <Filters goBack={backToRoutes} />}
 
-      {viewKey === VIEWS.about.key && <>TODO</>}
+      {viewKey === VIEWS.about.key && <About goBack={backToRoutes} />}
     </div>
   );
 }
