@@ -7,19 +7,15 @@ import useSavedState from "../../hooks/useSavedState";
 // !! move styling to css files
 
 export const VIEWS = {
-  routes: { key: "routes", name: "Routes" },
-  about: { key: "about", name: "About" },
-  legend: { key: "legend", name: "Legend" },
-  filters: { key: "filters", name: "Filters" },
+  about: { key: "about", name: "About", Component: About },
+  legend: { key: "legend", name: "Legend", Component: Legend },
+  filters: { key: "filters", name: "Filters", Component: Filters },
 };
 
 export default function Sidebar({ mapRef }) {
-  const [viewKey, setViewKey] = useSavedState(
-    "view_selection",
-    VIEWS.routes.key
-  );
-  const backToRoutes = () => setViewKey(VIEWS.routes.key);
-  const isNoneSelected = Object.values(VIEWS).every(
+  const [viewKey, setViewKey] = useSavedState("selected_view", VIEWS.about.key);
+  const backToRoutes = () => setViewKey("default");
+  const isNoViewSelected = Object.values(VIEWS).every(
     ({ key }) => key !== viewKey
   );
 
@@ -35,15 +31,16 @@ export default function Sidebar({ mapRef }) {
         backgroundColor: "AliceBlue",
       }}
     >
-      {(viewKey === VIEWS.routes.key || isNoneSelected) && (
-        <Routes mapRef={mapRef} navigateTo={(view) => setViewKey(view.key)} />
+      {Object.values(VIEWS).map(
+        (view) =>
+          viewKey === view.key && (
+            <view.Component key={view.key} goBack={backToRoutes} />
+          )
       )}
 
-      {viewKey === VIEWS.legend.key && <Legend goBack={backToRoutes} />}
-
-      {viewKey === VIEWS.filters.key && <Filters goBack={backToRoutes} />}
-
-      {viewKey === VIEWS.about.key && <About goBack={backToRoutes} />}
+      {isNoViewSelected && (
+        <Routes mapRef={mapRef} navigateTo={(view) => setViewKey(view.key)} />
+      )}
     </div>
   );
 }

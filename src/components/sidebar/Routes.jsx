@@ -53,23 +53,20 @@ export default function Routes({ mapRef, navigateTo }) {
             borderColor: DARK_BLUE,
           }}
         >
-          {Object.values(VIEWS).map(
-            (view) =>
-              view.key !== VIEWS.routes.key && (
-                <button
-                  key={view.key}
-                  style={{
-                    cursor: "pointer",
-                    color: WHITE,
-                    backgroundColor: LIGHT_BLUE,
-                    borderColor: DARK_BLUE,
-                  }}
-                  onClick={() => navigateTo(view)}
-                >
-                  {view.name}
-                </button>
-              )
-          )}
+          {Object.values(VIEWS).map((view) => (
+            <button
+              key={view.key}
+              style={{
+                cursor: "pointer",
+                color: WHITE,
+                backgroundColor: LIGHT_BLUE,
+                borderColor: DARK_BLUE,
+              }}
+              onClick={() => navigateTo(view)}
+            >
+              {view.name}
+            </button>
+          ))}
         </span>
         <div
           style={{
