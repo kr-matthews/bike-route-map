@@ -2,6 +2,9 @@ import {
   RAILWAY_GRANVILLE_MIDDLE,
   RAILWAY_GRANVILLE_NW,
   RAILWAY_GRANVILLE_SE,
+  RAILWAY_WILLIAMS_NE,
+  RAILWAY_WILLIAMS_NW,
+  RAILWAY_WILLIAMS_SE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
@@ -10,7 +13,6 @@ const RAILWAY_GRANVILLE_SW = [49.16223, -123.16949];
 const NB_PRE_STEVESTON = [49.13301, -123.16975];
 const RAILWAY_STEVESTON_SE = [49.13362, -123.16975];
 const NB_PRE_WILLIAMS = [49.14036, -123.16977];
-const RAILWAY_WILLIAMS_SE = [49.14107, -123.16976];
 const NB_PRE_FRANCIS = [49.14774, -123.16976];
 const RAILWAY_FRANCIS_SE = [49.14833, -123.16975];
 const NB_PRE_BLUNDELL = [49.15494, -123.16978];
@@ -78,7 +80,7 @@ export const RAILWAY = [
     description: "nb: pre-williams",
     type: "shared",
     oneWay: "required",
-    positions: [NB_PRE_WILLIAMS, RAILWAY_WILLIAMS_SE],
+    positions: [NB_PRE_WILLIAMS, RAILWAY_WILLIAMS_SE, RAILWAY_WILLIAMS_NE],
   },
   {
     routeNames: [ROUTES.railway.name],
@@ -86,7 +88,7 @@ export const RAILWAY = [
     type: "painted",
     oneWay: "required",
     positions: [
-      RAILWAY_WILLIAMS_SE,
+      RAILWAY_WILLIAMS_NE,
       [49.14392, -123.16976],
       [49.14682, -123.16975],
       NB_PRE_FRANCIS,
@@ -176,7 +178,7 @@ export const RAILWAY = [
       [49.14832, -123.16989],
       [49.14584, -123.1699],
       [49.14389, -123.1699],
-      [49.14104, -123.1699],
+      RAILWAY_WILLIAMS_NW,
       [49.13675, -123.16989],
       SB_PRE_STEVESTON,
     ],

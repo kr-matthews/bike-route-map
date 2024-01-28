@@ -7,6 +7,9 @@ import {
   GARDEN_CITY_SB_ROAD_START,
   GARDEN_CITY_SB_START,
   GARDEN_CITY_SEA_ISLAND_SE,
+  GARDEN_CITY_WILLIAMS_NE,
+  GARDEN_CITY_WILLIAMS_NW,
+  GARDEN_CITY_WILLIAMS_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -196,7 +199,8 @@ export const GARDEN_CITY = [
     videos: [VIDEOS.gardenCityNb.id],
     videosStartAtStart: [VIDEOS.gardenCityNb.id],
     positions: [
-      [49.14089, -123.12522], // GARDEN_CITY_WILLIAMS_NE
+      GARDEN_CITY_WILLIAMS_S,
+      GARDEN_CITY_WILLIAMS_NE,
       NB_AFTER_WILLIAMS,
     ],
   },
@@ -234,10 +238,14 @@ export const GARDEN_CITY = [
     oneWay: "required",
     videos: [VIDEOS.gardenCitySb.id],
     videosEndAtEnd: [VIDEOS.gardenCitySb.id],
-    positions: [
-      SB_BEFORE_WILLIAMS,
-      [49.14091, -123.12538], // GARDEN_CITY_WILLIAMS_NW
-    ],
+    positions: [SB_BEFORE_WILLIAMS, GARDEN_CITY_WILLIAMS_NW],
+  },
+  {
+    routeNames: [ROUTES.gardenCity.name],
+    description: "sb: crossing williams",
+    type: "shared",
+    oneWay: "required",
+    positions: [GARDEN_CITY_WILLIAMS_NW, GARDEN_CITY_WILLIAMS_S],
   },
   {
     routeNames: [ROUTES.gardenCity.name],

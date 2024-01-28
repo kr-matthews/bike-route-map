@@ -103,6 +103,7 @@ import { SEA_TO_RIVER } from "./seaToRiver";
 import { SEASIDE } from "./seaside";
 import { SEASIDE_BYPASS } from "./seasideBypass";
 import { SECOND_NARROWS_BRIDGE } from "./secondNarrowsBridge";
+import { SHELL_ROAD_TRAIL } from "./shellRoadTrail";
 import { SIXTEENTH } from "./sixteenth";
 import { SIXTY_SEVENTH } from "./sixtySeventh";
 import { SMITHE } from "./smithe";
@@ -122,6 +123,7 @@ import { VICTORY } from "./victory";
 import { WALES_DUCHESS } from "./walesDuchess";
 import { WATERFRONT } from "./waterfront";
 import { WESBROOK } from "./wesbrook";
+import { WILLIAMS } from "./williams";
 import { WILLINGDON } from "./willingdon";
 import { WILLINGDON_LINEAR_PARK } from "./willingdonLinearPark";
 import { WINDERMERE } from "./windermere";
@@ -236,6 +238,7 @@ export const SEGMENTS = [
   ...SEASIDE,
   ...SEASIDE_BYPASS,
   ...SECOND_NARROWS_BRIDGE,
+  ...SHELL_ROAD_TRAIL,
   ...SIXTEENTH,
   ...SIXTY_SEVENTH,
   ...SMITHE,
@@ -255,6 +258,7 @@ export const SEGMENTS = [
   ...WALES_DUCHESS,
   ...WATERFRONT,
   ...WESBROOK,
+  ...WILLIAMS,
   ...WILLINGDON,
   ...WILLINGDON_LINEAR_PARK,
   ...WINDERMERE,

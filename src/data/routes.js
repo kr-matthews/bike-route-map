@@ -4,7 +4,7 @@ import { VIDEOS } from "./videos";
 // Burnaby:
 // SFU: (to do)
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
-// Richmond: no. 3; williams; river pkwy; minoru; francis (shell); ash; westminster hwy; no. 6 paths; lynas; no. 2 path; west-most n-s; dyke
+// Richmond: no. 3; river pkwy; minoru; ash; westminster hwy; no. 6 paths; lynas; no. 2 path; west-most n-s; dyke
 // YVR: ferguson; russ baker; sea island/bridgeport bridges; paths
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
@@ -670,8 +670,7 @@ export const ROUTES = {
   },
   shellRoadTrail: {
     name: "Shell Road Trail",
-    legs: [{ videos: {} }],
-    isIncomplete: true,
+    legs: [{ distance: 5.3, videos: {} }],
   },
   smithe: {
     name: "Smithe St",
@@ -734,6 +733,10 @@ export const ROUTES = {
   wesbrook: {
     name: "Wesbrook Mall",
     legs: [{ distance: 3.4, videos: {} }],
+  },
+  williams: {
+    name: "Williams Rd",
+    legs: [{ distance: 7.3, videos: {} }],
   },
   willingdon: {
     name: "Willingdon Urban Trail",
