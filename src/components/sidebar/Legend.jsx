@@ -176,7 +176,9 @@ export default function Legend({ goBack }) {
         }}
       >
         <MapContainer
-          // key required to trigger new map to remove old arrows
+          // key required to correctly set panels for elevation
+          // it could be removed if each segment was always rendered but
+          // hidden via width/opacity like the main map
           key={key}
           style={{ width: mapWidth, height: mapHeight }}
           // bounds={mapBounds}
