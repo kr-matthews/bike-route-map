@@ -3,7 +3,6 @@ import { DARK_BLUE, LIGHT_BLUE, WHITE } from "../../utils/colours";
 import { Selections } from "../../App";
 import SegmentForm from "./SegmentForm";
 
-// !!! reconfigure to routes being home page
 // !!! replace buttons with icons when appropriate
 // !!! show tooltips on border (and on arrows??)
 // !!! general clean up and de-duplication
@@ -44,7 +43,7 @@ export default function Filters({ goBack }) {
         }}
         onClick={goBack}
       >
-        Menu
+        Close
       </button>
 
       <button

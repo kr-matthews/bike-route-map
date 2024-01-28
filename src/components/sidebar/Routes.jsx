@@ -12,8 +12,10 @@ import {
   WHITE,
 } from "../../utils/colours";
 import { COLOUR_HIGHLIGHTED } from "../../utils/constants";
+import SelectedRoute from "./SelectedRoute";
+import { VIEWS } from "./Sidebar";
 
-export default function Routes({ goBack }) {
+export default function Routes({ mapRef, navigateTo }) {
   const [searchText, setSearchText] = useState("");
   const routesToShow = useMemo(
     () =>
@@ -27,47 +29,65 @@ export default function Routes({ goBack }) {
   );
 
   return (
-    <div
-      style={{
-        paddingLeft: "1em",
-        flex: "1",
-        overflow: "auto",
-        display: "flex",
-        flexDirection: "column",
-        position: "relative",
-      }}
-    >
-      <h2 style={{ paddingLeft: 15 }}>Routes</h2>
-      <Search text={searchText} setText={setSearchText} />
-      <button
-        style={{
-          position: "absolute",
-          top: 25,
-          right: 20,
-          cursor: "pointer",
-          color: WHITE,
-          backgroundColor: LIGHT_BLUE,
-          borderColor: DARK_BLUE,
-        }}
-        onClick={goBack}
-      >
-        Menu
-      </button>
+    <>
       <div
         style={{
-          flex: 2,
-          overflowY: "scroll",
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr 1fr",
-          gridTemplateRows: "repeat(1000, auto)",
-          font: "120% system-ui",
+          paddingLeft: "1em",
+          flex: "1",
+          overflow: "auto",
+          display: "flex",
+          flexDirection: "column",
+          position: "relative",
         }}
       >
-        {routesToShow.map((route) => (
-          <Route key={route.name} route={route} />
-        ))}
+        <h2 style={{ paddingLeft: 15 }}>Routes</h2>
+        <Search text={searchText} setText={setSearchText} />
+        <span
+          style={{
+            position: "absolute",
+            top: 25,
+            right: 20,
+            cursor: "pointer",
+            color: WHITE,
+            backgroundColor: LIGHT_BLUE,
+            borderColor: DARK_BLUE,
+          }}
+        >
+          {Object.values(VIEWS).map(
+            (view) =>
+              view.key !== VIEWS.routes.key && (
+                <button
+                  key={view.key}
+                  style={{
+                    cursor: "pointer",
+                    color: WHITE,
+                    backgroundColor: LIGHT_BLUE,
+                    borderColor: DARK_BLUE,
+                  }}
+                  onClick={() => navigateTo(view)}
+                >
+                  {view.name}
+                </button>
+              )
+          )}
+        </span>
+        <div
+          style={{
+            flex: 2,
+            overflowY: "scroll",
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr 1fr",
+            gridTemplateRows: "repeat(1000, auto)",
+            font: "120% system-ui",
+          }}
+        >
+          {routesToShow.map((route) => (
+            <Route key={route.name} route={route} />
+          ))}
+        </div>
       </div>
-    </div>
+      <SelectedRoute mapRef={mapRef} />
+    </>
   );
 }
 

@@ -155,7 +155,7 @@ export default function Legend({ goBack }) {
         }}
         onClick={goBack}
       >
-        Menu
+        Close
       </button>
 
       <SegmentForm

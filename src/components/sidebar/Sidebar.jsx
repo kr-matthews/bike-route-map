@@ -1,39 +1,26 @@
-import { useCallback } from "react";
-import Legend from "./Legend";
-import Menu from "./Menu";
-import Routes from "./Routes";
-import SelectedRoute from "./SelectedRoute";
-import useRoutesAutoSelect from "../../hooks/useRoutesAutoSelect";
-import useSavedState from "../../hooks/useSavedState";
 import Filters from "./Filters";
+import Legend from "./Legend";
+import Routes from "./Routes";
+import useSavedState from "../../hooks/useSavedState";
 
 // !! move styling to css files
 
-const ID_LEGEND = "legend";
-const ID_ROUTES = "routes";
-const ID_FILTERS = "filters";
-const ID_NONE = "none";
-
-const menuOptions = [
-  { id: ID_LEGEND, name: "Legend" },
-  { id: ID_ROUTES, name: "Routes" },
-  { id: ID_FILTERS, name: "Filters" },
-];
+export const VIEWS = {
+  routes: { key: "routes", name: "Routes" },
+  legend: { key: "legend", name: "Legend" },
+  filters: { key: "filters", name: "Filters" },
+  about: { key: "about", name: "About" },
+};
 
 export default function Sidebar({ mapRef }) {
-  const [selectedOptionId, setSelectedOptionId] = useSavedState(
-    "menu_selection",
-    ID_NONE
+  const [viewKey, setViewKey] = useSavedState(
+    "view_selection",
+    VIEWS.routes.key
   );
-  const backToMenu = () => setSelectedOptionId(ID_NONE);
-  const isNoneSelected = menuOptions.every(({ id }) => id !== selectedOptionId);
-
-  const isOnMenu = selectedOptionId === ID_NONE;
-  const goToRoutes = useCallback(
-    () => setSelectedOptionId(ID_ROUTES),
-    [setSelectedOptionId]
+  const backToRoutes = () => setViewKey(VIEWS.routes.key);
+  const isNoneSelected = Object.values(VIEWS).every(
+    ({ key }) => key !== viewKey
   );
-  useRoutesAutoSelect(isOnMenu, goToRoutes);
 
   return (
     <div
@@ -47,20 +34,15 @@ export default function Sidebar({ mapRef }) {
         backgroundColor: "AliceBlue",
       }}
     >
-      {isNoneSelected && (
-        <Menu options={menuOptions} setSelectedId={setSelectedOptionId} />
+      {(viewKey === VIEWS.routes.key || isNoneSelected) && (
+        <Routes mapRef={mapRef} navigateTo={(view) => setViewKey(view.key)} />
       )}
 
-      {selectedOptionId === ID_LEGEND && <Legend goBack={backToMenu} />}
+      {viewKey === VIEWS.legend.key && <Legend goBack={backToRoutes} />}
 
-      {selectedOptionId === ID_ROUTES && (
-        <>
-          <Routes goBack={backToMenu} />
-          <SelectedRoute mapRef={mapRef} />
-        </>
-      )}
+      {viewKey === VIEWS.filters.key && <Filters goBack={backToRoutes} />}
 
-      {selectedOptionId === ID_FILTERS && <Filters goBack={backToMenu} />}
+      {viewKey === VIEWS.about.key && <>TODO</>}
     </div>
   );
 }
