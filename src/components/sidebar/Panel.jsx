@@ -6,33 +6,20 @@ import {
   CodeLink,
   Link,
 } from "footer-dependency/dist/lib";
-import { DARK_BLUE, LIGHT_BLUE, WHITE } from "../../utils/colours";
 import TryingToViewRoute from "./TryingToViewRoute";
+import CloseIcon from "../icons/CloseIcon";
 
 export default function Panel({ name, goBack, withLinks, wide, children }) {
   return (
     <div style={{ overflowY: "auto" }}>
       <div
         style={{
-          margin: wide ? "2em 0.5em" : "2em",
+          margin: wide ? "0 0.5em" : "0 2em",
           minHeight: "calc(100vh - 170px)",
         }}
       >
-        <h1 style={{ textAlign: "center" }}>{name}</h1>
-        <button
-          style={{
-            position: "absolute",
-            top: 25,
-            right: 20,
-            cursor: "pointer",
-            color: WHITE,
-            backgroundColor: LIGHT_BLUE,
-            borderColor: DARK_BLUE,
-          }}
-          onClick={goBack}
-        >
-          Close
-        </button>
+        <h2 style={{ textAlign: "center" }}>{name}</h2>
+        <CloseIcon onClick={goBack} type="dark" />
 
         <div>
           <TryingToViewRoute />

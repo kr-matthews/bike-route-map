@@ -4,10 +4,9 @@ import SegmentForm from "./SegmentForm";
 import Panel from "./Panel";
 import { VIEWS } from "./Sidebar";
 
-// !!! replace buttons with icons when appropriate
 // !!! show tooltips on border (and on arrows??)
-// !! add leg data and highlight on hover
-// !! handle non-routes, allow them to be previewed when they have a video
+// !!! add leg data and highlight on hover
+// !!! ? handle non-routes, allow them to be previewed when they have a video
 
 const videoOptions = [undefined, true, false];
 

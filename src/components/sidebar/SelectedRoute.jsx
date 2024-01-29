@@ -3,6 +3,8 @@ import { Selections } from "../../App";
 import Leg from "./Leg";
 import { getRouteBounds } from "../../utils/map";
 import { DARK_GREEN, WHITE } from "../../utils/colours";
+import CloseIcon from "../icons/CloseIcon";
+import ZoomToIcon from "../icons/ZoomToIcon";
 
 export default function SelectedRoute({ mapRef }) {
   const { selectedRoute, setSelected, setHighlighted } = useContext(Selections);
@@ -24,19 +26,11 @@ export default function SelectedRoute({ mapRef }) {
     >
       {selectedRoute && (
         <>
-          <button
-            style={{
-              position: "absolute",
-              top: 25,
-              left: 20,
-              cursor: "pointer",
-            }}
+          <ZoomToIcon
             onClick={() => mapRef.fitBounds(getRouteBounds(selectedRoute.name))}
             onMouseOver={() => setHighlighted(selectedRoute.name)}
             onMouseOut={() => setHighlighted(null)}
-          >
-            Zoom to
-          </button>
+          />
           <h2 style={{ textAlign: "center", marginBottom: "4px" }}>
             <span
               onMouseOver={() => setHighlighted(selectedRoute.name)}
@@ -45,17 +39,8 @@ export default function SelectedRoute({ mapRef }) {
               {selectedRoute.name}
             </span>
           </h2>
-          <button
-            style={{
-              position: "absolute",
-              top: 25,
-              right: 20,
-              cursor: "pointer",
-            }}
-            onClick={() => setSelected(null)}
-          >
-            Close
-          </button>
+          <CloseIcon onClick={() => setSelected(null)} />
+
           <div style={{ overflow: "auto" }}>
             {selectedRoute.isIncomplete && (
               <p style={{ paddingLeft: "1em" }}>

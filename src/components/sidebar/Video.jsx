@@ -50,6 +50,7 @@ export default function Video({ video, direction }) {
             width: "3em",
             cursor: "pointer",
           }}
+          title="Highlight on Map"
           onClick={updateVideo}
         >
           <label className="container">
