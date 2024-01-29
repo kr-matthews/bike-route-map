@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Selections } from "../../App";
 import Leg from "./Leg";
 import { getRouteBounds } from "../../utils/map";
+import { DARK_GREEN, WHITE } from "../../utils/colours";
 
 export default function SelectedRoute({ mapRef }) {
   const { selectedRoute, setSelected, setHighlighted } = useContext(Selections);
@@ -15,8 +16,8 @@ export default function SelectedRoute({ mapRef }) {
         borderTopRightRadius: "1em",
         display: "flex",
         flexDirection: "column",
-        backgroundColor: "DarkGreen",
-        color: "White",
+        backgroundColor: DARK_GREEN,
+        color: WHITE,
         transition: "height 0.7s",
         position: "relative",
       }}

@@ -1,12 +1,11 @@
 import { useContext } from "react";
-import { DARK_BLUE, LIGHT_BLUE, WHITE } from "../../utils/colours";
 import { Selections } from "../../App";
 import SegmentForm from "./SegmentForm";
-import TryingToViewRoute from "./TryingToViewRoute";
+import Panel from "./Panel";
+import { VIEWS } from "./Sidebar";
 
 // !!! replace buttons with icons when appropriate
 // !!! show tooltips on border (and on arrows??)
-// !!! general clean up and de-duplication
 // !! add leg data and highlight on hover
 // !! handle non-routes, allow them to be previewed when they have a video
 
@@ -19,36 +18,7 @@ export default function Filters({ goBack }) {
   const { filters, dispatchFilters } = useContext(Selections);
 
   return (
-    <div
-      style={{
-        paddingLeft: "0.5em",
-        paddingRight: "0.5em",
-        flex: "1",
-        overflow: "auto",
-        display: "flex",
-        flexDirection: "column",
-        backgroundColor: "AliceBlue",
-        position: "relative",
-      }}
-    >
-      <h2 style={{ paddingLeft: 15 }}>Filters</h2>
-      <button
-        style={{
-          position: "absolute",
-          top: 25,
-          right: 20,
-          cursor: "pointer",
-          color: WHITE,
-          backgroundColor: LIGHT_BLUE,
-          borderColor: DARK_BLUE,
-        }}
-        onClick={goBack}
-      >
-        Close
-      </button>
-
-      <TryingToViewRoute />
-
+    <Panel name={VIEWS.filters.name} goBack={goBack} wide>
       <button
         style={{
           cursor: "pointer",
@@ -95,6 +65,6 @@ export default function Filters({ goBack }) {
           </label>
         );
       })}
-    </div>
+    </Panel>
   );
 }

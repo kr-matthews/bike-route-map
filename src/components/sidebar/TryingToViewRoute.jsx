@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { Selections } from "../../App";
+import { LIGHT_YELLOW } from "../../utils/colours";
 
 export default function TryingToViewRoute() {
   const { selectedRoute } = useContext(Selections);
@@ -10,7 +11,7 @@ export default function TryingToViewRoute() {
         style={{
           color: "red",
           border: "1px black solid",
-          background: "yellow",
+          background: LIGHT_YELLOW,
           padding: "10px",
           textAlign: "center",
         }}

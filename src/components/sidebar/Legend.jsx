@@ -3,7 +3,6 @@ import { MapContainer } from "react-leaflet";
 import Segment from "../map/Segment";
 import PanesAndTiles from "../map/PanesAndTiles";
 import { ZOOMED_IN_A_BIT } from "../../utils/constants";
-import { DARK_BLUE, LIGHT_BLUE, WHITE } from "../../utils/colours";
 import {
   DIRECTION_TYPES,
   ELEVATION_TYPES,
@@ -13,7 +12,8 @@ import {
   getType,
 } from "../../utils/segmentTypes";
 import SegmentForm from "./SegmentForm";
-import TryingToViewRoute from "./TryingToViewRoute";
+import Panel from "./Panel";
+import { VIEWS } from "./Sidebar";
 
 const intersection = [49.26208, -123.10495];
 
@@ -131,36 +131,7 @@ export default function Legend({ goBack }) {
   );
 
   return (
-    <div
-      style={{
-        paddingLeft: "0.5em",
-        paddingRight: "0.5em",
-        flex: "1",
-        overflow: "auto",
-        display: "flex",
-        flexDirection: "column",
-        backgroundColor: "AliceBlue",
-        position: "relative",
-      }}
-    >
-      <h2 style={{ paddingLeft: 15 }}>Legend</h2>
-      <button
-        style={{
-          position: "absolute",
-          top: 25,
-          right: 20,
-          cursor: "pointer",
-          color: WHITE,
-          backgroundColor: LIGHT_BLUE,
-          borderColor: DARK_BLUE,
-        }}
-        onClick={goBack}
-      >
-        Close
-      </button>
-
-      <TryingToViewRoute />
-
+    <Panel name={VIEWS.legend.name} goBack={goBack} wide>
       <SegmentForm
         view="legend"
         types={types}
@@ -211,6 +182,6 @@ export default function Legend({ goBack }) {
           {elevationDescription}
         </p>
       )}
-    </div>
+    </Panel>
   );
 }

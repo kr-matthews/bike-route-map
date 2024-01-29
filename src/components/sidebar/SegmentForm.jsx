@@ -15,7 +15,6 @@ export default function SegmentForm({
   dispatch,
 }) {
   const isLegend = view === "legend";
-  // const isFilter = view === "filter";
 
   const isAnAlwaysOneWayTypeSelected = TYPE_TYPES.some(
     (t) => types[t.key] && isAlwaysOneWay(t)

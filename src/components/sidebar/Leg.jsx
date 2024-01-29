@@ -15,6 +15,7 @@ export default function Leg({ leg }) {
           {leg.name}
         </h3>
       )}
+
       {distance && (
         <div
           style={{ paddingBottom: "4px", textAlign: "center", fontSize: "90%" }}
@@ -22,6 +23,7 @@ export default function Leg({ leg }) {
           <span>{distanceText}</span>
         </div>
       )}
+
       <div style={{ display: "flex", marginBottom: "4px" }}>
         {hasNoVideos && (
           <p style={{ paddingLeft: "1em" }}>No videos, yet. Come back later.</p>
