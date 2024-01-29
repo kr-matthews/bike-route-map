@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { DARK_BLUE, LIGHT_BLUE, WHITE } from "../../utils/colours";
 import { Selections } from "../../App";
 import SegmentForm from "./SegmentForm";
+import TryingToViewRoute from "./TryingToViewRoute";
 
 // !!! replace buttons with icons when appropriate
 // !!! show tooltips on border (and on arrows??)
@@ -45,6 +46,8 @@ export default function Filters({ goBack }) {
       >
         Close
       </button>
+
+      <TryingToViewRoute />
 
       <button
         style={{

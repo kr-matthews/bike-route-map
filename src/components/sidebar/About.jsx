@@ -9,6 +9,7 @@ import {
 } from "footer-dependency/dist/lib";
 import { disclaimer } from "../../utils/strings";
 import { DARK_BLUE, LIGHT_BLUE, WHITE } from "../../utils/colours";
+import TryingToViewRoute from "./TryingToViewRoute";
 
 export default function About({ goBack }) {
   return (
@@ -31,6 +32,7 @@ export default function About({ goBack }) {
         </button>
 
         <div>
+          <TryingToViewRoute />
           <p>
             This is a map of bike routes in and around Vancouver. All bike
             routes in <b>Vancouver</b> are included. Most bike routes in{" "}

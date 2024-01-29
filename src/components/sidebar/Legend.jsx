@@ -13,6 +13,7 @@ import {
   getType,
 } from "../../utils/segmentTypes";
 import SegmentForm from "./SegmentForm";
+import TryingToViewRoute from "./TryingToViewRoute";
 
 const intersection = [49.26208, -123.10495];
 
@@ -157,6 +158,8 @@ export default function Legend({ goBack }) {
       >
         Close
       </button>
+
+      <TryingToViewRoute />
 
       <SegmentForm
         view="legend"
