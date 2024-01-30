@@ -1,4 +1,5 @@
 import {
+  GARDEN_CITY_CITATION_W,
   GARDEN_CITY_GRANVILLE_NW,
   GARDEN_CITY_GRANVILLE_S,
   GARDEN_CITY_GRANVILLE_W,
@@ -13,6 +14,7 @@ import { ROUTES } from "../routes";
 const RAILWAY_GRANVILLE_N = [49.1626, -123.16888];
 const GARDEN_CITY_GRANVILLE_SW = [49.16272, -123.12627];
 const WB_LANE_START = [49.16268, -123.16942];
+const CITATION_GRANVILLE_N = [49.16282, -123.1278];
 
 export const GRANVILLE = [
   // eb
@@ -129,6 +131,23 @@ export const GRANVILLE = [
     ],
   },
   {
+    description: "citation",
+    type: "quiet",
+    oneWay: "required",
+    positions: [
+      GARDEN_CITY_CITATION_W,
+      [49.16515, -123.12494],
+      [49.16513, -123.12508],
+      [49.16502, -123.12584],
+      [49.16421, -123.12721],
+      [49.16401, -123.12742],
+      [49.16375, -123.12756],
+      [49.16296, -123.12757],
+      [49.16286, -123.12763],
+      CITATION_GRANVILLE_N,
+    ],
+  },
+  {
     routeNames: [ROUTES.granville.name],
     description: "primary wb",
     type: "painted",
@@ -139,7 +158,7 @@ export const GRANVILLE = [
       [49.16295, -123.12633],
       [49.16288, -123.12667],
       [49.16284, -123.12705],
-      [49.16282, -123.1278],
+      CITATION_GRANVILLE_N,
       [49.16282, -123.13101],
       [49.16283, -123.13375],
       [49.16282, -123.13643],

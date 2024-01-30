@@ -1,5 +1,6 @@
 import {
   BC_PARKWAY_CVG_SPLIT,
+  BEGBIE_COLUMBIA_N,
   BRUNETTE_FRASER_CVG_NE,
   BRUNETTE_FRASER_CVG_SE,
   BRUNETTE_FRASER_CVG_SW,
@@ -8,6 +9,7 @@ import {
   COLUMBIA_CUMBERLAND_SE,
   COLUMBIA_SHERBROOKE_W,
   EASTBROOK_STILL_CREEK,
+  ELLIOT_COLUMBIA,
   GILMORE_CVG,
   GILMORE_STILL_CREEK,
   GLEN_6TH_N,
@@ -35,8 +37,6 @@ import {
   SPERLING_WINSTON,
   VICTORIA_BROADWAY_SE,
   WOODLAND_GRANDVIEW,
-  BEGBIE_COLUMBIA_N,
-  ELLIOT_COLUMBIA,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -83,6 +83,8 @@ const BEGBIE_COLUMBIA_S = [49.2018, -122.91035];
 
 const BOUNDARY_CVG = [49.26245, -123.02363];
 const EAST_OF_BOUNDARY = [49.26242, -123.02222];
+
+const PHILLIPS_WINSTON_S = [49.24967, -122.94875];
 
 export const CENTRAL_VALLEY_GREENWAY = [
   // connections
@@ -561,9 +563,10 @@ export const CENTRAL_VALLEY_GREENWAY = [
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
-    description: "winston eb",
+    description: "winston eb closed",
     type: "painted",
     oneWay: "required",
+    isClosed: true,
     positions: [
       WINSTON_GREENWOOD_NE,
       [49.25633, -122.96232],
@@ -584,7 +587,16 @@ export const CENTRAL_VALLEY_GREENWAY = [
       [49.24993, -122.94951],
       [49.24989, -122.94931],
       [49.24982, -122.94907],
-      [49.24967, -122.94875],
+      PHILLIPS_WINSTON_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.centralValleyGreenway.name],
+    description: "winston eb open",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      PHILLIPS_WINSTON_S,
       [49.24944, -122.94835],
       [49.2488, -122.94701],
       [49.24872, -122.94682],

@@ -1,4 +1,5 @@
 import {
+  GARDEN_CITY_CITATION_W,
   GARDEN_CITY_GRANVILLE_NE,
   GARDEN_CITY_GRANVILLE_NW,
   GARDEN_CITY_GRANVILLE_S,
@@ -14,7 +15,6 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-const GARDEN_CITY_CITATION = [49.16518, -123.12488];
 const GARDEN_CITY_GRANVILLE_N = [49.16311, -123.12566];
 const GARDEN_CITY_GRANVILLE_SE = [49.16288, -123.1253];
 const GARDEN_CITY_FRANCIS_SS = [49.14784, -123.12516];
@@ -52,7 +52,7 @@ export const GARDEN_CITY = [
       [49.17013, -123.12478],
       [49.16771, -123.1248],
       [49.16645, -123.12483],
-      GARDEN_CITY_CITATION,
+      GARDEN_CITY_CITATION_W,
     ],
   },
   {
@@ -62,7 +62,7 @@ export const GARDEN_CITY = [
     oneWay: "required",
     videos: [VIDEOS.gardenCitySb.id],
     positions: [
-      GARDEN_CITY_CITATION,
+      GARDEN_CITY_CITATION_W,
       [49.1643, -123.12488],
       [49.1641, -123.1249],
       [49.16393, -123.12496],

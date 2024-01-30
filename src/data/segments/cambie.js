@@ -1,5 +1,10 @@
 import {
+  CAMBIE_29TH_SE,
+  CAMBIE_37TH_E,
+  CAMBIE_45TH_E,
+  CAMBIE_49TH_SE,
   CAMBIE_49TH_SW,
+  CAMBIE_58TH_E,
   CAMBIE_59TH_NE,
   CAMBIE_59TH_NW,
   CAMBIE_63RD_E,
@@ -7,20 +12,20 @@ import {
   CAMBIE_64TH_W,
   CAMBIE_DUNSMUIR,
   CAMBIE_MARINE_NE,
-  CAMBIE_49TH_SE,
-  CAMBIE_45TH_E,
-  CAMBIE_37TH_E,
-  CAMBIE_PENDER_SE,
   CAMBIE_PENDER_NE,
+  CAMBIE_PENDER_SE,
   HEATHER_33RD_N,
   ONTARIO_42ND,
-  CAMBIE_29TH_SE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 const CAMBIE_42ND_E = [49.23252, -123.11606];
 const CAMBIE_33RD_E = [49.24112, -123.11824];
+const CAMBIE_58TH_W = [49.21776, -123.11706];
+
+const NB_LANE_START_35TH = [49.23955, -123.11705];
+const NB_LANE_END_35TH = [49.24018, -123.11775];
 
 const SOUTHBOUND_END = [49.21019, -123.11731];
 
@@ -77,7 +82,7 @@ export const CAMBIE = [
   },
   {
     routeNames: [ROUTES.cambie.name],
-    description: "sb",
+    description: "sb: 49th to 58th",
     type: "painted",
     oneWay: "required",
     videos: [VIDEOS.cambieSb.id],
@@ -87,7 +92,24 @@ export const CAMBIE = [
       [49.22177, -123.11686],
       [49.21907, -123.11697],
       [49.21787, -123.11701],
-      [49.21776, -123.11707],
+      CAMBIE_58TH_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.cambie.name],
+    description: "sb: 58th to 59th",
+    type: "dedicated",
+    oneWay: "required",
+    videos: [VIDEOS.cambieSb.id],
+    positions: [CAMBIE_58TH_W, CAMBIE_59TH_NW],
+  },
+  {
+    routeNames: [ROUTES.cambie.name],
+    description: "sb: 59th to marine",
+    type: "painted",
+    oneWay: "required",
+    videos: [VIDEOS.cambieSb.id],
+    positions: [
       CAMBIE_59TH_NW,
       [49.21689, -123.11705],
       [49.21502, -123.11713],
@@ -109,7 +131,7 @@ export const CAMBIE = [
   },
   {
     routeNames: [ROUTES.cambie.name],
-    description: "nb",
+    description: "nb: to 35th-ish",
     type: "painted",
     oneWay: "required",
     positions: [
@@ -121,7 +143,7 @@ export const CAMBIE = [
       CAMBIE_63RD_E,
       [49.21411, -123.11679],
       CAMBIE_59TH_NE,
-      [49.21785, -123.11666],
+      CAMBIE_58TH_E,
       [49.21906, -123.11659],
       [49.22177, -123.1165],
       CAMBIE_49TH_SE,
@@ -139,8 +161,23 @@ export const CAMBIE = [
       [49.23868, -123.11608],
       [49.23913, -123.11659],
       [49.23947, -123.11699],
-      [49.23955, -123.11702], // start good
-      [49.24018, -123.11774], // end good
+      NB_LANE_START_35TH,
+    ],
+  },
+  {
+    routeNames: [ROUTES.cambie.name],
+    description: "nb: lane between 35th, 33rd",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [NB_LANE_START_35TH, NB_LANE_END_35TH],
+  },
+  {
+    routeNames: [ROUTES.cambie.name],
+    description: "nb: from 33rd-ish",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      NB_LANE_END_35TH,
       [49.24021, -123.11782],
       [49.24041, -123.11802],
       [49.24053, -123.11812],

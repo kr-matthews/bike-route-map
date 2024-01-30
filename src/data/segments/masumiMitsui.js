@@ -1,6 +1,7 @@
 import {
   ANGUS_59TH,
   BORDEN_59TH,
+  CAMBIE_58TH_E,
   CAMBIE_59TH_NE_E,
   CAMBIE_59TH_NW,
   HEATHER_59TH,
@@ -14,11 +15,18 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const CAMBIE_58TH_EE = [49.21784, -123.1166];
+const PAULSON_59TH_W = [49.21697, -123.11867];
 const ELLIOTT_57TH = [49.21799, -123.05422];
 const ELLIOTT_ASHBURN = [49.21855, -123.05467];
 const ASHBURN_UPLAND = [49.21764, -123.05581];
 
 export const MASUMI_MITSUI_GREENWAY = [
+  {
+    description: "connect cambie on 58th",
+    type: "quiet",
+    positions: [CAMBIE_58TH_E, CAMBIE_58TH_EE],
+  },
   {
     routeNames: [ROUTES.masumiMitsui.name],
     description: "angus to ontario",
@@ -51,10 +59,32 @@ export const MASUMI_MITSUI_GREENWAY = [
       [49.21703, -123.12457],
       HEATHER_59TH,
       [49.21699, -123.12007],
-      [49.21695, -123.11718],
+      PAULSON_59TH_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.masumiMitsui.name],
+    description: "eb: paulson to cambie",
+    oneWay: "recommended",
+    videos: [VIDEOS.masumiMitsuiEb.id],
+    positions: [PAULSON_59TH_W, [49.21695, -123.11718], CAMBIE_59TH_NW],
+  },
+  {
+    routeNames: [ROUTES.masumiMitsui.name],
+    description: "wb: cambie to paulson",
+    type: "dedicated",
+    oneWay: "required",
+    videos: [VIDEOS.masumiMitsuiWb.id],
+    positions: [CAMBIE_59TH_NW, [49.21701, -123.11858], PAULSON_59TH_W],
+  },
+  {
+    routeNames: [ROUTES.masumiMitsui.name],
+    description: "cambie to ontario",
+    videos: [VIDEOS.masumiMitsuiEb.id, VIDEOS.masumiMitsuiWb.id],
+    positions: [
       CAMBIE_59TH_NW,
       CAMBIE_59TH_NE_E,
-      [49.21784, -123.1166],
+      CAMBIE_58TH_EE,
       [49.2178, -123.11343],
       [49.21778, -123.11337],
       [49.21774, -123.1133],
