@@ -4,7 +4,7 @@ import { VIDEOS } from "./videos";
 // Burnaby:
 // SFU: (to do)
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
-// Richmond: no. 3; river pkwy; minoru; ash; westminster hwy; no. 6 paths; lynas; no. 2 path; west-most n-s; dyke
+// Richmond: crabapple ridge; parkside; crosstown; odlin; woodwards/sunders; river pkwy; minoru; westminster hwy; no. 6 paths; lynas (no. 2 bridge); bridgeport connection; no. 2 path; river trail/dyke
 // YVR: ferguson; russ baker; sea island/bridgeport bridges; paths
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
@@ -543,6 +543,10 @@ export const ROUTES = {
   nicola: {
     name: "Nicola",
     legs: [{ distance: 0.3, videos: { northbound: VIDEOS.nicolaNb } }],
+  },
+  no3: {
+    name: "No. 3 Rd",
+    legs: [{ distanceMax: 2.9, videos: {} }],
   },
   northSouth: {
     name: "North/South",

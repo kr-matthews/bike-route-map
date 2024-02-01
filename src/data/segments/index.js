@@ -80,6 +80,7 @@ import { NANAIMO } from "./nanaimo";
 import { NELSON } from "./nelson";
 import { NELSON_AVE } from "./nelsonAve";
 import { NICOLA } from "./nicola";
+import { NO_3 } from "./no3";
 import { NORTH_SOUTH } from "./northSouth";
 import { OAK_STREET_BRIDGE } from "./oakStBridge";
 import { OAKLAND_BURRIS } from "./oaklandBurris";
@@ -215,6 +216,7 @@ export const SEGMENTS = [
   ...NELSON,
   ...NELSON_AVE,
   ...NICOLA,
+  ...NO_3,
   ...NORTH_SOUTH,
   ...OAK_STREET_BRIDGE,
   ...OAKLAND_BURRIS,

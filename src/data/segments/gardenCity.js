@@ -162,18 +162,15 @@ export const GARDEN_CITY = [
     ],
   },
   {
-    routeNames: [ROUTES.gardenCity.name],
     description: "patterson",
     type: "comfortable",
-    oneWay: "required",
+    oneWay: "recommended",
     videos: [VIDEOS.gardenCityNb.id],
     positions: [NB_LANE_END, [49.19017, -123.12442], GARDEN_CITY_PATTERSON_E],
   },
   {
-    routeNames: [ROUTES.gardenCity.name],
     description: "patterson to sea island",
     type: "mixed",
-    oneWay: "required",
     videos: [VIDEOS.gardenCityNb.id],
     positions: [
       GARDEN_CITY_PATTERSON_E,
@@ -182,10 +179,8 @@ export const GARDEN_CITY = [
     ],
   },
   {
-    routeNames: [ROUTES.gardenCity.name],
     description: "nb: sea island sidewalk",
     type: "other",
-    oneWay: "required",
     videos: [VIDEOS.gardenCityNb.id],
     positions: [AFTER_SEA_ISLAND_RAMP, GARDEN_CITY_SEA_ISLAND_SE],
   },
