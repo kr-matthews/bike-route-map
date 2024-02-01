@@ -46,10 +46,12 @@ const KEITH_6TH_NW = [49.26531, -123.07949];
 const KEITH_6TH_SE = [49.26509, -123.07928];
 const KEITH_6TH_SW = [49.26509, -123.0795];
 
-const CLARK_6TH_NE = [49.26527, -123.07729];
-const CLARK_6TH_SE = [49.26507, -123.0773];
+const CLARK_6TH_NE = [49.26536, -123.07728];
+const CLARK_6TH_SE = [49.26507, -123.07729];
 const CLARK_6TH_SW = [49.26508, -123.07769];
 const CLARK_6TH_NW = [49.26531, -123.07768];
+
+const CLARK_GRANDVIEW_SE = [49.26601, -123.07728];
 
 const MAIN_1ST_NW = [49.27022, -123.10085];
 const MAIN_1ST_SW = [49.27009, -123.10085];
@@ -66,6 +68,7 @@ const COMMERCIAL_GRANDVIEW = [49.26373, -123.0698];
 const GRANDVIEW_BROADWAY_NE = [49.26241, -123.06631];
 const GRANDVIEW_BROADWAY_NW = [49.26241, -123.06681];
 const GRANDVIEW_BROADWAY_S = [49.2622, -123.06681];
+const GRANDVIEW_CUT_BROADWAY_SE = [49.26219, -123.06629];
 const VICTORIA_BROADWAY_NE = [49.2624, -123.06573];
 
 const EAST_PARK_S = [49.27036, -123.10443];
@@ -217,7 +220,8 @@ export const CENTRAL_VALLEY_GREENWAY = [
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
-    description: "emily carr to woodland",
+    description: "emily carr to clark",
+    elevation: 0.5,
     videos: [VIDEOS.centralValleyVancouverEb.id],
     positions: [
       GREAT_NORTHERN_SPLIT,
@@ -235,7 +239,22 @@ export const CENTRAL_VALLEY_GREENWAY = [
       CLARK_6TH_SW,
       CLARK_6TH_SE,
       CLARK_6TH_NE,
-      [49.26601, -123.07728],
+    ],
+  },
+  {
+    routeNames: [ROUTES.centralValleyGreenway.name],
+    description: "clark",
+    elevation: 1,
+    videos: [VIDEOS.centralValleyVancouverEb.id],
+    positions: [CLARK_6TH_NE, CLARK_GRANDVIEW_SE],
+  },
+  {
+    routeNames: [ROUTES.centralValleyGreenway.name],
+    description: "clark to woodland",
+    elevation: 0.5,
+    videos: [VIDEOS.centralValleyVancouverEb.id],
+    positions: [
+      CLARK_GRANDVIEW_SE,
       [49.26606, -123.07721],
       [49.26609, -123.07698],
       [49.26563, -123.07557],
@@ -246,6 +265,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.offBroadway.name],
     description: "woodland to commercial",
     type: "dedicated",
+    elevation: 0.5,
     videos: [VIDEOS.centralValleyVancouverEb.id, VIDEOS.offBroadwayWb.id],
     positions: [WOODLAND_GRANDVIEW, COMMERCIAL_GRANDVIEW],
   },
@@ -287,6 +307,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     videos: [VIDEOS.centralValleyVancouverEb.id],
     positions: [
       GRANDVIEW_BROADWAY_S,
+      GRANDVIEW_CUT_BROADWAY_SE,
       [49.26219, -123.06599],
       VICTORIA_BROADWAY_SE,
     ],

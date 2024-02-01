@@ -78,7 +78,8 @@ const UNIVERSITY_OLD_YALE = [49.18587, -122.8517];
 const UNIVERSITY_105_NE = [49.1932, -122.85082];
 
 const NORTH_OF_GLADSTONE = [49.25029, -123.06026];
-const SOUTH_OF_NORTH_GRANDVIEW = [49.2599, -123.06208];
+const LAKEWOOD_GRANDVIEW_CUT_S = [49.25994, -123.06208];
+const LAKEWOOD_GRANDVIEW_CUT_N = [49.26047, -123.06208];
 
 const CENTRAL_IMPERIAL_SW = [49.22187, -122.99727];
 const JUBILEE_IMPERIAL_SE = [49.22187, -122.99573];
@@ -148,7 +149,8 @@ export const BC_PARKWAY = [
   // vancouver
   {
     routeNames: [ROUTES.bcParkway.name],
-    description: "little bit after lakewood",
+    description: "little bit s of grandview",
+    elevation: 0.5,
     videos: [
       VIDEOS.bcParkwayVancouverEb.id,
       VIDEOS.bcParkwayVancouverWb.id,
@@ -156,15 +158,27 @@ export const BC_PARKWAY = [
     ],
     videosStartAtStart: [VIDEOS.bcParkwayVancouverEb.id],
     videosEndAtStart: [VIDEOS.bcParkwayVancouverWb.id],
+    positions: [LAKEWOOD_GRANDVIEW, LAKEWOOD_GRANDVIEW_CUT_N],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "lakewood crossing cut",
+    elevation: 1,
+    videos: [
+      VIDEOS.bcParkwayVancouverEb.id,
+      VIDEOS.bcParkwayVancouverWb.id,
+      VIDEOS.lakewoodNb.id,
+    ],
     videosStartAtEnd: [VIDEOS.lakewoodNb.id],
-    positions: [LAKEWOOD_GRANDVIEW, SOUTH_OF_NORTH_GRANDVIEW],
+    positions: [LAKEWOOD_GRANDVIEW_CUT_N, LAKEWOOD_GRANDVIEW_CUT_S],
   },
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "most of lakewood to gladstone",
+    elevation: 0.5,
     videos: [VIDEOS.bcParkwayVancouverEb.id, VIDEOS.bcParkwayVancouverWb.id],
     positions: [
-      SOUTH_OF_NORTH_GRANDVIEW,
+      LAKEWOOD_GRANDVIEW_CUT_S,
       [49.25859, -123.06209],
       LAKEWOOD_JOHN_HENDRY_PARK,
       [49.25791, -123.06212],

@@ -198,6 +198,7 @@ export const OFF_BROADWAY = [
   {
     routeNames: [ROUTES.offBroadway.name],
     description: "yukon to mosaic",
+    elevation: 0.5,
     videos: [VIDEOS.offBroadwayWb.id],
     positions: [
       YUKON_5TH_E,

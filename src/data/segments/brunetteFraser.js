@@ -10,7 +10,12 @@ import {
 } from "../intersections";
 import { ROUTES } from "../routes";
 
-// ! bridges
+const BRUNETTE_RIVER_CUMBERLAND_W = [49.22047, -122.89195];
+const BRUNETTE_RIVER_CUMBERLAND_E = [49.22047, -122.89149];
+const BRUNETTE_RIVER_BRAID_NW = [49.22931, -122.87744];
+const BRUNETTE_RIVER_BRAID_NE = [49.22914, -122.87706];
+const CANFOR_BRUNETTE_RIVER_S = [49.22863, -122.87948];
+const CANFOR_BRUNETTE_RIVER_N = [49.22888, -122.87937];
 
 const BRUNETTE_FRASER_CUMBERLAND = [49.22047, -122.8922];
 const CANFOR_BRAID = [49.22983, -122.8785];
@@ -96,15 +101,27 @@ export const BRUNETTE_FRASER = [
     ],
   },
   {
-    description: "united connection with lougheed, minus bridge",
+    description: "braid: connection to lougheed",
     elevation: 0.5,
     positions: [
       CANFOR_BRAID,
       [49.22978, -122.87835],
       [49.22974, -122.87827],
       [49.22963, -122.87819],
-      [49.22931, -122.87744], // bridge
-      [49.22914, -122.87706],
+      BRUNETTE_RIVER_BRAID_NW,
+    ],
+  },
+  {
+    description: "braid bridge: connection to lougheed",
+    type: "other",
+    elevation: 1,
+    positions: [BRUNETTE_RIVER_BRAID_NW, BRUNETTE_RIVER_BRAID_NE],
+  },
+  {
+    description: "braid/united: connection to lougheed",
+    elevation: 0.5,
+    positions: [
+      BRUNETTE_RIVER_BRAID_NE,
       [49.22903, -122.8768],
       [49.22901, -122.87665],
       [49.22904, -122.87654],
@@ -156,7 +173,8 @@ export const BRUNETTE_FRASER = [
   },
   {
     routeNames: [ROUTES.brunetteFraser.name],
-    description: "sapperton to cvg",
+    description: "sapperton to cumberland",
+    elevation: 0.5,
     positions: [
       [49.21237, -122.89543],
       [49.21347, -122.89468],
@@ -172,7 +190,21 @@ export const BRUNETTE_FRASER = [
       [49.21972, -122.89249],
       [49.21986, -122.89234],
       BRUNETTE_FRASER_CUMBERLAND,
-      [49.22047, -122.89149],
+      BRUNETTE_RIVER_CUMBERLAND_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.brunetteFraser.name],
+    description: "cumberland crossing brunette river",
+    elevation: 1,
+    positions: [BRUNETTE_RIVER_CUMBERLAND_W, BRUNETTE_RIVER_CUMBERLAND_E],
+  },
+  {
+    routeNames: [ROUTES.brunetteFraser.name],
+    description: "cumberland to canfor",
+    elevation: 0.5,
+    positions: [
+      BRUNETTE_RIVER_CUMBERLAND_E,
       [49.22076, -122.89136],
       [49.22099, -122.89117],
       [49.22122, -122.89104],
@@ -200,8 +232,21 @@ export const BRUNETTE_FRASER = [
       [49.22826, -122.88011],
       [49.22833, -122.87982],
       [49.22846, -122.8796],
-      [49.22863, -122.87948], // bridge start
-      [49.22888, -122.87937],
+      CANFOR_BRUNETTE_RIVER_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.brunetteFraser.name],
+    description: "canfor crossing brunette",
+    elevation: 1,
+    positions: [CANFOR_BRUNETTE_RIVER_S, CANFOR_BRUNETTE_RIVER_N],
+  },
+  {
+    routeNames: [ROUTES.brunetteFraser.name],
+    description: "canfor just before braid",
+    elevation: 0.5,
+    positions: [
+      CANFOR_BRUNETTE_RIVER_N,
       [49.22902, -122.8793],
       [49.22911, -122.87922],
       CANFOR_BRAID,

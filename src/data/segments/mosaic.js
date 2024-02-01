@@ -39,6 +39,7 @@ export const MOSAIC = [
   {
     routeNames: [ROUTES.mosaic.name],
     description: "14th to 7th",
+    elevation: 0.5,
     videos: [VIDEOS.mosaicSb.id],
     positions: [
       WOODLAND_14TH,
@@ -51,12 +52,14 @@ export const MOSAIC = [
   {
     routeNames: [ROUTES.mosaic.name, ROUTES.offBroadway.name],
     description: "mosaic/off broadway",
+    elevation: 1,
     videos: [VIDEOS.mosaicSb.id, VIDEOS.offBroadwayWb.id],
     positions: [WOODLAND_7TH, WOODLAND_GRANDVIEW],
   },
   {
     routeNames: [ROUTES.mosaic.name],
     description: "grandview to franklin",
+    elevation: 0.5,
     videos: [VIDEOS.mosaicSb.id],
     positions: [
       WOODLAND_GRANDVIEW,

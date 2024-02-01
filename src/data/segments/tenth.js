@@ -20,6 +20,9 @@ import { VIDEOS } from "../videos";
 const OAK_10TH_W = [49.26245, -123.12669];
 const ASH_10TH_E = [49.2623, -123.1175];
 
+const VICTORIA_GRANDVIEW_CUT_SE = [49.2614, -123.06583];
+const VICTORIA_GRANDVIEW_CUT_NE = [49.26201, -123.06581];
+
 export const TENTH = [
   {
     routeNames: [ROUTES.tenth.name],
@@ -140,9 +143,8 @@ export const TENTH = [
   {
     routeNames: [ROUTES.tenth.name],
     description: "windsor to victoria",
+    elevation: 0.5,
     videos: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
-    videosStartAtEnd: [VIDEOS.tenthWb.id],
-    videosEndAtEnd: [VIDEOS.tenthEb.id],
     positions: [
       GLEN_10TH,
       [49.26145, -123.07944],
@@ -154,7 +156,30 @@ export const TENTH = [
       WOODLAND_10TH,
       [49.26137, -123.06984],
       [49.26135, -123.06969],
+      [49.26133, -123.06704],
+      [49.26131, -123.06699],
+      [49.26131, -123.06681],
+      [49.26133, -123.06675],
       [49.26132, -123.06583],
+      VICTORIA_GRANDVIEW_CUT_SE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.tenth.name],
+    description: "victoria",
+    elevation: 1,
+    videos: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
+    positions: [VICTORIA_GRANDVIEW_CUT_SE, VICTORIA_GRANDVIEW_CUT_NE],
+  },
+  {
+    routeNames: [ROUTES.tenth.name],
+    description: "victoria & broadway",
+    elevation: 0.5,
+    videos: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
+    videosStartAtEnd: [VIDEOS.tenthWb.id],
+    videosEndAtEnd: [VIDEOS.tenthEb.id],
+    positions: [
+      VICTORIA_GRANDVIEW_CUT_NE,
       [49.2621, -123.06581],
       VICTORIA_BROADWAY_SE,
     ],
