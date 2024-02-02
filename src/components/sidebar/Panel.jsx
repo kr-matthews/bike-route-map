@@ -1,55 +1,37 @@
-import mapIcon from "../../images/marker-yellow.svg";
-import videoIcon from "../../images/video.svg";
-import {
-  HeavyFooter,
-  HomeLink,
-  CodeLink,
-  Link,
-} from "footer-dependency/dist/lib";
-import TryingToViewRoute from "./TryingToViewRoute";
-import CloseIcon from "../icons/CloseIcon";
+import { VIEWS } from "./Sidebar";
+import PanelIcon from "../icons/PanelIcon";
 
-export default function Panel({ name, goBack, withLinks, wide, children }) {
+export default function Panel({ name, navigateTo, children }) {
   return (
-    <div style={{ overflowY: "auto" }}>
-      <div
+    <div
+      style={{
+        paddingLeft: "1em",
+        flex: "1",
+        overflow: "auto",
+        display: "flex",
+        flexDirection: "column",
+        position: "relative",
+      }}
+    >
+      <h2 style={{ paddingLeft: 15 }}>{name}</h2>
+      <span
         style={{
-          margin: wide ? "0 0.5em" : "0 2em",
-          minHeight: "calc(100vh - 170px)",
+          position: "absolute",
+          top: 20,
+          right: 20,
         }}
       >
-        <h2 style={{ textAlign: "center" }}>{name}</h2>
-        <CloseIcon onClick={goBack} type="dark" />
-
-        <div>
-          <TryingToViewRoute />
-          {children}
-        </div>
-      </div>
-
-      {withLinks && (
-        <div style={{ paddingTop: "1em" }}>
-          <HeavyFooter>
-            <HomeLink />
-            <CodeLink gitHubRepoName="bike-route-map" themeType="light" />
-            <Link
-              url="https://www.youtube.com/channel/UCgzTHi3DEAYwPyR1M7P_AeQ"
-              image={videoIcon}
-              description="Associated YouTube Channel"
+        {Object.values(VIEWS).map((view) => (
+          <span key={view.key} style={{ marginLeft: "5px" }}>
+            <PanelIcon
+              view={view}
+              navigateTo={navigateTo}
+              isSelected={view.name === name}
             />
-            <Link
-              url="https://vancouver.ca/files/cov/map-cycling-vancouver.pdf"
-              image={mapIcon}
-              description="City of Vancouver Cycling Map"
-            />
-            <Link
-              url="https://www.translink.ca/-/media/translink/documents/rider-guide/cycling/2021-cycling-maps/tl-cyclerouteseastwest_v2021web.pdf"
-              image={mapIcon}
-              description="TransLink Cycling Map"
-            />
-          </HeavyFooter>
-        </div>
-      )}
+          </span>
+        ))}
+      </span>
+      {children}
     </div>
   );
 }

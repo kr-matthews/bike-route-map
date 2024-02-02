@@ -1,7 +1,6 @@
-import closeIconDark from "../../images/close.svg";
 import closeIconLight from "../../images/closeLight.svg";
 
-export default function CloseIcon({ onClick, type }) {
+export default function CloseIcon({ onClick }) {
   return (
     <span
       style={{
@@ -13,11 +12,7 @@ export default function CloseIcon({ onClick, type }) {
       title="Close"
       onClick={onClick}
     >
-      <img
-        src={type === "dark" ? closeIconDark : closeIconLight}
-        alt="close"
-        style={{ height: "1.75em" }}
-      />
+      <img src={closeIconLight} alt="close" style={{ height: "1.75em" }} />
     </span>
   );
 }

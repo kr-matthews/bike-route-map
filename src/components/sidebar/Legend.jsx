@@ -96,7 +96,7 @@ const initialState = {
   elevationDescription: ELEVATION_TYPES[1].description,
 };
 
-export default function Legend({ goBack }) {
+export default function Legend({ navigateTo }) {
   const [
     {
       key,
@@ -131,57 +131,66 @@ export default function Legend({ goBack }) {
   );
 
   return (
-    <Panel name={VIEWS.legend.name} goBack={goBack} wide>
-      <SegmentForm
-        view="legend"
-        types={types}
-        directions={directions}
-        elevations={elevations}
-        dispatch={dispatch}
-      />
+    <Panel name={VIEWS.legend.name} navigateTo={navigateTo}>
+      <div style={{ overflowY: "scroll", overflow: "auto" }}>
+        <SegmentForm
+          view="legend"
+          types={types}
+          directions={directions}
+          elevations={elevations}
+          dispatch={dispatch}
+        />
 
-      <br />
-      <div
-        style={{
-          marginLeft: "auto",
-          marginRight: "auto",
-          height: mapHeight,
-          width: mapWidth,
-        }}
-      >
-        <MapContainer
-          // key required to correctly set panels for elevation
-          // it could be removed if each segment was always rendered but
-          // hidden via width/opacity like the main map
-          key={key}
-          style={{ width: mapWidth, height: mapHeight }}
-          // bounds={mapBounds}
-          center={mapCenter}
-          zoom={mapZoom}
-          scrollWheelZoom
+        <br />
+
+        <div
+          style={{
+            marginLeft: "auto",
+            marginRight: "auto",
+            height: mapHeight,
+            width: mapWidth,
+          }}
         >
-          <PanesAndTiles />
+          <MapContainer
+            // key required to correctly set panels for elevation
+            // it could be removed if each segment was always rendered but
+            // hidden via width/opacity like the main map
+            key={key}
+            style={{ width: mapWidth, height: mapHeight }}
+            // bounds={mapBounds}
+            center={mapCenter}
+            zoom={mapZoom}
+            scrollWheelZoom
+          >
+            <PanesAndTiles />
 
-          <Segment {...segment} {...segmentProps} />
-          <Segment {...otherSegment} />
-        </MapContainer>
+            <Segment {...segment} {...segmentProps} />
+            <Segment {...otherSegment} />
+          </MapContainer>
+        </div>
+
+        {typeDescription && (
+          <p
+            style={{ width: mapWidth, marginLeft: "auto", marginRight: "auto" }}
+          >
+            {typeDescription}
+          </p>
+        )}
+        {directionDescription && (
+          <p
+            style={{ width: mapWidth, marginLeft: "auto", marginRight: "auto" }}
+          >
+            {directionDescription}
+          </p>
+        )}
+        {elevationDescription && (
+          <p
+            style={{ width: mapWidth, marginLeft: "auto", marginRight: "auto" }}
+          >
+            {elevationDescription}
+          </p>
+        )}
       </div>
-
-      {typeDescription && (
-        <p style={{ width: mapWidth, marginLeft: "auto", marginRight: "auto" }}>
-          {typeDescription}
-        </p>
-      )}
-      {directionDescription && (
-        <p style={{ width: mapWidth, marginLeft: "auto", marginRight: "auto" }}>
-          {directionDescription}
-        </p>
-      )}
-      {elevationDescription && (
-        <p style={{ width: mapWidth, marginLeft: "auto", marginRight: "auto" }}>
-          {elevationDescription}
-        </p>
-      )}
     </Panel>
   );
 }

@@ -5,11 +5,10 @@ import { Search } from "./Search";
 import { isSubsequence, removeWhiteSpaces } from "../../utils/strings";
 import { BLACK, DARK_GREEN, LIGHT_GREEN, WHITE } from "../../utils/colours";
 import { COLOUR_HIGHLIGHTED } from "../../utils/constants";
-import SelectedRoute from "./SelectedRoute";
 import { VIEWS } from "./Sidebar";
-import PanelIcon from "../icons/PanelIcon";
+import Panel from "./Panel";
 
-export default function Routes({ mapRef, navigateTo }) {
+export default function Routes({ navigateTo }) {
   const [searchText, setSearchText] = useState("");
   const routesToShow = useMemo(
     () =>
@@ -23,49 +22,23 @@ export default function Routes({ mapRef, navigateTo }) {
   );
 
   return (
-    <>
+    <Panel name={VIEWS.routes.name} navigateTo={navigateTo}>
+      <Search text={searchText} setText={setSearchText} />
       <div
         style={{
-          paddingLeft: "1em",
-          flex: "1",
-          overflow: "auto",
-          display: "flex",
-          flexDirection: "column",
-          position: "relative",
+          flex: 2,
+          overflowY: "scroll",
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr 1fr",
+          gridTemplateRows: "repeat(1000, auto)",
+          font: "120% system-ui",
         }}
       >
-        <h2 style={{ paddingLeft: 15 }}>Routes</h2>
-        <Search text={searchText} setText={setSearchText} />
-        <span
-          style={{
-            position: "absolute",
-            top: 20,
-            right: 20,
-          }}
-        >
-          {Object.values(VIEWS).map((view) => (
-            <span key={view.key} style={{ marginLeft: "5px" }}>
-              <PanelIcon view={view} navigateTo={navigateTo} />
-            </span>
-          ))}
-        </span>
-        <div
-          style={{
-            flex: 2,
-            overflowY: "scroll",
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr",
-            gridTemplateRows: "repeat(1000, auto)",
-            font: "120% system-ui",
-          }}
-        >
-          {routesToShow.map((route) => (
-            <Route key={route.name} route={route} />
-          ))}
-        </div>
+        {routesToShow.map((route) => (
+          <Route key={route.name} route={route} />
+        ))}
       </div>
-      <SelectedRoute mapRef={mapRef} />
-    </>
+    </Panel>
   );
 }
 

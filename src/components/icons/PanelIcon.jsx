@@ -1,34 +1,46 @@
 import { VIEWS } from "../sidebar/Sidebar";
+import routesIcon from "../../images/routes.svg";
+import routesSelectedIcon from "../../images/routesDark.svg";
 import aboutIcon from "../../images/info.svg";
+import aboutSelectedIcon from "../../images/infoDark.svg";
 import legendIcon from "../../images/question.svg";
+import legendSelectedIcon from "../../images/questionDark.svg";
 import filtersIcon from "../../images/filter.svg";
+import filtersSelectedIcon from "../../images/filterDark.svg";
 
-export default function PanelIcon({ view, navigateTo }) {
+export default function PanelIcon({ view, navigateTo, isSelected }) {
   return (
     <span
       style={{
-        cursor: "pointer",
+        cursor: isSelected ? undefined : "pointer",
       }}
       title={view.name}
-      onClick={() => navigateTo(view)}
+      onClick={isSelected ? undefined : () => navigateTo(view)}
     >
-      <img src={getSrc(view)} alt={view.key} style={{ height: "1.75em" }} />
+      <img
+        src={getSrc(view, isSelected)}
+        alt={view.name}
+        style={{ height: "1.75em" }}
+      />
     </span>
   );
 }
 
-const getSrc = (view) => {
+const getSrc = (view, isSelected) => {
   switch (view.key) {
+    case VIEWS.routes.key:
+      return isSelected ? routesSelectedIcon : routesIcon;
+
     case VIEWS.about.key:
-      return aboutIcon;
+      return isSelected ? aboutSelectedIcon : aboutIcon;
 
     case VIEWS.legend.key:
-      return legendIcon;
+      return isSelected ? legendSelectedIcon : legendIcon;
 
     case VIEWS.filters.key:
-      return filtersIcon;
+      return isSelected ? filtersSelectedIcon : filtersIcon;
 
     default:
-      return legendIcon;
+      return isSelected ? legendSelectedIcon : legendIcon;
   }
 };
