@@ -13,7 +13,9 @@ import { VIEWS } from "./Sidebar";
 export default function About({ navigateTo }) {
   return (
     <Panel name={VIEWS.about.name} navigateTo={navigateTo}>
-      <div style={{ overflowY: "scroll", overflow: "auto" }}>
+      <div
+        style={{ overflowY: "scroll", overflow: "auto", paddingRight: "1em" }}
+      >
         <p>
           This is a map of bike routes in and around Vancouver. All bike routes
           in <b>Vancouver</b> are included. Most bike routes in <b>Burnaby</b>{" "}
@@ -25,14 +27,12 @@ export default function About({ navigateTo }) {
           on this map. More routes may (slowly) be added over time.
         </p>
         <p>
-          You can click on a route directly on the map, or via the list in the
-          main side panel. Either way, existing videos (if any exist for that
-          route) will be shown. If you select the toggle on a video, then the
-          segments that it covers will be emphasized on the map. The videos have
-          chapters at the bottom for quickly finding a particular segment --
-          make a video fullscreen to see these chapters more easily. Also note
-          that you can speed up the videos with "Shift" + ".", or slow them down
-          with "Shift" + "," (this is a YouTube feature).
+          You can hover over or click segments on the map for more information,
+          including videos when available. For full details on the colors/etc.
+          see the legend ("?" icon above). For videos, the exact parts of the
+          map covered can be highlighted. When played, videos have chapters to
+          make it easy to find a specific portion of the route. Consider
+          watching videos at 2x speed ("Shift" + "{">"}" to speed up).
         </p>
         <p style={{ color: "red" }}>
           {disclaimer}{" "}
