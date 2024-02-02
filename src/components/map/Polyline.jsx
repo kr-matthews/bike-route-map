@@ -13,13 +13,16 @@ export default function Polyline({
     showArrows,
     polylineRef,
     polylineProps.pathOptions,
-    polylineProps.eventHandlers
+    polylineProps.eventHandlers,
+    polylineProps.pane
   );
 
   // mimic border by drawing thicker line underneath
   return (
     <>
-      {borderProps && <LeafletPolyline {...borderProps} />}
+      {borderProps && (
+        <LeafletPolyline {...borderProps}>{children}</LeafletPolyline>
+      )}
       <LeafletPolyline ref={polylineRef} {...polylineProps}>
         {children}
       </LeafletPolyline>

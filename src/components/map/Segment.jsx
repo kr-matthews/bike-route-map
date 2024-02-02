@@ -38,6 +38,17 @@ export default function Segment(segment) {
   const pane = getSegmentPane(elevation, hasMultipleRoutes);
   const isHidden = isSegmentHidden(segment);
 
+  const eventHandlers = {
+    mouseover: () => setHighlighted(primaryRouteName),
+    mouseout: () => setHighlighted(null),
+    mousedown: () => {
+      if (!primaryRouteName) return;
+      setSelected((selected) =>
+        selected === primaryRouteName ? null : primaryRouteName
+      );
+    },
+  };
+
   const polylineProps = {
     positions,
     pathOptions: createPathOptions(segment, {
@@ -46,16 +57,7 @@ export default function Segment(segment) {
       video: video?.id,
       isHidden,
     }),
-    eventHandlers: {
-      mouseover: () => setHighlighted(primaryRouteName),
-      mouseout: () => setHighlighted(null),
-      mousedown: () => {
-        if (!primaryRouteName) return;
-        setSelected((selected) =>
-          selected === primaryRouteName ? null : primaryRouteName
-        );
-      },
-    },
+    eventHandlers,
     pane,
   };
 
@@ -67,6 +69,7 @@ export default function Segment(segment) {
       selected: selectedRoute?.name,
       isHidden,
     }),
+    eventHandlers,
     pane: getBorderPane(elevation),
   };
 

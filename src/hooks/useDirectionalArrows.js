@@ -12,7 +12,8 @@ export default function useDirectionalArrows(
   isActive,
   polylineRef,
   pathOptions,
-  eventHandlers
+  eventHandlers,
+  polylinePane
 ) {
   const map = useMap();
   const [decorator, setDecorator] = useState();
@@ -89,6 +90,7 @@ export default function useDirectionalArrows(
             dashArray: undefined,
             fill: pathOptions.color,
             fillOpacity: pathOptions.opacity,
+            pane: `${polylinePane}-arrow`,
           },
         }),
       };
