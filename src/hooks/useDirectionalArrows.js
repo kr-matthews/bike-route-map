@@ -99,6 +99,6 @@ export default function useDirectionalArrows(
         decorator.setPatterns([arrow]);
       }
     },
-    [isActive, isVeryZoomedIn, decorator, pathOptions]
+    [isActive, isVeryZoomedIn, decorator, pathOptions, polylinePane]
   );
 }
