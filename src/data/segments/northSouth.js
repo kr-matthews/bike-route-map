@@ -2,6 +2,7 @@ import {
   SUSSEX_HAZEL_NE,
   SUSSEX_HAZEL_NW,
   SUSSEX_HAZEL_S,
+  WAYBURNE_DEER_LAKE_NE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -12,6 +13,11 @@ const WAYBURNE_NB_LANE_START = [49.24767, -122.99801];
 const WAYBURNE_NB_LANE_END = [49.25169, -122.99529];
 
 export const NORTH_SOUTH = [
+  {
+    description: "crossing deer lake",
+    type: "mixed",
+    positions: [WAYBURNE_DEER_LAKE_SE, WAYBURNE_DEER_LAKE_NE],
+  },
   {
     routeNames: [ROUTES.northSouth.name],
     description: "sussex south end nb",
@@ -63,8 +69,8 @@ export const NORTH_SOUTH = [
       [49.23992, -122.99789],
       [49.24016, -122.9979],
       [49.24107, -122.99795],
-      [49.2414, -122.998],
-      [49.24154, -122.99795],
+      [49.2414, -122.99794],
+      [49.24154, -122.99796],
       WAYBURNE_DEER_LAKE_SE,
     ],
   },

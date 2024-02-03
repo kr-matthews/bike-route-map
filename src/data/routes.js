@@ -5,7 +5,7 @@ import { VIDEOS } from "./videos";
 // SFU: (to do)
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
 // Richmond: crabapple ridge; parkside; crosstown; odlin; woodwards/sunders; river pkwy; minoru; westminster hwy; no. 6 paths; lynas (no. 2 bridge); bridgeport connection; no. 2 path; river trail/dyke
-// YVR: ferguson; russ baker; sea island/bridgeport bridges; paths
+// YVR: ferguson; russ baker; bridgeport bridge; paths
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
 // West Vancouver: marine dr; mathers+; old train; hwy; keith;
@@ -627,6 +627,18 @@ export const ROUTES = {
     name: "Rupert St",
     legs: [{ distance: 1.8, videos: { northbound: VIDEOS.rupertNb } }],
   },
+  seaIslandConnector: {
+    name: "Sea Island Connector",
+    legs: [{ distance: 0.8, videos: {} }],
+  },
+  seaIslandWay: {
+    name: "Sea Island Way",
+    legs: [{ distance: 1.9, videos: { eastbound: VIDEOS.seaIslandWayEb } }],
+  },
+  seaToRiver: {
+    name: "Sea to River",
+    legs: [{ distance: 9.6, videos: { northbound: VIDEOS.seaToRiverNb } }],
+  },
   seaside: {
     name: "Seaside",
     legs: [
@@ -662,10 +674,6 @@ export const ROUTES = {
       { name: "3rd", distance: 2.4, videos: { eastbound: VIDEOS.thirdEb } },
       { name: "NW Marine & 4th", distance: 4, videos: {} },
     ],
-  },
-  seaToRiver: {
-    name: "Sea to River",
-    legs: [{ distance: 9.6, videos: { northbound: VIDEOS.seaToRiverNb } }],
   },
   secondNarrowsBridge: {
     name: "Second Narrows Bridge",

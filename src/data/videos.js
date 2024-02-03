@@ -331,12 +331,6 @@ const VIDEOS = {
     date: new Date("2023 06 10"),
     minutes: 45,
   },
-  // !! bring back
-  // moray: {
-  //   id: "wSwMTjMlKt4",
-  //   date: new Date("2023 08 19"),
-  //   minutes: 3,
-  // },
   mosaicSb: {
     id: "uDSSzA4ZN0Q",
     date: new Date("2023 10 07"),
@@ -408,6 +402,11 @@ const VIDEOS = {
     id: "VYxXQDWhq5Q",
     date: new Date("2023 09 15"),
     minutes: 5,
+  },
+  seaIslandWayEb: {
+    id: "wSwMTjMlKt4",
+    date: new Date("2023 08 19"),
+    minutes: 3,
   },
   seasideBypassFalseCreekSouthEb: {
     id: "8xY4bwZ0GrE",

@@ -100,6 +100,8 @@ import { RIDGEWAY } from "./ridgeway";
 import { ROYAL_OAK } from "./royalOak";
 import { RUMBLE } from "./rumble";
 import { RUPERT } from "./rupert";
+import { SEA_ISLAND } from "./seaIsland";
+import { SEA_ISLAND_CONNECTOR } from "./seaIslandConnector";
 import { SEA_TO_RIVER } from "./seaToRiver";
 import { SEASIDE } from "./seaside";
 import { SEASIDE_BYPASS } from "./seasideBypass";
@@ -236,6 +238,8 @@ export const SEGMENTS = [
   ...ROYAL_OAK,
   ...RUMBLE,
   ...RUPERT,
+  ...SEA_ISLAND,
+  ...SEA_ISLAND_CONNECTOR,
   ...SEA_TO_RIVER,
   ...SEASIDE,
   ...SEASIDE_BYPASS,
