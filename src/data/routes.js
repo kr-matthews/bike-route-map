@@ -612,7 +612,13 @@ export const ROUTES = {
   },
   ridgeway: {
     name: "Ridgeway",
-    legs: [{ distanceMin: 17.3, distanceMax: 18.2, videos: {} }],
+    legs: [
+      {
+        distanceMin: 17.3,
+        distanceMax: 18.2,
+        videos: { westbound: VIDEOS.ridgewayWb },
+      },
+    ],
   },
   royalOak: {
     name: "Royal Oak",

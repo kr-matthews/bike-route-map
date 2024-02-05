@@ -33,6 +33,7 @@ export const RIDGEWAY = [
   {
     routeNames: [ROUTES.ridgeway.name],
     description: "off broadway to balaclava",
+    videos: [VIDEOS.ridgewayWb.id],
     positions: [
       DISCOVERY_8TH,
       [49.26374, -123.20305],
@@ -62,7 +63,7 @@ export const RIDGEWAY = [
   {
     routeNames: [ROUTES.ridgeway.name, ROUTES.balaclava.name],
     description: "ridgeway main",
-    videos: [VIDEOS.balaclavaNb.id],
+    videos: [VIDEOS.balaclavaNb.id, VIDEOS.ridgewayWb.id],
     positions: [
       QUESNEL_20TH,
       [49.25438, -123.17673],
@@ -86,6 +87,7 @@ export const RIDGEWAY = [
   {
     routeNames: [ROUTES.ridgeway.name],
     description: "balaclava to king edward",
+    videos: [VIDEOS.ridgewayWb.id],
     positions: [
       BALACLAVA_QUESNEL,
       [49.25264, -123.17506],
@@ -100,6 +102,7 @@ export const RIDGEWAY = [
     routeNames: [ROUTES.ridgeway.name],
     description: "quesnel uncomfortable",
     type: "shared",
+    videos: [VIDEOS.ridgewayWb.id],
     positions: [
       QUESNEL_KING_EDWARD_N,
       QUESNEL_KING_EDWARD_S,
@@ -111,6 +114,7 @@ export const RIDGEWAY = [
   {
     routeNames: [ROUTES.ridgeway.name],
     description: "mackenzie to puget",
+    videos: [VIDEOS.ridgewayWb.id],
     positions: [
       MACKENZIE_QUESNEL,
       [49.24786, -123.17],
@@ -133,11 +137,13 @@ export const RIDGEWAY = [
     routeNames: [ROUTES.ridgeway.name],
     description: "crossing puget",
     type: "shared",
+    videos: [VIDEOS.ridgewayWb.id],
     positions: [PUGET_31ST, PUGET_NARVAEZ],
   },
   {
     routeNames: [ROUTES.ridgeway.name],
     description: "narvaez",
+    videos: [VIDEOS.ridgewayWb.id],
     positions: [
       PUGET_NARVAEZ,
       [49.24405, -123.16248],
@@ -149,11 +155,13 @@ export const RIDGEWAY = [
     routeNames: [ROUTES.ridgeway.name],
     description: "crossing 33rd",
     type: "shared",
+    videos: [VIDEOS.ridgewayWb.id],
     positions: [NARVAEZ_33RD, VINE_33RD],
   },
   {
     routeNames: [ROUTES.ridgeway.name],
     description: "33rd to midtown",
+    videos: [VIDEOS.ridgewayWb.id],
     positions: [
       VINE_33RD,
       [49.24127, -123.15969],
@@ -168,6 +176,7 @@ export const RIDGEWAY = [
   {
     routeNames: [ROUTES.ridgeway.name],
     description: "nanaimo",
+    videos: [VIDEOS.ridgewayWb.id],
     positions: [
       NANAIMO_38TH,
       [49.23388, -123.05882],
@@ -179,20 +188,20 @@ export const RIDGEWAY = [
   {
     routeNames: [ROUTES.ridgeway.name],
     description: "nanaimo to sunrise",
-    videos: [VIDEOS.fortyFifthWb.id],
+    videos: [VIDEOS.ridgewayWb.id, VIDEOS.fortyFifthWb.id],
     positions: [NANAIMO_45TH, [49.22939, -123.05492], WALES_45TH, VIVIAN_45TH],
   },
   {
     routeNames: [ROUTES.ridgeway.name, ROUTES.sunrise.name],
     description: "sunrise",
-    videos: [VIDEOS.fortyFifthWb.id, VIDEOS.sunriseNb.id],
+    videos: [VIDEOS.ridgewayWb.id, VIDEOS.fortyFifthWb.id, VIDEOS.sunriseNb.id],
     positions: [VIVIAN_45TH, EARLES_45TH],
   },
   {
     routeNames: [ROUTES.ridgeway.name],
     description: "sunrise to boundary",
-    videos: [VIDEOS.fortyFifthWb.id],
-    videosStartAtEnd: [VIDEOS.fortyFifthWb.id],
+    videos: [VIDEOS.ridgewayWb.id, VIDEOS.fortyFifthWb.id],
+    videosStartAtEnd: [VIDEOS.ridgewayWb.id, VIDEOS.fortyFifthWb.id],
     positions: [
       EARLES_45TH,
       KILLARNEY_45TH,

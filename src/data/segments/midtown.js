@@ -102,7 +102,7 @@ export const MIDTOWN = [
   {
     routeNames: [ROUTES.midtown.name, ROUTES.ridgeway.name],
     description: "yew to willow",
-    videos: [VIDEOS.midtownVancouverEb.id],
+    videos: [VIDEOS.midtownVancouverEb.id, VIDEOS.ridgewayWb.id],
     positions: [
       YEW_37TH,
       ARBUTUS_GREENWAY_37TH,
@@ -126,13 +126,17 @@ export const MIDTOWN = [
       ROUTES.heather.name,
     ],
     description: "heather overlap",
-    videos: [VIDEOS.midtownVancouverEb.id, VIDEOS.heatherSb.id],
+    videos: [
+      VIDEOS.midtownVancouverEb.id,
+      VIDEOS.ridgewayWb.id,
+      VIDEOS.heatherSb.id,
+    ],
     positions: [WILLOW_37TH, HEATHER_37TH],
   },
   {
     routeNames: [ROUTES.midtown.name, ROUTES.ridgeway.name],
     description: "heather to inverness",
-    videos: [VIDEOS.midtownVancouverEb.id],
+    videos: [VIDEOS.midtownVancouverEb.id, VIDEOS.ridgewayWb.id],
     positions: [
       HEATHER_37TH,
       [49.23736, -123.11925],
@@ -171,14 +175,18 @@ export const MIDTOWN = [
   {
     routeNames: [ROUTES.midtown.name, ROUTES.ridgeway.name],
     description: "inverness parklet",
-    videos: [VIDEOS.midtownVancouverEb.id, VIDEOS.invernessSb.id],
+    videos: [
+      VIDEOS.midtownVancouverEb.id,
+      VIDEOS.ridgewayWb.id,
+      VIDEOS.invernessSb.id,
+    ],
     videosStartAtEnd: [VIDEOS.invernessSb.id],
     positions: [INVERNESS_37TH, [49.23649, -123.07937], CULLODEN_37TH_SW],
   },
   {
     routeNames: [ROUTES.midtown.name, ROUTES.ridgeway.name],
     description: "culloden to nanaimo",
-    videos: [VIDEOS.midtownVancouverEb.id],
+    videos: [VIDEOS.midtownVancouverEb.id, VIDEOS.ridgewayWb.id],
     positions: [
       CULLODEN_37TH_SW,
       [49.23689, -123.07911],

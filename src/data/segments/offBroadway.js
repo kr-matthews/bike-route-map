@@ -42,8 +42,8 @@ export const OFF_BROADWAY = [
   {
     routeNames: [ROUTES.offBroadway.name, ROUTES.ridgeway.name],
     description: "ridgeway overlap",
-    videos: [VIDEOS.offBroadwayWb.id],
-    videosEndAtStart: [VIDEOS.offBroadwayWb.id],
+    videos: [VIDEOS.offBroadwayWb.id, VIDEOS.ridgewayWb.id],
+    videosEndAtStart: [VIDEOS.offBroadwayWb.id, VIDEOS.ridgewayWb.id],
     positions: [
       BLANCA_8TH_E,
       [49.26563, -123.2121],

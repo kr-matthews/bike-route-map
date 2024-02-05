@@ -398,6 +398,11 @@ const VIDEOS = {
     date: new Date("2023 08 19"),
     minutes: 15,
   },
+  ridgewayWb: {
+    id: "YFKP-TBo8RE",
+    date: new Date("2024 02 02"),
+    minutes: 53,
+  },
   rupertNb: {
     id: "VYxXQDWhq5Q",
     date: new Date("2023 09 15"),
