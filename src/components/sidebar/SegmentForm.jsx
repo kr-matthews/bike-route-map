@@ -24,7 +24,7 @@ export default function SegmentForm({
   );
 
   return (
-    <table>
+    <table style={{ fontSize: "90%" }}>
       <tbody>
         <tr>
           <td style={{ verticalAlign: "top" }}>

@@ -4,12 +4,9 @@ import SegmentForm from "./SegmentForm";
 import Panel from "./Panel";
 import { VIEWS } from "./Sidebar";
 
-// !!! add leg data and highlight on hover
-// !!! ? handle non-routes, allow them to be previewed when they have a video
-
 const videoOptions = [undefined, true, false];
 
-const getName = (option) =>
+const getVideoOptionName = (option) =>
   option ? "With video" : option === false ? "Without video" : "All";
 
 export default function Filters({ navigateTo }) {
@@ -38,32 +35,35 @@ export default function Filters({ navigateTo }) {
 
         <br />
 
-        {videoOptions.map((videoOption) => {
-          const action = () => {
-            dispatchFilters({ type: "video", value: videoOption });
-          };
-          return (
-            <label
-              key={videoOption ?? "both"}
-              htmlFor="videos"
-              style={{
-                cursor: "pointer",
-                padding: "4px",
-              }}
-              onClick={action}
-            >
-              <input
-                type="radio"
-                id={(videoOption ?? "both").toString()}
-                name="videos"
-                style={{ cursor: "pointer" }}
-                checked={filters.videos === videoOption}
-                onChange={() => {}}
-              />
-              {getName(videoOption)}
-            </label>
-          );
-        })}
+        {/* padding to match inherent padding on inputs, prevent scroll bar */}
+        <div style={{ padding: "4px" }}>
+          {videoOptions.map((videoOption) => {
+            const action = () => {
+              dispatchFilters({ type: "video", value: videoOption });
+            };
+            return (
+              <label
+                key={videoOption ?? "both"}
+                htmlFor="videos"
+                style={{
+                  cursor: "pointer",
+                  padding: "4px",
+                }}
+                onClick={action}
+              >
+                <input
+                  type="radio"
+                  id={(videoOption ?? "both").toString()}
+                  name="videos"
+                  style={{ cursor: "pointer" }}
+                  checked={filters.videos === videoOption}
+                  onChange={() => {}}
+                />
+                {getVideoOptionName(videoOption)}
+              </label>
+            );
+          })}
+        </div>
       </div>
     </Panel>
   );

@@ -42,7 +42,7 @@ const otherSegment = {
 };
 
 const mapWidth = "400px";
-const mapHeight = "200px";
+const mapHeight = "125px";
 
 // const lats = segment.positions.map((x) => x[0]);
 // const longs = segment.positions.map((x) => x[1]);
@@ -145,8 +145,7 @@ export default function Legend({ navigateTo }) {
 
         <div
           style={{
-            marginLeft: "auto",
-            marginRight: "auto",
+            marginLeft: "6em",
             height: mapHeight,
             width: mapWidth,
           }}
@@ -169,27 +168,11 @@ export default function Legend({ navigateTo }) {
           </MapContainer>
         </div>
 
-        {typeDescription && (
-          <p
-            style={{ width: mapWidth, marginLeft: "auto", marginRight: "auto" }}
-          >
-            {typeDescription}
-          </p>
-        )}
-        {directionDescription && (
-          <p
-            style={{ width: mapWidth, marginLeft: "auto", marginRight: "auto" }}
-          >
-            {directionDescription}
-          </p>
-        )}
-        {elevationDescription && (
-          <p
-            style={{ width: mapWidth, marginLeft: "auto", marginRight: "auto" }}
-          >
-            {elevationDescription}
-          </p>
-        )}
+        <div>
+          {typeDescription && <p>{typeDescription}</p>}
+          {directionDescription && <p>{directionDescription}</p>}
+          {elevationDescription && <p>{elevationDescription}</p>}
+        </div>
       </div>
     </Panel>
   );
