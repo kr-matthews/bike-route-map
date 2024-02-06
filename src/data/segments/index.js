@@ -32,6 +32,7 @@ import { CHANCELLOR } from "./chancellor";
 import { CHILCO } from "./chilco";
 import { COLUMBIA } from "./columbia";
 import { COMOX_HELMCKEN } from "./comoxHelmcken";
+import { CRABAPPLE_RIDGE } from "./crabappleRidge";
 import { CROSSTOWN } from "./crosstown";
 import { CYPRESS } from "./cypress";
 import { DEER_LAKE_PARKWAY } from "./deerLakeParkway";
@@ -87,6 +88,7 @@ import { OAKLAND_BURRIS } from "./oaklandBurris";
 import { OFF_BROADWAY } from "./offBroadway";
 import { ONTARIO } from "./ontario";
 import { PANDORA } from "./pandora";
+import { PARKSIDE } from "./parkside";
 import { PENDER } from "./pender";
 import { PORT_MANN_BRIDGE } from "./portMannBridge";
 import { PORTSIDE } from "./portside";
@@ -170,6 +172,7 @@ export const SEGMENTS = [
   ...CHILCO,
   ...COLUMBIA,
   ...COMOX_HELMCKEN,
+  ...CRABAPPLE_RIDGE,
   ...CROSSTOWN,
   ...CYPRESS,
   ...DEER_LAKE_PARKWAY,
@@ -225,6 +228,7 @@ export const SEGMENTS = [
   ...OFF_BROADWAY,
   ...ONTARIO,
   ...PANDORA,
+  ...PARKSIDE,
   ...PENDER,
   ...PORT_MANN_BRIDGE,
   ...PORTSIDE,

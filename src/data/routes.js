@@ -4,7 +4,7 @@ import { VIDEOS } from "./videos";
 // Burnaby:
 // SFU: (to do)
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
-// Richmond: crabapple ridge; parkside; crosstown; odlin; woodwards/sunders; river pkwy; minoru; westminster hwy; no. 6 paths; lynas (no. 2 bridge); bridgeport connection; no. 2 path; river trail/dyke
+// Richmond: alderbridge path; crosstown; odlin; woodwards/saunders; river pkwy; minoru; westminster hwy; no. 6 paths; lynas (no. 2 bridge); bridgeport connection; no. 2 path; river trail/dyke
 // YVR: ferguson; russ baker; bridgeport bridge; paths
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
@@ -286,6 +286,10 @@ export const ROUTES = {
       },
     ],
   },
+  crabappleRidge: {
+    name: "Crabapple Ridge",
+    legs: [{ distance: 7.2, videos: {} }],
+  },
   crosstown: {
     name: "Crosstown Greenway",
     shortName: "Crosstown Gr.",
@@ -357,7 +361,7 @@ export const ROUTES = {
   },
   granville: {
     name: "Granville Ave",
-    legs: [{ distance: 4, videos: {} }],
+    legs: [{ distance: 4.2, videos: {} }],
   },
   haro: {
     name: "Haro",
@@ -572,6 +576,10 @@ export const ROUTES = {
   pandora: {
     name: "Pandora",
     legs: [{ distance: 2.2, videos: { eastbound: VIDEOS.pandoraEb } }],
+  },
+  parkside: {
+    name: "Parkside",
+    legs: [{ distance: 3.6, videos: {} }],
   },
   pender: {
     name: "Pender St",

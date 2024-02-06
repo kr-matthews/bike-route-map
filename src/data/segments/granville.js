@@ -1,4 +1,5 @@
 import {
+  BARNARD_GRANVILLE,
   GARDEN_CITY_CITATION_W,
   GARDEN_CITY_GRANVILLE_NW,
   GARDEN_CITY_GRANVILLE_S,
@@ -11,12 +12,28 @@ import {
 } from "../intersections";
 import { ROUTES } from "../routes";
 
+const NO_1_GRANVILLE_W = [49.16282, -123.18133];
 const RAILWAY_GRANVILLE_N = [49.1626, -123.16888];
 const GARDEN_CITY_GRANVILLE_SW = [49.16272, -123.12627];
 const WB_LANE_START = [49.16268, -123.16942];
 const CITATION_GRANVILLE_N = [49.16282, -123.1278];
 
 export const GRANVILLE = [
+  {
+    routeNames: [ROUTES.granville.name],
+    description: "barnard to no. 1",
+    type: "shared",
+    positions: [
+      BARNARD_GRANVILLE,
+      [49.16294, -123.18431],
+      [49.16288, -123.18418],
+      [49.16285, -123.18407],
+      [49.16282, -123.18389],
+      [49.16281, -123.18366],
+      [49.16281, -123.1817],
+      NO_1_GRANVILLE_W,
+    ],
+  },
   // eb
   {
     routeNames: [ROUTES.granville.name],
@@ -24,6 +41,7 @@ export const GRANVILLE = [
     type: "painted",
     oneWay: "required",
     positions: [
+      NO_1_GRANVILLE_W,
       [49.16279, -123.18107],
       [49.16282, -123.18031],
       [49.16285, -123.17036],
@@ -188,6 +206,7 @@ export const GRANVILLE = [
       [49.16294, -123.17036],
       [49.16291, -123.18031],
       [49.16288, -123.18107],
+      NO_1_GRANVILLE_W,
     ],
   },
 ];
