@@ -2,7 +2,7 @@ import About from "./About";
 import Filters from "./Filters";
 import Legend from "./Legend";
 import Routes from "./Routes";
-import SelectedRoute from "./SelectedRoute";
+import DetailBottomSheet from "./DetailBottomSheet";
 import useSavedState from "../../hooks/useSavedState";
 
 // !! move styling to css files
@@ -41,7 +41,7 @@ export default function Sidebar({ mapRef }) {
           )
       )}
 
-      <SelectedRoute mapRef={mapRef} />
+      <DetailBottomSheet mapRef={mapRef} />
     </div>
   );
 }
