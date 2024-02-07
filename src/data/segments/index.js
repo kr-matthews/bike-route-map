@@ -2,6 +2,7 @@ import { ADANAC } from "./adanac";
 import { AGNES } from "./agnes";
 import { ALBERNI } from "./alberni";
 import { ALDER } from "./alder";
+import { ALDERBRIDGE } from "./alderbridge";
 import { ALEXANDER } from "./alexander";
 import { ARBUTUS_GREENWAY } from "./arbutusGreenway";
 import { ARTHUR_LAING } from "./arthurLaing";
@@ -33,7 +34,8 @@ import { CHILCO } from "./chilco";
 import { COLUMBIA } from "./columbia";
 import { COMOX_HELMCKEN } from "./comoxHelmcken";
 import { CRABAPPLE_RIDGE } from "./crabappleRidge";
-import { CROSSTOWN } from "./crosstown";
+import { CROSSTOWN_NEW_WESTMINSTER } from "./crosstownNewWestminster";
+import { CROSSTOWN_RICHMOND } from "./crosstownRichmond";
 import { CYPRESS } from "./cypress";
 import { DEER_LAKE_PARKWAY } from "./deerLakeParkway";
 import { DUMFRIES } from "./dumfries";
@@ -133,6 +135,7 @@ import { WILLINGDON } from "./willingdon";
 import { WILLINGDON_LINEAR_PARK } from "./willingdonLinearPark";
 import { WINDERMERE } from "./windermere";
 import { WINDSOR } from "./windsor";
+import { WOODWARDS_SAUNDERS } from "./woodwardsSaunders";
 import { YORK } from "./york";
 import { YUKON } from "./yukon";
 
@@ -142,6 +145,7 @@ export const SEGMENTS = [
   ...AGNES,
   ...ALBERNI,
   ...ALDER,
+  ...ALDERBRIDGE,
   ...ALEXANDER,
   ...ARBUTUS_GREENWAY,
   ...ARTHUR_LAING,
@@ -173,7 +177,8 @@ export const SEGMENTS = [
   ...COLUMBIA,
   ...COMOX_HELMCKEN,
   ...CRABAPPLE_RIDGE,
-  ...CROSSTOWN,
+  ...CROSSTOWN_NEW_WESTMINSTER,
+  ...CROSSTOWN_RICHMOND,
   ...CYPRESS,
   ...DEER_LAKE_PARKWAY,
   ...DUMFRIES,
@@ -273,6 +278,7 @@ export const SEGMENTS = [
   ...WILLINGDON_LINEAR_PARK,
   ...WINDERMERE,
   ...WINDSOR,
+  ...WOODWARDS_SAUNDERS,
   ...YORK,
   ...YUKON,
 ];

@@ -855,7 +855,10 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
-    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.crosstown.name],
+    routeNames: [
+      ROUTES.centralValleyGreenway.name,
+      ROUTES.crosstownNewWestminster.name,
+    ],
     description: "brunette fraser split to columbia",
     positions: [
       BRUNETTE_FRASER_CVG_SE,
@@ -888,7 +891,10 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
-    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.crosstown.name],
+    routeNames: [
+      ROUTES.centralValleyGreenway.name,
+      ROUTES.crosstownNewWestminster.name,
+    ],
     description: "crossing columbia",
     type: "comfortable",
     positions: [COLUMBIA_SHERBROOKE_W, COLUMBIA_SHERBROOKE_E],

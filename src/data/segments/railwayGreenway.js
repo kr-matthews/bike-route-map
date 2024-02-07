@@ -1,6 +1,8 @@
 import {
+  RAILWAY_GREENWAY_COLBECK,
   RAILWAY_GREENWAY_GRANVILLE_N,
   RAILWAY_GREENWAY_GRANVILLE_S,
+  RAILWAY_GREENWAY_WOODWARDS,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
@@ -31,6 +33,7 @@ export const RAILWAY_GREENWAY = [
       [49.14223, -123.17015],
       [49.14288, -123.17015],
       [49.14306, -123.17003],
+      RAILWAY_GREENWAY_WOODWARDS,
       [49.14572, -123.17003],
       [49.14579, -123.16994],
       [49.14591, -123.16995],
@@ -41,6 +44,7 @@ export const RAILWAY_GREENWAY = [
       [49.14854, -123.17004],
       [49.14876, -123.17006],
       [49.14906, -123.17017],
+      RAILWAY_GREENWAY_COLBECK,
       [49.15346, -123.17018],
       [49.15372, -123.17005],
       [49.15548, -123.17003],

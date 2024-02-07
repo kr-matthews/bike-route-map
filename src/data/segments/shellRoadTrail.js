@@ -1,4 +1,8 @@
-import { SHELL_WILLIAMS_N, SHELL_WILLIAMS_S } from "../intersections";
+import {
+  SHELL_ALDERBRIDGE_NE,
+  SHELL_WILLIAMS_N,
+  SHELL_WILLIAMS_S,
+} from "../intersections";
 import { ROUTES } from "../routes";
 
 const SHELL_ATHABASCA_N = [49.1449, -123.10292];
@@ -101,7 +105,7 @@ export const SHELL_ROAD_TRAIL = [
       [49.1769, -123.10271],
       [49.17693, -123.10272],
       [49.177, -123.10279],
-      [49.17725, -123.10274],
+      SHELL_ALDERBRIDGE_NE,
       [49.17737, -123.10258],
       [49.17739, -123.10258],
       [49.17742, -123.10262],

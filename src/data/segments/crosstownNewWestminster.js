@@ -29,7 +29,7 @@ const STEWARDSON_OVERPASS_S_POST = [49.20172, -122.94098];
 
 // !! connection to cariboo on surrey
 
-export const CROSSTOWN = [
+export const CROSSTOWN_NEW_WESTMINSTER = [
   {
     description: "bc parkway curve",
     type: "comfortable",
@@ -96,7 +96,7 @@ export const CROSSTOWN = [
     positions: [TWENTY_THIRD_7TH, BC_PARKWAY_7TH],
   },
   {
-    routeNames: [ROUTES.crosstown.name],
+    routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "west bit",
     type: "shared",
     positions: [
@@ -109,13 +109,13 @@ export const CROSSTOWN = [
     ],
   },
   {
-    routeNames: [ROUTES.crosstown.name],
+    routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "20th sidewalk",
     type: "other",
     positions: [TWENTIETH_7TH_E_N, TWENTIETH_7TH_E_S],
   },
   {
-    routeNames: [ROUTES.crosstown.name],
+    routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "20th to and through park",
     type: "comfortable",
     positions: [
@@ -157,7 +157,7 @@ export const CROSSTOWN = [
     ],
   },
   {
-    routeNames: [ROUTES.crosstown.name],
+    routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "8th to 5th",
     type: "painted",
     oneWay: "required",
@@ -172,7 +172,7 @@ export const CROSSTOWN = [
     ],
   },
   {
-    routeNames: [ROUTES.crosstown.name],
+    routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "5th to 8th",
     type: "painted",
     oneWay: "required",
@@ -187,7 +187,7 @@ export const CROSSTOWN = [
     ],
   },
   {
-    routeNames: [ROUTES.crosstown.name],
+    routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "5th to mcbride",
     type: "comfortable",
     positions: [
@@ -207,14 +207,14 @@ export const CROSSTOWN = [
     ],
   },
   {
-    routeNames: [ROUTES.crosstown.name],
+    routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "before mcbride",
     type: "comfortable",
     elevation: 0.5,
     positions: [PRE_OVERPASS_W, MCBRIDE_OVERPASS_W],
   },
   {
-    routeNames: [ROUTES.crosstown.name],
+    routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "mcbride overpass",
     type: "comfortable",
     elevation: 1,
@@ -233,14 +233,14 @@ export const CROSSTOWN = [
     ],
   },
   {
-    routeNames: [ROUTES.crosstown.name],
+    routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "after mcbride",
     type: "comfortable",
     elevation: 0.5,
     positions: [MCBRIDE_OVERPASS_E, POST_OVERPASS_E],
   },
   {
-    routeNames: [ROUTES.crosstown.name],
+    routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "mcbride to richmond",
     type: "comfortable",
     positions: [
@@ -257,13 +257,13 @@ export const CROSSTOWN = [
     ],
   },
   {
-    routeNames: [ROUTES.crosstown.name],
+    routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "richmond north half",
     type: "shared",
     positions: [RICHMOND_SHILES, RICHMOND_SHERBROOKE],
   },
   {
-    routeNames: [ROUTES.crosstown.name],
+    routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "sherbrooke",
     type: "comfortable",
     positions: [
@@ -273,7 +273,7 @@ export const CROSSTOWN = [
     ],
   },
   {
-    routeNames: [ROUTES.crosstown.name],
+    routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "alt: cumberland & richmond",
     type: "shared",
     positions: [

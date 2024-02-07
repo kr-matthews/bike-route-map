@@ -1,10 +1,12 @@
 import {
+  RAILWAY_COLBECK_E,
   RAILWAY_GRANVILLE_MIDDLE,
   RAILWAY_GRANVILLE_NW,
   RAILWAY_GRANVILLE_SE,
   RAILWAY_WILLIAMS_NE,
   RAILWAY_WILLIAMS_NW,
   RAILWAY_WILLIAMS_SE,
+  RAILWAY_WOODWARDS_E,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
@@ -89,7 +91,7 @@ export const RAILWAY = [
     oneWay: "required",
     positions: [
       RAILWAY_WILLIAMS_NE,
-      [49.14392, -123.16976],
+      RAILWAY_WOODWARDS_E,
       [49.14682, -123.16975],
       NB_PRE_FRANCIS,
     ],
@@ -106,7 +108,7 @@ export const RAILWAY = [
     description: "nb: francis to blundell",
     type: "painted",
     oneWay: "required",
-    positions: [RAILWAY_FRANCIS_SE, [49.15248, -123.16977], NB_PRE_BLUNDELL],
+    positions: [RAILWAY_FRANCIS_SE, RAILWAY_COLBECK_E, NB_PRE_BLUNDELL],
   },
   {
     routeNames: [ROUTES.railway.name],

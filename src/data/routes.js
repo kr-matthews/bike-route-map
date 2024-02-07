@@ -4,7 +4,7 @@ import { VIDEOS } from "./videos";
 // Burnaby:
 // SFU: (to do)
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
-// Richmond: alderbridge path; crosstown; odlin; woodwards/saunders; river pkwy; minoru; westminster hwy; no. 6 paths; lynas (no. 2 bridge); bridgeport connection; no. 2 path; river trail/dyke
+// Richmond: odlin; river pkwy; minoru; westminster hwy; no. 6 paths; lynas (no. 2 bridge); bridgeport connection; no. 2 path; river trail/dyke
 // YVR: ferguson; russ baker; bridgeport bridge; paths
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
@@ -76,6 +76,11 @@ export const ROUTES = {
   alder: {
     name: "Alder",
     legs: [{ distance: 0.7, videos: { northbound: VIDEOS.alderNb } }],
+  },
+  alderbridge: {
+    name: "Alderbridge Way Path",
+    shortName: "Alderbridge Path",
+    legs: [{ distance: 1.6, videos: {} }],
   },
   alexander: {
     name: "Alexander",
@@ -290,7 +295,11 @@ export const ROUTES = {
     name: "Crabapple Ridge",
     legs: [{ distance: 7.2, videos: {} }],
   },
-  crosstown: {
+  crosstownRichmond: {
+    name: "Crosstown",
+    legs: [{ distance: 3.8, videos: {} }],
+  },
+  crosstownNewWestminster: {
     name: "Crosstown Greenway",
     shortName: "Crosstown Gr.",
     legs: [{ distanceMin: 7.0, distanceMax: 7.5, videos: {} }],
@@ -781,6 +790,11 @@ export const ROUTES = {
   windsor: {
     name: "Windsor",
     legs: [{ distance: 4.4, videos: { northbound: VIDEOS.windsorNb } }],
+  },
+  woodwardsSaunders: {
+    name: "Woodwards Rd/Saunders Rd",
+    shortName: "Woodwards Rd",
+    legs: [{ distance: 4.2, videos: {} }],
   },
   york: {
     name: "York",
