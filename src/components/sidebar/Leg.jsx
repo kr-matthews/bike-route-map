@@ -1,5 +1,7 @@
 import Video from "./Video";
 
+// !!! add leg data and highlight on hover
+
 export default function Leg({ leg }) {
   const hasNoVideos = Object.entries(leg.videos).length === 0;
 

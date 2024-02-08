@@ -11,3 +11,11 @@ export function hasVideo(segment, routeName) {
     (routeVideos ?? []).map(({ id }) => id).includes(videoId)
   );
 }
+
+export const getAnyRouteWithVideo = (videoId) => {
+  return Object.values(ROUTES).find(({ legs }) =>
+    legs.some(({ videos }) =>
+      Object.values(videos).some(({ id }) => id === videoId)
+    )
+  );
+};

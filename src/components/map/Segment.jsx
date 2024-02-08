@@ -8,7 +8,7 @@ import {
 } from "../../utils/pathOptions";
 import { Selections } from "../../App";
 import Polyline from "./Polyline";
-import { hasVideo } from "../../utils/routes";
+import { getAnyRouteWithVideo, hasVideo } from "../../utils/routes";
 import videoIcon from "../../images/video.svg";
 import VideoMarkers from "./VideoMarkers";
 import { normalizeElevation, normalizeType } from "../../utils/segmentTypes";
@@ -22,6 +22,7 @@ export default function Segment(segment) {
     hideArrows,
     isClosed,
     positions,
+    videos,
   } = segment;
   const {
     selectedRoute,
@@ -29,23 +30,42 @@ export default function Segment(segment) {
     highlighted,
     setHighlighted,
     video,
+    setVideoId,
     isSegmentHidden,
   } = useContext(Selections);
 
   const primaryRouteName = routeNames?.find((x) => x) || null;
   const hasAnyRoutes = (routeNames?.length ?? 0) > 0;
   const hasMultipleRoutes = (routeNames?.length ?? 0) > 1;
+  const hasAnyVideos = (videos?.length ?? 0) > 0;
   const pane = getSegmentPane(elevation, hasMultipleRoutes);
   const isHidden = isSegmentHidden(segment);
 
   const eventHandlers = {
     mouseover: () => setHighlighted(primaryRouteName),
     mouseout: () => setHighlighted(null),
-    mousedown: () => {
-      if (!primaryRouteName) return;
-      setSelected((selected) =>
-        selected === primaryRouteName ? null : primaryRouteName
-      );
+    click: () => {
+      if (primaryRouteName) {
+        const isRouteAlreadySelected = selectedRoute?.name === primaryRouteName;
+        setSelected(isRouteAlreadySelected ? null : primaryRouteName);
+      }
+    },
+    contextmenu: () => {
+      if (videos?.length) {
+        const firstVideo = videos[0];
+        const isVideoAlreadyShown = video?.id === firstVideo;
+        if (isVideoAlreadyShown) {
+          setVideoId(null);
+          setSelected(null);
+        } else {
+          const correspondingRouteName = routeNames?.length
+            ? routeNames[0]
+            : // should always be defined
+              getAnyRouteWithVideo(firstVideo)?.name;
+          setSelected(correspondingRouteName);
+          setVideoId(firstVideo);
+        }
+      }
     },
   };
 
@@ -110,29 +130,36 @@ export default function Segment(segment) {
           <>
             <div>
               {isClosed && <b>[CLOSED] </b>}
-              <em>
+              <u>
                 {typeText}
                 {oneWay === "required" && " - One way"}
+              </u>
+            </div>
+            {hasAnyRoutes ? (
+              routeNames.map((routeName) => (
+                <div key={routeName}>
+                  {hasVideo(segment, routeName) && (
+                    <img
+                      src={videoIcon}
+                      alt="video"
+                      style={{ marginRight: "0.5em", height: "0.8em" }}
+                    />
+                  )}
+                  {primaryRouteName === routeName ? (
+                    <b>{routeName}</b>
+                  ) : (
+                    routeName
+                  )}
+                </div>
+              ))
+            ) : (
+              <em>Alternative option or connection between routes</em>
+            )}
+            <div>
+              <em>
+                {hasAnyVideos ? "Right-click for video" : "No video available"}
               </em>
             </div>
-            {hasAnyRoutes
-              ? routeNames.map((routeName) => (
-                  <div key={routeName}>
-                    {hasVideo(segment, routeName) && (
-                      <img
-                        src={videoIcon}
-                        alt="video"
-                        style={{ marginRight: "0.5em", height: "0.8em" }}
-                      />
-                    )}
-                    {primaryRouteName === routeName ? (
-                      <b>{routeName}</b>
-                    ) : (
-                      routeName
-                    )}
-                  </div>
-                ))
-              : "Alternative option or connection between routes"}
           </>
         </Tooltip>
       </Polyline>
