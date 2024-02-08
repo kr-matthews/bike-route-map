@@ -12,8 +12,8 @@ export function hasVideo(segment, routeName) {
   );
 }
 
-export const getAnyRouteWithVideo = (videoId) => {
-  return Object.values(ROUTES).find(({ legs }) =>
+export const getRoutesWithVideo = (videoId) => {
+  return Object.values(ROUTES).filter(({ legs }) =>
     legs.some(({ videos }) =>
       Object.values(videos).some(({ id }) => id === videoId)
     )

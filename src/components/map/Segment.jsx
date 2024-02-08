@@ -8,7 +8,7 @@ import {
 } from "../../utils/pathOptions";
 import { Selections } from "../../App";
 import Polyline from "./Polyline";
-import { getAnyRouteWithVideo, hasVideo } from "../../utils/routes";
+import { getRoutesWithVideo, hasVideo } from "../../utils/routes";
 import videoIcon from "../../images/video.svg";
 import VideoMarkers from "./VideoMarkers";
 import { normalizeElevation, normalizeType } from "../../utils/segmentTypes";
@@ -58,11 +58,14 @@ export default function Segment(segment) {
           setVideoId(null);
           setSelected(null);
         } else {
-          const correspondingRouteName = routeNames?.length
-            ? routeNames[0]
-            : // should always be defined
-              getAnyRouteWithVideo(firstVideo)?.name;
-          setSelected(correspondingRouteName);
+          // use the first listed route which has the video
+          // otherwise take any route which has the video
+          const routesWithVideo = getRoutesWithVideo(firstVideo);
+          const aRouteWithVideo =
+            (routeNames ?? []).find((routeName) =>
+              routesWithVideo.some((route) => route.name === routeName)
+            ) ?? routesWithVideo[0].name;
+          setSelected(aRouteWithVideo);
           setVideoId(firstVideo);
         }
       }

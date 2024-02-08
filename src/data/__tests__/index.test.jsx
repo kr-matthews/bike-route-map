@@ -3,7 +3,7 @@ import { SEGMENTS } from "../segments";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 import { MCKAY_BC_PARKWAY, MCKAY_CENTRAL_SE } from "../intersections";
-import { getAnyRouteWithVideo } from "../../utils/routes";
+import { getRoutesWithVideo } from "../../utils/routes";
 
 // helpers
 
@@ -11,8 +11,7 @@ const positionsMatch = (p1, p2) => {
   return p1[0] === p2[0] && p1[1] === p2[1];
 };
 
-const getARouteName = (videoId) =>
-  getAnyRouteWithVideo(videoId)?.name ?? "NO ROUTE";
+const getARouteName = (videoId) => getRoutesWithVideo(videoId)[0]?.name;
 
 const EXCEPTIONAL_SEAMS = [
   // metrotown ccw loop point
