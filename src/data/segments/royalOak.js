@@ -1,11 +1,15 @@
 import {
+  NELSON_HAZEL_SW,
+  NELSON_SANDERS_E,
   ROYAL_OAK_DEER_LAKE_NW,
   ROYAL_OAK_DOVER_NW,
   ROYAL_OAK_DOVER_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const ROYAL_OAK_SANDERS_NW = [49.22801, -122.9891];
+const MARLBOROUGH_SANDERS_NE = [49.228, -122.99144];
 
 export const ROYAL_OAK = [
   {
@@ -23,20 +27,37 @@ export const ROYAL_OAK = [
   {
     description: "sanders",
     type: "mixed",
+    videos: [VIDEOS.royalOakSb.id],
     positions: [
-      [49.22799, -122.99144],
-      [49.22799, -122.99053],
+      MARLBOROUGH_SANDERS_NE,
+      [49.228, -122.99053],
       ROYAL_OAK_SANDERS_NW,
+    ],
+  },
+  {
+    description: "sanders to metrotown",
+    type: "shared",
+    hideUnlessVideo: true,
+    videos: [VIDEOS.royalOakSb.id],
+    videosEndAtStart: [VIDEOS.royalOakSb.id],
+    positions: [
+      NELSON_HAZEL_SW,
+      NELSON_SANDERS_E,
+      [49.22792, -122.99409],
+      [49.22792, -122.99147],
+      MARLBOROUGH_SANDERS_NE,
     ],
   },
   {
     routeNames: [ROUTES.royalOak.name],
     description: "all",
     type: "comfortable",
+    videos: [VIDEOS.royalOakSb.id],
+    videosStartAtEnd: [VIDEOS.royalOakSb.id],
     positions: [
       ROYAL_OAK_SANDERS_NW,
       [49.22806, -122.9891],
-      [49.22912, -122.98913],
+      [49.22913, -122.98915],
       [49.22975, -122.98915],
       ROYAL_OAK_DOVER_SW,
       ROYAL_OAK_DOVER_NW,

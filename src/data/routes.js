@@ -638,8 +638,9 @@ export const ROUTES = {
     ],
   },
   royalOak: {
-    name: "Royal Oak",
-    legs: [{ distance: 1.3, videos: {} }],
+    name: "Royal Oak Urban Trail",
+    shortName: "Royal Oak Trail",
+    legs: [{ distance: 1.3, videos: { southbound: VIDEOS.royalOakSb } }],
   },
   rumble: {
     name: "Rumble Street Urban Trail",
@@ -652,6 +653,7 @@ export const ROUTES = {
   },
   seaIslandConnector: {
     name: "Sea Island Connector",
+    shortName: "Sea Island Conn.",
     legs: [{ distance: 0.8, videos: {} }],
   },
   seaIslandWay: {
