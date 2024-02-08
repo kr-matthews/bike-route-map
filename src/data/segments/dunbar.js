@@ -32,14 +32,12 @@ const DUNBAR_40TH_W = [49.23558, -123.18539];
 export const DUNBAR = [
   // 16th
   {
-    routeNames: [ROUTES.dunbar.name],
     description: "16th wb: part 1",
     type: "painted",
     oneWay: "required",
     positions: [[49.25803, -123.1841], DUNBAR_16TH_NW],
   },
   {
-    routeNames: [ROUTES.dunbar.name],
     description: "16th wb: part 2",
     type: "painted",
     oneWay: "required",
@@ -48,7 +46,6 @@ export const DUNBAR = [
     positions: [DUNBAR_16TH_NW, [49.25806, -123.18602]],
   },
   {
-    routeNames: [ROUTES.dunbar.name],
     description: "16th eb",
     type: "painted",
     oneWay: "required",
@@ -149,7 +146,6 @@ export const DUNBAR = [
     ],
   },
   {
-    routeNames: [ROUTES.dunbar.name],
     description: "16th: wb dunbar to dunbar",
     type: "painted",
     oneWay: "required",
