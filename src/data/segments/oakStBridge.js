@@ -21,7 +21,7 @@ export const OAK_STREET_BRIDGE = [
     routeNames: [ROUTES.oakStreetBridge.name],
     description: "sea island way",
     type: "mixed",
-    oneWay: "required",
+    oneWay: "recommended",
     positions: [
       SOUTHBOUND_SPLIT,
       [49.1914, -123.12015],
@@ -38,7 +38,7 @@ export const OAK_STREET_BRIDGE = [
     routeNames: [ROUTES.oakStreetBridge.name],
     description: "sea island way missing end",
     type: "other",
-    oneWay: "required",
+    oneWay: "recommended",
     positions: [
       SEA_ISLAND_PATH_END,
       [49.19116, -123.12396],
@@ -51,7 +51,7 @@ export const OAK_STREET_BRIDGE = [
   {
     routeNames: [ROUTES.oakStreetBridge.name],
     description: "sb double-back",
-    oneWay: "required",
+    oneWay: "recommended",
     positions: [
       SOUTHBOUND_SPLIT,
       [49.19144, -123.12005],
@@ -106,7 +106,7 @@ export const OAK_STREET_BRIDGE = [
     routeNames: [ROUTES.oakStreetBridge.name],
     description: "sb pre-bridge",
     type: "mixed",
-    oneWay: "required",
+    oneWay: "recommended",
     elevation: 0.5,
     positions: [
       [49.20613, -123.13036],
@@ -119,7 +119,7 @@ export const OAK_STREET_BRIDGE = [
     routeNames: [ROUTES.oakStreetBridge.name],
     description: "sb bridge",
     type: "mixed",
-    oneWay: "required",
+    oneWay: "recommended",
     elevation: 1,
     positions: [
       SOUTHBOUND_ELEVATION_START,
@@ -158,7 +158,7 @@ export const OAK_STREET_BRIDGE = [
     routeNames: [ROUTES.oakStreetBridge.name],
     description: "sb pre-split",
     type: "mixed",
-    oneWay: "required",
+    oneWay: "recommended",
     hideArrows: true,
     elevation: 0.5,
     positions: [
@@ -193,7 +193,7 @@ export const OAK_STREET_BRIDGE = [
   {
     routeNames: [ROUTES.oakStreetBridge.name],
     description: "nb pre-bridge",
-    oneWay: "required",
+    oneWay: "recommended",
     elevation: 0.5,
     positions: [
       NORTHBOUND_SIDEWALK_START,
@@ -206,7 +206,7 @@ export const OAK_STREET_BRIDGE = [
     routeNames: [ROUTES.oakStreetBridge.name],
     description: "nb bridge",
     type: "mixed",
-    oneWay: "required",
+    oneWay: "recommended",
     elevation: 1,
     positions: [
       NORTHBOUND_ELEVATION_START,
@@ -234,7 +234,7 @@ export const OAK_STREET_BRIDGE = [
   {
     routeNames: [ROUTES.oakStreetBridge.name],
     description: "nb post-bridge",
-    oneWay: "required",
+    oneWay: "recommended",
     elevation: 0.5,
     positions: [
       NORTHBOUND_ELEVATION_END,
