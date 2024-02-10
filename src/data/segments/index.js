@@ -87,6 +87,7 @@ import { NO_3 } from "./no3";
 import { NORTH_SOUTH } from "./northSouth";
 import { OAK_STREET_BRIDGE } from "./oakStBridge";
 import { OAKLAND_BURRIS } from "./oaklandBurris";
+import { ODLIN } from "./odlin";
 import { OFF_BROADWAY } from "./offBroadway";
 import { ONTARIO } from "./ontario";
 import { PANDORA } from "./pandora";
@@ -130,6 +131,7 @@ import { VICTORY } from "./victory";
 import { WALES_DUCHESS } from "./walesDuchess";
 import { WATERFRONT } from "./waterfront";
 import { WESBROOK } from "./wesbrook";
+import { WESTMINSTER_HWY } from "./westminsterHwy";
 import { WILLIAMS } from "./williams";
 import { WILLINGDON } from "./willingdon";
 import { WILLINGDON_LINEAR_PARK } from "./willingdonLinearPark";
@@ -230,6 +232,7 @@ export const SEGMENTS = [
   ...NORTH_SOUTH,
   ...OAK_STREET_BRIDGE,
   ...OAKLAND_BURRIS,
+  ...ODLIN,
   ...OFF_BROADWAY,
   ...ONTARIO,
   ...PANDORA,
@@ -273,6 +276,7 @@ export const SEGMENTS = [
   ...WALES_DUCHESS,
   ...WATERFRONT,
   ...WESBROOK,
+  ...WESTMINSTER_HWY,
   ...WILLIAMS,
   ...WILLINGDON,
   ...WILLINGDON_LINEAR_PARK,

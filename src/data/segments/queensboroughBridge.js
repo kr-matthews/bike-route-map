@@ -1,13 +1,15 @@
 import {
   BC_PARKWAY_7TH,
+  QUEENSBOROUGH_BOYD_NW,
+  QUEENSBOROUGH_BOYD_SW,
   QUEENSBOROUGH_STEWARDSON_E,
   QUEENSBOROUGH_STEWARDSON_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-const QUEENSBOROUGH_BOYD_SE = [49.19238, -122.94258];
-const QUEENSBOROUGH_BOYD_SW = [49.19213, -122.94314];
+const QUEENSBOROUGH_BOYD_S_SE = [49.19238, -122.94258];
+const QUEENSBOROUGH_BOYD_S_SW = [49.19214, -122.94316];
 const QUEENSBOROUGH_LOOPS_ELEVATION_START = [49.19922, -122.9508];
 const QUEENSBOROUGH_LOOPS_ELEVATION_END = [49.19867, -122.95059];
 const QUEENSBOROUGH_BC_PARKWAY_SPLIT = [49.19781, -122.94883];
@@ -22,11 +24,12 @@ export const QUEENSBOROUGH_BRIDGE = [
     description: "under south end",
     type: "mixed",
     positions: [
-      [49.1922, -122.94325],
+      QUEENSBOROUGH_BOYD_NW,
       QUEENSBOROUGH_BOYD_SW,
+      QUEENSBOROUGH_BOYD_S_SW,
       [49.19237, -122.94263],
-      QUEENSBOROUGH_BOYD_SE,
-      [49.19242, -122.9425],
+      QUEENSBOROUGH_BOYD_S_SE,
+      [49.19245, -122.9425],
       [49.1925, -122.94242],
     ],
   },
@@ -116,13 +119,13 @@ export const QUEENSBOROUGH_BRIDGE = [
     oneWay: "recommended",
     positions: [
       SB_ELEVATION_END,
-      [49.19181, -122.94282],
-      [49.19179, -122.94283],
-      [49.19179, -122.94286],
-      [49.19181, -122.94289],
-      [49.19185, -122.94291],
+      [49.19181, -122.94283],
+      [49.19179, -122.94284],
+      [49.19179, -122.94287],
+      [49.19181, -122.9429],
+      [49.19185, -122.94292],
       [49.19194, -122.94297],
-      QUEENSBOROUGH_BOYD_SW,
+      QUEENSBOROUGH_BOYD_S_SW,
     ],
   },
   {
@@ -132,16 +135,16 @@ export const QUEENSBOROUGH_BRIDGE = [
     elevation: 0.5,
     oneWay: "recommended",
     positions: [
-      QUEENSBOROUGH_BOYD_SE,
+      QUEENSBOROUGH_BOYD_S_SE,
       [49.19236, -122.94251],
       [49.19232, -122.94244],
       [49.19228, -122.9424],
-      [49.19192, -122.94224],
-      [49.19181, -122.94221],
+      [49.19192, -122.94225],
+      [49.19181, -122.94222],
       [49.19179, -122.94222],
-      [49.19178, -122.94224],
-      [49.19179, -122.94226],
-      [49.19181, -122.94229],
+      [49.19178, -122.94225],
+      [49.19179, -122.94228],
+      [49.19181, -122.9423],
       [49.19204, -122.94246],
       NB_ELEVATION_START,
     ],

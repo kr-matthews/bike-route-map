@@ -4,9 +4,9 @@ import { VIDEOS } from "./videos";
 // Burnaby:
 // SFU: (to do)
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
-// Richmond: odlin; river pkwy; minoru; westminster hwy; no. 6 paths; lynas (no. 2 bridge); bridgeport connection; no. 2 path; river trail/dyke
+// Richmond: fraserwood/dyke; river pkwy; minoru; no. 6 paths; lynas (no. 2 bridge); bridgeport connection; no. 2 path; river trail/dyke
 // YVR: ferguson; russ baker; bridgeport bridge; paths
-// New Westminster:
+// New Westminster: boyd; ewen; boundary; queen's canal; alex fraser bridge; howes (path & shoulder)
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
 // West Vancouver: marine dr; mathers+; old train; hwy; keith;
 // Surrey: scott rd; alex fraser; timbers; fraser hwy;
@@ -574,6 +574,10 @@ export const ROUTES = {
     shortName: "Oakland St",
     legs: [{ distance: 2.5, videos: {} }],
   },
+  odlin: {
+    name: "Odlin",
+    legs: [{ distance: 2.1, videos: {} }],
+  },
   offBroadway: {
     name: "Off Broadway",
     legs: [{ distance: 11.7, videos: { westbound: VIDEOS.offBroadwayWb } }],
@@ -770,6 +774,11 @@ export const ROUTES = {
   wesbrook: {
     name: "Wesbrook Mall",
     legs: [{ distance: 3.4, videos: {} }],
+  },
+  westminsterHwy: {
+    name: "Westminster Highway",
+    shortName: "Westminster Hwy",
+    legs: [{ distance: 13.3, videos: {} }],
   },
   williams: {
     name: "Williams Rd",
