@@ -21,15 +21,36 @@ const POST_OVERPASS_E = [49.2208, -122.90967];
 const CUMBERLAND_7TH = [49.22276, -122.90658];
 const RICHMOND_SHILES = [49.22518, -122.89867];
 const RICHMOND_SHERBROOKE = [49.22797, -122.89861];
+const RICHMOND_EIGHTH_N = [49.22963, -122.89855];
+const RICHMOND_SURREY = [49.23063, -122.89852];
 
 const TWENTIETH_MEAD_E = [49.20097, -122.94586];
 const STEWARDSON_OVERPASS_N = [49.20183, -122.94173];
 const STEWARDSON_OVERPASS_S = [49.20175, -122.9409];
 const STEWARDSON_OVERPASS_S_POST = [49.20172, -122.94098];
 
-// !! connection to cariboo on surrey
-
 export const CROSSTOWN_NEW_WESTMINSTER = [
+  {
+    description: "richmond st to eight ave",
+    type: "shared",
+    positions: [RICHMOND_SHERBROOKE, RICHMOND_EIGHTH_N],
+  },
+  {
+    description: "richmond st to surrey st",
+    type: "comfortable",
+    positions: [RICHMOND_EIGHTH_N, RICHMOND_SURREY],
+  },
+  {
+    description: "surrey st",
+    type: "comfortable",
+    positions: [
+      RICHMOND_SURREY,
+      [49.23292, -122.90139],
+      [49.23303, -122.90143],
+      [49.23306, -122.90137],
+      [49.23313, -122.90146],
+    ],
+  },
   {
     description: "bc parkway curve",
     type: "comfortable",

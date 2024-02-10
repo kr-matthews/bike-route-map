@@ -1,5 +1,6 @@
 import {
   BEGBIE_COLUMBIA_N,
+  EIGHTH_CARNARVON_E,
   ELLIOT_CARNARVON,
   MERIVALE_CARNARVON,
 } from "../intersections";
@@ -31,7 +32,7 @@ export const CARNARVON = [
     positions: [
       [49.20175, -122.91311],
       [49.20179, -122.91315],
-      [49.2021, -122.91258],
+      EIGHTH_CARNARVON_E,
       BEGBIE_CARNARVON,
       SIXTH_CARNARVON,
     ],

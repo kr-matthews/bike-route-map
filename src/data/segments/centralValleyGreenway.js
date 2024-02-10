@@ -37,6 +37,7 @@ import {
   SPERLING_WINSTON,
   VICTORIA_BROADWAY_SE,
   WOODLAND_GRANDVIEW,
+  EIGHTH_CARNARVON_E,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -1001,6 +1002,18 @@ export const CENTRAL_VALLEY_GREENWAY = [
       [49.20271, -122.90891],
       BEGBIE_COLUMBIA_N,
     ],
+  },
+  {
+    description: "columbia: wb beyond begbie & up 8th",
+    type: "painted",
+    oneWay: "required",
+    positions: [BEGBIE_COLUMBIA_N, [49.20132, -122.9115], EIGHTH_CARNARVON_E],
+  },
+  {
+    description: "columbia: eb before begbie",
+    type: "painted",
+    oneWay: "required",
+    positions: [[49.20129, -122.91132], BEGBIE_COLUMBIA_S],
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
