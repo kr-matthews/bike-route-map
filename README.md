@@ -17,12 +17,12 @@ On GitHub Pages at [https://kr-matthews.github.io/bike-route-map](https://kr-mat
 - Bridges and tunnels/undercover routes visually distinct.
 - Select a route to see information and embedded YouTube video(s) (if available).
 - Explanatory legend.
+- Filters (to only show comfortable segments, for example).
 
 ### Potential Future
 
 See [enhancements](https://github.com/kr-matthews/bike-route-map/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement) on GitHub.
 
-- Ability to filter what types of infrastructure are shown (that is, filter to only show comfortable segments).
 - More routes in surrounding cities/areas.
 
 ## Original Intentions
