@@ -16,23 +16,45 @@ export default function About({ navigateTo }) {
       <div
         style={{ overflowY: "scroll", overflow: "auto", paddingRight: "1em" }}
       >
+        <ul>
+          <li>
+            <b>Hover</b> over a segment for information.
+          </li>
+          <li>
+            <b>Click</b> on a segment for route <b>details</b> (when
+            applicable).
+          </li>
+          <li>
+            <b>Right-click</b> on a segment for a corresponding <b>video</b>{" "}
+            (when available).
+          </li>
+          <li>Use the icons in the top right to:</li>
+          <ul>
+            <li>
+              See a <b>list</b> of all routes, and search by name.
+            </li>
+            <li>
+              View the <b>legend</b>.
+            </li>
+            <li>
+              <b>Filter</b> which segments are displayed on the map.
+            </li>
+          </ul>
+        </ul>
         <p>
           This is a map of bike routes in and around Vancouver. All bike routes
-          in <b>Vancouver</b> are included. Most bike routes in <b>Burnaby</b>{" "}
-          and <b>New Westminster</b> are included. Major bike routes in{" "}
-          <b>Richmond</b> and <b>UBC</b> are usually included. A few routes in
-          adjacent regions (North Vancouver, West Vancouver, Port Moody,
-          Coquitlam, Surrey, etc.) are included. But there are plenty more bike
-          routes (and other instances of bike infrastructure) that are not shown
-          on this map. More routes may (slowly) be added over time.
+          in <b>Vancouver</b> are included. Many (but not all) bike routes in{" "}
+          <b>Burnaby</b>, <b>Richmond</b>, <b>New Westminster</b>, and{" "}
+          <b>UBC</b> are included. A few routes in adjacent regions (North
+          Vancouver, West Vancouver, Port Moody, Coquitlam, Surrey, etc.) are
+          included. But there are plenty more bike routes (and other instances
+          of bike infrastructure) that are not shown on this map. More routes
+          may be added over time.
         </p>
         <p>
-          You can hover over or click segments on the map for more information,
-          including videos when available. For full details on the colors/etc.
-          see the legend ("?" icon above). For videos, the exact parts of the
-          map covered can be highlighted. When played, videos have chapters to
-          make it easy to find a specific portion of the route. Consider
-          watching videos at 2x speed ("Shift" + "{">"}" to speed up).
+          When played, videos have chapters to make it easy to find a specific
+          portion of the route. Consider watching videos at 2x speed ("Shift" +
+          "{">"}" to speed up).
         </p>
         <p style={{ color: "red" }}>
           {disclaimer}{" "}
