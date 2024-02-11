@@ -13,6 +13,7 @@ import { BEATTY } from "./beatty";
 import { BERESFORD } from "./beresford";
 import { BIG_BEND_PATH } from "./bigBendPath";
 import { BLANCA } from "./blanca";
+import { BOUNDARY } from "./boundary";
 import { BRIDGEPORT_TRAIL } from "./bridgeportTrail";
 import { BRUNETTE_FRASER } from "./brunetteFraser";
 import { BURNABY } from "./burnaby";
@@ -41,6 +42,7 @@ import { DEER_LAKE_PARKWAY } from "./deerLakeParkway";
 import { DUMFRIES } from "./dumfries";
 import { DUNBAR } from "./dunbar";
 import { DUNSMUIR } from "./dunsmuir";
+import { EWEN } from "./ewen";
 import { FORTY_FIFTH } from "./fortyFifth";
 import { FOURTEENTH } from "./fourteenth";
 import { FOURTH } from "./fourth";
@@ -158,6 +160,7 @@ export const SEGMENTS = [
   ...BERESFORD,
   ...BIG_BEND_PATH,
   ...BLANCA,
+  ...BOUNDARY,
   ...BRIDGEPORT_TRAIL,
   ...BRUNETTE_FRASER,
   ...BURNABY,
@@ -186,6 +189,7 @@ export const SEGMENTS = [
   ...DUMFRIES,
   ...DUNBAR,
   ...DUNSMUIR,
+  ...EWEN,
   ...FORTY_FIFTH,
   ...FOURTEENTH,
   ...FOURTH,

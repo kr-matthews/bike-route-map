@@ -6,7 +6,7 @@ import { VIDEOS } from "./videos";
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
 // Richmond: fraserwood/dyke; river pkwy; minoru; no. 6 paths; lynas (no. 2 bridge); bridgeport connection; no. 2 path; river trail/dyke
 // YVR: ferguson; russ baker; bridgeport bridge; paths
-// New Westminster: boyd; ewen; boundary; queen's canal; alex fraser bridge; howes (path & shoulder)
+// New Westminster: boyd; queen's canal; alex fraser bridge; howes (path & shoulder)
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
 // West Vancouver: marine dr; mathers+; old train; hwy; keith;
 // Surrey: scott rd; alex fraser; timbers; fraser hwy;
@@ -152,6 +152,10 @@ export const ROUTES = {
   blanca: {
     name: "Blanca St",
     legs: [{ distance: 1.2, videos: {} }],
+  },
+  boundary: {
+    name: "Boundary Trail",
+    legs: [{ distance: 0.6, videos: {} }],
   },
   bridgeportTrail: {
     name: "Bridgeport Trail",
@@ -324,6 +328,10 @@ export const ROUTES = {
   dunsmuir: {
     name: "Dunsmuir",
     legs: [{ distance: 1.6, videos: {} }],
+  },
+  ewen: {
+    name: "Ewen Ave Greenway",
+    legs: [{ distance: 2.6, videos: {} }],
   },
   francesUnion: {
     name: "Frances Union",
