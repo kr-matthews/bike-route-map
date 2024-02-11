@@ -10,7 +10,7 @@ export default function Video({ video, direction }) {
   const backgroundColor = isShowing ? COLOUR_VIDEO : COLOUR_NO_VIDEO;
 
   const dateText = video.date.toLocaleString("en-US", {
-    month: "long",
+    month: "short",
     year: "numeric",
   });
   const durationText = `${video.minutes} min`;
@@ -39,7 +39,7 @@ export default function Video({ video, direction }) {
             {direction}
           </span>
           {", "}
-          <span style={{ fontSize: "70%" }}>
+          <span style={{ fontSize: "75%" }}>
             {dateText}, {durationText}
           </span>
         </span>

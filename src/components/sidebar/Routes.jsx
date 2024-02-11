@@ -42,6 +42,10 @@ export default function Routes({ navigateTo }) {
   );
 }
 
+// !! route background colour
+// %s probably too much effort, so just 'main' colour; or uniform gradient with all 'relevant' colours
+// see https://stackoverflow.com/questions/19081355/how-can-apply-multiple-background-color-to-one-div
+
 function Route({ route }) {
   const { selectedRoute, setSelected, highlighted, setHighlighted } =
     useContext(Selections);
