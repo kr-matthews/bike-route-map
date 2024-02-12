@@ -14,6 +14,7 @@ import { BERESFORD } from "./beresford";
 import { BIG_BEND_PATH } from "./bigBendPath";
 import { BLANCA } from "./blanca";
 import { BOUNDARY } from "./boundary";
+import { BOYD } from "./boyd";
 import { BRIDGEPORT_TRAIL } from "./bridgeportTrail";
 import { BRUNETTE_FRASER } from "./brunetteFraser";
 import { BURNABY } from "./burnaby";
@@ -60,6 +61,7 @@ import { HIGHBURY } from "./highbury";
 import { HILLCREST } from "./hillcrest";
 import { HOMER } from "./homer";
 import { HORNBY } from "./hornby";
+import { HOWES } from "./howes";
 import { IMPERIAL } from "./imperial";
 import { INVERNESS } from "./inverness";
 import { KEEFER } from "./keefer";
@@ -161,6 +163,7 @@ export const SEGMENTS = [
   ...BIG_BEND_PATH,
   ...BLANCA,
   ...BOUNDARY,
+  ...BOYD,
   ...BRIDGEPORT_TRAIL,
   ...BRUNETTE_FRASER,
   ...BURNABY,
@@ -207,6 +210,7 @@ export const SEGMENTS = [
   ...HILLCREST,
   ...HOMER,
   ...HORNBY,
+  ...HOWES,
   ...IMPERIAL,
   ...INVERNESS,
   ...KEEFER,

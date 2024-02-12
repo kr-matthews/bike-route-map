@@ -4,12 +4,13 @@ import { VIDEOS } from "./videos";
 // Burnaby:
 // SFU: (to do)
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
-// Richmond: fraserwood/dyke; river pkwy; minoru; no. 6 paths; lynas (no. 2 bridge); bridgeport connection; no. 2 path; river trail/dyke
+// Richmond: fraserwood/dyke; queen's canal; river pkwy; minoru; no. 6 paths; lynas (no. 2 bridge); bridgeport connection; no. 2 path; river trail/dyke
 // YVR: ferguson; russ baker; bridgeport bridge; paths
-// New Westminster: boyd; queen's canal; alex fraser bridge; howes (path & shoulder)
+// New Westminster: port royal river trail; dyke
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
 // West Vancouver: marine dr; mathers+; old train; hwy; keith;
 // Surrey: scott rd; alex fraser; timbers; fraser hwy;
+// Delta: alex fraser bridge
 
 export const ROUTES = {
   third: {
@@ -156,6 +157,14 @@ export const ROUTES = {
   boundary: {
     name: "Boundary Trail",
     legs: [{ distance: 0.6, videos: {} }],
+  },
+  boyd: {
+    name: "Boyd St",
+    legs: [{ distance: 2.4, videos: {} }],
+  },
+  boydTrail: {
+    name: "Boyd St Trail",
+    legs: [{ distance: 1.0, videos: {} }],
   },
   bridgeportTrail: {
     name: "Bridgeport Trail",
@@ -426,6 +435,10 @@ export const ROUTES = {
   hornby: {
     name: "Hornby",
     legs: [{ distance: 2.1, videos: { northbound: VIDEOS.hornbyNb } }],
+  },
+  howes: {
+    name: "Howes St",
+    legs: [{ distance: 1.0, videos: {} }],
   },
   imperial: {
     name: "Imperial Dr",

@@ -1,4 +1,10 @@
-import { BOUNDARY_EWEN } from "../intersections";
+import {
+  BOUNDARY_EWEN,
+  BOYD_EWEN_SE,
+  BOYD_EWEN_SW,
+  HOWES_EWEN_SE,
+  HOWES_EWEN_SW,
+} from "../intersections";
 import { ROUTES } from "../routes";
 
 export const EWEN = [
@@ -19,8 +25,9 @@ export const EWEN = [
       [49.18501, -122.94939],
       [49.18507, -122.94931],
       [49.18567, -122.94784],
+      HOWES_EWEN_SW,
       [49.18619, -122.94654],
-      [49.18624, -122.94647],
+      HOWES_EWEN_SE,
       [49.18651, -122.94584],
       [49.18665, -122.94545],
       [49.18687, -122.94493],
@@ -45,8 +52,8 @@ export const EWEN = [
       [49.19132, -122.93425],
       [49.19137, -122.93409],
       [49.19157, -122.93363],
-      [49.19162, -122.93356],
-      [49.19174, -122.93329],
+      BOYD_EWEN_SW,
+      BOYD_EWEN_SE,
       [49.19184, -122.93298],
       [49.19216, -122.93224],
       [49.19219, -122.93221],

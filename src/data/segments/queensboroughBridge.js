@@ -1,6 +1,5 @@
 import {
   BC_PARKWAY_7TH,
-  QUEENSBOROUGH_BOYD_NW,
   QUEENSBOROUGH_BOYD_SW,
   QUEENSBOROUGH_STEWARDSON_E,
   QUEENSBOROUGH_STEWARDSON_W,
@@ -24,7 +23,6 @@ export const QUEENSBOROUGH_BRIDGE = [
     description: "under south end",
     type: "mixed",
     positions: [
-      QUEENSBOROUGH_BOYD_NW,
       QUEENSBOROUGH_BOYD_SW,
       QUEENSBOROUGH_BOYD_S_SW,
       [49.19237, -122.94263],
