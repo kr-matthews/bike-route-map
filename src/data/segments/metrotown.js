@@ -58,6 +58,8 @@ export const METROTOWN = [
     type: "shared",
     oneWay: "recommended",
     hideArrows: true,
+    videos: [VIDEOS.nelsonPathSb.id],
+    videosStartAtEnd: [VIDEOS.nelsonPathSb.id],
     positions: [NELSON_BENNETT_SW, NELSON_BENNETT_NW],
   },
   {

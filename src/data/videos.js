@@ -341,6 +341,11 @@ const VIDEOS = {
     date: new Date("2023 09 23"),
     minutes: 6,
   },
+  nelsonPathSb: {
+    id: "ckS7NYVk1tA",
+    date: new Date("2024 02 07"),
+    minutes: 2,
+  },
   nicolaNb: {
     id: "2kPXYw2lzug",
     date: new Date("2023 08 03"),
@@ -407,6 +412,11 @@ const VIDEOS = {
     id: "5_aB2Zw_JK0",
     date: new Date("2024 02 07"),
     minutes: 9,
+  },
+  rumbleWb: {
+    id: "4tPhpf1JtF8",
+    date: new Date("2024 02 07"),
+    minutes: 12,
   },
   rupertNb: {
     id: "VYxXQDWhq5Q",
@@ -502,6 +512,11 @@ const VIDEOS = {
     id: "SDClkLpfIHc",
     date: new Date("2023 06 27"),
     minutes: 15,
+  },
+  victoryEb: {
+    id: "n25lThm28eE",
+    date: new Date("2024 02 07"),
+    minutes: 13,
   },
   walesDuchessSb: {
     id: "q-4HxNr0aWA",

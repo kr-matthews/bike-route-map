@@ -4,6 +4,7 @@ import {
   MCKAY_RUMBLE,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const ROYAL_OAK_RUMBLE_NW = [49.21494, -122.98862];
 const MACPHERSON_RUMBLE_N = [49.21497, -122.98285];
@@ -13,6 +14,8 @@ export const RUMBLE = [
     routeNames: [ROUTES.rumble.name],
     description: "west half",
     type: "mixed",
+    videos: [VIDEOS.rumbleWb.id],
+    videosEndAtStart: [VIDEOS.rumbleWb.id],
     positions: [
       [49.21489, -123.02355],
       [49.2149, -123.02091],
@@ -29,12 +32,14 @@ export const RUMBLE = [
     routeNames: [ROUTES.rumble.name],
     description: "missing middle",
     type: "other",
+    videos: [VIDEOS.rumbleWb.id],
     positions: [ROYAL_OAK_RUMBLE_NW, MACPHERSON_RUMBLE_N],
   },
   {
     routeNames: [ROUTES.rumble.name],
     description: "east half",
     type: "mixed",
+    videos: [VIDEOS.rumbleWb.id],
     positions: [
       MACPHERSON_RUMBLE_N,
       BULLER_RUMBLE_N,

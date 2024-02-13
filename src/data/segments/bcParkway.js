@@ -10,6 +10,7 @@ import {
   BC_PARKWAY_LONDON,
   BC_PARKWAY_MISSION,
   BC_PARKWAY_SOUTHRIDGE_TRAIL,
+  BC_PARKWAY_VICTORY_CONNECTION,
   BONSOR_BC_PARKWAY,
   BULLER_BERESFORD_W,
   BULLER_PRENTER,
@@ -83,6 +84,7 @@ const LAKEWOOD_GRANDVIEW_CUT_N = [49.26047, -123.06208];
 
 const CENTRAL_IMPERIAL_SW = [49.22187, -122.99727];
 const JUBILEE_IMPERIAL_SE = [49.22187, -122.99573];
+const EAST_OF_GILLEY_RUMBLE = [49.21487, -122.97131];
 
 export const BC_PARKWAY = [
   // vancouver alternates
@@ -450,8 +452,7 @@ export const BC_PARKWAY = [
   },
   {
     routeNames: [ROUTES.bcParkway.name],
-    description: "imperial to overpass",
-    elevation: 0.5,
+    description: "imperial to gilley (rumble)",
     videos: [VIDEOS.bcParkwayBurnabyEb.id, VIDEOS.bcParkwayBurnabyWb.id],
     positions: [
       JUBILEE_IMPERIAL_SE,
@@ -494,9 +495,31 @@ export const BC_PARKWAY = [
       [49.2152, -122.97261],
       [49.21498, -122.97245],
       GILLEY_RUMBLE_NW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "bit of rumble near gilley",
+    videos: [
+      VIDEOS.bcParkwayBurnabyEb.id,
+      VIDEOS.bcParkwayBurnabyWb.id,
+      VIDEOS.rumbleWb.id,
+    ],
+    videosStartAtEnd: [VIDEOS.rumbleWb.id],
+    positions: [
+      GILLEY_RUMBLE_NW,
       [49.21483, -122.97176],
       [49.21487, -122.97151],
-      [49.21487, -122.97131],
+      EAST_OF_GILLEY_RUMBLE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "beyond gilley to overpass",
+    elevation: 0.5,
+    videos: [VIDEOS.bcParkwayBurnabyEb.id, VIDEOS.bcParkwayBurnabyWb.id],
+    positions: [
+      EAST_OF_GILLEY_RUMBLE,
       [49.21484, -122.97092],
       [49.21484, -122.97059],
       [49.21483, -122.97014],
@@ -525,7 +548,7 @@ export const BC_PARKWAY = [
       [49.21362, -122.9606],
       [49.21347, -122.96064],
       [49.21334, -122.96072],
-      [49.21319, -122.96089],
+      BC_PARKWAY_VICTORY_CONNECTION,
       [49.21287, -122.96093],
       [49.21269, -122.96088],
       BC_PARKWAY_BYRNE_CREEK,

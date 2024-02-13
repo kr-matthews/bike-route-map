@@ -576,7 +576,7 @@ export const ROUTES = {
   },
   nelsonAve: {
     name: "Nelson Ave Path",
-    legs: [{ distance: 0.4, videos: {} }],
+    legs: [{ distance: 0.4, videos: { southbound: VIDEOS.nelsonPathSb } }],
   },
   nicola: {
     name: "Nicola",
@@ -679,7 +679,7 @@ export const ROUTES = {
   rumble: {
     name: "Rumble Street Urban Trail",
     shortName: "Rumble Urban Trail",
-    legs: [{ distance: 3.7, videos: {} }],
+    legs: [{ distance: 3.7, videos: { westbound: VIDEOS.rumbleWb } }],
   },
   rupert: {
     name: "Rupert St",
@@ -795,7 +795,7 @@ export const ROUTES = {
   },
   victory: {
     name: "Victory",
-    legs: [{ distance: 3.7, videos: {} }],
+    legs: [{ distance: 3.7, videos: { eastbound: VIDEOS.victoryEb } }],
   },
   walesDuchess: {
     name: "Wales Duchess",

@@ -1,13 +1,16 @@
 import {
   ANTRIM_BC_PARKWAY,
+  BC_PARKWAY_VICTORY_CONNECTION,
   BULLER_PRENTER,
   BULLER_RUMBLE_N,
   MCKAY_VICTORY,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const ANTRIM_BERESFORD = [49.21917, -122.98504];
 const MACPHERSON_BERESFORD_E = [49.21875, -122.9828];
+const HEDLEY_NEVILLE = [49.2138, -122.96735];
 
 export const VICTORY = [
   {
@@ -19,6 +22,8 @@ export const VICTORY = [
     routeNames: [ROUTES.victory.name],
     description: "patterson to beresford",
     type: "quiet",
+    videos: [VIDEOS.victoryEb.id],
+    videosStartAtStart: [VIDEOS.victoryEb.id],
     positions: [
       [49.2184, -123.01233],
       [49.21839, -123.01057],
@@ -40,6 +45,7 @@ export const VICTORY = [
     routeNames: [ROUTES.victory.name],
     description: "busy beresford",
     type: "shared",
+    videos: [VIDEOS.victoryEb.id],
     positions: [
       ANTRIM_BERESFORD,
       [49.21876, -122.98307],
@@ -50,6 +56,7 @@ export const VICTORY = [
     routeNames: [ROUTES.victory.name],
     description: "macpherson to hedley",
     type: "quiet",
+    videos: [VIDEOS.victoryEb.id],
     positions: [
       MACPHERSON_BERESFORD_E,
       [49.2184, -122.98113],
@@ -64,7 +71,24 @@ export const VICTORY = [
       [49.21386, -122.9775],
       [49.21385, -122.97477],
       [49.21382, -122.97196],
-      [49.2138, -122.96735],
+      HEDLEY_NEVILLE,
+    ],
+  },
+  {
+    description: "trail to bc parkway",
+    type: "comfortable",
+    hideUnlessVideo: true,
+    videos: [VIDEOS.victoryEb.id],
+    videosEndAtEnd: [VIDEOS.victoryEb.id],
+    positions: [
+      HEDLEY_NEVILLE,
+      [49.213, -122.96735],
+      [49.213, -122.96664],
+      [49.21296, -122.96654],
+      [49.21292, -122.96541],
+      [49.2131, -122.96428],
+      [49.21318, -122.96247],
+      BC_PARKWAY_VICTORY_CONNECTION,
     ],
   },
 ];
