@@ -4,9 +4,9 @@ import { VIDEOS } from "./videos";
 // Burnaby:
 // SFU: (to do)
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
-// Richmond: fraserwood/dyke; queen's canal; river pkwy; minoru; no. 6 paths; lynas (no. 2 bridge); bridgeport connection; no. 2 path; river trail/dyke
+// Richmond: queen's canal; river pkwy; minoru; no. 6 paths; lynas (no. 2 bridge); bridgeport connection; no. 2 path; river trail/dyke
 // YVR: ferguson; russ baker; bridgeport bridge; paths
-// New Westminster: port royal river trail; dyke
+// New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
 // West Vancouver: marine dr; mathers+; old train; hwy; keith;
 // Surrey: scott rd; alex fraser; timbers; fraser hwy;
@@ -365,6 +365,10 @@ export const ROUTES = {
       { name: "River District", distance: 1.6, videos: {} },
     ],
   },
+  fraserwoodTrail: {
+    name: "Fraserwood Trail",
+    legs: [{ distance: 1.7, videos: {} }],
+  },
   gardenCity: {
     name: "Garden City Rd",
     legs: [
@@ -623,6 +627,11 @@ export const ROUTES = {
     name: "Port Mann Bridge",
     legs: [{ distance: 3.1, videos: {} }],
   },
+  portRoyalRiverTrail: {
+    name: "Port Royal River Trail",
+    shortName: "Port Royal River T.",
+    legs: [{ distance: 1.1, videos: {} }],
+  },
   portside: {
     name: "Portside",
     legs: [{ distance: 3, videos: { eastbound: VIDEOS.portsideEb } }],
@@ -739,6 +748,10 @@ export const ROUTES = {
     legs: [
       { distance: 1.2, videos: { westbound: VIDEOS.cambieBridgeSmitheNb } },
     ],
+  },
+  southDyke: {
+    name: "South Dyke Rd",
+    legs: [{ distance: 2.1, videos: {} }],
   },
   southeast: {
     name: "Southeast",

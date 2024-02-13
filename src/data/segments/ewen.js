@@ -4,6 +4,7 @@ import {
   BOYD_EWEN_SW,
   HOWES_EWEN_SE,
   HOWES_EWEN_SW,
+  PORT_ROYAL_EWEN,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
@@ -55,9 +56,9 @@ export const EWEN = [
       BOYD_EWEN_SW,
       BOYD_EWEN_SE,
       [49.19184, -122.93298],
-      [49.19216, -122.93224],
+      [49.19216, -122.93225],
       [49.19219, -122.93221],
-      [49.19221, -122.93199],
+      PORT_ROYAL_EWEN,
       [49.19225, -122.93188],
       [49.19244, -122.93163],
       [49.19253, -122.93138],

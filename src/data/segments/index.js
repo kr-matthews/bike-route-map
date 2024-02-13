@@ -50,6 +50,7 @@ import { FOURTH } from "./fourth";
 import { FRANCES_UNION } from "./francesUnion";
 import { FRASER_FORESHORE } from "./fraserForeshoreTrail";
 import { FRASER_RIVER_TRAIL } from "./fraserRiverTrail";
+import { FRASERWOOD_TRAIL } from "./fraserwoodTrail";
 import { GARDEN_CITY } from "./gardenCity";
 import { GLADSTONE } from "./gladstone";
 import { GLENLYON } from "./glenlyon";
@@ -98,6 +99,7 @@ import { PANDORA } from "./pandora";
 import { PARKSIDE } from "./parkside";
 import { PENDER } from "./pender";
 import { PORT_MANN_BRIDGE } from "./portMannBridge";
+import { PORT_ROYAL_RIVER_TRAIL } from "./portRoyalRiverTrail";
 import { PORTSIDE } from "./portside";
 import { POWELL } from "./powell";
 import { PRINCE_EDWARD } from "./princeEdward";
@@ -119,6 +121,7 @@ import { SHELL_ROAD_TRAIL } from "./shellRoadTrail";
 import { SIXTEENTH } from "./sixteenth";
 import { SIXTY_SEVENTH } from "./sixtySeventh";
 import { SMITHE } from "./smithe";
+import { SOUTH_DYKE } from "./southDyke";
 import { SOUTHEAST } from "./southeast";
 import { SPIRIT_TRAIL } from "./spiritTrail";
 import { STANLEY_PARK_LOOP } from "./stanleyPark";
@@ -199,6 +202,7 @@ export const SEGMENTS = [
   ...FRANCES_UNION,
   ...FRASER_FORESHORE,
   ...FRASER_RIVER_TRAIL,
+  ...FRASERWOOD_TRAIL,
   ...GARDEN_CITY,
   ...GLADSTONE,
   ...GLENLYON,
@@ -247,6 +251,7 @@ export const SEGMENTS = [
   ...PARKSIDE,
   ...PENDER,
   ...PORT_MANN_BRIDGE,
+  ...PORT_ROYAL_RIVER_TRAIL,
   ...PORTSIDE,
   ...POWELL,
   ...PRINCE_EDWARD,
@@ -268,6 +273,7 @@ export const SEGMENTS = [
   ...SIXTEENTH,
   ...SIXTY_SEVENTH,
   ...SMITHE,
+  ...SOUTH_DYKE,
   ...SOUTHEAST,
   ...SPIRIT_TRAIL,
   ...STANLEY_PARK_LOOP,

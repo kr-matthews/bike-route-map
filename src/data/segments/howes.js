@@ -1,6 +1,7 @@
 import {
   BOYD_EB_JOIN_AFTER_HOWES,
   BOYD_EB_SPLIT_FOR_HOWES,
+  HOWES_DYKE,
   HOWES_EWEN_SE,
   HOWES_EWEN_SW,
 } from "../intersections";
@@ -127,7 +128,7 @@ export const HOWES = [
       [49.18378, -122.9444],
       [49.18239, -122.94306],
       [49.18242, -122.94298],
-      [49.18211, -122.94268],
+      HOWES_DYKE,
     ],
   },
 ];
