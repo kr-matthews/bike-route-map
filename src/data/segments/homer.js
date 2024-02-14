@@ -55,7 +55,6 @@ export const HOMER = [
     ],
   },
   {
-    routeNames: [ROUTES.homer.name],
     description: "north of robson",
     type: "shared",
     oneWay: "required",

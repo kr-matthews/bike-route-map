@@ -120,7 +120,6 @@ export const CAMBIE = [
     ],
   },
   {
-    routeNames: [ROUTES.cambie.name],
     description: "post-sb",
     type: "shared",
     oneWay: "recommended",

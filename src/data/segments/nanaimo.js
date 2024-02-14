@@ -79,7 +79,6 @@ export const NANAIMO = [
     ],
   },
   {
-    routeNames: [ROUTES.nanaimo.name],
     description: "leaving via 2nd",
     type: "quiet",
     hideUnlessVideo: true,

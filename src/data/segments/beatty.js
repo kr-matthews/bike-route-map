@@ -34,7 +34,6 @@ export const BEATTY = [
     ],
   },
   {
-    routeNames: [ROUTES.beatty.name],
     description: "sb: crossing pender",
     type: "shared",
     oneWay: "required",

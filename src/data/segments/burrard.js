@@ -73,7 +73,6 @@ export const BURRARD = [
 
   // northbound
   {
-    routeNames: [ROUTES.burrard.name],
     description: "6th to 4th nb",
     type: "shared",
     oneWay: "required",
