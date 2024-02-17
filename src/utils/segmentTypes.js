@@ -4,6 +4,7 @@ import {
   COLOUR_ELEVATED_BORDER,
   COLOUR_OTHER,
   COLOUR_PAINTED_ONE_WAY,
+  COLOUR_QUIET,
   COLOUR_SHARED,
   COLOUR_SHOULDER_ONE_WAY,
   COLOUR_UNDERGROUND_BORDER,
@@ -14,10 +15,18 @@ import {
 export const TYPE_TYPES = [
   {
     key: "comfortable",
-    name: "Comfortable",
+    name: "Separated",
+    // !!! add both colours here
     colour: COLOUR_COMFORTABLE,
     description:
-      "Local street, dedicated/protected lane/path, or mixed with pedestrians.",
+      "Physically separated from traffic (except at intersections of course): dedicated lane or protected path (possibly mixed with pedestrians).",
+  },
+  {
+    key: "quiet",
+    name: "Quiet Street",
+    colour: COLOUR_QUIET,
+    description:
+      'Quiet, local street. What is "quiet" is subjective; some quiet streets may get busier at certain times of day.',
   },
   {
     key: "painted",
@@ -40,7 +49,7 @@ export const TYPE_TYPES = [
   },
   {
     key: "other",
-    name: "Other",
+    name: "Narrow Sidewalk or Rough Trail",
     colour: COLOUR_OTHER,
     description:
       "Separated from traffic but poor quality, such as a narrow sidewalk shared with pedestrians or a rough trail.",
@@ -51,7 +60,6 @@ const comfortableTypes = [
   "dedicated",
   "combined",
   "mixed",
-  "quiet",
   "comfortable", // a mix of the above
   undefined, // catch-all (mostly for legacy reasons)
 ];

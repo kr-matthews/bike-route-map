@@ -8,6 +8,8 @@ import {
   COLOUR_OTHER,
   COLOUR_OTHER_ONE_WAY,
   COLOUR_PAINTED_ONE_WAY,
+  COLOUR_QUIET,
+  COLOUR_QUIET_ONE_WAY,
   COLOUR_SHARED,
   COLOUR_SHARED_ONE_WAY,
   COLOUR_SHOULDER_ONE_WAY,
@@ -32,6 +34,7 @@ export function createPathOptions(
   const isOneWay = oneWay === "required";
 
   const isComfortable = normalizeType(type) === "comfortable";
+  const isQuiet = type === "quiet";
   const isPainted = type === "painted";
   const isShared = type === "shared";
   const isShoulder = type === "shoulder";
@@ -40,6 +43,8 @@ export function createPathOptions(
   let colour = BLACK;
   if (isComfortable) {
     colour = isOneWay ? COLOUR_COMFORTABLE_ONE_WAY : COLOUR_COMFORTABLE;
+  } else if (isQuiet) {
+    colour = isOneWay ? COLOUR_QUIET_ONE_WAY : COLOUR_QUIET;
   } else if (isPainted) {
     colour = COLOUR_PAINTED_ONE_WAY;
   } else if (isShared) {

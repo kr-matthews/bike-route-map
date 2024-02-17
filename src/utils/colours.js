@@ -1,5 +1,7 @@
 export const LIGHT_GREEN = "#009E60";
 export const DARK_GREEN = "DarkGreen";
+export const LIGHT_PURPLE = "#BF40BF";
+export const DARK_PURPLE = "Purple";
 export const LIGHT_BLUE = "#6495ED";
 export const DARK_BLUE = "Blue";
 export const LIGHT_YELLOW = "#FFBF00";
@@ -12,7 +14,6 @@ export const DARK_GREY = "DarkGrey";
 export const BLACK = "Black";
 export const WHITE = "White";
 export const RED = "Red";
-export const PURPLE = "Purple";
 export const MAGENTA = "Magenta";
 export const CYAN = "Cyan";
 export const ORANGE_BROWN = "#967969";

@@ -11,7 +11,11 @@ import Polyline from "./Polyline";
 import { getRoutesWithVideo, hasVideo } from "../../utils/routes";
 import videoIcon from "../../images/video.svg";
 import VideoMarkers from "./VideoMarkers";
-import { normalizeElevation, normalizeType } from "../../utils/segmentTypes";
+import {
+  getType,
+  normalizeElevation,
+  normalizeType,
+} from "../../utils/segmentTypes";
 
 export default function Segment(segment) {
   const {
@@ -98,24 +102,7 @@ export default function Segment(segment) {
 
   const tooltipProps = { sticky: true, opacity: 0.7, className: "tooltip" };
 
-  const isComfortable = normalizeType(type) === "comfortable";
-  const isPainted = type === "painted";
-  const isShared = type === "shared";
-  const isShoulder = type === "shoulder";
-  const isOther = type === "other";
-
-  let typeText;
-  if (isComfortable) {
-    typeText = "Comfortable";
-  } else if (isPainted) {
-    typeText = "Painted Lane";
-  } else if (isShared) {
-    typeText = "Shared Lane";
-  } else if (isShoulder) {
-    typeText = "Highway Shoulder";
-  } else if (isOther) {
-    typeText = "Narrow Sidewalk or Rough Trail";
-  }
+  const typeText = getType(normalizeType(type))?.name;
 
   // FIXME: tool tip not showing on decorator arrows hover
   return (
