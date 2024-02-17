@@ -1,4 +1,4 @@
-import { BLACK, WHITE } from "../../utils/colours";
+import { BLACK, RED, WHITE } from "../../utils/colours";
 import {
   DIRECTIONS,
   ELEVATIONS,
@@ -77,6 +77,7 @@ export default function SegmentForm({
                 </div>
               );
             })}
+            <ErrorFooter options={types} />
           </td>
 
           <td style={{ verticalAlign: "top" }}>
@@ -126,6 +127,7 @@ export default function SegmentForm({
                 </div>
               );
             })}
+            <ErrorFooter options={directions} />
           </td>
 
           <td style={{ verticalAlign: "top" }}>
@@ -169,6 +171,7 @@ export default function SegmentForm({
                 </div>
               );
             })}
+            <ErrorFooter options={elevations} />
           </td>
         </tr>
       </tbody>
@@ -178,7 +181,6 @@ export default function SegmentForm({
 
 const HeaderCheckbox = ({ characteristic, options, dispatch }) => {
   const toggleAll = () => {
-    console.log("test");
     dispatch({ type: "toggle-all", characteristic });
   };
 
@@ -205,5 +207,13 @@ const HeaderCheckbox = ({ characteristic, options, dispatch }) => {
         </b>
       </label>
     </div>
+  );
+};
+
+const ErrorFooter = ({ options }) => {
+  return (
+    !Object.values(options).some((b) => b) && (
+      <em style={{ color: RED }}>Select at least one!</em>
+    )
   );
 };
