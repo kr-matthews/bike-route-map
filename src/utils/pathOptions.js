@@ -1,19 +1,7 @@
 import { BLACK } from "./colours";
 import {
   COLOUR_CLOSED,
-  COLOUR_COMFORTABLE,
-  COLOUR_COMFORTABLE_ONE_WAY,
-  COLOUR_ELEVATED_BORDER,
   COLOUR_HIGHLIGHTED,
-  COLOUR_OTHER,
-  COLOUR_OTHER_ONE_WAY,
-  COLOUR_PAINTED_ONE_WAY,
-  COLOUR_QUIET,
-  COLOUR_QUIET_ONE_WAY,
-  COLOUR_SHARED,
-  COLOUR_SHARED_ONE_WAY,
-  COLOUR_SHOULDER_ONE_WAY,
-  COLOUR_UNDERGROUND_BORDER,
   COLOUR_VIDEO,
   DASH_PATTERN,
   WEIGHT_BORDER_ADD_ON,
@@ -21,7 +9,12 @@ import {
   WEIGHT_UNDERGROUND,
   WEIGHT_WIDE,
 } from "./constants";
-import { normalizeType } from "./segmentTypes";
+import {
+  getElevation,
+  getType,
+  normalizeElevation,
+  normalizeType,
+} from "./segmentTypes";
 
 export function createPathOptions(
   { routeNames, oneWay, isClosed, videos, type, hideUnlessVideo, elevation },
@@ -33,26 +26,11 @@ export function createPathOptions(
 
   const isOneWay = oneWay === "required";
 
-  const isComfortable = normalizeType(type) === "comfortable";
-  const isQuiet = type === "quiet";
-  const isPainted = type === "painted";
-  const isShared = type === "shared";
-  const isShoulder = type === "shoulder";
-  const isOther = type === "other";
-
   let colour = BLACK;
-  if (isComfortable) {
-    colour = isOneWay ? COLOUR_COMFORTABLE_ONE_WAY : COLOUR_COMFORTABLE;
-  } else if (isQuiet) {
-    colour = isOneWay ? COLOUR_QUIET_ONE_WAY : COLOUR_QUIET;
-  } else if (isPainted) {
-    colour = COLOUR_PAINTED_ONE_WAY;
-  } else if (isShared) {
-    colour = isOneWay ? COLOUR_SHARED_ONE_WAY : COLOUR_SHARED;
-  } else if (isShoulder) {
-    colour = COLOUR_SHOULDER_ONE_WAY;
-  } else if (isOther) {
-    colour = isOneWay ? COLOUR_OTHER_ONE_WAY : COLOUR_OTHER;
+  if (isOneWay) {
+    colour = getType(normalizeType(type))?.oneWayColour;
+  } else {
+    colour = getType(normalizeType(type))?.colour;
   }
   if (isClosed) {
     colour = COLOUR_CLOSED;
@@ -88,7 +66,7 @@ export function createBorderPathOptions(
   if (!elevation) return null;
 
   return {
-    color: elevation > 0 ? COLOUR_ELEVATED_BORDER : COLOUR_UNDERGROUND_BORDER,
+    color: getElevation(normalizeElevation(elevation))?.colour,
     weight: isHidden
       ? 0
       : (isSelected ? WEIGHT_WIDE : WEIGHT_NARROW) + WEIGHT_BORDER_ADD_ON,

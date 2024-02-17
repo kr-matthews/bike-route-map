@@ -3,9 +3,12 @@ import {
   COLOUR_COMFORTABLE_ONE_WAY,
   COLOUR_ELEVATED_BORDER,
   COLOUR_OTHER,
+  COLOUR_OTHER_ONE_WAY,
   COLOUR_PAINTED_ONE_WAY,
   COLOUR_QUIET,
+  COLOUR_QUIET_ONE_WAY,
   COLOUR_SHARED,
+  COLOUR_SHARED_ONE_WAY,
   COLOUR_SHOULDER_ONE_WAY,
   COLOUR_UNDERGROUND_BORDER,
 } from "./constants";
@@ -16,8 +19,8 @@ export const TYPE_TYPES = [
   {
     key: "comfortable",
     name: "Separated",
-    // !!! add both colours here
     colour: COLOUR_COMFORTABLE,
+    oneWayColour: COLOUR_COMFORTABLE_ONE_WAY,
     description:
       "Physically separated from traffic (except at intersections of course): dedicated lane or protected path (possibly mixed with pedestrians).",
   },
@@ -25,13 +28,14 @@ export const TYPE_TYPES = [
     key: "quiet",
     name: "Quiet Street",
     colour: COLOUR_QUIET,
+    oneWayColour: COLOUR_QUIET_ONE_WAY,
     description:
       'Quiet, local street. What is "quiet" is subjective; some quiet streets may get busier at certain times of day.',
   },
   {
     key: "painted",
     name: "Painted Lane",
-    colour: COLOUR_PAINTED_ONE_WAY,
+    oneWayColour: COLOUR_PAINTED_ONE_WAY,
     description:
       "Painted lane beside high-volume and/or high-speed traffic without significant physical protection. May or may not be directly beside parked cars.",
   },
@@ -39,18 +43,20 @@ export const TYPE_TYPES = [
     key: "shared",
     name: "Shared Lane",
     colour: COLOUR_SHARED,
+    oneWayColour: COLOUR_SHARED_ONE_WAY,
     description: "Shared lane with high-volume and/or high-speed traffic.",
   },
   {
     key: "shoulder",
     name: "Highway Shoulder",
-    colour: COLOUR_SHOULDER_ONE_WAY,
+    oneWayColour: COLOUR_SHOULDER_ONE_WAY,
     description: "Unprotected shoulder beside very high-speed traffic.",
   },
   {
     key: "other",
     name: "Narrow Sidewalk or Rough Trail",
     colour: COLOUR_OTHER,
+    oneWayColour: COLOUR_OTHER_ONE_WAY,
     description:
       "Separated from traffic but poor quality, such as a narrow sidewalk shared with pedestrians or a rough trail.",
   },
@@ -78,20 +84,17 @@ export const DIRECTION_TYPES = [
   {
     key: undefined, // hm...
     name: "Two-way",
-    colour: COLOUR_COMFORTABLE,
     description: "Travel is allowed in either direction.",
   },
   {
     key: "recommended",
     name: "One-way Recommended",
-    colour: COLOUR_COMFORTABLE,
     description:
       "Both directions of travel are allowed, but typically only one is useful. Directional arrows only appear when sufficiently zoomed in.",
   },
   {
     key: "required",
     name: "One-way",
-    colour: COLOUR_COMFORTABLE_ONE_WAY,
     description:
       "Only one direction of travel is allowed. A lighter colour. Directional arrows only appear when sufficiently zoomed in.",
   },
@@ -127,10 +130,3 @@ export const getElevation = (key) => ELEVATION_TYPES.find((e) => e.key === key);
 
 export const normalizeElevation = (elevation) =>
   elevation <= -1 ? -1 : elevation >= 1 ? 1 : 0;
-
-// export const CLOSED_TYPE = {
-//   name: "Closed",
-//   colour: COLOUR_CLOSED,
-//   description: "For long-term construction or other reasons.",
-//   props: { isClosed: true },
-// };

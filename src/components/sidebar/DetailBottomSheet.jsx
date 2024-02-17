@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Selections } from "../../App";
-import { DARK_GREEN, WHITE } from "../../utils/colours";
+import { LIGHT_GREEN, WHITE } from "../../utils/colours";
 import RouteDetail from "./RouteDetail";
 
 export default function DetailBottomSheet({ mapRef }) {
@@ -15,7 +15,7 @@ export default function DetailBottomSheet({ mapRef }) {
         borderTopRightRadius: "1em",
         display: "flex",
         flexDirection: "column",
-        backgroundColor: DARK_GREEN,
+        backgroundColor: LIGHT_GREEN,
         color: WHITE,
         transition: "height 0.7s",
         position: "relative",

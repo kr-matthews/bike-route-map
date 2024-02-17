@@ -51,7 +51,7 @@ export default function SegmentForm({
                       cursor: isDisabled ? undefined : "pointer",
                       color: WHITE,
                       opacity: isDisabled ? 0.2 : 1,
-                      backgroundColor: type.colour,
+                      backgroundColor: type.colour ?? type.oneWayColour,
                       padding: "4px",
                     }}
                     onClick={action}
@@ -87,9 +87,7 @@ export default function SegmentForm({
                     htmlFor="comfortable"
                     style={{
                       cursor: isDisabled ? undefined : "pointer",
-                      color: WHITE,
                       opacity: isDisabled ? 0.2 : 1,
-                      backgroundColor: direction.colour,
                       padding: "4px",
                     }}
                     onClick={action}

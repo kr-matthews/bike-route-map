@@ -106,18 +106,18 @@ const getBackgroundColor = (routeName, isHighlighted) => {
 
   const linearGradient =
     "to right, " +
-    TYPE_TYPES.flatMap(({ colour }, index) =>
+    TYPE_TYPES.flatMap(({ colour, oneWayColour }, index) =>
       cumulativeWeightedDistances[index] ===
       cumulativeWeightedDistances[index + 1]
         ? []
         : [
             gradientPortion(
-              colour,
+              colour ?? oneWayColour,
               cumulativeWeightedDistances[index],
               totalWeightedDistance
             ),
             gradientPortion(
-              colour,
+              colour ?? oneWayColour,
               cumulativeWeightedDistances[index + 1],
               totalWeightedDistance
             ),
