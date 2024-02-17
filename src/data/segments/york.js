@@ -7,12 +7,14 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const MAPLE_YORK_SE = [49.2716, -123.15019];
+
 export const YORK = [
   {
     routeNames: [ROUTES.york.name, ROUTES.seasideBypass.name],
-    description: "primary",
+    description: "stephens to maple",
+    type: "quiet",
     videos: [VIDEOS.yorkEb.id],
-    videosStartAtStart: [],
     positions: [
       STEPHENS_YORK,
       [49.27189, -123.1645],
@@ -23,14 +25,20 @@ export const YORK = [
       [49.2717, -123.15501],
       [49.27166, -123.15265],
       [49.27162, -123.15028],
-      [49.2716, -123.15019],
-      CYPRESS_YORK_SW,
-      CYPRESS_YORK_SE,
+      MAPLE_YORK_SE,
     ],
   },
   {
+    routeNames: [ROUTES.york.name, ROUTES.seasideBypass.name],
+    description: "maple to cypress",
+    type: "dedicated",
+    videos: [VIDEOS.yorkEb.id],
+    positions: [MAPLE_YORK_SE, CYPRESS_YORK_SW, CYPRESS_YORK_SE],
+  },
+  {
     routeNames: [ROUTES.york.name],
-    description: "york to chestnut",
+    description: "cypress to chestnut",
+    type: "dedicated",
     videos: [VIDEOS.yorkEb.id],
     positions: [CYPRESS_YORK_SE, CHESTNUT_YORK],
   },

@@ -15,16 +15,24 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const HORNBY_BEACH_SE_S = [49.27523, -123.13292];
+
 export const HORNBY = [
   {
     routeNames: [ROUTES.hornby.name],
     description: "primary",
+    type: "quiet",
     videos: [VIDEOS.hornbyNb.id],
     videosStartAtStart: [VIDEOS.hornbyNb.id],
+    positions: [HORNBY_SEABREEZE, [49.27521, -123.13304], HORNBY_BEACH_SE_S],
+  },
+  {
+    routeNames: [ROUTES.hornby.name],
+    description: "primary",
+    type: "dedicated",
+    videos: [VIDEOS.hornbyNb.id],
     positions: [
-      HORNBY_SEABREEZE,
-      [49.27521, -123.13304],
-      [49.27523, -123.13292],
+      HORNBY_BEACH_SE_S,
       HORNBY_BEACH,
       [49.27564, -123.1323],
       HORNBY_PACIFIC_SE,

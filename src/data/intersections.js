@@ -69,6 +69,7 @@ export const BEATTY_PENDER_SW = [49.28121, -123.10863];
 export const BEATTY_SMITHE_N = [49.2766, -123.11559];
 export const BEATTY_SMITHE_S = [49.27654, -123.11547];
 export const BEGBIE_COLUMBIA_N = [49.20189, -122.91045];
+export const BIRCH_WESTMINSTER_S = [49.17006, -123.11685];
 export const BLANCA_4TH_N = [49.26916, -123.21504];
 export const BLANCA_4TH_SE = [49.26906, -123.21499];
 export const BLANCA_4TH_SW = [49.26906, -123.21513];

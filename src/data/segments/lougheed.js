@@ -95,7 +95,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "eb: protected to willingdon",
-    type: "comfortable",
+    type: "dedicated",
     oneWay: "required",
     positions: [
       EB_AFTER_MADISON,
@@ -211,6 +211,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "eb: pre brunette fraser overpass",
+    type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
     positions: [
@@ -226,6 +227,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "eb: brunette fraser overpass",
+    type: "mixed",
     oneWay: "required",
     elevation: 1,
     positions: [EASTBOUND_BRUNETTE_FRASER_START, EASTBOUND_BRUNETTE_FRASER_END],
@@ -233,6 +235,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "eb: post brunette fraser overpass",
+    type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
     positions: [EASTBOUND_BRUNETTE_FRASER_END, EASTBOUND_BRUNETTE_FRASER_POST],
@@ -240,6 +243,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "eb: brunette fraser overpass to austin",
+    type: "comfortable",
     oneWay: "required",
     positions: [
       EASTBOUND_BRUNETTE_FRASER_POST,
@@ -535,6 +539,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "wb: austin to brunette fraser overpass",
+    type: "comfortable",
     oneWay: "required",
     positions: [
       AUSTIN_LOUGHEED_NW,
@@ -564,6 +569,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "wb: pre brunette fraser overpass",
+    type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
     positions: [
@@ -575,6 +581,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "wb: brunette fraser overpass",
+    type: "mixed",
     oneWay: "required",
     elevation: 1,
     positions: [WESTBOUND_BRUNETTE_FRASER_START, WESTBOUND_BRUNETTE_FRASER_END],
@@ -582,6 +589,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "wb: post brunette fraser overpass",
+    type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
     positions: [WESTBOUND_BRUNETTE_FRASER_END, WESTBOUND_BRUNETTE_FRASER_POST],
@@ -589,6 +597,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "wb: brunette fraser overpass to gaglardi",
+    type: "dedicated",
     oneWay: "required",
     positions: [WESTBOUND_BRUNETTE_FRASER_POST, GAGLARDI_LOUGHEED_NE],
   },

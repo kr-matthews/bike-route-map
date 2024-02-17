@@ -10,6 +10,7 @@ export const RAILWAY_GREENWAY = [
   {
     routeNames: [ROUTES.railwayGreenway.name],
     description: "primary",
+    type: "comfortable",
     positions: [
       [49.12935, -123.16996],
       [49.12942, -123.17001],

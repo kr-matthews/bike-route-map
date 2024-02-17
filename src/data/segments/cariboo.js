@@ -14,6 +14,7 @@ const SB_OVERPASS_START = [49.24525, -122.91101];
 const SB_OVERPASS_END = [49.2446, -122.91032];
 const SB_PATH_REJOIN = [49.24344, -122.90966];
 const CARIBOO_DR_CARIBOO = [49.24283, -122.90896];
+const CARIBOO_DR_S = [49.2408, -122.90748];
 const CARIBOO_16TH_NW = [49.23889, -122.90735];
 const CASCADE_16TH_E = [49.23632, -122.9108];
 
@@ -227,7 +228,7 @@ export const CARIBOO = [
   {
     routeNames: [ROUTES.cariboo.name],
     description: "sb - cariboo dr",
-    type: "comfortable",
+    type: "quiet",
     oneWay: "recommended",
     positions: [
       CARIBOO_DR_CARIBOO,
@@ -237,7 +238,16 @@ export const CARIBOO = [
       [49.24264, -122.90899],
       [49.24256, -122.90885],
       [49.24141, -122.90797],
-      [49.2408, -122.90748],
+      CARIBOO_DR_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.cariboo.name],
+    description: "sb - path after cariboo dr",
+    type: "mixed",
+    oneWay: "recommended",
+    positions: [
+      CARIBOO_DR_S,
       [49.24059, -122.90736],
       [49.24001, -122.90736],
       [49.23988, -122.90735],

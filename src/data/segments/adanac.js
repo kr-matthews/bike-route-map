@@ -23,7 +23,9 @@ const MAIN_UNION_N = [49.27773, -123.09981];
 const MAIN_UNION_NE = [49.27771, -123.09963];
 const MAIN_UNION_NW = [49.27773, -123.1];
 const MAIN_UNION_SE = [49.27765, -123.09963];
-const MAIN_UNION_SW = [49.27766, -123.09999];
+const MAIN_UNION_SW = [49.27768, -123.09999];
+const EB_ALLEY_BEFORE_MAIN = [49.27768, -123.10057];
+const GORE_UNION_N = [49.27766, -123.09698];
 
 const VERNON_ADANAC = [49.27769, -123.07917];
 const VERNON_UNION = [49.27732, -123.0794];
@@ -36,23 +38,27 @@ const OVERPASS_E = [49.27745, -123.03111];
 export const ADANAC = [
   {
     description: "dunsmuir off-ramp eb",
+    type: "quiet",
     oneWay: "required",
     elevation: 0.5,
     positions: [MAIN_DUNSMUIR, MAIN_UNION_SE],
   },
   {
     description: "dunsmuir on-ramp wb",
+    type: "quiet",
     oneWay: "required",
     elevation: 0.5,
     positions: [MAIN_UNION_N, MAIN_DUNSMUIR],
   },
   {
     description: "dunsmuir 'nb'",
+    type: "mixed",
     elevation: 0.5,
     positions: [MAIN_DUNSMUIR, MAIN_UNION_SW, MAIN_UNION_NW],
   },
   {
     routeNames: [ROUTES.adanac.name],
+    type: "dedicated",
     description: "west end merged",
     videos: [VIDEOS.adanacWb.id],
     videosEndAtStart: [VIDEOS.adanacWb.id],
@@ -60,14 +66,30 @@ export const ADANAC = [
   },
   {
     routeNames: [ROUTES.adanac.name],
-    description: "downtown eastbound",
+    description: "eb: expo to quebec",
+    type: "dedicated",
     oneWay: "required",
     positions: [
       UNION_SPLIT,
       [49.27756, -123.10282],
       QUEBEC_UNION_SW,
       QUEBEC_UNION_SE,
-      [49.27767, -123.10143],
+    ],
+  },
+  {
+    routeNames: [ROUTES.adanac.name],
+    description: "eb: quebec to main alley",
+    type: "painted",
+    oneWay: "required",
+    positions: [QUEBEC_UNION_SE, [49.27765, -123.10143], EB_ALLEY_BEFORE_MAIN],
+  },
+  {
+    routeNames: [ROUTES.adanac.name],
+    description: "eb: main alley to dunlevy",
+    type: "quiet",
+    oneWay: "required",
+    positions: [
+      EB_ALLEY_BEFORE_MAIN,
       MAIN_UNION_SW,
       MAIN_UNION_SE,
       [49.2776, -123.09697],
@@ -77,13 +99,20 @@ export const ADANAC = [
   },
   {
     routeNames: [ROUTES.adanac.name],
-    description: "downtown westbound",
+    description: "wb: dunlevy to gore",
+    type: "painted",
+    oneWay: "required",
+    videos: [VIDEOS.adanacWb.id],
+    positions: [DUNLEVY_UNION, [49.27763, -123.09563], GORE_UNION_N],
+  },
+  {
+    routeNames: [ROUTES.adanac.name],
+    description: "wb: gore to expo",
+    type: "dedicated",
     oneWay: "required",
     videos: [VIDEOS.adanacWb.id],
     positions: [
-      DUNLEVY_UNION,
-      [49.27763, -123.09563],
-      [49.27766, -123.09698],
+      GORE_UNION_N,
       MAIN_UNION_NE,
       MAIN_UNION_N,
       MAIN_UNION_NW,
@@ -98,6 +127,7 @@ export const ADANAC = [
   {
     routeNames: [ROUTES.adanac.name],
     description: "dunlevy to sunrise",
+    type: "quiet",
     videos: [VIDEOS.adanacWb.id],
     positions: [
       DUNLEVY_UNION,
@@ -130,12 +160,14 @@ export const ADANAC = [
   {
     routeNames: [ROUTES.adanac.name, ROUTES.sunrise.name],
     description: "sunrise",
+    type: "quiet",
     videos: [VIDEOS.adanacWb.id, VIDEOS.sunriseNb.id],
     positions: [SLOCAN_ADANAC, KASLO_ADANAC],
   },
   {
     routeNames: [ROUTES.adanac.name],
     description: "sunrise to highway",
+    type: "quiet",
     elevation: 0.5,
     videos: [VIDEOS.adanacWb.id],
     positions: [
@@ -151,6 +183,7 @@ export const ADANAC = [
   {
     routeNames: [ROUTES.adanac.name],
     description: "highway overpass",
+    type: "quiet",
     elevation: 1,
     videos: [VIDEOS.adanacWb.id],
     positions: [OVERPASS_W, OVERPASS_E],
@@ -158,6 +191,7 @@ export const ADANAC = [
   {
     routeNames: [ROUTES.adanac.name],
     description: "highway to boundary",
+    type: "quiet",
     elevation: 0.5,
     videos: [VIDEOS.adanacWb.id],
     positions: [

@@ -14,6 +14,7 @@ export const PORT_MANN_BRIDGE = [
   // west connections
   {
     description: "united",
+    type: "mixed",
     positions: [
       [49.22873, -122.83385],
       [49.22862, -122.83329],
@@ -62,6 +63,7 @@ export const PORT_MANN_BRIDGE = [
   // east connections
   {
     description: "east overpass: west",
+    type: "mixed",
     elevation: 0.5,
     positions: [
       [49.20608, -122.80446],
@@ -75,11 +77,13 @@ export const PORT_MANN_BRIDGE = [
   },
   {
     description: "east overpass",
+    type: "mixed",
     elevation: 1,
     positions: [EAST_OVERPASS_START, EAST_OVERPASS_END],
   },
   {
     description: "east overpass: east",
+    type: "mixed",
     elevation: 0.5,
     positions: [
       EAST_OVERPASS_END,
@@ -99,6 +103,7 @@ export const PORT_MANN_BRIDGE = [
   {
     routeNames: [ROUTES.portMannBridge.name],
     description: "west end",
+    type: "mixed",
     elevation: 0.5,
     positions: [
       UNITED_PORT_MANN,
@@ -118,6 +123,7 @@ export const PORT_MANN_BRIDGE = [
   },
   {
     routeNames: [ROUTES.portMannBridge.name],
+    type: "mixed",
     description: "primary",
     elevation: 1,
     positions: [
@@ -161,6 +167,7 @@ export const PORT_MANN_BRIDGE = [
   {
     routeNames: [ROUTES.portMannBridge.name],
     description: "east end",
+    type: "mixed",
     elevation: 0.5,
     positions: [
       ELEVATION_END,

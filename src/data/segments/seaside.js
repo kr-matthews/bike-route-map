@@ -45,6 +45,9 @@ const SEASIDE_WHYTE_E = [49.27631, -123.14042];
 const CREEKSIDE_1ST = [49.2714, -123.14019];
 const FIR_1ST_NW = [49.27089, -123.14144];
 
+const ALMA_POINT_GREY_NE_E = [49.27228, -123.18515];
+const TATLOW_POINT_GREY = [49.27106, -123.16986];
+
 const DENMAN_SEAWALL = [49.29345, -123.13229];
 
 const SEAWALL_STANLEY_PARK_WEST_END = [49.29031, -123.14571];
@@ -54,6 +57,9 @@ const MID_CONVENTION_CENTER = [49.28962, -123.11524];
 const NORTH_OF_CANADA_PLACE = [49.28832, -123.11518];
 const WEST_OF_COLUMBIA = [49.27181, -123.11004];
 const EAST_OF_TRAFALGAR = [49.27359, -123.16412];
+const BALSAM_CORNWALL_LANE_N = [49.2731, -123.15969];
+const ARBUTUS_WHYTE_LANE_N = [49.27584, -123.1515];
+const CHESTNUT_SEASIDE = [49.27725, -123.14617];
 const EAST_OF_SPYGLASS = [49.2712, -123.11435];
 
 // !! connections: bc place? to confirm
@@ -66,14 +72,17 @@ export const SEASIDE = [
   },
   {
     description: "denman",
+    type: "quiet",
     positions: [DENMAN_GEORGIA_N, [49.29341, -123.13255], DENMAN_SEAWALL],
   },
   {
     description: "road/path connection",
+    type: "quiet",
     positions: [FIR_1ST_NW, FIR_1ST_N],
   },
   {
     description: "1st/fir connection",
+    type: "dedicated",
     positions: [
       PINE_1ST,
       [49.27067, -123.14319],
@@ -92,6 +101,7 @@ export const SEASIDE = [
   {
     routeNames: [ROUTES.seaside.name],
     description: "spanish banks & jericho",
+    type: "comfortable",
     positions: [
       SEASIDE_W_END,
       [49.27875, -123.23615],
@@ -205,6 +215,7 @@ export const SEASIDE = [
   {
     routeNames: [ROUTES.seaside.name],
     description: "jericho/kits overlap",
+    type: "mixed",
     videos: [VIDEOS.seasideKitsWb.id],
     videosEndAtStart: [VIDEOS.seasideKitsWb.id],
     positions: [
@@ -216,7 +227,8 @@ export const SEASIDE = [
   },
   {
     routeNames: [ROUTES.seaside.name],
-    description: "kits: point grey to trafalgar",
+    description: "kits: point grey to alma",
+    type: "dedicated",
     videos: [VIDEOS.seasideKitsWb.id],
     positions: [
       SEASIDE_POINT_GREY_W,
@@ -226,7 +238,16 @@ export const SEASIDE = [
       [49.27237, -123.18734],
       [49.27235, -123.18567],
       [49.27229, -123.18552],
-      [49.27228, -123.18515],
+      ALMA_POINT_GREY_NE_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "kits: alma to tatlow",
+    type: "quiet",
+    videos: [VIDEOS.seasideKitsWb.id],
+    positions: [
+      ALMA_POINT_GREY_NE_E,
       [49.27227, -123.18508],
       [49.27226, -123.18455],
       [49.27218, -123.18387],
@@ -246,7 +267,16 @@ export const SEASIDE = [
       BALACLAVA_POINT_GREY,
       [49.27112, -123.17344],
       [49.27108, -123.171],
-      [49.27106, -123.16986],
+      TATLOW_POINT_GREY,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "kits: tatlow to trafalgar",
+    type: "dedicated",
+    videos: [VIDEOS.seasideKitsWb.id],
+    positions: [
+      TATLOW_POINT_GREY,
       [49.27112, -123.16928],
       [49.2712, -123.16896],
       [49.27136, -123.16849],
@@ -262,6 +292,7 @@ export const SEASIDE = [
   {
     routeNames: [ROUTES.seaside.name],
     description: "kits - bit near trafalgar",
+    type: "quiet",
     videos: [VIDEOS.seasideKitsWb.id, VIDEOS.valleySb.id],
     videosStartAtEnd: [VIDEOS.valleySb.id],
     positions: [
@@ -273,9 +304,9 @@ export const SEASIDE = [
   },
   {
     routeNames: [ROUTES.seaside.name],
-    description: "kits - trafalgar to whyte",
+    description: "kits - trafalgar to balsam",
+    type: "quiet",
     videos: [VIDEOS.seasideKitsWb.id],
-    videosStartAtEnd: [VIDEOS.seasideKitsWb.id],
     positions: [
       EAST_OF_TRAFALGAR,
       [49.2736, -123.16393],
@@ -284,7 +315,16 @@ export const SEASIDE = [
       [49.27351, -123.15996],
       [49.27343, -123.15981],
       [49.27332, -123.15971],
-      [49.2731, -123.15969],
+      BALSAM_CORNWALL_LANE_N,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "kits - balsam to whyte-ish",
+    type: "comfortable",
+    videos: [VIDEOS.seasideKitsWb.id],
+    positions: [
+      BALSAM_CORNWALL_LANE_N,
       [49.27277, -123.15898],
       [49.2727, -123.1551],
       [49.27274, -123.15499],
@@ -296,7 +336,16 @@ export const SEASIDE = [
       [49.2734, -123.15261],
       [49.27464, -123.15256],
       ARBUTUS_WHYTE,
-      [49.27584, -123.1515],
+      ARBUTUS_WHYTE_LANE_N,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "kits - whyte-ish to museum",
+    type: "quiet",
+    videos: [VIDEOS.seasideKitsWb.id],
+    positions: [
+      ARBUTUS_WHYTE_LANE_N,
       [49.27586, -123.15144],
       [49.27626, -123.15109],
       [49.27625, -123.15007],
@@ -307,7 +356,16 @@ export const SEASIDE = [
       CYPRESS_OGDEN,
       [49.2768, -123.14746],
       CHESTNUT_OGDEN,
-      [49.27725, -123.14617],
+      CHESTNUT_SEASIDE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "kits - museum to whyte",
+    type: "mixed",
+    videos: [VIDEOS.seasideKitsWb.id],
+    positions: [
+      CHESTNUT_SEASIDE,
       [49.27729, -123.14609],
       [49.2774, -123.14587],
       [49.27752, -123.14573],
@@ -335,16 +393,24 @@ export const SEASIDE = [
       [49.27735, -123.14102],
       [49.27645, -123.14044],
       SEASIDE_WHYTE_E,
-      SEAWALL_WHYTE,
     ],
   },
   {
     routeNames: [ROUTES.seaside.name],
+    description: "kits - whyte east end",
+    type: "quiet",
+    videos: [VIDEOS.seasideKitsWb.id],
+    videosStartAtEnd: [VIDEOS.seasideKitsWb.id],
+    positions: [SEASIDE_WHYTE_E, SEAWALL_WHYTE],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
     description: "false creek south: whyte to spyglass",
+    type: "dedicated",
     positions: [
       SEAWALL_WHYTE,
-      [49.27524, -123.14003],
-      [49.27519, -123.14004],
+      [49.27525, -123.14005],
+      [49.2752, -123.14006],
       [49.27487, -123.13983],
       [49.27475, -123.13982],
       [49.27464, -123.13974],
@@ -523,6 +589,7 @@ export const SEASIDE = [
   {
     routeNames: [ROUTES.seaside.name],
     description: "false creek south: under cambie bridge",
+    type: "dedicated",
     videos: [VIDEOS.yukonSb.id],
     videosStartAtEnd: [VIDEOS.yukonSb.id],
     positions: [
@@ -537,6 +604,7 @@ export const SEASIDE = [
   {
     routeNames: [ROUTES.seaside.name],
     description: "false creek south: cambie bridge to columbia-ish",
+    type: "dedicated",
     positions: [
       EAST_OF_SPYGLASS,
       [49.27121, -123.11419],
@@ -566,6 +634,7 @@ export const SEASIDE = [
   {
     routeNames: [ROUTES.seaside.name],
     description: "false creek south - little bit west of columbia",
+    type: "dedicated",
     videos: [VIDEOS.columbiaNb.id],
     videosEndAtStart: [VIDEOS.columbiaNb.id],
     positions: [
@@ -580,6 +649,7 @@ export const SEASIDE = [
   {
     routeNames: [ROUTES.seaside.name],
     description: "false creek south - east of columbia",
+    type: "dedicated",
     positions: [
       COLUMBIA_SEAWALL,
       [49.27219, -123.10827],
@@ -626,6 +696,7 @@ export const SEASIDE = [
   {
     routeNames: [ROUTES.seaside.name],
     description: "false creek north - open",
+    type: "comfortable",
     positions: [
       HORNBY_SEABREEZE,
       [49.27417, -123.13265],
@@ -740,12 +811,11 @@ export const SEASIDE = [
       [49.27596, -123.10688],
       CARRALL_SEAWALL,
       [49.27578, -123.10644],
-      [49.27577, -123.10611],
-      [49.27575, -123.10607],
-      [49.27573, -123.10499],
-      [49.27571, -123.10482],
-      [49.2757, -123.10344],
-      [49.27569, -123.1033],
+      [49.27576, -123.10611],
+      [49.27576, -123.10607],
+      [49.27574, -123.10482],
+      [49.27571, -123.10344],
+      [49.2757, -123.1033],
       [49.27568, -123.10324],
       QUEBEC_SEAWALL,
     ],
@@ -753,6 +823,7 @@ export const SEASIDE = [
   {
     routeNames: [ROUTES.seaside.name],
     description: "false creek north - closed",
+    type: "comfortable",
     isClosed: true,
     positions: [
       SEAWALL_UNDER_BURRARD_N,
@@ -771,6 +842,7 @@ export const SEASIDE = [
   {
     routeNames: [ROUTES.seaside.name],
     description: "west end - closed",
+    type: "comfortable",
     isClosed: true,
     positions: [
       SEAWALL_STANLEY_PARK_WEST_END,
@@ -856,6 +928,7 @@ export const SEASIDE = [
   {
     routeNames: [ROUTES.seaside.name],
     description: "stanley park non-loop",
+    type: "dedicated",
     positions: [
       STANLEY_PARK_LOOP_SPLIT_W,
       [49.29426, -123.14917],
@@ -884,6 +957,7 @@ export const SEASIDE = [
   {
     routeNames: [ROUTES.seaside.name],
     description: "coal harbour (minus half con. cen.)",
+    type: "dedicated",
     positions: [
       STANLEY_PARK_LOOP_JOIN_E,
       [49.29515, -123.13588],
@@ -971,6 +1045,7 @@ export const SEASIDE = [
   {
     routeNames: [ROUTES.seaside.name],
     description: "half convention center",
+    type: "dedicated",
     videos: [VIDEOS.hornbyNb.id],
     videosEndAtStart: [VIDEOS.hornbyNb.id],
     positions: [
@@ -988,6 +1063,7 @@ export const SEASIDE = [
   {
     routeNames: [ROUTES.seaside.name],
     description: "tip connecting to burrard",
+    type: "dedicated",
     videos: [VIDEOS.burrardSb.id, VIDEOS.hornbyNb.id],
     videosStartAtStart: [VIDEOS.burrardSb.id],
     positions: [NORTH_OF_CANADA_PLACE, BURRARD_CANADA_PLACE],

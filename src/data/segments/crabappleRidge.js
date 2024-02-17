@@ -19,7 +19,7 @@ export const CRABAPPLE_RIDGE = [
   {
     routeNames: [ROUTES.crabappleRidge.name],
     description: "south of williams",
-    type: "comfortable",
+    type: "quiet",
     positions: [
       SECOND_CHATHAM,
       [49.12834, -123.18425],
@@ -59,7 +59,7 @@ export const CRABAPPLE_RIDGE = [
   {
     routeNames: [ROUTES.crabappleRidge.name],
     description: "williams to francis",
-    type: "comfortable",
+    type: "quiet", // !!! ?
     positions: [
       NISHI_WILLIAMS_N,
       [49.14178, -123.18562],
@@ -82,7 +82,7 @@ export const CRABAPPLE_RIDGE = [
   {
     routeNames: [ROUTES.crabappleRidge.name],
     description: "francis to blundell",
-    type: "comfortable",
+    type: "quiet", // !!! ?
     positions: [
       MILLMORE_FRANCIS,
       [49.1491, -123.18992],
@@ -102,7 +102,7 @@ export const CRABAPPLE_RIDGE = [
   {
     routeNames: [ROUTES.crabappleRidge.name],
     description: "blundell to barnard",
-    type: "comfortable",
+    type: "quiet", // !!! ?
     positions: [
       GABRIOLA_BLUNDELL,
       [49.15605, -123.18979],

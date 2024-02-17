@@ -15,7 +15,8 @@ import { VIDEOS } from "../videos";
 export const SMITHE = [
   {
     routeNames: [ROUTES.smithe.name],
-    description: "bi-directional",
+    description: "bi-directional: thurlow to richards",
+    type: "dedicated",
     videos: [VIDEOS.cambieBridgeSmitheNb.id],
     videosEndAtStart: [VIDEOS.cambieBridgeSmitheNb.id],
     positions: [
@@ -42,7 +43,8 @@ export const SMITHE = [
   },
   {
     routeNames: [ROUTES.smithe.name],
-    description: "uni-directional",
+    description: "uni-directional: beatty to richards",
+    type: "dedicated",
     oneWay: "required",
     videos: [VIDEOS.cambieBridgeSmitheNb.id],
     positions: [
@@ -56,7 +58,8 @@ export const SMITHE = [
   },
   {
     routeNames: [ROUTES.smithe.name],
-    description: "beatty to expo",
+    description: "beatty to expo/smithe path",
+    type: "dedicated",
     videos: [VIDEOS.cambieBridgeSmitheNb.id],
     positions: [
       BEATTY_SMITHE_N,

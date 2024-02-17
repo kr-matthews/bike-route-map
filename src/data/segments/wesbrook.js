@@ -40,16 +40,19 @@ const SB_BEFORE_16TH = [49.25618, -123.23686];
 export const WESBROOK = [
   {
     description: "from marine wb",
+    type: "quiet",
     oneWay: "required",
     positions: [WESBROOK_MARINE_PRE_SLIP, WESBROOK_MARINE_POST_SLIP],
   },
   {
     description: "crossing marine",
+    type: "quiet",
     positions: [WESBROOK_MARINE_S, WESBROOK_MARINE_N],
   },
   {
     routeNames: [ROUTES.wesbrook.name],
     description: "marine to roundabout",
+    type: "quiet",
     positions: [
       WESBROOK_MARINE_N,
       WESBROOK_MARINE_POST_SLIP,
@@ -60,6 +63,7 @@ export const WESBROOK = [
   {
     routeNames: [ROUTES.wesbrook.name],
     description: "roundabout east",
+    type: "quiet",
     oneWay: "required",
     positions: [
       ROUNDABOUT_S,
@@ -77,6 +81,7 @@ export const WESBROOK = [
   {
     routeNames: [ROUTES.wesbrook.name],
     description: "roundabout west",
+    type: "quiet",
     oneWay: "required",
     positions: [
       ROUNDABOUT_N,
@@ -94,6 +99,7 @@ export const WESBROOK = [
   {
     routeNames: [ROUTES.wesbrook.name],
     description: "roundabout to berton",
+    type: "quiet",
     positions: [
       ROUNDABOUT_N,
       [49.24829, -123.23179],
@@ -113,6 +119,7 @@ export const WESBROOK = [
   {
     routeNames: [ROUTES.wesbrook.name],
     description: "berton to 16th",
+    type: "quiet",
     oneWay: "required",
     positions: [
       WESBROOK_BERTON,
@@ -125,6 +132,7 @@ export const WESBROOK = [
   {
     routeNames: [ROUTES.wesbrook.name],
     description: "16th to berton",
+    type: "quiet",
     oneWay: "required",
     positions: [
       WESBROOK_16TH_SW,
@@ -137,18 +145,21 @@ export const WESBROOK = [
   {
     routeNames: [ROUTES.wesbrook.name],
     description: "crossing 16th nb",
+    type: "mixed",
     oneWay: "recommended",
     positions: [WESBROOK_16TH_ES, [49.25586, -123.23596], WESBROOK_16TH_EN],
   },
   {
     routeNames: [ROUTES.wesbrook.name],
     description: "crossing 16th sb",
+    type: "mixed",
     oneWay: "recommended",
     positions: [WESBROOK_16TH_WN, [49.25563, -123.23681], WESBROOK_16TH_WS],
   },
   {
     routeNames: [ROUTES.wesbrook.name],
     description: "nb: after 16th",
+    type: "mixed",
     oneWay: "required",
     positions: [WESBROOK_16TH_NE, [49.25623, -123.23658], NB_AFTER_16TH],
   },
@@ -331,7 +342,8 @@ export const WESBROOK = [
   },
   {
     routeNames: [ROUTES.wesbrook.name],
-    description: "sb: before thunderbird",
+    description: "sb: before 16th",
+    type: "mixed",
     oneWay: "required",
     positions: [SB_BEFORE_16TH, [49.25608, -123.23683], WESBROOK_16TH_NW],
   },

@@ -6,7 +6,7 @@ export const NELSON_AVE = [
   {
     routeNames: [ROUTES.nelsonAve.name],
     description: "all",
-    type: "comfortable",
+    type: "mixed",
     videos: [VIDEOS.nelsonPathSb.id],
     videosEndAtStart: [VIDEOS.nelsonPathSb.id],
     positions: [

@@ -9,6 +9,7 @@ import { VIDEOS } from "../videos";
 
 const BORDEN_64TH = [49.21199, -123.07409];
 const BORDEN_MARINE_N = [49.21119, -123.0741];
+const BORDEN_MARINE_S = [49.21093, -123.07396];
 const MARINE_WB_TO_BUS = [49.21117, -123.07631];
 const MARINE_WB_TRANSITION = [49.2112, -123.07803];
 
@@ -196,6 +197,7 @@ export const KNIGHT_STREET_BRIDGE = [
   {
     description: "nb crossing marine",
     videos: [VIDEOS.dumfriesNb.id],
+    type: "mixed",
     positions: [
       NORTHBOUND_SPLIT_2,
       [49.21089, -123.07498],
@@ -226,16 +228,21 @@ export const KNIGHT_STREET_BRIDGE = [
     ],
   },
   {
-    description: "borden south of marine",
+    description: "marine to borden sb",
     videos: [VIDEOS.dumfriesNb.id],
+    type: "mixed",
     positions: [
       NORTHBOUND_SPLIT_2,
       [49.21088, -123.07474],
       [49.21092, -123.07454],
-      [49.21093, -123.07396],
-      [49.2096, -123.074],
-      BORDEN_KENT_N_S,
+      BORDEN_MARINE_S,
     ],
+  },
+  {
+    description: "borden south of marine",
+    videos: [VIDEOS.dumfriesNb.id],
+    type: "quiet",
+    positions: [BORDEN_MARINE_S, [49.2096, -123.074], BORDEN_KENT_N_S],
   },
   {
     description: "marine wb 1",
@@ -245,7 +252,7 @@ export const KNIGHT_STREET_BRIDGE = [
   },
   {
     description: "marine wb 2",
-    type: "comfortable",
+    type: "quiet",
     oneWay: "required",
     positions: [
       MARINE_WB_TO_BUS,
@@ -256,7 +263,7 @@ export const KNIGHT_STREET_BRIDGE = [
   },
   {
     description: "marine wb 3",
-    type: "comfortable",
+    type: "dedicated",
     oneWay: "required",
     positions: [
       MARINE_WB_TRANSITION,

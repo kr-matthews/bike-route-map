@@ -10,10 +10,12 @@ import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 const NORTH_OF_LAKEWOOD = [49.28663, -123.0615];
+const MCGILL_PARKING_E = [49.28835, -123.03711];
 
 export const PORTSIDE = [
   {
     description: "connection with second narrows bridge",
+    type: "mixed",
     videos: [VIDEOS.portsideEb.id, VIDEOS.cassiarSb.id],
     videosStartAtStart: [VIDEOS.cassiarSb.id],
     positions: [
@@ -28,13 +30,15 @@ export const PORTSIDE = [
   {
     routeNames: [ROUTES.portside.name],
     description: "initial bit from lakewood",
+    type: "quiet",
     videos: [VIDEOS.portsideEb.id, VIDEOS.lakewoodNb.id],
     videosEndAtEnd: [VIDEOS.lakewoodNb.id],
     positions: [WALL_OXFORD_PARK, [49.28606, -123.06198], NORTH_OF_LAKEWOOD],
   },
   {
     routeNames: [ROUTES.portside.name],
-    description: "primary",
+    description: "lakewood to creekway park",
+    type: "quiet",
     videos: [VIDEOS.portsideEb.id],
     positions: [
       NORTH_OF_LAKEWOOD,
@@ -67,7 +71,16 @@ export const PORTSIDE = [
       [49.28885, -123.03929],
       [49.28856, -123.03819],
       [49.28849, -123.0377],
-      [49.28835, -123.03711],
+      MCGILL_PARKING_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.portside.name],
+    description: "creekway park and bridgeway",
+    type: "mixed",
+    videos: [VIDEOS.portsideEb.id],
+    positions: [
+      MCGILL_PARKING_E,
       [49.28831, -123.03709],
       [49.28827, -123.03702],
       [49.2882, -123.0366],

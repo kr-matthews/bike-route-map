@@ -67,6 +67,7 @@ export const BURRARD = [
   // connection
   {
     description: "left onto helmcken",
+    type: "dedicated",
     oneWay: "required",
     positions: [BURRARD_HELMCKEN_SW, BURRARD_HELMCKEN_SE],
   },

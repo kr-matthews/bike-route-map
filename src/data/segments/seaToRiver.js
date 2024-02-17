@@ -27,6 +27,7 @@ const GILMORE_HALIFAX_SE = [49.26797, -123.01417];
 const GILMORE_HALIFAX_SW = [49.26797, -123.01432];
 const GILMORE_LANE_START = [49.26723, -123.01416];
 
+const CARLETON_DOUGLAS_N = [49.26937, -123.01323];
 const CARLETON_YALE = [49.29001, -123.01108];
 
 const HIGHWAY_OVERPASS_START = [49.2573, -123.01212];
@@ -37,6 +38,8 @@ const TRANS_CANADA_PAVEMENT_END = [49.29225, -123.02588];
 export const SEA_TO_RIVER = [
   {
     description: "mckay connection to bc parkway/metrotown",
+    type: "quiet",
+    hideUnlessVideo: true,
     positions: [
       MCKAY_MAYWOOD,
       [49.22381, -123.00892],
@@ -48,6 +51,7 @@ export const SEA_TO_RIVER = [
   },
   {
     description: "central park - maywood",
+    type: "mixed",
     positions: [PATTERSON_MAYWOOD_W, PATTERSON_MAYWOOD],
   },
   {
@@ -76,6 +80,7 @@ export const SEA_TO_RIVER = [
   {
     routeNames: [ROUTES.seaToRiver.name],
     description: "boxer to central park",
+    type: "quiet",
     videos: [VIDEOS.seaToRiverNb.id],
     positions: [
       MCKAY_BOXER,
@@ -116,6 +121,7 @@ export const SEA_TO_RIVER = [
   {
     routeNames: [ROUTES.seaToRiver.name],
     description: "moscrop to kincaid",
+    type: "quiet",
     videos: [VIDEOS.seaToRiverNb.id],
     positions: [
       CARLETON_MOSCROP,
@@ -133,6 +139,7 @@ export const SEA_TO_RIVER = [
   {
     routeNames: [ROUTES.seaToRiver.name],
     description: "kincaid",
+    type: "mixed",
     videos: [VIDEOS.seaToRiverNb.id, VIDEOS.twentySecondEb.id],
     positions: [
       CARLETON_KINCAID,
@@ -150,6 +157,7 @@ export const SEA_TO_RIVER = [
   {
     routeNames: [ROUTES.seaToRiver.name],
     description: "kincaid to highway",
+    type: "mixed",
     elevation: 0.5,
     videos: [VIDEOS.seaToRiverNb.id],
     positions: [
@@ -180,6 +188,7 @@ export const SEA_TO_RIVER = [
   {
     routeNames: [ROUTES.seaToRiver.name],
     description: "highway overpass",
+    type: "mixed",
     elevation: 1,
     videos: [VIDEOS.seaToRiverNb.id],
     positions: [HIGHWAY_OVERPASS_START, HIGHWAY_OVERPASS_END],
@@ -187,6 +196,7 @@ export const SEA_TO_RIVER = [
   {
     routeNames: [ROUTES.seaToRiver.name],
     description: "highway to still creek",
+    type: "mixed",
     elevation: 0.5,
     videos: [VIDEOS.seaToRiverNb.id],
     positions: [
@@ -205,7 +215,8 @@ export const SEA_TO_RIVER = [
   },
   {
     routeNames: [ROUTES.seaToRiver.name, ROUTES.centralValleyGreenway.name],
-    description: "gilmore",
+    description: "cvg overlap",
+    type: "mixed",
     videos: [VIDEOS.seaToRiverNb.id],
     positions: [
       GILMORE_STILL_CREEK,
@@ -219,6 +230,7 @@ export const SEA_TO_RIVER = [
   {
     routeNames: [ROUTES.seaToRiver.name],
     description: "cvg to lougheed",
+    type: "mixed",
     videos: [VIDEOS.seaToRiverNb.id],
     positions: [
       GILMORE_CVG,
@@ -250,6 +262,7 @@ export const SEA_TO_RIVER = [
   {
     routeNames: [ROUTES.seaToRiver.name],
     description: "nb: lougheed to halifax part 2",
+    type: "comfortable",
     oneWay: "required",
     videos: [VIDEOS.seaToRiverNb.id],
     positions: [GILMORE_LANE_START, GILMORE_HALIFAX_SE],
@@ -257,6 +270,7 @@ export const SEA_TO_RIVER = [
   {
     routeNames: [ROUTES.seaToRiver.name],
     description: "sb: crossing halifax",
+    type: "mixed",
     oneWay: "recommended",
     hideArrows: true,
     positions: [GILMORE_HALIFAX_SE, GILMORE_HALIFAX_SW],
@@ -270,7 +284,8 @@ export const SEA_TO_RIVER = [
   },
   {
     routeNames: [ROUTES.seaToRiver.name],
-    description: "halifax to trans canada trail",
+    description: "halifax to douglas",
+    type: "comfortable",
     videos: [VIDEOS.seaToRiverNb.id],
     positions: [
       GILMORE_HALIFAX_SE,
@@ -282,7 +297,16 @@ export const SEA_TO_RIVER = [
       [49.26948, -123.0139],
       [49.26945, -123.01367],
       [49.26941, -123.01343],
-      [49.26937, -123.01323],
+      CARLETON_DOUGLAS_N,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaToRiver.name],
+    description: "douglas to trans canada trail",
+    type: "quiet",
+    videos: [VIDEOS.seaToRiverNb.id],
+    positions: [
+      CARLETON_DOUGLAS_N,
       [49.26986, -123.01296],
       [49.2702, -123.01282],
       [49.27071, -123.01281],
@@ -305,6 +329,7 @@ export const SEA_TO_RIVER = [
   },
   {
     description: "trans canada trail bit, west",
+    type: "mixed",
     hideUnlessVideo: true,
     videos: [VIDEOS.seaToRiverNb.id],
     videosEndAtStart: [VIDEOS.seaToRiverNb.id],

@@ -48,6 +48,7 @@ export const VALLEY = [
   {
     routeNames: [ROUTES.valley.name],
     description: "south of 29th",
+    type: "quiet",
     videos: [VIDEOS.valleySb.id],
     positions: [
       VALLEY_33RD_S,
@@ -66,6 +67,7 @@ export const VALLEY = [
   {
     routeNames: [ROUTES.valley.name],
     description: "north of 29th",
+    type: "quiet",
     videos: [VIDEOS.valleySb.id],
     positions: [
       VALLEY_EDDINGTON,

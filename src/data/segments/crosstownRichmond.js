@@ -18,7 +18,7 @@ export const CROSSTOWN_RICHMOND = [
   {
     routeNames: [ROUTES.crosstownRichmond.name],
     description: "railway to saint albans",
-    type: "comfortable",
+    type: "quiet", // !!!
     positions: [
       RAILWAY_COLBECK_E,
       RAILWAY_COLBECK_EE,
@@ -87,7 +87,7 @@ export const CROSSTOWN_RICHMOND = [
   {
     routeNames: [ROUTES.crosstownRichmond.name],
     description: "bowcock",
-    type: "comfortable",
+    type: "quiet",
     positions: [
       SAINT_ALBANS_BOWCOCK,
       [49.15131, -123.12841],

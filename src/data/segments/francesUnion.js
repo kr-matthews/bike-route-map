@@ -21,6 +21,11 @@ const HASTINGS_OVERPASS_S = [49.27997, -122.96001];
 
 const EAST_OF_BOUNDARY_ADANAC = [49.27756, -123.0221];
 
+const FELL_FRANCES = [49.27916, -122.97556];
+const KENSINGTON_UNION_E = [49.27782, -122.96982];
+const MALIBU_LANE_E = [49.28655, -122.95643];
+const MALIBU_LANE_W = [49.286, -122.95885];
+
 const DUTHIE_UNION = [49.27776, -122.95342];
 const BARNET_RIDGE = [49.2833, -122.95354];
 
@@ -40,6 +45,7 @@ export const FRANCES_UNION = [
   {
     routeNames: [ROUTES.francesUnion.name],
     description: "just east of boundary",
+    type: "quiet",
     videos: [VIDEOS.adanacWb.id],
     videosStartAtEnd: [VIDEOS.adanacWb.id],
     positions: [
@@ -50,7 +56,8 @@ export const FRANCES_UNION = [
   },
   {
     routeNames: [ROUTES.francesUnion.name],
-    description: "adanac to duthie",
+    description: "adanac to kensington park",
+    type: "quiet",
     positions: [
       EAST_OF_BOUNDARY_ADANAC,
       [49.27755, -123.0211],
@@ -67,7 +74,15 @@ export const FRANCES_UNION = [
       [49.2791, -122.98096],
       [49.27911, -122.98031],
       [49.27919, -122.9792],
-      [49.27916, -122.97556],
+      FELL_FRANCES,
+    ],
+  },
+  {
+    routeNames: [ROUTES.francesUnion.name],
+    description: "through kensington park",
+    type: "mixed",
+    positions: [
+      FELL_FRANCES,
       [49.27924, -122.97542],
       [49.27938, -122.97545],
       [49.27965, -122.97543],
@@ -103,7 +118,15 @@ export const FRANCES_UNION = [
       [49.27779, -122.9703],
       [49.27773, -122.97025],
       [49.27779, -122.97001],
-      [49.27782, -122.96982],
+      KENSINGTON_UNION_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.francesUnion.name],
+    description: "kensington park to duthie",
+    type: "quiet",
+    positions: [
+      KENSINGTON_UNION_E,
       [49.2778, -122.96686],
       [49.2778, -122.96465],
       [49.27779, -122.96227],
@@ -127,6 +150,7 @@ export const FRANCES_UNION = [
   {
     routeNames: [ROUTES.francesUnion.name],
     description: "eb to highway",
+    type: "quiet",
     oneWay: "recommended",
     positions: [
       BARNET_RIDGE,
@@ -139,6 +163,7 @@ export const FRANCES_UNION = [
   {
     routeNames: [ROUTES.francesUnion.name],
     description: "eb ramp",
+    type: "dedicated",
     oneWay: "required",
     positions: [
       BARNET_INLET_S,
@@ -158,7 +183,8 @@ export const FRANCES_UNION = [
   },
   {
     routeNames: [ROUTES.francesUnion.name],
-    description: "wb to overpass",
+    description: "wb along bayview",
+    type: "mixed",
     oneWay: "recommended",
     positions: [
       INLET_BAYVIEW_W,
@@ -171,8 +197,23 @@ export const FRANCES_UNION = [
       [49.28692, -122.95524],
       [49.28688, -122.95578],
       [49.28676, -122.95607],
-      [49.28655, -122.95643],
-      [49.286, -122.95885],
+      MALIBU_LANE_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.francesUnion.name],
+    description: "malibu alley",
+    type: "quiet",
+    oneWay: "recommended",
+    positions: [MALIBU_LANE_E, MALIBU_LANE_W],
+  },
+  {
+    routeNames: [ROUTES.francesUnion.name],
+    description: "wb along cliff to overpass",
+    type: "mixed",
+    oneWay: "recommended",
+    positions: [
+      MALIBU_LANE_W,
       [49.28596, -122.959],
       [49.28553, -122.959],
       [49.28457, -122.95901],
@@ -188,6 +229,7 @@ export const FRANCES_UNION = [
   {
     routeNames: [ROUTES.francesUnion.name],
     description: "wb pre-overpass",
+    type: "mixed",
     elevation: 0.5,
     positions: [
       CLIFF_WESTRIDGE_PARK,
@@ -210,6 +252,7 @@ export const FRANCES_UNION = [
   {
     routeNames: [ROUTES.francesUnion.name],
     description: "hastings overpass",
+    type: "mixed",
     elevation: 1,
     positions: [
       HASTINGS_OVERPASS_N,
@@ -229,6 +272,7 @@ export const FRANCES_UNION = [
   {
     routeNames: [ROUTES.francesUnion.name],
     description: "overpass to union",
+    type: "mixed",
     elevation: 0.5,
     positions: [
       HASTINGS_OVERPASS_S,

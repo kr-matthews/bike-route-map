@@ -23,6 +23,7 @@ export const MARINE_WAY = [
   // vancouver
   {
     description: "boundary parking lot",
+    type: "quiet",
     positions: [
       BOUNDARY_FRASER_RIVER,
       [49.20165, -123.02342],
@@ -35,6 +36,7 @@ export const MARINE_WAY = [
   },
   {
     description: "near kinross",
+    type: "dedicated",
     positions: [
       [49.20802, -123.04044],
       [49.20794, -123.03999],
@@ -53,6 +55,7 @@ export const MARINE_WAY = [
   },
   {
     description: "kinross nb",
+    type: "painted",
     oneWay: "required",
     positions: [
       KINROSS_MARINE_SW,
@@ -63,12 +66,14 @@ export const MARINE_WAY = [
   },
   {
     description: "kinross sb",
+    type: "painted",
     oneWay: "required",
     positions: [KINROSS_KENT, [49.2062, -123.03674], KINROSS_MARINE_SW],
   },
   {
     routeNames: [ROUTES.marineWay.name],
     description: "wb: vancouver",
+    type: "combined",
     oneWay: "required",
     positions: [
       [49.20571, -123.02386],
@@ -87,6 +92,7 @@ export const MARINE_WAY = [
   {
     routeNames: [ROUTES.marineWay.name],
     description: "eb: vancouver",
+    type: "combined",
     oneWay: "required",
     videos: [VIDEOS.marineWayEb.id],
     videosStartAtStart: [VIDEOS.marineWayEb.id],
@@ -138,6 +144,7 @@ export const MARINE_WAY = [
   },
   {
     description: "boundary sb from marine",
+    type: "combined",
     oneWay: "required",
     positions: [
       BOUNDARY_MARINE_SW,
@@ -153,6 +160,7 @@ export const MARINE_WAY = [
   // burnaby (and new westminster technically)
   {
     description: "connection to meadow/10th",
+    type: "mixed",
     positions: [
       NORTH_FRASER_MARINE_SE,
       NORTH_FRASER_MARINE_NE,
@@ -161,6 +169,7 @@ export const MARINE_WAY = [
   },
   {
     description: "wb: getting onto marine way",
+    type: "dedicated",
     oneWay: "required",
     positions: [
       TWENTY_THIRD_7TH,
@@ -366,6 +375,7 @@ export const MARINE_WAY = [
   },
   {
     description: "eb: transition to bc parkway",
+    type: "dedicated",
     oneWay: "required",
     videos: [VIDEOS.marineWayEb.id],
     positions: [

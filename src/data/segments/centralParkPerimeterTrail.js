@@ -13,6 +13,7 @@ export const CENTRAL_PARK_PERIMETER_TRAIL = [
   {
     routeNames: [ROUTES.centralParkPerimeterTrail.name, ROUTES.bcParkway.name],
     description: "north side (west)",
+    type: "mixed",
     videos: [
       VIDEOS.centralParkPerimeterTrailCw.id,
       VIDEOS.bcParkwayBurnabyEb.id,
@@ -30,6 +31,7 @@ export const CENTRAL_PARK_PERIMETER_TRAIL = [
   {
     routeNames: [ROUTES.centralParkPerimeterTrail.name, ROUTES.bcParkway.name],
     description: "north side (east)",
+    type: "mixed",
     videos: [
       VIDEOS.centralParkPerimeterTrailCw.id,
       VIDEOS.bcParkwayBurnabyWb.id,
@@ -43,6 +45,7 @@ export const CENTRAL_PARK_PERIMETER_TRAIL = [
   {
     routeNames: [ROUTES.centralParkPerimeterTrail.name],
     description: "non-overlap ccw of 45th",
+    type: "mixed",
     videos: [VIDEOS.centralParkPerimeterTrailCw.id],
     positions: [
       PATTERSON_BC_PARKWAY,
@@ -92,6 +95,7 @@ export const CENTRAL_PARK_PERIMETER_TRAIL = [
   {
     routeNames: [ROUTES.centralParkPerimeterTrail.name],
     description: "non-overlap cw of 45th",
+    type: "mixed",
     videos: [VIDEOS.centralParkPerimeterTrailCw.id],
     videosLoopAtStart: [VIDEOS.centralParkPerimeterTrailCw.id],
     positions: [

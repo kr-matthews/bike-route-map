@@ -6,6 +6,7 @@ import {
 } from "../intersections";
 import { ROUTES } from "../routes";
 
+const OAKLAND_PL_W = [49.22964, -122.98856];
 const PEARL_OAKLAND_S = [49.22965, -122.98737];
 const OAKDALE_OAKLAND_NE = [49.22969, -122.9856];
 
@@ -13,13 +14,18 @@ export const OAKLAND_BURRIS = [
   // eb
   {
     routeNames: [ROUTES.oaklandBurris.name],
-    description: "eb: oakland pl",
+    description: "eb: oakland to oakland pl",
     type: "comfortable",
     oneWay: "recommended",
+    positions: [ROYAL_OAK_DOVER_SW, [49.22978, -122.98875], OAKLAND_PL_W],
+  },
+  {
+    routeNames: [ROUTES.oaklandBurris.name],
+    description: "eb: oakland pl",
+    type: "quiet",
+    oneWay: "recommended",
     positions: [
-      ROYAL_OAK_DOVER_SW,
-      [49.22978, -122.98872],
-      [49.22964, -122.98856],
+      OAKLAND_PL_W,
       [49.2296, -122.98848],
       [49.22958, -122.9884],
       [49.22957, -122.98741],

@@ -14,11 +14,12 @@ const BYRNE_CREEK_MARINE_SS = [49.2029, -122.98337];
 export const BYRNE_CREEK = [
   {
     description: "marine way connection",
+    type: "other",
     positions: [BYRNE_CREEK_MARINE_SS, BYRNE_CREEK_MARINE_S],
   },
   {
     description: "mission connection",
-    type: "dedicated",
+    type: "mixed",
     positions: [
       BC_PARKWAY_MISSION,
       [49.20571, -122.95845],
@@ -52,7 +53,7 @@ export const BYRNE_CREEK = [
   },
   {
     description: "southridge connection",
-    type: "dedicated",
+    type: "mixed",
     positions: [
       BYRNEPARK_SOUTHRIDGE,
       [49.20583, -122.96831],
@@ -78,7 +79,7 @@ export const BYRNE_CREEK = [
   {
     routeNames: [ROUTES.byrneCreek.name],
     description: "primary",
-    type: "dedicated",
+    type: "mixed",
     positions: [
       [49.19977, -122.98921],
       [49.2008, -122.98736],

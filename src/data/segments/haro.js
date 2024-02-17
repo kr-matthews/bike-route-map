@@ -8,13 +8,15 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const HARO_W = [49.29302, -123.14008];
 const EAST_OF_NICOLA = [49.28772, -123.13177];
 const LAGOON_HARO = [49.2932, -123.14024];
 
 export const HARO = [
   {
     routeNames: [ROUTES.haro.name],
-    description: "west of nicola",
+    description: "path to/from lagoon dr",
+    type: "dedicated",
     videos: [VIDEOS.haroWb.id],
     videosEndAtStart: [VIDEOS.haroWb.id],
     positions: [
@@ -22,7 +24,16 @@ export const HARO = [
       [49.29316, -123.14024],
       [49.29309, -123.14021],
       [49.29304, -123.14016],
-      [49.29302, -123.14008],
+      HARO_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.haro.name],
+    description: "west of nicola",
+    type: "quiet",
+    videos: [VIDEOS.haroWb.id],
+    positions: [
+      HARO_W,
       [49.29301, -123.13995],
       CHILCO_HARO,
       [49.29178, -123.13802],
@@ -35,6 +46,7 @@ export const HARO = [
   {
     routeNames: [ROUTES.haro.name],
     description: "near nicola",
+    type: "quiet",
     videos: [VIDEOS.haroWb.id, VIDEOS.nicolaNb.id],
     videosStartAtEnd: [VIDEOS.nicolaNb.id],
     positions: [NICOLA_HARO, EAST_OF_NICOLA],
@@ -42,6 +54,7 @@ export const HARO = [
   {
     routeNames: [ROUTES.haro.name],
     description: "east of nicola",
+    type: "quiet",
     videos: [VIDEOS.haroWb.id],
     videosStartAtEnd: [VIDEOS.haroWb.id],
     positions: [

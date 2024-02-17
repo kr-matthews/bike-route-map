@@ -26,7 +26,7 @@ export const HASTINGS_PARK = [
   {
     routeNames: [ROUTES.hastingsPark.name],
     description: "hastings",
-    type: "comfortable",
+    type: "mixed",
     videos: [VIDEOS.hastingsPortsideWindermere.id],
     videosEndAtStart: [VIDEOS.hastingsPortsideWindermere.id],
     positions: [
@@ -41,7 +41,7 @@ export const HASTINGS_PARK = [
   {
     routeNames: [ROUTES.hastingsPark.name],
     description: "fields west",
-    type: "comfortable",
+    type: "mixed",
     videos: [VIDEOS.hastingsPortsideWindermere.id],
     positions: [
       FIELDS_SW,
@@ -59,7 +59,7 @@ export const HASTINGS_PARK = [
   {
     routeNames: [ROUTES.hastingsPark.name],
     description: "fields south east",
-    type: "comfortable",
+    type: "combined",
     positions: [
       FIELDS_SW,
       [49.28152, -123.03367],
@@ -73,7 +73,7 @@ export const HASTINGS_PARK = [
   {
     routeNames: [ROUTES.hastingsPark.name],
     description: "fields north east",
-    type: "comfortable",
+    type: "combined",
     positions: [
       FIELDS_E,
       [49.28323, -123.03227],
@@ -92,7 +92,7 @@ export const HASTINGS_PARK = [
   {
     routeNames: [ROUTES.hastingsPark.name],
     description: "cassiar connection",
-    type: "comfortable",
+    type: "mixed",
     positions: [
       FIELDS_E,
       [49.28234, -123.03218],
@@ -151,7 +151,7 @@ export const HASTINGS_PARK = [
   {
     routeNames: [ROUTES.hastingsPark.name],
     description: "tunnel",
-    type: "comfortable",
+    type: "mixed",
     elevation: -1,
     videos: [VIDEOS.hastingsPortsideWindermere.id],
     positions: [TUNNEL_START, TUNNEL_END],
@@ -159,7 +159,7 @@ export const HASTINGS_PARK = [
   {
     routeNames: [ROUTES.hastingsPark.name],
     description: "bridgeway (creekway)",
-    type: "comfortable",
+    type: "mixed",
     elevation: -0.5,
     videos: [VIDEOS.hastingsPortsideWindermere.id],
     videosStartAtEnd: [VIDEOS.hastingsPortsideWindermere.id],
@@ -173,7 +173,7 @@ export const HASTINGS_PARK = [
   {
     routeNames: [ROUTES.hastingsPark.name],
     description: "creekway portside connection",
-    type: "comfortable",
+    type: "mixed",
     positions: [
       BRIDGEWAY_CREEKWAY_PARK_S,
       [49.28808, -123.03379],
@@ -239,6 +239,7 @@ export const HASTINGS_PARK = [
     ],
   },
   {
+    routeNames: [ROUTES.hastingsPark.name],
     description: "bridgeway: nb",
     type: "painted",
     oneWay: "required",
@@ -267,6 +268,7 @@ export const HASTINGS_PARK = [
     ],
   },
   {
+    routeNames: [ROUTES.hastingsPark.name],
     description: "to bridgeway nb",
     type: "painted",
     oneWay: "recommended",
@@ -279,6 +281,7 @@ export const HASTINGS_PARK = [
     ],
   },
   {
+    routeNames: [ROUTES.hastingsPark.name],
     description: "bridgeway: sb lane",
     type: "painted",
     oneWay: "required",

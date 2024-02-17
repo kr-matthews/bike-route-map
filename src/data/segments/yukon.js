@@ -26,11 +26,13 @@ export const YUKON = [
   {
     routeNames: [ROUTES.yukon.name],
     description: "crossing 29th",
+    type: "quiet",
     positions: [YUKON_29TH_S, YUKON_29TH_N],
   },
   {
     routeNames: [ROUTES.yukon.name],
     description: "29th to king edward",
+    type: "quiet",
     videos: [VIDEOS.yukonSb.id],
     videosEndAtStart: [VIDEOS.yukonSb.id],
     positions: [
@@ -43,12 +45,14 @@ export const YUKON = [
   {
     routeNames: [ROUTES.yukon.name],
     description: "king edward overlap",
+    type: "dedicated",
     videos: [VIDEOS.yukonSb.id],
     positions: [YUKON_KING_EDWARD_SE, YUKON_KING_EDWARD_SW],
   },
   {
     routeNames: [ROUTES.yukon.name],
     description: "king edward to 12th",
+    type: "quiet",
     videos: [VIDEOS.yukonSb.id],
     positions: [
       YUKON_KING_EDWARD_SW,
@@ -146,12 +150,14 @@ export const YUKON = [
   {
     routeNames: [ROUTES.yukon.name],
     description: "2nd to 1st",
+    type: "quiet",
     videos: [VIDEOS.yukonSb.id],
     positions: [WYLIE_2ND_N, WYLIE_1ST_S],
   },
   {
     routeNames: [ROUTES.yukon.name],
     description: "crossing 1st",
+    type: "quiet",
     positions: [WYLIE_1ST_S, WYLIE_1ST_N],
   },
 ];

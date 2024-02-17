@@ -149,6 +149,7 @@ export const CAMBIE_BRIDGE = [
   },
   {
     description: "nb connection to pacific",
+    type: "dedicated",
     positions: [
       SMITHE_SMITHE_PATH,
       [49.27569, -123.11451],
@@ -191,6 +192,7 @@ export const CAMBIE_BRIDGE = [
     elevation: 0.5,
     positions: [SPIRAL_PRE_BOTTOM, SPIRAL_BOTTOM],
   },
+
   {
     routeNames: [ROUTES.cambieBridge.name],
     description: "southbound side",
@@ -232,8 +234,9 @@ export const CAMBIE_BRIDGE = [
   },
   {
     description: "sb: crossing 2nd",
-    videos: [VIDEOS.cambieBridgeNelsonSb.id],
+    type: "quiet",
     oneWay: "required",
+    videos: [VIDEOS.cambieBridgeNelsonSb.id],
     positions: [ASH_2ND_N, ASH_2ND_SW],
   },
   {
@@ -252,7 +255,7 @@ export const CAMBIE_BRIDGE = [
   },
   {
     description: "nb: crossing 2nd",
-    oneWay: "required",
+    type: "quiet",
     positions: [ASH_2ND_SE, ASH_2ND_N],
   },
   {

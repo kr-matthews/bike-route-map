@@ -28,7 +28,7 @@ export const METROTOWN = [
   // connections
   {
     description: "bc parkway connection - mckay",
-    type: "comfortable",
+    type: "mixed",
     videos: [VIDEOS.metrotownCcw.id],
     videosLoopAtStart: [VIDEOS.metrotownCcw.id],
     positions: [
@@ -45,7 +45,7 @@ export const METROTOWN = [
   },
   {
     description: "bc parkway connection - bonsor",
-    type: "comfortable",
+    type: "mixed",
     positions: [
       BONSOR_BC_PARKWAY,
       [49.22345, -122.99868],

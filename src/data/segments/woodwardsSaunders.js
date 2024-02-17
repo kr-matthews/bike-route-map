@@ -21,7 +21,7 @@ export const WOODWARDS_SAUNDERS = [
   {
     routeNames: [ROUTES.woodwardsSaunders.name],
     description: "railway to no. 3-ish",
-    type: "dedicated",
+    type: "quiet",
     positions: [
       RAILWAY_WOODWARDS_E,
       RAILWAY_WOODWARDS_EE,
@@ -56,7 +56,7 @@ export const WOODWARDS_SAUNDERS = [
   {
     routeNames: [ROUTES.woodwardsSaunders.name],
     description: "saunders",
-    type: "dedicated",
+    type: "quiet",
     positions: [
       NO_3_SAUNDERS_E,
       [49.14358, -123.12908],

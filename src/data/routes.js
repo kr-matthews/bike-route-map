@@ -590,14 +590,14 @@ export const ROUTES = {
     name: "North/South",
     legs: [{ distance: 2.9, videos: { southbound: VIDEOS.northSouthSb } }],
   },
-  oakStreetBridge: {
-    name: "Oak Street Bridge",
-    legs: [{ distance: 1.9, videos: {} }],
-  },
   oaklandBurris: {
     name: "Oakland St/Burris St",
     shortName: "Oakland St",
     legs: [{ distance: 2.5, videos: {} }],
+  },
+  oakStreetBridge: {
+    name: "Oak Street Bridge",
+    legs: [{ distance: 1.9, videos: {} }],
   },
   odlin: {
     name: "Odlin",
@@ -672,8 +672,8 @@ export const ROUTES = {
     ],
   },
   royalOak: {
-    name: "Royal Oak Urban Trail",
-    shortName: "Royal Oak Trail",
+    name: "Royal Oak",
+    shortName: "Royal Oak",
     legs: [{ distance: 1.3, videos: { southbound: VIDEOS.royalOakSb } }],
   },
   rumble: {
@@ -693,10 +693,6 @@ export const ROUTES = {
   seaIslandWay: {
     name: "Sea Island Way",
     legs: [{ distance: 1.9, videos: { eastbound: VIDEOS.seaIslandWayEb } }],
-  },
-  seaToRiver: {
-    name: "Sea to River",
-    legs: [{ distance: 9.6, videos: { northbound: VIDEOS.seaToRiverNb } }],
   },
   seaside: {
     name: "Seaside",
@@ -728,11 +724,15 @@ export const ROUTES = {
         distance: 4.5,
         videos: { eastbound: VIDEOS.seasideBypassFalseCreekSouthEb },
       },
-      // whyte?
       { name: "York", distance: 1.4, videos: { eastbound: VIDEOS.yorkEb } },
       { name: "3rd", distance: 2.4, videos: { eastbound: VIDEOS.thirdEb } },
       { name: "NW Marine & 4th", distance: 4, videos: {} },
+      { name: "Whyte", distance: 0.8, videos: {} },
     ],
+  },
+  seaToRiver: {
+    name: "Sea to River",
+    legs: [{ distance: 9.6, videos: { northbound: VIDEOS.seaToRiverNb } }],
   },
   secondNarrowsBridge: {
     name: "Second Narrows Bridge",
@@ -818,15 +818,15 @@ export const ROUTES = {
     name: "Williams Rd",
     legs: [{ distance: 7.3, videos: {} }],
   },
-  willingdon: {
-    name: "Willingdon Urban Trail",
-    shortName: "Willingdon Trail",
-    legs: [{ distance: 2.2, videos: { southbound: VIDEOS.willingdonSb } }],
-  },
   willingdonLinear: {
     name: "Willingdon Linear Park Urban Trail",
     shortName: "Willingdon L. Park",
     legs: [{ distance: 1.3, videos: {} }],
+  },
+  willingdon: {
+    name: "Willingdon Urban Trail",
+    shortName: "Willingdon Trail",
+    legs: [{ distance: 2.2, videos: { southbound: VIDEOS.willingdonSb } }],
   },
   windermere: {
     name: "Windermere",

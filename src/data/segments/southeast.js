@@ -132,7 +132,7 @@ export const SOUTHEAST = [
   },
   {
     description: "connection to london",
-    type: "comfortable",
+    type: "quiet",
     positions: [
       FIFTEENTH_LONDON,
       [49.21081, -122.94259],

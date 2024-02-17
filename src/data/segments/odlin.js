@@ -1,17 +1,30 @@
 import {} from "../intersections";
 import { ROUTES } from "../routes";
 
+const BROWN_ODLIN = [49.18219, -123.13085];
+const SEXSMITH_LANE_W_ODLIN = [49.18211, -123.12883];
+const ODLIN_PARK_W = [49.18177, -123.11284];
+const ODLIN_PARK_E = [49.18176, -123.11094];
+
 export const ODLIN = [
   {
     routeNames: [ROUTES.odlin.name],
-    description: "all",
-    type: "comfortable",
+    description: "hazelbridge to/and brown",
+    type: "quiet",
+    positions: [[49.18292, -123.13322], [49.18293, -123.13088], BROWN_ODLIN],
+  },
+  {
+    routeNames: [ROUTES.odlin.name],
+    description: "brown path",
+    type: "mixed",
+    positions: [BROWN_ODLIN, [49.18216, -123.12892], SEXSMITH_LANE_W_ODLIN],
+  },
+  {
+    routeNames: [ROUTES.odlin.name],
+    description: "brown path to odlin park",
+    type: "quiet",
     positions: [
-      [49.18292, -123.13322],
-      [49.18293, -123.13088],
-      [49.18219, -123.13085],
-      [49.18216, -123.12892],
-      [49.18211, -123.12883],
+      SEXSMITH_LANE_W_ODLIN,
       [49.1821, -123.12702],
       [49.18167, -123.12701],
       [49.18166, -123.12683],
@@ -19,11 +32,19 @@ export const ODLIN = [
       [49.18175, -123.12456], // GARDEN_CITY
       [49.18176, -123.11815],
       [49.18177, -123.11402],
-      [49.18177, -123.11284],
-      [49.18176, -123.11187],
-      [49.18176, -123.11094],
-      [49.18177, -123.10607],
-      [49.18177, -123.10499],
+      ODLIN_PARK_W,
     ],
+  },
+  {
+    routeNames: [ROUTES.odlin.name],
+    description: "odlin park",
+    type: "mixed",
+    positions: [ODLIN_PARK_W, [49.18176, -123.11187], ODLIN_PARK_E],
+  },
+  {
+    routeNames: [ROUTES.odlin.name],
+    description: "odlin park to end",
+    type: "quiet",
+    positions: [ODLIN_PARK_E, [49.18177, -123.10607], [49.18177, -123.10499]],
   },
 ];

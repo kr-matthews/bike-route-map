@@ -11,13 +11,18 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-const MAINLAND_HELMCKEN = [49.27558, -123.12055];
 const PARK_COMOX = [49.29186, -123.14468];
+const COMOX_W = [49.29141, -123.14393];
+const DENMAN_COMOX_W = [49.28878, -123.13985];
+const BIDWELL_COMOX_SW = [49.28767, -123.13816];
+const THURLOW_COMOX_W = [49.28191, -123.12927];
+const MAINLAND_HELMCKEN = [49.27558, -123.12055];
 
 export const COMOX_HELMCKEN = [
   {
     routeNames: [ROUTES.comoxHelmcken.name],
-    description: "official portion",
+    description: "through park",
+    type: "mixed",
     videos: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
     videosStartAtStart: [VIDEOS.comoxHelmckenEb.id],
     videosEndAtStart: [VIDEOS.comoxHelmckenWb.id],
@@ -26,20 +31,51 @@ export const COMOX_HELMCKEN = [
       [49.29182, -123.14449],
       [49.29162, -123.14417],
       [49.29147, -123.14403],
-      [49.29141, -123.14393],
-      CHILCO_COMOX,
-      [49.28968, -123.14126],
-      [49.28878, -123.13985],
+      COMOX_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.comoxHelmcken.name],
+    description: "comox w end to denman",
+    type: "quiet",
+    videos: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
+    positions: [COMOX_W, CHILCO_COMOX, [49.28968, -123.14126], DENMAN_COMOX_W],
+  },
+  {
+    routeNames: [ROUTES.comoxHelmcken.name],
+    description: "denman to bidwell",
+    type: "dedicated",
+    videos: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
+    positions: [
+      DENMAN_COMOX_W,
       [49.28873, -123.1397],
       [49.28864, -123.13966],
-      [49.28767, -123.13816],
+      BIDWELL_COMOX_SW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.comoxHelmcken.name],
+    description: "bidwell to thurlow",
+    type: "quiet",
+    videos: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
+    positions: [
+      BIDWELL_COMOX_SW,
       [49.28764, -123.13809],
       CARDERO_COMOX,
       [49.28586, -123.13539],
       [49.28509, -123.13418],
       [49.28422, -123.13283],
       BUTE_COMOX,
-      [49.28191, -123.12927],
+      THURLOW_COMOX_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.comoxHelmcken.name],
+    description: "thurlow to hornby",
+    type: "dedicated",
+    videos: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
+    positions: [
+      THURLOW_COMOX_W,
       [49.28184, -123.12911],
       BURRARD_COMOX,
       [49.28032, -123.1271],

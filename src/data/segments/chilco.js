@@ -14,17 +14,20 @@ import { VIDEOS } from "../videos";
 export const CHILCO = [
   {
     description: "connection to stanley park loop",
+    type: "mixed",
     positions: [STANLEY_PARK_LOOP_ALBERNI, CHILCO_ALBERNI_W],
   },
   {
     routeNames: [ROUTES.chilco.name],
-    description: "closed",
+    description: "beach to seawall",
+    type: "dedicated",
     isClosed: true,
     positions: [CHILCO_SEAWALL, CHILCO_BEACH],
   },
   {
     routeNames: [ROUTES.chilco.name],
     description: "primary",
+    type: "quiet",
     videos: [VIDEOS.chilcoSb.id],
     videosEndAtStart: [VIDEOS.chilcoSb.id],
     positions: [
@@ -42,6 +45,7 @@ export const CHILCO = [
   {
     routeNames: [ROUTES.chilco.name],
     description: "connection from georgia",
+    type: "dedicated",
     oneWay: "required",
     videos: [VIDEOS.chilcoSb.id],
     positions: [CHILCO_GEORGIA_S, [49.29436, -123.13677], CHILCO_ALBERNI_E],

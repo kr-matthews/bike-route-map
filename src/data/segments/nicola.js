@@ -6,6 +6,7 @@ export const NICOLA = [
   {
     routeNames: [ROUTES.nicola.name],
     description: "primary",
+    type: "quiet",
     videos: [VIDEOS.nicolaNb.id],
     videosEndAtEnd: [VIDEOS.nicolaNb.id],
     positions: [

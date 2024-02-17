@@ -15,7 +15,7 @@ const NO_3_SEA_ISLAND_SW_SLIP = [49.19086, -123.13084];
 const NO_3_SEA_ISLAND_SE_SLIP = [49.19085, -123.13017];
 const SEA_ISLAND_BEFORE_GARDEN_CITY = [49.1909, -123.12594];
 
-export const SEA_ISLAND = [
+export const SEA_ISLAND_WAY = [
   {
     description: "join from miller",
     type: "shoulder",

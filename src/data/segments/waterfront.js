@@ -13,6 +13,7 @@ export const WATERFRONT = [
   {
     routeNames: [ROUTES.waterfront.name],
     description: "pre-underground",
+    type: "mixed",
     elevation: -0.5,
     videos: [VIDEOS.waterfrontEb.id],
     videosStartAtStart: [VIDEOS.waterfrontEb.id],

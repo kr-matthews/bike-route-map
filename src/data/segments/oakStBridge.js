@@ -14,6 +14,7 @@ const PATH_PATTERSON = [49.19019, -123.11692];
 const NORTHBOUND_SIDEWALK_START = [49.19028, -123.11582];
 const NORTHBOUND_ELEVATION_START = [49.19119, -123.1174];
 const NORTHBOUND_ELEVATION_END = [49.20454, -123.12955];
+const NB_POST_BRIDGE_SPLIT = [49.2047, -123.12953];
 
 export const OAK_STREET_BRIDGE = [
   // south end
@@ -49,9 +50,8 @@ export const OAK_STREET_BRIDGE = [
     ],
   },
   {
-    routeNames: [ROUTES.oakStreetBridge.name],
     description: "sb double-back",
-    oneWay: "recommended",
+    type: "other",
     positions: [
       SOUTHBOUND_SPLIT,
       [49.19144, -123.12005],
@@ -78,6 +78,7 @@ export const OAK_STREET_BRIDGE = [
   },
   {
     description: "connection with bridgeport",
+    type: "other",
     positions: [[49.19195, -123.12035], BRIDGEPORT_SPLIT],
   },
   {
@@ -98,6 +99,7 @@ export const OAK_STREET_BRIDGE = [
   },
   {
     description: "patterson from garden city",
+    type: "quiet",
     positions: [GARDEN_CITY_PATTERSON_E, PATH_PATTERSON],
   },
 
@@ -234,19 +236,36 @@ export const OAK_STREET_BRIDGE = [
   {
     routeNames: [ROUTES.oakStreetBridge.name],
     description: "nb post-bridge",
+    type: "mixed",
     oneWay: "recommended",
     elevation: 0.5,
     positions: [
       NORTHBOUND_ELEVATION_END,
       [49.20461, -123.12955],
       [49.20465, -123.12954],
-      [49.2047, -123.12953],
+      NB_POST_BRIDGE_SPLIT,
       [49.20477, -123.12948],
       [49.20482, -123.12944],
       [49.20485, -123.1294],
       [49.2049, -123.12934],
       [49.20492, -123.12929],
       [49.20507, -123.12893],
+    ],
+  },
+  {
+    routeNames: [ROUTES.oakStreetBridge.name],
+    description: "nb post-bridge under",
+    type: "mixed",
+    oneWay: "recommended",
+    positions: [
+      NB_POST_BRIDGE_SPLIT,
+      [49.20464, -123.12947],
+      [49.20454, -123.12946],
+      [49.20449, -123.12949],
+      [49.20443, -123.12983],
+      [49.20441, -123.12999],
+      [49.20433, -123.13022],
+      [49.20431, -123.13038],
     ],
   },
 ];

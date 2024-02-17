@@ -7,10 +7,14 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const CASSIAR_HASTINGS_SE = [49.28073, -123.03082];
+const CASSIAR_HASTINGS_NE = [49.28153, -123.03084];
+
 export const CASSIAR = [
   {
     routeNames: [ROUTES.cassiar.name],
-    description: "primary",
+    description: "adanac to hastings",
+    type: "quiet",
     videos: [VIDEOS.cassiarSb.id],
     videosEndAtStart: [VIDEOS.cassiarSb.id],
     positions: [
@@ -19,10 +23,28 @@ export const CASSIAR = [
       [49.27826, -123.03089],
       [49.27908, -123.03087],
       [49.28019, -123.03083],
-      [49.28073, -123.03082],
+      CASSIAR_HASTINGS_SE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.cassiar.name],
+    description: "crossing hastings",
+    type: "other",
+    videos: [VIDEOS.cassiarSb.id],
+    positions: [
+      CASSIAR_HASTINGS_SE,
       [49.28099, -123.03128],
       [49.2813, -123.03128],
-      [49.28153, -123.03084],
+      CASSIAR_HASTINGS_NE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.cassiar.name],
+    description: "hastings to cambridge",
+    type: "quiet",
+    videos: [VIDEOS.cassiarSb.id],
+    positions: [
+      CASSIAR_HASTINGS_NE,
       [49.28206, -123.03083],
       [49.28295, -123.03087],
       [49.28385, -123.03088],
@@ -32,6 +54,15 @@ export const CASSIAR = [
       [49.28634, -123.03032],
       [49.28658, -123.03016],
       [49.2867, -123.02997],
+      CASSIAR_CAMBRIDGE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.cassiar.name],
+    description: "path",
+    type: "mixed",
+    videos: [VIDEOS.cassiarSb.id],
+    positions: [
       CASSIAR_CAMBRIDGE,
       [49.28701, -123.02974],
       [49.28743, -123.0292],

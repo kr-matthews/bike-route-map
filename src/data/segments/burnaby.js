@@ -25,6 +25,7 @@ export const BURNABY = [
   {
     routeNames: [ROUTES.burnaby.name],
     description: "crossing burrard",
+    type: "quiet",
     videos: [VIDEOS.burrardNb.id],
     videosEndAtStart: [VIDEOS.burrardNb.id],
     positions: [BURRARD_BURNABY_W, BURRARD_BURNABY_E],

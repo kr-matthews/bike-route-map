@@ -4,6 +4,7 @@ import { VIDEOS } from "../videos";
 
 const GLADSTONE_30TH_S = [49.2428, -123.06268];
 const GLADSTONE_KINGSWAY_N = [49.24359, -123.06178];
+const GLADSTONE_STAINSBURY_N = [49.25002, -123.06033];
 
 export const GLADSTONE = [
   {
@@ -62,7 +63,16 @@ export const GLADSTONE = [
       [49.24812, -123.0605],
       [49.24886, -123.06048],
       [49.24995, -123.06044],
-      [49.25002, -123.06033],
+      GLADSTONE_STAINSBURY_N,
+    ],
+  },
+  {
+    routeNames: [ROUTES.gladstone.name],
+    description: "path near bc parkway",
+    type: "mixed",
+    videos: [VIDEOS.gladstoneNb.id],
+    positions: [
+      GLADSTONE_STAINSBURY_N,
       [49.24998, -123.06024],
       [49.24995, -123.06011],
       [49.24988, -123.05989],

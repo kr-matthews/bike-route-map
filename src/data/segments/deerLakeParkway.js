@@ -87,6 +87,7 @@ export const DEER_LAKE_PARKWAY = [
   {
     routeNames: [ROUTES.deerLakeParkway.name, ROUTES.midtown.name],
     description: "crossing gilpin",
+    type: "mixed",
     videos: [VIDEOS.deerLakePkwyEb.id, VIDEOS.midtownBurnabyWb.id],
     positions: [DEER_LAKE_GILPIN_W, DEER_LAKE_GILPIN_SW],
   },

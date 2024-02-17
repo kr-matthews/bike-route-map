@@ -386,11 +386,13 @@ export const CANADA_LINE = [
   {
     routeNames: [ROUTES.canadaLine.name],
     description: "63rd to 64th",
+    type: "dedicated",
     videos: [VIDEOS.sixtySeventhPlusWb.id],
     positions: [CAMBIE_PATH_64TH, CAMBIE_PATH_63RD],
   },
   {
     description: "63rd connection to ontario",
+    type: "quiet",
     videos: [VIDEOS.sixtySeventhPlusWb.id],
     videosStartAtEnd: [VIDEOS.sixtySeventhPlusWb.id],
     positions: [
@@ -404,6 +406,7 @@ export const CANADA_LINE = [
   },
   {
     description: "64th connection to heather",
+    type: "quiet",
     videos: [VIDEOS.sixtySeventhPlusWb.id],
     positions: [
       HEATHER_64TH,
@@ -416,6 +419,7 @@ export const CANADA_LINE = [
   },
   {
     description: "trivial connection to cambie at 63rd",
+    type: "quiet",
     positions: [CAMBIE_63RD_E, CAMBIE_PATH_63RD],
   },
 ];

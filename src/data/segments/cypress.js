@@ -35,12 +35,14 @@ export const CYPRESS = [
   {
     routeNames: [ROUTES.cypress.name],
     description: "cornish",
+    type: "quiet",
     videos: [VIDEOS.cypressNb.id],
     positions: [MARINE_70TH_N, CORNISH_68TH],
   },
   {
     routeNames: [ROUTES.cypress.name],
     description: "68th to king edward",
+    type: "quiet",
     videos: [VIDEOS.cypressNb.id],
     positions: [
       ADERA_68TH,
@@ -84,6 +86,7 @@ export const CYPRESS = [
   {
     routeNames: [ROUTES.cypress.name],
     description: "angus to 1st",
+    type: "quiet",
     videos: [VIDEOS.cypressNb.id],
     positions: [
       ANGUS_MATTHEWS_W,
@@ -110,6 +113,7 @@ export const CYPRESS = [
   {
     routeNames: [ROUTES.cypress.name],
     description: "north end",
+    type: "quiet",
     videos: [VIDEOS.cypressNb.id],
     videosEndAtEnd: [VIDEOS.cypressNb.id],
     positions: [
@@ -124,6 +128,7 @@ export const CYPRESS = [
   {
     routeNames: [ROUTES.cypress.name],
     description: "angus median nb",
+    type: "quiet",
     oneWay: "required",
     videos: [VIDEOS.cypressNb.id],
     positions: [
@@ -138,6 +143,7 @@ export const CYPRESS = [
   {
     routeNames: [ROUTES.cypress.name],
     description: "crossing angus at matthews",
+    type: "quiet",
     oneWay: "recommended",
     hideArrows: true,
     videos: [VIDEOS.cypressNb.id],
@@ -146,6 +152,7 @@ export const CYPRESS = [
   {
     routeNames: [ROUTES.cypress.name],
     description: "angus median sb",
+    type: "quiet",
     oneWay: "required",
     positions: [
       ANGUS_MATTHEWS_W,
@@ -159,6 +166,7 @@ export const CYPRESS = [
   {
     routeNames: [ROUTES.cypress.name, ROUTES.seasideBypass.name],
     description: "1st to york",
+    type: "dedicated",
     oneWay: "required",
     videos: [VIDEOS.cypressNb.id],
     positions: [CYPRESS_1ST, CYPRESS_1ST_NE, CYPRESS_YORK_SE],
@@ -166,6 +174,7 @@ export const CYPRESS = [
   {
     routeNames: [ROUTES.cypress.name],
     description: "york to cornwall",
+    type: "dedicated",
     oneWay: "required",
     videos: [VIDEOS.cypressNb.id],
     positions: [CYPRESS_YORK_SE, CYPRESS_CORNWALL_SE],
@@ -173,18 +182,21 @@ export const CYPRESS = [
   {
     routeNames: [ROUTES.cypress.name],
     description: "crossing cornwall",
+    type: "dedicated",
     videos: [VIDEOS.cypressNb.id],
     positions: [CYPRESS_CORNWALL_SE, CYPRESS_CORNWALL_N],
   },
   {
     routeNames: [ROUTES.cypress.name],
     description: "cornwall to york",
+    type: "dedicated",
     oneWay: "required",
     positions: [CYPRESS_CORNWALL_N, CYPRESS_CORNWALL_SW, CYPRESS_YORK_SW],
   },
   {
     routeNames: [ROUTES.cypress.name, ROUTES.seasideBypass.name],
     description: "york to 1st",
+    type: "dedicated",
     oneWay: "required",
     videos: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
     videosStartAtStart: [VIDEOS.seasideBypassFalseCreekSouthEb.id],

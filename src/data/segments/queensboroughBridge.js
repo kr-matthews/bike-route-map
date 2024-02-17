@@ -35,6 +35,7 @@ export const QUEENSBOROUGH_BRIDGE = [
   {
     routeNames: [ROUTES.queensboroughBridge.name, ROUTES.bcParkway.name],
     description: "from 7th",
+    type: "mixed",
     elevation: 0.5,
     videos: [VIDEOS.bcParkwayNewWestminsterWb.id],
     positions: [
@@ -46,6 +47,7 @@ export const QUEENSBOROUGH_BRIDGE = [
   {
     routeNames: [ROUTES.queensboroughBridge.name, ROUTES.bcParkway.name],
     description: "loops overpass",
+    type: "mixed",
     elevation: 1,
     videos: [VIDEOS.bcParkwayNewWestminsterWb.id],
     positions: [
@@ -56,6 +58,7 @@ export const QUEENSBOROUGH_BRIDGE = [
   {
     routeNames: [ROUTES.queensboroughBridge.name, ROUTES.bcParkway.name],
     description: "queensborough dog area",
+    type: "mixed",
     elevation: 0.5,
     videos: [VIDEOS.bcParkwayNewWestminsterWb.id],
     positions: [
@@ -74,6 +77,7 @@ export const QUEENSBOROUGH_BRIDGE = [
   {
     routeNames: [ROUTES.queensboroughBridge.name, ROUTES.bcParkway.name],
     description: "queensborough bridge sidewalk",
+    type: "mixed",
     elevation: 1,
     videos: [VIDEOS.bcParkwayNewWestminsterWb.id],
     positions: [
@@ -85,6 +89,7 @@ export const QUEENSBOROUGH_BRIDGE = [
   {
     routeNames: [ROUTES.queensboroughBridge.name, ROUTES.bcParkway.name],
     description: "queensborough bridge post-sidewalk",
+    type: "mixed",
     elevation: 0.5,
     videos: [VIDEOS.bcParkwayNewWestminsterWb.id],
     positions: [QUEENSBOROUGH_ELEVATION_END, QUEENSBOROUGH_STEWARDSON_W],

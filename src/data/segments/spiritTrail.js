@@ -5,23 +5,31 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const ARGYLE_16TH = [49.32727, -123.15891];
+const ARGYLE_14TH = [49.32714, -123.15455];
 const CAPILANO_BRIDGE_WEST = [49.32468, -123.13366];
 const CAPILANO_BRIDGE_EAST = [49.32425, -123.13265];
 const AFTER_LIONS_GATE = [49.32322, -123.13118];
 const MACKAY_OVERPASS_START = [49.31798, -123.10242];
 const MACKAY_OVERPASS_END = [49.31676, -123.10163];
-const CHESTERFIELD_CARRIE_CATES_SW = [49.31169, -123.08343];
+const SPIRIT_MAHON_S = [49.31282, -123.08662];
+const SPIRIT_MAHON_N = [49.31321, -123.08622];
+const CARRIE_CATES_LANE_W = [49.31215, -123.08435];
+const CHESTERFIELD_CARRIE_CATES_SW = [49.31173, -123.0834];
 const QUAY_UNDERGROUND_WEST = [49.31148, -123.08236];
 const QUAY_UNDERGROUND_EAST = [49.31113, -123.08152];
 const SAINT_DAVIDS_ALDER_W = [49.30596, -123.06662];
+const SAINT_DAVIDS_1ST_E = [49.30675, -123.066];
+const SPIRIT_ALDER_E = [49.30648, -123.06235];
 const RIDGEWAY_1ST = [49.30688, -123.06265];
+const FIRST_2ND = [49.30753, -123.06148];
 const E_3RD_OVERPASS_WEST = [49.30834, -123.05099];
 const E_3RD_OVERPASS_EAST = [49.30862, -123.05059];
 
 export const SPIRIT_TRAIL = [
   {
     routeNames: [ROUTES.spiritTrail.name],
-    description: "west of capilano river",
+    description: "to 16th",
     type: "comfortable",
     elevation: 0.5,
     positions: [
@@ -30,12 +38,30 @@ export const SPIRIT_TRAIL = [
       [49.32728, -123.16038],
       [49.32729, -123.16012],
       [49.32728, -123.15899],
-      [49.32727, -123.15891],
+      ARGYLE_16TH,
+    ],
+  },
+  {
+    routeNames: [ROUTES.spiritTrail.name],
+    description: "argyle: 16th to 14th",
+    type: "quiet",
+    elevation: 0.5,
+    positions: [
+      ARGYLE_16TH,
       [49.32725, -123.15886],
       [49.32724, -123.15876],
       [49.32719, -123.15679],
       [49.32715, -123.15458],
-      [49.32714, -123.15455],
+      ARGYLE_14TH,
+    ],
+  },
+  {
+    routeNames: [ROUTES.spiritTrail.name],
+    description: "14th to bridge st",
+    type: "comfortable",
+    elevation: 0.5,
+    positions: [
+      ARGYLE_14TH,
       [49.3271, -123.15451],
       [49.32709, -123.15432],
       [49.32695, -123.15331],
@@ -281,7 +307,7 @@ export const SPIRIT_TRAIL = [
   },
   {
     routeNames: [ROUTES.spiritTrail.name],
-    description: "mackay to chesterfield",
+    description: "mackay to mahon",
     type: "comfortable",
     elevation: 0.5,
     positions: [
@@ -355,16 +381,32 @@ export const SPIRIT_TRAIL = [
       [49.31308, -123.08711],
       [49.31297, -123.08704],
       [49.3128, -123.0869],
-      [49.31282, -123.08662],
-      [49.31314, -123.0863],
-      [49.31321, -123.08622],
+      SPIRIT_MAHON_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.spiritTrail.name],
+    description: "mahon",
+    type: "quiet",
+    positions: [SPIRIT_MAHON_S, [49.31314, -123.0863], SPIRIT_MAHON_N],
+  },
+  {
+    routeNames: [ROUTES.spiritTrail.name],
+    description: "mahon to lane",
+    type: "comfortable",
+    positions: [
+      SPIRIT_MAHON_N,
       [49.31298, -123.0859],
       [49.31263, -123.08534],
       [49.31242, -123.08496],
-      [49.31215, -123.08435],
-      [49.31173, -123.0834],
-      CHESTERFIELD_CARRIE_CATES_SW,
+      CARRIE_CATES_LANE_W,
     ],
+  },
+  {
+    routeNames: [ROUTES.spiritTrail.name],
+    description: "lane to chesterfield",
+    type: "quiet",
+    positions: [CARRIE_CATES_LANE_W, CHESTERFIELD_CARRIE_CATES_SW],
   },
   {
     routeNames: [ROUTES.spiritTrail.name],
@@ -373,6 +415,7 @@ export const SPIRIT_TRAIL = [
     elevation: -0.5,
     positions: [
       CHESTERFIELD_CARRIE_CATES_SW,
+      [49.31169, -123.08343],
       [49.31163, -123.0833],
       [49.31164, -123.08321],
       [49.31175, -123.0831],
@@ -444,7 +487,7 @@ export const SPIRIT_TRAIL = [
   {
     routeNames: [ROUTES.spiritTrail.name],
     description: "alder",
-    type: "comfortable",
+    type: "quiet",
     positions: [
       SAINT_DAVIDS_ALDER_W,
       [49.3059, -123.0665],
@@ -453,7 +496,15 @@ export const SPIRIT_TRAIL = [
       [49.3059, -123.06612],
       [49.306, -123.06541],
       [49.30613, -123.06437],
-      [49.30648, -123.06235],
+      SPIRIT_ALDER_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.spiritTrail.name],
+    description: "alder to 1st squiggle",
+    type: "comfortable",
+    positions: [
+      SPIRIT_ALDER_E,
       [49.30661, -123.06243],
       [49.30662, -123.06246],
       [49.30661, -123.06252],
@@ -472,7 +523,7 @@ export const SPIRIT_TRAIL = [
   },
   {
     routeNames: [ROUTES.spiritTrail.name],
-    description: "1st",
+    description: "saint davids",
     type: "comfortable",
     positions: [
       SAINT_DAVIDS_ALDER_W,
@@ -494,7 +545,15 @@ export const SPIRIT_TRAIL = [
       [49.30651, -123.06618],
       [49.30651, -123.06603],
       [49.30657, -123.066],
-      [49.30675, -123.066],
+      SAINT_DAVIDS_1ST_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.spiritTrail.name],
+    description: "1st: saint davids to squiggle",
+    type: "quiet",
+    positions: [
+      SAINT_DAVIDS_1ST_E,
       [49.30672, -123.0633],
       [49.30673, -123.06319],
       [49.30676, -123.06309],
@@ -503,16 +562,24 @@ export const SPIRIT_TRAIL = [
   },
   {
     routeNames: [ROUTES.spiritTrail.name],
-    description: "1st to 3rd overpass",
-    type: "comfortable",
-    elevation: 0.5,
+    description: "1st: squiggle to 2nd",
+    type: "quiet",
     positions: [
       RIDGEWAY_1ST,
       [49.30716, -123.06166],
       [49.3072, -123.06157],
       [49.30725, -123.0615],
       [49.3073, -123.06147],
-      [49.30753, -123.06148],
+      FIRST_2ND,
+    ],
+  },
+  {
+    routeNames: [ROUTES.spiritTrail.name],
+    description: "1st to 3rd overpass",
+    type: "comfortable",
+    elevation: 0.5,
+    positions: [
+      FIRST_2ND,
       [49.30753, -123.0604],
       [49.30754, -123.06034],
       [49.30756, -123.06031],

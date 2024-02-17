@@ -67,7 +67,7 @@ export const SIXTEENTH = [
   {
     routeNames: [ROUTES.sixteenth.name],
     description: "eb: crossing east mall",
-    type: "comfortable",
+    type: "mixed",
     oneWay: "required",
     positions: [
       EB_BEFORE_EAST_MALL,
@@ -96,25 +96,28 @@ export const SIXTEENTH = [
   {
     routeNames: [ROUTES.sixteenth.name],
     description: "eb: before wesbrook",
-    type: "comfortable",
+    type: "mixed",
     oneWay: "required",
     positions: [EB_BEFORE_WESBROOK, [49.25539, -123.23695], WESBROOK_16TH_WS],
   },
   {
     routeNames: [ROUTES.sixteenth.name, ROUTES.wesbrook.name],
     description: "eb: wesbrook SW",
+    type: "mixed",
     oneWay: "recommended",
     positions: [WESBROOK_16TH_WS, WESBROOK_16TH_SW],
   },
   {
     routeNames: [ROUTES.sixteenth.name],
     description: "eb: crossing wesbrook",
+    type: "mixed",
     oneWay: "recommended",
     positions: [WESBROOK_16TH_SW, WESBROOK_16TH_SE],
   },
   {
     routeNames: [ROUTES.sixteenth.name, ROUTES.wesbrook.name],
     description: "eb: wesbrook SE",
+    type: "mixed",
     oneWay: "recommended",
     positions: [
       WESBROOK_16TH_SE,
@@ -126,6 +129,7 @@ export const SIXTEENTH = [
   {
     routeNames: [ROUTES.sixteenth.name],
     description: "eb: after wesbrook",
+    type: "mixed",
     oneWay: "required",
     positions: [WESBROOK_16TH_ES, EB_AFTER_WESBROOK],
   },
@@ -194,24 +198,28 @@ export const SIXTEENTH = [
   {
     routeNames: [ROUTES.sixteenth.name],
     description: "wb: before wesbrook",
+    type: "mixed",
     oneWay: "required",
     positions: [WB_BEFORE_WESBROOK, WESBROOK_16TH_EN],
   },
   {
     routeNames: [ROUTES.sixteenth.name, ROUTES.wesbrook.name],
     description: "wb: wesbrook NE",
+    type: "mixed",
     oneWay: "recommended",
     positions: [WESBROOK_16TH_EN, [49.25607, -123.23631], WESBROOK_16TH_NE],
   },
   {
     routeNames: [ROUTES.sixteenth.name],
     description: "wb: crossing wesbrook",
+    type: "mixed",
     oneWay: "recommended",
     positions: [WESBROOK_16TH_NE, WESBROOK_16TH_NW],
   },
   {
     routeNames: [ROUTES.sixteenth.name, ROUTES.wesbrook.name],
     description: "wb: wesbrook NW",
+    type: "mixed",
     oneWay: "recommended",
     positions: [
       WESBROOK_16TH_NW,
@@ -223,6 +231,7 @@ export const SIXTEENTH = [
   {
     routeNames: [ROUTES.sixteenth.name],
     description: "wb: after wesbrook",
+    type: "mixed",
     oneWay: "required",
     positions: [WESBROOK_16TH_WN, [49.25556, -123.23734], WB_AFTER_WESBROOK],
   },
@@ -236,6 +245,7 @@ export const SIXTEENTH = [
   {
     routeNames: [ROUTES.sixteenth.name],
     description: "wb: crossing east mall",
+    type: "mixed",
     oneWay: "required",
     positions: [
       WB_BEFORE_EAST_MALL,

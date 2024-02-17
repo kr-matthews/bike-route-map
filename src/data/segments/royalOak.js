@@ -10,6 +10,8 @@ import { VIDEOS } from "../videos";
 
 const ROYAL_OAK_SANDERS_NW = [49.22801, -122.9891];
 const MARLBOROUGH_SANDERS_NE = [49.228, -122.99144];
+const ROYAL_OAK_MAITLAND = [49.23102, -122.98895];
+const ROYAL_OAK_SIDE_STREET_N = [49.23519, -122.98894];
 
 export const ROYAL_OAK = [
   {
@@ -50,10 +52,9 @@ export const ROYAL_OAK = [
   },
   {
     routeNames: [ROUTES.royalOak.name],
-    description: "all",
-    type: "comfortable",
+    description: "sanders to maitland",
+    type: "mixed",
     videos: [VIDEOS.royalOakSb.id],
-    videosStartAtEnd: [VIDEOS.royalOakSb.id],
     positions: [
       ROYAL_OAK_SANDERS_NW,
       [49.22806, -122.9891],
@@ -66,10 +67,30 @@ export const ROYAL_OAK = [
       [49.23039, -122.98903],
       [49.2305, -122.98901],
       [49.23079, -122.98897],
-      [49.23102, -122.98895],
+      ROYAL_OAK_MAITLAND,
+    ],
+  },
+  {
+    routeNames: [ROUTES.royalOak.name],
+    description: "maitland to trail",
+    type: "quiet",
+    videos: [VIDEOS.royalOakSb.id],
+    positions: [
+      ROYAL_OAK_MAITLAND,
       [49.23145, -122.98892],
       [49.23296, -122.98892],
       [49.23442, -122.98893],
+      ROYAL_OAK_SIDE_STREET_N,
+    ],
+  },
+  {
+    routeNames: [ROUTES.royalOak.name],
+    description: "trail north end",
+    type: "comfortable",
+    videos: [VIDEOS.royalOakSb.id],
+    videosStartAtEnd: [VIDEOS.royalOakSb.id],
+    positions: [
+      ROYAL_OAK_SIDE_STREET_N,
       [49.23556, -122.98894],
       [49.23626, -122.98891],
       [49.23654, -122.98894],

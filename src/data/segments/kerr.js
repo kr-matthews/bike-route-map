@@ -20,7 +20,7 @@ export const KERR = [
   {
     routeNames: [ROUTES.kerr.name],
     description: "south tip",
-    type: "dedicated",
+    type: "mixed",
     videos: [VIDEOS.kerrSb.id],
     videosEndAtStart: [VIDEOS.kerrSb.id],
     positions: [

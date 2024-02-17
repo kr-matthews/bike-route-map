@@ -40,6 +40,7 @@ export const LAKES = [
   {
     routeNames: [ROUTES.lakes.name],
     description: "southeast to midtown",
+    type: "quiet",
     positions: [
       MARY_12TH,
       [49.21697, -122.93885],
@@ -152,15 +153,23 @@ export const LAKES = [
   },
   {
     routeNames: [ROUTES.lakes.name],
-    description: "kensington to cvg",
-    type: "comfortable",
+    description: "kensington to joe sakic",
+    type: "quiet",
     positions: [
       KENSINGTON_SPROTT_W,
       KENSINGTON_SPROTT_E,
       [49.24993, -122.96466],
       [49.25211, -122.96465],
       SPERLING_JOE_SAKIC_N,
-      [49.25465, -122.96465],
+    ],
+  },
+  {
+    routeNames: [ROUTES.lakes.name],
+    description: "joe sakic to cvg",
+    type: "mixed",
+    positions: [
+      SPERLING_JOE_SAKIC_N,
+      [49.25465, -122.96467],
       [49.25594, -122.96466],
       [49.25641, -122.96465],
       [49.25671, -122.96464],
@@ -217,7 +226,7 @@ export const LAKES = [
   {
     routeNames: [ROUTES.lakes.name],
     description: "sperling to union",
-    type: "comfortable",
+    type: "quiet",
     positions: [
       SPERLING_ADAIR,
       [49.26436, -122.95912],
@@ -234,6 +243,7 @@ export const LAKES = [
   {
     routeNames: [ROUTES.lakes.name, ROUTES.francesUnion.name],
     description: "north of union",
+    type: "quiet",
     positions: [CLIFF_UNION, [49.27974, -122.95894], CLIFF_BRUNETTE_FRASER],
   },
 ];

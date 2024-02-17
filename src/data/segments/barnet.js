@@ -10,10 +10,14 @@ import { ROUTES } from "../routes";
 const BARNET_VIEW_E = [49.27971, -122.86651];
 const BARNET_VIEW_W = [49.27966, -122.86701];
 const BARNET_UNION = [49.28608, -122.86771];
+const SHORT_N = [49.27946, -122.86543];
+
+const TRANS_CANADA_SHOULDER_W = [49.2873, -122.8986];
+const TRANS_CANADA_SHOULDER_E = [49.28808, -122.89701];
 
 export const BARNET = [
   {
-    description: "connection to spring st",
+    description: "connection to spring st part 1",
     type: "comfortable",
     positions: [
       BARNET_VIEW_W,
@@ -40,7 +44,14 @@ export const BARNET = [
       [49.27961, -122.86605],
       [49.27955, -122.86567],
       [49.27947, -122.86556],
-      [49.27946, -122.86543],
+      SHORT_N,
+    ],
+  },
+  {
+    description: "connection to spring st part 2",
+    type: "quiet",
+    positions: [
+      SHORT_N,
       [49.2794, -122.86536],
       [49.27921, -122.865],
       [49.27904, -122.86463],
@@ -54,10 +65,11 @@ export const BARNET = [
       [49.2772, -122.8641],
     ],
   },
+
   {
     routeNames: [ROUTES.barnet.name],
-    description: "eb: ridge-ish to sidewalk",
-    type: "shoulder", // well, trans-canada brief overlap is dedicated
+    description: "eb: ridge-ish to trans canada",
+    type: "shoulder",
     oneWay: "required",
     positions: [
       [49.28259, -122.95641],
@@ -149,9 +161,29 @@ export const BARNET = [
       [49.28687, -122.9001],
       [49.2871, -122.89927],
       [49.28726, -122.8988],
-      [49.2873, -122.8986],
+      TRANS_CANADA_SHOULDER_W,
+    ],
+  },
+
+  {
+    routeNames: [ROUTES.barnet.name],
+    description: "eb: trans canada",
+    type: "dedicated",
+    oneWay: "recommended",
+    positions: [
+      TRANS_CANADA_SHOULDER_W,
       [49.28775, -122.8976],
-      [49.28808, -122.89701],
+      TRANS_CANADA_SHOULDER_E,
+    ],
+  },
+
+  {
+    routeNames: [ROUTES.barnet.name],
+    description: "eb: trans canada to sidewalk",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
+      TRANS_CANADA_SHOULDER_E,
       [49.2882, -122.89689],
       [49.2884, -122.89652],
       [49.28897, -122.89552],

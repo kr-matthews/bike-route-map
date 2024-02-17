@@ -11,6 +11,7 @@ const SUSSEX_GRANGE_N = [49.23005, -122.99778];
 const WAYBURNE_DEER_LAKE_SE = [49.24157, -122.99795];
 const WAYBURNE_NB_LANE_START = [49.24767, -122.99801];
 const WAYBURNE_NB_LANE_END = [49.25169, -122.99529];
+const SUSSEX_HARKEN = [49.23942, -122.99786];
 
 export const NORTH_SOUTH = [
   {
@@ -64,7 +65,16 @@ export const NORTH_SOUTH = [
       [49.23547, -122.99783],
       [49.23703, -122.99785],
       [49.23863, -122.99787],
-      [49.23942, -122.99786],
+      SUSSEX_HARKEN,
+    ],
+  },
+  {
+    routeNames: [ROUTES.northSouth.name],
+    description: "through forest",
+    type: "mixed",
+    videos: [VIDEOS.northSouthSb.id],
+    positions: [
+      SUSSEX_HARKEN,
       [49.23968, -122.99789],
       [49.23992, -122.99789],
       [49.24016, -122.9979],

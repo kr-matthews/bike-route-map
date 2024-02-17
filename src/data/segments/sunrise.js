@@ -27,6 +27,7 @@ export const SUNRISE = [
   {
     routeNames: [ROUTES.sunrise.name],
     description: "kent to marine",
+    type: "quiet",
     videos: [VIDEOS.sunriseNb.id],
     positions: [ELLIOTT_KENT, ELLIOTT_MARINE],
   },
@@ -48,7 +49,8 @@ export const SUNRISE = [
   },
   {
     routeNames: [ROUTES.sunrise.name],
-    description: "kent to ridgeway",
+    description: "elliott to ridgeway",
+    type: "quiet",
     videos: [VIDEOS.sunriseNb.id],
     positions: [
       ELLIOTT_VIVIAN,
@@ -71,6 +73,7 @@ export const SUNRISE = [
   {
     routeNames: [ROUTES.sunrise.name],
     description: "ridgeway to midtown",
+    type: "quiet",
     videos: [VIDEOS.sunriseNb.id],
     positions: [
       EARLES_45TH,
@@ -83,6 +86,7 @@ export const SUNRISE = [
   {
     routeNames: [ROUTES.sunrise.name, ROUTES.midtown.name],
     description: "earles to kingsway",
+    type: "quiet",
     videos: [VIDEOS.sunriseNb.id, VIDEOS.midtownVancouverEb.id],
     positions: [EARLES_38TH, KINGSWAY_EARLES],
   },
@@ -113,6 +117,7 @@ export const SUNRISE = [
   {
     routeNames: [ROUTES.sunrise.name],
     description: "22nd to adanac",
+    type: "quiet",
     videos: [VIDEOS.sunriseNb.id],
     positions: [
       SLOCAN_22ND_N,
@@ -138,6 +143,7 @@ export const SUNRISE = [
   {
     routeNames: [ROUTES.sunrise.name],
     description: "adanac to wall",
+    type: "quiet",
     videos: [VIDEOS.sunriseNb.id],
     videosEndAtEnd: [VIDEOS.sunriseNb.id],
     positions: [

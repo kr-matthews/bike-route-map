@@ -13,6 +13,7 @@ import { VIDEOS } from "../videos";
 
 const FRASERVIEW_START = [49.20832, -123.07006];
 const VICTORIA_FRASER_RIVER = [49.20683, -123.06619];
+const VICTORIA_KENT_S = [49.20721, -123.06619];
 const RIVER_DISTRICT_CROSSING_FRASER_RIVER = [49.20301, -123.03199];
 
 const EAST_OF_ELLIOTT = [49.20553, -123.05646];
@@ -138,9 +139,14 @@ export const FRASER_RIVER_TRAIL = [
     ],
   },
   {
-    description: "victoria st connection",
-    type: "comfortable",
-    positions: [VICTORIA_FRASER_RIVER, [49.20721, -123.06619], VICTORIA_KENT_N],
+    description: "victoria st connection path",
+    type: "mixed",
+    positions: [VICTORIA_FRASER_RIVER, VICTORIA_KENT_S],
+  },
+  {
+    description: "victoria st connection road",
+    type: "quiet",
+    positions: [VICTORIA_KENT_S, VICTORIA_KENT_N],
   },
   {
     description: "from kent to fraserview portion",
@@ -239,6 +245,7 @@ export const FRASER_RIVER_TRAIL = [
   {
     routeNames: [ROUTES.fraserRiverTrail.name],
     description: "fraserview - elliott to kerr",
+    type: "comfortable",
     videos: [VIDEOS.fraserRiverFraserviewEb.id],
     videosEndAtEnd: [VIDEOS.fraserRiverFraserviewEb.id],
     positions: [
@@ -297,6 +304,7 @@ export const FRASER_RIVER_TRAIL = [
   },
   {
     routeNames: [ROUTES.fraserRiverTrail.name],
+    type: "mixed",
     description: "river district - kerr to boundary",
     positions: [
       KERR_FRASER_TRAIL,
@@ -355,6 +363,7 @@ export const FRASER_RIVER_TRAIL = [
   {
     routeNames: [ROUTES.fraserRiverTrail.name],
     description: "river district - dudley creek bump",
+    type: "mixed",
     positions: [
       DUDLEY_CREEK_W,
       [49.20267, -123.0282],

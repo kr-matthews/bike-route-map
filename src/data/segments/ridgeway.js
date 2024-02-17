@@ -33,6 +33,7 @@ export const RIDGEWAY = [
   {
     routeNames: [ROUTES.ridgeway.name],
     description: "off broadway to balaclava",
+    type: "quiet",
     videos: [VIDEOS.ridgewayWb.id],
     positions: [
       DISCOVERY_8TH,
@@ -63,6 +64,7 @@ export const RIDGEWAY = [
   {
     routeNames: [ROUTES.ridgeway.name, ROUTES.balaclava.name],
     description: "ridgeway main",
+    type: "quiet",
     videos: [VIDEOS.balaclavaNb.id, VIDEOS.ridgewayWb.id],
     positions: [
       QUESNEL_20TH,
@@ -76,6 +78,7 @@ export const RIDGEWAY = [
   {
     routeNames: [ROUTES.ridgeway.name],
     description: "extra bit",
+    type: "quiet",
     positions: [
       CARNARVON_31ST,
       [49.24424, -123.17575],
@@ -87,6 +90,7 @@ export const RIDGEWAY = [
   {
     routeNames: [ROUTES.ridgeway.name],
     description: "balaclava to king edward",
+    type: "quiet",
     videos: [VIDEOS.ridgewayWb.id],
     positions: [
       BALACLAVA_QUESNEL,
@@ -114,6 +118,7 @@ export const RIDGEWAY = [
   {
     routeNames: [ROUTES.ridgeway.name],
     description: "mackenzie to puget",
+    type: "quiet",
     videos: [VIDEOS.ridgewayWb.id],
     positions: [
       MACKENZIE_QUESNEL,
@@ -143,6 +148,7 @@ export const RIDGEWAY = [
   {
     routeNames: [ROUTES.ridgeway.name],
     description: "narvaez",
+    type: "quiet",
     videos: [VIDEOS.ridgewayWb.id],
     positions: [
       PUGET_NARVAEZ,
@@ -161,6 +167,7 @@ export const RIDGEWAY = [
   {
     routeNames: [ROUTES.ridgeway.name],
     description: "33rd to midtown",
+    type: "quiet",
     videos: [VIDEOS.ridgewayWb.id],
     positions: [
       VINE_33RD,
@@ -176,6 +183,7 @@ export const RIDGEWAY = [
   {
     routeNames: [ROUTES.ridgeway.name],
     description: "nanaimo",
+    type: "quiet",
     videos: [VIDEOS.ridgewayWb.id],
     positions: [
       NANAIMO_38TH,
@@ -188,18 +196,21 @@ export const RIDGEWAY = [
   {
     routeNames: [ROUTES.ridgeway.name],
     description: "nanaimo to sunrise",
+    type: "quiet",
     videos: [VIDEOS.ridgewayWb.id, VIDEOS.fortyFifthWb.id],
     positions: [NANAIMO_45TH, [49.22939, -123.05492], WALES_45TH, VIVIAN_45TH],
   },
   {
     routeNames: [ROUTES.ridgeway.name, ROUTES.sunrise.name],
     description: "sunrise",
+    type: "quiet",
     videos: [VIDEOS.ridgewayWb.id, VIDEOS.fortyFifthWb.id, VIDEOS.sunriseNb.id],
     positions: [VIVIAN_45TH, EARLES_45TH],
   },
   {
     routeNames: [ROUTES.ridgeway.name],
     description: "sunrise to boundary",
+    type: "quiet",
     videos: [VIDEOS.ridgewayWb.id, VIDEOS.fortyFifthWb.id],
     videosStartAtEnd: [VIDEOS.ridgewayWb.id, VIDEOS.fortyFifthWb.id],
     positions: [

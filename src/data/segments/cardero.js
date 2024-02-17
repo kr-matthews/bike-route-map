@@ -16,6 +16,7 @@ import { VIDEOS } from "../videos";
 export const CARDERO = [
   {
     routeNames: [ROUTES.cardero.name],
+    type: "dedicated",
     description: "seawall to beach",
     isClosed: true,
     positions: [
@@ -28,7 +29,7 @@ export const CARDERO = [
   {
     routeNames: [ROUTES.cardero.name],
     description: "primary",
-    type: "comfortable",
+    type: "quiet",
     videos: [VIDEOS.carderoNb.id],
     videosStartAtStart: [VIDEOS.carderoNb.id],
     videosEndAtEnd: [VIDEOS.carderoNb.id],

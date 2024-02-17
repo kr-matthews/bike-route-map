@@ -1,16 +1,33 @@
-import { ASH_WILLIAMS_N, ASH_WILLIAMS_S } from "../intersections";
+import {
+  ASH_WILLIAMS_N,
+  ASH_WILLIAMS_S,
+  BIRCH_WESTMINSTER_S,
+} from "../intersections";
 import { ROUTES } from "../routes";
+
+const WALTER_LEE_S = [49.14448, -123.11973];
+const WALTER_LEE_N = [49.14663, -123.11908];
+const ASH_GRANVILLE_NW = [49.16289, -123.11994];
+const ALDER_ALBERTA_SE = [49.16569, -123.11924];
 
 export const PARKSIDE = [
   {
     routeNames: [ROUTES.parkside.name],
-    description: "all",
-    type: "comfortable",
+    description: "williams to walter lee",
+    type: "quiet",
     positions: [
       ASH_WILLIAMS_S,
       ASH_WILLIAMS_N,
       [49.14316, -123.11977],
-      [49.14448, -123.11973],
+      WALTER_LEE_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.parkside.name],
+    description: "through walter lee",
+    type: "mixed",
+    positions: [
+      WALTER_LEE_S,
       [49.14449, -123.11932],
       [49.14454, -123.11911],
       [49.14459, -123.11898],
@@ -31,7 +48,15 @@ export const PARKSIDE = [
       [49.14615, -123.11906],
       [49.1462, -123.11909],
       [49.14627, -123.1191],
-      [49.14663, -123.11908],
+      WALTER_LEE_N,
+    ],
+  },
+  {
+    routeNames: [ROUTES.parkside.name],
+    description: "walter lee to granville",
+    type: "quiet",
+    positions: [
+      WALTER_LEE_N,
       [49.14664, -123.11983],
       [49.1481, -123.11977],
       [49.15004, -123.11977],
@@ -46,7 +71,15 @@ export const PARKSIDE = [
       [49.15699, -123.11978],
       [49.15915, -123.1198],
       [49.16279, -123.11985],
-      [49.16289, -123.11994],
+      ASH_GRANVILLE_NW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.parkside.name],
+    description: "granville to alberta",
+    type: "mixed",
+    positions: [
+      ASH_GRANVILLE_NW,
       [49.16289, -123.12018],
       [49.16299, -123.12043],
       [49.16345, -123.12042],
@@ -59,7 +92,15 @@ export const PARKSIDE = [
       [49.16515, -123.11953],
       [49.16515, -123.11922],
       [49.16564, -123.11922],
-      [49.16569, -123.11924],
+      ALDER_ALBERTA_SE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.parkside.name],
+    description: "alberta to westminster",
+    type: "quiet",
+    positions: [
+      ALDER_ALBERTA_SE,
       [49.16576, -123.11935],
       [49.1663, -123.11933],
       [49.16653, -123.11952],
@@ -72,7 +113,7 @@ export const PARKSIDE = [
       [49.16728, -123.11686],
       [49.16755, -123.11686],
       [49.16864, -123.11685],
-      [49.17005, -123.11685], // BIRCH_WESTMINSTER_S
+      BIRCH_WESTMINSTER_S,
     ],
   },
 ];

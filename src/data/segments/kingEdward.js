@@ -31,6 +31,7 @@ export const KING_EDWARD = [
   },
   {
     description: "crossing king edward",
+    type: "dedicated",
     oneWay: "recommended",
     positions: [
       [49.24913, -123.11569],

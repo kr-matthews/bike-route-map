@@ -7,6 +7,9 @@ import {
 } from "../intersections";
 import { ROUTES } from "../routes";
 
+const ELLIOT_CLARKSON_SW = [49.20689, -122.90225];
+const MERIVALE_ROYAL_S = [49.20807, -122.90616];
+const FOURTH_QUEENS_S = [49.20849, -122.91017];
 const FIFTH_THIRD_E = [49.20941, -122.91337];
 const FIFTH_THIRD_W = [49.20932, -122.91353];
 const FIFTH_SIXTH_N = [49.2141, -122.91937];
@@ -14,24 +17,33 @@ const FIFTH_SIXTH_N = [49.2141, -122.91937];
 export const UPTOWN_DOWNTOWN = [
   {
     routeNames: [ROUTES.uptownDowntown.name],
-    description: "elliot",
-    type: "comfortable",
-    positions: [
-      ELLIOT_COLUMBIA,
-      [49.20689, -122.90225],
-      [49.20697, -122.90224],
-      ELLIOT_CARNARVON,
-    ],
+    description: "elliot path",
+    type: "mixed",
+    positions: [ELLIOT_COLUMBIA, ELLIOT_CLARKSON_SW],
   },
   {
     routeNames: [ROUTES.uptownDowntown.name],
-    description: "merivale, park, fourth, third",
-    type: "comfortable",
+    description: "elliot road",
+    type: "quiet",
+    positions: [ELLIOT_CLARKSON_SW, [49.20697, -122.90224], ELLIOT_CARNARVON],
+  },
+  {
+    routeNames: [ROUTES.uptownDowntown.name],
+    description: "merivale",
+    type: "quiet",
     positions: [
       MERIVALE_CARNARVON,
       MERIVALE_AGNES,
       [49.20807, -122.9061],
-      [49.20807, -122.90616],
+      MERIVALE_ROYAL_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.uptownDowntown.name],
+    description: "park, fourth, third",
+    type: "comfortable",
+    positions: [
+      MERIVALE_ROYAL_S,
       [49.20781, -122.90672],
       [49.20799, -122.90694],
       [49.20802, -122.90704],
@@ -57,7 +69,15 @@ export const UPTOWN_DOWNTOWN = [
       [49.20845, -122.90986],
       [49.20841, -122.90995],
       [49.2084, -122.91002],
-      [49.20849, -122.91017],
+      FOURTH_QUEENS_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.uptownDowntown.name],
+    description: "fourth, third",
+    type: "quiet",
+    positions: [
+      FOURTH_QUEENS_S,
       [49.2093, -122.9112],
       [49.21006, -122.91217],
       FIFTH_THIRD_E,

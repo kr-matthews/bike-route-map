@@ -15,6 +15,7 @@ export const PANDORA = [
   {
     routeNames: [ROUTES.pandora.name],
     description: "west of garden",
+    type: "quiet",
     videos: [VIDEOS.pandoraEb.id],
     positions: [
       MCLEAN_FRANKLIN,
@@ -32,6 +33,7 @@ export const PANDORA = [
   {
     routeNames: [ROUTES.pandora.name],
     description: "garden to nanaimo",
+    type: "quiet",
     videos: [VIDEOS.pandoraEb.id, VIDEOS.nanaimoSb.id],
     videosStartAtStart: [VIDEOS.nanaimoSb.id],
     positions: [GARDEN_PANDORA, NANAIMO_PANDORA_W],
@@ -39,6 +41,7 @@ export const PANDORA = [
   {
     routeNames: [ROUTES.pandora.name],
     description: "east of nanaimo",
+    type: "quiet",
     videos: [VIDEOS.pandoraEb.id],
     videosEndAtEnd: [VIDEOS.pandoraEb.id],
     positions: [

@@ -30,6 +30,7 @@ export const TWENTY_NINTH = [
   {
     routeNames: [ROUTES.twentyNinth.name],
     description: "imperial to balaclava/ridgeway",
+    type: "quiet",
     videos: [VIDEOS.twentyNinthWb.id],
     videosEndAtStart: [VIDEOS.twentyNinthWb.id],
     positions: [
@@ -56,12 +57,14 @@ export const TWENTY_NINTH = [
       ROUTES.ridgeway.name,
     ],
     description: "balaclava/ridgeway overlap",
+    type: "quiet",
     videos: [VIDEOS.twentyNinthWb.id, VIDEOS.balaclavaNb.id],
     positions: [BALACLAVA_29TH, CARNARVON_29TH],
   },
   {
     routeNames: [ROUTES.twentyNinth.name],
     description: "balaclava/ridgeway to puget",
+    type: "quiet",
     videos: [VIDEOS.twentyNinthWb.id],
     positions: [
       CARNARVON_29TH,
@@ -80,6 +83,7 @@ export const TWENTY_NINTH = [
   {
     routeNames: [ROUTES.twentyNinth.name],
     description: "puget to valley",
+    type: "quiet",
     videos: [VIDEOS.twentyNinthWb.id],
     positions: [
       PUGET_EDDINGTON,
@@ -98,6 +102,7 @@ export const TWENTY_NINTH = [
   {
     routeNames: [ROUTES.twentyNinth.name, ROUTES.valley.name],
     description: "valley",
+    type: "quiet",
     videos: [VIDEOS.twentyNinthWb.id, VIDEOS.valleySb.id],
     positions: [
       YEW_EDDINGTON,
@@ -110,6 +115,7 @@ export const TWENTY_NINTH = [
   {
     routeNames: [ROUTES.twentyNinth.name],
     description: "valley to oak",
+    type: "quiet",
     videos: [VIDEOS.twentyNinthWb.id],
     positions: [
       YEW_EDDINGTON,
@@ -171,12 +177,14 @@ export const TWENTY_NINTH = [
   {
     routeNames: [ROUTES.twentyNinth.name],
     description: "hospital: 28th",
+    type: "quiet",
     videos: [VIDEOS.twentyNinthWb.id],
     positions: [LAUREL_28TH, HEATHER_28TH],
   },
   {
     routeNames: [ROUTES.twentyNinth.name],
     description: "heather to cambie",
+    type: "quiet",
     videos: [VIDEOS.twentyNinthWb.id],
     positions: [HEATHER_29TH, CAMBIE_29TH_W],
   },

@@ -117,6 +117,7 @@ export const SEASIDE_BYPASS = [
   // connections
   {
     description: "chestnut bypass",
+    type: "quiet",
     videos: [VIDEOS.yorkEb.id],
     videosEndAtStart: [VIDEOS.yorkEb.id],
     positions: [CHESTNUT_1ST, CHESTNUT_YORK],
@@ -136,6 +137,7 @@ export const SEASIDE_BYPASS = [
   {
     description: "quebec: 5th to 3rd",
     type: "quiet",
+    hideUnlessVideo: true,
     positions: [QUEBEC_3RD, QUEBEC_5TH],
   },
 
@@ -143,6 +145,7 @@ export const SEASIDE_BYPASS = [
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "cypress to fir",
+    type: "quiet",
     videos: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
     positions: [
       CYPRESS_1ST,
@@ -156,6 +159,7 @@ export const SEASIDE_BYPASS = [
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "1st to fir via parking lot",
+    type: "quiet",
     oneWay: "required",
     videos: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
     positions: [
@@ -168,6 +172,7 @@ export const SEASIDE_BYPASS = [
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "fir to 1st",
+    type: "quiet",
     oneWay: "recommended",
     positions: [
       FIR_1ST_E,
@@ -179,6 +184,7 @@ export const SEASIDE_BYPASS = [
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "false creek primary",
+    type: "quiet",
     videos: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
     positions: [
       FIR_1ST_E,
@@ -261,6 +267,7 @@ export const SEASIDE_BYPASS = [
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "false creek east of spyglass",
+    type: "quiet",
     videos: [VIDEOS.seasideBypassFalseCreekSouthEb.id, VIDEOS.yukonSb.id],
     positions: [
       SPYGLASS_COMMODORE,
@@ -814,6 +821,7 @@ export const SEASIDE_BYPASS = [
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "beach: to split before jervis",
+    type: "dedicated",
     positions: [
       STANLEY_PARK_LANE_BEACH,
       [49.29017, -123.14537],
@@ -850,6 +858,7 @@ export const SEASIDE_BYPASS = [
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "beach: little bit to jervis",
+    type: "dedicated",
     videos: [VIDEOS.seasideBypassExpoWb.id],
     videosEndAtStart: [VIDEOS.seasideBypassExpoWb.id],
     positions: [BEACH_SPLIT, [49.28112, -123.13889], JERVIS_BEACH_SW],
@@ -857,10 +866,12 @@ export const SEASIDE_BYPASS = [
   // other bypasses
   {
     description: "beach-beach",
+    type: "dedicated",
     positions: [BEACH_JERVIS_SPLIT, JERVIS_BEACH_SW],
   },
   {
     description: "beach: beach to hornby",
+    type: "dedicated",
     positions: [
       BEACH_SPLIT,
       [49.2807, -123.1386],
@@ -882,14 +893,17 @@ export const SEASIDE_BYPASS = [
   {
     description: "beach: hornby to granville",
     type: "shared",
+    hideUnlessVideo: true,
     positions: [HORNBY_BEACH, [49.27473, -123.13183], GRANVILLE_BEACH],
   },
   {
     description: "under granville bridge",
+    type: "quiet",
     positions: [GRANVILLE_BEACH, GRANVILLE_SEABREEZE],
   },
   {
     description: "beach east of granville",
+    type: "quiet",
     positions: [
       GRANVILLE_BEACH,
       [49.27343, -123.1298],
@@ -928,12 +942,14 @@ export const SEASIDE_BYPASS = [
   },
   {
     description: "homer to seaside",
+    type: "mixed",
     videos: [VIDEOS.homerNb.id],
     videosStartAtEnd: [VIDEOS.homerNb.id],
     positions: [HOMER_BEACH, SEAWALL_BEACH],
   },
   {
     description: "thurlow: seawall to beach",
+    type: "other",
     isClosed: true,
     positions: [
       THURLOW_SEAWALL,
@@ -945,6 +961,7 @@ export const SEASIDE_BYPASS = [
   },
   {
     description: "thurlow: beach to pacific",
+    type: "quiet",
     positions: [THURLOW_BEACH, THURLOW_PACIFIC_N],
   },
   {
@@ -989,6 +1006,7 @@ export const SEASIDE_BYPASS = [
   },
   {
     description: "davie: west connection to seawall",
+    type: "mixed",
     positions: [
       SEAWALL_DAVIE_W,
       [49.27277, -123.11987],
@@ -998,6 +1016,7 @@ export const SEASIDE_BYPASS = [
   },
   {
     description: "davie: east connection to seawall",
+    type: "mixed",
     positions: [
       MARINASIDE_DAVIE_E,
       [49.27312, -123.11957],
@@ -1007,6 +1026,7 @@ export const SEASIDE_BYPASS = [
   },
   {
     description: "seawall to quebec/pacific",
+    type: "combined",
     positions: [
       QUEBEC_SEAWALL,
       [49.27565, -123.10301],
@@ -1051,8 +1071,8 @@ export const SEASIDE_BYPASS = [
   },
   {
     description: "quebec connection from keefer sb",
-    oneWay: "required",
     type: "painted",
+    oneWay: "required",
     positions: [
       QUEBEC_KEEFER_SW,
       [49.27916, -123.10221],
@@ -1066,8 +1086,8 @@ export const SEASIDE_BYPASS = [
   },
   {
     description: "quebec: beyond union to expo",
-    oneWay: "required",
     type: "dedicated",
+    oneWay: "required",
     positions: [
       QUEBEC_SB_AFTER_UNION,
       [49.27717, -123.10223],
@@ -1084,6 +1104,7 @@ export const SEASIDE_BYPASS = [
   },
   {
     description: "castings connection",
+    type: "quiet",
     positions: [
       CASTINGS_SEAWALL,
       [49.26687, -123.13127],
@@ -1095,6 +1116,7 @@ export const SEASIDE_BYPASS = [
   },
   {
     routeNames: [ROUTES.seasideBypass.name],
+    type: "quiet",
     description: "whyte",
     positions: [
       ARBUTUS_WHYTE,

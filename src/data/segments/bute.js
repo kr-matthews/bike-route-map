@@ -13,7 +13,7 @@ export const BUTE = [
   {
     routeNames: [ROUTES.bute.name],
     description: "primary",
-    type: "comfortable",
+    type: "quiet",
     videos: [VIDEOS.buteSb.id],
     videosStartAtEnd: [VIDEOS.buteSb.id],
     videosEndAtStart: [VIDEOS.buteSb.id],

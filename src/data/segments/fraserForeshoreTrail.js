@@ -10,6 +10,7 @@ export const FRASER_FORESHORE = [
   {
     routeNames: [ROUTES.fraserForeshoreTrail.name],
     description: "boundary to glenlyon",
+    type: "mixed",
     videos: [VIDEOS.fraserForeshoreEb.id],
     videosStartAtStart: [VIDEOS.fraserForeshoreEb.id],
     positions: [
@@ -45,6 +46,7 @@ export const FRASER_FORESHORE = [
   {
     routeNames: [ROUTES.fraserForeshoreTrail.name],
     description: "glenlyon to east end",
+    type: "mixed",
     videos: [VIDEOS.fraserForeshoreEb.id],
     videosEndAtEnd: [VIDEOS.fraserForeshoreEb.id],
     positions: [

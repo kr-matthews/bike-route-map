@@ -24,6 +24,7 @@ const ELLIOTT_KENT_W = [49.20582, -123.05698];
 const MORNINGSTAR_PARK_W = [49.20587, -123.0544];
 const MORNINGSTAR_PARK_E = [49.20593, -123.05372];
 const KINROSS_KENT_S = [49.2061, -123.0367];
+const KINROSS_KENT_S_S = [49.20575, -123.03672];
 const KENT_CONSTRUCTION_SPLIT = [49.20567, -123.03369];
 const JACK_UPPAL_KENT_S = [49.20531, -123.03383];
 const RIVER_DISTRICT_CROSSING_KENT_S = [49.20504, -123.03116];
@@ -31,6 +32,10 @@ const RIVER_DISTRICT_CROSSING_KENT_N = [49.2053, -123.03107];
 
 const EB_BEFORE_BORDEN = [49.20952, -123.07505];
 const EAST_OF_ONTARIO = [49.20667, -123.10586];
+const QUEBEC_KENT_S = [49.2068, -123.10446];
+const CHESTER_KENT_S = [49.20808, -123.08935];
+const SHERBROOKE_KENT_S = [49.20876, -123.08156];
+const DUFF_LANE_KENT_N = [49.20725, -123.06525];
 
 export const KENT = [
   {
@@ -58,36 +63,58 @@ export const KENT = [
   {
     routeNames: [ROUTES.kent.name],
     description: "ontario",
+    type: "quiet",
     videos: [VIDEOS.ontarioNb.id],
     positions: [ONTARIO_KENT_S, ONTARIO_KENT_N],
   },
   {
     routeNames: [ROUTES.kent.name],
     description: "kent s: near ontario",
+    type: "dedicated",
     videos: [VIDEOS.ontarioNb.id],
     videosStartAtEnd: [VIDEOS.ontarioNb.id],
     positions: [ONTARIO_KENT_S, EAST_OF_ONTARIO],
   },
   {
     routeNames: [ROUTES.kent.name],
-    description: "kent s: ontario to crompton",
+    description: "kent s: still near ontario",
+    type: "dedicated",
+    positions: [EAST_OF_ONTARIO, QUEBEC_KENT_S],
+  },
+  {
+    routeNames: [ROUTES.kent.name],
+    description: "kent s: quebec to chester",
+    type: "quiet",
     positions: [
-      EAST_OF_ONTARIO,
-      [49.2068, -123.10446],
+      QUEBEC_KENT_S,
       [49.20697, -123.10246],
       [49.20768, -123.09401],
       [49.20784, -123.09211],
       [49.20792, -123.09119],
-      [49.20808, -123.08935],
-      [49.2083, -123.08692],
-      [49.20841, -123.08573],
-      [49.20872, -123.082],
-      CROMPTON_KENT_S,
+      CHESTER_KENT_S,
     ],
   },
   {
     routeNames: [ROUTES.kent.name],
+    description: "kent s: chester to crompton",
+    type: "dedicated",
+    positions: [
+      CHESTER_KENT_S,
+      [49.2083, -123.08692],
+      [49.20841, -123.08573],
+      SHERBROOKE_KENT_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.kent.name],
+    description: "kent s: pre-crompton",
+    type: "quiet",
+    positions: [SHERBROOKE_KENT_S, CROMPTON_KENT_S],
+  },
+  {
+    routeNames: [ROUTES.kent.name],
     description: "crompton",
+    type: "quiet",
     videos: [VIDEOS.invernessSb.id],
     videosEndAtStart: [VIDEOS.invernessSb.id],
     positions: [CROMPTON_KENT_S, CROMPTON_KENT_N_S],
@@ -156,12 +183,21 @@ export const KENT = [
   },
   {
     routeNames: [ROUTES.kent.name],
-    description: "kent n: borden to portside-ish",
+    description: "kent n: borden to lane after victoria",
+    type: "quiet",
     positions: [
       ARGYLE_KENT_N_E,
       [49.20799, -123.06787],
       VICTORIA_KENT_N,
-      [49.20725, -123.06525],
+      DUFF_LANE_KENT_N,
+    ],
+  },
+  {
+    routeNames: [ROUTES.kent.name],
+    description: "kent n: trail after victoria",
+    type: "mixed",
+    positions: [
+      DUFF_LANE_KENT_N,
       [49.20722, -123.0652],
       [49.20654, -123.0628],
       GLADSTONE_KENT,
@@ -170,6 +206,7 @@ export const KENT = [
   {
     routeNames: [ROUTES.kent.name],
     description: "kent n: portside-ish to path at elliott",
+    type: "quiet",
     videos: [VIDEOS.fraserRiverFraserviewEb.id],
     positions: [
       GLADSTONE_KENT,
@@ -189,12 +226,14 @@ export const KENT = [
   {
     routeNames: [ROUTES.kent.name],
     description: "kent n: elliott bit",
+    type: "quiet",
     videos: [VIDEOS.sunriseNb.id],
     positions: [ELLIOTT_KENT_W, ELLIOTT_KENT],
   },
   {
     routeNames: [ROUTES.kent.name],
     description: "kent n: elliott to morningstar park",
+    type: "quiet",
     positions: [
       ELLIOTT_KENT,
       [49.20582, -123.05638],
@@ -208,6 +247,7 @@ export const KENT = [
   {
     routeNames: [ROUTES.kent.name],
     description: "kent n: morningstar park to kinross",
+    type: "quiet",
     positions: [
       MORNINGSTAR_PARK_E,
       [49.206, -123.05363],
@@ -234,12 +274,14 @@ export const KENT = [
   {
     routeNames: [ROUTES.kent.name],
     description: "kent n path: elliott little bit",
+    type: "mixed",
     videos: [VIDEOS.fraserRiverFraserviewEb.id, VIDEOS.sunriseNb.id],
     positions: [ELLIOTT_KENT_W, [49.20575, -123.05698], ELLIOTT_KENT_PATH],
   },
   {
     routeNames: [ROUTES.kent.name],
     description: "kent n path: elliott to morningstar park",
+    type: "mixed",
     positions: [
       ELLIOTT_KENT_PATH,
       [49.20575, -123.05648],
@@ -252,11 +294,13 @@ export const KENT = [
   {
     routeNames: [ROUTES.kent.name],
     description: "kent n path: morningstar park",
+    type: "mixed",
     positions: [MORNINGSTAR_PARK_W, MORNINGSTAR_PARK_E],
   },
   {
     routeNames: [ROUTES.kent.name],
     description: "kent n path: morningstar park to kerr",
+    type: "mixed",
     positions: [
       MORNINGSTAR_PARK_E,
       [49.206, -123.05283],
@@ -276,12 +320,14 @@ export const KENT = [
   {
     routeNames: [ROUTES.kent.name, ROUTES.kerr.name],
     description: "crossing kerr",
+    type: "mixed",
     videos: [VIDEOS.kerrSb.id],
     positions: [KERR_KENT_N_SW, KERR_KENT_N_SE],
   },
   {
     routeNames: [ROUTES.kent.name],
     description: "kent n path: kerr to kinross",
+    type: "mixed",
     positions: [
       KERR_KENT_N_SE,
       [49.20676, -123.0419],
@@ -293,11 +339,16 @@ export const KENT = [
   },
   {
     routeNames: [ROUTES.kent.name],
+    description: "kinross",
+    type: "quiet",
+    positions: [KINROSS_KENT, KINROSS_KENT_S, KINROSS_KENT_S_S],
+  },
+  {
+    routeNames: [ROUTES.kent.name],
     description: "kent s bit",
+    type: "mixed",
     positions: [
-      KINROSS_KENT,
-      KINROSS_KENT_S,
-      [49.20575, -123.03672],
+      KINROSS_KENT_S_S,
       [49.20569, -123.03662],
       [49.20562, -123.03644],
       [49.20557, -123.03606],
@@ -309,6 +360,7 @@ export const KENT = [
   },
   {
     description: "river district detour",
+    type: "mixed",
     positions: [
       JACK_UPPAL_KENT_S,
       [49.20526, -123.03383],
@@ -333,16 +385,19 @@ export const KENT = [
   {
     routeNames: [ROUTES.kent.name],
     description: "river district crossing switch",
+    type: "mixed",
     positions: [RIVER_DISTRICT_CROSSING_KENT_S, RIVER_DISTRICT_CROSSING_KENT_N],
   },
   {
     routeNames: [ROUTES.kent.name],
     description: "kent n: river district",
+    type: "dedicated",
     positions: [RIVER_DISTRICT_CROSSING_KENT_N, [49.20422, -123.02343]],
   },
   {
     routeNames: [ROUTES.kent.name],
     description: "kent s: river district",
+    type: "mixed",
     positions: [
       RIVER_DISTRICT_CROSSING_KENT_S,
       [49.20404, -123.02411],
@@ -353,11 +408,13 @@ export const KENT = [
   {
     routeNames: [ROUTES.kent.name],
     description: "uppal kent s to n",
+    type: "mixed",
     positions: [KENT_CONSTRUCTION_SPLIT, JACK_UPPAL_KENT_S],
   },
   {
     routeNames: [ROUTES.kent.name],
     description: "kent n: uppal to river district crossing",
+    type: "dedicated",
     positions: [
       KENT_CONSTRUCTION_SPLIT,
       [49.20546, -123.03223],
@@ -367,6 +424,7 @@ export const KENT = [
   // {
   //   routeNames: [ROUTES.kent.name],
   //   description: "kent n: closed",
+  //   type: "quiet",
   //   isClosed: true,
   //   positions: [
   //     KINROSS_KENT,

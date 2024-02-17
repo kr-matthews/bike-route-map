@@ -59,7 +59,7 @@ export const MARINE = [
   // sw marine
   {
     description: "connection with arbutus greenway",
-    type: "shared",
+    type: "quiet",
     videos: [VIDEOS.arbutusGreenwayNb.id],
     positions: [
       MILTON_ARBUTUS_GREENWAY,
@@ -475,7 +475,7 @@ export const MARINE = [
   },
   {
     routeNames: [ROUTES.marineNw.name],
-    description: "just west of marine-marine",
+    description: "just north of marine-marine",
     type: "shared",
     videos: [VIDEOS.swMarineEb.id],
     videosStartAtEnd: [VIDEOS.swMarineEb.id],

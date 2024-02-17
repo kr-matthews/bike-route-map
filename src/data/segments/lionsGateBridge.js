@@ -192,6 +192,7 @@ export const LIONS_GATE_BRIDGE = [
   {
     routeNames: [ROUTES.lionsGate.name],
     description: "northbound causeway",
+    type: "combined",
     oneWay: "required",
     elevation: 0.5,
     videos: [VIDEOS.lionsGateBridgeNb.id],
@@ -231,6 +232,7 @@ export const LIONS_GATE_BRIDGE = [
   {
     routeNames: [ROUTES.lionsGate.name],
     description: "northbound bridge",
+    type: "mixed",
     oneWay: "required",
     elevation: 1,
     videos: [VIDEOS.lionsGateBridgeNb.id],
@@ -249,6 +251,7 @@ export const LIONS_GATE_BRIDGE = [
   {
     routeNames: [ROUTES.lionsGate.name],
     description: "northbound post-bridge",
+    type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
     videos: [VIDEOS.lionsGateBridgeNb.id],
@@ -270,6 +273,7 @@ export const LIONS_GATE_BRIDGE = [
   {
     routeNames: [ROUTES.lionsGate.name],
     description: "southbound pre-bridge",
+    type: "mixed",
     oneWay: "required",
     elevation: 0.5,
     videos: [VIDEOS.lionsGateBridgeSb.id],
@@ -282,6 +286,7 @@ export const LIONS_GATE_BRIDGE = [
   {
     routeNames: [ROUTES.lionsGate.name],
     description: "southbound bridge",
+    type: "mixed",
     oneWay: "required",
     elevation: 1,
     videos: [VIDEOS.lionsGateBridgeSb.id],
@@ -297,6 +302,7 @@ export const LIONS_GATE_BRIDGE = [
   {
     routeNames: [ROUTES.lionsGate.name],
     description: "southbound causeway",
+    type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
     videos: [VIDEOS.lionsGateBridgeSb.id],
@@ -401,6 +407,7 @@ export const LIONS_GATE_BRIDGE = [
   },
   {
     description: "connection to marine eastbound",
+    type: "dedicated",
     oneWay: "required",
     positions: [
       NORTHBOUND_OFF_RAMP_SPLIT,
@@ -413,6 +420,7 @@ export const LIONS_GATE_BRIDGE = [
   },
   {
     description: "connection to spirit",
+    type: "dedicated",
     videos: [VIDEOS.lionsGateBridgeNb.id],
     videosEndAtEnd: [VIDEOS.lionsGateBridgeNb.id],
     positions: [
@@ -427,6 +435,7 @@ export const LIONS_GATE_BRIDGE = [
   },
   {
     description: "connection from spirit",
+    type: "mixed",
     videos: [VIDEOS.lionsGateBridgeSb.id],
     positions: [
       LIONS_GATE_SPIRIT_TRAIL_W,
@@ -437,6 +446,7 @@ export const LIONS_GATE_BRIDGE = [
   },
   {
     description: "connection around loops",
+    type: "mixed",
     positions: [
       SOUTHBOUND_ON_RAMP_MERGE,
       [49.32518, -123.13013],
@@ -476,6 +486,7 @@ export const LIONS_GATE_BRIDGE = [
   },
   {
     description: "connection from marine westbound",
+    type: "mixed",
     oneWay: "required",
     positions: [
       [49.32546, -123.12603],
@@ -494,6 +505,7 @@ export const LIONS_GATE_BRIDGE = [
   },
   {
     description: "connection to klahanie",
+    type: "mixed",
     positions: [
       LIONS_GATE_KLAHANIE,
       [49.32669, -123.12661],

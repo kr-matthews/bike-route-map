@@ -19,6 +19,7 @@ export const SECOND_NARROWS_BRIDGE = [
   // connections
   {
     description: "connection with fellowes",
+    type: "mixed",
     positions: [
       SECOND_NARROWS_BRIDGE_FELLOWS,
       [49.29158, -123.02591],
@@ -58,6 +59,7 @@ export const SECOND_NARROWS_BRIDGE = [
   {
     routeNames: [ROUTES.secondNarrowsBridge.name],
     description: "cassiar to bridge",
+    type: "mixed",
     oneWay: "recommended",
     elevation: 0.5,
     positions: [
@@ -77,6 +79,7 @@ export const SECOND_NARROWS_BRIDGE = [
   {
     routeNames: [ROUTES.secondNarrowsBridge.name],
     description: "bridge nb",
+    type: "mixed",
     oneWay: "required",
     elevation: 1,
     positions: [
@@ -99,6 +102,7 @@ export const SECOND_NARROWS_BRIDGE = [
   {
     routeNames: [ROUTES.secondNarrowsBridge.name],
     description: "nb off ramp",
+    type: "mixed",
     oneWay: "required",
     elevation: 0.5,
     positions: [
@@ -118,6 +122,7 @@ export const SECOND_NARROWS_BRIDGE = [
   {
     routeNames: [ROUTES.secondNarrowsBridge.name],
     description: "sb on-ramp",
+    type: "mixed",
     oneWay: "required",
     elevation: 0.5,
     positions: [
@@ -138,6 +143,7 @@ export const SECOND_NARROWS_BRIDGE = [
   {
     routeNames: [ROUTES.secondNarrowsBridge.name],
     description: "sb bridge",
+    type: "mixed",
     oneWay: "required",
     elevation: 1,
     positions: [
@@ -155,6 +161,7 @@ export const SECOND_NARROWS_BRIDGE = [
   {
     routeNames: [ROUTES.secondNarrowsBridge.name],
     description: "sb post-bridge",
+    type: "mixed",
     oneWay: "required",
     elevation: 0.5,
     positions: [

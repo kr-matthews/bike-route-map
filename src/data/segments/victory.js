@@ -15,7 +15,7 @@ const HEDLEY_NEVILLE = [49.2138, -122.96735];
 export const VICTORY = [
   {
     description: "connection with bc parkway",
-    type: "comfortable",
+    type: "mixed",
     positions: [ANTRIM_BERESFORD, [49.21923, -122.98511], ANTRIM_BC_PARKWAY],
   },
   {

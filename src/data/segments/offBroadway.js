@@ -32,16 +32,19 @@ import { VIDEOS } from "../videos";
 
 const WEST_OF_HIGHBURY = [49.26528, -123.18939];
 const CAMBIE_7TH_W = [49.26496, -123.11495];
+const GRANDVIEW_8TH_N_E = [49.26326, -123.068];
 
 export const OFF_BROADWAY = [
   {
     description: "yew connection with 10th",
+    type: "quiet",
     videos: [VIDEOS.arbutusGreenwayNb.id],
     positions: [YEW_10TH, YEW_8TH],
   },
   {
     routeNames: [ROUTES.offBroadway.name, ROUTES.ridgeway.name],
     description: "ridgeway overlap",
+    type: "quiet",
     videos: [VIDEOS.offBroadwayWb.id, VIDEOS.ridgewayWb.id],
     videosEndAtStart: [VIDEOS.offBroadwayWb.id, VIDEOS.ridgewayWb.id],
     positions: [
@@ -55,6 +58,7 @@ export const OFF_BROADWAY = [
   {
     routeNames: [ROUTES.offBroadway.name],
     description: "west of highbury",
+    type: "quiet",
     videos: [VIDEOS.offBroadwayWb.id],
     positions: [
       DISCOVERY_8TH,
@@ -75,6 +79,7 @@ export const OFF_BROADWAY = [
   {
     routeNames: [ROUTES.offBroadway.name],
     description: "little bit west of highbury",
+    type: "quiet",
     videos: [VIDEOS.offBroadwayWb.id, VIDEOS.highburyNb.id],
     videosStartAtStart: [VIDEOS.highburyNb.id],
     positions: [WEST_OF_HIGHBURY, HIGHBURY_8TH],
@@ -82,6 +87,7 @@ export const OFF_BROADWAY = [
   {
     routeNames: [ROUTES.offBroadway.name],
     description: "highbury to yew",
+    type: "quiet",
     videos: [VIDEOS.offBroadwayWb.id],
     positions: [
       HIGHBURY_8TH,
@@ -105,20 +111,22 @@ export const OFF_BROADWAY = [
   {
     routeNames: [ROUTES.offBroadway.name],
     description: "yew to arbutus greenway",
+    type: "quiet",
     videos: [VIDEOS.offBroadwayWb.id, VIDEOS.arbutusGreenwayNb.id],
     positions: [
       YEW_8TH,
       [49.26561, -123.15526],
       [49.2656, -123.15421],
-      [49.26563, -123.15408],
-      [49.26562, -123.15303],
-      [49.26559, -123.15277],
+      [49.26562, -123.15408],
+      [49.26561, -123.15303],
+      [49.26558, -123.15277],
       ARBUTUS_GREENWAY_7TH,
     ],
   },
   {
     routeNames: [ROUTES.offBroadway.name],
     description: "arbutus greenway to heather",
+    type: "quiet",
     videos: [VIDEOS.offBroadwayWb.id],
     positions: [
       ARBUTUS_GREENWAY_7TH,
@@ -141,6 +149,7 @@ export const OFF_BROADWAY = [
   {
     routeNames: [ROUTES.offBroadway.name],
     description: "heather to ash",
+    type: "quiet",
     videos: [VIDEOS.offBroadwayWb.id, VIDEOS.heatherSb.id],
     positions: [HEATHER_7TH, ASH_7TH_W],
   },
@@ -192,12 +201,14 @@ export const OFF_BROADWAY = [
   {
     routeNames: [ROUTES.offBroadway.name],
     description: "crossing yukon",
+    type: "quiet",
     videos: [VIDEOS.offBroadwayWb.id],
     positions: [YUKON_5TH_W, YUKON_5TH_E],
   },
   {
     routeNames: [ROUTES.offBroadway.name],
     description: "yukon to mosaic",
+    type: "quiet",
     elevation: 0.5,
     videos: [VIDEOS.offBroadwayWb.id],
     positions: [
@@ -232,13 +243,19 @@ export const OFF_BROADWAY = [
   },
   {
     routeNames: [ROUTES.offBroadway.name],
-    description: "cvg/off broadway east",
+    description: "path to 8th",
+    type: "dedicated",
+    videos: [VIDEOS.offBroadwayWb.id],
+    positions: [GRANDVIEW_8TH_N, [49.26325, -123.06818], GRANDVIEW_8TH_N_E],
+  },
+  {
+    routeNames: [ROUTES.offBroadway.name],
+    description: "grandview to lakewood",
+    type: "quiet",
     videos: [VIDEOS.offBroadwayWb.id],
     videosStartAtEnd: [VIDEOS.offBroadwayWb.id],
     positions: [
-      GRANDVIEW_8TH_N,
-      [49.26325, -123.06818],
-      [49.26326, -123.06806],
+      GRANDVIEW_8TH_N_E,
       [49.26324, -123.06592],
       [49.26323, -123.06393],
       LAKEWOOD_8TH,

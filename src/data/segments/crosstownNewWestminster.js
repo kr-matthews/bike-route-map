@@ -18,11 +18,13 @@ const EIGHTH_7TH_W = [49.21243, -122.92577];
 const PRE_OVERPASS_W = [49.22112, -122.91061];
 const MCBRIDE_OVERPASS_W = [49.22113, -122.91066];
 const POST_OVERPASS_E = [49.2208, -122.90967];
+const BETWEEN_MCBRIDE_CUMBERLAND = [49.22218, -122.90771];
 const CUMBERLAND_7TH = [49.22276, -122.90658];
 const RICHMOND_SHILES = [49.22518, -122.89867];
 const RICHMOND_SHERBROOKE = [49.22797, -122.89861];
 const RICHMOND_EIGHTH_N = [49.22963, -122.89855];
 const RICHMOND_SURREY = [49.23063, -122.89852];
+const SURREY_TENTH_S = [49.23292, -122.90139];
 
 const TWENTIETH_MEAD_E = [49.20097, -122.94586];
 const STEWARDSON_OVERPASS_N = [49.20183, -122.94173];
@@ -37,15 +39,19 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   },
   {
     description: "richmond st to surrey st",
-    type: "comfortable",
+    type: "quiet",
     positions: [RICHMOND_EIGHTH_N, RICHMOND_SURREY],
   },
   {
     description: "surrey st",
-    type: "comfortable",
+    type: "quiet",
+    positions: [RICHMOND_SURREY, SURREY_TENTH_S],
+  },
+  {
+    description: "crossing tenth",
+    type: "mixed",
     positions: [
-      RICHMOND_SURREY,
-      [49.23292, -122.90139],
+      SURREY_TENTH_S,
       [49.23303, -122.90143],
       [49.23306, -122.90137],
       [49.23313, -122.90146],
@@ -53,7 +59,7 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   },
   {
     description: "bc parkway curve",
-    type: "comfortable",
+    type: "mixed",
     positions: [
       BC_PARKWAY_22ND_STATION_SPLIT,
       [49.19973, -122.95081],
@@ -70,7 +76,7 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   },
   {
     description: "grimston park alt: park",
-    type: "comfortable",
+    type: "mixed",
     elevation: 0.5,
     positions: [
       TWENTIETH_MEAD_E,
@@ -85,7 +91,7 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   },
   {
     description: "grimston park alt: overpass",
-    type: "comfortable",
+    type: "mixed",
     elevation: 1,
     positions: [
       STEWARDSON_OVERPASS_N,
@@ -98,13 +104,13 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   },
   {
     description: "grimston park alt: after overpass",
-    type: "comfortable",
+    type: "mixed",
     elevation: 0.5,
     positions: [STEWARDSON_OVERPASS_S, STEWARDSON_OVERPASS_S_POST],
   },
   {
     description: "grimston park alt: end bit",
-    type: "comfortable",
+    type: "mixed",
     positions: [
       STEWARDSON_OVERPASS_S_POST,
       [49.20165, -122.94117],
@@ -137,8 +143,8 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   },
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],
-    description: "20th to and through park",
-    type: "comfortable",
+    description: "20th to 10th",
+    type: "quiet",
     positions: [
       TWENTIETH_7TH_E_S,
       [49.20141, -122.94623],
@@ -150,6 +156,14 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
       [49.20729, -122.9353],
       [49.20812, -122.93375],
       [49.20897, -122.93223],
+      TENTH_7TH,
+    ],
+  },
+  {
+    routeNames: [ROUTES.crosstownNewWestminster.name],
+    description: "through park",
+    type: "mixed",
+    positions: [
       TENTH_7TH,
       [49.21099, -122.92846],
       [49.21104, -122.92841],
@@ -209,8 +223,8 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   },
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],
-    description: "5th to mcbride",
-    type: "comfortable",
+    description: "5th to nearly-mcbride",
+    type: "quiet",
     positions: [
       FIFTH_7TH,
       [49.21586, -122.91945],
@@ -221,6 +235,14 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
       [49.22063, -122.91058],
       [49.2207, -122.91046],
       MCBRIDE_SEVENTH_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.crosstownNewWestminster.name],
+    description: "to west mcbride ramp",
+    type: "mixed",
+    positions: [
+      MCBRIDE_SEVENTH_W,
       [49.22079, -122.91035],
       [49.22087, -122.91036],
       [49.22095, -122.91041],
@@ -230,14 +252,14 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "before mcbride",
-    type: "comfortable",
+    type: "mixed",
     elevation: 0.5,
     positions: [PRE_OVERPASS_W, MCBRIDE_OVERPASS_W],
   },
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "mcbride overpass",
-    type: "comfortable",
+    type: "mixed",
     elevation: 1,
     positions: [
       MCBRIDE_OVERPASS_W,
@@ -256,19 +278,27 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "after mcbride",
-    type: "comfortable",
+    type: "mixed",
     elevation: 0.5,
     positions: [MCBRIDE_OVERPASS_E, POST_OVERPASS_E],
   },
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],
-    description: "mcbride to richmond",
-    type: "comfortable",
+    description: "mcbride to parking lot",
+    type: "mixed",
     positions: [
       POST_OVERPASS_E,
       [49.22105, -122.90993],
       [49.22218, -122.90784],
-      [49.22218, -122.90771],
+      BETWEEN_MCBRIDE_CUMBERLAND,
+    ],
+  },
+  {
+    routeNames: [ROUTES.crosstownNewWestminster.name],
+    description: "parking lot to richmond",
+    type: "quiet",
+    positions: [
+      BETWEEN_MCBRIDE_CUMBERLAND,
       CUMBERLAND_7TH,
       [49.22475, -122.90286],
       [49.22491, -122.90262],
@@ -286,7 +316,7 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "sherbrooke",
-    type: "comfortable",
+    type: "quiet",
     positions: [
       RICHMOND_SHERBROOKE,
       [49.22795, -122.8963],
