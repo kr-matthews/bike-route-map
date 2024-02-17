@@ -26,7 +26,7 @@ export default function Filters({ navigateTo }) {
         </button>
 
         <SegmentForm
-          view="filter"
+          view="filters"
           types={filters.types}
           directions={filters.directions}
           elevations={filters.elevations}
@@ -39,7 +39,11 @@ export default function Filters({ navigateTo }) {
         <div style={{ padding: "4px" }}>
           {videoOptions.map((videoOption) => {
             const action = () => {
-              dispatchFilters({ type: "video", value: videoOption });
+              dispatchFilters({
+                type: "toggle",
+                characteristic: "video",
+                value: videoOption,
+              });
             };
             return (
               <label

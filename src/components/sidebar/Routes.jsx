@@ -11,7 +11,7 @@ import {
   getWeightedRouteDistance,
   getWeightedRouteDistanceOfType,
 } from "../../utils/routes";
-import { TYPE_TYPES } from "../../utils/segmentTypes";
+import { TYPES } from "../../utils/segmentTypes";
 
 export default function Routes({ navigateTo }) {
   const [searchText, setSearchText] = useState("");
@@ -96,7 +96,7 @@ const getBackgroundColor = (routeName, isHighlighted) => {
   if (isHighlighted) return COLOUR_HIGHLIGHTED;
 
   const totalWeightedDistance = getWeightedRouteDistance(routeName);
-  const cumulativeWeightedDistances = TYPE_TYPES.reduce(
+  const cumulativeWeightedDistances = TYPES.reduce(
     (acc, { key }) => [
       ...acc,
       acc[acc.length - 1] + getWeightedRouteDistanceOfType(routeName, key),
@@ -106,7 +106,7 @@ const getBackgroundColor = (routeName, isHighlighted) => {
 
   const linearGradient =
     "to right, " +
-    TYPE_TYPES.flatMap(({ colour, oneWayColour }, index) =>
+    TYPES.flatMap(({ colour, oneWayColour }, index) =>
       cumulativeWeightedDistances[index] ===
       cumulativeWeightedDistances[index + 1]
         ? []

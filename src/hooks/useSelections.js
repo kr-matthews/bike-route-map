@@ -2,9 +2,9 @@ import { useReducer, useState } from "react";
 import { ROUTES } from "../data/routes";
 import { VIDEOS } from "../data/videos";
 import {
-  DIRECTION_TYPES,
-  ELEVATION_TYPES,
-  TYPE_TYPES,
+  ELEVATIONS,
+  DIRECTIONS,
+  TYPES,
   normalizeElevation,
   normalizeType,
 } from "../utils/segmentTypes";
@@ -12,28 +12,41 @@ import {
 const filtersReducer = (state, action) => {
   switch (action.type) {
     case "reset":
-      return defaultFilters;
+      return defaultFilters(true);
 
-    case "type": {
-      const newTypes = { ...state.types };
-      newTypes[action.key] = !newTypes[action.key];
-      return { ...state, types: newTypes };
-    }
+    case "toggle":
+      switch (action.characteristic) {
+        case "type": {
+          const newTypes = { ...state.types };
+          newTypes[action.key] = !newTypes[action.key];
+          return { ...state, types: newTypes };
+        }
 
-    case "direction": {
-      const newDirections = { ...state.directions };
-      newDirections[action.key] = !newDirections[action.key];
-      return { ...state, directions: newDirections };
-    }
+        case "direction": {
+          const newDirections = { ...state.directions };
+          newDirections[action.key] = !newDirections[action.key];
+          return { ...state, directions: newDirections };
+        }
 
-    case "elevation": {
-      const newElevations = { ...state.elevations };
-      newElevations[action.key] = !newElevations[action.key];
-      return { ...state, elevations: newElevations };
-    }
+        case "elevation": {
+          const newElevations = { ...state.elevations };
+          newElevations[action.key] = !newElevations[action.key];
+          return { ...state, elevations: newElevations };
+        }
 
-    case "video": {
-      return { ...state, videos: action.value };
+        case "video": {
+          return { ...state, videos: action.value };
+        }
+
+        default:
+          return state;
+      }
+
+    case "toggle-all": {
+      const key = `${action.characteristic}s`;
+      const areAllOn = Object.values(state[key]).every((b) => b);
+      const newCharacteristic = defaultFilters(!areAllOn)[key];
+      return { ...state, [key]: newCharacteristic };
     }
 
     default:
@@ -41,18 +54,12 @@ const filtersReducer = (state, action) => {
   }
 };
 
-const defaultFilters = {
-  types: TYPE_TYPES.reduce((acc, t) => ({ ...acc, [t.key]: true }), {}),
-  directions: DIRECTION_TYPES.reduce(
-    (acc, d) => ({ ...acc, [d.key]: true }),
-    {}
-  ),
-  elevations: ELEVATION_TYPES.reduce(
-    (acc, e) => ({ ...acc, [e.key]: true }),
-    {}
-  ),
+const defaultFilters = (allOn) => ({
+  types: TYPES.reduce((acc, t) => ({ ...acc, [t.key]: !!allOn }), {}),
+  directions: DIRECTIONS.reduce((acc, d) => ({ ...acc, [d.key]: !!allOn }), {}),
+  elevations: ELEVATIONS.reduce((acc, e) => ({ ...acc, [e.key]: !!allOn }), {}),
   videos: undefined, // using true, false, and undefined is probably a bad idea...
-};
+});
 
 export default function useSelections() {
   // interactions
@@ -75,7 +82,11 @@ export default function useSelections() {
 
   // filters
 
-  const [filters, dispatchFilters] = useReducer(filtersReducer, defaultFilters);
+  const [filters, dispatchFilters] = useReducer(
+    filtersReducer,
+    true,
+    defaultFilters
+  );
   const isSegmentHidden = (segment) => {
     if (segment.hideUnlessVideo && !segment.videos?.includes(video?.id)) {
       return true;

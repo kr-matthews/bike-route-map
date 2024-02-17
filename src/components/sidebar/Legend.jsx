@@ -4,9 +4,9 @@ import Segment from "../map/Segment";
 import PanesAndTiles from "../map/PanesAndTiles";
 import { ZOOMED_IN_A_BIT } from "../../utils/constants";
 import {
-  DIRECTION_TYPES,
-  ELEVATION_TYPES,
-  TYPE_TYPES,
+  DIRECTIONS,
+  ELEVATIONS,
+  TYPES,
   getDirection,
   getElevation,
   getType,
@@ -62,7 +62,8 @@ const reducer = (state, action) => {
     key: state.key + 1,
     segmentProps: { ...state.segmentProps },
   };
-  switch (action.type) {
+
+  switch (action.characteristic) {
     case "type":
       newState.typeDescription = getType(action.key).description;
       newState.segmentProps.type = action.key;
@@ -81,19 +82,20 @@ const reducer = (state, action) => {
     default:
       return state;
   }
+
   return newState;
 };
 
 const initialState = {
   key: 1,
   segmentProps: {
-    type: TYPE_TYPES[0].key,
-    oneWay: DIRECTION_TYPES[2].key,
-    elevation: ELEVATION_TYPES[1].key,
+    type: TYPES[0].key,
+    oneWay: DIRECTIONS[2].key,
+    elevation: ELEVATIONS[1].key,
   },
-  typeDescription: TYPE_TYPES[0].description,
-  directionDescription: DIRECTION_TYPES[2].description,
-  elevationDescription: ELEVATION_TYPES[1].description,
+  typeDescription: TYPES[0].description,
+  directionDescription: DIRECTIONS[2].description,
+  elevationDescription: ELEVATIONS[1].description,
 };
 
 export default function Legend({ navigateTo }) {
@@ -108,21 +110,21 @@ export default function Legend({ navigateTo }) {
     dispatch,
   ] = useReducer(reducer, initialState);
 
-  const types = TYPE_TYPES.reduce(
+  const types = TYPES.reduce(
     (acc, t) => ({
       ...acc,
       [t.key]: t.key === segmentProps.type,
     }),
     {}
   );
-  const directions = DIRECTION_TYPES.reduce(
+  const directions = DIRECTIONS.reduce(
     (acc, d) => ({
       ...acc,
       [d.key]: d.key === segmentProps.oneWay,
     }),
     {}
   );
-  const elevations = ELEVATION_TYPES.reduce(
+  const elevations = ELEVATIONS.reduce(
     (acc, e) => ({
       ...acc,
       [e.key ?? 0]: e.key === segmentProps.elevation,

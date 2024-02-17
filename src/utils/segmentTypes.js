@@ -15,7 +15,7 @@ import {
 
 // ? should probably just be a class?
 
-export const TYPE_TYPES = [
+export const TYPES = [
   {
     key: "comfortable",
     name: "Separated",
@@ -70,17 +70,17 @@ const comfortableTypes = [
   undefined, // catch-all (mostly for legacy reasons)
 ];
 
-export const getType = (key) => TYPE_TYPES.find((t) => t.key === key);
+export const getType = (key) => TYPES.find((t) => t.key === key);
 
 export const normalizeType = (type) =>
   comfortableTypes.includes(type) ? "comfortable" : type;
 
 const alwaysOneWayTypes = ["painted", "shoulder"];
 
-export const isAlwaysOneWay = (typeObject) =>
+export const isTypeAlwaysOneWay = (typeObject) =>
   alwaysOneWayTypes.includes(typeObject.key);
 
-export const DIRECTION_TYPES = [
+export const DIRECTIONS = [
   {
     key: undefined, // hm...
     name: "Two-way",
@@ -100,11 +100,12 @@ export const DIRECTION_TYPES = [
   },
 ];
 
-export const getDirection = (key) => DIRECTION_TYPES.find((d) => d.key === key);
+export const getDirection = (key) => DIRECTIONS.find((d) => d.key === key);
 
-export const isOneWay = (directionObject) => directionObject.key === "required";
+export const isDirectionOneWay = (directionObject) =>
+  directionObject.key === "required";
 
-export const ELEVATION_TYPES = [
+export const ELEVATIONS = [
   {
     key: 1,
     name: "Elevated",
@@ -126,7 +127,7 @@ export const ELEVATION_TYPES = [
   },
 ];
 
-export const getElevation = (key) => ELEVATION_TYPES.find((e) => e.key === key);
+export const getElevation = (key) => ELEVATIONS.find((e) => e.key === key);
 
 export const normalizeElevation = (elevation) =>
   elevation <= -1 ? -1 : elevation >= 1 ? 1 : 0;

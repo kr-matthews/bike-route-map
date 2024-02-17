@@ -1,10 +1,10 @@
 import { BLACK, WHITE } from "../../utils/colours";
 import {
-  DIRECTION_TYPES,
-  ELEVATION_TYPES,
-  TYPE_TYPES,
-  isAlwaysOneWay,
-  isOneWay,
+  DIRECTIONS,
+  ELEVATIONS,
+  TYPES,
+  isTypeAlwaysOneWay,
+  isDirectionOneWay,
 } from "../../utils/segmentTypes";
 
 export default function SegmentForm({
@@ -15,12 +15,13 @@ export default function SegmentForm({
   dispatch,
 }) {
   const isLegend = view === "legend";
+  const isFilters = view === "filters";
 
-  const isAnAlwaysOneWayTypeSelected = TYPE_TYPES.some(
-    (t) => types[t.key] && isAlwaysOneWay(t)
+  const isAnAlwaysOneWayTypeSelected = TYPES.some(
+    (t) => types[t.key] && isTypeAlwaysOneWay(t)
   );
-  const isAOneWayDirectionSelected = DIRECTION_TYPES.some(
-    (d) => directions[d.key] && isOneWay(d)
+  const isAOneWayDirectionSelected = DIRECTIONS.some(
+    (d) => directions[d.key] && isDirectionOneWay(d)
   );
 
   return (
@@ -28,12 +29,27 @@ export default function SegmentForm({
       <tbody>
         <tr>
           <td style={{ verticalAlign: "top" }}>
-            {TYPE_TYPES.map((type) => {
+            {isFilters && (
+              <HeaderCheckbox
+                characteristic="type"
+                options={types}
+                dispatch={dispatch}
+              />
+            )}
+
+            {TYPES.map((type) => {
               const isDisabled =
-                isLegend && isAlwaysOneWay(type) && !isAOneWayDirectionSelected;
+                isLegend &&
+                isTypeAlwaysOneWay(type) &&
+                !isAOneWayDirectionSelected;
               const action = isDisabled
                 ? undefined
-                : () => dispatch({ type: "type", key: type.key });
+                : () =>
+                    dispatch({
+                      type: "toggle",
+                      characteristic: "type",
+                      key: type.key,
+                    });
               return (
                 <div key={type.name} style={{ padding: "5px" }}>
                   <input
@@ -64,14 +80,27 @@ export default function SegmentForm({
           </td>
 
           <td style={{ verticalAlign: "top" }}>
-            {DIRECTION_TYPES.map((direction) => {
+            {isFilters && (
+              <HeaderCheckbox
+                characteristic="direction"
+                options={directions}
+                dispatch={dispatch}
+              />
+            )}
+
+            {DIRECTIONS.map((direction) => {
               const isDisabled =
                 isLegend &&
                 isAnAlwaysOneWayTypeSelected &&
-                !isOneWay(direction);
+                !isDirectionOneWay(direction);
               const action = isDisabled
                 ? undefined
-                : () => dispatch({ type: "direction", key: direction.key });
+                : () =>
+                    dispatch({
+                      type: "toggle",
+                      characteristic: "direction",
+                      key: direction.key,
+                    });
               return (
                 <div key={direction.name} style={{ padding: "5px" }}>
                   <input
@@ -100,9 +129,21 @@ export default function SegmentForm({
           </td>
 
           <td style={{ verticalAlign: "top" }}>
-            {ELEVATION_TYPES.map((elevation) => {
+            {isFilters && (
+              <HeaderCheckbox
+                characteristic="elevation"
+                options={elevations}
+                dispatch={dispatch}
+              />
+            )}
+
+            {ELEVATIONS.map((elevation) => {
               const action = () =>
-                dispatch({ type: "elevation", key: elevation.key });
+                dispatch({
+                  type: "toggle",
+                  characteristic: "elevation",
+                  key: elevation.key,
+                });
               return (
                 <div key={elevation.name} style={{ padding: "5px" }}>
                   <input
@@ -134,3 +175,35 @@ export default function SegmentForm({
     </table>
   );
 }
+
+const HeaderCheckbox = ({ characteristic, options, dispatch }) => {
+  const toggleAll = () => {
+    console.log("test");
+    dispatch({ type: "toggle-all", characteristic });
+  };
+
+  return (
+    <div style={{ padding: "5px" }}>
+      <input
+        type="checkbox"
+        id="key"
+        name={characteristic}
+        style={{ cursor: "pointer" }}
+        checked={Object.values(options).every((b) => b)}
+        onChange={toggleAll}
+      />
+      <label
+        htmlFor={`all-${characteristic}`}
+        style={{
+          cursor: "pointer",
+          padding: "4px",
+        }}
+        onClick={toggleAll}
+      >
+        <b>
+          <u>All {characteristic}s</u>
+        </b>
+      </label>
+    </div>
+  );
+};
