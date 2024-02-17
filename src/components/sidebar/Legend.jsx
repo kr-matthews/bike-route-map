@@ -170,10 +170,24 @@ export default function Legend({ navigateTo }) {
           </MapContainer>
         </div>
 
-        <div>
-          {typeDescription && <p>{typeDescription}</p>}
-          {directionDescription && <p>{directionDescription}</p>}
-          {elevationDescription && <p>{elevationDescription}</p>}
+        <div style={{ paddingRight: "0.5em" }}>
+          {typeDescription && (
+            <p>
+              <b>{getType(segmentProps.type)?.name}:</b> {typeDescription}
+            </p>
+          )}
+          {directionDescription && (
+            <p>
+              <b>{getDirection(segmentProps.oneWay)?.name}:</b>{" "}
+              {directionDescription}
+            </p>
+          )}
+          {elevationDescription && (
+            <p>
+              <b>{getElevation(segmentProps.elevation)?.name}:</b>{" "}
+              {elevationDescription}
+            </p>
+          )}
         </div>
       </div>
     </Panel>

@@ -58,7 +58,7 @@ export const TYPES = [
     colour: COLOUR_OTHER,
     oneWayColour: COLOUR_OTHER_ONE_WAY,
     description:
-      "Separated from traffic but poor quality, such as a narrow sidewalk shared with pedestrians or a rough trail.",
+      "Separated from traffic but poor quality, such as a narrow sidewalk shared with pedestrians or a bumpy trail with roots/rocks.",
   },
 ];
 
@@ -120,7 +120,7 @@ export const ELEVATIONS = [
   },
   {
     key: -1,
-    name: "Underground/ Covered",
+    name: "Underground or Covered",
     colour: COLOUR_UNDERGROUND_BORDER,
     description:
       "A tunnel or other covered area. You can't directly connect to/from the roads/paths above.",
