@@ -20,7 +20,7 @@ const HORNBY_BEACH_SE_S = [49.27523, -123.13292];
 export const HORNBY = [
   {
     routeNames: [ROUTES.hornby.name],
-    description: "primary",
+    description: "south tip",
     type: "quiet",
     videos: [VIDEOS.hornbyNb.id],
     videosStartAtStart: [VIDEOS.hornbyNb.id],

@@ -62,14 +62,14 @@ export const TENTH = [
   },
   {
     routeNames: [ROUTES.tenth.name],
-    description: "arbutus greenway to oak",
+    description: "arbutus greenway to maple",
     type: "dedicated",
     videos: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
     positions: [ARBUTUS_GREENWAY_10TH, MAPLE_10TH_NW],
   },
   {
     routeNames: [ROUTES.tenth.name],
-    description: "arbutus greenway to oak",
+    description: "maple to oak",
     type: "quiet",
     videos: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
     positions: [

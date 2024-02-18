@@ -91,7 +91,7 @@ export default function SegmentForm({
                 });
           return (
             <Input
-              key={direction.key}
+              key={direction.key ?? "undefined"}
               type={isLegend ? "radio" : "checkbox"}
               name={direction.name}
               isDisabled={isDisabled}
