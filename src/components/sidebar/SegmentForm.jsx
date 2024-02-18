@@ -25,157 +25,114 @@ export default function SegmentForm({
   );
 
   return (
-    <table style={{ fontSize: "90%" }}>
-      <tbody>
-        <tr>
-          <td style={{ verticalAlign: "top" }}>
-            {isFilters && (
-              <HeaderCheckbox
-                characteristic="type"
-                options={types}
-                dispatch={dispatch}
-              />
-            )}
+    <div
+      style={{
+        display: "grid",
+        gridAutoRows: "1fr",
+        gridTemplateColumns: "1fr 1fr 1fr",
+      }}
+    >
+      <div style={{ verticalAlign: "top", marginRight: "1em" }}>
+        {isFilters && (
+          <HeaderCheckbox
+            characteristic="type"
+            options={types}
+            dispatch={dispatch}
+          />
+        )}
 
-            {TYPES.map((type) => {
-              const isDisabled =
-                isLegend &&
-                isTypeAlwaysOneWay(type) &&
-                !isAOneWayDirectionSelected;
-              const action = isDisabled
-                ? undefined
-                : () =>
-                    dispatch({
-                      type: "toggle",
-                      characteristic: "type",
-                      key: type.key,
-                    });
-              return (
-                <div key={type.name} style={{ padding: "5px" }}>
-                  <input
-                    type={isLegend ? "radio" : "checkbox"}
-                    id="key"
-                    name="type"
-                    style={{ cursor: isDisabled ? undefined : "pointer" }}
-                    disabled={isDisabled}
-                    checked={types[type.key]}
-                    onChange={action}
-                  />
-                  <label
-                    htmlFor="comfortable"
-                    style={{
-                      cursor: isDisabled ? undefined : "pointer",
-                      color: WHITE,
-                      opacity: isDisabled ? 0.2 : 1,
-                      backgroundColor: type.colour ?? type.oneWayColour,
-                      padding: "4px",
-                    }}
-                    onClick={action}
-                  >
-                    {type.name}
-                  </label>
-                </div>
-              );
-            })}
-            <ErrorFooter options={types} />
-          </td>
-
-          <td style={{ verticalAlign: "top" }}>
-            {isFilters && (
-              <HeaderCheckbox
-                characteristic="direction"
-                options={directions}
-                dispatch={dispatch}
-              />
-            )}
-
-            {DIRECTIONS.map((direction) => {
-              const isDisabled =
-                isLegend &&
-                isAnAlwaysOneWayTypeSelected &&
-                !isDirectionOneWay(direction);
-              const action = isDisabled
-                ? undefined
-                : () =>
-                    dispatch({
-                      type: "toggle",
-                      characteristic: "direction",
-                      key: direction.key,
-                    });
-              return (
-                <div key={direction.name} style={{ padding: "5px" }}>
-                  <input
-                    type={isLegend ? "radio" : "checkbox"}
-                    id="key"
-                    name="direction"
-                    style={{ cursor: isDisabled ? undefined : "pointer" }}
-                    disabled={isDisabled}
-                    checked={directions[direction.key]}
-                    onChange={action}
-                  />
-                  <label
-                    htmlFor="comfortable"
-                    style={{
-                      cursor: isDisabled ? undefined : "pointer",
-                      opacity: isDisabled ? 0.2 : 1,
-                      padding: "4px",
-                    }}
-                    onClick={action}
-                  >
-                    {direction.name}
-                  </label>
-                </div>
-              );
-            })}
-            <ErrorFooter options={directions} />
-          </td>
-
-          <td style={{ verticalAlign: "top" }}>
-            {isFilters && (
-              <HeaderCheckbox
-                characteristic="elevation"
-                options={elevations}
-                dispatch={dispatch}
-              />
-            )}
-
-            {ELEVATIONS.map((elevation) => {
-              const action = () =>
+        {TYPES.map((type) => {
+          const isDisabled =
+            isLegend && isTypeAlwaysOneWay(type) && !isAOneWayDirectionSelected;
+          const onClick = isDisabled
+            ? undefined
+            : () =>
                 dispatch({
                   type: "toggle",
-                  characteristic: "elevation",
-                  key: elevation.key,
+                  characteristic: "type",
+                  key: type.key,
                 });
-              return (
-                <div key={elevation.name} style={{ padding: "5px" }}>
-                  <input
-                    type={isLegend ? "radio" : "checkbox"}
-                    id="key"
-                    name="elevation"
-                    style={{ cursor: "pointer" }}
-                    checked={elevations[elevation.key]}
-                    onChange={action}
-                  />
-                  <label
-                    htmlFor="comfortable"
-                    style={{
-                      cursor: "pointer",
-                      color: elevation.colour ? WHITE : BLACK,
-                      backgroundColor: elevation.colour,
-                      padding: "4px",
-                    }}
-                    onClick={action}
-                  >
-                    {elevation.name}
-                  </label>
-                </div>
-              );
-            })}
-            <ErrorFooter options={elevations} />
-          </td>
-        </tr>
-      </tbody>
-    </table>
+          return (
+            <Input
+              key={type.key}
+              type={isLegend ? "radio" : "checkbox"}
+              name={type.name}
+              isDisabled={isDisabled}
+              isChecked={types[type.key]}
+              onClick={onClick}
+              backgroundColor={type.colour ?? type.oneWayColour}
+            />
+          );
+        })}
+        <ErrorFooter options={types} />
+      </div>
+
+      <div style={{ verticalAlign: "top" }}>
+        {isFilters && (
+          <HeaderCheckbox
+            characteristic="direction"
+            options={directions}
+            dispatch={dispatch}
+          />
+        )}
+
+        {DIRECTIONS.map((direction) => {
+          const isDisabled =
+            isLegend &&
+            isAnAlwaysOneWayTypeSelected &&
+            !isDirectionOneWay(direction);
+          const onClick = isDisabled
+            ? undefined
+            : () =>
+                dispatch({
+                  type: "toggle",
+                  characteristic: "direction",
+                  key: direction.key,
+                });
+          return (
+            <Input
+              key={direction.key}
+              type={isLegend ? "radio" : "checkbox"}
+              name={direction.name}
+              isDisabled={isDisabled}
+              isChecked={directions[direction.key]}
+              onClick={onClick}
+            />
+          );
+        })}
+        <ErrorFooter options={directions} />
+      </div>
+
+      <div style={{ verticalAlign: "top" }}>
+        {isFilters && (
+          <HeaderCheckbox
+            characteristic="elevation"
+            options={elevations}
+            dispatch={dispatch}
+          />
+        )}
+
+        {ELEVATIONS.map((elevation) => {
+          const onClick = () =>
+            dispatch({
+              type: "toggle",
+              characteristic: "elevation",
+              key: elevation.key,
+            });
+          return (
+            <Input
+              key={elevation.key}
+              type={isLegend ? "radio" : "checkbox"}
+              name={elevation.name}
+              isChecked={elevations[elevation.key]}
+              onClick={onClick}
+              backgroundColor={elevation.colour}
+            />
+          );
+        })}
+        <ErrorFooter options={elevations} />
+      </div>
+    </div>
   );
 }
 
@@ -185,26 +142,63 @@ const HeaderCheckbox = ({ characteristic, options, dispatch }) => {
   };
 
   return (
-    <div style={{ padding: "5px" }}>
-      <input
-        type="checkbox"
-        id="key"
-        name={characteristic}
-        style={{ cursor: "pointer" }}
-        checked={Object.values(options).every((b) => b)}
-        onChange={toggleAll}
-      />
-      <label
-        htmlFor={`all-${characteristic}`}
-        style={{
-          cursor: "pointer",
-          padding: "4px",
-        }}
-        onClick={toggleAll}
-      >
+    <Input
+      type="checkbox"
+      name={
         <b>
           <u>All {characteristic}s</u>
         </b>
+      }
+      isChecked={Object.values(options).every((b) => b)}
+      onClick={toggleAll}
+      withBorder={false}
+    />
+  );
+};
+
+const Input = ({
+  type,
+  name,
+  isDisabled,
+  isChecked,
+  onClick,
+  backgroundColor,
+  withBorder = true,
+}) => {
+  return (
+    <div
+      onClick={onClick}
+      style={{
+        cursor: isDisabled ? undefined : "pointer",
+        color: backgroundColor ? WHITE : undefined,
+        opacity: isDisabled ? 0.2 : 1,
+        backgroundColor,
+        border: `solid 1px ${
+          withBorder ? backgroundColor ?? BLACK : "Transparent"
+        }`,
+        borderRadius: "5px",
+        width: "11em",
+        padding: "3px 0 3px 0",
+        margin: "0 0 5px 0",
+      }}
+    >
+      <label
+        htmlFor={name}
+        style={{
+          cursor: isDisabled ? undefined : "pointer",
+          display: "flex",
+        }}
+      >
+        <input
+          type={type}
+          name={name}
+          disabled={isDisabled}
+          checked={isChecked}
+          style={{ cursor: isDisabled ? undefined : "pointer" }}
+          // change handled by div
+          readOnly
+        />
+        {name}
       </label>
     </div>
   );
