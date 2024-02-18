@@ -400,16 +400,24 @@ export const ROUTES = {
   hastingsPark: {
     name: "Hastings Park",
     legs: [
-      { name: "Pandora <-> Windermere", videos: {} },
-      { name: "Pandora <-> Cassiar", distance: 1.5, videos: {} },
-      { name: "Pandora <-> Portside", distance: 1.5, videos: {} },
-      { name: "Windermere <-> Cassiar", distance: 0.7, videos: {} },
       {
         name: "Windermere <-> Portside",
         distance: 1.0,
         videos: { southbound: VIDEOS.hastingsPortsideWindermere },
       },
+      {
+        name: "Pandora <-> Cassiar",
+        distance: 1.5,
+        videos: { westbound: VIDEOS.hastingsCassiarPandora },
+      },
+      { name: "Pandora <-> Portside", distance: 1.5, videos: {} },
+      {
+        name: "Windermere <-> Cassiar",
+        distance: 0.7,
+        videos: { northbound: VIDEOS.hastingsWindermereCassiar },
+      },
       { name: "Cassiar <-> Portside", videos: {} },
+      { name: "Pandora <-> Windermere", videos: {} },
     ],
   },
   heather: {
@@ -613,7 +621,12 @@ export const ROUTES = {
   },
   pandora: {
     name: "Pandora",
-    legs: [{ distance: 2.2, videos: { eastbound: VIDEOS.pandoraEb } }],
+    legs: [
+      {
+        distance: 2.2,
+        videos: { eastbound: VIDEOS.pandoraEb, westbound: VIDEOS.pandoraWb },
+      },
+    ],
   },
   parkside: {
     name: "Parkside",
@@ -830,7 +843,15 @@ export const ROUTES = {
   },
   windermere: {
     name: "Windermere",
-    legs: [{ distance: 0.4, videos: { southbound: VIDEOS.windermereSb } }],
+    legs: [
+      {
+        distance: 0.4,
+        videos: {
+          northbound: VIDEOS.windermereNb,
+          southbound: VIDEOS.windermereSb,
+        },
+      },
+    ],
   },
   windsor: {
     name: "Windsor",

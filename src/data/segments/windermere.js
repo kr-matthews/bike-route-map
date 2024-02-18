@@ -7,7 +7,8 @@ export const WINDERMERE = [
     routeNames: [ROUTES.windermere.name],
     description: "primary",
     type: "quiet",
-    videos: [VIDEOS.windermereSb.id],
+    videos: [VIDEOS.windermereNb.id, VIDEOS.windermereSb.id],
+    videosStartAtStart: [VIDEOS.windermereNb.id],
     videosStartAtEnd: [VIDEOS.windermereSb.id],
     videosEndAtStart: [VIDEOS.windermereSb.id],
     positions: [

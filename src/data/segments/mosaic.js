@@ -86,11 +86,12 @@ export const MOSAIC = [
     ],
   },
   {
-    routeNames: [ROUTES.mosaic.name],
+    routeNames: [ROUTES.mosaic.name, ROUTES.pandora.name],
     description: "north tip",
     type: "quiet",
-    videos: [VIDEOS.mosaicSb.id, VIDEOS.pandoraEb.id],
+    videos: [VIDEOS.mosaicSb.id, VIDEOS.pandoraWb.id, VIDEOS.pandoraEb.id],
     videosStartAtEnd: [VIDEOS.mosaicSb.id, VIDEOS.pandoraEb.id],
+    videosEndAtEnd: [VIDEOS.pandoraWb.id],
     positions: [MCLEAN_FRANKLIN, [49.28321, -123.07408], MCLEAN_POWELL],
   },
 ];

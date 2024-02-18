@@ -231,9 +231,19 @@ const VIDEOS = {
     date: new Date("2023 06 03"),
     minutes: 4,
   },
+  hastingsCassiarPandora: {
+    id: "7BU8N2zQjLM",
+    date: new Date("2024 02 09"),
+    minutes: 6,
+  },
   hastingsPortsideWindermere: {
     id: "DMYMtO0aF5A",
     date: new Date("2023 12 23"),
+    minutes: 3,
+  },
+  hastingsWindermereCassiar: {
+    id: "Vwp0r4omEe0",
+    date: new Date("2024 02 09"),
     minutes: 3,
   },
   heatherSb: {
@@ -382,6 +392,11 @@ const VIDEOS = {
     id: "-vNVdK9fnMU",
     date: new Date("2023 05 30"),
     minutes: 8,
+  },
+  pandoraWb: {
+    id: "qAg-vWAWIEc",
+    date: new Date("2024 02 09"),
+    minutes: 7,
   },
   penderEb: {
     id: "V1_06Q29Yzo",
@@ -532,6 +547,11 @@ const VIDEOS = {
     id: "s58YehJpLE4",
     date: new Date("2023 12 22"),
     minutes: 11,
+  },
+  windermereNb: {
+    id: "RAq0VZ1MFHk",
+    date: new Date("2024 02 09"),
+    minutes: 2,
   },
   windermereSb: {
     id: "wzduU1Z4UHY",
