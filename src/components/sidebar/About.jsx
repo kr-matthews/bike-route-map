@@ -9,6 +9,7 @@ import {
 import { disclaimer } from "../../utils/strings";
 import Panel from "./Panel";
 import { VIEWS } from "./Sidebar";
+import { BLACK, RED } from "../../utils/colours";
 
 export default function About({ navigateTo }) {
   return (
@@ -44,22 +45,27 @@ export default function About({ navigateTo }) {
         <p>
           This is a map of bike routes in and around Vancouver. All bike routes
           in <b>Vancouver</b> are included. Many (but not all) bike routes in{" "}
-          <b>Burnaby</b>, <b>Richmond</b>, <b>New Westminster</b>, and{" "}
-          <b>UBC</b> are included. A few routes in adjacent regions (North
-          Vancouver, West Vancouver, Port Moody, Coquitlam, Surrey, etc.) are
-          included. But there are plenty more bike routes (and other instances
-          of bike infrastructure) that are not shown on this map. More routes
-          may be added over time.
+          <b>UBC</b>, <b>Richmond</b>, <b>Burnaby</b>, and{" "}
+          <b>New Westminster</b>, are included. A few routes in adjacent regions
+          (North Vancouver, West Vancouver, Port Moody, Coquitlam, Surrey, etc.)
+          are included. But there are plenty more bike routes (and other
+          instances of bike infrastructure) that are not shown on this map. More
+          routes may be added over time.
         </p>
         <p>
           When played, videos have chapters to make it easy to find a specific
           portion of the route. Consider watching videos at 2x speed ("Shift" +
           "{">"}" to speed up).
         </p>
-        <p style={{ color: "red" }}>
+        <p style={{ color: RED }}>
           {disclaimer}{" "}
-          <span style={{ color: "black" }}>
-            If you see any errors, let me know via email or GitHub below.
+          <span style={{ color: BLACK }}>
+            Note: in situations where it's unlikely to cause confusion, some
+            routes may have brief segments with the wrong colour - for example,
+            marked as a quiet street (purple) or a painted lane (blue) but has a
+            half-block which is physically separated (should be green). If you
+            see any potentially <em>misleading</em> errors, then let me know via
+            email or GitHub below.
           </span>
         </p>
 
