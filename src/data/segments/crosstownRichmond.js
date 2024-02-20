@@ -2,6 +2,12 @@ import { RAILWAY_COLBECK_E, RAILWAY_GREENWAY_COLBECK } from "../intersections";
 import { ROUTES } from "../routes";
 
 const RAILWAY_COLBECK_EE = [49.15249, -123.16971];
+const NO_2_COLVILLE_E = [49.15156, -123.15884];
+const NO_2_DANUBE_E = [49.15111, -123.15883];
+const BLUNDELL_PARK_W = [49.15217, -123.15494];
+const BLUNDELL_PARK_E = [49.15186, -123.15046];
+const NO_3_LUCAS_N_W = [49.15191, -123.1368];
+const NO_3_LUCAS_S_E = [49.15158, -123.13656];
 const SAINT_ALBANS_LUNEN = [49.15226, -123.13096];
 const SAINT_ALBANS_BOWCOCK = [49.15135, -123.13096];
 
@@ -17,8 +23,8 @@ export const CROSSTOWN_RICHMOND = [
   },
   {
     routeNames: [ROUTES.crosstownRichmond.name],
-    description: "railway to saint albans",
-    type: "quiet", // !!!
+    description: "railway to no. 2",
+    type: "quiet",
     positions: [
       RAILWAY_COLBECK_E,
       RAILWAY_COLBECK_EE,
@@ -30,8 +36,21 @@ export const CROSSTOWN_RICHMOND = [
       [49.15158, -123.16219],
       [49.15157, -123.16208],
       [49.15156, -123.16039],
-      [49.15156, -123.15884],
-      [49.15111, -123.15883],
+      NO_2_COLVILLE_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.crosstownRichmond.name],
+    description: "no. 2",
+    type: "mixed",
+    positions: [NO_2_COLVILLE_E, NO_2_DANUBE_E],
+  },
+  {
+    routeNames: [ROUTES.crosstownRichmond.name],
+    description: "no. 2 to blundell park",
+    type: "quiet",
+    positions: [
+      NO_2_DANUBE_E,
       [49.15112, -123.15845],
       [49.15113, -123.15833],
       [49.15118, -123.15821],
@@ -46,7 +65,15 @@ export const CROSSTOWN_RICHMOND = [
       [49.15138, -123.15462],
       [49.15155, -123.15415],
       [49.15169, -123.15431],
-      [49.15217, -123.15494],
+      BLUNDELL_PARK_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.crosstownRichmond.name],
+    description: "blundell park",
+    type: "comfortable",
+    positions: [
+      BLUNDELL_PARK_W,
       [49.15225, -123.15475],
       [49.15232, -123.15423],
       [49.15243, -123.15402],
@@ -59,15 +86,39 @@ export const CROSSTOWN_RICHMOND = [
       [49.15233, -123.15244],
       [49.15225, -123.15123],
       [49.15207, -123.15093],
-      [49.15186, -123.15046],
+      BLUNDELL_PARK_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.crosstownRichmond.name],
+    description: "blundell park to no. 3",
+    type: "quiet",
+    positions: [
+      BLUNDELL_PARK_E,
       [49.15186, -123.14994],
       [49.15186, -123.14925],
       [49.15188, -123.14884],
       [49.15191, -123.14785],
-      [49.15191, -123.1368],
+      NO_3_LUCAS_N_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.crosstownRichmond.name],
+    description: "no. 3",
+    type: "mixed",
+    positions: [
+      NO_3_LUCAS_N_W,
       [49.15166, -123.13679],
       [49.15166, -123.13658],
-      [49.15158, -123.13656],
+      NO_3_LUCAS_S_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.crosstownRichmond.name],
+    description: "no. 3 to saint albans",
+    type: "quiet",
+    positions: [
+      NO_3_LUCAS_S_E,
       [49.15157, -123.13489],
       [49.15162, -123.13464],
       [49.15171, -123.1345],

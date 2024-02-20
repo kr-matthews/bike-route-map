@@ -22,6 +22,8 @@ import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 const ONTARIO_69TH_NW = [49.20946, -123.10677];
+const ONTARIO_52ND_S = [49.22289, -123.10606];
+const ONTARIO_49TH_N = [49.22581, -123.10597];
 const NORTH_OF_ONTARIO_33RD = [49.24148, -123.10533];
 const ONTARIO_MARINE_N = [49.21249, -123.10655];
 const ONTARIO_ATHLETES = [49.27151, -123.10456];
@@ -66,7 +68,7 @@ export const ONTARIO = [
   },
   {
     routeNames: [ROUTES.ontario.name],
-    description: "58th to 33rd",
+    description: "58th to 52nd",
     type: "quiet",
     videos: [VIDEOS.ontarioNb.id],
     positions: [
@@ -74,8 +76,46 @@ export const ONTARIO = [
       [49.21854, -123.10621],
       [49.22024, -123.10614],
       [49.22204, -123.10609],
-      [49.22383, -123.10602], // !!! ontario barriers
-      [49.22574, -123.10597],
+      ONTARIO_52ND_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.ontario.name],
+    description: "nb: 52nd to 49th",
+    type: "dedicated",
+    oneWay: "required",
+    videos: [VIDEOS.ontarioNb.id],
+    positions: [
+      ONTARIO_52ND_S,
+      [49.22304, -123.106],
+      [49.22386, -123.10599],
+      [49.22483, -123.10595],
+      [49.22567, -123.10592],
+      ONTARIO_49TH_N,
+    ],
+  },
+  {
+    routeNames: [ROUTES.ontario.name],
+    description: "sb: 49th to 52nd",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      ONTARIO_49TH_N,
+      [49.22568, -123.10605],
+      [49.22468, -123.10607],
+      [49.22447, -123.10607],
+      [49.22386, -123.1061],
+      [49.22305, -123.10612],
+      ONTARIO_52ND_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.ontario.name],
+    description: "49th to 33rd",
+    type: "quiet",
+    videos: [VIDEOS.ontarioNb.id],
+    positions: [
+      ONTARIO_49TH_N,
       [49.22766, -123.1059],
       ONTARIO_45TH,
       [49.23097, -123.10574],

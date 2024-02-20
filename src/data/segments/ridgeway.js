@@ -23,6 +23,8 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const CAMOSUN_16TH_W_S = [49.25794, -123.19715];
+const CAMOSUN_16TH_E_S = [49.25793, -123.19658];
 const MACKENZIE_QUESNEL = [49.24786, -123.17022];
 const PUGET_31ST = [49.2442, -123.1628];
 const PUGET_NARVAEZ = [49.24402, -123.16271];
@@ -32,7 +34,7 @@ const VINE_33RD = [49.24221, -123.15964];
 export const RIDGEWAY = [
   {
     routeNames: [ROUTES.ridgeway.name],
-    description: "off broadway to balaclava",
+    description: "off broadway to 16th",
     type: "quiet",
     videos: [VIDEOS.ridgewayWb.id],
     positions: [
@@ -42,8 +44,23 @@ export const RIDGEWAY = [
       DISCOVER_15TH,
       [49.25915, -123.20015],
       [49.25911, -123.1971],
-      [49.25794, -123.19715],
-      [49.25793, -123.19658],
+      CAMOSUN_16TH_W_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.ridgeway.name],
+    description: "16th path",
+    type: "combined",
+    videos: [VIDEOS.ridgewayWb.id],
+    positions: [CAMOSUN_16TH_W_S, CAMOSUN_16TH_E_S],
+  },
+  {
+    routeNames: [ROUTES.ridgeway.name],
+    description: "16th to balaclava",
+    type: "quiet",
+    videos: [VIDEOS.ridgewayWb.id],
+    positions: [
+      CAMOSUN_16TH_E_S,
       [49.25654, -123.19657],
       [49.25653, -123.19356],
       [49.25651, -123.19076],

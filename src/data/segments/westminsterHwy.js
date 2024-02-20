@@ -1,7 +1,10 @@
 import {
+  BIRCH_WESTMINSTER_S,
   BOUNDARY_WESTMINSTER_EN,
   BOUNDARY_WESTMINSTER_ES,
   FRASERWOOD_WESTMINSTER_CONNECTION_S,
+  GARDEN_CITY_WESTMINSTER_NE,
+  GARDEN_CITY_WESTMINSTER_SE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
@@ -52,11 +55,11 @@ export const WESTMINSTER_HWY = [
     oneWay: "required",
     elevation: 0.5,
     positions: [
-      // GARDEN_CITY_WESTMINSTER_SE,
+      GARDEN_CITY_WESTMINSTER_SE,
       [49.17003, -123.12419],
       [49.17005, -123.12223],
       [49.17006, -123.11931],
-      // BIRCH_WESTMINSTER_S,
+      BIRCH_WESTMINSTER_S,
       [49.17005, -123.11414],
       [49.17005, -123.10838],
       // SHELL_WESTMINSTER_SE,
@@ -146,15 +149,15 @@ export const WESTMINSTER_HWY = [
       [49.17027, -123.11415],
       [49.17028, -123.1193],
       KATSURA_WESTMINSTER_N,
-      // GARDEN_CITY_WESTMINSTER_NE,
+      GARDEN_CITY_WESTMINSTER_NE,
     ],
   },
   {
     routeNames: [ROUTES.westminsterHwy.name],
     description: "wb: continue straight at garden city",
-    type: "shoulder",
+    type: "painted",
     oneWay: "required",
-    positions: [KATSURA_WESTMINSTER_N, [49.17021, -123.12431]],
+    positions: [KATSURA_WESTMINSTER_N, [49.17019, -123.12431]],
   },
   {
     routeNames: [ROUTES.westminsterHwy.name],
@@ -218,7 +221,7 @@ export const WESTMINSTER_HWY = [
       WESTMINSTER_PATH_START_NEAR_NO_6,
     ],
   },
-  // !! move to no. 6
+  // ! move to no. 6 if/when applicable
   {
     routeNames: [ROUTES.westminsterHwy.name],
     description: "no. 6 crossing westminster",

@@ -21,6 +21,13 @@ const VINE_10TH_SE = [49.26292, -123.15764];
 const MAPLE_10TH_NW = [49.26285, -123.15062];
 const OAK_10TH_W = [49.26245, -123.12669];
 const ASH_10TH_E = [49.2623, -123.1175];
+const MAIN_10TH_W = [49.26202, -123.10104];
+const WATSON_10TH_S = [49.26199, -123.10035];
+const KINGSWAY_10TH_SE = [49.26196, -123.09842];
+const MALL_10TH_N = [49.26201, -123.0975];
+const MALL_10TH_E = [49.26198, -123.09705];
+const PRINCE_EDWARD_10TH_N_W = [49.26197, -123.09617];
+const PRINCE_EDWARD_10TH_S_E = [49.26159, -123.096];
 const COMMERCIAL_10TH_SE = [49.26135, -123.06969];
 const VICTORIA_GRANDVIEW_CUT_SE = [49.2614, -123.06583];
 const VICTORIA_GRANDVIEW_CUT_NE = [49.26201, -123.06581];
@@ -123,7 +130,7 @@ export const TENTH = [
   },
   {
     routeNames: [ROUTES.tenth.name],
-    description: "hospital to windsor",
+    description: "hospital to main",
     type: "quiet",
     videos: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
     positions: [
@@ -136,13 +143,93 @@ export const TENTH = [
       [49.26212, -123.10689],
       ONTARIO_10TH,
       [49.26205, -123.10302],
-      [49.26201, -123.10104],
-      [49.26199, -123.10034],
-      [49.26199, -123.09865],
-      [49.26198, -123.09616],
-      [49.26193, -123.09608],
-      [49.26163, -123.09609], // !!! kingsway lanes
-      [49.26159, -123.096],
+      MAIN_10TH_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.tenth.name],
+    description: "eb: main to watson",
+    type: "quiet",
+    oneWay: "required",
+    videos: [VIDEOS.tenthEb.id],
+    positions: [MAIN_10TH_W, [49.262, -123.10082], WATSON_10TH_S],
+  },
+  {
+    routeNames: [ROUTES.tenth.name],
+    description: "eb: watson to kingsway",
+    type: "painted",
+    oneWay: "required",
+    videos: [VIDEOS.tenthEb.id],
+    positions: [WATSON_10TH_S, [49.26196, -123.09885], KINGSWAY_10TH_SE],
+  },
+  {
+    routeNames: [ROUTES.tenth.name],
+    description: "eb: kingsway to mall",
+    type: "dedicated",
+    oneWay: "required",
+    videos: [VIDEOS.tenthEb.id],
+    positions: [
+      KINGSWAY_10TH_SE,
+      [49.26195, -123.09764],
+      [49.26196, -123.0975],
+      [49.26196, -123.09716],
+      MALL_10TH_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.tenth.name],
+    description: "wb: prince edward-ish to mall",
+    type: "quiet",
+    oneWay: "required",
+    videos: [VIDEOS.tenthWb.id],
+    positions: [MALL_10TH_E, [49.262, -123.09715], MALL_10TH_N],
+  },
+  {
+    routeNames: [ROUTES.tenth.name],
+    description: "wb: mall to main",
+    type: "dedicated",
+    oneWay: "required",
+    videos: [VIDEOS.tenthWb.id],
+    positions: [
+      MALL_10TH_N,
+      [49.26203, -123.09758],
+      [49.26204, -123.09839],
+      [49.26203, -123.09892],
+      [49.26203, -123.09919],
+      [49.26205, -123.0999],
+      [49.26204, -123.10037],
+      [49.26205, -123.1008],
+      MAIN_10TH_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.tenth.name],
+    description: "before prince edward",
+    type: "quiet",
+    videos: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
+    positions: [MALL_10TH_E, PRINCE_EDWARD_10TH_N_W],
+  },
+  {
+    routeNames: [ROUTES.tenth.name],
+    description: "prince edward",
+    type: "dedicated",
+    videos: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
+    positions: [
+      PRINCE_EDWARD_10TH_N_W,
+      [49.26191, -123.0961],
+      [49.26185, -123.09608],
+      [49.26168, -123.0961],
+      [49.26163, -123.09607],
+      PRINCE_EDWARD_10TH_S_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.tenth.name],
+    description: "prince edward to windsor",
+    type: "quiet",
+    videos: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
+    positions: [
+      PRINCE_EDWARD_10TH_S_E,
       [49.26158, -123.09494],
       [49.26157, -123.09303],
       [49.26155, -123.09107],

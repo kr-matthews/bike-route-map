@@ -60,6 +60,7 @@ const EAST_OF_TRAFALGAR = [49.27359, -123.16412];
 const BALSAM_CORNWALL_LANE_N = [49.2731, -123.15969];
 const ARBUTUS_WHYTE_LANE_N = [49.27584, -123.1515];
 const CHESTNUT_SEASIDE = [49.27725, -123.14617];
+const SEASIDE_KITS_MARINA = [49.27487, -123.13983];
 const EAST_OF_SPYGLASS = [49.2712, -123.11435];
 
 // !! connections: bc place? to confirm
@@ -405,13 +406,21 @@ export const SEASIDE = [
   },
   {
     routeNames: [ROUTES.seaside.name],
-    description: "false creek south: whyte to spyglass",
-    type: "dedicated",
+    description: "false creek south: whyte to end of marina",
+    type: "quiet",
     positions: [
       SEAWALL_WHYTE,
       [49.27525, -123.14005],
       [49.2752, -123.14006],
-      [49.27487, -123.13983],
+      SEASIDE_KITS_MARINA,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "false creek south: marina to spyglass",
+    type: "dedicated",
+    positions: [
+      SEASIDE_KITS_MARINA,
       [49.27475, -123.13982],
       [49.27464, -123.13974],
       [49.27446, -123.1396],

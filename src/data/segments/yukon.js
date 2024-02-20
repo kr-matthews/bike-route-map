@@ -18,9 +18,11 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const YUKON_16TH_E_N = [49.2569, -123.1125];
+const YUKON_16TH_W_N = [49.25691, -123.11314];
 const YUKON_12TH = [49.26037, -123.11302];
-const WYLIE_2ND_N = [49.2676, -123.11316];
 const YUKON_BROADWAY = [49.26325, -123.11285];
+const WYLIE_2ND_N = [49.2676, -123.11316];
 
 export const YUKON = [
   {
@@ -51,7 +53,7 @@ export const YUKON = [
   },
   {
     routeNames: [ROUTES.yukon.name],
-    description: "king edward to 12th",
+    description: "king edward to 16th",
     type: "quiet",
     videos: [VIDEOS.yukonSb.id],
     positions: [
@@ -60,11 +62,22 @@ export const YUKON = [
       [49.252, -123.1127],
       [49.25392, -123.11262],
       [49.25578, -123.11255],
-      [49.2569, -123.1125],
-      [49.25691, -123.11314],
-      YUKON_14TH,
-      YUKON_12TH,
+      YUKON_16TH_E_N,
     ],
+  },
+  {
+    routeNames: [ROUTES.yukon.name],
+    description: "16th",
+    type: "dedicated",
+    videos: [VIDEOS.yukonSb.id],
+    positions: [YUKON_16TH_E_N, YUKON_16TH_W_N],
+  },
+  {
+    routeNames: [ROUTES.yukon.name],
+    description: "16th to 12th",
+    type: "quiet",
+    videos: [VIDEOS.yukonSb.id],
+    positions: [YUKON_16TH_W_N, YUKON_14TH, YUKON_12TH],
   },
   {
     routeNames: [ROUTES.yukon.name],

@@ -25,11 +25,14 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-const HEATHER_33RD_S = [49.24112, -123.12065];
 const WILLOW_35TH_SW = [49.23927, -123.12381];
 const WILLOW_33RD_SW = [49.24118, -123.12371];
+
+const HEATHER_MARINE_W_N = [49.20716, -123.12449];
+const HEATHER_MARINE_E_NN = [49.20747, -123.12424];
 const HEATHER_52ND = [49.22326, -123.12369];
 const NORTH_OF_49TH = [49.22709, -123.12176];
+const HEATHER_33RD_S = [49.24112, -123.12065];
 
 export const HEATHER = [
   // willow/33rd extras
@@ -127,16 +130,32 @@ export const HEATHER = [
   // primary
   {
     routeNames: [ROUTES.heather.name],
-    description: "kent to 67",
+    description: "kent to marine",
     type: "quiet",
     videos: [VIDEOS.heatherSb.id],
     videosEndAtStart: [VIDEOS.heatherSb.id],
+    positions: [HEATHER_KENT_N, [49.20698, -123.12434], HEATHER_MARINE_W_N],
+  },
+  {
+    routeNames: [ROUTES.heather.name],
+    description: "marine",
+    type: "dedicated",
+    videos: [VIDEOS.heatherSb.id],
     positions: [
-      HEATHER_KENT_N,
-      [49.20698, -123.12434],
-      [49.20719, -123.12451],
-      [49.2073, -123.12427],
-      [49.20742, -123.12423],
+      HEATHER_MARINE_W_N,
+      [49.20724, -123.12431],
+      [49.20729, -123.12427],
+      [49.20741, -123.12431],
+      HEATHER_MARINE_E_NN,
+    ],
+  },
+  {
+    routeNames: [ROUTES.heather.name],
+    description: "marine to 67th",
+    type: "quiet",
+    videos: [VIDEOS.heatherSb.id],
+    positions: [
+      HEATHER_MARINE_E_NN,
       [49.20838, -123.12421],
       [49.20954, -123.12417],
       HEATHER_67TH,

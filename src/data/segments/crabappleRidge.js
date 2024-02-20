@@ -8,10 +8,16 @@ import {
 import { ROUTES } from "../routes";
 
 const SECOND_CHATHAM = [49.12644, -123.18425];
+const GORMOND_ALLEY_RAYMOND = [49.14588, -123.18694];
+const GORMOND_ALLEY_BARMOND = [49.14751, -123.18693];
 const KIRKMOND_FRANCIS = [49.14833, -123.18893];
 const MILLMORE_FRANCIS = [49.14833, -123.18989];
+const MILLMORE_WARDMORE = [49.1491, -123.18992];
+const MILLMORE_ULLSMORE = [49.14983, -123.18991];
 const DALEMORE_BLUNDELL = [49.15566, -123.18761];
 const GABRIOLA_BLUNDELL = [49.15566, -123.1898];
+const BOWEN_BOWEN = [49.15874, -123.1895];
+const QUILCHENA_DECOURCY = [49.15946, -123.18697];
 const BARNARD_RIVER_NE = [49.17414, -123.18796];
 const BARNARD_MIDDLE_ARM = [49.17459, -123.18785];
 
@@ -58,17 +64,33 @@ export const CRABAPPLE_RIDGE = [
   },
   {
     routeNames: [ROUTES.crabappleRidge.name],
-    description: "williams to francis",
-    type: "quiet", // !!! ?
+    description: "williams to raymond",
+    type: "quiet",
     positions: [
       NISHI_WILLIAMS_N,
       [49.14178, -123.18562],
       [49.1418, -123.1873],
       [49.14433, -123.18732],
       [49.14588, -123.18733],
-      [49.14588, -123.18694],
+      GORMOND_ALLEY_RAYMOND,
+    ],
+  },
+  {
+    routeNames: [ROUTES.crabappleRidge.name],
+    description: "alley from raymond to barmond",
+    type: "mixed",
+    positions: [
+      GORMOND_ALLEY_RAYMOND,
       [49.1462, -123.18693],
-      [49.14751, -123.18693],
+      GORMOND_ALLEY_BARMOND,
+    ],
+  },
+  {
+    routeNames: [ROUTES.crabappleRidge.name],
+    description: "barmond to francis",
+    type: "quiet",
+    positions: [
+      GORMOND_ALLEY_BARMOND,
       [49.14751, -123.18891],
       KIRKMOND_FRANCIS,
     ],
@@ -81,12 +103,22 @@ export const CRABAPPLE_RIDGE = [
   },
   {
     routeNames: [ROUTES.crabappleRidge.name],
-    description: "francis to blundell",
-    type: "quiet", // !!! ?
+    description: "francis to wardmore",
+    type: "quiet",
+    positions: [MILLMORE_FRANCIS, MILLMORE_WARDMORE],
+  },
+  {
+    routeNames: [ROUTES.crabappleRidge.name],
+    description: "millmore path",
+    type: "mixed",
+    positions: [MILLMORE_WARDMORE, MILLMORE_ULLSMORE],
+  },
+  {
+    routeNames: [ROUTES.crabappleRidge.name],
+    description: "ullsmore to blundell",
+    type: "quiet",
     positions: [
-      MILLMORE_FRANCIS,
-      [49.1491, -123.18992],
-      [49.14983, -123.18991],
+      MILLMORE_ULLSMORE,
       [49.14983, -123.18872],
       [49.1534, -123.18873],
       [49.1534, -123.1876],
@@ -101,8 +133,8 @@ export const CRABAPPLE_RIDGE = [
   },
   {
     routeNames: [ROUTES.crabappleRidge.name],
-    description: "blundell to barnard",
-    type: "quiet", // !!! ?
+    description: "blundell to quilchena",
+    type: "quiet",
     positions: [
       GABRIOLA_BLUNDELL,
       [49.15605, -123.18979],
@@ -114,13 +146,29 @@ export const CRABAPPLE_RIDGE = [
       [49.15689, -123.18942],
       [49.15701, -123.18947],
       [49.15718, -123.1895],
-      [49.15874, -123.1895],
+      BOWEN_BOWEN,
+    ],
+  },
+  {
+    routeNames: [ROUTES.crabappleRidge.name],
+    description: "quilchena path",
+    type: "mixed",
+    positions: [
+      BOWEN_BOWEN,
       [49.15877, -123.18891],
       [49.1587, -123.18879],
       [49.15869, -123.18728],
       [49.15868, -123.18699],
       [49.15872, -123.18694],
-      [49.15946, -123.18697],
+      QUILCHENA_DECOURCY,
+    ],
+  },
+  {
+    routeNames: [ROUTES.crabappleRidge.name],
+    description: "quilchena to barnard",
+    type: "quiet",
+    positions: [
+      QUILCHENA_DECOURCY,
       [49.15947, -123.18893],
       [49.16085, -123.18892],
       [49.16091, -123.18889],

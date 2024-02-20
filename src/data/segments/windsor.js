@@ -17,6 +17,8 @@ const LOOP_NW = [49.23123, -123.08521];
 const LOOP_S = [49.23099, -123.08505];
 const ROSS_PARKING_LOT_W = [49.23091, -123.08322];
 const WINDSOR_41ST_N = [49.23284, -123.08482];
+const WINDSOR_33RD_W_N = [49.24031, -123.08459];
+const WINDSOR_33RD_E_NN = [49.24056, -123.0841];
 
 export const WINDSOR = [
   {
@@ -88,7 +90,7 @@ export const WINDSOR = [
   },
   {
     routeNames: [ROUTES.windsor.name],
-    description: "park to hillcrest",
+    description: "park to 33rd",
     type: "quiet",
     videos: [VIDEOS.windsorNb.id],
     positions: [
@@ -98,13 +100,27 @@ export const WINDSOR = [
       [49.23562, -123.08475],
       WINDSOR_37TH,
       [49.23823, -123.08465],
-      [49.24031, -123.08459],
-      [49.24031, -123.08417],
-      [49.24052, -123.08417],
-      [49.24056, -123.0841],
-      [49.24141, -123.08406],
-      WINDSOR_31ST,
+      WINDSOR_33RD_W_N,
     ],
+  },
+  {
+    routeNames: [ROUTES.windsor.name],
+    description: "33rd",
+    type: "dedicated",
+    videos: [VIDEOS.windsorNb.id],
+    positions: [
+      WINDSOR_33RD_W_N,
+      [49.24031, -123.08421],
+      [49.24053, -123.08417],
+      WINDSOR_33RD_E_NN,
+    ],
+  },
+  {
+    routeNames: [ROUTES.windsor.name],
+    description: "33rd to hillcrest",
+    type: "quiet",
+    videos: [VIDEOS.windsorNb.id],
+    positions: [WINDSOR_33RD_E_NN, [49.24141, -123.08406], WINDSOR_31ST],
   },
   {
     routeNames: [ROUTES.windsor.name, ROUTES.hillcrest.name],

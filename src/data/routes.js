@@ -2,7 +2,7 @@ import { VIDEOS } from "./videos";
 
 // Potential future additions
 // Burnaby:
-// SFU: (to do)
+// SFU: gaglardi; parkway; university dr e; university dr w; ...more
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
 // Richmond: queen's canal; river pkwy; minoru; no. 6 paths; lynas (no. 2 bridge); bridgeport connection; no. 2 path; river trail/dyke
 // YVR: ferguson; russ baker; bridgeport bridge; paths
