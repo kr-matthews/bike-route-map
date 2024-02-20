@@ -64,10 +64,20 @@ const VIDEOS = {
     date: new Date("2023 11 03"),
     minutes: 14,
   },
+  beattyNb: {
+    id: "YWF0uRw3EjQ",
+    date: new Date("2024 02 15"),
+    minutes: 3,
+  },
   beattySb: {
     id: "Kqxlkrkb33s",
     date: new Date("2023 10 01"),
     minutes: 5,
+  },
+  bridgeportTrailEb: {
+    id: "isnLEyAJyPo",
+    date: new Date("2024 02 12"),
+    minutes: 4,
   },
   burrardNb: {
     id: "62m58RRdHcg",
@@ -78,6 +88,11 @@ const VIDEOS = {
     id: "pFj4NnJ80Fk",
     date: new Date("2023 08 21"),
     minutes: 12,
+  },
+  burrardBridgeSb: {
+    id: "-ALcq60mb5k",
+    date: new Date("2024 02 15"),
+    minutes: 5,
   },
   buteSb: {
     id: "bcwRc5Bg550",
@@ -110,6 +125,11 @@ const VIDEOS = {
   //   date: new Date("2023 07 05"),
   //   minutes: 4,
   // },
+  canadaLineSb: {
+    id: "svcADiqZWQM",
+    date: new Date("2024 02 12"),
+    minutes: 15,
+  },
   carderoNb: {
     id: "tsSkeanHrXM",
     date: new Date("2023 12 24"),
@@ -417,6 +437,11 @@ const VIDEOS = {
     id: "A91bdcMUC98",
     date: new Date("2023 08 19"),
     minutes: 15,
+  },
+  richardsSb: {
+    id: "1Frtbn89JgM",
+    date: new Date("2024 02 15"),
+    minutes: 7,
   },
   ridgewayWb: {
     id: "YFKP-TBo8RE",

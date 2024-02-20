@@ -10,6 +10,7 @@ import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 const BURRARD_NELSON = [49.2812, -123.12604];
+const CAMBIE_NELSON_SW = [49.27604, -123.11817];
 
 export const NELSON = [
   {
@@ -35,17 +36,24 @@ export const NELSON = [
     routeNames: [ROUTES.nelson.name],
     oneWay: "required",
     type: "dedicated",
-    description: "official part",
-    elevation: 0.5,
+    description: "richards to cambie",
     videos: [VIDEOS.cambieBridgeNelsonSb.id],
     positions: [
       RICHARDS_NELSON,
       HOMER_NELSON,
       [49.27695, -123.11956],
       [49.27659, -123.11899],
-      [49.27604, -123.11817],
-      BEATTY_NELSON_SW,
-      BEATTY_NELSON_SE,
+      CAMBIE_NELSON_SW,
     ],
+  },
+  {
+    routeNames: [ROUTES.nelson.name],
+    oneWay: "required",
+    type: "dedicated",
+    description: "cambie to beatty",
+    elevation: 0.5,
+    videos: [VIDEOS.cambieBridgeNelsonSb.id, VIDEOS.beattyNb.id],
+    videosStartAtStart: [VIDEOS.beattyNb.id],
+    positions: [CAMBIE_NELSON_SW, BEATTY_NELSON_SW, BEATTY_NELSON_SE],
   },
 ];

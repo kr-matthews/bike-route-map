@@ -140,7 +140,12 @@ export const ROUTES = {
   },
   beatty: {
     name: "Beatty St",
-    legs: [{ distance: 0.9, videos: { southbound: VIDEOS.beattySb } }],
+    legs: [
+      {
+        distance: 0.9,
+        videos: { northbound: VIDEOS.beattyNb, southbound: VIDEOS.beattySb },
+      },
+    ],
   },
   beresford: {
     name: "Beresford",
@@ -168,7 +173,7 @@ export const ROUTES = {
   },
   bridgeportTrail: {
     name: "Bridgeport Trail",
-    legs: [{ distance: 1.5, videos: {} }],
+    legs: [{ distance: 1.5, videos: { eastbound: VIDEOS.bridgeportTrailEb } }],
   },
   brunetteFraser: {
     name: "Brunette Fraser Regional Greenway",
@@ -189,6 +194,10 @@ export const ROUTES = {
         distanceMin: 1.7,
         distanceMax: 3.4,
         videos: { northbound: VIDEOS.burrardNb, southbound: VIDEOS.burrardSb },
+      },
+      {
+        name: "Seaside Connection via Bridge",
+        videos: { southbound: VIDEOS.burrardBridgeSb },
       },
     ],
   },
@@ -235,7 +244,7 @@ export const ROUTES = {
   },
   canadaLine: {
     name: "Canada Line Path",
-    legs: [{ distance: 3.2, videos: {} }],
+    legs: [{ distance: 3.2, videos: { southbound: VIDEOS.canadaLineSb } }],
   },
   cardero: {
     name: "Cardero",
@@ -672,7 +681,7 @@ export const ROUTES = {
   },
   richards: {
     name: "Richards",
-    legs: [{ distance: 1.7, videos: {} }],
+    legs: [{ distance: 1.7, videos: { southbound: VIDEOS.richardsSb } }],
   },
   ridgeway: {
     name: "Ridgeway",

@@ -50,6 +50,7 @@ export const BURRARD = [
   {
     description: "chestnut",
     type: "quiet",
+    videos: [VIDEOS.burrardBridgeSb.id],
     positions: [
       CHESTNUT_CORNWALL,
       [49.27267, -123.14633],
@@ -166,6 +167,7 @@ export const BURRARD = [
     description: "from pacific eb",
     type: "dedicated",
     oneWay: "required",
+    videos: [VIDEOS.burrardBridgeSb.id],
     positions: [
       BURRARD_PACIFIC_SW,
       [49.27695, -123.13289],
@@ -222,10 +224,9 @@ export const BURRARD = [
   },
   {
     routeNames: [ROUTES.burrard.name],
-    description: "sb: pre-bridge",
+    description: "sb: pre-pre-bridge",
     type: "dedicated",
     oneWay: "required",
-    elevation: 0.5,
     videos: [VIDEOS.burrardSb.id],
     positions: [
       BURRARD_BURNABY_W,
@@ -234,8 +235,16 @@ export const BURRARD = [
       BURRARD_PACIFIC_NW,
       [49.27692, -123.13289],
       BURRARD_SOUTHBOUND_MERGE,
-      SOUTHBOUND_ELEVATED_START,
     ],
+  },
+  {
+    routeNames: [ROUTES.burrard.name],
+    description: "sb: pre-bridge",
+    type: "dedicated",
+    oneWay: "required",
+    elevation: 0.5,
+    videos: [VIDEOS.burrardBridgeSb.id, VIDEOS.burrardSb.id],
+    positions: [BURRARD_SOUTHBOUND_MERGE, SOUTHBOUND_ELEVATED_START],
   },
   {
     routeNames: [ROUTES.burrard.name],
@@ -243,7 +252,7 @@ export const BURRARD = [
     type: "dedicated",
     oneWay: "required",
     elevation: 1,
-    videos: [VIDEOS.burrardSb.id],
+    videos: [VIDEOS.burrardBridgeSb.id, VIDEOS.burrardSb.id],
     positions: [
       SOUTHBOUND_ELEVATED_START,
       [49.27622, -123.135],
@@ -260,7 +269,7 @@ export const BURRARD = [
     type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.burrardSb.id],
+    videos: [VIDEOS.burrardBridgeSb.id, VIDEOS.burrardSb.id],
     positions: [
       SOUTHBOUND_ELEVATED_END,
       [49.27325, -123.14414],
@@ -339,6 +348,7 @@ export const BURRARD = [
   {
     description: "southbound to chestnut connection",
     type: "dedicated",
+    videos: [VIDEOS.burrardBridgeSb.id],
     positions: [
       CHESTNUT_CORNWALL,
       [49.27254, -123.14596],

@@ -218,6 +218,8 @@ export const CANADA_LINE = [
   {
     description: "patterson west of garden city",
     type: "mixed",
+    videos: [VIDEOS.canadaLineSb.id],
+    videosEndAtStart: [VIDEOS.canadaLineSb.id],
     positions: [
       [49.1902, -123.12582],
       [49.19025, -123.12555],
@@ -229,7 +231,7 @@ export const CANADA_LINE = [
     routeNames: [ROUTES.canadaLine.name],
     type: "mixed",
     description: "path: great canadian to bridgeport",
-    videos: [VIDEOS.gardenCitySb.id],
+    videos: [VIDEOS.canadaLineSb.id, VIDEOS.gardenCitySb.id],
     positions: [
       GARDEN_CITY_SB_START,
       [49.19027, -123.12494],
@@ -247,6 +249,7 @@ export const CANADA_LINE = [
     routeNames: [ROUTES.canadaLine.name],
     type: "mixed",
     description: "path: great canadian from bridgeport",
+    videos: [VIDEOS.canadaLineSb.id],
     positions: [
       CANADA_LINE_PATH_BRIDGEPORT_S,
       [49.19212, -123.12459],
@@ -262,6 +265,7 @@ export const CANADA_LINE = [
     routeNames: [ROUTES.canadaLine.name],
     description: "path: van horne",
     type: "mixed",
+    videos: [VIDEOS.canadaLineSb.id],
     positions: [
       GREAT_CANADIAN_VAN_HORNE_SE,
       BRIDGEPORT_TRAIL_VAN_HORNE,
@@ -282,6 +286,7 @@ export const CANADA_LINE = [
     description: "pre-bridge",
     type: "mixed",
     elevation: 0.5,
+    videos: [VIDEOS.canadaLineSb.id],
     positions: [VAN_HORNE_RIVER_N, ELEVATED_START],
   },
   {
@@ -289,6 +294,7 @@ export const CANADA_LINE = [
     description: "bridge",
     type: "mixed",
     elevation: 1,
+    videos: [VIDEOS.canadaLineSb.id],
     positions: [
       ELEVATED_START,
       [49.19903, -123.11854],
@@ -311,6 +317,7 @@ export const CANADA_LINE = [
     description: "ramp down 1",
     type: "mixed",
     elevation: 1.5,
+    videos: [VIDEOS.canadaLineSb.id],
     positions: [SPIRAL_MIDPOINT_1, SPIRAL_MIDPOINT_2],
   },
   {
@@ -318,6 +325,7 @@ export const CANADA_LINE = [
     description: "ramp down 2",
     type: "mixed",
     elevation: 2,
+    videos: [VIDEOS.canadaLineSb.id],
     positions: [SPIRAL_MIDPOINT_2, [49.20552, -123.11761], SPIRAL_MIDPOINT_3],
   },
   {
@@ -325,6 +333,7 @@ export const CANADA_LINE = [
     description: "ramp down 3",
     type: "mixed",
     elevation: 1.5,
+    videos: [VIDEOS.canadaLineSb.id],
     positions: [SPIRAL_MIDPOINT_3, SPIRAL_MIDPOINT_4],
   },
   {
@@ -332,6 +341,7 @@ export const CANADA_LINE = [
     description: "ramp down 4",
     type: "mixed",
     elevation: 1,
+    videos: [VIDEOS.canadaLineSb.id],
     positions: [
       SPIRAL_MIDPOINT_4,
       [49.20495, -123.11759],
@@ -345,6 +355,7 @@ export const CANADA_LINE = [
     description: "post-bridge",
     type: "comfortable",
     elevation: 0.5,
+    videos: [VIDEOS.canadaLineSb.id],
     positions: [
       ELEVATED_END,
       [49.2057, -123.11769],
@@ -366,6 +377,7 @@ export const CANADA_LINE = [
     routeNames: [ROUTES.canadaLine.name],
     description: "kent to 63rd",
     type: "dedicated",
+    videos: [VIDEOS.canadaLineSb.id],
     positions: [
       CAMBIE_KENT_N_NE,
       [49.20634, -123.11728],
@@ -387,14 +399,14 @@ export const CANADA_LINE = [
     routeNames: [ROUTES.canadaLine.name],
     description: "63rd to 64th",
     type: "dedicated",
-    videos: [VIDEOS.sixtySeventhPlusWb.id],
+    videos: [VIDEOS.canadaLineSb.id, VIDEOS.sixtySeventhPlusWb.id],
     positions: [CAMBIE_PATH_64TH, CAMBIE_PATH_63RD],
   },
   {
     description: "63rd connection to ontario",
     type: "quiet",
-    videos: [VIDEOS.sixtySeventhPlusWb.id],
-    videosStartAtEnd: [VIDEOS.sixtySeventhPlusWb.id],
+    videos: [VIDEOS.canadaLineSb.id, VIDEOS.sixtySeventhPlusWb.id],
+    videosStartAtEnd: [VIDEOS.canadaLineSb.id, VIDEOS.sixtySeventhPlusWb.id],
     positions: [
       CAMBIE_PATH_63RD,
       [49.21317, -123.11462],

@@ -342,7 +342,7 @@ export const SEASIDE = [
   },
   {
     routeNames: [ROUTES.seaside.name],
-    description: "kits - whyte-ish to museum",
+    description: "kits - whyte-ish to chestnut",
     type: "quiet",
     videos: [VIDEOS.seasideKitsWb.id],
     positions: [
@@ -357,8 +357,15 @@ export const SEASIDE = [
       CYPRESS_OGDEN,
       [49.2768, -123.14746],
       CHESTNUT_OGDEN,
-      CHESTNUT_SEASIDE,
     ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "kits - museum parking lot ramp",
+    type: "quiet",
+    videos: [VIDEOS.seasideKitsWb.id, VIDEOS.burrardBridgeSb.id],
+    videosEndAtEnd: [VIDEOS.burrardBridgeSb.id],
+    positions: [CHESTNUT_OGDEN, CHESTNUT_SEASIDE],
   },
   {
     routeNames: [ROUTES.seaside.name],

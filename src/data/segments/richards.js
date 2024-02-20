@@ -18,12 +18,14 @@ export const RICHARDS = [
     routeNames: [ROUTES.richards.name],
     description: "south tip",
     type: "quiet",
+    videos: [VIDEOS.richardsSb.id],
     positions: [RICHARDS_BEACH, [49.27345, -123.12792], RICHARDS_PACIFIC_SE_S],
   },
   {
     routeNames: [ROUTES.richards.name],
     description: "south of helmcken",
     type: "dedicated",
+    videos: [VIDEOS.richardsSb.id],
     positions: [
       RICHARDS_PACIFIC_SE_S,
       RICHARDS_PACIFIC_SE,
@@ -37,7 +39,7 @@ export const RICHARDS = [
     routeNames: [ROUTES.richards.name],
     description: "little bit north of helmcken",
     type: "dedicated",
-    videos: [VIDEOS.comoxHelmckenWb.id],
+    videos: [VIDEOS.richardsSb.id, VIDEOS.comoxHelmckenWb.id],
     videosStartAtEnd: [VIDEOS.comoxHelmckenWb.id],
     positions: [RICHARDS_HELMCKEN, NORTH_OF_HELMCKEN],
   },
@@ -45,6 +47,8 @@ export const RICHARDS = [
     routeNames: [ROUTES.richards.name],
     description: "north of helmcken",
     type: "dedicated",
+    videos: [VIDEOS.richardsSb.id],
+    videosStartAtEnd: [VIDEOS.richardsSb.id],
     positions: [
       NORTH_OF_HELMCKEN,
       RICHARDS_NELSON,

@@ -3,7 +3,6 @@ import {
   BEATTY_DUNSMUIR_NW,
   BEATTY_NELSON_SE,
   BEATTY_NELSON_SW,
-  BEATTY_PENDER_NE,
   BEATTY_PENDER_NW,
   BEATTY_PENDER_SE,
   BEATTY_PENDER_SW,
@@ -13,6 +12,8 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const BEFORE_PENDER = [49.28105, -123.10868];
+
 export const BEATTY = [
   {
     routeNames: [ROUTES.beatty.name],
@@ -20,6 +21,7 @@ export const BEATTY = [
     type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
+    videos: [VIDEOS.beattyNb.id],
     positions: [
       BEATTY_NELSON_SE,
       [49.2755, -123.11708],
@@ -29,8 +31,20 @@ export const BEATTY = [
       [49.27754, -123.11397],
       [49.27868, -123.11225],
       BEATTY_DUNSMUIR_NE,
+      BEFORE_PENDER,
+    ],
+  },
+  {
+    routeNames: [ROUTES.beatty.name],
+    description: "nb: just before pender",
+    type: "shared",
+    oneWay: "required",
+    videos: [VIDEOS.beattyNb.id],
+    videosEndAtEnd: [VIDEOS.beattyNb.id],
+    positions: [
+      BEFORE_PENDER,
       BEATTY_PENDER_SE,
-      BEATTY_PENDER_NE,
+      // BEATTY_PENDER_NE,
     ],
   },
   {

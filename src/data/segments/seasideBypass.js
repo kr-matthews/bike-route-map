@@ -77,6 +77,7 @@ const BC_PLACE_TUNNEL_END = [49.2765, -123.11398];
 const SEYMOUR_PACIFIC = [49.27441, -123.12828];
 const HOWE_PACIFIC = [49.27577, -123.13035];
 const THURLOW_PACIFIC_N = [49.27832, -123.13436];
+const THURLOW_PACIFIC_S = [49.27825, -123.13445];
 const THURLOW_PACIFIC_W = [49.27833, -123.13447];
 
 const EASTBOUND_SPLIT_AT_BURRARD = [49.27704, -123.13263];
@@ -608,17 +609,34 @@ export const SEASIDE_BYPASS = [
   },
   {
     routeNames: [ROUTES.seasideBypass.name],
-    description: "pacific eb: to burrard",
+    description: "pacific eb: crossing thurlow",
+    type: "shared",
+    oneWay: "required",
+    hideArrows: true,
+    positions: [THURLOW_PACIFIC_W, THURLOW_PACIFIC_S],
+  },
+  {
+    routeNames: [ROUTES.seasideBypass.name],
+    description: "pacific eb: thurlow to burrard split",
     type: "dedicated",
     oneWay: "required",
+    videos: [VIDEOS.burrardBridgeSb.id],
     positions: [
-      THURLOW_PACIFIC_W,
-      [49.27825, -123.13445],
+      THURLOW_PACIFIC_S,
       [49.27822, -123.13443],
       [49.2778, -123.1338],
       [49.27726, -123.13305],
       [49.27717, -123.13295],
       [49.27705, -123.13288],
+      BURRARD_PACIFIC_SW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seasideBypass.name],
+    description: "pacific eb: starting to cross burrard",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
       BURRARD_PACIFIC_SW,
       [49.27698, -123.1328],
       EASTBOUND_SPLIT_AT_BURRARD,
@@ -899,11 +917,14 @@ export const SEASIDE_BYPASS = [
   {
     description: "under granville bridge",
     type: "quiet",
-    positions: [GRANVILLE_BEACH, GRANVILLE_SEABREEZE],
+    videos: [VIDEOS.richardsSb.id],
+    videosEndAtStart: [VIDEOS.richardsSb.id],
+    positions: [GRANVILLE_SEABREEZE, GRANVILLE_BEACH],
   },
   {
-    description: "beach east of granville",
+    description: "beach: granville to richards",
     type: "quiet",
+    videos: [VIDEOS.richardsSb.id],
     positions: [
       GRANVILLE_BEACH,
       [49.27343, -123.1298],
@@ -921,6 +942,13 @@ export const SEASIDE_BYPASS = [
       [49.27327, -123.12862],
       [49.27325, -123.12852],
       [49.27321, -123.12842],
+      RICHARDS_BEACH,
+    ],
+  },
+  {
+    description: "beach richards to homer",
+    type: "quiet",
+    positions: [
       RICHARDS_BEACH,
       [49.27311, -123.12827],
       [49.27307, -123.12823],
@@ -962,7 +990,14 @@ export const SEASIDE_BYPASS = [
   {
     description: "thurlow: beach to pacific",
     type: "quiet",
-    positions: [THURLOW_BEACH, THURLOW_PACIFIC_N],
+    videos: [VIDEOS.burrardBridgeSb.id],
+    videosStartAtStart: [VIDEOS.burrardBridgeSb.id],
+    positions: [THURLOW_BEACH, THURLOW_PACIFIC_S],
+  },
+  {
+    description: "thurlow: crossing pacific",
+    type: "shared",
+    positions: [THURLOW_PACIFIC_S, THURLOW_PACIFIC_N],
   },
   {
     description: "davie: pacific to marinaside",
