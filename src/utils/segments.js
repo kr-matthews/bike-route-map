@@ -32,3 +32,9 @@ export const sumSegmentsWeightedLengths = (segments) =>
       accumulator + segmentWeight(segment) * segmentLength(segment),
     0
   );
+
+export const sumSegmentsLengths = (segments) =>
+  segments.reduce(
+    (accumulator, segment) => accumulator + segmentLength(segment),
+    0
+  );

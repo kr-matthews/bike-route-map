@@ -1,6 +1,4 @@
 import { useReducer, useState } from "react";
-import { ROUTES } from "../data/routes";
-import { VIDEOS } from "../data/videos";
 import {
   ELEVATIONS,
   DIRECTIONS,
@@ -8,6 +6,8 @@ import {
   normalizeElevation,
   normalizeType,
 } from "../utils/segmentTypes";
+import { getAugmentedVideo } from "../utils/videos";
+import { getAugmentedRoute } from "../utils/routes";
 
 const filtersReducer = (state, action) => {
   switch (action.type) {
@@ -68,11 +68,9 @@ export default function useSelections() {
   const [selected, setSelected] = useState(null);
   const [videoId, setVideoId] = useState(null);
 
-  const selectedRoute = Object.values(ROUTES).find(
-    (route) => route.name === selected
-  );
+  const selectedRoute = getAugmentedRoute(selected);
 
-  const video = Object.values(VIDEOS).find((video) => video.id === videoId);
+  const video = getAugmentedVideo(videoId);
 
   // videos live within a route, so clear video on route change
   function setSelectedAndClearVideo(routeName) {
