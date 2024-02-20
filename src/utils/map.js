@@ -1,5 +1,4 @@
 import { LatLngBounds } from "leaflet";
-import { SEGMENTS } from "../data/segments";
 
 export const TILE_LAYER = {
   attribution:
@@ -8,26 +7,6 @@ export const TILE_LAYER = {
 };
 
 export const DEFAULT_BOUNDS = new LatLngBounds(
-  [49.33, -123.27],
-  [49.12, -122.84]
+  [49.33, -123.26],
+  [49.12, -122.82]
 );
-
-export function getRouteBounds(name) {
-  const routeSegments = SEGMENTS.filter(({ routeNames }) =>
-    (routeNames ?? []).includes(name)
-  );
-
-  if (routeSegments.length === 0) return DEFAULT_BOUNDS;
-
-  const latitudes = routeSegments.flatMap(({ positions }) =>
-    positions.map(([lat, _]) => lat)
-  );
-  const longitudes = routeSegments.flatMap(({ positions }) =>
-    positions.map(([_, long]) => long)
-  );
-
-  return new LatLngBounds(
-    [Math.min(...latitudes), Math.min(...longitudes)],
-    [Math.max(...latitudes), Math.max(...longitudes)]
-  );
-}

@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { Selections } from "../../App";
 import Leg from "./Leg";
-import { getRouteBounds } from "../../utils/map";
+import { Selections } from "../../App";
+import { getRouteBounds } from "../../utils/routes";
 import CloseIcon from "../icons/CloseIcon";
 import ZoomToIcon from "../icons/ZoomToIcon";
 

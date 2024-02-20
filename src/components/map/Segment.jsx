@@ -1,21 +1,22 @@
 import { Fragment, useContext } from "react";
 import { Tooltip } from "react-leaflet";
+import Polyline from "./Polyline";
+import VideoMarkers from "./VideoMarkers";
+import { Selections } from "../../App";
 import {
   createBorderPathOptions,
   createPathOptions,
   getBorderPane,
   getSegmentPane,
 } from "../../utils/pathOptions";
-import { Selections } from "../../App";
-import Polyline from "./Polyline";
-import { getRoutesWithVideo, hasVideo } from "../../utils/routes";
-import videoIcon from "../../images/video.svg";
-import VideoMarkers from "./VideoMarkers";
+import { segmentHasVideoForRoute } from "../../utils/segments";
 import {
   getType,
   normalizeElevation,
   normalizeType,
 } from "../../utils/segmentTypes";
+import { getRoutesWithVideo } from "../../utils/videos";
+import videoIcon from "../../images/video.svg";
 
 export default function Segment(segment) {
   const {
@@ -128,7 +129,7 @@ export default function Segment(segment) {
             {hasAnyRoutes ? (
               routeNames.map((routeName) => (
                 <div key={routeName}>
-                  {hasVideo(segment, routeName) && (
+                  {segmentHasVideoForRoute(segment, routeName) && (
                     <img
                       src={videoIcon}
                       alt="video"

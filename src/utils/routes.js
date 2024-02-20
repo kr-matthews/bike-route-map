@@ -1,27 +1,28 @@
-import { ROUTES } from "../data/routes";
-import { SEGMENTS } from "../data/segments";
+import { LatLngBounds } from "leaflet";
+import { DEFAULT_BOUNDS } from "./map";
+import { sumSegmentsWeightedLengths } from "./segments";
 import { normalizeType } from "./segmentTypes";
-import { sumWeightedLengths } from "./segments";
+import { SEGMENTS } from "../data/segments";
 
-export function hasVideo(segment, routeName) {
-  const route = Object.values(ROUTES).find(({ name }) => name === routeName);
-  // route may be null for uses like the legend
-  if (!route) return false;
+export function getRouteBounds(routeName) {
+  const routeSegments = SEGMENTS.filter(({ routeNames }) =>
+    (routeNames ?? []).includes(routeName)
+  );
 
-  const routeVideos = route.legs.flatMap(({ videos }) => Object.values(videos));
+  if (routeSegments.length === 0) return DEFAULT_BOUNDS;
 
-  return (segment.videos ?? []).some((videoId) =>
-    (routeVideos ?? []).map(({ id }) => id).includes(videoId)
+  const latitudes = routeSegments.flatMap(({ positions }) =>
+    positions.map(([lat, _]) => lat)
+  );
+  const longitudes = routeSegments.flatMap(({ positions }) =>
+    positions.map(([_, long]) => long)
+  );
+
+  return new LatLngBounds(
+    [Math.min(...latitudes), Math.min(...longitudes)],
+    [Math.max(...latitudes), Math.max(...longitudes)]
   );
 }
-
-export const getRoutesWithVideo = (videoId) => {
-  return Object.values(ROUTES).filter(({ legs }) =>
-    legs.some(({ videos }) =>
-      Object.values(videos).some(({ id }) => id === videoId)
-    )
-  );
-};
 
 const getRouteSegments = (routeName) =>
   SEGMENTS.filter((segment) => segment.routeNames?.includes(routeName));
@@ -32,7 +33,7 @@ const getRouteSegmentsOfType = (routeName, segmentType) =>
   );
 
 export const getWeightedRouteDistance = (routeName) =>
-  sumWeightedLengths(getRouteSegments(routeName));
+  sumSegmentsWeightedLengths(getRouteSegments(routeName));
 
 export const getWeightedRouteDistanceOfType = (routeName, segmentType) =>
-  sumWeightedLengths(getRouteSegmentsOfType(routeName, segmentType));
+  sumSegmentsWeightedLengths(getRouteSegmentsOfType(routeName, segmentType));

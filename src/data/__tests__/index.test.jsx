@@ -1,9 +1,9 @@
 import "@testing-library/jest-dom";
-import { SEGMENTS } from "../segments";
 import { ROUTES } from "../routes";
+import { SEGMENTS } from "../segments";
 import { VIDEOS } from "../videos";
+import { getRoutesWithVideo } from "../../utils/videos";
 import { MCKAY_BC_PARKWAY, MCKAY_CENTRAL_SE } from "../intersections";
-import { getRoutesWithVideo } from "../../utils/routes";
 
 // helpers
 

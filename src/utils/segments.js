@@ -1,6 +1,19 @@
 import L from "leaflet";
+import { ROUTES } from "../data/routes";
 
-const length = (segment) =>
+export function segmentHasVideoForRoute(segment, routeName) {
+  const route = Object.values(ROUTES).find(({ name }) => name === routeName);
+  // route may be null for uses like the legend
+  if (!route) return false;
+
+  const routeVideos = route.legs.flatMap(({ videos }) => Object.values(videos));
+
+  return (segment.videos ?? []).some((videoId) =>
+    (routeVideos ?? []).map(({ id }) => id).includes(videoId)
+  );
+}
+
+const segmentLength = (segment) =>
   segment.positions.reduce((accumulator, currPosition, index) => {
     if (index === 0) return 0;
 
@@ -11,11 +24,11 @@ const length = (segment) =>
     return accumulator + nextLength;
   }, 0);
 
-const isOneWayReqOrRec = (segment) => (segment.oneWay ? 0.5 : 1);
+const segmentWeight = (segment) => (segment.oneWay ? 0.5 : 1);
 
-export const sumWeightedLengths = (segments) =>
+export const sumSegmentsWeightedLengths = (segments) =>
   segments.reduce(
     (accumulator, segment) =>
-      accumulator + isOneWayReqOrRec(segment) * length(segment),
+      accumulator + segmentWeight(segment) * segmentLength(segment),
     0
   );
