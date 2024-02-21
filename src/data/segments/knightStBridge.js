@@ -196,7 +196,7 @@ export const KNIGHT_STREET_BRIDGE = [
   },
   {
     description: "nb crossing marine",
-    videos: [VIDEOS.dumfriesNb.id],
+    videoIds: [VIDEOS.dumfriesNb.id],
     type: "mixed",
     positions: [
       NORTHBOUND_SPLIT_2,
@@ -209,13 +209,13 @@ export const KNIGHT_STREET_BRIDGE = [
   {
     description: "marine sidewalk",
     type: "other",
-    videos: [VIDEOS.dumfriesNb.id],
+    videoIds: [VIDEOS.dumfriesNb.id],
     positions: [NORTHBOUND_SPLIT_3, [49.21119, -123.07552], BORDEN_MARINE_N],
   },
   {
     description: "up borden",
     type: "quiet",
-    videos: [VIDEOS.dumfriesNb.id],
+    videoIds: [VIDEOS.dumfriesNb.id],
     positions: [
       BORDEN_MARINE_N,
       BORDEN_64TH,
@@ -229,7 +229,7 @@ export const KNIGHT_STREET_BRIDGE = [
   },
   {
     description: "marine to borden sb",
-    videos: [VIDEOS.dumfriesNb.id],
+    videoIds: [VIDEOS.dumfriesNb.id],
     type: "mixed",
     positions: [
       NORTHBOUND_SPLIT_2,
@@ -240,7 +240,7 @@ export const KNIGHT_STREET_BRIDGE = [
   },
   {
     description: "borden south of marine",
-    videos: [VIDEOS.dumfriesNb.id],
+    videoIds: [VIDEOS.dumfriesNb.id],
     type: "quiet",
     positions: [BORDEN_MARINE_S, [49.2096, -123.074], BORDEN_KENT_N_S],
   },
@@ -289,7 +289,7 @@ export const KNIGHT_STREET_BRIDGE = [
     description: "sb on-ramp",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.knightStBridgeSb.id],
+    videoIds: [VIDEOS.knightStBridgeSb.id],
     positions: [
       INVERNESS_MARINE_S,
       [49.21099, -123.07971],
@@ -310,7 +310,7 @@ export const KNIGHT_STREET_BRIDGE = [
     type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.knightStBridgeSb.id],
+    videoIds: [VIDEOS.knightStBridgeSb.id],
     positions: [
       SB_ON_RAMP_BARRIER,
       [49.21011, -123.07863],
@@ -333,7 +333,7 @@ export const KNIGHT_STREET_BRIDGE = [
     type: "other",
     oneWay: "required",
     elevation: 1,
-    videos: [VIDEOS.knightStBridgeSb.id],
+    videoIds: [VIDEOS.knightStBridgeSb.id],
     positions: [SOUTHBOUND_ELEVATION_START_1, SOUTHBOUND_ELEVATION_END_1],
   },
   {
@@ -342,7 +342,7 @@ export const KNIGHT_STREET_BRIDGE = [
     type: "other",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.knightStBridgeSb.id],
+    videoIds: [VIDEOS.knightStBridgeSb.id],
     positions: [
       SOUTHBOUND_ELEVATION_END_1,
       [49.20722, -123.07756],
@@ -369,7 +369,7 @@ export const KNIGHT_STREET_BRIDGE = [
     type: "other",
     oneWay: "required",
     elevation: 1,
-    videos: [VIDEOS.knightStBridgeSb.id],
+    videoIds: [VIDEOS.knightStBridgeSb.id],
     positions: [
       SOUTHBOUND_ELEVATION_START_2,
       [49.20425, -123.07766],
@@ -387,7 +387,7 @@ export const KNIGHT_STREET_BRIDGE = [
     type: "other",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.knightStBridgeSb.id],
+    videoIds: [VIDEOS.knightStBridgeSb.id],
     positions: [
       SOUTHBOUND_ELEVATION_END_2,
       [49.19388, -123.07766],
@@ -409,8 +409,8 @@ export const KNIGHT_STREET_BRIDGE = [
     oneWay: "recommended",
     type: "shared",
     hideUnlessVideo: true,
-    videos: [VIDEOS.knightStBridgeSb.id],
-    videosEndAtEnd: [VIDEOS.knightStBridgeSb.id],
+    videoIds: [VIDEOS.knightStBridgeSb.id],
+    videoIdsEndAtEnd: [VIDEOS.knightStBridgeSb.id],
     positions: [
       BRIDGEPORT_OFF_RAMP,
       [49.19213, -123.07924],

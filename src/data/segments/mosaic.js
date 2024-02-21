@@ -17,8 +17,8 @@ export const MOSAIC = [
   {
     description: "trout lake alley",
     type: "quiet",
-    videos: [VIDEOS.mosaicSb.id],
-    videosEndAtEnd: [VIDEOS.mosaicSb.id],
+    videoIds: [VIDEOS.mosaicSb.id],
+    videoIdsEndAtEnd: [VIDEOS.mosaicSb.id],
     positions: [
       JOHN_HENDRY_PARK_14TH,
       [49.25816, -123.06529],
@@ -30,7 +30,7 @@ export const MOSAIC = [
     routeNames: [ROUTES.mosaic.name],
     description: "14th",
     type: "quiet",
-    videos: [VIDEOS.mosaicSb.id],
+    videoIds: [VIDEOS.mosaicSb.id],
     positions: [
       WOODLAND_14TH,
       [49.25775, -123.06984],
@@ -43,7 +43,7 @@ export const MOSAIC = [
     description: "14th to 7th",
     type: "quiet",
     elevation: 0.5,
-    videos: [VIDEOS.mosaicSb.id],
+    videoIds: [VIDEOS.mosaicSb.id],
     positions: [
       WOODLAND_14TH,
       [49.25959, -123.07369],
@@ -57,7 +57,7 @@ export const MOSAIC = [
     description: "mosaic/off broadway",
     type: "dedicated",
     elevation: 1,
-    videos: [VIDEOS.mosaicSb.id, VIDEOS.offBroadwayWb.id],
+    videoIds: [VIDEOS.mosaicSb.id, VIDEOS.offBroadwayWb.id],
     positions: [WOODLAND_7TH, WOODLAND_GRANDVIEW],
   },
   {
@@ -65,7 +65,7 @@ export const MOSAIC = [
     description: "grandview to franklin",
     type: "quiet",
     elevation: 0.5,
-    videos: [VIDEOS.mosaicSb.id],
+    videoIds: [VIDEOS.mosaicSb.id],
     positions: [
       WOODLAND_GRANDVIEW,
       [49.26601, -123.07357],
@@ -89,9 +89,9 @@ export const MOSAIC = [
     routeNames: [ROUTES.mosaic.name, ROUTES.pandora.name],
     description: "north tip",
     type: "quiet",
-    videos: [VIDEOS.mosaicSb.id, VIDEOS.pandoraWb.id, VIDEOS.pandoraEb.id],
-    videosStartAtEnd: [VIDEOS.mosaicSb.id, VIDEOS.pandoraEb.id],
-    videosEndAtEnd: [VIDEOS.pandoraWb.id],
+    videoIds: [VIDEOS.mosaicSb.id, VIDEOS.pandoraWb.id, VIDEOS.pandoraEb.id],
+    videoIdsStartAtEnd: [VIDEOS.mosaicSb.id, VIDEOS.pandoraEb.id],
+    videoIdsEndAtEnd: [VIDEOS.pandoraWb.id],
     positions: [MCLEAN_FRANKLIN, [49.28321, -123.07408], MCLEAN_POWELL],
   },
 ];

@@ -23,15 +23,15 @@ export const CARRALL = [
   {
     routeNames: [ROUTES.carrall.name],
     description: "seawall end",
-    videos: [VIDEOS.carrallNb.id],
-    videosStartAtStart: [VIDEOS.carrallNb.id],
+    videoIds: [VIDEOS.carrallNb.id],
+    videoIdsStartAtStart: [VIDEOS.carrallNb.id],
     positions: [CARRALL_SEAWALL, [49.27596, -123.10653], SEAWALL_SPLIT],
   },
   {
     routeNames: [ROUTES.carrall.name],
     description: "nb",
     oneWay: "required",
-    videos: [VIDEOS.carrallNb.id],
+    videoIds: [VIDEOS.carrallNb.id],
     positions: [
       SEAWALL_SPLIT,
       [49.27664, -123.10639],
@@ -103,9 +103,9 @@ export const CARRALL = [
   {
     routeNames: [ROUTES.carrall.name],
     description: "north end",
-    videos: [VIDEOS.carrallNb.id, VIDEOS.alexanderEb.id],
-    videosStartAtStart: [VIDEOS.alexanderEb.id],
-    videosEndAtEnd: [VIDEOS.carrallNb.id],
+    videoIds: [VIDEOS.carrallNb.id, VIDEOS.alexanderEb.id],
+    videoIdsStartAtStart: [VIDEOS.alexanderEb.id],
+    videoIdsEndAtEnd: [VIDEOS.carrallNb.id],
     positions: [NORTH_SPLIT, [49.28323, -123.10422], ALEXANDER_POWELL],
   },
 ];

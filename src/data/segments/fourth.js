@@ -32,8 +32,8 @@ export const FOURTH = [
     routeNames: [ROUTES.fourth.name],
     description: "connection between chancellor and 4th",
     type: "mixed",
-    videos: [VIDEOS.fourthEb.id],
-    videosStartAtStart: [VIDEOS.fourthEb.id],
+    videoIds: [VIDEOS.fourthEb.id],
+    videoIdsStartAtStart: [VIDEOS.fourthEb.id],
     positions: [CHANCELLOR_4TH, CHANCELLOR_4TH_S],
   },
   {
@@ -41,7 +41,7 @@ export const FOURTH = [
     description: "eb: chancellor blvd",
     type: "shared",
     oneWay: "required",
-    videos: [VIDEOS.fourthEb.id],
+    videoIds: [VIDEOS.fourthEb.id],
     positions: [
       CHANCELLOR_4TH_S,
       [49.26879, -123.22519],
@@ -64,7 +64,7 @@ export const FOURTH = [
     description: "eb: chancellor to sasamat",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.fourthEb.id],
+    videoIds: [VIDEOS.fourthEb.id],
     positions: [
       DRUMMOND_4TH_S,
       [49.26898, -123.219],
@@ -81,7 +81,7 @@ export const FOURTH = [
     description: "eb: sasamat to trimble",
     type: "shared",
     oneWay: "required",
-    videos: [VIDEOS.fourthEb.id],
+    videoIds: [VIDEOS.fourthEb.id],
     positions: [
       EB_BEFORE_SASAMAT_4TH,
       [49.26899, -123.20898],
@@ -97,7 +97,7 @@ export const FOURTH = [
     description: "eb: trimble to before marine",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.fourthEb.id],
+    videoIds: [VIDEOS.fourthEb.id],
     positions: [
       TRIMBLE_4TH_SE,
       [49.26828, -123.20338],
@@ -115,7 +115,7 @@ export const FOURTH = [
     description: "eb: before marine",
     type: "shared",
     oneWay: "required",
-    videos: [VIDEOS.fourthEb.id],
+    videoIds: [VIDEOS.fourthEb.id],
     positions: [
       EB_BEFORE_MARINE,
       [49.26848, -123.20046],
@@ -128,7 +128,7 @@ export const FOURTH = [
     description: "eb: after marine",
     type: "shared",
     oneWay: "required",
-    videos: [VIDEOS.fourthEb.id],
+    videoIds: [VIDEOS.fourthEb.id],
     positions: [
       MARINE_4TH_S,
       [49.26868, -123.1997],
@@ -141,7 +141,7 @@ export const FOURTH = [
     description: "eb to wallace",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.fourthEb.id],
+    videoIds: [VIDEOS.fourthEb.id],
     positions: [
       EB_AFTER_MARINE,
       [49.26872, -123.19806],
@@ -154,8 +154,8 @@ export const FOURTH = [
     description: "wallace to highbury",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.fourthEb.id],
-    videosEndAtEnd: [VIDEOS.fourthEb.id],
+    videoIds: [VIDEOS.fourthEb.id],
+    videoIdsEndAtEnd: [VIDEOS.fourthEb.id],
     positions: [WALLACE_4TH_S, [49.26862, -123.18871], HIGHBURY_4TH_S],
   },
 

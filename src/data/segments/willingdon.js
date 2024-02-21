@@ -57,8 +57,8 @@ export const WILLINGDON = [
   {
     description: "gilmore connection via sanderson",
     type: "mixed",
-    videos: [VIDEOS.twentySecondEb.id],
-    videosEndAtEnd: [VIDEOS.twentySecondEb.id],
+    videoIds: [VIDEOS.twentySecondEb.id],
+    videoIdsEndAtEnd: [VIDEOS.twentySecondEb.id],
     positions: [
       GILMORE_KINCAID_NW,
       [49.2493, -123.01019],
@@ -87,8 +87,8 @@ export const WILLINGDON = [
     routeNames: [ROUTES.willingdon.name],
     description: "deer lake to sidewalk",
     type: "mixed",
-    videos: [VIDEOS.willingdonSb.id],
-    videosEndAtStart: [VIDEOS.willingdonSb.id],
+    videoIds: [VIDEOS.willingdonSb.id],
+    videoIdsEndAtStart: [VIDEOS.willingdonSb.id],
     positions: [
       WILLINGDON_DEER_LAKE,
       [49.24313, -123.00313],
@@ -123,7 +123,7 @@ export const WILLINGDON = [
     routeNames: [ROUTES.willingdon.name],
     description: "deer lake to overpass",
     type: "other",
-    videos: [VIDEOS.willingdonSb.id],
+    videoIds: [VIDEOS.willingdonSb.id],
     positions: [SIDEWALK_START, [49.2548, -123.00411], SIDEWALK_END],
   },
   {
@@ -131,7 +131,7 @@ export const WILLINGDON = [
     description: "sidewalk to overpass",
     type: "mixed",
     elevation: 0.5,
-    videos: [VIDEOS.willingdonSb.id],
+    videoIds: [VIDEOS.willingdonSb.id],
     positions: [
       SIDEWALK_END,
       [49.25561, -123.00402],
@@ -151,7 +151,7 @@ export const WILLINGDON = [
     description: "overpass",
     type: "mixed",
     elevation: 1,
-    videos: [VIDEOS.willingdonSb.id],
+    videoIds: [VIDEOS.willingdonSb.id],
     positions: [OVERPASS_START, OVERPASS_END],
   },
   {
@@ -159,8 +159,8 @@ export const WILLINGDON = [
     description: "overpass to central valley greenway",
     type: "mixed",
     elevation: 0.5,
-    videos: [VIDEOS.willingdonSb.id],
-    videosStartAtEnd: [VIDEOS.willingdonSb.id],
+    videoIds: [VIDEOS.willingdonSb.id],
+    videoIdsStartAtEnd: [VIDEOS.willingdonSb.id],
     positions: [
       OVERPASS_END,
       [49.25889, -123.00378],

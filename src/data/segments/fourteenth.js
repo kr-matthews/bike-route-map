@@ -14,8 +14,8 @@ export const FOURTEENTH = [
     routeNames: [ROUTES.fourteenth.name],
     description: "alder to heather",
     type: "quiet",
-    videos: [VIDEOS.fourteenthWb.id],
-    videosEndAtStart: [VIDEOS.fourteenthWb.id],
+    videoIds: [VIDEOS.fourteenthWb.id],
+    videoIdsEndAtStart: [VIDEOS.fourteenthWb.id],
     positions: [
       ALDER_14TH,
       [49.25876, -123.12917],
@@ -29,8 +29,8 @@ export const FOURTEENTH = [
     routeNames: [ROUTES.fourteenth.name],
     description: "heather to prince edward",
     type: "quiet",
-    videos: [VIDEOS.fourteenthWb.id],
-    videosStartAtEnd: [VIDEOS.fourteenthWb.id],
+    videoIds: [VIDEOS.fourteenthWb.id],
+    videoIdsStartAtEnd: [VIDEOS.fourteenthWb.id],
     positions: [
       HEATHER_14TH_N,
       [49.25878, -123.1177],

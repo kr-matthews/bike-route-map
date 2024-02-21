@@ -28,8 +28,8 @@ export const CHILCO = [
     routeNames: [ROUTES.chilco.name],
     description: "primary",
     type: "quiet",
-    videos: [VIDEOS.chilcoSb.id],
-    videosEndAtStart: [VIDEOS.chilcoSb.id],
+    videoIds: [VIDEOS.chilcoSb.id],
+    videoIdsEndAtStart: [VIDEOS.chilcoSb.id],
     positions: [
       CHILCO_BEACH,
       [49.28988, -123.14369],
@@ -47,7 +47,7 @@ export const CHILCO = [
     description: "connection from georgia",
     type: "dedicated",
     oneWay: "required",
-    videos: [VIDEOS.chilcoSb.id],
+    videoIds: [VIDEOS.chilcoSb.id],
     positions: [CHILCO_GEORGIA_S, [49.29436, -123.13677], CHILCO_ALBERNI_E],
   },
 ];

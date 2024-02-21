@@ -27,51 +27,51 @@ export default function Segment(segment) {
     hideArrows,
     isClosed,
     positions,
-    videos,
+    videoIds,
   } = segment;
   const {
     selectedRoute,
-    setSelected,
-    highlighted,
-    setHighlighted,
-    video,
-    setVideoId,
+    selectRoute,
+    highlightedRoute,
+    highlightRoute,
+    selectedVideo,
+    selectVideo,
     isSegmentHidden,
   } = useContext(Selections);
 
   const primaryRouteName = routeNames?.find((x) => x) || null;
   const hasAnyRoutes = (routeNames?.length ?? 0) > 0;
   const hasMultipleRoutes = (routeNames?.length ?? 0) > 1;
-  const hasAnyVideos = (videos?.length ?? 0) > 0;
+  const hasAnyVideos = (videoIds?.length ?? 0) > 0;
   const pane = getSegmentPane(elevation, hasMultipleRoutes);
   const isHidden = isSegmentHidden(segment);
 
   const eventHandlers = {
-    mouseover: () => setHighlighted(primaryRouteName),
-    mouseout: () => setHighlighted(null),
+    mouseover: () => highlightRoute(primaryRouteName),
+    mouseout: () => highlightRoute(null),
     click: () => {
       if (primaryRouteName) {
         const isRouteAlreadySelected = selectedRoute?.name === primaryRouteName;
-        setSelected(isRouteAlreadySelected ? null : primaryRouteName);
+        selectRoute(isRouteAlreadySelected ? null : primaryRouteName);
       }
     },
     contextmenu: () => {
-      if (videos?.length) {
-        const firstVideo = videos[0];
-        const isVideoAlreadyShown = video?.id === firstVideo;
+      if (videoIds?.length) {
+        const firstVideoId = videoIds[0];
+        const isVideoAlreadyShown = selectedVideo?.id === firstVideoId;
         if (isVideoAlreadyShown) {
-          setVideoId(null);
-          setSelected(null);
+          selectVideo(null);
+          selectRoute(null);
         } else {
           // use the first listed route which has the video
           // otherwise take any route which has the video
-          const routesWithVideo = getRoutesWithVideo(firstVideo);
-          const aRouteWithVideo =
+          const routesWithVideo = getRoutesWithVideo(firstVideoId);
+          const aRouteNameWithVideo =
             (routeNames ?? []).find((routeName) =>
               routesWithVideo.some((route) => route.name === routeName)
             ) ?? routesWithVideo[0].name;
-          setSelected(aRouteWithVideo);
-          setVideoId(firstVideo);
+          selectRoute(aRouteNameWithVideo);
+          selectVideo(firstVideoId);
         }
       }
     },
@@ -80,9 +80,9 @@ export default function Segment(segment) {
   const polylineProps = {
     positions,
     pathOptions: createPathOptions(segment, {
-      highlighted,
-      selected: selectedRoute?.name,
-      video: video?.id,
+      highlightedRoute,
+      selectedRoute,
+      selectedVideo,
       isHidden,
     }),
     eventHandlers,
@@ -93,8 +93,8 @@ export default function Segment(segment) {
   const borderProps = {
     positions,
     pathOptions: createBorderPathOptions(segment, {
-      highlighted,
-      selected: selectedRoute?.name,
+      highlightedRoute,
+      selectedRoute,
       isHidden,
     }),
     eventHandlers,
@@ -154,7 +154,9 @@ export default function Segment(segment) {
           </>
         </Tooltip>
       </Polyline>
-      {video && <VideoMarkers segment={segment} videoId={video.id} />}
+      {selectedVideo && (
+        <VideoMarkers segment={segment} videoId={selectedVideo.id} />
+      )}
     </Fragment>
   );
 }

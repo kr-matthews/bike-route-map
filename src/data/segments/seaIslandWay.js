@@ -21,8 +21,8 @@ export const SEA_ISLAND_WAY = [
     type: "shoulder",
     oneWay: "required",
     hideUnlessVideo: true,
-    videos: [VIDEOS.seaIslandWayEb.id],
-    videosStartAtStart: [VIDEOS.seaIslandWayEb.id],
+    videoIds: [VIDEOS.seaIslandWayEb.id],
+    videoIdsStartAtStart: [VIDEOS.seaIslandWayEb.id],
     positions: [
       [49.19215, -123.14614],
       [49.19222, -123.14637],
@@ -73,7 +73,7 @@ export const SEA_ISLAND_WAY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.seaIslandWayEb.id],
+    videoIds: [VIDEOS.seaIslandWayEb.id],
     positions: [
       SEA_ISLAND_MILLER_JOIN,
       [49.19285, -123.14515],
@@ -90,7 +90,7 @@ export const SEA_ISLAND_WAY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
-    videos: [VIDEOS.seaIslandWayEb.id],
+    videoIds: [VIDEOS.seaIslandWayEb.id],
     positions: [SEA_ISLAND_RUSS_BAKER_W, SEA_ISLAND_RUSS_BAKER_E],
   },
   {
@@ -99,7 +99,7 @@ export const SEA_ISLAND_WAY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.seaIslandWayEb.id],
+    videoIds: [VIDEOS.seaIslandWayEb.id],
     positions: [
       SEA_ISLAND_RUSS_BAKER_E,
       [49.19256, -123.14093],
@@ -117,7 +117,7 @@ export const SEA_ISLAND_WAY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
-    videos: [VIDEOS.seaIslandWayEb.id],
+    videoIds: [VIDEOS.seaIslandWayEb.id],
     positions: [SEA_ISLAND_MOREY_W, SEA_ISLAND_MOREY_E],
   },
   {
@@ -126,7 +126,7 @@ export const SEA_ISLAND_WAY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.seaIslandWayEb.id],
+    videoIds: [VIDEOS.seaIslandWayEb.id],
     positions: [
       SEA_ISLAND_MOREY_E,
       [49.19107, -123.13375],
@@ -138,8 +138,8 @@ export const SEA_ISLAND_WAY = [
     description: "river to no 3",
     type: "comfortable",
     oneWay: "required",
-    videos: [VIDEOS.seaIslandWayEb.id],
-    videosEndAtEnd: [VIDEOS.seaIslandWayEb.id],
+    videoIds: [VIDEOS.seaIslandWayEb.id],
+    videoIdsEndAtEnd: [VIDEOS.seaIslandWayEb.id],
     positions: [
       SEA_ISLAND_RIVER_SE,
       [49.19098, -123.13354],

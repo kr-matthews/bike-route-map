@@ -24,7 +24,7 @@ export const TWENTY_SECOND = [
     description: "boundary to kincaid",
     type: "quiet",
     hideUnlessVideo: true,
-    videos: [VIDEOS.twentySecondEb.id],
+    videoIds: [VIDEOS.twentySecondEb.id],
     positions: [
       BOUNDARY_22ND_E,
       [49.25061, -123.01982],
@@ -36,7 +36,7 @@ export const TWENTY_SECOND = [
     description: "kincaid main",
     type: "shared",
     hideUnlessVideo: true,
-    videos: [VIDEOS.twentySecondEb.id],
+    videoIds: [VIDEOS.twentySecondEb.id],
     positions: [
       INGLETON_KINCAID,
       [49.2488, -123.01621],
@@ -48,7 +48,7 @@ export const TWENTY_SECOND = [
     description: "kincaid side",
     type: "quiet",
     hideUnlessVideo: true,
-    videos: [VIDEOS.twentySecondEb.id],
+    videoIds: [VIDEOS.twentySecondEb.id],
     positions: [
       MACDONALD_KINCAID_N,
       [49.24873, -123.01525],
@@ -63,8 +63,8 @@ export const TWENTY_SECOND = [
     description: "with lane eb",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.twentySecondEb.id],
-    videosStartAtStart: [VIDEOS.twentySecondEb.id],
+    videoIds: [VIDEOS.twentySecondEb.id],
+    videoIdsStartAtStart: [VIDEOS.twentySecondEb.id],
     positions: [
       [49.25059, -123.05649],
       [49.25061, -123.05223],
@@ -78,7 +78,7 @@ export const TWENTY_SECOND = [
     description: "without lane wb 1",
     type: "shared",
     oneWay: "required",
-    videos: [VIDEOS.twentySecondWb.id],
+    videoIds: [VIDEOS.twentySecondWb.id],
     positions: [RENFREW_22ND_E, RENFREW_22ND_N, WESTBOUND_LANE_START],
   },
   {
@@ -86,7 +86,7 @@ export const TWENTY_SECOND = [
     description: "with lane wb",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.twentySecondWb.id],
+    videoIds: [VIDEOS.twentySecondWb.id],
     positions: [
       WESTBOUND_LANE_START,
       SLOCAN_22ND_N,
@@ -99,16 +99,16 @@ export const TWENTY_SECOND = [
     description: "without lane wb 2",
     type: "shared",
     oneWay: "required",
-    videos: [VIDEOS.twentySecondWb.id],
-    videosEndAtEnd: [VIDEOS.twentySecondWb.id],
+    videoIds: [VIDEOS.twentySecondWb.id],
+    videoIdsEndAtEnd: [VIDEOS.twentySecondWb.id],
     positions: [WESTBOUND_LANE_END, [49.25071, -123.05649]],
   },
   {
     routeNames: [ROUTES.twentySecond.name],
     description: "without lane",
     type: "shared",
-    videos: [VIDEOS.twentySecondEb.id, VIDEOS.twentySecondWb.id],
-    videosStartAtEnd: [VIDEOS.twentySecondWb.id],
+    videoIds: [VIDEOS.twentySecondEb.id, VIDEOS.twentySecondWb.id],
+    videoIdsStartAtEnd: [VIDEOS.twentySecondWb.id],
     positions: [
       RENFREW_22ND_E,
       [49.2506, -123.03901],

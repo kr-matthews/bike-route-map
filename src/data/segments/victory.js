@@ -22,8 +22,8 @@ export const VICTORY = [
     routeNames: [ROUTES.victory.name],
     description: "patterson to beresford",
     type: "quiet",
-    videos: [VIDEOS.victoryEb.id],
-    videosStartAtStart: [VIDEOS.victoryEb.id],
+    videoIds: [VIDEOS.victoryEb.id],
+    videoIdsStartAtStart: [VIDEOS.victoryEb.id],
     positions: [
       [49.2184, -123.01233],
       [49.21839, -123.01057],
@@ -45,7 +45,7 @@ export const VICTORY = [
     routeNames: [ROUTES.victory.name],
     description: "busy beresford",
     type: "shared",
-    videos: [VIDEOS.victoryEb.id],
+    videoIds: [VIDEOS.victoryEb.id],
     positions: [
       ANTRIM_BERESFORD,
       [49.21876, -122.98307],
@@ -56,7 +56,7 @@ export const VICTORY = [
     routeNames: [ROUTES.victory.name],
     description: "macpherson to hedley",
     type: "quiet",
-    videos: [VIDEOS.victoryEb.id],
+    videoIds: [VIDEOS.victoryEb.id],
     positions: [
       MACPHERSON_BERESFORD_E,
       [49.2184, -122.98113],
@@ -78,8 +78,8 @@ export const VICTORY = [
     description: "trail to bc parkway",
     type: "comfortable",
     hideUnlessVideo: true,
-    videos: [VIDEOS.victoryEb.id],
-    videosEndAtEnd: [VIDEOS.victoryEb.id],
+    videoIds: [VIDEOS.victoryEb.id],
+    videoIdsEndAtEnd: [VIDEOS.victoryEb.id],
     positions: [
       HEDLEY_NEVILLE,
       [49.213, -122.96735],

@@ -23,9 +23,9 @@ export const COMOX_HELMCKEN = [
     routeNames: [ROUTES.comoxHelmcken.name],
     description: "through park",
     type: "mixed",
-    videos: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
-    videosStartAtStart: [VIDEOS.comoxHelmckenEb.id],
-    videosEndAtStart: [VIDEOS.comoxHelmckenWb.id],
+    videoIds: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
+    videoIdsStartAtStart: [VIDEOS.comoxHelmckenEb.id],
+    videoIdsEndAtStart: [VIDEOS.comoxHelmckenWb.id],
     positions: [
       PARK_COMOX,
       [49.29182, -123.14449],
@@ -38,14 +38,14 @@ export const COMOX_HELMCKEN = [
     routeNames: [ROUTES.comoxHelmcken.name],
     description: "comox w end to denman",
     type: "quiet",
-    videos: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
+    videoIds: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
     positions: [COMOX_W, CHILCO_COMOX, [49.28968, -123.14126], DENMAN_COMOX_W],
   },
   {
     routeNames: [ROUTES.comoxHelmcken.name],
     description: "denman to bidwell",
     type: "dedicated",
-    videos: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
+    videoIds: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
     positions: [
       DENMAN_COMOX_W,
       [49.28873, -123.1397],
@@ -57,7 +57,7 @@ export const COMOX_HELMCKEN = [
     routeNames: [ROUTES.comoxHelmcken.name],
     description: "bidwell to thurlow",
     type: "quiet",
-    videos: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
+    videoIds: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
     positions: [
       BIDWELL_COMOX_SW,
       [49.28764, -123.13809],
@@ -73,7 +73,7 @@ export const COMOX_HELMCKEN = [
     routeNames: [ROUTES.comoxHelmcken.name],
     description: "thurlow to hornby",
     type: "dedicated",
-    videos: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
+    videoIds: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
     positions: [
       THURLOW_COMOX_W,
       [49.28184, -123.12911],
@@ -87,7 +87,7 @@ export const COMOX_HELMCKEN = [
   {
     description: "helmcken unofficial part",
     type: "shared",
-    videos: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
+    videoIds: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
     positions: [
       HORNBY_HELMCKEN_SE,
       [49.27944, -123.12649],
@@ -100,8 +100,8 @@ export const COMOX_HELMCKEN = [
   {
     description: "richards to homer",
     type: "shared",
-    videos: [VIDEOS.comoxHelmckenEb.id],
-    videosEndAtEnd: [VIDEOS.comoxHelmckenEb.id],
+    videoIds: [VIDEOS.comoxHelmckenEb.id],
+    videoIdsEndAtEnd: [VIDEOS.comoxHelmckenEb.id],
     positions: [RICHARDS_HELMCKEN, HOMER_HELMCKEN],
   },
   {

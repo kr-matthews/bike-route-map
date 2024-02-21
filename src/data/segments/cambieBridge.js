@@ -52,7 +52,7 @@ export const CAMBIE_BRIDGE = [
     type: "combined",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.cambieBridgeSmitheNb.id],
+    videoIds: [VIDEOS.cambieBridgeSmitheNb.id],
     positions: [
       CAMBIE_2ND_NE,
       [49.26703, -123.11446],
@@ -64,7 +64,7 @@ export const CAMBIE_BRIDGE = [
     description: "northbound bridge 1",
     type: "combined",
     oneWay: "required",
-    videos: [VIDEOS.cambieBridgeSmitheNb.id],
+    videoIds: [VIDEOS.cambieBridgeSmitheNb.id],
     elevation: 1,
     positions: [
       NORTHBOUND_ELEVATED_START,
@@ -83,7 +83,7 @@ export const CAMBIE_BRIDGE = [
     description: "northbound bridge 2",
     type: "combined",
     oneWay: "required",
-    videos: [VIDEOS.cambieBridgeSmitheNb.id],
+    videoIds: [VIDEOS.cambieBridgeSmitheNb.id],
     elevation: 1.5,
     positions: [SPIRAL_PRE_SPLIT_1, SPIRAL_PRE_SPLIT_2],
   },
@@ -93,7 +93,7 @@ export const CAMBIE_BRIDGE = [
     type: "combined",
     oneWay: "required",
     hideArrows: true,
-    videos: [VIDEOS.cambieBridgeSmitheNb.id],
+    videoIds: [VIDEOS.cambieBridgeSmitheNb.id],
     elevation: 2,
     positions: [
       SPIRAL_PRE_SPLIT_2,
@@ -112,7 +112,7 @@ export const CAMBIE_BRIDGE = [
     type: "combined",
     oneWay: "required",
     hideArrows: "true",
-    videos: [VIDEOS.cambieBridgeSmitheNb.id],
+    videoIds: [VIDEOS.cambieBridgeSmitheNb.id],
     elevation: 1.5,
     positions: [SPIRAL_PRE_SPLIT_3, [49.27393, -123.11425], SPIRAL_PRE_SPLIT_4],
   },
@@ -121,7 +121,7 @@ export const CAMBIE_BRIDGE = [
     description: "northbound bridge post-spiral",
     type: "mixed",
     oneWay: "required",
-    videos: [VIDEOS.cambieBridgeSmitheNb.id],
+    videoIds: [VIDEOS.cambieBridgeSmitheNb.id],
     elevation: 1,
     positions: [
       SPIRAL_PRE_SPLIT_4,
@@ -139,7 +139,7 @@ export const CAMBIE_BRIDGE = [
     type: "comfortable",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.cambieBridgeSmitheNb.id],
+    videoIds: [VIDEOS.cambieBridgeSmitheNb.id],
     positions: [
       NORTHBOUND_ELEVATED_END,
       [49.27532, -123.11445],
@@ -198,7 +198,7 @@ export const CAMBIE_BRIDGE = [
     description: "southbound side",
     type: "dedicated",
     oneWay: "required",
-    videos: [VIDEOS.cambieBridgeNelsonSb.id],
+    videoIds: [VIDEOS.cambieBridgeNelsonSb.id],
     elevation: 1,
     positions: [
       BEATTY_NELSON_SE,
@@ -229,22 +229,22 @@ export const CAMBIE_BRIDGE = [
   },
   {
     description: "crossing ash",
-    videos: [VIDEOS.heatherSb.id],
+    videoIds: [VIDEOS.heatherSb.id],
     positions: [ASH_2ND_SW, ASH_2ND_SE],
   },
   {
     description: "sb: crossing 2nd",
     type: "quiet",
     oneWay: "required",
-    videos: [VIDEOS.cambieBridgeNelsonSb.id],
+    videoIds: [VIDEOS.cambieBridgeNelsonSb.id],
     positions: [ASH_2ND_N, ASH_2ND_SW],
   },
   {
     description: "sb: 2nd to 7th",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.cambieBridgeNelsonSb.id, VIDEOS.heatherSb.id],
-    videosEndAtEnd: [VIDEOS.cambieBridgeNelsonSb.id],
+    videoIds: [VIDEOS.cambieBridgeNelsonSb.id, VIDEOS.heatherSb.id],
+    videoIdsEndAtEnd: [VIDEOS.cambieBridgeNelsonSb.id],
     positions: [ASH_2ND_SW, ASH_7TH_W],
   },
   {
@@ -262,7 +262,7 @@ export const CAMBIE_BRIDGE = [
     description: "connection to off broadway via 2nd",
     type: "dedicated",
     elevation: 0.5,
-    videos: [VIDEOS.cambieBridgeNelsonSb.id],
+    videoIds: [VIDEOS.cambieBridgeNelsonSb.id],
     positions: [
       ASH_2ND_N,
       [49.26608, -123.11743],
@@ -291,7 +291,7 @@ export const CAMBIE_BRIDGE = [
   {
     description: "2nd, south side (west of middle)",
     type: "dedicated",
-    videos: [VIDEOS.heatherSb.id],
+    videoIds: [VIDEOS.heatherSb.id],
     positions: [
       ASH_2ND_SE,
       [49.26578, -123.11622],
@@ -316,14 +316,14 @@ export const CAMBIE_BRIDGE = [
   {
     description: "crossing 2nd, east side",
     type: "combined",
-    videos: [VIDEOS.cambieBridgeSmitheNb.id],
+    videoIds: [VIDEOS.cambieBridgeSmitheNb.id],
     positions: [CAMBIE_2ND_SE, CAMBIE_2ND_NE],
   },
   {
     description: "crossing 2nd, under",
     type: "combined",
-    videos: [VIDEOS.heatherSb.id],
-    videosStartAtEnd: [VIDEOS.heatherSb.id],
+    videoIds: [VIDEOS.heatherSb.id],
+    videoIdsStartAtEnd: [VIDEOS.heatherSb.id],
     positions: [CAMBIE_2ND_SW, CAMBIE_2ND_N_W],
   },
   {
@@ -369,7 +369,7 @@ export const CAMBIE_BRIDGE = [
   {
     description: "beside bridge",
     type: "quiet",
-    videos: [VIDEOS.yukonSb.id],
+    videoIds: [VIDEOS.yukonSb.id],
     positions: [
       SPYGLASS_1ST,
       [49.26912, -123.11526],
@@ -404,14 +404,14 @@ export const CAMBIE_BRIDGE = [
   {
     description: "connection commodore from spyglass",
     type: "quiet",
-    videos: [VIDEOS.yukonSb.id],
+    videoIds: [VIDEOS.yukonSb.id],
     positions: [SPYGLASS_1ST, SPYGLASS_COMMODORE],
   },
   {
     description: "connection to off broadway via 5th",
     type: "quiet",
-    videos: [VIDEOS.cambieBridgeSmitheNb.id],
-    videosStartAtEnd: [VIDEOS.cambieBridgeSmitheNb.id],
+    videoIds: [VIDEOS.cambieBridgeSmitheNb.id],
+    videoIdsStartAtEnd: [VIDEOS.cambieBridgeSmitheNb.id],
     positions: [
       CAMBIE_2ND_SE,
       [49.26665, -123.11435],

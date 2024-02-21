@@ -21,8 +21,8 @@ export const ARTHUR_LAING = [
   {
     description: "sb path split",
     type: "dedicated",
-    videos: [VIDEOS.arthurLaingSb.id],
-    videosEndAtEnd: [VIDEOS.arthurLaingSb.id],
+    videoIds: [VIDEOS.arthurLaingSb.id],
+    videoIdsEndAtEnd: [VIDEOS.arthurLaingSb.id],
     positions: [SOUTHBOUND_SPLIT, [49.19548, -123.14004]],
   },
   {
@@ -46,7 +46,7 @@ export const ARTHUR_LAING = [
     elevation: 0.5,
     oneWay: "required",
     hideArrows: true,
-    videos: [VIDEOS.arthurLaingSb.id],
+    videoIds: [VIDEOS.arthurLaingSb.id],
     positions: [MARINE_ARTHUR_LAING_S, SOUTHBOUND_ELEVATION_START],
   },
   {
@@ -55,7 +55,7 @@ export const ARTHUR_LAING = [
     type: "shoulder",
     elevation: 1,
     oneWay: "required",
-    videos: [VIDEOS.arthurLaingSb.id],
+    videoIds: [VIDEOS.arthurLaingSb.id],
     positions: [
       SOUTHBOUND_ELEVATION_START,
       [49.20378, -123.13694],
@@ -97,7 +97,7 @@ export const ARTHUR_LAING = [
     type: "shoulder",
     elevation: 0.5,
     oneWay: "required",
-    videos: [VIDEOS.arthurLaingSb.id],
+    videoIds: [VIDEOS.arthurLaingSb.id],
     positions: [
       SOUTHBOUND_ELEVATION_END,
       [49.19596, -123.138],

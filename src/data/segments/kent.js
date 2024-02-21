@@ -64,15 +64,15 @@ export const KENT = [
     routeNames: [ROUTES.kent.name],
     description: "ontario",
     type: "quiet",
-    videos: [VIDEOS.ontarioNb.id],
+    videoIds: [VIDEOS.ontarioNb.id],
     positions: [ONTARIO_KENT_S, ONTARIO_KENT_N],
   },
   {
     routeNames: [ROUTES.kent.name],
     description: "kent s: near ontario",
     type: "dedicated",
-    videos: [VIDEOS.ontarioNb.id],
-    videosStartAtEnd: [VIDEOS.ontarioNb.id],
+    videoIds: [VIDEOS.ontarioNb.id],
+    videoIdsStartAtEnd: [VIDEOS.ontarioNb.id],
     positions: [ONTARIO_KENT_S, EAST_OF_ONTARIO],
   },
   {
@@ -115,8 +115,8 @@ export const KENT = [
     routeNames: [ROUTES.kent.name],
     description: "crompton",
     type: "quiet",
-    videos: [VIDEOS.invernessSb.id],
-    videosEndAtStart: [VIDEOS.invernessSb.id],
+    videoIds: [VIDEOS.invernessSb.id],
+    videoIdsEndAtStart: [VIDEOS.invernessSb.id],
     positions: [CROMPTON_KENT_S, CROMPTON_KENT_N_S],
   },
   {
@@ -136,8 +136,8 @@ export const KENT = [
     description: "kent n: eb: before borden",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.dumfriesNb.id],
-    videosStartAtStart: [VIDEOS.dumfriesNb.id],
+    videoIds: [VIDEOS.dumfriesNb.id],
+    videoIdsStartAtStart: [VIDEOS.dumfriesNb.id],
     positions: [
       EB_BEFORE_BORDEN,
       [49.20953, -123.07462],
@@ -150,8 +150,8 @@ export const KENT = [
     description: "kent n: eb: borden to argyle",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.fraserRiverFraserviewEb.id],
-    videosStartAtStart: [VIDEOS.fraserRiverFraserviewEb.id],
+    videoIds: [VIDEOS.fraserRiverFraserviewEb.id],
+    videoIdsStartAtStart: [VIDEOS.fraserRiverFraserviewEb.id],
     positions: [
       BORDEN_KENT_N_S,
       [49.20947, -123.07356],
@@ -207,7 +207,7 @@ export const KENT = [
     routeNames: [ROUTES.kent.name],
     description: "kent n: portside-ish to path at elliott",
     type: "quiet",
-    videos: [VIDEOS.fraserRiverFraserviewEb.id],
+    videoIds: [VIDEOS.fraserRiverFraserviewEb.id],
     positions: [
       GLADSTONE_KENT,
       [49.20638, -123.06219],
@@ -227,7 +227,7 @@ export const KENT = [
     routeNames: [ROUTES.kent.name],
     description: "kent n: elliott bit",
     type: "quiet",
-    videos: [VIDEOS.sunriseNb.id],
+    videoIds: [VIDEOS.sunriseNb.id],
     positions: [ELLIOTT_KENT_W, ELLIOTT_KENT],
   },
   {
@@ -275,7 +275,7 @@ export const KENT = [
     routeNames: [ROUTES.kent.name],
     description: "kent n path: elliott little bit",
     type: "mixed",
-    videos: [VIDEOS.fraserRiverFraserviewEb.id, VIDEOS.sunriseNb.id],
+    videoIds: [VIDEOS.fraserRiverFraserviewEb.id, VIDEOS.sunriseNb.id],
     positions: [ELLIOTT_KENT_W, [49.20575, -123.05698], ELLIOTT_KENT_PATH],
   },
   {
@@ -321,7 +321,7 @@ export const KENT = [
     routeNames: [ROUTES.kent.name, ROUTES.kerr.name],
     description: "crossing kerr",
     type: "mixed",
-    videos: [VIDEOS.kerrSb.id],
+    videoIds: [VIDEOS.kerrSb.id],
     positions: [KERR_KENT_N_SW, KERR_KENT_N_SE],
   },
   {

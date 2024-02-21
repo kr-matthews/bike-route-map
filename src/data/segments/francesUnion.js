@@ -46,8 +46,8 @@ export const FRANCES_UNION = [
     routeNames: [ROUTES.francesUnion.name],
     description: "just east of boundary",
     type: "quiet",
-    videos: [VIDEOS.adanacWb.id],
-    videosStartAtEnd: [VIDEOS.adanacWb.id],
+    videoIds: [VIDEOS.adanacWb.id],
+    videoIdsStartAtEnd: [VIDEOS.adanacWb.id],
     positions: [
       BOUNDARY_ADANAC,
       [49.27757, -123.02325],

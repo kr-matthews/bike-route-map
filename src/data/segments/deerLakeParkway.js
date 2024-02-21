@@ -14,8 +14,8 @@ export const DEER_LAKE_PARKWAY = [
     routeNames: [ROUTES.deerLakeParkway.name, ROUTES.midtown.name],
     description: "midtown overlap",
     type: "comfortable",
-    videos: [VIDEOS.deerLakePkwyEb.id, VIDEOS.midtownBurnabyWb.id],
-    videosStartAtStart: [VIDEOS.deerLakePkwyEb.id],
+    videoIds: [VIDEOS.deerLakePkwyEb.id, VIDEOS.midtownBurnabyWb.id],
+    videoIdsStartAtStart: [VIDEOS.deerLakePkwyEb.id],
     positions: [
       WILLINGDON_DEER_LAKE,
       [49.24308, -123.00288],
@@ -43,7 +43,7 @@ export const DEER_LAKE_PARKWAY = [
     routeNames: [ROUTES.deerLakeParkway.name],
     description: "east of garden grove",
     type: "mixed",
-    videos: [VIDEOS.deerLakePkwyEb.id],
+    videoIds: [VIDEOS.deerLakePkwyEb.id],
     positions: [
       GARDEN_GROVE_DEER_LAKE,
       [49.2414, -122.99418],
@@ -88,15 +88,15 @@ export const DEER_LAKE_PARKWAY = [
     routeNames: [ROUTES.deerLakeParkway.name, ROUTES.midtown.name],
     description: "crossing gilpin",
     type: "mixed",
-    videos: [VIDEOS.deerLakePkwyEb.id, VIDEOS.midtownBurnabyWb.id],
+    videoIds: [VIDEOS.deerLakePkwyEb.id, VIDEOS.midtownBurnabyWb.id],
     positions: [DEER_LAKE_GILPIN_W, DEER_LAKE_GILPIN_SW],
   },
   {
     routeNames: [ROUTES.deerLakeParkway.name],
     description: "north of gilpin",
     type: "mixed",
-    videos: [VIDEOS.deerLakePkwyEb.id],
-    videosEndAtEnd: [VIDEOS.deerLakePkwyEb.id],
+    videoIds: [VIDEOS.deerLakePkwyEb.id],
+    videoIdsEndAtEnd: [VIDEOS.deerLakePkwyEb.id],
     positions: [
       DEER_LAKE_GILPIN_W,
       [49.242, -122.97571],

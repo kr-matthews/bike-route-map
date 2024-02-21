@@ -21,8 +21,8 @@ export const KERR = [
     routeNames: [ROUTES.kerr.name],
     description: "south tip",
     type: "mixed",
-    videos: [VIDEOS.kerrSb.id],
-    videosEndAtStart: [VIDEOS.kerrSb.id],
+    videoIds: [VIDEOS.kerrSb.id],
+    videoIdsEndAtStart: [VIDEOS.kerrSb.id],
     positions: [
       KERR_FRASER_TRAIL,
       [49.20611, -123.04221],
@@ -75,7 +75,7 @@ export const KERR = [
     description: "sb 1",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.kerrSb.id],
+    videoIds: [VIDEOS.kerrSb.id],
     positions: [
       KERR_49TH_N,
       [49.22466, -123.04115],
@@ -89,7 +89,7 @@ export const KERR = [
     description: "sb 2",
     oneWay: "required",
     type: "shared",
-    videos: [VIDEOS.kerrSb.id],
+    videoIds: [VIDEOS.kerrSb.id],
     positions: [SOUTHBOUND_LANE_ENDS, SOUTHBOUND_LANE_STARTS_AGAIN],
   },
   {
@@ -97,7 +97,7 @@ export const KERR = [
     description: "sb 3",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.kerrSb.id],
+    videoIds: [VIDEOS.kerrSb.id],
     positions: [
       SOUTHBOUND_LANE_STARTS_AGAIN,
       [49.21915, -123.04143],
@@ -120,15 +120,15 @@ export const KERR = [
     description: "sb 4",
     type: "dedicated",
     oneWay: "required",
-    videos: [VIDEOS.kerrSb.id],
+    videoIds: [VIDEOS.kerrSb.id],
     positions: [KERR_MARINE_SW, KERR_KENT_N_SW],
   },
   {
     description: "to 45th",
     type: "shared",
     hideUnlessVideo: true,
-    videos: [VIDEOS.kerrSb.id],
-    videosStartAtEnd: [VIDEOS.kerrSb.id],
+    videoIds: [VIDEOS.kerrSb.id],
+    videoIdsStartAtEnd: [VIDEOS.kerrSb.id],
     positions: [
       KERR_49TH_N,
       [49.22623, -123.04099],

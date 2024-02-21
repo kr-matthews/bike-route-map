@@ -15,8 +15,8 @@ export const WALES_DUCHESS = [
     routeNames: [ROUTES.walesDuchess.name],
     description: "46th to kingsway",
     type: "quiet",
-    videos: [VIDEOS.walesDuchessSb.id],
-    videosEndAtStart: [VIDEOS.walesDuchessSb.id],
+    videoIds: [VIDEOS.walesDuchessSb.id],
+    videoIdsEndAtStart: [VIDEOS.walesDuchessSb.id],
     positions: [
       WALES_46TH,
       WALES_45TH,
@@ -34,7 +34,7 @@ export const WALES_DUCHESS = [
     routeNames: [ROUTES.walesDuchess.name],
     description: "kingsway path",
     type: "combined",
-    videos: [VIDEOS.walesDuchessSb.id],
+    videoIds: [VIDEOS.walesDuchessSb.id],
     positions: [
       WALES_KINGSWAY_SW,
       [49.23888, -123.05202],
@@ -47,8 +47,8 @@ export const WALES_DUCHESS = [
     routeNames: [ROUTES.walesDuchess.name],
     description: "kingsway to bc parkway",
     type: "quiet",
-    videos: [VIDEOS.walesDuchessSb.id],
-    videosStartAtEnd: [VIDEOS.walesDuchessSb.id],
+    videoIds: [VIDEOS.walesDuchessSb.id],
+    videoIdsStartAtEnd: [VIDEOS.walesDuchessSb.id],
     positions: [
       DUCHESS_KINGSWAY_NE,
       [49.23948, -123.05243],

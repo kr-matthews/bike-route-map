@@ -7,8 +7,8 @@ export const NICOLA = [
     routeNames: [ROUTES.nicola.name],
     description: "primary",
     type: "quiet",
-    videos: [VIDEOS.nicolaNb.id],
-    videosEndAtEnd: [VIDEOS.nicolaNb.id],
+    videoIds: [VIDEOS.nicolaNb.id],
+    videoIdsEndAtEnd: [VIDEOS.nicolaNb.id],
     positions: [
       NICOLA_HARO,
       [49.28869, -123.13111],

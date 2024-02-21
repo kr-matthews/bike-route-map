@@ -35,8 +35,8 @@ export const YUKON = [
     routeNames: [ROUTES.yukon.name],
     description: "29th to king edward",
     type: "quiet",
-    videos: [VIDEOS.yukonSb.id],
-    videosEndAtStart: [VIDEOS.yukonSb.id],
+    videoIds: [VIDEOS.yukonSb.id],
+    videoIdsEndAtStart: [VIDEOS.yukonSb.id],
     positions: [
       YUKON_29TH_N,
       [49.24697, -123.11228],
@@ -48,14 +48,14 @@ export const YUKON = [
     routeNames: [ROUTES.yukon.name],
     description: "king edward overlap",
     type: "dedicated",
-    videos: [VIDEOS.yukonSb.id],
+    videoIds: [VIDEOS.yukonSb.id],
     positions: [YUKON_KING_EDWARD_SE, YUKON_KING_EDWARD_SW],
   },
   {
     routeNames: [ROUTES.yukon.name],
     description: "king edward to 16th",
     type: "quiet",
-    videos: [VIDEOS.yukonSb.id],
+    videoIds: [VIDEOS.yukonSb.id],
     positions: [
       YUKON_KING_EDWARD_SW,
       [49.25005, -123.11279],
@@ -69,14 +69,14 @@ export const YUKON = [
     routeNames: [ROUTES.yukon.name],
     description: "16th",
     type: "dedicated",
-    videos: [VIDEOS.yukonSb.id],
+    videoIds: [VIDEOS.yukonSb.id],
     positions: [YUKON_16TH_E_N, YUKON_16TH_W_N],
   },
   {
     routeNames: [ROUTES.yukon.name],
     description: "16th to 12th",
     type: "quiet",
-    videos: [VIDEOS.yukonSb.id],
+    videoIds: [VIDEOS.yukonSb.id],
     positions: [YUKON_16TH_W_N, YUKON_14TH, YUKON_12TH],
   },
   {
@@ -127,7 +127,7 @@ export const YUKON = [
     description: "sb: wylie to 5th",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.yukonSb.id],
+    videoIds: [VIDEOS.yukonSb.id],
     positions: [
       WYLIE_2ND_N,
       [49.26753, -123.11308],
@@ -141,7 +141,7 @@ export const YUKON = [
     description: "sb: 5th to 7th",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.yukonSb.id, VIDEOS.offBroadwayWb.id],
+    videoIds: [VIDEOS.yukonSb.id, VIDEOS.offBroadwayWb.id],
     positions: [YUKON_5TH_W, [49.26574, -123.11287], YUKON_7TH_NW],
   },
   {
@@ -149,7 +149,7 @@ export const YUKON = [
     description: "sb: 7th to 12th",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.yukonSb.id],
+    videoIds: [VIDEOS.yukonSb.id],
     positions: [
       YUKON_7TH_NW,
       YUKON_7TH_SW,
@@ -164,7 +164,7 @@ export const YUKON = [
     routeNames: [ROUTES.yukon.name],
     description: "2nd to 1st",
     type: "quiet",
-    videos: [VIDEOS.yukonSb.id],
+    videoIds: [VIDEOS.yukonSb.id],
     positions: [WYLIE_2ND_N, WYLIE_1ST_S],
   },
   {

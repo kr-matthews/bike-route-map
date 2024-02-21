@@ -41,8 +41,8 @@ export const DUNBAR = [
     description: "16th wb: part 2",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.dunbarNb.id],
-    videosEndAtEnd: [VIDEOS.dunbarNb.id],
+    videoIds: [VIDEOS.dunbarNb.id],
+    videoIdsEndAtEnd: [VIDEOS.dunbarNb.id],
     positions: [DUNBAR_16TH_NW, [49.25806, -123.18602]],
   },
   {
@@ -71,8 +71,8 @@ export const DUNBAR = [
     description: "nb: marine to before 41st",
     type: "shared",
     oneWay: "required",
-    videos: [VIDEOS.dunbarNb.id],
-    videosStartAtStart: [VIDEOS.dunbarNb.id],
+    videoIds: [VIDEOS.dunbarNb.id],
+    videoIdsStartAtStart: [VIDEOS.dunbarNb.id],
     positions: [DUNBAR_MARINE_NE, DUNBAR_NB_BEFORE_41ST],
   },
   {
@@ -80,7 +80,7 @@ export const DUNBAR = [
     description: "nb: before 41st",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.dunbarNb.id],
+    videoIds: [VIDEOS.dunbarNb.id],
     positions: [DUNBAR_NB_BEFORE_41ST, DUNBAR_41ST_SE],
   },
   {
@@ -88,7 +88,7 @@ export const DUNBAR = [
     description: "nb: after 41st",
     type: "shared",
     oneWay: "required",
-    videos: [VIDEOS.dunbarNb.id],
+    videoIds: [VIDEOS.dunbarNb.id],
     positions: [DUNBAR_41ST_SE, DUNBAR_NB_AFTER_41ST],
   },
   {
@@ -96,7 +96,7 @@ export const DUNBAR = [
     description: "nb: after 41st to before king edward",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.dunbarNb.id],
+    videoIds: [VIDEOS.dunbarNb.id],
     positions: [
       DUNBAR_NB_AFTER_41ST,
       DUNBAR_39TH_E,
@@ -114,7 +114,7 @@ export const DUNBAR = [
     description: "nb: crossing king edward",
     type: "shared",
     oneWay: "required",
-    videos: [VIDEOS.dunbarNb.id],
+    videoIds: [VIDEOS.dunbarNb.id],
     positions: [DUNBAR_NB_BEFORE_KING_EDWARD, DUNBAR_NB_AFTER_KING_EDWARD],
   },
   {
@@ -122,7 +122,7 @@ export const DUNBAR = [
     description: "nb: after king edward to after 18th",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.dunbarNb.id],
+    videoIds: [VIDEOS.dunbarNb.id],
     positions: [
       DUNBAR_NB_AFTER_KING_EDWARD,
       [49.25198, -123.18512],
@@ -137,7 +137,7 @@ export const DUNBAR = [
     description: "nb: after 18th to 16th",
     type: "shared",
     oneWay: "required",
-    videos: [VIDEOS.dunbarNb.id],
+    videoIds: [VIDEOS.dunbarNb.id],
     positions: [
       DUNBAR_NB_AFTER_18TH,
       DUNBAR_16TH_SE,

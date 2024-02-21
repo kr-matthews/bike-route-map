@@ -13,9 +13,9 @@ export const PRINCE_EDWARD = [
     routeNames: [ROUTES.princeEdward.name],
     description: "primary",
     type: "quiet",
-    videos: [VIDEOS.princeEdwardNb.id],
-    videosStartAtStart: [VIDEOS.princeEdwardNb.id],
-    videosEndAtEnd: [VIDEOS.princeEdwardNb.id],
+    videoIds: [VIDEOS.princeEdwardNb.id],
+    videoIdsStartAtStart: [VIDEOS.princeEdwardNb.id],
+    videoIdsEndAtEnd: [VIDEOS.princeEdwardNb.id],
     positions: [
       PRINCE_EDWARD_59TH,
       [49.21751, -123.09778],

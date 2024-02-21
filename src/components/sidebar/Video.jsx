@@ -5,7 +5,7 @@ import startIcon from "../../images/marker-green.svg";
 import "./toggleSwitch.css";
 
 export default function Video({ video, direction }) {
-  const { video: selectedVideo, setVideoId } = useContext(Selections);
+  const { selectedVideo, selectVideo } = useContext(Selections);
   const isShowing = video.id === selectedVideo?.id;
   const backgroundColor = isShowing ? COLOUR_VIDEO : COLOUR_NO_VIDEO;
 
@@ -16,7 +16,7 @@ export default function Video({ video, direction }) {
   const durationText = `${video.minutes} min`;
 
   const updateVideo = () =>
-    setVideoId((current) => (current === video.id ? null : video.id));
+    selectVideo((currentId) => (currentId === video.id ? null : video.id));
 
   return (
     <span

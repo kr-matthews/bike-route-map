@@ -28,14 +28,14 @@ export const SUNRISE = [
     routeNames: [ROUTES.sunrise.name],
     description: "kent to marine",
     type: "quiet",
-    videos: [VIDEOS.sunriseNb.id],
+    videoIds: [VIDEOS.sunriseNb.id],
     positions: [ELLIOTT_KENT, ELLIOTT_MARINE],
   },
   {
     routeNames: [ROUTES.sunrise.name],
     description: "marine to vivian",
     type: "shared",
-    videos: [VIDEOS.sunriseNb.id],
+    videoIds: [VIDEOS.sunriseNb.id],
     positions: [
       ELLIOTT_MARINE,
       [49.20761, -123.05686],
@@ -51,7 +51,7 @@ export const SUNRISE = [
     routeNames: [ROUTES.sunrise.name],
     description: "elliott to ridgeway",
     type: "quiet",
-    videos: [VIDEOS.sunriseNb.id],
+    videoIds: [VIDEOS.sunriseNb.id],
     positions: [
       ELLIOTT_VIVIAN,
       [49.21273, -123.05487],
@@ -74,7 +74,7 @@ export const SUNRISE = [
     routeNames: [ROUTES.sunrise.name],
     description: "ridgeway to midtown",
     type: "quiet",
-    videos: [VIDEOS.sunriseNb.id],
+    videoIds: [VIDEOS.sunriseNb.id],
     positions: [
       EARLES_45TH,
       [49.23116, -123.04881],
@@ -87,14 +87,14 @@ export const SUNRISE = [
     routeNames: [ROUTES.sunrise.name, ROUTES.midtown.name],
     description: "earles to kingsway",
     type: "quiet",
-    videos: [VIDEOS.sunriseNb.id, VIDEOS.midtownVancouverEb.id],
+    videoIds: [VIDEOS.sunriseNb.id, VIDEOS.midtownVancouverEb.id],
     positions: [EARLES_38TH, KINGSWAY_EARLES],
   },
   {
     routeNames: [ROUTES.sunrise.name, ROUTES.bcParkway.name],
     description: "slocan",
     type: "shared",
-    videos: [
+    videoIds: [
       VIDEOS.sunriseNb.id,
       VIDEOS.bcParkwayVancouverEb.id,
       VIDEOS.bcParkwayVancouverWb.id,
@@ -105,7 +105,7 @@ export const SUNRISE = [
     routeNames: [ROUTES.sunrise.name],
     description: "bc parkway to 22nd",
     type: "shared",
-    videos: [VIDEOS.sunriseNb.id],
+    videoIds: [VIDEOS.sunriseNb.id],
     positions: [
       SLOCAN_BC_PARKWAY,
       [49.24793, -123.04965],
@@ -118,7 +118,7 @@ export const SUNRISE = [
     routeNames: [ROUTES.sunrise.name],
     description: "22nd to adanac",
     type: "quiet",
-    videos: [VIDEOS.sunriseNb.id],
+    videoIds: [VIDEOS.sunriseNb.id],
     positions: [
       SLOCAN_22ND_N,
       [49.25154, -123.04961],
@@ -144,8 +144,8 @@ export const SUNRISE = [
     routeNames: [ROUTES.sunrise.name],
     description: "adanac to wall",
     type: "quiet",
-    videos: [VIDEOS.sunriseNb.id],
-    videosEndAtEnd: [VIDEOS.sunriseNb.id],
+    videoIds: [VIDEOS.sunriseNb.id],
+    videoIdsEndAtEnd: [VIDEOS.sunriseNb.id],
     positions: [
       KASLO_ADANAC,
       [49.27772, -123.04672],

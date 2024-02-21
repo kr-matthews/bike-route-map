@@ -161,7 +161,7 @@ export const SPIRIT_TRAIL = [
     routeNames: [ROUTES.spiritTrail.name],
     description: "under lions gate",
     type: "comfortable",
-    videos: [VIDEOS.lionsGateBridgeSb.id],
+    videoIds: [VIDEOS.lionsGateBridgeSb.id],
     positions: [
       LIONS_GATE_SPIRIT_TRAIL_W,
       [49.32369, -123.13123],
@@ -172,8 +172,8 @@ export const SPIRIT_TRAIL = [
     routeNames: [ROUTES.spiritTrail.name],
     description: "south of lions gate",
     type: "comfortable",
-    videos: [VIDEOS.lionsGateBridgeSb.id],
-    videosStartAtEnd: [VIDEOS.lionsGateBridgeSb.id],
+    videoIds: [VIDEOS.lionsGateBridgeSb.id],
+    videoIdsStartAtEnd: [VIDEOS.lionsGateBridgeSb.id],
     positions: [LIONS_GATE_SPIRIT_TRAIL_E, AFTER_LIONS_GATE],
   },
   {

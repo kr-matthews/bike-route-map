@@ -27,14 +27,14 @@ export const HASTINGS_PARK = [
     routeNames: [ROUTES.hastingsPark.name],
     description: "hastings",
     type: "mixed",
-    videos: [
+    videoIds: [
       VIDEOS.hastingsPortsideWindermere.id,
       VIDEOS.hastingsWindermereCassiar.id,
       VIDEOS.windermereNb.id,
     ],
-    videosStartAtStart: [VIDEOS.hastingsWindermereCassiar.id],
-    videosEndAtStart: [VIDEOS.hastingsPortsideWindermere.id],
-    videosEndAtEnd: [VIDEOS.windermereNb.id],
+    videoIdsStartAtStart: [VIDEOS.hastingsWindermereCassiar.id],
+    videoIdsEndAtStart: [VIDEOS.hastingsPortsideWindermere.id],
+    videoIdsEndAtEnd: [VIDEOS.windermereNb.id],
     positions: [
       WINDERMERE_HASTINGS_N,
       [49.28124, -123.03497],
@@ -48,7 +48,7 @@ export const HASTINGS_PARK = [
     routeNames: [ROUTES.hastingsPark.name],
     description: "fields west",
     type: "mixed",
-    videos: [VIDEOS.hastingsPortsideWindermere.id],
+    videoIds: [VIDEOS.hastingsPortsideWindermere.id],
     positions: [
       FIELDS_SW,
       [49.28155, -123.03494],
@@ -66,7 +66,7 @@ export const HASTINGS_PARK = [
     routeNames: [ROUTES.hastingsPark.name],
     description: "fields south east",
     type: "combined",
-    videos: [VIDEOS.hastingsWindermereCassiar.id],
+    videoIds: [VIDEOS.hastingsWindermereCassiar.id],
     positions: [
       FIELDS_SW,
       [49.28152, -123.03367],
@@ -81,7 +81,7 @@ export const HASTINGS_PARK = [
     routeNames: [ROUTES.hastingsPark.name],
     description: "fields north east",
     type: "combined",
-    videos: [VIDEOS.hastingsCassiarPandora.id],
+    videoIds: [VIDEOS.hastingsCassiarPandora.id],
     positions: [
       FIELDS_E,
       [49.28323, -123.03227],
@@ -101,12 +101,12 @@ export const HASTINGS_PARK = [
     routeNames: [ROUTES.hastingsPark.name],
     description: "cassiar connection",
     type: "mixed",
-    videos: [
+    videoIds: [
       VIDEOS.hastingsCassiarPandora.id,
       VIDEOS.hastingsWindermereCassiar.id,
     ],
-    videosStartAtEnd: [VIDEOS.hastingsCassiarPandora.id],
-    videosEndAtEnd: [VIDEOS.hastingsWindermereCassiar.id],
+    videoIdsStartAtEnd: [VIDEOS.hastingsCassiarPandora.id],
+    videoIdsEndAtEnd: [VIDEOS.hastingsWindermereCassiar.id],
     positions: [
       FIELDS_E,
       [49.28234, -123.03218],
@@ -133,7 +133,7 @@ export const HASTINGS_PARK = [
     routeNames: [ROUTES.hastingsPark.name],
     description: "overlap near bike track",
     type: "comfortable",
-    videos: [
+    videoIds: [
       VIDEOS.hastingsPortsideWindermere.id,
       VIDEOS.hastingsCassiarPandora.id,
     ],
@@ -144,7 +144,7 @@ export const HASTINGS_PARK = [
     description: "bridgewater path",
     type: "comfortable",
     elevation: -0.5,
-    videos: [VIDEOS.hastingsPortsideWindermere.id],
+    videoIds: [VIDEOS.hastingsPortsideWindermere.id],
     positions: [
       MILLER_E_END,
       [49.28385, -123.03382],
@@ -176,7 +176,7 @@ export const HASTINGS_PARK = [
     description: "tunnel",
     type: "mixed",
     elevation: -1,
-    videos: [VIDEOS.hastingsPortsideWindermere.id],
+    videoIds: [VIDEOS.hastingsPortsideWindermere.id],
     positions: [TUNNEL_START, TUNNEL_END],
   },
   {
@@ -184,8 +184,8 @@ export const HASTINGS_PARK = [
     description: "bridgeway (creekway)",
     type: "mixed",
     elevation: -0.5,
-    videos: [VIDEOS.hastingsPortsideWindermere.id],
-    videosStartAtEnd: [VIDEOS.hastingsPortsideWindermere.id],
+    videoIds: [VIDEOS.hastingsPortsideWindermere.id],
+    videoIdsStartAtEnd: [VIDEOS.hastingsPortsideWindermere.id],
     positions: [
       TUNNEL_END,
       BRIDGEWAY_CREEKWAY_PARK_S,
@@ -210,7 +210,7 @@ export const HASTINGS_PARK = [
     routeNames: [ROUTES.hastingsPark.name],
     description: "miller east",
     type: "comfortable",
-    videos: [VIDEOS.hastingsCassiarPandora.id],
+    videoIds: [VIDEOS.hastingsCassiarPandora.id],
     positions: [
       MILLER_MIDDLE,
       [49.2846, -123.03773],
@@ -249,8 +249,8 @@ export const HASTINGS_PARK = [
     routeNames: [ROUTES.hastingsPark.name],
     description: "pandora",
     type: "comfortable",
-    videos: [VIDEOS.hastingsCassiarPandora.id],
-    videosEndAtStart: [VIDEOS.hastingsCassiarPandora.id],
+    videoIds: [VIDEOS.hastingsCassiarPandora.id],
+    videoIdsEndAtStart: [VIDEOS.hastingsCassiarPandora.id],
     positions: [
       RENFREW_PANDORA,
       [49.28299, -123.0423],

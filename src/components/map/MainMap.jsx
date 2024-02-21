@@ -9,19 +9,19 @@ import PolylineCreator from "./PolylineCreator";
 import "./map.css";
 
 export default function MainMap({ setMapRef, fullWidth = false }) {
-  const { setSelected } = useContext(Selections);
+  const { selectRoute } = useContext(Selections);
 
   useEffect(
     function closeOnEsc() {
       const onKeyDown = async (e) => {
         if (e.key === "Escape") {
-          setSelected(null);
+          selectRoute(null);
         }
       };
       document.addEventListener("keydown", onKeyDown);
       return () => document.removeEventListener("keydown", onKeyDown);
     },
-    [setSelected]
+    [selectRoute]
   );
 
   return (

@@ -60,7 +60,7 @@ export const MARINE = [
   {
     description: "connection with arbutus greenway",
     type: "quiet",
-    videos: [VIDEOS.arbutusGreenwayNb.id],
+    videoIds: [VIDEOS.arbutusGreenwayNb.id],
     positions: [
       MILTON_ARBUTUS_GREENWAY,
       [49.20497, -123.14113],
@@ -72,8 +72,8 @@ export const MARINE = [
     description: "from arthur laing",
     type: "shared",
     oneWay: "required",
-    videos: [VIDEOS.arbutusGreenwayNb.id],
-    videosStartAtStart: [VIDEOS.arbutusGreenwayNb.id],
+    videoIds: [VIDEOS.arbutusGreenwayNb.id],
+    videoIdsStartAtStart: [VIDEOS.arbutusGreenwayNb.id],
     positions: [
       MARINE_ARTHUR_LAING_N,
       [49.2049, -123.13956],
@@ -86,7 +86,7 @@ export const MARINE = [
     description: "gas station sidewalk",
     type: "other",
     oneWay: "required",
-    videos: [VIDEOS.arbutusGreenwayNb.id],
+    videoIds: [VIDEOS.arbutusGreenwayNb.id],
     positions: [
       GRANVILLE_SIDEWALK_START,
       [49.20522, -123.14015],
@@ -100,14 +100,14 @@ export const MARINE = [
     description: "crossing granville",
     type: "shared",
     oneWay: "recommended",
-    videos: [VIDEOS.arbutusGreenwayNb.id],
+    videoIds: [VIDEOS.arbutusGreenwayNb.id],
     positions: [GRANVILLE_GAS_STATION, [49.20525, -123.1406], GRANVILLE_MARINE],
   },
   {
     routeNames: [ROUTES.marineSw.name],
     description: "parallel to granville",
     type: "shared",
-    videos: [VIDEOS.swMarineEb.id, VIDEOS.arthurLaingSb.id],
+    videoIds: [VIDEOS.swMarineEb.id, VIDEOS.arthurLaingSb.id],
     positions: [
       GRANVILLE_MARINE,
       [49.20532, -123.14134],
@@ -125,19 +125,19 @@ export const MARINE = [
     routeNames: [ROUTES.marineSw.name],
     description: "parallel to granville - last bit",
     type: "shared",
-    videos: [
+    videoIds: [
       VIDEOS.swMarineEb.id,
       VIDEOS.arthurLaingSb.id,
       VIDEOS.cypressNb.id,
     ],
-    videosStartAtStart: [VIDEOS.cypressNb.id],
+    videoIdsStartAtStart: [VIDEOS.cypressNb.id],
     positions: [MARINE_AVERY, [49.20844, -123.14219], MARINE_70TH_S],
   },
   {
     routeNames: [ROUTES.marineSw.name],
     description: "crossing granville at cornish",
     type: "shared",
-    videos: [VIDEOS.cypressNb.id],
+    videoIds: [VIDEOS.cypressNb.id],
     positions: [MARINE_70TH_S, MARINE_70TH_N],
   },
   {
@@ -145,8 +145,8 @@ export const MARINE = [
     description: "to arthur laing",
     type: "shared",
     oneWay: "required",
-    videos: [VIDEOS.swMarineEb.id, VIDEOS.arthurLaingSb.id],
-    videosEndAtEnd: [VIDEOS.swMarineEb.id],
+    videoIds: [VIDEOS.swMarineEb.id, VIDEOS.arthurLaingSb.id],
+    videoIdsEndAtEnd: [VIDEOS.swMarineEb.id],
     positions: [
       GRANVILLE_MARINE,
       [49.20507, -123.14074],
@@ -227,7 +227,7 @@ export const MARINE = [
     description: "sw marine wb at camosun",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.midtownVancouverEb.id],
+    videoIds: [VIDEOS.midtownVancouverEb.id],
     positions: [MARINE_41ST_NW, CAMOSUN_MARINE_N],
   },
   {
@@ -318,7 +318,7 @@ export const MARINE = [
     description: "sw marine eb to camosun-ish",
     type: "shoulder",
     oneWay: "required",
-    videos: [VIDEOS.swMarineEb.id],
+    videoIds: [VIDEOS.swMarineEb.id],
     positions: [
       MARINE_MARINE,
       [49.25654, -123.25256],
@@ -372,8 +372,8 @@ export const MARINE = [
     description: "sw marine eb near camosun",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.swMarineEb.id, VIDEOS.midtownVancouverEb.id],
-    videosStartAtStart: [VIDEOS.midtownVancouverEb.id],
+    videoIds: [VIDEOS.swMarineEb.id, VIDEOS.midtownVancouverEb.id],
+    videoIdsStartAtStart: [VIDEOS.midtownVancouverEb.id],
     positions: [WEST_OF_CAMOSUN, CAMOSUN_MARINE_S, MARINE_41ST_SW],
   },
   {
@@ -381,7 +381,7 @@ export const MARINE = [
     description: "sw marine eb from camosun",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.swMarineEb.id],
+    videoIds: [VIDEOS.swMarineEb.id],
     positions: [
       MARINE_41ST_SW,
       [49.23457, -123.1962],
@@ -443,8 +443,8 @@ export const MARINE = [
     description: "just beyond arbutus greenway eb",
     type: "dedicated",
     oneWay: "required",
-    videos: [VIDEOS.swMarineEb.id, VIDEOS.arthurLaingSb.id],
-    videosStartAtStart: [VIDEOS.arthurLaingSb.id],
+    videoIds: [VIDEOS.swMarineEb.id, VIDEOS.arthurLaingSb.id],
+    videoIdsStartAtStart: [VIDEOS.arthurLaingSb.id],
     positions: [ARBUTUS_GREENWAY_MARINE_S, EAST_BLVD_MARINE_S],
   },
   {
@@ -452,7 +452,7 @@ export const MARINE = [
     description: "arbutus greenway-ish to 70th",
     type: "shared",
     oneWay: "required",
-    videos: [VIDEOS.swMarineEb.id, VIDEOS.arthurLaingSb.id],
+    videoIds: [VIDEOS.swMarineEb.id, VIDEOS.arthurLaingSb.id],
     positions: [EAST_BLVD_MARINE_S, [49.20852, -123.14366], MARINE_70TH_S],
   },
 
@@ -477,8 +477,8 @@ export const MARINE = [
     routeNames: [ROUTES.marineNw.name],
     description: "just north of marine-marine",
     type: "shared",
-    videos: [VIDEOS.swMarineEb.id],
-    videosStartAtEnd: [VIDEOS.swMarineEb.id],
+    videoIds: [VIDEOS.swMarineEb.id],
+    videoIdsStartAtEnd: [VIDEOS.swMarineEb.id],
     positions: [
       MARINE_MARINE,
       [49.25694, -123.25349],

@@ -48,9 +48,9 @@ export default function Routes({ navigateTo }) {
 }
 
 function Route({ route }) {
-  const { selectedRoute, setSelected, highlighted, setHighlighted } =
+  const { selectedRoute, selectRoute, highlightedRoute, highlightRoute } =
     useContext(Selections);
-  const isHighlighted = highlighted === route.name;
+  const isHighlighted = highlightedRoute?.name === route.name;
   const isSelected = selectedRoute?.name === route.name;
 
   const background = getBackgroundColor(route.name, isHighlighted);
@@ -66,10 +66,10 @@ function Route({ route }) {
         margin: "5px 0",
         cursor: "pointer",
       }}
-      onMouseOver={() => setHighlighted(route.name)}
-      onMouseOut={() => setHighlighted(null)}
+      onMouseOver={() => highlightRoute(route.name)}
+      onMouseOut={() => highlightRoute(null)}
       onMouseDown={() =>
-        setSelected((selected) => (selected === route.name ? null : route.name))
+        selectRoute((selected) => (selected === route.name ? null : route.name))
       }
     >
       <span

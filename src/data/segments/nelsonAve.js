@@ -7,8 +7,8 @@ export const NELSON_AVE = [
     routeNames: [ROUTES.nelsonAve.name],
     description: "all",
     type: "mixed",
-    videos: [VIDEOS.nelsonPathSb.id],
-    videosEndAtStart: [VIDEOS.nelsonPathSb.id],
+    videoIds: [VIDEOS.nelsonPathSb.id],
+    videoIdsEndAtStart: [VIDEOS.nelsonPathSb.id],
     positions: [
       NELSON_BC_PARKWAY_W,
       [49.2218, -122.99428],

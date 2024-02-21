@@ -1,4 +1,4 @@
-import { useReducer, useState } from "react";
+import { useCallback, useReducer, useState } from "react";
 import {
   ELEVATIONS,
   DIRECTIONS,
@@ -64,19 +64,24 @@ const defaultFilters = (allOn) => ({
 export default function useSelections() {
   // interactions
 
-  const [highlighted, setHighlighted] = useState(null);
-  const [selected, setSelected] = useState(null);
-  const [videoId, setVideoId] = useState(null);
+  const [highlightedRouteName, setHighlightedRouteName] = useState(null);
+  const [selectedRouteName, setSelectedRouteName] = useState(null);
+  const [selectedVideoId, setSelectedVideoId] = useState(null);
 
-  const selectedRoute = getAugmentedRoute(selected);
-
-  const video = getAugmentedVideo(videoId);
+  const highlightedRoute = getAugmentedRoute(highlightedRouteName);
+  const selectedRoute = getAugmentedRoute(selectedRouteName);
+  const selectedVideo = getAugmentedVideo(selectedVideoId);
 
   // videos live within a route, so clear video on route change
-  function setSelectedAndClearVideo(routeName) {
-    setVideoId(null);
-    setSelected(routeName);
-  }
+  const handleSelectingRouteName = useCallback(
+    (routeName) => {
+      if (routeName !== selectedRouteName) {
+        setSelectedVideoId(null);
+        setSelectedRouteName(routeName);
+      }
+    },
+    [selectedRouteName]
+  );
 
   // filters
 
@@ -85,8 +90,12 @@ export default function useSelections() {
     true,
     defaultFilters
   );
+
   const isSegmentHidden = (segment) => {
-    if (segment.hideUnlessVideo && !segment.videos?.includes(video?.id)) {
+    if (
+      segment.hideUnlessVideo &&
+      !segment.videoIds?.includes(selectedVideo?.id)
+    ) {
       return true;
     }
 
@@ -96,7 +105,7 @@ export default function useSelections() {
 
     if (
       filters.videos !== undefined &&
-      filters.videos === ((segment.videos ?? []).length === 0)
+      filters.videos === ((segment.videoIds ?? []).length === 0)
     ) {
       return true;
     }
@@ -117,12 +126,12 @@ export default function useSelections() {
   };
 
   return {
-    highlighted,
-    setHighlighted,
+    highlightedRoute,
+    highlightRoute: setHighlightedRouteName,
     selectedRoute,
-    setSelected: setSelectedAndClearVideo,
-    video,
-    setVideoId,
+    selectRoute: handleSelectingRouteName,
+    selectedVideo,
+    selectVideo: setSelectedVideoId,
     filters,
     isSegmentHidden,
     dispatchFilters,

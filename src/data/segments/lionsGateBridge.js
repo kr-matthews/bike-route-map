@@ -89,8 +89,8 @@ export const LIONS_GATE_BRIDGE = [
     description: "melville",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.lionsGateBridgeNb.id],
-    videosStartAtStart: [VIDEOS.lionsGateBridgeNb.id],
+    videoIds: [VIDEOS.lionsGateBridgeNb.id],
+    videoIdsStartAtStart: [VIDEOS.lionsGateBridgeNb.id],
     positions: [
       HORNBY_DUNSMUIR,
       BURRARD_DUNSMUIR,
@@ -113,7 +113,7 @@ export const LIONS_GATE_BRIDGE = [
     description: "pender",
     type: "shared",
     oneWay: "required",
-    videos: [VIDEOS.lionsGateBridgeNb.id],
+    videoIds: [VIDEOS.lionsGateBridgeNb.id],
     positions: [
       JERVIS_PENDER,
       [49.28962, -123.12737],
@@ -127,7 +127,7 @@ export const LIONS_GATE_BRIDGE = [
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.lionsGateBridgeNb.id],
+    videoIds: [VIDEOS.lionsGateBridgeNb.id],
     positions: [
       CARDERO_GEORGIA_N,
       [49.29164, -123.13209],
@@ -144,7 +144,7 @@ export const LIONS_GATE_BRIDGE = [
     type: "painted",
     oneWay: "required",
     elevation: 1,
-    videos: [VIDEOS.lionsGateBridgeNb.id],
+    videoIds: [VIDEOS.lionsGateBridgeNb.id],
     positions: [
       NORTHBOUND_LAGOON_OVERPASS_START,
       [49.29494, -123.13662],
@@ -157,7 +157,7 @@ export const LIONS_GATE_BRIDGE = [
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.lionsGateBridgeNb.id],
+    videoIds: [VIDEOS.lionsGateBridgeNb.id],
     positions: [
       NORTHBOUND_LAGOON_OVERPASS_END,
       [49.29593, -123.13612],
@@ -172,7 +172,7 @@ export const LIONS_GATE_BRIDGE = [
     type: "mixed",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.lionsGateBridgeNb.id],
+    videoIds: [VIDEOS.lionsGateBridgeNb.id],
     positions: [
       NORTHBOUND_ON_PATH_1,
       [49.29657, -123.13614],
@@ -186,7 +186,7 @@ export const LIONS_GATE_BRIDGE = [
     type: "mixed",
     oneWay: "required",
     elevation: 1,
-    videos: [VIDEOS.lionsGateBridgeNb.id],
+    videoIds: [VIDEOS.lionsGateBridgeNb.id],
     positions: [NORTHBOUND_CAR_OVERPASS_START, NORTHBOUND_CAR_OVERPASS_END],
   },
   {
@@ -195,7 +195,7 @@ export const LIONS_GATE_BRIDGE = [
     type: "combined",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.lionsGateBridgeNb.id],
+    videoIds: [VIDEOS.lionsGateBridgeNb.id],
     positions: [
       NORTHBOUND_CAR_OVERPASS_END,
       [49.29765, -123.13698],
@@ -235,7 +235,7 @@ export const LIONS_GATE_BRIDGE = [
     type: "mixed",
     oneWay: "required",
     elevation: 1,
-    videos: [VIDEOS.lionsGateBridgeNb.id],
+    videoIds: [VIDEOS.lionsGateBridgeNb.id],
     positions: [
       NORTHBOUND_ELEVATED_START,
       [49.31206, -123.14155],
@@ -254,7 +254,7 @@ export const LIONS_GATE_BRIDGE = [
     type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.lionsGateBridgeNb.id],
+    videoIds: [VIDEOS.lionsGateBridgeNb.id],
     positions: [
       NORTHBOUND_ELEVATED_END,
       [49.32445, -123.13009],
@@ -276,7 +276,7 @@ export const LIONS_GATE_BRIDGE = [
     type: "mixed",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.lionsGateBridgeSb.id],
+    videoIds: [VIDEOS.lionsGateBridgeSb.id],
     positions: [
       SOUTHBOUND_ON_RAMP_MERGE,
       [49.32466, -123.13041],
@@ -289,7 +289,7 @@ export const LIONS_GATE_BRIDGE = [
     type: "mixed",
     oneWay: "required",
     elevation: 1,
-    videos: [VIDEOS.lionsGateBridgeSb.id],
+    videoIds: [VIDEOS.lionsGateBridgeSb.id],
     positions: [
       SOUTHBOUND_ELEVATED_START,
       [49.32344, -123.1313],
@@ -305,7 +305,7 @@ export const LIONS_GATE_BRIDGE = [
     type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.lionsGateBridgeSb.id],
+    videoIds: [VIDEOS.lionsGateBridgeSb.id],
     positions: [
       SOUTHBOUND_ELEVATED_END,
       [49.31192, -123.14201],
@@ -333,7 +333,7 @@ export const LIONS_GATE_BRIDGE = [
     description: "southbound causeway painted",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.lionsGateBridgeSb.id],
+    videoIds: [VIDEOS.lionsGateBridgeSb.id],
     positions: [
       SOUTHBOUND_OFF_TRAIL,
       [49.29785, -123.13758],
@@ -347,7 +347,7 @@ export const LIONS_GATE_BRIDGE = [
     type: "painted",
     oneWay: "required",
     elevation: 1,
-    videos: [VIDEOS.lionsGateBridgeSb.id],
+    videoIds: [VIDEOS.lionsGateBridgeSb.id],
     positions: [SOUTHBOUND_CAR_OVERPASS_START, SOUTHBOUND_CAR_OVERPASS_END],
   },
   {
@@ -356,7 +356,7 @@ export const LIONS_GATE_BRIDGE = [
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.lionsGateBridgeSb.id],
+    videoIds: [VIDEOS.lionsGateBridgeSb.id],
     positions: [
       SOUTHBOUND_CAR_OVERPASS_END,
       [49.29663, -123.13653],
@@ -373,8 +373,8 @@ export const LIONS_GATE_BRIDGE = [
     type: "painted",
     oneWay: "required",
     elevation: 1,
-    videos: [VIDEOS.lionsGateBridgeSb.id, VIDEOS.chilcoSb.id],
-    videosStartAtStart: [VIDEOS.chilcoSb.id],
+    videoIds: [VIDEOS.lionsGateBridgeSb.id, VIDEOS.chilcoSb.id],
+    videoIdsStartAtStart: [VIDEOS.chilcoSb.id],
     positions: [
       SOUTHBOUND_LAGOON_OVERPASS_START,
       [49.29478, -123.13698],
@@ -387,15 +387,15 @@ export const LIONS_GATE_BRIDGE = [
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.lionsGateBridgeSb.id, VIDEOS.chilcoSb.id],
+    videoIds: [VIDEOS.lionsGateBridgeSb.id, VIDEOS.chilcoSb.id],
     positions: [SOUTHBOUND_LAGOON_OVERPASS_END, CHILCO_GEORGIA_S],
   },
   {
     description: "georgia eastbound",
     oneWay: "required",
     type: "painted",
-    videos: [VIDEOS.lionsGateBridgeSb.id],
-    videosEndAtEnd: [VIDEOS.lionsGateBridgeSb.id],
+    videoIds: [VIDEOS.lionsGateBridgeSb.id],
+    videoIdsEndAtEnd: [VIDEOS.lionsGateBridgeSb.id],
     positions: [
       CHILCO_GEORGIA_S,
       [49.29353, -123.13537],
@@ -421,8 +421,8 @@ export const LIONS_GATE_BRIDGE = [
   {
     description: "connection to spirit",
     type: "dedicated",
-    videos: [VIDEOS.lionsGateBridgeNb.id],
-    videosEndAtEnd: [VIDEOS.lionsGateBridgeNb.id],
+    videoIds: [VIDEOS.lionsGateBridgeNb.id],
+    videoIdsEndAtEnd: [VIDEOS.lionsGateBridgeNb.id],
     positions: [
       NORTHBOUND_OFF_RAMP_SPLIT,
       [49.32459, -123.12934],
@@ -436,7 +436,7 @@ export const LIONS_GATE_BRIDGE = [
   {
     description: "connection from spirit",
     type: "mixed",
-    videos: [VIDEOS.lionsGateBridgeSb.id],
+    videoIds: [VIDEOS.lionsGateBridgeSb.id],
     positions: [
       LIONS_GATE_SPIRIT_TRAIL_W,
       [49.32432, -123.13075],

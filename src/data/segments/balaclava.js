@@ -22,8 +22,8 @@ export const BALACLAVA = [
     routeNames: [ROUTES.balaclava.name],
     description: "celtic to 45th",
     type: "quiet",
-    videos: [VIDEOS.balaclavaNb.id],
-    videosStartAtStart: [VIDEOS.balaclavaNb.id],
+    videoIds: [VIDEOS.balaclavaNb.id],
+    videoIdsStartAtStart: [VIDEOS.balaclavaNb.id],
     positions: [
       BALACLAVA_CELTIC,
       [49.21944, -123.17612],
@@ -40,7 +40,7 @@ export const BALACLAVA = [
     routeNames: [ROUTES.balaclava.name],
     description: "45th to ridgeway",
     type: "quiet",
-    videos: [VIDEOS.balaclavaNb.id],
+    videoIds: [VIDEOS.balaclavaNb.id],
     positions: [
       CARNARVON_45TH,
       [49.23281, -123.17307],
@@ -57,14 +57,14 @@ export const BALACLAVA = [
     routeNames: [ROUTES.balaclava.name, ROUTES.ridgeway.name],
     description: "ridgeway alt overlap carnarvon",
     type: "quiet",
-    videos: [VIDEOS.balaclavaNb.id],
+    videoIds: [VIDEOS.balaclavaNb.id],
     positions: [CARNARVON_31ST, CARNARVON_29TH],
   },
   {
     routeNames: [ROUTES.balaclava.name, ROUTES.ridgeway.name],
     description: "ridgeway alt overlap balaclava",
     type: "quiet",
-    videos: [VIDEOS.balaclavaNb.id],
+    videoIds: [VIDEOS.balaclavaNb.id],
     positions: [
       BALACLAVA_29TH,
       [49.24709, -123.17573],
@@ -82,8 +82,8 @@ export const BALACLAVA = [
     routeNames: [ROUTES.balaclava.name],
     description: "north",
     type: "quiet",
-    videos: [VIDEOS.balaclavaNb.id],
-    videosEndAtEnd: [VIDEOS.balaclavaNb.id],
+    videoIds: [VIDEOS.balaclavaNb.id],
+    videoIdsEndAtEnd: [VIDEOS.balaclavaNb.id],
     positions: [
       QUESNEL_20TH,
       [49.25463, -123.17639],

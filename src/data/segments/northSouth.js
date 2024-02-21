@@ -36,8 +36,8 @@ export const NORTH_SOUTH = [
     description: "sussex south end sb",
     type: "shared",
     oneWay: "required",
-    videos: [VIDEOS.northSouthSb.id],
-    videosEndAtEnd: [VIDEOS.northSouthSb.id],
+    videoIds: [VIDEOS.northSouthSb.id],
+    videoIdsEndAtEnd: [VIDEOS.northSouthSb.id],
     positions: [SUSSEX_GRANGE_N, [49.22994, -122.99787], SUSSEX_HAZEL_NW],
   },
   {
@@ -50,7 +50,7 @@ export const NORTH_SOUTH = [
     routeNames: [ROUTES.northSouth.name],
     description: "sussex",
     type: "quiet",
-    videos: [VIDEOS.northSouthSb.id],
+    videoIds: [VIDEOS.northSouthSb.id],
     positions: [
       SUSSEX_GRANGE_N,
       [49.23011, -122.99777],
@@ -72,7 +72,7 @@ export const NORTH_SOUTH = [
     routeNames: [ROUTES.northSouth.name],
     description: "through forest",
     type: "mixed",
-    videos: [VIDEOS.northSouthSb.id],
+    videoIds: [VIDEOS.northSouthSb.id],
     positions: [
       SUSSEX_HARKEN,
       [49.23968, -122.99789],
@@ -143,8 +143,8 @@ export const NORTH_SOUTH = [
     description: "wayburne sb",
     type: "shared",
     oneWay: "required",
-    videos: [VIDEOS.northSouthSb.id],
-    videosStartAtStart: [VIDEOS.northSouthSb.id],
+    videoIds: [VIDEOS.northSouthSb.id],
+    videoIdsStartAtStart: [VIDEOS.northSouthSb.id],
     positions: [
       [49.25442, -122.99357],
       [49.25428, -122.99358],

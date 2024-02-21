@@ -14,7 +14,7 @@ export const YORK = [
     routeNames: [ROUTES.york.name, ROUTES.seasideBypass.name],
     description: "stephens to maple",
     type: "quiet",
-    videos: [VIDEOS.yorkEb.id],
+    videoIds: [VIDEOS.yorkEb.id],
     positions: [
       STEPHENS_YORK,
       [49.27189, -123.1645],
@@ -32,14 +32,14 @@ export const YORK = [
     routeNames: [ROUTES.york.name, ROUTES.seasideBypass.name],
     description: "maple to cypress",
     type: "dedicated",
-    videos: [VIDEOS.yorkEb.id],
+    videoIds: [VIDEOS.yorkEb.id],
     positions: [MAPLE_YORK_SE, CYPRESS_YORK_SW, CYPRESS_YORK_SE],
   },
   {
     routeNames: [ROUTES.york.name],
     description: "cypress to chestnut",
     type: "dedicated",
-    videos: [VIDEOS.yorkEb.id],
+    videoIds: [VIDEOS.yorkEb.id],
     positions: [CYPRESS_YORK_SE, CHESTNUT_YORK],
   },
 ];

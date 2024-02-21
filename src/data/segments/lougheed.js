@@ -75,7 +75,7 @@ export const LOUGHEED = [
     type: "painted",
     oneWay: "required",
     hideArrows: true,
-    videos: [VIDEOS.seaToRiverNb.id],
+    videoIds: [VIDEOS.seaToRiverNb.id],
     positions: [GILMORE_LOUGHEED_SW, GILMORE_LOUGHEED_SE],
   },
   {

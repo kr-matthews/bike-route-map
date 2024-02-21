@@ -29,7 +29,7 @@ export const ARBUTUS_GREENWAY = [
     routeNames: [ROUTES.arbutusGreenway.name],
     description: "south of 41st",
     type: "combined",
-    videos: [VIDEOS.arbutusGreenwayNb.id],
+    videoIds: [VIDEOS.arbutusGreenwayNb.id],
     positions: [
       MILTON_ARBUTUS_GREENWAY,
       [49.20604, -123.14283],
@@ -88,14 +88,14 @@ export const ARBUTUS_GREENWAY = [
     routeNames: [ROUTES.arbutusGreenway.name],
     description: "41st sidewalk",
     type: "other",
-    videos: [VIDEOS.arbutusGreenwayNb.id],
+    videoIds: [VIDEOS.arbutusGreenwayNb.id],
     positions: [ARBUTUS_GREENWAY_41ST_S, EAST_BLVD_41ST_SW],
   },
   {
     routeNames: [ROUTES.arbutusGreenway.name],
     description: "41st to 10th",
     type: "combined",
-    videos: [VIDEOS.arbutusGreenwayNb.id],
+    videoIds: [VIDEOS.arbutusGreenwayNb.id],
     positions: [
       EAST_BLVD_41ST_SW,
       [49.23468, -123.15515],
@@ -193,7 +193,7 @@ export const ARBUTUS_GREENWAY = [
   {
     routeNames: [ROUTES.arbutusGreenway.name],
     description: "7th to burrard",
-    videos: [VIDEOS.arbutusGreenwayNb.id],
+    videoIds: [VIDEOS.arbutusGreenwayNb.id],
     type: "combined",
     positions: [
       ARBUTUS_GREENWAY_7TH,
@@ -213,16 +213,16 @@ export const ARBUTUS_GREENWAY = [
     routeNames: [ROUTES.arbutusGreenway.name],
     description: "crossing burrard",
     type: "combined",
-    videos: [VIDEOS.arbutusGreenwayNb.id, VIDEOS.burrardNb.id],
-    videosStartAtStart: [VIDEOS.burrardNb.id],
+    videoIds: [VIDEOS.arbutusGreenwayNb.id, VIDEOS.burrardNb.id],
+    videoIdsStartAtStart: [VIDEOS.burrardNb.id],
     positions: [BURRARD_ARBUTUS_GREENWAY_W, BURRARD_ARBUTUS_GREENWAY_E],
   },
   {
     routeNames: [ROUTES.arbutusGreenway.name],
     description: "burrard to fir",
     type: "combined",
-    videos: [VIDEOS.arbutusGreenwayNb.id],
-    videosEndAtEnd: [VIDEOS.arbutusGreenwayNb.id],
+    videoIds: [VIDEOS.arbutusGreenwayNb.id],
+    videoIdsEndAtEnd: [VIDEOS.arbutusGreenwayNb.id],
     positions: [
       BURRARD_ARBUTUS_GREENWAY_E,
       [49.26645, -123.14548],

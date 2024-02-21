@@ -33,7 +33,7 @@ export const CAMBIE = [
   // canada line station (and other) connections
   {
     description: "42nd",
-    // videos: [VIDEOS.fortySecondEb.id], // !!
+    // videoIds: [VIDEOS.fortySecondEb.id], // !!
     type: "quiet",
     positions: [
       CAMBIE_42ND_E,
@@ -56,8 +56,8 @@ export const CAMBIE = [
     description: "gastown",
     type: "dedicated",
     oneWay: "required",
-    videos: [VIDEOS.cambieGastownNb.id],
-    videosEndAtEnd: [VIDEOS.cambieGastownNb.id],
+    videoIds: [VIDEOS.cambieGastownNb.id],
+    videoIdsEndAtEnd: [VIDEOS.cambieGastownNb.id],
     positions: [
       CAMBIE_DUNSMUIR,
       CAMBIE_PENDER_SE,
@@ -85,7 +85,7 @@ export const CAMBIE = [
     description: "sb: 49th to 58th",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.cambieSb.id],
+    videoIds: [VIDEOS.cambieSb.id],
     positions: [
       CAMBIE_49TH_SW,
       [49.22522, -123.11674],
@@ -100,7 +100,7 @@ export const CAMBIE = [
     description: "sb: 58th to 59th",
     type: "dedicated",
     oneWay: "required",
-    videos: [VIDEOS.cambieSb.id],
+    videoIds: [VIDEOS.cambieSb.id],
     positions: [CAMBIE_58TH_W, CAMBIE_59TH_NW],
   },
   {
@@ -108,7 +108,7 @@ export const CAMBIE = [
     description: "sb: 59th to marine",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.cambieSb.id],
+    videoIds: [VIDEOS.cambieSb.id],
     positions: [
       CAMBIE_59TH_NW,
       [49.21689, -123.11705],
@@ -124,8 +124,8 @@ export const CAMBIE = [
     type: "shared",
     oneWay: "recommended",
     hideUnlessVideo: true,
-    videos: [VIDEOS.cambieSb.id],
-    videosEndAtEnd: [VIDEOS.cambieSb.id],
+    videoIds: [VIDEOS.cambieSb.id],
+    videoIdsEndAtEnd: [VIDEOS.cambieSb.id],
     positions: [SOUTHBOUND_END, [49.20995, -123.11725], [49.20903, -123.11729]],
   },
   {

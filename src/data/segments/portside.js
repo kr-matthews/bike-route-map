@@ -16,8 +16,8 @@ export const PORTSIDE = [
   {
     description: "connection with second narrows bridge",
     type: "mixed",
-    videos: [VIDEOS.portsideEb.id, VIDEOS.cassiarSb.id],
-    videosStartAtStart: [VIDEOS.cassiarSb.id],
+    videoIds: [VIDEOS.portsideEb.id, VIDEOS.cassiarSb.id],
+    videoIdsStartAtStart: [VIDEOS.cassiarSb.id],
     positions: [
       SKEENA_BRIDGEWAY,
       [49.29054, -123.02848],
@@ -31,15 +31,15 @@ export const PORTSIDE = [
     routeNames: [ROUTES.portside.name],
     description: "initial bit from lakewood",
     type: "quiet",
-    videos: [VIDEOS.portsideEb.id, VIDEOS.lakewoodNb.id],
-    videosEndAtEnd: [VIDEOS.lakewoodNb.id],
+    videoIds: [VIDEOS.portsideEb.id, VIDEOS.lakewoodNb.id],
+    videoIdsEndAtEnd: [VIDEOS.lakewoodNb.id],
     positions: [WALL_OXFORD_PARK, [49.28606, -123.06198], NORTH_OF_LAKEWOOD],
   },
   {
     routeNames: [ROUTES.portside.name],
     description: "lakewood to creekway park",
     type: "quiet",
-    videos: [VIDEOS.portsideEb.id],
+    videoIds: [VIDEOS.portsideEb.id],
     positions: [
       NORTH_OF_LAKEWOOD,
       [49.28761, -123.0607],
@@ -78,7 +78,7 @@ export const PORTSIDE = [
     routeNames: [ROUTES.portside.name],
     description: "creekway park and bridgeway",
     type: "mixed",
-    videos: [VIDEOS.portsideEb.id],
+    videoIds: [VIDEOS.portsideEb.id],
     positions: [
       MCGILL_PARKING_E,
       [49.28831, -123.03709],

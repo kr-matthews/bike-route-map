@@ -11,7 +11,7 @@ export const POWELL = [
     description: "pre-overpass",
     type: "dedicated",
     elevation: 0.5,
-    videos: [VIDEOS.powellEb.id],
+    videoIds: [VIDEOS.powellEb.id],
     positions: [HAWKS_POWELL, [49.28298, -123.08546], OVERPASS_START],
   },
   {
@@ -19,7 +19,7 @@ export const POWELL = [
     description: "overpass",
     type: "dedicated",
     elevation: 1,
-    videos: [VIDEOS.powellEb.id],
+    videoIds: [VIDEOS.powellEb.id],
     positions: [
       OVERPASS_START,
       [49.28282, -123.0844],
@@ -34,8 +34,8 @@ export const POWELL = [
     description: "post-overpass",
     type: "comfortable",
     elevation: 0.5,
-    videos: [VIDEOS.powellEb.id],
-    videosEndAtEnd: [VIDEOS.powellEb.id],
+    videoIds: [VIDEOS.powellEb.id],
+    videoIdsEndAtEnd: [VIDEOS.powellEb.id],
     positions: [
       OVERPASS_END,
       [49.28301, -123.07924],

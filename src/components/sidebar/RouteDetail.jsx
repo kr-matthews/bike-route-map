@@ -6,25 +6,25 @@ import CloseIcon from "../icons/CloseIcon";
 import ZoomToIcon from "../icons/ZoomToIcon";
 
 export default function RouteDetail({ mapRef }) {
-  const { selectedRoute, setSelected, setHighlighted } = useContext(Selections);
+  const { selectedRoute, selectRoute, highlightRoute } = useContext(Selections);
 
   return (
     selectedRoute && (
       <>
         <ZoomToIcon
           onClick={() => mapRef.fitBounds(getRouteBounds(selectedRoute.name))}
-          onMouseOver={() => setHighlighted(selectedRoute.name)}
-          onMouseOut={() => setHighlighted(null)}
+          onMouseOver={() => highlightRoute(selectedRoute.name)}
+          onMouseOut={() => highlightRoute(null)}
         />
         <h2 style={{ textAlign: "center", marginBottom: "4px" }}>
           <span
-            onMouseOver={() => setHighlighted(selectedRoute.name)}
-            onMouseOut={() => setHighlighted(null)}
+            onMouseOver={() => highlightRoute(selectedRoute.name)}
+            onMouseOut={() => highlightRoute(null)}
           >
             {selectedRoute.name}
           </span>
         </h2>
-        <CloseIcon onClick={() => setSelected(null)} />
+        <CloseIcon onClick={() => selectRoute(null)} />
 
         <div style={{ overflow: "auto" }}>
           {selectedRoute.isIncomplete && (

@@ -60,8 +60,8 @@ export const ADANAC = [
     routeNames: [ROUTES.adanac.name],
     type: "dedicated",
     description: "west end merged",
-    videos: [VIDEOS.adanacWb.id],
-    videosEndAtStart: [VIDEOS.adanacWb.id],
+    videoIds: [VIDEOS.adanacWb.id],
+    videoIdsEndAtStart: [VIDEOS.adanacWb.id],
     positions: [EXPO_UNION, UNION_SPLIT],
   },
   {
@@ -102,7 +102,7 @@ export const ADANAC = [
     description: "wb: dunlevy to gore",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.adanacWb.id],
+    videoIds: [VIDEOS.adanacWb.id],
     positions: [DUNLEVY_UNION, [49.27763, -123.09563], GORE_UNION_N],
   },
   {
@@ -110,7 +110,7 @@ export const ADANAC = [
     description: "wb: gore to expo",
     type: "dedicated",
     oneWay: "required",
-    videos: [VIDEOS.adanacWb.id],
+    videoIds: [VIDEOS.adanacWb.id],
     positions: [
       GORE_UNION_N,
       MAIN_UNION_NE,
@@ -128,7 +128,7 @@ export const ADANAC = [
     routeNames: [ROUTES.adanac.name],
     description: "dunlevy to sunrise",
     type: "quiet",
-    videos: [VIDEOS.adanacWb.id],
+    videoIds: [VIDEOS.adanacWb.id],
     positions: [
       DUNLEVY_UNION,
       [49.27756, -123.09357],
@@ -161,7 +161,7 @@ export const ADANAC = [
     routeNames: [ROUTES.adanac.name, ROUTES.sunrise.name],
     description: "sunrise",
     type: "quiet",
-    videos: [VIDEOS.adanacWb.id, VIDEOS.sunriseNb.id],
+    videoIds: [VIDEOS.adanacWb.id, VIDEOS.sunriseNb.id],
     positions: [SLOCAN_ADANAC, KASLO_ADANAC],
   },
   {
@@ -169,7 +169,7 @@ export const ADANAC = [
     description: "sunrise to highway",
     type: "quiet",
     elevation: 0.5,
-    videos: [VIDEOS.adanacWb.id],
+    videoIds: [VIDEOS.adanacWb.id],
     positions: [
       KASLO_ADANAC,
       [49.27745, -123.0441],
@@ -185,7 +185,7 @@ export const ADANAC = [
     description: "highway overpass",
     type: "quiet",
     elevation: 1,
-    videos: [VIDEOS.adanacWb.id],
+    videoIds: [VIDEOS.adanacWb.id],
     positions: [OVERPASS_W, OVERPASS_E],
   },
   {
@@ -193,7 +193,7 @@ export const ADANAC = [
     description: "highway to boundary",
     type: "quiet",
     elevation: 0.5,
-    videos: [VIDEOS.adanacWb.id],
+    videoIds: [VIDEOS.adanacWb.id],
     positions: [
       OVERPASS_E,
       CASSIAR_ADANAC,

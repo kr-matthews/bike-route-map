@@ -15,8 +15,8 @@ export const CASSIAR = [
     routeNames: [ROUTES.cassiar.name],
     description: "adanac to hastings",
     type: "quiet",
-    videos: [VIDEOS.cassiarSb.id],
-    videosEndAtStart: [VIDEOS.cassiarSb.id],
+    videoIds: [VIDEOS.cassiarSb.id],
+    videoIdsEndAtStart: [VIDEOS.cassiarSb.id],
     positions: [
       CASSIAR_ADANAC,
       [49.27782, -123.03086],
@@ -30,7 +30,7 @@ export const CASSIAR = [
     routeNames: [ROUTES.cassiar.name],
     description: "crossing hastings",
     type: "other",
-    videos: [VIDEOS.cassiarSb.id],
+    videoIds: [VIDEOS.cassiarSb.id],
     positions: [
       CASSIAR_HASTINGS_SE,
       [49.28099, -123.03128],
@@ -42,7 +42,7 @@ export const CASSIAR = [
     routeNames: [ROUTES.cassiar.name],
     description: "hastings to cambridge",
     type: "quiet",
-    videos: [VIDEOS.cassiarSb.id],
+    videoIds: [VIDEOS.cassiarSb.id],
     positions: [
       CASSIAR_HASTINGS_NE,
       [49.28206, -123.03083],
@@ -61,7 +61,7 @@ export const CASSIAR = [
     routeNames: [ROUTES.cassiar.name],
     description: "path",
     type: "mixed",
-    videos: [VIDEOS.cassiarSb.id],
+    videoIds: [VIDEOS.cassiarSb.id],
     positions: [
       CASSIAR_CAMBRIDGE,
       [49.28701, -123.02974],

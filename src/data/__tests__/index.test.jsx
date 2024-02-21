@@ -22,7 +22,7 @@ const EXCEPTIONAL_SEAMS = [
 
 // calculations
 
-const routeVideos = [
+const routeVideoIds = [
   ...new Set(
     Object.values(ROUTES).flatMap((route) =>
       route.legs.flatMap((leg) =>
@@ -33,22 +33,22 @@ const routeVideos = [
 ];
 
 const startMarkerIds = SEGMENTS.flatMap((segment) => [
-  ...(segment.videosStartAtStart ?? []),
-  ...(segment.videosStartAtEnd ?? []),
+  ...(segment.videoIdsStartAtStart ?? []),
+  ...(segment.videoIdsStartAtEnd ?? []),
 ]);
 
 const endMarkerIds = SEGMENTS.flatMap((segment) => [
-  ...(segment.videosEndAtStart ?? []),
-  ...(segment.videosEndAtEnd ?? []),
+  ...(segment.videoIdsEndAtStart ?? []),
+  ...(segment.videoIdsEndAtEnd ?? []),
 ]);
 
 const seamMarkerIds = SEGMENTS.flatMap((segment) => [
-  ...(segment.videosLoopAtStart ?? []),
-  ...(segment.videosLoopAtEnd ?? []),
+  ...(segment.videoIdsLoopAtStart ?? []),
+  ...(segment.videoIdsLoopAtEnd ?? []),
 ]);
 
 describe("data", () => {
-  describe.each(routeVideos)("route video %s", (videoId) => {
+  describe.each(routeVideoIds)("route video %s", (videoId) => {
     // bit of a hack to show (a) route name in test
     describe(`(${getARouteName(videoId)})`, () => {
       test(`has 1 start marker and 1 end marker OR 1 seam marker`, () => {
@@ -71,21 +71,21 @@ describe("data", () => {
 
       test(`each un-marked seam has a match`, () => {
         const seams = SEGMENTS.filter((segment) =>
-          segment.videos?.includes(videoId)
+          segment.videoIds?.includes(videoId)
         ).flatMap((segment) => {
           let segmentSeams = [];
           if (
             !(
-              segment.videosStartAtStart?.includes(videoId) ||
-              segment.videosEndAtStart?.includes(videoId)
+              segment.videoIdsStartAtStart?.includes(videoId) ||
+              segment.videoIdsEndAtStart?.includes(videoId)
             )
           ) {
             segmentSeams.push(segment.positions[0]);
           }
           if (
             !(
-              segment.videosStartAtEnd?.includes(videoId) ||
-              segment.videosEndAtEnd?.includes(videoId)
+              segment.videoIdsStartAtEnd?.includes(videoId) ||
+              segment.videoIdsEndAtEnd?.includes(videoId)
             )
           ) {
             segmentSeams.push(segment.positions[segment.positions.length - 1]);
@@ -106,7 +106,7 @@ describe("data", () => {
 
   test("no unused videos", () => {
     const unusedVideos = Object.values(VIDEOS).filter(
-      (video) => !routeVideos.includes(video.id)
+      (video) => !routeVideoIds.includes(video.id)
     );
     expect(unusedVideos).toHaveLength(0);
   });

@@ -30,9 +30,9 @@ export const CARDERO = [
     routeNames: [ROUTES.cardero.name],
     description: "primary",
     type: "quiet",
-    videos: [VIDEOS.carderoNb.id],
-    videosStartAtStart: [VIDEOS.carderoNb.id],
-    videosEndAtEnd: [VIDEOS.carderoNb.id],
+    videoIds: [VIDEOS.carderoNb.id],
+    videoIdsStartAtStart: [VIDEOS.carderoNb.id],
+    videoIdsEndAtEnd: [VIDEOS.carderoNb.id],
     positions: [
       CARDERO_BEACH,
       [49.28382, -123.14081],

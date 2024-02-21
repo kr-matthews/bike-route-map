@@ -35,8 +35,8 @@ export const DUNSMUIR = [
     description: "just before cambie",
     type: "dedicated",
     elevation: 0.5,
-    videos: [VIDEOS.cambieGastownNb.id],
-    videosStartAtStart: [VIDEOS.cambieGastownNb.id],
+    videoIds: [VIDEOS.cambieGastownNb.id],
+    videoIdsStartAtStart: [VIDEOS.cambieGastownNb.id],
     positions: [WEST_OF_CAMBIE, CAMBIE_DUNSMUIR],
   },
   {

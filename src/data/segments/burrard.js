@@ -50,7 +50,7 @@ export const BURRARD = [
   {
     description: "chestnut",
     type: "quiet",
-    videos: [VIDEOS.burrardBridgeSb.id],
+    videoIds: [VIDEOS.burrardBridgeSb.id],
     positions: [
       CHESTNUT_CORNWALL,
       [49.27267, -123.14633],
@@ -79,7 +79,7 @@ export const BURRARD = [
     type: "shared",
     oneWay: "required",
     hideUnlessVideo: true,
-    videos: [VIDEOS.burrardNb.id],
+    videoIds: [VIDEOS.burrardNb.id],
     positions: [
       BURRARD_ARBUTUS_GREENWAY_E,
       [49.26716, -123.14554],
@@ -92,7 +92,7 @@ export const BURRARD = [
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.burrardNb.id],
+    videoIds: [VIDEOS.burrardNb.id],
     positions: [
       BURRARD_4TH_E,
       [49.26889, -123.14547],
@@ -106,7 +106,7 @@ export const BURRARD = [
     type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.burrardNb.id],
+    videoIds: [VIDEOS.burrardNb.id],
     positions: [
       BURRARD_1ST_E,
       [49.27072, -123.14534],
@@ -126,7 +126,7 @@ export const BURRARD = [
     type: "dedicated",
     oneWay: "required",
     elevation: 1,
-    videos: [VIDEOS.burrardNb.id],
+    videoIds: [VIDEOS.burrardNb.id],
     positions: [
       NORTHBOUND_ELEVATION_START,
       [49.27394, -123.14146],
@@ -143,7 +143,7 @@ export const BURRARD = [
     type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.burrardNb.id],
+    videoIds: [VIDEOS.burrardNb.id],
     positions: [
       NORTHBOUND_ELEVATION_END,
       BURRARD_NORTHBOUND_SPLIT,
@@ -167,7 +167,7 @@ export const BURRARD = [
     description: "from pacific eb",
     type: "dedicated",
     oneWay: "required",
-    videos: [VIDEOS.burrardBridgeSb.id],
+    videoIds: [VIDEOS.burrardBridgeSb.id],
     positions: [
       BURRARD_PACIFIC_SW,
       [49.27695, -123.13289],
@@ -202,7 +202,7 @@ export const BURRARD = [
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.burrardSb.id],
+    videoIds: [VIDEOS.burrardSb.id],
     positions: [
       BURRARD_HASTINGS,
       [49.28713, -123.1172],
@@ -227,7 +227,7 @@ export const BURRARD = [
     description: "sb: pre-pre-bridge",
     type: "dedicated",
     oneWay: "required",
-    videos: [VIDEOS.burrardSb.id],
+    videoIds: [VIDEOS.burrardSb.id],
     positions: [
       BURRARD_BURNABY_W,
       BURRARD_DRAKE_W,
@@ -243,7 +243,7 @@ export const BURRARD = [
     type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.burrardBridgeSb.id, VIDEOS.burrardSb.id],
+    videoIds: [VIDEOS.burrardBridgeSb.id, VIDEOS.burrardSb.id],
     positions: [BURRARD_SOUTHBOUND_MERGE, SOUTHBOUND_ELEVATED_START],
   },
   {
@@ -252,7 +252,7 @@ export const BURRARD = [
     type: "dedicated",
     oneWay: "required",
     elevation: 1,
-    videos: [VIDEOS.burrardBridgeSb.id, VIDEOS.burrardSb.id],
+    videoIds: [VIDEOS.burrardBridgeSb.id, VIDEOS.burrardSb.id],
     positions: [
       SOUTHBOUND_ELEVATED_START,
       [49.27622, -123.135],
@@ -269,7 +269,7 @@ export const BURRARD = [
     type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.burrardBridgeSb.id, VIDEOS.burrardSb.id],
+    videoIds: [VIDEOS.burrardBridgeSb.id, VIDEOS.burrardSb.id],
     positions: [
       SOUTHBOUND_ELEVATED_END,
       [49.27325, -123.14414],
@@ -282,7 +282,7 @@ export const BURRARD = [
     routeNames: [ROUTES.burrard.name],
     description: "york bi-directional",
     type: "dedicated",
-    videos: [VIDEOS.burrardSb.id],
+    videoIds: [VIDEOS.burrardSb.id],
     positions: [
       BURRARD_YORK,
       [49.27218, -123.14563],
@@ -295,8 +295,8 @@ export const BURRARD = [
     description: "kits",
     type: "dedicated",
     oneWay: "required",
-    videos: [VIDEOS.burrardSb.id],
-    videosEndAtEnd: [VIDEOS.burrardSb.id],
+    videoIds: [VIDEOS.burrardSb.id],
+    videoIdsEndAtEnd: [VIDEOS.burrardSb.id],
     positions: [
       BURRARD_YORK,
       [49.27162, -123.14561],
@@ -348,7 +348,7 @@ export const BURRARD = [
   {
     description: "southbound to chestnut connection",
     type: "dedicated",
-    videos: [VIDEOS.burrardBridgeSb.id],
+    videoIds: [VIDEOS.burrardBridgeSb.id],
     positions: [
       CHESTNUT_CORNWALL,
       [49.27254, -123.14596],

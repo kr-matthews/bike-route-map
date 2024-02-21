@@ -21,7 +21,7 @@ export const BEATTY = [
     type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
-    videos: [VIDEOS.beattyNb.id],
+    videoIds: [VIDEOS.beattyNb.id],
     positions: [
       BEATTY_NELSON_SE,
       [49.2755, -123.11708],
@@ -39,8 +39,8 @@ export const BEATTY = [
     description: "nb: just before pender",
     type: "shared",
     oneWay: "required",
-    videos: [VIDEOS.beattyNb.id],
-    videosEndAtEnd: [VIDEOS.beattyNb.id],
+    videoIds: [VIDEOS.beattyNb.id],
+    videoIdsEndAtEnd: [VIDEOS.beattyNb.id],
     positions: [
       BEFORE_PENDER,
       BEATTY_PENDER_SE,
@@ -52,8 +52,8 @@ export const BEATTY = [
     type: "shared",
     oneWay: "required",
     hideUnlessVideo: true,
-    videos: [VIDEOS.beattySb.id],
-    videosStartAtStart: [VIDEOS.beattySb.id],
+    videoIds: [VIDEOS.beattySb.id],
+    videoIdsStartAtStart: [VIDEOS.beattySb.id],
     positions: [BEATTY_PENDER_NW, BEATTY_PENDER_SW],
   },
   {
@@ -61,8 +61,8 @@ export const BEATTY = [
     description: "sb",
     type: "dedicated",
     oneWay: "required",
-    videos: [VIDEOS.beattySb.id],
-    videosEndAtEnd: [VIDEOS.beattySb.id],
+    videoIds: [VIDEOS.beattySb.id],
+    videoIdsEndAtEnd: [VIDEOS.beattySb.id],
     positions: [
       BEATTY_PENDER_SW,
       BEATTY_DUNSMUIR_NW,

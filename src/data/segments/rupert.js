@@ -15,8 +15,8 @@ export const RUPERT = [
     description: "nb",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.rupertNb.id],
-    videosStartAtStart: [VIDEOS.rupertNb.id],
+    videoIds: [VIDEOS.rupertNb.id],
+    videoIdsStartAtStart: [VIDEOS.rupertNb.id],
     positions: [
       RUPERT_29TH_E,
       [49.24475, -123.03383],

@@ -13,8 +13,8 @@ export const HIGHBURY = [
     routeNames: [ROUTES.highbury.name],
     description: "all",
     type: "quiet",
-    videos: [VIDEOS.highburyNb.id],
-    videosEndAtEnd: [VIDEOS.highburyNb.id],
+    videoIds: [VIDEOS.highburyNb.id],
+    videoIdsEndAtEnd: [VIDEOS.highburyNb.id],
     positions: [
       HIGHBURY_8TH,
       [49.26694, -123.18772],

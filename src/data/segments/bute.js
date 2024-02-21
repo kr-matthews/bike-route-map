@@ -14,9 +14,9 @@ export const BUTE = [
     routeNames: [ROUTES.bute.name],
     description: "primary",
     type: "quiet",
-    videos: [VIDEOS.buteSb.id],
-    videosStartAtEnd: [VIDEOS.buteSb.id],
-    videosEndAtStart: [VIDEOS.buteSb.id],
+    videoIds: [VIDEOS.buteSb.id],
+    videoIdsStartAtEnd: [VIDEOS.buteSb.id],
+    videoIdsEndAtStart: [VIDEOS.buteSb.id],
     positions: [
       BUTE_BURNABY,
       [49.28179, -123.13337],

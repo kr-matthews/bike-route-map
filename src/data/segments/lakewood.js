@@ -16,7 +16,7 @@ export const LAKEWOOD = [
     routeNames: [ROUTES.lakewood.name],
     description: "south of dundas",
     type: "quiet",
-    videos: [VIDEOS.lakewoodNb.id],
+    videoIds: [VIDEOS.lakewoodNb.id],
     positions: [
       LAKEWOOD_GRANDVIEW,
       [49.26228, -123.06203],
@@ -43,15 +43,15 @@ export const LAKEWOOD = [
     routeNames: [ROUTES.lakewood.name],
     description: "dundas to oxford",
     type: "quiet",
-    videos: [VIDEOS.lakewoodNb.id, VIDEOS.portsideEb.id],
-    videosStartAtStart: [VIDEOS.portsideEb.id],
+    videoIds: [VIDEOS.lakewoodNb.id, VIDEOS.portsideEb.id],
+    videoIdsStartAtStart: [VIDEOS.portsideEb.id],
     positions: [LAKEWOOD_DUNDAS, [49.28567, -123.06164], LAKEWOOD_OXFORD_W],
   },
   {
     routeNames: [ROUTES.lakewood.name],
     description: "oxford park",
     type: "mixed",
-    videos: [VIDEOS.lakewoodNb.id, VIDEOS.portsideEb.id],
+    videoIds: [VIDEOS.lakewoodNb.id, VIDEOS.portsideEb.id],
     positions: [
       LAKEWOOD_OXFORD_W,
       [49.28571, -123.06198],

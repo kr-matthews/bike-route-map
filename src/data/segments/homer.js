@@ -17,7 +17,7 @@ export const HOMER = [
     routeNames: [ROUTES.homer.name],
     description: "south of pacific",
     type: "quiet",
-    videos: [VIDEOS.homerNb.id],
+    videoIds: [VIDEOS.homerNb.id],
     positions: [
       HOMER_BEACH,
       [49.27197, -123.1263],
@@ -36,7 +36,7 @@ export const HOMER = [
     description: "pacific to robson",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.homerNb.id],
+    videoIds: [VIDEOS.homerNb.id],
     positions: [
       HOMER_PACIFIC_N,
       [49.27326, -123.12586],
@@ -59,8 +59,8 @@ export const HOMER = [
     type: "shared",
     oneWay: "required",
     hideUnlessVideo: true,
-    videos: [VIDEOS.homerNb.id],
-    videosEndAtEnd: [VIDEOS.homerNb.id],
+    videoIds: [VIDEOS.homerNb.id],
+    videoIdsEndAtEnd: [VIDEOS.homerNb.id],
     positions: [HOMER_ROBSON, HOMER_DUNSMUIR],
   },
 ];

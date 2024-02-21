@@ -31,8 +31,8 @@ export const SECOND_NARROWS_BRIDGE = [
     description: "skeena pre-tunnel",
     type: "other",
     elevation: -0.5,
-    videos: [VIDEOS.portsideEb.id, VIDEOS.cassiarSb.id],
-    videosEndAtStart: [VIDEOS.portsideEb.id],
+    videoIds: [VIDEOS.portsideEb.id, VIDEOS.cassiarSb.id],
+    videoIdsEndAtStart: [VIDEOS.portsideEb.id],
     positions: [
       CASSIAR_SKEENA_PATH,
       [49.28795, -123.02849],
@@ -44,14 +44,14 @@ export const SECOND_NARROWS_BRIDGE = [
     description: "skeena tunnel",
     type: "other",
     elevation: -1,
-    videos: [VIDEOS.portsideEb.id, VIDEOS.cassiarSb.id],
+    videoIds: [VIDEOS.portsideEb.id, VIDEOS.cassiarSb.id],
     positions: [TUNNEL_SOUTH_END, [49.28889, -123.02824], TUNNEL_NORTH_END],
   },
   {
     description: "skeena post-tunnel",
     type: "other",
     elevation: -0.5,
-    videos: [VIDEOS.portsideEb.id, VIDEOS.cassiarSb.id],
+    videoIds: [VIDEOS.portsideEb.id, VIDEOS.cassiarSb.id],
     positions: [TUNNEL_NORTH_END, SKEENA_SECOND_NARROWS_BRIDGE],
   },
 

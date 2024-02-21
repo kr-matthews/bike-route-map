@@ -14,8 +14,8 @@ export const COLUMBIA = [
     routeNames: [ROUTES.columbia.name],
     description: "primary",
     type: "quiet",
-    videos: [VIDEOS.columbiaNb.id],
-    videosStartAtStart: [VIDEOS.columbiaNb.id],
+    videoIds: [VIDEOS.columbiaNb.id],
+    videoIdsStartAtStart: [VIDEOS.columbiaNb.id],
     positions: [
       COLUMBIA_5TH,
       [49.26749, -123.10944],
@@ -30,7 +30,7 @@ export const COLUMBIA = [
     routeNames: [ROUTES.columbia.name],
     description: "to seawall",
     type: "mixed",
-    videos: [VIDEOS.columbiaNb.id],
+    videoIds: [VIDEOS.columbiaNb.id],
     positions: [COLUMBIA_ATHLETES_N, COLUMBIA_SEAWALL],
   },
 ];

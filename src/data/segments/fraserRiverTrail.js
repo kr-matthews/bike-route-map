@@ -152,7 +152,7 @@ export const FRASER_RIVER_TRAIL = [
     description: "from kent to fraserview portion",
     type: "shared",
     hideUnlessVideo: true,
-    videos: [VIDEOS.fraserRiverFraserviewEb.id],
+    videoIds: [VIDEOS.fraserRiverFraserviewEb.id],
     positions: [
       ARGYLE_KENT_N_E,
       [49.20886, -123.07136],
@@ -164,7 +164,7 @@ export const FRASER_RIVER_TRAIL = [
     routeNames: [ROUTES.fraserRiverTrail.name],
     description: "victoria-fraserview",
     type: "comfortable",
-    videos: [VIDEOS.fraserRiverFraserviewEb.id],
+    videoIds: [VIDEOS.fraserRiverFraserviewEb.id],
     positions: [
       FRASERVIEW_START,
       [49.20826, -123.07009],
@@ -230,8 +230,8 @@ export const FRASER_RIVER_TRAIL = [
     routeNames: [ROUTES.fraserRiverTrail.name],
     description: "river district - near elliott",
     type: "other",
-    videos: [VIDEOS.fraserRiverFraserviewEb.id, VIDEOS.sunriseNb.id],
-    videosStartAtEnd: [VIDEOS.sunriseNb.id],
+    videoIds: [VIDEOS.fraserRiverFraserviewEb.id, VIDEOS.sunriseNb.id],
+    videoIdsStartAtEnd: [VIDEOS.sunriseNb.id],
     positions: [
       ELLIOTT_KENT_PATH,
       [49.20571, -123.05676],
@@ -246,8 +246,8 @@ export const FRASER_RIVER_TRAIL = [
     routeNames: [ROUTES.fraserRiverTrail.name],
     description: "fraserview - elliott to kerr",
     type: "comfortable",
-    videos: [VIDEOS.fraserRiverFraserviewEb.id],
-    videosEndAtEnd: [VIDEOS.fraserRiverFraserviewEb.id],
+    videoIds: [VIDEOS.fraserRiverFraserviewEb.id],
+    videoIdsEndAtEnd: [VIDEOS.fraserRiverFraserviewEb.id],
     positions: [
       EAST_OF_ELLIOTT,
       [49.20554, -123.05569],

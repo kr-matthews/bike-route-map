@@ -11,8 +11,8 @@ export const FRASER_FORESHORE = [
     routeNames: [ROUTES.fraserForeshoreTrail.name],
     description: "boundary to glenlyon",
     type: "mixed",
-    videos: [VIDEOS.fraserForeshoreEb.id],
-    videosStartAtStart: [VIDEOS.fraserForeshoreEb.id],
+    videoIds: [VIDEOS.fraserForeshoreEb.id],
+    videoIdsStartAtStart: [VIDEOS.fraserForeshoreEb.id],
     positions: [
       BOUNDARY_FRASER_RIVER,
       [49.20144, -123.0234],
@@ -47,8 +47,8 @@ export const FRASER_FORESHORE = [
     routeNames: [ROUTES.fraserForeshoreTrail.name],
     description: "glenlyon to east end",
     type: "mixed",
-    videos: [VIDEOS.fraserForeshoreEb.id],
-    videosEndAtEnd: [VIDEOS.fraserForeshoreEb.id],
+    videoIds: [VIDEOS.fraserForeshoreEb.id],
+    videoIdsEndAtEnd: [VIDEOS.fraserForeshoreEb.id],
     positions: [
       GLENLYON_BYRNE_CREEK,
       [49.19517, -123.00176],

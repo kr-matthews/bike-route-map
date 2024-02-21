@@ -94,8 +94,8 @@ export const MARINE_WAY = [
     description: "eb: vancouver",
     type: "combined",
     oneWay: "required",
-    videos: [VIDEOS.marineWayEb.id],
-    videosStartAtStart: [VIDEOS.marineWayEb.id],
+    videoIds: [VIDEOS.marineWayEb.id],
+    videoIdsStartAtStart: [VIDEOS.marineWayEb.id],
     positions: [
       [49.20687, -123.03341],
       [49.20688, -123.0332],
@@ -133,7 +133,7 @@ export const MARINE_WAY = [
     type: "shared",
     hideArrows: true,
     hideUnlessVideo: true,
-    videos: [VIDEOS.marineWayEb.id],
+    videoIds: [VIDEOS.marineWayEb.id],
     positions: [
       BOUNDARY_MARINE_SW,
       [49.20526, -123.02372],
@@ -270,7 +270,7 @@ export const MARINE_WAY = [
     description: "eb: burnaby",
     type: "shoulder",
     oneWay: "required",
-    videos: [VIDEOS.marineWayEb.id],
+    videoIds: [VIDEOS.marineWayEb.id],
     positions: [
       BOUNDARY_MARINE_SE,
       [49.20533, -123.02066],
@@ -377,7 +377,7 @@ export const MARINE_WAY = [
     description: "eb: transition to bc parkway",
     type: "dedicated",
     oneWay: "required",
-    videos: [VIDEOS.marineWayEb.id],
+    videoIds: [VIDEOS.marineWayEb.id],
     positions: [
       STEWARDSON_MARINE,
       [49.19752, -122.95068],

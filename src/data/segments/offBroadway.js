@@ -38,15 +38,15 @@ export const OFF_BROADWAY = [
   {
     description: "yew connection with 10th",
     type: "quiet",
-    videos: [VIDEOS.arbutusGreenwayNb.id],
+    videoIds: [VIDEOS.arbutusGreenwayNb.id],
     positions: [YEW_10TH, YEW_8TH],
   },
   {
     routeNames: [ROUTES.offBroadway.name, ROUTES.ridgeway.name],
     description: "ridgeway overlap",
     type: "quiet",
-    videos: [VIDEOS.offBroadwayWb.id, VIDEOS.ridgewayWb.id],
-    videosEndAtStart: [VIDEOS.offBroadwayWb.id, VIDEOS.ridgewayWb.id],
+    videoIds: [VIDEOS.offBroadwayWb.id, VIDEOS.ridgewayWb.id],
+    videoIdsEndAtStart: [VIDEOS.offBroadwayWb.id, VIDEOS.ridgewayWb.id],
     positions: [
       BLANCA_8TH_E,
       [49.26563, -123.2121],
@@ -59,7 +59,7 @@ export const OFF_BROADWAY = [
     routeNames: [ROUTES.offBroadway.name],
     description: "west of highbury",
     type: "quiet",
-    videos: [VIDEOS.offBroadwayWb.id],
+    videoIds: [VIDEOS.offBroadwayWb.id],
     positions: [
       DISCOVERY_8TH,
       [49.26547, -123.20139],
@@ -80,15 +80,15 @@ export const OFF_BROADWAY = [
     routeNames: [ROUTES.offBroadway.name],
     description: "little bit west of highbury",
     type: "quiet",
-    videos: [VIDEOS.offBroadwayWb.id, VIDEOS.highburyNb.id],
-    videosStartAtStart: [VIDEOS.highburyNb.id],
+    videoIds: [VIDEOS.offBroadwayWb.id, VIDEOS.highburyNb.id],
+    videoIdsStartAtStart: [VIDEOS.highburyNb.id],
     positions: [WEST_OF_HIGHBURY, HIGHBURY_8TH],
   },
   {
     routeNames: [ROUTES.offBroadway.name],
     description: "highbury to yew",
     type: "quiet",
-    videos: [VIDEOS.offBroadwayWb.id],
+    videoIds: [VIDEOS.offBroadwayWb.id],
     positions: [
       HIGHBURY_8TH,
       [49.26524, -123.18582],
@@ -112,7 +112,7 @@ export const OFF_BROADWAY = [
     routeNames: [ROUTES.offBroadway.name],
     description: "yew to arbutus greenway",
     type: "quiet",
-    videos: [VIDEOS.offBroadwayWb.id, VIDEOS.arbutusGreenwayNb.id],
+    videoIds: [VIDEOS.offBroadwayWb.id, VIDEOS.arbutusGreenwayNb.id],
     positions: [
       YEW_8TH,
       [49.26561, -123.15526],
@@ -127,7 +127,7 @@ export const OFF_BROADWAY = [
     routeNames: [ROUTES.offBroadway.name],
     description: "arbutus greenway to heather",
     type: "quiet",
-    videos: [VIDEOS.offBroadwayWb.id],
+    videoIds: [VIDEOS.offBroadwayWb.id],
     positions: [
       ARBUTUS_GREENWAY_7TH,
       [49.26555, -123.15048],
@@ -150,14 +150,14 @@ export const OFF_BROADWAY = [
     routeNames: [ROUTES.offBroadway.name],
     description: "heather to ash",
     type: "quiet",
-    videos: [VIDEOS.offBroadwayWb.id, VIDEOS.heatherSb.id],
+    videoIds: [VIDEOS.offBroadwayWb.id, VIDEOS.heatherSb.id],
     positions: [HEATHER_7TH, ASH_7TH_W],
   },
   {
     routeNames: [ROUTES.offBroadway.name],
     description: "ash to cambie",
     type: "quiet",
-    videos: [VIDEOS.offBroadwayWb.id],
+    videoIds: [VIDEOS.offBroadwayWb.id],
     positions: [ASH_7TH_W, ASH_7TH_E, [49.26498, -123.11508], CAMBIE_7TH_W],
   },
   {
@@ -187,7 +187,7 @@ export const OFF_BROADWAY = [
     description: "wb: yukon to cambie",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.offBroadwayWb.id],
+    videoIds: [VIDEOS.offBroadwayWb.id],
     positions: [
       YUKON_7TH_NW,
       [49.26489, -123.11348],
@@ -202,7 +202,7 @@ export const OFF_BROADWAY = [
     routeNames: [ROUTES.offBroadway.name],
     description: "crossing yukon",
     type: "quiet",
-    videos: [VIDEOS.offBroadwayWb.id],
+    videoIds: [VIDEOS.offBroadwayWb.id],
     positions: [YUKON_5TH_W, YUKON_5TH_E],
   },
   {
@@ -210,7 +210,7 @@ export const OFF_BROADWAY = [
     description: "yukon to mosaic",
     type: "quiet",
     elevation: 0.5,
-    videos: [VIDEOS.offBroadwayWb.id],
+    videoIds: [VIDEOS.offBroadwayWb.id],
     positions: [
       YUKON_5TH_E,
       [49.2666, -123.11078],
@@ -245,15 +245,15 @@ export const OFF_BROADWAY = [
     routeNames: [ROUTES.offBroadway.name],
     description: "path to 8th",
     type: "dedicated",
-    videos: [VIDEOS.offBroadwayWb.id],
+    videoIds: [VIDEOS.offBroadwayWb.id],
     positions: [GRANDVIEW_8TH_N, [49.26325, -123.06818], GRANDVIEW_8TH_N_E],
   },
   {
     routeNames: [ROUTES.offBroadway.name],
     description: "grandview to lakewood",
     type: "quiet",
-    videos: [VIDEOS.offBroadwayWb.id],
-    videosStartAtEnd: [VIDEOS.offBroadwayWb.id],
+    videoIds: [VIDEOS.offBroadwayWb.id],
+    videoIdsStartAtEnd: [VIDEOS.offBroadwayWb.id],
     positions: [
       GRANDVIEW_8TH_N_E,
       [49.26324, -123.06592],

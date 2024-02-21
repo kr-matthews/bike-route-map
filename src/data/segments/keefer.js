@@ -26,8 +26,8 @@ export const KEEFER = [
     description: "eb: carrall to quebec",
     type: "painted",
     oneWay: "required",
-    videos: [VIDEOS.keeferEb.id],
-    videosStartAtStart: [VIDEOS.keeferEb.id],
+    videoIds: [VIDEOS.keeferEb.id],
+    videoIdsStartAtStart: [VIDEOS.keeferEb.id],
     positions: [CARRALL_KEEFER_SE, [49.27919, -123.10269], EB_LANE_END],
   },
   {
@@ -35,7 +35,7 @@ export const KEEFER = [
     description: "eb: near quebec",
     type: "shared",
     oneWay: "required",
-    videos: [VIDEOS.keeferEb.id],
+    videoIds: [VIDEOS.keeferEb.id],
     positions: [
       EB_LANE_END,
       [49.27923, -123.10233],
@@ -63,7 +63,7 @@ export const KEEFER = [
     routeNames: [ROUTES.keefer.name],
     description: "quebec to gore",
     type: "shared",
-    videos: [VIDEOS.keeferEb.id],
+    videoIds: [VIDEOS.keeferEb.id],
     positions: [
       QUEBEC_KEEFER_E,
       [49.27932, -123.10202],
@@ -80,8 +80,8 @@ export const KEEFER = [
     routeNames: [ROUTES.keefer.name],
     description: "east",
     type: "quiet",
-    videos: [VIDEOS.keeferEb.id],
-    videosEndAtEnd: [VIDEOS.keeferEb.id],
+    videoIds: [VIDEOS.keeferEb.id],
+    videoIdsEndAtEnd: [VIDEOS.keeferEb.id],
     positions: [
       GORE_KEEFER,
       [49.27944, -123.09719],

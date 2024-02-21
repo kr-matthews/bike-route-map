@@ -13,12 +13,12 @@ export default function VideoMarkers({ segment, videoId }) {
   const firstPosition = segment.positions[0];
   const lastPosition = segment.positions[segment.positions.length - 1];
 
-  const startsAtStart = (segment.videosStartAtStart ?? []).includes(videoId);
-  const startsAtEnd = (segment.videosStartAtEnd ?? []).includes(videoId);
-  const endsAtStart = (segment.videosEndAtStart ?? []).includes(videoId);
-  const endsAtEnd = (segment.videosEndAtEnd ?? []).includes(videoId);
-  const loopsAtStart = (segment.videosLoopAtStart ?? []).includes(videoId);
-  const loopsAtEnd = (segment.videosLoopAtEnd ?? []).includes(videoId);
+  const startsAtStart = (segment.videoIdsStartAtStart ?? []).includes(videoId);
+  const startsAtEnd = (segment.videoIdsStartAtEnd ?? []).includes(videoId);
+  const endsAtStart = (segment.videoIdsEndAtStart ?? []).includes(videoId);
+  const endsAtEnd = (segment.videoIdsEndAtEnd ?? []).includes(videoId);
+  const loopsAtStart = (segment.videoIdsLoopAtStart ?? []).includes(videoId);
+  const loopsAtEnd = (segment.videoIdsLoopAtEnd ?? []).includes(videoId);
 
   return (
     <Fragment>

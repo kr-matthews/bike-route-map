@@ -8,8 +8,8 @@ export function segmentHasVideoForRoute(segment, routeName) {
 
   const routeVideos = route.legs.flatMap(({ videos }) => Object.values(videos));
 
-  return (segment.videos ?? []).some((videoId) =>
-    (routeVideos ?? []).map(({ id }) => id).includes(videoId)
+  return (segment.videoIds ?? []).some((videoId) =>
+    (routeVideos ?? []).some((video) => video.id === videoId)
   );
 }
 

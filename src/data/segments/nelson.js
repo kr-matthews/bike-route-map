@@ -17,9 +17,9 @@ export const NELSON = [
     description: "nelson unofficial part",
     oneWay: "required",
     type: "shared",
-    videos: [VIDEOS.cambieBridgeNelsonSb.id],
+    videoIds: [VIDEOS.cambieBridgeNelsonSb.id],
     hideUnlessVideo: true,
-    videosStartAtStart: [VIDEOS.cambieBridgeNelsonSb.id],
+    videoIdsStartAtStart: [VIDEOS.cambieBridgeNelsonSb.id],
     positions: [
       BUTE_NELSON,
       [49.2825, -123.12801],
@@ -37,7 +37,7 @@ export const NELSON = [
     oneWay: "required",
     type: "dedicated",
     description: "richards to cambie",
-    videos: [VIDEOS.cambieBridgeNelsonSb.id],
+    videoIds: [VIDEOS.cambieBridgeNelsonSb.id],
     positions: [
       RICHARDS_NELSON,
       HOMER_NELSON,
@@ -52,8 +52,8 @@ export const NELSON = [
     type: "dedicated",
     description: "cambie to beatty",
     elevation: 0.5,
-    videos: [VIDEOS.cambieBridgeNelsonSb.id, VIDEOS.beattyNb.id],
-    videosStartAtStart: [VIDEOS.beattyNb.id],
+    videoIds: [VIDEOS.cambieBridgeNelsonSb.id, VIDEOS.beattyNb.id],
+    videoIdsStartAtStart: [VIDEOS.beattyNb.id],
     positions: [CAMBIE_NELSON_SW, BEATTY_NELSON_SW, BEATTY_NELSON_SE],
   },
 ];
