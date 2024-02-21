@@ -12,6 +12,8 @@ import { VIDEOS } from "./videos";
 // Surrey: scott rd; alex fraser; timbers; fraser hwy;
 // Delta: alex fraser bridge
 
+// !! remove distances
+
 export const ROUTES = {
   third: {
     name: "3rd",
@@ -223,6 +225,7 @@ export const ROUTES = {
   cambieGastown: {
     name: "Cambie St (Gastown)",
     shortName: "Cambie (Gastown)",
+    isOneWay: true,
     legs: [
       {
         distance: 0.4,
@@ -451,6 +454,7 @@ export const ROUTES = {
   },
   homer: {
     name: "Homer St",
+    isOneWay: true,
     legs: [{ distance: 1.1, videos: { northbound: VIDEOS.homerNb } }],
   },
   hornby: {
@@ -587,6 +591,7 @@ export const ROUTES = {
   },
   nelson: {
     name: "Nelson St",
+    isOneWay: true,
     legs: [
       { distance: 0.4, videos: { eastbound: VIDEOS.cambieBridgeNelsonSb } },
     ],
@@ -710,10 +715,12 @@ export const ROUTES = {
   seaIslandConnector: {
     name: "Sea Island Connector",
     shortName: "Sea Island Conn.",
+    isOneWay: true,
     legs: [{ distance: 0.8, videos: {} }],
   },
   seaIslandWay: {
     name: "Sea Island Way",
+    isOneWay: true,
     legs: [{ distance: 1.9, videos: { eastbound: VIDEOS.seaIslandWayEb } }],
   },
   seaside: {
@@ -785,6 +792,7 @@ export const ROUTES = {
   },
   stanleyParkLoop: {
     name: "Stanley Park Loop",
+    isOneWay: true,
     legs: [
       { name: "Seawall", distance: 8.3, videos: {} },
       { name: "Lost Lagoon", distance: 1.1, videos: {} },
