@@ -19,3 +19,5 @@ export function removeWhiteSpaces(str) {
 
 export const disclaimer =
   "Disclaimer: While efforts are made to keep the data here accurate and up-to-date, no guarantees are provided and conditions may have changed.";
+
+export const displayDistance = (meters) => `${(meters / 1000).toFixed(1)} km`;

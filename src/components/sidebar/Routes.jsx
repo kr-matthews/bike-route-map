@@ -1,23 +1,17 @@
 import { useContext, useMemo, useState } from "react";
-import { ROUTES } from "../../data/routes";
 import { Selections } from "../../App";
 import { Search } from "./Search";
 import { isSubsequence, removeWhiteSpaces } from "../../utils/strings";
 import { BLACK, WHITE } from "../../utils/colours";
-import { COLOUR_HIGHLIGHTED } from "../../utils/constants";
 import { VIEWS } from "./Sidebar";
 import Panel from "./Panel";
-import {
-  getWeightedRouteDistance,
-  getWeightedRouteDistanceOfType,
-} from "../../utils/routes";
-import { TYPES } from "../../utils/segmentTypes";
+import { AUGMENTED_ROUTES, getBackgroundColor } from "../../utils/routes";
 
 export default function Routes({ navigateTo }) {
   const [searchText, setSearchText] = useState("");
   const routesToShow = useMemo(
     () =>
-      Object.values(ROUTES).filter(({ name }) =>
+      Object.values(AUGMENTED_ROUTES).filter(({ name }) =>
         isSubsequence(
           removeWhiteSpaces(searchText.toLowerCase()),
           name.toLowerCase()
@@ -53,7 +47,7 @@ function Route({ route }) {
   const isHighlighted = highlightedRoute?.name === route.name;
   const isSelected = selectedRoute?.name === route.name;
 
-  const background = getBackgroundColor(route.name, isHighlighted);
+  const background = getBackgroundColor(route, isHighlighted);
 
   return (
     <div
@@ -89,43 +83,3 @@ function Route({ route }) {
     </div>
   );
 }
-
-// ex: linear-gradient(to right,  #9c9e9f 0%,#9c9e9f 50%,#33ccff 50%,#33ccff 100%);
-
-const getBackgroundColor = (routeName, isHighlighted) => {
-  if (isHighlighted) return COLOUR_HIGHLIGHTED;
-
-  const totalWeightedDistance = getWeightedRouteDistance(routeName);
-  const cumulativeWeightedDistances = TYPES.reduce(
-    (acc, { key }) => [
-      ...acc,
-      acc[acc.length - 1] + getWeightedRouteDistanceOfType(routeName, key),
-    ],
-    [0]
-  );
-
-  const linearGradient =
-    "to right, " +
-    TYPES.flatMap(({ colour, oneWayColour }, index) =>
-      cumulativeWeightedDistances[index] ===
-      cumulativeWeightedDistances[index + 1]
-        ? []
-        : [
-            gradientPortion(
-              colour ?? oneWayColour,
-              cumulativeWeightedDistances[index],
-              totalWeightedDistance
-            ),
-            gradientPortion(
-              colour ?? oneWayColour,
-              cumulativeWeightedDistances[index + 1],
-              totalWeightedDistance
-            ),
-          ]
-    ).join(", ");
-
-  return `linear-gradient(${linearGradient})`;
-};
-
-const gradientPortion = (colour, weight, totalWeight) =>
-  `${colour} ${(100 * weight) / totalWeight}%`;

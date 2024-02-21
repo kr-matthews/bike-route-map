@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { Selections } from "../../App";
 import { COLOUR_NO_VIDEO, COLOUR_VIDEO } from "../../utils/constants";
+import { displayDistance } from "../../utils/strings";
+import { displayDirection } from "../../utils/videos";
 import startIcon from "../../images/marker-green.svg";
 import "./toggleSwitch.css";
 
@@ -33,14 +35,14 @@ export default function Video({ video, direction }) {
             style={{
               textTransform: "capitalize",
               fontWeight: "Bold",
-              fontSize: "90%",
+              fontSize: "88%",
             }}
           >
-            {direction}
+            {displayDirection(direction)}
           </span>
           {", "}
-          <span style={{ fontSize: "75%" }}>
-            {dateText}, {durationText}
+          <span style={{ fontSize: "73%" }}>
+            {dateText}, {durationText}, {displayDistance(video.distance)}
           </span>
         </span>
         <span

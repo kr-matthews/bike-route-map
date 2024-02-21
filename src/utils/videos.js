@@ -17,6 +17,16 @@ const getVideoSegments = (videoId) =>
 export const getVideoDistance = (videoId) =>
   sumSegmentsLengths(getVideoSegments(videoId));
 
+export const displayDirection = (direction) => {
+  switch (direction) {
+    case "counterclockwise":
+      return "C-Clockwise";
+
+    default:
+      return direction;
+  }
+};
+
 export const AUGMENTED_VIDEOS = Object.entries(VIDEOS).reduce(
   (acc, [key, video]) => {
     acc[key] = {
