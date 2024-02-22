@@ -1,4 +1,5 @@
 import {
+  ALEX_FRASER_NW_FRASERWOOD,
   BOUNDARY_DYKE_W,
   FRASERWOOD_WESTMINSTER_CONNECTION_S,
 } from "../intersections";
@@ -37,7 +38,7 @@ export const FRASERWOOD_TRAIL = [
       [49.17377, -122.96206],
       [49.17404, -122.96182],
       [49.1743, -122.96151],
-      [49.17502, -122.96023],
+      ALEX_FRASER_NW_FRASERWOOD,
       [49.17543, -122.95929],
       [49.17618, -122.95748],
       [49.17623, -122.95741],

@@ -10,7 +10,7 @@ import { VIDEOS } from "./videos";
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
 // West Vancouver: marine dr; mathers+; old train; hwy; keith;
 // Surrey: scott rd; alex fraser; timbers; fraser hwy;
-// Delta: alex fraser bridge
+// Delta:
 
 // !! remove distances
 
@@ -88,6 +88,10 @@ export const ROUTES = {
   alexander: {
     name: "Alexander",
     legs: [{ distance: 1.3, videos: { eastbound: VIDEOS.alexanderEb } }],
+  },
+  alexFraserBridge: {
+    name: "Alex Fraser Bridge",
+    legs: [{ videos: {} }],
   },
   arbutusGreenway: {
     name: "Arbutus Greenway",

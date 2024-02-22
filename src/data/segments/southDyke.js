@@ -1,4 +1,4 @@
-import { BOUNDARY_DYKE_W, HOWES_DYKE } from "../intersections";
+import { BOUNDARY_DYKE, BOUNDARY_DYKE_W, HOWES_DYKE } from "../intersections";
 import { ROUTES } from "../routes";
 
 export const SOUTH_DYKE = [
@@ -8,7 +8,7 @@ export const SOUTH_DYKE = [
     type: "quiet",
     positions: [
       BOUNDARY_DYKE_W,
-      [49.17625, -122.95725],
+      BOUNDARY_DYKE,
       [49.17632, -122.95708],
       [49.17678, -122.95607],
       [49.17729, -122.95494],

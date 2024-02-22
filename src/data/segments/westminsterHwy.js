@@ -5,6 +5,7 @@ import {
   FRASERWOOD_WESTMINSTER_CONNECTION_S,
   GARDEN_CITY_WESTMINSTER_NE,
   GARDEN_CITY_WESTMINSTER_SE,
+  QUEENS_CANAL_WESTMINSTER_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
@@ -352,7 +353,7 @@ export const WESTMINSTER_HWY = [
       SMITH_WESTMINSTER_SW,
       [49.18174, -122.96383],
       [49.18178, -122.96341],
-      [49.18178, -122.96276],
+      QUEENS_CANAL_WESTMINSTER_S,
       [49.18178, -122.96229],
       [49.18183, -122.96193],
       [49.18193, -122.96159],

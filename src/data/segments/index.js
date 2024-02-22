@@ -3,6 +3,7 @@ import { AGNES } from "./agnes";
 import { ALBERNI } from "./alberni";
 import { ALDER } from "./alder";
 import { ALDERBRIDGE } from "./alderbridge";
+import { ALEX_FRASER_BRIDGE } from "./alexFraserBridge";
 import { ALEXANDER } from "./alexander";
 import { ARBUTUS_GREENWAY } from "./arbutusGreenway";
 import { ARTHUR_LAING } from "./arthurLaing";
@@ -155,6 +156,7 @@ export const SEGMENTS = [
   ...ALBERNI,
   ...ALDER,
   ...ALDERBRIDGE,
+  ...ALEX_FRASER_BRIDGE,
   ...ALEXANDER,
   ...ARBUTUS_GREENWAY,
   ...ARTHUR_LAING,
