@@ -8,7 +8,7 @@ export default function ZoomToIcon({ onClick, onMouseOver, onMouseOut, type }) {
         position: "absolute",
         top: 20,
         left: 20,
-        cursor: "pointer",
+        cursor: onClick ? "pointer" : "not-allowed",
       }}
       title="Zoom To"
       onClick={onClick}

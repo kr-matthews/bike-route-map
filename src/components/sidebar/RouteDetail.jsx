@@ -52,14 +52,18 @@ export default function RouteDetail({ mapRef }) {
     .filter(Boolean)
     .join("\n");
 
+  const bounds = getRouteBounds(name);
+
   return (
     selectedRoute && (
       <>
-        <ZoomToIcon
-          onClick={() => mapRef.fitBounds(getRouteBounds(name))}
-          onMouseOver={() => highlightRoute(name)}
-          onMouseOut={() => highlightRoute(null)}
-        />
+        {bounds && (
+          <ZoomToIcon
+            onClick={bounds ? () => mapRef.fitBounds(bounds) : undefined}
+            onMouseOver={() => highlightRoute(name)}
+            onMouseOut={() => highlightRoute(null)}
+          />
+        )}
         <h2
           style={{
             textAlign: "center",

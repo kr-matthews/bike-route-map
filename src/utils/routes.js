@@ -1,5 +1,4 @@
 import { LatLngBounds } from "leaflet";
-import { DEFAULT_BOUNDS } from "./map";
 import { sumSegmentsLengths, sumSegmentsWeightedLengths } from "./segments";
 import { TYPES, normalizeType } from "./segmentTypes";
 import { SEGMENTS } from "../data/segments";
@@ -11,7 +10,7 @@ export function getRouteBounds(routeName) {
     (routeNames ?? []).includes(routeName)
   );
 
-  if (routeSegments.length === 0) return DEFAULT_BOUNDS;
+  if (routeSegments.length === 0) return null;
 
   const latitudes = routeSegments.flatMap(({ positions }) =>
     positions.map(([lat, _]) => lat)
