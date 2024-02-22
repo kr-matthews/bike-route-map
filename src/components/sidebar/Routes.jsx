@@ -1,7 +1,11 @@
 import { useContext, useMemo, useState } from "react";
 import { Selections } from "../../App";
 import { Search } from "./Search";
-import { isSubsequence, removeWhiteSpaces } from "../../utils/strings";
+import {
+  displayDistance,
+  isSubsequence,
+  removeWhiteSpaces,
+} from "../../utils/strings";
 import { BLACK, WHITE } from "../../utils/colours";
 import { VIEWS } from "./Sidebar";
 import Panel from "./Panel";
@@ -48,9 +52,27 @@ function Route({ route }) {
   const isSelected = selectedRoute?.name === route.name;
 
   const background = getBackgroundColor(route, isHighlighted);
+  const displayName = route.shortName ?? route.name;
+
+  const distance = route.isOneWay
+    ? route.oneWayDistance
+    : route.bidirectionalDistance + route.oneWayDistance / 2;
+  const videoCount = route.legs.reduce(
+    (acc, leg) => acc + Object.keys(leg.videos ?? []).length,
+    0
+  );
+  const nameDistanceAndVideoCount = [
+    route.name,
+    displayDistance(distance),
+    videoCount ? `${videoCount} video${videoCount === 1 ? "" : "s"}` : null,
+  ]
+    .filter(Boolean)
+    .join("\n");
+  // route.legs.flatMap((leg) => Object.keys(leg.videos ?? []).map(capitalize) ?? [])
 
   return (
     <div
+      title={nameDistanceAndVideoCount}
       style={{
         textAlign: "center",
         width: "10em",
@@ -72,13 +94,7 @@ function Route({ route }) {
           color: isHighlighted ? BLACK : WHITE,
         }}
       >
-        {isSelected ? (
-          <i>
-            <u>{route.shortName ?? route.name}</u>
-          </i>
-        ) : (
-          route.shortName ?? route.name
-        )}
+        {isSelected ? <u>{displayName}</u> : displayName}
       </span>
     </div>
   );
