@@ -1,4 +1,4 @@
-import { NO_3_SEA_ISLAND_SW_S_PRE } from "../intersections";
+import { NO_3_CAMBIE_SE, NO_3_SEA_ISLAND_SW_S_PRE } from "../intersections";
 import { ROUTES } from "../routes";
 
 const NO_3_COOK_NE = [49.16656, -123.13644];
@@ -55,6 +55,7 @@ export const NO_3 = [
       [49.18285, -123.1365],
       [49.1836, -123.1365],
       [49.18436, -123.13647],
+      NO_3_CAMBIE_SE,
       [49.18466, -123.13634],
       [49.18496, -123.13616],
       [49.18736, -123.1338],

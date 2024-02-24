@@ -109,6 +109,7 @@ import { RAILWAY } from "./railway";
 import { RAILWAY_GREENWAY } from "./railwayGreenway";
 import { RICHARDS } from "./richards";
 import { RIDGEWAY } from "./ridgeway";
+import { RIVER_PARKWAY } from "./riverPkwy";
 import { ROYAL_OAK } from "./royalOak";
 import { RUMBLE } from "./rumble";
 import { RUPERT } from "./rupert";
@@ -262,6 +263,7 @@ export const SEGMENTS = [
   ...RAILWAY_GREENWAY,
   ...RICHARDS,
   ...RIDGEWAY,
+  ...RIVER_PARKWAY,
   ...ROYAL_OAK,
   ...RUMBLE,
   ...RUPERT,

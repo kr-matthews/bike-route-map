@@ -4,7 +4,7 @@ import { VIDEOS } from "./videos";
 // Burnaby:
 // SFU: gaglardi; parkway; university dr e; university dr w; ...more
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
-// Richmond: queen's canal; river pkwy; minoru; no. 6 paths; lynas (no. 2 bridge); bridgeport connection; no. 2 path; river trail/dyke
+// Richmond: minoru (& lansdowne); middle arm; west/south dyke; gilbert; lynas (no. 2 bridge); bridgeport connection; no. 2 path; no. 6 paths;
 // YVR: ferguson; russ baker; bridgeport bridge; paths
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
@@ -701,6 +701,10 @@ export const ROUTES = {
         videos: { westbound: VIDEOS.ridgewayWb },
       },
     ],
+  },
+  riverPkwy: {
+    name: "River Parkway",
+    legs: [{ videos: {} }],
   },
   royalOak: {
     name: "Royal Oak",
