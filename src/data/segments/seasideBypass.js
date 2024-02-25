@@ -133,6 +133,8 @@ export const SEASIDE_BYPASS = [
     routeNames: [ROUTES.seasideBypass.name],
     description: "4th to 3rd",
     type: "quiet",
+    videoIds: [VIDEOS.seasideBypassMarine4thEb.id],
+    videoIdsEndAtEnd: [VIDEOS.seasideBypassMarine4thEb.id],
     positions: [WALLACE_4TH_S, WALLACE_3RD],
   },
   {

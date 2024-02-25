@@ -12,6 +12,7 @@ import {
   WESBROOK_16TH_WS,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const SHOULDER_END = [49.25349, -123.24245];
 const EB_BEFORE_EAST_MALL = [49.2537, -123.24193];
@@ -19,11 +20,13 @@ const EB_AFTER_EAST_MALL = [49.25434, -123.24003];
 const EB_BEFORE_WESBROOK = [49.2554, -123.23702];
 const EB_AFTER_WESBROOK = [49.25587, -123.23565];
 
+const WB_LANE_START = [49.25859, -123.21777];
 const WB_BEFORE_WESBROOK = [49.25601, -123.23576];
 const WB_AFTER_WESBROOK = [49.2555, -123.23736];
 const WB_BEFORE_EAST_MALL = [49.25452, -123.24016];
 const WB_AFTER_EAST_MALL = [49.25393, -123.24207];
 const SHOULDER_START = [49.25373, -123.24262];
+const MARINE_SPLIT = [49.25253, -123.24604];
 
 export const SIXTEENTH = [
   // {
@@ -161,9 +164,11 @@ export const SIXTEENTH = [
   // wb
   {
     routeNames: [ROUTES.sixteenth.name],
-    description: "wb: 16th to wesbrook",
-    type: "painted",
+    description: "wb: first bit after blanca",
+    type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.sixteenthWb.id, VIDEOS.blancaSb.id],
+    videoIdsEndAtEnd: [VIDEOS.blancaSb.id],
     positions: [
       BLANCA_16TH_NW_SLIP,
       [49.25898, -123.21551],
@@ -171,6 +176,17 @@ export const SIXTEENTH = [
       [49.25863, -123.216],
       [49.25855, -123.21631],
       [49.25855, -123.21667],
+      WB_LANE_START,
+    ],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "wb: blanca-ish to wesbrook",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [VIDEOS.sixteenthWb.id],
+    positions: [
+      WB_LANE_START,
       [49.25858, -123.21898],
       [49.25863, -123.22197],
       [49.25866, -123.22432],
@@ -200,6 +216,7 @@ export const SIXTEENTH = [
     description: "wb: before wesbrook",
     type: "mixed",
     oneWay: "required",
+    videoIds: [VIDEOS.sixteenthWb.id],
     positions: [WB_BEFORE_WESBROOK, WESBROOK_16TH_EN],
   },
   {
@@ -207,6 +224,7 @@ export const SIXTEENTH = [
     description: "wb: wesbrook NE",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [VIDEOS.sixteenthWb.id],
     positions: [WESBROOK_16TH_EN, [49.25607, -123.23631], WESBROOK_16TH_NE],
   },
   {
@@ -214,6 +232,7 @@ export const SIXTEENTH = [
     description: "wb: crossing wesbrook",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [VIDEOS.sixteenthWb.id],
     positions: [WESBROOK_16TH_NE, WESBROOK_16TH_NW],
   },
   {
@@ -221,6 +240,7 @@ export const SIXTEENTH = [
     description: "wb: wesbrook NW",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [VIDEOS.sixteenthWb.id],
     positions: [
       WESBROOK_16TH_NW,
       [49.25591, -123.23679],
@@ -233,6 +253,7 @@ export const SIXTEENTH = [
     description: "wb: after wesbrook",
     type: "mixed",
     oneWay: "required",
+    videoIds: [VIDEOS.sixteenthWb.id],
     positions: [WESBROOK_16TH_WN, [49.25556, -123.23734], WB_AFTER_WESBROOK],
   },
   {
@@ -240,6 +261,7 @@ export const SIXTEENTH = [
     description: "wb: wesbrook to east mall",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.sixteenthWb.id],
     positions: [WB_AFTER_WESBROOK, [49.25498, -123.23883], WB_BEFORE_EAST_MALL],
   },
   {
@@ -247,6 +269,7 @@ export const SIXTEENTH = [
     description: "wb: crossing east mall",
     type: "mixed",
     oneWay: "required",
+    videoIds: [VIDEOS.sixteenthWb.id],
     positions: [
       WB_BEFORE_EAST_MALL,
       [49.25452, -123.24031],
@@ -268,17 +291,26 @@ export const SIXTEENTH = [
     description: "wb: after east mall",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.sixteenthWb.id],
     positions: [WB_AFTER_EAST_MALL, SHOULDER_START],
   },
   {
     routeNames: [ROUTES.sixteenth.name],
-    description: "wb: end shoulder",
+    description: "wb: end shoulder to split",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.sixteenthWb.id],
+    positions: [SHOULDER_START, [49.25313, -123.24436], MARINE_SPLIT],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "wb: shoulder to nb marine",
+    type: "shoulder",
+    oneWay: "required",
+    videoIds: [VIDEOS.sixteenthWb.id, VIDEOS.nwMarineEb.id],
+    videoIdsStartAtStart: [VIDEOS.nwMarineEb.id],
     positions: [
-      SHOULDER_START,
-      [49.25313, -123.24436],
-      [49.25253, -123.24604],
+      MARINE_SPLIT,
       [49.25245, -123.24636],
       [49.25242, -123.24663],
       [49.25246, -123.24689],

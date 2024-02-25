@@ -38,7 +38,7 @@ export const ROUTES = {
   },
   sixteenth: {
     name: "16th Ave",
-    legs: [{ distance: 2.5, videos: {} }],
+    legs: [{ distance: 2.5, videos: { westbound: VIDEOS.sixteenthWb } }],
   },
   twentySecond: {
     name: "22nd Ave",
@@ -163,7 +163,7 @@ export const ROUTES = {
   },
   blanca: {
     name: "Blanca St",
-    legs: [{ distance: 1.2, videos: {} }],
+    legs: [{ distance: 1.2, videos: { southbound: VIDEOS.blancaSb } }],
   },
   boundary: {
     name: "Boundary Trail",
@@ -537,7 +537,7 @@ export const ROUTES = {
   },
   marineNw: {
     name: "NW Marine",
-    legs: [{ distance: 7.1, videos: {} }],
+    legs: [{ distance: 7.1, videos: { eastbound: VIDEOS.nwMarineEb } }],
   },
   marineSw: {
     name: "SW Marine",
@@ -763,7 +763,11 @@ export const ROUTES = {
       },
       { name: "York", distance: 1.4, videos: { eastbound: VIDEOS.yorkEb } },
       { name: "3rd", distance: 2.4, videos: { eastbound: VIDEOS.thirdEb } },
-      { name: "NW Marine & 4th", distance: 4, videos: {} },
+      {
+        name: "NW Marine & 4th",
+        distance: 4,
+        videos: { eastbound: VIDEOS.seasideBypassMarine4thEb },
+      },
       { name: "Whyte", distance: 0.8, videos: {} },
     ],
   },

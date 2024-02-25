@@ -74,6 +74,11 @@ const VIDEOS = {
     date: new Date("2023 10 01"),
     minutes: 5,
   },
+  blancaSb: {
+    id: "EN5H_jnfnDo",
+    date: new Date("2024 02 23"),
+    minutes: 4,
+  },
   bridgeportTrailEb: {
     id: "isnLEyAJyPo",
     date: new Date("2024 02 12"),
@@ -398,6 +403,11 @@ const VIDEOS = {
     date: new Date("2024 01 23"),
     minutes: 11,
   },
+  nwMarineEb: {
+    id: "t1EWe9TW-rw",
+    date: new Date("2024 02 23"),
+    minutes: 19,
+  },
   offBroadwayWb: {
     id: "7nKl_moRiog",
     date: new Date("2023 06 07"),
@@ -468,15 +478,20 @@ const VIDEOS = {
     date: new Date("2023 08 19"),
     minutes: 3,
   },
+  seasideBypassExpoWb: {
+    id: "i2Kdrs7DJGk",
+    date: new Date("2023 12 24"),
+    minutes: 13,
+  },
   seasideBypassFalseCreekSouthEb: {
     id: "8xY4bwZ0GrE",
     date: new Date("2023 12 16"),
     minutes: 15,
   },
-  seasideBypassExpoWb: {
-    id: "i2Kdrs7DJGk",
-    date: new Date("2023 12 24"),
-    minutes: 13,
+  seasideBypassMarine4thEb: {
+    id: "wcGNy4zlMKY",
+    date: new Date("2024 02 23"),
+    minutes: 11,
   },
   seasideKitsWb: {
     id: "htrdfMC4NBg",
@@ -487,6 +502,11 @@ const VIDEOS = {
     id: "Fuq2nBBk0IM",
     date: new Date("2023 12 23"),
     minutes: 40,
+  },
+  sixteenthWb: {
+    id: "i1txRJ1f01s",
+    date: new Date("2024 02 23"),
+    minutes: 6,
   },
   sixtySeventhPlusWb: {
     id: "z5GzRN2_iNc",

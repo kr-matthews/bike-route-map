@@ -128,7 +128,7 @@ export const FOURTH = [
     description: "eb: after marine",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.fourthEb.id],
+    videoIds: [VIDEOS.fourthEb.id, VIDEOS.seasideBypassMarine4thEb.id],
     positions: [
       MARINE_4TH_S,
       [49.26868, -123.1997],
@@ -141,7 +141,7 @@ export const FOURTH = [
     description: "eb to wallace",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.fourthEb.id],
+    videoIds: [VIDEOS.fourthEb.id, VIDEOS.seasideBypassMarine4thEb.id],
     positions: [
       EB_AFTER_MARINE,
       [49.26872, -123.19806],

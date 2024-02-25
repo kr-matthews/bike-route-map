@@ -12,6 +12,7 @@ import {
   BLANCA_8TH_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const BLANCA_6TH = [49.26738, -123.21518];
 const SOUTHBOUND_LANE_END = [49.25914, -123.21549];
@@ -39,6 +40,8 @@ export const BLANCA = [
     description: "4th to 6th",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.blancaSb.id],
+    videoIdsStartAtStart: [VIDEOS.blancaSb.id],
     positions: [BLANCA_4TH_N, BLANCA_4TH_SW, BLANCA_6TH],
   },
   {
@@ -46,6 +49,7 @@ export const BLANCA = [
     description: "southbound with lane",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.blancaSb.id],
     positions: [
       BLANCA_6TH,
       BLANCA_8TH_NW,
@@ -63,6 +67,8 @@ export const BLANCA = [
     type: "shared",
     oneWay: "required",
     hideArrows: true,
+    videoIds: [VIDEOS.blancaSb.id, VIDEOS.sixteenthWb.id],
+    videoIdsStartAtStart: [VIDEOS.sixteenthWb.id],
     positions: [SOUTHBOUND_LANE_END, BLANCA_16TH_NW_SLIP],
   },
 ];
