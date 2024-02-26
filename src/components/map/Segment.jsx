@@ -51,12 +51,14 @@ export default function Segment(segment) {
     mouseout: () => highlightRoute(null),
     click: () => {
       if (primaryRouteName) {
-        const isRouteAlreadySelected = selectedRoute?.name === primaryRouteName;
-        selectRoute(isRouteAlreadySelected ? null : primaryRouteName);
+        selectRoute((selectedRouteName) => {
+          const isRouteAlreadySelected = selectedRouteName === primaryRouteName;
+          return isRouteAlreadySelected ? null : primaryRouteName;
+        });
       }
     },
     contextmenu: () => {
-      if (videoIds?.length) {
+      if (hasAnyVideos) {
         const firstVideoId = videoIds[0];
         const isVideoAlreadyShown = selectedVideo?.id === firstVideoId;
         if (isVideoAlreadyShown) {
@@ -77,12 +79,16 @@ export default function Segment(segment) {
     },
   };
 
+  const isSelected = (routeNames ?? []).includes(selectedRoute?.name);
+  const isHighlighted = (routeNames ?? []).includes(highlightedRoute?.name);
+  const hasActiveVideo = videoIds?.includes(selectedVideo?.id);
+
   const polylineProps = {
     positions,
     pathOptions: createPathOptions(segment, {
-      highlightedRoute,
-      selectedRoute,
-      selectedVideo,
+      isHighlighted,
+      isSelected,
+      hasActiveVideo,
       isHidden,
     }),
     eventHandlers,
@@ -93,8 +99,7 @@ export default function Segment(segment) {
   const borderProps = {
     positions,
     pathOptions: createBorderPathOptions(segment, {
-      highlightedRoute,
-      selectedRoute,
+      isSelected,
       isHidden,
     }),
     eventHandlers,

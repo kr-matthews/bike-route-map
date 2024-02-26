@@ -17,13 +17,9 @@ import {
 } from "./segmentTypes";
 
 export function createPathOptions(
-  { routeNames, oneWay, isClosed, videoIds, type, hideUnlessVideo, elevation },
-  { highlightedRoute, selectedRoute, selectedVideo, isHidden }
+  { oneWay, isClosed, type, hideUnlessVideo, elevation },
+  { isHighlighted, isSelected, hasActiveVideo, isHidden }
 ) {
-  const isSelected = (routeNames ?? []).includes(selectedRoute?.name);
-  const isHighlighted = (routeNames ?? []).includes(highlightedRoute?.name);
-  const hasActiveVideo = videoIds?.includes(selectedVideo?.id);
-
   const isOneWay = oneWay === "required";
 
   let colour = BLACK;
@@ -58,11 +54,9 @@ export function createPathOptions(
 }
 
 export function createBorderPathOptions(
-  { routeNames, elevation },
-  { selectedRoute, isHidden }
+  { elevation },
+  { isSelected, isHidden }
 ) {
-  const isSelected = (routeNames ?? []).includes(selectedRoute?.name);
-
   if (!elevation) return null;
 
   return {
