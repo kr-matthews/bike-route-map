@@ -15,7 +15,7 @@ export default function MainMap({ setMapRef, fullWidth = false }) {
     function closeOnEsc() {
       const onKeyDown = async (e) => {
         if (e.key === "Escape") {
-          selectRoute(null);
+          selectRoute((_) => null);
         }
       };
       document.addEventListener("keydown", onKeyDown);
@@ -48,7 +48,7 @@ export default function MainMap({ setMapRef, fullWidth = false }) {
         {SEGMENTS.map((segment) => (
           <Segment
             key={segment.routeNames?.join(",") + "|" + segment.description}
-            {...segment}
+            segment={segment}
           />
         ))}
       </MapContainer>

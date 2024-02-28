@@ -74,13 +74,15 @@ export default function useSelections() {
 
   // videos live within a route, so clear video on route change
   const handleSelectingRouteName = useCallback(
-    (routeName) => {
-      if (routeName !== selectedRouteName) {
-        setSelectedVideoId(null);
-        setSelectedRouteName(routeName);
-      }
-    },
-    [selectedRouteName]
+    (selectionFunction) =>
+      setSelectedRouteName((selectedRouteName) => {
+        if (selectionFunction(selectedRouteName) !== selectedRouteName) {
+          setSelectedVideoId(null);
+          return selectionFunction(selectedRouteName);
+        }
+        return selectedRouteName;
+      }),
+    []
   );
 
   // filters
