@@ -1,5 +1,6 @@
-import {} from "../intersections";
+import { SEA_ISLAND_CONNECTOR_W } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const MOREY_SEA_ISLAND_CONNECTOR_E = [49.1922, -123.13425];
 const MOREY_SEA_ISLAND_CONNECTOR_W = [49.19271, -123.13878];
@@ -11,6 +12,8 @@ export const SEA_ISLAND_CONNECTOR = [
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.seaIslandConnectorWb.id],
+    videoIdsStartAtStart: [VIDEOS.seaIslandConnectorWb.id],
     positions: [
       [49.19206, -123.12976],
       [49.19204, -123.13084],
@@ -25,6 +28,7 @@ export const SEA_ISLAND_CONNECTOR = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.seaIslandConnectorWb.id],
     positions: [MOREY_SEA_ISLAND_CONNECTOR_E, MOREY_SEA_ISLAND_CONNECTOR_W],
   },
   {
@@ -33,6 +37,8 @@ export const SEA_ISLAND_CONNECTOR = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.seaIslandConnectorWb.id],
+    videoIdsEndAtEnd: [VIDEOS.seaIslandConnectorWb.id],
     positions: [
       MOREY_SEA_ISLAND_CONNECTOR_W,
       [49.19276, -123.13905],
@@ -42,7 +48,7 @@ export const SEA_ISLAND_CONNECTOR = [
       [49.19309, -123.13987],
       [49.19321, -123.14002],
       [49.19334, -123.14014],
-      [49.19347, -123.14024],
+      SEA_ISLAND_CONNECTOR_W,
     ],
   },
 ];

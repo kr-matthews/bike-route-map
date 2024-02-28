@@ -83,7 +83,7 @@ export const ROUTES = {
   alderbridge: {
     name: "Alderbridge Way Path",
     shortName: "Alderbridge Path",
-    legs: [{ distance: 1.6, videos: {} }],
+    legs: [{ distance: 1.6, videos: { westbound: VIDEOS.alderbridgeWb } }],
   },
   alexander: {
     name: "Alexander",
@@ -100,7 +100,15 @@ export const ROUTES = {
   arthurLaingBridge: {
     name: "Arthur Laing Bridge",
     // shortName: "Arthur Laing B.",
-    legs: [{ distance: 1.3, videos: { southbound: VIDEOS.arthurLaingSb } }],
+    legs: [
+      {
+        distance: 1.3,
+        videos: {
+          northbound: VIDEOS.arthurLaingNb,
+          southbound: VIDEOS.arthurLaingSb,
+        },
+      },
+    ],
   },
   balaclava: {
     name: "Balaclava",
@@ -610,7 +618,7 @@ export const ROUTES = {
   },
   no3: {
     name: "No. 3 Rd",
-    legs: [{ distanceMax: 2.9, videos: {} }],
+    legs: [{ distanceMax: 2.9, videos: { northbound: VIDEOS.no3Nb } }],
   },
   northSouth: {
     name: "North/South",
@@ -724,7 +732,9 @@ export const ROUTES = {
     name: "Sea Island Connector",
     shortName: "Sea Island Conn.",
     isOneWay: true,
-    legs: [{ distance: 0.8, videos: {} }],
+    legs: [
+      { distance: 0.8, videos: { westbound: VIDEOS.seaIslandConnectorWb } },
+    ],
   },
   seaIslandWay: {
     name: "Sea Island Way",

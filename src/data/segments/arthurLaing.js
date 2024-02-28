@@ -1,4 +1,8 @@
-import { MARINE_ARTHUR_LAING_N, MARINE_ARTHUR_LAING_S } from "../intersections";
+import {
+  MARINE_ARTHUR_LAING_N,
+  MARINE_ARTHUR_LAING_S,
+  SEA_ISLAND_CONNECTOR_W,
+} from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
@@ -33,9 +37,26 @@ export const ARTHUR_LAING = [
     positions: [[49.19498, -123.14015], NORTHBOUND_MERGE],
   },
   {
-    description: "nb path join",
+    description: "nb path from connector to bridge",
     type: "dedicated",
-    positions: [NORTHBOUND_MERGE, [49.19488, -123.14]],
+    videoIds: [VIDEOS.arthurLaingNb.id],
+    videoIdsStartAtStart: [VIDEOS.arthurLaingNb.id],
+    positions: [
+      SEA_ISLAND_CONNECTOR_W,
+      [49.19345, -123.14017],
+      [49.19339, -123.14013],
+      [49.19337, -123.14008],
+      [49.19348, -123.14013],
+      [49.19366, -123.14014],
+      [49.19385, -123.14012],
+      [49.19405, -123.14007],
+      [49.19433, -123.1399],
+      [49.19444, -123.13983],
+      [49.19452, -123.13984],
+      [49.19473, -123.1399],
+      [49.19495, -123.14004],
+      NORTHBOUND_MERGE,
+    ],
   },
 
   // sb
@@ -116,6 +137,7 @@ export const ARTHUR_LAING = [
     type: "shoulder",
     elevation: 0.5,
     oneWay: "required",
+    videoIds: [VIDEOS.arthurLaingNb.id],
     positions: [
       NORTHBOUND_MERGE,
       [49.19505, -123.13977],
@@ -132,6 +154,7 @@ export const ARTHUR_LAING = [
     type: "shoulder",
     elevation: 1,
     oneWay: "required",
+    videoIds: [VIDEOS.arthurLaingNb.id],
     positions: [
       NORTHBOUND_ELEVATION_START,
       [49.1963, -123.1372],
@@ -172,6 +195,7 @@ export const ARTHUR_LAING = [
     elevation: 0.5,
     oneWay: "required",
     hideArrows: true,
+    videoIds: [VIDEOS.arthurLaingNb.id],
     positions: [NORTHBOUND_ELEVATION_END, MARINE_ARTHUR_LAING_N],
   },
 ];

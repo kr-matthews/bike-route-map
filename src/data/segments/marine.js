@@ -65,7 +65,8 @@ export const MARINE = [
   {
     description: "connection with arbutus greenway",
     type: "quiet",
-    videoIds: [VIDEOS.arbutusGreenwayNb.id],
+    videoIds: [VIDEOS.arbutusGreenwayNb.id, VIDEOS.arthurLaingNb.id],
+    videoIdsEndAtStart: [VIDEOS.arthurLaingNb.id],
     positions: [
       MILTON_ARBUTUS_GREENWAY,
       [49.20497, -123.14113],
@@ -77,7 +78,7 @@ export const MARINE = [
     description: "from arthur laing",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.arbutusGreenwayNb.id],
+    videoIds: [VIDEOS.arbutusGreenwayNb.id, VIDEOS.arthurLaingNb.id],
     videoIdsStartAtStart: [VIDEOS.arbutusGreenwayNb.id],
     positions: [
       MARINE_ARTHUR_LAING_N,
@@ -91,7 +92,7 @@ export const MARINE = [
     description: "gas station sidewalk",
     type: "other",
     oneWay: "required",
-    videoIds: [VIDEOS.arbutusGreenwayNb.id],
+    videoIds: [VIDEOS.arbutusGreenwayNb.id, VIDEOS.arthurLaingNb.id],
     positions: [
       GRANVILLE_SIDEWALK_START,
       [49.20522, -123.14015],
@@ -105,7 +106,7 @@ export const MARINE = [
     description: "crossing granville",
     type: "shared",
     oneWay: "recommended",
-    videoIds: [VIDEOS.arbutusGreenwayNb.id],
+    videoIds: [VIDEOS.arbutusGreenwayNb.id, VIDEOS.arthurLaingNb.id],
     positions: [GRANVILLE_GAS_STATION, [49.20525, -123.1406], GRANVILLE_MARINE],
   },
   {

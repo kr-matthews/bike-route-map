@@ -1,19 +1,42 @@
-import { NO_3_CAMBIE_SE, NO_3_SEA_ISLAND_SW_S_PRE } from "../intersections";
+import {
+  BUSWELL_GRANVILLE_N,
+  NO_3_CAMBIE_SE,
+  NO_3_SEA_ISLAND_SW_S_PRE,
+} from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
+const PRE_NO_3_COOK = [49.16655, -123.1349];
 const NO_3_COOK_NE = [49.16656, -123.13644];
 const NO_3_BUS_MALL_SE = [49.16743, -123.13643];
 const NO_3_SEA_ISLAND_SW_S = [49.19069, -123.13087];
 
 export const NO_3 = [
   {
+    description: "connection via buswell from granville",
+    type: "shared",
+    hideUnlessVideo: true,
+    videoIds: [VIDEOS.no3Nb.id],
+    videoIdsStartAtStart: [VIDEOS.no3Nb.id],
+    positions: [
+      BUSWELL_GRANVILLE_N,
+      [49.16349, -123.13375],
+      [49.1647, -123.1337],
+      [49.16645, -123.13368],
+      [49.16651, -123.13373],
+      [49.16652, -123.13477],
+      PRE_NO_3_COOK,
+    ],
+  },
+  {
     description: "cook wb",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.no3Nb.id],
     positions: [
-      [49.16655, -123.13388],
-      [49.16657, -123.134],
-      [49.16658, -123.13621],
+      PRE_NO_3_COOK,
+      [49.16657, -123.13504],
+      [49.16657, -123.13621],
       [49.16656, -123.13628],
       NO_3_COOK_NE,
     ],
@@ -23,6 +46,7 @@ export const NO_3 = [
     description: "nb: block after cook",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.no3Nb.id],
     positions: [
       NO_3_COOK_NE,
       [49.16665, -123.13644],
@@ -36,6 +60,8 @@ export const NO_3 = [
     description: "nb: rest",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.no3Nb.id],
+    videoIdsEndAtEnd: [VIDEOS.no3Nb.id],
     positions: [
       NO_3_BUS_MALL_SE,
       [49.16881, -123.13642],
