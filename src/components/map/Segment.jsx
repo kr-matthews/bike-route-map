@@ -21,7 +21,7 @@ export default function Segment({ segment }) {
     highlightedRoute,
     highlightRoute,
     selectedVideo,
-    selectVideo,
+    selectRouteAndVideo,
     isSegmentHidden,
   } = useContext(Selections);
 
@@ -37,11 +37,7 @@ export default function Segment({ segment }) {
       mouseout: () => highlightRoute(null),
       click: () => {
         if (primaryRouteName) {
-          selectRoute((selectedRouteName) => {
-            const isRouteAlreadySelected =
-              selectedRouteName === primaryRouteName;
-            return isRouteAlreadySelected ? null : primaryRouteName;
-          });
+          selectRoute(primaryRouteName);
         }
       },
       contextmenu: () => {
@@ -54,8 +50,7 @@ export default function Segment({ segment }) {
             (routeNames ?? []).find((routeName) =>
               routesWithVideo.some((route) => route.name === routeName)
             ) ?? routesWithVideo[0].name;
-          selectRoute((_) => aRouteNameWithVideo);
-          selectVideo(firstVideoId); // !!! broken because selectRoute is clearing it (slowly, so after) -- switch to reducer
+          selectRouteAndVideo(aRouteNameWithVideo, firstVideoId);
         }
       },
     }),
@@ -66,7 +61,7 @@ export default function Segment({ segment }) {
       hasAnyVideos,
       highlightRoute,
       selectRoute,
-      selectVideo,
+      selectRouteAndVideo,
     ]
   );
 

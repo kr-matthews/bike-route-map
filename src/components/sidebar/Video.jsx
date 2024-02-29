@@ -17,8 +17,7 @@ export default function Video({ video, direction }) {
   });
   const durationText = `${video.minutes} min`;
 
-  const updateVideo = () =>
-    selectVideo((currentId) => (currentId === video.id ? null : video.id));
+  const updateVideo = () => selectVideo(video.id);
 
   return (
     <span

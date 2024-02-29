@@ -9,6 +9,40 @@ import {
 import { getAugmentedVideo } from "../utils/videos";
 import { getAugmentedRoute } from "../utils/routes";
 
+const selectedReducer = (state, action) => {
+  switch (action.type) {
+    case "select-route":
+      if (state.selectedRouteName === action.routeName) {
+        return defaultSelected;
+      } else {
+        return {
+          ...state,
+          selectedRouteName: action.routeName,
+          selectedVideoId: null,
+        };
+      }
+
+    case "select-video":
+      if (state.selectedVideoId === action.videoId) {
+        return { ...state, selectedVideoId: null };
+      } else {
+        return { ...state, selectedVideoId: action.videoId };
+      }
+
+    case "select-route-video":
+      return {
+        ...state,
+        selectedRouteName: action.routeName,
+        selectedVideoId: action.videoId,
+      };
+
+    case "reset":
+      return defaultSelected;
+  }
+};
+
+const defaultSelected = { selectedRouteName: null, selectedVideoId: null };
+
 const filtersReducer = (state, action) => {
   switch (action.type) {
     case "reset":
@@ -65,23 +99,26 @@ export default function useSelections() {
   // interactions
 
   const [highlightedRouteName, setHighlightedRouteName] = useState(null);
-  const [selectedRouteName, setSelectedRouteName] = useState(null);
-  const [selectedVideoId, setSelectedVideoId] = useState(null);
+  const [{ selectedRouteName, selectedVideoId }, dispatchSelected] = useReducer(
+    selectedReducer,
+    defaultSelected
+  );
 
   const highlightedRoute = getAugmentedRoute(highlightedRouteName);
   const selectedRoute = getAugmentedRoute(selectedRouteName);
   const selectedVideo = getAugmentedVideo(selectedVideoId);
 
-  // videos live within a route, so clear video on route change
-  const handleSelectingRouteName = useCallback(
-    (selectionFunction) =>
-      setSelectedRouteName((selectedRouteName) => {
-        if (selectionFunction(selectedRouteName) !== selectedRouteName) {
-          setSelectedVideoId(null);
-          return selectionFunction(selectedRouteName);
-        }
-        return selectedRouteName;
-      }),
+  const selectRouteName = useCallback(
+    (routeName) => dispatchSelected({ type: "select-route", routeName }),
+    []
+  );
+  const selectVideoId = useCallback(
+    (videoId) => dispatchSelected({ type: "select-video", videoId }),
+    []
+  );
+  const selectRouteNameAndVideoId = useCallback(
+    (routeName, videoId) =>
+      dispatchSelected({ type: "select-route-video", routeName, videoId }),
     []
   );
 
@@ -131,11 +168,12 @@ export default function useSelections() {
     highlightedRoute,
     highlightRoute: setHighlightedRouteName,
     selectedRoute,
-    selectRoute: handleSelectingRouteName,
+    selectRoute: selectRouteName,
     selectedVideo,
-    selectVideo: setSelectedVideoId,
-    filters,
+    selectVideo: selectVideoId,
+    selectRouteAndVideo: selectRouteNameAndVideoId,
     isSegmentHidden,
+    filters,
     dispatchFilters,
   };
 }

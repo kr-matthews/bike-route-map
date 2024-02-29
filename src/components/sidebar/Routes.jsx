@@ -84,9 +84,7 @@ function Route({ route }) {
       }}
       onMouseOver={() => highlightRoute(route.name)}
       onMouseOut={() => highlightRoute(null)}
-      onMouseDown={() =>
-        selectRoute((selected) => (selected === route.name ? null : route.name))
-      }
+      onMouseDown={() => selectRoute(route.name)}
     >
       <span
         style={{

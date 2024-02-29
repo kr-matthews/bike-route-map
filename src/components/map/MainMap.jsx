@@ -15,7 +15,7 @@ export default function MainMap({ setMapRef, fullWidth = false }) {
     function closeOnEsc() {
       const onKeyDown = async (e) => {
         if (e.key === "Escape") {
-          selectRoute((_) => null);
+          selectRoute(null);
         }
       };
       document.addEventListener("keydown", onKeyDown);
