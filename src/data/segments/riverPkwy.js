@@ -1,4 +1,11 @@
-import { RIVER_PKWY_CAMBIE_SE, RIVER_PKWY_CAMBIE_SW } from "../intersections";
+import {
+  GILBERT_RIVER_NE,
+  GILBERT_RIVER_NW,
+  GILBERT_RIVER_SE,
+  GILBERT_RIVER_SW,
+  RIVER_PKWY_CAMBIE_SE,
+  RIVER_PKWY_CAMBIE_SW,
+} from "../intersections";
 import { ROUTES } from "../routes";
 
 const EB_PAINT_START = [49.1772, -123.14325];
@@ -30,6 +37,8 @@ export const RIVER_PARKWAY = [
       [49.17553, -123.1467],
       [49.17585, -123.14601],
       [49.1759, -123.14599],
+      GILBERT_RIVER_SW,
+      GILBERT_RIVER_SE,
       [49.17618, -123.14537],
       [49.17618, -123.1453],
       [49.17624, -123.14516],
@@ -85,6 +94,8 @@ export const RIVER_PARKWAY = [
       [49.17811, -123.14168],
       [49.178, -123.14186],
       [49.17636, -123.14535],
+      GILBERT_RIVER_NE,
+      GILBERT_RIVER_NW,
       [49.17598, -123.14613],
       WB_PAINT_END,
     ],

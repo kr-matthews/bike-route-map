@@ -1,4 +1,5 @@
 import {
+  GILBERT_LANSDOWNE_NE,
   MINORU_GRANVILLE_NE,
   MINORU_GRANVILLE_NW,
   NO_3_ACKROYD_W,
@@ -27,7 +28,8 @@ export const MINORU = [
     description: "lansdowne path",
     type: "mixed",
     positions: [
-      [49.17396, -123.14525],
+      GILBERT_LANSDOWNE_NE,
+      [49.17396, -123.14523],
       [49.17396, -123.14509],
       [49.17394, -123.145],
       [49.17395, -123.14488],

@@ -4,8 +4,8 @@ import { VIDEOS } from "./videos";
 // Burnaby:
 // SFU: gaglardi; parkway; university dr e; university dr w; ...more
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
-// Richmond: gilbert; lynas; no. 2 bridge; west/south dyke; no. 2 path; bridgeport connection; no. 6 paths;
-// YVR: ferguson; russ baker; bridgeport bridge; paths
+// Richmond: lynas*; no. 2 bridge*; west/south dyke; no. 2 path; bridgeport connection; no. 6 paths;
+// YVR: russ baker*; ferguson; numerous paths...
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
 // West Vancouver: marine dr; mathers+; old train; hwy; keith;
@@ -404,6 +404,10 @@ export const ROUTES = {
         },
       },
     ],
+  },
+  gilbert: {
+    name: "Gilbert Rd",
+    legs: [{ videos: {} }],
   },
   gladstone: {
     name: "Gladstone",
