@@ -1,5 +1,6 @@
 import {
   BUSWELL_GRANVILLE_N,
+  NO_3_ACKROYD_W,
   NO_3_CAMBIE_SE,
   NO_3_SEA_ISLAND_SW_S_PRE,
 } from "../intersections";
@@ -133,7 +134,7 @@ export const NO_3 = [
       [49.17541, -123.13688],
       [49.17493, -123.13691],
       [49.17384, -123.13689],
-      [49.17203, -123.13676],
+      NO_3_ACKROYD_W,
       [49.17122, -123.1367],
       [49.17021, -123.1367],
       [49.16881, -123.13672],

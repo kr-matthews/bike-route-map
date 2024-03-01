@@ -4,7 +4,7 @@ import { VIDEOS } from "./videos";
 // Burnaby:
 // SFU: gaglardi; parkway; university dr e; university dr w; ...more
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
-// Richmond: minoru (& lansdowne); middle arm; west/south dyke; gilbert; lynas (no. 2 bridge); bridgeport connection; no. 2 path; no. 6 paths;
+// Richmond: gilbert; lynas; no. 2 bridge; west/south dyke; no. 2 path; bridgeport connection; no. 6 paths;
 // YVR: ferguson; russ baker; bridgeport bridge; paths
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
@@ -574,6 +574,10 @@ export const ROUTES = {
       { distance: 2.5, videos: { counterclockwise: VIDEOS.metrotownCcw } },
     ],
   },
+  middleArm: {
+    name: "Middle Arm Trail",
+    legs: [{ videos: {} }],
+  },
   midtown: {
     name: "Midtown",
     legs: [
@@ -592,6 +596,10 @@ export const ROUTES = {
   millenniumTrail: {
     name: "Millennium Trail",
     legs: [{ distance: 1.4, videos: {} }],
+  },
+  minoru: {
+    name: "Minoru Blvd",
+    legs: [{ videos: {} }],
   },
   mosaic: {
     name: "Mosaic",

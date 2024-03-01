@@ -1,29 +1,10 @@
-import { MIDDLE_ARM_TRAIL_CAMBIE_SW, NO_3_CAMBIE_SE } from "../intersections";
+import { RIVER_PKWY_CAMBIE_SE, RIVER_PKWY_CAMBIE_SW } from "../intersections";
 import { ROUTES } from "../routes";
 
 const EB_PAINT_START = [49.1772, -123.14325];
-const RIVER_PKWY_CAMBIE_SE = [49.18449, -123.1375];
-const RIVER_PKWY_CAMBIE_SW = [49.18451, -123.1377];
 const WB_PAINT_END = [49.176, -123.14618];
 
 export const RIVER_PARKWAY = [
-  {
-    description: "cambie: middle arm trail to no. 3",
-    type: "combined",
-    positions: [
-      MIDDLE_ARM_TRAIL_CAMBIE_SW,
-      [49.1846, -123.13847],
-      [49.18462, -123.13837],
-      [49.18452, -123.13775],
-      RIVER_PKWY_CAMBIE_SW,
-      RIVER_PKWY_CAMBIE_SE,
-      [49.18449, -123.13733],
-      [49.18447, -123.13723],
-      [49.18449, -123.13681],
-      [49.18447, -123.13673],
-      NO_3_CAMBIE_SE,
-    ],
-  },
   {
     description: "hollybridge",
     type: "combined",
