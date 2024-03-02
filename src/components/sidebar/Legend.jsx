@@ -165,8 +165,8 @@ export default function Legend({ navigateTo }) {
           >
             <PanesAndTiles />
 
-            <Segment {...segment} {...segmentProps} />
-            <Segment {...otherSegment} />
+            <Segment segment={{ ...segment, ...segmentProps }} />
+            <Segment segment={otherSegment} />
           </MapContainer>
         </div>
 
