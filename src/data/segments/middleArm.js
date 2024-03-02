@@ -1,6 +1,7 @@
 import {
   BARNARD_MIDDLE_ARM,
   MCCALLAN_MIDDLE_ARM,
+  NO_2_RIVER_W_N,
   NO_3_CAMBIE_SE,
   RIVER_PKWY_CAMBIE_SE,
   RIVER_PKWY_CAMBIE_SW,
@@ -10,7 +11,6 @@ import { ROUTES } from "../routes";
 
 const MIDDLE_ARM_TRAIL_CAMBIE_JOIN = [49.18422, -123.13909];
 const NO_2_BRIDGE_E_SPLIT = [49.17439, -123.15686];
-const NO_2_RIVER_W_N = [49.17398, -123.15888];
 const NO_2_BRIDGE_W_SPLIT = [49.17402, -123.15936];
 
 export const MIDDLE_ARM = [
@@ -99,8 +99,8 @@ export const MIDDLE_ARM = [
       [49.17428, -123.15738],
       NO_2_BRIDGE_E_SPLIT,
       [49.17457, -123.15585],
-      [49.17479, -123.1551],
       [49.17465, -123.1555],
+      [49.17479, -123.1551],
       [49.175, -123.15427],
       [49.17513, -123.15381],
       [49.17523, -123.15359],

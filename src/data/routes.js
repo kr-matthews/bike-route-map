@@ -4,8 +4,8 @@ import { VIDEOS } from "./videos";
 // Burnaby:
 // SFU: gaglardi; parkway; university dr e; university dr w; ...more
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
-// Richmond: lynas*; no. 2 bridge*; west/south dyke; no. 2 path; bridgeport connection; no. 6 paths;
-// YVR: russ baker*; ferguson; numerous paths...
+// Richmond: west dyke; no. 2 path; bridgeport connection; no. 6 paths; south dyke;
+// YVR: main path; ferguson; inglis; other paths...; ...more
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
 // West Vancouver: marine dr; mathers+; old train; hwy; keith;
@@ -547,6 +547,10 @@ export const ROUTES = {
     name: "Lougheed Highway",
     legs: [{ distanceMax: 15.8, distanceMin: 15.1, videos: {} }],
   },
+  lynas: {
+    name: "Lynas Lane",
+    legs: [{ videos: {} }],
+  },
   marineNw: {
     name: "NW Marine",
     legs: [{ distance: 7.1, videos: { eastbound: VIDEOS.nwMarineEb } }],
@@ -627,6 +631,10 @@ export const ROUTES = {
   nicola: {
     name: "Nicola",
     legs: [{ distance: 0.3, videos: { northbound: VIDEOS.nicolaNb } }],
+  },
+  no2: {
+    name: "No. 2 Rd",
+    legs: [{ videos: {} }],
   },
   no3: {
     name: "No. 3 Rd",
@@ -739,6 +747,10 @@ export const ROUTES = {
   rupert: {
     name: "Rupert St",
     legs: [{ distance: 1.8, videos: { northbound: VIDEOS.rupertNb } }],
+  },
+  russBaker: {
+    name: "Russ Baker Way",
+    legs: [{ videos: {} }],
   },
   seaIslandConnector: {
     name: "Sea Island Connector",

@@ -1,6 +1,8 @@
 import {
   MARINE_ARTHUR_LAING_N,
   MARINE_ARTHUR_LAING_S,
+  SEA_ISLAND_CONNECTOR_ARTHUR_LAING_N,
+  SEA_ISLAND_CONNECTOR_ARTHUR_LAING_S,
   SEA_ISLAND_CONNECTOR_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -8,33 +10,18 @@ import { VIDEOS } from "../videos";
 
 const SOUTHBOUND_ELEVATION_START = [49.20434, -123.13851];
 const SOUTHBOUND_ELEVATION_END = [49.19611, -123.13778];
-const SOUTHBOUND_SPLIT = [49.1952, -123.13995];
 
-const NORTHBOUND_MERGE = [49.19501, -123.14];
 const NORTHBOUND_ELEVATION_START = [49.19607, -123.13747];
 const NORTHBOUND_ELEVATION_END = [49.20442, -123.13833];
 
 export const ARTHUR_LAING = [
-  // ends
-  {
-    description: "sb ground cont.",
-    type: "shoulder",
-    oneWay: "required",
-    positions: [SOUTHBOUND_SPLIT, [49.19517, -123.14015]],
-  },
+  // south ends
   {
     description: "sb path split",
     type: "dedicated",
     videoIds: [VIDEOS.arthurLaingSb.id],
     videoIdsEndAtEnd: [VIDEOS.arthurLaingSb.id],
-    positions: [SOUTHBOUND_SPLIT, [49.19548, -123.14004]],
-  },
-  {
-    description: "nb ground pre",
-    type: "shoulder",
-    oneWay: "required",
-    hideArrows: true,
-    positions: [[49.19498, -123.14015], NORTHBOUND_MERGE],
+    positions: [SEA_ISLAND_CONNECTOR_ARTHUR_LAING_N, [49.19548, -123.14004]],
   },
   {
     description: "nb path from connector to bridge",
@@ -55,7 +42,7 @@ export const ARTHUR_LAING = [
       [49.19452, -123.13984],
       [49.19473, -123.1399],
       [49.19495, -123.14004],
-      NORTHBOUND_MERGE,
+      SEA_ISLAND_CONNECTOR_ARTHUR_LAING_S,
     ],
   },
 
@@ -126,7 +113,7 @@ export const ARTHUR_LAING = [
       [49.19559, -123.13867],
       [49.19543, -123.13909],
       [49.19535, -123.13936],
-      SOUTHBOUND_SPLIT,
+      SEA_ISLAND_CONNECTOR_ARTHUR_LAING_N,
     ],
   },
 
@@ -139,7 +126,7 @@ export const ARTHUR_LAING = [
     oneWay: "required",
     videoIds: [VIDEOS.arthurLaingNb.id],
     positions: [
-      NORTHBOUND_MERGE,
+      SEA_ISLAND_CONNECTOR_ARTHUR_LAING_S,
       [49.19505, -123.13977],
       [49.19522, -123.13912],
       [49.19543, -123.13856],

@@ -79,6 +79,7 @@ import { LAKEWOOD } from "./lakewood";
 import { LIONS_GATE_BRIDGE } from "./lionsGateBridge";
 import { LONDON_DUBLIN_GREENWAY } from "./londonDublin";
 import { LOUGHEED } from "./lougheed";
+import { LYNAS } from "./lynas";
 import { MARINE } from "./marine";
 import { MARINE_WAY } from "./marineWay";
 import { MASUMI_MITSUI_GREENWAY } from "./masumiMitsui";
@@ -92,6 +93,7 @@ import { NANAIMO } from "./nanaimo";
 import { NELSON } from "./nelson";
 import { NELSON_AVE } from "./nelsonAve";
 import { NICOLA } from "./nicola";
+import { NO_2 } from "./no2";
 import { NO_3 } from "./no3";
 import { NORTH_SOUTH } from "./northSouth";
 import { OAK_STREET_BRIDGE } from "./oakStBridge";
@@ -116,6 +118,7 @@ import { RIVER_PARKWAY } from "./riverPkwy";
 import { ROYAL_OAK } from "./royalOak";
 import { RUMBLE } from "./rumble";
 import { RUPERT } from "./rupert";
+import { RUSS_BAKER } from "./russBaker";
 import { SEA_ISLAND_CONNECTOR } from "./seaIslandConnector";
 import { SEA_ISLAND_WAY } from "./seaIslandWay";
 import { SEA_TO_RIVER } from "./seaToRiver";
@@ -236,6 +239,7 @@ export const SEGMENTS = [
   ...LIONS_GATE_BRIDGE,
   ...LONDON_DUBLIN_GREENWAY,
   ...LOUGHEED,
+  ...LYNAS,
   ...MARINE,
   ...MARINE_WAY,
   ...MASUMI_MITSUI_GREENWAY,
@@ -249,6 +253,7 @@ export const SEGMENTS = [
   ...NELSON,
   ...NELSON_AVE,
   ...NICOLA,
+  ...NO_2,
   ...NO_3,
   ...NORTH_SOUTH,
   ...OAK_STREET_BRIDGE,
@@ -273,6 +278,7 @@ export const SEGMENTS = [
   ...ROYAL_OAK,
   ...RUMBLE,
   ...RUPERT,
+  ...RUSS_BAKER,
   ...SEA_ISLAND_CONNECTOR,
   ...SEA_ISLAND_WAY,
   ...SEA_TO_RIVER,

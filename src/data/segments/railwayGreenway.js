@@ -7,7 +7,36 @@ import {
 } from "../intersections";
 import { ROUTES } from "../routes";
 
+const MCCALLAN_WESTMINSTER_SW_S = [49.16987, -123.17013];
+const MCCALLAN_WESTMINSTER_NW = [49.17024, -123.17013];
+const MCCALLAN_WESTMINSTER_N = [49.17024, -123.17003];
+const MCCALLAN_WESTMINSTER_NE = [49.17024, -123.16992];
+
 export const RAILWAY_GREENWAY = [
+  {
+    description: "pre-mccallan split",
+    type: "comfortable",
+    positions: [
+      MCCALLAN_WESTMINSTER_SW_S,
+      [49.17006, -123.17013],
+      MCCALLAN_WESTMINSTER_NW,
+    ],
+  },
+  {
+    description: "mccallan",
+    type: "quiet",
+    positions: [MCCALLAN_WESTMINSTER_N, [49.17354, -123.16999]],
+  },
+  {
+    description: "crossing mccallan at westminster",
+    type: "quiet",
+    positions: [
+      MCCALLAN_WESTMINSTER_NW,
+      MCCALLAN_WESTMINSTER_N,
+      MCCALLAN_WESTMINSTER_NE,
+    ],
+  },
+
   {
     routeNames: [ROUTES.railwayGreenway.name],
     description: "primary",
@@ -61,8 +90,9 @@ export const RAILWAY_GREENWAY = [
       [49.16276, -123.17016],
       RAILWAY_GREENWAY_GRANVILLE_S,
       RAILWAY_GREENWAY_GRANVILLE_N,
-      [49.16987, -123.17013],
+      MCCALLAN_WESTMINSTER_SW_S,
       [49.17007, -123.16992],
+      MCCALLAN_WESTMINSTER_NE,
       [49.17345, -123.16988],
       [49.17354, -123.1698],
       [49.17363, -123.1698],
