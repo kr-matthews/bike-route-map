@@ -12,12 +12,14 @@ On GitHub Pages at [https://kr-matthews.github.io/bike-route-map](https://kr-mat
 
 ### Current
 
-- View named bike routes on zoom-able map.
-- Distinguish between types of bike infrastructure (comfortable, painted lane, shared lane with cars, highway shoulder, narrow sidewalk).
+- Map of bike routes in Vancouver and many adjacent regions.
+- Ability to zoom in (unlike many official city PDF maps).
+- See exactly which segments are two-way and which are one-way.
+- Distinguish between types of bike infrastructure (physically separated, quiet street, painted lane, shared lane, highway shoulder).
 - Bridges and tunnels/undercover routes visually distinct.
-- Select a route to see information and embedded YouTube video(s) (if available).
+- Select a route to see information (including distance and proportions of infrastructure), and embedded YouTube video(s) when available.
 - Explanatory legend.
-- Filters (to only show comfortable segments, for example).
+- Filter by infrastructure type (physically separated, painted, etc.) and/or by existence of a video.
 
 ### Potential Future
 
