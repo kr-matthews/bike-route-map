@@ -17,6 +17,15 @@ const TAYLOR_PENDER = [49.28079, -123.10559];
 
 export const PENDER = [
   {
+    description: "brief lane at howe",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      [49.28563, -123.1164],
+      [49.28535, -123.11598],
+    ],
+  },
+  {
     routeNames: [ROUTES.pender.name],
     description: "eb",
     type: "painted",

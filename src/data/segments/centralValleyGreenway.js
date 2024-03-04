@@ -111,6 +111,15 @@ export const CENTRAL_VALLEY_GREENWAY = [
     type: "mixed",
     positions: [GLEN_6TH_S, GLEN_6TH_SE],
   },
+  {
+    description: "commercial left turn",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      [49.26395, -123.06974],
+      [49.2638, -123.06974],
+    ],
+  },
 
   // alternates
   {

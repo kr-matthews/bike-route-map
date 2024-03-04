@@ -20,8 +20,9 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-const CAMBIE_42ND_E = [49.23252, -123.11606];
+const CAMBIE_30TH_SW = [49.24377, -123.11754];
 const CAMBIE_33RD_E = [49.24112, -123.11824];
+const CAMBIE_42ND_E = [49.23252, -123.11606];
 const CAMBIE_58TH_W = [49.21776, -123.11706];
 
 const NB_LANE_START_35TH = [49.23955, -123.11705];
@@ -71,8 +72,37 @@ export const CAMBIE = [
 
   // south vancouver
   {
+    description: "left turn at 29th",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      [49.24535, -123.11573],
+      [49.24526, -123.11558],
+    ],
+  },
+  {
+    description: "crossing cambie at 30th",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [CAMBIE_30TH_SW, [49.2437, -123.11743]],
+  },
+  {
     routeNames: [ROUTES.cambie.name],
-    description: "sb brief lane",
+    description: "sb brief lane 30th to 31st",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      [49.24379, -123.11751],
+      CAMBIE_30TH_SW,
+      [49.24359, -123.11784],
+      [49.24349, -123.11796],
+      [49.24338, -123.11808],
+      [49.24327, -123.11818],
+    ],
+  },
+  {
+    routeNames: [ROUTES.cambie.name],
+    description: "sb brief lane to 34th",
     type: "dedicated",
     oneWay: "required",
     positions: [
