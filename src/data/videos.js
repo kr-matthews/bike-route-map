@@ -321,6 +321,11 @@ const VIDEOS = {
     date: new Date("2023 10 07"),
     minutes: 4,
   },
+  kentWb: {
+    id: "S7VZgDfZ4XU",
+    date: new Date("2024 02 04"),
+    minutes: 22,
+  },
   kerrSb: {
     id: "A_MpEUYNWxE",
     date: new Date("2023 08 26"),

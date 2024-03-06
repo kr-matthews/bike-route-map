@@ -500,7 +500,7 @@ export const ROUTES = {
   },
   kent: {
     name: "Kent",
-    legs: [{ distance: 7.5, videos: {} }],
+    legs: [{ distance: 7.5, videos: { westbound: VIDEOS.kentWb } }],
   },
   kerr: {
     name: "Kerr St",

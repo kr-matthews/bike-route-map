@@ -1,6 +1,5 @@
 import {
   CROMPTON_KENT_N_N,
-  CROMPTON_KENT_N_S,
   INVERNESS_37TH,
   INVERNESS_43RD,
   INVERNESS_45TH,
@@ -22,7 +21,7 @@ export const INVERNESS = [
     description: "crompton",
     type: "quiet",
     videoIds: [VIDEOS.invernessSb.id],
-    positions: [CROMPTON_KENT_N_S, CROMPTON_KENT_N_N, CROMPTON_MARINE_S],
+    positions: [CROMPTON_KENT_N_N, CROMPTON_MARINE_S],
   },
   {
     routeNames: [ROUTES.inverness.name],
