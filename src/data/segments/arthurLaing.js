@@ -1,6 +1,7 @@
 import {
   MARINE_ARTHUR_LAING_N,
   MARINE_ARTHUR_LAING_S,
+  POST_SEA_ISLAND_CONNECTOR,
   SEA_ISLAND_CONNECTOR_ARTHUR_LAING_N,
   SEA_ISLAND_CONNECTOR_ARTHUR_LAING_S,
   SEA_ISLAND_CONNECTOR_W,
@@ -17,13 +18,6 @@ const NORTHBOUND_ELEVATION_END = [49.20442, -123.13833];
 export const ARTHUR_LAING = [
   // south ends
   {
-    description: "sb path split",
-    type: "dedicated",
-    videoIds: [VIDEOS.arthurLaingSb.id],
-    videoIdsEndAtEnd: [VIDEOS.arthurLaingSb.id],
-    positions: [SEA_ISLAND_CONNECTOR_ARTHUR_LAING_N, [49.19548, -123.14004]],
-  },
-  {
     description: "nb path from connector to bridge",
     type: "dedicated",
     videoIds: [VIDEOS.arthurLaingNb.id],
@@ -32,7 +26,7 @@ export const ARTHUR_LAING = [
       SEA_ISLAND_CONNECTOR_W,
       [49.19345, -123.14017],
       [49.19339, -123.14013],
-      [49.19337, -123.14008],
+      POST_SEA_ISLAND_CONNECTOR,
       [49.19348, -123.14013],
       [49.19366, -123.14014],
       [49.19385, -123.14012],

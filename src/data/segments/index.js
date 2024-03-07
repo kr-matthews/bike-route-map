@@ -120,6 +120,7 @@ import { RUMBLE } from "./rumble";
 import { RUPERT } from "./rupert";
 import { RUSS_BAKER } from "./russBaker";
 import { SEA_ISLAND_CONNECTOR } from "./seaIslandConnector";
+import { SEA_ISLAND_PATH } from "./seaIslandPath";
 import { SEA_ISLAND_WAY } from "./seaIslandWay";
 import { SEA_TO_RIVER } from "./seaToRiver";
 import { SEASIDE } from "./seaside";
@@ -280,6 +281,7 @@ export const SEGMENTS = [
   ...RUPERT,
   ...RUSS_BAKER,
   ...SEA_ISLAND_CONNECTOR,
+  ...SEA_ISLAND_PATH,
   ...SEA_ISLAND_WAY,
   ...SEA_TO_RIVER,
   ...SEASIDE,

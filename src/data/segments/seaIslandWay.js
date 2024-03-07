@@ -1,6 +1,7 @@
 import {
   GARDEN_CITY_SEA_ISLAND_SW_SLIP,
   NO_3_SEA_ISLAND_SW_S_PRE,
+  SEA_ISLAND_WAY_POST_BUS_CONNECTION,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -49,7 +50,6 @@ export const SEA_ISLAND_WAY = [
     positions: [NO_3_SEA_ISLAND_SW_SLIP, NO_3_SEA_ISLAND_SW_S_PRE],
   },
   {
-    routeNames: [ROUTES.seaIslandWay.name],
     description: "templeton to miller join",
     type: "shoulder",
     oneWay: "required",
@@ -107,7 +107,7 @@ export const SEA_ISLAND_WAY = [
       [49.19254, -123.14046],
       [49.19251, -123.14022],
       [49.19245, -123.13977],
-      [49.19239, -123.13945],
+      SEA_ISLAND_WAY_POST_BUS_CONNECTION,
       SEA_ISLAND_MOREY_W,
     ],
   },

@@ -5,7 +5,7 @@ import { VIDEOS } from "./videos";
 // SFU: gaglardi; parkway; university dr e; university dr w; ...more
 // UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
 // Richmond: west dyke; no. 2 path; bridgeport connection; no. 6 paths; south dyke;
-// YVR: main path; ferguson; inglis; other paths...; ...more
+// YVR: ferguson; inglis; other paths...; ...more
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
 // West Vancouver: marine dr; mathers+; old train; hwy; keith;
@@ -759,6 +759,10 @@ export const ROUTES = {
     legs: [
       { distance: 0.8, videos: { westbound: VIDEOS.seaIslandConnectorWb } },
     ],
+  },
+  seaIslandPath: {
+    name: "Sea Island Path",
+    legs: [{ videos: {} }],
   },
   seaIslandWay: {
     name: "Sea Island Way",
