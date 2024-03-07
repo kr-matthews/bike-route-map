@@ -94,6 +94,7 @@ import { NELSON } from "./nelson";
 import { NELSON_AVE } from "./nelsonAve";
 import { NICOLA } from "./nicola";
 import { NO_2 } from "./no2";
+import { NO_2_BRIDGE } from "./no2Bridge";
 import { NO_3 } from "./no3";
 import { NORTH_SOUTH } from "./northSouth";
 import { OAK_STREET_BRIDGE } from "./oakStBridge";
@@ -156,6 +157,8 @@ import { WINDSOR } from "./windsor";
 import { WOODWARDS_SAUNDERS } from "./woodwardsSaunders";
 import { YORK } from "./york";
 import { YUKON } from "./yukon";
+
+// !! reorder to make 'better' routes on top? such as sea island path/russ baker way
 
 // convention: bi-directional paths are stored northbound, eastbound, or clockwise
 export const SEGMENTS = [
@@ -255,6 +258,7 @@ export const SEGMENTS = [
   ...NELSON_AVE,
   ...NICOLA,
   ...NO_2,
+  ...NO_2_BRIDGE,
   ...NO_3,
   ...NORTH_SOUTH,
   ...OAK_STREET_BRIDGE,

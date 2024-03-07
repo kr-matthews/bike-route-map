@@ -1,6 +1,7 @@
 import {
   LYNAS_DOVER_N,
   LYNAS_DOVER_S,
+  NO_2_RIVER_E_E,
   NO_2_RIVER_W_N,
   NO_2_RUSS_BAKER_E,
   NO_2_RUSS_BAKER_W,
@@ -113,7 +114,7 @@ export const NO_2 = [
     positions: [
       RIVER_RIVER_W,
       [49.17226, -123.15748],
-      [49.17226, -123.15857],
+      NO_2_RIVER_E_E,
       NO_2_RIVER_E,
     ],
   },

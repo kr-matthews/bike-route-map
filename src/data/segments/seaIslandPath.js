@@ -1,5 +1,6 @@
 import {
   GRANT_MCCONACHIE_REJOIN,
+  NO_2_BRIDGE_SIDEWALK_NE,
   NO_2_RUSS_BAKER_E,
   NO_2_RUSS_BAKER_W,
   POST_SEA_ISLAND_CONNECTOR,
@@ -9,7 +10,6 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-const NO_2_BRIDGE_SIDEWALK_NE = [49.17826, -123.15508];
 const SEA_ISLAND_PATH_PRE_NO_2_W = [49.17875, -123.1551];
 const LARRY_BERG_PARK_SPLIT = [49.1847, -123.15035];
 const MILLER_PUMP_SPLIT = [49.19219, -123.1393];

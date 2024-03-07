@@ -636,6 +636,10 @@ export const ROUTES = {
     name: "No. 2 Rd",
     legs: [{ videos: {} }],
   },
+  no2Bridge: {
+    name: "No. 2 Rd Bridge",
+    legs: [{ videos: {} }],
+  },
   no3: {
     name: "No. 3 Rd",
     legs: [{ distanceMax: 2.9, videos: { northbound: VIDEOS.no3Nb } }],
