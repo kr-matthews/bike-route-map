@@ -148,6 +148,7 @@ import { VICTORY } from "./victory";
 import { WALES_DUCHESS } from "./walesDuchess";
 import { WATERFRONT } from "./waterfront";
 import { WESBROOK } from "./wesbrook";
+import { WEST_DYKE } from "./westDyke";
 import { WESTMINSTER_HWY } from "./westminsterHwy";
 import { WILLIAMS } from "./williams";
 import { WILLINGDON } from "./willingdon";
@@ -312,6 +313,7 @@ export const SEGMENTS = [
   ...WALES_DUCHESS,
   ...WATERFRONT,
   ...WESBROOK,
+  ...WEST_DYKE,
   ...WESTMINSTER_HWY,
   ...WILLIAMS,
   ...WILLINGDON,
