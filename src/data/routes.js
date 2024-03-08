@@ -21,7 +21,12 @@ export const ROUTES = {
   },
   fourth: {
     name: "4th",
-    legs: [{ distance: 2.8, videos: { eastbound: VIDEOS.fourthEb } }],
+    legs: [
+      {
+        distance: 2.8,
+        videos: { eastbound: VIDEOS.fourthEb, westbound: VIDEOS.fourthWb },
+      },
+    ],
   },
   tenth: {
     name: "10th",
@@ -38,7 +43,15 @@ export const ROUTES = {
   },
   sixteenth: {
     name: "16th Ave",
-    legs: [{ distance: 2.5, videos: { westbound: VIDEOS.sixteenthWb } }],
+    legs: [
+      {
+        distance: 2.5,
+        videos: {
+          eastbound: VIDEOS.sixteenthEb,
+          westbound: VIDEOS.sixteenthWb,
+        },
+      },
+    ],
   },
   twentySecond: {
     name: "22nd Ave",
@@ -171,7 +184,12 @@ export const ROUTES = {
   },
   blanca: {
     name: "Blanca St",
-    legs: [{ distance: 1.2, videos: { southbound: VIDEOS.blancaSb } }],
+    legs: [
+      {
+        distance: 1.2,
+        videos: { northbound: VIDEOS.blancaNb, southbound: VIDEOS.blancaSb },
+      },
+    ],
   },
   boundary: {
     name: "Boundary Trail",
@@ -891,7 +909,7 @@ export const ROUTES = {
   },
   wesbrook: {
     name: "Wesbrook Mall",
-    legs: [{ distance: 3.4, videos: {} }],
+    legs: [{ distance: 3.4, videos: { southbound: VIDEOS.wesbrookSb } }],
   },
   westminsterHwy: {
     name: "Westminster Highway",

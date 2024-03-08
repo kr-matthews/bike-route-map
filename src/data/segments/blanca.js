@@ -23,6 +23,9 @@ export const BLANCA = [
     description: "northbound",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.blancaNb.id],
+    videoIdsStartAtStart: [VIDEOS.blancaNb.id],
+    videoIdsEndAtEnd: [VIDEOS.blancaNb.id],
     positions: [
       // BLANCA_16TH_SE,
       BLANCA_16TH_NE,
@@ -32,8 +35,14 @@ export const BLANCA = [
       BLANCA_8TH_E,
       [49.26738, -123.21503],
       BLANCA_4TH_SE,
-      BLANCA_4TH_N,
     ],
+  },
+  {
+    routeNames: [ROUTES.blanca.name],
+    description: "nb crossing 4th",
+    type: "shared",
+    oneWay: "required",
+    positions: [BLANCA_4TH_SE, BLANCA_4TH_N],
   },
   {
     routeNames: [ROUTES.blanca.name],

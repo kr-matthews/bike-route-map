@@ -10,6 +10,7 @@ import {
   WESBROOK_CHANCELLOR_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const WESBROOK_CHANCELLOR_ES = [49.27315, -123.24832];
 const WESBROOK_CHANCELLOR_WS = [49.27301, -123.24909];
@@ -27,8 +28,10 @@ export const CHANCELLOR = [
   {
     description: "crossing at wesbrook sb",
     oneWay: "recommended",
+    videoIds: [VIDEOS.wesbrookSb.id],
     positions: [WESBROOK_CHANCELLOR_WN, WESBROOK_CHANCELLOR_WS],
   },
+
   {
     routeNames: [ROUTES.chancellor.name],
     description: "middle shared path",
@@ -127,12 +130,22 @@ export const CHANCELLOR = [
   },
   {
     routeNames: [ROUTES.chancellor.name],
-    description: "eb: wesbrook",
+    description: "eb: wesbrook 1",
     type: "comfortable",
     oneWay: "required",
+    videoIds: [VIDEOS.wesbrookSb.id],
     positions: [
       WESBROOK_CHANCELLOR_WS,
       [49.27301, -123.24893],
+      WESBROOK_CHANCELLOR_SW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.chancellor.name],
+    description: "eb: wesbrook 2",
+    type: "comfortable",
+    oneWay: "required",
+    positions: [
       WESBROOK_CHANCELLOR_SW,
       WESBROOK_CHANCELLOR_SE,
       [49.27303, -123.24865],
@@ -180,6 +193,8 @@ export const CHANCELLOR = [
     description: "wb: wesbrook",
     type: "comfortable",
     oneWay: "required",
+    videoIds: [VIDEOS.wesbrookSb.id],
+    videoIdsStartAtStart: [VIDEOS.wesbrookSb.id],
     positions: [
       WESBROOK_CHANCELLOR_EN,
       [49.27332, -123.24852],

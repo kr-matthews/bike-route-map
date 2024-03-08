@@ -45,6 +45,8 @@ export const SIXTEENTH = [
     description: "eb: initial shoulder",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.sixteenthEb.id],
+    videoIdsStartAtStart: [VIDEOS.sixteenthEb.id],
     positions: [
       MARINE_16TH_SSE,
       [49.25152, -123.24549],
@@ -65,6 +67,7 @@ export const SIXTEENTH = [
     description: "eb: after shoulder",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.sixteenthEb.id],
     positions: [SHOULDER_END, EB_BEFORE_EAST_MALL],
   },
   {
@@ -72,6 +75,7 @@ export const SIXTEENTH = [
     description: "eb: crossing east mall",
     type: "mixed",
     oneWay: "required",
+    videoIds: [VIDEOS.sixteenthEb.id],
     positions: [
       EB_BEFORE_EAST_MALL,
       [49.25369, -123.24185],
@@ -94,6 +98,7 @@ export const SIXTEENTH = [
     description: "eb: east mall to wesbrook",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.sixteenthEb.id],
     positions: [EB_AFTER_EAST_MALL, [49.25481, -123.2387], EB_BEFORE_WESBROOK],
   },
   {
@@ -101,6 +106,7 @@ export const SIXTEENTH = [
     description: "eb: before wesbrook",
     type: "mixed",
     oneWay: "required",
+    videoIds: [VIDEOS.sixteenthEb.id],
     positions: [EB_BEFORE_WESBROOK, [49.25539, -123.23695], WESBROOK_16TH_WS],
   },
   {
@@ -108,6 +114,7 @@ export const SIXTEENTH = [
     description: "eb: wesbrook SW",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [VIDEOS.sixteenthEb.id, VIDEOS.wesbrookSb.id],
     positions: [WESBROOK_16TH_WS, WESBROOK_16TH_SW],
   },
   {
@@ -115,6 +122,7 @@ export const SIXTEENTH = [
     description: "eb: crossing wesbrook",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [VIDEOS.sixteenthEb.id],
     positions: [WESBROOK_16TH_SW, WESBROOK_16TH_SE],
   },
   {
@@ -122,6 +130,7 @@ export const SIXTEENTH = [
     description: "eb: wesbrook SE",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [VIDEOS.sixteenthEb.id],
     positions: [
       WESBROOK_16TH_SE,
       [49.25559, -123.23591],
@@ -134,6 +143,7 @@ export const SIXTEENTH = [
     description: "eb: after wesbrook",
     type: "mixed",
     oneWay: "required",
+    videoIds: [VIDEOS.sixteenthEb.id],
     positions: [WESBROOK_16TH_ES, EB_AFTER_WESBROOK],
   },
   {
@@ -141,6 +151,8 @@ export const SIXTEENTH = [
     description: "eb: wesbrook to blanca",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.sixteenthEb.id],
+    videoIdsEndAtEnd: [VIDEOS.sixteenthEb.id],
     positions: [
       EB_AFTER_WESBROOK,
       [49.25633, -123.23432],
@@ -240,7 +252,7 @@ export const SIXTEENTH = [
     description: "wb: wesbrook NW",
     type: "mixed",
     oneWay: "recommended",
-    videoIds: [VIDEOS.sixteenthWb.id],
+    videoIds: [VIDEOS.sixteenthWb.id, VIDEOS.wesbrookSb.id],
     positions: [
       WESBROOK_16TH_NW,
       [49.25591, -123.23679],

@@ -18,6 +18,7 @@ import {
   WESBROOK_UNIVERSITY_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const WESBROOK_MARINE_POST_SLIP = [49.24514, -123.23341];
 const ROUNDABOUT_S = [49.24698, -123.2319];
@@ -40,19 +41,21 @@ const SB_BEFORE_16TH = [49.25618, -123.23686];
 export const WESBROOK = [
   {
     description: "from marine wb",
-    type: "quiet",
+    type: "shared",
     oneWay: "required",
     positions: [WESBROOK_MARINE_PRE_SLIP, WESBROOK_MARINE_POST_SLIP],
   },
   {
     description: "crossing marine",
-    type: "quiet",
+    type: "shared",
     positions: [WESBROOK_MARINE_S, WESBROOK_MARINE_N],
   },
   {
     routeNames: [ROUTES.wesbrook.name],
     description: "marine to roundabout",
-    type: "quiet",
+    type: "shared",
+    videoIds: [VIDEOS.wesbrookSb.id],
+    videoIdsEndAtStart: [VIDEOS.wesbrookSb.id],
     positions: [
       WESBROOK_MARINE_N,
       WESBROOK_MARINE_POST_SLIP,
@@ -63,7 +66,7 @@ export const WESBROOK = [
   {
     routeNames: [ROUTES.wesbrook.name],
     description: "roundabout east",
-    type: "quiet",
+    type: "shared",
     oneWay: "required",
     positions: [
       ROUNDABOUT_S,
@@ -81,8 +84,9 @@ export const WESBROOK = [
   {
     routeNames: [ROUTES.wesbrook.name],
     description: "roundabout west",
-    type: "quiet",
+    type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.wesbrookSb.id],
     positions: [
       ROUNDABOUT_N,
       [49.24737, -123.23188],
@@ -99,7 +103,8 @@ export const WESBROOK = [
   {
     routeNames: [ROUTES.wesbrook.name],
     description: "roundabout to berton",
-    type: "quiet",
+    type: "shared",
+    videoIds: [VIDEOS.wesbrookSb.id],
     positions: [
       ROUNDABOUT_N,
       [49.24829, -123.23179],
@@ -119,7 +124,7 @@ export const WESBROOK = [
   {
     routeNames: [ROUTES.wesbrook.name],
     description: "berton to 16th",
-    type: "quiet",
+    type: "shared",
     oneWay: "required",
     positions: [
       WESBROOK_BERTON,
@@ -132,8 +137,9 @@ export const WESBROOK = [
   {
     routeNames: [ROUTES.wesbrook.name],
     description: "16th to berton",
-    type: "quiet",
+    type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.wesbrookSb.id],
     positions: [
       WESBROOK_16TH_SW,
       [49.25537, -123.23619],
@@ -154,6 +160,7 @@ export const WESBROOK = [
     description: "crossing 16th sb",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [VIDEOS.wesbrookSb.id],
     positions: [WESBROOK_16TH_WN, [49.25563, -123.23681], WESBROOK_16TH_WS],
   },
   {
@@ -260,6 +267,7 @@ export const WESBROOK = [
     description: "chancellor to student union-ish",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.wesbrookSb.id],
     positions: [
       WESBROOK_CHANCELLOR_SW,
       [49.27286, -123.24874],
@@ -277,6 +285,7 @@ export const WESBROOK = [
     description: "student union-ish to bus loop",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.wesbrookSb.id],
     positions: [
       SB_AFTER_STUDENT_UNION,
       [49.26865, -123.24738],
@@ -289,6 +298,7 @@ export const WESBROOK = [
     description: "bus loop to university-ish",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.wesbrookSb.id],
     positions: [
       SB_BEFORE_BUS_LOOP,
       [49.26759, -123.24665],
@@ -304,6 +314,7 @@ export const WESBROOK = [
     description: "university-ish to thunderbird",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.wesbrookSb.id],
     positions: [
       SB_AFTER_UNIVERSITY,
       [49.26583, -123.24526],
@@ -329,6 +340,7 @@ export const WESBROOK = [
     description: "thunderbird to 16th",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.wesbrookSb.id],
     positions: [
       WESBROOK_THUNDERBIRD_NW,
       [49.26148, -123.24156],
@@ -345,6 +357,7 @@ export const WESBROOK = [
     description: "sb: before 16th",
     type: "mixed",
     oneWay: "required",
+    videoIds: [VIDEOS.wesbrookSb.id],
     positions: [SB_BEFORE_16TH, [49.25608, -123.23683], WESBROOK_16TH_NW],
   },
 ];

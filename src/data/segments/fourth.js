@@ -32,8 +32,9 @@ export const FOURTH = [
     routeNames: [ROUTES.fourth.name],
     description: "connection between chancellor and 4th",
     type: "mixed",
-    videoIds: [VIDEOS.fourthEb.id],
+    videoIds: [VIDEOS.fourthEb.id, VIDEOS.fourthWb.id],
     videoIdsStartAtStart: [VIDEOS.fourthEb.id],
+    videoIdsEndAtStart: [VIDEOS.fourthWb.id],
     positions: [CHANCELLOR_4TH, CHANCELLOR_4TH_S],
   },
   {
@@ -138,7 +139,7 @@ export const FOURTH = [
   },
   {
     routeNames: [ROUTES.fourth.name, ROUTES.seasideBypass.name],
-    description: "eb to wallace",
+    description: "eb: marine to wallace",
     type: "painted",
     oneWay: "required",
     videoIds: [VIDEOS.fourthEb.id, VIDEOS.seasideBypassMarine4thEb.id],
@@ -151,7 +152,7 @@ export const FOURTH = [
   },
   {
     routeNames: [ROUTES.fourth.name],
-    description: "wallace to highbury",
+    description: "eb: wallace to highbury",
     type: "painted",
     oneWay: "required",
     videoIds: [VIDEOS.fourthEb.id],
@@ -162,16 +163,19 @@ export const FOURTH = [
   // wb
   {
     routeNames: [ROUTES.fourth.name],
-    description: "highbury to wallace",
+    description: "wb: highbury to wallace",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.fourthWb.id],
+    videoIdsStartAtStart: [VIDEOS.fourthWb.id],
     positions: [HIGHBURY_4TH_N, [49.26873, -123.18874], WALLACE_4TH_N],
   },
   {
     routeNames: [ROUTES.fourth.name, ROUTES.seasideBypass.name],
-    description: "wb wallace to before marine",
+    description: "wb: wallace to before marine",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.fourthWb.id],
     positions: [WALLACE_4TH_N, [49.26882, -123.19343], WB_BEFORE_MARINE],
   },
   {
@@ -179,6 +183,7 @@ export const FOURTH = [
     description: "wb before marine",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.fourthWb.id],
     positions: [
       WB_BEFORE_MARINE,
       [49.26891, -123.19908],
@@ -191,6 +196,7 @@ export const FOURTH = [
     description: "wb: crossing marine",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.fourthWb.id],
     positions: [
       MARINE_4TH_NE,
       [49.26878, -123.20003],
@@ -203,6 +209,7 @@ export const FOURTH = [
     description: "wb: marine to drummond",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.fourthWb.id],
     positions: [
       WB_AFTER_MARINE,
       [49.26836, -123.20133],
@@ -233,6 +240,7 @@ export const FOURTH = [
     description: "wb: drummond and beyond",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.fourthWb.id],
     positions: [
       DRUMMOND_4TH_N,
       [49.26883, -123.22142],

@@ -84,6 +84,11 @@ const VIDEOS = {
     date: new Date("2023 10 01"),
     minutes: 5,
   },
+  blancaNb: {
+    id: "eIDCFw23nHo",
+    date: new Date("2024 03 06"),
+    minutes: 3,
+  },
   blancaSb: {
     id: "EN5H_jnfnDo",
     date: new Date("2024 02 23"),
@@ -230,6 +235,11 @@ const VIDEOS = {
     id: "19BLtcs-t7U",
     date: new Date("2023 06 07"),
     minutes: 5,
+  },
+  fourthWb: {
+    id: "bqaBcFmC218",
+    date: new Date("2024 03 06"),
+    minutes: 9,
   },
   fraserRiverFraserviewEb: {
     id: "Ak5JhRWDMKw",
@@ -528,6 +538,11 @@ const VIDEOS = {
     date: new Date("2023 12 23"),
     minutes: 40,
   },
+  sixteenthEb: {
+    id: "cVULSdbSeH0",
+    date: new Date("2024 03 06"),
+    minutes: 7,
+  },
   sixteenthWb: {
     id: "i1txRJ1f01s",
     date: new Date("2024 02 23"),
@@ -612,6 +627,11 @@ const VIDEOS = {
     id: "TUIhsGIyJdI",
     date: new Date("2023 10 22"),
     minutes: 5,
+  },
+  wesbrookSb: {
+    id: "rh6b_Nk9q-4",
+    date: new Date("2024 03 06"),
+    minutes: 11,
   },
   willingdonSb: {
     id: "s58YehJpLE4",
