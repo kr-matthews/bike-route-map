@@ -1,5 +1,6 @@
 import {
   GILBERT_LANSDOWNE_NE,
+  GILBERT_LANSDOWNE_NW,
   MINORU_GRANVILLE_NE,
   MINORU_GRANVILLE_NW,
   NO_3_ACKROYD_W,
@@ -9,6 +10,7 @@ import { ROUTES } from "../routes";
 const MINORU_ACKROYD_SE = [49.1719, -123.14008];
 const MINORU_ACKROYD_E = [49.17202, -123.1401];
 const NB_POST_ACKROYD = [49.17269, -123.14012];
+const MINORU_LANSDOWNE_NE = [49.17397, -123.1401];
 const MINORU_LANSDOWNE_NW = [49.17398, -123.14028];
 const SB_PRE_ELMBRIDGE = [49.17286, -123.1403];
 const MINORU_ELMBRIDGE_SW = [49.17192, -123.14035];
@@ -28,6 +30,7 @@ export const MINORU = [
     description: "lansdowne path",
     type: "mixed",
     positions: [
+      GILBERT_LANSDOWNE_NW,
       GILBERT_LANSDOWNE_NE,
       [49.17396, -123.14523],
       [49.17396, -123.14509],
@@ -43,6 +46,7 @@ export const MINORU = [
       [49.17393, -123.14211],
       [49.17394, -123.14041],
       MINORU_LANSDOWNE_NW,
+      MINORU_LANSDOWNE_NE,
     ],
   },
   {
@@ -106,7 +110,7 @@ export const MINORU = [
     oneWay: "required",
     positions: [
       NB_POST_ACKROYD,
-      [49.17397, -123.1401],
+      MINORU_LANSDOWNE_NE,
       [49.17566, -123.14008],
       [49.17585, -123.14011],
       [49.17599, -123.14016],
