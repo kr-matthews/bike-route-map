@@ -3,7 +3,7 @@ import { VIDEOS } from "./videos";
 // Potential future additions
 // Burnaby:
 // SFU: gaglardi; parkway; university dr e; university dr w; ...more
-// UBC: east mall; west mall; imperial trail; acadia; stadium; toronto/agronomy; thunderbird; osoyoos+
+// UBC: stadium; west mall (univ connection); agronomy/toronto; thunderbird?; acadia?; osoyoos+?; imperial trail
 // Richmond: no. 2 path; bridgeport connection; no. 6 paths; south dyke;
 // YVR: ferguson; inglis; other paths...; ...more
 // New Westminster:
@@ -379,6 +379,10 @@ export const ROUTES = {
   dunsmuir: {
     name: "Dunsmuir",
     legs: [{ distance: 1.6, videos: {} }],
+  },
+  eastMall: {
+    name: "East Mall",
+    legs: [{ videos: {} }],
   },
   ewen: {
     name: "Ewen Ave Greenway",

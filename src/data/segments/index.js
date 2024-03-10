@@ -44,6 +44,7 @@ import { DEER_LAKE_PARKWAY } from "./deerLakeParkway";
 import { DUMFRIES } from "./dumfries";
 import { DUNBAR } from "./dunbar";
 import { DUNSMUIR } from "./dunsmuir";
+import { EAST_MALL } from "./eastMall";
 import { EWEN } from "./ewen";
 import { FORTY_FIFTH } from "./fortyFifth";
 import { FOURTEENTH } from "./fourteenth";
@@ -209,6 +210,7 @@ export const SEGMENTS = [
   ...DUMFRIES,
   ...DUNBAR,
   ...DUNSMUIR,
+  ...EAST_MALL,
   ...EWEN,
   ...FORTY_FIFTH,
   ...FOURTEENTH,

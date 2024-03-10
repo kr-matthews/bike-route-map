@@ -1,5 +1,13 @@
 import {
   BLANCA_16TH_NW_SLIP,
+  EAST_MALL_16TH_EN,
+  EAST_MALL_16TH_ES,
+  EAST_MALL_16TH_NE,
+  EAST_MALL_16TH_NW,
+  EAST_MALL_16TH_SE,
+  EAST_MALL_16TH_SW,
+  EAST_MALL_16TH_WN,
+  EAST_MALL_16TH_WS,
   MARINE_16TH_NNE,
   MARINE_16TH_SSE,
   WESBROOK_16TH_EN,
@@ -28,6 +36,8 @@ const WB_AFTER_EAST_MALL = [49.25393, -123.24207];
 const SHOULDER_START = [49.25373, -123.24262];
 const MARINE_SPLIT = [49.25253, -123.24604];
 
+const BINNING_16TH_S = [49.25731, -123.23161];
+
 export const SIXTEENTH = [
   // {
   //   routeNames: [ROUTES.sixteenth.name],
@@ -38,6 +48,22 @@ export const SIXTEENTH = [
   //     //
   //   ],
   // },
+  {
+    description: "from binning",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      [49.2565, -123.23133],
+      [49.25657, -123.23137],
+      [49.25665, -123.23144],
+      [49.25671, -123.2315],
+      [49.25681, -123.23156],
+      [49.25694, -123.2316],
+      [49.25712, -123.23162],
+      [49.25723, -123.23163],
+      BINNING_16TH_S,
+    ],
+  },
 
   // eb
   {
@@ -72,7 +98,7 @@ export const SIXTEENTH = [
   },
   {
     routeNames: [ROUTES.sixteenth.name],
-    description: "eb: crossing east mall",
+    description: "eb: pre-east mall",
     type: "mixed",
     oneWay: "required",
     videoIds: [VIDEOS.sixteenthEb.id],
@@ -81,17 +107,45 @@ export const SIXTEENTH = [
       [49.25369, -123.24185],
       [49.25383, -123.24165],
       [49.25387, -123.2415],
-      [49.25387, -123.24145],
+      EAST_MALL_16TH_WS,
+    ],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "eb: east mall SW",
+    type: "mixed",
+    oneWay: "recommended",
+    videoIds: [VIDEOS.sixteenthEb.id],
+    positions: [
+      EAST_MALL_16TH_WS,
       [49.25388, -123.24125],
       [49.25385, -123.24111],
-      [49.25381, -123.24103], // EAST_MALL_16TH_SW
-      [49.25389, -123.24086],
-      [49.25393, -123.24068], // EAST_MALL_16TH_SE
-      [49.25403, -123.24066],
-      [49.25411, -123.24055], // EAST_MALL_16TH_ES
-      [49.25428, -123.24007],
-      EB_AFTER_EAST_MALL,
+      EAST_MALL_16TH_SW,
     ],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "eb: crossing east mall",
+    type: "mixed",
+    oneWay: "recommended",
+    videoIds: [VIDEOS.sixteenthEb.id],
+    positions: [EAST_MALL_16TH_SW, [49.25389, -123.24086], EAST_MALL_16TH_SE],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "eb: east mall SE",
+    type: "mixed",
+    oneWay: "recommended",
+    videoIds: [VIDEOS.sixteenthEb.id],
+    positions: [EAST_MALL_16TH_SE, [49.25403, -123.24066], EAST_MALL_16TH_ES],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "eb: post-east mall",
+    type: "mixed",
+    oneWay: "required",
+    videoIds: [VIDEOS.sixteenthEb.id],
+    positions: [EAST_MALL_16TH_ES, [49.25428, -123.24007], EB_AFTER_EAST_MALL],
   },
   {
     routeNames: [ROUTES.sixteenth.name],
@@ -157,7 +211,7 @@ export const SIXTEENTH = [
       EB_AFTER_WESBROOK,
       [49.25633, -123.23432],
       [49.25692, -123.23268],
-      [49.25731, -123.23161], // BINNING
+      BINNING_16TH_S,
       [49.25756, -123.23073],
       [49.25774, -123.23005],
       [49.2579, -123.22933],
@@ -278,7 +332,7 @@ export const SIXTEENTH = [
   },
   {
     routeNames: [ROUTES.sixteenth.name],
-    description: "wb: crossing east mall",
+    description: "wb: pre-east mall",
     type: "mixed",
     oneWay: "required",
     videoIds: [VIDEOS.sixteenthWb.id],
@@ -286,13 +340,41 @@ export const SIXTEENTH = [
       WB_BEFORE_EAST_MALL,
       [49.25452, -123.24031],
       [49.25443, -123.24053],
-      [49.25442, -123.24069], // EAST_MALL_16TH_EN
-      [49.25446, -123.24096],
-      [49.25453, -123.24114], // EAST_MALL_16TH_NE
-      [49.25444, -123.24132],
-      [49.25443, -123.24154], // EAST_MALL_16TH_NW
-      [49.25429, -123.24156],
-      [49.2542, -123.24164], // EAST_MALL_16TH_WN
+      EAST_MALL_16TH_EN,
+    ],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "wb: east mall NE",
+    type: "mixed",
+    oneWay: "recommended",
+    videoIds: [VIDEOS.sixteenthWb.id],
+    positions: [EAST_MALL_16TH_EN, [49.25446, -123.24096], EAST_MALL_16TH_NE],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "wb: crossing east mall",
+    type: "mixed",
+    oneWay: "recommended",
+    videoIds: [VIDEOS.sixteenthWb.id],
+    positions: [EAST_MALL_16TH_NE, [49.25444, -123.24132], EAST_MALL_16TH_NW],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "wb: east mall NW",
+    type: "mixed",
+    oneWay: "recommended",
+    videoIds: [VIDEOS.sixteenthWb.id],
+    positions: [EAST_MALL_16TH_NW, [49.25429, -123.24156], EAST_MALL_16TH_WN],
+  },
+  {
+    routeNames: [ROUTES.sixteenth.name],
+    description: "wb: post-east mall",
+    type: "mixed",
+    oneWay: "required",
+    videoIds: [VIDEOS.sixteenthWb.id],
+    positions: [
+      EAST_MALL_16TH_WN,
       [49.25409, -123.2418],
       [49.25399, -123.24205],
       WB_AFTER_EAST_MALL,

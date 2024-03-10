@@ -21,7 +21,7 @@ import {
   MARINE_70TH_S,
   MARINE_ARTHUR_LAING_N,
   MARINE_ARTHUR_LAING_S,
-  MARINE_CHANCELLOR_N,
+  MARINE_CHANCELLOR_NE,
   MARINE_CHANCELLOR_SE,
   MARINE_SEAWALL,
   MARINE_SEAWALL_CONNECTION_1,
@@ -31,6 +31,8 @@ import {
   WESBROOK_MARINE_N,
   WESBROOK_MARINE_PRE_SLIP,
   WESBROOK_MARINE_S,
+  MARINE_CHANCELLOR_SW,
+  MARINE_CHANCELLOR_NW,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -601,7 +603,7 @@ export const MARINE = [
       [49.26956, -123.25701],
       [49.26985, -123.25645],
       [49.27061, -123.2549],
-      [49.27093, -123.25425],
+      MARINE_CHANCELLOR_SW,
       MARINE_CHANCELLOR_SE,
     ],
   },
@@ -611,8 +613,8 @@ export const MARINE = [
     type: "painted",
     oneWay: "required",
     positions: [
-      MARINE_CHANCELLOR_N,
-      [49.27111, -123.25427],
+      MARINE_CHANCELLOR_NE,
+      MARINE_CHANCELLOR_NW,
       [49.271, -123.2544],
       [49.27067, -123.25504],
       BEYOND_CECIL_GREEN_PARK,
@@ -639,7 +641,7 @@ export const MARINE = [
     description: "crossing chancellor",
     type: "shared",
     videoIds: [VIDEOS.nwMarineEb.id],
-    positions: [MARINE_CHANCELLOR_SE, MARINE_CHANCELLOR_N],
+    positions: [MARINE_CHANCELLOR_SE, MARINE_CHANCELLOR_NE],
   },
   {
     routeNames: [ROUTES.marineNw.name],
@@ -647,7 +649,7 @@ export const MARINE = [
     type: "shared",
     videoIds: [VIDEOS.nwMarineEb.id],
     positions: [
-      MARINE_CHANCELLOR_N,
+      MARINE_CHANCELLOR_NE,
       [49.27167, -123.25408],
       [49.27265, -123.25422],
       [49.27279, -123.25424],

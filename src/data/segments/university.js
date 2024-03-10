@@ -2,6 +2,7 @@ import {
   BLANCA_10TH_E,
   BLANCA_10TH_NW,
   BLANCA_10TH_SW,
+  EAST_MALL_UNIVERSITY,
   WESBROOK_UNIVERSITY_NE,
   WESBROOK_UNIVERSITY_NW,
   WESBROOK_UNIVERSITY_SE,
@@ -9,7 +10,15 @@ import {
 } from "../intersections";
 import { ROUTES } from "../routes";
 
+const BUS_LOOP_W = [49.26583, -123.24945];
+
 export const UNIVERSITY = [
+  {
+    description: "connection to east mall",
+    type: "mixed",
+    positions: [EAST_MALL_UNIVERSITY, BUS_LOOP_W],
+  },
+
   {
     routeNames: [ROUTES.university.name],
     description: "wb",
@@ -57,7 +66,7 @@ export const UNIVERSITY = [
       [49.26611, -123.24734],
       [49.26592, -123.24866],
       [49.26587, -123.24937],
-      [49.26582, -123.24945],
+      BUS_LOOP_W,
       [49.26576, -123.24944],
       [49.26571, -123.24939],
       [49.26569, -123.2493],
