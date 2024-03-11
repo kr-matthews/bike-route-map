@@ -3,7 +3,7 @@ import { VIDEOS } from "./videos";
 // Potential future additions
 // Burnaby:
 // SFU: gaglardi; parkway; university dr e; university dr w; ...more
-// UBC: stadium; west mall (univ connection); agronomy/toronto; thunderbird?; acadia?; osoyoos+?; imperial trail
+// UBC: agronomy (west to wesb); thunderbird/osoyoos (east-ish to acadia); imperial trail; (acadia/toronto? - no indication)
 // Richmond: no. 2 path; bridgeport connection; no. 6 paths; south dyke;
 // YVR: ferguson; inglis; other paths...; ...more
 // New Westminster:
@@ -917,6 +917,10 @@ export const ROUTES = {
   },
   westDyke: {
     name: "West Dyke Trail",
+    legs: [{ videos: {} }],
+  },
+  westMall: {
+    name: "West Mall",
     legs: [{ videos: {} }],
   },
   westminsterHwy: {

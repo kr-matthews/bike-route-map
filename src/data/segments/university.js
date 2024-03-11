@@ -3,6 +3,8 @@ import {
   BLANCA_10TH_NW,
   BLANCA_10TH_SW,
   EAST_MALL_UNIVERSITY,
+  MARINE_UNIVERSITY_N,
+  MARINE_UNIVERSITY_S,
   WESBROOK_UNIVERSITY_NE,
   WESBROOK_UNIVERSITY_NW,
   WESBROOK_UNIVERSITY_SE,
@@ -17,6 +19,18 @@ export const UNIVERSITY = [
     description: "connection to east mall",
     type: "mixed",
     positions: [EAST_MALL_UNIVERSITY, BUS_LOOP_W],
+  },
+  {
+    description: "to marine",
+    type: "painted",
+    oneWay: "required",
+    positions: [[49.26342, -123.25649], MARINE_UNIVERSITY_N],
+  },
+  {
+    description: "from marine",
+    type: "painted",
+    oneWay: "required",
+    positions: [MARINE_UNIVERSITY_S, [49.26338, -123.25645]],
   },
 
   {

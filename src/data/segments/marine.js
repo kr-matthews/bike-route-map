@@ -33,6 +33,12 @@ import {
   WESBROOK_MARINE_S,
   MARINE_CHANCELLOR_SW,
   MARINE_CHANCELLOR_NW,
+  MARINE_STADIUM_SE,
+  MARINE_STADIUM_NE,
+  WEST_MALL_MARINE_S,
+  WEST_MALL_MARINE_N,
+  MARINE_UNIVERSITY_N,
+  MARINE_UNIVERSITY_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -40,7 +46,6 @@ import { VIDEOS } from "../videos";
 const GRANVILLE_GAS_STATION = [49.20539, -123.14034];
 const GRANVILLE_SIDEWALK_START = [49.20515, -123.14013];
 const MARINE_WEST_MALL_ISH = [49.268, -123.25956];
-const MARINE_WEST_MALL = [49.26862, -123.25881];
 const BEYOND_CECIL_GREEN_PARK = [49.27056, -123.25527];
 
 const SPANISH_BANKS_CONNECTION_1 = [49.27726, -123.22283];
@@ -57,8 +62,6 @@ const WEST_OF_CAMOSUN = [49.23506, -123.1977];
 
 const MARINE_AVERY = [49.20801, -123.14222];
 
-const MARINE_STADIUM_NE = [49.25455, -123.24967];
-const MARINE_STADIUM_SE = [49.25443, -123.2496];
 const PRE_PRE_STADIUM_LANE_START = [49.25339, -123.24837];
 const PRE_STADIUM_LANE_START = [49.25348, -123.24849];
 
@@ -552,7 +555,8 @@ export const MARINE = [
       [49.26209, -123.25866],
       [49.2622, -123.25866],
       [49.26261, -123.25852],
-      [49.26271, -123.2585],
+      MARINE_UNIVERSITY_S,
+      MARINE_UNIVERSITY_N,
       [49.26283, -123.25852],
       [49.26302, -123.25862],
       [49.26313, -123.25873],
@@ -588,7 +592,7 @@ export const MARINE = [
       MARINE_WEST_MALL_ISH,
       [49.26805, -123.25946],
       [49.26847, -123.25902],
-      MARINE_WEST_MALL,
+      WEST_MALL_MARINE_S,
     ],
   },
   {
@@ -598,7 +602,7 @@ export const MARINE = [
     oneWay: "required",
     videoIds: [VIDEOS.nwMarineEb.id],
     positions: [
-      MARINE_WEST_MALL,
+      WEST_MALL_MARINE_S,
       [49.2689, -123.25834],
       [49.26956, -123.25701],
       [49.26985, -123.25645],
@@ -630,7 +634,7 @@ export const MARINE = [
       [49.26994, -123.25651],
       [49.26952, -123.25733],
       [49.26894, -123.25851],
-      [49.26869, -123.25892],
+      WEST_MALL_MARINE_N,
       [49.26846, -123.2592],
       [49.26809, -123.25952],
       MARINE_WEST_MALL_ISH,
