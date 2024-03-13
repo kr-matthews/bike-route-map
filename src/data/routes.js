@@ -3,7 +3,7 @@ import { VIDEOS } from "./videos";
 // Potential future additions
 // Burnaby:
 // SFU: gaglardi; parkway; university dr e; university dr w; ...more
-// UBC: agronomy (west to wesb); thunderbird/osoyoos (east-ish to acadia); imperial trail; (acadia/toronto? - no indication)
+// UBC: imperial trail;
 // Richmond: no. 2 path; bridgeport connection; no. 6 paths; south dyke;
 // YVR: ferguson; inglis; other paths...; ...more
 // New Westminster:
@@ -77,6 +77,10 @@ export const ROUTES = {
     name: "67th",
     legs: [{ distance: 1.6, videos: { westbound: VIDEOS.sixtySeventhPlusWb } }],
   },
+  acadia: {
+    name: "Acadia Rd",
+    legs: [{ videos: {} }],
+  },
   adanac: {
     name: "Adanac",
     legs: [{ distance: 5.8, videos: { westbound: VIDEOS.adanacWb } }],
@@ -84,6 +88,10 @@ export const ROUTES = {
   agnes: {
     name: "Agnes St",
     legs: [{ distance: 0.9, videos: {} }],
+  },
+  agronomy: {
+    name: "Agronomy Rd",
+    legs: [{ videos: {} }],
   },
   alberni: {
     name: "Alberni St",
@@ -886,6 +894,11 @@ export const ROUTES = {
         videos: { eastbound: VIDEOS.terminalEb, westbound: VIDEOS.terminalWb },
       },
     ],
+  },
+  thunderbird: {
+    name: "Thunderbird Blvd/Osoyoos Cr",
+    shortName: "Thunderbird Blvd",
+    legs: [{ videos: {} }],
   },
   university: {
     name: "University Blvd",

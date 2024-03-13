@@ -1,5 +1,7 @@
+import { ACADIA } from "./acadia";
 import { ADANAC } from "./adanac";
 import { AGNES } from "./agnes";
+import { AGRONOMY } from "./agronomy";
 import { ALBERNI } from "./alberni";
 import { ALDER } from "./alder";
 import { ALDERBRIDGE } from "./alderbridge";
@@ -140,6 +142,7 @@ import { SUNRISE } from "./sunrise";
 import { TENTH } from "./tenth";
 import { TERMINAL_PATH } from "./terminalPath";
 import { THIRD } from "./third";
+import { THUNDERBIRD } from "./thunderbird";
 import { TWENTY_NINTH } from "./twentyNinth";
 import { TWENTY_SECOND } from "./twentySecond";
 import { UNIVERSITY } from "./university";
@@ -165,8 +168,10 @@ import { YUKON } from "./yukon";
 
 // convention: bi-directional paths are stored northbound, eastbound, or clockwise
 export const SEGMENTS = [
+  ...ACADIA,
   ...ADANAC,
   ...AGNES,
+  ...AGRONOMY,
   ...ALBERNI,
   ...ALDER,
   ...ALDERBRIDGE,
@@ -307,6 +312,7 @@ export const SEGMENTS = [
   ...TENTH,
   ...TERMINAL_PATH,
   ...THIRD,
+  ...THUNDERBIRD,
   ...TWENTY_NINTH,
   ...TWENTY_SECOND,
   ...UNIVERSITY,

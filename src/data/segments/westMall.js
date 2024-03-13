@@ -3,8 +3,11 @@ import {
   EAST_MALL_STADIUM_W,
   MARINE_STADIUM_NE,
   MARINE_STADIUM_SE,
+  WEST_MALL_AGRONOMY_N,
+  WEST_MALL_AGRONOMY_S,
   WEST_MALL_MARINE_N,
   WEST_MALL_MARINE_S,
+  WEST_MALL_THUNDERBIRD,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
@@ -96,21 +99,39 @@ export const WEST_MALL = [
 
   {
     routeNames: [ROUTES.westMall.name],
-    description: "stadium to marine",
+    description: "stadium to agronomy",
     type: "quiet",
     positions: [
       WEST_MALL_STADIUM_N,
       [49.2558, -123.24841],
       [49.25673, -123.24916],
       [49.25787, -123.25007],
-      [49.25852, -123.25063],
-      [49.25972, -123.25161],
+      WEST_MALL_THUNDERBIRD,
+      WEST_MALL_AGRONOMY_S,
+    ],
+  },
+
+  {
+    routeNames: [ROUTES.westMall.name, ROUTES.agronomy.name],
+    description: "agronomy overlap",
+    type: "quiet",
+    positions: [
+      WEST_MALL_AGRONOMY_S,
       [49.25995, -123.2518],
       [49.26011, -123.25195],
       [49.26023, -123.25211],
       [49.26038, -123.25233],
       [49.26048, -123.25247],
-      [49.26064, -123.25265],
+      WEST_MALL_AGRONOMY_N,
+    ],
+  },
+
+  {
+    routeNames: [ROUTES.westMall.name],
+    description: "agronomy to marine",
+    type: "quiet",
+    positions: [
+      WEST_MALL_AGRONOMY_N,
       [49.2615, -123.25335],
       [49.26162, -123.25341],
       [49.26173, -123.25344],
