@@ -69,6 +69,7 @@ import { HOMER } from "./homer";
 import { HORNBY } from "./hornby";
 import { HOWES } from "./howes";
 import { IMPERIAL } from "./imperial";
+import { IMPERIAL_POWERLINE } from "./imperialPowerline";
 import { INVERNESS } from "./inverness";
 import { KEEFER } from "./keefer";
 import { KENSINGTON } from "./kensington";
@@ -239,6 +240,7 @@ export const SEGMENTS = [
   ...HORNBY,
   ...HOWES,
   ...IMPERIAL,
+  ...IMPERIAL_POWERLINE,
   ...INVERNESS,
   ...KEEFER,
   ...KENSINGTON,

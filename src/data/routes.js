@@ -3,7 +3,7 @@ import { VIDEOS } from "./videos";
 // Potential future additions
 // Burnaby:
 // SFU: gaglardi; parkway; university dr e; university dr w; ...more
-// UBC: imperial trail;
+// UBC: (extend agronomy (toronto), acadia?)
 // Richmond: no. 2 path; bridgeport connection; no. 6 paths; south dyke;
 // YVR: ferguson; inglis; other paths...; ...more
 // New Westminster:
@@ -514,6 +514,11 @@ export const ROUTES = {
   imperial: {
     name: "Imperial Dr",
     legs: [{ distance: 1.1, videos: {} }],
+  },
+  imperialPowerline: {
+    name: "Imperial Trail/Powerline Trail",
+    shortName: "Imperial/Powerline",
+    legs: [{ videos: {} }],
   },
   inverness: {
     name: "Inverness",
