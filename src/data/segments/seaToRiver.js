@@ -22,6 +22,7 @@ import { VIDEOS } from "../videos";
 
 const MCKAY_BOXER = [49.21028, -123.00869];
 const MCKAY_MAYWOOD = [49.22372, -123.00896];
+const MAYWOOD_W = [49.22515, -123.01206];
 const PATTERSON_MAYWOOD = [49.22539, -123.01264];
 const GILMORE_HALIFAX_SE = [49.26797, -123.01417];
 const GILMORE_HALIFAX_SW = [49.26797, -123.01432];
@@ -79,7 +80,7 @@ export const SEA_TO_RIVER = [
   },
   {
     routeNames: [ROUTES.seaToRiver.name],
-    description: "boxer to central park",
+    description: "boxer to (almost) central park",
     type: "quiet",
     videoIds: [VIDEOS.seaToRiverNb.id],
     positions: [
@@ -93,7 +94,16 @@ export const SEA_TO_RIVER = [
       [49.222, -123.00898],
       MCKAY_MAYWOOD,
       [49.2246, -123.01085],
-      [49.22515, -123.01206],
+      MAYWOOD_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaToRiver.name],
+    description: "maywood path to central park",
+    type: "mixed",
+    videoIds: [VIDEOS.seaToRiverNb.id],
+    positions: [
+      MAYWOOD_W,
       [49.22536, -123.01251],
       [49.22538, -123.01259],
       PATTERSON_MAYWOOD,

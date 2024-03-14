@@ -1,6 +1,7 @@
 import {
   BOUNDARY_WESTMINSTER_EN,
   BOUNDARY_WESTMINSTER_ES,
+  BOUNDARY_WESTMINSTER_NE,
   BOYD_EB_JOIN_AFTER_HOWES,
   BOYD_EB_SPLIT_FOR_HOWES,
   BOYD_EWEN_SE,
@@ -53,8 +54,7 @@ export const BOYD = [
     description: "trail from boundary",
     type: "comfortable",
     positions: [
-      BOUNDARY_WESTMINSTER_EN,
-      [49.184, -122.95696],
+      BOUNDARY_WESTMINSTER_NE,
       [49.18399, -122.95681],
       [49.18401, -122.95659],
       [49.18416, -122.9557],
@@ -93,7 +93,7 @@ export const BOYD = [
   // st
   {
     routeNames: [ROUTES.boyd.name],
-    description: "eb from boundary",
+    description: "eb boundary to after howes",
     type: "painted",
     oneWay: "required",
     positions: [
@@ -114,6 +114,15 @@ export const BOYD = [
       [49.18968, -122.94936],
       [49.18986, -122.94896],
       [49.19003, -122.9485],
+      BOYD_EB_JOIN_AFTER_HOWES,
+    ],
+  },
+  {
+    routeNames: [ROUTES.boyd.name],
+    description: "eb howes to bridge",
+    type: "shared",
+    oneWay: "required",
+    positions: [
       BOYD_EB_JOIN_AFTER_HOWES,
       [49.19092, -122.94642],
       [49.19156, -122.94484],

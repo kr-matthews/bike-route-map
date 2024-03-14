@@ -6,6 +6,8 @@ import {
 import { ROUTES } from "../routes";
 
 const TENTH_DUBLIN = [49.21395, -122.93233];
+const TWENTIETH_LONDON_S_E = [49.20478, -122.95072];
+const TWENTIETH_LONDON_N_E = [49.20508, -122.95107];
 
 export const LONDON_DUBLIN_GREENWAY = [
   {
@@ -21,15 +23,28 @@ export const LONDON_DUBLIN_GREENWAY = [
   },
   {
     routeNames: [ROUTES.londonDublin.name],
-    description: "primary",
+    description: "bc parkway to twentieth",
     type: "quiet",
     positions: [
       BC_PARKWAY_LONDON,
       [49.20168, -122.95648],
       [49.20273, -122.95453],
       [49.20378, -122.95258],
-      [49.20478, -122.95072],
-      [49.20508, -122.95107],
+      TWENTIETH_LONDON_S_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.londonDublin.name],
+    description: "along twentieth",
+    type: "combined",
+    positions: [TWENTIETH_LONDON_S_E, TWENTIETH_LONDON_N_E],
+  },
+  {
+    routeNames: [ROUTES.londonDublin.name],
+    description: "twentieth to eighth",
+    type: "quiet",
+    positions: [
+      TWENTIETH_LONDON_N_E,
       [49.20625, -122.94889],
       [49.20735, -122.94685],
       [49.20832, -122.94505],

@@ -1,4 +1,8 @@
-import { BOUNDARY_DYKE, BOUNDARY_DYKE_W, HOWES_DYKE } from "../intersections";
+import {
+  BOUNDARY_DYKE,
+  DOCKSIDE_SOUTH_DYKE,
+  HOWES_DYKE,
+} from "../intersections";
 import { ROUTES } from "../routes";
 
 export const SOUTH_DYKE = [
@@ -7,11 +11,10 @@ export const SOUTH_DYKE = [
     description: "all",
     type: "quiet",
     positions: [
-      BOUNDARY_DYKE_W,
       BOUNDARY_DYKE,
       [49.17632, -122.95708],
       [49.17678, -122.95607],
-      [49.17729, -122.95494],
+      DOCKSIDE_SOUTH_DYKE,
       [49.17769, -122.95409],
       [49.17805, -122.95309],
       [49.17839, -122.95206],

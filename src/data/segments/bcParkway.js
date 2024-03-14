@@ -97,6 +97,15 @@ const CITY_PARKWAY_LANE_N = [49.20012, -122.84915];
 export const BC_PARKWAY = [
   // vancouver alternates
   {
+    description: "lane on vanness at boundary",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      [49.23448, -123.02392],
+      [49.23439, -123.02373],
+    ],
+  },
+  {
     routeNames: [ROUTES.bcParkway.name],
     description: "Nanaimo alt",
     type: "mixed",
