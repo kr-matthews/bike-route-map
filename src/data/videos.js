@@ -94,6 +94,16 @@ const VIDEOS = {
     date: new Date("2024 02 23"),
     minutes: 4,
   },
+  boundaryTrailSb: {
+    id: "GgtzPwofHXM",
+    date: new Date("2024 03 13"),
+    minutes: 5,
+  },
+  boydTrailWb: {
+    id: "-3TNL5TrskA",
+    date: new Date("2024 03 13"),
+    minutes: 4,
+  },
   bridgeportTrailEb: {
     id: "isnLEyAJyPo",
     date: new Date("2024 02 12"),
@@ -215,6 +225,11 @@ const VIDEOS = {
     date: new Date("2023 08 11"),
     minutes: 10,
   },
+  ewenWb: {
+    id: "-7uHis88EXU",
+    date: new Date("2024 03 13"),
+    minutes: 8,
+  },
   fortyFifthWb: {
     id: "LWue1j2Ir4c",
     date: new Date("2023 07 22"),
@@ -320,6 +335,11 @@ const VIDEOS = {
     id: "QOtjHMY7_B8",
     date: new Date("2023 10 22"),
     minutes: 9,
+  },
+  howesNb: {
+    id: "QemciyuJDOQ",
+    date: new Date("2024 03 13"),
+    minutes: 4,
   },
   invernessSb: {
     id: "eim5zDSdA2I",
@@ -463,6 +483,11 @@ const VIDEOS = {
     date: new Date("2023 09 29"),
     minutes: 1,
   },
+  portRoyalEb: {
+    id: "1Jppsr8Tka4",
+    date: new Date("2024 03 13"),
+    minutes: 4,
+  },
   portsideEb: {
     id: "LXLxrBUIa9o",
     date: new Date("2023 10 28"),
@@ -477,6 +502,16 @@ const VIDEOS = {
     id: "A91bdcMUC98",
     date: new Date("2023 08 19"),
     minutes: 15,
+  },
+  queensboroughBridgeNb: {
+    id: "7bMQ20t7C7k",
+    date: new Date("2024 03 13"),
+    minutes: 6,
+  },
+  queensboroughBridgeSb: {
+    id: "TE-Q9lsFEsk",
+    date: new Date("2024 03 13"),
+    minutes: 3,
   },
   richardsSb: {
     id: "1Frtbn89JgM",
@@ -553,6 +588,11 @@ const VIDEOS = {
     date: new Date("2023 06 05"),
     minutes: 11,
   },
+  southDykeEb: {
+    id: "ivw4pCBL6i8",
+    date: new Date("2024 03 13"),
+    minutes: 5,
+  },
   sunriseNb: {
     id: "YGhkRf0VmKw",
     date: new Date("2023 08 26"),
@@ -566,6 +606,11 @@ const VIDEOS = {
   marineWayEb: {
     id: "EHjWLoIMeGU",
     date: new Date("2024 01 01"),
+    minutes: 18,
+  },
+  marineWayWb: {
+    id: "gBgVqAM5hYo",
+    date: new Date("2024 03 13"),
     minutes: 18,
   },
   tenthEb: {

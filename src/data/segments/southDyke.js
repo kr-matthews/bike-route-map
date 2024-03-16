@@ -4,12 +4,16 @@ import {
   HOWES_DYKE,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const SOUTH_DYKE = [
   {
     routeNames: [ROUTES.southDyke.name],
     description: "all",
     type: "quiet",
+    videoIds: [VIDEOS.southDykeEb.id],
+    videoIdsStartAtStart: [VIDEOS.southDykeEb.id],
+    videoIdsEndAtEnd: [VIDEOS.southDykeEb.id],
     positions: [
       BOUNDARY_DYKE,
       [49.17632, -122.95708],
@@ -31,6 +35,8 @@ export const SOUTH_DYKE = [
       [49.18632, -122.93444],
       [49.18688, -122.9338],
       [49.18701, -122.93369],
+      [49.18734, -122.93343],
+      [49.18745, -122.93322],
     ],
   },
 ];

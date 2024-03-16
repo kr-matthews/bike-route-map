@@ -201,7 +201,7 @@ export const ROUTES = {
   },
   boundary: {
     name: "Boundary Trail",
-    legs: [{ distance: 0.6, videos: {} }],
+    legs: [{ distance: 0.6, videos: { southbound: VIDEOS.boundaryTrailSb } }],
   },
   boyd: {
     name: "Boyd St",
@@ -209,7 +209,7 @@ export const ROUTES = {
   },
   boydTrail: {
     name: "Boyd St Trail",
-    legs: [{ distance: 1.0, videos: {} }],
+    legs: [{ distance: 1.0, videos: { westbound: VIDEOS.boydTrailWb } }],
   },
   bridgeportTrail: {
     name: "Bridgeport Trail",
@@ -394,7 +394,7 @@ export const ROUTES = {
   },
   ewen: {
     name: "Ewen Ave Greenway",
-    legs: [{ distance: 2.6, videos: {} }],
+    legs: [{ distance: 2.6, videos: { westbound: VIDEOS.ewenWb } }],
   },
   francesUnion: {
     name: "Frances Union",
@@ -509,7 +509,7 @@ export const ROUTES = {
   },
   howes: {
     name: "Howes St",
-    legs: [{ distance: 1.0, videos: {} }],
+    legs: [{ distance: 1.0, videos: { northbound: VIDEOS.howesNb } }],
   },
   imperial: {
     name: "Imperial Dr",
@@ -596,7 +596,15 @@ export const ROUTES = {
   },
   marineWay: {
     name: "Marine Way",
-    legs: [{ distance: 6.5, videos: { eastbound: VIDEOS.marineWayEb } }],
+    legs: [
+      {
+        distance: 6.5,
+        videos: {
+          eastbound: VIDEOS.marineWayEb,
+          westbound: VIDEOS.marineWayWb,
+        },
+      },
+    ],
   },
   masumiMitsui: {
     name: "Masumi Mitsui Greenway",
@@ -728,7 +736,7 @@ export const ROUTES = {
   portRoyalRiverTrail: {
     name: "Port Royal River Trail",
     shortName: "Port Royal River T.",
-    legs: [{ distance: 1.1, videos: {} }],
+    legs: [{ distance: 1.1, videos: { eastbound: VIDEOS.portRoyalEb } }],
   },
   portside: {
     name: "Portside",
@@ -745,7 +753,15 @@ export const ROUTES = {
   queensboroughBridge: {
     name: "Queensborough Bridge",
     shortName: "Queensborough B.",
-    legs: [{ distance: 1.1, videos: {} }],
+    legs: [
+      {
+        distance: 1.1,
+        videos: {
+          northbound: VIDEOS.queensboroughBridgeNb,
+          southbound: VIDEOS.queensboroughBridgeSb,
+        },
+      },
+    ],
   },
   railwayGreenway: {
     name: "Railway Greenway",
@@ -869,7 +885,7 @@ export const ROUTES = {
   },
   southDyke: {
     name: "South Dyke Rd",
-    legs: [{ distance: 2.1, videos: {} }],
+    legs: [{ distance: 2.1, videos: { eastbound: VIDEOS.southDykeEb } }],
   },
   southeast: {
     name: "Southeast",

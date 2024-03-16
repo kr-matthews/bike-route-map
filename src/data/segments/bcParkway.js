@@ -729,7 +729,7 @@ export const BC_PARKWAY = [
   },
   {
     routeNames: [ROUTES.bcParkway.name],
-    description: "london to queensborough loops",
+    description: "london to bridge/station split",
     elevation: 0.5,
     videoIds: [VIDEOS.bcParkwayNewWestminsterWb.id],
     videoIdsEndAtStart: [VIDEOS.bcParkwayNewWestminsterWb.id],
@@ -755,13 +755,29 @@ export const BC_PARKWAY = [
       [49.19951, -122.95208],
       [49.19956, -122.95171],
       BC_PARKWAY_22ND_STATION_SPLIT,
-      BC_PARKWAY_7TH,
     ],
   },
   {
     routeNames: [ROUTES.bcParkway.name],
-    description: "stewardson way little bit",
-    videoIds: [VIDEOS.bcParkwayNewWestminsterWb.id, VIDEOS.marineWayEb.id],
+    description: "split to 7th",
+    elevation: 0.5,
+    videoIds: [
+      VIDEOS.bcParkwayNewWestminsterWb.id,
+      VIDEOS.queensboroughBridgeSb.id,
+      VIDEOS.queensboroughBridgeNb.id,
+    ],
+    videoIdsStartAtStart: [VIDEOS.queensboroughBridgeSb.id],
+    videoIdsEndAtStart: [VIDEOS.queensboroughBridgeNb.id],
+    positions: [BC_PARKWAY_22ND_STATION_SPLIT, BC_PARKWAY_7TH],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "under bridge west",
+    videoIds: [
+      VIDEOS.bcParkwayNewWestminsterWb.id,
+      VIDEOS.queensboroughBridgeNb.id,
+      VIDEOS.marineWayEb.id,
+    ],
     videoIdsEndAtEnd: [VIDEOS.marineWayEb.id],
     positions: [
       QUEENSBOROUGH_STEWARDSON_W,
@@ -772,8 +788,11 @@ export const BC_PARKWAY = [
   },
   {
     routeNames: [ROUTES.bcParkway.name],
-    description: "stewardson way",
-    videoIds: [VIDEOS.bcParkwayNewWestminsterWb.id],
+    description: "under bridge east",
+    videoIds: [
+      VIDEOS.bcParkwayNewWestminsterWb.id,
+      VIDEOS.queensboroughBridgeNb.id,
+    ],
     positions: [
       UNDER_QUEENSBOROUGH_BRIDGE,
       [49.19792, -122.94863],
@@ -781,6 +800,14 @@ export const BC_PARKWAY = [
       [49.19807, -122.94815],
       [49.1982, -122.94789],
       [49.19831, -122.94776],
+      QUEENSBOROUGH_STEWARDSON_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "stewardson way",
+    videoIds: [VIDEOS.bcParkwayNewWestminsterWb.id],
+    positions: [
       QUEENSBOROUGH_STEWARDSON_E,
       [49.19886, -122.94732],
       [49.19906, -122.94713],

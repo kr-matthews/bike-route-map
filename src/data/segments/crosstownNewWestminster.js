@@ -10,6 +10,7 @@ import {
   TWENTY_THIRD_7TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const BC_PARKWAY_22ND_STATION = [49.20009, -122.94948];
 const TWENTIETH_7TH_E_N = [49.20162, -122.94669];
@@ -120,6 +121,7 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   {
     description: "to marine way",
     type: "shared",
+    videoIds: [VIDEOS.marineWayWb.id],
     positions: [TWENTY_THIRD_7TH, BC_PARKWAY_7TH],
   },
   {

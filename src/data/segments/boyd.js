@@ -10,9 +10,12 @@ import {
   QUEENSBOROUGH_BOYD_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const OUTLET_MALL_BOYD = [49.19073, -122.94722];
 const DUNCAN_BOYD_NE = [49.19468, -122.93691];
+const HOWES_BOYD_NW = [49.19013, -122.94891];
+const WOOD_BOYD_N = [49.19281, -122.94235];
 
 export const BOYD = [
   {
@@ -50,9 +53,24 @@ export const BOYD = [
 
   // trail
   {
+    description: "pre-trail at howes",
+    type: "other",
+    hideUnlessVideo: true,
+    videoIds: [VIDEOS.boydTrailWb.id],
+    videoIdsStartAtEnd: [VIDEOS.boydTrailWb.id],
+    positions: [
+      HOWES_BOYD_NW,
+      [49.19011, -122.9488],
+      [49.19023, -122.9485],
+      [49.19031, -122.94847],
+    ],
+  },
+  {
     routeNames: [ROUTES.boydTrail.name],
     description: "trail from boundary",
     type: "comfortable",
+    videoIds: [VIDEOS.boydTrailWb.id],
+    videoIdsEndAtStart: [VIDEOS.boydTrailWb.id],
     positions: [
       BOUNDARY_WESTMINSTER_NE,
       [49.18399, -122.95681],
@@ -86,7 +104,7 @@ export const BOYD = [
       [49.18983, -122.94942],
       [49.19, -122.94903],
       [49.19006, -122.94896],
-      [49.19013, -122.94891],
+      HOWES_BOYD_NW,
     ],
   },
 
@@ -164,15 +182,25 @@ export const BOYD = [
   },
   {
     routeNames: [ROUTES.boyd.name],
-    description: "trail from bridge to duncan",
+    description: "trail from bridge to duncan 1",
     type: "comfortable",
+    videoIds: [VIDEOS.queensboroughBridgeNb.id],
+    videoIdsStartAtEnd: [VIDEOS.queensboroughBridgeNb.id],
     positions: [
       QUEENSBOROUGH_BOYD_NW,
       [49.19231, -122.94328],
       [49.19244, -122.94299],
       [49.19255, -122.94278],
       [49.19268, -122.94259],
-      [49.19281, -122.94235],
+      WOOD_BOYD_N,
+    ],
+  },
+  {
+    routeNames: [ROUTES.boyd.name],
+    description: "trail from bridge to duncan 2",
+    type: "comfortable",
+    positions: [
+      WOOD_BOYD_N,
       [49.19316, -122.94159],
       [49.19368, -122.94025],
       [49.19421, -122.93899],
@@ -186,9 +214,15 @@ export const BOYD = [
     ],
   },
   {
+    routeNames: [ROUTES.boyd.name],
     description: "crossing at bridge",
     type: "mixed",
-    positions: [QUEENSBOROUGH_BOYD_NW, QUEENSBOROUGH_BOYD_SW],
+    videoIds: [
+      VIDEOS.queensboroughBridgeNb.id,
+      VIDEOS.queensboroughBridgeSb.id,
+    ],
+    videoIdsEndAtEnd: [VIDEOS.queensboroughBridgeSb.id],
+    positions: [QUEENSBOROUGH_BOYD_SW, QUEENSBOROUGH_BOYD_NW],
   },
   {
     routeNames: [ROUTES.boyd.name],

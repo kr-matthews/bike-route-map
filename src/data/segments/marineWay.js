@@ -11,6 +11,8 @@ import { VIDEOS } from "../videos";
 
 const KINROSS_MARINE_SW = [49.20678, -123.03674];
 const KINROSS_MARINE_SE = [49.20678, -123.0366];
+const BOUNDARY_MARINE_NW = [49.20571, -123.02386];
+const BOUNDARY_MARINE_NE = [49.20553, -123.02291];
 const BOUNDARY_MARINE_SW = [49.20523, -123.02377];
 const BOUNDARY_MARINE_SE = [49.20532, -123.02303];
 
@@ -75,8 +77,10 @@ export const MARINE_WAY = [
     description: "wb: vancouver",
     type: "combined",
     oneWay: "required",
+    videoIds: [VIDEOS.marineWayWb.id],
+    videoIdsEndAtEnd: [VIDEOS.marineWayWb.id],
     positions: [
-      [49.20571, -123.02386],
+      BOUNDARY_MARINE_NW,
       [49.20565, -123.024],
       [49.20562, -123.02416],
       [49.20562, -123.02433],
@@ -128,7 +132,7 @@ export const MARINE_WAY = [
     ],
   },
   {
-    description: "vancouver to burnaby",
+    description: "boundary: vancouver to burnaby",
     oneWay: "required",
     type: "shared",
     hideArrows: true,
@@ -140,6 +144,22 @@ export const MARINE_WAY = [
       [49.2053, -123.02372],
       [49.20533, -123.02377],
       BOUNDARY_MARINE_SE,
+    ],
+  },
+  {
+    description: "boundary: burnaby to vancouver",
+    oneWay: "required",
+    type: "other",
+    hideArrows: true,
+    hideUnlessVideo: true,
+    videoIds: [VIDEOS.marineWayWb.id],
+    positions: [
+      BOUNDARY_MARINE_NE,
+      [49.20551, -123.0231],
+      [49.20551, -123.02327],
+      [49.20555, -123.02361],
+      [49.20558, -123.02371],
+      BOUNDARY_MARINE_NW,
     ],
   },
   {
@@ -171,6 +191,7 @@ export const MARINE_WAY = [
     description: "wb: getting onto marine way",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.marineWayWb.id],
     positions: [
       TWENTY_THIRD_7TH,
       [49.19821, -122.95212],
@@ -183,6 +204,7 @@ export const MARINE_WAY = [
     description: "wb: burnaby",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.marineWayWb.id],
     positions: [
       TWENTY_THIRD_MARINE,
       [49.19781, -122.95252],
@@ -262,7 +284,7 @@ export const MARINE_WAY = [
       [49.20552, -123.01513],
       [49.20553, -123.01786],
       [49.20553, -123.02065],
-      [49.20553, -123.02291],
+      BOUNDARY_MARINE_NE,
     ],
   },
   {

@@ -12,20 +12,36 @@ const QUEENSBOROUGH_BOYD_S_SW = [49.19214, -122.94316];
 const QUEENSBOROUGH_LOOPS_ELEVATION_START = [49.19922, -122.9508];
 const QUEENSBOROUGH_LOOPS_ELEVATION_END = [49.19867, -122.95059];
 const QUEENSBOROUGH_BC_PARKWAY_SPLIT = [49.19781, -122.94883];
-const QUEENSBOROUGH_ELEVATION_START = [49.19839, -122.94945];
-const QUEENSBOROUGH_ELEVATION_END = [49.19762, -122.95014];
+const QUEENSBOROUGH_NW_ELEVATION_START = [49.19839, -122.94945];
+const QUEENSBOROUGH_NW_RAMP_BOTTOM = [49.19762, -122.95014];
 const NB_ELEVATION_START = [49.19221, -122.94265];
 const NB_ELEVATION_END = [49.19834, -122.94764];
 const SB_ELEVATION_END = [49.19211, -122.94291];
 
 export const QUEENSBOROUGH_BRIDGE = [
   {
+    description: "south end: to boyd st",
+    type: "mixed",
+    videoIds: [
+      VIDEOS.queensboroughBridgeNb.id,
+      VIDEOS.queensboroughBridgeSb.id,
+    ],
+    positions: [QUEENSBOROUGH_BOYD_SW, QUEENSBOROUGH_BOYD_S_SW],
+  },
+  {
     description: "under south end",
     type: "mixed",
+    videoIds: [VIDEOS.queensboroughBridgeNb.id],
     positions: [
-      QUEENSBOROUGH_BOYD_SW,
       QUEENSBOROUGH_BOYD_S_SW,
       [49.19237, -122.94263],
+      QUEENSBOROUGH_BOYD_S_SE,
+    ],
+  },
+  {
+    description: "south end: to wood st",
+    type: "mixed",
+    positions: [
       QUEENSBOROUGH_BOYD_S_SE,
       [49.19245, -122.9425],
       [49.1925, -122.94242],
@@ -37,7 +53,12 @@ export const QUEENSBOROUGH_BRIDGE = [
     description: "from 7th",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [VIDEOS.bcParkwayNewWestminsterWb.id],
+    videoIds: [
+      VIDEOS.queensboroughBridgeSb.id,
+      VIDEOS.queensboroughBridgeNb.id,
+      VIDEOS.bcParkwayNewWestminsterWb.id,
+      VIDEOS.marineWayWb.id,
+    ],
     positions: [
       BC_PARKWAY_7TH,
       [49.19922, -122.95097],
@@ -49,7 +70,13 @@ export const QUEENSBOROUGH_BRIDGE = [
     description: "loops overpass",
     type: "mixed",
     elevation: 1,
-    videoIds: [VIDEOS.bcParkwayNewWestminsterWb.id],
+    videoIds: [
+      VIDEOS.queensboroughBridgeSb.id,
+      VIDEOS.queensboroughBridgeNb.id,
+      VIDEOS.bcParkwayNewWestminsterWb.id,
+      VIDEOS.marineWayWb.id,
+    ],
+    videoIdsStartAtEnd: [VIDEOS.marineWayWb.id],
     positions: [
       QUEENSBOROUGH_LOOPS_ELEVATION_START,
       QUEENSBOROUGH_LOOPS_ELEVATION_END,
@@ -60,7 +87,11 @@ export const QUEENSBOROUGH_BRIDGE = [
     description: "queensborough dog area",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [VIDEOS.bcParkwayNewWestminsterWb.id],
+    videoIds: [
+      VIDEOS.queensboroughBridgeSb.id,
+      VIDEOS.queensboroughBridgeNb.id,
+      VIDEOS.bcParkwayNewWestminsterWb.id,
+    ],
     positions: [
       QUEENSBOROUGH_LOOPS_ELEVATION_END,
       [49.19864, -122.95051],
@@ -71,28 +102,45 @@ export const QUEENSBOROUGH_BRIDGE = [
       [49.19868, -122.95007],
       [49.19859, -122.94974],
       [49.19854, -122.94965],
-      QUEENSBOROUGH_ELEVATION_START,
+      QUEENSBOROUGH_NW_ELEVATION_START,
     ],
   },
   {
     routeNames: [ROUTES.queensboroughBridge.name, ROUTES.bcParkway.name],
-    description: "queensborough bridge sidewalk",
+    description: "bridge west side end, before dog park",
     type: "mixed",
     elevation: 1,
-    videoIds: [VIDEOS.bcParkwayNewWestminsterWb.id],
+    videoIds: [
+      VIDEOS.queensboroughBridgeSb.id,
+      VIDEOS.queensboroughBridgeNb.id,
+      VIDEOS.bcParkwayNewWestminsterWb.id,
+    ],
     positions: [
-      QUEENSBOROUGH_ELEVATION_START,
+      QUEENSBOROUGH_NW_ELEVATION_START,
       QUEENSBOROUGH_BC_PARKWAY_SPLIT,
-      QUEENSBOROUGH_ELEVATION_END,
     ],
   },
   {
     routeNames: [ROUTES.queensboroughBridge.name, ROUTES.bcParkway.name],
-    description: "queensborough bridge post-sidewalk",
+    description: "nw ramp",
+    type: "mixed",
+    elevation: 1,
+    videoIds: [
+      VIDEOS.queensboroughBridgeNb.id,
+      VIDEOS.bcParkwayNewWestminsterWb.id,
+    ],
+    positions: [QUEENSBOROUGH_BC_PARKWAY_SPLIT, QUEENSBOROUGH_NW_RAMP_BOTTOM],
+  },
+  {
+    routeNames: [ROUTES.queensboroughBridge.name, ROUTES.bcParkway.name],
+    description: "nw ramp post-elevation",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [VIDEOS.bcParkwayNewWestminsterWb.id],
-    positions: [QUEENSBOROUGH_ELEVATION_END, QUEENSBOROUGH_STEWARDSON_W],
+    videoIds: [
+      VIDEOS.queensboroughBridgeNb.id,
+      VIDEOS.bcParkwayNewWestminsterWb.id,
+    ],
+    positions: [QUEENSBOROUGH_NW_RAMP_BOTTOM, QUEENSBOROUGH_STEWARDSON_W],
   },
   {
     routeNames: [ROUTES.queensboroughBridge.name],
@@ -100,6 +148,7 @@ export const QUEENSBOROUGH_BRIDGE = [
     type: "mixed",
     elevation: 1,
     oneWay: "recommended",
+    videoIds: [VIDEOS.queensboroughBridgeSb.id],
     positions: [
       QUEENSBOROUGH_BC_PARKWAY_SPLIT,
       [49.19762, -122.94864],
@@ -120,6 +169,7 @@ export const QUEENSBOROUGH_BRIDGE = [
     type: "mixed",
     elevation: 0.5,
     oneWay: "recommended",
+    videoIds: [VIDEOS.queensboroughBridgeSb.id],
     positions: [
       SB_ELEVATION_END,
       [49.19181, -122.94283],
@@ -137,6 +187,7 @@ export const QUEENSBOROUGH_BRIDGE = [
     type: "mixed",
     elevation: 0.5,
     oneWay: "recommended",
+    videoIds: [VIDEOS.queensboroughBridgeNb.id],
     positions: [
       QUEENSBOROUGH_BOYD_S_SE,
       [49.19236, -122.94251],
@@ -158,6 +209,7 @@ export const QUEENSBOROUGH_BRIDGE = [
     type: "mixed",
     elevation: 1,
     oneWay: "recommended",
+    videoIds: [VIDEOS.queensboroughBridgeNb.id],
     positions: [
       NB_ELEVATION_START,
       [49.19229, -122.9427],
@@ -188,6 +240,7 @@ export const QUEENSBOROUGH_BRIDGE = [
     type: "mixed",
     elevation: 0.5,
     oneWay: "recommended",
+    videoIds: [VIDEOS.queensboroughBridgeNb.id],
     positions: [
       NB_ELEVATION_END,
       [49.19844, -122.94754],

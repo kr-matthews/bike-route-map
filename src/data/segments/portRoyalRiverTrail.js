@@ -1,11 +1,15 @@
 import { PORT_ROYAL_EWEN } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const PORT_ROYAL_RIVER_TRAIL = [
   {
     routeNames: [ROUTES.portRoyalRiverTrail.name],
     description: "all",
     type: "mixed",
+    videoIds: [VIDEOS.portRoyalEb.id],
+    videoIdsStartAtStart: [VIDEOS.portRoyalEb.id],
+    videoIdsEndAtEnd: [VIDEOS.portRoyalEb.id],
     positions: [
       PORT_ROYAL_EWEN,
       [49.19216, -122.93194],
