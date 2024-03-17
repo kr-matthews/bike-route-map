@@ -1,4 +1,5 @@
 import {
+  KERR_45TH,
   KERR_FRASER_TRAIL,
   KERR_KENT_N_SE,
   KERR_KENT_N_SW,
@@ -14,6 +15,8 @@ const NORTHBOUND_LANE_ENDS = [49.22386, -123.04102];
 const SOUTHBOUND_LANE_ENDS = [49.2207, -123.04134];
 const SOUTHBOUND_LANE_STARTS_AGAIN = [49.22013, -123.04137];
 
+const KERR_RUPERT = [49.22723, -123.04118];
+
 const KERR_49TH_N = [49.22484, -123.04105];
 
 export const KERR = [
@@ -21,8 +24,9 @@ export const KERR = [
     routeNames: [ROUTES.kerr.name],
     description: "south tip",
     type: "mixed",
-    videoIds: [VIDEOS.kerrSb.id],
+    videoIds: [VIDEOS.kerrNb.id, VIDEOS.kerrSb.id],
     videoIdsEndAtStart: [VIDEOS.kerrSb.id],
+    videoIdsStartAtStart: [VIDEOS.kerrNb.id],
     positions: [
       KERR_FRASER_TRAIL,
       [49.20611, -123.04221],
@@ -35,6 +39,7 @@ export const KERR = [
     description: "nb protected",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.kerrNb.id],
     positions: [KERR_KENT_N_SE, [49.207, -123.04218], KERR_MARINE_SE],
   },
   {
@@ -42,6 +47,7 @@ export const KERR = [
     description: "nb painted",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.kerrNb.id],
     positions: [
       KERR_MARINE_SE,
       [49.20823, -123.04217],
@@ -68,6 +74,7 @@ export const KERR = [
     description: "nb ending",
     oneWay: "required",
     type: "shared",
+    videoIds: [VIDEOS.kerrNb.id],
     positions: [NORTHBOUND_LANE_ENDS, [49.22465, -123.04099], KERR_49TH_N],
   },
   {
@@ -124,11 +131,10 @@ export const KERR = [
     positions: [KERR_MARINE_SW, KERR_KENT_N_SW],
   },
   {
-    description: "to 45th",
+    description: "49th to rupert",
     type: "shared",
     hideUnlessVideo: true,
-    videoIds: [VIDEOS.kerrSb.id],
-    videoIdsStartAtEnd: [VIDEOS.kerrSb.id],
+    videoIds: [VIDEOS.kerrNb.id, VIDEOS.kerrSb.id],
     positions: [
       KERR_49TH_N,
       [49.22623, -123.04099],
@@ -136,7 +142,17 @@ export const KERR = [
       [49.22682, -123.04099],
       [49.22696, -123.04101],
       [49.2271, -123.04108],
-      [49.22723, -123.04118],
+      KERR_RUPERT,
+    ],
+  },
+  {
+    description: "rupert: to 45th",
+    type: "shared",
+    hideUnlessVideo: true,
+    videoIds: [VIDEOS.kerrSb.id],
+    videoIdsStartAtEnd: [VIDEOS.kerrSb.id],
+    positions: [
+      KERR_RUPERT,
       [49.22738, -123.04131],
       [49.2275, -123.04146],
       [49.22807, -123.04237],
@@ -147,6 +163,21 @@ export const KERR = [
       [49.22894, -123.04311],
       [49.2291, -123.04313],
       RUPERT_45TH,
+    ],
+  },
+  {
+    description: "kerr: to 45th",
+    type: "quiet",
+    hideUnlessVideo: true,
+    videoIds: [VIDEOS.kerrNb.id],
+    videoIdsEndAtEnd: [VIDEOS.kerrNb.id],
+    positions: [
+      KERR_RUPERT,
+      [49.2273, -123.04109],
+      [49.22734, -123.041],
+      [49.2274, -123.04095],
+      [49.22747, -123.04091],
+      KERR_45TH,
     ],
   },
 ];

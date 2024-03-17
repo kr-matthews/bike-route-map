@@ -42,6 +42,8 @@ export const RUPERT = [
     description: "sb",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.rupertSb.id],
+    videoIdsEndAtEnd: [VIDEOS.rupertSb.id],
     positions: [
       RUPERT_CVG_W,
       [49.2604, -123.03392],

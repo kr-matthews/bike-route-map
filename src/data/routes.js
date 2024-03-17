@@ -539,7 +539,12 @@ export const ROUTES = {
   },
   kerr: {
     name: "Kerr St",
-    legs: [{ distance: 2.6, videos: { southbound: VIDEOS.kerrSb } }],
+    legs: [
+      {
+        distance: 2.6,
+        videos: { northbound: VIDEOS.kerrNb, southbound: VIDEOS.kerrSb },
+      },
+    ],
   },
   killarney: {
     name: "Killarney",
@@ -801,7 +806,12 @@ export const ROUTES = {
   },
   rupert: {
     name: "Rupert St",
-    legs: [{ distance: 1.8, videos: { northbound: VIDEOS.rupertNb } }],
+    legs: [
+      {
+        distance: 1.8,
+        videos: { northbound: VIDEOS.rupertNb, southbound: VIDEOS.rupertSb },
+      },
+    ],
   },
   russBaker: {
     name: "Russ Baker Way",

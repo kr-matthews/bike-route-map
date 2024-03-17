@@ -356,6 +356,11 @@ const VIDEOS = {
     date: new Date("2024 02 04"),
     minutes: 22,
   },
+  kerrNb: {
+    id: "Gw7KCFxOMto",
+    date: new Date("2024 03 13"),
+    minutes: 11,
+  },
   kerrSb: {
     id: "A_MpEUYNWxE",
     date: new Date("2023 08 26"),
@@ -537,6 +542,11 @@ const VIDEOS = {
     id: "VYxXQDWhq5Q",
     date: new Date("2023 09 15"),
     minutes: 5,
+  },
+  rupertSb: {
+    id: "NUP8EwbBLHI",
+    date: new Date("2024 03 15"),
+    minutes: 8,
   },
   seaIslandConnectorWb: {
     id: "BQJVwt1W2Nk",

@@ -475,7 +475,12 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routeNames: [ROUTES.centralValleyGreenway.name],
     description: "crossing rupert",
     type: "mixed",
-    videoIds: [VIDEOS.centralValleyVancouverEb.id, VIDEOS.rupertNb.id],
+    videoIds: [
+      VIDEOS.centralValleyVancouverEb.id,
+      VIDEOS.rupertSb.id,
+      VIDEOS.rupertNb.id,
+    ],
+    videoIdsStartAtEnd: [VIDEOS.rupertSb.id],
     videoIdsEndAtStart: [VIDEOS.rupertNb.id],
     positions: [RUPERT_CVG_W, [49.26067, -123.03395], RUPERT_CVG_E],
   },
