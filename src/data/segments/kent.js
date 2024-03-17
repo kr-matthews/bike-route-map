@@ -14,7 +14,6 @@ import {
   KINROSS_KENT,
   ONTARIO_KENT_N,
   ONTARIO_KENT_S,
-  RIVER_DISTRICT_CROSSING_DETOUR_SPLIT,
   VICTORIA_KENT_N,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -27,7 +26,7 @@ const KINROSS_KENT_S = [49.2061, -123.0367];
 const KINROSS_KENT_S_S = [49.20575, -123.03672];
 const JACK_UPPAL_KENT_N = [49.20567, -123.03369];
 const JACK_UPPAL_KENT_S = [49.20531, -123.03383];
-const RIVER_DISTRICT_CROSSING_KENT_S = [49.20504, -123.03116];
+// const RIVER_DISTRICT_CROSSING_KENT_S = [49.20504, -123.03116];
 const RIVER_DISTRICT_CROSSING_KENT_N = [49.2053, -123.03107];
 
 const EB_BEFORE_BORDEN = [49.20952, -123.07505];
@@ -399,35 +398,36 @@ export const KENT = [
       JACK_UPPAL_KENT_S,
     ],
   },
-  {
-    description: "river district detour",
-    type: "mixed",
-    positions: [
-      JACK_UPPAL_KENT_S,
-      [49.20526, -123.03383],
-      [49.20518, -123.03387],
-      [49.20508, -123.03395],
-      [49.20451, -123.03468],
-      [49.20449, -123.03479],
-      [49.20442, -123.03488],
-      [49.20438, -123.03487],
-      [49.20395, -123.03453],
-      [49.20372, -123.03425],
-      [49.20361, -123.03384],
-      [49.20375, -123.03219],
-      RIVER_DISTRICT_CROSSING_DETOUR_SPLIT,
-      [49.20417, -123.03165],
-      [49.20441, -123.03148],
-      [49.20467, -123.03132],
-      [49.20486, -123.03122],
-      RIVER_DISTRICT_CROSSING_KENT_S,
-    ],
-  },
-  {
-    description: "river district crossing switch",
-    type: "mixed",
-    positions: [RIVER_DISTRICT_CROSSING_KENT_S, RIVER_DISTRICT_CROSSING_KENT_N],
-  },
+  // was mostly closed off as of 2024-03-13
+  // {
+  //   description: "river district detour",
+  //   type: "mixed",
+  //   positions: [
+  //     JACK_UPPAL_KENT_S,
+  //     [49.20526, -123.03383],
+  //     [49.20518, -123.03387],
+  //     [49.20508, -123.03395],
+  //     [49.20451, -123.03468],
+  //     [49.20449, -123.03479],
+  //     [49.20442, -123.03488],
+  //     [49.20438, -123.03487],
+  //     [49.20395, -123.03453],
+  //     [49.20372, -123.03425],
+  //     // [49.20361, -123.03384],
+  //     // [49.20375, -123.03219],
+  //     // RIVER_DISTRICT_CROSSING_DETOUR_SPLIT,
+  //     // [49.20417, -123.03165],
+  //     // [49.20441, -123.03148],
+  //     // [49.20467, -123.03132],
+  //     // [49.20486, -123.03122],
+  //     // RIVER_DISTRICT_CROSSING_KENT_S,
+  //   ],
+  // },
+  // {
+  //   description: "river district crossing switch",
+  //   type: "mixed",
+  //   positions: [RIVER_DISTRICT_CROSSING_KENT_S, RIVER_DISTRICT_CROSSING_KENT_N],
+  // },
   {
     routeNames: [ROUTES.kent.name],
     description: "kent n: river district crossing to boundary",

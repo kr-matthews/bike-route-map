@@ -5,7 +5,6 @@ import {
   ELLIOTT_KENT_PATH,
   GLADSTONE_KENT,
   KERR_FRASER_TRAIL,
-  RIVER_DISTRICT_CROSSING_DETOUR_SPLIT,
   VICTORIA_KENT_N,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -214,18 +213,18 @@ export const FRASER_RIVER_TRAIL = [
       GLADSTONE_KENT,
     ],
   },
-  {
-    description: "river district kent connection",
-    positions: [
-      RIVER_DISTRICT_CROSSING_FRASER_RIVER,
-      [49.20318, -123.03193],
-      [49.20333, -123.03183],
-      [49.20348, -123.03172],
-      [49.20364, -123.03166],
-      [49.20383, -123.03166],
-      RIVER_DISTRICT_CROSSING_DETOUR_SPLIT,
-    ],
-  },
+  // {
+  //   description: "river district kent connection",
+  //   positions: [
+  //     RIVER_DISTRICT_CROSSING_FRASER_RIVER,
+  //     [49.20318, -123.03193],
+  //     [49.20333, -123.03183],
+  //     [49.20348, -123.03172],
+  //     [49.20364, -123.03166],
+  //     [49.20383, -123.03166],
+  //     RIVER_DISTRICT_CROSSING_DETOUR_SPLIT,
+  //   ],
+  // },
   {
     routeNames: [ROUTES.fraserRiverTrail.name],
     description: "river district - near elliott",

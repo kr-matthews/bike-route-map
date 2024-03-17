@@ -32,7 +32,44 @@ const STEWARDSON_OVERPASS_N = [49.20183, -122.94173];
 const STEWARDSON_OVERPASS_S = [49.20175, -122.9409];
 const STEWARDSON_OVERPASS_S_POST = [49.20172, -122.94098];
 
+const SIXTH_7TH_NE = [49.21456, -122.92199];
+const SIXTH_7TH_NW = [49.21448, -122.92214];
+const SIXTH_7TH_SE = [49.21448, -122.92188];
+const SIXTH_7TH_SW = [49.21439, -122.92203];
+const SIXTH_SCHOOL_W = [49.21699, -122.92525];
+
 export const CROSSTOWN_NEW_WESTMINSTER = [
+  {
+    description: "sixth school",
+    type: "dedicated",
+    positions: [[49.21587, -122.92733], SIXTH_SCHOOL_W],
+  },
+  {
+    description: "sixth nb",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      SIXTH_7TH_SE,
+      SIXTH_7TH_NE,
+      [49.21528, -122.9229],
+      [49.21606, -122.92387],
+      [49.21706, -122.92512],
+      SIXTH_SCHOOL_W,
+    ],
+  },
+  {
+    description: "sixth sb",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      SIXTH_SCHOOL_W,
+      [49.21599, -122.92401],
+      [49.2152, -122.92303],
+      SIXTH_7TH_NW,
+      SIXTH_7TH_SW,
+    ],
+  },
+
   {
     description: "richmond st to eight ave",
     type: "shared",
@@ -161,6 +198,7 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
       TENTH_7TH,
     ],
   },
+
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "through park",
@@ -202,8 +240,8 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
       EIGHTH_7TH_W,
       [49.21252, -122.9255],
       [49.21353, -122.92365],
-      [49.2144, -122.92202],
-      [49.21449, -122.92185],
+      SIXTH_7TH_SW,
+      SIXTH_7TH_SE,
       [49.21505, -122.92084],
       FIFTH_7TH,
     ],
@@ -216,8 +254,8 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     positions: [
       FIFTH_7TH,
       [49.21514, -122.92093],
-      [49.21456, -122.92199],
-      [49.21448, -122.92214],
+      SIXTH_7TH_NE,
+      SIXTH_7TH_NW,
       [49.21362, -122.92373],
       [49.21262, -122.9256],
       EIGHTH_7TH_W,
