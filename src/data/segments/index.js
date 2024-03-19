@@ -13,7 +13,6 @@ import { BALACLAVA } from "./balaclava";
 import { BARNET } from "./barnet";
 import { BC_PARKWAY } from "./bcParkway";
 import { BEATTY } from "./beatty";
-import { BERESFORD } from "./beresford";
 import { BIG_BEND_PATH } from "./bigBendPath";
 import { BLANCA } from "./blanca";
 import { BOUNDARY } from "./boundary";
@@ -64,6 +63,7 @@ import { HARO } from "./haro";
 import { HASTINGS_PARK } from "./hastingsPark";
 import { HEATHER } from "./heather";
 import { HIGHBURY } from "./highbury";
+import { HIGHLAND_PARK_LINE } from "./highlandParkLine";
 import { HILLCREST } from "./hillcrest";
 import { HOMER } from "./homer";
 import { HORNBY } from "./hornby";
@@ -184,7 +184,6 @@ export const SEGMENTS = [
   ...BARNET,
   ...BC_PARKWAY,
   ...BEATTY,
-  ...BERESFORD,
   ...BIG_BEND_PATH,
   ...BLANCA,
   ...BOUNDARY,
@@ -235,6 +234,7 @@ export const SEGMENTS = [
   ...HASTINGS_PARK,
   ...HEATHER,
   ...HIGHBURY,
+  ...HIGHLAND_PARK_LINE,
   ...HILLCREST,
   ...HOMER,
   ...HORNBY,

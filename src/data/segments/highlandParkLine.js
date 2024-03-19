@@ -10,7 +10,7 @@ const TO_BC_PARKWAY = [49.21701, -122.96235];
 const SALISBURY_BERESFORD_SE = [49.21686, -122.95743];
 const EDMONDS_BAD_PATH_E = [49.21302, -122.95976];
 
-export const BERESFORD = [
+export const HIGHLAND_PARK_LINE = [
   {
     description: "edmonds to bc parkway bad",
     type: "other",
@@ -97,8 +97,9 @@ export const BERESFORD = [
       PRENTER_RUMBLE_ISH,
     ],
   },
+
   {
-    routeNames: [ROUTES.beresford.name],
+    routeNames: [ROUTES.highlandParkLine.name],
     description: "all",
     type: "mixed",
     positions: [

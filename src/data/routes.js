@@ -182,10 +182,6 @@ export const ROUTES = {
       },
     ],
   },
-  beresford: {
-    name: "Beresford",
-    legs: [{ distance: 2.0, videos: {} }],
-  },
   bigBendPath: {
     name: "Big Bend Path",
     legs: [{ distance: 4.7, videos: {} }],
@@ -485,6 +481,10 @@ export const ROUTES = {
   highbury: {
     name: "Highbury St",
     legs: [{ distance: 0.8, videos: { northbound: VIDEOS.highburyNb } }],
+  },
+  highlandParkLine: {
+    name: "Highland Park Line",
+    legs: [{ distance: 2.0, videos: {} }],
   },
   hillcrest: {
     name: "Hillcrest",
