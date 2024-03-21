@@ -8,6 +8,7 @@ import {
 } from "../utils/segmentTypes";
 import { getAugmentedVideo } from "../utils/videos";
 import { getAugmentedRoute } from "../utils/routes";
+import { DEFAULT_TILE_LAYER } from "../utils/map";
 
 const selectedReducer = (state, action) => {
   switch (action.type) {
@@ -122,6 +123,10 @@ export default function useSelections() {
     []
   );
 
+  // tiles
+
+  const [tileLayerKey, setTileLayerKey] = useState(DEFAULT_TILE_LAYER);
+
   // filters
 
   const [filters, dispatchFilters] = useReducer(
@@ -173,6 +178,8 @@ export default function useSelections() {
     selectVideo: selectVideoId,
     selectRouteAndVideo: selectRouteNameAndVideoId,
     isSegmentHidden,
+    tileLayerKey,
+    setTileLayerKey,
     filters,
     dispatchFilters,
   };

@@ -1,8 +1,11 @@
-import { Fragment } from "react";
+import { Fragment, useContext } from "react";
 import { Pane, TileLayer } from "react-leaflet";
-import { TILE_LAYER } from "../../utils/map";
+import { TILE_LAYERS } from "../../utils/map";
+import { Selections } from "../../App";
 
 export default function PanesAndTiles() {
+  const { tileLayerKey } = useContext(Selections);
+
   return (
     <Fragment>
       <Pane name="elevated-2" style={{ zIndex: 334 }} />
@@ -25,7 +28,10 @@ export default function PanesAndTiles() {
       <Pane name="underground-1-adj" style={{ zIndex: 301 }} />
       <Pane name="underground-1-adj-arrow" style={{ zIndex: 300 }} />
 
-      <TileLayer attribution={TILE_LAYER.attribution} url={TILE_LAYER.url} />
+      <TileLayer
+        attribution={TILE_LAYERS[tileLayerKey].attribution}
+        url={TILE_LAYERS[tileLayerKey].url}
+      />
     </Fragment>
   );
 }
