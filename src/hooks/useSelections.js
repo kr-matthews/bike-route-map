@@ -9,6 +9,7 @@ import {
 import { getAugmentedVideo } from "../utils/videos";
 import { getAugmentedRoute } from "../utils/routes";
 import { DEFAULT_TILE_LAYER } from "../utils/map";
+import useSavedState from "./useSavedState";
 
 const selectedReducer = (state, action) => {
   switch (action.type) {
@@ -125,7 +126,10 @@ export default function useSelections() {
 
   // tiles
 
-  const [tileLayerKey, setTileLayerKey] = useState(DEFAULT_TILE_LAYER);
+  const [tileLayerKey, setTileLayerKey] = useSavedState(
+    "tile_layer",
+    DEFAULT_TILE_LAYER
+  );
 
   // filters
 
