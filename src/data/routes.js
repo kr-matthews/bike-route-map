@@ -394,7 +394,7 @@ export const ROUTES = {
   },
   francesUnion: {
     name: "Frances Union",
-    legs: [{ distance: 6.8, videos: {} }],
+    legs: [{ distance: 6.8, videos: { westbound: VIDEOS.francesUnionWb } }],
   },
   fraserForeshoreTrail: {
     name: "Fraser Foreshore Urban Trail",
@@ -484,7 +484,7 @@ export const ROUTES = {
   },
   highlandParkLine: {
     name: "Highland Park Line",
-    legs: [{ distance: 2.0, videos: {} }],
+    legs: [{ distance: 2.0, videos: { eastbound: VIDEOS.highlandParKLineEb } }],
   },
   hillcrest: {
     name: "Hillcrest",
@@ -560,7 +560,7 @@ export const ROUTES = {
   },
   lakes: {
     name: "Lakes",
-    legs: [{ distance: 9.8, videos: {} }],
+    legs: [{ distance: 9.8, videos: { northbound: VIDEOS.lakesNb } }],
   },
   lakewood: {
     name: "Lakewood",

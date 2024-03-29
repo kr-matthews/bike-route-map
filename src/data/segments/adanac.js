@@ -34,6 +34,7 @@ const DUNLEVY_UNION = [49.27759, -123.09552];
 const UNION_SPLIT = [49.27761, -123.10316];
 const OVERPASS_W = [49.27744, -123.03193];
 const OVERPASS_E = [49.27745, -123.03111];
+const PRE_BOUNDARY = [49.27744, -123.02519];
 
 export const ADANAC = [
   {
@@ -190,7 +191,7 @@ export const ADANAC = [
   },
   {
     routeNames: [ROUTES.adanac.name],
-    description: "highway to boundary",
+    description: "highway to almost boundary",
     type: "quiet",
     elevation: 0.5,
     videoIds: [VIDEOS.adanacWb.id],
@@ -199,8 +200,15 @@ export const ADANAC = [
       CASSIAR_ADANAC,
       [49.27745, -123.02832],
       [49.27744, -123.02571],
-      [49.27744, -123.02375],
-      BOUNDARY_ADANAC,
+      PRE_BOUNDARY,
     ],
+  },
+  {
+    routeNames: [ROUTES.adanac.name],
+    description: "pre-boundary",
+    type: "quiet",
+    videoIds: [VIDEOS.adanacWb.id, VIDEOS.francesUnionWb.id],
+    videoIdsEndAtStart: [VIDEOS.francesUnionWb.id],
+    positions: [PRE_BOUNDARY, [49.27744, -123.02375], BOUNDARY_ADANAC],
   },
 ];

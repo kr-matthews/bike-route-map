@@ -2,13 +2,20 @@ import {
   BC_PARKWAY_EDMONDS_BAD,
   BC_PARKWAY_EDMONDS_GOOD,
   BULLER_BERESFORD_W,
+  FIFTEENTH_STRIDE,
+  MARY_16TH,
   PRENTER_RUMBLE_ISH,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const TO_BC_PARKWAY = [49.21701, -122.96235];
 const SALISBURY_BERESFORD_SE = [49.21686, -122.95743];
 const EDMONDS_BAD_PATH_E = [49.21302, -122.95976];
+const EDMONDS_KINGSWAY_SW = [49.21812, -122.9522];
+const BRITTON_18TH_NW = [49.21786, -122.94967];
+const BRITTON_16TH = [49.2164, -122.94777];
+const BRITTON_STRIDE = [49.21584, -122.94711];
 
 export const HIGHLAND_PARK_LINE = [
   {
@@ -97,11 +104,52 @@ export const HIGHLAND_PARK_LINE = [
       PRENTER_RUMBLE_ISH,
     ],
   },
+  {
+    description: "kingsway (& more) protected",
+    type: "dedicated",
+    videoIds: [VIDEOS.highlandParKLineEb.id],
+    positions: [
+      EDMONDS_KINGSWAY_SW,
+      [49.21817, -122.95221],
+      [49.2182, -122.95216],
+      [49.2182, -122.95185],
+      [49.21819, -122.95146],
+      [49.2182, -122.95142],
+      [49.21817, -122.95004],
+      [49.21812, -122.94996],
+      [49.21806, -122.9499],
+      BRITTON_18TH_NW,
+    ],
+  },
+  {
+    description: "britton",
+    type: "quiet",
+    videoIds: [VIDEOS.highlandParKLineEb.id],
+    videoIdsEndAtEnd: [VIDEOS.highlandParKLineEb.id],
+    positions: [
+      BRITTON_18TH_NW,
+      [49.21778, -122.94951],
+      BRITTON_16TH,
+      BRITTON_STRIDE,
+    ],
+  },
+  {
+    description: "connection from britton to southeast",
+    type: "quiet",
+    positions: [BRITTON_STRIDE, FIFTEENTH_STRIDE],
+  },
+  {
+    description: "16th",
+    type: "quiet",
+    positions: [BRITTON_16TH, [49.21744, -122.94589], MARY_16TH],
+  },
 
   {
     routeNames: [ROUTES.highlandParkLine.name],
     description: "all",
     type: "mixed",
+    videoIds: [VIDEOS.highlandParKLineEb.id],
+    videoIdsStartAtStart: [VIDEOS.highlandParKLineEb.id],
     positions: [
       BULLER_BERESFORD_W,
       [49.21776, -122.97773],
@@ -171,7 +219,7 @@ export const HIGHLAND_PARK_LINE = [
       [49.21766, -122.95288],
       [49.21795, -122.95242],
       [49.21806, -122.95225],
-      [49.21812, -122.9522],
+      EDMONDS_KINGSWAY_SW,
     ],
   },
 ];

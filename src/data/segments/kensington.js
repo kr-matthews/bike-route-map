@@ -6,6 +6,7 @@ import {
   SPERLING_JOE_SAKIC_N,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const KENSINGTON_JOE_SAKIC_NE = [49.25357, -122.96635];
 const KENSINGTON_JOE_SAKIC_NW = [49.25354, -122.96672];
@@ -135,6 +136,7 @@ export const KENSINGTON = [
     routeNames: [ROUTES.kensington.name, ROUTES.lakes.name],
     description: "west side: canada way to highway",
     elevation: 0.5,
+    videoIds: [VIDEOS.lakesNb.id],
     positions: [
       KENSINGTON_CANADA_NW,
       [49.24209, -122.96855],
@@ -155,6 +157,7 @@ export const KENSINGTON = [
     routeNames: [ROUTES.kensington.name, ROUTES.lakes.name],
     description: "west side: overpass",
     elevation: 1,
+    videoIds: [VIDEOS.lakesNb.id],
     positions: [OVERPASS_START, OVERPASS_END],
   },
 
@@ -162,6 +165,7 @@ export const KENSINGTON = [
     routeNames: [ROUTES.kensington.name, ROUTES.lakes.name],
     description: "west side: highway to sprott",
     elevation: 0.5,
+    videoIds: [VIDEOS.lakesNb.id],
     positions: [
       OVERPASS_END,
       [49.24514, -122.96734],

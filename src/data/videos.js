@@ -256,6 +256,11 @@ const VIDEOS = {
     date: new Date("2024 03 06"),
     minutes: 9,
   },
+  francesUnionWb: {
+    id: "p9veS9P-MzM",
+    date: new Date("2024 03 20"),
+    minutes: 22,
+  },
   fraserRiverFraserviewEb: {
     id: "Ak5JhRWDMKw",
     date: new Date("2023 12 23"),
@@ -326,6 +331,11 @@ const VIDEOS = {
     date: new Date("2023 05 29"),
     minutes: 7,
   },
+  highlandParKLineEb: {
+    id: "_R6UzzZBKpw",
+    date: new Date("2024 03 20"),
+    minutes: 8,
+  },
   homerNb: {
     id: "1zkLD7aOBUc",
     date: new Date("2023 09 29"),
@@ -375,6 +385,11 @@ const VIDEOS = {
     id: "wzeQhznjo6U",
     date: new Date("2023 10 03"),
     minutes: 7,
+  },
+  lakesNb: {
+    id: "hR8zZDWbVV8",
+    date: new Date("2024 03 20"),
+    minutes: 33,
   },
   lakewoodNb: {
     id: "xKlYQByxty4",

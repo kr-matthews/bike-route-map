@@ -6,11 +6,13 @@ import {
   INLET_RIDGE_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const BARNET_VIEW_E = [49.27971, -122.86651];
 const BARNET_VIEW_W = [49.27966, -122.86701];
 const BARNET_UNION = [49.28608, -122.86771];
 const SHORT_N = [49.27946, -122.86543];
+const WB_PRE_BAYVIEW = [49.28761, -122.95215];
 
 const TRANS_CANADA_SHOULDER_W = [49.2873, -122.8986];
 const TRANS_CANADA_SHOULDER_E = [49.28808, -122.89701];
@@ -268,7 +270,7 @@ export const BARNET = [
   },
   {
     routeNames: [ROUTES.barnet.name],
-    description: "wb",
+    description: "wb: to pre-bayview",
     type: "shoulder",
     oneWay: "required",
     positions: [
@@ -454,10 +456,30 @@ export const BARNET = [
       [49.28817, -122.95092],
       [49.28801, -122.95133],
       [49.28782, -122.95174],
-      [49.28761, -122.95215],
+      WB_PRE_BAYVIEW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.barnet.name],
+    description: "wb: pre-bayview",
+    type: "shoulder",
+    oneWay: "required",
+    videoIds: [VIDEOS.francesUnionWb.id],
+    videoIdsStartAtStart: [VIDEOS.francesUnionWb.id],
+    positions: [
+      WB_PRE_BAYVIEW,
       [49.28739, -122.95253],
       [49.2872, -122.95282],
       [49.28697, -122.95314],
+      INLET_BAYVIEW_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.barnet.name],
+    description: "wb: bayview to end",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
       INLET_BAYVIEW_W,
       [49.28663, -122.95355],
       [49.28635, -122.95384],

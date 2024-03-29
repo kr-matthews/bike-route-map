@@ -46,7 +46,7 @@ export const FRANCES_UNION = [
     routeNames: [ROUTES.francesUnion.name],
     description: "just east of boundary",
     type: "quiet",
-    videoIds: [VIDEOS.adanacWb.id],
+    videoIds: [VIDEOS.francesUnionWb.id, VIDEOS.adanacWb.id],
     videoIdsStartAtEnd: [VIDEOS.adanacWb.id],
     positions: [
       BOUNDARY_ADANAC,
@@ -58,6 +58,7 @@ export const FRANCES_UNION = [
     routeNames: [ROUTES.francesUnion.name],
     description: "adanac to kensington park",
     type: "quiet",
+    videoIds: [VIDEOS.francesUnionWb.id],
     positions: [
       EAST_OF_BOUNDARY_ADANAC,
       [49.27755, -123.0211],
@@ -81,6 +82,7 @@ export const FRANCES_UNION = [
     routeNames: [ROUTES.francesUnion.name],
     description: "through kensington park",
     type: "mixed",
+    videoIds: [VIDEOS.francesUnionWb.id],
     positions: [
       FELL_FRANCES,
       [49.27924, -122.97542],
@@ -123,17 +125,22 @@ export const FRANCES_UNION = [
   },
   {
     routeNames: [ROUTES.francesUnion.name],
-    description: "kensington park to duthie",
+    description: "kensington park to cliff",
     type: "quiet",
+    videoIds: [VIDEOS.francesUnionWb.id],
     positions: [
       KENSINGTON_UNION_E,
       [49.2778, -122.96686],
       [49.2778, -122.96465],
       [49.27779, -122.96227],
       CLIFF_UNION,
-      [49.27778, -122.95627],
-      DUTHIE_UNION,
     ],
+  },
+  {
+    routeNames: [ROUTES.francesUnion.name],
+    description: "cliff to duthie",
+    type: "quiet",
+    positions: [CLIFF_UNION, [49.27778, -122.95627], DUTHIE_UNION],
   },
   {
     routeNames: [ROUTES.francesUnion.name],
@@ -186,6 +193,7 @@ export const FRANCES_UNION = [
     description: "wb along bayview",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [VIDEOS.francesUnionWb.id],
     positions: [
       INLET_BAYVIEW_W,
       [49.28671, -122.95361],
@@ -205,6 +213,7 @@ export const FRANCES_UNION = [
     description: "malibu alley",
     type: "quiet",
     oneWay: "recommended",
+    videoIds: [VIDEOS.francesUnionWb.id],
     positions: [MALIBU_LANE_E, MALIBU_LANE_W],
   },
   {
@@ -212,6 +221,7 @@ export const FRANCES_UNION = [
     description: "wb along cliff to overpass",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [VIDEOS.francesUnionWb.id],
     positions: [
       MALIBU_LANE_W,
       [49.28596, -122.959],
@@ -231,6 +241,8 @@ export const FRANCES_UNION = [
     description: "wb pre-overpass",
     type: "mixed",
     elevation: 0.5,
+    videoIds: [VIDEOS.francesUnionWb.id, VIDEOS.lakesNb.id],
+    videoIdsEndAtStart: [VIDEOS.lakesNb.id],
     positions: [
       CLIFF_WESTRIDGE_PARK,
       [49.28112, -122.95933],
@@ -254,6 +266,7 @@ export const FRANCES_UNION = [
     description: "hastings overpass",
     type: "mixed",
     elevation: 1,
+    videoIds: [VIDEOS.francesUnionWb.id, VIDEOS.lakesNb.id],
     positions: [
       HASTINGS_OVERPASS_N,
       [49.28035, -122.96045],
@@ -271,9 +284,10 @@ export const FRANCES_UNION = [
   },
   {
     routeNames: [ROUTES.francesUnion.name],
-    description: "overpass to union",
+    description: "overpass to cliff",
     type: "mixed",
     elevation: 0.5,
+    videoIds: [VIDEOS.francesUnionWb.id, VIDEOS.lakesNb.id],
     positions: [
       HASTINGS_OVERPASS_S,
       [49.28, -122.96009],

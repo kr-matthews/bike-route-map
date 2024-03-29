@@ -619,6 +619,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "pre-overpass",
     type: "mixed",
     elevation: 0.5,
+    videoIds: [VIDEOS.lakesNb.id],
     positions: [LAKES_CVG_S, OVERPASS_START],
   },
   {
@@ -626,6 +627,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "train overpass",
     type: "mixed",
     elevation: 1,
+    videoIds: [VIDEOS.lakesNb.id],
     positions: [
       OVERPASS_START,
       [49.2573, -122.96477],
@@ -656,6 +658,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "post-overpass",
     type: "mixed",
     elevation: 0.5,
+    videoIds: [VIDEOS.lakesNb.id],
     positions: [OVERPASS_END, [49.25827, -122.96429], SPERLING_WINSTON],
   },
   {

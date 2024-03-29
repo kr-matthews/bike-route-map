@@ -421,7 +421,7 @@ export const MIDTOWN = [
     routeNames: [ROUTES.midtown.name, ROUTES.lakes.name],
     description: "winding to canada/kensington",
     type: "mixed",
-    videoIds: [VIDEOS.midtownBurnabyWb.id],
+    videoIds: [VIDEOS.midtownBurnabyWb.id, VIDEOS.lakesNb.id],
     positions: [
       DEER_LAKE_CANADA_W,
       [49.2418, -122.96901],
