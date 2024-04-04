@@ -355,6 +355,7 @@ export const SEASIDE_BYPASS = [
     description: "1st quebec to ontario",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.centralValleyVancouverWb.id],
     positions: [QUEBEC_1ST_NW, ONTARIO_1ST_NE],
   },
   {

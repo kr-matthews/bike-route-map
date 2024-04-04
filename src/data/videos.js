@@ -49,7 +49,7 @@ const VIDEOS = {
     date: new Date("2024 01 01"),
     minutes: 25,
   },
-  bcParkwayNewWestminsterWb: {
+  bcParkwayNWWb: {
     id: "hi6hp9mxW3g",
     date: new Date("2024 01 01"),
     minutes: 26,
@@ -180,10 +180,20 @@ const VIDEOS = {
     date: new Date("2023 11 03"),
     minutes: 10,
   },
+  centralValleyNWNb: {
+    id: "XwvlfyEKhn4",
+    date: new Date("2024 03 29"),
+    minutes: 22,
+  },
   centralValleyVancouverEb: {
     id: "UkRTUCueaYA",
     date: new Date("2023 09 09"),
     minutes: 22,
+  },
+  centralValleyVancouverWb: {
+    id: "OJu4uTKpNX4",
+    date: new Date("2024 03 21"),
+    minutes: 23,
   },
   chilcoSb: {
     id: "WZIDTdlVxZY",
@@ -224,6 +234,11 @@ const VIDEOS = {
     id: "jonrkkkL57o",
     date: new Date("2023 08 11"),
     minutes: 10,
+  },
+  dunsmuirWb: {
+    id: "ILxsM_6s064",
+    date: new Date("2024 03 29"),
+    minutes: 7,
   },
   ewenWb: {
     id: "-7uHis88EXU",

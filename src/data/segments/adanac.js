@@ -26,6 +26,7 @@ const MAIN_UNION_SE = [49.27765, -123.09963];
 const MAIN_UNION_SW = [49.27768, -123.09999];
 const EB_ALLEY_BEFORE_MAIN = [49.27768, -123.10057];
 const GORE_UNION_N = [49.27766, -123.09698];
+const WB_PRE_MAIN = [49.27769, -123.0983];
 
 const VERNON_ADANAC = [49.27769, -123.07917];
 const VERNON_UNION = [49.27732, -123.0794];
@@ -49,6 +50,7 @@ export const ADANAC = [
     type: "quiet",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.dunsmuirWb.id],
     positions: [MAIN_UNION_N, MAIN_DUNSMUIR],
   },
   {
@@ -108,13 +110,28 @@ export const ADANAC = [
   },
   {
     routeNames: [ROUTES.adanac.name],
-    description: "wb: gore to expo",
+    description: "wb: gore to pre-main",
+    type: "dedicated",
+    oneWay: "required",
+    videoIds: [VIDEOS.adanacWb.id],
+    positions: [GORE_UNION_N, WB_PRE_MAIN],
+  },
+  {
+    routeNames: [ROUTES.adanac.name],
+    description: "wb: just before main",
+    type: "dedicated",
+    oneWay: "required",
+    videoIds: [VIDEOS.adanacWb.id, VIDEOS.dunsmuirWb.id],
+    videoIdsStartAtStart: [VIDEOS.dunsmuirWb.id],
+    positions: [WB_PRE_MAIN, MAIN_UNION_NE, MAIN_UNION_N],
+  },
+  {
+    routeNames: [ROUTES.adanac.name],
+    description: "wb: main to expo",
     type: "dedicated",
     oneWay: "required",
     videoIds: [VIDEOS.adanacWb.id],
     positions: [
-      GORE_UNION_N,
-      MAIN_UNION_NE,
       MAIN_UNION_N,
       MAIN_UNION_NW,
       [49.27773, -123.10054],

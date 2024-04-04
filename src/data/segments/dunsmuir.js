@@ -16,9 +16,11 @@ const CITADEL_PARADE_DUNSMUIR = [49.27951, -123.10996];
 export const DUNSMUIR = [
   {
     routeNames: [ROUTES.dunsmuir.name],
-    description: "downtown to just before cambie",
+    description: "hornby to just before cambie",
     type: "dedicated",
     elevation: 0.5,
+    videoIds: [VIDEOS.dunsmuirWb.id],
+    videoIdsEndAtStart: [VIDEOS.dunsmuirWb.id],
     positions: [
       HORNBY_DUNSMUIR,
       [49.28431, -123.1174],
@@ -35,15 +37,16 @@ export const DUNSMUIR = [
     description: "just before cambie",
     type: "dedicated",
     elevation: 0.5,
-    videoIds: [VIDEOS.cambieGastownNb.id],
+    videoIds: [VIDEOS.dunsmuirWb.id, VIDEOS.cambieGastownNb.id],
     videoIdsStartAtStart: [VIDEOS.cambieGastownNb.id],
     positions: [WEST_OF_CAMBIE, CAMBIE_DUNSMUIR],
   },
   {
     routeNames: [ROUTES.dunsmuir.name],
-    description: "cambie to out of downtown",
+    description: "cambie to viaduct",
     type: "dedicated",
     elevation: 0.5,
+    videoIds: [VIDEOS.dunsmuirWb.id],
     positions: [
       CAMBIE_DUNSMUIR,
       BEATTY_DUNSMUIR_NW,
@@ -57,6 +60,7 @@ export const DUNSMUIR = [
     description: "viaduct",
     type: "dedicated",
     elevation: 1,
+    videoIds: [VIDEOS.dunsmuirWb.id],
     positions: [
       CITADEL_PARADE_DUNSMUIR,
       [49.27893, -123.10909],

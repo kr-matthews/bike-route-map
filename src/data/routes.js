@@ -161,7 +161,7 @@ export const ROUTES = {
       {
         name: "New Westminster",
         distance: 6.8,
-        videos: { westbound: VIDEOS.bcParkwayNewWestminsterWb },
+        videos: { westbound: VIDEOS.bcParkwayNWWb },
       },
       {
         name: "Surrey",
@@ -320,10 +320,17 @@ export const ROUTES = {
       {
         name: "Vancouver",
         distance: 6.7,
-        videos: { eastbound: VIDEOS.centralValleyVancouverEb },
+        videos: {
+          eastbound: VIDEOS.centralValleyVancouverEb,
+          westbound: VIDEOS.centralValleyVancouverWb,
+        },
       },
       { name: "Burnaby", distance: 11.9, videos: {} },
-      { name: "New Westminster", distance: 5.4, videos: {} },
+      {
+        name: "New Westminster",
+        distance: 5.4,
+        videos: { northbound: VIDEOS.centralValleyNWNb },
+      },
     ],
   },
   chancellor: {
@@ -382,7 +389,7 @@ export const ROUTES = {
   },
   dunsmuir: {
     name: "Dunsmuir",
-    legs: [{ distance: 1.6, videos: {} }],
+    legs: [{ distance: 1.6, videos: { westbound: VIDEOS.dunsmuirWb } }],
   },
   eastMall: {
     name: "East Mall",
