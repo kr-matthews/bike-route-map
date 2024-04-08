@@ -10,7 +10,7 @@ export default function DetailBottomSheet({ mapRef }) {
     <div
       style={{
         paddingLeft: "0.5em",
-        height: selectedRoute ? "425px" : 0,
+        height: selectedRoute ? "67%" : 0,
         borderTopLeftRadius: "1em",
         borderTopRightRadius: "1em",
         display: "flex",
