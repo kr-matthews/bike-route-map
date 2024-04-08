@@ -151,6 +151,10 @@ export const ROUTES = {
         },
       },
       {
+        name: "29th Ave Station: Alternate Westbound Route",
+        videos: { westbound: VIDEOS.bcParkway29thStation },
+      },
+      {
         name: "Burnaby",
         distance: 7,
         videos: {
@@ -162,6 +166,10 @@ export const ROUTES = {
         name: "New Westminster",
         distance: 6.8,
         videos: { westbound: VIDEOS.bcParkwayNWWb },
+      },
+      {
+        name: "22nd St Station: Alternate Route",
+        videos: { eastbound: VIDEOS.bcParkway22ndStation },
       },
       {
         name: "Surrey",
@@ -254,6 +262,10 @@ export const ROUTES = {
         distanceMin: 1.7,
         videos: { southbound: VIDEOS.cambieSb },
       },
+      {
+        name: "Connection with Ontario via 42nd Ave",
+        videos: { eastbound: VIDEOS.fortySecondEb },
+      },
     ],
   },
   cambieGastown: {
@@ -281,7 +293,16 @@ export const ROUTES = {
   },
   canadaLine: {
     name: "Canada Line Path",
-    legs: [{ distance: 3.2, videos: { southbound: VIDEOS.canadaLineSb } }],
+    legs: [
+      { distance: 3.2, videos: { southbound: VIDEOS.canadaLineSb } },
+      {
+        name: "North Arm Bridge",
+        videos: {
+          northbound: VIDEOS.northArmBridgeNb,
+          southbound: VIDEOS.northArmBridgeSb,
+        },
+      },
+    ],
   },
   cardero: {
     name: "Cardero",
@@ -722,7 +743,13 @@ export const ROUTES = {
   },
   ontario: {
     name: "Ontario",
-    legs: [{ distance: 7.3, videos: { northbound: VIDEOS.ontarioNb } }],
+    legs: [
+      { distance: 7.3, videos: { northbound: VIDEOS.ontarioNb } },
+      {
+        name: "Connection with Oakridge Station via 42nd Ave",
+        videos: { eastbound: VIDEOS.fortySecondEb },
+      },
+    ],
   },
   pandora: {
     name: "Pandora",

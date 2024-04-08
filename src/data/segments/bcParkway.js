@@ -50,6 +50,7 @@ const NANAIMO_BC_PARKWAY_SPLIT_EAST = [49.24868, -123.05684];
 const NANAIMO_BC_PARKWAY_SPLIT_WEST = [49.24953, -123.05896];
 const PENTICTON_BC_PARKWAY = [49.24655, -123.05204];
 const PENTICTON_29TH = [49.24463, -123.05206];
+const KASLO_29TH_S = [49.24463, -123.04702];
 const BC_PARKWAY_29TH_STATION = [49.24432, -123.04668];
 const STATION_29TH_E = [49.24364, -123.04521];
 const RUPERT_VANNESS_NE = [49.24071, -123.03766];
@@ -128,20 +129,20 @@ export const BC_PARKWAY = [
     description: "29th alt road",
     type: "shared",
     oneWay: "recommended",
-    videoIds: [VIDEOS.sunriseNb.id],
-    positions: [[49.24463, -123.04702], SLOCAN_29TH],
+    videoIds: [VIDEOS.bcParkway29thStation.id, VIDEOS.sunriseNb.id],
+    positions: [KASLO_29TH_S, SLOCAN_29TH],
   },
   {
     routeNames: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
     type: "mixed",
     description: "29th alt path",
     oneWay: "recommended",
-    videoIds: [VIDEOS.sunriseNb.id],
+    videoIds: [VIDEOS.bcParkway29thStation.id, VIDEOS.sunriseNb.id],
     positions: [
       BC_PARKWAY_29TH_STATION,
       [49.24437, -123.04673],
       [49.2445, -123.04699],
-      [49.24463, -123.04702],
+      KASLO_29TH_S,
     ],
   },
   {
@@ -159,6 +160,7 @@ export const BC_PARKWAY = [
     description: "29th alt. wb to penticton",
     type: "shared",
     oneWay: "recommended",
+    videoIds: [VIDEOS.bcParkway29thStation.id],
     positions: [SLOCAN_29TH, PENTICTON_29TH],
   },
   {
@@ -166,6 +168,8 @@ export const BC_PARKWAY = [
     description: "penticton alt. wb",
     type: "quiet",
     oneWay: "recommended",
+    videoIds: [VIDEOS.bcParkway29thStation.id],
+    videoIdsEndAtEnd: [VIDEOS.bcParkway29thStation.id],
     positions: [PENTICTON_29TH, PENTICTON_BC_PARKWAY],
   },
 
@@ -327,6 +331,7 @@ export const BC_PARKWAY = [
     description: "sunrise path",
     type: "mixed",
     videoIds: [
+      VIDEOS.bcParkway29thStation.id,
       VIDEOS.bcParkwayVancouverEb.id,
       VIDEOS.bcParkwayVancouverWb.id,
       VIDEOS.sunriseNb.id,
@@ -340,19 +345,27 @@ export const BC_PARKWAY = [
   },
   {
     routeNames: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
-    description: "sunrise road",
+    description: "29th station to todd",
+    type: "quiet",
+    videoIds: [
+      VIDEOS.bcParkway29thStation.id,
+      VIDEOS.bcParkwayVancouverEb.id,
+      VIDEOS.bcParkwayVancouverWb.id,
+      VIDEOS.sunriseNb.id,
+    ],
+    videoIdsStartAtEnd: [VIDEOS.bcParkway29thStation.id],
+    positions: [STATION_29TH_E, [49.24372, -123.04514], TODD_VANNESS],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
+    description: "todd to earles",
     type: "quiet",
     videoIds: [
       VIDEOS.bcParkwayVancouverEb.id,
       VIDEOS.bcParkwayVancouverWb.id,
       VIDEOS.sunriseNb.id,
     ],
-    positions: [
-      STATION_29TH_E,
-      [49.24372, -123.04514],
-      TODD_VANNESS,
-      EARLES_VANNESS,
-    ],
+    positions: [TODD_VANNESS, EARLES_VANNESS],
   },
   {
     routeNames: [ROUTES.bcParkway.name],

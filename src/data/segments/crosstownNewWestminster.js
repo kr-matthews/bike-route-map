@@ -98,6 +98,8 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   {
     description: "bc parkway curve",
     type: "mixed",
+    videoIds: [VIDEOS.bcParkway22ndStation.id],
+    videoIdsStartAtStart: [VIDEOS.bcParkway22ndStation.id],
     positions: [
       BC_PARKWAY_22ND_STATION_SPLIT,
       [49.19973, -122.95081],
@@ -110,12 +112,14 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   {
     description: "grimston park alt: sidewalk",
     type: "other",
+    videoIds: [VIDEOS.bcParkway22ndStation.id],
     positions: [TWENTIETH_7TH_E_S, TWENTIETH_MEAD_E],
   },
   {
     description: "grimston park alt: park",
     type: "mixed",
     elevation: 0.5,
+    videoIds: [VIDEOS.bcParkway22ndStation.id],
     positions: [
       TWENTIETH_MEAD_E,
       [49.2011, -122.9451],
@@ -131,6 +135,7 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     description: "grimston park alt: overpass",
     type: "mixed",
     elevation: 1,
+    videoIds: [VIDEOS.bcParkway22ndStation.id],
     positions: [
       STEWARDSON_OVERPASS_N,
       [49.20195, -122.94148],
@@ -144,11 +149,14 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     description: "grimston park alt: after overpass",
     type: "mixed",
     elevation: 0.5,
+    videoIds: [VIDEOS.bcParkway22ndStation.id],
     positions: [STEWARDSON_OVERPASS_S, STEWARDSON_OVERPASS_S_POST],
   },
   {
     description: "grimston park alt: end bit",
     type: "mixed",
+    videoIds: [VIDEOS.bcParkway22ndStation.id],
+    videoIdsEndAtEnd: [VIDEOS.bcParkway22ndStation.id],
     positions: [
       STEWARDSON_OVERPASS_S_POST,
       [49.20165, -122.94117],
@@ -163,11 +171,20 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   },
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],
-    description: "west bit",
+    description: "west bit between bc parkways",
     type: "shared",
     positions: [
       BC_PARKWAY_7TH,
       [49.19956, -122.95047],
+      BC_PARKWAY_22ND_STATION,
+    ],
+  },
+  {
+    routeNames: [ROUTES.crosstownNewWestminster.name],
+    description: "bc parkway curve to 20th",
+    type: "shared",
+    videoIds: [VIDEOS.bcParkway22ndStation.id],
+    positions: [
       BC_PARKWAY_22ND_STATION,
       [49.20047, -122.94883],
       [49.20152, -122.94687],
@@ -178,6 +195,7 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "20th sidewalk",
     type: "other",
+    videoIds: [VIDEOS.bcParkway22ndStation.id],
     positions: [TWENTIETH_7TH_E_N, TWENTIETH_7TH_E_S],
   },
   {

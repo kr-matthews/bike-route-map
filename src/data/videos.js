@@ -39,6 +39,16 @@ const VIDEOS = {
     date: new Date("2024 01 21"),
     minutes: 23,
   },
+  bcParkway22ndStation: {
+    id: "CQNzsCvC60U",
+    date: new Date("2024 03 29"),
+    minutes: 3,
+  },
+  bcParkway29thStation: {
+    id: "pIzm-BLAqak",
+    date: new Date("2024 03 15"),
+    minutes: 2,
+  },
   bcParkwayBurnabyEb: {
     id: "a9Rwmtu7SI0",
     date: new Date("2023 07 14"),
@@ -149,12 +159,6 @@ const VIDEOS = {
     date: new Date("2023 08 21"),
     minutes: 2,
   },
-  // does not correspond to route/leg
-  // cambieSeparatedNb: {
-  //   id: "c0Yjyt4isPs",
-  //   date: new Date("2023 07 05"),
-  //   minutes: 4,
-  // },
   canadaLineSb: {
     id: "svcADiqZWQM",
     date: new Date("2024 02 12"),
@@ -250,12 +254,11 @@ const VIDEOS = {
     date: new Date("2023 07 22"),
     minutes: 31,
   },
-  // !! bring back
-  // fortySecondEb: {
-  //   id: "Mz7lLKjdmQw",
-  //   date: new Date("2023 08 31"),
-  //   minutes: 2,
-  // },
+  fortySecondEb: {
+    id: "Mz7lLKjdmQw",
+    date: new Date("2023 08 31"),
+    minutes: 2,
+  },
   fourteenthWb: {
     id: "_13c2Bcl_4Y",
     date: new Date("2023 08 12"),
@@ -466,18 +469,16 @@ const VIDEOS = {
     date: new Date("2023 08 03"),
     minutes: 1,
   },
-  // does not correspond to route/leg
-  // northArmBridgeNb: {
-  //   id: "SANpYy0-wFc",
-  //   date: new Date("2023 07 05"),
-  //   minutes: 6,
-  // },
-  // does not correspond to route/leg
-  // northArmBridgeSb: {
-  //   id: "ujANKTjcu1A",
-  //   date: new Date("2023 07 05"),
-  //   minutes: 6,
-  // },
+  northArmBridgeNb: {
+    id: "SANpYy0-wFc",
+    date: new Date("2023 07 05"),
+    minutes: 6,
+  },
+  northArmBridgeSb: {
+    id: "ujANKTjcu1A",
+    date: new Date("2023 07 05"),
+    minutes: 6,
+  },
   no3Nb: {
     id: "HWRL6CPVcSU",
     date: new Date("2024 02 26"),
