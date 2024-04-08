@@ -304,7 +304,7 @@ export const HASTINGS_PARK = [
   {
     routeNames: [ROUTES.hastingsPark.name],
     description: "to bridgeway nb",
-    type: "painted",
+    type: "comfortable",
     oneWay: "recommended",
     hideArrows: true,
     positions: [
