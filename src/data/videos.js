@@ -319,6 +319,11 @@ const VIDEOS = {
     date: new Date("2024 02 09"),
     minutes: 6,
   },
+  hastingsPortsideCassiar: {
+    id: "BBflQWQfrxo",
+    date: new Date("2024 04 06"),
+    minutes: 5,
+  },
   hastingsPortsideWindermere: {
     id: "DMYMtO0aF5A",
     date: new Date("2023 12 23"),
@@ -453,6 +458,11 @@ const VIDEOS = {
     id: "uDSSzA4ZN0Q",
     date: new Date("2023 10 07"),
     minutes: 12,
+  },
+  nanaimoNb: {
+    id: "bSexNi-FL1E",
+    date: new Date("2024 04 06"),
+    minutes: 5,
   },
   nanaimoSb: {
     id: "oeVjaawbtNc",
@@ -613,6 +623,16 @@ const VIDEOS = {
     id: "Fuq2nBBk0IM",
     date: new Date("2023 12 23"),
     minutes: 40,
+  },
+  secondNarrowsNb: {
+    id: "salLq2Dkfao",
+    date: new Date("2024 04 06"),
+    minutes: 9,
+  },
+  secondNarrowsSb: {
+    id: "gfOPjc7y4ec",
+    date: new Date("2024 04 06"),
+    minutes: 8,
   },
   sixteenthEb: {
     id: "cVULSdbSeH0",

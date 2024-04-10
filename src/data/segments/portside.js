@@ -16,8 +16,13 @@ export const PORTSIDE = [
   {
     description: "connection with second narrows bridge",
     type: "mixed",
-    videoIds: [VIDEOS.portsideEb.id, VIDEOS.cassiarSb.id],
+    videoIds: [
+      VIDEOS.portsideEb.id,
+      VIDEOS.cassiarSb.id,
+      VIDEOS.secondNarrowsSb.id,
+    ],
     videoIdsStartAtStart: [VIDEOS.cassiarSb.id],
+    videoIdsEndAtStart: [VIDEOS.secondNarrowsSb.id],
     positions: [
       SKEENA_BRIDGEWAY,
       [49.29054, -123.02848],
@@ -76,9 +81,10 @@ export const PORTSIDE = [
   },
   {
     routeNames: [ROUTES.portside.name],
-    description: "creekway park and bridgeway",
+    description: "creekway park west half",
     type: "mixed",
-    videoIds: [VIDEOS.portsideEb.id],
+    videoIds: [VIDEOS.portsideEb.id, VIDEOS.hastingsPortsideCassiar.id],
+    videoIdsStartAtStart: [VIDEOS.hastingsPortsideCassiar.id],
     positions: [
       MCGILL_PARKING_E,
       [49.28831, -123.03709],
@@ -89,6 +95,15 @@ export const PORTSIDE = [
       [49.28819, -123.03546],
       [49.28825, -123.03508],
       [49.28835, -123.03465],
+      BRIDGEWAY_CREEKWAY_PARK_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.portside.name],
+    description: "creekway park east half, and bridgeway",
+    type: "mixed",
+    videoIds: [VIDEOS.portsideEb.id],
+    positions: [
       BRIDGEWAY_CREEKWAY_PARK_W,
       [49.28854, -123.03357],
       BRIDGEWAY_CREEKWAY_PARK_N,

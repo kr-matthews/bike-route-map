@@ -40,6 +40,9 @@ export const NANAIMO = [
     description: "nb",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.nanaimoNb.id],
+    videoIdsStartAtStart: [VIDEOS.nanaimoNb.id],
+    videoIdsEndAtEnd: [VIDEOS.nanaimoNb.id],
     positions: [
       [49.26855, -123.05648],
       [49.26941, -123.05648],

@@ -498,7 +498,10 @@ export const ROUTES = {
         distance: 0.7,
         videos: { northbound: VIDEOS.hastingsWindermereCassiar },
       },
-      { name: "Cassiar <-> Portside", videos: {} },
+      {
+        name: "Cassiar <-> Portside",
+        videos: { southbound: VIDEOS.hastingsPortsideCassiar },
+      },
       { name: "Pandora <-> Windermere", videos: {} },
     ],
   },
@@ -691,7 +694,12 @@ export const ROUTES = {
   },
   nanaimo: {
     name: "Nanaimo St",
-    legs: [{ distance: 1.6, videos: { southbound: VIDEOS.nanaimoSb } }],
+    legs: [
+      {
+        distance: 1.6,
+        videos: { northbound: VIDEOS.nanaimoNb, southbound: VIDEOS.nanaimoSb },
+      },
+    ],
   },
   nelson: {
     name: "Nelson St",
@@ -915,7 +923,15 @@ export const ROUTES = {
   secondNarrowsBridge: {
     name: "Second Narrows Bridge",
     shortName: "Second Narrows Br.",
-    legs: [{ distance: 2, videos: {} }],
+    legs: [
+      {
+        distance: 2,
+        videos: {
+          northbound: VIDEOS.secondNarrowsNb,
+          southbound: VIDEOS.secondNarrowsSb,
+        },
+      },
+    ],
   },
   shellRoadTrail: {
     name: "Shell Road Trail",
