@@ -38,7 +38,8 @@ export default function About({ navigateTo }) {
               View the <b>legend</b>.
             </li>
             <li>
-              <b>Filter</b> which segments are displayed on the map.
+              <b>Filter</b> which segments are displayed on the map, and change
+              the <b>background</b> map.
             </li>
           </ul>
         </ul>

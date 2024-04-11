@@ -9,9 +9,13 @@ import {
 import { BLACK, WHITE } from "../../utils/colours";
 import { VIEWS } from "./Sidebar";
 import Panel from "./Panel";
-import { AUGMENTED_ROUTES, getBackgroundColor } from "../../utils/routes";
+import {
+  AUGMENTED_ROUTES,
+  getBackgroundColor,
+  getRouteBounds,
+} from "../../utils/routes";
 
-export default function Routes({ navigateTo }) {
+export default function Routes({ navigateTo, mapRef }) {
   const [searchText, setSearchText] = useState("");
   const routesToShow = useMemo(
     () =>
@@ -38,14 +42,14 @@ export default function Routes({ navigateTo }) {
         }}
       >
         {routesToShow.map((route) => (
-          <Route key={route.name} route={route} />
+          <Route key={route.name} route={route} mapRef={mapRef} />
         ))}
       </div>
     </Panel>
   );
 }
 
-function Route({ route }) {
+function Route({ route, mapRef }) {
   const { selectedRoute, selectRoute, highlightedRoute, highlightRoute } =
     useContext(Selections);
   const isHighlighted = highlightedRoute?.name === route.name;
@@ -61,18 +65,22 @@ function Route({ route }) {
     (acc, leg) => acc + Object.keys(leg.videos ?? []).length,
     0
   );
-  const nameDistanceAndVideoCount = [
+  const nameDistanceVideoCountMessages = [
     route.name,
     displayDistance(distance),
     videoCount ? `${videoCount} video${videoCount === 1 ? "" : "s"}` : null,
+    "Click for details & videos",
+    "Right-click to zoom-to",
   ]
     .filter(Boolean)
     .join("\n");
   // route.legs.flatMap((leg) => Object.keys(leg.videos ?? []).map(capitalize) ?? [])
 
+  const bounds = getRouteBounds(route.name);
+
   return (
     <div
-      title={nameDistanceAndVideoCount}
+      title={nameDistanceVideoCountMessages}
       style={{
         textAlign: "center",
         width: "10em",
@@ -84,7 +92,15 @@ function Route({ route }) {
       }}
       onMouseOver={() => highlightRoute(route.name)}
       onMouseOut={() => highlightRoute(null)}
-      onMouseDown={() => selectRoute(route.name)}
+      onClick={() => selectRoute(route.name)}
+      onContextMenu={
+        bounds
+          ? (e) => {
+              e.preventDefault();
+              mapRef.fitBounds(bounds);
+            }
+          : undefined
+      }
     >
       <span
         style={{

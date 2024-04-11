@@ -37,7 +37,11 @@ export default function Sidebar({ mapRef }) {
         (view) =>
           (viewKey === view.key ||
             (view.key === VIEWS.about.key && isNoViewSelected)) && (
-            <view.Component key={view.key} navigateTo={navigateTo} />
+            <view.Component
+              key={view.key}
+              navigateTo={navigateTo}
+              mapRef={mapRef}
+            />
           )
       )}
 
