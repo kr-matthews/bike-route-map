@@ -1,6 +1,7 @@
 import {
   BUSWELL_GRANVILLE_N,
   NO_3_ACKROYD_W,
+  NO_3_BRIDGEPORT,
   NO_3_CAMBIE_SE,
   NO_3_SEA_ISLAND_SW_S_PRE,
 } from "../intersections";
@@ -11,8 +12,11 @@ const PRE_NO_3_COOK = [49.16655, -123.1349];
 const NO_3_COOK_NE = [49.16656, -123.13644];
 const NO_3_BUS_MALL_SE = [49.16743, -123.13643];
 const NO_3_SEA_ISLAND_SW_S = [49.19069, -123.13087];
+const SEXSMITH_BECKWITH_W = [49.19381, -123.12821];
+const SMITH_BECKWITH = [49.19381, -123.1254];
 
 export const NO_3 = [
+  // south end
   {
     description: "connection via buswell from granville",
     type: "shared",
@@ -42,6 +46,43 @@ export const NO_3 = [
       NO_3_COOK_NE,
     ],
   },
+  // north end
+  {
+    description: "no. 3 north tip, & beckwith",
+    type: "shared",
+    positions: [
+      NO_3_BRIDGEPORT,
+      [49.19381, -123.12949],
+      SEXSMITH_BECKWITH_W,
+      SMITH_BECKWITH,
+    ],
+  },
+  {
+    description: "smith & van horne tip",
+    type: "quiet",
+    positions: [
+      SMITH_BECKWITH,
+      [49.19463, -123.1254],
+      [49.1947, -123.12531],
+      [49.1948, -123.12497], // lazy
+    ],
+  },
+  {
+    description: "to bridgeport station",
+    type: "comfortable",
+    positions: [
+      SEXSMITH_BECKWITH_W,
+      [49.19424, -123.12821],
+      [49.19428, -123.12803],
+      [49.19464, -123.12803],
+      [49.19478, -123.12787],
+      [49.19478, -123.12723],
+      [49.19483, -123.1271],
+      [49.1948, -123.12701],
+      [49.19475, -123.12697],
+    ],
+  },
+
   {
     routeNames: [ROUTES.no3.name],
     description: "nb: block after cook",
@@ -93,6 +134,7 @@ export const NO_3 = [
       [49.19129, -123.1298],
       [49.1916, -123.12961],
       [49.19183, -123.12947],
+      NO_3_BRIDGEPORT,
     ],
   },
   {
@@ -101,6 +143,7 @@ export const NO_3 = [
     type: "painted",
     oneWay: "required",
     positions: [
+      NO_3_BRIDGEPORT,
       [49.19183, -123.12978],
       [49.19161, -123.12995],
       [49.19114, -123.13045],

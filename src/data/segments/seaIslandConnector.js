@@ -1,5 +1,6 @@
 import {
   GRANT_MCCONACHIE_REJOIN,
+  NO_3_BRIDGEPORT,
   SEA_ISLAND_CONNECTOR_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -21,6 +22,7 @@ export const SEA_ISLAND_CONNECTOR = [
     videoIds: [VIDEOS.seaIslandConnectorWb.id],
     videoIdsStartAtStart: [VIDEOS.seaIslandConnectorWb.id],
     positions: [
+      NO_3_BRIDGEPORT,
       [49.19206, -123.12976],
       [49.19204, -123.13084],
       [49.19205, -123.13202],
