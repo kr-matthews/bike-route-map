@@ -1,5 +1,6 @@
 import mapIcon from "../../images/marker-yellow.svg";
 import videoIcon from "../../images/video.svg";
+import databaseIcon from "../../images/database.svg";
 import {
   HeavyFooter,
   HomeLink,
@@ -78,6 +79,16 @@ export default function About({ navigateTo }) {
               url="https://www.youtube.com/channel/UCgzTHi3DEAYwPyR1M7P_AeQ"
               image={videoIcon}
               description="Associated YouTube Channel"
+            />
+            <Link
+              url="https://opendata.vancouver.ca/explore/dataset/bikeways/information/"
+              image={databaseIcon}
+              description="City of Vancouver Bikeways Dataset"
+            />
+            <Link
+              url="https://www.openstreetmap.org/#map=13/49.2506/-123.1161"
+              image={databaseIcon}
+              description="Open Street Map"
             />
             <Link
               url="https://vancouver.ca/files/cov/map-cycling-vancouver.pdf"
