@@ -4,6 +4,7 @@ import {
   SHELL_WILLIAMS_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const SHELL_ATHABASCA_N = [49.1449, -123.10292];
 const SHELL_FRANCIS = [49.14796, -123.1029];
@@ -63,7 +64,14 @@ export const SHELL_ROAD_TRAIL = [
     routeNames: [ROUTES.shellRoadTrail.name],
     description: "all",
     type: "mixed",
+    videoIds: [VIDEOS.shellNb.id, VIDEOS.shellSb.id],
+    videoIdsStartAtStart: [VIDEOS.shellNb.id],
+    videoIdsStartAtEnd: [VIDEOS.shellSb.id],
+    videoIdsEndAtStart: [VIDEOS.shellSb.id],
+    videoIdsEndAtEnd: [VIDEOS.shellNb.id],
     positions: [
+      [49.13329, -123.10313],
+      [49.13351, -123.10313],
       [49.13358, -123.10316],
       [49.13404, -123.10312],
       [49.13454, -123.1031],

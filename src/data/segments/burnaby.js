@@ -12,6 +12,8 @@ export const BURNABY = [
     routeNames: [ROUTES.burnaby.name],
     description: "primary",
     type: "quiet",
+    videoIds: [VIDEOS.burnabyWb.id],
+    videoIdsEndAtStart: [VIDEOS.burnabyWb.id],
     positions: [
       CARDERO_BURNABY,
       [49.28375, -123.13854],
@@ -26,7 +28,7 @@ export const BURNABY = [
     routeNames: [ROUTES.burnaby.name],
     description: "crossing burrard",
     type: "quiet",
-    videoIds: [VIDEOS.burrardNb.id],
+    videoIds: [VIDEOS.burnabyWb.id, VIDEOS.burrardNb.id],
     videoIdsEndAtStart: [VIDEOS.burrardNb.id],
     positions: [BURRARD_BURNABY_W, BURRARD_BURNABY_E],
   },

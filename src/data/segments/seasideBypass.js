@@ -616,6 +616,7 @@ export const SEASIDE_BYPASS = [
     type: "shared",
     oneWay: "required",
     hideArrows: true,
+    videoIds: [VIDEOS.seasideBypassPacificEb.id],
     positions: [THURLOW_PACIFIC_W, THURLOW_PACIFIC_S],
   },
   {
@@ -623,7 +624,7 @@ export const SEASIDE_BYPASS = [
     description: "pacific eb: thurlow to burrard split",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.burrardBridgeSb.id],
+    videoIds: [VIDEOS.burrardBridgeSb.id, VIDEOS.seasideBypassPacificEb.id],
     positions: [
       THURLOW_PACIFIC_S,
       [49.27822, -123.13443],
@@ -639,6 +640,7 @@ export const SEASIDE_BYPASS = [
     description: "pacific eb: starting to cross burrard",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.seasideBypassPacificEb.id],
     positions: [
       BURRARD_PACIFIC_SW,
       [49.27698, -123.1328],
@@ -650,6 +652,7 @@ export const SEASIDE_BYPASS = [
     description: "pacific eb: crossing burrard",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.seasideBypassPacificEb.id],
     positions: [EASTBOUND_SPLIT_AT_BURRARD, BURRARD_PACIFIC_SE],
   },
   {
@@ -657,6 +660,7 @@ export const SEASIDE_BYPASS = [
     description: "pacific eb: burrard to beyond richards",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.seasideBypassPacificEb.id],
     positions: [
       BURRARD_PACIFIC_SE,
       BURRARD_PACIFIC_SE_E,
@@ -680,6 +684,7 @@ export const SEASIDE_BYPASS = [
     description: "pacific eb: beyond richards to cambie",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.seasideBypassPacificEb.id],
     positions: [
       PACIFIC_EB_PROTECTION_END,
       [49.27334, -123.12701],
@@ -722,6 +727,7 @@ export const SEASIDE_BYPASS = [
     description: "pacific eb: under cambie off ramp",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.seasideBypassPacificEb.id],
     positions: [
       CAMBIE_PACIFIC_EE,
       [49.27433, -123.114],
@@ -735,6 +741,8 @@ export const SEASIDE_BYPASS = [
     description: "pacific eb: smithe to quebec",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.seasideBypassPacificEb.id],
+    videoIdsEndAtEnd: [VIDEOS.seasideBypassPacificEb.id],
     positions: [
       SMITHE_PACIFIC_SW,
       [49.27481, -123.11282],
@@ -831,7 +839,7 @@ export const SEASIDE_BYPASS = [
     routeNames: [ROUTES.seasideBypass.name],
     description: "pacific: beach to burrard",
     type: "shared",
-    videoIds: [VIDEOS.seasideBypassExpoWb.id],
+    videoIds: [VIDEOS.seasideBypassPacificEb.id, VIDEOS.seasideBypassExpoWb.id],
     positions: [
       JERVIS_BEACH_SW,
       [49.2807, -123.13814],
@@ -880,7 +888,8 @@ export const SEASIDE_BYPASS = [
     routeNames: [ROUTES.seasideBypass.name],
     description: "beach: little bit to jervis",
     type: "dedicated",
-    videoIds: [VIDEOS.seasideBypassExpoWb.id],
+    videoIds: [VIDEOS.seasideBypassPacificEb.id, VIDEOS.seasideBypassExpoWb.id],
+    videoIdsStartAtStart: [VIDEOS.seasideBypassPacificEb.id],
     videoIdsEndAtStart: [VIDEOS.seasideBypassExpoWb.id],
     positions: [BEACH_SPLIT, [49.28112, -123.13889], JERVIS_BEACH_SW],
   },

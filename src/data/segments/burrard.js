@@ -151,8 +151,15 @@ export const BURRARD = [
       BURRARD_PACIFIC_SE_W,
       BURRARD_PACIFIC_NE,
       BURRARD_DRAKE_E,
-      BURRARD_BURNABY_E,
     ],
+  },
+  {
+    routeNames: [ROUTES.burrard.name],
+    description: "northbound drake to burnaby",
+    type: "dedicated",
+    oneWay: "required",
+    videoIds: [VIDEOS.burrardNb.id, VIDEOS.burnabyWb.id],
+    positions: [BURRARD_DRAKE_E, BURRARD_BURNABY_E],
   },
   {
     routeNames: [ROUTES.burrard.name],
@@ -185,14 +192,21 @@ export const BURRARD = [
     ],
   },
   {
+    description: "drake crossing",
+    type: "dedicated",
+    positions: [BURRARD_DRAKE_W, BURRARD_DRAKE_E],
+  },
+  {
     description: "drake connection with hornby",
     type: "dedicated",
-    positions: [
-      BURRARD_DRAKE_W,
-      BURRARD_DRAKE_E,
-      HORNBY_DRAKE,
-      [49.27704, -123.12935],
-    ],
+    videoIds: [VIDEOS.burnabyWb.id],
+    videoIdsStartAtEnd: [VIDEOS.burnabyWb.id],
+    positions: [BURRARD_DRAKE_E, HORNBY_DRAKE],
+  },
+  {
+    description: "drake continuing east",
+    type: "dedicated",
+    positions: [HORNBY_DRAKE, [49.27704, -123.12935]],
   },
 
   // southbound

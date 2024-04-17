@@ -229,7 +229,7 @@ export const ROUTES = {
   },
   burnaby: {
     name: "Burnaby",
-    legs: [{ distance: 0.9, videos: {} }],
+    legs: [{ distance: 0.9, videos: { westbound: VIDEOS.burnabyWb } }],
   },
   burrard: {
     name: "Burrard St",
@@ -587,7 +587,16 @@ export const ROUTES = {
   },
   knightStreetBridge: {
     name: "Knight Street Bridge",
-    legs: [{ distance: 2.2, videos: { southbound: VIDEOS.knightStBridgeSb } }],
+    legs: [
+      {
+        name: "to/from Inverness",
+        distance: 2.2,
+        videos: {
+          northbound: VIDEOS.knightStBridgeNb,
+          southbound: VIDEOS.knightStBridgeSb,
+        },
+      },
+    ],
   },
   lakes: {
     name: "Lakes",
@@ -739,7 +748,7 @@ export const ROUTES = {
   },
   oakStreetBridge: {
     name: "Oak Street Bridge",
-    legs: [{ distance: 1.9, videos: {} }],
+    legs: [{ distance: 1.9, videos: { northbound: VIDEOS.oakNb } }],
   },
   odlin: {
     name: "Odlin",
@@ -898,7 +907,10 @@ export const ROUTES = {
       {
         name: "Pacific/Expo",
         distance: 3.3,
-        videos: { westbound: VIDEOS.seasideBypassExpoWb },
+        videos: {
+          eastbound: VIDEOS.seasideBypassPacificEb,
+          westbound: VIDEOS.seasideBypassExpoWb,
+        },
       },
       {
         // includes quebec
@@ -935,7 +947,12 @@ export const ROUTES = {
   },
   shellRoadTrail: {
     name: "Shell Road Trail",
-    legs: [{ distance: 5.3, videos: {} }],
+    legs: [
+      {
+        distance: 5.3,
+        videos: { northbound: VIDEOS.shellNb, southbound: VIDEOS.shellSb },
+      },
+    ],
   },
   smithe: {
     name: "Smithe St",

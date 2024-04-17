@@ -119,6 +119,11 @@ const VIDEOS = {
     date: new Date("2024 02 12"),
     minutes: 4,
   },
+  burnabyWb: {
+    id: "oTdJLOvaH8g",
+    date: new Date("2024 04 10"),
+    minutes: 4,
+  },
   burrardNb: {
     id: "62m58RRdHcg",
     date: new Date("2023 08 12"),
@@ -404,6 +409,11 @@ const VIDEOS = {
     date: new Date("2023 11 03"),
     minutes: 3,
   },
+  knightStBridgeNb: {
+    id: "jHY8amhWxyU",
+    date: new Date("2024 04 13"),
+    minutes: 10,
+  },
   knightStBridgeSb: {
     id: "wzeQhznjo6U",
     date: new Date("2023 10 03"),
@@ -503,6 +513,11 @@ const VIDEOS = {
     id: "t1EWe9TW-rw",
     date: new Date("2024 02 23"),
     minutes: 19,
+  },
+  oakNb: {
+    id: "_AK5J4ncAfM",
+    date: new Date("2024 04 09"),
+    minutes: 9,
   },
   offBroadwayWb: {
     id: "7nKl_moRiog",
@@ -614,6 +629,11 @@ const VIDEOS = {
     date: new Date("2024 02 23"),
     minutes: 11,
   },
+  seasideBypassPacificEb: {
+    id: "lvA_CEemgRM",
+    date: new Date("2024 04 10"),
+    minutes: 11,
+  },
   seasideKitsWb: {
     id: "htrdfMC4NBg",
     date: new Date("2023 10 09"),
@@ -633,6 +653,16 @@ const VIDEOS = {
     id: "gfOPjc7y4ec",
     date: new Date("2024 04 06"),
     minutes: 8,
+  },
+  shellNb: {
+    id: "kKSkUAXoGH4",
+    date: new Date("2024 04 13"),
+    minutes: 17,
+  },
+  shellSb: {
+    id: "GFJMEisJ4FA",
+    date: new Date("2024 04 13"),
+    minutes: 16,
   },
   sixteenthEb: {
     id: "cVULSdbSeH0",
@@ -654,6 +684,12 @@ const VIDEOS = {
     date: new Date("2024 03 13"),
     minutes: 5,
   },
+  // !!
+  // stevestonEb: {
+  //   id: "ryKwp-INnrI",
+  //   date: new Date("2024 04 13"),
+  //   minutes: 2,
+  // },
   sunriseNb: {
     id: "YGhkRf0VmKw",
     date: new Date("2023 08 26"),

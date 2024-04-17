@@ -171,7 +171,8 @@ export const GARDEN_CITY = [
     description: "patterson",
     type: "comfortable",
     oneWay: "recommended",
-    videoIds: [VIDEOS.gardenCityNb.id],
+    videoIds: [VIDEOS.gardenCityNb.id, VIDEOS.oakNb.id],
+    videoIdsStartAtStart: [VIDEOS.oakNb.id],
     positions: [NB_LANE_END, [49.19017, -123.12442], GARDEN_CITY_PATTERSON_E],
   },
   {
