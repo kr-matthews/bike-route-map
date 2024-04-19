@@ -1,5 +1,6 @@
 import {
   SHELL_ALDERBRIDGE_NE,
+  SHELL_STEVESTON_SE,
   SHELL_WILLIAMS_N,
   SHELL_WILLIAMS_S,
 } from "../intersections";
@@ -70,7 +71,7 @@ export const SHELL_ROAD_TRAIL = [
     videoIdsEndAtStart: [VIDEOS.shellSb.id],
     videoIdsEndAtEnd: [VIDEOS.shellNb.id],
     positions: [
-      [49.13329, -123.10313],
+      SHELL_STEVESTON_SE,
       [49.13351, -123.10313],
       [49.13358, -123.10316],
       [49.13404, -123.10312],

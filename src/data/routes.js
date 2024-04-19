@@ -980,6 +980,11 @@ export const ROUTES = {
       { name: "Lost Lagoon", distance: 1.1, videos: {} },
     ],
   },
+  stevestonHwy: {
+    name: "Steveston Highway Path",
+    shortName: "Steveston Hwy Path",
+    legs: [{ videos: { eastbound: VIDEOS.stevestonEb } }],
+  },
   sunrise: {
     name: "Sunrise",
     legs: [{ distance: 10.4, videos: { northbound: VIDEOS.sunriseNb } }],
