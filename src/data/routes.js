@@ -748,7 +748,12 @@ export const ROUTES = {
   },
   oakStreetBridge: {
     name: "Oak Street Bridge",
-    legs: [{ distance: 1.9, videos: { northbound: VIDEOS.oakNb } }],
+    legs: [
+      {
+        distance: 1.9,
+        videos: { northbound: VIDEOS.oakNb, southbound: VIDEOS.oakSb },
+      },
+    ],
   },
   odlin: {
     name: "Odlin",

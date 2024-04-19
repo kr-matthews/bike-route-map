@@ -5,6 +5,7 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const SB_START = [49.20613, -123.13036];
 const SOUTHBOUND_ELEVATION_START = [49.20542, -123.13025];
 const SOUTHBOUND_ELEVATION_END = [49.19153, -123.11989];
 const SOUTHBOUND_SPLIT = [49.19144, -123.12005];
@@ -18,12 +19,31 @@ const NORTHBOUND_ELEVATION_END = [49.20454, -123.12955];
 const NB_POST_BRIDGE_SPLIT = [49.2047, -123.12953];
 
 export const OAK_STREET_BRIDGE = [
+  // north end
+  {
+    description: "approaching 71/oak",
+    type: "shared",
+    oneWay: "required",
+    hideUnlessVideo: true,
+    videoIds: [VIDEOS.oakSb.id],
+    videoIdsStartAtStart: [VIDEOS.oakSb.id],
+    positions: [
+      [49.20692, -123.131],
+      [49.20691, -123.13042],
+      [49.20687, -123.1304],
+      [49.20644, -123.13041],
+      [49.20613, -123.13041],
+      SB_START,
+    ],
+  },
+
   // south end
   {
     routeNames: [ROUTES.oakStreetBridge.name],
     description: "sea island way",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [VIDEOS.oakSb.id],
     positions: [
       SOUTHBOUND_SPLIT,
       [49.1914, -123.12015],
@@ -41,6 +61,7 @@ export const OAK_STREET_BRIDGE = [
     description: "sea island way missing end",
     type: "other",
     oneWay: "recommended",
+    videoIds: [VIDEOS.oakSb.id],
     positions: [
       SEA_ISLAND_PATH_END,
       [49.19116, -123.12396],
@@ -113,8 +134,9 @@ export const OAK_STREET_BRIDGE = [
     type: "mixed",
     oneWay: "recommended",
     elevation: 0.5,
+    videoIds: [VIDEOS.oakSb.id],
     positions: [
-      [49.20613, -123.13036],
+      SB_START,
       [49.20586, -123.13032],
       [49.20568, -123.1303],
       SOUTHBOUND_ELEVATION_START,
@@ -126,6 +148,7 @@ export const OAK_STREET_BRIDGE = [
     type: "mixed",
     oneWay: "recommended",
     elevation: 1,
+    videoIds: [VIDEOS.oakSb.id],
     positions: [
       SOUTHBOUND_ELEVATION_START,
       [49.20505, -123.13014],
@@ -166,6 +189,7 @@ export const OAK_STREET_BRIDGE = [
     oneWay: "recommended",
     hideArrows: true,
     elevation: 0.5,
+    videoIds: [VIDEOS.oakSb.id],
     positions: [
       SOUTHBOUND_ELEVATION_END,
       [49.19149, -123.11997],

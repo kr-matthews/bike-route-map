@@ -126,6 +126,7 @@ export const CANADA_LINE = [
   {
     description: "cross sea island way north",
     type: "other",
+    videoIds: [VIDEOS.oakSb.id],
     positions: [GREAT_CANADIAN_SEA_ISLAND_NE, GREAT_CANADIAN_SEA_ISLAND_NW],
   },
   {
@@ -190,7 +191,7 @@ export const CANADA_LINE = [
   },
   {
     description: "road: great canadian way sb to path",
-    type: "mixed",
+    type: "painted",
     oneWay: "required",
     hideArrows: true,
     videoIds: [VIDEOS.gardenCitySb.id],
@@ -232,14 +233,24 @@ export const CANADA_LINE = [
   {
     routeNames: [ROUTES.canadaLine.name],
     type: "mixed",
-    description: "path: great canadian to bridgeport",
-    videoIds: [VIDEOS.canadaLineSb.id, VIDEOS.gardenCitySb.id],
+    description: "path: patterson to sea island nw",
+    videoIds: [VIDEOS.canadaLineSb.id, VIDEOS.gardenCitySb.id, VIDEOS.oakSb.id],
+    videoIdsEndAtStart: [VIDEOS.oakSb.id],
     positions: [
       GARDEN_CITY_SB_START,
       [49.19027, -123.12494],
       [49.19077, -123.12483],
       GARDEN_CITY_SEA_ISLAND_SW_SLIP,
       GARDEN_CITY_SEA_ISLAND_SW,
+      GREAT_CANADIAN_SEA_ISLAND_NW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.canadaLine.name],
+    type: "mixed",
+    description: "path: sea island nw to bridgeport",
+    videoIds: [VIDEOS.canadaLineSb.id, VIDEOS.gardenCitySb.id],
+    positions: [
       GREAT_CANADIAN_SEA_ISLAND_NW,
       [49.19124, -123.12472],
       [49.19143, -123.12466],
