@@ -4,7 +4,7 @@ import { VIDEOS } from "./videos";
 // Burnaby:
 // SFU: gaglardi; parkway; university dr e; university dr w; ...more
 // UBC: (extend agronomy (toronto), acadia?)
-// Richmond: no. 2 path; bridgeport connection; no. 6 paths; south dyke;
+// Richmond: no. 6 paths; south dyke;
 // YVR: ferguson; inglis; other paths...; ...more
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
@@ -690,6 +690,10 @@ export const ROUTES = {
   },
   no2Bridge: {
     name: "No. 2 Rd Bridge",
+    legs: [{ videos: {} }],
+  },
+  no2Path: {
+    name: "No. 2 Path",
     legs: [{ videos: {} }],
   },
   no3: {
