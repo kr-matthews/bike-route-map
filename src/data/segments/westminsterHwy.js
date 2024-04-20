@@ -5,6 +5,9 @@ import {
   FRASERWOOD_WESTMINSTER_CONNECTION_S,
   GARDEN_CITY_WESTMINSTER_NE,
   GARDEN_CITY_WESTMINSTER_SE,
+  NO_6_WESTMINSTER_NW,
+  NO_6_WESTMINSTER_SW,
+  NO_6_WESTMINSTER_S_W,
   QUEENS_CANAL_WESTMINSTER_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -14,10 +17,7 @@ const HIGHWAY_99_WESTMINSTER_SE = [49.17017, -123.08644];
 const HIGHWAY_99_WESTMINSTER_NE = [49.17038, -123.08656];
 const HIGHWAY_99_WESTMINSTER_NW = [49.17038, -123.0875];
 const KATSURA_WESTMINSTER_N = [49.17027, -123.12251];
-const NO_6_WESTMINSTER_NW = [49.1703, -123.06936];
 const WESTMINSTER_PATH_START_NEAR_NO_6 = [49.16989, -123.06686];
-const NO_6_WESTMINSTER_S_W = [49.16994, -123.06932];
-const NO_6_WESTMINSTER_SW = [49.1701, -123.06936];
 const MCMILLAN_WESTMINSTER_SW = [49.16913, -122.99412];
 const WESTMINSTER_WB_BEFORE_EAST_WEST = [49.17094, -122.97238];
 const WESTMINSTER_EAST_WEST_SE = [49.16908, -122.9724];
@@ -32,6 +32,7 @@ const SMITH_WESTMINSTER_NW = [49.18174, -122.96437];
 const RIVER_WESTMINSTER_NE = [49.18134, -122.96545];
 const WESTMINSTER_FRASERSIDE_NW = [49.17799, -122.96811];
 const WESTMINSTER_GILLEY_SW = [49.177, -122.96871];
+const WESTMINSTER_SIDE_E_END = [49.16991, -123.06792];
 
 const FRASERWOOD_WESTMINSTER_CONNECTION_N_S = [49.16813, -122.97589];
 const FRASERWOOD_WESTMINSTER_CONNECTION_N_N = [49.16831, -122.9758];
@@ -213,25 +214,20 @@ export const WESTMINSTER_HWY = [
   },
   {
     routeNames: [ROUTES.westminsterHwy.name],
-    description: "dead-end westminster east of no.6",
-    type: "comfortable",
-    positions: [
-      NO_6_WESTMINSTER_S_W,
-      [49.16992, -123.06916],
-      [49.16991, -123.06792],
-      WESTMINSTER_PATH_START_NEAR_NO_6,
-    ],
+    description: "dead-end westminster east of no.6: path",
+    type: "mixed",
+    oneWay: "recommended",
+    positions: [WESTMINSTER_PATH_START_NEAR_NO_6, WESTMINSTER_SIDE_E_END],
   },
-  // ! move to no. 6 if/when applicable
   {
     routeNames: [ROUTES.westminsterHwy.name],
-    description: "no. 6 crossing westminster",
-    type: "mixed",
+    description: "dead-end westminster east of no.6: road",
+    type: "quiet",
+    oneWay: "recommended",
     positions: [
+      WESTMINSTER_SIDE_E_END,
+      [49.16992, -123.06916],
       NO_6_WESTMINSTER_S_W,
-      [49.17005, -123.06931],
-      NO_6_WESTMINSTER_SW,
-      NO_6_WESTMINSTER_NW,
     ],
   },
   {

@@ -101,6 +101,7 @@ import { NO_2 } from "./no2";
 import { NO_2_BRIDGE } from "./no2Bridge";
 import { NO_2_PATH } from "./no2Path";
 import { NO_3 } from "./no3";
+import { NO_6_PATH } from "./no6Path";
 import { NORTH_SOUTH } from "./northSouth";
 import { OAK_STREET_BRIDGE } from "./oakStBridge";
 import { OAKLAND_BURRIS } from "./oaklandBurris";
@@ -274,6 +275,7 @@ export const SEGMENTS = [
   ...NO_2_BRIDGE,
   ...NO_2_PATH,
   ...NO_3,
+  ...NO_6_PATH,
   ...NORTH_SOUTH,
   ...OAK_STREET_BRIDGE,
   ...OAKLAND_BURRIS,

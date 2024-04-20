@@ -4,7 +4,7 @@ import { VIDEOS } from "./videos";
 // Burnaby:
 // SFU: gaglardi; parkway; university dr e; university dr w; ...more
 // UBC: (extend agronomy (toronto), acadia?)
-// Richmond: no. 6 paths; south dyke;
+// Richmond: south dyke;
 // YVR: ferguson; inglis; other paths...; ...more
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
@@ -699,6 +699,10 @@ export const ROUTES = {
   no3: {
     name: "No. 3 Rd",
     legs: [{ videos: { northbound: VIDEOS.no3Nb } }],
+  },
+  no6Path: {
+    name: "No. 6 Rd Path",
+    legs: [{ videos: {} }],
   },
   northSouth: {
     name: "North/South",
