@@ -1,4 +1,4 @@
-import { useCallback, useReducer, useState } from "react";
+import { useCallback, useEffect, useMemo, useReducer, useState } from "react";
 import {
   ELEVATIONS,
   DIRECTIONS,
@@ -10,6 +10,21 @@ import { getAugmentedVideo, getVideo } from "../utils/videos";
 import { getAugmentedRoute, getRoute } from "../utils/routes";
 import { DEFAULT_TILE_LAYER } from "../utils/map";
 import useSavedState from "./useSavedState";
+
+const updateSearchParams = (searchParams, keyValues) => {
+  Object.entries(keyValues).forEach(([key, value]) => {
+    if (value) {
+      searchParams.set(key, encodeURIComponent(value));
+    } else {
+      searchParams.delete(key);
+    }
+  });
+  window.history.replaceState(
+    {},
+    "",
+    `${window.location.pathname}?${searchParams}`
+  );
+};
 
 const selectedReducer = (state, action) => {
   switch (action.type) {
@@ -103,7 +118,10 @@ const defaultFilters = (allOn) => ({
 
 export default function useSelections() {
   // search params
-  const searchParams = new URLSearchParams(window.location.search);
+  const searchParams = useMemo(
+    () => new URLSearchParams(window.location.search),
+    []
+  );
 
   // interactions
 
@@ -113,6 +131,13 @@ export default function useSelections() {
     searchParams,
     initialSelections
   );
+
+  useEffect(() => {
+    updateSearchParams(searchParams, {
+      route: selectedRouteName,
+      video: selectedVideoId,
+    });
+  }, [searchParams, selectedRouteName, selectedVideoId]);
 
   const highlightedRoute = getAugmentedRoute(highlightedRouteName);
   const selectedRoute = getAugmentedRoute(selectedRouteName);
