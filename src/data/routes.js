@@ -997,7 +997,7 @@ export const ROUTES = {
   westminsterHwy: {
     name: "Westminster Highway",
     shortName: "Westminster Hwy",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { westbound: VIDEOS.westminsterWb } }],
   },
   williams: {
     name: "Williams Rd",
