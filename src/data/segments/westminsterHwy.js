@@ -29,10 +29,11 @@ const WESTMINSTER_EB_BEFORE_GILLEY = [49.17656, -122.96879];
 const NB_PATH_AFTER_GILLEY = [49.17883, -122.96743];
 const SMITH_WESTMINSTER_SW = [49.18163, -122.96432];
 const SMITH_WESTMINSTER_NW = [49.18174, -122.96437];
-const RIVER_WESTMINSTER_NE = [49.18134, -122.96545];
+const RIVER_WESTMINSTER_NE = [49.18138, -122.96543];
 const WESTMINSTER_FRASERSIDE_NW = [49.17799, -122.96811];
 const WESTMINSTER_GILLEY_SW = [49.177, -122.96871];
 const WESTMINSTER_SIDE_E_END = [49.16991, -123.06792];
+const NO_6_WESTMINSTER_S_E = [49.16993, -123.06905];
 
 const FRASERWOOD_WESTMINSTER_CONNECTION_N_S = [49.16813, -122.97589];
 const FRASERWOOD_WESTMINSTER_CONNECTION_N_N = [49.16831, -122.9758];
@@ -47,6 +48,17 @@ export const WESTMINSTER_HWY = [
       [49.16811, -122.97587],
       FRASERWOOD_WESTMINSTER_CONNECTION_N_S,
       FRASERWOOD_WESTMINSTER_CONNECTION_N_N,
+    ],
+  },
+  {
+    description: "videoed no.6 crossing",
+    type: "mixed",
+    oneWay: "recommended",
+    hideUnlessVideo: true,
+    positions: [
+      NO_6_WESTMINSTER_S_E,
+      [49.17031, -123.06904],
+      NO_6_WESTMINSTER_NW,
     ],
   },
 
@@ -136,16 +148,18 @@ export const WESTMINSTER_HWY = [
     elevation: 0.5,
     positions: [
       HIGHWAY_99_WESTMINSTER_NW,
-      [49.17038, -123.08937],
-      [49.17039, -123.09081],
-      [49.17042, -123.09094],
-      [49.17039, -123.0911],
-      [49.17039, -123.09227],
-      [49.17036, -123.09302],
-      [49.17032, -123.09389],
-      [49.17028, -123.09403],
-      [49.17027, -123.0942],
-      [49.17022, -123.09488],
+      [49.17042, -123.08841],
+      [49.17042, -123.09071],
+      [49.17038, -123.09097],
+      [49.17038, -123.09195],
+      [49.1704, -123.09223],
+      [49.17038, -123.09274],
+      [49.17035, -123.0933],
+      [49.17034, -123.09384],
+      [49.17027, -123.09422],
+      [49.17024, -123.09459],
+      [49.17023, -123.09498],
+      [49.17024, -123.09853],
       [49.17025, -123.10257],
       // SHELL_WESTMINSTER_NE,
       [49.17027, -123.11415],
@@ -226,7 +240,7 @@ export const WESTMINSTER_HWY = [
     oneWay: "recommended",
     positions: [
       WESTMINSTER_SIDE_E_END,
-      [49.16992, -123.06916],
+      NO_6_WESTMINSTER_S_E,
       NO_6_WESTMINSTER_S_W,
     ],
   },
@@ -393,12 +407,13 @@ export const WESTMINSTER_HWY = [
   {
     routeNames: [ROUTES.westminsterHwy.name],
     description: "wb: smith to river",
-    type: "shared",
+    type: "combined",
     oneWay: "required",
     positions: [
       SMITH_WESTMINSTER_NW,
-      [49.18171, -122.96441],
-      [49.18159, -122.96487],
+      [49.18171, -122.9645],
+      [49.18163, -122.96479],
+      [49.18154, -122.96505],
       RIVER_WESTMINSTER_NE,
     ],
   },
