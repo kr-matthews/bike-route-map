@@ -6,8 +6,8 @@ import {
   normalizeElevation,
   normalizeType,
 } from "../utils/segmentTypes";
-import { getAugmentedVideo } from "../utils/videos";
-import { getAugmentedRoute } from "../utils/routes";
+import { getAugmentedVideo, getVideo } from "../utils/videos";
+import { getAugmentedRoute, getRoute } from "../utils/routes";
 import { DEFAULT_TILE_LAYER } from "../utils/map";
 import useSavedState from "./useSavedState";
 
@@ -15,7 +15,7 @@ const selectedReducer = (state, action) => {
   switch (action.type) {
     case "select-route":
       if (state.selectedRouteName === action.routeName) {
-        return defaultSelected;
+        return initialSelections(new URLSearchParams());
       } else {
         return {
           ...state,
@@ -39,11 +39,15 @@ const selectedReducer = (state, action) => {
       };
 
     case "reset":
-      return defaultSelected;
+      return initialSelections(new URLSearchParams());
   }
 };
 
-const defaultSelected = { selectedRouteName: null, selectedVideoId: null };
+const initialSelections = (searchParams) => ({
+  selectedRouteName: getRoute(decodeURIComponent(searchParams.get("route")))
+    ?.name,
+  selectedVideoId: getVideo(decodeURIComponent(searchParams.get("video")))?.id,
+});
 
 const filtersReducer = (state, action) => {
   switch (action.type) {
@@ -98,12 +102,16 @@ const defaultFilters = (allOn) => ({
 });
 
 export default function useSelections() {
+  // search params
+  const searchParams = new URLSearchParams(window.location.search);
+
   // interactions
 
   const [highlightedRouteName, setHighlightedRouteName] = useState(null);
   const [{ selectedRouteName, selectedVideoId }, dispatchSelected] = useReducer(
     selectedReducer,
-    defaultSelected
+    searchParams,
+    initialSelections
   );
 
   const highlightedRoute = getAugmentedRoute(highlightedRouteName);

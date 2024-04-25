@@ -5,6 +5,12 @@ import { SEGMENTS } from "../data/segments";
 import { ROUTES } from "../data/routes";
 import { COLOUR_HIGHLIGHTED } from "./constants";
 
+export function getRoute(name) {
+  return Object.values(ROUTES).find(
+    (route) => route.name.toLowerCase() === name?.toLowerCase()
+  );
+}
+
 export function getRouteBounds(routeName) {
   const routeSegments = SEGMENTS.filter(({ routeNames }) =>
     (routeNames ?? []).includes(routeName)

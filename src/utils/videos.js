@@ -3,6 +3,12 @@ import { SEGMENTS } from "../data/segments";
 import { VIDEOS } from "../data/videos";
 import { sumSegmentsLengths } from "./segments";
 
+export function getVideo(id) {
+  return Object.values(VIDEOS).find(
+    (video) => video.id.toLowerCase() === id?.toLowerCase()
+  );
+}
+
 export const getRoutesWithVideo = (videoId) => {
   return Object.values(ROUTES).filter(({ legs }) =>
     legs.some(({ videos }) =>
