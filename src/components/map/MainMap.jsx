@@ -2,6 +2,7 @@ import { useContext, useEffect } from "react";
 import { MapContainer } from "react-leaflet";
 import { SEGMENTS } from "../../data/segments";
 import { DEFAULT_BOUNDS } from "../../utils/map";
+import { getRouteBounds } from "../../utils/routes";
 import { Selections } from "../../App";
 import Segment from "./Segment";
 import PanesAndTiles from "./PanesAndTiles";
@@ -9,7 +10,11 @@ import PolylineCreator from "./PolylineCreator";
 import "./map.css";
 
 export default function MainMap({ setMapRef, fullWidth = false }) {
-  const { selectRoute } = useContext(Selections);
+  const { selectRoute, selectedRoute } = useContext(Selections);
+
+  const mapBounds = selectedRoute
+    ? getRouteBounds(selectedRoute.name)
+    : DEFAULT_BOUNDS;
 
   useEffect(
     function closeOnEsc() {
@@ -36,7 +41,7 @@ export default function MainMap({ setMapRef, fullWidth = false }) {
           width: "100%",
           height: "100vh",
         }}
-        bounds={DEFAULT_BOUNDS}
+        bounds={mapBounds}
         scrollWheelZoom
         whenReady={({ target: mapRef }) => setMapRef(mapRef)}
       >
