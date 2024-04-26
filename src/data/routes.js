@@ -1,10 +1,10 @@
 import { VIDEOS } from "./videos";
 
 // Potential future additions
-// Burnaby:
-// SFU: gaglardi; parkway; university dr e; university dr w; ...more
+// Burnaby: trans-canada section
+// SFU: paths
 // UBC: (extend agronomy (toronto), acadia?)
-// Richmond: south dyke;
+// Richmond: south dyke; railway later continuation, and around that;
 // YVR: ferguson; inglis; other paths...; ...more
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
@@ -218,6 +218,11 @@ export const ROUTES = {
     name: "Burnaby",
     legs: [{ videos: { westbound: VIDEOS.burnabyWb } }],
   },
+  burnabyMtnPkwy: {
+    name: "Burnaby Mountain Parkway",
+    shortName: "Burnaby Mtn Pkwy",
+    legs: [{ videos: {} }],
+  },
   burrard: {
     name: "Burrard St",
     legs: [
@@ -421,6 +426,10 @@ export const ROUTES = {
   },
   fraserwoodTrail: {
     name: "Fraserwood Trail",
+    legs: [{ videos: {} }],
+  },
+  gaglardi: {
+    name: "Gaglardi Way",
     legs: [{ videos: {} }],
   },
   gardenCity: {
@@ -960,6 +969,11 @@ export const ROUTES = {
   },
   university: {
     name: "University Blvd",
+    legs: [{ videos: {} }],
+  },
+  universityDrE: {
+    name: "University Dr E",
+    isOneWay: true,
     legs: [{ videos: {} }],
   },
   uptownDowntown: {

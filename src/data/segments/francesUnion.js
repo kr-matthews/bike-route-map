@@ -4,6 +4,8 @@ import {
   CARLETON_FRANCES,
   CLIFF_BRUNETTE_FRASER,
   CLIFF_UNION,
+  DUTHIE_HASTINGS_N,
+  DUTHIE_HASTINGS_S,
   INLET_BAYVIEW_E,
   INLET_BAYVIEW_W,
   INLET_RIDGE_E,
@@ -148,7 +150,8 @@ export const FRANCES_UNION = [
     type: "shared",
     positions: [
       DUTHIE_UNION,
-      [49.28038, -122.95339],
+      DUTHIE_HASTINGS_S,
+      DUTHIE_HASTINGS_N,
       [49.2824, -122.95338],
       [49.28296, -122.95337],
       BARNET_RIDGE,

@@ -20,6 +20,7 @@ import { BOYD } from "./boyd";
 import { BRIDGEPORT_TRAIL } from "./bridgeportTrail";
 import { BRUNETTE_FRASER } from "./brunetteFraser";
 import { BURNABY } from "./burnaby";
+import { BURNABY_MOUNTAIN_PARKWAY } from "./burnabyMtnPkwy";
 import { BURRARD } from "./burrard";
 import { BUTE } from "./bute";
 import { BYRNE_CREEK } from "./byrneCreek";
@@ -54,6 +55,7 @@ import { FRANCES_UNION } from "./francesUnion";
 import { FRASER_FORESHORE } from "./fraserForeshoreTrail";
 import { FRASER_RIVER_TRAIL } from "./fraserRiverTrail";
 import { FRASERWOOD_TRAIL } from "./fraserwoodTrail";
+import { GAGLARDI } from "./gaglardi";
 import { GARDEN_CITY } from "./gardenCity";
 import { GILBERT } from "./gilbert";
 import { GLADSTONE } from "./gladstone";
@@ -150,6 +152,7 @@ import { THUNDERBIRD } from "./thunderbird";
 import { TWENTY_NINTH } from "./twentyNinth";
 import { TWENTY_SECOND } from "./twentySecond";
 import { UNIVERSITY } from "./university";
+import { UNIVERSITY_DR_E } from "./universityDrE";
 import { UPTOWN_DOWNTOWN } from "./uptown";
 import { VALLEY } from "./valley";
 import { VICTORY } from "./victory";
@@ -194,6 +197,7 @@ export const SEGMENTS = [
   ...BRIDGEPORT_TRAIL,
   ...BRUNETTE_FRASER,
   ...BURNABY,
+  ...BURNABY_MOUNTAIN_PARKWAY,
   ...BURRARD,
   ...BUTE,
   ...BYRNE_CREEK,
@@ -228,6 +232,7 @@ export const SEGMENTS = [
   ...FRASER_FORESHORE,
   ...FRASER_RIVER_TRAIL,
   ...FRASERWOOD_TRAIL,
+  ...GAGLARDI,
   ...GARDEN_CITY,
   ...GILBERT,
   ...GLADSTONE,
@@ -324,6 +329,7 @@ export const SEGMENTS = [
   ...TWENTY_NINTH,
   ...TWENTY_SECOND,
   ...UNIVERSITY,
+  ...UNIVERSITY_DR_E,
   ...UPTOWN_DOWNTOWN,
   ...VALLEY,
   ...VICTORY,
