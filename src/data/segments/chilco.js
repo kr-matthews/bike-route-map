@@ -15,6 +15,7 @@ export const CHILCO = [
   {
     description: "connection to stanley park loop",
     type: "mixed",
+    videoIds: [VIDEOS.alberniEb.id],
     positions: [STANLEY_PARK_LOOP_ALBERNI, CHILCO_ALBERNI_W],
   },
   {
@@ -39,8 +40,14 @@ export const CHILCO = [
       CHILCO_HARO,
       [49.29338, -123.13842],
       CHILCO_ALBERNI_W,
-      CHILCO_ALBERNI_E,
     ],
+  },
+  {
+    routeNames: [ROUTES.chilco.name],
+    description: "chilco/alberni bend",
+    type: "quiet",
+    videoIds: [VIDEOS.chilcoSb.id, VIDEOS.alberniEb.id],
+    positions: [CHILCO_ALBERNI_W, CHILCO_ALBERNI_E],
   },
   {
     routeNames: [ROUTES.chilco.name],

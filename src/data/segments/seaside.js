@@ -49,6 +49,7 @@ const ALMA_POINT_GREY_NE_E = [49.27228, -123.18515];
 const TATLOW_POINT_GREY = [49.27106, -123.16986];
 
 const DENMAN_SEAWALL = [49.29345, -123.13229];
+const AFTER_E_JOIN = [49.29484, -123.13472];
 
 const SEAWALL_STANLEY_PARK_WEST_END = [49.29031, -123.14571];
 const SEAWALL_UNDER_BURRARD_N = [49.27587, -123.13547];
@@ -972,8 +973,10 @@ export const SEASIDE = [
   },
   {
     routeNames: [ROUTES.seaside.name],
-    description: "coal harbour (minus half con. cen.)",
+    description: "devonian harbour park beginning",
     type: "dedicated",
+    videoIds: [VIDEOS.seasideStanleyPark.id, VIDEOS.seasideCoalHarbourWb.id],
+    videoIdsStartAtEnd: [VIDEOS.seasideStanleyPark.id],
     positions: [
       STANLEY_PARK_LOOP_JOIN_E,
       [49.29515, -123.13588],
@@ -982,7 +985,16 @@ export const SEASIDE = [
       [49.2949, -123.13549],
       [49.29488, -123.13531],
       [49.29486, -123.13501],
-      [49.29484, -123.13472],
+      AFTER_E_JOIN,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "coal harbour (minus start/end bits)",
+    type: "dedicated",
+    videoIds: [VIDEOS.seasideCoalHarbourWb.id],
+    positions: [
+      AFTER_E_JOIN,
       [49.29479, -123.13445],
       [49.29469, -123.13413],
       [49.29461, -123.13402],
@@ -1062,7 +1074,7 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "half convention center",
     type: "dedicated",
-    videoIds: [VIDEOS.hornbyNb.id],
+    videoIds: [VIDEOS.seasideCoalHarbourWb.id, VIDEOS.hornbyNb.id],
     videoIdsEndAtStart: [VIDEOS.hornbyNb.id],
     positions: [
       MID_CONVENTION_CENTER,
@@ -1080,7 +1092,11 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "tip connecting to burrard",
     type: "dedicated",
-    videoIds: [VIDEOS.burrardSb.id, VIDEOS.hornbyNb.id],
+    videoIds: [
+      VIDEOS.seasideCoalHarbourWb.id,
+      VIDEOS.burrardSb.id,
+      VIDEOS.hornbyNb.id,
+    ],
     videoIdsStartAtStart: [VIDEOS.burrardSb.id],
     positions: [NORTH_OF_CANADA_PLACE, BURRARD_CANADA_PLACE],
   },

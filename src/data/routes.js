@@ -89,7 +89,7 @@ export const ROUTES = {
   },
   alberni: {
     name: "Alberni St",
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.alberniEb } }],
   },
   alder: {
     name: "Alder",
@@ -861,8 +861,14 @@ export const ROUTES = {
   seaside: {
     name: "Seaside",
     legs: [
-      { name: "Coal Harbour", videos: {} },
-      { name: "Stanley Park", videos: {} },
+      {
+        name: "Coal Harbour",
+        videos: { westbound: VIDEOS.seasideCoalHarbourWb },
+      },
+      {
+        name: "Stanley Park",
+        videos: { counterclockwise: VIDEOS.seasideStanleyPark },
+      },
       { name: "West End", videos: {} },
       { name: "False Creek", videos: {} },
       {
@@ -941,8 +947,14 @@ export const ROUTES = {
     name: "Stanley Park Loop",
     isOneWay: true,
     legs: [
-      { name: "Seawall", videos: {} },
-      { name: "Lost Lagoon", videos: {} },
+      {
+        name: "Seawall",
+        videos: { counterclockwise: VIDEOS.seasideStanleyPark },
+      },
+      {
+        name: "Lost Lagoon",
+        videos: { counterclockwise: VIDEOS.lostLagoonEb },
+      },
     ],
   },
   stevestonHwy: {

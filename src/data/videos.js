@@ -4,6 +4,11 @@ const VIDEOS = {
     date: new Date("2023 10 01"),
     minutes: 18,
   },
+  alberniEb: {
+    id: "Fcwzc-ldljw",
+    date: new Date("2024 04 26"),
+    minutes: 2,
+  },
   alderNb: {
     id: "ixJ03H36AII",
     date: new Date("2023 08 12"),
@@ -439,6 +444,11 @@ const VIDEOS = {
     date: new Date("2023 06 14"),
     minutes: 13,
   },
+  lostLagoonEb: {
+    id: "ogyNA_swBTw",
+    date: new Date("2024 04 26"),
+    minutes: 4,
+  },
   masumiMitsuiEb: {
     id: "QVK6E_hmQFc",
     date: new Date("2023 06 05"),
@@ -638,6 +648,16 @@ const VIDEOS = {
     id: "lvA_CEemgRM",
     date: new Date("2024 04 10"),
     minutes: 11,
+  },
+  seasideCoalHarbourWb: {
+    id: "95bsLG23jgA",
+    date: new Date("2024 04 26"),
+    minutes: 7,
+  },
+  seasideStanleyPark: {
+    id: "6YRDnkizY74",
+    date: new Date("2024 04 26"),
+    minutes: 24,
   },
   seasideKitsWb: {
     id: "htrdfMC4NBg",

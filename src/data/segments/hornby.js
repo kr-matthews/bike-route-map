@@ -61,7 +61,12 @@ export const HORNBY = [
     routeNames: [ROUTES.hornby.name],
     description: "north end along burrard",
     type: "dedicated",
-    videoIds: [VIDEOS.hornbyNb.id, VIDEOS.burrardSb.id],
+    videoIds: [
+      VIDEOS.hornbyNb.id,
+      VIDEOS.seasideCoalHarbourWb.id,
+      VIDEOS.burrardSb.id,
+    ],
+    videoIdsStartAtStart: [VIDEOS.seasideCoalHarbourWb.id],
     positions: [
       BURRARD_HASTINGS,
       [49.2876, -123.11649],
