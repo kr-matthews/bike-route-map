@@ -36,6 +36,8 @@ import {
   THURLOW_SEAWALL,
   TRAFALGAR_POINT_GREY,
   COLUMBIA_SEAWALL,
+  LAUREL_LAND_BRIDGE_SEASIDE,
+  LAUREL_7TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -64,7 +66,8 @@ const CHESTNUT_SEASIDE = [49.27725, -123.14617];
 const SEASIDE_KITS_MARINA = [49.27487, -123.13983];
 const EAST_OF_SPYGLASS = [49.2712, -123.11435];
 
-// !! connections: bc place? to confirm
+const LAUREL_LAND_BRIDGE_S = [49.26572, -123.12435];
+const LAUREL_LAND_BRIDGE_N = [49.26632, -123.12433];
 
 export const SEASIDE = [
   // connections
@@ -99,6 +102,49 @@ export const SEASIDE = [
       CREEKSIDE_1ST,
     ],
   },
+  {
+    description: "laurel land bridge pre-",
+    type: "mixed",
+    elevation: 0.5,
+    positions: [
+      LAUREL_7TH,
+      [49.26518, -123.12421],
+      [49.26531, -123.12435],
+      [49.26544, -123.12436],
+      [49.26555, -123.12434],
+      LAUREL_LAND_BRIDGE_S,
+    ],
+  },
+  {
+    description: "laurel land bridge",
+    type: "mixed",
+    elevation: 1,
+    positions: [
+      LAUREL_LAND_BRIDGE_S,
+      [49.26581, -123.12435],
+      [49.26598, -123.12434],
+      [49.26609, -123.12433],
+      LAUREL_LAND_BRIDGE_N,
+    ],
+  },
+  {
+    description: "laurel land bridge post-",
+    type: "mixed",
+    elevation: 0.5,
+    positions: [
+      LAUREL_LAND_BRIDGE_N,
+      [49.26642, -123.12434],
+      [49.26642, -123.12452],
+      [49.26646, -123.1247],
+      [49.26652, -123.12483],
+      [49.26697, -123.12523],
+      [49.26703, -123.12531],
+      [49.26715, -123.12534],
+      [49.26752, -123.1253],
+      LAUREL_LAND_BRIDGE_SEASIDE,
+    ],
+  },
+
   // sections
   {
     routeNames: [ROUTES.seaside.name],
@@ -539,7 +585,7 @@ export const SEASIDE = [
       [49.2681, -123.12649],
       [49.26792, -123.12584],
       [49.26776, -123.12553],
-      [49.26759, -123.12523],
+      LAUREL_LAND_BRIDGE_SEASIDE,
       [49.26753, -123.12494],
       [49.26751, -123.12474],
       [49.26751, -123.12454],

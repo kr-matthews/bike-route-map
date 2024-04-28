@@ -131,9 +131,9 @@ export const KERR = [
     positions: [KERR_MARINE_SW, KERR_KENT_N_SW],
   },
   {
+    routeNames: [ROUTES.kerr.name],
     description: "49th to rupert",
     type: "shared",
-    hideUnlessVideo: true,
     videoIds: [VIDEOS.kerrNb.id, VIDEOS.kerrSb.id],
     positions: [
       KERR_49TH_N,
@@ -146,9 +146,9 @@ export const KERR = [
     ],
   },
   {
+    routeNames: [ROUTES.kerr.name],
     description: "rupert: to 45th",
     type: "shared",
-    hideUnlessVideo: true,
     videoIds: [VIDEOS.kerrSb.id],
     videoIdsStartAtEnd: [VIDEOS.kerrSb.id],
     positions: [

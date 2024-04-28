@@ -1,28 +1,19 @@
 import {
-  BURRARD_DUNSMUIR,
-  CARDERO_GEORGIA_N,
-  CARDERO_GEORGIA_S,
   CHILCO_GEORGIA_S,
-  DENMAN_GEORGIA_N,
-  HORNBY_DUNSMUIR,
   LIONS_GATE_KLAHANIE,
   LIONS_GATE_SPIRIT_TRAIL_E,
   LIONS_GATE_SPIRIT_TRAIL_W,
-  NICOLA_GEORGIA,
-  NICOLA_PENDER,
+  STANLEY_PARK_CAUSEWAY_GEORGIA_N,
   STANLEY_PARK_LOOP_CAUSEWAY_UNDERPASS_SPLIT,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
-
-const JERVIS_PENDER = [49.28908, -123.12549];
 
 const NORTHBOUND_ELEVATED_START = [49.31196, -123.14164];
 const NORTHBOUND_ELEVATED_END = [49.32399, -123.13057];
 const SOUTHBOUND_ELEVATED_START = [49.32405, -123.13074];
 const SOUTHBOUND_ELEVATED_END = [49.31204, -123.14182];
 
-const NORTHBOUND_LAGOON_OVERPASS_START = [49.29476, -123.13659];
 const NORTHBOUND_LAGOON_OVERPASS_END = [49.2951, -123.1366];
 const SOUTHBOUND_LAGOON_OVERPASS_START = [49.29501, -123.137];
 const SOUTHBOUND_LAGOON_OVERPASS_END = [49.29457, -123.13689];
@@ -86,59 +77,6 @@ export const LIONS_GATE_BRIDGE = [
 
   // northbound
   {
-    description: "melville",
-    type: "painted",
-    oneWay: "required",
-    videoIds: [VIDEOS.lionsGateBridgeNb.id],
-    videoIdsStartAtStart: [VIDEOS.lionsGateBridgeNb.id],
-    positions: [
-      HORNBY_DUNSMUIR,
-      BURRARD_DUNSMUIR,
-      [49.28561, -123.11944],
-      [49.28577, -123.11971],
-      [49.28591, -123.11999],
-      [49.28599, -123.12036],
-      [49.28609, -123.12114],
-      [49.28614, -123.12137],
-      [49.28627, -123.1217],
-      [49.28648, -123.12201],
-      [49.28789, -123.12418],
-      [49.28855, -123.12525],
-      [49.28883, -123.12567],
-      [49.28895, -123.12566],
-      JERVIS_PENDER,
-    ],
-  },
-  {
-    description: "pender",
-    type: "shared",
-    oneWay: "required",
-    videoIds: [VIDEOS.lionsGateBridgeNb.id],
-    positions: [
-      JERVIS_PENDER,
-      [49.28962, -123.12737],
-      NICOLA_PENDER,
-      [49.29034, -123.12987],
-      CARDERO_GEORGIA_N,
-    ],
-  },
-  {
-    description: "georgia westbound",
-    type: "painted",
-    oneWay: "required",
-    elevation: 0.5,
-    videoIds: [VIDEOS.lionsGateBridgeNb.id],
-    positions: [
-      CARDERO_GEORGIA_N,
-      [49.29164, -123.13209],
-      DENMAN_GEORGIA_N,
-      [49.29374, -123.13532],
-      [49.29444, -123.13629],
-      [49.2946, -123.13649],
-      NORTHBOUND_LAGOON_OVERPASS_START,
-    ],
-  },
-  {
     routeNames: [ROUTES.lionsGate.name],
     description: "nb lagoon overpass",
     type: "painted",
@@ -146,7 +84,7 @@ export const LIONS_GATE_BRIDGE = [
     elevation: 1,
     videoIds: [VIDEOS.lionsGateBridgeNb.id],
     positions: [
-      NORTHBOUND_LAGOON_OVERPASS_START,
+      STANLEY_PARK_CAUSEWAY_GEORGIA_N,
       [49.29494, -123.13662],
       NORTHBOUND_LAGOON_OVERPASS_END,
     ],
@@ -389,21 +327,6 @@ export const LIONS_GATE_BRIDGE = [
     elevation: 0.5,
     videoIds: [VIDEOS.lionsGateBridgeSb.id, VIDEOS.chilcoSb.id],
     positions: [SOUTHBOUND_LAGOON_OVERPASS_END, CHILCO_GEORGIA_S],
-  },
-  {
-    description: "georgia eastbound",
-    oneWay: "required",
-    type: "painted",
-    videoIds: [VIDEOS.lionsGateBridgeSb.id],
-    videoIdsEndAtEnd: [VIDEOS.lionsGateBridgeSb.id],
-    positions: [
-      CHILCO_GEORGIA_S,
-      [49.29353, -123.13537],
-      [49.29257, -123.13383],
-      [49.29155, -123.13225],
-      CARDERO_GEORGIA_S,
-      NICOLA_GEORGIA,
-    ],
   },
   {
     description: "connection to marine eastbound",

@@ -1,6 +1,7 @@
 import { VIDEOS } from "./videos";
 
 //// Potential future additions
+// Vancouver:
 // Burnaby: sprott @ hwy 1
 // SFU:
 // UBC: (extend agronomy (toronto), acadia?)
@@ -394,6 +395,12 @@ export const ROUTES = {
     name: "Dunsmuir",
     legs: [{ videos: { westbound: VIDEOS.dunsmuirWb } }],
   },
+  dunsmuirMelvillePender: {
+    name: "Dunsmuir St/Melville St/Pender St",
+    shortName: "Dunsmuir/Melville",
+    isOneWay: true,
+    legs: [{ videos: { westbound: VIDEOS.lionsGateBridgeNb } }],
+  },
   eastMall: {
     name: "East Mall",
     legs: [{ videos: {} }],
@@ -439,6 +446,17 @@ export const ROUTES = {
         videos: {
           northbound: VIDEOS.gardenCityNb,
           southbound: VIDEOS.gardenCitySb,
+        },
+      },
+    ],
+  },
+  georgia: {
+    name: "Georgia St",
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.lionsGateBridgeSb,
+          westbound: VIDEOS.lionsGateBridgeNb,
         },
       },
     ],
@@ -585,7 +603,8 @@ export const ROUTES = {
     legs: [{ videos: { northbound: VIDEOS.lakewoodNb } }],
   },
   lionsGate: {
-    name: "Lions Gate Bridge",
+    name: "Lions Gate Bridge & Stanley Park Causeway",
+    shortName: "Lions Gate Bridge",
     legs: [
       {
         videos: {

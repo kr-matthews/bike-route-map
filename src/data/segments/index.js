@@ -46,6 +46,7 @@ import { DEER_LAKE_PARKWAY } from "./deerLakeParkway";
 import { DUMFRIES } from "./dumfries";
 import { DUNBAR } from "./dunbar";
 import { DUNSMUIR } from "./dunsmuir";
+import { DUNSMUIR_MELVILLE_PENDER } from "./dunsmuirMelvillePender";
 import { EAST_MALL } from "./eastMall";
 import { EWEN } from "./ewen";
 import { FORTY_FIFTH } from "./fortyFifth";
@@ -57,6 +58,7 @@ import { FRASER_RIVER_TRAIL } from "./fraserRiverTrail";
 import { FRASERWOOD_TRAIL } from "./fraserwoodTrail";
 import { GAGLARDI } from "./gaglardi";
 import { GARDEN_CITY } from "./gardenCity";
+import { GEORGIA } from "./georgia";
 import { GILBERT } from "./gilbert";
 import { GLADSTONE } from "./gladstone";
 import { GLENLYON } from "./glenlyon";
@@ -225,6 +227,7 @@ export const SEGMENTS = [
   ...DUMFRIES,
   ...DUNBAR,
   ...DUNSMUIR,
+  ...DUNSMUIR_MELVILLE_PENDER,
   ...EAST_MALL,
   ...EWEN,
   ...FORTY_FIFTH,
@@ -236,6 +239,7 @@ export const SEGMENTS = [
   ...FRASERWOOD_TRAIL,
   ...GAGLARDI,
   ...GARDEN_CITY,
+  ...GEORGIA,
   ...GILBERT,
   ...GLADSTONE,
   ...GLENLYON,
