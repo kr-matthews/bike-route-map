@@ -1,8 +1,8 @@
 import { VIDEOS } from "./videos";
 
-// Potential future additions
-// Burnaby: trans-canada section
-// SFU: paths
+//// Potential future additions
+// Burnaby: sprott @ hwy 1
+// SFU:
 // UBC: (extend agronomy (toronto), acadia?)
 // Richmond: south dyke; railway later continuation, and around that;
 // YVR: ferguson; inglis; other paths...; ...more
@@ -918,6 +918,11 @@ export const ROUTES = {
         },
       },
     ],
+  },
+  sfuPaths: {
+    name: "Simon Fraser University Paths",
+    shortName: "SFU Paths",
+    legs: [{ videos: {} }],
   },
   shellRoadTrail: {
     name: "Shell Road Trail",
