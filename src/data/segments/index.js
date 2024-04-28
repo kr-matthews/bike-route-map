@@ -149,6 +149,7 @@ import { TENTH } from "./tenth";
 import { TERMINAL_PATH } from "./terminalPath";
 import { THIRD } from "./third";
 import { THUNDERBIRD } from "./thunderbird";
+import { TRANS_CANADA } from "./transCanada";
 import { TWENTY_NINTH } from "./twentyNinth";
 import { TWENTY_SECOND } from "./twentySecond";
 import { UNIVERSITY } from "./university";
@@ -326,6 +327,7 @@ export const SEGMENTS = [
   ...TERMINAL_PATH,
   ...THIRD,
   ...THUNDERBIRD,
+  ...TRANS_CANADA,
   ...TWENTY_NINTH,
   ...TWENTY_SECOND,
   ...UNIVERSITY,

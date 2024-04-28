@@ -979,6 +979,11 @@ export const ROUTES = {
     shortName: "Thunderbird Blvd",
     legs: [{ videos: {} }],
   },
+  transCanada: {
+    name: "Trans Canada Trail (Burnaby)",
+    shortName: "Trans Canada Trail",
+    legs: [{ videos: { westbound: VIDEOS.seaToRiverNb } }],
+  },
   university: {
     name: "University Blvd",
     legs: [{ videos: {} }],

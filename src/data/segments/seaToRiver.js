@@ -2,6 +2,7 @@ import {
   CARLETON_FRANCES,
   CARLETON_KINCAID,
   CARLETON_MOSCROP,
+  CARLETON_YALE,
   GILMORE_CVG,
   GILMORE_KINCAID_NW,
   GILMORE_LOUGHEED_NE,
@@ -15,7 +16,6 @@ import {
   NEW_HAVEN_MARINE,
   PATTERSON_MAYWOOD_W,
   PATTERSON_MOSCROP,
-  SKEENA_BRIDGEWAY,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -29,12 +29,9 @@ const GILMORE_HALIFAX_SW = [49.26797, -123.01432];
 const GILMORE_LANE_START = [49.26723, -123.01416];
 
 const CARLETON_DOUGLAS_N = [49.26937, -123.01323];
-const CARLETON_YALE = [49.29001, -123.01108];
 
 const HIGHWAY_OVERPASS_START = [49.2573, -123.01212];
 const HIGHWAY_OVERPASS_END = [49.25829, -123.01213];
-
-const TRANS_CANADA_PAVEMENT_END = [49.29225, -123.02588];
 
 export const SEA_TO_RIVER = [
   {
@@ -334,60 +331,6 @@ export const SEA_TO_RIVER = [
       [49.28647, -123.01129],
       [49.28828, -123.01124],
       [49.28997, -123.0112],
-      CARLETON_YALE,
-    ],
-  },
-  {
-    description: "trans canada trail bit, west",
-    type: "mixed",
-    hideUnlessVideo: true,
-    videoIds: [VIDEOS.seaToRiverNb.id],
-    videoIdsEndAtStart: [VIDEOS.seaToRiverNb.id],
-    positions: [
-      SKEENA_BRIDGEWAY,
-      [49.29081, -123.02836],
-      [49.29108, -123.02804],
-      [49.29153, -123.02735],
-      [49.29193, -123.02662],
-      TRANS_CANADA_PAVEMENT_END,
-    ],
-  },
-  {
-    description: "trans canada trail bit, east",
-    type: "other",
-    hideUnlessVideo: true,
-    videoIds: [VIDEOS.seaToRiverNb.id],
-    positions: [
-      TRANS_CANADA_PAVEMENT_END,
-      [49.29233, -123.02564],
-      [49.29241, -123.02533],
-      [49.29248, -123.02488],
-      [49.29259, -123.02428],
-      [49.29264, -123.02404],
-      [49.2927, -123.02387],
-      [49.2927, -123.02313],
-      [49.29263, -123.02212],
-      [49.29262, -123.02166],
-      [49.29261, -123.02145],
-      [49.29249, -123.02059],
-      [49.29228, -123.01941],
-      [49.29218, -123.01883],
-      [49.29207, -123.01748],
-      [49.29205, -123.01706],
-      [49.29204, -123.01609],
-      [49.29199, -123.01543],
-      [49.29171, -123.01399],
-      [49.29169, -123.01385],
-      [49.29159, -123.01362],
-      [49.29123, -123.01279],
-      [49.29116, -123.01265],
-      [49.29105, -123.01254],
-      [49.2909, -123.01234],
-      [49.29074, -123.0121],
-      [49.29068, -123.01196],
-      [49.29055, -123.01163],
-      [49.29045, -123.01147],
-      [49.29017, -123.01114],
       CARLETON_YALE,
     ],
   },

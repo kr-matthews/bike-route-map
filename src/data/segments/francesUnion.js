@@ -10,6 +10,7 @@ import {
   INLET_BAYVIEW_W,
   INLET_RIDGE_E,
   INLET_RIDGE_W,
+  TRANS_CANADA_FRANCES_UNION,
   WILLINGDON_FRANCES,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -94,7 +95,7 @@ export const FRANCES_UNION = [
       [49.2799, -122.97544],
       [49.28, -122.97538],
       [49.2801, -122.97525],
-      [49.28013, -122.97511],
+      TRANS_CANADA_FRANCES_UNION,
       [49.28016, -122.97491],
       [49.28016, -122.97469],
       [49.28024, -122.97443],
