@@ -48,20 +48,25 @@ export default function Routes({ navigateTo, mapRef }) {
   return (
     <Panel name={VIEWS.routes.name} navigateTo={navigateTo}>
       <Search text={searchText} setText={setSearchText} />
-      <div
-        style={{
-          flex: 2,
-          overflowY: "scroll",
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr 1fr",
-          gridTemplateRows: "repeat(1000, auto)",
-          font: "120% system-ui",
-        }}
-      >
-        {routesToShow.map((route) => (
-          <Route key={route.name} route={route} mapRef={mapRef} />
-        ))}
-      </div>
+
+      {routesToShow.length ? (
+        <div
+          style={{
+            flex: 2,
+            overflowY: "scroll",
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr 1fr",
+            gridTemplateRows: "repeat(1000, auto)",
+            font: "120% system-ui",
+          }}
+        >
+          {routesToShow.map((route) => (
+            <Route key={route.name} route={route} mapRef={mapRef} />
+          ))}
+        </div>
+      ) : (
+        "No routes match the search/region"
+      )}
     </Panel>
   );
 }
