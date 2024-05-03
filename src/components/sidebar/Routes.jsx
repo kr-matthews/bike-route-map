@@ -1,4 +1,4 @@
-import { useContext, useMemo, useState } from "react";
+import { useContext, useEffect, useMemo, useState } from "react";
 import { Selections } from "../../App";
 import { Search } from "./Search";
 import {
@@ -17,15 +17,32 @@ import {
 
 export default function Routes({ navigateTo, mapRef }) {
   const [searchText, setSearchText] = useState("");
+
+  // actual value not important, just that it changes;
+  // not sure how else to 'detect' that mapRef?.getBounds() has changed
+  const [mapChangedIndicator, setMapChangedIndicator] = useState(0);
+
+  useEffect(() => {
+    mapRef?.addEventListener({
+      moveend: () => setMapChangedIndicator((x) => x + 1),
+      zoomend: () => setMapChangedIndicator((x) => x + 1),
+    });
+  }, [mapRef]);
+
   const routesToShow = useMemo(
     () =>
-      Object.values(AUGMENTED_ROUTES).filter(({ name }) =>
-        isSubsequence(
-          removeWhiteSpaces(searchText.toLowerCase()),
-          name.toLowerCase()
-        )
+      Object.values(AUGMENTED_ROUTES).filter(
+        ({ name, segmentBounds }) =>
+          isSubsequence(
+            removeWhiteSpaces(searchText.toLowerCase()),
+            name.toLowerCase()
+          ) &&
+          segmentBounds.some((segmentBound) =>
+            mapRef?.getBounds().intersects(segmentBound)
+          )
       ),
-    [searchText]
+    // eslint-disable-next-line
+    [searchText, mapRef, mapChangedIndicator]
   );
 
   return (
