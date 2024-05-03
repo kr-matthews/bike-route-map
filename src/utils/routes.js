@@ -18,10 +18,14 @@ export function getRouteBounds(routeName) {
 
   if (routeSegments.length === 0) return null;
 
-  const latitudes = routeSegments.flatMap(({ positions }) =>
+  return getSegmentsBounds(routeSegments);
+}
+
+export function getSegmentsBounds(segments) {
+  const latitudes = segments.flatMap(({ positions }) =>
     positions.map(([lat, _]) => lat)
   );
-  const longitudes = routeSegments.flatMap(({ positions }) =>
+  const longitudes = segments.flatMap(({ positions }) =>
     positions.map(([_, long]) => long)
   );
 
@@ -29,6 +33,10 @@ export function getRouteBounds(routeName) {
     [Math.min(...latitudes), Math.min(...longitudes)],
     [Math.max(...latitudes), Math.max(...longitudes)]
   );
+}
+
+export function getSegmentBounds(segment) {
+  return getSegmentsBounds([segment]);
 }
 
 const getRouteSegments = (routeName) =>
@@ -108,6 +116,7 @@ export const AUGMENTED_ROUTES = Object.entries(ROUTES).reduce(
   (acc, [key, route]) => {
     acc[key] = {
       ...route,
+      segmentBounds: getRouteSegments(route.name).map(getSegmentBounds),
       bidirectionalDistance: getRouteBidirectionalDistance(route.name),
       oneWayDistance: getRouteOneWayDistance(route.name),
       weightedProportions: getRouteWeightedProportions(route.name),
