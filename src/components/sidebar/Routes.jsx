@@ -14,9 +14,12 @@ import {
   getBackgroundColor,
   getRouteBounds,
 } from "../../utils/routes";
+import { ALL, VISIBLE } from "../../data/routes";
+import { ListTypeDropdown } from "./ListTypeDropdown";
 
 export default function Routes({ navigateTo, mapRef }) {
   const [searchText, setSearchText] = useState("");
+  const [routesToShowType, setRoutesToShowType] = useState(ALL);
 
   // actual value not important, just that it changes;
   // not sure how else to 'detect' that mapRef?.getBounds() has changed
@@ -32,21 +35,29 @@ export default function Routes({ navigateTo, mapRef }) {
   const routesToShow = useMemo(
     () =>
       Object.values(AUGMENTED_ROUTES).filter(
-        ({ name, segmentBounds }) =>
+        ({ name, cities, segmentBounds }) =>
           isSubsequence(
             removeWhiteSpaces(searchText.toLowerCase()),
             name.toLowerCase()
           ) &&
-          segmentBounds.some((segmentBound) =>
-            mapRef?.getBounds().intersects(segmentBound)
-          )
+          (routesToShowType === ALL ||
+            (routesToShowType === VISIBLE &&
+              segmentBounds.some((segmentBound) =>
+                mapRef?.getBounds().intersects(segmentBound)
+              )) ||
+            cities?.includes(routesToShowType))
       ),
     // eslint-disable-next-line
-    [searchText, mapRef, mapChangedIndicator]
+    [searchText, routesToShowType, mapRef, mapChangedIndicator]
   );
 
   return (
     <Panel name={VIEWS.routes.name} navigateTo={navigateTo}>
+      <ListTypeDropdown
+        options={[]}
+        selected={routesToShowType}
+        setSelected={setRoutesToShowType}
+      />
       <Search text={searchText} setText={setSearchText} />
 
       {routesToShow.length ? (
