@@ -13,6 +13,14 @@ import { VIDEOS } from "./videos";
 // Surrey: scott rd; alex fraser; timbers; fraser hwy;
 // Delta:
 
+export const VANCOUVER = "Vancouver";
+export const UBC = "UBC";
+export const BURNABY = "Burnaby";
+export const RICHMOND = "Richmond";
+export const NEW_WESTMINSTER = "New Westminster";
+export const VISIBLE = "Visible (approx.)";
+export const ALL = "All";
+
 export const ROUTES = {
   third: {
     name: "3rd",
