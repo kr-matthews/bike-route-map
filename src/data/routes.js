@@ -18,7 +18,7 @@ export const UBC = "UBC";
 export const BURNABY = "Burnaby";
 export const RICHMOND = "Richmond";
 export const NEW_WESTMINSTER = "New Westminster";
-export const VISIBLE = "Visible (approx.)";
+export const VISIBLE = "In view (approx.)";
 export const ALL = "All";
 
 export const ROUTES = {
