@@ -21,7 +21,7 @@ const options = [
 export function ListTypeDropdown({ selected, setSelected }) {
   return (
     <select
-      style={{ position: "absolute", top: 25, left: 140, borderRadius: 5 }}
+      style={{ position: "absolute", top: 25, left: 180, borderRadius: 5 }}
       value={selected}
       onChange={(e) => setSelected(e.target.value)}
     >

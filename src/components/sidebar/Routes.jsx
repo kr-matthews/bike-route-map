@@ -52,7 +52,10 @@ export default function Routes({ navigateTo, mapRef }) {
   );
 
   return (
-    <Panel name={VIEWS.routes.name} navigateTo={navigateTo}>
+    <Panel
+      name={`${VIEWS.routes.name} (${routesToShow.length})`}
+      navigateTo={navigateTo}
+    >
       <ListTypeDropdown
         options={[]}
         selected={routesToShowType}
