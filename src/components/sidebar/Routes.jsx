@@ -16,10 +16,11 @@ import {
 } from "../../utils/routes";
 import { ALL, VISIBLE } from "../../data/routes";
 import { ListTypeDropdown } from "./ListTypeDropdown";
+import useSavedState from "../../hooks/useSavedState";
 
 export default function Routes({ navigateTo, mapRef }) {
   const [searchText, setSearchText] = useState("");
-  const [routesToShowType, setRoutesToShowType] = useState(ALL);
+  const [regionToShow, setRegionToShow] = useSavedState("list_region", ALL);
 
   // actual value not important, just that it changes;
   // not sure how else to 'detect' that mapRef?.getBounds() has changed
@@ -40,15 +41,15 @@ export default function Routes({ navigateTo, mapRef }) {
             removeWhiteSpaces(searchText.toLowerCase()),
             name.toLowerCase()
           ) &&
-          (routesToShowType === ALL ||
-            (routesToShowType === VISIBLE &&
+          (regionToShow === ALL ||
+            (regionToShow === VISIBLE &&
               segmentBounds.some((segmentBound) =>
                 mapRef?.getBounds().intersects(segmentBound)
               )) ||
-            cities?.includes(routesToShowType))
+            cities?.includes(regionToShow))
       ),
     // eslint-disable-next-line
-    [searchText, routesToShowType, mapRef, mapChangedIndicator]
+    [searchText, regionToShow, mapRef, mapChangedIndicator]
   );
 
   return (
@@ -56,11 +57,7 @@ export default function Routes({ navigateTo, mapRef }) {
       name={`${VIEWS.routes.name} (${routesToShow.length})`}
       navigateTo={navigateTo}
     >
-      <ListTypeDropdown
-        options={[]}
-        selected={routesToShowType}
-        setSelected={setRoutesToShowType}
-      />
+      <ListTypeDropdown selected={regionToShow} setSelected={setRegionToShow} />
       <Search text={searchText} setText={setSearchText} />
 
       {routesToShow.length ? (
