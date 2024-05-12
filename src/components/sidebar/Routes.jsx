@@ -54,7 +54,8 @@ export default function Routes({ navigateTo, mapRef }) {
 
   return (
     <Panel
-      name={`${VIEWS.routes.name} (${routesToShow.length})`}
+      name={VIEWS.routes.name}
+      title={`${VIEWS.routes.name} (${routesToShow.length})`}
       navigateTo={navigateTo}
     >
       <ListTypeDropdown selected={regionToShow} setSelected={setRegionToShow} />

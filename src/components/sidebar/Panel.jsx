@@ -1,7 +1,7 @@
 import { VIEWS } from "./Sidebar";
 import PanelIcon from "../icons/PanelIcon";
 
-export default function Panel({ name, navigateTo, children }) {
+export default function Panel({ name, title, navigateTo, children }) {
   return (
     <div
       style={{
@@ -13,7 +13,7 @@ export default function Panel({ name, navigateTo, children }) {
         position: "relative",
       }}
     >
-      <h2 style={{ paddingLeft: 15 }}>{name}</h2>
+      <h2 style={{ paddingLeft: 15 }}>{title ?? name}</h2>
       <span
         style={{
           position: "absolute",
