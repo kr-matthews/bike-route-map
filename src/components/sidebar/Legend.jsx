@@ -135,16 +135,6 @@ export default function Legend({ navigateTo }) {
   return (
     <Panel name={VIEWS.legend.name} navigateTo={navigateTo}>
       <div style={{ overflowY: "scroll", overflow: "auto" }}>
-        <SegmentForm
-          view="legend"
-          types={types}
-          directions={directions}
-          elevations={elevations}
-          dispatch={dispatch}
-        />
-
-        <br />
-
         <div
           style={{
             marginLeft: "6em",
@@ -169,6 +159,16 @@ export default function Legend({ navigateTo }) {
             <Segment segment={otherSegment} />
           </MapContainer>
         </div>
+
+        <br />
+
+        <SegmentForm
+          view="legend"
+          types={types}
+          directions={directions}
+          elevations={elevations}
+          dispatch={dispatch}
+        />
 
         <div style={{ paddingRight: "0.5em" }}>
           {typeDescription && (
