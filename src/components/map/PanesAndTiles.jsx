@@ -27,6 +27,7 @@ export default function PanesAndTiles() {
       <Pane name="underground-1-arrow" style={{ zIndex: 302 }} />
       <Pane name="underground-1-adj" style={{ zIndex: 301 }} />
       <Pane name="underground-1-adj-arrow" style={{ zIndex: 300 }} />
+      <Pane name="location" style={{ zIndex: 299 }} />
 
       <TileLayer
         attribution={TILE_LAYERS[tileLayerKey].attribution}

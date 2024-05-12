@@ -4,12 +4,13 @@ import { SEGMENTS } from "../../data/segments";
 import { DEFAULT_BOUNDS } from "../../utils/map";
 import { getRouteBounds } from "../../utils/routes";
 import { Selections } from "../../App";
-import Segment from "./Segment";
+import CurrentLocation from "./CurrentLocation";
 import PanesAndTiles from "./PanesAndTiles";
 import PolylineCreator from "./PolylineCreator";
+import Segment from "./Segment";
 import "./map.css";
 
-export default function MainMap({ setMapRef, fullWidth = false }) {
+export default function MainMap({ mapRef, setMapRef, fullWidth = false }) {
   const { selectRoute, selectedRoute } = useContext(Selections);
 
   const mapBounds = selectedRoute
@@ -56,6 +57,8 @@ export default function MainMap({ setMapRef, fullWidth = false }) {
             segment={segment}
           />
         ))}
+
+        <CurrentLocation mapRef={mapRef} />
       </MapContainer>
     </div>
   );

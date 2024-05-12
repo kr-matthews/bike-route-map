@@ -19,7 +19,11 @@ export default function App() {
   return (
     <Selections.Provider value={selections}>
       <div style={{ display: "flex" }}>
-        <MainMap setMapRef={setMapRef} fullWidth={isScreenTooNarrow} />
+        <MainMap
+          mapRef={mapRef}
+          setMapRef={setMapRef}
+          fullWidth={isScreenTooNarrow}
+        />
         {isScreenTooNarrow ? <PhoneWarning /> : <Sidebar mapRef={mapRef} />}
       </div>
     </Selections.Provider>
