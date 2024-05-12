@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/bike-route-map/static/css/main.0040c5f0.css",
-    "main.js": "/bike-route-map/static/js/main.91e5b9cd.js",
+    "main.js": "/bike-route-map/static/js/main.65cbd02b.js",
     "static/media/database.svg": "/bike-route-map/static/media/database.2a5ad326a7cd564876b9b75c75c84fad.svg",
     "static/media/routes.svg": "/bike-route-map/static/media/routes.6b6cb8cd0b419807ab44ea243d74ae52.svg",
     "static/media/routesDark.svg": "/bike-route-map/static/media/routesDark.594f6722b9df36af43960eb01ab6d8ec.svg",
     "static/media/website-logo.svg": "/bike-route-map/static/media/website-logo.2a15d8d040919c10066eaa55c12d2b83.svg",
+    "static/media/location.svg": "/bike-route-map/static/media/location.bf925c2c700e5ced15328c9ecd6032f4.svg",
     "static/media/question.svg": "/bike-route-map/static/media/question.39d7fab9f86ad15e2fd6c2b4dc073d5a.svg",
     "static/media/questionDark.svg": "/bike-route-map/static/media/questionDark.f656e3cc78ed1e4344bc52929b3d56a9.svg",
     "static/media/zoomTo.svg": "/bike-route-map/static/media/zoomTo.0f1e3c813ddcdbdbff14925fd4ccf1ed.svg",
@@ -21,10 +22,10 @@
     "static/media/video.svg": "/bike-route-map/static/media/video.042675b4d61363c4fcace5a481c9e988.svg",
     "index.html": "/bike-route-map/index.html",
     "main.0040c5f0.css.map": "/bike-route-map/static/css/main.0040c5f0.css.map",
-    "main.91e5b9cd.js.map": "/bike-route-map/static/js/main.91e5b9cd.js.map"
+    "main.65cbd02b.js.map": "/bike-route-map/static/js/main.65cbd02b.js.map"
   },
   "entrypoints": [
     "static/css/main.0040c5f0.css",
-    "static/js/main.91e5b9cd.js"
+    "static/js/main.65cbd02b.js"
   ]
 }
