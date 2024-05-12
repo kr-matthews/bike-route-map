@@ -117,11 +117,7 @@ export default function Segment({ segment }) {
   return (
     <Fragment>
       <Polyline
-        showArrows={
-          !hideArrows &&
-          !isHidden &&
-          (oneWay === "required" || oneWay === "recommended")
-        }
+        arrowType={!hideArrows && !isHidden && oneWay}
         polylineProps={polylineProps}
         borderProps={hasBorder ? borderProps : undefined}
       >

@@ -9,12 +9,13 @@ import { ZOOMED_IN_A_BIT, ZOOMED_IN_A_LOT } from "../utils/constants";
  * seem to have proper support for this.
  */
 export default function useDirectionalArrows(
-  isActive,
+  arrowType,
   polylineRef,
   pathOptions,
   eventHandlers,
   polylinePane
 ) {
+  const isActive = Boolean(arrowType);
   const map = useMap();
   const [decorator, setDecorator] = useState();
   // zooming in won't trigger const zoom = map.getZoom() to update itself for some reason
@@ -78,13 +79,14 @@ export default function useDirectionalArrows(
 
   useEffect(
     function updateArrows() {
+      const isRequired = arrowType === "required";
       const arrow = {
         // somewhat arbitrary, but made to work with cambie bridge nb loop-ramp
         offset: isVeryZoomedIn ? 45 : 20,
         repeat: isVeryZoomedIn ? 100 : 70,
         symbol: L.Symbol.arrowHead({
-          pixelSize: 14,
-          polygon: true,
+          pixelSize: isRequired ? 14 : 9,
+          polygon: isRequired,
           pathOptions: {
             ...pathOptions,
             dashArray: undefined,
@@ -99,6 +101,6 @@ export default function useDirectionalArrows(
         decorator.setPatterns([arrow]);
       }
     },
-    [isActive, isVeryZoomedIn, decorator, pathOptions, polylinePane]
+    [isActive, arrowType, isVeryZoomedIn, decorator, pathOptions, polylinePane]
   );
 }
