@@ -13,13 +13,16 @@ On GitHub Pages at [https://kr-matthews.github.io/bike-route-map](https://kr-mat
 ### Current
 
 - Map of bike routes in Vancouver and many adjacent regions.
-- Ability to zoom in (unlike many official city PDF maps).
-- See exactly which segments are two-way and which are one-way.
+- Show your current location; useful when out with your phone.
+- Ability to zoom in/out (unlike many official city PDF maps), and list only currently-visible routes.
+- See exactly which segments are two-way and which are one-way, as well as two-way segments where a certain directly is recommended/more useful.
 - Distinguish between types of bike infrastructure (physically separated, quiet street, painted lane, shared lane, highway shoulder).
 - Bridges and tunnels/undercover routes visually distinct.
 - Select a route to see information (including distance and proportions of infrastructure), and embedded YouTube video(s) when available.
 - Explanatory legend.
 - Filter by infrastructure type (physically separated, painted, etc.) and/or by existence of a video.
+- Change background map (standard OSM, CyclOSM, etc.).
+- Shareable url for selected route and/or video.
 
 ### Potential Future
 
@@ -35,7 +38,7 @@ Quick, clean, and simple implementation of a map with an easy-to-use data layer 
 
 - Separation of data and logic.
 - Clean code.
-- Avoiding perfection when drawing out routes - add just enough to prevent any ambiguity or potential confusion.
+- Avoiding perfection when drawing out routes - add just enough to prevent any ambiguity or potential confusion. (Note: This did not happen.)
 
 ## Flaws
 
@@ -43,6 +46,7 @@ See the [issues](https://github.com/kr-matthews/bike-route-map/issues) on GitHub
 
 - UI is far from perfect, and potentially unintuitive in places.
 - Data is all hard-coded into the frontend, rather than utilizing some sort of database.
-- There are not enough tests.
-- Unclear when an area has additional bike routes but they just haven't been added to this map (yet).
+- Data is (more-or-less) duplicating other existing sources (OSM, official city maps, etc.).
 - Data can easily get out-of-date.
+- There are not enough tests.
+- Unclear when an area has additional bike routes but they just haven't (yet) been added to this map.
