@@ -19,6 +19,7 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const GARDEN_CITY_COOK_W = [49.16645, -123.12483];
 const GARDEN_CITY_GRANVILLE_N = [49.16311, -123.12566];
 const GARDEN_CITY_GRANVILLE_SE = [49.16288, -123.1253];
 const GARDEN_CITY_FRANCIS_SS = [49.14784, -123.12516];
@@ -32,7 +33,7 @@ export const GARDEN_CITY = [
   // north of granville
   {
     routeNames: [ROUTES.gardenCity.name],
-    description: "sb to citation shortcut",
+    description: "sb: to cook",
     type: "painted",
     oneWay: "required",
     videoIds: [VIDEOS.gardenCitySb.id],
@@ -56,9 +57,17 @@ export const GARDEN_CITY = [
       [49.17381, -123.12477],
       [49.17013, -123.12478],
       [49.16771, -123.1248],
-      [49.16645, -123.12483],
-      GARDEN_CITY_CITATION_W,
+      GARDEN_CITY_COOK_W,
     ],
+  },
+  {
+    routeNames: [ROUTES.gardenCity.name],
+    description: "sb: cook to citation shortcut",
+    type: "shared",
+    oneWay: "required",
+    videoIds: [VIDEOS.gardenCitySb.id, VIDEOS.citation.id],
+    videoIdsStartAtStart: [VIDEOS.citation.id],
+    positions: [GARDEN_CITY_COOK_W, GARDEN_CITY_CITATION_W],
   },
   {
     routeNames: [ROUTES.gardenCity.name],

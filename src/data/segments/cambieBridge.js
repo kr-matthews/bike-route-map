@@ -150,6 +150,7 @@ export const CAMBIE_BRIDGE = [
   {
     description: "nb connection to pacific",
     type: "dedicated",
+    videoIds: [VIDEOS.cambieBridgeSb.id],
     positions: [
       SMITHE_SMITHE_PATH,
       [49.27569, -123.11451],
@@ -165,6 +166,7 @@ export const CAMBIE_BRIDGE = [
       SPIRAL_BOTTOM,
       [49.27364, -123.11465],
       [49.27359, -123.11476],
+      [49.27338, -123.1148],
       MARINASIDE_SEAWALL,
     ],
   },
@@ -198,7 +200,7 @@ export const CAMBIE_BRIDGE = [
     description: "southbound side",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.cambieBridgeNelsonSb.id],
+    videoIds: [VIDEOS.cambieBridgeSb.id, VIDEOS.cambieBridgeNelsonSb.id],
     elevation: 1,
     positions: [
       BEATTY_NELSON_SE,
@@ -279,14 +281,20 @@ export const CAMBIE_BRIDGE = [
     description: "2nd, north side, under bridge",
     type: "combined",
     elevation: 0.5,
+    videoIds: [VIDEOS.cambieBridgeSb.id],
     positions: [
       CAMBIE_2ND_NW,
       [49.2666, -123.11529],
       [49.26661, -123.11521],
       CAMBIE_2ND_N_W,
       CAMBIE_2ND_N_E,
-      CAMBIE_2ND_NE,
     ],
+  },
+  {
+    description: "2nd, north side, east of bridge",
+    type: "combined",
+    elevation: 0.5,
+    positions: [CAMBIE_2ND_N_E, CAMBIE_2ND_NE],
   },
   {
     description: "2nd, south side (west of middle)",
@@ -364,12 +372,14 @@ export const CAMBIE_BRIDGE = [
   {
     description: "under bridge",
     type: "mixed",
+    videoIds: [VIDEOS.cambieBridgeSb.id],
     positions: [CAMBIE_2ND_N_E, UNDER_BRIDGE_NODE, CAMBIE_1ST_S, CAMBIE_1ST_N],
   },
   {
     description: "beside bridge",
     type: "quiet",
-    videoIds: [VIDEOS.yukonSb.id],
+    videoIds: [VIDEOS.yukonSb.id, VIDEOS.cambieBridgeSb.id],
+    videoIdsEndAtEnd: [VIDEOS.cambieBridgeSb.id],
     positions: [
       SPYGLASS_1ST,
       [49.26912, -123.11526],
@@ -399,6 +409,7 @@ export const CAMBIE_BRIDGE = [
     description: "connection 1st to spyglass",
     type: "quiet",
     oneWay: "required",
+    videoIds: [VIDEOS.cambieBridgeSb.id],
     positions: [CAMBIE_1ST_N, [49.2682, -123.11514], SPYGLASS_1ST],
   },
   {

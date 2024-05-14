@@ -8,6 +8,7 @@ import {
   STORMONT_CARIBOO_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const NB_LANE_START = [49.23584, -122.90453];
 const NB_OVERPASS_START = [49.24466, -122.91018];
@@ -179,6 +180,7 @@ export const CARIBOO = [
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.caribooSb.id],
     positions: [
       CARIBOO_CARIBOO_PL_E,
       [49.24942, -122.91438],
@@ -220,6 +222,7 @@ export const CARIBOO = [
     type: "painted",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.caribooSb.id],
     positions: [
       SB_OVERPASS_START,
       [49.24511, -122.91083],
@@ -233,6 +236,7 @@ export const CARIBOO = [
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.caribooSb.id],
     positions: [
       SB_OVERPASS_END,
       [49.24391, -122.90992],
@@ -248,6 +252,7 @@ export const CARIBOO = [
     description: "sb - cariboo dr",
     type: "quiet",
     oneWay: "recommended",
+    videoIds: [VIDEOS.caribooSb.id],
     positions: [
       CARIBOO_DR_CARIBOO,
       [49.2428, -122.90896],
@@ -264,6 +269,7 @@ export const CARIBOO = [
     description: "sb - path after cariboo dr",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [VIDEOS.caribooSb.id],
     positions: [
       CARIBOO_DR_S,
       [49.24059, -122.90736],
@@ -281,6 +287,7 @@ export const CARIBOO = [
     description: "sb - 16th",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.caribooSb.id],
     positions: [
       CARIBOO_16TH_NW,
       [49.23883, -122.90838],
@@ -311,6 +318,8 @@ export const CARIBOO = [
     description: "sb - cascade",
     type: "quiet",
     oneWay: "recommended",
+    videoIds: [VIDEOS.caribooSb.id],
+    videoIdsEndAtEnd: [VIDEOS.caribooSb.id],
     positions: [
       CASCADE_16TH_E,
       [49.2363, -122.90991],

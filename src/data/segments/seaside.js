@@ -52,6 +52,7 @@ const TATLOW_POINT_GREY = [49.27106, -123.16986];
 
 const DENMAN_SEAWALL = [49.29345, -123.13229];
 const AFTER_E_JOIN = [49.29484, -123.13472];
+const PRE_MARINASIDE = [49.27307, -123.11564];
 
 const SEAWALL_STANLEY_PARK_WEST_END = [49.29031, -123.14571];
 const SEAWALL_UNDER_BURRARD_N = [49.27587, -123.13547];
@@ -758,7 +759,7 @@ export const SEASIDE = [
   },
   {
     routeNames: [ROUTES.seaside.name],
-    description: "false creek north - open",
+    description: "false creek north (open): to before cambie",
     type: "comfortable",
     positions: [
       HORNBY_SEABREEZE,
@@ -829,10 +830,28 @@ export const SEASIDE = [
       [49.27332, -123.11739],
       [49.27321, -123.11705],
       [49.27307, -123.11673],
-      [49.27307, -123.11564],
+      PRE_MARINASIDE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "false creek north - under cambie-ish",
+    type: "comfortable",
+    videoIds: [VIDEOS.cambieBridgeSb.id],
+    videoIdsStartAtStart: [VIDEOS.cambieBridgeSb.id],
+    positions: [
+      PRE_MARINASIDE,
       [49.27308, -123.11545],
       [49.27312, -123.11525],
       [49.27328, -123.11484],
+      MARINASIDE_SEAWALL,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "false creek north - beyond cambie",
+    type: "comfortable",
+    positions: [
       MARINASIDE_SEAWALL,
       [49.27328, -123.11468],
       [49.27309, -123.11391],
@@ -1107,6 +1126,15 @@ export const SEASIDE = [
       [49.28979, -123.11917],
       [49.2898, -123.11888],
       SEAWALL_WATERFRONT,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "coal harbour: up to convention centers",
+    type: "dedicated",
+    videoIds: [VIDEOS.seasideCoalHarbourWb.id, VIDEOS.waterfrontWb.id],
+    positions: [
+      SEAWALL_WATERFRONT,
       [49.28988, -123.11855],
       [49.28999, -123.11824],
       [49.29016, -123.11792],
@@ -1120,8 +1148,13 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "half convention center",
     type: "dedicated",
-    videoIds: [VIDEOS.seasideCoalHarbourWb.id, VIDEOS.hornbyNb.id],
+    videoIds: [
+      VIDEOS.seasideCoalHarbourWb.id,
+      VIDEOS.hornbyNb.id,
+      VIDEOS.waterfrontWb.id,
+    ],
     videoIdsEndAtStart: [VIDEOS.hornbyNb.id],
+    videoIdsEndAtEnd: [VIDEOS.waterfrontWb.id],
     positions: [
       MID_CONVENTION_CENTER,
       [49.28944, -123.11443],
@@ -1130,7 +1163,6 @@ export const SEASIDE = [
       [49.28925, -123.11432],
       [49.28893, -123.11469],
       [49.28852, -123.11514],
-      NORTH_OF_CANADA_PLACE,
       NORTH_OF_CANADA_PLACE,
     ],
   },

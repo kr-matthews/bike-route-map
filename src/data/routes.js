@@ -323,6 +323,10 @@ export const ROUTES = {
           southbound: VIDEOS.cambieBridgeNelsonSb,
         },
       },
+      {
+        name: "Seawall to Seawall",
+        videos: { southbound: VIDEOS.cambieBridgeSb },
+      },
     ],
   },
   canadaLine: {
@@ -347,7 +351,7 @@ export const ROUTES = {
   cariboo: {
     name: "Cariboo",
     cities: [BURNABY],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.caribooSb } }],
   },
   carnarvon: {
     name: "Carnarvon St",
@@ -524,6 +528,10 @@ export const ROUTES = {
           southbound: VIDEOS.gardenCitySb,
         },
       },
+      {
+        name: "Connection to Granville Ave",
+        videos: { westbound: VIDEOS.citation },
+      },
     ],
   },
   georgia: {
@@ -556,7 +564,13 @@ export const ROUTES = {
   granville: {
     name: "Granville Ave",
     cities: [RICHMOND],
-    legs: [{ videos: {} }],
+    legs: [
+      { videos: {} },
+      {
+        name: "Connection from Garden City Rd",
+        videos: { westbound: VIDEOS.citation },
+      },
+    ],
   },
   haro: {
     name: "Haro",
@@ -805,7 +819,9 @@ export const ROUTES = {
   mosaic: {
     name: "Mosaic",
     cities: [VANCOUVER],
-    legs: [{ videos: { southbound: VIDEOS.mosaicSb } }],
+    legs: [
+      { videos: { northbound: VIDEOS.mosaicNb, southbound: VIDEOS.mosaicSb } },
+    ],
   },
   nanaimo: {
     name: "Nanaimo St",
@@ -936,12 +952,21 @@ export const ROUTES = {
   powell: {
     name: "Powell",
     cities: [VANCOUVER],
-    legs: [{ videos: { eastbound: VIDEOS.powellEb } }],
+    legs: [
+      { videos: { eastbound: VIDEOS.powellEb, westbound: VIDEOS.powellWb } },
+    ],
   },
   princeEdward: {
     name: "Prince Edward",
     cities: [VANCOUVER],
-    legs: [{ videos: { northbound: VIDEOS.princeEdwardNb } }],
+    legs: [
+      {
+        videos: {
+          northbound: VIDEOS.princeEdwardNb,
+          southbound: VIDEOS.princeEdwardSb,
+        },
+      },
+    ],
   },
   queensboroughBridge: {
     name: "Queensborough Bridge",
@@ -1122,7 +1147,7 @@ export const ROUTES = {
   southeast: {
     name: "Southeast",
     cities: [BURNABY],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { westbound: VIDEOS.southeastWb } }],
   },
   spiritTrail: {
     name: "Spirit Trail",
@@ -1210,7 +1235,14 @@ export const ROUTES = {
   waterfront: {
     name: "Waterfront St",
     cities: [VANCOUVER],
-    legs: [{ videos: { eastbound: VIDEOS.waterfrontEb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.waterfrontEb,
+          westbound: VIDEOS.waterfrontWb,
+        },
+      },
+    ],
   },
   wesbrook: {
     name: "Wesbrook Mall",

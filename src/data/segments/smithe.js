@@ -60,7 +60,7 @@ export const SMITHE = [
     routeNames: [ROUTES.smithe.name],
     description: "beatty to expo/smithe path",
     type: "dedicated",
-    videoIds: [VIDEOS.cambieBridgeSmitheNb.id],
+    videoIds: [VIDEOS.cambieBridgeSmitheNb.id, VIDEOS.cambieBridgeSb.id],
     positions: [
       BEATTY_SMITHE_N,
       BEATTY_SMITHE_S,

@@ -855,6 +855,8 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.brunetteFraser.name],
     type: "mixed",
     description: "government to cariboo plc",
+    videoIds: [VIDEOS.caribooSb.id],
+    videoIdsStartAtStart: [VIDEOS.caribooSb.id],
     positions: [
       CARIBOO_GOVERNMENT,
       [49.2506, -122.91411],

@@ -54,6 +54,20 @@ export const NELSON = [
     elevation: 0.5,
     videoIds: [VIDEOS.cambieBridgeNelsonSb.id, VIDEOS.beattyNb.id],
     videoIdsStartAtStart: [VIDEOS.beattyNb.id],
-    positions: [CAMBIE_NELSON_SW, BEATTY_NELSON_SW, BEATTY_NELSON_SE],
+    positions: [CAMBIE_NELSON_SW, BEATTY_NELSON_SW],
+  },
+  {
+    routeNames: [ROUTES.nelson.name],
+    description: "'crossing' beatty",
+    type: "dedicated",
+    oneWay: "required",
+    hideArrows: true,
+    elevation: 0.5,
+    videoIds: [
+      VIDEOS.cambieBridgeNelsonSb.id,
+      VIDEOS.cambieBridgeSb.id,
+      VIDEOS.beattyNb.id,
+    ],
+    positions: [BEATTY_NELSON_SW, BEATTY_NELSON_SE],
   },
 ];

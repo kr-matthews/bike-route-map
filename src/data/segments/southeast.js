@@ -9,6 +9,7 @@ import {
   STATION_HILL_SOUTHPOINT_E,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const GRIFFITHS_SOUTHPOINT_E = [49.21124, -122.95556];
 const CUMBERLAND_ARMSTRONG = [49.22973, -122.91514];
@@ -147,6 +148,8 @@ export const SOUTHEAST = [
     routeNames: [ROUTES.southeast.name],
     description: "southpoint",
     type: "shared",
+    videoIds: [VIDEOS.southeastWb.id],
+    videoIdsEndAtStart: [VIDEOS.southeastWb.id],
     positions: [
       STATION_HILL_SOUTHPOINT_E,
       [49.2102, -122.95748],
@@ -157,6 +160,7 @@ export const SOUTHEAST = [
     routeNames: [ROUTES.southeast.name],
     description: "middle",
     type: "quiet",
+    videoIds: [VIDEOS.southeastWb.id],
     positions: [
       GRIFFITHS_SOUTHPOINT_E,
       [49.21125, -122.95549],
@@ -195,6 +199,7 @@ export const SOUTHEAST = [
     routeNames: [ROUTES.southeast.name],
     description: "armstrong",
     type: "shared",
+    videoIds: [VIDEOS.southeastWb.id],
     positions: [
       CUMBERLAND_ARMSTRONG,
       [49.23065, -122.91343],
@@ -208,6 +213,8 @@ export const SOUTHEAST = [
     description: "armstrong east end",
     type: "shared",
     oneWay: "recommended",
+    videoIds: [VIDEOS.southeastWb.id],
+    videoIdsStartAtEnd: [VIDEOS.southeastWb.id],
     positions: [
       CASCADE_ARMSTRONG,
       [49.23523, -122.90497],

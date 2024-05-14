@@ -18,12 +18,14 @@ import {
   RAILWAY_GREENWAY_GRANVILLE_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const NO_1_GRANVILLE_W = [49.16282, -123.18133];
 const RAILWAY_GRANVILLE_N = [49.1626, -123.16888];
 const GARDEN_CITY_GRANVILLE_SW = [49.16272, -123.12627];
 const WB_LANE_START = [49.16268, -123.16942];
 const CITATION_GRANVILLE_N = [49.16282, -123.1278];
+const POST_CITATION = [49.16283, -123.12838];
 
 export const GRANVILLE = [
   {
@@ -159,6 +161,7 @@ export const GRANVILLE = [
     description: "citation",
     type: "quiet",
     oneWay: "required",
+    videoIds: [VIDEOS.citation.id],
     positions: [
       GARDEN_CITY_CITATION_W,
       [49.16515, -123.12494],
@@ -174,7 +177,7 @@ export const GRANVILLE = [
   },
   {
     routeNames: [ROUTES.granville.name],
-    description: "primary wb",
+    description: "wb: to citation",
     type: "painted",
     oneWay: "required",
     positions: [
@@ -184,6 +187,24 @@ export const GRANVILLE = [
       [49.16288, -123.12667],
       [49.16284, -123.12705],
       CITATION_GRANVILLE_N,
+    ],
+  },
+  {
+    routeNames: [ROUTES.granville.name],
+    description: "wb: bit after citation",
+    type: "shared",
+    oneWay: "required",
+    videoIds: [VIDEOS.citation.id],
+    videoIdsEndAtEnd: [VIDEOS.citation.id],
+    positions: [CITATION_GRANVILLE_N, POST_CITATION],
+  },
+  {
+    routeNames: [ROUTES.granville.name],
+    description: "wb: from after citation",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      POST_CITATION,
       [49.16282, -123.13101],
       BUSWELL_GRANVILLE_N,
       [49.16282, -123.13643],

@@ -154,6 +154,11 @@ const VIDEOS = {
     date: new Date("2023 08 27"),
     minutes: 5,
   },
+  cambieBridgeSb: {
+    id: "MaEkiWGQfjY",
+    date: new Date("2024 05 03"),
+    minutes: 7,
+  },
   cambieBridgeNelsonSb: {
     id: "FWN1apBAy3g",
     date: new Date("2023 06 03"),
@@ -178,6 +183,11 @@ const VIDEOS = {
     id: "tsSkeanHrXM",
     date: new Date("2023 12 24"),
     minutes: 5,
+  },
+  caribooSb: {
+    id: "w54AMi1gEiQ",
+    date: new Date("2024 05 09"),
+    minutes: 11,
   },
   carrallNb: {
     id: "1KNO98tWduE",
@@ -213,6 +223,11 @@ const VIDEOS = {
     id: "WZIDTdlVxZY",
     date: new Date("2023 08 03"),
     minutes: 2,
+  },
+  citation: {
+    id: "Trpqmt4oAfc",
+    date: new Date("2024 02 26"),
+    minutes: 1,
   },
   columbiaNb: {
     id: "4E3xRV-qHOc",
@@ -474,6 +489,11 @@ const VIDEOS = {
     date: new Date("2023 06 10"),
     minutes: 45,
   },
+  mosaicNb: {
+    id: "ptiQwQyVDsM",
+    date: new Date("2024 05 03"),
+    minutes: 13,
+  },
   mosaicSb: {
     id: "uDSSzA4ZN0Q",
     date: new Date("2023 10 07"),
@@ -574,10 +594,20 @@ const VIDEOS = {
     date: new Date("2023 05 30"),
     minutes: 2,
   },
+  powellWb: {
+    id: "FX6kTPPqV8M",
+    date: new Date("2024 05 03"),
+    minutes: 3,
+  },
   princeEdwardNb: {
     id: "A91bdcMUC98",
     date: new Date("2023 08 19"),
     minutes: 15,
+  },
+  princeEdwardSb: {
+    id: "5RnZaIbILJw",
+    date: new Date("2024 05 07"),
+    minutes: 16,
   },
   queensboroughBridgeNb: {
     id: "7bMQ20t7C7k",
@@ -709,6 +739,11 @@ const VIDEOS = {
     date: new Date("2024 03 13"),
     minutes: 5,
   },
+  southeastWb: {
+    id: "k8DwdiFe8dQ",
+    date: new Date("2024 05 09"),
+    minutes: 18,
+  },
   stevestonEb: {
     id: "ryKwp-INnrI",
     date: new Date("2024 04 13"),
@@ -793,6 +828,11 @@ const VIDEOS = {
     id: "TUIhsGIyJdI",
     date: new Date("2023 10 22"),
     minutes: 5,
+  },
+  waterfrontWb: {
+    id: "MjiGAPjOuZQ",
+    date: new Date("2024 05 03"),
+    minutes: 6,
   },
   wesbrookSb: {
     id: "rh6b_Nk9q-4",

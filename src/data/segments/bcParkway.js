@@ -85,6 +85,7 @@ const NORTH_OF_GLADSTONE = [49.25029, -123.06026];
 const LAKEWOOD_GRANDVIEW_CUT_S = [49.25994, -123.06208];
 const LAKEWOOD_GRANDVIEW_CUT_N = [49.26047, -123.06208];
 const TROUT_LAKE_N_PARKING_LOT = [49.25351, -123.05987];
+const POST_MOSAIC_ALLEY = [49.25789, -123.06087];
 
 const CENTRAL_IMPERIAL_SW = [49.22187, -122.99727];
 const JUBILEE_IMPERIAL_SE = [49.22187, -122.99573];
@@ -215,13 +216,27 @@ export const BC_PARKWAY = [
   },
   {
     routeNames: [ROUTES.bcParkway.name],
+    description: "trout lake: north little bit",
+    type: "dedicated",
+    videoIds: [
+      VIDEOS.bcParkwayVancouverEb.id,
+      VIDEOS.bcParkwayVancouverWb.id,
+      VIDEOS.mosaicNb.id,
+    ],
+    videoIdsStartAtEnd: [VIDEOS.mosaicNb.id],
+    positions: [
+      LAKEWOOD_JOHN_HENDRY_PARK,
+      [49.25791, -123.06212],
+      POST_MOSAIC_ALLEY,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
     description: "trout lake",
     type: "dedicated",
     videoIds: [VIDEOS.bcParkwayVancouverEb.id, VIDEOS.bcParkwayVancouverWb.id],
     positions: [
-      LAKEWOOD_JOHN_HENDRY_PARK,
-      [49.25791, -123.06212],
-      [49.25789, -123.06087],
+      POST_MOSAIC_ALLEY,
       [49.25782, -123.06049],
       [49.25762, -123.06018],
       [49.25706, -123.06019],

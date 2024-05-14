@@ -13,8 +13,10 @@ export const PRINCE_EDWARD = [
     routeNames: [ROUTES.princeEdward.name],
     description: "primary",
     type: "quiet",
-    videoIds: [VIDEOS.princeEdwardNb.id],
+    videoIds: [VIDEOS.princeEdwardNb.id, VIDEOS.princeEdwardSb.id],
     videoIdsStartAtStart: [VIDEOS.princeEdwardNb.id],
+    videoIdsStartAtEnd: [VIDEOS.princeEdwardSb.id],
+    videoIdsEndAtStart: [VIDEOS.princeEdwardSb.id],
     videoIdsEndAtEnd: [VIDEOS.princeEdwardNb.id],
     positions: [
       PRINCE_EDWARD_59TH,
