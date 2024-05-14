@@ -30,6 +30,10 @@ export default function About({ navigateTo }) {
             <b>Right-click</b> on a segment for a corresponding <b>video</b>{" "}
             (when available).
           </li>
+          <li>
+            Show your <b>current location</b> (top-left of map); best when used
+            on mobile.
+          </li>
           <li>Use the icons in the top right to:</li>
           <ul>
             <li>
