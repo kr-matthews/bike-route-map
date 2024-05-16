@@ -48,6 +48,7 @@ const EAST_OF_BOUNDARY = [49.24311, -123.02253];
 const BOUNDARY_MOSCROP = [49.24312, -123.02366];
 const WEST_OF_BOUNDARY = [49.24257, -123.02484];
 const BOUNDARY_MOSCROP_S_W = [49.24257, -123.02383];
+const INMAN_MOSCROP_N = [49.24308, -123.01585];
 const CARIBOO_29TH = [49.24449, -123.02744];
 const MOSCROP_COURTS_E = [49.24171, -122.99187];
 const KENSINGTON_GILPIN_NE = [49.24185, -122.96778];
@@ -58,6 +59,19 @@ const DONOVAN_E = [49.2387, -122.95469];
 const SIXTH_BURRIS = [49.23753, -122.95108];
 
 export const MIDTOWN = [
+  {
+    description: "inman",
+    type: "quiet",
+    positions: [
+      INMAN_MOSCROP_N,
+      [49.24129, -123.01585],
+      [49.23985, -123.01586],
+      [49.23695, -123.01586],
+      [49.23551, -123.01587],
+      [49.233, -123.01587],
+    ],
+  },
+
   // vancouver
   {
     description: "crossing marine sb",
@@ -347,7 +361,12 @@ export const MIDTOWN = [
     description: "boundary-ish to patterson",
     type: "mixed",
     videoIds: [VIDEOS.midtownBurnabyWb.id],
-    positions: [EAST_OF_BOUNDARY, [49.24311, -123.01983], PATTERSON_MOSCROP],
+    positions: [
+      EAST_OF_BOUNDARY,
+      [49.24311, -123.01983],
+      INMAN_MOSCROP_N,
+      PATTERSON_MOSCROP,
+    ],
   },
   {
     routeNames: [ROUTES.midtown.name, ROUTES.seaToRiver.name],
