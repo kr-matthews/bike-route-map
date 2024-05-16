@@ -1,6 +1,7 @@
 import {
   LYNAS_DOVER_N,
   LYNAS_DOVER_S,
+  LYNAS_RIVER,
   NO_2_RIVER_E_E,
   NO_2_RIVER_W_N,
   NO_2_RUSS_BAKER_E,
@@ -15,7 +16,7 @@ const SB_ELEVATION_START = [49.1781, -123.15563];
 const SB_ELEVATION_END = [49.17315, -123.15857];
 const NO_2_RIVER_W = [49.17227, -123.15891];
 
-const NO_2_RIVER = [49.17384, -123.1589];
+const NO_2_RIVER = [49.17386, -123.1589];
 const RIVER_RIVER_W = [49.17228, -123.15716];
 const NO_2_DOVER_PATH_E = [49.17226, -123.15905];
 const NO_2_DOVER_PATH_W = [49.17224, -123.1604];
@@ -90,12 +91,29 @@ export const NO_2 = [
 
   // south east side
   {
+    description: "river rd from lynas",
+    type: "shared",
+    oneWay: "recommended",
+    positions: [
+      LYNAS_RIVER,
+      [49.17351, -123.16366],
+      [49.17358, -123.1624],
+      [49.17364, -123.16164],
+      [49.17373, -123.16097],
+      [49.1738, -123.16039],
+      [49.17384, -123.15986],
+      [49.17387, -123.15924],
+      NO_2_RIVER,
+    ],
+  },
+  {
     description: "river rd",
     type: "shared",
     oneWay: "required",
     positions: [
       NO_2_RIVER,
-      [49.17388, -123.15828],
+      [49.17384, -123.15872],
+      [49.17386, -123.15828],
       [49.17388, -123.15798],
       [49.17384, -123.15774],
       [49.17377, -123.15753],

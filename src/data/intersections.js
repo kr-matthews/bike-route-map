@@ -449,6 +449,7 @@ export const LYNAS_DOVER_N = [49.17206, -123.16448];
 export const LYNAS_DOVER_S = [49.1709, -123.1645];
 export const LYNAS_GRANVILLE_N = [49.16283, -123.1646];
 export const LYNAS_GRANVILLE_S = [49.16264, -123.1646];
+export const LYNAS_RIVER = [49.17347, -123.16447];
 export const MACDONALD_29TH = [49.24611, -123.1679];
 export const MAIN_1ST_E = [49.27006, -123.10031];
 export const MAIN_ALEXANDER = [49.28409, -123.09951];

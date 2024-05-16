@@ -3,6 +3,7 @@ import {
   LYNAS_DOVER_S,
   LYNAS_GRANVILLE_N,
   LYNAS_GRANVILLE_S,
+  LYNAS_RIVER,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
@@ -60,6 +61,6 @@ export const LYNAS = [
     routeNames: [ROUTES.lynas.name],
     description: "dover to river rd",
     type: "quiet",
-    positions: [LYNAS_DOVER_N, [49.17334, -123.16447]],
+    positions: [LYNAS_DOVER_N, LYNAS_RIVER],
   },
 ];
