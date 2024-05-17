@@ -8,6 +8,7 @@ import {
   WEST_DYKE_MIDDLE_ARM,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const MIDDLE_ARM_TRAIL_CAMBIE_JOIN = [49.18422, -123.13909];
 const NO_2_BRIDGE_E_SPLIT = [49.17439, -123.15686];
@@ -35,11 +36,16 @@ export const MIDDLE_ARM = [
     ],
   },
   {
-    description: "no. 2 connections",
+    description: "no. 2 connection, west half",
     type: "mixed",
+    positions: [NO_2_BRIDGE_W_SPLIT, [49.17398, -123.15906], NO_2_RIVER_W_N],
+  },
+  {
+    description: "no. 2 connection, east half",
+    type: "mixed",
+    videoIds: [VIDEOS.no2BridgeNb.id],
+    videoIdsStartAtEnd: [VIDEOS.no2BridgeNb.id],
     positions: [
-      NO_2_BRIDGE_W_SPLIT,
-      [49.17398, -123.15906],
       NO_2_RIVER_W_N,
       [49.17397, -123.15857],
       [49.17401, -123.15844],

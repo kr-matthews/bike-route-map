@@ -4,6 +4,7 @@ import {
   NO_2_RUSS_BAKER_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const NB_ELEVATION_START = [49.17301, -123.15827];
 const NB_ELEVATION_END = [49.17804, -123.15534];
@@ -18,6 +19,7 @@ export const NO_2_BRIDGE = [
     type: "mixed",
     oneWay: "recommended",
     elevation: 0.5,
+    videoIds: [VIDEOS.no2BridgeNb.id],
     positions: [
       NO_2_RIVER_E_E,
       [49.17259, -123.15842],
@@ -32,6 +34,7 @@ export const NO_2_BRIDGE = [
     type: "mixed",
     oneWay: "recommended",
     elevation: 1,
+    videoIds: [VIDEOS.no2BridgeNb.id],
     positions: [
       NB_ELEVATION_START,
       [49.17333, -123.15814],
@@ -52,6 +55,8 @@ export const NO_2_BRIDGE = [
     type: "mixed",
     oneWay: "recommended",
     elevation: 0.5,
+    videoIds: [VIDEOS.no2BridgeNb.id, VIDEOS.seaIslandPathNb.id],
+    videoIdsStartAtStart: [VIDEOS.seaIslandPathNb.id],
     positions: [
       NB_ELEVATION_END,
       [49.17814, -123.15524],

@@ -244,6 +244,11 @@ const VIDEOS = {
     date: new Date("2023 06 12"),
     minutes: 10,
   },
+  crosstownRichmondWb: {
+    id: "m_ICnCiIZp8",
+    date: new Date("2024 05 14"),
+    minutes: 14,
+  },
   cypressNb: {
     id: "6Gyv4URZdvQ",
     date: new Date("2023 11 25"),
@@ -464,6 +469,11 @@ const VIDEOS = {
     date: new Date("2024 04 26"),
     minutes: 4,
   },
+  lynasNb: {
+    id: "pBcl3VMVQMQ",
+    date: new Date("2024 05 14"),
+    minutes: 5,
+  },
   masumiMitsuiEb: {
     id: "QVK6E_hmQFc",
     date: new Date("2023 06 05"),
@@ -528,6 +538,11 @@ const VIDEOS = {
     id: "ujANKTjcu1A",
     date: new Date("2023 07 05"),
     minutes: 6,
+  },
+  no2BridgeNb: {
+    id: "tBc8qFUTNgc",
+    date: new Date("2024 05 14"),
+    minutes: 5,
   },
   no3Nb: {
     id: "HWRL6CPVcSU",
@@ -653,6 +668,11 @@ const VIDEOS = {
     id: "BQJVwt1W2Nk",
     date: new Date("2024 02 26"),
     minutes: 3,
+  },
+  seaIslandPathNb: {
+    id: "eb_6J8epy4U",
+    date: new Date("2024 05 14"),
+    minutes: 13,
   },
   seaIslandWayEb: {
     id: "wSwMTjMlKt4",

@@ -432,7 +432,7 @@ export const ROUTES = {
   crosstownRichmond: {
     name: "Crosstown",
     cities: [RICHMOND],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { westbound: VIDEOS.crosstownRichmondWb } }],
   },
   crosstownNewWestminster: {
     name: "Crosstown Greenway",
@@ -743,9 +743,9 @@ export const ROUTES = {
     legs: [{ videos: {} }],
   },
   lynas: {
-    name: "Lynas Lane",
+    name: "Lynas Ln",
     cities: [RICHMOND],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.lynasNb } }],
   },
   marineNw: {
     name: "NW Marine",
@@ -856,7 +856,7 @@ export const ROUTES = {
   no2Bridge: {
     name: "No. 2 Rd Bridge",
     cities: [RICHMOND],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.no2BridgeNb } }],
   },
   no2Path: {
     name: "No. 2 Path",
@@ -1046,7 +1046,7 @@ export const ROUTES = {
   seaIslandPath: {
     name: "Sea Island Path",
     cities: [RICHMOND],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.seaIslandPathNb } }],
   },
   seaIslandWay: {
     name: "Sea Island Way",

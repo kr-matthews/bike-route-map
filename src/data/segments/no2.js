@@ -8,6 +8,7 @@ import {
   NO_2_RUSS_BAKER_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const NO_2_RIVER_E = [49.17229, -123.15866];
 const NB_ELEVATION_START = [49.17304, -123.15833];
@@ -48,6 +49,7 @@ export const NO_2 = [
   {
     description: "river to post-bridge lane",
     type: "mixed",
+    videoIds: [VIDEOS.no2BridgeNb.id],
     positions: [NO_2_RIVER, NO_2_RIVER_W_N],
   },
   {
@@ -110,6 +112,7 @@ export const NO_2 = [
     description: "river rd",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.no2BridgeNb.id],
     positions: [
       NO_2_RIVER,
       [49.17384, -123.15872],
@@ -129,12 +132,15 @@ export const NO_2 = [
     description: "path: river rd to bridge",
     type: "mixed",
     oneWay: "recommended",
-    positions: [
-      RIVER_RIVER_W,
-      [49.17226, -123.15748],
-      NO_2_RIVER_E_E,
-      NO_2_RIVER_E,
-    ],
+    videoIds: [VIDEOS.no2BridgeNb.id],
+    positions: [RIVER_RIVER_W, [49.17226, -123.15748], NO_2_RIVER_E_E],
+  },
+  {
+    description: "path: bridge sidewalk to bridge road",
+    type: "mixed",
+    oneWay: "recommended",
+    hideArrows: true,
+    positions: [NO_2_RIVER_E_E, NO_2_RIVER_E],
   },
 
   // nb

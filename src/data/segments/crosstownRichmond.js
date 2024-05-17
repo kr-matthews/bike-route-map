@@ -1,5 +1,6 @@
 import { RAILWAY_COLBECK_E, RAILWAY_GREENWAY_COLBECK } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const RAILWAY_COLBECK_EE = [49.15249, -123.16971];
 const NO_2_COLVILLE_E = [49.15156, -123.15884];
@@ -13,8 +14,10 @@ const SAINT_ALBANS_BOWCOCK = [49.15135, -123.13096];
 
 export const CROSSTOWN_RICHMOND = [
   {
-    description: "connection railway to crosstown",
+    description: "from railway greenway",
     type: "other",
+    videoIds: [VIDEOS.crosstownRichmondWb.id],
+    videoIdsEndAtStart: [VIDEOS.crosstownRichmondWb.id],
     positions: [
       RAILWAY_GREENWAY_COLBECK,
       [49.15257, -123.16974],
@@ -23,10 +26,16 @@ export const CROSSTOWN_RICHMOND = [
   },
   {
     routeNames: [ROUTES.crosstownRichmond.name],
+    description: "from railway ave",
+    type: "quiet",
+    positions: [RAILWAY_COLBECK_E, RAILWAY_COLBECK_EE],
+  },
+  {
+    routeNames: [ROUTES.crosstownRichmond.name],
     description: "railway to no. 2",
     type: "quiet",
+    videoIds: [VIDEOS.crosstownRichmondWb.id],
     positions: [
-      RAILWAY_COLBECK_E,
       RAILWAY_COLBECK_EE,
       [49.15249, -123.16799],
       [49.15246, -123.16232],
@@ -43,12 +52,14 @@ export const CROSSTOWN_RICHMOND = [
     routeNames: [ROUTES.crosstownRichmond.name],
     description: "no. 2",
     type: "mixed",
+    videoIds: [VIDEOS.crosstownRichmondWb.id],
     positions: [NO_2_COLVILLE_E, NO_2_DANUBE_E],
   },
   {
     routeNames: [ROUTES.crosstownRichmond.name],
     description: "no. 2 to blundell park",
     type: "quiet",
+    videoIds: [VIDEOS.crosstownRichmondWb.id],
     positions: [
       NO_2_DANUBE_E,
       [49.15112, -123.15845],
@@ -79,6 +90,7 @@ export const CROSSTOWN_RICHMOND = [
     routeNames: [ROUTES.crosstownRichmond.name],
     description: "blundell park",
     type: "comfortable",
+    videoIds: [VIDEOS.crosstownRichmondWb.id],
     positions: [
       BLUNDELL_PARK_W,
       [49.15225, -123.15475],
@@ -101,6 +113,7 @@ export const CROSSTOWN_RICHMOND = [
     routeNames: [ROUTES.crosstownRichmond.name],
     description: "blundell park to no. 3",
     type: "quiet",
+    videoIds: [VIDEOS.crosstownRichmondWb.id],
     positions: [
       BLUNDELL_PARK_E,
       [49.15186, -123.14994],
@@ -114,6 +127,7 @@ export const CROSSTOWN_RICHMOND = [
     routeNames: [ROUTES.crosstownRichmond.name],
     description: "no. 3",
     type: "mixed",
+    videoIds: [VIDEOS.crosstownRichmondWb.id],
     positions: [
       NO_3_LUCAS_N_W,
       [49.15166, -123.13679],
@@ -125,6 +139,7 @@ export const CROSSTOWN_RICHMOND = [
     routeNames: [ROUTES.crosstownRichmond.name],
     description: "no. 3 to saint albans",
     type: "quiet",
+    videoIds: [VIDEOS.crosstownRichmondWb.id],
     positions: [
       NO_3_LUCAS_S_E,
       [49.15157, -123.13489],
@@ -141,12 +156,15 @@ export const CROSSTOWN_RICHMOND = [
     routeNames: [ROUTES.crosstownRichmond.name],
     description: "saint albans",
     type: "shared",
+    videoIds: [VIDEOS.crosstownRichmondWb.id],
     positions: [SAINT_ALBANS_LUNEN, SAINT_ALBANS_BOWCOCK],
   },
   {
     routeNames: [ROUTES.crosstownRichmond.name],
     description: "bowcock",
     type: "quiet",
+    videoIds: [VIDEOS.crosstownRichmondWb.id],
+    videoIdsStartAtEnd: [VIDEOS.crosstownRichmondWb.id],
     positions: [
       SAINT_ALBANS_BOWCOCK,
       [49.15131, -123.12841],

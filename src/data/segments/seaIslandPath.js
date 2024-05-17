@@ -135,6 +135,8 @@ export const SEA_ISLAND_PATH = [
     routeNames: [ROUTES.seaIslandPath.name],
     description: "under no. 2 bridge",
     type: "mixed",
+    videoIds: [VIDEOS.no2BridgeNb.id, VIDEOS.seaIslandPathNb.id],
+    videoIdsEndAtEnd: [VIDEOS.no2BridgeNb.id],
     positions: [
       NO_2_BRIDGE_SIDEWALK_NE,
       [49.17826, -123.15502],
@@ -158,6 +160,7 @@ export const SEA_ISLAND_PATH = [
     routeNames: [ROUTES.seaIslandPath.name],
     description: "no. 2 to larry berg flight path park",
     type: "mixed",
+    videoIds: [VIDEOS.seaIslandPathNb.id],
     positions: [
       SEA_ISLAND_PATH_PRE_NO_2_W,
       [49.17879, -123.15508],
@@ -194,6 +197,7 @@ export const SEA_ISLAND_PATH = [
     routeNames: [ROUTES.seaIslandPath.name],
     description: "larry berg flight path park to miller pump",
     type: "mixed",
+    videoIds: [VIDEOS.seaIslandPathNb.id],
     positions: [
       LARRY_BERG_PARK_SPLIT,
       [49.18472, -123.15018],
@@ -260,6 +264,7 @@ export const SEA_ISLAND_PATH = [
     routeNames: [ROUTES.seaIslandPath.name],
     description: "miller pump to airport rd",
     type: "mixed",
+    videoIds: [VIDEOS.seaIslandPathNb.id],
     positions: [
       MILLER_PUMP_SPLIT,
       [49.19218, -123.13912],
@@ -290,6 +295,7 @@ export const SEA_ISLAND_PATH = [
     routeNames: [ROUTES.seaIslandPath.name],
     description: "airport rd",
     type: "quiet",
+    videoIds: [VIDEOS.seaIslandPathNb.id],
     positions: [
       AIRPORT_S_END,
       [49.19519, -123.13803],
@@ -305,6 +311,8 @@ export const SEA_ISLAND_PATH = [
     routeNames: [ROUTES.seaIslandPath.name],
     description: "airport rd to templeton station",
     type: "mixed",
+    videoIds: [VIDEOS.seaIslandPathNb.id],
+    videoIdsEndAtEnd: [VIDEOS.seaIslandPathNb.id],
     positions: [
       AIRPORT_TEMPLETON_STATION,
       [49.1961, -123.13725],
