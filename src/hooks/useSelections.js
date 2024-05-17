@@ -10,6 +10,7 @@ import { getAugmentedVideo, getVideo } from "../utils/videos";
 import { getAugmentedRoute, getRoute } from "../utils/routes";
 import { DEFAULT_TILE_LAYER } from "../utils/map";
 import useSavedState from "./useSavedState";
+import { useIncompleteVideoView } from "./useIncompleteVideoView";
 
 const updateSearchParams = (searchParams, keyValues) => {
   Object.entries(keyValues).forEach(([key, value]) => {
@@ -173,6 +174,7 @@ export default function useSelections() {
   );
 
   const isSegmentHidden = (segment) => {
+    const videoCount = (segment.videoIds ?? []).length;
     if (
       segment.hideUnlessVideo &&
       !segment.videoIds?.includes(selectedVideo?.id)
@@ -184,10 +186,15 @@ export default function useSelections() {
       return false;
     }
 
-    if (
-      filters.videos !== undefined &&
-      filters.videos === ((segment.videoIds ?? []).length === 0)
-    ) {
+    if (filters.videos === "incomplete" && segment.oneWay && videoCount > 0) {
+      return true;
+    }
+
+    if (filters.videos === "incomplete" && !segment.oneWay && videoCount > 1) {
+      return true;
+    }
+
+    if (filters.videos !== undefined && filters.videos === (videoCount === 0)) {
       return true;
     }
 
@@ -205,6 +212,8 @@ export default function useSelections() {
 
     return false;
   };
+
+  useIncompleteVideoView(dispatchFilters);
 
   return {
     highlightedRoute,
