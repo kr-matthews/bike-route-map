@@ -29,7 +29,6 @@ import {
   SEAWALL_WATERFRONT,
   SEAWALL_WHYTE,
   SPYGLASS_SEAWALL,
-  STANLEY_PARK_LANE_BEACH,
   STANLEY_PARK_LOOP_SPLIT_W,
   STEPHENS_POINT_GREY,
   THIRD_SEASIDE,
@@ -38,6 +37,8 @@ import {
   COLUMBIA_SEAWALL,
   LAUREL_LAND_BRIDGE_SEASIDE,
   LAUREL_7TH,
+  LAWN_BOWLING_CLUB_E,
+  SECOND_BEACH_WEIRD_JOIN,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -56,6 +57,8 @@ const PRE_MARINASIDE = [49.27307, -123.11564];
 
 const SEAWALL_STANLEY_PARK_WEST_END = [49.29031, -123.14571];
 const SEAWALL_UNDER_BURRARD_N = [49.27587, -123.13547];
+const LAWN_BOWLING_CLUB_W = [49.291, -123.14741];
+const STANLEY_PARK_DRIVE_LAGOON = [49.29356, -123.14803];
 
 const MID_CONVENTION_CENTER = [49.28962, -123.11524];
 const NORTH_OF_CANADA_PLACE = [49.28832, -123.11518];
@@ -72,10 +75,6 @@ const LAUREL_LAND_BRIDGE_N = [49.26632, -123.12433];
 
 export const SEASIDE = [
   // connections
-  {
-    description: "seaside bypass end",
-    positions: [SEAWALL_STANLEY_PARK_WEST_END, STANLEY_PARK_LANE_BEACH],
-  },
   {
     description: "denman",
     type: "quiet",
@@ -1009,8 +1008,9 @@ export const SEASIDE = [
   },
   {
     routeNames: [ROUTES.seaside.name],
-    description: "stanley park non-loop",
+    description: "stanley park non-loop out to lawn bowling",
     type: "dedicated",
+    oneWay: "required",
     positions: [
       STANLEY_PARK_LOOP_SPLIT_W,
       [49.29426, -123.14917],
@@ -1025,7 +1025,60 @@ export const SEASIDE = [
       [49.29282, -123.14954],
       [49.29258, -123.1493],
       [49.29175, -123.14835],
-      [49.29093, -123.14732],
+      LAWN_BOWLING_CLUB_W,
+      LAWN_BOWLING_CLUB_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "stanley park non-loop in from lawn bowling",
+    type: "dedicated",
+    oneWay: "recommended",
+    positions: [
+      LAWN_BOWLING_CLUB_E,
+      [49.29109, -123.14747],
+      [49.29149, -123.14797],
+      [49.29162, -123.14813],
+      [49.29174, -123.14822],
+      [49.29183, -123.14827],
+      [49.29199, -123.14828],
+      [49.29213, -123.14828],
+      [49.29229, -123.14825],
+      [49.29244, -123.1482],
+      [49.2928, -123.14807],
+      [49.29296, -123.14803],
+      [49.29325, -123.14801],
+      [49.29347, -123.14801],
+      STANLEY_PARK_DRIVE_LAGOON,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "stanley park non-loop in to second beach",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      STANLEY_PARK_DRIVE_LAGOON,
+      [49.29379, -123.14802],
+      [49.29403, -123.14805],
+      [49.29413, -123.14808],
+      [49.29431, -123.14817],
+      [49.29439, -123.14821],
+      [49.29469, -123.14838],
+      [49.29491, -123.14858],
+      [49.29509, -123.14878],
+      [49.2951, -123.14885],
+      [49.29509, -123.1489],
+      SECOND_BEACH_WEIRD_JOIN,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "stanley park beyond lawn bowling",
+    type: "dedicated",
+    isClosed: true,
+    positions: [
+      LAWN_BOWLING_CLUB_W,
       [49.29083, -123.14723],
       [49.29072, -123.1471],
       [49.29058, -123.1469],

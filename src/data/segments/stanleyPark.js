@@ -1,4 +1,5 @@
 import {
+  SECOND_BEACH_WEIRD_JOIN,
   STANLEY_PARK_LOOP_ALBERNI,
   STANLEY_PARK_LOOP_CAUSEWAY_UNDERPASS_SPLIT,
   STANLEY_PARK_LOOP_JOIN_E,
@@ -10,6 +11,8 @@ import { VIDEOS } from "../videos";
 const AFTER_ONE_WAY_START = [49.29607, -123.13556];
 const BEFORE_ONE_WAY_END = [49.29567, -123.15135];
 const ONE_WAY_END = [49.29592, -123.15089];
+const DR_TUNNEL_START = [49.29433, -123.14822];
+const DR_TUNNEL_END = [49.29441, -123.1481];
 const AFTER_DR_TUNNEL = [49.29449, -123.14802];
 const BEFORE_CAUSEWAY_UNDERPASS = [49.29472, -123.13706];
 
@@ -492,7 +495,7 @@ export const STANLEY_PARK_LOOP = [
       [49.29555, -123.1498],
       [49.29553, -123.14975],
       [49.2952, -123.14929],
-      [49.29501, -123.14905],
+      SECOND_BEACH_WEIRD_JOIN,
       [49.29484, -123.14887],
       [49.29467, -123.14872],
       STANLEY_PARK_LOOP_SPLIT_W,
@@ -500,10 +503,10 @@ export const STANLEY_PARK_LOOP = [
   },
   {
     routeNames: [ROUTES.stanleyParkLoop.name],
-    description: "lost lagoon tunnel",
+    description: "lost lagoon pre-tunnel",
     type: "comfortable",
+    elevation: -0.5,
     videoIds: [VIDEOS.lostLagoonEb.id, VIDEOS.seasideStanleyPark.id],
-    videoIdsEndAtEnd: [VIDEOS.seasideStanleyPark.id],
     positions: [
       STANLEY_PARK_LOOP_SPLIT_W,
       [49.29433, -123.14848],
@@ -511,10 +514,25 @@ export const STANLEY_PARK_LOOP = [
       [49.29427, -123.14834],
       [49.29427, -123.1483],
       [49.29429, -123.14826],
-      [49.29433, -123.14822],
-      [49.29441, -123.1481],
-      AFTER_DR_TUNNEL,
+      DR_TUNNEL_START,
     ],
+  },
+  {
+    routeNames: [ROUTES.stanleyParkLoop.name],
+    description: "lost lagoon tunnel",
+    type: "comfortable",
+    elevation: -1,
+    videoIds: [VIDEOS.lostLagoonEb.id, VIDEOS.seasideStanleyPark.id],
+    positions: [DR_TUNNEL_START, DR_TUNNEL_END],
+  },
+  {
+    routeNames: [ROUTES.stanleyParkLoop.name],
+    description: "lost lagoon brief post-tunnel",
+    type: "comfortable",
+    elevation: -0.5,
+    videoIds: [VIDEOS.lostLagoonEb.id, VIDEOS.seasideStanleyPark.id],
+    videoIdsEndAtEnd: [VIDEOS.seasideStanleyPark.id],
+    positions: [DR_TUNNEL_END, AFTER_DR_TUNNEL],
   },
   {
     routeNames: [ROUTES.stanleyParkLoop.name],
