@@ -42,15 +42,21 @@ export default function Segment({ segment }) {
       },
       contextmenu: () => {
         if (hasAnyVideos) {
-          const firstVideoId = videoIds[0];
+          // cycle through videos
+          const currentlySelectedVideoIndex = videoIds.findIndex(
+            (id) => id === selectedVideo?.id
+          );
+          const nextVideoIndex =
+            (currentlySelectedVideoIndex + 1) % videoIds.length;
+          const nextVideoId = videoIds[nextVideoIndex];
           // use the first listed route which has the video
           // otherwise take any route which has the video
-          const routesWithVideo = getRoutesWithVideo(firstVideoId);
+          const routesWithVideo = getRoutesWithVideo(nextVideoId);
           const aRouteNameWithVideo =
             (routeNames ?? []).find((routeName) =>
               routesWithVideo.some((route) => route.name === routeName)
             ) ?? routesWithVideo[0].name;
-          selectRouteAndVideo(aRouteNameWithVideo, firstVideoId);
+          selectRouteAndVideo(aRouteNameWithVideo, nextVideoId);
         }
       },
     }),
@@ -62,6 +68,7 @@ export default function Segment({ segment }) {
       highlightRoute,
       selectRoute,
       selectRouteAndVideo,
+      selectedVideo,
     ]
   );
 
