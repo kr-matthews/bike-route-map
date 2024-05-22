@@ -103,8 +103,13 @@ export const CARRALL = [
   {
     routeNames: [ROUTES.carrall.name],
     description: "north end",
-    videoIds: [VIDEOS.carrallNb.id, VIDEOS.alexanderEb.id],
+    videoIds: [
+      VIDEOS.carrallNb.id,
+      VIDEOS.alexanderEb.id,
+      VIDEOS.alexanderWb.id,
+    ],
     videoIdsStartAtStart: [VIDEOS.alexanderEb.id],
+    videoIdsEndAtStart: [VIDEOS.alexanderWb.id],
     videoIdsEndAtEnd: [VIDEOS.carrallNb.id],
     positions: [NORTH_SPLIT, [49.28323, -123.10422], ALEXANDER_POWELL],
   },

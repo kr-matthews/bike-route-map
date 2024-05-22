@@ -1183,6 +1183,9 @@ export const SEASIDE_BYPASS = [
     routeNames: [ROUTES.seasideBypass.name],
     type: "quiet",
     description: "whyte",
+    videoIds: [VIDEOS.seasideBypassWhyteWb.id],
+    videoIdsStartAtEnd: [VIDEOS.seasideBypassWhyteWb.id],
+    videoIdsEndAtStart: [VIDEOS.seasideBypassWhyteWb.id],
     positions: [
       ARBUTUS_WHYTE,
       [49.27538, -123.15009],

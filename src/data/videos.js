@@ -24,6 +24,11 @@ const VIDEOS = {
     date: new Date("2023 05 30"),
     minutes: 3,
   },
+  alexanderWb: {
+    id: "PFsBa9hHnpU",
+    date: new Date("2024 05 18"),
+    minutes: 4,
+  },
   arbutusGreenwayNb: {
     id: "EyhC1Qqacy8",
     date: new Date("2023 12 16"),
@@ -399,6 +404,11 @@ const VIDEOS = {
     date: new Date("2023 10 22"),
     minutes: 9,
   },
+  hornbySb: {
+    id: "HX2WMnvLFfM",
+    date: new Date("2024 05 18"),
+    minutes: 11,
+  },
   howesNb: {
     id: "QemciyuJDOQ",
     date: new Date("2024 03 13"),
@@ -699,6 +709,11 @@ const VIDEOS = {
     date: new Date("2024 04 10"),
     minutes: 11,
   },
+  seasideBypassWhyteWb: {
+    id: "L1dzMGDfgDU",
+    date: new Date("2024 05 18"),
+    minutes: 3,
+  },
   seasideCoalHarbourWb: {
     id: "95bsLG23jgA",
     date: new Date("2024 04 26"),
@@ -708,6 +723,11 @@ const VIDEOS = {
     id: "6YRDnkizY74",
     date: new Date("2024 04 26"),
     minutes: 24,
+  },
+  seasideFalseCreekCw: {
+    id: "ZSsCF2kpicg",
+    date: new Date("2024 05 18"),
+    minutes: 22,
   },
   seasideKitsWb: {
     id: "htrdfMC4NBg",

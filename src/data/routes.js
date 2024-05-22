@@ -128,7 +128,14 @@ export const ROUTES = {
   alexander: {
     name: "Alexander",
     cities: [VANCOUVER],
-    legs: [{ videos: { eastbound: VIDEOS.alexanderEb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.alexanderEb,
+          westbound: VIDEOS.alexanderWb,
+        },
+      },
+    ],
   },
   alexFraserBridge: {
     name: "Alex Fraser Bridge",
@@ -637,7 +644,9 @@ export const ROUTES = {
   hornby: {
     name: "Hornby",
     cities: [VANCOUVER],
-    legs: [{ videos: { northbound: VIDEOS.hornbyNb } }],
+    legs: [
+      { videos: { northbound: VIDEOS.hornbyNb, southbound: VIDEOS.hornbySb } },
+    ],
   },
   howes: {
     name: "Howes St",
@@ -1067,7 +1076,10 @@ export const ROUTES = {
         videos: { counterclockwise: VIDEOS.seasideStanleyPark },
       },
       { name: "West End", videos: {} },
-      { name: "False Creek", videos: {} },
+      {
+        name: "False Creek",
+        videos: { clockwise: VIDEOS.seasideFalseCreekCw },
+      },
       {
         name: "Kitsilano",
         videos: { westbound: VIDEOS.seasideKitsWb },
@@ -1092,13 +1104,14 @@ export const ROUTES = {
         name: "False Creek South",
         videos: { eastbound: VIDEOS.seasideBypassFalseCreekSouthEb },
       },
+      // ! combine & replace videos
       { name: "York", videos: { eastbound: VIDEOS.yorkEb } },
       { name: "3rd", videos: { eastbound: VIDEOS.thirdEb } },
       {
         name: "NW Marine & 4th",
         videos: { eastbound: VIDEOS.seasideBypassMarine4thEb },
       },
-      { name: "Whyte", videos: {} },
+      { name: "Whyte", videos: { westbound: VIDEOS.seasideBypassWhyteWb } },
     ],
   },
   seaToRiver: {
