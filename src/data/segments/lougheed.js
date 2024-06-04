@@ -27,6 +27,8 @@ const EASTBOUND_ELEVATION_2_PRE = [49.22931, -122.84005];
 const EASTBOUND_ELEVATION_2_START = [49.2293, -122.83982];
 const EASTBOUND_ELEVATION_2_END = [49.22856, -122.8329];
 
+const WB_INITIAL_PATH_END = [49.22844, -122.82389];
+
 const WESTBOUND_ELEVATION_1_PRE = [49.22982, -122.83067];
 const WESTBOUND_ELEVATION_1_START = [49.22984, -122.8322];
 const WESTBOUND_ELEVATION_1_END = [49.23005, -122.83592];
@@ -54,6 +56,7 @@ const MARY_HILL_JOIN = [49.22939, -122.83789];
 
 const WOOLRIDGE_LOUGHEED_NW = [49.23621, -122.86918];
 const BRUNETTE_LOUGHEED_N = [49.23674, -122.87171];
+const BLUE_MOUNTAIN_LOUGHEED_N = [49.23702, -122.87312];
 const AUSTIN_LOUGHEED_NW = [49.24872, -122.89757];
 const BEYOND_BETA_SHOULDER_END = [49.26645, -122.99871];
 
@@ -430,8 +433,8 @@ export const LOUGHEED = [
   // westbound
   {
     routeNames: [ROUTES.lougheed.name],
-    description: "wb: mary hill to elevation",
-    type: "shoulder",
+    description: "wb: path from mary hill",
+    type: "dedicated",
     oneWay: "required",
     positions: [
       UNITED_MARY_HILL_NW,
@@ -440,7 +443,16 @@ export const LOUGHEED = [
       [49.22849, -122.82044],
       [49.22847, -122.82188],
       [49.22845, -122.82287],
-      [49.22844, -122.82389],
+      WB_INITIAL_PATH_END,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "wb: after initial path",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
+      WB_INITIAL_PATH_END,
       [49.22846, -122.82433],
       [49.22864, -122.82546],
       [49.22882, -122.82631],
@@ -512,19 +524,22 @@ export const LOUGHEED = [
   },
   {
     routeNames: [ROUTES.lougheed.name],
-    description: "wb: woolridge to brunette",
+    description: "wb: woolridge to blue mountain",
     type: "shared",
     oneWay: "required",
-    positions: [WOOLRIDGE_LOUGHEED_NW, BRUNETTE_LOUGHEED_N],
+    positions: [
+      WOOLRIDGE_LOUGHEED_NW,
+      BRUNETTE_LOUGHEED_N,
+      BLUE_MOUNTAIN_LOUGHEED_N,
+    ],
   },
   {
     routeNames: [ROUTES.lougheed.name],
-    description: "wb: brunette to austin",
+    description: "wb: blue mountain to austin",
     type: "shoulder",
     oneWay: "required",
     positions: [
-      BRUNETTE_LOUGHEED_N,
-      [49.23702, -122.87312],
+      BLUE_MOUNTAIN_LOUGHEED_N,
       [49.23758, -122.8759],
       [49.23782, -122.87686],
       [49.23807, -122.87773],
