@@ -38,6 +38,7 @@ import { CHANCELLOR } from "./chancellor";
 import { CHILCO } from "./chilco";
 import { COLUMBIA } from "./columbia";
 import { COMOX_HELMCKEN } from "./comoxHelmcken";
+import { CPR_TRAIL } from "./cprTrail";
 import { CRABAPPLE_RIDGE } from "./crabappleRidge";
 import { CROSSTOWN_NEW_WESTMINSTER } from "./crosstownNewWestminster";
 import { CROSSTOWN_RICHMOND } from "./crosstownRichmond";
@@ -116,6 +117,7 @@ import { ONTARIO } from "./ontario";
 import { PANDORA } from "./pandora";
 import { PARKSIDE } from "./parkside";
 import { PENDER } from "./pender";
+import { PITT_RIVER_BRIDGE } from "./pittRiverBridge";
 import { POCO_TRAIL } from "./pocoTrail";
 import { PORT_MANN_BRIDGE } from "./portMannBridge";
 import { PORT_ROYAL_RIVER_TRAIL } from "./portRoyalRiverTrail";
@@ -221,6 +223,7 @@ export const SEGMENTS = [
   ...CHILCO,
   ...COLUMBIA,
   ...COMOX_HELMCKEN,
+  ...CPR_TRAIL,
   ...CRABAPPLE_RIDGE,
   ...CROSSTOWN_NEW_WESTMINSTER,
   ...CROSSTOWN_RICHMOND,
@@ -299,6 +302,7 @@ export const SEGMENTS = [
   ...PANDORA,
   ...PARKSIDE,
   ...PENDER,
+  ...PITT_RIVER_BRIDGE,
   ...POCO_TRAIL,
   ...PORT_MANN_BRIDGE,
   ...PORT_ROYAL_RIVER_TRAIL,

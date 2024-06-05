@@ -431,6 +431,11 @@ export const ROUTES = {
       },
     ],
   },
+  cprTrail: {
+    name: "CPR Trail",
+    cities: [],
+    legs: [{ videos: {} }],
+  },
   crabappleRidge: {
     name: "Crabapple Ridge",
     cities: [RICHMOND],
@@ -948,6 +953,11 @@ export const ROUTES = {
     cities: [VANCOUVER],
     legs: [{ videos: { eastbound: VIDEOS.penderEb } }],
   },
+  pittRiverBridge: {
+    name: "Pitt River Bridge",
+    cities: [],
+    legs: [{ videos: {} }],
+  },
   pocoTrail: {
     name: "Traboulay PoCo Trail",
     shortName: "PoCo Trail",
@@ -1222,10 +1232,10 @@ export const ROUTES = {
     legs: [{ videos: {} }],
   },
   transCanada: {
-    name: "Trans Canada Trail (Burnaby)",
-    shortName: "Trans Canada Trail",
+    name: "Trans Canada Trail",
+    isIncomplete: true,
     cities: [BURNABY],
-    legs: [{ videos: { westbound: VIDEOS.seaToRiverNb } }],
+    legs: [{ name: "Burnaby", videos: { westbound: VIDEOS.seaToRiverNb } }],
   },
   university: {
     name: "University Blvd",
