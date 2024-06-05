@@ -90,6 +90,7 @@ import { LOUGHEED } from "./lougheed";
 import { LYNAS } from "./lynas";
 import { MARINE } from "./marine";
 import { MARINE_WAY } from "./marineWay";
+import { MARRY_HILL_BYPASS } from "./maryHillBypass";
 import { MASUMI_MITSUI_GREENWAY } from "./masumiMitsui";
 import { METROTOWN } from "./metrotown";
 import { MIDDLE_ARM } from "./middleArm";
@@ -115,6 +116,7 @@ import { ONTARIO } from "./ontario";
 import { PANDORA } from "./pandora";
 import { PARKSIDE } from "./parkside";
 import { PENDER } from "./pender";
+import { POCO_TRAIL } from "./pocoTrail";
 import { PORT_MANN_BRIDGE } from "./portMannBridge";
 import { PORT_ROYAL_RIVER_TRAIL } from "./portRoyalRiverTrail";
 import { PORTSIDE } from "./portside";
@@ -271,6 +273,7 @@ export const SEGMENTS = [
   ...LYNAS,
   ...MARINE,
   ...MARINE_WAY,
+  ...MARRY_HILL_BYPASS,
   ...MASUMI_MITSUI_GREENWAY,
   ...METROTOWN,
   ...MIDDLE_ARM,
@@ -296,6 +299,7 @@ export const SEGMENTS = [
   ...PANDORA,
   ...PARKSIDE,
   ...PENDER,
+  ...POCO_TRAIL,
   ...PORT_MANN_BRIDGE,
   ...PORT_ROYAL_RIVER_TRAIL,
   ...PORTSIDE,

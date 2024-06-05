@@ -103,8 +103,9 @@ export default function RouteDetail({ mapRef }) {
 
         <div style={{ overflow: "auto" }}>
           {selectedRoute.isIncomplete && (
-            <p style={{ paddingLeft: "1em" }}>
-              Note: Route drawn on map is incomplete. Come back later.
+            <p style={{ paddingLeft: "1em", paddingRight: "1em" }}>
+              Note: The data for this route is incomplete and may extend further
+              than is currently drawn on the map.
             </p>
           )}
           {legs.map((leg) => (

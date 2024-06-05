@@ -1,7 +1,10 @@
-import { LEEDER_UNITED, UNITED_MARY_HILL_NW } from "../intersections";
+import {
+  LEEDER_UNITED,
+  UNITED_MARY_HILL_NW,
+  UNITED_PORT_MANN,
+} from "../intersections";
 import { ROUTES } from "../routes";
 
-const UNITED_PORT_MANN = [49.22774, -122.81981];
 const BRIDGE_END = [49.20605, -122.80104];
 
 const ELEVATION_START = [49.22731, -122.82029];

@@ -778,6 +778,12 @@ export const ROUTES = {
       },
     ],
   },
+  marryHillBypass: {
+    name: "Mary Hill Bypass",
+    isIncomplete: true,
+    cities: [],
+    legs: [{ videos: {} }],
+  },
   masumiMitsui: {
     name: "Masumi Mitsui Greenway",
     shortName: "Masumi Mitsui Gr.",
@@ -941,6 +947,13 @@ export const ROUTES = {
     name: "Pender St",
     cities: [VANCOUVER],
     legs: [{ videos: { eastbound: VIDEOS.penderEb } }],
+  },
+  pocoTrail: {
+    name: "Traboulay PoCo Trail",
+    shortName: "PoCo Trail",
+    isIncomplete: true,
+    cities: [],
+    legs: [{ videos: {} }],
   },
   portMannBridge: {
     name: "Port Mann Bridge",
