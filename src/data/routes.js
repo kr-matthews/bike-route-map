@@ -1128,13 +1128,10 @@ export const ROUTES = {
         },
       },
       {
-        // includes quebec
         name: "False Creek South",
         videos: { eastbound: VIDEOS.seasideBypassFalseCreekSouthEb },
       },
-      // ! combine & replace videos
-      { name: "York", videos: { eastbound: VIDEOS.yorkEb } },
-      { name: "3rd", videos: { eastbound: VIDEOS.thirdEb } },
+      { name: "York & 3rd", videos: {} },
       {
         name: "NW Marine & 4th",
         videos: { eastbound: VIDEOS.seasideBypassMarine4thEb },
