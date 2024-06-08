@@ -63,6 +63,7 @@ import { GEORGIA } from "./georgia";
 import { GILBERT } from "./gilbert";
 import { GLADSTONE } from "./gladstone";
 import { GLENLYON } from "./glenlyon";
+import { GOLDEN_EARS_BRIDGE } from "./goldenEarsBridge";
 import { GRANVILLE } from "./granville";
 import { HARO } from "./haro";
 import { HASTINGS_PARK } from "./hastingsPark";
@@ -248,6 +249,7 @@ export const SEGMENTS = [
   ...GILBERT,
   ...GLADSTONE,
   ...GLENLYON,
+  ...GOLDEN_EARS_BRIDGE,
   ...GRANVILLE,
   ...HARO,
   ...HASTINGS_PARK,

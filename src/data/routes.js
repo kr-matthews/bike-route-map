@@ -573,6 +573,11 @@ export const ROUTES = {
     cities: [BURNABY],
     legs: [{ videos: { northbound: VIDEOS.glenlyonNb } }],
   },
+  goldenEars: {
+    name: "Golden Ears Bridge",
+    cities: [],
+    legs: [{ videos: {} }],
+  },
   granville: {
     name: "Granville Ave",
     cities: [RICHMOND],
