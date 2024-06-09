@@ -1,5 +1,6 @@
 import {} from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const WILDWOOD_AIRPORT_N = [49.20848, -122.67327];
 const WILDWOOD_AIRPORT_S = [49.20835, -122.67326];
@@ -42,11 +43,12 @@ const ROUNDABOUTS_EB_LANE_E = [49.2091, -122.66772];
 const S_END_SPLIT = [49.18432, -122.66454];
 const NW_201 = [49.18434, -122.66442];
 const NE_201 = [49.18436, -122.6642];
+const NE_201_98 = [49.18156, -122.66424];
 
-const E_LOOP_E = [49.18414, -122.66464];
-const E_LOOP_W = [49.18428, -122.66496];
-const W_LOOP_E = [49.18417, -122.66577];
-const W_LOOP_W = [49.18432, -122.6661];
+export const E_LOOP_E = [49.18414, -122.66464];
+export const E_LOOP_W = [49.18428, -122.66496];
+export const W_LOOP_E = [49.18417, -122.66577];
+export const W_LOOP_W = [49.18432, -122.6661];
 
 const E_LOOPS_S = [
   E_LOOP_E,
@@ -151,12 +153,15 @@ export const GOLDEN_EARS_BRIDGE = [
     description: "airport way eb",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.goldenEarsBridgeSb.id],
+    videoIdsStartAtStart: [VIDEOS.goldenEarsBridgeSb.id],
     positions: [[49.2083, -122.67808], WILDWOOD_AIRPORT_S, AIRPORT_SE],
   },
   {
     description: "airport way eb pre-roundabout",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.goldenEarsBridgeSb.id],
     positions: [
       AIRPORT_SE,
       [49.20838, -122.67104],
@@ -169,6 +174,7 @@ export const GOLDEN_EARS_BRIDGE = [
     type: "shared",
     oneWay: "required",
     hideArrows: true,
+    videoIds: [VIDEOS.goldenEarsBridgeSb.id],
     positions: [WEST_ROUNDABOUT_W_S, WEST_ROUNDABOUT_S_W],
   },
   {
@@ -181,6 +187,7 @@ export const GOLDEN_EARS_BRIDGE = [
     description: "east roundabout east",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.goldenEarsBridgeNb.id],
     positions: [
       EAST_ROUNDABOUT_S_E,
       [49.20918, -122.66703],
@@ -197,6 +204,7 @@ export const GOLDEN_EARS_BRIDGE = [
     type: "shared",
     oneWay: "required",
     hideArrows: true,
+    videoIds: [VIDEOS.goldenEarsBridgeNb.id],
     positions: [EAST_ROUNDABOUT_N_E, GOLDEN_EARS_PATH_S],
   },
   {
@@ -331,6 +339,8 @@ export const GOLDEN_EARS_BRIDGE = [
   {
     description: "golden ears path",
     type: "mixed",
+    videoIds: [VIDEOS.goldenEarsBridgeNb.id],
+    videoIdsEndAtEnd: [VIDEOS.goldenEarsBridgeNb.id],
     positions: [
       GOLDEN_EARS_PATH_S,
       [49.2095, -122.66733],
@@ -358,17 +368,21 @@ export const GOLDEN_EARS_BRIDGE = [
   {
     description: "connection with 201",
     type: "mixed",
+    videoIds: [VIDEOS.goldenEarsBridgeNb.id, VIDEOS.goldenEarsBridgeSb.id],
     positions: [S_END_SPLIT, NW_201],
   },
   {
     description: "crossing 201",
     type: "mixed",
+    videoIds: [VIDEOS.goldenEarsBridgeNb.id],
     positions: [NW_201, [49.18437, -122.6643], NE_201],
   },
   {
     description: "199A",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.goldenEarsBridgeSb.id],
+    videoIdsEndAtEnd: [VIDEOS.goldenEarsBridgeSb.id],
     positions: [
       NW_201,
       [49.18417, -122.66434],
@@ -406,14 +420,24 @@ export const GOLDEN_EARS_BRIDGE = [
     ],
   },
   {
-    description: "201",
+    description: "201 part 1",
     type: "painted",
     oneWay: "required",
     positions: [
       [49.17713, -122.66431],
       [49.17927, -122.66429],
       [49.18041, -122.66426],
-      [49.18156, -122.66424],
+      NE_201_98,
+    ],
+  },
+  {
+    description: "201 part 2",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [VIDEOS.goldenEarsBridgeNb.id],
+    videoIdsStartAtStart: [VIDEOS.goldenEarsBridgeNb.id],
+    positions: [
+      NE_201_98,
       [49.1826, -122.66427],
       [49.18309, -122.66428],
       [49.18335, -122.66428],
@@ -445,6 +469,7 @@ export const GOLDEN_EARS_BRIDGE = [
     description: "sb on-ramp shared",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.goldenEarsBridgeSb.id],
     positions: [
       WEST_ROUNDABOUT_S_W,
       [49.2082, -122.67065],
@@ -456,6 +481,7 @@ export const GOLDEN_EARS_BRIDGE = [
     description: "sb on-ramp shoulder",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.goldenEarsBridgeSb.id],
     positions: [
       SB_ON_RAMP_LANE_START,
       [49.20803, -122.67067],
@@ -479,6 +505,7 @@ export const GOLDEN_EARS_BRIDGE = [
     type: "mixed",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.goldenEarsBridgeSb.id],
     positions: [
       SB_SIDEWALK_START,
       [49.20655, -122.66875],
@@ -494,6 +521,7 @@ export const GOLDEN_EARS_BRIDGE = [
     type: "mixed",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.goldenEarsBridgeSb.id],
     positions: [
       SB_ELEVATION_START,
       [49.20434, -122.66801],
@@ -532,6 +560,7 @@ export const GOLDEN_EARS_BRIDGE = [
     type: "mixed",
     oneWay: "required",
     elevation: 1.5,
+    videoIds: [VIDEOS.goldenEarsBridgeSb.id],
     positions: [
       SB_ELEVATION_JUMP_1,
       [49.18569, -122.66458],
@@ -546,6 +575,7 @@ export const GOLDEN_EARS_BRIDGE = [
     type: "mixed",
     oneWay: "required",
     elevation: 2,
+    videoIds: [VIDEOS.goldenEarsBridgeSb.id],
     positions: [
       SB_ELEVATION_JUMP_2,
       [49.18471, -122.66515],
@@ -561,6 +591,7 @@ export const GOLDEN_EARS_BRIDGE = [
     oneWay: "required",
     elevation: 1.5,
     hideArrows: true,
+    videoIds: [VIDEOS.goldenEarsBridgeSb.id],
     positions: [...W_LOOPS_S],
   },
   {
@@ -570,6 +601,7 @@ export const GOLDEN_EARS_BRIDGE = [
     oneWay: "required",
     elevation: 1,
     hideArrows: true,
+    videoIds: [VIDEOS.goldenEarsBridgeSb.id],
     positions: [...W_LOOPS_N, ...W_LOOPS_S, ...W_LOOPS_N],
   },
   {
@@ -579,6 +611,7 @@ export const GOLDEN_EARS_BRIDGE = [
     oneWay: "required",
     elevation: 0.5,
     hideArrows: true,
+    videoIds: [VIDEOS.goldenEarsBridgeSb.id],
     positions: [...W_LOOPS_S],
   },
   {
@@ -586,6 +619,7 @@ export const GOLDEN_EARS_BRIDGE = [
     description: "sb off-ramp 4",
     type: "mixed",
     oneWay: "required",
+    videoIds: [VIDEOS.goldenEarsBridgeSb.id],
     positions: [
       W_LOOP_W,
       [49.18437, -122.66602],
@@ -602,6 +636,7 @@ export const GOLDEN_EARS_BRIDGE = [
     description: "nb on-ramp 1",
     type: "mixed",
     oneWay: "required",
+    videoIds: [VIDEOS.goldenEarsBridgeNb.id],
     positions: [S_END_SPLIT, E_LOOP_E],
   },
   {
@@ -611,6 +646,7 @@ export const GOLDEN_EARS_BRIDGE = [
     oneWay: "required",
     elevation: 0.5,
     hideArrows: true,
+    videoIds: [VIDEOS.goldenEarsBridgeNb.id],
     positions: [...E_LOOPS_S],
   },
   {
@@ -620,6 +656,7 @@ export const GOLDEN_EARS_BRIDGE = [
     oneWay: "required",
     elevation: 1,
     hideArrows: true,
+    videoIds: [VIDEOS.goldenEarsBridgeNb.id],
     positions: [...E_LOOPS_N, ...E_LOOPS_S, ...E_LOOPS_N],
   },
   {
@@ -629,6 +666,7 @@ export const GOLDEN_EARS_BRIDGE = [
     oneWay: "required",
     elevation: 1.5,
     hideArrows: true,
+    videoIds: [VIDEOS.goldenEarsBridgeNb.id],
     positions: [...E_LOOPS_S],
   },
   {
@@ -637,6 +675,7 @@ export const GOLDEN_EARS_BRIDGE = [
     type: "mixed",
     oneWay: "required",
     elevation: 2,
+    videoIds: [VIDEOS.goldenEarsBridgeNb.id],
     positions: [
       E_LOOP_W,
       [49.18456, -122.66471],
@@ -651,6 +690,7 @@ export const GOLDEN_EARS_BRIDGE = [
     type: "mixed",
     oneWay: "required",
     elevation: 1.5,
+    videoIds: [VIDEOS.goldenEarsBridgeNb.id],
     positions: [
       NB_ELEVATION_JUMP_1,
       [49.18606, -122.66403],
@@ -666,6 +706,7 @@ export const GOLDEN_EARS_BRIDGE = [
     type: "mixed",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.goldenEarsBridgeNb.id],
     positions: [
       NB_ELEVATION_JUMP_2,
       [49.1915, -122.66409],
@@ -699,6 +740,7 @@ export const GOLDEN_EARS_BRIDGE = [
     type: "mixed",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.goldenEarsBridgeNb.id],
     positions: [
       NB_ELEVATION_END,
       [49.20594, -122.66806],
@@ -716,6 +758,7 @@ export const GOLDEN_EARS_BRIDGE = [
     description: "nb off-ramp shoulder",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.goldenEarsBridgeNb.id],
     positions: [
       NB_OFF_RAMP_LANE_START,
       [49.20778, -122.66759],
@@ -733,6 +776,7 @@ export const GOLDEN_EARS_BRIDGE = [
     description: "nb off-ramp shared",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.goldenEarsBridgeNb.id],
     positions: [
       NB_OFF_RAMP_LANE_END,
       [49.20886, -122.66712],

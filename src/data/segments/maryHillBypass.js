@@ -5,6 +5,7 @@ import {
   UNITED_PORT_MANN,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const EB_SHOULDER_START = [49.22744, -122.81933];
 const WB_SHOULDER_END = [49.22833, -122.8189];
@@ -16,6 +17,7 @@ export const MARRY_HILL_BYPASS = [
     description: "eb crossing",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.lougheedEb.id],
     positions: [UNITED_PORT_MANN, [49.22761, -122.81945], EB_SHOULDER_START],
   },
   {
@@ -23,6 +25,8 @@ export const MARRY_HILL_BYPASS = [
     description: "eb",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.lougheedEb.id],
+    videoIdsEndAtEnd: [VIDEOS.lougheedEb.id],
     positions: [
       EB_SHOULDER_START,
       [49.22746, -122.81924],
@@ -83,6 +87,8 @@ export const MARRY_HILL_BYPASS = [
     description: "wb",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.lougheedWb.id],
+    videoIdsStartAtStart: [VIDEOS.lougheedWb.id],
     positions: [
       ARGUE_MARY_HILL_NW,
       [49.2274, -122.79586],
@@ -139,6 +145,7 @@ export const MARRY_HILL_BYPASS = [
     description: "wb crossing",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.lougheedWb.id],
     positions: [WB_SHOULDER_END, [49.22823, -122.81914], UNITED_MARY_HILL_NW],
   },
 ];

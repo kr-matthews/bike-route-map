@@ -4,6 +4,7 @@ import {
   UNITED_PORT_MANN,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const BRIDGE_END = [49.20605, -122.80104];
 
@@ -16,7 +17,7 @@ const EAST_OVERPASS_END = [49.206, -122.80183];
 export const PORT_MANN_BRIDGE = [
   // west connections
   {
-    description: "united",
+    description: "united: west of leeder",
     type: "mixed",
     positions: [
       [49.22873, -122.83385],
@@ -31,6 +32,14 @@ export const PORT_MANN_BRIDGE = [
       [49.22759, -122.83091],
       [49.22759, -122.83054],
       [49.22762, -122.8304],
+      LEEDER_UNITED,
+    ],
+  },
+  {
+    description: "united: leeder to port mann",
+    type: "mixed",
+    videoIds: [VIDEOS.lougheedEb.id],
+    positions: [
       LEEDER_UNITED,
       [49.2276, -122.83012],
       [49.2276, -122.82905],
@@ -61,8 +70,12 @@ export const PORT_MANN_BRIDGE = [
       [49.22736, -122.82007],
       [49.22744, -122.82],
       UNITED_PORT_MANN,
-      UNITED_MARY_HILL_NW,
     ],
+  },
+  {
+    description: "united: port mann to mary hill bypass",
+    type: "mixed",
+    positions: [UNITED_PORT_MANN, UNITED_MARY_HILL_NW],
   },
 
   // east connections

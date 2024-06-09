@@ -38,6 +38,7 @@ import {
   VICTORIA_BROADWAY_SE,
   WOODLAND_GRANDVIEW,
   EIGHTH_CARNARVON_E,
+  SKEENA_CVG,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -545,7 +546,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
       [49.26102, -123.03182],
       [49.26155, -123.03027],
       [49.26205, -123.02879],
-      [49.26217, -123.02839],
+      SKEENA_CVG,
       [49.26229, -123.02788],
       [49.26238, -123.02736],
       [49.26242, -123.02704],

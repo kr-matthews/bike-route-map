@@ -434,7 +434,11 @@ export const ROUTES = {
   cprTrail: {
     name: "CPR Trail",
     cities: [],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: { eastbound: VIDEOS.cprTrailEb, westbound: VIDEOS.cprTrailWb },
+      },
+    ],
   },
   crabappleRidge: {
     name: "Crabapple Ridge",
@@ -576,7 +580,14 @@ export const ROUTES = {
   goldenEars: {
     name: "Golden Ears Bridge",
     cities: [],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: {
+          northbound: VIDEOS.goldenEarsBridgeNb,
+          southbound: VIDEOS.goldenEarsBridgeSb,
+        },
+      },
+    ],
   },
   granville: {
     name: "Granville Ave",
@@ -759,7 +770,12 @@ export const ROUTES = {
   lougheed: {
     name: "Lougheed Highway",
     cities: [BURNABY],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        name: "Burnaby/Coquitlam",
+        videos: { eastbound: VIDEOS.lougheedEb, westbound: VIDEOS.lougheedWb },
+      },
+    ],
   },
   lynas: {
     name: "Lynas Ln",
@@ -792,7 +808,12 @@ export const ROUTES = {
     name: "Mary Hill Bypass",
     isIncomplete: true,
     cities: [],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        name: "Coquitlam River",
+        videos: { eastbound: VIDEOS.lougheedEb, westbound: VIDEOS.lougheedWb },
+      },
+    ],
   },
   masumiMitsui: {
     name: "Masumi Mitsui Greenway",
@@ -810,7 +831,14 @@ export const ROUTES = {
   metrotown: {
     name: "Metrotown",
     cities: [BURNABY],
-    legs: [{ videos: { counterclockwise: VIDEOS.metrotownCcw } }],
+    legs: [
+      {
+        videos: {
+          clockwise: VIDEOS.metrotownCw,
+          counterclockwise: VIDEOS.metrotownCcw,
+        },
+      },
+    ],
   },
   middleArm: {
     name: "Middle Arm Trail",
@@ -961,14 +989,21 @@ export const ROUTES = {
   pittRiverBridge: {
     name: "Pitt River Bridge",
     cities: [],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.pittRiverBridgeEb,
+          westbound: VIDEOS.pittRiverBridgeWb,
+        },
+      },
+    ],
   },
   pocoTrail: {
     name: "Traboulay PoCo Trail",
     shortName: "PoCo Trail",
     isIncomplete: true,
     cities: [],
-    legs: [{ videos: {} }],
+    legs: [{ name: "South Pitt River", videos: { eastbound: VIDEOS.pocoEb } }],
   },
   portMannBridge: {
     name: "Port Mann Bridge",

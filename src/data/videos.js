@@ -249,6 +249,16 @@ const VIDEOS = {
     date: new Date("2023 06 12"),
     minutes: 10,
   },
+  cprTrailEb: {
+    id: "vv8tMb5BNHw",
+    date: new Date("2024 05 25"),
+    minutes: 12,
+  },
+  cprTrailWb: {
+    id: "uUtycYB0b8o",
+    date: new Date("2024 05 26"),
+    minutes: 11,
+  },
   crosstownRichmondWb: {
     id: "m_ICnCiIZp8",
     date: new Date("2024 05 14"),
@@ -343,6 +353,16 @@ const VIDEOS = {
     id: "MAR219VGiFA",
     date: new Date("2023 08 17"),
     minutes: 10,
+  },
+  goldenEarsBridgeNb: {
+    id: "Oz2U8lnG9AA",
+    date: new Date("2024 05 26"),
+    minutes: 12,
+  },
+  goldenEarsBridgeSb: {
+    id: "435UvdNmFCs",
+    date: new Date("2024 05 25"),
+    minutes: 13,
   },
   haroWb: {
     id: "gdsFxEtuepY",
@@ -474,6 +494,16 @@ const VIDEOS = {
     date: new Date("2023 06 14"),
     minutes: 13,
   },
+  lougheedEb: {
+    id: "aRoGpCGsuS8",
+    date: new Date("2024 05 25"),
+    minutes: 58,
+  },
+  lougheedWb: {
+    id: "6sbSPyViN18",
+    date: new Date("2024 05 26"),
+    minutes: 52,
+  },
   lostLagoonEb: {
     id: "ogyNA_swBTw",
     date: new Date("2024 04 26"),
@@ -498,6 +528,11 @@ const VIDEOS = {
     id: "EJCsejPUpnA",
     date: new Date("2024 01 23"),
     minutes: 13,
+  },
+  metrotownCw: {
+    id: "jKgFcCA-9MU",
+    date: new Date("2024 05 24"),
+    minutes: 11,
   },
   midtownBurnabyWb: {
     id: "chQm0UsQBMg",
@@ -603,6 +638,21 @@ const VIDEOS = {
     id: "V1_06Q29Yzo",
     date: new Date("2023 09 29"),
     minutes: 1,
+  },
+  pittRiverBridgeEb: {
+    id: "oazSL5osCX0",
+    date: new Date("2024 05 25"),
+    minutes: 3,
+  },
+  pittRiverBridgeWb: {
+    id: "3yGDaXyyLEI",
+    date: new Date("2024 05 26"),
+    minutes: 4,
+  },
+  pocoEb: {
+    id: "damcBby1W4w",
+    date: new Date("2024 05 25"),
+    minutes: 20,
   },
   portRoyalEb: {
     id: "1Jppsr8Tka4",

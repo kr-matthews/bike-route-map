@@ -3,7 +3,17 @@ import { ROUTES } from "../routes";
 import { SEGMENTS } from "../segments";
 import { VIDEOS } from "../videos";
 import { getRoutesWithVideo } from "../../utils/videos";
-import { MCKAY_BC_PARKWAY, MCKAY_CENTRAL_SE } from "../intersections";
+import {
+  MCKAY_BC_PARKWAY,
+  MCKAY_CENTRAL_SE,
+  SUSSEX_HAZEL_S,
+} from "../intersections";
+import {
+  E_LOOP_E,
+  E_LOOP_W,
+  W_LOOP_E,
+  W_LOOP_W,
+} from "../segments/goldenEarsBridge";
 
 // helpers
 
@@ -14,10 +24,17 @@ const positionsMatch = (p1, p2) => {
 const getARouteName = (videoId) => getRoutesWithVideo(videoId)[0]?.name;
 
 const EXCEPTIONAL_SEAMS = [
+  // metrotown cw loop point
+  SUSSEX_HAZEL_S,
   // metrotown ccw loop point
   MCKAY_BC_PARKWAY,
   // metrotown ccw triple-intersection
   MCKAY_CENTRAL_SE,
+  // golden ears loops
+  E_LOOP_E,
+  E_LOOP_W,
+  W_LOOP_E,
+  W_LOOP_W,
 ];
 
 // calculations

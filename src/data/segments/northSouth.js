@@ -24,6 +24,7 @@ export const NORTH_SOUTH = [
     description: "sussex south end nb",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.metrotownCw.id],
     positions: [
       SUSSEX_HAZEL_S,
       SUSSEX_HAZEL_NE,
@@ -36,14 +37,16 @@ export const NORTH_SOUTH = [
     description: "sussex south end sb",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.northSouthSb.id],
+    videoIds: [VIDEOS.metrotownCw.id, VIDEOS.northSouthSb.id],
     videoIdsEndAtEnd: [VIDEOS.northSouthSb.id],
+    videoIdsLoopAtStart: [VIDEOS.metrotownCw.id],
     positions: [SUSSEX_GRANGE_N, [49.22994, -122.99787], SUSSEX_HAZEL_NW],
   },
   {
     routeNames: [ROUTES.northSouth.name],
     description: "crossing hazel sb",
     type: "shared",
+    videoIds: [VIDEOS.metrotownCw.id],
     positions: [SUSSEX_HAZEL_NW, SUSSEX_HAZEL_S],
   },
   {

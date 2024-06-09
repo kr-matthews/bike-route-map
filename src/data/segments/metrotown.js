@@ -169,6 +169,7 @@ export const METROTOWN = [
     description: "cw: hazel to kingsborough",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.metrotownCw.id],
     positions: [
       SUSSEX_HAZEL_S,
       [49.22884, -122.99771],
@@ -207,6 +208,7 @@ export const METROTOWN = [
     description: "cw: mckay lane",
     type: "combined",
     oneWay: "required",
+    videoIds: [VIDEOS.metrotownCw.id],
     positions: [
       MCKAY_KINGSBOROUGH_NE,
       [49.22832, -123.00394],
@@ -224,6 +226,7 @@ export const METROTOWN = [
     description: "cw: kingsway to sussex",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.metrotownCw.id],
     positions: [
       MCKAY_KINGSWAY_SE,
       [49.2296, -123.00247],

@@ -3,6 +3,7 @@ import {
   PITT_RIVER_BRIDGE_GRAVEL_N,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const DYKE_BRIDGE = [49.24691, -122.72563];
 const PITT_MEADOWS_DYKE_FERRY_SLIP = [49.24544, -122.72832];
@@ -16,6 +17,9 @@ export const CPR_TRAIL = [
   {
     description: "dyke",
     type: "mixed",
+    videoIds: [VIDEOS.pittRiverBridgeWb.id, VIDEOS.cprTrailWb.id],
+    videoIdsStartAtStart: [VIDEOS.pittRiverBridgeWb.id],
+    videoIdsEndAtEnd: [VIDEOS.cprTrailWb.id],
     positions: [
       PITT_MEADOWS_DYKE_FERRY_SLIP,
       [49.24562, -122.72814],
@@ -37,6 +41,7 @@ export const CPR_TRAIL = [
   {
     description: "dyke to gravel bridge connection",
     type: "mixed",
+    videoIds: [VIDEOS.pittRiverBridgeWb.id],
     positions: [DYKE_BRIDGE, PITT_RIVER_BRIDGE_GRAVEL_N],
   },
   {
@@ -51,6 +56,8 @@ export const CPR_TRAIL = [
   {
     description: "bridge to frontage road",
     type: "mixed",
+    videoIds: [VIDEOS.cprTrailEb.id],
+    videoIdsStartAtStart: [VIDEOS.cprTrailEb.id],
     positions: [
       CPR_TRAIL_PITT_RIVER_BRIDGE,
       [49.24581, -122.7236],
@@ -62,11 +69,13 @@ export const CPR_TRAIL = [
   {
     description: "frontage road",
     type: "quiet",
+    videoIds: [VIDEOS.cprTrailEb.id],
     positions: [FRONTAGE_W, FRONTAGE_E],
   },
   {
     description: "frontage road to lougheed crossing",
     type: "mixed",
+    videoIds: [VIDEOS.cprTrailEb.id],
     positions: [
       FRONTAGE_E,
       [49.24395, -122.7206],
@@ -83,12 +92,14 @@ export const CPR_TRAIL = [
     routeNames: [ROUTES.cprTrail.name],
     description: "ferry slip",
     type: "quiet",
+    videoIds: [VIDEOS.cprTrailWb.id],
     positions: [PITT_MEADOWS_DYKE_FERRY_SLIP, FERRY_SLIP_E],
   },
   {
     routeNames: [ROUTES.cprTrail.name],
     description: "kennedy",
     type: "mixed",
+    videoIds: [VIDEOS.cprTrailWb.id],
     positions: [
       FERRY_SLIP_E,
       [49.24451, -122.72615],
@@ -114,6 +125,7 @@ export const CPR_TRAIL = [
     routeNames: [ROUTES.cprTrail.name],
     description: "lougheed path",
     type: "mixed",
+    videoIds: [VIDEOS.cprTrailWb.id, VIDEOS.cprTrailEb.id],
     positions: [
       KENNEDY_LOUGHEED_S,
       [49.24212, -122.71878],
@@ -154,6 +166,9 @@ export const CPR_TRAIL = [
   {
     description: "mcmyn, 191, 124",
     type: "quiet",
+    videoIds: [VIDEOS.cprTrailWb.id, VIDEOS.cprTrailEb.id],
+    videoIdsStartAtEnd: [VIDEOS.cprTrailWb.id],
+    videoIdsEndAtEnd: [VIDEOS.cprTrailEb.id],
     positions: [
       CPR_TRAIL_MCMYN,
       [49.22974, -122.69323],
