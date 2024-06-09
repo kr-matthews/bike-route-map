@@ -18,6 +18,16 @@ export const UBC = "UBC";
 export const BURNABY = "Burnaby";
 export const RICHMOND = "Richmond";
 export const NEW_WESTMINSTER = "New Westminster";
+export const SURREY = "Surrey";
+export const WEST_VANCOUVER = "West Vancouver";
+export const NORTH_VANCOUVER = "North Vancouver";
+export const DELTA = "Delta";
+export const PORT_MOODY = "Port Moody";
+export const COQUITLAM = "Coquitlam";
+export const PORT_COQUITLAM = "Port Coquitlam";
+export const PITT_MEADOWS = "Pitt Meadows";
+export const MAPLE_RIDGE = "Maple Ridge";
+export const LANGLEY = "Langley";
 export const VISIBLE = "In view (approx.)";
 export const ALL = "All";
 
@@ -139,7 +149,7 @@ export const ROUTES = {
   },
   alexFraserBridge: {
     name: "Alex Fraser Bridge",
-    cities: [RICHMOND],
+    cities: [RICHMOND, DELTA],
     legs: [{ videos: {} }],
   },
   arbutusGreenway: {
@@ -167,12 +177,12 @@ export const ROUTES = {
   },
   barnet: {
     name: "Barnet Highway",
-    cities: [BURNABY],
+    cities: [BURNABY, PORT_MOODY],
     legs: [{ videos: {} }],
   },
   bcParkway: {
     name: "BC Parkway",
-    cities: [VANCOUVER, BURNABY, NEW_WESTMINSTER],
+    cities: [VANCOUVER, BURNABY, NEW_WESTMINSTER, SURREY],
     legs: [
       {
         name: "Vancouver",
@@ -433,7 +443,7 @@ export const ROUTES = {
   },
   cprTrail: {
     name: "CPR Trail",
-    cities: [],
+    cities: [PITT_MEADOWS],
     legs: [
       {
         videos: { eastbound: VIDEOS.cprTrailEb, westbound: VIDEOS.cprTrailWb },
@@ -579,7 +589,7 @@ export const ROUTES = {
   },
   goldenEars: {
     name: "Golden Ears Bridge",
-    cities: [],
+    cities: [LANGLEY, MAPLE_RIDGE],
     legs: [
       {
         videos: {
@@ -751,7 +761,7 @@ export const ROUTES = {
   lionsGate: {
     name: "Lions Gate Bridge & Stanley Park Causeway",
     shortName: "Lions Gate Bridge",
-    cities: [VANCOUVER],
+    cities: [VANCOUVER, WEST_VANCOUVER],
     legs: [
       {
         videos: {
@@ -769,7 +779,7 @@ export const ROUTES = {
   },
   lougheed: {
     name: "Lougheed Highway",
-    cities: [BURNABY],
+    cities: [BURNABY, COQUITLAM],
     legs: [
       {
         name: "Burnaby/Coquitlam",
@@ -807,7 +817,7 @@ export const ROUTES = {
   marryHillBypass: {
     name: "Mary Hill Bypass",
     isIncomplete: true,
-    cities: [],
+    cities: [COQUITLAM, PORT_COQUITLAM],
     legs: [
       {
         name: "Coquitlam River",
@@ -988,7 +998,7 @@ export const ROUTES = {
   },
   pittRiverBridge: {
     name: "Pitt River Bridge",
-    cities: [],
+    cities: [PORT_COQUITLAM, PITT_MEADOWS],
     legs: [
       {
         videos: {
@@ -1002,12 +1012,12 @@ export const ROUTES = {
     name: "Traboulay PoCo Trail",
     shortName: "PoCo Trail",
     isIncomplete: true,
-    cities: [],
+    cities: [PORT_COQUITLAM],
     legs: [{ name: "South Pitt River", videos: { eastbound: VIDEOS.pocoEb } }],
   },
   portMannBridge: {
     name: "Port Mann Bridge",
-    cities: [],
+    cities: [COQUITLAM, SURREY],
     legs: [{ videos: {} }],
   },
   portRoyalRiverTrail: {
@@ -1078,7 +1088,7 @@ export const ROUTES = {
     ],
   },
   riverPkwy: {
-    name: "River Parkway",
+    name: "River Pkwy",
     cities: [RICHMOND],
     legs: [{ videos: {} }],
   },
@@ -1182,7 +1192,7 @@ export const ROUTES = {
   secondNarrowsBridge: {
     name: "Second Narrows Bridge",
     shortName: "Second Narrows Br.",
-    cities: [VANCOUVER],
+    cities: [VANCOUVER, NORTH_VANCOUVER],
     legs: [
       {
         videos: {
@@ -1224,7 +1234,7 @@ export const ROUTES = {
   },
   spiritTrail: {
     name: "Spirit Trail",
-    cities: [],
+    cities: [WEST_VANCOUVER, NORTH_VANCOUVER],
     legs: [{ videos: {} }],
   },
   stanleyParkLoop: {
@@ -1271,7 +1281,7 @@ export const ROUTES = {
   transCanada: {
     name: "Trans Canada Trail",
     isIncomplete: true,
-    cities: [BURNABY],
+    cities: [VANCOUVER, BURNABY],
     legs: [{ name: "Burnaby", videos: { westbound: VIDEOS.seaToRiverNb } }],
   },
   university: {
