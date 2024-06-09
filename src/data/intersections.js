@@ -526,6 +526,7 @@ export const NO_2_RUSS_BAKER_E = [49.17835, -123.15504];
 export const NO_2_RUSS_BAKER_W = [49.17866, -123.15505];
 export const NO_3_ACKROYD_W = [49.17202, -123.13676];
 export const NO_3_BRIDGEPORT = [49.19213, -123.12952];
+export const NO_3_BROWNGATE = [49.18285, -123.1365];
 export const NO_3_CAMBIE_SE = [49.18454, -123.1364];
 export const NO_3_SEA_ISLAND_SW_S_PRE = [49.19073, -123.13082];
 export const NO_6_WESTMINSTER_NW = [49.1703, -123.06936];

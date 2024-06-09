@@ -444,6 +444,11 @@ const VIDEOS = {
     date: new Date("2023 10 07"),
     minutes: 4,
   },
+  keeferWb: {
+    id: "1gz5SzDGp5A",
+    date: new Date("2024 05 31"),
+    minutes: 5,
+  },
   kentWb: {
     id: "S7VZgDfZ4XU",
     date: new Date("2024 02 04"),
@@ -589,6 +594,11 @@ const VIDEOS = {
     date: new Date("2024 05 14"),
     minutes: 5,
   },
+  no2BridgeRdNb: {
+    id: "zirY_YbY5AY",
+    date: new Date("2024 05 28"),
+    minutes: 4,
+  },
   no3Nb: {
     id: "HWRL6CPVcSU",
     date: new Date("2024 02 26"),
@@ -614,6 +624,11 @@ const VIDEOS = {
     date: new Date("2024 04 15"),
     minutes: 8,
   },
+  odlinWb: {
+    id: "0JgtTJluzv8",
+    date: new Date("2024 05 28"),
+    minutes: 10,
+  },
   offBroadwayWb: {
     id: "7nKl_moRiog",
     date: new Date("2023 06 07"),
@@ -638,6 +653,11 @@ const VIDEOS = {
     id: "V1_06Q29Yzo",
     date: new Date("2023 09 29"),
     minutes: 1,
+  },
+  penderWb: {
+    id: "HNUPHsWtfhg",
+    date: new Date("2024 05 31"),
+    minutes: 2,
   },
   pittRiverBridgeEb: {
     id: "oazSL5osCX0",
@@ -704,6 +724,11 @@ const VIDEOS = {
     date: new Date("2024 02 02"),
     minutes: 53,
   },
+  riverPkwySb: {
+    id: "vexfYEmimsw",
+    date: new Date("2024 05 28"),
+    minutes: 6,
+  },
   royalOakSb: {
     id: "5_aB2Zw_JK0",
     date: new Date("2024 02 07"),
@@ -723,6 +748,11 @@ const VIDEOS = {
     id: "NUP8EwbBLHI",
     date: new Date("2024 03 15"),
     minutes: 8,
+  },
+  russBakerNb: {
+    id: "NliaFJuWBSw",
+    date: new Date("2024 05 28"),
+    minutes: 6,
   },
   seaIslandConnectorWb: {
     id: "BQJVwt1W2Nk",

@@ -56,6 +56,8 @@ export const PENDER = [
     description: "wb no lane",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.penderWb.id],
+    videoIdsStartAtStart: [VIDEOS.penderWb.id],
     positions: [CARRALL_PENDER_NE, CARRALL_PENDER_NW, TAYLOR_PENDER],
   },
   {
@@ -63,6 +65,8 @@ export const PENDER = [
     description: "wb lane",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.penderWb.id],
+    videoIdsEndAtEnd: [VIDEOS.penderWb.id],
     positions: [
       TAYLOR_PENDER,
       [49.28115, -123.10756],

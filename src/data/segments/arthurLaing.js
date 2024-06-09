@@ -118,7 +118,8 @@ export const ARTHUR_LAING = [
     type: "shoulder",
     elevation: 0.5,
     oneWay: "required",
-    videoIds: [VIDEOS.arthurLaingNb.id],
+    videoIds: [VIDEOS.arthurLaingNb.id, VIDEOS.russBakerNb.id],
+    videoIdsEndAtEnd: [VIDEOS.russBakerNb.id],
     positions: [
       SEA_ISLAND_CONNECTOR_ARTHUR_LAING_S,
       [49.19505, -123.13977],

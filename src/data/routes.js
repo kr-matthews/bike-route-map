@@ -703,7 +703,9 @@ export const ROUTES = {
   keefer: {
     name: "Keefer",
     cities: [VANCOUVER],
-    legs: [{ videos: { eastbound: VIDEOS.keeferEb } }],
+    legs: [
+      { videos: { eastbound: VIDEOS.keeferEb, westbound: VIDEOS.keeferWb } },
+    ],
   },
   kensington: {
     name: "Kensington Urban Trail",
@@ -914,7 +916,7 @@ export const ROUTES = {
   no2: {
     name: "No. 2 Rd",
     cities: [RICHMOND],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.no2BridgeRdNb } }],
   },
   no2Bridge: {
     name: "No. 2 Rd Bridge",
@@ -959,7 +961,7 @@ export const ROUTES = {
   odlin: {
     name: "Odlin",
     cities: [RICHMOND],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { westbound: VIDEOS.odlinWb } }],
   },
   offBroadway: {
     name: "Off Broadway",
@@ -994,7 +996,9 @@ export const ROUTES = {
   pender: {
     name: "Pender St",
     cities: [VANCOUVER],
-    legs: [{ videos: { eastbound: VIDEOS.penderEb } }],
+    legs: [
+      { videos: { eastbound: VIDEOS.penderEb, westbound: VIDEOS.penderWb } },
+    ],
   },
   pittRiverBridge: {
     name: "Pitt River Bridge",
@@ -1090,7 +1094,7 @@ export const ROUTES = {
   riverPkwy: {
     name: "River Pkwy",
     cities: [RICHMOND],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.riverPkwySb } }],
   },
   royalOak: {
     name: "Royal Oak",
@@ -1116,7 +1120,7 @@ export const ROUTES = {
   russBaker: {
     name: "Russ Baker Way",
     cities: [RICHMOND],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.russBakerNb } }],
   },
   seaIslandConnector: {
     name: "Sea Island Connector",

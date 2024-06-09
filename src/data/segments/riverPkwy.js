@@ -9,6 +9,7 @@ import {
   RIVER_PKWY_CAMBIE_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const EB_PAINT_START = [49.1772, -123.14325];
 const WB_PAINT_END = [49.176, -123.14618];
@@ -106,6 +107,7 @@ export const RIVER_PARKWAY = [
     description: "wb: painted",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.riverPkwySb.id],
     positions: [
       RIVER_PKWY_CAMBIE_SW,
       [49.18353, -123.13823],
@@ -131,6 +133,8 @@ export const RIVER_PARKWAY = [
     description: "wb: dedicated",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.riverPkwySb.id],
+    videoIdsEndAtEnd: [VIDEOS.riverPkwySb.id],
     positions: [
       WB_PAINT_END,
       [49.17569, -123.14684],

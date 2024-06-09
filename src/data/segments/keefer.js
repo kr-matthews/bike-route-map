@@ -47,6 +47,8 @@ export const KEEFER = [
     routeNames: [ROUTES.keefer.name],
     description: "wb: quebec to carrall",
     type: "shared",
+    videoIds: [VIDEOS.keeferWb.id],
+    videoIdsEndAtEnd: [VIDEOS.keeferWb.id],
     oneWay: "required",
     positions: [
       QUEBEC_KEEFER_E,
@@ -56,14 +58,21 @@ export const KEEFER = [
       [49.27925, -123.10275],
       [49.27928, -123.10424],
       CARRALL_KEEFER_NE,
-      CARRALL_KEEFER_W,
     ],
+  },
+  {
+    routeNames: [ROUTES.keefer.name],
+    description: "wb: crossing carrall",
+    type: "shared",
+    oneWay: "required",
+    hideArrows: true,
+    positions: [CARRALL_KEEFER_NE, CARRALL_KEEFER_W],
   },
   {
     routeNames: [ROUTES.keefer.name],
     description: "quebec to gore",
     type: "shared",
-    videoIds: [VIDEOS.keeferEb.id],
+    videoIds: [VIDEOS.keeferEb.id, VIDEOS.keeferWb.id],
     positions: [
       QUEBEC_KEEFER_E,
       [49.27932, -123.10202],
@@ -80,7 +89,8 @@ export const KEEFER = [
     routeNames: [ROUTES.keefer.name],
     description: "east",
     type: "quiet",
-    videoIds: [VIDEOS.keeferEb.id],
+    videoIds: [VIDEOS.keeferWb.id, VIDEOS.keeferEb.id],
+    videoIdsStartAtEnd: [VIDEOS.keeferWb.id],
     videoIdsEndAtEnd: [VIDEOS.keeferEb.id],
     positions: [
       GORE_KEEFER,

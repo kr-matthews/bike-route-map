@@ -2,6 +2,7 @@ import {
   BUSWELL_GRANVILLE_N,
   NO_3_ACKROYD_W,
   NO_3_BRIDGEPORT,
+  NO_3_BROWNGATE,
   NO_3_CAMBIE_SE,
   NO_3_SEA_ISLAND_SW_S_PRE,
 } from "../intersections";
@@ -99,11 +100,10 @@ export const NO_3 = [
   },
   {
     routeNames: [ROUTES.no3.name],
-    description: "nb: rest",
+    description: "nb: bus mall to browngate",
     type: "painted",
     oneWay: "required",
     videoIds: [VIDEOS.no3Nb.id],
-    videoIdsEndAtEnd: [VIDEOS.no3Nb.id],
     positions: [
       NO_3_BUS_MALL_SE,
       [49.16881, -123.13642],
@@ -120,9 +120,31 @@ export const NO_3 = [
       [49.17838, -123.13651],
       [49.17975, -123.13649],
       [49.18123, -123.13649],
-      [49.18285, -123.1365],
+      NO_3_BROWNGATE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.no3.name],
+    description: "nb: browngate to cambie",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [VIDEOS.no3Nb.id, VIDEOS.odlinWb.id],
+    videoIdsEndAtEnd: [VIDEOS.odlinWb.id],
+    positions: [
+      NO_3_BROWNGATE,
       [49.1836, -123.1365],
       [49.18436, -123.13647],
+      NO_3_CAMBIE_SE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.no3.name],
+    description: "nb: cambie to bridgeport",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [VIDEOS.no3Nb.id],
+    videoIdsEndAtEnd: [VIDEOS.no3Nb.id],
+    positions: [
       NO_3_CAMBIE_SE,
       [49.18466, -123.13634],
       [49.18496, -123.13616],

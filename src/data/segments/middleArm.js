@@ -18,7 +18,7 @@ const NO_2_BRIDGE_W_SPLIT = [49.17402, -123.15936];
 
 export const MIDDLE_ARM = [
   {
-    description: "cambie: to no. 3",
+    description: "cambie: trail to river pkwy",
     type: "mixed",
     positions: [
       MIDDLE_ARM_TRAIL_CAMBIE_JOIN,
@@ -28,6 +28,15 @@ export const MIDDLE_ARM = [
       [49.1846, -123.13847],
       [49.18462, -123.13837],
       [49.18452, -123.13775],
+      RIVER_PKWY_CAMBIE_SW,
+    ],
+  },
+  {
+    description: "cambie: river pkwy to no. 3",
+    type: "mixed",
+    videoIds: [VIDEOS.riverPkwySb.id],
+    videoIdsStartAtEnd: [VIDEOS.riverPkwySb.id],
+    positions: [
       RIVER_PKWY_CAMBIE_SW,
       RIVER_PKWY_CAMBIE_SE,
       [49.18449, -123.13733],
