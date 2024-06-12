@@ -344,6 +344,11 @@ const VIDEOS = {
     date: new Date("2023 07 05"),
     minutes: 19,
   },
+  gilbertNb: {
+    id: "QPxa6Hl9_8A",
+    date: new Date("2024 06 10"),
+    minutes: 6,
+  },
   gladstoneNb: {
     id: "zOUHEenuUnQ",
     date: new Date("2023 08 17"),
@@ -602,6 +607,11 @@ const VIDEOS = {
   no3Nb: {
     id: "HWRL6CPVcSU",
     date: new Date("2024 02 26"),
+    minutes: 14,
+  },
+  no3Sb: {
+    id: "3-pryfyoIIE",
+    date: new Date("2024 06 10"),
     minutes: 14,
   },
   northSouthSb: {

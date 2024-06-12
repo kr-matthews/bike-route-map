@@ -11,6 +11,7 @@ import {
   LYNAS_GRANVILLE_S,
   MINORU_GRANVILLE_NE,
   MINORU_GRANVILLE_NW,
+  NO_3_GRANVILLE_NW,
   RAILWAY_GRANVILLE_MIDDLE,
   RAILWAY_GRANVILLE_NW,
   RAILWAY_GRANVILLE_SE,
@@ -26,6 +27,7 @@ const GARDEN_CITY_GRANVILLE_SW = [49.16272, -123.12627];
 const WB_LANE_START = [49.16268, -123.16942];
 const CITATION_GRANVILLE_N = [49.16282, -123.1278];
 const POST_CITATION = [49.16283, -123.12838];
+const WB_PRE_GILBERT = [49.16284, -123.14721];
 
 export const GRANVILLE = [
   {
@@ -200,7 +202,7 @@ export const GRANVILLE = [
   },
   {
     routeNames: [ROUTES.granville.name],
-    description: "wb: from after citation",
+    description: "wb: citation to pre-gilbert",
     type: "painted",
     oneWay: "required",
     positions: [
@@ -208,10 +210,28 @@ export const GRANVILLE = [
       [49.16282, -123.13101],
       BUSWELL_GRANVILLE_N,
       [49.16282, -123.13643],
-      [49.16282, -123.13671],
+      NO_3_GRANVILLE_NW,
       MINORU_GRANVILLE_NE,
       MINORU_GRANVILLE_NW,
       [49.16284, -123.14301],
+      WB_PRE_GILBERT,
+    ],
+  },
+  {
+    routeNames: [ROUTES.granville.name],
+    description: "wb: pre-gilbert",
+    type: "shared",
+    oneWay: "required",
+    videoIds: [VIDEOS.gilbertNb.id],
+    videoIdsStartAtStart: [VIDEOS.gilbertNb.id],
+    positions: [WB_PRE_GILBERT, GILBERT_GRANVILLE_NE],
+  },
+  {
+    routeNames: [ROUTES.granville.name],
+    description: "wb: gilbert to railway",
+    type: "painted",
+    oneWay: "required",
+    positions: [
       GILBERT_GRANVILLE_NE,
       GILBERT_GRANVILLE_NW,
       [49.16283, -123.15316],

@@ -11,6 +11,7 @@ import {
   GILBERT_RUSS_BAKER_SW_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const NB_POST_WESTMINSTER = [49.17112, -123.14758];
 const GILBERT_ELMBRIDGE_SE = [49.1724, -123.14666];
@@ -27,6 +28,7 @@ export const GILBERT = [
     description: "nb: granville to beyond westminster",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.gilbertNb.id],
     positions: [
       GILBERT_GRANVILLE_NE,
       [49.16615, -123.14768],
@@ -41,6 +43,7 @@ export const GILBERT = [
     description: "nb: beyond westminster to elmbridge",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.gilbertNb.id],
     positions: [
       NB_POST_WESTMINSTER,
       [49.17127, -123.14753],
@@ -54,6 +57,7 @@ export const GILBERT = [
     description: "nb: elmbridge to lane",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.gilbertNb.id],
     positions: [
       GILBERT_ELMBRIDGE_SE,
       [49.17261, -123.14649],
@@ -67,6 +71,7 @@ export const GILBERT = [
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.gilbertNb.id],
     positions: [
       NB_POST_ELMBRIDGE,
       [49.17374, -123.14551],
@@ -90,6 +95,7 @@ export const GILBERT = [
     type: "shared",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.gilbertNb.id],
     positions: [DINSMORE_SE, DINSMORE_NE],
   },
   {
@@ -98,6 +104,8 @@ export const GILBERT = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.gilbertNb.id],
+    videoIdsEndAtEnd: [VIDEOS.gilbertNb.id],
     positions: [
       DINSMORE_NE,
       [49.17973, -123.14977],

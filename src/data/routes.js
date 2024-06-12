@@ -575,7 +575,7 @@ export const ROUTES = {
   gilbert: {
     name: "Gilbert Rd",
     cities: [RICHMOND],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.gilbertNb } }],
   },
   gladstone: {
     name: "Gladstone",
@@ -931,7 +931,7 @@ export const ROUTES = {
   no3: {
     name: "No. 3 Rd",
     cities: [RICHMOND],
-    legs: [{ videos: { northbound: VIDEOS.no3Nb } }],
+    legs: [{ videos: { northbound: VIDEOS.no3Nb, southbound: VIDEOS.no3Sb } }],
   },
   no6Path: {
     name: "No. 6 Rd Path",
