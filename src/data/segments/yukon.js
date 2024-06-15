@@ -29,6 +29,8 @@ export const YUKON = [
     routeNames: [ROUTES.yukon.name],
     description: "crossing 29th",
     type: "quiet",
+    videoIds: [VIDEOS.cambieNb.id],
+    videoIdsEndAtEnd: [VIDEOS.cambieNb.id],
     positions: [YUKON_29TH_S, YUKON_29TH_N],
   },
   {

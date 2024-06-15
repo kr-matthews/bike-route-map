@@ -311,7 +311,7 @@ export const ROUTES = {
     cities: [VANCOUVER],
     legs: [
       {
-        videos: { southbound: VIDEOS.cambieSb },
+        videos: { northbound: VIDEOS.cambieNb, southbound: VIDEOS.cambieSb },
       },
       {
         name: "Connection with Ontario via 42nd Ave",
@@ -480,7 +480,14 @@ export const ROUTES = {
   dumfries: {
     name: "Dumfries",
     cities: [VANCOUVER],
-    legs: [{ videos: { northbound: VIDEOS.dumfriesNb } }],
+    legs: [
+      {
+        videos: {
+          northbound: VIDEOS.dumfriesNb,
+          southbound: VIDEOS.dumfriesSb,
+        },
+      },
+    ],
   },
   dunbar: {
     name: "Dunbar St",

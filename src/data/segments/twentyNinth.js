@@ -190,15 +190,30 @@ export const TWENTY_NINTH = [
   },
   {
     routeNames: [ROUTES.twentyNinth.name],
-    description: "eb: 29th/midlothian",
+    description: "eb: crossing cambie",
     type: "painted",
     oneWay: "required",
+    positions: [CAMBIE_29TH_W, [49.24516, -123.11576], CAMBIE_29TH_SE],
+  },
+  {
+    routeNames: [ROUTES.twentyNinth.name],
+    description: "eb: 29th",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [VIDEOS.cambieNb.id],
     positions: [
-      CAMBIE_29TH_W,
-      [49.24516, -123.11576],
       CAMBIE_29TH_SE,
       [49.24513, -123.11448],
       [49.2451, -123.11252],
+      YUKON_29TH_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.twentyNinth.name],
+    description: "eb: midlothian",
+    type: "painted",
+    oneWay: "required",
+    positions: [
       YUKON_29TH_S,
       [49.24507, -123.11219],
       [49.24501, -123.11193],

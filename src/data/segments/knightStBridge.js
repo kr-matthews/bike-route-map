@@ -221,7 +221,11 @@ export const KNIGHT_STREET_BRIDGE = [
   {
     description: "nb crossing marine",
     type: "mixed",
-    videoIds: [VIDEOS.knightStBridgeNb.id, VIDEOS.dumfriesNb.id],
+    videoIds: [
+      VIDEOS.knightStBridgeNb.id,
+      VIDEOS.dumfriesNb.id,
+      VIDEOS.dumfriesSb.id,
+    ],
     positions: [
       NORTHBOUND_SPLIT_2,
       [49.21089, -123.07498],
@@ -233,13 +237,13 @@ export const KNIGHT_STREET_BRIDGE = [
   {
     description: "marine sidewalk",
     type: "other",
-    videoIds: [VIDEOS.dumfriesNb.id],
+    videoIds: [VIDEOS.dumfriesNb.id, VIDEOS.dumfriesSb.id],
     positions: [NORTHBOUND_SPLIT_3, [49.21119, -123.07552], BORDEN_MARINE_N],
   },
   {
     description: "up borden",
     type: "quiet",
-    videoIds: [VIDEOS.dumfriesNb.id],
+    videoIds: [VIDEOS.dumfriesNb.id, VIDEOS.dumfriesSb.id],
     positions: [
       BORDEN_MARINE_N,
       BORDEN_64TH,
@@ -253,7 +257,7 @@ export const KNIGHT_STREET_BRIDGE = [
   },
   {
     description: "marine to borden sb",
-    videoIds: [VIDEOS.dumfriesNb.id],
+    videoIds: [VIDEOS.dumfriesNb.id, VIDEOS.dumfriesSb.id],
     type: "mixed",
     positions: [
       NORTHBOUND_SPLIT_2,
@@ -264,7 +268,8 @@ export const KNIGHT_STREET_BRIDGE = [
   },
   {
     description: "borden south of marine",
-    videoIds: [VIDEOS.dumfriesNb.id],
+    videoIds: [VIDEOS.dumfriesNb.id, VIDEOS.dumfriesSb.id],
+    videoIdsEndAtEnd: [VIDEOS.dumfriesSb.id],
     type: "quiet",
     positions: [BORDEN_MARINE_S, [49.2096, -123.074], BORDEN_KENT_N_S],
   },

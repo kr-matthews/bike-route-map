@@ -165,6 +165,7 @@ export const CAMBIE = [
     description: "nb: to 35th-ish",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.cambieNb.id],
     positions: [
       CAMBIE_MARINE_NE,
       [49.21041, -123.11707],
@@ -200,6 +201,7 @@ export const CAMBIE = [
     description: "nb: lane between 35th, 33rd",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.cambieNb.id],
     positions: [NB_LANE_START_35TH, NB_LANE_END_35TH],
   },
   {
@@ -207,6 +209,7 @@ export const CAMBIE = [
     description: "nb: from 33rd-ish",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.cambieNb.id],
     positions: [
       NB_LANE_END_35TH,
       [49.24021, -123.11782],

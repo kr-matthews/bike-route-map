@@ -154,6 +154,11 @@ const VIDEOS = {
     date: new Date("2023 12 24"),
     minutes: 3,
   },
+  cambieNb: {
+    id: "B1KQHt2iqv8",
+    date: new Date("2024 06 13"),
+    minutes: 19,
+  },
   cambieSb: {
     id: "RNDV1Zc8rB8",
     date: new Date("2023 08 27"),
@@ -278,6 +283,11 @@ const VIDEOS = {
     id: "g0qsUEDx--8",
     date: new Date("2023 09 10"),
     minutes: 22,
+  },
+  dumfriesSb: {
+    id: "9h4_3VgeYbY",
+    date: new Date("2024 06 13"),
+    minutes: 23,
   },
   dunbarNb: {
     id: "jonrkkkL57o",

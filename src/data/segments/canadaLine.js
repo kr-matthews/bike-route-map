@@ -396,10 +396,12 @@ export const CANADA_LINE = [
     videoIds: [
       VIDEOS.northArmBridgeNb.id,
       VIDEOS.northArmBridgeSb.id,
+      VIDEOS.cambieNb.id,
       VIDEOS.canadaLineSb.id,
     ],
-    videoIdsEndAtEnd: [VIDEOS.northArmBridgeNb.id],
+    videoIdsStartAtStart: [VIDEOS.cambieNb.id],
     videoIdsStartAtEnd: [VIDEOS.northArmBridgeSb.id],
+    videoIdsEndAtEnd: [VIDEOS.northArmBridgeNb.id],
     positions: [
       ELEVATED_END,
       [49.2057, -123.11769],
@@ -419,9 +421,9 @@ export const CANADA_LINE = [
   },
   {
     routeNames: [ROUTES.canadaLine.name],
-    description: "kent to 63rd",
+    description: "kent to marine",
     type: "dedicated",
-    videoIds: [VIDEOS.canadaLineSb.id],
+    videoIds: [VIDEOS.canadaLineSb.id, VIDEOS.cambieNb.id],
     positions: [
       CAMBIE_KENT_N_NE,
       [49.20634, -123.11728],
@@ -433,6 +435,15 @@ export const CANADA_LINE = [
       [49.20904, -123.11721],
       [49.20966, -123.11717],
       [49.21002, -123.1171],
+      CAMBIE_MARINE_NE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.canadaLine.name],
+    description: "marine to 63rd",
+    type: "dedicated",
+    videoIds: [VIDEOS.canadaLineSb.id],
+    positions: [
       CAMBIE_MARINE_NE,
       [49.21059, -123.11695],
       [49.21069, -123.11686],
