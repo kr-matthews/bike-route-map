@@ -8,7 +8,8 @@ import { ROUTES } from "../routes";
 const WALTER_LEE_S = [49.14448, -123.11973];
 const WALTER_LEE_N = [49.14663, -123.11908];
 const ASH_GRANVILLE_NW = [49.16289, -123.11994];
-const ALDER_ALBERTA_SE = [49.16569, -123.11924];
+const SCHOOL_W = [49.16514, -123.11954];
+const ALDER_ALBERTA = [49.16572, -123.11935];
 
 export const PARKSIDE = [
   {
@@ -76,7 +77,7 @@ export const PARKSIDE = [
   },
   {
     routeNames: [ROUTES.parkside.name],
-    description: "granville to alberta",
+    description: "granville to school",
     type: "mixed",
     positions: [
       ASH_GRANVILLE_NW,
@@ -89,10 +90,33 @@ export const PARKSIDE = [
       [49.16407, -123.11973],
       [49.16432, -123.11964],
       [49.16498, -123.11964],
-      [49.16515, -123.11953],
-      [49.16515, -123.11922],
+      SCHOOL_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.parkside.name],
+    description: "school nb",
+    type: "mixed",
+    oneWay: "recommended",
+    positions: [
+      SCHOOL_W,
+      [49.16514, -123.11922],
       [49.16564, -123.11922],
-      ALDER_ALBERTA_SE,
+      [49.16569, -123.11924],
+      ALDER_ALBERTA,
+    ],
+  },
+  {
+    routeNames: [ROUTES.parkside.name],
+    description: "school sb",
+    type: "quiet",
+    oneWay: "required",
+    positions: [
+      ALDER_ALBERTA,
+      [49.16572, -123.11962],
+      [49.16528, -123.11962],
+      [49.16519, -123.1196],
+      SCHOOL_W,
     ],
   },
   {
@@ -100,8 +124,7 @@ export const PARKSIDE = [
     description: "alberta to westminster",
     type: "quiet",
     positions: [
-      ALDER_ALBERTA_SE,
-      [49.16576, -123.11935],
+      ALDER_ALBERTA,
       [49.1663, -123.11933],
       [49.16653, -123.11952],
       [49.16717, -123.11951],

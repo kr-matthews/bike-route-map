@@ -22,6 +22,7 @@ import { VIDEOS } from "../videos";
 const GARDEN_CITY_COOK_W = [49.16645, -123.12483];
 const GARDEN_CITY_GRANVILLE_N = [49.16311, -123.12566];
 const GARDEN_CITY_GRANVILLE_SE = [49.16288, -123.1253];
+const GARDEN_CITY_GRANVILLE_SE_S = [49.16284, -123.12524];
 const GARDEN_CITY_FRANCIS_SS = [49.14784, -123.12516];
 const GARDEN_CITY_GRANVILLE_E = [49.16301, -123.1252];
 const NB_LANE_END = [49.19014, -123.12459];
@@ -95,12 +96,22 @@ export const GARDEN_CITY = [
     positions: [GARDEN_CITY_GRANVILLE_NW, GARDEN_CITY_GRANVILLE_N],
   },
   {
-    description: "sb to granville eb",
+    description: "protected path through",
     type: "mixed",
     positions: [
       GARDEN_CITY_GRANVILLE_N,
       [49.1629, -123.1254],
       GARDEN_CITY_GRANVILLE_SE,
+      GARDEN_CITY_GRANVILLE_SE_S,
+    ],
+  },
+  {
+    description: "cross-bikes",
+    type: "mixed",
+    positions: [
+      GARDEN_CITY_GRANVILLE_SE_S,
+      [49.16274, -123.12524],
+      [49.16274, -123.1256],
     ],
   },
   {
