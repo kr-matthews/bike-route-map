@@ -931,7 +931,7 @@ export const ROUTES = {
     legs: [{ videos: { northbound: VIDEOS.no2BridgeNb } }],
   },
   no2Path: {
-    name: "No. 2 Path",
+    name: "No. 2 Rd Path",
     cities: [RICHMOND],
     legs: [{ videos: {} }],
   },
