@@ -1,5 +1,8 @@
 import { WEST_DYKE_MIDDLE_ARM } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
+
+const WEST_DYKE_MIDDLE_ARM_W = [49.17542, -123.19536];
 
 export const WEST_DYKE = [
   {
@@ -85,7 +88,16 @@ export const WEST_DYKE = [
       [49.17524, -123.19721],
       [49.17527, -123.19699],
       [49.17541, -123.19551],
-      [49.17542, -123.19536],
+      WEST_DYKE_MIDDLE_ARM_W,
+    ],
+  },
+  {
+    description: "link between trails",
+    type: "mixed",
+    videoIds: [VIDEOS.middleArmEb.id],
+    videoIdsStartAtStart: [VIDEOS.middleArmEb.id],
+    positions: [
+      WEST_DYKE_MIDDLE_ARM_W,
       [49.1754, -123.19527],
       [49.17536, -123.19519],
       [49.17515, -123.19506],

@@ -379,6 +379,11 @@ const VIDEOS = {
     date: new Date("2024 05 25"),
     minutes: 13,
   },
+  granvilleWb: {
+    id: "b9eFnAItgIo",
+    date: new Date("2024 06 17"),
+    minutes: 23,
+  },
   haroWb: {
     id: "gdsFxEtuepY",
     date: new Date("2023 06 03"),
@@ -553,6 +558,11 @@ const VIDEOS = {
     id: "jKgFcCA-9MU",
     date: new Date("2024 05 24"),
     minutes: 11,
+  },
+  middleArmEb: {
+    id: "_Sfdo5XWN6M",
+    date: new Date("2024 06 17"),
+    minutes: 15,
   },
   midtownBurnabyWb: {
     id: "chQm0UsQBMg",

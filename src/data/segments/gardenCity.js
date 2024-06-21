@@ -5,6 +5,7 @@ import {
   GARDEN_CITY_GRANVILLE_NE,
   GARDEN_CITY_GRANVILLE_NW,
   GARDEN_CITY_GRANVILLE_S,
+  GARDEN_CITY_GRANVILLE_SE_S,
   GARDEN_CITY_GRANVILLE_W,
   GARDEN_CITY_PATTERSON_E,
   GARDEN_CITY_SB_ROAD_START,
@@ -22,7 +23,6 @@ import { VIDEOS } from "../videos";
 const GARDEN_CITY_COOK_W = [49.16645, -123.12483];
 const GARDEN_CITY_GRANVILLE_N = [49.16311, -123.12566];
 const GARDEN_CITY_GRANVILLE_SE = [49.16288, -123.1253];
-const GARDEN_CITY_GRANVILLE_SE_S = [49.16284, -123.12524];
 const GARDEN_CITY_FRANCIS_SS = [49.14784, -123.12516];
 const GARDEN_CITY_GRANVILLE_E = [49.16301, -123.1252];
 const NB_LANE_END = [49.19014, -123.12459];
@@ -92,12 +92,13 @@ export const GARDEN_CITY = [
     routeNames: [ROUTES.gardenCity.name],
     description: "sb to granville split",
     type: "mixed",
-    videoIds: [VIDEOS.gardenCitySb.id],
+    videoIds: [VIDEOS.granvilleWb.id, VIDEOS.gardenCitySb.id],
     positions: [GARDEN_CITY_GRANVILLE_NW, GARDEN_CITY_GRANVILLE_N],
   },
   {
     description: "protected path through",
     type: "mixed",
+    videoIds: [VIDEOS.granvilleWb.id],
     positions: [
       GARDEN_CITY_GRANVILLE_N,
       [49.1629, -123.1254],

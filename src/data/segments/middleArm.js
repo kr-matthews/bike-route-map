@@ -75,6 +75,8 @@ export const MIDDLE_ARM = [
     routeNames: [ROUTES.middleArm.name],
     description: "primary",
     type: "mixed",
+    videoIds: [VIDEOS.middleArmEb.id],
+    videoIdsEndAtEnd: [VIDEOS.middleArmEb.id],
     positions: [
       WEST_DYKE_MIDDLE_ARM,
       [49.17532, -123.19384],

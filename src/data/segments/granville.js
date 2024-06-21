@@ -4,6 +4,7 @@ import {
   GARDEN_CITY_CITATION_W,
   GARDEN_CITY_GRANVILLE_NW,
   GARDEN_CITY_GRANVILLE_S,
+  GARDEN_CITY_GRANVILLE_SE_S,
   GARDEN_CITY_GRANVILLE_W,
   GILBERT_GRANVILLE_NE,
   GILBERT_GRANVILLE_NW,
@@ -17,6 +18,7 @@ import {
   RAILWAY_GRANVILLE_SE,
   RAILWAY_GREENWAY_GRANVILLE_N,
   RAILWAY_GREENWAY_GRANVILLE_S,
+  SHELL_GRANVILLE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -30,10 +32,29 @@ const POST_CITATION = [49.16283, -123.12838];
 const WB_PRE_GILBERT = [49.16284, -123.14721];
 
 export const GRANVILLE = [
+  // east end
+  {
+    description: "barnard to no. 1",
+    type: "shared",
+    hideUnlessVideo: true,
+    videoIds: [VIDEOS.granvilleWb.id],
+    videoIdsStartAtEnd: [VIDEOS.granvilleWb.id],
+    positions: [
+      GARDEN_CITY_GRANVILLE_SE_S,
+      [49.16283, -123.12506],
+      [49.16284, -123.12049],
+      [49.16285, -123.11986],
+      [49.16283, -123.11405],
+      SHELL_GRANVILLE,
+    ],
+  },
+
+  //
   {
     routeNames: [ROUTES.granville.name],
     description: "barnard to no. 1",
     type: "shared",
+    videoIds: [VIDEOS.granvilleWb.id],
     positions: [
       BARNARD_GRANVILLE,
       [49.16294, -123.18431],
@@ -129,6 +150,7 @@ export const GRANVILLE = [
     description: "railway to greenway wb 1",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.granvilleWb.id],
     positions: [
       RAILWAY_GRANVILLE_N,
       [49.16256, -123.16911],
@@ -141,6 +163,7 @@ export const GRANVILLE = [
     description: "railway to greenway wb 2",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.granvilleWb.id],
     positions: [
       WB_LANE_START,
       [49.16275, -123.16959],
@@ -179,9 +202,10 @@ export const GRANVILLE = [
   },
   {
     routeNames: [ROUTES.granville.name],
-    description: "wb: to citation",
+    description: "wb: garden city to citation",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.granvilleWb.id],
     positions: [
       GARDEN_CITY_GRANVILLE_NW,
       [49.16307, -123.12598],
@@ -196,7 +220,7 @@ export const GRANVILLE = [
     description: "wb: bit after citation",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.citation.id],
+    videoIds: [VIDEOS.citation.id, VIDEOS.granvilleWb.id],
     videoIdsEndAtEnd: [VIDEOS.citation.id],
     positions: [CITATION_GRANVILLE_N, POST_CITATION],
   },
@@ -205,6 +229,7 @@ export const GRANVILLE = [
     description: "wb: citation to pre-gilbert",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.granvilleWb.id],
     positions: [
       POST_CITATION,
       [49.16282, -123.13101],
@@ -222,7 +247,7 @@ export const GRANVILLE = [
     description: "wb: pre-gilbert",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.gilbertNb.id],
+    videoIds: [VIDEOS.granvilleWb.id, VIDEOS.gilbertNb.id],
     videoIdsStartAtStart: [VIDEOS.gilbertNb.id],
     positions: [WB_PRE_GILBERT, GILBERT_GRANVILLE_NE],
   },
@@ -231,6 +256,7 @@ export const GRANVILLE = [
     description: "wb: gilbert to railway",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.granvilleWb.id],
     positions: [
       GILBERT_GRANVILLE_NE,
       GILBERT_GRANVILLE_NW,
@@ -250,6 +276,7 @@ export const GRANVILLE = [
     description: "to no. 1",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.granvilleWb.id],
     positions: [
       RAILWAY_GREENWAY_GRANVILLE_N,
       [49.16294, -123.17036],

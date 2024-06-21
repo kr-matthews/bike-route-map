@@ -610,7 +610,7 @@ export const ROUTES = {
     name: "Granville Ave",
     cities: [RICHMOND],
     legs: [
-      { videos: {} },
+      { videos: { westbound: VIDEOS.granvilleWb } },
       {
         name: "Connection from Garden City Rd",
         videos: { westbound: VIDEOS.citation },
@@ -862,7 +862,7 @@ export const ROUTES = {
   middleArm: {
     name: "Middle Arm Trail",
     cities: [RICHMOND],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.middleArmEb } }],
   },
   midtown: {
     name: "Midtown",

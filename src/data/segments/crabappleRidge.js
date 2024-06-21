@@ -7,6 +7,7 @@ import {
   NISHI_WILLIAMS_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const SECOND_CHATHAM = [49.12644, -123.18425];
 const GORMOND_ALLEY_RAYMOND = [49.14588, -123.18694];
@@ -185,6 +186,7 @@ export const CRABAPPLE_RIDGE = [
     routeNames: [ROUTES.crabappleRidge.name],
     description: "barnard",
     type: "shared",
+    videoIds: [VIDEOS.granvilleWb.id],
     positions: [
       BARNARD_GRANVILLE,
       [49.16303, -123.18445],
@@ -232,6 +234,8 @@ export const CRABAPPLE_RIDGE = [
     routeNames: [ROUTES.crabappleRidge.name],
     description: "river rd to middle arm trail",
     type: "mixed",
+    videoIds: [VIDEOS.granvilleWb.id],
+    videoIdsEndAtEnd: [VIDEOS.granvilleWb.id],
     positions: [BARNARD_RIVER_NE, BARNARD_MIDDLE_ARM],
   },
 ];
