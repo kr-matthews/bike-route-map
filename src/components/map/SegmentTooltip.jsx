@@ -6,7 +6,8 @@ import videoIcon from "../../images/video.svg";
 const tooltipProps = { sticky: true, opacity: 0.7, className: "tooltip" };
 
 export default function SegmentTooltip({ segment }) {
-  const { routeNames, type, oneWay, videoIds, isClosed } = segment;
+  const { routeNames, type, oneWay, videoIds, isClosed, hideUnlessVideo } =
+    segment;
 
   const primaryRouteName = routeNames?.find((x) => x) || null;
   const hasAnyRoutes = (routeNames?.length ?? 0) > 0;
@@ -39,7 +40,11 @@ export default function SegmentTooltip({ segment }) {
             </div>
           ))
         ) : (
-          <em>Alternative option or connection between routes</em>
+          <em>
+            {hideUnlessVideo
+              ? "Not an official bike route"
+              : "Official alternative option or connection between routes"}
+          </em>
         )}
         <div>
           <em>
