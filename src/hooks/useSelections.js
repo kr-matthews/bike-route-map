@@ -177,6 +177,14 @@ export default function useSelections() {
     const videoCount = (segment.videoIds ?? []).length;
     if (
       segment.hideUnlessVideo &&
+      filters.videos &&
+      segment.videoIds?.length > 0
+    ) {
+      return false;
+    }
+
+    if (
+      segment.hideUnlessVideo &&
       !segment.videoIds?.includes(selectedVideo?.id)
     ) {
       return true;
