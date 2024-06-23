@@ -4,7 +4,7 @@ import {
   BRUNETTE_FRASER_CVG_SW,
   CARIBOO_GOVERNMENT,
   CLIFF_BRUNETTE_FRASER,
-  COLUMBIA_CUMBERLAND_SE,
+  COLUMBIA_CUMBERLAND_SW,
   KING_EDWARD_LOUGHEED_NW,
   KING_EDWARD_LOUGHEED_SW,
 } from "../intersections";
@@ -20,6 +20,7 @@ const CANFOR_BRUNETTE_RIVER_N = [49.22888, -122.87937];
 
 const SAPPERTON_LANDING = [49.21816, -122.893];
 const BRUNETTE_FRASER_CUMBERLAND = [49.22047, -122.8922];
+const BRUNETTE_FRASER_EXPO_W = [49.22047, -122.8927];
 const CANFOR_BRAID = [49.22983, -122.8785];
 
 const KING_EDWARD_ELEVATION_START = [49.23141, -122.86171];
@@ -162,16 +163,21 @@ export const BRUNETTE_FRASER = [
     ],
   },
   {
-    description: "cumberland connection with cvg",
+    description: "cumberland connection with cvg: part 1",
+    type: "mixed",
     positions: [
-      COLUMBIA_CUMBERLAND_SE,
+      COLUMBIA_CUMBERLAND_SW,
       [49.22032, -122.89316],
       [49.22032, -122.89291],
       [49.22001, -122.89292],
       [49.22, -122.89282],
-      [49.22047, -122.8927],
-      BRUNETTE_FRASER_CUMBERLAND,
+      BRUNETTE_FRASER_EXPO_W,
     ],
+  },
+  {
+    description: "cumberland connection with cvg: part 2",
+    type: "quiet",
+    positions: [BRUNETTE_FRASER_EXPO_W, BRUNETTE_FRASER_CUMBERLAND],
   },
   {
     routeNames: [ROUTES.brunetteFraser.name],
