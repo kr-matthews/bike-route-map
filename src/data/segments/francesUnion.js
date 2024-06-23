@@ -221,10 +221,9 @@ export const FRANCES_UNION = [
     positions: [MALIBU_LANE_E, MALIBU_LANE_W],
   },
   {
-    routeNames: [ROUTES.francesUnion.name],
+    routeNames: [ROUTES.brunetteFraser.name, ROUTES.francesUnion.name],
     description: "wb along cliff to overpass",
     type: "mixed",
-    oneWay: "recommended",
     videoIds: [VIDEOS.francesUnionWb.id],
     positions: [
       MALIBU_LANE_W,
@@ -241,7 +240,7 @@ export const FRANCES_UNION = [
     ],
   },
   {
-    routeNames: [ROUTES.francesUnion.name],
+    routeNames: [ROUTES.brunetteFraser.name, ROUTES.francesUnion.name],
     description: "wb pre-overpass",
     type: "mixed",
     elevation: 0.5,
@@ -266,7 +265,7 @@ export const FRANCES_UNION = [
     ],
   },
   {
-    routeNames: [ROUTES.francesUnion.name],
+    routeNames: [ROUTES.brunetteFraser.name, ROUTES.francesUnion.name],
     description: "hastings overpass",
     type: "mixed",
     elevation: 1,
@@ -287,7 +286,7 @@ export const FRANCES_UNION = [
     ],
   },
   {
-    routeNames: [ROUTES.francesUnion.name],
+    routeNames: [ROUTES.brunetteFraser.name, ROUTES.francesUnion.name],
     description: "overpass to cliff",
     type: "mixed",
     elevation: 0.5,
