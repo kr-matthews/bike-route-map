@@ -1031,6 +1031,7 @@ export const SEASIDE = [
     description: "stanley park non-loop in from lawn bowling",
     type: "dedicated",
     oneWay: "recommended",
+    videoIds: [VIDEOS.seasideBypassBeachWb.id],
     positions: [
       LAWN_BOWLING_CLUB_E,
       [49.29109, -123.14747],
@@ -1054,6 +1055,7 @@ export const SEASIDE = [
     description: "stanley park non-loop in to second beach",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.seasideBypassBeachWb.id],
     positions: [
       STANLEY_PARK_DRIVE_LAGOON,
       [49.29379, -123.14802],

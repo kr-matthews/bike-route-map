@@ -482,7 +482,7 @@ export const STANLEY_PARK_LOOP = [
   },
   {
     routeNames: [ROUTES.stanleyParkLoop.name, ROUTES.seaside.name],
-    description: "second beach",
+    description: "second beach: north",
     type: "comfortable",
     videoIds: [VIDEOS.lostLagoonEb.id, VIDEOS.seasideStanleyPark.id],
     positions: [
@@ -495,6 +495,20 @@ export const STANLEY_PARK_LOOP = [
       [49.29555, -123.1498],
       [49.29553, -123.14975],
       [49.2952, -123.14929],
+      SECOND_BEACH_WEIRD_JOIN,
+    ],
+  },
+  {
+    routeNames: [ROUTES.stanleyParkLoop.name, ROUTES.seaside.name],
+    description: "second beach: south",
+    type: "comfortable",
+    videoIds: [
+      VIDEOS.lostLagoonEb.id,
+      VIDEOS.seasideStanleyPark.id,
+      VIDEOS.seasideBypassBeachWb.id,
+    ],
+    videoIdsEndAtEnd: [VIDEOS.seasideBypassBeachWb.id],
+    positions: [
       SECOND_BEACH_WEIRD_JOIN,
       [49.29484, -123.14887],
       [49.29467, -123.14872],

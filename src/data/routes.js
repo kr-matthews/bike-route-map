@@ -1175,7 +1175,7 @@ export const ROUTES = {
     name: "Seaside Bypass",
     cities: [VANCOUVER],
     legs: [
-      { name: "Beach", videos: {} },
+      { name: "Beach", videos: { westbound: VIDEOS.seasideBypassBeachWb } },
       {
         name: "Pacific/Expo",
         videos: {

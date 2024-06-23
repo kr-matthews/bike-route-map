@@ -852,6 +852,7 @@ export const SEASIDE_BYPASS = [
     routeNames: [ROUTES.seasideBypass.name],
     description: "stanley park drive: join to beach",
     type: "dedicated",
+    videoIds: [VIDEOS.seasideBypassBeachWb.id],
     positions: [
       LAWN_BOWLING_CLUB_E,
       [49.29091, -123.14718],
@@ -869,6 +870,7 @@ export const SEASIDE_BYPASS = [
     routeNames: [ROUTES.seasideBypass.name],
     description: "beach: to split before jervis",
     type: "dedicated",
+    videoIds: [VIDEOS.seasideBypassBeachWb.id],
     positions: [
       STANLEY_PARK_LANE_BEACH,
       [49.29017, -123.14537],
@@ -918,8 +920,10 @@ export const SEASIDE_BYPASS = [
     positions: [BEACH_JERVIS_SPLIT, JERVIS_BEACH_SW],
   },
   {
+    routeNames: [ROUTES.seasideBypass.name],
     description: "beach: beach to hornby",
     type: "dedicated",
+    videoIds: [VIDEOS.seasideBypassBeachWb.id],
     positions: [
       BEACH_SPLIT,
       [49.2807, -123.1386],

@@ -799,6 +799,11 @@ const VIDEOS = {
     date: new Date("2023 08 19"),
     minutes: 3,
   },
+  seasideBypassBeachWb: {
+    id: "s1r-J3Bu20s",
+    date: new Date("2024 06 21"),
+    minutes: 8,
+  },
   seasideBypassExpoWb: {
     id: "i2Kdrs7DJGk",
     date: new Date("2023 12 24"),

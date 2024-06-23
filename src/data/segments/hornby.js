@@ -26,8 +26,9 @@ export const HORNBY = [
       VIDEOS.hornbyNb.id,
       VIDEOS.hornbySb.id,
       VIDEOS.seasideFalseCreekCw.id,
+      VIDEOS.seasideBypassBeachWb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.hornbyNb.id],
+    videoIdsStartAtStart: [VIDEOS.hornbyNb.id, VIDEOS.seasideBypassBeachWb.id],
     videoIdsEndAtStart: [VIDEOS.hornbySb.id],
     positions: [HORNBY_SEABREEZE, [49.27521, -123.13304], HORNBY_BEACH_SE_S],
   },
@@ -38,6 +39,7 @@ export const HORNBY = [
     videoIds: [
       VIDEOS.hornbySb.id,
       VIDEOS.hornbyNb.id,
+      VIDEOS.seasideBypassBeachWb.id,
       VIDEOS.seasideFalseCreekCw.id,
     ],
     videoIdsStartAtEnd: [VIDEOS.seasideFalseCreekCw.id],
