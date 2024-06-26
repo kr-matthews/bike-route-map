@@ -14,6 +14,8 @@ import {
   SPERLING_LOUGHEED_NE,
   SPERLING_LOUGHEED_SE,
   UNITED_MARY_HILL_NW,
+  WILLINGDON_LOUGHEED_NE,
+  WILLINGDON_LOUGHEED_SE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -48,7 +50,6 @@ const WESTBOUND_BRUNETTE_FRASER_POST = [49.25218, -122.91042];
 
 const EB_AFTER_MADISON = [49.26636, -123.00736];
 const WILLINGDON_LOUGHEED_SW = [49.26628, -123.00341];
-const WILLINGDON_LOUGHEED_NE = [49.26657, -123.00302];
 const WB_BEFORE_BOUNDARY = [49.26597, -123.0195];
 
 const POST_DELTA_SHOULDER_START = [49.26498, -122.99093];
@@ -160,7 +161,7 @@ export const LOUGHEED = [
     videoIds: [VIDEOS.lougheedEb.id],
     positions: [
       WILLINGDON_LOUGHEED_SW,
-      [49.2663, -123.00301],
+      WILLINGDON_LOUGHEED_SE,
       [49.26624, -123.00041],
       [49.2662, -122.99855],
       [49.26616, -122.99764],

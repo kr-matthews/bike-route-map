@@ -1,13 +1,54 @@
-import { WILLINGDON_FRANCES } from "../intersections";
+import {
+  WILLINGDON_FRANCES,
+  WILLINGDON_LOUGHEED_NE,
+  WILLINGDON_LOUGHEED_SE,
+} from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
+
+const NB_LANE_END = [49.26783, -123.003];
+const TRAIL_S = [49.26972, -123.00298];
 
 export const WILLINGDON_LINEAR_PARK = [
+  {
+    description: "lane",
+    type: "dedicated",
+    oneWay: "required",
+    videoIds: [VIDEOS.willingdonLinearNb.id],
+    videoIdsStartAtStart: [VIDEOS.willingdonLinearNb.id],
+    positions: [
+      WILLINGDON_LOUGHEED_SE,
+      WILLINGDON_LOUGHEED_NE,
+      [49.26671, -123.00299],
+      [49.26676, -123.00297],
+      [49.26702, -123.00291],
+      [49.26775, -123.00292],
+      NB_LANE_END,
+    ],
+  },
+  {
+    description: "road",
+    type: "shared",
+    oneWay: "required",
+    hideUnlessVideo: true,
+    videoIds: [VIDEOS.willingdonLinearNb.id],
+    positions: [
+      NB_LANE_END,
+      [49.26803, -123.00304],
+      [49.26964, -123.00304],
+      TRAIL_S,
+    ],
+  },
+
+  // trail
   {
     routeNames: [ROUTES.willingdonLinear.name],
     description: "primary",
     type: "mixed",
+    videoIds: [VIDEOS.willingdonLinearNb.id],
+    videoIdsEndAtEnd: [VIDEOS.willingdonLinearNb.id],
     positions: [
-      [49.26972, -123.00298],
+      TRAIL_S,
       [49.27029, -123.003],
       [49.27067, -123.00306],
       [49.27073, -123.00306],

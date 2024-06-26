@@ -33,21 +33,21 @@ export const ONTARIO = [
     routeNames: [ROUTES.ontario.name],
     description: "kent to 69th",
     type: "quiet",
-    videoIds: [VIDEOS.ontarioNb.id],
+    videoIds: [VIDEOS.ontarioNb.id, VIDEOS.ontarioSb.id],
     positions: [ONTARIO_KENT_N, [49.20939, -123.1067], ONTARIO_69TH_NW],
   },
   {
     routeNames: [ROUTES.ontario.name],
     description: "69th to marine",
     type: "dedicated",
-    videoIds: [VIDEOS.ontarioNb.id],
+    videoIds: [VIDEOS.ontarioNb.id, VIDEOS.ontarioSb.id],
     positions: [ONTARIO_69TH_NW, [49.21219, -123.10665], ONTARIO_MARINE_N],
   },
   {
     routeNames: [ROUTES.ontario.name],
     description: "marine to 59th",
     type: "quiet",
-    videoIds: [VIDEOS.ontarioNb.id],
+    videoIds: [VIDEOS.ontarioNb.id, VIDEOS.ontarioSb.id],
     positions: [
       ONTARIO_MARINE_N,
       ONTARIO_63RD,
@@ -61,6 +61,7 @@ export const ONTARIO = [
     type: "quiet",
     videoIds: [
       VIDEOS.ontarioNb.id,
+      VIDEOS.ontarioSb.id,
       VIDEOS.masumiMitsuiEb.id,
       VIDEOS.masumiMitsuiWb.id,
     ],
@@ -70,7 +71,7 @@ export const ONTARIO = [
     routeNames: [ROUTES.ontario.name],
     description: "58th to 52nd",
     type: "quiet",
-    videoIds: [VIDEOS.ontarioNb.id],
+    videoIds: [VIDEOS.ontarioNb.id, VIDEOS.ontarioSb.id],
     positions: [
       ONTARIO_58TH,
       [49.21854, -123.10621],
@@ -99,6 +100,7 @@ export const ONTARIO = [
     description: "sb: 49th to 52nd",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.ontarioSb.id],
     positions: [
       ONTARIO_49TH_N,
       [49.22568, -123.10605],
@@ -113,7 +115,7 @@ export const ONTARIO = [
     routeNames: [ROUTES.ontario.name],
     description: "49th to 33rd",
     type: "quiet",
-    videoIds: [VIDEOS.ontarioNb.id],
+    videoIds: [VIDEOS.ontarioNb.id, VIDEOS.ontarioSb.id],
     positions: [
       ONTARIO_49TH_N,
       [49.22766, -123.1059],
@@ -131,7 +133,11 @@ export const ONTARIO = [
     routeNames: [ROUTES.ontario.name],
     description: "just north of 33rd",
     type: "quiet",
-    videoIds: [VIDEOS.ontarioNb.id, VIDEOS.twentyNinthWb.id],
+    videoIds: [
+      VIDEOS.ontarioSb.id,
+      VIDEOS.ontarioNb.id,
+      VIDEOS.twentyNinthWb.id,
+    ],
     videoIdsStartAtEnd: [VIDEOS.twentyNinthWb.id],
     positions: [ONTARIO_33RD_N, NORTH_OF_ONTARIO_33RD],
   },
@@ -139,7 +145,7 @@ export const ONTARIO = [
     routeNames: [ROUTES.ontario.name],
     description: "just north of 33rd to athletes",
     type: "quiet",
-    videoIds: [VIDEOS.ontarioNb.id],
+    videoIds: [VIDEOS.ontarioSb.id, VIDEOS.ontarioNb.id],
     positions: [
       NORTH_OF_ONTARIO_33RD,
       ONTARIO_30TH,
@@ -174,7 +180,7 @@ export const ONTARIO = [
     routeNames: [ROUTES.ontario.name],
     description: "athletes to path",
     type: "mixed",
-    videoIds: [VIDEOS.ontarioNb.id],
+    videoIds: [VIDEOS.ontarioSb.id, VIDEOS.ontarioNb.id],
     positions: [ONTARIO_ATHLETES, ONTARIO_PATH_ATHLETES],
   },
 ];

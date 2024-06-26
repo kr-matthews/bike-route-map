@@ -129,6 +129,11 @@ const VIDEOS = {
     date: new Date("2024 02 12"),
     minutes: 4,
   },
+  brunetteFraserSb: {
+    id: "lzabq1p-VrM",
+    date: new Date("2024 06 23"),
+    minutes: 45,
+  },
   burnabyWb: {
     id: "oTdJLOvaH8g",
     date: new Date("2024 04 10"),
@@ -429,10 +434,15 @@ const VIDEOS = {
     date: new Date("2023 05 29"),
     minutes: 7,
   },
-  highlandParKLineEb: {
+  highlandParkLineEb: {
     id: "_R6UzzZBKpw",
     date: new Date("2024 03 20"),
     minutes: 8,
+  },
+  highlandParkLineWb: {
+    id: "Rih4qXByoBE",
+    date: new Date("2024 06 23"),
+    minutes: 11,
   },
   homerNb: {
     id: "1zkLD7aOBUc",
@@ -668,6 +678,11 @@ const VIDEOS = {
     id: "ZWmusAetxP0",
     date: new Date("2023 10 07"),
     minutes: 24,
+  },
+  ontarioSb: {
+    id: "XU7fXW-9oAk",
+    date: new Date("2024 06 24"),
+    minutes: 22,
   },
   pandoraEb: {
     id: "-vNVdK9fnMU",
@@ -1003,6 +1018,11 @@ const VIDEOS = {
     id: "s58YehJpLE4",
     date: new Date("2023 12 22"),
     minutes: 11,
+  },
+  willingdonLinearNb: {
+    id: "zP2p1D3rEPo",
+    date: new Date("2024 06 23"),
+    minutes: 6,
   },
   windermereNb: {
     id: "RAq0VZ1MFHk",

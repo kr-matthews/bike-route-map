@@ -107,7 +107,7 @@ export const HIGHLAND_PARK_LINE = [
   {
     description: "kingsway (& more) protected",
     type: "dedicated",
-    videoIds: [VIDEOS.highlandParKLineEb.id],
+    videoIds: [VIDEOS.highlandParkLineWb.id, VIDEOS.highlandParkLineEb.id],
     positions: [
       EDMONDS_KINGSWAY_SW,
       [49.21817, -122.95221],
@@ -124,8 +124,8 @@ export const HIGHLAND_PARK_LINE = [
   {
     description: "britton",
     type: "quiet",
-    videoIds: [VIDEOS.highlandParKLineEb.id],
-    videoIdsEndAtEnd: [VIDEOS.highlandParKLineEb.id],
+    videoIds: [VIDEOS.highlandParkLineWb.id, VIDEOS.highlandParkLineEb.id],
+    videoIdsEndAtEnd: [VIDEOS.highlandParkLineEb.id],
     positions: [
       BRITTON_18TH_NW,
       [49.21778, -122.94951],
@@ -136,6 +136,7 @@ export const HIGHLAND_PARK_LINE = [
   {
     description: "connection from britton to southeast",
     type: "quiet",
+    videoIds: [VIDEOS.highlandParkLineWb.id],
     positions: [BRITTON_STRIDE, FIFTEENTH_STRIDE],
   },
   {
@@ -148,8 +149,9 @@ export const HIGHLAND_PARK_LINE = [
     routeNames: [ROUTES.highlandParkLine.name],
     description: "all",
     type: "mixed",
-    videoIds: [VIDEOS.highlandParKLineEb.id],
-    videoIdsStartAtStart: [VIDEOS.highlandParKLineEb.id],
+    videoIds: [VIDEOS.highlandParkLineEb.id, VIDEOS.highlandParkLineWb.id],
+    videoIdsStartAtStart: [VIDEOS.highlandParkLineEb.id],
+    videoIdsEndAtStart: [VIDEOS.highlandParkLineWb.id],
     positions: [
       BULLER_BERESFORD_W,
       [49.21776, -122.97773],

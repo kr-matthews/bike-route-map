@@ -15,6 +15,9 @@ const GRIFFITHS_SOUTHPOINT_E = [49.21124, -122.95556];
 const CUMBERLAND_ARMSTRONG = [49.22973, -122.91514];
 const CARIBOO_ARMSTRONG_W_SPLIT = [49.23536, -122.90469];
 const FIFTEENTH_13TH_W = [49.21325, -122.94556];
+const FIFTEENTH_13TH_E = [49.21335, -122.94544];
+const FIFTEENTH_14TH = [49.21427, -122.94669];
+const FIFTEENTH_14TH_N = [49.21433, -122.94692];
 const FIFTEENTH_12TH = [49.21242, -122.94433];
 const FIFTEENTH_11TH = [49.2117, -122.94339];
 
@@ -110,20 +113,19 @@ export const SOUTHEAST = [
     description: "15th nb",
     type: "combined",
     oneWay: "required",
-    positions: [
-      [49.21335, -122.94544],
-      [49.21427, -122.94669],
-    ],
+    videoIds: [VIDEOS.highlandParkLineWb.id],
+    positions: [FIFTEENTH_13TH_E, FIFTEENTH_14TH, FIFTEENTH_14TH_N],
   },
   {
     description: "15th sb",
     type: "combined",
     oneWay: "required",
-    positions: [[49.21417, -122.94683], FIFTEENTH_13TH_W],
+    positions: [FIFTEENTH_14TH_N, [49.21417, -122.94683], FIFTEENTH_13TH_W],
   },
   {
     description: "15th",
     type: "mixed",
+    videoIds: [VIDEOS.highlandParkLineWb.id],
     positions: [
       FIFTEENTH_11TH,
       [49.21173, -122.9435],
@@ -133,15 +135,27 @@ export const SOUTHEAST = [
     ],
   },
   {
-    description: "connection to london",
+    description: "crossing at 13th",
+    type: "mixed",
+    videoIds: [VIDEOS.highlandParkLineWb.id],
+    positions: [FIFTEENTH_13TH_W, FIFTEENTH_13TH_E],
+  },
+  {
+    description: "connection from london 1",
     type: "quiet",
+    videoIds: [VIDEOS.highlandParkLineWb.id],
+    videoIdsStartAtStart: [VIDEOS.highlandParkLineWb.id],
     positions: [
       FIFTEENTH_LONDON,
       [49.21081, -122.94259],
       [49.21102, -122.94249],
       FIFTEENTH_11TH,
-      FIFTEENTH_12TH,
     ],
+  },
+  {
+    description: "connection from london 2",
+    type: "quiet",
+    positions: [FIFTEENTH_11TH, FIFTEENTH_12TH],
   },
 
   {
@@ -158,7 +172,7 @@ export const SOUTHEAST = [
   },
   {
     routeNames: [ROUTES.southeast.name],
-    description: "middle",
+    description: "stride",
     type: "quiet",
     videoIds: [VIDEOS.southeastWb.id],
     positions: [
@@ -171,7 +185,22 @@ export const SOUTHEAST = [
       [49.21327, -122.95177],
       [49.21419, -122.95006],
       FIFTEENTH_STRIDE,
-      [49.21433, -122.94692], // FIFTEENTH_14TH_N
+    ],
+  },
+  {
+    routeNames: [ROUTES.southeast.name],
+    description: "stride to 14th",
+    type: "quiet",
+    videoIds: [VIDEOS.southeastWb.id, VIDEOS.highlandParkLineWb.id],
+    positions: [FIFTEENTH_STRIDE, FIFTEENTH_14TH_N],
+  },
+  {
+    routeNames: [ROUTES.southeast.name],
+    description: "14th to cumberland",
+    type: "quiet",
+    videoIds: [VIDEOS.southeastWb.id],
+    positions: [
+      FIFTEENTH_14TH_N,
       [49.21329, -122.9455], // FIFTEENTH_13TH_N
       FIFTEENTH_12TH,
       [49.21367, -122.94203],

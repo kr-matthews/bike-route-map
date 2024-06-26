@@ -224,7 +224,8 @@ export const FRANCES_UNION = [
     routeNames: [ROUTES.brunetteFraser.name, ROUTES.francesUnion.name],
     description: "wb along cliff to overpass",
     type: "mixed",
-    videoIds: [VIDEOS.francesUnionWb.id],
+    videoIds: [VIDEOS.brunetteFraserSb.id, VIDEOS.francesUnionWb.id],
+    videoIdsStartAtStart: [VIDEOS.brunetteFraserSb.id],
     positions: [
       MALIBU_LANE_W,
       [49.28596, -122.959],
@@ -244,7 +245,11 @@ export const FRANCES_UNION = [
     description: "wb pre-overpass",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [VIDEOS.francesUnionWb.id, VIDEOS.lakesNb.id],
+    videoIds: [
+      VIDEOS.brunetteFraserSb.id,
+      VIDEOS.francesUnionWb.id,
+      VIDEOS.lakesNb.id,
+    ],
     videoIdsEndAtStart: [VIDEOS.lakesNb.id],
     positions: [
       CLIFF_WESTRIDGE_PARK,
@@ -269,7 +274,11 @@ export const FRANCES_UNION = [
     description: "hastings overpass",
     type: "mixed",
     elevation: 1,
-    videoIds: [VIDEOS.francesUnionWb.id, VIDEOS.lakesNb.id],
+    videoIds: [
+      VIDEOS.brunetteFraserSb.id,
+      VIDEOS.francesUnionWb.id,
+      VIDEOS.lakesNb.id,
+    ],
     positions: [
       HASTINGS_OVERPASS_N,
       [49.28035, -122.96045],
@@ -290,7 +299,11 @@ export const FRANCES_UNION = [
     description: "overpass to cliff",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [VIDEOS.francesUnionWb.id, VIDEOS.lakesNb.id],
+    videoIds: [
+      VIDEOS.brunetteFraserSb.id,
+      VIDEOS.francesUnionWb.id,
+      VIDEOS.lakesNb.id,
+    ],
     positions: [
       HASTINGS_OVERPASS_S,
       [49.28, -122.96009],

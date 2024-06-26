@@ -266,10 +266,7 @@ export const ROUTES = {
     name: "Brunette Fraser Regional Greenway",
     cities: [BURNABY, NEW_WESTMINSTER],
     shortName: "Brunette Fraser Gr.",
-    legs: [
-      { name: "Burnaby", videos: {} },
-      { name: "New Westminster", videos: {} },
-    ],
+    legs: [{ videos: { southbound: VIDEOS.brunetteFraserSb } }],
   },
   burnaby: {
     name: "Burnaby",
@@ -659,7 +656,14 @@ export const ROUTES = {
   highlandParkLine: {
     name: "Highland Park Line",
     cities: [BURNABY],
-    legs: [{ videos: { eastbound: VIDEOS.highlandParKLineEb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.highlandParkLineEb,
+          westbound: VIDEOS.highlandParkLineWb,
+        },
+      },
+    ],
   },
   hillcrest: {
     name: "Hillcrest",
@@ -979,7 +983,9 @@ export const ROUTES = {
     name: "Ontario",
     cities: [VANCOUVER],
     legs: [
-      { videos: { northbound: VIDEOS.ontarioNb } },
+      {
+        videos: { northbound: VIDEOS.ontarioNb, southbound: VIDEOS.ontarioSb },
+      },
       {
         name: "Connection with Oakridge Station via 42nd Ave",
         videos: { eastbound: VIDEOS.fortySecondEb },
@@ -1368,7 +1374,7 @@ export const ROUTES = {
     name: "Willingdon Linear Park Urban Trail",
     shortName: "Willingdon L. Park",
     cities: [BURNABY],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.willingdonLinearNb } }],
   },
   willingdon: {
     name: "Willingdon Urban Trail",

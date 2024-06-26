@@ -150,9 +150,13 @@ export const CENTRAL_VALLEY_GREENWAY = [
     videoIds: [
       VIDEOS.centralValleyVancouverEb.id,
       VIDEOS.centralValleyVancouverWb.id,
+      VIDEOS.ontarioSb.id,
       VIDEOS.ontarioNb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.centralValleyVancouverEb.id],
+    videoIdsStartAtStart: [
+      VIDEOS.centralValleyVancouverEb.id,
+      VIDEOS.ontarioSb.id,
+    ],
     videoIdsEndAtStart: [
       VIDEOS.centralValleyVancouverWb.id,
       VIDEOS.ontarioNb.id,
@@ -856,7 +860,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.brunetteFraser.name],
     type: "mixed",
     description: "government to cariboo plc",
-    videoIds: [VIDEOS.caribooSb.id],
+    videoIds: [VIDEOS.caribooSb.id, VIDEOS.brunetteFraserSb.id],
     videoIdsStartAtStart: [VIDEOS.caribooSb.id],
     positions: [
       CARIBOO_GOVERNMENT,
@@ -870,6 +874,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.brunetteFraser.name],
     type: "quiet",
     description: "cariboo pl",
+    videoIds: [VIDEOS.brunetteFraserSb.id],
     positions: [
       CARIBOO_CARIBOO_PL_E,
       [49.24938, -122.91418],
@@ -897,6 +902,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.brunetteFraser.name],
     type: "mixed",
     description: "cariboo pl to north rd",
+    videoIds: [VIDEOS.brunetteFraserSb.id],
     positions: [
       CARIBOO_PL_E,
       [49.248, -122.91226],
@@ -973,7 +979,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.brunetteFraser.name],
     type: "mixed",
     description: "north to hume park",
-    videoIds: [VIDEOS.centralValleyNWNb.id],
+    videoIds: [VIDEOS.centralValleyNWNb.id, VIDEOS.brunetteFraserSb.id],
     videoIdsEndAtStart: [VIDEOS.centralValleyNWNb.id],
     positions: [
       NORTH_CVG,
@@ -986,7 +992,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.brunetteFraser.name],
     type: "quiet",
     description: "hume park dr",
-    videoIds: [VIDEOS.centralValleyNWNb.id],
+    videoIds: [VIDEOS.centralValleyNWNb.id, VIDEOS.brunetteFraserSb.id],
     positions: [
       HUME_PARK_DR_N,
       [49.237, -122.89233],
@@ -1007,7 +1013,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.brunetteFraser.name],
     type: "mixed",
     description: "hume park path to fraser split",
-    videoIds: [VIDEOS.centralValleyNWNb.id],
+    videoIds: [VIDEOS.centralValleyNWNb.id, VIDEOS.brunetteFraserSb.id],
     positions: [
       HUME_PARK_DR_S,
       [49.23518, -122.89106],

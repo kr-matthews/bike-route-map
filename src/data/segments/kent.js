@@ -68,15 +68,16 @@ export const KENT = [
     routeNames: [ROUTES.kent.name],
     description: "ontario",
     type: "quiet",
-    videoIds: [VIDEOS.kentWb.id, VIDEOS.ontarioNb.id],
+    videoIds: [VIDEOS.kentWb.id, VIDEOS.ontarioNb.id, VIDEOS.ontarioSb.id],
     positions: [ONTARIO_KENT_S, ONTARIO_KENT_N],
   },
   {
     routeNames: [ROUTES.kent.name],
     description: "kent s: near ontario",
     type: "dedicated",
-    videoIds: [VIDEOS.kentWb.id, VIDEOS.ontarioNb.id],
+    videoIds: [VIDEOS.kentWb.id, VIDEOS.ontarioNb.id, VIDEOS.ontarioSb.id],
     videoIdsStartAtEnd: [VIDEOS.ontarioNb.id],
+    videoIdsEndAtEnd: [VIDEOS.ontarioSb.id],
     positions: [ONTARIO_KENT_S, EAST_OF_ONTARIO],
   },
   {
