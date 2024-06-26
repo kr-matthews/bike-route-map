@@ -176,7 +176,7 @@ export const ROUTES = {
     legs: [{ videos: { northbound: VIDEOS.balaclavaNb } }],
   },
   barnet: {
-    name: "Barnet Highway",
+    name: "Barnet Hwy",
     cities: [BURNABY, PORT_MOODY],
     legs: [{ videos: {} }],
   },
@@ -791,7 +791,7 @@ export const ROUTES = {
     legs: [{ videos: {} }],
   },
   lougheed: {
-    name: "Lougheed Highway",
+    name: "Lougheed Hwy",
     cities: [BURNABY, COQUITLAM],
     legs: [
       {
@@ -1226,7 +1226,7 @@ export const ROUTES = {
     legs: [{ videos: {} }],
   },
   shellRoadTrail: {
-    name: "Shell Road Trail",
+    name: "Shell Rd Trail",
     cities: [RICHMOND],
     legs: [
       {
@@ -1270,8 +1270,7 @@ export const ROUTES = {
     ],
   },
   stevestonHwy: {
-    name: "Steveston Highway Path",
-    shortName: "Steveston Hwy Path",
+    name: "Steveston Hwy Path",
     cities: [RICHMOND],
     legs: [{ videos: { eastbound: VIDEOS.stevestonEb } }],
   },
@@ -1360,8 +1359,7 @@ export const ROUTES = {
     legs: [{ videos: {} }],
   },
   westminsterHwy: {
-    name: "Westminster Highway",
-    shortName: "Westminster Hwy",
+    name: "Westminster Hwy",
     cities: [RICHMOND],
     legs: [{ videos: { westbound: VIDEOS.westminsterWb } }],
   },
