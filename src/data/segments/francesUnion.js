@@ -10,7 +10,8 @@ import {
   INLET_BAYVIEW_W,
   INLET_RIDGE_E,
   INLET_RIDGE_W,
-  TRANS_CANADA_FRANCES_UNION,
+  TRANS_CANADA_FRANCES_UNION_E,
+  TRANS_CANADA_FRANCES_UNION_W,
   WILLINGDON_FRANCES,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -83,7 +84,7 @@ export const FRANCES_UNION = [
   },
   {
     routeNames: [ROUTES.francesUnion.name],
-    description: "through kensington park",
+    description: "through kensington park 1",
     type: "mixed",
     videoIds: [VIDEOS.francesUnionWb.id],
     positions: [
@@ -95,7 +96,16 @@ export const FRANCES_UNION = [
       [49.2799, -122.97544],
       [49.28, -122.97538],
       [49.2801, -122.97525],
-      TRANS_CANADA_FRANCES_UNION,
+      TRANS_CANADA_FRANCES_UNION_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.francesUnion.name, ROUTES.transCanada.name],
+    description: "through kensington park 2: trans canada",
+    type: "mixed",
+    videoIds: [VIDEOS.francesUnionWb.id],
+    positions: [
+      TRANS_CANADA_FRANCES_UNION_W,
       [49.28016, -122.97491],
       [49.28016, -122.97469],
       [49.28024, -122.97443],
@@ -103,7 +113,16 @@ export const FRANCES_UNION = [
       [49.28021, -122.9741],
       [49.28019, -122.97353],
       [49.28013, -122.97328],
-      [49.2801, -122.97328],
+      TRANS_CANADA_FRANCES_UNION_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.francesUnion.name],
+    description: "through kensington park 3",
+    type: "mixed",
+    videoIds: [VIDEOS.francesUnionWb.id],
+    positions: [
+      TRANS_CANADA_FRANCES_UNION_E,
       [49.27994, -122.97314],
       [49.27977, -122.97299],
       [49.27947, -122.9726],

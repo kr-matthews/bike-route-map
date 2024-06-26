@@ -1,7 +1,8 @@
 import {
   CARLETON_YALE,
   SKEENA_BRIDGEWAY,
-  TRANS_CANADA_FRANCES_UNION,
+  TRANS_CANADA_FRANCES_UNION_E,
+  TRANS_CANADA_FRANCES_UNION_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -11,6 +12,8 @@ const WILLINGDON_CAMBRIDGE = [49.28651, -123.00309];
 const TRANS_CANADA_PENZANCE = [49.28952, -122.99349];
 const FELL_N = [49.28601, -122.97524];
 const FELL_HASTINGS_SE = [49.28023, -122.97543];
+const KENSINGTON_HASTINGS_SW = [49.28021, -122.97015];
+const KENSINGTON_TRANS_CANADA_N = [49.28083, -122.97002];
 
 export const TRANS_CANADA = [
   {
@@ -212,7 +215,54 @@ export const TRANS_CANADA = [
     positions: [
       FELL_HASTINGS_SE,
       [49.28022, -122.97537],
-      TRANS_CANADA_FRANCES_UNION,
+      TRANS_CANADA_FRANCES_UNION_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.transCanada.name],
+    description: "to kensington",
+    type: "mixed",
+    positions: [
+      TRANS_CANADA_FRANCES_UNION_E,
+      [49.28011, -122.9731],
+      [49.28011, -122.97271],
+      [49.28006, -122.97205],
+      [49.28012, -122.9713],
+      [49.28011, -122.9709],
+      [49.28008, -122.97052],
+      [49.28009, -122.97043],
+      [49.28018, -122.97018],
+      KENSINGTON_HASTINGS_SW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.transCanada.name],
+    description: "kensington",
+    type: "quiet",
+    positions: [
+      KENSINGTON_HASTINGS_SW,
+      [49.28026, -122.97004],
+      KENSINGTON_TRANS_CANADA_N,
+    ],
+  },
+  {
+    routeNames: [ROUTES.transCanada.name],
+    description: "along hastings",
+    type: "mixed",
+    positions: [
+      KENSINGTON_TRANS_CANADA_N,
+      [49.28083, -122.96911],
+      [49.28082, -122.96899],
+      [49.28077, -122.96888],
+      [49.28062, -122.96868],
+      [49.2806, -122.96851],
+      [49.2806, -122.96646],
+      [49.28066, -122.96626],
+      [49.28083, -122.96611],
+      [49.28089, -122.96602],
+      [49.28091, -122.96588],
+      [49.28091, -122.96498],
+      [49.28085, -122.96495],
     ],
   },
 ];
