@@ -127,4 +127,16 @@ describe("data", () => {
     );
     expect(unusedVideos).toHaveLength(0);
   });
+
+  test("no empty video ids", () => {
+    const noIdVideos = Object.values(VIDEOS).filter((video) => !video.id);
+    expect(noIdVideos).toHaveLength(0);
+  });
+
+  test("no duplicate video ids", () => {
+    const uniqueVideoIds = [
+      ...new Set(Object.values(VIDEOS).map(({ id }) => id)),
+    ];
+    expect(uniqueVideoIds).toHaveLength(Object.values(VIDEOS).length);
+  });
 });
