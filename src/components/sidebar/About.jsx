@@ -43,8 +43,11 @@ export default function About({ navigateTo }) {
               View the <b>legend</b>.
             </li>
             <li>
-              <b>Filter</b> which segments are displayed on the map, and change
-              the <b>background</b> map.
+              <b>Filter</b> which segments are displayed on the map.
+            </li>
+            <li>
+              Change the <b>background</b> map and the default{" "}
+              <b>video speed</b>.
             </li>
           </ul>
         </ul>

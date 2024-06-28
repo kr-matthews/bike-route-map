@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { FilterContext, SettingContext } from "../../App";
 import { COLOUR_NO_VIDEO, COLOUR_VIDEO } from "../../utils/constants";
 import { displayDistance } from "../../utils/strings";
