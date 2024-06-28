@@ -59,17 +59,17 @@ export default function Filters({ navigateTo }) {
             );
           })}
         </div>
+
+        <br />
+
+        <SegmentForm
+          view="filters"
+          types={filters.types}
+          directions={filters.directions}
+          elevations={filters.elevations}
+          dispatch={dispatchFilters}
+        />
       </div>
-
-      <br />
-
-      <SegmentForm
-        view="filters"
-        types={filters.types}
-        directions={filters.directions}
-        elevations={filters.elevations}
-        dispatch={dispatchFilters}
-      />
     </Panel>
   );
 }
