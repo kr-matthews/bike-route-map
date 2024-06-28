@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { FilterContext } from "../../App";
+import { FilterContext, SettingContext } from "../../App";
 import { COLOUR_NO_VIDEO, COLOUR_VIDEO } from "../../utils/constants";
 import { displayDistance } from "../../utils/strings";
 import { displayDirection } from "../../utils/videos";
@@ -8,6 +8,7 @@ import "./toggleSwitch.css";
 
 export default function Video({ video, direction }) {
   const { selectedVideo, selectVideo } = useContext(FilterContext);
+  const { defaultSpeed } = useContext(SettingContext);
   const isShowing = video.id === selectedVideo?.id;
   const backgroundColor = isShowing ? COLOUR_VIDEO : COLOUR_NO_VIDEO;
 
@@ -16,6 +17,7 @@ export default function Video({ video, direction }) {
     year: "numeric",
   });
   const durationText = `${video.minutes} min`;
+  const speedText = `${video.tlId && defaultSpeed === 4 ? 4 : 1}x speed`;
 
   const updateVideo = () => selectVideo(video.id);
 
@@ -34,21 +36,22 @@ export default function Video({ video, direction }) {
             style={{
               textTransform: "capitalize",
               fontWeight: "Bold",
-              fontSize: "88%",
+              fontSize: "100%",
             }}
           >
-            {displayDirection(direction)}
+            {displayDirection(direction)}, {dateText}
           </span>
-          {", "}
-          <span style={{ fontSize: "73%" }}>
-            {dateText}, {durationText}, {displayDistance(video.distance)}
+          <br />
+          <span style={{ fontSize: "90%" }}>
+            {displayDistance(video.distance)}, {durationText}, {speedText}
           </span>
         </span>
         <span
           style={{
             position: "absolute",
             right: 0,
-            width: "3em",
+            top: 0,
+            width: "4em",
             cursor: "pointer",
           }}
           title="Highlight on Map"
@@ -58,14 +61,14 @@ export default function Video({ video, direction }) {
             <input type="checkbox" checked={isShowing} onChange={updateVideo} />
             <span className="slider" />
           </label>
-          <img src={startIcon} style={{ height: "14px", paddingLeft: "4px" }} />
+          <img src={startIcon} style={{ height: "30px", paddingLeft: "4px" }} />
         </span>
       </div>
       <div>
         <iframe
           width="275px"
           height="155px"
-          src={createUrl(video)}
+          src={createUrl(video, defaultSpeed)}
           // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
           title="Embedded YouTube"
@@ -77,6 +80,7 @@ export default function Video({ video, direction }) {
 
 const YOUTUBE_PREFIX = "https://www.youtube.com/embed/";
 
-function createUrl(video) {
-  return `${YOUTUBE_PREFIX}${video.id}`;
+function createUrl(video, defaultSpeed) {
+  const id = (defaultSpeed === 4 && video.tlId) || video.id;
+  return `${YOUTUBE_PREFIX}${id}`;
 }
