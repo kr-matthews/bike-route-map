@@ -1,5 +1,5 @@
 import { useContext, useEffect, useMemo, useState } from "react";
-import { Selections } from "../../App";
+import { FilterContext } from "../../App";
 import { Search } from "./Search";
 import {
   displayDistance,
@@ -85,7 +85,7 @@ export default function Routes({ navigateTo, mapRef }) {
 
 function Route({ route, mapRef }) {
   const { selectedRoute, selectRoute, highlightedRoute, highlightRoute } =
-    useContext(Selections);
+    useContext(FilterContext);
   const isHighlighted = highlightedRoute?.name === route.name;
   const isSelected = selectedRoute?.name === route.name;
 

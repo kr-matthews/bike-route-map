@@ -2,6 +2,7 @@ import About from "./About";
 import Filters from "./Filters";
 import Legend from "./Legend";
 import Routes from "./Routes";
+import Settings from "./Settings";
 import DetailBottomSheet from "./DetailBottomSheet";
 import useSavedState from "../../hooks/useSavedState";
 
@@ -12,6 +13,7 @@ export const VIEWS = {
   routes: { key: "routes", name: "Routes", Component: Routes },
   legend: { key: "legend", name: "Legend", Component: Legend },
   filters: { key: "filters", name: "Filters", Component: Filters },
+  settings: { key: "settings", name: "Settings", Component: Settings },
 };
 
 export default function Sidebar({ mapRef }) {

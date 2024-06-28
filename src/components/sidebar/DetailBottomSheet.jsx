@@ -1,10 +1,10 @@
 import { useContext } from "react";
-import { Selections } from "../../App";
+import { FilterContext } from "../../App";
 import { LIGHT_GREEN, WHITE } from "../../utils/colours";
 import RouteDetail from "./RouteDetail";
 
 export default function DetailBottomSheet({ mapRef }) {
-  const { selectedRoute } = useContext(Selections);
+  const { selectedRoute } = useContext(FilterContext);
 
   return (
     <div

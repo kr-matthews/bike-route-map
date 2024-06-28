@@ -1,10 +1,10 @@
 import { Fragment, useContext } from "react";
 import { Pane, TileLayer } from "react-leaflet";
 import { TILE_LAYERS } from "../../utils/map";
-import { Selections } from "../../App";
+import { SettingContext } from "../../App";
 
 export default function PanesAndTiles() {
-  const { tileLayerKey } = useContext(Selections);
+  const { tileLayerKey } = useContext(SettingContext);
 
   return (
     <Fragment>

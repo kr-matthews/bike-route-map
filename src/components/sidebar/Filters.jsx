@@ -1,9 +1,8 @@
 import { useContext } from "react";
-import { Selections } from "../../App";
+import { FilterContext } from "../../App";
 import SegmentForm from "./SegmentForm";
 import Panel from "./Panel";
 import { VIEWS } from "./Sidebar";
-import { DEFAULT_TILE_LAYER, TILE_LAYERS } from "../../utils/map";
 
 const videoOptions = [undefined, true, false];
 
@@ -11,12 +10,8 @@ const getVideoOptionName = (option) =>
   option ? "With video" : option === false ? "Without video" : "All";
 
 export default function Filters({ navigateTo }) {
-  const { filters, dispatchFilters, tileLayerKey, setTileLayerKey } =
-    useContext(Selections);
-  const reset = () => {
-    dispatchFilters({ type: "reset" });
-    setTileLayerKey(DEFAULT_TILE_LAYER);
-  };
+  const { filters, dispatchFilters } = useContext(FilterContext);
+  const reset = () => dispatchFilters({ type: "reset" });
 
   return (
     <Panel name={VIEWS.filters.name} navigateTo={navigateTo}>
@@ -30,43 +25,6 @@ export default function Filters({ navigateTo }) {
         >
           Reset
         </button>
-
-        {/* padding to match inherent padding on inputs, prevent scroll bar */}
-        <div style={{ padding: "4px", margin: "0.5em 0 1em 0" }}>
-          <b>Background map: </b>
-          {Object.keys(TILE_LAYERS).map((tileLayerOption) => (
-            <label
-              key={tileLayerOption}
-              htmlFor="tiles"
-              style={{
-                cursor: "pointer",
-                padding: "4px",
-                textTransform: "capitalize",
-              }}
-              onClick={() => setTileLayerKey(tileLayerOption)}
-            >
-              <input
-                type="radio"
-                id={tileLayerOption.toString()}
-                name="tiles"
-                style={{ cursor: "pointer" }}
-                checked={tileLayerKey === tileLayerOption}
-                onChange={() => {}}
-              />
-              {tileLayerOption}
-            </label>
-          ))}
-        </div>
-
-        <SegmentForm
-          view="filters"
-          types={filters.types}
-          directions={filters.directions}
-          elevations={filters.elevations}
-          dispatch={dispatchFilters}
-        />
-
-        <br />
 
         {/* padding to match inherent padding on inputs, prevent scroll bar */}
         <div style={{ padding: "4px" }}>
@@ -102,6 +60,16 @@ export default function Filters({ navigateTo }) {
           })}
         </div>
       </div>
+
+      <br />
+
+      <SegmentForm
+        view="filters"
+        types={filters.types}
+        directions={filters.directions}
+        elevations={filters.elevations}
+        dispatch={dispatchFilters}
+      />
     </Panel>
   );
 }

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import Leg from "./Leg";
-import { Selections } from "../../App";
+import { FilterContext } from "../../App";
 import { getBackgroundColor, getRouteBounds } from "../../utils/routes";
 import { displayDistance, displayPercent } from "../../utils/strings";
 import { TYPES } from "../../utils/segmentTypes";
@@ -8,7 +8,8 @@ import CloseIcon from "../icons/CloseIcon";
 import ZoomToIcon from "../icons/ZoomToIcon";
 
 export default function RouteDetail({ mapRef }) {
-  const { selectedRoute, selectRoute, highlightRoute } = useContext(Selections);
+  const { selectedRoute, selectRoute, highlightRoute } =
+    useContext(FilterContext);
   const {
     name,
     legs,

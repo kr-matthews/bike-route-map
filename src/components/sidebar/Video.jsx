@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Selections } from "../../App";
+import { FilterContext } from "../../App";
 import { COLOUR_NO_VIDEO, COLOUR_VIDEO } from "../../utils/constants";
 import { displayDistance } from "../../utils/strings";
 import { displayDirection } from "../../utils/videos";
@@ -7,7 +7,7 @@ import startIcon from "../../images/marker-green.svg";
 import "./toggleSwitch.css";
 
 export default function Video({ video, direction }) {
-  const { selectedVideo, selectVideo } = useContext(Selections);
+  const { selectedVideo, selectVideo } = useContext(FilterContext);
   const isShowing = video.id === selectedVideo?.id;
   const backgroundColor = isShowing ? COLOUR_VIDEO : COLOUR_NO_VIDEO;
 

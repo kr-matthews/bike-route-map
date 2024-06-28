@@ -3,7 +3,7 @@ import { MapContainer } from "react-leaflet";
 import { SEGMENTS } from "../../data/segments";
 import { DEFAULT_BOUNDS } from "../../utils/map";
 import { getRouteBounds } from "../../utils/routes";
-import { Selections } from "../../App";
+import { FilterContext } from "../../App";
 import CurrentLocation from "./CurrentLocation";
 import PanesAndTiles from "./PanesAndTiles";
 import PolylineCreator from "./PolylineCreator";
@@ -11,7 +11,7 @@ import Segment from "./Segment";
 import "./map.css";
 
 export default function MainMap({ mapRef, setMapRef, fullWidth = false }) {
-  const { selectRoute, selectedRoute } = useContext(Selections);
+  const { selectRoute, selectedRoute } = useContext(FilterContext);
 
   const mapBounds = selectedRoute
     ? getRouteBounds(selectedRoute.name)

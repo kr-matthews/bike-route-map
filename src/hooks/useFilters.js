@@ -8,8 +8,6 @@ import {
 } from "../utils/segmentTypes";
 import { getAugmentedVideo, getVideo } from "../utils/videos";
 import { getAugmentedRoute, getRoute } from "../utils/routes";
-import { DEFAULT_TILE_LAYER } from "../utils/map";
-import useSavedState from "./useSavedState";
 import { useIncompleteVideoView } from "./useIncompleteVideoView";
 
 const updateSearchParams = (searchParams, keyValues) => {
@@ -27,11 +25,11 @@ const updateSearchParams = (searchParams, keyValues) => {
   );
 };
 
-const selectedReducer = (state, action) => {
+const filterReducer = (state, action) => {
   switch (action.type) {
     case "select-route":
       if (state.selectedRouteName === action.routeName) {
-        return initialSelections(new URLSearchParams());
+        return initialFilters(new URLSearchParams());
       } else {
         return {
           ...state,
@@ -55,11 +53,11 @@ const selectedReducer = (state, action) => {
       };
 
     case "reset":
-      return initialSelections(new URLSearchParams());
+      return initialFilters(new URLSearchParams());
   }
 };
 
-const initialSelections = (searchParams) => ({
+const initialFilters = (searchParams) => ({
   selectedRouteName: getRoute(decodeURIComponent(searchParams.get("route")))
     ?.name,
   selectedVideoId: getVideo(decodeURIComponent(searchParams.get("video")))?.id,
@@ -117,7 +115,7 @@ const defaultFilters = (allOn) => ({
   videos: undefined, // using true, false, and undefined is probably a bad idea...
 });
 
-export default function useSelections() {
+export default function useFilters() {
   // search params
   const searchParams = useMemo(
     () => new URLSearchParams(window.location.search),
@@ -128,9 +126,9 @@ export default function useSelections() {
 
   const [highlightedRouteName, setHighlightedRouteName] = useState(null);
   const [{ selectedRouteName, selectedVideoId }, dispatchSelected] = useReducer(
-    selectedReducer,
+    filterReducer,
     searchParams,
-    initialSelections
+    initialFilters
   );
 
   useEffect(() => {
@@ -156,13 +154,6 @@ export default function useSelections() {
     (routeName, videoId) =>
       dispatchSelected({ type: "select-route-video", routeName, videoId }),
     []
-  );
-
-  // tiles
-
-  const [tileLayerKey, setTileLayerKey] = useSavedState(
-    "tile_layer",
-    DEFAULT_TILE_LAYER
   );
 
   // filters
@@ -232,8 +223,6 @@ export default function useSelections() {
     selectVideo: selectVideoId,
     selectRouteAndVideo: selectRouteNameAndVideoId,
     isSegmentHidden,
-    tileLayerKey,
-    setTileLayerKey,
     filters,
     dispatchFilters,
   };

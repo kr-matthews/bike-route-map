@@ -1,7 +1,7 @@
 import { Fragment, useContext, useMemo } from "react";
 import Polyline from "./Polyline";
 import VideoMarkers from "./VideoMarkers";
-import { Selections } from "../../App";
+import { FilterContext } from "../../App";
 import {
   createBorderPathOptions,
   createPathOptions,
@@ -23,7 +23,7 @@ export default function Segment({ segment }) {
     selectedVideo,
     selectRouteAndVideo,
     isSegmentHidden,
-  } = useContext(Selections);
+  } = useContext(FilterContext);
 
   const primaryRouteName = routeNames?.find((x) => x) || null;
   const hasMultipleRoutes = (routeNames?.length ?? 0) > 1;
