@@ -70,6 +70,15 @@ export default function Settings({ navigateTo }) {
               </label>
             );
           })}
+          <br />
+          {defaultSpeed === 4 && (
+            <div style={{ paddingTop: 5 }}>
+              <em>
+                Use the YouTube built-in controls to 2x speed, for an overall
+                effect of 8x.
+              </em>
+            </div>
+          )}
         </div>
       </div>
     </Panel>
