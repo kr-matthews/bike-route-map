@@ -37,6 +37,8 @@ export default function Video({ video, direction }) {
 
   const updateVideo = () => selectVideo(video.id);
 
+  const url = createUrl(video, showingTimeLapse);
+
   return (
     <span
       style={{
@@ -90,9 +92,10 @@ export default function Video({ video, direction }) {
       </div>
       <div>
         <iframe
+          key={url}
           width="275px"
           height="155px"
-          src={createUrl(video, defaultSpeed)}
+          src={url}
           // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
           title="Embedded YouTube"
@@ -120,7 +123,7 @@ function SpeedDropdown({ options, selected, setSelected }) {
 
 const YOUTUBE_PREFIX = "https://www.youtube.com/embed/";
 
-function createUrl(video, defaultSpeed) {
-  const id = (defaultSpeed === 4 && video.tlId) || video.id;
+function createUrl(video, showingTimeLapse) {
+  const id = showingTimeLapse ? video.tlId : video.id;
   return `${YOUTUBE_PREFIX}${id}`;
 }
