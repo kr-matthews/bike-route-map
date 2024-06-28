@@ -131,6 +131,7 @@ const VIDEOS = {
   },
   brunetteFraserSb: {
     id: "lzabq1p-VrM",
+    tlId: "ydCTRDMB1Cc",
     date: new Date("2024 06 23"),
     minutes: 45,
   },
@@ -436,6 +437,7 @@ const VIDEOS = {
   },
   highlandParkLineEb: {
     id: "_R6UzzZBKpw",
+    tlId: "h6hcHD6QgcU",
     date: new Date("2024 03 20"),
     minutes: 8,
   },
@@ -681,6 +683,7 @@ const VIDEOS = {
   },
   ontarioSb: {
     id: "XU7fXW-9oAk",
+    tlId: "8HuCZdf4q84",
     date: new Date("2024 06 24"),
     minutes: 22,
   },
@@ -1021,6 +1024,7 @@ const VIDEOS = {
   },
   willingdonLinearNb: {
     id: "zP2p1D3rEPo",
+    tlId: "ObZ8WguAlyE",
     date: new Date("2024 06 23"),
     minutes: 6,
   },
