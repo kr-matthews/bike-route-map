@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { FilterContext, SettingContext } from "../../App";
 import { COLOUR_NO_VIDEO, COLOUR_VIDEO } from "../../utils/constants";
 import { displayDistance } from "../../utils/strings";
@@ -6,18 +6,34 @@ import { displayDirection } from "../../utils/videos";
 import startIcon from "../../images/marker-green.svg";
 import "./toggleSwitch.css";
 
+const trivialOptions = ["1x"];
+const bothOptions = ["1x", "4x"];
+
 export default function Video({ video, direction }) {
   const { selectedVideo, selectVideo } = useContext(FilterContext);
   const { defaultSpeed } = useContext(SettingContext);
   const isShowing = video.id === selectedVideo?.id;
   const backgroundColor = isShowing ? COLOUR_VIDEO : COLOUR_NO_VIDEO;
 
+  const hasTimeLapse = Boolean(video.tlId);
+  const speedOptions = hasTimeLapse ? bothOptions : trivialOptions;
+  const [showingTimeLapse, setShowingTimeLapse] = useState(
+    hasTimeLapse && defaultSpeed === 4
+  );
+
+  // useEffect(
+  //   function resetSpeed() {
+  //     setShowingTimeLapse(hasTimeLapse && defaultSpeed === 4);
+  //   },
+  //   [hasTimeLapse, defaultSpeed]
+  // );
+
   const dateText = video.date.toLocaleString("en-US", {
     month: "short",
     year: "numeric",
   });
   const durationText = `${video.minutes} min`;
-  const speedText = `${video.tlId && defaultSpeed === 4 ? 4 : 1}x speed`;
+  const speedTextSuffix = ` speed`;
 
   const updateVideo = () => selectVideo(video.id);
 
@@ -43,7 +59,15 @@ export default function Video({ video, direction }) {
           </span>
           <br />
           <span style={{ fontSize: "90%" }}>
-            {displayDistance(video.distance)}, {durationText}, {speedText}
+            {displayDistance(video.distance)}, {durationText},{" "}
+            {
+              <SpeedDropdown
+                options={speedOptions}
+                selected={showingTimeLapse ? "4x" : "1x"}
+                setSelected={(s) => setShowingTimeLapse(s === "4x")}
+              />
+            }
+            {speedTextSuffix}
           </span>
         </span>
         <span
@@ -75,6 +99,22 @@ export default function Video({ video, direction }) {
         />
       </div>
     </span>
+  );
+}
+
+// could/should combine into ListTypeDropdown
+function SpeedDropdown({ options, selected, setSelected }) {
+  return (
+    <select
+      style={{ borderRadius: 5 }}
+      value={selected}
+      onChange={(e) => setSelected(e.target.value)}
+      disabled={options.length === 1}
+    >
+      {options.map((option) => (
+        <option key={option}>{option}</option>
+      ))}
+    </select>
   );
 }
 
