@@ -7,6 +7,8 @@ import legendIcon from "../../images/question.svg";
 import legendSelectedIcon from "../../images/questionDark.svg";
 import filtersIcon from "../../images/filter.svg";
 import filtersSelectedIcon from "../../images/filterDark.svg";
+import settingsIcon from "../../images/cog.svg";
+import settingsSelectedIcon from "../../images/cogDark.svg";
 
 export default function PanelIcon({ view, navigateTo, isSelected }) {
   return (
@@ -39,6 +41,9 @@ const getSrc = (view, isSelected) => {
 
     case VIEWS.filters.key:
       return isSelected ? filtersSelectedIcon : filtersIcon;
+
+    case VIEWS.settings.key:
+      return isSelected ? settingsSelectedIcon : settingsIcon;
 
     default:
       return isSelected ? legendSelectedIcon : legendIcon;
