@@ -36,7 +36,8 @@ export default function Routes({ navigateTo, mapRef }) {
   const routesToShow = useMemo(
     () =>
       Object.values(AUGMENTED_ROUTES).filter(
-        ({ name, cities, segmentBounds }) =>
+        ({ name, cities, segmentBounds, isGap }) =>
+          !isGap &&
           isSubsequence(
             removeWhiteSpaces(searchText.toLowerCase()),
             name.toLowerCase()

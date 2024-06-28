@@ -17,6 +17,8 @@ export default function RouteDetail({ mapRef }) {
     oneWayDistance,
     isOneWay,
     weightedProportions,
+    isIncomplete,
+    isGap,
   } = selectedRoute;
 
   const isAllOneWay = bidirectionalDistance === 0;
@@ -76,7 +78,7 @@ export default function RouteDetail({ mapRef }) {
             onMouseOver={() => highlightRoute(name)}
             onMouseOut={() => highlightRoute(null)}
           >
-            {name}
+            {isGap ? <em>{name}</em> : name}
           </span>
         </h2>
         <h4
@@ -103,10 +105,16 @@ export default function RouteDetail({ mapRef }) {
         <CloseIcon onClick={() => selectRoute(null)} />
 
         <div style={{ overflow: "auto" }}>
-          {selectedRoute.isIncomplete && (
+          {isIncomplete && (
             <p style={{ paddingLeft: "1em", paddingRight: "1em" }}>
               Note: The data for this route is incomplete and may extend further
               than is currently drawn on the map.
+            </p>
+          )}
+          {isGap && (
+            <p style={{ paddingLeft: "1em", paddingRight: "1em" }}>
+              Note: This is a <em>gap</em> in the official bike network, and is{" "}
+              <b>not</b> an official bike route.
             </p>
           )}
           {legs.map((leg) => (
