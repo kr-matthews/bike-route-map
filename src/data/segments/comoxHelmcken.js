@@ -87,6 +87,7 @@ export const COMOX_HELMCKEN = [
   {
     description: "helmcken unofficial part",
     type: "shared",
+    hideUnlessVideo: true,
     videoIds: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
     positions: [
       HORNBY_HELMCKEN_SE,
@@ -100,6 +101,7 @@ export const COMOX_HELMCKEN = [
   {
     description: "richards to homer",
     type: "shared",
+    hideUnlessVideo: true,
     videoIds: [VIDEOS.comoxHelmckenEb.id],
     videoIdsEndAtEnd: [VIDEOS.comoxHelmckenEb.id],
     positions: [RICHARDS_HELMCKEN, HOMER_HELMCKEN],
@@ -107,6 +109,7 @@ export const COMOX_HELMCKEN = [
   {
     description: "tail end",
     type: "shared",
+    hideUnlessVideo: true,
     positions: [HOMER_HELMCKEN, [49.27592, -123.12107], MAINLAND_HELMCKEN],
   },
 ];
