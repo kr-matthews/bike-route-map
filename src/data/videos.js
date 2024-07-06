@@ -235,6 +235,12 @@ const VIDEOS = {
     date: new Date("2024 03 21"),
     minutes: 23,
   },
+  chancellorWb: {
+    id: "fJ6OU2uS8C0",
+    tlId: "8BRasaHwpzQ",
+    date: new Date("2024 07 01"),
+    minutes: 8,
+  },
   chilcoSb: {
     id: "WZIDTdlVxZY",
     date: new Date("2023 08 03"),
@@ -300,15 +306,33 @@ const VIDEOS = {
     date: new Date("2023 08 11"),
     minutes: 10,
   },
+  dunbarSb: {
+    id: "xYFCc6ew7Mg",
+    tlId: "7bLJtRLUwTg",
+    date: new Date("2024 07 02"),
+    minutes: 9,
+  },
   dunsmuirWb: {
     id: "ILxsM_6s064",
     date: new Date("2024 03 29"),
+    minutes: 7,
+  },
+  eastMallSb: {
+    id: "cBhgHsApJRI",
+    tlId: "Io9vab3Eweo",
+    date: new Date("2024 07 01"),
     minutes: 7,
   },
   ewenWb: {
     id: "-7uHis88EXU",
     date: new Date("2024 03 13"),
     minutes: 8,
+  },
+  fortyFifthEb: {
+    id: "KMAAeyfUP5I",
+    tlId: "EBiR-jX7-mM",
+    date: new Date("2024 07 02"),
+    minutes: 35,
   },
   fortyFifthWb: {
     id: "LWue1j2Ir4c",
@@ -465,6 +489,18 @@ const VIDEOS = {
     id: "QemciyuJDOQ",
     date: new Date("2024 03 13"),
     minutes: 4,
+  },
+  imperialNb: {
+    id: "qjpT_0M2VYE",
+    tlId: "85t130QEPFI",
+    date: new Date("2024 07 01"),
+    minutes: 5,
+  },
+  imperialPowerlineEb: {
+    id: "uIMxmumoE1Q",
+    tlId: "ppwMddxwSkI",
+    date: new Date("2024 07 01"),
+    minutes: 8,
   },
   invernessSb: {
     id: "eim5zDSdA2I",

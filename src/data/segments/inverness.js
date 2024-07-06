@@ -78,7 +78,11 @@ export const INVERNESS = [
     routeNames: [ROUTES.inverness.name, ROUTES.fortyFifth.name],
     description: "45th",
     type: "quiet",
-    videoIds: [VIDEOS.invernessSb.id, VIDEOS.fortyFifthWb.id],
+    videoIds: [
+      VIDEOS.invernessSb.id,
+      VIDEOS.fortyFifthWb.id,
+      VIDEOS.fortyFifthEb.id,
+    ],
     positions: [INVERNESS_45TH, INVERNESS_47TH],
   },
   {

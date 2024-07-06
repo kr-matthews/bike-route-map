@@ -35,13 +35,23 @@ const VINE_33RD = [49.24221, -123.15964];
 export const RIDGEWAY = [
   {
     routeNames: [ROUTES.ridgeway.name],
-    description: "off broadway to 16th",
+    description: "off broadway to 15th",
     type: "quiet",
-    videoIds: [VIDEOS.ridgewayWb.id],
+    videoIds: [VIDEOS.ridgewayWb.id, VIDEOS.imperialNb.id],
+    videoIdsEndAtStart: [VIDEOS.imperialNb.id],
     positions: [
       DISCOVERY_8TH,
       [49.26374, -123.20305],
       [49.2619, -123.20309],
+      DISCOVER_15TH,
+    ],
+  },
+  {
+    routeNames: [ROUTES.ridgeway.name],
+    description: "15th and to 16th",
+    type: "quiet",
+    videoIds: [VIDEOS.ridgewayWb.id],
+    positions: [
       DISCOVER_15TH,
       [49.25915, -123.20015],
       [49.25911, -123.1971],
@@ -215,7 +225,11 @@ export const RIDGEWAY = [
     routeNames: [ROUTES.ridgeway.name],
     description: "nanaimo to sunrise",
     type: "quiet",
-    videoIds: [VIDEOS.ridgewayWb.id, VIDEOS.fortyFifthWb.id],
+    videoIds: [
+      VIDEOS.ridgewayWb.id,
+      VIDEOS.fortyFifthWb.id,
+      VIDEOS.fortyFifthEb.id,
+    ],
     positions: [NANAIMO_45TH, [49.22939, -123.05492], WALES_45TH, VIVIAN_45TH],
   },
   {
@@ -225,6 +239,7 @@ export const RIDGEWAY = [
     videoIds: [
       VIDEOS.ridgewayWb.id,
       VIDEOS.fortyFifthWb.id,
+      VIDEOS.fortyFifthEb.id,
       VIDEOS.sunriseNb.id,
     ],
     positions: [VIVIAN_45TH, EARLES_45TH],
@@ -233,8 +248,13 @@ export const RIDGEWAY = [
     routeNames: [ROUTES.ridgeway.name],
     description: "sunrise to boundary",
     type: "quiet",
-    videoIds: [VIDEOS.ridgewayWb.id, VIDEOS.fortyFifthWb.id],
+    videoIds: [
+      VIDEOS.ridgewayWb.id,
+      VIDEOS.fortyFifthWb.id,
+      VIDEOS.fortyFifthEb.id,
+    ],
     videoIdsStartAtEnd: [VIDEOS.ridgewayWb.id, VIDEOS.fortyFifthWb.id],
+    videoIdsEndAtEnd: [VIDEOS.fortyFifthEb.id],
     positions: [
       EARLES_45TH,
       KILLARNEY_45TH,

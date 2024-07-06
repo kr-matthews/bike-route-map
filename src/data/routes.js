@@ -92,7 +92,14 @@ export const ROUTES = {
   fortyFifth: {
     name: "45th",
     cities: [VANCOUVER],
-    legs: [{ videos: { westbound: VIDEOS.fortyFifthWb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.fortyFifthEb,
+          westbound: VIDEOS.fortyFifthWb,
+        },
+      },
+    ],
   },
   sixtySeventh: {
     name: "67th",
@@ -414,7 +421,7 @@ export const ROUTES = {
   chancellor: {
     name: "Chancellor Blvd",
     cities: [UBC],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { westbound: VIDEOS.chancellorWb } }],
   },
   chilco: {
     name: "Chilco",
@@ -489,7 +496,9 @@ export const ROUTES = {
   dunbar: {
     name: "Dunbar St",
     cities: [VANCOUVER],
-    legs: [{ videos: { northbound: VIDEOS.dunbarNb } }],
+    legs: [
+      { videos: { northbound: VIDEOS.dunbarNb, southbound: VIDEOS.dunbarSb } },
+    ],
   },
   dunsmuir: {
     name: "Dunsmuir",
@@ -506,7 +515,7 @@ export const ROUTES = {
   eastMall: {
     name: "East Mall",
     cities: [UBC],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.eastMallSb } }],
   },
   ewen: {
     name: "Ewen Ave Greenway",
@@ -698,13 +707,13 @@ export const ROUTES = {
   imperial: {
     name: "Imperial Dr",
     cities: [VANCOUVER],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.imperialNb } }],
   },
   imperialPowerline: {
     name: "Imperial Trail/Powerline Trail",
     shortName: "Imperial/Powerline",
     cities: [UBC],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.imperialPowerlineEb } }],
   },
   inverness: {
     name: "Inverness",

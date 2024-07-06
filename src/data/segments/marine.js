@@ -614,11 +614,19 @@ export const MARINE = [
   },
   {
     routeNames: [ROUTES.marineNw.name],
+    description: "chancellor crossing east mall north side",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [VIDEOS.chancellorWb.id, VIDEOS.eastMallSb.id],
+    videoIdsStartAtStart: [VIDEOS.eastMallSb.id],
+    positions: [MARINE_CHANCELLOR_NE, MARINE_CHANCELLOR_NW],
+  },
+  {
+    routeNames: [ROUTES.marineNw.name],
     description: "chancellor to cecil-ish",
     type: "painted",
     oneWay: "required",
     positions: [
-      MARINE_CHANCELLOR_NE,
       MARINE_CHANCELLOR_NW,
       [49.271, -123.2544],
       [49.27067, -123.25504],

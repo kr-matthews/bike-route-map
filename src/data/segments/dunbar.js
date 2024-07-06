@@ -149,6 +149,8 @@ export const DUNBAR = [
     description: "16th: wb dunbar to dunbar",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.dunbarSb.id],
+    videoIdsStartAtStart: [VIDEOS.dunbarSb.id],
     positions: [[49.25799, -123.18409], DUNBAR_16TH_NE],
   },
   {
@@ -157,6 +159,7 @@ export const DUNBAR = [
     type: "shared",
     oneWay: "required",
     hideArrows: true,
+    videoIds: [VIDEOS.dunbarSb.id],
     positions: [
       DUNBAR_16TH_NE,
       [49.25796, -123.18517],
@@ -169,6 +172,7 @@ export const DUNBAR = [
     description: "sb: 16th to beyond 18th",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.dunbarSb.id],
     positions: [DUNBAR_16TH_SW, DUNBAR_18TH_W, DUNBAR_SB_BEYOND_18TH],
   },
   {
@@ -176,6 +180,7 @@ export const DUNBAR = [
     description: "sb: beyond 16th to before king edward",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.dunbarSb.id],
     positions: [
       DUNBAR_SB_BEYOND_18TH,
       [49.25559, -123.1852],
@@ -189,6 +194,7 @@ export const DUNBAR = [
     description: "sb: crossing king edward ",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.dunbarSb.id],
     positions: [DUNBAR_SB_BEFORE_KING_EDWARD, DUNBAR_SB_AFTER_KING_EDWARD],
   },
   {
@@ -196,6 +202,7 @@ export const DUNBAR = [
     description: "sb: after king edward to 40th",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.dunbarSb.id],
     positions: [
       DUNBAR_SB_AFTER_KING_EDWARD,
       [49.24808, -123.18527],
@@ -213,6 +220,8 @@ export const DUNBAR = [
     description: "sb: 40th to marine",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.dunbarSb.id],
+    videoIdsEndAtEnd: [VIDEOS.dunbarSb.id],
     positions: [
       DUNBAR_40TH_W,
       [49.23478, -123.18541],
