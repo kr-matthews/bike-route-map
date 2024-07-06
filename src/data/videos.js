@@ -303,6 +303,7 @@ const VIDEOS = {
   },
   dunbarNb: {
     id: "jonrkkkL57o",
+    tlId: "5LyFk-e2fY4",
     date: new Date("2023 08 11"),
     minutes: 10,
   },
@@ -336,6 +337,7 @@ const VIDEOS = {
   },
   fortyFifthWb: {
     id: "LWue1j2Ir4c",
+    tlId: "NftWfSLHSsQ",
     date: new Date("2023 07 22"),
     minutes: 31,
   },
@@ -569,11 +571,13 @@ const VIDEOS = {
   },
   lougheedEb: {
     id: "aRoGpCGsuS8",
+    tlId: "KiE-ElJFG-Y",
     date: new Date("2024 05 25"),
     minutes: 58,
   },
   lougheedWb: {
     id: "6sbSPyViN18",
+    tlId: "eQzV3IEA8h4",
     date: new Date("2024 05 26"),
     minutes: 52,
   },
@@ -714,6 +718,7 @@ const VIDEOS = {
   },
   ontarioNb: {
     id: "ZWmusAetxP0",
+    tlId: "SRzbXColQ-8",
     date: new Date("2023 10 07"),
     minutes: 24,
   },
