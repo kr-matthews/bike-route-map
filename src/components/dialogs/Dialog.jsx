@@ -1,12 +1,10 @@
-import { LIGHT_GREEN } from "../../utils/colours";
-
-export default function Dialog({ isOpen = true, children }) {
+export default function Dialog({ isOpen = true, backgroundColor, children }) {
   return (
     <dialog
       open={isOpen}
       style={{
         zIndex: 1000,
-        backgroundColor: LIGHT_GREEN,
+        backgroundColor,
         marginTop: "1em",
         marginLeft: "auto",
         marginRight: "auto",

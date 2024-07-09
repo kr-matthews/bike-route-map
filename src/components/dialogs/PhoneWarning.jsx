@@ -8,9 +8,10 @@ export default function PhoneWarning() {
   return (
     <Dialog isOpen={isOpen}>
       <p>
-        Your screen is too narrow to fit the sidebar, so only the map is shown.
-        Please use a larger device to see the legend, to see a list of routes,
-        to access embedded videos of routes, and more.
+        Your screen is too narrow to fit the sidebar, so you're only getting
+        limited functionality. Please use a larger device to see the legend, see
+        a list of routes, apply filters to the map, change the map background,
+        and more.
       </p>
       <p style={{ color: "red" }}>{disclaimer}</p>
       <button onClick={() => setIsOpen(false)}>Close</button>
