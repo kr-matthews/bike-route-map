@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { disclaimer } from "../utils/strings";
+import { disclaimer } from "../../utils/strings";
+import Dialog from "./Dialog";
 
 export default function PhoneWarning() {
   const [isOpen, setIsOpen] = useState(true);
 
   return (
-    <dialog open={isOpen} style={{ zIndex: 900, margin: "5em" }}>
+    <Dialog isOpen={isOpen}>
       <p>
         Your screen is too narrow to fit the sidebar, so only the map is shown.
         Please use a larger device to see the legend, to see a list of routes,
@@ -13,6 +14,6 @@ export default function PhoneWarning() {
       </p>
       <p style={{ color: "red" }}>{disclaimer}</p>
       <button onClick={() => setIsOpen(false)}>Close</button>
-    </dialog>
+    </Dialog>
   );
 }

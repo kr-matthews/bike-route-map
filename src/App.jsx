@@ -1,10 +1,10 @@
 import { createContext, useState } from "react";
 import MainMap from "./components/map/MainMap";
+import PhoneDialogs from "./components/dialogs/PhoneDialogs";
 import Sidebar from "./components/sidebar/Sidebar";
 import useFilters from "./hooks/useFilters";
 import useSettings from "./hooks/useSettings";
 import { useHiddenParser } from "./hooks/useHiddenParser";
-import PhoneWarning from "./components/PhoneWarning";
 
 export const SettingContext = createContext();
 export const FilterContext = createContext();
@@ -29,7 +29,11 @@ export default function App() {
             setMapRef={setMapRef}
             fullWidth={isScreenTooNarrow}
           />
-          {isScreenTooNarrow ? <PhoneWarning /> : <Sidebar mapRef={mapRef} />}
+          {isScreenTooNarrow ? (
+            <PhoneDialogs mapRef={mapRef} />
+          ) : (
+            <Sidebar mapRef={mapRef} />
+          )}
         </div>
       </FilterContext.Provider>
     </SettingContext.Provider>
