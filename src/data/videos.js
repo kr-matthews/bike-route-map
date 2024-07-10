@@ -551,6 +551,7 @@ const VIDEOS = {
   },
   lakesNb: {
     id: "hR8zZDWbVV8",
+    tlId: "iJrl8LhEik4",
     date: new Date("2024 03 20"),
     minutes: 33,
   },
@@ -810,6 +811,7 @@ const VIDEOS = {
   },
   ridgewayWb: {
     id: "YFKP-TBo8RE",
+    tlId: "DaA041GKnIA",
     date: new Date("2024 02 02"),
     minutes: 53,
   },
@@ -895,6 +897,7 @@ const VIDEOS = {
   },
   seasideStanleyPark: {
     id: "6YRDnkizY74",
+    tlId: "L2_8Q25b1wA",
     date: new Date("2024 04 26"),
     minutes: 24,
   },
@@ -1055,6 +1058,7 @@ const VIDEOS = {
   },
   westminsterWb: {
     id: "iiRbl0nYp2E",
+    tlId: "YJG8htu0cNc",
     date: new Date("2024 04 23"),
     minutes: 36,
   },
