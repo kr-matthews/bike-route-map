@@ -5,6 +5,7 @@ import Video from "./Video";
 
 export default function Leg({ leg }) {
   const hasNoVideos = Object.entries(leg.videos).length === 0;
+  const isScreenTooNarrow = window.innerWidth < 800;
 
   return (
     <>
@@ -19,15 +20,12 @@ export default function Leg({ leg }) {
         {leg.name}
       </h3>
 
-      {/* {distance && (
-        <div
-          style={{ paddingBottom: "4px", textAlign: "center", fontSize: "90%" }}
-        >
-          <span>{distanceText}</span>
-        </div>
-      )} */}
-
-      <div style={{ display: "flex", marginBottom: "4px" }}>
+      <div
+        style={{
+          display: isScreenTooNarrow ? "inline-grid" : "flex",
+          marginBottom: "4px",
+        }}
+      >
         {hasNoVideos && (
           <p style={{ paddingLeft: "1em" }}>No videos, yet. Come back later.</p>
         )}

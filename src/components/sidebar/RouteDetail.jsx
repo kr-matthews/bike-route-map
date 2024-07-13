@@ -72,6 +72,8 @@ export default function RouteDetail({ mapRef }) {
             textAlign: "center",
             marginBottom: "0px",
             marginTop: "0.5em",
+            paddingLeft: "1.5em",
+            paddingRight: "1.5em",
           }}
         >
           <span
