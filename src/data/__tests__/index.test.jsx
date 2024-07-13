@@ -139,4 +139,16 @@ describe("data", () => {
     ];
     expect(uniqueVideoIds).toHaveLength(Object.values(VIDEOS).length);
   });
+
+  test("no duplicate time-lapse video ids", () => {
+    const tlVideoIds = Object.values(VIDEOS)
+      .map(({ tlId }) => tlId)
+      .filter(Boolean);
+    const uniqueTlVideoIds = [...new Set(tlVideoIds)];
+    expect(uniqueTlVideoIds).toHaveLength(tlVideoIds.length);
+  });
+
+  test("time-lapse ids are distinct from corresponding id", () => {
+    Object.values(VIDEOS).forEach(({ id, tlId }) => expect(id !== tlId));
+  });
 });
