@@ -9,6 +9,11 @@ const VIDEOS = {
     date: new Date("2024 04 26"),
     minutes: 2,
   },
+  alberniWb: {
+    id: "yYp4Ck6q-_I",
+    date: new Date("2024 07 09"),
+    minutes: 3,
+  },
   alderNb: {
     id: "ixJ03H36AII",
     date: new Date("2023 08 12"),
@@ -134,6 +139,11 @@ const VIDEOS = {
     tlId: "ydCTRDMB1Cc",
     date: new Date("2024 06 23"),
     minutes: 45,
+  },
+  burnabyEb: {
+    id: "7d3NkwUIWMI",
+    date: new Date("2024 07 09"),
+    minutes: 5,
   },
   burnabyWb: {
     id: "oTdJLOvaH8g",
@@ -278,6 +288,7 @@ const VIDEOS = {
   },
   crosstownRichmondWb: {
     id: "m_ICnCiIZp8",
+    tlId: "ppo7N7Tmhds",
     date: new Date("2024 05 14"),
     minutes: 14,
   },
@@ -541,13 +552,20 @@ const VIDEOS = {
   },
   knightStBridgeNb: {
     id: "jHY8amhWxyU",
+    tlId: "TvSAqBLCwns",
     date: new Date("2024 04 13"),
     minutes: 10,
   },
   knightStBridgeSb: {
     id: "wzeQhznjo6U",
+    tlId: "5-dXZkHYnpk",
     date: new Date("2023 10 03"),
     minutes: 7,
+  },
+  knightStBridgeVia64th: {
+    id: "GOasJlkTru4",
+    date: new Date("2024 07 06"),
+    minutes: 2,
   },
   lakesNb: {
     id: "hR8zZDWbVV8",
@@ -667,15 +685,25 @@ const VIDEOS = {
     date: new Date("2023 07 05"),
     minutes: 6,
   },
+  no2Nb: {
+    id: "zirY_YbY5AY",
+    date: new Date("2024 05 28"),
+    minutes: 4,
+  },
   no2BridgeNb: {
     id: "tBc8qFUTNgc",
     date: new Date("2024 05 14"),
     minutes: 5,
   },
-  no2BridgeRdNb: {
-    id: "zirY_YbY5AY",
-    date: new Date("2024 05 28"),
-    minutes: 4,
+  no2BridgeSb: {
+    id: "KeTvk5bW3YI",
+    date: new Date("2024 07 06"),
+    minutes: 2,
+  },
+  no2PathNb: {
+    id: "SOam3GDxRIk",
+    date: new Date("2024 07 06"),
+    minutes: 5,
   },
   no3Nb: {
     id: "HWRL6CPVcSU",
@@ -738,6 +766,12 @@ const VIDEOS = {
     id: "qAg-vWAWIEc",
     date: new Date("2024 02 09"),
     minutes: 7,
+  },
+  parksideNb: {
+    id: "S8K3eXBmERQ",
+    tlId: "0AQWD54Jp2I",
+    date: new Date("2024 07 06"),
+    minutes: 11,
   },
   penderEb: {
     id: "V1_06Q29Yzo",
@@ -803,6 +837,12 @@ const VIDEOS = {
     id: "TE-Q9lsFEsk",
     date: new Date("2024 03 13"),
     minutes: 3,
+  },
+  railwayGreenwaySb: {
+    id: "GVd9Sh3rgE4",
+    tlId: "svGYFsk2en4",
+    date: new Date("2024 07 06"),
+    minutes: 17,
   },
   richardsSb: {
     id: "1Frtbn89JgM",
@@ -1086,6 +1126,12 @@ const VIDEOS = {
   windsorNb: {
     id: "azxidzxMgzI",
     date: new Date("2023 09 03"),
+    minutes: 13,
+  },
+  woodwardsSaundersEb: {
+    id: "oy8xm7Oai8w",
+    tlId: "xEr4R0jFcdA",
+    date: new Date("2024 07 06"),
     minutes: 13,
   },
   yorkEb: {

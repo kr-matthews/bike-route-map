@@ -5,7 +5,7 @@ import { VIDEOS } from "./videos";
 // Burnaby: sprott @ hwy 1
 // SFU:
 // UBC: (extend agronomy (toronto), acadia?)
-// Richmond: south dyke; railway later continuation, and around that;
+// Richmond: south dyke; ...and around steveston
 // YVR: ferguson; inglis; other paths...; ...more
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
@@ -129,7 +129,11 @@ export const ROUTES = {
   alberni: {
     name: "Alberni St",
     cities: [VANCOUVER],
-    legs: [{ videos: { eastbound: VIDEOS.alberniEb } }],
+    legs: [
+      {
+        videos: { eastbound: VIDEOS.alberniEb, westbound: VIDEOS.alberniWb },
+      },
+    ],
   },
   alder: {
     name: "Alder",
@@ -278,7 +282,9 @@ export const ROUTES = {
   burnaby: {
     name: "Burnaby",
     cities: [VANCOUVER],
-    legs: [{ videos: { westbound: VIDEOS.burnabyWb } }],
+    legs: [
+      { videos: { eastbound: VIDEOS.burnabyEb, westbound: VIDEOS.burnabyWb } },
+    ],
   },
   burnabyMtnPkwy: {
     name: "Burnaby Mountain Parkway",
@@ -762,11 +768,15 @@ export const ROUTES = {
     cities: [VANCOUVER, RICHMOND],
     legs: [
       {
-        name: "to/from Inverness",
+        name: "between Inverness and Bridgeport Rd",
         videos: {
           northbound: VIDEOS.knightStBridgeNb,
           southbound: VIDEOS.knightStBridgeSb,
         },
+      },
+      {
+        name: "exiting to Borden St via 64th Ave",
+        videos: { northbound: VIDEOS.knightStBridgeVia64th },
       },
     ],
   },
@@ -936,17 +946,24 @@ export const ROUTES = {
   no2: {
     name: "No. 2 Rd",
     cities: [RICHMOND],
-    legs: [{ videos: { northbound: VIDEOS.no2BridgeRdNb } }],
+    legs: [{ videos: { northbound: VIDEOS.no2Nb } }],
   },
   no2Bridge: {
     name: "No. 2 Rd Bridge",
     cities: [RICHMOND],
-    legs: [{ videos: { northbound: VIDEOS.no2BridgeNb } }],
+    legs: [
+      {
+        videos: {
+          northbound: VIDEOS.no2BridgeNb,
+          southbound: VIDEOS.no2BridgeSb,
+        },
+      },
+    ],
   },
   no2Path: {
     name: "No. 2 Rd Path",
     cities: [RICHMOND],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.no2PathNb } }],
   },
   no3: {
     name: "No. 3 Rd",
@@ -1013,7 +1030,7 @@ export const ROUTES = {
   parkside: {
     name: "Parkside",
     cities: [RICHMOND],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.parksideNb } }],
   },
   pender: {
     name: "Pender St",
@@ -1092,7 +1109,7 @@ export const ROUTES = {
   railwayGreenway: {
     name: "Railway Greenway",
     cities: [RICHMOND],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.railwayGreenwaySb } }],
   },
   railway: {
     name: "Railway St",
@@ -1407,10 +1424,10 @@ export const ROUTES = {
     legs: [{ videos: { northbound: VIDEOS.windsorNb } }],
   },
   woodwardsSaunders: {
-    name: "Woodwards Rd/Saunders Rd",
-    shortName: "Woodwards Rd",
+    name: "Woodwards/Saunders",
+    shortName: "Woodwards",
     cities: [RICHMOND],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.woodwardsSaundersEb } }],
   },
   york: {
     name: "York",

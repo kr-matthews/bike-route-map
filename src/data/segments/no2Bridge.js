@@ -1,4 +1,5 @@
 import {
+  LIGHTHOUSE_PLACE_PATH_JOIN,
   NO_2_BRIDGE_SIDEWALK_NE,
   NO_2_RIVER_E_E,
   NO_2_RUSS_BAKER_W,
@@ -72,6 +73,7 @@ export const NO_2_BRIDGE = [
     type: "mixed",
     oneWay: "recommended",
     elevation: 0.5,
+    videoIds: [VIDEOS.no2BridgeSb.id],
     positions: [
       NO_2_RUSS_BAKER_W,
       [49.1785, -123.15528],
@@ -85,6 +87,7 @@ export const NO_2_BRIDGE = [
     type: "mixed",
     oneWay: "recommended",
     elevation: 1,
+    videoIds: [VIDEOS.no2BridgeSb.id],
     positions: [
       SB_ELEVATION_START,
       [49.17792, -123.15586],
@@ -105,10 +108,13 @@ export const NO_2_BRIDGE = [
     type: "mixed",
     oneWay: "recommended",
     elevation: 0.5,
+    videoIds: [VIDEOS.no2BridgeSb.id],
     positions: [
       SB_ELEVATION_END,
       [49.17293, -123.15874],
-      [49.17293, -123.15884],
+      [49.17294, -123.15888],
+      [49.17307, -123.15889],
+      LIGHTHOUSE_PLACE_PATH_JOIN,
     ],
   },
 ];

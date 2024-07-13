@@ -22,6 +22,7 @@ const NORTHBOUND_SPLIT_2 = [49.21086, -123.07478];
 const NORTHBOUND_SPLIT_3 = [49.21116, -123.07553];
 const NORTHBOUND_ELEVATION_START_3 = [49.21073, -123.07697];
 const NORTHBOUND_ELEVATION_END_3 = [49.21135, -123.07695];
+const BEFORE_NB_OFF_RAMP = [49.20929, -123.07705];
 const LOOP_AT_64TH = [49.21195, -123.07652];
 const ALLEY_START = [49.21152, -123.07902];
 
@@ -125,7 +126,7 @@ export const KNIGHT_STREET_BRIDGE = [
   },
   {
     routeNames: [ROUTES.knightStreetBridge.name],
-    description: "nb elevated 2",
+    description: "nb elevated 2a",
     type: "other",
     oneWay: "required",
     elevation: 1,
@@ -134,9 +135,18 @@ export const KNIGHT_STREET_BRIDGE = [
       NORTHBOUND_ELEVATION_START_2,
       [49.20769, -123.07714],
       [49.20871, -123.07707],
-      [49.20929, -123.07705],
-      NORTHBOUND_ELEVATION_END_2,
+      BEFORE_NB_OFF_RAMP,
     ],
+  },
+  {
+    routeNames: [ROUTES.knightStreetBridge.name],
+    description: "nb elevated 2b",
+    type: "other",
+    oneWay: "required",
+    elevation: 1,
+    videoIds: [VIDEOS.knightStBridgeVia64th.id, VIDEOS.knightStBridgeNb.id],
+    videoIdsStartAtStart: [VIDEOS.knightStBridgeVia64th.id],
+    positions: [BEFORE_NB_OFF_RAMP, NORTHBOUND_ELEVATION_END_2],
   },
   {
     routeNames: [ROUTES.knightStreetBridge.name],
@@ -144,7 +154,7 @@ export const KNIGHT_STREET_BRIDGE = [
     type: "other",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.knightStBridgeNb.id],
+    videoIds: [VIDEOS.knightStBridgeVia64th.id, VIDEOS.knightStBridgeNb.id],
     positions: [
       NORTHBOUND_ELEVATION_END_2,
       [49.20954, -123.07697],
@@ -157,6 +167,7 @@ export const KNIGHT_STREET_BRIDGE = [
     type: "mixed",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.knightStBridgeVia64th.id],
     positions: [
       NORTHBOUND_SPLIT_1,
       [49.20969, -123.07704],
@@ -172,6 +183,7 @@ export const KNIGHT_STREET_BRIDGE = [
     type: "other",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.knightStBridgeVia64th.id],
     positions: [NORTHBOUND_ELEVATION_START_3, NORTHBOUND_ELEVATION_END_3],
   },
   {
@@ -180,6 +192,7 @@ export const KNIGHT_STREET_BRIDGE = [
     type: "other",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.knightStBridgeVia64th.id],
     positions: [
       NORTHBOUND_ELEVATION_END_3,
       [49.2118, -123.07695],
@@ -194,6 +207,8 @@ export const KNIGHT_STREET_BRIDGE = [
     description: "64th",
     oneWay: "recommended",
     type: "quiet",
+    videoIds: [VIDEOS.knightStBridgeVia64th.id],
+    videoIdsEndAtEnd: [VIDEOS.knightStBridgeVia64th.id],
     positions: [LOOP_AT_64TH, [49.21198, -123.07642], BORDEN_64TH],
   },
   {

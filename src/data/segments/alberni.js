@@ -43,6 +43,8 @@ export const ALBERNI = [
     description: "wb: cardero to denman",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.alberniWb.id],
+    videoIdsStartAtStart: [VIDEOS.alberniWb.id],
     positions: [CARDERO_ALBERNI_S, WB_LANE_END],
   },
   {
@@ -50,6 +52,7 @@ export const ALBERNI = [
     description: "wb: near denman",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.alberniWb.id],
     positions: [WB_LANE_END, WB_LANE_START],
   },
   {
@@ -57,6 +60,7 @@ export const ALBERNI = [
     description: "wb: denman to chilco",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.alberniWb.id],
     positions: [WB_LANE_START, [49.29405, -123.13718], CHILCO_ALBERNI_E],
   },
 ];

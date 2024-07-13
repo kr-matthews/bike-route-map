@@ -12,7 +12,8 @@ export const BURNABY = [
     routeNames: [ROUTES.burnaby.name],
     description: "primary",
     type: "quiet",
-    videoIds: [VIDEOS.burnabyWb.id],
+    videoIds: [VIDEOS.burnabyEb.id, VIDEOS.burnabyWb.id],
+    videoIdsStartAtStart: [VIDEOS.burnabyEb.id],
     videoIdsEndAtStart: [VIDEOS.burnabyWb.id],
     positions: [
       CARDERO_BURNABY,

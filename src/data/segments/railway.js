@@ -1,14 +1,17 @@
 import {
   RAILWAY_COLBECK_E,
+  RAILWAY_GARRY_NW,
   RAILWAY_GRANVILLE_MIDDLE,
   RAILWAY_GRANVILLE_NW,
   RAILWAY_GRANVILLE_SE,
+  RAILWAY_MONCTON_SW,
   RAILWAY_WILLIAMS_NE,
   RAILWAY_WILLIAMS_NW,
   RAILWAY_WILLIAMS_SE,
   RAILWAY_WOODWARDS_E,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const RAILWAY_GRANVILLE_SW = [49.16223, -123.16949];
 
@@ -46,11 +49,11 @@ export const RAILWAY = [
     type: "painted",
     oneWay: "required",
     positions: [
-      [49.12474, -123.16975],
-      [49.12508, -123.16975],
-      [49.12518, -123.16974],
-      [49.12527, -123.16974],
-      [49.12543, -123.16976],
+      [49.12474, -123.16969],
+      [49.12508, -123.16969],
+      [49.12518, -123.1697],
+      [49.12527, -123.1697],
+      [49.12543, -123.16971],
       [49.1262, -123.16976],
       [49.12934, -123.16976],
       NB_PRE_STEVESTON,
@@ -194,18 +197,34 @@ export const RAILWAY = [
   },
   {
     routeNames: [ROUTES.railway.name],
-    description: "sb: steveston to post-moncton",
+    description: "sb: steveston to garry",
     type: "painted",
     oneWay: "required",
     positions: [
       RAILWAY_STEVESTON_NW,
       [49.13364, -123.16988],
       [49.13188, -123.16989],
-      [49.12933, -123.16989],
+      RAILWAY_GARRY_NW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.railway.name],
+    description: "sb: garry to moncton",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [VIDEOS.railwayGreenwaySb.id],
+    positions: [
+      RAILWAY_GARRY_NW,
       [49.12564, -123.16989],
       [49.12546, -123.16985],
-      [49.12508, -123.16984],
-      [49.12473, -123.16982],
+      RAILWAY_MONCTON_SW,
     ],
+  },
+  {
+    routeNames: [ROUTES.railway.name],
+    description: "sb: post-moncton",
+    type: "painted",
+    oneWay: "required",
+    positions: [RAILWAY_MONCTON_SW, [49.12473, -123.16985]],
   },
 ];

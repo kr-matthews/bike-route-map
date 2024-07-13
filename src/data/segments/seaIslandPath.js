@@ -124,6 +124,8 @@ export const SEA_ISLAND_PATH = [
   {
     description: "sb: path to russ baker",
     type: "mixed",
+    videoIds: [VIDEOS.no2BridgeSb.id],
+    videoIdsStartAtStart: [VIDEOS.no2BridgeSb.id],
     positions: [
       SEA_ISLAND_PATH_PRE_NO_2_W,
       [49.17872, -123.15506],

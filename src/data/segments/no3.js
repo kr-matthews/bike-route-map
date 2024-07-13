@@ -26,6 +26,7 @@ export const NO_3 = [
   {
     description: "connection via buswell from granville",
     type: "shared",
+    oneWay: "recommended",
     hideUnlessVideo: true,
     videoIds: [VIDEOS.no3Nb.id],
     videoIdsStartAtStart: [VIDEOS.no3Nb.id],

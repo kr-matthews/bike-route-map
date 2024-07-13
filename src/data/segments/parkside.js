@@ -4,6 +4,7 @@ import {
   BIRCH_WESTMINSTER_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const WALTER_LEE_S = [49.14448, -123.11973];
 const WALTER_LEE_N = [49.14663, -123.11908];
@@ -14,19 +15,23 @@ const ALDER_ALBERTA = [49.16572, -123.11935];
 export const PARKSIDE = [
   {
     routeNames: [ROUTES.parkside.name],
+    description: "crossing williams",
+    type: "quiet",
+    positions: [ASH_WILLIAMS_S, ASH_WILLIAMS_N],
+  },
+  {
+    routeNames: [ROUTES.parkside.name],
     description: "williams to walter lee",
     type: "quiet",
-    positions: [
-      ASH_WILLIAMS_S,
-      ASH_WILLIAMS_N,
-      [49.14316, -123.11977],
-      WALTER_LEE_S,
-    ],
+    videoIds: [VIDEOS.parksideNb.id],
+    videoIdsStartAtStart: [VIDEOS.parksideNb.id],
+    positions: [ASH_WILLIAMS_N, [49.14316, -123.11977], WALTER_LEE_S],
   },
   {
     routeNames: [ROUTES.parkside.name],
     description: "through walter lee",
     type: "mixed",
+    videoIds: [VIDEOS.parksideNb.id],
     positions: [
       WALTER_LEE_S,
       [49.14449, -123.11932],
@@ -56,6 +61,7 @@ export const PARKSIDE = [
     routeNames: [ROUTES.parkside.name],
     description: "walter lee to granville",
     type: "quiet",
+    videoIds: [VIDEOS.parksideNb.id],
     positions: [
       WALTER_LEE_N,
       [49.14664, -123.11983],
@@ -79,6 +85,7 @@ export const PARKSIDE = [
     routeNames: [ROUTES.parkside.name],
     description: "granville to school",
     type: "mixed",
+    videoIds: [VIDEOS.parksideNb.id],
     positions: [
       ASH_GRANVILLE_NW,
       [49.16289, -123.12018],
@@ -98,6 +105,7 @@ export const PARKSIDE = [
     description: "school nb",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [VIDEOS.parksideNb.id],
     positions: [
       SCHOOL_W,
       [49.16514, -123.11922],
@@ -123,6 +131,8 @@ export const PARKSIDE = [
     routeNames: [ROUTES.parkside.name],
     description: "alberta to westminster",
     type: "quiet",
+    videoIds: [VIDEOS.parksideNb.id],
+    videoIdsEndAtEnd: [VIDEOS.parksideNb.id],
     positions: [
       ALDER_ALBERTA,
       [49.1663, -123.11933],

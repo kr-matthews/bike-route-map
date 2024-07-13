@@ -51,6 +51,8 @@ export const MIDDLE_ARM = [
   {
     description: "no. 2 connection, west half",
     type: "mixed",
+    videoIds: [VIDEOS.no2BridgeSb.id],
+    videoIdsEndAtStart: [VIDEOS.no2BridgeSb.id],
     positions: [NO_2_BRIDGE_W_SPLIT, [49.17398, -123.15906], NO_2_RIVER_W_N],
   },
   {

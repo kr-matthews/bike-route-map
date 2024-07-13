@@ -1,11 +1,15 @@
 import {} from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const NO_2_PATH = [
   {
     routeNames: [ROUTES.no2Path.name],
     description: "all",
     type: "mixed",
+    videoIds: [VIDEOS.no2PathNb.id],
+    videoIdsStartAtStart: [VIDEOS.no2PathNb.id],
+    videoIdsEndAtEnd: [VIDEOS.no2PathNb.id],
     positions: [
       [49.11767, -123.15889],
       [49.11799, -123.15891],
