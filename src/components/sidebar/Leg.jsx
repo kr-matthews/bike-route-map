@@ -1,3 +1,4 @@
+import { WIDTH_BREAKPOINT } from "../../utils/constants";
 import { getAugmentedVideo } from "../../utils/videos";
 import Video from "./Video";
 
@@ -5,7 +6,7 @@ import Video from "./Video";
 
 export default function Leg({ leg }) {
   const hasNoVideos = Object.entries(leg.videos).length === 0;
-  const isScreenTooNarrow = window.innerWidth < 800;
+  const isScreenTooNarrow = window.innerWidth < WIDTH_BREAKPOINT;
 
   return (
     <>

@@ -52,3 +52,7 @@ export const COLOUR_NO_VIDEO = LIGHT_PURPLE;
 
 export const COLOUR_ELEVATED_BORDER = BLACK;
 export const COLOUR_UNDERGROUND_BORDER = ORANGE_BROWN;
+
+// screen
+
+export const WIDTH_BREAKPOINT = 800;

@@ -5,6 +5,7 @@ import Sidebar from "./components/sidebar/Sidebar";
 import useFilters from "./hooks/useFilters";
 import useSettings from "./hooks/useSettings";
 import { useHiddenParser } from "./hooks/useHiddenParser";
+import { WIDTH_BREAKPOINT } from "./utils/constants";
 
 export const SettingContext = createContext();
 export const FilterContext = createContext();
@@ -18,7 +19,7 @@ export default function App() {
   const [mapRef, setMapRef] = useState(null);
 
   // only check on initial page load
-  const [isScreenTooNarrow] = useState(window.innerWidth < 800);
+  const [isScreenTooNarrow] = useState(window.innerWidth < WIDTH_BREAKPOINT);
 
   return (
     <SettingContext.Provider value={settings}>
