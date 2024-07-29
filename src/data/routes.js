@@ -1200,7 +1200,10 @@ export const ROUTES = {
         name: "Kitsilano",
         videos: { westbound: VIDEOS.seasideKitsWb },
       },
-      { name: "Jericho & Spanish Banks", videos: {} },
+      {
+        name: "Jericho & Spanish Banks",
+        videos: { westbound: VIDEOS.seasideJerichoWb },
+      },
     ],
   },
   seasideBypass: {

@@ -150,6 +150,8 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "spanish banks & jericho",
     type: "comfortable",
+    videoIds: [VIDEOS.seasideJerichoWb.id],
+    videoIdsEndAtStart: [VIDEOS.seasideJerichoWb.id],
     positions: [
       SEASIDE_W_END,
       [49.27875, -123.23615],
@@ -264,7 +266,7 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "jericho/kits overlap",
     type: "mixed",
-    videoIds: [VIDEOS.seasideKitsWb.id],
+    videoIds: [VIDEOS.seasideJerichoWb.id, VIDEOS.seasideKitsWb.id],
     videoIdsEndAtStart: [VIDEOS.seasideKitsWb.id],
     positions: [
       THIRD_SEASIDE,
@@ -277,7 +279,8 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "kits: point grey to alma",
     type: "dedicated",
-    videoIds: [VIDEOS.seasideKitsWb.id],
+    videoIds: [VIDEOS.seasideJerichoWb.id, VIDEOS.seasideKitsWb.id],
+    videoIdsStartAtEnd: [VIDEOS.seasideJerichoWb.id],
     positions: [
       SEASIDE_POINT_GREY_W,
       [49.27165, -123.18951],

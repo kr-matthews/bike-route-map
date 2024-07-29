@@ -424,6 +424,7 @@ const VIDEOS = {
   },
   granvilleWb: {
     id: "b9eFnAItgIo",
+    tlId: "aKPBmrm6brE",
     date: new Date("2024 06 17"),
     minutes: 23,
   },
@@ -532,6 +533,7 @@ const VIDEOS = {
   },
   kentWb: {
     id: "S7VZgDfZ4XU",
+    tlId: "GuJGxJipGtw",
     date: new Date("2024 02 04"),
     minutes: 22,
   },
@@ -932,6 +934,7 @@ const VIDEOS = {
   },
   seasideCoalHarbourWb: {
     id: "95bsLG23jgA",
+    tlId: "YwdtIZI_I70",
     date: new Date("2024 04 26"),
     minutes: 7,
   },
@@ -943,13 +946,21 @@ const VIDEOS = {
   },
   seasideFalseCreekCw: {
     id: "ZSsCF2kpicg",
+    tlId: "Mn5YqTM7zMM",
     date: new Date("2024 05 18"),
     minutes: 22,
   },
   seasideKitsWb: {
     id: "htrdfMC4NBg",
+    tlId: "dDcCGlmCLZ4",
     date: new Date("2023 10 09"),
     minutes: 14,
+  },
+  seasideJerichoWb: {
+    id: "7f4if7YfkkU",
+    tlId: "2OadAYsbQRM",
+    date: new Date("2024 07 24"),
+    minutes: 12,
   },
   seaToRiverNb: {
     id: "Fuq2nBBk0IM",
