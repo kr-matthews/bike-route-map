@@ -60,6 +60,12 @@ export const ROUTES = {
     cities: [VANCOUVER],
     legs: [{ videos: { westbound: VIDEOS.fourteenthWb } }],
   },
+  fourteenthGap: {
+    name: "14th Ave Gap",
+    isGap: true,
+    cities: [VANCOUVER],
+    legs: [{ videos: { westbound: VIDEOS.fourteenthGapWb } }],
+  },
   sixteenth: {
     name: "16th Ave",
     cities: [UBC],
@@ -423,6 +429,12 @@ export const ROUTES = {
         videos: { northbound: VIDEOS.centralValleyNWNb },
       },
     ],
+  },
+  champlainHeightsGap: {
+    name: "Champlain Heights Gap",
+    isGap: true,
+    cities: [VANCOUVER],
+    legs: [{ videos: { westbound: VIDEOS.champlainHeightsGapWb } }],
   },
   chancellor: {
     name: "Chancellor Blvd",
@@ -1075,6 +1087,12 @@ export const ROUTES = {
     name: "Portside",
     cities: [VANCOUVER],
     legs: [{ videos: { eastbound: VIDEOS.portsideEb } }],
+  },
+  portsideGap: {
+    name: "Portside Gap",
+    isGap: true,
+    cities: [VANCOUVER],
+    legs: [{ videos: { westbound: VIDEOS.portsideGapWb } }],
   },
   powell: {
     name: "Powell",

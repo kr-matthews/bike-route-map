@@ -34,6 +34,7 @@ import { CARRALL } from "./carrall";
 import { CASSIAR } from "./cassiar";
 import { CENTRAL_PARK_PERIMETER_TRAIL } from "./centralParkPerimeterTrail";
 import { CENTRAL_VALLEY_GREENWAY } from "./centralValleyGreenway";
+import { CHAMPLAIN_HEIGHTS_GAP } from "./champlainHeightsGap";
 import { CHANCELLOR } from "./chancellor";
 import { CHILCO } from "./chilco";
 import { COLUMBIA } from "./columbia";
@@ -52,6 +53,7 @@ import { EAST_MALL } from "./eastMall";
 import { EWEN } from "./ewen";
 import { FORTY_FIFTH } from "./fortyFifth";
 import { FOURTEENTH } from "./fourteenth";
+import { FOURTEENTH_GAP } from "./fourteenthGap";
 import { FOURTH } from "./fourth";
 import { FRANCES_UNION } from "./francesUnion";
 import { FRASER_FORESHORE } from "./fraserForeshoreTrail";
@@ -123,6 +125,7 @@ import { POCO_TRAIL } from "./pocoTrail";
 import { PORT_MANN_BRIDGE } from "./portMannBridge";
 import { PORT_ROYAL_RIVER_TRAIL } from "./portRoyalRiverTrail";
 import { PORTSIDE } from "./portside";
+import { PORTSIDE_GAP } from "./portsideGap";
 import { POWELL } from "./powell";
 import { PRINCE_EDWARD } from "./princeEdward";
 import { QUEENSBOROUGH_BRIDGE } from "./queensboroughBridge";
@@ -220,6 +223,7 @@ export const SEGMENTS = [
   ...CASSIAR,
   ...CENTRAL_PARK_PERIMETER_TRAIL,
   ...CENTRAL_VALLEY_GREENWAY,
+  ...CHAMPLAIN_HEIGHTS_GAP,
   ...CHANCELLOR,
   ...CHILCO,
   ...COLUMBIA,
@@ -238,6 +242,7 @@ export const SEGMENTS = [
   ...EWEN,
   ...FORTY_FIFTH,
   ...FOURTEENTH,
+  ...FOURTEENTH_GAP,
   ...FOURTH,
   ...FRANCES_UNION,
   ...FRASER_FORESHORE,
@@ -309,6 +314,7 @@ export const SEGMENTS = [
   ...PORT_MANN_BRIDGE,
   ...PORT_ROYAL_RIVER_TRAIL,
   ...PORTSIDE,
+  ...PORTSIDE_GAP,
   ...POWELL,
   ...PRINCE_EDWARD,
   ...QUEENSBOROUGH_BRIDGE,

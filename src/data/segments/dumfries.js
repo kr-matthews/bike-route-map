@@ -4,6 +4,7 @@ import {
   DUMFRIES_37TH,
   DUMFRIES_47TH,
   WOODLAND_14TH,
+  WOODLAND_15TH_E,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -11,7 +12,6 @@ import { VIDEOS } from "../videos";
 const FLEMING_57TH_S = [49.21806, -123.07403];
 const DUMFRIES_33RD_W_N = [49.24022, -123.07403];
 const DUMFRIES_33RD_W_NN = [49.24033, -123.07364];
-const WOODLAND_15TH_E = [49.25653, -123.07395];
 const WOODLAND_CLARK_PARK = [49.2574, -123.07379];
 
 export const DUMFRIES = [
@@ -83,7 +83,11 @@ export const DUMFRIES = [
     routeNames: [ROUTES.dumfries.name],
     description: "clark park",
     type: "dedicated",
-    videoIds: [VIDEOS.dumfriesSb.id, VIDEOS.dumfriesNb.id],
+    videoIds: [
+      VIDEOS.dumfriesSb.id,
+      VIDEOS.dumfriesNb.id,
+      VIDEOS.fourteenthGapWb.id,
+    ],
     positions: [
       WOODLAND_15TH_E,
       [49.25735, -123.07392],
@@ -95,9 +99,13 @@ export const DUMFRIES = [
     routeNames: [ROUTES.dumfries.name],
     description: "woodland in clark park",
     type: "quiet",
-    videoIds: [VIDEOS.dumfriesSb.id, VIDEOS.dumfriesNb.id],
+    videoIds: [
+      VIDEOS.dumfriesSb.id,
+      VIDEOS.dumfriesNb.id,
+      VIDEOS.fourteenthGapWb.id,
+    ],
     videoIdsEndAtEnd: [VIDEOS.dumfriesNb.id],
-    videoIdsStartAtEnd: [VIDEOS.dumfriesSb.id],
+    videoIdsStartAtEnd: [VIDEOS.dumfriesSb.id, VIDEOS.fourteenthGapWb.id],
     positions: [
       WOODLAND_CLARK_PARK,
       [49.25743, -123.07378],

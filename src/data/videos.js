@@ -245,6 +245,11 @@ const VIDEOS = {
     date: new Date("2024 03 21"),
     minutes: 23,
   },
+  champlainHeightsGapWb: {
+    id: "_sU-SYawx7k",
+    date: new Date("2024 02 07"),
+    minutes: 8,
+  },
   chancellorWb: {
     id: "fJ6OU2uS8C0",
     tlId: "8BRasaHwpzQ",
@@ -360,6 +365,11 @@ const VIDEOS = {
   fourteenthWb: {
     id: "_13c2Bcl_4Y",
     date: new Date("2023 08 12"),
+    minutes: 8,
+  },
+  fourteenthGapWb: {
+    id: "Nsyxv3lnWr8",
+    date: new Date("2023 08 27"),
     minutes: 8,
   },
   fourthEb: {
@@ -814,6 +824,11 @@ const VIDEOS = {
     id: "LXLxrBUIa9o",
     date: new Date("2023 10 28"),
     minutes: 10,
+  },
+  portsideGapWb: {
+    id: "5jEuddCkMwM",
+    date: new Date("2023 10 21"),
+    minutes: 2,
   },
   powellEb: {
     id: "vTtdPgHQCp0",
