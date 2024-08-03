@@ -4,37 +4,76 @@ import {
   BLANCA_10TH_E,
   BLANCA_10TH_NW,
   BLANCA_10TH_SW,
-  EAST_MALL_UNIVERSITY,
+  EAST_MALL_UNIVERSITY_S,
   MARINE_UNIVERSITY_N,
   MARINE_UNIVERSITY_S,
   WESBROOK_UNIVERSITY_NE,
   WESBROOK_UNIVERSITY_NW,
   WESBROOK_UNIVERSITY_SE,
   WESBROOK_UNIVERSITY_SW,
+  WEST_MALL_UNIVERSITY_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
+const BUS_LOOP_E = [49.26569, -123.2493];
 const BUS_LOOP_W = [49.26583, -123.24945];
+const LOWER_MALL_UNIVERSITY_E = [49.26344, -123.25635];
 
 export const UNIVERSITY = [
   {
-    description: "connection to east mall",
-    type: "mixed",
-    positions: [EAST_MALL_UNIVERSITY, BUS_LOOP_W],
-  },
-  {
+    routeNames: [ROUTES.university.name],
     description: "to marine",
     type: "painted",
     oneWay: "required",
-    positions: [[49.26342, -123.25649], MARINE_UNIVERSITY_N],
+    positions: [
+      LOWER_MALL_UNIVERSITY_E,
+      [49.26342, -123.25649],
+      MARINE_UNIVERSITY_N,
+    ],
   },
   {
+    routeNames: [ROUTES.university.name],
     description: "from marine",
     type: "painted",
     oneWay: "required",
-    positions: [MARINE_UNIVERSITY_S, [49.26338, -123.25645]],
+    videoIds: [VIDEOS.universityEb.id],
+    videoIdsStartAtStart: [VIDEOS.universityEb.id],
+    positions: [
+      MARINE_UNIVERSITY_S,
+      [49.26338, -123.25645],
+      LOWER_MALL_UNIVERSITY_E,
+    ],
   },
-
+  {
+    routeNames: [ROUTES.university.name],
+    description: "lower mall to west mall",
+    type: "quiet",
+    videoIds: [VIDEOS.universityEb.id],
+    positions: [LOWER_MALL_UNIVERSITY_E, WEST_MALL_UNIVERSITY_S],
+  },
+  {
+    routeNames: [ROUTES.university.name],
+    description: "west mall to east mall",
+    type: "mixed",
+    videoIds: [VIDEOS.universityEb.id],
+    positions: [WEST_MALL_UNIVERSITY_S, EAST_MALL_UNIVERSITY_S],
+  },
+  {
+    routeNames: [ROUTES.university.name],
+    description: "east mall from bus loop",
+    type: "mixed",
+    oneWay: "recommended",
+    positions: [BUS_LOOP_W, [49.2658, -123.24975], EAST_MALL_UNIVERSITY_S],
+  },
+  {
+    routeNames: [ROUTES.university.name],
+    description: "east mall to bus loop",
+    type: "mixed",
+    oneWay: "recommended",
+    videoIds: [VIDEOS.universityEb.id],
+    positions: [EAST_MALL_UNIVERSITY_S, BUS_LOOP_E],
+  },
   {
     routeNames: [ROUTES.university.name],
     description: "wb",
@@ -73,7 +112,7 @@ export const UNIVERSITY = [
   },
   {
     routeNames: [ROUTES.university.name],
-    description: "loop",
+    description: "loop wb",
     type: "quiet",
     oneWay: "required",
     positions: [
@@ -83,9 +122,28 @@ export const UNIVERSITY = [
       [49.26592, -123.24866],
       [49.26587, -123.24937],
       BUS_LOOP_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.university.name],
+    description: "loop end",
+    type: "quiet",
+    oneWay: "required",
+    positions: [
+      BUS_LOOP_W,
       [49.26576, -123.24944],
       [49.26571, -123.24939],
-      [49.26569, -123.2493],
+      BUS_LOOP_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.university.name],
+    description: "loop eb",
+    type: "quiet",
+    oneWay: "required",
+    videoIds: [VIDEOS.universityEb.id],
+    positions: [
+      BUS_LOOP_E,
       [49.2658, -123.24863],
       [49.26602, -123.24721],
       [49.26622, -123.24582],
@@ -97,6 +155,7 @@ export const UNIVERSITY = [
     description: "eb",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.universityEb.id],
     positions: [
       WESBROOK_UNIVERSITY_SW,
       WESBROOK_UNIVERSITY_SE,

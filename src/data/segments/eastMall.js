@@ -14,7 +14,7 @@ import {
   EAST_MALL_THUNDERBIRD_NW,
   EAST_MALL_THUNDERBIRD_SE,
   EAST_MALL_THUNDERBIRD_SW,
-  EAST_MALL_UNIVERSITY,
+  EAST_MALL_UNIVERSITY_S,
   MARINE_CHANCELLOR_NW,
   MARINE_CHANCELLOR_SE,
   MARINE_CHANCELLOR_SW,
@@ -172,7 +172,7 @@ export const EAST_MALL = [
     description: "pedestrianized",
     type: "mixed",
     videoIds: [VIDEOS.eastMallSb.id],
-    positions: [PEDESTRIANIZED_S, EAST_MALL_UNIVERSITY, PEDESTRIANIZED_N],
+    positions: [PEDESTRIANIZED_S, EAST_MALL_UNIVERSITY_S, PEDESTRIANIZED_N],
   },
   {
     routeNames: [ROUTES.eastMall.name],

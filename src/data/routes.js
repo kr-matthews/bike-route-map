@@ -941,7 +941,9 @@ export const ROUTES = {
   nicola: {
     name: "Nicola",
     cities: [VANCOUVER],
-    legs: [{ videos: { northbound: VIDEOS.nicolaNb } }],
+    legs: [
+      { videos: { northbound: VIDEOS.nicolaNb, southbound: VIDEOS.nicolaSb } },
+    ],
   },
   no2: {
     name: "No. 2 Rd",
@@ -1332,7 +1334,7 @@ export const ROUTES = {
   university: {
     name: "University Blvd",
     cities: [UBC],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.universityEb } }],
   },
   universityDrE: {
     name: "University Dr E",

@@ -677,6 +677,11 @@ const VIDEOS = {
     date: new Date("2023 08 03"),
     minutes: 1,
   },
+  nicolaSb: {
+    id: "KQRlsyVR3V0",
+    date: new Date("2024 07 26"),
+    minutes: 1,
+  },
   northArmBridgeNb: {
     id: "SANpYy0-wFc",
     date: new Date("2023 07 05"),
@@ -1077,6 +1082,12 @@ const VIDEOS = {
     date: new Date("2023 06 10"),
     minutes: 6,
   },
+  universityEb: {
+    id: "fzMf52tvQu4",
+    tlId: "uyVrPswaYfE",
+    date: new Date("2024 07 24"),
+    minutes: 10,
+  },
   valleySb: {
     id: "SDClkLpfIHc",
     date: new Date("2023 06 27"),
@@ -1104,6 +1115,7 @@ const VIDEOS = {
   },
   wesbrookSb: {
     id: "rh6b_Nk9q-4",
+    tlId: "SUJjmGMkTmM",
     date: new Date("2024 03 06"),
     minutes: 11,
   },

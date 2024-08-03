@@ -8,6 +8,7 @@ import {
   WEST_MALL_MARINE_N,
   WEST_MALL_MARINE_S,
   WEST_MALL_THUNDERBIRD,
+  WEST_MALL_UNIVERSITY_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
@@ -139,7 +140,7 @@ export const WEST_MALL = [
       [49.26206, -123.25349],
       [49.26215, -123.25353],
       [49.26255, -123.25385],
-      [49.26393, -123.25498],
+      WEST_MALL_UNIVERSITY_S,
       [49.26409, -123.25511],
       [49.26466, -123.25559],
       [49.26545, -123.25622],

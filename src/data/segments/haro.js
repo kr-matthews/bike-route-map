@@ -45,19 +45,12 @@ export const HARO = [
   },
   {
     routeNames: [ROUTES.haro.name],
-    description: "near nicola",
-    type: "quiet",
-    videoIds: [VIDEOS.haroWb.id, VIDEOS.nicolaNb.id],
-    videoIdsStartAtEnd: [VIDEOS.nicolaNb.id],
-    positions: [NICOLA_HARO, EAST_OF_NICOLA],
-  },
-  {
-    routeNames: [ROUTES.haro.name],
     description: "east of nicola",
     type: "quiet",
     videoIds: [VIDEOS.haroWb.id],
     videoIdsStartAtEnd: [VIDEOS.haroWb.id],
     positions: [
+      NICOLA_HARO,
       EAST_OF_NICOLA,
       [49.28722, -123.131],
       [49.28632, -123.12962],
