@@ -55,7 +55,7 @@ export const BOYD = [
   {
     description: "pre-trail at howes",
     type: "other",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.boydTrailWb.id],
     videoIdsStartAtEnd: [VIDEOS.boydTrailWb.id],
     positions: [

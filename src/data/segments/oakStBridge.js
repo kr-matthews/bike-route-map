@@ -24,7 +24,7 @@ export const OAK_STREET_BRIDGE = [
     description: "approaching 71/oak",
     type: "shared",
     oneWay: "required",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.oakSb.id],
     videoIdsStartAtStart: [VIDEOS.oakSb.id],
     positions: [

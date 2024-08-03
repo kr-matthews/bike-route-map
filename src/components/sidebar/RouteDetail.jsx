@@ -116,7 +116,7 @@ export default function RouteDetail({ mapRef }) {
           {isGap && (
             <p style={{ paddingLeft: "1em", paddingRight: "1em" }}>
               Note: This is a <em>gap</em> in the official bike network, and is{" "}
-              <b>not</b> an official bike route.
+              <b>not</b> an designed bike route.
             </p>
           )}
           {legs.map((leg) => (

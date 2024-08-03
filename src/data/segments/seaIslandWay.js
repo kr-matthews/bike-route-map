@@ -21,7 +21,7 @@ export const SEA_ISLAND_WAY = [
     description: "join from miller",
     type: "shoulder",
     oneWay: "required",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.seaIslandWayEb.id],
     videoIdsStartAtStart: [VIDEOS.seaIslandWayEb.id],
     positions: [

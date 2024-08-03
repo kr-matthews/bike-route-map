@@ -18,7 +18,7 @@ export const NELSON = [
     oneWay: "required",
     type: "shared",
     videoIds: [VIDEOS.cambieBridgeNelsonSb.id],
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIdsStartAtStart: [VIDEOS.cambieBridgeNelsonSb.id],
     positions: [
       BUTE_NELSON,

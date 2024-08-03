@@ -201,7 +201,7 @@ export const CANADA_LINE = [
     description: "road: great canadian way sb no lane",
     type: "shared",
     oneWay: "required",
-    hideUnlessVideo: true,
+    undesignated: true,
     positions: [
       GREAT_CANADIAN_BRIDGEPORT_NW,
       [49.19198, -123.1245],

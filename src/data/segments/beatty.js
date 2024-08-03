@@ -51,7 +51,7 @@ export const BEATTY = [
     description: "sb: crossing pender",
     type: "shared",
     oneWay: "required",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.beattySb.id],
     videoIdsStartAtStart: [VIDEOS.beattySb.id],
     positions: [BEATTY_PENDER_NW, BEATTY_PENDER_SW],

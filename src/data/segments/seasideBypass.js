@@ -141,7 +141,7 @@ export const SEASIDE_BYPASS = [
   {
     description: "quebec: 5th to 3rd",
     type: "quiet",
-    hideUnlessVideo: true,
+    undesignated: true,
     positions: [QUEBEC_3RD, QUEBEC_5TH],
   },
 
@@ -945,7 +945,7 @@ export const SEASIDE_BYPASS = [
   {
     description: "beach: hornby to granville",
     type: "shared",
-    hideUnlessVideo: true,
+    undesignated: true,
     positions: [HORNBY_BEACH, [49.27473, -123.13183], GRANVILLE_BEACH],
   },
   {

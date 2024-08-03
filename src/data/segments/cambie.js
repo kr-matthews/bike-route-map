@@ -155,7 +155,7 @@ export const CAMBIE = [
     description: "post-sb",
     type: "shared",
     oneWay: "recommended",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.cambieSb.id],
     videoIdsEndAtEnd: [VIDEOS.cambieSb.id],
     positions: [SOUTHBOUND_END, [49.20995, -123.11725], [49.20903, -123.11729]],

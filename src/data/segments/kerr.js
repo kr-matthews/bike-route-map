@@ -168,7 +168,7 @@ export const KERR = [
   {
     description: "kerr: to 45th",
     type: "quiet",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.kerrNb.id],
     videoIdsEndAtEnd: [VIDEOS.kerrNb.id],
     positions: [

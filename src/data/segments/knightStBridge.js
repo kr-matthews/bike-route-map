@@ -40,7 +40,7 @@ export const KNIGHT_STREET_BRIDGE = [
     description: "bridgeport approaching nb",
     oneWay: "recommended",
     type: "shared",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.knightStBridgeNb.id],
     videoIdsStartAtStart: [VIDEOS.knightStBridgeNb.id],
     positions: [
@@ -457,7 +457,7 @@ export const KNIGHT_STREET_BRIDGE = [
     description: "after off-ramp",
     oneWay: "recommended",
     type: "shared",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.knightStBridgeSb.id],
     videoIdsEndAtEnd: [VIDEOS.knightStBridgeSb.id],
     positions: [

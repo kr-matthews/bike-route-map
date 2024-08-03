@@ -12,7 +12,7 @@ export const ODLIN = [
   {
     description: "browngate continuation to no. 3",
     type: "shared",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.odlinWb.id],
     positions: [
       NO_3_BROWNGATE,

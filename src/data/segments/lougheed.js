@@ -72,7 +72,7 @@ export const LOUGHEED = [
     oneWay: "recommended",
     videoIds: [VIDEOS.lougheedEb.id],
     videoIdsStartAtStart: [VIDEOS.lougheedEb.id],
-    hideUnlessVideo: true,
+    undesignated: true,
     positions: [
       SKEENA_CVG,
       [49.26225, -123.0284],
@@ -85,7 +85,7 @@ export const LOUGHEED = [
     type: "shared",
     oneWay: "required",
     videoIds: [VIDEOS.lougheedEb.id],
-    hideUnlessVideo: true,
+    undesignated: true,
     positions: [
       SKEENA_LOUGHEED,
       [49.26395, -123.02761],

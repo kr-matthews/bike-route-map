@@ -75,7 +75,7 @@ export const RAILWAY_GREENWAY = [
   {
     description: "greenway to road at moncton",
     type: "mixed",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.railwayGreenwaySb.id],
     positions: [RAILWAY_GREENWAY_MONCTON_S, RAILWAY_MONCTON_SW],
   },
@@ -88,7 +88,7 @@ export const RAILWAY_GREENWAY = [
   {
     description: "road to greenway at garry",
     type: "comfortable",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.railwayGreenwaySb.id],
     positions: [RAILWAY_GARRY_NW, RAILWAY_GREENWAY_GARRY_N],
   },

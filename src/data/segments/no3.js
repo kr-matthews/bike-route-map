@@ -27,7 +27,7 @@ export const NO_3 = [
     description: "connection via buswell from granville",
     type: "shared",
     oneWay: "recommended",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.no3Nb.id],
     videoIdsStartAtStart: [VIDEOS.no3Nb.id],
     positions: [
@@ -209,7 +209,7 @@ export const NO_3 = [
     description: "sb: capstan to alderbridge",
     type: "shared",
     oneWay: "required",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.no3Sb.id],
     positions: [
       NO_3_CAPSTAN_NW,
@@ -283,7 +283,7 @@ export const NO_3 = [
     description: "sb: cook to granville",
     type: "shared",
     oneWay: "required",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.no3Sb.id],
     videoIdsEndAtEnd: [VIDEOS.no3Sb.id],
     positions: [

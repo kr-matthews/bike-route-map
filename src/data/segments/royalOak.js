@@ -39,7 +39,7 @@ export const ROYAL_OAK = [
   {
     description: "sanders to metrotown",
     type: "shared",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.royalOakSb.id],
     videoIdsEndAtStart: [VIDEOS.royalOakSb.id],
     positions: [

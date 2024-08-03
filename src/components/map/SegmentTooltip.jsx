@@ -6,7 +6,7 @@ import videoIcon from "../../images/video.svg";
 const tooltipProps = { sticky: true, opacity: 0.7, className: "tooltip" };
 
 export default function SegmentTooltip({ segment }) {
-  const { routeNames, type, oneWay, videoIds, isClosed, hideUnlessVideo } =
+  const { routeNames, type, oneWay, videoIds, isClosed, undesignated } =
     segment;
 
   const primaryRouteName = routeNames?.find((x) => x) || null;
@@ -26,26 +26,24 @@ export default function SegmentTooltip({ segment }) {
             {oneWay === "required" && " - One way"}
           </u>
         </div>
-        {hasAnyRoutes ? (
-          routeNames.map((routeName) => (
-            <div key={routeName}>
-              {segmentHasVideoForRoute(segment, routeName) && (
-                <img
-                  src={videoIcon}
-                  alt="video"
-                  style={{ marginRight: "0.5em", height: "0.8em" }}
-                />
-              )}
-              {primaryRouteName === routeName ? <b>{routeName}</b> : routeName}
-            </div>
-          ))
-        ) : (
-          <em>
-            {hideUnlessVideo
-              ? "Not an official bike route"
-              : "Official alternative option or connection between routes"}
-          </em>
-        )}
+        {routeNames?.map((routeName) => (
+          <div key={routeName}>
+            {segmentHasVideoForRoute(segment, routeName) && (
+              <img
+                src={videoIcon}
+                alt="video"
+                style={{ marginRight: "0.5em", height: "0.8em" }}
+              />
+            )}
+            {primaryRouteName === routeName ? <b>{routeName}</b> : routeName}
+          </div>
+        ))}
+        <em>
+          {undesignated
+            ? "Not a designated bike route"
+            : !hasAnyRoutes &&
+              "Designated alternative option or connection between routes"}
+        </em>
         <div>
           <em>
             {hasAnyVideos ? "Right-click for video" : "No video available"}

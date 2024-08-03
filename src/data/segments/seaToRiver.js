@@ -37,7 +37,7 @@ export const SEA_TO_RIVER = [
   {
     description: "mckay connection to bc parkway/metrotown",
     type: "quiet",
-    hideUnlessVideo: true,
+    undesignated: true,
     positions: [
       MCKAY_MAYWOOD,
       [49.22381, -123.00892],

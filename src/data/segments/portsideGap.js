@@ -9,7 +9,7 @@ export const PORTSIDE_GAP = [
     routeNames: [ROUTES.portsideGap.name],
     description: "powell",
     type: "shared",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.portsideGapWb.id],
     videoIdsEndAtStart: [VIDEOS.portsideGapWb.id],
     positions: [
@@ -27,7 +27,7 @@ export const PORTSIDE_GAP = [
     routeNames: [ROUTES.portsideGap.name],
     description: "wall",
     type: "quiet",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.portsideGapWb.id],
     videoIdsStartAtEnd: [VIDEOS.portsideGapWb.id],
     positions: [SEMLIN_POWELL_W, [49.285, -123.06352], WALL_OXFORD_PARK],

@@ -36,7 +36,7 @@ export const GRANVILLE = [
   {
     description: "barnard to no. 1",
     type: "shared",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.granvilleWb.id],
     videoIdsStartAtEnd: [VIDEOS.granvilleWb.id],
     positions: [

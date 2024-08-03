@@ -10,7 +10,7 @@ export const TERMINAL_PATH = [
     description: "connection from cvg: main",
     type: "shared",
     oneWay: "required",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.terminalEb.id],
     videoIdsStartAtStart: [VIDEOS.terminalEb.id],
     positions: [
@@ -23,7 +23,7 @@ export const TERMINAL_PATH = [
   {
     description: "connection from cvg: the rest",
     type: "quiet",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.terminalEb.id],
     positions: [
       MAIN_INDUSTRIAL_E,

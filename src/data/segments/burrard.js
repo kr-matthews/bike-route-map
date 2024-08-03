@@ -78,7 +78,7 @@ export const BURRARD = [
     description: "6th to 4th nb",
     type: "shared",
     oneWay: "required",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.burrardNb.id],
     positions: [
       BURRARD_ARBUTUS_GREENWAY_E,

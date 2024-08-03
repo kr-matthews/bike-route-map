@@ -167,7 +167,7 @@ export default function useFilters() {
   const isSegmentHidden = (segment) => {
     const videoCount = (segment.videoIds ?? []).length;
     if (
-      segment.hideUnlessVideo &&
+      segment.undesignated &&
       filters.videos &&
       segment.videoIds?.length > 0
     ) {
@@ -175,7 +175,7 @@ export default function useFilters() {
     }
 
     if (
-      segment.hideUnlessVideo &&
+      segment.undesignated &&
       !segment.videoIds?.includes(selectedVideo?.id)
     ) {
       return true;

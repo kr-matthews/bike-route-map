@@ -30,7 +30,7 @@ export const WILLINGDON_LINEAR_PARK = [
     description: "road",
     type: "shared",
     oneWay: "required",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.willingdonLinearNb.id],
     positions: [
       NB_LANE_END,

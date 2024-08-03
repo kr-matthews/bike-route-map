@@ -55,7 +55,7 @@ export const WESTMINSTER_HWY = [
     description: "videoed no.6 crossing",
     type: "mixed",
     oneWay: "recommended",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.westminsterWb.id],
     positions: [
       NO_6_WESTMINSTER_S_E,

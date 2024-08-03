@@ -150,7 +150,7 @@ export const FRASER_RIVER_TRAIL = [
   {
     description: "from kent to fraserview portion",
     type: "shared",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.fraserRiverFraserviewEb.id],
     positions: [
       ARGYLE_KENT_N_E,

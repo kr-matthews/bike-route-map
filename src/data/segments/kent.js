@@ -439,7 +439,7 @@ export const KENT = [
   {
     description: "part of boundary",
     type: "shared",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.kentWb.id],
     videoIdsStartAtStart: [VIDEOS.kentWb.id],
     positions: [[49.20366, -123.02335], [49.20417, -123.02337], BOUNDARY_KENT],

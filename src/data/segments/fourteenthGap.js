@@ -11,7 +11,7 @@ export const FOURTEENTH_GAP = [
     routeNames: [ROUTES.fourteenthGap.name],
     description: "prince edward to kingsway",
     type: "quiet",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.fourteenthGapWb.id],
     videoIdsEndAtStart: [VIDEOS.fourteenthGapWb.id],
     positions: [
@@ -26,7 +26,7 @@ export const FOURTEENTH_GAP = [
     routeNames: [ROUTES.fourteenthGap.name],
     description: "kingsway",
     type: "shared",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.fourteenthGapWb.id],
     positions: [KINGSWAY_W, KINGSWAY_E],
   },
@@ -34,7 +34,7 @@ export const FOURTEENTH_GAP = [
     routeNames: [ROUTES.fourteenthGap.name],
     description: "the park",
     type: "mixed",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.fourteenthGapWb.id],
     positions: [
       KINGSWAY_E,
@@ -48,7 +48,7 @@ export const FOURTEENTH_GAP = [
     description: "the park to mosaic",
     type: "quiet",
     videoIds: [VIDEOS.fourteenthGapWb.id],
-    hideUnlessVideo: true,
+    undesignated: true,
     positions: [
       CAROLINA_14TH,
       [49.25792, -123.08933],

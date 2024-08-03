@@ -9,7 +9,7 @@ export const CHAMPLAIN_HEIGHTS_GAP = [
     routeNames: [ROUTES.champlainHeightsGap.name],
     description: "quiet part",
     type: "quiet",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.champlainHeightsGapWb.id],
     videoIdsEndAtStart: [VIDEOS.champlainHeightsGapWb.id],
     positions: [
@@ -54,7 +54,7 @@ export const CHAMPLAIN_HEIGHTS_GAP = [
     routeNames: [ROUTES.champlainHeightsGap.name],
     description: "shared part",
     type: "shared",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.champlainHeightsGapWb.id],
     videoIdsStartAtEnd: [VIDEOS.champlainHeightsGapWb.id],
     positions: [

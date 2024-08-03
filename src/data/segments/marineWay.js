@@ -136,7 +136,7 @@ export const MARINE_WAY = [
     oneWay: "required",
     type: "shared",
     hideArrows: true,
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.marineWayEb.id],
     positions: [
       BOUNDARY_MARINE_SW,
@@ -151,7 +151,7 @@ export const MARINE_WAY = [
     oneWay: "required",
     type: "other",
     hideArrows: true,
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.marineWayWb.id],
     positions: [
       BOUNDARY_MARINE_NE,

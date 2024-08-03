@@ -17,7 +17,7 @@ import {
 } from "./segmentTypes";
 
 export function createPathOptions(
-  { oneWay, isClosed, type, hideUnlessVideo, elevation },
+  { oneWay, isClosed, type, undesignated, elevation },
   { isHighlighted, isSelected, hasActiveVideo, isHidden }
 ) {
   const isOneWay = oneWay === "required";
@@ -49,7 +49,7 @@ export function createPathOptions(
       : nonUndergroundWeight,
     // explicit opacity required to show hidden routes when video is selected
     opacity: 100,
-    dashArray: hideUnlessVideo ? DASH_PATTERN : undefined,
+    dashArray: undesignated ? DASH_PATTERN : undefined,
   };
 }
 

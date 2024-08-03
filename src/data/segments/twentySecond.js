@@ -23,7 +23,7 @@ export const TWENTY_SECOND = [
   {
     description: "boundary to kincaid",
     type: "quiet",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.twentySecondEb.id],
     positions: [
       BOUNDARY_22ND_E,
@@ -35,7 +35,7 @@ export const TWENTY_SECOND = [
   {
     description: "kincaid main",
     type: "shared",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.twentySecondEb.id],
     positions: [
       INGLETON_KINCAID,
@@ -47,7 +47,7 @@ export const TWENTY_SECOND = [
   {
     description: "kincaid side",
     type: "quiet",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.twentySecondEb.id],
     positions: [
       MACDONALD_KINCAID_N,

@@ -84,7 +84,7 @@ export const NANAIMO = [
   {
     description: "leaving via 2nd",
     type: "quiet",
-    hideUnlessVideo: true,
+    undesignated: true,
     videoIds: [VIDEOS.nanaimoSb.id],
     videoIdsEndAtStart: [VIDEOS.nanaimoSb.id],
     positions: [[49.26861, -123.05803], [49.2686, -123.05672], NANAIMO_2ND_W],
