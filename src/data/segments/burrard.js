@@ -19,10 +19,10 @@ import {
   BURRARD_PACIFIC_SE_W,
   BURRARD_PACIFIC_SW,
   BURRARD_SMITHE,
+  BURRARD_YORK,
   CHESTNUT_CORNWALL,
   CHESTNUT_OGDEN,
   CHESTNUT_WHYTE,
-  CHESTNUT_YORK,
   CYPRESS_CORNWALL_N,
   CYPRESS_CORNWALL_SE,
   CYPRESS_CORNWALL_SW,
@@ -31,7 +31,6 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-const BURRARD_YORK = [49.27172, -123.14565];
 const BURRARD_4TH_E = [49.26806, -123.1455];
 const BURRARD_CORNWALL_E = [49.27232, -123.14504];
 const BURRARD_CORNWALL_SW = [49.27231, -123.14556];
@@ -42,6 +41,7 @@ const NORTHBOUND_ELEVATION_START = [49.27323, -123.14368];
 const NORTHBOUND_ELEVATION_END = [49.27661, -123.13313];
 const SOUTHBOUND_ELEVATED_START = [49.2768, -123.1332];
 const SOUTHBOUND_ELEVATED_END = [49.27337, -123.14377];
+const SB_PRE_CORNWALL = [49.27303, -123.14483];
 const NORTHBOUND_ENDPOINT = [49.27851, -123.12991];
 const SOUTHBOUND_ENDPOINT = [49.26517, -123.14582];
 
@@ -289,7 +289,7 @@ export const BURRARD = [
   },
   {
     routeNames: [ROUTES.burrard.name],
-    description: "southbound post-bridge",
+    description: "southbound post-bridge 1",
     type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
@@ -297,16 +297,27 @@ export const BURRARD = [
     positions: [
       SOUTHBOUND_ELEVATED_END,
       [49.27325, -123.14414],
-      [49.27303, -123.14483],
-      [49.27286, -123.14511],
-      BURRARD_CORNWALL_NW,
+      SB_PRE_CORNWALL,
     ],
+  },
+  {
+    routeNames: [ROUTES.burrard.name],
+    description: "southbound post-bridge 2",
+    type: "dedicated",
+    oneWay: "required",
+    videoIds: [
+      VIDEOS.burrardBridgeSb.id,
+      VIDEOS.burrardSb.id,
+      VIDEOS.yorkWb.id,
+    ],
+    videoIdsStartAtStart: [VIDEOS.yorkWb.id],
+    positions: [SB_PRE_CORNWALL, [49.27286, -123.14511], BURRARD_CORNWALL_NW],
   },
   {
     routeNames: [ROUTES.burrard.name],
     description: "york bi-directional",
     type: "dedicated",
-    videoIds: [VIDEOS.burrardSb.id],
+    videoIds: [VIDEOS.yorkWb.id, VIDEOS.burrardSb.id],
     positions: [
       BURRARD_YORK,
       [49.27218, -123.14563],
@@ -342,16 +353,6 @@ export const BURRARD = [
   },
 
   // south end
-  {
-    description: "york connection",
-    type: "dedicated",
-    positions: [
-      CHESTNUT_YORK,
-      [49.27153, -123.14593],
-      [49.27159, -123.14578],
-      BURRARD_YORK,
-    ],
-  },
   {
     description: "cypress to burrard connection",
     type: "dedicated",

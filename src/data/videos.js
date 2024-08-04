@@ -19,6 +19,11 @@ const VIDEOS = {
     date: new Date("2023 08 12"),
     minutes: 2,
   },
+  alderSb: {
+    id: "lltOiy6Mwc8",
+    date: new Date("2024 07 27"),
+    minutes: 4,
+  },
   alderbridgeWb: {
     id: "CvmFDVZT8YU",
     date: new Date("2024 02 26"),
@@ -362,8 +367,15 @@ const VIDEOS = {
     date: new Date("2023 08 31"),
     minutes: 2,
   },
+  fourteenthEb: {
+    id: "eqKtyMqRh2k",
+    tlId: "wouDDVtMjUM",
+    date: new Date("2024 07 27"),
+    minutes: 8,
+  },
   fourteenthWb: {
     id: "_13c2Bcl_4Y",
+    tlId: "1HX8DlfGknk",
     date: new Date("2023 08 12"),
     minutes: 8,
   },
@@ -384,6 +396,7 @@ const VIDEOS = {
   },
   francesUnionWb: {
     id: "p9veS9P-MzM",
+    tlId: "qM0TcO_x0Vc",
     date: new Date("2024 03 20"),
     minutes: 22,
   },
@@ -842,11 +855,13 @@ const VIDEOS = {
   },
   princeEdwardNb: {
     id: "A91bdcMUC98",
+    tlId: "9mz5kMGJwdE",
     date: new Date("2023 08 19"),
     minutes: 15,
   },
   princeEdwardSb: {
     id: "5RnZaIbILJw",
+    tlId: "Pa6FPYAUP0c",
     date: new Date("2024 05 07"),
     minutes: 16,
   },
@@ -1175,6 +1190,11 @@ const VIDEOS = {
   yorkEb: {
     id: "kLMm6tBVuXc",
     date: new Date("2023 08 11"),
+    minutes: 5,
+  },
+  yorkWb: {
+    id: "UmpAFZZpJx0",
+    date: new Date("2024 07 30"),
     minutes: 5,
   },
   yukonSb: {

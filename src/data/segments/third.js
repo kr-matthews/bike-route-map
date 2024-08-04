@@ -22,8 +22,9 @@ export const THIRD = [
   {
     description: "connection with seaside",
     type: "dedicated",
-    videoIds: [VIDEOS.yorkEb.id],
+    videoIds: [VIDEOS.yorkEb.id, VIDEOS.yorkWb.id],
     videoIdsStartAtEnd: [VIDEOS.yorkEb.id],
+    videoIdsEndAtEnd: [VIDEOS.yorkWb.id],
     positions: [STEPHENS_YORK, STEPHENS_POINT_GREY],
   },
   {

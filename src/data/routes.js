@@ -58,7 +58,14 @@ export const ROUTES = {
   fourteenth: {
     name: "14th",
     cities: [VANCOUVER],
-    legs: [{ videos: { westbound: VIDEOS.fourteenthWb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.fourteenthEb,
+          westbound: VIDEOS.fourteenthWb,
+        },
+      },
+    ],
   },
   fourteenthGap: {
     name: "14th Ave Gap",
@@ -144,7 +151,9 @@ export const ROUTES = {
   alder: {
     name: "Alder",
     cities: [VANCOUVER],
-    legs: [{ videos: { northbound: VIDEOS.alderNb } }],
+    legs: [
+      { videos: { northbound: VIDEOS.alderNb, southbound: VIDEOS.alderSb } },
+    ],
   },
   alderbridge: {
     name: "Alderbridge Way Path",
@@ -1455,7 +1464,7 @@ export const ROUTES = {
   york: {
     name: "York",
     cities: [VANCOUVER],
-    legs: [{ videos: { eastbound: VIDEOS.yorkEb } }],
+    legs: [{ videos: { eastbound: VIDEOS.yorkEb, westbound: VIDEOS.yorkWb } }],
   },
   yukon: {
     name: "Yukon",

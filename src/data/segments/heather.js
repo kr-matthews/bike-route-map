@@ -289,7 +289,11 @@ export const HEATHER = [
     routeNames: [ROUTES.heather.name, ROUTES.fourteenth.name],
     description: "14th",
     type: "quiet",
-    videoIds: [VIDEOS.heatherSb.id, VIDEOS.fourteenthWb.id],
+    videoIds: [
+      VIDEOS.heatherSb.id,
+      VIDEOS.fourteenthEb.id,
+      VIDEOS.fourteenthWb.id,
+    ],
     positions: [HEATHER_14TH_S, HEATHER_14TH_N],
   },
   {
