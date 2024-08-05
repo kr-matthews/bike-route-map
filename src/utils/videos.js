@@ -20,8 +20,13 @@ export const getRoutesWithVideo = (videoId) => {
 const getVideoSegments = (videoId) =>
   SEGMENTS.filter((segment) => segment.videoIds?.includes(videoId));
 
+const segmentsWithAnyVideo = SEGMENTS.filter((segment) => segment.videoIds);
+
 export const getVideoDistance = (videoId) =>
   sumSegmentsLengths(getVideoSegments(videoId));
+
+export const videoUniqueDistanceCovered =
+  sumSegmentsLengths(segmentsWithAnyVideo);
 
 export const displayDirection = (direction) => {
   switch (direction) {
@@ -46,3 +51,15 @@ export const AUGMENTED_VIDEOS = Object.entries(VIDEOS).reduce(
 
 export const getAugmentedVideo = (videoId) =>
   Object.values(AUGMENTED_VIDEOS).find((video) => video.id === videoId);
+
+export const videoCount = Object.keys(VIDEOS).length;
+
+export const videoCumulativeMinutes = Object.values(VIDEOS).reduce(
+  (s, v) => s + v.minutes,
+  0
+);
+
+export const videoCumulativeDistance = Object.values(VIDEOS).reduce(
+  (s, v) => s + getVideoDistance(v.id),
+  0
+);

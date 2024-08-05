@@ -7,10 +7,16 @@ import {
   CodeLink,
   Link,
 } from "footer-dependency/dist/lib";
-import { disclaimer } from "../../utils/strings";
+import { disclaimer, displayDistance } from "../../utils/strings";
 import Panel from "./Panel";
 import { VIEWS } from "./Sidebar";
 import { BLACK, RED } from "../../utils/colours";
+import {
+  videoCount,
+  videoCumulativeDistance,
+  videoCumulativeMinutes,
+  videoUniqueDistanceCovered,
+} from "../../utils/videos";
 
 export default function About({ navigateTo }) {
   return (
@@ -53,13 +59,13 @@ export default function About({ navigateTo }) {
         </ul>
         <p>
           This is a map of bike routes in and around Vancouver. All bike routes
-          in <b>Vancouver</b> are included. Many (but not all) bike routes in{" "}
-          <b>UBC</b>, <b>Richmond</b>, <b>Burnaby</b>, and{" "}
+          in <b>Vancouver</b> are included. Most (but not necessarily all) bike
+          routes in <b>UBC</b>, <b>Richmond</b>, <b>Burnaby</b>, and{" "}
           <b>New Westminster</b>, are included. A few routes in adjacent regions
-          (North Vancouver, West Vancouver, Port Moody, Coquitlam, Surrey, etc.)
-          are included. But there are plenty more bike routes (and other
-          instances of bike infrastructure) that are not shown on this map. More
-          routes may be added over time.
+          (North Vancouver, Port Coquitlam, Pitt Meadows, Surrey, etc.) are
+          included. But there are plenty more bike routes (and other instances
+          of bike infrastructure) that are not shown on this map. More routes
+          may be added over time.
         </p>
         <p>
           When played, videos have chapters to make it easy to find a specific
@@ -76,6 +82,12 @@ export default function About({ navigateTo }) {
             see any potentially <em>misleading</em> errors, then let me know via
             email or GitHub below.
           </span>
+        </p>
+        <p>
+          This map features {videoCount} videos with a cumulative length of over{" "}
+          {Math.floor(videoCumulativeMinutes / 60)} hours, covering a unique{" "}
+          {displayDistance(videoUniqueDistanceCovered)} (
+          {displayDistance(videoCumulativeDistance)} in total).
         </p>
 
         <div style={{ paddingTop: "1em" }}>
