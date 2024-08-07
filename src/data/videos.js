@@ -1,6 +1,7 @@
 const VIDEOS = {
   adanacWb: {
     id: "ZDvPnT7PrUo",
+    tlId: "c3NG7hyBGFY",
     date: new Date("2023 10 01"),
     minutes: 18,
   },
@@ -41,6 +42,7 @@ const VIDEOS = {
   },
   arbutusGreenwayNb: {
     id: "EyhC1Qqacy8",
+    tlId: "5zt1PCU880A",
     date: new Date("2023 12 16"),
     minutes: 28,
   },
@@ -999,6 +1001,7 @@ const VIDEOS = {
   },
   seaToRiverNb: {
     id: "Fuq2nBBk0IM",
+    tlId: "7Ha1qGOiSzs",
     date: new Date("2023 12 23"),
     minutes: 40,
   },
@@ -1054,6 +1057,7 @@ const VIDEOS = {
   },
   sunriseNb: {
     id: "YGhkRf0VmKw",
+    tlId: "F3GbU4qjhYY",
     date: new Date("2023 08 26"),
     minutes: 34,
   },
