@@ -166,12 +166,21 @@ export default function useFilters() {
 
   const isSegmentHidden = (segment) => {
     const videoCount = (segment.videoIds ?? []).length;
+    const isTypeHidden = !filters.types[normalizeType(segment.type)];
+    const isDirectionalityHidden = !filters.directions[segment.oneWay];
+    const isElevationHidden =
+      !filters.elevations[normalizeElevation(segment.elevation)];
+
+    if (segment.filterImmune) {
+      return false;
+    }
+
     if (
       segment.undesignated &&
       filters.videos &&
       segment.videoIds?.length > 0
     ) {
-      return false;
+      return isTypeHidden || isDirectionalityHidden || isElevationHidden;
     }
 
     if (
@@ -179,10 +188,6 @@ export default function useFilters() {
       !segment.videoIds?.includes(selectedVideo?.id)
     ) {
       return true;
-    }
-
-    if (segment.filterImmune) {
-      return false;
     }
 
     if (filters.videos === "incomplete" && segment.oneWay && videoCount > 0) {
@@ -197,19 +202,7 @@ export default function useFilters() {
       return true;
     }
 
-    if (!filters.types[normalizeType(segment.type)]) {
-      return true;
-    }
-
-    if (!filters.directions[segment.oneWay]) {
-      return true;
-    }
-
-    if (!filters.elevations[normalizeElevation(segment.elevation)]) {
-      return true;
-    }
-
-    return false;
+    return isTypeHidden || isDirectionalityHidden || isElevationHidden;
   };
 
   useIncompleteVideoView(dispatchFilters);
