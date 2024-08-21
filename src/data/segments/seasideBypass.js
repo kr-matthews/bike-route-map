@@ -148,17 +148,26 @@ export const SEASIDE_BYPASS = [
   // false creek south
   {
     routeNames: [ROUTES.seasideBypass.name],
-    description: "cypress to fir",
+    description: "cypress to pine",
     type: "quiet",
-    videoIds: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
+    videoIds: [
+      VIDEOS.seasideBypassFalseCreekSouthEb.id,
+      VIDEOS.seasideBypassFalseCreekSouthWb.id,
+    ],
     positions: [
       CYPRESS_1ST,
       CHESTNUT_1ST,
       BURRARD_1ST_W,
       BURRARD_1ST_E,
       PINE_1ST,
-      PARKING_LOT_ON_1ST,
     ],
+  },
+  {
+    routeNames: [ROUTES.seasideBypass.name],
+    description: "pine to fir",
+    type: "quiet",
+    videoIds: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
+    positions: [PINE_1ST, PARKING_LOT_ON_1ST],
   },
   {
     routeNames: [ROUTES.seasideBypass.name],
@@ -175,21 +184,27 @@ export const SEASIDE_BYPASS = [
   },
   {
     routeNames: [ROUTES.seasideBypass.name],
-    description: "fir to 1st",
+    description: "fir: parking lot to 1st",
     type: "quiet",
     oneWay: "recommended",
-    positions: [
-      FIR_1ST_E,
-      FIR_1ST_N,
-      [49.27072, -123.14156],
-      PARKING_LOT_ON_1ST,
-    ],
+    videoIds: [VIDEOS.seasideBypassFalseCreekSouthWb.id],
+    positions: [FIR_1ST_E, FIR_1ST_N],
+  },
+  {
+    routeNames: [ROUTES.seasideBypass.name],
+    description: "1st: fir to parking lot",
+    type: "quiet",
+    oneWay: "recommended",
+    positions: [FIR_1ST_N, [49.27072, -123.14156], PARKING_LOT_ON_1ST],
   },
   {
     routeNames: [ROUTES.seasideBypass.name],
     description: "false creek primary",
     type: "quiet",
-    videoIds: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
+    videoIds: [
+      VIDEOS.seasideBypassFalseCreekSouthEb.id,
+      VIDEOS.seasideBypassFalseCreekSouthWb.id,
+    ],
     positions: [
       FIR_1ST_E,
       [49.27051, -123.14104],
@@ -272,7 +287,11 @@ export const SEASIDE_BYPASS = [
     routeNames: [ROUTES.seasideBypass.name],
     description: "false creek east of spyglass",
     type: "quiet",
-    videoIds: [VIDEOS.seasideBypassFalseCreekSouthEb.id, VIDEOS.yukonSb.id],
+    videoIds: [
+      VIDEOS.seasideBypassFalseCreekSouthWb.id,
+      VIDEOS.seasideBypassFalseCreekSouthEb.id,
+      VIDEOS.yukonSb.id,
+    ],
     positions: [
       SPYGLASS_COMMODORE,
       CAMBIE_1ST_N,
@@ -323,6 +342,7 @@ export const SEASIDE_BYPASS = [
     description: "1st wb",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.seasideBypassFalseCreekSouthWb.id],
     positions: [
       ONTARIO_1ST_NE,
       ONTARIO_1ST_N,
@@ -356,7 +376,10 @@ export const SEASIDE_BYPASS = [
     description: "1st quebec to ontario",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.centralValleyVancouverWb.id],
+    videoIds: [
+      VIDEOS.seasideBypassFalseCreekSouthWb.id,
+      VIDEOS.centralValleyVancouverWb.id,
+    ],
     positions: [QUEBEC_1ST_NW, ONTARIO_1ST_NE],
   },
   {
@@ -774,6 +797,8 @@ export const SEASIDE_BYPASS = [
     description: "quebec sb no lane",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.seasideBypassFalseCreekSouthWb.id],
+    videoIdsStartAtStart: [VIDEOS.seasideBypassFalseCreekSouthWb.id],
     positions: [
       QUEBEC_QUEBEC_NW,
       QUEBEC_QUEBEC_SW,
@@ -797,6 +822,7 @@ export const SEASIDE_BYPASS = [
     description: "quebec sb painted",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.seasideBypassFalseCreekSouthWb.id],
     positions: [
       QUEBEC_TERMINAL_SW,
       [49.27255, -123.10191],
@@ -810,6 +836,7 @@ export const SEASIDE_BYPASS = [
     description: "quebec sb protected",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.seasideBypassFalseCreekSouthWb.id],
     positions: [
       QUEBEC_BEFORE_SWITCHMEN,
       [49.27127, -123.10242],

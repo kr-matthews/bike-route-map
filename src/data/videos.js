@@ -951,8 +951,15 @@ const VIDEOS = {
   },
   seasideBypassFalseCreekSouthEb: {
     id: "8xY4bwZ0GrE",
+    tlId: "T8cHVJitn2A",
     date: new Date("2023 12 16"),
     minutes: 15,
+  },
+  seasideBypassFalseCreekSouthWb: {
+    id: "_jfQWw7Uc-Q",
+    tlId: "jAuKYqXXPVk",
+    date: new Date("2024 08 13"),
+    minutes: 13,
   },
   seasideBypassMarine4thEb: {
     id: "wcGNy4zlMKY",
@@ -961,6 +968,7 @@ const VIDEOS = {
   },
   seasideBypassPacificEb: {
     id: "lvA_CEemgRM",
+    tlId: "4WMJ2A7gYo8",
     date: new Date("2024 04 10"),
     minutes: 11,
   },

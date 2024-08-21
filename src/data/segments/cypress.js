@@ -168,7 +168,8 @@ export const CYPRESS = [
     description: "1st to york",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.cypressNb.id],
+    videoIds: [VIDEOS.cypressNb.id, VIDEOS.seasideBypassFalseCreekSouthWb.id],
+    videoIdsEndAtEnd: [VIDEOS.seasideBypassFalseCreekSouthWb.id],
     positions: [CYPRESS_1ST, CYPRESS_1ST_NE, CYPRESS_YORK_SE],
   },
   {

@@ -83,16 +83,25 @@ export const SEASIDE = [
   {
     description: "road/path connection",
     type: "quiet",
+    videoIds: [VIDEOS.seasideBypassFalseCreekSouthWb.id],
     positions: [FIR_1ST_NW, FIR_1ST_N],
   },
   {
-    description: "1st/fir connection",
+    description: "1st/fir connection 1",
     type: "dedicated",
+    videoIds: [VIDEOS.seasideBypassFalseCreekSouthWb.id],
     positions: [
       PINE_1ST,
       [49.27067, -123.14319],
       [49.27066, -123.14179],
       [49.27074, -123.14161],
+      FIR_1ST_NW,
+    ],
+  },
+  {
+    description: "1st/fir connection 2",
+    type: "dedicated",
+    positions: [
       FIR_1ST_NW,
       [49.27098, -123.14133],
       [49.27102, -123.14126],

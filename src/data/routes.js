@@ -1249,7 +1249,10 @@ export const ROUTES = {
       },
       {
         name: "False Creek South",
-        videos: { eastbound: VIDEOS.seasideBypassFalseCreekSouthEb },
+        videos: {
+          eastbound: VIDEOS.seasideBypassFalseCreekSouthEb,
+          westbound: VIDEOS.seasideBypassFalseCreekSouthWb,
+        },
       },
       { name: "York & 3rd", videos: {} },
       {
