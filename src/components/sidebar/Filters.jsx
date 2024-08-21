@@ -7,7 +7,7 @@ import { VIEWS } from "./Sidebar";
 const videoOptions = [undefined, true, false];
 
 const getVideoOptionName = (option) =>
-  option ? "With video" : option === false ? "Without video" : "All";
+  option ? "With video" : option === false ? "Without video" : "All Designated";
 
 export default function Filters({ navigateTo }) {
   const { filters, dispatchFilters } = useContext(FilterContext);
