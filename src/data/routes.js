@@ -9,7 +9,7 @@ import { VIDEOS } from "./videos";
 // YVR: ferguson; inglis; other paths...; ...more
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
-// West Vancouver: water ln+; horseshoe bay dr; westport+; hwy; bellevue; ...more
+// West Vancouver: horseshoe bay dr; westport+; hwy; bellevue; ...more
 // Surrey: scott rd; alex fraser; timbers; fraser hwy;
 // Delta:
 
