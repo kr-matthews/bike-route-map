@@ -1,4 +1,8 @@
-import { CRANLEY_MARINE, ROYAL_CHATHAM } from "../intersections";
+import {
+  CRANLEY_MARINE,
+  MARINE_MARINE_MARINE,
+  ROYAL_CHATHAM,
+} from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
@@ -240,7 +244,7 @@ export const MARINE_DR = [
       [49.37032, -123.27701],
       [49.37009, -123.27645],
       [49.37003, -123.27634],
-      [49.36984, -123.27619],
+      MARINE_MARINE_MARINE,
       [49.36947, -123.2762],
       [49.36911, -123.27624],
       [49.36877, -123.27627],

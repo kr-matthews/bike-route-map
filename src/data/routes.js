@@ -9,7 +9,7 @@ import { VIDEOS } from "./videos";
 // YVR: ferguson; inglis; other paths...; ...more
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
-// West Vancouver: horseshoe bay dr; westport+; hwy; bellevue; ...more
+// West Vancouver: hwy; westport+; bellevue; ...more
 // Surrey: scott rd; alex fraser; timbers; fraser hwy;
 // Delta:
 
@@ -725,6 +725,11 @@ export const ROUTES = {
     legs: [
       { videos: { northbound: VIDEOS.hornbyNb, southbound: VIDEOS.hornbySb } },
     ],
+  },
+  horseshoeBay: {
+    name: "Horseshoe Bay Dr",
+    cities: [WEST_VANCOUVER],
+    legs: [{ videos: {} }],
   },
   howes: {
     name: "Howes St",

@@ -75,6 +75,7 @@ import { HIGHLAND_PARK_LINE } from "./highlandParkLine";
 import { HILLCREST } from "./hillcrest";
 import { HOMER } from "./homer";
 import { HORNBY } from "./hornby";
+import { HORSESHOE_BAY } from "./horseshoeBay";
 import { HOWES } from "./howes";
 import { IMPERIAL } from "./imperial";
 import { IMPERIAL_POWERLINE } from "./imperialPowerline";
@@ -266,6 +267,7 @@ export const SEGMENTS = [
   ...HILLCREST,
   ...HOMER,
   ...HORNBY,
+  ...HORSESHOE_BAY,
   ...HOWES,
   ...IMPERIAL,
   ...IMPERIAL_POWERLINE,
