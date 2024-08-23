@@ -93,6 +93,7 @@ import { LONDON_DUBLIN_GREENWAY } from "./londonDublin";
 import { LOUGHEED } from "./lougheed";
 import { LYNAS } from "./lynas";
 import { MARINE } from "./marine";
+import { MARINE_DR } from "./marineDr";
 import { MARINE_WAY } from "./marineWay";
 import { MARRY_HILL_BYPASS } from "./maryHillBypass";
 import { MASUMI_MITSUI_GREENWAY } from "./masumiMitsui";
@@ -282,6 +283,7 @@ export const SEGMENTS = [
   ...LOUGHEED,
   ...LYNAS,
   ...MARINE,
+  ...MARINE_DR,
   ...MARINE_WAY,
   ...MARRY_HILL_BYPASS,
   ...MASUMI_MITSUI_GREENWAY,

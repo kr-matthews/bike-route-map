@@ -9,7 +9,7 @@ import { VIDEOS } from "./videos";
 // YVR: ferguson; inglis; other paths...; ...more
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
-// West Vancouver: marine dr; mathers+; old train; hwy; keith;
+// West Vancouver: seaview+; water ln+; horseshoe bay dr; westport+; hwy; bellevue; ...more
 // Surrey: scott rd; alex fraser; timbers; fraser hwy;
 // Delta:
 
@@ -854,6 +854,12 @@ export const ROUTES = {
     name: "SW Marine",
     cities: [VANCOUVER, UBC],
     legs: [{ videos: { eastbound: VIDEOS.swMarineEb } }],
+  },
+  marineDr: {
+    name: "Marine Dr (West Vancouver)",
+    shortName: "Marine (West V.)",
+    cities: [WEST_VANCOUVER],
+    legs: [{ videos: { westbound: VIDEOS.marineDrWb } }],
   },
   marineWay: {
     name: "Marine Way",
