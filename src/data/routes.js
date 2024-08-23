@@ -9,7 +9,7 @@ import { VIDEOS } from "./videos";
 // YVR: ferguson; inglis; other paths...; ...more
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
-// West Vancouver: seaview+; water ln+; horseshoe bay dr; westport+; hwy; bellevue; ...more
+// West Vancouver: water ln+; horseshoe bay dr; westport+; hwy; bellevue; ...more
 // Surrey: scott rd; alex fraser; timbers; fraser hwy;
 // Delta:
 
@@ -1272,6 +1272,11 @@ export const ROUTES = {
     name: "Sea to River",
     cities: [BURNABY],
     legs: [{ videos: { northbound: VIDEOS.seaToRiverNb } }],
+  },
+  seaview: {
+    name: "Seaview",
+    cities: [WEST_VANCOUVER],
+    legs: [{ videos: {} }],
   },
   secondNarrowsBridge: {
     name: "Second Narrows Bridge",

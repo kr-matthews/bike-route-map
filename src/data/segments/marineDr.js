@@ -1,11 +1,10 @@
-import {} from "../intersections";
+import { CRANLEY_MARINE, ROYAL_CHATHAM } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 const NELSON_MARINE = [49.37029, -123.27978];
 const MARINE_ORCHILL = [49.36328, -123.27737];
 const MARINE_ORCHILL_S = [49.36324, -123.27739];
-const CRANLEY_MARINE = [49.35669, -123.26444];
 const WESTPORT_MARINE = [49.35293, -123.26065];
 const BEACON_MARINE = [49.34072, -123.26325];
 const THIRTY_FIRST_MARINE_E = [49.34025, -123.20273];
@@ -55,7 +54,7 @@ export const MARINE_DR = [
       [49.37078, -123.27892],
       [49.37185, -123.27815],
       [49.37178, -123.27799],
-      [49.37147, -123.2772],
+      ROYAL_CHATHAM,
       [49.37448, -123.27419],
     ],
   },
