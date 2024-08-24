@@ -556,6 +556,12 @@ const VIDEOS = {
     date: new Date("2024 05 31"),
     minutes: 5,
   },
+  kensingtonNb: {
+    id: "csHg5VuOfkg",
+    tlId: "13S0nwPOatc",
+    date: new Date("Aug 22 2024"),
+    minutes: 8,
+  },
   kentWb: {
     id: "S7VZgDfZ4XU",
     tlId: "GuJGxJipGtw",

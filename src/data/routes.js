@@ -763,7 +763,7 @@ export const ROUTES = {
     name: "Kensington Urban Trail",
     shortName: "Kensington Trail",
     cities: [BURNABY],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.kensingtonNb } }],
   },
   kent: {
     name: "Kent",
