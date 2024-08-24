@@ -1,7 +1,10 @@
-import { MARINE_MARINE_MARINE } from "../intersections";
+import {
+  EAGLERIDGE_PATH_START,
+  HORSESHOE_BAY_SW,
+  MARINE_MARINE_MARINE,
+} from "../intersections";
 import { ROUTES } from "../routes";
 
-const EAGLERIDGE_PATH_START = [49.36113, -123.27236];
 const EAGLERIDGE_HORSESHOE_BAY_SE = [49.36139, -123.27346];
 const WB_SHOULDER_START = [49.36146, -123.27371];
 const HORSESHOE_BAY_MARINE_SW = [49.36882, -123.27517];
@@ -52,6 +55,8 @@ export const HORSESHOE_BAY = [
     elevation: 0.5,
     positions: [MARINE_OVERPASS_E, HORSESHOE_BAY_MARINE_SW],
   },
+
+  // nb
   {
     routeNames: [ROUTES.horseshoeBay.name],
     description: "path: hwy 1 -> eagleridge",
@@ -239,6 +244,8 @@ export const HORSESHOE_BAY = [
       [49.38869, -123.25581],
     ],
   },
+
+  // sb
   {
     routeNames: [ROUTES.horseshoeBay.name],
     description: "sb: pasco to marine",
@@ -376,7 +383,7 @@ export const HORSESHOE_BAY = [
       [49.36452, -123.27583],
       [49.36431, -123.27592],
       [49.36398, -123.27605],
-      [49.36385, -123.27609],
+      HORSESHOE_BAY_SW,
     ],
   },
 ];

@@ -9,7 +9,7 @@ import { VIDEOS } from "./videos";
 // YVR: ferguson; inglis; other paths...; ...more
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
-// West Vancouver: hwy; westport+; bellevue; ...more
+// West Vancouver: westport+; bellevue; ...more
 // Surrey: scott rd; alex fraser; timbers; fraser hwy;
 // Delta:
 
@@ -1370,6 +1370,12 @@ export const ROUTES = {
     shortName: "Thunderbird Blvd",
     cities: [UBC],
     legs: [{ videos: {} }],
+  },
+  transCanadaHwy: {
+    name: "Trans Canada Hwy",
+    isIncomplete: true,
+    cities: [WEST_VANCOUVER],
+    legs: [{ name: "West Vancouver", videos: {} }],
   },
   transCanada: {
     name: "Trans Canada Trail",

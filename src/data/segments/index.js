@@ -164,6 +164,7 @@ import { TERMINAL_PATH } from "./terminalPath";
 import { THIRD } from "./third";
 import { THUNDERBIRD } from "./thunderbird";
 import { TRANS_CANADA } from "./transCanada";
+import { TRANS_CANADA_HWY } from "./transCanadaHwy";
 import { TWENTY_NINTH } from "./twentyNinth";
 import { TWENTY_SECOND } from "./twentySecond";
 import { UNIVERSITY } from "./university";
@@ -264,6 +265,7 @@ export const SEGMENTS = [
   ...HEATHER,
   ...HIGHBURY,
   ...HIGHLAND_PARK_LINE,
+  ...TRANS_CANADA_HWY,
   ...HILLCREST,
   ...HOMER,
   ...HORNBY,
