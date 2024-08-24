@@ -17,7 +17,7 @@ const KENSINGTON_TRANS_CANADA_N = [49.28083, -122.97002];
 
 export const TRANS_CANADA = [
   {
-    routeNames: [ROUTES.transCanada.name],
+    routeNames: [ROUTES.transCanadaTrail.name],
     description: "from bridgeway",
     type: "mixed",
     videoIds: [VIDEOS.seaToRiverNb.id],
@@ -32,7 +32,7 @@ export const TRANS_CANADA = [
     ],
   },
   {
-    routeNames: [ROUTES.transCanada.name],
+    routeNames: [ROUTES.transCanadaTrail.name],
     description: "~second narrows bridge to sea to river",
     type: "other",
     videoIds: [VIDEOS.seaToRiverNb.id],
@@ -71,7 +71,7 @@ export const TRANS_CANADA = [
     ],
   },
   {
-    routeNames: [ROUTES.transCanada.name],
+    routeNames: [ROUTES.transCanadaTrail.name],
     description: "sea to river to willingdon",
     type: "other",
     positions: [
@@ -112,7 +112,7 @@ export const TRANS_CANADA = [
     ],
   },
   {
-    routeNames: [ROUTES.transCanada.name],
+    routeNames: [ROUTES.transCanadaTrail.name],
     description: "willingdon and/to penzance",
     type: "mixed",
     positions: [
@@ -141,7 +141,7 @@ export const TRANS_CANADA = [
     ],
   },
   {
-    routeNames: [ROUTES.transCanada.name],
+    routeNames: [ROUTES.transCanadaTrail.name],
     description: "penzance to fell",
     type: "other",
     positions: [
@@ -195,7 +195,7 @@ export const TRANS_CANADA = [
     ],
   },
   {
-    routeNames: [ROUTES.transCanada.name],
+    routeNames: [ROUTES.transCanadaTrail.name],
     description: "fell",
     type: "quiet",
     positions: [
@@ -209,7 +209,7 @@ export const TRANS_CANADA = [
     ],
   },
   {
-    routeNames: [ROUTES.transCanada.name],
+    routeNames: [ROUTES.transCanadaTrail.name],
     description: "connect to frances union",
     type: "mixed",
     positions: [
@@ -219,7 +219,7 @@ export const TRANS_CANADA = [
     ],
   },
   {
-    routeNames: [ROUTES.transCanada.name],
+    routeNames: [ROUTES.transCanadaTrail.name],
     description: "to kensington",
     type: "mixed",
     positions: [
@@ -236,7 +236,7 @@ export const TRANS_CANADA = [
     ],
   },
   {
-    routeNames: [ROUTES.transCanada.name],
+    routeNames: [ROUTES.transCanadaTrail.name],
     description: "kensington",
     type: "quiet",
     positions: [
@@ -246,7 +246,7 @@ export const TRANS_CANADA = [
     ],
   },
   {
-    routeNames: [ROUTES.transCanada.name],
+    routeNames: [ROUTES.transCanadaTrail.name],
     description: "along hastings",
     type: "mixed",
     positions: [

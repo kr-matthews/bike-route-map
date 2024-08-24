@@ -100,7 +100,7 @@ export const FRANCES_UNION = [
     ],
   },
   {
-    routeNames: [ROUTES.francesUnion.name, ROUTES.transCanada.name],
+    routeNames: [ROUTES.francesUnion.name, ROUTES.transCanadaTrail.name],
     description: "through kensington park 2: trans canada",
     type: "mixed",
     videoIds: [VIDEOS.francesUnionWb.id],

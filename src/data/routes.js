@@ -1377,7 +1377,7 @@ export const ROUTES = {
     cities: [WEST_VANCOUVER],
     legs: [{ name: "West Vancouver", videos: {} }],
   },
-  transCanada: {
+  transCanadaTrail: {
     name: "Trans Canada Trail",
     isIncomplete: true,
     cities: [VANCOUVER, BURNABY],
