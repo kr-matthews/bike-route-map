@@ -767,6 +767,12 @@ const VIDEOS = {
     date: new Date("2024 04 15"),
     minutes: 8,
   },
+  oaklandBurrisEb: {
+    id: "mU_EXUHFxks",
+    tlId: "_VvbQyyeYNw",
+    date: new Date("Aug 22 2024"),
+    minutes: 9,
+  },
   odlinWb: {
     id: "0JgtTJluzv8",
     date: new Date("2024 05 28"),

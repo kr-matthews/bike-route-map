@@ -1,4 +1,5 @@
 import {
+  SUSSEX_GRANGE_SE,
   SUSSEX_HAZEL_NE,
   SUSSEX_HAZEL_NW,
   SUSSEX_HAZEL_S,
@@ -24,13 +25,16 @@ export const NORTH_SOUTH = [
     description: "sussex south end nb",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.oaklandBurrisEb.id, VIDEOS.metrotownCw.id],
+    videoIdsStartAtStart: [VIDEOS.oaklandBurrisEb.id],
+    positions: [SUSSEX_HAZEL_S, SUSSEX_HAZEL_NE, SUSSEX_GRANGE_SE],
+  },
+  {
+    routeNames: [ROUTES.northSouth.name],
+    description: "sussex crossing grange",
+    type: "dedicated",
     videoIds: [VIDEOS.metrotownCw.id],
-    positions: [
-      SUSSEX_HAZEL_S,
-      SUSSEX_HAZEL_NE,
-      [49.22985, -122.99777],
-      SUSSEX_GRANGE_N,
-    ],
+    positions: [SUSSEX_GRANGE_SE, SUSSEX_GRANGE_N],
   },
   {
     routeNames: [ROUTES.northSouth.name],

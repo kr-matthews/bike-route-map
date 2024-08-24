@@ -4,21 +4,48 @@ import {
   ROYAL_OAK_DEER_LAKE_NW,
   ROYAL_OAK_DOVER_NW,
   ROYAL_OAK_DOVER_SW,
+  SUSSEX_GRANGE_SE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const NELSON_DOVER_SE = [49.2298, -122.99409];
+const MCMURRAY_GRANGE_SW = [49.22983, -122.99661];
 const ROYAL_OAK_SANDERS_NW = [49.22801, -122.9891];
 const MARLBOROUGH_SANDERS_NE = [49.228, -122.99144];
 const ROYAL_OAK_MAITLAND = [49.23102, -122.98895];
 const ROYAL_OAK_SIDE_STREET_N = [49.23519, -122.98894];
 
 export const ROYAL_OAK = [
+  // ! move to oakland/burris file
+  {
+    description: "grange lane from sussex",
+    type: "dedicated",
+    oneWay: "required",
+    videoIds: [VIDEOS.oaklandBurrisEb.id],
+    positions: [SUSSEX_GRANGE_SE, [49.22984, -122.99729], MCMURRAY_GRANGE_SW],
+  },
+  {
+    description: "grange shared",
+    type: "shared",
+    oneWay: "required",
+    undesignated: true,
+    videoIds: [VIDEOS.oaklandBurrisEb.id],
+    positions: [
+      MCMURRAY_GRANGE_SW,
+      [49.2299, -122.9963],
+      [49.2299, -122.99552],
+      [49.22988, -122.99505],
+      [49.22987, -122.99439],
+      NELSON_DOVER_SE,
+    ],
+  },
   {
     description: "dover",
     type: "mixed",
+    videoIds: [VIDEOS.oaklandBurrisEb.id],
     positions: [
-      [49.2298, -122.99409],
+      NELSON_DOVER_SE,
       [49.22981, -122.99401],
       [49.22981, -122.99178],
       [49.2298, -122.99095],

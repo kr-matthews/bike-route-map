@@ -1016,9 +1016,9 @@ export const ROUTES = {
   },
   oaklandBurris: {
     name: "Oakland St/Burris St",
-    shortName: "Oakland St",
+    shortName: "Oakland/Burris",
     cities: [BURNABY],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.oaklandBurrisEb } }],
   },
   oakStreetBridge: {
     name: "Oak Street Bridge",

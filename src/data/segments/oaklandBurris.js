@@ -1,22 +1,50 @@
 import {
-  BUCKINGHAM_BURRIS_N,
-  BUCKINGHAM_BURRIS_S,
+  BUCKINGHAM_BURRIS,
   ROYAL_OAK_DOVER_NW,
   ROYAL_OAK_DOVER_SW,
+  SIXTH_BURRIS,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const OAKLAND_PL_W = [49.22964, -122.98856];
 const PEARL_OAKLAND_S = [49.22965, -122.98737];
 const OAKDALE_OAKLAND_NE = [49.22969, -122.9856];
+const EB_PRE_GILLEY = [49.2294, -122.97421];
+const GILLEY_OAKLAND_S = [49.22936, -122.97201];
+const CANADA_WAY_BURRIS = [49.23551, -122.95449];
 
 export const OAKLAND_BURRIS = [
+  {
+    description: "buckingham to canada way",
+    type: "shared",
+    undesignated: true,
+    videoIds: [VIDEOS.oaklandBurrisEb.id],
+    positions: [BUCKINGHAM_BURRIS, [49.2354, -122.95463], CANADA_WAY_BURRIS],
+  },
+  {
+    description: "canada way to midtown",
+    type: "quiet",
+    undesignated: true,
+    videoIds: [VIDEOS.oaklandBurrisEb.id],
+    videoIdsEndAtEnd: [VIDEOS.oaklandBurrisEb.id],
+    positions: [
+      CANADA_WAY_BURRIS,
+      [49.23562, -122.95436],
+      [49.23598, -122.95406],
+      [49.23746, -122.95132],
+      [49.23752, -122.9512],
+      SIXTH_BURRIS,
+    ],
+  },
+
   // eb
   {
     routeNames: [ROUTES.oaklandBurris.name],
     description: "eb: oakland to oakland pl",
     type: "comfortable",
     oneWay: "recommended",
+    videoIds: [VIDEOS.oaklandBurrisEb.id],
     positions: [ROYAL_OAK_DOVER_SW, [49.22978, -122.98875], OAKLAND_PL_W],
   },
   {
@@ -24,6 +52,7 @@ export const OAKLAND_BURRIS = [
     description: "eb: oakland pl",
     type: "quiet",
     oneWay: "recommended",
+    videoIds: [VIDEOS.oaklandBurrisEb.id],
     positions: [
       OAKLAND_PL_W,
       [49.2296, -122.98848],
@@ -34,9 +63,10 @@ export const OAKLAND_BURRIS = [
   },
   {
     routeNames: [ROUTES.oaklandBurris.name],
-    description: "eb: lane",
+    description: "eb: lane to before gilley",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.oaklandBurrisEb.id],
     positions: [
       PEARL_OAKLAND_S,
       [49.22958, -122.98691],
@@ -65,7 +95,25 @@ export const OAKLAND_BURRIS = [
       [49.22938, -122.97612],
       [49.2294, -122.97587],
       [49.22942, -122.97562],
-      [49.22936, -122.97201],
+      EB_PRE_GILLEY,
+    ],
+  },
+  {
+    routeNames: [ROUTES.oaklandBurris.name],
+    description: "eb: gilley right-turn lane",
+    type: "shared",
+    oneWay: "required",
+    videoIds: [VIDEOS.oaklandBurrisEb.id],
+    positions: [EB_PRE_GILLEY, GILLEY_OAKLAND_S],
+  },
+  {
+    routeNames: [ROUTES.oaklandBurris.name],
+    description: "eb: lane after gilley",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [VIDEOS.oaklandBurrisEb.id],
+    positions: [
+      GILLEY_OAKLAND_S,
       [49.22933, -122.97115],
       [49.22926, -122.97021],
       [49.22924, -122.96904],
@@ -81,7 +129,8 @@ export const OAKLAND_BURRIS = [
       [49.23056, -122.96326],
       [49.23122, -122.96204],
       [49.23258, -122.95961],
-      BUCKINGHAM_BURRIS_S,
+      [49.23387, -122.95729],
+      BUCKINGHAM_BURRIS,
     ],
   },
 
@@ -92,7 +141,8 @@ export const OAKLAND_BURRIS = [
     type: "painted",
     oneWay: "required",
     positions: [
-      BUCKINGHAM_BURRIS_N,
+      BUCKINGHAM_BURRIS,
+      [49.23393, -122.95739],
       [49.23264, -122.9597],
       [49.23129, -122.96214],
       [49.23008, -122.96433],
