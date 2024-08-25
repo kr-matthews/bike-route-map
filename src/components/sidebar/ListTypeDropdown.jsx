@@ -6,6 +6,7 @@ import {
   UBC,
   VANCOUVER,
   VISIBLE,
+  WEST_VANCOUVER,
 } from "../../data/routes";
 
 const options = [
@@ -16,6 +17,7 @@ const options = [
   BURNABY,
   NEW_WESTMINSTER,
   RICHMOND,
+  WEST_VANCOUVER,
 ];
 
 export function ListTypeDropdown({ selected, setSelected }) {
