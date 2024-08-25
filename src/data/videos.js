@@ -613,11 +613,13 @@ const VIDEOS = {
   },
   lionsGateBridgeNb: {
     id: "KbhPPsdOzIE",
+    tlId: "ulv24XpdYhQ",
     date: new Date("2023 06 14"),
     minutes: 17,
   },
   lionsGateBridgeSb: {
     id: "eHio3HMRIMw",
+    tlId: "L8Tr3d4yhiA",
     date: new Date("2023 06 14"),
     minutes: 13,
   },
