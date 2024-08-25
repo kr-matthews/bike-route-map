@@ -1,10 +1,13 @@
 import {
+  EIGHTEENTH_BELLEVUE,
   LIONS_GATE_SPIRIT_TRAIL_E,
   LIONS_GATE_SPIRIT_TRAIL_W,
+  THIRTEENTH_ARGYLE_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const EIGHTEENTH_SPIRIT_TRAIL = [49.3273, -123.16223];
 const ARGYLE_16TH = [49.32727, -123.15891];
 const ARGYLE_14TH = [49.32714, -123.15455];
 const CAPILANO_BRIDGE_WEST = [49.32468, -123.13366];
@@ -28,12 +31,17 @@ const E_3RD_OVERPASS_EAST = [49.30862, -123.05059];
 
 export const SPIRIT_TRAIL = [
   {
+    description: "18th, connect with bellevue",
+    type: "quiet",
+    positions: [EIGHTEENTH_SPIRIT_TRAIL, EIGHTEENTH_BELLEVUE],
+  },
+  {
     routeNames: [ROUTES.spiritTrail.name],
     description: "to 16th",
     type: "comfortable",
     elevation: 0.5,
     positions: [
-      [49.3273, -123.16224],
+      EIGHTEENTH_SPIRIT_TRAIL,
       [49.32728, -123.16083],
       [49.32728, -123.16038],
       [49.32729, -123.16012],
@@ -66,7 +74,7 @@ export const SPIRIT_TRAIL = [
       [49.32709, -123.15432],
       [49.32695, -123.15331],
       [49.32689, -123.15292],
-      [49.32678, -123.15234],
+      THIRTEENTH_ARGYLE_W,
       [49.32675, -123.15234],
       [49.32669, -123.15228],
       [49.32656, -123.15207],

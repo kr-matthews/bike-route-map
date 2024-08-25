@@ -13,6 +13,7 @@ import { BALACLAVA } from "./balaclava";
 import { BARNET } from "./barnet";
 import { BC_PARKWAY } from "./bcParkway";
 import { BEATTY } from "./beatty";
+import { BELLEVUE } from "./bellevue";
 import { BIG_BEND_PATH } from "./bigBendPath";
 import { BLANCA } from "./blanca";
 import { BOUNDARY } from "./boundary";
@@ -206,6 +207,7 @@ export const SEGMENTS = [
   ...BARNET,
   ...BC_PARKWAY,
   ...BEATTY,
+  ...BELLEVUE,
   ...BIG_BEND_PATH,
   ...BLANCA,
   ...BOUNDARY,

@@ -2,6 +2,10 @@ import {
   CRANLEY_MARINE,
   MARINE_MARINE_MARINE,
   ROYAL_CHATHAM,
+  THIRTY_FIRST_MARINE_NE,
+  THIRTY_FIRST_MARINE_SE,
+  TWENTY_NINTH_MARINE_N,
+  TWENTY_NINTH_MARINE_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -15,7 +19,6 @@ const PICCADILLY_PILOT_HOUSE = [49.33891, -123.25509];
 const HIGHWAY_PICCADILLY = [49.34028, -123.25189];
 const PICCADILLY_MARINE = [49.34106, -123.24838];
 const THIRTY_FIRST_MARINE_E = [49.34025, -123.20273];
-const THIRTY_FIRST_MARINE_NE = [49.34024, -123.20256];
 const TWENTY_SIXTH_MARINE_E = [49.33568, -123.18545];
 const MARINE_BEYOND_13TH = [49.32737, -123.15029];
 const PARK_ROYAL_MARINE_NW = [49.32699, -123.14053];
@@ -569,7 +572,7 @@ export const MARINE_DR = [
     oneWay: "required",
     positions: [
       THIRTY_FIRST_MARINE_E,
-      [49.34017, -123.2026],
+      THIRTY_FIRST_MARINE_SE,
       [49.3401, -123.20221],
       [49.33988, -123.20095],
       [49.33982, -123.20069],
@@ -578,7 +581,7 @@ export const MARINE_DR = [
       [49.33863, -123.1974],
       [49.3384, -123.19678],
       [49.33829, -123.19638],
-      [49.3378, -123.19436],
+      TWENTY_NINTH_MARINE_S,
       [49.33682, -123.19039],
       [49.33645, -123.18885],
       [49.33567, -123.18561],
@@ -596,7 +599,7 @@ export const MARINE_DR = [
       [49.33573, -123.18557],
       [49.33652, -123.18886],
       [49.3369, -123.19043],
-      [49.33786, -123.19431],
+      TWENTY_NINTH_MARINE_N,
       [49.33837, -123.19648],
       [49.33955, -123.19974],
       [49.3398, -123.20037],

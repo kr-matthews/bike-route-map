@@ -9,7 +9,7 @@ import { VIDEOS } from "./videos";
 // YVR: ferguson; inglis; other paths...; ...more
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
-// West Vancouver: westport+; bellevue; ...more
+// West Vancouver: westport+; ...more
 // Surrey: scott rd; alex fraser; timbers; fraser hwy;
 // Delta:
 
@@ -253,6 +253,11 @@ export const ROUTES = {
         videos: { northbound: VIDEOS.beattyNb, southbound: VIDEOS.beattySb },
       },
     ],
+  },
+  bellevue: {
+    name: "Bellevue Ave",
+    cities: [WEST_VANCOUVER],
+    legs: [{ videos: {} }],
   },
   bigBendPath: {
     name: "Big Bend Path",
