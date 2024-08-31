@@ -135,7 +135,8 @@ export const ROUTES = {
     legs: [{ videos: {} }],
   },
   agronomy: {
-    name: "Agronomy Rd",
+    name: "Agronomy Rd/Toronto Rd",
+    shortName: "Agronomy/Toronto",
     cities: [UBC],
     legs: [{ videos: {} }],
   },

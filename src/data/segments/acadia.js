@@ -1,5 +1,6 @@
 import {
   ACADIA_OSOYOOS,
+  ACADIA_TORONTO,
   ACADIA_UNIVERSITY_N,
   ACADIA_UNIVERSITY_S,
 } from "../intersections";
@@ -20,7 +21,7 @@ export const ACADIA = [
       [49.26325, -123.23573],
       [49.26342, -123.23587],
       [49.26485, -123.23705],
-      [49.26594, -123.2379],
+      ACADIA_TORONTO,
       ACADIA_UNIVERSITY_S,
       ACADIA_UNIVERSITY_N,
     ],
