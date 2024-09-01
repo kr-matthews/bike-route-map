@@ -10,6 +10,7 @@ import {
   WEST_MALL_AGRONOMY_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const UNIVERSITY_TORONTO_WW = [49.26624, -123.23704];
 
@@ -18,12 +19,15 @@ export const AGRONOMY = [
     routeNames: [ROUTES.agronomy.name],
     description: "marine to west mall",
     type: "quiet",
+    videoIds: [VIDEOS.agronomyEb.id],
+    videoIdsStartAtStart: [VIDEOS.agronomyEb.id],
     positions: [MARINE_AGRONOMY, [49.26024, -123.25381], WEST_MALL_AGRONOMY_N],
   },
   {
     routeNames: [ROUTES.agronomy.name],
     description: "west mall to university path",
     type: "quiet",
+    videoIds: [VIDEOS.agronomyEb.id],
     positions: [
       WEST_MALL_AGRONOMY_S,
       [49.26006, -123.25064],
@@ -52,6 +56,8 @@ export const AGRONOMY = [
   {
     description: "university shared path",
     type: "mixed",
+    videoIds: [VIDEOS.agronomyEb.id],
+    videoIdsEndAtEnd: [VIDEOS.agronomyEb.id],
     positions: [
       UNIVERSITY_TORONTO_WW,
       [49.26612, -123.23678],

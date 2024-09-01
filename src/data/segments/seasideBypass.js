@@ -1123,6 +1123,8 @@ export const SEASIDE_BYPASS = [
   {
     description: "seawall to quebec/pacific",
     type: "combined",
+    videoIds: [VIDEOS.dunsmuirEb.id],
+    videoIdsEndAtStart: [VIDEOS.dunsmuirEb.id],
     positions: [
       QUEBEC_SEAWALL,
       [49.27565, -123.10301],
@@ -1166,7 +1168,7 @@ export const SEASIDE_BYPASS = [
     ],
   },
   {
-    description: "quebec connection from keefer sb",
+    description: "quebec connection from keefer to union sb",
     type: "painted",
     oneWay: "required",
     positions: [
@@ -1176,14 +1178,20 @@ export const SEASIDE_BYPASS = [
       [49.279, -123.10218],
       [49.27866, -123.10218],
       QUEBEC_UNION_NW,
-      QUEBEC_UNION_SW,
-      QUEBEC_SB_AFTER_UNION,
     ],
+  },
+  {
+    description: "quebec connection from union sb",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [VIDEOS.dunsmuirEb.id],
+    positions: [QUEBEC_UNION_NW, QUEBEC_UNION_SW, QUEBEC_SB_AFTER_UNION],
   },
   {
     description: "quebec: beyond union to expo",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.dunsmuirEb.id],
     positions: [
       QUEBEC_SB_AFTER_UNION,
       [49.27717, -123.10223],

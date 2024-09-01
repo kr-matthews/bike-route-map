@@ -138,7 +138,7 @@ export const ROUTES = {
     name: "Agronomy Rd/Toronto Rd",
     shortName: "Agronomy/Toronto",
     cities: [UBC],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.agronomyEb } }],
   },
   alberni: {
     name: "Alberni St",
@@ -506,7 +506,11 @@ export const ROUTES = {
   cypress: {
     name: "Cypress",
     cities: [VANCOUVER],
-    legs: [{ videos: { northbound: VIDEOS.cypressNb } }],
+    legs: [
+      {
+        videos: { northbound: VIDEOS.cypressNb, southbound: VIDEOS.cypressSb },
+      },
+    ],
   },
   deerLakeParkway: {
     name: "Deer Lake Parkway Urban Trail",
@@ -536,7 +540,11 @@ export const ROUTES = {
   dunsmuir: {
     name: "Dunsmuir",
     cities: [VANCOUVER],
-    legs: [{ videos: { westbound: VIDEOS.dunsmuirWb } }],
+    legs: [
+      {
+        videos: { eastbound: VIDEOS.dunsmuirEb, westbound: VIDEOS.dunsmuirWb },
+      },
+    ],
   },
   dunsmuirMelvillePender: {
     name: "Dunsmuir St/Melville St/Pender St",
@@ -864,7 +872,11 @@ export const ROUTES = {
   marineSw: {
     name: "SW Marine",
     cities: [VANCOUVER, UBC],
-    legs: [{ videos: { eastbound: VIDEOS.swMarineEb } }],
+    legs: [
+      {
+        videos: { eastbound: VIDEOS.swMarineEb, westbound: VIDEOS.swMarineWb },
+      },
+    ],
   },
   marineDr: {
     name: "Marine Dr (West Vancouver)",

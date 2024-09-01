@@ -11,6 +11,7 @@ import {
   WEST_MALL_UNIVERSITY_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const WEST_MALL_STADIUM_S = [49.2553, -123.24795];
 const WEST_MALL_STADIUM_N = [49.25546, -123.24812];
@@ -116,6 +117,7 @@ export const WEST_MALL = [
     routeNames: [ROUTES.westMall.name, ROUTES.agronomy.name],
     description: "agronomy overlap",
     type: "quiet",
+    videoIds: [VIDEOS.agronomyEb.id],
     positions: [
       WEST_MALL_AGRONOMY_S,
       [49.25995, -123.2518],

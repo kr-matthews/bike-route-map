@@ -62,6 +62,7 @@ const WEST_OF_MARINE_MARINE = [49.25727, -123.25394];
 const WEST_OF_CAMOSUN = [49.23506, -123.1977];
 
 const MARINE_AVERY = [49.20801, -123.14222];
+const MARINE_AVERY_SOUTHER = [49.20627, -123.14228];
 
 const PRE_PRE_STADIUM_LANE_START = [49.25339, -123.24837];
 const PRE_STADIUM_LANE_START = [49.25348, -123.24849];
@@ -84,8 +85,12 @@ export const MARINE = [
     description: "from arthur laing",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.arbutusGreenwayNb.id, VIDEOS.arthurLaingNb.id],
-    videoIdsStartAtStart: [VIDEOS.arbutusGreenwayNb.id],
+    videoIds: [
+      VIDEOS.swMarineWb.id,
+      VIDEOS.arbutusGreenwayNb.id,
+      VIDEOS.arthurLaingNb.id,
+    ],
+    videoIdsStartAtStart: [VIDEOS.swMarineWb.id, VIDEOS.arbutusGreenwayNb.id],
     positions: [
       MARINE_ARTHUR_LAING_N,
       [49.2049, -123.13956],
@@ -98,7 +103,11 @@ export const MARINE = [
     description: "gas station sidewalk",
     type: "other",
     oneWay: "required",
-    videoIds: [VIDEOS.arbutusGreenwayNb.id, VIDEOS.arthurLaingNb.id],
+    videoIds: [
+      VIDEOS.swMarineWb.id,
+      VIDEOS.arbutusGreenwayNb.id,
+      VIDEOS.arthurLaingNb.id,
+    ],
     positions: [
       GRANVILLE_SIDEWALK_START,
       [49.20522, -123.14015],
@@ -112,14 +121,22 @@ export const MARINE = [
     description: "crossing granville",
     type: "shared",
     oneWay: "recommended",
-    videoIds: [VIDEOS.arbutusGreenwayNb.id, VIDEOS.arthurLaingNb.id],
+    videoIds: [
+      VIDEOS.swMarineWb.id,
+      VIDEOS.arbutusGreenwayNb.id,
+      VIDEOS.arthurLaingNb.id,
+    ],
     positions: [GRANVILLE_GAS_STATION, [49.20525, -123.1406], GRANVILLE_MARINE],
   },
   {
     routeNames: [ROUTES.marineSw.name],
-    description: "parallel to granville",
+    description: "parallel to granville - 1",
     type: "shared",
-    videoIds: [VIDEOS.swMarineEb.id, VIDEOS.arthurLaingSb.id],
+    videoIds: [
+      VIDEOS.swMarineWb.id,
+      VIDEOS.swMarineEb.id,
+      VIDEOS.arthurLaingSb.id,
+    ],
     positions: [
       GRANVILLE_MARINE,
       [49.20532, -123.14134],
@@ -128,19 +145,32 @@ export const MARINE = [
       [49.20566, -123.14205],
       [49.20579, -123.14219],
       [49.20597, -123.14228],
-      [49.20627, -123.14228],
-      [49.20709, -123.14226],
-      MARINE_AVERY,
+      MARINE_AVERY_SOUTHER,
     ],
   },
   {
     routeNames: [ROUTES.marineSw.name],
-    description: "parallel to granville - last bit",
+    description: "parallel to granville - 2",
     type: "shared",
     videoIds: [
+      VIDEOS.swMarineWb.id,
+      VIDEOS.swMarineEb.id,
+      VIDEOS.arthurLaingSb.id,
+      VIDEOS.cypressSb.id,
+    ],
+    videoIdsEndAtStart: [VIDEOS.cypressSb.id],
+    positions: [MARINE_AVERY_SOUTHER, [49.20709, -123.14226], MARINE_AVERY],
+  },
+  {
+    routeNames: [ROUTES.marineSw.name],
+    description: "parallel to granville - 3",
+    type: "shared",
+    videoIds: [
+      VIDEOS.swMarineWb.id,
       VIDEOS.swMarineEb.id,
       VIDEOS.arthurLaingSb.id,
       VIDEOS.cypressNb.id,
+      VIDEOS.cypressSb.id,
     ],
     videoIdsStartAtStart: [VIDEOS.cypressNb.id],
     positions: [MARINE_AVERY, [49.20844, -123.14219], MARINE_70TH_S],
@@ -149,7 +179,7 @@ export const MARINE = [
     routeNames: [ROUTES.marineSw.name],
     description: "crossing granville at cornish",
     type: "shared",
-    videoIds: [VIDEOS.cypressNb.id],
+    videoIds: [VIDEOS.swMarineWb.id, VIDEOS.cypressNb.id, VIDEOS.cypressSb.id],
     positions: [MARINE_70TH_S, MARINE_70TH_N],
   },
   {
@@ -174,6 +204,7 @@ export const MARINE = [
     description: "sw marine wb primary to camosun",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.swMarineWb.id],
     positions: [
       MARINE_70TH_N,
       [49.20863, -123.14372],
@@ -239,7 +270,7 @@ export const MARINE = [
     description: "sw marine wb at camosun",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.midtownVancouverEb.id],
+    videoIds: [VIDEOS.swMarineWb.id, VIDEOS.midtownVancouverEb.id],
     positions: [MARINE_41ST_NW, CAMOSUN_MARINE_N],
   },
   {
@@ -247,6 +278,7 @@ export const MARINE = [
     description: "sw marine wb camosun to 16th",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.swMarineWb.id],
     positions: [
       CAMOSUN_MARINE_N,
       [49.23585, -123.19966],
@@ -283,6 +315,7 @@ export const MARINE = [
     type: "shared",
     oneWay: "required",
     hideArrows: true,
+    videoIds: [VIDEOS.swMarineWb.id],
     positions: [MARINE_16TH_SSE, POST_TO_16TH_SLIP],
   },
   {
@@ -290,6 +323,7 @@ export const MARINE = [
     description: "sw marine wb crossing 16th",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.swMarineWb.id],
     positions: [
       POST_TO_16TH_SLIP,
       [49.25194, -123.2464],
@@ -303,6 +337,7 @@ export const MARINE = [
     type: "shared",
     oneWay: "required",
     hideArrows: true,
+    videoIds: [VIDEOS.swMarineWb.id],
     positions: [PRE_FROM_16TH_SLIP, MARINE_16TH_NNE],
   },
   {
@@ -310,7 +345,11 @@ export const MARINE = [
     description: "sw marine wb 16th to pre-stadium lane",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.nwMarineEb.id, VIDEOS.sixteenthWb.id],
+    videoIds: [
+      VIDEOS.swMarineWb.id,
+      VIDEOS.nwMarineEb.id,
+      VIDEOS.sixteenthWb.id,
+    ],
     videoIdsEndAtEnd: [VIDEOS.sixteenthWb.id],
     positions: [MARINE_16TH_NNE, PRE_PRE_STADIUM_LANE_START],
   },
@@ -320,7 +359,7 @@ export const MARINE = [
     type: "shared",
     oneWay: "required",
     hideArrows: true,
-    videoIds: [VIDEOS.nwMarineEb.id],
+    videoIds: [VIDEOS.swMarineWb.id, VIDEOS.nwMarineEb.id],
     positions: [PRE_PRE_STADIUM_LANE_START, PRE_STADIUM_LANE_START],
   },
   {
@@ -328,7 +367,7 @@ export const MARINE = [
     description: "sw marine wb transition to pre-stadium lane",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.nwMarineEb.id],
+    videoIds: [VIDEOS.swMarineWb.id, VIDEOS.nwMarineEb.id],
     positions: [PRE_STADIUM_LANE_START, MARINE_STADIUM_SE],
   },
   {
@@ -336,7 +375,7 @@ export const MARINE = [
     description: "sw marine wb stadium to nw marine",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.nwMarineEb.id],
+    videoIds: [VIDEOS.swMarineWb.id, VIDEOS.nwMarineEb.id],
     positions: [
       MARINE_STADIUM_SE,
       MARINE_STADIUM_NE,
@@ -513,8 +552,13 @@ export const MARINE = [
     routeNames: [ROUTES.marineNw.name],
     description: "just north of marine-marine",
     type: "shared",
-    videoIds: [VIDEOS.nwMarineEb.id, VIDEOS.swMarineEb.id],
+    videoIds: [
+      VIDEOS.nwMarineEb.id,
+      VIDEOS.swMarineEb.id,
+      VIDEOS.swMarineWb.id,
+    ],
     videoIdsStartAtEnd: [VIDEOS.swMarineEb.id],
+    videoIdsEndAtEnd: [VIDEOS.swMarineWb.id],
     positions: [
       MARINE_MARINE,
       [49.25694, -123.25349],

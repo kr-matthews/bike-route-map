@@ -401,7 +401,7 @@ export const SEASIDE = [
   },
   {
     routeNames: [ROUTES.seaside.name],
-    description: "kits - whyte-ish to chestnut",
+    description: "kits - whyte-ish to cypress",
     type: "quiet",
     videoIds: [VIDEOS.seasideKitsWb.id],
     positions: [
@@ -414,9 +414,15 @@ export const SEASIDE = [
       [49.27721, -123.14991],
       [49.27693, -123.1483],
       CYPRESS_OGDEN,
-      [49.2768, -123.14746],
-      CHESTNUT_OGDEN,
     ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "kits - cypress to chestnut",
+    type: "quiet",
+    videoIds: [VIDEOS.seasideKitsWb.id, VIDEOS.cypressSb.id],
+    videoIdsStartAtEnd: [VIDEOS.cypressSb.id],
+    positions: [CYPRESS_OGDEN, [49.2768, -123.14746], CHESTNUT_OGDEN],
   },
   {
     routeNames: [ROUTES.seaside.name],

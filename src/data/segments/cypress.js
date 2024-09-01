@@ -36,14 +36,14 @@ export const CYPRESS = [
     routeNames: [ROUTES.cypress.name],
     description: "cornish",
     type: "quiet",
-    videoIds: [VIDEOS.cypressNb.id],
+    videoIds: [VIDEOS.cypressNb.id, VIDEOS.cypressSb.id],
     positions: [MARINE_70TH_N, CORNISH_68TH],
   },
   {
     routeNames: [ROUTES.cypress.name],
     description: "68th to king edward",
     type: "quiet",
-    videoIds: [VIDEOS.cypressNb.id],
+    videoIds: [VIDEOS.cypressNb.id, VIDEOS.cypressSb.id],
     positions: [
       ADERA_68TH,
       [49.2123, -123.14356],
@@ -87,7 +87,7 @@ export const CYPRESS = [
     routeNames: [ROUTES.cypress.name],
     description: "angus to 1st",
     type: "quiet",
-    videoIds: [VIDEOS.cypressNb.id],
+    videoIds: [VIDEOS.cypressSb.id, VIDEOS.cypressNb.id],
     positions: [
       ANGUS_MATTHEWS_W,
       [49.25126, -123.14725],
@@ -114,7 +114,7 @@ export const CYPRESS = [
     routeNames: [ROUTES.cypress.name],
     description: "north end",
     type: "quiet",
-    videoIds: [VIDEOS.cypressNb.id],
+    videoIds: [VIDEOS.cypressSb.id, VIDEOS.cypressNb.id],
     videoIdsEndAtEnd: [VIDEOS.cypressNb.id],
     positions: [
       CYPRESS_CORNWALL_N,
@@ -154,6 +154,7 @@ export const CYPRESS = [
     description: "angus median sb",
     type: "quiet",
     oneWay: "required",
+    videoIds: [VIDEOS.cypressSb.id],
     positions: [
       ANGUS_MATTHEWS_W,
       [49.25067, -123.14596],
@@ -192,6 +193,7 @@ export const CYPRESS = [
     description: "cornwall to york",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.cypressSb.id],
     positions: [CYPRESS_CORNWALL_N, CYPRESS_CORNWALL_SW, CYPRESS_YORK_SW],
   },
   {
@@ -199,7 +201,7 @@ export const CYPRESS = [
     description: "york to 1st",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
+    videoIds: [VIDEOS.cypressSb.id, VIDEOS.seasideBypassFalseCreekSouthEb.id],
     videoIdsStartAtStart: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
     positions: [CYPRESS_YORK_SW, CYPRESS_1ST_NW, CYPRESS_1ST],
   },

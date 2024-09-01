@@ -5,6 +5,12 @@ const VIDEOS = {
     date: new Date("2023 10 01"),
     minutes: 18,
   },
+  agronomyEb: {
+    id: "ciz8N2cCmeo",
+    tlId: "za3yVlQ-ZJk",
+    date: new Date("Aug 28 2024"),
+    minutes: 7,
+  },
   alberniEb: {
     id: "Fcwzc-ldljw",
     date: new Date("2024 04 26"),
@@ -306,8 +312,15 @@ const VIDEOS = {
   },
   cypressNb: {
     id: "6Gyv4URZdvQ",
+    tlId: "YU1XLjmZn2c",
     date: new Date("2023 11 25"),
     minutes: 28,
+  },
+  cypressSb: {
+    id: "smWvx23dIp8",
+    tlId: "k1QkepnoTx4",
+    date: new Date("Aug 28 2024"),
+    minutes: 27,
   },
   deerLakePkwyEb: {
     id: "php-7VypXRw",
@@ -335,6 +348,12 @@ const VIDEOS = {
     tlId: "7bLJtRLUwTg",
     date: new Date("2024 07 02"),
     minutes: 9,
+  },
+  dunsmuirEb: {
+    id: "YB8lU8P89Cw",
+    tlId: "6TKtJnQHlgU",
+    date: new Date("Aug 30 2024"),
+    minutes: 7,
   },
   dunsmuirWb: {
     id: "ILxsM_6s064",
@@ -762,6 +781,7 @@ const VIDEOS = {
   },
   nwMarineEb: {
     id: "t1EWe9TW-rw",
+    tlId: "iR6hAt-vsSo",
     date: new Date("2024 02 23"),
     minutes: 19,
   },
@@ -788,6 +808,7 @@ const VIDEOS = {
   },
   offBroadwayWb: {
     id: "7nKl_moRiog",
+    tlId: "EhVYuefIxr8",
     date: new Date("2023 06 07"),
     minutes: 37,
   },
@@ -1085,8 +1106,15 @@ const VIDEOS = {
   },
   swMarineEb: {
     id: "l-DWh9zHOAo",
+    tlId: "mCoAd95hyiQ",
     date: new Date("2023 08 19"),
     minutes: 23,
+  },
+  swMarineWb: {
+    id: "l1yuywfPO4E",
+    tlId: "kLH41lYm864",
+    date: new Date("Aug 28 2024"),
+    minutes: 30,
   },
   marineDrWb: {
     id: "-uRlqcWlK5M",
