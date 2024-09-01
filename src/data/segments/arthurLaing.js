@@ -9,11 +9,11 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-const SOUTHBOUND_ELEVATION_START = [49.20434, -123.13851];
+const SOUTHBOUND_ELEVATION_START = [49.20403, -123.13767];
 const SOUTHBOUND_ELEVATION_END = [49.19611, -123.13778];
 
 const NORTHBOUND_ELEVATION_START = [49.19607, -123.13747];
-const NORTHBOUND_ELEVATION_END = [49.20442, -123.13833];
+const NORTHBOUND_ELEVATION_END = [49.20417, -123.13754];
 
 export const ARTHUR_LAING = [
   // south ends
@@ -60,7 +60,6 @@ export const ARTHUR_LAING = [
     videoIds: [VIDEOS.arthurLaingSb.id],
     positions: [
       SOUTHBOUND_ELEVATION_START,
-      [49.20378, -123.13694],
       [49.20347, -123.13611],
       [49.20334, -123.1358],
       [49.20322, -123.13558],
@@ -162,11 +161,9 @@ export const ARTHUR_LAING = [
       [49.20317, -123.13501],
       [49.20325, -123.13516],
       [49.20331, -123.13529],
-      [49.20338, -123.13546],
-      [49.20348, -123.13573],
-      [49.20377, -123.13649],
-      [49.204, -123.13711],
-      [49.20419, -123.13766],
+      [49.20336, -123.13537],
+      [49.20351, -123.13572],
+      [49.20393, -123.1369],
       NORTHBOUND_ELEVATION_END,
     ],
   },
