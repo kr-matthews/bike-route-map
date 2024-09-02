@@ -1,4 +1,5 @@
 import {
+  GREENLEAF_WESTPORT,
   THIRTY_FIRST_MARINE_E,
   THIRTY_FIRST_MARINE_NE,
   TWENTY_NINTH_MARINE_N,
@@ -25,13 +26,21 @@ const THIRTY_FIRST_MATHERS_E = [49.34215, -123.20309];
 export const WESTPORT_MATHERS = [
   {
     routeNames: [ROUTES.westportMathers.name],
-    description: "westport",
+    description: "westport: marine to greenleaf",
     type: "shared",
     positions: [
       WESTPORT_MARINE,
       [49.35301, -123.25933],
       [49.35304, -123.25923],
-      [49.35308, -123.25917],
+      GREENLEAF_WESTPORT,
+    ],
+  },
+  {
+    routeNames: [ROUTES.westportMathers.name],
+    description: "westport: from greenleaf",
+    type: "shared",
+    positions: [
+      GREENLEAF_WESTPORT,
       [49.35321, -123.25907],
       [49.35336, -123.25898],
       [49.35348, -123.25894],

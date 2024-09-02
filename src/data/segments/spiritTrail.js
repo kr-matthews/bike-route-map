@@ -1,4 +1,6 @@
 import {
+  ARGYLE_14TH_E,
+  ARGYLE_14TH_W,
   EIGHTEENTH_BELLEVUE,
   LIONS_GATE_SPIRIT_TRAIL_E,
   LIONS_GATE_SPIRIT_TRAIL_W,
@@ -9,7 +11,6 @@ import { VIDEOS } from "../videos";
 
 const EIGHTEENTH_SPIRIT_TRAIL = [49.3273, -123.16223];
 const ARGYLE_16TH = [49.32727, -123.15891];
-const ARGYLE_14TH = [49.32714, -123.15455];
 const CAPILANO_BRIDGE_WEST = [49.32468, -123.13366];
 const CAPILANO_BRIDGE_EAST = [49.32425, -123.13265];
 const AFTER_LIONS_GATE = [49.32322, -123.13118];
@@ -60,7 +61,7 @@ export const SPIRIT_TRAIL = [
       [49.32724, -123.15876],
       [49.32719, -123.15679],
       [49.32715, -123.15458],
-      ARGYLE_14TH,
+      ARGYLE_14TH_W,
     ],
   },
   {
@@ -69,9 +70,9 @@ export const SPIRIT_TRAIL = [
     type: "comfortable",
     elevation: 0.5,
     positions: [
-      ARGYLE_14TH,
+      ARGYLE_14TH_W,
       [49.3271, -123.15451],
-      [49.32709, -123.15432],
+      ARGYLE_14TH_E,
       [49.32695, -123.15331],
       [49.32689, -123.15292],
       THIRTEENTH_ARGYLE_W,

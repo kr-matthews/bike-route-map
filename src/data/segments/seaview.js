@@ -2,6 +2,7 @@ import { CRANLEY_MARINE, ROYAL_CHATHAM } from "../intersections";
 import { ROUTES } from "../routes";
 
 const CRANLEY_SEAVIEW = [49.36009, -123.2631];
+const NELSON_CREEK = [49.36071, -123.26241];
 const OLD_TRACKS_E = [49.36109, -123.26325];
 const SEAVIEW_RALEIGH = [49.37052, -123.27582];
 
@@ -25,7 +26,7 @@ export const SEAVIEW = [
   },
   {
     routeNames: [ROUTES.seaview.name],
-    description: "cranley to old tracks",
+    description: "cranley good path",
     type: "mixed",
     positions: [
       CRANLEY_SEAVIEW,
@@ -35,7 +36,15 @@ export const SEAVIEW = [
       [49.36039, -123.26251],
       [49.36048, -123.26245],
       [49.36065, -123.26234],
-      [49.36071, -123.26241],
+      NELSON_CREEK,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaview.name],
+    description: "steep zig zags",
+    type: "other",
+    positions: [
+      NELSON_CREEK,
       [49.36073, -123.26244],
       [49.36075, -123.26251],
       [49.3608, -123.26254],

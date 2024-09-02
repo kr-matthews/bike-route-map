@@ -9,7 +9,7 @@ import { VIDEOS } from "./videos";
 // YVR: ferguson; inglis; other paths...; ...more
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
-// West Vancouver: greenleaf; spirit trail alt.; caulfield+; ...more
+// West Vancouver: spirit trail alt.; caulfield+; ...more
 // Surrey: scott rd; alex fraser; timbers; fraser hwy;
 // Delta:
 
@@ -882,7 +882,12 @@ export const ROUTES = {
     name: "Marine Dr (West Vancouver)",
     shortName: "Marine (West V.)",
     cities: [WEST_VANCOUVER],
-    legs: [{ videos: { westbound: VIDEOS.marineDrWb } }],
+    legs: [
+      { videos: { westbound: VIDEOS.marineDrWb } },
+      { name: "St Georges Ave", videos: {} },
+      { name: "Greenleaf Rd", videos: {} },
+      { name: "Water Ln/Piccadilly S", videos: {} },
+    ],
   },
   marineWay: {
     name: "Marine Way",

@@ -1,5 +1,7 @@
 import {
   CRANLEY_MARINE,
+  GREENLEAF_WESTPORT,
+  MARINE_GREENLEAF,
   MARINE_MARINE_MARINE,
   ROYAL_CHATHAM,
   THIRTY_FIRST_MARINE_E,
@@ -24,6 +26,26 @@ const MARINE_BEYOND_13TH = [49.32737, -123.15029];
 const PARK_ROYAL_MARINE_NW = [49.32699, -123.14053];
 
 export const MARINE_DR = [
+  // horseshoe bay
+  {
+    description: "nelson/royal",
+    type: "shared",
+    videoIds: [VIDEOS.marineDrWb.id],
+    videoIdsEndAtEnd: [VIDEOS.marineDrWb.id],
+    positions: [
+      NELSON_MARINE,
+      [49.37048, -123.27947],
+      [49.37061, -123.27911],
+      [49.37067, -123.27901],
+      [49.37078, -123.27892],
+      [49.37185, -123.27815],
+      [49.37178, -123.27799],
+      ROYAL_CHATHAM,
+      [49.37448, -123.27419],
+    ],
+  },
+
+  // st georges
   {
     description: "orchill/st georges/nelson",
     type: "quiet",
@@ -51,21 +73,40 @@ export const MARINE_DR = [
       NELSON_MARINE,
     ],
   },
+
+  // greenleaf
   {
-    description: "nelson/royal",
-    type: "shared",
-    videoIds: [VIDEOS.marineDrWb.id],
-    videoIdsEndAtEnd: [VIDEOS.marineDrWb.id],
+    description: "greenleaf",
+    type: "quiet",
     positions: [
-      NELSON_MARINE,
-      [49.37048, -123.27947],
-      [49.37061, -123.27911],
-      [49.37067, -123.27901],
-      [49.37078, -123.27892],
-      [49.37185, -123.27815],
-      [49.37178, -123.27799],
-      ROYAL_CHATHAM,
-      [49.37448, -123.27419],
+      MARINE_GREENLEAF,
+      [49.35123, -123.26575],
+      [49.35122, -123.26513],
+      [49.35124, -123.26476],
+      [49.35131, -123.2644],
+      [49.35132, -123.26424],
+      [49.3513, -123.26409],
+      [49.35123, -123.26383],
+      [49.35122, -123.26377],
+      [49.35117, -123.26341],
+      [49.35118, -123.2633],
+      [49.35118, -123.26284],
+      [49.3512, -123.26215],
+      [49.35122, -123.26169],
+      [49.35123, -123.26126],
+      [49.35126, -123.2609],
+      [49.35133, -123.26066],
+      [49.35143, -123.26045],
+      [49.35154, -123.26024],
+      [49.35178, -123.25992],
+      [49.35215, -123.25956],
+      [49.35247, -123.25926],
+      [49.35264, -123.25915],
+      [49.3528, -123.25905],
+      [49.3529, -123.25903],
+      [49.35297, -123.25904],
+      [49.35301, -123.25908],
+      GREENLEAF_WESTPORT,
     ],
   },
 
@@ -393,7 +434,7 @@ export const MARINE_DR = [
       [49.35195, -123.2658],
       [49.3518, -123.26595],
       [49.35165, -123.26606],
-      [49.35126, -123.2662],
+      MARINE_GREENLEAF,
       [49.35099, -123.26631],
       [49.35082, -123.26637],
       [49.35068, -123.26638],

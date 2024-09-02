@@ -1,6 +1,7 @@
 import {
+  ARGYLE_14TH_E,
+  ARGYLE_14TH_W,
   EIGHTEENTH_BELLEVUE,
-  THIRTEENTH_ARGYLE_W,
   THIRTY_FIRST_MARINE_NE,
   THIRTY_FIRST_MARINE_SE,
   TWENTY_NINTH_MARINE_N,
@@ -9,9 +10,12 @@ import {
 import { ROUTES } from "../routes";
 
 const TWENTY_NINTH_PARK = [49.33679, -123.19494];
+const TWENTY_FIFTH_BELLEVUE_N = [49.33402, -123.18243];
 const TWENTY_FIFTH_BELLEVUE_S = [49.3338, -123.18246];
+const TWENTY_FOURTH_BELLEVUE_S = [49.33306, -123.1793];
 const TWENTY_FOURTH_BELLEVUE_N = [49.33325, -123.1793];
 const TWENTY_SECOND_BELLEVUE = [49.32977, -123.17107];
+const FOURTEENTH_BELLEVUE = [49.32731, -123.15445];
 
 export const BELLEVUE = [
   {
@@ -91,26 +95,35 @@ export const BELLEVUE = [
   },
   {
     routeNames: [ROUTES.bellevue.name],
-    description: "split eb",
+    description: "split eb 1",
     type: "quiet",
     oneWay: "required",
-    positions: [
-      TWENTY_FIFTH_BELLEVUE_S,
-      [49.33306, -123.1793],
-      TWENTY_FOURTH_BELLEVUE_N,
-    ],
+    positions: [TWENTY_FIFTH_BELLEVUE_S, TWENTY_FOURTH_BELLEVUE_S],
   },
   {
     routeNames: [ROUTES.bellevue.name],
-    description: "split wb",
+    description: "split eb 2",
+    type: "quiet",
+    oneWay: "recommended",
+    positions: [TWENTY_FOURTH_BELLEVUE_S, TWENTY_FOURTH_BELLEVUE_N],
+  },
+  {
+    routeNames: [ROUTES.bellevue.name],
+    description: "split wb 1",
     type: "quiet",
     oneWay: "required",
     positions: [
       TWENTY_FOURTH_BELLEVUE_N,
       [49.33331, -123.17945],
-      [49.33402, -123.18243],
-      TWENTY_FIFTH_BELLEVUE_S,
+      TWENTY_FIFTH_BELLEVUE_N,
     ],
+  },
+  {
+    routeNames: [ROUTES.bellevue.name],
+    description: "split wb 2",
+    type: "quiet",
+    oneWay: "recommended",
+    positions: [TWENTY_FIFTH_BELLEVUE_N, TWENTY_FIFTH_BELLEVUE_S],
   },
   {
     routeNames: [ROUTES.bellevue.name],
@@ -136,7 +149,7 @@ export const BELLEVUE = [
   },
   {
     routeNames: [ROUTES.bellevue.name],
-    description: "22nd to 13th/spirit trail",
+    description: "22nd to 14th",
     type: "shared",
     positions: [
       TWENTY_SECOND_BELLEVUE,
@@ -152,11 +165,30 @@ export const BELLEVUE = [
       [49.32741, -123.15694],
       [49.3274, -123.1568],
       [49.32737, -123.15474],
-      [49.32731, -123.15445],
-      [49.3271, -123.15314],
-      [49.32695, -123.15212],
-      [49.32677, -123.15225],
-      THIRTEENTH_ARGYLE_W,
+      FOURTEENTH_BELLEVUE,
+      // [49.3271, -123.15314],
+      // [49.32695, -123.15212],
+      // [49.32677, -123.15225],
+      // THIRTEENTH_ARGYLE_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bellevue.name],
+    description: "14th to spirit trail",
+    type: "quiet",
+    oneWay: "required",
+    positions: [FOURTEENTH_BELLEVUE, [49.32725, -123.15453], ARGYLE_14TH_W],
+  },
+  {
+    routeNames: [ROUTES.bellevue.name],
+    description: "spirit trail to 14th",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      ARGYLE_14TH_E,
+      [49.32716, -123.15438],
+      [49.32725, -123.15438],
+      FOURTEENTH_BELLEVUE,
     ],
   },
 ];
