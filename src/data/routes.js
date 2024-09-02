@@ -9,7 +9,7 @@ import { VIDEOS } from "./videos";
 // YVR: ferguson; inglis; other paths...; ...more
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
-// West Vancouver: westport+; ...more
+// West Vancouver: greenleaf; spirit trail alt.; caulfield+; ...more
 // Surrey: scott rd; alex fraser; timbers; fraser hwy;
 // Delta:
 
@@ -1463,6 +1463,12 @@ export const ROUTES = {
     name: "Westminster Hwy",
     cities: [RICHMOND],
     legs: [{ videos: { westbound: VIDEOS.westminsterWb } }],
+  },
+  westportMathers: {
+    name: "Westport/Southridge/Westmount/Mathers+",
+    shortName: "Westport/Mathers+",
+    cities: [WEST_VANCOUVER],
+    legs: [{ videos: {} }],
   },
   williams: {
     name: "Williams Rd",

@@ -179,6 +179,7 @@ import { WESBROOK } from "./wesbrook";
 import { WEST_DYKE } from "./westDyke";
 import { WEST_MALL } from "./westMall";
 import { WESTMINSTER_HWY } from "./westminsterHwy";
+import { WESTPORT_MATHERS } from "./westportMathers";
 import { WILLIAMS } from "./williams";
 import { WILLINGDON } from "./willingdon";
 import { WILLINGDON_LINEAR_PARK } from "./willingdonLinearPark";
@@ -373,6 +374,7 @@ export const SEGMENTS = [
   ...WEST_DYKE,
   ...WEST_MALL,
   ...WESTMINSTER_HWY,
+  ...WESTPORT_MATHERS,
   ...WILLIAMS,
   ...WILLINGDON,
   ...WILLINGDON_LINEAR_PARK,
