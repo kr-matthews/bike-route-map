@@ -85,8 +85,17 @@ export const CHANCELLOR = [
       [49.26563, -123.21731],
       [49.26561, -123.21575],
       BLANCA_8TH_SW,
-      BLANCA_8TH_E,
     ],
+  },
+  {
+    routeNames: [ROUTES.chancellor.name],
+    description: "crossing blanca eb",
+    type: "quiet",
+    oneWay: "required",
+    hideArrows: true,
+    videoIds: [VIDEOS.offBroadwayEb.id],
+    videoIdsStartAtStart: [VIDEOS.offBroadwayEb.id],
+    positions: [BLANCA_8TH_SW, BLANCA_8TH_E],
   },
   {
     routeNames: [ROUTES.chancellor.name],

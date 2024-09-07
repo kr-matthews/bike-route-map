@@ -14,12 +14,18 @@ const LAKEWOOD_OXFORD_W = [49.2857, -123.06168];
 export const LAKEWOOD = [
   {
     routeNames: [ROUTES.lakewood.name],
-    description: "south of dundas",
+    description: "grandview to 8th",
+    type: "quiet",
+    videoIds: [VIDEOS.centralValleyVancouverEbAlt.id, VIDEOS.lakewoodNb.id],
+    videoIdsEndAtStart: [VIDEOS.centralValleyVancouverEbAlt.id],
+    positions: [LAKEWOOD_GRANDVIEW, [49.26228, -123.06203], LAKEWOOD_8TH],
+  },
+  {
+    routeNames: [ROUTES.lakewood.name],
+    description: "8th to dundas",
     type: "quiet",
     videoIds: [VIDEOS.lakewoodNb.id],
     positions: [
-      LAKEWOOD_GRANDVIEW,
-      [49.26228, -123.06203],
       LAKEWOOD_8TH,
       [49.265, -123.06197],
       [49.26679, -123.06195],

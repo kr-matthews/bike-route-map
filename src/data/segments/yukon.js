@@ -105,6 +105,7 @@ export const YUKON = [
     description: "nb: 7th to 5th",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.offBroadwayEb.id],
     positions: [
       YUKON_7TH_SE,
       YUKON_7TH_NE,

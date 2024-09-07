@@ -438,6 +438,10 @@ export const ROUTES = {
           westbound: VIDEOS.centralValleyVancouverWb,
         },
       },
+      {
+        name: "Broadway & Victoria Dr: Alternate Route",
+        videos: { eastbound: VIDEOS.centralValleyVancouverEbAlt },
+      },
       { name: "Burnaby", videos: {} },
       {
         name: "New Westminster",
@@ -1060,7 +1064,14 @@ export const ROUTES = {
   offBroadway: {
     name: "Off Broadway",
     cities: [VANCOUVER],
-    legs: [{ videos: { westbound: VIDEOS.offBroadwayWb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.offBroadwayEb,
+          westbound: VIDEOS.offBroadwayWb,
+        },
+      },
+    ],
   },
   ontario: {
     name: "Ontario",

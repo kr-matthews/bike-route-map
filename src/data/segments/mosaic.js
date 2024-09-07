@@ -57,7 +57,12 @@ export const MOSAIC = [
     description: "mosaic/off broadway",
     type: "dedicated",
     elevation: 1,
-    videoIds: [VIDEOS.mosaicNb.id, VIDEOS.mosaicSb.id, VIDEOS.offBroadwayWb.id],
+    videoIds: [
+      VIDEOS.mosaicNb.id,
+      VIDEOS.mosaicSb.id,
+      VIDEOS.offBroadwayWb.id,
+      VIDEOS.offBroadwayEb.id,
+    ],
     positions: [WOODLAND_7TH, WOODLAND_GRANDVIEW],
   },
   {

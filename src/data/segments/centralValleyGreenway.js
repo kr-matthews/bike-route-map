@@ -340,6 +340,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
       VIDEOS.centralValleyVancouverEb.id,
       VIDEOS.centralValleyVancouverWb.id,
       VIDEOS.offBroadwayWb.id,
+      VIDEOS.offBroadwayEb.id,
     ],
     positions: [WOODLAND_GRANDVIEW, COMMERCIAL_GRANDVIEW],
   },
@@ -347,7 +348,13 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.offBroadway.name],
     description: "commercial to/from lane",
     type: "dedicated",
-    videoIds: [VIDEOS.centralValleyVancouverWb.id, VIDEOS.offBroadwayWb.id],
+    videoIds: [
+      VIDEOS.centralValleyVancouverEbAlt.id,
+      VIDEOS.centralValleyVancouverWb.id,
+      VIDEOS.offBroadwayWb.id,
+      VIDEOS.offBroadwayEb.id,
+    ],
+    videoIdsStartAtStart: [VIDEOS.centralValleyVancouverEbAlt.id],
     positions: [
       COMMERCIAL_GRANDVIEW,
       [49.26372, -123.06966],
@@ -358,7 +365,12 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.offBroadway.name],
     description: "lane to/from 8th",
     type: "quiet",
-    videoIds: [VIDEOS.centralValleyVancouverWb.id, VIDEOS.offBroadwayWb.id],
+    videoIds: [
+      VIDEOS.centralValleyVancouverEbAlt.id,
+      VIDEOS.centralValleyVancouverWb.id,
+      VIDEOS.offBroadwayWb.id,
+      VIDEOS.offBroadwayEb.id,
+    ],
     positions: [GRANDVIEW_7_HALF_N, GRANDVIEW_8TH_N],
   },
   {

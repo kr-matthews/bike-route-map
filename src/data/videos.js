@@ -253,6 +253,11 @@ const VIDEOS = {
     date: new Date("2023 09 09"),
     minutes: 22,
   },
+  centralValleyVancouverEbAlt: {
+    id: "YY79ck6C0XI",
+    date: new Date("Sept 3 2024"),
+    minutes: 4,
+  },
   centralValleyVancouverWb: {
     id: "OJu4uTKpNX4",
     date: new Date("2024 03 21"),
@@ -805,6 +810,12 @@ const VIDEOS = {
     id: "0JgtTJluzv8",
     date: new Date("2024 05 28"),
     minutes: 10,
+  },
+  offBroadwayEb: {
+    id: "z9VkyLaQIsw",
+    tlId: "qlmZqjkuTtk",
+    date: new Date("Sept 3 2024"),
+    minutes: 37,
   },
   offBroadwayWb: {
     id: "7nKl_moRiog",
