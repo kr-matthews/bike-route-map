@@ -11,6 +11,7 @@ import { VIDEOS } from "../videos";
 
 const EIGHTEENTH_SPIRIT_TRAIL = [49.3273, -123.16223];
 const ARGYLE_16TH = [49.32727, -123.15891];
+const EAST_OF_13TH = [49.3266, -123.15144];
 const CAPILANO_BRIDGE_WEST = [49.32468, -123.13366];
 const CAPILANO_BRIDGE_EAST = [49.32425, -123.13265];
 const AFTER_LIONS_GATE = [49.32322, -123.13118];
@@ -66,12 +67,17 @@ export const SPIRIT_TRAIL = [
   },
   {
     routeNames: [ROUTES.spiritTrail.name],
-    description: "14th to bridge st",
+    description: "across 14th",
     type: "comfortable",
-    elevation: 0.5,
+    positions: [ARGYLE_14TH_W, [49.3271, -123.15451], ARGYLE_14TH_E],
+  },
+  {
+    routeNames: [ROUTES.spiritTrail.name],
+    description: "14th to east of 13th",
+    type: "comfortable",
+    videoIds: [VIDEOS.bellevueWb.id],
+    videoIdsStartAtEnd: [VIDEOS.bellevueWb.id],
     positions: [
-      ARGYLE_14TH_W,
-      [49.3271, -123.15451],
       ARGYLE_14TH_E,
       [49.32695, -123.15331],
       [49.32689, -123.15292],
@@ -83,7 +89,16 @@ export const SPIRIT_TRAIL = [
       [49.32666, -123.15193],
       [49.32668, -123.15181],
       [49.32667, -123.15171],
-      [49.3266, -123.15144],
+      EAST_OF_13TH,
+    ],
+  },
+  {
+    routeNames: [ROUTES.spiritTrail.name],
+    description: "east of 13th to bridge st",
+    type: "comfortable",
+    elevation: 0.5,
+    positions: [
+      EAST_OF_13TH,
       [49.32649, -123.15108],
       [49.32639, -123.1508],
       [49.32587, -123.14957],

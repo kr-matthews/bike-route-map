@@ -122,6 +122,12 @@ const VIDEOS = {
     date: new Date("2023 10 01"),
     minutes: 5,
   },
+  bellevueWb: {
+    id: "2iUTuBJsrFw",
+    tlId: "dfhqjD8MIFw",
+    date: new Date("Sept 1 2024"),
+    minutes: 11,
+  },
   blancaNb: {
     id: "eIDCFw23nHo",
     date: new Date("2024 03 06"),
@@ -1059,6 +1065,12 @@ const VIDEOS = {
     date: new Date("2023 12 23"),
     minutes: 40,
   },
+  seaviewWb: {
+    id: "wyDbpTHy09s",
+    tlId: "31JHBe_72Ko",
+    date: new Date("Sept 1 2024"),
+    minutes: 16,
+  },
   secondNarrowsNb: {
     id: "salLq2Dkfao",
     date: new Date("2024 04 06"),
@@ -1225,6 +1237,12 @@ const VIDEOS = {
     tlId: "YJG8htu0cNc",
     date: new Date("2024 04 23"),
     minutes: 36,
+  },
+  westportMathersWb: {
+    id: "qgDWergznn8",
+    tlId: "b6rUXaER1Iw",
+    date: new Date("Sept 1 2024"),
+    minutes: 25,
   },
   willingdonSb: {
     id: "s58YehJpLE4",

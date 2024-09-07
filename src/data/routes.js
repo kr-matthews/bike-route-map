@@ -258,7 +258,7 @@ export const ROUTES = {
   bellevue: {
     name: "Bellevue Ave",
     cities: [WEST_VANCOUVER],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { westbound: VIDEOS.bellevueWb } }],
   },
   bigBendPath: {
     name: "Big Bend Path",
@@ -1315,7 +1315,7 @@ export const ROUTES = {
   seaview: {
     name: "Seaview",
     cities: [WEST_VANCOUVER],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { westbound: VIDEOS.seaviewWb } }],
   },
   secondNarrowsBridge: {
     name: "Second Narrows Bridge",
@@ -1484,7 +1484,7 @@ export const ROUTES = {
     name: "Westport/Southridge/Westmount/Mathers+",
     shortName: "Westport/Mathers+",
     cities: [WEST_VANCOUVER],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { westbound: VIDEOS.westportMathersWb } }],
   },
   williams: {
     name: "Williams Rd",

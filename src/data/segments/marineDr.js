@@ -28,10 +28,9 @@ const PARK_ROYAL_MARINE_NW = [49.32699, -123.14053];
 export const MARINE_DR = [
   // horseshoe bay
   {
-    description: "nelson/royal",
+    description: "nelson/chatham",
     type: "shared",
     videoIds: [VIDEOS.marineDrWb.id],
-    videoIdsEndAtEnd: [VIDEOS.marineDrWb.id],
     positions: [
       NELSON_MARINE,
       [49.37048, -123.27947],
@@ -41,8 +40,14 @@ export const MARINE_DR = [
       [49.37185, -123.27815],
       [49.37178, -123.27799],
       ROYAL_CHATHAM,
-      [49.37448, -123.27419],
     ],
+  },
+  {
+    description: "royal",
+    type: "shared",
+    videoIds: [VIDEOS.seaviewWb.id, VIDEOS.marineDrWb.id],
+    videoIdsEndAtEnd: [VIDEOS.seaviewWb.id, VIDEOS.marineDrWb.id],
+    positions: [ROYAL_CHATHAM, [49.37448, -123.27419]],
   },
 
   // st georges

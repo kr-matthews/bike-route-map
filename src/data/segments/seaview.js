@@ -1,15 +1,20 @@
 import { CRANLEY_MARINE, ROYAL_CHATHAM } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const CRANLEY_SEAVIEW = [49.36009, -123.2631];
 const NELSON_CREEK = [49.36071, -123.26241];
 const OLD_TRACKS_E = [49.36109, -123.26325];
 const SEAVIEW_RALEIGH = [49.37052, -123.27582];
 
+// most arrays are backwards, according to convention
+
 export const SEAVIEW = [
   {
     description: "cranley",
     type: "quiet",
+    videoIds: [VIDEOS.seaviewWb.id],
+    videoIdsStartAtStart: [VIDEOS.seaviewWb.id],
     positions: [
       CRANLEY_MARINE,
       [49.35708, -123.26406],
@@ -24,10 +29,12 @@ export const SEAVIEW = [
       CRANLEY_SEAVIEW,
     ],
   },
+
   {
     routeNames: [ROUTES.seaview.name],
     description: "cranley good path",
     type: "mixed",
+    videoIds: [VIDEOS.seaviewWb.id],
     positions: [
       CRANLEY_SEAVIEW,
       [49.36018, -123.26294],
@@ -43,6 +50,7 @@ export const SEAVIEW = [
     routeNames: [ROUTES.seaview.name],
     description: "steep zig zags",
     type: "other",
+    videoIds: [VIDEOS.seaviewWb.id],
     positions: [
       NELSON_CREEK,
       [49.36073, -123.26244],
@@ -66,6 +74,7 @@ export const SEAVIEW = [
     routeNames: [ROUTES.seaview.name],
     description: "primary",
     type: "mixed",
+    videoIds: [VIDEOS.seaviewWb.id],
     positions: [
       OLD_TRACKS_E,
       [49.36109, -123.26389],
@@ -166,6 +175,7 @@ export const SEAVIEW = [
   {
     description: "raleigh/royal",
     type: "quiet",
+    videoIds: [VIDEOS.seaviewWb.id],
     positions: [
       SEAVIEW_RALEIGH,
       [49.37082, -123.27656],
