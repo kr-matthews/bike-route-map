@@ -14,13 +14,18 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const WELLINGTON_MARINE = [49.37034, -123.28128];
 const NELSON_MARINE = [49.37029, -123.27978];
 const MARINE_ORCHILL = [49.36328, -123.27737];
 const MARINE_ORCHILL_S = [49.36324, -123.27739];
+const MARINE_VERDUN = [49.35338, -123.26097];
+const MARINE_GREENLEAF_POST = [49.35068, -123.26638];
+const PRE_BEACON_MARINE = [49.34089, -123.26414];
 const BEACON_MARINE = [49.34072, -123.26325];
 const PICCADILLY_PILOT_HOUSE = [49.33891, -123.25509];
 const HIGHWAY_PICCADILLY = [49.34028, -123.25189];
-const PICCADILLY_MARINE = [49.34106, -123.24838];
+const PICCADILLY_S_MARINE = [49.34106, -123.24838];
+const PICCADILLY_N_MARINE = [49.34106, -123.24738];
 const TWENTY_SIXTH_MARINE_E = [49.33568, -123.18545];
 const MARINE_BEYOND_13TH = [49.32737, -123.15029];
 const PARK_ROYAL_MARINE_NW = [49.32699, -123.14053];
@@ -54,6 +59,7 @@ export const MARINE_DR = [
   {
     description: "orchill/st georges/nelson",
     type: "quiet",
+    videoIds: [VIDEOS.stGeorgesEb.id],
     positions: [
       MARINE_ORCHILL,
       [49.3633, -123.2775],
@@ -83,6 +89,7 @@ export const MARINE_DR = [
   {
     description: "greenleaf",
     type: "quiet",
+    videoIds: [VIDEOS.greenleafEb.id],
     positions: [
       MARINE_GREENLEAF,
       [49.35123, -123.26575],
@@ -119,6 +126,7 @@ export const MARINE_DR = [
   {
     description: "beacon/water",
     type: "quiet",
+    videoIds: [VIDEOS.waterPiccadillyEb.id],
     positions: [
       BEACON_MARINE,
       [49.34061, -123.2633],
@@ -150,6 +158,7 @@ export const MARINE_DR = [
     description: "piccadilly s eb",
     type: "quiet",
     oneWay: "required",
+    videoIds: [VIDEOS.waterPiccadillyEb.id],
     positions: [
       PICCADILLY_PILOT_HOUSE,
       [49.33901, -123.25491],
@@ -190,6 +199,7 @@ export const MARINE_DR = [
   {
     description: "piccadilly s",
     type: "quiet",
+    videoIds: [VIDEOS.waterPiccadillyEb.id],
     positions: [
       HIGHWAY_PICCADILLY,
       [49.34037, -123.25172],
@@ -201,14 +211,14 @@ export const MARINE_DR = [
       [49.34114, -123.24954],
       [49.34115, -123.24937],
       [49.34102, -123.24849],
-      PICCADILLY_MARINE,
+      PICCADILLY_S_MARINE,
     ],
   },
 
   // marine
   {
     routeNames: [ROUTES.marineDr.name],
-    description: "whytecliff to nelson",
+    description: "whytecliff to pre-nelson",
     type: "shared",
     positions: [
       [49.37378, -123.28909],
@@ -271,14 +281,20 @@ export const MARINE_DR = [
       [49.37044, -123.28246],
       [49.37041, -123.28226],
       [49.3704, -123.28209],
-      [49.37034, -123.28128],
-      [49.37026, -123.28008],
-      NELSON_MARINE,
+      WELLINGTON_MARINE,
     ],
   },
   {
     routeNames: [ROUTES.marineDr.name],
-    description: "nelson to westport",
+    description: "wellington to nelson",
+    type: "shared",
+    videoIds: [VIDEOS.stGeorgesEb.id],
+    videoIdsStartAtStart: [VIDEOS.stGeorgesEb.id],
+    positions: [WELLINGTON_MARINE, [49.37026, -123.28008], NELSON_MARINE],
+  },
+  {
+    routeNames: [ROUTES.marineDr.name],
+    description: "nelson to orchill",
     type: "shared",
     videoIds: [VIDEOS.marineDrWb.id],
     positions: [
@@ -319,6 +335,22 @@ export const MARINE_DR = [
       [49.36358, -123.27725],
       [49.36337, -123.27733],
       MARINE_ORCHILL,
+    ],
+  },
+  {
+    routeNames: [ROUTES.marineDr.name],
+    description: "at orchill",
+    type: "shared",
+    videoIds: [VIDEOS.marineDrWb.id, VIDEOS.stGeorgesEb.id],
+    videoIdsEndAtEnd: [VIDEOS.stGeorgesEb.id],
+    positions: [MARINE_ORCHILL, MARINE_ORCHILL_S],
+  },
+  {
+    routeNames: [ROUTES.marineDr.name],
+    description: "orchill to pre-westport",
+    type: "shared",
+    videoIds: [VIDEOS.marineDrWb.id],
+    positions: [
       MARINE_ORCHILL_S,
       [49.36314, -123.27741],
       [49.36301, -123.27741],
@@ -399,7 +431,22 @@ export const MARINE_DR = [
       [49.35374, -123.26228],
       [49.35367, -123.262],
       [49.35352, -123.26132],
-      [49.35338, -123.26097],
+      MARINE_VERDUN,
+    ],
+  },
+  {
+    routeNames: [ROUTES.marineDr.name],
+    description: "pre-westport",
+    type: "shared",
+    videoIds: [
+      VIDEOS.marineDrWb.id,
+      VIDEOS.greenleafEb.id,
+      VIDEOS.westportMathersWb.id,
+    ],
+    videoIdsStartAtStart: [VIDEOS.greenleafEb.id],
+    videoIdsEndAtStart: [VIDEOS.westportMathersWb.id],
+    positions: [
+      MARINE_VERDUN,
       [49.35326, -123.26083],
       [49.35316, -123.26075],
       [49.35306, -123.2607],
@@ -408,7 +455,7 @@ export const MARINE_DR = [
   },
   {
     routeNames: [ROUTES.marineDr.name],
-    description: "westport to lighthouse park",
+    description: "westport to greenleaf",
     type: "shared",
     videoIds: [VIDEOS.marineDrWb.id],
     positions: [
@@ -440,9 +487,28 @@ export const MARINE_DR = [
       [49.3518, -123.26595],
       [49.35165, -123.26606],
       MARINE_GREENLEAF,
+    ],
+  },
+  {
+    routeNames: [ROUTES.marineDr.name],
+    description: "post greenleaf",
+    type: "shared",
+    videoIds: [VIDEOS.greenleafEb.id, VIDEOS.marineDrWb.id],
+    videoIdsEndAtEnd: [VIDEOS.greenleafEb.id],
+    positions: [
+      MARINE_GREENLEAF,
       [49.35099, -123.26631],
       [49.35082, -123.26637],
-      [49.35068, -123.26638],
+      MARINE_GREENLEAF_POST,
+    ],
+  },
+  {
+    routeNames: [ROUTES.marineDr.name],
+    description: "post greenleaf to pre lighthouse park",
+    type: "shared",
+    videoIds: [VIDEOS.marineDrWb.id],
+    positions: [
+      MARINE_GREENLEAF_POST,
       [49.34987, -123.26638],
       [49.34975, -123.26639],
       [49.34967, -123.26643],
@@ -476,7 +542,17 @@ export const MARINE_DR = [
       [49.34158, -123.26509],
       [49.34129, -123.26483],
       [49.34103, -123.26448],
-      [49.34089, -123.26414],
+      PRE_BEACON_MARINE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.marineDr.name],
+    description: "near beacon",
+    type: "shared",
+    videoIds: [VIDEOS.marineDrWb.id, VIDEOS.waterPiccadillyEb.id],
+    videoIdsStartAtStart: [VIDEOS.waterPiccadillyEb.id],
+    positions: [
+      PRE_BEACON_MARINE,
       [49.34081, -123.26387],
       [49.34074, -123.2635],
       BEACON_MARINE,
@@ -484,7 +560,7 @@ export const MARINE_DR = [
   },
   {
     routeNames: [ROUTES.marineDr.name],
-    description: "lighthouse park to 31st",
+    description: "lighthouse park to piccadilly s",
     type: "shared",
     videoIds: [VIDEOS.marineDrWb.id],
     positions: [
@@ -521,10 +597,29 @@ export const MARINE_DR = [
       [49.34123, -123.24985],
       [49.34125, -123.24955],
       [49.34123, -123.24934],
-      PICCADILLY_MARINE,
+      PICCADILLY_S_MARINE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.marineDr.name],
+    description: "piccadilly",
+    type: "shared",
+    videoIds: [VIDEOS.marineDrWb.id, VIDEOS.waterPiccadillyEb.id],
+    videoIdsEndAtEnd: [VIDEOS.waterPiccadillyEb.id],
+    positions: [
+      PICCADILLY_S_MARINE,
       [49.34103, -123.24806],
       [49.34104, -123.24783],
-      [49.34106, -123.24738],
+      PICCADILLY_N_MARINE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.marineDr.name],
+    description: "piccadilly n to 31st",
+    type: "shared",
+    videoIds: [VIDEOS.marineDrWb.id],
+    positions: [
+      PICCADILLY_N_MARINE,
       [49.34105, -123.24718],
       [49.34099, -123.24667],
       [49.34099, -123.24637],

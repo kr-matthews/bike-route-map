@@ -29,8 +29,7 @@ export const WESTPORT_MATHERS = [
     routeNames: [ROUTES.westportMathers.name],
     description: "westport: marine to greenleaf",
     type: "shared",
-    videoIds: [VIDEOS.westportMathersWb.id],
-    videoIdsEndAtStart: [VIDEOS.westportMathersWb.id],
+    videoIds: [VIDEOS.greenleafEb.id, VIDEOS.westportMathersWb.id],
     positions: [
       WESTPORT_MARINE,
       [49.35301, -123.25933],

@@ -888,9 +888,18 @@ export const ROUTES = {
     cities: [WEST_VANCOUVER],
     legs: [
       { videos: { westbound: VIDEOS.marineDrWb } },
-      { name: "St Georges Ave", videos: {} },
-      { name: "Greenleaf Rd", videos: {} },
-      { name: "Water Ln/Piccadilly S", videos: {} },
+      {
+        name: "St Georges Ave: Alternate Route",
+        videos: { eastbound: VIDEOS.stGeorgesEb },
+      },
+      {
+        name: "Greenleaf Rd: Alternate Route",
+        videos: { eastbound: VIDEOS.greenleafEb },
+      },
+      {
+        name: "Water Ln/Piccadilly S: Alternate Route",
+        videos: { eastbound: VIDEOS.waterPiccadillyEb },
+      },
     ],
   },
   marineWay: {

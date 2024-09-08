@@ -483,6 +483,11 @@ const VIDEOS = {
     date: new Date("2024 06 17"),
     minutes: 23,
   },
+  greenleafEb: {
+    id: "NKPIVJrTpDo",
+    date: new Date("Sept 1 2024"),
+    minutes: 4,
+  },
   haroWb: {
     id: "gdsFxEtuepY",
     date: new Date("2023 06 03"),
@@ -1121,6 +1126,11 @@ const VIDEOS = {
     date: new Date("2024 04 13"),
     minutes: 2,
   },
+  stGeorgesEb: {
+    id: "qLHu2A2YA7E",
+    date: new Date("Sept 1 2024"),
+    minutes: 3,
+  },
   sunriseNb: {
     id: "YGhkRf0VmKw",
     tlId: "F3GbU4qjhYY",
@@ -1225,6 +1235,11 @@ const VIDEOS = {
     id: "MjiGAPjOuZQ",
     date: new Date("2024 05 03"),
     minutes: 6,
+  },
+  waterPiccadillyEb: {
+    id: "v1kU3mags5U",
+    date: new Date("Sept 1 2024"),
+    minutes: 5,
   },
   wesbrookSb: {
     id: "rh6b_Nk9q-4",
