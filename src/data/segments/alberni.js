@@ -36,7 +36,7 @@ export const ALBERNI = [
     oneWay: "required",
     videoIds: [VIDEOS.alberniEb.id],
     videoIdsEndAtEnd: [VIDEOS.alberniEb.id],
-    positions: [EB_LANE_START, CARDERO_ALBERNI_N],
+    positions: [EB_LANE_START, CARDERO_ALBERNI_S],
   },
   {
     routeNames: [ROUTES.alberni.name],
@@ -45,7 +45,7 @@ export const ALBERNI = [
     oneWay: "required",
     videoIds: [VIDEOS.alberniWb.id],
     videoIdsStartAtStart: [VIDEOS.alberniWb.id],
-    positions: [CARDERO_ALBERNI_S, WB_LANE_END],
+    positions: [CARDERO_ALBERNI_N, WB_LANE_END],
   },
   {
     routeNames: [ROUTES.alberni.name],

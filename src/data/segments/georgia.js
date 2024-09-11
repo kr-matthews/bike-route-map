@@ -19,9 +19,9 @@ export const GEORGIA = [
     videoIdsEndAtEnd: [VIDEOS.lionsGateBridgeSb.id],
     positions: [
       CHILCO_GEORGIA_S,
-      [49.29353, -123.13537],
-      [49.29257, -123.13383],
-      [49.29155, -123.13225],
+      [49.29352, -123.13537],
+      [49.29255, -123.13383],
+      [49.29152, -123.13225],
       CARDERO_GEORGIA_S,
       NICOLA_GEORGIA,
     ],
@@ -35,7 +35,7 @@ export const GEORGIA = [
     videoIds: [VIDEOS.lionsGateBridgeNb.id],
     positions: [
       CARDERO_GEORGIA_N,
-      [49.29164, -123.13209],
+      [49.29166, -123.13203],
       DENMAN_GEORGIA_N,
       [49.29374, -123.13532],
       [49.29444, -123.13629],

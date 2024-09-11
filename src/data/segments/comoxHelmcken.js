@@ -14,7 +14,7 @@ import { VIDEOS } from "../videos";
 const PARK_COMOX = [49.29186, -123.14468];
 const COMOX_W = [49.29141, -123.14393];
 const DENMAN_COMOX_W = [49.28878, -123.13985];
-const BIDWELL_COMOX_SW = [49.28767, -123.13816];
+// const BIDWELL_COMOX_SW = [49.28767, -123.13816];
 const THURLOW_COMOX_W = [49.28191, -123.12927];
 const MAINLAND_HELMCKEN = [49.27558, -123.12055];
 
@@ -48,9 +48,11 @@ export const COMOX_HELMCKEN = [
     videoIds: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
     positions: [
       DENMAN_COMOX_W,
-      [49.28873, -123.1397],
-      [49.28864, -123.13966],
-      BIDWELL_COMOX_SW,
+      [49.28875, -123.13975],
+      [49.28861, -123.13966],
+      // BIDWELL_COMOX_SW,
+      [49.28667, -123.13669],
+      CARDERO_COMOX,
     ],
   },
   {
@@ -59,8 +61,6 @@ export const COMOX_HELMCKEN = [
     type: "quiet",
     videoIds: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
     positions: [
-      BIDWELL_COMOX_SW,
-      [49.28764, -123.13809],
       CARDERO_COMOX,
       [49.28586, -123.13539],
       [49.28509, -123.13418],

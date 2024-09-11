@@ -11,6 +11,8 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const CHILCO_HENSHAW_S = [49.29092, -123.14212];
+
 export const CHILCO = [
   {
     description: "connection to stanley park loop",
@@ -28,14 +30,26 @@ export const CHILCO = [
   },
   {
     routeNames: [ROUTES.chilco.name],
-    description: "primary",
+    description: "beach to comox",
     type: "quiet",
     videoIds: [VIDEOS.chilcoSb.id],
     videoIdsEndAtStart: [VIDEOS.chilcoSb.id],
+    positions: [CHILCO_BEACH, [49.28988, -123.14369], CHILCO_COMOX],
+  },
+  {
+    routeNames: [ROUTES.chilco.name],
+    description: "lord roberts plaza",
+    type: "mixed",
+    videoIds: [VIDEOS.chilcoSb.id],
+    positions: [CHILCO_COMOX, CHILCO_HENSHAW_S],
+  },
+  {
+    routeNames: [ROUTES.chilco.name],
+    description: "henshaw to alberni",
+    type: "quiet",
+    videoIds: [VIDEOS.chilcoSb.id],
     positions: [
-      CHILCO_BEACH,
-      [49.28988, -123.14369],
-      CHILCO_COMOX,
+      CHILCO_HENSHAW_S,
       [49.29128, -123.14156],
       [49.29198, -123.14052],
       CHILCO_HARO,

@@ -13,6 +13,9 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const CARDERO_PANTAGES_S = [49.28488, -123.13919];
+const CARDERO_JEPSON_YOUNG = [49.28624, -123.13712];
+
 export const CARDERO = [
   {
     routeNames: [ROUTES.cardero.name],
@@ -28,17 +31,45 @@ export const CARDERO = [
   },
   {
     routeNames: [ROUTES.cardero.name],
-    description: "primary",
+    description: "beach to burnaby",
     type: "quiet",
     videoIds: [VIDEOS.carderoNb.id],
     videoIdsStartAtStart: [VIDEOS.carderoNb.id],
-    videoIdsEndAtEnd: [VIDEOS.carderoNb.id],
+    positions: [CARDERO_BEACH, [49.28382, -123.14081], CARDERO_BURNABY],
+  },
+  {
+    routeNames: [ROUTES.cardero.name],
+    description: "burnaby plaza",
+    type: "mixed",
+    videoIds: [VIDEOS.carderoNb.id],
+    positions: [CARDERO_BURNABY, CARDERO_PANTAGES_S],
+  },
+  {
+    routeNames: [ROUTES.cardero.name],
+    description: "pantages to lord roberts",
+    type: "quiet",
+    videoIds: [VIDEOS.carderoNb.id],
     positions: [
-      CARDERO_BEACH,
-      [49.28382, -123.14081],
-      CARDERO_BURNABY,
+      CARDERO_PANTAGES_S,
       [49.28524, -123.13867],
       [49.28595, -123.1376],
+      CARDERO_JEPSON_YOUNG,
+    ],
+  },
+  {
+    routeNames: [ROUTES.cardero.name],
+    description: "lord roberts",
+    type: "mixed",
+    videoIds: [VIDEOS.carderoNb.id],
+    positions: [CARDERO_JEPSON_YOUNG, CARDERO_COMOX],
+  },
+  {
+    routeNames: [ROUTES.cardero.name],
+    description: "comox to seawall",
+    type: "quiet",
+    videoIds: [VIDEOS.carderoNb.id],
+    videoIdsEndAtEnd: [VIDEOS.carderoNb.id],
+    positions: [
       CARDERO_COMOX,
       [49.28736, -123.13546],
       [49.28805, -123.1344],

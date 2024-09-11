@@ -46,6 +46,7 @@ export const DUNSMUIR_MELVILLE_PENDER = [
       [49.28962, -123.12737],
       NICOLA_PENDER,
       [49.29034, -123.12987],
+      [49.29047, -123.13022],
       CARDERO_GEORGIA_N,
     ],
   },

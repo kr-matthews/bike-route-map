@@ -28,6 +28,8 @@ const MALL_10TH_N = [49.26201, -123.0975];
 const MALL_10TH_E = [49.26198, -123.09705];
 const PRINCE_EDWARD_10TH_N_W = [49.26197, -123.09617];
 const PRINCE_EDWARD_10TH_S_E = [49.26159, -123.096];
+const KEITH_10TH = [49.26145, -123.07944];
+const CHINA_CREEK_E = [49.26144, -123.07817];
 const COMMERCIAL_10TH_SE = [49.26135, -123.06969];
 const VICTORIA_GRANDVIEW_CUT_SE = [49.2614, -123.06583];
 const VICTORIA_GRANDVIEW_CUT_NE = [49.26201, -123.06581];
@@ -252,16 +254,31 @@ export const TENTH = [
   },
   {
     routeNames: [ROUTES.tenth.name],
-    description: "windsor to commercial",
+    description: "windsor to keith",
     type: "quiet",
     videoIds: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
+    positions: [GLEN_10TH, KEITH_10TH],
+  },
+  {
+    routeNames: [ROUTES.tenth.name],
+    description: "china creek park",
+    type: "dedicated",
+    videoIds: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
     positions: [
-      GLEN_10TH,
-      [49.26145, -123.07944],
+      KEITH_10TH,
       [49.26144, -123.07866],
       [49.26146, -123.07843],
       [49.26147, -123.07828],
-      [49.26144, -123.07817],
+      CHINA_CREEK_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.tenth.name],
+    description: "china creek park to commercial",
+    type: "quiet",
+    videoIds: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
+    positions: [
+      CHINA_CREEK_E,
       [49.26144, -123.07759],
       WOODLAND_10TH,
       [49.26137, -123.06984],
