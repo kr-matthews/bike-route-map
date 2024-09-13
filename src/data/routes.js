@@ -1534,7 +1534,11 @@ export const ROUTES = {
   windsor: {
     name: "Windsor",
     cities: [VANCOUVER],
-    legs: [{ videos: { northbound: VIDEOS.windsorNb } }],
+    legs: [
+      {
+        videos: { northbound: VIDEOS.windsorNb, southbound: VIDEOS.windsorSb },
+      },
+    ],
   },
   woodwardsSaunders: {
     name: "Woodwards/Saunders",

@@ -249,7 +249,12 @@ export const TENTH = [
     routeNames: [ROUTES.tenth.name, ROUTES.windsor.name],
     description: "windsor",
     type: "quiet",
-    videoIds: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id, VIDEOS.windsorNb.id],
+    videoIds: [
+      VIDEOS.tenthEb.id,
+      VIDEOS.tenthWb.id,
+      VIDEOS.windsorSb.id,
+      VIDEOS.windsorNb.id,
+    ],
     positions: [WINDSOR_10TH, GLEN_10TH],
   },
   {

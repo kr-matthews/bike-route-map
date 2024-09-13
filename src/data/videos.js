@@ -1303,6 +1303,12 @@ const VIDEOS = {
     date: new Date("2023 09 03"),
     minutes: 13,
   },
+  windsorSb: {
+    id: "dierEDztfkE",
+    tlId: "L27bOkl6h9g",
+    date: new Date("Sept 9 2024"),
+    minutes: 17,
+  },
   woodwardsSaundersEb: {
     id: "oy8xm7Oai8w",
     tlId: "xEr4R0jFcdA",
