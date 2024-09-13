@@ -4,6 +4,7 @@ import {
   RAILWAY_GREENWAY_COLBECK,
   RAILWAY_GREENWAY_GRANVILLE_N,
   RAILWAY_GREENWAY_GRANVILLE_S,
+  RAILWAY_GREENWAY_WESTWATER,
   RAILWAY_GREENWAY_WOODWARDS,
   RAILWAY_MONCTON_SW,
 } from "../intersections";
@@ -50,7 +51,7 @@ export const RAILWAY_GREENWAY = [
     videoIds: [VIDEOS.railwayGreenwaySb.id],
     videoIdsEndAtStart: [VIDEOS.railwayGreenwaySb.id],
     positions: [
-      [49.12163, -123.16905],
+      RAILWAY_GREENWAY_WESTWATER,
       [49.12174, -123.16899],
       [49.12184, -123.16898],
       [49.12196, -123.16902],
