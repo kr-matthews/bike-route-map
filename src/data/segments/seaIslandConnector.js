@@ -46,7 +46,6 @@ export const SEA_ISLAND_CONNECTOR = [
     oneWay: "required",
     elevation: 0.5,
     videoIds: [VIDEOS.seaIslandConnectorWb.id],
-    videoIdsEndAtEnd: [VIDEOS.seaIslandConnectorWb.id],
     positions: [
       MOREY_SEA_ISLAND_CONNECTOR_W,
       [49.19276, -123.13905],

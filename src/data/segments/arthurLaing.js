@@ -18,14 +18,23 @@ const NORTHBOUND_ELEVATION_END = [49.20417, -123.13754];
 export const ARTHUR_LAING = [
   // south ends
   {
-    description: "nb path from connector to bridge",
+    description: "nb exiting from connector",
     type: "dedicated",
-    videoIds: [VIDEOS.arthurLaingNb.id],
+    videoIds: [VIDEOS.arthurLaingNb.id, VIDEOS.seaIslandConnectorWb.id],
     videoIdsStartAtStart: [VIDEOS.arthurLaingNb.id],
+    videoIdsEndAtEnd: [VIDEOS.seaIslandConnectorWb.id],
     positions: [
       SEA_ISLAND_CONNECTOR_W,
       [49.19345, -123.14017],
       [49.19339, -123.14013],
+      POST_SEA_ISLAND_CONNECTOR,
+    ],
+  },
+  {
+    description: "nb path from connector to bridge",
+    type: "dedicated",
+    videoIds: [VIDEOS.arthurLaingNb.id],
+    positions: [
       POST_SEA_ISLAND_CONNECTOR,
       [49.19348, -123.14013],
       [49.19366, -123.14014],

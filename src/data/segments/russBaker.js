@@ -23,7 +23,6 @@ export const RUSS_BAKER = [
     oneWay: "required",
     elevation: 0.5,
     videoIds: [VIDEOS.russBakerNb.id],
-    videoIdsStartAtStart: [VIDEOS.russBakerNb.id],
     positions: [
       NO_2_RUSS_BAKER_E,
       [49.17978, -123.15328],
