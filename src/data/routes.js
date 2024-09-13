@@ -1189,15 +1189,15 @@ export const ROUTES = {
       },
     ],
   },
+  railway: {
+    name: "Railway Ave",
+    cities: [RICHMOND],
+    legs: [{ videos: { southbound: VIDEOS.railwaySb } }],
+  },
   railwayGreenway: {
     name: "Railway Greenway",
     cities: [RICHMOND],
     legs: [{ videos: { southbound: VIDEOS.railwayGreenwaySb } }],
-  },
-  railway: {
-    name: "Railway St",
-    cities: [RICHMOND],
-    legs: [{ videos: {} }],
   },
   richards: {
     name: "Richards",
@@ -1242,7 +1242,14 @@ export const ROUTES = {
   russBaker: {
     name: "Russ Baker Way",
     cities: [RICHMOND],
-    legs: [{ videos: { northbound: VIDEOS.russBakerNb } }],
+    legs: [
+      {
+        videos: {
+          northbound: VIDEOS.russBakerNb,
+          southbound: VIDEOS.russBakerSb,
+        },
+      },
+    ],
   },
   seaIslandConnector: {
     name: "Sea Island Connector",
@@ -1498,7 +1505,7 @@ export const ROUTES = {
   williams: {
     name: "Williams Rd",
     cities: [RICHMOND],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.williamsEb } }],
   },
   willingdonLinear: {
     name: "Willingdon Linear Park Urban Trail",

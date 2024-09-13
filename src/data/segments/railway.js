@@ -99,6 +99,8 @@ export const RAILWAY = [
   {
     description: "westwater s of railway",
     type: "quiet",
+    videoIds: [VIDEOS.railwaySb.id],
+    videoIdsEndAtStart: [VIDEOS.railwaySb.id],
     positions: [WESTWATER_IMPERIAL, RAILWAY_WESTWATER],
   },
   {
@@ -130,6 +132,7 @@ export const RAILWAY = [
     routeNames: [ROUTES.railway.name],
     description: "railway ave quiet",
     type: "quiet",
+    videoIds: [VIDEOS.railwaySb.id],
     positions: [
       RAILWAY_WESTWATER,
       [49.12258, -123.17127],
@@ -249,6 +252,7 @@ export const RAILWAY = [
     description: "sb: granville to slip",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.railwaySb.id],
     positions: [RAILWAY_GRANVILLE_MIDDLE, RAILWAY_GRANVILLE_SW],
   },
   {
@@ -256,6 +260,7 @@ export const RAILWAY = [
     description: "sb: granville to blundell",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.railwaySb.id],
     positions: [
       RAILWAY_GRANVILLE_SW,
       [49.16213, -123.1696],
@@ -272,6 +277,7 @@ export const RAILWAY = [
     description: "sb: pre-blundell",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.railwaySb.id],
     positions: [SB_PRE_BLUNDELL, RAILWAY_BLUNDELL_NW],
   },
   {
@@ -279,6 +285,7 @@ export const RAILWAY = [
     description: "sb: blundell to steveston",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.railwaySb.id],
     positions: [
       RAILWAY_BLUNDELL_NW,
       [49.15554, -123.16992],
@@ -298,6 +305,7 @@ export const RAILWAY = [
     description: "sb: pre-stevenson",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.railwaySb.id],
     positions: [SB_PRE_STEVESTON, RAILWAY_STEVESTON_NW],
   },
   {
@@ -305,6 +313,7 @@ export const RAILWAY = [
     description: "sb: steveston to garry",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.railwaySb.id],
     positions: [
       RAILWAY_STEVESTON_NW,
       [49.13364, -123.16988],
@@ -317,7 +326,7 @@ export const RAILWAY = [
     description: "sb: garry to moncton",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.railwayGreenwaySb.id],
+    videoIds: [VIDEOS.railwaySb.id, VIDEOS.railwayGreenwaySb.id],
     positions: [
       RAILWAY_GARRY_NW,
       [49.12564, -123.16989],
@@ -330,6 +339,7 @@ export const RAILWAY = [
     description: "sb: post-moncton",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.railwaySb.id],
     positions: [RAILWAY_MONCTON_SW, [49.12473, -123.16985], RAILWAY_PAINTED_S],
   },
 ];

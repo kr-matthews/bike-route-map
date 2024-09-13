@@ -98,7 +98,8 @@ export const ARTHUR_LAING = [
     type: "shoulder",
     elevation: 0.5,
     oneWay: "required",
-    videoIds: [VIDEOS.arthurLaingSb.id],
+    videoIds: [VIDEOS.arthurLaingSb.id, VIDEOS.russBakerSb.id],
+    videoIdsStartAtStart: [VIDEOS.russBakerSb.id],
     positions: [
       SOUTHBOUND_ELEVATION_END,
       [49.19596, -123.138],

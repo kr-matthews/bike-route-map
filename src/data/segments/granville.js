@@ -176,6 +176,7 @@ export const GRANVILLE = [
     description: "wb continue to sb",
     oneWay: "required",
     type: "painted",
+    videoIds: [VIDEOS.railwaySb.id],
     positions: [
       RAILWAY_GRANVILLE_N,
       [49.16251, -123.16908],
@@ -253,7 +254,7 @@ export const GRANVILLE = [
   },
   {
     routeNames: [ROUTES.granville.name],
-    description: "wb: gilbert to railway",
+    description: "wb: gilbert to lynas",
     type: "painted",
     oneWay: "required",
     videoIds: [VIDEOS.granvilleWb.id],
@@ -262,6 +263,17 @@ export const GRANVILLE = [
       GILBERT_GRANVILLE_NW,
       [49.16283, -123.15316],
       [49.16283, -123.15885],
+      LYNAS_GRANVILLE_N,
+    ],
+  },
+  {
+    routeNames: [ROUTES.granville.name],
+    description: "wb: lynas to railway",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [VIDEOS.granvilleWb.id, VIDEOS.railwaySb.id],
+    videoIdsStartAtStart: [VIDEOS.railwaySb.id],
+    positions: [
       LYNAS_GRANVILLE_N,
       [49.16283, -123.16772],
       [49.16281, -123.16796],

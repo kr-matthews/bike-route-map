@@ -934,6 +934,12 @@ const VIDEOS = {
     date: new Date("2024 03 13"),
     minutes: 3,
   },
+  railwaySb: {
+    id: "JH3I1cTX42U",
+    tlId: "7jXGQY7wBW8",
+    date: new Date("Sept 11 2024"),
+    minutes: 13,
+  },
   railwayGreenwaySb: {
     id: "GVd9Sh3rgE4",
     tlId: "svGYFsk2en4",
@@ -979,6 +985,12 @@ const VIDEOS = {
   russBakerNb: {
     id: "NliaFJuWBSw",
     date: new Date("2024 05 28"),
+    minutes: 6,
+  },
+  russBakerSb: {
+    id: "YEqu9nZBzV4",
+    tlId: "OciiX4RFF_Q",
+    date: new Date("Sept 11 2024"),
     minutes: 6,
   },
   seaIslandConnectorWb: {
@@ -1258,6 +1270,12 @@ const VIDEOS = {
     tlId: "b6rUXaER1Iw",
     date: new Date("Sept 1 2024"),
     minutes: 25,
+  },
+  williamsEb: {
+    id: "R_v4zq3hK_Q",
+    tlId: "DUDhA6fN3DI",
+    date: new Date("Sept 11 2024"),
+    minutes: 20,
   },
   willingdonSb: {
     id: "s58YehJpLE4",

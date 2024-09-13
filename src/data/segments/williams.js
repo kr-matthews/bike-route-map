@@ -17,6 +17,7 @@ import {
   WEST_DYKE_WILLIAMS,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const WILLIAMS_W = [49.14101, -123.19428];
 const WILLIAMS_LANES_W = [49.14102, -123.19237];
@@ -36,6 +37,8 @@ export const WILLIAMS = [
   {
     description: "ramp from dyke",
     type: "mixed",
+    videoIds: [VIDEOS.williamsEb.id],
+    videoIdsStartAtStart: [VIDEOS.williamsEb.id],
     positions: [
       WEST_DYKE_WILLIAMS,
       [49.14086, -123.19454],
@@ -48,6 +51,7 @@ export const WILLIAMS = [
     routeNames: [ROUTES.williams.name],
     description: "west end",
     type: "quiet",
+    videoIds: [VIDEOS.williamsEb.id],
     positions: [WILLIAMS_W, WILLIAMS_LANES_W],
   },
 
@@ -57,6 +61,7 @@ export const WILLIAMS = [
     description: "eb: pre-painted lane",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.williamsEb.id],
     positions: [
       WILLIAMS_LANES_W,
       [49.14099, -123.19218],
@@ -69,6 +74,7 @@ export const WILLIAMS = [
     description: "eb: to crabapple",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.williamsEb.id],
     positions: [EB_LANE_START, FOURTH_WILLIAMS_S],
   },
   {
@@ -76,6 +82,7 @@ export const WILLIAMS = [
     description: "eb: crabapple",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.williamsEb.id],
     positions: [FOURTH_WILLIAMS_S, NISHI_WILLIAMS_S],
   },
   {
@@ -83,6 +90,7 @@ export const WILLIAMS = [
     description: "eb: crabapple to no. 1",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.williamsEb.id],
     positions: [NISHI_WILLIAMS_S, NO_1_WILLIAMS_SW_W],
   },
   {
@@ -90,6 +98,7 @@ export const WILLIAMS = [
     description: "eb: crossing no. 1",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.williamsEb.id],
     positions: [NO_1_WILLIAMS_SW_W, NO_1_WILLIAMS_SE],
   },
   {
@@ -97,6 +106,7 @@ export const WILLIAMS = [
     description: "eb: no. 1 to no. 3",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.williamsEb.id],
     positions: [
       NO_1_WILLIAMS_SE,
       [49.14099, -123.1761],
@@ -114,6 +124,7 @@ export const WILLIAMS = [
     description: "eb: crossing no. 3",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.williamsEb.id],
     positions: [NO_3_WILLIAMS_SW_W, NO_3_WILLIAMS_SE],
   },
   {
@@ -121,6 +132,8 @@ export const WILLIAMS = [
     description: "eb: no. 3 to no. 5",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.williamsEb.id],
+    videoIdsEndAtEnd: [VIDEOS.williamsEb.id],
     positions: [
       NO_3_WILLIAMS_SE,
       [49.14081, -123.13085],

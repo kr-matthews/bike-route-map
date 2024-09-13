@@ -73,6 +73,7 @@ export const RUSS_BAKER = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.russBakerSb.id],
     positions: [
       SEA_ISLAND_CONNECTOR_ARTHUR_LAING_N,
       [49.19517, -123.14015],
@@ -98,6 +99,7 @@ export const RUSS_BAKER = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.russBakerSb.id],
     positions: [
       RUSS_BAKER_GRANT_MCCONACHIE_N,
       [49.19452, -123.14376],
@@ -111,6 +113,7 @@ export const RUSS_BAKER = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.russBakerSb.id],
     positions: [
       RUSS_BAKER_GRANT_MCCONACHIE_S,
       [49.194, -123.14344],
@@ -122,6 +125,7 @@ export const RUSS_BAKER = [
     description: "sb: arthur laing to miller 4",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.russBakerSb.id],
     positions: [
       SB_PRE_MILLER,
       [49.19349, -123.14282],
@@ -139,6 +143,7 @@ export const RUSS_BAKER = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.russBakerSb.id],
     positions: [
       RUSS_BAKER_MILLER_SW,
       [49.19151, -123.14259],

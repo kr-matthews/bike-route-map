@@ -213,6 +213,8 @@ export const NO_2 = [
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.russBakerSb.id],
+    videoIdsEndAtEnd: [VIDEOS.russBakerSb.id],
     positions: [NO_2_RUSS_BAKER_W, SB_ELEVATION_START],
   },
   {
