@@ -14,8 +14,13 @@ import {
   RAILWAY_WILLIAMS_SW,
   SHELL_WILLIAMS_N,
   SHELL_WILLIAMS_S,
+  WEST_DYKE_WILLIAMS,
 } from "../intersections";
 import { ROUTES } from "../routes";
+
+const WILLIAMS_W = [49.14101, -123.19428];
+const WILLIAMS_LANES_W = [49.14102, -123.19237];
+const EB_LANE_START = [49.14099, -123.19075];
 
 const NO_1_WILLIAMS_SW_W = [49.14101, -123.18207];
 const NO_1_WILLIAMS_SE = [49.14099, -123.18124];
@@ -27,13 +32,44 @@ const NO_3_WILLIAMS_NE_E = [49.14094, -123.13594];
 const NO_3_WILLIAMS_NW_W = [49.14095, -123.13809];
 
 export const WILLIAMS = [
+  // west end
+  {
+    description: "ramp from dyke",
+    type: "mixed",
+    positions: [
+      WEST_DYKE_WILLIAMS,
+      [49.14086, -123.19454],
+      [49.14093, -123.19444],
+      [49.14096, -123.19436],
+      WILLIAMS_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.williams.name],
+    description: "west end",
+    type: "quiet",
+    positions: [WILLIAMS_W, WILLIAMS_LANES_W],
+  },
+
   // eb
+  {
+    routeNames: [ROUTES.williams.name],
+    description: "eb: pre-painted lane",
+    type: "shared",
+    oneWay: "required",
+    positions: [
+      WILLIAMS_LANES_W,
+      [49.14099, -123.19218],
+      [49.14099, -123.19178],
+      EB_LANE_START,
+    ],
+  },
   {
     routeNames: [ROUTES.williams.name],
     description: "eb: to crabapple",
     type: "painted",
     oneWay: "required",
-    positions: [[49.14099, -123.19075], FOURTH_WILLIAMS_S],
+    positions: [EB_LANE_START, FOURTH_WILLIAMS_S],
   },
   {
     routeNames: [ROUTES.williams.name, ROUTES.crabappleRidge.name],
@@ -173,6 +209,7 @@ export const WILLIAMS = [
       [49.14109, -123.19013],
       [49.14108, -123.19177],
       [49.14108, -123.19218],
+      WILLIAMS_LANES_W,
     ],
   },
 ];
