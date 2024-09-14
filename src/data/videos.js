@@ -251,11 +251,13 @@ const VIDEOS = {
   },
   centralValleyNWNb: {
     id: "XwvlfyEKhn4",
+    tlId: "IxhY8FJ5Fms",
     date: new Date("Mar 29 2024"),
     minutes: 22,
   },
   centralValleyVancouverEb: {
     id: "UkRTUCueaYA",
+    tlId: "-SYtRELiNRI",
     date: new Date("Sep 09 2023"),
     minutes: 22,
   },
@@ -266,6 +268,7 @@ const VIDEOS = {
   },
   centralValleyVancouverWb: {
     id: "OJu4uTKpNX4",
+    tlId: "W1SGUPkuxgo",
     date: new Date("Mar 21 2024"),
     minutes: 23,
   },
@@ -984,6 +987,7 @@ const VIDEOS = {
   },
   russBakerNb: {
     id: "NliaFJuWBSw",
+    tlId: "bjyOJ3bL8p0",
     date: new Date("May 28 2024"),
     minutes: 6,
   },
@@ -1000,6 +1004,7 @@ const VIDEOS = {
   },
   seaIslandPathNb: {
     id: "eb_6J8epy4U",
+    tlId: "DaF4o7TwksA",
     date: new Date("May 14 2024"),
     minutes: 13,
   },
@@ -1300,6 +1305,7 @@ const VIDEOS = {
   },
   windsorNb: {
     id: "azxidzxMgzI",
+    tlId: "93qEcDU7S3g",
     date: new Date("Sep 03 2023"),
     minutes: 13,
   },
