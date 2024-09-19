@@ -90,7 +90,7 @@ const POST_MOSAIC_ALLEY = [49.25789, -123.06087];
 const CENTRAL_IMPERIAL_SW = [49.22187, -122.99727];
 const JUBILEE_IMPERIAL_SE = [49.22187, -122.99573];
 const BULLER_PRENTER_N = [49.21757, -122.97757];
-const BC_PARKWAY_IRMIN = [49.21566, -122.97407];
+const BC_PARKWAY_BEFORE_IRMIN = [49.21636, -122.97521];
 const EAST_OF_GILLEY_RUMBLE = [49.21487, -122.97131];
 
 const CITY_PARKWAY_N = [49.2013, -122.85083];
@@ -592,24 +592,26 @@ export const BC_PARKWAY = [
   },
   {
     routeNames: [ROUTES.bcParkway.name],
-    description: "buller to irmin",
+    description: "prenter road",
     type: "quiet",
     videoIds: [VIDEOS.bcParkwayBurnabyEb.id, VIDEOS.bcParkwayBurnabyWb.id],
     positions: [
       BULLER_PRENTER_N,
       BULLER_PRENTER,
-      [49.21583, -122.97408],
-      BC_PARKWAY_IRMIN,
+      [49.21739, -122.97736],
+      BC_PARKWAY_BEFORE_IRMIN,
     ],
   },
   {
     routeNames: [ROUTES.bcParkway.name],
-    description: "irmin to gilley (rumble)",
+    description: "prenter to gilley (rumble)",
     type: "mixed",
     videoIds: [VIDEOS.bcParkwayBurnabyEb.id, VIDEOS.bcParkwayBurnabyWb.id],
     positions: [
-      BC_PARKWAY_IRMIN,
-      [49.21566, -122.97369],
+      BC_PARKWAY_BEFORE_IRMIN,
+      [49.21569, -122.9738],
+      [49.21563, -122.97362],
+      [49.21541, -122.97313],
       [49.2152, -122.97261],
       [49.21498, -122.97245],
       GILLEY_RUMBLE_NW,
