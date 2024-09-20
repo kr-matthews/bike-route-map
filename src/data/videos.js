@@ -249,6 +249,12 @@ const VIDEOS = {
     date: new Date("Nov 03 2023"),
     minutes: 10,
   },
+  centralValleyBurnabyWb: {
+    id: "5ZJi-XQdG8A",
+    tlId: "RBcqAje95ZU",
+    date: new Date("Sep 18 2024"),
+    minutes: 37,
+  },
   centralValleyNWNb: {
     id: "XwvlfyEKhn4",
     tlId: "IxhY8FJ5Fms",

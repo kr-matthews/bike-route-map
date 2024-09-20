@@ -442,7 +442,7 @@ export const ROUTES = {
         name: "Broadway & Victoria Dr: Alternate Route",
         videos: { eastbound: VIDEOS.centralValleyVancouverEbAlt },
       },
-      { name: "Burnaby", videos: {} },
+      { name: "Burnaby", videos: { westbound: VIDEOS.centralValleyBurnabyWb } },
       {
         name: "New Westminster",
         videos: { northbound: VIDEOS.centralValleyNWNb },
