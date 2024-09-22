@@ -329,7 +329,9 @@ export const ROUTES = {
   bute: {
     name: "Bute",
     cities: [VANCOUVER],
-    legs: [{ videos: { southbound: VIDEOS.buteSb } }],
+    legs: [
+      { videos: { northbound: VIDEOS.buteNb, southbound: VIDEOS.buteSb } },
+    ],
   },
   byrneCreek: {
     name: "Byrne Creek Urban Trail",
@@ -851,7 +853,7 @@ export const ROUTES = {
     name: "London/Dublin Greenway",
     shortName: "London/Dublin Gr.",
     cities: [NEW_WESTMINSTER],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.londonDublinEb } }],
   },
   lougheed: {
     name: "Lougheed Hwy",
@@ -1447,7 +1449,7 @@ export const ROUTES = {
   uptownDowntown: {
     name: "Uptown/Downtown",
     cities: [NEW_WESTMINSTER],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.uptownDowntownSb } }],
   },
   valley: {
     name: "Valley",

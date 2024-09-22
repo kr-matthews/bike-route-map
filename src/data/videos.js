@@ -184,6 +184,11 @@ const VIDEOS = {
     date: new Date("Feb 15 2024"),
     minutes: 5,
   },
+  buteNb: {
+    id: "hpHpG6fDmPs",
+    date: new Date("Sep 20 2024"),
+    minutes: 3,
+  },
   buteSb: {
     id: "bcwRc5Bg550",
     date: new Date("Dec 24 2023"),
@@ -666,6 +671,12 @@ const VIDEOS = {
     tlId: "L8Tr3d4yhiA",
     date: new Date("Jun 14 2023"),
     minutes: 13,
+  },
+  londonDublinEb: {
+    id: "fvOLbFCH6RM",
+    tlId: "x-U4jZlIvLM",
+    date: new Date("Sep 18 2024"),
+    minutes: 9,
   },
   lougheedEb: {
     id: "aRoGpCGsuS8",
@@ -1233,6 +1244,12 @@ const VIDEOS = {
     tlId: "uyVrPswaYfE",
     date: new Date("Jul 24 2024"),
     minutes: 10,
+  },
+  uptownDowntownSb: {
+    id: "tD9r-kIGs_k",
+    tlId: "AI70cDcpnyI",
+    date: new Date("Sep 18 2024"),
+    minutes: 11,
   },
   valleySb: {
     id: "SDClkLpfIHc",

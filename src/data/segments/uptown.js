@@ -6,6 +6,7 @@ import {
   MERIVALE_CARNARVON,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const ELLIOT_CLARKSON_SW = [49.20689, -122.90225];
 const MERIVALE_ROYAL_S = [49.20807, -122.90616];
@@ -19,18 +20,22 @@ export const UPTOWN_DOWNTOWN = [
     routeNames: [ROUTES.uptownDowntown.name],
     description: "elliot path",
     type: "mixed",
+    videoIds: [VIDEOS.uptownDowntownSb.id],
+    videoIdsEndAtStart: [VIDEOS.uptownDowntownSb.id],
     positions: [ELLIOT_COLUMBIA, ELLIOT_CLARKSON_SW],
   },
   {
     routeNames: [ROUTES.uptownDowntown.name],
     description: "elliot road",
     type: "quiet",
+    videoIds: [VIDEOS.uptownDowntownSb.id],
     positions: [ELLIOT_CLARKSON_SW, [49.20697, -122.90224], ELLIOT_CARNARVON],
   },
   {
     routeNames: [ROUTES.uptownDowntown.name],
     description: "merivale",
     type: "quiet",
+    videoIds: [VIDEOS.uptownDowntownSb.id],
     positions: [
       MERIVALE_CARNARVON,
       MERIVALE_AGNES,
@@ -42,6 +47,7 @@ export const UPTOWN_DOWNTOWN = [
     routeNames: [ROUTES.uptownDowntown.name],
     description: "park, fourth, third",
     type: "comfortable",
+    videoIds: [VIDEOS.uptownDowntownSb.id],
     positions: [
       MERIVALE_ROYAL_S,
       [49.20781, -122.90672],
@@ -76,6 +82,7 @@ export const UPTOWN_DOWNTOWN = [
     routeNames: [ROUTES.uptownDowntown.name],
     description: "fourth, third",
     type: "quiet",
+    videoIds: [VIDEOS.uptownDowntownSb.id],
     positions: [
       FOURTH_QUEENS_S,
       [49.2093, -122.9112],
@@ -89,6 +96,7 @@ export const UPTOWN_DOWNTOWN = [
     type: "quiet",
     oneWay: "recommended",
     hideArrows: true,
+    videoIds: [VIDEOS.uptownDowntownSb.id],
     positions: [FIFTH_THIRD_E, FIFTH_THIRD_W],
   },
   {
@@ -114,6 +122,7 @@ export const UPTOWN_DOWNTOWN = [
     description: "fifth sb",
     type: "quiet",
     oneWay: "required",
+    videoIds: [VIDEOS.uptownDowntownSb.id],
     positions: [
       FIFTH_SIXTH_N,
       [49.21388, -122.91921],
@@ -133,6 +142,7 @@ export const UPTOWN_DOWNTOWN = [
     routeNames: [ROUTES.uptownDowntown.name],
     description: "fifth",
     type: "quiet",
+    videoIds: [VIDEOS.uptownDowntownSb.id],
     positions: [FIFTH_SIXTH_N, FIFTH_7TH],
   },
 ];

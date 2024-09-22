@@ -5,6 +5,7 @@ import {
   MERIVALE_CARNARVON,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const BEGBIE_CARNARVON = [49.2027, -122.91147];
 const SIXTH_CARNARVON = [49.20414, -122.90883];
@@ -53,6 +54,7 @@ export const CARNARVON = [
     routeNames: [ROUTES.carnarvon.name, ROUTES.uptownDowntown.name],
     description: "merivale to elliot",
     type: "quiet",
+    videoIds: [VIDEOS.uptownDowntownSb.id],
     positions: [MERIVALE_CARNARVON, ELLIOT_CARNARVON],
   },
 ];
