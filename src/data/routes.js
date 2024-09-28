@@ -422,7 +422,11 @@ export const ROUTES = {
   carrall: {
     name: "Carrall",
     cities: [VANCOUVER],
-    legs: [{ videos: { northbound: VIDEOS.carrallNb } }],
+    legs: [
+      {
+        videos: { northbound: VIDEOS.carrallNb, southbound: VIDEOS.carrallSb },
+      },
+    ],
   },
   cassiar: {
     name: "Cassiar",

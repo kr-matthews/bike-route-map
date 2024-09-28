@@ -6,18 +6,29 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const COLUMBIA_ALEXANDER = [49.28377, -123.10215];
 const NORTH_OF_POWELL = [49.28347, -123.08704];
 
 export const ALEXANDER = [
+  {
+    routeNames: [ROUTES.alexander.name],
+    description: "west block",
+    type: "quiet",
+    videoIds: [
+      VIDEOS.alexanderEb.id,
+      VIDEOS.alexanderWb.id,
+      VIDEOS.carrallSb.id,
+    ],
+    videoIdsStartAtEnd: [VIDEOS.carrallSb.id],
+    positions: [ALEXANDER_POWELL, [49.28347, -123.10385], COLUMBIA_ALEXANDER],
+  },
   {
     routeNames: [ROUTES.alexander.name],
     description: "primary",
     type: "quiet",
     videoIds: [VIDEOS.alexanderEb.id, VIDEOS.alexanderWb.id],
     positions: [
-      ALEXANDER_POWELL,
-      [49.28347, -123.10385],
-      [49.28377, -123.10215],
+      COLUMBIA_ALEXANDER,
       [49.28408, -123.10058],
       [49.28411, -123.1003],
       MAIN_ALEXANDER,
