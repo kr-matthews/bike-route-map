@@ -7,8 +7,10 @@ export const BRIDGEPORT_TRAIL = [
     routeNames: [ROUTES.bridgeportTrail.name],
     description: "primary",
     type: "mixed",
-    videoIds: [VIDEOS.bridgeportTrailEb.id],
+    videoIds: [VIDEOS.bridgeportTrailWb.id, VIDEOS.bridgeportTrailEb.id],
     videoIdsStartAtStart: [VIDEOS.bridgeportTrailEb.id],
+    videoIdsStartAtEnd: [VIDEOS.bridgeportTrailWb.id],
+    videoIdsEndAtStart: [VIDEOS.bridgeportTrailWb.id],
     videoIdsEndAtEnd: [VIDEOS.bridgeportTrailEb.id],
     positions: [
       BRIDGEPORT_TRAIL_VAN_HORNE,

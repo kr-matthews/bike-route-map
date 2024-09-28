@@ -19,7 +19,7 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-const ELEVATED_START = [49.19896, -123.11896];
+const ELEVATED_START = [49.19917, -123.11893];
 const ELEVATED_END = [49.20561, -123.11767];
 const SPIRAL_MIDPOINT_1 = [49.20442, -123.11761];
 const SPIRAL_MIDPOINT_2 = [49.20488, -123.11766];
@@ -40,11 +40,15 @@ const CAMBIE_KENT_N_NE = [49.20612, -123.11721];
 const CAMBIE_PATH_63RD = [49.2132, -123.11675];
 const CAMBIE_PATH_64TH = [49.2123, -123.11679];
 
+const SHELL_RIVER_SW = [49.1966, -123.10284];
+
 export const CANADA_LINE = [
   // richmond alternates
   {
     description: "river dr path",
     type: "mixed",
+    videoIds: [VIDEOS.riverDrPathEb.id],
+    videoIdsEndAtEnd: [VIDEOS.riverDrPathEb.id],
     positions: [
       VAN_HORNE_RIVER_SE,
       [49.19879, -123.11882],
@@ -62,9 +66,13 @@ export const CANADA_LINE = [
       [49.19764, -123.1077],
       [49.19767, -123.10766],
       [49.19767, -123.1076],
-      [49.1966, -123.10284],
-      [49.19675, -123.10283],
+      SHELL_RIVER_SW,
     ],
+  },
+  {
+    description: "crossing river dr at shell",
+    type: "mixed",
+    positions: [SHELL_RIVER_SW, [49.19675, -123.10283]],
   },
   {
     description: "river dr lane 1",
@@ -289,9 +297,18 @@ export const CANADA_LINE = [
       [49.19698, -123.11899],
       [49.19711, -123.11897],
       VAN_HORNE_RIVER_SE,
-      [49.19888, -123.11894],
-      VAN_HORNE_RIVER_N,
     ],
+  },
+  {
+    routeNames: [ROUTES.canadaLine.name],
+    description: "crossing river dr at bridge",
+    type: "mixed",
+    videoIds: [
+      VIDEOS.canadaLineSb.id,
+      VIDEOS.northArmBridgeNb.id,
+      VIDEOS.riverDrPathEb.id,
+    ],
+    positions: [VAN_HORNE_RIVER_SE, [49.19888, -123.11894], VAN_HORNE_RIVER_N],
   },
 
   // bridge
@@ -304,8 +321,18 @@ export const CANADA_LINE = [
       VIDEOS.northArmBridgeNb.id,
       VIDEOS.northArmBridgeSb.id,
       VIDEOS.canadaLineSb.id,
+      VIDEOS.riverDrPathEb.id,
     ],
-    positions: [VAN_HORNE_RIVER_N, ELEVATED_START],
+    videoIdsStartAtEnd: [VIDEOS.riverDrPathEb.id],
+    positions: [
+      VAN_HORNE_RIVER_N,
+      [49.19896, -123.11896],
+      [49.19903, -123.11854],
+      [49.19911, -123.11857],
+      [49.19907, -123.11886],
+      [49.1991, -123.11895],
+      ELEVATED_START,
+    ],
   },
   {
     routeNames: [ROUTES.canadaLine.name],
@@ -319,11 +346,6 @@ export const CANADA_LINE = [
     ],
     positions: [
       ELEVATED_START,
-      [49.19903, -123.11854],
-      [49.19911, -123.11858],
-      [49.19907, -123.11886],
-      [49.1991, -123.11895],
-      [49.19917, -123.11893],
       [49.19987, -123.11825],
       [49.2001, -123.11809],
       [49.20047, -123.11799],

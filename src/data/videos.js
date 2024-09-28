@@ -153,6 +153,11 @@ const VIDEOS = {
     date: new Date("Feb 12 2024"),
     minutes: 4,
   },
+  bridgeportTrailWb: {
+    id: "D70ABXZkhpU",
+    date: new Date("Sep 23 2024"),
+    minutes: 5,
+  },
   brunetteFraserSb: {
     id: "lzabq1p-VrM",
     tlId: "ydCTRDMB1Cc",
@@ -976,6 +981,11 @@ const VIDEOS = {
     tlId: "DaA041GKnIA",
     date: new Date("Feb 02 2024"),
     minutes: 53,
+  },
+  riverDrPathEb: {
+    id: "cRx7fDOnr6g",
+    date: new Date("Sep 23 2024"),
+    minutes: 4,
   },
   riverPkwySb: {
     id: "vexfYEmimsw",

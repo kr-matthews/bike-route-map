@@ -292,7 +292,14 @@ export const ROUTES = {
   bridgeportTrail: {
     name: "Bridgeport Trail",
     cities: [RICHMOND],
-    legs: [{ videos: { eastbound: VIDEOS.bridgeportTrailEb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.bridgeportTrailEb,
+          westbound: VIDEOS.bridgeportTrailWb,
+        },
+      },
+    ],
   },
   brunetteFraser: {
     name: "Brunette Fraser Regional Greenway",
@@ -390,6 +397,10 @@ export const ROUTES = {
           northbound: VIDEOS.northArmBridgeNb,
           southbound: VIDEOS.northArmBridgeSb,
         },
+      },
+      {
+        name: "River Dr Path",
+        videos: { eastbound: VIDEOS.riverDrPathEb },
       },
     ],
   },
