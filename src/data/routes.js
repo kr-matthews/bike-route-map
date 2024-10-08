@@ -635,6 +635,11 @@ export const ROUTES = {
       },
     ],
   },
+  gatensbury: {
+    name: "Gatensbury St/Rd",
+    cities: [PORT_MOODY, COQUITLAM],
+    legs: [{ videos: {} }],
+  },
   georgia: {
     name: "Georgia St",
     cities: [VANCOUVER],
@@ -1267,6 +1272,11 @@ export const ROUTES = {
         },
       },
     ],
+  },
+  stJohns: {
+    name: "Saint Johns St Path",
+    cities: [PORT_MOODY],
+    legs: [{ videos: {} }],
   },
   seaIslandConnector: {
     name: "Sea Island Connector",

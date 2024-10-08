@@ -62,6 +62,7 @@ import { FRASER_RIVER_TRAIL } from "./fraserRiverTrail";
 import { FRASERWOOD_TRAIL } from "./fraserwoodTrail";
 import { GAGLARDI } from "./gaglardi";
 import { GARDEN_CITY } from "./gardenCity";
+import { GATENSBURY } from "./gatensbury";
 import { GEORGIA } from "./georgia";
 import { GILBERT } from "./gilbert";
 import { GLADSTONE } from "./gladstone";
@@ -157,6 +158,7 @@ import { SMITHE } from "./smithe";
 import { SOUTH_DYKE } from "./southDyke";
 import { SOUTHEAST } from "./southeast";
 import { SPIRIT_TRAIL } from "./spiritTrail";
+import { ST_JOHNS } from "./stJohns";
 import { STANLEY_PARK_LOOP } from "./stanleyPark";
 import { STEVESTON_HWY } from "./stevestonHwy";
 import { SUNRISE } from "./sunrise";
@@ -257,6 +259,7 @@ export const SEGMENTS = [
   ...FRASERWOOD_TRAIL,
   ...GAGLARDI,
   ...GARDEN_CITY,
+  ...GATENSBURY,
   ...GEORGIA,
   ...GILBERT,
   ...GLADSTONE,
@@ -353,6 +356,7 @@ export const SEGMENTS = [
   ...SOUTH_DYKE,
   ...SOUTHEAST,
   ...SPIRIT_TRAIL,
+  ...ST_JOHNS,
   ...STANLEY_PARK_LOOP,
   ...STEVESTON_HWY,
   ...SUNRISE,

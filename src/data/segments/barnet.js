@@ -1,5 +1,6 @@
 import {
   BARNET_INLET_N,
+  BARNET_ST_JOHN_SW,
   INLET_BAYVIEW_E,
   INLET_BAYVIEW_W,
   INLET_RIDGE_E,
@@ -8,8 +9,8 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-const BARNET_VIEW_E = [49.27971, -122.86651];
-const BARNET_VIEW_W = [49.27966, -122.86701];
+const BARNET_VIEW_NE = [49.27971, -122.86651];
+const BARNET_VIEW_NW = [49.27966, -122.86701];
 const BARNET_UNION = [49.28608, -122.86771];
 const SHORT_N = [49.27946, -122.86543];
 const WB_PRE_BAYVIEW = [49.28761, -122.95215];
@@ -19,13 +20,21 @@ const TRANS_CANADA_SHOULDER_E = [49.28808, -122.89701];
 
 export const BARNET = [
   {
-    description: "connection to spring st part 1",
+    routeNames: [ROUTES.barnet.name],
+    description: "crossing barnet at view",
     type: "comfortable",
     positions: [
-      BARNET_VIEW_W,
+      BARNET_VIEW_NW,
       [49.27966, -122.86661],
       [49.27971, -122.86661],
-      BARNET_VIEW_E,
+      BARNET_VIEW_NE,
+    ],
+  },
+  {
+    description: "path to short/douglas/spring",
+    type: "mixed",
+    positions: [
+      BARNET_VIEW_NE,
       [49.27971, -122.86649],
       [49.27966, -122.86647],
       [49.2794, -122.86646],
@@ -50,7 +59,7 @@ export const BARNET = [
     ],
   },
   {
-    description: "connection to spring st part 2",
+    description: "short/douglas/spring",
     type: "quiet",
     positions: [
       SHORT_N,
@@ -65,6 +74,11 @@ export const BARNET = [
       [49.27775, -122.86427],
       [49.2772, -122.86426],
       [49.2772, -122.8641],
+      [49.27724, -122.86175],
+      [49.27727, -122.8595],
+      [49.27727, -122.85658],
+      [49.27726, -122.85245],
+      [49.27724, -122.85024],
     ],
   },
 
@@ -242,7 +256,7 @@ export const BARNET = [
   },
   {
     routeNames: [ROUTES.barnet.name],
-    description: "eb: sidewalk",
+    description: "eb: sidewalk part 1",
     type: "mixed",
     oneWay: "recommended",
     positions: [
@@ -258,7 +272,15 @@ export const BARNET = [
       [49.28094, -122.86701],
       [49.28038, -122.867],
       [49.27985, -122.867],
-      BARNET_VIEW_W,
+      BARNET_VIEW_NW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.barnet.name],
+    description: "eb: sidewalk part 2",
+    type: "mixed",
+    positions: [
+      BARNET_VIEW_NW,
       [49.27929, -122.867],
       [49.27862, -122.86704],
       [49.27814, -122.86709],
@@ -266,6 +288,7 @@ export const BARNET = [
       [49.27732, -122.86704],
       [49.27716, -122.86701],
       [49.27674, -122.86698],
+      BARNET_ST_JOHN_SW,
     ],
   },
   {
@@ -282,7 +305,7 @@ export const BARNET = [
       [49.27889, -122.86657],
       [49.2792, -122.86654],
       [49.27948, -122.86651],
-      BARNET_VIEW_E,
+      BARNET_VIEW_NE,
       [49.2801, -122.86652],
       [49.28055, -122.86655],
       [49.28124, -122.86659],
