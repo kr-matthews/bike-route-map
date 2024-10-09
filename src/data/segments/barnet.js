@@ -84,11 +84,18 @@ export const BARNET = [
 
   {
     routeNames: [ROUTES.barnet.name],
-    description: "eb: ridge-ish to trans canada",
+    description: "eb: pre-ridge",
     type: "shoulder",
     oneWay: "required",
+    positions: [[49.28259, -122.95641], INLET_RIDGE_E],
+  },
+  {
+    routeNames: [ROUTES.barnet.name],
+    description: "eb: ridge to trans canada",
+    type: "shoulder",
+    oneWay: "required",
+    videoIds: [VIDEOS.barnetEb.id],
     positions: [
-      [49.28259, -122.95641],
       INLET_RIDGE_E,
       [49.28525, -122.95449],
       [49.28592, -122.95397],
@@ -186,6 +193,7 @@ export const BARNET = [
     description: "eb: trans canada",
     type: "dedicated",
     oneWay: "recommended",
+    videoIds: [VIDEOS.barnetEb.id],
     positions: [
       TRANS_CANADA_SHOULDER_W,
       [49.28775, -122.8976],
@@ -198,6 +206,7 @@ export const BARNET = [
     description: "eb: trans canada to sidewalk",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.barnetEb.id],
     positions: [
       TRANS_CANADA_SHOULDER_E,
       [49.2882, -122.89689],
@@ -259,6 +268,7 @@ export const BARNET = [
     description: "eb: sidewalk part 1",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [VIDEOS.barnetEb.id],
     positions: [
       BARNET_UNION,
       [49.28597, -122.86766],
@@ -279,6 +289,8 @@ export const BARNET = [
     routeNames: [ROUTES.barnet.name],
     description: "eb: sidewalk part 2",
     type: "mixed",
+    videoIds: [VIDEOS.barnetEb.id],
+    videoIdsEndAtEnd: [VIDEOS.barnetEb.id],
     positions: [
       BARNET_VIEW_NW,
       [49.27929, -122.867],

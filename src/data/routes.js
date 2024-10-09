@@ -205,7 +205,7 @@ export const ROUTES = {
   barnet: {
     name: "Barnet Hwy",
     cities: [BURNABY, PORT_MOODY],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.barnetEb } }],
   },
   bcParkway: {
     name: "BC Parkway",
@@ -638,7 +638,7 @@ export const ROUTES = {
   gatensbury: {
     name: "Gatensbury St/Rd",
     cities: [PORT_MOODY, COQUITLAM],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.gatensburySb } }],
   },
   georgia: {
     name: "Georgia St",
@@ -1276,7 +1276,7 @@ export const ROUTES = {
   stJohns: {
     name: "Saint Johns St Path",
     cities: [PORT_MOODY],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.stJohnsEb } }],
   },
   seaIslandConnector: {
     name: "Sea Island Connector",

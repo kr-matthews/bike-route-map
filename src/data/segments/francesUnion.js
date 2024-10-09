@@ -35,10 +35,15 @@ const BARNET_RIDGE = [49.2833, -122.95354];
 
 export const FRANCES_UNION = [
   {
+    description: "crossing barnet at ridge",
+    type: "mixed",
+    positions: [INLET_RIDGE_W, INLET_RIDGE_E],
+  },
+  {
     description: "connection via ridge dr",
     type: "mixed",
+    videoIds: [VIDEOS.barnetEb.id],
     positions: [
-      INLET_RIDGE_W,
       INLET_RIDGE_E,
       [49.28347, -122.95529],
       [49.28347, -122.95399],
@@ -166,10 +171,17 @@ export const FRANCES_UNION = [
   },
   {
     routeNames: [ROUTES.francesUnion.name],
-    description: "duthie",
+    description: "duthie: s of hastings",
     type: "shared",
+    positions: [DUTHIE_UNION, DUTHIE_HASTINGS_S],
+  },
+  {
+    routeNames: [ROUTES.francesUnion.name],
+    description: "duthie: n of hastings",
+    type: "shared",
+    videoIds: [VIDEOS.barnetEb.id],
+    videoIdsStartAtStart: [VIDEOS.barnetEb.id],
     positions: [
-      DUTHIE_UNION,
       DUTHIE_HASTINGS_S,
       DUTHIE_HASTINGS_N,
       [49.2824, -122.95338],

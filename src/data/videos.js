@@ -67,6 +67,12 @@ const VIDEOS = {
     date: new Date("Jan 21 2024"),
     minutes: 23,
   },
+  barnetEb: {
+    id: "SK5B60zclAY",
+    tlId: "LNIkVVktJwQ",
+    date: new Date("Oct 7 2024"),
+    minutes: 20,
+  },
   bcParkway22ndStation: {
     id: "CQNzsCvC60U",
     date: new Date("Mar 29 2024"),
@@ -475,6 +481,12 @@ const VIDEOS = {
     id: "3oyKPM5u3Ao",
     date: new Date("Jul 05 2023"),
     minutes: 19,
+  },
+  gatensburySb: {
+    id: "JW2BxHwhgmA",
+    tlId: "ObZaM3PRshY",
+    date: new Date("Oct 7 2024"),
+    minutes: 17,
   },
   gilbertNb: {
     id: "QPxa6Hl9_8A",
@@ -1181,6 +1193,12 @@ const VIDEOS = {
     id: "qLHu2A2YA7E",
     date: new Date("Sep 01 2024"),
     minutes: 3,
+  },
+  stJohnsEb: {
+    id: "qjo0Ev2F8B8",
+    tlId: "vTsBUeFXdOQ",
+    date: new Date("Oct 7 2024"),
+    minutes: 7,
   },
   sunriseNb: {
     id: "YGhkRf0VmKw",

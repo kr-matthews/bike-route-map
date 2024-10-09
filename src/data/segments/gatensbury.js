@@ -1,5 +1,6 @@
 import { MOODY_ST_JOHNS_S } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const GATENSBURY_FOSTER = [49.25615, -122.8578];
 const GATENSBURY_REGAN_SW = [49.26153, -122.85746];
@@ -22,6 +23,8 @@ export const GATENSBURY = [
     routeNames: [ROUTES.gatensbury.name],
     description: "foster to/along lake",
     type: "shared",
+    videoIds: [VIDEOS.gatensburySb.id],
+    videoIdsEndAtStart: [VIDEOS.gatensburySb.id],
     positions: [
       GATENSBURY_FOSTER,
       [49.25628, -122.85759],
@@ -44,6 +47,7 @@ export const GATENSBURY = [
     routeNames: [ROUTES.gatensbury.name],
     description: "path, flat part",
     type: "mixed",
+    videoIds: [VIDEOS.gatensburySb.id],
     positions: [
       GATENSBURY_REGAN_SW,
       [49.26153, -122.85755],
@@ -107,6 +111,7 @@ export const GATENSBURY = [
     description: "brief road, uphill",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.gatensburySb.id],
     positions: [
       GATENSBURY_HENRY,
       [49.27465, -122.85384],
@@ -118,6 +123,7 @@ export const GATENSBURY = [
     description: "path, uphill",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [VIDEOS.gatensburySb.id],
     positions: [
       GATENSBURY_POST_HENRY,
       [49.27464, -122.85414],
@@ -168,6 +174,7 @@ export const GATENSBURY = [
     routeNames: [ROUTES.gatensbury.name],
     description: "henry & moody",
     type: "shared",
+    videoIds: [VIDEOS.gatensburySb.id],
     positions: [
       GATENSBURY_HENRY,
       [49.27466, -122.85338],
