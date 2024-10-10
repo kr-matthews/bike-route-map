@@ -118,7 +118,7 @@ export const LOUGHEED = [
     ],
   },
   {
-    routeNames: [ROUTES.lougheed.name, ROUTES.seaToRiver.name],
+    routeNames: [ROUTES.lougheed.name],
     description: "eb: crossing gilmore",
     type: "painted",
     oneWay: "required",

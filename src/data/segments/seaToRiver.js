@@ -25,7 +25,7 @@ const MCKAY_MAYWOOD = [49.22372, -123.00896];
 const MAYWOOD_W = [49.22515, -123.01206];
 const PATTERSON_MAYWOOD = [49.22539, -123.01264];
 const GILMORE_HALIFAX_SE = [49.26797, -123.01417];
-const GILMORE_HALIFAX_SW = [49.26797, -123.01432];
+const GILMORE_HALIFAX_SW = [49.26796, -123.01441];
 const GILMORE_LANE_START = [49.26723, -123.01416];
 
 const CARLETON_DOUGLAS_N = [49.26937, -123.01323];
@@ -249,15 +249,13 @@ export const SEA_TO_RIVER = [
       [49.26472, -123.01451],
       [49.2658, -123.01451],
       [49.26588, -123.01462],
-      [49.26597, -123.01451],
       GILMORE_LOUGHEED_SW,
     ],
   },
   {
-    routeNames: [ROUTES.seaToRiver.name],
-    description: "nb: lougheed to halifax part 1",
+    description: "nb alt: lougheed to halifax part 1",
     oneWay: "required",
-    type: "shared",
+    type: "painted",
     videoIds: [VIDEOS.seaToRiverNb.id],
     positions: [
       GILMORE_LOUGHEED_SE,
@@ -267,8 +265,7 @@ export const SEA_TO_RIVER = [
     ],
   },
   {
-    routeNames: [ROUTES.seaToRiver.name],
-    description: "nb: lougheed to halifax part 2",
+    description: "nb alt: lougheed to halifax part 2",
     type: "comfortable",
     oneWay: "required",
     videoIds: [VIDEOS.seaToRiverNb.id],
@@ -276,18 +273,22 @@ export const SEA_TO_RIVER = [
   },
   {
     routeNames: [ROUTES.seaToRiver.name],
-    description: "sb: crossing halifax",
+    description: "crossing halifax",
     type: "mixed",
     oneWay: "recommended",
     hideArrows: true,
-    positions: [GILMORE_HALIFAX_SE, GILMORE_HALIFAX_SW],
+    positions: [GILMORE_HALIFAX_SW, GILMORE_HALIFAX_SE],
   },
   {
     routeNames: [ROUTES.seaToRiver.name],
-    description: "sb: halifax to lougheed",
-    oneWay: "required",
-    type: "shared",
-    positions: [GILMORE_HALIFAX_SW, GILMORE_LOUGHEED_NW, GILMORE_LOUGHEED_SW],
+    description: "lougheed to halifax",
+    type: "mixed",
+    positions: [
+      GILMORE_LOUGHEED_SW,
+      GILMORE_LOUGHEED_NW,
+      [49.26632, -123.0144],
+      GILMORE_HALIFAX_SW,
+    ],
   },
   {
     routeNames: [ROUTES.seaToRiver.name],
