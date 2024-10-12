@@ -1,7 +1,112 @@
-import {} from "../intersections";
+import { GAGLARDI_UNIVERSITY_E_NE } from "../intersections";
 import { ROUTES } from "../routes";
 
+const GAGLARDI_S_CAMPUS_NE = [49.27793, -122.92074];
+const GAGLARDI_S_CAMPUS_NE_N = [49.27795, -122.9206];
+const GAGLARDI_S_CAMPUS_SE_S = [49.2776, -122.92099];
+const GAGLARDI_UNIVERSITY_W_E = [49.27621, -122.93015];
+const GAGLARDI_UNIVERSITY_W_W = [49.27607, -122.93067];
+const GAGLARDI_LANE_SB_START = [49.27934, -122.92063];
+const GAGLARDI_LANE_NB_END = [49.27923, -122.92008];
+const GREENHOUSE_NELSON = [49.27417, -122.91312];
+const PARKING_LOT_W = [49.28064, -122.92239];
+const PARKING_LOT_E = [49.28032, -122.92083];
+
 export const SFU_PATHS = [
+  {
+    description: "gaglardi road sb",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      GAGLARDI_LANE_SB_START,
+      [49.27908, -122.92058],
+      [49.27899, -122.92056],
+      [49.27886, -122.92059],
+      [49.27841, -122.92076],
+      [49.27824, -122.92084],
+      [49.27813, -122.92091],
+      [49.27807, -122.92096],
+      [49.27803, -122.92103],
+      GAGLARDI_S_CAMPUS_NE,
+    ],
+  },
+  {
+    description: "gaglardi road nb",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      GAGLARDI_S_CAMPUS_NE_N,
+      [49.278, -122.92064],
+      [49.27809, -122.92066],
+      [49.27819, -122.92063],
+      [49.27855, -122.92054],
+      [49.27885, -122.92042],
+      [49.27896, -122.92038],
+      [49.279, -122.92034],
+      GAGLARDI_LANE_NB_END,
+    ],
+  },
+  {
+    description: "s campus rd",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      [49.2776, -122.9215],
+      [49.27763, -122.92132],
+      [49.27764, -122.92117],
+      [49.27764, -122.92099],
+      [49.27763, -122.9207],
+      [49.2776, -122.92047],
+      [49.27756, -122.92031],
+      [49.27703, -122.9188],
+      [49.27689, -122.91835],
+      [49.27683, -122.91809],
+      [49.27654, -122.91648],
+      [49.2764, -122.9157],
+      [49.27634, -122.91548],
+      [49.27627, -122.91527],
+      [49.27617, -122.91507],
+      [49.27605, -122.91486],
+      [49.27589, -122.91467],
+      [49.27562, -122.91426],
+      [49.2755, -122.914],
+      [49.27543, -122.91373],
+      [49.27539, -122.91353],
+      [49.27537, -122.91331],
+      [49.27537, -122.91042],
+      [49.27538, -122.91017],
+      [49.2754, -122.90996],
+      [49.27547, -122.9096],
+    ],
+  },
+
+  {
+    routeNames: [ROUTES.sfuPaths.name],
+    description: "crossing gaglardi at university w",
+    type: "mixed",
+    positions: [
+      GAGLARDI_UNIVERSITY_W_W,
+      [49.27616, -122.93037],
+      GAGLARDI_UNIVERSITY_W_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.sfuPaths.name],
+    description: "crossing s campus at gaglardi 1",
+    type: "mixed",
+    positions: [
+      GAGLARDI_S_CAMPUS_SE_S,
+      [49.27771, -122.92099],
+      GAGLARDI_S_CAMPUS_NE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.sfuPaths.name],
+    description: "crossing s campus at gaglardi 2",
+    type: "mixed",
+    positions: [GAGLARDI_S_CAMPUS_NE, GAGLARDI_S_CAMPUS_NE_N],
+  },
+
   {
     routeNames: [ROUTES.sfuPaths.name],
     description: "west perimeter: burnaby mtn, gaglardi, university dr w",
@@ -33,7 +138,7 @@ export const SFU_PATHS = [
       [49.27554, -122.92969],
       [49.27588, -122.93026],
       [49.276, -122.93048],
-      [49.27607, -122.93067],
+      GAGLARDI_UNIVERSITY_W_W,
       [49.27608, -122.9308],
       [49.27611, -122.93091],
       [49.27615, -122.931],
@@ -63,12 +168,27 @@ export const SFU_PATHS = [
       [49.28132, -122.92518],
       [49.28095, -122.92323],
       [49.28076, -122.92267],
-      [49.28064, -122.92239],
+      PARKING_LOT_W,
+    ],
+  },
+
+  {
+    routeNames: [ROUTES.sfuPaths.name],
+    description: "west perimeter: university dr w parking lot bit",
+    type: "quiet",
+    positions: [
+      PARKING_LOT_W,
       [49.28059, -122.922],
       [49.28041, -122.92105],
-      [49.28032, -122.92083],
-      [49.28014, -122.9198],
+      PARKING_LOT_E,
     ],
+  },
+
+  {
+    routeNames: [ROUTES.sfuPaths.name],
+    description: "west perimeter: university dr w last bit",
+    type: "mixed",
+    positions: [PARKING_LOT_E, [49.28014, -122.9198]],
   },
   {
     routeNames: [ROUTES.sfuPaths.name],
@@ -110,7 +230,7 @@ export const SFU_PATHS = [
       [49.27395, -122.92445],
       [49.27393, -122.92464],
       [49.27377, -122.92557],
-      [49.27378, -122.92566],
+      GAGLARDI_UNIVERSITY_E_NE,
       [49.27381, -122.92576],
       [49.27387, -122.9258],
       [49.27393, -122.92588],
@@ -118,7 +238,7 @@ export const SFU_PATHS = [
       [49.27526, -122.92867],
       [49.27595, -122.93002],
       [49.27603, -122.93009],
-      [49.27621, -122.93015],
+      GAGLARDI_UNIVERSITY_W_E,
       [49.27631, -122.93016],
       [49.27644, -122.93025],
       [49.2766, -122.93021],
@@ -140,7 +260,7 @@ export const SFU_PATHS = [
       [49.2775, -122.92155],
       [49.27757, -122.92137],
       [49.27759, -122.92124],
-      [49.2776, -122.92099],
+      GAGLARDI_S_CAMPUS_SE_S,
       [49.2776, -122.92079],
       [49.27757, -122.92055],
       [49.27753, -122.92032],
@@ -153,6 +273,34 @@ export const SFU_PATHS = [
       [49.27643, -122.91868],
       [49.27624, -122.9185],
       [49.27621, -122.9184],
+      [49.27614, -122.91816],
+      [49.27603, -122.91727],
+      [49.276, -122.91705],
+      [49.27589, -122.91676],
+      [49.27582, -122.9164],
+      [49.27575, -122.91615],
+      [49.27567, -122.916],
+      [49.27551, -122.91592],
+      [49.27541, -122.9159],
+      [49.27528, -122.91576],
+      [49.27515, -122.9155],
+      [49.27503, -122.91523],
+      [49.27496, -122.91494],
+      [49.27493, -122.91487],
+      [49.27485, -122.91478],
+      [49.27482, -122.91474],
+      [49.2748, -122.91463],
+      [49.2748, -122.91459],
+      [49.27486, -122.91448],
+      [49.27488, -122.91438],
+      [49.27478, -122.91377],
+      [49.27473, -122.91357],
+      [49.27462, -122.91339],
+      [49.27434, -122.9132],
+      [49.27429, -122.91317],
+      [49.27423, -122.91318],
+      [49.27418, -122.91318],
+      GREENHOUSE_NELSON,
     ],
   },
   {
@@ -160,9 +308,7 @@ export const SFU_PATHS = [
     description: "interior: south campus",
     type: "mixed",
     positions: [
-      // [49.27771, -122.92098],
-      // [49.27793, -122.92075],
-      [49.27795, -122.9206],
+      GAGLARDI_S_CAMPUS_NE_N,
       [49.2779, -122.92058],
       [49.2778, -122.92051],
       [49.27772, -122.9204],

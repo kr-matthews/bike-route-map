@@ -1,7 +1,9 @@
 import {
   DUTHIE_HASTINGS_N,
   DUTHIE_HASTINGS_S,
+  GAGLARDI_BURNABY_MTN_NW,
   GAGLARDI_BURNABY_MTN_SW,
+  GAGLARDI_UNIVERSITY_E_NE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
@@ -110,7 +112,8 @@ export const BURNABY_MOUNTAIN_PARKWAY = [
     type: "shoulder",
     oneWay: "required",
     positions: [
-      [49.27367, -122.92605],
+      GAGLARDI_UNIVERSITY_E_NE,
+      GAGLARDI_BURNABY_MTN_NW,
       [49.27361, -122.92649],
       [49.27359, -122.92675],
       [49.27361, -122.92715],
