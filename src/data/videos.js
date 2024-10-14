@@ -180,6 +180,12 @@ const VIDEOS = {
     date: new Date("Apr 10 2024"),
     minutes: 4,
   },
+  burnabyMtnEb: {
+    id: "76xwLmfeJpY",
+    tlId: "hX3HMQYSZ4o",
+    date: new Date("Oct 11 2024"),
+    minutes: 11,
+  },
   burrardNb: {
     id: "62m58RRdHcg",
     date: new Date("Aug 12 2023"),
@@ -472,6 +478,18 @@ const VIDEOS = {
     date: new Date("Dec 23 2023"),
     minutes: 10,
   },
+  gaglardiSb: {
+    id: "HOTLltpBK1Q",
+    tlId: "gAVO42btCBU",
+    date: new Date("Oct 11 2024"),
+    minutes: 11,
+  },
+  gaglardiPathNb: {
+    id: "NZHunbbpMRQ",
+    tlId: "gBbEltCwfs4",
+    date: new Date("Oct 11 2024"),
+    minutes: 7,
+  },
   gardenCityNb: {
     id: "CqETe9mI-SM",
     date: new Date("Jul 05 2023"),
@@ -518,6 +536,11 @@ const VIDEOS = {
     tlId: "aKPBmrm6brE",
     date: new Date("Jun 17 2024"),
     minutes: 23,
+  },
+  greenhousePathEb: {
+    id: "V5xStQzLJ24",
+    date: new Date("Oct 11 2024"),
+    minutes: 4,
   },
   greenleafEb: {
     id: "NKPIVJrTpDo",
@@ -1041,6 +1064,11 @@ const VIDEOS = {
     date: new Date("Sep 11 2024"),
     minutes: 6,
   },
+  sCampusPathNWb: {
+    id: "qONFT1Ay9rw",
+    date: new Date("Oct 11 2024"),
+    minutes: 3,
+  },
   seaIslandConnectorWb: {
     id: "BQJVwt1W2Nk",
     date: new Date("Feb 26 2024"),
@@ -1279,6 +1307,21 @@ const VIDEOS = {
     tlId: "uyVrPswaYfE",
     date: new Date("Jul 24 2024"),
     minutes: 10,
+  },
+  universityDrEEb: {
+    id: "gyRryt5aipE",
+    date: new Date("Oct 11 2024"),
+    minutes: 5,
+  },
+  universityDrEPathWb: {
+    id: "r6-HYs-c3m4",
+    date: new Date("Oct 11 2024"),
+    minutes: 3,
+  },
+  universityDrWPathWb: {
+    id: "0Nglixp8kZU",
+    date: new Date("Oct 11 2024"),
+    minutes: 4,
   },
   uptownDowntownSb: {
     id: "tD9r-kIGs_k",

@@ -3,12 +3,15 @@ import {
   GAGLARDI_BURNABY_MTN_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const UNIVERSITY_DR_E = [
   {
     description: "crossing gaglardi south side",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.universityDrEEb.id],
+    videoIdsStartAtStart: [VIDEOS.universityDrEEb.id],
     positions: [GAGLARDI_BURNABY_MTN_SW, GAGLARDI_BURNABY_MTN_SE],
   },
 
@@ -17,6 +20,8 @@ export const UNIVERSITY_DR_E = [
     description: "eb",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.universityDrEEb.id],
+    videoIdsEndAtEnd: [VIDEOS.universityDrEEb.id],
     positions: [
       GAGLARDI_BURNABY_MTN_SE,
       [49.27362, -122.92535],

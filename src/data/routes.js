@@ -318,7 +318,7 @@ export const ROUTES = {
     name: "Burnaby Mountain Parkway",
     shortName: "Burnaby Mtn Pkwy",
     cities: [BURNABY],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.burnabyMtnEb } }],
   },
   burrard: {
     name: "Burrard St",
@@ -617,7 +617,7 @@ export const ROUTES = {
   gaglardi: {
     name: "Gaglardi Way",
     cities: [BURNABY],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.gaglardiSb } }],
   },
   gardenCity: {
     name: "Garden City Rd",
@@ -1377,7 +1377,26 @@ export const ROUTES = {
     name: "Simon Fraser University Paths",
     shortName: "SFU Paths",
     cities: [BURNABY],
-    legs: [{ videos: {} }],
+    legs: [
+      { name: "Burnaby Mountain Parkway", videos: {} },
+      {
+        name: "University Drive West",
+        videos: { westbound: VIDEOS.universityDrWPathWb },
+      },
+      { name: "Gaglardi Way", videos: { northbound: VIDEOS.gaglardiPathNb } },
+      {
+        name: "South Campus Road",
+        videos: { westbound: VIDEOS.sCampusPathNWb },
+      },
+      {
+        name: "Greenhouse Lane/Nelson Way",
+        videos: { eastbound: VIDEOS.greenhousePathEb },
+      },
+      {
+        name: "University Drive East",
+        videos: { westbound: VIDEOS.universityDrEPathWb },
+      },
+    ],
   },
   shellRoadTrail: {
     name: "Shell Rd Trail",
@@ -1469,7 +1488,7 @@ export const ROUTES = {
     name: "University Dr E",
     cities: [BURNABY],
     isOneWay: true,
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.universityDrEEb } }],
   },
   uptownDowntown: {
     name: "Uptown/Downtown",

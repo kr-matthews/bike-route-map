@@ -6,6 +6,7 @@ import {
   GAGLARDI_UNIVERSITY_E_NE,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const HASTINGS_EB_SHOULDER_START = [49.28027, -122.95117];
 const BURNABY_MTN_HASTINGS_S = [49.27994, -122.95028];
@@ -20,6 +21,7 @@ export const BURNABY_MOUNTAIN_PARKWAY = [
     description: "hastings eb road",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.burnabyMtnEb.id],
     positions: [
       DUTHIE_HASTINGS_S,
       [49.28033, -122.95221],
@@ -33,6 +35,7 @@ export const BURNABY_MOUNTAIN_PARKWAY = [
     description: "hastings eb shoulder",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.burnabyMtnEb.id],
     positions: [
       HASTINGS_EB_SHOULDER_START,
       [49.28023, -122.95099],
@@ -76,6 +79,8 @@ export const BURNABY_MOUNTAIN_PARKWAY = [
     description: "eb",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.burnabyMtnEb.id],
+    videoIdsEndAtEnd: [VIDEOS.burnabyMtnEb.id],
     positions: [
       BURNABY_MTN_HASTINGS_S,
       [49.27862, -122.94808],
@@ -107,12 +112,19 @@ export const BURNABY_MOUNTAIN_PARKWAY = [
     ],
   },
   {
+    description: "wb crossing gaglardi",
+    type: "shoulder",
+    oneWay: "required",
+    videoIds: [VIDEOS.gaglardiSb.id],
+    videoIdsStartAtStart: [VIDEOS.gaglardiSb.id],
+    positions: [GAGLARDI_UNIVERSITY_E_NE, GAGLARDI_BURNABY_MTN_NW],
+  },
+  {
     routeNames: [ROUTES.burnabyMtnPkwy.name],
     description: "wb",
     type: "shoulder",
     oneWay: "required",
     positions: [
-      GAGLARDI_UNIVERSITY_E_NE,
       GAGLARDI_BURNABY_MTN_NW,
       [49.27361, -122.92649],
       [49.27359, -122.92675],

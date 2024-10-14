@@ -173,6 +173,8 @@ export const FRANCES_UNION = [
     routeNames: [ROUTES.francesUnion.name],
     description: "duthie: s of hastings",
     type: "shared",
+    videoIds: [VIDEOS.burnabyMtnEb.id],
+    videoIdsStartAtStart: [VIDEOS.burnabyMtnEb.id],
     positions: [DUTHIE_UNION, DUTHIE_HASTINGS_S],
   },
   {
