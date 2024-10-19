@@ -51,6 +51,7 @@ import { DUNBAR } from "./dunbar";
 import { DUNSMUIR } from "./dunsmuir";
 import { DUNSMUIR_MELVILLE_PENDER } from "./dunsmuirMelvillePender";
 import { EAST_MALL } from "./eastMall";
+import { EDMONDS } from "./edmonds";
 import { EWEN } from "./ewen";
 import { FORTY_FIFTH } from "./fortyFifth";
 import { FOURTEENTH } from "./fourteenth";
@@ -248,6 +249,7 @@ export const SEGMENTS = [
   ...DUNSMUIR,
   ...DUNSMUIR_MELVILLE_PENDER,
   ...EAST_MALL,
+  ...EDMONDS,
   ...EWEN,
   ...FORTY_FIFTH,
   ...FOURTEENTH,

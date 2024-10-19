@@ -13,6 +13,7 @@ import {
   BC_PARKWAY_VICTORY_CONNECTION,
   BONSOR_BC_PARKWAY,
   BULLER_BERESFORD_W,
+  BULLER_N_OF_IRMIN,
   BULLER_PRENTER,
   CENTRAL_PARK_BC_PARKWAY_NE,
   CENTRAL_PARK_BC_PARKWAY_WEST_SPLIT,
@@ -32,7 +33,8 @@ import {
   QUEENSBOROUGH_STEWARDSON_W,
   SLOCAN_29TH,
   SLOCAN_BC_PARKWAY,
-  STATION_HILL_SOUTHPOINT_E,
+  STATION_HILL_SOUTHPOINT_NE,
+  STATION_HILL_SOUTHPOINT_SE,
   STEWARDSON_GRIMSTON_S,
   TODD_VANNESS,
 } from "../intersections";
@@ -90,7 +92,7 @@ const POST_MOSAIC_ALLEY = [49.25789, -123.06087];
 const CENTRAL_IMPERIAL_SW = [49.22187, -122.99727];
 const JUBILEE_IMPERIAL_SE = [49.22187, -122.99573];
 const BULLER_PRENTER_N = [49.21757, -122.97757];
-const BC_PARKWAY_BEFORE_IRMIN = [49.21636, -122.97521];
+const BC_PARKWAY_BEFORE_IRMIN = [49.21633, -122.97516];
 const EAST_OF_GILLEY_RUMBLE = [49.21487, -122.97131];
 
 const CITY_PARKWAY_N = [49.2013, -122.85083];
@@ -172,6 +174,23 @@ export const BC_PARKWAY = [
     videoIds: [VIDEOS.bcParkway29thStation.id],
     videoIdsEndAtEnd: [VIDEOS.bcParkway29thStation.id],
     positions: [PENTICTON_29TH, PENTICTON_BC_PARKWAY],
+  },
+
+  // burnaby other stuff
+  {
+    description: "north of irmin",
+    type: "mixed",
+    positions: [
+      [49.21652, -122.98269],
+      [49.21653, -122.98229],
+      [49.2165, -122.98215],
+      [49.21638, -122.98081],
+      [49.21633, -122.98022],
+      [49.21632, -122.97994],
+      [49.21631, -122.97954],
+      BULLER_N_OF_IRMIN,
+      BC_PARKWAY_BEFORE_IRMIN,
+    ],
   },
 
   // vancouver
@@ -684,7 +703,8 @@ export const BC_PARKWAY = [
       [49.21108, -122.95902],
       [49.21079, -122.95881],
       [49.21, -122.95825],
-      STATION_HILL_SOUTHPOINT_E,
+      STATION_HILL_SOUTHPOINT_NE,
+      STATION_HILL_SOUTHPOINT_SE,
       [49.20983, -122.95815],
       [49.2098, -122.95815],
       [49.20952, -122.95798],
