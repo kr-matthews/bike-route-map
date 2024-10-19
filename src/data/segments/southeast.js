@@ -38,6 +38,7 @@ export const SOUTHEAST = [
     positions: [FIFTEENTH_14TH_N, [49.21417, -122.94683], FIFTEENTH_13TH_W],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "15th",
     type: "mixed",
     videoIds: [VIDEOS.highlandParkLineWb.id],
@@ -50,12 +51,14 @@ export const SOUTHEAST = [
     ],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "crossing at 13th",
     type: "mixed",
     videoIds: [VIDEOS.highlandParkLineWb.id],
     positions: [FIFTEENTH_13TH_W, FIFTEENTH_13TH_E],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "connection from london 1",
     type: "quiet",
     videoIds: [VIDEOS.highlandParkLineWb.id],
@@ -68,13 +71,14 @@ export const SOUTHEAST = [
     ],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "connection from london 2",
     type: "quiet",
     positions: [FIFTEENTH_11TH, FIFTEENTH_12TH],
   },
 
   {
-    routeNames: [ROUTES.southeast.name],
+    routeNames: [ROUTES.southeast.name, ROUTES.edmonds.name],
     description: "southpoint eb",
     type: "dedicated",
     oneWay: "required",
@@ -89,7 +93,7 @@ export const SOUTHEAST = [
     ],
   },
   {
-    routeNames: [ROUTES.southeast.name],
+    routeNames: [ROUTES.southeast.name, ROUTES.edmonds.name],
     description: "southpoint wb",
     type: "dedicated",
     oneWay: "required",
@@ -106,7 +110,7 @@ export const SOUTHEAST = [
     ],
   },
   {
-    routeNames: [ROUTES.southeast.name],
+    routeNames: [ROUTES.southeast.name, ROUTES.edmonds.name],
     description: "stride",
     type: "quiet",
     videoIds: [VIDEOS.southeastWb.id],
@@ -122,20 +126,29 @@ export const SOUTHEAST = [
     ],
   },
   {
-    routeNames: [ROUTES.southeast.name],
+    routeNames: [ROUTES.southeast.name, ROUTES.edmonds.name],
     description: "stride to 14th",
     type: "quiet",
     videoIds: [VIDEOS.southeastWb.id, VIDEOS.highlandParkLineWb.id],
     positions: [FIFTEENTH_STRIDE, FIFTEENTH_14TH_N],
   },
   {
-    routeNames: [ROUTES.southeast.name],
-    description: "14th to cumberland",
+    routeNames: [ROUTES.southeast.name, ROUTES.edmonds.name],
+    description: "14th to 12th",
     type: "quiet",
     videoIds: [VIDEOS.southeastWb.id],
     positions: [
       FIFTEENTH_14TH_N,
       [49.21329, -122.9455], // FIFTEENTH_13TH_N
+      FIFTEENTH_12TH,
+    ],
+  },
+  {
+    routeNames: [ROUTES.southeast.name],
+    description: "15th to cumberland",
+    type: "quiet",
+    videoIds: [VIDEOS.southeastWb.id],
+    positions: [
       FIFTEENTH_12TH,
       [49.21367, -122.94203],
       [49.21484, -122.93988],

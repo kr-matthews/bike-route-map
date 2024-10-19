@@ -579,6 +579,20 @@ export const ROUTES = {
     cities: [UBC],
     legs: [{ videos: { southbound: VIDEOS.eastMallSb } }],
   },
+  edmonds: {
+    name: "Edmonds",
+    cities: [BURNABY],
+    legs: [
+      { name: "Sample's Path", videos: {} },
+      { name: "18th Ave/19th Ave", videos: {} },
+      { name: "Stride Ave/16th Ave", videos: {} },
+      { name: "Byrne Creek Secondary/18th St/Salisbury Ave", videos: {} },
+      {
+        name: "15th St/Britton St/Kingsway Ave",
+        videos: { northbound: VIDEOS.highlandParkLineWb },
+      },
+    ],
+  },
   ewen: {
     name: "Ewen Ave Greenway",
     cities: [NEW_WESTMINSTER],

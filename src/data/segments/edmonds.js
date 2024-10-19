@@ -45,8 +45,27 @@ const KINGSWAY_PRE_19TH = [49.21809, -122.94912];
 const KINGSWAY_19TH_SW = [49.21802, -122.94852];
 
 export const EDMONDS = [
-  // sample's path
   {
+    routeNames: [ROUTES.edmonds.name],
+    description: "vista",
+    type: "mixed",
+    positions: [
+      [49.21972, -122.95067],
+      [49.2201, -122.95017],
+      [49.22038, -122.94966],
+      [49.22038, -122.94962],
+      [49.22048, -122.94945],
+      [49.2208, -122.94912],
+      [49.22086, -122.94901],
+      [49.22095, -122.94898],
+      [49.221, -122.94901],
+      [49.22109, -122.94901],
+      [49.22125, -122.94896],
+    ],
+  },
+
+  {
+    routeNames: [ROUTES.edmonds.name],
     description: "sample's path",
     type: "mixed",
     positions: [
@@ -79,6 +98,7 @@ export const EDMONDS = [
 
   // edmonds station
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "bc parkway to edmonds station - bad",
     type: "other",
     positions: [
@@ -93,6 +113,7 @@ export const EDMONDS = [
     ],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "bc parkway to edmonds station - good",
     type: "mixed",
     positions: [
@@ -110,6 +131,7 @@ export const EDMONDS = [
     ],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "edmonds station parking lot",
     type: "quiet",
     positions: [
@@ -123,6 +145,7 @@ export const EDMONDS = [
 
   // 18th ave/19th ave
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "18th ave, edmonds station to 18th street",
     type: "mixed",
     positions: [
@@ -142,6 +165,7 @@ export const EDMONDS = [
     ],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "18th ave, 18th to leeside",
     type: "dedicated",
     positions: [
@@ -153,6 +177,7 @@ export const EDMONDS = [
     ],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "18th ave, leeside to 16th",
     type: "dedicated",
     positions: [
@@ -163,23 +188,27 @@ export const EDMONDS = [
     ],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "18th ave, 16th to britton",
     type: "quiet",
     positions: [SIXTEENTH_18TH_NW, [49.21624, -122.95253], BRITTON_18TH],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "kingsway: britton to 19th part 1",
     type: "dedicated",
     oneWay: "required",
     positions: [BRITTON_KINGSWAY_S, [49.21812, -122.94939], KINGSWAY_PRE_19TH],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "kingsway: britton to 19th part 2",
     type: "other",
     oneWay: "required",
     positions: [KINGSWAY_PRE_19TH, [49.2181, -122.94899], KINGSWAY_19TH_SW],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "19th ave, kingsway to mary",
     type: "quiet",
     positions: [
@@ -194,21 +223,25 @@ export const EDMONDS = [
 
   // 16th ave/burgess
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "16t st: britton to mary",
     type: "quiet",
     positions: [BRITTON_16TH, [49.21744, -122.94589], MARY_16TH],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "16t st & burgess: mary to 14th",
     type: "quiet",
     positions: [MARY_16TH, [49.22107, -122.93904], BURGESS_14TH_W],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "burgess crossing 14th",
     type: "shared",
     positions: [BURGESS_14TH_W, BURGESS_14TH_E],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "burgess: 14th to 12th",
     type: "quiet",
     positions: [BURGESS_14TH_E, BURGESS_12TH],
@@ -216,6 +249,7 @@ export const EDMONDS = [
 
   // 18th st+
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "byrne creek secondary: from bc parkway",
     type: "mixed",
     elevation: 0.5,
@@ -228,12 +262,14 @@ export const EDMONDS = [
     ],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "overpass near 14th",
     type: "mixed",
     elevation: 1,
     positions: [OVERPASS_14TH_W, OVERPASS_14TH_E],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "14th to griffiths",
     type: "mixed",
     elevation: 0.5,
@@ -254,6 +290,7 @@ export const EDMONDS = [
     ],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "griffiths overpass",
     type: "mixed",
     elevation: 1,
@@ -270,6 +307,7 @@ export const EDMONDS = [
     ],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "18th st: griffiths to stride",
     type: "mixed",
     elevation: 0.5,
@@ -296,6 +334,7 @@ export const EDMONDS = [
     ],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "18th st: stride to 18th ave",
     type: "quiet",
     positions: [
@@ -307,6 +346,7 @@ export const EDMONDS = [
     ],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "18th st: 18th to edmonds",
     type: "mixed",
     positions: [
@@ -317,6 +357,7 @@ export const EDMONDS = [
     ],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "18th/stride: crossing edmonds SE",
     type: "mixed",
     positions: [
@@ -326,6 +367,7 @@ export const EDMONDS = [
     ],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "18th/stride: crossing edmonds NW",
     type: "mixed",
     positions: [
@@ -335,6 +377,7 @@ export const EDMONDS = [
     ],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "salisbury: edmonds to highland park line",
     type: "mixed",
     positions: [
@@ -346,11 +389,13 @@ export const EDMONDS = [
     ],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "salisbury: highland park line to beresford",
     type: "mixed",
     positions: [SALISBURY_BERESFORD_S_E, SALISBURY_BERESFORD_E],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "beresford & acorn",
     type: "quiet",
     positions: [
@@ -363,6 +408,7 @@ export const EDMONDS = [
     ],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "kingsway acorn to hall",
     type: "mixed",
     positions: [ACORN_KINGSWAY_S, HALL_KINGSWAY_SW, [49.21855, -122.95507]],
@@ -370,12 +416,14 @@ export const EDMONDS = [
 
   // britton/kingsway
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "stride: 15th to britton",
     type: "quiet",
     videoIds: [VIDEOS.highlandParkLineWb.id],
     positions: [FIFTEENTH_STRIDE, BRITTON_STRIDE],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "britton: stride to 18th",
     type: "quiet",
     videoIds: [VIDEOS.highlandParkLineWb.id, VIDEOS.highlandParkLineEb.id],
@@ -388,6 +436,7 @@ export const EDMONDS = [
     ],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "kingsway protected",
     type: "dedicated",
     videoIds: [VIDEOS.highlandParkLineWb.id, VIDEOS.highlandParkLineEb.id],
@@ -403,6 +452,7 @@ export const EDMONDS = [
     ],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "britton nb at kingsway",
     type: "quiet",
     oneWay: "recommended",
@@ -415,6 +465,7 @@ export const EDMONDS = [
     ],
   },
   {
+    routeNames: [ROUTES.edmonds.name],
     description: "britton sb at kingsway",
     type: "dedicated",
     oneWay: "required",
