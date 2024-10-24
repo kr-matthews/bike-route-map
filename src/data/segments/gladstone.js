@@ -11,8 +11,9 @@ export const GLADSTONE = [
     routeNames: [ROUTES.gladstone.name],
     description: "38th to 30th lanes",
     type: "quiet",
-    videoIds: [VIDEOS.gladstoneNb.id],
+    videoIds: [VIDEOS.gladstoneNb.id, VIDEOS.gladstoneSb.id],
     videoIdsStartAtStart: [VIDEOS.gladstoneNb.id],
+    videoIdsEndAtStart: [VIDEOS.gladstoneSb.id],
     positions: [
       GLADSTONE_38TH,
       [49.23747, -123.06208],
@@ -42,6 +43,7 @@ export const GLADSTONE = [
     description: "lanes sb",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.gladstoneSb.id],
     positions: [
       GLADSTONE_KINGSWAY_N,
       [49.24348, -123.062],
@@ -53,7 +55,7 @@ export const GLADSTONE = [
     routeNames: [ROUTES.gladstone.name],
     description: "kingsway to bc parkway",
     type: "quiet",
-    videoIds: [VIDEOS.gladstoneNb.id],
+    videoIds: [VIDEOS.gladstoneSb.id, VIDEOS.gladstoneNb.id],
     positions: [
       GLADSTONE_KINGSWAY_N,
       [49.24473, -123.0605],
@@ -70,7 +72,7 @@ export const GLADSTONE = [
     routeNames: [ROUTES.gladstone.name],
     description: "path near bc parkway",
     type: "mixed",
-    videoIds: [VIDEOS.gladstoneNb.id],
+    videoIds: [VIDEOS.gladstoneSb.id, VIDEOS.gladstoneNb.id],
     positions: [
       GLADSTONE_STAINSBURY_N,
       [49.24998, -123.06024],

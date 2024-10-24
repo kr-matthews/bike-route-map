@@ -12,7 +12,7 @@ export const KILLARNEY = [
     routeNames: [ROUTES.killarney.name],
     description: "primary",
     type: "quiet",
-    videoIds: [VIDEOS.killarneyEb.id],
+    videoIds: [VIDEOS.killarneyWb.id, VIDEOS.killarneyEb.id],
     videoIdsEndAtEnd: [VIDEOS.killarneyEb.id],
     positions: [
       NANAIMO_46TH,

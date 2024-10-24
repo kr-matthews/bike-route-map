@@ -12,6 +12,7 @@ import { VIDEOS } from "../videos";
 const ANTRIM_BERESFORD = [49.21917, -122.98504];
 const MACPHERSON_BERESFORD_E = [49.21875, -122.9828];
 const HEDLEY_NEVILLE = [49.2138, -122.96735];
+const RON_MCLEAN_PARK = [49.213, -122.96664];
 
 export const VICTORY = [
   {
@@ -23,8 +24,9 @@ export const VICTORY = [
     routeNames: [ROUTES.victory.name],
     description: "patterson to beresford",
     type: "quiet",
-    videoIds: [VIDEOS.victoryEb.id],
+    videoIds: [VIDEOS.victoryEb.id, VIDEOS.victoryWb.id],
     videoIdsStartAtStart: [VIDEOS.victoryEb.id],
+    videoIdsEndAtStart: [VIDEOS.victoryWb.id],
     positions: [
       [49.2184, -123.01233],
       [49.21839, -123.01057],
@@ -46,7 +48,7 @@ export const VICTORY = [
     routeNames: [ROUTES.victory.name],
     description: "busy beresford",
     type: "shared",
-    videoIds: [VIDEOS.victoryEb.id],
+    videoIds: [VIDEOS.victoryWb.id, VIDEOS.victoryEb.id],
     positions: [
       ANTRIM_BERESFORD,
       [49.21876, -122.98307],
@@ -57,7 +59,7 @@ export const VICTORY = [
     routeNames: [ROUTES.victory.name],
     description: "macpherson to hedley",
     type: "quiet",
-    videoIds: [VIDEOS.victoryEb.id],
+    videoIds: [VIDEOS.victoryWb.id, VIDEOS.victoryEb.id],
     positions: [
       MACPHERSON_BERESFORD_E,
       [49.2184, -122.98113],
@@ -76,15 +78,20 @@ export const VICTORY = [
     ],
   },
   {
+    description: "hedley, to parking lot",
+    type: "quiet",
+    undesignated: true,
+    videoIds: [VIDEOS.victoryWb.id, VIDEOS.victoryEb.id],
+    positions: [HEDLEY_NEVILLE, [49.213, -122.96735], RON_MCLEAN_PARK],
+  },
+  {
     description: "trail to bc parkway",
     type: "comfortable",
     undesignated: true,
-    videoIds: [VIDEOS.victoryEb.id],
+    videoIds: [VIDEOS.victoryWb.id, VIDEOS.victoryEb.id],
     videoIdsEndAtEnd: [VIDEOS.victoryEb.id],
     positions: [
-      HEDLEY_NEVILLE,
-      [49.213, -122.96735],
-      [49.213, -122.96664],
+      RON_MCLEAN_PARK,
       [49.21296, -122.96654],
       [49.21292, -122.96541],
       [49.2131, -122.96428],

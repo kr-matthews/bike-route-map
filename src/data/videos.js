@@ -413,6 +413,21 @@ const VIDEOS = {
     date: new Date("Jul 01 2024"),
     minutes: 7,
   },
+  edmonds18thNb: {
+    id: "5LIEMXMwp4g",
+    date: new Date("Oct 17 2024"),
+    minutes: 8,
+  },
+  edmonds18thEb: {
+    id: "HpEP3L7EjKg",
+    date: new Date("Oct 17 2024"),
+    minutes: 7,
+  },
+  edmondsSamplesSb: {
+    id: "3Ba47--vrNw",
+    date: new Date("Oct 17 2024"),
+    minutes: 1,
+  },
   ewenWb: {
     id: "-7uHis88EXU",
     date: new Date("Mar 13 2024"),
@@ -515,6 +530,12 @@ const VIDEOS = {
     id: "zOUHEenuUnQ",
     date: new Date("Aug 17 2023"),
     minutes: 5,
+  },
+  gladstoneSb: {
+    id: "GnE5xm2DFfs",
+    tlId: "TAWE9qAWBGU",
+    date: new Date("Oct 17 2024"),
+    minutes: 7,
   },
   glenlyonNb: {
     id: "MAR219VGiFA",
@@ -676,6 +697,11 @@ const VIDEOS = {
     id: "cQ1kPsLBMuk",
     date: new Date("Nov 03 2023"),
     minutes: 3,
+  },
+  killarneyWb: {
+    id: "Cbp_RnIxQxQ",
+    date: new Date("Oct 17 2024"),
+    minutes: 4,
   },
   knightStBridgeNb: {
     id: "jHY8amhWxyU",
@@ -1338,6 +1364,12 @@ const VIDEOS = {
     id: "n25lThm28eE",
     date: new Date("Feb 07 2024"),
     minutes: 13,
+  },
+  victoryWb: {
+    id: "XQqV-_-JFEQ",
+    tlId: "Nd70dizJeCo",
+    date: new Date("Oct 17 2024"),
+    minutes: 15,
   },
   walesDuchessSb: {
     id: "q-4HxNr0aWA",

@@ -294,8 +294,10 @@ export const BC_PARKWAY = [
     videoIds: [
       VIDEOS.bcParkwayVancouverEb.id,
       VIDEOS.bcParkwayVancouverWb.id,
+      VIDEOS.gladstoneSb.id,
       VIDEOS.gladstoneNb.id,
     ],
+    videoIdsStartAtStart: [VIDEOS.gladstoneSb.id],
     videoIdsEndAtStart: [VIDEOS.gladstoneNb.id],
     positions: [
       NORTH_OF_GLADSTONE,
@@ -654,8 +656,7 @@ export const BC_PARKWAY = [
   },
   {
     routeNames: [ROUTES.bcParkway.name],
-    description: "beyond gilley to overpass",
-    elevation: 0.5,
+    description: "beyond gilley to edmonds",
     videoIds: [VIDEOS.bcParkwayBurnabyEb.id, VIDEOS.bcParkwayBurnabyWb.id],
     positions: [
       EAST_OF_GILLEY_RUMBLE,
@@ -684,9 +685,30 @@ export const BC_PARKWAY = [
       [49.21396, -122.96072],
       [49.21374, -122.96052],
       BC_PARKWAY_EDMONDS_GOOD,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "edmonds bit",
+    videoIds: [
+      VIDEOS.bcParkwayBurnabyEb.id,
+      VIDEOS.bcParkwayBurnabyWb.id,
+      VIDEOS.victoryWb.id,
+    ],
+    videoIdsStartAtStart: [VIDEOS.victoryWb.id],
+    positions: [
+      BC_PARKWAY_EDMONDS_GOOD,
       [49.21362, -122.9606],
       [49.21347, -122.96064],
       [49.21334, -122.96072],
+      BC_PARKWAY_VICTORY_CONNECTION,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "edmonds to southpoint",
+    videoIds: [VIDEOS.bcParkwayBurnabyEb.id, VIDEOS.bcParkwayBurnabyWb.id],
+    positions: [
       BC_PARKWAY_VICTORY_CONNECTION,
       [49.21287, -122.96093],
       [49.21269, -122.96088],
@@ -704,10 +726,32 @@ export const BC_PARKWAY = [
       [49.21079, -122.95881],
       [49.21, -122.95825],
       STATION_HILL_SOUTHPOINT_NE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "southpoint to school overpass branch",
+    videoIds: [
+      VIDEOS.bcParkwayBurnabyEb.id,
+      VIDEOS.bcParkwayBurnabyWb.id,
+      VIDEOS.edmonds18thNb.id,
+    ],
+    videoIdsStartAtStart: [VIDEOS.edmonds18thNb.id],
+    positions: [
+      STATION_HILL_SOUTHPOINT_NE,
       STATION_HILL_SOUTHPOINT_SE,
       [49.20983, -122.95815],
       [49.2098, -122.95815],
       [49.20952, -122.95798],
+      BC_PARKWAY_14TH,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "school overpass branch to overpass",
+    elevation: 0.5,
+    videoIds: [VIDEOS.bcParkwayBurnabyEb.id, VIDEOS.bcParkwayBurnabyWb.id],
+    positions: [
       BC_PARKWAY_14TH,
       [49.20902, -122.95755],
       [49.2088, -122.95744],

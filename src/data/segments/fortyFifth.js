@@ -133,8 +133,10 @@ export const FORTY_FIFTH = [
       VIDEOS.fortyFifthWb.id,
       VIDEOS.fortyFifthEb.id,
       VIDEOS.killarneyEb.id,
+      VIDEOS.killarneyWb.id,
     ],
     videoIdsStartAtStart: [VIDEOS.killarneyEb.id],
+    videoIdsEndAtStart: [VIDEOS.killarneyWb.id],
     positions: [NANAIMO_47TH, NANAIMO_46TH],
   },
   {

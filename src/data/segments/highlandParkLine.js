@@ -7,10 +7,12 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const GRIFFITHS_HIGHLAND_E = [49.21696, -122.96068];
+
 export const HIGHLAND_PARK_LINE = [
   {
     routeNames: [ROUTES.highlandParkLine.name],
-    description: "all",
+    description: "west of sample's path",
     type: "mixed",
     videoIds: [VIDEOS.highlandParkLineEb.id, VIDEOS.highlandParkLineWb.id],
     videoIdsStartAtStart: [VIDEOS.highlandParkLineEb.id],
@@ -57,13 +59,36 @@ export const HIGHLAND_PARK_LINE = [
       [49.21705, -122.96343],
       [49.21704, -122.96277],
       SAMPLES_HIGHLAND_PARK_LINE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.highlandParkLine.name],
+    description: "sample's path to griffiths",
+    type: "mixed",
+    videoIds: [
+      VIDEOS.highlandParkLineEb.id,
+      VIDEOS.highlandParkLineWb.id,
+      VIDEOS.edmondsSamplesSb.id,
+    ],
+    videoIdsStartAtEnd: [VIDEOS.edmondsSamplesSb.id],
+    positions: [
+      SAMPLES_HIGHLAND_PARK_LINE,
       [49.217, -122.96207],
       [49.21701, -122.96188],
       [49.21699, -122.96158],
       [49.21692, -122.96121],
       [49.21686, -122.96113],
       [49.21685, -122.96083],
-      [49.21696, -122.96068],
+      GRIFFITHS_HIGHLAND_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.highlandParkLine.name],
+    description: "east of griffiths",
+    type: "mixed",
+    videoIds: [VIDEOS.highlandParkLineEb.id, VIDEOS.highlandParkLineWb.id],
+    positions: [
+      GRIFFITHS_HIGHLAND_E,
       [49.21695, -122.96037],
       [49.21688, -122.96006],
       [49.21686, -122.95947],

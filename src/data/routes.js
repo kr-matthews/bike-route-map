@@ -583,14 +583,23 @@ export const ROUTES = {
     name: "Edmonds",
     cities: [BURNABY],
     legs: [
-      { name: "Sample's Path", videos: {} },
-      { name: "18th Ave/19th Ave", videos: {} },
-      { name: "Stride Ave/16th Ave", videos: {} },
-      { name: "Byrne Creek Secondary/18th St/Salisbury Ave", videos: {} },
+      {
+        name: "Sample's Path",
+        videos: { southbound: VIDEOS.edmondsSamplesSb },
+      },
+      {
+        name: "Byrne Creek Secondary/18th St/Salisbury Ave",
+        videos: { eastbound: VIDEOS.edmonds18thNb },
+      },
       {
         name: "15th St/Britton St/Kingsway Ave",
         videos: { northbound: VIDEOS.highlandParkLineWb },
       },
+      {
+        name: "18th Ave/19th Ave",
+        videos: { northbound: VIDEOS.edmonds18thEb },
+      },
+      { name: "Stride Ave/16th Ave", videos: {} },
     ],
   },
   ewen: {
@@ -674,7 +683,14 @@ export const ROUTES = {
   gladstone: {
     name: "Gladstone",
     cities: [VANCOUVER],
-    legs: [{ videos: { northbound: VIDEOS.gladstoneNb } }],
+    legs: [
+      {
+        videos: {
+          northbound: VIDEOS.gladstoneNb,
+          southbound: VIDEOS.gladstoneSb,
+        },
+      },
+    ],
   },
   glenlyon: {
     name: "Glenlyon Urban Trail",
@@ -836,7 +852,14 @@ export const ROUTES = {
   killarney: {
     name: "Killarney",
     cities: [VANCOUVER],
-    legs: [{ videos: { eastbound: VIDEOS.killarneyEb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.killarneyEb,
+          westbound: VIDEOS.killarneyWb,
+        },
+      },
+    ],
   },
   kingEdward: {
     name: "King Edward Ave",
@@ -1517,7 +1540,9 @@ export const ROUTES = {
   victory: {
     name: "Victory",
     cities: [BURNABY],
-    legs: [{ videos: { eastbound: VIDEOS.victoryEb } }],
+    legs: [
+      { videos: { eastbound: VIDEOS.victoryEb, westbound: VIDEOS.victoryWb } },
+    ],
   },
   walesDuchess: {
     name: "Wales Duchess",

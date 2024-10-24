@@ -246,7 +246,31 @@ export const RIDGEWAY = [
   },
   {
     routeNames: [ROUTES.ridgeway.name],
-    description: "sunrise to boundary",
+    description: "sunrise to killarney",
+    type: "quiet",
+    videoIds: [
+      VIDEOS.ridgewayWb.id,
+      VIDEOS.fortyFifthWb.id,
+      VIDEOS.fortyFifthEb.id,
+    ],
+    positions: [EARLES_45TH, KILLARNEY_45TH],
+  },
+  {
+    routeNames: [ROUTES.ridgeway.name],
+    description: "killarney to rupert",
+    type: "quiet",
+    videoIds: [
+      VIDEOS.ridgewayWb.id,
+      VIDEOS.fortyFifthWb.id,
+      VIDEOS.fortyFifthEb.id,
+      VIDEOS.killarneyWb.id,
+    ],
+    videoIdsStartAtEnd: [VIDEOS.killarneyWb.id],
+    positions: [KILLARNEY_45TH, RUPERT_45TH],
+  },
+  {
+    routeNames: [ROUTES.ridgeway.name],
+    description: "rupert to boundary",
     type: "quiet",
     videoIds: [
       VIDEOS.ridgewayWb.id,
@@ -256,8 +280,6 @@ export const RIDGEWAY = [
     videoIdsStartAtEnd: [VIDEOS.ridgewayWb.id, VIDEOS.fortyFifthWb.id],
     videoIdsEndAtEnd: [VIDEOS.fortyFifthEb.id],
     positions: [
-      EARLES_45TH,
-      KILLARNEY_45TH,
       RUPERT_45TH,
       KERR_45TH,
       [49.22928, -123.03863],
