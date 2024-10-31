@@ -53,6 +53,8 @@ import { DUNSMUIR_MELVILLE_PENDER } from "./dunsmuirMelvillePender";
 import { EAST_MALL } from "./eastMall";
 import { EDMONDS } from "./edmonds";
 import { EWEN } from "./ewen";
+import { FERGUSON } from "./ferguson";
+import { FERGUSON_PATH } from "./fergusonPath";
 import { FORTY_FIFTH } from "./fortyFifth";
 import { FOURTEENTH } from "./fourteenth";
 import { FOURTEENTH_GAP } from "./fourteenthGap";
@@ -163,6 +165,7 @@ import { ST_JOHNS } from "./stJohns";
 import { STANLEY_PARK_LOOP } from "./stanleyPark";
 import { STEVESTON_HWY } from "./stevestonHwy";
 import { SUNRISE } from "./sunrise";
+import { TEMPLETON } from "./templeton";
 import { TENTH } from "./tenth";
 import { TERMINAL_PATH } from "./terminalPath";
 import { THIRD } from "./third";
@@ -251,6 +254,8 @@ export const SEGMENTS = [
   ...EAST_MALL,
   ...EDMONDS,
   ...EWEN,
+  ...FERGUSON,
+  ...FERGUSON_PATH,
   ...FORTY_FIFTH,
   ...FOURTEENTH,
   ...FOURTEENTH_GAP,
@@ -362,6 +367,7 @@ export const SEGMENTS = [
   ...STANLEY_PARK_LOOP,
   ...STEVESTON_HWY,
   ...SUNRISE,
+  ...TEMPLETON,
   ...TENTH,
   ...TERMINAL_PATH,
   ...THIRD,

@@ -6,10 +6,12 @@ import {
   POST_SEA_ISLAND_CONNECTOR,
   SEA_ISLAND_CONNECTOR_ARTHUR_LAING_N,
   SEA_ISLAND_WAY_POST_BUS_CONNECTION,
+  TEMPLETON_MILLER_SE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const TEMPLETON_TERRACE_NE = [49.19034, -123.15052];
 const SEA_ISLAND_PATH_PRE_NO_2_W = [49.17875, -123.1551];
 const LARRY_BERG_PARK_SPLIT = [49.1847, -123.15035];
 const MILLER_PUMP_SPLIT = [49.19219, -123.1393];
@@ -19,8 +21,27 @@ const AIRPORT_TEMPLETON_STATION = [49.19605, -123.13707];
 const PRE_TEMPLETON_STATION_SPLIT = [49.19565, -123.13979];
 const SPLIT_TO_SEA_ISLAND_WAY = [49.19234, -123.14002];
 const POST_ARTHUR_LAING_SPLIT = [49.19548, -123.14004];
+const TEMPLETON_TEMPLETON_SE = [49.19738, -123.14478];
 
 export const SEA_ISLAND_PATH = [
+  {
+    description: "sea island center station connection",
+    type: "mixed",
+    positions: [
+      [49.19201, -123.15714],
+      [49.19201, -123.15683],
+      [49.19193, -123.15671],
+      [49.1919, -123.15658],
+      [49.1919, -123.15443],
+      [49.19192, -123.15434],
+      [49.19196, -123.1543],
+      [49.19203, -123.15425],
+      [49.19202, -123.15396],
+      [49.19044, -123.15398],
+      [49.19036, -123.15394],
+      TEMPLETON_TERRACE_NE,
+    ],
+  },
   {
     description: "templeton st path",
     type: "mixed",
@@ -37,11 +58,11 @@ export const SEA_ISLAND_PATH = [
       [49.18732, -123.15053],
       [49.18753, -123.15056],
       [49.19022, -123.15051],
-      [49.19034, -123.15052],
+      TEMPLETON_TERRACE_NE,
       [49.19044, -123.15052],
       [49.19167, -123.15049],
       [49.19193, -123.15056],
-      [49.19204, -123.15057],
+      TEMPLETON_MILLER_SE,
     ],
   },
   {
@@ -314,7 +335,6 @@ export const SEA_ISLAND_PATH = [
     description: "airport rd to templeton station",
     type: "mixed",
     videoIds: [VIDEOS.seaIslandPathNb.id],
-    videoIdsEndAtEnd: [VIDEOS.seaIslandPathNb.id],
     positions: [
       AIRPORT_TEMPLETON_STATION,
       [49.1961, -123.13725],
@@ -343,7 +363,44 @@ export const SEA_ISLAND_PATH = [
       [49.19693, -123.14376],
       [49.19703, -123.14405],
       [49.19727, -123.14453],
-      [49.19738, -123.14478],
+      TEMPLETON_TEMPLETON_SE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaIslandPath.name],
+    description: "templeton station to templeton st",
+    type: "mixed",
+    positions: [
+      TEMPLETON_TEMPLETON_SE,
+      [49.19742, -123.14495],
+      [49.19745, -123.14511],
+      [49.19745, -123.14519],
+      [49.19744, -123.14531],
+      [49.19746, -123.14555],
+      [49.19743, -123.14613],
+      [49.1974, -123.14685],
+      [49.19734, -123.14724],
+      [49.19725, -123.1476],
+      [49.19692, -123.14839],
+      [49.19685, -123.14855],
+      [49.19682, -123.14863],
+      [49.19677, -123.1487],
+      [49.19669, -123.14876],
+      [49.19665, -123.14904],
+      [49.19665, -123.14919],
+      [49.19668, -123.14934],
+      [49.19667, -123.1496],
+      [49.1967, -123.14981],
+      [49.19666, -123.14997],
+    ],
+  },
+  {
+    description: "templeton station",
+    type: "mixed",
+    videoIds: [VIDEOS.seaIslandPathNb.id],
+    videoIdsEndAtEnd: [VIDEOS.seaIslandPathNb.id],
+    positions: [
+      TEMPLETON_TEMPLETON_SE,
       [49.19725, -123.14486],
       [49.19718, -123.14495],
       [49.19714, -123.14504],

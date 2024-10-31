@@ -6,7 +6,7 @@ import { VIDEOS } from "./videos";
 // SFU:
 // UBC: (extend agronomy (toronto), acadia?)
 // Richmond: south dyke; ...and around steveston
-// YVR: ferguson; inglis; other paths...; ...more
+// YVR: inglis; north service rd; miller; grant; ...more?
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
 // West Vancouver: spirit trail alt.; caulfield+; ...more
@@ -45,6 +45,11 @@ export const ROUTES = {
         videos: { eastbound: VIDEOS.fourthEb, westbound: VIDEOS.fourthWb },
       },
     ],
+  },
+  templeton: {
+    name: "Templeton St",
+    cities: [RICHMOND],
+    legs: [{ videos: {} }],
   },
   tenth: {
     name: "10th",
@@ -606,6 +611,16 @@ export const ROUTES = {
     name: "Ewen Ave Greenway",
     cities: [NEW_WESTMINSTER],
     legs: [{ videos: { westbound: VIDEOS.ewenWb } }],
+  },
+  ferguson: {
+    name: "Ferguson Rd",
+    cities: [RICHMOND],
+    legs: [{ videos: {} }],
+  },
+  fergusonPath: {
+    name: "Ferguson Rd Path",
+    cities: [RICHMOND],
+    legs: [{ videos: {} }],
   },
   francesUnion: {
     name: "Frances Union",

@@ -2,6 +2,9 @@ import {
   GRANT_MCCONACHIE_REJOIN,
   NO_3_BRIDGEPORT,
   SEA_ISLAND_CONNECTOR_W,
+  TEMPLETON_GRANT_MCCONACHIE_NE,
+  TEMPLETON_GRANT_MCCONACHIE_NE_N,
+  TEMPLETON_GRANT_MCCONACHIE_NW,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -11,6 +14,8 @@ const MOREY_SEA_ISLAND_CONNECTOR_W = [49.19271, -123.13878];
 
 const ARTHUR_LAING_OVERPASS_S = [49.19483, -123.14015];
 const ARTHUR_LAING_OVERPASS_N = [49.19529, -123.14029];
+
+const TEMPLETON_GRANT_MCCONACHIE_NE_E = [49.19346, -123.15001];
 
 export const SEA_ISLAND_CONNECTOR = [
   {
@@ -125,7 +130,23 @@ export const SEA_ISLAND_CONNECTOR = [
       [49.19422, -123.14567],
       [49.19404, -123.14665],
       [49.19358, -123.14928],
-      [49.19346, -123.15001],
+      TEMPLETON_GRANT_MCCONACHIE_NE_E,
+      [49.19339, -123.15026],
+      TEMPLETON_GRANT_MCCONACHIE_NE,
+      TEMPLETON_GRANT_MCCONACHIE_NW,
+    ],
+  },
+  {
+    description: "grant mcconachie eb to templeton nb slip",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
+      TEMPLETON_GRANT_MCCONACHIE_NE_E,
+      [49.19347, -123.15014],
+      [49.19349, -123.15027],
+      [49.19354, -123.1504],
+      [49.1936, -123.1505],
+      TEMPLETON_GRANT_MCCONACHIE_NE_N,
     ],
   },
 ];

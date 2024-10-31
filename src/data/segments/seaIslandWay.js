@@ -2,6 +2,8 @@ import {
   GARDEN_CITY_SEA_ISLAND_SW_SLIP,
   NO_3_SEA_ISLAND_SW_S_PRE,
   SEA_ISLAND_WAY_POST_BUS_CONNECTION,
+  TEMPLETON_GRANT_MCCONACHIE_SE,
+  TEMPLETON_GRANT_MCCONACHIE_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -54,7 +56,8 @@ export const SEA_ISLAND_WAY = [
     type: "shoulder",
     oneWay: "required",
     positions: [
-      [49.19304, -123.15061],
+      TEMPLETON_GRANT_MCCONACHIE_SW,
+      TEMPLETON_GRANT_MCCONACHIE_SE,
       [49.19317, -123.14979],
       [49.19327, -123.14899],
       [49.19341, -123.1479],
