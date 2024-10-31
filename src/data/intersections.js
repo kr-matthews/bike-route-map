@@ -6,6 +6,7 @@ export const ACADIA_TORONTO = [49.26594, -123.2379];
 export const ACADIA_UNIVERSITY_N = [49.26693, -123.23875];
 export const ACADIA_UNIVERSITY_S = [49.26669, -123.23855];
 export const ADERA_68TH = [49.21057, -123.14365];
+export const AIRPORT_TEMPLETON_STATION_SW = [49.19605, -123.13707];
 export const ALDER_7TH = [49.26524, -123.1313];
 export const ALDER_10TH = [49.26253, -123.1314];
 export const ALDER_14TH = [49.25879, -123.13155];

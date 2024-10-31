@@ -735,6 +735,11 @@ export const ROUTES = {
       },
     ],
   },
+  grauer: {
+    name: "Grauer Rd",
+    cities: [RICHMOND],
+    legs: [{ videos: {} }],
+  },
   haro: {
     name: "Haro",
     cities: [VANCOUVER],
