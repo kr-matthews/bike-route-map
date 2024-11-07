@@ -1017,6 +1017,11 @@ export const ROUTES = {
       },
     ],
   },
+  mcdonaldBeachTrail: {
+    name: "McDonald Beach Trail",
+    cities: [RICHMOND],
+    legs: [{ videos: {} }],
+  },
   metrotown: {
     name: "Metrotown",
     cities: [BURNABY],

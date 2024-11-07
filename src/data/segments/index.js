@@ -104,6 +104,7 @@ import { MARINE_DR } from "./marineDr";
 import { MARINE_WAY } from "./marineWay";
 import { MARRY_HILL_BYPASS } from "./maryHillBypass";
 import { MASUMI_MITSUI_GREENWAY } from "./masumiMitsui";
+import { MCDONALD_BEACH_TRAIL } from "./mcdonaldBeachTrail";
 import { METROTOWN } from "./metrotown";
 import { MIDDLE_ARM } from "./middleArm";
 import { MIDTOWN } from "./midtown";
@@ -307,6 +308,7 @@ export const SEGMENTS = [
   ...MARINE_WAY,
   ...MARRY_HILL_BYPASS,
   ...MASUMI_MITSUI_GREENWAY,
+  ...MCDONALD_BEACH_TRAIL,
   ...METROTOWN,
   ...MIDDLE_ARM,
   ...MIDTOWN,
