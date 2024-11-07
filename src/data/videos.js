@@ -85,6 +85,7 @@ const VIDEOS = {
   },
   bcParkwayBurnabyEb: {
     id: "a9Rwmtu7SI0",
+    tlId: "uO4Sk8JhGuk",
     date: new Date("Jul 14 2023"),
     minutes: 21,
   },
@@ -110,11 +111,13 @@ const VIDEOS = {
   },
   bcParkwayVancouverEb: {
     id: "3giKczCLloI",
+    tlId: "OFOd_up2KLA",
     date: new Date("Jul 22 2023"),
     minutes: 17,
   },
   bcParkwayVancouverWb: {
     id: "2l4KK8MvEIY",
+    tlId: "zKBWnZ6Ri7s",
     date: new Date("Nov 03 2023"),
     minutes: 14,
   },
@@ -773,11 +776,13 @@ const VIDEOS = {
   },
   masumiMitsuiEb: {
     id: "QVK6E_hmQFc",
+    tlId: "U5n8lVQDvbU",
     date: new Date("Jun 05 2023"),
     minutes: 22,
   },
   masumiMitsuiWb: {
     id: "lc-lYIQvaww",
+    tlId: "3uUyA1eQfh4",
     date: new Date("Oct 16 2023"),
     minutes: 23,
   },
