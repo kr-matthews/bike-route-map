@@ -22,18 +22,31 @@ export const NORTH_SOUTH = [
   },
   {
     routeNames: [ROUTES.northSouth.name],
-    description: "sussex south end nb",
-    type: "dedicated",
+    description: "sussex crossing hazel nb",
+    type: "shared",
     oneWay: "required",
     videoIds: [VIDEOS.oaklandBurrisEb.id, VIDEOS.metrotownCw.id],
     videoIdsStartAtStart: [VIDEOS.oaklandBurrisEb.id],
-    positions: [SUSSEX_HAZEL_S, SUSSEX_HAZEL_NE, SUSSEX_GRANGE_SE],
+    positions: [SUSSEX_HAZEL_S, SUSSEX_HAZEL_NE],
+  },
+  {
+    routeNames: [ROUTES.northSouth.name],
+    description: "sussex south end nb",
+    type: "dedicated",
+    oneWay: "required",
+    videoIds: [
+      VIDEOS.northSouthNb.id,
+      VIDEOS.oaklandBurrisEb.id,
+      VIDEOS.metrotownCw.id,
+    ],
+    videoIdsStartAtStart: [VIDEOS.northSouthNb.id],
+    positions: [SUSSEX_HAZEL_NE, SUSSEX_GRANGE_SE],
   },
   {
     routeNames: [ROUTES.northSouth.name],
     description: "sussex crossing grange",
     type: "dedicated",
-    videoIds: [VIDEOS.metrotownCw.id],
+    videoIds: [VIDEOS.northSouthNb.id, VIDEOS.metrotownCw.id],
     positions: [SUSSEX_GRANGE_SE, SUSSEX_GRANGE_N],
   },
   {
@@ -57,7 +70,7 @@ export const NORTH_SOUTH = [
     routeNames: [ROUTES.northSouth.name],
     description: "sussex",
     type: "quiet",
-    videoIds: [VIDEOS.northSouthSb.id],
+    videoIds: [VIDEOS.northSouthNb.id, VIDEOS.northSouthSb.id],
     positions: [
       SUSSEX_GRANGE_N,
       [49.23011, -122.99777],
@@ -79,7 +92,7 @@ export const NORTH_SOUTH = [
     routeNames: [ROUTES.northSouth.name],
     description: "through forest",
     type: "mixed",
-    videoIds: [VIDEOS.northSouthSb.id],
+    videoIds: [VIDEOS.northSouthNb.id, VIDEOS.northSouthSb.id],
     positions: [
       SUSSEX_HARKEN,
       [49.23968, -122.99789],
@@ -96,6 +109,7 @@ export const NORTH_SOUTH = [
     description: "wayburne nb 1",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.northSouthNb.id],
     positions: [
       WAYBURNE_DEER_LAKE_SE,
       [49.24173, -122.99799],
@@ -109,6 +123,7 @@ export const NORTH_SOUTH = [
     description: "wayburne nb 2",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.northSouthNb.id],
     positions: [
       WAYBURNE_NB_LANE_START,
       [49.24866, -122.998],
@@ -130,6 +145,8 @@ export const NORTH_SOUTH = [
     description: "wayburne nb 3",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.northSouthNb.id],
+    videoIdsEndAtEnd: [VIDEOS.northSouthNb.id],
     positions: [
       WAYBURNE_NB_LANE_END,
       [49.25194, -122.99485],

@@ -1132,7 +1132,14 @@ export const ROUTES = {
   northSouth: {
     name: "North/South",
     cities: [BURNABY],
-    legs: [{ videos: { southbound: VIDEOS.northSouthSb } }],
+    legs: [
+      {
+        videos: {
+          northbound: VIDEOS.northSouthNb,
+          southbound: VIDEOS.northSouthSb,
+        },
+      },
+    ],
   },
   oaklandBurris: {
     name: "Oakland St/Burris St",

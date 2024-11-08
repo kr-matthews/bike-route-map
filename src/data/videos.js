@@ -886,8 +886,15 @@ const VIDEOS = {
     date: new Date("Jun 10 2024"),
     minutes: 14,
   },
+  northSouthNb: {
+    id: "M8ui0DygAv4",
+    tlId: "Qs3X72fC7Go",
+    date: new Date("Nov 06 2024"),
+    minutes: 7,
+  },
   northSouthSb: {
     id: "lF8k9ry1lsI",
+    tlId: "BqBx41-eFWM",
     date: new Date("Jan 23 2024"),
     minutes: 11,
   },
