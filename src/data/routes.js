@@ -49,7 +49,14 @@ export const ROUTES = {
   templeton: {
     name: "Templeton St",
     cities: [RICHMOND],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: {
+          northbound: VIDEOS.templetonNb,
+          southbound: VIDEOS.templetonSb,
+        },
+      },
+    ],
   },
   tenth: {
     name: "10th",
@@ -615,12 +622,12 @@ export const ROUTES = {
   ferguson: {
     name: "Ferguson Rd",
     cities: [RICHMOND],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.fergusonEb } }],
   },
   fergusonPath: {
     name: "Ferguson Rd Path",
     cities: [RICHMOND],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { westbound: VIDEOS.fergusonPathWb } }],
   },
   francesUnion: {
     name: "Frances Union",
@@ -738,7 +745,7 @@ export const ROUTES = {
   grauer: {
     name: "Grauer Rd",
     cities: [RICHMOND],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.grauerEb } }],
   },
   haro: {
     name: "Haro",
@@ -1020,7 +1027,7 @@ export const ROUTES = {
   mcdonaldBeachTrail: {
     name: "McDonald Beach Trail",
     cities: [RICHMOND],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { westbound: VIDEOS.mcdonaldBeachTrailWb } }],
   },
   metrotown: {
     name: "Metrotown",

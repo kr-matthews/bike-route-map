@@ -4,12 +4,16 @@ import {
   MCDONALD_FERGUSON_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const FERGUSON_PATH = [
   {
     routeNames: [ROUTES.fergusonPath.name],
     description: "all",
     type: "mixed",
+    videoIds: [VIDEOS.fergusonPathWb.id],
+    videoIdsStartAtEnd: [VIDEOS.fergusonPathWb.id],
+    videoIdsEndAtStart: [VIDEOS.fergusonPathWb.id],
     positions: [
       FERGUSON_PATH_W,
       [49.20769, -123.20157],
@@ -31,7 +35,11 @@ export const FERGUSON_PATH = [
       [49.20668, -123.17021],
       [49.20665, -123.17003],
       MCDONALD_FERGUSON_NW,
-      MCDONALD_FERGUSON_SW,
     ],
+  },
+  {
+    description: "crossing ferguson",
+    type: "mixed",
+    positions: [MCDONALD_FERGUSON_NW, MCDONALD_FERGUSON_SW],
   },
 ];

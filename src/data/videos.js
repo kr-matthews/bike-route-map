@@ -436,6 +436,18 @@ const VIDEOS = {
     date: new Date("Mar 13 2024"),
     minutes: 8,
   },
+  fergusonEb: {
+    id: "Oovz9mKC5m4",
+    tlId: "YypdawEqw6E",
+    date: new Date("Nov 6 2024"),
+    minutes: 15,
+  },
+  fergusonPathWb: {
+    id: "k8qPxIMJVos",
+    tlId: "XJ8duP7vFtc",
+    date: new Date("Nov 6 2024"),
+    minutes: 6,
+  },
   fortyFifthEb: {
     id: "KMAAeyfUP5I",
     tlId: "EBiR-jX7-mM",
@@ -560,6 +572,11 @@ const VIDEOS = {
     tlId: "aKPBmrm6brE",
     date: new Date("Jun 17 2024"),
     minutes: 23,
+  },
+  grauerEb: {
+    id: "FobrXUj-2eg",
+    date: new Date("Nov 6 2024"),
+    minutes: 3,
   },
   greenhousePathEb: {
     id: "V5xStQzLJ24",
@@ -785,6 +802,12 @@ const VIDEOS = {
     tlId: "3uUyA1eQfh4",
     date: new Date("Oct 16 2023"),
     minutes: 23,
+  },
+  mcdonaldBeachTrailWb: {
+    id: "hO_xU5C8E8Y",
+    tlId: "_1O1k5chmIU",
+    date: new Date("Nov 6 2024"),
+    minutes: 11,
   },
   metrotownCcw: {
     id: "EJCsejPUpnA",
@@ -1299,6 +1322,16 @@ const VIDEOS = {
     id: "gBgVqAM5hYo",
     date: new Date("Mar 13 2024"),
     minutes: 18,
+  },
+  templetonNb: {
+    id: "IaMY3iTsISs",
+    date: new Date("Nov 6 2024"),
+    minutes: 2,
+  },
+  templetonSb: {
+    id: "L66M8xQKzkM",
+    date: new Date("Nov 6 2024"),
+    minutes: 3,
   },
   tenthEb: {
     id: "wgLoXc7ydDA",
