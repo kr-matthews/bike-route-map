@@ -1,5 +1,7 @@
 import {
   ALDER_14TH,
+  ARBUTUS_GREENWAY_14TH,
+  CYPRESS_14TH,
   HEATHER_14TH_N,
   HEATHER_14TH_S,
   ONTARIO_14TH,
@@ -9,7 +11,33 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const GRANVILLE_14TH_E = [49.25892, -123.1387];
+const GRANVILLE_14TH_E_ALLEY = [49.25891, -123.13805];
+
 export const FOURTEENTH = [
+  {
+    routeNames: [ROUTES.fourteenth.name],
+    description: "arbutus greenway to granville",
+    type: "quiet",
+    positions: [
+      ARBUTUS_GREENWAY_14TH,
+      CYPRESS_14TH,
+      [49.25899, -123.14358],
+      GRANVILLE_14TH_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.fourteenth.name],
+    description: "granville plaza",
+    type: "dedicated",
+    positions: [GRANVILLE_14TH_E, GRANVILLE_14TH_E_ALLEY],
+  },
+  {
+    routeNames: [ROUTES.fourteenth.name],
+    description: "granville to alder",
+    type: "quiet",
+    positions: [GRANVILLE_14TH_E_ALLEY, [49.25884, -123.13391], ALDER_14TH],
+  },
   {
     routeNames: [ROUTES.fourteenth.name],
     description: "alder to heather",
