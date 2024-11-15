@@ -8,6 +8,8 @@ import {
   SEA_ISLAND_CONNECTOR_ARTHUR_LAING_N,
   SEA_ISLAND_WAY_POST_BUS_CONNECTION,
   TEMPLETON_MILLER_SE,
+  TEMPLETON_TEMPLETON_STATION_SE_E,
+  TEMPLETON_TEMPLETON_STATION_SE_SE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -390,8 +392,8 @@ export const SEA_ISLAND_PATH = [
       [49.19665, -123.14919],
       [49.19668, -123.14934],
       [49.19667, -123.1496],
-      [49.1967, -123.14981],
-      [49.19666, -123.14997],
+      TEMPLETON_TEMPLETON_STATION_SE_E,
+      TEMPLETON_TEMPLETON_STATION_SE_SE,
     ],
   },
   {

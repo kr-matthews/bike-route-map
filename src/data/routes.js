@@ -6,7 +6,7 @@ import { VIDEOS } from "./videos";
 // SFU:
 // UBC: (extend agronomy (toronto), acadia?)
 // Richmond: south dyke; ...and around steveston
-// YVR: inglis; north service rd; miller; grant; ...more?
+// YVR: mcconachie; miller; inglis; ...more?
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
 // West Vancouver: spirit trail alt.; caulfield+; ...more
@@ -1147,6 +1147,11 @@ export const ROUTES = {
         },
       },
     ],
+  },
+  nService: {
+    name: "North Service Rd",
+    cities: [RICHMOND],
+    legs: [{ videos: {} }],
   },
   oaklandBurris: {
     name: "Oakland St/Burris St",

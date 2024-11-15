@@ -9,11 +9,27 @@ import {
   TEMPLETON_GRAUER_SE,
   TEMPLETON_GRAUER_SW,
   TEMPLETON_MILLER_SE,
+  TEMPLETON_N_SERVICE_NW_N,
+  TEMPLETON_N_SERVICE_SW_S,
+  TEMPLETON_TEMPLETON_STATION_SE,
+  TEMPLETON_TEMPLETON_STATION_SE_S,
+  TEMPLETON_TEMPLETON_STATION_SE_SE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 export const TEMPLETON = [
+  {
+    description: "nb to sea island path",
+    type: "shoulder",
+    oneWay: "required",
+    hideArrows: true,
+    positions: [
+      TEMPLETON_TEMPLETON_STATION_SE_S,
+      [49.19666, -123.15],
+      TEMPLETON_TEMPLETON_STATION_SE_SE,
+    ],
+  },
   {
     routeNames: [ROUTES.templeton.name],
     description: "nb",
@@ -41,9 +57,9 @@ export const TEMPLETON = [
       [49.19605, -123.15054],
       [49.1964, -123.1503],
       [49.19653, -123.15021],
-      [49.19661, -123.15011],
+      TEMPLETON_TEMPLETON_STATION_SE_S,
       [49.19669, -123.15017],
-      [49.19681, -123.15009],
+      TEMPLETON_TEMPLETON_STATION_SE,
       [49.19702, -123.1499],
       [49.19744, -123.14962],
       [49.19771, -123.14949],
@@ -82,11 +98,11 @@ export const TEMPLETON = [
       [49.19825, -123.14949],
       [49.19797, -123.14958],
       [49.19769, -123.14973],
-      [49.19728, -123.15003],
+      TEMPLETON_N_SERVICE_NW_N,
       [49.19696, -123.15023],
       [49.19683, -123.15033],
       [49.19666, -123.15042],
-      [49.19655, -123.15054],
+      TEMPLETON_N_SERVICE_SW_S,
       [49.19641, -123.15062],
       [49.19629, -123.1507],
       [49.19605, -123.15084],

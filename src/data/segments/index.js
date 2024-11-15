@@ -111,6 +111,7 @@ import { MIDTOWN } from "./midtown";
 import { MILLENNIUM_TRAIL } from "./millenniumTrail";
 import { MINORU } from "./minoru";
 import { MOSAIC } from "./mosaic";
+import { N_SERVICE } from "./nService";
 import { NANAIMO } from "./nanaimo";
 import { NELSON } from "./nelson";
 import { NELSON_AVE } from "./nelsonAve";
@@ -315,6 +316,7 @@ export const SEGMENTS = [
   ...MILLENNIUM_TRAIL,
   ...MINORU,
   ...MOSAIC,
+  ...N_SERVICE,
   ...NANAIMO,
   ...NELSON,
   ...NELSON_AVE,
