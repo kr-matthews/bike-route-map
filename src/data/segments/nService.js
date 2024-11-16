@@ -1,5 +1,7 @@
 import {
-  AVIATION_SPLIT,
+  AVIATION_N_SERVICE_NW,
+  AVIATION_N_SERVICE_SE_E,
+  AVIATION_N_SERVICE_SW_W,
   TEMPLETON_N_SERVICE_NW_N,
   TEMPLETON_N_SERVICE_SW_S,
   TEMPLETON_TEMPLETON_STATION_SE,
@@ -71,7 +73,11 @@ export const N_SERVICE = [
     description: "eb 2",
     type: "shared",
     oneWay: "required",
-    positions: [EB_SHARE_START, [49.19378, -123.16767], AVIATION_SPLIT],
+    positions: [
+      EB_SHARE_START,
+      [49.19378, -123.16767],
+      AVIATION_N_SERVICE_SW_W,
+    ],
   },
   {
     routeNames: [ROUTES.nService.name],
@@ -79,10 +85,10 @@ export const N_SERVICE = [
     type: "shoulder",
     oneWay: "required",
     positions: [
-      AVIATION_SPLIT,
+      AVIATION_N_SERVICE_SW_W,
       [49.19369, -123.16693],
       [49.19365, -123.16662],
-      [49.19361, -123.16631],
+      AVIATION_N_SERVICE_SE_E,
       [49.19353, -123.1656],
       [49.19347, -123.16483],
       [49.19329, -123.16323],
@@ -222,7 +228,7 @@ export const N_SERVICE = [
       [49.19341, -123.1635],
       [49.19354, -123.16469],
       [49.19376, -123.16662],
-      [49.19379, -123.16686],
+      AVIATION_N_SERVICE_NW,
       [49.19392, -123.16803],
       [49.1941, -123.16963],
       [49.19425, -123.17091],

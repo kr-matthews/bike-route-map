@@ -1,14 +1,12 @@
 import {
   GARDEN_CITY_SEA_ISLAND_SW_SLIP,
+  GRANT_MCCONACHIE_EB_END,
   NO_3_SEA_ISLAND_SW_S_PRE,
   SEA_ISLAND_WAY_POST_BUS_CONNECTION,
-  TEMPLETON_GRANT_MCCONACHIE_SE,
-  TEMPLETON_GRANT_MCCONACHIE_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-const SEA_ISLAND_MILLER_JOIN = [49.19302, -123.14571];
 const SEA_ISLAND_RUSS_BAKER_W = [49.19256, -123.14272];
 const SEA_ISLAND_RUSS_BAKER_E = [49.19257, -123.14155];
 const SEA_ISLAND_MOREY_W = [49.1923, -123.13904];
@@ -41,7 +39,7 @@ export const SEA_ISLAND_WAY = [
       [49.19309, -123.14629],
       [49.1931, -123.14616],
       [49.19309, -123.14601],
-      SEA_ISLAND_MILLER_JOIN,
+      GRANT_MCCONACHIE_EB_END,
     ],
   },
   {
@@ -52,25 +50,6 @@ export const SEA_ISLAND_WAY = [
     positions: [NO_3_SEA_ISLAND_SW_SLIP, NO_3_SEA_ISLAND_SW_S_PRE],
   },
   {
-    description: "templeton to miller join",
-    type: "shoulder",
-    oneWay: "required",
-    positions: [
-      TEMPLETON_GRANT_MCCONACHIE_SW,
-      TEMPLETON_GRANT_MCCONACHIE_SE,
-      [49.19317, -123.14979],
-      [49.19327, -123.14899],
-      [49.19341, -123.1479],
-      [49.19343, -123.14756],
-      [49.19344, -123.1473],
-      [49.19342, -123.14706],
-      [49.19337, -123.14667],
-      [49.19327, -123.14629],
-      [49.19309, -123.14574],
-      SEA_ISLAND_MILLER_JOIN,
-    ],
-  },
-  {
     routeNames: [ROUTES.seaIslandWay.name],
     description: "miller join to russ baker",
     type: "shoulder",
@@ -78,7 +57,7 @@ export const SEA_ISLAND_WAY = [
     elevation: 0.5,
     videoIds: [VIDEOS.seaIslandWayEb.id],
     positions: [
-      SEA_ISLAND_MILLER_JOIN,
+      GRANT_MCCONACHIE_EB_END,
       [49.19285, -123.14515],
       [49.19273, -123.14476],
       [49.19265, -123.14443],

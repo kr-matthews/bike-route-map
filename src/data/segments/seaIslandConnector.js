@@ -1,10 +1,9 @@
 import {
-  GRANT_MCCONACHIE_REJOIN,
+  GRANT_MCCONACHIE_WB_START,
   NO_3_BRIDGEPORT,
   SEA_ISLAND_CONNECTOR_W,
-  TEMPLETON_GRANT_MCCONACHIE_NE,
+  TEMPLETON_GRANT_MCCONACHIE_NE_E,
   TEMPLETON_GRANT_MCCONACHIE_NE_N,
-  TEMPLETON_GRANT_MCCONACHIE_NW,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -14,8 +13,6 @@ const MOREY_SEA_ISLAND_CONNECTOR_W = [49.19271, -123.13878];
 
 const ARTHUR_LAING_OVERPASS_S = [49.19483, -123.14015];
 const ARTHUR_LAING_OVERPASS_N = [49.19529, -123.14029];
-
-const TEMPLETON_GRANT_MCCONACHIE_NE_E = [49.19346, -123.15001];
 
 export const SEA_ISLAND_CONNECTOR = [
   {
@@ -107,33 +104,7 @@ export const SEA_ISLAND_CONNECTOR = [
       [49.19608, -123.14171],
       [49.19611, -123.14203],
       [49.19611, -123.14227],
-      GRANT_MCCONACHIE_REJOIN,
-    ],
-  },
-  {
-    description: "grant mcconachie join onward",
-    type: "shoulder",
-    oneWay: "required",
-    positions: [
-      GRANT_MCCONACHIE_REJOIN,
-      [49.19604, -123.14272],
-      [49.19594, -123.14305],
-      [49.19585, -123.14326],
-      [49.19574, -123.14347],
-      [49.19563, -123.14362],
-      [49.19531, -123.14402],
-      [49.19493, -123.14442],
-      [49.19469, -123.14468],
-      [49.19455, -123.14488],
-      [49.19442, -123.1451],
-      [49.19434, -123.1453],
-      [49.19422, -123.14567],
-      [49.19404, -123.14665],
-      [49.19358, -123.14928],
-      TEMPLETON_GRANT_MCCONACHIE_NE_E,
-      [49.19339, -123.15026],
-      TEMPLETON_GRANT_MCCONACHIE_NE,
-      TEMPLETON_GRANT_MCCONACHIE_NW,
+      GRANT_MCCONACHIE_WB_START,
     ],
   },
   {

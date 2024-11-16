@@ -6,7 +6,7 @@ import { VIDEOS } from "./videos";
 // SFU:
 // UBC: (extend agronomy (toronto), acadia?)
 // Richmond: south dyke; ...and around steveston
-// YVR: mcconachie; miller; inglis; ...more?
+// YVR: miller; inglis; ...more?
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
 // West Vancouver: spirit trail alt.; caulfield+; ...more
@@ -730,6 +730,12 @@ export const ROUTES = {
         },
       },
     ],
+  },
+  grantMcconachie: {
+    name: "Grant McConachie Way",
+    shortName: "Grant McConachie",
+    cities: [RICHMOND],
+    legs: [{ videos: {} }],
   },
   granville: {
     name: "Granville Ave",
