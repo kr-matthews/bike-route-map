@@ -1032,6 +1032,7 @@ export const ROUTES = {
   },
   mcdonaldBeachTrail: {
     name: "McDonald Beach Trail",
+    shortName: "McDonald Beach T.",
     cities: [RICHMOND],
     legs: [{ videos: { westbound: VIDEOS.mcdonaldBeachTrailWb } }],
   },
