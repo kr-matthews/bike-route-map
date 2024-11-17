@@ -2,8 +2,10 @@ import {
   TEMPLETON_GRANT_MCCONACHIE_NE,
   TEMPLETON_GRANT_MCCONACHIE_NE_N,
   TEMPLETON_GRANT_MCCONACHIE_NW,
+  TEMPLETON_GRANT_MCCONACHIE_NW_N,
   TEMPLETON_GRANT_MCCONACHIE_SE,
   TEMPLETON_GRANT_MCCONACHIE_SW,
+  TEMPLETON_GRANT_MCCONACHIE_SW_S,
   TEMPLETON_GRAUER_NE,
   TEMPLETON_GRAUER_NW,
   TEMPLETON_GRAUER_SE,
@@ -17,6 +19,8 @@ import {
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
+
+const TEMPLETON_MILLER_NW = [49.1923, -123.15089];
 
 export const TEMPLETON = [
   {
@@ -89,7 +93,6 @@ export const TEMPLETON = [
     type: "shoulder",
     oneWay: "required",
     videoIds: [VIDEOS.templetonSb.id],
-    videoIdsEndAtEnd: [VIDEOS.templetonSb.id],
     positions: [
       TEMPLETON_GRAUER_SW,
       [49.19905, -123.1493],
@@ -116,14 +119,24 @@ export const TEMPLETON = [
       [49.19415, -123.15107],
       [49.19385, -123.15099],
       [49.19359, -123.15092],
-      [49.19346, -123.15096],
+      TEMPLETON_GRANT_MCCONACHIE_NW_N,
       [49.19342, -123.15086],
       TEMPLETON_GRANT_MCCONACHIE_NW,
       TEMPLETON_GRANT_MCCONACHIE_SW,
       [49.19289, -123.15078],
-      [49.19278, -123.15084],
+      TEMPLETON_GRANT_MCCONACHIE_SW_S,
       [49.19237, -123.15084],
-      [49.1923, -123.15089],
+      TEMPLETON_MILLER_NW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.templeton.name],
+    description: "crossing miller/templeton",
+    type: "mixed",
+    videoIds: [VIDEOS.templetonSb.id],
+    videoIdsEndAtEnd: [VIDEOS.templetonSb.id],
+    positions: [
+      TEMPLETON_MILLER_NW,
       [49.19205, -123.15088],
       TEMPLETON_MILLER_SE,
     ],

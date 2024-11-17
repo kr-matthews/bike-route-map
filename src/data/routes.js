@@ -6,7 +6,7 @@ import { VIDEOS } from "./videos";
 // SFU:
 // UBC: (extend agronomy (toronto), acadia?)
 // Richmond: south dyke; ...and around steveston
-// YVR: miller; inglis; ...more?
+// YVR: inglis;
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
 // West Vancouver: spirit trail alt.; caulfield+; ...more
@@ -1070,6 +1070,11 @@ export const ROUTES = {
   millenniumTrail: {
     name: "Millennium Trail",
     cities: [NEW_WESTMINSTER],
+    legs: [{ videos: {} }],
+  },
+  miller: {
+    name: "Miller Rd",
+    cities: [RICHMOND],
     legs: [{ videos: {} }],
   },
   minoru: {

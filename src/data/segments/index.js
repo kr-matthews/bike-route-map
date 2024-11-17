@@ -110,6 +110,7 @@ import { METROTOWN } from "./metrotown";
 import { MIDDLE_ARM } from "./middleArm";
 import { MIDTOWN } from "./midtown";
 import { MILLENNIUM_TRAIL } from "./millenniumTrail";
+import { MILLER } from "./miller";
 import { MINORU } from "./minoru";
 import { MOSAIC } from "./mosaic";
 import { N_SERVICE } from "./nService";
@@ -316,6 +317,7 @@ export const SEGMENTS = [
   ...MIDDLE_ARM,
   ...MIDTOWN,
   ...MILLENNIUM_TRAIL,
+  ...MILLER,
   ...MINORU,
   ...MOSAIC,
   ...N_SERVICE,

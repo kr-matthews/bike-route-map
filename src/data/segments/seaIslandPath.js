@@ -1,5 +1,7 @@
 import {
   AIRPORT_TEMPLETON_STATION_SW,
+  AURORA_MILLER_SE,
+  CESSNA_MILLER_E,
   GRANT_MCCONACHIE_WB_START,
   NO_2_BRIDGE_SIDEWALK_NE,
   NO_2_RUSS_BAKER_E,
@@ -18,7 +20,6 @@ const TEMPLETON_TERRACE_NE = [49.19034, -123.15052];
 const SEA_ISLAND_PATH_PRE_NO_2_W = [49.17875, -123.1551];
 const LARRY_BERG_PARK_SPLIT = [49.1847, -123.15035];
 const MILLER_PUMP_SPLIT = [49.19219, -123.1393];
-const MILLER_E = [49.19216, -123.141];
 const AIRPORT_S_END = [49.19373, -123.13903];
 const PRE_TEMPLETON_STATION_SPLIT = [49.19565, -123.13979];
 const SPLIT_TO_SEA_ISLAND_WAY = [49.19234, -123.14002];
@@ -30,15 +31,14 @@ export const SEA_ISLAND_PATH = [
     description: "sea island center station connection",
     type: "mixed",
     positions: [
-      [49.19201, -123.15714],
-      [49.19201, -123.15683],
+      AURORA_MILLER_SE,
       [49.19193, -123.15671],
       [49.1919, -123.15658],
       [49.1919, -123.15443],
       [49.19192, -123.15434],
       [49.19196, -123.1543],
-      [49.19203, -123.15425],
-      [49.19202, -123.15396],
+      [49.19205, -123.15425],
+      [49.19205, -123.15396],
       [49.19044, -123.15398],
       [49.19036, -123.15394],
       TEMPLETON_TERRACE_NE,
@@ -78,22 +78,10 @@ export const SEA_ISLAND_PATH = [
     ],
   },
   {
-    description: "miller connection 1",
-    type: "shared",
-    oneWay: "required",
-    positions: [
-      [49.19205, -123.14201],
-      [49.19206, -123.14171],
-      [49.1921, -123.14121],
-      MILLER_E,
-    ],
-  },
-  {
     description: "miller connection 2",
     type: "mixed",
     positions: [
-      MILLER_E,
-      [49.19219, -123.14088],
+      CESSNA_MILLER_E,
       [49.19232, -123.14021],
       SPLIT_TO_SEA_ISLAND_WAY,
       [49.19235, -123.1396],

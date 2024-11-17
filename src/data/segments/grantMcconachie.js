@@ -1,14 +1,18 @@
 import {
   AVIATION_N_SERVICE_NW,
-  AVIATION_N_SERVICE_SE_E,
   AVIATION_N_SERVICE_SW_W,
+  AVIATION_NB_JOIN,
   GRANT_MCCONACHIE_EB_END,
   GRANT_MCCONACHIE_WB_START,
   TEMPLETON_GRANT_MCCONACHIE_NE,
   TEMPLETON_GRANT_MCCONACHIE_NE_E,
   TEMPLETON_GRANT_MCCONACHIE_NW,
+  TEMPLETON_GRANT_MCCONACHIE_NW_N,
+  TEMPLETON_GRANT_MCCONACHIE_NW_W,
   TEMPLETON_GRANT_MCCONACHIE_SE,
   TEMPLETON_GRANT_MCCONACHIE_SW,
+  TEMPLETON_GRANT_MCCONACHIE_SW_S,
+  TEMPLETON_GRANT_MCCONACHIE_SW_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
@@ -44,18 +48,43 @@ export const GRANT_MCCONACHIE = [
       AVIATION_GRANT_MCCONACHIE_SW,
     ],
   },
+  // {
+  //   description: "wb continue back along n service",
+  //   type: "shoulder",
+  //   oneWay: "required",
+  //   positions: [
+  //     AVIATION_NB_SHARE_START,
+  //     [49.1934, -123.16663],
+  //     [49.19349, -123.1666],
+  //     [49.19354, -123.16657],
+  //     [49.19357, -123.16653],
+  //     [49.19359, -123.16649],
+  //     AVIATION_N_SERVICE_SE_E,
+  //   ],
+  // },
+
+  // some templeton slips
   {
-    description: "wb continue back along n service",
+    description: "wb join from templeton sb",
     type: "shoulder",
     oneWay: "required",
     positions: [
-      AVIATION_NB_SHARE_START,
-      [49.1934, -123.16663],
-      [49.19349, -123.1666],
-      [49.19354, -123.16657],
-      [49.19357, -123.16653],
-      [49.19359, -123.16649],
-      AVIATION_N_SERVICE_SE_E,
+      TEMPLETON_GRANT_MCCONACHIE_NW_N,
+      [49.1934, -123.151],
+      [49.19334, -123.15108],
+      TEMPLETON_GRANT_MCCONACHIE_NW_W,
+    ],
+  },
+  {
+    description: "eb split to templeton sb",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
+      TEMPLETON_GRANT_MCCONACHIE_SW_W,
+      [49.1929, -123.15096],
+      [49.19286, -123.1509],
+      [49.19282, -123.15087],
+      TEMPLETON_GRANT_MCCONACHIE_SW_S,
     ],
   },
 
@@ -93,7 +122,7 @@ export const GRANT_MCCONACHIE = [
       [49.19281, -123.15207],
       [49.19285, -123.15171],
       [49.19291, -123.15113],
-      [49.19291, -123.15103],
+      TEMPLETON_GRANT_MCCONACHIE_SW_W,
       [49.19297, -123.15097],
       TEMPLETON_GRANT_MCCONACHIE_SW,
       TEMPLETON_GRANT_MCCONACHIE_SE,
@@ -137,7 +166,7 @@ export const GRANT_MCCONACHIE = [
       TEMPLETON_GRANT_MCCONACHIE_NE,
       TEMPLETON_GRANT_MCCONACHIE_NW,
       [49.19327, -123.15105],
-      [49.19327, -123.15121],
+      TEMPLETON_GRANT_MCCONACHIE_NW_W,
       [49.19324, -123.1513],
       [49.1932, -123.15151],
       [49.19314, -123.15204],
@@ -170,7 +199,7 @@ export const GRANT_MCCONACHIE = [
     positions: [
       AVIATION_NB_SHARE_START,
       [49.19328, -123.16669],
-      [49.19341, -123.16672],
+      AVIATION_NB_JOIN,
       [49.1936, -123.16669],
       AVIATION_N_SERVICE_NW,
     ],

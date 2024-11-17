@@ -1,0 +1,200 @@
+import {
+  AURORA_MILLER_SE,
+  AURORA_MILLER_SW,
+  AVIATION_NB_JOIN,
+  CESSNA_MILLER_E,
+  RUSS_BAKER_MILLER_NW,
+} from "../intersections";
+import { ROUTES } from "../routes";
+
+const AVIATION_MILLER_NE_E = [49.1923, -123.16664];
+const AVIATION_GRANT_MCCONACHIE_NE_N = [49.19306, -123.16673];
+const MILLER_AIRSIDE_W = [49.19221, -123.17008];
+const AVIATION_MILLER_SW = [49.19214, -123.16732];
+const AURORA_MILLER_SE_E = [49.19204, -123.15672];
+const EB_SHOULDER_END = [49.19207, -123.15446];
+
+export const MILLER = [
+  // west end
+  {
+    routeNames: [ROUTES.miller.name],
+    description: "w end road",
+    type: "shared",
+    positions: [
+      [49.1912, -123.17514],
+      [49.19139, -123.17487],
+      [49.19147, -123.17469],
+      [49.19151, -123.17452],
+      MILLER_AIRSIDE_W,
+    ],
+  },
+
+  // eb
+  {
+    routeNames: [ROUTES.miller.name],
+    description: "eb 1",
+    type: "shared",
+    oneWay: "required",
+    positions: [
+      MILLER_AIRSIDE_W,
+      [49.19217, -123.16956],
+      [49.19217, -123.16944],
+      [49.19215, -123.16922],
+      [49.19215, -123.16809],
+      AVIATION_MILLER_SW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.miller.name],
+    description: "eb 2",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
+      AVIATION_MILLER_SW,
+      [49.19213, -123.167],
+      [49.19212, -123.16419],
+      [49.19211, -123.16095],
+      [49.1921, -123.15985],
+      [49.19208, -123.15899],
+      [49.19206, -123.15835],
+      [49.19205, -123.15723],
+      AURORA_MILLER_SW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.miller.name],
+    description: "miller crossing aurora south side",
+    type: "mixed",
+    positions: [AURORA_MILLER_SW, AURORA_MILLER_SE],
+  },
+  {
+    routeNames: [ROUTES.miller.name],
+    description: "eb hack bit",
+    type: "other",
+    oneWay: "required",
+    hideArrows: true,
+    positions: [AURORA_MILLER_SE, AURORA_MILLER_SE_E],
+  },
+  {
+    routeNames: [ROUTES.miller.name],
+    description: "eb 3",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
+      AURORA_MILLER_SE_E,
+      [49.19205, -123.15626],
+      [49.19207, -123.15588],
+      [49.19207, -123.15536],
+      EB_SHOULDER_END,
+    ],
+  },
+  {
+    routeNames: [ROUTES.miller.name],
+    description: "eb 4",
+    type: "shared",
+    oneWay: "required",
+    positions: [
+      EB_SHOULDER_END,
+      [49.1921, -123.15438],
+      [49.1921, -123.15381],
+      [49.19209, -123.151],
+      [49.19207, -123.1487],
+      [49.19206, -123.1461],
+      [49.19205, -123.1433],
+      [49.19205, -123.14267],
+      [49.19203, -123.14198],
+      [49.19206, -123.14159],
+      [49.19216, -123.141],
+      CESSNA_MILLER_E,
+    ],
+  },
+
+  // wb
+  {
+    routeNames: [ROUTES.miller.name],
+    description: "wb: e end shared",
+    type: "shared",
+    oneWay: "required",
+    positions: [
+      CESSNA_MILLER_E,
+      [49.19218, -123.14123],
+      [49.19216, -123.1416],
+      [49.19216, -123.142],
+      RUSS_BAKER_MILLER_NW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.miller.name],
+    description: "wb: russ baker to aviation",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
+      RUSS_BAKER_MILLER_NW,
+      [49.19222, -123.14269],
+      [49.19223, -123.14298],
+      [49.19221, -123.14462],
+      [49.19219, -123.14612],
+      [49.19216, -123.14648],
+      [49.19216, -123.14685],
+      [49.19218, -123.14809],
+      [49.1922, -123.1488],
+      [49.19221, -123.14912],
+      [49.1922, -123.14959],
+      [49.19221, -123.15035],
+      [49.19221, -123.15102],
+      [49.19221, -123.15194],
+      [49.19221, -123.1542],
+      [49.1922, -123.15657],
+      [49.19219, -123.15686],
+      [49.19219, -123.15728],
+      [49.19223, -123.15749],
+      [49.19225, -123.16009],
+      [49.19223, -123.16114],
+      [49.19223, -123.16171],
+      [49.19225, -123.16269],
+      [49.19226, -123.16309],
+      [49.19227, -123.16554],
+      [49.1923, -123.16615],
+      AVIATION_MILLER_NE_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.miller.name],
+    description: "wb: shared",
+    type: "shared",
+    oneWay: "required",
+    positions: [
+      AVIATION_MILLER_NE_E,
+      [49.19227, -123.16671],
+      [49.19225, -123.16691],
+      [49.19225, -123.16737],
+      [49.19226, -123.1688],
+      [49.19227, -123.16954],
+      [49.19226, -123.16983],
+      MILLER_AIRSIDE_W,
+    ],
+  },
+  {
+    description: "wb: towards n service 1",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
+      AVIATION_MILLER_NE_E,
+      [49.19233, -123.16676],
+      [49.19237, -123.1668],
+      [49.1924, -123.16683],
+      [49.19244, -123.16684],
+      [49.19249, -123.16683],
+      [49.19254, -123.1668],
+      [49.19262, -123.16681],
+      [49.19295, -123.16674],
+      AVIATION_GRANT_MCCONACHIE_NE_N,
+    ],
+  },
+  {
+    description: "wb: towards n service 2",
+    type: "shared",
+    oneWay: "required",
+    positions: [AVIATION_GRANT_MCCONACHIE_NE_N, AVIATION_NB_JOIN],
+  },
+];
