@@ -86,6 +86,7 @@ import { HORSESHOE_BAY } from "./horseshoeBay";
 import { HOWES } from "./howes";
 import { IMPERIAL } from "./imperial";
 import { IMPERIAL_POWERLINE } from "./imperialPowerline";
+import { INGLIS } from "./inglis";
 import { INVERNESS } from "./inverness";
 import { KEEFER } from "./keefer";
 import { KENSINGTON } from "./kensington";
@@ -293,6 +294,7 @@ export const SEGMENTS = [
   ...HOWES,
   ...IMPERIAL,
   ...IMPERIAL_POWERLINE,
+  ...INGLIS,
   ...INVERNESS,
   ...KEEFER,
   ...KENSINGTON,

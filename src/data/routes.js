@@ -6,11 +6,11 @@ import { VIDEOS } from "./videos";
 // SFU:
 // UBC: (extend agronomy (toronto), acadia?)
 // Richmond: south dyke; ...and around steveston
-// YVR: inglis;
+// YVR:
 // New Westminster:
 // North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
 // West Vancouver: spirit trail alt.; caulfield+; ...more
-// Surrey: scott rd; alex fraser; timbers; fraser hwy;
+// Surrey: scott rd; alex fraser; serpentine; timbers; fraser hwy;
 // Delta:
 
 export const VANCOUVER = "Vancouver";
@@ -849,6 +849,11 @@ export const ROUTES = {
     shortName: "Imperial/Powerline",
     cities: [UBC],
     legs: [{ videos: { eastbound: VIDEOS.imperialPowerlineEb } }],
+  },
+  inglis: {
+    name: "Inglis Dr",
+    cities: [RICHMOND],
+    legs: [{ videos: {} }],
   },
   inverness: {
     name: "Inverness",
