@@ -1476,7 +1476,10 @@ export const ROUTES = {
     shortName: "SFU Paths",
     cities: [BURNABY],
     legs: [
-      { name: "Burnaby Mountain Parkway", videos: {} },
+      {
+        name: "Burnaby Mountain Parkway",
+        videos: { eastbound: VIDEOS.burnabyMtnPathEb },
+      },
       {
         name: "University Drive West",
         videos: { westbound: VIDEOS.universityDrWPathWb },
@@ -1487,8 +1490,15 @@ export const ROUTES = {
         videos: { westbound: VIDEOS.sCampusPathNWb },
       },
       {
+        name: "South Campus Road Lane",
+        videos: { westbound: VIDEOS.sCampusEb },
+      },
+      {
         name: "Greenhouse Lane/Nelson Way",
-        videos: { eastbound: VIDEOS.greenhousePathEb },
+        videos: {
+          eastbound: VIDEOS.greenhousePathEb,
+          westbound: VIDEOS.greenhousePathWb,
+        },
       },
       {
         name: "University Drive East",

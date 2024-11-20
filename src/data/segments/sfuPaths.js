@@ -17,6 +17,8 @@ const PARKING_LOT_E = [49.28032, -122.92083];
 const GAGLARDI_UNIVERSITY_NE = [49.28014, -122.9198];
 const GAGLARDI_UNIVERSITY_NW = [49.28023, -122.92028];
 const SCIENCE_S_CAMPUS_NW = [49.27602, -122.91464];
+const BURNABY_MTN_PATH_W = [49.27474, -122.93826];
+const S_CAMPUS_LANE_USEFUL_START = [49.27764, -122.92099];
 
 export const SFU_PATHS = [
   {
@@ -85,14 +87,25 @@ export const SFU_PATHS = [
     ],
   },
   {
-    description: "s campus rd",
+    description: "s campus rd start",
     type: "painted",
     oneWay: "required",
     positions: [
       [49.2776, -122.9215],
       [49.27763, -122.92132],
       [49.27764, -122.92117],
-      [49.27764, -122.92099],
+      S_CAMPUS_LANE_USEFUL_START,
+    ],
+  },
+  {
+    description: "s campus rd",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [VIDEOS.sCampusEb.id],
+    videoIdsStartAtStart: [VIDEOS.sCampusEb.id],
+    videoIdsEndAtEnd: [VIDEOS.sCampusEb.id],
+    positions: [
+      S_CAMPUS_LANE_USEFUL_START,
       [49.27763, -122.9207],
       [49.2776, -122.92047],
       [49.27756, -122.92031],
@@ -122,7 +135,8 @@ export const SFU_PATHS = [
     routeNames: [ROUTES.sfuPaths.name],
     description: "crossing gaglardi at university w",
     type: "mixed",
-    videoIds: [VIDEOS.universityDrWPathWb.id],
+    videoIds: [VIDEOS.universityDrWPathWb.id, VIDEOS.burnabyMtnPathEb.id],
+    videoIdsEndAtEnd: [VIDEOS.burnabyMtnPathEb.id],
     positions: [
       GAGLARDI_UNIVERSITY_W_W,
       [49.27616, -122.93037],
@@ -133,7 +147,11 @@ export const SFU_PATHS = [
     routeNames: [ROUTES.sfuPaths.name],
     description: "crossing s campus at gaglardi 1",
     type: "mixed",
-    videoIds: [VIDEOS.gaglardiPathNb.id, VIDEOS.greenhousePathEb.id],
+    videoIds: [
+      VIDEOS.gaglardiPathNb.id,
+      VIDEOS.greenhousePathEb.id,
+      VIDEOS.greenhousePathWb.id,
+    ],
     positions: [
       GAGLARDI_S_CAMPUS_SE_S,
       [49.27771, -122.92099],
@@ -144,16 +162,34 @@ export const SFU_PATHS = [
     routeNames: [ROUTES.sfuPaths.name],
     description: "crossing s campus at gaglardi 2",
     type: "mixed",
-    videoIds: [VIDEOS.gaglardiPathNb.id],
+    videoIds: [VIDEOS.gaglardiPathNb.id, VIDEOS.greenhousePathWb.id],
+    videoIdsEndAtEnd: [VIDEOS.greenhousePathWb.id],
     positions: [GAGLARDI_S_CAMPUS_NE, GAGLARDI_S_CAMPUS_NE_N],
   },
 
   {
+    description: "left turn to burnaby mtn path",
+    type: "shared",
+    oneWay: "required",
+    undesignated: true,
+    videoIds: [VIDEOS.burnabyMtnPathEb.id],
+    videoIdsStartAtStart: [VIDEOS.burnabyMtnPathEb.id],
+    positions: [
+      [49.27488, -122.93972],
+      [49.27487, -122.93932],
+      [49.27481, -122.939],
+      [49.2747, -122.93844],
+      [49.2747, -122.93831],
+      BURNABY_MTN_PATH_W,
+    ],
+  },
+  {
     routeNames: [ROUTES.sfuPaths.name],
     description: "west perimeter: burnaby mtn, gaglardi",
     type: "mixed",
+    videoIds: [VIDEOS.burnabyMtnPathEb.id],
     positions: [
-      [49.27474, -122.93817],
+      BURNABY_MTN_PATH_W,
       [49.27476, -122.9381],
       [49.27454, -122.93722],
       [49.27435, -122.93643],
@@ -358,7 +394,7 @@ export const SFU_PATHS = [
     routeNames: [ROUTES.sfuPaths.name],
     description: "greenhouse/nelson",
     type: "mixed",
-    videoIds: [VIDEOS.greenhousePathEb.id],
+    videoIds: [VIDEOS.greenhousePathEb.id, VIDEOS.greenhousePathWb.id],
     positions: [
       GAGLARDI_S_CAMPUS_SE_S,
       [49.2776, -122.92079],
@@ -424,6 +460,7 @@ export const SFU_PATHS = [
     type: "quiet",
     oneWay: "required",
     undesignated: true,
+    videoIds: [VIDEOS.greenhousePathWb.id],
     positions: [
       NELSON_LOT_E,
       [49.27393, -122.91069],
@@ -437,7 +474,8 @@ export const SFU_PATHS = [
     description: "nelson way",
     type: "quiet",
     undesignated: true,
-    videoIds: [VIDEOS.greenhousePathEb.id],
+    videoIds: [VIDEOS.greenhousePathEb.id, VIDEOS.greenhousePathWb.id],
+    videoIdsStartAtEnd: [VIDEOS.greenhousePathWb.id],
     videoIdsEndAtEnd: [VIDEOS.greenhousePathEb.id],
     positions: [
       NELSON_LOT_E,

@@ -189,6 +189,12 @@ const VIDEOS = {
     date: new Date("Oct 11 2024"),
     minutes: 11,
   },
+  burnabyMtnPathEb: {
+    id: "icrtJz2v5tM",
+    tlId: "A-caKjdXyOY",
+    date: new Date("Nov 17 2024"),
+    minutes: 7,
+  },
   burrardNb: {
     id: "62m58RRdHcg",
     date: new Date("Aug 12 2023"),
@@ -581,6 +587,11 @@ const VIDEOS = {
   greenhousePathEb: {
     id: "V5xStQzLJ24",
     date: new Date("Oct 11 2024"),
+    minutes: 4,
+  },
+  greenhousePathWb: {
+    id: "cmLf8D9Mw1g",
+    date: new Date("Nov 17 2024"),
     minutes: 4,
   },
   greenleafEb: {
@@ -1128,6 +1139,11 @@ const VIDEOS = {
   sCampusPathNWb: {
     id: "qONFT1Ay9rw",
     date: new Date("Oct 11 2024"),
+    minutes: 3,
+  },
+  sCampusEb: {
+    id: "N0zF9wYyJXk",
+    date: new Date("Nov 17 2024"),
     minutes: 3,
   },
   seaIslandConnectorWb: {
