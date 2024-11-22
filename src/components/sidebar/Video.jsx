@@ -84,7 +84,12 @@ export default function Video({ video, direction }) {
           onClick={updateVideo}
         >
           <label className="container">
-            <input type="checkbox" checked={isShowing} onChange={updateVideo} />
+            <input
+              name="show-video"
+              type="checkbox"
+              checked={isShowing}
+              onChange={updateVideo}
+            />
             <span className="slider" />
           </label>
           <img src={startIcon} style={{ height: "30px", paddingLeft: "4px" }} />
@@ -109,6 +114,7 @@ export default function Video({ video, direction }) {
 function SpeedDropdown({ options, selected, setSelected }) {
   return (
     <select
+      name="speed"
       style={{ borderRadius: 5 }}
       value={selected}
       onChange={(e) => setSelected(e.target.value)}
