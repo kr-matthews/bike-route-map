@@ -1335,11 +1335,13 @@ const VIDEOS = {
   },
   marineWayEb: {
     id: "EHjWLoIMeGU",
+    tlId: "NjLlR7HIVrM",
     date: new Date("Jan 01 2024"),
     minutes: 18,
   },
   marineWayWb: {
     id: "gBgVqAM5hYo",
+    tlId: "lwjABK_GyPA",
     date: new Date("Mar 13 2024"),
     minutes: 18,
   },
