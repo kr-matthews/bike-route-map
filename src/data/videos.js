@@ -91,21 +91,25 @@ const VIDEOS = {
   },
   bcParkwayBurnabyWb: {
     id: "beBp-SfFijM",
+    tlId: "qU7M9A23N_0",
     date: new Date("Jan 01 2024"),
     minutes: 25,
   },
   bcParkwayNWWb: {
     id: "hi6hp9mxW3g",
+    tlId: "ymQCoAKs0yc",
     date: new Date("Jan 01 2024"),
     minutes: 26,
   },
   bcParkwaySurreyEb: {
     id: "z1GbbXnFnpU",
+    tlId: "wWsE-mGg77I",
     date: new Date("Jan 01 2024"),
     minutes: 27,
   },
   bcParkwaySurreyWb: {
     id: "HEfpTO9Eyjg",
+    tlId: "tYPEE1B3u_U",
     date: new Date("Jan 01 2024"),
     minutes: 26,
   },
