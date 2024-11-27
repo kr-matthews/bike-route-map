@@ -19,6 +19,8 @@ export const FOURTEENTH = [
     routeNames: [ROUTES.fourteenth.name],
     description: "arbutus greenway to granville",
     type: "quiet",
+    videoIds: [VIDEOS.fourteenthExtWb.id],
+    videoIdsEndAtStart: [VIDEOS.fourteenthExtWb.id],
     positions: [
       ARBUTUS_GREENWAY_14TH,
       CYPRESS_14TH,
@@ -30,12 +32,15 @@ export const FOURTEENTH = [
     routeNames: [ROUTES.fourteenth.name],
     description: "granville plaza",
     type: "dedicated",
+    videoIds: [VIDEOS.fourteenthExtWb.id],
     positions: [GRANVILLE_14TH_E, GRANVILLE_14TH_E_ALLEY],
   },
   {
     routeNames: [ROUTES.fourteenth.name],
     description: "granville to alder",
     type: "quiet",
+    videoIds: [VIDEOS.fourteenthExtWb.id],
+    videoIdsStartAtEnd: [VIDEOS.fourteenthExtWb.id],
     positions: [GRANVILLE_14TH_E_ALLEY, [49.25884, -123.13391], ALDER_14TH],
   },
   {

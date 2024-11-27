@@ -72,9 +72,16 @@ export const ROUTES = {
     cities: [VANCOUVER],
     legs: [
       {
+        name: "Original Alder <-> Prince Edward",
         videos: {
           eastbound: VIDEOS.fourteenthEb,
           westbound: VIDEOS.fourteenthWb,
+        },
+      },
+      {
+        name: "2024 Extension to Arbutus Greenway",
+        videos: {
+          westbound: VIDEOS.fourteenthExtWb,
         },
       },
     ],
