@@ -1,5 +1,6 @@
 import {
   GREENLEAF_WESTPORT,
+  NORTHWOOD_WESTPORT,
   THIRTY_FIRST_MARINE_E,
   THIRTY_FIRST_MARINE_NE,
   TWENTY_NINTH_MARINE_N,
@@ -10,8 +11,7 @@ import { VIDEOS } from "../videos";
 
 const WESTPORT_WESTPORT_W = [49.36045, -123.25795];
 const WESTPORT_WESTWOOD_SE = [49.35577, -123.25323];
-const HEADLAND_WESTPORT_WS = [49.35221, -123.25133];
-const HEADLAND_WESTPORT = [49.35217, -123.2511];
+const NORTHWOOD_WESTPORT_WS = [49.35221, -123.25133];
 const WOODCREST_WOODGREEN = [49.35144, -123.24449];
 const CYPRESS_CREEK_W = [49.3497, -123.23821];
 const CYPRESS_CREEK_E = [49.34949, -123.23705];
@@ -100,7 +100,7 @@ export const WESTPORT_MATHERS = [
     oneWay: "required",
     videoIds: [VIDEOS.westportMathersWb.id],
     positions: [
-      HEADLAND_WESTPORT,
+      NORTHWOOD_WESTPORT,
       [49.35225, -123.25123],
       [49.35239, -123.25171],
       [49.35254, -123.25216],
@@ -208,8 +208,8 @@ export const WESTPORT_MATHERS = [
       [49.35283, -123.25287],
       [49.35264, -123.25254],
       [49.35248, -123.25218],
-      HEADLAND_WESTPORT_WS,
-      HEADLAND_WESTPORT,
+      NORTHWOOD_WESTPORT_WS,
+      NORTHWOOD_WESTPORT,
     ],
   },
   {
@@ -218,7 +218,7 @@ export const WESTPORT_MATHERS = [
     type: "shared",
     videoIds: [VIDEOS.westportMathersWb.id],
     positions: [
-      HEADLAND_WESTPORT,
+      NORTHWOOD_WESTPORT,
       [49.35201, -123.25044],
       [49.35184, -123.24949],
       [49.35178, -123.24901],

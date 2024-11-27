@@ -452,6 +452,11 @@ export const ROUTES = {
     cities: [VANCOUVER],
     legs: [{ videos: { southbound: VIDEOS.cassiarSb } }],
   },
+  caulfeild: {
+    name: "Caulfeild",
+    cities: [WEST_VANCOUVER],
+    legs: [{ videos: {} }],
+  },
   centralParkPerimeterTrail: {
     name: "Central Park Perimeter Trail",
     shortName: "Central Park Perim.",

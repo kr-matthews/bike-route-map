@@ -33,6 +33,7 @@ import { CARIBOO } from "./cariboo";
 import { CARNARVON } from "./carnarvon";
 import { CARRALL } from "./carrall";
 import { CASSIAR } from "./cassiar";
+import { CAULFEILD } from "./caulfeild";
 import { CENTRAL_PARK_PERIMETER_TRAIL } from "./centralParkPerimeterTrail";
 import { CENTRAL_VALLEY_GREENWAY } from "./centralValleyGreenway";
 import { CHAMPLAIN_HEIGHTS_GAP } from "./champlainHeightsGap";
@@ -240,6 +241,7 @@ export const SEGMENTS = [
   ...CARNARVON,
   ...CARRALL,
   ...CASSIAR,
+  ...CAULFEILD,
   ...CENTRAL_PARK_PERIMETER_TRAIL,
   ...CENTRAL_VALLEY_GREENWAY,
   ...CHAMPLAIN_HEIGHTS_GAP,
