@@ -674,8 +674,12 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "false creek south: under cambie bridge",
     type: "dedicated",
-    videoIds: [VIDEOS.yukonSb.id, VIDEOS.seasideFalseCreekCw.id],
-    videoIdsStartAtEnd: [VIDEOS.yukonSb.id],
+    videoIds: [
+      VIDEOS.cambieBridgeNb.id,
+      VIDEOS.yukonSb.id,
+      VIDEOS.seasideFalseCreekCw.id,
+    ],
+    videoIdsStartAtEnd: [VIDEOS.cambieBridgeNb.id, VIDEOS.yukonSb.id],
     positions: [
       SPYGLASS_SEAWALL,
       [49.27085, -123.11515],
@@ -850,8 +854,13 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "false creek north - under cambie-ish",
     type: "comfortable",
-    videoIds: [VIDEOS.cambieBridgeSb.id, VIDEOS.seasideFalseCreekCw.id],
+    videoIds: [
+      VIDEOS.cambieBridgeNb.id,
+      VIDEOS.cambieBridgeSb.id,
+      VIDEOS.seasideFalseCreekCw.id,
+    ],
     videoIdsStartAtStart: [VIDEOS.cambieBridgeSb.id],
+    videoIdsEndAtStart: [VIDEOS.cambieBridgeNb.id],
     positions: [
       PRE_MARINASIDE,
       [49.27308, -123.11545],

@@ -401,7 +401,10 @@ export const ROUTES = {
       },
       {
         name: "Seawall to Seawall",
-        videos: { southbound: VIDEOS.cambieBridgeSb },
+        videos: {
+          northbound: VIDEOS.cambieBridgeNb,
+          southbound: VIDEOS.cambieBridgeSb,
+        },
       },
     ],
   },

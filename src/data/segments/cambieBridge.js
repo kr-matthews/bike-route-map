@@ -61,13 +61,21 @@ export const CAMBIE_BRIDGE = [
   },
   {
     routeNames: [ROUTES.cambieBridge.name],
-    description: "northbound bridge 1",
+    description: "northbound bridge 0",
     type: "combined",
     oneWay: "required",
     videoIds: [VIDEOS.cambieBridgeSmitheNb.id],
     elevation: 1,
+    positions: [NORTHBOUND_ELEVATED_START, NORTHBOUND_ON_RAMP_MERGE],
+  },
+  {
+    routeNames: [ROUTES.cambieBridge.name],
+    description: "northbound bridge 1",
+    type: "combined",
+    oneWay: "required",
+    videoIds: [VIDEOS.cambieBridgeNb.id, VIDEOS.cambieBridgeSmitheNb.id],
+    elevation: 1,
     positions: [
-      NORTHBOUND_ELEVATED_START,
       NORTHBOUND_ON_RAMP_MERGE,
       [49.26866, -123.11467],
       [49.26948, -123.11476],
@@ -83,7 +91,7 @@ export const CAMBIE_BRIDGE = [
     description: "northbound bridge 2",
     type: "combined",
     oneWay: "required",
-    videoIds: [VIDEOS.cambieBridgeSmitheNb.id],
+    videoIds: [VIDEOS.cambieBridgeNb.id, VIDEOS.cambieBridgeSmitheNb.id],
     elevation: 1.5,
     positions: [SPIRAL_PRE_SPLIT_1, SPIRAL_PRE_SPLIT_2],
   },
@@ -93,7 +101,7 @@ export const CAMBIE_BRIDGE = [
     type: "combined",
     oneWay: "required",
     hideArrows: true,
-    videoIds: [VIDEOS.cambieBridgeSmitheNb.id],
+    videoIds: [VIDEOS.cambieBridgeNb.id, VIDEOS.cambieBridgeSmitheNb.id],
     elevation: 2,
     positions: [
       SPIRAL_PRE_SPLIT_2,
@@ -112,9 +120,19 @@ export const CAMBIE_BRIDGE = [
     type: "combined",
     oneWay: "required",
     hideArrows: "true",
-    videoIds: [VIDEOS.cambieBridgeSmitheNb.id],
+    videoIds: [VIDEOS.cambieBridgeNb.id, VIDEOS.cambieBridgeSmitheNb.id],
     elevation: 1.5,
     positions: [SPIRAL_PRE_SPLIT_3, [49.27393, -123.11425], SPIRAL_PRE_SPLIT_4],
+  },
+  {
+    routeNames: [ROUTES.cambieBridge.name],
+    description: "northbound bridge post-spiral tiny bit",
+    type: "mixed",
+    oneWay: "required",
+    hideArrows: true,
+    videoIds: [VIDEOS.cambieBridgeNb.id, VIDEOS.cambieBridgeSmitheNb.id],
+    elevation: 1,
+    positions: [SPIRAL_PRE_SPLIT_4, SPIRAL_SPLIT],
   },
   {
     routeNames: [ROUTES.cambieBridge.name],
@@ -124,7 +142,6 @@ export const CAMBIE_BRIDGE = [
     videoIds: [VIDEOS.cambieBridgeSmitheNb.id],
     elevation: 1,
     positions: [
-      SPIRAL_PRE_SPLIT_4,
       SPIRAL_SPLIT,
       [49.27389, -123.11454],
       [49.27392, -123.11455],
@@ -148,7 +165,7 @@ export const CAMBIE_BRIDGE = [
     ],
   },
   {
-    description: "nb connection to pacific",
+    description: "smithe to spirals, on ground",
     type: "dedicated",
     videoIds: [VIDEOS.cambieBridgeSb.id],
     positions: [
@@ -164,6 +181,14 @@ export const CAMBIE_BRIDGE = [
       [49.27423, -123.11494],
       NELSON_PACIFIC_SE,
       SPIRAL_BOTTOM,
+    ],
+  },
+  {
+    description: "spirals to seawall",
+    type: "dedicated",
+    videoIds: [VIDEOS.cambieBridgeNb.id, VIDEOS.cambieBridgeSb.id],
+    positions: [
+      SPIRAL_BOTTOM,
       [49.27364, -123.11465],
       [49.27359, -123.11476],
       [49.27338, -123.1148],
@@ -174,12 +199,14 @@ export const CAMBIE_BRIDGE = [
     description: "north spiral connection top",
     type: "mixed",
     elevation: 1,
+    videoIds: [VIDEOS.cambieBridgeNb.id],
     positions: [SPIRAL_SPLIT, [49.27392, -123.11433], [49.27394, -123.11431]],
   },
   {
     description: "north spiral connection mid",
     type: "mixed",
     elevation: 1,
+    videoIds: [VIDEOS.cambieBridgeNb.id],
     positions: [
       [49.27394, -123.11431],
       [49.27413, -123.11412],
@@ -192,6 +219,7 @@ export const CAMBIE_BRIDGE = [
     description: "north spiral connection bottom",
     type: "mixed",
     elevation: 0.5,
+    videoIds: [VIDEOS.cambieBridgeNb.id],
     positions: [SPIRAL_PRE_BOTTOM, SPIRAL_BOTTOM],
   },
 
@@ -347,6 +375,7 @@ export const CAMBIE_BRIDGE = [
     description: "northbound alt on-ramp top",
     type: "mixed",
     elevation: 1,
+    videoIds: [VIDEOS.cambieBridgeNb.id],
     positions: [
       NORTHBOUND_ON_RAMP_MERGE,
       [49.26739, -123.11456],
@@ -357,11 +386,13 @@ export const CAMBIE_BRIDGE = [
     description: "northbound alt on-ramp mid",
     type: "mixed",
     elevation: 0.5,
+    videoIds: [VIDEOS.cambieBridgeNb.id],
     positions: [NORTHBOUND_ON_RAMP_PRE_MERGE, NORTHBOUND_ON_RAMP_PRE_PRE_MERGE],
   },
   {
     description: "northbound alt on-ramp bottom",
     type: "mixed",
+    videoIds: [VIDEOS.cambieBridgeNb.id],
     positions: [
       NORTHBOUND_ON_RAMP_PRE_PRE_MERGE,
       [49.2678, -123.11458],
@@ -370,15 +401,25 @@ export const CAMBIE_BRIDGE = [
     ],
   },
   {
-    description: "under bridge",
+    description: "under bridge 1",
     type: "mixed",
     videoIds: [VIDEOS.cambieBridgeSb.id],
-    positions: [CAMBIE_2ND_N_E, UNDER_BRIDGE_NODE, CAMBIE_1ST_S, CAMBIE_1ST_N],
+    positions: [CAMBIE_2ND_N_E, UNDER_BRIDGE_NODE],
+  },
+  {
+    description: "under bridge 2",
+    type: "mixed",
+    videoIds: [VIDEOS.cambieBridgeNb.id, VIDEOS.cambieBridgeSb.id],
+    positions: [UNDER_BRIDGE_NODE, CAMBIE_1ST_S, CAMBIE_1ST_N],
   },
   {
     description: "beside bridge",
     type: "quiet",
-    videoIds: [VIDEOS.yukonSb.id, VIDEOS.cambieBridgeSb.id],
+    videoIds: [
+      VIDEOS.cambieBridgeNb.id,
+      VIDEOS.yukonSb.id,
+      VIDEOS.cambieBridgeSb.id,
+    ],
     videoIdsEndAtEnd: [VIDEOS.cambieBridgeSb.id],
     positions: [
       SPYGLASS_1ST,
@@ -415,7 +456,7 @@ export const CAMBIE_BRIDGE = [
   {
     description: "connection commodore from spyglass",
     type: "quiet",
-    videoIds: [VIDEOS.yukonSb.id],
+    videoIds: [VIDEOS.cambieBridgeNb.id, VIDEOS.yukonSb.id],
     positions: [SPYGLASS_1ST, SPYGLASS_COMMODORE],
   },
   {

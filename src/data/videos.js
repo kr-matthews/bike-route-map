@@ -234,6 +234,11 @@ const VIDEOS = {
     date: new Date("Aug 27 2023"),
     minutes: 5,
   },
+  cambieBridgeNb: {
+    id: "SpG9ULfBO0Y",
+    date: new Date("Nov 27 2024"),
+    minutes: 5,
+  },
   cambieBridgeSb: {
     id: "MaEkiWGQfjY",
     date: new Date("May 03 2024"),

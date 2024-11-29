@@ -285,7 +285,19 @@ export const SEASIDE_BYPASS = [
   },
   {
     routeNames: [ROUTES.seasideBypass.name],
-    description: "false creek east of spyglass",
+    description: "false creek east of spyglass 1",
+    type: "quiet",
+    videoIds: [
+      VIDEOS.seasideBypassFalseCreekSouthWb.id,
+      VIDEOS.seasideBypassFalseCreekSouthEb.id,
+      VIDEOS.cambieBridgeNb.id,
+      VIDEOS.yukonSb.id,
+    ],
+    positions: [SPYGLASS_COMMODORE, CAMBIE_1ST_N],
+  },
+  {
+    routeNames: [ROUTES.seasideBypass.name],
+    description: "false creek east of spyglass 2",
     type: "quiet",
     videoIds: [
       VIDEOS.seasideBypassFalseCreekSouthWb.id,
@@ -293,7 +305,6 @@ export const SEASIDE_BYPASS = [
       VIDEOS.yukonSb.id,
     ],
     positions: [
-      SPYGLASS_COMMODORE,
       CAMBIE_1ST_N,
       [49.26819, -123.11478],
       [49.26819, -123.11468],
