@@ -749,10 +749,9 @@ export const CENTRAL_VALLEY_GREENWAY = [
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
-    description: "winston eb closed",
+    description: "winston eb 1",
     type: "painted",
     oneWay: "required",
-    isClosed: true,
     positions: [
       WINSTON_GREENWOOD_NE,
       [49.25633, -122.96232],
@@ -778,7 +777,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
-    description: "winston eb open",
+    description: "winston eb 2",
     type: "painted",
     oneWay: "required",
     positions: [
