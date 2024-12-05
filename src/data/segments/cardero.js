@@ -15,6 +15,7 @@ import { VIDEOS } from "../videos";
 
 const CARDERO_PANTAGES_S = [49.28488, -123.13919];
 const CARDERO_JEPSON_YOUNG = [49.28624, -123.13712];
+const CARDERO_ROBSON = [49.28946, -123.13227];
 
 export const CARDERO = [
   {
@@ -65,16 +66,25 @@ export const CARDERO = [
   },
   {
     routeNames: [ROUTES.cardero.name],
-    description: "comox to seawall",
+    description: "comox to robson",
     type: "quiet",
     videoIds: [VIDEOS.carderoNb.id],
-    videoIdsEndAtEnd: [VIDEOS.carderoNb.id],
     positions: [
       CARDERO_COMOX,
       [49.28736, -123.13546],
       [49.28805, -123.1344],
       CARDERO_HARO,
-      [49.28946, -123.13227],
+      CARDERO_ROBSON,
+    ],
+  },
+  {
+    routeNames: [ROUTES.cardero.name],
+    description: "robson to seawall",
+    type: "shared",
+    videoIds: [VIDEOS.carderoNb.id],
+    videoIdsEndAtEnd: [VIDEOS.carderoNb.id],
+    positions: [
+      CARDERO_ROBSON,
       CARDERO_ALBERNI_S,
       CARDERO_ALBERNI_N,
       CARDERO_GEORGIA_S,
