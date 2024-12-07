@@ -604,7 +604,7 @@ export const STANLEY_PARK_LOOP = [
     routeNames: [ROUTES.stanleyParkLoop.name],
     description: "alberni/chilco to underpass",
     type: "comfortable",
-    videoIds: [VIDEOS.lostLagoonEb.id, VIDEOS.alberniEb.id],
+    videoIds: [VIDEOS.lostLagoonEb.id, VIDEOS.alberniEb.id, VIDEOS.chilcoNb.id],
     videoIdsStartAtEnd: [VIDEOS.alberniEb.id],
     positions: [
       STANLEY_PARK_LOOP_ALBERNI,
@@ -619,7 +619,13 @@ export const STANLEY_PARK_LOOP = [
     routeNames: [ROUTES.stanleyParkLoop.name],
     description: "causeway underpass",
     type: "comfortable",
-    videoIds: [VIDEOS.lostLagoonEb.id],
+    videoIds: [
+      VIDEOS.lostLagoonEb.id,
+      VIDEOS.seasideCoalHarbourEb.id,
+      VIDEOS.chilcoNb.id,
+    ],
+    videoIdsStartAtStart: [VIDEOS.seasideCoalHarbourEb.id],
+    videoIdsEndAtEnd: [VIDEOS.chilcoNb.id],
     positions: [
       BEFORE_CAUSEWAY_UNDERPASS,
       [49.29483, -123.13691],

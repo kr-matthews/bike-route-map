@@ -429,7 +429,11 @@ export const ROUTES = {
   cardero: {
     name: "Cardero",
     cities: [VANCOUVER],
-    legs: [{ videos: { northbound: VIDEOS.carderoNb } }],
+    legs: [
+      {
+        videos: { northbound: VIDEOS.carderoNb, southbound: VIDEOS.carderoSb },
+      },
+    ],
   },
   cariboo: {
     name: "Cariboo",
@@ -507,7 +511,9 @@ export const ROUTES = {
   chilco: {
     name: "Chilco",
     cities: [VANCOUVER],
-    legs: [{ videos: { southbound: VIDEOS.chilcoSb } }],
+    legs: [
+      { videos: { northbound: VIDEOS.chilcoNb, southbound: VIDEOS.chilcoSb } },
+    ],
   },
   columbia: {
     name: "Columbia",
@@ -1415,7 +1421,10 @@ export const ROUTES = {
     legs: [
       {
         name: "Coal Harbour",
-        videos: { westbound: VIDEOS.seasideCoalHarbourWb },
+        videos: {
+          eastbound: VIDEOS.seasideCoalHarbourEb,
+          westbound: VIDEOS.seasideCoalHarbourWb,
+        },
       },
       {
         name: "Stanley Park",

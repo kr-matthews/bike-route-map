@@ -17,10 +17,11 @@ export const CHILCO = [
   {
     description: "connection to stanley park loop",
     type: "mixed",
-    videoIds: [VIDEOS.alberniEb.id, VIDEOS.alberniWb.id],
+    videoIds: [VIDEOS.alberniEb.id, VIDEOS.alberniWb.id, VIDEOS.chilcoNb.id],
     videoIdsEndAtStart: [VIDEOS.alberniWb.id],
     positions: [STANLEY_PARK_LOOP_ALBERNI, CHILCO_ALBERNI_W],
   },
+
   {
     routeNames: [ROUTES.chilco.name],
     description: "beach to seawall",
@@ -32,22 +33,23 @@ export const CHILCO = [
     routeNames: [ROUTES.chilco.name],
     description: "beach to comox",
     type: "quiet",
-    videoIds: [VIDEOS.chilcoSb.id],
+    videoIds: [VIDEOS.chilcoNb.id, VIDEOS.chilcoSb.id],
+    videoIdsStartAtStart: [VIDEOS.chilcoNb.id],
     videoIdsEndAtStart: [VIDEOS.chilcoSb.id],
     positions: [CHILCO_BEACH, [49.28988, -123.14369], CHILCO_COMOX],
   },
   {
     routeNames: [ROUTES.chilco.name],
-    description: "lord roberts plaza",
+    description: "comox plaza",
     type: "mixed",
-    videoIds: [VIDEOS.chilcoSb.id],
+    videoIds: [VIDEOS.chilcoNb.id, VIDEOS.chilcoSb.id],
     positions: [CHILCO_COMOX, CHILCO_HENSHAW_S],
   },
   {
     routeNames: [ROUTES.chilco.name],
     description: "henshaw to alberni",
     type: "quiet",
-    videoIds: [VIDEOS.chilcoSb.id],
+    videoIds: [VIDEOS.chilcoSb.id, VIDEOS.chilcoNb.id],
     positions: [
       CHILCO_HENSHAW_S,
       [49.29128, -123.14156],

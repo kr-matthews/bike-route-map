@@ -1119,7 +1119,11 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "devonian harbour park beginning",
     type: "dedicated",
-    videoIds: [VIDEOS.seasideStanleyPark.id, VIDEOS.seasideCoalHarbourWb.id],
+    videoIds: [
+      VIDEOS.seasideStanleyPark.id,
+      VIDEOS.seasideCoalHarbourEb.id,
+      VIDEOS.seasideCoalHarbourWb.id,
+    ],
     videoIdsStartAtEnd: [VIDEOS.seasideStanleyPark.id],
     positions: [
       STANLEY_PARK_LOOP_JOIN_E,
@@ -1136,7 +1140,7 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "coal harbour (minus start/end bits)",
     type: "dedicated",
-    videoIds: [VIDEOS.seasideCoalHarbourWb.id],
+    videoIds: [VIDEOS.seasideCoalHarbourEb.id, VIDEOS.seasideCoalHarbourWb.id],
     positions: [
       AFTER_E_JOIN,
       [49.29479, -123.13445],
@@ -1211,7 +1215,11 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "coal harbour: up to convention centers",
     type: "dedicated",
-    videoIds: [VIDEOS.seasideCoalHarbourWb.id, VIDEOS.waterfrontWb.id],
+    videoIds: [
+      VIDEOS.seasideCoalHarbourWb.id,
+      VIDEOS.seasideCoalHarbourEb.id,
+      VIDEOS.waterfrontWb.id,
+    ],
     positions: [
       SEAWALL_WATERFRONT,
       [49.28988, -123.11855],
@@ -1229,6 +1237,7 @@ export const SEASIDE = [
     type: "dedicated",
     videoIds: [
       VIDEOS.seasideCoalHarbourWb.id,
+      VIDEOS.seasideCoalHarbourEb.id,
       VIDEOS.hornbyNb.id,
       VIDEOS.waterfrontWb.id,
     ],
@@ -1251,11 +1260,13 @@ export const SEASIDE = [
     type: "dedicated",
     videoIds: [
       VIDEOS.seasideCoalHarbourWb.id,
+      VIDEOS.seasideCoalHarbourEb.id,
       VIDEOS.burrardSb.id,
       VIDEOS.hornbySb.id,
       VIDEOS.hornbyNb.id,
     ],
     videoIdsStartAtStart: [VIDEOS.burrardSb.id, VIDEOS.hornbySb.id],
+    videoIdsEndAtEnd: [VIDEOS.seasideCoalHarbourEb.id],
     positions: [NORTH_OF_CANADA_PLACE, BURRARD_CANADA_PLACE],
   },
 ];

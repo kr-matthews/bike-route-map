@@ -269,6 +269,12 @@ const VIDEOS = {
     date: new Date("Dec 24 2023"),
     minutes: 5,
   },
+  carderoSb: {
+    id: "34cLAaSKnZk",
+    tlId: "u4GA1yMxifs",
+    date: new Date("Dec 04 2024"),
+    minutes: 7,
+  },
   caribooSb: {
     id: "w54AMi1gEiQ",
     date: new Date("May 09 2024"),
@@ -333,6 +339,11 @@ const VIDEOS = {
     tlId: "8BRasaHwpzQ",
     date: new Date("Jul 01 2024"),
     minutes: 8,
+  },
+  chilcoNb: {
+    id: "50xmvwJUoNc",
+    date: new Date("Dec 04 2024"),
+    minutes: 3,
   },
   chilcoSb: {
     id: "WZIDTdlVxZY",
@@ -1213,6 +1224,12 @@ const VIDEOS = {
     id: "L1dzMGDfgDU",
     date: new Date("May 18 2024"),
     minutes: 3,
+  },
+  seasideCoalHarbourEb: {
+    id: "-S4iHoxKD60",
+    tlId: "gC5dHu-igNA",
+    date: new Date("Dec 04 2024"),
+    minutes: 7,
   },
   seasideCoalHarbourWb: {
     id: "95bsLG23jgA",
