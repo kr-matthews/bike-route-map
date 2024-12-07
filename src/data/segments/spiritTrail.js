@@ -4,7 +4,10 @@ import {
   EIGHTEENTH_BELLEVUE,
   LIONS_GATE_SPIRIT_TRAIL_E,
   LIONS_GATE_SPIRIT_TRAIL_W,
+  MACKAY_1ST_NW,
+  MACKAY_1ST_SW,
   THIRTEENTH_ARGYLE_W,
+  WHONOAK_WELCH_NW,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -236,7 +239,7 @@ export const SPIRIT_TRAIL = [
       [49.31797, -123.12265],
       [49.3179, -123.12237],
       [49.31786, -123.12216],
-      [49.31778, -123.12133],
+      WHONOAK_WELCH_NW,
       [49.3178, -123.12111],
       [49.31782, -123.12065],
       [49.31789, -123.12031],
@@ -285,7 +288,8 @@ export const SPIRIT_TRAIL = [
       [49.31799, -123.10361],
       [49.31801, -123.10349],
       [49.31822, -123.10254],
-      [49.31814, -123.10249],
+      MACKAY_1ST_NW,
+      MACKAY_1ST_SW,
       [49.31801, -123.10245],
       MACKAY_OVERPASS_START,
     ],

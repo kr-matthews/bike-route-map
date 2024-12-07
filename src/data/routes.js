@@ -32,6 +32,11 @@ export const VISIBLE = "In view (approx.)";
 export const ALL = "All";
 
 export const ROUTES = {
+  first2nd: {
+    name: "1st/2nd",
+    cities: [NORTH_VANCOUVER],
+    legs: [{ videos: {} }],
+  },
   third: {
     name: "3rd",
     cities: [VANCOUVER],
