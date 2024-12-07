@@ -57,6 +57,7 @@ import { EWEN } from "./ewen";
 import { FERGUSON } from "./ferguson";
 import { FERGUSON_PATH } from "./fergusonPath";
 import { FIRST_2ND } from "./first2nd";
+import { FORBES_ESPLANADE } from "./forbesEsplanade";
 import { FORTY_FIFTH } from "./fortyFifth";
 import { FOURTEENTH } from "./fourteenth";
 import { FOURTEENTH_GAP } from "./fourteenthGap";
@@ -266,6 +267,7 @@ export const SEGMENTS = [
   ...FERGUSON,
   ...FERGUSON_PATH,
   ...FIRST_2ND,
+  ...FORBES_ESPLANADE,
   ...FORTY_FIFTH,
   ...FOURTEENTH,
   ...FOURTEENTH_GAP,

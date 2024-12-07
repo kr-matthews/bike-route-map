@@ -8,8 +8,8 @@ import { VIDEOS } from "./videos";
 // Richmond: south dyke; ...and around steveston
 // YVR:
 // New Westminster:
-// North Vancouver: grand blvd; cotton/main/lower/esplanade/1st; 4th; keith; capilano; dollarton; mt seymour
-// West Vancouver: spirit trail alt.; caulfield+; ...more
+// North Vancouver: low level; cotton/main; 3rd/marine; 4th; bewicke greenway; chesterfield; st andrews; 3rd & grand blvd; keith; capilano; dollarton; mt seymour;
+// West Vancouver: spirit trail alt.; ...more
 // Surrey: scott rd; alex fraser; serpentine; timbers; fraser hwy;
 // Delta:
 
@@ -125,6 +125,11 @@ export const ROUTES = {
     name: "29th",
     cities: [VANCOUVER],
     legs: [{ videos: { westbound: VIDEOS.twentyNinthWb } }],
+  },
+  forbesEsplanade: {
+    name: "Forbes/Esplanade",
+    cities: [NORTH_VANCOUVER],
+    legs: [{ videos: {} }],
   },
   fortyFifth: {
     name: "45th",
