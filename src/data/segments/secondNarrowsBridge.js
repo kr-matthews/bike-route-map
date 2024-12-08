@@ -1,6 +1,8 @@
 import {
   CASSIAR_SKEENA_PATH,
   SECOND_NARROWS_BRIDGE_FELLOWS,
+  SECOND_NARROWS_NE,
+  SECOND_NARROWS_NW,
   SKEENA_SECOND_NARROWS_BRIDGE,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -8,66 +10,14 @@ import { VIDEOS } from "../videos";
 
 const NORTHBOUND_ELEVATION_START = [49.29164, -123.02605];
 const NORTHBOUND_ELEVATION_END = [49.30367, -123.02652];
-const NB_OFF_RAMP_END = [49.3049, -123.02496];
 
-const SB_ON_RAMP_START = [49.30454, -123.02984];
 const SOUTHBOUND_ELEVATION_START = [49.30352, -123.02681];
 const SOUTHBOUND_ELEVATION_END = [49.29163, -123.02637];
 
 const TUNNEL_SOUTH_END = [49.28839, -123.02824];
 const TUNNEL_NORTH_END = [49.28969, -123.02826];
 
-const BARROW_E = [49.30399, -123.02984];
-
 export const SECOND_NARROWS_BRIDGE = [
-  // north end
-  {
-    description: "main st path under highway",
-    type: "mixed",
-    videoIds: [VIDEOS.secondNarrowsNb.id],
-    positions: [
-      SB_ON_RAMP_START,
-      [49.30457, -123.03001],
-      [49.30464, -123.02998],
-      [49.30466, -123.02994],
-      [49.30467, -123.02988],
-      [49.30466, -123.02972],
-      [49.30466, -123.02938],
-      [49.30467, -123.02901],
-      [49.30474, -123.0279],
-      [49.30472, -123.02757],
-      [49.30474, -123.02711],
-      [49.3048, -123.02665],
-      [49.30483, -123.02623],
-      [49.30487, -123.02568],
-      [49.30492, -123.02548],
-      [49.30494, -123.02533],
-      [49.30496, -123.02514],
-      [49.30496, -123.02499],
-      NB_OFF_RAMP_END,
-    ],
-  },
-  {
-    description: "path to barrow st",
-    type: "mixed",
-    videoIds: [VIDEOS.secondNarrowsSb.id, VIDEOS.secondNarrowsNb.id],
-    positions: [BARROW_E, [49.30412, -123.02984], SB_ON_RAMP_START],
-  },
-  {
-    description: "barrow st",
-    type: "quiet",
-    videoIds: [VIDEOS.secondNarrowsSb.id, VIDEOS.secondNarrowsNb.id],
-    videoIdsStartAtStart: [VIDEOS.secondNarrowsSb.id],
-    videoIdsEndAtStart: [VIDEOS.secondNarrowsNb.id],
-    positions: [
-      [49.30579, -123.0342],
-      [49.30517, -123.0342],
-      [49.3046, -123.03209],
-      [49.30404, -123.02997],
-      BARROW_E,
-    ],
-  },
-
   // connections
   {
     description: "connection with fellowes",
@@ -169,7 +119,7 @@ export const SECOND_NARROWS_BRIDGE = [
       [49.30466, -123.02601],
       [49.30478, -123.0257],
       [49.30487, -123.02521],
-      NB_OFF_RAMP_END,
+      SECOND_NARROWS_NE,
     ],
   },
 
@@ -182,7 +132,7 @@ export const SECOND_NARROWS_BRIDGE = [
     elevation: 0.5,
     videoIds: [VIDEOS.secondNarrowsSb.id],
     positions: [
-      SB_ON_RAMP_START,
+      SECOND_NARROWS_NW,
       [49.30452, -123.02967],
       [49.3045, -123.0294],
       [49.3045, -123.02911],

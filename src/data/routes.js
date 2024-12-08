@@ -8,7 +8,7 @@ import { VIDEOS } from "./videos";
 // Richmond: south dyke; ...and around steveston
 // YVR:
 // New Westminster:
-// North Vancouver: cotton/main; 3rd/marine; 4th; bewicke greenway; chesterfield; st andrews; 3rd & grand blvd; keith; capilano; dollarton; mt seymour;
+// North Vancouver: 3rd/marine; 4th; misc connections; bewicke greenway; chesterfield; st andrews; 3rd & grand blvd; keith; capilano; dollarton; mt seymour;
 // West Vancouver: spirit trail alt.; ...more
 // Surrey: scott rd; alex fraser; serpentine; timbers; fraser hwy;
 // Delta:
@@ -1000,6 +1000,11 @@ export const ROUTES = {
     name: "Lynas Ln",
     cities: [RICHMOND],
     legs: [{ videos: { northbound: VIDEOS.lynasNb } }],
+  },
+  mainCotton: {
+    name: "Main St/Cotton Rd",
+    cities: [NORTH_VANCOUVER],
+    legs: [{ videos: {} }],
   },
   marineNw: {
     name: "NW Marine",
