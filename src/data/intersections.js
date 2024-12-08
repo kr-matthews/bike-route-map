@@ -323,6 +323,7 @@ export const FIFTEENTH_STRIDE = [49.21525, -122.94813];
 export const FIFTH_7TH = [49.21518, -122.92073];
 export const FIR_1ST_N = [49.27085, -123.14139];
 export const FIRST_AGNES = [49.20918, -122.90179];
+export const FORBES_3RD_SE = [49.31709, -123.08568];
 export const FORBES_3RD_SW = [49.31721, -123.08595];
 export const FOURTH_13TH = [49.22281, -122.92762];
 export const FOURTH_WILLIAMS_N = [49.1411, -123.18699];

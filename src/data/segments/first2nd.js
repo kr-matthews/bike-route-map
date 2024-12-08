@@ -98,6 +98,7 @@ export const FIRST_2ND = [
   {
     description: "2nd crossing 3rd",
     type: "mixed",
+    oneWay: "recommended",
     positions: [THIRD_2ND_N, THIRD_2ND_NW],
   },
   {

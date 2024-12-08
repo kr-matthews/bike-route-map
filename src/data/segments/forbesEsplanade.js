@@ -1,4 +1,5 @@
 import {
+  FORBES_3RD_SE,
   FORBES_3RD_SW,
   ST_ANDREWS_ESPLANADE_NE,
   ST_ANDREWS_ESPLANADE_SE,
@@ -96,7 +97,7 @@ export const FORBES_ESPLANADE = [
       [49.31655, -123.08576],
       [49.31667, -123.08574],
       [49.31703, -123.08572],
-      [49.31709, -123.08568],
+      FORBES_3RD_SE,
     ],
   },
 ];
