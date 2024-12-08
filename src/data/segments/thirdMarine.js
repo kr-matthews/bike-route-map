@@ -1,4 +1,5 @@
 import {
+  FORBES_3RD_N,
   FORBES_3RD_SE,
   FORBES_3RD_SW,
   THIRD_2ND_N,
@@ -63,7 +64,7 @@ export const THIRD_MARINE = [
     oneWay: "required",
     positions: [
       FORBES_3RD_NE,
-      [49.31739, -123.08587],
+      FORBES_3RD_N,
       [49.31745, -123.08601],
       [49.31804, -123.08737],
       [49.31865, -123.08878],

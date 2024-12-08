@@ -8,7 +8,7 @@ import { VIDEOS } from "./videos";
 // Richmond: south dyke; ...and around steveston
 // YVR:
 // New Westminster:
-// North Vancouver: 4th; misc connections; bewicke greenway; chesterfield; st andrews; 3rd & grand blvd; keith; capilano; dollarton; mt seymour;
+// North Vancouver: misc connections; bewicke greenway; chesterfield; st andrews; 3rd & grand blvd; keith; capilano; dollarton; mt seymour;
 // West Vancouver: spirit trail alt.; ...more
 // Surrey: scott rd; alex fraser; serpentine; timbers; fraser hwy;
 // Delta:
@@ -57,17 +57,10 @@ export const ROUTES = {
       },
     ],
   },
-  templeton: {
-    name: "Templeton St",
-    cities: [RICHMOND],
-    legs: [
-      {
-        videos: {
-          northbound: VIDEOS.templetonNb,
-          southbound: VIDEOS.templetonSb,
-        },
-      },
-    ],
+  fourthNV: {
+    name: "4th (N. Van.)",
+    cities: [NORTH_VANCOUVER],
+    legs: [{ videos: {} }],
   },
   tenth: {
     name: "10th",
@@ -1609,6 +1602,18 @@ export const ROUTES = {
     name: "Sunrise",
     cities: [VANCOUVER],
     legs: [{ videos: { northbound: VIDEOS.sunriseNb } }],
+  },
+  templeton: {
+    name: "Templeton St",
+    cities: [RICHMOND],
+    legs: [
+      {
+        videos: {
+          northbound: VIDEOS.templetonNb,
+          southbound: VIDEOS.templetonSb,
+        },
+      },
+    ],
   },
   terminalPath: {
     name: "Terminal Ave Path",

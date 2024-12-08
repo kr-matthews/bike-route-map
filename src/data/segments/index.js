@@ -62,6 +62,7 @@ import { FORTY_FIFTH } from "./fortyFifth";
 import { FOURTEENTH } from "./fourteenth";
 import { FOURTEENTH_GAP } from "./fourteenthGap";
 import { FOURTH } from "./fourth";
+import { FOURTH_NV } from "./fourthNV";
 import { FRANCES_UNION } from "./francesUnion";
 import { FRASER_FORESHORE } from "./fraserForeshoreTrail";
 import { FRASER_RIVER_TRAIL } from "./fraserRiverTrail";
@@ -275,6 +276,7 @@ export const SEGMENTS = [
   ...FOURTEENTH,
   ...FOURTEENTH_GAP,
   ...FOURTH,
+  ...FOURTH_NV,
   ...FRANCES_UNION,
   ...FRASER_FORESHORE,
   ...FRASER_RIVER_TRAIL,
