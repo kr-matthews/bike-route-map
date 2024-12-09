@@ -2,6 +2,7 @@ import {
   ARGYLE_14TH_E,
   ARGYLE_14TH_W,
   EIGHTEENTH_BELLEVUE,
+  GARDEN_SPIRIT_TRAIL,
   HEYWOOD_SPIRIT_NE,
   LIONS_GATE_SPIRIT_TRAIL_E,
   LIONS_GATE_SPIRIT_TRAIL_W,
@@ -36,6 +37,8 @@ const RIDGEWAY_1ST = [49.30688, -123.06265];
 const FIRST_2ND = [49.30753, -123.06148];
 const E_3RD_OVERPASS_WEST = [49.30834, -123.05099];
 const E_3RD_OVERPASS_EAST = [49.30862, -123.05059];
+const MOODY_2ND = [49.30756, -123.06031];
+const NEPTUNE_SPIRIT = [49.30834, -123.05118];
 
 export const SPIRIT_TRAIL = [
   {
@@ -43,6 +46,47 @@ export const SPIRIT_TRAIL = [
     type: "quiet",
     positions: [EIGHTEENTH_SPIRIT_TRAIL, EIGHTEENTH_BELLEVUE],
   },
+  {
+    description: "connection to queensbury/3rd",
+    type: "mixed",
+    positions: [
+      MOODY_2ND,
+      [49.30758, -123.06018],
+      [49.30762, -123.06008],
+      [49.30773, -123.06006],
+      [49.30782, -123.05995],
+      [49.30782, -123.05983],
+      [49.30784, -123.05973],
+      [49.30794, -123.05949],
+      [49.30796, -123.05939],
+      [49.30798, -123.05921],
+      [49.30797, -123.05893],
+      [49.30796, -123.05864],
+      [49.30795, -123.05817],
+      [49.30792, -123.05744],
+      [49.30794, -123.05724],
+      [49.30798, -123.05708],
+      [49.30807, -123.05701],
+      [49.30815, -123.05697],
+      [49.30822, -123.05699],
+      [49.30833, -123.0571],
+      [49.30836, -123.05711],
+    ],
+  },
+  {
+    description: "connection low level at neptune",
+    type: "mixed",
+    positions: [
+      [49.30784, -123.0528],
+      [49.30805, -123.0529],
+      [49.30816, -123.05229],
+      [49.30824, -123.05177],
+      [49.30828, -123.05133],
+      [49.3083, -123.05123],
+      NEPTUNE_SPIRIT,
+    ],
+  },
+
   {
     routeNames: [ROUTES.spiritTrail.name],
     description: "to 16th",
@@ -253,7 +297,7 @@ export const SPIRIT_TRAIL = [
       [49.31803, -123.11851],
       [49.31795, -123.1183],
       [49.31793, -123.11821],
-      [49.31793, -123.11811],
+      GARDEN_SPIRIT_TRAIL,
       [49.31797, -123.1176],
       [49.31797, -123.1173],
       [49.31787, -123.11661],
@@ -615,7 +659,7 @@ export const SPIRIT_TRAIL = [
       FIRST_2ND,
       [49.30753, -123.0604],
       [49.30754, -123.06034],
-      [49.30756, -123.06031],
+      MOODY_2ND,
       [49.30754, -123.06025],
       [49.30749, -123.06014],
       [49.30748, -123.06007],
@@ -640,7 +684,7 @@ export const SPIRIT_TRAIL = [
       [49.30826, -123.05308],
       [49.3083, -123.05244],
       [49.30832, -123.05179],
-      [49.30834, -123.05119],
+      NEPTUNE_SPIRIT,
       E_3RD_OVERPASS_WEST,
     ],
   },

@@ -1,4 +1,5 @@
 import {
+  GARDEN_SPIRIT_TRAIL,
   MACKAY_1ST_NW,
   MACKAY_1ST_SW,
   THIRD_2ND_N,
@@ -9,8 +10,23 @@ import {
 import { ROUTES } from "../routes";
 
 const WHONOAK_WELCH_SW = [49.31766, -123.12133];
+const GARDEN_WELCH_SW = [49.31759, -123.11844];
+const GARDEN_WELCH_NE = [49.31767, -123.11833];
 
 export const FIRST_2ND = [
+  {
+    description: "spirit <-> 1st/2nd @ garden",
+    type: "mixed",
+    positions: [
+      GARDEN_WELCH_SW,
+      GARDEN_WELCH_NE,
+      [49.31776, -123.11831],
+      [49.31786, -123.11826],
+      GARDEN_SPIRIT_TRAIL,
+    ],
+  },
+
+  // eb
   {
     routeNames: [ROUTES.first2nd.name],
     description: "crossing welch at west end",
@@ -19,8 +35,6 @@ export const FIRST_2ND = [
     hideArrows: true,
     positions: [WHONOAK_WELCH_NW, WHONOAK_WELCH_SW],
   },
-
-  // eb
   {
     routeNames: [ROUTES.first2nd.name],
     description: "eb painted",
@@ -35,7 +49,7 @@ export const FIRST_2ND = [
       [49.31764, -123.11905],
       [49.31763, -123.11854],
       [49.31761, -123.11848],
-      [49.31759, -123.11844],
+      GARDEN_WELCH_SW,
       [49.31755, -123.11842],
       [49.3168, -123.11844],
       [49.31671, -123.11844],
@@ -160,7 +174,7 @@ export const FIRST_2ND = [
       [49.3169, -123.11832],
       [49.3176, -123.1183],
       [49.31764, -123.11831],
-      [49.31767, -123.11833],
+      GARDEN_WELCH_NE,
       [49.31771, -123.11839],
       [49.31773, -123.11848],
       [49.31773, -123.11872],

@@ -8,7 +8,7 @@ import { VIDEOS } from "./videos";
 // Richmond: south dyke; ...and around steveston
 // YVR:
 // New Westminster:
-// North Vancouver: misc connections; bewicke greenway; chesterfield; st andrews; 3rd & grand blvd; keith; capilano; dollarton; mt seymour;
+// North Vancouver: bewicke greenway; chesterfield; st andrews; 3rd & grand blvd; keith; capilano; dollarton; mt seymour;
 // West Vancouver: spirit trail alt.; ...more
 // Surrey: scott rd; alex fraser; serpentine; timbers; fraser hwy;
 // Delta:
