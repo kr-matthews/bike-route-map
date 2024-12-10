@@ -822,6 +822,11 @@ const VIDEOS = {
     date: new Date("Apr 26 2024"),
     minutes: 4,
   },
+  lostLagoonWb: {
+    id: "KGC7_K9_AZg",
+    date: new Date("Dec 06 2024"),
+    minutes: 4,
+  },
   lynasNb: {
     id: "pBcl3VMVQMQ",
     date: new Date("May 14 2024"),
@@ -1186,6 +1191,12 @@ const VIDEOS = {
     id: "wSwMTjMlKt4",
     date: new Date("Aug 19 2023"),
     minutes: 3,
+  },
+  seasideBypassBeachEb: {
+    id: "YSaFqtytCxY",
+    tlId: "3g6SI6Fq0FM",
+    date: new Date("Dec 06 2024"),
+    minutes: 8,
   },
   seasideBypassBeachWb: {
     id: "s1r-J3Bu20s",

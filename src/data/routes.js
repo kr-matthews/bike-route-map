@@ -1468,7 +1468,13 @@ export const ROUTES = {
     name: "Seaside Bypass",
     cities: [VANCOUVER],
     legs: [
-      { name: "Beach", videos: { westbound: VIDEOS.seasideBypassBeachWb } },
+      {
+        name: "Beach",
+        videos: {
+          eastbound: VIDEOS.seasideBypassBeachEb,
+          westbound: VIDEOS.seasideBypassBeachWb,
+        },
+      },
       {
         name: "Pacific/Expo",
         videos: {
@@ -1589,7 +1595,10 @@ export const ROUTES = {
       },
       {
         name: "Lost Lagoon",
-        videos: { counterclockwise: VIDEOS.lostLagoonEb },
+        videos: {
+          eastbound: VIDEOS.lostLagoonEb,
+          westbound: VIDEOS.lostLagoonWb,
+        },
       },
     ],
   },
