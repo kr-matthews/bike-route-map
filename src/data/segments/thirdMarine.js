@@ -7,6 +7,7 @@ import {
   THIRD_2ND_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const FORBES_3RD_NE = [49.31724, -123.08562];
 
@@ -24,6 +25,8 @@ export const THIRD_MARINE = [
     description: "eb",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [VIDEOS.first2ndEb.id],
+    videoIdsEndAtEnd: [VIDEOS.first2ndEb.id],
     positions: [
       THIRD_2ND_S,
       [49.31887, -123.08971],
@@ -50,6 +53,8 @@ export const THIRD_MARINE = [
     description: "wb forbes crossing 3rd",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [VIDEOS.forbesEsplanadeWb.id],
+    videoIdsEndAtEnd: [VIDEOS.forbesEsplanadeWb.id],
     positions: [
       FORBES_3RD_SE,
       [49.31709, -123.08563],
@@ -59,11 +64,19 @@ export const THIRD_MARINE = [
   },
   {
     routeNames: [ROUTES.thirdMarine.name],
+    description: "wb: half-crossing forbes",
+    type: "painted",
+    oneWay: "required",
+    hideArrows: true,
+    positions: [FORBES_3RD_NE, FORBES_3RD_N],
+  },
+  {
+    routeNames: [ROUTES.thirdMarine.name],
     description: "wb: forbes to 2nd",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.first2ndWb.id],
     positions: [
-      FORBES_3RD_NE,
       FORBES_3RD_N,
       [49.31745, -123.08601],
       [49.31804, -123.08737],

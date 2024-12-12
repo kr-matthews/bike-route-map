@@ -20,6 +20,8 @@ export const MAIN_COTTON = [
     description: "eb protected",
     type: "comfortable", // mostly dedicated, except the end
     oneWay: "required",
+    videoIds: [VIDEOS.mainCottonEb.id],
+    videoIdsStartAtStart: [VIDEOS.mainCottonEb.id],
     positions: [
       LOW_LEVEL_COTTON_S,
       [49.30821, -123.04665],
@@ -46,6 +48,7 @@ export const MAIN_COTTON = [
     description: "eb painted",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.mainCottonEb.id],
     positions: [
       COTTON_MAIN_S,
       [49.30686, -123.03931],
@@ -68,6 +71,7 @@ export const MAIN_COTTON = [
     description: "wb dedicated",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.mainCottonWb.id],
     positions: [
       HARBOUR_MAIN_S,
       [49.30568, -123.03413],
@@ -86,6 +90,8 @@ export const MAIN_COTTON = [
     description: "wb painted",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.mainCottonWb.id],
+    videoIdsEndAtEnd: [VIDEOS.mainCottonWb.id],
     positions: [
       COTTON_MAIN_N,
       [49.30684, -123.03846],
@@ -115,7 +121,12 @@ export const MAIN_COTTON = [
     routeNames: [ROUTES.mainCotton.name],
     description: "harbour & barrow",
     type: "quiet",
-    videoIds: [VIDEOS.secondNarrowsSb.id, VIDEOS.secondNarrowsNb.id],
+    videoIds: [
+      VIDEOS.mainCottonWb.id,
+      VIDEOS.mainCottonEb.id,
+      VIDEOS.secondNarrowsSb.id,
+      VIDEOS.secondNarrowsNb.id,
+    ],
     videoIdsStartAtStart: [VIDEOS.secondNarrowsSb.id],
     videoIdsEndAtStart: [VIDEOS.secondNarrowsNb.id],
     positions: [
@@ -130,7 +141,14 @@ export const MAIN_COTTON = [
     routeNames: [ROUTES.mainCotton.name],
     description: "path from barrow to main",
     type: "mixed",
-    videoIds: [VIDEOS.secondNarrowsSb.id, VIDEOS.secondNarrowsNb.id],
+    videoIds: [
+      VIDEOS.mainCottonWb.id,
+      VIDEOS.mainCottonEb.id,
+      VIDEOS.secondNarrowsSb.id,
+      VIDEOS.secondNarrowsNb.id,
+    ],
+    videoIdsStartAtEnd: [VIDEOS.mainCottonWb.id],
+    videoIdsEndAtEnd: [VIDEOS.mainCottonEb.id],
     positions: [BARROW_E, [49.30412, -123.02984], SECOND_NARROWS_NW],
   },
   {

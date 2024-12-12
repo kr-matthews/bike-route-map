@@ -33,9 +33,13 @@ export const ALL = "All";
 
 export const ROUTES = {
   first2nd: {
-    name: "1st/2nd",
+    name: "1st/2nd St",
     cities: [NORTH_VANCOUVER],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: { eastbound: VIDEOS.first2ndEb, westbound: VIDEOS.first2ndWb },
+      },
+    ],
   },
   thirdMarine: {
     name: "3rd/Marine",
@@ -58,9 +62,9 @@ export const ROUTES = {
     ],
   },
   fourthNV: {
-    name: "4th (N. Van.)",
+    name: "4th St",
     cities: [NORTH_VANCOUVER],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { westbound: VIDEOS.fourthNVWb } }],
   },
   tenth: {
     name: "10th",
@@ -128,7 +132,14 @@ export const ROUTES = {
   forbesEsplanade: {
     name: "Forbes/Esplanade",
     cities: [NORTH_VANCOUVER],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.forbesEsplanadeEb,
+          westbound: VIDEOS.forbesEsplanadeWb,
+        },
+      },
+    ],
   },
   fortyFifth: {
     name: "45th",
@@ -993,7 +1004,11 @@ export const ROUTES = {
   lowLevel: {
     name: "Low Level Rd",
     cities: [NORTH_VANCOUVER],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: { eastbound: VIDEOS.lowLevelEb, westbound: VIDEOS.lowLevelWb },
+      },
+    ],
   },
   lynas: {
     name: "Lynas Ln",
@@ -1003,7 +1018,14 @@ export const ROUTES = {
   mainCotton: {
     name: "Main St/Cotton Rd",
     cities: [NORTH_VANCOUVER],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.mainCottonEb,
+          westbound: VIDEOS.mainCottonWb,
+        },
+      },
+    ],
   },
   marineNw: {
     name: "NW Marine",

@@ -8,10 +8,12 @@ import {
   WHONOAK_WELCH_NW,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const WHONOAK_WELCH_SW = [49.31766, -123.12133];
 const GARDEN_WELCH_SW = [49.31759, -123.11844];
 const GARDEN_WELCH_NE = [49.31767, -123.11833];
+const BEWICKE_2ND_NE = [49.31911, -123.09145];
 
 export const FIRST_2ND = [
   {
@@ -40,6 +42,8 @@ export const FIRST_2ND = [
     description: "eb painted",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.first2ndEb.id],
+    videoIdsStartAtStart: [VIDEOS.first2ndEb.id],
     positions: [
       WHONOAK_WELCH_SW,
       [49.31766, -123.12111],
@@ -83,6 +87,7 @@ export const FIRST_2ND = [
     description: "eb protected",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.first2ndEb.id],
     positions: [
       MACKAY_1ST_SW,
       [49.31805, -123.1022],
@@ -113,17 +118,25 @@ export const FIRST_2ND = [
     description: "2nd crossing 3rd",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [VIDEOS.first2ndWb.id],
     positions: [THIRD_2ND_N, THIRD_2ND_NW],
+  },
+  {
+    routeNames: [ROUTES.first2nd.name],
+    description: "wb: 3rd to bewicke",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [VIDEOS.first2ndWb.id],
+    positions: [THIRD_2ND_NW, [49.3191, -123.09018], BEWICKE_2ND_NE],
   },
   {
     routeNames: [ROUTES.first2nd.name],
     description: "wb protected",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.first2ndWb.id],
     positions: [
-      THIRD_2ND_NW,
-      [49.3191, -123.09018],
-      [49.31911, -123.09145],
+      BEWICKE_2ND_NE,
       [49.31912, -123.09216],
       [49.31912, -123.09234],
       [49.31911, -123.09245],
@@ -148,6 +161,8 @@ export const FIRST_2ND = [
     description: "wb painted",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.first2ndWb.id],
+    videoIdsEndAtEnd: [VIDEOS.first2ndWb.id],
     positions: [
       MACKAY_1ST_NW,
       [49.31817, -123.10262],

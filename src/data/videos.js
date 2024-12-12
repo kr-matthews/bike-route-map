@@ -474,6 +474,28 @@ const VIDEOS = {
     date: new Date("Nov 6 2024"),
     minutes: 6,
   },
+  first2ndEb: {
+    id: "oJErMLWpOTo",
+    tlId: "rrV158dtxus",
+    date: new Date("Dec 05 2024"),
+    minutes: 8,
+  },
+  first2ndWb: {
+    id: "-8BiNn6j13c",
+    tlId: "dAvr52qPaMA",
+    date: new Date("Dec 05 2024"),
+    minutes: 9,
+  },
+  forbesEsplanadeEb: {
+    id: "daCRniWljsk",
+    date: new Date("Dec 05 2024"),
+    minutes: 5,
+  },
+  forbesEsplanadeWb: {
+    id: "xrlY6a6y06E",
+    date: new Date("Dec 08 2024"),
+    minutes: 6,
+  },
   fortyFifthEb: {
     id: "KMAAeyfUP5I",
     tlId: "EBiR-jX7-mM",
@@ -522,6 +544,12 @@ const VIDEOS = {
     id: "bqaBcFmC218",
     date: new Date("Mar 06 2024"),
     minutes: 9,
+  },
+  fourthNVWb: {
+    id: "pb5h8D29YS0",
+    tlId: "VPL9-6sYwfM",
+    date: new Date("Dec 05 2024"),
+    minutes: 12,
   },
   francesUnionWb: {
     id: "p9veS9P-MzM",
@@ -827,10 +855,30 @@ const VIDEOS = {
     date: new Date("Dec 06 2024"),
     minutes: 4,
   },
+  lowLevelEb: {
+    id: "zQ5Jbj5hBNw",
+    date: new Date("Dec 05 2024"),
+    minutes: 5,
+  },
+  lowLevelWb: {
+    id: "HHam7CANr-E",
+    date: new Date("Dec 08 2024"),
+    minutes: 5,
+  },
   lynasNb: {
     id: "pBcl3VMVQMQ",
     date: new Date("May 14 2024"),
     minutes: 5,
+  },
+  mainCottonEb: {
+    id: "MaXrRoS8MUg",
+    date: new Date("Dec 05 2024"),
+    minutes: 4,
+  },
+  mainCottonWb: {
+    id: "7fbMQhvSEsM",
+    date: new Date("Dec 05 2024"),
+    minutes: 8,
   },
   masumiMitsuiEb: {
     id: "QVK6E_hmQFc",
