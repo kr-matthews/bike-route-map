@@ -5,6 +5,7 @@ import {
   THIRD_2ND_N,
   THIRD_2ND_NW,
   THIRD_2ND_S,
+  BEWICKE_THIRD_NE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -95,7 +96,7 @@ export const THIRD_MARINE = [
       THIRD_2ND_N,
       [49.31936, -123.09022],
       [49.3197, -123.09075],
-      [49.31993, -123.09112],
+      BEWICKE_THIRD_NE,
     ],
   },
 ];

@@ -1,6 +1,8 @@
 import {
   ARGYLE_14TH_E,
   ARGYLE_14TH_W,
+  BEWICKE_SPIRIT_N,
+  BEWICKE_SPIRIT_S,
   EIGHTEENTH_BELLEVUE,
   GARDEN_SPIRIT_TRAIL,
   HEYWOOD_SPIRIT_NE,
@@ -474,16 +476,30 @@ export const SPIRIT_TRAIL = [
   },
   {
     routeNames: [ROUTES.spiritTrail.name],
-    description: "harbourside construction to mahon",
+    description: "harbourside construction to bewicke",
     type: "comfortable",
     videoIds: [VIDEOS.spiritTrailEb.id],
     positions: [
       GOSTICK_HARBOURSIDE,
       [49.31453, -123.09267],
       [49.31454, -123.09261],
-      [49.31452, -123.09183],
-      [49.31455, -123.09178],
-      [49.31466, -123.09178],
+      BEWICKE_SPIRIT_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.spiritTrail.name, ROUTES.bewickeGreenway.name],
+    description: "bewicke overlap",
+    type: "mixed",
+    videoIds: [VIDEOS.spiritTrailEb.id],
+    positions: [BEWICKE_SPIRIT_S, [49.31455, -123.09178], BEWICKE_SPIRIT_N],
+  },
+  {
+    routeNames: [ROUTES.spiritTrail.name],
+    description: "bewicke to mahon",
+    type: "comfortable",
+    videoIds: [VIDEOS.spiritTrailEb.id],
+    positions: [
+      BEWICKE_SPIRIT_N,
       [49.31465, -123.09152],
       [49.31454, -123.09109],
       [49.31449, -123.09072],

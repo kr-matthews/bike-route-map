@@ -129,18 +129,6 @@ export const ROUTES = {
     cities: [VANCOUVER],
     legs: [{ videos: { westbound: VIDEOS.twentyNinthWb } }],
   },
-  forbesEsplanade: {
-    name: "Forbes/Esplanade",
-    cities: [NORTH_VANCOUVER],
-    legs: [
-      {
-        videos: {
-          eastbound: VIDEOS.forbesEsplanadeEb,
-          westbound: VIDEOS.forbesEsplanadeWb,
-        },
-      },
-    ],
-  },
   fortyFifth: {
     name: "45th",
     cities: [VANCOUVER],
@@ -298,6 +286,11 @@ export const ROUTES = {
     name: "Bellevue Ave",
     cities: [WEST_VANCOUVER],
     legs: [{ videos: { westbound: VIDEOS.bellevueWb } }],
+  },
+  bewickeGreenway: {
+    name: "Bewicke Greenway",
+    cities: [NORTH_VANCOUVER],
+    legs: [{ videos: {} }],
   },
   bigBendPath: {
     name: "Big Bend Path",
@@ -669,6 +662,18 @@ export const ROUTES = {
     name: "Ferguson Rd Path",
     cities: [RICHMOND],
     legs: [{ videos: { westbound: VIDEOS.fergusonPathWb } }],
+  },
+  forbesEsplanade: {
+    name: "Forbes/Esplanade",
+    cities: [NORTH_VANCOUVER],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.forbesEsplanadeEb,
+          westbound: VIDEOS.forbesEsplanadeWb,
+        },
+      },
+    ],
   },
   francesUnion: {
     name: "Frances Union",
