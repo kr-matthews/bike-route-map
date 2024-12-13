@@ -102,6 +102,10 @@ function Route({ route, mapRef }) {
   );
   const nameDistanceVideoCountMessages = [
     route.name,
+    route.cities.join(", "),
+    route.isIncomplete
+      ? "**Note: Route shown on map may be incomplete.**"
+      : null,
     displayDistance(distance),
     videoCount ? `${videoCount} video${videoCount === 1 ? "" : "s"}` : null,
     "Click for details & videos",

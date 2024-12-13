@@ -109,8 +109,10 @@ export default function RouteDetail({ mapRef }) {
         <div style={{ overflow: "auto" }}>
           {isIncomplete && (
             <p style={{ paddingLeft: "1em", paddingRight: "1em" }}>
-              Note: The data for this route is incomplete and may extend further
-              than is currently drawn on the map.
+              <em>
+                Note: The data for this route is incomplete and may extend
+                further than is currently drawn on the map.
+              </em>
             </p>
           )}
           {isGap && (
