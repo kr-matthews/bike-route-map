@@ -92,6 +92,7 @@ function Route({ route, mapRef }) {
 
   const background = getBackgroundColor(route, isHighlighted);
   const displayName = route.shortName ?? route.name;
+  const city = route.cities.length < 2 ? route.cities[0] : "Multiple Regions";
 
   const distance = route.isOneWay
     ? route.oneWayDistance
@@ -125,8 +126,8 @@ function Route({ route, mapRef }) {
         width: "10em",
         background,
         borderRadius: "10px",
-        padding: "6px 0",
-        margin: "5px 0",
+        padding: "4px 0",
+        margin: "3px 0",
         cursor: "pointer",
       }}
       onMouseOver={() => highlightRoute(route.name)}
@@ -141,14 +142,22 @@ function Route({ route, mapRef }) {
           : undefined
       }
     >
-      <span
+      <div
         style={{
           fontWeight: isSelected ? "bold" : "",
           color: isHighlighted ? BLACK : WHITE,
         }}
       >
         {isSelected ? <u>{displayName}</u> : displayName}
-      </span>
+      </div>
+      <div
+        style={{
+          fontSize: "67%",
+          color: isHighlighted ? BLACK : WHITE,
+        }}
+      >
+        {city}
+      </div>
     </div>
   );
 }
