@@ -1379,6 +1379,12 @@ const VIDEOS = {
     date: new Date("May 09 2024"),
     minutes: 18,
   },
+  spiritTrailEb: {
+    id: "UqpR8zOPDuQ",
+    tlId: "PYdTvuyIhxc",
+    date: new Date("Dec 08 2024"),
+    minutes: 36,
+  },
   stevestonEb: {
     id: "ryKwp-INnrI",
     date: new Date("Apr 13 2024"),

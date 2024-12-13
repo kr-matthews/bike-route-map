@@ -1604,7 +1604,7 @@ export const ROUTES = {
   spiritTrail: {
     name: "Spirit Trail",
     cities: [WEST_VANCOUVER, NORTH_VANCOUVER],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.spiritTrailEb } }],
   },
   stanleyParkLoop: {
     name: "Stanley Park Loop",
