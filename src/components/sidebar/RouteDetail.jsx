@@ -6,6 +6,7 @@ import { displayDistance, displayPercent } from "../../utils/strings";
 import { TYPES } from "../../utils/segmentTypes";
 import CloseIcon from "../icons/CloseIcon";
 import ZoomToIcon from "../icons/ZoomToIcon";
+import warningIcon from "../../images/warning.svg";
 
 export default function RouteDetail({ mapRef }) {
   const { selectedRoute, selectRoute, highlightRoute } =
@@ -109,6 +110,11 @@ export default function RouteDetail({ mapRef }) {
         <div style={{ overflow: "auto" }}>
           {isIncomplete && (
             <p style={{ paddingLeft: "1em", paddingRight: "1em" }}>
+              <img
+                src={warningIcon}
+                alt="incomplete"
+                style={{ height: "1em" }}
+              />{" "}
               <em>
                 Note: The data for this route is incomplete and may extend
                 further than is currently drawn on the map.

@@ -17,6 +17,7 @@ import {
 import { ALL, VISIBLE } from "../../data/routes";
 import { ListTypeDropdown } from "./ListTypeDropdown";
 import useSavedState from "../../hooks/useSavedState";
+import warningIcon from "../../images/warning.svg";
 
 export default function Routes({ navigateTo, mapRef }) {
   const [searchText, setSearchText] = useState("");
@@ -129,6 +130,7 @@ function Route({ route, mapRef }) {
         padding: "4px 0",
         margin: "3px 0",
         cursor: "pointer",
+        position: "relative",
       }}
       onMouseOver={() => highlightRoute(route.name)}
       onMouseOut={() => highlightRoute(null)}
@@ -158,6 +160,13 @@ function Route({ route, mapRef }) {
       >
         {city}
       </div>
+      {route.isIncomplete && (
+        <img
+          src={warningIcon}
+          alt="incomplete"
+          style={{ position: "absolute", right: 4, bottom: 4, height: "0.8em" }}
+        />
+      )}
     </div>
   );
 }
