@@ -116,7 +116,7 @@ export default function About({ navigateTo }) {
               description="City of Vancouver Cycling Map"
             />
             <Link
-              url="https://www.translink.ca/-/media/translink/documents/rider-guide/cycling/2021-cycling-maps/tl-cyclerouteseastwest_v2021web.pdf"
+              url="https://www.translink.ca/-/media/translink/documents/rider-guide/cycling/2024-cycling-maps/tl-west_v2024_01.pdf"
               image={mapIcon}
               description="TransLink Cycling Map"
             />
