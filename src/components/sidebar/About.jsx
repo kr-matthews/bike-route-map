@@ -58,14 +58,15 @@ export default function About({ navigateTo }) {
           </ul>
         </ul>
         <p>
-          This is a map of bike routes in and around Vancouver. All bike routes
-          in <b>Vancouver</b> are included. Most (but not necessarily all) bike
-          routes in <b>UBC</b>, <b>Richmond</b>, <b>Burnaby</b>, and{" "}
-          <b>New Westminster</b>, are included. A few routes in adjacent regions
-          (North Vancouver, Port Coquitlam, Pitt Meadows, Surrey, etc.) are
-          included. But there are plenty more bike routes (and other instances
-          of bike infrastructure) that are not shown on this map. More routes
-          may be added over time.
+          This is a map of bike routes in and around Vancouver. All routes in{" "}
+          <b>Vancouver</b> are included. Most (but not necessarily all) routes
+          in <b>UBC</b>, <b>Richmond</b>, <b>Burnaby</b>, and{" "}
+          <b>New Westminster</b> are included. Many routes in{" "}
+          <b>West Vancouver</b> and <b>North Vancouver</b> are included, but
+          many more are not. A few routes in adjacent regions (Port Coquitlam,
+          Port Moody, Pitt Meadows, Surrey, etc.) are included. But there are
+          plenty more routes (and other instances of bike infrastructure) that
+          are not shown on this map. More routes may be added over time.
         </p>
         <p>
           When played, videos have chapters to make it easy to find a specific
