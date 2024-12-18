@@ -107,6 +107,7 @@ import { LONDON_DUBLIN_GREENWAY } from "./londonDublin";
 import { LOUGHEED } from "./lougheed";
 import { LOW_LEVEL } from "./lowLevel";
 import { LYNAS } from "./lynas";
+import { MACKAY } from "./mackay";
 import { MAIN_COTTON } from "./mainCotton";
 import { MARINE } from "./marine";
 import { MARINE_DR } from "./marineDr";
@@ -323,6 +324,7 @@ export const SEGMENTS = [
   ...LOUGHEED,
   ...LOW_LEVEL,
   ...LYNAS,
+  ...MACKAY,
   ...MAIN_COTTON,
   ...MARINE,
   ...MARINE_DR,

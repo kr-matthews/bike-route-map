@@ -1020,6 +1020,11 @@ export const ROUTES = {
     cities: [RICHMOND],
     legs: [{ videos: { northbound: VIDEOS.lynasNb } }],
   },
+  mackay: {
+    name: "MacKay",
+    cities: [NORTH_VANCOUVER],
+    legs: [{ videos: {} }],
+  },
   mainCotton: {
     name: "Main St/Cotton Rd",
     cities: [NORTH_VANCOUVER],
