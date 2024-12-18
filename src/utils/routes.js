@@ -11,6 +11,10 @@ export function getRoute(name) {
   );
 }
 
+export function routeIsIncomplete(name) {
+  return getRoute(name).isIncomplete;
+}
+
 export function getRouteBounds(routeName) {
   const routeSegments = SEGMENTS.filter(({ routeNames }) =>
     (routeNames ?? []).includes(routeName)
