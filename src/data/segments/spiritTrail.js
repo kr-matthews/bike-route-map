@@ -446,7 +446,6 @@ export const SPIRIT_TRAIL = [
     ],
   },
   {
-    routeNames: [ROUTES.spiritTrail.name],
     description: "harbourside construction detour 1",
     type: "other",
     undesignated: true,
@@ -462,7 +461,6 @@ export const SPIRIT_TRAIL = [
     ],
   },
   {
-    routeNames: [ROUTES.spiritTrail.name],
     description: "harbourside construction detour 2",
     type: "shared",
     undesignated: true,
