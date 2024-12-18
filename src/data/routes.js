@@ -8,7 +8,7 @@ import { VIDEOS } from "./videos";
 // Richmond: south dyke; ...and around steveston
 // YVR:
 // New Westminster:
-// North Vancouver: bewicke greenway; chesterfield; st andrews; 3rd & grand blvd; keith; capilano; dollarton; mt seymour;
+// North Vancouver: chesterfield; st andrews; 3rd & grand blvd; keith; capilano; dollarton; mt seymour;
 // West Vancouver: spirit trail alt.; ...more
 // Surrey: scott rd; alex fraser; serpentine; timbers; fraser hwy;
 // Delta:
@@ -1638,6 +1638,11 @@ export const ROUTES = {
     name: "Sunrise",
     cities: [VANCOUVER],
     legs: [{ videos: { northbound: VIDEOS.sunriseNb } }],
+  },
+  tatlow: {
+    name: "Tatlow",
+    cities: [NORTH_VANCOUVER],
+    legs: [{ videos: {} }],
   },
   templeton: {
     name: "Templeton St",

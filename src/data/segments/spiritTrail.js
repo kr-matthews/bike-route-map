@@ -12,6 +12,7 @@ import {
   MACKAY_1ST_SW,
   ST_ANDREWS_ESPLANADE_NE,
   ST_ANDREWS_ESPLANADE_SE,
+  TATLOW_SPIRIT,
   THIRTEENTH_ARGYLE_W,
   WHONOAK_WELCH_NW,
 } from "../intersections";
@@ -309,7 +310,7 @@ export const SPIRIT_TRAIL = [
       [49.31795, -123.1183],
       [49.31793, -123.11821],
       GARDEN_SPIRIT_TRAIL,
-      [49.31797, -123.1176],
+      TATLOW_SPIRIT,
       [49.31797, -123.1173],
       [49.31787, -123.11661],
       [49.31786, -123.11642],

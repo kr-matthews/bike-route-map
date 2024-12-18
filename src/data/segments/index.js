@@ -178,6 +178,7 @@ import { ST_JOHNS } from "./stJohns";
 import { STANLEY_PARK_LOOP } from "./stanleyPark";
 import { STEVESTON_HWY } from "./stevestonHwy";
 import { SUNRISE } from "./sunrise";
+import { TATLOW } from "./tatlow";
 import { TEMPLETON } from "./templeton";
 import { TENTH } from "./tenth";
 import { TERMINAL_PATH } from "./terminalPath";
@@ -299,7 +300,6 @@ export const SEGMENTS = [
   ...HEATHER,
   ...HIGHBURY,
   ...HIGHLAND_PARK_LINE,
-  ...TRANS_CANADA_HWY,
   ...HILLCREST,
   ...HOMER,
   ...HORNBY,
@@ -394,6 +394,7 @@ export const SEGMENTS = [
   ...STANLEY_PARK_LOOP,
   ...STEVESTON_HWY,
   ...SUNRISE,
+  ...TATLOW,
   ...TEMPLETON,
   ...TENTH,
   ...TERMINAL_PATH,
@@ -401,6 +402,7 @@ export const SEGMENTS = [
   ...THIRD_MARINE,
   ...THUNDERBIRD,
   ...TRANS_CANADA,
+  ...TRANS_CANADA_HWY,
   ...TWENTY_NINTH,
   ...TWENTY_SECOND,
   ...UNIVERSITY,
