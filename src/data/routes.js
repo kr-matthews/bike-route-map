@@ -100,6 +100,11 @@ export const ROUTES = {
     cities: [VANCOUVER],
     legs: [{ videos: { westbound: VIDEOS.fourteenthGapWb } }],
   },
+  fifteenth: {
+    name: "15th St",
+    cities: [NORTH_VANCOUVER],
+    legs: [{ videos: {} }],
+  },
   sixteenth: {
     name: "16th Ave",
     cities: [UBC],

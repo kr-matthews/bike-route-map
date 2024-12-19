@@ -57,6 +57,7 @@ import { EDMONDS } from "./edmonds";
 import { EWEN } from "./ewen";
 import { FERGUSON } from "./ferguson";
 import { FERGUSON_PATH } from "./fergusonPath";
+import { FIFTEENTH } from "./fifteenth";
 import { FIRST_2ND } from "./first2nd";
 import { FORBES_ESPLANADE } from "./forbesEsplanade";
 import { FORTY_FIFTH } from "./fortyFifth";
@@ -274,6 +275,7 @@ export const SEGMENTS = [
   ...EWEN,
   ...FERGUSON,
   ...FERGUSON_PATH,
+  ...FIFTEENTH,
   ...FIRST_2ND,
   ...FORBES_ESPLANADE,
   ...FORTY_FIFTH,
