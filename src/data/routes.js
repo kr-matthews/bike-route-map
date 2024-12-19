@@ -8,7 +8,7 @@ import { VIDEOS } from "./videos";
 // Richmond: south dyke; ...and around steveston
 // YVR:
 // New Westminster:
-// North Vancouver: chesterfield; st andrews; 3rd & grand blvd; keith; capilano; dollarton; mt seymour;
+// North Vancouver: lions gate village; chesterfield; 3rd & grand blvd; keith; capilano; dollarton; mt seymour;
 // West Vancouver: spirit trail alt.; ...more
 // Surrey: scott rd; alex fraser; serpentine; timbers; fraser hwy;
 // Delta:
@@ -1447,6 +1447,12 @@ export const ROUTES = {
         },
       },
     ],
+  },
+  stAndrews: {
+    name: "St Andrews Ave",
+    isIncomplete: true,
+    cities: [NORTH_VANCOUVER],
+    legs: [{ videos: {} }],
   },
   stJohns: {
     name: "Saint Johns St Path",

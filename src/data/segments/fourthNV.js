@@ -3,6 +3,7 @@ import {
   FORBES_3RD_SE,
   FORBES_3RD_SW,
   HEYWOOD_SPIRIT_NE,
+  ST_ANDREWS_4TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -49,7 +50,7 @@ export const FOURTH_NV = [
       [49.31557, -123.07934],
       [49.31422, -123.07628],
       [49.31289, -123.07319],
-      [49.31159, -123.07021],
+      ST_ANDREWS_4TH,
       [49.31028, -123.06721],
       [49.30976, -123.06603],
       [49.3096, -123.06566],

@@ -1,4 +1,5 @@
 import {
+  ESPLANADE_WB_MERGE,
   FORBES_3RD_SE,
   FORBES_3RD_SW,
   ST_ANDREWS_ESPLANADE_NE,
@@ -8,7 +9,6 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-const ESPLANADE_WB_MERGE = [49.3092, -123.07489];
 const ST_GEORGES_ESPLANADE_NW = [49.30988, -123.07655];
 
 export const FORBES_ESPLANADE = [

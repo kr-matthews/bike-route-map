@@ -176,6 +176,7 @@ import { SMITHE } from "./smithe";
 import { SOUTH_DYKE } from "./southDyke";
 import { SOUTHEAST } from "./southeast";
 import { SPIRIT_TRAIL } from "./spiritTrail";
+import { ST_ANDREWS } from "./stAndrews";
 import { ST_JOHNS } from "./stJohns";
 import { STANLEY_PARK_LOOP } from "./stanleyPark";
 import { STEVESTON_HWY } from "./stevestonHwy";
@@ -394,6 +395,7 @@ export const SEGMENTS = [
   ...SOUTH_DYKE,
   ...SOUTHEAST,
   ...SPIRIT_TRAIL,
+  ...ST_ANDREWS,
   ...ST_JOHNS,
   ...STANLEY_PARK_LOOP,
   ...STEVESTON_HWY,
