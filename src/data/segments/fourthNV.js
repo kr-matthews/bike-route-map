@@ -1,4 +1,6 @@
 import {
+  CHESTERFIELD_4TH_E,
+  CHESTERFIELD_4TH_W,
   FORBES_3RD_N,
   FORBES_3RD_SE,
   FORBES_3RD_SW,
@@ -46,8 +48,8 @@ export const FOURTH_NV = [
     positions: [
       FORBES_4TH,
       [49.31691, -123.08244],
-      [49.31561, -123.07947],
-      [49.31557, -123.07934],
+      CHESTERFIELD_4TH_W,
+      CHESTERFIELD_4TH_E,
       [49.31422, -123.07628],
       [49.31289, -123.07319],
       ST_ANDREWS_4TH,

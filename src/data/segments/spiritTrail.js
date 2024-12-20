@@ -3,6 +3,9 @@ import {
   ARGYLE_14TH_W,
   BEWICKE_SPIRIT_N,
   BEWICKE_SPIRIT_S,
+  CHESTERFIELD_CARRIE_CATES_NE,
+  CHESTERFIELD_CARRIE_CATES_SW,
+  CHESTERFIELD_CARRIE_CATES_W,
   EIGHTEENTH_BELLEVUE,
   GARDEN_SPIRIT_TRAIL,
   HEYWOOD_SPIRIT_NE,
@@ -35,7 +38,6 @@ const GOSTICK_HARBOURSIDE = [49.31449, -123.09279];
 const SPIRIT_MAHON_S = [49.31282, -123.08662];
 const SPIRIT_MAHON_N = [49.31321, -123.08622];
 const CARRIE_CATES_LANE_W = [49.31215, -123.08435];
-const CHESTERFIELD_CARRIE_CATES_SW = [49.31173, -123.0834];
 const QUAY_UNDERGROUND_WEST = [49.31148, -123.08236];
 const QUAY_UNDERGROUND_EAST = [49.31113, -123.08152];
 const SAINT_DAVIDS_ALDER_W = [49.30596, -123.06662];
@@ -561,20 +563,29 @@ export const SPIRIT_TRAIL = [
     description: "lane to chesterfield",
     type: "quiet",
     videoIds: [VIDEOS.spiritTrailEb.id],
-    positions: [CARRIE_CATES_LANE_W, CHESTERFIELD_CARRIE_CATES_SW],
+    positions: [CARRIE_CATES_LANE_W, CHESTERFIELD_CARRIE_CATES_W],
+  },
+  {
+    routeNames: [ROUTES.spiritTrail.name, ROUTES.chesterfield.name],
+    description: "chesterfield to quay",
+    type: "mixed",
+    videoIds: [VIDEOS.spiritTrailEb.id],
+    positions: [
+      CHESTERFIELD_CARRIE_CATES_W,
+      CHESTERFIELD_CARRIE_CATES_SW,
+      [49.31163, -123.0833],
+      [49.31164, -123.08321],
+      CHESTERFIELD_CARRIE_CATES_NE,
+    ],
   },
   {
     routeNames: [ROUTES.spiritTrail.name],
     description: "chesterfield to quay",
-    type: "comfortable",
+    type: "mixed",
     elevation: -0.5,
     videoIds: [VIDEOS.spiritTrailEb.id],
     positions: [
-      CHESTERFIELD_CARRIE_CATES_SW,
-      [49.31169, -123.08343],
-      [49.31163, -123.0833],
-      [49.31164, -123.08321],
-      [49.31175, -123.0831],
+      CHESTERFIELD_CARRIE_CATES_NE,
       [49.31161, -123.08278],
       [49.31161, -123.08266],
       QUAY_UNDERGROUND_WEST,

@@ -39,6 +39,7 @@ import { CENTRAL_PARK_PERIMETER_TRAIL } from "./centralParkPerimeterTrail";
 import { CENTRAL_VALLEY_GREENWAY } from "./centralValleyGreenway";
 import { CHAMPLAIN_HEIGHTS_GAP } from "./champlainHeightsGap";
 import { CHANCELLOR } from "./chancellor";
+import { CHESTERFIELD } from "./chesterfield";
 import { CHILCO } from "./chilco";
 import { COLUMBIA } from "./columbia";
 import { COMOX_HELMCKEN } from "./comoxHelmcken";
@@ -258,6 +259,7 @@ export const SEGMENTS = [
   ...CENTRAL_VALLEY_GREENWAY,
   ...CHAMPLAIN_HEIGHTS_GAP,
   ...CHANCELLOR,
+  ...CHESTERFIELD,
   ...CHILCO,
   ...COLUMBIA,
   ...COMOX_HELMCKEN,
