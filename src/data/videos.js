@@ -652,6 +652,11 @@ const VIDEOS = {
     date: new Date("Sep 01 2024"),
     minutes: 4,
   },
+  haroEb: {
+    id: "7vfEmgGweXQ",
+    date: new Date("Dec 18 2024"),
+    minutes: 5,
+  },
   haroWb: {
     id: "gdsFxEtuepY",
     date: new Date("Jun 03 2023"),
@@ -1368,6 +1373,11 @@ const VIDEOS = {
     id: "z5GzRN2_iNc",
     date: new Date("Jun 05 2023"),
     minutes: 11,
+  },
+  smitheEb: {
+    id: "slmvyyt8MRQ",
+    date: new Date("Dec 18 2024"),
+    minutes: 5,
   },
   southDykeEb: {
     id: "ivw4pCBL6i8",

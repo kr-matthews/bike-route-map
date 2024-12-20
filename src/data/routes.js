@@ -813,7 +813,7 @@ export const ROUTES = {
   haro: {
     name: "Haro",
     cities: [VANCOUVER],
-    legs: [{ videos: { westbound: VIDEOS.haroWb } }],
+    legs: [{ videos: { eastbound: VIDEOS.haroEb, westbound: VIDEOS.haroWb } }],
   },
   hastingsPark: {
     name: "Hastings Park",
@@ -1616,7 +1616,14 @@ export const ROUTES = {
   smithe: {
     name: "Smithe St",
     cities: [VANCOUVER],
-    legs: [{ videos: { westbound: VIDEOS.cambieBridgeSmitheNb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.smitheEb,
+          westbound: VIDEOS.cambieBridgeSmitheNb,
+        },
+      },
+    ],
   },
   southDyke: {
     name: "South Dyke Rd",

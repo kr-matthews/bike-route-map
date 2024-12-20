@@ -17,7 +17,8 @@ export const HARO = [
     routeNames: [ROUTES.haro.name],
     description: "path to/from lagoon dr",
     type: "dedicated",
-    videoIds: [VIDEOS.haroWb.id],
+    videoIds: [VIDEOS.haroEb.id, VIDEOS.haroWb.id],
+    videoIdsStartAtStart: [VIDEOS.haroEb.id],
     videoIdsEndAtStart: [VIDEOS.haroWb.id],
     positions: [
       LAGOON_HARO,
@@ -29,9 +30,9 @@ export const HARO = [
   },
   {
     routeNames: [ROUTES.haro.name],
-    description: "west of nicola",
+    description: "lagoon to nicola",
     type: "quiet",
-    videoIds: [VIDEOS.haroWb.id],
+    videoIds: [VIDEOS.haroEb.id, VIDEOS.haroWb.id],
     positions: [
       HARO_W,
       [49.29301, -123.13995],
@@ -45,9 +46,9 @@ export const HARO = [
   },
   {
     routeNames: [ROUTES.haro.name],
-    description: "east of nicola",
+    description: "nicola to thurlow",
     type: "quiet",
-    videoIds: [VIDEOS.haroWb.id],
+    videoIds: [VIDEOS.haroWb.id, VIDEOS.haroEb.id],
     videoIdsStartAtEnd: [VIDEOS.haroWb.id],
     positions: [
       NICOLA_HARO,

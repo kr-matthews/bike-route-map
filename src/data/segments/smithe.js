@@ -15,10 +15,16 @@ import { VIDEOS } from "../videos";
 export const SMITHE = [
   {
     routeNames: [ROUTES.smithe.name],
-    description: "bi-directional: thurlow to richards",
+    description: "bi-directional: thurlow to burrard",
     type: "dedicated",
-    videoIds: [VIDEOS.cambieBridgeSmitheNb.id],
+    videoIds: [
+      VIDEOS.smitheEb.id,
+      VIDEOS.cambieBridgeSmitheNb.id,
+      VIDEOS.haroEb.id,
+    ],
+    videoIdsStartAtStart: [VIDEOS.smitheEb.id],
     videoIdsEndAtStart: [VIDEOS.cambieBridgeSmitheNb.id],
+    videoIdsEndAtEnd: [VIDEOS.haroEb.id],
     positions: [
       THURLOW_HARO,
       [49.28391, -123.12584],
@@ -32,6 +38,15 @@ export const SMITHE = [
       [49.28271, -123.12493],
       [49.28258, -123.12482],
       [49.28246, -123.12467],
+      BURRARD_SMITHE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.smithe.name],
+    description: "bi-directional: burrard to richards",
+    type: "dedicated",
+    videoIds: [VIDEOS.smitheEb.id, VIDEOS.cambieBridgeSmitheNb.id],
+    positions: [
       BURRARD_SMITHE,
       [49.28225, -123.12435],
       HORNBY_SMITHE,
