@@ -25,6 +25,9 @@ export default function Routes({ navigateTo, mapRef }) {
     "list_region_name",
     REGIONS.all.name
   );
+  const region = Object.entries(REGIONS).find(
+    ([key, { name }]) => name === regionNameToShow
+  )[1];
 
   // actual value not important, just that it changes;
   // not sure how else to 'detect' that mapRef?.getBounds() has changed
@@ -68,6 +71,8 @@ export default function Routes({ navigateTo, mapRef }) {
         setSelected={setRegionNameToShow}
       />
       <Search text={searchText} setText={setSearchText} />
+
+      {region.notes && <p style={{ marginTop: 0 }}>{region.notes}</p>}
 
       {routesToShow.length ? (
         <div
