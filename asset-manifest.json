@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bike-route-map/static/css/main.0040c5f0.css",
-    "main.js": "/bike-route-map/static/js/main.f5cf6746.js",
+    "main.js": "/bike-route-map/static/js/main.262a1c0d.js",
     "static/media/database.svg": "/bike-route-map/static/media/database.2a5ad326a7cd564876b9b75c75c84fad.svg",
     "static/media/routes.svg": "/bike-route-map/static/media/routes.6b6cb8cd0b419807ab44ea243d74ae52.svg",
     "static/media/routesDark.svg": "/bike-route-map/static/media/routesDark.594f6722b9df36af43960eb01ab6d8ec.svg",
@@ -25,10 +25,10 @@
     "index.html": "/bike-route-map/index.html",
     "static/media/warning.svg": "/bike-route-map/static/media/warning.13c740f185e6774c196969253874c6e3.svg",
     "main.0040c5f0.css.map": "/bike-route-map/static/css/main.0040c5f0.css.map",
-    "main.f5cf6746.js.map": "/bike-route-map/static/js/main.f5cf6746.js.map"
+    "main.262a1c0d.js.map": "/bike-route-map/static/js/main.262a1c0d.js.map"
   },
   "entrypoints": [
     "static/css/main.0040c5f0.css",
-    "static/js/main.f5cf6746.js"
+    "static/js/main.262a1c0d.js"
   ]
 }
