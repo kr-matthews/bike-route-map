@@ -26,7 +26,7 @@ export default function Routes({ navigateTo, mapRef }) {
     REGIONS.all.name
   );
   const region = Object.entries(REGIONS).find(
-    ([key, { name }]) => name === regionNameToShow
+    ([_, { name }]) => name === regionNameToShow
   )[1];
 
   // actual value not important, just that it changes;
