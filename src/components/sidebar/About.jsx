@@ -24,6 +24,12 @@ export default function About({ navigateTo }) {
       <div
         style={{ overflowY: "scroll", overflow: "auto", paddingRight: "1em" }}
       >
+        <p>
+          This map features {videoCount} videos with a cumulative length of over{" "}
+          {Math.floor(videoCumulativeMinutes / 60)} hours, covering a unique{" "}
+          {displayDistance(videoUniqueDistanceCovered)} (
+          {displayDistance(videoCumulativeDistance)} in total).
+        </p>
         <ul>
           <li>
             <b>Hover</b> over a segment for information.
@@ -58,15 +64,12 @@ export default function About({ navigateTo }) {
           </ul>
         </ul>
         <p>
-          This is a map of bike routes in and around Vancouver. All routes in{" "}
-          <b>Vancouver</b> are included. Most (but not necessarily all) routes
-          in <b>UBC</b>, <b>Richmond</b>, <b>Burnaby</b>, and{" "}
-          <b>New Westminster</b> are included. Many routes in{" "}
-          <b>West Vancouver</b> and <b>North Vancouver</b> are included, but
-          many more are not. A few routes in adjacent regions (Port Coquitlam,
-          Port Moody, Pitt Meadows, Surrey, etc.) are included. But there are
-          plenty more routes (and other instances of bike infrastructure) that
-          are not shown on this map. More routes may be added over time.
+          This is a map of bike routes in and around Vancouver. All routes in
+          Vancouver are included. Many routes in adjacent regions are included -
+          select a region in the Routes panel dropdown for more information. But
+          there are plenty more routes (and other instances of bike
+          infrastructure) that are not shown on this map. More routes may be
+          added over time.
         </p>
         <p>
           When played, videos have chapters to make it easy to find a specific
@@ -83,12 +86,6 @@ export default function About({ navigateTo }) {
             see any potentially <em>misleading</em> errors, then let me know via
             email or GitHub below.
           </span>
-        </p>
-        <p>
-          This map features {videoCount} videos with a cumulative length of over{" "}
-          {Math.floor(videoCumulativeMinutes / 60)} hours, covering a unique{" "}
-          {displayDistance(videoUniqueDistanceCovered)} (
-          {displayDistance(videoCumulativeDistance)} in total).
         </p>
 
         <div style={{ paddingTop: "1em" }}>
