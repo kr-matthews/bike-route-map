@@ -188,6 +188,7 @@ import { TENTH } from "./tenth";
 import { TERMINAL_PATH } from "./terminalPath";
 import { THIRD } from "./third";
 import { THIRD_MARINE } from "./thirdMarine";
+import { THIRD_NV } from "./thirdNv";
 import { THUNDERBIRD } from "./thunderbird";
 import { TRANS_CANADA } from "./transCanada";
 import { TRANS_CANADA_HWY } from "./transCanadaHwy";
@@ -408,6 +409,7 @@ export const SEGMENTS = [
   ...TERMINAL_PATH,
   ...THIRD,
   ...THIRD_MARINE,
+  ...THIRD_NV,
   ...THUNDERBIRD,
   ...TRANS_CANADA,
   ...TRANS_CANADA_HWY,

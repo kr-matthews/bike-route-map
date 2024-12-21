@@ -10,6 +10,7 @@ import { VIDEOS } from "../videos";
 const COTTON_MAIN_S = [49.30686, -123.03937];
 const HARBOUR_MAIN_S = [49.30563, -123.0342];
 const COTTON_MAIN_N = [49.3068, -123.03826];
+const GLADSTONE_COTTON_NW_W = [49.30825, -123.04397];
 
 const BARROW_E = [49.30399, -123.02984];
 
@@ -68,7 +69,7 @@ export const MAIN_COTTON = [
   // wb
   {
     routeNames: [ROUTES.mainCotton.name],
-    description: "wb dedicated",
+    description: "wb dedicated 1",
     type: "dedicated",
     oneWay: "required",
     videoIds: [VIDEOS.mainCottonWb.id],
@@ -91,7 +92,6 @@ export const MAIN_COTTON = [
     type: "painted",
     oneWay: "required",
     videoIds: [VIDEOS.mainCottonWb.id],
-    videoIdsEndAtEnd: [VIDEOS.mainCottonWb.id],
     positions: [
       COTTON_MAIN_N,
       [49.30684, -123.03846],
@@ -105,7 +105,18 @@ export const MAIN_COTTON = [
       [49.30806, -123.0434],
       [49.30813, -123.04365],
       [49.30817, -123.04381],
-      [49.30825, -123.04397],
+      GLADSTONE_COTTON_NW_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.mainCotton.name],
+    description: "wb dedicated 2",
+    type: "dedicated",
+    oneWay: "required",
+    videoIds: [VIDEOS.mainCottonWb.id],
+    videoIdsEndAtEnd: [VIDEOS.mainCottonWb.id],
+    positions: [
+      GLADSTONE_COTTON_NW_W,
       [49.30828, -123.04409],
       [49.30832, -123.04426],
       [49.30835, -123.04441],

@@ -8,7 +8,7 @@ import { VIDEOS } from "./videos";
 // Richmond: south dyke; ...and around steveston
 // YVR:
 // New Westminster:
-// North Vancouver: lions gate village; 3rd; grand blvd; keith; capilano; dollarton; mt seymour;
+// North Vancouver: lions gate village; queensbury; necklace: grand blvd & keith; capilano; dollarton; mt seymour;
 // West Vancouver: spirit trail alt.?; ...more
 // Surrey: scott rd; alex fraser; serpentine; timbers; fraser hwy;
 // Delta:
@@ -51,6 +51,12 @@ export const ROUTES = {
     name: "3rd",
     cities: [VANCOUVER],
     legs: [{ videos: { eastbound: VIDEOS.thirdEb } }],
+  },
+  thirdNv: {
+    name: "3rd St",
+    isIncomplete: true,
+    cities: [NORTH_VANCOUVER],
+    legs: [{ videos: {} }],
   },
   fourth: {
     name: "4th",
