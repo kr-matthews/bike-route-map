@@ -12,64 +12,70 @@ export const REGIONS = {
 
   vancouver: {
     name: "Vancouver",
-    notes: "All routes and most infrastructure are mapped.",
+    notes: "In Vancouver, all routes and most infrastructure are mapped.",
   },
   ubc: {
     name: "UBC",
-    notes: "All routes and most infrastructure are mapped.",
+    notes:
+      "In UBC, all routes and most infrastructure are mapped. Most streets are bike-friendly.",
   },
   burnaby: {
     name: "Burnaby",
-    notes: "All routes and some infrastructure are mapped.",
+    notes:
+      "In Burnaby, all routes and some infrastructure are mapped. There are also many short sections of protected lanes outside of new developments, but they usually don't connect to anything. Edmonds is constantly changing.",
   },
   richmond: {
     name: "Richmond",
-    notes: "Most routes and some infrastructure are mapped.",
+    notes:
+      "In Richmond, most routes and some infrastructure are mapped. There are some additional routes in Steveston South",
   },
   newWestminster: {
     name: "New Westminster",
-    notes: "Most routes and some infrastructure are mapped.",
+    notes:
+      "In New Westminster, most routes and some infrastructure are mapped.",
   },
   surrey: {
     name: "Surrey",
-    notes: "Only major routes connecting across the Fraser River are mapped.",
+    notes:
+      "In Surrey, only major routes connecting across the Fraser River are mapped.",
   },
   westVancouver: {
     name: "West Vancouver",
     notes:
-      "All routes west of 27th St are mapped. There are a lot of routes east of there which are missing.",
+      "In West Vancouver, all routes west of 27th St are mapped. There are a lot of routes east of there which are missing.",
   },
   northVancouver: {
     name: "North Vancouver",
     notes:
-      "Most routes and infrastructure south of Marine Dr/4th St and west of the Second Narrows Bridge are mapped. There are a lot of routes north of there which are missing. ",
+      "In North Vancouver, most routes and infrastructure south of Marine Dr/4th St and west of the Second Narrows Bridge are mapped. There are a lot of routes north of there which are missing. ",
   },
   delta: {
     name: "Delta",
-    notes: "Very little is mapped.",
+    notes:
+      "In Delta, only major routes connecting across the Fraser River are mapped.",
   },
   portMoody: {
     name: "Port Moody",
-    notes: "Very little is mapped.",
+    notes: "In Port Moody, very little is mapped.",
   },
   coquitlam: {
     name: "Coquitlam",
-    notes: "Very little is mapped.",
+    notes: "In Coquitlam, very little is mapped.",
   },
   portCoquitlam: {
     name: "Port Coquitlam",
-    notes: "Very little is mapped.",
+    notes: "In Port Coquitlam, very little is mapped.",
   },
   pittMeadows: {
     name: "Pitt Meadows",
-    notes: "Very little is mapped.",
+    notes: "In Pitt Meadows, very little is mapped.",
   },
   mapleRidge: {
     name: "Maple Ridge",
-    notes: "Very little is mapped.",
+    notes: "In Maple Ridge, very little is mapped.",
   },
   langley: {
     name: "Langley",
-    notes: "Very little is mapped.",
+    notes: "In Langley, very little is mapped.",
   },
 };
