@@ -1,26 +1,6 @@
-import {
-  ALL,
-  BURNABY,
-  NEW_WESTMINSTER,
-  NORTH_VANCOUVER,
-  RICHMOND,
-  UBC,
-  VANCOUVER,
-  VISIBLE,
-  WEST_VANCOUVER,
-} from "../../data/routes";
+import { REGIONS } from "../../data/regions";
 
-const options = [
-  ALL,
-  VISIBLE,
-  VANCOUVER,
-  UBC,
-  BURNABY,
-  NEW_WESTMINSTER,
-  RICHMOND,
-  NORTH_VANCOUVER,
-  WEST_VANCOUVER,
-];
+const options = Object.values(REGIONS);
 
 export function ListTypeDropdown({ selected, setSelected }) {
   return (
@@ -30,9 +10,9 @@ export function ListTypeDropdown({ selected, setSelected }) {
       value={selected}
       onChange={(e) => setSelected(e.target.value)}
     >
-      {options.map((option) => (
-        <option key={option} id={option}>
-          {option}
+      {options.map(({ name }) => (
+        <option key={name} id={name}>
+          {name}
         </option>
       ))}
     </select>

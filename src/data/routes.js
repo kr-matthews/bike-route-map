@@ -1,3 +1,4 @@
+import { REGIONS } from "./regions";
 import { VIDEOS } from "./videos";
 
 //// Potential future additions
@@ -13,28 +14,10 @@ import { VIDEOS } from "./videos";
 // Surrey: scott rd; alex fraser; serpentine; timbers; fraser hwy;
 // Delta:
 
-export const VANCOUVER = "Vancouver";
-export const UBC = "UBC";
-export const BURNABY = "Burnaby";
-export const RICHMOND = "Richmond";
-export const NEW_WESTMINSTER = "New Westminster";
-export const SURREY = "Surrey";
-export const WEST_VANCOUVER = "West Vancouver";
-export const NORTH_VANCOUVER = "North Vancouver";
-export const DELTA = "Delta";
-export const PORT_MOODY = "Port Moody";
-export const COQUITLAM = "Coquitlam";
-export const PORT_COQUITLAM = "Port Coquitlam";
-export const PITT_MEADOWS = "Pitt Meadows";
-export const MAPLE_RIDGE = "Maple Ridge";
-export const LANGLEY = "Langley";
-export const VISIBLE = "In view (approx.)";
-export const ALL = "All";
-
 export const ROUTES = {
   first2nd: {
     name: "1st/2nd St",
-    cities: [NORTH_VANCOUVER],
+    regions: [REGIONS.northVancouver],
     legs: [
       {
         videos: { eastbound: VIDEOS.first2ndEb, westbound: VIDEOS.first2ndWb },
@@ -44,23 +27,23 @@ export const ROUTES = {
   thirdMarine: {
     name: "3rd/Marine",
     isIncomplete: true,
-    cities: [NORTH_VANCOUVER],
+    regions: [REGIONS.northVancouver],
     legs: [{ videos: {} }],
   },
   third: {
     name: "3rd",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { eastbound: VIDEOS.thirdEb } }],
   },
   thirdNv: {
     name: "3rd St",
     isIncomplete: true,
-    cities: [NORTH_VANCOUVER],
+    regions: [REGIONS.northVancouver],
     legs: [{ videos: {} }],
   },
   fourth: {
     name: "4th",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: { eastbound: VIDEOS.fourthEb, westbound: VIDEOS.fourthWb },
@@ -69,12 +52,12 @@ export const ROUTES = {
   },
   fourthNV: {
     name: "4th St",
-    cities: [NORTH_VANCOUVER],
+    regions: [REGIONS.northVancouver],
     legs: [{ videos: { westbound: VIDEOS.fourthNVWb } }],
   },
   tenth: {
     name: "10th",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: { eastbound: VIDEOS.tenthEb, westbound: VIDEOS.tenthWb },
@@ -83,7 +66,7 @@ export const ROUTES = {
   },
   fourteenth: {
     name: "14th",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         name: "Original Alder <-> Prince Edward",
@@ -103,17 +86,17 @@ export const ROUTES = {
   fourteenthGap: {
     name: "14th Ave Gap",
     isGap: true,
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { westbound: VIDEOS.fourteenthGapWb } }],
   },
   fifteenth: {
     name: "15th St",
-    cities: [NORTH_VANCOUVER],
+    regions: [REGIONS.northVancouver],
     legs: [{ videos: {} }],
   },
   sixteenth: {
     name: "16th Ave",
-    cities: [UBC],
+    regions: [REGIONS.ubc],
     legs: [
       {
         videos: {
@@ -125,7 +108,7 @@ export const ROUTES = {
   },
   twentySecond: {
     name: "22nd Ave",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: {
@@ -137,12 +120,12 @@ export const ROUTES = {
   },
   twentyNinth: {
     name: "29th",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { westbound: VIDEOS.twentyNinthWb } }],
   },
   fortyFifth: {
     name: "45th",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: {
@@ -154,33 +137,33 @@ export const ROUTES = {
   },
   sixtySeventh: {
     name: "67th",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { westbound: VIDEOS.sixtySeventhPlusWb } }],
   },
   acadia: {
     name: "Acadia Rd",
-    cities: [UBC],
+    regions: [REGIONS.ubc],
     legs: [{ videos: {} }],
   },
   adanac: {
     name: "Adanac",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { westbound: VIDEOS.adanacWb } }],
   },
   agnes: {
     name: "Agnes St",
-    cities: [NEW_WESTMINSTER],
+    regions: [REGIONS.newWestminster],
     legs: [{ videos: {} }],
   },
   agronomy: {
     name: "Agronomy Rd/Toronto Rd",
     shortName: "Agronomy/Toronto",
-    cities: [UBC],
+    regions: [REGIONS.ubc],
     legs: [{ videos: { eastbound: VIDEOS.agronomyEb } }],
   },
   alberni: {
     name: "Alberni St",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: { eastbound: VIDEOS.alberniEb, westbound: VIDEOS.alberniWb },
@@ -189,7 +172,7 @@ export const ROUTES = {
   },
   alder: {
     name: "Alder",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       { videos: { northbound: VIDEOS.alderNb, southbound: VIDEOS.alderSb } },
     ],
@@ -197,12 +180,12 @@ export const ROUTES = {
   alderbridge: {
     name: "Alderbridge Way Path",
     shortName: "Alderbridge Path",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: { westbound: VIDEOS.alderbridgeWb } }],
   },
   alexander: {
     name: "Alexander",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: {
@@ -214,18 +197,18 @@ export const ROUTES = {
   },
   alexFraserBridge: {
     name: "Alex Fraser Bridge",
-    cities: [RICHMOND, DELTA],
+    regions: [REGIONS.richmond, REGIONS.delta],
     legs: [{ videos: {} }],
   },
   arbutusGreenway: {
     name: "Arbutus Greenway",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { northbound: VIDEOS.arbutusGreenwayNb } }],
   },
   arthurLaingBridge: {
     name: "Arthur Laing Bridge",
     // shortName: "Arthur Laing B.",
-    cities: [VANCOUVER, RICHMOND],
+    regions: [REGIONS.vancouver, REGIONS.richmond],
     legs: [
       {
         videos: {
@@ -237,17 +220,22 @@ export const ROUTES = {
   },
   balaclava: {
     name: "Balaclava",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { northbound: VIDEOS.balaclavaNb } }],
   },
   barnet: {
     name: "Barnet Hwy",
-    cities: [BURNABY, PORT_MOODY],
+    regions: [REGIONS.burnaby, REGIONS.portMoody],
     legs: [{ videos: { eastbound: VIDEOS.barnetEb } }],
   },
   bcParkway: {
     name: "BC Parkway",
-    cities: [VANCOUVER, BURNABY, NEW_WESTMINSTER, SURREY],
+    regions: [
+      REGIONS.vancouver,
+      REGIONS.burnaby,
+      REGIONS.newWestminster,
+      REGIONS.surrey,
+    ],
     legs: [
       {
         name: "Vancouver",
@@ -286,7 +274,7 @@ export const ROUTES = {
   },
   beatty: {
     name: "Beatty St",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: { northbound: VIDEOS.beattyNb, southbound: VIDEOS.beattySb },
@@ -295,22 +283,22 @@ export const ROUTES = {
   },
   bellevue: {
     name: "Bellevue Ave",
-    cities: [WEST_VANCOUVER],
+    regions: [REGIONS.westVancouver],
     legs: [{ videos: { westbound: VIDEOS.bellevueWb } }],
   },
   bewickeGreenway: {
     name: "Bewicke Greenway",
-    cities: [NORTH_VANCOUVER],
+    regions: [REGIONS.northVancouver],
     legs: [{ videos: {} }],
   },
   bigBendPath: {
     name: "Big Bend Path",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [{ videos: {} }],
   },
   blanca: {
     name: "Blanca St",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: { northbound: VIDEOS.blancaNb, southbound: VIDEOS.blancaSb },
@@ -319,22 +307,22 @@ export const ROUTES = {
   },
   boundary: {
     name: "Boundary Trail",
-    cities: [NEW_WESTMINSTER],
+    regions: [REGIONS.newWestminster],
     legs: [{ videos: { southbound: VIDEOS.boundaryTrailSb } }],
   },
   boyd: {
     name: "Boyd St",
-    cities: [NEW_WESTMINSTER],
+    regions: [REGIONS.newWestminster],
     legs: [{ videos: {} }],
   },
   boydTrail: {
     name: "Boyd St Trail",
-    cities: [NEW_WESTMINSTER],
+    regions: [REGIONS.newWestminster],
     legs: [{ videos: { westbound: VIDEOS.boydTrailWb } }],
   },
   bridgeportTrail: {
     name: "Bridgeport Trail",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [
       {
         videos: {
@@ -346,13 +334,13 @@ export const ROUTES = {
   },
   brunetteFraser: {
     name: "Brunette Fraser Regional Greenway",
-    cities: [BURNABY, NEW_WESTMINSTER],
+    regions: [REGIONS.burnaby, REGIONS.newWestminster],
     shortName: "Brunette Fraser Gr.",
     legs: [{ videos: { southbound: VIDEOS.brunetteFraserSb } }],
   },
   burnaby: {
     name: "Burnaby",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       { videos: { eastbound: VIDEOS.burnabyEb, westbound: VIDEOS.burnabyWb } },
     ],
@@ -360,12 +348,12 @@ export const ROUTES = {
   burnabyMtnPkwy: {
     name: "Burnaby Mountain Parkway",
     shortName: "Burnaby Mtn Pkwy",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [{ videos: { eastbound: VIDEOS.burnabyMtnEb } }],
   },
   burrard: {
     name: "Burrard St",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: { northbound: VIDEOS.burrardNb, southbound: VIDEOS.burrardSb },
@@ -378,7 +366,7 @@ export const ROUTES = {
   },
   bute: {
     name: "Bute",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       { videos: { northbound: VIDEOS.buteNb, southbound: VIDEOS.buteSb } },
     ],
@@ -386,12 +374,12 @@ export const ROUTES = {
   byrneCreek: {
     name: "Byrne Creek Urban Trail",
     shortName: "Byrne Creek Trail",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [{ videos: {} }],
   },
   cambie: {
     name: "Cambie St",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: { northbound: VIDEOS.cambieNb, southbound: VIDEOS.cambieSb },
@@ -405,7 +393,7 @@ export const ROUTES = {
   cambieGastown: {
     name: "Cambie St (Gastown)",
     shortName: "Cambie (Gastown)",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     isOneWay: true,
     legs: [
       {
@@ -415,7 +403,7 @@ export const ROUTES = {
   },
   cambieBridge: {
     name: "Cambie Bridge",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: {
@@ -434,7 +422,7 @@ export const ROUTES = {
   },
   canadaLine: {
     name: "Canada Line Path",
-    cities: [VANCOUVER, RICHMOND],
+    regions: [REGIONS.vancouver, REGIONS.richmond],
     legs: [
       { videos: { southbound: VIDEOS.canadaLineSb } },
       {
@@ -452,7 +440,7 @@ export const ROUTES = {
   },
   cardero: {
     name: "Cardero",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: { northbound: VIDEOS.carderoNb, southbound: VIDEOS.carderoSb },
@@ -461,17 +449,17 @@ export const ROUTES = {
   },
   cariboo: {
     name: "Cariboo",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [{ videos: { southbound: VIDEOS.caribooSb } }],
   },
   carnarvon: {
     name: "Carnarvon St",
-    cities: [NEW_WESTMINSTER],
+    regions: [REGIONS.newWestminster],
     legs: [{ videos: {} }],
   },
   carrall: {
     name: "Carrall",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: { northbound: VIDEOS.carrallNb, southbound: VIDEOS.carrallSb },
@@ -480,18 +468,18 @@ export const ROUTES = {
   },
   cassiar: {
     name: "Cassiar",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { southbound: VIDEOS.cassiarSb } }],
   },
   caulfeild: {
     name: "Caulfeild",
-    cities: [WEST_VANCOUVER],
+    regions: [REGIONS.westVancouver],
     legs: [{ videos: {} }],
   },
   centralParkPerimeterTrail: {
     name: "Central Park Perimeter Trail",
     shortName: "Central Park Perim.",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [
       {
         videos: { clockwise: VIDEOS.centralParkPerimeterTrailCw },
@@ -501,7 +489,7 @@ export const ROUTES = {
   centralValleyGreenway: {
     name: "Central Valley Greenway",
     shortName: "Central Valley Gr.",
-    cities: [VANCOUVER, BURNABY, NEW_WESTMINSTER],
+    regions: [REGIONS.vancouver, REGIONS.burnaby, REGIONS.newWestminster],
     legs: [
       {
         name: "Vancouver",
@@ -524,35 +512,35 @@ export const ROUTES = {
   champlainHeightsGap: {
     name: "Champlain Heights Gap",
     isGap: true,
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { westbound: VIDEOS.champlainHeightsGapWb } }],
   },
   chancellor: {
     name: "Chancellor Blvd",
-    cities: [UBC],
+    regions: [REGIONS.ubc],
     legs: [{ videos: { westbound: VIDEOS.chancellorWb } }],
   },
   chesterfield: {
     name: "Chesterfield Ave",
     isIncomplete: true,
-    cities: [NORTH_VANCOUVER],
+    regions: [REGIONS.northVancouver],
     legs: [{ videos: {} }],
   },
   chilco: {
     name: "Chilco",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       { videos: { northbound: VIDEOS.chilcoNb, southbound: VIDEOS.chilcoSb } },
     ],
   },
   columbia: {
     name: "Columbia",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { northbound: VIDEOS.columbiaNb } }],
   },
   comoxHelmcken: {
     name: "Comox Helmcken",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: {
@@ -564,7 +552,7 @@ export const ROUTES = {
   },
   cprTrail: {
     name: "CPR Trail",
-    cities: [PITT_MEADOWS],
+    regions: [REGIONS.pittMeadows],
     legs: [
       {
         videos: { eastbound: VIDEOS.cprTrailEb, westbound: VIDEOS.cprTrailWb },
@@ -573,23 +561,23 @@ export const ROUTES = {
   },
   crabappleRidge: {
     name: "Crabapple Ridge",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: {} }],
   },
   crosstownRichmond: {
     name: "Crosstown",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: { westbound: VIDEOS.crosstownRichmondWb } }],
   },
   crosstownNewWestminster: {
     name: "Crosstown Greenway",
     shortName: "Crosstown Gr.",
-    cities: [NEW_WESTMINSTER],
+    regions: [REGIONS.newWestminster],
     legs: [{ videos: {} }],
   },
   cypress: {
     name: "Cypress",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: { northbound: VIDEOS.cypressNb, southbound: VIDEOS.cypressSb },
@@ -599,12 +587,12 @@ export const ROUTES = {
   deerLakeParkway: {
     name: "Deer Lake Parkway Urban Trail",
     shortName: "Deer Lake Pkwy T.",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [{ videos: { eastbound: VIDEOS.deerLakePkwyEb } }],
   },
   dumfries: {
     name: "Dumfries",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: {
@@ -616,14 +604,14 @@ export const ROUTES = {
   },
   dunbar: {
     name: "Dunbar St",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       { videos: { northbound: VIDEOS.dunbarNb, southbound: VIDEOS.dunbarSb } },
     ],
   },
   dunsmuir: {
     name: "Dunsmuir",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: { eastbound: VIDEOS.dunsmuirEb, westbound: VIDEOS.dunsmuirWb },
@@ -633,18 +621,18 @@ export const ROUTES = {
   dunsmuirMelvillePender: {
     name: "Dunsmuir St/Melville St/Pender St",
     shortName: "Dunsmuir/Melville",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     isOneWay: true,
     legs: [{ videos: { westbound: VIDEOS.lionsGateBridgeNb } }],
   },
   eastMall: {
     name: "East Mall",
-    cities: [UBC],
+    regions: [REGIONS.ubc],
     legs: [{ videos: { southbound: VIDEOS.eastMallSb } }],
   },
   edmonds: {
     name: "Edmonds",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [
       {
         name: "Sample's Path",
@@ -667,22 +655,22 @@ export const ROUTES = {
   },
   ewen: {
     name: "Ewen Ave Greenway",
-    cities: [NEW_WESTMINSTER],
+    regions: [REGIONS.newWestminster],
     legs: [{ videos: { westbound: VIDEOS.ewenWb } }],
   },
   ferguson: {
     name: "Ferguson Rd",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: { eastbound: VIDEOS.fergusonEb } }],
   },
   fergusonPath: {
     name: "Ferguson Rd Path",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: { westbound: VIDEOS.fergusonPathWb } }],
   },
   forbesEsplanade: {
     name: "Forbes/Esplanade",
-    cities: [NORTH_VANCOUVER],
+    regions: [REGIONS.northVancouver],
     legs: [
       {
         videos: {
@@ -694,18 +682,18 @@ export const ROUTES = {
   },
   francesUnion: {
     name: "Frances Union",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [{ videos: { westbound: VIDEOS.francesUnionWb } }],
   },
   fraserForeshoreTrail: {
     name: "Fraser Foreshore Urban Trail",
     shortName: "Fraser Foreshore T.",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [{ videos: { eastbound: VIDEOS.fraserForeshoreEb } }],
   },
   fraserRiverTrail: {
     name: "Fraser River Trail",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       { name: "Southlands", videos: {} },
       { name: "Fraser River Park", videos: {} },
@@ -719,17 +707,17 @@ export const ROUTES = {
   },
   fraserwoodTrail: {
     name: "Fraserwood Trail",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: {} }],
   },
   gaglardi: {
     name: "Gaglardi Way",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [{ videos: { southbound: VIDEOS.gaglardiSb } }],
   },
   gardenCity: {
     name: "Garden City Rd",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [
       {
         videos: {
@@ -745,12 +733,12 @@ export const ROUTES = {
   },
   gatensbury: {
     name: "Gatensbury St/Rd",
-    cities: [PORT_MOODY, COQUITLAM],
+    regions: [REGIONS.portMoody, REGIONS.coquitlam],
     legs: [{ videos: { southbound: VIDEOS.gatensburySb } }],
   },
   georgia: {
     name: "Georgia St",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: {
@@ -762,12 +750,12 @@ export const ROUTES = {
   },
   gilbert: {
     name: "Gilbert Rd",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: { northbound: VIDEOS.gilbertNb } }],
   },
   gladstone: {
     name: "Gladstone",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: {
@@ -779,12 +767,12 @@ export const ROUTES = {
   },
   glenlyon: {
     name: "Glenlyon Urban Trail",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [{ videos: { northbound: VIDEOS.glenlyonNb } }],
   },
   goldenEars: {
     name: "Golden Ears Bridge",
-    cities: [LANGLEY, MAPLE_RIDGE],
+    regions: [REGIONS.langley, REGIONS.mapleRidge],
     legs: [
       {
         videos: {
@@ -797,12 +785,12 @@ export const ROUTES = {
   grantMcconachie: {
     name: "Grant McConachie Way",
     shortName: "Grant McConachie",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: {} }],
   },
   granville: {
     name: "Granville Ave",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [
       { videos: { westbound: VIDEOS.granvilleWb } },
       {
@@ -813,17 +801,17 @@ export const ROUTES = {
   },
   grauer: {
     name: "Grauer Rd",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: { eastbound: VIDEOS.grauerEb } }],
   },
   haro: {
     name: "Haro",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { eastbound: VIDEOS.haroEb, westbound: VIDEOS.haroWb } }],
   },
   hastingsPark: {
     name: "Hastings Park",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         name: "Windermere <-> Portside",
@@ -847,17 +835,17 @@ export const ROUTES = {
   },
   heather: {
     name: "Heather",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { southbound: VIDEOS.heatherSb } }],
   },
   highbury: {
     name: "Highbury St",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { northbound: VIDEOS.highburyNb } }],
   },
   highlandParkLine: {
     name: "Highland Park Line",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [
       {
         videos: {
@@ -869,7 +857,7 @@ export const ROUTES = {
   },
   hillcrest: {
     name: "Hillcrest",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: {
@@ -881,51 +869,51 @@ export const ROUTES = {
   },
   homer: {
     name: "Homer St",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     isOneWay: true,
     legs: [{ videos: { northbound: VIDEOS.homerNb } }],
   },
   hornby: {
     name: "Hornby",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       { videos: { northbound: VIDEOS.hornbyNb, southbound: VIDEOS.hornbySb } },
     ],
   },
   horseshoeBay: {
     name: "Horseshoe Bay Dr",
-    cities: [WEST_VANCOUVER],
+    regions: [REGIONS.westVancouver],
     legs: [{ videos: {} }],
   },
   howes: {
     name: "Howes St",
-    cities: [NEW_WESTMINSTER],
+    regions: [REGIONS.newWestminster],
     legs: [{ videos: { northbound: VIDEOS.howesNb } }],
   },
   imperial: {
     name: "Imperial Dr",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { northbound: VIDEOS.imperialNb } }],
   },
   imperialPowerline: {
     name: "Imperial Trail/Powerline Trail",
     shortName: "Imperial/Powerline",
-    cities: [UBC],
+    regions: [REGIONS.ubc],
     legs: [{ videos: { eastbound: VIDEOS.imperialPowerlineEb } }],
   },
   inglis: {
     name: "Inglis Dr",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: {} }],
   },
   inverness: {
     name: "Inverness",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { southbound: VIDEOS.invernessSb } }],
   },
   keefer: {
     name: "Keefer",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       { videos: { eastbound: VIDEOS.keeferEb, westbound: VIDEOS.keeferWb } },
     ],
@@ -933,17 +921,17 @@ export const ROUTES = {
   kensington: {
     name: "Kensington Urban Trail",
     shortName: "Kensington Trail",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [{ videos: { northbound: VIDEOS.kensingtonNb } }],
   },
   kent: {
     name: "Kent",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { westbound: VIDEOS.kentWb } }],
   },
   kerr: {
     name: "Kerr St",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: { northbound: VIDEOS.kerrNb, southbound: VIDEOS.kerrSb },
@@ -952,7 +940,7 @@ export const ROUTES = {
   },
   killarney: {
     name: "Killarney",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: {
@@ -964,12 +952,12 @@ export const ROUTES = {
   },
   kingEdward: {
     name: "King Edward Ave",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: {} }],
   },
   knightStreetBridge: {
     name: "Knight Street Bridge",
-    cities: [VANCOUVER, RICHMOND],
+    regions: [REGIONS.vancouver, REGIONS.richmond],
     legs: [
       {
         name: "between Inverness and Bridgeport Rd",
@@ -986,18 +974,18 @@ export const ROUTES = {
   },
   lakes: {
     name: "Lakes",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [{ videos: { northbound: VIDEOS.lakesNb } }],
   },
   lakewood: {
     name: "Lakewood",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { northbound: VIDEOS.lakewoodNb } }],
   },
   lionsGate: {
     name: "Lions Gate Bridge & Stanley Park Causeway",
     shortName: "Lions Gate Bridge",
-    cities: [VANCOUVER, WEST_VANCOUVER],
+    regions: [REGIONS.vancouver, REGIONS.westVancouver],
     legs: [
       {
         videos: {
@@ -1010,12 +998,12 @@ export const ROUTES = {
   londonDublin: {
     name: "London/Dublin Greenway",
     shortName: "London/Dublin Gr.",
-    cities: [NEW_WESTMINSTER],
+    regions: [REGIONS.newWestminster],
     legs: [{ videos: { eastbound: VIDEOS.londonDublinEb } }],
   },
   lougheed: {
     name: "Lougheed Hwy",
-    cities: [BURNABY, COQUITLAM],
+    regions: [REGIONS.burnaby, REGIONS.coquitlam],
     legs: [
       {
         name: "Burnaby/Coquitlam",
@@ -1025,7 +1013,7 @@ export const ROUTES = {
   },
   lowLevel: {
     name: "Low Level Rd",
-    cities: [NORTH_VANCOUVER],
+    regions: [REGIONS.northVancouver],
     legs: [
       {
         videos: { eastbound: VIDEOS.lowLevelEb, westbound: VIDEOS.lowLevelWb },
@@ -1034,17 +1022,17 @@ export const ROUTES = {
   },
   lynas: {
     name: "Lynas Ln",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: { northbound: VIDEOS.lynasNb } }],
   },
   mackay: {
     name: "MacKay",
-    cities: [NORTH_VANCOUVER],
+    regions: [REGIONS.northVancouver],
     legs: [{ videos: {} }],
   },
   mainCotton: {
     name: "Main St/Cotton Rd",
-    cities: [NORTH_VANCOUVER],
+    regions: [REGIONS.northVancouver],
     legs: [
       {
         videos: {
@@ -1056,12 +1044,12 @@ export const ROUTES = {
   },
   marineNw: {
     name: "NW Marine",
-    cities: [VANCOUVER, UBC],
+    regions: [REGIONS.vancouver, REGIONS.ubc],
     legs: [{ videos: { eastbound: VIDEOS.nwMarineEb } }],
   },
   marineSw: {
     name: "SW Marine",
-    cities: [VANCOUVER, UBC],
+    regions: [REGIONS.vancouver, REGIONS.ubc],
     legs: [
       {
         videos: { eastbound: VIDEOS.swMarineEb, westbound: VIDEOS.swMarineWb },
@@ -1071,7 +1059,7 @@ export const ROUTES = {
   marineDr: {
     name: "Marine Dr (West Vancouver)",
     shortName: "Marine (West V.)",
-    cities: [WEST_VANCOUVER],
+    regions: [REGIONS.westVancouver],
     legs: [
       { videos: { westbound: VIDEOS.marineDrWb } },
       {
@@ -1090,7 +1078,7 @@ export const ROUTES = {
   },
   marineWay: {
     name: "Marine Way",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [
       {
         videos: {
@@ -1103,7 +1091,7 @@ export const ROUTES = {
   marryHillBypass: {
     name: "Mary Hill Bypass",
     isIncomplete: true,
-    cities: [COQUITLAM, PORT_COQUITLAM],
+    regions: [REGIONS.coquitlam, REGIONS.portCoquitlam],
     legs: [
       {
         name: "Coquitlam River",
@@ -1114,7 +1102,7 @@ export const ROUTES = {
   masumiMitsui: {
     name: "Masumi Mitsui Greenway",
     shortName: "Masumi Mitsui Gr.",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: {
@@ -1127,12 +1115,12 @@ export const ROUTES = {
   mcdonaldBeachTrail: {
     name: "McDonald Beach Trail",
     shortName: "McDonald Beach T.",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: { westbound: VIDEOS.mcdonaldBeachTrailWb } }],
   },
   metrotown: {
     name: "Metrotown",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [
       {
         videos: {
@@ -1144,12 +1132,12 @@ export const ROUTES = {
   },
   middleArm: {
     name: "Middle Arm Trail",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: { eastbound: VIDEOS.middleArmEb } }],
   },
   midtown: {
     name: "Midtown",
-    cities: [VANCOUVER, BURNABY],
+    regions: [REGIONS.vancouver, REGIONS.burnaby],
     legs: [
       {
         name: "Vancouver",
@@ -1163,29 +1151,29 @@ export const ROUTES = {
   },
   millenniumTrail: {
     name: "Millennium Trail",
-    cities: [NEW_WESTMINSTER],
+    regions: [REGIONS.newWestminster],
     legs: [{ videos: {} }],
   },
   miller: {
     name: "Miller Rd",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: {} }],
   },
   minoru: {
     name: "Minoru Blvd",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: {} }],
   },
   mosaic: {
     name: "Mosaic",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       { videos: { northbound: VIDEOS.mosaicNb, southbound: VIDEOS.mosaicSb } },
     ],
   },
   nanaimo: {
     name: "Nanaimo St",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: { northbound: VIDEOS.nanaimoNb, southbound: VIDEOS.nanaimoSb },
@@ -1194,30 +1182,30 @@ export const ROUTES = {
   },
   nelson: {
     name: "Nelson St",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     isOneWay: true,
     legs: [{ videos: { eastbound: VIDEOS.cambieBridgeNelsonSb } }],
   },
   nelsonAve: {
     name: "Nelson Ave Path",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [{ videos: { southbound: VIDEOS.nelsonPathSb } }],
   },
   nicola: {
     name: "Nicola",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       { videos: { northbound: VIDEOS.nicolaNb, southbound: VIDEOS.nicolaSb } },
     ],
   },
   no2: {
     name: "No. 2 Rd",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: { northbound: VIDEOS.no2Nb } }],
   },
   no2Bridge: {
     name: "No. 2 Rd Bridge",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [
       {
         videos: {
@@ -1229,22 +1217,22 @@ export const ROUTES = {
   },
   no2Path: {
     name: "No. 2 Rd Path",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: { northbound: VIDEOS.no2PathNb } }],
   },
   no3: {
     name: "No. 3 Rd",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: { northbound: VIDEOS.no3Nb, southbound: VIDEOS.no3Sb } }],
   },
   no6Path: {
     name: "No. 6 Rd Path",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: {} }],
   },
   northSouth: {
     name: "North/South",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [
       {
         videos: {
@@ -1256,18 +1244,18 @@ export const ROUTES = {
   },
   nService: {
     name: "North Service Rd",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: {} }],
   },
   oaklandBurris: {
     name: "Oakland St/Burris St",
     shortName: "Oakland/Burris",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [{ videos: { eastbound: VIDEOS.oaklandBurrisEb } }],
   },
   oakStreetBridge: {
     name: "Oak Street Bridge",
-    cities: [VANCOUVER, RICHMOND],
+    regions: [REGIONS.vancouver, REGIONS.richmond],
     legs: [
       {
         videos: { northbound: VIDEOS.oakNb, southbound: VIDEOS.oakSb },
@@ -1276,12 +1264,12 @@ export const ROUTES = {
   },
   odlin: {
     name: "Odlin",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: { westbound: VIDEOS.odlinWb } }],
   },
   offBroadway: {
     name: "Off Broadway",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: {
@@ -1293,7 +1281,7 @@ export const ROUTES = {
   },
   ontario: {
     name: "Ontario",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: { northbound: VIDEOS.ontarioNb, southbound: VIDEOS.ontarioSb },
@@ -1306,7 +1294,7 @@ export const ROUTES = {
   },
   pandora: {
     name: "Pandora",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: { eastbound: VIDEOS.pandoraEb, westbound: VIDEOS.pandoraWb },
@@ -1315,19 +1303,19 @@ export const ROUTES = {
   },
   parkside: {
     name: "Parkside",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: { northbound: VIDEOS.parksideNb } }],
   },
   pender: {
     name: "Pender St",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       { videos: { eastbound: VIDEOS.penderEb, westbound: VIDEOS.penderWb } },
     ],
   },
   pittRiverBridge: {
     name: "Pitt River Bridge",
-    cities: [PORT_COQUITLAM, PITT_MEADOWS],
+    regions: [REGIONS.portCoquitlam, REGIONS.pittMeadows],
     legs: [
       {
         videos: {
@@ -1341,41 +1329,41 @@ export const ROUTES = {
     name: "Traboulay PoCo Trail",
     shortName: "PoCo Trail",
     isIncomplete: true,
-    cities: [PORT_COQUITLAM],
+    regions: [REGIONS.portCoquitlam],
     legs: [{ name: "South Pitt River", videos: { eastbound: VIDEOS.pocoEb } }],
   },
   portMannBridge: {
     name: "Port Mann Bridge",
-    cities: [COQUITLAM, SURREY],
+    regions: [REGIONS.coquitlam, REGIONS.surrey],
     legs: [{ videos: {} }],
   },
   portRoyalRiverTrail: {
     name: "Port Royal River Trail",
     shortName: "Port Royal River T.",
-    cities: [NEW_WESTMINSTER],
+    regions: [REGIONS.newWestminster],
     legs: [{ videos: { eastbound: VIDEOS.portRoyalEb } }],
   },
   portside: {
     name: "Portside",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { eastbound: VIDEOS.portsideEb } }],
   },
   portsideGap: {
     name: "Portside Gap",
     isGap: true,
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { westbound: VIDEOS.portsideGapWb } }],
   },
   powell: {
     name: "Powell",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       { videos: { eastbound: VIDEOS.powellEb, westbound: VIDEOS.powellWb } },
     ],
   },
   princeEdward: {
     name: "Prince Edward",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: {
@@ -1388,7 +1376,7 @@ export const ROUTES = {
   queensboroughBridge: {
     name: "Queensborough Bridge",
     shortName: "Queensborough B.",
-    cities: [NEW_WESTMINSTER],
+    regions: [REGIONS.newWestminster],
     legs: [
       {
         videos: {
@@ -1400,22 +1388,22 @@ export const ROUTES = {
   },
   railway: {
     name: "Railway Ave",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: { southbound: VIDEOS.railwaySb } }],
   },
   railwayGreenway: {
     name: "Railway Greenway",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: { southbound: VIDEOS.railwayGreenwaySb } }],
   },
   richards: {
     name: "Richards",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { southbound: VIDEOS.richardsSb } }],
   },
   ridgeway: {
     name: "Ridgeway",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: { westbound: VIDEOS.ridgewayWb },
@@ -1424,24 +1412,24 @@ export const ROUTES = {
   },
   riverPkwy: {
     name: "River Pkwy",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: { southbound: VIDEOS.riverPkwySb } }],
   },
   royalOak: {
     name: "Royal Oak",
     shortName: "Royal Oak",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [{ videos: { southbound: VIDEOS.royalOakSb } }],
   },
   rumble: {
     name: "Rumble Street Urban Trail",
     shortName: "Rumble Urban Trail",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [{ videos: { westbound: VIDEOS.rumbleWb } }],
   },
   rupert: {
     name: "Rupert St",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: { northbound: VIDEOS.rupertNb, southbound: VIDEOS.rupertSb },
@@ -1450,7 +1438,7 @@ export const ROUTES = {
   },
   russBaker: {
     name: "Russ Baker Way",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [
       {
         videos: {
@@ -1463,35 +1451,35 @@ export const ROUTES = {
   stAndrews: {
     name: "St Andrews Ave",
     isIncomplete: true,
-    cities: [NORTH_VANCOUVER],
+    regions: [REGIONS.northVancouver],
     legs: [{ videos: {} }],
   },
   stJohns: {
     name: "Saint Johns St Path",
-    cities: [PORT_MOODY],
+    regions: [REGIONS.portMoody],
     legs: [{ videos: { eastbound: VIDEOS.stJohnsEb } }],
   },
   seaIslandConnector: {
     name: "Sea Island Connector",
     shortName: "Sea Island Conn.",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     isOneWay: true,
     legs: [{ videos: { westbound: VIDEOS.seaIslandConnectorWb } }],
   },
   seaIslandPath: {
     name: "Sea Island Path",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: { northbound: VIDEOS.seaIslandPathNb } }],
   },
   seaIslandWay: {
     name: "Sea Island Way",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     isOneWay: true,
     legs: [{ videos: { eastbound: VIDEOS.seaIslandWayEb } }],
   },
   seaside: {
     name: "Seaside",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         name: "Coal Harbour",
@@ -1521,7 +1509,7 @@ export const ROUTES = {
   },
   seasideBypass: {
     name: "Seaside Bypass",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         name: "Beach",
@@ -1554,18 +1542,18 @@ export const ROUTES = {
   },
   seaToRiver: {
     name: "Sea to River",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [{ videos: { northbound: VIDEOS.seaToRiverNb } }],
   },
   seaview: {
     name: "Seaview",
-    cities: [WEST_VANCOUVER],
+    regions: [REGIONS.westVancouver],
     legs: [{ videos: { westbound: VIDEOS.seaviewWb } }],
   },
   secondNarrowsBridge: {
     name: "Second Narrows Bridge",
     shortName: "Second Narrows Br.",
-    cities: [VANCOUVER, NORTH_VANCOUVER],
+    regions: [REGIONS.vancouver, REGIONS.northVancouver],
     legs: [
       {
         videos: {
@@ -1578,7 +1566,7 @@ export const ROUTES = {
   sfuPaths: {
     name: "Simon Fraser University Paths",
     shortName: "SFU Paths",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [
       {
         name: "Burnaby Mountain Parkway",
@@ -1612,7 +1600,7 @@ export const ROUTES = {
   },
   shellRoadTrail: {
     name: "Shell Rd Trail",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [
       {
         videos: { northbound: VIDEOS.shellNb, southbound: VIDEOS.shellSb },
@@ -1621,7 +1609,7 @@ export const ROUTES = {
   },
   smithe: {
     name: "Smithe St",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: {
@@ -1633,22 +1621,22 @@ export const ROUTES = {
   },
   southDyke: {
     name: "South Dyke Rd",
-    cities: [NEW_WESTMINSTER],
+    regions: [REGIONS.newWestminster],
     legs: [{ videos: { eastbound: VIDEOS.southDykeEb } }],
   },
   southeast: {
     name: "Southeast",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [{ videos: { westbound: VIDEOS.southeastWb } }],
   },
   spiritTrail: {
     name: "Spirit Trail",
-    cities: [WEST_VANCOUVER, NORTH_VANCOUVER],
+    regions: [REGIONS.westVancouver, REGIONS.northVancouver],
     legs: [{ videos: { eastbound: VIDEOS.spiritTrailEb } }],
   },
   stanleyParkLoop: {
     name: "Stanley Park Loop",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     isOneWay: true,
     legs: [
       {
@@ -1666,22 +1654,22 @@ export const ROUTES = {
   },
   stevestonHwy: {
     name: "Steveston Hwy Path",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: { eastbound: VIDEOS.stevestonEb } }],
   },
   sunrise: {
     name: "Sunrise",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { northbound: VIDEOS.sunriseNb } }],
   },
   tatlow: {
     name: "Tatlow",
-    cities: [NORTH_VANCOUVER],
+    regions: [REGIONS.northVancouver],
     legs: [{ videos: {} }],
   },
   templeton: {
     name: "Templeton St",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [
       {
         videos: {
@@ -1693,7 +1681,7 @@ export const ROUTES = {
   },
   terminalPath: {
     name: "Terminal Ave Path",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: { eastbound: VIDEOS.terminalEb, westbound: VIDEOS.terminalWb },
@@ -1703,57 +1691,57 @@ export const ROUTES = {
   thunderbird: {
     name: "Thunderbird Blvd/Osoyoos Cr",
     shortName: "Thunderbird Blvd",
-    cities: [UBC],
+    regions: [REGIONS.ubc],
     legs: [{ videos: {} }],
   },
   transCanadaHwy: {
     name: "Trans Canada Hwy",
     isIncomplete: true,
-    cities: [WEST_VANCOUVER],
+    regions: [REGIONS.westVancouver],
     legs: [{ name: "West Vancouver", videos: {} }],
   },
   transCanadaTrail: {
     name: "Trans Canada Trail",
     isIncomplete: true,
-    cities: [VANCOUVER, BURNABY],
+    regions: [REGIONS.vancouver, REGIONS.burnaby],
     legs: [{ name: "Burnaby", videos: { westbound: VIDEOS.seaToRiverNb } }],
   },
   university: {
     name: "University Blvd",
-    cities: [UBC],
+    regions: [REGIONS.ubc],
     legs: [{ videos: { eastbound: VIDEOS.universityEb } }],
   },
   universityDrE: {
     name: "University Dr E",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     isOneWay: true,
     legs: [{ videos: { eastbound: VIDEOS.universityDrEEb } }],
   },
   uptownDowntown: {
     name: "Uptown/Downtown",
-    cities: [NEW_WESTMINSTER],
+    regions: [REGIONS.newWestminster],
     legs: [{ videos: { southbound: VIDEOS.uptownDowntownSb } }],
   },
   valley: {
     name: "Valley",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { southbound: VIDEOS.valleySb } }],
   },
   victory: {
     name: "Victory",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [
       { videos: { eastbound: VIDEOS.victoryEb, westbound: VIDEOS.victoryWb } },
     ],
   },
   walesDuchess: {
     name: "Wales Duchess",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { southbound: VIDEOS.walesDuchessSb } }],
   },
   waterfront: {
     name: "Waterfront St",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: {
@@ -1765,50 +1753,50 @@ export const ROUTES = {
   },
   wesbrook: {
     name: "Wesbrook Mall",
-    cities: [UBC],
+    regions: [REGIONS.ubc],
     legs: [{ videos: { southbound: VIDEOS.wesbrookSb } }],
   },
   westDyke: {
     name: "West Dyke Trail",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: {} }],
   },
   westMall: {
     name: "West Mall",
-    cities: [UBC],
+    regions: [REGIONS.ubc],
     legs: [{ videos: {} }],
   },
   westminsterHwy: {
     name: "Westminster Hwy",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: { westbound: VIDEOS.westminsterWb } }],
   },
   westportMathers: {
     name: "Westport/Southridge/Westmount/Mathers+",
     shortName: "Westport/Mathers+",
-    cities: [WEST_VANCOUVER],
+    regions: [REGIONS.westVancouver],
     legs: [{ videos: { westbound: VIDEOS.westportMathersWb } }],
   },
   williams: {
     name: "Williams Rd",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: { eastbound: VIDEOS.williamsEb } }],
   },
   willingdonLinear: {
     name: "Willingdon Linear Park Urban Trail",
     shortName: "Willingdon L. Park",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [{ videos: { northbound: VIDEOS.willingdonLinearNb } }],
   },
   willingdon: {
     name: "Willingdon Urban Trail",
     shortName: "Willingdon Trail",
-    cities: [BURNABY],
+    regions: [REGIONS.burnaby],
     legs: [{ videos: { southbound: VIDEOS.willingdonSb } }],
   },
   windermere: {
     name: "Windermere",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: {
@@ -1820,7 +1808,7 @@ export const ROUTES = {
   },
   windsor: {
     name: "Windsor",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [
       {
         videos: { northbound: VIDEOS.windsorNb, southbound: VIDEOS.windsorSb },
@@ -1830,17 +1818,17 @@ export const ROUTES = {
   woodwardsSaunders: {
     name: "Woodwards/Saunders",
     shortName: "Woodwards",
-    cities: [RICHMOND],
+    regions: [REGIONS.richmond],
     legs: [{ videos: { eastbound: VIDEOS.woodwardsSaundersEb } }],
   },
   york: {
     name: "York",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { eastbound: VIDEOS.yorkEb, westbound: VIDEOS.yorkWb } }],
   },
   yukon: {
     name: "Yukon",
-    cities: [VANCOUVER],
+    regions: [REGIONS.vancouver],
     legs: [{ videos: { southbound: VIDEOS.yukonSb } }],
   },
 };

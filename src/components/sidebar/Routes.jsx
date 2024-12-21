@@ -14,14 +14,17 @@ import {
   getBackgroundColor,
   getRouteBounds,
 } from "../../utils/routes";
-import { ALL, VISIBLE } from "../../data/routes";
 import { ListTypeDropdown } from "./ListTypeDropdown";
 import useSavedState from "../../hooks/useSavedState";
 import warningIcon from "../../images/warning.svg";
+import { REGIONS } from "../../data/regions";
 
 export default function Routes({ navigateTo, mapRef }) {
   const [searchText, setSearchText] = useState("");
-  const [regionToShow, setRegionToShow] = useSavedState("list_region", ALL);
+  const [regionNameToShow, setRegionNameToShow] = useSavedState(
+    "list_region_name",
+    REGIONS.all.name
+  );
 
   // actual value not important, just that it changes;
   // not sure how else to 'detect' that mapRef?.getBounds() has changed
@@ -37,21 +40,21 @@ export default function Routes({ navigateTo, mapRef }) {
   const routesToShow = useMemo(
     () =>
       Object.values(AUGMENTED_ROUTES).filter(
-        ({ name, cities, segmentBounds, isGap }) =>
+        ({ name, regions, segmentBounds, isGap }) =>
           !isGap &&
           isSubsequence(
             removeWhiteSpaces(searchText.toLowerCase()),
             name.toLowerCase()
           ) &&
-          (regionToShow === ALL ||
-            (regionToShow === VISIBLE &&
+          (regionNameToShow === REGIONS.all.name ||
+            (regionNameToShow === REGIONS.inView.name &&
               segmentBounds.some((segmentBound) =>
                 mapRef?.getBounds().intersects(segmentBound)
               )) ||
-            cities?.includes(regionToShow))
+            regions?.map(({ name }) => name).includes(regionNameToShow))
       ),
     // eslint-disable-next-line
-    [searchText, regionToShow, mapRef, mapChangedIndicator]
+    [searchText, regionNameToShow, mapRef, mapChangedIndicator]
   );
 
   return (
@@ -60,7 +63,10 @@ export default function Routes({ navigateTo, mapRef }) {
       title={`${VIEWS.routes.name} (${routesToShow.length})`}
       navigateTo={navigateTo}
     >
-      <ListTypeDropdown selected={regionToShow} setSelected={setRegionToShow} />
+      <ListTypeDropdown
+        selected={regionNameToShow}
+        setSelected={setRegionNameToShow}
+      />
       <Search text={searchText} setText={setSearchText} />
 
       {routesToShow.length ? (
@@ -93,7 +99,8 @@ function Route({ route, mapRef }) {
 
   const background = getBackgroundColor(route, isHighlighted);
   const displayName = route.shortName ?? route.name;
-  const city = route.cities.length < 2 ? route.cities[0] : "Multiple Regions";
+  const region =
+    route.regions.length < 2 ? route.regions[0].name : "Multiple Regions";
 
   const distance = route.isOneWay
     ? route.oneWayDistance
@@ -104,7 +111,7 @@ function Route({ route, mapRef }) {
   );
   const nameDistanceVideoCountMessages = [
     route.name,
-    route.cities.join(", "),
+    route.regions.map(({ name }) => name).join(", "),
     route.isIncomplete
       ? "**Note: Route shown on map may be incomplete.**"
       : null,
@@ -158,7 +165,7 @@ function Route({ route, mapRef }) {
           color: isHighlighted ? BLACK : WHITE,
         }}
       >
-        {city}
+        {region}
       </div>
       {route.isIncomplete && (
         <img
