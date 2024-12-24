@@ -32,7 +32,7 @@ const TWENTY_SIXTH_MARINE_E = [49.33568, -123.18545];
 const MARINE_BEYOND_13TH = [49.32737, -123.15029];
 const PARK_ROYAL_MARINE_NW = [49.32699, -123.14053];
 
-export const MARINE_DR = [
+export const MARINE_WV = [
   // horseshoe bay
   {
     description: "nelson/chatham",
@@ -219,7 +219,7 @@ export const MARINE_DR = [
 
   // marine
   {
-    routeNames: [ROUTES.marineDr.name],
+    routeNames: [ROUTES.marineWv.name],
     description: "whytecliff to pre-nelson",
     type: "shared",
     positions: [
@@ -287,7 +287,7 @@ export const MARINE_DR = [
     ],
   },
   {
-    routeNames: [ROUTES.marineDr.name],
+    routeNames: [ROUTES.marineWv.name],
     description: "wellington to nelson",
     type: "shared",
     videoIds: [VIDEOS.stGeorgesEb.id],
@@ -295,7 +295,7 @@ export const MARINE_DR = [
     positions: [WELLINGTON_MARINE, [49.37026, -123.28008], NELSON_MARINE],
   },
   {
-    routeNames: [ROUTES.marineDr.name],
+    routeNames: [ROUTES.marineWv.name],
     description: "nelson to orchill",
     type: "shared",
     videoIds: [VIDEOS.marineDrWb.id],
@@ -340,7 +340,7 @@ export const MARINE_DR = [
     ],
   },
   {
-    routeNames: [ROUTES.marineDr.name],
+    routeNames: [ROUTES.marineWv.name],
     description: "at orchill",
     type: "shared",
     videoIds: [VIDEOS.marineDrWb.id, VIDEOS.stGeorgesEb.id],
@@ -348,7 +348,7 @@ export const MARINE_DR = [
     positions: [MARINE_ORCHILL, MARINE_ORCHILL_S],
   },
   {
-    routeNames: [ROUTES.marineDr.name],
+    routeNames: [ROUTES.marineWv.name],
     description: "orchill to pre-westport",
     type: "shared",
     videoIds: [VIDEOS.marineDrWb.id],
@@ -437,7 +437,7 @@ export const MARINE_DR = [
     ],
   },
   {
-    routeNames: [ROUTES.marineDr.name],
+    routeNames: [ROUTES.marineWv.name],
     description: "pre-westport",
     type: "shared",
     videoIds: [
@@ -456,7 +456,7 @@ export const MARINE_DR = [
     ],
   },
   {
-    routeNames: [ROUTES.marineDr.name],
+    routeNames: [ROUTES.marineWv.name],
     description: "westport to greenleaf",
     type: "shared",
     videoIds: [VIDEOS.marineDrWb.id],
@@ -492,7 +492,7 @@ export const MARINE_DR = [
     ],
   },
   {
-    routeNames: [ROUTES.marineDr.name],
+    routeNames: [ROUTES.marineWv.name],
     description: "post greenleaf",
     type: "shared",
     videoIds: [VIDEOS.greenleafEb.id, VIDEOS.marineDrWb.id],
@@ -505,7 +505,7 @@ export const MARINE_DR = [
     ],
   },
   {
-    routeNames: [ROUTES.marineDr.name],
+    routeNames: [ROUTES.marineWv.name],
     description: "post greenleaf to pre lighthouse park",
     type: "shared",
     videoIds: [VIDEOS.marineDrWb.id],
@@ -548,7 +548,7 @@ export const MARINE_DR = [
     ],
   },
   {
-    routeNames: [ROUTES.marineDr.name],
+    routeNames: [ROUTES.marineWv.name],
     description: "near beacon",
     type: "shared",
     videoIds: [VIDEOS.marineDrWb.id, VIDEOS.waterPiccadillyEb.id],
@@ -561,7 +561,7 @@ export const MARINE_DR = [
     ],
   },
   {
-    routeNames: [ROUTES.marineDr.name],
+    routeNames: [ROUTES.marineWv.name],
     description: "lighthouse park to piccadilly s",
     type: "shared",
     videoIds: [VIDEOS.marineDrWb.id],
@@ -603,7 +603,7 @@ export const MARINE_DR = [
     ],
   },
   {
-    routeNames: [ROUTES.marineDr.name],
+    routeNames: [ROUTES.marineWv.name],
     description: "piccadilly",
     type: "shared",
     videoIds: [VIDEOS.marineDrWb.id, VIDEOS.waterPiccadillyEb.id],
@@ -616,7 +616,7 @@ export const MARINE_DR = [
     ],
   },
   {
-    routeNames: [ROUTES.marineDr.name],
+    routeNames: [ROUTES.marineWv.name],
     description: "piccadilly n to 31st",
     type: "shared",
     videoIds: [VIDEOS.marineDrWb.id],
@@ -709,7 +709,7 @@ export const MARINE_DR = [
     ],
   },
   {
-    routeNames: [ROUTES.marineDr.name],
+    routeNames: [ROUTES.marineWv.name],
     description: "31st to 26th",
     type: "painted",
     oneWay: "required",
@@ -732,7 +732,7 @@ export const MARINE_DR = [
     ],
   },
   {
-    routeNames: [ROUTES.marineDr.name],
+    routeNames: [ROUTES.marineWv.name],
     description: "26th to 31st",
     type: "painted",
     oneWay: "required",
@@ -753,7 +753,7 @@ export const MARINE_DR = [
     ],
   },
   {
-    routeNames: [ROUTES.marineDr.name],
+    routeNames: [ROUTES.marineWv.name],
     description: "26th to beyond 13th",
     type: "shared",
     videoIds: [VIDEOS.marineDrWb.id],
@@ -792,7 +792,7 @@ export const MARINE_DR = [
     ],
   },
   {
-    routeNames: [ROUTES.marineDr.name],
+    routeNames: [ROUTES.marineWv.name],
     description: "beyond 13th to taylor",
     type: "shared",
     oneWay: "required",
@@ -814,7 +814,7 @@ export const MARINE_DR = [
     ],
   },
   {
-    routeNames: [ROUTES.marineDr.name],
+    routeNames: [ROUTES.marineWv.name],
     description: "taylor to park royal",
     type: "shared",
     oneWay: "required",
@@ -826,7 +826,7 @@ export const MARINE_DR = [
     ],
   },
   {
-    routeNames: [ROUTES.marineDr.name],
+    routeNames: [ROUTES.marineWv.name],
     description: "park royal to beyond 13th",
     type: "shared",
     oneWay: "required",

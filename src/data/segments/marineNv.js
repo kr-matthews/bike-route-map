@@ -27,10 +27,10 @@ const MACKAY_RD_MARINE_N = [49.32388, -123.10212];
 const CAPILANO_MARINE_NW = [49.32447, -123.12257];
 const WB_POST_CAPILANO = [49.32469, -123.12338];
 
-export const THIRD_MARINE = [
+export const MARINE_NV = [
   // eb
   {
-    routeNames: [ROUTES.thirdMarine.name],
+    routeNames: [ROUTES.marineNv.name],
     description: "eb: lions gate to hamilton",
     type: "shared",
     oneWay: "required",
@@ -64,7 +64,7 @@ export const THIRD_MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.thirdMarine.name],
+    routeNames: [ROUTES.marineNv.name],
     description: "eb: hamilton to fell",
     type: "painted",
     oneWay: "required",
@@ -79,7 +79,7 @@ export const THIRD_MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.thirdMarine.name],
+    routeNames: [ROUTES.marineNv.name],
     description: "eb: fell to 2nd",
     type: "shared",
     oneWay: "required",
@@ -96,14 +96,14 @@ export const THIRD_MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.thirdMarine.name],
+    routeNames: [ROUTES.marineNv.name],
     description: "eb crossing 2nd",
     type: "mixed",
     oneWay: "recommended",
     positions: [THIRD_2ND_NW, THIRD_2ND_S],
   },
   {
-    routeNames: [ROUTES.thirdMarine.name],
+    routeNames: [ROUTES.marineNv.name],
     description: "eb",
     type: "mixed",
     oneWay: "recommended",
@@ -122,7 +122,7 @@ export const THIRD_MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.thirdMarine.name],
+    routeNames: [ROUTES.marineNv.name],
     description: "eb crossing forbes",
     type: "mixed",
     oneWay: "recommended",
@@ -131,7 +131,7 @@ export const THIRD_MARINE = [
 
   // wb
   {
-    routeNames: [ROUTES.thirdMarine.name],
+    routeNames: [ROUTES.marineNv.name],
     description: "wb forbes crossing 3rd",
     type: "mixed",
     oneWay: "recommended",
@@ -145,7 +145,7 @@ export const THIRD_MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.thirdMarine.name],
+    routeNames: [ROUTES.marineNv.name],
     description: "wb: half-crossing forbes",
     type: "painted",
     oneWay: "required",
@@ -153,7 +153,7 @@ export const THIRD_MARINE = [
     positions: [FORBES_3RD_NE, FORBES_3RD_N],
   },
   {
-    routeNames: [ROUTES.thirdMarine.name],
+    routeNames: [ROUTES.marineNv.name],
     description: "wb: forbes to 2nd",
     type: "painted",
     oneWay: "required",
@@ -169,7 +169,7 @@ export const THIRD_MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.thirdMarine.name],
+    routeNames: [ROUTES.marineNv.name],
     description: "wb: 2nd to 15th-ish",
     type: "painted",
     oneWay: "required",
@@ -189,7 +189,7 @@ export const THIRD_MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.thirdMarine.name],
+    routeNames: [ROUTES.marineNv.name],
     description: "wb: 15th-ish to hamilton",
     type: "shared",
     oneWay: "required",
@@ -203,7 +203,7 @@ export const THIRD_MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.thirdMarine.name],
+    routeNames: [ROUTES.marineNv.name],
     description: "wb: hamilton to mackay rd",
     type: "painted",
     oneWay: "required",
@@ -219,7 +219,7 @@ export const THIRD_MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.thirdMarine.name],
+    routeNames: [ROUTES.marineNv.name],
     description: "wb: mackay rd to capilano",
     type: "shared",
     oneWay: "required",
@@ -243,7 +243,7 @@ export const THIRD_MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.thirdMarine.name],
+    routeNames: [ROUTES.marineNv.name],
     description: "wb: capilano bus stop",
     type: "combined",
     oneWay: "required",
@@ -256,7 +256,7 @@ export const THIRD_MARINE = [
     ],
   },
   {
-    routeNames: [ROUTES.thirdMarine.name],
+    routeNames: [ROUTES.marineNv.name],
     description: "wb: post-capilano to lions gate loops",
     // there's another brief separated lane in here...
     type: "shared",

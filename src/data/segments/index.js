@@ -111,9 +111,10 @@ import { LOW_LEVEL } from "./lowLevel";
 import { LYNAS } from "./lynas";
 import { MACKAY } from "./mackay";
 import { MAIN_COTTON } from "./mainCotton";
-import { MARINE } from "./marine";
-import { MARINE_DR } from "./marineDr";
+import { MARINE_NV } from "./marineNv";
+import { MARINE_UBC } from "./marineUBC";
 import { MARINE_WAY } from "./marineWay";
+import { MARINE_WV } from "./marineWv";
 import { MARRY_HILL_BYPASS } from "./maryHillBypass";
 import { MASUMI_MITSUI_GREENWAY } from "./masumiMitsui";
 import { MCDONALD_BEACH_TRAIL } from "./mcdonaldBeachTrail";
@@ -187,7 +188,6 @@ import { TEMPLETON } from "./templeton";
 import { TENTH } from "./tenth";
 import { TERMINAL_PATH } from "./terminalPath";
 import { THIRD } from "./third";
-import { THIRD_MARINE } from "./thirdMarine";
 import { THIRD_NV } from "./thirdNv";
 import { THUNDERBIRD } from "./thunderbird";
 import { TRANS_CANADA } from "./transCanada";
@@ -332,9 +332,10 @@ export const SEGMENTS = [
   ...LYNAS,
   ...MACKAY,
   ...MAIN_COTTON,
-  ...MARINE,
-  ...MARINE_DR,
+  ...MARINE_NV,
+  ...MARINE_UBC,
   ...MARINE_WAY,
+  ...MARINE_WV,
   ...MARRY_HILL_BYPASS,
   ...MASUMI_MITSUI_GREENWAY,
   ...MCDONALD_BEACH_TRAIL,
@@ -408,7 +409,6 @@ export const SEGMENTS = [
   ...TENTH,
   ...TERMINAL_PATH,
   ...THIRD,
-  ...THIRD_MARINE,
   ...THIRD_NV,
   ...THUNDERBIRD,
   ...TRANS_CANADA,

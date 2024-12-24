@@ -24,11 +24,6 @@ export const ROUTES = {
       },
     ],
   },
-  thirdMarine: {
-    name: "3rd/Marine",
-    regions: [REGIONS.northVancouver],
-    legs: [{ videos: {} }],
-  },
   third: {
     name: "3rd",
     regions: [REGIONS.vancouver],
@@ -1043,11 +1038,13 @@ export const ROUTES = {
   },
   marineNw: {
     name: "NW Marine",
+    shortName: "NW Marine (UBC)",
     regions: [REGIONS.vancouver, REGIONS.ubc],
     legs: [{ videos: { eastbound: VIDEOS.nwMarineEb } }],
   },
   marineSw: {
     name: "SW Marine",
+    shortName: "SW Marine (UBC)",
     regions: [REGIONS.vancouver, REGIONS.ubc],
     legs: [
       {
@@ -1055,9 +1052,15 @@ export const ROUTES = {
       },
     ],
   },
-  marineDr: {
+  marineNv: {
+    name: "Marine Dr/3rd St (North Vancouver)",
+    shortName: "Marine/3rd (NV)",
+    regions: [REGIONS.northVancouver],
+    legs: [{ videos: {} }],
+  },
+  marineWv: {
     name: "Marine Dr (West Vancouver)",
-    shortName: "Marine (West V.)",
+    shortName: "Marine Dr (WV)",
     regions: [REGIONS.westVancouver],
     legs: [
       { videos: { westbound: VIDEOS.marineDrWb } },

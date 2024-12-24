@@ -67,7 +67,7 @@ const MARINE_AVERY_SOUTHER = [49.20627, -123.14228];
 const PRE_PRE_STADIUM_LANE_START = [49.25339, -123.24837];
 const PRE_STADIUM_LANE_START = [49.25348, -123.24849];
 
-export const MARINE = [
+export const MARINE_UBC = [
   // sw marine
   {
     description: "connection with arbutus greenway",
