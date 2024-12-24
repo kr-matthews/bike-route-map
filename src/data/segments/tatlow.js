@@ -1,4 +1,9 @@
-import { TATLOW_15TH, TATLOW_SPIRIT } from "../intersections";
+import {
+  TATLOW_15TH,
+  TATLOW_MARINE_N,
+  TATLOW_MARINE_S,
+  TATLOW_SPIRIT,
+} from "../intersections";
 import { ROUTES } from "../routes";
 
 const TATLOW_MAPLEWOOD = [49.3181, -123.1175];
@@ -55,6 +60,12 @@ export const TATLOW = [
     routeNames: [ROUTES.tatlow.name],
     description: "park to marine",
     type: "quiet",
-    positions: [TATLOW_PARK_N, [49.32383, -123.11756]],
+    positions: [TATLOW_PARK_N, TATLOW_MARINE_S],
+  },
+  {
+    routeNames: [ROUTES.tatlow.name],
+    description: "crossing marine",
+    type: "quiet",
+    positions: [TATLOW_MARINE_S, TATLOW_MARINE_N],
   },
 ];

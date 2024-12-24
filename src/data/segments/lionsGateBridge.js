@@ -3,6 +3,8 @@ import {
   LIONS_GATE_KLAHANIE,
   LIONS_GATE_SPIRIT_TRAIL_E,
   LIONS_GATE_SPIRIT_TRAIL_W,
+  NV_MARINE_W_N,
+  NV_MARINE_W_S,
   STANLEY_PARK_CAUSEWAY_GEORGIA_N,
   STANLEY_PARK_LOOP_CAUSEWAY_UNDERPASS_SPLIT,
 } from "../intersections";
@@ -338,7 +340,7 @@ export const LIONS_GATE_BRIDGE = [
       [49.3256, -123.12812],
       [49.32558, -123.12785],
       [49.32547, -123.12725],
-      [49.32543, -123.12677],
+      NV_MARINE_W_S,
     ],
   },
   {
@@ -412,7 +414,7 @@ export const LIONS_GATE_BRIDGE = [
     type: "mixed",
     oneWay: "required",
     positions: [
-      [49.32546, -123.12603],
+      NV_MARINE_W_N,
       [49.32551, -123.12617],
       [49.32561, -123.12645],
       [49.32566, -123.12661],

@@ -1,4 +1,5 @@
 import {
+  BEWICKE_3RD_S,
   BEWICKE_KEITH_SE,
   BEWICKE_SPIRIT_N,
   BEWICKE_SPIRIT_S,
@@ -38,7 +39,7 @@ export const BEWICKE_GREENWAY = [
       [49.31939, -123.09144],
       [49.31966, -123.09132],
       [49.31979, -123.09131],
-      [49.31983, -123.09126],
+      BEWICKE_3RD_S,
       BEWICKE_THIRD_NE,
       BEWICKE_KEITH_SE,
       [49.32005, -123.09117],

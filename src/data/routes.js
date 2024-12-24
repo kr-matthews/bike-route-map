@@ -26,7 +26,6 @@ export const ROUTES = {
   },
   thirdMarine: {
     name: "3rd/Marine",
-    isIncomplete: true,
     regions: [REGIONS.northVancouver],
     legs: [{ videos: {} }],
   },

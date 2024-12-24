@@ -1,4 +1,12 @@
-import { MACKAY_15TH, MACKAY_SPIRIT } from "../intersections";
+import {
+  HAMILTON_MARINE_NE,
+  HAMILTON_MARINE_NW,
+  HAMILTON_MARINE_SE,
+  HAMILTON_MARINE_SE_E,
+  HAMILTON_MARINE_SW,
+  MACKAY_15TH,
+  MACKAY_SPIRIT,
+} from "../intersections";
 import { ROUTES } from "../routes";
 
 const CROSSWALK_WW = [49.32183, -123.10232];
@@ -17,21 +25,23 @@ export const MACKAY = [
       [49.32189, -123.10202],
       NB_LANE_SPLIT,
       [49.32301, -123.10034],
-      [49.32306, -123.10022],
+      HAMILTON_MARINE_SE,
+      HAMILTON_MARINE_NE,
     ],
   },
   {
     description: "nb slip lane",
     type: "painted",
     oneWay: "required",
-    positions: [NB_LANE_SPLIT, [49.32291, -123.10037], [49.323, -123.10005]],
+    positions: [NB_LANE_SPLIT, [49.32291, -123.10037], HAMILTON_MARINE_SE_E],
   },
   {
     description: "sb lane",
     type: "painted",
     oneWay: "required",
     positions: [
-      [49.32312, -123.10036],
+      HAMILTON_MARINE_NW,
+      HAMILTON_MARINE_SW,
       [49.32303, -123.10052],
       [49.32292, -123.10069],
       [49.32193, -123.10217],
