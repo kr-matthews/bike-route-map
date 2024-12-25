@@ -141,6 +141,11 @@ const VIDEOS = {
     date: new Date("Sep 01 2024"),
     minutes: 11,
   },
+  bewickeNb: {
+    id: "gMJW8RVJqMg",
+    date: new Date("Dec 23, 2024"),
+    minutes: 6,
+  },
   blancaNb: {
     id: "eIDCFw23nHo",
     date: new Date("Mar 06 2024"),
@@ -473,6 +478,11 @@ const VIDEOS = {
     tlId: "XJ8duP7vFtc",
     date: new Date("Nov 6 2024"),
     minutes: 6,
+  },
+  fifteenthEb: {
+    id: "DMsgjOsFCQs",
+    date: new Date("Dec 23, 2024"),
+    minutes: 4,
   },
   first2ndEb: {
     id: "oJErMLWpOTo",
@@ -874,6 +884,11 @@ const VIDEOS = {
     id: "pBcl3VMVQMQ",
     date: new Date("May 14 2024"),
     minutes: 5,
+  },
+  mackaySb: {
+    id: "KCcjD99lcC8",
+    date: new Date("Dec 23, 2024"),
+    minutes: 1,
   },
   mainCottonEb: {
     id: "MaXrRoS8MUg",
@@ -1435,6 +1450,12 @@ const VIDEOS = {
     date: new Date("Aug 15 2024"),
     minutes: 48,
   },
+  marineNvWb: {
+    id: "Ry9khAGvH_Q",
+    tlId: "DvVt_E2XYTI",
+    date: new Date("Dec 23, 2024"),
+    minutes: 11,
+  },
   marineWayEb: {
     id: "EHjWLoIMeGU",
     tlId: "NjLlR7HIVrM",
@@ -1446,6 +1467,11 @@ const VIDEOS = {
     tlId: "lwjABK_GyPA",
     date: new Date("Mar 13 2024"),
     minutes: 18,
+  },
+  tatlowNb: {
+    id: "Davj2dfekgA",
+    date: new Date("Dec 23, 2024"),
+    minutes: 2,
   },
   templetonNb: {
     id: "IaMY3iTsISs",

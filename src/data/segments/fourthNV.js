@@ -32,8 +32,12 @@ export const FOURTH_NV = [
     routeNames: [ROUTES.fourthNV.name],
     description: "forbes",
     type: "quiet",
-    videoIds: [VIDEOS.first2ndWb.id, VIDEOS.fourthNVWb.id],
-    videoIdsStartAtEnd: [VIDEOS.first2ndWb.id],
+    videoIds: [
+      VIDEOS.fourthNVWb.id,
+      VIDEOS.marineNvWb.id,
+      VIDEOS.first2ndWb.id,
+    ],
+    videoIdsStartAtEnd: [VIDEOS.marineNvWb.id, VIDEOS.first2ndWb.id],
     videoIdsEndAtStart: [VIDEOS.fourthNVWb.id],
     positions: [
       FORBES_3RD_N,

@@ -1,5 +1,6 @@
 import { MACKAY_15TH, TATLOW_15TH } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const FIFTEENTH_E = [49.322, -123.10339];
 
@@ -8,6 +9,7 @@ export const FIFTEENTH = [
     routeNames: [ROUTES.fifteenth.name],
     description: "road",
     type: "quiet",
+    videoIds: [VIDEOS.fifteenthEb.id],
     positions: [
       TATLOW_15TH,
       [49.32214, -123.11481],
@@ -24,6 +26,7 @@ export const FIFTEENTH = [
     routeNames: [ROUTES.fifteenth.name],
     description: "path",
     type: "mixed",
+    videoIds: [VIDEOS.fifteenthEb.id],
     positions: [
       FIFTEENTH_E,
       [49.32192, -123.10339],

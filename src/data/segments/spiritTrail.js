@@ -268,9 +268,8 @@ export const SPIRIT_TRAIL = [
   },
   {
     routeNames: [ROUTES.spiritTrail.name],
-    description: "lions gate to mackay",
+    description: "lions gate to garden",
     type: "comfortable",
-    elevation: 0.5,
     videoIds: [VIDEOS.spiritTrailEb.id],
     positions: [
       AFTER_LIONS_GATE,
@@ -315,6 +314,23 @@ export const SPIRIT_TRAIL = [
       [49.31795, -123.1183],
       [49.31793, -123.11821],
       GARDEN_SPIRIT_TRAIL,
+    ],
+  },
+  {
+    routeNames: [ROUTES.spiritTrail.name],
+    description: "garden to tatlow",
+    type: "mixed",
+    videoIds: [VIDEOS.spiritTrailEb.id, VIDEOS.tatlowNb.id],
+    videoIdsStartAtStart: [VIDEOS.tatlowNb.id],
+    positions: [GARDEN_SPIRIT_TRAIL, TATLOW_SPIRIT],
+  },
+  {
+    routeNames: [ROUTES.spiritTrail.name],
+    description: "tatlow to mackay",
+    type: "comfortable",
+    elevation: 0.5,
+    videoIds: [VIDEOS.spiritTrailEb.id],
+    positions: [
       TATLOW_SPIRIT,
       [49.31797, -123.1173],
       [49.31787, -123.11661],
@@ -494,7 +510,7 @@ export const SPIRIT_TRAIL = [
     routeNames: [ROUTES.spiritTrail.name, ROUTES.bewickeGreenway.name],
     description: "bewicke overlap",
     type: "mixed",
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [VIDEOS.spiritTrailEb.id, VIDEOS.bewickeNb.id],
     positions: [BEWICKE_SPIRIT_S, [49.31455, -123.09178], BEWICKE_SPIRIT_N],
   },
   {

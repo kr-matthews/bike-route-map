@@ -157,7 +157,7 @@ export const MARINE_NV = [
     description: "wb: forbes to 2nd",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.first2ndWb.id],
+    videoIds: [VIDEOS.marineNvWb.id, VIDEOS.first2ndWb.id],
     positions: [
       FORBES_3RD_N,
       [49.31745, -123.08601],
@@ -173,6 +173,7 @@ export const MARINE_NV = [
     description: "wb: 2nd to 15th-ish",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.marineNvWb.id],
     positions: [
       THIRD_2ND_N,
       [49.31936, -123.09022],
@@ -193,6 +194,7 @@ export const MARINE_NV = [
     description: "wb: 15th-ish to hamilton",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.marineNvWb.id],
     positions: [
       WB_PRE_15TH,
       [49.32217, -123.09723],
@@ -207,6 +209,7 @@ export const MARINE_NV = [
     description: "wb: hamilton to mackay rd",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.marineNvWb.id],
     positions: [
       HAMILTON_MARINE_NE,
       HAMILTON_MARINE_NW,
@@ -223,6 +226,7 @@ export const MARINE_NV = [
     description: "wb: mackay rd to capilano",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.marineNvWb.id],
     positions: [
       MACKAY_RD_MARINE_N,
       [49.32389, -123.10232],
@@ -247,6 +251,7 @@ export const MARINE_NV = [
     description: "wb: capilano bus stop",
     type: "combined",
     oneWay: "required",
+    videoIds: [VIDEOS.marineNvWb.id],
     positions: [
       CAPILANO_MARINE_NW,
       [49.32451, -123.12273],
@@ -261,6 +266,7 @@ export const MARINE_NV = [
     // there's another brief separated lane in here...
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.marineNvWb.id],
     positions: [
       WB_POST_CAPILANO,
       [49.32484, -123.1239],

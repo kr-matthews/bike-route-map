@@ -86,7 +86,7 @@ export const ROUTES = {
   fifteenth: {
     name: "15th St",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.fifteenthEb } }],
   },
   sixteenth: {
     name: "16th Ave",
@@ -283,7 +283,7 @@ export const ROUTES = {
   bewickeGreenway: {
     name: "Bewicke Greenway",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.bewickeNb } }],
   },
   bigBendPath: {
     name: "Big Bend Path",
@@ -1022,7 +1022,7 @@ export const ROUTES = {
   mackay: {
     name: "MacKay",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.mackaySb } }],
   },
   mainCotton: {
     name: "Main St/Cotton Rd",
@@ -1056,7 +1056,7 @@ export const ROUTES = {
     name: "Marine Dr/3rd St (North Vancouver)",
     shortName: "Marine/3rd (NV)",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { westbound: VIDEOS.marineNvWb } }],
   },
   marineWv: {
     name: "Marine Dr (West Vancouver)",
@@ -1667,7 +1667,7 @@ export const ROUTES = {
   tatlow: {
     name: "Tatlow",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.tatlowNb } }],
   },
   templeton: {
     name: "Templeton St",
