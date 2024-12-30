@@ -9,7 +9,7 @@ import { VIDEOS } from "./videos";
 // Richmond: south dyke; ...and around steveston
 // YVR:
 // New Westminster:
-// North Vancouver: lions gate village; queensbury; necklace: grand blvd & keith; capilano; dollarton; mt seymour;
+// North Vancouver: queensbury; necklace: grand blvd & keith; capilano; dollarton; mt seymour;
 // West Vancouver: spirit trail alt.?; ...more
 // Surrey: scott rd; alex fraser; serpentine; timbers; fraser hwy;
 // Delta:
@@ -988,6 +988,11 @@ export const ROUTES = {
         },
       },
     ],
+  },
+  lionsGateVillage: {
+    name: "Lions Gate Village",
+    regions: [REGIONS.northVancouver],
+    legs: [{ videos: {} }],
   },
   londonDublin: {
     name: "London/Dublin Greenway",

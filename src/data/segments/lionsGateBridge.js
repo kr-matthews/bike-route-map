@@ -431,14 +431,4 @@ export const LIONS_GATE_BRIDGE = [
       LIONS_GATE_KLAHANIE,
     ],
   },
-  {
-    description: "connection to klahanie",
-    type: "mixed",
-    positions: [
-      LIONS_GATE_KLAHANIE,
-      [49.32669, -123.12661],
-      [49.32651, -123.12594],
-      [49.3265, -123.12579],
-    ],
-  },
 ];

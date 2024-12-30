@@ -105,6 +105,7 @@ import { KNIGHT_STREET_BRIDGE } from "./knightStBridge";
 import { LAKES } from "./lakes";
 import { LAKEWOOD } from "./lakewood";
 import { LIONS_GATE_BRIDGE } from "./lionsGateBridge";
+import { LIONS_GATE_VILLAGE } from "./lionsGateVillage";
 import { LONDON_DUBLIN_GREENWAY } from "./londonDublin";
 import { LOUGHEED } from "./lougheed";
 import { LOW_LEVEL } from "./lowLevel";
@@ -326,6 +327,7 @@ export const SEGMENTS = [
   ...LAKES,
   ...LAKEWOOD,
   ...LIONS_GATE_BRIDGE,
+  ...LIONS_GATE_VILLAGE,
   ...LONDON_DUBLIN_GREENWAY,
   ...LOUGHEED,
   ...LOW_LEVEL,
