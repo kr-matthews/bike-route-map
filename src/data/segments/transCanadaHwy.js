@@ -1,4 +1,8 @@
-import { EAGLERIDGE_PATH_START, HORSESHOE_BAY_SW } from "../intersections";
+import {
+  CAPILANO_HWY_1_S_NE,
+  EAGLERIDGE_PATH_START,
+  HORSESHOE_BAY_SW,
+} from "../intersections";
 import { ROUTES } from "../routes";
 
 const NELSON_CREEK_HWY_1_SW = [49.36197, -123.26354];
@@ -16,9 +20,13 @@ const TAYLOR_HWY_1_SE = [49.33715, -123.13447];
 const EB_PRE_CAPILANO_BRIDGE = [49.33329, -123.122];
 const CAPILANO_OVERPASS_SW = [49.33248, -123.11942];
 const CAPILANO_OVERPASS_SE = [49.33247, -123.11684];
+const EB_SHOULDER_END = [49.33245, -123.11593];
 
+const CAPILANO_NB_LANE_END = [49.33257, -123.11711];
+const WB_PATH_START = [49.33382, -123.11622];
 const CAPILANO_OVERPASS_NE = [49.33264, -123.11687];
 const CAPILANO_OVERPASS_NW = [49.33265, -123.11942];
+const KEITH_HWY_1 = [49.33285, -123.12052];
 const THIRD_HWY_1 = [49.33424, -123.12301];
 const HADDEN_HWY_1 = [49.33774, -123.12957];
 const WB_PRE_TAYLOR = [49.338, -123.13219];
@@ -40,6 +48,38 @@ const TUNNEL_E = [49.36134, -123.2701];
 const TUNNEL_W = [49.36103, -123.27121];
 
 export const TRANS_CANADA_HWY = [
+  // connections
+  {
+    description: "path to keith",
+    type: "mixed",
+    positions: [
+      KEITH_HWY_1,
+      [49.3329, -123.12042],
+      [49.33294, -123.1203],
+      [49.33296, -123.12005],
+      [49.33292, -123.11976],
+      [49.33283, -123.11922],
+    ],
+  },
+  {
+    description: "path to 3rd",
+    type: "mixed",
+    positions: [
+      THIRD_HWY_1,
+      [49.33469, -123.12372],
+      [49.33475, -123.12385],
+      [49.3348, -123.12392],
+      [49.33487, -123.12397],
+      [49.33491, -123.12404],
+      [49.33498, -123.12414],
+      [49.33508, -123.12416],
+      [49.33538, -123.12417],
+      [49.33545, -123.12415],
+      [49.33551, -123.12409],
+      [49.33557, -123.12409],
+    ],
+  },
+
   // eb
   {
     routeNames: [ROUTES.transCanadaHwy.name],
@@ -520,23 +560,69 @@ export const TRANS_CANADA_HWY = [
       CAPILANO_OVERPASS_SE,
       [49.33247, -123.11646],
       [49.33247, -123.11614],
-      [49.33245, -123.11593],
+      EB_SHOULDER_END,
+    ],
+  },
+  {
+    routeNames: [ROUTES.transCanadaHwy.name],
+    description: "eb exit to capilano",
+    type: "shared",
+    oneWay: "required",
+    positions: [
+      EB_SHOULDER_END,
       [49.33242, -123.11575],
       [49.33235, -123.11553],
       [49.33228, -123.11537],
       [49.33221, -123.11526],
       [49.33213, -123.11519],
+      [49.332, -123.11513],
+      [49.33191, -123.11512],
+      [49.3318, -123.11515],
+      [49.33172, -123.1152],
+      [49.33165, -123.11526],
+      [49.3316, -123.11532],
+      [49.33153, -123.11545],
+      [49.33149, -123.11557],
+      [49.33146, -123.11574],
+      [49.33146, -123.11678],
+      CAPILANO_HWY_1_S_NE,
     ],
   },
 
   // wb
+  {
+    description: "capilano nb under hwy 1 part 1",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      CAPILANO_HWY_1_S_NE,
+      [49.33165, -123.11712],
+      [49.33227, -123.11712],
+      CAPILANO_NB_LANE_END,
+    ],
+  },
+  {
+    description: "capilano nb under hwy 1 part 2",
+    type: "shared",
+    oneWay: "required",
+    positions: [
+      CAPILANO_NB_LANE_END,
+      [49.33278, -123.11708],
+      [49.33307, -123.11696],
+      [49.33332, -123.11679],
+      [49.33365, -123.11652],
+      [49.3338, -123.11639],
+      [49.33383, -123.11626],
+      WB_PATH_START,
+    ],
+  },
   {
     routeNames: [ROUTES.transCanadaHwy.name],
     description: "wb capilano onramp",
     type: "mixed",
     elevation: 0.5,
     positions: [
-      [49.33382, -123.11622],
+      WB_PATH_START,
       [49.3338, -123.11619],
       [49.33381, -123.1161],
       [49.33379, -123.116],
@@ -581,29 +667,11 @@ export const TRANS_CANADA_HWY = [
       [49.33271, -123.11983],
       [49.33275, -123.12016],
       [49.33279, -123.12035],
-      [49.33285, -123.12052],
+      KEITH_HWY_1,
       [49.33294, -123.12076],
       [49.33302, -123.12097],
       [49.33324, -123.12136],
       THIRD_HWY_1,
-    ],
-  },
-  {
-    description: "path to 3rd",
-    type: "mixed",
-    positions: [
-      THIRD_HWY_1,
-      [49.33469, -123.12372],
-      [49.33475, -123.12385],
-      [49.3348, -123.12392],
-      [49.33487, -123.12397],
-      [49.33491, -123.12404],
-      [49.33498, -123.12414],
-      [49.33508, -123.12416],
-      [49.33538, -123.12417],
-      [49.33545, -123.12415],
-      [49.33551, -123.12409],
-      [49.33557, -123.12409],
     ],
   },
   {
