@@ -64,8 +64,8 @@ const MID_CONVENTION_CENTER = [49.28962, -123.11524];
 const NORTH_OF_CANADA_PLACE = [49.28832, -123.11518];
 const WEST_OF_COLUMBIA = [49.27181, -123.11004];
 const EAST_OF_TRAFALGAR = [49.27359, -123.16412];
-const BALSAM_CORNWALL_LANE_N = [49.2731, -123.15969];
-const ARBUTUS_WHYTE_LANE_N = [49.27584, -123.1515];
+const BALSAM_CORNWALL_LANE_N = [49.27322, -123.15971];
+const ARBUTUS_MCNICOLL = [49.27623, -123.15118];
 const CHESTNUT_SEASIDE = [49.27725, -123.14617];
 const SEASIDE_KITS_MARINA = [49.27487, -123.13983];
 const EAST_OF_SPYGLASS = [49.2712, -123.11435];
@@ -374,7 +374,7 @@ export const SEASIDE = [
       [49.27355, -123.16014],
       [49.27351, -123.15996],
       [49.27343, -123.15981],
-      [49.27332, -123.15971],
+      [49.27332, -123.15973],
       BALSAM_CORNWALL_LANE_N,
     ],
   },
@@ -385,28 +385,34 @@ export const SEASIDE = [
     videoIds: [VIDEOS.seasideKitsWb.id],
     positions: [
       BALSAM_CORNWALL_LANE_N,
-      [49.27277, -123.15898],
-      [49.2727, -123.1551],
-      [49.27274, -123.15499],
-      [49.27328, -123.15488],
-      [49.2733, -123.1546],
-      [49.27335, -123.15448],
-      [49.27343, -123.15282],
-      [49.2734, -123.15274],
-      [49.2734, -123.15261],
+      [49.27318, -123.15967],
+      [49.27312, -123.15966],
+      [49.27277, -123.15899],
+      [49.2727, -123.15512],
+      [49.27271, -123.15505],
+      [49.27279, -123.15501],
+      [49.27325, -123.15491],
+      [49.27333, -123.15494],
+      [49.27338, -123.15492],
+      [49.27351, -123.15463],
+      [49.2737, -123.15438],
+      [49.27391, -123.15429],
+      [49.27403, -123.15414],
+      [49.2741, -123.15398],
+      [49.27413, -123.15356],
+      [49.27415, -123.15258],
       [49.27464, -123.15256],
       ARBUTUS_WHYTE,
-      ARBUTUS_WHYTE_LANE_N,
+      ARBUTUS_MCNICOLL,
     ],
   },
   {
     routeNames: [ROUTES.seaside.name],
-    description: "kits - whyte-ish to cypress",
+    description: "kits - mcnicoll to cypress",
     type: "quiet",
     videoIds: [VIDEOS.seasideKitsWb.id],
     positions: [
-      ARBUTUS_WHYTE_LANE_N,
-      [49.27586, -123.15144],
+      ARBUTUS_MCNICOLL,
       [49.27626, -123.15109],
       [49.27625, -123.15007],
       [49.27713, -123.15003],
