@@ -877,7 +877,14 @@ export const ROUTES = {
   horseshoeBay: {
     name: "Horseshoe Bay Dr",
     regions: [REGIONS.westVancouver],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: {
+          northbound: VIDEOS.horseshoeBayNb,
+          southbound: VIDEOS.horseshoeBaySb,
+        },
+      },
+    ],
   },
   howes: {
     name: "Howes St",
@@ -992,7 +999,7 @@ export const ROUTES = {
   lionsGateVillage: {
     name: "Lions Gate Village",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.lionsGateVillageSb } }],
   },
   londonDublin: {
     name: "London/Dublin Greenway",
@@ -1705,7 +1712,15 @@ export const ROUTES = {
     name: "Trans Canada Hwy",
     isIncomplete: true,
     regions: [REGIONS.westVancouver],
-    legs: [{ name: "West Vancouver", videos: {} }],
+    legs: [
+      {
+        name: "West Vancouver",
+        videos: {
+          eastbound: VIDEOS.transCanadaHwyEb,
+          westbound: VIDEOS.transCanadaHwyWb,
+        },
+      },
+    ],
   },
   transCanadaTrail: {
     name: "Trans Canada Trail",

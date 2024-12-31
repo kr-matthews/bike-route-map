@@ -372,8 +372,8 @@ export const LIONS_GATE_BRIDGE = [
   {
     description: "connection around loops",
     type: "mixed",
-    videoIds: [VIDEOS.marineNvWb.id],
-    videoIdsEndAtStart: [VIDEOS.marineNvWb.id],
+    videoIds: [VIDEOS.lionsGateVillageSb.id, VIDEOS.marineNvWb.id],
+    videoIdsEndAtStart: [VIDEOS.lionsGateVillageSb.id, VIDEOS.marineNvWb.id],
     positions: [
       SOUTHBOUND_ON_RAMP_MERGE,
       [49.32518, -123.13013],

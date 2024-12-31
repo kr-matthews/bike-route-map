@@ -4,6 +4,7 @@ import {
   MARINE_MARINE_MARINE,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const EAGLERIDGE_HORSESHOE_BAY_SE = [49.36139, -123.27346];
 const WB_SHOULDER_START = [49.36146, -123.27371];
@@ -58,10 +59,10 @@ export const HORSESHOE_BAY = [
 
   // nb
   {
-    routeNames: [ROUTES.horseshoeBay.name],
     description: "path: hwy 1 -> eagleridge",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.horseshoeBayNb.id, VIDEOS.transCanadaHwyWb.id],
     positions: [
       EAGLERIDGE_PATH_START,
       [49.36117, -123.27246],
@@ -72,10 +73,11 @@ export const HORSESHOE_BAY = [
     ],
   },
   {
-    routeNames: [ROUTES.horseshoeBay.name],
     description: "roundabout",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.horseshoeBayNb.id, VIDEOS.transCanadaHwyWb.id],
+    videoIdsEndAtEnd: [VIDEOS.transCanadaHwyWb.id],
     positions: [
       EAGLERIDGE_HORSESHOE_BAY_SE,
       [49.36145, -123.27334],
@@ -101,6 +103,7 @@ export const HORSESHOE_BAY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.horseshoeBayNb.id],
     positions: [
       WB_SHOULDER_START,
       [49.36153, -123.27384],
@@ -218,6 +221,7 @@ export const HORSESHOE_BAY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.horseshoeBayNb.id],
     positions: [
       NB_ELEVATION_START,
       [49.38702, -123.25756],
@@ -233,6 +237,8 @@ export const HORSESHOE_BAY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.horseshoeBayNb.id],
+    videoIdsEndAtEnd: [VIDEOS.horseshoeBayNb.id],
     positions: [
       NB_ELEVATION_END,
       [49.38747, -123.25662],
@@ -252,6 +258,8 @@ export const HORSESHOE_BAY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.horseshoeBaySb.id],
+    videoIdsStartAtStart: [VIDEOS.horseshoeBaySb.id],
     positions: [
       [49.38759, -123.25703],
       [49.38739, -123.25726],
@@ -344,6 +352,8 @@ export const HORSESHOE_BAY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.transCanadaHwyEb.id, VIDEOS.horseshoeBaySb.id],
+    videoIdsStartAtStart: [VIDEOS.transCanadaHwyEb.id],
     positions: [
       HORSESHOE_BAY_MARINE_W,
       [49.36885, -123.2751],
@@ -362,6 +372,7 @@ export const HORSESHOE_BAY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.transCanadaHwyEb.id, VIDEOS.horseshoeBaySb.id],
     positions: [SB_ELEVATION_START, [49.3665, -123.27602], SB_ELEVATION_END],
   },
   {
@@ -370,6 +381,8 @@ export const HORSESHOE_BAY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.transCanadaHwyEb.id, VIDEOS.horseshoeBaySb.id],
+    videoIdsEndAtEnd: [VIDEOS.horseshoeBaySb.id],
     positions: [
       SB_ELEVATION_END,
       [49.36603, -123.27613],

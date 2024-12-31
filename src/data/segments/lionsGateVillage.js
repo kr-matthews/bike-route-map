@@ -1,5 +1,6 @@
 import { LIONS_GATE_KLAHANIE } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const KLAHANIE_W = [49.3265, -123.12579];
 const PATH_S = [49.32604, -123.12316];
@@ -10,6 +11,7 @@ export const LIONS_GATE_VILLAGE = [
     routeNames: [ROUTES.lionsGateVillage.name],
     description: "lions gate loops to klahanie",
     type: "mixed",
+    videoIds: [VIDEOS.lionsGateVillageSb.id],
     positions: [
       LIONS_GATE_KLAHANIE,
       [49.32669, -123.12661],
@@ -21,6 +23,7 @@ export const LIONS_GATE_VILLAGE = [
     routeNames: [ROUTES.lionsGateVillage.name],
     description: "klahanie & curling",
     type: "quiet",
+    videoIds: [VIDEOS.lionsGateVillageSb.id],
     positions: [
       KLAHANIE_W,
       [49.32645, -123.12564],
@@ -47,12 +50,15 @@ export const LIONS_GATE_VILLAGE = [
     routeNames: [ROUTES.lionsGateVillage.name],
     description: "path",
     type: "mixed",
+    videoIds: [VIDEOS.lionsGateVillageSb.id],
     positions: [PATH_S, [49.32611, -123.12306], [49.32735, -123.12152], PATH_N],
   },
   {
     routeNames: [ROUTES.lionsGateVillage.name],
     description: "fullerton east",
     type: "quiet",
+    videoIds: [VIDEOS.lionsGateVillageSb.id],
+    videoIdsStartAtEnd: [VIDEOS.lionsGateVillageSb.id],
     positions: [
       PATH_N,
       [49.32703, -123.12065],

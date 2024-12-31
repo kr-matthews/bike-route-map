@@ -4,6 +4,7 @@ import {
   HORSESHOE_BAY_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const NELSON_CREEK_HWY_1_SW = [49.36197, -123.26354];
 const NELSON_CREEK_HWY_1_SE = [49.36159, -123.26026];
@@ -87,6 +88,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.transCanadaHwyEb.id],
     positions: [
       HORSESHOE_BAY_SW,
       [49.36366, -123.27616],
@@ -142,6 +144,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.transCanadaHwyEb.id],
     positions: [
       NELSON_CREEK_HWY_1_SW,
       [49.36196, -123.26319],
@@ -160,6 +163,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.transCanadaHwyEb.id],
     positions: [
       NELSON_CREEK_HWY_1_SE,
       [49.3615, -123.25991],
@@ -175,6 +179,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.transCanadaHwyEb.id],
     positions: [WESTPORT_HWY_1_SW, [49.36023, -123.25619], WESTPORT_HWY_1_SE],
   },
   {
@@ -183,6 +188,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.transCanadaHwyEb.id],
     positions: [
       WESTPORT_HWY_1_SE,
       [49.35994, -123.25553],
@@ -258,6 +264,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.transCanadaHwyEb.id],
     positions: [ALMONDEL_HWY_1_SW, [49.34894, -123.23705], ALMONDEL_HWY_1_SE],
   },
   {
@@ -266,6 +273,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.transCanadaHwyEb.id],
     positions: [
       ALMONDEL_HWY_1_SE,
       [49.349, -123.23544],
@@ -379,6 +387,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.transCanadaHwyEb.id],
     positions: [TWENTY_FIRST_HWY_1_SW, TWENTY_FIRST_HWY_1_SE],
   },
   {
@@ -387,6 +396,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.transCanadaHwyEb.id],
     positions: [
       TWENTY_FIRST_HWY_1_SE,
       [49.34394, -123.16697],
@@ -420,6 +430,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.transCanadaHwyEb.id],
     positions: [
       FIFTEENTH_OVERPASS_SW,
       [49.34304, -123.15615],
@@ -433,6 +444,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.transCanadaHwyEb.id],
     positions: [
       FIFTEENTH_OVERPASS_SE,
       [49.34276, -123.1548],
@@ -481,6 +493,7 @@ export const TRANS_CANADA_HWY = [
     description: "eb crossing taylor",
     type: "other",
     oneWay: "required",
+    videoIds: [VIDEOS.transCanadaHwyEb.id],
     positions: [
       TAYLOR_HWY_1_SW,
       [49.33726, -123.13511],
@@ -495,6 +508,7 @@ export const TRANS_CANADA_HWY = [
     description: "eb taylor to capilano river",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.transCanadaHwyEb.id],
     positions: [
       TAYLOR_HWY_1_SE,
       [49.33722, -123.13438],
@@ -526,6 +540,7 @@ export const TRANS_CANADA_HWY = [
     type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.transCanadaHwyEb.id],
     positions: [
       EB_PRE_CAPILANO_BRIDGE,
       [49.33325, -123.122],
@@ -548,6 +563,7 @@ export const TRANS_CANADA_HWY = [
     type: "other",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.transCanadaHwyEb.id],
     positions: [CAPILANO_OVERPASS_SW, CAPILANO_OVERPASS_SE],
   },
   {
@@ -556,6 +572,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.transCanadaHwyEb.id],
     positions: [
       CAPILANO_OVERPASS_SE,
       [49.33247, -123.11646],
@@ -568,6 +585,8 @@ export const TRANS_CANADA_HWY = [
     description: "eb exit to capilano",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.transCanadaHwyEb.id],
+    videoIdsEndAtEnd: [VIDEOS.transCanadaHwyEb.id],
     positions: [
       EB_SHOULDER_END,
       [49.33242, -123.11575],
@@ -594,6 +613,8 @@ export const TRANS_CANADA_HWY = [
     description: "capilano nb under hwy 1 part 1",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.transCanadaHwyWb.id],
+    videoIdsStartAtStart: [VIDEOS.transCanadaHwyWb.id],
     positions: [
       CAPILANO_HWY_1_S_NE,
       [49.33165, -123.11712],
@@ -605,6 +626,7 @@ export const TRANS_CANADA_HWY = [
     description: "capilano nb under hwy 1 part 2",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.transCanadaHwyWb.id],
     positions: [
       CAPILANO_NB_LANE_END,
       [49.33278, -123.11708],
@@ -621,6 +643,7 @@ export const TRANS_CANADA_HWY = [
     description: "wb capilano onramp",
     type: "mixed",
     elevation: 0.5,
+    videoIds: [VIDEOS.transCanadaHwyWb.id],
     positions: [
       WB_PATH_START,
       [49.3338, -123.11619],
@@ -647,6 +670,7 @@ export const TRANS_CANADA_HWY = [
     description: "wb capilano river",
     type: "other",
     elevation: 1,
+    videoIds: [VIDEOS.transCanadaHwyWb.id],
     positions: [
       CAPILANO_OVERPASS_NE,
       [49.33263, -123.11754],
@@ -661,6 +685,7 @@ export const TRANS_CANADA_HWY = [
     description: "wb capilano proper path",
     type: "mixed",
     elevation: 0.5,
+    videoIds: [VIDEOS.transCanadaHwyWb.id],
     positions: [
       CAPILANO_OVERPASS_NW,
       [49.33267, -123.11955],
@@ -679,6 +704,7 @@ export const TRANS_CANADA_HWY = [
     description: "wb 3rd to taylor",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.transCanadaHwyWb.id],
     positions: [
       THIRD_HWY_1,
       [49.33426, -123.12316],
@@ -709,6 +735,7 @@ export const TRANS_CANADA_HWY = [
     description: "wb crossing taylor",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.transCanadaHwyWb.id],
     positions: [
       WB_PRE_TAYLOR,
       [49.33804, -123.13322],
@@ -724,6 +751,7 @@ export const TRANS_CANADA_HWY = [
     description: "wb taylor to cross creek",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.transCanadaHwyWb.id],
     positions: [
       WESTCOT_HWY_1,
       [49.33813, -123.13681],
@@ -756,6 +784,7 @@ export const TRANS_CANADA_HWY = [
     type: "dedicated",
     oneWay: "required",
     hideArrows: true,
+    videoIds: [VIDEOS.transCanadaHwyWb.id],
     positions: [CROSS_CREEK_HWY_1_PATH_E, CROSS_CREEK_HWY_1_PATH_W],
   },
   {
@@ -764,6 +793,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.transCanadaHwyWb.id],
     positions: [
       CROSS_CREEK_HWY_1_PATH_W,
       [49.34248, -123.15315],
@@ -780,6 +810,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.transCanadaHwyWb.id],
     positions: [
       FIFTEENTH_OVERPASS_NE,
       [49.34308, -123.15527],
@@ -794,6 +825,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.transCanadaHwyWb.id],
     positions: [
       FIFTEENTH_OVERPASS_NW,
       [49.34328, -123.1563],
@@ -828,6 +860,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.transCanadaHwyWb.id],
     positions: [
       TWENTY_FIRST_HWY_1_NE,
       [49.34425, -123.1676],
@@ -841,6 +874,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.transCanadaHwyWb.id],
     positions: [
       TWENTY_FIRST_HWY_1_NW,
       [49.34421, -123.16849],
@@ -961,6 +995,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.transCanadaHwyWb.id],
     positions: [ALMONDEL_HWY_1_NE, [49.34916, -123.23658], ALMONDEL_HWY_1_NW],
   },
   {
@@ -969,6 +1004,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.transCanadaHwyWb.id],
     positions: [
       ALMONDEL_HWY_1_NW,
       [49.34911, -123.2396],
@@ -1035,6 +1071,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.transCanadaHwyWb.id],
     positions: [WESTPORT_HWY_1_NE, [49.36033, -123.2559], WESTPORT_HWY_1_NW],
   },
   {
@@ -1043,6 +1080,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.transCanadaHwyWb.id],
     positions: [
       WESTPORT_HWY_1_NW,
       [49.36062, -123.2566],
@@ -1061,6 +1099,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.transCanadaHwyWb.id],
     positions: [
       NELSON_CREEK_HWY_1_NE,
       [49.36185, -123.26056],
@@ -1078,6 +1117,8 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.horseshoeBayNb.id, VIDEOS.transCanadaHwyWb.id],
+    videoIdsStartAtStart: [VIDEOS.horseshoeBayNb.id],
     positions: [
       NELSON_CREEK_HWY_1_NW,
       [49.3622, -123.26364],
@@ -1098,6 +1139,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: -0.5,
+    videoIds: [VIDEOS.horseshoeBayNb.id, VIDEOS.transCanadaHwyWb.id],
     positions: [PRE_TUNNEL, TUNNEL_E],
   },
   {
@@ -1106,6 +1148,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: -1,
+    videoIds: [VIDEOS.horseshoeBayNb.id, VIDEOS.transCanadaHwyWb.id],
     positions: [
       TUNNEL_E,
       [49.36119, -123.2706],
@@ -1119,6 +1162,7 @@ export const TRANS_CANADA_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: -0.5,
+    videoIds: [VIDEOS.horseshoeBayNb.id, VIDEOS.transCanadaHwyWb.id],
     positions: [
       TUNNEL_W,
       [49.361, -123.27143],

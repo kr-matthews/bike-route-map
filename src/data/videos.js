@@ -738,6 +738,18 @@ const VIDEOS = {
     date: new Date("May 18 2024"),
     minutes: 11,
   },
+  horseshoeBayNb: {
+    id: "UhcaJf4CUnM",
+    tlId: "eqIV7XFIiZ8",
+    date: new Date("Dec 29 2024"),
+    minutes: 12,
+  },
+  horseshoeBaySb: {
+    id: "QFh5Rx9Q1V8",
+    tlId: "vKLgCxTemdA",
+    date: new Date("Dec 29 2024"),
+    minutes: 9,
+  },
   howesNb: {
     id: "QemciyuJDOQ",
     date: new Date("Mar 13 2024"),
@@ -841,6 +853,11 @@ const VIDEOS = {
     tlId: "L8Tr3d4yhiA",
     date: new Date("Jun 14 2023"),
     minutes: 13,
+  },
+  lionsGateVillageSb: {
+    id: "Edv2iDlEPIs",
+    date: new Date("Dec 29 2024"),
+    minutes: 4,
   },
   londonDublinEb: {
     id: "fvOLbFCH6RM",
@@ -1507,6 +1524,18 @@ const VIDEOS = {
     id: "B5KPg3I32Ws",
     date: new Date("Jun 07 2023"),
     minutes: 8,
+  },
+  transCanadaHwyEb: {
+    id: "62pilPL6YEo",
+    tlId: "7teI4QPjoE4",
+    date: new Date("Dec 29 2024"),
+    minutes: 38,
+  },
+  transCanadaHwyWb: {
+    id: "PwWZ0qAnyt8",
+    tlId: "_8BzD3myX7A",
+    date: new Date("Dec 29 2024"),
+    minutes: 35,
   },
   twentyNinthWb: {
     id: "ReFbPGbBm38",
