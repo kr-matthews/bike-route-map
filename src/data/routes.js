@@ -9,7 +9,7 @@ import { VIDEOS } from "./videos";
 // Richmond: south dyke; ...and around steveston
 // YVR:
 // New Westminster:
-// North Vancouver: queensbury; necklace: grand blvd & keith; capilano; dollarton; mt seymour;
+// North Vancouver: queensbury; necklace: grand blvd & keith; dollarton; mt seymour;
 // West Vancouver: spirit trail alt.?; ...more
 // Surrey: scott rd; alex fraser; serpentine; timbers; fraser hwy;
 // Delta:
@@ -431,6 +431,12 @@ export const ROUTES = {
         videos: { eastbound: VIDEOS.riverDrPathEb },
       },
     ],
+  },
+  capilano: {
+    name: "Capilano Rd",
+    isIncomplete: true,
+    regions: [REGIONS.northVancouver],
+    legs: [{ videos: {} }],
   },
   cardero: {
     name: "Cardero",

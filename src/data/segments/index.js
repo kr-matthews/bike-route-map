@@ -29,6 +29,7 @@ import { BYRNE_CREEK } from "./byrneCreek";
 import { CAMBIE } from "./cambie";
 import { CAMBIE_BRIDGE } from "./cambieBridge";
 import { CANADA_LINE } from "./canadaLine";
+import { CAPILANO } from "./capilano";
 import { CARDERO } from "./cardero";
 import { CARIBOO } from "./cariboo";
 import { CARNARVON } from "./carnarvon";
@@ -251,6 +252,7 @@ export const SEGMENTS = [
   ...CAMBIE,
   ...CAMBIE_BRIDGE,
   ...CANADA_LINE,
+  ...CAPILANO,
   ...CARDERO,
   ...CARIBOO,
   ...CARNARVON,

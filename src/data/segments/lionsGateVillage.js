@@ -1,4 +1,9 @@
-import { LIONS_GATE_KLAHANIE } from "../intersections";
+import {
+  CAPILANO_CURLING_W,
+  CAPILANO_FULLERTON_E,
+  CAPILANO_FULLERTON_W,
+  LIONS_GATE_KLAHANIE,
+} from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
@@ -42,8 +47,8 @@ export const LIONS_GATE_VILLAGE = [
     positions: [
       PATH_S,
       [49.326, -123.12306],
-      [49.32527, -123.12159],
-      [49.32519, -123.12144],
+      CAPILANO_CURLING_W,
+      // [49.32519, -123.12144],
     ],
   },
   {
@@ -63,8 +68,8 @@ export const LIONS_GATE_VILLAGE = [
       PATH_N,
       [49.32703, -123.12065],
       [49.32691, -123.12041],
-      [49.3267, -123.11994],
-      [49.3266, -123.11973],
+      CAPILANO_FULLERTON_W,
+      CAPILANO_FULLERTON_E,
     ],
   },
 ];

@@ -1,4 +1,5 @@
 import {
+  CAPILANO_HWY_1_N_SE,
   CAPILANO_HWY_1_S_NE,
   EAGLERIDGE_PATH_START,
   HORSESHOE_BAY_SW,
@@ -23,8 +24,6 @@ const CAPILANO_OVERPASS_SW = [49.33248, -123.11942];
 const CAPILANO_OVERPASS_SE = [49.33247, -123.11684];
 const EB_SHOULDER_END = [49.33245, -123.11593];
 
-const CAPILANO_NB_LANE_END = [49.33257, -123.11711];
-const WB_PATH_START = [49.33382, -123.11622];
 const CAPILANO_OVERPASS_NE = [49.33264, -123.11687];
 const CAPILANO_OVERPASS_NW = [49.33265, -123.11942];
 const KEITH_HWY_1 = [49.33285, -123.12052];
@@ -610,42 +609,13 @@ export const TRANS_CANADA_HWY = [
 
   // wb
   {
-    description: "capilano nb under hwy 1 part 1",
-    type: "painted",
-    oneWay: "required",
-    videoIds: [VIDEOS.transCanadaHwyWb.id],
-    videoIdsStartAtStart: [VIDEOS.transCanadaHwyWb.id],
-    positions: [
-      CAPILANO_HWY_1_S_NE,
-      [49.33165, -123.11712],
-      [49.33227, -123.11712],
-      CAPILANO_NB_LANE_END,
-    ],
-  },
-  {
-    description: "capilano nb under hwy 1 part 2",
-    type: "shared",
-    oneWay: "required",
-    videoIds: [VIDEOS.transCanadaHwyWb.id],
-    positions: [
-      CAPILANO_NB_LANE_END,
-      [49.33278, -123.11708],
-      [49.33307, -123.11696],
-      [49.33332, -123.11679],
-      [49.33365, -123.11652],
-      [49.3338, -123.11639],
-      [49.33383, -123.11626],
-      WB_PATH_START,
-    ],
-  },
-  {
     routeNames: [ROUTES.transCanadaHwy.name],
     description: "wb capilano onramp",
     type: "mixed",
     elevation: 0.5,
     videoIds: [VIDEOS.transCanadaHwyWb.id],
     positions: [
-      WB_PATH_START,
+      CAPILANO_HWY_1_N_SE,
       [49.3338, -123.11619],
       [49.33381, -123.1161],
       [49.33379, -123.116],
