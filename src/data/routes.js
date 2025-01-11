@@ -14,6 +14,8 @@ import { VIDEOS } from "./videos";
 // Surrey: scott rd; alex fraser; serpentine; timbers; fraser hwy;
 // Delta:
 
+// !!! update painted to include parking info
+
 export const ROUTES = {
   first2nd: {
     name: "1st/2nd St",
@@ -94,7 +96,7 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [{ videos: { westbound: VIDEOS.fourteenthGapWb } }],
     notes:
-      "The city intends to fill this gap eventually, but the exact route is not clear.",
+      "The city intends to fill this gap eventually, but the exact route is not clear. You cannot cross Knight St at 14th. Using/crossing Kingsway is uncomfortable, but you can time the lights to do it when traffic isn't moving; or use 15th Ave and St George St, but you'll have to dismount briefly going eastbound.",
   },
   fifteenth: {
     name: "15th St",
@@ -618,7 +620,7 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [{ videos: { westbound: VIDEOS.champlainHeightsGapWb } }],
     notes:
-      "A critical gap between Masumi Mitsui Greenway and Rumble St Urban Trail. There are also paths you can take to shorten this, but it's unclear whether bikes are technically allowed. The crossing signals won't automatically change, so you're essentially guaranteed to have to stop and press the buttons.",
+      "A critical gap between Masumi Mitsui Greenway and Rumble St Urban Trail. There are also paths you can take to shorten this, but it's unclear whether bikes are technically allowed.",
   },
   chancellor: {
     name: "Chancellor Blvd",
@@ -1087,6 +1089,7 @@ export const ROUTES = {
   },
   imperial: {
     name: "Imperial Dr",
+    isGap: true,
     regions: [REGIONS.vancouver],
     legs: [{ videos: { northbound: VIDEOS.imperialNb } }],
     notes: "Relatively flat. Quiet-ish, but the cars go very fast.",
@@ -1678,7 +1681,7 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [{ videos: { westbound: VIDEOS.portsideGapWb } }],
     notes:
-      "The city would like to fill this gap along Powell between McLean and Wall, but re-allocating space is tricky. Currently, outside of rush hour, it can be down westbound, but eastbound is very bad due to needing to turn left onto Water.",
+      "The city would like to fill this gap along Powell between McLean and Wall, but re-allocating space is tricky. Currently, outside of rush hour, it can be done westbound, but eastbound is very bad due to needing to turn left onto Water.",
   },
   powell: {
     name: "Powell",
@@ -1767,7 +1770,7 @@ export const ROUTES = {
     regions: [REGIONS.burnaby],
     legs: [{ videos: { westbound: VIDEOS.rumbleWb } }],
     notes:
-      "Gradual hill. For some reason there's a gap in the middle, even though there's plenty of space for a wide path. The intersections are bad, cars often block the crossing. And there are too many driveways along the path. Plus it doesn't connect to anything in Vancouver.",
+      "Gradual hill. For some reason there's a gap in the middle, even though there's plenty of space for a wide path. The intersections are bad, cars often block the crossing. The crossing signals won't automatically change, so you're essentially guaranteed to have to stop and press the buttons. And there are too many driveways along the path. Plus it doesn't connect to anything in Vancouver.",
   },
   rupert: {
     name: "Rupert St",

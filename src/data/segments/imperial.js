@@ -7,6 +7,7 @@ export const IMPERIAL = [
     routeNames: [ROUTES.imperial.name],
     description: "imperial",
     type: "shared",
+    undesignated: true,
     videoIds: [VIDEOS.imperialNb.id],
     videoIdsStartAtStart: [VIDEOS.imperialNb.id],
     positions: [
@@ -27,6 +28,7 @@ export const IMPERIAL = [
   {
     description: "connection to ridgeway",
     type: "quiet",
+    undesignated: true,
     videoIds: [VIDEOS.imperialNb.id],
     positions: [IMPERIAL_16TH, DISCOVER_15TH],
   },
