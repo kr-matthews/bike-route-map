@@ -20,6 +20,7 @@ export default function RouteDetail({ mapRef }) {
     weightedProportions,
     isIncomplete,
     isGap,
+    notes,
   } = selectedRoute;
 
   const isAllOneWay = bidirectionalDistance === 0;
@@ -121,12 +122,18 @@ export default function RouteDetail({ mapRef }) {
               </em>
             </p>
           )}
+
+          {notes && (
+            <p style={{ paddingLeft: "1em", paddingRight: "1em" }}>{notes}</p>
+          )}
+
           {isGap && (
             <p style={{ paddingLeft: "1em", paddingRight: "1em" }}>
               Note: This is a <em>gap</em> in the official bike network, and is{" "}
               <b>not</b> an designated bike route.
             </p>
           )}
+
           {legs.map((leg) => (
             <Leg key={name + leg.name} leg={leg} />
           ))}
