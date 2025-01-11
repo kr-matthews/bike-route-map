@@ -65,6 +65,7 @@ const VIDEOS = {
   },
   balaclavaNb: {
     id: "_t7bbctCh1g",
+    tlId: "wl_y2UDnLUU",
     date: new Date("Jan 21 2024"),
     minutes: 23,
   },
@@ -273,6 +274,7 @@ const VIDEOS = {
   },
   canadaLineSb: {
     id: "svcADiqZWQM",
+    tlId: "IK9_01wyK4w",
     date: new Date("Feb 12 2024"),
     minutes: 15,
   },
