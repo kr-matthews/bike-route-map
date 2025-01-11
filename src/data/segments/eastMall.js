@@ -45,8 +45,8 @@ export const EAST_MALL = [
     description: "sb: to ross",
     type: "mixed",
     oneWay: "required",
-    videoIds: [VIDEOS.eastMallSb.id],
-    videoIdsEndAtEnd: [VIDEOS.eastMallSb.id],
+    videoIds: [VIDEOS.eastMallSb.id, VIDEOS.westMallSb.id],
+    videoIdsEndAtEnd: [VIDEOS.eastMallSb.id, VIDEOS.westMallSb.id],
     positions: [
       EAST_MALL_16TH_SW,
       [49.25375, -123.24097],
@@ -59,7 +59,7 @@ export const EAST_MALL = [
     description: "crossing 16th west side",
     type: "mixed",
     oneWay: "recommended",
-    videoIds: [VIDEOS.eastMallSb.id],
+    videoIds: [VIDEOS.eastMallSb.id, VIDEOS.westMallSb.id],
     positions: [
       EAST_MALL_16TH_WN,
       [49.2541, -123.24148],
@@ -122,7 +122,7 @@ export const EAST_MALL = [
   },
   {
     routeNames: [ROUTES.eastMall.name],
-    description: "sb: lane start to 16th",
+    description: "sb: lane start to stadium",
     type: "painted",
     oneWay: "required",
     videoIds: [VIDEOS.eastMallSb.id],
@@ -134,15 +134,22 @@ export const EAST_MALL = [
       EAST_MALL_THUNDERBIRD_SW,
       [49.25832, -123.24459],
       EAST_MALL_STADIUM_W,
-      SB_PRE_16TH,
     ],
+  },
+  {
+    routeNames: [ROUTES.eastMall.name],
+    description: "sb: stadium to 16th",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [VIDEOS.eastMallSb.id, VIDEOS.westMallSb.id],
+    positions: [EAST_MALL_STADIUM_W, SB_PRE_16TH],
   },
   {
     routeNames: [ROUTES.eastMall.name],
     description: "sb: pre-16th",
     type: "mixed",
     oneWay: "required",
-    videoIds: [VIDEOS.eastMallSb.id],
+    videoIds: [VIDEOS.eastMallSb.id, VIDEOS.westMallSb.id],
     positions: [
       SB_PRE_16TH,
       [49.2547, -123.24172],

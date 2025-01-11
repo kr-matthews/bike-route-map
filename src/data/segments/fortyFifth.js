@@ -29,6 +29,7 @@ export const FORTY_FIFTH = [
       VIDEOS.fortyFifthEb.id,
       VIDEOS.fortyFifthWb.id,
       VIDEOS.balaclavaNb.id,
+      VIDEOS.balaclavaSb.id,
     ],
     videoIdsStartAtStart: [VIDEOS.fortyFifthEb.id],
     videoIdsEndAtStart: [VIDEOS.fortyFifthWb.id],

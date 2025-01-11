@@ -25,6 +25,14 @@ export const FRASER_RIVER_TRAIL = [
     routeNames: [ROUTES.fraserRiverTrail.name],
     description: "southlands",
     type: "mixed",
+    videoIds: [
+      VIDEOS.fraserRiverSouthlandsEb.id,
+      VIDEOS.fraserRiverSouthlandsWb.id,
+    ],
+    videoIdsStartAtStart: [VIDEOS.fraserRiverSouthlandsEb.id],
+    videoIdsStartAtEnd: [VIDEOS.fraserRiverSouthlandsWb.id],
+    videoIdsEndAtStart: [VIDEOS.fraserRiverSouthlandsWb.id],
+    videoIdsEndAtEnd: [VIDEOS.fraserRiverSouthlandsEb.id],
     positions: [
       BALACLAVA_CELTIC,
       [49.21761, -123.17618],

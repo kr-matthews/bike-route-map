@@ -99,13 +99,20 @@ export const CHANCELLOR = [
   },
   {
     routeNames: [ROUTES.chancellor.name],
+    description: "crossing blanca wb",
+    type: "quiet",
+    oneWay: "required",
+    videoIds: [VIDEOS.chancellorWb.id, VIDEOS.universityWb.id],
+    videoIdsStartAtStart: [VIDEOS.chancellorWb.id, VIDEOS.universityWb.id],
+    positions: [BLANCA_8TH_E, BLANCA_8TH_NW],
+  },
+  {
+    routeNames: [ROUTES.chancellor.name],
     description: "east portion, wb",
     type: "quiet",
     oneWay: "required",
     videoIds: [VIDEOS.chancellorWb.id],
-    videoIdsStartAtStart: [VIDEOS.chancellorWb.id],
     positions: [
-      BLANCA_8TH_E,
       BLANCA_8TH_NW,
       [49.26576, -123.21579],
       [49.26578, -123.21689],

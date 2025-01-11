@@ -262,7 +262,14 @@ export const ROUTES = {
   balaclava: {
     name: "Balaclava",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { northbound: VIDEOS.balaclavaNb } }],
+    legs: [
+      {
+        videos: {
+          northbound: VIDEOS.balaclavaNb,
+          southbound: VIDEOS.balaclavaSb,
+        },
+      },
+    ],
     notes:
       "Steep at times, with several turns which are easy to miss. The north end has way too many stop signs.",
   },
@@ -844,7 +851,13 @@ export const ROUTES = {
     name: "Fraser River Trail",
     regions: [REGIONS.vancouver],
     legs: [
-      { name: "Southlands", videos: {} },
+      {
+        name: "Southlands",
+        videos: {
+          eastbound: VIDEOS.fraserRiverSouthlandsEb,
+          westbound: VIDEOS.fraserRiverSouthlandsWb,
+        },
+      },
       { name: "Fraser River Park", videos: {} },
       { name: "Marpole", videos: {} },
       {
@@ -1017,7 +1030,14 @@ export const ROUTES = {
   highbury: {
     name: "Highbury St",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { northbound: VIDEOS.highburyNb } }],
+    legs: [
+      {
+        videos: {
+          northbound: VIDEOS.highburyNb,
+          southbound: VIDEOS.highburySb,
+        },
+      },
+    ],
     notes:
       "A gentle hill. No traffic calming, but is usually relatively quiet.",
   },
@@ -2116,7 +2136,14 @@ export const ROUTES = {
   university: {
     name: "University Blvd",
     regions: [REGIONS.ubc],
-    legs: [{ videos: { eastbound: VIDEOS.universityEb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.universityEb,
+          westbound: VIDEOS.universityWb,
+        },
+      },
+    ],
     notes:
       "Mostly flat-ish. The west portion is mostly pedestrianized and gets crowded during classes. The east portion is painted beside traffic, but there are no parked cars.",
   },
@@ -2189,7 +2216,7 @@ export const ROUTES = {
   westMall: {
     name: "West Mall",
     regions: [REGIONS.ubc],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.westMallSb } }],
     notes:
       "Flat and direct. There seems to always be light traffic. A portion appears to be one-way southbound for the foreseeable future due to construction.",
   },

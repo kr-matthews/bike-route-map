@@ -36,6 +36,7 @@ export const WEST_MALL = [
     description: "roundabout: NW",
     type: "quiet",
     oneWay: "required",
+    videoIds: [VIDEOS.westMallSb.id],
     positions: [
       WEST_MALL_STADIUM_N,
       [49.25543, -123.24819],
@@ -47,12 +48,14 @@ export const WEST_MALL = [
     type: "quiet",
     oneWay: "required",
     hideArrows: true,
+    videoIds: [VIDEOS.westMallSb.id],
     positions: [WEST_MALL_STADIUM_WN, WEST_MALL_STADIUM_WS],
   },
   {
     description: "roundabout: SW",
     type: "quiet",
     oneWay: "required",
+    videoIds: [VIDEOS.westMallSb.id],
     positions: [
       WEST_MALL_STADIUM_WS,
       [49.25527, -123.24803],
@@ -74,6 +77,7 @@ export const WEST_MALL = [
   {
     description: "stadium: to east mall",
     type: "quiet",
+    videoIds: [VIDEOS.westMallSb.id],
     positions: [
       WEST_MALL_STADIUM_S,
       [49.25523, -123.24782],
@@ -95,14 +99,19 @@ export const WEST_MALL = [
       [49.25638, -123.24358],
       [49.25643, -123.24348],
       EAST_MALL_STADIUM_W,
-      EAST_MALL_STADIUM_E,
     ],
+  },
+  {
+    description: "stadium: crossing east mall",
+    type: "quiet",
+    positions: [EAST_MALL_STADIUM_W, EAST_MALL_STADIUM_E],
   },
 
   {
     routeNames: [ROUTES.westMall.name],
     description: "stadium to agronomy",
     type: "quiet",
+    videoIds: [VIDEOS.westMallSb.id],
     positions: [
       WEST_MALL_STADIUM_N,
       [49.2558, -123.24841],
@@ -117,7 +126,7 @@ export const WEST_MALL = [
     routeNames: [ROUTES.westMall.name, ROUTES.agronomy.name],
     description: "agronomy overlap",
     type: "quiet",
-    videoIds: [VIDEOS.agronomyEb.id],
+    videoIds: [VIDEOS.westMallSb.id, VIDEOS.agronomyEb.id],
     positions: [
       WEST_MALL_AGRONOMY_S,
       [49.25995, -123.2518],
@@ -133,6 +142,8 @@ export const WEST_MALL = [
     routeNames: [ROUTES.westMall.name],
     description: "agronomy to marine",
     type: "quiet",
+    videoIds: [VIDEOS.westMallSb.id],
+    videoIdsStartAtEnd: [VIDEOS.westMallSb.id],
     positions: [
       WEST_MALL_AGRONOMY_N,
       [49.2615, -123.25335],

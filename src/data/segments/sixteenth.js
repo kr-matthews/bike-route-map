@@ -115,7 +115,11 @@ export const SIXTEENTH = [
     description: "eb: east mall SW",
     type: "mixed",
     oneWay: "recommended",
-    videoIds: [VIDEOS.sixteenthEb.id, VIDEOS.eastMallSb.id],
+    videoIds: [
+      VIDEOS.sixteenthEb.id,
+      VIDEOS.eastMallSb.id,
+      VIDEOS.westMallSb.id,
+    ],
     positions: [
       EAST_MALL_16TH_WS,
       [49.25388, -123.24125],
@@ -364,7 +368,11 @@ export const SIXTEENTH = [
     description: "wb: east mall NW",
     type: "mixed",
     oneWay: "recommended",
-    videoIds: [VIDEOS.sixteenthWb.id, VIDEOS.eastMallSb.id],
+    videoIds: [
+      VIDEOS.sixteenthWb.id,
+      VIDEOS.eastMallSb.id,
+      VIDEOS.westMallSb.id,
+    ],
     positions: [EAST_MALL_16TH_NW, [49.25429, -123.24156], EAST_MALL_16TH_WN],
   },
   {

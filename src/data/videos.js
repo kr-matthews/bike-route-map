@@ -68,6 +68,12 @@ const VIDEOS = {
     date: new Date("Jan 21 2024"),
     minutes: 23,
   },
+  balaclavaSb: {
+    id: "J73uFQVPQ4o",
+    tlId: "yybMQlKijTk",
+    date: new Date("Jan 09 2025"),
+    minutes: 21,
+  },
   barnetEb: {
     id: "SK5B60zclAY",
     tlId: "LNIkVVktJwQ",
@@ -573,6 +579,16 @@ const VIDEOS = {
     date: new Date("Dec 23 2023"),
     minutes: 9,
   },
+  fraserRiverSouthlandsEb: {
+    id: "sp6dUNsRfQc",
+    date: new Date("Jan 09 2025"),
+    minutes: 3,
+  },
+  fraserRiverSouthlandsWb: {
+    id: "c90vVQkqBvY",
+    date: new Date("Jan 09 2025"),
+    minutes: 3,
+  },
   fraserForeshoreEb: {
     id: "JpuMhCUJYSU",
     date: new Date("Dec 23 2023"),
@@ -702,6 +718,11 @@ const VIDEOS = {
     id: "3gJObODNRPw",
     date: new Date("Aug 11 2023"),
     minutes: 3,
+  },
+  highburySb: {
+    id: "jMg7ZpC1Z5E",
+    date: new Date("Jan 07 2025"),
+    minutes: 2,
   },
   hillcrestEb: {
     id: "gwZnVGbA4x4",
@@ -1559,6 +1580,12 @@ const VIDEOS = {
     date: new Date("Jul 24 2024"),
     minutes: 10,
   },
+  universityWb: {
+    id: "MVeRJMWBjaU",
+    tlId: "UV8ltaolCaw",
+    date: new Date("Jan 07 2025"),
+    minutes: 11,
+  },
   universityDrEEb: {
     id: "gyRryt5aipE",
     date: new Date("Oct 11 2024"),
@@ -1621,6 +1648,12 @@ const VIDEOS = {
     tlId: "SUJjmGMkTmM",
     date: new Date("Mar 06 2024"),
     minutes: 11,
+  },
+  westMallSb: {
+    id: "4G1Dk47fk7E",
+    tlId: "BzBAECgFmMw",
+    date: new Date("Jan 07 2025"),
+    minutes: 8,
   },
   westminsterWb: {
     id: "iiRbl0nYp2E",

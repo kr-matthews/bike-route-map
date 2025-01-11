@@ -28,6 +28,8 @@ export const UNIVERSITY = [
     description: "to marine",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.universityWb.id],
+    videoIdsEndAtEnd: [VIDEOS.universityWb.id],
     positions: [
       LOWER_MALL_UNIVERSITY_E,
       [49.26342, -123.25649],
@@ -51,14 +53,14 @@ export const UNIVERSITY = [
     routeNames: [ROUTES.university.name],
     description: "lower mall to west mall",
     type: "quiet",
-    videoIds: [VIDEOS.universityEb.id],
+    videoIds: [VIDEOS.universityEb.id, VIDEOS.universityWb.id],
     positions: [LOWER_MALL_UNIVERSITY_E, WEST_MALL_UNIVERSITY_S],
   },
   {
     routeNames: [ROUTES.university.name],
     description: "west mall to east mall",
     type: "mixed",
-    videoIds: [VIDEOS.universityEb.id],
+    videoIds: [VIDEOS.universityEb.id, VIDEOS.universityWb.id],
     positions: [WEST_MALL_UNIVERSITY_S, EAST_MALL_UNIVERSITY_S],
   },
   {
@@ -66,6 +68,7 @@ export const UNIVERSITY = [
     description: "east mall from bus loop",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [VIDEOS.universityWb.id],
     positions: [BUS_LOOP_W, [49.2658, -123.24975], EAST_MALL_UNIVERSITY_S],
   },
   {
@@ -77,12 +80,18 @@ export const UNIVERSITY = [
     positions: [EAST_MALL_UNIVERSITY_S, BUS_LOOP_E],
   },
   {
+    description: "10th wb crossing blanca",
+    type: "shared",
+    oneWay: "required",
+    positions: [BLANCA_10TH_E, BLANCA_10TH_NW],
+  },
+  {
     routeNames: [ROUTES.university.name],
     description: "wb",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.universityWb.id],
     positions: [
-      BLANCA_10TH_E,
       BLANCA_10TH_NW,
       [49.26398, -123.21661],
       [49.26388, -123.22121],
@@ -117,6 +126,7 @@ export const UNIVERSITY = [
     description: "loop wb",
     type: "quiet",
     oneWay: "required",
+    videoIds: [VIDEOS.universityWb.id],
     positions: [
       WESBROOK_UNIVERSITY_NW,
       [49.2662, -123.24678],
