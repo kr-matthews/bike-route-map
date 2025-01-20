@@ -12,7 +12,7 @@ export function getRoute(name) {
 }
 
 export function routeIsIncomplete(name) {
-  return getRoute(name).isIncomplete;
+  return getRoute(name)?.isIncomplete;
 }
 
 export function getRouteBounds(routeName) {
