@@ -175,7 +175,7 @@ export const FOURTH = [
     description: "wb: wallace to before marine",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.fourthWb.id],
+    videoIds: [VIDEOS.fourthWb.id, VIDEOS.seasideBypassMarine4thWb.id],
     positions: [WALLACE_4TH_N, [49.26882, -123.19343], WB_BEFORE_MARINE],
   },
   {
@@ -183,7 +183,7 @@ export const FOURTH = [
     description: "wb before marine",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.fourthWb.id],
+    videoIds: [VIDEOS.fourthWb.id, VIDEOS.seasideBypassMarine4thWb.id],
     positions: [
       WB_BEFORE_MARINE,
       [49.26891, -123.19908],

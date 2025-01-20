@@ -1334,6 +1334,12 @@ const VIDEOS = {
     date: new Date("Feb 23 2024"),
     minutes: 11,
   },
+  seasideBypassMarine4thWb: {
+    id: "EmQOOzxPAjk",
+    tlId: "6m28QNinpWg",
+    date: new Date("Jan 15 2025"),
+    minutes: 11,
+  },
   seasideBypassPacificEb: {
     id: "lvA_CEemgRM",
     tlId: "4WMJ2A7gYo8",

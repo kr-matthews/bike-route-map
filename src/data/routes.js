@@ -1916,7 +1916,10 @@ export const ROUTES = {
       { name: "York & 3rd", videos: {} },
       {
         name: "NW Marine & 4th",
-        videos: { eastbound: VIDEOS.seasideBypassMarine4thEb },
+        videos: {
+          eastbound: VIDEOS.seasideBypassMarine4thEb,
+          westbound: VIDEOS.seasideBypassMarine4thWb,
+        },
       },
       { name: "Whyte", videos: { westbound: VIDEOS.seasideBypassWhyteWb } },
     ],

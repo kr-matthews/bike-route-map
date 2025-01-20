@@ -62,6 +62,7 @@ import {
   STANLEY_PARK_LANE_BEACH,
   THURLOW_SEAWALL,
   WALLACE_3RD,
+  WALLACE_4TH_N,
   WALLACE_4TH_S,
   WYLIE_1ST_N,
   WYLIE_1ST_S,
@@ -132,11 +133,22 @@ export const SEASIDE_BYPASS = [
   },
   {
     routeNames: [ROUTES.seasideBypass.name],
+    description: "crossing 4th",
+    type: "shared",
+    videoIds: [VIDEOS.seasideBypassMarine4thEb.id],
+    positions: [WALLACE_4TH_S, WALLACE_4TH_N],
+  },
+  {
+    routeNames: [ROUTES.seasideBypass.name],
     description: "4th to 3rd",
     type: "quiet",
-    videoIds: [VIDEOS.seasideBypassMarine4thEb.id],
+    videoIds: [
+      VIDEOS.seasideBypassMarine4thWb.id,
+      VIDEOS.seasideBypassMarine4thEb.id,
+    ],
+    videoIdsStartAtEnd: [VIDEOS.seasideBypassMarine4thWb.id],
     videoIdsEndAtEnd: [VIDEOS.seasideBypassMarine4thEb.id],
-    positions: [WALLACE_4TH_S, WALLACE_3RD],
+    positions: [WALLACE_4TH_N, WALLACE_3RD],
   },
   {
     description: "quebec: 5th to 3rd",

@@ -759,8 +759,13 @@ export const MARINE_UBC = [
     routeNames: [ROUTES.marineNw.name, ROUTES.seasideBypass.name],
     description: "shared lane portion",
     type: "shared",
-    videoIds: [VIDEOS.nwMarineEb.id, VIDEOS.seasideBypassMarine4thEb.id],
+    videoIds: [
+      VIDEOS.nwMarineEb.id,
+      VIDEOS.seasideBypassMarine4thEb.id,
+      VIDEOS.seasideBypassMarine4thWb.id,
+    ],
     videoIdsStartAtStart: [VIDEOS.seasideBypassMarine4thEb.id],
+    videoIdsEndAtStart: [VIDEOS.seasideBypassMarine4thWb.id],
     positions: [
       SEASIDE_W_END,
       [49.27826, -123.23481],
@@ -882,6 +887,7 @@ export const MARINE_UBC = [
     description: "wb: 4th to spanish banks",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.seasideBypassMarine4thWb.id],
     positions: [
       MARINE_4TH_NE,
       [49.26887, -123.20002],
