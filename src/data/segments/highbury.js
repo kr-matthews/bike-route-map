@@ -20,8 +20,8 @@ export const HIGHBURY = [
     positions: [
       HIGHBURY_8TH,
       [49.26694, -123.18772],
-      HIGHBURY_4TH_N,
       HIGHBURY_4TH_S,
+      HIGHBURY_4TH_N,
       HIGHBURY_3RD,
       [49.27044, -123.18755],
       [49.27134, -123.18752],
