@@ -219,6 +219,7 @@ const VIDEOS = {
   },
   burrardSb: {
     id: "pFj4NnJ80Fk",
+    tlId: "bBiz6yycehQ",
     date: new Date("Aug 21 2023"),
     minutes: 12,
   },
@@ -419,6 +420,7 @@ const VIDEOS = {
   },
   dumfriesNb: {
     id: "g0qsUEDx--8",
+    tlId: "lQDpohjyf5E",
     date: new Date("Sep 10 2023"),
     minutes: 22,
   },
@@ -713,6 +715,7 @@ const VIDEOS = {
   },
   heatherSb: {
     id: "IOQ6E28a5CE",
+    tlId: "CgcsimcYT7Y",
     date: new Date("Sep 10 2023"),
     minutes: 26,
   },
@@ -976,11 +979,13 @@ const VIDEOS = {
   },
   midtownBurnabyWb: {
     id: "chQm0UsQBMg",
+    tlId: "6r07ys9ToHU",
     date: new Date("Nov 11 2023"),
     minutes: 32,
   },
   midtownVancouverEb: {
     id: "3qGbnTOYyL0",
+    tlId: "pD2ScnGdPcs",
     date: new Date("Jun 10 2023"),
     minutes: 45,
   },
@@ -1569,6 +1574,7 @@ const VIDEOS = {
   },
   twentyNinthWb: {
     id: "ReFbPGbBm38",
+    tlId: "10EB9bjmTHY",
     date: new Date("Oct 13 2023"),
     minutes: 25,
   },
@@ -1617,6 +1623,7 @@ const VIDEOS = {
   },
   valleySb: {
     id: "SDClkLpfIHc",
+    tlId: "YKZKCZH6N0M",
     date: new Date("Jun 27 2023"),
     minutes: 15,
   },
