@@ -240,6 +240,7 @@ const VIDEOS = {
   },
   cambieNb: {
     id: "B1KQHt2iqv8",
+    tlId: "Ber_adhB_4E",
     date: new Date("Jun 13 2024"),
     minutes: 19,
   },
@@ -426,6 +427,7 @@ const VIDEOS = {
   },
   dumfriesSb: {
     id: "9h4_3VgeYbY",
+    tlId: "PLaBXZ14WCc",
     date: new Date("Jun 13 2024"),
     minutes: 23,
   },
@@ -1336,6 +1338,7 @@ const VIDEOS = {
   },
   seasideBypassMarine4thEb: {
     id: "wcGNy4zlMKY",
+    tlId: "QylwAVv_KCw",
     date: new Date("Feb 23 2024"),
     minutes: 11,
   },
