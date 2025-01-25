@@ -388,11 +388,13 @@ const VIDEOS = {
   },
   cprTrailEb: {
     id: "vv8tMb5BNHw",
+    tlId: "ix8PdtC2Hrk",
     date: new Date("May 25 2024"),
     minutes: 12,
   },
   cprTrailWb: {
     id: "uUtycYB0b8o",
+    tlId: "BH9mIasfEIc",
     date: new Date("May 26 2024"),
     minutes: 11,
   },
@@ -651,11 +653,13 @@ const VIDEOS = {
   },
   goldenEarsBridgeNb: {
     id: "Oz2U8lnG9AA",
+    tlId: "rbuatfyPSvU",
     date: new Date("May 26 2024"),
     minutes: 12,
   },
   goldenEarsBridgeSb: {
     id: "435UvdNmFCs",
+    tlId: "EVqOlmyPO6s",
     date: new Date("May 25 2024"),
     minutes: 13,
   },
@@ -1167,6 +1171,7 @@ const VIDEOS = {
   },
   pocoEb: {
     id: "damcBby1W4w",
+    tlId: "2TNHtN_RQTE",
     date: new Date("May 25 2024"),
     minutes: 20,
   },
