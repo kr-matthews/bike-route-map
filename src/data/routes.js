@@ -2168,7 +2168,9 @@ export const ROUTES = {
   valley: {
     name: "Valley",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { southbound: VIDEOS.valleySb } }],
+    legs: [
+      { videos: { northbound: VIDEOS.valleyNb, southbound: VIDEOS.valleySb } },
+    ],
     notes:
       "The middle is very flat, but either end has hills. A steep hill up 33rd Ave to connect with the Arbutus Greenway at the south end. No traffic calming, but quiet.",
   },

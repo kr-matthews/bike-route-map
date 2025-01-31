@@ -107,7 +107,7 @@ export const TWENTY_NINTH = [
     routeNames: [ROUTES.twentyNinth.name, ROUTES.valley.name],
     description: "valley",
     type: "quiet",
-    videoIds: [VIDEOS.twentyNinthWb.id, VIDEOS.valleySb.id],
+    videoIds: [VIDEOS.twentyNinthWb.id, VIDEOS.valleyNb.id, VIDEOS.valleySb.id],
     positions: [
       YEW_EDDINGTON,
       [49.24698, -123.15558],

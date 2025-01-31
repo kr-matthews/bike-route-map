@@ -1629,6 +1629,12 @@ const VIDEOS = {
     date: new Date("Sep 18 2024"),
     minutes: 11,
   },
+  valleyNb: {
+    id: "U3T0DQwRE3U",
+    tlId: "0SsZ2t6Nmrk",
+    date: new Date("Jan 28 2025"),
+    minutes: 14,
+  },
   valleySb: {
     id: "SDClkLpfIHc",
     tlId: "YKZKCZH6N0M",

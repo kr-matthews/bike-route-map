@@ -28,10 +28,18 @@ export const VALLEY = [
     positions: [VALLEY_33RD_S, ARBUTUS_GREENWAY_33RD_S, ANGUS_33RD_S],
   },
   {
-    description: "33rd: cypress to valley",
+    description: "33rd: cypress to arbutus greenway",
     type: "painted",
     oneWay: "required",
-    positions: [ANGUS_33RD_N, ARBUTUS_GREENWAY_33RD_N, VALLEY_33RD_N],
+    positions: [ANGUS_33RD_N, ARBUTUS_GREENWAY_33RD_N],
+  },
+  {
+    description: "33rd: arbutus greenway to valley",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [VIDEOS.valleyNb.id],
+    videoIdsStartAtStart: [VIDEOS.valleyNb.id],
+    positions: [ARBUTUS_GREENWAY_33RD_N, VALLEY_33RD_N],
   },
   {
     description: "33rd: arbutus to valley",
@@ -47,11 +55,17 @@ export const VALLEY = [
   },
   {
     routeNames: [ROUTES.valley.name],
-    description: "south of 29th",
+    description: "crossing 33rd",
     type: "quiet",
     videoIds: [VIDEOS.valleySb.id],
+    positions: [VALLEY_33RD_S, VALLEY_33RD_N],
+  },
+  {
+    routeNames: [ROUTES.valley.name],
+    description: "33rd to 29th",
+    type: "quiet",
+    videoIds: [VIDEOS.valleyNb.id, VIDEOS.valleySb.id],
     positions: [
-      VALLEY_33RD_S,
       VALLEY_33RD_N,
       [49.24246, -123.1498],
       [49.24314, -123.15034],
@@ -68,7 +82,8 @@ export const VALLEY = [
     routeNames: [ROUTES.valley.name],
     description: "north of 29th",
     type: "quiet",
-    videoIds: [VIDEOS.valleySb.id],
+    videoIds: [VIDEOS.valleySb.id, VIDEOS.valleyNb.id],
+    videoIdsEndAtEnd: [VIDEOS.valleyNb.id],
     positions: [
       VALLEY_EDDINGTON,
       [49.24718, -123.15741],
