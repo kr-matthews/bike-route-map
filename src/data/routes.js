@@ -14,8 +14,6 @@ import { VIDEOS } from "./videos";
 // Surrey: scott rd; alex fraser; serpentine; timbers; fraser hwy;
 // Delta:
 
-// !!! update painted to include parking info
-
 export const ROUTES = {
   first2nd: {
     name: "1st/2nd St",
@@ -25,7 +23,8 @@ export const ROUTES = {
         videos: { eastbound: VIDEOS.first2ndEb, westbound: VIDEOS.first2ndWb },
       },
     ],
-    notes: "Flat, lots of cars, sometimes right beside parked cars.",
+    notes:
+      "Flat, lots of cars. The painted lane portion is sometimes right beside parked cars, sometimes beside the curb.",
   },
   third: {
     name: "3rd",
@@ -39,7 +38,7 @@ export const ROUTES = {
     regions: [REGIONS.northVancouver],
     legs: [{ videos: {} }],
     notes:
-      "Steep hill, lots of cars. Eastbound shared lane portion is a downhill bus/bike-only lane. There is some varying infrastructure extending west to Saint Davids Ave which is not yet mapped.",
+      "Steep hill, lots of cars. Eastbound shared lane portion is a downhill bus/bike-only lane. The painted lanes are beside the curb (no parked cars). There is some varying infrastructure extending west to Saint Davids Ave which is not yet mapped.",
   },
   fourth: {
     name: "4th",
@@ -50,7 +49,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "Steep hill with an awkward transition at the west end. Some cars. The lane abruptly disappears a few times which is dangerous.",
+      "Steep hill with an awkward transition at the west end. Some cars. The lane abruptly disappears a few times which is dangerous. The painted lanes are often beside parked cars, though not eastbound east of NW Marine.",
   },
   fourthNV: {
     name: "4th St",
@@ -116,7 +115,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "Mostly flat with few intersections but lots of cars. Right in the door zone of parked cars for the east section. Can continue on the road at roundabouts but the intention is to use the sidewalks. Awkward to turn left onto Marine Dr at the west end.",
+      "Mostly flat with few intersections but lots of cars. The painted lanes in the east half are right beside parked cars. Can continue on the road at roundabouts but the intention is to use the sidewalks. Awkward to turn left onto Marine Dr at the west end.",
   },
   twentySecond: {
     name: "22nd Ave",
@@ -130,14 +129,14 @@ export const ROUTES = {
       },
     ],
     notes:
-      "Hills and lots of cars. One of the worst bike routes in the city, and doesn't have proper connections at either end.",
+      "Hills and lots of cars. One of the worst bike routes in the city, and doesn't have proper connections at either end. The painted lanes are beside parked cars.",
   },
   twentyNinth: {
     name: "29th",
     regions: [REGIONS.vancouver],
     legs: [{ videos: { westbound: VIDEOS.twentyNinthWb } }],
     notes:
-      "A big dip in the middle around Valley/Yew with steep hills. The west end doesn't have enough traffic calming but the rest is quiet.",
+      "A big dip in the middle around Valley/Yew with steep hills. The west end doesn't have enough traffic calming but the rest is quiet. The westbound painted lane through Hillcrest is beside parked cars; eastbound is not.",
   },
   fortyFifth: {
     name: "45th",
@@ -198,7 +197,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "Flat. The east half is often completely full of cars. The west half is very quiet since it's a dead-end for cars.",
+      "Flat. The east half is often completely full of cars. The west half is very quiet since it's a dead-end for cars. The eastbound painted lane is beside parked cars; westbound mostly is not.",
   },
   alder: {
     name: "Alder",
@@ -366,7 +365,8 @@ export const ROUTES = {
         videos: { northbound: VIDEOS.blancaNb, southbound: VIDEOS.blancaSb },
       },
     ],
-    notes: "A flat, wide, fast street. But there is rarely much traffic.",
+    notes:
+      "A flat, wide, fast street. But there is rarely much traffic. The southbound painted lane is beside the curb.",
   },
   boundary: {
     name: "Boundary Trail",
@@ -380,7 +380,7 @@ export const ROUTES = {
     regions: [REGIONS.newWestminster],
     legs: [{ videos: {} }],
     notes:
-      "Very flat. Traveling east is a bit awkward as you have to briefly switch to the left side, then switch back. The city plans on improving this route.",
+      "Very flat. The painted lanes are mostly beside the curb. Traveling east is a bit awkward as you have to briefly switch to the left side, then switch back. The city plans on improving this route.",
   },
   boydTrail: {
     name: "Boyd St Trail",
@@ -440,7 +440,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "Steep in Kits and when entering downtown. Most useful for crossing the bridge. In Kits, Cypress is better. Downtown, Hornby is better.",
+      "Steep in Kits and when entering downtown. Most useful for crossing the bridge. In Kits, Cypress is better. Downtown, Hornby is better. The painted lane in Kits is beside the curb; downtown, it's beside parked cars.",
   },
   bute: {
     name: "Bute",
@@ -533,7 +533,7 @@ export const ROUTES = {
     regions: [REGIONS.northVancouver],
     legs: [{ videos: {} }],
     notes:
-      "A long steep hill up to Grouse Mountain. Unfortunately the painted lane frequently disappears. It extends north of the Trans-Canada Highway, but I have not mapped that.",
+      "A long steep hill up to Grouse Mountain. Unfortunately the painted lane frequently disappears. It extends north of the Trans-Canada Highway, but I have not mapped that. For the mapped portion, the painted lanes are beside the curb.",
   },
   cardero: {
     name: "Cardero",
@@ -551,7 +551,7 @@ export const ROUTES = {
     regions: [REGIONS.burnaby],
     legs: [{ videos: { southbound: VIDEOS.caribooSb } }],
     notes:
-      "Going southbound, it's extremely easy to miss any of the turns. The north end is a steep hill.",
+      "Going southbound, it's extremely easy to miss any of the turns. The painted lanes are beside the curb. The north end is a steep hill.",
   },
   carnarvon: {
     name: "Carnarvon St",
@@ -634,7 +634,7 @@ export const ROUTES = {
     regions: [REGIONS.ubc],
     legs: [{ videos: { westbound: VIDEOS.chancellorWb } }],
     notes:
-      "Some gradual hills and fast cars. Accessing the path at Tasmania Cr can be confusing as it's not well signed.",
+      "Some gradual hills and fast cars. The painted lanes are beside the curb. Accessing the path at Tasmania Cr can be confusing as it's not well signed.",
   },
   chesterfield: {
     name: "Chesterfield Ave",
@@ -744,7 +744,7 @@ export const ROUTES = {
       { videos: { northbound: VIDEOS.dunbarNb, southbound: VIDEOS.dunbarSb } },
     ],
     notes:
-      "Steep and lots of cars. The lane is right in the door zone of the parked cars. Doesn't connect to anything at the north end. The uphill at the south end is very uncomfortable.",
+      "Steep and lots of cars. The painted lanes beside parked cars. Doesn't connect to anything at the north end. The uphill at the south end is very uncomfortable.",
   },
   dunsmuir: {
     name: "Dunsmuir",
@@ -764,13 +764,14 @@ export const ROUTES = {
     isOneWay: true,
     legs: [{ videos: { westbound: VIDEOS.lionsGateBridgeNb } }],
     notes:
-      "Uncomfortable, one-way downhill route. The city is planning on replacing this with an extension of the separated lane on Dunsmuir, via Melville, Jervis, Hastings, and Broughton - which will no longer connect to Georgia.",
+      "Uncomfortable, one-way downhill route. The painted lane is mostly beside parked cars. The city is planning on replacing this with an extension of the separated lane on Dunsmuir, via Melville, Jervis, Hastings, and Broughton - which will no longer connect to Georgia.",
   },
   eastMall: {
     name: "East Mall",
     regions: [REGIONS.ubc],
     legs: [{ videos: { southbound: VIDEOS.eastMallSb } }],
-    notes: "The south bit is not great, but the rest is quiet and flat.",
+    notes:
+      "The south bit is not great, but the rest is quiet and flat. The painted lanes are beside parked cars.",
   },
   edmonds: {
     name: "Edmonds",
@@ -898,7 +899,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "Very flat, lots of cars. The south portion is very bad. The north portion has had flimsy bollards added since filming.",
+      "Very flat, lots of cars. The painted lanes are beside the curb. The south portion is very bad. The north portion has had flimsy bollards added since filming.",
   },
   gatensbury: {
     name: "Gatensbury St/Rd",
@@ -917,14 +918,15 @@ export const ROUTES = {
         },
       },
     ],
-    notes: "Very flat, very close to fast moving cars - but no parked cars.",
+    notes:
+      "Very flat. The painted lanes are beside the curb, but close to turning and fast moving cars.",
   },
   gilbert: {
     name: "Gilbert Rd",
     regions: [REGIONS.richmond],
     legs: [{ videos: { northbound: VIDEOS.gilbertNb } }],
     notes:
-      "Terrible bike route, fast cars will not leave sufficient space when passing - especially on the bridge. The city plans on adding a shared use path to improve part of this route.",
+      "Terrible bike route, fast cars will not leave sufficient space when passing - especially on the bridge. The painted lanes are beside the curb. The city plans on adding a shared use path to improve part of this route.",
   },
   gladstone: {
     name: "Gladstone",
@@ -980,7 +982,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "Very flat, lots of cars. No parked cars, but the painted lane often becomes a right-turn lane for cars.",
+      "Very flat, lots of cars. The painted lanes are beside the curb, but also often become a right-turn lane for cars. Sometimes there are flimsy posts separating the lane.",
   },
   grauer: {
     name: "Grauer Rd",
@@ -1075,7 +1077,7 @@ export const ROUTES = {
     isOneWay: true,
     legs: [{ videos: { northbound: VIDEOS.homerNb } }],
     notes:
-      "Right in the door zone, beside heavy traffic. Plenty of hills. When Richards used to be one-way southbound, this was more useful, but now Richards is a much better (two-way) alternative.",
+      "The painted lane is beside parked cars, and the parking width is narrow. Plenty of hills. When Richards used to be one-way southbound, this was more useful, but now Richards is a much better (two-way) alternative.",
   },
   hornby: {
     name: "Hornby",
@@ -1157,7 +1159,7 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [{ videos: { westbound: VIDEOS.kentWb } }],
     notes:
-      "Flat. Generally, the further east you go the better this route is. But the surface is extremely bad in multiple places. The west portion might be the worst bike route in the city. The east has had detours for years due to adjacent construction.",
+      "Flat. The painted lanes are beside the curb. Generally, the further east you go the better this route is. But the surface is extremely bad in multiple places. The west portion might be the worst bike route in the city. The east has had detours for years due to adjacent construction.",
   },
   kerr: {
     name: "Kerr St",
@@ -1168,7 +1170,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "Very steep hill. When the road curves at the north end, considering turning onto/from Kerr instead of using Rupert.",
+      "Very steep hill. The painted lanes north of Rosemont Dr are beside parked cars; south, they are beside the curb, sometimes with parked cars on your left. When the road curves at the north end, considering turning onto/from Kerr instead of using Rupert.",
   },
   killarney: {
     name: "Killarney",
@@ -1189,7 +1191,7 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [{ videos: {} }],
     notes:
-      "Flat in the middle with significant climbs out in either direction. Sometimes next to parked cars. The city is extending this route west from Quesnel to Dunbar, but painting won't be done until the weather improves in Spring 2025. The intersection at Arbutus was improved in late 2024.",
+      "Flat in the middle with significant climbs out in either direction. The painted lanes are usually beside parked cars. The city is extending this route west from Quesnel to Dunbar, but painting won't be done until the weather improves in Spring 2025. The intersection at Arbutus was improved in late 2024.",
   },
   knightStreetBridge: {
     name: "Knight Street Bridge",
@@ -1264,7 +1266,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "A very uncomfortable route for the most part, though some sections are separated and nice. The east end, intertwined with the Trans-Canada Highway, is extremely uncomfortable, especially westbound. At the west end, it's best to connect to Central Valley Greenway via the path along Gilmore.",
+      "A very uncomfortable route for the most part, though some sections are separated and nice. The east end, intertwined with the Trans-Canada Highway, is extremely uncomfortable, especially westbound. At the west end, it's best to connect to Central Valley Greenway via the path along Gilmore. The painted lanes are beside the curb.",
   },
   lowLevel: {
     name: "Low Level Rd",
@@ -1303,7 +1305,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "Flat. Car traffic gets really backed up and you can pass it all. The 'detour' at the east end, away from Main St, is a little annoying - especially westbound, when it takes up to 3 minutes to turn left back onto Main St. But the separated lane there is new from 2024.",
+      "Flat. The painted lanes are beside the curb. Car traffic gets really backed up and you can pass it all. The 'detour' at the east end, away from Main St, is a little annoying - especially westbound, when it takes up to 3 minutes to turn left back onto Main St. But the separated lane there is new from 2024.",
   },
   marineNw: {
     name: "NW Marine",
@@ -1311,7 +1313,7 @@ export const ROUTES = {
     regions: [REGIONS.vancouver, REGIONS.ubc],
     legs: [{ videos: { eastbound: VIDEOS.nwMarineEb } }],
     notes:
-      "A long steep hill up to UBC and a milder hill at the east end, but flat besides that. Quite uncomfortable.",
+      "A long steep hill up to UBC and a milder hill at the east end, but flat besides that. Quite uncomfortable. Much of the painted lanes are beside parked cars, sometimes perpendicular parking.",
   },
   marineSw: {
     name: "SW Marine",
@@ -1323,7 +1325,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "A long gradual hill with lots of traffic. The portions with a shoulder are quite wide, but crossing the slip lanes at 16th is quite horrible.",
+      "A long gradual hill with lots of traffic. The portions with a shoulder are quite wide, but crossing the slip lanes at 16th is quite horrible. The painted lanes are beside the curb.",
   },
   marineNv: {
     name: "Marine Dr/3rd St (North Vancouver)",
@@ -1331,7 +1333,7 @@ export const ROUTES = {
     regions: [REGIONS.northVancouver],
     legs: [{ videos: { westbound: VIDEOS.marineNvWb } }],
     notes:
-      "Flat. One of the worst routes in the area. Some of the shared lane portions are bus lanes, which is not so bad, but most aren't, and even those that are frequently allow right-turning vehicles.",
+      "Flat. One of the worst routes in the area. Some of the shared lane portions are bus lanes, which is not so bad, but most aren't, and even those that are frequently allow right-turning vehicles. The painted lanes are mostly beside the curb.",
   },
   marineWv: {
     name: "Marine Dr (West Vancouver)",
@@ -1353,7 +1355,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "Lots of hills, but still the most flat way to get to Horseshoe Bay. Most drivers are reasonable, but with the winding road it's very unpleasant to be passed. Some sections have a brief alternate route, usually to allow you to do a steep climb without worrying about traffic behind you, but often involve extra hills.",
+      "Lots of hills, but still the most flat way to get to Horseshoe Bay. The painted lanes are beside the curb. Most drivers are reasonable, but with the winding road it's very unpleasant to be passed. Some sections have a brief alternate route, usually to allow you to do a steep climb without worrying about traffic behind you, but often involve extra hills.",
   },
   marineWay: {
     name: "Marine Way",
@@ -1460,7 +1462,7 @@ export const ROUTES = {
     regions: [REGIONS.richmond],
     legs: [{ videos: {} }],
     notes:
-      "Very flat, lots of traffic. The bike lanes may be closed at CF Richmond Center due to construction.",
+      "Very flat, lots of traffic. The painted lanes are beside the curb. The painted lanes may be closed at CF Richmond Center due to construction.",
   },
   mosaic: {
     name: "Mosaic",
@@ -1480,7 +1482,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "Gentle hills. Between fast traffic and parked cars, but there is a buffer so you're not in the door zone. Doesn't really connect to anything in the south half.",
+      "Gentle hills. Between fast traffic and parked cars, but there is a sufficient buffer. Doesn't really connect to anything in the south half.",
   },
   nelson: {
     name: "Nelson St",
@@ -1511,7 +1513,7 @@ export const ROUTES = {
     regions: [REGIONS.richmond],
     legs: [{ videos: { northbound: VIDEOS.no2Nb } }],
     notes:
-      "Painted lane over the bridge. Relatively flat. You can use the sidewalk as a shared use path instead. Doesn't connect to anything at the south end, and Westminster Hwy is not good for cyclists.",
+      "Painted lane over the bridge, beside the curb. Relatively flat. You can use the sidewalk as a shared use path instead. Doesn't connect to anything at the south end, and Westminster Hwy is not good for cyclists.",
   },
   no2Bridge: {
     name: "No. 2 Rd Bridge",
@@ -1539,7 +1541,7 @@ export const ROUTES = {
     regions: [REGIONS.richmond],
     legs: [{ videos: { northbound: VIDEOS.no3Nb, southbound: VIDEOS.no3Sb } }],
     notes:
-      "Very flat. Northbound is quite bad, and southbound is absolutely terrible. Access from Granville Ave is recommended via Buswell St and Cook Rd, but these are also not good roads for cycling.",
+      "Very flat. The painted lanes are beside the curb, and sometimes slightly elevated from the road. Northbound is quite bad, and southbound is absolutely terrible. Access from Granville Ave is recommended via Buswell St and Cook Rd, but these are also not good roads for cycling.",
   },
   no6Path: {
     name: "No. 6 Rd Path",
@@ -1575,7 +1577,7 @@ export const ROUTES = {
     regions: [REGIONS.burnaby],
     legs: [{ videos: { eastbound: VIDEOS.oaklandBurrisEb } }],
     notes:
-      "A long steep hill with lots of traffic. At the east end, you can continue and connect with Midtown. At the west end, going eastbound is confusing as you briefly use an adjacent street, and the shared use paths on Dover and southwards on Royal Oak don't quite connect to anything.",
+      "A long steep hill with lots of traffic. The painted lanes are beside the curb. At the east end, you can continue and connect with Midtown. At the west end, going eastbound is confusing as you briefly use an adjacent street, and the shared use paths on Dover and southwards on Royal Oak don't quite connect to anything.",
   },
   oakStreetBridge: {
     name: "Oak Street Bridge",
@@ -1649,7 +1651,7 @@ export const ROUTES = {
       { videos: { eastbound: VIDEOS.penderEb, westbound: VIDEOS.penderWb } },
     ],
     notes:
-      "A hill, lots of cars. Before Dunsmuir was a bike route, the whole of Pender was the only east-west bike route around here (mostly just a shared lane with heavy traffic). Now only the painted portion remains as a bike route.",
+      "A hill, lots of cars. The painted lanes are beside the curb. Before Dunsmuir was a bike route, the whole of Pender was the only east-west bike route around here (mostly just a shared lane with heavy traffic). Now only the painted portion remains as a bike route.",
   },
   pittRiverBridge: {
     name: "Pitt River Bridge",
@@ -1746,7 +1748,7 @@ export const ROUTES = {
     regions: [REGIONS.richmond],
     legs: [{ videos: { southbound: VIDEOS.railwaySb } }],
     notes:
-      "Very flat. Might as well use Railway Greenway, though that has a speed limit of 15 km/h, and briefly disappears in Steveston.",
+      "Very flat. The painted lanes are beside the curb. Might as well use Railway Greenway, though that has a speed limit of 15 km/h, and briefly disappears in Steveston.",
   },
   railwayGreenway: {
     name: "Railway Greenway",
@@ -1801,7 +1803,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "Very steep, right between parked cars and fast traffic. Everything it connects to, besides Central Valley Greenway, is even worse. There is often a car parked at the end of the northbound lane.",
+      "Very steep, right between parked cars and fast traffic (except north of Grandview Hwy which is beside the curb). Everything it connects to, besides Central Valley Greenway, is even worse. There is often a car parked at the end of the northbound lane.",
   },
   russBaker: {
     name: "Russ Baker Way",
@@ -1924,7 +1926,7 @@ export const ROUTES = {
       { name: "Whyte", videos: { westbound: VIDEOS.seasideBypassWhyteWb } },
     ],
     notes:
-      "A faster, more direct, slightly hillier, less comfortable alternative to Seaside. It is not signed very well. The parts with a busy shared lane (Marine, 4th, Quebec) are unpleasant, and it's right beside parked cars for much of Pacific, but the rest is mostly pretty good.",
+      "A faster, more direct, slightly hillier, less comfortable alternative to Seaside. It is not signed very well. The parts with a busy shared lane (Marine, 4th, Quebec) are unpleasant, and it's beside parked cars for much of Pacific, but the rest is mostly pretty good.",
   },
   seaToRiver: {
     name: "Sea to River",
@@ -2148,7 +2150,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "Mostly flat-ish. The west portion is mostly pedestrianized and gets crowded during classes. The east portion is painted beside traffic, but there are no parked cars.",
+      "Mostly flat-ish. The west portion is mostly pedestrianized and gets crowded during classes. The painted east portion is beside the curb.",
   },
   universityDrE: {
     name: "University Dr E",
@@ -2209,7 +2211,7 @@ export const ROUTES = {
     regions: [REGIONS.ubc],
     legs: [{ videos: { southbound: VIDEOS.wesbrookSb } }],
     notes:
-      "Mostly flat, minor hill to the south. The north portion was partially upgraded around 2022, but is far from perfect. The south portion can be uncomfortable at times.",
+      "Mostly flat, minor hill to the south. Some of the painted lanes are beside parked cars. The north portion was partially upgraded around 2022, but is far from perfect. The south portion can be uncomfortable at times.",
   },
   westDyke: {
     name: "West Dyke Trail",
@@ -2230,7 +2232,7 @@ export const ROUTES = {
     regions: [REGIONS.richmond],
     legs: [{ videos: { westbound: VIDEOS.westminsterWb } }],
     notes:
-      "Very flat. The only east-west connection. The middle section is a reasonably nice shared use path. The west section is a standard shoulder. The shoulders in the east section are much less comfortable; westbound you are sandwiched between two highways. The East-West Connector overpass is quite bad.",
+      "Very flat. The only east-west connection. The painted lanes are beside the curb. The middle section is a reasonably nice shared use path. The west section is a standard shoulder. The shoulders in the east section are much less comfortable; westbound you are sandwiched between two highways. The East-West Connector overpass is quite bad.",
   },
   westportMathers: {
     name: "Westport/Southridge/Westmount/Mathers+",
@@ -2238,14 +2240,14 @@ export const ROUTES = {
     regions: [REGIONS.westVancouver],
     legs: [{ videos: { westbound: VIDEOS.westportMathersWb } }],
     notes:
-      "One of three ways to get to Horseshoe Bay, though it doesn't actually go all the way. Lots of steep hills, though the uphill sections tend to be a painted lane. Lots of turns, but the signs are mostly well-placed at intersections - though the route has no name and it's just a picture of a bike so you can't distinguish which way to go when it intersects another bike route.",
+      "One of three ways to get to Horseshoe Bay, though it doesn't actually go all the way. Lots of steep hills, though the uphill sections tend to be a painted lane. The painted lanes are beside the curb. Lots of turns, but the signs are mostly well-placed at intersections - though the route has no name and it's just a picture of a bike so you can't distinguish which way to go when it intersects another bike route.",
   },
   williams: {
     name: "Williams Rd",
     regions: [REGIONS.richmond],
     legs: [{ videos: { eastbound: VIDEOS.williamsEb } }],
     notes:
-      "Very flat, lots of traffic. The only full east-west connection in south Richmond unfortunately. It's not great.",
+      "Very flat, lots of traffic. The only full east-west connection in south Richmond unfortunately. It's not great. The painted lanes are beside the curb.",
   },
   willingdonLinear: {
     name: "Willingdon Linear Park Urban Trail",
@@ -2307,6 +2309,6 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [{ videos: { southbound: VIDEOS.yukonSb } }],
     notes:
-      "A long hill, steep at times. Plenty of traffic north of 12th unfortunately. A bit annoying to cross Broadway during the subway construction. The crossing/intersections at King Edward Ave were upgraded around 2023.",
+      "A long hill, steep at times. Plenty of traffic north of 12th unfortunately. The painted lanes are often beside parked cars. A bit annoying to cross Broadway during the subway construction. The crossing/intersections at King Edward Ave were upgraded around 2023.",
   },
 };
