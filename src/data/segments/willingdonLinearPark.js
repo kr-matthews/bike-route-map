@@ -45,7 +45,9 @@ export const WILLINGDON_LINEAR_PARK = [
     routeNames: [ROUTES.willingdonLinear.name],
     description: "primary",
     type: "mixed",
-    videoIds: [VIDEOS.willingdonLinearNb.id],
+    videoIds: [VIDEOS.willingdonLinearSb.id, VIDEOS.willingdonLinearNb.id],
+    videoIdsStartAtEnd: [VIDEOS.willingdonLinearSb.id],
+    videoIdsEndAtStart: [VIDEOS.willingdonLinearSb.id],
     videoIdsEndAtEnd: [VIDEOS.willingdonLinearNb.id],
     positions: [
       TRAIL_S,

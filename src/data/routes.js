@@ -2253,7 +2253,14 @@ export const ROUTES = {
     name: "Willingdon Linear Park Urban Trail",
     shortName: "Willingdon L. Park",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { northbound: VIDEOS.willingdonLinearNb } }],
+    legs: [
+      {
+        videos: {
+          northbound: VIDEOS.willingdonLinearNb,
+          southbound: VIDEOS.willingdonLinearSb,
+        },
+      },
+    ],
     notes:
       "A gentle hill. The city slowly bought all the corner lots over decades then added this path. It may host a skytrain above it in the distant future. Unfortunately, neither end properly connects to other bike routes - going south, you'll be stuck at the end on the wrong side of the road.",
   },
