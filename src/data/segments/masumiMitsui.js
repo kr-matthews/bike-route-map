@@ -20,6 +20,7 @@ const GRANVILLE_LANE_E_59TH = [49.21736, -123.13943];
 const CAMBIE_58TH_EE = [49.21784, -123.1166];
 const ALBERTA_58TH = [49.21774, -123.1133];
 const PAULSON_59TH_W = [49.21697, -123.11867];
+const LEFT_PAINTED_BEGIN = [49.21697, -123.11829];
 const ARGYLE_59TH_E = [49.21629, -123.07191];
 const NASSAU_PRESTWICK = [49.21735, -123.07125];
 const ELLIOTT_57TH = [49.21799, -123.05422];
@@ -88,11 +89,24 @@ export const MASUMI_MITSUI_GREENWAY = [
   },
   {
     routeNames: [ROUTES.masumiMitsui.name],
-    description: "eb: paulson to cambie",
+    description: "eb: paulson to...",
     type: "quiet",
     oneWay: "recommended",
     videoIds: [VIDEOS.masumiMitsuiEb.id],
-    positions: [PAULSON_59TH_W, [49.21695, -123.11718], CAMBIE_59TH_NW],
+    positions: [PAULSON_59TH_W, LEFT_PAINTED_BEGIN],
+  },
+  {
+    routeNames: [ROUTES.masumiMitsui.name],
+    description: "eb: ...to cambie",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [VIDEOS.masumiMitsuiEb.id],
+    positions: [
+      LEFT_PAINTED_BEGIN,
+      [49.21698, -123.11822],
+      [49.21697, -123.11718],
+      CAMBIE_59TH_NW,
+    ],
   },
   {
     routeNames: [ROUTES.masumiMitsui.name],
