@@ -47,6 +47,11 @@ const VIDEOS = {
     date: new Date("May 18 2024"),
     minutes: 4,
   },
+  alphaSb: {
+    id: "WiR9Shdi16U",
+    date: new Date("Feb 26 2025"),
+    minutes: 1,
+  },
   arbutusGreenwayNb: {
     id: "EyhC1Qqacy8",
     tlId: "5zt1PCU880A",

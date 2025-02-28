@@ -239,7 +239,7 @@ export const ROUTES = {
   alpha: {
     name: "Alpha Ave",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.alphaSb } }],
     notes:
       "New in 2025. A short shared use path on a gentle hill. It crosses a few driveways.",
   },

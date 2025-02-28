@@ -1,11 +1,15 @@
 import { ALPHA_FRANCES_E } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const ALPHA = [
   {
     routeNames: [ROUTES.alpha.name],
     description: "primary",
     type: "mixed",
+    videoIds: [VIDEOS.alphaSb.id],
+    videoIdsStartAtEnd: [VIDEOS.alphaSb.id],
+    videoIdsEndAtStart: [VIDEOS.alphaSb.id],
     positions: [
       [49.27567, -123.00021],
       [49.27687, -123.00018],
