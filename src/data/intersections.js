@@ -12,6 +12,7 @@ export const ALDER_10TH = [49.26253, -123.1314];
 export const ALDER_14TH = [49.25879, -123.13155];
 export const ALEXANDER_POWELL = [49.28333, -123.10398];
 export const ALEX_FRASER_NW_FRASERWOOD = [49.17502, -122.96023];
+export const ALPHA_FRANCES_E = [49.27918, -123.00018];
 export const ANGUS_37TH = [49.23817, -123.14658];
 export const ANGUS_33RD_N = [49.24201, -123.14553];
 export const ANGUS_33RD_S = [49.24195, -123.14553];

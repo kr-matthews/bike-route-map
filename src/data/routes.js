@@ -236,6 +236,13 @@ export const ROUTES = {
     notes:
       "The bridge sidewalk has a lot of obstacles, and the bridge itself is very high. The connections on the north/west end are a bit confusing.",
   },
+  alpha: {
+    name: "Alpha Ave",
+    regions: [REGIONS.burnaby],
+    legs: [{ videos: {} }],
+    notes:
+      "New in 2025. A short shared use path on a gentle hill. It crosses a few driveways.",
+  },
   arbutusGreenway: {
     name: "Arbutus Greenway",
     regions: [REGIONS.vancouver],

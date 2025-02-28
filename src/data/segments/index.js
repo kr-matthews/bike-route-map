@@ -7,6 +7,7 @@ import { ALDER } from "./alder";
 import { ALDERBRIDGE } from "./alderbridge";
 import { ALEX_FRASER_BRIDGE } from "./alexFraserBridge";
 import { ALEXANDER } from "./alexander";
+import { ALPHA } from "./alpha";
 import { ARBUTUS_GREENWAY } from "./arbutusGreenway";
 import { ARTHUR_LAING } from "./arthurLaing";
 import { BALACLAVA } from "./balaclava";
@@ -230,6 +231,7 @@ export const SEGMENTS = [
   ...ALDERBRIDGE,
   ...ALEX_FRASER_BRIDGE,
   ...ALEXANDER,
+  ...ALPHA,
   ...ARBUTUS_GREENWAY,
   ...ARTHUR_LAING,
   ...BALACLAVA,
