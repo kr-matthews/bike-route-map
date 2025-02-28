@@ -27,6 +27,7 @@ const HASTINGS_OVERPASS_S = [49.27997, -122.96001];
 const EAST_OF_BOUNDARY_ADANAC = [49.27756, -123.0221];
 
 const FELL_FRANCES = [49.27916, -122.97556];
+const KENSINGTON_UNION_SW = [49.27773, -122.97025];
 const KENSINGTON_UNION_E = [49.27782, -122.96982];
 const MALIBU_LANE_E = [49.28655, -122.95643];
 const MALIBU_LANE_W = [49.286, -122.95885];
@@ -52,6 +53,23 @@ export const FRANCES_UNION = [
       BARNET_RIDGE,
     ],
   },
+  {
+    description: "burnaby north secondary school",
+    type: "mixed",
+    positions: [
+      [49.27529, -122.97331],
+      [49.27533, -122.97327],
+      [49.27536, -122.97315],
+      [49.27536, -122.97051],
+      [49.27536, -122.97023],
+      [49.27724, -122.97021],
+      [49.2773, -122.97023],
+      [49.27738, -122.97026],
+      [49.27741, -122.97026],
+      KENSINGTON_UNION_SW,
+    ],
+  },
+
   {
     routeNames: [ROUTES.francesUnion.name],
     description: "just east of boundary",
@@ -147,7 +165,7 @@ export const FRANCES_UNION = [
       [49.27786, -122.97048],
       [49.27781, -122.97036],
       [49.27779, -122.9703],
-      [49.27773, -122.97025],
+      KENSINGTON_UNION_SW,
       [49.27779, -122.97001],
       KENSINGTON_UNION_E,
     ],
