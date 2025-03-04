@@ -8,7 +8,7 @@ import {
   GAGLARDI_LOUGHEED_SW,
   GAGLARDI_UNIVERSITY_E_NE,
   STORMONT_CARIBOO_NE_E,
-  STORMONT_CARIBOO_N_W as STORMONT_CARIBOO_NW_N,
+  STORMONT_CARIBOO_NW_N,
   STORMONT_CARIBOO_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -57,6 +57,7 @@ export const GAGLARDI = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.gaglardiNb.id],
     positions: [
       STORMONT_CARIBOO_NW_N,
       [49.24609, -122.91269],
@@ -84,6 +85,7 @@ export const GAGLARDI = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.gaglardiNb.id],
     positions: [
       CARIBOO_OVERPASS_SE,
       [49.2478, -122.91284],
@@ -97,6 +99,7 @@ export const GAGLARDI = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.gaglardiNb.id],
     positions: [
       CARIBOO_OVERPASS_NE,
       [49.24839, -122.91269],
@@ -110,6 +113,7 @@ export const GAGLARDI = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.gaglardiNb.id],
     positions: [
       GOVERNMENT_OVERPASS_SE,
       [49.25074, -122.91252],
@@ -122,6 +126,7 @@ export const GAGLARDI = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.gaglardiNb.id],
     positions: [
       GOVERNMENT_OVERPASS_NE,
       [49.25124, -122.91242],
@@ -145,6 +150,7 @@ export const GAGLARDI = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.gaglardiNb.id],
     positions: [
       EASTLAKE_OVERPASS_SE,
       [49.25737, -122.91196],
@@ -159,6 +165,8 @@ export const GAGLARDI = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.gaglardiNb.id],
+    videoIdsEndAtEnd: [VIDEOS.gaglardiNb.id],
     positions: [
       EASTLAKE_OVERPASS_NE,
       [49.25803, -122.91162],

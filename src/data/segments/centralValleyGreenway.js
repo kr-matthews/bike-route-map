@@ -880,10 +880,13 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "government to cariboo plc",
     videoIds: [
       VIDEOS.centralValleyBurnabyWb.id,
-      VIDEOS.caribooSb.id,
       VIDEOS.brunetteFraserSb.id,
+      VIDEOS.caribooNb.id,
+      VIDEOS.caribooSb.id,
+      VIDEOS.gaglardiNb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.caribooSb.id],
+    videoIdsStartAtStart: [VIDEOS.caribooSb.id, VIDEOS.gaglardiNb.id],
+    videoIdsEndAtStart: [VIDEOS.caribooNb.id],
     positions: [
       CARIBOO_GOVERNMENT,
       [49.2506, -122.91411],

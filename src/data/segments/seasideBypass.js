@@ -1032,6 +1032,7 @@ export const SEASIDE_BYPASS = [
   {
     description: "beach richards to homer",
     type: "quiet",
+    videoIds: [VIDEOS.richardsNb.id],
     positions: [
       RICHARDS_BEACH,
       [49.27311, -123.12827],
@@ -1055,8 +1056,8 @@ export const SEASIDE_BYPASS = [
   {
     description: "homer to seaside",
     type: "mixed",
-    videoIds: [VIDEOS.homerNb.id],
-    videoIdsStartAtEnd: [VIDEOS.homerNb.id],
+    videoIds: [VIDEOS.richardsNb.id, VIDEOS.homerNb.id],
+    videoIdsStartAtEnd: [VIDEOS.richardsNb.id, VIDEOS.homerNb.id],
     positions: [HOMER_BEACH, SEAWALL_BEACH],
   },
   {

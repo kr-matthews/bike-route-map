@@ -50,6 +50,7 @@ export const BURNABY_MOUNTAIN_PARKWAY = [
     description: "hastings wb shoulder",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.burnabyMtnWb.id],
     positions: [
       BURNABY_MTN_HASTINGS_N,
       [49.28015, -122.95028],
@@ -64,6 +65,7 @@ export const BURNABY_MOUNTAIN_PARKWAY = [
     description: "hastings wb road",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.burnabyMtnWb.id],
     positions: [
       HASTINGS_WB_SHOULDER_END,
       [49.2804, -122.95116],
@@ -115,8 +117,8 @@ export const BURNABY_MOUNTAIN_PARKWAY = [
     description: "wb crossing gaglardi",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.gaglardiSb.id],
-    videoIdsStartAtStart: [VIDEOS.gaglardiSb.id],
+    videoIds: [VIDEOS.gaglardiSb.id, VIDEOS.burnabyMtnWb.id],
+    videoIdsStartAtStart: [VIDEOS.gaglardiSb.id, VIDEOS.burnabyMtnWb.id],
     positions: [GAGLARDI_UNIVERSITY_E_NE, GAGLARDI_BURNABY_MTN_NW],
   },
   {
@@ -124,6 +126,7 @@ export const BURNABY_MOUNTAIN_PARKWAY = [
     description: "wb",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.burnabyMtnWb.id],
     positions: [
       GAGLARDI_BURNABY_MTN_NW,
       [49.27361, -122.92649],

@@ -730,15 +730,25 @@ export const BC_PARKWAY = [
   },
   {
     routeNames: [ROUTES.bcParkway.name],
+    description: "crossing southpoint",
+    videoIds: [
+      VIDEOS.bcParkwayBurnabyEb.id,
+      VIDEOS.bcParkwayBurnabyWb.id,
+      VIDEOS.southeastEb.id,
+      VIDEOS.edmonds18thNb.id,
+    ],
+    videoIdsStartAtStart: [VIDEOS.southeastEb.id, VIDEOS.edmonds18thNb.id],
+    positions: [STATION_HILL_SOUTHPOINT_NE, STATION_HILL_SOUTHPOINT_SE],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
     description: "southpoint to school overpass branch",
     videoIds: [
       VIDEOS.bcParkwayBurnabyEb.id,
       VIDEOS.bcParkwayBurnabyWb.id,
       VIDEOS.edmonds18thNb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.edmonds18thNb.id],
     positions: [
-      STATION_HILL_SOUTHPOINT_NE,
       STATION_HILL_SOUTHPOINT_SE,
       [49.20983, -122.95815],
       [49.2098, -122.95815],

@@ -430,7 +430,14 @@ export const ROUTES = {
     name: "Burnaby Mountain Parkway",
     shortName: "Burnaby Mtn Pkwy",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { eastbound: VIDEOS.burnabyMtnEb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.burnabyMtnEb,
+          westbound: VIDEOS.burnabyMtnWb,
+        },
+      },
+    ],
     notes:
       "Very steep and beside fast traffic. Better to use the adjacent shared use path, but unfortunately that only exists for the top half of the route (though the city plans to extend it all the way down), and does not allow you to cross Gaglardi directly.",
   },
@@ -556,7 +563,11 @@ export const ROUTES = {
   cariboo: {
     name: "Cariboo",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { southbound: VIDEOS.caribooSb } }],
+    legs: [
+      {
+        videos: { northbound: VIDEOS.caribooNb, southbound: VIDEOS.caribooSb },
+      },
+    ],
     notes:
       "Going southbound, it's extremely easy to miss any of the turns. The painted lanes are beside the curb. The north end is a steep hill.",
   },
@@ -886,7 +897,14 @@ export const ROUTES = {
   gaglardi: {
     name: "Gaglardi Way",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { southbound: VIDEOS.gaglardiSb } }],
+    legs: [
+      {
+        videos: {
+          northbound: VIDEOS.gaglardiNb,
+          southbound: VIDEOS.gaglardiSb,
+        },
+      },
+    ],
     notes:
       "A long steep hill up to SFU. Besides heavy car traffic which is all going above the speed limit. The shoulder briefly gets extremely narrow when crossing over Government St.",
   },
@@ -1767,7 +1785,14 @@ export const ROUTES = {
   richards: {
     name: "Richards",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { southbound: VIDEOS.richardsSb } }],
+    legs: [
+      {
+        videos: {
+          northbound: VIDEOS.richardsNb,
+          southbound: VIDEOS.richardsSb,
+        },
+      },
+    ],
     notes:
       "Steep hill at the north end, and also no connection to anything at the north end. Very similar to Hornby.",
   },
@@ -2036,7 +2061,14 @@ export const ROUTES = {
   southeast: {
     name: "Southeast",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { westbound: VIDEOS.southeastWb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.southeastEb,
+          westbound: VIDEOS.southeastWb,
+        },
+      },
+    ],
     notes:
       "Some minor hills. The east portion is quite bad, and only connects to Cariboo. The west block, between BC Parkway and Griffiths Dr, was upgraded in 2024. Gets busy around Mary St during school start/end.",
   },

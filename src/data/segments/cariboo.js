@@ -4,7 +4,7 @@ import {
   CASCADE_ARMSTRONG,
   STORMONT_CARIBOO_NE_E,
   STORMONT_CARIBOO_NW,
-  STORMONT_CARIBOO_N_W,
+  STORMONT_CARIBOO_NW_N,
   STORMONT_CARIBOO_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -81,6 +81,8 @@ export const CARIBOO = [
     description: "nb first bit",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.caribooNb.id],
+    videoIdsStartAtStart: [VIDEOS.caribooNb.id],
     positions: [CARIBOO_ARMSTRONG_E, [49.23555, -122.9042], NB_LANE_START],
   },
   {
@@ -89,6 +91,7 @@ export const CARIBOO = [
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.caribooNb.id],
     positions: [
       NB_LANE_START,
       [49.23617, -122.90493],
@@ -127,6 +130,7 @@ export const CARIBOO = [
     type: "painted",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.caribooNb.id],
     positions: [
       NB_OVERPASS_START,
       [49.24486, -122.91035],
@@ -140,6 +144,7 @@ export const CARIBOO = [
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.caribooNb.id],
     positions: [
       NB_OVERPASS_END,
       [49.24556, -122.91125],
@@ -176,11 +181,11 @@ export const CARIBOO = [
   // sb
   {
     routeNames: [ROUTES.cariboo.name],
-    description: "sb - pre-overpass",
+    description: "sb - to stormont",
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.caribooSb.id],
+    videoIds: [VIDEOS.caribooSb.id, VIDEOS.gaglardiNb.id],
     positions: [
       CARIBOO_CARIBOO_PL_E,
       [49.24942, -122.91438],
@@ -203,7 +208,18 @@ export const CARIBOO = [
       [49.24668, -122.91257],
       [49.24657, -122.91259],
       [49.24626, -122.91258],
-      STORMONT_CARIBOO_N_W,
+      STORMONT_CARIBOO_NW_N,
+    ],
+  },
+  {
+    routeNames: [ROUTES.cariboo.name],
+    description: "sb - from stormont to overpass",
+    type: "painted",
+    oneWay: "required",
+    elevation: 0.5,
+    videoIds: [VIDEOS.caribooSb.id],
+    positions: [
+      STORMONT_CARIBOO_NW_N,
       [49.24608, -122.91251],
       STORMONT_CARIBOO_NW,
       STORMONT_CARIBOO_SW,

@@ -211,6 +211,11 @@ const VIDEOS = {
     date: new Date("Oct 11 2024"),
     minutes: 11,
   },
+  burnabyMtnWb: {
+    id: "dfog0jI0epo",
+    date: new Date("Feb 26 2025"),
+    minutes: 6,
+  },
   burnabyMtnPathEb: {
     id: "icrtJz2v5tM",
     tlId: "A-caKjdXyOY",
@@ -296,8 +301,14 @@ const VIDEOS = {
     date: new Date("Dec 04 2024"),
     minutes: 7,
   },
+  caribooNb: {
+    id: "e-ylSFt-GZ8",
+    date: new Date("Feb 26 2025"),
+    minutes: 4,
+  },
   caribooSb: {
     id: "w54AMi1gEiQ",
+    tlId: "VovbEE7tHHk",
     date: new Date("May 09 2024"),
     minutes: 11,
   },
@@ -606,6 +617,12 @@ const VIDEOS = {
     id: "JpuMhCUJYSU",
     date: new Date("Dec 23 2023"),
     minutes: 10,
+  },
+  gaglardiNb: {
+    id: "o-IUnGZKH2w",
+    tlId: "Yh7PP0EKIgc",
+    date: new Date("Feb 26 2025"),
+    minutes: 22,
   },
   gaglardiSb: {
     id: "HOTLltpBK1Q",
@@ -1239,8 +1256,15 @@ const VIDEOS = {
     date: new Date("Jul 06 2024"),
     minutes: 17,
   },
+  richardsNb: {
+    id: "hI7nOnYtV0Q",
+    tlId: "TZ0bU_R116E",
+    date: new Date("Feb 28 2025"),
+    minutes: 8,
+  },
   richardsSb: {
     id: "1Frtbn89JgM",
+    tlId: "N32cSTNgBbM",
     date: new Date("Feb 15 2024"),
     minutes: 7,
   },
@@ -1464,8 +1488,15 @@ const VIDEOS = {
     date: new Date("Mar 13 2024"),
     minutes: 5,
   },
+  southeastEb: {
+    id: "E5rLtkOdTVQ",
+    tlId: "xPXylppd_3M",
+    date: new Date("Feb 26 2025"),
+    minutes: 17,
+  },
   southeastWb: {
     id: "k8DwdiFe8dQ",
+    tlId: "7f143zep4pk",
     date: new Date("May 09 2024"),
     minutes: 18,
   },
