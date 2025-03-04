@@ -73,6 +73,8 @@ const EAST_OF_SPYGLASS = [49.2712, -123.11435];
 const LAUREL_LAND_BRIDGE_S = [49.26572, -123.12435];
 const LAUREL_LAND_BRIDGE_N = [49.26632, -123.12433];
 
+const CLOSURE_TERMINAL = [49.27302, -123.10231];
+
 export const SEASIDE = [
   // connections
   {
@@ -733,7 +735,7 @@ export const SEASIDE = [
   },
   {
     routeNames: [ROUTES.seaside.name],
-    description: "false creek south - east of columbia",
+    description: "false creek south - columbia to ontario",
     type: "dedicated",
     videoIds: [VIDEOS.seasideFalseCreekCw.id],
     positions: [
@@ -752,6 +754,16 @@ export const SEASIDE = [
       [49.27198, -123.10449],
       [49.27198, -123.10449],
       ONTARIO_PATH_SEASIDE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "false creek south - ontario to terminal",
+    type: "dedicated",
+    isClosed: true,
+    videoIds: [VIDEOS.seasideFalseCreekCw.id],
+    positions: [
+      ONTARIO_PATH_SEASIDE,
       [49.272, -123.10424],
       [49.27199, -123.10369],
       [49.272, -123.10352],
@@ -762,7 +774,16 @@ export const SEASIDE = [
       [49.27274, -123.10252],
       [49.27282, -123.10249],
       [49.27292, -123.10242],
-      [49.27302, -123.10231],
+      CLOSURE_TERMINAL,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "false creek south - terminal to quebec",
+    type: "dedicated",
+    videoIds: [VIDEOS.seasideFalseCreekCw.id],
+    positions: [
+      CLOSURE_TERMINAL,
       [49.27349, -123.10229],
       [49.27366, -123.10233],
       [49.27386, -123.10243],
