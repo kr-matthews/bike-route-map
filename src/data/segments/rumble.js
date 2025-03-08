@@ -2,7 +2,7 @@ import {
   BULLER_RUMBLE_N,
   GILLEY_RUMBLE_NW,
   MCKAY_RUMBLE,
-  RUMBLE_BOUNDARY_NE,
+  BOUNDARY_RUMBLE_NE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -18,7 +18,7 @@ export const RUMBLE = [
     videoIds: [VIDEOS.rumbleWb.id],
     videoIdsEndAtStart: [VIDEOS.rumbleWb.id],
     positions: [
-      RUMBLE_BOUNDARY_NE,
+      BOUNDARY_RUMBLE_NE,
       [49.2149, -123.02091],
       [49.21492, -123.01508],
       [49.21492, -123.01241],

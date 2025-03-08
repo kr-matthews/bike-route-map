@@ -645,7 +645,7 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [{ videos: { westbound: VIDEOS.champlainHeightsGapWb } }],
     notes:
-      "A critical gap between Masumi Mitsui Greenway and Rumble St Urban Trail. There are also paths you can take to shorten this, but it's unclear whether bikes are technically allowed.",
+      "A critical gap between Masumi Mitsui Greenway and Rumble St Urban Trail. You can stick to the road, or take some more direct paths, but it's unclear whether bikes are technically allowed on those paths.",
   },
   chancellor: {
     name: "Chancellor Blvd",

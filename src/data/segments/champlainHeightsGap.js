@@ -1,8 +1,10 @@
-import { RUMBLE_BOUNDARY_NE, VIVIAN_57TH } from "../intersections";
+import { BOUNDARY_RUMBLE_NE, VIVIAN_57TH } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 const CHAMPLAIN_MAQUINNA = [49.21569, -123.03031];
+const MATHESON_BIRCH = [49.21641, -123.02513];
+const BOUNDARY_RUMBLE_W = [49.21482, -123.02387];
 
 export const CHAMPLAIN_HEIGHTS_GAP = [
   {
@@ -52,11 +54,10 @@ export const CHAMPLAIN_HEIGHTS_GAP = [
   },
   {
     routeNames: [ROUTES.champlainHeightsGap.name],
-    description: "shared part",
+    description: "shared part extra",
     type: "shared",
     undesignated: true,
     videoIds: [VIDEOS.champlainHeightsGapWb.id],
-    videoIdsStartAtEnd: [VIDEOS.champlainHeightsGapWb.id],
     positions: [
       CHAMPLAIN_MAQUINNA,
       [49.216, -123.0305],
@@ -85,15 +86,62 @@ export const CHAMPLAIN_HEIGHTS_GAP = [
       [49.21772, -123.02511],
       [49.21748, -123.02511],
       [49.21675, -123.02511],
-      [49.21641, -123.02513],
+      MATHESON_BIRCH,
+    ],
+  },
+  {
+    routeNames: [ROUTES.champlainHeightsGap.name],
+    description: "path",
+    type: "mixed",
+    undesignated: true,
+    positions: [
+      CHAMPLAIN_MAQUINNA,
+      [49.21577, -123.03023],
+      [49.21582, -123.03004],
+      [49.21588, -123.0299],
+      [49.21594, -123.02981],
+      [49.21598, -123.02971],
+      [49.216, -123.02944],
+      [49.21595, -123.02913],
+      [49.21595, -123.02862],
+      [49.21598, -123.02832],
+      [49.21605, -123.02801],
+      [49.21602, -123.02786],
+      [49.21599, -123.0277],
+      [49.21607, -123.02726],
+      [49.21616, -123.02712],
+      [49.21636, -123.02696],
+      [49.2165, -123.02662],
+      [49.21649, -123.02611],
+      [49.21639, -123.02543],
+      [49.2164, -123.02523],
+      MATHESON_BIRCH,
+    ],
+  },
+  {
+    routeNames: [ROUTES.champlainHeightsGap.name],
+    description: "from path to boundary",
+    type: "shared",
+    undesignated: true,
+    videoIds: [VIDEOS.champlainHeightsGapWb.id],
+    positions: [
+      MATHESON_BIRCH,
       [49.21615, -123.02518],
       [49.21583, -123.02529],
       [49.21549, -123.02545],
       [49.21517, -123.02555],
       [49.21493, -123.02559],
       [49.21482, -123.02559],
-      [49.2148, -123.02372],
-      RUMBLE_BOUNDARY_NE,
+      BOUNDARY_RUMBLE_W,
     ],
+  },
+  {
+    routeNames: [ROUTES.champlainHeightsGap.name],
+    description: "at boundary",
+    type: "other",
+    undesignated: true,
+    videoIds: [VIDEOS.champlainHeightsGapWb.id],
+    videoIdsStartAtEnd: [VIDEOS.champlainHeightsGapWb.id],
+    positions: [BOUNDARY_RUMBLE_W, [49.21489, -123.02386], BOUNDARY_RUMBLE_NE],
   },
 ];
