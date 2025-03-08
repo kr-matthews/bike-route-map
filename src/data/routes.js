@@ -1824,7 +1824,7 @@ export const ROUTES = {
     regions: [REGIONS.burnaby],
     legs: [{ videos: { westbound: VIDEOS.rumbleWb } }],
     notes:
-      "Gradual hill. For some reason there's a gap in the middle, even though there's plenty of space for a wide path. The intersections are bad, cars often block the crossing. The crossing signals won't automatically change, so you're essentially guaranteed to have to stop and press the buttons. And there are too many driveways along the path. Plus it doesn't connect to anything in Vancouver.",
+      "Gradual hill. For some reason there's a gap in the middle (even though there's plenty of space for a wide path) and you need to share the busy road with cars. Transitioning between the road and path at either end of this gap can be awkward. Generally, the intersections are bad, cars often block the crossing. The crossing signals won't automatically change, so you're essentially guaranteed to have to stop and press the buttons. And there are too many driveways along the path. Plus it doesn't connect to anything in Vancouver.",
   },
   rupert: {
     name: "Rupert St",

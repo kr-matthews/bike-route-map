@@ -7,7 +7,7 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-const ROYAL_OAK_RUMBLE_NW = [49.21494, -122.98862];
+const ROYAL_OAK_RUMBLE_NW = [49.21495, -122.98867];
 const MACPHERSON_RUMBLE_N = [49.21497, -122.98285];
 
 export const RUMBLE = [
@@ -30,11 +30,22 @@ export const RUMBLE = [
     ],
   },
   {
-    routeNames: [ROUTES.rumble.name],
     description: "missing middle",
+    undesignated: true,
     type: "other",
     videoIds: [VIDEOS.rumbleWb.id],
     positions: [ROYAL_OAK_RUMBLE_NW, MACPHERSON_RUMBLE_N],
+  },
+  {
+    routeNames: [ROUTES.rumble.name],
+    description: "bad street part",
+    type: "shared",
+    positions: [
+      ROYAL_OAK_RUMBLE_NW,
+      [49.21487, -122.98867],
+      [49.21487, -122.98286],
+      MACPHERSON_RUMBLE_N,
+    ],
   },
   {
     routeNames: [ROUTES.rumble.name],
