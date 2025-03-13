@@ -3,6 +3,7 @@ import {
   BC_PARKWAY_MISSION,
   BC_PARKWAY_SOUTHRIDGE_TRAIL,
   BYRNE_CREEK_MARINE_S,
+  BYRNE_MARINE_NW,
   BYRNE_MARINE_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -95,7 +96,7 @@ export const BYRNE_CREEK = [
       BYRNE_CREEK_MARINE_SS,
       [49.20229, -122.98267],
       BYRNE_MARINE_SW,
-      [49.2022, -122.98186],
+      BYRNE_MARINE_NW,
       [49.20229, -122.98184],
       [49.20239, -122.98147],
       [49.20372, -122.97905],

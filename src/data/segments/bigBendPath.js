@@ -1,4 +1,5 @@
 import {
+  BYRNE_MARINE_NW,
   BYRNE_MARINE_SW,
   NORTH_FRASER_MARINE_SE,
   NORTH_FRASER_MARINE_SSE,
@@ -6,11 +7,17 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const BYRNE_MARINE_SE = [49.2018, -122.98198];
 const MISSING_PATH_N = [49.19636, -122.96843];
 const MISSING_PATH_S = [49.19619, -122.96857];
 const GLENWOOD_TRAPP = [49.19163, -122.96714];
 
 export const BIG_BEND_PATH = [
+  {
+    description: "alt crossing marine way",
+    type: "mixed",
+    positions: [BYRNE_MARINE_SE, [49.202, -122.98162], BYRNE_MARINE_NW],
+  },
   {
     description: "to 10th",
     type: "comfortable",
@@ -44,7 +51,7 @@ export const BIG_BEND_PATH = [
     videoIdsStartAtStart: [VIDEOS.bigBendSb.id],
     positions: [
       BYRNE_MARINE_SW,
-      [49.2018, -122.98198],
+      BYRNE_MARINE_SE,
       [49.2017, -122.98197],
       [49.20165, -122.98183],
       [49.20153, -122.98165],

@@ -163,6 +163,7 @@ export const BUTE_COMOX = [49.28319, -123.13125];
 export const BUTE_HARO = [49.28531, -123.12805];
 export const BUTE_NELSON = [49.2839, -123.13019];
 export const BYRNE_CREEK_MARINE_S = [49.20292, -122.9833];
+export const BYRNE_MARINE_NW = [49.2022, -122.98186];
 export const BYRNE_MARINE_SW = [49.20197, -122.9823];
 export const CAMBIE_1ST_N = [49.26817, -123.11487];
 export const CAMBIE_29TH_SE = [49.24514, -123.1153];
