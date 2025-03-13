@@ -360,7 +360,13 @@ export const ROUTES = {
   bigBendPath: {
     name: "Big Bend Path",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: {} }],
+    legs: [
+      { videos: { southbound: VIDEOS.bigBendSb } },
+      {
+        name: "Trapp Ave Alternate Branch",
+        videos: { eastbound: VIDEOS.bigBendTrappEb },
+      },
+    ],
     notes:
       "Very flat. The path briefly disappears at the train track crossing at Marine and North Fraser.",
   },
@@ -450,7 +456,10 @@ export const ROUTES = {
       },
       {
         name: "Seaside Connection via Bridge",
-        videos: { southbound: VIDEOS.burrardBridgeSb },
+        videos: {
+          northbound: VIDEOS.burrardBridgeNb,
+          southbound: VIDEOS.burrardBridgeSb,
+        },
       },
     ],
     notes:
@@ -469,7 +478,7 @@ export const ROUTES = {
     name: "Byrne Creek Urban Trail",
     shortName: "Byrne Creek Trail",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { westbound: VIDEOS.byrneCreekWb } }],
     notes:
       "A hill. Unfortunately this doesn't quite connect to Glenlyon Urban Trail at the south end. The path continues, but it's hardly suitable for a bike.",
   },

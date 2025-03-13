@@ -694,8 +694,9 @@ export const BC_PARKWAY = [
       VIDEOS.bcParkwayBurnabyEb.id,
       VIDEOS.bcParkwayBurnabyWb.id,
       VIDEOS.victoryWb.id,
+      VIDEOS.byrneCreekWb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.victoryWb.id],
+    videoIdsStartAtStart: [VIDEOS.victoryWb.id, VIDEOS.byrneCreekWb.id],
     positions: [
       BC_PARKWAY_EDMONDS_GOOD,
       [49.21362, -122.9606],
@@ -706,12 +707,24 @@ export const BC_PARKWAY = [
   },
   {
     routeNames: [ROUTES.bcParkway.name],
-    description: "edmonds to southpoint",
-    videoIds: [VIDEOS.bcParkwayBurnabyEb.id, VIDEOS.bcParkwayBurnabyWb.id],
+    description: "edmonds to byrne creek",
+    videoIds: [
+      VIDEOS.bcParkwayBurnabyEb.id,
+      VIDEOS.bcParkwayBurnabyWb.id,
+      VIDEOS.byrneCreekWb.id,
+    ],
     positions: [
       BC_PARKWAY_VICTORY_CONNECTION,
       [49.21287, -122.96093],
       [49.21269, -122.96088],
+      BC_PARKWAY_BYRNE_CREEK,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "byrne creek to southpoint",
+    videoIds: [VIDEOS.bcParkwayBurnabyEb.id, VIDEOS.bcParkwayBurnabyWb.id],
+    positions: [
       BC_PARKWAY_BYRNE_CREEK,
       [49.21238, -122.96053],
       BC_PARKWAY_EDMONDS_BAD,

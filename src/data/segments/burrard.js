@@ -91,7 +91,6 @@ export const BURRARD = [
     description: "nb 4th to 1st",
     type: "painted",
     oneWay: "required",
-    elevation: 0.5,
     videoIds: [VIDEOS.burrardNb.id],
     positions: [
       BURRARD_4TH_E,
@@ -106,7 +105,7 @@ export const BURRARD = [
     type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.burrardNb.id],
+    videoIds: [VIDEOS.burrardBridgeNb.id, VIDEOS.burrardNb.id],
     positions: [
       BURRARD_1ST_E,
       [49.27072, -123.14534],
@@ -126,7 +125,7 @@ export const BURRARD = [
     type: "dedicated",
     oneWay: "required",
     elevation: 1,
-    videoIds: [VIDEOS.burrardNb.id],
+    videoIds: [VIDEOS.burrardBridgeNb.id, VIDEOS.burrardNb.id],
     positions: [
       NORTHBOUND_ELEVATION_START,
       [49.27394, -123.14146],
@@ -143,9 +142,16 @@ export const BURRARD = [
     type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [VIDEOS.burrardBridgeNb.id, VIDEOS.burrardNb.id],
+    positions: [NORTHBOUND_ELEVATION_END, BURRARD_NORTHBOUND_SPLIT],
+  },
+  {
+    routeNames: [ROUTES.burrard.name],
+    description: "northbound post-bridge post-split",
+    type: "dedicated",
+    oneWay: "required",
     videoIds: [VIDEOS.burrardNb.id],
     positions: [
-      NORTHBOUND_ELEVATION_END,
       BURRARD_NORTHBOUND_SPLIT,
       [49.2768, -123.13249],
       BURRARD_PACIFIC_SE_W,
@@ -185,6 +191,7 @@ export const BURRARD = [
     description: "to pacific eb",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.burrardBridgeNb.id],
     positions: [
       BURRARD_NORTHBOUND_SPLIT,
       [49.27678, -123.13244],

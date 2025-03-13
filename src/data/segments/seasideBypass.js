@@ -160,19 +160,24 @@ export const SEASIDE_BYPASS = [
   // false creek south
   {
     routeNames: [ROUTES.seasideBypass.name],
-    description: "cypress to pine",
+    description: "cypress to burrard (e)",
     type: "quiet",
     videoIds: [
       VIDEOS.seasideBypassFalseCreekSouthEb.id,
       VIDEOS.seasideBypassFalseCreekSouthWb.id,
     ],
-    positions: [
-      CYPRESS_1ST,
-      CHESTNUT_1ST,
-      BURRARD_1ST_W,
-      BURRARD_1ST_E,
-      PINE_1ST,
+    positions: [CYPRESS_1ST, CHESTNUT_1ST, BURRARD_1ST_W, BURRARD_1ST_E],
+  },
+  {
+    routeNames: [ROUTES.seasideBypass.name],
+    description: "burrard (e) to pine",
+    type: "quiet",
+    videoIds: [
+      VIDEOS.seasideBypassFalseCreekSouthEb.id,
+      VIDEOS.seasideBypassFalseCreekSouthWb.id,
+      VIDEOS.burrardBridgeNb.id,
     ],
+    positions: [BURRARD_1ST_E, PINE_1ST],
   },
   {
     routeNames: [ROUTES.seasideBypass.name],
@@ -704,14 +709,27 @@ export const SEASIDE_BYPASS = [
   },
   {
     routeNames: [ROUTES.seasideBypass.name],
-    description: "pacific eb: burrard to beyond richards",
+    description: "pacific eb: burrard to join from bridge",
+    type: "dedicated",
+    oneWay: "required",
+    videoIds: [VIDEOS.seasideBypassPacificEb.id],
+    positions: [BURRARD_PACIFIC_SE, BURRARD_PACIFIC_SE_E],
+  },
+  {
+    routeNames: [ROUTES.seasideBypass.name],
+    description: "pacific eb: burrard to hornby",
+    type: "dedicated",
+    oneWay: "required",
+    videoIds: [VIDEOS.seasideBypassPacificEb.id, VIDEOS.burrardBridgeNb.id],
+    positions: [BURRARD_PACIFIC_SE_E, [49.2766, -123.13204], HORNBY_PACIFIC_SE],
+  },
+  {
+    routeNames: [ROUTES.seasideBypass.name],
+    description: "pacific eb: hornby to beyond richards",
     type: "dedicated",
     oneWay: "required",
     videoIds: [VIDEOS.seasideBypassPacificEb.id],
     positions: [
-      BURRARD_PACIFIC_SE,
-      BURRARD_PACIFIC_SE_E,
-      [49.2766, -123.13204],
       HORNBY_PACIFIC_SE,
       [49.27594, -123.13101],
       [49.27561, -123.13055],

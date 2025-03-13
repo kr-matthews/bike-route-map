@@ -46,6 +46,7 @@ import { VIDEOS } from "../videos";
 const SEASIDE_POINT_GREY_W = [49.27133, -123.19079];
 const SEASIDE_WHYTE_E = [49.27631, -123.14042];
 const CREEKSIDE_1ST = [49.2714, -123.14019];
+const SEASIDE_MARINER = [49.2712, -123.13944];
 const FIR_1ST_NW = [49.27089, -123.14144];
 
 const ALMA_POINT_GREY_NE_E = [49.27228, -123.18515];
@@ -91,7 +92,10 @@ export const SEASIDE = [
   {
     description: "1st/fir connection 1",
     type: "dedicated",
-    videoIds: [VIDEOS.seasideBypassFalseCreekSouthWb.id],
+    videoIds: [
+      VIDEOS.burrardBridgeNb.id,
+      VIDEOS.seasideBypassFalseCreekSouthWb.id,
+    ],
     positions: [
       PINE_1ST,
       [49.27067, -123.14319],
@@ -103,6 +107,7 @@ export const SEASIDE = [
   {
     description: "1st/fir connection 2",
     type: "dedicated",
+    videoIds: [VIDEOS.burrardBridgeNb.id],
     positions: [
       FIR_1ST_NW,
       [49.27098, -123.14133],
@@ -499,7 +504,7 @@ export const SEASIDE = [
   },
   {
     routeNames: [ROUTES.seaside.name],
-    description: "false creek south: marina to spyglass",
+    description: "false creek south: marina to creekside",
     type: "dedicated",
     videoIds: [VIDEOS.seasideFalseCreekCw.id],
     positions: [
@@ -525,13 +530,32 @@ export const SEASIDE = [
       [49.27254, -123.1408],
       [49.27146, -123.1402],
       CREEKSIDE_1ST,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "false creek south: near 1st",
+    type: "dedicated",
+    videoIds: [VIDEOS.seasideFalseCreekCw.id, VIDEOS.burrardBridgeNb.id],
+    videoIdsStartAtEnd: [VIDEOS.burrardBridgeNb.id],
+    positions: [
+      CREEKSIDE_1ST,
       [49.27137, -123.1402],
       [49.27134, -123.14019],
       [49.27128, -123.14019],
       [49.27113, -123.14006],
       [49.2711, -123.13999],
       [49.2712, -123.13953],
-      [49.2712, -123.13944],
+      SEASIDE_MARINER,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "false creek south: near 1st to spyglass",
+    type: "dedicated",
+    videoIds: [VIDEOS.seasideFalseCreekCw.id],
+    positions: [
+      SEASIDE_MARINER,
       [49.27116, -123.13938],
       [49.27106, -123.13929],
       [49.27091, -123.13911],

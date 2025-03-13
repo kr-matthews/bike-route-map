@@ -159,6 +159,17 @@ const VIDEOS = {
     date: new Date("Dec 23, 2024"),
     minutes: 6,
   },
+  bigBendSb: {
+    id: "YAF1x03OYcM",
+    tlId: "ZnXqrbwJ4qY",
+    date: new Date("Mar 7 2025"),
+    minutes: 14,
+  },
+  bigBendTrappEb: {
+    id: "PwXQ7BqFul4",
+    date: new Date("Mar 7 2025"),
+    minutes: 1,
+  },
   blancaNb: {
     id: "eIDCFw23nHo",
     date: new Date("Mar 06 2024"),
@@ -233,6 +244,11 @@ const VIDEOS = {
     date: new Date("Aug 21 2023"),
     minutes: 12,
   },
+  burrardBridgeNb: {
+    id: "eoUBB6yuz1M",
+    date: new Date("Mar 3 2025"),
+    minutes: 6,
+  },
   burrardBridgeSb: {
     id: "-ALcq60mb5k",
     date: new Date("Feb 15 2024"),
@@ -247,6 +263,12 @@ const VIDEOS = {
     id: "bcwRc5Bg550",
     date: new Date("Dec 24 2023"),
     minutes: 3,
+  },
+  byrneCreekWb: {
+    id: "MZRkt5flels",
+    tlId: "Bxp_vAh_nr8",
+    date: new Date("Mar 7 2025"),
+    minutes: 9,
   },
   cambieNb: {
     id: "B1KQHt2iqv8",

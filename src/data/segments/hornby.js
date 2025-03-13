@@ -28,9 +28,14 @@ export const HORNBY = [
       VIDEOS.seasideFalseCreekCw.id,
       VIDEOS.seasideBypassBeachWb.id,
       VIDEOS.seasideBypassBeachEb.id,
+      VIDEOS.burrardBridgeNb.id,
     ],
     videoIdsStartAtStart: [VIDEOS.hornbyNb.id, VIDEOS.seasideBypassBeachWb.id],
-    videoIdsEndAtStart: [VIDEOS.hornbySb.id, VIDEOS.seasideBypassBeachEb.id],
+    videoIdsEndAtStart: [
+      VIDEOS.hornbySb.id,
+      VIDEOS.seasideBypassBeachEb.id,
+      VIDEOS.burrardBridgeNb.id,
+    ],
     positions: [HORNBY_SEABREEZE, [49.27521, -123.13304], HORNBY_BEACH_SE_S],
   },
   {
@@ -43,9 +48,21 @@ export const HORNBY = [
       VIDEOS.seasideBypassBeachWb.id,
       VIDEOS.seasideFalseCreekCw.id,
       VIDEOS.seasideBypassBeachEb.id,
+      VIDEOS.burrardBridgeNb.id,
     ],
     videoIdsStartAtEnd: [VIDEOS.seasideFalseCreekCw.id],
     positions: [HORNBY_BEACH_SE_S, HORNBY_BEACH],
+  },
+  {
+    routeNames: [ROUTES.hornby.name],
+    description: "beach to pacific s",
+    type: "dedicated",
+    videoIds: [
+      VIDEOS.hornbySb.id,
+      VIDEOS.hornbyNb.id,
+      VIDEOS.burrardBridgeNb.id,
+    ],
+    positions: [HORNBY_BEACH, [49.27564, -123.1323], HORNBY_PACIFIC_SE],
   },
   {
     routeNames: [ROUTES.hornby.name],
@@ -53,8 +70,6 @@ export const HORNBY = [
     type: "dedicated",
     videoIds: [VIDEOS.hornbySb.id, VIDEOS.hornbyNb.id],
     positions: [
-      HORNBY_BEACH,
-      [49.27564, -123.1323],
       HORNBY_PACIFIC_SE,
       HORNBY_PACIFIC_NE,
       [49.27663, -123.1308],

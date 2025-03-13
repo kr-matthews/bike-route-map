@@ -4,6 +4,7 @@ import {
   NORTH_FRASER_MARINE_SSE,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const MISSING_PATH_N = [49.19636, -122.96843];
 const MISSING_PATH_S = [49.19619, -122.96857];
@@ -19,6 +20,9 @@ export const BIG_BEND_PATH = [
     routeNames: [ROUTES.bigBendPath.name],
     description: "trapp branch",
     type: "mixed",
+    videoIds: [VIDEOS.bigBendTrappEb.id],
+    videoIdsStartAtStart: [VIDEOS.bigBendTrappEb.id],
+    videoIdsEndAtEnd: [VIDEOS.bigBendTrappEb.id],
     positions: [
       GLENWOOD_TRAPP,
       [49.19179, -122.96639],
@@ -36,6 +40,8 @@ export const BIG_BEND_PATH = [
     routeNames: [ROUTES.bigBendPath.name],
     description: "byrne to north fraser",
     type: "mixed",
+    videoIds: [VIDEOS.bigBendSb.id],
+    videoIdsStartAtStart: [VIDEOS.bigBendSb.id],
     positions: [
       BYRNE_MARINE_SW,
       [49.2018, -122.98198],
@@ -74,12 +80,15 @@ export const BIG_BEND_PATH = [
     routeNames: [ROUTES.bigBendPath.name],
     description: "missing track crossing",
     type: "other",
+    videoIds: [VIDEOS.bigBendSb.id],
     positions: [MISSING_PATH_N, [49.19632, -122.96851], MISSING_PATH_S],
   },
   {
     routeNames: [ROUTES.bigBendPath.name],
     description: "marine to river",
     type: "mixed",
+    videoIds: [VIDEOS.bigBendSb.id],
+    videoIdsEndAtEnd: [VIDEOS.bigBendSb.id],
     positions: [
       MISSING_PATH_S,
       [49.1959, -122.96867],
