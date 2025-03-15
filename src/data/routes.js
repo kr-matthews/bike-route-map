@@ -1967,7 +1967,7 @@ export const ROUTES = {
       { name: "Whyte", videos: { westbound: VIDEOS.seasideBypassWhyteWb } },
     ],
     notes:
-      "A faster, more direct, slightly hillier, less comfortable alternative to Seaside. It is not signed very well. The parts with a busy shared lane (Marine, 4th, Quebec) are unpleasant, and it's beside parked cars for much of Pacific, but the rest is mostly pretty good.",
+      "A faster, more direct, slightly hillier, less comfortable alternative to Seaside. It is not signed very well. The parts with a busy shared lane (Marine, 4th, Quebec) are unpleasant, and it's beside parked cars for much of Pacific, but the rest is mostly pretty good. The gap between Beach/Jervis and Thurlow has been filled with a protected lane (eastbound/uphill only) as of 2025.",
   },
   seaToRiver: {
     name: "Sea to River",
