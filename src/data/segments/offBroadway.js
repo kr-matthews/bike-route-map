@@ -32,6 +32,8 @@ import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 const WEST_OF_HIGHBURY = [49.26528, -123.18939];
+const AUGUSTINE_7TH_W = [49.2656, -123.15421];
+const AUGUSTINE_7TH_E = [49.26558, -123.15277];
 const CAMBIE_7TH_W = [49.26496, -123.11495];
 const GRANDVIEW_8TH_N_E = [49.26326, -123.068];
 
@@ -120,22 +122,41 @@ export const OFF_BROADWAY = [
   },
   {
     routeNames: [ROUTES.offBroadway.name],
-    description: "yew to arbutus greenway",
+    description: "yew to augustine",
     type: "quiet",
     videoIds: [
       VIDEOS.offBroadwayEb.id,
       VIDEOS.offBroadwayWb.id,
       VIDEOS.arbutusGreenwayNb.id,
     ],
+    positions: [YEW_8TH, [49.26561, -123.15526], AUGUSTINE_7TH_W],
+  },
+  {
+    routeNames: [ROUTES.offBroadway.name],
+    description: "augustine brief lane",
+    type: "dedicated",
+    videoIds: [
+      VIDEOS.offBroadwayEb.id,
+      VIDEOS.offBroadwayWb.id,
+      VIDEOS.arbutusGreenwayNb.id,
+    ],
     positions: [
-      YEW_8TH,
-      [49.26561, -123.15526],
-      [49.2656, -123.15421],
+      AUGUSTINE_7TH_W,
       [49.26562, -123.15408],
       [49.26561, -123.15303],
-      [49.26558, -123.15277],
-      ARBUTUS_GREENWAY_7TH,
+      AUGUSTINE_7TH_E,
     ],
+  },
+  {
+    routeNames: [ROUTES.offBroadway.name],
+    description: "arbutus to arbutus greenway",
+    type: "quiet",
+    videoIds: [
+      VIDEOS.offBroadwayEb.id,
+      VIDEOS.offBroadwayWb.id,
+      VIDEOS.arbutusGreenwayNb.id,
+    ],
+    positions: [AUGUSTINE_7TH_E, ARBUTUS_GREENWAY_7TH],
   },
   {
     routeNames: [ROUTES.offBroadway.name],
