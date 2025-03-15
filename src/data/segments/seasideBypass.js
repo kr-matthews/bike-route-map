@@ -80,7 +80,6 @@ const SEYMOUR_PACIFIC = [49.27441, -123.12828];
 const HOWE_PACIFIC = [49.27577, -123.13035];
 const THURLOW_PACIFIC_N = [49.27832, -123.13436];
 const THURLOW_PACIFIC_S = [49.27825, -123.13445];
-const THURLOW_PACIFIC_W = [49.27833, -123.13447];
 
 const EASTBOUND_SPLIT_AT_BURRARD = [49.27704, -123.13263];
 const QUEBEC_QUEBEC_NW = [49.27634, -123.10282];
@@ -659,17 +658,7 @@ export const SEASIDE_BYPASS = [
       [49.27737, -123.13286],
       [49.27781, -123.13356],
       THURLOW_PACIFIC_N,
-      THURLOW_PACIFIC_W,
     ],
-  },
-  {
-    routeNames: [ROUTES.seasideBypass.name],
-    description: "pacific eb: crossing thurlow",
-    type: "shared",
-    oneWay: "required",
-    hideArrows: true,
-    videoIds: [VIDEOS.seasideBypassPacificEb.id],
-    positions: [THURLOW_PACIFIC_W, THURLOW_PACIFIC_S],
   },
   {
     routeNames: [ROUTES.seasideBypass.name],
@@ -906,14 +895,27 @@ export const SEASIDE_BYPASS = [
   },
   {
     routeNames: [ROUTES.seasideBypass.name],
-    description: "pacific: beach to burrard",
-    type: "shared",
-    videoIds: [VIDEOS.seasideBypassPacificEb.id, VIDEOS.seasideBypassExpoWb.id],
+    description: "pacific eb: jervis to thurlow",
+    type: "dedicated",
+    oneWay: "required",
     positions: [
       JERVIS_BEACH_SW,
-      [49.2807, -123.13814],
-      [49.27969, -123.13658],
-      THURLOW_PACIFIC_W,
+      [49.2806, -123.13808],
+      [49.27833, -123.13457],
+      THURLOW_PACIFIC_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seasideBypass.name],
+    description: "pacific wb: thurlow to jervis",
+    type: "shared",
+    oneWay: "recommended",
+    videoIds: [VIDEOS.seasideBypassExpoWb.id, VIDEOS.seasideBypassPacificEb.id],
+    positions: [
+      THURLOW_PACIFIC_N,
+      [49.27839, -123.13448],
+      [49.28067, -123.13801],
+      JERVIS_BEACH_SW,
     ],
   },
   {
@@ -1100,6 +1102,7 @@ export const SEASIDE_BYPASS = [
   {
     description: "thurlow: crossing pacific",
     type: "shared",
+    videoIds: [VIDEOS.seasideBypassPacificEb.id],
     positions: [THURLOW_PACIFIC_S, THURLOW_PACIFIC_N],
   },
   {
