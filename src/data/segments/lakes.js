@@ -17,8 +17,9 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-const SPERLING_BROADWAY_SE = [49.26151, -122.96453];
+const SPERLING_BROADWAY_SE = [49.26151, -122.96455];
 const SPERLING_ADAIR = [49.26436, -122.96461];
+const SPERLING_ADAIR_E = [49.26436, -122.96451];
 
 export const LAKES = [
   {
@@ -201,16 +202,28 @@ export const LAKES = [
     ],
   },
   {
-    routeNames: [ROUTES.lakes.name],
-    description: "sperling shared",
+    description: "sperling old shared",
     type: "shared",
     videoIds: [VIDEOS.lakesNb.id],
+    undesignated: true,
     positions: [
       SPERLING_BROADWAY_SE,
       [49.26165, -122.96464],
       [49.263, -122.96463],
       [49.26392, -122.96462],
       SPERLING_ADAIR,
+      SPERLING_ADAIR_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lakes.name],
+    description: "sperling new path",
+    type: "mixed",
+    positions: [
+      SPERLING_BROADWAY_SE,
+      [49.26166, -122.96457],
+      [49.26431, -122.96454],
+      SPERLING_ADAIR_E,
     ],
   },
   {
@@ -219,7 +232,7 @@ export const LAKES = [
     type: "quiet",
     videoIds: [VIDEOS.lakesNb.id],
     positions: [
-      SPERLING_ADAIR,
+      SPERLING_ADAIR_E,
       [49.26436, -122.95912],
       [49.26606, -122.9591],
       [49.26799, -122.95908],
