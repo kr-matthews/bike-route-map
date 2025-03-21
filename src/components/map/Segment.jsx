@@ -3,8 +3,8 @@ import Polyline from "./Polyline";
 import VideoMarkers from "./VideoMarkers";
 import { FilterContext } from "../../App";
 import {
-  createBorderPathOptions,
-  createPathOptions,
+  createBorderPathOptions as defaultCreateBorderPathOptions,
+  createPathOptions as defaultCreatePathOptions,
   getBorderPane,
   getSegmentPane,
 } from "../../utils/pathOptions";
@@ -12,9 +12,16 @@ import { normalizeElevation } from "../../utils/segmentTypes";
 import { getRoutesWithVideo } from "../../utils/videos";
 import SegmentTooltip from "./SegmentTooltip";
 
-export default function Segment({ segment }) {
+export default function Segment({
+  segment,
+  createBorderPathOptions = defaultCreateBorderPathOptions,
+  createPathOptions = defaultCreatePathOptions,
+}) {
   const { routeNames, oneWay, elevation, videoIds, hideArrows, positions } =
     segment;
+  // for main map, this gets the 'real' filter context,
+  //  for the demo map, the demo hook provides its own modified values,
+  //  definitely could be implemented better
   const {
     selectedRoute,
     selectRoute,
@@ -74,14 +81,16 @@ export default function Segment({ segment }) {
 
   const isSelected = (routeNames ?? []).includes(selectedRoute?.name);
   const isHighlighted = (routeNames ?? []).includes(highlightedRoute?.name);
+  const otherIsHighlighted = highlightedRoute?.name && !isHighlighted;
   const hasActiveVideo = videoIds?.includes(selectedVideo?.id);
 
   const polylineProps = useMemo(
     () => ({
       positions,
       pathOptions: createPathOptions(segment, {
-        isHighlighted,
         isSelected,
+        isHighlighted,
+        otherIsHighlighted,
         hasActiveVideo,
         isHidden,
       }),
@@ -91,12 +100,14 @@ export default function Segment({ segment }) {
     [
       segment,
       positions,
-      isHighlighted,
       isSelected,
+      isHighlighted,
+      otherIsHighlighted,
       hasActiveVideo,
       isHidden,
       eventHandlers,
       pane,
+      createPathOptions,
     ]
   );
 
@@ -106,12 +117,22 @@ export default function Segment({ segment }) {
       positions,
       pathOptions: createBorderPathOptions(segment, {
         isSelected,
+        otherIsHighlighted,
         isHidden,
       }),
       eventHandlers,
       pane: getBorderPane(elevation),
     }),
-    [eventHandlers, segment, positions, elevation, isSelected, isHidden]
+    [
+      eventHandlers,
+      segment,
+      positions,
+      elevation,
+      isSelected,
+      otherIsHighlighted,
+      isHidden,
+      createBorderPathOptions,
+    ]
   );
 
   // not sure why using the component directly was causing `Polyline` to re-render every time

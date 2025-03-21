@@ -65,7 +65,51 @@ export function createBorderPathOptions(
       ? 0
       : (isSelected ? WEIGHT_WIDE : WEIGHT_NARROW) + WEIGHT_BORDER_ADD_ON,
     // explicit opacity required to show hidden routes when video is selected
-    opacity: 100,
+    opacity: 1,
+  };
+}
+
+export function createDemoPathOptions(
+  { oneWay, isClosed, type, undesignated, elevation, isAlt },
+  { otherIsHighlighted, isHidden }
+) {
+  const isOneWay = oneWay === "required";
+
+  let colour = BLACK;
+  if (isOneWay) {
+    colour = getType(normalizeType(type))?.oneWayColour;
+  } else {
+    colour = getType(normalizeType(type))?.colour;
+  }
+  if (isClosed) {
+    colour = COLOUR_CLOSED;
+  }
+  if (isAlt) {
+    colour = BLACK;
+  }
+
+  return {
+    color: colour,
+    weight: isHidden ? 0 : elevation <= -1 ? WEIGHT_UNDERGROUND : WEIGHT_NARROW,
+    // explicit opacity required to show hidden routes when video is selected
+    opacity: otherIsHighlighted && !isAlt ? 0.33 : 1,
+    dashArray: undesignated ? DASH_PATTERN : undefined,
+  };
+}
+
+export function createDemoBorderPathOptions(
+  { elevation },
+  { isSelected, otherIsHighlighted, isHidden }
+) {
+  if (!elevation) return null;
+
+  return {
+    color: getElevation(normalizeElevation(elevation))?.colour,
+    weight: isHidden
+      ? 0
+      : (isSelected ? WEIGHT_WIDE : WEIGHT_NARROW) + WEIGHT_BORDER_ADD_ON,
+    // explicit opacity required to show hidden routes when video is selected
+    opacity: otherIsHighlighted ? 0.33 : 1,
   };
 }
 
