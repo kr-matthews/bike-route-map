@@ -17,6 +17,7 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const SPERLING_KNEALE = [49.26096, -122.96453];
 const SPERLING_BROADWAY_SE = [49.26151, -122.96455];
 const SPERLING_ADAIR = [49.26436, -122.96461];
 const SPERLING_ADAIR_E = [49.26436, -122.96451];
@@ -194,7 +195,16 @@ export const LAKES = [
       [49.26042, -122.96449],
       [49.26051, -122.9645],
       [49.2608, -122.96451],
-      [49.26096, -122.96453],
+      SPERLING_KNEALE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lakes.name],
+    description: "sperling better sidewalk",
+    type: "mixed",
+    videoIds: [VIDEOS.lakesNb.id],
+    positions: [
+      SPERLING_KNEALE,
       [49.26134, -122.96472],
       [49.26138, -122.96472],
       [49.26142, -122.96469],
