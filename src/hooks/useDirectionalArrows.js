@@ -25,12 +25,10 @@ export default function useDirectionalArrows(
 
   useEffect(
     function addZoomListener() {
-      if (isActive) {
-        map.addEventListener({ zoomend: (zoom) => setZoom(zoom.target._zoom) });
-      }
+      map.addEventListener({ zoomend: (zoom) => setZoom(zoom.target._zoom) });
     },
     // eslint-disable-next-line
-    [isActive]
+    []
   );
 
   useEffect(
