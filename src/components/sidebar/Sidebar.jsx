@@ -5,6 +5,9 @@ import Routes from "./Routes";
 import Settings from "./Settings";
 import DetailBottomSheet from "./DetailBottomSheet";
 import useSavedState from "../../hooks/useSavedState";
+import DemoConfig from "./DemoConfig";
+import { useContext } from "react";
+import { DemoContext } from "../../App";
 
 // !! move styling to css files
 
@@ -19,6 +22,7 @@ export const VIEWS = {
 export default function Sidebar({ mapRef }) {
   const [viewKey, setViewKey] = useSavedState("selected_view", VIEWS.about.key);
   const navigateTo = (view) => setViewKey(view.key);
+  const demoPanel = useContext(DemoContext);
   const isNoViewSelected = Object.values(VIEWS).every(
     ({ key }) => key !== viewKey
   );
@@ -35,16 +39,20 @@ export default function Sidebar({ mapRef }) {
         backgroundColor: "AliceBlue",
       }}
     >
-      {Object.values(VIEWS).map(
-        (view) =>
-          (viewKey === view.key ||
-            (view.key === VIEWS.about.key && isNoViewSelected)) && (
-            <view.Component
-              key={view.key}
-              navigateTo={navigateTo}
-              mapRef={mapRef}
-            />
-          )
+      {demoPanel.isActive ? (
+        <DemoConfig navigateTo={navigateTo} demoPanel={demoPanel} />
+      ) : (
+        Object.values(VIEWS).map(
+          (view) =>
+            (viewKey === view.key ||
+              (view.key === VIEWS.about.key && isNoViewSelected)) && (
+              <view.Component
+                key={view.key}
+                navigateTo={navigateTo}
+                mapRef={mapRef}
+              />
+            )
+        )
       )}
 
       <DetailBottomSheet mapRef={mapRef} />
