@@ -145,6 +145,7 @@ export default function useDemo(mapRef) {
 
   const [routeName, setRouteName] = useState(null);
   const [routeStops, setRouteStops] = useState([]);
+  // clearing this while it's on the map with arrows will cause the arrows to stay forever...
   const [altPath, setAltPath] = useState([]);
   const [altStops, setAltStops] = useState([]);
 

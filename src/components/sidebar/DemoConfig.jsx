@@ -54,14 +54,20 @@ export default function DemoConfig({ navigateTo, demoPanel }) {
         <br />
         Route stops:{" "}
         <input
-          onChange={(e) => demo.setRouteStops(JSON.parse(e.target.value))}
+          onChange={(e) =>
+            demo.setRouteStops(JSON.parse(e.target.value || "[]"))
+          }
         />
         <br />
         Alt path:{" "}
-        <input onChange={(e) => demo.setAltPath(JSON.parse(e.target.value))} />
+        <input
+          onChange={(e) => demo.setAltPath(JSON.parse(e.target.value || "[]"))}
+        />
         <br />
         Alt stops:{" "}
-        <input onChange={(e) => demo.setAltStops(JSON.parse(e.target.value))} />
+        <input
+          onChange={(e) => demo.setAltStops(JSON.parse(e.target.value || "[]"))}
+        />
         <br />
       </div>
     </Panel>
