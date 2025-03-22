@@ -3,6 +3,8 @@ import { getAugmentedRoute, getRouteBounds } from "../utils/routes";
 import { ROUTES } from "../data/routes";
 import { DEFAULT_BOUNDS } from "../utils/map";
 
+const ONE_S = 1_000;
+
 // due to leaflet issues, segments must *always* be on the map
 //  (just invisible when they shouldn't be there), so this state
 //  stores a boolean flag instead of the path itself... awkward
@@ -161,8 +163,7 @@ export default function useDemo(mapRef) {
   //// animation
 
   const startAnimation = () => {
-    // !!! allow variable delays (stop signs should be faster)
-    steps.map((step, index) => setTimeout(step, index * 2_500));
+    steps.forEach((step, index) => setTimeout(step, index * ONE_S));
   };
 
   const resetAnimation = () => {
@@ -170,9 +171,12 @@ export default function useDemo(mapRef) {
     // zoomTo(DEFAULT_BOUNDS);
   };
 
-  const zoomTo = (bounds) => mapRef && mapRef.flyToBounds(bounds);
+  const flyTo = (bounds) => mapRef && mapRef.flyToBounds(bounds);
+  const fit = (bounds) => mapRef && mapRef.fitBounds(bounds);
 
-  const spotLight = (routeName) => dispatch({ type: "spotlight", routeName });
+  const spotlight = (routeName) => dispatch({ type: "spotlight", routeName });
+
+  const highlight = (routeName) => dispatch({ type: "highlight", routeName });
 
   const switchToHighlight = (routeName) =>
     dispatch({ type: "spotlight-highlight", routeName });
@@ -182,12 +186,24 @@ export default function useDemo(mapRef) {
   const showAltPath = () => dispatch({ type: "show-alt-path" });
 
   const steps = [
-    () => zoomTo(DEFAULT_BOUNDS),
-    () => spotLight(routeName),
-    () => zoomTo(getRouteBounds(routeName)),
+    () => flyTo(DEFAULT_BOUNDS),
+    () => null,
+    () => spotlight(routeName),
+    () => null,
+    () => flyTo(getRouteBounds(routeName)),
+    () => null,
     () => switchToHighlight(routeName),
-    () => zoomTo(altPath),
+    () => null,
+    () => null,
+    () => null,
+    () => flyTo(altPath),
+    // for unknown reasons, adding stop signs after calling leaflet's `flyToBounds`
+    //  causes the timeout to lag ~half a second - extremely confusing,
+    //  but these redundant highlight & fit take the lag instead...
+    () => highlight(routeName),
+    () => fit(altPath),
     ...routeStopsToAdd.map((stop) => () => showStopSign(stop)),
+    () => null,
     showAltPath,
     ...altStopsToAdd.map((stop) => () => showStopSign(stop)),
   ];
