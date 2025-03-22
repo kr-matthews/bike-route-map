@@ -52,8 +52,9 @@ const positionsReducer = (state, action) => {
 /**
  * For dev use. Once enabled, instructions printed in console.
  * Each click, positions array will be copied to clipboard.
+ * Use `stringify` to copy a stringified version to clipboard.
  */
-export function usePolylineCreator() {
+export function usePolylineCreator({ stringify }) {
   const [isEnabled, setIsEnabled] = useState(false);
   const [{ positions }, dispatch] = useReducer(positionsReducer, {
     prev: null,
@@ -108,10 +109,12 @@ export function usePolylineCreator() {
   useEffect(
     function autoCopy() {
       if (isEnabled) {
-        navigator.clipboard.writeText(format(positions));
+        navigator.clipboard.writeText(
+          stringify ? JSON.stringify(positions) : format(positions)
+        );
       }
     },
-    [isEnabled, positions]
+    [isEnabled, positions, stringify]
   );
 
   useMapEvent("click", ({ latlng }) => {

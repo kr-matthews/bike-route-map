@@ -37,7 +37,7 @@ export default function DemoMap({ setMapRef }) {
           scrollWheelZoom
           whenReady={({ target: mapRef }) => setMapRef(mapRef)}
         >
-          <PolylineCreator />
+          <PolylineCreator stringify />
 
           <PanesAndTiles />
 

@@ -2,8 +2,9 @@ import Polyline from "./Polyline";
 import { WEIGHT_NARROW } from "../../utils/constants";
 import { usePolylineCreator } from "../../hooks/usePolylineCreator";
 
-export default function PolylineCreator() {
-  const { isEnabled, positions } = usePolylineCreator();
+/** Use `stringify` to have the clipboard copy be stringified. */
+export default function PolylineCreator({ stringify }) {
+  const { isEnabled, positions } = usePolylineCreator({ stringify });
 
   const polylineProps = {
     positions,
