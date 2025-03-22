@@ -44,7 +44,7 @@ const reducer = (state, action) => {
       }
       break;
 
-    case "clear-selected":
+    case "clear-select":
       if (state.selectedRouteName) {
         return {
           ...state,
@@ -171,8 +171,16 @@ export default function useDemo(mapRef) {
 
   const [routeName, setRouteName] = useState(null);
 
-  const startAnimation = () => {
-    steps.forEach((step, index) => setTimeout(step, index * ONE_S));
+  const startRouteAnimation = () => {
+    routeSteps.forEach((step, index) => setTimeout(step, index * ONE_S));
+  };
+
+  const startAreaAnimation = () => {
+    areaSteps.forEach((step, index) => setTimeout(step, index * ONE_S));
+  };
+
+  const startShortcutAnimation = () => {
+    shortcutSteps.forEach((step, index) => setTimeout(step, index * ONE_S));
   };
 
   const resetAnimation = () => {
@@ -185,17 +193,57 @@ export default function useDemo(mapRef) {
 
   const spotlight = (routeName) => dispatch({ type: "spotlight", routeName });
 
-  const highlight = (routeName) => dispatch({ type: "highlight", routeName });
+  const clearSpotlight = () => dispatch({ type: "clear-spotlight" });
 
   const switchToHighlight = (routeName) =>
     dispatch({ type: "spotlight-highlight", routeName });
+
+  const highlight = (routeName) => dispatch({ type: "highlight", routeName });
+
+  // const clearHighlight = () => dispatch({ type: "clear-highlight" });
+
+  const select = (routeName) => dispatch({ type: "select", routeName });
+
+  const clearSelect = () => dispatch({ type: "clear-select" });
 
   const showStopSign = (stop) => dispatch({ type: "add-stop", stop });
 
   const showAltPath = () => dispatch({ type: "show-alt-path" });
 
-  const steps = [
-    () => flyTo(DEFAULT_BOUNDS),
+  const routeSteps = [
+    () => fit(DEFAULT_BOUNDS),
+    () => null,
+    () => spotlight(routeName),
+    () => null,
+    () => flyTo(getRouteBounds(routeName)),
+    () => null,
+    () => clearSpotlight(routeName),
+    () => null,
+    () => select(routeName),
+    () => null,
+    () => clearSelect(routeName),
+    () => null,
+    () => select(routeName),
+    () => null,
+    () => clearSelect(routeName),
+  ];
+
+  const areaSteps = [
+    () => fit(DEFAULT_BOUNDS),
+    () => null,
+    () => spotlight(routeName),
+    () => null,
+    () => flyTo(getRouteBounds(routeName)),
+    () => null,
+    () => null,
+    () => clearSpotlight(routeName),
+    () => null,
+    () => null,
+    () => flyTo(altPath),
+  ];
+
+  const shortcutSteps = [
+    () => fit(DEFAULT_BOUNDS),
     () => null,
     () => spotlight(routeName),
     () => null,
@@ -270,7 +318,9 @@ export default function useDemo(mapRef) {
     isActive,
     setIsActive,
     resetAnimation,
-    startAnimation,
+    startRouteAnimation,
+    startAreaAnimation,
+    startShortcutAnimation,
     stops,
     altPath,
     filters: demoFilters,
