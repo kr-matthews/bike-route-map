@@ -321,6 +321,7 @@ export default function useDemo(mapRef) {
     startRouteAnimation,
     startAreaAnimation,
     startShortcutAnimation,
+    routeName,
     stops,
     altPath,
     filters: demoFilters,

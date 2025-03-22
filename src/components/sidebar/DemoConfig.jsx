@@ -17,9 +17,18 @@ export default function DemoConfig({ navigateTo, demoPanel }) {
         style={{ overflowY: "scroll", overflow: "auto", paddingRight: "1em" }}
       >
         <button onClick={demo.resetAnimation}>Reset</button>
-        <button onClick={demo.startRouteAnimation}>Animate Route</button>
-        <button onClick={demo.startAreaAnimation}>Animate Area</button>
-        <button onClick={demo.startShortcutAnimation}>Animate Shortcut</button>
+        <button onClick={demo.startRouteAnimation} disabled={!demo.routeName}>
+          Animate Route
+        </button>
+        <button onClick={demo.startAreaAnimation} disabled={!demo.routeName}>
+          Animate Area
+        </button>
+        <button
+          onClick={demo.startShortcutAnimation}
+          disabled={!demo.routeName}
+        >
+          Animate Shortcut
+        </button>
         <br />
         <select onChange={(e) => demo.setRoute(e.target.value)}>
           <option value="">No route selected</option>
