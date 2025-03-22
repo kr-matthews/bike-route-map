@@ -22,9 +22,7 @@ export default function DemoConfig({ navigateTo, demoPanel }) {
         <button onClick={demo.startShortcutAnimation}>Animate Shortcut</button>
         <br />
         <select onChange={(e) => demo.setRoute(e.target.value)}>
-          <option value={null}>
-            <em>No route selected</em>
-          </option>
+          <option value="">No route selected</option>
           {Object.values(ROUTES).map(({ name }) => (
             <option key={name} value={name}>
               {name}
