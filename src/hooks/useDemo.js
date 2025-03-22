@@ -104,7 +104,7 @@ const reducer = (state, action) => {
       };
 
     case "hide-alt-path":
-      if (state.altPath) {
+      if (state.altPathVisible) {
         return {
           ...state,
           altPathVisible: false,
