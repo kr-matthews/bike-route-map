@@ -1,4 +1,4 @@
-import { BLACK } from "./colours";
+import { BLACK, CYAN } from "./colours";
 import {
   COLOUR_CLOSED,
   COLOUR_HIGHLIGHTED,
@@ -71,7 +71,7 @@ export function createBorderPathOptions(
 
 export function createDemoPathOptions(
   { oneWay, isClosed, type, undesignated, elevation, isAlt },
-  { otherIsHighlighted, isHidden }
+  { isSelected, otherIsHighlighted, isHidden }
 ) {
   const isOneWay = oneWay === "required";
 
@@ -87,6 +87,9 @@ export function createDemoPathOptions(
   if (isAlt) {
     colour = BLACK;
   }
+  if (isSelected) {
+    colour = CYAN;
+  }
 
   return {
     color: colour,
@@ -99,15 +102,13 @@ export function createDemoPathOptions(
 
 export function createDemoBorderPathOptions(
   { elevation },
-  { isSelected, otherIsHighlighted, isHidden }
+  { otherIsHighlighted, isHidden }
 ) {
   if (!elevation) return null;
 
   return {
     color: getElevation(normalizeElevation(elevation))?.colour,
-    weight: isHidden
-      ? 0
-      : (isSelected ? WEIGHT_WIDE : WEIGHT_NARROW) + WEIGHT_BORDER_ADD_ON,
+    weight: isHidden ? 0 : WEIGHT_NARROW + WEIGHT_BORDER_ADD_ON,
     // explicit opacity required to show hidden routes when video is selected
     opacity: otherIsHighlighted ? 0.33 : 1,
   };
