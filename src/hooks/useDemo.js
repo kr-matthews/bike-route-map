@@ -127,20 +127,28 @@ const reducer = (state, action) => {
 //// TEMP: these constants temporarily hard-coded for now
 
 // const routeName = ROUTES.lakes.name;
+// const routeStopsToAdd = [];
+// const altPath = [
+//   [49.26152, -122.96454],
+//   [49.26436, -122.96453],
+// ];
+// const altStopsToAdd = [];
+
 const routeName = ROUTES.dumfries.name;
 const routeStopsToAdd = [
   [49.25157, -123.0733],
   [49.25164, -123.07212],
 ];
-
 const altPath = [
-  // [49.26152, -122.96454],
-  // [49.26436, -122.96453],
   [49.25039, -123.07331],
   [49.25038, -123.07202],
   [49.25163, -123.07199],
 ];
-const altStopsToAdd = [[49.25038, -123.07212]];
+const altStopsToAdd = [
+  [49.25038, -123.07262],
+  [49.25038, -123.07232],
+  [49.25038, -123.07212],
+];
 
 export default function useDemo(mapRef) {
   //// active
