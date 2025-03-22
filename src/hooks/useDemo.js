@@ -1,6 +1,5 @@
 import { useEffect, useReducer, useState } from "react";
 import { getAugmentedRoute, getRouteBounds } from "../utils/routes";
-import { ROUTES } from "../data/routes";
 import { DEFAULT_BOUNDS } from "../utils/map";
 
 const ONE_S = 1_000;
@@ -126,7 +125,7 @@ const reducer = (state, action) => {
 
 //// TEMP: these constants temporarily hard-coded for now
 
-// const routeName = ROUTES.lakes.name;
+// lakes
 // const routeStopsToAdd = [];
 // const altPath = [
 //   [49.26152, -122.96454],
@@ -134,7 +133,7 @@ const reducer = (state, action) => {
 // ];
 // const altStopsToAdd = [];
 
-const routeName = ROUTES.dumfries.name;
+// dumfries;
 const routeStopsToAdd = [
   [49.25157, -123.0733],
   [49.25164, -123.07212],
@@ -169,6 +168,8 @@ export default function useDemo(mapRef) {
   );
 
   //// animation
+
+  const [routeName, setRouteName] = useState(null);
 
   const startAnimation = () => {
     steps.forEach((step, index) => setTimeout(step, index * ONE_S));
@@ -273,5 +274,6 @@ export default function useDemo(mapRef) {
     stops,
     altPath,
     filters: demoFilters,
+    setRoute: setRouteName,
   };
 }
