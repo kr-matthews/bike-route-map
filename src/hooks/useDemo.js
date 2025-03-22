@@ -123,32 +123,6 @@ const reducer = (state, action) => {
   return state;
 };
 
-//// TEMP: these constants temporarily hard-coded for now
-
-// lakes
-// const routeStopsToAdd = [];
-// const altPath = [
-//   [49.26152, -122.96454],
-//   [49.26436, -122.96453],
-// ];
-// const altStopsToAdd = [];
-
-// dumfries;
-const routeStopsToAdd = [
-  [49.25157, -123.0733],
-  [49.25164, -123.07212],
-];
-const altPath = [
-  [49.25039, -123.07331],
-  [49.25038, -123.07202],
-  [49.25163, -123.07199],
-];
-const altStopsToAdd = [
-  [49.25038, -123.07262],
-  [49.25038, -123.07232],
-  [49.25038, -123.07212],
-];
-
 export default function useDemo(mapRef) {
   //// active
 
@@ -170,6 +144,9 @@ export default function useDemo(mapRef) {
   //// animation
 
   const [routeName, setRouteName] = useState(null);
+  const [routeStops, setRouteStops] = useState([]);
+  const [altPath, setAltPath] = useState([]);
+  const [altStops, setAltStops] = useState([]);
 
   const startRouteAnimation = () => {
     routeSteps.forEach((step, index) => setTimeout(step, index * ONE_S));
@@ -259,10 +236,10 @@ export default function useDemo(mapRef) {
     //  but these redundant highlight & fit take the lag instead...
     () => highlight(routeName),
     () => fit(altPath),
-    ...routeStopsToAdd.map((stop) => () => showStopSign(stop)),
+    ...routeStops.map((stop) => () => showStopSign(stop)),
     () => null,
     showAltPath,
-    ...altStopsToAdd.map((stop) => () => showStopSign(stop)),
+    ...altStops.map((stop) => () => showStopSign(stop)),
   ];
 
   //// filters
@@ -326,5 +303,8 @@ export default function useDemo(mapRef) {
     altPath,
     filters: demoFilters,
     setRoute: setRouteName,
+    setRouteStops,
+    setAltPath,
+    setAltStops,
   };
 }

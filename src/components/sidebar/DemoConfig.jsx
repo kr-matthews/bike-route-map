@@ -16,7 +16,7 @@ export default function DemoConfig({ navigateTo, demoPanel }) {
       <div
         style={{ overflowY: "scroll", overflow: "auto", paddingRight: "1em" }}
       >
-        <button onClick={demo.resetAnimation}>Reset</button>
+        <button onClick={demo.resetAnimation}>Reset Animation</button>
         <button onClick={demo.startRouteAnimation} disabled={!demo.routeName}>
           Animate Route
         </button>
@@ -38,6 +38,31 @@ export default function DemoConfig({ navigateTo, demoPanel }) {
             </option>
           ))}
         </select>
+        <br />
+        <button
+          onClick={() => {
+            demo.setRouteStops([]);
+            demo.setAltPath([]);
+            demo.setAltStops([]);
+          }}
+        >
+          Clear Positions
+        </button>
+        {/* directly handling state would be better than pasting it in
+        but that's awkward since we're not inside a map container
+        and `usePolylineCreator` requires that */}
+        <br />
+        Route stops:{" "}
+        <input
+          onChange={(e) => demo.setRouteStops(JSON.parse(e.target.value))}
+        />
+        <br />
+        Alt path:{" "}
+        <input onChange={(e) => demo.setAltPath(JSON.parse(e.target.value))} />
+        <br />
+        Alt stops:{" "}
+        <input onChange={(e) => demo.setAltStops(JSON.parse(e.target.value))} />
+        <br />
       </div>
     </Panel>
   );
