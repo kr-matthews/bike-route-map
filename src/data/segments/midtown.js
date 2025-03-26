@@ -57,6 +57,7 @@ const SPERLING_GILPIN = [49.2415, -122.96468];
 const WILTON_CLAUDE = [49.24068, -122.96066];
 const MCCARTHY_CLAUDE = [49.24031, -122.95853];
 const DONOVAN_E = [49.2387, -122.95469];
+const SIXTH_NURSERY_E = [49.23675, -122.94996];
 
 export const MIDTOWN = [
   {
@@ -535,6 +536,7 @@ export const MIDTOWN = [
       [49.23816, -122.95177],
       [49.23814, -122.95161],
       [49.23805, -122.95082],
+      [49.23801, -122.95073],
       [49.23796, -122.9507],
       [49.23787, -122.95067],
       [49.23777, -122.9507],
@@ -545,15 +547,39 @@ export const MIDTOWN = [
   },
   {
     routeNames: [ROUTES.midtown.name],
-    description: "6th/etc/4th",
+    description: "6th path",
+    type: "mixed",
+    positions: [
+      SIXTH_BURRIS,
+      [49.23759, -122.95103],
+      [49.23758, -122.95097],
+      [49.23752, -122.95087],
+      SIXTH_NURSERY_E,
+    ],
+  },
+  {
+    description: "old 6th",
+    type: "shared",
+    undesignated: true,
+    videoIds: [VIDEOS.midtownBurnabyWb.id],
+    positions: [
+      SIXTH_BURRIS,
+      [49.23752, -122.95095],
+      [49.23673, -122.95],
+      SIXTH_NURSERY_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.midtown.name],
+    description: "nursery/lakefield/4th",
     type: "quiet",
     videoIds: [VIDEOS.midtownBurnabyWb.id],
     videoIdsStartAtEnd: [VIDEOS.midtownBurnabyWb.id],
     positions: [
-      SIXTH_BURRIS,
-      [49.23752, -122.95095],
-      [49.23672, -122.94999],
-      [49.23723, -122.94903],
+      SIXTH_NURSERY_E,
+      [49.23716, -122.94917],
+      [49.2372, -122.94902],
+      [49.2372, -122.94885],
       [49.23654, -122.94507],
       [49.2363, -122.94194],
       [49.23614, -122.94147],

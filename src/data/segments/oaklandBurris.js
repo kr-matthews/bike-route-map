@@ -13,6 +13,7 @@ const OAKDALE_OAKLAND_NE = [49.22969, -122.9856];
 const EB_PRE_GILLEY = [49.2294, -122.97421];
 const GILLEY_OAKLAND_S = [49.22936, -122.97201];
 const CANADA_WAY_BURRIS = [49.23551, -122.95449];
+const W_OF_6TH = [49.23737, -122.95151];
 
 export const OAKLAND_BURRIS = [
   {
@@ -23,15 +24,36 @@ export const OAKLAND_BURRIS = [
     positions: [BUCKINGHAM_BURRIS, [49.2354, -122.95463], CANADA_WAY_BURRIS],
   },
   {
-    description: "canada way to midtown",
-    type: "quiet",
+    description: "canada way to (almost) midtown",
+    type: "shared",
     undesignated: true,
     videoIds: [VIDEOS.oaklandBurrisEb.id],
-    videoIdsEndAtEnd: [VIDEOS.oaklandBurrisEb.id],
     positions: [
       CANADA_WAY_BURRIS,
       [49.23562, -122.95436],
       [49.23598, -122.95406],
+      W_OF_6TH,
+    ],
+  },
+  {
+    description: "short path along burris to midtown",
+    type: "mixed",
+    positions: [
+      W_OF_6TH,
+      [49.2374, -122.95155],
+      [49.23754, -122.95128],
+      [49.23758, -122.95118],
+      SIXTH_BURRIS,
+    ],
+  },
+  {
+    description: "old end of burris before path existed",
+    type: "shared",
+    undesignated: true,
+    videoIds: [VIDEOS.oaklandBurrisEb.id],
+    videoIdsEndAtEnd: [VIDEOS.oaklandBurrisEb.id],
+    positions: [
+      W_OF_6TH,
       [49.23746, -122.95132],
       [49.23752, -122.9512],
       SIXTH_BURRIS,
