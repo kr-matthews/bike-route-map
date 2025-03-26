@@ -1,13 +1,12 @@
 import {
   FIRST_AGNES,
-  MCBRIDE_OVERPASS_E,
+  MCBRIDE_6TH_W,
   MCBRIDE_SEVENTH_W,
   PATTULLO_ALBERT,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
 const GRANVILLE_VANCOUVER_S = [49.2117, -122.90295];
-const MCBRIDE_SIXTH = [49.21958, -122.90858];
 
 const MILLENNIUM_TRAIL_NE = [49.21926, -122.90845];
 const MILLENNIUM_TRAIL_NE_S = [49.21911, -122.90826];
@@ -117,7 +116,7 @@ export const MILLENNIUM_TRAIL = [
       MILLENNIUM_TRAIL_NE_S,
       MILLENNIUM_TRAIL_NE,
       [49.21946, -122.90841],
-      MCBRIDE_SIXTH,
+      MCBRIDE_6TH_W,
       [49.21952, -122.9087],
       [49.21951, -122.90876],
       [49.22065, -122.91015],
@@ -128,16 +127,5 @@ export const MILLENNIUM_TRAIL = [
     description: "ne corner triangle top",
     type: "mixed",
     positions: [MILLENNIUM_TRAIL_NE_W, MILLENNIUM_TRAIL_NE],
-  },
-  {
-    description: "other side of mcbride",
-    type: "mixed",
-    elevation: 0.5,
-    positions: [
-      MCBRIDE_SIXTH,
-      [49.21972, -122.90836],
-      [49.21975, -122.90836],
-      MCBRIDE_OVERPASS_E,
-    ],
   },
 ];

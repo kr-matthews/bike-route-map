@@ -561,6 +561,7 @@ export const MARY_12TH = [49.21607, -122.93764];
 export const MARY_16TH = [49.2195, -122.94197];
 export const MARY_19TH = [49.22132, -122.94426];
 export const MCBRIDE_OVERPASS_E = [49.22061, -122.90945];
+export const MCBRIDE_6TH_W = [49.21958, -122.90858];
 export const MCBRIDE_SEVENTH_W = [49.22075, -122.9104];
 export const MCCALLAN_MIDDLE_ARM = [49.17369, -123.16935];
 export const MCDONALD_BEACH_PATH_GRAUER_N = [49.19856, -123.13879];

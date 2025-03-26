@@ -3,6 +3,7 @@ import {
   BC_PARKWAY_7TH,
   COLUMBIA_SHERBROOKE_W,
   FIFTH_7TH,
+  MCBRIDE_6TH_W,
   MCBRIDE_OVERPASS_E,
   MCBRIDE_SEVENTH_W,
   STEWARDSON_GRIMSTON_S,
@@ -19,8 +20,10 @@ const EIGHTH_7TH_W = [49.21243, -122.92577];
 const PRE_OVERPASS_W = [49.22112, -122.91061];
 const MCBRIDE_OVERPASS_W = [49.22113, -122.91066];
 const POST_OVERPASS_E = [49.2208, -122.90967];
-const BETWEEN_MCBRIDE_CUMBERLAND = [49.22218, -122.90771];
+const W_OF_CUMBERLAND_7TH = [49.22257, -122.90696];
 const CUMBERLAND_7TH = [49.22276, -122.90658];
+const MCBRIDE_6TH_N = [49.21975, -122.90836];
+const CUMBERLAND_6TH_NW = [49.22147, -122.90493];
 const RICHMOND_SHILES = [49.22518, -122.89867];
 const RICHMOND_SHERBROOKE = [49.22797, -122.89861];
 const RICHMOND_EIGHTH_N = [49.22963, -122.89855];
@@ -350,21 +353,22 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   },
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],
-    description: "mcbride to parking lot",
+    description: "through parking lot",
     type: "mixed",
     positions: [
       POST_OVERPASS_E,
       [49.22105, -122.90993],
-      [49.22218, -122.90784],
-      BETWEEN_MCBRIDE_CUMBERLAND,
+      [49.22254, -122.90714],
+      [49.2226, -122.90703],
+      W_OF_CUMBERLAND_7TH,
     ],
   },
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],
-    description: "parking lot to richmond",
+    description: "parking lot to richmond; north branch",
     type: "quiet",
     positions: [
-      BETWEEN_MCBRIDE_CUMBERLAND,
+      W_OF_CUMBERLAND_7TH,
       CUMBERLAND_7TH,
       [49.22475, -122.90286],
       [49.22491, -122.90262],
@@ -396,7 +400,7 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     positions: [
       CUMBERLAND_7TH,
       [49.22153, -122.90506],
-      [49.22147, -122.90493],
+      CUMBERLAND_6TH_NW,
       [49.22142, -122.90479],
       [49.22064, -122.90246],
       [49.2206, -122.90229],
@@ -404,6 +408,29 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
       [49.22055, -122.89879],
       [49.22372, -122.8987],
       RICHMOND_SHILES,
+    ],
+  },
+  {
+    description: "alt: east side of mcbride (& crossing mcbride)",
+    type: "mixed",
+    elevation: 0.5,
+    positions: [
+      MCBRIDE_6TH_W,
+      [49.21972, -122.90836],
+      MCBRIDE_6TH_N,
+      MCBRIDE_OVERPASS_E,
+    ],
+  },
+  {
+    description: "alt: 6th to cumberland",
+    type: "mixed",
+    positions: [
+      MCBRIDE_6TH_N,
+      [49.22013, -122.90764],
+      [49.22025, -122.90738],
+      [49.22086, -122.90619],
+      [49.22145, -122.90509],
+      CUMBERLAND_6TH_NW,
     ],
   },
 ];
