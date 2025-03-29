@@ -383,6 +383,12 @@ const VIDEOS = {
     date: new Date("Mar 21 2024"),
     minutes: 23,
   },
+  champlainHeightsGapEb: {
+    id: "ER-nPcvdZcE",
+    tlId: "krUbESuxtNs",
+    date: new Date("Mar 25 2025"),
+    minutes: 8,
+  },
   champlainHeightsGapWb: {
     id: "_sU-SYawx7k",
     date: new Date("Feb 07 2024"),

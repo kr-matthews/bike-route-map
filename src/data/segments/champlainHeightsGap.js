@@ -12,7 +12,10 @@ export const CHAMPLAIN_HEIGHTS_GAP = [
     description: "quiet part",
     type: "quiet",
     undesignated: true,
-    videoIds: [VIDEOS.champlainHeightsGapWb.id],
+    videoIds: [
+      VIDEOS.champlainHeightsGapEb.id,
+      VIDEOS.champlainHeightsGapWb.id,
+    ],
     videoIdsEndAtStart: [VIDEOS.champlainHeightsGapWb.id],
     positions: [
       VIVIAN_57TH,
@@ -94,6 +97,7 @@ export const CHAMPLAIN_HEIGHTS_GAP = [
     description: "path",
     type: "mixed",
     undesignated: true,
+    videoIds: [VIDEOS.champlainHeightsGapEb.id],
     positions: [
       CHAMPLAIN_MAQUINNA,
       [49.21577, -123.03023],
@@ -123,7 +127,11 @@ export const CHAMPLAIN_HEIGHTS_GAP = [
     description: "from path to boundary",
     type: "shared",
     undesignated: true,
-    videoIds: [VIDEOS.champlainHeightsGapWb.id],
+    videoIds: [
+      VIDEOS.champlainHeightsGapWb.id,
+      VIDEOS.champlainHeightsGapEb.id,
+    ],
+    videoIdsEndAtEnd: [VIDEOS.champlainHeightsGapEb.id],
     positions: [
       MATHESON_BIRCH,
       [49.21615, -123.02518],

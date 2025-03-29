@@ -49,7 +49,7 @@ export const SUNRISE = [
   },
   {
     routeNames: [ROUTES.sunrise.name],
-    description: "elliott to ridgeway",
+    description: "elliott to masumi mitsui",
     type: "quiet",
     videoIds: [VIDEOS.sunriseNb.id],
     positions: [
@@ -60,6 +60,22 @@ export const SUNRISE = [
       [49.21597, -123.05117],
       [49.21657, -123.05077],
       VIVIAN_LYNBROOK,
+    ],
+  },
+  {
+    routeNames: [ROUTES.sunrise.name],
+    description: "masumi mitsui overlap",
+    type: "quiet",
+    videoIds: [VIDEOS.sunriseNb.id, VIDEOS.champlainHeightsGapEb.id],
+    videoIdsStartAtStart: [VIDEOS.champlainHeightsGapEb.id],
+    positions: [VIVIAN_LYNBROOK, VIVIAN_57TH],
+  },
+  {
+    routeNames: [ROUTES.sunrise.name],
+    description: "masumi mitsui to ridgeway",
+    type: "quiet",
+    videoIds: [VIDEOS.sunriseNb.id],
+    positions: [
       VIVIAN_57TH,
       [49.22023, -123.05054],
       [49.2227, -123.05045],
