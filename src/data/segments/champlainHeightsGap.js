@@ -148,8 +148,9 @@ export const CHAMPLAIN_HEIGHTS_GAP = [
     description: "at boundary",
     type: "other",
     undesignated: true,
-    videoIds: [VIDEOS.champlainHeightsGapWb.id],
+    videoIds: [VIDEOS.champlainHeightsGapWb.id, VIDEOS.rumbleEb.id],
     videoIdsStartAtEnd: [VIDEOS.champlainHeightsGapWb.id],
+    videoIdsStartAtStart: [VIDEOS.rumbleEb.id],
     positions: [BOUNDARY_RUMBLE_W, [49.21489, -123.02386], BOUNDARY_RUMBLE_NE],
   },
 ];

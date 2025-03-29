@@ -93,6 +93,8 @@ export const KENSINGTON = [
   },
   {
     description: "connection to cvg",
+    videoIds: [VIDEOS.kensingtonSb.id],
+    videoIdsStartAtEnd: [VIDEOS.kensingtonSb.id],
     positions: [
       KENSINGTON_STILL_CREEK_N,
       [49.2595, -122.96898],
@@ -136,7 +138,11 @@ export const KENSINGTON = [
     routeNames: [ROUTES.kensington.name, ROUTES.lakes.name],
     description: "west side: canada way to highway",
     elevation: 0.5,
-    videoIds: [VIDEOS.kensingtonNb.id, VIDEOS.lakesNb.id],
+    videoIds: [
+      VIDEOS.kensingtonNb.id,
+      VIDEOS.kensingtonSb.id,
+      VIDEOS.lakesNb.id,
+    ],
     positions: [
       KENSINGTON_CANADA_NW,
       [49.24209, -122.96855],
@@ -157,7 +163,11 @@ export const KENSINGTON = [
     routeNames: [ROUTES.kensington.name, ROUTES.lakes.name],
     description: "west side: overpass",
     elevation: 1,
-    videoIds: [VIDEOS.kensingtonNb.id, VIDEOS.lakesNb.id],
+    videoIds: [
+      VIDEOS.kensingtonNb.id,
+      VIDEOS.kensingtonSb.id,
+      VIDEOS.lakesNb.id,
+    ],
     positions: [OVERPASS_START, OVERPASS_END],
   },
 
@@ -165,7 +175,11 @@ export const KENSINGTON = [
     routeNames: [ROUTES.kensington.name, ROUTES.lakes.name],
     description: "west side: highway to sprott",
     elevation: 0.5,
-    videoIds: [VIDEOS.kensingtonNb.id, VIDEOS.lakesNb.id],
+    videoIds: [
+      VIDEOS.kensingtonNb.id,
+      VIDEOS.kensingtonSb.id,
+      VIDEOS.lakesNb.id,
+    ],
     positions: [
       OVERPASS_END,
       [49.24514, -122.96734],
@@ -186,9 +200,8 @@ export const KENSINGTON = [
   },
   {
     routeNames: [ROUTES.kensington.name],
-    description: "west side: sprott to overpass",
-    elevation: 0.5,
-    videoIds: [VIDEOS.kensingtonNb.id],
+    description: "west side: sprott to still creek",
+    videoIds: [VIDEOS.kensingtonSb.id, VIDEOS.kensingtonNb.id],
     positions: [
       KENSINGTON_SPROTT_W,
       [49.25004, -122.96677],
@@ -212,6 +225,15 @@ export const KENSINGTON = [
       KENSINGTON_UNDERPASS_W,
       [49.25906, -122.96923],
       [49.25938, -122.96919],
+      KENSINGTON_STILL_CREEK_N,
+    ],
+  },
+  {
+    routeNames: [ROUTES.kensington.name],
+    description: "west side: still creek to overpass",
+    elevation: 0.5,
+    videoIds: [VIDEOS.kensingtonNb.id],
+    positions: [
       KENSINGTON_STILL_CREEK_N,
       [49.25959, -122.96912], // technically, elevation starts here
       LOUGHEED_OVERPASS_S,

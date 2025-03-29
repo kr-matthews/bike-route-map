@@ -645,8 +645,10 @@ export const BC_PARKWAY = [
       VIDEOS.bcParkwayBurnabyEb.id,
       VIDEOS.bcParkwayBurnabyWb.id,
       VIDEOS.rumbleWb.id,
+      VIDEOS.rumbleEb.id,
     ],
     videoIdsStartAtEnd: [VIDEOS.rumbleWb.id],
+    videoIdsEndAtEnd: [VIDEOS.rumbleEb.id],
     positions: [
       GILLEY_RUMBLE_NW,
       [49.21483, -122.97176],

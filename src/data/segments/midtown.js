@@ -445,8 +445,10 @@ export const MIDTOWN = [
       VIDEOS.midtownBurnabyWb.id,
       VIDEOS.lakesNb.id,
       VIDEOS.kensingtonNb.id,
+      VIDEOS.kensingtonSb.id,
     ],
     videoIdsStartAtStart: [VIDEOS.kensingtonNb.id],
+    videoIdsEndAtStart: [VIDEOS.kensingtonSb.id],
     positions: [
       DEER_LAKE_CANADA_W,
       [49.2418, -122.96901],

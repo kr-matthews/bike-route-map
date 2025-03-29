@@ -15,7 +15,7 @@ export const RUMBLE = [
     routeNames: [ROUTES.rumble.name],
     description: "west half",
     type: "mixed",
-    videoIds: [VIDEOS.rumbleWb.id],
+    videoIds: [VIDEOS.rumbleEb.id, VIDEOS.rumbleWb.id],
     videoIdsEndAtStart: [VIDEOS.rumbleWb.id],
     positions: [
       BOUNDARY_RUMBLE_NE,
@@ -40,6 +40,7 @@ export const RUMBLE = [
     routeNames: [ROUTES.rumble.name],
     description: "bad street part",
     type: "shared",
+    videoIds: [VIDEOS.rumbleEb.id],
     positions: [
       ROYAL_OAK_RUMBLE_NW,
       [49.21487, -122.98867],
@@ -51,7 +52,7 @@ export const RUMBLE = [
     routeNames: [ROUTES.rumble.name],
     description: "east half",
     type: "mixed",
-    videoIds: [VIDEOS.rumbleWb.id],
+    videoIds: [VIDEOS.rumbleWb.id, VIDEOS.rumbleEb.id],
     positions: [
       MACPHERSON_RUMBLE_N,
       BULLER_RUMBLE_N,

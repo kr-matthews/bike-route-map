@@ -20,14 +20,14 @@ export const OAKLAND_BURRIS = [
     description: "buckingham to canada way",
     type: "shared",
     undesignated: true,
-    videoIds: [VIDEOS.oaklandBurrisEb.id],
+    videoIds: [VIDEOS.oaklandBurrisWb.id, VIDEOS.oaklandBurrisEb.id],
     positions: [BUCKINGHAM_BURRIS, [49.2354, -122.95463], CANADA_WAY_BURRIS],
   },
   {
     description: "canada way to (almost) midtown",
     type: "shared",
     undesignated: true,
-    videoIds: [VIDEOS.oaklandBurrisEb.id],
+    videoIds: [VIDEOS.oaklandBurrisWb.id, VIDEOS.oaklandBurrisEb.id],
     positions: [
       CANADA_WAY_BURRIS,
       [49.23562, -122.95436],
@@ -38,6 +38,8 @@ export const OAKLAND_BURRIS = [
   {
     description: "short path along burris to midtown",
     type: "mixed",
+    videoIds: [VIDEOS.oaklandBurrisWb.id],
+    videoIdsStartAtEnd: [VIDEOS.oaklandBurrisWb.id],
     positions: [
       W_OF_6TH,
       [49.2374, -122.95155],
@@ -162,6 +164,7 @@ export const OAKLAND_BURRIS = [
     description: "wb: lane",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.oaklandBurrisWb.id],
     positions: [
       BUCKINGHAM_BURRIS,
       [49.23393, -122.95739],
@@ -209,6 +212,7 @@ export const OAKLAND_BURRIS = [
     description: "wb: shared",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.oaklandBurrisWb.id],
     positions: [
       OAKDALE_OAKLAND_NE,
       [49.22968, -122.9859],

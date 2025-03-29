@@ -442,6 +442,17 @@ const VIDEOS = {
     date: new Date("May 26 2024"),
     minutes: 11,
   },
+  crosstownNWEb: {
+    id: "O77jstHnFRc",
+    tlId: "sigGo6thZBg",
+    date: new Date("Mar 25 2025"),
+    minutes: 24,
+  },
+  crosstownNWExtNb: {
+    id: "5cFYWO-sHAo",
+    date: new Date("Mar 25 2025"),
+    minutes: 3,
+  },
   crosstownRichmondWb: {
     id: "m_ICnCiIZp8",
     tlId: "ppo7N7Tmhds",
@@ -464,6 +475,12 @@ const VIDEOS = {
     id: "php-7VypXRw",
     date: new Date("Nov 11 2023"),
     minutes: 7,
+  },
+  deerLakePkwyWb: {
+    id: "TgTM0FUSO7g",
+    tlId: "7POh4NxB83g",
+    date: new Date("Mar 17 2025"),
+    minutes: 9,
   },
   dumfriesNb: {
     id: "g0qsUEDx--8",
@@ -871,6 +888,12 @@ const VIDEOS = {
     date: new Date("Aug 22 2024"),
     minutes: 8,
   },
+  kensingtonSb: {
+    id: "YE0bCkRDqtE",
+    tlId: "MWrCZ5BteJA",
+    date: new Date("Mar 17 2025"),
+    minutes: 7,
+  },
   kentWb: {
     id: "S7VZgDfZ4XU",
     tlId: "GuJGxJipGtw",
@@ -1154,6 +1177,12 @@ const VIDEOS = {
     date: new Date("Aug 22 2024"),
     minutes: 9,
   },
+  oaklandBurrisWb: {
+    id: "96KgF0mutaE",
+    tlId: "ISGccVl2lKY",
+    date: new Date("Mar 25 2025"),
+    minutes: 14,
+  },
   odlinWb: {
     id: "0JgtTJluzv8",
     date: new Date("May 28 2024"),
@@ -1316,6 +1345,12 @@ const VIDEOS = {
     id: "5_aB2Zw_JK0",
     date: new Date("Feb 07 2024"),
     minutes: 9,
+  },
+  rumbleEb: {
+    id: "gUo_oeT4H8c",
+    tlId: "uVoi7MwuBSQ",
+    date: new Date("Mar 25 2025"),
+    minutes: 13,
   },
   rumbleWb: {
     id: "4tPhpf1JtF8",

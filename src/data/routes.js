@@ -735,7 +735,13 @@ export const ROUTES = {
     name: "Crosstown Greenway",
     shortName: "Crosstown Gr.",
     regions: [REGIONS.newWestminster],
-    legs: [{ videos: {} }],
+    legs: [
+      { videos: { eastbound: VIDEOS.crosstownNWEb } },
+      {
+        name: "Richmond St/Surrey St connection to Burnaby",
+        videos: { northbound: VIDEOS.crosstownNWExtNb },
+      },
+    ],
     notes:
       "Lots of hills. There are 2 options in the middle; one is quieter and steeper, one is flatter and has more traffic. The bridge crossing McBride is annoying, but the adjacent community center was just rebuilt.",
   },
@@ -754,7 +760,14 @@ export const ROUTES = {
     name: "Deer Lake Parkway Urban Trail",
     shortName: "Deer Lake Pkwy T.",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { eastbound: VIDEOS.deerLakePkwyEb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.deerLakePkwyEb,
+          westbound: VIDEOS.deerLakePkwyWb,
+        },
+      },
+    ],
     notes: "Besides the hill at the west end, it's very flat.",
   },
   dumfries: {
@@ -1191,7 +1204,14 @@ export const ROUTES = {
     name: "Kensington Urban Trail",
     shortName: "Kensington Trail",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { northbound: VIDEOS.kensingtonNb } }],
+    legs: [
+      {
+        videos: {
+          northbound: VIDEOS.kensingtonNb,
+          southbound: VIDEOS.kensingtonSb,
+        },
+      },
+    ],
     notes:
       "Flat in the middle with hills at either end. The north end connects to nothing, best to exit early to Central Valley Greenway. Pedestrian lights won't change for you unless you press the button - extremely poor design. The intersection at Canada Way is annoying.",
   },
@@ -1616,7 +1636,14 @@ export const ROUTES = {
     name: "Oakland St/Burris St",
     shortName: "Oakland/Burris",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { eastbound: VIDEOS.oaklandBurrisEb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.oaklandBurrisEb,
+          westbound: VIDEOS.oaklandBurrisWb,
+        },
+      },
+    ],
     notes:
       "A long steep hill with lots of traffic. The painted lanes are beside the curb. At the east end, you can continue and connect with Midtown. At the west end, going eastbound is confusing as you briefly use an adjacent street, and the shared use paths on Dover and southwards on Royal Oak don't quite connect to anything.",
   },
@@ -1838,7 +1865,9 @@ export const ROUTES = {
     name: "Rumble Street Urban Trail",
     shortName: "Rumble Urban Trail",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { westbound: VIDEOS.rumbleWb } }],
+    legs: [
+      { videos: { eastbound: VIDEOS.rumbleEb, westbound: VIDEOS.rumbleWb } },
+    ],
     notes:
       "Gradual hill. For some reason there's a gap in the middle (even though there's plenty of space for a wide path) and you need to share the busy road with cars. Transitioning between the road and path at either end of this gap can be awkward. Generally, the intersections are bad, cars often block the crossing. The crossing signals won't automatically change, so you're essentially guaranteed to have to stop and press the buttons. And there are too many driveways along the path. Plus it doesn't connect to anything in Vancouver.",
   },
