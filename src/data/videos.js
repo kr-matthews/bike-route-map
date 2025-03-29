@@ -1070,11 +1070,13 @@ const VIDEOS = {
   },
   mosaicNb: {
     id: "ptiQwQyVDsM",
+    tlId: "jCRYUsd4FlQ",
     date: new Date("May 03 2024"),
     minutes: 13,
   },
   mosaicSb: {
     id: "uDSSzA4ZN0Q",
+    tlId: "YcOInV9TwOI",
     date: new Date("Oct 07 2023"),
     minutes: 12,
   },
@@ -1135,11 +1137,13 @@ const VIDEOS = {
   },
   no3Nb: {
     id: "HWRL6CPVcSU",
+    tlId: "qQvxjiBCx2U",
     date: new Date("Feb 26 2024"),
     minutes: 14,
   },
   no3Sb: {
     id: "3-pryfyoIIE",
+    tlId: "KOHAekjQQGo",
     date: new Date("Jun 10 2024"),
     minutes: 14,
   },
