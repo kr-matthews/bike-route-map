@@ -30,6 +30,8 @@ export const CARNARVON = [
     routeNames: [ROUTES.carnarvon.name],
     description: "west portion",
     type: "shared",
+    videoIds: [VIDEOS.carnarvonWb.id],
+    videoIdsEndAtStart: [VIDEOS.carnarvonWb.id],
     positions: [
       [49.20175, -122.91311],
       [49.20179, -122.91315],
@@ -42,6 +44,7 @@ export const CARNARVON = [
     routeNames: [ROUTES.carnarvon.name],
     description: "sixth to merivale",
     type: "quiet",
+    videoIds: [VIDEOS.carnarvonWb.id],
     positions: [
       SIXTH_CARNARVON,
       FOURTH_CARNARVON,
@@ -54,7 +57,7 @@ export const CARNARVON = [
     routeNames: [ROUTES.carnarvon.name, ROUTES.uptownDowntown.name],
     description: "merivale to elliot",
     type: "quiet",
-    videoIds: [VIDEOS.uptownDowntownSb.id],
+    videoIds: [VIDEOS.carnarvonWb.id, VIDEOS.uptownDowntownSb.id],
     positions: [MERIVALE_CARNARVON, ELLIOT_CARNARVON],
   },
 ];

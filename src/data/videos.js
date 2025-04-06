@@ -108,6 +108,12 @@ const VIDEOS = {
     date: new Date("Jan 01 2024"),
     minutes: 25,
   },
+  bcParkwayNWEb: {
+    id: "TRz3y_chvuY",
+    tlId: "TZKpeyq9j2A",
+    date: new Date("Apr 04 2025"),
+    minutes: 20,
+  },
   bcParkwayNWWb: {
     id: "hi6hp9mxW3g",
     tlId: "ymQCoAKs0yc",
@@ -333,6 +339,11 @@ const VIDEOS = {
     tlId: "VovbEE7tHHk",
     date: new Date("May 09 2024"),
     minutes: 11,
+  },
+  carnarvonWb: {
+    id: "tMAVmYiY2k8",
+    date: new Date("Apr 04 2025"),
+    minutes: 5,
   },
   carrallNb: {
     id: "1KNO98tWduE",

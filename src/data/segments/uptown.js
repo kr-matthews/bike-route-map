@@ -20,7 +20,7 @@ export const UPTOWN_DOWNTOWN = [
     routeNames: [ROUTES.uptownDowntown.name],
     description: "elliot path",
     type: "mixed",
-    videoIds: [VIDEOS.uptownDowntownSb.id],
+    videoIds: [VIDEOS.uptownDowntownSb.id, VIDEOS.carnarvonWb.id],
     videoIdsEndAtStart: [VIDEOS.uptownDowntownSb.id],
     positions: [ELLIOT_COLUMBIA, ELLIOT_CLARKSON_SW],
   },
@@ -28,7 +28,7 @@ export const UPTOWN_DOWNTOWN = [
     routeNames: [ROUTES.uptownDowntown.name],
     description: "elliot road",
     type: "quiet",
-    videoIds: [VIDEOS.uptownDowntownSb.id],
+    videoIds: [VIDEOS.uptownDowntownSb.id, VIDEOS.carnarvonWb.id],
     positions: [ELLIOT_CLARKSON_SW, [49.20697, -122.90224], ELLIOT_CARNARVON],
   },
   {

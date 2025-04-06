@@ -1244,7 +1244,13 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
     description: "columbia: separated part - overlap",
     type: "mixed",
-    videoIds: [VIDEOS.centralValleyNWNb.id, VIDEOS.bcParkwayNWWb.id],
+    videoIds: [
+      VIDEOS.centralValleyNWNb.id,
+      VIDEOS.bcParkwayNWWb.id,
+      VIDEOS.bcParkwayNWEb.id,
+      VIDEOS.carnarvonWb.id,
+    ],
+    videoIdsStartAtStart: [VIDEOS.carnarvonWb.id],
     positions: [BC_PARKWAY_CVG_SPLIT, [49.20694, -122.90122], ELLIOT_COLUMBIA],
   },
   {
@@ -1283,7 +1289,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "columbia: south part, eb",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.centralValleyNWNb.id],
+    videoIds: [VIDEOS.centralValleyNWNb.id, VIDEOS.bcParkwayNWEb.id],
     positions: [
       BEGBIE_COLUMBIA_S,
       [49.20262, -122.90879],
@@ -1301,7 +1307,11 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
     description: "quayside/begbie",
     type: "shared",
-    videoIds: [VIDEOS.centralValleyNWNb.id, VIDEOS.bcParkwayNWWb.id],
+    videoIds: [
+      VIDEOS.centralValleyNWNb.id,
+      VIDEOS.bcParkwayNWWb.id,
+      VIDEOS.bcParkwayNWEb.id,
+    ],
     videoIdsStartAtStart: [VIDEOS.centralValleyNWNb.id],
     positions: [
       QUAYSIDE_JOIN,

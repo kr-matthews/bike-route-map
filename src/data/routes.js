@@ -315,7 +315,10 @@ export const ROUTES = {
       },
       {
         name: "New Westminster",
-        videos: { westbound: VIDEOS.bcParkwayNWWb },
+        videos: {
+          eastbound: VIDEOS.bcParkwayNWEb,
+          westbound: VIDEOS.bcParkwayNWWb,
+        },
       },
       {
         name: "22nd St Station: Alternate Route",
@@ -583,9 +586,9 @@ export const ROUTES = {
   carnarvon: {
     name: "Carnarvon St",
     regions: [REGIONS.newWestminster],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { westbound: VIDEOS.carnarvonWb } }],
     notes:
-      "A flat-ish connection to New Westminster station on the Expo line. The west end is just a busy car road.",
+      "A gradual hill connecting to New Westminster station on the Expo line. The west half is just a busy car road.",
   },
   carrall: {
     name: "Carrall",

@@ -56,6 +56,7 @@ export const QUEENSBOROUGH_BRIDGE = [
     videoIds: [
       VIDEOS.queensboroughBridgeSb.id,
       VIDEOS.queensboroughBridgeNb.id,
+      VIDEOS.bcParkwayNWEb.id,
       VIDEOS.bcParkwayNWWb.id,
       VIDEOS.marineWayWb.id,
     ],
@@ -73,6 +74,7 @@ export const QUEENSBOROUGH_BRIDGE = [
     videoIds: [
       VIDEOS.queensboroughBridgeSb.id,
       VIDEOS.queensboroughBridgeNb.id,
+      VIDEOS.bcParkwayNWEb.id,
       VIDEOS.bcParkwayNWWb.id,
       VIDEOS.marineWayWb.id,
     ],
@@ -90,6 +92,7 @@ export const QUEENSBOROUGH_BRIDGE = [
     videoIds: [
       VIDEOS.queensboroughBridgeSb.id,
       VIDEOS.queensboroughBridgeNb.id,
+      VIDEOS.bcParkwayNWEb.id,
       VIDEOS.bcParkwayNWWb.id,
     ],
     positions: [
@@ -113,6 +116,7 @@ export const QUEENSBOROUGH_BRIDGE = [
     videoIds: [
       VIDEOS.queensboroughBridgeSb.id,
       VIDEOS.queensboroughBridgeNb.id,
+      VIDEOS.bcParkwayNWEb.id,
       VIDEOS.bcParkwayNWWb.id,
     ],
     positions: [
@@ -125,7 +129,11 @@ export const QUEENSBOROUGH_BRIDGE = [
     description: "nw ramp",
     type: "mixed",
     elevation: 1,
-    videoIds: [VIDEOS.queensboroughBridgeNb.id, VIDEOS.bcParkwayNWWb.id],
+    videoIds: [
+      VIDEOS.queensboroughBridgeNb.id,
+      VIDEOS.bcParkwayNWEb.id,
+      VIDEOS.bcParkwayNWWb.id,
+    ],
     positions: [QUEENSBOROUGH_BC_PARKWAY_SPLIT, QUEENSBOROUGH_NW_RAMP_BOTTOM],
   },
   {
@@ -133,7 +141,11 @@ export const QUEENSBOROUGH_BRIDGE = [
     description: "nw ramp post-elevation",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [VIDEOS.queensboroughBridgeNb.id, VIDEOS.bcParkwayNWWb.id],
+    videoIds: [
+      VIDEOS.queensboroughBridgeNb.id,
+      VIDEOS.bcParkwayNWEb.id,
+      VIDEOS.bcParkwayNWWb.id,
+    ],
     positions: [QUEENSBOROUGH_NW_RAMP_BOTTOM, QUEENSBOROUGH_STEWARDSON_W],
   },
   {
