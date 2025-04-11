@@ -1024,7 +1024,7 @@ export const ROUTES = {
     name: "Grant McConachie Way",
     shortName: "Grant McConachie",
     regions: [REGIONS.richmond],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { westbound: VIDEOS.grantMcConachieWb } }],
     notes:
       "A very flat shoulder next to heavy traffic. Connect from Arthur Laing bridge via the path. Transition to N Service Rd to reach the actual terminal; this route ends before it gets there.",
   },
@@ -1631,7 +1631,7 @@ export const ROUTES = {
   nService: {
     name: "North Service Rd",
     regions: [REGIONS.richmond],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.nServiceEb } }],
     notes:
       "Very flat. Probably the best way to approach the YVR terminal, from the shared use sidewalk on Templeton Station Rd.",
   },

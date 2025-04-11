@@ -15,6 +15,7 @@ import {
   TEMPLETON_GRANT_MCCONACHIE_SW_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const AVIATION_GRANT_MCCONACHIE_SW = [49.19268, -123.16701];
 const AVIATION_SB_SHOULDER_START = [49.19343, -123.16695];
@@ -145,6 +146,7 @@ export const GRANT_MCCONACHIE = [
     description: "wb",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.grantMcConachieWb.id],
     positions: [
       GRANT_MCCONACHIE_WB_START,
       [49.19604, -123.14272],
@@ -196,6 +198,7 @@ export const GRANT_MCCONACHIE = [
     description: "wb continue to terminal via n service",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.grantMcConachieWb.id],
     positions: [
       AVIATION_NB_SHARE_START,
       [49.19328, -123.16669],

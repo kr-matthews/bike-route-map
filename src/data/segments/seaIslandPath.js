@@ -94,7 +94,7 @@ export const SEA_ISLAND_PATH = [
   {
     description: "arthur laing sb to first split",
     type: "dedicated",
-    videoIds: [VIDEOS.arthurLaingSb.id],
+    videoIds: [VIDEOS.grantMcConachieWb.id, VIDEOS.arthurLaingSb.id],
     videoIdsEndAtEnd: [VIDEOS.arthurLaingSb.id],
     positions: [
       SEA_ISLAND_CONNECTOR_ARTHUR_LAING_N,
@@ -111,6 +111,7 @@ export const SEA_ISLAND_PATH = [
     description: "arthur laing sb first split to grant mcconachie",
     type: "dedicated",
     oneWay: "recommended",
+    videoIds: [VIDEOS.grantMcConachieWb.id],
     positions: [
       POST_ARTHUR_LAING_SPLIT,
       [49.19572, -123.14033],
@@ -362,6 +363,8 @@ export const SEA_ISLAND_PATH = [
     routeNames: [ROUTES.seaIslandPath.name],
     description: "templeton station to templeton st",
     type: "mixed",
+    videoIds: [VIDEOS.nServiceEb.id],
+    videoIdsEndAtStart: [VIDEOS.nServiceEb.id],
     positions: [
       TEMPLETON_TEMPLETON_SE,
       [49.19742, -123.14495],
@@ -382,6 +385,14 @@ export const SEA_ISLAND_PATH = [
       [49.19665, -123.14919],
       [49.19668, -123.14934],
       [49.19667, -123.1496],
+      TEMPLETON_TEMPLETON_STATION_SE_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaIslandPath.name],
+    description: "little bit at templeton st",
+    type: "mixed",
+    positions: [
       TEMPLETON_TEMPLETON_STATION_SE_E,
       TEMPLETON_TEMPLETON_STATION_SE_SE,
     ],

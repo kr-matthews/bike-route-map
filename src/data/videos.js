@@ -741,6 +741,12 @@ const VIDEOS = {
     date: new Date("May 25 2024"),
     minutes: 13,
   },
+  grantMcConachieWb: {
+    id: "Uev_ctsSHdg",
+    tlId: "GeMCjnh1GvE",
+    date: new Date("Apr 09 2025"),
+    minutes: 8,
+  },
   granvilleWb: {
     id: "b9eFnAItgIo",
     tlId: "aKPBmrm6brE",
@@ -1169,6 +1175,12 @@ const VIDEOS = {
     tlId: "BqBx41-eFWM",
     date: new Date("Jan 23 2024"),
     minutes: 11,
+  },
+  nServiceEb: {
+    id: "1nFVoRpY0xY",
+    tlId: "o_iia7n011k",
+    date: new Date("Apr 09 2025"),
+    minutes: 8,
   },
   nwMarineEb: {
     id: "t1EWe9TW-rw",
