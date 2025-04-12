@@ -39,6 +39,7 @@ import {
   WOODLAND_GRANDVIEW,
   EIGHTH_CARNARVON_E,
   SKEENA_CVG,
+  SLOCAN_N_GRANDVIEW_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -57,6 +58,8 @@ const CLARK_GRANDVIEW_SE = [49.26601, -123.07728];
 
 const MAIN_1ST_NW = [49.27022, -123.10085];
 const MAIN_1ST_SW = [49.27009, -123.10085];
+
+const SLOCAN_N_GRANDVIEW_SE = [49.25831, -123.04946];
 
 const NORTH_CVG = [49.23865, -122.89262];
 const HUME_PARK_DR_N = [49.23711, -122.89228];
@@ -502,6 +505,11 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
+    description: "connection between svg and sunrise",
+    type: "mixed",
+    positions: [SLOCAN_N_GRANDVIEW_S, SLOCAN_N_GRANDVIEW_SE],
+  },
+  {
     routeNames: [ROUTES.centralValleyGreenway.name],
     description: "slocan to rupert",
     type: "mixed",
@@ -511,7 +519,8 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
     positions: [
       SLOCAN_N_GRANDVIEW,
-      [49.25829, -123.0495],
+      [49.25839, -123.04946],
+      SLOCAN_N_GRANDVIEW_SE,
       [49.25863, -123.04704],
       [49.25874, -123.04614],
       [49.25881, -123.04603],
