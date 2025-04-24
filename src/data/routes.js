@@ -176,7 +176,7 @@ export const ROUTES = {
   agnes: {
     name: "Agnes St",
     regions: [REGIONS.newWestminster],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.agnesEb } }],
     notes:
       "Relatively flat and quiet. The city plans on adding a similar route up Seventh St.",
   },

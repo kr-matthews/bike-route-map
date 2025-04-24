@@ -6,6 +6,11 @@ const VIDEOS = {
     date: new Date("Oct 01 2023"),
     minutes: 18,
   },
+  agnesEb: {
+    id: "rTJc2Wsun0M",
+    date: new Date("Apr 19 2025"),
+    minutes: 4,
+  },
   agronomyEb: {
     id: "ciz8N2cCmeo",
     tlId: "za3yVlQ-ZJk",

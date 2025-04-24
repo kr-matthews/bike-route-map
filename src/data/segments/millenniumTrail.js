@@ -5,6 +5,7 @@ import {
   PATTULLO_ALBERT,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const GRANVILLE_VANCOUVER_S = [49.2117, -122.90295];
 
@@ -14,8 +15,9 @@ const MILLENNIUM_TRAIL_NE_W = [49.21914, -122.90867];
 
 export const MILLENNIUM_TRAIL = [
   {
-    description: "connection to bc parkway via first",
+    description: "connection from pattullo bridge to agnes",
     type: "quiet",
+    videoIds: [VIDEOS.agnesEb.id],
     positions: [
       PATTULLO_ALBERT,
       [49.20884, -122.90003],
@@ -25,6 +27,13 @@ export const MILLENNIUM_TRAIL = [
       [49.20882, -122.90088],
       [49.20881, -122.90125],
       [49.20882, -122.90133],
+      FIRST_AGNES,
+    ],
+  },
+  {
+    description: "connection from agnes via first",
+    type: "quiet",
+    positions: [
       FIRST_AGNES,
       [49.20958, -122.90229],
       [49.20993, -122.90271],

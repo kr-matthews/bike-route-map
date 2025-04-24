@@ -1124,6 +1124,7 @@ export const BC_PARKWAY = [
       VIDEOS.bcParkwayNWWb.id,
       VIDEOS.bcParkwaySurreyEb.id,
       VIDEOS.bcParkwaySurreyWb.id,
+      VIDEOS.agnesEb.id,
     ],
     positions: [
       PATTULLO_ALBERT,
@@ -1141,7 +1142,9 @@ export const BC_PARKWAY = [
       VIDEOS.bcParkwayNWWb.id,
       VIDEOS.bcParkwaySurreyEb.id,
       VIDEOS.bcParkwaySurreyWb.id,
+      VIDEOS.agnesEb.id,
     ],
+    videoIdsEndAtEnd: [VIDEOS.agnesEb.id],
     positions: [PATTULLO_PRE_ELEVATION_START, PATTULLO_ELEVATION_START],
   },
   {
