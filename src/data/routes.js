@@ -232,7 +232,14 @@ export const ROUTES = {
   alexFraserBridge: {
     name: "Alex Fraser Bridge",
     regions: [REGIONS.richmond, REGIONS.delta],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: {
+          northbound: VIDEOS.alexFraserNb,
+          southbound: VIDEOS.alexFraserSb,
+        },
+      },
+    ],
     notes:
       "The bridge sidewalk has a lot of obstacles, and the bridge itself is very high. The connections on the north/west end are a bit confusing.",
   },

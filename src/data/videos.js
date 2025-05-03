@@ -52,6 +52,18 @@ const VIDEOS = {
     date: new Date("May 18 2024"),
     minutes: 4,
   },
+  alexFraserNb: {
+    id: "I53uPOBHF1c",
+    tlId: "KfSspW65wTk",
+    date: new Date("Apr 30 2025"),
+    minutes: 16,
+  },
+  alexFraserSb: {
+    id: "UIw6OTyJO0U",
+    tlId: "kUapoUtEQz8",
+    date: new Date("Apr 30 2025"),
+    minutes: 14,
+  },
   alphaSb: {
     id: "WiR9Shdi16U",
     date: new Date("Feb 26 2025"),

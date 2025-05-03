@@ -4,11 +4,12 @@ import {
   FRASERWOOD_WESTMINSTER_CONNECTION_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 export const FRASERWOOD_TRAIL = [
   {
     routeNames: [ROUTES.fraserwoodTrail.name],
-    description: "all",
+    description: "west of alex fraser",
     type: "mixed",
     positions: [
       FRASERWOOD_WESTMINSTER_CONNECTION_S,
@@ -38,6 +39,15 @@ export const FRASERWOOD_TRAIL = [
       [49.17377, -122.96206],
       [49.17404, -122.96182],
       [49.1743, -122.96151],
+      ALEX_FRASER_NW_FRASERWOOD,
+    ],
+  },
+  {
+    routeNames: [ROUTES.fraserwoodTrail.name],
+    description: "east of alex fraser",
+    type: "mixed",
+    videoIds: [VIDEOS.alexFraserSb.id],
+    positions: [
       ALEX_FRASER_NW_FRASERWOOD,
       [49.17543, -122.95929],
       [49.17618, -122.95748],

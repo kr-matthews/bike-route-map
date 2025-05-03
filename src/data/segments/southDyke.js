@@ -9,15 +9,25 @@ import { VIDEOS } from "../videos";
 export const SOUTH_DYKE = [
   {
     routeNames: [ROUTES.southDyke.name],
-    description: "all",
+    description: "west of dockside",
     type: "quiet",
-    videoIds: [VIDEOS.southDykeEb.id],
+    videoIds: [VIDEOS.southDykeEb.id, VIDEOS.alexFraserSb.id],
     videoIdsStartAtStart: [VIDEOS.southDykeEb.id],
-    videoIdsEndAtEnd: [VIDEOS.southDykeEb.id],
+    videoIdsStartAtEnd: [VIDEOS.alexFraserSb.id],
     positions: [
       BOUNDARY_DYKE,
       [49.17632, -122.95708],
       [49.17678, -122.95607],
+      DOCKSIDE_SOUTH_DYKE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.southDyke.name],
+    description: "east of dockside",
+    type: "quiet",
+    videoIds: [VIDEOS.southDykeEb.id],
+    videoIdsEndAtEnd: [VIDEOS.southDykeEb.id],
+    positions: [
       DOCKSIDE_SOUTH_DYKE,
       [49.17769, -122.95409],
       [49.17805, -122.95309],
