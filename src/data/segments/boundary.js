@@ -14,6 +14,7 @@ export const BOUNDARY = [
   {
     description: "dockside",
     type: "quiet",
+    undesignated: true,
     videoIds: [VIDEOS.boundaryTrailSb.id],
     videoIdsEndAtStart: [VIDEOS.boundaryTrailSb.id],
     positions: [
