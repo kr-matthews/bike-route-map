@@ -31,6 +31,10 @@ const RAMP_ELEVATION_END = [49.17744, -122.95746];
 const NE_RAMP_BOTTOM = [49.17734, -122.95746];
 const NE_RAMP_BOTTOM_TO_BOUNDARY = [49.17734, -122.95745];
 
+const PLANET_ICE_DELTA_NE = [49.14899, -122.93517];
+const NORDEL_BRIDGE_SE = [49.14945, -122.93469];
+const NORDEL_BRIDGE_SE_PRE = [49.14894, -122.93437];
+
 export const ALEX_FRASER_BRIDGE = [
   {
     description: "queen's canal",
@@ -126,6 +130,77 @@ export const ALEX_FRASER_BRIDGE = [
       [49.14864, -122.93771],
       NB_PRE_BRIDGE,
     ],
+  },
+  {
+    description: "south end, from the west",
+    type: "mixed",
+    positions: [
+      [49.14761, -122.94303],
+      [49.14762, -122.94053],
+      [49.14766, -122.94047],
+      [49.14781, -122.94043],
+      [49.14785, -122.9404],
+      [49.14786, -122.94035],
+      [49.14786, -122.93878],
+      [49.14788, -122.9387],
+      [49.14791, -122.93863],
+      [49.14797, -122.93853],
+      [49.14803, -122.93847],
+      [49.14809, -122.93845],
+      SB_POST_BRIDGE,
+    ],
+  },
+  {
+    description: "south end, to the east 1",
+    type: "mixed",
+    positions: [
+      NB_PRE_BRIDGE,
+      [49.14813, -122.93752],
+      [49.1481, -122.93746],
+      [49.14808, -122.93737],
+      [49.14808, -122.93514],
+      [49.14811, -122.93507],
+      [49.14816, -122.93503],
+      PLANET_ICE_DELTA_NE,
+    ],
+  },
+  {
+    description: "south end, to the east 2",
+    type: "mixed",
+    positions: [
+      PLANET_ICE_DELTA_NE,
+      [49.14903, -122.9352],
+      [49.14933, -122.93525],
+      [49.14966, -122.93526],
+      [49.1497, -122.93524],
+      [49.14973, -122.9352],
+      [49.14975, -122.93514],
+      [49.14974, -122.93505],
+      [49.14948, -122.93462],
+      [49.14938, -122.93451],
+      [49.14929, -122.93443],
+      [49.14904, -122.93437],
+      NORDEL_BRIDGE_SE_PRE,
+    ],
+  },
+  {
+    description: "south end, to the east 3",
+    type: "mixed",
+    elevation: 0.5,
+    positions: [
+      NORDEL_BRIDGE_SE_PRE,
+      [49.14886, -122.93439],
+      [49.14884, -122.93442],
+      [49.14899, -122.93447],
+      [49.14934, -122.93466],
+      NORDEL_BRIDGE_SE,
+    ],
+  },
+  {
+    description: "south end, to the east 4",
+    type: "mixed",
+    elevation: 1,
+    positions: [NORDEL_BRIDGE_SE, [49.1506, -122.93475]],
   },
 
   // nb
