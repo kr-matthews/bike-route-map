@@ -114,6 +114,8 @@ export const BOYD = [
     description: "eb boundary to after howes",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.boydEb.id],
+    videoIdsStartAtStart: [VIDEOS.boydEb.id],
     positions: [
       BOUNDARY_WESTMINSTER_ES,
       [49.18408, -122.95533],
@@ -140,6 +142,7 @@ export const BOYD = [
     description: "eb howes to bridge",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.boydEb.id],
     positions: [
       BOYD_EB_JOIN_AFTER_HOWES,
       [49.19092, -122.94642],
@@ -152,6 +155,8 @@ export const BOYD = [
     description: "wb to boundary",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.boydWb.id],
+    videoIdsEndAtEnd: [VIDEOS.boydWb.id],
     positions: [
       QUEENSBOROUGH_BOYD_NW,
       [49.19154, -122.94517],
@@ -184,7 +189,11 @@ export const BOYD = [
     routeNames: [ROUTES.boyd.name],
     description: "trail from bridge to duncan 1",
     type: "comfortable",
-    videoIds: [VIDEOS.queensboroughBridgeNb.id],
+    videoIds: [
+      VIDEOS.queensboroughBridgeNb.id,
+      VIDEOS.boydWb.id,
+      VIDEOS.boydEb.id,
+    ],
     videoIdsStartAtEnd: [VIDEOS.queensboroughBridgeNb.id],
     positions: [
       QUEENSBOROUGH_BOYD_NW,
@@ -199,6 +208,7 @@ export const BOYD = [
     routeNames: [ROUTES.boyd.name],
     description: "trail from bridge to duncan 2",
     type: "comfortable",
+    videoIds: [VIDEOS.boydWb.id, VIDEOS.boydEb.id],
     positions: [
       WOOD_BOYD_N,
       [49.19316, -122.94159],
@@ -220,6 +230,7 @@ export const BOYD = [
     videoIds: [
       VIDEOS.queensboroughBridgeNb.id,
       VIDEOS.queensboroughBridgeSb.id,
+      VIDEOS.boydEb.id,
     ],
     videoIdsEndAtEnd: [VIDEOS.queensboroughBridgeSb.id],
     positions: [QUEENSBOROUGH_BOYD_SW, QUEENSBOROUGH_BOYD_NW],
@@ -229,6 +240,8 @@ export const BOYD = [
     description: "eb duncan to ewen",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.boydEb.id],
+    videoIdsEndAtEnd: [VIDEOS.boydEb.id],
     positions: [
       DUNCAN_BOYD_NE,
       [49.19455, -122.93694],
@@ -248,6 +261,8 @@ export const BOYD = [
     description: "wb ewen to duncan",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.boydWb.id],
+    videoIdsStartAtStart: [VIDEOS.boydWb.id],
     positions: [
       BOYD_EWEN_SE,
       [49.19231, -122.93392],

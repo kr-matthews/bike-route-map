@@ -208,6 +208,16 @@ const VIDEOS = {
     date: new Date("Mar 13 2024"),
     minutes: 5,
   },
+  boydEb: {
+    id: "_rddR4FVjaY",
+    date: new Date("Apr 30 2025"),
+    minutes: 8,
+  },
+  boydWb: {
+    id: "OcqX9lf2vMM",
+    date: new Date("Apr 30 2025"),
+    minutes: 7,
+  },
   boydTrailWb: {
     id: "-3TNL5TrskA",
     date: new Date("Mar 13 2024"),

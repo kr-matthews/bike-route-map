@@ -401,7 +401,7 @@ export const ROUTES = {
   boyd: {
     name: "Boyd St",
     regions: [REGIONS.newWestminster],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.boydEb, westbound: VIDEOS.boydWb } }],
     notes:
       "Very flat. The painted lanes are mostly beside the curb. Traveling east is a bit awkward as you have to briefly switch to the left side, then switch back. The city plans on improving this route.",
   },
