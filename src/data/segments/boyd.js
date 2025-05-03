@@ -140,7 +140,7 @@ export const BOYD = [
   {
     routeNames: [ROUTES.boyd.name],
     description: "eb howes to bridge",
-    type: "shared",
+    type: "painted",
     oneWay: "required",
     videoIds: [VIDEOS.boydEb.id],
     positions: [
