@@ -999,6 +999,7 @@ const VIDEOS = {
   },
   lakewoodNb: {
     id: "xKlYQByxty4",
+    tlId: "ya8LLeZV9UY",
     date: new Date("Sep 23 2023"),
     minutes: 10,
   },
@@ -1331,6 +1332,7 @@ const VIDEOS = {
   },
   portsideEb: {
     id: "LXLxrBUIa9o",
+    tlId: "kRB-Hk2UKUo",
     date: new Date("Oct 28 2023"),
     minutes: 10,
   },
