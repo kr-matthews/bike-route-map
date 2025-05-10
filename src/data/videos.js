@@ -64,6 +64,11 @@ const VIDEOS = {
     date: new Date("Apr 30 2025"),
     minutes: 14,
   },
+  alexFraserUnder: {
+    id: "06PetNhCSvI",
+    date: new Date("Apr 30 2025"),
+    minutes: 0,
+  },
   alphaSb: {
     id: "WiR9Shdi16U",
     date: new Date("Feb 26 2025"),
@@ -830,6 +835,11 @@ const VIDEOS = {
     date: new Date("Feb 09 2024"),
     minutes: 3,
   },
+  hastingsWindermerePortside: {
+    id: "Fa5ghWvXt3M",
+    date: new Date("May 08 2025"),
+    minutes: 3,
+  },
   heatherSb: {
     id: "IOQ6E28a5CE",
     tlId: "CgcsimcYT7Y",
@@ -991,6 +1001,12 @@ const VIDEOS = {
     id: "xKlYQByxty4",
     date: new Date("Sep 23 2023"),
     minutes: 10,
+  },
+  lakewoodSb: {
+    id: "XUlPpwvpyyg",
+    tlId: "Ehu51NDDBno",
+    date: new Date("May 08 2025"),
+    minutes: 11,
   },
   lionsGateBridgeNb: {
     id: "KbhPPsdOzIE",
@@ -1317,6 +1333,12 @@ const VIDEOS = {
     id: "LXLxrBUIa9o",
     date: new Date("Oct 28 2023"),
     minutes: 10,
+  },
+  portsideWb: {
+    id: "BTUj0O34Clw",
+    tlId: "1HFpR1Mz-ag",
+    date: new Date("May 08 2025"),
+    minutes: 9,
   },
   portsideGapWb: {
     id: "5jEuddCkMwM",

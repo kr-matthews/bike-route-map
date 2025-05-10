@@ -28,11 +28,15 @@ export const HASTINGS_PARK = [
     description: "hastings st",
     type: "mixed",
     videoIds: [
+      VIDEOS.hastingsWindermerePortside.id,
       VIDEOS.hastingsPortsideWindermere.id,
       VIDEOS.hastingsWindermereCassiar.id,
       VIDEOS.windermereNb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.hastingsWindermereCassiar.id],
+    videoIdsStartAtStart: [
+      VIDEOS.hastingsWindermerePortside.id,
+      VIDEOS.hastingsWindermereCassiar.id,
+    ],
     videoIdsEndAtStart: [VIDEOS.hastingsPortsideWindermere.id],
     videoIdsEndAtEnd: [VIDEOS.windermereNb.id],
     positions: [
@@ -48,7 +52,10 @@ export const HASTINGS_PARK = [
     routeNames: [ROUTES.hastingsPark.name],
     description: "fields west",
     type: "mixed",
-    videoIds: [VIDEOS.hastingsPortsideWindermere.id],
+    videoIds: [
+      VIDEOS.hastingsWindermerePortside.id,
+      VIDEOS.hastingsPortsideWindermere.id,
+    ],
     positions: [
       FIELDS_SW,
       [49.28155, -123.03494],
@@ -146,6 +153,7 @@ export const HASTINGS_PARK = [
     description: "overlap near bike track",
     type: "comfortable",
     videoIds: [
+      VIDEOS.hastingsWindermerePortside.id,
       VIDEOS.hastingsPortsideWindermere.id,
       VIDEOS.hastingsCassiarPandora.id,
     ],
@@ -155,7 +163,10 @@ export const HASTINGS_PARK = [
     routeNames: [ROUTES.hastingsPark.name],
     description: "bridgewater path",
     type: "comfortable",
-    videoIds: [VIDEOS.hastingsPortsideWindermere.id],
+    videoIds: [
+      VIDEOS.hastingsPortsideWindermere.id,
+      VIDEOS.hastingsWindermerePortside.id,
+    ],
     positions: [
       MILLER_E_END,
       [49.28385, -123.03382],
@@ -187,6 +198,7 @@ export const HASTINGS_PARK = [
     elevation: -0.5,
     videoIds: [
       VIDEOS.hastingsPortsideWindermere.id,
+      VIDEOS.hastingsWindermerePortside.id,
       VIDEOS.hastingsPortsideCassiar.id,
     ],
     positions: [
@@ -202,6 +214,7 @@ export const HASTINGS_PARK = [
     elevation: -1,
     videoIds: [
       VIDEOS.hastingsPortsideWindermere.id,
+      VIDEOS.hastingsWindermerePortside.id,
       VIDEOS.hastingsPortsideCassiar.id,
     ],
     positions: [TUNNEL_START, TUNNEL_END],
@@ -213,6 +226,7 @@ export const HASTINGS_PARK = [
     elevation: -0.5,
     videoIds: [
       VIDEOS.hastingsPortsideWindermere.id,
+      VIDEOS.hastingsWindermerePortside.id,
       VIDEOS.hastingsPortsideCassiar.id,
     ],
     positions: [TUNNEL_END, BRIDGEWAY_CREEKWAY_PARK_S],
@@ -233,7 +247,10 @@ export const HASTINGS_PARK = [
     routeNames: [ROUTES.hastingsPark.name],
     description: "creekway portside connection",
     type: "mixed",
-    videoIds: [VIDEOS.hastingsPortsideCassiar.id],
+    videoIds: [
+      VIDEOS.hastingsPortsideCassiar.id,
+      VIDEOS.hastingsWindermerePortside.id,
+    ],
     positions: [
       BRIDGEWAY_CREEKWAY_PARK_S,
       [49.28808, -123.03379],

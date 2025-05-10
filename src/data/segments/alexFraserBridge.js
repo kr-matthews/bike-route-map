@@ -131,6 +131,9 @@ export const ALEX_FRASER_BRIDGE = [
   {
     description: "underneath south end",
     type: "mixed",
+    videoIds: [VIDEOS.alexFraserUnder.id],
+    videoIdsStartAtStart: [VIDEOS.alexFraserUnder.id],
+    videoIdsEndAtEnd: [VIDEOS.alexFraserUnder.id],
     positions: [
       SB_POST_BRIDGE,
       [49.14829, -122.93852],

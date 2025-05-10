@@ -11,7 +11,7 @@ import { VIDEOS } from "./videos";
 // New Westminster:
 // North Vancouver: queensbury; necklace: grand blvd & keith; dollarton; mt seymour;
 // West Vancouver: spirit trail alt.?; ...more
-// Surrey: scott rd; alex fraser; serpentine; timbers; fraser hwy;
+// Surrey: scott rd; serpentine; timbers; fraser hwy;
 // Delta:
 
 export const ROUTES = {
@@ -237,6 +237,12 @@ export const ROUTES = {
         videos: {
           northbound: VIDEOS.alexFraserNb,
           southbound: VIDEOS.alexFraserSb,
+        },
+      },
+      {
+        name: "Underneath the south end",
+        videos: {
+          eastbound: VIDEOS.alexFraserUnder,
         },
       },
     ],
@@ -1066,7 +1072,10 @@ export const ROUTES = {
     legs: [
       {
         name: "Windermere <-> Portside",
-        videos: { southbound: VIDEOS.hastingsPortsideWindermere },
+        videos: {
+          northbound: VIDEOS.hastingsWindermerePortside,
+          southbound: VIDEOS.hastingsPortsideWindermere,
+        },
       },
       {
         name: "Pandora <-> Cassiar",
@@ -1293,7 +1302,14 @@ export const ROUTES = {
   lakewood: {
     name: "Lakewood",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { northbound: VIDEOS.lakewoodNb } }],
+    legs: [
+      {
+        videos: {
+          northbound: VIDEOS.lakewoodNb,
+          southbound: VIDEOS.lakewoodSb,
+        },
+      },
+    ],
     notes:
       "Much hillier than the nearby car routes (such as Victoria and Nanaimo) unfortunately. But relatively quiet.",
   },
@@ -1771,7 +1787,11 @@ export const ROUTES = {
   portside: {
     name: "Portside",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { eastbound: VIDEOS.portsideEb } }],
+    legs: [
+      {
+        videos: { eastbound: VIDEOS.portsideEb, westbound: VIDEOS.portsideWb },
+      },
+    ],
     notes:
       "Some hills, too much traffic at times. The road surface varies a lot (Wall St and Bridgeway have bad sections). The city would like to continue this west along Powell to McLean, but re-allocating space is tricky. The city is also currently planning to upgrade much of this route with more traffic calming and/or separated lanes.",
   },
