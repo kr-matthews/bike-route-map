@@ -1,4 +1,4 @@
-import {} from "../intersections";
+import { NO_2_STEVESTON_SE } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
@@ -32,7 +32,7 @@ export const NO_2_PATH = [
       [49.13229, -123.15877],
       [49.13289, -123.15876],
       [49.13337, -123.15877],
-      [49.1334, -123.15876],
+      NO_2_STEVESTON_SE,
     ],
   },
 ];

@@ -1,4 +1,8 @@
-import { SHELL_STEVESTON_SE } from "../intersections";
+import {
+  NO_2_STEVESTON_SE,
+  RAILWAY_GREENWAY_STEVESTON_S,
+  SHELL_STEVESTON_SE,
+} from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
@@ -7,10 +11,36 @@ const NO_4_STEVESTON_SE = [49.13334, -123.11417];
 export const STEVESTON_HWY = [
   {
     routeNames: [ROUTES.stevestonHwy.name],
-    description: "no. 3 to no. 4",
+    description: "railway to no. 4",
     type: "mixed",
     positions: [
-      [49.13342, -123.13647],
+      RAILWAY_GREENWAY_STEVESTON_S,
+      // missing on-street intersections
+      [49.13363, -123.16966],
+      [49.13364, -123.16959],
+      [49.13357, -123.16658],
+      [49.13356, -123.16652],
+      [49.13356, -123.16626],
+      [49.13357, -123.16622],
+      [49.13347, -123.16154],
+      [49.13346, -123.16149],
+      [49.13345, -123.16126],
+      [49.13347, -123.1612],
+      [49.13343, -123.15908],
+      [49.13341, -123.15903],
+      NO_2_STEVESTON_SE,
+      [49.13342, -123.15869],
+      [49.13345, -123.15641],
+      [49.13343, -123.15015],
+      [49.13341, -123.148],
+      [49.13339, -123.14793],
+      [49.13339, -123.14768],
+      [49.13341, -123.14764],
+      [49.13344, -123.14492],
+      [49.13343, -123.13687],
+      [49.13342, -123.13675],
+      [49.13342, -123.13652],
+      [49.13343, -123.13647],
       [49.13342, -123.13553],
       [49.13342, -123.13506],
       [49.13343, -123.13444],
