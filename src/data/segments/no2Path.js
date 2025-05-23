@@ -1,11 +1,11 @@
-import { NO_2_STEVESTON_SE } from "../intersections";
+import { NO_2_STEVESTON_SE, NO_2_WILLIAMS_SE } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 export const NO_2_PATH = [
   {
     routeNames: [ROUTES.no2Path.name],
-    description: "all",
+    description: "south of steveston hwy",
     type: "mixed",
     videoIds: [VIDEOS.no2PathNb.id],
     videoIdsStartAtStart: [VIDEOS.no2PathNb.id],
@@ -33,6 +33,36 @@ export const NO_2_PATH = [
       [49.13289, -123.15876],
       [49.13337, -123.15877],
       NO_2_STEVESTON_SE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.no2Path.name],
+    description: "north of steveston hwy",
+    type: "mixed",
+    // videoIds: [VIDEOS.no2PathSb.id],
+    // videoIdsStartAtEnd: [VIDEOS.no2PathSb.id],
+    positions: [
+      NO_2_STEVESTON_SE,
+      [49.13361, -123.15874],
+      [49.13365, -123.15876],
+      [49.1354, -123.15878],
+      [49.13543, -123.15877],
+      [49.13559, -123.15877],
+      [49.13564, -123.15879],
+      [49.13673, -123.1588],
+      [49.13681, -123.15872],
+      [49.13734, -123.15869],
+      [49.13737, -123.15874],
+      [49.13761, -123.15876],
+      [49.13763, -123.15872],
+      [49.13829, -123.15877],
+      [49.13835, -123.15882],
+      [49.13865, -123.15883],
+      [49.13868, -123.1588],
+      [49.13881, -123.15881],
+      [49.13884, -123.15883],
+      [49.14089, -123.15886],
+      NO_2_WILLIAMS_SE,
     ],
   },
 ];

@@ -1620,8 +1620,7 @@ export const ROUTES = {
     name: "No. 2 Rd Path",
     regions: [REGIONS.richmond],
     legs: [{ videos: { northbound: VIDEOS.no2PathNb } }],
-    notes:
-      "Very flat shared use path, but doesn't connect to anything - yet; the shared use path along Steveston Hwy will eventually connect No. 2 Rd to Shell Rd.",
+    notes: "Very flat shared use path.",
   },
   no3: {
     name: "No. 3 Rd",
@@ -2179,7 +2178,7 @@ export const ROUTES = {
     regions: [REGIONS.richmond],
     legs: [{ videos: { eastbound: VIDEOS.stevestonEb } }],
     notes:
-      "Very flat. Slowly being built out in stages from Shell Rd Trail to No. 2 Rd Path, with a possible extension to No. 5 Rd. Until it's finished, it's a bit useless.",
+      "Very flat. Finished in 2025. Might eventually be extended to No. 5 Rd.",
   },
   sunrise: {
     name: "Sunrise",
