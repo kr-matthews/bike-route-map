@@ -1,9 +1,18 @@
 import {
   RAILWAY_GREENWAY_WESTWATER,
   RAILWAY_WESTWATER,
+  WEST_DYKE_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
+
+const SEVENTH_CHATHAM = [49.12642, -123.19189];
+const SEVENTH_MONCTON_N = [49.12527, -123.19189];
+const SIXTH_MONCTON_NW = [49.12527, -123.19035];
+const W_OF_FOURTH_MONCTON = [49.12527, -123.18782];
+const W_OF_THIRD_MONCTON = [49.12519, -123.18642];
+const THIRD_BAYVIEW = [49.12449, -123.18577];
+const NO_1_BAYVIEW_SE = [49.12381, -123.18111];
 
 const WESTWATER_IMPERIAL = [49.12182, -123.17157];
 const WESTWATER_W = [49.12262, -123.17279];
@@ -11,11 +20,82 @@ const IMPERIAL_WESTWATER = [49.12293, -123.174];
 
 export const IMPERIAL_LANDING = [
   {
+    description: "steveston - parking lot",
+    type: "quiet",
+    undesignated: true,
+    positions: [
+      WEST_DYKE_S,
+      [49.12633, -123.19315],
+      [49.12638, -123.193],
+      [49.12642, -123.19278],
+      [49.12643, -123.1926],
+      SEVENTH_CHATHAM,
+    ],
+  },
+  {
+    description: "steveston - seventh",
+    type: "quiet",
+    undesignated: true,
+    positions: [SEVENTH_CHATHAM, SEVENTH_MONCTON_N],
+  },
+  {
+    description: "steveston - moncton path w end",
+    type: "mixed",
+    positions: [SEVENTH_MONCTON_N, SIXTH_MONCTON_NW],
+  },
+  {
+    description: "steveston - moncton industrial",
+    type: "quiet",
+    undesignated: true,
+    positions: [SIXTH_MONCTON_NW, [49.12524, -123.19017], W_OF_FOURTH_MONCTON],
+  },
+  {
+    description: "steveston - moncton 2nd path",
+    type: "mixed",
+    undesignated: true,
+    positions: [
+      W_OF_FOURTH_MONCTON,
+      [49.12528, -123.18729],
+      [49.12528, -123.18683],
+      [49.12527, -123.18667],
+      [49.12524, -123.18656],
+      [49.12522, -123.18648],
+      W_OF_THIRD_MONCTON,
+    ],
+  },
+  {
+    description: "steveston - moncton & third",
+    type: "quiet",
+    undesignated: true,
+    positions: [
+      W_OF_THIRD_MONCTON,
+      [49.12519, -123.18578],
+      [49.12453, -123.18578],
+      THIRD_BAYVIEW,
+    ],
+  },
+  {
+    description: "steveston - bayview",
+    type: "quiet",
+    positions: [
+      THIRD_BAYVIEW,
+      [49.12446, -123.18575],
+      [49.12442, -123.18568],
+      [49.12439, -123.18558],
+      [49.12389, -123.18227],
+      [49.12387, -123.1821],
+      [49.12386, -123.18197],
+      [49.12386, -123.18187],
+      [49.12389, -123.18121],
+      NO_1_BAYVIEW_SE,
+    ],
+  },
+  {
     routeNames: [ROUTES.imperialLandingTrail.name],
     description: "imperial landing",
     type: "mixed",
     positions: [
-      [49.12381, -123.18111],
+      NO_1_BAYVIEW_SE,
       [49.12378, -123.18103],
       [49.1237, -123.18095],
       [49.12354, -123.18081],

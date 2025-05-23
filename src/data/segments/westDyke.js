@@ -1,4 +1,8 @@
-import { WEST_DYKE_MIDDLE_ARM, WEST_DYKE_WILLIAMS } from "../intersections";
+import {
+  WEST_DYKE_MIDDLE_ARM,
+  WEST_DYKE_S,
+  WEST_DYKE_WILLIAMS,
+} from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
@@ -10,7 +14,7 @@ export const WEST_DYKE = [
     description: "all",
     type: "mixed",
     positions: [
-      [49.12622, -123.19331],
+      WEST_DYKE_S,
       [49.12642, -123.19376],
       [49.12646, -123.19421],
       [49.1266, -123.19422],
