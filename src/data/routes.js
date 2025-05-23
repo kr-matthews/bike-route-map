@@ -1625,7 +1625,11 @@ export const ROUTES = {
   no2Path: {
     name: "No. 2 Rd Path",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { northbound: VIDEOS.no2PathNb } }],
+    legs: [
+      {
+        videos: { northbound: VIDEOS.no2PathNb, southbound: VIDEOS.no2PathSb },
+      },
+    ],
     notes: "Very flat shared use path.",
   },
   no3: {
@@ -2182,7 +2186,14 @@ export const ROUTES = {
   stevestonHwy: {
     name: "Steveston Hwy Path",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { eastbound: VIDEOS.stevestonEb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.stevestonEb,
+          westbound: VIDEOS.stevestonWb,
+        },
+      },
+    ],
     notes:
       "Very flat. Finished in 2025. Might eventually be extended to No. 5 Rd.",
   },

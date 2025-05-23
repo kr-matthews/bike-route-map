@@ -13,6 +13,8 @@ export const STEVESTON_HWY = [
     routeNames: [ROUTES.stevestonHwy.name],
     description: "railway to no. 4",
     type: "mixed",
+    videoIds: [VIDEOS.stevestonWb.id],
+    videoIdsEndAtStart: [VIDEOS.stevestonWb.id],
     positions: [
       RAILWAY_GREENWAY_STEVESTON_S,
       // missing on-street intersections
@@ -62,8 +64,9 @@ export const STEVESTON_HWY = [
     routeNames: [ROUTES.stevestonHwy.name],
     description: "no. 4 to shell",
     type: "mixed",
-    videoIds: [VIDEOS.stevestonEb.id],
+    videoIds: [VIDEOS.stevestonWb.id, VIDEOS.stevestonEb.id],
     videoIdsStartAtStart: [VIDEOS.stevestonEb.id],
+    videoIdsStartAtEnd: [VIDEOS.stevestonWb.id],
     videoIdsEndAtEnd: [VIDEOS.stevestonEb.id],
     positions: [
       NO_4_STEVESTON_SE,
