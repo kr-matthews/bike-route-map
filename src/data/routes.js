@@ -1189,6 +1189,12 @@ export const ROUTES = {
     legs: [{ videos: { northbound: VIDEOS.imperialNb } }],
     notes: "Relatively flat. Quiet-ish, but the cars go very fast.",
   },
+  imperialLandingTrail: {
+    name: "Imperial Landing Trail",
+    regions: [REGIONS.richmond],
+    legs: [{ videos: {} }],
+    notes: "A flat shared use path which varies a lot in width.",
+  },
   imperialPowerline: {
     name: "Imperial Trail/Powerline Trail",
     shortName: "Imperial/Powerline",
