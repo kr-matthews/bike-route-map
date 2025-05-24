@@ -1,7 +1,7 @@
 import {
   RAILWAY_GREENWAY_WESTWATER,
   RAILWAY_WESTWATER,
-  WEST_DYKE_S,
+  WEST_DYKE_CHATHAM,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -24,7 +24,7 @@ export const IMPERIAL_LANDING = [
     type: "quiet",
     undesignated: true,
     positions: [
-      WEST_DYKE_S,
+      WEST_DYKE_CHATHAM,
       [49.12633, -123.19315],
       [49.12638, -123.193],
       [49.12642, -123.19278],

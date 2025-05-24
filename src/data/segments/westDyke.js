@@ -1,25 +1,33 @@
 import {
+  WEST_DYKE_CHATHAM,
   WEST_DYKE_MIDDLE_ARM,
-  WEST_DYKE_S,
   WEST_DYKE_WILLIAMS,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const WEST_DYKE_S = [49.12704, -123.19507];
 const WEST_DYKE_MIDDLE_ARM_W = [49.17542, -123.19536];
 
 export const WEST_DYKE = [
+  {
+    description: "from parking lot",
+    type: "quiet",
+    positions: [
+      WEST_DYKE_CHATHAM,
+      [49.12642, -123.19376],
+      [49.12646, -123.19421],
+      [49.1266, -123.19422],
+      [49.12686, -123.19472],
+      WEST_DYKE_S,
+    ],
+  },
   {
     routeNames: [ROUTES.westDyke.name],
     description: "all",
     type: "mixed",
     positions: [
       WEST_DYKE_S,
-      [49.12642, -123.19376],
-      [49.12646, -123.19421],
-      [49.1266, -123.19422],
-      [49.12686, -123.19472],
-      [49.12704, -123.19507],
       [49.12725, -123.19536],
       [49.12736, -123.1954],
       [49.12794, -123.19543],
