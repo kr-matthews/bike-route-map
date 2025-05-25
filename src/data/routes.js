@@ -1888,7 +1888,14 @@ export const ROUTES = {
   riverPkwy: {
     name: "River Pkwy",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { southbound: VIDEOS.riverPkwySb } }],
+    legs: [
+      {
+        videos: {
+          northbound: VIDEOS.riverPkwyNb,
+          southbound: VIDEOS.riverPkwySb,
+        },
+      },
+    ],
     notes:
       "Very flat. This brand new road replaces an old train track. Sadly, given that it was designed/built from scratch, the implementation is quite poor, with just flimsy posts separating you from cars. Use Middle Arm Trail instead.",
   },

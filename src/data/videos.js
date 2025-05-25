@@ -1426,6 +1426,11 @@ const VIDEOS = {
     date: new Date("Sep 23 2024"),
     minutes: 4,
   },
+  riverPkwyNb: {
+    id: "W4Wk0hEYga8",
+    date: new Date("May 22 2025"),
+    minutes: 5,
+  },
   riverPkwySb: {
     id: "vexfYEmimsw",
     date: new Date("May 28 2024"),

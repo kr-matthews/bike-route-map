@@ -11,8 +11,8 @@ import {
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
-const EB_PAINT_START = [49.1772, -123.14325];
-const WB_PAINT_END = [49.176, -123.14618];
+const NB_PAINT_START = [49.1772, -123.14325];
+const SB_PAINT_END = [49.176, -123.14618];
 
 const HOLLYBRIDGE_RIVER_E = [49.17464, -123.14855];
 const HOLLYBRIDGE_RIVER_W = [49.17479, -123.14871];
@@ -52,9 +52,11 @@ export const RIVER_PARKWAY = [
 
   {
     routeNames: [ROUTES.riverPkwy.name],
-    description: "eb: dedicated",
+    description: "nb: dedicated",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.riverPkwyNb.id],
+    videoIdsStartAtStart: [VIDEOS.riverPkwyNb.id],
     positions: [
       HOLLYBRIDGE_RIVER_E,
       [49.17472, -123.14842],
@@ -77,16 +79,17 @@ export const RIVER_PARKWAY = [
       [49.17677, -123.14409],
       [49.17678, -123.14398],
       [49.17712, -123.14328],
-      EB_PAINT_START,
+      NB_PAINT_START,
     ],
   },
   {
     routeNames: [ROUTES.riverPkwy.name],
-    description: "eb: painted",
+    description: "nb: painted",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.riverPkwyNb.id],
     positions: [
-      EB_PAINT_START,
+      NB_PAINT_START,
       [49.17769, -123.14226],
       [49.17793, -123.14181],
       [49.17812, -123.14149],
@@ -104,7 +107,7 @@ export const RIVER_PARKWAY = [
   },
   {
     routeNames: [ROUTES.riverPkwy.name],
-    description: "wb: painted",
+    description: "sb: painted",
     type: "painted",
     oneWay: "required",
     videoIds: [VIDEOS.riverPkwySb.id],
@@ -125,18 +128,18 @@ export const RIVER_PARKWAY = [
       GILBERT_RIVER_NE,
       GILBERT_RIVER_NW,
       [49.17598, -123.14613],
-      WB_PAINT_END,
+      SB_PAINT_END,
     ],
   },
   {
     routeNames: [ROUTES.riverPkwy.name],
-    description: "wb: dedicated",
+    description: "sb: dedicated",
     type: "dedicated",
     oneWay: "required",
     videoIds: [VIDEOS.riverPkwySb.id],
     videoIdsEndAtEnd: [VIDEOS.riverPkwySb.id],
     positions: [
-      WB_PAINT_END,
+      SB_PAINT_END,
       [49.17569, -123.14684],
       [49.17564, -123.14687],
       [49.17543, -123.14732],

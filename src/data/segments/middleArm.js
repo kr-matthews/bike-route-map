@@ -33,12 +33,18 @@ export const MIDDLE_ARM = [
     ],
   },
   {
-    description: "cambie: river pkwy to no. 3",
+    description: "cambie: crossing river pkwy",
     type: "mixed",
     videoIds: [VIDEOS.riverPkwySb.id],
+    positions: [RIVER_PKWY_CAMBIE_SW, RIVER_PKWY_CAMBIE_SE],
+  },
+  {
+    description: "cambie: river pkwy to no. 3",
+    type: "mixed",
+    videoIds: [VIDEOS.riverPkwySb.id, VIDEOS.riverPkwyNb.id],
     videoIdsStartAtEnd: [VIDEOS.riverPkwySb.id],
+    videoIdsEndAtEnd: [VIDEOS.riverPkwyNb.id],
     positions: [
-      RIVER_PKWY_CAMBIE_SW,
       RIVER_PKWY_CAMBIE_SE,
       [49.18449, -123.13733],
       [49.18447, -123.13723],
