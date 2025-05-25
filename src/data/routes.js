@@ -1192,7 +1192,7 @@ export const ROUTES = {
   imperialLandingTrail: {
     name: "Imperial Landing Trail",
     regions: [REGIONS.richmond],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { westbound: VIDEOS.imperialLandingWb } }],
     notes: "A flat shared use path which varies a lot in width.",
   },
   imperialPowerline: {
@@ -2346,9 +2346,9 @@ export const ROUTES = {
   westDyke: {
     name: "West Dyke Trail",
     regions: [REGIONS.richmond],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.westDykeNb } }],
     notes:
-      "Very flat, but the surface varies a lot in quality and is often gravel. It's not clear how to connect to other bike routes in Steveston at the south end.",
+      "Very flat, but the surface is gravel and varies a bit in quality. There's no clear signage on how to connect to other bike routes in Steveston at the south end.",
   },
   westMall: {
     name: "West Mall",

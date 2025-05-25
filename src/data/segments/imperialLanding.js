@@ -23,6 +23,8 @@ export const IMPERIAL_LANDING = [
     description: "steveston - parking lot",
     type: "quiet",
     undesignated: true,
+    videoIds: [VIDEOS.westDykeNb.id, VIDEOS.imperialLandingWb.id],
+    videoIdsStartAtEnd: [VIDEOS.westDykeNb.id],
     positions: [
       WEST_DYKE_CHATHAM,
       [49.12633, -123.19315],
@@ -36,23 +38,27 @@ export const IMPERIAL_LANDING = [
     description: "steveston - seventh",
     type: "quiet",
     undesignated: true,
+    videoIds: [VIDEOS.imperialLandingWb.id],
     positions: [SEVENTH_CHATHAM, SEVENTH_MONCTON_N],
   },
   {
     description: "steveston - moncton path w end",
     type: "mixed",
+    videoIds: [VIDEOS.imperialLandingWb.id],
     positions: [SEVENTH_MONCTON_N, SIXTH_MONCTON_NW],
   },
   {
     description: "steveston - moncton industrial",
     type: "quiet",
     undesignated: true,
+    videoIds: [VIDEOS.imperialLandingWb.id],
     positions: [SIXTH_MONCTON_NW, [49.12524, -123.19017], W_OF_FOURTH_MONCTON],
   },
   {
     description: "steveston - moncton 2nd path",
     type: "mixed",
     undesignated: true,
+    videoIds: [VIDEOS.imperialLandingWb.id],
     positions: [
       W_OF_FOURTH_MONCTON,
       [49.12528, -123.18729],
@@ -67,6 +73,7 @@ export const IMPERIAL_LANDING = [
     description: "steveston - moncton & third",
     type: "quiet",
     undesignated: true,
+    videoIds: [VIDEOS.imperialLandingWb.id],
     positions: [
       W_OF_THIRD_MONCTON,
       [49.12519, -123.18578],
@@ -77,6 +84,7 @@ export const IMPERIAL_LANDING = [
   {
     description: "steveston - bayview",
     type: "quiet",
+    videoIds: [VIDEOS.imperialLandingWb.id],
     positions: [
       THIRD_BAYVIEW,
       [49.12446, -123.18575],
@@ -94,6 +102,8 @@ export const IMPERIAL_LANDING = [
     routeNames: [ROUTES.imperialLandingTrail.name],
     description: "imperial landing",
     type: "mixed",
+    videoIds: [VIDEOS.imperialLandingWb.id],
+    videoIdsStartAtEnd: [VIDEOS.imperialLandingWb.id],
     positions: [
       NO_1_BAYVIEW_SE,
       [49.12378, -123.18103],

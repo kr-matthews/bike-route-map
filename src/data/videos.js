@@ -915,6 +915,12 @@ const VIDEOS = {
     date: new Date("Jul 01 2024"),
     minutes: 5,
   },
+  imperialLandingWb: {
+    id: "ZhZvlvFyYCw",
+    tlId: "g5yQjf1acxQ",
+    date: new Date("May 22 2025"),
+    minutes: 18,
+  },
   imperialPowerlineEb: {
     id: "uIMxmumoE1Q",
     tlId: "ppwMddxwSkI",
@@ -1866,6 +1872,12 @@ const VIDEOS = {
     tlId: "SUJjmGMkTmM",
     date: new Date("Mar 06 2024"),
     minutes: 11,
+  },
+  westDykeNb: {
+    id: "DFH9wqyFK_k",
+    tlId: "9G9_7VpLzy4",
+    date: new Date("May 22 2025"),
+    minutes: 8,
   },
   westMallSb: {
     id: "4G1Dk47fk7E",
