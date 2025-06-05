@@ -15,6 +15,7 @@ import {
   GARDEN_CITY_SEA_ISLAND_SW,
   BRIDGEPORT_TRAIL_VAN_HORNE,
   GARDEN_CITY_SEA_ISLAND_SW_SLIP,
+  GARDEN_CITY_SEA_ISLAND_W_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -250,6 +251,7 @@ export const CANADA_LINE = [
       [49.19077, -123.12483],
       GARDEN_CITY_SEA_ISLAND_SW_SLIP,
       GARDEN_CITY_SEA_ISLAND_SW,
+      GARDEN_CITY_SEA_ISLAND_W_S,
       GREAT_CANADIAN_SEA_ISLAND_NW,
     ],
   },

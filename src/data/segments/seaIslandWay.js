@@ -1,7 +1,8 @@
 import {
-  GARDEN_CITY_SEA_ISLAND_SW_SLIP,
+  GARDEN_CITY_SEA_ISLAND_W_S,
   GRANT_MCCONACHIE_EB_END,
   NO_3_SEA_ISLAND_SW_S_PRE,
+  SEA_ISLAND_WAY_E,
   SEA_ISLAND_WAY_POST_BUS_CONNECTION,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -15,6 +16,8 @@ const SEA_ISLAND_RIVER_SE = [49.19103, -123.13361];
 const NO_3_SEA_ISLAND_SW_SLIP = [49.19086, -123.13084];
 const NO_3_SEA_ISLAND_SE_SLIP = [49.19085, -123.13017];
 const SEA_ISLAND_BEFORE_GARDEN_CITY = [49.1909, -123.12594];
+const GARDEN_CITY_SLIP_START = [49.1909, -123.12353];
+const GARDEN_CITY_SLIP_END = [49.1909, -123.12335];
 
 export const SEA_ISLAND_WAY = [
   {
@@ -159,7 +162,39 @@ export const SEA_ISLAND_WAY = [
     positions: [
       SEA_ISLAND_BEFORE_GARDEN_CITY,
       [49.1909, -123.1249],
-      GARDEN_CITY_SEA_ISLAND_SW_SLIP,
+      GARDEN_CITY_SEA_ISLAND_W_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaIslandWay.name],
+    description: "crossing garden city",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
+      GARDEN_CITY_SEA_ISLAND_W_S,
+      [49.19089, -123.12387],
+      GARDEN_CITY_SLIP_START,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaIslandWay.name],
+    description: "crossing garden city slip",
+    type: "shared",
+    oneWay: "required",
+    hideArrows: true,
+    positions: [GARDEN_CITY_SLIP_START, GARDEN_CITY_SLIP_END],
+  },
+  {
+    routeNames: [ROUTES.seaIslandWay.name],
+    description: "garden city to path",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
+      GARDEN_CITY_SLIP_END,
+      [49.19089, -123.12325],
+      [49.19086, -123.12101],
+      [49.19083, -123.12001],
+      SEA_ISLAND_WAY_E,
     ],
   },
 ];
