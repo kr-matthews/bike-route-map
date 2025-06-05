@@ -3,10 +3,13 @@ import {
   AURORA_MILLER_SW,
   AVIATION_NB_JOIN,
   CESSNA_MILLER_E,
+  MILLER_GRANT_MCCONACHIE,
   RUSS_BAKER_MILLER_NW,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
+const MILLER_MILLER = [49.19115, -123.17522];
 const AVIATION_MILLER_NE_E = [49.1923, -123.16664];
 const AVIATION_GRANT_MCCONACHIE_NE_N = [49.19306, -123.16673];
 const MILLER_AIRSIDE_W = [49.19221, -123.17008];
@@ -17,10 +20,20 @@ const EB_SHOULDER_END = [49.19207, -123.15446];
 export const MILLER = [
   // west end
   {
+    description: "miller at terminal",
+    type: "quiet",
+    undesignated: true,
+    videoIds: [VIDEOS.millerWb.id],
+    videoIdsEndAtStart: [VIDEOS.millerWb.id],
+    positions: [MILLER_GRANT_MCCONACHIE, [49.19119, -123.17562], MILLER_MILLER],
+  },
+  {
     routeNames: [ROUTES.miller.name],
     description: "w end road",
     type: "shared",
+    videoIds: [VIDEOS.millerWb.id],
     positions: [
+      MILLER_MILLER,
       [49.1912, -123.17514],
       [49.19139, -123.17487],
       [49.19147, -123.17469],
@@ -115,6 +128,7 @@ export const MILLER = [
     description: "wb: e end shared",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.millerWb.id],
     positions: [
       CESSNA_MILLER_E,
       [49.19218, -123.14123],
@@ -128,6 +142,7 @@ export const MILLER = [
     description: "wb: russ baker to aviation",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.millerWb.id],
     positions: [
       RUSS_BAKER_MILLER_NW,
       [49.19222, -123.14269],
@@ -163,6 +178,7 @@ export const MILLER = [
     description: "wb: shared",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.millerWb.id],
     positions: [
       AVIATION_MILLER_NE_E,
       [49.19227, -123.16671],

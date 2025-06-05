@@ -105,7 +105,7 @@ export const OAK_STREET_BRIDGE = [
     positions: [[49.19195, -123.12035], BRIDGEPORT_SPLIT],
   },
   {
-    description: "connection with patterson",
+    description: "connection with patterson - N",
     videoIds: [VIDEOS.oakNb.id],
     positions: [
       PATH_PATTERSON,
@@ -115,6 +115,14 @@ export const OAK_STREET_BRIDGE = [
       [49.19069, -123.1181],
       [49.19071, -123.1185],
       [49.19072, -123.11896],
+      SEA_ISLAND_WAY_E,
+    ],
+  },
+  {
+    description: "connection with patterson - S",
+    videoIds: [VIDEOS.oakNb.id, VIDEOS.seaIslandWayEb25.id],
+    videoIdsEndAtEnd: [VIDEOS.seaIslandWayEb25.id],
+    positions: [
       SEA_ISLAND_WAY_E,
       [49.19146, -123.11898],
       [49.19151, -123.11895],

@@ -1037,7 +1037,14 @@ export const ROUTES = {
     name: "Grant McConachie Way",
     shortName: "Grant McConachie",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { westbound: VIDEOS.grantMcConachieWb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.grantMcConachieEb,
+          westbound: VIDEOS.grantMcConachieWb,
+        },
+      },
+    ],
     notes:
       "A very flat shoulder next to heavy traffic. Connect from Arthur Laing bridge via the path. Transition to N Service Rd to reach the actual terminal; this route ends before it gets there.",
   },
@@ -1546,7 +1553,7 @@ export const ROUTES = {
   miller: {
     name: "Miller Rd",
     regions: [REGIONS.richmond],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { westbound: VIDEOS.millerWb } }],
     notes:
       "Very flat. The east portion is quite uncomfortable, especially eastbound.",
   },
@@ -1977,7 +1984,13 @@ export const ROUTES = {
     name: "Sea Island Way",
     regions: [REGIONS.richmond],
     isOneWay: true,
-    legs: [{ videos: { eastbound: VIDEOS.seaIslandWayEb } }],
+    legs: [
+      { videos: { eastbound: VIDEOS.seaIslandWayEb25 } },
+      {
+        name: "Moray Channel Bridge",
+        videos: { eastbound: VIDEOS.seaIslandWayEb },
+      },
+    ],
     notes:
       "Relatively flat, beside fast traffic. Best to access from the path at Miller Rd. The bridge shoulder often has debris. I wouldn't recommend continuing beyond No. 3 Rd.",
   },

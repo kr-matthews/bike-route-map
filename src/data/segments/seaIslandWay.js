@@ -58,7 +58,7 @@ export const SEA_ISLAND_WAY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.seaIslandWayEb.id],
+    videoIds: [VIDEOS.seaIslandWayEb25.id, VIDEOS.seaIslandWayEb.id],
     positions: [
       GRANT_MCCONACHIE_EB_END,
       [49.19285, -123.14515],
@@ -75,7 +75,7 @@ export const SEA_ISLAND_WAY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
-    videoIds: [VIDEOS.seaIslandWayEb.id],
+    videoIds: [VIDEOS.seaIslandWayEb25.id, VIDEOS.seaIslandWayEb.id],
     positions: [SEA_ISLAND_RUSS_BAKER_W, SEA_ISLAND_RUSS_BAKER_E],
   },
   {
@@ -84,7 +84,7 @@ export const SEA_ISLAND_WAY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.seaIslandWayEb.id],
+    videoIds: [VIDEOS.seaIslandWayEb25.id, VIDEOS.seaIslandWayEb.id],
     positions: [
       SEA_ISLAND_RUSS_BAKER_E,
       [49.19256, -123.14093],
@@ -102,7 +102,7 @@ export const SEA_ISLAND_WAY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
-    videoIds: [VIDEOS.seaIslandWayEb.id],
+    videoIds: [VIDEOS.seaIslandWayEb25.id, VIDEOS.seaIslandWayEb.id],
     positions: [SEA_ISLAND_MOREY_W, SEA_ISLAND_MOREY_E],
   },
   {
@@ -111,7 +111,7 @@ export const SEA_ISLAND_WAY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.seaIslandWayEb.id],
+    videoIds: [VIDEOS.seaIslandWayEb25.id, VIDEOS.seaIslandWayEb.id],
     positions: [
       SEA_ISLAND_MOREY_E,
       [49.19107, -123.13375],
@@ -123,7 +123,7 @@ export const SEA_ISLAND_WAY = [
     description: "river to no 3",
     type: "comfortable",
     oneWay: "required",
-    videoIds: [VIDEOS.seaIslandWayEb.id],
+    videoIds: [VIDEOS.seaIslandWayEb25.id, VIDEOS.seaIslandWayEb.id],
     videoIdsEndAtEnd: [VIDEOS.seaIslandWayEb.id],
     positions: [
       SEA_ISLAND_RIVER_SE,
@@ -146,6 +146,7 @@ export const SEA_ISLAND_WAY = [
     description: "no. 3 to almost garden city",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.seaIslandWayEb25.id],
     positions: [
       NO_3_SEA_ISLAND_SE_SLIP,
       [49.19092, -123.12987],
@@ -159,6 +160,7 @@ export const SEA_ISLAND_WAY = [
     description: "right turn lane for garden city",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.seaIslandWayEb25.id],
     positions: [
       SEA_ISLAND_BEFORE_GARDEN_CITY,
       [49.1909, -123.1249],
@@ -170,6 +172,7 @@ export const SEA_ISLAND_WAY = [
     description: "crossing garden city",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.seaIslandWayEb25.id],
     positions: [
       GARDEN_CITY_SEA_ISLAND_W_S,
       [49.19089, -123.12387],
@@ -182,6 +185,7 @@ export const SEA_ISLAND_WAY = [
     type: "shared",
     oneWay: "required",
     hideArrows: true,
+    videoIds: [VIDEOS.seaIslandWayEb25.id],
     positions: [GARDEN_CITY_SLIP_START, GARDEN_CITY_SLIP_END],
   },
   {
@@ -189,6 +193,7 @@ export const SEA_ISLAND_WAY = [
     description: "garden city to path",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [VIDEOS.seaIslandWayEb25.id],
     positions: [
       GARDEN_CITY_SLIP_END,
       [49.19089, -123.12325],

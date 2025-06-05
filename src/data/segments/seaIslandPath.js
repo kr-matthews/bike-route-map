@@ -22,6 +22,7 @@ const TEMPLETON_TERRACE_NE = [49.19034, -123.15052];
 const SEA_ISLAND_PATH_PRE_NO_2_W = [49.17875, -123.1551];
 const LARRY_BERG_PARK_SPLIT = [49.1847, -123.15035];
 const MILLER_PUMP_SPLIT = [49.19219, -123.1393];
+const UNDERNEATH_BRIDGES = [49.19241, -123.13883];
 const AIRPORT_S_END = [49.19373, -123.13903];
 const PRE_TEMPLETON_STATION_SPLIT = [49.19565, -123.13979];
 const SPLIT_TO_SEA_ISLAND_WAY = [49.19234, -123.14002];
@@ -82,6 +83,7 @@ export const SEA_ISLAND_PATH = [
   {
     description: "miller connection 2",
     type: "mixed",
+    videoIds: [VIDEOS.millerWb.id],
     positions: [
       CESSNA_MILLER_E,
       [49.19232, -123.14021],
@@ -278,16 +280,26 @@ export const SEA_ISLAND_PATH = [
   },
   {
     routeNames: [ROUTES.seaIslandPath.name],
-    description: "miller pump to airport rd",
+    description: "miller pump to under bridges",
     type: "mixed",
-    videoIds: [VIDEOS.seaIslandPathNb.id],
+    videoIds: [VIDEOS.seaIslandPathNb.id, VIDEOS.millerWb.id],
+    videoIdsStartAtEnd: [VIDEOS.millerWb.id],
     positions: [
       MILLER_PUMP_SPLIT,
       [49.19218, -123.13912],
       [49.19221, -123.13899],
       [49.19225, -123.13893],
       [49.19234, -123.13886],
-      [49.19241, -123.13883],
+      UNDERNEATH_BRIDGES,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaIslandPath.name],
+    description: "under bridges to airport rd",
+    type: "mixed",
+    videoIds: [VIDEOS.seaIslandPathNb.id],
+    positions: [
+      UNDERNEATH_BRIDGES,
       [49.19253, -123.13871],
       [49.19274, -123.1386],
       [49.19283, -123.13857],

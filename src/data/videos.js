@@ -773,6 +773,11 @@ const VIDEOS = {
     date: new Date("May 25 2024"),
     minutes: 13,
   },
+  grantMcConachieEb: {
+    id: "1P-bpc04h-Y",
+    date: new Date("May 27 2025"),
+    minutes: 5,
+  },
   grantMcConachieWb: {
     id: "Uev_ctsSHdg",
     tlId: "GeMCjnh1GvE",
@@ -1135,6 +1140,12 @@ const VIDEOS = {
     tlId: "pD2ScnGdPcs",
     date: new Date("Jun 10 2023"),
     minutes: 45,
+  },
+  millerWb: {
+    id: "11zYtX_Qujk",
+    tlId: "CTtGa3RmOTw",
+    date: new Date("May 27 2025"),
+    minutes: 9,
   },
   mosaicNb: {
     id: "ptiQwQyVDsM",
@@ -1500,6 +1511,12 @@ const VIDEOS = {
     id: "wSwMTjMlKt4",
     date: new Date("Aug 19 2023"),
     minutes: 3,
+  },
+  seaIslandWayEb25: {
+    id: "cwO2BW0jcGg",
+    tlId: "YlhpgmETjns",
+    date: new Date("May 27 2025"),
+    minutes: 7,
   },
   seasideBypassBeachEb: {
     id: "YSaFqtytCxY",
