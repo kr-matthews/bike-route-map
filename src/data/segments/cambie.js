@@ -14,6 +14,8 @@ import {
   CAMBIE_MARINE_NE,
   CAMBIE_PENDER_NE,
   CAMBIE_PENDER_SE,
+  CAMBIE_WATER_N,
+  CAMBIE_WATER_S,
   HEATHER_33RD_N,
   ONTARIO_42ND,
 } from "../intersections";
@@ -68,7 +70,8 @@ export const CAMBIE = [
       [49.28251, -123.10949],
       [49.28347, -123.10908],
       [49.2842, -123.10878],
-      [49.28427, -123.10877],
+      CAMBIE_WATER_S,
+      CAMBIE_WATER_N,
     ],
   },
 

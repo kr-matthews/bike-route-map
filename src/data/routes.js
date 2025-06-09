@@ -2342,6 +2342,13 @@ export const ROUTES = {
     notes:
       "Some minor hills. 'Built' as an alternative to Earles St, which is part of Midtown and Sunrise. Pedestrians often walk in the path along Kingsway. It should definitely access 29th Ave Station via Duchess St, but instead goes way out of the way to Todd St - especially annoying if you want to use Sunrise.",
   },
+  water: {
+    name: "Water St",
+    regions: [REGIONS.vancouver],
+    legs: [{ videos: {} }],
+    notes:
+      "Bike 'infrastructure' (mostly paint) added May 2025 as part of car-free days pilot for summer 2025.",
+  },
   waterfront: {
     name: "Waterfront St",
     regions: [REGIONS.vancouver],
