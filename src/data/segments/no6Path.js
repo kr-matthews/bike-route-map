@@ -5,6 +5,9 @@ import {
 } from "../intersections";
 import { ROUTES } from "../routes";
 
+const NO_6_COMMERCE_SW = [49.17618, -123.06931];
+const NO_6_CAMBIE_NW = [49.18483, -123.06926];
+
 export const NO_6_PATH = [
   {
     routeNames: [ROUTES.no6Path.name, ROUTES.westminsterHwy.name],
@@ -31,7 +34,21 @@ export const NO_6_PATH = [
       [49.17259, -123.06931],
       [49.17311, -123.06931],
       [49.17375, -123.06935],
-      [49.17618, -123.06931],
+      NO_6_COMMERCE_SW,
+    ],
+  },
+  {
+    description: "no. 6 gap",
+    type: "shared",
+    undesignated: true,
+    positions: [
+      NO_6_COMMERCE_SW,
+
+      [49.17632, -123.06919],
+      [49.17954, -123.06917],
+      [49.18166, -123.06915],
+      [49.18472, -123.06913],
+      NO_6_CAMBIE_NW,
     ],
   },
   {
@@ -39,7 +56,7 @@ export const NO_6_PATH = [
     description: "north section",
     type: "mixed",
     positions: [
-      [49.18483, -123.06926],
+      NO_6_CAMBIE_NW,
       [49.18631, -123.06928],
       [49.18638, -123.06926],
       [49.18677, -123.06926],
@@ -48,7 +65,7 @@ export const NO_6_PATH = [
       [49.19126, -123.06933],
       [49.19142, -123.06937],
       [49.19179, -123.06937],
-      [49.19189, -123.06936],
+      // [49.19189, -123.06936], // just a sidewalk
     ],
   },
 ];
