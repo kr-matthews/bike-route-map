@@ -9,6 +9,9 @@ import { ROUTES } from "../routes";
 
 const MINORU_ACKROYD_SE = [49.1719, -123.14008];
 const MINORU_ACKROYD_E = [49.17202, -123.1401];
+
+const MINORU_MINORU_GATEWAY = [49.16422, -123.1401];
+const MINORU_MURDOCH = [49.16705, -123.14034];
 const NB_POST_ACKROYD = [49.17269, -123.14012];
 const MINORU_LANSDOWNE_NE = [49.17397, -123.1401];
 const MINORU_LANSDOWNE_NW = [49.17398, -123.14028];
@@ -61,13 +64,22 @@ export const MINORU = [
 
   {
     routeNames: [ROUTES.minoru.name],
-    description: "nb: granville to ackroyd",
+    description: "nb: granville to separated",
     type: "painted",
     oneWay: "required",
     positions: [
       MINORU_GRANVILLE_NE,
       [49.16397, -123.14008],
-      [49.16422, -123.1401],
+      MINORU_MINORU_GATEWAY,
+    ],
+  },
+  {
+    routeNames: [ROUTES.minoru.name],
+    description: "nb: separated",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      MINORU_MINORU_GATEWAY,
       [49.16433, -123.14014],
       [49.16449, -123.14023],
       [49.16469, -123.14039],
@@ -80,7 +92,16 @@ export const MINORU = [
       [49.16623, -123.14096],
       [49.16652, -123.14082],
       [49.16675, -123.14063],
-      [49.16705, -123.14034],
+      MINORU_MURDOCH,
+    ],
+  },
+  {
+    routeNames: [ROUTES.minoru.name],
+    description: "nb: separated to ackroyd",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      MINORU_MURDOCH,
       [49.16728, -123.14016],
       [49.16748, -123.14008],
       [49.16772, -123.14005],
