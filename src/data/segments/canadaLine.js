@@ -230,8 +230,9 @@ export const CANADA_LINE = [
   {
     description: "patterson west of garden city",
     type: "mixed",
-    videoIds: [VIDEOS.canadaLineSb.id],
+    videoIds: [VIDEOS.canadaLineNb.id, VIDEOS.canadaLineSb.id],
     videoIdsEndAtStart: [VIDEOS.canadaLineSb.id],
+    videoIdsStartAtStart: [VIDEOS.canadaLineNb.id],
     positions: [
       [49.1902, -123.12582],
       [49.19025, -123.12555],
@@ -243,7 +244,12 @@ export const CANADA_LINE = [
     routeNames: [ROUTES.canadaLine.name],
     type: "mixed",
     description: "path: patterson to sea island nw",
-    videoIds: [VIDEOS.canadaLineSb.id, VIDEOS.gardenCitySb.id, VIDEOS.oakSb.id],
+    videoIds: [
+      VIDEOS.canadaLineNb.id,
+      VIDEOS.canadaLineSb.id,
+      VIDEOS.gardenCitySb.id,
+      VIDEOS.oakSb.id,
+    ],
     videoIdsEndAtStart: [VIDEOS.oakSb.id],
     positions: [
       GARDEN_CITY_SB_START,
@@ -259,7 +265,11 @@ export const CANADA_LINE = [
     routeNames: [ROUTES.canadaLine.name],
     type: "mixed",
     description: "path: sea island nw to bridgeport",
-    videoIds: [VIDEOS.canadaLineSb.id, VIDEOS.gardenCitySb.id],
+    videoIds: [
+      VIDEOS.canadaLineNb.id,
+      VIDEOS.canadaLineSb.id,
+      VIDEOS.gardenCitySb.id,
+    ],
     positions: [
       GREAT_CANADIAN_SEA_ISLAND_NW,
       [49.19124, -123.12472],
@@ -272,7 +282,7 @@ export const CANADA_LINE = [
     routeNames: [ROUTES.canadaLine.name],
     type: "mixed",
     description: "path: great canadian from bridgeport",
-    videoIds: [VIDEOS.canadaLineSb.id],
+    videoIds: [VIDEOS.canadaLineNb.id, VIDEOS.canadaLineSb.id],
     positions: [
       CANADA_LINE_PATH_BRIDGEPORT_S,
       [49.19212, -123.12459],
@@ -288,7 +298,11 @@ export const CANADA_LINE = [
     routeNames: [ROUTES.canadaLine.name],
     description: "path: van horne",
     type: "mixed",
-    videoIds: [VIDEOS.canadaLineSb.id, VIDEOS.northArmBridgeNb.id],
+    videoIds: [
+      VIDEOS.canadaLineNb.id,
+      VIDEOS.canadaLineSb.id,
+      VIDEOS.northArmBridgeNb.id,
+    ],
     videoIdsStartAtStart: [VIDEOS.northArmBridgeNb.id],
     positions: [
       GREAT_CANADIAN_VAN_HORNE_SE,
@@ -306,6 +320,7 @@ export const CANADA_LINE = [
     description: "crossing river dr at bridge",
     type: "mixed",
     videoIds: [
+      VIDEOS.canadaLineNb.id,
       VIDEOS.canadaLineSb.id,
       VIDEOS.northArmBridgeNb.id,
       VIDEOS.riverDrPathEb.id,
@@ -322,6 +337,7 @@ export const CANADA_LINE = [
     videoIds: [
       VIDEOS.northArmBridgeNb.id,
       VIDEOS.northArmBridgeSb.id,
+      VIDEOS.canadaLineNb.id,
       VIDEOS.canadaLineSb.id,
       VIDEOS.riverDrPathEb.id,
     ],
@@ -344,6 +360,7 @@ export const CANADA_LINE = [
     videoIds: [
       VIDEOS.northArmBridgeNb.id,
       VIDEOS.northArmBridgeSb.id,
+      VIDEOS.canadaLineNb.id,
       VIDEOS.canadaLineSb.id,
     ],
     positions: [
@@ -366,6 +383,7 @@ export const CANADA_LINE = [
     videoIds: [
       VIDEOS.northArmBridgeNb.id,
       VIDEOS.northArmBridgeSb.id,
+      VIDEOS.canadaLineNb.id,
       VIDEOS.canadaLineSb.id,
     ],
     positions: [SPIRAL_MIDPOINT_1, SPIRAL_MIDPOINT_2],
@@ -378,6 +396,7 @@ export const CANADA_LINE = [
     videoIds: [
       VIDEOS.northArmBridgeNb.id,
       VIDEOS.northArmBridgeSb.id,
+      VIDEOS.canadaLineNb.id,
       VIDEOS.canadaLineSb.id,
     ],
     positions: [SPIRAL_MIDPOINT_2, [49.20552, -123.11761], SPIRAL_MIDPOINT_3],
@@ -390,6 +409,7 @@ export const CANADA_LINE = [
     videoIds: [
       VIDEOS.northArmBridgeNb.id,
       VIDEOS.northArmBridgeSb.id,
+      VIDEOS.canadaLineNb.id,
       VIDEOS.canadaLineSb.id,
     ],
     positions: [SPIRAL_MIDPOINT_3, SPIRAL_MIDPOINT_4],
@@ -402,6 +422,7 @@ export const CANADA_LINE = [
     videoIds: [
       VIDEOS.northArmBridgeNb.id,
       VIDEOS.northArmBridgeSb.id,
+      VIDEOS.canadaLineNb.id,
       VIDEOS.canadaLineSb.id,
     ],
     positions: [
@@ -421,6 +442,7 @@ export const CANADA_LINE = [
       VIDEOS.northArmBridgeNb.id,
       VIDEOS.northArmBridgeSb.id,
       VIDEOS.cambieNb.id,
+      VIDEOS.canadaLineNb.id,
       VIDEOS.canadaLineSb.id,
     ],
     videoIdsStartAtStart: [VIDEOS.cambieNb.id],
@@ -447,7 +469,11 @@ export const CANADA_LINE = [
     routeNames: [ROUTES.canadaLine.name],
     description: "kent to marine",
     type: "dedicated",
-    videoIds: [VIDEOS.canadaLineSb.id, VIDEOS.cambieNb.id],
+    videoIds: [
+      VIDEOS.canadaLineSb.id,
+      VIDEOS.canadaLineNb.id,
+      VIDEOS.cambieNb.id,
+    ],
     positions: [
       CAMBIE_KENT_N_NE,
       [49.20634, -123.11728],
@@ -466,7 +492,7 @@ export const CANADA_LINE = [
     routeNames: [ROUTES.canadaLine.name],
     description: "marine to 63rd",
     type: "dedicated",
-    videoIds: [VIDEOS.canadaLineSb.id],
+    videoIds: [VIDEOS.canadaLineSb.id, VIDEOS.canadaLineNb.id],
     positions: [
       CAMBIE_MARINE_NE,
       [49.21059, -123.11695],
@@ -478,7 +504,12 @@ export const CANADA_LINE = [
     routeNames: [ROUTES.canadaLine.name],
     description: "63rd to 64th",
     type: "dedicated",
-    videoIds: [VIDEOS.canadaLineSb.id, VIDEOS.sixtySeventhPlusWb.id],
+    videoIds: [
+      VIDEOS.canadaLineSb.id,
+      VIDEOS.canadaLineNb.id,
+      VIDEOS.sixtySeventhPlusWb.id,
+    ],
+    videoIdsEndAtEnd: [VIDEOS.canadaLineNb.id],
     positions: [CAMBIE_PATH_64TH, CAMBIE_PATH_63RD],
   },
   {

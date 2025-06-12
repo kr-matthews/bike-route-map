@@ -344,6 +344,12 @@ const VIDEOS = {
     date: new Date("Aug 21 2023"),
     minutes: 2,
   },
+  canadaLineNb: {
+    id: "yOe6Nf2nOwI",
+    tlId: "jJOtJRBVgYI",
+    date: new Date("Jun 04 2025"),
+    minutes: 14,
+  },
   canadaLineSb: {
     id: "svcADiqZWQM",
     tlId: "IK9_01wyK4w",
@@ -1147,6 +1153,12 @@ const VIDEOS = {
     date: new Date("May 27 2025"),
     minutes: 9,
   },
+  minoruNb: {
+    id: "qxA4lzWfT0I",
+    tlId: "QMsCBYoJ9S0",
+    date: new Date("Jun 04 2025"),
+    minutes: 6,
+  },
   mosaicNb: {
     id: "ptiQwQyVDsM",
     tlId: "jCRYUsd4FlQ",
@@ -1231,6 +1243,12 @@ const VIDEOS = {
     tlId: "KOHAekjQQGo",
     date: new Date("Jun 10 2024"),
     minutes: 14,
+  },
+  no6PathSb: {
+    id: "SezPsVMSQx4",
+    tlId: "fhpRK5ezSms",
+    date: new Date("Jun 04 2025"),
+    minutes: 7,
   },
   northSouthNb: {
     id: "M8ui0DygAv4",

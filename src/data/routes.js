@@ -550,7 +550,12 @@ export const ROUTES = {
     name: "Canada Line Path",
     regions: [REGIONS.vancouver, REGIONS.richmond],
     legs: [
-      { videos: { southbound: VIDEOS.canadaLineSb } },
+      {
+        videos: {
+          northbound: VIDEOS.canadaLineNb,
+          southbound: VIDEOS.canadaLineSb,
+        },
+      },
       {
         name: "North Arm Bridge",
         videos: {
@@ -1560,7 +1565,7 @@ export const ROUTES = {
   minoru: {
     name: "Minoru Blvd",
     regions: [REGIONS.richmond],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.minoruNb } }],
     notes:
       "Very flat, lots of traffic. The painted lanes are beside the curb. The painted lanes may be closed at CF Richmond Center due to construction.",
   },
@@ -1649,7 +1654,7 @@ export const ROUTES = {
   no6Path: {
     name: "No. 6 Rd Path",
     regions: [REGIONS.richmond],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.no6PathSb } }],
     notes:
       "A couple of brief shared use paths, which don't connect to each other, nor anything else really besides Westminster Hwy at the south end.",
   },
