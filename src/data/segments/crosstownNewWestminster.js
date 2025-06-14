@@ -14,8 +14,12 @@ import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 const BC_PARKWAY_22ND_STATION = [49.20009, -122.94948];
+const BC_PARKWAY_22ND_STATION_N = [49.20012, -122.94953];
 const TWENTIETH_7TH_E_N = [49.20162, -122.94669];
 const TWENTIETH_7TH_E_S = [49.20136, -122.94635];
+const TWENTIETH_7TH_N = [49.20165, -122.94674];
+const TWENTIETH_7TH_N_N = [49.20172, -122.9467];
+const BOWLER_7TH = [49.20184, -122.94544];
 const EIGHTH_7TH_W = [49.21243, -122.92577];
 const PRE_OVERPASS_W = [49.22112, -122.91061];
 const MCBRIDE_OVERPASS_W = [49.22113, -122.91066];
@@ -119,9 +123,14 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
       [49.19973, -122.95081],
       [49.19995, -122.94992],
       [49.20004, -122.9497],
-      [49.20012, -122.94953],
-      BC_PARKWAY_22ND_STATION,
+      BC_PARKWAY_22ND_STATION_N,
     ],
+  },
+  {
+    description: "from seventh path back to road",
+    type: "mixed",
+    videoIds: [VIDEOS.bcParkway22ndStation.id, VIDEOS.crosstownNWEb.id],
+    positions: [BC_PARKWAY_22ND_STATION_N, BC_PARKWAY_22ND_STATION],
   },
   {
     description: "grimston park alt: sidewalk",
@@ -184,7 +193,6 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     positions: [TWENTY_THIRD_7TH, BC_PARKWAY_7TH],
   },
   {
-    routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "west bit between bc parkways",
     type: "shared",
     positions: [
@@ -194,9 +202,9 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     ],
   },
   {
-    routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "bc parkway curve to 20th",
     type: "shared",
+    undesignated: true,
     videoIds: [VIDEOS.bcParkway22ndStation.id, VIDEOS.crosstownNWEb.id],
     positions: [
       BC_PARKWAY_22ND_STATION,
@@ -204,6 +212,36 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
       [49.20152, -122.94687],
       TWENTIETH_7TH_E_N,
     ],
+  },
+  {
+    routeNames: [ROUTES.crosstownNewWestminster.name],
+    description: "lanes along seventh",
+    // partially mixed, partially dedicated
+    type: "comfortable",
+    positions: [
+      BC_PARKWAY_22ND_STATION_N,
+      [49.20027, -122.94929],
+      [49.20032, -122.94922],
+      TWENTIETH_7TH_N,
+    ],
+  },
+  {
+    routeNames: [ROUTES.crosstownNewWestminster.name],
+    description: "north tip of narrow sidewalk on 20th",
+    type: "other",
+    positions: [TWENTIETH_7TH_N, TWENTIETH_7TH_E_N],
+  },
+  {
+    routeNames: [ROUTES.crosstownNewWestminster.name],
+    description: "alt through alley at 20th, 1",
+    type: "mixed",
+    positions: [TWENTIETH_7TH_N, TWENTIETH_7TH_N_N],
+  },
+  {
+    routeNames: [ROUTES.crosstownNewWestminster.name],
+    description: "alt through alley at 20th, 2",
+    type: "quiet",
+    positions: [TWENTIETH_7TH_N_N, [49.20217, -122.94587], BOWLER_7TH],
   },
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],
@@ -220,7 +258,7 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     positions: [
       TWENTIETH_7TH_E_S,
       [49.20141, -122.94623],
-      [49.20184, -122.94544],
+      BOWLER_7TH,
       [49.20253, -122.94417],
       [49.20361, -122.94216],
       [49.20448, -122.94055],
