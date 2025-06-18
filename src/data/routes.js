@@ -1552,7 +1552,7 @@ export const ROUTES = {
   millenniumTrail: {
     name: "Millennium Trail",
     regions: [REGIONS.newWestminster],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.millenniumSb } }],
     notes: "Lots of hills.",
   },
   miller: {

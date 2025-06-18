@@ -17,7 +17,8 @@ export const MILLENNIUM_TRAIL = [
   {
     description: "connection from pattullo bridge to agnes",
     type: "quiet",
-    videoIds: [VIDEOS.agnesEb.id],
+    videoIds: [VIDEOS.millenniumSb.id, VIDEOS.agnesEb.id],
+    videoIdsEndAtStart: [VIDEOS.millenniumSb.id],
     positions: [
       PATTULLO_ALBERT,
       [49.20884, -122.90003],
@@ -33,6 +34,7 @@ export const MILLENNIUM_TRAIL = [
   {
     description: "connection from agnes via first",
     type: "quiet",
+    videoIds: [VIDEOS.millenniumSb.id],
     positions: [
       FIRST_AGNES,
       [49.20958, -122.90229],
@@ -48,6 +50,7 @@ export const MILLENNIUM_TRAIL = [
     routeNames: [ROUTES.millenniumTrail.name],
     description: "main trail",
     type: "mixed",
+    videoIds: [VIDEOS.millenniumSb.id],
     positions: [
       GRANVILLE_VANCOUVER_S,
       [49.21175, -122.90283],
@@ -121,6 +124,8 @@ export const MILLENNIUM_TRAIL = [
   {
     description: "continue to crosstown",
     type: "mixed",
+    videoIds: [VIDEOS.millenniumSb.id],
+    videoIdsStartAtEnd: [VIDEOS.millenniumSb.id],
     positions: [
       MILLENNIUM_TRAIL_NE_S,
       MILLENNIUM_TRAIL_NE,

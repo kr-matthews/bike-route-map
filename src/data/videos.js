@@ -1147,6 +1147,12 @@ const VIDEOS = {
     date: new Date("Jun 10 2023"),
     minutes: 45,
   },
+  millenniumSb: {
+    id: "AfnrDXu0pTw",
+    tlId: "HXP_6ywV2nU",
+    date: new Date("Jun 13 2025"),
+    minutes: 7,
+  },
   millerWb: {
     id: "11zYtX_Qujk",
     tlId: "CTtGa3RmOTw",
