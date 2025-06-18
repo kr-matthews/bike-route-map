@@ -1894,6 +1894,16 @@ const VIDEOS = {
     date: new Date("Aug 26 2023"),
     minutes: 7,
   },
+  waterEb: {
+    id: "KfewgZVdO8M",
+    date: new Date("Jun 16 2025"),
+    minutes: 2,
+  },
+  waterWb: {
+    id: "hMXuXcMGmfA",
+    date: new Date("Jun 16 2025"),
+    minutes: 2,
+  },
   waterfrontEb: {
     id: "TUIhsGIyJdI",
     date: new Date("Oct 22 2023"),

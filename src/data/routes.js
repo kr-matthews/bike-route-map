@@ -2350,7 +2350,9 @@ export const ROUTES = {
   water: {
     name: "Water St",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: {} }],
+    legs: [
+      { videos: { eastbound: VIDEOS.waterEb, westbound: VIDEOS.waterWb } },
+    ],
     notes:
       "Bike 'infrastructure' (mostly paint) added May 2025 as part of car-free days pilot for summer 2025.",
   },
