@@ -361,7 +361,11 @@ export const BC_PARKWAY = [
     routeNames: [ROUTES.bcParkway.name, ROUTES.sunrise.name],
     description: "29th path",
     type: "mixed",
-    videoIds: [VIDEOS.bcParkwayVancouverEb.id, VIDEOS.bcParkwayVancouverWb.id],
+    videoIds: [
+      VIDEOS.bcParkwayVancouverEb.id,
+      VIDEOS.bcParkwayVancouverWb.id,
+      VIDEOS.sunriseSb.id,
+    ],
     positions: [
       SLOCAN_29TH,
       [49.24452, -123.04957],
@@ -377,6 +381,7 @@ export const BC_PARKWAY = [
       VIDEOS.bcParkway29thStation.id,
       VIDEOS.bcParkwayVancouverEb.id,
       VIDEOS.bcParkwayVancouverWb.id,
+      VIDEOS.sunriseSb.id,
       VIDEOS.sunriseNb.id,
     ],
     positions: [
@@ -394,6 +399,7 @@ export const BC_PARKWAY = [
       VIDEOS.bcParkway29thStation.id,
       VIDEOS.bcParkwayVancouverEb.id,
       VIDEOS.bcParkwayVancouverWb.id,
+      VIDEOS.sunriseSb.id,
       VIDEOS.sunriseNb.id,
     ],
     videoIdsStartAtEnd: [VIDEOS.bcParkway29thStation.id],
@@ -406,6 +412,7 @@ export const BC_PARKWAY = [
     videoIds: [
       VIDEOS.bcParkwayVancouverEb.id,
       VIDEOS.bcParkwayVancouverWb.id,
+      VIDEOS.sunriseSb.id,
       VIDEOS.sunriseNb.id,
     ],
     positions: [TODD_VANNESS, EARLES_VANNESS],

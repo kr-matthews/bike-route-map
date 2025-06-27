@@ -193,7 +193,7 @@ export const ADANAC = [
     routeNames: [ROUTES.adanac.name, ROUTES.sunrise.name],
     description: "sunrise",
     type: "quiet",
-    videoIds: [VIDEOS.adanacWb.id, VIDEOS.sunriseNb.id],
+    videoIds: [VIDEOS.adanacWb.id, VIDEOS.sunriseSb.id, VIDEOS.sunriseNb.id],
     positions: [SLOCAN_ADANAC, KASLO_ADANAC],
   },
   {

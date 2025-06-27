@@ -245,6 +245,7 @@ export const RIDGEWAY = [
       VIDEOS.fortyFifthWb.id,
       VIDEOS.fortyFifthEb.id,
       VIDEOS.sunriseNb.id,
+      VIDEOS.sunriseSb.id,
     ],
     positions: [VIVIAN_45TH, EARLES_45TH],
   },

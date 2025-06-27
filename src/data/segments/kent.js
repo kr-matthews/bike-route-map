@@ -246,7 +246,7 @@ export const KENT = [
     routeNames: [ROUTES.kent.name],
     description: "kent n: elliott bit",
     type: "quiet",
-    videoIds: [VIDEOS.sunriseNb.id],
+    videoIds: [VIDEOS.sunriseNb.id, VIDEOS.sunriseSb.id],
     positions: [ELLIOTT_KENT_W, ELLIOTT_KENT],
   },
   {
@@ -305,6 +305,7 @@ export const KENT = [
       VIDEOS.kentWb.id,
       VIDEOS.fraserRiverFraserviewEb.id,
       VIDEOS.sunriseNb.id,
+      VIDEOS.sunriseSb.id,
     ],
     positions: [ELLIOTT_KENT_W, [49.20575, -123.05698], ELLIOTT_KENT_PATH],
   },

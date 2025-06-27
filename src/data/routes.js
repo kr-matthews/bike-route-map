@@ -2225,7 +2225,11 @@ export const ROUTES = {
   sunrise: {
     name: "Sunrise",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { northbound: VIDEOS.sunriseNb } }],
+    legs: [
+      {
+        videos: { northbound: VIDEOS.sunriseNb, southbound: VIDEOS.sunriseSb },
+      },
+    ],
     notes:
       "Several steep hills. There are multiple busy/uncomfortable sections, such as Elliott St, Earles St, and (parts of) Slocan St. You can skip around Earles St via Wales Duchess.",
   },

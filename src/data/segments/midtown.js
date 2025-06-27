@@ -295,7 +295,11 @@ export const MIDTOWN = [
     routeNames: [ROUTES.midtown.name, ROUTES.sunrise.name],
     description: "earles",
     type: "shared",
-    videoIds: [VIDEOS.midtownVancouverEb.id, VIDEOS.sunriseNb.id],
+    videoIds: [
+      VIDEOS.midtownVancouverEb.id,
+      VIDEOS.sunriseNb.id,
+      VIDEOS.sunriseSb.id,
+    ],
     positions: [
       KINGSWAY_EARLES,
       [49.23977, -123.04681],

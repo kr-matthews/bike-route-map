@@ -1734,6 +1734,12 @@ const VIDEOS = {
     date: new Date("Aug 26 2023"),
     minutes: 34,
   },
+  sunriseSb: {
+    id: "G9fBk4g6HKA",
+    tlId: "4C79U1gJn2o",
+    date: new Date("Jun 10 2025"),
+    minutes: 37,
+  },
   swMarineEb: {
     id: "l-DWh9zHOAo",
     tlId: "mCoAd95hyiQ",

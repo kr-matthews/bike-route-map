@@ -237,8 +237,13 @@ export const FRASER_RIVER_TRAIL = [
     routeNames: [ROUTES.fraserRiverTrail.name],
     description: "river district - near elliott",
     type: "other",
-    videoIds: [VIDEOS.fraserRiverFraserviewEb.id, VIDEOS.sunriseNb.id],
+    videoIds: [
+      VIDEOS.fraserRiverFraserviewEb.id,
+      VIDEOS.sunriseNb.id,
+      VIDEOS.sunriseSb.id,
+    ],
     videoIdsStartAtEnd: [VIDEOS.sunriseNb.id],
+    videoIdsEndAtEnd: [VIDEOS.sunriseSb.id],
     positions: [
       ELLIOTT_KENT_PATH,
       [49.20571, -123.05676],
