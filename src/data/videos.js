@@ -1427,6 +1427,12 @@ const VIDEOS = {
     date: new Date("Mar 13 2024"),
     minutes: 3,
   },
+  railwayNb: {
+    id: "nezDB-Z7ftA",
+    tlId: "qY1oGzQ2uQk",
+    date: new Date("Jun 24, 2025"),
+    minutes: 13,
+  },
   railwaySb: {
     id: "JH3I1cTX42U",
     tlId: "7jXGQY7wBW8",

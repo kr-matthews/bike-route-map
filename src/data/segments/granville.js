@@ -116,9 +116,11 @@ export const GRANVILLE = [
   },
   {
     routeNames: [ROUTES.granville.name],
-    description: "primary eb",
+    description: "eb: railway to lynas",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.railwayNb.id],
+    videoIdsEndAtEnd: [VIDEOS.railwayNb.id],
     positions: [
       RAILWAY_GRANVILLE_SE,
       [49.16241, -123.16883],
@@ -127,6 +129,15 @@ export const GRANVILLE = [
       [49.16259, -123.16816],
       [49.16262, -123.1679],
       [49.16264, -123.16766],
+      LYNAS_GRANVILLE_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.granville.name],
+    description: "primary eb: from lynas",
+    type: "painted",
+    oneWay: "required",
+    positions: [
       LYNAS_GRANVILLE_S,
       [49.16264, -123.15885],
       [49.16263, -123.1519],

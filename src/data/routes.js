@@ -1865,7 +1865,11 @@ export const ROUTES = {
   railway: {
     name: "Railway Ave",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { southbound: VIDEOS.railwaySb } }],
+    legs: [
+      {
+        videos: { northbound: VIDEOS.railwayNb, southbound: VIDEOS.railwaySb },
+      },
+    ],
     notes:
       "Very flat. The painted lanes are beside the curb. Might as well use Railway Greenway, though that has a speed limit of 15 km/h, and briefly disappears in Steveston.",
   },

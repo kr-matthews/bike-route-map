@@ -149,7 +149,8 @@ export const IMPERIAL_LANDING = [
   {
     description: "westwater s of railway",
     type: "quiet",
-    videoIds: [VIDEOS.railwaySb.id],
+    videoIds: [VIDEOS.railwayNb.id, VIDEOS.railwaySb.id],
+    videoIdsStartAtStart: [VIDEOS.railwayNb.id],
     videoIdsEndAtStart: [VIDEOS.railwaySb.id],
     positions: [WESTWATER_IMPERIAL, RAILWAY_WESTWATER],
   },

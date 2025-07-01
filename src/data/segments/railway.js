@@ -50,7 +50,7 @@ export const RAILWAY = [
     routeNames: [ROUTES.railway.name],
     description: "railway ave quiet",
     type: "quiet",
-    videoIds: [VIDEOS.railwaySb.id],
+    videoIds: [VIDEOS.railwayNb.id, VIDEOS.railwaySb.id],
     positions: [
       RAILWAY_WESTWATER,
       [49.12258, -123.17127],
@@ -73,6 +73,7 @@ export const RAILWAY = [
     description: "nb: pre-moncton to steveston",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.railwayNb.id],
     positions: [
       RAILWAY_PAINTED_S,
       [49.12474, -123.16969],
@@ -90,6 +91,7 @@ export const RAILWAY = [
     description: "nb: pre-steveston",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.railwayNb.id],
     positions: [NB_PRE_STEVESTON, RAILWAY_STEVESTON_SE],
   },
   {
@@ -97,6 +99,7 @@ export const RAILWAY = [
     description: "nb: steveston to williams",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.railwayNb.id],
     positions: [
       RAILWAY_STEVESTON_SE,
       [49.13383, -123.16973],
@@ -111,6 +114,7 @@ export const RAILWAY = [
     description: "nb: pre-williams",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.railwayNb.id],
     positions: [NB_PRE_WILLIAMS, RAILWAY_WILLIAMS_SE, RAILWAY_WILLIAMS_NE],
   },
   {
@@ -118,6 +122,7 @@ export const RAILWAY = [
     description: "nb: williams to francis",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.railwayNb.id],
     positions: [
       RAILWAY_WILLIAMS_NE,
       RAILWAY_WOODWARDS_E,
@@ -130,6 +135,7 @@ export const RAILWAY = [
     description: "nb: pre-francis",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.railwayNb.id],
     positions: [NB_PRE_FRANCIS, RAILWAY_FRANCIS_SE],
   },
   {
@@ -137,6 +143,7 @@ export const RAILWAY = [
     description: "nb: francis to blundell",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.railwayNb.id],
     positions: [RAILWAY_FRANCIS_SE, RAILWAY_COLBECK_E, NB_PRE_BLUNDELL],
   },
   {
@@ -144,6 +151,7 @@ export const RAILWAY = [
     description: "nb: blundell",
     type: "shared",
     oneWay: "required",
+    videoIds: [VIDEOS.railwayNb.id],
     positions: [NB_PRE_BLUNDELL, [49.15567, -123.16977], NB_POST_BLUNDELL],
   },
   {
@@ -151,6 +159,7 @@ export const RAILWAY = [
     description: "nb: blundell to granville",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.railwayNb.id],
     positions: [
       NB_POST_BLUNDELL,
       [49.16033, -123.16976],
