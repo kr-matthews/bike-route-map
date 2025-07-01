@@ -2046,6 +2046,12 @@ export const ROUTES = {
         name: "Pacific/Expo",
         videos: {
           eastbound: VIDEOS.seasideBypassPacificEb,
+          westbound: VIDEOS.seasideBypassExpoWb25,
+        },
+      },
+      {
+        name: "Pacific/Expo (Old)",
+        videos: {
           westbound: VIDEOS.seasideBypassExpoWb,
         },
       },

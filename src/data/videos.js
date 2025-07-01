@@ -1558,6 +1558,12 @@ const VIDEOS = {
     date: new Date("Dec 24 2023"),
     minutes: 13,
   },
+  seasideBypassExpoWb25: {
+    id: "kdT8WOgBMdQ",
+    tlId: "yVUDGw5Sf10",
+    date: new Date("Jun 19 2025"),
+    minutes: 14,
+  },
   seasideBypassFalseCreekSouthEb: {
     id: "8xY4bwZ0GrE",
     tlId: "T8cHVJitn2A",
