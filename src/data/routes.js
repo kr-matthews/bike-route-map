@@ -2031,6 +2031,10 @@ export const ROUTES = {
         name: "Jericho & Spanish Banks",
         videos: { westbound: VIDEOS.seasideJerichoWb },
       },
+      {
+        name: "Laurel Landbridge",
+        videos: { northbound: VIDEOS.laurelLandbridgeNb },
+      },
     ],
     notes:
       "Flat. Includes the well-known Seawall. There are some brief sections on quiet roads (in Kitsilano). Besides Jericho & Spanish Banks, the majority has separation from pedestrians. Can get crowded at times when sunny. A portion near Science World is closed indefinitely, but there's a detour set up.",

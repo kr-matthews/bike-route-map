@@ -1026,6 +1026,11 @@ const VIDEOS = {
     date: new Date("May 08 2025"),
     minutes: 11,
   },
+  laurelLandbridgeNb: {
+    id: "qz1BzpXHl0s",
+    date: new Date("Jul 01 2025"),
+    minutes: 2,
+  },
   lionsGateBridgeNb: {
     id: "KbhPPsdOzIE",
     tlId: "ulv24XpdYhQ",
