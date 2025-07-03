@@ -741,7 +741,7 @@ export const ROUTES = {
   crabappleRidge: {
     name: "Crabapple Ridge",
     regions: [REGIONS.richmond],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { southbound: VIDEOS.crabappleSb } }],
     notes:
       "Very flat, and also very hard to follow the almost 30 turns you need to make. The indirectness adds about 2km of distance. It's not entirely clear where the route ends in Steveston.",
   },

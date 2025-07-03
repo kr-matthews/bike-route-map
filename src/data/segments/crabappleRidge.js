@@ -33,12 +33,14 @@ export const CRABAPPLE_RIDGE = [
     description: "chatham 1",
     type: "shared",
     undesignated: true,
+    videoIds: [VIDEOS.crabappleSb.id],
     positions: [SECOND_CHATHAM, NO_1_CHATHAM_E],
   },
   {
     description: "chatham 2",
     type: "quiet",
     undesignated: true,
+    videoIds: [VIDEOS.crabappleSb.id],
     positions: [
       NO_1_CHATHAM_E,
       [49.12653, -123.18109],
@@ -49,6 +51,7 @@ export const CRABAPPLE_RIDGE = [
   {
     description: "steveston park west",
     type: "mixed",
+    videoIds: [VIDEOS.crabappleSb.id],
     positions: [
       CHATHAM_E,
       [49.12644, -123.17928],
@@ -80,6 +83,7 @@ export const CRABAPPLE_RIDGE = [
   {
     description: "steveston park south & more",
     type: "mixed",
+    videoIds: [VIDEOS.crabappleSb.id],
     positions: [
       STEVESTON_COMMUNITY_PARK_CENTER,
       [49.12522, -123.17447],
@@ -92,6 +96,8 @@ export const CRABAPPLE_RIDGE = [
   {
     description: "steveston park south east branch",
     type: "other",
+    videoIds: [VIDEOS.crabappleSb.id],
+    videoIdsEndAtEnd: [VIDEOS.crabappleSb.id],
     positions: [
       STEVESTON_COMMUNITY_PARK_IMPERIAL_N,
       [49.12305, -123.17414],
@@ -112,6 +118,7 @@ export const CRABAPPLE_RIDGE = [
     routeNames: [ROUTES.crabappleRidge.name],
     description: "south of williams",
     type: "quiet",
+    videoIds: [VIDEOS.crabappleSb.id],
     positions: [
       SECOND_CHATHAM,
       [49.12834, -123.18425],
@@ -140,6 +147,7 @@ export const CRABAPPLE_RIDGE = [
     routeNames: [ROUTES.crabappleRidge.name],
     description: "crossing williams at fourth",
     type: "shared",
+    videoIds: [VIDEOS.crabappleSb.id],
     positions: [FOURTH_WILLIAMS_S, FOURTH_WILLIAMS_N],
   },
   {
@@ -152,6 +160,7 @@ export const CRABAPPLE_RIDGE = [
     routeNames: [ROUTES.crabappleRidge.name],
     description: "williams to raymond",
     type: "quiet",
+    videoIds: [VIDEOS.crabappleSb.id],
     positions: [
       NISHI_WILLIAMS_N,
       [49.14178, -123.18562],
@@ -165,6 +174,7 @@ export const CRABAPPLE_RIDGE = [
     routeNames: [ROUTES.crabappleRidge.name],
     description: "alley from raymond to barmond",
     type: "mixed",
+    videoIds: [VIDEOS.crabappleSb.id],
     positions: [
       GORMOND_ALLEY_RAYMOND,
       [49.1462, -123.18693],
@@ -175,6 +185,7 @@ export const CRABAPPLE_RIDGE = [
     routeNames: [ROUTES.crabappleRidge.name],
     description: "barmond to francis",
     type: "quiet",
+    videoIds: [VIDEOS.crabappleSb.id],
     positions: [
       GORMOND_ALLEY_BARMOND,
       [49.14751, -123.18891],
@@ -185,24 +196,28 @@ export const CRABAPPLE_RIDGE = [
     routeNames: [ROUTES.crabappleRidge.name],
     description: "francis",
     type: "shared",
+    videoIds: [VIDEOS.crabappleSb.id],
     positions: [KIRKMOND_FRANCIS, MILLMORE_FRANCIS],
   },
   {
     routeNames: [ROUTES.crabappleRidge.name],
     description: "francis to wardmore",
     type: "quiet",
+    videoIds: [VIDEOS.crabappleSb.id],
     positions: [MILLMORE_FRANCIS, MILLMORE_WARDMORE],
   },
   {
     routeNames: [ROUTES.crabappleRidge.name],
     description: "millmore path",
     type: "mixed",
+    videoIds: [VIDEOS.crabappleSb.id],
     positions: [MILLMORE_WARDMORE, MILLMORE_ULLSMORE],
   },
   {
     routeNames: [ROUTES.crabappleRidge.name],
     description: "ullsmore to blundell",
     type: "quiet",
+    videoIds: [VIDEOS.crabappleSb.id],
     positions: [
       MILLMORE_ULLSMORE,
       [49.14983, -123.18872],
@@ -215,12 +230,14 @@ export const CRABAPPLE_RIDGE = [
     routeNames: [ROUTES.crabappleRidge.name],
     description: "blundell",
     type: "shared",
+    videoIds: [VIDEOS.crabappleSb.id],
     positions: [DALEMORE_BLUNDELL, GABRIOLA_BLUNDELL],
   },
   {
     routeNames: [ROUTES.crabappleRidge.name],
     description: "blundell to quilchena",
     type: "quiet",
+    videoIds: [VIDEOS.crabappleSb.id],
     positions: [
       GABRIOLA_BLUNDELL,
       [49.15605, -123.18979],
@@ -239,6 +256,7 @@ export const CRABAPPLE_RIDGE = [
     routeNames: [ROUTES.crabappleRidge.name],
     description: "quilchena path",
     type: "mixed",
+    videoIds: [VIDEOS.crabappleSb.id],
     positions: [
       BOWEN_BOWEN,
       [49.15877, -123.18891],
@@ -253,6 +271,7 @@ export const CRABAPPLE_RIDGE = [
     routeNames: [ROUTES.crabappleRidge.name],
     description: "quilchena to barnard",
     type: "quiet",
+    videoIds: [VIDEOS.crabappleSb.id],
     positions: [
       QUILCHENA_DECOURCY,
       [49.15947, -123.18893],
@@ -271,7 +290,7 @@ export const CRABAPPLE_RIDGE = [
     routeNames: [ROUTES.crabappleRidge.name],
     description: "barnard",
     type: "shared",
-    videoIds: [VIDEOS.granvilleWb.id],
+    videoIds: [VIDEOS.crabappleSb.id, VIDEOS.granvilleWb.id],
     positions: [
       BARNARD_GRANVILLE,
       [49.16303, -123.18445],
@@ -319,7 +338,8 @@ export const CRABAPPLE_RIDGE = [
     routeNames: [ROUTES.crabappleRidge.name],
     description: "river rd to middle arm trail",
     type: "mixed",
-    videoIds: [VIDEOS.granvilleWb.id],
+    videoIds: [VIDEOS.crabappleSb.id, VIDEOS.granvilleWb.id],
+    videoIdsStartAtEnd: [VIDEOS.crabappleSb.id],
     videoIdsEndAtEnd: [VIDEOS.granvilleWb.id],
     positions: [BARNARD_RIVER_NE, BARNARD_MIDDLE_ARM],
   },

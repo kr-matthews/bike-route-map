@@ -491,6 +491,12 @@ const VIDEOS = {
     date: new Date("May 26 2024"),
     minutes: 11,
   },
+  crabappleSb: {
+    id: "vXh-G8hZlkI",
+    tlId: "5JMq-YAOyaI",
+    date: new Date("Jun 24, 2025"),
+    minutes: 25,
+  },
   crosstownNWEb: {
     id: "O77jstHnFRc",
     tlId: "sigGo6thZBg",

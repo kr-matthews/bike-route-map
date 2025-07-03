@@ -211,6 +211,7 @@ export const WILLIAMS = [
     description: "wb: crabapple",
     type: "painted",
     oneWay: "required",
+    videoIds: [VIDEOS.crabappleSb.id],
     positions: [NISHI_WILLIAMS_N, FOURTH_WILLIAMS_N],
   },
   {
