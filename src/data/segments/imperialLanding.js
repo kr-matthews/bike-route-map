@@ -1,6 +1,7 @@
 import {
   RAILWAY_GREENWAY_WESTWATER,
   RAILWAY_WESTWATER,
+  STEVESTON_COMMUNITY_PARK_WESTWATER,
   WEST_DYKE_CHATHAM,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -120,7 +121,7 @@ export const IMPERIAL_LANDING = [
       [49.12324, -123.17581],
       [49.12339, -123.17552],
       [49.12319, -123.17478],
-      [49.123, -123.17408],
+      STEVESTON_COMMUNITY_PARK_WESTWATER,
       IMPERIAL_WESTWATER,
       [49.12293, -123.174],
       [49.12279, -123.17402],

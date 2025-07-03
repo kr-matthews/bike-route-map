@@ -5,9 +5,15 @@ import {
   FOURTH_WILLIAMS_S,
   NISHI_WILLIAMS_N,
   NISHI_WILLIAMS_S,
+  STEVESTON_COMMUNITY_PARK_WESTWATER,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
+
+const NO_1_CHATHAM_E = [49.12643, -123.18134];
+const CHATHAM_E = [49.12658, -123.17936];
+const STEVESTON_COMMUNITY_PARK_CENTER = [49.12652, -123.17449];
+const STEVESTON_COMMUNITY_PARK_IMPERIAL_N = [49.12315, -123.17441];
 
 const SECOND_CHATHAM = [49.12644, -123.18425];
 const GORMOND_ALLEY_RAYMOND = [49.14588, -123.18694];
@@ -23,6 +29,85 @@ const QUILCHENA_DECOURCY = [49.15946, -123.18697];
 const BARNARD_RIVER_NE = [49.17414, -123.18796];
 
 export const CRABAPPLE_RIDGE = [
+  {
+    description: "chatham 1",
+    type: "shared",
+    undesignated: true,
+    positions: [SECOND_CHATHAM, NO_1_CHATHAM_E],
+  },
+  {
+    description: "chatham 2",
+    type: "quiet",
+    undesignated: true,
+    positions: [
+      NO_1_CHATHAM_E,
+      [49.12653, -123.18109],
+      [49.12653, -123.17971],
+      CHATHAM_E,
+    ],
+  },
+  {
+    description: "steveston park west",
+    type: "mixed",
+    positions: [
+      CHATHAM_E,
+      [49.12644, -123.17928],
+      [49.12648, -123.17917],
+      [49.12652, -123.17896],
+      [49.12654, -123.17868],
+      [49.12655, -123.17717],
+      STEVESTON_COMMUNITY_PARK_CENTER,
+    ],
+  },
+  {
+    description: "steveston park east",
+    type: "mixed",
+    positions: [
+      STEVESTON_COMMUNITY_PARK_CENTER,
+      [49.12651, -123.17376],
+      [49.12652, -123.17228],
+      [49.12655, -123.17189],
+      [49.12674, -123.17133],
+      [49.12674, -123.17124],
+      [49.1268, -123.17116],
+      [49.12681, -123.17105],
+      [49.12685, -123.171],
+      [49.127, -123.17075],
+      [49.12712, -123.17058],
+      [49.12713, -123.17001],
+    ],
+  },
+  {
+    description: "steveston park south & more",
+    type: "mixed",
+    positions: [
+      STEVESTON_COMMUNITY_PARK_CENTER,
+      [49.12522, -123.17447],
+      [49.12521, -123.17435],
+      [49.12505, -123.17436],
+      [49.12324, -123.17437],
+      STEVESTON_COMMUNITY_PARK_IMPERIAL_N,
+    ],
+  },
+  {
+    description: "steveston park south east branch",
+    type: "other",
+    positions: [
+      STEVESTON_COMMUNITY_PARK_IMPERIAL_N,
+      [49.12305, -123.17414],
+      STEVESTON_COMMUNITY_PARK_WESTWATER,
+    ],
+  },
+  {
+    description: "steveston park south west branch",
+    type: "other",
+    positions: [
+      STEVESTON_COMMUNITY_PARK_IMPERIAL_N,
+      [49.12322, -123.17478],
+      [49.1232, -123.17482], //lazy
+    ],
+  },
+
   {
     routeNames: [ROUTES.crabappleRidge.name],
     description: "south of williams",
