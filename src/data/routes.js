@@ -2361,7 +2361,14 @@ export const ROUTES = {
   walesDuchess: {
     name: "Wales Duchess",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { southbound: VIDEOS.walesDuchessSb } }],
+    legs: [
+      {
+        videos: {
+          northbound: VIDEOS.walesDuchessNb,
+          southbound: VIDEOS.walesDuchessSb,
+        },
+      },
+    ],
     notes:
       "Some minor hills. 'Built' as an alternative to Earles St, which is part of Midtown and Sunrise. Pedestrians often walk in the path along Kingsway. It should definitely access 29th Ave Station via Duchess St, but instead goes way out of the way to Todd St - especially annoying if you want to use Sunrise.",
   },

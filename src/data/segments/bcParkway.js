@@ -401,8 +401,10 @@ export const BC_PARKWAY = [
       VIDEOS.bcParkwayVancouverWb.id,
       VIDEOS.sunriseSb.id,
       VIDEOS.sunriseNb.id,
+      VIDEOS.walesDuchessNb.id,
     ],
     videoIdsStartAtEnd: [VIDEOS.bcParkway29thStation.id],
+    videoIdsEndAtStart: [VIDEOS.walesDuchessNb.id],
     positions: [STATION_29TH_E, [49.24372, -123.04514], TODD_VANNESS],
   },
   {

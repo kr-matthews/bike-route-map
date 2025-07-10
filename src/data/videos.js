@@ -1925,6 +1925,12 @@ const VIDEOS = {
     date: new Date("Oct 17 2024"),
     minutes: 15,
   },
+  walesDuchessNb: {
+    id: "NO-X3C940OQ",
+    tlId: "DXY4Ui4vY2U",
+    date: new Date("Jun 25 2025"),
+    minutes: 8,
+  },
   walesDuchessSb: {
     id: "q-4HxNr0aWA",
     date: new Date("Aug 26 2023"),
