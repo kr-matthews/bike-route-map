@@ -27,7 +27,7 @@ export const REGIONS = {
   richmond: {
     name: "Richmond",
     notes:
-      "In Richmond, most routes and some infrastructure are mapped. There are some additional routes in Steveston South",
+      "In Richmond, most routes and some infrastructure are mapped. There are some additional routes in the south, east of Steveston, as well as a few painted lanes around Ikea.",
   },
   newWestminster: {
     name: "New Westminster",
