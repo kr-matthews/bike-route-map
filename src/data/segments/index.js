@@ -83,6 +83,7 @@ import { GLENLYON } from "./glenlyon";
 import { GOLDEN_EARS_BRIDGE } from "./goldenEarsBridge";
 import { GRANT_MCCONACHIE } from "./grantMcconachie";
 import { GRANVILLE } from "./granville";
+import { GRANVILLE_CONNECTOR } from "./granvilleConnector";
 import { GRAUER } from "./grauer";
 import { HARO } from "./haro";
 import { HASTINGS_PARK } from "./hastingsPark";
