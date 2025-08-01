@@ -51,6 +51,7 @@ import { CROSSTOWN_NEW_WESTMINSTER } from "./crosstownNewWestminster";
 import { CROSSTOWN_RICHMOND } from "./crosstownRichmond";
 import { CYPRESS } from "./cypress";
 import { DEER_LAKE_PARKWAY } from "./deerLakeParkway";
+import { DRAKE } from "./drake";
 import { DUMFRIES } from "./dumfries";
 import { DUNBAR } from "./dunbar";
 import { DUNSMUIR } from "./dunsmuir";
@@ -277,6 +278,7 @@ export const SEGMENTS = [
   ...CROSSTOWN_RICHMOND,
   ...CYPRESS,
   ...DEER_LAKE_PARKWAY,
+  ...DRAKE,
   ...DUMFRIES,
   ...DUNBAR,
   ...DUNSMUIR,
@@ -308,6 +310,7 @@ export const SEGMENTS = [
   ...GOLDEN_EARS_BRIDGE,
   ...GRANT_MCCONACHIE,
   ...GRANVILLE,
+  ...GRANVILLE_CONNECTOR,
   ...GRAUER,
   ...HARO,
   ...HASTINGS_PARK,

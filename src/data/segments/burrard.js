@@ -26,7 +26,6 @@ import {
   CYPRESS_CORNWALL_N,
   CYPRESS_CORNWALL_SE,
   CYPRESS_CORNWALL_SW,
-  HORNBY_DRAKE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -197,26 +196,6 @@ export const BURRARD = [
       [49.27678, -123.13244],
       BURRARD_PACIFIC_SE_E,
     ],
-  },
-  {
-    description: "drake crossing",
-    type: "dedicated",
-    videoIds: [VIDEOS.burnabyEb.id],
-    positions: [BURRARD_DRAKE_W, BURRARD_DRAKE_E],
-  },
-  {
-    description: "drake connection with hornby",
-    type: "dedicated",
-    videoIds: [VIDEOS.burnabyWb.id, VIDEOS.burnabyEb.id],
-    videoIdsStartAtEnd: [VIDEOS.burnabyWb.id],
-    positions: [BURRARD_DRAKE_E, HORNBY_DRAKE],
-  },
-  {
-    description: "drake continuing east",
-    type: "dedicated",
-    videoIds: [VIDEOS.burnabyEb.id],
-    videoIdsEndAtEnd: [VIDEOS.burnabyEb.id],
-    positions: [HORNBY_DRAKE, [49.27704, -123.12935]],
   },
 
   // southbound

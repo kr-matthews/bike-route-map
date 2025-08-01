@@ -17,6 +17,7 @@ import {
   CYPRESS_ARBUTUS_GREENWAY,
   EAST_BLVD_45TH,
   MILTON_ARBUTUS_GREENWAY,
+  PINE_ARBUTUS_GREENWAY,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -229,7 +230,7 @@ export const ARBUTUS_GREENWAY = [
       [49.26645, -123.14548],
       [49.26647, -123.14541],
       [49.26648, -123.14533],
-      [49.26645, -123.1433],
+      PINE_ARBUTUS_GREENWAY,
       [49.26643, -123.14238],
       [49.26644, -123.14216],
       [49.26647, -123.14193],

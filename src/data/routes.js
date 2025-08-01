@@ -791,6 +791,13 @@ export const ROUTES = {
     ],
     notes: "Besides the hill at the west end, it's very flat.",
   },
+  drake: {
+    name: "Drake",
+    regions: [REGIONS.vancouver],
+    legs: [{ videos: {} }],
+    notes:
+      "New mid-2025 bike path. A bit of a hill. In the future it will extend all the way to Pacific Blvd.",
+  },
   dumfries: {
     name: "Dumfries",
     regions: [REGIONS.vancouver],
@@ -1065,6 +1072,13 @@ export const ROUTES = {
     ],
     notes:
       "Very flat, lots of cars. The painted lanes are beside the curb, but also often become a right-turn lane for cars. Sometimes there are flimsy posts separating the lane.",
+  },
+  granvilleConnector: {
+    name: "Granville Connector",
+    regions: [REGIONS.vancouver],
+    legs: [{ videos: {} }],
+    notes:
+      "New mid-2025 bike path over the Granville St Bridge. A 'quick-build' approach which will be upgraded in the future, and will eventually include a connection to 10th along the Fir St off-ramp.",
   },
   grauer: {
     name: "Grauer Rd",
