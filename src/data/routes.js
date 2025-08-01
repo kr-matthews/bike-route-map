@@ -1980,6 +1980,13 @@ export const ROUTES = {
     notes:
       "Very steep. This route continues north to 23rd St, just short of Trans-Canada Highway.",
   },
+  stGeorge: {
+    name: "St George Rainway",
+    regions: [REGIONS.vancouver],
+    legs: [{ videos: {} }],
+    notes:
+      "Opened July 2025. A nice car-free/car-light street with rainwater infrastructure. Will eventually continue further south, hopefully to 14th/Prince Edward.",
+  },
   stJohns: {
     name: "Saint Johns St Path",
     regions: [REGIONS.portMoody],
