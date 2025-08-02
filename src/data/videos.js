@@ -400,6 +400,7 @@ const VIDEOS = {
   },
   centralParkPerimeterTrailCw: {
     id: "Bx7w0uajqmA",
+    tlId: "Seig6PQrx_g",
     date: new Date("Nov 03 2023"),
     minutes: 10,
   },
@@ -992,6 +993,7 @@ const VIDEOS = {
   },
   kerrNb: {
     id: "Gw7KCFxOMto",
+    tlId: "qJaBx2qBUBk",
     date: new Date("Mar 13 2024"),
     minutes: 11,
   },
