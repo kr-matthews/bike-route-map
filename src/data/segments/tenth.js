@@ -31,10 +31,22 @@ const PRINCE_EDWARD_10TH_S_E = [49.26159, -123.096];
 const KEITH_10TH = [49.26145, -123.07944];
 const CHINA_CREEK_E = [49.26144, -123.07817];
 const COMMERCIAL_10TH_SE = [49.26135, -123.06969];
+const VICTORIA_10TH_SE = [49.26132, -123.06583];
 const VICTORIA_GRANDVIEW_CUT_SE = [49.2614, -123.06583];
 const VICTORIA_GRANDVIEW_CUT_NE = [49.26201, -123.06581];
 
 export const TENTH = [
+  {
+    description: "lane on victoria",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      [49.26097, -123.06589],
+      [49.26127, -123.06588],
+      VICTORIA_10TH_SE,
+    ],
+  },
+
   {
     routeNames: [ROUTES.tenth.name],
     description: "west of yew",
@@ -302,7 +314,7 @@ export const TENTH = [
       [49.26131, -123.06699],
       [49.26131, -123.06681],
       [49.26133, -123.06675],
-      [49.26132, -123.06583],
+      VICTORIA_10TH_SE,
       VICTORIA_GRANDVIEW_CUT_SE,
     ],
   },
