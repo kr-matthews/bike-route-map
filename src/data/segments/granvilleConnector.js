@@ -13,6 +13,7 @@ const FIR_5TH_NE = [49.26714, -123.14083];
 const FIR_5TH = [49.2671, -123.14092];
 const ELEVATION_S = [49.26764, -123.13858];
 const ELEVATION_N = [49.27522, -123.12927];
+const GRANVILLE_HOWE = [49.27427, -123.13085];
 const GRANVILLE_NEON_N = [49.27572, -123.12852];
 const ROLSTON_NEON_NE = [49.27535, -123.12788];
 
@@ -71,6 +72,18 @@ export const GRANVILLE_CONNECTOR = [
     oneWay: "required",
     positions: [[49.27623, -123.1277], GRANVILLE_DRAKE_W],
   },
+  {
+    description: "howe onramp",
+    type: "dedicated",
+    oneWay: "required",
+    elevation: 1,
+    positions: [
+      [49.27525, -123.13036],
+      [49.27459, -123.13064],
+      [49.27443, -123.13072],
+      GRANVILLE_HOWE,
+    ],
+  },
 
   // connector
   {
@@ -117,7 +130,7 @@ export const GRANVILLE_CONNECTOR = [
       [49.27042, -123.13661],
       [49.27396, -123.13126],
       [49.27418, -123.13095],
-      [49.27427, -123.13085],
+      GRANVILLE_HOWE,
       [49.27428, -123.1307],
       ELEVATION_N,
     ],
