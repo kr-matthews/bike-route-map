@@ -537,6 +537,11 @@ const VIDEOS = {
     date: new Date("Mar 17 2025"),
     minutes: 9,
   },
+  drakeEb: {
+    id: "VzMhIN3T_1s",
+    date: new Date("Jul 31 2025"),
+    minutes: 3,
+  },
   dumfriesNb: {
     id: "g0qsUEDx--8",
     tlId: "lQDpohjyf5E",
@@ -795,6 +800,12 @@ const VIDEOS = {
     tlId: "GeMCjnh1GvE",
     date: new Date("Apr 09 2025"),
     minutes: 8,
+  },
+  granvilleConnectorNb: {
+    id: "KR4SfhqsNqY",
+    tlId: "jEPNmAgUkQU",
+    date: new Date("Jul 31 2025"),
+    minutes: 7,
   },
   granvilleWb: {
     id: "b9eFnAItgIo",
@@ -1741,6 +1752,11 @@ const VIDEOS = {
     tlId: "4OaWpTtS9XU",
     date: new Date("May 22 2025"),
     minutes: 15,
+  },
+  stGeorgeNb: {
+    id: "QUDJjedsx_Y",
+    date: new Date("July 31 2025"),
+    minutes: 0,
   },
   stGeorgesEb: {
     id: "qLHu2A2YA7E",

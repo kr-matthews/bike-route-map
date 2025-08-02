@@ -221,15 +221,25 @@ export const ARBUTUS_GREENWAY = [
   },
   {
     routeNames: [ROUTES.arbutusGreenway.name],
-    description: "burrard to fir",
+    description: "burrard to pine",
     type: "combined",
-    videoIds: [VIDEOS.arbutusGreenwayNb.id],
-    videoIdsEndAtEnd: [VIDEOS.arbutusGreenwayNb.id],
+    videoIds: [VIDEOS.arbutusGreenwayNb.id, VIDEOS.granvilleConnectorNb.id],
+    videoIdsStartAtStart: [VIDEOS.granvilleConnectorNb.id],
     positions: [
       BURRARD_ARBUTUS_GREENWAY_E,
       [49.26645, -123.14548],
       [49.26647, -123.14541],
       [49.26648, -123.14533],
+      PINE_ARBUTUS_GREENWAY,
+    ],
+  },
+  {
+    routeNames: [ROUTES.arbutusGreenway.name],
+    description: "pine to fir",
+    type: "combined",
+    videoIds: [VIDEOS.arbutusGreenwayNb.id],
+    videoIdsEndAtEnd: [VIDEOS.arbutusGreenwayNb.id],
+    positions: [
       PINE_ARBUTUS_GREENWAY,
       [49.26643, -123.14238],
       [49.26644, -123.14216],

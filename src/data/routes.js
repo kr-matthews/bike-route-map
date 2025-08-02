@@ -261,7 +261,7 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [{ videos: { northbound: VIDEOS.arbutusGreenwayNb } }],
     notes:
-      "A former railway. Not very flat, but the hills at either end are very gradual. The King Edward intersection was upgraded in late 2024. The city plans to upgrade the 41st intersection next. It will also connect to the new Granville Bridge bike lanes in 2025. The portion at Broadway is closed until around 2026 due to subway construction.",
+      "A former railway. Not very flat, but the hills at either end are very gradual. The King Edward intersection was upgraded in late 2024. The city plans to upgrade the 41st intersection next. The portion at Broadway is closed until around 2026 due to subway construction.",
   },
   arthurLaingBridge: {
     name: "Arthur Laing Bridge",
@@ -794,7 +794,7 @@ export const ROUTES = {
   drake: {
     name: "Drake",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: VIDEOS.drakeEb } }],
     notes:
       "New mid-2025 bike path. A bit of a hill. In the future it will extend all the way to Pacific Blvd.",
   },
@@ -1076,7 +1076,7 @@ export const ROUTES = {
   granvilleConnector: {
     name: "Granville Connector",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.granvilleConnectorNb } }],
     notes:
       "New mid-2025 bike path over the Granville St Bridge. A 'quick-build' approach which will be upgraded in the future, and will eventually include a connection to 10th along the Fir St off-ramp.",
   },
@@ -1983,7 +1983,7 @@ export const ROUTES = {
   stGeorge: {
     name: "St George Rainway",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: VIDEOS.stGeorgeNb } }],
     notes:
       "Opened July 2025. A nice car-free/car-light street with rainwater infrastructure. Will eventually continue further south, hopefully to 14th/Prince Edward.",
   },

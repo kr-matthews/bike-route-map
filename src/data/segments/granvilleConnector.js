@@ -6,6 +6,7 @@ import {
   ROLSTON_PACIFIC_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const W_OF_FIR_5TH = [49.2671, -123.14128];
 const FIR_5TH_NE = [49.26714, -123.14083];
@@ -20,11 +21,13 @@ export const GRANVILLE_CONNECTOR = [
   {
     description: "pine & 5th",
     type: "quiet",
+    videoIds: [VIDEOS.granvilleConnectorNb.id],
     positions: [PINE_ARBUTUS_GREENWAY, [49.26712, -123.14327], W_OF_FIR_5TH],
   },
   {
     description: "crossing fir",
     type: "dedicated",
+    videoIds: [VIDEOS.granvilleConnectorNb.id],
     positions: [
       W_OF_FIR_5TH,
       [49.26706, -123.14122],
@@ -38,6 +41,8 @@ export const GRANVILLE_CONNECTOR = [
   {
     description: "neon & rolston",
     type: "comfortable",
+    videoIds: [VIDEOS.granvilleConnectorNb.id],
+    videoIdsEndAtEnd: [VIDEOS.granvilleConnectorNb.id],
     positions: [
       GRANVILLE_NEON_N,
       [49.27538, -123.12795],
@@ -56,6 +61,8 @@ export const GRANVILLE_CONNECTOR = [
   {
     description: "drake connection via rolston",
     type: "quiet",
+    videoIds: [VIDEOS.drakeEb.id],
+    videoIdsEndAtStart: [VIDEOS.drakeEb.id],
     positions: [ROLSTON_NEON_NE, ROLSTON_DRAKE_SW],
   },
 
@@ -65,6 +72,7 @@ export const GRANVILLE_CONNECTOR = [
     description: "pre-elevation",
     type: "combined",
     elevation: 0.5,
+    videoIds: [VIDEOS.granvilleConnectorNb.id],
     positions: [
       FIR_5TH_NE,
       [49.26714, -123.14058],
@@ -89,6 +97,7 @@ export const GRANVILLE_CONNECTOR = [
     description: "elevated",
     type: "combined",
     elevation: 1,
+    videoIds: [VIDEOS.granvilleConnectorNb.id],
     positions: [
       ELEVATION_S,
       [49.26817, -123.13854],
@@ -112,6 +121,7 @@ export const GRANVILLE_CONNECTOR = [
     description: "post-elevated, to neon",
     type: "dedicated",
     elevation: 0.5,
+    videoIds: [VIDEOS.granvilleConnectorNb.id],
     positions: [ELEVATION_N, GRANVILLE_NEON_N],
   },
   {

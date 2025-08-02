@@ -230,7 +230,8 @@ export const BURRARD = [
     description: "sb: burnaby to drake",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.burrardSb.id, VIDEOS.burnabyEb.id],
+    videoIds: [VIDEOS.burrardSb.id, VIDEOS.drakeEb.id, VIDEOS.burnabyEb.id],
+    videoIdsStartAtStart: [VIDEOS.drakeEb.id],
     positions: [BURRARD_BURNABY_W, BURRARD_DRAKE_W],
   },
   {
