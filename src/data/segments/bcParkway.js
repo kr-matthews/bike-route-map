@@ -10,6 +10,7 @@ import {
   BC_PARKWAY_LONDON,
   BC_PARKWAY_MISSION,
   BC_PARKWAY_SOUTHRIDGE_TRAIL,
+  BC_PARKWAY_TIN_SOLDIER,
   BC_PARKWAY_VICTORY_CONNECTION,
   BONSOR_BC_PARKWAY,
   BULLER_BERESFORD_W,
@@ -1079,9 +1080,14 @@ export const BC_PARKWAY = [
       [49.19979, -122.91188],
       [49.19974, -122.9118],
       [49.19981, -122.91146],
-      [49.20027, -122.91055],
-      QUAYSIDE_JOIN,
+      BC_PARKWAY_TIN_SOLDIER,
     ],
+  },
+  {
+    // formerly part of bc parkway
+    description: "quayside/tin soldier connection",
+    videoIds: [VIDEOS.bcParkwayNWWb.id, VIDEOS.bcParkwayNWEb.id],
+    positions: [BC_PARKWAY_TIN_SOLDIER, QUAYSIDE_JOIN],
   },
   {
     description: "quayside road option",

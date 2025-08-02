@@ -40,6 +40,7 @@ import {
   EIGHTH_CARNARVON_E,
   SKEENA_CVG,
   SLOCAN_N_GRANDVIEW_S,
+  BC_PARKWAY_TIN_SOLDIER,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -97,6 +98,7 @@ const COLUMBIA_BRUNETTE = [49.22223, -122.89306];
 const COLUMBIA_DEBECK_W = [49.22197, -122.89311];
 const COLUMBIA_CUMBERLAND_W = [49.22047, -122.89322];
 const BEGBIE_COLUMBIA_S = [49.2018, -122.91035];
+const N_OF_BEGBIE_FRONT = [49.20152, -122.90999];
 
 const BOUNDARY_CVG = [49.26245, -123.02363];
 const EAST_OF_BOUNDARY = [49.26242, -123.02222];
@@ -1313,9 +1315,10 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
-    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
-    description: "quayside/begbie",
+    // formerly part of cvg & bc parkway
+    description: "old quayside/begbie",
     type: "shared",
+    // designated: false, // unclear
     videoIds: [
       VIDEOS.centralValleyNWNb.id,
       VIDEOS.bcParkwayNWWb.id,
@@ -1337,7 +1340,34 @@ export const CENTRAL_VALLEY_GREENWAY = [
       [49.20087, -122.90926],
       [49.20094, -122.90927],
       [49.20109, -122.90947],
-      BEGBIE_COLUMBIA_S,
+      N_OF_BEGBIE_FRONT,
+    ],
+  },
+  {
+    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
+    description: "begbie short shared",
+    type: "shared",
+    videoIds: [
+      VIDEOS.centralValleyNWNb.id,
+      VIDEOS.bcParkwayNWWb.id,
+      VIDEOS.bcParkwayNWEb.id,
+    ],
+    positions: [N_OF_BEGBIE_FRONT, BEGBIE_COLUMBIA_S],
+  },
+  {
+    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
+    description: "new quayside path",
+    type: "mixed",
+    positions: [
+      BC_PARKWAY_TIN_SOLDIER,
+      [49.20025, -122.9102],
+      [49.20029, -122.91],
+      [49.2008, -122.90909],
+      [49.20085, -122.90906],
+      [49.20089, -122.90908],
+      [49.20149, -122.90982],
+      [49.20152, -122.90989],
+      N_OF_BEGBIE_FRONT,
     ],
   },
   {
