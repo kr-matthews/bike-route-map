@@ -85,6 +85,12 @@ export const COMOX_HELMCKEN = [
     ],
   },
   {
+    routeNames: [ROUTES.comoxHelmcken.name],
+    description: "hornby to lane",
+    type: "dedicated",
+    positions: [HORNBY_HELMCKEN_SE, [49.27917, -123.12617]],
+  },
+  {
     description: "helmcken unofficial part",
     type: "shared",
     undesignated: true,
