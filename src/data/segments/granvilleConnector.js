@@ -65,6 +65,12 @@ export const GRANVILLE_CONNECTOR = [
     videoIdsEndAtStart: [VIDEOS.drakeEb.id],
     positions: [ROLSTON_NEON_NE, ROLSTON_DRAKE_SW],
   },
+  {
+    description: "granville crossing drake",
+    type: "painted",
+    oneWay: "required",
+    positions: [[49.27623, -123.1277], GRANVILLE_DRAKE_W],
+  },
 
   // connector
   {
