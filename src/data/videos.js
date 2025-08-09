@@ -813,6 +813,16 @@ const VIDEOS = {
     date: new Date("Jul 31 2025"),
     minutes: 5,
   },
+  granvilleConnectorFirSb: {
+    id: "cHc98G1iz9o",
+    date: new Date("Aug 09 2025"),
+    minutes: 1,
+  },
+  granvilleConnectorGranvilleSb: {
+    id: "DsJjOBrFd0E",
+    date: new Date("Aug 09 2025"),
+    minutes: 0,
+  },
   granvilleWb: {
     id: "b9eFnAItgIo",
     tlId: "aKPBmrm6brE",

@@ -259,7 +259,13 @@ export const ROUTES = {
   arbutusGreenway: {
     name: "Arbutus Greenway",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { northbound: VIDEOS.arbutusGreenwayNb } }],
+    legs: [
+      { videos: { northbound: VIDEOS.arbutusGreenwayNb } },
+      {
+        name: "Fir St connection with Granville Connector",
+        videos: { southbound: VIDEOS.granvilleConnectorFirSb },
+      },
+    ],
     notes:
       "A former railway. Not very flat, but the hills at either end are very gradual. The King Edward intersection was upgraded in late 2024. The city plans to upgrade the 41st intersection next. The portion at Broadway is closed until around 2026 due to subway construction.",
   },
@@ -1082,6 +1088,14 @@ export const ROUTES = {
           northbound: VIDEOS.granvilleConnectorNb,
           southbound: VIDEOS.granvilleConnectorSb,
         },
+      },
+      {
+        name: "Fir St connection with Arbutus Greenway",
+        videos: { southbound: VIDEOS.granvilleConnectorFirSb },
+      },
+      {
+        name: "From downtown Granville St",
+        videos: { southbound: VIDEOS.granvilleConnectorGranvilleSb },
       },
     ],
     notes:

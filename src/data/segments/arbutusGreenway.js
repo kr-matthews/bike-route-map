@@ -16,6 +16,7 @@ import {
   BURRARD_ARBUTUS_GREENWAY_W,
   CYPRESS_ARBUTUS_GREENWAY,
   EAST_BLVD_45TH,
+  FIR_5TH,
   MILTON_ARBUTUS_GREENWAY,
   PINE_ARBUTUS_GREENWAY,
 } from "../intersections";
@@ -25,6 +26,7 @@ import { VIDEOS } from "../videos";
 const ARBUTUS_GREENWAY_8TH = [49.26473, -123.15236];
 const ARBUTUS_GREENWAY_41ST_S = [49.23448, -123.1553];
 const EAST_BLVD_41ST_SW = [49.23448, -123.15515];
+const FIR_ARBUTUS_GREENWAY = [49.2668, -123.14102];
 
 export const ARBUTUS_GREENWAY = [
   {
@@ -237,7 +239,8 @@ export const ARBUTUS_GREENWAY = [
     routeNames: [ROUTES.arbutusGreenway.name],
     description: "pine to fir",
     type: "combined",
-    videoIds: [VIDEOS.arbutusGreenwayNb.id],
+    videoIds: [VIDEOS.arbutusGreenwayNb.id, VIDEOS.granvilleConnectorFirSb.id],
+    videoIdsEndAtStart: [VIDEOS.granvilleConnectorFirSb.id],
     videoIdsEndAtEnd: [VIDEOS.arbutusGreenwayNb.id],
     positions: [
       PINE_ARBUTUS_GREENWAY,
@@ -249,7 +252,15 @@ export const ARBUTUS_GREENWAY = [
       [49.26661, -123.14142],
       [49.26668, -123.14127],
       [49.26678, -123.14108],
-      [49.2668, -123.14102],
+      FIR_ARBUTUS_GREENWAY,
     ],
+  },
+  {
+    description: "fir connection with connector",
+    type: "shared",
+    oneWay: "recommended",
+    undesignated: true,
+    videoIds: [VIDEOS.granvilleConnectorFirSb.id],
+    positions: [FIR_5TH, [49.26682, -123.14093], FIR_ARBUTUS_GREENWAY],
   },
 ];

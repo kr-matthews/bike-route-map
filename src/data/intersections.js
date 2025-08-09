@@ -349,6 +349,7 @@ export const FIFTEENTH_LONDON = [49.21012, -122.94171];
 export const FIFTEENTH_STRIDE = [49.21525, -122.94813];
 export const FIFTH_7TH = [49.21518, -122.92073];
 export const FIR_1ST_N = [49.27085, -123.14139];
+export const FIR_5TH = [49.2671, -123.14092];
 export const FIRST_AGNES = [49.20918, -122.90179];
 export const FORBES_3RD_N = [49.31736, -123.0858];
 export const FORBES_3RD_SE = [49.31709, -123.08568];
