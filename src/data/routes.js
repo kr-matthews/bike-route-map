@@ -667,7 +667,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "Mostly flat through Vancouver and Burnaby, but New Westminster has lots of hills. The path near Burnaby Lake was paved late 2024. Winston St has been partially closed for construction for years. Improvements were being made on E Columbia St in 2024. The route has an annoying unnecessary steep detour at Cumberland St.",
+      "Mostly flat through Vancouver and Burnaby, but New Westminster has lots of hills. The path near Burnaby Lake was paved late 2024. Winston St has been partially closed for construction for years. Improvements along E Columbia St and Sherbrooke St were finished in early 2025. The route has an annoying unnecessary steep detour at Cumberland St.",
   },
   champlainHeightsGap: {
     name: "Champlain Heights Gap",

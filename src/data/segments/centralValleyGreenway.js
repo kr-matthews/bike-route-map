@@ -93,8 +93,13 @@ const BRIGHTON_WINSTON_NW = [49.24991, -122.91918];
 const BRIGHTON_WINSTON_SW = [49.24983, -122.91915];
 const CARIBOO_PL_E = [49.24804, -122.91232];
 
+const FADER_SHERBROOKE_N = [49.22792, -122.89024];
 const COLUMBIA_SHERBROOKE_E = [49.22789, -122.89275];
+const COLUMBIA_SHERBROOKE_NE = [49.22794, -122.89275];
+const COLUMBIA_SHERBROOKE_SE = [49.22784, -122.89275];
 const COLUMBIA_BRUNETTE = [49.22223, -122.89306];
+const COLUMBIA_KEARY_E = [49.22556, -122.89281];
+const COLUMBIA_KEARY_W = [49.22556, -122.89296];
 const COLUMBIA_DEBECK_W = [49.22197, -122.89311];
 const COLUMBIA_CUMBERLAND_W = [49.22047, -122.89322];
 const BEGBIE_COLUMBIA_S = [49.2018, -122.91035];
@@ -1117,7 +1122,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
       ROUTES.centralValleyGreenway.name,
       ROUTES.crosstownNewWestminster.name,
     ],
-    description: "garrett to columbia",
+    description: "garrett to sherbrooke",
     type: "quiet",
     videoIds: [VIDEOS.centralValleyNWNb.id],
     positions: [
@@ -1126,13 +1131,41 @@ export const CENTRAL_VALLEY_GREENWAY = [
       [49.23322, -122.89009],
       [49.23158, -122.89015],
       [49.22967, -122.8902],
+      FADER_SHERBROOKE_N,
+    ],
+  },
+  {
+    description: "sherbrooke cont. e of fader",
+    type: "dedicated",
+    positions: [
+      FADER_SHERBROOKE_N,
+      [49.22791, -122.88996],
+      [49.22778, -122.88996],
+    ],
+  },
+  {
+    description: "old sherbrooke: fader to columbia",
+    type: "quiet",
+    undesignated: true,
+    videoIds: [VIDEOS.centralValleyNWNb.id],
+    positions: [
+      FADER_SHERBROOKE_N,
       [49.22788, -122.89024],
       COLUMBIA_SHERBROOKE_E,
     ],
   },
   {
+    routeNames: [
+      ROUTES.centralValleyGreenway.name,
+      ROUTES.crosstownNewWestminster.name,
+    ],
+    description: "sherbrooke: fader to columbia",
+    type: "dedicated",
+    positions: [FADER_SHERBROOKE_N, COLUMBIA_SHERBROOKE_NE],
+  },
+  {
     routeNames: [ROUTES.centralValleyGreenway.name],
-    description: "columbia: north part, nb",
+    description: "columbia: north part, nb 1",
     type: "painted",
     oneWay: "required",
     videoIds: [VIDEOS.centralValleyNWNb.id],
@@ -1142,10 +1175,20 @@ export const CENTRAL_VALLEY_GREENWAY = [
       [49.22278, -122.89288],
       [49.22366, -122.89284],
       [49.2246, -122.89283],
-      [49.22556, -122.89281],
+      COLUMBIA_KEARY_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.centralValleyGreenway.name],
+    description: "columbia: north part, nb 2",
+    type: "dedicated",
+    oneWay: "required",
+    videoIds: [VIDEOS.centralValleyNWNb.id],
+    positions: [
+      COLUMBIA_KEARY_E,
       [49.22645, -122.89279],
       [49.22787, -122.89275],
-      COLUMBIA_SHERBROOKE_E,
+      COLUMBIA_SHERBROOKE_SE,
     ],
   },
   {
@@ -1153,19 +1196,61 @@ export const CENTRAL_VALLEY_GREENWAY = [
       ROUTES.centralValleyGreenway.name,
       ROUTES.crosstownNewWestminster.name,
     ],
-    description: "crossing columbia",
-    type: "quiet",
-    positions: [COLUMBIA_SHERBROOKE_W, COLUMBIA_SHERBROOKE_E],
+    description: "columbia nb crossing sherbrooke, 1st half",
+    type: "dedicated",
+    oneWay: "required",
+    hideArrows: true,
+    videoIds: [VIDEOS.centralValleyNWNb.id],
+    positions: [COLUMBIA_SHERBROOKE_SE, COLUMBIA_SHERBROOKE_E],
+  },
+  {
+    routeNames: [
+      ROUTES.centralValleyGreenway.name,
+      ROUTES.crosstownNewWestminster.name,
+    ],
+    description: "columbia nb crossing sherbrooke, 2nd half",
+    type: "dedicated",
+    oneWay: "required",
+    hideArrows: true,
+    positions: [COLUMBIA_SHERBROOKE_E, COLUMBIA_SHERBROOKE_NE],
+  },
+  {
+    routeNames: [
+      ROUTES.centralValleyGreenway.name,
+      ROUTES.crosstownNewWestminster.name,
+    ],
+    description: "sherbrooke crossing columbia wb",
+    type: "dedicated",
+    oneWay: "required",
+    hideArrows: true,
+    positions: [COLUMBIA_SHERBROOKE_NE, COLUMBIA_SHERBROOKE_W],
+  },
+  {
+    routeNames: [ROUTES.crosstownNewWestminster.name],
+    description: "sherbrooke crossing columbia eb",
+    type: "dedicated",
+    oneWay: "required",
+    hideArrows: true,
+    positions: [COLUMBIA_SHERBROOKE_W, COLUMBIA_SHERBROOKE_SE],
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
-    description: "columbia: north part, sb",
-    type: "painted",
+    description: "columbia: north part, sb 1",
+    type: "dedicated",
     oneWay: "required",
     positions: [
       COLUMBIA_SHERBROOKE_W,
       [49.22646, -122.89294],
-      [49.22556, -122.89296],
+      COLUMBIA_KEARY_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.centralValleyGreenway.name],
+    description: "columbia: north part, sb 2",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      COLUMBIA_KEARY_W,
       [49.22461, -122.89299],
       [49.22366, -122.893],
       [49.22278, -122.89304],
@@ -1318,7 +1403,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     // formerly part of cvg & bc parkway
     description: "old quayside/begbie",
     type: "shared",
-    // designated: false, // unclear
+    // undesignated: true, // unclear
     videoIds: [
       VIDEOS.centralValleyNWNb.id,
       VIDEOS.bcParkwayNWWb.id,
