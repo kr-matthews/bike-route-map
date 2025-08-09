@@ -1076,7 +1076,14 @@ export const ROUTES = {
   granvilleConnector: {
     name: "Granville Connector",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { northbound: VIDEOS.granvilleConnectorNb } }],
+    legs: [
+      {
+        videos: {
+          northbound: VIDEOS.granvilleConnectorNb,
+          southbound: VIDEOS.granvilleConnectorSb,
+        },
+      },
+    ],
     notes:
       "New mid-2025 bike path over the Granville St Bridge. A 'quick-build' approach which will be upgraded in the future, and will eventually include a connection to 10th along the Fir St off-ramp.",
   },

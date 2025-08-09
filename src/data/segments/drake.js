@@ -9,6 +9,7 @@ import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 const HORNBY_DRAKE_E_ALLEY = [49.27704, -123.12935];
+const HOWE_DRAKE_W = [49.27675, -123.12888];
 
 export const DRAKE = [
   {
@@ -36,14 +37,18 @@ export const DRAKE = [
   },
   {
     routeNames: [ROUTES.drake.name],
-    description: "hornby alley to granville",
+    description: "hornby alley to howe",
     type: "dedicated",
     videoIds: [VIDEOS.drakeEb.id],
-    positions: [
-      HORNBY_DRAKE_E_ALLEY,
-      [49.27675, -123.12888],
-      GRANVILLE_DRAKE_W,
-    ],
+    positions: [HORNBY_DRAKE_E_ALLEY, HOWE_DRAKE_W],
+  },
+  {
+    routeNames: [ROUTES.drake.name],
+    description: "howe to granville",
+    type: "dedicated",
+    videoIds: [VIDEOS.drakeEb.id, VIDEOS.granvilleConnectorSb.id],
+    videoIdsStartAtStart: [VIDEOS.granvilleConnectorSb.id],
+    positions: [HOWE_DRAKE_W, GRANVILLE_DRAKE_W],
   },
   {
     routeNames: [ROUTES.drake.name],

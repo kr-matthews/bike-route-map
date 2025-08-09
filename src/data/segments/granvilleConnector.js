@@ -22,13 +22,14 @@ export const GRANVILLE_CONNECTOR = [
   {
     description: "pine & 5th",
     type: "quiet",
-    videoIds: [VIDEOS.granvilleConnectorNb.id],
+    videoIds: [VIDEOS.granvilleConnectorNb.id, VIDEOS.granvilleConnectorSb.id],
+    videoIdsEndAtStart: [VIDEOS.granvilleConnectorSb.id],
     positions: [PINE_ARBUTUS_GREENWAY, [49.26712, -123.14327], W_OF_FIR_5TH],
   },
   {
     description: "crossing fir",
     type: "dedicated",
-    videoIds: [VIDEOS.granvilleConnectorNb.id],
+    videoIds: [VIDEOS.granvilleConnectorNb.id, VIDEOS.granvilleConnectorSb.id],
     positions: [
       W_OF_FIR_5TH,
       [49.26706, -123.14122],
@@ -91,7 +92,7 @@ export const GRANVILLE_CONNECTOR = [
     description: "pre-elevation",
     type: "combined",
     elevation: 0.5,
-    videoIds: [VIDEOS.granvilleConnectorNb.id],
+    videoIds: [VIDEOS.granvilleConnectorNb.id, VIDEOS.granvilleConnectorSb.id],
     positions: [
       FIR_5TH_NE,
       [49.26714, -123.14058],
@@ -116,7 +117,7 @@ export const GRANVILLE_CONNECTOR = [
     description: "elevated",
     type: "combined",
     elevation: 1,
-    videoIds: [VIDEOS.granvilleConnectorNb.id],
+    videoIds: [VIDEOS.granvilleConnectorSb.id, VIDEOS.granvilleConnectorNb.id],
     positions: [
       ELEVATION_S,
       [49.26817, -123.13854],
@@ -140,13 +141,14 @@ export const GRANVILLE_CONNECTOR = [
     description: "post-elevated, to neon",
     type: "dedicated",
     elevation: 0.5,
-    videoIds: [VIDEOS.granvilleConnectorNb.id],
+    videoIds: [VIDEOS.granvilleConnectorSb.id, VIDEOS.granvilleConnectorNb.id],
     positions: [ELEVATION_N, GRANVILLE_NEON_N],
   },
   {
     routeNames: [ROUTES.granvilleConnector.name],
     description: "neon to drake",
     type: "dedicated",
+    videoIds: [VIDEOS.granvilleConnectorSb.id],
     positions: [GRANVILLE_NEON_N, GRANVILLE_DRAKE_W],
   },
 ];
