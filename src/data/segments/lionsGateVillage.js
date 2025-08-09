@@ -69,7 +69,11 @@ export const LIONS_GATE_VILLAGE = [
       [49.32703, -123.12065],
       [49.32691, -123.12041],
       CAPILANO_FULLERTON_W,
-      CAPILANO_FULLERTON_E,
     ],
+  },
+  {
+    description: "fullerton crossing capilano",
+    type: "quiet",
+    positions: [CAPILANO_FULLERTON_W, CAPILANO_FULLERTON_E],
   },
 ];
