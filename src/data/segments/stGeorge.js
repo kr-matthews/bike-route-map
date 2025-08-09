@@ -1,10 +1,25 @@
-import { ST_GEORGE_6TH } from "../intersections";
+import { ST_GEORGE_10TH, ST_GEORGE_6TH } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
+const ST_GEORGE_8TH = [49.26353, -123.09301];
+const ST_GEORGE_8TH_ALLEY = [49.26302, -123.09302];
 const ST_GEORGE_7TH_N = [49.26439, -123.093];
 
 export const ST_GEORGE = [
+  {
+    routeNames: [ROUTES.stGeorge.name],
+    description: "10th to broadway+",
+    type: "quiet",
+    positions: [ST_GEORGE_10TH, ST_GEORGE_8TH_ALLEY],
+  },
+  {
+    routeNames: [ROUTES.stGeorge.name],
+    description: "broadway+ to 8th",
+    type: "quiet",
+    isClosed: true,
+    positions: [ST_GEORGE_8TH_ALLEY, ST_GEORGE_8TH],
+  },
   {
     routeNames: [ROUTES.stGeorge.name],
     description: "8th to 7th",

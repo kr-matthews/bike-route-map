@@ -6,6 +6,7 @@ import {
   HEATHER_10TH_N,
   HEATHER_10TH_S,
   ONTARIO_10TH,
+  ST_GEORGE_10TH,
   TRAFALGAR_10TH,
   VICTORIA_BROADWAY_SE,
   WINDSOR_10TH,
@@ -249,7 +250,7 @@ export const TENTH = [
     positions: [
       PRINCE_EDWARD_10TH_S_E,
       [49.26158, -123.09494],
-      [49.26157, -123.09303],
+      ST_GEORGE_10TH,
       [49.26155, -123.09107],
       [49.26153, -123.08912],
       [49.26151, -123.0872],
