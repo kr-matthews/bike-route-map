@@ -1320,11 +1320,11 @@ export const ROUTES = {
       "A brief alternative to Ridgeway which is one block over. Unfortunately it's a lot hillier than Ridgeway, but quieter and has a light instead of a 4-way stop at Elliott.",
   },
   kingEdward: {
-    name: "King Edward Ave",
+    name: "W King Edward Ave",
     regions: [REGIONS.vancouver],
     legs: [{ videos: {} }],
     notes:
-      "Flat in the middle with significant climbs out in either direction. The painted lanes are usually beside parked cars. The city is extending this route west from Quesnel to Dunbar, but painting won't be done until the weather improves in Spring 2025. The intersection at Arbutus was improved in late 2024.",
+      "Flat in the middle with significant climbs out in either direction. The painted lanes are usually beside parked cars. The intersection at Arbutus was improved in late 2024. In 2025 the route was extending west from Quesnel Dr to Dunbar St.",
   },
   knightStreetBridge: {
     name: "Knight Street Bridge",
