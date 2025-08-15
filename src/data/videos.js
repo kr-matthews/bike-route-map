@@ -1027,6 +1027,18 @@ const VIDEOS = {
     date: new Date("Oct 17 2024"),
     minutes: 4,
   },
+  kingEdwardEb: {
+    id: "fOk4J7Z6uqs",
+    tlId: "-4Xln67v1PM",
+    date: new Date("Aug 14 2025"),
+    minutes: 10,
+  },
+  kingEdwardWb: {
+    id: "g_Bd0MmVekk",
+    tlId: "zxXIXx6_wTk",
+    date: new Date("Aug 13 2025"),
+    minutes: 10,
+  },
   knightStBridgeNb: {
     id: "jHY8amhWxyU",
     tlId: "TvSAqBLCwns",

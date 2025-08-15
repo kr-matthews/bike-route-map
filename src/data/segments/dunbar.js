@@ -130,7 +130,8 @@ export const DUNBAR = [
     description: "nb: just after king edward",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.dunbarNb.id],
+    videoIds: [VIDEOS.dunbarNb.id, VIDEOS.kingEdwardWb.id],
+    videoIdsEndAtEnd: [VIDEOS.kingEdwardWb.id],
     positions: [DUNBAR_KING_EDWARD_NE, DUNBAR_NB_AFTER_KING_EDWARD],
   },
   {
@@ -210,7 +211,8 @@ export const DUNBAR = [
     description: "sb: crossing king edward ",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.dunbarSb.id],
+    videoIds: [VIDEOS.dunbarSb.id, VIDEOS.kingEdwardEb.id],
+    videoIdsStartAtStart: [VIDEOS.kingEdwardEb.id],
     positions: [
       DUNBAR_SB_BEFORE_KING_EDWARD,
       DUNBAR_KING_EDWARD_SW,

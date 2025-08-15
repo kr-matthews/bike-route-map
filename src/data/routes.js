@@ -1322,7 +1322,14 @@ export const ROUTES = {
   kingEdward: {
     name: "W King Edward Ave",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.kingEdwardEb,
+          westbound: VIDEOS.kingEdwardWb,
+        },
+      },
+    ],
     notes:
       "Flat in the middle with significant climbs out in either direction. The painted lanes are usually beside parked cars. The intersection at Arbutus was improved in late 2024. In 2025 the route was extending west from Quesnel Dr to Dunbar St.",
   },

@@ -128,12 +128,20 @@ export const CYPRESS = [
   },
   {
     routeNames: [ROUTES.cypress.name],
+    description: "angus crossing king edward nb",
+    type: "quiet",
+    oneWay: "required",
+    videoIds: [VIDEOS.cypressNb.id, VIDEOS.kingEdwardWb.id],
+    videoIdsStartAtStart: [VIDEOS.kingEdwardWb.id],
+    positions: [ANGUS_KING_EDWARD_S, ANGUS_KING_EDWARD_NE],
+  },
+  {
+    routeNames: [ROUTES.cypress.name],
     description: "angus median nb",
     type: "quiet",
     oneWay: "required",
     videoIds: [VIDEOS.cypressNb.id],
     positions: [
-      ANGUS_KING_EDWARD_S,
       ANGUS_KING_EDWARD_NE,
       [49.25003, -123.14596],
       [49.25029, -123.14589],
