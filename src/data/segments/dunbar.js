@@ -215,8 +215,8 @@ export const DUNBAR = [
     videoIdsStartAtStart: [VIDEOS.kingEdwardEb.id],
     positions: [
       DUNBAR_SB_BEFORE_KING_EDWARD,
-      DUNBAR_KING_EDWARD_SW,
       DUNBAR_KING_EDWARD_NW,
+      DUNBAR_KING_EDWARD_SW,
     ],
   },
   {
@@ -225,7 +225,7 @@ export const DUNBAR = [
     type: "shared",
     oneWay: "required",
     videoIds: [VIDEOS.dunbarSb.id],
-    positions: [DUNBAR_KING_EDWARD_NW, DUNBAR_SB_AFTER_KING_EDWARD],
+    positions: [DUNBAR_KING_EDWARD_SW, DUNBAR_SB_AFTER_KING_EDWARD],
   },
   {
     routeNames: [ROUTES.dunbar.name],
