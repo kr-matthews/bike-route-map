@@ -368,7 +368,11 @@ export const ROUTES = {
   bellevue: {
     name: "Bellevue Ave",
     regions: [REGIONS.westVancouver],
-    legs: [{ videos: { westbound: VIDEOS.bellevueWb } }],
+    legs: [
+      {
+        videos: { eastbound: VIDEOS.bellevueEb, westbound: VIDEOS.bellevueWb },
+      },
+    ],
     notes:
       "The east end is flat and has a lot of traffic and all-way stops. The west end is quiet, but quite narrow and with some minor hills.",
   },
@@ -2145,7 +2149,9 @@ export const ROUTES = {
   seaview: {
     name: "Seaview",
     regions: [REGIONS.westVancouver],
-    legs: [{ videos: { westbound: VIDEOS.seaviewWb } }],
+    legs: [
+      { videos: { eastbound: VIDEOS.seaviewEb, westbound: VIDEOS.seaviewWb } },
+    ],
     notes:
       "A nice flat path, formerly a train track (which now goes through a tunnel instead). Tends to have plenty of dogs. The east end is only accessible via a steep gravel hill (with optional stairs), and only connects to Marine Dr.",
   },
@@ -2479,7 +2485,14 @@ export const ROUTES = {
     name: "Westport/Southridge/Westmount/Mathers+",
     shortName: "Westport/Mathers+",
     regions: [REGIONS.westVancouver],
-    legs: [{ videos: { westbound: VIDEOS.westportMathersWb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.westportMathersEb,
+          westbound: VIDEOS.westportMathersWb,
+        },
+      },
+    ],
     notes:
       "One of three ways to get to Horseshoe Bay, though it doesn't actually go all the way. Lots of steep hills, though the uphill sections tend to be a painted lane. The painted lanes are beside the curb. Lots of turns, but the signs are mostly well-placed at intersections - though the route has no name and it's just a picture of a bike so you can't distinguish which way to go when it intersects another bike route.",
   },

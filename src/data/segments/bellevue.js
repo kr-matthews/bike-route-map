@@ -27,6 +27,7 @@ export const BELLEVUE = [
   {
     description: "31st/procter/park",
     type: "quiet",
+    videoIds: [VIDEOS.bellevueEb.id],
     positions: [
       THIRTY_FIRST_MARINE_SE,
       [49.33972, -123.20255],
@@ -70,7 +71,7 @@ export const BELLEVUE = [
     routeNames: [ROUTES.bellevue.name],
     description: "29th to 25th",
     type: "quiet",
-    videoIds: [VIDEOS.bellevueWb.id],
+    videoIds: [VIDEOS.bellevueEb.id, VIDEOS.bellevueWb.id],
     positions: [
       TWENTY_NINTH_PARK,
       [49.33641, -123.19515],
@@ -104,6 +105,7 @@ export const BELLEVUE = [
     description: "split eb 1",
     type: "quiet",
     oneWay: "required",
+    videoIds: [VIDEOS.bellevueEb.id],
     positions: [TWENTY_FIFTH_BELLEVUE_S, TWENTY_FOURTH_BELLEVUE_S],
   },
   {
@@ -111,6 +113,7 @@ export const BELLEVUE = [
     description: "split eb 2",
     type: "quiet",
     oneWay: "recommended",
+    videoIds: [VIDEOS.bellevueEb.id],
     positions: [TWENTY_FOURTH_BELLEVUE_S, TWENTY_FOURTH_BELLEVUE_N],
   },
   {
@@ -137,7 +140,7 @@ export const BELLEVUE = [
     routeNames: [ROUTES.bellevue.name],
     description: "24th to 22nd",
     type: "quiet",
-    videoIds: [VIDEOS.bellevueWb.id],
+    videoIds: [VIDEOS.bellevueEb.id, VIDEOS.bellevueWb.id],
     positions: [
       TWENTY_FOURTH_BELLEVUE_N,
       [49.3332, -123.17914],
@@ -160,7 +163,7 @@ export const BELLEVUE = [
     routeNames: [ROUTES.bellevue.name],
     description: "22nd to 14th",
     type: "shared",
-    videoIds: [VIDEOS.bellevueWb.id],
+    videoIds: [VIDEOS.bellevueWb.id, VIDEOS.bellevueEb.id],
     positions: [
       TWENTY_SECOND_BELLEVUE,
       [49.32885, -123.16812],
@@ -187,6 +190,7 @@ export const BELLEVUE = [
     description: "14th to spirit trail",
     type: "quiet",
     oneWay: "required",
+    videoIds: [VIDEOS.bellevueEb.id],
     positions: [FOURTEENTH_BELLEVUE, [49.32725, -123.15453], ARGYLE_14TH_W],
   },
   {

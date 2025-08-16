@@ -4,11 +4,12 @@ import {
   KEITH_MARINE,
   MARINE_GREENLEAF,
   MARINE_MARINE_MARINE,
+  RALEIGH_CHATHAM,
   ROYAL_CHATHAM,
   THE_DALE_MARINE,
-  THIRTY_FIRST_MARINE_E,
   THIRTY_FIRST_MARINE_NE,
   THIRTY_FIRST_MARINE_SE,
+  THIRTY_FIRST_MARINE_W,
   TWENTY_NINTH_MARINE_N,
   TWENTY_NINTH_MARINE_S,
   WESTPORT_MARINE,
@@ -17,6 +18,7 @@ import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 const WELLINGTON_MARINE = [49.37034, -123.28128];
+const NELSON_CHATHAM = [49.37185, -123.27815];
 const NELSON_MARINE = [49.37029, -123.27978];
 const MARINE_ORCHILL = [49.36328, -123.27737];
 const MARINE_ORCHILL_S = [49.36324, -123.27739];
@@ -36,7 +38,7 @@ const PARK_ROYAL_MARINE_NW = [49.32699, -123.14053];
 export const MARINE_WV = [
   // horseshoe bay
   {
-    description: "nelson/chatham",
+    description: "nelson",
     type: "shared",
     videoIds: [VIDEOS.marineDrWb.id],
     positions: [
@@ -45,10 +47,21 @@ export const MARINE_WV = [
       [49.37061, -123.27911],
       [49.37067, -123.27901],
       [49.37078, -123.27892],
-      [49.37185, -123.27815],
-      [49.37178, -123.27799],
-      ROYAL_CHATHAM,
+      NELSON_CHATHAM,
     ],
+  },
+  {
+    description: "chatham tiny bit",
+    type: "shared",
+    videoIds: [VIDEOS.marineDrWb.id, VIDEOS.seaviewEb.id],
+    videoIdsStartAtStart: [VIDEOS.seaviewEb.id],
+    positions: [NELSON_CHATHAM, RALEIGH_CHATHAM],
+  },
+  {
+    description: "chatham",
+    type: "shared",
+    videoIds: [VIDEOS.marineDrWb.id],
+    positions: [RALEIGH_CHATHAM, ROYAL_CHATHAM],
   },
   {
     description: "royal",
@@ -444,9 +457,10 @@ export const MARINE_WV = [
     videoIds: [
       VIDEOS.marineDrWb.id,
       VIDEOS.greenleafEb.id,
+      VIDEOS.westportMathersEb.id,
       VIDEOS.westportMathersWb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.greenleafEb.id],
+    videoIdsStartAtStart: [VIDEOS.greenleafEb.id, VIDEOS.westportMathersEb.id],
     videoIdsEndAtStart: [VIDEOS.westportMathersWb.id],
     positions: [
       MARINE_VERDUN,
@@ -725,8 +739,19 @@ export const MARINE_WV = [
       [49.34178, -123.2108],
       [49.34099, -123.20654],
       [49.34032, -123.20306],
-      THIRTY_FIRST_MARINE_E,
+      THIRTY_FIRST_MARINE_W,
     ],
+  },
+  {
+    routeNames: [ROUTES.marineWv.name],
+    description: "eb crossing 31st",
+    type: "shared",
+    oneWay: "required",
+    hideArrows: true,
+    videoIds: [VIDEOS.bellevueEb.id, VIDEOS.westportMathersEb.id],
+    videoIdsEndAtEnd: [VIDEOS.westportMathersEb.id],
+    videoIdsStartAtStart: [VIDEOS.bellevueEb.id],
+    positions: [THIRTY_FIRST_MARINE_W, THIRTY_FIRST_MARINE_SE],
   },
   {
     routeNames: [ROUTES.marineWv.name],
@@ -734,7 +759,6 @@ export const MARINE_WV = [
     type: "painted",
     oneWay: "required",
     positions: [
-      THIRTY_FIRST_MARINE_E,
       THIRTY_FIRST_MARINE_SE,
       [49.3401, -123.20221],
       [49.33988, -123.20095],
@@ -769,8 +793,16 @@ export const MARINE_WV = [
       [49.33987, -123.20061],
       [49.33992, -123.20083],
       THIRTY_FIRST_MARINE_NE,
-      THIRTY_FIRST_MARINE_E,
     ],
+  },
+  {
+    routeNames: [ROUTES.marineWv.name],
+    description: "wb crossing 31st",
+    type: "shared",
+    oneWay: "required",
+    hideArrows: true,
+    videoIds: [VIDEOS.marineDrWb.id],
+    positions: [THIRTY_FIRST_MARINE_NE, THIRTY_FIRST_MARINE_W],
   },
   {
     routeNames: [ROUTES.marineWv.name],

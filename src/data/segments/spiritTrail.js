@@ -131,15 +131,20 @@ export const SPIRIT_TRAIL = [
     routeNames: [ROUTES.spiritTrail.name],
     description: "across 14th",
     type: "comfortable",
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [VIDEOS.spiritTrailEb.id, VIDEOS.bellevueEb.id],
     positions: [ARGYLE_14TH_W, [49.3271, -123.15451], ARGYLE_14TH_E],
   },
   {
     routeNames: [ROUTES.spiritTrail.name],
     description: "14th to east of 13th",
     type: "comfortable",
-    videoIds: [VIDEOS.spiritTrailEb.id, VIDEOS.bellevueWb.id],
+    videoIds: [
+      VIDEOS.spiritTrailEb.id,
+      VIDEOS.bellevueWb.id,
+      VIDEOS.bellevueEb.id,
+    ],
     videoIdsStartAtEnd: [VIDEOS.bellevueWb.id],
+    videoIdsEndAtEnd: [VIDEOS.bellevueEb.id],
     positions: [
       ARGYLE_14TH_E,
       [49.32695, -123.15331],
