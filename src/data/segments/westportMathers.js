@@ -12,6 +12,7 @@ import { VIDEOS } from "../videos";
 const WESTPORT_WESTPORT_W = [49.36045, -123.25795];
 const WESTPORT_WESTWOOD_SE = [49.35577, -123.25323];
 const NORTHWOOD_WESTPORT_WS = [49.35221, -123.25133];
+const E_OF_NORTHWOOD_WESTPORT = [49.35205, -123.25044];
 const WOODCREST_WOODGREEN = [49.35144, -123.24449];
 const CYPRESS_CREEK_W = [49.3497, -123.23821];
 const CYPRESS_CREEK_E = [49.34949, -123.23705];
@@ -214,12 +215,24 @@ export const WESTPORT_MATHERS = [
   },
   {
     routeNames: [ROUTES.westportMathers.name],
+    description: "just east of northwood",
+    type: "shared",
+    videoIds: [
+      VIDEOS.westportMathersWb.id,
+      VIDEOS.caulfeildEastSb.id,
+      VIDEOS.caulfeildWestNb.id,
+    ],
+    videoIdsStartAtEnd: [VIDEOS.caulfeildEastSb.id],
+    videoIdsEndAtEnd: [VIDEOS.caulfeildWestNb.id],
+    positions: [NORTHWOOD_WESTPORT, E_OF_NORTHWOOD_WESTPORT],
+  },
+  {
+    routeNames: [ROUTES.westportMathers.name],
     description: "westport/woodgreen",
     type: "shared",
     videoIds: [VIDEOS.westportMathersWb.id],
     positions: [
-      NORTHWOOD_WESTPORT,
-      [49.35201, -123.25044],
+      E_OF_NORTHWOOD_WESTPORT,
       [49.35184, -123.24949],
       [49.35178, -123.24901],
       [49.3517, -123.24785],

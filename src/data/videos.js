@@ -398,6 +398,17 @@ const VIDEOS = {
     date: new Date("Oct 28 2023"),
     minutes: 6,
   },
+  caulfeildEastSb: {
+    id: "il-pR5j-fH0",
+    date: new Date("Aug 09 2025"),
+    minutes: 5,
+  },
+  caulfeildWestNb: {
+    id: "1CMQGTQgXf0",
+    tlId: "-FBaFmta2iQ",
+    date: new Date("Aug 09 2025"),
+    minutes: 14,
+  },
   centralParkPerimeterTrailCw: {
     id: "Bx7w0uajqmA",
     tlId: "Seig6PQrx_g",

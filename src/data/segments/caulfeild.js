@@ -4,6 +4,7 @@ import {
   THE_DALE_MARINE,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { VIDEOS } from "../videos";
 
 const HEADLAND_DECOURCY = [49.34266, -123.25676];
 const DECOURCY_E = [49.34272, -123.25568];
@@ -18,6 +19,8 @@ export const CAULFEILD = [
     routeNames: [ROUTES.caulfeild.name],
     description: "keith, willow creek",
     type: "shared",
+    videoIds: [VIDEOS.caulfeildEastSb.id],
+    videoIdsEndAtStart: [VIDEOS.caulfeildEastSb.id],
     positions: [
       KEITH_MARINE,
       [49.3412, -123.24175],
@@ -58,6 +61,7 @@ export const CAULFEILD = [
     routeNames: [ROUTES.caulfeild.name],
     description: "dale, headland",
     type: "shared",
+    videoIds: [VIDEOS.caulfeildWestNb.id],
     positions: [
       THE_DALE_MARINE,
       [49.34109, -123.25877],
@@ -96,6 +100,7 @@ export const CAULFEILD = [
     routeNames: [ROUTES.caulfeild.name],
     description: "decourcy",
     type: "quiet",
+    videoIds: [VIDEOS.caulfeildWestNb.id],
     positions: [
       HEADLAND_DECOURCY,
       [49.3427, -123.25664],
@@ -108,6 +113,7 @@ export const CAULFEILD = [
     routeNames: [ROUTES.caulfeild.name],
     description: "path",
     type: "mixed",
+    videoIds: [VIDEOS.caulfeildWestNb.id],
     positions: [
       DECOURCY_E,
       [49.34275, -123.25559],
@@ -120,6 +126,7 @@ export const CAULFEILD = [
     routeNames: [ROUTES.caulfeild.name],
     description: "caulfeild quiet",
     type: "quiet",
+    videoIds: [VIDEOS.caulfeildWestNb.id],
     positions: [
       CAULFEILD_LANE_W,
       [49.34298, -123.25486],
@@ -143,6 +150,7 @@ export const CAULFEILD = [
     routeNames: [ROUTES.caulfeild.name],
     description: "caulfeild busy",
     type: "shared",
+    videoIds: [VIDEOS.caulfeildWestNb.id],
     positions: [
       CAULFEILD_KEITH,
       [49.3437, -123.25249],
@@ -176,6 +184,7 @@ export const CAULFEILD = [
     description: "northwood, caulfeild",
     type: "shared",
     elevation: 0.5,
+    videoIds: [VIDEOS.caulfeildEastSb.id, VIDEOS.caulfeildWestNb.id],
     positions: [
       WILLOW_CREEK_CAULFEILD,
       [49.34904, -123.24563],
@@ -220,6 +229,7 @@ export const CAULFEILD = [
     description: "northwood overpass",
     type: "shared",
     elevation: 1,
+    videoIds: [VIDEOS.caulfeildEastSb.id, VIDEOS.caulfeildWestNb.id],
     positions: [
       NORTHWOOD_OVERPASS_S,
       [49.35161, -123.25151],
@@ -231,6 +241,7 @@ export const CAULFEILD = [
     description: "northwood n",
     type: "shared",
     elevation: 0.5,
+    videoIds: [VIDEOS.caulfeildEastSb.id, VIDEOS.caulfeildWestNb.id],
     positions: [NORTHWOOD_OVERPASS_N, NORTHWOOD_WESTPORT],
   },
 ];

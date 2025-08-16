@@ -24,6 +24,7 @@ const MARINE_VERDUN = [49.35338, -123.26097];
 const MARINE_GREENLEAF_POST = [49.35068, -123.26638];
 const PRE_BEACON_MARINE = [49.34089, -123.26414];
 const BEACON_MARINE = [49.34072, -123.26325];
+const E_OF_THE_DALE = [49.34089, -123.25812];
 const PICCADILLY_PILOT_HOUSE = [49.33891, -123.25509];
 const HIGHWAY_PICCADILLY = [49.34028, -123.25189];
 const PICCADILLY_S_MARINE = [49.34106, -123.24838];
@@ -562,7 +563,7 @@ export const MARINE_WV = [
   },
   {
     routeNames: [ROUTES.marineWv.name],
-    description: "lighthouse park to piccadilly s",
+    description: "lighthouse park to the dale",
     type: "shared",
     videoIds: [VIDEOS.marineDrWb.id],
     positions: [
@@ -580,9 +581,28 @@ export const MARINE_WV = [
       [49.34043, -123.2597],
       [49.34082, -123.25896],
       THE_DALE_MARINE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.marineWv.name],
+    description: "fire station",
+    type: "shared",
+    videoIds: [VIDEOS.marineDrWb.id, VIDEOS.caulfeildWestNb.id],
+    videoIdsStartAtEnd: [VIDEOS.caulfeildWestNb.id],
+    positions: [
+      THE_DALE_MARINE,
       [49.34092, -123.25852],
       [49.34091, -123.25828],
-      [49.34089, -123.25812],
+      E_OF_THE_DALE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.marineWv.name],
+    description: "fire station to piccadilly s",
+    type: "shared",
+    videoIds: [VIDEOS.marineDrWb.id],
+    positions: [
+      E_OF_THE_DALE,
       [49.34083, -123.25789],
       [49.34044, -123.25692],
       [49.34035, -123.25658],

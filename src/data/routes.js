@@ -635,7 +635,10 @@ export const ROUTES = {
   caulfeild: {
     name: "Caulfeild",
     regions: [REGIONS.westVancouver],
-    legs: [{ videos: {} }],
+    legs: [
+      { name: "West branch", videos: { northbound: VIDEOS.caulfeildWestNb } },
+      { name: "East branch", videos: { southbound: VIDEOS.caulfeildEastSb } },
+    ],
     notes: "Steep winding hills with roads intended for cars.",
   },
   centralParkPerimeterTrail: {
