@@ -40,7 +40,7 @@ export const MARINE_WV = [
   {
     description: "nelson",
     type: "shared",
-    videoIds: [VIDEOS.marineDrWb.id],
+    videoIds: [VIDEOS.marineDrWb.id, VIDEOS.stGeorgesWb.id],
     positions: [
       NELSON_MARINE,
       [49.37048, -123.27947],
@@ -53,14 +53,19 @@ export const MARINE_WV = [
   {
     description: "chatham tiny bit",
     type: "shared",
-    videoIds: [VIDEOS.marineDrWb.id, VIDEOS.seaviewEb.id],
+    videoIds: [
+      VIDEOS.marineDrWb.id,
+      VIDEOS.seaviewEb.id,
+      VIDEOS.stGeorgesWb.id,
+    ],
     videoIdsStartAtStart: [VIDEOS.seaviewEb.id],
     positions: [NELSON_CHATHAM, RALEIGH_CHATHAM],
   },
   {
     description: "chatham",
     type: "shared",
-    videoIds: [VIDEOS.marineDrWb.id],
+    videoIds: [VIDEOS.marineDrWb.id, VIDEOS.stGeorgesWb.id],
+    videoIdsEndAtEnd: [VIDEOS.stGeorgesWb.id],
     positions: [RALEIGH_CHATHAM, ROYAL_CHATHAM],
   },
   {
@@ -75,7 +80,7 @@ export const MARINE_WV = [
   {
     description: "orchill/st georges/nelson",
     type: "quiet",
-    videoIds: [VIDEOS.stGeorgesEb.id],
+    videoIds: [VIDEOS.stGeorgesWb.id, VIDEOS.stGeorgesEb.id],
     positions: [
       MARINE_ORCHILL,
       [49.3633, -123.2775],
@@ -105,7 +110,7 @@ export const MARINE_WV = [
   {
     description: "greenleaf",
     type: "quiet",
-    videoIds: [VIDEOS.greenleafEb.id],
+    videoIds: [VIDEOS.greenleafEb.id, VIDEOS.greenleafWb.id],
     positions: [
       MARINE_GREENLEAF,
       [49.35123, -123.26575],
@@ -142,7 +147,7 @@ export const MARINE_WV = [
   {
     description: "beacon/water",
     type: "quiet",
-    videoIds: [VIDEOS.waterPiccadillyEb.id],
+    videoIds: [VIDEOS.waterPiccadillyWb.id, VIDEOS.waterPiccadillyEb.id],
     positions: [
       BEACON_MARINE,
       [49.34061, -123.2633],
@@ -193,6 +198,7 @@ export const MARINE_WV = [
     description: "highway/pilot house",
     type: "quiet",
     oneWay: "required",
+    videoIds: [VIDEOS.waterPiccadillyWb.id],
     positions: [
       HIGHWAY_PICCADILLY,
       [49.34006, -123.25193],
@@ -215,7 +221,7 @@ export const MARINE_WV = [
   {
     description: "piccadilly s",
     type: "quiet",
-    videoIds: [VIDEOS.waterPiccadillyEb.id],
+    videoIds: [VIDEOS.waterPiccadillyWb.id, VIDEOS.waterPiccadillyEb.id],
     positions: [
       HIGHWAY_PICCADILLY,
       [49.34037, -123.25172],
@@ -357,7 +363,12 @@ export const MARINE_WV = [
     routeNames: [ROUTES.marineWv.name],
     description: "at orchill",
     type: "shared",
-    videoIds: [VIDEOS.marineDrWb.id, VIDEOS.stGeorgesEb.id],
+    videoIds: [
+      VIDEOS.marineDrWb.id,
+      VIDEOS.stGeorgesWb.id,
+      VIDEOS.stGeorgesEb.id,
+    ],
+    videoIdsStartAtEnd: [VIDEOS.stGeorgesWb.id],
     videoIdsEndAtEnd: [VIDEOS.stGeorgesEb.id],
     positions: [MARINE_ORCHILL, MARINE_ORCHILL_S],
   },
@@ -457,11 +468,12 @@ export const MARINE_WV = [
     videoIds: [
       VIDEOS.marineDrWb.id,
       VIDEOS.greenleafEb.id,
+      VIDEOS.greenleafWb.id,
       VIDEOS.westportMathersEb.id,
       VIDEOS.westportMathersWb.id,
     ],
     videoIdsStartAtStart: [VIDEOS.greenleafEb.id, VIDEOS.westportMathersEb.id],
-    videoIdsEndAtStart: [VIDEOS.westportMathersWb.id],
+    videoIdsEndAtStart: [VIDEOS.greenleafWb.id, VIDEOS.westportMathersWb.id],
     positions: [
       MARINE_VERDUN,
       [49.35326, -123.26083],
@@ -510,7 +522,12 @@ export const MARINE_WV = [
     routeNames: [ROUTES.marineWv.name],
     description: "post greenleaf",
     type: "shared",
-    videoIds: [VIDEOS.greenleafEb.id, VIDEOS.marineDrWb.id],
+    videoIds: [
+      VIDEOS.greenleafEb.id,
+      VIDEOS.marineDrWb.id,
+      VIDEOS.greenleafWb.id,
+    ],
+    videoIdsStartAtEnd: [VIDEOS.greenleafWb.id],
     videoIdsEndAtEnd: [VIDEOS.greenleafEb.id],
     positions: [
       MARINE_GREENLEAF,
@@ -566,8 +583,13 @@ export const MARINE_WV = [
     routeNames: [ROUTES.marineWv.name],
     description: "near beacon",
     type: "shared",
-    videoIds: [VIDEOS.marineDrWb.id, VIDEOS.waterPiccadillyEb.id],
+    videoIds: [
+      VIDEOS.marineDrWb.id,
+      VIDEOS.waterPiccadillyWb.id,
+      VIDEOS.waterPiccadillyEb.id,
+    ],
     videoIdsStartAtStart: [VIDEOS.waterPiccadillyEb.id],
+    videoIdsEndAtStart: [VIDEOS.waterPiccadillyWb.id],
     positions: [
       PRE_BEACON_MARINE,
       [49.34081, -123.26387],
@@ -640,7 +662,12 @@ export const MARINE_WV = [
     routeNames: [ROUTES.marineWv.name],
     description: "piccadilly",
     type: "shared",
-    videoIds: [VIDEOS.marineDrWb.id, VIDEOS.waterPiccadillyEb.id],
+    videoIds: [
+      VIDEOS.marineDrWb.id,
+      VIDEOS.waterPiccadillyWb.id,
+      VIDEOS.waterPiccadillyEb.id,
+    ],
+    videoIdsStartAtEnd: [VIDEOS.waterPiccadillyWb.id],
     videoIdsEndAtEnd: [VIDEOS.waterPiccadillyEb.id],
     positions: [
       PICCADILLY_S_MARINE,

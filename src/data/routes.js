@@ -1497,15 +1497,24 @@ export const ROUTES = {
       { videos: { westbound: VIDEOS.marineDrWb } },
       {
         name: "St Georges Ave: Alternate Route",
-        videos: { eastbound: VIDEOS.stGeorgesEb },
+        videos: {
+          eastbound: VIDEOS.stGeorgesEb,
+          westbound: VIDEOS.stGeorgesWb,
+        },
       },
       {
         name: "Greenleaf Rd: Alternate Route",
-        videos: { eastbound: VIDEOS.greenleafEb },
+        videos: {
+          eastbound: VIDEOS.greenleafEb,
+          westbound: VIDEOS.greenleafWb,
+        },
       },
       {
         name: "Water Ln/Piccadilly S: Alternate Route",
-        videos: { eastbound: VIDEOS.waterPiccadillyEb },
+        videos: {
+          eastbound: VIDEOS.waterPiccadillyEb,
+          westbound: VIDEOS.waterPiccadillyWb,
+        },
       },
     ],
     notes:

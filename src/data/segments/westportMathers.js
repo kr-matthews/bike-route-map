@@ -34,6 +34,7 @@ export const WESTPORT_MATHERS = [
       VIDEOS.westportMathersEb.id,
       VIDEOS.greenleafEb.id,
       VIDEOS.westportMathersWb.id,
+      VIDEOS.greenleafWb.id,
     ],
     positions: [
       WESTPORT_MARINE,
