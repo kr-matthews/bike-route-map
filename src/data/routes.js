@@ -2094,7 +2094,10 @@ export const ROUTES = {
       },
       {
         name: "Jericho & Spanish Banks",
-        videos: { westbound: VIDEOS.seasideJerichoWb },
+        videos: {
+          eastbound: VIDEOS.seasideJerichoEb,
+          westbound: VIDEOS.seasideJerichoWb,
+        },
       },
       {
         name: "Laurel Landbridge",
@@ -2102,7 +2105,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "Flat. Includes the well-known Seawall. There are some brief sections on quiet roads (in Kitsilano). Besides Jericho & Spanish Banks, the majority has separation from pedestrians. Can get crowded at times when sunny. A portion near Science World is closed indefinitely, but there's a detour set up.",
+      "Flat. Includes the well-known Seawall. There are some brief sections on quiet roads (in Kitsilano). Besides Jericho & Spanish Banks, the majority has separation from pedestrians. Can get crowded at times when sunny. A portion near Science World was re-built in 2025 due to structural problems with the deck. Canyon Creek, at Spanish Banks, was re-built in 2025.",
   },
   seasideBypass: {
     name: "Seaside Bypass",

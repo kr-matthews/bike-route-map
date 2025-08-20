@@ -1710,6 +1710,12 @@ const VIDEOS = {
     date: new Date("Oct 09 2023"),
     minutes: 14,
   },
+  seasideJerichoEb: {
+    id: "Ad6tkQbHqmM",
+    tlId: "PShz4tF9dy4",
+    date: new Date("Aug 16 2025"),
+    minutes: 13,
+  },
   seasideJerichoWb: {
     id: "7f4if7YfkkU",
     tlId: "2OadAYsbQRM",
