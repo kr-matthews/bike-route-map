@@ -3,13 +3,13 @@ import {
   BURRARD_DRAKE_W,
   GRANVILLE_DRAKE_W,
   HORNBY_DRAKE,
+  HOWE_DRAKE_W,
   ROLSTON_DRAKE_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
 const HORNBY_DRAKE_E_ALLEY = [49.27704, -123.12935];
-const HOWE_DRAKE_W = [49.27675, -123.12888];
 
 export const DRAKE = [
   {
@@ -39,7 +39,8 @@ export const DRAKE = [
     routeNames: [ROUTES.drake.name],
     description: "hornby alley to howe",
     type: "dedicated",
-    videoIds: [VIDEOS.drakeEb.id],
+    videoIds: [VIDEOS.drakeEb.id, VIDEOS.granvilleConnectorHoweSb.id],
+    videoIdsStartAtStart: [VIDEOS.granvilleConnectorHoweSb.id],
     positions: [HORNBY_DRAKE_E_ALLEY, HOWE_DRAKE_W],
   },
   {

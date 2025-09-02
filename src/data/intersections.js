@@ -481,6 +481,7 @@ export const HORNBY_PACIFIC_SE = [49.2762, -123.13145];
 export const HORNBY_SEABREEZE = [49.27482, -123.13362];
 export const HORNBY_SMITHE = [49.28158, -123.12331];
 export const HORSESHOE_BAY_SW = [49.36385, -123.27609];
+export const HOWE_DRAKE_W = [49.27675, -123.12888];
 export const HOWES_DYKE = [49.18208, -122.94266];
 export const HOWES_EWEN_SE = [49.18619, -122.94654];
 export const HOWES_EWEN_SW = [49.18613, -122.9467];

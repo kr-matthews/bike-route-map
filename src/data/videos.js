@@ -11,6 +11,11 @@ const VIDEOS = {
     date: new Date("Apr 19 2025"),
     minutes: 4,
   },
+  agnesWb: {
+    id: "4eoOrj843Hw",
+    date: new Date("Aug 28 2025"),
+    minutes: 3,
+  },
   agronomyEb: {
     id: "ciz8N2cCmeo",
     tlId: "za3yVlQ-ZJk",
@@ -383,6 +388,11 @@ const VIDEOS = {
     tlId: "VovbEE7tHHk",
     date: new Date("May 09 2024"),
     minutes: 11,
+  },
+  carnarvonEb: {
+    id: "dcasMRvTAv4",
+    date: new Date("Aug 28 2025"),
+    minutes: 5,
   },
   carnarvonWb: {
     id: "tMAVmYiY2k8",
@@ -839,6 +849,11 @@ const VIDEOS = {
     id: "DsJjOBrFd0E",
     date: new Date("Aug 09 2025"),
     minutes: 0,
+  },
+  granvilleConnectorHoweSb: {
+    id: "f9nM8ooe9x4",
+    date: new Date("Aug 29 2025"),
+    minutes: 1,
   },
   granvilleWb: {
     id: "b9eFnAItgIo",

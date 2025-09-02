@@ -176,7 +176,9 @@ export const ROUTES = {
   agnes: {
     name: "Agnes St",
     regions: [REGIONS.newWestminster],
-    legs: [{ videos: { eastbound: VIDEOS.agnesEb } }],
+    legs: [
+      { videos: { eastbound: VIDEOS.agnesEb, westbound: VIDEOS.agnesWb } },
+    ],
     notes:
       "Relatively flat and quiet. The city plans on adding a similar route up Seventh St.",
   },
@@ -614,7 +616,14 @@ export const ROUTES = {
   carnarvon: {
     name: "Carnarvon St",
     regions: [REGIONS.newWestminster],
-    legs: [{ videos: { westbound: VIDEOS.carnarvonWb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.carnarvonEb,
+          westbound: VIDEOS.carnarvonWb,
+        },
+      },
+    ],
     notes:
       "A gradual hill connecting to New Westminster station on the Expo line. The west half is just a busy car road.",
   },
@@ -1101,7 +1110,11 @@ export const ROUTES = {
         videos: { southbound: VIDEOS.granvilleConnectorFirSb },
       },
       {
-        name: "From downtown Granville St",
+        name: "Via Howe St on-ramp",
+        videos: { southbound: VIDEOS.granvilleConnectorHoweSb },
+      },
+      {
+        name: "Via downtown Granville St",
         videos: { southbound: VIDEOS.granvilleConnectorGranvilleSb },
       },
     ],

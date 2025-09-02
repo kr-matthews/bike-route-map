@@ -7,8 +7,9 @@ export const AGNES = [
     routeNames: [ROUTES.agnes.name],
     description: "primary",
     type: "dedicated",
-    videoIds: [VIDEOS.agnesEb.id],
+    videoIds: [VIDEOS.agnesWb.id, VIDEOS.agnesEb.id],
     videoIdsStartAtStart: [VIDEOS.agnesEb.id],
+    videoIdsEndAtStart: [VIDEOS.agnesWb.id],
     positions: [
       [49.20409, -122.91125],
       [49.20483, -122.90985],
@@ -26,6 +27,8 @@ export const AGNES = [
     routeNames: [ROUTES.agnes.name],
     description: "east bit",
     type: "dedicated",
+    videoIds: [VIDEOS.agnesWb.id],
+    videoIdsStartAtEnd: [VIDEOS.agnesWb.id],
     positions: [FIRST_AGNES, [49.20946, -122.90125]],
   },
 ];

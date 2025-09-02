@@ -1,6 +1,7 @@
 import {
   FIR_5TH,
   GRANVILLE_DRAKE_W,
+  HOWE_DRAKE_W,
   PINE_ARBUTUS_GREENWAY,
   ROLSTON_DRAKE_SW,
   ROLSTON_PACIFIC_E,
@@ -13,6 +14,8 @@ const W_OF_FIR_5TH = [49.2671, -123.14128];
 const FIR_5TH_NE = [49.26714, -123.14083];
 const ELEVATION_S = [49.26764, -123.13858];
 const ELEVATION_N = [49.27522, -123.12927];
+const HOWE_ELEVATION_START = [49.2764, -123.12939];
+const HOWE_PROTECTED_START = [49.27525, -123.13036];
 const GRANVILLE_HOWE = [49.27427, -123.13085];
 const GRANVILLE_NEON_N = [49.27572, -123.12852];
 const ROLSTON_NEON_NE = [49.27535, -123.12788];
@@ -95,12 +98,41 @@ export const GRANVILLE_CONNECTOR = [
     positions: [GRANVILLE_PAINT_START, GRANVILLE_DRAKE_W],
   },
   {
-    description: "howe onramp",
+    description: "howe onramp 1",
+    type: "shared",
+    oneWay: "required",
+    undesignated: true,
+    elevation: 0.5,
+    videoIds: [VIDEOS.granvilleConnectorHoweSb.id],
+    positions: [HOWE_DRAKE_W, HOWE_ELEVATION_START],
+  },
+  {
+    description: "howe onramp 2",
+    type: "shoulder",
+    oneWay: "required",
+    undesignated: true,
+    elevation: 1,
+    videoIds: [VIDEOS.granvilleConnectorHoweSb.id],
+    positions: [
+      HOWE_ELEVATION_START,
+      [49.27625, -123.12956],
+      [49.27611, -123.12978],
+      [49.276, -123.12995],
+      [49.27592, -123.13003],
+      [49.27583, -123.13011],
+      [49.27574, -123.13016],
+      HOWE_PROTECTED_START,
+    ],
+  },
+  {
+    description: "howe onramp 3",
     type: "dedicated",
     oneWay: "required",
     elevation: 1,
+    videoIds: [VIDEOS.granvilleConnectorHoweSb.id],
+    videoIdsEndAtEnd: [VIDEOS.granvilleConnectorHoweSb.id],
     positions: [
-      [49.27525, -123.13036],
+      HOWE_PROTECTED_START,
       [49.27459, -123.13064],
       [49.27443, -123.13072],
       GRANVILLE_HOWE,

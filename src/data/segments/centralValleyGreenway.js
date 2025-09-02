@@ -1345,8 +1345,10 @@ export const CENTRAL_VALLEY_GREENWAY = [
       VIDEOS.bcParkwayNWWb.id,
       VIDEOS.bcParkwayNWEb.id,
       VIDEOS.carnarvonWb.id,
+      VIDEOS.carnarvonEb.id,
     ],
     videoIdsStartAtStart: [VIDEOS.carnarvonWb.id],
+    videoIdsEndAtStart: [VIDEOS.carnarvonEb.id],
     positions: [BC_PARKWAY_CVG_SPLIT, [49.20694, -122.90122], ELLIOT_COLUMBIA],
   },
   {
