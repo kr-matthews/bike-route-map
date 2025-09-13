@@ -5,6 +5,7 @@ import {
   INLET_BAYVIEW_W,
   INLET_RIDGE_E,
   INLET_RIDGE_W,
+  VELODROME_BARNET_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -123,7 +124,7 @@ export const BARNET = [
       [49.28877, -122.94282],
       [49.28898, -122.94229],
       [49.28926, -122.94171],
-      [49.28965, -122.94093],
+      VELODROME_BARNET_S,
       [49.28988, -122.94041],
       [49.28999, -122.94012],
       [49.29006, -122.93988],

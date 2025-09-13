@@ -52,6 +52,7 @@ import { CROSSTOWN_RICHMOND } from "./crosstownRichmond";
 import { CYPRESS } from "./cypress";
 import { DEER_LAKE_PARKWAY } from "./deerLakeParkway";
 import { DRAKE } from "./drake";
+import { DRUMMOND } from "./drummond";
 import { DUMFRIES } from "./dumfries";
 import { DUNBAR } from "./dunbar";
 import { DUNSMUIR } from "./dunsmuir";
@@ -281,6 +282,7 @@ export const SEGMENTS = [
   ...CYPRESS,
   ...DEER_LAKE_PARKWAY,
   ...DRAKE,
+  ...DRUMMOND,
   ...DUMFRIES,
   ...DUNBAR,
   ...DUNSMUIR,

@@ -820,6 +820,19 @@ export const ROUTES = {
     notes:
       "New mid-2025 bike path. A bit of a hill. In the future it will extend all the way to Pacific Blvd.",
   },
+  drummond: {
+    name: "Drummond's Walk",
+    regions: [REGIONS.burnaby],
+    legs: [
+      {
+        name: "Section above train tracks",
+        videos: { eastbound: VIDEOS.drummondEb, westbound: VIDEOS.drummondWb },
+      },
+    ],
+    isIncomplete: true,
+    notes:
+      "A path with relatively loose gravel. It continues further east below the train tracks, but that part is not connected to the bike-able portion.",
+  },
   dumfries: {
     name: "Dumfries",
     regions: [REGIONS.vancouver],

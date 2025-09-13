@@ -570,6 +570,16 @@ const VIDEOS = {
     date: new Date("Jul 31 2025"),
     minutes: 3,
   },
+  drummondEb: {
+    id: "8Rt1GuM_LHU",
+    date: new Date("Mar 20 2024"),
+    minutes: 3,
+  },
+  drummondWb: {
+    id: "wWw82pFN4xk",
+    date: new Date("Sep 08 2025"),
+    minutes: 5,
+  },
   dumfriesNb: {
     id: "g0qsUEDx--8",
     tlId: "lQDpohjyf5E",
