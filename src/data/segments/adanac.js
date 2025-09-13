@@ -238,7 +238,12 @@ export const ADANAC = [
     routeNames: [ROUTES.adanac.name],
     description: "pre-boundary",
     type: "quiet",
-    videoIds: [VIDEOS.adanacWb.id, VIDEOS.francesUnionWb.id],
+    videoIds: [
+      VIDEOS.adanacWb.id,
+      VIDEOS.francesUnionEb.id,
+      VIDEOS.francesUnionWb.id,
+    ],
+    videoIdsStartAtStart: [VIDEOS.francesUnionEb.id],
     videoIdsEndAtStart: [VIDEOS.francesUnionWb.id],
     positions: [PRE_BOUNDARY, [49.27744, -123.02375], BOUNDARY_ADANAC],
   },

@@ -933,7 +933,14 @@ export const ROUTES = {
   francesUnion: {
     name: "Frances Union",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { westbound: VIDEOS.francesUnionWb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: VIDEOS.francesUnionEb,
+          westbound: VIDEOS.francesUnionWb,
+        },
+      },
+    ],
     notes:
       "Several steep hills, especially at each end. Quiet, but some major road crossings are not great. The path through Kensington Park is not super clear.",
   },

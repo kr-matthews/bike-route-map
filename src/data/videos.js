@@ -725,6 +725,12 @@ const VIDEOS = {
     date: new Date("Dec 05 2024"),
     minutes: 12,
   },
+  francesUnionEb: {
+    id: "fAyEE_IUTag",
+    tlId: "uovJavvifuM",
+    date: new Date("Sep 08 2025"),
+    minutes: 22,
+  },
   francesUnionWb: {
     id: "p9veS9P-MzM",
     tlId: "qM0TcO_x0Vc",

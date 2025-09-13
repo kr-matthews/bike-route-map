@@ -74,7 +74,11 @@ export const FRANCES_UNION = [
     routeNames: [ROUTES.francesUnion.name],
     description: "just east of boundary",
     type: "quiet",
-    videoIds: [VIDEOS.francesUnionWb.id, VIDEOS.adanacWb.id],
+    videoIds: [
+      VIDEOS.francesUnionEb.id,
+      VIDEOS.francesUnionWb.id,
+      VIDEOS.adanacWb.id,
+    ],
     videoIdsStartAtEnd: [VIDEOS.adanacWb.id],
     positions: [
       BOUNDARY_ADANAC,
@@ -86,7 +90,7 @@ export const FRANCES_UNION = [
     routeNames: [ROUTES.francesUnion.name],
     description: "adanac to kensington park",
     type: "quiet",
-    videoIds: [VIDEOS.francesUnionWb.id],
+    videoIds: [VIDEOS.francesUnionEb.id, VIDEOS.francesUnionWb.id],
     positions: [
       EAST_OF_BOUNDARY_ADANAC,
       [49.27755, -123.0211],
@@ -111,7 +115,7 @@ export const FRANCES_UNION = [
     routeNames: [ROUTES.francesUnion.name],
     description: "through kensington park 1",
     type: "mixed",
-    videoIds: [VIDEOS.francesUnionWb.id],
+    videoIds: [VIDEOS.francesUnionEb.id, VIDEOS.francesUnionWb.id],
     positions: [
       FELL_FRANCES,
       [49.27924, -122.97542],
@@ -128,7 +132,7 @@ export const FRANCES_UNION = [
     routeNames: [ROUTES.francesUnion.name, ROUTES.transCanadaTrail.name],
     description: "through kensington park 2: trans canada",
     type: "mixed",
-    videoIds: [VIDEOS.francesUnionWb.id],
+    videoIds: [VIDEOS.francesUnionEb.id, VIDEOS.francesUnionWb.id],
     positions: [
       TRANS_CANADA_FRANCES_UNION_W,
       [49.28016, -122.97491],
@@ -145,7 +149,7 @@ export const FRANCES_UNION = [
     routeNames: [ROUTES.francesUnion.name],
     description: "through kensington park 3",
     type: "mixed",
-    videoIds: [VIDEOS.francesUnionWb.id],
+    videoIds: [VIDEOS.francesUnionEb.id, VIDEOS.francesUnionWb.id],
     positions: [
       TRANS_CANADA_FRANCES_UNION_E,
       [49.27994, -122.97314],
@@ -174,7 +178,7 @@ export const FRANCES_UNION = [
     routeNames: [ROUTES.francesUnion.name],
     description: "kensington park to cliff",
     type: "quiet",
-    videoIds: [VIDEOS.francesUnionWb.id],
+    videoIds: [VIDEOS.francesUnionWb.id, VIDEOS.francesUnionEb.id],
     positions: [
       KENSINGTON_UNION_E,
       [49.2778, -122.96686],
@@ -187,13 +191,18 @@ export const FRANCES_UNION = [
     routeNames: [ROUTES.francesUnion.name],
     description: "cliff to duthie",
     type: "quiet",
+    videoIds: [VIDEOS.francesUnionEb.id],
     positions: [CLIFF_UNION, [49.27778, -122.95627], DUTHIE_UNION],
   },
   {
     routeNames: [ROUTES.francesUnion.name],
     description: "duthie: s of hastings",
     type: "shared",
-    videoIds: [VIDEOS.burnabyMtnEb.id, VIDEOS.burnabyMtnWb.id],
+    videoIds: [
+      VIDEOS.burnabyMtnEb.id,
+      VIDEOS.burnabyMtnWb.id,
+      VIDEOS.francesUnionEb.id,
+    ],
     videoIdsStartAtStart: [VIDEOS.burnabyMtnEb.id],
     videoIdsEndAtStart: [VIDEOS.burnabyMtnWb.id],
     positions: [DUTHIE_UNION, DUTHIE_HASTINGS_S],
@@ -202,7 +211,11 @@ export const FRANCES_UNION = [
     routeNames: [ROUTES.francesUnion.name],
     description: "duthie: crossing hastings",
     type: "shared",
-    videoIds: [VIDEOS.barnetEb.id, VIDEOS.burnabyMtnWb.id],
+    videoIds: [
+      VIDEOS.barnetEb.id,
+      VIDEOS.francesUnionEb.id,
+      VIDEOS.burnabyMtnWb.id,
+    ],
     videoIdsStartAtStart: [VIDEOS.barnetEb.id],
     positions: [DUTHIE_HASTINGS_S, DUTHIE_HASTINGS_N],
   },
@@ -210,7 +223,7 @@ export const FRANCES_UNION = [
     routeNames: [ROUTES.francesUnion.name],
     description: "duthie: n of hastings",
     type: "shared",
-    videoIds: [VIDEOS.barnetEb.id],
+    videoIds: [VIDEOS.barnetEb.id, VIDEOS.francesUnionEb.id],
     positions: [
       DUTHIE_HASTINGS_N,
       [49.2824, -122.95338],
@@ -223,6 +236,7 @@ export const FRANCES_UNION = [
     description: "eb to highway",
     type: "quiet",
     oneWay: "recommended",
+    videoIds: [VIDEOS.francesUnionEb.id],
     positions: [
       BARNET_RIDGE,
       [49.28524, -122.95271],
@@ -236,6 +250,8 @@ export const FRANCES_UNION = [
     description: "eb ramp",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [VIDEOS.francesUnionEb.id],
+    videoIdsEndAtEnd: [VIDEOS.francesUnionEb.id],
     positions: [
       BARNET_INLET_S,
       [49.28826, -122.94963],
