@@ -190,15 +190,28 @@ export const OFF_BROADWAY = [
       VIDEOS.offBroadwayWb.id,
       VIDEOS.offBroadwayEb.id,
       VIDEOS.heatherSb.id,
+      VIDEOS.heatherNb.id,
     ],
     positions: [HEATHER_7TH, ASH_7TH_W],
+  },
+  {
+    routeNames: [ROUTES.offBroadway.name],
+    description: "crossing ash",
+    type: "quiet",
+    videoIds: [
+      VIDEOS.offBroadwayWb.id,
+      VIDEOS.offBroadwayEb.id,
+      VIDEOS.heatherNb.id,
+    ],
+    // probably better to merge these 2 into the center of the intersection
+    positions: [ASH_7TH_W, ASH_7TH_E],
   },
   {
     routeNames: [ROUTES.offBroadway.name],
     description: "ash to cambie",
     type: "quiet",
     videoIds: [VIDEOS.offBroadwayWb.id, VIDEOS.offBroadwayEb.id],
-    positions: [ASH_7TH_W, ASH_7TH_E, [49.26498, -123.11508], CAMBIE_7TH_W],
+    positions: [ASH_7TH_E, [49.26498, -123.11508], CAMBIE_7TH_W],
   },
   {
     routeNames: [ROUTES.offBroadway.name],

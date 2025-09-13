@@ -74,6 +74,7 @@ export const FORTY_FIFTH = [
     type: "quiet",
     videoIds: [
       VIDEOS.fortyFifthEb.id,
+      VIDEOS.heatherNb.id,
       VIDEOS.fortyFifthWb.id,
       VIDEOS.heatherSb.id,
     ],

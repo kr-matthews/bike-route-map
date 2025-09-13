@@ -161,6 +161,7 @@ export const MIDTOWN = [
     videoIds: [
       VIDEOS.midtownVancouverEb.id,
       VIDEOS.ridgewayWb.id,
+      VIDEOS.heatherNb.id,
       VIDEOS.heatherSb.id,
     ],
     positions: [WILLOW_37TH, HEATHER_37TH],

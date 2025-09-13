@@ -1185,7 +1185,11 @@ export const ROUTES = {
   heather: {
     name: "Heather",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { southbound: VIDEOS.heatherSb } }],
+    legs: [
+      {
+        videos: { northbound: VIDEOS.heatherNb, southbound: VIDEOS.heatherSb },
+      },
+    ],
     notes:
       "Lots of hills, some steep. Potentially confusing to follow between 52nd and 37th. The portion south of 49th has no traffic calming and can get very busy at times unfortunately.",
   },
