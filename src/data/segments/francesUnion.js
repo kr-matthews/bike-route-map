@@ -273,7 +273,7 @@ export const FRANCES_UNION = [
     routeNames: [ROUTES.francesUnion.name],
     description: "wb along bayview",
     type: "mixed",
-    oneWay: "recommended",
+    // oneWay: "recommended",
     videoIds: [VIDEOS.francesUnionWb.id],
     positions: [
       INLET_BAYVIEW_W,
@@ -293,7 +293,7 @@ export const FRANCES_UNION = [
     routeNames: [ROUTES.francesUnion.name],
     description: "malibu alley",
     type: "quiet",
-    oneWay: "recommended",
+    // oneWay: "recommended",
     videoIds: [VIDEOS.francesUnionWb.id],
     positions: [MALIBU_LANE_E, MALIBU_LANE_W],
   },
