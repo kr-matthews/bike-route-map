@@ -1160,7 +1160,7 @@ export const ROUTES = {
       { name: "Pandora <-> Windermere", videos: {} },
     ],
     notes:
-      "Numerous paths throughout the park. Some are easy to follow, others are confusing. The amphitheatre is being rebuilt on Miller Rd (as of mid 2024) so that section may be closed.",
+      "Numerous paths throughout the park. Some are easy to follow, others are confusing. Some paths may be closed during the PNE and other times. The amphitheatre is being rebuilt on Miller Rd (as of mid 2024) so that section may be closed.",
   },
   heather: {
     name: "Heather",
