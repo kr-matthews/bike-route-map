@@ -202,6 +202,7 @@ import { TRANS_CANADA } from "./transCanada";
 import { TRANS_CANADA_HWY } from "./transCanadaHwy";
 import { TWENTY_NINTH } from "./twentyNinth";
 import { TWENTY_SECOND } from "./twentySecond";
+import { UNITED } from "./united";
 import { UNIVERSITY } from "./university";
 import { UNIVERSITY_DR_E } from "./universityDrE";
 import { UPTOWN_DOWNTOWN } from "./uptown";
@@ -432,6 +433,7 @@ export const SEGMENTS = [
   ...TRANS_CANADA_HWY,
   ...TWENTY_NINTH,
   ...TWENTY_SECOND,
+  ...UNITED,
   ...UNIVERSITY,
   ...UNIVERSITY_DR_E,
   ...UPTOWN_DOWNTOWN,

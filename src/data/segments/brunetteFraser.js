@@ -2,11 +2,11 @@ import {
   ARDEN_BROADWAY_NEE,
   BRUNETTE_FRASER_CVG_NE,
   BRUNETTE_FRASER_CVG_SW,
+  CANFOR_BRAID,
+  CANFOR_BRUNETTE_RIVER_N,
   CARIBOO_GOVERNMENT,
   CLIFF_BRUNETTE_FRASER,
   COLUMBIA_CUMBERLAND_SW,
-  KING_EDWARD_LOUGHEED_NW,
-  KING_EDWARD_LOUGHEED_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
@@ -14,18 +14,11 @@ import { VIDEOS } from "../videos";
 const BRUNETTE_RIVER_CUMBERLAND_W = [49.22047, -122.89195];
 const BRUNETTE_RIVER_CUMBERLAND_E = [49.22047, -122.89149];
 const BRUNETTE_RIVER_SPRUCE_E = [49.22389, -122.88851];
-const BRUNETTE_RIVER_BRAID_NW = [49.22931, -122.87744];
-const BRUNETTE_RIVER_BRAID_NE = [49.22914, -122.87706];
 const CANFOR_BRUNETTE_RIVER_S = [49.22863, -122.87948];
-const CANFOR_BRUNETTE_RIVER_N = [49.22888, -122.87937];
 
 const SAPPERTON_LANDING = [49.21816, -122.893];
 const BRUNETTE_FRASER_CUMBERLAND = [49.22047, -122.8922];
 const BRUNETTE_FRASER_EXPO_W = [49.22047, -122.8927];
-const CANFOR_BRAID = [49.22983, -122.8785];
-
-const KING_EDWARD_ELEVATION_START = [49.23141, -122.86171];
-const KING_EDWARD_ELEVATION_END = [49.23318, -122.86179];
 
 export const BRUNETTE_FRASER = [
   {
@@ -102,65 +95,6 @@ export const BRUNETTE_FRASER = [
       [49.2507, -122.91291],
       [49.25074, -122.91325],
       [49.25076, -122.91345],
-    ],
-  },
-  {
-    description: "braid: connection to lougheed",
-    elevation: 0.5,
-    positions: [
-      CANFOR_BRAID,
-      [49.22978, -122.87835],
-      [49.22974, -122.87827],
-      [49.22963, -122.87819],
-      BRUNETTE_RIVER_BRAID_NW,
-    ],
-  },
-  {
-    description: "braid bridge: connection to lougheed",
-    type: "other",
-    elevation: 1,
-    positions: [BRUNETTE_RIVER_BRAID_NW, BRUNETTE_RIVER_BRAID_NE],
-  },
-  {
-    description: "braid/united: connection to lougheed",
-    elevation: 0.5,
-    positions: [
-      BRUNETTE_RIVER_BRAID_NE,
-      [49.22903, -122.8768],
-      [49.22901, -122.87665],
-      [49.22904, -122.87654],
-      [49.22905, -122.8762],
-      [49.2291, -122.87575],
-      [49.22917, -122.8756],
-      [49.22919, -122.87411],
-      [49.22919, -122.87199],
-      [49.22922, -122.87129],
-      [49.22947, -122.86864],
-      [49.22977, -122.8657],
-      [49.22988, -122.8652],
-      [49.23002, -122.8647],
-      [49.23043, -122.86361],
-      [49.23052, -122.86325],
-      [49.23057, -122.86286],
-      [49.23061, -122.86184],
-      [49.23068, -122.86176],
-      KING_EDWARD_ELEVATION_START,
-    ],
-  },
-  {
-    description: "king edward bridge",
-    elevation: 1,
-    positions: [KING_EDWARD_ELEVATION_START, KING_EDWARD_ELEVATION_END],
-  },
-  {
-    description: "king edward bridge north side",
-    elevation: 0.5,
-    positions: [
-      KING_EDWARD_ELEVATION_END,
-      [49.23416, -122.86184],
-      [49.23428, -122.86192],
-      KING_EDWARD_LOUGHEED_SW,
-      KING_EDWARD_LOUGHEED_NW,
     ],
   },
   {

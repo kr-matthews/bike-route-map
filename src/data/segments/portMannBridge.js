@@ -1,10 +1,5 @@
-import {
-  LEEDER_UNITED,
-  UNITED_MARY_HILL_NW,
-  UNITED_PORT_MANN,
-} from "../intersections";
+import { UNITED_PORT_MANN } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
 
 const BRIDGE_END = [49.20605, -122.80104];
 
@@ -15,69 +10,6 @@ const EAST_OVERPASS_START = [49.20601, -122.80307];
 const EAST_OVERPASS_END = [49.206, -122.80183];
 
 export const PORT_MANN_BRIDGE = [
-  // west connections
-  {
-    description: "united: west of leeder",
-    type: "mixed",
-    positions: [
-      [49.22873, -122.83385],
-      [49.22862, -122.83329],
-      [49.22848, -122.83285],
-      [49.22835, -122.83257],
-      [49.22821, -122.83232],
-      [49.22792, -122.8319],
-      [49.22778, -122.83164],
-      [49.22771, -122.83144],
-      [49.22766, -122.83129],
-      [49.22759, -122.83091],
-      [49.22759, -122.83054],
-      [49.22762, -122.8304],
-      LEEDER_UNITED,
-    ],
-  },
-  {
-    description: "united: leeder to port mann",
-    type: "mixed",
-    videoIds: [VIDEOS.lougheedEb.id],
-    positions: [
-      LEEDER_UNITED,
-      [49.2276, -122.83012],
-      [49.2276, -122.82905],
-      [49.22759, -122.82879],
-      [49.22755, -122.82852],
-      [49.22746, -122.82817],
-      [49.22737, -122.82787],
-      [49.22733, -122.82767],
-      [49.22739, -122.82707],
-      [49.22737, -122.82692],
-      [49.22713, -122.8264],
-      [49.22704, -122.826],
-      [49.22687, -122.82553],
-      [49.22686, -122.82546],
-      [49.22684, -122.82532],
-      [49.22685, -122.82518],
-      [49.22688, -122.82503],
-      [49.22696, -122.82483],
-      [49.22708, -122.82469],
-      [49.22745, -122.82456],
-      [49.22753, -122.82451],
-      [49.2276, -122.82422],
-      [49.22747, -122.82339],
-      [49.22725, -122.82235],
-      [49.22691, -122.82104],
-      [49.22681, -122.82055],
-      [49.22729, -122.82021],
-      [49.22736, -122.82007],
-      [49.22744, -122.82],
-      UNITED_PORT_MANN,
-    ],
-  },
-  {
-    description: "united: port mann to mary hill bypass",
-    type: "mixed",
-    positions: [UNITED_PORT_MANN, UNITED_MARY_HILL_NW],
-  },
-
   // east connections
   {
     description: "east overpass: west",

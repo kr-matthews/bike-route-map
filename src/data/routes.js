@@ -2418,6 +2418,13 @@ export const ROUTES = {
     notes:
       "This is a route across Canada. In Metro Vancouver, many portions overlap with other routes (so I haven't properly mapped it all out) and other portions it only exists for pedestrians (for example, at Sperling Ave near Hastings, you need to use the sidewalk). I've only mapped out the most connected/useful section, in Burnaby.",
   },
+  united: {
+    name: "United Blvd",
+    regions: [REGIONS.coquitlam],
+    legs: [{ videos: {} }],
+    notes:
+      "Either end is a MUP with very few pedestrians, but the middle has a very uncomfortable segment on United Blvd itself, as well as some quieter side streets. MUPs are being added east of King Edward St, but not all the way to Brigantine it seems, unfortunately.",
+  },
   university: {
     name: "University Blvd",
     regions: [REGIONS.ubc],

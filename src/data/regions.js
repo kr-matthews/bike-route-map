@@ -60,7 +60,8 @@ export const REGIONS = {
   },
   coquitlam: {
     name: "Coquitlam",
-    notes: "In Coquitlam, very little is mapped.",
+    notes:
+      "In Coquitlam, very little is mapped, but the area below Lougheed Hwy should be complete.",
   },
   portCoquitlam: {
     name: "Port Coquitlam",
