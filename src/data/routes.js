@@ -1891,7 +1891,7 @@ export const ROUTES = {
     regions: [REGIONS.coquitlam, REGIONS.surrey],
     legs: [{ videos: {} }],
     notes:
-      "A long climb. It can get very windy. The connections at the north end are quite bad, besides the United Blvd path which abruptly ends.",
+      "A long climb going eastbound. It can get very windy. The connections at the north end are quite bad, United Blvd has some terrible bits and Lougheed Hwy is mostly terrible.",
   },
   portRoyalRiverTrail: {
     name: "Port Royal River Trail",

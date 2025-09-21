@@ -2,6 +2,8 @@ import { UNITED_PORT_MANN } from "../intersections";
 import { ROUTES } from "../routes";
 
 const BRIDGE_END = [49.20605, -122.80104];
+const BRIDGE_END_112_AVE = [49.20605, -122.80081];
+const FRASER_HEIGHTS_110A_W = [49.20335, -122.79543];
 
 const ELEVATION_START = [49.22731, -122.82029];
 const ELEVATION_END = [49.21129, -122.80828];
@@ -45,8 +47,44 @@ export const PORT_MANN_BRIDGE = [
       [49.20583, -122.80111],
       [49.2059, -122.80104],
       BRIDGE_END,
-      [49.20605, -122.80087],
     ],
+  },
+  {
+    description: "to 152",
+    type: "mixed",
+    positions: [BRIDGE_END, BRIDGE_END_112_AVE],
+  },
+  {
+    description: "152, 111a, 153a, 110a",
+    type: "quiet",
+    elevation: 0.5,
+    positions: [
+      BRIDGE_END_112_AVE,
+      [49.20522, -122.80081],
+      [49.20517, -122.80078],
+      [49.20514, -122.80068],
+      [49.20515, -122.79737],
+      [49.20513, -122.79713],
+      [49.20508, -122.79694],
+      [49.20502, -122.79683],
+      [49.20494, -122.79672],
+      [49.20485, -122.79665],
+      [49.20471, -122.79659],
+      [49.20425, -122.79659],
+      [49.20389, -122.79662],
+      [49.20371, -122.79659],
+      [49.2036, -122.79651],
+      [49.20351, -122.7964],
+      [49.2034, -122.79619],
+      [49.20336, -122.79598],
+      FRASER_HEIGHTS_110A_W,
+    ],
+  },
+  {
+    description: "fraser heights greenway (partial)",
+    type: "mixed",
+    elevation: 0.5,
+    positions: [FRASER_HEIGHTS_110A_W, [49.20245, -122.79544]],
   },
 
   // bridge
