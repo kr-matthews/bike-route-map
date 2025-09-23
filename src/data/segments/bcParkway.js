@@ -1237,7 +1237,12 @@ export const BC_PARKWAY = [
   {
     // formerly part of bc parkway
     description: "quayside/tin soldier connection",
-    videoIds: [VIDEOS.bcParkwayNWWb.id, VIDEOS.bcParkwayNWEb.id],
+    videoIds: [
+      VIDEOS.bcParkwayNWWb.id,
+      VIDEOS.bcParkwayNWEb.id,
+      VIDEOS.centralValleyNWNb.id,
+    ],
+    videoIdsStartAtStart: [VIDEOS.centralValleyNWNb.id],
     positions: [BC_PARKWAY_TIN_SOLDIER, QUAYSIDE_JOIN],
   },
   {

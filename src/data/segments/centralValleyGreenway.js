@@ -1411,7 +1411,6 @@ export const CENTRAL_VALLEY_GREENWAY = [
       VIDEOS.bcParkwayNWWb.id,
       VIDEOS.bcParkwayNWEb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.centralValleyNWNb.id],
     positions: [
       QUAYSIDE_JOIN,
       [49.20064, -122.91055],
