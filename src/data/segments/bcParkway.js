@@ -63,10 +63,18 @@ const CENTRAL_PARK_BC_PARKWAY_EAST_SPLIT = [49.23126, -123.01657];
 const SOUTHRIDGE_OVERPASS_N = [49.20483, -122.95879];
 const SOUTHRIDGE_OVERPASS_S = [49.20443, -122.95896];
 const UNDER_QUEENSBOROUGH_BRIDGE = [49.19785, -122.94901];
-const THIRD_STEWARDSON = [49.20227, -122.92662];
+const THIRD_STEWARDSON_S_W = [49.20227, -122.9268];
 const THIRD_ELEVATION_START = [49.2021, -122.92687];
-const THIRD_ELEVATION_END = [49.20076, -122.9275];
+const THIRD_ELEVATION_START_SIDEWALK = [49.20213, -122.92693];
+const THIRD_AVE_NB_LANE_END = [49.20127, -122.92822];
+const THIRD_AVE_SB_LANE_END = [49.2014, -122.92826];
+const THIRD_ELEVATION_END = [49.20067, -122.92723];
+const THIRD_ELEVATION_END_SIDEWALK = [49.20063, -122.92729];
+const RIALTO_QUAYSIDE = [49.20051, -122.92646];
+const RIALTO_QUAYSIDE_S = [49.20043, -122.92653];
+const RIALTO_S = [49.20004, -122.92694];
 const QUAYSIDE_SPLIT = [49.19966, -122.92157];
+const QUAYSIDE_PARK = [49.19816, -122.92198];
 const PATTULLO_PRE_ELEVATION_START = [49.20906, -122.89931];
 const PATTULLO_ELEVATION_START = [49.20909, -122.89919];
 const PATTULLO_ELEVATION_END = [49.20575, -122.88338];
@@ -998,7 +1006,8 @@ export const BC_PARKWAY = [
       [49.20304, -122.9279],
       [49.20293, -122.9276],
       [49.20279, -122.92731],
-      THIRD_STEWARDSON,
+      [49.20235, -122.92668],
+      THIRD_STEWARDSON_S_W,
     ],
   },
   {
@@ -1007,19 +1016,72 @@ export const BC_PARKWAY = [
     type: "shared",
     elevation: 0.5,
     videoIds: [VIDEOS.bcParkwayNWEb.id, VIDEOS.bcParkwayNWWb.id],
-    positions: [THIRD_STEWARDSON, THIRD_ELEVATION_START],
+    positions: [
+      THIRD_STEWARDSON_S_W,
+      [49.20219, -122.92674],
+      THIRD_ELEVATION_START,
+    ],
   },
   {
     routeNames: [ROUTES.bcParkway.name],
-    description: "third ave overpass",
-    type: "shared",
+    description: "third ave overpass - eb 1",
+    type: "painted",
+    oneWay: "required",
     elevation: 1,
-    videoIds: [VIDEOS.bcParkwayNWWb.id, VIDEOS.bcParkwayNWEb.id],
+    videoIds: [VIDEOS.bcParkwayNWEb.id],
     positions: [
       THIRD_ELEVATION_START,
-      [49.2013, -122.92833],
-      [49.20092, -122.92784],
+      [49.20211, -122.92692],
+      THIRD_AVE_SB_LANE_END,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "third ave overpass - eb 2",
+    type: "shared",
+    oneWay: "required",
+    elevation: 1,
+    videoIds: [VIDEOS.bcParkwayNWEb.id],
+    positions: [
+      THIRD_AVE_SB_LANE_END,
+      [49.20136, -122.92833],
+      [49.20132, -122.92835],
+      [49.20126, -122.92832],
+      [49.201, -122.92799],
+      [49.2009, -122.92784],
+      [49.20067, -122.92732],
       THIRD_ELEVATION_END,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "third ave overpass - wb 1",
+    type: "painted",
+    oneWay: "required",
+    elevation: 1,
+    videoIds: [VIDEOS.bcParkwayNWWb.id],
+    positions: [
+      THIRD_ELEVATION_END,
+      [49.20072, -122.92728],
+      [49.20079, -122.92748],
+      [49.20092, -122.92775],
+      [49.20101, -122.92789],
+      THIRD_AVE_NB_LANE_END,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "third ave overpass - wb 2",
+    type: "shared",
+    oneWay: "required",
+    elevation: 1,
+    videoIds: [VIDEOS.bcParkwayNWWb.id],
+    positions: [
+      THIRD_AVE_NB_LANE_END,
+      [49.20132, -122.92823],
+      [49.20137, -122.92818],
+      [49.20207, -122.92688],
+      THIRD_ELEVATION_START,
     ],
   },
   {
@@ -1030,10 +1092,9 @@ export const BC_PARKWAY = [
     videoIds: [VIDEOS.bcParkwayNWWb.id, VIDEOS.bcParkwayNWEb.id],
     positions: [
       THIRD_ELEVATION_END,
-      [49.20069, -122.9273],
-      [49.20061, -122.92706],
+      [49.2006, -122.92703],
       [49.20055, -122.92678],
-      [49.20051, -122.92646],
+      RIALTO_QUAYSIDE,
       [49.20037, -122.92547],
       [49.20025, -122.92456],
       [49.20007, -122.92326],
@@ -1048,6 +1109,96 @@ export const BC_PARKWAY = [
   },
   {
     routeNames: [ROUTES.bcParkway.name],
+    description: "third ave pre-overpass - sidewalk",
+    type: "other",
+    elevation: 0.5,
+    positions: [
+      THIRD_STEWARDSON_S_W,
+      [49.20218, -122.92697],
+      THIRD_ELEVATION_START_SIDEWALK,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "third ave overpass - sidewalk",
+    type: "other",
+    elevation: 1,
+    positions: [
+      THIRD_ELEVATION_START_SIDEWALK,
+      [49.20142, -122.92825],
+      [49.20141, -122.92831],
+      [49.20141, -122.92837],
+      [49.20135, -122.92848],
+      [49.20098, -122.92802],
+      [49.20088, -122.92787],
+      [49.20073, -122.92753],
+      [49.20074, -122.92757],
+      THIRD_ELEVATION_END_SIDEWALK,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "post-quayside overpass - sidewalk",
+    type: "other",
+    elevation: 0.5,
+    positions: [
+      THIRD_ELEVATION_END_SIDEWALK,
+      [49.20062, -122.92726],
+      [49.20053, -122.92701],
+      [49.20045, -122.92663],
+      RIALTO_QUAYSIDE_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "rialto crossing quayside",
+    type: "shared",
+    positions: [RIALTO_QUAYSIDE, RIALTO_QUAYSIDE_S],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "rialto",
+    type: "quiet",
+    positions: [RIALTO_QUAYSIDE_S, RIALTO_S],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "alt: from rialto",
+    type: "mixed",
+    positions: [
+      RIALTO_S,
+      [49.19993, -122.92694],
+      [49.1996, -122.92726],
+      [49.19955, -122.92727],
+      [49.1995, -122.92723],
+      [49.19899, -122.9262],
+      [49.19897, -122.92605],
+      [49.199, -122.9259],
+      [49.1988, -122.92546],
+      [49.19869, -122.92533],
+      [49.19858, -122.92467],
+      [49.19861, -122.92461],
+      [49.19855, -122.92416],
+      [49.19855, -122.924],
+      [49.19852, -122.92385],
+      [49.19858, -122.92377],
+      [49.19861, -122.92369],
+      [49.19861, -122.9236],
+      [49.19848, -122.92281],
+      [49.19842, -122.9228],
+      [49.19837, -122.92277],
+      [49.19835, -122.9227],
+      [49.19832, -122.92262],
+      [49.19832, -122.92253],
+      [49.1983, -122.92246],
+      [49.19824, -122.92239],
+      [49.19814, -122.92232],
+      [49.19813, -122.9222],
+      QUAYSIDE_PARK,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
     description: "quayside waterfront path",
     videoIds: [VIDEOS.bcParkwayNWWb.id, VIDEOS.bcParkwayNWEb.id],
     positions: [
@@ -1057,7 +1208,7 @@ export const BC_PARKWAY = [
       [49.1989, -122.92197],
       [49.19872, -122.92205],
       [49.19824, -122.92206],
-      [49.19816, -122.92198],
+      QUAYSIDE_PARK,
       [49.19813, -122.92183],
       [49.19812, -122.921],
       [49.19809, -122.92086],
