@@ -1,6 +1,6 @@
 {
   "name": "bike-route-map",
-  "version": "24.25.0",
+  "version": "24.26.0",
   "homepage": "https://kr-matthews.github.io/bike-route-map",
   "private": true,
   "dependencies": {
