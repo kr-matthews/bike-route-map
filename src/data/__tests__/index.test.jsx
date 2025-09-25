@@ -149,6 +149,8 @@ describe("data", () => {
   });
 
   test("time-lapse ids are distinct from corresponding id", () => {
-    Object.values(VIDEOS).forEach(({ id, tlId }) => expect(id !== tlId));
+    Object.values(VIDEOS).forEach(({ id, tlId }) =>
+      expect(id).not.toEqual(tlId)
+    );
   });
 });
