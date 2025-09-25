@@ -228,7 +228,13 @@ export const BRUNETTE_FRASER = [
     routeNames: [ROUTES.brunetteFraser.name],
     description: "braid to cvg",
     type: "mixed",
-    videoIds: [VIDEOS.brunetteFraserSb.id],
+    videoIds: [
+      VIDEOS.brunetteFraserSb.id,
+      VIDEOS.unitedEB.id,
+      VIDEOS.unitedWB.id,
+    ],
+    videoIdsStartAtEnd: [VIDEOS.unitedEB.id],
+    videoIdsEndAtEnd: [VIDEOS.unitedWB.id],
     positions: [
       CANFOR_BRAID,
       [49.22992, -122.87879],

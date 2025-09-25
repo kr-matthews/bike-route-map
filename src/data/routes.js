@@ -682,7 +682,13 @@ export const ROUTES = {
         name: "Broadway & Victoria Dr: Alternate Route",
         videos: { eastbound: VIDEOS.centralValleyVancouverEbAlt },
       },
-      { name: "Burnaby", videos: { westbound: VIDEOS.centralValleyBurnabyWb } },
+      {
+        name: "Burnaby",
+        videos: {
+          eastbound: VIDEOS.centralValleyBurnabyEb,
+          westbound: VIDEOS.centralValleyBurnabyWb,
+        },
+      },
       {
         name: "New Westminster",
         videos: { northbound: VIDEOS.centralValleyNWNb },
@@ -1889,7 +1895,11 @@ export const ROUTES = {
   portMannBridge: {
     name: "Port Mann Bridge",
     regions: [REGIONS.coquitlam, REGIONS.surrey],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: { eastbound: VIDEOS.portMannEB, westbound: VIDEOS.portMannWB },
+      },
+    ],
     notes:
       "A long climb going eastbound. It can get very windy. The connections at the north end are quite bad, United Blvd has some terrible bits and Lougheed Hwy is mostly terrible.",
   },
@@ -2421,7 +2431,9 @@ export const ROUTES = {
   united: {
     name: "United Blvd",
     regions: [REGIONS.coquitlam],
-    legs: [{ videos: {} }],
+    legs: [
+      { videos: { eastbound: VIDEOS.unitedEB, westbound: VIDEOS.unitedWB } },
+    ],
     notes:
       "Either end is a MUP with very few pedestrians, but the middle has a very uncomfortable segment on United Blvd itself, as well as some quieter side streets. MUPs are being added east of King Edward St, but not all the way to Brigantine it seems, unfortunately.",
   },

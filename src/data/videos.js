@@ -431,6 +431,12 @@ const VIDEOS = {
     date: new Date("Nov 03 2023"),
     minutes: 10,
   },
+  centralValleyBurnabyEb: {
+    id: "urrAhgTfI3Y",
+    tlId: "2jT6SBGgD1E",
+    date: new Date("Sep 20 2025"),
+    minutes: 34,
+  },
   centralValleyBurnabyWb: {
     id: "5ZJi-XQdG8A",
     tlId: "RBcqAje95ZU",
@@ -1485,6 +1491,18 @@ const VIDEOS = {
     date: new Date("May 25 2024"),
     minutes: 20,
   },
+  portMannEB: {
+    id: "_WMWLcD2rPU",
+    tlId: "hHMOR3Eb940",
+    date: new Date("Sep 20 2025"),
+    minutes: 14,
+  },
+  portMannWB: {
+    id: "DzaoDQh7x5Q",
+    tlId: "877Q9KpEIqY",
+    date: new Date("Sep 20 2025"),
+    minutes: 8,
+  },
   portRoyalEb: {
     id: "1Jppsr8Tka4",
     date: new Date("Mar 13 2024"),
@@ -1990,6 +2008,18 @@ const VIDEOS = {
     id: "4vjaCs_VJTg",
     date: new Date("Jun 10 2023"),
     minutes: 6,
+  },
+  unitedEB: {
+    id: "-AQBzzT8J38",
+    tlId: "XTjwewiB9TE",
+    date: new Date("Sep 20 2025"),
+    minutes: 21,
+  },
+  unitedWB: {
+    id: "iRqPcIpZes4",
+    tlId: "1uj_S7Flmwk",
+    date: new Date("Sep 20 2025"),
+    minutes: 23,
   },
   universityEb: {
     id: "fzMf52tvQu4",

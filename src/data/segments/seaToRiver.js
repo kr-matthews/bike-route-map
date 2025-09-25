@@ -224,7 +224,11 @@ export const SEA_TO_RIVER = [
     routeNames: [ROUTES.seaToRiver.name, ROUTES.centralValleyGreenway.name],
     description: "cvg overlap",
     type: "mixed",
-    videoIds: [VIDEOS.seaToRiverNb.id, VIDEOS.centralValleyBurnabyWb.id],
+    videoIds: [
+      VIDEOS.seaToRiverNb.id,
+      VIDEOS.centralValleyBurnabyEb.id,
+      VIDEOS.centralValleyBurnabyWb.id,
+    ],
     positions: [
       GILMORE_STILL_CREEK,
       [49.26144, -123.01447],
