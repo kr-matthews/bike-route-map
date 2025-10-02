@@ -346,6 +346,13 @@ export const ROUTES = {
         videos: { eastbound: VIDEOS.bcParkway22ndStation },
       },
       {
+        name: 'Quayside: Alternate "Scenic" Route',
+        videos: {
+          eastbound: VIDEOS.bcParkwayQuaysideScenicEb,
+          westbound: VIDEOS.bcParkwayQuaysideScenicWb,
+        },
+      },
+      {
         name: "Surrey",
         videos: {
           eastbound: VIDEOS.bcParkwaySurreyEb,

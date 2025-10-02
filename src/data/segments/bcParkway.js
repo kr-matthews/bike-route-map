@@ -1086,14 +1086,31 @@ export const BC_PARKWAY = [
   },
   {
     routeNames: [ROUTES.bcParkway.name],
-    description: "quayside overpass to split",
+    description: "quayside overpass to rialto",
     type: "shared",
     elevation: 0.5,
-    videoIds: [VIDEOS.bcParkwayNWWb.id, VIDEOS.bcParkwayNWEb.id],
+    videoIds: [
+      VIDEOS.bcParkwayQuaysideScenicEb.id,
+      VIDEOS.bcParkwayNWWb.id,
+      VIDEOS.bcParkwayQuaysideScenicWb.id,
+      VIDEOS.bcParkwayNWEb.id,
+    ],
+    videoIdsStartAtStart: [VIDEOS.bcParkwayQuaysideScenicEb.id],
+    videoIdsEndAtStart: [VIDEOS.bcParkwayQuaysideScenicWb.id],
     positions: [
       THIRD_ELEVATION_END,
       [49.2006, -122.92703],
       [49.20055, -122.92678],
+      RIALTO_QUAYSIDE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "rialto to split",
+    type: "shared",
+    elevation: 0.5,
+    videoIds: [VIDEOS.bcParkwayNWWb.id, VIDEOS.bcParkwayNWEb.id],
+    positions: [
       RIALTO_QUAYSIDE,
       [49.20037, -122.92547],
       [49.20025, -122.92456],
@@ -1153,18 +1170,32 @@ export const BC_PARKWAY = [
     routeNames: [ROUTES.bcParkway.name],
     description: "rialto crossing quayside",
     type: "shared",
+    videoIds: [
+      VIDEOS.bcParkwayQuaysideScenicEb.id,
+      VIDEOS.bcParkwayQuaysideScenicWb.id,
+    ],
     positions: [RIALTO_QUAYSIDE, RIALTO_QUAYSIDE_S],
   },
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "rialto",
     type: "quiet",
+    videoIds: [
+      VIDEOS.bcParkwayQuaysideScenicEb.id,
+      VIDEOS.bcParkwayQuaysideScenicWb.id,
+    ],
     positions: [RIALTO_QUAYSIDE_S, RIALTO_S],
   },
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "alt: from rialto",
     type: "mixed",
+    videoIds: [
+      VIDEOS.bcParkwayQuaysideScenicWb.id,
+      VIDEOS.bcParkwayQuaysideScenicEb.id,
+    ],
+    videoIdsStartAtEnd: [VIDEOS.bcParkwayQuaysideScenicWb.id],
+    videoIdsEndAtEnd: [VIDEOS.bcParkwayQuaysideScenicEb.id],
     positions: [
       RIALTO_S,
       [49.19993, -122.92694],

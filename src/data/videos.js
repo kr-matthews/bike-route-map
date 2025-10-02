@@ -147,6 +147,16 @@ const VIDEOS = {
     date: new Date("Jan 01 2024"),
     minutes: 26,
   },
+  bcParkwayQuaysideScenicEb: {
+    id: "ynBEe3TEhIM",
+    date: new Date("Aug 28 2025"),
+    minutes: 2,
+  },
+  bcParkwayQuaysideScenicWb: {
+    id: "tiavEBBJaJ8",
+    date: new Date("Aug 28 2025"),
+    minutes: 2,
+  },
   bcParkwaySurreyEb: {
     id: "z1GbbXnFnpU",
     tlId: "wWsE-mGg77I",
