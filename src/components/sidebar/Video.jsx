@@ -9,6 +9,7 @@ import {
 import { displayDistance } from "../../utils/strings";
 import { displayDirection } from "../../utils/videos";
 import startIcon from "../../images/marker-green.svg";
+import endIcon from "../../images/marker-red.svg";
 import "./toggleSwitch.css";
 
 const trivialOptions = ["1x"];
@@ -118,7 +119,10 @@ export default function Video({ video, direction }) {
             />
             <span className="slider" />
           </label>
-          <img src={startIcon} style={{ height: "30px", paddingLeft: "4px" }} />
+          <img
+            src={isSelected ? startIcon : endIcon}
+            style={{ height: "30px", paddingLeft: "4px" }}
+          />
         </span>
       </div>
       <div>
