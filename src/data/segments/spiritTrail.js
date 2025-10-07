@@ -23,7 +23,7 @@ import {
   WHONOAK_WELCH_NW,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const EIGHTEENTH_SPIRIT_TRAIL = [49.3273, -123.16223];
 const ARGYLE_16TH = [49.32727, -123.15891];
@@ -102,8 +102,8 @@ export const SPIRIT_TRAIL = [
     routeNames: [ROUTES.spiritTrail.name],
     description: "18th to 16th",
     type: "comfortable",
-    videoIds: [VIDEOS.spiritTrailEb.id],
-    videoIdsStartAtStart: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [
       EIGHTEENTH_SPIRIT_TRAIL,
       [49.32728, -123.16083],
@@ -117,7 +117,7 @@ export const SPIRIT_TRAIL = [
     routeNames: [ROUTES.spiritTrail.name],
     description: "argyle: 16th to 14th",
     type: "quiet",
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [
       ARGYLE_16TH,
       [49.32725, -123.15886],
@@ -131,7 +131,7 @@ export const SPIRIT_TRAIL = [
     routeNames: [ROUTES.spiritTrail.name],
     description: "across 14th",
     type: "comfortable",
-    videoIds: [VIDEOS.spiritTrailEb.id, VIDEOS.bellevueEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id, ROUTE_VIDEOS.bellevueEb.id],
     positions: [ARGYLE_14TH_W, [49.3271, -123.15451], ARGYLE_14TH_E],
   },
   {
@@ -139,12 +139,12 @@ export const SPIRIT_TRAIL = [
     description: "14th to east of 13th",
     type: "comfortable",
     videoIds: [
-      VIDEOS.spiritTrailEb.id,
-      VIDEOS.bellevueWb.id,
-      VIDEOS.bellevueEb.id,
+      ROUTE_VIDEOS.spiritTrailEb.id,
+      ROUTE_VIDEOS.bellevueWb.id,
+      ROUTE_VIDEOS.bellevueEb.id,
     ],
-    videoIdsStartAtEnd: [VIDEOS.bellevueWb.id],
-    videoIdsEndAtEnd: [VIDEOS.bellevueEb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.bellevueWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.bellevueEb.id],
     positions: [
       ARGYLE_14TH_E,
       [49.32695, -123.15331],
@@ -165,7 +165,7 @@ export const SPIRIT_TRAIL = [
     description: "east of 13th to bridge st",
     type: "comfortable",
     elevation: 0.5,
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [
       EAST_OF_13TH,
       [49.32649, -123.15108],
@@ -235,7 +235,7 @@ export const SPIRIT_TRAIL = [
     description: "capilano river bridge",
     type: "comfortable",
     elevation: 1,
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [CAPILANO_BRIDGE_WEST, CAPILANO_BRIDGE_EAST],
   },
   {
@@ -243,7 +243,7 @@ export const SPIRIT_TRAIL = [
     description: "capilano river to lions gate",
     type: "comfortable",
     elevation: 0.5,
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [
       CAPILANO_BRIDGE_EAST,
       [49.32393, -123.13184],
@@ -256,7 +256,10 @@ export const SPIRIT_TRAIL = [
     routeNames: [ROUTES.spiritTrail.name],
     description: "under lions gate",
     type: "comfortable",
-    videoIds: [VIDEOS.spiritTrailEb.id, VIDEOS.lionsGateBridgeSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.spiritTrailEb.id,
+      ROUTE_VIDEOS.lionsGateBridgeSb.id,
+    ],
     positions: [
       LIONS_GATE_SPIRIT_TRAIL_W,
       [49.32369, -123.13123],
@@ -267,15 +270,18 @@ export const SPIRIT_TRAIL = [
     routeNames: [ROUTES.spiritTrail.name],
     description: "south of lions gate",
     type: "comfortable",
-    videoIds: [VIDEOS.spiritTrailEb.id, VIDEOS.lionsGateBridgeSb.id],
-    videoIdsStartAtEnd: [VIDEOS.lionsGateBridgeSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.spiritTrailEb.id,
+      ROUTE_VIDEOS.lionsGateBridgeSb.id,
+    ],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.lionsGateBridgeSb.id],
     positions: [LIONS_GATE_SPIRIT_TRAIL_E, AFTER_LIONS_GATE],
   },
   {
     routeNames: [ROUTES.spiritTrail.name],
     description: "lions gate to garden",
     type: "comfortable",
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [
       AFTER_LIONS_GATE,
       [49.32289, -123.13143],
@@ -325,8 +331,8 @@ export const SPIRIT_TRAIL = [
     routeNames: [ROUTES.spiritTrail.name],
     description: "garden to tatlow",
     type: "mixed",
-    videoIds: [VIDEOS.spiritTrailEb.id, VIDEOS.tatlowNb.id],
-    videoIdsStartAtStart: [VIDEOS.tatlowNb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id, ROUTE_VIDEOS.tatlowNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.tatlowNb.id],
     positions: [GARDEN_SPIRIT_TRAIL, TATLOW_SPIRIT],
   },
   {
@@ -334,7 +340,7 @@ export const SPIRIT_TRAIL = [
     description: "tatlow to mackay",
     type: "comfortable",
     elevation: 0.5,
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [
       TATLOW_SPIRIT,
       [49.31797, -123.1173],
@@ -384,7 +390,7 @@ export const SPIRIT_TRAIL = [
     description: "mackay overpass",
     type: "comfortable",
     elevation: 1,
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [
       MACKAY_OVERPASS_START,
       [49.31794, -123.10239],
@@ -424,7 +430,7 @@ export const SPIRIT_TRAIL = [
     description: "mackay to harbourside construction",
     type: "comfortable",
     elevation: 0.5,
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [
       MACKAY_OVERPASS_END,
       [49.3167, -123.10163],
@@ -475,7 +481,7 @@ export const SPIRIT_TRAIL = [
     description: "harbourside construction detour 1",
     type: "other",
     undesignated: true,
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [
       HARBOURSIDE_PL_SPIRIT,
       [49.31349, -123.09695],
@@ -490,7 +496,7 @@ export const SPIRIT_TRAIL = [
     description: "harbourside construction detour 2",
     type: "shared",
     undesignated: true,
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [
       HARBOURSIDE_PL_SIDEWALK,
       [49.31404, -123.0969],
@@ -503,7 +509,7 @@ export const SPIRIT_TRAIL = [
     routeNames: [ROUTES.spiritTrail.name],
     description: "harbourside construction to bewicke",
     type: "comfortable",
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [
       GOSTICK_HARBOURSIDE,
       [49.31453, -123.09267],
@@ -515,14 +521,14 @@ export const SPIRIT_TRAIL = [
     routeNames: [ROUTES.spiritTrail.name, ROUTES.bewickeGreenway.name],
     description: "bewicke overlap",
     type: "mixed",
-    videoIds: [VIDEOS.spiritTrailEb.id, VIDEOS.bewickeNb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id, ROUTE_VIDEOS.bewickeNb.id],
     positions: [BEWICKE_SPIRIT_S, [49.31455, -123.09178], BEWICKE_SPIRIT_N],
   },
   {
     routeNames: [ROUTES.spiritTrail.name],
     description: "bewicke to mahon",
     type: "comfortable",
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [
       BEWICKE_SPIRIT_N,
       [49.31465, -123.09152],
@@ -564,14 +570,14 @@ export const SPIRIT_TRAIL = [
     routeNames: [ROUTES.spiritTrail.name],
     description: "mahon",
     type: "quiet",
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [SPIRIT_MAHON_S, [49.31314, -123.0863], SPIRIT_MAHON_N],
   },
   {
     routeNames: [ROUTES.spiritTrail.name],
     description: "mahon to lane",
     type: "comfortable",
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [
       SPIRIT_MAHON_N,
       [49.31298, -123.0859],
@@ -584,14 +590,14 @@ export const SPIRIT_TRAIL = [
     routeNames: [ROUTES.spiritTrail.name],
     description: "lane to chesterfield",
     type: "quiet",
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [CARRIE_CATES_LANE_W, CHESTERFIELD_CARRIE_CATES_W],
   },
   {
     routeNames: [ROUTES.spiritTrail.name, ROUTES.chesterfield.name],
     description: "chesterfield to quay",
     type: "mixed",
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [
       CHESTERFIELD_CARRIE_CATES_W,
       CHESTERFIELD_CARRIE_CATES_SW,
@@ -605,7 +611,7 @@ export const SPIRIT_TRAIL = [
     description: "chesterfield to quay",
     type: "mixed",
     elevation: -0.5,
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [
       CHESTERFIELD_CARRIE_CATES_NE,
       [49.31161, -123.08278],
@@ -618,7 +624,7 @@ export const SPIRIT_TRAIL = [
     description: "quay",
     type: "comfortable",
     elevation: -1,
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [QUAY_UNDERGROUND_WEST, QUAY_UNDERGROUND_EAST],
   },
   {
@@ -626,7 +632,7 @@ export const SPIRIT_TRAIL = [
     description: "quay to alder",
     type: "comfortable",
     elevation: -0.5,
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [
       QUAY_UNDERGROUND_EAST,
       [49.31091, -123.08105],
@@ -681,7 +687,7 @@ export const SPIRIT_TRAIL = [
     routeNames: [ROUTES.spiritTrail.name],
     description: "alder",
     type: "quiet",
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [
       SAINT_DAVIDS_ALDER_W,
       [49.3059, -123.0665],
@@ -697,7 +703,7 @@ export const SPIRIT_TRAIL = [
     routeNames: [ROUTES.spiritTrail.name],
     description: "alder to 1st squiggle",
     type: "comfortable",
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [
       SPIRIT_ALDER_E,
       [49.30661, -123.06243],
@@ -759,7 +765,7 @@ export const SPIRIT_TRAIL = [
     routeNames: [ROUTES.spiritTrail.name],
     description: "1st: squiggle to 2nd",
     type: "quiet",
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [
       RIDGEWAY_1ST,
       [49.30716, -123.06166],
@@ -774,7 +780,7 @@ export const SPIRIT_TRAIL = [
     description: "1st to 3rd overpass",
     type: "comfortable",
     elevation: 0.5,
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [
       FIRST_2ND,
       [49.30753, -123.0604],
@@ -813,7 +819,7 @@ export const SPIRIT_TRAIL = [
     description: "3rd overpass",
     type: "comfortable",
     elevation: 1,
-    videoIds: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [E_3RD_OVERPASS_WEST, E_3RD_OVERPASS_EAST],
   },
   {
@@ -821,8 +827,8 @@ export const SPIRIT_TRAIL = [
     description: "3rd overpass to east end",
     type: "comfortable",
     elevation: 0.5,
-    videoIds: [VIDEOS.spiritTrailEb.id],
-    videoIdsEndAtEnd: [VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [
       E_3RD_OVERPASS_EAST,
       [49.30865, -123.05054],

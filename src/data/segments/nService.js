@@ -8,7 +8,7 @@ import {
   TEMPLETON_TEMPLETON_STATION_SE_E,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const TERMINAL_SIDEWALK_E = [49.19433, -123.17432];
 const TERMINAL_PATH_E = [49.19451, -123.17366];
@@ -23,9 +23,9 @@ export const N_SERVICE = [
     routeNames: [ROUTES.nService.name],
     description: "w sidewalk",
     type: "other",
-    videoIds: [VIDEOS.nServiceEb.id, VIDEOS.grantMcConachieWb.id],
-    videoIdsStartAtStart: [VIDEOS.nServiceEb.id],
-    videoIdsEndAtStart: [VIDEOS.grantMcConachieWb.id],
+    videoIds: [ROUTE_VIDEOS.nServiceEb.id, ROUTE_VIDEOS.grantMcConachieWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.nServiceEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.grantMcConachieWb.id],
     positions: [
       [49.19458, -123.17511],
       [49.19455, -123.17497],
@@ -40,7 +40,7 @@ export const N_SERVICE = [
     routeNames: [ROUTES.nService.name],
     description: "w path",
     type: "dedicated",
-    videoIds: [VIDEOS.nServiceEb.id, VIDEOS.grantMcConachieWb.id],
+    videoIds: [ROUTE_VIDEOS.nServiceEb.id, ROUTE_VIDEOS.grantMcConachieWb.id],
     positions: [
       TERMINAL_SIDEWALK_E,
       [49.19435, -123.17425],
@@ -55,7 +55,7 @@ export const N_SERVICE = [
     routeNames: [ROUTES.nService.name],
     description: "w road",
     type: "shared",
-    videoIds: [VIDEOS.nServiceEb.id, VIDEOS.grantMcConachieWb.id],
+    videoIds: [ROUTE_VIDEOS.nServiceEb.id, ROUTE_VIDEOS.grantMcConachieWb.id],
     positions: [TERMINAL_PATH_E, N_SERVICE_SHOULDER_W],
   },
 
@@ -65,7 +65,7 @@ export const N_SERVICE = [
     description: "eb 1",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.nServiceEb.id],
+    videoIds: [ROUTE_VIDEOS.nServiceEb.id],
     positions: [
       N_SERVICE_SHOULDER_W,
       [49.19435, -123.17254],
@@ -80,7 +80,7 @@ export const N_SERVICE = [
     description: "eb 2",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.nServiceEb.id],
+    videoIds: [ROUTE_VIDEOS.nServiceEb.id],
     positions: [
       EB_SHARE_START,
       [49.19378, -123.16767],
@@ -92,7 +92,7 @@ export const N_SERVICE = [
     description: "eb 3",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.nServiceEb.id],
+    videoIds: [ROUTE_VIDEOS.nServiceEb.id],
     positions: [
       AVIATION_N_SERVICE_SW_W,
       [49.19369, -123.16693],
@@ -140,7 +140,7 @@ export const N_SERVICE = [
     description: "eb to templeton station rd",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.nServiceEb.id],
+    videoIds: [ROUTE_VIDEOS.nServiceEb.id],
     positions: [
       TEMPLETON_N_SERVICE_SW_W,
       [49.19687, -123.15072],
@@ -246,7 +246,7 @@ export const N_SERVICE = [
     description: "wb from aviation",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.grantMcConachieWb.id],
+    videoIds: [ROUTE_VIDEOS.grantMcConachieWb.id],
     positions: [
       AVIATION_N_SERVICE_NW,
       [49.19392, -123.16803],

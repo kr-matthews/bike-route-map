@@ -1,6 +1,6 @@
 import { BAYVIEW_DRUMMOND, VELODROME_BARNET_S } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const GRAVEL_PAVED = [49.28958, -122.94594];
 const E_END = [49.28991, -122.94195];
@@ -10,9 +10,9 @@ export const DRUMMOND = [
     routeNames: [ROUTES.drummond.name],
     description: "gravel part",
     type: "other",
-    videoIds: [VIDEOS.drummondEb.id, VIDEOS.drummondWb.id],
-    videoIdsStartAtStart: [VIDEOS.drummondEb.id],
-    videoIdsEndAtStart: [VIDEOS.drummondWb.id],
+    videoIds: [ROUTE_VIDEOS.drummondEb.id, ROUTE_VIDEOS.drummondWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.drummondEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.drummondWb.id],
     positions: [
       BAYVIEW_DRUMMOND,
       [49.28702, -122.95375],
@@ -42,8 +42,8 @@ export const DRUMMOND = [
     routeNames: [ROUTES.drummond.name],
     description: "paved part",
     type: "mixed",
-    videoIds: [VIDEOS.drummondWb.id, VIDEOS.drummondEb.id],
-    videoIdsEndAtEnd: [VIDEOS.drummondEb.id],
+    videoIds: [ROUTE_VIDEOS.drummondWb.id, ROUTE_VIDEOS.drummondEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.drummondEb.id],
     positions: [
       GRAVEL_PAVED,
       [49.28959, -122.9457],
@@ -61,8 +61,8 @@ export const DRUMMOND = [
     routeNames: [ROUTES.drummond.name],
     description: "car part",
     type: "quiet",
-    videoIds: [VIDEOS.drummondWb.id],
-    videoIdsStartAtEnd: [VIDEOS.drummondWb.id],
+    videoIds: [ROUTE_VIDEOS.drummondWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.drummondWb.id],
     positions: [
       E_END,
       [49.28995, -122.94184],

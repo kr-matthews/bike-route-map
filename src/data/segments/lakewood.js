@@ -6,7 +6,7 @@ import {
   WALL_OXFORD_PARK,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const LAKEWOOD_DUNDAS = [49.28481, -123.06164];
 const LAKEWOOD_OXFORD_W = [49.2857, -123.06168];
@@ -17,18 +17,18 @@ export const LAKEWOOD = [
     description: "grandview to 8th",
     type: "quiet",
     videoIds: [
-      VIDEOS.centralValleyVancouverEbAlt.id,
-      VIDEOS.lakewoodNb.id,
-      VIDEOS.lakewoodSb.id,
+      ROUTE_VIDEOS.centralValleyVancouverEbAlt.id,
+      ROUTE_VIDEOS.lakewoodNb.id,
+      ROUTE_VIDEOS.lakewoodSb.id,
     ],
-    videoIdsEndAtStart: [VIDEOS.centralValleyVancouverEbAlt.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.centralValleyVancouverEbAlt.id],
     positions: [LAKEWOOD_GRANDVIEW, [49.26228, -123.06203], LAKEWOOD_8TH],
   },
   {
     routeNames: [ROUTES.lakewood.name],
     description: "8th to dundas",
     type: "quiet",
-    videoIds: [VIDEOS.lakewoodSb.id, VIDEOS.lakewoodNb.id],
+    videoIds: [ROUTE_VIDEOS.lakewoodSb.id, ROUTE_VIDEOS.lakewoodNb.id],
     positions: [
       LAKEWOOD_8TH,
       [49.265, -123.06197],
@@ -54,13 +54,13 @@ export const LAKEWOOD = [
     description: "dundas to oxford",
     type: "quiet",
     videoIds: [
-      VIDEOS.lakewoodSb.id,
-      VIDEOS.lakewoodNb.id,
-      VIDEOS.portsideEb.id,
-      VIDEOS.portsideWb.id,
+      ROUTE_VIDEOS.lakewoodSb.id,
+      ROUTE_VIDEOS.lakewoodNb.id,
+      ROUTE_VIDEOS.portsideEb.id,
+      ROUTE_VIDEOS.portsideWb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.portsideEb.id],
-    videoIdsEndAtStart: [VIDEOS.portsideWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.portsideEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.portsideWb.id],
     positions: [LAKEWOOD_DUNDAS, [49.28567, -123.06164], LAKEWOOD_OXFORD_W],
   },
   {
@@ -68,10 +68,10 @@ export const LAKEWOOD = [
     description: "oxford park",
     type: "mixed",
     videoIds: [
-      VIDEOS.lakewoodSb.id,
-      VIDEOS.lakewoodNb.id,
-      VIDEOS.portsideEb.id,
-      VIDEOS.portsideWb.id,
+      ROUTE_VIDEOS.lakewoodSb.id,
+      ROUTE_VIDEOS.lakewoodNb.id,
+      ROUTE_VIDEOS.portsideEb.id,
+      ROUTE_VIDEOS.portsideWb.id,
     ],
     positions: [
       LAKEWOOD_OXFORD_W,

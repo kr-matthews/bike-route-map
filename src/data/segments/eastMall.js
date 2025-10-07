@@ -20,7 +20,7 @@ import {
   MARINE_CHANCELLOR_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const NB_POST_16TH = [49.25489, -123.24147];
 const SB_PRE_16TH = [49.25482, -123.24172];
@@ -45,8 +45,8 @@ export const EAST_MALL = [
     description: "sb: to ross",
     type: "mixed",
     oneWay: "required",
-    videoIds: [VIDEOS.eastMallSb.id, VIDEOS.westMallSb.id],
-    videoIdsEndAtEnd: [VIDEOS.eastMallSb.id, VIDEOS.westMallSb.id],
+    videoIds: [ROUTE_VIDEOS.eastMallSb.id, ROUTE_VIDEOS.westMallSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.eastMallSb.id, ROUTE_VIDEOS.westMallSb.id],
     positions: [
       EAST_MALL_16TH_SW,
       [49.25375, -123.24097],
@@ -59,7 +59,7 @@ export const EAST_MALL = [
     description: "crossing 16th west side",
     type: "mixed",
     oneWay: "recommended",
-    videoIds: [VIDEOS.eastMallSb.id, VIDEOS.westMallSb.id],
+    videoIds: [ROUTE_VIDEOS.eastMallSb.id, ROUTE_VIDEOS.westMallSb.id],
     positions: [
       EAST_MALL_16TH_WN,
       [49.2541, -123.24148],
@@ -82,8 +82,8 @@ export const EAST_MALL = [
     description: "sb: crossing marine/chancellor",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.eastMallSb.id, VIDEOS.chancellorWb.id],
-    videoIdsEndAtEnd: [VIDEOS.chancellorWb.id],
+    videoIds: [ROUTE_VIDEOS.eastMallSb.id, ROUTE_VIDEOS.chancellorWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.chancellorWb.id],
     positions: [MARINE_CHANCELLOR_NW, MARINE_CHANCELLOR_SW],
   },
 
@@ -125,7 +125,7 @@ export const EAST_MALL = [
     description: "sb: lane start to stadium",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.eastMallSb.id],
+    videoIds: [ROUTE_VIDEOS.eastMallSb.id],
     positions: [
       AGRONOMY_LANE,
       [49.26095, -123.24668],
@@ -141,7 +141,7 @@ export const EAST_MALL = [
     description: "sb: stadium to 16th",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.eastMallSb.id, VIDEOS.westMallSb.id],
+    videoIds: [ROUTE_VIDEOS.eastMallSb.id, ROUTE_VIDEOS.westMallSb.id],
     positions: [EAST_MALL_STADIUM_W, SB_PRE_16TH],
   },
   {
@@ -149,7 +149,7 @@ export const EAST_MALL = [
     description: "sb: pre-16th",
     type: "mixed",
     oneWay: "required",
-    videoIds: [VIDEOS.eastMallSb.id, VIDEOS.westMallSb.id],
+    videoIds: [ROUTE_VIDEOS.eastMallSb.id, ROUTE_VIDEOS.westMallSb.id],
     positions: [
       SB_PRE_16TH,
       [49.2547, -123.24172],
@@ -161,7 +161,7 @@ export const EAST_MALL = [
     routeNames: [ROUTES.eastMall.name],
     description: "lanes to pedestrianized",
     type: "quiet",
-    videoIds: [VIDEOS.eastMallSb.id],
+    videoIds: [ROUTE_VIDEOS.eastMallSb.id],
     positions: [
       AGRONOMY_LANE,
       EAST_MALL_AGRONOMY,
@@ -178,14 +178,14 @@ export const EAST_MALL = [
     routeNames: [ROUTES.eastMall.name],
     description: "pedestrianized",
     type: "mixed",
-    videoIds: [VIDEOS.eastMallSb.id],
+    videoIds: [ROUTE_VIDEOS.eastMallSb.id],
     positions: [PEDESTRIANIZED_S, EAST_MALL_UNIVERSITY_S, PEDESTRIANIZED_N],
   },
   {
     routeNames: [ROUTES.eastMall.name],
     description: "pedestrianized to pre-marine",
     type: "quiet",
-    videoIds: [VIDEOS.eastMallSb.id],
+    videoIds: [ROUTE_VIDEOS.eastMallSb.id],
     positions: [
       PEDESTRIANIZED_N,
       [49.26901, -123.25316],
@@ -210,7 +210,7 @@ export const EAST_MALL = [
     description: "sb: from marine",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.eastMallSb.id],
+    videoIds: [ROUTE_VIDEOS.eastMallSb.id],
     positions: [
       MARINE_CHANCELLOR_SW,
       [49.27089, -123.25421],

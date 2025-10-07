@@ -11,7 +11,7 @@ import {
   QUEENS_CANAL_WESTMINSTER_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const HIGHWAY_99_WESTMINSTER_SW = [49.17017, -123.08737];
 const HIGHWAY_99_WESTMINSTER_SE = [49.17017, -123.08644];
@@ -56,7 +56,7 @@ export const WESTMINSTER_HWY = [
     type: "mixed",
     oneWay: "recommended",
     undesignated: true,
-    videoIds: [VIDEOS.westminsterWb.id],
+    videoIds: [ROUTE_VIDEOS.westminsterWb.id],
     positions: [
       NO_6_WESTMINSTER_S_E,
       [49.17031, -123.06904],
@@ -127,7 +127,7 @@ export const WESTMINSTER_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.westminsterWb.id],
+    videoIds: [ROUTE_VIDEOS.westminsterWb.id],
     positions: [
       NO_6_WESTMINSTER_NW,
       [49.17034, -123.07446],
@@ -141,7 +141,7 @@ export const WESTMINSTER_HWY = [
     type: "other",
     oneWay: "required",
     elevation: 1,
-    videoIds: [VIDEOS.westminsterWb.id],
+    videoIds: [ROUTE_VIDEOS.westminsterWb.id],
     positions: [HIGHWAY_99_WESTMINSTER_NE, HIGHWAY_99_WESTMINSTER_NW],
   },
   {
@@ -150,8 +150,8 @@ export const WESTMINSTER_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.westminsterWb.id],
-    videoIdsEndAtEnd: [VIDEOS.westminsterWb.id],
+    videoIds: [ROUTE_VIDEOS.westminsterWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.westminsterWb.id],
     positions: [
       HIGHWAY_99_WESTMINSTER_NW,
       [49.17042, -123.08841],
@@ -185,7 +185,7 @@ export const WESTMINSTER_HWY = [
     routeNames: [ROUTES.westminsterHwy.name],
     description: "path from no. 6 to mcmillan",
     type: "mixed",
-    videoIds: [VIDEOS.westminsterWb.id],
+    videoIds: [ROUTE_VIDEOS.westminsterWb.id],
     positions: [
       WESTMINSTER_PATH_START_NEAR_NO_6,
       [49.16985, -123.06649],
@@ -238,7 +238,7 @@ export const WESTMINSTER_HWY = [
     description: "dead-end westminster east of no.6: path",
     type: "mixed",
     oneWay: "recommended",
-    videoIds: [VIDEOS.westminsterWb.id],
+    videoIds: [ROUTE_VIDEOS.westminsterWb.id],
     positions: [WESTMINSTER_PATH_START_NEAR_NO_6, WESTMINSTER_SIDE_E_END],
   },
   {
@@ -246,7 +246,7 @@ export const WESTMINSTER_HWY = [
     description: "dead-end westminster east of no.6: road 1",
     type: "quiet",
     oneWay: "recommended",
-    videoIds: [VIDEOS.westminsterWb.id],
+    videoIds: [ROUTE_VIDEOS.westminsterWb.id],
     positions: [WESTMINSTER_SIDE_E_END, NO_6_WESTMINSTER_S_E],
   },
   {
@@ -393,8 +393,8 @@ export const WESTMINSTER_HWY = [
     description: "wb: boundary to smith",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.westminsterWb.id],
-    videoIdsStartAtStart: [VIDEOS.westminsterWb.id],
+    videoIds: [ROUTE_VIDEOS.westminsterWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.westminsterWb.id],
     positions: [
       BOUNDARY_WESTMINSTER_EN,
       [49.18382, -122.95742],
@@ -423,7 +423,7 @@ export const WESTMINSTER_HWY = [
     description: "wb: smith to river",
     type: "combined",
     oneWay: "required",
-    videoIds: [VIDEOS.westminsterWb.id],
+    videoIds: [ROUTE_VIDEOS.westminsterWb.id],
     positions: [
       SMITH_WESTMINSTER_NW,
       [49.18171, -122.9645],
@@ -437,7 +437,7 @@ export const WESTMINSTER_HWY = [
     description: "wb: river to fraserside",
     type: "mixed",
     oneWay: "required",
-    videoIds: [VIDEOS.westminsterWb.id],
+    videoIds: [ROUTE_VIDEOS.westminsterWb.id],
     positions: [
       RIVER_WESTMINSTER_NE,
       [49.1813, -122.96558],
@@ -453,7 +453,7 @@ export const WESTMINSTER_HWY = [
     description: "wb: fraserside to gilley",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.westminsterWb.id],
+    videoIds: [ROUTE_VIDEOS.westminsterWb.id],
     positions: [
       WESTMINSTER_FRASERSIDE_NW,
       [49.17789, -122.96814],
@@ -466,7 +466,7 @@ export const WESTMINSTER_HWY = [
     description: "wb: gilley to east-west",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.westminsterWb.id],
+    videoIds: [ROUTE_VIDEOS.westminsterWb.id],
     positions: [
       WESTMINSTER_GILLEY_SW,
       [49.17545, -122.96966],
@@ -484,7 +484,7 @@ export const WESTMINSTER_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.westminsterWb.id],
+    videoIds: [ROUTE_VIDEOS.westminsterWb.id],
     positions: [
       WESTMINSTER_WB_BEFORE_EAST_WEST,
       [49.17058, -122.97256],
@@ -500,7 +500,7 @@ export const WESTMINSTER_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
-    videoIds: [VIDEOS.westminsterWb.id],
+    videoIds: [ROUTE_VIDEOS.westminsterWb.id],
     positions: [
       WESTMINSTER_EAST_WEST_NW,
       [49.16932, -122.97265],
@@ -513,7 +513,7 @@ export const WESTMINSTER_HWY = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.westminsterWb.id],
+    videoIds: [ROUTE_VIDEOS.westminsterWb.id],
     positions: [
       WESTMINSTER_EAST_WEST_SW,
       [49.16891, -122.97275],

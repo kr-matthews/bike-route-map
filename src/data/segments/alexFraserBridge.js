@@ -4,7 +4,7 @@ import {
   QUEENS_CANAL_WESTMINSTER_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const QUEENS_CANAL_OVERPASS = [49.17928, -122.96271];
 const OVERPASS_W = [49.17936, -122.96268];
@@ -40,8 +40,8 @@ export const ALEX_FRASER_BRIDGE = [
   {
     description: "queen's canal, n half",
     type: "mixed",
-    videoIds: [VIDEOS.alexFraserNb.id],
-    videoIdsEndAtStart: [VIDEOS.alexFraserNb.id],
+    videoIds: [ROUTE_VIDEOS.alexFraserNb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.alexFraserNb.id],
     positions: [
       QUEENS_CANAL_WESTMINSTER_S,
       [49.17962, -122.96279],
@@ -63,33 +63,33 @@ export const ALEX_FRASER_BRIDGE = [
     description: "overpass west",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [VIDEOS.alexFraserNb.id],
+    videoIds: [ROUTE_VIDEOS.alexFraserNb.id],
     positions: [QUEENS_CANAL_OVERPASS, [49.17932, -122.96271], OVERPASS_W],
   },
   {
     description: "overpass",
     type: "mixed",
     elevation: 1,
-    videoIds: [VIDEOS.alexFraserNb.id],
+    videoIds: [ROUTE_VIDEOS.alexFraserNb.id],
     positions: [OVERPASS_W, [49.17974, -122.9624], OVERPASS_E],
   },
   {
     description: "overpass east",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [VIDEOS.alexFraserNb.id],
+    videoIds: [ROUTE_VIDEOS.alexFraserNb.id],
     positions: [OVERPASS_E, THOMPSON_OVERPASS],
   },
   {
     description: "thompson",
     type: "quiet",
-    videoIds: [VIDEOS.alexFraserNb.id],
+    videoIds: [ROUTE_VIDEOS.alexFraserNb.id],
     positions: [THOMPSON_OVERPASS, [49.17866, -122.96003], THOMPSON_S],
   },
   {
     description: "thompson to ne ramp",
     type: "mixed",
-    videoIds: [VIDEOS.alexFraserNb.id],
+    videoIds: [ROUTE_VIDEOS.alexFraserNb.id],
     positions: [
       THOMPSON_S,
       [49.17844, -122.96004],
@@ -131,9 +131,9 @@ export const ALEX_FRASER_BRIDGE = [
   {
     description: "underneath south end",
     type: "mixed",
-    videoIds: [VIDEOS.alexFraserUnder.id],
-    videoIdsStartAtStart: [VIDEOS.alexFraserUnder.id],
-    videoIdsEndAtEnd: [VIDEOS.alexFraserUnder.id],
+    videoIds: [ROUTE_VIDEOS.alexFraserUnder.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.alexFraserUnder.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.alexFraserUnder.id],
     positions: [
       SB_POST_BRIDGE,
       [49.14829, -122.93852],
@@ -152,8 +152,8 @@ export const ALEX_FRASER_BRIDGE = [
   {
     description: "south end, from the west",
     type: "mixed",
-    videoIds: [VIDEOS.alexFraserSb.id],
-    videoIdsEndAtStart: [VIDEOS.alexFraserSb.id],
+    videoIds: [ROUTE_VIDEOS.alexFraserSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.alexFraserSb.id],
     positions: [
       [49.14761, -122.94303],
       [49.14762, -122.94053],
@@ -173,8 +173,8 @@ export const ALEX_FRASER_BRIDGE = [
   {
     description: "south end, to the east 1",
     type: "mixed",
-    videoIds: [VIDEOS.alexFraserNb.id],
-    videoIdsStartAtEnd: [VIDEOS.alexFraserNb.id],
+    videoIds: [ROUTE_VIDEOS.alexFraserNb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.alexFraserNb.id],
     positions: [
       NB_PRE_BRIDGE,
       [49.14813, -122.93752],
@@ -232,7 +232,7 @@ export const ALEX_FRASER_BRIDGE = [
     type: "mixed",
     oneWay: "recommended",
     elevation: 0.5,
-    videoIds: [VIDEOS.alexFraserNb.id],
+    videoIds: [ROUTE_VIDEOS.alexFraserNb.id],
     positions: [
       NB_PRE_BRIDGE,
       [49.14823, -122.93762],
@@ -247,7 +247,7 @@ export const ALEX_FRASER_BRIDGE = [
     type: "mixed",
     oneWay: "recommended",
     elevation: 1,
-    videoIds: [VIDEOS.alexFraserNb.id],
+    videoIds: [ROUTE_VIDEOS.alexFraserNb.id],
     positions: [
       NB_ELEVATION_START_1,
       [49.1495, -122.9383],
@@ -293,7 +293,7 @@ export const ALEX_FRASER_BRIDGE = [
     type: "mixed",
     oneWay: "recommended",
     elevation: 0.5,
-    videoIds: [VIDEOS.alexFraserNb.id],
+    videoIds: [ROUTE_VIDEOS.alexFraserNb.id],
     positions: [
       NB_ELEVATION_END_1,
       [49.17017, -122.94887],
@@ -342,7 +342,7 @@ export const ALEX_FRASER_BRIDGE = [
     type: "mixed",
     oneWay: "recommended",
     elevation: 1,
-    videoIds: [VIDEOS.alexFraserNb.id],
+    videoIds: [ROUTE_VIDEOS.alexFraserNb.id],
     positions: [
       NB_ELEVATION_START_2,
       [49.17476, -122.95475],
@@ -370,7 +370,7 @@ export const ALEX_FRASER_BRIDGE = [
     oneWay: "recommended",
     hideArrows: true,
     elevation: 1.5,
-    videoIds: [VIDEOS.alexFraserNb.id],
+    videoIds: [ROUTE_VIDEOS.alexFraserNb.id],
     positions: [NB_PRE_RAMP_START, NB_RAMP_START],
   },
   {
@@ -380,7 +380,7 @@ export const ALEX_FRASER_BRIDGE = [
     oneWay: "recommended",
     hideArrows: true,
     elevation: 2,
-    videoIds: [VIDEOS.alexFraserNb.id],
+    videoIds: [ROUTE_VIDEOS.alexFraserNb.id],
     positions: [
       NB_RAMP_START,
       NB_RAMP_START_AFTER,
@@ -397,7 +397,7 @@ export const ALEX_FRASER_BRIDGE = [
     oneWay: "recommended",
     hideArrows: true,
     elevation: 1.5,
-    videoIds: [VIDEOS.alexFraserNb.id],
+    videoIds: [ROUTE_VIDEOS.alexFraserNb.id],
     positions: [RAMP_PRE_MID_SW_CORNER, RAMP_MID_SW_CORNER],
   },
   {
@@ -407,7 +407,7 @@ export const ALEX_FRASER_BRIDGE = [
     oneWay: "recommended",
     hideArrows: true,
     elevation: 1,
-    videoIds: [VIDEOS.alexFraserNb.id],
+    videoIds: [ROUTE_VIDEOS.alexFraserNb.id],
     positions: [
       RAMP_MID_SW_CORNER,
       [49.17728, -122.95742],
@@ -423,7 +423,7 @@ export const ALEX_FRASER_BRIDGE = [
     oneWay: "recommended",
     hideArrows: true,
     elevation: 0.5,
-    videoIds: [VIDEOS.alexFraserNb.id],
+    videoIds: [ROUTE_VIDEOS.alexFraserNb.id],
     positions: [RAMP_ELEVATION_END, NE_RAMP_BOTTOM],
   },
 
@@ -434,7 +434,7 @@ export const ALEX_FRASER_BRIDGE = [
     type: "mixed",
     oneWay: "recommended",
     elevation: 0.5,
-    videoIds: [VIDEOS.alexFraserSb.id],
+    videoIds: [ROUTE_VIDEOS.alexFraserSb.id],
     positions: [
       ALEX_FRASER_NW_FRASERWOOD,
       [49.1751, -122.96033],
@@ -464,7 +464,7 @@ export const ALEX_FRASER_BRIDGE = [
     type: "mixed",
     oneWay: "recommended",
     elevation: 1,
-    videoIds: [VIDEOS.alexFraserSb.id],
+    videoIds: [ROUTE_VIDEOS.alexFraserSb.id],
     positions: [
       SB_ELEVATION_START_1,
       [49.17537, -122.96057],
@@ -484,7 +484,7 @@ export const ALEX_FRASER_BRIDGE = [
     type: "mixed",
     oneWay: "recommended",
     elevation: 0.5,
-    videoIds: [VIDEOS.alexFraserSb.id],
+    videoIds: [ROUTE_VIDEOS.alexFraserSb.id],
     positions: [
       SB_ELEVATION_END_1,
       [49.17342, -122.95622],
@@ -528,7 +528,7 @@ export const ALEX_FRASER_BRIDGE = [
     type: "mixed",
     oneWay: "recommended",
     elevation: 1,
-    videoIds: [VIDEOS.alexFraserSb.id],
+    videoIds: [ROUTE_VIDEOS.alexFraserSb.id],
     positions: [
       SB_ELEVATION_START_2,
       [49.16917, -122.9491],
@@ -571,7 +571,7 @@ export const ALEX_FRASER_BRIDGE = [
     type: "mixed",
     oneWay: "recommended",
     elevation: 0.5,
-    videoIds: [VIDEOS.alexFraserSb.id],
+    videoIds: [ROUTE_VIDEOS.alexFraserSb.id],
     positions: [SB_ELEVATION_END_2, [49.14852, -122.93845], SB_POST_BRIDGE],
   },
 ];

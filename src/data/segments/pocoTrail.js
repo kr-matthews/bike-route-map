@@ -4,7 +4,7 @@ import {
   POCO_TRAIL_BELFAST,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const POCO_TRAIL_MARY_HILL_S = [49.22705, -122.79597];
 const PITT_RIVER_ARGUE_NE = [49.23441, -122.76906];
@@ -34,8 +34,8 @@ export const POCO_TRAIL = [
     routeNames: [ROUTES.pocoTrail.name],
     description: "south pitt river - west portion",
     type: "mixed",
-    videoIds: [VIDEOS.pocoEb.id],
-    videoIdsStartAtStart: [VIDEOS.pocoEb.id],
+    videoIds: [ROUTE_VIDEOS.pocoEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.pocoEb.id],
     positions: [
       POCO_TRAIL_MARY_HILL_S,
       [49.22689, -122.7959],
@@ -119,7 +119,7 @@ export const POCO_TRAIL = [
     routeNames: [ROUTES.pocoTrail.name],
     description: "south pitt river - narrow portion",
     type: "other",
-    videoIds: [VIDEOS.pocoEb.id],
+    videoIds: [ROUTE_VIDEOS.pocoEb.id],
     positions: [
       PITT_RIVER_ARGUE_NE,
       [49.23446, -122.76897],
@@ -138,7 +138,7 @@ export const POCO_TRAIL = [
     routeNames: [ROUTES.pocoTrail.name],
     description: "south pitt river - dyke",
     type: "mixed",
-    videoIds: [VIDEOS.pocoEb.id],
+    videoIds: [ROUTE_VIDEOS.pocoEb.id],
     positions: [
       ARGUE_E,
       [49.2359, -122.76492],
@@ -172,7 +172,7 @@ export const POCO_TRAIL = [
     routeNames: [ROUTES.pocoTrail.name],
     description: "south pitt river - train/pipeline",
     type: "other",
-    videoIds: [VIDEOS.pocoEb.id],
+    videoIds: [ROUTE_VIDEOS.pocoEb.id],
     positions: [
       TRAIN_TURN_OFF,
       [49.2466, -122.73837],
@@ -197,7 +197,7 @@ export const POCO_TRAIL = [
     routeNames: [ROUTES.pocoTrail.name],
     description: "south pitt river - access road",
     type: "quiet",
-    videoIds: [VIDEOS.pocoEb.id],
+    videoIds: [ROUTE_VIDEOS.pocoEb.id],
     positions: [
       ACCESS_ROAD_E,
       [49.24697, -122.7409],
@@ -245,7 +245,7 @@ export const POCO_TRAIL = [
     description: "south pitt river - sidewalk",
     routeNames: [ROUTES.pocoTrail.name],
     type: "mixed",
-    videoIds: [VIDEOS.pocoEb.id],
+    videoIds: [ROUTE_VIDEOS.pocoEb.id],
     positions: [
       ACCESS_ROAD_W,
       [49.24694, -122.74206],
@@ -270,7 +270,7 @@ export const POCO_TRAIL = [
     routeNames: [ROUTES.pocoTrail.name],
     description: "south pitt river - industrial roads",
     type: "quiet",
-    videoIds: [VIDEOS.pocoEb.id],
+    videoIds: [ROUTE_VIDEOS.pocoEb.id],
     positions: [
       HOLLAND_W,
       [49.24936, -122.73547],
@@ -285,8 +285,8 @@ export const POCO_TRAIL = [
     routeNames: [ROUTES.pocoTrail.name],
     description: "south pitt river - under bridge",
     type: "mixed",
-    videoIds: [VIDEOS.pocoEb.id],
-    videoIdsEndAtEnd: [VIDEOS.pocoEb.id],
+    videoIds: [ROUTE_VIDEOS.pocoEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.pocoEb.id],
     positions: [
       UNDER_BRIDGE_W,
       [49.24861, -122.73282],

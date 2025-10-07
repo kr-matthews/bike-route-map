@@ -9,7 +9,7 @@ import {
   STANLEY_PARK_LOOP_ALBERNI,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const CHILCO_HENSHAW_S = [49.29092, -123.14212];
 
@@ -17,8 +17,12 @@ export const CHILCO = [
   {
     description: "connection to stanley park loop",
     type: "mixed",
-    videoIds: [VIDEOS.alberniEb.id, VIDEOS.alberniWb.id, VIDEOS.chilcoNb.id],
-    videoIdsEndAtStart: [VIDEOS.alberniWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.alberniEb.id,
+      ROUTE_VIDEOS.alberniWb.id,
+      ROUTE_VIDEOS.chilcoNb.id,
+    ],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.alberniWb.id],
     positions: [STANLEY_PARK_LOOP_ALBERNI, CHILCO_ALBERNI_W],
   },
 
@@ -33,23 +37,23 @@ export const CHILCO = [
     routeNames: [ROUTES.chilco.name],
     description: "beach to comox",
     type: "quiet",
-    videoIds: [VIDEOS.chilcoNb.id, VIDEOS.chilcoSb.id],
-    videoIdsStartAtStart: [VIDEOS.chilcoNb.id],
-    videoIdsEndAtStart: [VIDEOS.chilcoSb.id],
+    videoIds: [ROUTE_VIDEOS.chilcoNb.id, ROUTE_VIDEOS.chilcoSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.chilcoNb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.chilcoSb.id],
     positions: [CHILCO_BEACH, [49.28988, -123.14369], CHILCO_COMOX],
   },
   {
     routeNames: [ROUTES.chilco.name],
     description: "comox plaza",
     type: "mixed",
-    videoIds: [VIDEOS.chilcoNb.id, VIDEOS.chilcoSb.id],
+    videoIds: [ROUTE_VIDEOS.chilcoNb.id, ROUTE_VIDEOS.chilcoSb.id],
     positions: [CHILCO_COMOX, CHILCO_HENSHAW_S],
   },
   {
     routeNames: [ROUTES.chilco.name],
     description: "henshaw to alberni",
     type: "quiet",
-    videoIds: [VIDEOS.chilcoSb.id, VIDEOS.chilcoNb.id],
+    videoIds: [ROUTE_VIDEOS.chilcoSb.id, ROUTE_VIDEOS.chilcoNb.id],
     positions: [
       CHILCO_HENSHAW_S,
       [49.29128, -123.14156],
@@ -63,7 +67,11 @@ export const CHILCO = [
     routeNames: [ROUTES.chilco.name],
     description: "chilco/alberni bend",
     type: "quiet",
-    videoIds: [VIDEOS.chilcoSb.id, VIDEOS.alberniEb.id, VIDEOS.alberniWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.chilcoSb.id,
+      ROUTE_VIDEOS.alberniEb.id,
+      ROUTE_VIDEOS.alberniWb.id,
+    ],
     positions: [CHILCO_ALBERNI_W, CHILCO_ALBERNI_E],
   },
   {
@@ -71,7 +79,7 @@ export const CHILCO = [
     description: "connection from georgia",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.chilcoSb.id],
+    videoIds: [ROUTE_VIDEOS.chilcoSb.id],
     positions: [CHILCO_GEORGIA_S, [49.29436, -123.13677], CHILCO_ALBERNI_E],
   },
 ];

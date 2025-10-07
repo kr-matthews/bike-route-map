@@ -4,7 +4,7 @@ import {
   POCO_TRAIL_BELFAST,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const BELFAST_PITT_RIVER_BRIDGE = [49.24982, -122.73258];
 const ELEVATION_W = [49.24933, -122.7319];
@@ -15,9 +15,12 @@ export const PITT_RIVER_BRIDGE = [
   {
     description: "connection with poco trail",
     type: "mixed",
-    videoIds: [VIDEOS.pittRiverBridgeEb.id, VIDEOS.pittRiverBridgeWb.id],
-    videoIdsStartAtStart: [VIDEOS.pittRiverBridgeEb.id],
-    videoIdsEndAtStart: [VIDEOS.pittRiverBridgeWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.pittRiverBridgeEb.id,
+      ROUTE_VIDEOS.pittRiverBridgeWb.id,
+    ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.pittRiverBridgeEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.pittRiverBridgeWb.id],
     positions: [
       POCO_TRAIL_BELFAST,
       [49.2496, -122.73167],
@@ -60,7 +63,7 @@ export const PITT_RIVER_BRIDGE = [
   {
     description: "informal gravel path east side",
     type: "other",
-    videoIds: [VIDEOS.pittRiverBridgeWb.id],
+    videoIds: [ROUTE_VIDEOS.pittRiverBridgeWb.id],
     positions: [
       GRAVEL_TRAIL_S,
       [49.24667, -122.72564],
@@ -74,7 +77,10 @@ export const PITT_RIVER_BRIDGE = [
     description: "west side",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [VIDEOS.pittRiverBridgeEb.id, VIDEOS.pittRiverBridgeWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.pittRiverBridgeEb.id,
+      ROUTE_VIDEOS.pittRiverBridgeWb.id,
+    ],
     positions: [
       BELFAST_PITT_RIVER_BRIDGE,
       [49.24962, -122.73202],
@@ -93,7 +99,10 @@ export const PITT_RIVER_BRIDGE = [
     description: "elevated",
     type: "mixed",
     elevation: 1,
-    videoIds: [VIDEOS.pittRiverBridgeEb.id, VIDEOS.pittRiverBridgeWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.pittRiverBridgeEb.id,
+      ROUTE_VIDEOS.pittRiverBridgeWb.id,
+    ],
     positions: [
       ELEVATION_W,
       [49.2491, -122.7314],
@@ -108,15 +117,18 @@ export const PITT_RIVER_BRIDGE = [
     description: "east side",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [VIDEOS.pittRiverBridgeEb.id, VIDEOS.pittRiverBridgeWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.pittRiverBridgeEb.id,
+      ROUTE_VIDEOS.pittRiverBridgeWb.id,
+    ],
     positions: [ELEVATION_E, GRAVEL_TRAIL_S],
   },
   {
     routeNames: [ROUTES.pittRiverBridge.name],
     description: "east side after gravel",
     type: "mixed",
-    videoIds: [VIDEOS.pittRiverBridgeEb.id],
-    videoIdsEndAtEnd: [VIDEOS.pittRiverBridgeEb.id],
+    videoIds: [ROUTE_VIDEOS.pittRiverBridgeEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.pittRiverBridgeEb.id],
     positions: [
       GRAVEL_TRAIL_S,
       [49.24616, -122.72467],

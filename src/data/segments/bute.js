@@ -5,7 +5,7 @@ import {
   BUTE_NELSON,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const BUTE_DAVIE_S = [49.28179, -123.13337];
 const BUTE_PANTAGES_N = [49.28144, -123.13388];
@@ -18,23 +18,23 @@ export const BUTE = [
     routeNames: [ROUTES.bute.name],
     description: "burnaby to lane",
     type: "quiet",
-    videoIds: [VIDEOS.buteNb.id, VIDEOS.buteSb.id],
-    videoIdsStartAtStart: [VIDEOS.buteNb.id],
-    videoIdsEndAtStart: [VIDEOS.buteSb.id],
+    videoIds: [ROUTE_VIDEOS.buteNb.id, ROUTE_VIDEOS.buteSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.buteNb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.buteSb.id],
     positions: [BUTE_BURNABY, BUTE_PANTAGES_N],
   },
   {
     routeNames: [ROUTES.bute.name],
     description: "plaza at denman",
     type: "mixed",
-    videoIds: [VIDEOS.buteNb.id, VIDEOS.buteSb.id],
+    videoIds: [ROUTE_VIDEOS.buteNb.id, ROUTE_VIDEOS.buteSb.id],
     positions: [BUTE_PANTAGES_N, BUTE_DAVIE_S],
   },
   {
     routeNames: [ROUTES.bute.name],
     description: "denman to stovold",
     type: "quiet",
-    videoIds: [VIDEOS.buteNb.id, VIDEOS.buteSb.id],
+    videoIds: [ROUTE_VIDEOS.buteNb.id, ROUTE_VIDEOS.buteSb.id],
     positions: [
       BUTE_DAVIE_S,
       [49.2825, -123.13232],
@@ -49,23 +49,23 @@ export const BUTE = [
     routeNames: [ROUTES.bute.name],
     description: "plaza at haro",
     type: "mixed",
-    videoIds: [VIDEOS.buteSb.id, VIDEOS.buteNb.id],
+    videoIds: [ROUTE_VIDEOS.buteSb.id, ROUTE_VIDEOS.buteNb.id],
     positions: [BUTE_STOVOLD_N, BUTE_HARO],
   },
   {
     routeNames: [ROUTES.bute.name],
     description: "haro to lane",
     type: "quiet",
-    videoIds: [VIDEOS.buteSb.id, VIDEOS.buteNb.id],
-    videoIdsEndAtEnd: [VIDEOS.buteNb.id],
+    videoIds: [ROUTE_VIDEOS.buteSb.id, ROUTE_VIDEOS.buteNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.buteNb.id],
     positions: [BUTE_HARO, BUTE_ROSEMARY_BROWN],
   },
   {
     routeNames: [ROUTES.bute.name],
     description: "plaza at robson",
     type: "mixed",
-    videoIds: [VIDEOS.buteSb.id],
-    videoIdsStartAtEnd: [VIDEOS.buteSb.id],
+    videoIds: [ROUTE_VIDEOS.buteSb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.buteSb.id],
     positions: [BUTE_ROSEMARY_BROWN, BUTE_ROBSON],
   },
 ];

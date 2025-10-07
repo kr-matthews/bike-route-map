@@ -8,7 +8,7 @@ import {
   RICHARDS_DUNSMUIR,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const WEST_OF_CAMBIE = [49.28084, -123.11197];
 const CITADEL_PARADE_DUNSMUIR = [49.27951, -123.10996];
@@ -19,9 +19,9 @@ export const DUNSMUIR = [
     description: "hornby to just before cambie",
     type: "dedicated",
     elevation: 0.5,
-    videoIds: [VIDEOS.dunsmuirEb.id, VIDEOS.dunsmuirWb.id],
-    videoIdsStartAtStart: [VIDEOS.dunsmuirEb.id],
-    videoIdsEndAtStart: [VIDEOS.dunsmuirWb.id],
+    videoIds: [ROUTE_VIDEOS.dunsmuirEb.id, ROUTE_VIDEOS.dunsmuirWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.dunsmuirEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.dunsmuirWb.id],
     positions: [
       HORNBY_DUNSMUIR,
       [49.28431, -123.1174],
@@ -39,11 +39,11 @@ export const DUNSMUIR = [
     type: "dedicated",
     elevation: 0.5,
     videoIds: [
-      VIDEOS.dunsmuirEb.id,
-      VIDEOS.dunsmuirWb.id,
-      VIDEOS.cambieGastownNb.id,
+      ROUTE_VIDEOS.dunsmuirEb.id,
+      ROUTE_VIDEOS.dunsmuirWb.id,
+      ROUTE_VIDEOS.cambieGastownNb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.cambieGastownNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.cambieGastownNb.id],
     positions: [WEST_OF_CAMBIE, CAMBIE_DUNSMUIR],
   },
   {
@@ -51,7 +51,7 @@ export const DUNSMUIR = [
     description: "cambie to viaduct",
     type: "dedicated",
     elevation: 0.5,
-    videoIds: [VIDEOS.dunsmuirEb.id, VIDEOS.dunsmuirWb.id],
+    videoIds: [ROUTE_VIDEOS.dunsmuirEb.id, ROUTE_VIDEOS.dunsmuirWb.id],
     positions: [
       CAMBIE_DUNSMUIR,
       BEATTY_DUNSMUIR_NW,
@@ -65,7 +65,7 @@ export const DUNSMUIR = [
     description: "viaduct",
     type: "dedicated",
     elevation: 1,
-    videoIds: [VIDEOS.dunsmuirWb.id, VIDEOS.dunsmuirEb.id],
+    videoIds: [ROUTE_VIDEOS.dunsmuirWb.id, ROUTE_VIDEOS.dunsmuirEb.id],
     positions: [
       CITADEL_PARADE_DUNSMUIR,
       [49.27893, -123.10909],

@@ -12,7 +12,7 @@ import {
   SEA_ISLAND_CONNECTOR_ARTHUR_LAING_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const RUSS_BAKER_GRANT_MCCONACHIE_N = [49.19465, -123.14375];
 const RUSS_BAKER_GRANT_MCCONACHIE_S = [49.19414, -123.14359];
@@ -25,7 +25,7 @@ export const RUSS_BAKER = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.russBakerNb.id],
+    videoIds: [ROUTE_VIDEOS.russBakerNb.id],
     positions: [
       NO_2_RUSS_BAKER_E,
       [49.17978, -123.15328],
@@ -53,7 +53,7 @@ export const RUSS_BAKER = [
     description: "nb: russ baker to arthur laing",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.russBakerNb.id],
+    videoIds: [ROUTE_VIDEOS.russBakerNb.id],
     positions: [
       RUSS_BAKER_MILLER_SE,
       [49.19285, -123.1421],
@@ -75,7 +75,7 @@ export const RUSS_BAKER = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.russBakerSb.id],
+    videoIds: [ROUTE_VIDEOS.russBakerSb.id],
     positions: [
       SEA_ISLAND_CONNECTOR_ARTHUR_LAING_N,
       [49.19517, -123.14015],
@@ -101,7 +101,7 @@ export const RUSS_BAKER = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
-    videoIds: [VIDEOS.russBakerSb.id],
+    videoIds: [ROUTE_VIDEOS.russBakerSb.id],
     positions: [
       RUSS_BAKER_GRANT_MCCONACHIE_N,
       [49.19452, -123.14376],
@@ -115,7 +115,7 @@ export const RUSS_BAKER = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.russBakerSb.id],
+    videoIds: [ROUTE_VIDEOS.russBakerSb.id],
     positions: [
       RUSS_BAKER_GRANT_MCCONACHIE_S,
       [49.194, -123.14344],
@@ -127,7 +127,7 @@ export const RUSS_BAKER = [
     description: "sb: arthur laing to miller 4",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.russBakerSb.id],
+    videoIds: [ROUTE_VIDEOS.russBakerSb.id],
     positions: [
       SB_PRE_MILLER,
       [49.19349, -123.14282],
@@ -146,7 +146,7 @@ export const RUSS_BAKER = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.russBakerSb.id],
+    videoIds: [ROUTE_VIDEOS.russBakerSb.id],
     positions: [
       RUSS_BAKER_MILLER_SW,
       [49.19151, -123.14259],

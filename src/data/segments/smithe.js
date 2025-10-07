@@ -10,7 +10,7 @@ import {
   THURLOW_HARO,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const SMITHE = [
   {
@@ -18,13 +18,13 @@ export const SMITHE = [
     description: "bi-directional: thurlow to burrard",
     type: "dedicated",
     videoIds: [
-      VIDEOS.smitheEb.id,
-      VIDEOS.cambieBridgeSmitheNb.id,
-      VIDEOS.haroEb.id,
+      ROUTE_VIDEOS.smitheEb.id,
+      ROUTE_VIDEOS.cambieBridgeSmitheNb.id,
+      ROUTE_VIDEOS.haroEb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.smitheEb.id],
-    videoIdsEndAtStart: [VIDEOS.cambieBridgeSmitheNb.id],
-    videoIdsEndAtEnd: [VIDEOS.haroEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.smitheEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.cambieBridgeSmitheNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.haroEb.id],
     positions: [
       THURLOW_HARO,
       [49.28391, -123.12584],
@@ -45,7 +45,7 @@ export const SMITHE = [
     routeNames: [ROUTES.smithe.name],
     description: "bi-directional: burrard to richards",
     type: "dedicated",
-    videoIds: [VIDEOS.smitheEb.id, VIDEOS.cambieBridgeSmitheNb.id],
+    videoIds: [ROUTE_VIDEOS.smitheEb.id, ROUTE_VIDEOS.cambieBridgeSmitheNb.id],
     positions: [
       BURRARD_SMITHE,
       [49.28225, -123.12435],
@@ -61,7 +61,7 @@ export const SMITHE = [
     description: "uni-directional: beatty to richards",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.cambieBridgeSmitheNb.id],
+    videoIds: [ROUTE_VIDEOS.cambieBridgeSmitheNb.id],
     positions: [
       BEATTY_SMITHE_N,
       [49.27718, -123.11652],
@@ -75,7 +75,10 @@ export const SMITHE = [
     routeNames: [ROUTES.smithe.name],
     description: "beatty to expo/smithe path",
     type: "dedicated",
-    videoIds: [VIDEOS.cambieBridgeSmitheNb.id, VIDEOS.cambieBridgeSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.cambieBridgeSmitheNb.id,
+      ROUTE_VIDEOS.cambieBridgeSb.id,
+    ],
     positions: [
       BEATTY_SMITHE_N,
       BEATTY_SMITHE_S,

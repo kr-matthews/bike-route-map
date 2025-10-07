@@ -20,7 +20,7 @@ import {
   VIVIAN_LYNBROOK,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const ELLIOTT_VIVIAN = [49.21271, -123.05513];
 
@@ -29,14 +29,14 @@ export const SUNRISE = [
     routeNames: [ROUTES.sunrise.name],
     description: "kent to marine",
     type: "quiet",
-    videoIds: [VIDEOS.sunriseNb.id, VIDEOS.sunriseSb.id],
+    videoIds: [ROUTE_VIDEOS.sunriseNb.id, ROUTE_VIDEOS.sunriseSb.id],
     positions: [ELLIOTT_KENT, ELLIOTT_MARINE],
   },
   {
     routeNames: [ROUTES.sunrise.name],
     description: "marine to vivian",
     type: "shared",
-    videoIds: [VIDEOS.sunriseNb.id, VIDEOS.sunriseSb.id],
+    videoIds: [ROUTE_VIDEOS.sunriseNb.id, ROUTE_VIDEOS.sunriseSb.id],
     positions: [
       ELLIOTT_MARINE,
       [49.20761, -123.05686],
@@ -52,7 +52,7 @@ export const SUNRISE = [
     routeNames: [ROUTES.sunrise.name],
     description: "elliott to masumi mitsui",
     type: "quiet",
-    videoIds: [VIDEOS.sunriseNb.id, VIDEOS.sunriseSb.id],
+    videoIds: [ROUTE_VIDEOS.sunriseNb.id, ROUTE_VIDEOS.sunriseSb.id],
     positions: [
       ELLIOTT_VIVIAN,
       [49.21273, -123.05487],
@@ -68,18 +68,18 @@ export const SUNRISE = [
     description: "masumi mitsui overlap",
     type: "quiet",
     videoIds: [
-      VIDEOS.sunriseNb.id,
-      VIDEOS.sunriseSb.id,
-      VIDEOS.champlainHeightsGapEb.id,
+      ROUTE_VIDEOS.sunriseNb.id,
+      ROUTE_VIDEOS.sunriseSb.id,
+      ROUTE_VIDEOS.champlainHeightsGapEb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.champlainHeightsGapEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.champlainHeightsGapEb.id],
     positions: [VIVIAN_LYNBROOK, VIVIAN_57TH],
   },
   {
     routeNames: [ROUTES.sunrise.name],
     description: "masumi mitsui to ridgeway",
     type: "quiet",
-    videoIds: [VIDEOS.sunriseNb.id, VIDEOS.sunriseSb.id],
+    videoIds: [ROUTE_VIDEOS.sunriseNb.id, ROUTE_VIDEOS.sunriseSb.id],
     positions: [
       VIVIAN_57TH,
       [49.22023, -123.05054],
@@ -95,7 +95,7 @@ export const SUNRISE = [
     routeNames: [ROUTES.sunrise.name],
     description: "ridgeway to midtown",
     type: "quiet",
-    videoIds: [VIDEOS.sunriseNb.id, VIDEOS.sunriseSb.id],
+    videoIds: [ROUTE_VIDEOS.sunriseNb.id, ROUTE_VIDEOS.sunriseSb.id],
     positions: [
       EARLES_45TH,
       [49.23116, -123.04881],
@@ -109,9 +109,9 @@ export const SUNRISE = [
     description: "earles to kingsway",
     type: "quiet",
     videoIds: [
-      VIDEOS.sunriseNb.id,
-      VIDEOS.sunriseSb.id,
-      VIDEOS.midtownVancouverEb.id,
+      ROUTE_VIDEOS.sunriseNb.id,
+      ROUTE_VIDEOS.sunriseSb.id,
+      ROUTE_VIDEOS.midtownVancouverEb.id,
     ],
     positions: [EARLES_38TH, KINGSWAY_EARLES],
   },
@@ -120,10 +120,10 @@ export const SUNRISE = [
     description: "slocan",
     type: "shared",
     videoIds: [
-      VIDEOS.sunriseSb.id,
-      VIDEOS.sunriseNb.id,
-      VIDEOS.bcParkwayVancouverEb.id,
-      VIDEOS.bcParkwayVancouverWb.id,
+      ROUTE_VIDEOS.sunriseSb.id,
+      ROUTE_VIDEOS.sunriseNb.id,
+      ROUTE_VIDEOS.bcParkwayVancouverEb.id,
+      ROUTE_VIDEOS.bcParkwayVancouverWb.id,
     ],
     positions: [SLOCAN_BC_PARKWAY, SLOCAN_29TH],
   },
@@ -131,7 +131,7 @@ export const SUNRISE = [
     routeNames: [ROUTES.sunrise.name],
     description: "bc parkway to 22nd",
     type: "shared",
-    videoIds: [VIDEOS.sunriseSb.id, VIDEOS.sunriseNb.id],
+    videoIds: [ROUTE_VIDEOS.sunriseSb.id, ROUTE_VIDEOS.sunriseNb.id],
     positions: [
       SLOCAN_BC_PARKWAY,
       [49.24793, -123.04965],
@@ -144,7 +144,7 @@ export const SUNRISE = [
     routeNames: [ROUTES.sunrise.name],
     description: "22nd to adanac",
     type: "quiet",
-    videoIds: [VIDEOS.sunriseSb.id, VIDEOS.sunriseNb.id],
+    videoIds: [ROUTE_VIDEOS.sunriseSb.id, ROUTE_VIDEOS.sunriseNb.id],
     positions: [
       SLOCAN_22ND_N,
       [49.25154, -123.04961],
@@ -171,9 +171,9 @@ export const SUNRISE = [
     routeNames: [ROUTES.sunrise.name],
     description: "adanac to wall",
     type: "quiet",
-    videoIds: [VIDEOS.sunriseSb.id, VIDEOS.sunriseNb.id],
-    videoIdsStartAtEnd: [VIDEOS.sunriseSb.id],
-    videoIdsEndAtEnd: [VIDEOS.sunriseNb.id],
+    videoIds: [ROUTE_VIDEOS.sunriseSb.id, ROUTE_VIDEOS.sunriseNb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.sunriseSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.sunriseNb.id],
     positions: [
       KASLO_ADANAC,
       [49.27772, -123.04672],

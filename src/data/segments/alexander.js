@@ -4,7 +4,7 @@ import {
   MAIN_ALEXANDER,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const EAST_OF_WATER = [49.28355, -123.10351];
 const COLUMBIA_ALEXANDER = [49.28377, -123.10215];
@@ -16,14 +16,14 @@ export const ALEXANDER = [
     description: "west bit",
     type: "dedicated",
     videoIds: [
-      VIDEOS.alexanderEb.id,
-      VIDEOS.alexanderWb.id,
-      VIDEOS.carrallSb.id,
-      VIDEOS.waterWb.id,
-      VIDEOS.waterEb.id,
+      ROUTE_VIDEOS.alexanderEb.id,
+      ROUTE_VIDEOS.alexanderWb.id,
+      ROUTE_VIDEOS.carrallSb.id,
+      ROUTE_VIDEOS.waterWb.id,
+      ROUTE_VIDEOS.waterEb.id,
     ],
-    videoIdsStartAtEnd: [VIDEOS.waterWb.id],
-    videoIdsEndAtEnd: [VIDEOS.waterEb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.waterWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.waterEb.id],
     positions: [ALEXANDER_POWELL, [49.28347, -123.10385], EAST_OF_WATER],
   },
   {
@@ -31,18 +31,18 @@ export const ALEXANDER = [
     description: "parking lot",
     type: "quiet",
     videoIds: [
-      VIDEOS.alexanderEb.id,
-      VIDEOS.alexanderWb.id,
-      VIDEOS.carrallSb.id,
+      ROUTE_VIDEOS.alexanderEb.id,
+      ROUTE_VIDEOS.alexanderWb.id,
+      ROUTE_VIDEOS.carrallSb.id,
     ],
-    videoIdsStartAtEnd: [VIDEOS.carrallSb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.carrallSb.id],
     positions: [EAST_OF_WATER, COLUMBIA_ALEXANDER],
   },
   {
     routeNames: [ROUTES.alexander.name],
     description: "primary",
     type: "quiet",
-    videoIds: [VIDEOS.alexanderEb.id, VIDEOS.alexanderWb.id],
+    videoIds: [ROUTE_VIDEOS.alexanderEb.id, ROUTE_VIDEOS.alexanderWb.id],
     positions: [
       COLUMBIA_ALEXANDER,
       [49.28408, -123.10058],
@@ -63,15 +63,15 @@ export const ALEXANDER = [
     description: "hawks",
     type: "dedicated",
     videoIds: [
-      VIDEOS.alexanderWb.id,
-      VIDEOS.alexanderEb.id,
-      VIDEOS.powellEb.id,
-      VIDEOS.powellWb.id,
+      ROUTE_VIDEOS.alexanderWb.id,
+      ROUTE_VIDEOS.alexanderEb.id,
+      ROUTE_VIDEOS.powellEb.id,
+      ROUTE_VIDEOS.powellWb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.powellEb.id],
-    videoIdsStartAtEnd: [VIDEOS.alexanderWb.id],
-    videoIdsEndAtStart: [VIDEOS.powellWb.id],
-    videoIdsEndAtEnd: [VIDEOS.alexanderEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.powellEb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.alexanderWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.powellWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.alexanderEb.id],
     positions: [NORTH_OF_POWELL, HAWKS_POWELL],
   },
 ];

@@ -10,7 +10,7 @@ import {
   BEATTY_SMITHE_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const BEFORE_PENDER = [49.28105, -123.10868];
 
@@ -21,7 +21,7 @@ export const BEATTY = [
     type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.beattyNb.id],
+    videoIds: [ROUTE_VIDEOS.beattyNb.id],
     positions: [
       BEATTY_NELSON_SE,
       [49.2755, -123.11708],
@@ -39,8 +39,8 @@ export const BEATTY = [
     description: "nb: just before pender",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.beattyNb.id],
-    videoIdsEndAtEnd: [VIDEOS.beattyNb.id],
+    videoIds: [ROUTE_VIDEOS.beattyNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.beattyNb.id],
     positions: [
       BEFORE_PENDER,
       BEATTY_PENDER_SE,
@@ -52,8 +52,8 @@ export const BEATTY = [
     type: "shared",
     oneWay: "required",
     undesignated: true,
-    videoIds: [VIDEOS.beattySb.id],
-    videoIdsStartAtStart: [VIDEOS.beattySb.id],
+    videoIds: [ROUTE_VIDEOS.beattySb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.beattySb.id],
     positions: [BEATTY_PENDER_NW, BEATTY_PENDER_SW],
   },
   {
@@ -61,7 +61,7 @@ export const BEATTY = [
     description: "sb: pender to smithe",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.beattySb.id],
+    videoIds: [ROUTE_VIDEOS.beattySb.id],
     positions: [
       BEATTY_PENDER_SW,
       BEATTY_DUNSMUIR_NW,
@@ -75,8 +75,8 @@ export const BEATTY = [
     description: "sb: smithe to nelson",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.beattySb.id, VIDEOS.cambieBridgeSb.id],
-    videoIdsEndAtEnd: [VIDEOS.beattySb.id],
+    videoIds: [ROUTE_VIDEOS.beattySb.id, ROUTE_VIDEOS.cambieBridgeSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.beattySb.id],
     positions: [BEATTY_SMITHE_N, [49.27564, -123.11704], BEATTY_NELSON_SW],
   },
 ];

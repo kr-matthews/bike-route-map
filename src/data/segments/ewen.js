@@ -7,15 +7,15 @@ import {
   PORT_ROYAL_EWEN,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const EWEN = [
   {
     routeNames: [ROUTES.ewen.name],
     description: "boundary to howes",
     type: "mixed",
-    videoIds: [VIDEOS.ewenWb.id],
-    videoIdsEndAtStart: [VIDEOS.ewenWb.id],
+    videoIds: [ROUTE_VIDEOS.ewenWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.ewenWb.id],
     positions: [
       BOUNDARY_EWEN,
       [49.18193, -122.95683],
@@ -36,15 +36,15 @@ export const EWEN = [
     routeNames: [ROUTES.ewen.name, ROUTES.howes.name],
     description: "crossing howes",
     type: "mixed",
-    videoIds: [VIDEOS.ewenWb.id, VIDEOS.howesNb.id],
+    videoIds: [ROUTE_VIDEOS.ewenWb.id, ROUTE_VIDEOS.howesNb.id],
     positions: [HOWES_EWEN_SW, HOWES_EWEN_SE],
   },
   {
     routeNames: [ROUTES.ewen.name],
     description: "howes to end",
     type: "mixed",
-    videoIds: [VIDEOS.ewenWb.id],
-    videoIdsStartAtEnd: [VIDEOS.ewenWb.id],
+    videoIds: [ROUTE_VIDEOS.ewenWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.ewenWb.id],
     positions: [
       HOWES_EWEN_SE,
       [49.18624, -122.94647],

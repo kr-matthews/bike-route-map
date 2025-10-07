@@ -5,7 +5,7 @@ import {
   MERIVALE_CARNARVON,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const BEGBIE_CARNARVON = [49.2027, -122.91147];
 const SIXTH_CARNARVON = [49.20414, -122.90883];
@@ -30,9 +30,9 @@ export const CARNARVON = [
     routeNames: [ROUTES.carnarvon.name],
     description: "west portion",
     type: "shared",
-    videoIds: [VIDEOS.carnarvonEb.id, VIDEOS.carnarvonWb.id],
-    videoIdsStartAtStart: [VIDEOS.carnarvonEb.id],
-    videoIdsEndAtStart: [VIDEOS.carnarvonWb.id],
+    videoIds: [ROUTE_VIDEOS.carnarvonEb.id, ROUTE_VIDEOS.carnarvonWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.carnarvonEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.carnarvonWb.id],
     positions: [
       [49.20175, -122.91311],
       [49.20179, -122.91315],
@@ -45,7 +45,7 @@ export const CARNARVON = [
     routeNames: [ROUTES.carnarvon.name],
     description: "sixth to merivale",
     type: "quiet",
-    videoIds: [VIDEOS.carnarvonEb.id, VIDEOS.carnarvonWb.id],
+    videoIds: [ROUTE_VIDEOS.carnarvonEb.id, ROUTE_VIDEOS.carnarvonWb.id],
     positions: [
       SIXTH_CARNARVON,
       FOURTH_CARNARVON,
@@ -59,9 +59,9 @@ export const CARNARVON = [
     description: "merivale to elliot",
     type: "quiet",
     videoIds: [
-      VIDEOS.carnarvonWb.id,
-      VIDEOS.carnarvonEb.id,
-      VIDEOS.uptownDowntownSb.id,
+      ROUTE_VIDEOS.carnarvonWb.id,
+      ROUTE_VIDEOS.carnarvonEb.id,
+      ROUTE_VIDEOS.uptownDowntownSb.id,
     ],
     positions: [MERIVALE_CARNARVON, ELLIOT_CARNARVON],
   },

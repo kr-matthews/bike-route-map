@@ -9,7 +9,7 @@ import {
   YUKON_14TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const GRANVILLE_14TH_E = [49.25892, -123.1387];
 const GRANVILLE_14TH_E_ALLEY = [49.25891, -123.13805];
@@ -19,8 +19,8 @@ export const FOURTEENTH = [
     routeNames: [ROUTES.fourteenth.name],
     description: "arbutus greenway to granville",
     type: "quiet",
-    videoIds: [VIDEOS.fourteenthExtWb.id],
-    videoIdsEndAtStart: [VIDEOS.fourteenthExtWb.id],
+    videoIds: [ROUTE_VIDEOS.fourteenthExtWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.fourteenthExtWb.id],
     positions: [
       ARBUTUS_GREENWAY_14TH,
       CYPRESS_14TH,
@@ -32,24 +32,24 @@ export const FOURTEENTH = [
     routeNames: [ROUTES.fourteenth.name],
     description: "granville plaza",
     type: "dedicated",
-    videoIds: [VIDEOS.fourteenthExtWb.id],
+    videoIds: [ROUTE_VIDEOS.fourteenthExtWb.id],
     positions: [GRANVILLE_14TH_E, GRANVILLE_14TH_E_ALLEY],
   },
   {
     routeNames: [ROUTES.fourteenth.name],
     description: "granville to alder",
     type: "quiet",
-    videoIds: [VIDEOS.fourteenthExtWb.id],
-    videoIdsStartAtEnd: [VIDEOS.fourteenthExtWb.id],
+    videoIds: [ROUTE_VIDEOS.fourteenthExtWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.fourteenthExtWb.id],
     positions: [GRANVILLE_14TH_E_ALLEY, [49.25884, -123.13391], ALDER_14TH],
   },
   {
     routeNames: [ROUTES.fourteenth.name],
     description: "alder to heather",
     type: "quiet",
-    videoIds: [VIDEOS.fourteenthEb.id, VIDEOS.fourteenthWb.id],
-    videoIdsStartAtStart: [VIDEOS.fourteenthEb.id],
-    videoIdsEndAtStart: [VIDEOS.fourteenthWb.id],
+    videoIds: [ROUTE_VIDEOS.fourteenthEb.id, ROUTE_VIDEOS.fourteenthWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.fourteenthEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.fourteenthWb.id],
     positions: [
       ALDER_14TH,
       [49.25876, -123.12917],
@@ -63,9 +63,9 @@ export const FOURTEENTH = [
     routeNames: [ROUTES.fourteenth.name],
     description: "heather to prince edward",
     type: "quiet",
-    videoIds: [VIDEOS.fourteenthWb.id, VIDEOS.fourteenthEb.id],
-    videoIdsStartAtEnd: [VIDEOS.fourteenthWb.id],
-    videoIdsEndAtEnd: [VIDEOS.fourteenthEb.id],
+    videoIds: [ROUTE_VIDEOS.fourteenthWb.id, ROUTE_VIDEOS.fourteenthEb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.fourteenthWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.fourteenthEb.id],
     positions: [
       HEATHER_14TH_N,
       [49.25878, -123.1177],

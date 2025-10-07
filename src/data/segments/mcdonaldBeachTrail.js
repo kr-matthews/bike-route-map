@@ -4,7 +4,7 @@ import {
   MCDONALD_FERGUSON_NW,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const MCDONALD_BEACH_TRAIL_W = [49.21249, -123.1695];
 
@@ -12,8 +12,8 @@ export const MCDONALD_BEACH_TRAIL = [
   {
     description: "mcdonald rd",
     type: "quiet",
-    videoIds: [VIDEOS.mcdonaldBeachTrailWb.id],
-    videoIdsEndAtStart: [VIDEOS.mcdonaldBeachTrailWb.id],
+    videoIds: [ROUTE_VIDEOS.mcdonaldBeachTrailWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.mcdonaldBeachTrailWb.id],
     positions: [
       MCDONALD_FERGUSON_NW,
       [49.20659, -123.16982],
@@ -36,7 +36,7 @@ export const MCDONALD_BEACH_TRAIL = [
     routeNames: [ROUTES.mcdonaldBeachTrail.name],
     description: "trail",
     type: "mixed",
-    videoIds: [VIDEOS.mcdonaldBeachTrailWb.id],
+    videoIds: [ROUTE_VIDEOS.mcdonaldBeachTrailWb.id],
     positions: [
       MCDONALD_BEACH_TRAIL_W,
       [49.2124, -123.16956],

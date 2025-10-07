@@ -4,7 +4,7 @@ import {
   NO_6_WESTMINSTER_S_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const NO_6_COMMERCE_SW = [49.17618, -123.06931];
 const NO_6_CAMBIE_NW = [49.18483, -123.06926];
@@ -25,8 +25,8 @@ export const NO_6_PATH = [
     routeNames: [ROUTES.no6Path.name],
     description: "south section",
     type: "mixed",
-    videoIds: [VIDEOS.no6PathSb.id],
-    videoIdsEndAtStart: [VIDEOS.no6PathSb.id],
+    videoIds: [ROUTE_VIDEOS.no6PathSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.no6PathSb.id],
     positions: [
       NO_6_WESTMINSTER_NW,
       [49.17034, -123.06934],
@@ -44,7 +44,7 @@ export const NO_6_PATH = [
     description: "no. 6 gap",
     type: "shared",
     undesignated: true,
-    videoIds: [VIDEOS.no6PathSb.id],
+    videoIds: [ROUTE_VIDEOS.no6PathSb.id],
     positions: [
       NO_6_COMMERCE_SW,
       [49.17632, -123.06919],
@@ -58,8 +58,8 @@ export const NO_6_PATH = [
     routeNames: [ROUTES.no6Path.name],
     description: "north section",
     type: "mixed",
-    videoIds: [VIDEOS.no6PathSb.id],
-    videoIdsStartAtEnd: [VIDEOS.no6PathSb.id],
+    videoIds: [ROUTE_VIDEOS.no6PathSb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.no6PathSb.id],
     positions: [
       NO_6_CAMBIE_NW,
       [49.18631, -123.06928],

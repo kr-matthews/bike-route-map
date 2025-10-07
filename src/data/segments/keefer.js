@@ -7,7 +7,7 @@ import {
   QUEBEC_KEEFER_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const GORE_KEEFER = [49.27944, -123.09719];
 const EB_LANE_END = [49.2792, -123.10251];
@@ -26,8 +26,8 @@ export const KEEFER = [
     description: "eb: carrall to quebec",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.keeferEb.id],
-    videoIdsStartAtStart: [VIDEOS.keeferEb.id],
+    videoIds: [ROUTE_VIDEOS.keeferEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.keeferEb.id],
     positions: [CARRALL_KEEFER_SE, [49.27919, -123.10269], EB_LANE_END],
   },
   {
@@ -35,7 +35,7 @@ export const KEEFER = [
     description: "eb: near quebec",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.keeferEb.id],
+    videoIds: [ROUTE_VIDEOS.keeferEb.id],
     positions: [
       EB_LANE_END,
       [49.27923, -123.10233],
@@ -47,8 +47,8 @@ export const KEEFER = [
     routeNames: [ROUTES.keefer.name],
     description: "wb: quebec to carrall",
     type: "shared",
-    videoIds: [VIDEOS.keeferWb.id],
-    videoIdsEndAtEnd: [VIDEOS.keeferWb.id],
+    videoIds: [ROUTE_VIDEOS.keeferWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.keeferWb.id],
     oneWay: "required",
     positions: [
       QUEBEC_KEEFER_E,
@@ -72,7 +72,7 @@ export const KEEFER = [
     routeNames: [ROUTES.keefer.name],
     description: "quebec to gore",
     type: "shared",
-    videoIds: [VIDEOS.keeferEb.id, VIDEOS.keeferWb.id],
+    videoIds: [ROUTE_VIDEOS.keeferEb.id, ROUTE_VIDEOS.keeferWb.id],
     positions: [
       QUEBEC_KEEFER_E,
       [49.27932, -123.10202],
@@ -89,9 +89,9 @@ export const KEEFER = [
     routeNames: [ROUTES.keefer.name],
     description: "east",
     type: "quiet",
-    videoIds: [VIDEOS.keeferWb.id, VIDEOS.keeferEb.id],
-    videoIdsStartAtEnd: [VIDEOS.keeferWb.id],
-    videoIdsEndAtEnd: [VIDEOS.keeferEb.id],
+    videoIds: [ROUTE_VIDEOS.keeferWb.id, ROUTE_VIDEOS.keeferEb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.keeferWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.keeferEb.id],
     positions: [
       GORE_KEEFER,
       [49.27944, -123.09719],

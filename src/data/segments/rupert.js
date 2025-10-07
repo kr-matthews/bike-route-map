@@ -7,7 +7,7 @@ import {
   RUPERT_CVG_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const RUPERT = [
   {
@@ -15,8 +15,8 @@ export const RUPERT = [
     description: "nb",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.rupertNb.id],
-    videoIdsStartAtStart: [VIDEOS.rupertNb.id],
+    videoIds: [ROUTE_VIDEOS.rupertNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.rupertNb.id],
     positions: [
       RUPERT_29TH_E,
       [49.24475, -123.03383],
@@ -42,8 +42,8 @@ export const RUPERT = [
     description: "sb",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.rupertSb.id],
-    videoIdsEndAtEnd: [VIDEOS.rupertSb.id],
+    videoIds: [ROUTE_VIDEOS.rupertSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.rupertSb.id],
     positions: [
       RUPERT_CVG_W,
       [49.2604, -123.03392],

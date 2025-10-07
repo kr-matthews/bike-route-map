@@ -16,7 +16,7 @@ import {
   TEMPLETON_GRANT_MCCONACHIE_SW_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const AVIATION_GRANT_MCCONACHIE_SW = [49.19268, -123.16701];
 const AVIATION_SB_SHOULDER_START = [49.19343, -123.16695];
@@ -96,8 +96,8 @@ export const GRANT_MCCONACHIE = [
     description: "eb",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.grantMcConachieEb.id],
-    videoIdsStartAtStart: [VIDEOS.grantMcConachieEb.id],
+    videoIds: [ROUTE_VIDEOS.grantMcConachieEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.grantMcConachieEb.id],
     positions: [
       MILLER_GRANT_MCCONACHIE,
       [49.19174, -123.17493],
@@ -136,9 +136,12 @@ export const GRANT_MCCONACHIE = [
     description: "eb: to sea island way",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.seaIslandWayEb25.id, VIDEOS.grantMcConachieEb.id],
-    videoIdsStartAtStart: [VIDEOS.seaIslandWayEb25.id],
-    videoIdsEndAtEnd: [VIDEOS.grantMcConachieEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.seaIslandWayEb25.id,
+      ROUTE_VIDEOS.grantMcConachieEb.id,
+    ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.seaIslandWayEb25.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.grantMcConachieEb.id],
     positions: [
       TEMPLETON_GRANT_MCCONACHIE_SW,
       TEMPLETON_GRANT_MCCONACHIE_SE,
@@ -161,7 +164,7 @@ export const GRANT_MCCONACHIE = [
     description: "wb",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.grantMcConachieWb.id],
+    videoIds: [ROUTE_VIDEOS.grantMcConachieWb.id],
     positions: [
       GRANT_MCCONACHIE_WB_START,
       [49.19604, -123.14272],
@@ -213,7 +216,7 @@ export const GRANT_MCCONACHIE = [
     description: "wb continue to terminal via n service",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.grantMcConachieWb.id],
+    videoIds: [ROUTE_VIDEOS.grantMcConachieWb.id],
     positions: [
       AVIATION_NB_SHARE_START,
       [49.19328, -123.16669],

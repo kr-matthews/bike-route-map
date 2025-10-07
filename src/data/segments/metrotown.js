@@ -10,7 +10,7 @@ import {
   SUSSEX_HAZEL_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const MCKAY_HAZEL_SW = [49.23023, -123.00209];
 const MCKAY_KINGSWAY_NW = [49.22966, -123.0027];
@@ -29,8 +29,8 @@ export const METROTOWN = [
   {
     description: "bc parkway connection - mckay",
     type: "mixed",
-    videoIds: [VIDEOS.metrotownCcw.id],
-    videoIdsLoopAtStart: [VIDEOS.metrotownCcw.id],
+    videoIds: [ROUTE_VIDEOS.metrotownCcw.id],
+    videoIdsLoopAtStart: [ROUTE_VIDEOS.metrotownCcw.id],
     positions: [
       MCKAY_BC_PARKWAY,
       [49.22659, -123.00574],
@@ -58,8 +58,8 @@ export const METROTOWN = [
     type: "shared",
     oneWay: "recommended",
     hideArrows: true,
-    videoIds: [VIDEOS.nelsonPathSb.id],
-    videoIdsStartAtEnd: [VIDEOS.nelsonPathSb.id],
+    videoIds: [ROUTE_VIDEOS.nelsonPathSb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.nelsonPathSb.id],
     positions: [NELSON_BENNETT_SW, NELSON_BENNETT_NW],
   },
   {
@@ -85,7 +85,7 @@ export const METROTOWN = [
     description: "ccw: sussex to mckay",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.metrotownCcw.id],
+    videoIds: [ROUTE_VIDEOS.metrotownCcw.id],
     positions: [
       SUSSEX_HAZEL_NE,
       SUSSEX_HAZEL_NW,
@@ -99,7 +99,7 @@ export const METROTOWN = [
     description: "ccw: hazel to kingsway",
     type: "combined",
     oneWay: "required",
-    videoIds: [VIDEOS.metrotownCcw.id],
+    videoIds: [ROUTE_VIDEOS.metrotownCcw.id],
     positions: [
       MCKAY_HAZEL_SW,
       [49.23017, -123.00216],
@@ -114,7 +114,7 @@ export const METROTOWN = [
     description: "ccw: kingsway to mcmurray",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.metrotownCcw.id],
+    videoIds: [ROUTE_VIDEOS.metrotownCcw.id],
     positions: [
       MCKAY_KINGSWAY_NW,
       MCKAY_KINGSWAY_SW,
@@ -159,7 +159,7 @@ export const METROTOWN = [
     description: "ccw: mcmurray to sussex",
     type: "combined",
     oneWay: "required",
-    videoIds: [VIDEOS.metrotownCcw.id],
+    videoIds: [ROUTE_VIDEOS.metrotownCcw.id],
     positions: [MCMURRAY_HAZEL_NW, SUSSEX_HAZEL_NE],
   },
 
@@ -169,7 +169,7 @@ export const METROTOWN = [
     description: "cw: hazel to kingsborough",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.metrotownCw.id],
+    videoIds: [ROUTE_VIDEOS.metrotownCw.id],
     positions: [
       SUSSEX_HAZEL_S,
       [49.22884, -122.99771],
@@ -208,7 +208,7 @@ export const METROTOWN = [
     description: "cw: mckay lane",
     type: "combined",
     oneWay: "required",
-    videoIds: [VIDEOS.metrotownCw.id],
+    videoIds: [ROUTE_VIDEOS.metrotownCw.id],
     positions: [
       MCKAY_KINGSBOROUGH_NE,
       [49.22832, -123.00394],
@@ -226,7 +226,7 @@ export const METROTOWN = [
     description: "cw: kingsway to sussex",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.metrotownCw.id],
+    videoIds: [ROUTE_VIDEOS.metrotownCw.id],
     positions: [
       MCKAY_KINGSWAY_SE,
       [49.2296, -123.00247],

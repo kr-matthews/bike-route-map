@@ -6,17 +6,17 @@ import {
   HIGHBURY_POINT_GREY,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const HIGHBURY = [
   {
     routeNames: [ROUTES.highbury.name],
     description: "all",
     type: "quiet",
-    videoIds: [VIDEOS.highburySb.id, VIDEOS.highburyNb.id],
-    videoIdsStartAtEnd: [VIDEOS.highburySb.id],
-    videoIdsEndAtStart: [VIDEOS.highburySb.id],
-    videoIdsEndAtEnd: [VIDEOS.highburyNb.id],
+    videoIds: [ROUTE_VIDEOS.highburySb.id, ROUTE_VIDEOS.highburyNb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.highburySb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.highburySb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.highburyNb.id],
     positions: [
       HIGHBURY_8TH,
       [49.26694, -123.18772],

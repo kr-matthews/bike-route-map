@@ -1,17 +1,20 @@
 import { BRIDGEPORT_TRAIL_VAN_HORNE } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const BRIDGEPORT_TRAIL = [
   {
     routeNames: [ROUTES.bridgeportTrail.name],
     description: "primary",
     type: "mixed",
-    videoIds: [VIDEOS.bridgeportTrailWb.id, VIDEOS.bridgeportTrailEb.id],
-    videoIdsStartAtStart: [VIDEOS.bridgeportTrailEb.id],
-    videoIdsStartAtEnd: [VIDEOS.bridgeportTrailWb.id],
-    videoIdsEndAtStart: [VIDEOS.bridgeportTrailWb.id],
-    videoIdsEndAtEnd: [VIDEOS.bridgeportTrailEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.bridgeportTrailWb.id,
+      ROUTE_VIDEOS.bridgeportTrailEb.id,
+    ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.bridgeportTrailEb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.bridgeportTrailWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.bridgeportTrailWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.bridgeportTrailEb.id],
     positions: [
       BRIDGEPORT_TRAIL_VAN_HORNE,
       [49.19489, -123.12364],

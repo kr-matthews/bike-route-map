@@ -6,7 +6,7 @@ import {
   STANLEY_PARK_LOOP_SPLIT_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const AFTER_ONE_WAY_START = [49.29607, -123.13556];
 const BEFORE_ONE_WAY_END = [49.29567, -123.15135];
@@ -23,11 +23,14 @@ export const STANLEY_PARK_LOOP = [
     type: "combined",
     oneWay: "required",
     videoIds: [
-      VIDEOS.seasideStanleyPark.id,
-      VIDEOS.lostLagoonEb.id,
-      VIDEOS.seasideCoalHarbourWb.id,
+      ROUTE_VIDEOS.seasideStanleyPark.id,
+      ROUTE_VIDEOS.lostLagoonEb.id,
+      ROUTE_VIDEOS.seasideCoalHarbourWb.id,
     ],
-    videoIdsEndAtEnd: [VIDEOS.lostLagoonEb.id, VIDEOS.seasideCoalHarbourWb.id],
+    videoIdsEndAtEnd: [
+      ROUTE_VIDEOS.lostLagoonEb.id,
+      ROUTE_VIDEOS.seasideCoalHarbourWb.id,
+    ],
     positions: [
       STANLEY_PARK_LOOP_JOIN_E,
       [49.29552, -123.13577],
@@ -40,7 +43,7 @@ export const STANLEY_PARK_LOOP = [
     description: "seawall",
     type: "combined",
     oneWay: "required",
-    videoIds: [VIDEOS.seasideStanleyPark.id],
+    videoIds: [ROUTE_VIDEOS.seasideStanleyPark.id],
     positions: [
       AFTER_ONE_WAY_START,
       [49.29628, -123.1354],
@@ -461,8 +464,11 @@ export const STANLEY_PARK_LOOP = [
     description: "just after pool",
     type: "combined",
     oneWay: "required",
-    videoIds: [VIDEOS.lostLagoonEb.id, VIDEOS.seasideStanleyPark.id],
-    videoIdsStartAtStart: [VIDEOS.lostLagoonEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.lostLagoonEb.id,
+      ROUTE_VIDEOS.seasideStanleyPark.id,
+    ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.lostLagoonEb.id],
     positions: [
       BEFORE_ONE_WAY_END,
       [49.29571, -123.15116],
@@ -475,8 +481,8 @@ export const STANLEY_PARK_LOOP = [
   {
     description: "bridle path",
     type: "comfortable",
-    videoIds: [VIDEOS.lostLagoonWb.id],
-    videoIdsEndAtEnd: [VIDEOS.lostLagoonWb.id],
+    videoIds: [ROUTE_VIDEOS.lostLagoonWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.lostLagoonWb.id],
     positions: [
       ONE_WAY_END,
       [49.29597, -123.15053],
@@ -491,9 +497,9 @@ export const STANLEY_PARK_LOOP = [
     description: "second beach: north",
     type: "comfortable",
     videoIds: [
-      VIDEOS.lostLagoonEb.id,
-      VIDEOS.lostLagoonWb.id,
-      VIDEOS.seasideStanleyPark.id,
+      ROUTE_VIDEOS.lostLagoonEb.id,
+      ROUTE_VIDEOS.lostLagoonWb.id,
+      ROUTE_VIDEOS.seasideStanleyPark.id,
     ],
     positions: [
       ONE_WAY_END,
@@ -511,14 +517,14 @@ export const STANLEY_PARK_LOOP = [
     description: "second beach: south",
     type: "comfortable",
     videoIds: [
-      VIDEOS.lostLagoonEb.id,
-      VIDEOS.lostLagoonWb.id,
-      VIDEOS.seasideBypassBeachEb.id,
-      VIDEOS.seasideStanleyPark.id,
-      VIDEOS.seasideBypassBeachWb.id,
+      ROUTE_VIDEOS.lostLagoonEb.id,
+      ROUTE_VIDEOS.lostLagoonWb.id,
+      ROUTE_VIDEOS.seasideBypassBeachEb.id,
+      ROUTE_VIDEOS.seasideStanleyPark.id,
+      ROUTE_VIDEOS.seasideBypassBeachWb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.seasideBypassBeachEb.id],
-    videoIdsEndAtEnd: [VIDEOS.seasideBypassBeachWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.seasideBypassBeachEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.seasideBypassBeachWb.id],
     positions: [
       SECOND_BEACH_WEIRD_JOIN,
       [49.29484, -123.14887],
@@ -532,9 +538,9 @@ export const STANLEY_PARK_LOOP = [
     type: "comfortable",
     elevation: -0.5,
     videoIds: [
-      VIDEOS.lostLagoonEb.id,
-      VIDEOS.lostLagoonWb.id,
-      VIDEOS.seasideStanleyPark.id,
+      ROUTE_VIDEOS.lostLagoonEb.id,
+      ROUTE_VIDEOS.lostLagoonWb.id,
+      ROUTE_VIDEOS.seasideStanleyPark.id,
     ],
     positions: [
       STANLEY_PARK_LOOP_SPLIT_W,
@@ -552,9 +558,9 @@ export const STANLEY_PARK_LOOP = [
     type: "comfortable",
     elevation: -1,
     videoIds: [
-      VIDEOS.lostLagoonEb.id,
-      VIDEOS.lostLagoonWb.id,
-      VIDEOS.seasideStanleyPark.id,
+      ROUTE_VIDEOS.lostLagoonEb.id,
+      ROUTE_VIDEOS.lostLagoonWb.id,
+      ROUTE_VIDEOS.seasideStanleyPark.id,
     ],
     positions: [DR_TUNNEL_START, DR_TUNNEL_END],
   },
@@ -564,18 +570,18 @@ export const STANLEY_PARK_LOOP = [
     type: "comfortable",
     elevation: -0.5,
     videoIds: [
-      VIDEOS.lostLagoonEb.id,
-      VIDEOS.lostLagoonWb.id,
-      VIDEOS.seasideStanleyPark.id,
+      ROUTE_VIDEOS.lostLagoonEb.id,
+      ROUTE_VIDEOS.lostLagoonWb.id,
+      ROUTE_VIDEOS.seasideStanleyPark.id,
     ],
-    videoIdsEndAtEnd: [VIDEOS.seasideStanleyPark.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.seasideStanleyPark.id],
     positions: [DR_TUNNEL_END, AFTER_DR_TUNNEL],
   },
   {
     routeNames: [ROUTES.stanleyParkLoop.name],
     description: "lost lagoon tunnel to alberni/chilco",
     type: "comfortable",
-    videoIds: [VIDEOS.lostLagoonEb.id, VIDEOS.lostLagoonWb.id],
+    videoIds: [ROUTE_VIDEOS.lostLagoonEb.id, ROUTE_VIDEOS.lostLagoonWb.id],
     positions: [
       AFTER_DR_TUNNEL,
       [49.29454, -123.148],
@@ -628,12 +634,12 @@ export const STANLEY_PARK_LOOP = [
     description: "alberni/chilco to underpass",
     type: "comfortable",
     videoIds: [
-      VIDEOS.lostLagoonWb.id,
-      VIDEOS.lostLagoonEb.id,
-      VIDEOS.alberniEb.id,
-      VIDEOS.chilcoNb.id,
+      ROUTE_VIDEOS.lostLagoonWb.id,
+      ROUTE_VIDEOS.lostLagoonEb.id,
+      ROUTE_VIDEOS.alberniEb.id,
+      ROUTE_VIDEOS.chilcoNb.id,
     ],
-    videoIdsStartAtEnd: [VIDEOS.alberniEb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.alberniEb.id],
     positions: [
       STANLEY_PARK_LOOP_ALBERNI,
       [49.29427, -123.13743],
@@ -648,14 +654,14 @@ export const STANLEY_PARK_LOOP = [
     description: "causeway underpass",
     type: "comfortable",
     videoIds: [
-      VIDEOS.lostLagoonWb.id,
-      VIDEOS.lostLagoonEb.id,
-      VIDEOS.seasideCoalHarbourEb.id,
-      VIDEOS.chilcoNb.id,
+      ROUTE_VIDEOS.lostLagoonWb.id,
+      ROUTE_VIDEOS.lostLagoonEb.id,
+      ROUTE_VIDEOS.seasideCoalHarbourEb.id,
+      ROUTE_VIDEOS.chilcoNb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.seasideCoalHarbourEb.id],
-    videoIdsStartAtEnd: [VIDEOS.lostLagoonWb.id],
-    videoIdsEndAtEnd: [VIDEOS.chilcoNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.seasideCoalHarbourEb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.lostLagoonWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.chilcoNb.id],
     positions: [
       BEFORE_CAUSEWAY_UNDERPASS,
       [49.29483, -123.13691],

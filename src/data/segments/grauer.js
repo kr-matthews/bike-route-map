@@ -8,7 +8,7 @@ import {
   TEMPLETON_GRAUER_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const GRAUER = [
   {
@@ -23,9 +23,9 @@ export const GRAUER = [
     description: "eb",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.grauerEb.id],
-    videoIdsEndAtEnd: [VIDEOS.grauerEb.id],
-    videoIdsStartAtStart: [VIDEOS.grauerEb.id],
+    videoIds: [ROUTE_VIDEOS.grauerEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.grauerEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.grauerEb.id],
     positions: [
       TEMPLETON_GRAUER_SE,
       [49.19929, -123.14885],
@@ -66,8 +66,8 @@ export const GRAUER = [
     description: "wb 1",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.mcdonaldBeachTrailWb.id],
-    videoIdsStartAtStart: [VIDEOS.mcdonaldBeachTrailWb.id],
+    videoIds: [ROUTE_VIDEOS.mcdonaldBeachTrailWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.mcdonaldBeachTrailWb.id],
     positions: [
       AIRPORT_TEMPLETON_STATION_SW,
       [49.19616, -123.13693],

@@ -8,7 +8,7 @@ import {
   ROLSTON_PACIFIC_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const W_OF_FIR_5TH = [49.2671, -123.14128];
 const FIR_5TH_NE = [49.26714, -123.14083];
@@ -26,14 +26,20 @@ export const GRANVILLE_CONNECTOR = [
   {
     description: "pine & 5th",
     type: "quiet",
-    videoIds: [VIDEOS.granvilleConnectorNb.id, VIDEOS.granvilleConnectorSb.id],
-    videoIdsEndAtStart: [VIDEOS.granvilleConnectorSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.granvilleConnectorNb.id,
+      ROUTE_VIDEOS.granvilleConnectorSb.id,
+    ],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.granvilleConnectorSb.id],
     positions: [PINE_ARBUTUS_GREENWAY, [49.26712, -123.14327], W_OF_FIR_5TH],
   },
   {
     description: "crossing fir west",
     type: "dedicated",
-    videoIds: [VIDEOS.granvilleConnectorNb.id, VIDEOS.granvilleConnectorSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.granvilleConnectorNb.id,
+      ROUTE_VIDEOS.granvilleConnectorSb.id,
+    ],
     positions: [
       W_OF_FIR_5TH,
       [49.26706, -123.14122],
@@ -45,11 +51,11 @@ export const GRANVILLE_CONNECTOR = [
     description: "crossing fir east",
     type: "dedicated",
     videoIds: [
-      VIDEOS.granvilleConnectorNb.id,
-      VIDEOS.granvilleConnectorSb.id,
-      VIDEOS.granvilleConnectorFirSb.id,
+      ROUTE_VIDEOS.granvilleConnectorNb.id,
+      ROUTE_VIDEOS.granvilleConnectorSb.id,
+      ROUTE_VIDEOS.granvilleConnectorFirSb.id,
     ],
-    videoIdsStartAtEnd: [VIDEOS.granvilleConnectorFirSb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.granvilleConnectorFirSb.id],
     positions: [FIR_5TH, FIR_5TH_NE],
   },
 
@@ -57,8 +63,8 @@ export const GRANVILLE_CONNECTOR = [
   {
     description: "neon & rolston",
     type: "comfortable",
-    videoIds: [VIDEOS.granvilleConnectorNb.id],
-    videoIdsEndAtEnd: [VIDEOS.granvilleConnectorNb.id],
+    videoIds: [ROUTE_VIDEOS.granvilleConnectorNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.granvilleConnectorNb.id],
     positions: [
       GRANVILLE_NEON_N,
       [49.27538, -123.12795],
@@ -77,8 +83,8 @@ export const GRANVILLE_CONNECTOR = [
   {
     description: "drake connection via rolston",
     type: "quiet",
-    videoIds: [VIDEOS.drakeEb.id],
-    videoIdsEndAtStart: [VIDEOS.drakeEb.id],
+    videoIds: [ROUTE_VIDEOS.drakeEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.drakeEb.id],
     positions: [ROLSTON_NEON_NE, ROLSTON_DRAKE_SW],
   },
   {
@@ -86,15 +92,15 @@ export const GRANVILLE_CONNECTOR = [
     type: "shared",
     oneWay: "recommended",
     undesignated: true,
-    videoIds: [VIDEOS.granvilleConnectorGranvilleSb.id],
-    videoIdsStartAtStart: [VIDEOS.granvilleConnectorGranvilleSb.id],
+    videoIds: [ROUTE_VIDEOS.granvilleConnectorGranvilleSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.granvilleConnectorGranvilleSb.id],
     positions: [[49.27716, -123.12631], GRANVILLE_PAINT_START],
   },
   {
     description: "granville crossing drake",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.granvilleConnectorGranvilleSb.id],
+    videoIds: [ROUTE_VIDEOS.granvilleConnectorGranvilleSb.id],
     positions: [GRANVILLE_PAINT_START, GRANVILLE_DRAKE_W],
   },
   {
@@ -103,7 +109,7 @@ export const GRANVILLE_CONNECTOR = [
     oneWay: "required",
     undesignated: true,
     elevation: 0.5,
-    videoIds: [VIDEOS.granvilleConnectorHoweSb.id],
+    videoIds: [ROUTE_VIDEOS.granvilleConnectorHoweSb.id],
     positions: [HOWE_DRAKE_W, HOWE_ELEVATION_START],
   },
   {
@@ -112,7 +118,7 @@ export const GRANVILLE_CONNECTOR = [
     oneWay: "required",
     undesignated: true,
     elevation: 1,
-    videoIds: [VIDEOS.granvilleConnectorHoweSb.id],
+    videoIds: [ROUTE_VIDEOS.granvilleConnectorHoweSb.id],
     positions: [
       HOWE_ELEVATION_START,
       [49.27625, -123.12956],
@@ -129,8 +135,8 @@ export const GRANVILLE_CONNECTOR = [
     type: "dedicated",
     oneWay: "required",
     elevation: 1,
-    videoIds: [VIDEOS.granvilleConnectorHoweSb.id],
-    videoIdsEndAtEnd: [VIDEOS.granvilleConnectorHoweSb.id],
+    videoIds: [ROUTE_VIDEOS.granvilleConnectorHoweSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.granvilleConnectorHoweSb.id],
     positions: [
       HOWE_PROTECTED_START,
       [49.27459, -123.13064],
@@ -145,7 +151,10 @@ export const GRANVILLE_CONNECTOR = [
     description: "pre-elevation",
     type: "combined",
     elevation: 0.5,
-    videoIds: [VIDEOS.granvilleConnectorNb.id, VIDEOS.granvilleConnectorSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.granvilleConnectorNb.id,
+      ROUTE_VIDEOS.granvilleConnectorSb.id,
+    ],
     positions: [
       FIR_5TH_NE,
       [49.26714, -123.14058],
@@ -170,7 +179,10 @@ export const GRANVILLE_CONNECTOR = [
     description: "elevated",
     type: "combined",
     elevation: 1,
-    videoIds: [VIDEOS.granvilleConnectorSb.id, VIDEOS.granvilleConnectorNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.granvilleConnectorSb.id,
+      ROUTE_VIDEOS.granvilleConnectorNb.id,
+    ],
     positions: [
       ELEVATION_S,
       [49.26817, -123.13854],
@@ -194,7 +206,10 @@ export const GRANVILLE_CONNECTOR = [
     description: "post-elevated, to neon",
     type: "dedicated",
     elevation: 0.5,
-    videoIds: [VIDEOS.granvilleConnectorSb.id, VIDEOS.granvilleConnectorNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.granvilleConnectorSb.id,
+      ROUTE_VIDEOS.granvilleConnectorNb.id,
+    ],
     positions: [ELEVATION_N, GRANVILLE_NEON_N],
   },
   {
@@ -202,10 +217,10 @@ export const GRANVILLE_CONNECTOR = [
     description: "neon to drake",
     type: "dedicated",
     videoIds: [
-      VIDEOS.granvilleConnectorSb.id,
-      VIDEOS.granvilleConnectorGranvilleSb.id,
+      ROUTE_VIDEOS.granvilleConnectorSb.id,
+      ROUTE_VIDEOS.granvilleConnectorGranvilleSb.id,
     ],
-    videoIdsEndAtStart: [VIDEOS.granvilleConnectorGranvilleSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.granvilleConnectorGranvilleSb.id],
     positions: [GRANVILLE_NEON_N, GRANVILLE_DRAKE_W],
   },
 ];

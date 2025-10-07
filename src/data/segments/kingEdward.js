@@ -20,7 +20,7 @@ import {
   YUKON_KING_EDWARD_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const COLUMBIA_KING_EDWARD = [49.24884, -123.11006];
 
@@ -90,7 +90,7 @@ export const KING_EDWARD = [
     oneWay: "required",
     undesignated: true,
     hideArrows: true,
-    videoIds: [VIDEOS.kingEdwardEb.id],
+    videoIds: [ROUTE_VIDEOS.kingEdwardEb.id],
     positions: [DUNBAR_KING_EDWARD_SW, DUNBAR_KING_EDWARD_SE],
   },
   {
@@ -98,8 +98,8 @@ export const KING_EDWARD = [
     description: "eb",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.kingEdwardEb.id],
-    videoIdsEndAtEnd: [VIDEOS.kingEdwardEb.id],
+    videoIds: [ROUTE_VIDEOS.kingEdwardEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.kingEdwardEb.id],
     positions: [
       DUNBAR_KING_EDWARD_SE,
       [49.24993, -123.18206],
@@ -165,7 +165,7 @@ export const KING_EDWARD = [
     description: "wb",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.kingEdwardWb.id],
+    videoIds: [ROUTE_VIDEOS.kingEdwardWb.id],
     positions: [
       ANGUS_KING_EDWARD_NE,
       ANGUS_KING_EDWARD_NW,

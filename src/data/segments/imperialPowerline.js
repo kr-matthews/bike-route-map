@@ -1,6 +1,6 @@
 import { IMPERIAL_29TH } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const POWERLINE_W = [49.24976, -123.22914];
 
@@ -8,8 +8,8 @@ export const IMPERIAL_POWERLINE = [
   {
     description: "ubc greenway: ross dr to powerline trail",
     type: "mixed",
-    videoIds: [VIDEOS.imperialPowerlineEb.id],
-    videoIdsStartAtStart: [VIDEOS.imperialPowerlineEb.id],
+    videoIds: [ROUTE_VIDEOS.imperialPowerlineEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.imperialPowerlineEb.id],
     positions: [
       [49.25107, -123.23448],
       [49.25099, -123.23444],
@@ -43,8 +43,8 @@ export const IMPERIAL_POWERLINE = [
     routeNames: [ROUTES.imperialPowerline.name],
     description: "all",
     type: "mixed",
-    videoIds: [VIDEOS.imperialPowerlineEb.id],
-    videoIdsEndAtEnd: [VIDEOS.imperialPowerlineEb.id],
+    videoIds: [ROUTE_VIDEOS.imperialPowerlineEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.imperialPowerlineEb.id],
     positions: [
       POWERLINE_W,
       [49.24975, -123.22892],

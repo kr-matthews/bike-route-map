@@ -21,7 +21,7 @@ import {
   PINE_ARBUTUS_GREENWAY,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const ARBUTUS_GREENWAY_8TH = [49.26473, -123.15236];
 const ARBUTUS_GREENWAY_41ST_S = [49.23448, -123.1553];
@@ -33,7 +33,7 @@ export const ARBUTUS_GREENWAY = [
     routeNames: [ROUTES.arbutusGreenway.name],
     description: "south of 41st",
     type: "combined",
-    videoIds: [VIDEOS.arbutusGreenwayNb.id],
+    videoIds: [ROUTE_VIDEOS.arbutusGreenwayNb.id],
     positions: [
       MILTON_ARBUTUS_GREENWAY,
       [49.20604, -123.14283],
@@ -92,14 +92,14 @@ export const ARBUTUS_GREENWAY = [
     routeNames: [ROUTES.arbutusGreenway.name],
     description: "41st sidewalk",
     type: "other",
-    videoIds: [VIDEOS.arbutusGreenwayNb.id],
+    videoIds: [ROUTE_VIDEOS.arbutusGreenwayNb.id],
     positions: [ARBUTUS_GREENWAY_41ST_S, EAST_BLVD_41ST_SW],
   },
   {
     routeNames: [ROUTES.arbutusGreenway.name],
     description: "41st to 10th",
     type: "combined",
-    videoIds: [VIDEOS.arbutusGreenwayNb.id],
+    videoIds: [ROUTE_VIDEOS.arbutusGreenwayNb.id],
     positions: [
       EAST_BLVD_41ST_SW,
       [49.23468, -123.15515],
@@ -197,7 +197,7 @@ export const ARBUTUS_GREENWAY = [
   {
     routeNames: [ROUTES.arbutusGreenway.name],
     description: "7th to burrard",
-    videoIds: [VIDEOS.arbutusGreenwayNb.id],
+    videoIds: [ROUTE_VIDEOS.arbutusGreenwayNb.id],
     type: "combined",
     positions: [
       ARBUTUS_GREENWAY_7TH,
@@ -217,16 +217,19 @@ export const ARBUTUS_GREENWAY = [
     routeNames: [ROUTES.arbutusGreenway.name],
     description: "crossing burrard",
     type: "combined",
-    videoIds: [VIDEOS.arbutusGreenwayNb.id, VIDEOS.burrardNb.id],
-    videoIdsStartAtStart: [VIDEOS.burrardNb.id],
+    videoIds: [ROUTE_VIDEOS.arbutusGreenwayNb.id, ROUTE_VIDEOS.burrardNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.burrardNb.id],
     positions: [BURRARD_ARBUTUS_GREENWAY_W, BURRARD_ARBUTUS_GREENWAY_E],
   },
   {
     routeNames: [ROUTES.arbutusGreenway.name],
     description: "burrard to pine",
     type: "combined",
-    videoIds: [VIDEOS.arbutusGreenwayNb.id, VIDEOS.granvilleConnectorNb.id],
-    videoIdsStartAtStart: [VIDEOS.granvilleConnectorNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.arbutusGreenwayNb.id,
+      ROUTE_VIDEOS.granvilleConnectorNb.id,
+    ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.granvilleConnectorNb.id],
     positions: [
       BURRARD_ARBUTUS_GREENWAY_E,
       [49.26645, -123.14548],
@@ -239,9 +242,12 @@ export const ARBUTUS_GREENWAY = [
     routeNames: [ROUTES.arbutusGreenway.name],
     description: "pine to fir",
     type: "combined",
-    videoIds: [VIDEOS.arbutusGreenwayNb.id, VIDEOS.granvilleConnectorFirSb.id],
-    videoIdsEndAtStart: [VIDEOS.granvilleConnectorFirSb.id],
-    videoIdsEndAtEnd: [VIDEOS.arbutusGreenwayNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.arbutusGreenwayNb.id,
+      ROUTE_VIDEOS.granvilleConnectorFirSb.id,
+    ],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.granvilleConnectorFirSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.arbutusGreenwayNb.id],
     positions: [
       PINE_ARBUTUS_GREENWAY,
       [49.26643, -123.14238],
@@ -260,7 +266,7 @@ export const ARBUTUS_GREENWAY = [
     type: "shared",
     oneWay: "recommended",
     undesignated: true,
-    videoIds: [VIDEOS.granvilleConnectorFirSb.id],
+    videoIds: [ROUTE_VIDEOS.granvilleConnectorFirSb.id],
     positions: [FIR_5TH, [49.26682, -123.14093], FIR_ARBUTUS_GREENWAY],
   },
 ];

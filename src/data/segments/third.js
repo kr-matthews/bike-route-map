@@ -9,7 +9,7 @@ import {
   WALLACE_3RD,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const BEACH_2ND = [49.27012, -123.19206];
 
@@ -22,17 +22,17 @@ export const THIRD = [
   {
     description: "connection with seaside",
     type: "dedicated",
-    videoIds: [VIDEOS.yorkEb.id, VIDEOS.yorkWb.id],
-    videoIdsStartAtEnd: [VIDEOS.yorkEb.id],
-    videoIdsEndAtEnd: [VIDEOS.yorkWb.id],
+    videoIds: [ROUTE_VIDEOS.yorkEb.id, ROUTE_VIDEOS.yorkWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.yorkEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.yorkWb.id],
     positions: [STEPHENS_YORK, STEPHENS_POINT_GREY],
   },
   {
     routeNames: [ROUTES.third.name],
     description: "beach to 2nd",
     type: "mixed",
-    videoIds: [VIDEOS.thirdEb.id],
-    videoIdsStartAtStart: [VIDEOS.thirdEb.id],
+    videoIds: [ROUTE_VIDEOS.thirdEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.thirdEb.id],
     positions: [
       THIRD_SEASIDE,
       [49.2716, -123.19324],
@@ -49,15 +49,15 @@ export const THIRD = [
     routeNames: [ROUTES.third.name],
     description: "2nd to bypass",
     type: "quiet",
-    videoIds: [VIDEOS.thirdEb.id],
+    videoIds: [ROUTE_VIDEOS.thirdEb.id],
     positions: [BEACH_2ND, [49.27011, -123.19061], WALLACE_3RD],
   },
   {
     routeNames: [ROUTES.third.name, ROUTES.seasideBypass.name],
     description: "primary",
     type: "quiet",
-    videoIds: [VIDEOS.thirdEb.id],
-    videoIdsEndAtEnd: [VIDEOS.thirdEb.id],
+    videoIds: [ROUTE_VIDEOS.thirdEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.thirdEb.id],
     positions: [
       WALLACE_3RD,
       HIGHBURY_3RD,

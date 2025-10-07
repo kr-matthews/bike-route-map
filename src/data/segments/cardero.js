@@ -11,7 +11,7 @@ import {
   CARDERO_SEAWALL_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const CARDERO_PANTAGES_S = [49.28488, -123.13919];
 const CARDERO_JEPSON_YOUNG = [49.28624, -123.13712];
@@ -34,23 +34,23 @@ export const CARDERO = [
     routeNames: [ROUTES.cardero.name],
     description: "beach to burnaby",
     type: "quiet",
-    videoIds: [VIDEOS.carderoNb.id, VIDEOS.carderoSb.id],
-    videoIdsStartAtStart: [VIDEOS.carderoNb.id],
-    videoIdsEndAtStart: [VIDEOS.carderoSb.id],
+    videoIds: [ROUTE_VIDEOS.carderoNb.id, ROUTE_VIDEOS.carderoSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.carderoNb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.carderoSb.id],
     positions: [CARDERO_BEACH, [49.28382, -123.14081], CARDERO_BURNABY],
   },
   {
     routeNames: [ROUTES.cardero.name],
     description: "burnaby plaza",
     type: "mixed",
-    videoIds: [VIDEOS.carderoNb.id, VIDEOS.carderoSb.id],
+    videoIds: [ROUTE_VIDEOS.carderoNb.id, ROUTE_VIDEOS.carderoSb.id],
     positions: [CARDERO_BURNABY, CARDERO_PANTAGES_S],
   },
   {
     routeNames: [ROUTES.cardero.name],
     description: "pantages to lord roberts",
     type: "quiet",
-    videoIds: [VIDEOS.carderoSb.id, VIDEOS.carderoNb.id],
+    videoIds: [ROUTE_VIDEOS.carderoSb.id, ROUTE_VIDEOS.carderoNb.id],
     positions: [
       CARDERO_PANTAGES_S,
       [49.28524, -123.13867],
@@ -62,14 +62,14 @@ export const CARDERO = [
     routeNames: [ROUTES.cardero.name],
     description: "lord roberts",
     type: "mixed",
-    videoIds: [VIDEOS.carderoSb.id, VIDEOS.carderoNb.id],
+    videoIds: [ROUTE_VIDEOS.carderoSb.id, ROUTE_VIDEOS.carderoNb.id],
     positions: [CARDERO_JEPSON_YOUNG, CARDERO_COMOX],
   },
   {
     routeNames: [ROUTES.cardero.name],
     description: "comox to robson",
     type: "quiet",
-    videoIds: [VIDEOS.carderoSb.id, VIDEOS.carderoNb.id],
+    videoIds: [ROUTE_VIDEOS.carderoSb.id, ROUTE_VIDEOS.carderoNb.id],
     positions: [
       CARDERO_COMOX,
       [49.28736, -123.13546],
@@ -82,9 +82,9 @@ export const CARDERO = [
     routeNames: [ROUTES.cardero.name],
     description: "robson to seawall",
     type: "shared",
-    videoIds: [VIDEOS.carderoSb.id, VIDEOS.carderoNb.id],
-    videoIdsStartAtEnd: [VIDEOS.carderoSb.id],
-    videoIdsEndAtEnd: [VIDEOS.carderoNb.id],
+    videoIds: [ROUTE_VIDEOS.carderoSb.id, ROUTE_VIDEOS.carderoNb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.carderoSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.carderoNb.id],
     positions: [
       CARDERO_ROBSON,
       CARDERO_ALBERNI_S,

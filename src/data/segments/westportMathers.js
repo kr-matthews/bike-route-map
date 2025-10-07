@@ -7,7 +7,7 @@ import {
   WESTPORT_MARINE,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const WESTPORT_WESTPORT_W = [49.36045, -123.25795];
 const WESTPORT_WESTWOOD_SE = [49.35577, -123.25323];
@@ -31,10 +31,10 @@ export const WESTPORT_MATHERS = [
     description: "westport: marine to greenleaf",
     type: "shared",
     videoIds: [
-      VIDEOS.westportMathersEb.id,
-      VIDEOS.greenleafEb.id,
-      VIDEOS.westportMathersWb.id,
-      VIDEOS.greenleafWb.id,
+      ROUTE_VIDEOS.westportMathersEb.id,
+      ROUTE_VIDEOS.greenleafEb.id,
+      ROUTE_VIDEOS.westportMathersWb.id,
+      ROUTE_VIDEOS.greenleafWb.id,
     ],
     positions: [
       WESTPORT_MARINE,
@@ -47,7 +47,10 @@ export const WESTPORT_MATHERS = [
     routeNames: [ROUTES.westportMathers.name],
     description: "westport: from greenleaf",
     type: "shared",
-    videoIds: [VIDEOS.westportMathersEb.id, VIDEOS.westportMathersWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.westportMathersEb.id,
+      ROUTE_VIDEOS.westportMathersWb.id,
+    ],
     positions: [
       GREENLEAF_WESTPORT,
       [49.35321, -123.25907],
@@ -104,7 +107,7 @@ export const WESTPORT_MATHERS = [
     description: "westport wb painted",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.westportMathersWb.id],
+    videoIds: [ROUTE_VIDEOS.westportMathersWb.id],
     positions: [
       NORTHWOOD_WESTPORT,
       [49.35225, -123.25123],
@@ -128,7 +131,7 @@ export const WESTPORT_MATHERS = [
     description: "westport wb shared",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.westportMathersWb.id],
+    videoIds: [ROUTE_VIDEOS.westportMathersWb.id],
     positions: [
       WESTPORT_WESTWOOD_SE,
       [49.35591, -123.25321],
@@ -171,7 +174,7 @@ export const WESTPORT_MATHERS = [
     description: "westport eb painted",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.westportMathersEb.id],
+    videoIds: [ROUTE_VIDEOS.westportMathersEb.id],
     positions: [
       WESTPORT_WESTPORT_W,
       [49.36039, -123.25785],
@@ -224,20 +227,23 @@ export const WESTPORT_MATHERS = [
     description: "just east of northwood",
     type: "shared",
     videoIds: [
-      VIDEOS.westportMathersEb.id,
-      VIDEOS.westportMathersWb.id,
-      VIDEOS.caulfeildEastSb.id,
-      VIDEOS.caulfeildWestNb.id,
+      ROUTE_VIDEOS.westportMathersEb.id,
+      ROUTE_VIDEOS.westportMathersWb.id,
+      ROUTE_VIDEOS.caulfeildEastSb.id,
+      ROUTE_VIDEOS.caulfeildWestNb.id,
     ],
-    videoIdsStartAtEnd: [VIDEOS.caulfeildEastSb.id],
-    videoIdsEndAtEnd: [VIDEOS.caulfeildWestNb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.caulfeildEastSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.caulfeildWestNb.id],
     positions: [NORTHWOOD_WESTPORT, E_OF_NORTHWOOD_WESTPORT],
   },
   {
     routeNames: [ROUTES.westportMathers.name],
     description: "westport/woodgreen",
     type: "shared",
-    videoIds: [VIDEOS.westportMathersEb.id, VIDEOS.westportMathersWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.westportMathersEb.id,
+      ROUTE_VIDEOS.westportMathersWb.id,
+    ],
     positions: [
       E_OF_NORTHWOOD_WESTPORT,
       [49.35184, -123.24949],
@@ -262,7 +268,10 @@ export const WESTPORT_MATHERS = [
     description: "woodgreen/woodcrest/almondel",
     type: "quiet",
     elevation: 0.5,
-    videoIds: [VIDEOS.westportMathersEb.id, VIDEOS.westportMathersWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.westportMathersEb.id,
+      ROUTE_VIDEOS.westportMathersWb.id,
+    ],
     positions: [
       WOODCREST_WOODGREEN,
       [49.35132, -123.24432],
@@ -295,7 +304,10 @@ export const WESTPORT_MATHERS = [
     description: "almondel over cypress creek",
     type: "quiet",
     elevation: 1,
-    videoIds: [VIDEOS.westportMathersEb.id, VIDEOS.westportMathersWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.westportMathersEb.id,
+      ROUTE_VIDEOS.westportMathersWb.id,
+    ],
     positions: [
       CYPRESS_CREEK_W,
       [49.34968, -123.23802],
@@ -309,14 +321,20 @@ export const WESTPORT_MATHERS = [
     description: "almondel post-bridge",
     type: "quiet",
     elevation: 0.5,
-    videoIds: [VIDEOS.westportMathersEb.id, VIDEOS.westportMathersWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.westportMathersEb.id,
+      ROUTE_VIDEOS.westportMathersWb.id,
+    ],
     positions: [CYPRESS_CREEK_E, CYPRESS_CREEK_E_POST],
   },
   {
     routeNames: [ROUTES.westportMathers.name],
     description: "almondel/ripple/westridge",
     type: "quiet",
-    videoIds: [VIDEOS.westportMathersWb.id, VIDEOS.westportMathersEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.westportMathersWb.id,
+      ROUTE_VIDEOS.westportMathersEb.id,
+    ],
     positions: [
       CYPRESS_CREEK_E_POST,
       [49.34932, -123.23673],
@@ -358,7 +376,10 @@ export const WESTPORT_MATHERS = [
     routeNames: [ROUTES.westportMathers.name],
     description: "southridge",
     type: "quiet",
-    videoIds: [VIDEOS.westportMathersWb.id, VIDEOS.westportMathersEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.westportMathersWb.id,
+      ROUTE_VIDEOS.westportMathersEb.id,
+    ],
     positions: [
       SOUTHRIDGE_WESTRIDGE_W,
       [49.34659, -123.22612],
@@ -387,7 +408,10 @@ export const WESTPORT_MATHERS = [
     routeNames: [ROUTES.westportMathers.name],
     description: "westridge little bit",
     type: "shared",
-    videoIds: [VIDEOS.westportMathersWb.id, VIDEOS.westportMathersEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.westportMathersWb.id,
+      ROUTE_VIDEOS.westportMathersEb.id,
+    ],
     positions: [
       SOUTHRIDGE_WESTRIDGE_E,
       [49.3456, -123.2186],
@@ -399,7 +423,7 @@ export const WESTPORT_MATHERS = [
     description: "westmount eb westridge to rockview",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.westportMathersEb.id],
+    videoIds: [ROUTE_VIDEOS.westportMathersEb.id],
     positions: [
       WESTMOUNT_WESTRIDGE,
       [49.34549, -123.21843],
@@ -427,7 +451,7 @@ export const WESTPORT_MATHERS = [
     description: "westmount wb rockview to westridge",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.westportMathersWb.id],
+    videoIds: [ROUTE_VIDEOS.westportMathersWb.id],
     positions: [
       ROCKVIEW_WESTMOUNT,
       [49.3457, -123.21351],
@@ -455,7 +479,10 @@ export const WESTPORT_MATHERS = [
     routeNames: [ROUTES.westportMathers.name],
     description: "westmount: rockview to benbow",
     type: "shared",
-    videoIds: [VIDEOS.westportMathersWb.id, VIDEOS.westportMathersEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.westportMathersWb.id,
+      ROUTE_VIDEOS.westportMathersEb.id,
+    ],
     positions: [
       ROCKVIEW_WESTMOUNT,
       [49.34576, -123.21308],
@@ -473,7 +500,7 @@ export const WESTPORT_MATHERS = [
     description: "westmount/benbow to 31st/mathers",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.westportMathersEb.id],
+    videoIds: [ROUTE_VIDEOS.westportMathersEb.id],
     positions: [
       BENBOW_WESTMOUNT,
       [49.34509, -123.20676],
@@ -500,7 +527,7 @@ export const WESTPORT_MATHERS = [
     description: "31st: mathers to marine",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.westportMathersEb.id],
+    videoIds: [ROUTE_VIDEOS.westportMathersEb.id],
     positions: [
       THIRTY_FIRST_MATHERS_W,
       [49.34207, -123.20314],
@@ -542,7 +569,7 @@ export const WESTPORT_MATHERS = [
     description: "31st/mathers to westmount/benbow",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.westportMathersWb.id],
+    videoIds: [ROUTE_VIDEOS.westportMathersWb.id],
     positions: [
       THIRTY_FIRST_MATHERS_E,
       [49.34226, -123.20327],
@@ -573,7 +600,7 @@ export const WESTPORT_MATHERS = [
     routeNames: [ROUTES.westportMathers.name],
     description: "mathers/29th",
     type: "quiet",
-    videoIds: [VIDEOS.westportMathersWb.id],
+    videoIds: [ROUTE_VIDEOS.westportMathersWb.id],
     positions: [
       THIRTY_FIRST_MATHERS_E,
       [49.34215, -123.20292],

@@ -11,7 +11,7 @@ import {
   ST_ANDREWS_ESPLANADE_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const ST_GEORGES_ESPLANADE_NW = [49.30988, -123.07655];
 
@@ -22,8 +22,8 @@ export const FORBES_ESPLANADE = [
     description: "eb",
     type: "dedicated", // except the first little bit
     oneWay: "required",
-    videoIds: [VIDEOS.forbesEsplanadeEb.id],
-    videoIdsStartAtStart: [VIDEOS.forbesEsplanadeEb.id],
+    videoIds: [ROUTE_VIDEOS.forbesEsplanadeEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.forbesEsplanadeEb.id],
     positions: [
       FORBES_3RD_SW,
       [49.31716, -123.08594],
@@ -59,9 +59,9 @@ export const FORBES_ESPLANADE = [
     description: "eb last bit",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.forbesEsplanadeEb.id, VIDEOS.lowLevelEb.id],
-    videoIdsStartAtStart: [VIDEOS.lowLevelEb.id],
-    videoIdsEndAtEnd: [VIDEOS.forbesEsplanadeEb.id],
+    videoIds: [ROUTE_VIDEOS.forbesEsplanadeEb.id, ROUTE_VIDEOS.lowLevelEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.lowLevelEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.forbesEsplanadeEb.id],
     positions: [ST_ANDREWS_ESPLANADE_SW, ST_ANDREWS_ESPLANADE_SE],
   },
 
@@ -71,9 +71,9 @@ export const FORBES_ESPLANADE = [
     description: "wb painted start pre-merge",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.forbesEsplanadeWb.id, VIDEOS.lowLevelWb.id],
-    videoIdsStartAtStart: [VIDEOS.forbesEsplanadeWb.id],
-    videoIdsEndAtEnd: [VIDEOS.lowLevelWb.id],
+    videoIds: [ROUTE_VIDEOS.forbesEsplanadeWb.id, ROUTE_VIDEOS.lowLevelWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.forbesEsplanadeWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.lowLevelWb.id],
     positions: [
       ST_ANDREWS_ESPLANADE_NE,
       [49.30846, -123.07347],
@@ -87,7 +87,7 @@ export const FORBES_ESPLANADE = [
     description: "wb painted start post-merge",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.forbesEsplanadeWb.id],
+    videoIds: [ROUTE_VIDEOS.forbesEsplanadeWb.id],
     positions: [
       ESPLANADE_WB_MERGE,
       [49.30976, -123.07617],
@@ -99,7 +99,7 @@ export const FORBES_ESPLANADE = [
     description: "wb",
     type: "dedicated", // except the end little bit
     oneWay: "required",
-    videoIds: [VIDEOS.forbesEsplanadeWb.id],
+    videoIds: [ROUTE_VIDEOS.forbesEsplanadeWb.id],
     positions: [
       ST_GEORGES_ESPLANADE_NW,
       [49.30996, -123.07676],

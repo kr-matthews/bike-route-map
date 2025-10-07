@@ -6,7 +6,7 @@ import {
   THURLOW_HARO,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const HARO_W = [49.29302, -123.14008];
 const EAST_OF_NICOLA = [49.28772, -123.13177];
@@ -17,9 +17,9 @@ export const HARO = [
     routeNames: [ROUTES.haro.name],
     description: "path to/from lagoon dr",
     type: "dedicated",
-    videoIds: [VIDEOS.haroEb.id, VIDEOS.haroWb.id],
-    videoIdsStartAtStart: [VIDEOS.haroEb.id],
-    videoIdsEndAtStart: [VIDEOS.haroWb.id],
+    videoIds: [ROUTE_VIDEOS.haroEb.id, ROUTE_VIDEOS.haroWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.haroEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.haroWb.id],
     positions: [
       LAGOON_HARO,
       [49.29316, -123.14024],
@@ -32,7 +32,7 @@ export const HARO = [
     routeNames: [ROUTES.haro.name],
     description: "lagoon to nicola",
     type: "quiet",
-    videoIds: [VIDEOS.haroEb.id, VIDEOS.haroWb.id],
+    videoIds: [ROUTE_VIDEOS.haroEb.id, ROUTE_VIDEOS.haroWb.id],
     positions: [
       HARO_W,
       [49.29301, -123.13995],
@@ -48,8 +48,8 @@ export const HARO = [
     routeNames: [ROUTES.haro.name],
     description: "nicola to thurlow",
     type: "quiet",
-    videoIds: [VIDEOS.haroWb.id, VIDEOS.haroEb.id],
-    videoIdsStartAtEnd: [VIDEOS.haroWb.id],
+    videoIds: [ROUTE_VIDEOS.haroWb.id, ROUTE_VIDEOS.haroEb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.haroWb.id],
     positions: [
       NICOLA_HARO,
       EAST_OF_NICOLA,

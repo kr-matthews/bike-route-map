@@ -4,7 +4,7 @@ import {
   WILLINGDON_LOUGHEED_SE,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const NB_LANE_END = [49.26783, -123.003];
 const TRAIL_S = [49.26972, -123.00298];
@@ -14,8 +14,8 @@ export const WILLINGDON_LINEAR_PARK = [
     description: "lane",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.willingdonLinearNb.id],
-    videoIdsStartAtStart: [VIDEOS.willingdonLinearNb.id],
+    videoIds: [ROUTE_VIDEOS.willingdonLinearNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.willingdonLinearNb.id],
     positions: [
       WILLINGDON_LOUGHEED_SE,
       WILLINGDON_LOUGHEED_NE,
@@ -31,7 +31,7 @@ export const WILLINGDON_LINEAR_PARK = [
     type: "shared",
     oneWay: "required",
     undesignated: true,
-    videoIds: [VIDEOS.willingdonLinearNb.id],
+    videoIds: [ROUTE_VIDEOS.willingdonLinearNb.id],
     positions: [
       NB_LANE_END,
       [49.26803, -123.00304],
@@ -45,10 +45,13 @@ export const WILLINGDON_LINEAR_PARK = [
     routeNames: [ROUTES.willingdonLinear.name],
     description: "primary",
     type: "mixed",
-    videoIds: [VIDEOS.willingdonLinearSb.id, VIDEOS.willingdonLinearNb.id],
-    videoIdsStartAtEnd: [VIDEOS.willingdonLinearSb.id],
-    videoIdsEndAtStart: [VIDEOS.willingdonLinearSb.id],
-    videoIdsEndAtEnd: [VIDEOS.willingdonLinearNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.willingdonLinearSb.id,
+      ROUTE_VIDEOS.willingdonLinearNb.id,
+    ],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.willingdonLinearSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.willingdonLinearSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.willingdonLinearNb.id],
     positions: [
       TRAIL_S,
       [49.27029, -123.003],

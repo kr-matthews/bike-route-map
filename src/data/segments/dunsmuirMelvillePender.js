@@ -5,7 +5,7 @@ import {
   NICOLA_PENDER,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const JERVIS_PENDER = [49.28908, -123.12549];
 
@@ -15,8 +15,8 @@ export const DUNSMUIR_MELVILLE_PENDER = [
     description: "dunsmuir/melville",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.lionsGateBridgeNb.id],
-    videoIdsStartAtStart: [VIDEOS.lionsGateBridgeNb.id],
+    videoIds: [ROUTE_VIDEOS.lionsGateBridgeNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.lionsGateBridgeNb.id],
     positions: [
       HORNBY_DUNSMUIR,
       BURRARD_DUNSMUIR,
@@ -40,7 +40,7 @@ export const DUNSMUIR_MELVILLE_PENDER = [
     description: "pender",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.lionsGateBridgeNb.id],
+    videoIds: [ROUTE_VIDEOS.lionsGateBridgeNb.id],
     positions: [
       JERVIS_PENDER,
       [49.28962, -123.12737],

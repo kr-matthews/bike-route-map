@@ -7,7 +7,7 @@ import {
   BYRNE_MARINE_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const BYRNEPARK_SOUTHRIDGE = [49.20584, -122.96852];
 const MISSION_BYRNE_CREEK = [49.21085, -122.96531];
@@ -82,8 +82,8 @@ export const BYRNE_CREEK = [
     routeNames: [ROUTES.byrneCreek.name],
     description: "primary",
     type: "mixed",
-    videoIds: [VIDEOS.byrneCreekWb.id],
-    videoIdsEndAtStart: [VIDEOS.byrneCreekWb.id],
+    videoIds: [ROUTE_VIDEOS.byrneCreekWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.byrneCreekWb.id],
     positions: [
       [49.19977, -122.98921],
       [49.2008, -122.98736],

@@ -7,7 +7,7 @@ import {
   WILLINGDON_DEER_LAKE,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const DEER_LAKE_PARKWAY = [
   {
@@ -15,12 +15,12 @@ export const DEER_LAKE_PARKWAY = [
     description: "midtown overlap",
     type: "comfortable",
     videoIds: [
-      VIDEOS.deerLakePkwyEb.id,
-      VIDEOS.deerLakePkwyWb.id,
-      VIDEOS.midtownBurnabyWb.id,
+      ROUTE_VIDEOS.deerLakePkwyEb.id,
+      ROUTE_VIDEOS.deerLakePkwyWb.id,
+      ROUTE_VIDEOS.midtownBurnabyWb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.deerLakePkwyEb.id],
-    videoIdsEndAtStart: [VIDEOS.deerLakePkwyWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.deerLakePkwyEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.deerLakePkwyWb.id],
     positions: [
       WILLINGDON_DEER_LAKE,
       [49.24308, -123.00288],
@@ -48,7 +48,7 @@ export const DEER_LAKE_PARKWAY = [
     routeNames: [ROUTES.deerLakeParkway.name],
     description: "east of garden grove",
     type: "mixed",
-    videoIds: [VIDEOS.deerLakePkwyWb.id, VIDEOS.deerLakePkwyEb.id],
+    videoIds: [ROUTE_VIDEOS.deerLakePkwyWb.id, ROUTE_VIDEOS.deerLakePkwyEb.id],
     positions: [
       GARDEN_GROVE_DEER_LAKE,
       [49.2414, -122.99418],
@@ -94,9 +94,9 @@ export const DEER_LAKE_PARKWAY = [
     description: "crossing gilpin",
     type: "mixed",
     videoIds: [
-      VIDEOS.deerLakePkwyWb.id,
-      VIDEOS.deerLakePkwyEb.id,
-      VIDEOS.midtownBurnabyWb.id,
+      ROUTE_VIDEOS.deerLakePkwyWb.id,
+      ROUTE_VIDEOS.deerLakePkwyEb.id,
+      ROUTE_VIDEOS.midtownBurnabyWb.id,
     ],
     positions: [DEER_LAKE_GILPIN_W, DEER_LAKE_GILPIN_SW],
   },
@@ -104,9 +104,9 @@ export const DEER_LAKE_PARKWAY = [
     routeNames: [ROUTES.deerLakeParkway.name],
     description: "north of gilpin",
     type: "mixed",
-    videoIds: [VIDEOS.deerLakePkwyWb.id, VIDEOS.deerLakePkwyEb.id],
-    videoIdsEndAtEnd: [VIDEOS.deerLakePkwyEb.id],
-    videoIdsStartAtEnd: [VIDEOS.deerLakePkwyWb.id],
+    videoIds: [ROUTE_VIDEOS.deerLakePkwyWb.id, ROUTE_VIDEOS.deerLakePkwyEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.deerLakePkwyEb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.deerLakePkwyWb.id],
     positions: [
       DEER_LAKE_GILPIN_W,
       [49.242, -122.97571],

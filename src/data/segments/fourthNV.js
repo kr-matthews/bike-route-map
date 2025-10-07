@@ -10,7 +10,7 @@ import {
   ST_ANDREWS_4TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const HEYWOOD_4TH_E = [49.30928, -123.04866];
 const FORBES_4TH = [49.31832, -123.08568];
@@ -33,12 +33,15 @@ export const FOURTH_NV = [
     description: "forbes",
     type: "quiet",
     videoIds: [
-      VIDEOS.fourthNVWb.id,
-      VIDEOS.marineNvWb.id,
-      VIDEOS.first2ndWb.id,
+      ROUTE_VIDEOS.fourthNVWb.id,
+      ROUTE_VIDEOS.marineNvWb.id,
+      ROUTE_VIDEOS.first2ndWb.id,
     ],
-    videoIdsStartAtEnd: [VIDEOS.marineNvWb.id, VIDEOS.first2ndWb.id],
-    videoIdsEndAtStart: [VIDEOS.fourthNVWb.id],
+    videoIdsStartAtEnd: [
+      ROUTE_VIDEOS.marineNvWb.id,
+      ROUTE_VIDEOS.first2ndWb.id,
+    ],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.fourthNVWb.id],
     positions: [
       FORBES_3RD_N,
       [49.31829, -123.0858],
@@ -50,7 +53,7 @@ export const FOURTH_NV = [
     routeNames: [ROUTES.fourthNV.name],
     description: "4th",
     type: "quiet",
-    videoIds: [VIDEOS.fourthNVWb.id],
+    videoIds: [ROUTE_VIDEOS.fourthNVWb.id],
     positions: [
       FORBES_4TH,
       [49.31691, -123.08244],
@@ -79,8 +82,8 @@ export const FOURTH_NV = [
     routeNames: [ROUTES.fourthNV.name],
     description: "e end, to spirit trail",
     type: "mixed",
-    videoIds: [VIDEOS.fourthNVWb.id],
-    videoIdsStartAtEnd: [VIDEOS.fourthNVWb.id],
+    videoIds: [ROUTE_VIDEOS.fourthNVWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.fourthNVWb.id],
     positions: [HEYWOOD_4TH_E, HEYWOOD_SPIRIT_NE],
   },
 ];

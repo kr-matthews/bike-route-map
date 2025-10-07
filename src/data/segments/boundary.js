@@ -6,7 +6,7 @@ import {
   DOCKSIDE_SOUTH_DYKE,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const BOUNDARY_SALTER = [49.17853, -122.95682];
 
@@ -15,8 +15,8 @@ export const BOUNDARY = [
     description: "dockside",
     type: "quiet",
     undesignated: true,
-    videoIds: [VIDEOS.boundaryTrailSb.id],
-    videoIdsEndAtStart: [VIDEOS.boundaryTrailSb.id],
+    videoIds: [ROUTE_VIDEOS.boundaryTrailSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.boundaryTrailSb.id],
     positions: [
       DOCKSIDE_SOUTH_DYKE,
       [49.17745, -122.95519],
@@ -30,8 +30,8 @@ export const BOUNDARY = [
     routeNames: [ROUTES.boundary.name],
     description: "all",
     type: "mixed",
-    videoIds: [VIDEOS.boundaryTrailSb.id],
-    videoIdsStartAtEnd: [VIDEOS.boundaryTrailSb.id],
+    videoIds: [ROUTE_VIDEOS.boundaryTrailSb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.boundaryTrailSb.id],
     positions: [
       BOUNDARY_SALTER,
       [49.17861, -122.95702],

@@ -27,7 +27,7 @@ import {
   MARINE_70TH_N,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const ANGUS_MATTHEWS_E = [49.25158, -123.14538];
 const ANGUS_MATTHEWS_W = [49.25155, -123.14557];
@@ -37,14 +37,14 @@ export const CYPRESS = [
     routeNames: [ROUTES.cypress.name],
     description: "cornish",
     type: "quiet",
-    videoIds: [VIDEOS.cypressNb.id, VIDEOS.cypressSb.id],
+    videoIds: [ROUTE_VIDEOS.cypressNb.id, ROUTE_VIDEOS.cypressSb.id],
     positions: [MARINE_70TH_N, CORNISH_68TH],
   },
   {
     routeNames: [ROUTES.cypress.name],
     description: "68th to king edward",
     type: "quiet",
-    videoIds: [VIDEOS.cypressNb.id, VIDEOS.cypressSb.id],
+    videoIds: [ROUTE_VIDEOS.cypressNb.id, ROUTE_VIDEOS.cypressSb.id],
     positions: [
       ADERA_68TH,
       [49.2123, -123.14356],
@@ -88,7 +88,7 @@ export const CYPRESS = [
     routeNames: [ROUTES.cypress.name],
     description: "angus to 1st",
     type: "quiet",
-    videoIds: [VIDEOS.cypressSb.id, VIDEOS.cypressNb.id],
+    videoIds: [ROUTE_VIDEOS.cypressSb.id, ROUTE_VIDEOS.cypressNb.id],
     positions: [
       ANGUS_MATTHEWS_W,
       [49.25126, -123.14725],
@@ -115,8 +115,8 @@ export const CYPRESS = [
     routeNames: [ROUTES.cypress.name],
     description: "north end",
     type: "quiet",
-    videoIds: [VIDEOS.cypressSb.id, VIDEOS.cypressNb.id],
-    videoIdsEndAtEnd: [VIDEOS.cypressNb.id],
+    videoIds: [ROUTE_VIDEOS.cypressSb.id, ROUTE_VIDEOS.cypressNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.cypressNb.id],
     positions: [
       CYPRESS_CORNWALL_N,
       [49.27347, -123.14777],
@@ -131,8 +131,8 @@ export const CYPRESS = [
     description: "angus crossing king edward nb",
     type: "quiet",
     oneWay: "required",
-    videoIds: [VIDEOS.cypressNb.id, VIDEOS.kingEdwardWb.id],
-    videoIdsStartAtStart: [VIDEOS.kingEdwardWb.id],
+    videoIds: [ROUTE_VIDEOS.cypressNb.id, ROUTE_VIDEOS.kingEdwardWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.kingEdwardWb.id],
     positions: [ANGUS_KING_EDWARD_S, ANGUS_KING_EDWARD_NE],
   },
   {
@@ -140,7 +140,7 @@ export const CYPRESS = [
     description: "angus median nb",
     type: "quiet",
     oneWay: "required",
-    videoIds: [VIDEOS.cypressNb.id],
+    videoIds: [ROUTE_VIDEOS.cypressNb.id],
     positions: [
       ANGUS_KING_EDWARD_NE,
       [49.25003, -123.14596],
@@ -155,7 +155,7 @@ export const CYPRESS = [
     type: "quiet",
     oneWay: "recommended",
     hideArrows: true,
-    videoIds: [VIDEOS.cypressNb.id],
+    videoIds: [ROUTE_VIDEOS.cypressNb.id],
     positions: [ANGUS_MATTHEWS_E, ANGUS_MATTHEWS_W],
   },
   {
@@ -163,7 +163,7 @@ export const CYPRESS = [
     description: "angus median sb",
     type: "quiet",
     oneWay: "required",
-    videoIds: [VIDEOS.cypressSb.id],
+    videoIds: [ROUTE_VIDEOS.cypressSb.id],
     positions: [
       ANGUS_MATTHEWS_W,
       [49.25067, -123.14596],
@@ -178,8 +178,11 @@ export const CYPRESS = [
     description: "1st to york",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.cypressNb.id, VIDEOS.seasideBypassFalseCreekSouthWb.id],
-    videoIdsEndAtEnd: [VIDEOS.seasideBypassFalseCreekSouthWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.cypressNb.id,
+      ROUTE_VIDEOS.seasideBypassFalseCreekSouthWb.id,
+    ],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.seasideBypassFalseCreekSouthWb.id],
     positions: [CYPRESS_1ST, CYPRESS_1ST_NE, CYPRESS_YORK_SE],
   },
   {
@@ -187,14 +190,14 @@ export const CYPRESS = [
     description: "york to cornwall",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.cypressNb.id],
+    videoIds: [ROUTE_VIDEOS.cypressNb.id],
     positions: [CYPRESS_YORK_SE, CYPRESS_CORNWALL_SE],
   },
   {
     routeNames: [ROUTES.cypress.name],
     description: "crossing cornwall",
     type: "dedicated",
-    videoIds: [VIDEOS.cypressNb.id],
+    videoIds: [ROUTE_VIDEOS.cypressNb.id],
     positions: [CYPRESS_CORNWALL_SE, CYPRESS_CORNWALL_N],
   },
   {
@@ -202,7 +205,7 @@ export const CYPRESS = [
     description: "cornwall to york",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.cypressSb.id],
+    videoIds: [ROUTE_VIDEOS.cypressSb.id],
     positions: [CYPRESS_CORNWALL_N, CYPRESS_CORNWALL_SW, CYPRESS_YORK_SW],
   },
   {
@@ -210,8 +213,11 @@ export const CYPRESS = [
     description: "york to 1st",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.cypressSb.id, VIDEOS.seasideBypassFalseCreekSouthEb.id],
-    videoIdsStartAtStart: [VIDEOS.seasideBypassFalseCreekSouthEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.cypressSb.id,
+      ROUTE_VIDEOS.seasideBypassFalseCreekSouthEb.id,
+    ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.seasideBypassFalseCreekSouthEb.id],
     positions: [CYPRESS_YORK_SW, CYPRESS_1ST_NW, CYPRESS_1ST],
   },
 ];

@@ -6,7 +6,7 @@ import {
   TEMPLETON_GRAUER_NW,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const EB_SHOULDER_START = [49.21678, -123.2031];
 const EB_SHOULDER_END = [49.21162, -123.2027];
@@ -60,7 +60,7 @@ export const FERGUSON = [
     description: "eb",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.fergusonEb.id],
+    videoIds: [ROUTE_VIDEOS.fergusonEb.id],
     positions: [
       FERGUSON_PATH_W,
       [49.20756, -123.20157],
@@ -105,7 +105,7 @@ export const FERGUSON = [
     routeNames: [ROUTES.ferguson.name],
     description: "west of path",
     type: "shared",
-    videoIds: [VIDEOS.fergusonEb.id],
+    videoIds: [ROUTE_VIDEOS.fergusonEb.id],
     positions: [
       FERGUSON_PATH_W,
       [49.20779, -123.202],
@@ -125,7 +125,7 @@ export const FERGUSON = [
     description: "shoulder eb, west part",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.fergusonEb.id],
+    videoIds: [ROUTE_VIDEOS.fergusonEb.id],
     positions: [
       EB_SHOULDER_START,
       [49.21668, -123.20292],
@@ -174,8 +174,8 @@ export const FERGUSON = [
     routeNames: [ROUTES.ferguson.name],
     description: "west tip",
     type: "shared",
-    videoIds: [VIDEOS.fergusonEb.id],
-    videoIdsStartAtEnd: [VIDEOS.fergusonEb.id],
+    videoIds: [ROUTE_VIDEOS.fergusonEb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.fergusonEb.id],
     positions: [
       EB_SHOULDER_START,
       [49.21696, -123.20373],

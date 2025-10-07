@@ -7,7 +7,7 @@ import {
   TWENTY_THIRD_7TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const KINROSS_MARINE_SW = [49.20678, -123.03674];
 const KINROSS_MARINE_SE = [49.20678, -123.0366];
@@ -77,8 +77,8 @@ export const MARINE_WAY = [
     description: "wb: vancouver",
     type: "combined",
     oneWay: "required",
-    videoIds: [VIDEOS.marineWayWb.id],
-    videoIdsEndAtEnd: [VIDEOS.marineWayWb.id],
+    videoIds: [ROUTE_VIDEOS.marineWayWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.marineWayWb.id],
     positions: [
       BOUNDARY_MARINE_NW,
       [49.20565, -123.024],
@@ -98,8 +98,8 @@ export const MARINE_WAY = [
     description: "eb: vancouver",
     type: "combined",
     oneWay: "required",
-    videoIds: [VIDEOS.marineWayEb.id],
-    videoIdsStartAtStart: [VIDEOS.marineWayEb.id],
+    videoIds: [ROUTE_VIDEOS.marineWayEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.marineWayEb.id],
     positions: [
       [49.20687, -123.03341],
       [49.20688, -123.0332],
@@ -137,7 +137,7 @@ export const MARINE_WAY = [
     type: "shared",
     hideArrows: true,
     undesignated: true,
-    videoIds: [VIDEOS.marineWayEb.id],
+    videoIds: [ROUTE_VIDEOS.marineWayEb.id],
     positions: [
       BOUNDARY_MARINE_SW,
       [49.20526, -123.02372],
@@ -152,7 +152,7 @@ export const MARINE_WAY = [
     type: "other",
     hideArrows: true,
     undesignated: true,
-    videoIds: [VIDEOS.marineWayWb.id],
+    videoIds: [ROUTE_VIDEOS.marineWayWb.id],
     positions: [
       BOUNDARY_MARINE_NE,
       [49.20551, -123.0231],
@@ -191,7 +191,7 @@ export const MARINE_WAY = [
     description: "wb: getting onto marine way",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.marineWayWb.id],
+    videoIds: [ROUTE_VIDEOS.marineWayWb.id],
     positions: [
       TWENTY_THIRD_7TH,
       [49.19821, -122.95212],
@@ -204,7 +204,7 @@ export const MARINE_WAY = [
     description: "wb: burnaby",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.marineWayWb.id],
+    videoIds: [ROUTE_VIDEOS.marineWayWb.id],
     positions: [
       TWENTY_THIRD_MARINE,
       [49.19781, -122.95252],
@@ -292,7 +292,7 @@ export const MARINE_WAY = [
     description: "eb: burnaby",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.marineWayEb.id],
+    videoIds: [ROUTE_VIDEOS.marineWayEb.id],
     positions: [
       BOUNDARY_MARINE_SE,
       [49.20533, -123.02066],
@@ -399,7 +399,7 @@ export const MARINE_WAY = [
     description: "eb: transition to bc parkway",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.marineWayEb.id],
+    videoIds: [ROUTE_VIDEOS.marineWayEb.id],
     positions: [
       STEWARDSON_MARINE,
       [49.19752, -122.95068],

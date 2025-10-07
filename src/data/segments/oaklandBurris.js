@@ -5,7 +5,7 @@ import {
   SIXTH_BURRIS,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const OAKLAND_PL_W = [49.22964, -122.98856];
 const PEARL_OAKLAND_S = [49.22965, -122.98737];
@@ -20,14 +20,20 @@ export const OAKLAND_BURRIS = [
     description: "buckingham to canada way",
     type: "shared",
     undesignated: true,
-    videoIds: [VIDEOS.oaklandBurrisWb.id, VIDEOS.oaklandBurrisEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.oaklandBurrisWb.id,
+      ROUTE_VIDEOS.oaklandBurrisEb.id,
+    ],
     positions: [BUCKINGHAM_BURRIS, [49.2354, -122.95463], CANADA_WAY_BURRIS],
   },
   {
     description: "canada way to (almost) midtown",
     type: "shared",
     undesignated: true,
-    videoIds: [VIDEOS.oaklandBurrisWb.id, VIDEOS.oaklandBurrisEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.oaklandBurrisWb.id,
+      ROUTE_VIDEOS.oaklandBurrisEb.id,
+    ],
     positions: [
       CANADA_WAY_BURRIS,
       [49.23562, -122.95436],
@@ -38,8 +44,8 @@ export const OAKLAND_BURRIS = [
   {
     description: "short path along burris to midtown",
     type: "mixed",
-    videoIds: [VIDEOS.oaklandBurrisWb.id],
-    videoIdsStartAtEnd: [VIDEOS.oaklandBurrisWb.id],
+    videoIds: [ROUTE_VIDEOS.oaklandBurrisWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.oaklandBurrisWb.id],
     positions: [
       W_OF_6TH,
       [49.2374, -122.95155],
@@ -52,8 +58,8 @@ export const OAKLAND_BURRIS = [
     description: "old end of burris before path existed",
     type: "shared",
     undesignated: true,
-    videoIds: [VIDEOS.oaklandBurrisEb.id],
-    videoIdsEndAtEnd: [VIDEOS.oaklandBurrisEb.id],
+    videoIds: [ROUTE_VIDEOS.oaklandBurrisEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.oaklandBurrisEb.id],
     positions: [
       W_OF_6TH,
       [49.23746, -122.95132],
@@ -68,7 +74,7 @@ export const OAKLAND_BURRIS = [
     description: "eb: oakland to oakland pl",
     type: "comfortable",
     oneWay: "recommended",
-    videoIds: [VIDEOS.oaklandBurrisEb.id],
+    videoIds: [ROUTE_VIDEOS.oaklandBurrisEb.id],
     positions: [ROYAL_OAK_DOVER_SW, [49.22978, -122.98875], OAKLAND_PL_W],
   },
   {
@@ -76,7 +82,7 @@ export const OAKLAND_BURRIS = [
     description: "eb: oakland pl",
     type: "quiet",
     oneWay: "recommended",
-    videoIds: [VIDEOS.oaklandBurrisEb.id],
+    videoIds: [ROUTE_VIDEOS.oaklandBurrisEb.id],
     positions: [
       OAKLAND_PL_W,
       [49.2296, -122.98848],
@@ -90,7 +96,7 @@ export const OAKLAND_BURRIS = [
     description: "eb: lane to before gilley",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.oaklandBurrisEb.id],
+    videoIds: [ROUTE_VIDEOS.oaklandBurrisEb.id],
     positions: [
       PEARL_OAKLAND_S,
       [49.22958, -122.98691],
@@ -127,7 +133,7 @@ export const OAKLAND_BURRIS = [
     description: "eb: gilley right-turn lane",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.oaklandBurrisEb.id],
+    videoIds: [ROUTE_VIDEOS.oaklandBurrisEb.id],
     positions: [EB_PRE_GILLEY, GILLEY_OAKLAND_S],
   },
   {
@@ -135,7 +141,7 @@ export const OAKLAND_BURRIS = [
     description: "eb: lane after gilley",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.oaklandBurrisEb.id],
+    videoIds: [ROUTE_VIDEOS.oaklandBurrisEb.id],
     positions: [
       GILLEY_OAKLAND_S,
       [49.22933, -122.97115],
@@ -164,7 +170,7 @@ export const OAKLAND_BURRIS = [
     description: "wb: lane",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.oaklandBurrisWb.id],
+    videoIds: [ROUTE_VIDEOS.oaklandBurrisWb.id],
     positions: [
       BUCKINGHAM_BURRIS,
       [49.23393, -122.95739],
@@ -212,7 +218,7 @@ export const OAKLAND_BURRIS = [
     description: "wb: shared",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.oaklandBurrisWb.id],
+    videoIds: [ROUTE_VIDEOS.oaklandBurrisWb.id],
     positions: [
       OAKDALE_OAKLAND_NE,
       [49.22968, -122.9859],

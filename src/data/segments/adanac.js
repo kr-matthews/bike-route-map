@@ -17,7 +17,7 @@ import {
   WINDERMERE_ADANAC,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const MAIN_UNION_N = [49.27773, -123.09981];
 const MAIN_UNION_NE = [49.27771, -123.09963];
@@ -50,22 +50,22 @@ export const ADANAC = [
     type: "quiet",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.dunsmuirWb.id],
+    videoIds: [ROUTE_VIDEOS.dunsmuirWb.id],
     positions: [MAIN_UNION_N, MAIN_DUNSMUIR],
   },
   {
     description: "dunsmuir 'nb'",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [VIDEOS.dunsmuirEb.id],
+    videoIds: [ROUTE_VIDEOS.dunsmuirEb.id],
     positions: [MAIN_DUNSMUIR, MAIN_UNION_SW, MAIN_UNION_NW],
   },
   {
     routeNames: [ROUTES.adanac.name],
     type: "dedicated",
     description: "west end merged",
-    videoIds: [VIDEOS.adanacWb.id],
-    videoIdsEndAtStart: [VIDEOS.adanacWb.id],
+    videoIds: [ROUTE_VIDEOS.adanacWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.adanacWb.id],
     positions: [EXPO_UNION, UNION_SPLIT],
   },
   {
@@ -106,7 +106,7 @@ export const ADANAC = [
     description: "wb: dunlevy to gore",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.adanacWb.id],
+    videoIds: [ROUTE_VIDEOS.adanacWb.id],
     positions: [DUNLEVY_UNION, [49.27763, -123.09563], GORE_UNION_N],
   },
   {
@@ -114,7 +114,7 @@ export const ADANAC = [
     description: "wb: gore to pre-main",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.adanacWb.id],
+    videoIds: [ROUTE_VIDEOS.adanacWb.id],
     positions: [GORE_UNION_N, WB_PRE_MAIN],
   },
   {
@@ -122,8 +122,8 @@ export const ADANAC = [
     description: "wb: just before main",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.adanacWb.id, VIDEOS.dunsmuirWb.id],
-    videoIdsStartAtStart: [VIDEOS.dunsmuirWb.id],
+    videoIds: [ROUTE_VIDEOS.adanacWb.id, ROUTE_VIDEOS.dunsmuirWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.dunsmuirWb.id],
     positions: [WB_PRE_MAIN, MAIN_UNION_NE, MAIN_UNION_N],
   },
   {
@@ -131,7 +131,7 @@ export const ADANAC = [
     description: "wb: half crossing main",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.adanacWb.id],
+    videoIds: [ROUTE_VIDEOS.adanacWb.id],
     positions: [MAIN_UNION_N, MAIN_UNION_NW],
   },
   {
@@ -139,7 +139,7 @@ export const ADANAC = [
     description: "wb: main to quebec",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.adanacWb.id, VIDEOS.dunsmuirEb.id],
+    videoIds: [ROUTE_VIDEOS.adanacWb.id, ROUTE_VIDEOS.dunsmuirEb.id],
     positions: [
       MAIN_UNION_NW,
       [49.27773, -123.10054],
@@ -153,14 +153,14 @@ export const ADANAC = [
     description: "wb: quebec to expo",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.adanacWb.id],
+    videoIds: [ROUTE_VIDEOS.adanacWb.id],
     positions: [QUEBEC_UNION_NW, [49.27763, -123.10298], UNION_SPLIT],
   },
   {
     routeNames: [ROUTES.adanac.name],
     description: "dunlevy to sunrise",
     type: "quiet",
-    videoIds: [VIDEOS.adanacWb.id],
+    videoIds: [ROUTE_VIDEOS.adanacWb.id],
     positions: [
       DUNLEVY_UNION,
       [49.27756, -123.09357],
@@ -193,7 +193,11 @@ export const ADANAC = [
     routeNames: [ROUTES.adanac.name, ROUTES.sunrise.name],
     description: "sunrise",
     type: "quiet",
-    videoIds: [VIDEOS.adanacWb.id, VIDEOS.sunriseSb.id, VIDEOS.sunriseNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.adanacWb.id,
+      ROUTE_VIDEOS.sunriseSb.id,
+      ROUTE_VIDEOS.sunriseNb.id,
+    ],
     positions: [SLOCAN_ADANAC, KASLO_ADANAC],
   },
   {
@@ -201,7 +205,7 @@ export const ADANAC = [
     description: "sunrise to highway",
     type: "quiet",
     elevation: 0.5,
-    videoIds: [VIDEOS.adanacWb.id],
+    videoIds: [ROUTE_VIDEOS.adanacWb.id],
     positions: [
       KASLO_ADANAC,
       [49.27745, -123.0441],
@@ -217,7 +221,7 @@ export const ADANAC = [
     description: "highway overpass",
     type: "quiet",
     elevation: 1,
-    videoIds: [VIDEOS.adanacWb.id],
+    videoIds: [ROUTE_VIDEOS.adanacWb.id],
     positions: [OVERPASS_W, OVERPASS_E],
   },
   {
@@ -225,7 +229,7 @@ export const ADANAC = [
     description: "highway to almost boundary",
     type: "quiet",
     elevation: 0.5,
-    videoIds: [VIDEOS.adanacWb.id],
+    videoIds: [ROUTE_VIDEOS.adanacWb.id],
     positions: [
       OVERPASS_E,
       CASSIAR_ADANAC,
@@ -239,12 +243,12 @@ export const ADANAC = [
     description: "pre-boundary",
     type: "quiet",
     videoIds: [
-      VIDEOS.adanacWb.id,
-      VIDEOS.francesUnionEb.id,
-      VIDEOS.francesUnionWb.id,
+      ROUTE_VIDEOS.adanacWb.id,
+      ROUTE_VIDEOS.francesUnionEb.id,
+      ROUTE_VIDEOS.francesUnionWb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.francesUnionEb.id],
-    videoIdsEndAtStart: [VIDEOS.francesUnionWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.francesUnionEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.francesUnionWb.id],
     positions: [PRE_BOUNDARY, [49.27744, -123.02375], BOUNDARY_ADANAC],
   },
 ];

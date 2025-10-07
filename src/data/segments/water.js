@@ -5,7 +5,7 @@ import {
   RICHARDS_CORDOVA_SE,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const WATER = [
   {
@@ -13,8 +13,8 @@ export const WATER = [
     description: "eb",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.waterEb.id],
-    videoIdsStartAtStart: [VIDEOS.waterEb.id],
+    videoIds: [ROUTE_VIDEOS.waterEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.waterEb.id],
     positions: [
       RICHARDS_CORDOVA_SE,
       [49.28465, -123.11071],
@@ -30,8 +30,8 @@ export const WATER = [
     description: "wb",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.waterWb.id],
-    videoIdsEndAtEnd: [VIDEOS.waterWb.id],
+    videoIds: [ROUTE_VIDEOS.waterWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.waterWb.id],
     positions: [
       ALEXANDER_POWELL,
       [49.28347, -123.10424],

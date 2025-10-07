@@ -6,15 +6,15 @@ import {
   BEWICKE_THIRD_NE,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const BEWICKE_GREENWAY = [
   {
     routeNames: [ROUTES.bewickeGreenway.name],
     description: "south tip",
     type: "mixed",
-    videoIds: [VIDEOS.bewickeNb.id],
-    videoIdsStartAtStart: [VIDEOS.bewickeNb.id],
+    videoIds: [ROUTE_VIDEOS.bewickeNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.bewickeNb.id],
     positions: [
       [49.31336, -123.09183],
       [49.31349, -123.09176],
@@ -28,8 +28,8 @@ export const BEWICKE_GREENWAY = [
     routeNames: [ROUTES.bewickeGreenway.name],
     description: "north section",
     type: "mixed",
-    videoIds: [VIDEOS.bewickeNb.id],
-    videoIdsEndAtEnd: [VIDEOS.bewickeNb.id],
+    videoIds: [ROUTE_VIDEOS.bewickeNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.bewickeNb.id],
     positions: [
       BEWICKE_SPIRIT_N,
       [49.31528, -123.09175],

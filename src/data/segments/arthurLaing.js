@@ -7,7 +7,7 @@ import {
   SEA_ISLAND_CONNECTOR_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const SOUTHBOUND_ELEVATION_START = [49.20403, -123.13767];
 const SOUTHBOUND_ELEVATION_END = [49.19611, -123.13778];
@@ -20,9 +20,12 @@ export const ARTHUR_LAING = [
   {
     description: "nb exiting from connector",
     type: "dedicated",
-    videoIds: [VIDEOS.arthurLaingNb.id, VIDEOS.seaIslandConnectorWb.id],
-    videoIdsStartAtStart: [VIDEOS.arthurLaingNb.id],
-    videoIdsEndAtEnd: [VIDEOS.seaIslandConnectorWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.arthurLaingNb.id,
+      ROUTE_VIDEOS.seaIslandConnectorWb.id,
+    ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.arthurLaingNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.seaIslandConnectorWb.id],
     positions: [
       SEA_ISLAND_CONNECTOR_W,
       [49.19345, -123.14017],
@@ -33,7 +36,7 @@ export const ARTHUR_LAING = [
   {
     description: "nb path from connector to bridge",
     type: "dedicated",
-    videoIds: [VIDEOS.arthurLaingNb.id],
+    videoIds: [ROUTE_VIDEOS.arthurLaingNb.id],
     positions: [
       POST_SEA_ISLAND_CONNECTOR,
       [49.19348, -123.14013],
@@ -57,7 +60,7 @@ export const ARTHUR_LAING = [
     elevation: 0.5,
     oneWay: "required",
     hideArrows: true,
-    videoIds: [VIDEOS.arthurLaingSb.id],
+    videoIds: [ROUTE_VIDEOS.arthurLaingSb.id],
     positions: [MARINE_ARTHUR_LAING_S, SOUTHBOUND_ELEVATION_START],
   },
   {
@@ -66,7 +69,7 @@ export const ARTHUR_LAING = [
     type: "shoulder",
     elevation: 1,
     oneWay: "required",
-    videoIds: [VIDEOS.arthurLaingSb.id],
+    videoIds: [ROUTE_VIDEOS.arthurLaingSb.id],
     positions: [
       SOUTHBOUND_ELEVATION_START,
       [49.20347, -123.13611],
@@ -108,11 +111,14 @@ export const ARTHUR_LAING = [
     elevation: 0.5,
     oneWay: "required",
     videoIds: [
-      VIDEOS.arthurLaingSb.id,
-      VIDEOS.russBakerSb.id,
-      VIDEOS.grantMcConachieWb.id,
+      ROUTE_VIDEOS.arthurLaingSb.id,
+      ROUTE_VIDEOS.russBakerSb.id,
+      ROUTE_VIDEOS.grantMcConachieWb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.russBakerSb.id, VIDEOS.grantMcConachieWb.id],
+    videoIdsStartAtStart: [
+      ROUTE_VIDEOS.russBakerSb.id,
+      ROUTE_VIDEOS.grantMcConachieWb.id,
+    ],
     positions: [
       SOUTHBOUND_ELEVATION_END,
       [49.19596, -123.138],
@@ -131,8 +137,8 @@ export const ARTHUR_LAING = [
     type: "shoulder",
     elevation: 0.5,
     oneWay: "required",
-    videoIds: [VIDEOS.arthurLaingNb.id, VIDEOS.russBakerNb.id],
-    videoIdsEndAtEnd: [VIDEOS.russBakerNb.id],
+    videoIds: [ROUTE_VIDEOS.arthurLaingNb.id, ROUTE_VIDEOS.russBakerNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.russBakerNb.id],
     positions: [
       SEA_ISLAND_CONNECTOR_ARTHUR_LAING_S,
       [49.19505, -123.13977],
@@ -149,7 +155,7 @@ export const ARTHUR_LAING = [
     type: "shoulder",
     elevation: 1,
     oneWay: "required",
-    videoIds: [VIDEOS.arthurLaingNb.id],
+    videoIds: [ROUTE_VIDEOS.arthurLaingNb.id],
     positions: [
       NORTHBOUND_ELEVATION_START,
       [49.1963, -123.1372],
@@ -188,7 +194,7 @@ export const ARTHUR_LAING = [
     elevation: 0.5,
     oneWay: "required",
     hideArrows: true,
-    videoIds: [VIDEOS.arthurLaingNb.id],
+    videoIds: [ROUTE_VIDEOS.arthurLaingNb.id],
     positions: [NORTHBOUND_ELEVATION_END, MARINE_ARTHUR_LAING_N],
   },
 ];

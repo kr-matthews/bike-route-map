@@ -22,7 +22,7 @@ import {
   YEW_37TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const CAMOSUN_16TH_W_S = [49.25794, -123.19715];
 const CAMOSUN_16TH_E_S = [49.25793, -123.19658];
@@ -37,8 +37,8 @@ export const RIDGEWAY = [
     routeNames: [ROUTES.ridgeway.name],
     description: "off broadway to 15th",
     type: "quiet",
-    videoIds: [VIDEOS.ridgewayWb.id, VIDEOS.imperialNb.id],
-    videoIdsEndAtStart: [VIDEOS.imperialNb.id],
+    videoIds: [ROUTE_VIDEOS.ridgewayWb.id, ROUTE_VIDEOS.imperialNb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.imperialNb.id],
     positions: [
       DISCOVERY_8TH,
       [49.26374, -123.20305],
@@ -50,7 +50,7 @@ export const RIDGEWAY = [
     routeNames: [ROUTES.ridgeway.name],
     description: "15th and to 16th",
     type: "quiet",
-    videoIds: [VIDEOS.ridgewayWb.id],
+    videoIds: [ROUTE_VIDEOS.ridgewayWb.id],
     positions: [
       DISCOVER_15TH,
       [49.25915, -123.20015],
@@ -62,14 +62,14 @@ export const RIDGEWAY = [
     routeNames: [ROUTES.ridgeway.name],
     description: "16th path",
     type: "combined",
-    videoIds: [VIDEOS.ridgewayWb.id],
+    videoIds: [ROUTE_VIDEOS.ridgewayWb.id],
     positions: [CAMOSUN_16TH_W_S, CAMOSUN_16TH_E_S],
   },
   {
     routeNames: [ROUTES.ridgeway.name],
     description: "16th to balaclava",
     type: "quiet",
-    videoIds: [VIDEOS.ridgewayWb.id],
+    videoIds: [ROUTE_VIDEOS.ridgewayWb.id],
     positions: [
       CAMOSUN_16TH_E_S,
       [49.25654, -123.19657],
@@ -94,9 +94,9 @@ export const RIDGEWAY = [
     description: "ridgeway main",
     type: "quiet",
     videoIds: [
-      VIDEOS.balaclavaSb.id,
-      VIDEOS.balaclavaNb.id,
-      VIDEOS.ridgewayWb.id,
+      ROUTE_VIDEOS.balaclavaSb.id,
+      ROUTE_VIDEOS.balaclavaNb.id,
+      ROUTE_VIDEOS.ridgewayWb.id,
     ],
     positions: [
       QUESNEL_20TH,
@@ -123,7 +123,7 @@ export const RIDGEWAY = [
     routeNames: [ROUTES.ridgeway.name],
     description: "balaclava to king edward",
     type: "quiet",
-    videoIds: [VIDEOS.ridgewayWb.id],
+    videoIds: [ROUTE_VIDEOS.ridgewayWb.id],
     positions: [
       BALACLAVA_QUESNEL,
       [49.25264, -123.17506],
@@ -138,7 +138,7 @@ export const RIDGEWAY = [
     routeNames: [ROUTES.ridgeway.name],
     description: "quesnel uncomfortable",
     type: "shared",
-    videoIds: [VIDEOS.ridgewayWb.id],
+    videoIds: [ROUTE_VIDEOS.ridgewayWb.id],
     positions: [
       QUESNEL_KING_EDWARD_N,
       QUESNEL_KING_EDWARD_S,
@@ -151,7 +151,7 @@ export const RIDGEWAY = [
     routeNames: [ROUTES.ridgeway.name],
     description: "mackenzie to puget",
     type: "quiet",
-    videoIds: [VIDEOS.ridgewayWb.id],
+    videoIds: [ROUTE_VIDEOS.ridgewayWb.id],
     positions: [
       MACKENZIE_QUESNEL,
       [49.24786, -123.17],
@@ -174,14 +174,14 @@ export const RIDGEWAY = [
     routeNames: [ROUTES.ridgeway.name],
     description: "crossing puget",
     type: "shared",
-    videoIds: [VIDEOS.ridgewayWb.id],
+    videoIds: [ROUTE_VIDEOS.ridgewayWb.id],
     positions: [PUGET_31ST, PUGET_NARVAEZ],
   },
   {
     routeNames: [ROUTES.ridgeway.name],
     description: "narvaez",
     type: "quiet",
-    videoIds: [VIDEOS.ridgewayWb.id],
+    videoIds: [ROUTE_VIDEOS.ridgewayWb.id],
     positions: [
       PUGET_NARVAEZ,
       [49.24405, -123.16248],
@@ -193,14 +193,14 @@ export const RIDGEWAY = [
     routeNames: [ROUTES.ridgeway.name],
     description: "crossing 33rd",
     type: "shared",
-    videoIds: [VIDEOS.ridgewayWb.id],
+    videoIds: [ROUTE_VIDEOS.ridgewayWb.id],
     positions: [NARVAEZ_33RD, VINE_33RD],
   },
   {
     routeNames: [ROUTES.ridgeway.name],
     description: "33rd to midtown",
     type: "quiet",
-    videoIds: [VIDEOS.ridgewayWb.id],
+    videoIds: [ROUTE_VIDEOS.ridgewayWb.id],
     positions: [
       VINE_33RD,
       [49.24127, -123.15969],
@@ -216,7 +216,7 @@ export const RIDGEWAY = [
     routeNames: [ROUTES.ridgeway.name],
     description: "nanaimo",
     type: "quiet",
-    videoIds: [VIDEOS.ridgewayWb.id],
+    videoIds: [ROUTE_VIDEOS.ridgewayWb.id],
     positions: [
       NANAIMO_38TH,
       [49.23388, -123.05882],
@@ -230,9 +230,9 @@ export const RIDGEWAY = [
     description: "nanaimo to sunrise",
     type: "quiet",
     videoIds: [
-      VIDEOS.ridgewayWb.id,
-      VIDEOS.fortyFifthWb.id,
-      VIDEOS.fortyFifthEb.id,
+      ROUTE_VIDEOS.ridgewayWb.id,
+      ROUTE_VIDEOS.fortyFifthWb.id,
+      ROUTE_VIDEOS.fortyFifthEb.id,
     ],
     positions: [NANAIMO_45TH, [49.22939, -123.05492], WALES_45TH, VIVIAN_45TH],
   },
@@ -241,11 +241,11 @@ export const RIDGEWAY = [
     description: "sunrise",
     type: "quiet",
     videoIds: [
-      VIDEOS.ridgewayWb.id,
-      VIDEOS.fortyFifthWb.id,
-      VIDEOS.fortyFifthEb.id,
-      VIDEOS.sunriseNb.id,
-      VIDEOS.sunriseSb.id,
+      ROUTE_VIDEOS.ridgewayWb.id,
+      ROUTE_VIDEOS.fortyFifthWb.id,
+      ROUTE_VIDEOS.fortyFifthEb.id,
+      ROUTE_VIDEOS.sunriseNb.id,
+      ROUTE_VIDEOS.sunriseSb.id,
     ],
     positions: [VIVIAN_45TH, EARLES_45TH],
   },
@@ -254,9 +254,9 @@ export const RIDGEWAY = [
     description: "sunrise to killarney",
     type: "quiet",
     videoIds: [
-      VIDEOS.ridgewayWb.id,
-      VIDEOS.fortyFifthWb.id,
-      VIDEOS.fortyFifthEb.id,
+      ROUTE_VIDEOS.ridgewayWb.id,
+      ROUTE_VIDEOS.fortyFifthWb.id,
+      ROUTE_VIDEOS.fortyFifthEb.id,
     ],
     positions: [EARLES_45TH, KILLARNEY_45TH],
   },
@@ -265,12 +265,12 @@ export const RIDGEWAY = [
     description: "killarney to rupert",
     type: "quiet",
     videoIds: [
-      VIDEOS.ridgewayWb.id,
-      VIDEOS.fortyFifthWb.id,
-      VIDEOS.fortyFifthEb.id,
-      VIDEOS.killarneyWb.id,
+      ROUTE_VIDEOS.ridgewayWb.id,
+      ROUTE_VIDEOS.fortyFifthWb.id,
+      ROUTE_VIDEOS.fortyFifthEb.id,
+      ROUTE_VIDEOS.killarneyWb.id,
     ],
-    videoIdsStartAtEnd: [VIDEOS.killarneyWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.killarneyWb.id],
     positions: [KILLARNEY_45TH, RUPERT_45TH],
   },
   {
@@ -278,12 +278,15 @@ export const RIDGEWAY = [
     description: "rupert to boundary",
     type: "quiet",
     videoIds: [
-      VIDEOS.ridgewayWb.id,
-      VIDEOS.fortyFifthWb.id,
-      VIDEOS.fortyFifthEb.id,
+      ROUTE_VIDEOS.ridgewayWb.id,
+      ROUTE_VIDEOS.fortyFifthWb.id,
+      ROUTE_VIDEOS.fortyFifthEb.id,
     ],
-    videoIdsStartAtEnd: [VIDEOS.ridgewayWb.id, VIDEOS.fortyFifthWb.id],
-    videoIdsEndAtEnd: [VIDEOS.fortyFifthEb.id],
+    videoIdsStartAtEnd: [
+      ROUTE_VIDEOS.ridgewayWb.id,
+      ROUTE_VIDEOS.fortyFifthWb.id,
+    ],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.fortyFifthEb.id],
     positions: [
       RUPERT_45TH,
       KERR_45TH,

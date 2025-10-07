@@ -4,14 +4,14 @@ import {
   NEW_HAVEN_MARINE,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const GLENLYON = [
   {
     routeNames: [ROUTES.glenlyon.name],
     description: "west portion",
     type: "mixed",
-    videoIds: [VIDEOS.glenlyonNb.id],
+    videoIds: [ROUTE_VIDEOS.glenlyonNb.id],
     positions: [
       GLENLYON_FRASER_FORESHORE,
       [49.19773, -123.00893],
@@ -47,7 +47,7 @@ export const GLENLYON = [
     routeNames: [ROUTES.glenlyon.name, ROUTES.fraserForeshoreTrail.name],
     description: "fraser foreshore trail",
     type: "mixed",
-    videoIds: [VIDEOS.glenlyonNb.id, VIDEOS.fraserForeshoreEb.id],
+    videoIds: [ROUTE_VIDEOS.glenlyonNb.id, ROUTE_VIDEOS.fraserForeshoreEb.id],
     positions: [
       GLENLYON_FRASER_FORESHORE,
       [49.19728, -123.00814],
@@ -72,8 +72,8 @@ export const GLENLYON = [
     routeNames: [ROUTES.glenlyon.name],
     description: "east portion",
     type: "mixed",
-    videoIds: [VIDEOS.glenlyonNb.id],
-    videoIdsStartAtEnd: [VIDEOS.glenlyonNb.id],
+    videoIds: [ROUTE_VIDEOS.glenlyonNb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.glenlyonNb.id],
     positions: [
       GLENLYON_BYRNE_CREEK,
       [49.19531, -123.00134],

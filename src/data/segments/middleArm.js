@@ -11,7 +11,7 @@ import {
   WEST_DYKE_MIDDLE_ARM,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const MIDDLE_ARM_TRAIL_CAMBIE_JOIN = [49.18422, -123.13909];
 const NO_2_BRIDGE_E_SPLIT = [49.17439, -123.15686];
@@ -35,15 +35,15 @@ export const MIDDLE_ARM = [
   {
     description: "cambie: crossing river pkwy",
     type: "mixed",
-    videoIds: [VIDEOS.riverPkwySb.id],
+    videoIds: [ROUTE_VIDEOS.riverPkwySb.id],
     positions: [RIVER_PKWY_CAMBIE_SW, RIVER_PKWY_CAMBIE_SE],
   },
   {
     description: "cambie: river pkwy to no. 3",
     type: "mixed",
-    videoIds: [VIDEOS.riverPkwySb.id, VIDEOS.riverPkwyNb.id],
-    videoIdsStartAtEnd: [VIDEOS.riverPkwySb.id],
-    videoIdsEndAtEnd: [VIDEOS.riverPkwyNb.id],
+    videoIds: [ROUTE_VIDEOS.riverPkwySb.id, ROUTE_VIDEOS.riverPkwyNb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.riverPkwySb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.riverPkwyNb.id],
     positions: [
       RIVER_PKWY_CAMBIE_SE,
       [49.18449, -123.13733],
@@ -57,15 +57,15 @@ export const MIDDLE_ARM = [
   {
     description: "no. 2 connection, west half",
     type: "mixed",
-    videoIds: [VIDEOS.no2BridgeSb.id],
-    videoIdsEndAtStart: [VIDEOS.no2BridgeSb.id],
+    videoIds: [ROUTE_VIDEOS.no2BridgeSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.no2BridgeSb.id],
     positions: [NO_2_BRIDGE_W_SPLIT, [49.17398, -123.15906], NO_2_RIVER_W_N],
   },
   {
     description: "no. 2 connection, east half",
     type: "mixed",
-    videoIds: [VIDEOS.no2BridgeNb.id],
-    videoIdsStartAtEnd: [VIDEOS.no2BridgeNb.id],
+    videoIds: [ROUTE_VIDEOS.no2BridgeNb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.no2BridgeNb.id],
     positions: [
       NO_2_RIVER_W_N,
       [49.17397, -123.15857],
@@ -83,8 +83,8 @@ export const MIDDLE_ARM = [
     routeNames: [ROUTES.middleArm.name],
     description: "primary",
     type: "mixed",
-    videoIds: [VIDEOS.middleArmEb.id],
-    videoIdsEndAtEnd: [VIDEOS.middleArmEb.id],
+    videoIds: [ROUTE_VIDEOS.middleArmEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.middleArmEb.id],
     positions: [
       WEST_DYKE_MIDDLE_ARM,
       [49.17532, -123.19384],
