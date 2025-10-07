@@ -12,8 +12,8 @@ const bothOptions = ["1x", "4x"];
 export default function Video({ video, direction }) {
   const { selectedVideo, selectVideo } = useContext(FilterContext);
   const { defaultSpeed } = useContext(SettingContext);
-  const isShowing = video.id === selectedVideo?.id;
-  const backgroundColor = isShowing ? COLOUR_VIDEO : COLOUR_NO_VIDEO;
+  const isSelected = video.id === selectedVideo?.id;
+  const backgroundColor = isSelected ? COLOUR_VIDEO : COLOUR_NO_VIDEO;
 
   const hasTimeLapse = Boolean(video.tlId);
   const speedOptions = hasTimeLapse ? bothOptions : trivialOptions;
@@ -87,7 +87,7 @@ export default function Video({ video, direction }) {
             <input
               name="show-video"
               type="checkbox"
-              checked={isShowing}
+              checked={isSelected}
               onChange={updateVideo}
             />
             <span className="slider" />
