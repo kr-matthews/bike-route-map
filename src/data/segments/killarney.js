@@ -5,14 +5,14 @@ import {
   WALES_46TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const KILLARNEY = [
   {
     routeNames: [ROUTES.killarney.name],
     description: "nanaimo to wales",
     type: "quiet",
-    videoIds: [VIDEOS.killarneyWb.id, VIDEOS.killarneyEb.id],
+    videoIds: [ROUTE_VIDEOS.killarneyWb.id, ROUTE_VIDEOS.killarneyEb.id],
     positions: [NANAIMO_46TH, [49.22848, -123.05464], WALES_46TH],
   },
   {
@@ -20,19 +20,19 @@ export const KILLARNEY = [
     description: "wales to vivian",
     type: "quiet",
     videoIds: [
-      VIDEOS.killarneyWb.id,
-      VIDEOS.killarneyEb.id,
-      VIDEOS.walesDuchessNb.id,
+      ROUTE_VIDEOS.killarneyWb.id,
+      ROUTE_VIDEOS.killarneyEb.id,
+      ROUTE_VIDEOS.walesDuchessNb.id,
     ],
-    videoIdsStartAtEnd: [VIDEOS.walesDuchessNb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.walesDuchessNb.id],
     positions: [WALES_46TH, VIVIAN_46TH],
   },
   {
     routeNames: [ROUTES.killarney.name],
     description: "vivian to 45th",
     type: "quiet",
-    videoIds: [VIDEOS.killarneyWb.id, VIDEOS.killarneyEb.id],
-    videoIdsEndAtEnd: [VIDEOS.killarneyEb.id],
+    videoIds: [ROUTE_VIDEOS.killarneyWb.id, ROUTE_VIDEOS.killarneyEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.killarneyEb.id],
     positions: [
       VIVIAN_46TH,
       [49.22842, -123.04754],

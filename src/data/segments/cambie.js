@@ -20,7 +20,7 @@ import {
   ONTARIO_42ND,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const CAMBIE_30TH_SW = [49.24377, -123.11754];
 const CAMBIE_33RD_E = [49.24112, -123.11824];
@@ -36,9 +36,9 @@ export const CAMBIE = [
   // canada line station (and other) connections
   {
     description: "42nd",
-    videoIds: [VIDEOS.fortySecondEb.id],
-    videoIdsStartAtStart: [VIDEOS.fortySecondEb.id],
-    videoIdsEndAtEnd: [VIDEOS.fortySecondEb.id],
+    videoIds: [ROUTE_VIDEOS.fortySecondEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.fortySecondEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.fortySecondEb.id],
     type: "quiet",
     positions: [
       CAMBIE_42ND_E,
@@ -61,8 +61,8 @@ export const CAMBIE = [
     description: "gastown",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.cambieGastownNb.id],
-    videoIdsEndAtEnd: [VIDEOS.cambieGastownNb.id],
+    videoIds: [ROUTE_VIDEOS.cambieGastownNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.cambieGastownNb.id],
     positions: [
       CAMBIE_DUNSMUIR,
       CAMBIE_PENDER_SE,
@@ -120,7 +120,7 @@ export const CAMBIE = [
     description: "sb: 49th to 58th",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.cambieSb.id],
+    videoIds: [ROUTE_VIDEOS.cambieSb.id],
     positions: [
       CAMBIE_49TH_SW,
       [49.22522, -123.11674],
@@ -135,7 +135,7 @@ export const CAMBIE = [
     description: "sb: 58th to 59th",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.cambieSb.id],
+    videoIds: [ROUTE_VIDEOS.cambieSb.id],
     positions: [CAMBIE_58TH_W, CAMBIE_59TH_NW],
   },
   {
@@ -143,7 +143,7 @@ export const CAMBIE = [
     description: "sb: 59th to marine",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.cambieSb.id],
+    videoIds: [ROUTE_VIDEOS.cambieSb.id],
     positions: [
       CAMBIE_59TH_NW,
       [49.21689, -123.11705],
@@ -159,8 +159,8 @@ export const CAMBIE = [
     type: "shared",
     oneWay: "recommended",
     undesignated: true,
-    videoIds: [VIDEOS.cambieSb.id],
-    videoIdsEndAtEnd: [VIDEOS.cambieSb.id],
+    videoIds: [ROUTE_VIDEOS.cambieSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.cambieSb.id],
     positions: [SOUTHBOUND_END, [49.20995, -123.11725], [49.20903, -123.11729]],
   },
   {
@@ -168,7 +168,7 @@ export const CAMBIE = [
     description: "nb: to 35th-ish",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.cambieNb.id],
+    videoIds: [ROUTE_VIDEOS.cambieNb.id],
     positions: [
       CAMBIE_MARINE_NE,
       [49.21041, -123.11707],
@@ -204,7 +204,7 @@ export const CAMBIE = [
     description: "nb: lane between 35th, 33rd",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.cambieNb.id],
+    videoIds: [ROUTE_VIDEOS.cambieNb.id],
     positions: [NB_LANE_START_35TH, NB_LANE_END_35TH],
   },
   {
@@ -212,7 +212,7 @@ export const CAMBIE = [
     description: "nb: from 33rd-ish",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.cambieNb.id],
+    videoIds: [ROUTE_VIDEOS.cambieNb.id],
     positions: [
       NB_LANE_END_35TH,
       [49.24021, -123.11782],

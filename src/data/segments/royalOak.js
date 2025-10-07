@@ -7,7 +7,7 @@ import {
   SUSSEX_GRANGE_SE,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const NELSON_DOVER_SE = [49.2298, -122.99409];
 const MCMURRAY_GRANGE_SW = [49.22983, -122.99661];
@@ -22,7 +22,7 @@ export const ROYAL_OAK = [
     description: "grange lane from sussex",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.oaklandBurrisEb.id],
+    videoIds: [ROUTE_VIDEOS.oaklandBurrisEb.id],
     positions: [SUSSEX_GRANGE_SE, [49.22984, -122.99729], MCMURRAY_GRANGE_SW],
   },
   {
@@ -30,7 +30,7 @@ export const ROYAL_OAK = [
     type: "shared",
     oneWay: "required",
     undesignated: true,
-    videoIds: [VIDEOS.oaklandBurrisEb.id],
+    videoIds: [ROUTE_VIDEOS.oaklandBurrisEb.id],
     positions: [
       MCMURRAY_GRANGE_SW,
       [49.2299, -122.9963],
@@ -43,8 +43,11 @@ export const ROYAL_OAK = [
   {
     description: "dover",
     type: "mixed",
-    videoIds: [VIDEOS.oaklandBurrisEb.id, VIDEOS.oaklandBurrisWb.id],
-    videoIdsEndAtStart: [VIDEOS.oaklandBurrisWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.oaklandBurrisEb.id,
+      ROUTE_VIDEOS.oaklandBurrisWb.id,
+    ],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.oaklandBurrisWb.id],
     positions: [
       NELSON_DOVER_SE,
       [49.22981, -122.99401],
@@ -57,7 +60,7 @@ export const ROYAL_OAK = [
   {
     description: "sanders",
     type: "mixed",
-    videoIds: [VIDEOS.royalOakSb.id],
+    videoIds: [ROUTE_VIDEOS.royalOakSb.id],
     positions: [
       MARLBOROUGH_SANDERS_NE,
       [49.228, -122.99053],
@@ -68,8 +71,8 @@ export const ROYAL_OAK = [
     description: "sanders to metrotown",
     type: "shared",
     undesignated: true,
-    videoIds: [VIDEOS.royalOakSb.id],
-    videoIdsEndAtStart: [VIDEOS.royalOakSb.id],
+    videoIds: [ROUTE_VIDEOS.royalOakSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.royalOakSb.id],
     positions: [
       NELSON_HAZEL_SW,
       NELSON_SANDERS_E,
@@ -82,7 +85,7 @@ export const ROYAL_OAK = [
     routeNames: [ROUTES.royalOak.name],
     description: "sanders to oakland/dover",
     type: "mixed",
-    videoIds: [VIDEOS.royalOakSb.id],
+    videoIds: [ROUTE_VIDEOS.royalOakSb.id],
     positions: [
       ROYAL_OAK_SANDERS_NW,
       [49.22806, -122.9891],
@@ -95,14 +98,14 @@ export const ROYAL_OAK = [
     routeNames: [ROUTES.royalOak.name],
     description: "crossing oakland/dover",
     type: "mixed",
-    videoIds: [VIDEOS.royalOakSb.id, VIDEOS.oaklandBurrisWb.id],
+    videoIds: [ROUTE_VIDEOS.royalOakSb.id, ROUTE_VIDEOS.oaklandBurrisWb.id],
     positions: [ROYAL_OAK_DOVER_SW, ROYAL_OAK_DOVER_NW],
   },
   {
     routeNames: [ROUTES.royalOak.name],
     description: "oakland/dover to maitland",
     type: "mixed",
-    videoIds: [VIDEOS.royalOakSb.id],
+    videoIds: [ROUTE_VIDEOS.royalOakSb.id],
     positions: [
       ROYAL_OAK_DOVER_NW,
       [49.23006, -122.98913],
@@ -117,7 +120,7 @@ export const ROYAL_OAK = [
     routeNames: [ROUTES.royalOak.name],
     description: "maitland to trail",
     type: "quiet",
-    videoIds: [VIDEOS.royalOakSb.id],
+    videoIds: [ROUTE_VIDEOS.royalOakSb.id],
     positions: [
       ROYAL_OAK_MAITLAND,
       [49.23145, -122.98892],
@@ -130,8 +133,8 @@ export const ROYAL_OAK = [
     routeNames: [ROUTES.royalOak.name],
     description: "trail north end",
     type: "comfortable",
-    videoIds: [VIDEOS.royalOakSb.id],
-    videoIdsStartAtEnd: [VIDEOS.royalOakSb.id],
+    videoIds: [ROUTE_VIDEOS.royalOakSb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.royalOakSb.id],
     positions: [
       ROYAL_OAK_SIDE_STREET_N,
       [49.23556, -122.98894],

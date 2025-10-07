@@ -9,7 +9,7 @@ import {
   NO_2_RUSS_BAKER_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const NO_2_RIVER_E = [49.17229, -123.15866];
 const NB_ELEVATION_START = [49.17304, -123.15833];
@@ -48,13 +48,13 @@ export const NO_2 = [
   {
     description: "west side path b",
     type: "mixed",
-    videoIds: [VIDEOS.no2BridgeSb.id],
+    videoIds: [ROUTE_VIDEOS.no2BridgeSb.id],
     positions: [LIGHTHOUSE_PLACE_PATH_JOIN, NO_2_RIVER],
   },
   {
     description: "river to post-bridge lane",
     type: "mixed",
-    videoIds: [VIDEOS.no2BridgeNb.id, VIDEOS.no2BridgeSb.id],
+    videoIds: [ROUTE_VIDEOS.no2BridgeNb.id, ROUTE_VIDEOS.no2BridgeSb.id],
     positions: [NO_2_RIVER, NO_2_RIVER_W_N],
   },
   {
@@ -101,7 +101,7 @@ export const NO_2 = [
     description: "river rd from lynas",
     type: "shared",
     oneWay: "recommended",
-    videoIds: [VIDEOS.no2Nb.id],
+    videoIds: [ROUTE_VIDEOS.no2Nb.id],
     positions: [
       LYNAS_RIVER,
       [49.17351, -123.16366],
@@ -118,7 +118,7 @@ export const NO_2 = [
     description: "river rd",
     type: "shared",
     oneWay: "recommended",
-    videoIds: [VIDEOS.no2Nb.id, VIDEOS.no2BridgeNb.id],
+    videoIds: [ROUTE_VIDEOS.no2Nb.id, ROUTE_VIDEOS.no2BridgeNb.id],
     positions: [
       NO_2_RIVER,
       [49.17388, -123.15864],
@@ -138,7 +138,7 @@ export const NO_2 = [
     description: "path: river rd to bridge",
     type: "mixed",
     oneWay: "recommended",
-    videoIds: [VIDEOS.no2Nb.id, VIDEOS.no2BridgeNb.id],
+    videoIds: [ROUTE_VIDEOS.no2Nb.id, ROUTE_VIDEOS.no2BridgeNb.id],
     positions: [RIVER_RIVER_W, [49.17226, -123.15748], NO_2_RIVER_E_E],
   },
   {
@@ -146,7 +146,7 @@ export const NO_2 = [
     type: "mixed",
     oneWay: "recommended",
     hideArrows: true,
-    videoIds: [VIDEOS.no2Nb.id],
+    videoIds: [ROUTE_VIDEOS.no2Nb.id],
     positions: [NO_2_RIVER_E_E, NO_2_RIVER_E],
   },
 
@@ -169,7 +169,7 @@ export const NO_2 = [
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.no2Nb.id],
+    videoIds: [ROUTE_VIDEOS.no2Nb.id],
     positions: [
       NO_2_RIVER_E,
       [49.17248, -123.15861],
@@ -183,7 +183,7 @@ export const NO_2 = [
     type: "painted",
     oneWay: "required",
     elevation: 1,
-    videoIds: [VIDEOS.no2Nb.id],
+    videoIds: [ROUTE_VIDEOS.no2Nb.id],
     positions: [
       NB_ELEVATION_START,
       [49.17398, -123.15787],
@@ -201,9 +201,9 @@ export const NO_2 = [
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.no2Nb.id, VIDEOS.russBakerNb.id],
-    videoIdsStartAtStart: [VIDEOS.russBakerNb.id],
-    videoIdsEndAtEnd: [VIDEOS.no2Nb.id],
+    videoIds: [ROUTE_VIDEOS.no2Nb.id, ROUTE_VIDEOS.russBakerNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.russBakerNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.no2Nb.id],
     positions: [NB_ELEVATION_END, NO_2_RUSS_BAKER_E],
   },
 
@@ -214,8 +214,8 @@ export const NO_2 = [
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.russBakerSb.id],
-    videoIdsEndAtEnd: [VIDEOS.russBakerSb.id],
+    videoIds: [ROUTE_VIDEOS.russBakerSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.russBakerSb.id],
     positions: [NO_2_RUSS_BAKER_W, SB_ELEVATION_START],
   },
   {

@@ -18,7 +18,7 @@ import {
   YUKON_29TH_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const PUGET_29TH = [49.2461, -123.16597];
 const PUGET_EDDINGTON = [49.24505, -123.16339];
@@ -31,8 +31,8 @@ export const TWENTY_NINTH = [
     routeNames: [ROUTES.twentyNinth.name],
     description: "imperial to balaclava/ridgeway",
     type: "quiet",
-    videoIds: [VIDEOS.twentyNinthWb.id],
-    videoIdsEndAtStart: [VIDEOS.twentyNinthWb.id],
+    videoIds: [ROUTE_VIDEOS.twentyNinthWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.twentyNinthWb.id],
     positions: [
       IMPERIAL_29TH,
       [49.24926, -123.20485],
@@ -59,9 +59,9 @@ export const TWENTY_NINTH = [
     description: "balaclava/ridgeway overlap",
     type: "quiet",
     videoIds: [
-      VIDEOS.twentyNinthWb.id,
-      VIDEOS.balaclavaSb.id,
-      VIDEOS.balaclavaNb.id,
+      ROUTE_VIDEOS.twentyNinthWb.id,
+      ROUTE_VIDEOS.balaclavaSb.id,
+      ROUTE_VIDEOS.balaclavaNb.id,
     ],
     positions: [BALACLAVA_29TH, CARNARVON_29TH],
   },
@@ -69,7 +69,7 @@ export const TWENTY_NINTH = [
     routeNames: [ROUTES.twentyNinth.name],
     description: "balaclava/ridgeway to puget",
     type: "quiet",
-    videoIds: [VIDEOS.twentyNinthWb.id],
+    videoIds: [ROUTE_VIDEOS.twentyNinthWb.id],
     positions: [
       CARNARVON_29TH,
       [49.24612, -123.1702],
@@ -81,14 +81,14 @@ export const TWENTY_NINTH = [
     routeNames: [ROUTES.twentyNinth.name],
     description: "puget",
     type: "shared",
-    videoIds: [VIDEOS.twentyNinthWb.id],
+    videoIds: [ROUTE_VIDEOS.twentyNinthWb.id],
     positions: [PUGET_29TH, [49.24521, -123.16368], PUGET_EDDINGTON],
   },
   {
     routeNames: [ROUTES.twentyNinth.name],
     description: "puget to valley",
     type: "quiet",
-    videoIds: [VIDEOS.twentyNinthWb.id],
+    videoIds: [ROUTE_VIDEOS.twentyNinthWb.id],
     positions: [
       PUGET_EDDINGTON,
       [49.24518, -123.16312],
@@ -107,7 +107,11 @@ export const TWENTY_NINTH = [
     routeNames: [ROUTES.twentyNinth.name, ROUTES.valley.name],
     description: "valley",
     type: "quiet",
-    videoIds: [VIDEOS.twentyNinthWb.id, VIDEOS.valleyNb.id, VIDEOS.valleySb.id],
+    videoIds: [
+      ROUTE_VIDEOS.twentyNinthWb.id,
+      ROUTE_VIDEOS.valleyNb.id,
+      ROUTE_VIDEOS.valleySb.id,
+    ],
     positions: [
       YEW_EDDINGTON,
       [49.24698, -123.15558],
@@ -120,7 +124,7 @@ export const TWENTY_NINTH = [
     routeNames: [ROUTES.twentyNinth.name],
     description: "valley to oak",
     type: "quiet",
-    videoIds: [VIDEOS.twentyNinthWb.id],
+    videoIds: [ROUTE_VIDEOS.twentyNinthWb.id],
     positions: [
       YEW_EDDINGTON,
       [49.24766, -123.15472],
@@ -166,7 +170,7 @@ export const TWENTY_NINTH = [
     description: "wb: hospital lane",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.twentyNinthWb.id],
+    videoIds: [ROUTE_VIDEOS.twentyNinthWb.id],
     positions: [
       LAUREL_28TH,
       [49.2463, -123.12469],
@@ -182,14 +186,14 @@ export const TWENTY_NINTH = [
     routeNames: [ROUTES.twentyNinth.name],
     description: "hospital: 28th",
     type: "quiet",
-    videoIds: [VIDEOS.twentyNinthWb.id],
+    videoIds: [ROUTE_VIDEOS.twentyNinthWb.id],
     positions: [LAUREL_28TH, HEATHER_28TH],
   },
   {
     routeNames: [ROUTES.twentyNinth.name],
     description: "heather to cambie",
     type: "quiet",
-    videoIds: [VIDEOS.twentyNinthWb.id],
+    videoIds: [ROUTE_VIDEOS.twentyNinthWb.id],
     positions: [HEATHER_29TH, CAMBIE_29TH_W],
   },
   {
@@ -204,7 +208,7 @@ export const TWENTY_NINTH = [
     description: "eb: 29th",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.cambieNb.id],
+    videoIds: [ROUTE_VIDEOS.cambieNb.id],
     positions: [
       CAMBIE_29TH_SE,
       [49.24513, -123.11448],
@@ -244,7 +248,7 @@ export const TWENTY_NINTH = [
     description: "wb: 29th/midlothian",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.twentyNinthWb.id],
+    videoIds: [ROUTE_VIDEOS.twentyNinthWb.id],
     positions: [
       ONTARIO_33RD_N,
       [49.24065, -123.10574],

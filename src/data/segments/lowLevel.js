@@ -6,7 +6,7 @@ import {
   ST_ANDREWS_ESPLANADE_SE,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const LOW_LEVEL = [
   // eb
@@ -15,8 +15,8 @@ export const LOW_LEVEL = [
     description: "eb",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.lowLevelEb.id],
-    videoIdsEndAtEnd: [VIDEOS.lowLevelEb.id],
+    videoIds: [ROUTE_VIDEOS.lowLevelEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.lowLevelEb.id],
     positions: [
       ST_ANDREWS_ESPLANADE_SE,
       [49.30794, -123.07283],
@@ -67,8 +67,8 @@ export const LOW_LEVEL = [
     description: "wb",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.lowLevelWb.id],
-    videoIdsStartAtStart: [VIDEOS.lowLevelWb.id],
+    videoIds: [ROUTE_VIDEOS.lowLevelWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.lowLevelWb.id],
     positions: [
       LOW_LEVEL_COTTON_N,
       [49.30838, -123.04677],

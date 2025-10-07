@@ -1,5 +1,4 @@
-const VIDEOS = {
-  // !!! add upgrade videos
+export const ROUTE_VIDEOS = {
   adanacWb: {
     id: "ZDvPnT7PrUo",
     tlId: "c3NG7hyBGFY",
@@ -2235,5 +2234,3 @@ const VIDEOS = {
     minutes: 13,
   },
 };
-
-export { VIDEOS };

@@ -5,7 +5,7 @@ import {
   BOUNDARY_RUMBLE_NE,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const ROYAL_OAK_RUMBLE_NW = [49.21495, -122.98867];
 const MACPHERSON_RUMBLE_N = [49.21497, -122.98285];
@@ -15,8 +15,8 @@ export const RUMBLE = [
     routeNames: [ROUTES.rumble.name],
     description: "west half",
     type: "mixed",
-    videoIds: [VIDEOS.rumbleEb.id, VIDEOS.rumbleWb.id],
-    videoIdsEndAtStart: [VIDEOS.rumbleWb.id],
+    videoIds: [ROUTE_VIDEOS.rumbleEb.id, ROUTE_VIDEOS.rumbleWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.rumbleWb.id],
     positions: [
       BOUNDARY_RUMBLE_NE,
       [49.2149, -123.02091],
@@ -33,14 +33,14 @@ export const RUMBLE = [
     description: "missing middle",
     undesignated: true,
     type: "other",
-    videoIds: [VIDEOS.rumbleWb.id],
+    videoIds: [ROUTE_VIDEOS.rumbleWb.id],
     positions: [ROYAL_OAK_RUMBLE_NW, MACPHERSON_RUMBLE_N],
   },
   {
     routeNames: [ROUTES.rumble.name],
     description: "bad street part",
     type: "shared",
-    videoIds: [VIDEOS.rumbleEb.id],
+    videoIds: [ROUTE_VIDEOS.rumbleEb.id],
     positions: [
       ROYAL_OAK_RUMBLE_NW,
       [49.21487, -122.98867],
@@ -52,7 +52,7 @@ export const RUMBLE = [
     routeNames: [ROUTES.rumble.name],
     description: "east half",
     type: "mixed",
-    videoIds: [VIDEOS.rumbleWb.id, VIDEOS.rumbleEb.id],
+    videoIds: [ROUTE_VIDEOS.rumbleWb.id, ROUTE_VIDEOS.rumbleEb.id],
     positions: [
       MACPHERSON_RUMBLE_N,
       BULLER_RUMBLE_N,

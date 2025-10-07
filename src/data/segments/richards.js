@@ -9,7 +9,7 @@ import {
   RICHARDS_SMITHE,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const RICHARDS_PACIFIC_SE_S = [49.27346, -123.12782];
 const NORTH_OF_HELMCKEN = [49.2772, -123.12214];
@@ -19,14 +19,14 @@ export const RICHARDS = [
     routeNames: [ROUTES.richards.name],
     description: "south tip",
     type: "quiet",
-    videoIds: [VIDEOS.richardsNb.id, VIDEOS.richardsSb.id],
+    videoIds: [ROUTE_VIDEOS.richardsNb.id, ROUTE_VIDEOS.richardsSb.id],
     positions: [RICHARDS_BEACH, [49.27345, -123.12792], RICHARDS_PACIFIC_SE_S],
   },
   {
     routeNames: [ROUTES.richards.name],
     description: "south of helmcken",
     type: "dedicated",
-    videoIds: [VIDEOS.richardsNb.id, VIDEOS.richardsSb.id],
+    videoIds: [ROUTE_VIDEOS.richardsNb.id, ROUTE_VIDEOS.richardsSb.id],
     positions: [
       RICHARDS_PACIFIC_SE_S,
       RICHARDS_PACIFIC_SE,
@@ -41,35 +41,39 @@ export const RICHARDS = [
     description: "little bit north of helmcken",
     type: "dedicated",
     videoIds: [
-      VIDEOS.richardsNb.id,
-      VIDEOS.richardsSb.id,
-      VIDEOS.comoxHelmckenWb.id,
+      ROUTE_VIDEOS.richardsNb.id,
+      ROUTE_VIDEOS.richardsSb.id,
+      ROUTE_VIDEOS.comoxHelmckenWb.id,
     ],
-    videoIdsStartAtEnd: [VIDEOS.comoxHelmckenWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.comoxHelmckenWb.id],
     positions: [RICHARDS_HELMCKEN, NORTH_OF_HELMCKEN],
   },
   {
     routeNames: [ROUTES.richards.name],
     description: "north of helmcken to nelson",
     type: "dedicated",
-    videoIds: [VIDEOS.richardsNb.id, VIDEOS.richardsSb.id],
+    videoIds: [ROUTE_VIDEOS.richardsNb.id, ROUTE_VIDEOS.richardsSb.id],
     positions: [NORTH_OF_HELMCKEN, RICHARDS_NELSON],
   },
   {
     routeNames: [ROUTES.richards.name],
     description: "nelson to smithe",
     type: "dedicated",
-    videoIds: [VIDEOS.richardsNb.id, VIDEOS.richardsSb.id, VIDEOS.smitheEb.id],
-    videoIdsEndAtStart: [VIDEOS.smitheEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.richardsNb.id,
+      ROUTE_VIDEOS.richardsSb.id,
+      ROUTE_VIDEOS.smitheEb.id,
+    ],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.smitheEb.id],
     positions: [RICHARDS_NELSON, RICHARDS_SMITHE],
   },
   {
     routeNames: [ROUTES.richards.name],
     description: "smithe to water",
     type: "dedicated",
-    videoIds: [VIDEOS.richardsSb.id, VIDEOS.richardsNb.id],
-    videoIdsStartAtEnd: [VIDEOS.richardsSb.id],
-    videoIdsEndAtEnd: [VIDEOS.richardsNb.id],
+    videoIds: [ROUTE_VIDEOS.richardsSb.id, ROUTE_VIDEOS.richardsNb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.richardsSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.richardsNb.id],
     positions: [
       RICHARDS_SMITHE,
       [49.28008, -123.11783],

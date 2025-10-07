@@ -6,7 +6,7 @@ import {
   HOWES_EWEN_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const HOWES_BOYD_SW = [49.18983, -122.9487];
 const SB_SHOULDER_END = [49.18957, -122.94825];
@@ -78,7 +78,7 @@ export const HOWES = [
     description: "nb: shared (was lane 10 years ago)",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.howesNb.id],
+    videoIds: [ROUTE_VIDEOS.howesNb.id],
     positions: [
       HOWES_EWEN_SE,
       [49.18639, -122.94672],
@@ -91,7 +91,7 @@ export const HOWES = [
     description: "nb: lane",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.howesNb.id],
+    videoIds: [ROUTE_VIDEOS.howesNb.id],
     positions: [
       NB_LANE_START,
       [49.18802, -122.94805],
@@ -106,8 +106,8 @@ export const HOWES = [
     description: "nb: shoulder",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.howesNb.id],
-    videoIdsEndAtEnd: [VIDEOS.howesNb.id],
+    videoIds: [ROUTE_VIDEOS.howesNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.howesNb.id],
     positions: [
       NB_LANE_END,
       [49.18904, -122.94796],
@@ -126,8 +126,8 @@ export const HOWES = [
     routeNames: [ROUTES.howes.name],
     description: "south of ewen",
     type: "mixed",
-    videoIds: [VIDEOS.howesNb.id],
-    videoIdsStartAtStart: [VIDEOS.howesNb.id],
+    videoIds: [ROUTE_VIDEOS.howesNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.howesNb.id],
     positions: [
       HOWES_DYKE,
       [49.18242, -122.94298],

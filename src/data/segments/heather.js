@@ -23,7 +23,7 @@ import {
   WILLOW_46TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const WILLOW_35TH_SW = [49.23927, -123.12381];
 const WILLOW_33RD_SW = [49.24118, -123.12371];
@@ -98,7 +98,7 @@ export const HEATHER = [
     description: "49th eb 2",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.heatherNb.id],
+    videoIds: [ROUTE_VIDEOS.heatherNb.id],
     positions: [HEATHER_49TH_S, TISDALL_49TH_SW],
   },
   {
@@ -106,14 +106,14 @@ export const HEATHER = [
     description: "49th eb 3",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.heatherSb.id, VIDEOS.cambieSb.id],
+    videoIds: [ROUTE_VIDEOS.heatherSb.id, ROUTE_VIDEOS.cambieSb.id],
     positions: [TISDALL_49TH_SW, TISDALL_49TH_SE],
   },
   {
     description: "49th eb 4",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.cambieSb.id],
+    videoIds: [ROUTE_VIDEOS.cambieSb.id],
     positions: [
       TISDALL_49TH_SE,
       [49.22617, -123.11896],
@@ -133,16 +133,16 @@ export const HEATHER = [
     routeNames: [ROUTES.heather.name],
     description: "kent to marine",
     type: "quiet",
-    videoIds: [VIDEOS.heatherNb.id, VIDEOS.heatherSb.id],
-    videoIdsStartAtStart: [VIDEOS.heatherNb.id],
-    videoIdsEndAtStart: [VIDEOS.heatherSb.id],
+    videoIds: [ROUTE_VIDEOS.heatherNb.id, ROUTE_VIDEOS.heatherSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.heatherNb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.heatherSb.id],
     positions: [HEATHER_KENT_N, [49.20698, -123.12434], HEATHER_MARINE_W_N],
   },
   {
     routeNames: [ROUTES.heather.name],
     description: "marine",
     type: "dedicated",
-    videoIds: [VIDEOS.heatherNb.id, VIDEOS.heatherSb.id],
+    videoIds: [ROUTE_VIDEOS.heatherNb.id, ROUTE_VIDEOS.heatherSb.id],
     positions: [
       HEATHER_MARINE_W_N,
       [49.20724, -123.12431],
@@ -155,7 +155,7 @@ export const HEATHER = [
     routeNames: [ROUTES.heather.name],
     description: "marine to 67th",
     type: "quiet",
-    videoIds: [VIDEOS.heatherNb.id, VIDEOS.heatherSb.id],
+    videoIds: [ROUTE_VIDEOS.heatherNb.id, ROUTE_VIDEOS.heatherSb.id],
     positions: [
       HEATHER_MARINE_E_NN,
       [49.20838, -123.12421],
@@ -168,16 +168,16 @@ export const HEATHER = [
     description: "67 to 64",
     type: "quiet",
     videoIds: [
-      VIDEOS.heatherNb.id,
-      VIDEOS.heatherSb.id,
-      VIDEOS.sixtySeventhPlusWb.id,
+      ROUTE_VIDEOS.heatherNb.id,
+      ROUTE_VIDEOS.heatherSb.id,
+      ROUTE_VIDEOS.sixtySeventhPlusWb.id,
     ],
     positions: [HEATHER_67TH, [49.21136, -123.1241], HEATHER_64TH],
   },
   {
     routeNames: [ROUTES.heather.name],
     description: "64 to 52",
-    videoIds: [VIDEOS.heatherNb.id, VIDEOS.heatherSb.id],
+    videoIds: [ROUTE_VIDEOS.heatherNb.id, ROUTE_VIDEOS.heatherSb.id],
     type: "quiet",
     positions: [
       HEATHER_64TH,
@@ -196,7 +196,7 @@ export const HEATHER = [
     description: "nb to 49th",
     type: "quiet",
     oneWay: "recommended",
-    videoIds: [VIDEOS.heatherNb.id],
+    videoIds: [ROUTE_VIDEOS.heatherNb.id],
     positions: [
       HEATHER_52ND,
       [49.22386, -123.12368],
@@ -209,7 +209,7 @@ export const HEATHER = [
     description: "sb from 49th",
     type: "quiet",
     oneWay: "recommended",
-    videoIds: [VIDEOS.heatherSb.id],
+    videoIds: [ROUTE_VIDEOS.heatherSb.id],
     positions: [
       TISDALL_49TH_SE,
       [49.22537, -123.12091],
@@ -222,22 +222,26 @@ export const HEATHER = [
     routeNames: [ROUTES.heather.name],
     description: "just north of 49th",
     type: "quiet",
-    videoIds: [VIDEOS.heatherNb.id, VIDEOS.heatherSb.id, VIDEOS.cambieSb.id],
-    videoIdsStartAtEnd: [VIDEOS.cambieSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.heatherNb.id,
+      ROUTE_VIDEOS.heatherSb.id,
+      ROUTE_VIDEOS.cambieSb.id,
+    ],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.cambieSb.id],
     positions: [TISDALL_49TH_SW, NORTH_OF_49TH],
   },
   {
     routeNames: [ROUTES.heather.name],
     description: "just north of 49th to 46th",
     type: "quiet",
-    videoIds: [VIDEOS.heatherNb.id, VIDEOS.heatherSb.id],
+    videoIds: [ROUTE_VIDEOS.heatherNb.id, ROUTE_VIDEOS.heatherSb.id],
     positions: [NORTH_OF_49TH, TISDALL_46TH],
   },
   {
     routeNames: [ROUTES.heather.name],
     description: "46th to 37th",
     type: "quiet",
-    videoIds: [VIDEOS.heatherNb.id, VIDEOS.heatherSb.id],
+    videoIds: [ROUTE_VIDEOS.heatherNb.id, ROUTE_VIDEOS.heatherSb.id],
     positions: [
       WILLOW_46TH,
       [49.23053, -123.12336],
@@ -254,7 +258,7 @@ export const HEATHER = [
     routeNames: [ROUTES.heather.name],
     description: "37th to 29th",
     type: "quiet",
-    videoIds: [VIDEOS.heatherSb.id, VIDEOS.heatherNb.id],
+    videoIds: [ROUTE_VIDEOS.heatherSb.id, ROUTE_VIDEOS.heatherNb.id],
     positions: [
       HEATHER_37TH,
       [49.23982, -123.1207],
@@ -271,9 +275,9 @@ export const HEATHER = [
     description: "29th",
     type: "quiet",
     videoIds: [
-      VIDEOS.heatherSb.id,
-      VIDEOS.twentyNinthWb.id,
-      VIDEOS.heatherNb.id,
+      ROUTE_VIDEOS.heatherSb.id,
+      ROUTE_VIDEOS.twentyNinthWb.id,
+      ROUTE_VIDEOS.heatherNb.id,
     ],
     positions: [HEATHER_28TH, HEATHER_29TH],
   },
@@ -281,7 +285,7 @@ export const HEATHER = [
     routeNames: [ROUTES.heather.name],
     description: "28th to 14th",
     type: "quiet",
-    videoIds: [VIDEOS.heatherSb.id, VIDEOS.heatherNb.id],
+    videoIds: [ROUTE_VIDEOS.heatherSb.id, ROUTE_VIDEOS.heatherNb.id],
     positions: [
       HEATHER_28TH,
       [49.2471, -123.12045],
@@ -301,10 +305,10 @@ export const HEATHER = [
     description: "14th",
     type: "quiet",
     videoIds: [
-      VIDEOS.heatherSb.id,
-      VIDEOS.fourteenthEb.id,
-      VIDEOS.heatherNb.id,
-      VIDEOS.fourteenthWb.id,
+      ROUTE_VIDEOS.heatherSb.id,
+      ROUTE_VIDEOS.fourteenthEb.id,
+      ROUTE_VIDEOS.heatherNb.id,
+      ROUTE_VIDEOS.fourteenthWb.id,
     ],
     positions: [HEATHER_14TH_S, HEATHER_14TH_N],
   },
@@ -312,7 +316,7 @@ export const HEATHER = [
     routeNames: [ROUTES.heather.name],
     description: "14th to 7th",
     type: "quiet",
-    videoIds: [VIDEOS.heatherSb.id, VIDEOS.heatherNb.id],
+    videoIds: [ROUTE_VIDEOS.heatherSb.id, ROUTE_VIDEOS.heatherNb.id],
     positions: [
       HEATHER_14TH_N,
       [49.2595, -123.12003],

@@ -11,7 +11,7 @@ import {
   CARRALL_PENDER_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const TAYLOR_PENDER = [49.28079, -123.10559];
 
@@ -30,9 +30,9 @@ export const PENDER = [
     description: "eb",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.penderEb.id],
-    videoIdsStartAtStart: [VIDEOS.penderEb.id],
-    videoIdsEndAtEnd: [VIDEOS.penderEb.id],
+    videoIds: [ROUTE_VIDEOS.penderEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.penderEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.penderEb.id],
     positions: [
       CAMBIE_PENDER_SE,
       [49.28137, -123.10963],
@@ -56,8 +56,8 @@ export const PENDER = [
     description: "wb no lane",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.penderWb.id],
-    videoIdsStartAtStart: [VIDEOS.penderWb.id],
+    videoIds: [ROUTE_VIDEOS.penderWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.penderWb.id],
     positions: [CARRALL_PENDER_NE, CARRALL_PENDER_NW, TAYLOR_PENDER],
   },
   {
@@ -65,8 +65,8 @@ export const PENDER = [
     description: "wb lane",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.penderWb.id],
-    videoIdsEndAtEnd: [VIDEOS.penderWb.id],
+    videoIds: [ROUTE_VIDEOS.penderWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.penderWb.id],
     positions: [
       TAYLOR_PENDER,
       [49.28115, -123.10756],

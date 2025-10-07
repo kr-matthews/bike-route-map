@@ -7,7 +7,7 @@ import {
   RICHARDS_NELSON,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const BURRARD_NELSON = [49.2812, -123.12604];
 const CAMBIE_NELSON_SW = [49.27604, -123.11817];
@@ -17,9 +17,9 @@ export const NELSON = [
     description: "nelson unofficial part",
     oneWay: "required",
     type: "shared",
-    videoIds: [VIDEOS.cambieBridgeNelsonSb.id],
+    videoIds: [ROUTE_VIDEOS.cambieBridgeNelsonSb.id],
     undesignated: true,
-    videoIdsStartAtStart: [VIDEOS.cambieBridgeNelsonSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.cambieBridgeNelsonSb.id],
     positions: [
       BUTE_NELSON,
       [49.2825, -123.12801],
@@ -37,7 +37,7 @@ export const NELSON = [
     oneWay: "required",
     type: "dedicated",
     description: "richards to cambie",
-    videoIds: [VIDEOS.cambieBridgeNelsonSb.id],
+    videoIds: [ROUTE_VIDEOS.cambieBridgeNelsonSb.id],
     positions: [
       RICHARDS_NELSON,
       HOMER_NELSON,
@@ -52,8 +52,8 @@ export const NELSON = [
     type: "dedicated",
     description: "cambie to beatty",
     elevation: 0.5,
-    videoIds: [VIDEOS.cambieBridgeNelsonSb.id, VIDEOS.beattyNb.id],
-    videoIdsStartAtStart: [VIDEOS.beattyNb.id],
+    videoIds: [ROUTE_VIDEOS.cambieBridgeNelsonSb.id, ROUTE_VIDEOS.beattyNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.beattyNb.id],
     positions: [CAMBIE_NELSON_SW, BEATTY_NELSON_SW],
   },
   {
@@ -64,9 +64,9 @@ export const NELSON = [
     hideArrows: true,
     elevation: 0.5,
     videoIds: [
-      VIDEOS.cambieBridgeNelsonSb.id,
-      VIDEOS.cambieBridgeSb.id,
-      VIDEOS.beattyNb.id,
+      ROUTE_VIDEOS.cambieBridgeNelsonSb.id,
+      ROUTE_VIDEOS.cambieBridgeSb.id,
+      ROUTE_VIDEOS.beattyNb.id,
     ],
     positions: [BEATTY_NELSON_SW, BEATTY_NELSON_SE],
   },

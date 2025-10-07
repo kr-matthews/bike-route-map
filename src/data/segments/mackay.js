@@ -8,7 +8,7 @@ import {
   MACKAY_SPIRIT,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const CROSSWALK_WW = [49.32183, -123.10232];
 const CROSSWALK_W = [49.32182, -123.10228];
@@ -59,8 +59,8 @@ export const MACKAY = [
     routeNames: [ROUTES.mackay.name],
     description: "spirit to 15th bridge",
     type: "mixed",
-    videoIds: [VIDEOS.mackaySb.id],
-    videoIdsEndAtStart: [VIDEOS.mackaySb.id],
+    videoIds: [ROUTE_VIDEOS.mackaySb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.mackaySb.id],
     positions: [
       MACKAY_SPIRIT,
       [49.31825, -123.10248],
@@ -77,9 +77,9 @@ export const MACKAY = [
     routeNames: [ROUTES.mackay.name],
     description: "15th bridge to marine",
     type: "mixed",
-    videoIds: [VIDEOS.mackaySb.id, VIDEOS.fifteenthEb.id],
-    videoIdsStartAtEnd: [VIDEOS.mackaySb.id],
-    videoIdsEndAtEnd: [VIDEOS.fifteenthEb.id],
+    videoIds: [ROUTE_VIDEOS.mackaySb.id, ROUTE_VIDEOS.fifteenthEb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.mackaySb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.fifteenthEb.id],
     positions: [
       MACKAY_15TH,
       CROSSWALK_WW,

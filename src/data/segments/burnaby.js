@@ -5,16 +5,16 @@ import {
   CARDERO_BURNABY,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const BURNABY = [
   {
     routeNames: [ROUTES.burnaby.name],
     description: "primary",
     type: "quiet",
-    videoIds: [VIDEOS.burnabyEb.id, VIDEOS.burnabyWb.id],
-    videoIdsStartAtStart: [VIDEOS.burnabyEb.id],
-    videoIdsEndAtStart: [VIDEOS.burnabyWb.id],
+    videoIds: [ROUTE_VIDEOS.burnabyEb.id, ROUTE_VIDEOS.burnabyWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.burnabyEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.burnabyWb.id],
     positions: [
       CARDERO_BURNABY,
       [49.28375, -123.13854],
@@ -29,8 +29,8 @@ export const BURNABY = [
     routeNames: [ROUTES.burnaby.name],
     description: "crossing burrard",
     type: "quiet",
-    videoIds: [VIDEOS.burnabyWb.id, VIDEOS.burrardNb.id],
-    videoIdsEndAtStart: [VIDEOS.burrardNb.id],
+    videoIds: [ROUTE_VIDEOS.burnabyWb.id, ROUTE_VIDEOS.burrardNb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.burrardNb.id],
     positions: [BURRARD_BURNABY_W, BURRARD_BURNABY_E],
   },
 ];

@@ -4,7 +4,7 @@ import {
   TENTH_7TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const TENTH_DUBLIN = [49.21395, -122.93233];
 const TWENTIETH_LONDON_S_E = [49.20478, -122.95072];
@@ -27,8 +27,8 @@ export const LONDON_DUBLIN_GREENWAY = [
     routeNames: [ROUTES.londonDublin.name],
     description: "bc parkway to twentieth",
     type: "quiet",
-    videoIds: [VIDEOS.londonDublinEb.id],
-    videoIdsStartAtStart: [VIDEOS.londonDublinEb.id],
+    videoIds: [ROUTE_VIDEOS.londonDublinEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.londonDublinEb.id],
     positions: [
       BC_PARKWAY_LONDON,
       [49.20168, -122.95648],
@@ -41,15 +41,15 @@ export const LONDON_DUBLIN_GREENWAY = [
     routeNames: [ROUTES.londonDublin.name],
     description: "along twentieth",
     type: "combined",
-    videoIds: [VIDEOS.londonDublinEb.id],
+    videoIds: [ROUTE_VIDEOS.londonDublinEb.id],
     positions: [TWENTIETH_LONDON_S_E, TWENTIETH_LONDON_N_E],
   },
   {
     routeNames: [ROUTES.londonDublin.name],
     description: "twentieth to eighth",
     type: "quiet",
-    videoIds: [VIDEOS.londonDublinEb.id],
-    videoIdsEndAtEnd: [VIDEOS.londonDublinEb.id],
+    videoIds: [ROUTE_VIDEOS.londonDublinEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.londonDublinEb.id],
     positions: [
       TWENTIETH_LONDON_N_E,
       [49.20625, -122.94889],

@@ -1,14 +1,14 @@
 import { NELSON_BC_PARKWAY_W, NELSON_BENNETT_SW } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const NELSON_AVE = [
   {
     routeNames: [ROUTES.nelsonAve.name],
     description: "all",
     type: "mixed",
-    videoIds: [VIDEOS.nelsonPathSb.id],
-    videoIdsEndAtStart: [VIDEOS.nelsonPathSb.id],
+    videoIds: [ROUTE_VIDEOS.nelsonPathSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.nelsonPathSb.id],
     positions: [
       NELSON_BC_PARKWAY_W,
       [49.2218, -122.99428],

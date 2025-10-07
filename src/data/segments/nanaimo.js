@@ -5,7 +5,7 @@ import {
   NANAIMO_PANDORA_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const NANAIMO_CHARLES_E = [49.27295, -123.05651];
 const NANAIMO_CHARLES_W = [49.27295, -123.05669];
@@ -40,9 +40,9 @@ export const NANAIMO = [
     description: "nb",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.nanaimoNb.id],
-    videoIdsStartAtStart: [VIDEOS.nanaimoNb.id],
-    videoIdsEndAtEnd: [VIDEOS.nanaimoNb.id],
+    videoIds: [ROUTE_VIDEOS.nanaimoNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.nanaimoNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.nanaimoNb.id],
     positions: [
       [49.26855, -123.05648],
       [49.26941, -123.05648],
@@ -64,7 +64,7 @@ export const NANAIMO = [
     description: "sb",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.nanaimoSb.id],
+    videoIds: [ROUTE_VIDEOS.nanaimoSb.id],
     positions: [
       NANAIMO_PANDORA_W,
       [49.28208, -123.05668],
@@ -85,8 +85,8 @@ export const NANAIMO = [
     description: "leaving via 2nd",
     type: "quiet",
     undesignated: true,
-    videoIds: [VIDEOS.nanaimoSb.id],
-    videoIdsEndAtStart: [VIDEOS.nanaimoSb.id],
+    videoIds: [ROUTE_VIDEOS.nanaimoSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.nanaimoSb.id],
     positions: [[49.26861, -123.05803], [49.2686, -123.05672], NANAIMO_2ND_W],
   },
 ];

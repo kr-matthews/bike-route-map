@@ -15,7 +15,7 @@ import {
   SPERLING_WINSTON,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const SPERLING_KNEALE = [49.26096, -122.96453];
 const SPERLING_BROADWAY_SE = [49.26151, -122.96455];
@@ -27,8 +27,8 @@ export const LAKES = [
     routeNames: [ROUTES.lakes.name],
     description: "southeast to midtown",
     type: "quiet",
-    videoIds: [VIDEOS.lakesNb.id],
-    videoIdsStartAtStart: [VIDEOS.lakesNb.id],
+    videoIds: [ROUTE_VIDEOS.lakesNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.lakesNb.id],
     positions: [
       MARY_12TH,
       [49.21697, -122.93885],
@@ -142,7 +142,7 @@ export const LAKES = [
     routeNames: [ROUTES.lakes.name],
     description: "kensington to joe sakic",
     type: "quiet",
-    videoIds: [VIDEOS.lakesNb.id],
+    videoIds: [ROUTE_VIDEOS.lakesNb.id],
     positions: [
       KENSINGTON_SPROTT_W,
       KENSINGTON_SPROTT_E,
@@ -155,7 +155,7 @@ export const LAKES = [
     routeNames: [ROUTES.lakes.name],
     description: "joe sakic to cvg",
     type: "mixed",
-    videoIds: [VIDEOS.lakesNb.id],
+    videoIds: [ROUTE_VIDEOS.lakesNb.id],
     positions: [
       SPERLING_JOE_SAKIC_N,
       [49.25465, -122.96467],
@@ -169,7 +169,7 @@ export const LAKES = [
     routeNames: [ROUTES.lakes.name],
     description: "cvg to lougheed",
     type: "mixed",
-    videoIds: [VIDEOS.lakesNb.id],
+    videoIds: [ROUTE_VIDEOS.lakesNb.id],
     positions: [
       SPERLING_WINSTON,
       [49.25827, -122.96436],
@@ -187,7 +187,7 @@ export const LAKES = [
     routeNames: [ROUTES.lakes.name],
     description: "sperling bad sidewalk",
     type: "other",
-    videoIds: [VIDEOS.lakesNb.id],
+    videoIds: [ROUTE_VIDEOS.lakesNb.id],
     positions: [
       SPERLING_LOUGHEED_NE,
       [49.25978, -122.96446],
@@ -202,7 +202,7 @@ export const LAKES = [
     routeNames: [ROUTES.lakes.name],
     description: "sperling better sidewalk",
     type: "mixed",
-    videoIds: [VIDEOS.lakesNb.id],
+    videoIds: [ROUTE_VIDEOS.lakesNb.id],
     positions: [
       SPERLING_KNEALE,
       [49.26134, -122.96472],
@@ -214,7 +214,7 @@ export const LAKES = [
   {
     description: "sperling old shared",
     type: "shared",
-    videoIds: [VIDEOS.lakesNb.id],
+    videoIds: [ROUTE_VIDEOS.lakesNb.id],
     undesignated: true,
     positions: [
       SPERLING_BROADWAY_SE,
@@ -240,7 +240,7 @@ export const LAKES = [
     routeNames: [ROUTES.lakes.name],
     description: "sperling to union",
     type: "quiet",
-    videoIds: [VIDEOS.lakesNb.id],
+    videoIds: [ROUTE_VIDEOS.lakesNb.id],
     positions: [
       SPERLING_ADAIR_E,
       [49.26436, -122.95912],
@@ -258,7 +258,7 @@ export const LAKES = [
     routeNames: [ROUTES.lakes.name, ROUTES.francesUnion.name],
     description: "north of union",
     type: "quiet",
-    videoIds: [VIDEOS.lakesNb.id, VIDEOS.francesUnionWb.id],
+    videoIds: [ROUTE_VIDEOS.lakesNb.id, ROUTE_VIDEOS.francesUnionWb.id],
     positions: [CLIFF_UNION, [49.27974, -122.95894], CLIFF_BRUNETTE_FRASER],
   },
 ];

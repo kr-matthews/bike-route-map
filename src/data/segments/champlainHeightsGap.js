@@ -1,6 +1,6 @@
 import { BOUNDARY_RUMBLE_NE, VIVIAN_57TH } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const CHAMPLAIN_MAQUINNA = [49.21569, -123.03031];
 const MATHESON_BIRCH = [49.21641, -123.02513];
@@ -13,10 +13,10 @@ export const CHAMPLAIN_HEIGHTS_GAP = [
     type: "quiet",
     undesignated: true,
     videoIds: [
-      VIDEOS.champlainHeightsGapEb.id,
-      VIDEOS.champlainHeightsGapWb.id,
+      ROUTE_VIDEOS.champlainHeightsGapEb.id,
+      ROUTE_VIDEOS.champlainHeightsGapWb.id,
     ],
-    videoIdsEndAtStart: [VIDEOS.champlainHeightsGapWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.champlainHeightsGapWb.id],
     positions: [
       VIVIAN_57TH,
       [49.21809, -123.04943],
@@ -60,7 +60,7 @@ export const CHAMPLAIN_HEIGHTS_GAP = [
     description: "shared part extra",
     type: "shared",
     undesignated: true,
-    videoIds: [VIDEOS.champlainHeightsGapWb.id],
+    videoIds: [ROUTE_VIDEOS.champlainHeightsGapWb.id],
     positions: [
       CHAMPLAIN_MAQUINNA,
       [49.216, -123.0305],
@@ -97,7 +97,7 @@ export const CHAMPLAIN_HEIGHTS_GAP = [
     description: "path",
     type: "mixed",
     undesignated: true,
-    videoIds: [VIDEOS.champlainHeightsGapEb.id],
+    videoIds: [ROUTE_VIDEOS.champlainHeightsGapEb.id],
     positions: [
       CHAMPLAIN_MAQUINNA,
       [49.21577, -123.03023],
@@ -128,10 +128,10 @@ export const CHAMPLAIN_HEIGHTS_GAP = [
     type: "shared",
     undesignated: true,
     videoIds: [
-      VIDEOS.champlainHeightsGapWb.id,
-      VIDEOS.champlainHeightsGapEb.id,
+      ROUTE_VIDEOS.champlainHeightsGapWb.id,
+      ROUTE_VIDEOS.champlainHeightsGapEb.id,
     ],
-    videoIdsEndAtEnd: [VIDEOS.champlainHeightsGapEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.champlainHeightsGapEb.id],
     positions: [
       MATHESON_BIRCH,
       [49.21615, -123.02518],
@@ -148,9 +148,9 @@ export const CHAMPLAIN_HEIGHTS_GAP = [
     description: "at boundary",
     type: "other",
     undesignated: true,
-    videoIds: [VIDEOS.champlainHeightsGapWb.id, VIDEOS.rumbleEb.id],
-    videoIdsStartAtEnd: [VIDEOS.champlainHeightsGapWb.id],
-    videoIdsStartAtStart: [VIDEOS.rumbleEb.id],
+    videoIds: [ROUTE_VIDEOS.champlainHeightsGapWb.id, ROUTE_VIDEOS.rumbleEb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.champlainHeightsGapWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.rumbleEb.id],
     positions: [BOUNDARY_RUMBLE_W, [49.21489, -123.02386], BOUNDARY_RUMBLE_NE],
   },
 ];

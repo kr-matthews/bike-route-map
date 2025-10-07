@@ -6,7 +6,7 @@ import {
   STEPHENS_YORK,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const MAPLE_YORK_SE = [49.2716, -123.15019];
 
@@ -15,7 +15,7 @@ export const YORK = [
     routeNames: [ROUTES.york.name, ROUTES.seasideBypass.name],
     description: "stephens to maple",
     type: "quiet",
-    videoIds: [VIDEOS.yorkEb.id, VIDEOS.yorkWb.id],
+    videoIds: [ROUTE_VIDEOS.yorkEb.id, ROUTE_VIDEOS.yorkWb.id],
     positions: [
       STEPHENS_YORK,
       [49.27189, -123.1645],
@@ -33,21 +33,21 @@ export const YORK = [
     routeNames: [ROUTES.york.name, ROUTES.seasideBypass.name],
     description: "maple to cypress",
     type: "dedicated",
-    videoIds: [VIDEOS.yorkWb.id, VIDEOS.yorkEb.id],
+    videoIds: [ROUTE_VIDEOS.yorkWb.id, ROUTE_VIDEOS.yorkEb.id],
     positions: [MAPLE_YORK_SE, CYPRESS_YORK_SW, CYPRESS_YORK_SE],
   },
   {
     routeNames: [ROUTES.york.name],
     description: "cypress to chestnut",
     type: "dedicated",
-    videoIds: [VIDEOS.yorkWb.id, VIDEOS.yorkEb.id],
+    videoIds: [ROUTE_VIDEOS.yorkWb.id, ROUTE_VIDEOS.yorkEb.id],
     positions: [CYPRESS_YORK_SE, CHESTNUT_YORK],
   },
   {
     routeNames: [ROUTES.york.name],
     description: "chestnut to burrard",
     type: "dedicated",
-    videoIds: [VIDEOS.yorkWb.id],
+    videoIds: [ROUTE_VIDEOS.yorkWb.id],
     positions: [
       CHESTNUT_YORK,
       [49.27153, -123.14593],

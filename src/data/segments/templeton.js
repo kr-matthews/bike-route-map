@@ -18,7 +18,7 @@ import {
   TEMPLETON_TEMPLETON_STATION_SE_SE,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const TEMPLETON_MILLER_NW = [49.1923, -123.15089];
 
@@ -39,9 +39,9 @@ export const TEMPLETON = [
     description: "nb",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.templetonNb.id],
-    videoIdsStartAtStart: [VIDEOS.templetonNb.id],
-    videoIdsEndAtEnd: [VIDEOS.templetonNb.id],
+    videoIds: [ROUTE_VIDEOS.templetonNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.templetonNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.templetonNb.id],
     positions: [
       TEMPLETON_MILLER_SE,
       [49.19228, -123.15058],
@@ -82,9 +82,9 @@ export const TEMPLETON = [
     description: "sb crossing grauer",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.templetonSb.id, VIDEOS.fergusonEb.id],
-    videoIdsStartAtStart: [VIDEOS.templetonSb.id],
-    videoIdsEndAtEnd: [VIDEOS.fergusonEb.id],
+    videoIds: [ROUTE_VIDEOS.templetonSb.id, ROUTE_VIDEOS.fergusonEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.templetonSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.fergusonEb.id],
     positions: [TEMPLETON_GRAUER_NW, TEMPLETON_GRAUER_SW],
   },
   {
@@ -92,7 +92,7 @@ export const TEMPLETON = [
     description: "sb",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.templetonSb.id],
+    videoIds: [ROUTE_VIDEOS.templetonSb.id],
     positions: [
       TEMPLETON_GRAUER_SW,
       [49.19905, -123.1493],
@@ -133,8 +133,8 @@ export const TEMPLETON = [
     routeNames: [ROUTES.templeton.name],
     description: "crossing miller/templeton",
     type: "mixed",
-    videoIds: [VIDEOS.templetonSb.id],
-    videoIdsEndAtEnd: [VIDEOS.templetonSb.id],
+    videoIds: [ROUTE_VIDEOS.templetonSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.templetonSb.id],
     positions: [
       TEMPLETON_MILLER_NW,
       [49.19205, -123.15088],

@@ -4,7 +4,7 @@ import {
   WEST_DYKE_WILLIAMS,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const WEST_DYKE_S = [49.12704, -123.19507];
 const WEST_DYKE_MIDDLE_ARM_W = [49.17542, -123.19536];
@@ -13,8 +13,8 @@ export const WEST_DYKE = [
   {
     description: "from parking lot",
     type: "quiet",
-    videoIds: [VIDEOS.westDykeNb.id, VIDEOS.imperialLandingWb.id],
-    videoIdsEndAtEnd: [VIDEOS.imperialLandingWb.id],
+    videoIds: [ROUTE_VIDEOS.westDykeNb.id, ROUTE_VIDEOS.imperialLandingWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.imperialLandingWb.id],
     positions: [
       WEST_DYKE_CHATHAM,
       [49.12642, -123.19376],
@@ -28,7 +28,7 @@ export const WEST_DYKE = [
     routeNames: [ROUTES.westDyke.name],
     description: "all",
     type: "mixed",
-    videoIds: [VIDEOS.westDykeNb.id],
+    videoIds: [ROUTE_VIDEOS.westDykeNb.id],
     positions: [
       WEST_DYKE_S,
       [49.12725, -123.19536],
@@ -109,9 +109,9 @@ export const WEST_DYKE = [
   {
     description: "link between trails",
     type: "mixed",
-    videoIds: [VIDEOS.middleArmEb.id, VIDEOS.westDykeNb.id],
-    videoIdsStartAtStart: [VIDEOS.middleArmEb.id],
-    videoIdsEndAtEnd: [VIDEOS.westDykeNb.id],
+    videoIds: [ROUTE_VIDEOS.middleArmEb.id, ROUTE_VIDEOS.westDykeNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.middleArmEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.westDykeNb.id],
     positions: [
       WEST_DYKE_MIDDLE_ARM_W,
       [49.1754, -123.19527],

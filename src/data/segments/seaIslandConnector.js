@@ -6,7 +6,7 @@ import {
   TEMPLETON_GRANT_MCCONACHIE_NE_N,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const MOREY_SEA_ISLAND_CONNECTOR_E = [49.1922, -123.13425];
 const MOREY_SEA_ISLAND_CONNECTOR_W = [49.19271, -123.13878];
@@ -21,8 +21,8 @@ export const SEA_ISLAND_CONNECTOR = [
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.seaIslandConnectorWb.id],
-    videoIdsStartAtStart: [VIDEOS.seaIslandConnectorWb.id],
+    videoIds: [ROUTE_VIDEOS.seaIslandConnectorWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.seaIslandConnectorWb.id],
     positions: [
       NO_3_BRIDGEPORT,
       [49.19206, -123.12976],
@@ -38,7 +38,7 @@ export const SEA_ISLAND_CONNECTOR = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
-    videoIds: [VIDEOS.seaIslandConnectorWb.id],
+    videoIds: [ROUTE_VIDEOS.seaIslandConnectorWb.id],
     positions: [MOREY_SEA_ISLAND_CONNECTOR_E, MOREY_SEA_ISLAND_CONNECTOR_W],
   },
   {
@@ -47,7 +47,7 @@ export const SEA_ISLAND_CONNECTOR = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.seaIslandConnectorWb.id],
+    videoIds: [ROUTE_VIDEOS.seaIslandConnectorWb.id],
     positions: [
       MOREY_SEA_ISLAND_CONNECTOR_W,
       [49.19276, -123.13905],

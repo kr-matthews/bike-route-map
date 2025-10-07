@@ -9,7 +9,7 @@ import {
   COLUMBIA_CUMBERLAND_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const BRUNETTE_RIVER_CUMBERLAND_W = [49.22047, -122.89195];
 const BRUNETTE_RIVER_CUMBERLAND_E = [49.22047, -122.89149];
@@ -118,8 +118,8 @@ export const BRUNETTE_FRASER = [
     routeNames: [ROUTES.brunetteFraser.name],
     description: "sapperton to landing",
     type: "mixed",
-    videoIds: [VIDEOS.brunetteFraserSb.id],
-    videoIdsEndAtStart: [VIDEOS.brunetteFraserSb.id],
+    videoIds: [ROUTE_VIDEOS.brunetteFraserSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.brunetteFraserSb.id],
     positions: [
       [49.21237, -122.89543],
       [49.21347, -122.89468],
@@ -138,7 +138,7 @@ export const BRUNETTE_FRASER = [
     description: "sapperton landing to cumberland",
     type: "quiet",
     elevation: 0.5,
-    videoIds: [VIDEOS.brunetteFraserSb.id],
+    videoIds: [ROUTE_VIDEOS.brunetteFraserSb.id],
     positions: [
       SAPPERTON_LANDING,
       [49.21926, -122.89266],
@@ -152,7 +152,7 @@ export const BRUNETTE_FRASER = [
     routeNames: [ROUTES.brunetteFraser.name],
     description: "cumberland crossing brunette river",
     elevation: 1,
-    videoIds: [VIDEOS.brunetteFraserSb.id],
+    videoIds: [ROUTE_VIDEOS.brunetteFraserSb.id],
     positions: [BRUNETTE_RIVER_CUMBERLAND_W, BRUNETTE_RIVER_CUMBERLAND_E],
   },
   {
@@ -160,7 +160,7 @@ export const BRUNETTE_FRASER = [
     description: "cumberland to spruce",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [VIDEOS.brunetteFraserSb.id],
+    videoIds: [ROUTE_VIDEOS.brunetteFraserSb.id],
     positions: [
       BRUNETTE_RIVER_CUMBERLAND_E,
       [49.22076, -122.89136],
@@ -178,7 +178,7 @@ export const BRUNETTE_FRASER = [
     description: "spruce to canfor",
     type: "quiet",
     elevation: 0.5,
-    videoIds: [VIDEOS.brunetteFraserSb.id],
+    videoIds: [ROUTE_VIDEOS.brunetteFraserSb.id],
     positions: [
       BRUNETTE_RIVER_SPRUCE_E,
       [49.22377, -122.88831],
@@ -208,7 +208,7 @@ export const BRUNETTE_FRASER = [
     description: "canfor crossing brunette",
     type: "quiet",
     elevation: 1,
-    videoIds: [VIDEOS.brunetteFraserSb.id],
+    videoIds: [ROUTE_VIDEOS.brunetteFraserSb.id],
     positions: [CANFOR_BRUNETTE_RIVER_S, CANFOR_BRUNETTE_RIVER_N],
   },
   {
@@ -216,7 +216,7 @@ export const BRUNETTE_FRASER = [
     description: "canfor just before braid",
     type: "quiet",
     elevation: 0.5,
-    videoIds: [VIDEOS.brunetteFraserSb.id],
+    videoIds: [ROUTE_VIDEOS.brunetteFraserSb.id],
     positions: [
       CANFOR_BRUNETTE_RIVER_N,
       [49.22902, -122.8793],
@@ -229,12 +229,12 @@ export const BRUNETTE_FRASER = [
     description: "braid to cvg",
     type: "mixed",
     videoIds: [
-      VIDEOS.brunetteFraserSb.id,
-      VIDEOS.unitedEB.id,
-      VIDEOS.unitedWB.id,
+      ROUTE_VIDEOS.brunetteFraserSb.id,
+      ROUTE_VIDEOS.unitedEB.id,
+      ROUTE_VIDEOS.unitedWB.id,
     ],
-    videoIdsStartAtEnd: [VIDEOS.unitedEB.id],
-    videoIdsEndAtEnd: [VIDEOS.unitedWB.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.unitedEB.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.unitedWB.id],
     positions: [
       CANFOR_BRAID,
       [49.22992, -122.87879],
@@ -282,7 +282,7 @@ export const BRUNETTE_FRASER = [
   {
     routeNames: [ROUTES.brunetteFraser.name],
     description: "cariboo to cliff",
-    videoIds: [VIDEOS.brunetteFraserSb.id],
+    videoIds: [ROUTE_VIDEOS.brunetteFraserSb.id],
     positions: [
       CARIBOO_GOVERNMENT,
       [49.25065, -122.91355],

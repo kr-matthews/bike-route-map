@@ -7,7 +7,7 @@ import {
   RENFREW_PANDORA,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const GARDEN_PANDORA = [49.28301, -123.05779];
 
@@ -16,7 +16,7 @@ export const PANDORA = [
     routeNames: [ROUTES.pandora.name],
     description: "west of garden",
     type: "quiet",
-    videoIds: [VIDEOS.pandoraWb.id, VIDEOS.pandoraEb.id],
+    videoIds: [ROUTE_VIDEOS.pandoraWb.id, ROUTE_VIDEOS.pandoraEb.id],
     positions: [
       MCLEAN_FRANKLIN,
       [49.28221, -123.07262],
@@ -34,17 +34,21 @@ export const PANDORA = [
     routeNames: [ROUTES.pandora.name],
     description: "garden to nanaimo",
     type: "quiet",
-    videoIds: [VIDEOS.pandoraWb.id, VIDEOS.pandoraEb.id, VIDEOS.nanaimoSb.id],
-    videoIdsStartAtStart: [VIDEOS.nanaimoSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.pandoraWb.id,
+      ROUTE_VIDEOS.pandoraEb.id,
+      ROUTE_VIDEOS.nanaimoSb.id,
+    ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.nanaimoSb.id],
     positions: [GARDEN_PANDORA, NANAIMO_PANDORA_W],
   },
   {
     routeNames: [ROUTES.pandora.name],
     description: "east of nanaimo",
     type: "quiet",
-    videoIds: [VIDEOS.pandoraWb.id, VIDEOS.pandoraEb.id],
-    videoIdsStartAtEnd: [VIDEOS.pandoraWb.id],
-    videoIdsEndAtEnd: [VIDEOS.pandoraEb.id],
+    videoIds: [ROUTE_VIDEOS.pandoraWb.id, ROUTE_VIDEOS.pandoraEb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.pandoraWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.pandoraEb.id],
     positions: [
       NANAIMO_PANDORA_W,
       NANAIMO_PANDORA_E,

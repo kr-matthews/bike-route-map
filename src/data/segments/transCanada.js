@@ -5,7 +5,7 @@ import {
   TRANS_CANADA_FRANCES_UNION_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const UNDER_BRIDGE = [49.29225, -123.02588];
 const WILLINGDON_CAMBRIDGE = [49.28651, -123.00309];
@@ -20,8 +20,8 @@ export const TRANS_CANADA = [
     routeNames: [ROUTES.transCanadaTrail.name],
     description: "from bridgeway",
     type: "mixed",
-    videoIds: [VIDEOS.seaToRiverNb.id],
-    videoIdsEndAtStart: [VIDEOS.seaToRiverNb.id],
+    videoIds: [ROUTE_VIDEOS.seaToRiverNb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.seaToRiverNb.id],
     positions: [
       SKEENA_BRIDGEWAY,
       [49.29081, -123.02836],
@@ -35,7 +35,7 @@ export const TRANS_CANADA = [
     routeNames: [ROUTES.transCanadaTrail.name],
     description: "~second narrows bridge to sea to river",
     type: "other",
-    videoIds: [VIDEOS.seaToRiverNb.id],
+    videoIds: [ROUTE_VIDEOS.seaToRiverNb.id],
     positions: [
       UNDER_BRIDGE,
       [49.29233, -123.02564],

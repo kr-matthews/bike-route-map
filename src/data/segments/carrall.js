@@ -14,7 +14,7 @@ import {
   CARRALL_SEAWALL,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const SEAWALL_SPLIT = [49.27653, -123.1065];
 const NORTH_SPLIT = [49.28302, -123.10426];
@@ -23,16 +23,16 @@ export const CARRALL = [
   {
     routeNames: [ROUTES.carrall.name],
     description: "seawall end",
-    videoIds: [VIDEOS.carrallNb.id, VIDEOS.carrallSb.id],
-    videoIdsStartAtStart: [VIDEOS.carrallNb.id],
-    videoIdsEndAtStart: [VIDEOS.carrallSb.id],
+    videoIds: [ROUTE_VIDEOS.carrallNb.id, ROUTE_VIDEOS.carrallSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.carrallNb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.carrallSb.id],
     positions: [CARRALL_SEAWALL, [49.27596, -123.10653], SEAWALL_SPLIT],
   },
   {
     routeNames: [ROUTES.carrall.name],
     description: "nb",
     oneWay: "required",
-    videoIds: [VIDEOS.carrallNb.id],
+    videoIds: [ROUTE_VIDEOS.carrallNb.id],
     positions: [
       SEAWALL_SPLIT,
       [49.27664, -123.10639],
@@ -68,7 +68,7 @@ export const CARRALL = [
     routeNames: [ROUTES.carrall.name],
     description: "sb",
     oneWay: "required",
-    videoIds: [VIDEOS.carrallSb.id],
+    videoIds: [ROUTE_VIDEOS.carrallSb.id],
     positions: [
       NORTH_SPLIT,
       [49.28296, -123.10434],
@@ -106,14 +106,14 @@ export const CARRALL = [
     routeNames: [ROUTES.carrall.name],
     description: "north end",
     videoIds: [
-      VIDEOS.carrallSb.id,
-      VIDEOS.carrallNb.id,
-      VIDEOS.alexanderEb.id,
-      VIDEOS.alexanderWb.id,
+      ROUTE_VIDEOS.carrallSb.id,
+      ROUTE_VIDEOS.carrallNb.id,
+      ROUTE_VIDEOS.alexanderEb.id,
+      ROUTE_VIDEOS.alexanderWb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.alexanderEb.id],
-    videoIdsEndAtStart: [VIDEOS.alexanderWb.id],
-    videoIdsEndAtEnd: [VIDEOS.carrallNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.alexanderEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.alexanderWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.carrallNb.id],
     positions: [NORTH_SPLIT, [49.28323, -123.10422], ALEXANDER_POWELL],
   },
 ];

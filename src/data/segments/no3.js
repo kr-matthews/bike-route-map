@@ -9,7 +9,7 @@ import {
   NO_3_SEA_ISLAND_SW_S_PRE,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const PRE_NO_3_COOK = [49.16655, -123.1349];
 const NO_3_COOK_NE = [49.16656, -123.13644];
@@ -30,8 +30,8 @@ export const NO_3 = [
     type: "shared",
     oneWay: "recommended",
     undesignated: true,
-    videoIds: [VIDEOS.no3Nb.id],
-    videoIdsStartAtStart: [VIDEOS.no3Nb.id],
+    videoIds: [ROUTE_VIDEOS.no3Nb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.no3Nb.id],
     positions: [
       BUSWELL_GRANVILLE_N,
       [49.16349, -123.13375],
@@ -46,7 +46,7 @@ export const NO_3 = [
     description: "cook wb",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.no3Nb.id],
+    videoIds: [ROUTE_VIDEOS.no3Nb.id],
     positions: [
       PRE_NO_3_COOK,
       [49.16657, -123.13504],
@@ -59,7 +59,7 @@ export const NO_3 = [
   {
     description: "no. 3 north tip, & beckwith",
     type: "shared",
-    videoIds: [VIDEOS.no3Sb.id],
+    videoIds: [ROUTE_VIDEOS.no3Sb.id],
     positions: [
       NO_3_BRIDGEPORT,
       [49.19381, -123.12949],
@@ -70,8 +70,8 @@ export const NO_3 = [
   {
     description: "smith & van horne tip",
     type: "quiet",
-    videoIds: [VIDEOS.no3Sb.id],
-    videoIdsStartAtEnd: [VIDEOS.no3Sb.id],
+    videoIds: [ROUTE_VIDEOS.no3Sb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.no3Sb.id],
     positions: [
       SMITH_BECKWITH,
       [49.19463, -123.1254],
@@ -100,7 +100,7 @@ export const NO_3 = [
     description: "nb: block after cook",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.no3Nb.id],
+    videoIds: [ROUTE_VIDEOS.no3Nb.id],
     positions: [
       NO_3_COOK_NE,
       [49.16665, -123.13644],
@@ -114,7 +114,7 @@ export const NO_3 = [
     description: "nb: bus mall to browngate",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.no3Nb.id],
+    videoIds: [ROUTE_VIDEOS.no3Nb.id],
     positions: [
       NO_3_BUS_MALL_SE,
       [49.16881, -123.13642],
@@ -139,8 +139,8 @@ export const NO_3 = [
     description: "nb: browngate to cambie",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.no3Nb.id, VIDEOS.odlinWb.id],
-    videoIdsEndAtEnd: [VIDEOS.odlinWb.id],
+    videoIds: [ROUTE_VIDEOS.no3Nb.id, ROUTE_VIDEOS.odlinWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.odlinWb.id],
     positions: [
       NO_3_BROWNGATE,
       [49.1836, -123.1365],
@@ -153,7 +153,7 @@ export const NO_3 = [
     description: "nb: cambie to capstan",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.no3Nb.id],
+    videoIds: [ROUTE_VIDEOS.no3Nb.id],
     positions: [
       NO_3_CAMBIE_SE,
       [49.18466, -123.13634],
@@ -167,7 +167,7 @@ export const NO_3 = [
     description: "nb: capstan station",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.no3Nb.id],
+    videoIds: [ROUTE_VIDEOS.no3Nb.id],
     positions: [
       NO_3_CAPSTAN_NE,
       [49.18895, -123.13221],
@@ -183,8 +183,8 @@ export const NO_3 = [
     description: "nb: capstan station to bridgeport",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.no3Nb.id],
-    videoIdsEndAtEnd: [VIDEOS.no3Nb.id],
+    videoIds: [ROUTE_VIDEOS.no3Nb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.no3Nb.id],
     positions: [
       CAPSTAN_STATION_N,
       [49.1909, -123.13031],
@@ -200,7 +200,7 @@ export const NO_3 = [
     description: "sb: bridgeport to sea island",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.no3Sb.id],
+    videoIds: [ROUTE_VIDEOS.no3Sb.id],
     positions: [
       NO_3_BRIDGEPORT,
       [49.19183, -123.12978],
@@ -216,7 +216,7 @@ export const NO_3 = [
     description: "sb: sea island to capstan",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.no3Sb.id],
+    videoIds: [ROUTE_VIDEOS.no3Sb.id],
     positions: [
       NO_3_SEA_ISLAND_SW_S,
       [49.19048, -123.1311],
@@ -237,7 +237,7 @@ export const NO_3 = [
     type: "shared",
     oneWay: "required",
     undesignated: true,
-    videoIds: [VIDEOS.no3Sb.id],
+    videoIds: [ROUTE_VIDEOS.no3Sb.id],
     positions: [
       NO_3_CAPSTAN_NW,
       [49.18888, -123.13261],
@@ -276,7 +276,7 @@ export const NO_3 = [
     description: "sb: alderbridge to cook",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.no3Sb.id],
+    videoIds: [ROUTE_VIDEOS.no3Sb.id],
     positions: [
       NO_3_ALDERBRIDGE_SW,
       [49.17687, -123.13677],
@@ -311,8 +311,8 @@ export const NO_3 = [
     type: "shared",
     oneWay: "required",
     undesignated: true,
-    videoIds: [VIDEOS.no3Sb.id],
-    videoIdsEndAtEnd: [VIDEOS.no3Sb.id],
+    videoIds: [ROUTE_VIDEOS.no3Sb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.no3Sb.id],
     positions: [
       NO_3_COOK_NW,
       [49.16638, -123.13667],

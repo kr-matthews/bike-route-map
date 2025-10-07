@@ -14,7 +14,7 @@ import {
   SAMPLES_HIGHLAND_PARK_LINE,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const EDMONDS_BAD_PATH_E = [49.21302, -122.95976];
 const EDMONDS_STATION_18TH = [49.21257, -122.95893];
@@ -68,8 +68,8 @@ export const EDMONDS = [
     routeNames: [ROUTES.edmonds.name],
     description: "sample's path",
     type: "mixed",
-    videoIds: [VIDEOS.edmondsSamplesSb.id],
-    videoIdsEndAtStart: [VIDEOS.edmondsSamplesSb.id],
+    videoIds: [ROUTE_VIDEOS.edmondsSamplesSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.edmondsSamplesSb.id],
     positions: [
       PRENTER_RUMBLE_ISH,
       [49.21476, -122.96154],
@@ -120,8 +120,8 @@ export const EDMONDS = [
     routeNames: [ROUTES.edmonds.name],
     description: "bc parkway to edmonds station - good",
     type: "mixed",
-    videoIds: [VIDEOS.edmonds18thEb.id],
-    videoIdsStartAtStart: [VIDEOS.edmonds18thEb.id],
+    videoIds: [ROUTE_VIDEOS.edmonds18thEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.edmonds18thEb.id],
     positions: [
       BC_PARKWAY_EDMONDS_GOOD,
       [49.21358, -122.96036],
@@ -140,7 +140,7 @@ export const EDMONDS = [
     routeNames: [ROUTES.edmonds.name],
     description: "edmonds station parking lot",
     type: "quiet",
-    videoIds: [VIDEOS.edmonds18thEb.id],
+    videoIds: [ROUTE_VIDEOS.edmonds18thEb.id],
     positions: [
       EDMONDS_PARKING_N,
       [49.21285, -122.95946],
@@ -155,7 +155,7 @@ export const EDMONDS = [
     routeNames: [ROUTES.edmonds.name],
     description: "18th ave, edmonds station to 18th street",
     type: "mixed",
-    videoIds: [VIDEOS.edmonds18thEb.id],
+    videoIds: [ROUTE_VIDEOS.edmonds18thEb.id],
     positions: [
       EDMONDS_STATION_18TH,
       [49.21259, -122.95887],
@@ -176,7 +176,7 @@ export const EDMONDS = [
     routeNames: [ROUTES.edmonds.name],
     description: "18th ave, 18th to leeside",
     type: "dedicated",
-    videoIds: [VIDEOS.edmonds18thEb.id, VIDEOS.edmonds18thNb.id],
+    videoIds: [ROUTE_VIDEOS.edmonds18thEb.id, ROUTE_VIDEOS.edmonds18thNb.id],
     positions: [
       EIGHTEENTH_18TH_NW,
       [49.21434, -122.95584],
@@ -189,7 +189,7 @@ export const EDMONDS = [
     routeNames: [ROUTES.edmonds.name],
     description: "18th ave, leeside to 16th",
     type: "dedicated",
-    videoIds: [VIDEOS.edmonds18thEb.id],
+    videoIds: [ROUTE_VIDEOS.edmonds18thEb.id],
     positions: [
       LEESIDE_18TH_NW,
       [49.21499, -122.95494],
@@ -201,7 +201,7 @@ export const EDMONDS = [
     routeNames: [ROUTES.edmonds.name],
     description: "18th ave, 16th to britton",
     type: "quiet",
-    videoIds: [VIDEOS.edmonds18thEb.id],
+    videoIds: [ROUTE_VIDEOS.edmonds18thEb.id],
     positions: [SIXTEENTH_18TH_NW, [49.21624, -122.95253], BRITTON_18TH],
   },
   {
@@ -209,7 +209,7 @@ export const EDMONDS = [
     description: "kingsway: britton to 19th part 1",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.edmonds18thEb.id],
+    videoIds: [ROUTE_VIDEOS.edmonds18thEb.id],
     positions: [BRITTON_KINGSWAY_S, [49.21812, -122.94939], KINGSWAY_PRE_19TH],
   },
   {
@@ -217,15 +217,15 @@ export const EDMONDS = [
     description: "kingsway: britton to 19th part 2",
     type: "other",
     oneWay: "required",
-    videoIds: [VIDEOS.edmonds18thEb.id],
+    videoIds: [ROUTE_VIDEOS.edmonds18thEb.id],
     positions: [KINGSWAY_PRE_19TH, [49.2181, -122.94899], KINGSWAY_19TH_SW],
   },
   {
     routeNames: [ROUTES.edmonds.name],
     description: "19th ave, kingsway to mary",
     type: "quiet",
-    videoIds: [VIDEOS.edmonds18thEb.id],
-    videoIdsEndAtEnd: [VIDEOS.edmonds18thEb.id],
+    videoIds: [ROUTE_VIDEOS.edmonds18thEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.edmonds18thEb.id],
     positions: [
       KINGSWAY_19TH_SW,
       [49.21914, -122.94798],
@@ -268,7 +268,7 @@ export const EDMONDS = [
     description: "byrne creek secondary: from bc parkway",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [VIDEOS.edmonds18thNb.id],
+    videoIds: [ROUTE_VIDEOS.edmonds18thNb.id],
     positions: [
       BC_PARKWAY_14TH,
       [49.20913, -122.9575],
@@ -282,7 +282,7 @@ export const EDMONDS = [
     description: "overpass near 14th",
     type: "mixed",
     elevation: 1,
-    videoIds: [VIDEOS.edmonds18thNb.id],
+    videoIds: [ROUTE_VIDEOS.edmonds18thNb.id],
     positions: [OVERPASS_14TH_W, OVERPASS_14TH_E],
   },
   {
@@ -290,7 +290,7 @@ export const EDMONDS = [
     description: "14th to griffiths",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [VIDEOS.edmonds18thNb.id],
+    videoIds: [ROUTE_VIDEOS.edmonds18thNb.id],
     positions: [
       OVERPASS_14TH_E,
       [49.20888, -122.95646],
@@ -312,7 +312,7 @@ export const EDMONDS = [
     description: "griffiths overpass",
     type: "mixed",
     elevation: 1,
-    videoIds: [VIDEOS.edmonds18thNb.id],
+    videoIds: [ROUTE_VIDEOS.edmonds18thNb.id],
     positions: [
       OVERPASS_GRIFFITHS_W,
       [49.20871, -122.95358],
@@ -330,7 +330,7 @@ export const EDMONDS = [
     description: "18th st: griffiths to stride",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [VIDEOS.edmonds18thNb.id],
+    videoIds: [ROUTE_VIDEOS.edmonds18thNb.id],
     positions: [
       OVERPASS_GRIFFITHS_E,
       [49.20915, -122.95269],
@@ -357,7 +357,7 @@ export const EDMONDS = [
     routeNames: [ROUTES.edmonds.name],
     description: "18th st: stride to 18th ave",
     type: "quiet",
-    videoIds: [VIDEOS.edmonds18thNb.id],
+    videoIds: [ROUTE_VIDEOS.edmonds18thNb.id],
     positions: [
       EIGHTEENTH_STRIDE_W,
       [49.21352, -122.95498],
@@ -370,7 +370,7 @@ export const EDMONDS = [
     routeNames: [ROUTES.edmonds.name],
     description: "18th st: 18th to edmonds",
     type: "mixed",
-    videoIds: [VIDEOS.edmonds18thNb.id],
+    videoIds: [ROUTE_VIDEOS.edmonds18thNb.id],
     positions: [
       EIGHTEENTH_18TH_NW,
       [49.21463, -122.95652],
@@ -382,7 +382,7 @@ export const EDMONDS = [
     routeNames: [ROUTES.edmonds.name],
     description: "18th/stride: crossing edmonds SE",
     type: "mixed",
-    videoIds: [VIDEOS.edmonds18thNb.id],
+    videoIds: [ROUTE_VIDEOS.edmonds18thNb.id],
     positions: [
       EIGHTEENTH_EDMONDS_SW,
       EIGHTEENTH_EDMONDS_SE,
@@ -403,7 +403,7 @@ export const EDMONDS = [
     routeNames: [ROUTES.edmonds.name],
     description: "salisbury: edmonds to highland park line",
     type: "mixed",
-    videoIds: [VIDEOS.edmonds18thNb.id],
+    videoIds: [ROUTE_VIDEOS.edmonds18thNb.id],
     positions: [
       EIGHTEENTH_EDMONDS_NE,
       [49.21608, -122.95738],
@@ -416,14 +416,14 @@ export const EDMONDS = [
     routeNames: [ROUTES.edmonds.name],
     description: "salisbury: highland park line to beresford",
     type: "mixed",
-    videoIds: [VIDEOS.edmonds18thNb.id],
+    videoIds: [ROUTE_VIDEOS.edmonds18thNb.id],
     positions: [SALISBURY_BERESFORD_S_E, SALISBURY_BERESFORD_E],
   },
   {
     routeNames: [ROUTES.edmonds.name],
     description: "beresford & acorn",
     type: "quiet",
-    videoIds: [VIDEOS.edmonds18thNb.id],
+    videoIds: [ROUTE_VIDEOS.edmonds18thNb.id],
     positions: [
       SALISBURY_BERESFORD_E,
       [49.21702, -122.95657],
@@ -437,8 +437,8 @@ export const EDMONDS = [
     routeNames: [ROUTES.edmonds.name],
     description: "kingsway acorn to hall",
     type: "mixed",
-    videoIds: [VIDEOS.edmonds18thNb.id],
-    videoIdsEndAtEnd: [VIDEOS.edmonds18thNb.id],
+    videoIds: [ROUTE_VIDEOS.edmonds18thNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.edmonds18thNb.id],
     positions: [ACORN_KINGSWAY_S, HALL_KINGSWAY_SW, [49.21855, -122.95507]],
   },
 
@@ -447,15 +447,18 @@ export const EDMONDS = [
     routeNames: [ROUTES.edmonds.name],
     description: "stride: 15th to britton",
     type: "quiet",
-    videoIds: [VIDEOS.highlandParkLineWb.id],
+    videoIds: [ROUTE_VIDEOS.highlandParkLineWb.id],
     positions: [FIFTEENTH_STRIDE, BRITTON_STRIDE],
   },
   {
     routeNames: [ROUTES.edmonds.name],
     description: "britton: stride to 18th",
     type: "quiet",
-    videoIds: [VIDEOS.highlandParkLineWb.id, VIDEOS.highlandParkLineEb.id],
-    videoIdsEndAtStart: [VIDEOS.highlandParkLineEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.highlandParkLineWb.id,
+      ROUTE_VIDEOS.highlandParkLineEb.id,
+    ],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.highlandParkLineEb.id],
     positions: [
       BRITTON_STRIDE,
       BRITTON_16TH,
@@ -467,7 +470,10 @@ export const EDMONDS = [
     routeNames: [ROUTES.edmonds.name],
     description: "kingsway protected",
     type: "dedicated",
-    videoIds: [VIDEOS.highlandParkLineWb.id, VIDEOS.highlandParkLineEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.highlandParkLineWb.id,
+      ROUTE_VIDEOS.highlandParkLineEb.id,
+    ],
     positions: [
       BRITTON_KINGSWAY_S,
       [49.21817, -122.95004],
@@ -484,7 +490,10 @@ export const EDMONDS = [
     description: "britton nb at kingsway",
     type: "quiet",
     oneWay: "recommended",
-    videoIds: [VIDEOS.edmonds18thEb.id, VIDEOS.highlandParkLineWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.edmonds18thEb.id,
+      ROUTE_VIDEOS.highlandParkLineWb.id,
+    ],
     positions: [
       BRITTON_18TH,
       [49.21785, -122.94957],
@@ -497,7 +506,7 @@ export const EDMONDS = [
     description: "britton sb at kingsway",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.highlandParkLineEb.id],
+    videoIds: [ROUTE_VIDEOS.highlandParkLineEb.id],
     positions: [
       BRITTON_KINGSWAY_S,
       [49.21805, -122.94989],

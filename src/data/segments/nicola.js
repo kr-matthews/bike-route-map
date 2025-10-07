@@ -1,16 +1,16 @@
 import { NICOLA_GEORGIA, NICOLA_HARO, NICOLA_PENDER } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const NICOLA = [
   {
     routeNames: [ROUTES.nicola.name],
     description: "primary",
     type: "quiet",
-    videoIds: [VIDEOS.nicolaSb.id, VIDEOS.nicolaNb.id],
-    videoIdsStartAtStart: [VIDEOS.nicolaNb.id],
-    videoIdsStartAtEnd: [VIDEOS.nicolaSb.id],
-    videoIdsEndAtStart: [VIDEOS.nicolaSb.id],
+    videoIds: [ROUTE_VIDEOS.nicolaSb.id, ROUTE_VIDEOS.nicolaNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.nicolaNb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.nicolaSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.nicolaSb.id],
     positions: [
       NICOLA_HARO,
       [49.28869, -123.13111],
@@ -23,8 +23,8 @@ export const NICOLA = [
     description: "georgia to pender",
     type: "quiet",
     oneWay: "recommended",
-    videoIds: [VIDEOS.nicolaNb.id],
-    videoIdsEndAtEnd: [VIDEOS.nicolaNb.id],
+    videoIds: [ROUTE_VIDEOS.nicolaNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.nicolaNb.id],
     positions: [NICOLA_GEORGIA, NICOLA_PENDER],
   },
 ];

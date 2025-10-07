@@ -6,7 +6,7 @@ import {
   NO_3_ACKROYD_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const MINORU_ACKROYD_SE = [49.1719, -123.14008];
 const MINORU_ACKROYD_E = [49.17202, -123.1401];
@@ -68,8 +68,8 @@ export const MINORU = [
     description: "nb: granville to separated",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.minoruNb.id],
-    videoIdsStartAtStart: [VIDEOS.minoruNb.id],
+    videoIds: [ROUTE_VIDEOS.minoruNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.minoruNb.id],
     positions: [
       MINORU_GRANVILLE_NE,
       [49.16397, -123.14008],
@@ -81,7 +81,7 @@ export const MINORU = [
     description: "nb: separated",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.minoruNb.id],
+    videoIds: [ROUTE_VIDEOS.minoruNb.id],
     positions: [
       MINORU_MINORU_GATEWAY,
       [49.16433, -123.14014],
@@ -104,7 +104,7 @@ export const MINORU = [
     description: "nb: separated to ackroyd",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.minoruNb.id],
+    videoIds: [ROUTE_VIDEOS.minoruNb.id],
     positions: [
       MINORU_MURDOCH,
       [49.16728, -123.14016],
@@ -122,7 +122,7 @@ export const MINORU = [
     description: "nb: no lane",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.minoruNb.id],
+    videoIds: [ROUTE_VIDEOS.minoruNb.id],
     positions: [
       MINORU_ACKROYD_SE,
       MINORU_ACKROYD_E,
@@ -135,8 +135,8 @@ export const MINORU = [
     description: "nb: beyond ackroyd to alderbridge",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.minoruNb.id],
-    videoIdsEndAtEnd: [VIDEOS.minoruNb.id],
+    videoIds: [ROUTE_VIDEOS.minoruNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.minoruNb.id],
     positions: [
       NB_POST_ACKROYD,
       MINORU_LANSDOWNE_NE,

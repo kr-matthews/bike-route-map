@@ -1,17 +1,17 @@
 import { ALDER_10TH, ALDER_14TH, ALDER_7TH } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const ALDER = [
   {
     routeNames: [ROUTES.alder.name],
     description: "all",
     type: "quiet",
-    videoIds: [VIDEOS.alderSb.id, VIDEOS.alderNb.id],
-    videoIdsStartAtStart: [VIDEOS.alderNb.id],
-    videoIdsStartAtEnd: [VIDEOS.alderSb.id],
-    videoIdsEndAtStart: [VIDEOS.alderSb.id],
-    videoIdsEndAtEnd: [VIDEOS.alderNb.id],
+    videoIds: [ROUTE_VIDEOS.alderSb.id, ROUTE_VIDEOS.alderNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.alderNb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.alderSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.alderSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.alderNb.id],
     positions: [ALDER_14TH, [49.26068, -123.13148], ALDER_10TH, ALDER_7TH],
   },
 ];

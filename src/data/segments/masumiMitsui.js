@@ -13,7 +13,7 @@ import {
   VIVIAN_LYNBROOK,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const GRANVILLE_59TH_W = [49.21748, -123.14063];
 const GRANVILLE_LANE_E_59TH = [49.21736, -123.13943];
@@ -37,9 +37,9 @@ export const MASUMI_MITSUI_GREENWAY = [
     routeNames: [ROUTES.masumiMitsui.name],
     description: "angus to granville",
     type: "quiet",
-    videoIds: [VIDEOS.masumiMitsuiEb.id, VIDEOS.masumiMitsuiWb.id],
-    videoIdsStartAtStart: [VIDEOS.masumiMitsuiEb.id],
-    videoIdsEndAtStart: [VIDEOS.masumiMitsuiWb.id],
+    videoIds: [ROUTE_VIDEOS.masumiMitsuiEb.id, ROUTE_VIDEOS.masumiMitsuiWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.masumiMitsuiEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.masumiMitsuiWb.id],
     positions: [
       ANGUS_59TH,
       [49.21768, -123.14384],
@@ -54,7 +54,7 @@ export const MASUMI_MITSUI_GREENWAY = [
     routeNames: [ROUTES.masumiMitsui.name],
     description: "crossing granville",
     type: "dedicated",
-    videoIds: [VIDEOS.masumiMitsuiEb.id, VIDEOS.masumiMitsuiWb.id],
+    videoIds: [ROUTE_VIDEOS.masumiMitsuiEb.id, ROUTE_VIDEOS.masumiMitsuiWb.id],
     positions: [
       GRANVILLE_59TH_W,
       [49.21746, -123.14029],
@@ -70,7 +70,7 @@ export const MASUMI_MITSUI_GREENWAY = [
     routeNames: [ROUTES.masumiMitsui.name],
     description: "granville to ontario",
     type: "quiet",
-    videoIds: [VIDEOS.masumiMitsuiEb.id, VIDEOS.masumiMitsuiWb.id],
+    videoIds: [ROUTE_VIDEOS.masumiMitsuiEb.id, ROUTE_VIDEOS.masumiMitsuiWb.id],
     positions: [
       GRANVILLE_LANE_E_59TH,
       [49.21738, -123.13933],
@@ -92,7 +92,7 @@ export const MASUMI_MITSUI_GREENWAY = [
     description: "eb: paulson to...",
     type: "quiet",
     oneWay: "recommended",
-    videoIds: [VIDEOS.masumiMitsuiEb.id],
+    videoIds: [ROUTE_VIDEOS.masumiMitsuiEb.id],
     positions: [PAULSON_59TH_W, LEFT_PAINTED_BEGIN],
   },
   {
@@ -100,7 +100,7 @@ export const MASUMI_MITSUI_GREENWAY = [
     description: "eb: ...to cambie",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.masumiMitsuiEb.id],
+    videoIds: [ROUTE_VIDEOS.masumiMitsuiEb.id],
     positions: [
       LEFT_PAINTED_BEGIN,
       [49.21698, -123.11822],
@@ -113,21 +113,21 @@ export const MASUMI_MITSUI_GREENWAY = [
     description: "wb: cambie to paulson",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.masumiMitsuiWb.id],
+    videoIds: [ROUTE_VIDEOS.masumiMitsuiWb.id],
     positions: [CAMBIE_59TH_NW, [49.21701, -123.11858], PAULSON_59TH_W],
   },
   {
     routeNames: [ROUTES.masumiMitsui.name],
     description: "along cambie",
     type: "combined",
-    videoIds: [VIDEOS.masumiMitsuiEb.id, VIDEOS.masumiMitsuiWb.id],
+    videoIds: [ROUTE_VIDEOS.masumiMitsuiEb.id, ROUTE_VIDEOS.masumiMitsuiWb.id],
     positions: [CAMBIE_59TH_NW, CAMBIE_59TH_NE_E, CAMBIE_58TH_EE],
   },
   {
     routeNames: [ROUTES.masumiMitsui.name],
     description: "cambie to alberta",
     type: "quiet",
-    videoIds: [VIDEOS.masumiMitsuiEb.id, VIDEOS.masumiMitsuiWb.id],
+    videoIds: [ROUTE_VIDEOS.masumiMitsuiEb.id, ROUTE_VIDEOS.masumiMitsuiWb.id],
     positions: [
       CAMBIE_58TH_EE,
       [49.2178, -123.11343],
@@ -139,7 +139,7 @@ export const MASUMI_MITSUI_GREENWAY = [
     routeNames: [ROUTES.masumiMitsui.name],
     description: "alberta to ontario",
     type: "mixed",
-    videoIds: [VIDEOS.masumiMitsuiEb.id, VIDEOS.masumiMitsuiWb.id],
+    videoIds: [ROUTE_VIDEOS.masumiMitsuiEb.id, ROUTE_VIDEOS.masumiMitsuiWb.id],
     positions: [
       ALBERTA_58TH,
       [49.21776, -123.1127],
@@ -159,7 +159,7 @@ export const MASUMI_MITSUI_GREENWAY = [
     routeNames: [ROUTES.masumiMitsui.name],
     description: "ontario to argyle",
     type: "quiet",
-    videoIds: [VIDEOS.masumiMitsuiEb.id, VIDEOS.masumiMitsuiWb.id],
+    videoIds: [ROUTE_VIDEOS.masumiMitsuiEb.id, ROUTE_VIDEOS.masumiMitsuiWb.id],
     positions: [
       ONTARIO_59TH,
       [49.21676, -123.10195],
@@ -180,7 +180,7 @@ export const MASUMI_MITSUI_GREENWAY = [
     routeNames: [ROUTES.masumiMitsui.name],
     description: "along argyle",
     type: "dedicated",
-    videoIds: [VIDEOS.masumiMitsuiEb.id, VIDEOS.masumiMitsuiWb.id],
+    videoIds: [ROUTE_VIDEOS.masumiMitsuiEb.id, ROUTE_VIDEOS.masumiMitsuiWb.id],
     positions: [
       ARGYLE_59TH_E,
       [49.21678, -123.07181],
@@ -193,7 +193,7 @@ export const MASUMI_MITSUI_GREENWAY = [
     routeNames: [ROUTES.masumiMitsui.name],
     description: "argyle to split",
     type: "quiet",
-    videoIds: [VIDEOS.masumiMitsuiEb.id, VIDEOS.masumiMitsuiWb.id],
+    videoIds: [ROUTE_VIDEOS.masumiMitsuiEb.id, ROUTE_VIDEOS.masumiMitsuiWb.id],
     positions: [
       NASSAU_PRESTWICK,
       [49.21707, -123.07025],
@@ -217,8 +217,8 @@ export const MASUMI_MITSUI_GREENWAY = [
     description: "eastbound branch",
     type: "quiet",
     oneWay: "recommended",
-    videoIds: [VIDEOS.masumiMitsuiEb.id],
-    videoIdsEndAtEnd: [VIDEOS.masumiMitsuiEb.id],
+    videoIds: [ROUTE_VIDEOS.masumiMitsuiEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.masumiMitsuiEb.id],
     positions: [
       ASHBURN_UPLAND,
       [49.21734, -123.05541],
@@ -235,8 +235,8 @@ export const MASUMI_MITSUI_GREENWAY = [
     description: "westbound branch 57th",
     type: "quiet",
     oneWay: "recommended",
-    videoIds: [VIDEOS.masumiMitsuiWb.id],
-    videoIdsStartAtStart: [VIDEOS.masumiMitsuiWb.id],
+    videoIds: [ROUTE_VIDEOS.masumiMitsuiWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.masumiMitsuiWb.id],
     positions: [VIVIAN_57TH, [49.21806, -123.05126], ELLIOTT_57TH],
   },
   {
@@ -244,7 +244,7 @@ export const MASUMI_MITSUI_GREENWAY = [
     description: "westbound branch elliott path",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.masumiMitsuiWb.id],
+    videoIds: [ROUTE_VIDEOS.masumiMitsuiWb.id],
     positions: [ELLIOTT_57TH, [49.21841, -123.05461], ELLIOTT_ASHBURN],
   },
   {
@@ -252,7 +252,7 @@ export const MASUMI_MITSUI_GREENWAY = [
     description: "westbound branch ashburn",
     type: "quiet",
     oneWay: "recommended",
-    videoIds: [VIDEOS.masumiMitsuiWb.id],
+    videoIds: [ROUTE_VIDEOS.masumiMitsuiWb.id],
     positions: [
       ELLIOTT_ASHBURN,
       [49.21839, -123.055],

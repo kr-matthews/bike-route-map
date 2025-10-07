@@ -1,6 +1,6 @@
 import { UNITED_PORT_MANN } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const BRIDGE_END = [49.20605, -122.80104];
 const BRIDGE_END_112_AVE = [49.20605, -122.80081];
@@ -18,8 +18,8 @@ export const PORT_MANN_BRIDGE = [
     description: "east overpass: west",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [VIDEOS.portMannWB.id],
-    videoIdsStartAtStart: [VIDEOS.portMannWB.id],
+    videoIds: [ROUTE_VIDEOS.portMannWB.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.portMannWB.id],
     positions: [
       [49.20608, -122.80446],
       [49.20615, -122.80436],
@@ -34,14 +34,14 @@ export const PORT_MANN_BRIDGE = [
     description: "east overpass",
     type: "mixed",
     elevation: 1,
-    videoIds: [VIDEOS.portMannWB.id],
+    videoIds: [ROUTE_VIDEOS.portMannWB.id],
     positions: [EAST_OVERPASS_START, EAST_OVERPASS_END],
   },
   {
     description: "east overpass: east",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [VIDEOS.portMannWB.id],
+    videoIds: [ROUTE_VIDEOS.portMannWB.id],
     positions: [
       EAST_OVERPASS_END,
       [49.206, -122.80163],
@@ -57,13 +57,13 @@ export const PORT_MANN_BRIDGE = [
   {
     description: "to 152",
     type: "mixed",
-    videoIds: [VIDEOS.portMannEB.id],
+    videoIds: [ROUTE_VIDEOS.portMannEB.id],
     positions: [BRIDGE_END, BRIDGE_END_112_AVE],
   },
   {
     description: "152, 111a, 153a, 110a",
     type: "quiet",
-    videoIds: [VIDEOS.portMannEB.id],
+    videoIds: [ROUTE_VIDEOS.portMannEB.id],
     positions: [
       BRIDGE_END_112_AVE,
       [49.20522, -122.80081],
@@ -89,8 +89,8 @@ export const PORT_MANN_BRIDGE = [
   {
     description: "fraser heights greenway (partial)",
     type: "mixed",
-    videoIds: [VIDEOS.portMannEB.id],
-    videoIdsEndAtEnd: [VIDEOS.portMannEB.id],
+    videoIds: [ROUTE_VIDEOS.portMannEB.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.portMannEB.id],
     positions: [FRASER_HEIGHTS_110A_W, [49.20245, -122.79544]],
   },
 
@@ -100,7 +100,7 @@ export const PORT_MANN_BRIDGE = [
     description: "west end",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [VIDEOS.portMannEB.id, VIDEOS.portMannWB.id],
+    videoIds: [ROUTE_VIDEOS.portMannEB.id, ROUTE_VIDEOS.portMannWB.id],
     positions: [
       UNITED_PORT_MANN,
       [49.22783, -122.82023],
@@ -122,7 +122,7 @@ export const PORT_MANN_BRIDGE = [
     type: "mixed",
     description: "primary",
     elevation: 1,
-    videoIds: [VIDEOS.portMannEB.id, VIDEOS.portMannWB.id],
+    videoIds: [ROUTE_VIDEOS.portMannEB.id, ROUTE_VIDEOS.portMannWB.id],
     positions: [
       ELEVATION_START,
       [49.22699, -122.81938],
@@ -166,7 +166,7 @@ export const PORT_MANN_BRIDGE = [
     description: "east end",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [VIDEOS.portMannWB.id, VIDEOS.portMannEB.id],
+    videoIds: [ROUTE_VIDEOS.portMannWB.id, ROUTE_VIDEOS.portMannEB.id],
     positions: [
       ELEVATION_END,
       [49.21095, -122.80778],

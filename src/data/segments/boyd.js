@@ -10,7 +10,7 @@ import {
   QUEENSBOROUGH_BOYD_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const OUTLET_MALL_BOYD = [49.19073, -122.94722];
 const DUNCAN_BOYD_NE = [49.19468, -122.93691];
@@ -56,8 +56,8 @@ export const BOYD = [
     description: "pre-trail at howes",
     type: "other",
     undesignated: true,
-    videoIds: [VIDEOS.boydTrailWb.id],
-    videoIdsStartAtEnd: [VIDEOS.boydTrailWb.id],
+    videoIds: [ROUTE_VIDEOS.boydTrailWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.boydTrailWb.id],
     positions: [
       HOWES_BOYD_NW,
       [49.19011, -122.9488],
@@ -69,8 +69,8 @@ export const BOYD = [
     routeNames: [ROUTES.boydTrail.name],
     description: "trail from boundary",
     type: "comfortable",
-    videoIds: [VIDEOS.boydTrailWb.id],
-    videoIdsEndAtStart: [VIDEOS.boydTrailWb.id],
+    videoIds: [ROUTE_VIDEOS.boydTrailWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.boydTrailWb.id],
     positions: [
       BOUNDARY_WESTMINSTER_NE,
       [49.18399, -122.95681],
@@ -114,8 +114,8 @@ export const BOYD = [
     description: "eb boundary to after howes",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.boydEb.id],
-    videoIdsStartAtStart: [VIDEOS.boydEb.id],
+    videoIds: [ROUTE_VIDEOS.boydEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.boydEb.id],
     positions: [
       BOUNDARY_WESTMINSTER_ES,
       [49.18408, -122.95533],
@@ -142,7 +142,7 @@ export const BOYD = [
     description: "eb howes to bridge",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.boydEb.id],
+    videoIds: [ROUTE_VIDEOS.boydEb.id],
     positions: [
       BOYD_EB_JOIN_AFTER_HOWES,
       [49.19092, -122.94642],
@@ -155,8 +155,8 @@ export const BOYD = [
     description: "wb to boundary",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.boydWb.id],
-    videoIdsEndAtEnd: [VIDEOS.boydWb.id],
+    videoIds: [ROUTE_VIDEOS.boydWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.boydWb.id],
     positions: [
       QUEENSBOROUGH_BOYD_NW,
       [49.19154, -122.94517],
@@ -190,11 +190,11 @@ export const BOYD = [
     description: "trail from bridge to duncan 1",
     type: "comfortable",
     videoIds: [
-      VIDEOS.queensboroughBridgeNb.id,
-      VIDEOS.boydWb.id,
-      VIDEOS.boydEb.id,
+      ROUTE_VIDEOS.queensboroughBridgeNb.id,
+      ROUTE_VIDEOS.boydWb.id,
+      ROUTE_VIDEOS.boydEb.id,
     ],
-    videoIdsStartAtEnd: [VIDEOS.queensboroughBridgeNb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.queensboroughBridgeNb.id],
     positions: [
       QUEENSBOROUGH_BOYD_NW,
       [49.19231, -122.94328],
@@ -208,7 +208,7 @@ export const BOYD = [
     routeNames: [ROUTES.boyd.name],
     description: "trail from bridge to duncan 2",
     type: "comfortable",
-    videoIds: [VIDEOS.boydWb.id, VIDEOS.boydEb.id],
+    videoIds: [ROUTE_VIDEOS.boydWb.id, ROUTE_VIDEOS.boydEb.id],
     positions: [
       WOOD_BOYD_N,
       [49.19316, -122.94159],
@@ -228,11 +228,11 @@ export const BOYD = [
     description: "crossing at bridge",
     type: "mixed",
     videoIds: [
-      VIDEOS.queensboroughBridgeNb.id,
-      VIDEOS.queensboroughBridgeSb.id,
-      VIDEOS.boydEb.id,
+      ROUTE_VIDEOS.queensboroughBridgeNb.id,
+      ROUTE_VIDEOS.queensboroughBridgeSb.id,
+      ROUTE_VIDEOS.boydEb.id,
     ],
-    videoIdsEndAtEnd: [VIDEOS.queensboroughBridgeSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.queensboroughBridgeSb.id],
     positions: [QUEENSBOROUGH_BOYD_SW, QUEENSBOROUGH_BOYD_NW],
   },
   {
@@ -240,8 +240,8 @@ export const BOYD = [
     description: "eb duncan to ewen",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.boydEb.id],
-    videoIdsEndAtEnd: [VIDEOS.boydEb.id],
+    videoIds: [ROUTE_VIDEOS.boydEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.boydEb.id],
     positions: [
       DUNCAN_BOYD_NE,
       [49.19455, -122.93694],
@@ -261,8 +261,8 @@ export const BOYD = [
     description: "wb ewen to duncan",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.boydWb.id],
-    videoIdsStartAtStart: [VIDEOS.boydWb.id],
+    videoIds: [ROUTE_VIDEOS.boydWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.boydWb.id],
     positions: [
       BOYD_EWEN_SE,
       [49.19231, -122.93392],

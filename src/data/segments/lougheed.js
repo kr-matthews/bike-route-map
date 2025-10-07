@@ -18,7 +18,7 @@ import {
   WILLINGDON_LOUGHEED_SE,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const EB_LANE_START = [49.26564, -123.02192];
 const SKEENA_LOUGHEED = [49.26281, -123.02932];
@@ -70,8 +70,8 @@ export const LOUGHEED = [
     description: "from cvg",
     type: "quiet",
     oneWay: "recommended",
-    videoIds: [VIDEOS.lougheedEb.id],
-    videoIdsStartAtStart: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.lougheedEb.id],
     undesignated: true,
     positions: [
       SKEENA_CVG,
@@ -84,7 +84,7 @@ export const LOUGHEED = [
     description: "eb: cvg connection to lane start",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     undesignated: true,
     positions: [
       SKEENA_LOUGHEED,
@@ -108,7 +108,7 @@ export const LOUGHEED = [
     description: "eb: boundary to gilmore",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [
       EB_LANE_START,
       [49.26562, -123.02186],
@@ -129,7 +129,7 @@ export const LOUGHEED = [
     type: "painted",
     oneWay: "required",
     hideArrows: true,
-    videoIds: [VIDEOS.lougheedEb.id, VIDEOS.seaToRiverNb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id, ROUTE_VIDEOS.seaToRiverNb.id],
     positions: [GILMORE_LOUGHEED_SW, GILMORE_LOUGHEED_SE],
   },
   {
@@ -137,7 +137,7 @@ export const LOUGHEED = [
     description: "eb: gilmore to carleton",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [
       GILMORE_LOUGHEED_SE,
       [49.26602, -123.01379],
@@ -153,7 +153,7 @@ export const LOUGHEED = [
     description: "eb: carleton to after madison",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [
       [49.26618, -123.01143],
       [49.26623, -123.0106],
@@ -167,7 +167,7 @@ export const LOUGHEED = [
     description: "eb: protected to willingdon",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [
       EB_AFTER_MADISON,
       [49.26636, -123.00602],
@@ -179,7 +179,7 @@ export const LOUGHEED = [
     description: "eb: gilmore to beta",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [
       WILLINGDON_LOUGHEED_SW,
       WILLINGDON_LOUGHEED_SE,
@@ -194,7 +194,7 @@ export const LOUGHEED = [
     description: "eb: beta to delta",
     type: "dedicated",
     oneWay: "recommended",
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [
       BETA_LOUGHEED,
       [49.26604, -122.99693],
@@ -212,7 +212,7 @@ export const LOUGHEED = [
     description: "eb: just beyond delta",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [
       DELTA_LOUGHEED_SE,
       [49.26499, -122.99148],
@@ -224,7 +224,7 @@ export const LOUGHEED = [
     description: "eb: delta to brunette fraser overpass",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [
       POST_DELTA_SHOULDER_START,
       [49.26496, -122.98816],
@@ -291,7 +291,7 @@ export const LOUGHEED = [
     type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [
       EASTBOUND_BRUNETTE_FRASER_PRE,
       [49.25213, -122.9119],
@@ -308,7 +308,7 @@ export const LOUGHEED = [
     type: "mixed",
     oneWay: "required",
     elevation: 1,
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [EASTBOUND_BRUNETTE_FRASER_START, EASTBOUND_BRUNETTE_FRASER_END],
   },
   {
@@ -317,7 +317,7 @@ export const LOUGHEED = [
     type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [EASTBOUND_BRUNETTE_FRASER_END, EASTBOUND_BRUNETTE_FRASER_POST],
   },
   {
@@ -325,7 +325,7 @@ export const LOUGHEED = [
     description: "eb: brunette fraser overpass to austin",
     type: "comfortable",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [
       EASTBOUND_BRUNETTE_FRASER_POST,
       [49.25109, -122.90424],
@@ -352,7 +352,7 @@ export const LOUGHEED = [
     description: "eb: austin to brunette",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [
       AUSTIN_LOUGHEED_SW,
       [49.24842, -122.89755],
@@ -382,7 +382,7 @@ export const LOUGHEED = [
     description: "eb: brunette to woolridge",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [
       BRUNETTE_LOUGHEED_SE,
       [49.23635, -122.87087],
@@ -394,7 +394,7 @@ export const LOUGHEED = [
     description: "eb: woolridge to elevation",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [
       WOOLRIDGE_LOUGHEED_S,
       [49.23551, -122.86702],
@@ -416,7 +416,7 @@ export const LOUGHEED = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [EASTBOUND_ELEVATION_1_PRE, EASTBOUND_ELEVATION_1_START],
   },
   {
@@ -425,7 +425,7 @@ export const LOUGHEED = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [
       EASTBOUND_ELEVATION_1_START,
       [49.23068, -122.84714],
@@ -440,7 +440,7 @@ export const LOUGHEED = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [EASTBOUND_ELEVATION_1_END, EASTBOUND_ELEVATION_1_POST],
   },
   {
@@ -448,7 +448,7 @@ export const LOUGHEED = [
     description: "eb: between elevations",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [
       EASTBOUND_ELEVATION_1_POST,
       [49.22985, -122.84442],
@@ -463,7 +463,7 @@ export const LOUGHEED = [
     type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [EASTBOUND_ELEVATION_2_PRE, EASTBOUND_ELEVATION_2_START],
   },
   {
@@ -472,7 +472,7 @@ export const LOUGHEED = [
     type: "dedicated",
     oneWay: "required",
     elevation: 1,
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [
       EASTBOUND_ELEVATION_2_START,
       [49.22915, -122.83823],
@@ -487,7 +487,7 @@ export const LOUGHEED = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [
       MARY_HILL_JOIN,
       [49.22916, -122.83583],
@@ -502,7 +502,7 @@ export const LOUGHEED = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [
       EASTBOUND_ELEVATION_2_END,
       [49.22826, -122.8317],
@@ -520,7 +520,7 @@ export const LOUGHEED = [
     description: "wb: path from mary hill",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedWb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
     positions: [
       UNITED_MARY_HILL_NW,
       [49.22833, -122.81971],
@@ -536,7 +536,7 @@ export const LOUGHEED = [
     description: "wb: after initial path",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedWb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
     positions: [
       WB_INITIAL_PATH_END,
       [49.22846, -122.82433],
@@ -557,7 +557,7 @@ export const LOUGHEED = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.lougheedWb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
     positions: [WESTBOUND_ELEVATION_1_PRE, WESTBOUND_ELEVATION_1_START],
   },
   {
@@ -566,7 +566,7 @@ export const LOUGHEED = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
-    videoIds: [VIDEOS.lougheedWb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
     positions: [
       WESTBOUND_ELEVATION_1_START,
       [49.22989, -122.83335],
@@ -581,7 +581,7 @@ export const LOUGHEED = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.lougheedWb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
     positions: [WESTBOUND_ELEVATION_1_END, WESTBOUND_ELEVATION_1_POST],
   },
   {
@@ -589,7 +589,7 @@ export const LOUGHEED = [
     description: "wb: elevation to woolridge",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedWb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
     positions: [
       WESTBOUND_ELEVATION_1_POST,
       [49.23025, -122.8389],
@@ -617,7 +617,7 @@ export const LOUGHEED = [
     description: "wb: woolridge to blue mountain",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedWb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
     positions: [
       WOOLRIDGE_LOUGHEED_NW,
       BRUNETTE_LOUGHEED_N,
@@ -629,7 +629,7 @@ export const LOUGHEED = [
     description: "wb: blue mountain to austin",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedWb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
     positions: [
       BLUE_MOUNTAIN_LOUGHEED_N,
       [49.23758, -122.8759],
@@ -653,7 +653,7 @@ export const LOUGHEED = [
     description: "wb: austin to brunette fraser overpass",
     type: "comfortable",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedWb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
     positions: [
       AUSTIN_LOUGHEED_NW,
       [49.24879, -122.89764],
@@ -685,7 +685,7 @@ export const LOUGHEED = [
     type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.lougheedWb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
     positions: [
       WESTBOUND_BRUNETTE_FRASER_PRE,
       [49.25191, -122.90857],
@@ -698,7 +698,7 @@ export const LOUGHEED = [
     type: "mixed",
     oneWay: "required",
     elevation: 1,
-    videoIds: [VIDEOS.lougheedWb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
     positions: [WESTBOUND_BRUNETTE_FRASER_START, WESTBOUND_BRUNETTE_FRASER_END],
   },
   {
@@ -707,7 +707,7 @@ export const LOUGHEED = [
     type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.lougheedWb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
     positions: [WESTBOUND_BRUNETTE_FRASER_END, WESTBOUND_BRUNETTE_FRASER_POST],
   },
   {
@@ -715,7 +715,7 @@ export const LOUGHEED = [
     description: "wb: brunette fraser overpass to gaglardi",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedWb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
     positions: [WESTBOUND_BRUNETTE_FRASER_POST, GAGLARDI_LOUGHEED_NE],
   },
   {
@@ -723,7 +723,7 @@ export const LOUGHEED = [
     description: "wb: gaglardi to beta-ish",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedWb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
     positions: [
       GAGLARDI_LOUGHEED_NE,
       GAGLARDI_LOUGHEED_NW,
@@ -803,7 +803,7 @@ export const LOUGHEED = [
     description: "wb: beta-ish to willingdon",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedWb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
     positions: [
       BEYOND_BETA_SHOULDER_END,
       [49.26649, -122.99889],
@@ -820,7 +820,7 @@ export const LOUGHEED = [
     description: "wb: willingdon to near-boundary",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedWb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
     positions: [
       WILLINGDON_LOUGHEED_NE,
       [49.26655, -123.00335],
@@ -843,8 +843,8 @@ export const LOUGHEED = [
     description: "wb: just before boundary",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.lougheedWb.id],
-    videoIdsEndAtEnd: [VIDEOS.lougheedWb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.lougheedWb.id],
     positions: [
       WB_BEFORE_BOUNDARY,
       [49.26594, -123.02059],

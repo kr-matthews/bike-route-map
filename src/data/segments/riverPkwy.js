@@ -9,7 +9,7 @@ import {
   RIVER_PKWY_CAMBIE_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const NB_PAINT_START = [49.1772, -123.14325];
 const SB_PAINT_END = [49.176, -123.14618];
@@ -55,8 +55,8 @@ export const RIVER_PARKWAY = [
     description: "nb: dedicated",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.riverPkwyNb.id],
-    videoIdsStartAtStart: [VIDEOS.riverPkwyNb.id],
+    videoIds: [ROUTE_VIDEOS.riverPkwyNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.riverPkwyNb.id],
     positions: [
       HOLLYBRIDGE_RIVER_E,
       [49.17472, -123.14842],
@@ -87,7 +87,7 @@ export const RIVER_PARKWAY = [
     description: "nb: painted",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.riverPkwyNb.id],
+    videoIds: [ROUTE_VIDEOS.riverPkwyNb.id],
     positions: [
       NB_PAINT_START,
       [49.17769, -123.14226],
@@ -110,7 +110,7 @@ export const RIVER_PARKWAY = [
     description: "sb: painted",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.riverPkwySb.id],
+    videoIds: [ROUTE_VIDEOS.riverPkwySb.id],
     positions: [
       RIVER_PKWY_CAMBIE_SW,
       [49.18353, -123.13823],
@@ -136,8 +136,8 @@ export const RIVER_PARKWAY = [
     description: "sb: dedicated",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.riverPkwySb.id],
-    videoIdsEndAtEnd: [VIDEOS.riverPkwySb.id],
+    videoIds: [ROUTE_VIDEOS.riverPkwySb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.riverPkwySb.id],
     positions: [
       SB_PAINT_END,
       [49.17569, -123.14684],

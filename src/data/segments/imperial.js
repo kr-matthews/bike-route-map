@@ -1,6 +1,6 @@
 import { DISCOVER_15TH, IMPERIAL_16TH, IMPERIAL_29TH } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const IMPERIAL = [
   {
@@ -8,8 +8,8 @@ export const IMPERIAL = [
     description: "imperial",
     type: "shared",
     undesignated: true,
-    videoIds: [VIDEOS.imperialNb.id],
-    videoIdsStartAtStart: [VIDEOS.imperialNb.id],
+    videoIds: [ROUTE_VIDEOS.imperialNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.imperialNb.id],
     positions: [
       IMPERIAL_29TH,
       [49.24943, -123.20478],
@@ -29,7 +29,7 @@ export const IMPERIAL = [
     description: "connection to ridgeway",
     type: "quiet",
     undesignated: true,
-    videoIds: [VIDEOS.imperialNb.id],
+    videoIds: [ROUTE_VIDEOS.imperialNb.id],
     positions: [IMPERIAL_16TH, DISCOVER_15TH],
   },
 ];

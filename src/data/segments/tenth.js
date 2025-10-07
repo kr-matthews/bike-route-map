@@ -16,7 +16,7 @@ import {
   YUKON_10TH_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const VINE_10TH_SE = [49.26292, -123.15764];
 const MAPLE_10TH_NW = [49.26285, -123.15062];
@@ -52,9 +52,9 @@ export const TENTH = [
     routeNames: [ROUTES.tenth.name],
     description: "west of yew",
     type: "quiet",
-    videoIds: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
-    videoIdsStartAtStart: [VIDEOS.tenthEb.id],
-    videoIdsEndAtStart: [VIDEOS.tenthWb.id],
+    videoIds: [ROUTE_VIDEOS.tenthEb.id, ROUTE_VIDEOS.tenthWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.tenthEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.tenthWb.id],
     positions: [
       TRAFALGAR_10TH,
       [49.26302, -123.16242],
@@ -67,7 +67,7 @@ export const TENTH = [
     routeNames: [ROUTES.tenth.name],
     description: "vine to yew",
     type: "dedicated",
-    videoIds: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
+    videoIds: [ROUTE_VIDEOS.tenthEb.id, ROUTE_VIDEOS.tenthWb.id],
     positions: [VINE_10TH_SE, YEW_10TH],
   },
   {
@@ -75,9 +75,9 @@ export const TENTH = [
     description: "yew to arbutus greenway",
     type: "dedicated",
     videoIds: [
-      VIDEOS.tenthEb.id,
-      VIDEOS.tenthWb.id,
-      VIDEOS.arbutusGreenwayNb.id,
+      ROUTE_VIDEOS.tenthEb.id,
+      ROUTE_VIDEOS.tenthWb.id,
+      ROUTE_VIDEOS.arbutusGreenwayNb.id,
     ],
     positions: [
       YEW_10TH,
@@ -90,14 +90,14 @@ export const TENTH = [
     routeNames: [ROUTES.tenth.name],
     description: "arbutus greenway to maple",
     type: "dedicated",
-    videoIds: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
+    videoIds: [ROUTE_VIDEOS.tenthEb.id, ROUTE_VIDEOS.tenthWb.id],
     positions: [ARBUTUS_GREENWAY_10TH, MAPLE_10TH_NW],
   },
   {
     routeNames: [ROUTES.tenth.name],
     description: "maple to oak",
     type: "quiet",
-    videoIds: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
+    videoIds: [ROUTE_VIDEOS.tenthEb.id, ROUTE_VIDEOS.tenthWb.id],
     positions: [
       MAPLE_10TH_NW,
       [49.26283, -123.15053],
@@ -118,7 +118,7 @@ export const TENTH = [
     description: "hospital eb",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.tenthEb.id],
+    videoIds: [ROUTE_VIDEOS.tenthEb.id],
     positions: [
       OAK_10TH_W,
       [49.2624, -123.12649],
@@ -135,7 +135,7 @@ export const TENTH = [
     description: "hospital wb",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.tenthWb.id],
+    videoIds: [ROUTE_VIDEOS.tenthWb.id],
     positions: [
       ASH_10TH_E,
       [49.26234, -123.1176],
@@ -151,7 +151,7 @@ export const TENTH = [
     routeNames: [ROUTES.tenth.name],
     description: "hospital to main",
     type: "quiet",
-    videoIds: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
+    videoIds: [ROUTE_VIDEOS.tenthEb.id, ROUTE_VIDEOS.tenthWb.id],
     positions: [
       ASH_10TH_E,
       [49.26226, -123.11492],
@@ -170,7 +170,7 @@ export const TENTH = [
     description: "eb: main to watson",
     type: "quiet",
     oneWay: "required",
-    videoIds: [VIDEOS.tenthEb.id],
+    videoIds: [ROUTE_VIDEOS.tenthEb.id],
     positions: [MAIN_10TH_W, [49.262, -123.10082], WATSON_10TH_S],
   },
   {
@@ -178,7 +178,7 @@ export const TENTH = [
     description: "eb: watson to kingsway",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.tenthEb.id],
+    videoIds: [ROUTE_VIDEOS.tenthEb.id],
     positions: [WATSON_10TH_S, [49.26196, -123.09885], KINGSWAY_10TH_SE],
   },
   {
@@ -186,7 +186,7 @@ export const TENTH = [
     description: "eb: kingsway to mall",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.tenthEb.id],
+    videoIds: [ROUTE_VIDEOS.tenthEb.id],
     positions: [
       KINGSWAY_10TH_SE,
       [49.26195, -123.09764],
@@ -200,7 +200,7 @@ export const TENTH = [
     description: "wb: prince edward-ish to mall",
     type: "quiet",
     oneWay: "required",
-    videoIds: [VIDEOS.tenthWb.id],
+    videoIds: [ROUTE_VIDEOS.tenthWb.id],
     positions: [MALL_10TH_E, [49.262, -123.09715], MALL_10TH_N],
   },
   {
@@ -208,7 +208,7 @@ export const TENTH = [
     description: "wb: mall to main",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.tenthWb.id],
+    videoIds: [ROUTE_VIDEOS.tenthWb.id],
     positions: [
       MALL_10TH_N,
       [49.26203, -123.09758],
@@ -225,14 +225,14 @@ export const TENTH = [
     routeNames: [ROUTES.tenth.name],
     description: "before prince edward",
     type: "quiet",
-    videoIds: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
+    videoIds: [ROUTE_VIDEOS.tenthEb.id, ROUTE_VIDEOS.tenthWb.id],
     positions: [MALL_10TH_E, PRINCE_EDWARD_10TH_N_W],
   },
   {
     routeNames: [ROUTES.tenth.name],
     description: "prince edward",
     type: "dedicated",
-    videoIds: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
+    videoIds: [ROUTE_VIDEOS.tenthEb.id, ROUTE_VIDEOS.tenthWb.id],
     positions: [
       PRINCE_EDWARD_10TH_N_W,
       [49.26191, -123.0961],
@@ -246,7 +246,7 @@ export const TENTH = [
     routeNames: [ROUTES.tenth.name],
     description: "prince edward to windsor",
     type: "quiet",
-    videoIds: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
+    videoIds: [ROUTE_VIDEOS.tenthEb.id, ROUTE_VIDEOS.tenthWb.id],
     positions: [
       PRINCE_EDWARD_10TH_S_E,
       [49.26158, -123.09494],
@@ -263,10 +263,10 @@ export const TENTH = [
     description: "windsor",
     type: "quiet",
     videoIds: [
-      VIDEOS.tenthEb.id,
-      VIDEOS.tenthWb.id,
-      VIDEOS.windsorSb.id,
-      VIDEOS.windsorNb.id,
+      ROUTE_VIDEOS.tenthEb.id,
+      ROUTE_VIDEOS.tenthWb.id,
+      ROUTE_VIDEOS.windsorSb.id,
+      ROUTE_VIDEOS.windsorNb.id,
     ],
     positions: [WINDSOR_10TH, GLEN_10TH],
   },
@@ -274,14 +274,14 @@ export const TENTH = [
     routeNames: [ROUTES.tenth.name],
     description: "windsor to keith",
     type: "quiet",
-    videoIds: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
+    videoIds: [ROUTE_VIDEOS.tenthEb.id, ROUTE_VIDEOS.tenthWb.id],
     positions: [GLEN_10TH, KEITH_10TH],
   },
   {
     routeNames: [ROUTES.tenth.name],
     description: "china creek park",
     type: "dedicated",
-    videoIds: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
+    videoIds: [ROUTE_VIDEOS.tenthEb.id, ROUTE_VIDEOS.tenthWb.id],
     positions: [
       KEITH_10TH,
       [49.26144, -123.07866],
@@ -294,7 +294,7 @@ export const TENTH = [
     routeNames: [ROUTES.tenth.name],
     description: "china creek park to commercial",
     type: "quiet",
-    videoIds: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
+    videoIds: [ROUTE_VIDEOS.tenthEb.id, ROUTE_VIDEOS.tenthWb.id],
     positions: [
       CHINA_CREEK_E,
       [49.26144, -123.07759],
@@ -308,7 +308,7 @@ export const TENTH = [
     description: "commercial to victoria",
     type: "dedicated",
     elevation: 0.5,
-    videoIds: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
+    videoIds: [ROUTE_VIDEOS.tenthEb.id, ROUTE_VIDEOS.tenthWb.id],
     positions: [
       COMMERCIAL_10TH_SE,
       [49.26133, -123.06704],
@@ -324,7 +324,7 @@ export const TENTH = [
     description: "victoria",
     type: "dedicated",
     elevation: 1,
-    videoIds: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
+    videoIds: [ROUTE_VIDEOS.tenthEb.id, ROUTE_VIDEOS.tenthWb.id],
     positions: [VICTORIA_GRANDVIEW_CUT_SE, VICTORIA_GRANDVIEW_CUT_NE],
   },
   {
@@ -332,9 +332,9 @@ export const TENTH = [
     description: "victoria & broadway",
     type: "dedicated",
     elevation: 0.5,
-    videoIds: [VIDEOS.tenthEb.id, VIDEOS.tenthWb.id],
-    videoIdsStartAtEnd: [VIDEOS.tenthWb.id],
-    videoIdsEndAtEnd: [VIDEOS.tenthEb.id],
+    videoIds: [ROUTE_VIDEOS.tenthEb.id, ROUTE_VIDEOS.tenthWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.tenthWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.tenthEb.id],
     positions: [
       VICTORIA_GRANDVIEW_CUT_NE,
       [49.2621, -123.06581],

@@ -1,15 +1,15 @@
 import { FIRST_AGNES, MERIVALE_AGNES } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const AGNES = [
   {
     routeNames: [ROUTES.agnes.name],
     description: "primary",
     type: "dedicated",
-    videoIds: [VIDEOS.agnesWb.id, VIDEOS.agnesEb.id],
-    videoIdsStartAtStart: [VIDEOS.agnesEb.id],
-    videoIdsEndAtStart: [VIDEOS.agnesWb.id],
+    videoIds: [ROUTE_VIDEOS.agnesWb.id, ROUTE_VIDEOS.agnesEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.agnesEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.agnesWb.id],
     positions: [
       [49.20409, -122.91125],
       [49.20483, -122.90985],
@@ -27,8 +27,8 @@ export const AGNES = [
     routeNames: [ROUTES.agnes.name],
     description: "east bit",
     type: "dedicated",
-    videoIds: [VIDEOS.agnesWb.id],
-    videoIdsStartAtEnd: [VIDEOS.agnesWb.id],
+    videoIds: [ROUTE_VIDEOS.agnesWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.agnesWb.id],
     positions: [FIRST_AGNES, [49.20946, -122.90125]],
   },
 ];

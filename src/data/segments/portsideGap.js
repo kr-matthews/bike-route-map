@@ -1,6 +1,6 @@
 import { MCLEAN_POWELL, WALL_OXFORD_PARK } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const SEMLIN_POWELL_W = [49.28484, -123.06378];
 
@@ -10,8 +10,8 @@ export const PORTSIDE_GAP = [
     description: "powell",
     type: "shared",
     undesignated: true,
-    videoIds: [VIDEOS.portsideGapWb.id],
-    videoIdsEndAtStart: [VIDEOS.portsideGapWb.id],
+    videoIds: [ROUTE_VIDEOS.portsideGapWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.portsideGapWb.id],
     positions: [
       MCLEAN_POWELL,
       [49.28326, -123.07397],
@@ -28,8 +28,8 @@ export const PORTSIDE_GAP = [
     description: "wall",
     type: "quiet",
     undesignated: true,
-    videoIds: [VIDEOS.portsideGapWb.id],
-    videoIdsStartAtEnd: [VIDEOS.portsideGapWb.id],
+    videoIds: [ROUTE_VIDEOS.portsideGapWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.portsideGapWb.id],
     positions: [SEMLIN_POWELL_W, [49.285, -123.06352], WALL_OXFORD_PARK],
   },
 ];

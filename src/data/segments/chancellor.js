@@ -10,7 +10,7 @@ import {
   WESBROOK_CHANCELLOR_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const WESBROOK_CHANCELLOR_ES = [49.27315, -123.24832];
 const WESBROOK_CHANCELLOR_WS = [49.27301, -123.24909];
@@ -28,7 +28,7 @@ export const CHANCELLOR = [
   {
     description: "crossing at wesbrook sb",
     oneWay: "recommended",
-    videoIds: [VIDEOS.wesbrookSb.id],
+    videoIds: [ROUTE_VIDEOS.wesbrookSb.id],
     positions: [WESBROOK_CHANCELLOR_WN, WESBROOK_CHANCELLOR_WS],
   },
 
@@ -36,7 +36,7 @@ export const CHANCELLOR = [
     routeNames: [ROUTES.chancellor.name],
     description: "middle shared path",
     type: "mixed",
-    videoIds: [VIDEOS.chancellorWb.id],
+    videoIds: [ROUTE_VIDEOS.chancellorWb.id],
     positions: [
       ACADIA_CHANCELLOR,
       [49.27333, -123.24171],
@@ -93,8 +93,8 @@ export const CHANCELLOR = [
     type: "quiet",
     oneWay: "required",
     hideArrows: true,
-    videoIds: [VIDEOS.offBroadwayEb.id],
-    videoIdsStartAtStart: [VIDEOS.offBroadwayEb.id],
+    videoIds: [ROUTE_VIDEOS.offBroadwayEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.offBroadwayEb.id],
     positions: [BLANCA_8TH_SW, BLANCA_8TH_E],
   },
   {
@@ -102,8 +102,11 @@ export const CHANCELLOR = [
     description: "crossing blanca wb",
     type: "quiet",
     oneWay: "required",
-    videoIds: [VIDEOS.chancellorWb.id, VIDEOS.universityWb.id],
-    videoIdsStartAtStart: [VIDEOS.chancellorWb.id, VIDEOS.universityWb.id],
+    videoIds: [ROUTE_VIDEOS.chancellorWb.id, ROUTE_VIDEOS.universityWb.id],
+    videoIdsStartAtStart: [
+      ROUTE_VIDEOS.chancellorWb.id,
+      ROUTE_VIDEOS.universityWb.id,
+    ],
     positions: [BLANCA_8TH_E, BLANCA_8TH_NW],
   },
   {
@@ -111,7 +114,7 @@ export const CHANCELLOR = [
     description: "east portion, wb",
     type: "quiet",
     oneWay: "required",
-    videoIds: [VIDEOS.chancellorWb.id],
+    videoIds: [ROUTE_VIDEOS.chancellorWb.id],
     positions: [
       BLANCA_8TH_NW,
       [49.26576, -123.21579],
@@ -152,7 +155,7 @@ export const CHANCELLOR = [
     description: "eb: wesbrook 1",
     type: "comfortable",
     oneWay: "required",
-    videoIds: [VIDEOS.wesbrookSb.id],
+    videoIds: [ROUTE_VIDEOS.wesbrookSb.id],
     positions: [
       WESBROOK_CHANCELLOR_WS,
       [49.27301, -123.24893],
@@ -195,7 +198,7 @@ export const CHANCELLOR = [
     description: "wb: to wesbrook",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.chancellorWb.id],
+    videoIds: [ROUTE_VIDEOS.chancellorWb.id],
     positions: [
       ACADIA_CHANCELLOR,
       [49.27357, -123.24219],
@@ -213,8 +216,8 @@ export const CHANCELLOR = [
     description: "wb: wesbrook",
     type: "comfortable",
     oneWay: "required",
-    videoIds: [VIDEOS.wesbrookSb.id, VIDEOS.chancellorWb.id],
-    videoIdsStartAtStart: [VIDEOS.wesbrookSb.id],
+    videoIds: [ROUTE_VIDEOS.wesbrookSb.id, ROUTE_VIDEOS.chancellorWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.wesbrookSb.id],
     positions: [
       WESBROOK_CHANCELLOR_EN,
       [49.27332, -123.24852],
@@ -230,7 +233,7 @@ export const CHANCELLOR = [
     description: "wb: from wesbrook",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.chancellorWb.id],
+    videoIds: [ROUTE_VIDEOS.chancellorWb.id],
     positions: [
       WESBROOK_CHANCELLOR_WN,
       [49.27316, -123.2494],

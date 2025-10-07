@@ -4,15 +4,15 @@ import {
   GLENLYON_FRASER_FORESHORE,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const FRASER_FORESHORE = [
   {
     routeNames: [ROUTES.fraserForeshoreTrail.name],
     description: "boundary to glenlyon",
     type: "mixed",
-    videoIds: [VIDEOS.fraserForeshoreEb.id],
-    videoIdsStartAtStart: [VIDEOS.fraserForeshoreEb.id],
+    videoIds: [ROUTE_VIDEOS.fraserForeshoreEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.fraserForeshoreEb.id],
     positions: [
       BOUNDARY_FRASER_RIVER,
       [49.20144, -123.0234],
@@ -47,8 +47,8 @@ export const FRASER_FORESHORE = [
     routeNames: [ROUTES.fraserForeshoreTrail.name],
     description: "glenlyon to east end",
     type: "mixed",
-    videoIds: [VIDEOS.fraserForeshoreEb.id],
-    videoIdsEndAtEnd: [VIDEOS.fraserForeshoreEb.id],
+    videoIds: [ROUTE_VIDEOS.fraserForeshoreEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.fraserForeshoreEb.id],
     positions: [
       GLENLYON_BYRNE_CREEK,
       [49.19518, -123.00181],

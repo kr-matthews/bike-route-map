@@ -12,7 +12,7 @@ import {
   BLANCA_8TH_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const BLANCA_6TH = [49.26738, -123.21518];
 const SOUTHBOUND_LANE_END = [49.25914, -123.21549];
@@ -23,8 +23,8 @@ export const BLANCA = [
     description: "nb: 16th to 10th",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.blancaNb.id],
-    videoIdsStartAtStart: [VIDEOS.blancaNb.id],
+    videoIds: [ROUTE_VIDEOS.blancaNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.blancaNb.id],
     positions: [
       // BLANCA_16TH_SE,
       BLANCA_16TH_NE,
@@ -38,8 +38,8 @@ export const BLANCA = [
     description: "nb: 10th to 8th",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.blancaNb.id, VIDEOS.universityEb.id],
-    videoIdsEndAtEnd: [VIDEOS.universityEb.id],
+    videoIds: [ROUTE_VIDEOS.blancaNb.id, ROUTE_VIDEOS.universityEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.universityEb.id],
     positions: [BLANCA_10TH_E, BLANCA_8TH_E],
   },
   {
@@ -47,8 +47,8 @@ export const BLANCA = [
     description: "nb: 8th to 4th",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.blancaNb.id],
-    videoIdsEndAtEnd: [VIDEOS.blancaNb.id],
+    videoIds: [ROUTE_VIDEOS.blancaNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.blancaNb.id],
     positions: [BLANCA_8TH_E, [49.26738, -123.21503], BLANCA_4TH_SE],
   },
   {
@@ -63,8 +63,8 @@ export const BLANCA = [
     description: "sb: 4th to 6th",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.blancaSb.id],
-    videoIdsStartAtStart: [VIDEOS.blancaSb.id],
+    videoIds: [ROUTE_VIDEOS.blancaSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.blancaSb.id],
     positions: [BLANCA_4TH_N, BLANCA_4TH_SW, BLANCA_6TH],
   },
   {
@@ -72,7 +72,7 @@ export const BLANCA = [
     description: "sb 6th to 8th",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.blancaSb.id],
+    videoIds: [ROUTE_VIDEOS.blancaSb.id],
     positions: [BLANCA_6TH, BLANCA_8TH_NW],
   },
   {
@@ -80,7 +80,7 @@ export const BLANCA = [
     description: "sb 8th to 10th",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.blancaSb.id, VIDEOS.universityWb.id],
+    videoIds: [ROUTE_VIDEOS.blancaSb.id, ROUTE_VIDEOS.universityWb.id],
     positions: [BLANCA_8TH_NW, BLANCA_8TH_SW, BLANCA_10TH_NW],
   },
   {
@@ -88,7 +88,7 @@ export const BLANCA = [
     description: "sb 10th to lane end",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.blancaSb.id],
+    videoIds: [ROUTE_VIDEOS.blancaSb.id],
     positions: [
       BLANCA_10TH_NW,
       BLANCA_10TH_SW,
@@ -103,8 +103,8 @@ export const BLANCA = [
     type: "shared",
     oneWay: "required",
     hideArrows: true,
-    videoIds: [VIDEOS.blancaSb.id, VIDEOS.sixteenthWb.id],
-    videoIdsStartAtStart: [VIDEOS.sixteenthWb.id],
+    videoIds: [ROUTE_VIDEOS.blancaSb.id, ROUTE_VIDEOS.sixteenthWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.sixteenthWb.id],
     positions: [SOUTHBOUND_LANE_END, BLANCA_16TH_NW_SLIP],
   },
 ];

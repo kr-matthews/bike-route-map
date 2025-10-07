@@ -9,7 +9,7 @@ import {
   RICHARDS_HELMCKEN,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const PARK_COMOX = [49.29186, -123.14468];
 const COMOX_W = [49.29141, -123.14393];
@@ -23,9 +23,12 @@ export const COMOX_HELMCKEN = [
     routeNames: [ROUTES.comoxHelmcken.name],
     description: "through park",
     type: "mixed",
-    videoIds: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
-    videoIdsStartAtStart: [VIDEOS.comoxHelmckenEb.id],
-    videoIdsEndAtStart: [VIDEOS.comoxHelmckenWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.comoxHelmckenEb.id,
+      ROUTE_VIDEOS.comoxHelmckenWb.id,
+    ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.comoxHelmckenEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.comoxHelmckenWb.id],
     positions: [
       PARK_COMOX,
       [49.29182, -123.14449],
@@ -38,14 +41,20 @@ export const COMOX_HELMCKEN = [
     routeNames: [ROUTES.comoxHelmcken.name],
     description: "comox w end to denman",
     type: "quiet",
-    videoIds: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.comoxHelmckenEb.id,
+      ROUTE_VIDEOS.comoxHelmckenWb.id,
+    ],
     positions: [COMOX_W, CHILCO_COMOX, [49.28968, -123.14126], DENMAN_COMOX_W],
   },
   {
     routeNames: [ROUTES.comoxHelmcken.name],
     description: "denman to bidwell",
     type: "dedicated",
-    videoIds: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.comoxHelmckenEb.id,
+      ROUTE_VIDEOS.comoxHelmckenWb.id,
+    ],
     positions: [
       DENMAN_COMOX_W,
       [49.28875, -123.13975],
@@ -59,7 +68,10 @@ export const COMOX_HELMCKEN = [
     routeNames: [ROUTES.comoxHelmcken.name],
     description: "bidwell to thurlow",
     type: "quiet",
-    videoIds: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.comoxHelmckenEb.id,
+      ROUTE_VIDEOS.comoxHelmckenWb.id,
+    ],
     positions: [
       CARDERO_COMOX,
       [49.28586, -123.13539],
@@ -73,7 +85,10 @@ export const COMOX_HELMCKEN = [
     routeNames: [ROUTES.comoxHelmcken.name],
     description: "thurlow to hornby",
     type: "dedicated",
-    videoIds: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.comoxHelmckenEb.id,
+      ROUTE_VIDEOS.comoxHelmckenWb.id,
+    ],
     positions: [
       THURLOW_COMOX_W,
       [49.28184, -123.12911],
@@ -94,7 +109,10 @@ export const COMOX_HELMCKEN = [
     description: "helmcken unofficial part",
     type: "shared",
     undesignated: true,
-    videoIds: [VIDEOS.comoxHelmckenEb.id, VIDEOS.comoxHelmckenWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.comoxHelmckenEb.id,
+      ROUTE_VIDEOS.comoxHelmckenWb.id,
+    ],
     positions: [
       HORNBY_HELMCKEN_SE,
       [49.27944, -123.12649],
@@ -108,8 +126,8 @@ export const COMOX_HELMCKEN = [
     description: "richards to homer",
     type: "shared",
     undesignated: true,
-    videoIds: [VIDEOS.comoxHelmckenEb.id],
-    videoIdsEndAtEnd: [VIDEOS.comoxHelmckenEb.id],
+    videoIds: [ROUTE_VIDEOS.comoxHelmckenEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.comoxHelmckenEb.id],
     positions: [RICHARDS_HELMCKEN, HOMER_HELMCKEN],
   },
   {

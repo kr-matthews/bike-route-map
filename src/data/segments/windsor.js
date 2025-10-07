@@ -10,7 +10,7 @@ import {
   WINDSOR_37TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const LOOP_NE = [49.23123, -123.08501];
 const LOOP_NW = [49.23123, -123.08521];
@@ -33,7 +33,7 @@ export const WINDSOR = [
     routeNames: [ROUTES.windsor.name],
     type: "mixed",
     description: "through park to 43rd",
-    videoIds: [VIDEOS.windsorNb.id, VIDEOS.windsorSb.id],
+    videoIds: [ROUTE_VIDEOS.windsorNb.id, ROUTE_VIDEOS.windsorSb.id],
     positions: [
       LOOP_S,
       [49.23093, -123.0849],
@@ -45,9 +45,9 @@ export const WINDSOR = [
     routeNames: [ROUTES.windsor.name],
     type: "quiet",
     description: "43rd",
-    videoIds: [VIDEOS.windsorNb.id, VIDEOS.windsorSb.id],
-    videoIdsStartAtEnd: [VIDEOS.windsorNb.id],
-    videoIdsEndAtEnd: [VIDEOS.windsorSb.id],
+    videoIds: [ROUTE_VIDEOS.windsorNb.id, ROUTE_VIDEOS.windsorSb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.windsorNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.windsorSb.id],
     positions: [
       ROSS_PARKING_LOT_W,
       [49.23089, -123.08263],
@@ -60,7 +60,7 @@ export const WINDSOR = [
     description: "park nb",
     type: "quiet",
     oneWay: "required",
-    videoIds: [VIDEOS.windsorNb.id],
+    videoIds: [ROUTE_VIDEOS.windsorNb.id],
     positions: [
       LOOP_S,
       [49.23104, -123.08494],
@@ -77,7 +77,7 @@ export const WINDSOR = [
     description: "park sb",
     type: "quiet",
     oneWay: "required",
-    videoIds: [VIDEOS.windsorSb.id],
+    videoIds: [ROUTE_VIDEOS.windsorSb.id],
     positions: [
       WINDSOR_41ST_N,
       [49.23275, -123.08515],
@@ -95,7 +95,7 @@ export const WINDSOR = [
     routeNames: [ROUTES.windsor.name],
     description: "park to 33rd",
     type: "quiet",
-    videoIds: [VIDEOS.windsorNb.id, VIDEOS.windsorSb.id],
+    videoIds: [ROUTE_VIDEOS.windsorNb.id, ROUTE_VIDEOS.windsorSb.id],
     positions: [
       WINDSOR_41ST_N,
       [49.23375, -123.08478],
@@ -110,7 +110,7 @@ export const WINDSOR = [
     routeNames: [ROUTES.windsor.name],
     description: "33rd",
     type: "dedicated",
-    videoIds: [VIDEOS.windsorNb.id, VIDEOS.windsorSb.id],
+    videoIds: [ROUTE_VIDEOS.windsorNb.id, ROUTE_VIDEOS.windsorSb.id],
     positions: [
       WINDSOR_33RD_W_N,
       [49.24031, -123.08421],
@@ -122,7 +122,7 @@ export const WINDSOR = [
     routeNames: [ROUTES.windsor.name],
     description: "33rd to hillcrest",
     type: "quiet",
-    videoIds: [VIDEOS.windsorNb.id, VIDEOS.windsorSb.id],
+    videoIds: [ROUTE_VIDEOS.windsorNb.id, ROUTE_VIDEOS.windsorSb.id],
     positions: [WINDSOR_33RD_E_NN, [49.24141, -123.08406], WINDSOR_31ST],
   },
   {
@@ -130,10 +130,10 @@ export const WINDSOR = [
     description: "hillcrest overlap",
     type: "quiet",
     videoIds: [
-      VIDEOS.windsorNb.id,
-      VIDEOS.windsorSb.id,
-      VIDEOS.hillcrestEb.id,
-      VIDEOS.hillcrestWb.id,
+      ROUTE_VIDEOS.windsorNb.id,
+      ROUTE_VIDEOS.windsorSb.id,
+      ROUTE_VIDEOS.hillcrestEb.id,
+      ROUTE_VIDEOS.hillcrestWb.id,
     ],
     positions: [WINDSOR_31ST, WINDSOR_29TH],
   },
@@ -141,7 +141,7 @@ export const WINDSOR = [
     routeNames: [ROUTES.windsor.name],
     description: "hillcrest to 10th",
     type: "quiet",
-    videoIds: [VIDEOS.windsorSb.id, VIDEOS.windsorNb.id],
+    videoIds: [ROUTE_VIDEOS.windsorSb.id, ROUTE_VIDEOS.windsorNb.id],
     positions: [
       WINDSOR_29TH,
       [49.24545, -123.08395],
@@ -163,9 +163,9 @@ export const WINDSOR = [
     routeNames: [ROUTES.windsor.name],
     description: "10th to cvg",
     type: "quiet",
-    videoIds: [VIDEOS.windsorSb.id, VIDEOS.windsorNb.id],
-    videoIdsStartAtEnd: [VIDEOS.windsorSb.id],
-    videoIdsEndAtEnd: [VIDEOS.windsorNb.id],
+    videoIds: [ROUTE_VIDEOS.windsorSb.id, ROUTE_VIDEOS.windsorNb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.windsorSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.windsorNb.id],
     positions: [
       GLEN_10TH,
       [49.26243, -123.08137],

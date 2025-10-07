@@ -1,6 +1,6 @@
 import { GLADSTONE_38TH, GLADSTONE_BC_PARKWAY } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const GLADSTONE_30TH_S = [49.2428, -123.06268];
 const GLADSTONE_KINGSWAY_N = [49.24359, -123.06178];
@@ -11,9 +11,9 @@ export const GLADSTONE = [
     routeNames: [ROUTES.gladstone.name],
     description: "38th to 30th lanes",
     type: "quiet",
-    videoIds: [VIDEOS.gladstoneNb.id, VIDEOS.gladstoneSb.id],
-    videoIdsStartAtStart: [VIDEOS.gladstoneNb.id],
-    videoIdsEndAtStart: [VIDEOS.gladstoneSb.id],
+    videoIds: [ROUTE_VIDEOS.gladstoneNb.id, ROUTE_VIDEOS.gladstoneSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.gladstoneNb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.gladstoneSb.id],
     positions: [
       GLADSTONE_38TH,
       [49.23747, -123.06208],
@@ -30,7 +30,7 @@ export const GLADSTONE = [
     description: "lanes nb",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.gladstoneNb.id],
+    videoIds: [ROUTE_VIDEOS.gladstoneNb.id],
     positions: [
       GLADSTONE_30TH_S,
       [49.24287, -123.0625],
@@ -43,7 +43,7 @@ export const GLADSTONE = [
     description: "lanes sb",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.gladstoneSb.id],
+    videoIds: [ROUTE_VIDEOS.gladstoneSb.id],
     positions: [
       GLADSTONE_KINGSWAY_N,
       [49.24348, -123.062],
@@ -55,7 +55,7 @@ export const GLADSTONE = [
     routeNames: [ROUTES.gladstone.name],
     description: "kingsway to bc parkway",
     type: "quiet",
-    videoIds: [VIDEOS.gladstoneSb.id, VIDEOS.gladstoneNb.id],
+    videoIds: [ROUTE_VIDEOS.gladstoneSb.id, ROUTE_VIDEOS.gladstoneNb.id],
     positions: [
       GLADSTONE_KINGSWAY_N,
       [49.24473, -123.0605],
@@ -72,7 +72,7 @@ export const GLADSTONE = [
     routeNames: [ROUTES.gladstone.name],
     description: "path near bc parkway",
     type: "mixed",
-    videoIds: [VIDEOS.gladstoneSb.id, VIDEOS.gladstoneNb.id],
+    videoIds: [ROUTE_VIDEOS.gladstoneSb.id, ROUTE_VIDEOS.gladstoneNb.id],
     positions: [
       GLADSTONE_STAINSBURY_N,
       [49.24998, -123.06024],

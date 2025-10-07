@@ -9,7 +9,7 @@ import {
   WOODLAND_GRANDVIEW,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const JOHN_HENDRY_PARK_14TH = [49.25771, -123.0653];
 
@@ -17,8 +17,8 @@ export const MOSAIC = [
   {
     description: "trout lake alley",
     type: "quiet",
-    videoIds: [VIDEOS.mosaicNb.id, VIDEOS.mosaicSb.id],
-    videoIdsEndAtEnd: [VIDEOS.mosaicSb.id],
+    videoIds: [ROUTE_VIDEOS.mosaicNb.id, ROUTE_VIDEOS.mosaicSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.mosaicSb.id],
     positions: [
       JOHN_HENDRY_PARK_14TH,
       [49.25816, -123.06529],
@@ -30,7 +30,7 @@ export const MOSAIC = [
     routeNames: [ROUTES.mosaic.name],
     description: "14th",
     type: "quiet",
-    videoIds: [VIDEOS.mosaicNb.id, VIDEOS.mosaicSb.id],
+    videoIds: [ROUTE_VIDEOS.mosaicNb.id, ROUTE_VIDEOS.mosaicSb.id],
     positions: [
       WOODLAND_14TH,
       [49.25775, -123.06984],
@@ -43,7 +43,7 @@ export const MOSAIC = [
     description: "14th to 7th",
     type: "quiet",
     elevation: 0.5,
-    videoIds: [VIDEOS.mosaicNb.id, VIDEOS.mosaicSb.id],
+    videoIds: [ROUTE_VIDEOS.mosaicNb.id, ROUTE_VIDEOS.mosaicSb.id],
     positions: [
       WOODLAND_14TH,
       [49.25959, -123.07369],
@@ -58,10 +58,10 @@ export const MOSAIC = [
     type: "dedicated",
     elevation: 1,
     videoIds: [
-      VIDEOS.mosaicNb.id,
-      VIDEOS.mosaicSb.id,
-      VIDEOS.offBroadwayWb.id,
-      VIDEOS.offBroadwayEb.id,
+      ROUTE_VIDEOS.mosaicNb.id,
+      ROUTE_VIDEOS.mosaicSb.id,
+      ROUTE_VIDEOS.offBroadwayWb.id,
+      ROUTE_VIDEOS.offBroadwayEb.id,
     ],
     positions: [WOODLAND_7TH, WOODLAND_GRANDVIEW],
   },
@@ -70,7 +70,7 @@ export const MOSAIC = [
     description: "grandview to franklin",
     type: "quiet",
     elevation: 0.5,
-    videoIds: [VIDEOS.mosaicSb.id, VIDEOS.mosaicNb.id],
+    videoIds: [ROUTE_VIDEOS.mosaicSb.id, ROUTE_VIDEOS.mosaicNb.id],
     positions: [
       WOODLAND_GRANDVIEW,
       [49.26601, -123.07357],
@@ -95,13 +95,13 @@ export const MOSAIC = [
     description: "north tip",
     type: "quiet",
     videoIds: [
-      VIDEOS.mosaicSb.id,
-      VIDEOS.mosaicNb.id,
-      VIDEOS.pandoraWb.id,
-      VIDEOS.pandoraEb.id,
+      ROUTE_VIDEOS.mosaicSb.id,
+      ROUTE_VIDEOS.mosaicNb.id,
+      ROUTE_VIDEOS.pandoraWb.id,
+      ROUTE_VIDEOS.pandoraEb.id,
     ],
-    videoIdsStartAtEnd: [VIDEOS.mosaicSb.id, VIDEOS.pandoraEb.id],
-    videoIdsEndAtEnd: [VIDEOS.mosaicNb.id, VIDEOS.pandoraWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.mosaicSb.id, ROUTE_VIDEOS.pandoraEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.mosaicNb.id, ROUTE_VIDEOS.pandoraWb.id],
     positions: [MCLEAN_FRANKLIN, [49.28321, -123.07408], MCLEAN_POWELL],
   },
 ];

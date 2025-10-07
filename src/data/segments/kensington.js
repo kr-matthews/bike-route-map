@@ -6,7 +6,7 @@ import {
   SPERLING_JOE_SAKIC_N,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const KENSINGTON_JOE_SAKIC_NE = [49.25357, -122.96635];
 const KENSINGTON_JOE_SAKIC_NW = [49.25354, -122.96672];
@@ -93,8 +93,8 @@ export const KENSINGTON = [
   },
   {
     description: "connection to cvg",
-    videoIds: [VIDEOS.kensingtonSb.id],
-    videoIdsStartAtEnd: [VIDEOS.kensingtonSb.id],
+    videoIds: [ROUTE_VIDEOS.kensingtonSb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.kensingtonSb.id],
     positions: [
       KENSINGTON_STILL_CREEK_N,
       [49.2595, -122.96898],
@@ -139,9 +139,9 @@ export const KENSINGTON = [
     description: "west side: canada way to highway",
     elevation: 0.5,
     videoIds: [
-      VIDEOS.kensingtonNb.id,
-      VIDEOS.kensingtonSb.id,
-      VIDEOS.lakesNb.id,
+      ROUTE_VIDEOS.kensingtonNb.id,
+      ROUTE_VIDEOS.kensingtonSb.id,
+      ROUTE_VIDEOS.lakesNb.id,
     ],
     positions: [
       KENSINGTON_CANADA_NW,
@@ -164,9 +164,9 @@ export const KENSINGTON = [
     description: "west side: overpass",
     elevation: 1,
     videoIds: [
-      VIDEOS.kensingtonNb.id,
-      VIDEOS.kensingtonSb.id,
-      VIDEOS.lakesNb.id,
+      ROUTE_VIDEOS.kensingtonNb.id,
+      ROUTE_VIDEOS.kensingtonSb.id,
+      ROUTE_VIDEOS.lakesNb.id,
     ],
     positions: [OVERPASS_START, OVERPASS_END],
   },
@@ -176,9 +176,9 @@ export const KENSINGTON = [
     description: "west side: highway to sprott",
     elevation: 0.5,
     videoIds: [
-      VIDEOS.kensingtonNb.id,
-      VIDEOS.kensingtonSb.id,
-      VIDEOS.lakesNb.id,
+      ROUTE_VIDEOS.kensingtonNb.id,
+      ROUTE_VIDEOS.kensingtonSb.id,
+      ROUTE_VIDEOS.lakesNb.id,
     ],
     positions: [
       OVERPASS_END,
@@ -201,7 +201,7 @@ export const KENSINGTON = [
   {
     routeNames: [ROUTES.kensington.name],
     description: "west side: sprott to still creek",
-    videoIds: [VIDEOS.kensingtonSb.id, VIDEOS.kensingtonNb.id],
+    videoIds: [ROUTE_VIDEOS.kensingtonSb.id, ROUTE_VIDEOS.kensingtonNb.id],
     positions: [
       KENSINGTON_SPROTT_W,
       [49.25004, -122.96677],
@@ -232,7 +232,7 @@ export const KENSINGTON = [
     routeNames: [ROUTES.kensington.name],
     description: "west side: still creek to overpass",
     elevation: 0.5,
-    videoIds: [VIDEOS.kensingtonNb.id],
+    videoIds: [ROUTE_VIDEOS.kensingtonNb.id],
     positions: [
       KENSINGTON_STILL_CREEK_N,
       [49.25959, -122.96912], // technically, elevation starts here
@@ -243,7 +243,7 @@ export const KENSINGTON = [
     routeNames: [ROUTES.kensington.name],
     description: "lougheed overpass",
     elevation: 1,
-    videoIds: [VIDEOS.kensingtonNb.id],
+    videoIds: [ROUTE_VIDEOS.kensingtonNb.id],
     positions: [
       LOUGHEED_OVERPASS_S,
       [49.2601, -122.96881],
@@ -256,8 +256,8 @@ export const KENSINGTON = [
     routeNames: [ROUTES.kensington.name],
     description: "west side: overpass to broadway",
     elevation: 0.5,
-    videoIds: [VIDEOS.kensingtonNb.id],
-    videoIdsEndAtEnd: [VIDEOS.kensingtonNb.id],
+    videoIds: [ROUTE_VIDEOS.kensingtonNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.kensingtonNb.id],
     positions: [
       LOUGHEED_OVERPASS_N,
       [49.2608, -122.96785],

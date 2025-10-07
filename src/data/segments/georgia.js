@@ -7,7 +7,7 @@ import {
   STANLEY_PARK_CAUSEWAY_GEORGIA_N,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const GEORGIA = [
   {
@@ -15,8 +15,8 @@ export const GEORGIA = [
     description: "eb",
     oneWay: "required",
     type: "painted",
-    videoIds: [VIDEOS.lionsGateBridgeSb.id],
-    videoIdsEndAtEnd: [VIDEOS.lionsGateBridgeSb.id],
+    videoIds: [ROUTE_VIDEOS.lionsGateBridgeSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.lionsGateBridgeSb.id],
     positions: [
       CHILCO_GEORGIA_S,
       [49.29352, -123.13537],
@@ -32,7 +32,7 @@ export const GEORGIA = [
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.lionsGateBridgeNb.id],
+    videoIds: [ROUTE_VIDEOS.lionsGateBridgeNb.id],
     positions: [
       CARDERO_GEORGIA_N,
       [49.29166, -123.13203],

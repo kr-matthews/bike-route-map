@@ -7,7 +7,7 @@ import {
   MCKAY_VICTORY,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const ANTRIM_BERESFORD = [49.21917, -122.98504];
 const MACPHERSON_BERESFORD_E = [49.21875, -122.9828];
@@ -24,9 +24,9 @@ export const VICTORY = [
     routeNames: [ROUTES.victory.name],
     description: "patterson to beresford",
     type: "quiet",
-    videoIds: [VIDEOS.victoryEb.id, VIDEOS.victoryWb.id],
-    videoIdsStartAtStart: [VIDEOS.victoryEb.id],
-    videoIdsEndAtStart: [VIDEOS.victoryWb.id],
+    videoIds: [ROUTE_VIDEOS.victoryEb.id, ROUTE_VIDEOS.victoryWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.victoryEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.victoryWb.id],
     positions: [
       [49.2184, -123.01233],
       [49.21839, -123.01057],
@@ -48,7 +48,7 @@ export const VICTORY = [
     routeNames: [ROUTES.victory.name],
     description: "busy beresford",
     type: "shared",
-    videoIds: [VIDEOS.victoryWb.id, VIDEOS.victoryEb.id],
+    videoIds: [ROUTE_VIDEOS.victoryWb.id, ROUTE_VIDEOS.victoryEb.id],
     positions: [
       ANTRIM_BERESFORD,
       [49.21876, -122.98307],
@@ -59,7 +59,7 @@ export const VICTORY = [
     routeNames: [ROUTES.victory.name],
     description: "macpherson to hedley",
     type: "quiet",
-    videoIds: [VIDEOS.victoryWb.id, VIDEOS.victoryEb.id],
+    videoIds: [ROUTE_VIDEOS.victoryWb.id, ROUTE_VIDEOS.victoryEb.id],
     positions: [
       MACPHERSON_BERESFORD_E,
       [49.2184, -122.98113],
@@ -81,15 +81,15 @@ export const VICTORY = [
     description: "hedley, to parking lot",
     type: "quiet",
     undesignated: true,
-    videoIds: [VIDEOS.victoryWb.id, VIDEOS.victoryEb.id],
+    videoIds: [ROUTE_VIDEOS.victoryWb.id, ROUTE_VIDEOS.victoryEb.id],
     positions: [HEDLEY_NEVILLE, [49.213, -122.96735], RON_MCLEAN_PARK],
   },
   {
     description: "trail to bc parkway",
     type: "comfortable",
     undesignated: true,
-    videoIds: [VIDEOS.victoryWb.id, VIDEOS.victoryEb.id],
-    videoIdsEndAtEnd: [VIDEOS.victoryEb.id],
+    videoIds: [ROUTE_VIDEOS.victoryWb.id, ROUTE_VIDEOS.victoryEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.victoryEb.id],
     positions: [
       RON_MCLEAN_PARK,
       [49.21296, -122.96654],

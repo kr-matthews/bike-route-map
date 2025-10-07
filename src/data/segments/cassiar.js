@@ -5,7 +5,7 @@ import {
   CASSIAR_SKEENA_PATH,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const CASSIAR_HASTINGS_SE = [49.28073, -123.03082];
 const CASSIAR_HASTINGS_NE = [49.28153, -123.03084];
@@ -15,8 +15,8 @@ export const CASSIAR = [
     routeNames: [ROUTES.cassiar.name],
     description: "adanac to hastings",
     type: "quiet",
-    videoIds: [VIDEOS.cassiarSb.id],
-    videoIdsEndAtStart: [VIDEOS.cassiarSb.id],
+    videoIds: [ROUTE_VIDEOS.cassiarSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.cassiarSb.id],
     positions: [
       CASSIAR_ADANAC,
       [49.27782, -123.03086],
@@ -30,7 +30,7 @@ export const CASSIAR = [
     routeNames: [ROUTES.cassiar.name],
     description: "crossing hastings",
     type: "other",
-    videoIds: [VIDEOS.cassiarSb.id],
+    videoIds: [ROUTE_VIDEOS.cassiarSb.id],
     positions: [
       CASSIAR_HASTINGS_SE,
       [49.28099, -123.03128],
@@ -42,7 +42,7 @@ export const CASSIAR = [
     routeNames: [ROUTES.cassiar.name],
     description: "hastings to dundas (hastings park connection)",
     type: "quiet",
-    videoIds: [VIDEOS.cassiarSb.id],
+    videoIds: [ROUTE_VIDEOS.cassiarSb.id],
     positions: [
       CASSIAR_HASTINGS_NE,
       [49.28206, -123.03083],
@@ -55,8 +55,8 @@ export const CASSIAR = [
     routeNames: [ROUTES.cassiar.name],
     description: "dundas (hastings park connection) to cambridge",
     type: "quiet",
-    videoIds: [VIDEOS.cassiarSb.id, VIDEOS.secondNarrowsNb.id],
-    videoIdsStartAtStart: [VIDEOS.secondNarrowsNb.id],
+    videoIds: [ROUTE_VIDEOS.cassiarSb.id, ROUTE_VIDEOS.secondNarrowsNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.secondNarrowsNb.id],
     positions: [
       CASSIAR_DUNDAS_S,
       [49.28557, -123.03087],
@@ -71,7 +71,7 @@ export const CASSIAR = [
     routeNames: [ROUTES.cassiar.name],
     description: "path",
     type: "mixed",
-    videoIds: [VIDEOS.cassiarSb.id, VIDEOS.secondNarrowsNb.id],
+    videoIds: [ROUTE_VIDEOS.cassiarSb.id, ROUTE_VIDEOS.secondNarrowsNb.id],
     positions: [
       CASSIAR_CAMBRIDGE,
       [49.28701, -123.02974],

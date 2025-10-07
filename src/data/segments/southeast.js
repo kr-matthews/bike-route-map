@@ -12,7 +12,7 @@ import {
   STATION_HILL_SOUTHPOINT_SE,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const GRIFFITHS_SOUTHPOINT_E = [49.21125, -122.95549];
 const CUMBERLAND_ARMSTRONG = [49.22973, -122.91514];
@@ -28,7 +28,7 @@ export const SOUTHEAST = [
     description: "15th nb",
     type: "combined",
     oneWay: "required",
-    videoIds: [VIDEOS.highlandParkLineWb.id],
+    videoIds: [ROUTE_VIDEOS.highlandParkLineWb.id],
     positions: [FIFTEENTH_13TH_E, FIFTEENTH_14TH, FIFTEENTH_14TH_N],
   },
   {
@@ -41,7 +41,7 @@ export const SOUTHEAST = [
     routeNames: [ROUTES.edmonds.name],
     description: "15th",
     type: "mixed",
-    videoIds: [VIDEOS.highlandParkLineWb.id],
+    videoIds: [ROUTE_VIDEOS.highlandParkLineWb.id],
     positions: [
       FIFTEENTH_11TH,
       [49.21173, -122.9435],
@@ -54,15 +54,15 @@ export const SOUTHEAST = [
     routeNames: [ROUTES.edmonds.name],
     description: "crossing at 13th",
     type: "mixed",
-    videoIds: [VIDEOS.highlandParkLineWb.id],
+    videoIds: [ROUTE_VIDEOS.highlandParkLineWb.id],
     positions: [FIFTEENTH_13TH_W, FIFTEENTH_13TH_E],
   },
   {
     routeNames: [ROUTES.edmonds.name],
     description: "connection from london 1",
     type: "quiet",
-    videoIds: [VIDEOS.highlandParkLineWb.id],
-    videoIdsStartAtStart: [VIDEOS.highlandParkLineWb.id],
+    videoIds: [ROUTE_VIDEOS.highlandParkLineWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.highlandParkLineWb.id],
     positions: [
       FIFTEENTH_LONDON,
       [49.21081, -122.94259],
@@ -82,7 +82,7 @@ export const SOUTHEAST = [
     description: "southpoint eb",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.southeastEb.id],
+    videoIds: [ROUTE_VIDEOS.southeastEb.id],
     positions: [
       STATION_HILL_SOUTHPOINT_SE,
       [49.21002, -122.95785],
@@ -98,8 +98,8 @@ export const SOUTHEAST = [
     description: "southpoint wb",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.southeastWb.id],
-    videoIdsEndAtEnd: [VIDEOS.southeastWb.id],
+    videoIds: [ROUTE_VIDEOS.southeastWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.southeastWb.id],
     positions: [
       GRIFFITHS_SOUTHPOINT_E,
       [49.21129, -122.95556],
@@ -114,7 +114,7 @@ export const SOUTHEAST = [
     routeNames: [ROUTES.southeast.name, ROUTES.edmonds.name],
     description: "stride",
     type: "quiet",
-    videoIds: [VIDEOS.southeastEb.id, VIDEOS.southeastWb.id],
+    videoIds: [ROUTE_VIDEOS.southeastEb.id, ROUTE_VIDEOS.southeastWb.id],
     positions: [
       GRIFFITHS_SOUTHPOINT_E,
       [49.21129, -122.9554],
@@ -131,9 +131,9 @@ export const SOUTHEAST = [
     description: "stride to 14th",
     type: "quiet",
     videoIds: [
-      VIDEOS.southeastEb.id,
-      VIDEOS.southeastWb.id,
-      VIDEOS.highlandParkLineWb.id,
+      ROUTE_VIDEOS.southeastEb.id,
+      ROUTE_VIDEOS.southeastWb.id,
+      ROUTE_VIDEOS.highlandParkLineWb.id,
     ],
     positions: [FIFTEENTH_STRIDE, FIFTEENTH_14TH_N],
   },
@@ -141,7 +141,7 @@ export const SOUTHEAST = [
     routeNames: [ROUTES.southeast.name, ROUTES.edmonds.name],
     description: "14th to 12th",
     type: "quiet",
-    videoIds: [VIDEOS.southeastEb.id, VIDEOS.southeastWb.id],
+    videoIds: [ROUTE_VIDEOS.southeastEb.id, ROUTE_VIDEOS.southeastWb.id],
     positions: [
       FIFTEENTH_14TH_N,
       [49.21329, -122.9455], // FIFTEENTH_13TH_N
@@ -152,7 +152,7 @@ export const SOUTHEAST = [
     routeNames: [ROUTES.southeast.name],
     description: "15th to cumberland",
     type: "quiet",
-    videoIds: [VIDEOS.southeastEb.id, VIDEOS.southeastWb.id],
+    videoIds: [ROUTE_VIDEOS.southeastEb.id, ROUTE_VIDEOS.southeastWb.id],
     positions: [
       FIFTEENTH_12TH,
       [49.21367, -122.94203],
@@ -180,7 +180,7 @@ export const SOUTHEAST = [
     routeNames: [ROUTES.southeast.name],
     description: "armstrong",
     type: "shared",
-    videoIds: [VIDEOS.southeastWb.id, VIDEOS.southeastEb.id],
+    videoIds: [ROUTE_VIDEOS.southeastWb.id, ROUTE_VIDEOS.southeastEb.id],
     positions: [
       CUMBERLAND_ARMSTRONG,
       [49.23065, -122.91343],
@@ -194,9 +194,9 @@ export const SOUTHEAST = [
     description: "armstrong east end",
     type: "shared",
     oneWay: "recommended",
-    videoIds: [VIDEOS.southeastWb.id, VIDEOS.southeastEb.id],
-    videoIdsStartAtEnd: [VIDEOS.southeastWb.id],
-    videoIdsEndAtEnd: [VIDEOS.southeastEb.id],
+    videoIds: [ROUTE_VIDEOS.southeastWb.id, ROUTE_VIDEOS.southeastEb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.southeastWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.southeastEb.id],
     positions: [
       CASCADE_ARMSTRONG,
       [49.23523, -122.90497],

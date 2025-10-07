@@ -1,6 +1,6 @@
 import { MAIN_ALEXANDER, SEAWALL_WATERFRONT } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const MAIN_ELEVATED_N = [49.28522, -123.10017];
 const MAIN_ELEVATED_S = [49.28425, -123.09945];
@@ -15,8 +15,8 @@ export const WATERFRONT = [
     description: "pre-underground",
     type: "mixed",
     elevation: -0.5,
-    videoIds: [VIDEOS.waterfrontEb.id, VIDEOS.waterfrontWb.id],
-    videoIdsStartAtStart: [VIDEOS.waterfrontEb.id],
+    videoIds: [ROUTE_VIDEOS.waterfrontEb.id, ROUTE_VIDEOS.waterfrontWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.waterfrontEb.id],
     positions: [SEAWALL_WATERFRONT, [49.28964, -123.11859], UNDERGROUND_W],
   },
   {
@@ -24,7 +24,7 @@ export const WATERFRONT = [
     description: "underground path",
     type: "mixed",
     elevation: -1,
-    videoIds: [VIDEOS.waterfrontEb.id, VIDEOS.waterfrontWb.id],
+    videoIds: [ROUTE_VIDEOS.waterfrontEb.id, ROUTE_VIDEOS.waterfrontWb.id],
     positions: [UNDERGROUND_W, [49.28913, -123.11808], WATERFRONT_W],
   },
   {
@@ -32,7 +32,7 @@ export const WATERFRONT = [
     description: "waterfront underground",
     type: "shared",
     elevation: -1,
-    videoIds: [VIDEOS.waterfrontEb.id, VIDEOS.waterfrontWb.id],
+    videoIds: [ROUTE_VIDEOS.waterfrontEb.id, ROUTE_VIDEOS.waterfrontWb.id],
     positions: [
       WATERFRONT_W,
       [49.28891, -123.11801],
@@ -46,7 +46,7 @@ export const WATERFRONT = [
     description: "waterfront surface",
     type: "shared",
     elevation: -0.5,
-    videoIds: [VIDEOS.waterfrontWb.id, VIDEOS.waterfrontEb.id],
+    videoIds: [ROUTE_VIDEOS.waterfrontWb.id, ROUTE_VIDEOS.waterfrontEb.id],
     positions: [
       UNDERGROUND_E,
       [49.28709, -123.11211],
@@ -72,7 +72,7 @@ export const WATERFRONT = [
     description: "pre-loop",
     type: "shared",
     elevation: 0.5,
-    videoIds: [VIDEOS.waterfrontWb.id, VIDEOS.waterfrontEb.id],
+    videoIds: [ROUTE_VIDEOS.waterfrontWb.id, ROUTE_VIDEOS.waterfrontEb.id],
     positions: [MAIN_WATERFRONT, MAIN_ELEVATED_N],
   },
   {
@@ -80,7 +80,7 @@ export const WATERFRONT = [
     description: "loop",
     type: "shared",
     elevation: 1,
-    videoIds: [VIDEOS.waterfrontWb.id, VIDEOS.waterfrontEb.id],
+    videoIds: [ROUTE_VIDEOS.waterfrontWb.id, ROUTE_VIDEOS.waterfrontEb.id],
     positions: [
       MAIN_ELEVATED_N,
       [49.28524, -123.09988],
@@ -98,9 +98,9 @@ export const WATERFRONT = [
     description: "post-loop",
     type: "shared",
     elevation: 0.5,
-    videoIds: [VIDEOS.waterfrontWb.id, VIDEOS.waterfrontEb.id],
-    videoIdsStartAtEnd: [VIDEOS.waterfrontWb.id],
-    videoIdsEndAtEnd: [VIDEOS.waterfrontEb.id],
+    videoIds: [ROUTE_VIDEOS.waterfrontWb.id, ROUTE_VIDEOS.waterfrontEb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.waterfrontWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.waterfrontEb.id],
     positions: [MAIN_ELEVATED_S, MAIN_ALEXANDER],
   },
 ];

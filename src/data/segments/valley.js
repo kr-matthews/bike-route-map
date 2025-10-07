@@ -13,7 +13,7 @@ import {
   TRAFALGAR_8TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const VALLEY_33RD_N = [49.24208, -123.14949];
 const VALLEY_33RD_S = [49.24201, -123.14941];
@@ -23,8 +23,8 @@ export const VALLEY = [
     description: "33rd: valley to cypress",
     oneWay: "required",
     type: "painted",
-    videoIds: [VIDEOS.valleySb.id],
-    videoIdsEndAtEnd: [VIDEOS.valleySb.id],
+    videoIds: [ROUTE_VIDEOS.valleySb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.valleySb.id],
     positions: [VALLEY_33RD_S, ARBUTUS_GREENWAY_33RD_S, ANGUS_33RD_S],
   },
   {
@@ -37,8 +37,8 @@ export const VALLEY = [
     description: "33rd: arbutus greenway to valley",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.valleyNb.id],
-    videoIdsStartAtStart: [VIDEOS.valleyNb.id],
+    videoIds: [ROUTE_VIDEOS.valleyNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.valleyNb.id],
     positions: [ARBUTUS_GREENWAY_33RD_N, VALLEY_33RD_N],
   },
   {
@@ -57,14 +57,14 @@ export const VALLEY = [
     routeNames: [ROUTES.valley.name],
     description: "crossing 33rd",
     type: "quiet",
-    videoIds: [VIDEOS.valleySb.id],
+    videoIds: [ROUTE_VIDEOS.valleySb.id],
     positions: [VALLEY_33RD_S, VALLEY_33RD_N],
   },
   {
     routeNames: [ROUTES.valley.name],
     description: "33rd to 29th",
     type: "quiet",
-    videoIds: [VIDEOS.valleyNb.id, VIDEOS.valleySb.id],
+    videoIds: [ROUTE_VIDEOS.valleyNb.id, ROUTE_VIDEOS.valleySb.id],
     positions: [
       VALLEY_33RD_N,
       [49.24246, -123.1498],
@@ -82,8 +82,8 @@ export const VALLEY = [
     routeNames: [ROUTES.valley.name],
     description: "north of 29th",
     type: "quiet",
-    videoIds: [VIDEOS.valleySb.id, VIDEOS.valleyNb.id],
-    videoIdsEndAtEnd: [VIDEOS.valleyNb.id],
+    videoIds: [ROUTE_VIDEOS.valleySb.id, ROUTE_VIDEOS.valleyNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.valleyNb.id],
     positions: [
       VALLEY_EDDINGTON,
       [49.24718, -123.15741],

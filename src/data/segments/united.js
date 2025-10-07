@@ -7,7 +7,7 @@ import {
   UNITED_PORT_MANN,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const BRUNETTE_RIVER_BRAID_NW = [49.22931, -122.87744];
 const BRUNETTE_RIVER_BRAID_NE = [49.22914, -122.87706];
@@ -70,7 +70,7 @@ export const UNITED = [
     description: "braid: west of old bridge",
     elevation: 0.5,
     type: "mixed",
-    videoIds: [VIDEOS.unitedEB.id, VIDEOS.unitedWB.id],
+    videoIds: [ROUTE_VIDEOS.unitedEB.id, ROUTE_VIDEOS.unitedWB.id],
     positions: [
       CANFOR_BRAID,
       [49.22978, -122.87835],
@@ -84,14 +84,14 @@ export const UNITED = [
     description: "braid bridge",
     type: "other",
     elevation: 1,
-    videoIds: [VIDEOS.unitedEB.id, VIDEOS.unitedWB.id],
+    videoIds: [ROUTE_VIDEOS.unitedEB.id, ROUTE_VIDEOS.unitedWB.id],
     positions: [BRUNETTE_RIVER_BRAID_NW, BRUNETTE_RIVER_BRAID_NE],
   },
   {
     routeNames: [ROUTES.united.name],
     description: "braid/united: bridge to king edward",
     type: "mixed",
-    videoIds: [VIDEOS.unitedEB.id, VIDEOS.unitedWB.id],
+    videoIds: [ROUTE_VIDEOS.unitedEB.id, ROUTE_VIDEOS.unitedWB.id],
     positions: [
       BRUNETTE_RIVER_BRAID_NE,
       [49.22903, -122.8768],
@@ -117,7 +117,7 @@ export const UNITED = [
     routeNames: [ROUTES.united.name],
     description: "on road, king edward to brigantine",
     type: "shared",
-    videoIds: [VIDEOS.unitedWB.id, VIDEOS.unitedEB.id],
+    videoIds: [ROUTE_VIDEOS.unitedWB.id, ROUTE_VIDEOS.unitedEB.id],
     positions: [
       KING_EDWARD_UNITED_NW,
       [49.2305, -122.86142],
@@ -138,7 +138,7 @@ export const UNITED = [
     routeNames: [ROUTES.united.name],
     description: "brigantine, hartley, fawcett",
     type: "quiet",
-    videoIds: [VIDEOS.unitedWB.id, VIDEOS.unitedEB.id],
+    videoIds: [ROUTE_VIDEOS.unitedWB.id, ROUTE_VIDEOS.unitedEB.id],
     positions: [
       BRIGANTINE_UNITED,
       BRIGANTINE_HARTLEY,
@@ -154,7 +154,7 @@ export const UNITED = [
     routeNames: [ROUTES.united.name],
     description: "fawcett to leeder",
     type: "mixed",
-    videoIds: [VIDEOS.unitedWB.id, VIDEOS.unitedEB.id],
+    videoIds: [ROUTE_VIDEOS.unitedWB.id, ROUTE_VIDEOS.unitedEB.id],
     positions: [
       FAWCETT_UNITED_S,
       [49.22854, -122.8341],
@@ -177,7 +177,11 @@ export const UNITED = [
     routeNames: [ROUTES.united.name],
     description: "leeder to port mann",
     type: "mixed",
-    videoIds: [VIDEOS.unitedWB.id, VIDEOS.lougheedEb.id, VIDEOS.unitedEB.id],
+    videoIds: [
+      ROUTE_VIDEOS.unitedWB.id,
+      ROUTE_VIDEOS.lougheedEb.id,
+      ROUTE_VIDEOS.unitedEB.id,
+    ],
     positions: [
       LEEDER_UNITED,
       [49.2276, -122.83012],
@@ -212,16 +216,16 @@ export const UNITED = [
     description: "under port mann",
     type: "mixed",
     videoIds: [
-      VIDEOS.portMannEB.id,
-      VIDEOS.unitedWB.id,
-      VIDEOS.lougheedEb.id,
-      VIDEOS.portMannWB.id,
-      VIDEOS.unitedEB.id,
+      ROUTE_VIDEOS.portMannEB.id,
+      ROUTE_VIDEOS.unitedWB.id,
+      ROUTE_VIDEOS.lougheedEb.id,
+      ROUTE_VIDEOS.portMannWB.id,
+      ROUTE_VIDEOS.unitedEB.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.portMannEB.id],
-    videoIdsStartAtEnd: [VIDEOS.unitedWB.id],
-    videoIdsEndAtStart: [VIDEOS.portMannWB.id],
-    videoIdsEndAtEnd: [VIDEOS.unitedEB.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.portMannEB.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.unitedWB.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.portMannWB.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.unitedEB.id],
     positions: [
       UNITED_S_OF_PORT_MANN,
       [49.22729, -122.82021],

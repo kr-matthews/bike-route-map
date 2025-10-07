@@ -43,7 +43,7 @@ import {
   BC_PARKWAY_TIN_SOLDIER,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const KEITH_6TH_NE = [49.26531, -123.07928];
 const KEITH_6TH_NW = [49.26531, -123.07949];
@@ -160,18 +160,18 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "east park path - north",
     type: "mixed",
     videoIds: [
-      VIDEOS.centralValleyVancouverEb.id,
-      VIDEOS.centralValleyVancouverWb.id,
-      VIDEOS.ontarioSb.id,
-      VIDEOS.ontarioNb.id,
+      ROUTE_VIDEOS.centralValleyVancouverEb.id,
+      ROUTE_VIDEOS.centralValleyVancouverWb.id,
+      ROUTE_VIDEOS.ontarioSb.id,
+      ROUTE_VIDEOS.ontarioNb.id,
     ],
     videoIdsStartAtStart: [
-      VIDEOS.centralValleyVancouverEb.id,
-      VIDEOS.ontarioSb.id,
+      ROUTE_VIDEOS.centralValleyVancouverEb.id,
+      ROUTE_VIDEOS.ontarioSb.id,
     ],
     videoIdsEndAtStart: [
-      VIDEOS.centralValleyVancouverWb.id,
-      VIDEOS.ontarioNb.id,
+      ROUTE_VIDEOS.centralValleyVancouverWb.id,
+      ROUTE_VIDEOS.ontarioNb.id,
     ],
     positions: [ONTARIO_PATH_SEASIDE, ONTARIO_PATH_ATHLETES],
   },
@@ -180,8 +180,8 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "east park path - south",
     type: "mixed",
     videoIds: [
-      VIDEOS.centralValleyVancouverEb.id,
-      VIDEOS.centralValleyVancouverWb.id,
+      ROUTE_VIDEOS.centralValleyVancouverEb.id,
+      ROUTE_VIDEOS.centralValleyVancouverWb.id,
     ],
     positions: [ONTARIO_PATH_ATHLETES, EAST_PARK_S, ONTARIO_1ST_NE],
   },
@@ -189,7 +189,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routeNames: [ROUTES.centralValleyGreenway.name],
     description: "crossing 1st path",
     type: "mixed",
-    videoIds: [VIDEOS.centralValleyVancouverEb.id],
+    videoIds: [ROUTE_VIDEOS.centralValleyVancouverEb.id],
     positions: [ONTARIO_1ST_NE, ONTARIO_1ST_SE],
   },
   {
@@ -197,7 +197,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "1st quebec to lorne",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.centralValleyVancouverEb.id],
+    videoIds: [ROUTE_VIDEOS.centralValleyVancouverEb.id],
     positions: [
       QUEBEC_1ST_SE,
       MAIN_1ST_SW,
@@ -212,7 +212,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "1st main to quebec",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.centralValleyVancouverWb.id],
+    videoIds: [ROUTE_VIDEOS.centralValleyVancouverWb.id],
     positions: [
       MAIN_1ST_NE,
       [49.27016, -123.10051],
@@ -225,8 +225,8 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "detour: scotia to emily carr",
     type: "dedicated",
     videoIds: [
-      VIDEOS.centralValleyVancouverEb.id,
-      VIDEOS.centralValleyVancouverWb.id,
+      ROUTE_VIDEOS.centralValleyVancouverEb.id,
+      ROUTE_VIDEOS.centralValleyVancouverWb.id,
     ],
     positions: [
       SCOTIA_1ST,
@@ -296,7 +296,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "lorne to main",
     type: "quiet",
     oneWay: "recommended",
-    videoIds: [VIDEOS.centralValleyVancouverWb.id],
+    videoIds: [ROUTE_VIDEOS.centralValleyVancouverWb.id],
     positions: [LORNE_1ST, MAIN_1ST_NE],
   },
   {
@@ -304,8 +304,8 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "lorne to scotia",
     type: "quiet",
     videoIds: [
-      VIDEOS.centralValleyVancouverEb.id,
-      VIDEOS.centralValleyVancouverWb.id,
+      ROUTE_VIDEOS.centralValleyVancouverEb.id,
+      ROUTE_VIDEOS.centralValleyVancouverWb.id,
     ],
     positions: [LORNE_1ST, SCOTIA_1ST],
   },
@@ -315,8 +315,8 @@ export const CENTRAL_VALLEY_GREENWAY = [
     type: "comfortable",
     elevation: 0.5,
     videoIds: [
-      VIDEOS.centralValleyVancouverEb.id,
-      VIDEOS.centralValleyVancouverWb.id,
+      ROUTE_VIDEOS.centralValleyVancouverEb.id,
+      ROUTE_VIDEOS.centralValleyVancouverWb.id,
     ],
     positions: [
       GREAT_NORTHERN_SPLIT,
@@ -342,8 +342,8 @@ export const CENTRAL_VALLEY_GREENWAY = [
     type: "mixed",
     elevation: 1,
     videoIds: [
-      VIDEOS.centralValleyVancouverEb.id,
-      VIDEOS.centralValleyVancouverWb.id,
+      ROUTE_VIDEOS.centralValleyVancouverEb.id,
+      ROUTE_VIDEOS.centralValleyVancouverWb.id,
     ],
     positions: [CLARK_6TH_NE, CLARK_GRANDVIEW_SE],
   },
@@ -353,8 +353,8 @@ export const CENTRAL_VALLEY_GREENWAY = [
     type: "dedicated",
     elevation: 0.5,
     videoIds: [
-      VIDEOS.centralValleyVancouverEb.id,
-      VIDEOS.centralValleyVancouverWb.id,
+      ROUTE_VIDEOS.centralValleyVancouverEb.id,
+      ROUTE_VIDEOS.centralValleyVancouverWb.id,
     ],
     positions: [
       CLARK_GRANDVIEW_SE,
@@ -370,10 +370,10 @@ export const CENTRAL_VALLEY_GREENWAY = [
     type: "dedicated",
     elevation: 0.5,
     videoIds: [
-      VIDEOS.centralValleyVancouverEb.id,
-      VIDEOS.centralValleyVancouverWb.id,
-      VIDEOS.offBroadwayWb.id,
-      VIDEOS.offBroadwayEb.id,
+      ROUTE_VIDEOS.centralValleyVancouverEb.id,
+      ROUTE_VIDEOS.centralValleyVancouverWb.id,
+      ROUTE_VIDEOS.offBroadwayWb.id,
+      ROUTE_VIDEOS.offBroadwayEb.id,
     ],
     positions: [WOODLAND_GRANDVIEW, COMMERCIAL_GRANDVIEW],
   },
@@ -382,12 +382,12 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "commercial to/from lane",
     type: "dedicated",
     videoIds: [
-      VIDEOS.centralValleyVancouverEbAlt.id,
-      VIDEOS.centralValleyVancouverWb.id,
-      VIDEOS.offBroadwayWb.id,
-      VIDEOS.offBroadwayEb.id,
+      ROUTE_VIDEOS.centralValleyVancouverEbAlt.id,
+      ROUTE_VIDEOS.centralValleyVancouverWb.id,
+      ROUTE_VIDEOS.offBroadwayWb.id,
+      ROUTE_VIDEOS.offBroadwayEb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.centralValleyVancouverEbAlt.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.centralValleyVancouverEbAlt.id],
     positions: [
       COMMERCIAL_GRANDVIEW,
       [49.26372, -123.06966],
@@ -399,10 +399,10 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "lane to/from 8th",
     type: "quiet",
     videoIds: [
-      VIDEOS.centralValleyVancouverEbAlt.id,
-      VIDEOS.centralValleyVancouverWb.id,
-      VIDEOS.offBroadwayWb.id,
-      VIDEOS.offBroadwayEb.id,
+      ROUTE_VIDEOS.centralValleyVancouverEbAlt.id,
+      ROUTE_VIDEOS.centralValleyVancouverWb.id,
+      ROUTE_VIDEOS.offBroadwayWb.id,
+      ROUTE_VIDEOS.offBroadwayEb.id,
     ],
     positions: [GRANDVIEW_7_HALF_N, GRANDVIEW_8TH_N],
   },
@@ -411,7 +411,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "eb: commercial to broadway",
     type: "quiet",
     oneWay: "required",
-    videoIds: [VIDEOS.centralValleyVancouverEb.id],
+    videoIds: [ROUTE_VIDEOS.centralValleyVancouverEb.id],
     positions: [
       COMMERCIAL_GRANDVIEW,
       [49.26345, -123.0691],
@@ -426,7 +426,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "eb: crossing broadway",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.centralValleyVancouverEb.id],
+    videoIds: [ROUTE_VIDEOS.centralValleyVancouverEb.id],
     positions: [GRANDVIEW_BROADWAY_NW, GRANDVIEW_BROADWAY_S],
   },
   {
@@ -434,7 +434,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "eb: broadway",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.centralValleyVancouverEb.id],
+    videoIds: [ROUTE_VIDEOS.centralValleyVancouverEb.id],
     positions: [
       GRANDVIEW_BROADWAY_S,
       GRANDVIEW_CUT_BROADWAY_SE,
@@ -447,7 +447,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "wb: crossing broadway",
     type: "combined",
     oneWay: "required",
-    videoIds: [VIDEOS.centralValleyVancouverWb.id],
+    videoIds: [ROUTE_VIDEOS.centralValleyVancouverWb.id],
     positions: [VICTORIA_BROADWAY_SE, VICTORIA_BROADWAY_NE],
   },
   {
@@ -455,7 +455,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "wb: crossing victoria",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.centralValleyVancouverWb.id],
+    videoIds: [ROUTE_VIDEOS.centralValleyVancouverWb.id],
     positions: [
       VICTORIA_BROADWAY_NE,
       [49.2624, -123.0662],
@@ -467,7 +467,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "wb: after victoria",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.centralValleyVancouverWb.id],
+    videoIds: [ROUTE_VIDEOS.centralValleyVancouverWb.id],
     positions: [
       GRANDVIEW_BROADWAY_NE,
       [49.26245, -123.06639],
@@ -481,7 +481,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "wb: after victoria, after lane",
     type: "quiet",
     oneWay: "required",
-    videoIds: [VIDEOS.centralValleyVancouverWb.id],
+    videoIds: [ROUTE_VIDEOS.centralValleyVancouverWb.id],
     positions: [GRANDVIEW_8_HALF_N, GRANDVIEW_8TH_N],
   },
   {
@@ -493,8 +493,8 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "victoria to semlin",
     type: "dedicated",
     videoIds: [
-      VIDEOS.centralValleyVancouverEb.id,
-      VIDEOS.centralValleyVancouverWb.id,
+      ROUTE_VIDEOS.centralValleyVancouverEb.id,
+      ROUTE_VIDEOS.centralValleyVancouverWb.id,
     ],
     positions: [
       VICTORIA_BROADWAY_SE,
@@ -510,8 +510,8 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "semlin to slocan",
     type: "quiet",
     videoIds: [
-      VIDEOS.centralValleyVancouverEb.id,
-      VIDEOS.centralValleyVancouverWb.id,
+      ROUTE_VIDEOS.centralValleyVancouverEb.id,
+      ROUTE_VIDEOS.centralValleyVancouverWb.id,
     ],
     positions: [
       SEMLIN_GRANDVIEW,
@@ -544,8 +544,8 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "slocan to rupert",
     type: "mixed",
     videoIds: [
-      VIDEOS.centralValleyVancouverEb.id,
-      VIDEOS.centralValleyVancouverWb.id,
+      ROUTE_VIDEOS.centralValleyVancouverEb.id,
+      ROUTE_VIDEOS.centralValleyVancouverWb.id,
     ],
     positions: [
       SLOCAN_N_GRANDVIEW,
@@ -575,13 +575,13 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "crossing rupert",
     type: "mixed",
     videoIds: [
-      VIDEOS.centralValleyVancouverEb.id,
-      VIDEOS.centralValleyVancouverWb.id,
-      VIDEOS.rupertSb.id,
-      VIDEOS.rupertNb.id,
+      ROUTE_VIDEOS.centralValleyVancouverEb.id,
+      ROUTE_VIDEOS.centralValleyVancouverWb.id,
+      ROUTE_VIDEOS.rupertSb.id,
+      ROUTE_VIDEOS.rupertNb.id,
     ],
-    videoIdsStartAtEnd: [VIDEOS.rupertSb.id],
-    videoIdsEndAtStart: [VIDEOS.rupertNb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.rupertSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.rupertNb.id],
     positions: [RUPERT_CVG_W, [49.26067, -123.03395], RUPERT_CVG_E],
   },
   {
@@ -589,8 +589,8 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "rupert to almost boundary",
     type: "mixed",
     videoIds: [
-      VIDEOS.centralValleyVancouverEb.id,
-      VIDEOS.centralValleyVancouverWb.id,
+      ROUTE_VIDEOS.centralValleyVancouverEb.id,
+      ROUTE_VIDEOS.centralValleyVancouverWb.id,
     ],
     positions: [
       RUPERT_CVG_E,
@@ -615,11 +615,11 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "just west of boundary",
     type: "mixed",
     videoIds: [
-      VIDEOS.centralValleyBurnabyEb.id,
-      VIDEOS.centralValleyVancouverWb.id,
-      VIDEOS.centralValleyVancouverEb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyEb.id,
+      ROUTE_VIDEOS.centralValleyVancouverWb.id,
+      ROUTE_VIDEOS.centralValleyVancouverEb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.centralValleyBurnabyEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.centralValleyBurnabyEb.id],
     positions: [WEST_OF_BOUNDARY, BOUNDARY_CVG],
   },
 
@@ -629,14 +629,14 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "just east of boundary",
     type: "mixed",
     videoIds: [
-      VIDEOS.centralValleyBurnabyEb.id,
-      VIDEOS.centralValleyVancouverWb.id,
-      VIDEOS.centralValleyBurnabyWb.id,
-      VIDEOS.centralValleyVancouverEb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyEb.id,
+      ROUTE_VIDEOS.centralValleyVancouverWb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyWb.id,
+      ROUTE_VIDEOS.centralValleyVancouverEb.id,
     ],
-    videoIdsEndAtStart: [VIDEOS.centralValleyBurnabyWb.id],
-    videoIdsEndAtEnd: [VIDEOS.centralValleyVancouverEb.id],
-    videoIdsStartAtEnd: [VIDEOS.centralValleyVancouverWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.centralValleyBurnabyWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.centralValleyVancouverEb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.centralValleyVancouverWb.id],
     positions: [BOUNDARY_CVG, EAST_OF_BOUNDARY],
   },
   {
@@ -644,8 +644,8 @@ export const CENTRAL_VALLEY_GREENWAY = [
     type: "mixed",
     description: "almost boundary to gilmore",
     videoIds: [
-      VIDEOS.centralValleyBurnabyEb.id,
-      VIDEOS.centralValleyBurnabyWb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyEb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyWb.id,
     ],
     positions: [EAST_OF_BOUNDARY, [49.26235, -123.01782], GILMORE_CVG],
   },
@@ -654,8 +654,8 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "gilmore to overpass",
     type: "comfortable",
     videoIds: [
-      VIDEOS.centralValleyBurnabyEb.id,
-      VIDEOS.centralValleyBurnabyWb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyEb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyWb.id,
     ],
     positions: [
       GILMORE_STILL_CREEK,
@@ -750,9 +750,9 @@ export const CENTRAL_VALLEY_GREENWAY = [
     type: "mixed",
     elevation: 0.5,
     videoIds: [
-      VIDEOS.centralValleyBurnabyEb.id,
-      VIDEOS.centralValleyBurnabyWb.id,
-      VIDEOS.lakesNb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyEb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyWb.id,
+      ROUTE_VIDEOS.lakesNb.id,
     ],
     positions: [LAKES_CVG_S, OVERPASS_START],
   },
@@ -762,9 +762,9 @@ export const CENTRAL_VALLEY_GREENWAY = [
     type: "mixed",
     elevation: 1,
     videoIds: [
-      VIDEOS.centralValleyBurnabyEb.id,
-      VIDEOS.centralValleyBurnabyWb.id,
-      VIDEOS.lakesNb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyEb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyWb.id,
+      ROUTE_VIDEOS.lakesNb.id,
     ],
     positions: [
       OVERPASS_START,
@@ -797,9 +797,9 @@ export const CENTRAL_VALLEY_GREENWAY = [
     type: "mixed",
     elevation: 0.5,
     videoIds: [
-      VIDEOS.centralValleyBurnabyEb.id,
-      VIDEOS.centralValleyBurnabyWb.id,
-      VIDEOS.lakesNb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyEb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyWb.id,
+      ROUTE_VIDEOS.lakesNb.id,
     ],
     positions: [OVERPASS_END, [49.25827, -122.96429], SPERLING_WINSTON],
   },
@@ -808,8 +808,8 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "overpass to winston lanes",
     type: "mixed",
     videoIds: [
-      VIDEOS.centralValleyBurnabyEb.id,
-      VIDEOS.centralValleyBurnabyWb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyEb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyWb.id,
     ],
     positions: [
       SPERLING_WINSTON,
@@ -825,7 +825,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "winston eb",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.centralValleyBurnabyEb.id],
+    videoIds: [ROUTE_VIDEOS.centralValleyBurnabyEb.id],
     positions: [
       WINSTON_GREENWOOD_NE,
       [49.25633, -122.96232],
@@ -875,7 +875,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "winston wb",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.centralValleyBurnabyWb.id],
+    videoIds: [ROUTE_VIDEOS.centralValleyBurnabyWb.id],
     positions: [
       BRIGHTON_WINSTON_SW,
       BRIGHTON_WINSTON_NW,
@@ -925,8 +925,8 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "government",
     type: "mixed",
     videoIds: [
-      VIDEOS.centralValleyBurnabyWb.id,
-      VIDEOS.centralValleyBurnabyEb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyWb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyEb.id,
     ],
     positions: [
       BRIGHTON_WINSTON_SW,
@@ -947,15 +947,18 @@ export const CENTRAL_VALLEY_GREENWAY = [
     type: "mixed",
     description: "government to cariboo plc",
     videoIds: [
-      VIDEOS.centralValleyBurnabyWb.id,
-      VIDEOS.brunetteFraserSb.id,
-      VIDEOS.caribooSb.id,
-      VIDEOS.gaglardiNb.id,
-      VIDEOS.centralValleyBurnabyEb.id,
-      VIDEOS.caribooNb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyWb.id,
+      ROUTE_VIDEOS.brunetteFraserSb.id,
+      ROUTE_VIDEOS.caribooSb.id,
+      ROUTE_VIDEOS.gaglardiNb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyEb.id,
+      ROUTE_VIDEOS.caribooNb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.caribooSb.id, VIDEOS.gaglardiNb.id],
-    videoIdsEndAtStart: [VIDEOS.caribooNb.id],
+    videoIdsStartAtStart: [
+      ROUTE_VIDEOS.caribooSb.id,
+      ROUTE_VIDEOS.gaglardiNb.id,
+    ],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.caribooNb.id],
     positions: [
       CARIBOO_GOVERNMENT,
       [49.2506, -122.91411],
@@ -969,9 +972,9 @@ export const CENTRAL_VALLEY_GREENWAY = [
     type: "quiet",
     description: "cariboo pl",
     videoIds: [
-      VIDEOS.centralValleyBurnabyWb.id,
-      VIDEOS.brunetteFraserSb.id,
-      VIDEOS.centralValleyBurnabyEb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyWb.id,
+      ROUTE_VIDEOS.brunetteFraserSb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyEb.id,
     ],
     positions: [
       CARIBOO_CARIBOO_PL_E,
@@ -1001,9 +1004,9 @@ export const CENTRAL_VALLEY_GREENWAY = [
     type: "mixed",
     description: "cariboo pl to north rd",
     videoIds: [
-      VIDEOS.centralValleyBurnabyWb.id,
-      VIDEOS.brunetteFraserSb.id,
-      VIDEOS.centralValleyBurnabyEb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyWb.id,
+      ROUTE_VIDEOS.brunetteFraserSb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyEb.id,
     ],
     positions: [
       CARIBOO_PL_E,
@@ -1082,13 +1085,13 @@ export const CENTRAL_VALLEY_GREENWAY = [
     type: "mixed",
     description: "north to hume park",
     videoIds: [
-      VIDEOS.centralValleyBurnabyWb.id,
-      VIDEOS.centralValleyNWNb.id,
-      VIDEOS.brunetteFraserSb.id,
-      VIDEOS.centralValleyBurnabyEb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyWb.id,
+      ROUTE_VIDEOS.centralValleyNWNb.id,
+      ROUTE_VIDEOS.brunetteFraserSb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyEb.id,
     ],
-    videoIdsEndAtStart: [VIDEOS.centralValleyNWNb.id],
-    videoIdsEndAtEnd: [VIDEOS.centralValleyBurnabyEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.centralValleyNWNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.centralValleyBurnabyEb.id],
     positions: [
       NORTH_CVG,
       [49.23729, -122.89264],
@@ -1101,9 +1104,9 @@ export const CENTRAL_VALLEY_GREENWAY = [
     type: "quiet",
     description: "hume park dr",
     videoIds: [
-      VIDEOS.centralValleyNWNb.id,
-      VIDEOS.centralValleyBurnabyWb.id,
-      VIDEOS.brunetteFraserSb.id,
+      ROUTE_VIDEOS.centralValleyNWNb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyWb.id,
+      ROUTE_VIDEOS.brunetteFraserSb.id,
     ],
     positions: [
       HUME_PARK_DR_N,
@@ -1126,9 +1129,9 @@ export const CENTRAL_VALLEY_GREENWAY = [
     type: "mixed",
     description: "hume park path to fraser split",
     videoIds: [
-      VIDEOS.centralValleyNWNb.id,
-      VIDEOS.centralValleyBurnabyWb.id,
-      VIDEOS.brunetteFraserSb.id,
+      ROUTE_VIDEOS.centralValleyNWNb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyWb.id,
+      ROUTE_VIDEOS.brunetteFraserSb.id,
     ],
     positions: [
       HUME_PARK_DR_S,
@@ -1155,8 +1158,11 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routeNames: [ROUTES.centralValleyGreenway.name],
     type: "mixed",
     description: "brunette fraser split south triangle leg",
-    videoIds: [VIDEOS.centralValleyNWNb.id, VIDEOS.centralValleyBurnabyWb.id],
-    videoIdsStartAtEnd: [VIDEOS.centralValleyBurnabyWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.centralValleyNWNb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyWb.id,
+    ],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.centralValleyBurnabyWb.id],
     positions: [
       BRUNETTE_FRASER_CVG_SW,
       [49.235, -122.889],
@@ -1172,7 +1178,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
     description: "brunette fraser split to garrett",
     type: "mixed",
-    videoIds: [VIDEOS.centralValleyNWNb.id],
+    videoIds: [ROUTE_VIDEOS.centralValleyNWNb.id],
     positions: [
       BRUNETTE_FRASER_CVG_SE,
       [49.23325, -122.88862],
@@ -1187,7 +1193,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
     description: "garrett to sherbrooke",
     type: "quiet",
-    videoIds: [VIDEOS.centralValleyNWNb.id],
+    videoIds: [ROUTE_VIDEOS.centralValleyNWNb.id],
     positions: [
       GARRETT_CVG,
       [49.23318, -122.88888],
@@ -1210,7 +1216,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "old sherbrooke: fader to columbia",
     type: "quiet",
     undesignated: true,
-    videoIds: [VIDEOS.centralValleyNWNb.id],
+    videoIds: [ROUTE_VIDEOS.centralValleyNWNb.id],
     positions: [
       FADER_SHERBROOKE_N,
       [49.22788, -122.89024],
@@ -1231,7 +1237,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "columbia: north part, nb 1",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.centralValleyNWNb.id],
+    videoIds: [ROUTE_VIDEOS.centralValleyNWNb.id],
     positions: [
       COLUMBIA_BRUNETTE,
       [49.22223, -122.8929],
@@ -1246,7 +1252,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "columbia: north part, nb 2",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.centralValleyNWNb.id],
+    videoIds: [ROUTE_VIDEOS.centralValleyNWNb.id],
     positions: [
       COLUMBIA_KEARY_E,
       [49.22645, -122.89279],
@@ -1263,7 +1269,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     type: "dedicated",
     oneWay: "required",
     hideArrows: true,
-    videoIds: [VIDEOS.centralValleyNWNb.id],
+    videoIds: [ROUTE_VIDEOS.centralValleyNWNb.id],
     positions: [COLUMBIA_SHERBROOKE_SE, COLUMBIA_SHERBROOKE_E],
   },
   {
@@ -1324,14 +1330,14 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routeNames: [ROUTES.centralValleyGreenway.name],
     description: "columbia: bit to debeck",
     type: "dedicated",
-    videoIds: [VIDEOS.centralValleyNWNb.id],
+    videoIds: [ROUTE_VIDEOS.centralValleyNWNb.id],
     positions: [COLUMBIA_BRUNETTE, [49.22202, -122.89307], COLUMBIA_DEBECK_W],
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
     description: "columbia 'detour' to sapper",
     type: "quiet",
-    videoIds: [VIDEOS.centralValleyNWNb.id],
+    videoIds: [ROUTE_VIDEOS.centralValleyNWNb.id],
     positions: [
       COLUMBIA_DEBECK_W,
       [49.22198, -122.89451],
@@ -1343,7 +1349,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routeNames: [ROUTES.centralValleyGreenway.name],
     description: "columbia: separated part from cumberland",
     type: "mixed",
-    videoIds: [VIDEOS.centralValleyNWNb.id],
+    videoIds: [ROUTE_VIDEOS.centralValleyNWNb.id],
     positions: [
       COLUMBIA_CUMBERLAND_W,
       [49.22039, -122.89323],
@@ -1404,14 +1410,14 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "columbia: separated part - overlap",
     type: "mixed",
     videoIds: [
-      VIDEOS.centralValleyNWNb.id,
-      VIDEOS.bcParkwayNWWb.id,
-      VIDEOS.bcParkwayNWEb.id,
-      VIDEOS.carnarvonWb.id,
-      VIDEOS.carnarvonEb.id,
+      ROUTE_VIDEOS.centralValleyNWNb.id,
+      ROUTE_VIDEOS.bcParkwayNWWb.id,
+      ROUTE_VIDEOS.bcParkwayNWEb.id,
+      ROUTE_VIDEOS.carnarvonWb.id,
+      ROUTE_VIDEOS.carnarvonEb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.carnarvonWb.id],
-    videoIdsEndAtStart: [VIDEOS.carnarvonEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.carnarvonWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.carnarvonEb.id],
     positions: [BC_PARKWAY_CVG_SPLIT, [49.20694, -122.90122], ELLIOT_COLUMBIA],
   },
   {
@@ -1419,7 +1425,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "columbia: south part, wb",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.bcParkwayNWWb.id],
+    videoIds: [ROUTE_VIDEOS.bcParkwayNWWb.id],
     positions: [
       ELLIOT_COLUMBIA,
       [49.20648, -122.90195],
@@ -1450,7 +1456,10 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "columbia: south part, eb",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.centralValleyNWNb.id, VIDEOS.bcParkwayNWEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.centralValleyNWNb.id,
+      ROUTE_VIDEOS.bcParkwayNWEb.id,
+    ],
     positions: [
       BEGBIE_COLUMBIA_S,
       [49.20262, -122.90879],
@@ -1470,9 +1479,9 @@ export const CENTRAL_VALLEY_GREENWAY = [
     type: "shared",
     // undesignated: true, // unclear
     videoIds: [
-      VIDEOS.centralValleyNWNb.id,
-      VIDEOS.bcParkwayNWWb.id,
-      VIDEOS.bcParkwayNWEb.id,
+      ROUTE_VIDEOS.centralValleyNWNb.id,
+      ROUTE_VIDEOS.bcParkwayNWWb.id,
+      ROUTE_VIDEOS.bcParkwayNWEb.id,
     ],
     positions: [
       QUAYSIDE_JOIN,
@@ -1495,9 +1504,9 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "begbie short shared",
     type: "shared",
     videoIds: [
-      VIDEOS.centralValleyNWNb.id,
-      VIDEOS.bcParkwayNWWb.id,
-      VIDEOS.bcParkwayNWEb.id,
+      ROUTE_VIDEOS.centralValleyNWNb.id,
+      ROUTE_VIDEOS.bcParkwayNWWb.id,
+      ROUTE_VIDEOS.bcParkwayNWEb.id,
     ],
     positions: [N_OF_BEGBIE_FRONT, BEGBIE_COLUMBIA_S],
   },
@@ -1521,7 +1530,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
     description: "begbie crossing columbia",
     type: "shared",
-    videoIds: [VIDEOS.bcParkwayNWWb.id],
+    videoIds: [ROUTE_VIDEOS.bcParkwayNWWb.id],
     positions: [BEGBIE_COLUMBIA_S, BEGBIE_COLUMBIA_N],
   },
 ];

@@ -13,7 +13,7 @@ import {
   HORNBY_SMITHE,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const HORNBY_BEACH_SE_S = [49.27523, -123.13292];
 
@@ -23,18 +23,21 @@ export const HORNBY = [
     description: "south tip",
     type: "quiet",
     videoIds: [
-      VIDEOS.hornbyNb.id,
-      VIDEOS.hornbySb.id,
-      VIDEOS.seasideFalseCreekCw.id,
-      VIDEOS.seasideBypassBeachWb.id,
-      VIDEOS.seasideBypassBeachEb.id,
-      VIDEOS.burrardBridgeNb.id,
+      ROUTE_VIDEOS.hornbyNb.id,
+      ROUTE_VIDEOS.hornbySb.id,
+      ROUTE_VIDEOS.seasideFalseCreekCw.id,
+      ROUTE_VIDEOS.seasideBypassBeachWb.id,
+      ROUTE_VIDEOS.seasideBypassBeachEb.id,
+      ROUTE_VIDEOS.burrardBridgeNb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.hornbyNb.id, VIDEOS.seasideBypassBeachWb.id],
+    videoIdsStartAtStart: [
+      ROUTE_VIDEOS.hornbyNb.id,
+      ROUTE_VIDEOS.seasideBypassBeachWb.id,
+    ],
     videoIdsEndAtStart: [
-      VIDEOS.hornbySb.id,
-      VIDEOS.seasideBypassBeachEb.id,
-      VIDEOS.burrardBridgeNb.id,
+      ROUTE_VIDEOS.hornbySb.id,
+      ROUTE_VIDEOS.seasideBypassBeachEb.id,
+      ROUTE_VIDEOS.burrardBridgeNb.id,
     ],
     positions: [HORNBY_SEABREEZE, [49.27521, -123.13304], HORNBY_BEACH_SE_S],
   },
@@ -43,14 +46,14 @@ export const HORNBY = [
     description: "south end of protected",
     type: "dedicated",
     videoIds: [
-      VIDEOS.hornbySb.id,
-      VIDEOS.hornbyNb.id,
-      VIDEOS.seasideBypassBeachWb.id,
-      VIDEOS.seasideFalseCreekCw.id,
-      VIDEOS.seasideBypassBeachEb.id,
-      VIDEOS.burrardBridgeNb.id,
+      ROUTE_VIDEOS.hornbySb.id,
+      ROUTE_VIDEOS.hornbyNb.id,
+      ROUTE_VIDEOS.seasideBypassBeachWb.id,
+      ROUTE_VIDEOS.seasideFalseCreekCw.id,
+      ROUTE_VIDEOS.seasideBypassBeachEb.id,
+      ROUTE_VIDEOS.burrardBridgeNb.id,
     ],
-    videoIdsStartAtEnd: [VIDEOS.seasideFalseCreekCw.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.seasideFalseCreekCw.id],
     positions: [HORNBY_BEACH_SE_S, HORNBY_BEACH],
   },
   {
@@ -58,9 +61,9 @@ export const HORNBY = [
     description: "beach to pacific s",
     type: "dedicated",
     videoIds: [
-      VIDEOS.hornbySb.id,
-      VIDEOS.hornbyNb.id,
-      VIDEOS.burrardBridgeNb.id,
+      ROUTE_VIDEOS.hornbySb.id,
+      ROUTE_VIDEOS.hornbyNb.id,
+      ROUTE_VIDEOS.burrardBridgeNb.id,
     ],
     positions: [HORNBY_BEACH, [49.27564, -123.1323], HORNBY_PACIFIC_SE],
   },
@@ -68,7 +71,7 @@ export const HORNBY = [
     routeNames: [ROUTES.hornby.name],
     description: "primary",
     type: "dedicated",
-    videoIds: [VIDEOS.hornbySb.id, VIDEOS.hornbyNb.id],
+    videoIds: [ROUTE_VIDEOS.hornbySb.id, ROUTE_VIDEOS.hornbyNb.id],
     positions: [
       HORNBY_PACIFIC_SE,
       HORNBY_PACIFIC_NE,
@@ -97,12 +100,12 @@ export const HORNBY = [
     description: "north end along burrard",
     type: "dedicated",
     videoIds: [
-      VIDEOS.hornbySb.id,
-      VIDEOS.hornbyNb.id,
-      VIDEOS.seasideCoalHarbourWb.id,
-      VIDEOS.burrardSb.id,
+      ROUTE_VIDEOS.hornbySb.id,
+      ROUTE_VIDEOS.hornbyNb.id,
+      ROUTE_VIDEOS.seasideCoalHarbourWb.id,
+      ROUTE_VIDEOS.burrardSb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.seasideCoalHarbourWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.seasideCoalHarbourWb.id],
     positions: [
       BURRARD_HASTINGS,
       [49.2876, -123.11649],

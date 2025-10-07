@@ -8,7 +8,7 @@ import {
   WHONOAK_WELCH_NW,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const WHONOAK_WELCH_SW = [49.31766, -123.12133];
 const GARDEN_WELCH_SW = [49.31759, -123.11844];
@@ -42,8 +42,8 @@ export const FIRST_2ND = [
     description: "eb painted",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.first2ndEb.id],
-    videoIdsStartAtStart: [VIDEOS.first2ndEb.id],
+    videoIds: [ROUTE_VIDEOS.first2ndEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.first2ndEb.id],
     positions: [
       WHONOAK_WELCH_SW,
       [49.31766, -123.12111],
@@ -87,7 +87,7 @@ export const FIRST_2ND = [
     description: "eb protected",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.first2ndEb.id],
+    videoIds: [ROUTE_VIDEOS.first2ndEb.id],
     positions: [
       MACKAY_1ST_SW,
       [49.31805, -123.1022],
@@ -118,7 +118,7 @@ export const FIRST_2ND = [
     description: "2nd crossing 3rd",
     type: "mixed",
     oneWay: "recommended",
-    videoIds: [VIDEOS.first2ndWb.id],
+    videoIds: [ROUTE_VIDEOS.first2ndWb.id],
     positions: [THIRD_2ND_N, THIRD_2ND_NW],
   },
   {
@@ -126,7 +126,7 @@ export const FIRST_2ND = [
     description: "wb: 3rd to bewicke",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.first2ndWb.id],
+    videoIds: [ROUTE_VIDEOS.first2ndWb.id],
     positions: [THIRD_2ND_NW, [49.3191, -123.09018], BEWICKE_2ND_NE],
   },
   {
@@ -134,7 +134,7 @@ export const FIRST_2ND = [
     description: "wb protected",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.first2ndWb.id],
+    videoIds: [ROUTE_VIDEOS.first2ndWb.id],
     positions: [
       BEWICKE_2ND_NE,
       [49.31912, -123.09216],
@@ -161,8 +161,8 @@ export const FIRST_2ND = [
     description: "wb painted",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.first2ndWb.id],
-    videoIdsEndAtEnd: [VIDEOS.first2ndWb.id],
+    videoIds: [ROUTE_VIDEOS.first2ndWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.first2ndWb.id],
     positions: [
       MACKAY_1ST_NW,
       [49.31817, -123.10262],

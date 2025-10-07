@@ -1,5 +1,5 @@
 import { REGIONS } from "./regions";
-import { VIDEOS } from "./videos";
+import { ROUTE_VIDEOS } from "./videos/routes";
 
 //// Potential future additions
 // Vancouver:
@@ -20,7 +20,10 @@ export const ROUTES = {
     regions: [REGIONS.northVancouver],
     legs: [
       {
-        videos: { eastbound: VIDEOS.first2ndEb, westbound: VIDEOS.first2ndWb },
+        videos: {
+          eastbound: ROUTE_VIDEOS.first2ndEb,
+          westbound: ROUTE_VIDEOS.first2ndWb,
+        },
       },
     ],
     notes:
@@ -29,7 +32,7 @@ export const ROUTES = {
   third: {
     name: "3rd",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { eastbound: VIDEOS.thirdEb } }],
+    legs: [{ videos: { eastbound: ROUTE_VIDEOS.thirdEb } }],
     notes: "Quiet and mostly flat. Lots of stop signs.",
   },
   thirdNv: {
@@ -45,7 +48,10 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [
       {
-        videos: { eastbound: VIDEOS.fourthEb, westbound: VIDEOS.fourthWb },
+        videos: {
+          eastbound: ROUTE_VIDEOS.fourthEb,
+          westbound: ROUTE_VIDEOS.fourthWb,
+        },
       },
     ],
     notes:
@@ -54,7 +60,7 @@ export const ROUTES = {
   fourthNV: {
     name: "4th St",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: { westbound: VIDEOS.fourthNVWb } }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.fourthNVWb } }],
     notes:
       "Quiet-ish street with steep hill at the east end. No traffic calming.",
   },
@@ -63,7 +69,10 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [
       {
-        videos: { eastbound: VIDEOS.tenthEb, westbound: VIDEOS.tenthWb },
+        videos: {
+          eastbound: ROUTE_VIDEOS.tenthEb,
+          westbound: ROUTE_VIDEOS.tenthWb,
+        },
       },
     ],
     notes:
@@ -76,14 +85,14 @@ export const ROUTES = {
       {
         name: "Original Alder <-> Prince Edward",
         videos: {
-          eastbound: VIDEOS.fourteenthEb,
-          westbound: VIDEOS.fourteenthWb,
+          eastbound: ROUTE_VIDEOS.fourteenthEb,
+          westbound: ROUTE_VIDEOS.fourteenthWb,
         },
       },
       {
         name: "2024 Extension to Arbutus Greenway",
         videos: {
-          westbound: VIDEOS.fourteenthExtWb,
+          westbound: ROUTE_VIDEOS.fourteenthExtWb,
         },
       },
     ],
@@ -93,14 +102,14 @@ export const ROUTES = {
     name: "14th Ave Gap",
     isGap: true,
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { westbound: VIDEOS.fourteenthGapWb } }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.fourteenthGapWb } }],
     notes:
       "The city intends to fill this gap eventually, but the exact route is not clear. You cannot cross Knight St at 14th. Using/crossing Kingsway is uncomfortable, but you can time the lights to do it when traffic isn't moving; or use 15th Ave and St George St, but you'll have to dismount briefly going eastbound.",
   },
   fifteenth: {
     name: "15th St",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: { eastbound: VIDEOS.fifteenthEb } }],
+    legs: [{ videos: { eastbound: ROUTE_VIDEOS.fifteenthEb } }],
     notes: "Flat, but traffic volumes can get uncomfortably high at times.",
   },
   sixteenth: {
@@ -109,8 +118,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.sixteenthEb,
-          westbound: VIDEOS.sixteenthWb,
+          eastbound: ROUTE_VIDEOS.sixteenthEb,
+          westbound: ROUTE_VIDEOS.sixteenthWb,
         },
       },
     ],
@@ -123,8 +132,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.twentySecondEb,
-          westbound: VIDEOS.twentySecondWb,
+          eastbound: ROUTE_VIDEOS.twentySecondEb,
+          westbound: ROUTE_VIDEOS.twentySecondWb,
         },
       },
     ],
@@ -134,7 +143,7 @@ export const ROUTES = {
   twentyNinth: {
     name: "29th",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { westbound: VIDEOS.twentyNinthWb } }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.twentyNinthWb } }],
     notes:
       "A big dip in the middle around Valley/Yew with steep hills. The west end doesn't have enough traffic calming but the rest is quiet. The westbound painted lane through Hillcrest is beside parked cars; eastbound is not.",
   },
@@ -144,8 +153,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.fortyFifthEb,
-          westbound: VIDEOS.fortyFifthWb,
+          eastbound: ROUTE_VIDEOS.fortyFifthEb,
+          westbound: ROUTE_VIDEOS.fortyFifthWb,
         },
       },
     ],
@@ -155,7 +164,7 @@ export const ROUTES = {
   sixtySeventh: {
     name: "67th",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { westbound: VIDEOS.sixtySeventhPlusWb } }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.sixtySeventhPlusWb } }],
     notes:
       "Flat. No traffic calming, can get very busy with cars. Crossing Granville can be confusing.",
   },
@@ -169,7 +178,7 @@ export const ROUTES = {
   adanac: {
     name: "Adanac",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { westbound: VIDEOS.adanacWb } }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.adanacWb } }],
     notes:
       "Lots of hills towards the east. Between Rupert and Boundary can get very busy with cars, the rest is traffic calmed. The city plans on adding separated bike lanes to that part.",
   },
@@ -177,7 +186,12 @@ export const ROUTES = {
     name: "Agnes St",
     regions: [REGIONS.newWestminster],
     legs: [
-      { videos: { eastbound: VIDEOS.agnesEb, westbound: VIDEOS.agnesWb } },
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.agnesEb,
+          westbound: ROUTE_VIDEOS.agnesWb,
+        },
+      },
     ],
     notes:
       "Relatively flat and quiet. The city plans on adding a similar route up Seventh St.",
@@ -186,7 +200,7 @@ export const ROUTES = {
     name: "Agronomy Rd/Toronto Rd",
     shortName: "Agronomy/Toronto",
     regions: [REGIONS.ubc],
-    legs: [{ videos: { eastbound: VIDEOS.agronomyEb } }],
+    legs: [{ videos: { eastbound: ROUTE_VIDEOS.agronomyEb } }],
     notes:
       "Flat and relatively quiet. It's easy to miss the turn onto Western Pkwy.",
   },
@@ -195,7 +209,10 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [
       {
-        videos: { eastbound: VIDEOS.alberniEb, westbound: VIDEOS.alberniWb },
+        videos: {
+          eastbound: ROUTE_VIDEOS.alberniEb,
+          westbound: ROUTE_VIDEOS.alberniWb,
+        },
       },
     ],
     notes:
@@ -205,7 +222,12 @@ export const ROUTES = {
     name: "Alder",
     regions: [REGIONS.vancouver],
     legs: [
-      { videos: { northbound: VIDEOS.alderNb, southbound: VIDEOS.alderSb } },
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.alderNb,
+          southbound: ROUTE_VIDEOS.alderSb,
+        },
+      },
     ],
     notes: "Quiet-ish. The north half is quite steep.",
   },
@@ -213,7 +235,7 @@ export const ROUTES = {
     name: "Alderbridge Way Path",
     shortName: "Alderbridge Path",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { westbound: VIDEOS.alderbridgeWb } }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.alderbridgeWb } }],
     notes:
       "Very flat. For some reason there's a short gap right in the middle which is just a narrow muddy desire path. Lots of pedestrians using the west portion.",
   },
@@ -223,8 +245,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.alexanderEb,
-          westbound: VIDEOS.alexanderWb,
+          eastbound: ROUTE_VIDEOS.alexanderEb,
+          westbound: ROUTE_VIDEOS.alexanderWb,
         },
       },
     ],
@@ -237,14 +259,14 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.alexFraserNb,
-          southbound: VIDEOS.alexFraserSb,
+          northbound: ROUTE_VIDEOS.alexFraserNb,
+          southbound: ROUTE_VIDEOS.alexFraserSb,
         },
       },
       {
         name: "Underneath the south end",
         videos: {
-          eastbound: VIDEOS.alexFraserUnder,
+          eastbound: ROUTE_VIDEOS.alexFraserUnder,
         },
       },
     ],
@@ -254,7 +276,7 @@ export const ROUTES = {
   alpha: {
     name: "Alpha Ave",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { southbound: VIDEOS.alphaSb } }],
+    legs: [{ videos: { southbound: ROUTE_VIDEOS.alphaSb } }],
     notes:
       "New in 2025. A short shared use path on a gentle hill. It crosses a few driveways.",
   },
@@ -262,10 +284,10 @@ export const ROUTES = {
     name: "Arbutus Greenway",
     regions: [REGIONS.vancouver],
     legs: [
-      { videos: { northbound: VIDEOS.arbutusGreenwayNb } },
+      { videos: { northbound: ROUTE_VIDEOS.arbutusGreenwayNb } },
       {
         name: "Fir St connection with Granville Connector",
-        videos: { southbound: VIDEOS.granvilleConnectorFirSb },
+        videos: { southbound: ROUTE_VIDEOS.granvilleConnectorFirSb },
       },
     ],
     notes:
@@ -278,8 +300,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.arthurLaingNb,
-          southbound: VIDEOS.arthurLaingSb,
+          northbound: ROUTE_VIDEOS.arthurLaingNb,
+          southbound: ROUTE_VIDEOS.arthurLaingSb,
         },
       },
     ],
@@ -292,8 +314,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.balaclavaNb,
-          southbound: VIDEOS.balaclavaSb,
+          northbound: ROUTE_VIDEOS.balaclavaNb,
+          southbound: ROUTE_VIDEOS.balaclavaSb,
         },
       },
     ],
@@ -303,7 +325,7 @@ export const ROUTES = {
   barnet: {
     name: "Barnet Hwy",
     regions: [REGIONS.burnaby, REGIONS.portMoody],
-    legs: [{ videos: { eastbound: VIDEOS.barnetEb } }],
+    legs: [{ videos: { eastbound: ROUTE_VIDEOS.barnetEb } }],
     notes:
       "Some hills. Next to high-speed traffic, but the shoulder tends to be quite wide.",
   },
@@ -319,44 +341,44 @@ export const ROUTES = {
       {
         name: "Vancouver",
         videos: {
-          eastbound: VIDEOS.bcParkwayVancouverEb,
-          westbound: VIDEOS.bcParkwayVancouverWb,
+          eastbound: ROUTE_VIDEOS.bcParkwayVancouverEb,
+          westbound: ROUTE_VIDEOS.bcParkwayVancouverWb,
         },
       },
       {
         name: "29th Ave Station: Alternate Westbound Route",
-        videos: { westbound: VIDEOS.bcParkway29thStation },
+        videos: { westbound: ROUTE_VIDEOS.bcParkway29thStation },
       },
       {
         name: "Burnaby",
         videos: {
-          eastbound: VIDEOS.bcParkwayBurnabyEb,
-          westbound: VIDEOS.bcParkwayBurnabyWb,
+          eastbound: ROUTE_VIDEOS.bcParkwayBurnabyEb,
+          westbound: ROUTE_VIDEOS.bcParkwayBurnabyWb,
         },
       },
       {
         name: "New Westminster",
         videos: {
-          eastbound: VIDEOS.bcParkwayNWEb,
-          westbound: VIDEOS.bcParkwayNWWb,
+          eastbound: ROUTE_VIDEOS.bcParkwayNWEb,
+          westbound: ROUTE_VIDEOS.bcParkwayNWWb,
         },
       },
       {
         name: "22nd St Station: Alternate Route",
-        videos: { eastbound: VIDEOS.bcParkway22ndStation },
+        videos: { eastbound: ROUTE_VIDEOS.bcParkway22ndStation },
       },
       {
         name: 'Quayside: Alternate "Scenic" Route',
         videos: {
-          eastbound: VIDEOS.bcParkwayQuaysideScenicEb,
-          westbound: VIDEOS.bcParkwayQuaysideScenicWb,
+          eastbound: ROUTE_VIDEOS.bcParkwayQuaysideScenicEb,
+          westbound: ROUTE_VIDEOS.bcParkwayQuaysideScenicWb,
         },
       },
       {
         name: "Surrey",
         videos: {
-          eastbound: VIDEOS.bcParkwaySurreyEb,
-          westbound: VIDEOS.bcParkwaySurreyWb,
+          eastbound: ROUTE_VIDEOS.bcParkwaySurreyEb,
+          westbound: ROUTE_VIDEOS.bcParkwaySurreyWb,
         },
       },
     ],
@@ -368,7 +390,10 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [
       {
-        videos: { northbound: VIDEOS.beattyNb, southbound: VIDEOS.beattySb },
+        videos: {
+          northbound: ROUTE_VIDEOS.beattyNb,
+          southbound: ROUTE_VIDEOS.beattySb,
+        },
       },
     ],
     notes:
@@ -379,7 +404,10 @@ export const ROUTES = {
     regions: [REGIONS.westVancouver],
     legs: [
       {
-        videos: { eastbound: VIDEOS.bellevueEb, westbound: VIDEOS.bellevueWb },
+        videos: {
+          eastbound: ROUTE_VIDEOS.bellevueEb,
+          westbound: ROUTE_VIDEOS.bellevueWb,
+        },
       },
     ],
     notes:
@@ -388,7 +416,7 @@ export const ROUTES = {
   bewickeGreenway: {
     name: "Bewicke Greenway",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: { northbound: VIDEOS.bewickeNb } }],
+    legs: [{ videos: { northbound: ROUTE_VIDEOS.bewickeNb } }],
     notes:
       "A nice mostly flat shared use path, but the 2 intersections at the north end take forever to cross.",
   },
@@ -396,10 +424,10 @@ export const ROUTES = {
     name: "Big Bend Path",
     regions: [REGIONS.burnaby],
     legs: [
-      { videos: { southbound: VIDEOS.bigBendSb } },
+      { videos: { southbound: ROUTE_VIDEOS.bigBendSb } },
       {
         name: "Trapp Ave Alternate Branch",
-        videos: { eastbound: VIDEOS.bigBendTrappEb },
+        videos: { eastbound: ROUTE_VIDEOS.bigBendTrappEb },
       },
     ],
     notes:
@@ -410,7 +438,10 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [
       {
-        videos: { northbound: VIDEOS.blancaNb, southbound: VIDEOS.blancaSb },
+        videos: {
+          northbound: ROUTE_VIDEOS.blancaNb,
+          southbound: ROUTE_VIDEOS.blancaSb,
+        },
       },
     ],
     notes:
@@ -419,21 +450,28 @@ export const ROUTES = {
   boundary: {
     name: "Boundary Trail",
     regions: [REGIONS.newWestminster],
-    legs: [{ videos: { southbound: VIDEOS.boundaryTrailSb } }],
+    legs: [{ videos: { southbound: ROUTE_VIDEOS.boundaryTrailSb } }],
     notes:
       "Very flat. It's not clear how far north the trail extends; it becomes covered in vines and looks abandoned.",
   },
   boyd: {
     name: "Boyd St",
     regions: [REGIONS.newWestminster],
-    legs: [{ videos: { eastbound: VIDEOS.boydEb, westbound: VIDEOS.boydWb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.boydEb,
+          westbound: ROUTE_VIDEOS.boydWb,
+        },
+      },
+    ],
     notes:
       "Very flat. The painted lanes are mostly beside the curb. Traveling east is a bit awkward as you have to briefly switch to the left side, then switch back. The city plans on improving this route.",
   },
   boydTrail: {
     name: "Boyd St Trail",
     regions: [REGIONS.newWestminster],
-    legs: [{ videos: { westbound: VIDEOS.boydTrailWb } }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.boydTrailWb } }],
     notes: "Very flat. A nice alternative to the road.",
   },
   bridgeportTrail: {
@@ -442,8 +480,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.bridgeportTrailEb,
-          westbound: VIDEOS.bridgeportTrailWb,
+          eastbound: ROUTE_VIDEOS.bridgeportTrailEb,
+          westbound: ROUTE_VIDEOS.bridgeportTrailWb,
         },
       },
     ],
@@ -454,7 +492,7 @@ export const ROUTES = {
     name: "Brunette Fraser Regional Greenway",
     regions: [REGIONS.burnaby, REGIONS.newWestminster],
     shortName: "Brunette Fraser Gr.",
-    legs: [{ videos: { southbound: VIDEOS.brunetteFraserSb } }],
+    legs: [{ videos: { southbound: ROUTE_VIDEOS.brunetteFraserSb } }],
     notes:
       "The signage for this route is very lacking. Its almost impossible to follow without taking a wrong turn. Lots of steep hills. The south end is a dead-end, but eventually it will hopefully continue to Quayside.",
   },
@@ -462,7 +500,12 @@ export const ROUTES = {
     name: "Burnaby",
     regions: [REGIONS.vancouver],
     legs: [
-      { videos: { eastbound: VIDEOS.burnabyEb, westbound: VIDEOS.burnabyWb } },
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.burnabyEb,
+          westbound: ROUTE_VIDEOS.burnabyWb,
+        },
+      },
     ],
     notes:
       "The west is a gradual hill. Too many stop signs. Should be extended all the way to Beach Ave.",
@@ -474,8 +517,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.burnabyMtnEb,
-          westbound: VIDEOS.burnabyMtnWb,
+          eastbound: ROUTE_VIDEOS.burnabyMtnEb,
+          westbound: ROUTE_VIDEOS.burnabyMtnWb,
         },
       },
     ],
@@ -487,13 +530,16 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [
       {
-        videos: { northbound: VIDEOS.burrardNb, southbound: VIDEOS.burrardSb },
+        videos: {
+          northbound: ROUTE_VIDEOS.burrardNb,
+          southbound: ROUTE_VIDEOS.burrardSb,
+        },
       },
       {
         name: "Seaside Connection via Bridge",
         videos: {
-          northbound: VIDEOS.burrardBridgeNb,
-          southbound: VIDEOS.burrardBridgeSb,
+          northbound: ROUTE_VIDEOS.burrardBridgeNb,
+          southbound: ROUTE_VIDEOS.burrardBridgeSb,
         },
       },
     ],
@@ -504,7 +550,12 @@ export const ROUTES = {
     name: "Bute",
     regions: [REGIONS.vancouver],
     legs: [
-      { videos: { northbound: VIDEOS.buteNb, southbound: VIDEOS.buteSb } },
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.buteNb,
+          southbound: ROUTE_VIDEOS.buteSb,
+        },
+      },
     ],
     notes:
       "Flat with lots of traffic calming. The city intends to extend this all the way to the water at both ends and make it a greenway; those parts will be significantly steeper. The pedestrianized section at Robson is being upgraded in 2024/2025.",
@@ -513,7 +564,7 @@ export const ROUTES = {
     name: "Byrne Creek Urban Trail",
     shortName: "Byrne Creek Trail",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { westbound: VIDEOS.byrneCreekWb } }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.byrneCreekWb } }],
     notes:
       "A hill. Unfortunately this doesn't quite connect to Glenlyon Urban Trail at the south end. The path continues, but it's hardly suitable for a bike.",
   },
@@ -522,11 +573,14 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [
       {
-        videos: { northbound: VIDEOS.cambieNb, southbound: VIDEOS.cambieSb },
+        videos: {
+          northbound: ROUTE_VIDEOS.cambieNb,
+          southbound: ROUTE_VIDEOS.cambieSb,
+        },
       },
       {
         name: "Connection with Ontario via 42nd Ave",
-        videos: { eastbound: VIDEOS.fortySecondEb },
+        videos: { eastbound: ROUTE_VIDEOS.fortySecondEb },
       },
     ],
     notes:
@@ -539,7 +593,7 @@ export const ROUTES = {
     isOneWay: true,
     legs: [
       {
-        videos: { northbound: VIDEOS.cambieGastownNb },
+        videos: { northbound: ROUTE_VIDEOS.cambieGastownNb },
       },
     ],
     notes: "A one-way, downhill route to Gastown.",
@@ -550,15 +604,15 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.cambieBridgeSmitheNb,
-          southbound: VIDEOS.cambieBridgeNelsonSb,
+          northbound: ROUTE_VIDEOS.cambieBridgeSmitheNb,
+          southbound: ROUTE_VIDEOS.cambieBridgeNelsonSb,
         },
       },
       {
         name: "Seawall to Seawall",
         videos: {
-          northbound: VIDEOS.cambieBridgeNb,
-          southbound: VIDEOS.cambieBridgeSb,
+          northbound: ROUTE_VIDEOS.cambieBridgeNb,
+          southbound: ROUTE_VIDEOS.cambieBridgeSb,
         },
       },
     ],
@@ -571,20 +625,20 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.canadaLineNb,
-          southbound: VIDEOS.canadaLineSb,
+          northbound: ROUTE_VIDEOS.canadaLineNb,
+          southbound: ROUTE_VIDEOS.canadaLineSb,
         },
       },
       {
         name: "North Arm Bridge",
         videos: {
-          northbound: VIDEOS.northArmBridgeNb,
-          southbound: VIDEOS.northArmBridgeSb,
+          northbound: ROUTE_VIDEOS.northArmBridgeNb,
+          southbound: ROUTE_VIDEOS.northArmBridgeSb,
         },
       },
       {
         name: "River Dr Path",
-        videos: { eastbound: VIDEOS.riverDrPathEb },
+        videos: { eastbound: ROUTE_VIDEOS.riverDrPathEb },
       },
     ],
     notes:
@@ -603,7 +657,10 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [
       {
-        videos: { northbound: VIDEOS.carderoNb, southbound: VIDEOS.carderoSb },
+        videos: {
+          northbound: ROUTE_VIDEOS.carderoNb,
+          southbound: ROUTE_VIDEOS.carderoSb,
+        },
       },
     ],
     notes:
@@ -614,7 +671,10 @@ export const ROUTES = {
     regions: [REGIONS.burnaby],
     legs: [
       {
-        videos: { northbound: VIDEOS.caribooNb, southbound: VIDEOS.caribooSb },
+        videos: {
+          northbound: ROUTE_VIDEOS.caribooNb,
+          southbound: ROUTE_VIDEOS.caribooSb,
+        },
       },
     ],
     notes:
@@ -626,8 +686,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.carnarvonEb,
-          westbound: VIDEOS.carnarvonWb,
+          eastbound: ROUTE_VIDEOS.carnarvonEb,
+          westbound: ROUTE_VIDEOS.carnarvonWb,
         },
       },
     ],
@@ -639,7 +699,10 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [
       {
-        videos: { northbound: VIDEOS.carrallNb, southbound: VIDEOS.carrallSb },
+        videos: {
+          northbound: ROUTE_VIDEOS.carrallNb,
+          southbound: ROUTE_VIDEOS.carrallSb,
+        },
       },
     ],
     notes:
@@ -648,7 +711,7 @@ export const ROUTES = {
   cassiar: {
     name: "Cassiar",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { southbound: VIDEOS.cassiarSb } }],
+    legs: [{ videos: { southbound: ROUTE_VIDEOS.cassiarSb } }],
     notes:
       "Flat-ish. Crossing Hastings is not great; technically you must dismount (nobody does).",
   },
@@ -656,8 +719,14 @@ export const ROUTES = {
     name: "Caulfeild",
     regions: [REGIONS.westVancouver],
     legs: [
-      { name: "West branch", videos: { northbound: VIDEOS.caulfeildWestNb } },
-      { name: "East branch", videos: { southbound: VIDEOS.caulfeildEastSb } },
+      {
+        name: "West branch",
+        videos: { northbound: ROUTE_VIDEOS.caulfeildWestNb },
+      },
+      {
+        name: "East branch",
+        videos: { southbound: ROUTE_VIDEOS.caulfeildEastSb },
+      },
     ],
     notes: "Steep winding hills with roads intended for cars.",
   },
@@ -667,7 +736,7 @@ export const ROUTES = {
     regions: [REGIONS.burnaby],
     legs: [
       {
-        videos: { clockwise: VIDEOS.centralParkPerimeterTrailCw },
+        videos: { clockwise: ROUTE_VIDEOS.centralParkPerimeterTrailCw },
       },
     ],
     notes:
@@ -681,24 +750,24 @@ export const ROUTES = {
       {
         name: "Vancouver",
         videos: {
-          eastbound: VIDEOS.centralValleyVancouverEb,
-          westbound: VIDEOS.centralValleyVancouverWb,
+          eastbound: ROUTE_VIDEOS.centralValleyVancouverEb,
+          westbound: ROUTE_VIDEOS.centralValleyVancouverWb,
         },
       },
       {
         name: "Broadway & Victoria Dr: Alternate Route",
-        videos: { eastbound: VIDEOS.centralValleyVancouverEbAlt },
+        videos: { eastbound: ROUTE_VIDEOS.centralValleyVancouverEbAlt },
       },
       {
         name: "Burnaby",
         videos: {
-          eastbound: VIDEOS.centralValleyBurnabyEb,
-          westbound: VIDEOS.centralValleyBurnabyWb,
+          eastbound: ROUTE_VIDEOS.centralValleyBurnabyEb,
+          westbound: ROUTE_VIDEOS.centralValleyBurnabyWb,
         },
       },
       {
         name: "New Westminster",
-        videos: { northbound: VIDEOS.centralValleyNWNb },
+        videos: { northbound: ROUTE_VIDEOS.centralValleyNWNb },
       },
     ],
     notes:
@@ -711,8 +780,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.champlainHeightsGapEb,
-          westbound: VIDEOS.champlainHeightsGapWb,
+          eastbound: ROUTE_VIDEOS.champlainHeightsGapEb,
+          westbound: ROUTE_VIDEOS.champlainHeightsGapWb,
         },
       },
     ],
@@ -722,7 +791,7 @@ export const ROUTES = {
   chancellor: {
     name: "Chancellor Blvd",
     regions: [REGIONS.ubc],
-    legs: [{ videos: { westbound: VIDEOS.chancellorWb } }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.chancellorWb } }],
     notes:
       "Some gradual hills and fast cars. The painted lanes are beside the curb. Accessing the path at Tasmania Cr can be confusing as it's not well signed.",
   },
@@ -738,14 +807,19 @@ export const ROUTES = {
     name: "Chilco",
     regions: [REGIONS.vancouver],
     legs: [
-      { videos: { northbound: VIDEOS.chilcoNb, southbound: VIDEOS.chilcoSb } },
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.chilcoNb,
+          southbound: ROUTE_VIDEOS.chilcoSb,
+        },
+      },
     ],
     notes: "A steep hill at the north end. Quiet with much traffic calming.",
   },
   columbia: {
     name: "Columbia",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { northbound: VIDEOS.columbiaNb } }],
+    legs: [{ videos: { northbound: ROUTE_VIDEOS.columbiaNb } }],
     notes:
       "A wide industrial road which is not clearly marked as a bike route, nor very useful given Ontario and Yukon nearby.",
   },
@@ -755,8 +829,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.comoxHelmckenEb,
-          westbound: VIDEOS.comoxHelmckenWb,
+          eastbound: ROUTE_VIDEOS.comoxHelmckenEb,
+          westbound: ROUTE_VIDEOS.comoxHelmckenWb,
         },
       },
     ],
@@ -768,7 +842,10 @@ export const ROUTES = {
     regions: [REGIONS.pittMeadows],
     legs: [
       {
-        videos: { eastbound: VIDEOS.cprTrailEb, westbound: VIDEOS.cprTrailWb },
+        videos: {
+          eastbound: ROUTE_VIDEOS.cprTrailEb,
+          westbound: ROUTE_VIDEOS.cprTrailWb,
+        },
       },
     ],
     notes: "Very flat. The north section at Kennedy Rd isn't as good.",
@@ -776,14 +853,14 @@ export const ROUTES = {
   crabappleRidge: {
     name: "Crabapple Ridge",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { southbound: VIDEOS.crabappleSb } }],
+    legs: [{ videos: { southbound: ROUTE_VIDEOS.crabappleSb } }],
     notes:
       "Very flat, and also very hard to follow the almost 30 turns you need to make. The indirectness adds about 2km of distance. It's not entirely clear where the route ends in Steveston.",
   },
   crosstownRichmond: {
     name: "Crosstown",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { westbound: VIDEOS.crosstownRichmondWb } }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.crosstownRichmondWb } }],
     notes:
       "Very flat, but lots of turns so easy to get lost. The only reasonable route it connects to is Railway Greenway.",
   },
@@ -792,10 +869,10 @@ export const ROUTES = {
     shortName: "Crosstown Gr.",
     regions: [REGIONS.newWestminster],
     legs: [
-      { videos: { eastbound: VIDEOS.crosstownNWEb } },
+      { videos: { eastbound: ROUTE_VIDEOS.crosstownNWEb } },
       {
         name: "Richmond St/Surrey St connection to Burnaby",
-        videos: { northbound: VIDEOS.crosstownNWExtNb },
+        videos: { northbound: ROUTE_VIDEOS.crosstownNWExtNb },
       },
     ],
     notes:
@@ -806,7 +883,10 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [
       {
-        videos: { northbound: VIDEOS.cypressNb, southbound: VIDEOS.cypressSb },
+        videos: {
+          northbound: ROUTE_VIDEOS.cypressNb,
+          southbound: ROUTE_VIDEOS.cypressSb,
+        },
       },
     ],
     notes:
@@ -819,8 +899,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.deerLakePkwyEb,
-          westbound: VIDEOS.deerLakePkwyWb,
+          eastbound: ROUTE_VIDEOS.deerLakePkwyEb,
+          westbound: ROUTE_VIDEOS.deerLakePkwyWb,
         },
       },
     ],
@@ -829,7 +909,7 @@ export const ROUTES = {
   drake: {
     name: "Drake",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { eastbound: VIDEOS.drakeEb } }],
+    legs: [{ videos: { eastbound: ROUTE_VIDEOS.drakeEb } }],
     notes:
       "New mid-2025 bike path. A bit of a hill. In the future it will extend all the way to Pacific Blvd.",
   },
@@ -839,7 +919,10 @@ export const ROUTES = {
     legs: [
       {
         name: "Section above train tracks",
-        videos: { eastbound: VIDEOS.drummondEb, westbound: VIDEOS.drummondWb },
+        videos: {
+          eastbound: ROUTE_VIDEOS.drummondEb,
+          westbound: ROUTE_VIDEOS.drummondWb,
+        },
       },
     ],
     isIncomplete: true,
@@ -852,8 +935,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.dumfriesNb,
-          southbound: VIDEOS.dumfriesSb,
+          northbound: ROUTE_VIDEOS.dumfriesNb,
+          southbound: ROUTE_VIDEOS.dumfriesSb,
         },
       },
     ],
@@ -864,7 +947,12 @@ export const ROUTES = {
     name: "Dunbar St",
     regions: [REGIONS.vancouver],
     legs: [
-      { videos: { northbound: VIDEOS.dunbarNb, southbound: VIDEOS.dunbarSb } },
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.dunbarNb,
+          southbound: ROUTE_VIDEOS.dunbarSb,
+        },
+      },
     ],
     notes:
       "Steep and lots of cars. The painted lanes beside parked cars. Doesn't connect to anything at the north end. The uphill at the south end is very uncomfortable.",
@@ -874,7 +962,10 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [
       {
-        videos: { eastbound: VIDEOS.dunsmuirEb, westbound: VIDEOS.dunsmuirWb },
+        videos: {
+          eastbound: ROUTE_VIDEOS.dunsmuirEb,
+          westbound: ROUTE_VIDEOS.dunsmuirWb,
+        },
       },
     ],
     notes:
@@ -885,14 +976,14 @@ export const ROUTES = {
     shortName: "Dunsmuir/Melville",
     regions: [REGIONS.vancouver],
     isOneWay: true,
-    legs: [{ videos: { westbound: VIDEOS.lionsGateBridgeNb } }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.lionsGateBridgeNb } }],
     notes:
       "Uncomfortable, one-way downhill route. The painted lane is mostly beside parked cars. The city is planning on replacing this with an extension of the separated lane on Dunsmuir, via Melville, Jervis, Hastings, and Broughton - which will no longer connect to Georgia.",
   },
   eastMall: {
     name: "East Mall",
     regions: [REGIONS.ubc],
-    legs: [{ videos: { southbound: VIDEOS.eastMallSb } }],
+    legs: [{ videos: { southbound: ROUTE_VIDEOS.eastMallSb } }],
     notes:
       "The south bit is not great, but the rest is quiet and flat. The painted lanes are beside parked cars.",
   },
@@ -902,19 +993,19 @@ export const ROUTES = {
     legs: [
       {
         name: "Sample's Path",
-        videos: { southbound: VIDEOS.edmondsSamplesSb },
+        videos: { southbound: ROUTE_VIDEOS.edmondsSamplesSb },
       },
       {
         name: "Byrne Creek Secondary/18th St/Salisbury Ave",
-        videos: { eastbound: VIDEOS.edmonds18thNb },
+        videos: { eastbound: ROUTE_VIDEOS.edmonds18thNb },
       },
       {
         name: "15th St/Britton St/Kingsway Ave",
-        videos: { northbound: VIDEOS.highlandParkLineWb },
+        videos: { northbound: ROUTE_VIDEOS.highlandParkLineWb },
       },
       {
         name: "18th Ave/19th Ave",
-        videos: { northbound: VIDEOS.edmonds18thEb },
+        videos: { northbound: ROUTE_VIDEOS.edmonds18thEb },
       },
       { name: "Stride Ave/16th Ave", videos: {} },
     ],
@@ -924,21 +1015,21 @@ export const ROUTES = {
   ewen: {
     name: "Ewen Ave Greenway",
     regions: [REGIONS.newWestminster],
-    legs: [{ videos: { westbound: VIDEOS.ewenWb } }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.ewenWb } }],
     notes:
       "Very flat shared use path. Sometimes there are large poles awkwardly in the middle of the path.",
   },
   ferguson: {
     name: "Ferguson Rd",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { eastbound: VIDEOS.fergusonEb } }],
+    legs: [{ videos: { eastbound: ROUTE_VIDEOS.fergusonEb } }],
     notes:
       "Very flat. The portion beside the shared use path is a new realignment of the road in late 2024. There is a lot of traffic up to the buildings around McDonald Rd, then it gets a lot quieter.",
   },
   fergusonPath: {
     name: "Ferguson Rd Path",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { westbound: VIDEOS.fergusonPathWb } }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.fergusonPathWb } }],
     notes:
       "A brand new, very flat shared use path from late 2024. Unfortunately, you need to use roads to get to it, and it doesn't go all the way to Iona Island.",
   },
@@ -948,8 +1039,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.forbesEsplanadeEb,
-          westbound: VIDEOS.forbesEsplanadeWb,
+          eastbound: ROUTE_VIDEOS.forbesEsplanadeEb,
+          westbound: ROUTE_VIDEOS.forbesEsplanadeWb,
         },
       },
     ],
@@ -962,8 +1053,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.francesUnionEb,
-          westbound: VIDEOS.francesUnionWb,
+          eastbound: ROUTE_VIDEOS.francesUnionEb,
+          westbound: ROUTE_VIDEOS.francesUnionWb,
         },
       },
     ],
@@ -974,7 +1065,7 @@ export const ROUTES = {
     name: "Fraser Foreshore Urban Trail",
     shortName: "Fraser Foreshore T.",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { eastbound: VIDEOS.fraserForeshoreEb } }],
+    legs: [{ videos: { eastbound: ROUTE_VIDEOS.fraserForeshoreEb } }],
     notes:
       "A wide, flat, shared use path. Easy to accidentally continue on Glenlyon Pkwy Urban Trail instead of taking the correct turn. The trail continues to the east, but bikes are not allowed.",
   },
@@ -985,15 +1076,15 @@ export const ROUTES = {
       {
         name: "Southlands",
         videos: {
-          eastbound: VIDEOS.fraserRiverSouthlandsEb,
-          westbound: VIDEOS.fraserRiverSouthlandsWb,
+          eastbound: ROUTE_VIDEOS.fraserRiverSouthlandsEb,
+          westbound: ROUTE_VIDEOS.fraserRiverSouthlandsWb,
         },
       },
       { name: "Fraser River Park", videos: {} },
       { name: "Marpole", videos: {} },
       {
         name: "Fraserview",
-        videos: { eastbound: VIDEOS.fraserRiverFraserviewEb },
+        videos: { eastbound: ROUTE_VIDEOS.fraserRiverFraserviewEb },
       },
       { name: "River District", videos: {} },
     ],
@@ -1012,8 +1103,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.gaglardiNb,
-          southbound: VIDEOS.gaglardiSb,
+          northbound: ROUTE_VIDEOS.gaglardiNb,
+          southbound: ROUTE_VIDEOS.gaglardiSb,
         },
       },
     ],
@@ -1026,13 +1117,13 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.gardenCityNb,
-          southbound: VIDEOS.gardenCitySb,
+          northbound: ROUTE_VIDEOS.gardenCityNb,
+          southbound: ROUTE_VIDEOS.gardenCitySb,
         },
       },
       {
         name: "Connection to Granville Ave",
-        videos: { westbound: VIDEOS.citation },
+        videos: { westbound: ROUTE_VIDEOS.citation },
       },
     ],
     notes:
@@ -1041,7 +1132,7 @@ export const ROUTES = {
   gatensbury: {
     name: "Gatensbury St/Rd",
     regions: [REGIONS.portMoody, REGIONS.coquitlam],
-    legs: [{ videos: { southbound: VIDEOS.gatensburySb } }],
+    legs: [{ videos: { southbound: ROUTE_VIDEOS.gatensburySb } }],
     notes: "The north winding part is a very very steep hill.",
   },
   georgia: {
@@ -1050,8 +1141,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.lionsGateBridgeSb,
-          westbound: VIDEOS.lionsGateBridgeNb,
+          eastbound: ROUTE_VIDEOS.lionsGateBridgeSb,
+          westbound: ROUTE_VIDEOS.lionsGateBridgeNb,
         },
       },
     ],
@@ -1061,7 +1152,7 @@ export const ROUTES = {
   gilbert: {
     name: "Gilbert Rd",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { northbound: VIDEOS.gilbertNb } }],
+    legs: [{ videos: { northbound: ROUTE_VIDEOS.gilbertNb } }],
     notes:
       "Terrible bike route, fast cars will not leave sufficient space when passing - especially on the bridge. The painted lanes are beside the curb. The city plans on adding a shared use path to improve part of this route.",
   },
@@ -1071,8 +1162,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.gladstoneNb,
-          southbound: VIDEOS.gladstoneSb,
+          northbound: ROUTE_VIDEOS.gladstoneNb,
+          southbound: ROUTE_VIDEOS.gladstoneSb,
         },
       },
     ],
@@ -1082,7 +1173,7 @@ export const ROUTES = {
   glenlyon: {
     name: "Glenlyon Urban Trail",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { northbound: VIDEOS.glenlyonNb } }],
+    legs: [{ videos: { northbound: ROUTE_VIDEOS.glenlyonNb } }],
     notes:
       "Surface has lots of tree roots in places. Flat, except the north tip which is steep. Connecting to Sea to River at the north end is unclear - either use a dirt desire path, or the busy roads.",
   },
@@ -1092,8 +1183,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.goldenEarsBridgeNb,
-          southbound: VIDEOS.goldenEarsBridgeSb,
+          northbound: ROUTE_VIDEOS.goldenEarsBridgeNb,
+          southbound: ROUTE_VIDEOS.goldenEarsBridgeSb,
         },
       },
     ],
@@ -1107,8 +1198,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.grantMcConachieEb,
-          westbound: VIDEOS.grantMcConachieWb,
+          eastbound: ROUTE_VIDEOS.grantMcConachieEb,
+          westbound: ROUTE_VIDEOS.grantMcConachieWb,
         },
       },
     ],
@@ -1119,10 +1210,10 @@ export const ROUTES = {
     name: "Granville Ave",
     regions: [REGIONS.richmond],
     legs: [
-      { videos: { westbound: VIDEOS.granvilleWb } },
+      { videos: { westbound: ROUTE_VIDEOS.granvilleWb } },
       {
         name: "Connection from Garden City Rd",
-        videos: { westbound: VIDEOS.citation },
+        videos: { westbound: ROUTE_VIDEOS.citation },
       },
     ],
     notes:
@@ -1134,21 +1225,21 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.granvilleConnectorNb,
-          southbound: VIDEOS.granvilleConnectorSb,
+          northbound: ROUTE_VIDEOS.granvilleConnectorNb,
+          southbound: ROUTE_VIDEOS.granvilleConnectorSb,
         },
       },
       {
         name: "Fir St connection with Arbutus Greenway",
-        videos: { southbound: VIDEOS.granvilleConnectorFirSb },
+        videos: { southbound: ROUTE_VIDEOS.granvilleConnectorFirSb },
       },
       {
         name: "Via Howe St on-ramp",
-        videos: { southbound: VIDEOS.granvilleConnectorHoweSb },
+        videos: { southbound: ROUTE_VIDEOS.granvilleConnectorHoweSb },
       },
       {
         name: "Via downtown Granville St",
-        videos: { southbound: VIDEOS.granvilleConnectorGranvilleSb },
+        videos: { southbound: ROUTE_VIDEOS.granvilleConnectorGranvilleSb },
       },
     ],
     notes:
@@ -1157,13 +1248,20 @@ export const ROUTES = {
   grauer: {
     name: "Grauer Rd",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { eastbound: VIDEOS.grauerEb } }],
+    legs: [{ videos: { eastbound: ROUTE_VIDEOS.grauerEb } }],
     notes: "A flat and quiet road.",
   },
   haro: {
     name: "Haro",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { eastbound: VIDEOS.haroEb, westbound: VIDEOS.haroWb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.haroEb,
+          westbound: ROUTE_VIDEOS.haroWb,
+        },
+      },
+    ],
     notes: "A big hill in the middle, but quiet.",
   },
   hastingsPark: {
@@ -1173,22 +1271,22 @@ export const ROUTES = {
       {
         name: "Windermere <-> Portside",
         videos: {
-          northbound: VIDEOS.hastingsWindermerePortside,
-          southbound: VIDEOS.hastingsPortsideWindermere,
+          northbound: ROUTE_VIDEOS.hastingsWindermerePortside,
+          southbound: ROUTE_VIDEOS.hastingsPortsideWindermere,
         },
       },
       {
         name: "Pandora <-> Cassiar",
-        videos: { westbound: VIDEOS.hastingsCassiarPandora },
+        videos: { westbound: ROUTE_VIDEOS.hastingsCassiarPandora },
       },
       { name: "Pandora <-> Portside", videos: {} },
       {
         name: "Windermere <-> Cassiar",
-        videos: { northbound: VIDEOS.hastingsWindermereCassiar },
+        videos: { northbound: ROUTE_VIDEOS.hastingsWindermereCassiar },
       },
       {
         name: "Cassiar <-> Portside",
-        videos: { southbound: VIDEOS.hastingsPortsideCassiar },
+        videos: { southbound: ROUTE_VIDEOS.hastingsPortsideCassiar },
       },
       { name: "Pandora <-> Windermere", videos: {} },
     ],
@@ -1200,7 +1298,10 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [
       {
-        videos: { northbound: VIDEOS.heatherNb, southbound: VIDEOS.heatherSb },
+        videos: {
+          northbound: ROUTE_VIDEOS.heatherNb,
+          southbound: ROUTE_VIDEOS.heatherSb,
+        },
       },
     ],
     notes:
@@ -1212,8 +1313,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.highburyNb,
-          southbound: VIDEOS.highburySb,
+          northbound: ROUTE_VIDEOS.highburyNb,
+          southbound: ROUTE_VIDEOS.highburySb,
         },
       },
     ],
@@ -1226,8 +1327,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.highlandParkLineEb,
-          westbound: VIDEOS.highlandParkLineWb,
+          eastbound: ROUTE_VIDEOS.highlandParkLineEb,
+          westbound: ROUTE_VIDEOS.highlandParkLineWb,
         },
       },
     ],
@@ -1240,8 +1341,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.hillcrestEb,
-          westbound: VIDEOS.hillcrestWb,
+          eastbound: ROUTE_VIDEOS.hillcrestEb,
+          westbound: ROUTE_VIDEOS.hillcrestWb,
         },
       },
     ],
@@ -1252,7 +1353,7 @@ export const ROUTES = {
     name: "Homer St",
     regions: [REGIONS.vancouver],
     isOneWay: true,
-    legs: [{ videos: { northbound: VIDEOS.homerNb } }],
+    legs: [{ videos: { northbound: ROUTE_VIDEOS.homerNb } }],
     notes:
       "The painted lane is beside parked cars, and the parking width is narrow. Plenty of hills. When Richards used to be one-way southbound, this was more useful, but now Richards is a much better (two-way) alternative.",
   },
@@ -1260,7 +1361,12 @@ export const ROUTES = {
     name: "Hornby",
     regions: [REGIONS.vancouver],
     legs: [
-      { videos: { northbound: VIDEOS.hornbyNb, southbound: VIDEOS.hornbySb } },
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.hornbyNb,
+          southbound: ROUTE_VIDEOS.hornbySb,
+        },
+      },
     ],
     notes:
       "Not very flat, but a great connection between the Burrard Bridge and the Convention Center. The light timing is not great for southbound cyclists.",
@@ -1271,8 +1377,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.horseshoeBayNb,
-          southbound: VIDEOS.horseshoeBaySb,
+          northbound: ROUTE_VIDEOS.horseshoeBayNb,
+          southbound: ROUTE_VIDEOS.horseshoeBaySb,
         },
       },
     ],
@@ -1282,7 +1388,7 @@ export const ROUTES = {
   howes: {
     name: "Howes St",
     regions: [REGIONS.newWestminster],
-    legs: [{ videos: { northbound: VIDEOS.howesNb } }],
+    legs: [{ videos: { northbound: ROUTE_VIDEOS.howesNb } }],
     notes:
       "Very flat. The south half is a nice shared use path, but the north half is terrible. Consider Wood St or Boundary Trail instead.",
   },
@@ -1290,20 +1396,20 @@ export const ROUTES = {
     name: "Imperial Dr",
     isGap: true,
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { northbound: VIDEOS.imperialNb } }],
+    legs: [{ videos: { northbound: ROUTE_VIDEOS.imperialNb } }],
     notes: "Relatively flat. Quiet-ish, but the cars go very fast.",
   },
   imperialLandingTrail: {
     name: "Imperial Landing Trail",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { westbound: VIDEOS.imperialLandingWb } }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.imperialLandingWb } }],
     notes: "A flat shared use path which varies a lot in width.",
   },
   imperialPowerline: {
     name: "Imperial Trail/Powerline Trail",
     shortName: "Imperial/Powerline",
     regions: [REGIONS.ubc],
-    legs: [{ videos: { eastbound: VIDEOS.imperialPowerlineEb } }],
+    legs: [{ videos: { eastbound: ROUTE_VIDEOS.imperialPowerlineEb } }],
     notes:
       "A gentle hill to the east. The shared use path gets wider as you go east, but also busier, with lots of dogs.",
   },
@@ -1316,7 +1422,7 @@ export const ROUTES = {
   inverness: {
     name: "Inverness",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { southbound: VIDEOS.invernessSb } }],
+    legs: [{ videos: { southbound: ROUTE_VIDEOS.invernessSb } }],
     notes:
       "Very steep. Quiet, but cars will be impatient to pass you going uphill. The configuration at Marine is confusing, you briefly travel on the left of opposing bikes.",
   },
@@ -1324,7 +1430,12 @@ export const ROUTES = {
     name: "Keefer",
     regions: [REGIONS.vancouver],
     legs: [
-      { videos: { eastbound: VIDEOS.keeferEb, westbound: VIDEOS.keeferWb } },
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.keeferEb,
+          westbound: ROUTE_VIDEOS.keeferWb,
+        },
+      },
     ],
     notes:
       "Some minor hills. The west half is quite bad, the east half is quiet. Use Adanac instead though.",
@@ -1336,8 +1447,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.kensingtonNb,
-          southbound: VIDEOS.kensingtonSb,
+          northbound: ROUTE_VIDEOS.kensingtonNb,
+          southbound: ROUTE_VIDEOS.kensingtonSb,
         },
       },
     ],
@@ -1347,7 +1458,7 @@ export const ROUTES = {
   kent: {
     name: "Kent",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { westbound: VIDEOS.kentWb } }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.kentWb } }],
     notes:
       "Flat. The painted lanes are beside the curb. Generally, the further east you go the better this route is. But the surface is extremely bad in multiple places. The west portion might be the worst bike route in the city. The east has had detours for years due to adjacent construction.",
   },
@@ -1356,7 +1467,10 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [
       {
-        videos: { northbound: VIDEOS.kerrNb, southbound: VIDEOS.kerrSb },
+        videos: {
+          northbound: ROUTE_VIDEOS.kerrNb,
+          southbound: ROUTE_VIDEOS.kerrSb,
+        },
       },
     ],
     notes:
@@ -1368,8 +1482,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.killarneyEb,
-          westbound: VIDEOS.killarneyWb,
+          eastbound: ROUTE_VIDEOS.killarneyEb,
+          westbound: ROUTE_VIDEOS.killarneyWb,
         },
       },
     ],
@@ -1382,8 +1496,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.kingEdwardEb,
-          westbound: VIDEOS.kingEdwardWb,
+          eastbound: ROUTE_VIDEOS.kingEdwardEb,
+          westbound: ROUTE_VIDEOS.kingEdwardWb,
         },
       },
     ],
@@ -1397,13 +1511,13 @@ export const ROUTES = {
       {
         name: "between Inverness and Bridgeport Rd",
         videos: {
-          northbound: VIDEOS.knightStBridgeNb,
-          southbound: VIDEOS.knightStBridgeSb,
+          northbound: ROUTE_VIDEOS.knightStBridgeNb,
+          southbound: ROUTE_VIDEOS.knightStBridgeSb,
         },
       },
       {
         name: "exiting to Borden St via 64th Ave",
-        videos: { northbound: VIDEOS.knightStBridgeVia64th },
+        videos: { northbound: ROUTE_VIDEOS.knightStBridgeVia64th },
       },
     ],
     notes:
@@ -1412,7 +1526,7 @@ export const ROUTES = {
   lakes: {
     name: "Lakes",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { northbound: VIDEOS.lakesNb } }],
+    legs: [{ videos: { northbound: ROUTE_VIDEOS.lakesNb } }],
     notes:
       "Multiple steep hills. The portion along Sperling varies a lot but is overall quite bad. You can skip part of Sperling by using the path along Kensington. A new pedestrian/cyclist overpass of the Trans-Canada Highway is being built just to the east of this.",
   },
@@ -1422,8 +1536,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.lakewoodNb,
-          southbound: VIDEOS.lakewoodSb,
+          northbound: ROUTE_VIDEOS.lakewoodNb,
+          southbound: ROUTE_VIDEOS.lakewoodSb,
         },
       },
     ],
@@ -1437,8 +1551,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.lionsGateBridgeNb,
-          southbound: VIDEOS.lionsGateBridgeSb,
+          northbound: ROUTE_VIDEOS.lionsGateBridgeNb,
+          southbound: ROUTE_VIDEOS.lionsGateBridgeSb,
         },
       },
     ],
@@ -1448,7 +1562,7 @@ export const ROUTES = {
   lionsGateVillage: {
     name: "Lions Gate Village",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: { southbound: VIDEOS.lionsGateVillageSb } }],
+    legs: [{ videos: { southbound: ROUTE_VIDEOS.lionsGateVillageSb } }],
     notes:
       "A connection between the Lions Gate Bridge and Capilano Rd. There are sharrows on the ground, but no signs directing you toward any destination so you'll likely miss the shared use path in the middle.",
   },
@@ -1456,7 +1570,7 @@ export const ROUTES = {
     name: "London/Dublin Greenway",
     shortName: "London/Dublin Gr.",
     regions: [REGIONS.newWestminster],
-    legs: [{ videos: { eastbound: VIDEOS.londonDublinEb } }],
+    legs: [{ videos: { eastbound: ROUTE_VIDEOS.londonDublinEb } }],
     notes:
       "The west end has a steep hill. It's a 'greenway' but is basically entirely on-street, though mostly quiet. The east end used to connect to the school, but the school was rebuilt on the other side of the property and is no longer accessible from here.",
   },
@@ -1466,7 +1580,10 @@ export const ROUTES = {
     legs: [
       {
         name: "Burnaby/Coquitlam",
-        videos: { eastbound: VIDEOS.lougheedEb, westbound: VIDEOS.lougheedWb },
+        videos: {
+          eastbound: ROUTE_VIDEOS.lougheedEb,
+          westbound: ROUTE_VIDEOS.lougheedWb,
+        },
       },
     ],
     notes:
@@ -1477,7 +1594,10 @@ export const ROUTES = {
     regions: [REGIONS.northVancouver],
     legs: [
       {
-        videos: { eastbound: VIDEOS.lowLevelEb, westbound: VIDEOS.lowLevelWb },
+        videos: {
+          eastbound: ROUTE_VIDEOS.lowLevelEb,
+          westbound: ROUTE_VIDEOS.lowLevelWb,
+        },
       },
     ],
     notes:
@@ -1486,14 +1606,14 @@ export const ROUTES = {
   lynas: {
     name: "Lynas Ln",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { northbound: VIDEOS.lynasNb } }],
+    legs: [{ videos: { northbound: ROUTE_VIDEOS.lynasNb } }],
     notes:
       "Very flat. The north part gets a lot of cars at times. Mainly useful as a connection with the No. 2 Bridge; connect to that via Dover Cr.",
   },
   mackay: {
     name: "MacKay",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: { southbound: VIDEOS.mackaySb } }],
+    legs: [{ videos: { southbound: ROUTE_VIDEOS.mackaySb } }],
     notes:
       "A short, flat path. There are a few poles in the middle of the path. The path itself doesn't connect with anything comfortable at the north end, though you can use the painted lane to connect with Hamilton/16th.",
   },
@@ -1503,8 +1623,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.mainCottonEb,
-          westbound: VIDEOS.mainCottonWb,
+          eastbound: ROUTE_VIDEOS.mainCottonEb,
+          westbound: ROUTE_VIDEOS.mainCottonWb,
         },
       },
     ],
@@ -1515,7 +1635,7 @@ export const ROUTES = {
     name: "NW Marine",
     shortName: "NW Marine (UBC)",
     regions: [REGIONS.vancouver, REGIONS.ubc],
-    legs: [{ videos: { eastbound: VIDEOS.nwMarineEb } }],
+    legs: [{ videos: { eastbound: ROUTE_VIDEOS.nwMarineEb } }],
     notes:
       "A long steep hill up to UBC and a milder hill at the east end, but flat besides that. Quite uncomfortable. Much of the painted lanes are beside parked cars, sometimes perpendicular parking.",
   },
@@ -1525,7 +1645,10 @@ export const ROUTES = {
     regions: [REGIONS.vancouver, REGIONS.ubc],
     legs: [
       {
-        videos: { eastbound: VIDEOS.swMarineEb, westbound: VIDEOS.swMarineWb },
+        videos: {
+          eastbound: ROUTE_VIDEOS.swMarineEb,
+          westbound: ROUTE_VIDEOS.swMarineWb,
+        },
       },
     ],
     notes:
@@ -1535,7 +1658,7 @@ export const ROUTES = {
     name: "Marine Dr/3rd St (North Vancouver)",
     shortName: "Marine/3rd (NV)",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: { westbound: VIDEOS.marineNvWb } }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.marineNvWb } }],
     notes:
       "Flat. One of the worst routes in the area. Some of the shared lane portions are bus lanes, which is not so bad, but most aren't, and even those that are frequently allow right-turning vehicles. The painted lanes are mostly beside the curb.",
   },
@@ -1544,26 +1667,26 @@ export const ROUTES = {
     shortName: "Marine Dr (WV)",
     regions: [REGIONS.westVancouver],
     legs: [
-      { videos: { westbound: VIDEOS.marineDrWb } },
+      { videos: { westbound: ROUTE_VIDEOS.marineDrWb } },
       {
         name: "St Georges Ave: Alternate Route",
         videos: {
-          eastbound: VIDEOS.stGeorgesEb,
-          westbound: VIDEOS.stGeorgesWb,
+          eastbound: ROUTE_VIDEOS.stGeorgesEb,
+          westbound: ROUTE_VIDEOS.stGeorgesWb,
         },
       },
       {
         name: "Greenleaf Rd: Alternate Route",
         videos: {
-          eastbound: VIDEOS.greenleafEb,
-          westbound: VIDEOS.greenleafWb,
+          eastbound: ROUTE_VIDEOS.greenleafEb,
+          westbound: ROUTE_VIDEOS.greenleafWb,
         },
       },
       {
         name: "Water Ln/Piccadilly S: Alternate Route",
         videos: {
-          eastbound: VIDEOS.waterPiccadillyEb,
-          westbound: VIDEOS.waterPiccadillyWb,
+          eastbound: ROUTE_VIDEOS.waterPiccadillyEb,
+          westbound: ROUTE_VIDEOS.waterPiccadillyWb,
         },
       },
     ],
@@ -1576,8 +1699,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.marineWayEb,
-          westbound: VIDEOS.marineWayWb,
+          eastbound: ROUTE_VIDEOS.marineWayEb,
+          westbound: ROUTE_VIDEOS.marineWayWb,
         },
       },
     ],
@@ -1591,7 +1714,10 @@ export const ROUTES = {
     legs: [
       {
         name: "Coquitlam River",
-        videos: { eastbound: VIDEOS.lougheedEb, westbound: VIDEOS.lougheedWb },
+        videos: {
+          eastbound: ROUTE_VIDEOS.lougheedEb,
+          westbound: ROUTE_VIDEOS.lougheedWb,
+        },
       },
     ],
     notes:
@@ -1604,8 +1730,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.masumiMitsuiEb,
-          westbound: VIDEOS.masumiMitsuiWb,
+          eastbound: ROUTE_VIDEOS.masumiMitsuiEb,
+          westbound: ROUTE_VIDEOS.masumiMitsuiWb,
         },
       },
     ],
@@ -1616,7 +1742,7 @@ export const ROUTES = {
     name: "McDonald Beach Trail",
     shortName: "McDonald Beach T.",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { westbound: VIDEOS.mcdonaldBeachTrailWb } }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.mcdonaldBeachTrailWb } }],
     notes:
       "Very flat, but the surface has lots of holes/indentations, which may be full of water.",
   },
@@ -1626,8 +1752,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          clockwise: VIDEOS.metrotownCw,
-          counterclockwise: VIDEOS.metrotownCcw,
+          clockwise: ROUTE_VIDEOS.metrotownCw,
+          counterclockwise: ROUTE_VIDEOS.metrotownCcw,
         },
       },
     ],
@@ -1637,7 +1763,7 @@ export const ROUTES = {
   middleArm: {
     name: "Middle Arm Trail",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { eastbound: VIDEOS.middleArmEb } }],
+    legs: [{ videos: { eastbound: ROUTE_VIDEOS.middleArmEb } }],
     notes:
       "Very flat, but the surface varies a lot in quality and is often gravel. Confusingly, it's a dead-end shortly after Cambie Rd.",
   },
@@ -1647,11 +1773,11 @@ export const ROUTES = {
     legs: [
       {
         name: "Vancouver",
-        videos: { eastbound: VIDEOS.midtownVancouverEb },
+        videos: { eastbound: ROUTE_VIDEOS.midtownVancouverEb },
       },
       {
         name: "Burnaby",
-        videos: { westbound: VIDEOS.midtownBurnabyWb },
+        videos: { westbound: ROUTE_VIDEOS.midtownBurnabyWb },
       },
     ],
     notes:
@@ -1660,20 +1786,20 @@ export const ROUTES = {
   millenniumTrail: {
     name: "Millennium Trail",
     regions: [REGIONS.newWestminster],
-    legs: [{ videos: { southbound: VIDEOS.millenniumSb } }],
+    legs: [{ videos: { southbound: ROUTE_VIDEOS.millenniumSb } }],
     notes: "Lots of hills.",
   },
   miller: {
     name: "Miller Rd",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { westbound: VIDEOS.millerWb } }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.millerWb } }],
     notes:
       "Very flat. The east portion is quite uncomfortable, especially eastbound.",
   },
   minoru: {
     name: "Minoru Blvd",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { northbound: VIDEOS.minoruNb } }],
+    legs: [{ videos: { northbound: ROUTE_VIDEOS.minoruNb } }],
     notes:
       "Very flat, lots of traffic. The painted lanes are beside the curb. The painted lanes may be closed at CF Richmond Center due to construction.",
   },
@@ -1681,7 +1807,12 @@ export const ROUTES = {
     name: "Mosaic",
     regions: [REGIONS.vancouver],
     legs: [
-      { videos: { northbound: VIDEOS.mosaicNb, southbound: VIDEOS.mosaicSb } },
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.mosaicNb,
+          southbound: ROUTE_VIDEOS.mosaicSb,
+        },
+      },
     ],
     notes:
       "Lots of hills, but mostly quiet. The south (east) end leads to an alley which eventually connects to BC Parkway. The Grandview Cut was closed to cars around 2022.",
@@ -1691,7 +1822,10 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [
       {
-        videos: { northbound: VIDEOS.nanaimoNb, southbound: VIDEOS.nanaimoSb },
+        videos: {
+          northbound: ROUTE_VIDEOS.nanaimoNb,
+          southbound: ROUTE_VIDEOS.nanaimoSb,
+        },
       },
     ],
     notes:
@@ -1701,14 +1835,14 @@ export const ROUTES = {
     name: "Nelson St",
     regions: [REGIONS.vancouver],
     isOneWay: true,
-    legs: [{ videos: { eastbound: VIDEOS.cambieBridgeNelsonSb } }],
+    legs: [{ videos: { eastbound: ROUTE_VIDEOS.cambieBridgeNelsonSb } }],
     notes:
       "One-way downhill connection to the Cambie St Bridge. The light timing works very well. Watch for turning cars though.",
   },
   nelsonAve: {
     name: "Nelson Ave Path",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { southbound: VIDEOS.nelsonPathSb } }],
+    legs: [{ videos: { southbound: ROUTE_VIDEOS.nelsonPathSb } }],
     notes:
       "Flat. Good access to Bonsor, but doesn't connect to any reasonable routes at the north end.",
   },
@@ -1716,7 +1850,12 @@ export const ROUTES = {
     name: "Nicola",
     regions: [REGIONS.vancouver],
     legs: [
-      { videos: { northbound: VIDEOS.nicolaNb, southbound: VIDEOS.nicolaSb } },
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.nicolaNb,
+          southbound: ROUTE_VIDEOS.nicolaSb,
+        },
+      },
     ],
     notes:
       "A hill. In theory quiet, but there can be traffic. Mostly useful for coming off of Georgia from the Lions Gate Bridge and transitioning to Haro, though you could do that on Cardero.",
@@ -1724,7 +1863,7 @@ export const ROUTES = {
   no2: {
     name: "No. 2 Rd",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { northbound: VIDEOS.no2Nb } }],
+    legs: [{ videos: { northbound: ROUTE_VIDEOS.no2Nb } }],
     notes:
       "Painted lane over the bridge, beside the curb. Relatively flat. You can use the sidewalk as a shared use path instead. Doesn't connect to anything at the south end, and Westminster Hwy is not good for cyclists.",
   },
@@ -1734,8 +1873,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.no2BridgeNb,
-          southbound: VIDEOS.no2BridgeSb,
+          northbound: ROUTE_VIDEOS.no2BridgeNb,
+          southbound: ROUTE_VIDEOS.no2BridgeSb,
         },
       },
     ],
@@ -1747,7 +1886,10 @@ export const ROUTES = {
     regions: [REGIONS.richmond],
     legs: [
       {
-        videos: { northbound: VIDEOS.no2PathNb, southbound: VIDEOS.no2PathSb },
+        videos: {
+          northbound: ROUTE_VIDEOS.no2PathNb,
+          southbound: ROUTE_VIDEOS.no2PathSb,
+        },
       },
     ],
     notes: "Very flat shared use path.",
@@ -1755,14 +1897,21 @@ export const ROUTES = {
   no3: {
     name: "No. 3 Rd",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { northbound: VIDEOS.no3Nb, southbound: VIDEOS.no3Sb } }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.no3Nb,
+          southbound: ROUTE_VIDEOS.no3Sb,
+        },
+      },
+    ],
     notes:
       "Very flat. The painted lanes are beside the curb, and sometimes slightly elevated from the road. Northbound is quite bad, and southbound is absolutely terrible. Access from Granville Ave is recommended via Buswell St and Cook Rd, but these are also not good roads for cycling.",
   },
   no6Path: {
     name: "No. 6 Rd Path",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { southbound: VIDEOS.no6PathSb } }],
+    legs: [{ videos: { southbound: ROUTE_VIDEOS.no6PathSb } }],
     notes:
       "A couple of brief shared use paths, which don't connect to each other, nor anything else really besides Westminster Hwy at the south end.",
   },
@@ -1772,8 +1921,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.northSouthNb,
-          southbound: VIDEOS.northSouthSb,
+          northbound: ROUTE_VIDEOS.northSouthNb,
+          southbound: ROUTE_VIDEOS.northSouthSb,
         },
       },
     ],
@@ -1783,7 +1932,7 @@ export const ROUTES = {
   nService: {
     name: "North Service Rd",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { eastbound: VIDEOS.nServiceEb } }],
+    legs: [{ videos: { eastbound: ROUTE_VIDEOS.nServiceEb } }],
     notes:
       "Very flat. Probably the best way to approach the YVR terminal, from the shared use sidewalk on Templeton Station Rd.",
   },
@@ -1794,8 +1943,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.oaklandBurrisEb,
-          westbound: VIDEOS.oaklandBurrisWb,
+          eastbound: ROUTE_VIDEOS.oaklandBurrisEb,
+          westbound: ROUTE_VIDEOS.oaklandBurrisWb,
         },
       },
     ],
@@ -1807,7 +1956,10 @@ export const ROUTES = {
     regions: [REGIONS.vancouver, REGIONS.richmond],
     legs: [
       {
-        videos: { northbound: VIDEOS.oakNb, southbound: VIDEOS.oakSb },
+        videos: {
+          northbound: ROUTE_VIDEOS.oakNb,
+          southbound: ROUTE_VIDEOS.oakSb,
+        },
       },
     ],
     notes:
@@ -1816,7 +1968,7 @@ export const ROUTES = {
   odlin: {
     name: "Odlin",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { westbound: VIDEOS.odlinWb } }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.odlinWb } }],
     notes:
       "Very flat. Some parts lack any signage, and it's easy to miss some turns. The east end is very close to the end of Shell Rd Trail, but there's no connection. Odlin park doesn't have proper curb ramps for cyclists. It's not exactly clear where the route ends at the west.",
   },
@@ -1826,8 +1978,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.offBroadwayEb,
-          westbound: VIDEOS.offBroadwayWb,
+          eastbound: ROUTE_VIDEOS.offBroadwayEb,
+          westbound: ROUTE_VIDEOS.offBroadwayWb,
         },
       },
     ],
@@ -1839,11 +1991,14 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [
       {
-        videos: { northbound: VIDEOS.ontarioNb, southbound: VIDEOS.ontarioSb },
+        videos: {
+          northbound: ROUTE_VIDEOS.ontarioNb,
+          southbound: ROUTE_VIDEOS.ontarioSb,
+        },
       },
       {
         name: "Connection with Oakridge Station via 42nd Ave",
-        videos: { eastbound: VIDEOS.fortySecondEb },
+        videos: { eastbound: ROUTE_VIDEOS.fortySecondEb },
       },
     ],
     notes:
@@ -1854,7 +2009,10 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [
       {
-        videos: { eastbound: VIDEOS.pandoraEb, westbound: VIDEOS.pandoraWb },
+        videos: {
+          eastbound: ROUTE_VIDEOS.pandoraEb,
+          westbound: ROUTE_VIDEOS.pandoraWb,
+        },
       },
     ],
     notes:
@@ -1863,7 +2021,7 @@ export const ROUTES = {
   parkside: {
     name: "Parkside",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { northbound: VIDEOS.parksideNb } }],
+    legs: [{ videos: { northbound: ROUTE_VIDEOS.parksideNb } }],
     notes:
       "Very flat. The connections are either end are quite bad and there's nothing in the middle. It can be hard to follow north of Granville. At the north end, you cannot cross Westminster Hwy, so will have to approach/leave via the eastbound shoulder.",
   },
@@ -1871,7 +2029,12 @@ export const ROUTES = {
     name: "Pender St",
     regions: [REGIONS.vancouver],
     legs: [
-      { videos: { eastbound: VIDEOS.penderEb, westbound: VIDEOS.penderWb } },
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.penderEb,
+          westbound: ROUTE_VIDEOS.penderWb,
+        },
+      },
     ],
     notes:
       "A hill, lots of cars. The painted lanes are beside the curb. Before Dunsmuir was a bike route, the whole of Pender was the only east-west bike route around here (mostly just a shared lane with heavy traffic). Now only the painted portion remains as a bike route.",
@@ -1882,8 +2045,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.pittRiverBridgeEb,
-          westbound: VIDEOS.pittRiverBridgeWb,
+          eastbound: ROUTE_VIDEOS.pittRiverBridgeEb,
+          westbound: ROUTE_VIDEOS.pittRiverBridgeWb,
         },
       },
     ],
@@ -1895,7 +2058,9 @@ export const ROUTES = {
     shortName: "PoCo Trail",
     isIncomplete: true,
     regions: [REGIONS.portCoquitlam],
-    legs: [{ name: "South Pitt River", videos: { eastbound: VIDEOS.pocoEb } }],
+    legs: [
+      { name: "South Pitt River", videos: { eastbound: ROUTE_VIDEOS.pocoEb } },
+    ],
     notes:
       "This route extends in a big loop, through Colony Farm, Gates Park, Hyde Creek Nature Reserve, the Deboville Slough, and along the Pitt River. The Pitt River portion is flat, and in many places you'd be better off taking the road as the trail is narrow, plus the CPR crossing area is of low quality and confusing.",
   },
@@ -1904,7 +2069,10 @@ export const ROUTES = {
     regions: [REGIONS.coquitlam, REGIONS.surrey],
     legs: [
       {
-        videos: { eastbound: VIDEOS.portMannEB, westbound: VIDEOS.portMannWB },
+        videos: {
+          eastbound: ROUTE_VIDEOS.portMannEB,
+          westbound: ROUTE_VIDEOS.portMannWB,
+        },
       },
     ],
     notes:
@@ -1914,7 +2082,7 @@ export const ROUTES = {
     name: "Port Royal River Trail",
     shortName: "Port Royal River T.",
     regions: [REGIONS.newWestminster],
-    legs: [{ videos: { eastbound: VIDEOS.portRoyalEb } }],
+    legs: [{ videos: { eastbound: ROUTE_VIDEOS.portRoyalEb } }],
     notes: "Flat, varying surface quality.",
   },
   portside: {
@@ -1922,7 +2090,10 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [
       {
-        videos: { eastbound: VIDEOS.portsideEb, westbound: VIDEOS.portsideWb },
+        videos: {
+          eastbound: ROUTE_VIDEOS.portsideEb,
+          westbound: ROUTE_VIDEOS.portsideWb,
+        },
       },
     ],
     notes:
@@ -1932,7 +2103,7 @@ export const ROUTES = {
     name: "Portside Gap",
     isGap: true,
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { westbound: VIDEOS.portsideGapWb } }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.portsideGapWb } }],
     notes:
       "The city would like to fill this gap along Powell between McLean and Wall, but re-allocating space is tricky. Currently, outside of rush hour, it can be done westbound, but eastbound is very bad due to needing to turn left onto Water.",
   },
@@ -1940,7 +2111,12 @@ export const ROUTES = {
     name: "Powell",
     regions: [REGIONS.vancouver],
     legs: [
-      { videos: { eastbound: VIDEOS.powellEb, westbound: VIDEOS.powellWb } },
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.powellEb,
+          westbound: ROUTE_VIDEOS.powellWb,
+        },
+      },
     ],
     notes:
       "A gentle hill for the overpass. The east block is a shared use path. The city would like to extend this east to Water St.",
@@ -1951,8 +2127,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.princeEdwardNb,
-          southbound: VIDEOS.princeEdwardSb,
+          northbound: ROUTE_VIDEOS.princeEdwardNb,
+          southbound: ROUTE_VIDEOS.princeEdwardSb,
         },
       },
     ],
@@ -1966,8 +2142,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.queensboroughBridgeNb,
-          southbound: VIDEOS.queensboroughBridgeSb,
+          northbound: ROUTE_VIDEOS.queensboroughBridgeNb,
+          southbound: ROUTE_VIDEOS.queensboroughBridgeSb,
         },
       },
     ],
@@ -1979,7 +2155,10 @@ export const ROUTES = {
     regions: [REGIONS.richmond],
     legs: [
       {
-        videos: { northbound: VIDEOS.railwayNb, southbound: VIDEOS.railwaySb },
+        videos: {
+          northbound: ROUTE_VIDEOS.railwayNb,
+          southbound: ROUTE_VIDEOS.railwaySb,
+        },
       },
     ],
     notes:
@@ -1988,7 +2167,7 @@ export const ROUTES = {
   railwayGreenway: {
     name: "Railway Greenway",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { southbound: VIDEOS.railwayGreenwaySb } }],
+    legs: [{ videos: { southbound: ROUTE_VIDEOS.railwayGreenwaySb } }],
     notes:
       "Very flat. Unfortunately, there's a gap in Steveston and you need to either walk, or use the road. The speed limit is 15 km/h (which, like street speed limits, is never enforced), and it's shared with pedestrians, so the painted lanes on the road may be preferable to some.",
   },
@@ -1998,8 +2177,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.richardsNb,
-          southbound: VIDEOS.richardsSb,
+          northbound: ROUTE_VIDEOS.richardsNb,
+          southbound: ROUTE_VIDEOS.richardsSb,
         },
       },
     ],
@@ -2009,7 +2188,7 @@ export const ROUTES = {
   ridgeway: {
     name: "Ridgeway",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { westbound: VIDEOS.ridgewayWb } }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.ridgewayWb } }],
     notes:
       "An odd route with lots of hills. It mostly overlaps with various other routes (like Off Broadway and Midtown). It also splits into 2 branches between 22nd and Yew, which is not clearly signed - the north/east branch is more direct, but more confusing and less comfortable. The east section of the route, on 45th, has way too many cars using it.",
   },
@@ -2019,8 +2198,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.riverPkwyNb,
-          southbound: VIDEOS.riverPkwySb,
+          northbound: ROUTE_VIDEOS.riverPkwyNb,
+          southbound: ROUTE_VIDEOS.riverPkwySb,
         },
       },
     ],
@@ -2031,7 +2210,7 @@ export const ROUTES = {
     name: "Royal Oak",
     shortName: "Royal Oak",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { southbound: VIDEOS.royalOakSb } }],
+    legs: [{ videos: { southbound: ROUTE_VIDEOS.royalOakSb } }],
     notes:
       "Very steep, but very quiet. Unfortunately, it doesn't quite take you all the way to Metrotown, BC Parkway, or any other useful destination/connection (besides the school).",
   },
@@ -2040,7 +2219,12 @@ export const ROUTES = {
     shortName: "Rumble Urban Trail",
     regions: [REGIONS.burnaby],
     legs: [
-      { videos: { eastbound: VIDEOS.rumbleEb, westbound: VIDEOS.rumbleWb } },
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.rumbleEb,
+          westbound: ROUTE_VIDEOS.rumbleWb,
+        },
+      },
     ],
     notes:
       "Gradual hill. For some reason there's a gap in the middle (even though there's plenty of space for a wide path) and you need to share the busy road with cars. Transitioning between the road and path at either end of this gap can be awkward. Generally, the intersections are bad, cars often block the crossing. The crossing signals won't automatically change, so you're essentially guaranteed to have to stop and press the buttons. And there are too many driveways along the path. Plus it doesn't connect to anything in Vancouver.",
@@ -2050,7 +2234,10 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [
       {
-        videos: { northbound: VIDEOS.rupertNb, southbound: VIDEOS.rupertSb },
+        videos: {
+          northbound: ROUTE_VIDEOS.rupertNb,
+          southbound: ROUTE_VIDEOS.rupertSb,
+        },
       },
     ],
     notes:
@@ -2062,8 +2249,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.russBakerNb,
-          southbound: VIDEOS.russBakerSb,
+          northbound: ROUTE_VIDEOS.russBakerNb,
+          southbound: ROUTE_VIDEOS.russBakerSb,
         },
       },
     ],
@@ -2081,14 +2268,14 @@ export const ROUTES = {
   stGeorge: {
     name: "St George Rainway",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { northbound: VIDEOS.stGeorgeNb } }],
+    legs: [{ videos: { northbound: ROUTE_VIDEOS.stGeorgeNb } }],
     notes:
       "Opened July 2025. A nice car-free/car-light street with rainwater infrastructure. Will eventually continue further south, hopefully to 14th/Prince Edward.",
   },
   stJohns: {
     name: "Saint Johns St Path",
     regions: [REGIONS.portMoody],
-    legs: [{ videos: { eastbound: VIDEOS.stJohnsEb } }],
+    legs: [{ videos: { eastbound: ROUTE_VIDEOS.stJohnsEb } }],
     notes:
       "A new mostly-flat path as of 2024. The east-most block still looks/feels temporary.",
   },
@@ -2097,14 +2284,14 @@ export const ROUTES = {
     shortName: "Sea Island Conn.",
     regions: [REGIONS.richmond],
     isOneWay: true,
-    legs: [{ videos: { westbound: VIDEOS.seaIslandConnectorWb } }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.seaIslandConnectorWb } }],
     notes:
       "A small climb out of Richmond, beside fast traffic. Still the second best way to access Sea Island, after No. 2 Rd Bridge.",
   },
   seaIslandPath: {
     name: "Sea Island Path",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { northbound: VIDEOS.seaIslandPathNb } }],
+    legs: [{ videos: { northbound: ROUTE_VIDEOS.seaIslandPathNb } }],
     notes:
       "Very flat. Mostly quite good, some the sections under bridges can be quite low quality. At Templeton Station it turns into a regular sidewalk and it's not obvious that it's still a shared use path, but it is.",
   },
@@ -2113,10 +2300,10 @@ export const ROUTES = {
     regions: [REGIONS.richmond],
     isOneWay: true,
     legs: [
-      { videos: { eastbound: VIDEOS.seaIslandWayEb25 } },
+      { videos: { eastbound: ROUTE_VIDEOS.seaIslandWayEb25 } },
       {
         name: "Moray Channel Bridge",
-        videos: { eastbound: VIDEOS.seaIslandWayEb },
+        videos: { eastbound: ROUTE_VIDEOS.seaIslandWayEb },
       },
     ],
     notes:
@@ -2129,33 +2316,33 @@ export const ROUTES = {
       {
         name: "Coal Harbour",
         videos: {
-          eastbound: VIDEOS.seasideCoalHarbourEb,
-          westbound: VIDEOS.seasideCoalHarbourWb,
+          eastbound: ROUTE_VIDEOS.seasideCoalHarbourEb,
+          westbound: ROUTE_VIDEOS.seasideCoalHarbourWb,
         },
       },
       {
         name: "Stanley Park",
-        videos: { counterclockwise: VIDEOS.seasideStanleyPark },
+        videos: { counterclockwise: ROUTE_VIDEOS.seasideStanleyPark },
       },
       { name: "West End", videos: {} },
       {
         name: "False Creek",
-        videos: { clockwise: VIDEOS.seasideFalseCreekCw },
+        videos: { clockwise: ROUTE_VIDEOS.seasideFalseCreekCw },
       },
       {
         name: "Kitsilano",
-        videos: { westbound: VIDEOS.seasideKitsWb },
+        videos: { westbound: ROUTE_VIDEOS.seasideKitsWb },
       },
       {
         name: "Jericho & Spanish Banks",
         videos: {
-          eastbound: VIDEOS.seasideJerichoEb,
-          westbound: VIDEOS.seasideJerichoWb,
+          eastbound: ROUTE_VIDEOS.seasideJerichoEb,
+          westbound: ROUTE_VIDEOS.seasideJerichoWb,
         },
       },
       {
         name: "Laurel Landbridge",
-        videos: { northbound: VIDEOS.laurelLandbridgeNb },
+        videos: { northbound: ROUTE_VIDEOS.laurelLandbridgeNb },
       },
     ],
     notes:
@@ -2168,39 +2355,42 @@ export const ROUTES = {
       {
         name: "Beach",
         videos: {
-          eastbound: VIDEOS.seasideBypassBeachEb,
-          westbound: VIDEOS.seasideBypassBeachWb,
+          eastbound: ROUTE_VIDEOS.seasideBypassBeachEb,
+          westbound: ROUTE_VIDEOS.seasideBypassBeachWb,
         },
       },
       {
         name: "Pacific/Expo",
         videos: {
-          eastbound: VIDEOS.seasideBypassPacificEb,
-          westbound: VIDEOS.seasideBypassExpoWb25,
+          eastbound: ROUTE_VIDEOS.seasideBypassPacificEb,
+          westbound: ROUTE_VIDEOS.seasideBypassExpoWb25,
         },
       },
       {
         name: "Pacific/Expo (Old)",
         videos: {
-          westbound: VIDEOS.seasideBypassExpoWb,
+          westbound: ROUTE_VIDEOS.seasideBypassExpoWb,
         },
       },
       {
         name: "False Creek South",
         videos: {
-          eastbound: VIDEOS.seasideBypassFalseCreekSouthEb,
-          westbound: VIDEOS.seasideBypassFalseCreekSouthWb,
+          eastbound: ROUTE_VIDEOS.seasideBypassFalseCreekSouthEb,
+          westbound: ROUTE_VIDEOS.seasideBypassFalseCreekSouthWb,
         },
       },
       { name: "York & 3rd", videos: {} },
       {
         name: "NW Marine & 4th",
         videos: {
-          eastbound: VIDEOS.seasideBypassMarine4thEb,
-          westbound: VIDEOS.seasideBypassMarine4thWb,
+          eastbound: ROUTE_VIDEOS.seasideBypassMarine4thEb,
+          westbound: ROUTE_VIDEOS.seasideBypassMarine4thWb,
         },
       },
-      { name: "Whyte", videos: { westbound: VIDEOS.seasideBypassWhyteWb } },
+      {
+        name: "Whyte",
+        videos: { westbound: ROUTE_VIDEOS.seasideBypassWhyteWb },
+      },
     ],
     notes:
       "A faster, more direct, slightly hillier, less comfortable alternative to Seaside. It is not signed very well. The parts with a busy shared lane (Marine, 4th, Quebec) are unpleasant, and it's beside parked cars for much of Pacific, but the rest is mostly pretty good. The gap between Beach/Jervis and Thurlow has been filled with a protected lane (eastbound/uphill only) as of 2025.",
@@ -2208,7 +2398,7 @@ export const ROUTES = {
   seaToRiver: {
     name: "Sea to River",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { northbound: VIDEOS.seaToRiverNb } }],
+    legs: [{ videos: { northbound: ROUTE_VIDEOS.seaToRiverNb } }],
     notes:
       "This route varies a lot in comfort and clarity, but is usually very hilly. It's not clear where it ends at the south end, nor how you're intended to connect to Glenlyon Urban Trail - either a steep low quality muddy path, or an alley plus busy road. The worst part is Patterson; at Central Park, you can use the shared path around the park instead, and north of Kingsway you can use Inman instead - but Inman has no connections at Kingsway so it's not practical (and is further). The section between Dawson and 1st was quite confusing and bad, but was being improved in late 2024.",
   },
@@ -2216,7 +2406,12 @@ export const ROUTES = {
     name: "Seaview",
     regions: [REGIONS.westVancouver],
     legs: [
-      { videos: { eastbound: VIDEOS.seaviewEb, westbound: VIDEOS.seaviewWb } },
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.seaviewEb,
+          westbound: ROUTE_VIDEOS.seaviewWb,
+        },
+      },
     ],
     notes:
       "A nice flat path, formerly a train track (which now goes through a tunnel instead). Tends to have plenty of dogs. The east end is only accessible via a steep gravel hill (with optional stairs), and only connects to Marine Dr.",
@@ -2228,8 +2423,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.secondNarrowsNb,
-          southbound: VIDEOS.secondNarrowsSb,
+          northbound: ROUTE_VIDEOS.secondNarrowsNb,
+          southbound: ROUTE_VIDEOS.secondNarrowsSb,
         },
       },
     ],
@@ -2243,31 +2438,34 @@ export const ROUTES = {
     legs: [
       {
         name: "Burnaby Mountain Parkway",
-        videos: { eastbound: VIDEOS.burnabyMtnPathEb },
+        videos: { eastbound: ROUTE_VIDEOS.burnabyMtnPathEb },
       },
       {
         name: "University Drive West",
-        videos: { westbound: VIDEOS.universityDrWPathWb },
+        videos: { westbound: ROUTE_VIDEOS.universityDrWPathWb },
       },
-      { name: "Gaglardi Way", videos: { northbound: VIDEOS.gaglardiPathNb } },
+      {
+        name: "Gaglardi Way",
+        videos: { northbound: ROUTE_VIDEOS.gaglardiPathNb },
+      },
       {
         name: "South Campus Road",
-        videos: { westbound: VIDEOS.sCampusPathNWb },
+        videos: { westbound: ROUTE_VIDEOS.sCampusPathNWb },
       },
       {
         name: "South Campus Road Lane",
-        videos: { westbound: VIDEOS.sCampusEb },
+        videos: { westbound: ROUTE_VIDEOS.sCampusEb },
       },
       {
         name: "Greenhouse Lane/Nelson Way",
         videos: {
-          eastbound: VIDEOS.greenhousePathEb,
-          westbound: VIDEOS.greenhousePathWb,
+          eastbound: ROUTE_VIDEOS.greenhousePathEb,
+          westbound: ROUTE_VIDEOS.greenhousePathWb,
         },
       },
       {
         name: "University Drive East",
-        videos: { westbound: VIDEOS.universityDrEPathWb },
+        videos: { westbound: ROUTE_VIDEOS.universityDrEPathWb },
       },
     ],
     notes:
@@ -2278,7 +2476,10 @@ export const ROUTES = {
     regions: [REGIONS.richmond],
     legs: [
       {
-        videos: { northbound: VIDEOS.shellNb, southbound: VIDEOS.shellSb },
+        videos: {
+          northbound: ROUTE_VIDEOS.shellNb,
+          southbound: ROUTE_VIDEOS.shellSb,
+        },
       },
     ],
     notes:
@@ -2290,8 +2491,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.smitheEb,
-          westbound: VIDEOS.cambieBridgeSmitheNb,
+          eastbound: ROUTE_VIDEOS.smitheEb,
+          westbound: ROUTE_VIDEOS.cambieBridgeSmitheNb,
         },
       },
     ],
@@ -2301,7 +2502,7 @@ export const ROUTES = {
   southDyke: {
     name: "South Dyke Rd",
     regions: [REGIONS.newWestminster],
-    legs: [{ videos: { eastbound: VIDEOS.southDykeEb } }],
+    legs: [{ videos: { eastbound: ROUTE_VIDEOS.southDykeEb } }],
     notes:
       "Very flat and mostly quiet since cars cannot connect with Derwent - bikes can, it has a shoulder.",
   },
@@ -2311,8 +2512,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.southeastEb,
-          westbound: VIDEOS.southeastWb,
+          eastbound: ROUTE_VIDEOS.southeastEb,
+          westbound: ROUTE_VIDEOS.southeastWb,
         },
       },
     ],
@@ -2322,7 +2523,7 @@ export const ROUTES = {
   spiritTrail: {
     name: "Spirit Trail",
     regions: [REGIONS.westVancouver, REGIONS.northVancouver],
-    legs: [{ videos: { eastbound: VIDEOS.spiritTrailEb } }],
+    legs: [{ videos: { eastbound: ROUTE_VIDEOS.spiritTrailEb } }],
     notes:
       "Mostly quite flat, though the Moodyville section is high up, and the portion just west of here has a few brief branches which can be confusing. The shipyards section get very busy with pedestrians. Harbourside construction will (apparently) last until 2025. There are plans to extend the trail all the way to Deep Cove, but the route has not been determined.",
   },
@@ -2333,13 +2534,13 @@ export const ROUTES = {
     legs: [
       {
         name: "Seawall",
-        videos: { counterclockwise: VIDEOS.seasideStanleyPark },
+        videos: { counterclockwise: ROUTE_VIDEOS.seasideStanleyPark },
       },
       {
         name: "Lost Lagoon",
         videos: {
-          eastbound: VIDEOS.lostLagoonEb,
-          westbound: VIDEOS.lostLagoonWb,
+          eastbound: ROUTE_VIDEOS.lostLagoonEb,
+          westbound: ROUTE_VIDEOS.lostLagoonWb,
         },
       },
     ],
@@ -2352,8 +2553,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.stevestonEb,
-          westbound: VIDEOS.stevestonWb,
+          eastbound: ROUTE_VIDEOS.stevestonEb,
+          westbound: ROUTE_VIDEOS.stevestonWb,
         },
       },
     ],
@@ -2365,7 +2566,10 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [
       {
-        videos: { northbound: VIDEOS.sunriseNb, southbound: VIDEOS.sunriseSb },
+        videos: {
+          northbound: ROUTE_VIDEOS.sunriseNb,
+          southbound: ROUTE_VIDEOS.sunriseSb,
+        },
       },
     ],
     notes:
@@ -2374,7 +2578,7 @@ export const ROUTES = {
   tatlow: {
     name: "Tatlow",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: { northbound: VIDEOS.tatlowNb } }],
+    legs: [{ videos: { northbound: ROUTE_VIDEOS.tatlowNb } }],
     notes:
       "Very flat. A brief protected lane to avoid the parking lot at the park. The route ends at Marine but you can continue north then turn left to access Lions Gate Village or Capilano Rd.",
   },
@@ -2384,8 +2588,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.templetonNb,
-          southbound: VIDEOS.templetonSb,
+          northbound: ROUTE_VIDEOS.templetonNb,
+          southbound: ROUTE_VIDEOS.templetonSb,
         },
       },
     ],
@@ -2397,7 +2601,10 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [
       {
-        videos: { eastbound: VIDEOS.terminalEb, westbound: VIDEOS.terminalWb },
+        videos: {
+          eastbound: ROUTE_VIDEOS.terminalEb,
+          westbound: ROUTE_VIDEOS.terminalWb,
+        },
       },
     ],
     notes:
@@ -2419,8 +2626,8 @@ export const ROUTES = {
       {
         name: "West Vancouver",
         videos: {
-          eastbound: VIDEOS.transCanadaHwyEb,
-          westbound: VIDEOS.transCanadaHwyWb,
+          eastbound: ROUTE_VIDEOS.transCanadaHwyEb,
+          westbound: ROUTE_VIDEOS.transCanadaHwyWb,
         },
       },
     ],
@@ -2431,7 +2638,9 @@ export const ROUTES = {
     name: "Trans Canada Trail",
     isIncomplete: true,
     regions: [REGIONS.vancouver, REGIONS.burnaby],
-    legs: [{ name: "Burnaby", videos: { westbound: VIDEOS.seaToRiverNb } }],
+    legs: [
+      { name: "Burnaby", videos: { westbound: ROUTE_VIDEOS.seaToRiverNb } },
+    ],
     notes:
       "This is a route across Canada. In Metro Vancouver, many portions overlap with other routes (so I haven't properly mapped it all out) and other portions it only exists for pedestrians (for example, at Sperling Ave near Hastings, you need to use the sidewalk). I've only mapped out the most connected/useful section, in Burnaby.",
   },
@@ -2439,7 +2648,12 @@ export const ROUTES = {
     name: "United Blvd",
     regions: [REGIONS.coquitlam],
     legs: [
-      { videos: { eastbound: VIDEOS.unitedEB, westbound: VIDEOS.unitedWB } },
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.unitedEB,
+          westbound: ROUTE_VIDEOS.unitedWB,
+        },
+      },
     ],
     notes:
       "Either end is a MUP with very few pedestrians, but the middle has a very uncomfortable segment on United Blvd itself, as well as some quieter side streets. MUPs are being added east of King Edward St, but not all the way to Brigantine it seems, unfortunately.",
@@ -2450,8 +2664,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.universityEb,
-          westbound: VIDEOS.universityWb,
+          eastbound: ROUTE_VIDEOS.universityEb,
+          westbound: ROUTE_VIDEOS.universityWb,
         },
       },
     ],
@@ -2462,14 +2676,14 @@ export const ROUTES = {
     name: "University Dr E",
     regions: [REGIONS.burnaby],
     isOneWay: true,
-    legs: [{ videos: { eastbound: VIDEOS.universityDrEEb } }],
+    legs: [{ videos: { eastbound: ROUTE_VIDEOS.universityDrEEb } }],
     notes:
       "A shoulder beside fast traffic, up a bit of a hill. Abruptly ends without connecting to anything. Better to use the adjacent shared use path anyway.",
   },
   uptownDowntown: {
     name: "Uptown/Downtown",
     regions: [REGIONS.newWestminster],
-    legs: [{ videos: { southbound: VIDEOS.uptownDowntownSb } }],
+    legs: [{ videos: { southbound: ROUTE_VIDEOS.uptownDowntownSb } }],
     notes:
       "Unclear if this route has a name, but signs point you to 'Uptown' or 'Downtown' depending on the direction of travel. The south half is a steep hill.",
   },
@@ -2477,7 +2691,12 @@ export const ROUTES = {
     name: "Valley",
     regions: [REGIONS.vancouver],
     legs: [
-      { videos: { northbound: VIDEOS.valleyNb, southbound: VIDEOS.valleySb } },
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.valleyNb,
+          southbound: ROUTE_VIDEOS.valleySb,
+        },
+      },
     ],
     notes:
       "The middle is very flat, but either end has hills. A steep hill up 33rd Ave to connect with the Arbutus Greenway at the south end. No traffic calming, but quiet.",
@@ -2486,7 +2705,12 @@ export const ROUTES = {
     name: "Victory",
     regions: [REGIONS.burnaby],
     legs: [
-      { videos: { eastbound: VIDEOS.victoryEb, westbound: VIDEOS.victoryWb } },
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.victoryEb,
+          westbound: ROUTE_VIDEOS.victoryWb,
+        },
+      },
     ],
     notes:
       "Some minor hills. No traffic calming, and almost every major road crossing just has a stop sign, so you can get stuck waiting forever. Rumble St Urban Trail is an alternative.",
@@ -2497,8 +2721,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.walesDuchessNb,
-          southbound: VIDEOS.walesDuchessSb,
+          northbound: ROUTE_VIDEOS.walesDuchessNb,
+          southbound: ROUTE_VIDEOS.walesDuchessSb,
         },
       },
     ],
@@ -2509,7 +2733,12 @@ export const ROUTES = {
     name: "Water St",
     regions: [REGIONS.vancouver],
     legs: [
-      { videos: { eastbound: VIDEOS.waterEb, westbound: VIDEOS.waterWb } },
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.waterEb,
+          westbound: ROUTE_VIDEOS.waterWb,
+        },
+      },
     ],
     notes:
       "Bike 'infrastructure' (mostly paint) added May 2025 as part of car-free days pilot for summer 2025.",
@@ -2520,8 +2749,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.waterfrontEb,
-          westbound: VIDEOS.waterfrontWb,
+          eastbound: ROUTE_VIDEOS.waterfrontEb,
+          westbound: ROUTE_VIDEOS.waterfrontWb,
         },
       },
     ],
@@ -2531,28 +2760,28 @@ export const ROUTES = {
   wesbrook: {
     name: "Wesbrook Mall",
     regions: [REGIONS.ubc],
-    legs: [{ videos: { southbound: VIDEOS.wesbrookSb } }],
+    legs: [{ videos: { southbound: ROUTE_VIDEOS.wesbrookSb } }],
     notes:
       "Mostly flat, minor hill to the south. Some of the painted lanes are beside parked cars. The north portion was partially upgraded around 2022, but is far from perfect. The south portion can be uncomfortable at times.",
   },
   westDyke: {
     name: "West Dyke Trail",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { northbound: VIDEOS.westDykeNb } }],
+    legs: [{ videos: { northbound: ROUTE_VIDEOS.westDykeNb } }],
     notes:
       "Very flat, but the surface is gravel and varies a bit in quality. There's no clear signage on how to connect to other bike routes in Steveston at the south end.",
   },
   westMall: {
     name: "West Mall",
     regions: [REGIONS.ubc],
-    legs: [{ videos: { southbound: VIDEOS.westMallSb } }],
+    legs: [{ videos: { southbound: ROUTE_VIDEOS.westMallSb } }],
     notes:
       "Flat and direct. There seems to always be light traffic. A portion appears to be one-way southbound for the foreseeable future due to construction.",
   },
   westminsterHwy: {
     name: "Westminster Hwy",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { westbound: VIDEOS.westminsterWb } }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.westminsterWb } }],
     notes:
       "Very flat. The only east-west connection. The painted lanes are beside the curb. The middle section is a reasonably nice shared use path. The west section is a standard shoulder. The shoulders in the east section are much less comfortable; westbound you are sandwiched between two highways. The East-West Connector overpass is quite bad.",
   },
@@ -2563,8 +2792,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          eastbound: VIDEOS.westportMathersEb,
-          westbound: VIDEOS.westportMathersWb,
+          eastbound: ROUTE_VIDEOS.westportMathersEb,
+          westbound: ROUTE_VIDEOS.westportMathersWb,
         },
       },
     ],
@@ -2574,7 +2803,7 @@ export const ROUTES = {
   williams: {
     name: "Williams Rd",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { eastbound: VIDEOS.williamsEb } }],
+    legs: [{ videos: { eastbound: ROUTE_VIDEOS.williamsEb } }],
     notes:
       "Very flat, lots of traffic. The only full east-west connection in south Richmond unfortunately. It's not great. The painted lanes are beside the curb.",
   },
@@ -2585,8 +2814,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.willingdonLinearNb,
-          southbound: VIDEOS.willingdonLinearSb,
+          northbound: ROUTE_VIDEOS.willingdonLinearNb,
+          southbound: ROUTE_VIDEOS.willingdonLinearSb,
         },
       },
     ],
@@ -2597,7 +2826,7 @@ export const ROUTES = {
     name: "Willingdon Urban Trail",
     shortName: "Willingdon Trail",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { southbound: VIDEOS.willingdonSb } }],
+    legs: [{ videos: { southbound: ROUTE_VIDEOS.willingdonSb } }],
     notes:
       "Some hills. The section by the gas station at Canada Way is silly. Drivers at Costco will probably block the path. The crossing signals won't automatically change, so you're essentially guaranteed to have to stop and press the buttons.",
   },
@@ -2607,8 +2836,8 @@ export const ROUTES = {
     legs: [
       {
         videos: {
-          northbound: VIDEOS.windermereNb,
-          southbound: VIDEOS.windermereSb,
+          northbound: ROUTE_VIDEOS.windermereNb,
+          southbound: ROUTE_VIDEOS.windermereSb,
         },
       },
     ],
@@ -2620,7 +2849,10 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [
       {
-        videos: { northbound: VIDEOS.windsorNb, southbound: VIDEOS.windsorSb },
+        videos: {
+          northbound: ROUTE_VIDEOS.windsorNb,
+          southbound: ROUTE_VIDEOS.windsorSb,
+        },
       },
     ],
     notes: "The north portion is a steady hill, steep at first.",
@@ -2629,21 +2861,28 @@ export const ROUTES = {
     name: "Woodwards/Saunders",
     shortName: "Woodwards",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { eastbound: VIDEOS.woodwardsSaundersEb } }],
+    legs: [{ videos: { eastbound: ROUTE_VIDEOS.woodwardsSaundersEb } }],
     notes:
       "Very flat. Too much traffic between Railway Ave and No. 2 Rd. It's an alley between Gilbert Rd and No. 3 Rd, with some easy-to-miss turns and a brief narrow path.",
   },
   york: {
     name: "York",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { eastbound: VIDEOS.yorkEb, westbound: VIDEOS.yorkWb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.yorkEb,
+          westbound: ROUTE_VIDEOS.yorkWb,
+        },
+      },
+    ],
     notes:
       "A short steep hill at the west and, and a gradual hill in the middle. Quiet.",
   },
   yukon: {
     name: "Yukon",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { southbound: VIDEOS.yukonSb } }],
+    legs: [{ videos: { southbound: ROUTE_VIDEOS.yukonSb } }],
     notes:
       "A long hill, steep at times. Plenty of traffic north of 12th unfortunately. The painted lanes are often beside parked cars. A bit annoying to cross Broadway during the subway construction. The crossing/intersections at King Edward Ave were upgraded around 2023.",
   },

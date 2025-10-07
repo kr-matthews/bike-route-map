@@ -42,7 +42,7 @@ import {
   WEST_MALL_MARINE_N,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const GRANVILLE_GAS_STATION = [49.20539, -123.14034];
 const GRANVILLE_SIDEWALK_START = [49.20515, -123.14013];
@@ -72,8 +72,11 @@ export const MARINE_UBC = [
   {
     description: "connection with arbutus greenway",
     type: "quiet",
-    videoIds: [VIDEOS.arbutusGreenwayNb.id, VIDEOS.arthurLaingNb.id],
-    videoIdsEndAtStart: [VIDEOS.arthurLaingNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.arbutusGreenwayNb.id,
+      ROUTE_VIDEOS.arthurLaingNb.id,
+    ],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.arthurLaingNb.id],
     positions: [
       MILTON_ARBUTUS_GREENWAY,
       [49.20497, -123.14113],
@@ -86,11 +89,14 @@ export const MARINE_UBC = [
     type: "shared",
     oneWay: "required",
     videoIds: [
-      VIDEOS.swMarineWb.id,
-      VIDEOS.arbutusGreenwayNb.id,
-      VIDEOS.arthurLaingNb.id,
+      ROUTE_VIDEOS.swMarineWb.id,
+      ROUTE_VIDEOS.arbutusGreenwayNb.id,
+      ROUTE_VIDEOS.arthurLaingNb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.swMarineWb.id, VIDEOS.arbutusGreenwayNb.id],
+    videoIdsStartAtStart: [
+      ROUTE_VIDEOS.swMarineWb.id,
+      ROUTE_VIDEOS.arbutusGreenwayNb.id,
+    ],
     positions: [
       MARINE_ARTHUR_LAING_N,
       [49.2049, -123.13956],
@@ -104,9 +110,9 @@ export const MARINE_UBC = [
     type: "other",
     oneWay: "required",
     videoIds: [
-      VIDEOS.swMarineWb.id,
-      VIDEOS.arbutusGreenwayNb.id,
-      VIDEOS.arthurLaingNb.id,
+      ROUTE_VIDEOS.swMarineWb.id,
+      ROUTE_VIDEOS.arbutusGreenwayNb.id,
+      ROUTE_VIDEOS.arthurLaingNb.id,
     ],
     positions: [
       GRANVILLE_SIDEWALK_START,
@@ -122,9 +128,9 @@ export const MARINE_UBC = [
     type: "shared",
     oneWay: "recommended",
     videoIds: [
-      VIDEOS.swMarineWb.id,
-      VIDEOS.arbutusGreenwayNb.id,
-      VIDEOS.arthurLaingNb.id,
+      ROUTE_VIDEOS.swMarineWb.id,
+      ROUTE_VIDEOS.arbutusGreenwayNb.id,
+      ROUTE_VIDEOS.arthurLaingNb.id,
     ],
     positions: [GRANVILLE_GAS_STATION, [49.20525, -123.1406], GRANVILLE_MARINE],
   },
@@ -133,9 +139,9 @@ export const MARINE_UBC = [
     description: "parallel to granville - 1",
     type: "shared",
     videoIds: [
-      VIDEOS.swMarineWb.id,
-      VIDEOS.swMarineEb.id,
-      VIDEOS.arthurLaingSb.id,
+      ROUTE_VIDEOS.swMarineWb.id,
+      ROUTE_VIDEOS.swMarineEb.id,
+      ROUTE_VIDEOS.arthurLaingSb.id,
     ],
     positions: [
       GRANVILLE_MARINE,
@@ -153,12 +159,12 @@ export const MARINE_UBC = [
     description: "parallel to granville - 2",
     type: "shared",
     videoIds: [
-      VIDEOS.swMarineWb.id,
-      VIDEOS.swMarineEb.id,
-      VIDEOS.arthurLaingSb.id,
-      VIDEOS.cypressSb.id,
+      ROUTE_VIDEOS.swMarineWb.id,
+      ROUTE_VIDEOS.swMarineEb.id,
+      ROUTE_VIDEOS.arthurLaingSb.id,
+      ROUTE_VIDEOS.cypressSb.id,
     ],
-    videoIdsEndAtStart: [VIDEOS.cypressSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.cypressSb.id],
     positions: [MARINE_AVERY_SOUTHER, [49.20709, -123.14226], MARINE_AVERY],
   },
   {
@@ -166,20 +172,24 @@ export const MARINE_UBC = [
     description: "parallel to granville - 3",
     type: "shared",
     videoIds: [
-      VIDEOS.swMarineWb.id,
-      VIDEOS.swMarineEb.id,
-      VIDEOS.arthurLaingSb.id,
-      VIDEOS.cypressNb.id,
-      VIDEOS.cypressSb.id,
+      ROUTE_VIDEOS.swMarineWb.id,
+      ROUTE_VIDEOS.swMarineEb.id,
+      ROUTE_VIDEOS.arthurLaingSb.id,
+      ROUTE_VIDEOS.cypressNb.id,
+      ROUTE_VIDEOS.cypressSb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.cypressNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.cypressNb.id],
     positions: [MARINE_AVERY, [49.20844, -123.14219], MARINE_70TH_S],
   },
   {
     routeNames: [ROUTES.marineSw.name],
     description: "crossing granville at cornish",
     type: "shared",
-    videoIds: [VIDEOS.swMarineWb.id, VIDEOS.cypressNb.id, VIDEOS.cypressSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.swMarineWb.id,
+      ROUTE_VIDEOS.cypressNb.id,
+      ROUTE_VIDEOS.cypressSb.id,
+    ],
     positions: [MARINE_70TH_S, MARINE_70TH_N],
   },
   {
@@ -187,8 +197,8 @@ export const MARINE_UBC = [
     description: "to arthur laing",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.swMarineEb.id, VIDEOS.arthurLaingSb.id],
-    videoIdsEndAtEnd: [VIDEOS.swMarineEb.id],
+    videoIds: [ROUTE_VIDEOS.swMarineEb.id, ROUTE_VIDEOS.arthurLaingSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.swMarineEb.id],
     positions: [
       GRANVILLE_MARINE,
       [49.20507, -123.14074],
@@ -204,7 +214,7 @@ export const MARINE_UBC = [
     description: "sw marine wb primary to camosun",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.swMarineWb.id],
+    videoIds: [ROUTE_VIDEOS.swMarineWb.id],
     positions: [
       MARINE_70TH_N,
       [49.20863, -123.14372],
@@ -270,7 +280,7 @@ export const MARINE_UBC = [
     description: "sw marine wb at camosun",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.swMarineWb.id, VIDEOS.midtownVancouverEb.id],
+    videoIds: [ROUTE_VIDEOS.swMarineWb.id, ROUTE_VIDEOS.midtownVancouverEb.id],
     positions: [MARINE_41ST_NW, CAMOSUN_MARINE_N],
   },
   {
@@ -278,7 +288,7 @@ export const MARINE_UBC = [
     description: "sw marine wb camosun to 16th",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.swMarineWb.id],
+    videoIds: [ROUTE_VIDEOS.swMarineWb.id],
     positions: [
       CAMOSUN_MARINE_N,
       [49.23585, -123.19966],
@@ -315,7 +325,7 @@ export const MARINE_UBC = [
     type: "shared",
     oneWay: "required",
     hideArrows: true,
-    videoIds: [VIDEOS.swMarineWb.id],
+    videoIds: [ROUTE_VIDEOS.swMarineWb.id],
     positions: [MARINE_16TH_SSE, POST_TO_16TH_SLIP],
   },
   {
@@ -323,7 +333,7 @@ export const MARINE_UBC = [
     description: "sw marine wb crossing 16th",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.swMarineWb.id],
+    videoIds: [ROUTE_VIDEOS.swMarineWb.id],
     positions: [
       POST_TO_16TH_SLIP,
       [49.25194, -123.2464],
@@ -337,7 +347,7 @@ export const MARINE_UBC = [
     type: "shared",
     oneWay: "required",
     hideArrows: true,
-    videoIds: [VIDEOS.swMarineWb.id],
+    videoIds: [ROUTE_VIDEOS.swMarineWb.id],
     positions: [PRE_FROM_16TH_SLIP, MARINE_16TH_NNE],
   },
   {
@@ -346,11 +356,11 @@ export const MARINE_UBC = [
     type: "shoulder",
     oneWay: "required",
     videoIds: [
-      VIDEOS.swMarineWb.id,
-      VIDEOS.nwMarineEb.id,
-      VIDEOS.sixteenthWb.id,
+      ROUTE_VIDEOS.swMarineWb.id,
+      ROUTE_VIDEOS.nwMarineEb.id,
+      ROUTE_VIDEOS.sixteenthWb.id,
     ],
-    videoIdsEndAtEnd: [VIDEOS.sixteenthWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.sixteenthWb.id],
     positions: [MARINE_16TH_NNE, PRE_PRE_STADIUM_LANE_START],
   },
   {
@@ -359,7 +369,7 @@ export const MARINE_UBC = [
     type: "shared",
     oneWay: "required",
     hideArrows: true,
-    videoIds: [VIDEOS.swMarineWb.id, VIDEOS.nwMarineEb.id],
+    videoIds: [ROUTE_VIDEOS.swMarineWb.id, ROUTE_VIDEOS.nwMarineEb.id],
     positions: [PRE_PRE_STADIUM_LANE_START, PRE_STADIUM_LANE_START],
   },
   {
@@ -367,7 +377,7 @@ export const MARINE_UBC = [
     description: "sw marine wb transition to pre-stadium lane",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.swMarineWb.id, VIDEOS.nwMarineEb.id],
+    videoIds: [ROUTE_VIDEOS.swMarineWb.id, ROUTE_VIDEOS.nwMarineEb.id],
     positions: [PRE_STADIUM_LANE_START, MARINE_STADIUM_SE],
   },
   {
@@ -375,7 +385,7 @@ export const MARINE_UBC = [
     description: "sw marine wb stadium to nw marine",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.swMarineWb.id, VIDEOS.nwMarineEb.id],
+    videoIds: [ROUTE_VIDEOS.swMarineWb.id, ROUTE_VIDEOS.nwMarineEb.id],
     positions: [
       MARINE_STADIUM_SE,
       MARINE_STADIUM_NE,
@@ -393,7 +403,7 @@ export const MARINE_UBC = [
     description: "sw marine eb to camosun-ish",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.swMarineEb.id],
+    videoIds: [ROUTE_VIDEOS.swMarineEb.id],
     positions: [
       MARINE_MARINE,
       [49.25654, -123.25256],
@@ -447,8 +457,8 @@ export const MARINE_UBC = [
     description: "sw marine eb near camosun",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.swMarineEb.id, VIDEOS.midtownVancouverEb.id],
-    videoIdsStartAtStart: [VIDEOS.midtownVancouverEb.id],
+    videoIds: [ROUTE_VIDEOS.swMarineEb.id, ROUTE_VIDEOS.midtownVancouverEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.midtownVancouverEb.id],
     positions: [WEST_OF_CAMOSUN, CAMOSUN_MARINE_S, MARINE_41ST_SW],
   },
   {
@@ -456,7 +466,7 @@ export const MARINE_UBC = [
     description: "sw marine eb from camosun",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.swMarineEb.id],
+    videoIds: [ROUTE_VIDEOS.swMarineEb.id],
     positions: [
       MARINE_41ST_SW,
       [49.23457, -123.1962],
@@ -518,8 +528,8 @@ export const MARINE_UBC = [
     description: "just beyond arbutus greenway eb",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.swMarineEb.id, VIDEOS.arthurLaingSb.id],
-    videoIdsStartAtStart: [VIDEOS.arthurLaingSb.id],
+    videoIds: [ROUTE_VIDEOS.swMarineEb.id, ROUTE_VIDEOS.arthurLaingSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.arthurLaingSb.id],
     positions: [ARBUTUS_GREENWAY_MARINE_S, EAST_BLVD_MARINE_S],
   },
   {
@@ -527,7 +537,7 @@ export const MARINE_UBC = [
     description: "arbutus greenway-ish to 70th",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.swMarineEb.id, VIDEOS.arthurLaingSb.id],
+    videoIds: [ROUTE_VIDEOS.swMarineEb.id, ROUTE_VIDEOS.arthurLaingSb.id],
     positions: [EAST_BLVD_MARINE_S, [49.20852, -123.14366], MARINE_70TH_S],
   },
 
@@ -553,12 +563,12 @@ export const MARINE_UBC = [
     description: "just north of marine-marine",
     type: "shared",
     videoIds: [
-      VIDEOS.nwMarineEb.id,
-      VIDEOS.swMarineEb.id,
-      VIDEOS.swMarineWb.id,
+      ROUTE_VIDEOS.nwMarineEb.id,
+      ROUTE_VIDEOS.swMarineEb.id,
+      ROUTE_VIDEOS.swMarineWb.id,
     ],
-    videoIdsStartAtEnd: [VIDEOS.swMarineEb.id],
-    videoIdsEndAtEnd: [VIDEOS.swMarineWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.swMarineEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.swMarineWb.id],
     positions: [
       MARINE_MARINE,
       [49.25694, -123.25349],
@@ -570,7 +580,7 @@ export const MARINE_UBC = [
     routeNames: [ROUTES.marineNw.name],
     description: "ubc-ish to west mall-ish",
     type: "shared",
-    videoIds: [VIDEOS.nwMarineEb.id],
+    videoIds: [ROUTE_VIDEOS.nwMarineEb.id],
     positions: [
       WEST_OF_MARINE_MARINE,
       [49.25751, -123.25411],
@@ -632,7 +642,7 @@ export const MARINE_UBC = [
     description: "west mall-ish eb",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.nwMarineEb.id],
+    videoIds: [ROUTE_VIDEOS.nwMarineEb.id],
     positions: [
       MARINE_WEST_MALL_ISH,
       [49.26805, -123.25946],
@@ -645,7 +655,7 @@ export const MARINE_UBC = [
     description: "west mall to chancellor",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.nwMarineEb.id],
+    videoIds: [ROUTE_VIDEOS.nwMarineEb.id],
     positions: [
       WEST_MALL_MARINE_S,
       [49.2689, -123.25834],
@@ -661,8 +671,8 @@ export const MARINE_UBC = [
     description: "chancellor crossing east mall north side",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.chancellorWb.id, VIDEOS.eastMallSb.id],
-    videoIdsStartAtStart: [VIDEOS.eastMallSb.id],
+    videoIds: [ROUTE_VIDEOS.chancellorWb.id, ROUTE_VIDEOS.eastMallSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.eastMallSb.id],
     positions: [MARINE_CHANCELLOR_NE, MARINE_CHANCELLOR_NW],
   },
   {
@@ -697,14 +707,14 @@ export const MARINE_UBC = [
     routeNames: [ROUTES.marineNw.name],
     description: "crossing chancellor",
     type: "shared",
-    videoIds: [VIDEOS.nwMarineEb.id],
+    videoIds: [ROUTE_VIDEOS.nwMarineEb.id],
     positions: [MARINE_CHANCELLOR_SE, MARINE_CHANCELLOR_NE],
   },
   {
     routeNames: [ROUTES.marineNw.name],
     description: "the hill",
     type: "shared",
-    videoIds: [VIDEOS.nwMarineEb.id],
+    videoIds: [ROUTE_VIDEOS.nwMarineEb.id],
     positions: [
       MARINE_CHANCELLOR_NE,
       [49.27167, -123.25408],
@@ -760,12 +770,12 @@ export const MARINE_UBC = [
     description: "shared lane portion",
     type: "shared",
     videoIds: [
-      VIDEOS.nwMarineEb.id,
-      VIDEOS.seasideBypassMarine4thEb.id,
-      VIDEOS.seasideBypassMarine4thWb.id,
+      ROUTE_VIDEOS.nwMarineEb.id,
+      ROUTE_VIDEOS.seasideBypassMarine4thEb.id,
+      ROUTE_VIDEOS.seasideBypassMarine4thWb.id,
     ],
-    videoIdsStartAtStart: [VIDEOS.seasideBypassMarine4thEb.id],
-    videoIdsEndAtStart: [VIDEOS.seasideBypassMarine4thWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.seasideBypassMarine4thEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.seasideBypassMarine4thWb.id],
     positions: [
       SEASIDE_W_END,
       [49.27826, -123.23481],
@@ -811,7 +821,10 @@ export const MARINE_UBC = [
     description: "eb: spanish banks to 4th",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.nwMarineEb.id, VIDEOS.seasideBypassMarine4thEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.nwMarineEb.id,
+      ROUTE_VIDEOS.seasideBypassMarine4thEb.id,
+    ],
     positions: [
       SPANISH_BANKS_CONNECTION_2,
       [49.2759, -123.21504],
@@ -873,8 +886,11 @@ export const MARINE_UBC = [
     description: "eb: crossing 4th",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.nwMarineEb.id, VIDEOS.seasideBypassMarine4thEb.id],
-    videoIdsEndAtEnd: [VIDEOS.nwMarineEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.nwMarineEb.id,
+      ROUTE_VIDEOS.seasideBypassMarine4thEb.id,
+    ],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.nwMarineEb.id],
     positions: [
       MARINE_4TH_NW,
       [49.26869, -123.20007],
@@ -887,7 +903,7 @@ export const MARINE_UBC = [
     description: "wb: 4th to spanish banks",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.seasideBypassMarine4thWb.id],
+    videoIds: [ROUTE_VIDEOS.seasideBypassMarine4thWb.id],
     positions: [
       MARINE_4TH_NE,
       [49.26887, -123.20002],

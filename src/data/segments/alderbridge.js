@@ -4,7 +4,7 @@ import {
   SHELL_ALDERBRIDGE_NE,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const JAYDEN_MEWS_ALDERBRIDGE = [49.17743, -123.11493];
 const NO_4_ALDERBRIDGE_NE = [49.17742, -123.11389];
@@ -14,8 +14,8 @@ export const ALDERBRIDGE = [
     routeNames: [ROUTES.alderbridge.name],
     description: "west",
     type: "mixed",
-    videoIds: [VIDEOS.alderbridgeWb.id],
-    videoIdsEndAtStart: [VIDEOS.alderbridgeWb.id],
+    videoIds: [ROUTE_VIDEOS.alderbridgeWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.alderbridgeWb.id],
     positions: [
       GARDEN_CITY_ALDERBRIDGE_NW,
       GARDEN_CITY_ALDERBRIDGE_NE,
@@ -39,7 +39,7 @@ export const ALDERBRIDGE = [
     routeNames: [ROUTES.alderbridge.name],
     description: "missing",
     type: "other",
-    videoIds: [VIDEOS.alderbridgeWb.id],
+    videoIds: [ROUTE_VIDEOS.alderbridgeWb.id],
     positions: [
       JAYDEN_MEWS_ALDERBRIDGE,
       [49.1774, -123.11491],
@@ -52,8 +52,8 @@ export const ALDERBRIDGE = [
     routeNames: [ROUTES.alderbridge.name],
     description: "east",
     type: "mixed",
-    videoIds: [VIDEOS.alderbridgeWb.id],
-    videoIdsStartAtEnd: [VIDEOS.alderbridgeWb.id],
+    videoIds: [ROUTE_VIDEOS.alderbridgeWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.alderbridgeWb.id],
     positions: [
       NO_4_ALDERBRIDGE_NE,
       [49.1774, -123.11121],

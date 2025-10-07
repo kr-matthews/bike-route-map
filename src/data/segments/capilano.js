@@ -7,7 +7,7 @@ import {
   CAPILANO_MARINE_NW,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const NB_LANE_END = [49.33257, -123.11711];
 
@@ -39,8 +39,8 @@ export const CAPILANO = [
     description: "nb under hwy 1 part 1",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.transCanadaHwyWb.id],
-    videoIdsStartAtStart: [VIDEOS.transCanadaHwyWb.id],
+    videoIds: [ROUTE_VIDEOS.transCanadaHwyWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.transCanadaHwyWb.id],
     positions: [
       CAPILANO_HWY_1_S_NE,
       [49.33165, -123.11712],
@@ -53,7 +53,7 @@ export const CAPILANO = [
     description: "nb under hwy 1 part 2",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.transCanadaHwyWb.id],
+    videoIds: [ROUTE_VIDEOS.transCanadaHwyWb.id],
     positions: [
       NB_LANE_END,
       [49.33278, -123.11708],

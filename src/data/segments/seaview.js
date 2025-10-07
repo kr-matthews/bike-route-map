@@ -4,7 +4,7 @@ import {
   ROYAL_CHATHAM,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const CRANLEY_SEAVIEW = [49.36009, -123.2631];
 const NELSON_CREEK = [49.36071, -123.26241];
@@ -18,9 +18,9 @@ export const SEAVIEW = [
   {
     description: "cranley",
     type: "quiet",
-    videoIds: [VIDEOS.seaviewWb.id, VIDEOS.seaviewEb.id],
-    videoIdsStartAtStart: [VIDEOS.seaviewWb.id],
-    videoIdsEndAtStart: [VIDEOS.seaviewEb.id],
+    videoIds: [ROUTE_VIDEOS.seaviewWb.id, ROUTE_VIDEOS.seaviewEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.seaviewWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.seaviewEb.id],
     positions: [
       CRANLEY_MARINE,
       [49.35708, -123.26406],
@@ -40,7 +40,7 @@ export const SEAVIEW = [
     routeNames: [ROUTES.seaview.name],
     description: "cranley good path",
     type: "mixed",
-    videoIds: [VIDEOS.seaviewWb.id, VIDEOS.seaviewEb.id],
+    videoIds: [ROUTE_VIDEOS.seaviewWb.id, ROUTE_VIDEOS.seaviewEb.id],
     positions: [
       CRANLEY_SEAVIEW,
       [49.36018, -123.26294],
@@ -56,7 +56,7 @@ export const SEAVIEW = [
     routeNames: [ROUTES.seaview.name],
     description: "steep zig zags",
     type: "other",
-    videoIds: [VIDEOS.seaviewWb.id, VIDEOS.seaviewEb.id],
+    videoIds: [ROUTE_VIDEOS.seaviewWb.id, ROUTE_VIDEOS.seaviewEb.id],
     positions: [
       NELSON_CREEK,
       [49.36073, -123.26244],
@@ -80,7 +80,7 @@ export const SEAVIEW = [
     routeNames: [ROUTES.seaview.name],
     description: "primary",
     type: "mixed",
-    videoIds: [VIDEOS.seaviewEb.id, VIDEOS.seaviewWb.id],
+    videoIds: [ROUTE_VIDEOS.seaviewEb.id, ROUTE_VIDEOS.seaviewWb.id],
     positions: [
       OLD_TRACKS_E,
       [49.36109, -123.26389],
@@ -181,7 +181,7 @@ export const SEAVIEW = [
   {
     description: "raleigh main",
     type: "quiet",
-    videoIds: [VIDEOS.seaviewEb.id, VIDEOS.seaviewWb.id],
+    videoIds: [ROUTE_VIDEOS.seaviewEb.id, ROUTE_VIDEOS.seaviewWb.id],
     positions: [
       SEAVIEW_RALEIGH,
       [49.37082, -123.27656],
@@ -194,13 +194,13 @@ export const SEAVIEW = [
   {
     description: "narrow royal",
     type: "quiet",
-    videoIds: [VIDEOS.seaviewWb.id],
+    videoIds: [ROUTE_VIDEOS.seaviewWb.id],
     positions: [ROYAL_RALEIGH, [49.37107, -123.27756], ROYAL_CHATHAM],
   },
   {
     description: "raleigh diagonal",
     type: "quiet",
-    videoIds: [VIDEOS.seaviewEb.id],
+    videoIds: [ROUTE_VIDEOS.seaviewEb.id],
     positions: [RALEIGH_CHATHAM, [49.37172, -123.27801], ROYAL_RALEIGH],
   },
 ];

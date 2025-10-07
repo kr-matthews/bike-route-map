@@ -6,7 +6,7 @@ import {
   SKEENA_SECOND_NARROWS_BRIDGE,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const NORTHBOUND_ELEVATION_START = [49.29164, -123.02605];
 const NORTHBOUND_ELEVATION_END = [49.30367, -123.02652];
@@ -33,8 +33,8 @@ export const SECOND_NARROWS_BRIDGE = [
     description: "skeena pre-tunnel",
     type: "other",
     elevation: -0.5,
-    videoIds: [VIDEOS.portsideEb.id, VIDEOS.cassiarSb.id],
-    videoIdsEndAtStart: [VIDEOS.portsideEb.id],
+    videoIds: [ROUTE_VIDEOS.portsideEb.id, ROUTE_VIDEOS.cassiarSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.portsideEb.id],
     positions: [
       CASSIAR_SKEENA_PATH,
       [49.28795, -123.02849],
@@ -46,14 +46,14 @@ export const SECOND_NARROWS_BRIDGE = [
     description: "skeena tunnel",
     type: "other",
     elevation: -1,
-    videoIds: [VIDEOS.portsideEb.id, VIDEOS.cassiarSb.id],
+    videoIds: [ROUTE_VIDEOS.portsideEb.id, ROUTE_VIDEOS.cassiarSb.id],
     positions: [TUNNEL_SOUTH_END, [49.28889, -123.02824], TUNNEL_NORTH_END],
   },
   {
     description: "skeena post-tunnel",
     type: "other",
     elevation: -0.5,
-    videoIds: [VIDEOS.portsideEb.id, VIDEOS.cassiarSb.id],
+    videoIds: [ROUTE_VIDEOS.portsideEb.id, ROUTE_VIDEOS.cassiarSb.id],
     positions: [TUNNEL_NORTH_END, SKEENA_SECOND_NARROWS_BRIDGE],
   },
 
@@ -64,7 +64,7 @@ export const SECOND_NARROWS_BRIDGE = [
     type: "mixed",
     oneWay: "recommended",
     elevation: 0.5,
-    videoIds: [VIDEOS.secondNarrowsNb.id],
+    videoIds: [ROUTE_VIDEOS.secondNarrowsNb.id],
     positions: [
       CASSIAR_SKEENA_PATH,
       [49.28839, -123.02849],
@@ -85,7 +85,7 @@ export const SECOND_NARROWS_BRIDGE = [
     type: "mixed",
     oneWay: "required",
     elevation: 1,
-    videoIds: [VIDEOS.secondNarrowsNb.id],
+    videoIds: [ROUTE_VIDEOS.secondNarrowsNb.id],
     positions: [
       NORTHBOUND_ELEVATION_START,
       [49.29196, -123.02604],
@@ -109,7 +109,7 @@ export const SECOND_NARROWS_BRIDGE = [
     type: "mixed",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.secondNarrowsNb.id],
+    videoIds: [ROUTE_VIDEOS.secondNarrowsNb.id],
     positions: [
       NORTHBOUND_ELEVATION_END,
       [49.3039, -123.02656],
@@ -130,7 +130,7 @@ export const SECOND_NARROWS_BRIDGE = [
     type: "mixed",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.secondNarrowsSb.id],
+    videoIds: [ROUTE_VIDEOS.secondNarrowsSb.id],
     positions: [
       SECOND_NARROWS_NW,
       [49.30452, -123.02967],
@@ -152,7 +152,7 @@ export const SECOND_NARROWS_BRIDGE = [
     type: "mixed",
     oneWay: "required",
     elevation: 1,
-    videoIds: [VIDEOS.secondNarrowsSb.id],
+    videoIds: [ROUTE_VIDEOS.secondNarrowsSb.id],
     positions: [
       SOUTHBOUND_ELEVATION_START,
       [49.30329, -123.02672],
@@ -170,7 +170,7 @@ export const SECOND_NARROWS_BRIDGE = [
     type: "mixed",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [VIDEOS.secondNarrowsSb.id],
+    videoIds: [ROUTE_VIDEOS.secondNarrowsSb.id],
     positions: [
       SOUTHBOUND_ELEVATION_END,
       [49.2915, -123.02639],

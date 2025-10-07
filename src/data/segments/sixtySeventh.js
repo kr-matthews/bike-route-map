@@ -5,7 +5,7 @@ import {
   HEATHER_67TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const GRANVILLE_68TH_E = [49.21052, -123.14037];
 const GRANVILLE_67TH_E = [49.21089, -123.14036];
@@ -15,8 +15,8 @@ export const SIXTY_SEVENTH = [
     routeNames: [ROUTES.sixtySeventh.name],
     description: "greenway to adera",
     type: "quiet",
-    videoIds: [VIDEOS.sixtySeventhPlusWb.id],
-    videoIdsEndAtStart: [VIDEOS.sixtySeventhPlusWb.id],
+    videoIds: [ROUTE_VIDEOS.sixtySeventhPlusWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.sixtySeventhPlusWb.id],
     positions: [
       ARBUTUS_GREENWAY_68TH,
       [49.21064, -123.14522],
@@ -29,9 +29,9 @@ export const SIXTY_SEVENTH = [
     description: "cypress overlap",
     type: "quiet",
     videoIds: [
-      VIDEOS.sixtySeventhPlusWb.id,
-      VIDEOS.cypressNb.id,
-      VIDEOS.cypressSb.id,
+      ROUTE_VIDEOS.sixtySeventhPlusWb.id,
+      ROUTE_VIDEOS.cypressNb.id,
+      ROUTE_VIDEOS.cypressSb.id,
     ],
     positions: [ADERA_68TH, CORNISH_68TH],
   },
@@ -39,21 +39,21 @@ export const SIXTY_SEVENTH = [
     routeNames: [ROUTES.sixtySeventh.name],
     description: "cornish to granville",
     type: "quiet",
-    videoIds: [VIDEOS.sixtySeventhPlusWb.id],
+    videoIds: [ROUTE_VIDEOS.sixtySeventhPlusWb.id],
     positions: [CORNISH_68TH, GRANVILLE_68TH_E],
   },
   {
     routeNames: [ROUTES.sixtySeventh.name],
     description: "granville sidewalk",
     type: "mixed",
-    videoIds: [VIDEOS.sixtySeventhPlusWb.id],
+    videoIds: [ROUTE_VIDEOS.sixtySeventhPlusWb.id],
     positions: [GRANVILLE_68TH_E, GRANVILLE_67TH_E],
   },
   {
     routeNames: [ROUTES.sixtySeventh.name],
     description: "east of granville",
     type: "quiet",
-    videoIds: [VIDEOS.sixtySeventhPlusWb.id],
+    videoIds: [ROUTE_VIDEOS.sixtySeventhPlusWb.id],
     positions: [
       GRANVILLE_67TH_E,
       [49.21085, -123.13777],

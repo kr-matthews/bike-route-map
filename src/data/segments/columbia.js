@@ -5,7 +5,7 @@ import {
   COLUMBIA_SEAWALL,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const COLUMBIA_ATHLETES_N = [49.27166, -123.10937];
 
@@ -14,8 +14,8 @@ export const COLUMBIA = [
     routeNames: [ROUTES.columbia.name],
     description: "primary",
     type: "quiet",
-    videoIds: [VIDEOS.columbiaNb.id],
-    videoIdsStartAtStart: [VIDEOS.columbiaNb.id],
+    videoIds: [ROUTE_VIDEOS.columbiaNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.columbiaNb.id],
     positions: [
       COLUMBIA_5TH,
       [49.26749, -123.10944],
@@ -30,7 +30,7 @@ export const COLUMBIA = [
     routeNames: [ROUTES.columbia.name],
     description: "to seawall",
     type: "mixed",
-    videoIds: [VIDEOS.columbiaNb.id],
+    videoIds: [ROUTE_VIDEOS.columbiaNb.id],
     positions: [COLUMBIA_ATHLETES_N, COLUMBIA_SEAWALL],
   },
 ];

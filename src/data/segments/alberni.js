@@ -4,7 +4,7 @@ import {
   CHILCO_ALBERNI_E,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const EB_LANE_END = [49.29222, -123.13452];
 const EB_LANE_START = [49.29187, -123.134];
@@ -18,7 +18,7 @@ export const ALBERNI = [
     description: "eb: chilco to denman",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.alberniEb.id],
+    videoIds: [ROUTE_VIDEOS.alberniEb.id],
     positions: [CHILCO_ALBERNI_E, [49.29402, -123.13728], EB_LANE_END],
   },
   {
@@ -26,7 +26,7 @@ export const ALBERNI = [
     description: "eb: near denman",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.alberniEb.id],
+    videoIds: [ROUTE_VIDEOS.alberniEb.id],
     positions: [EB_LANE_END, EB_LANE_START],
   },
   {
@@ -34,8 +34,8 @@ export const ALBERNI = [
     description: "eb: denman to cardero",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.alberniEb.id],
-    videoIdsEndAtEnd: [VIDEOS.alberniEb.id],
+    videoIds: [ROUTE_VIDEOS.alberniEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.alberniEb.id],
     positions: [EB_LANE_START, CARDERO_ALBERNI_S],
   },
   {
@@ -43,8 +43,8 @@ export const ALBERNI = [
     description: "wb: cardero to denman",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.alberniWb.id],
-    videoIdsStartAtStart: [VIDEOS.alberniWb.id],
+    videoIds: [ROUTE_VIDEOS.alberniWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.alberniWb.id],
     positions: [CARDERO_ALBERNI_N, WB_LANE_END],
   },
   {
@@ -52,7 +52,7 @@ export const ALBERNI = [
     description: "wb: near denman",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.alberniWb.id],
+    videoIds: [ROUTE_VIDEOS.alberniWb.id],
     positions: [WB_LANE_END, WB_LANE_START],
   },
   {
@@ -60,7 +60,7 @@ export const ALBERNI = [
     description: "wb: denman to chilco",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.alberniWb.id],
+    videoIds: [ROUTE_VIDEOS.alberniWb.id],
     positions: [WB_LANE_START, [49.29405, -123.13718], CHILCO_ALBERNI_E],
   },
 ];

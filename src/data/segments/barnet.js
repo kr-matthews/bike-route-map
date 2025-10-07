@@ -9,7 +9,7 @@ import {
   VELODROME_BARNET_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const BARNET_VIEW_NE = [49.27971, -122.86651];
 const BARNET_VIEW_NW = [49.27966, -122.86701];
@@ -97,7 +97,7 @@ export const BARNET = [
     description: "eb: ridge to trans canada",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.barnetEb.id],
+    videoIds: [ROUTE_VIDEOS.barnetEb.id],
     positions: [
       INLET_RIDGE_E,
       [49.28525, -122.95449],
@@ -196,7 +196,7 @@ export const BARNET = [
     description: "eb: trans canada",
     type: "dedicated",
     oneWay: "recommended",
-    videoIds: [VIDEOS.barnetEb.id],
+    videoIds: [ROUTE_VIDEOS.barnetEb.id],
     positions: [
       TRANS_CANADA_SHOULDER_W,
       [49.28775, -122.8976],
@@ -209,7 +209,7 @@ export const BARNET = [
     description: "eb: trans canada to sidewalk",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.barnetEb.id],
+    videoIds: [ROUTE_VIDEOS.barnetEb.id],
     positions: [
       TRANS_CANADA_SHOULDER_E,
       [49.2882, -122.89689],
@@ -271,7 +271,7 @@ export const BARNET = [
     description: "eb: sidewalk part 1",
     type: "mixed",
     oneWay: "recommended",
-    videoIds: [VIDEOS.barnetEb.id],
+    videoIds: [ROUTE_VIDEOS.barnetEb.id],
     positions: [
       BARNET_UNION,
       [49.28597, -122.86766],
@@ -292,8 +292,8 @@ export const BARNET = [
     routeNames: [ROUTES.barnet.name],
     description: "eb: sidewalk part 2",
     type: "mixed",
-    videoIds: [VIDEOS.barnetEb.id],
-    videoIdsEndAtEnd: [VIDEOS.barnetEb.id],
+    videoIds: [ROUTE_VIDEOS.barnetEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.barnetEb.id],
     positions: [
       BARNET_VIEW_NW,
       [49.27929, -122.867],
@@ -502,8 +502,8 @@ export const BARNET = [
     description: "wb: pre-pre-bayview",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.francesUnionWb.id],
-    videoIdsStartAtStart: [VIDEOS.francesUnionWb.id],
+    videoIds: [ROUTE_VIDEOS.francesUnionWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.francesUnionWb.id],
     positions: [
       WB_PRE_BAYVIEW,
       [49.28739, -122.95253],
@@ -528,7 +528,7 @@ export const BARNET = [
     description: "wb: pre-bayview",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [VIDEOS.francesUnionWb.id],
+    videoIds: [ROUTE_VIDEOS.francesUnionWb.id],
     positions: [WB_BAYVIEW_RAMP, INLET_BAYVIEW_W],
   },
   {

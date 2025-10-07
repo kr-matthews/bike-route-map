@@ -1,6 +1,6 @@
 import { NO_2_STEVESTON_SE, NO_2_WILLIAMS_SE } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const NO_2_LONDON_SW = [49.11767, -123.1589];
 
@@ -8,8 +8,8 @@ export const NO_2_PATH = [
   {
     description: "no. 2 path to s dyke",
     type: "mixed",
-    videoIds: [VIDEOS.no2PathSb.id],
-    videoIdsEndAtEnd: [VIDEOS.no2PathSb.id],
+    videoIds: [ROUTE_VIDEOS.no2PathSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.no2PathSb.id],
     positions: [
       NO_2_LONDON_SW,
       [49.11726, -123.15891],
@@ -30,9 +30,9 @@ export const NO_2_PATH = [
     routeNames: [ROUTES.no2Path.name],
     description: "south of steveston hwy",
     type: "mixed",
-    videoIds: [VIDEOS.no2PathNb.id, VIDEOS.no2PathSb.id],
-    videoIdsStartAtStart: [VIDEOS.no2PathNb.id],
-    videoIdsEndAtEnd: [VIDEOS.no2PathNb.id],
+    videoIds: [ROUTE_VIDEOS.no2PathNb.id, ROUTE_VIDEOS.no2PathSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.no2PathNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.no2PathNb.id],
     positions: [
       NO_2_LONDON_SW,
       [49.11799, -123.15891],
@@ -62,8 +62,8 @@ export const NO_2_PATH = [
     routeNames: [ROUTES.no2Path.name],
     description: "north of steveston hwy",
     type: "mixed",
-    videoIds: [VIDEOS.no2PathSb.id],
-    videoIdsStartAtEnd: [VIDEOS.no2PathSb.id],
+    videoIds: [ROUTE_VIDEOS.no2PathSb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.no2PathSb.id],
     positions: [
       NO_2_STEVESTON_SE,
       [49.13361, -123.15874],

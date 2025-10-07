@@ -6,16 +6,16 @@ import {
   WINDSOR_31ST,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const HILLCREST = [
   {
     routeNames: [ROUTES.hillcrest.name],
     description: "west of windsor",
     type: "quiet",
-    videoIds: [VIDEOS.hillcrestEb.id, VIDEOS.hillcrestWb.id],
-    videoIdsStartAtStart: [VIDEOS.hillcrestEb.id],
-    videoIdsEndAtStart: [VIDEOS.hillcrestWb.id],
+    videoIds: [ROUTE_VIDEOS.hillcrestEb.id, ROUTE_VIDEOS.hillcrestWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.hillcrestEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.hillcrestWb.id],
     positions: [
       ONTARIO_30TH,
       [49.24333, -123.10392],
@@ -38,9 +38,9 @@ export const HILLCREST = [
     routeNames: [ROUTES.hillcrest.name],
     description: "east of windsor",
     type: "quiet",
-    videoIds: [VIDEOS.hillcrestEb.id, VIDEOS.hillcrestWb.id],
-    videoIdsEndAtEnd: [VIDEOS.hillcrestEb.id],
-    videoIdsStartAtEnd: [VIDEOS.hillcrestWb.id],
+    videoIds: [ROUTE_VIDEOS.hillcrestEb.id, ROUTE_VIDEOS.hillcrestWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.hillcrestEb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.hillcrestWb.id],
     positions: [
       WINDSOR_29TH,
       [49.2446, -123.08134],

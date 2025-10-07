@@ -1,6 +1,6 @@
 import { PRINCE_EDWARD_14TH, WOODLAND_15TH_E } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const KINGSWAY_W = [49.25853, -123.09448];
 const KINGSWAY_E = [49.25784, -123.09321];
@@ -12,8 +12,8 @@ export const FOURTEENTH_GAP = [
     description: "prince edward to kingsway",
     type: "quiet",
     undesignated: true,
-    videoIds: [VIDEOS.fourteenthGapWb.id],
-    videoIdsEndAtStart: [VIDEOS.fourteenthGapWb.id],
+    videoIds: [ROUTE_VIDEOS.fourteenthGapWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.fourteenthGapWb.id],
     positions: [
       PRINCE_EDWARD_14TH,
       [49.25844, -123.09639],
@@ -27,7 +27,7 @@ export const FOURTEENTH_GAP = [
     description: "kingsway",
     type: "shared",
     undesignated: true,
-    videoIds: [VIDEOS.fourteenthGapWb.id],
+    videoIds: [ROUTE_VIDEOS.fourteenthGapWb.id],
     positions: [KINGSWAY_W, KINGSWAY_E],
   },
   {
@@ -35,7 +35,7 @@ export const FOURTEENTH_GAP = [
     description: "the park",
     type: "mixed",
     undesignated: true,
-    videoIds: [VIDEOS.fourteenthGapWb.id],
+    videoIds: [ROUTE_VIDEOS.fourteenthGapWb.id],
     positions: [
       KINGSWAY_E,
       [49.25788, -123.09297],
@@ -47,7 +47,7 @@ export const FOURTEENTH_GAP = [
     routeNames: [ROUTES.fourteenthGap.name],
     description: "the park to mosaic",
     type: "quiet",
-    videoIds: [VIDEOS.fourteenthGapWb.id],
+    videoIds: [ROUTE_VIDEOS.fourteenthGapWb.id],
     undesignated: true,
     positions: [
       CAROLINA_14TH,

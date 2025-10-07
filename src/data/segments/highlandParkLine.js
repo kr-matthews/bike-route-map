@@ -5,7 +5,7 @@ import {
   SAMPLES_HIGHLAND_PARK_LINE,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const GRIFFITHS_HIGHLAND_E = [49.21696, -122.96068];
 
@@ -14,9 +14,12 @@ export const HIGHLAND_PARK_LINE = [
     routeNames: [ROUTES.highlandParkLine.name],
     description: "west of sample's path",
     type: "mixed",
-    videoIds: [VIDEOS.highlandParkLineEb.id, VIDEOS.highlandParkLineWb.id],
-    videoIdsStartAtStart: [VIDEOS.highlandParkLineEb.id],
-    videoIdsEndAtStart: [VIDEOS.highlandParkLineWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.highlandParkLineEb.id,
+      ROUTE_VIDEOS.highlandParkLineWb.id,
+    ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.highlandParkLineEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.highlandParkLineWb.id],
     positions: [
       BULLER_BERESFORD_W,
       [49.21776, -122.97773],
@@ -66,11 +69,11 @@ export const HIGHLAND_PARK_LINE = [
     description: "sample's path to griffiths",
     type: "mixed",
     videoIds: [
-      VIDEOS.highlandParkLineEb.id,
-      VIDEOS.highlandParkLineWb.id,
-      VIDEOS.edmondsSamplesSb.id,
+      ROUTE_VIDEOS.highlandParkLineEb.id,
+      ROUTE_VIDEOS.highlandParkLineWb.id,
+      ROUTE_VIDEOS.edmondsSamplesSb.id,
     ],
-    videoIdsStartAtEnd: [VIDEOS.edmondsSamplesSb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.edmondsSamplesSb.id],
     positions: [
       SAMPLES_HIGHLAND_PARK_LINE,
       [49.217, -122.96207],
@@ -86,7 +89,10 @@ export const HIGHLAND_PARK_LINE = [
     routeNames: [ROUTES.highlandParkLine.name],
     description: "east of griffiths",
     type: "mixed",
-    videoIds: [VIDEOS.highlandParkLineEb.id, VIDEOS.highlandParkLineWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.highlandParkLineEb.id,
+      ROUTE_VIDEOS.highlandParkLineWb.id,
+    ],
     positions: [
       GRIFFITHS_HIGHLAND_E,
       [49.21695, -122.96037],

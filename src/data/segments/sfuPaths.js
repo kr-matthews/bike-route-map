@@ -1,6 +1,6 @@
 import { GAGLARDI_UNIVERSITY_E_NE } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const GAGLARDI_S_CAMPUS_NE = [49.27793, -122.92074];
 const GAGLARDI_S_CAMPUS_NE_N = [49.27795, -122.9206];
@@ -26,7 +26,7 @@ export const SFU_PATHS = [
     type: "shared",
     oneWay: "required",
     undesignated: true,
-    videoIds: [VIDEOS.greenhousePathEb.id],
+    videoIds: [ROUTE_VIDEOS.greenhousePathEb.id],
     positions: [
       GAGLARDI_UNIVERSITY_NW,
       [49.28008, -122.9202],
@@ -39,7 +39,7 @@ export const SFU_PATHS = [
     description: "gaglardi road sb",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.greenhousePathEb.id],
+    videoIds: [ROUTE_VIDEOS.greenhousePathEb.id],
     positions: [
       GAGLARDI_LANE_SB_START,
       [49.27908, -122.92058],
@@ -57,7 +57,7 @@ export const SFU_PATHS = [
     description: "gaglardi road nb",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.gaglardiPathNb.id, VIDEOS.sCampusPathNWb.id],
+    videoIds: [ROUTE_VIDEOS.gaglardiPathNb.id, ROUTE_VIDEOS.sCampusPathNWb.id],
     positions: [
       GAGLARDI_S_CAMPUS_NE_N,
       [49.278, -122.92064],
@@ -75,7 +75,7 @@ export const SFU_PATHS = [
     type: "shared",
     oneWay: "required",
     undesignated: true,
-    videoIds: [VIDEOS.gaglardiPathNb.id, VIDEOS.sCampusPathNWb.id],
+    videoIds: [ROUTE_VIDEOS.gaglardiPathNb.id, ROUTE_VIDEOS.sCampusPathNWb.id],
     positions: [
       GAGLARDI_LANE_NB_END,
       [49.27933, -122.92004],
@@ -101,9 +101,9 @@ export const SFU_PATHS = [
     description: "s campus rd",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.sCampusEb.id],
-    videoIdsStartAtStart: [VIDEOS.sCampusEb.id],
-    videoIdsEndAtEnd: [VIDEOS.sCampusEb.id],
+    videoIds: [ROUTE_VIDEOS.sCampusEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.sCampusEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.sCampusEb.id],
     positions: [
       S_CAMPUS_LANE_USEFUL_START,
       [49.27763, -122.9207],
@@ -135,8 +135,11 @@ export const SFU_PATHS = [
     routeNames: [ROUTES.sfuPaths.name],
     description: "crossing gaglardi at university w",
     type: "mixed",
-    videoIds: [VIDEOS.universityDrWPathWb.id, VIDEOS.burnabyMtnPathEb.id],
-    videoIdsEndAtEnd: [VIDEOS.burnabyMtnPathEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.universityDrWPathWb.id,
+      ROUTE_VIDEOS.burnabyMtnPathEb.id,
+    ],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.burnabyMtnPathEb.id],
     positions: [
       GAGLARDI_UNIVERSITY_W_W,
       [49.27616, -122.93037],
@@ -148,9 +151,9 @@ export const SFU_PATHS = [
     description: "crossing s campus at gaglardi 1",
     type: "mixed",
     videoIds: [
-      VIDEOS.gaglardiPathNb.id,
-      VIDEOS.greenhousePathEb.id,
-      VIDEOS.greenhousePathWb.id,
+      ROUTE_VIDEOS.gaglardiPathNb.id,
+      ROUTE_VIDEOS.greenhousePathEb.id,
+      ROUTE_VIDEOS.greenhousePathWb.id,
     ],
     positions: [
       GAGLARDI_S_CAMPUS_SE_S,
@@ -162,8 +165,11 @@ export const SFU_PATHS = [
     routeNames: [ROUTES.sfuPaths.name],
     description: "crossing s campus at gaglardi 2",
     type: "mixed",
-    videoIds: [VIDEOS.gaglardiPathNb.id, VIDEOS.greenhousePathWb.id],
-    videoIdsEndAtEnd: [VIDEOS.greenhousePathWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.gaglardiPathNb.id,
+      ROUTE_VIDEOS.greenhousePathWb.id,
+    ],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.greenhousePathWb.id],
     positions: [GAGLARDI_S_CAMPUS_NE, GAGLARDI_S_CAMPUS_NE_N],
   },
 
@@ -172,8 +178,8 @@ export const SFU_PATHS = [
     type: "shared",
     oneWay: "required",
     undesignated: true,
-    videoIds: [VIDEOS.burnabyMtnPathEb.id],
-    videoIdsStartAtStart: [VIDEOS.burnabyMtnPathEb.id],
+    videoIds: [ROUTE_VIDEOS.burnabyMtnPathEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.burnabyMtnPathEb.id],
     positions: [
       [49.27488, -122.93972],
       [49.27487, -122.93932],
@@ -187,7 +193,7 @@ export const SFU_PATHS = [
     routeNames: [ROUTES.sfuPaths.name],
     description: "west perimeter: burnaby mtn, gaglardi",
     type: "mixed",
-    videoIds: [VIDEOS.burnabyMtnPathEb.id],
+    videoIds: [ROUTE_VIDEOS.burnabyMtnPathEb.id],
     positions: [
       BURNABY_MTN_PATH_W,
       [49.27476, -122.9381],
@@ -222,7 +228,7 @@ export const SFU_PATHS = [
     routeNames: [ROUTES.sfuPaths.name],
     description: "west perimeter: university dr w",
     type: "mixed",
-    videoIds: [VIDEOS.universityDrWPathWb.id],
+    videoIds: [ROUTE_VIDEOS.universityDrWPathWb.id],
     positions: [
       GAGLARDI_UNIVERSITY_W_W,
       [49.27608, -122.9308],
@@ -262,7 +268,7 @@ export const SFU_PATHS = [
     routeNames: [ROUTES.sfuPaths.name],
     description: "west perimeter: university dr w parking lot bit",
     type: "quiet",
-    videoIds: [VIDEOS.universityDrWPathWb.id],
+    videoIds: [ROUTE_VIDEOS.universityDrWPathWb.id],
     positions: [
       PARKING_LOT_W,
       [49.28059, -122.922],
@@ -275,8 +281,11 @@ export const SFU_PATHS = [
     routeNames: [ROUTES.sfuPaths.name],
     description: "west perimeter: university dr w last bit",
     type: "mixed",
-    videoIds: [VIDEOS.universityDrWPathWb.id, VIDEOS.greenhousePathEb.id],
-    videoIdsStartAtStart: [VIDEOS.greenhousePathEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.universityDrWPathWb.id,
+      ROUTE_VIDEOS.greenhousePathEb.id,
+    ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.greenhousePathEb.id],
     positions: [PARKING_LOT_E, GAGLARDI_UNIVERSITY_NW],
   },
   {
@@ -284,21 +293,24 @@ export const SFU_PATHS = [
     description: "west perimeter: university dr w last bit 'crossing'",
     type: "mixed",
     videoIds: [
-      VIDEOS.universityDrWPathWb.id,
-      VIDEOS.gaglardiPathNb.id,
-      VIDEOS.sCampusPathNWb.id,
+      ROUTE_VIDEOS.universityDrWPathWb.id,
+      ROUTE_VIDEOS.gaglardiPathNb.id,
+      ROUTE_VIDEOS.sCampusPathNWb.id,
     ],
-    videoIdsStartAtEnd: [VIDEOS.universityDrWPathWb.id],
-    videoIdsEndAtStart: [VIDEOS.gaglardiPathNb.id, VIDEOS.sCampusPathNWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.universityDrWPathWb.id],
+    videoIdsEndAtStart: [
+      ROUTE_VIDEOS.gaglardiPathNb.id,
+      ROUTE_VIDEOS.sCampusPathNWb.id,
+    ],
     positions: [GAGLARDI_UNIVERSITY_NW, GAGLARDI_UNIVERSITY_NE],
   },
   {
     routeNames: [ROUTES.sfuPaths.name],
     description: "university dr e",
     type: "mixed",
-    videoIds: [VIDEOS.universityDrEPathWb.id],
-    videoIdsStartAtStart: [VIDEOS.universityDrEPathWb.id],
-    videoIdsEndAtEnd: [VIDEOS.universityDrEPathWb.id],
+    videoIds: [ROUTE_VIDEOS.universityDrEPathWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.universityDrEPathWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.universityDrEPathWb.id],
     // should be reversed
     positions: [
       [49.2746, -122.90741],
@@ -344,9 +356,12 @@ export const SFU_PATHS = [
     routeNames: [ROUTES.sfuPaths.name],
     description: "gaglardi, south part",
     type: "mixed",
-    videoIds: [VIDEOS.gaglardiPathNb.id, VIDEOS.universityDrWPathWb.id],
-    videoIdsStartAtStart: [VIDEOS.gaglardiPathNb.id],
-    videoIdsEndAtStart: [VIDEOS.universityDrWPathWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.gaglardiPathNb.id,
+      ROUTE_VIDEOS.universityDrWPathWb.id,
+    ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.gaglardiPathNb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.universityDrWPathWb.id],
     positions: [
       GAGLARDI_UNIVERSITY_E_NE,
       [49.27381, -122.92576],
@@ -363,7 +378,7 @@ export const SFU_PATHS = [
     routeNames: [ROUTES.sfuPaths.name],
     description: "gaglardi, north part",
     type: "mixed",
-    videoIds: [VIDEOS.gaglardiPathNb.id],
+    videoIds: [ROUTE_VIDEOS.gaglardiPathNb.id],
     positions: [
       GAGLARDI_UNIVERSITY_W_E,
       [49.27631, -122.93016],
@@ -394,7 +409,10 @@ export const SFU_PATHS = [
     routeNames: [ROUTES.sfuPaths.name],
     description: "greenhouse/nelson",
     type: "mixed",
-    videoIds: [VIDEOS.greenhousePathEb.id, VIDEOS.greenhousePathWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.greenhousePathEb.id,
+      ROUTE_VIDEOS.greenhousePathWb.id,
+    ],
     positions: [
       GAGLARDI_S_CAMPUS_SE_S,
       [49.2776, -122.92079],
@@ -445,7 +463,7 @@ export const SFU_PATHS = [
     type: "quiet",
     oneWay: "required",
     undesignated: true,
-    videoIds: [VIDEOS.greenhousePathEb.id],
+    videoIds: [ROUTE_VIDEOS.greenhousePathEb.id],
     positions: [
       GREENHOUSE_NELSON,
       [49.27415, -122.91307],
@@ -460,7 +478,7 @@ export const SFU_PATHS = [
     type: "quiet",
     oneWay: "required",
     undesignated: true,
-    videoIds: [VIDEOS.greenhousePathWb.id],
+    videoIds: [ROUTE_VIDEOS.greenhousePathWb.id],
     positions: [
       NELSON_LOT_E,
       [49.27393, -122.91069],
@@ -474,9 +492,12 @@ export const SFU_PATHS = [
     description: "nelson way",
     type: "quiet",
     undesignated: true,
-    videoIds: [VIDEOS.greenhousePathEb.id, VIDEOS.greenhousePathWb.id],
-    videoIdsStartAtEnd: [VIDEOS.greenhousePathWb.id],
-    videoIdsEndAtEnd: [VIDEOS.greenhousePathEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.greenhousePathEb.id,
+      ROUTE_VIDEOS.greenhousePathWb.id,
+    ],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.greenhousePathWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.greenhousePathEb.id],
     positions: [
       NELSON_LOT_E,
       [49.27381, -122.91032],
@@ -489,7 +510,7 @@ export const SFU_PATHS = [
     routeNames: [ROUTES.sfuPaths.name],
     description: "interior: south campus",
     type: "mixed",
-    videoIds: [VIDEOS.sCampusPathNWb.id],
+    videoIds: [ROUTE_VIDEOS.sCampusPathNWb.id],
     positions: [
       GAGLARDI_S_CAMPUS_NE_N,
       [49.2779, -122.92058],
@@ -514,8 +535,8 @@ export const SFU_PATHS = [
     description: "south campus on road",
     type: "shared",
     undesignated: true,
-    videoIds: [VIDEOS.sCampusPathNWb.id],
-    videoIdsStartAtEnd: [VIDEOS.sCampusPathNWb.id],
+    videoIds: [ROUTE_VIDEOS.sCampusPathNWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.sCampusPathNWb.id],
     positions: [
       SCIENCE_S_CAMPUS_NW,
       [49.27595, -122.91464],

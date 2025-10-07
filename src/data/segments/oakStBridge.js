@@ -4,7 +4,7 @@ import {
   SEA_ISLAND_WAY_E,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const SB_START = [49.20613, -123.13036];
 const SOUTHBOUND_ELEVATION_START = [49.20542, -123.13025];
@@ -26,8 +26,8 @@ export const OAK_STREET_BRIDGE = [
     type: "shared",
     oneWay: "required",
     undesignated: true,
-    videoIds: [VIDEOS.oakSb.id],
-    videoIdsStartAtStart: [VIDEOS.oakSb.id],
+    videoIds: [ROUTE_VIDEOS.oakSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.oakSb.id],
     positions: [
       [49.20692, -123.131],
       [49.20691, -123.13042],
@@ -44,7 +44,7 @@ export const OAK_STREET_BRIDGE = [
     description: "sea island way",
     type: "mixed",
     oneWay: "recommended",
-    videoIds: [VIDEOS.oakSb.id],
+    videoIds: [ROUTE_VIDEOS.oakSb.id],
     positions: [
       SOUTHBOUND_SPLIT,
       [49.1914, -123.12015],
@@ -62,7 +62,7 @@ export const OAK_STREET_BRIDGE = [
     description: "sea island way missing end",
     type: "other",
     oneWay: "recommended",
-    videoIds: [VIDEOS.oakSb.id],
+    videoIds: [ROUTE_VIDEOS.oakSb.id],
     positions: [
       SEA_ISLAND_PATH_END,
       [49.19116, -123.12396],
@@ -106,7 +106,7 @@ export const OAK_STREET_BRIDGE = [
   },
   {
     description: "connection with patterson - N",
-    videoIds: [VIDEOS.oakNb.id],
+    videoIds: [ROUTE_VIDEOS.oakNb.id],
     positions: [
       PATH_PATTERSON,
       [49.19031, -123.11692],
@@ -120,8 +120,8 @@ export const OAK_STREET_BRIDGE = [
   },
   {
     description: "connection with patterson - S",
-    videoIds: [VIDEOS.oakNb.id, VIDEOS.seaIslandWayEb25.id],
-    videoIdsEndAtEnd: [VIDEOS.seaIslandWayEb25.id],
+    videoIds: [ROUTE_VIDEOS.oakNb.id, ROUTE_VIDEOS.seaIslandWayEb25.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.seaIslandWayEb25.id],
     positions: [
       SEA_ISLAND_WAY_E,
       [49.19146, -123.11898],
@@ -133,7 +133,7 @@ export const OAK_STREET_BRIDGE = [
   {
     description: "patterson from garden city",
     type: "quiet",
-    videoIds: [VIDEOS.oakNb.id],
+    videoIds: [ROUTE_VIDEOS.oakNb.id],
     positions: [GARDEN_CITY_PATTERSON_E, PATH_PATTERSON],
   },
 
@@ -144,7 +144,7 @@ export const OAK_STREET_BRIDGE = [
     type: "mixed",
     oneWay: "recommended",
     elevation: 0.5,
-    videoIds: [VIDEOS.oakSb.id],
+    videoIds: [ROUTE_VIDEOS.oakSb.id],
     positions: [
       SB_START,
       [49.20586, -123.13032],
@@ -158,7 +158,7 @@ export const OAK_STREET_BRIDGE = [
     type: "mixed",
     oneWay: "recommended",
     elevation: 1,
-    videoIds: [VIDEOS.oakSb.id],
+    videoIds: [ROUTE_VIDEOS.oakSb.id],
     positions: [
       SOUTHBOUND_ELEVATION_START,
       [49.20505, -123.13014],
@@ -199,7 +199,7 @@ export const OAK_STREET_BRIDGE = [
     oneWay: "recommended",
     hideArrows: true,
     elevation: 0.5,
-    videoIds: [VIDEOS.oakSb.id],
+    videoIds: [ROUTE_VIDEOS.oakSb.id],
     positions: [
       SOUTHBOUND_ELEVATION_END,
       [49.19149, -123.11997],
@@ -212,7 +212,7 @@ export const OAK_STREET_BRIDGE = [
     routeNames: [ROUTES.oakStreetBridge.name],
     description: "nb under bridge",
     oneWay: "recommended",
-    videoIds: [VIDEOS.oakNb.id],
+    videoIds: [ROUTE_VIDEOS.oakNb.id],
     positions: [
       SEA_ISLAND_SPLIT,
       [49.19159, -123.11875],
@@ -235,7 +235,7 @@ export const OAK_STREET_BRIDGE = [
     description: "nb pre-bridge",
     oneWay: "recommended",
     elevation: 0.5,
-    videoIds: [VIDEOS.oakNb.id],
+    videoIds: [ROUTE_VIDEOS.oakNb.id],
     positions: [
       NORTHBOUND_SIDEWALK_START,
       [49.1904, -123.11602],
@@ -249,7 +249,7 @@ export const OAK_STREET_BRIDGE = [
     type: "mixed",
     oneWay: "recommended",
     elevation: 1,
-    videoIds: [VIDEOS.oakNb.id],
+    videoIds: [ROUTE_VIDEOS.oakNb.id],
     positions: [
       NORTHBOUND_ELEVATION_START,
       [49.19137, -123.11761],
@@ -279,7 +279,7 @@ export const OAK_STREET_BRIDGE = [
     type: "mixed",
     oneWay: "recommended",
     elevation: 0.5,
-    videoIds: [VIDEOS.oakNb.id],
+    videoIds: [ROUTE_VIDEOS.oakNb.id],
     positions: [
       NORTHBOUND_ELEVATION_END,
       [49.20461, -123.12955],
@@ -307,8 +307,8 @@ export const OAK_STREET_BRIDGE = [
     description: "nb post-bridge west/under",
     type: "mixed",
     oneWay: "recommended",
-    videoIds: [VIDEOS.oakNb.id],
-    videoIdsEndAtEnd: [VIDEOS.oakNb.id],
+    videoIds: [ROUTE_VIDEOS.oakNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.oakNb.id],
     positions: [
       NB_POST_BRIDGE_SPLIT,
       [49.20464, -123.12947],

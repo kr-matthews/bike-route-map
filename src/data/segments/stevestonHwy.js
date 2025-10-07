@@ -4,7 +4,7 @@ import {
   SHELL_STEVESTON_SE,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const NO_4_STEVESTON_SE = [49.13334, -123.11417];
 
@@ -13,8 +13,8 @@ export const STEVESTON_HWY = [
     routeNames: [ROUTES.stevestonHwy.name],
     description: "railway to no. 4",
     type: "mixed",
-    videoIds: [VIDEOS.stevestonWb.id],
-    videoIdsEndAtStart: [VIDEOS.stevestonWb.id],
+    videoIds: [ROUTE_VIDEOS.stevestonWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.stevestonWb.id],
     positions: [
       RAILWAY_GREENWAY_STEVESTON_S,
       // missing on-street intersections
@@ -64,10 +64,10 @@ export const STEVESTON_HWY = [
     routeNames: [ROUTES.stevestonHwy.name],
     description: "no. 4 to shell",
     type: "mixed",
-    videoIds: [VIDEOS.stevestonWb.id, VIDEOS.stevestonEb.id],
-    videoIdsStartAtStart: [VIDEOS.stevestonEb.id],
-    videoIdsStartAtEnd: [VIDEOS.stevestonWb.id],
-    videoIdsEndAtEnd: [VIDEOS.stevestonEb.id],
+    videoIds: [ROUTE_VIDEOS.stevestonWb.id, ROUTE_VIDEOS.stevestonEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.stevestonEb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.stevestonWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.stevestonEb.id],
     positions: [
       NO_4_STEVESTON_SE,
       [49.13336, -123.11082],

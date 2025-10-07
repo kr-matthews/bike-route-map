@@ -18,7 +18,7 @@ import {
   GARDEN_CITY_WILLIAMS_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const GARDEN_CITY_COOK_W = [49.16645, -123.12483];
 const GARDEN_CITY_GRANVILLE_N = [49.16311, -123.12566];
@@ -37,7 +37,7 @@ export const GARDEN_CITY = [
     description: "sb: to cook",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.gardenCitySb.id],
+    videoIds: [ROUTE_VIDEOS.gardenCitySb.id],
     positions: [
       GARDEN_CITY_SB_START,
       GARDEN_CITY_SB_ROAD_START,
@@ -66,8 +66,8 @@ export const GARDEN_CITY = [
     description: "sb: cook to citation shortcut",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.gardenCitySb.id, VIDEOS.citation.id],
-    videoIdsStartAtStart: [VIDEOS.citation.id],
+    videoIds: [ROUTE_VIDEOS.gardenCitySb.id, ROUTE_VIDEOS.citation.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.citation.id],
     positions: [GARDEN_CITY_COOK_W, GARDEN_CITY_CITATION_W],
   },
   {
@@ -75,7 +75,7 @@ export const GARDEN_CITY = [
     description: "sb past citation",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.gardenCitySb.id],
+    videoIds: [ROUTE_VIDEOS.gardenCitySb.id],
     positions: [
       GARDEN_CITY_CITATION_W,
       [49.1643, -123.12488],
@@ -92,13 +92,13 @@ export const GARDEN_CITY = [
     routeNames: [ROUTES.gardenCity.name],
     description: "sb to granville split",
     type: "mixed",
-    videoIds: [VIDEOS.granvilleWb.id, VIDEOS.gardenCitySb.id],
+    videoIds: [ROUTE_VIDEOS.granvilleWb.id, ROUTE_VIDEOS.gardenCitySb.id],
     positions: [GARDEN_CITY_GRANVILLE_NW, GARDEN_CITY_GRANVILLE_N],
   },
   {
     description: "protected path through",
     type: "mixed",
-    videoIds: [VIDEOS.granvilleWb.id],
+    videoIds: [ROUTE_VIDEOS.granvilleWb.id],
     positions: [
       GARDEN_CITY_GRANVILLE_N,
       [49.1629, -123.1254],
@@ -120,7 +120,7 @@ export const GARDEN_CITY = [
     description: "sb through granville",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.gardenCitySb.id],
+    videoIds: [ROUTE_VIDEOS.gardenCitySb.id],
     positions: [
       GARDEN_CITY_GRANVILLE_N,
       [49.16302, -123.1257],
@@ -145,7 +145,7 @@ export const GARDEN_CITY = [
     description: "nb through granville",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.gardenCityNb.id],
+    videoIds: [ROUTE_VIDEOS.gardenCityNb.id],
     positions: [
       GARDEN_CITY_GRANVILLE_S,
       [49.16277, -123.12538],
@@ -158,7 +158,7 @@ export const GARDEN_CITY = [
     description: "nb from granville",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.gardenCityNb.id],
+    videoIds: [ROUTE_VIDEOS.gardenCityNb.id],
     positions: [
       GARDEN_CITY_GRANVILLE_E,
       GARDEN_CITY_GRANVILLE_NE,
@@ -192,14 +192,14 @@ export const GARDEN_CITY = [
     description: "patterson",
     type: "comfortable",
     oneWay: "recommended",
-    videoIds: [VIDEOS.gardenCityNb.id, VIDEOS.oakNb.id],
-    videoIdsStartAtStart: [VIDEOS.oakNb.id],
+    videoIds: [ROUTE_VIDEOS.gardenCityNb.id, ROUTE_VIDEOS.oakNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.oakNb.id],
     positions: [NB_LANE_END, [49.19017, -123.12442], GARDEN_CITY_PATTERSON_E],
   },
   {
     description: "patterson to sea island",
     type: "mixed",
-    videoIds: [VIDEOS.gardenCityNb.id],
+    videoIds: [ROUTE_VIDEOS.gardenCityNb.id],
     positions: [
       GARDEN_CITY_PATTERSON_E,
       [49.19076, -123.12388],
@@ -209,7 +209,7 @@ export const GARDEN_CITY = [
   {
     description: "nb: sea island sidewalk",
     type: "other",
-    videoIds: [VIDEOS.gardenCityNb.id],
+    videoIds: [ROUTE_VIDEOS.gardenCityNb.id],
     positions: [AFTER_SEA_ISLAND_RAMP, GARDEN_CITY_SEA_ISLAND_SE],
   },
 
@@ -219,8 +219,8 @@ export const GARDEN_CITY = [
     description: "nb: around williams",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.gardenCityNb.id],
-    videoIdsStartAtStart: [VIDEOS.gardenCityNb.id],
+    videoIds: [ROUTE_VIDEOS.gardenCityNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.gardenCityNb.id],
     positions: [
       GARDEN_CITY_WILLIAMS_S,
       GARDEN_CITY_WILLIAMS_NE,
@@ -232,7 +232,7 @@ export const GARDEN_CITY = [
     description: "nb: williams to francis",
     type: "painted",
     oneWay: "required",
-    videoIds: [VIDEOS.gardenCityNb.id],
+    videoIds: [ROUTE_VIDEOS.gardenCityNb.id],
     positions: [
       NB_AFTER_WILLIAMS,
       [49.14358, -123.12513],
@@ -245,7 +245,7 @@ export const GARDEN_CITY = [
     description: "sb: francis to williams",
     type: "combined",
     oneWay: "required",
-    videoIds: [VIDEOS.gardenCitySb.id],
+    videoIds: [ROUTE_VIDEOS.gardenCitySb.id],
     positions: [
       GARDEN_CITY_FRANCIS_SS,
       [49.14776, -123.12522],
@@ -259,8 +259,8 @@ export const GARDEN_CITY = [
     description: "sb: around williams",
     type: "shared",
     oneWay: "required",
-    videoIds: [VIDEOS.gardenCitySb.id],
-    videoIdsEndAtEnd: [VIDEOS.gardenCitySb.id],
+    videoIds: [ROUTE_VIDEOS.gardenCitySb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.gardenCitySb.id],
     positions: [SB_BEFORE_WILLIAMS, GARDEN_CITY_WILLIAMS_NW],
   },
   {
@@ -274,7 +274,7 @@ export const GARDEN_CITY = [
     routeNames: [ROUTES.gardenCity.name],
     description: "francis to granville",
     type: "shared",
-    videoIds: [VIDEOS.gardenCityNb.id, VIDEOS.gardenCitySb.id],
+    videoIds: [ROUTE_VIDEOS.gardenCityNb.id, ROUTE_VIDEOS.gardenCitySb.id],
     positions: [
       GARDEN_CITY_FRANCIS_SS,
       [49.14821, -123.12517],

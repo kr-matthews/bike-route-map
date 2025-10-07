@@ -9,7 +9,7 @@ import {
   INVERNESS_MARINE_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const INVERNESS_63RD = [49.21286, -123.07987];
 const CROMPTON_MARINE_S = [49.211, -123.08071];
@@ -20,7 +20,7 @@ export const INVERNESS = [
     routeNames: [ROUTES.inverness.name],
     description: "crompton",
     type: "quiet",
-    videoIds: [VIDEOS.invernessSb.id],
+    videoIds: [ROUTE_VIDEOS.invernessSb.id],
     positions: [CROMPTON_KENT_N_N, CROMPTON_MARINE_S],
   },
   {
@@ -35,15 +35,15 @@ export const INVERNESS = [
     description: "marine wb",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [VIDEOS.invernessSb.id],
+    videoIds: [ROUTE_VIDEOS.invernessSb.id],
     positions: [INVERNESS_MARINE_S, INVERNESS_MARINE_SS, CROMPTON_MARINE_S],
   },
   {
     routeNames: [ROUTES.inverness.name],
     description: "marine to 63rd",
     type: "quiet",
-    videoIds: [VIDEOS.invernessSb.id, VIDEOS.knightStBridgeSb.id],
-    videoIdsStartAtEnd: [VIDEOS.knightStBridgeSb.id],
+    videoIds: [ROUTE_VIDEOS.invernessSb.id, ROUTE_VIDEOS.knightStBridgeSb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.knightStBridgeSb.id],
     positions: [
       INVERNESS_MARINE_S,
       INVERNESS_64TH_ALLEY,
@@ -55,7 +55,7 @@ export const INVERNESS = [
     routeNames: [ROUTES.inverness.name],
     description: "63rd to 45th",
     type: "quiet",
-    videoIds: [VIDEOS.invernessSb.id],
+    videoIds: [ROUTE_VIDEOS.invernessSb.id],
     positions: [
       INVERNESS_63RD,
       [49.21328, -123.07988],
@@ -79,15 +79,15 @@ export const INVERNESS = [
     description: "45th",
     type: "quiet",
     videoIds: [
-      VIDEOS.invernessSb.id,
-      VIDEOS.fortyFifthWb.id,
-      VIDEOS.fortyFifthEb.id,
+      ROUTE_VIDEOS.invernessSb.id,
+      ROUTE_VIDEOS.fortyFifthWb.id,
+      ROUTE_VIDEOS.fortyFifthEb.id,
     ],
     positions: [INVERNESS_45TH, INVERNESS_47TH],
   },
   {
     routeNames: [ROUTES.inverness.name],
-    videoIds: [VIDEOS.invernessSb.id],
+    videoIds: [ROUTE_VIDEOS.invernessSb.id],
     type: "quiet",
     description: "45th to midtown",
     positions: [
