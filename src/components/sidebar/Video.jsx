@@ -2,7 +2,9 @@ import { useContext, useEffect, useRef, useState } from "react";
 import { FilterContext, SettingContext } from "../../App";
 import {
   COLOUR_VIDEO_NOT_SELECTED,
+  COLOUR_VIDEO_NOT_SELECTED_BORDER,
   COLOUR_VIDEO_SELECTED,
+  COLOUR_VIDEO_SELECTED_BORDER,
 } from "../../utils/constants";
 import { displayDistance } from "../../utils/strings";
 import { displayDirection } from "../../utils/videos";
@@ -19,6 +21,9 @@ export default function Video({ video, direction }) {
   const backgroundColor = isSelected
     ? COLOUR_VIDEO_SELECTED
     : COLOUR_VIDEO_NOT_SELECTED;
+  const borderColor = isSelected
+    ? COLOUR_VIDEO_SELECTED_BORDER
+    : COLOUR_VIDEO_NOT_SELECTED_BORDER;
 
   const hasTimeLapse = Boolean(video.tlId);
   const speedOptions = hasTimeLapse ? bothOptions : trivialOptions;
@@ -63,7 +68,8 @@ export default function Video({ video, direction }) {
       style={{
         backgroundColor,
         borderRadius: "1em",
-        padding: "0.5em",
+        border: `2px solid ${borderColor}`,
+        padding: "0.35em",
         margin: "0.25em",
       }}
       ref={ref}
