@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { FilterContext, SettingContext } from "../../App";
 import { COLOUR_NO_VIDEO, COLOUR_VIDEO } from "../../utils/constants";
 import { displayDistance } from "../../utils/strings";
@@ -39,6 +39,20 @@ export default function Video({ video, direction }) {
 
   const url = createUrl(video, showingTimeLapse);
 
+  const ref = useRef();
+
+  useEffect(
+    function scrollToVideoWhenSelected() {
+      if (isSelected) {
+        ref.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+      }
+    },
+    [isSelected]
+  );
+
   return (
     <span
       style={{
@@ -47,6 +61,7 @@ export default function Video({ video, direction }) {
         padding: "0.5em",
         margin: "0.25em",
       }}
+      ref={ref}
     >
       <div style={{ margin: "0px 0px 5px 5px", position: "relative" }}>
         <span>
