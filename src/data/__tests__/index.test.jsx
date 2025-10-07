@@ -1,7 +1,7 @@
 import "@testing-library/jest-dom";
 import { ROUTES } from "../routes";
 import { SEGMENTS } from "../segments";
-import { VIDEOS } from "../videos";
+import { ROUTE_VIDEOS } from "../videos/routes";
 import { getRoutesWithVideo } from "../../utils/videos";
 import {
   MCKAY_BC_PARKWAY,
@@ -121,27 +121,27 @@ describe("data", () => {
     });
   });
 
-  test("no unused videos", () => {
-    const unusedVideos = Object.values(VIDEOS).filter(
+  test("no unused route videos", () => {
+    const unusedRouteVideos = Object.values(ROUTE_VIDEOS).filter(
       (video) => !routeVideoIds.includes(video.id)
     );
-    expect(unusedVideos).toHaveLength(0);
+    expect(unusedRouteVideos).toHaveLength(0);
   });
 
-  test("no empty video ids", () => {
-    const noIdVideos = Object.values(VIDEOS).filter((video) => !video.id);
+  test("no empty route video ids", () => {
+    const noIdVideos = Object.values(ROUTE_VIDEOS).filter((video) => !video.id);
     expect(noIdVideos).toHaveLength(0);
   });
 
-  test("no duplicate video ids", () => {
+  test("no duplicate route video ids", () => {
     const uniqueVideoIds = [
-      ...new Set(Object.values(VIDEOS).map(({ id }) => id)),
+      ...new Set(Object.values(ROUTE_VIDEOS).map(({ id }) => id)),
     ];
-    expect(uniqueVideoIds).toHaveLength(Object.values(VIDEOS).length);
+    expect(uniqueVideoIds).toHaveLength(Object.values(ROUTE_VIDEOS).length);
   });
 
-  test("no duplicate time-lapse video ids", () => {
-    const tlVideoIds = Object.values(VIDEOS)
+  test("no duplicate time-lapse route video ids", () => {
+    const tlVideoIds = Object.values(ROUTE_VIDEOS)
       .map(({ tlId }) => tlId)
       .filter(Boolean);
     const uniqueTlVideoIds = [...new Set(tlVideoIds)];
@@ -149,7 +149,7 @@ describe("data", () => {
   });
 
   test("time-lapse ids are distinct from corresponding id", () => {
-    Object.values(VIDEOS).forEach(({ id, tlId }) =>
+    Object.values(ROUTE_VIDEOS).forEach(({ id, tlId }) =>
       expect(id).not.toEqual(tlId)
     );
   });
