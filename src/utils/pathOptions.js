@@ -2,7 +2,7 @@ import { BLACK, CYAN } from "./colours";
 import {
   COLOUR_CLOSED,
   COLOUR_HIGHLIGHTED,
-  COLOUR_VIDEO,
+  COLOUR_VIDEO_SELECTED,
   DASH_PATTERN,
   WEIGHT_BORDER_ADD_ON,
   WEIGHT_NARROW,
@@ -32,7 +32,7 @@ export function createPathOptions(
     colour = COLOUR_CLOSED;
   }
   if (hasActiveVideo) {
-    colour = COLOUR_VIDEO;
+    colour = COLOUR_VIDEO_SELECTED;
   }
   if (isHighlighted) {
     colour = COLOUR_HIGHLIGHTED;

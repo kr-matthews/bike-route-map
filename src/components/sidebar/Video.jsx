@@ -1,6 +1,9 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import { FilterContext, SettingContext } from "../../App";
-import { COLOUR_NO_VIDEO, COLOUR_VIDEO } from "../../utils/constants";
+import {
+  COLOUR_VIDEO_NOT_SELECTED,
+  COLOUR_VIDEO_SELECTED,
+} from "../../utils/constants";
 import { displayDistance } from "../../utils/strings";
 import { displayDirection } from "../../utils/videos";
 import startIcon from "../../images/marker-green.svg";
@@ -13,7 +16,9 @@ export default function Video({ video, direction }) {
   const { selectedVideo, selectVideo } = useContext(FilterContext);
   const { defaultSpeed } = useContext(SettingContext);
   const isSelected = video.id === selectedVideo?.id;
-  const backgroundColor = isSelected ? COLOUR_VIDEO : COLOUR_NO_VIDEO;
+  const backgroundColor = isSelected
+    ? COLOUR_VIDEO_SELECTED
+    : COLOUR_VIDEO_NOT_SELECTED;
 
   const hasTimeLapse = Boolean(video.tlId);
   const speedOptions = hasTimeLapse ? bothOptions : trivialOptions;
