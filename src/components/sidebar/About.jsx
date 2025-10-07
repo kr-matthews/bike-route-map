@@ -12,10 +12,10 @@ import Panel from "./Panel";
 import { VIEWS } from "./Sidebar";
 import { BLACK, RED } from "../../utils/colours";
 import {
-  videoCount,
-  videoCumulativeDistance,
-  videoCumulativeMinutes,
-  videoUniqueDistanceCovered,
+  routeVideoCount,
+  routeVideoCumulativeDistance,
+  routeVideoCumulativeMinutes,
+  routeVideoUniqueDistanceCovered,
 } from "../../utils/videos";
 
 export default function About({ navigateTo }) {
@@ -25,10 +25,10 @@ export default function About({ navigateTo }) {
         style={{ overflowY: "scroll", overflow: "auto", paddingRight: "1em" }}
       >
         <p>
-          This map features {videoCount} videos with a cumulative length of over{" "}
-          {Math.floor(videoCumulativeMinutes / 60)} hours, covering a unique{" "}
-          {displayDistance(videoUniqueDistanceCovered)} (
-          {displayDistance(videoCumulativeDistance)} in total).
+          This map features {routeVideoCount} videos with a cumulative length of
+          over {Math.floor(routeVideoCumulativeMinutes / 60)} hours, covering a
+          unique {displayDistance(routeVideoUniqueDistanceCovered)} (
+          {displayDistance(routeVideoCumulativeDistance)} in total).
         </p>
         <ul>
           <li>

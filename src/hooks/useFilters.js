@@ -6,7 +6,7 @@ import {
   normalizeElevation,
   normalizeType,
 } from "../utils/segmentTypes";
-import { getAugmentedVideo, getVideo } from "../utils/videos";
+import { getAugmentedRouteVideo, getRouteVideo } from "../utils/videos";
 import { getAugmentedRoute, getRoute } from "../utils/routes";
 import { useIncompleteVideoView } from "./useIncompleteVideoView";
 
@@ -60,7 +60,8 @@ const filterReducer = (state, action) => {
 const initialFilters = (searchParams) => ({
   selectedRouteName: getRoute(decodeURIComponent(searchParams.get("route")))
     ?.name,
-  selectedVideoId: getVideo(decodeURIComponent(searchParams.get("video")))?.id,
+  selectedVideoId: getRouteVideo(decodeURIComponent(searchParams.get("video")))
+    ?.id,
 });
 
 const filtersReducer = (state, action) => {
@@ -140,7 +141,7 @@ export default function useFilters() {
 
   const highlightedRoute = getAugmentedRoute(highlightedRouteName);
   const selectedRoute = getAugmentedRoute(selectedRouteName);
-  const selectedVideo = getAugmentedVideo(selectedVideoId);
+  const selectedVideo = getAugmentedRouteVideo(selectedVideoId);
 
   const selectRouteName = useCallback(
     (routeName) => dispatchSelected({ type: "select-route", routeName }),

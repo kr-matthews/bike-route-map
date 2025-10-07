@@ -3,9 +3,9 @@ import { SEGMENTS } from "../data/segments";
 import { ROUTE_VIDEOS } from "../data/videos/routes";
 import { sumSegmentsLengths } from "./segments";
 
-export function getVideo(id) {
+export function getRouteVideo(videoId) {
   return Object.values(ROUTE_VIDEOS).find(
-    (video) => video.id.toLowerCase() === id?.toLowerCase()
+    (video) => video.id.toLowerCase() === videoId?.toLowerCase()
   );
 }
 
@@ -22,10 +22,10 @@ const getVideoSegments = (videoId) =>
 
 const segmentsWithAnyVideo = SEGMENTS.filter((segment) => segment.videoIds);
 
-export const getVideoDistance = (videoId) =>
+export const getRouteVideoDistance = (videoId) =>
   sumSegmentsLengths(getVideoSegments(videoId));
 
-export const videoUniqueDistanceCovered =
+export const routeVideoUniqueDistanceCovered =
   sumSegmentsLengths(segmentsWithAnyVideo);
 
 export const displayDirection = (direction) => {
@@ -38,28 +38,28 @@ export const displayDirection = (direction) => {
   }
 };
 
-export const AUGMENTED_VIDEOS = Object.entries(ROUTE_VIDEOS).reduce(
+const AUGMENTED_ROUTE_VIDEOS = Object.entries(ROUTE_VIDEOS).reduce(
   (acc, [key, video]) => {
     acc[key] = {
       ...video,
-      distance: getVideoDistance(video.id),
+      distance: getRouteVideoDistance(video.id),
     };
     return acc;
   },
   {}
 );
 
-export const getAugmentedVideo = (videoId) =>
-  Object.values(AUGMENTED_VIDEOS).find((video) => video.id === videoId);
+export const getAugmentedRouteVideo = (videoId) =>
+  Object.values(AUGMENTED_ROUTE_VIDEOS).find((video) => video.id === videoId);
 
-export const videoCount = Object.keys(ROUTE_VIDEOS).length;
+export const routeVideoCount = Object.keys(ROUTE_VIDEOS).length;
 
-export const videoCumulativeMinutes = Object.values(ROUTE_VIDEOS).reduce(
+export const routeVideoCumulativeMinutes = Object.values(ROUTE_VIDEOS).reduce(
   (s, v) => s + v.minutes,
   0
 );
 
-export const videoCumulativeDistance = Object.values(ROUTE_VIDEOS).reduce(
-  (s, v) => s + getVideoDistance(v.id),
+export const routeVideoCumulativeDistance = Object.values(ROUTE_VIDEOS).reduce(
+  (s, v) => s + getRouteVideoDistance(v.id),
   0
 );
