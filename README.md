@@ -29,6 +29,7 @@ On GitHub Pages at [https://kr-matthews.github.io/bike-route-map](https://kr-mat
 See [enhancements](https://github.com/kr-matthews/bike-route-map/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement) on GitHub.
 
 - More routes in surrounding cities/areas.
+- Map view with pins/videos of specific infrastructure improvements, without having to refilm a whole route.
 
 ## Original Intentions
 
@@ -49,4 +50,4 @@ See the [issues](https://github.com/kr-matthews/bike-route-map/issues) on GitHub
 - Data is (more-or-less) duplicating other existing sources (OSM, official city maps, etc.).
 - Data can easily get out-of-date.
 - There are not enough tests.
-- Unclear when an area has additional bike routes but they just haven't (yet) been added to this map.
+- Potentially unclear when an area has additional bike routes but they just haven't (yet) been added to this map.
