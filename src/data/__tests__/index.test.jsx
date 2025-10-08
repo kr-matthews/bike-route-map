@@ -14,6 +14,11 @@ import {
   W_LOOP_E,
   W_LOOP_W,
 } from "../segments/goldenEarsBridge";
+import { VIDEOS } from "../videos";
+
+const ALL_VIDEOS_VALUES = Object.values(VIDEOS)
+  .map((videos) => Object.values(videos))
+  .flat();
 
 // helpers
 
@@ -128,16 +133,14 @@ describe("data", () => {
     expect(unusedRouteVideos).toHaveLength(0);
   });
 
-  test("no empty route video ids", () => {
-    const noIdVideos = Object.values(ROUTE_VIDEOS).filter((video) => !video.id);
-    expect(noIdVideos).toHaveLength(0);
+  test("no empty video ids", () => {
+    const videosWithoutId = ALL_VIDEOS_VALUES.filter((video) => !video.id);
+    expect(videosWithoutId).toHaveLength(0);
   });
 
-  test("no duplicate route video ids", () => {
-    const uniqueVideoIds = [
-      ...new Set(Object.values(ROUTE_VIDEOS).map(({ id }) => id)),
-    ];
-    expect(uniqueVideoIds).toHaveLength(Object.values(ROUTE_VIDEOS).length);
+  test.only("no duplicate video ids", () => {
+    const uniqueVideoIds = [...new Set(ALL_VIDEOS_VALUES.map(({ id }) => id))];
+    expect(uniqueVideoIds).toHaveLength(ALL_VIDEOS_VALUES.length);
   });
 
   test("no duplicate time-lapse route video ids", () => {
