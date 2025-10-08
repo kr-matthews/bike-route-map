@@ -9,7 +9,7 @@ const startText = "Video Starts Here";
 const endText = "Video Ends Here";
 const combinedText = "Video Starts/Ends Here";
 
-export default function VideoMarkers({ segment, videoId }) {
+export default function EndpointMarkers({ segment, videoId }) {
   const firstPosition = segment.positions[0];
   const lastPosition = segment.positions[segment.positions.length - 1];
 
@@ -22,17 +22,19 @@ export default function VideoMarkers({ segment, videoId }) {
 
   return (
     <Fragment>
-      {startsAtStart && <VideoMarker type="start" position={firstPosition} />}
-      {startsAtEnd && <VideoMarker type="start" position={lastPosition} />}
-      {endsAtStart && <VideoMarker type="end" position={firstPosition} />}
-      {endsAtEnd && <VideoMarker type="end" position={lastPosition} />}
-      {loopsAtStart && <VideoMarker type="loop" position={firstPosition} />}
-      {loopsAtEnd && <VideoMarker type="loop" position={lastPosition} />}
+      {startsAtStart && (
+        <EndpointMarker type="start" position={firstPosition} />
+      )}
+      {startsAtEnd && <EndpointMarker type="start" position={lastPosition} />}
+      {endsAtStart && <EndpointMarker type="end" position={firstPosition} />}
+      {endsAtEnd && <EndpointMarker type="end" position={lastPosition} />}
+      {loopsAtStart && <EndpointMarker type="loop" position={firstPosition} />}
+      {loopsAtEnd && <EndpointMarker type="loop" position={lastPosition} />}
     </Fragment>
   );
 }
 
-function VideoMarker({ position, type }) {
+function EndpointMarker({ position, type }) {
   const text =
     type === "start" ? startText : type === "end" ? endText : combinedText;
   const iconUrl =

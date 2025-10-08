@@ -1,6 +1,6 @@
 import { Fragment, useContext, useMemo } from "react";
 import Polyline from "./Polyline";
-import VideoMarkers from "./VideoMarkers";
+import EndpointMarkers from "./EndpointMarkers";
 import { FilterContext } from "../../App";
 import {
   createBorderPathOptions as defaultCreateBorderPathOptions,
@@ -152,7 +152,7 @@ export default function Segment({
         {tooltipComponent}
       </Polyline>
       {selectedVideo && (
-        <VideoMarkers segment={segment} videoId={selectedVideo.id} />
+        <EndpointMarkers segment={segment} videoId={selectedVideo.id} />
       )}
     </Fragment>
   );
