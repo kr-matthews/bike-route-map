@@ -138,7 +138,7 @@ describe("data", () => {
     expect(videosWithoutId).toHaveLength(0);
   });
 
-  test.only("no duplicate video ids", () => {
+  test("no duplicate video ids", () => {
     const uniqueVideoIds = [...new Set(ALL_VIDEOS_VALUES.map(({ id }) => id))];
     expect(uniqueVideoIds).toHaveLength(ALL_VIDEOS_VALUES.length);
   });
