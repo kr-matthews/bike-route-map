@@ -4,8 +4,6 @@ import Panel from "./Panel";
 import { VIEWS } from "./Sidebar";
 import { TILE_LAYERS } from "../../utils/map";
 
-const booleanOptions = ["Show", "Hide"];
-
 const videoSpeeds = [1, 4];
 
 const getVideoSpeedName = (option) =>
@@ -15,43 +13,10 @@ export default function Settings({ navigateTo }) {
   return (
     <Panel name={VIEWS.settings.name} navigateTo={navigateTo}>
       <div style={{ overflowY: "scroll", overflow: "auto" }}>
-        <UpgradeMarkerSetting />
         <BackgroundMapSetting />
         <DefaultSpeedSetting />
       </div>
     </Panel>
-  );
-}
-
-function UpgradeMarkerSetting() {
-  const { upgradesShown, setUpgradesShown } = useContext(SettingContext);
-
-  return (
-    // padding to match inherent padding on inputs, prevent scroll bar
-    <div style={{ padding: "4px", margin: "0.5em 0 1em 0" }}>
-      <b>Upgrade markers: </b>
-      {booleanOptions.map((option) => (
-        <label
-          key={option}
-          htmlFor="upgrades"
-          style={{
-            cursor: "pointer",
-            padding: "4px",
-          }}
-          onClick={() => setUpgradesShown(option === booleanOptions[0])}
-        >
-          <input
-            type="radio"
-            id={option}
-            name="upgrades"
-            style={{ cursor: "pointer" }}
-            checked={option === booleanOptions[upgradesShown ? 0 : 1]}
-            onChange={() => {}}
-          />
-          {option}
-        </label>
-      ))}
-    </div>
   );
 }
 
