@@ -3,7 +3,7 @@ export const UPGRADE_VIDEOS = {
     id: "SWcFWfouExA",
     date: new Date("Sep 18 2024"),
     minutes: 1,
-    location: [49.21608, -122.97467],
+    position: [49.21608, -122.97467],
   },
   southeastSouthpointWb24: {
     id: "QuVAafRIAbQ",
