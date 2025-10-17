@@ -52,10 +52,12 @@ export default function Upgrades({ navigateTo, mapRef }) {
     [searchText, regionNameToShow, mapRef, mapChangedIndicator]
   );
 
+  const s = upgradesToShow.length === 1 ? "" : "s";
+
   return (
     <Panel
       name={VIEWS.upgrades.name}
-      title={`${VIEWS.upgrades.name} (${upgradesToShow.length})`}
+      title={VIEWS.upgrades.name}
       navigateTo={navigateTo}
     >
       <ListTypeDropdown
@@ -66,7 +68,11 @@ export default function Upgrades({ navigateTo, mapRef }) {
 
       <UpgradeMarkerSetting />
 
-      {upgradesToShow.length ? (
+      <p style={{ marginTop: 0, marginRight: "12px" }}>
+        Showing {upgradesToShow.length} upgrade{s}.
+      </p>
+
+      {upgradesToShow.length > 0 && (
         <div
           style={{
             flex: 2,
@@ -81,8 +87,6 @@ export default function Upgrades({ navigateTo, mapRef }) {
             <Upgrade key={upgrade.title} upgrade={upgrade} />
           ))}
         </div>
-      ) : (
-        "No upgrades match the search/region"
       )}
     </Panel>
   );

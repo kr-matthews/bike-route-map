@@ -60,10 +60,12 @@ export default function Routes({ navigateTo, mapRef }) {
     [searchText, regionNameToShow, mapRef, mapChangedIndicator]
   );
 
+  const s = routesToShow.length === 1 ? "" : "s";
+
   return (
     <Panel
       name={VIEWS.routes.name}
-      title={`${VIEWS.routes.name} (${routesToShow.length})`}
+      title={VIEWS.routes.name}
       navigateTo={navigateTo}
     >
       <ListTypeDropdown
@@ -72,9 +74,11 @@ export default function Routes({ navigateTo, mapRef }) {
       />
       <Search text={searchText} setText={setSearchText} />
 
-      {region.notes && <p style={{ marginTop: 0 }}>{region.notes}</p>}
+      <p style={{ marginTop: 0, marginRight: "12px" }}>
+        Showing {routesToShow.length} route{s}. {region.notes}
+      </p>
 
-      {routesToShow.length ? (
+      {routesToShow.length > 0 && (
         <div
           style={{
             flex: 2,
@@ -89,8 +93,6 @@ export default function Routes({ navigateTo, mapRef }) {
             <Route key={route.name} route={route} mapRef={mapRef} />
           ))}
         </div>
-      ) : (
-        "No routes match the search/region"
       )}
     </Panel>
   );
