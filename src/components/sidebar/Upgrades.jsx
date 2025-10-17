@@ -69,7 +69,7 @@ export default function Upgrades({ navigateTo, mapRef }) {
       <UpgradeMarkerSetting />
 
       <p style={{ marginTop: 0, marginRight: "12px" }}>
-        Showing {upgradesToShow.length} upgrade{s}.
+        Listing {upgradesToShow.length} upgrade{s}.
       </p>
 
       {upgradesToShow.length > 0 && (

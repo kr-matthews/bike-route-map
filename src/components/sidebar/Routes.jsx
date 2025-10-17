@@ -75,7 +75,7 @@ export default function Routes({ navigateTo, mapRef }) {
       <Search text={searchText} setText={setSearchText} />
 
       <p style={{ marginTop: 0, marginRight: "12px" }}>
-        Showing {routesToShow.length} route{s}. {region.notes}
+        Listing {routesToShow.length} route{s}. {region.notes}
       </p>
 
       {routesToShow.length > 0 && (
