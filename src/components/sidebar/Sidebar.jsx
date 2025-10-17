@@ -3,6 +3,7 @@ import Filters from "./Filters";
 import Legend from "./Legend";
 import Routes from "./Routes";
 import Settings from "./Settings";
+import Upgrades from "./Upgrades";
 import DetailBottomSheet from "./DetailBottomSheet";
 import useSavedState from "../../hooks/useSavedState";
 import DemoConfig from "./DemoConfig";
@@ -14,6 +15,7 @@ import { DemoContext } from "../../App";
 export const VIEWS = {
   about: { key: "about", name: "About", Component: About },
   routes: { key: "routes", name: "Routes", Component: Routes },
+  upgrades: { key: "upgrades", name: "Upgrades", Component: Upgrades },
   legend: { key: "legend", name: "Legend", Component: Legend },
   filters: { key: "filters", name: "Filters", Component: Filters },
   settings: { key: "settings", name: "Settings", Component: Settings },

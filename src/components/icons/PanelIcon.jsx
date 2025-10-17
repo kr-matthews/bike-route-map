@@ -1,6 +1,8 @@
 import { VIEWS } from "../sidebar/Sidebar";
 import routesIcon from "../../images/routes.svg";
 import routesSelectedIcon from "../../images/routesDark.svg";
+import upgradesIcon from "../../images/upgrade.svg";
+import upgradesSelectedIcon from "../../images/upgradeDark.svg";
 import aboutIcon from "../../images/info.svg";
 import aboutSelectedIcon from "../../images/infoDark.svg";
 import legendIcon from "../../images/question.svg";
@@ -32,6 +34,9 @@ const getSrc = (view, isSelected) => {
   switch (view.key) {
     case VIEWS.routes.key:
       return isSelected ? routesSelectedIcon : routesIcon;
+
+    case VIEWS.upgrades.key:
+      return isSelected ? upgradesSelectedIcon : upgradesIcon;
 
     case VIEWS.about.key:
       return isSelected ? aboutSelectedIcon : aboutIcon;
