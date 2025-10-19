@@ -1,5 +1,6 @@
 import {
   ALPHA_FRANCES_E,
+  BARNET_FRANCES_WB_TRANSITION,
   BARNET_INLET_N,
   BAYVIEW_DRUMMOND,
   BOUNDARY_ADANAC,
@@ -277,6 +278,7 @@ export const FRANCES_UNION = [
     videoIds: [VIDEOS.francesUnionWb.id],
     positions: [
       INLET_BAYVIEW_W,
+      BARNET_FRANCES_WB_TRANSITION,
       [49.28671, -122.95361],
       [49.28676, -122.95389],
       BAYVIEW_DRUMMOND,
