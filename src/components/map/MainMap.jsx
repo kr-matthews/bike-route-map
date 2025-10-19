@@ -7,6 +7,7 @@ import { FilterContext } from "../../App";
 import CurrentLocation from "./CurrentLocation";
 import PanesAndTiles from "./PanesAndTiles";
 import PolylineCreator from "./PolylineCreator";
+import UpgradeMarkers from "./UpgradeMarkers";
 import Segment from "./Segment";
 import "./map.css";
 
@@ -57,6 +58,8 @@ export default function MainMap({ mapRef, setMapRef, fullWidth = false }) {
             segment={segment}
           />
         ))}
+
+        <UpgradeMarkers />
 
         <CurrentLocation mapRef={mapRef} />
       </MapContainer>
