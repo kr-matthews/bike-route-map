@@ -131,6 +131,7 @@ export default function useFilters() {
   // interactions
 
   const [highlightedRouteName, setHighlightedRouteName] = useState(null);
+  const [highlightedUpgradeId, setHighlightedUpgradeId] = useState(null);
   const [{ selectedRouteName, selectedVideoId }, dispatchSelected] = useReducer(
     filterReducer,
     searchParams,
@@ -147,6 +148,7 @@ export default function useFilters() {
   }, [searchParams, selectedRouteName, selectedVideoId]);
 
   const highlightedRoute = getAugmentedRoute(highlightedRouteName);
+  const highlightedUpgrade = getUpgradeVideo(highlightedUpgradeId);
   const selectedRoute = getAugmentedRoute(selectedRouteName);
   const selectedVideo = getAugmentedRouteVideo(selectedVideoId);
   const selectedUpgrade = getUpgradeVideo(selectedUpgradeId);
@@ -224,6 +226,8 @@ export default function useFilters() {
   return {
     highlightedRoute,
     highlightRoute: setHighlightedRouteName,
+    highlightedUpgrade,
+    highlightUpgrade: setHighlightedUpgradeId,
     selectedRoute,
     selectRoute: selectRouteName,
     selectedVideo,
