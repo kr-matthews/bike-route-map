@@ -14,6 +14,8 @@ import { VIDEOS } from "../videos";
 const PRE_NO_3_COOK = [49.16655, -123.1349];
 const NO_3_COOK_NE = [49.16656, -123.13644];
 const NO_3_BUS_MALL_SE = [49.16743, -123.13643];
+const NO_3_CAPSTAN_NE = [49.18888, -123.1323];
+const CAPSTAN_STATION_N = [49.19028, -123.13097];
 const NO_3_SEA_ISLAND_SW_S = [49.19069, -123.13087];
 const NO_3_CAPSTAN_NW = [49.189, -123.13254];
 const NO_3_ALDERBRIDGE_SW = [49.17722, -123.13679];
@@ -148,18 +150,43 @@ export const NO_3 = [
   },
   {
     routeNames: [ROUTES.no3.name],
-    description: "nb: cambie to bridgeport",
+    description: "nb: cambie to capstan",
     type: "painted",
     oneWay: "required",
     videoIds: [VIDEOS.no3Nb.id],
-    videoIdsEndAtEnd: [VIDEOS.no3Nb.id],
     positions: [
       NO_3_CAMBIE_SE,
       [49.18466, -123.13634],
       [49.18496, -123.13616],
       [49.18736, -123.1338],
-      [49.18881, -123.13236],
-      [49.19064, -123.13057],
+      NO_3_CAPSTAN_NE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.no3.name],
+    description: "nb: capstan station",
+    type: "dedicated",
+    oneWay: "required",
+    videoIds: [VIDEOS.no3Nb.id],
+    positions: [
+      NO_3_CAPSTAN_NE,
+      [49.18895, -123.13221],
+      [49.18932, -123.13185],
+      [49.18939, -123.13183],
+      [49.1898, -123.13141],
+      [49.19019, -123.131],
+      CAPSTAN_STATION_N,
+    ],
+  },
+  {
+    routeNames: [ROUTES.no3.name],
+    description: "nb: capstan station to bridgeport",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [VIDEOS.no3Nb.id],
+    videoIdsEndAtEnd: [VIDEOS.no3Nb.id],
+    positions: [
+      CAPSTAN_STATION_N,
       [49.1909, -123.13031],
       [49.19119, -123.12996],
       [49.19129, -123.1298],
