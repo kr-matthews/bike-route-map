@@ -1,5 +1,5 @@
 import { useContext, useEffect, useMemo, useState } from "react";
-import { SettingContext } from "../../App";
+import { FilterContext, SettingContext } from "../../App";
 import { Search } from "./Search";
 import { isSubsequence, removeWhiteSpaces } from "../../utils/strings";
 import { VIEWS } from "./Sidebar";
@@ -7,6 +7,8 @@ import Panel from "./Panel";
 import { ListTypeDropdown } from "./ListTypeDropdown";
 import useSavedState from "../../hooks/useSavedState";
 import { REGIONS } from "../../data/regions";
+import { BLACK, DARK_BLUE, LIGHT_BLUE, WHITE } from "../../utils/colours";
+import { COLOUR_HIGHLIGHTED } from "../../utils/constants";
 import { UPGRADE_VIDEOS } from "../../data/videos/upgrades";
 
 const booleanOptions = ["Show", "Hide"];
@@ -84,7 +86,7 @@ export default function Upgrades({ navigateTo, mapRef }) {
           }}
         >
           {upgradesToShow.map((upgrade) => (
-            <Upgrade key={upgrade.title} upgrade={upgrade} />
+            <Upgrade key={upgrade.id} upgrade={upgrade} mapRef={mapRef} />
           ))}
         </div>
       )}
@@ -92,9 +94,69 @@ export default function Upgrades({ navigateTo, mapRef }) {
   );
 }
 
-function Upgrade({ upgrade }) {
-  // !!! create tile UI and functionality
-  return <div key={upgrade.title}>{upgrade.title}</div>;
+function Upgrade({ upgrade, mapRef }) {
+  const {
+    highlightedUpgrade,
+    highlightUpgrade,
+    selectedUpgrade,
+    selectUpgrade,
+  } = useContext(FilterContext);
+  const isHighlighted = highlightedUpgrade?.id === upgrade.id;
+  const isSelected = selectedUpgrade?.id === upgrade.id;
+
+  const background = isHighlighted
+    ? COLOUR_HIGHLIGHTED
+    : isSelected
+    ? DARK_BLUE
+    : LIGHT_BLUE;
+  const textColour = isSelected || isHighlighted ? WHITE : BLACK;
+  const displayName = upgrade.title;
+  const region = upgrade.region.name;
+
+  const clickMessages = ["Click for details & video", "Right-click to zoom-to"];
+
+  return (
+    <div
+      title={clickMessages}
+      style={{
+        textAlign: "center",
+        width: "10em",
+        background,
+        borderRadius: "10px",
+        padding: "4px 0",
+        margin: "3px 0",
+        cursor: "pointer",
+        position: "relative",
+      }}
+      onMouseOver={() => highlightUpgrade(upgrade.id)}
+      onMouseOut={() => highlightUpgrade(null)}
+      onClick={() => selectUpgrade(upgrade.id)}
+      onContextMenu={(e) => {
+        e.preventDefault();
+        mapRef.fitBounds([upgrade.position, upgrade.position]);
+      }}
+    >
+      <div
+        style={{
+          fontWeight: isSelected ? "bold" : "",
+          fontSize: isSelected ? "96%" : "100%",
+          lineHeight: "20px",
+          height: "40px",
+          color: textColour,
+        }}
+      >
+        {isSelected ? <u>{displayName}</u> : displayName}
+      </div>
+      <div
+        style={{
+          fontSize: "67%",
+          color: textColour,
+        }}
+      >
+        {region}
+      </div>
+    </div>
+  );
 }
 
 function UpgradeMarkerSetting() {
