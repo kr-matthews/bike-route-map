@@ -25,7 +25,7 @@ const MCKAY_MAYWOOD = [49.22372, -123.00896];
 const MAYWOOD_W = [49.22515, -123.01206];
 const PATTERSON_MAYWOOD = [49.22539, -123.01264];
 const GILMORE_HALIFAX_SE = [49.26797, -123.01417];
-const GILMORE_HALIFAX_SW = [49.26796, -123.01441];
+const GILMORE_HALIFAX_SW = [49.26795, -123.01441];
 const GILMORE_LANE_START = [49.26723, -123.01416];
 
 const CARLETON_DOUGLAS_N = [49.26937, -123.01323];
@@ -245,15 +245,27 @@ export const SEA_TO_RIVER = [
     videoIds: [VIDEOS.seaToRiverNb.id],
     positions: [
       GILMORE_CVG,
-      [49.26275, -123.0145],
-      [49.26324, -123.0145],
-      [49.26443, -123.01449],
-      [49.2646, -123.0145],
-      [49.26466, -123.01459],
-      [49.26472, -123.01451],
-      [49.2658, -123.01451],
-      [49.26588, -123.01462],
+      [49.26271, -123.01452],
+      [49.26326, -123.01452],
+      [49.26439, -123.0145],
+      [49.26444, -123.01454],
+      [49.26459, -123.01455],
+      [49.26464, -123.01452],
+      [49.26582, -123.01452],
+      [49.26585, -123.01453],
+      [49.2659, -123.0146],
       GILMORE_LOUGHEED_SW,
+    ],
+  },
+  {
+    description: "gilmore nb s of lougheed",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      [49.26538, -123.01416],
+      [49.26585, -123.01416],
+      [49.26588, -123.01418],
+      GILMORE_LOUGHEED_SE,
     ],
   },
   {
@@ -290,7 +302,10 @@ export const SEA_TO_RIVER = [
     positions: [
       GILMORE_LOUGHEED_SW,
       GILMORE_LOUGHEED_NW,
-      [49.26632, -123.0144],
+      [49.26625, -123.01458],
+      [49.26628, -123.01445],
+      [49.26693, -123.01443],
+      [49.26739, -123.01444],
       GILMORE_HALIFAX_SW,
     ],
   },
