@@ -1,4 +1,4 @@
-import { MAIN_1ST_E } from "../intersections";
+import { MAIN_1ST_NE } from "../intersections";
 import { ROUTES } from "../routes";
 import { VIDEOS } from "../videos";
 
@@ -14,7 +14,7 @@ export const TERMINAL_PATH = [
     videoIds: [VIDEOS.terminalEb.id],
     videoIdsStartAtStart: [VIDEOS.terminalEb.id],
     positions: [
-      MAIN_1ST_E,
+      MAIN_1ST_NE,
       [49.27016, -123.1004],
       [49.2702, -123.10052],
       MAIN_INDUSTRIAL_E,

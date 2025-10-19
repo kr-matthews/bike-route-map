@@ -21,7 +21,7 @@ import {
   KENSINGTON_CVG,
   LAKES_CVG_S,
   LAKEWOOD_GRANDVIEW,
-  MAIN_1ST_E,
+  MAIN_1ST_NE,
   ONTARIO_1ST_NE,
   ONTARIO_1ST_N_N,
   ONTARIO_1ST_SE,
@@ -59,6 +59,7 @@ const CLARK_GRANDVIEW_SE = [49.26601, -123.07728];
 
 const MAIN_1ST_NW = [49.27022, -123.10085];
 const MAIN_1ST_SW = [49.27009, -123.10085];
+const LORNE_1ST = [49.26921, -123.09886];
 
 const SLOCAN_N_GRANDVIEW_SE = [49.25831, -123.04946];
 
@@ -193,11 +194,18 @@ export const CENTRAL_VALLEY_GREENWAY = [
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
-    description: "1st quebec to main",
+    description: "1st quebec to lorne",
     type: "dedicated",
     oneWay: "required",
     videoIds: [VIDEOS.centralValleyVancouverEb.id],
-    positions: [QUEBEC_1ST_SE, MAIN_1ST_SW, MAIN_1ST_E],
+    positions: [
+      QUEBEC_1ST_SE,
+      MAIN_1ST_SW,
+      [49.27005, -123.10046],
+      [49.27002, -123.10035],
+      [49.26922, -123.09896],
+      LORNE_1ST,
+    ],
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
@@ -205,7 +213,13 @@ export const CENTRAL_VALLEY_GREENWAY = [
     type: "dedicated",
     oneWay: "required",
     videoIds: [VIDEOS.centralValleyVancouverWb.id],
-    positions: [MAIN_1ST_E, MAIN_1ST_NW, QUEBEC_1ST_NE, QUEBEC_1ST_NW],
+    positions: [
+      MAIN_1ST_NE,
+      [49.27016, -123.10051],
+      MAIN_1ST_NW,
+      QUEBEC_1ST_NE,
+      QUEBEC_1ST_NW,
+    ],
   },
   {
     description: "detour: scotia to emily carr",
@@ -279,13 +293,21 @@ export const CENTRAL_VALLEY_GREENWAY = [
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
-    description: "1st to scotia",
+    description: "lorne to main",
+    type: "quiet",
+    oneWay: "recommended",
+    videoIds: [VIDEOS.centralValleyVancouverWb.id],
+    positions: [LORNE_1ST, MAIN_1ST_NE],
+  },
+  {
+    routeNames: [ROUTES.centralValleyGreenway.name],
+    description: "lorne to scotia",
     type: "quiet",
     videoIds: [
       VIDEOS.centralValleyVancouverEb.id,
       VIDEOS.centralValleyVancouverWb.id,
     ],
-    positions: [MAIN_1ST_E, [49.26921, -123.09887], SCOTIA_1ST],
+    positions: [LORNE_1ST, SCOTIA_1ST],
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
