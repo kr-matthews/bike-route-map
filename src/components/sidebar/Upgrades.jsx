@@ -11,7 +11,7 @@ import { BLACK, DARK_BLUE, LIGHT_BLUE, WHITE } from "../../utils/colours";
 import { COLOUR_HIGHLIGHTED } from "../../utils/constants";
 import { UPGRADE_VIDEOS } from "../../data/videos/upgrades";
 
-const booleanOptions = ["Show", "Hide"];
+const booleanOptions = ["Show all", "Show only selected/highlighted"];
 
 export default function Upgrades({ navigateTo, mapRef }) {
   const [searchText, setSearchText] = useState("");
