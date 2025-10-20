@@ -12,6 +12,8 @@ import { VIDEOS } from "../videos";
 const FLEMING_57TH_S = [49.21806, -123.07403];
 const DUMFRIES_33RD_W_N = [49.24022, -123.07403];
 const DUMFRIES_33RD_W_NN = [49.24033, -123.07364];
+const DUMFRIES_KING_EDWARD_S = [49.24853, -123.07336];
+const DUMFRIES_KING_EDWARD_N = [49.24884, -123.07336];
 const WOODLAND_CLARK_PARK = [49.2574, -123.07379];
 
 export const DUMFRIES = [
@@ -55,7 +57,7 @@ export const DUMFRIES = [
   },
   {
     routeNames: [ROUTES.dumfries.name],
-    description: "33rd to clark park",
+    description: "33rd to king edward",
     type: "quiet",
     videoIds: [VIDEOS.dumfriesSb.id, VIDEOS.dumfriesNb.id],
     positions: [
@@ -66,7 +68,23 @@ export const DUMFRIES = [
       DUMFRIES_28TH,
       [49.2464, -123.07345],
       [49.24785, -123.07339],
-      [49.24847, -123.07336],
+      DUMFRIES_KING_EDWARD_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.dumfries.name],
+    description: "king edward to kingsway",
+    type: "dedicated",
+    videoIds: [VIDEOS.dumfriesSb.id, VIDEOS.dumfriesNb.id],
+    positions: [DUMFRIES_KING_EDWARD_S, DUMFRIES_KING_EDWARD_N],
+  },
+  {
+    routeNames: [ROUTES.dumfries.name],
+    description: "kingsway to clark park",
+    type: "quiet",
+    videoIds: [VIDEOS.dumfriesSb.id, VIDEOS.dumfriesNb.id],
+    positions: [
+      DUMFRIES_KING_EDWARD_N,
       [49.24911, -123.07335],
       [49.25039, -123.07331],
       [49.25165, -123.07328],
