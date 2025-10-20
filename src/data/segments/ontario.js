@@ -25,6 +25,7 @@ const ONTARIO_69TH_NW = [49.20946, -123.10677];
 const ONTARIO_52ND_S = [49.22289, -123.10606];
 const ONTARIO_49TH_N = [49.22581, -123.10597];
 const NORTH_OF_ONTARIO_33RD = [49.24148, -123.10533];
+const ONTARIO_5TH_ALLEY = [49.26694, -123.10474];
 const ONTARIO_MARINE_N = [49.21249, -123.10655];
 const ONTARIO_ATHLETES = [49.27151, -123.10456];
 
@@ -143,7 +144,7 @@ export const ONTARIO = [
   },
   {
     routeNames: [ROUTES.ontario.name],
-    description: "just north of 33rd to athletes",
+    description: "just north of 33rd to 5th",
     type: "quiet",
     videoIds: [VIDEOS.ontarioSb.id, VIDEOS.ontarioNb.id],
     positions: [
@@ -169,6 +170,29 @@ export const ONTARIO = [
       [49.263, -123.1049],
       [49.26466, -123.10482],
       ONTARIO_5TH,
+    ],
+  },
+  {
+    routeNames: [ROUTES.ontario.name],
+    description: "just north of 5th",
+    type: "dedicated",
+    videoIds: [VIDEOS.ontarioSb.id, VIDEOS.ontarioNb.id],
+    positions: [
+      ONTARIO_5TH,
+      [49.26656, -123.10478],
+      [49.26667, -123.10478],
+      [49.2667, -123.10479],
+      [49.2669, -123.10479],
+      ONTARIO_5TH_ALLEY,
+    ],
+  },
+  {
+    routeNames: [ROUTES.ontario.name],
+    description: "just north of 5th to athletes",
+    type: "quiet",
+    videoIds: [VIDEOS.ontarioSb.id, VIDEOS.ontarioNb.id],
+    positions: [
+      ONTARIO_5TH_ALLEY,
       [49.2683, -123.10468],
       ONTARIO_1ST_S,
       ONTARIO_1ST_N,
