@@ -1310,6 +1310,12 @@ export const ROUTES = {
           southbound: ROUTE_VIDEOS.heatherSb,
         },
       },
+      {
+        name: "Eric Hamber connection",
+        videos: {
+          southbound: ROUTE_VIDEOS.heatherEricHamberSb,
+        },
+      },
     ],
     notes:
       "Lots of hills, some steep. Potentially confusing to follow between 52nd and 37th. The portion south of 49th has no traffic calming and can get very busy at times unfortunately.",

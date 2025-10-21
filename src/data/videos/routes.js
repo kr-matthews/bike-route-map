@@ -964,6 +964,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Sep 10 2023"),
     minutes: 26,
   },
+  heatherEricHamberSb: {
+    id: "Yjz8COhRbdQ",
+    date: new Date("Oct 07 2025"),
+    minutes: 3,
+  },
   highburyNb: {
     id: "3gJObODNRPw",
     date: new Date("Aug 11 2023"),

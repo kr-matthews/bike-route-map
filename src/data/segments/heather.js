@@ -25,8 +25,8 @@ import {
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
-const WILLOW_35TH_SW = [49.23927, -123.12381];
-const WILLOW_33RD_SW = [49.24118, -123.12371];
+const WILLOW_35TH_SW = [49.23927, -123.12382];
+const WILLOW_33RD_SW = [49.24113, -123.12371];
 
 const HEATHER_MARINE_W_N = [49.20716, -123.12449];
 const HEATHER_MARINE_E_NN = [49.20747, -123.12424];
@@ -39,6 +39,8 @@ export const HEATHER = [
   {
     description: "willow 37 to 35",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.heatherEricHamberSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.heatherEricHamberSb.id],
     positions: [
       WILLOW_37TH,
       [49.2383, -123.12372],
@@ -49,10 +51,11 @@ export const HEATHER = [
   {
     description: "willow 35 to 33",
     type: "comfortable",
+    videoIds: [ROUTE_VIDEOS.heatherEricHamberSb.id],
     positions: [
       WILLOW_35TH_SW,
       [49.23969, -123.12381],
-      [49.23977, -123.12374],
+      [49.23977, -123.12375],
       WILLOW_33RD_SW,
     ],
   },
@@ -60,13 +63,29 @@ export const HEATHER = [
     description: "33rd eb",
     type: "painted",
     oneWay: "required",
-    positions: [WILLOW_33RD_SW, [49.24122, -123.1236], HEATHER_33RD_S],
+    positions: [
+      WILLOW_33RD_SW,
+      [49.24113, -123.12362],
+      [49.2412, -123.12348],
+      HEATHER_33RD_S,
+    ],
   },
   {
     description: "33rd wb",
     type: "dedicated",
     oneWay: "required",
-    positions: [HEATHER_33RD_N, [49.24132, -123.12364], WILLOW_33RD_SW],
+    videoIds: [ROUTE_VIDEOS.heatherEricHamberSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.heatherEricHamberSb.id],
+    positions: [
+      HEATHER_33RD_N,
+      [49.24123, -123.12075],
+      [49.24125, -123.12085],
+      [49.24134, -123.12349],
+      [49.24137, -123.12374],
+      [49.24134, -123.12376],
+      [49.2412, -123.12375],
+      WILLOW_33RD_SW,
+    ],
   },
 
   // 49th
