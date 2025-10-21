@@ -86,6 +86,7 @@ import { GRANT_MCCONACHIE } from "./grantMcconachie";
 import { GRANVILLE } from "./granville";
 import { GRANVILLE_CONNECTOR } from "./granvilleConnector";
 import { GRAUER } from "./grauer";
+import { GUILDFORD } from "./guildford";
 import { HARO } from "./haro";
 import { HASTINGS_PARK } from "./hastingsPark";
 import { HEATHER } from "./heather";
@@ -132,6 +133,7 @@ import { MILLENNIUM_TRAIL } from "./millenniumTrail";
 import { MILLER } from "./miller";
 import { MINORU } from "./minoru";
 import { MOSAIC } from "./mosaic";
+import { MURRAY } from "./murray";
 import { N_SERVICE } from "./nService";
 import { NANAIMO } from "./nanaimo";
 import { NELSON } from "./nelson";
@@ -317,6 +319,7 @@ export const SEGMENTS = [
   ...GRANVILLE,
   ...GRANVILLE_CONNECTOR,
   ...GRAUER,
+  ...GUILDFORD,
   ...HARO,
   ...HASTINGS_PARK,
   ...HEATHER,
@@ -363,6 +366,7 @@ export const SEGMENTS = [
   ...MILLER,
   ...MINORU,
   ...MOSAIC,
+  ...MURRAY,
   ...N_SERVICE,
   ...NANAIMO,
   ...NELSON,

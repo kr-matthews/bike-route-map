@@ -1,4 +1,8 @@
-import { BARNET_ST_JOHN_SW, MOODY_ST_JOHNS_S } from "../intersections";
+import {
+  BARNET_ST_JOHN_SW,
+  MOODY_OVERPASS_MURRAY_NE,
+  MOODY_ST_JOHNS_S,
+} from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
@@ -49,7 +53,7 @@ export const ST_JOHNS = [
       [49.2795, -122.84995],
       [49.27942, -122.84993],
       [49.27933, -122.84991],
-      [49.27895, -122.84992],
+      MOODY_OVERPASS_MURRAY_NE,
     ],
   },
 

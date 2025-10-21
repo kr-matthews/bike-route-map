@@ -1251,6 +1251,13 @@ export const ROUTES = {
     legs: [{ videos: { eastbound: ROUTE_VIDEOS.grauerEb } }],
     notes: "A flat and quiet road.",
   },
+  guildford: {
+    name: "Guildford Way",
+    regions: [REGIONS.portMoody, REGIONS.coquitlam],
+    legs: [{ videos: {} }],
+    notes:
+      "Relatively flat, with a minor hill at the municipality boundary. Port Moody's portion has an uncomfortable narrow painted lane. Coquitlam's portion has nice protected lanes.",
+  },
   haro: {
     name: "Haro",
     regions: [REGIONS.vancouver],
@@ -1816,6 +1823,13 @@ export const ROUTES = {
     ],
     notes:
       "Lots of hills, but mostly quiet. The south (east) end leads to an alley which eventually connects to BC Parkway. The Grandview Cut was closed to cars around 2022.",
+  },
+  murray: {
+    name: "Murray St",
+    regions: [REGIONS.portMoody],
+    legs: [{ videos: {} }, { name: "Eastbound lane", videos: {} }],
+    notes:
+      "A flat MUP on the north side which often requires navigating around pedestrians, plus an eastbound lane on the south side.",
   },
   nanaimo: {
     name: "Nanaimo St",
