@@ -112,6 +112,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Oct 7 2024"),
     minutes: 20,
   },
+  barnetWb: {
+    id: "UVjXUOuUhu0",
+    tlId: "zBwuL98s7hw",
+    date: new Date("Oct 17 2025"),
+    minutes: 24,
+  },
   bcParkway22ndStation: {
     id: "CQNzsCvC60U",
     date: new Date("Mar 29 2024"),
@@ -916,6 +922,18 @@ export const ROUTE_VIDEOS = {
     id: "IQtHnHvlrA4",
     date: new Date("Aug 09 2025"),
     minutes: 2,
+  },
+  guildfordMurrayEb: {
+    id: "yfNWyB0D8IA",
+    tlId: "KAk_lPp47xg",
+    date: new Date("Oct 17 2025"),
+    minutes: 19,
+  },
+  guildfordMurrayWb: {
+    id: "1vkEFd-SGMM",
+    tlId: "zy1d_KTx2X4",
+    date: new Date("Oct 17 2025"),
+    minutes: 15,
   },
   haroEb: {
     id: "7vfEmgGweXQ",
@@ -1905,6 +1923,11 @@ export const ROUTE_VIDEOS = {
     tlId: "vTsBUeFXdOQ",
     date: new Date("Oct 7 2024"),
     minutes: 7,
+  },
+  stJohnsWb: {
+    id: "BxBPJRZm4Xo",
+    date: new Date("Oct 17 2025"),
+    minutes: 4,
   },
   sunriseNb: {
     id: "YGhkRf0VmKw",

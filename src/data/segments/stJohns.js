@@ -29,14 +29,26 @@ export const ST_JOHNS = [
     description: "moody bridge path",
     type: "mixed",
     elevation: 1,
-    videoIds: [ROUTE_VIDEOS.stJohnsEb.id, ROUTE_VIDEOS.gatensburySb.id],
+    videoIds: [
+      ROUTE_VIDEOS.guildfordMurrayEb.id,
+      ROUTE_VIDEOS.stJohnsEb.id,
+      ROUTE_VIDEOS.gatensburySb.id,
+      ROUTE_VIDEOS.guildfordMurrayWb.id,
+    ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.guildfordMurrayEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.guildfordMurrayWb.id],
     positions: [MOODY_BRIDGE_S, MOODY_BRIDGE_N],
   },
   {
     description: "moody path 2",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [ROUTE_VIDEOS.stJohnsEb.id, ROUTE_VIDEOS.gatensburySb.id],
+    videoIds: [
+      ROUTE_VIDEOS.guildfordMurrayEb.id,
+      ROUTE_VIDEOS.stJohnsEb.id,
+      ROUTE_VIDEOS.gatensburySb.id,
+      ROUTE_VIDEOS.guildfordMurrayWb.id,
+    ],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.gatensburySb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.stJohnsEb.id],
     positions: [
@@ -61,8 +73,9 @@ export const ST_JOHNS = [
     routeNames: [ROUTES.stJohns.name],
     description: "primary",
     type: "comfortable",
-    videoIds: [ROUTE_VIDEOS.stJohnsEb.id],
+    videoIds: [ROUTE_VIDEOS.stJohnsWb.id, ROUTE_VIDEOS.stJohnsEb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.stJohnsEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.stJohnsWb.id],
     positions: [
       BARNET_ST_JOHN_SW,
       [49.27653, -122.86665],
@@ -80,7 +93,12 @@ export const ST_JOHNS = [
     routeNames: [ROUTES.stJohns.name],
     description: "east half-crosswalk",
     type: "comfortable",
-    videoIds: [ROUTE_VIDEOS.stJohnsEb.id, ROUTE_VIDEOS.gatensburySb.id],
+    videoIds: [
+      ROUTE_VIDEOS.stJohnsWb.id,
+      ROUTE_VIDEOS.gatensburySb.id,
+      ROUTE_VIDEOS.stJohnsEb.id,
+    ],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.stJohnsWb.id],
     positions: [MOODY_ST_JOHNS_S, MOODY_ST_JOHNS_SE],
   },
 ];

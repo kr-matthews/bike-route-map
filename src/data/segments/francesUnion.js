@@ -272,12 +272,18 @@ export const FRANCES_UNION = [
   },
   {
     routeNames: [ROUTES.francesUnion.name],
+    description: "tiny bit at bayview",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.francesUnionWb.id],
+    positions: [INLET_BAYVIEW_W, BARNET_FRANCES_WB_TRANSITION],
+  },
+  {
+    routeNames: [ROUTES.francesUnion.name],
     description: "wb along bayview",
     type: "mixed",
     // oneWay: "recommended",
-    videoIds: [ROUTE_VIDEOS.francesUnionWb.id],
+    videoIds: [ROUTE_VIDEOS.francesUnionWb.id, ROUTE_VIDEOS.barnetWb.id],
     positions: [
-      INLET_BAYVIEW_W,
       BARNET_FRANCES_WB_TRANSITION,
       [49.28671, -122.95361],
       [49.28676, -122.95389],
@@ -296,7 +302,8 @@ export const FRANCES_UNION = [
     description: "malibu alley",
     type: "quiet",
     // oneWay: "recommended",
-    videoIds: [ROUTE_VIDEOS.francesUnionWb.id],
+    videoIds: [ROUTE_VIDEOS.francesUnionWb.id, ROUTE_VIDEOS.barnetWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.barnetWb.id],
     positions: [MALIBU_LANE_E, MALIBU_LANE_W],
   },
   {

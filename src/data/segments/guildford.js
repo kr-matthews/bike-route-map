@@ -1,5 +1,6 @@
 import { IOCO_GUILDFORD_N, IOCO_GUILDFORD_S } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const PORT_MOODY_COQUITLAM_S = [49.28466, -122.8209];
 const PINETREE_GUILDFORD_SE = [49.28469, -122.79228];
@@ -11,6 +12,12 @@ export const GUILDFORD = [
   {
     description: "continuing toward lake",
     type: "comfortable",
+    videoIds: [
+      ROUTE_VIDEOS.guildfordMurrayWb.id,
+      ROUTE_VIDEOS.guildfordMurrayEb.id,
+    ],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.guildfordMurrayWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.guildfordMurrayEb.id],
     positions: [
       PINETREE_GUILDFORD_NE,
       [49.28496, -122.79197],
@@ -22,6 +29,7 @@ export const GUILDFORD = [
   {
     description: "pinetree crossing guildford e",
     type: "dedicated",
+    videoIds: [ROUTE_VIDEOS.guildfordMurrayEb.id],
     positions: [
       PINETREE_GUILDFORD_SE,
       [49.28473, -122.79224],
@@ -36,6 +44,7 @@ export const GUILDFORD = [
     description: "eb painted",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.guildfordMurrayEb.id],
     positions: [
       IOCO_GUILDFORD_S,
       [49.28077, -122.82719],
@@ -57,6 +66,7 @@ export const GUILDFORD = [
     description: "eb protected",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.guildfordMurrayEb.id],
     positions: [
       PORT_MOODY_COQUITLAM_S,
       [49.28469, -122.82067],
@@ -127,6 +137,7 @@ export const GUILDFORD = [
     description: "wb protected",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.guildfordMurrayWb.id],
     positions: [
       PINETREE_GUILDFORD_NE,
       [49.28501, -122.79218],
@@ -214,6 +225,7 @@ export const GUILDFORD = [
     description: "wb painted",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.guildfordMurrayWb.id],
     positions: [
       PORT_MOODY_COQUITLAM_N,
       [49.28486, -122.82074],

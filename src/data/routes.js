@@ -325,7 +325,14 @@ export const ROUTES = {
   barnet: {
     name: "Barnet Hwy",
     regions: [REGIONS.burnaby, REGIONS.portMoody],
-    legs: [{ videos: { eastbound: ROUTE_VIDEOS.barnetEb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.barnetEb,
+          westbound: ROUTE_VIDEOS.barnetWb,
+        },
+      },
+    ],
     notes:
       "Some hills. Next to high-speed traffic, but the shoulder tends to be quite wide.",
   },
@@ -1254,7 +1261,14 @@ export const ROUTES = {
   guildford: {
     name: "Guildford Way",
     regions: [REGIONS.portMoody, REGIONS.coquitlam],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.guildfordMurrayEb,
+          westbound: ROUTE_VIDEOS.guildfordMurrayWb,
+        },
+      },
+    ],
     notes:
       "Relatively flat, with a minor hill at the municipality boundary. Port Moody's portion has an uncomfortable narrow painted lane. Coquitlam's portion has nice protected lanes.",
   },
@@ -1833,7 +1847,13 @@ export const ROUTES = {
   murray: {
     name: "Murray St",
     regions: [REGIONS.portMoody],
-    legs: [{ videos: {} }, { name: "Eastbound lane", videos: {} }],
+    legs: [
+      { name: "MUP", videos: { westbound: ROUTE_VIDEOS.guildfordMurrayWb } },
+      {
+        name: "Eastbound lane",
+        videos: { eastbound: ROUTE_VIDEOS.guildfordMurrayEb },
+      },
+    ],
     notes:
       "A flat MUP on the north side which often requires navigating around pedestrians, plus an eastbound lane on the south side.",
   },
@@ -2295,7 +2315,14 @@ export const ROUTES = {
   stJohns: {
     name: "Saint Johns St Path",
     regions: [REGIONS.portMoody],
-    legs: [{ videos: { eastbound: ROUTE_VIDEOS.stJohnsEb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.stJohnsEb,
+          westbound: ROUTE_VIDEOS.stJohnsWb,
+        },
+      },
+    ],
     notes:
       "A new mostly-flat path as of 2024. The east-most block still looks/feels temporary.",
   },

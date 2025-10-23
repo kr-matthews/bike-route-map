@@ -26,6 +26,7 @@ export const BARNET = [
     routeNames: [ROUTES.barnet.name],
     description: "crossing barnet at view",
     type: "comfortable",
+    videoIds: [ROUTE_VIDEOS.barnetWb.id],
     positions: [
       BARNET_VIEW_NW,
       [49.27966, -122.86661],
@@ -292,8 +293,9 @@ export const BARNET = [
     routeNames: [ROUTES.barnet.name],
     description: "eb: sidewalk part 2",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.barnetEb.id],
+    videoIds: [ROUTE_VIDEOS.barnetWb.id, ROUTE_VIDEOS.barnetEb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.barnetEb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.barnetWb.id],
     positions: [
       BARNET_VIEW_NW,
       [49.27929, -122.867],
@@ -308,7 +310,7 @@ export const BARNET = [
   },
   {
     routeNames: [ROUTES.barnet.name],
-    description: "wb: to pre-bayview",
+    description: "wb: clarke to view",
     type: "shoulder",
     oneWay: "required",
     positions: [
@@ -320,6 +322,16 @@ export const BARNET = [
       [49.27889, -122.86657],
       [49.2792, -122.86654],
       [49.27948, -122.86651],
+      BARNET_VIEW_NE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.barnet.name],
+    description: "wb: view to pre-bayview",
+    type: "shoulder",
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.barnetWb.id],
+    positions: [
       BARNET_VIEW_NE,
       [49.2801, -122.86652],
       [49.28055, -122.86655],
@@ -502,7 +514,7 @@ export const BARNET = [
     description: "wb: pre-pre-bayview",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [ROUTE_VIDEOS.francesUnionWb.id],
+    videoIds: [ROUTE_VIDEOS.francesUnionWb.id, ROUTE_VIDEOS.barnetWb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.francesUnionWb.id],
     positions: [
       WB_PRE_BAYVIEW,
@@ -516,6 +528,7 @@ export const BARNET = [
     description: "wb: pre-bayview MUP",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [ROUTE_VIDEOS.barnetWb.id],
     positions: [
       WB_BAYVIEW_RAMP,
       [49.28693, -122.95324],

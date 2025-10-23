@@ -4,12 +4,21 @@ import {
   MOODY_OVERPASS_MURRAY_NE,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const ELECTRONIC_MURRAY_N = [49.27894, -122.84135];
 const ELECTRONIC_MURRAY_SE = [49.27878, -122.84126];
 const W_OF_IOCO = [49.28074, -122.8283];
 
 export const MURRAY = [
+  {
+    description: "crossing murray at electronic",
+    type: "shared",
+    undesignated: true,
+    videoIds: [ROUTE_VIDEOS.guildfordMurrayEb.id],
+    positions: [ELECTRONIC_MURRAY_N, ELECTRONIC_MURRAY_SE],
+  },
+
   // path
   {
     routeNames: [ROUTES.murray.name],
@@ -28,6 +37,10 @@ export const MURRAY = [
     routeNames: [ROUTES.murray.name],
     description: "moody to electronic",
     type: "comfortable",
+    videoIds: [
+      ROUTE_VIDEOS.guildfordMurrayEb.id,
+      ROUTE_VIDEOS.guildfordMurrayWb.id,
+    ],
     positions: [
       MOODY_OVERPASS_MURRAY_NE,
       [49.27896, -122.84757],
@@ -39,6 +52,7 @@ export const MURRAY = [
     routeNames: [ROUTES.murray.name],
     description: "electronic to almost ioco",
     type: "comfortable",
+    videoIds: [ROUTE_VIDEOS.guildfordMurrayWb.id],
     positions: [
       ELECTRONIC_MURRAY_N,
       [49.27894, -122.84093],
@@ -94,6 +108,7 @@ export const MURRAY = [
     description: "wb painted lane",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.guildfordMurrayWb.id],
     positions: [
       IOCO_GUILDFORD_N,
       [49.2808, -122.82779],
@@ -119,6 +134,7 @@ export const MURRAY = [
     description: "eb painted lane",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.guildfordMurrayEb.id],
     positions: [
       ELECTRONIC_MURRAY_SE,
       [49.27877, -122.8403],
