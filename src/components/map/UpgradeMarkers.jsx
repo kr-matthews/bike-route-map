@@ -6,7 +6,7 @@ import upgradeIconBlue from "../../images/marker-upgrade-blue.svg";
 import { UPGRADE_VIDEOS } from "../../data/videos/upgrades";
 import { formatDate } from "../../utils/videos";
 
-export default function UpgradeMarkers() {
+export default function UpgradeMarkers({ mapRef }) {
   const { upgradesShown } = useContext(SettingContext);
 
   const { selectedUpgrade, highlightedUpgrade } = useContext(FilterContext);
@@ -16,12 +16,12 @@ export default function UpgradeMarkers() {
       (upgradesShown ||
         upgrade.id === selectedUpgrade?.id ||
         upgrade.id === highlightedUpgrade?.id) && (
-        <UpgradeMarker key={upgrade.id} upgrade={upgrade} />
+        <UpgradeMarker key={upgrade.id} upgrade={upgrade} mapRef={mapRef} />
       )
   );
 }
 
-function UpgradeMarker({ upgrade }) {
+function UpgradeMarker({ upgrade, mapRef }) {
   const formattedDate = formatDate(upgrade.date);
 
   const {
@@ -35,8 +35,9 @@ function UpgradeMarker({ upgrade }) {
       click: () => selectUpgrade(upgrade.id),
       mouseover: () => highlightUpgrade(upgrade.id),
       mouseout: () => highlightUpgrade(null),
+      contextmenu: () => mapRef.fitBounds([upgrade.position, upgrade.position]),
     }),
-    [selectUpgrade, highlightUpgrade, upgrade.id]
+    [mapRef, selectUpgrade, highlightUpgrade, upgrade]
   );
 
   const isActive =

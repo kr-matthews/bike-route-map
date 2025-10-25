@@ -59,7 +59,7 @@ export default function MainMap({ mapRef, setMapRef, fullWidth = false }) {
           />
         ))}
 
-        <UpgradeMarkers />
+        <UpgradeMarkers mapRef={mapRef} />
 
         <CurrentLocation mapRef={mapRef} />
       </MapContainer>
