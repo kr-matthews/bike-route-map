@@ -4,9 +4,9 @@ import startIcon from "../../images/marker-green.svg";
 import endIcon from "../../images/marker-red.svg";
 import combinedIcon from "../../images/marker-yellow.svg";
 
-const startText = "Video Starts Here";
-const endText = "Video Ends Here";
-const combinedText = "Video Starts/Ends Here";
+export const startText = "Video Starts Here";
+export const endText = "Video Ends Here";
+export const combinedText = "Video Starts/Ends Here";
 
 export default function EndpointMarkers({ segment, videoId }) {
   const firstPosition = segment.positions[0];

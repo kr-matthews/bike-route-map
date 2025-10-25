@@ -14,6 +14,11 @@ import {
 import SegmentForm from "./SegmentForm";
 import Panel from "./Panel";
 import { VIEWS } from "./Sidebar";
+import markerGreen from "../../images/marker-green.svg";
+import markerRed from "../../images/marker-red.svg";
+import markerYellow from "../../images/marker-yellow.svg";
+import markerUpgrade from "../../images/marker-upgrade.svg";
+import { combinedText, endText, startText } from "../map/EndpointMarkers";
 
 const intersection = [49.26208, -123.10495];
 
@@ -189,7 +194,41 @@ export default function Legend({ navigateTo }) {
             </p>
           )}
         </div>
+
+        <div style={{ paddingRight: "0.5em" }}>
+          <p>
+            <LegendIcon tooltip={startText} src={markerGreen} />: The selected
+            video starts approximately here.
+          </p>
+          <p>
+            <LegendIcon tooltip={endText} src={markerRed} />: The selected video
+            ends approximately here.
+          </p>
+          <p>
+            <LegendIcon tooltip={combinedText} src={markerYellow} />: The
+            selected video both starts and ends approximately here.
+          </p>
+          <p>
+            <LegendIcon
+              tooltip="Date the upgrade was filmed"
+              src={markerUpgrade}
+            />
+            : Location of an upgrade video.
+          </p>
+        </div>
       </div>
     </Panel>
+  );
+}
+
+function LegendIcon({ tooltip, src }) {
+  return (
+    <span title={tooltip}>
+      <img
+        src={src}
+        alt={tooltip}
+        style={{ height: "1.75em", width: "1.75em" }}
+      />
+    </span>
   );
 }
