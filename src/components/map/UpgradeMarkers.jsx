@@ -3,6 +3,7 @@ import { FilterContext, SettingContext } from "../../App";
 import Marker from "./Marker";
 import upgradeIcon from "../../images/marker-upgrade.svg";
 import { UPGRADE_VIDEOS } from "../../data/videos/upgrades";
+import { formatDate } from "../../utils/videos";
 
 export default function UpgradeMarkers() {
   const { upgradesShown } = useContext(SettingContext);
@@ -20,5 +21,14 @@ export default function UpgradeMarkers() {
 }
 
 function UpgradeMarker({ upgrade }) {
-  return <Marker iconUrl={upgradeIcon} position={upgrade.position} useCenter />;
+  const formattedDate = formatDate(upgrade.date);
+
+  return (
+    <Marker
+      iconUrl={upgradeIcon}
+      position={upgrade.position}
+      useCenter
+      tooltip={formattedDate}
+    />
+  );
 }
