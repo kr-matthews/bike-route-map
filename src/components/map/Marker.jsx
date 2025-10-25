@@ -1,7 +1,13 @@
 import { Marker as LeafletMarker, Tooltip } from "react-leaflet";
 import L from "leaflet";
 
-export default function Marker({ position, iconUrl, tooltip, useCenter }) {
+export default function Marker({
+  position,
+  iconUrl,
+  tooltip,
+  useCenter,
+  eventHandlers,
+}) {
   const icon = L.icon({
     iconUrl,
     iconSize: [38, 45],
@@ -9,7 +15,12 @@ export default function Marker({ position, iconUrl, tooltip, useCenter }) {
   });
 
   return (
-    <LeafletMarker position={position} icon={icon} opacity={0.75}>
+    <LeafletMarker
+      position={position}
+      icon={icon}
+      opacity={0.75}
+      eventHandlers={eventHandlers}
+    >
       {tooltip && <Tooltip>{tooltip}</Tooltip>}
     </LeafletMarker>
   );
