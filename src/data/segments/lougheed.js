@@ -48,6 +48,7 @@ const WESTBOUND_BRUNETTE_FRASER_START = [49.25198, -122.90903];
 const WESTBOUND_BRUNETTE_FRASER_END = [49.2521, -122.90992];
 const WESTBOUND_BRUNETTE_FRASER_POST = [49.25218, -122.91042];
 
+const CARLETON_LOUGHEED_S = [49.26618, -123.01143];
 const EB_AFTER_MADISON = [49.26636, -123.00736];
 const WILLINGDON_LOUGHEED_SW = [49.26628, -123.00341];
 const WB_BEFORE_BOUNDARY = [49.26597, -123.0195];
@@ -145,7 +146,7 @@ export const LOUGHEED = [
       [49.26602, -123.01347],
       [49.26605, -123.01334],
       [49.26615, -123.01176],
-      [49.26618, -123.01143],
+      CARLETON_LOUGHEED_S,
     ],
   },
   {
@@ -155,7 +156,7 @@ export const LOUGHEED = [
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [
-      [49.26618, -123.01143],
+      CARLETON_LOUGHEED_S,
       [49.26623, -123.0106],
       [49.26633, -123.00877],
       [49.26638, -123.00743],
