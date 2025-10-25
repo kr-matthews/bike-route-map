@@ -7,7 +7,7 @@ import {
   COLOUR_VIDEO_SELECTED_BORDER,
 } from "../../utils/constants";
 import { displayDistance } from "../../utils/strings";
-import { displayDirection } from "../../utils/videos";
+import { displayDirection, formatDate } from "../../utils/videos";
 import startIcon from "../../images/marker-green.svg";
 import endIcon from "../../images/marker-red.svg";
 import "./toggleSwitch.css";
@@ -39,10 +39,7 @@ export default function Video({ video, direction }) {
   //   [hasTimeLapse, defaultSpeed]
   // );
 
-  const dateText = video.date.toLocaleString("en-US", {
-    month: "short",
-    year: "numeric",
-  });
+  const dateText = formatDate(video.date);
   const durationText = `${video.minutes} min`;
   const speedTextSuffix = ` speed`;
 

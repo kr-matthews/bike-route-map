@@ -67,3 +67,9 @@ export const routeVideoCumulativeDistance = Object.values(ROUTE_VIDEOS).reduce(
   (s, v) => s + getRouteVideoDistance(v.id),
   0
 );
+
+export const formatDate = (date) =>
+  date.toLocaleString("en-US", {
+    month: "short",
+    year: "numeric",
+  });
