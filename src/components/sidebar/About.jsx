@@ -49,7 +49,11 @@ export default function About({ navigateTo }) {
           <li>Use the icons in the top right to:</li>
           <ul>
             <li>
-              See a <b>list</b> of all routes, and search by name.
+              See a <b>list</b> of all <b>routes</b>, and search by name/region.
+            </li>
+            <li>
+              See a <b>list</b> of all <b>upgrade videos</b>, and search by
+              name/region.
             </li>
             <li>
               View the <b>legend</b>.
