@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useMemo } from "react";
 import { FilterContext, SettingContext } from "../../App";
 import Marker from "./Marker";
 import upgradeIcon from "../../images/marker-upgrade.svg";
@@ -23,12 +23,23 @@ export default function UpgradeMarkers() {
 function UpgradeMarker({ upgrade }) {
   const formattedDate = formatDate(upgrade.date);
 
+  const { selectUpgrade, highlightUpgrade } = useContext(FilterContext);
+  const eventHandlers = useMemo(
+    () => ({
+      click: () => selectUpgrade(upgrade.id),
+      mouseover: () => highlightUpgrade(upgrade.id),
+      mouseout: () => highlightUpgrade(null),
+    }),
+    [selectUpgrade, highlightUpgrade, upgrade.id]
+  );
+
   return (
     <Marker
       iconUrl={upgradeIcon}
       position={upgrade.position}
       useCenter
       tooltip={formattedDate}
+      eventHandlers={eventHandlers}
     />
   );
 }
