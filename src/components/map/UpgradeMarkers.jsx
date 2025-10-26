@@ -24,6 +24,7 @@ export default function UpgradeMarkers({ mapRef }) {
 function UpgradeMarker({ upgrade, mapRef }) {
   const formattedDate = formatDate(upgrade.date);
 
+  const { upgradesShown } = useContext(SettingContext);
   const {
     selectUpgrade,
     selectedUpgrade,
@@ -45,7 +46,7 @@ function UpgradeMarker({ upgrade, mapRef }) {
 
   return (
     <Marker
-      iconUrl={isActive ? upgradeIconBlue : upgradeIcon}
+      iconUrl={upgradesShown && isActive ? upgradeIconBlue : upgradeIcon}
       position={upgrade.position}
       useCenter
       tooltip={formattedDate}
