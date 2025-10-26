@@ -1,52 +1,29 @@
-import { useContext, useEffect, useRef, useState } from "react";
-import { FilterContext, SettingContext } from "../../App";
-import {
-  COLOUR_VIDEO_NOT_SELECTED,
-  COLOUR_VIDEO_NOT_SELECTED_BORDER,
-  COLOUR_VIDEO_SELECTED,
-  COLOUR_VIDEO_SELECTED_BORDER,
-} from "../../utils/constants";
+import { useEffect, useRef } from "react";
 import { displayDistance } from "../../utils/strings";
-import { displayDirection, formatDate } from "../../utils/videos";
-import startIcon from "../../images/marker-green.svg";
-import endIcon from "../../images/marker-red.svg";
+import {
+  displayDirection,
+  formatDate,
+  formatDuration,
+} from "../../utils/videos";
 import "./toggleSwitch.css";
 
-const trivialOptions = ["1x"];
-const bothOptions = ["1x", "4x"];
+const speedTextSuffix = ` speed`;
 
-export default function Video({ video, direction }) {
-  const { selectedVideo, selectVideo } = useContext(FilterContext);
-  const { defaultSpeed } = useContext(SettingContext);
-  const isSelected = video.id === selectedVideo?.id;
-  const backgroundColor = isSelected
-    ? COLOUR_VIDEO_SELECTED
-    : COLOUR_VIDEO_NOT_SELECTED;
-  const borderColor = isSelected
-    ? COLOUR_VIDEO_SELECTED_BORDER
-    : COLOUR_VIDEO_NOT_SELECTED_BORDER;
-
-  const hasTimeLapse = Boolean(video.tlId);
-  const speedOptions = hasTimeLapse ? bothOptions : trivialOptions;
-  const [showingTimeLapse, setShowingTimeLapse] = useState(
-    hasTimeLapse && defaultSpeed === 4
-  );
-
-  // useEffect(
-  //   function resetSpeed() {
-  //     setShowingTimeLapse(hasTimeLapse && defaultSpeed === 4);
-  //   },
-  //   [hasTimeLapse, defaultSpeed]
-  // );
-
-  const dateText = formatDate(video.date);
-  const durationText = `${video.minutes} min`;
-  const speedTextSuffix = ` speed`;
-
-  const updateVideo = () => selectVideo(video.id);
-
-  const url = createUrl(video, showingTimeLapse);
-
+export default function Video({
+  id,
+  direction,
+  date,
+  meters,
+  minutes,
+  iconSrc,
+  onClick,
+  isSelected,
+  backgroundColor,
+  borderColor,
+  speedOptions,
+  selectedSpeedOption,
+  onSelectSpeedOption,
+}) {
   const ref = useRef();
 
   useEffect(
@@ -81,16 +58,16 @@ export default function Video({ video, direction }) {
               fontSize: "100%",
             }}
           >
-            {displayDirection(direction)}, {dateText}
+            {displayDirection(direction)}, {formatDate(date)}
           </span>
           <br />
           <span style={{ fontSize: "90%" }}>
-            {displayDistance(video.distance)}, {durationText},{" "}
+            {displayDistance(meters)}, {formatDuration(minutes)},{" "}
             {
               <SpeedDropdown
                 options={speedOptions}
-                selected={showingTimeLapse ? "4x" : "1x"}
-                setSelected={(s) => setShowingTimeLapse(s === "4x")}
+                selected={selectedSpeedOption}
+                setSelected={onSelectSpeedOption}
               />
             }
             {speedTextSuffix}
@@ -105,29 +82,26 @@ export default function Video({ video, direction }) {
             cursor: "pointer",
           }}
           title="Highlight on Map"
-          onClick={updateVideo}
+          onClick={onClick}
         >
           <label className="container">
             <input
               name="show-video"
               type="checkbox"
               checked={isSelected}
-              onChange={updateVideo}
+              onChange={onClick}
             />
             <span className="slider" />
           </label>
-          <img
-            src={isSelected ? startIcon : endIcon}
-            style={{ height: "30px", paddingLeft: "4px" }}
-          />
+          <img src={iconSrc} style={{ height: "30px", paddingLeft: "4px" }} />
         </span>
       </div>
       <div>
         <iframe
-          key={url}
+          key={id}
           width="275px"
           height="155px"
-          src={url}
+          src={createUrl(id)}
           // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
           title="Embedded YouTube"
@@ -156,7 +130,6 @@ function SpeedDropdown({ options, selected, setSelected }) {
 
 const YOUTUBE_PREFIX = "https://www.youtube.com/embed/";
 
-function createUrl(video, showingTimeLapse) {
-  const id = showingTimeLapse ? video.tlId : video.id;
+function createUrl(id) {
   return `${YOUTUBE_PREFIX}${id}`;
 }

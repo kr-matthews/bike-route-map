@@ -1,6 +1,6 @@
 import { WIDTH_BREAKPOINT } from "../../utils/constants";
 import { getAugmentedRouteVideo } from "../../utils/videos";
-import Video from "./Video";
+import RouteVideo from "./RouteVideo";
 
 // !!! add leg data and highlight on hover
 
@@ -31,7 +31,7 @@ export default function Leg({ leg }) {
           <p style={{ paddingLeft: "1em" }}>No videos, yet. Come back later.</p>
         )}
         {Object.entries(leg.videos).map(([direction, video]) => (
-          <Video
+          <RouteVideo
             key={video.id}
             video={getAugmentedRouteVideo(video.id)}
             direction={direction}
