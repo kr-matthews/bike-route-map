@@ -10,9 +10,17 @@ import startIcon from "../../images/marker-green.svg";
 import endIcon from "../../images/marker-red.svg";
 import "./toggleSwitch.css";
 import Video from "./Video";
+import {
+  displayDirection,
+  formatDate,
+  formatDuration,
+} from "../../utils/videos";
+import { displayDistance } from "../../utils/strings";
 
 const trivialOptions = ["1x"];
 const bothOptions = ["1x", "4x"];
+
+const speedTextSuffix = ` speed`;
 
 export default function RouteVideo({ video, direction }) {
   const { selectedVideo, selectVideo } = useContext(FilterContext);
@@ -31,21 +39,61 @@ export default function RouteVideo({ video, direction }) {
     hasTimeLapse && defaultSpeed === 4
   );
 
+  const toggleVideo = () => selectVideo(video.id);
+
   return (
     <Video
       id={showingTimeLapse ? video.tlId : video.id}
-      direction={direction}
-      date={video.date}
-      meters={video.distance}
-      minutes={video.minutes}
-      iconSrc={isSelected ? startIcon : endIcon}
-      onClick={() => selectVideo(video.id)}
-      isSelected={isSelected}
+      shouldScrollTo={isSelected}
       backgroundColor={backgroundColor}
       borderColor={borderColor}
       speedOptions={speedOptions}
-      selectedSpeedOption={showingTimeLapse ? "4x" : "1x"}
-      onSelectSpeedOption={(s) => setShowingTimeLapse(s === "4x")}
+      line1Child={`${displayDirection(direction)}, ${formatDate(video.date)}`}
+      line2Child={
+        <>
+          {displayDistance(video.distance)}, {formatDuration(video.minutes)},{" "}
+          <SpeedDropdown
+            options={speedOptions}
+            selected={showingTimeLapse ? "4x" : "1x"}
+            setSelected={(s) => setShowingTimeLapse(s === "4x")}
+          />
+          {speedTextSuffix}
+        </>
+      }
+      rightChild={
+        <span title="Highlight on Map" onClick={toggleVideo}>
+          <label className="container">
+            <input
+              name="show-video"
+              type="checkbox"
+              checked={isSelected}
+              onChange={toggleVideo}
+            />
+            <span className="slider" />
+          </label>
+          <img
+            src={isSelected ? startIcon : endIcon}
+            style={{ height: "30px", paddingLeft: "4px" }}
+          />
+        </span>
+      }
     />
+  );
+}
+
+// could/should combine into ListTypeDropdown
+function SpeedDropdown({ options, selected, setSelected }) {
+  return (
+    <select
+      name="speed"
+      style={{ borderRadius: 5 }}
+      value={selected}
+      onChange={(e) => setSelected(e.target.value)}
+      disabled={options.length === 1}
+    >
+      {options.map((option) => (
+        <option key={option}>{option}</option>
+      ))}
+    </select>
   );
 }

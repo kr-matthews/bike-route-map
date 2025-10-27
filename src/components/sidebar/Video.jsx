@@ -1,41 +1,27 @@
 import { useEffect, useRef } from "react";
-import { displayDistance } from "../../utils/strings";
-import {
-  displayDirection,
-  formatDate,
-  formatDuration,
-} from "../../utils/videos";
 import "./toggleSwitch.css";
-
-const speedTextSuffix = ` speed`;
 
 export default function Video({
   id,
-  direction,
-  date,
-  meters,
-  minutes,
-  iconSrc,
-  onClick,
-  isSelected,
+  shouldScrollTo,
   backgroundColor,
   borderColor,
-  speedOptions,
-  selectedSpeedOption,
-  onSelectSpeedOption,
+  line1Child,
+  line2Child,
+  rightChild,
 }) {
   const ref = useRef();
 
   useEffect(
-    function scrollToVideoWhenSelected() {
-      if (isSelected) {
+    function scrollToVideo() {
+      if (shouldScrollTo) {
         ref.current?.scrollIntoView({
           behavior: "smooth",
           block: "center",
         });
       }
     },
-    [isSelected]
+    [shouldScrollTo]
   );
 
   return (
@@ -58,25 +44,12 @@ export default function Video({
               fontSize: "100%",
             }}
           >
-            {displayDirection(direction)}, {formatDate(date)}
+            {line1Child}
           </span>
           <br />
-          <span style={{ fontSize: "90%" }}>
-            {displayDistance(meters)}, {formatDuration(minutes)}
-            {speedOptions && (
-              <>
-                ,{" "}
-                <SpeedDropdown
-                  options={speedOptions}
-                  selected={selectedSpeedOption}
-                  setSelected={onSelectSpeedOption}
-                />
-                {speedTextSuffix}
-              </>
-            )}
-          </span>
+          <span style={{ fontSize: "90%" }}>{line2Child}</span>
         </span>
-        {Boolean(isSelected) === isSelected && (
+        {rightChild && (
           <span
             style={{
               position: "absolute",
@@ -85,19 +58,8 @@ export default function Video({
               width: "4em",
               cursor: "pointer",
             }}
-            title="Highlight on Map"
-            onClick={onClick}
           >
-            <label className="container">
-              <input
-                name="show-video"
-                type="checkbox"
-                checked={isSelected}
-                onChange={onClick}
-              />
-              <span className="slider" />
-            </label>
-            <img src={iconSrc} style={{ height: "30px", paddingLeft: "4px" }} />
+            {rightChild}
           </span>
         )}
       </div>
@@ -113,23 +75,6 @@ export default function Video({
         />
       </div>
     </span>
-  );
-}
-
-// could/should combine into ListTypeDropdown
-function SpeedDropdown({ options, selected, setSelected }) {
-  return (
-    <select
-      name="speed"
-      style={{ borderRadius: 5 }}
-      value={selected}
-      onChange={(e) => setSelected(e.target.value)}
-      disabled={options.length === 1}
-    >
-      {options.map((option) => (
-        <option key={option}>{option}</option>
-      ))}
-    </select>
   );
 }
 
