@@ -227,7 +227,7 @@ export const UPGRADE_VIDEOS = {
   seaToRiverLougheedNb25: {
     id: "6wW7ZniQ2FA",
     title: "Sea to River around Lougheed",
-    routeNames: [ROUTES.seaToRiver],
+    routeNames: [ROUTES.seaToRiver.name],
     direction: "northbound",
     date: new Date("Oct 03 2025"),
     minutes: 2,
@@ -237,7 +237,7 @@ export const UPGRADE_VIDEOS = {
   lougheedGilmoreEb25: {
     id: "qlCFn0Wtntc",
     title: "Lougheed Hwy around Gilmore",
-    routeNames: [ROUTES.lougheed],
+    routeNames: [ROUTES.lougheed.name],
     direction: "eastbound",
     date: new Date("Oct 17 2025"),
     minutes: 1,
