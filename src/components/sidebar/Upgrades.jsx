@@ -33,23 +33,25 @@ export default function Upgrades({ navigateTo, mapRef }) {
 
   const upgradesToShow = useMemo(
     () =>
-      Object.values(UPGRADE_VIDEOS).filter(
-        ({ title, region, routeNames, position }) =>
-          (isSubsequence(
-            removeWhiteSpaces(searchText.toLowerCase()),
-            title.toLowerCase()
-          ) ||
-            routeNames.some((routeName) =>
-              isSubsequence(
-                removeWhiteSpaces(searchText.toLowerCase()),
-                routeName.toLowerCase()
-              )
-            )) &&
-          (regionNameToShow === REGIONS.all.name ||
-            (regionNameToShow === REGIONS.inView.name &&
-              mapRef?.getBounds().contains(position)) ||
-            region.name === regionNameToShow)
-      ),
+      Object.values(UPGRADE_VIDEOS)
+        .filter(
+          ({ title, region, routeNames, position }) =>
+            (isSubsequence(
+              removeWhiteSpaces(searchText.toLowerCase()),
+              title.toLowerCase()
+            ) ||
+              routeNames.some((routeName) =>
+                isSubsequence(
+                  removeWhiteSpaces(searchText.toLowerCase()),
+                  routeName.toLowerCase()
+                )
+              )) &&
+            (regionNameToShow === REGIONS.all.name ||
+              (regionNameToShow === REGIONS.inView.name &&
+                mapRef?.getBounds().contains(position)) ||
+              region.name === regionNameToShow)
+        )
+        .toSorted((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0)),
     // eslint-disable-next-line
     [searchText, regionNameToShow, mapRef, mapChangedIndicator]
   );
