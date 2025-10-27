@@ -6,7 +6,7 @@ import RouteVideo from "./RouteVideo";
 
 export default function Leg({ leg }) {
   const hasNoVideos = Object.entries(leg.videos).length === 0;
-  const isScreenTooNarrow = window.innerWidth < WIDTH_BREAKPOINT;
+  const screenIsTooNarrow = window.innerWidth < WIDTH_BREAKPOINT;
 
   return (
     <>
@@ -23,7 +23,7 @@ export default function Leg({ leg }) {
 
       <div
         style={{
-          display: isScreenTooNarrow ? "inline-grid" : "flex",
+          display: screenIsTooNarrow ? "inline-grid" : "flex",
           marginBottom: "4px",
         }}
       >

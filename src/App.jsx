@@ -24,7 +24,7 @@ export default function App() {
   useHiddenParser();
 
   // only check on initial page load
-  const [isScreenTooNarrow] = useState(window.innerWidth < WIDTH_BREAKPOINT);
+  const [screenIsTooNarrow] = useState(window.innerWidth < WIDTH_BREAKPOINT);
 
   return (
     <SettingContext.Provider value={settings}>
@@ -37,10 +37,10 @@ export default function App() {
               <MainMap
                 mapRef={mapRef}
                 setMapRef={setMapRef}
-                fullWidth={isScreenTooNarrow}
+                fullWidth={screenIsTooNarrow}
               />
             )}
-            {isScreenTooNarrow ? (
+            {screenIsTooNarrow ? (
               <PhoneDialogs mapRef={mapRef} />
             ) : (
               <Sidebar mapRef={mapRef} />
