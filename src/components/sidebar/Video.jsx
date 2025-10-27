@@ -62,39 +62,44 @@ export default function Video({
           </span>
           <br />
           <span style={{ fontSize: "90%" }}>
-            {displayDistance(meters)}, {formatDuration(minutes)},{" "}
-            {
-              <SpeedDropdown
-                options={speedOptions}
-                selected={selectedSpeedOption}
-                setSelected={onSelectSpeedOption}
-              />
-            }
-            {speedTextSuffix}
+            {displayDistance(meters)}, {formatDuration(minutes)}
+            {speedOptions && (
+              <>
+                ,{" "}
+                <SpeedDropdown
+                  options={speedOptions}
+                  selected={selectedSpeedOption}
+                  setSelected={onSelectSpeedOption}
+                />
+                {speedTextSuffix}
+              </>
+            )}
           </span>
         </span>
-        <span
-          style={{
-            position: "absolute",
-            right: 0,
-            top: 0,
-            width: "4em",
-            cursor: "pointer",
-          }}
-          title="Highlight on Map"
-          onClick={onClick}
-        >
-          <label className="container">
-            <input
-              name="show-video"
-              type="checkbox"
-              checked={isSelected}
-              onChange={onClick}
-            />
-            <span className="slider" />
-          </label>
-          <img src={iconSrc} style={{ height: "30px", paddingLeft: "4px" }} />
-        </span>
+        {Boolean(isSelected) === isSelected && (
+          <span
+            style={{
+              position: "absolute",
+              right: 0,
+              top: 0,
+              width: "4em",
+              cursor: "pointer",
+            }}
+            title="Highlight on Map"
+            onClick={onClick}
+          >
+            <label className="container">
+              <input
+                name="show-video"
+                type="checkbox"
+                checked={isSelected}
+                onChange={onClick}
+              />
+              <span className="slider" />
+            </label>
+            <img src={iconSrc} style={{ height: "30px", paddingLeft: "4px" }} />
+          </span>
+        )}
       </div>
       <div>
         <iframe
