@@ -79,13 +79,21 @@ const filterReducer = (state, action) => {
   }
 };
 
-const initialFilters = (searchParams) => ({
-  selectedRouteName: getRoute(decodeURIComponent(searchParams.get("route")))
-    ?.name,
-  selectedVideoId: getRouteVideo(decodeURIComponent(searchParams.get("video")))
-    ?.id,
-  selectedUpgradeId: null,
-});
+const initialFilters = (searchParams) => {
+  const selectedRouteName =
+    getRoute(decodeURIComponent(searchParams.get("route")))?.name || null;
+  const selectedVideoId =
+    getRouteVideo(decodeURIComponent(searchParams.get("video")))?.id || null;
+  const selectedUpgradeId =
+    getUpgradeVideo(decodeURIComponent(searchParams.get("upgrade")))?.id ||
+    null;
+
+  return {
+    selectedRouteName,
+    selectedVideoId: selectedRouteName ? selectedVideoId : null,
+    selectedUpgradeId: selectedRouteName ? null : selectedUpgradeId,
+  };
+};
 
 const filtersReducer = (state, action) => {
   switch (action.type) {
@@ -159,8 +167,9 @@ export default function useFilters() {
     updateSearchParams(searchParams, {
       route: selectedRouteName,
       video: selectedVideoId,
+      upgrade: selectedUpgradeId,
     });
-  }, [searchParams, selectedRouteName, selectedVideoId]);
+  }, [searchParams, selectedRouteName, selectedVideoId, selectedUpgradeId]);
 
   const highlightedRoute = getAugmentedRoute(highlightedRouteName);
   const highlightedUpgrade = getUpgradeVideo(highlightedUpgradeId);
