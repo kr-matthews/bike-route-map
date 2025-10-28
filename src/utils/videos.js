@@ -73,3 +73,5 @@ export const formatDate = (date) =>
     month: "short",
     year: "numeric",
   });
+
+export const formatDuration = (minutes) => `${minutes} min`;
