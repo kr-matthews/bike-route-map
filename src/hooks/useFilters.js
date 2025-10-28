@@ -39,6 +39,7 @@ const filterReducer = (state, action) => {
           ...state,
           selectedRouteName: action.routeName,
           selectedVideoId: null,
+          selectedUpgradeId: null,
         };
       }
 
@@ -46,7 +47,11 @@ const filterReducer = (state, action) => {
       if (state.selectedVideoId === action.videoId) {
         return { ...state, selectedVideoId: null };
       } else {
-        return { ...state, selectedVideoId: action.videoId };
+        return {
+          ...state,
+          selectedVideoId: action.videoId,
+          selectedUpgradeId: null,
+        };
       }
 
     case "select-route-video":
@@ -54,7 +59,20 @@ const filterReducer = (state, action) => {
         ...state,
         selectedRouteName: action.routeName,
         selectedVideoId: action.videoId,
+        selectedUpgradeId: null,
       };
+
+    case "select-upgrade":
+      if (state.selectedUpgradeId === action.upgradeId) {
+        return { ...state, selectedUpgradeId: null };
+      } else {
+        return {
+          ...state,
+          selectedRouteName: null,
+          selectedVideoId: null,
+          selectedUpgradeId: action.upgradeId,
+        };
+      }
 
     case "reset":
       return initialFilters(new URLSearchParams());
@@ -132,13 +150,10 @@ export default function useFilters() {
 
   const [highlightedRouteName, setHighlightedRouteName] = useState(null);
   const [highlightedUpgradeId, setHighlightedUpgradeId] = useState(null);
-  const [{ selectedRouteName, selectedVideoId }, dispatchSelected] = useReducer(
-    filterReducer,
-    searchParams,
-    initialFilters
-  );
-  // !! search param
-  const [selectedUpgradeId, setSelectedUpgradeId] = useState(null);
+  const [
+    { selectedRouteName, selectedVideoId, selectedUpgradeId },
+    dispatchSelected,
+  ] = useReducer(filterReducer, searchParams, initialFilters);
 
   useEffect(() => {
     updateSearchParams(searchParams, {
@@ -167,8 +182,7 @@ export default function useFilters() {
     []
   );
   const selectUpgradeId = useCallback(
-    (upgradeId) =>
-      setSelectedUpgradeId((oldId) => (upgradeId === oldId ? null : upgradeId)),
+    (upgradeId) => dispatchSelected({ type: "select-upgrade", upgradeId }),
     []
   );
 
