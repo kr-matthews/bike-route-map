@@ -206,7 +206,7 @@ export const UPGRADE_VIDEOS = {
   },
   bcParkwayBegbieWb25: {
     id: "A8Heh9NSdAY",
-    title: "CVG/BC Parkway near Begbie/Quayside",
+    title: "CVG/BCP near Begbie/Quayside",
     routeNames: [ROUTES.bcParkway.name, ROUTES.centralValleyGreenway.name],
     direction: "westbound",
     date: new Date("Aug 28 2025"),
