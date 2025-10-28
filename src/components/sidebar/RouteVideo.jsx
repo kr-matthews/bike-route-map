@@ -16,6 +16,7 @@ import {
   formatDuration,
 } from "../../utils/videos";
 import { displayDistance } from "../../utils/strings";
+import { WHITE } from "../../utils/colours";
 
 const trivialOptions = ["1x"];
 const bothOptions = ["1x", "4x"];
@@ -47,6 +48,7 @@ export default function RouteVideo({ video, direction }) {
       shouldScrollTo={isSelected}
       backgroundColor={backgroundColor}
       borderColor={borderColor}
+      textColor={WHITE}
       speedOptions={speedOptions}
       title={`${displayDirection(direction)}, ${formatDate(video.date)}`}
       subtitle={

@@ -6,6 +6,7 @@ export default function Video({
   shouldScrollTo,
   backgroundColor,
   borderColor,
+  textColor,
   title,
   subtitle,
   actionable,
@@ -42,12 +43,13 @@ export default function Video({
               textTransform: "capitalize",
               fontWeight: "Bold",
               fontSize: "100%",
+              color: textColor,
             }}
           >
             {title}
           </span>
           <br />
-          <span style={{ fontSize: "90%" }}>{subtitle}</span>
+          <span style={{ fontSize: "90%", color: textColor }}>{subtitle}</span>
         </span>
         {actionable && (
           <span
