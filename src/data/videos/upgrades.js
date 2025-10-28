@@ -244,4 +244,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.26591, -123.01561],
     region: REGIONS.burnaby,
   },
+  barnetHwyBayviewWb25: {
+    id: "XG4MG0QzdUA",
+    title: "Barnet Hwy → Frances Union",
+    routeNames: [ROUTES.barnet.name, ROUTES.francesUnion.name],
+    direction: "westbound",
+    date: new Date("Oct 17 2025"),
+    minutes: 0,
+    position: [49.2869, -122.95327],
+    region: REGIONS.burnaby,
+  },
 };
