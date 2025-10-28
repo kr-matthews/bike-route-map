@@ -6,9 +6,9 @@ export default function Video({
   shouldScrollTo,
   backgroundColor,
   borderColor,
-  line1Child,
-  line2Child,
-  rightChild,
+  title,
+  subtitle,
+  actionable,
 }) {
   const ref = useRef();
 
@@ -44,12 +44,12 @@ export default function Video({
               fontSize: "100%",
             }}
           >
-            {line1Child}
+            {title}
           </span>
           <br />
-          <span style={{ fontSize: "90%" }}>{line2Child}</span>
+          <span style={{ fontSize: "90%" }}>{subtitle}</span>
         </span>
-        {rightChild && (
+        {actionable && (
           <span
             style={{
               position: "absolute",
@@ -59,7 +59,7 @@ export default function Video({
               cursor: "pointer",
             }}
           >
-            {rightChild}
+            {actionable}
           </span>
         )}
       </div>

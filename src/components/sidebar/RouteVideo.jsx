@@ -48,8 +48,8 @@ export default function RouteVideo({ video, direction }) {
       backgroundColor={backgroundColor}
       borderColor={borderColor}
       speedOptions={speedOptions}
-      line1Child={`${displayDirection(direction)}, ${formatDate(video.date)}`}
-      line2Child={
+      title={`${displayDirection(direction)}, ${formatDate(video.date)}`}
+      subtitle={
         <>
           {displayDistance(video.distance)}, {formatDuration(video.minutes)},{" "}
           <SpeedDropdown
@@ -60,7 +60,7 @@ export default function RouteVideo({ video, direction }) {
           {speedTextSuffix}
         </>
       }
-      rightChild={
+      actionable={
         <span title="Highlight on Map" onClick={toggleVideo}>
           <label className="container">
             <input
