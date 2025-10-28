@@ -12,10 +12,13 @@ import Segment from "./Segment";
 import "./map.css";
 
 export default function MainMap({ mapRef, setMapRef, fullWidth = false }) {
-  const { selectRoute, selectedRoute } = useContext(FilterContext);
+  const { selectRoute, selectedRoute, selectedUpgrade } =
+    useContext(FilterContext);
 
   const mapBounds = selectedRoute
     ? getRouteBounds(selectedRoute.name)
+    : selectedUpgrade
+    ? [selectedUpgrade.position, selectedUpgrade.position]
     : DEFAULT_BOUNDS;
 
   useEffect(
