@@ -20,13 +20,15 @@ export function removeWhiteSpaces(str) {
 export const disclaimer =
   "Disclaimer: While efforts are made to keep the data here accurate and up-to-date, no guarantees are provided and conditions may have changed.";
 
+const uppercaseFirstChar = (str) => `${str[0].toUpperCase()}${str.slice(1)}`;
+
 export const formatDirection = (direction) => {
   switch (direction) {
     case "counterclockwise":
       return "C-Clockwise";
 
     default:
-      return direction;
+      return uppercaseFirstChar(direction);
   }
 };
 

@@ -40,7 +40,6 @@ export default function Video({
         <span>
           <span
             style={{
-              textTransform: "capitalize",
               fontWeight: "Bold",
               fontSize: "100%",
               color: textColor,
