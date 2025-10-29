@@ -136,6 +136,7 @@ export const UPGRADE_VIDEOS = {
     id: "pYgSmSh1oRA",
     title: "Crosstown Greenway @ 22nd St Station",
     routeNames: [ROUTES.crosstownNewWestminster.name],
+    direction: "eastbound",
     date: new Date("Jun 13 2025"),
     minutes: 2,
     position: [49.20084, -122.94829],
