@@ -16,6 +16,7 @@ import {
   routeVideoCumulativeDistance,
   routeVideoCumulativeMinutes,
   routeVideoUniqueDistanceCovered,
+  upgradeVideoCount,
 } from "../../utils/videos";
 
 export default function About({ navigateTo }) {
@@ -25,10 +26,15 @@ export default function About({ navigateTo }) {
         style={{ overflowY: "scroll", overflow: "auto", paddingRight: "1em" }}
       >
         <p>
-          This map features {routeVideoCount} videos with a cumulative length of
-          over {Math.floor(routeVideoCumulativeMinutes / 60)} hours, covering a
+          This map features {routeVideoCount} videos of bike routes, with a
+          cumulative length of over{" "}
+          {Math.floor(routeVideoCumulativeMinutes / 60)} hours, covering a
           unique {formatDistance(routeVideoUniqueDistanceCovered)} (
           {formatDistance(routeVideoCumulativeDistance)} in total).
+        </p>
+        <p>
+          It also has {upgradeVideoCount} videos of cycling infrastructure
+          upgrades.
         </p>
         <ul>
           <li>
@@ -41,6 +47,10 @@ export default function About({ navigateTo }) {
           <li>
             <b>Right-click</b> on a segment for a corresponding <b>video</b>{" "}
             (when available).
+          </li>
+          <li>
+            <b>Click</b> on an upgrade icon for a <b>video</b> (turn on in
+            upgrade panel).
           </li>
           <li>
             Show your <b>current location</b> (top-left of map); best when used

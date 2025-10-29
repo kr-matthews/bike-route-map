@@ -48,6 +48,8 @@ export const getUpgradeVideo = (upgradeId) =>
 
 export const routeVideoCount = Object.keys(ROUTE_VIDEOS).length;
 
+export const upgradeVideoCount = Object.keys(UPGRADE_VIDEOS).length;
+
 export const routeVideoCumulativeMinutes = Object.values(ROUTE_VIDEOS).reduce(
   (s, v) => s + v.minutes,
   0
