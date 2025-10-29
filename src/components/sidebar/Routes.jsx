@@ -2,7 +2,7 @@ import { useContext, useEffect, useMemo, useState } from "react";
 import { FilterContext } from "../../App";
 import { Search } from "./Search";
 import {
-  displayDistance,
+  formatDistance,
   isSubsequence,
   removeWhiteSpaces,
 } from "../../utils/strings";
@@ -122,7 +122,7 @@ function Route({ route, mapRef }) {
     route.isIncomplete
       ? "**Note: Route shown on map may be incomplete.**"
       : null,
-    displayDistance(distance),
+    formatDistance(distance),
     videoCount ? `${videoCount} video${videoCount === 1 ? "" : "s"}` : null,
     "Click for details & videos",
     "Right-click to zoom-to",

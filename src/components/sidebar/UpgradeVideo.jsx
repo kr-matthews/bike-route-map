@@ -1,10 +1,10 @@
 import { BLACK, LIGHT_YELLOW, WHITE } from "../../utils/colours";
 import { WIDTH_BREAKPOINT } from "../../utils/constants";
 import {
-  displayDirection,
   formatDate,
+  formatDirection,
   formatDuration,
-} from "../../utils/videos";
+} from "../../utils/strings";
 import Video from "./Video";
 
 export default function UpgradeVideo({ upgrade }) {
@@ -23,7 +23,7 @@ export default function UpgradeVideo({ upgrade }) {
           backgroundColor={LIGHT_YELLOW}
           borderColor={WHITE}
           textColor={BLACK}
-          title={`${displayDirection(upgrade.direction)}, ${formatDate(
+          title={`${formatDirection(upgrade.direction)}, ${formatDate(
             upgrade.date
           )}, ${formatDuration(upgrade.minutes)}`}
         />

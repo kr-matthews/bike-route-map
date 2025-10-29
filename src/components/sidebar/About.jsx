@@ -7,7 +7,7 @@ import {
   CodeLink,
   Link,
 } from "footer-dependency/dist/lib";
-import { disclaimer, displayDistance } from "../../utils/strings";
+import { disclaimer, formatDistance } from "../../utils/strings";
 import Panel from "./Panel";
 import { VIEWS } from "./Sidebar";
 import { BLACK, RED } from "../../utils/colours";
@@ -27,8 +27,8 @@ export default function About({ navigateTo }) {
         <p>
           This map features {routeVideoCount} videos with a cumulative length of
           over {Math.floor(routeVideoCumulativeMinutes / 60)} hours, covering a
-          unique {displayDistance(routeVideoUniqueDistanceCovered)} (
-          {displayDistance(routeVideoCumulativeDistance)} in total).
+          unique {formatDistance(routeVideoUniqueDistanceCovered)} (
+          {formatDistance(routeVideoCumulativeDistance)} in total).
         </p>
         <ul>
           <li>

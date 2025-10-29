@@ -4,7 +4,7 @@ import Marker from "./Marker";
 import upgradeIcon from "../../images/marker-upgrade.svg";
 import upgradeIconBlue from "../../images/marker-upgrade-blue.svg";
 import { UPGRADE_VIDEOS } from "../../data/videos/upgrades";
-import { formatDate } from "../../utils/videos";
+import { formatDate } from "../../utils/strings";
 
 export default function UpgradeMarkers({ mapRef }) {
   const { upgradesShown } = useContext(SettingContext);

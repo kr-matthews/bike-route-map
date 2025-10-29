@@ -20,6 +20,24 @@ export function removeWhiteSpaces(str) {
 export const disclaimer =
   "Disclaimer: While efforts are made to keep the data here accurate and up-to-date, no guarantees are provided and conditions may have changed.";
 
-export const displayDistance = (meters) => `${(meters / 1000).toFixed(1)} km`;
+export const formatDirection = (direction) => {
+  switch (direction) {
+    case "counterclockwise":
+      return "C-Clockwise";
 
-export const displayPercent = (decimal) => `${(decimal * 100).toFixed(0)}%`;
+    default:
+      return direction;
+  }
+};
+
+export const formatDistance = (meters) => `${(meters / 1000).toFixed(1)} km`;
+
+export const formatPercent = (decimal) => `${(decimal * 100).toFixed(0)}%`;
+
+export const formatDate = (date) =>
+  date.toLocaleString("en-US", {
+    month: "short",
+    year: "numeric",
+  });
+
+export const formatDuration = (minutes) => `${minutes} min`;

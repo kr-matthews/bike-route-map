@@ -11,11 +11,11 @@ import endIcon from "../../images/marker-red.svg";
 import "./toggleSwitch.css";
 import Video from "./Video";
 import {
-  displayDirection,
   formatDate,
+  formatDirection,
+  formatDistance,
   formatDuration,
-} from "../../utils/videos";
-import { displayDistance } from "../../utils/strings";
+} from "../../utils/strings";
 import { WHITE } from "../../utils/colours";
 
 const trivialOptions = ["1x"];
@@ -50,10 +50,10 @@ export default function RouteVideo({ video, direction }) {
       borderColor={borderColor}
       textColor={WHITE}
       speedOptions={speedOptions}
-      title={`${displayDirection(direction)}, ${formatDate(video.date)}`}
+      title={`${formatDirection(direction)}, ${formatDate(video.date)}`}
       subtitle={
         <>
-          {displayDistance(video.distance)}, {formatDuration(video.minutes)},{" "}
+          {formatDistance(video.distance)}, {formatDuration(video.minutes)},{" "}
           <SpeedDropdown
             options={speedOptions}
             selected={showingTimeLapse ? "4x" : "1x"}

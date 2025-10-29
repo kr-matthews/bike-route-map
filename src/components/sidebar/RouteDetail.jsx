@@ -2,7 +2,7 @@ import { useContext } from "react";
 import Leg from "./Leg";
 import { FilterContext } from "../../App";
 import { getBackgroundColor, getRouteBounds } from "../../utils/routes";
-import { displayDistance, displayPercent } from "../../utils/strings";
+import { formatDistance, formatPercent } from "../../utils/strings";
 import { TYPES } from "../../utils/segmentTypes";
 import CloseIcon from "../icons/CloseIcon";
 import ZoomToIcon from "../icons/ZoomToIcon";
@@ -40,9 +40,9 @@ export default function RouteDetail({ mapRef }) {
     : [
         isAllOneWay
           ? null
-          : `${displayDistance(bidirectionalDistance)} of two-way travel`,
-        `${displayDistance(oneWayDistance)} of one-way travel`,
-        `${displayDistance(
+          : `${formatDistance(bidirectionalDistance)} of two-way travel`,
+        `${formatDistance(oneWayDistance)} of one-way travel`,
+        `${formatDistance(
           weightedDistance
         )} average* distance in each direction\n*if one direction of travel has gaps, this number will be misleading`,
       ]
@@ -51,7 +51,7 @@ export default function RouteDetail({ mapRef }) {
 
   const proportionsTitle = TYPES.map(({ key, name }) =>
     weightedProportions[key]
-      ? `${displayPercent(weightedProportions[key] / weightedDistance)} ${name}`
+      ? `${formatPercent(weightedProportions[key] / weightedDistance)} ${name}`
       : null
   )
     .filter(Boolean)
@@ -94,7 +94,7 @@ export default function RouteDetail({ mapRef }) {
             cursor: distanceTitle ? "help" : undefined,
           }}
         >
-          Distance: {displayDistance(distance)}
+          Distance: {formatDistance(distance)}
           {distanceTitle && "*"}
         </h4>
         <div
