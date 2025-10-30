@@ -1,4 +1,5 @@
 import {
+  ARBUTUS_GREENWAY_BEFORE_N_END,
   FIR_5TH,
   GRANVILLE_DRAKE_W,
   HOWE_DRAKE_W,
@@ -10,7 +11,7 @@ import {
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
-const W_OF_FIR_5TH = [49.2671, -123.14128];
+const W_OF_FIR_5TH = [49.26706, -123.14151];
 const FIR_5TH_NE = [49.26714, -123.14083];
 const ELEVATION_S = [49.26764, -123.13858];
 const ELEVATION_N = [49.27522, -123.12927];
@@ -24,6 +25,11 @@ const GRANVILLE_PAINT_START = [49.27623, -123.1277];
 export const GRANVILLE_CONNECTOR = [
   // s end
   {
+    description: "new path parallel to fir",
+    type: "dedicated",
+    positions: [ARBUTUS_GREENWAY_BEFORE_N_END, W_OF_FIR_5TH],
+  },
+  {
     description: "pine & 5th",
     type: "quiet",
     videoIds: [
@@ -31,7 +37,12 @@ export const GRANVILLE_CONNECTOR = [
       ROUTE_VIDEOS.granvilleConnectorSb.id,
     ],
     videoIdsEndAtStart: [ROUTE_VIDEOS.granvilleConnectorSb.id],
-    positions: [PINE_ARBUTUS_GREENWAY, [49.26712, -123.14327], W_OF_FIR_5TH],
+    positions: [
+      PINE_ARBUTUS_GREENWAY,
+      [49.26712, -123.14327],
+      [49.2671, -123.14158],
+      W_OF_FIR_5TH,
+    ],
   },
   {
     description: "crossing fir west",
