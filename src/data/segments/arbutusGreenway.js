@@ -241,14 +241,17 @@ export const ARBUTUS_GREENWAY = [
   },
   {
     routeNames: [ROUTES.arbutusGreenway.name],
-    description: "pine to fir",
+    description: "pine to path",
     type: "combined",
     videoIds: [
       ROUTE_VIDEOS.arbutusGreenwayNb.id,
+      ROUTE_VIDEOS.granvilleConnectorFirPathSb.id,
       ROUTE_VIDEOS.granvilleConnectorFirSb.id,
     ],
-    videoIdsEndAtStart: [ROUTE_VIDEOS.granvilleConnectorFirSb.id],
-    videoIdsEndAtEnd: [ROUTE_VIDEOS.arbutusGreenwayNb.id],
+    videoIdsEndAtStart: [
+      ROUTE_VIDEOS.granvilleConnectorFirSb.id,
+      ROUTE_VIDEOS.granvilleConnectorFirPathSb.id,
+    ],
     positions: [
       PINE_ARBUTUS_GREENWAY,
       [49.26643, -123.14238],
@@ -256,6 +259,19 @@ export const ARBUTUS_GREENWAY = [
       [49.26647, -123.14193],
       [49.2665, -123.14177],
       [49.26654, -123.14161],
+      ARBUTUS_GREENWAY_BEFORE_N_END,
+    ],
+  },
+  {
+    routeNames: [ROUTES.arbutusGreenway.name],
+    description: "path to fir",
+    type: "combined",
+    videoIds: [
+      ROUTE_VIDEOS.arbutusGreenwayNb.id,
+      ROUTE_VIDEOS.granvilleConnectorFirSb.id,
+    ],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.arbutusGreenwayNb.id],
+    positions: [
       ARBUTUS_GREENWAY_BEFORE_N_END,
       [49.26661, -123.14142],
       [49.26668, -123.14127],

@@ -286,6 +286,10 @@ export const ROUTES = {
     legs: [
       { videos: { northbound: ROUTE_VIDEOS.arbutusGreenwayNb } },
       {
+        name: "Path parallel to Fir St connecting to Granville Connector",
+        videos: { southbound: ROUTE_VIDEOS.granvilleConnectorFirPathSb },
+      },
+      {
         name: "Fir St connection with Granville Connector",
         videos: { southbound: ROUTE_VIDEOS.granvilleConnectorFirSb },
       },
@@ -1235,6 +1239,10 @@ export const ROUTES = {
           northbound: ROUTE_VIDEOS.granvilleConnectorNb,
           southbound: ROUTE_VIDEOS.granvilleConnectorSb,
         },
+      },
+      {
+        name: "Path parallel to Fir St connecting to Arbutus Greenway",
+        videos: { southbound: ROUTE_VIDEOS.granvilleConnectorFirPathSb },
       },
       {
         name: "Fir St connection with Arbutus Greenway",

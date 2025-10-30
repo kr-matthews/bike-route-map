@@ -882,6 +882,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Aug 09 2025"),
     minutes: 1,
   },
+  granvilleConnectorFirPathSb: {
+    id: "gyTbb_TOR4k",
+    date: new Date("Oct 29 2025"),
+    minutes: 1,
+  },
   granvilleConnectorGranvilleSb: {
     id: "DsJjOBrFd0E",
     date: new Date("Aug 09 2025"),
