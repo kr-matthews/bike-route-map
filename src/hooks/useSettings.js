@@ -1,7 +1,7 @@
 import { DEFAULT_TILE_LAYER } from "../utils/map";
 import useSavedState from "./useSavedState";
 
-const DEFAULT_UPGRADES_SHOWN = true;
+const DEFAULT_UPGRADES_SHOWN = false;
 const DEFAULT_VIDEO_SPEED = 4;
 
 export default function useSettings() {
