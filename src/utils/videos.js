@@ -4,8 +4,6 @@ import { ROUTE_VIDEOS } from "../data/videos/routes";
 import { UPGRADE_VIDEOS } from "../data/videos/upgrades";
 import { sumSegmentsLengths } from "./segments";
 
-// !! review file
-
 // route videos
 
 export function getRouteVideo(videoId) {
