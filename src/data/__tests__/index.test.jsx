@@ -126,6 +126,25 @@ describe("data", () => {
     });
   });
 
+  describe.each(Object.values(VIDEOS.upgrades))(
+    "upgrade video $title",
+    (upgrade) => {
+      test(`has route names`, () => {
+        expect(upgrade.routeNames).toEqual(expect.any(Array));
+        expect(upgrade.routeNames?.length).toBeGreaterThanOrEqual(1);
+      });
+      test(`has direction`, () => {
+        expect(upgrade.direction).toBeTruthy();
+      });
+      test(`has position`, () => {
+        expect(upgrade.position).toHaveLength(2);
+      });
+      test(`has region`, () => {
+        expect(upgrade.region).toBeTruthy();
+      });
+    }
+  );
+
   test("no unused route videos", () => {
     const unusedRouteVideos = Object.values(ROUTE_VIDEOS).filter(
       (video) => !routeVideoIds.includes(video.id)
