@@ -1,11 +1,13 @@
 import PhoneWarning from "./PhoneWarning";
 import RouteDialog from "./RouteDialog";
+import UpgradeDialog from "./UpgradeDialog";
 
 export default function PhoneDialogs({ mapRef }) {
   // phone warning last so that it appears on top
   return (
     <>
       <RouteDialog mapRef={mapRef} />
+      <UpgradeDialog mapRef={mapRef} />
       <PhoneWarning />
     </>
   );

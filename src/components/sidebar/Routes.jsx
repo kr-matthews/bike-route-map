@@ -2,7 +2,7 @@ import { useContext, useEffect, useMemo, useState } from "react";
 import { FilterContext } from "../../App";
 import { Search } from "./Search";
 import {
-  displayDistance,
+  formatDistance,
   isSubsequence,
   removeWhiteSpaces,
 } from "../../utils/strings";
@@ -60,10 +60,12 @@ export default function Routes({ navigateTo, mapRef }) {
     [searchText, regionNameToShow, mapRef, mapChangedIndicator]
   );
 
+  const s = routesToShow.length === 1 ? "" : "s";
+
   return (
     <Panel
       name={VIEWS.routes.name}
-      title={`${VIEWS.routes.name} (${routesToShow.length})`}
+      title={VIEWS.routes.name}
       navigateTo={navigateTo}
     >
       <ListTypeDropdown
@@ -72,9 +74,11 @@ export default function Routes({ navigateTo, mapRef }) {
       />
       <Search text={searchText} setText={setSearchText} />
 
-      {region.notes && <p style={{ marginTop: 0 }}>{region.notes}</p>}
+      <p style={{ marginTop: 0, marginRight: "12px" }}>
+        Listing {routesToShow.length} route{s}. {region.notes}
+      </p>
 
-      {routesToShow.length ? (
+      {routesToShow.length > 0 && (
         <div
           style={{
             flex: 2,
@@ -89,8 +93,6 @@ export default function Routes({ navigateTo, mapRef }) {
             <Route key={route.name} route={route} mapRef={mapRef} />
           ))}
         </div>
-      ) : (
-        "No routes match the search/region"
       )}
     </Panel>
   );
@@ -120,7 +122,7 @@ function Route({ route, mapRef }) {
     route.isIncomplete
       ? "**Note: Route shown on map may be incomplete.**"
       : null,
-    displayDistance(distance),
+    formatDistance(distance),
     videoCount ? `${videoCount} video${videoCount === 1 ? "" : "s"}` : null,
     "Click for details & videos",
     "Right-click to zoom-to",

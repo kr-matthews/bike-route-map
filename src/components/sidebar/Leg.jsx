@@ -1,12 +1,12 @@
 import { WIDTH_BREAKPOINT } from "../../utils/constants";
 import { getAugmentedRouteVideo } from "../../utils/videos";
-import Video from "./Video";
+import RouteVideo from "./RouteVideo";
 
 // !!! add leg data and highlight on hover
 
 export default function Leg({ leg }) {
   const hasNoVideos = Object.entries(leg.videos).length === 0;
-  const isScreenTooNarrow = window.innerWidth < WIDTH_BREAKPOINT;
+  const screenIsTooNarrow = window.innerWidth < WIDTH_BREAKPOINT;
 
   return (
     <>
@@ -23,7 +23,7 @@ export default function Leg({ leg }) {
 
       <div
         style={{
-          display: isScreenTooNarrow ? "inline-grid" : "flex",
+          display: screenIsTooNarrow ? "inline-grid" : "flex",
           marginBottom: "4px",
         }}
       >
@@ -31,7 +31,7 @@ export default function Leg({ leg }) {
           <p style={{ paddingLeft: "1em" }}>No videos, yet. Come back later.</p>
         )}
         {Object.entries(leg.videos).map(([direction, video]) => (
-          <Video
+          <RouteVideo
             key={video.id}
             video={getAugmentedRouteVideo(video.id)}
             direction={direction}

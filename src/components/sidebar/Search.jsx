@@ -1,6 +1,6 @@
 export function Search({ text, setText }) {
   return (
-    <div style={{ position: "absolute", top: 25, left: 320 }}>
+    <div style={{ position: "absolute", top: 25, left: 285 }}>
       <input
         id="route-search"
         style={{ borderRadius: 5, borderWidth: 1, width: 110 }}

@@ -1,7 +1,10 @@
 import { ROUTES } from "../data/routes";
 import { SEGMENTS } from "../data/segments";
 import { ROUTE_VIDEOS } from "../data/videos/routes";
+import { UPGRADE_VIDEOS } from "../data/videos/upgrades";
 import { sumSegmentsLengths } from "./segments";
+
+// route videos
 
 export function getRouteVideo(videoId) {
   return Object.values(ROUTE_VIDEOS).find(
@@ -28,16 +31,6 @@ export const getRouteVideoDistance = (videoId) =>
 export const routeVideoUniqueDistanceCovered =
   sumSegmentsLengths(segmentsWithAnyVideo);
 
-export const displayDirection = (direction) => {
-  switch (direction) {
-    case "counterclockwise":
-      return "C-Clockwise";
-
-    default:
-      return direction;
-  }
-};
-
 const AUGMENTED_ROUTE_VIDEOS = Object.entries(ROUTE_VIDEOS).reduce(
   (acc, [key, video]) => {
     acc[key] = {
@@ -63,3 +56,10 @@ export const routeVideoCumulativeDistance = Object.values(ROUTE_VIDEOS).reduce(
   (s, v) => s + getRouteVideoDistance(v.id),
   0
 );
+
+// upgrade videos
+
+export const getUpgradeVideo = (upgradeId) =>
+  Object.values(UPGRADE_VIDEOS).find((upgrade) => upgrade.id === upgradeId);
+
+export const upgradeVideoCount = Object.keys(UPGRADE_VIDEOS).length;

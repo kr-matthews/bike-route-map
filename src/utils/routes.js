@@ -116,6 +116,7 @@ export const getBackgroundColor = (route, isHighlighted = false) => {
 const gradientPortion = (colour, weight, totalWeight) =>
   `${colour} ${(100 * weight) / totalWeight}%`;
 
+// !! add upgrades and show them in the route panel
 export const AUGMENTED_ROUTES = Object.entries(ROUTES).reduce(
   (acc, [key, route]) => {
     acc[key] = {

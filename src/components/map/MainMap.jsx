@@ -7,14 +7,18 @@ import { FilterContext } from "../../App";
 import CurrentLocation from "./CurrentLocation";
 import PanesAndTiles from "./PanesAndTiles";
 import PolylineCreator from "./PolylineCreator";
+import UpgradeMarkers from "./UpgradeMarkers";
 import Segment from "./Segment";
 import "./map.css";
 
 export default function MainMap({ mapRef, setMapRef, fullWidth = false }) {
-  const { selectRoute, selectedRoute } = useContext(FilterContext);
+  const { selectRoute, selectedRoute, selectedUpgrade } =
+    useContext(FilterContext);
 
   const mapBounds = selectedRoute
     ? getRouteBounds(selectedRoute.name)
+    : selectedUpgrade
+    ? [selectedUpgrade.position, selectedUpgrade.position]
     : DEFAULT_BOUNDS;
 
   useEffect(
@@ -57,6 +61,8 @@ export default function MainMap({ mapRef, setMapRef, fullWidth = false }) {
             segment={segment}
           />
         ))}
+
+        <UpgradeMarkers mapRef={mapRef} />
 
         <CurrentLocation mapRef={mapRef} />
       </MapContainer>

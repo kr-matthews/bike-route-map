@@ -14,6 +14,11 @@ import {
   W_LOOP_E,
   W_LOOP_W,
 } from "../segments/goldenEarsBridge";
+import { VIDEOS } from "../videos";
+
+const ALL_VIDEOS_VALUES = Object.values(VIDEOS)
+  .map((videos) => Object.values(videos))
+  .flat();
 
 // helpers
 
@@ -121,6 +126,25 @@ describe("data", () => {
     });
   });
 
+  describe.each(Object.values(VIDEOS.upgrades))(
+    "upgrade video $title",
+    (upgrade) => {
+      test(`has route names`, () => {
+        expect(upgrade.routeNames).toEqual(expect.any(Array));
+        expect(upgrade.routeNames?.length).toBeGreaterThanOrEqual(1);
+      });
+      test(`has direction`, () => {
+        expect(upgrade.direction).toBeTruthy();
+      });
+      test(`has position`, () => {
+        expect(upgrade.position).toHaveLength(2);
+      });
+      test(`has region`, () => {
+        expect(upgrade.region).toBeTruthy();
+      });
+    }
+  );
+
   test("no unused route videos", () => {
     const unusedRouteVideos = Object.values(ROUTE_VIDEOS).filter(
       (video) => !routeVideoIds.includes(video.id)
@@ -128,16 +152,14 @@ describe("data", () => {
     expect(unusedRouteVideos).toHaveLength(0);
   });
 
-  test("no empty route video ids", () => {
-    const noIdVideos = Object.values(ROUTE_VIDEOS).filter((video) => !video.id);
-    expect(noIdVideos).toHaveLength(0);
+  test("no empty video ids", () => {
+    const videosWithoutId = ALL_VIDEOS_VALUES.filter((video) => !video.id);
+    expect(videosWithoutId).toHaveLength(0);
   });
 
-  test("no duplicate route video ids", () => {
-    const uniqueVideoIds = [
-      ...new Set(Object.values(ROUTE_VIDEOS).map(({ id }) => id)),
-    ];
-    expect(uniqueVideoIds).toHaveLength(Object.values(ROUTE_VIDEOS).length);
+  test("no duplicate video ids", () => {
+    const uniqueVideoIds = [...new Set(ALL_VIDEOS_VALUES.map(({ id }) => id))];
+    expect(uniqueVideoIds).toHaveLength(ALL_VIDEOS_VALUES.length);
   });
 
   test("no duplicate time-lapse route video ids", () => {

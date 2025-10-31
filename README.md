@@ -19,6 +19,7 @@ On GitHub Pages at [https://kr-matthews.github.io/bike-route-map](https://kr-mat
 - Distinguish between types of bike infrastructure (physically separated, quiet street, painted lane, shared lane, highway shoulder).
 - Bridges and tunnels/undercover routes visually distinct.
 - Select a route to see information (including distance and proportions of infrastructure), and embedded YouTube video(s) when available.
+- View with markers for videos of specific infrastructure improvements/upgrades.
 - Explanatory legend.
 - Filter by infrastructure type (physically separated, painted, etc.) and/or by existence of a video.
 - Change background map (standard OSM, CyclOSM, etc.).
@@ -29,7 +30,6 @@ On GitHub Pages at [https://kr-matthews.github.io/bike-route-map](https://kr-mat
 See [enhancements](https://github.com/kr-matthews/bike-route-map/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement) on GitHub.
 
 - More routes in surrounding cities/areas.
-- Map view with pins/videos of specific infrastructure improvements, without having to refilm a whole route.
 
 ## Original Intentions
 

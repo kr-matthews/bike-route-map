@@ -6,7 +6,11 @@ import {
   normalizeElevation,
   normalizeType,
 } from "../utils/segmentTypes";
-import { getAugmentedRouteVideo, getRouteVideo } from "../utils/videos";
+import {
+  getAugmentedRouteVideo,
+  getRouteVideo,
+  getUpgradeVideo,
+} from "../utils/videos";
 import { getAugmentedRoute, getRoute } from "../utils/routes";
 import { useIncompleteVideoView } from "./useIncompleteVideoView";
 
@@ -35,6 +39,7 @@ const filterReducer = (state, action) => {
           ...state,
           selectedRouteName: action.routeName,
           selectedVideoId: null,
+          selectedUpgradeId: null,
         };
       }
 
@@ -42,7 +47,11 @@ const filterReducer = (state, action) => {
       if (state.selectedVideoId === action.videoId) {
         return { ...state, selectedVideoId: null };
       } else {
-        return { ...state, selectedVideoId: action.videoId };
+        return {
+          ...state,
+          selectedVideoId: action.videoId,
+          selectedUpgradeId: null,
+        };
       }
 
     case "select-route-video":
@@ -50,19 +59,41 @@ const filterReducer = (state, action) => {
         ...state,
         selectedRouteName: action.routeName,
         selectedVideoId: action.videoId,
+        selectedUpgradeId: null,
       };
+
+    case "select-upgrade":
+      if (state.selectedUpgradeId === action.upgradeId) {
+        return { ...state, selectedUpgradeId: null };
+      } else {
+        return {
+          ...state,
+          selectedRouteName: null,
+          selectedVideoId: null,
+          selectedUpgradeId: action.upgradeId,
+        };
+      }
 
     case "reset":
       return initialFilters(new URLSearchParams());
   }
 };
 
-const initialFilters = (searchParams) => ({
-  selectedRouteName: getRoute(decodeURIComponent(searchParams.get("route")))
-    ?.name,
-  selectedVideoId: getRouteVideo(decodeURIComponent(searchParams.get("video")))
-    ?.id,
-});
+const initialFilters = (searchParams) => {
+  const selectedRouteName =
+    getRoute(decodeURIComponent(searchParams.get("route")))?.name || null;
+  const selectedVideoId =
+    getRouteVideo(decodeURIComponent(searchParams.get("video")))?.id || null;
+  const selectedUpgradeId =
+    getUpgradeVideo(decodeURIComponent(searchParams.get("upgrade")))?.id ||
+    null;
+
+  return {
+    selectedRouteName,
+    selectedVideoId: selectedRouteName ? selectedVideoId : null,
+    selectedUpgradeId: selectedRouteName ? null : selectedUpgradeId,
+  };
+};
 
 const filtersReducer = (state, action) => {
   switch (action.type) {
@@ -126,22 +157,25 @@ export default function useFilters() {
   // interactions
 
   const [highlightedRouteName, setHighlightedRouteName] = useState(null);
-  const [{ selectedRouteName, selectedVideoId }, dispatchSelected] = useReducer(
-    filterReducer,
-    searchParams,
-    initialFilters
-  );
+  const [highlightedUpgradeId, setHighlightedUpgradeId] = useState(null);
+  const [
+    { selectedRouteName, selectedVideoId, selectedUpgradeId },
+    dispatchSelected,
+  ] = useReducer(filterReducer, searchParams, initialFilters);
 
   useEffect(() => {
     updateSearchParams(searchParams, {
       route: selectedRouteName,
       video: selectedVideoId,
+      upgrade: selectedUpgradeId,
     });
-  }, [searchParams, selectedRouteName, selectedVideoId]);
+  }, [searchParams, selectedRouteName, selectedVideoId, selectedUpgradeId]);
 
   const highlightedRoute = getAugmentedRoute(highlightedRouteName);
+  const highlightedUpgrade = getUpgradeVideo(highlightedUpgradeId);
   const selectedRoute = getAugmentedRoute(selectedRouteName);
   const selectedVideo = getAugmentedRouteVideo(selectedVideoId);
+  const selectedUpgrade = getUpgradeVideo(selectedUpgradeId);
 
   const selectRouteName = useCallback(
     (routeName) => dispatchSelected({ type: "select-route", routeName }),
@@ -154,6 +188,10 @@ export default function useFilters() {
   const selectRouteNameAndVideoId = useCallback(
     (routeName, videoId) =>
       dispatchSelected({ type: "select-route-video", routeName, videoId }),
+    []
+  );
+  const selectUpgradeId = useCallback(
+    (upgradeId) => dispatchSelected({ type: "select-upgrade", upgradeId }),
     []
   );
 
@@ -211,11 +249,15 @@ export default function useFilters() {
   return {
     highlightedRoute,
     highlightRoute: setHighlightedRouteName,
+    highlightedUpgrade,
+    highlightUpgrade: setHighlightedUpgradeId,
     selectedRoute,
     selectRoute: selectRouteName,
     selectedVideo,
     selectVideo: selectVideoId,
     selectRouteAndVideo: selectRouteNameAndVideoId,
+    selectedUpgrade,
+    selectUpgrade: selectUpgradeId,
     isSegmentHidden,
     filters,
     dispatchFilters,
