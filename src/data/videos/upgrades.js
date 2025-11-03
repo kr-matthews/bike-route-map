@@ -255,4 +255,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.2869, -122.95327],
     region: REGIONS.burnaby,
   },
+  fifteenthKnightWb25: {
+    id: "5EVgSBoR-z0",
+    title: "15th at Knight",
+    routeNames: [ROUTES.fourteenthGap.name],
+    direction: "westbound",
+    date: new Date("Oct 29 2025"),
+    minutes: 0,
+    position: [49.25663, -123.07541],
+    region: REGIONS.vancouver,
+  },
 };
