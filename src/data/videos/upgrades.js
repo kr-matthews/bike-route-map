@@ -265,4 +265,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.25663, -123.07541],
     region: REGIONS.vancouver,
   },
+  marineNVLionsGateEb25: {
+    id: "ZnkqB4WARqo",
+    title: "Marine Dr, Lions Gate Bridge to Capilano",
+    routeNames: [ROUTES.marineNv.name],
+    direction: "eastbound",
+    date: new Date("Nov 08 2025"),
+    minutes: 2,
+    position: [49.32501, -123.12546],
+    region: REGIONS.northVancouver, // technically mostly in west vancouver
+  },
 };
