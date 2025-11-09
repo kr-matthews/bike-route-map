@@ -1,10 +1,10 @@
 import {
   CHILCO_GEORGIA_S,
   LIONS_GATE_KLAHANIE,
+  LIONS_GATE_NB_OFF_RAMP_SPLIT,
   LIONS_GATE_SPIRIT_TRAIL_E,
   LIONS_GATE_SPIRIT_TRAIL_W,
   NV_MARINE_W_N,
-  NV_MARINE_W_S,
   STANLEY_PARK_CAUSEWAY_GEORGIA_N,
   STANLEY_PARK_LOOP_CAUSEWAY_UNDERPASS_SPLIT,
 } from "../intersections";
@@ -25,7 +25,6 @@ const NORTHBOUND_CAR_OVERPASS_END = [49.29747, -123.1368];
 const SOUTHBOUND_CAR_OVERPASS_START = [49.29732, -123.13697];
 const SOUTHBOUND_CAR_OVERPASS_END = [49.29703, -123.13672];
 
-const NORTHBOUND_OFF_RAMP_SPLIT = [49.3255, -123.12855];
 const SOUTHBOUND_ON_RAMP_MERGE = [49.32494, -123.13028];
 
 const NORTHBOUND_ON_PATH_1 = [49.29646, -123.1361];
@@ -205,7 +204,7 @@ export const LIONS_GATE_BRIDGE = [
       [49.3255, -123.12875],
       [49.32551, -123.12868],
       [49.32551, -123.12862],
-      NORTHBOUND_OFF_RAMP_SPLIT,
+      LIONS_GATE_NB_OFF_RAMP_SPLIT,
     ],
   },
 
@@ -331,25 +330,12 @@ export const LIONS_GATE_BRIDGE = [
     positions: [SOUTHBOUND_LAGOON_OVERPASS_END, CHILCO_GEORGIA_S],
   },
   {
-    description: "connection to marine eastbound",
-    type: "dedicated",
-    oneWay: "required",
-    positions: [
-      NORTHBOUND_OFF_RAMP_SPLIT,
-      [49.32559, -123.12836],
-      [49.3256, -123.12812],
-      [49.32558, -123.12785],
-      [49.32547, -123.12725],
-      NV_MARINE_W_S,
-    ],
-  },
-  {
     description: "connection to spirit",
     type: "dedicated",
     videoIds: [ROUTE_VIDEOS.lionsGateBridgeNb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.lionsGateBridgeNb.id],
     positions: [
-      NORTHBOUND_OFF_RAMP_SPLIT,
+      LIONS_GATE_NB_OFF_RAMP_SPLIT,
       [49.32459, -123.12934],
       [49.32418, -123.12998],
       [49.32366, -123.13048],

@@ -10,8 +10,8 @@ import {
   HAMILTON_MARINE_SE,
   HAMILTON_MARINE_SE_E,
   HAMILTON_MARINE_SW,
+  LIONS_GATE_NB_OFF_RAMP_SPLIT,
   NV_MARINE_W_N,
-  NV_MARINE_W_S,
   TATLOW_MARINE_N,
   TATLOW_MARINE_S,
   THIRD_2ND_N,
@@ -21,6 +21,7 @@ import {
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
+const EB_MUP_END = [49.32451, -123.12375];
 const EB_PRE_FELL = [49.32137, -123.09548];
 const FORBES_3RD_NE = [49.31724, -123.08562];
 const WB_PRE_15TH = [49.32197, -123.09664];
@@ -31,12 +32,26 @@ export const MARINE_NV = [
   // eb
   {
     routeNames: [ROUTES.marineNv.name],
-    description: "eb: lions gate to hamilton",
+    description: "from lions gate bridge to pre-capilano",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      LIONS_GATE_NB_OFF_RAMP_SPLIT,
+      [49.32559, -123.12836],
+      [49.3256, -123.12812],
+      [49.32558, -123.12785],
+      [49.32547, -123.12725],
+      [49.3254, -123.12686],
+      EB_MUP_END,
+    ],
+  },
+  {
+    routeNames: [ROUTES.marineNv.name],
+    description: "eb: pre-capilano to hamilton",
     type: "shared",
     oneWay: "required",
     positions: [
-      NV_MARINE_W_S,
-      [49.32474, -123.12445],
+      EB_MUP_END,
       [49.32421, -123.12268],
       [49.32416, -123.12252],
       [49.32403, -123.12209],
