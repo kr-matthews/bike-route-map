@@ -275,4 +275,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.32501, -123.12546],
     region: REGIONS.northVancouver, // technically mostly in west vancouver
   },
+  waterCordovaWb25: {
+    id: "C_yYsYtYINw",
+    title: "Water St at Cordova",
+    routeNames: [ROUTES.water.name],
+    direction: "westbound",
+    date: new Date("Nov 08 2025"),
+    minutes: 0,
+    position: [49.28465, -123.11078],
+    region: REGIONS.vancouver,
+  },
 };
