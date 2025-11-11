@@ -271,7 +271,7 @@ export const UPGRADE_VIDEOS = {
     routeNames: [ROUTES.marineNv.name],
     direction: "eastbound",
     date: new Date("Nov 08 2025"),
-    minutes: 2,
+    minutes: 1,
     position: [49.32501, -123.12546],
     region: REGIONS.northVancouver, // technically mostly in west vancouver
   },
