@@ -193,7 +193,8 @@ export const LIONS_GATE_BRIDGE = [
     type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [ROUTE_VIDEOS.lionsGateBridgeNb.id],
+    videoIds: [ROUTE_VIDEOS.marineNvEb.id, ROUTE_VIDEOS.lionsGateBridgeNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.marineNvEb.id],
     positions: [
       NORTHBOUND_ELEVATED_END,
       [49.32445, -123.13009],

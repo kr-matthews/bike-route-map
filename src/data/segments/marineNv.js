@@ -35,6 +35,7 @@ export const MARINE_NV = [
     description: "from lions gate bridge to pre-capilano",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.marineNvEb.id],
     positions: [
       LIONS_GATE_NB_OFF_RAMP_SPLIT,
       [49.32559, -123.12836],
@@ -50,6 +51,7 @@ export const MARINE_NV = [
     description: "eb: pre-capilano to hamilton",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.marineNvEb.id],
     positions: [
       EB_MUP_END,
       [49.32421, -123.12268],
@@ -83,6 +85,7 @@ export const MARINE_NV = [
     description: "eb: hamilton to fell",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.marineNvEb.id],
     positions: [
       HAMILTON_MARINE_SW,
       HAMILTON_MARINE_SE,
@@ -98,6 +101,7 @@ export const MARINE_NV = [
     description: "eb: fell to 2nd",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.marineNvEb.id],
     positions: [
       EB_PRE_FELL,
       [49.32108, -123.09468],
@@ -115,15 +119,16 @@ export const MARINE_NV = [
     description: "eb crossing 2nd",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [ROUTE_VIDEOS.marineNvEb.id],
     positions: [THIRD_2ND_NW, THIRD_2ND_S],
   },
   {
     routeNames: [ROUTES.marineNv.name],
-    description: "eb",
+    description: "3rd eb",
     type: "mixed",
     oneWay: "recommended",
-    videoIds: [ROUTE_VIDEOS.first2ndEb.id],
-    videoIdsEndAtEnd: [ROUTE_VIDEOS.first2ndEb.id],
+    videoIds: [ROUTE_VIDEOS.first2ndEb.id, ROUTE_VIDEOS.marineNvEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.first2ndEb.id, ROUTE_VIDEOS.marineNvEb.id],
     positions: [
       THIRD_2ND_S,
       [49.31887, -123.08971],

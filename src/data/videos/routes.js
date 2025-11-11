@@ -955,6 +955,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Feb 09 2024"),
     minutes: 6,
   },
+  hastingsCassiarPortside: {
+    id: "RhyntcYQnAc",
+    date: new Date("Nov 08 2025"),
+    minutes: 3,
+  },
   hastingsPortsideCassiar: {
     id: "BBflQWQfrxo",
     date: new Date("Apr 06 2024"),
@@ -1963,6 +1968,12 @@ export const ROUTE_VIDEOS = {
     tlId: "3-0qcuW86M8",
     date: new Date("Aug 15 2024"),
     minutes: 48,
+  },
+  marineNvEb: {
+    id: "05KJnywxQW4",
+    tlId: "mi9hzcfH9IQ",
+    date: new Date("Nov 08 2025"),
+    minutes: 13,
   },
   marineNvWb: {
     id: "Ry9khAGvH_Q",

@@ -1315,7 +1315,10 @@ export const ROUTES = {
       },
       {
         name: "Cassiar <-> Portside",
-        videos: { southbound: ROUTE_VIDEOS.hastingsPortsideCassiar },
+        videos: {
+          northbound: ROUTE_VIDEOS.hastingsCassiarPortside,
+          southbound: ROUTE_VIDEOS.hastingsPortsideCassiar,
+        },
       },
       { name: "Pandora <-> Windermere", videos: {} },
     ],
@@ -1693,7 +1696,14 @@ export const ROUTES = {
     name: "Marine Dr/3rd St (North Vancouver)",
     shortName: "Marine/3rd (NV)",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: { westbound: ROUTE_VIDEOS.marineNvWb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.marineNvEb,
+          westbound: ROUTE_VIDEOS.marineNvWb,
+        },
+      },
+    ],
     notes:
       "Flat. One of the worst routes in the area. Some of the shared lane portions are bus lanes, which is not so bad, but most aren't, and even those that are frequently allow right-turning vehicles. The painted lanes are mostly beside the curb.",
   },
