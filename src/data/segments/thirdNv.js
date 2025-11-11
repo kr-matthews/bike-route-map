@@ -7,8 +7,14 @@ import {
   QUEENSBURY_3RD_SW,
   QUEENSBURY_4TH_E,
   QUEENSBURY_4TH_W,
+  SAINT_DAVIDS_1ST_E,
+  SAINT_DAVIDS_4TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
+
+const SAINT_DAVIDS_3RD_ALLEY = [49.30807, -123.06599];
+const SAINT_DAVIDS_3RD_SW = [49.30863, -123.06617];
+const SAINT_DAVIDS_3RD_NW = [49.30878, -123.06615];
 
 const QUEENSBURY_NB_LANE_START = [49.30903, -123.05718];
 const QUEENSBURY_SB_LANE_END = [49.30902, -123.05729];
@@ -18,6 +24,35 @@ const EB_BUS_LANE_END = [49.30833, -123.04747];
 const WB_SIDEWALK_END = [49.30847, -123.05249];
 
 export const THIRD_NV = [
+  // saint davids
+  {
+    description: "st davids, 1st to almost 3rd",
+    type: "dedicated",
+    positions: [SAINT_DAVIDS_1ST_E, SAINT_DAVIDS_3RD_ALLEY],
+  },
+  {
+    description: "st davids, gap at 3rd",
+    type: "quiet",
+    undesignated: true,
+    positions: [
+      SAINT_DAVIDS_3RD_ALLEY,
+      [49.30813, -123.06606],
+      [49.30857, -123.06604],
+      SAINT_DAVIDS_3RD_SW,
+    ],
+  },
+  {
+    description: "st davids, 3rd to 4th",
+    type: "dedicated",
+    positions: [
+      SAINT_DAVIDS_3RD_SW,
+      SAINT_DAVIDS_3RD_NW,
+      [49.30883, -123.06612],
+      [49.3097, -123.0661],
+      SAINT_DAVIDS_4TH,
+    ],
+  },
+
   // queensbury nb
   {
     description: "crossing 3rd at queensbury nb",
@@ -68,6 +103,33 @@ export const THIRD_NV = [
   },
 
   // eb
+  {
+    routeNames: [ROUTES.thirdNv.name],
+    description: "st davids to queensbury",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      SAINT_DAVIDS_3RD_SW,
+      [49.30851, -123.06584],
+      [49.30849, -123.06565],
+      [49.30848, -123.06524],
+      [49.30846, -123.06511],
+      [49.30846, -123.06436],
+      [49.30847, -123.06428],
+      [49.30847, -123.06401],
+      [49.30845, -123.06396],
+      [49.30843, -123.06372],
+      [49.30842, -123.06326],
+      [49.30841, -123.06221],
+      [49.30842, -123.06217],
+      [49.30841, -123.06102],
+      [49.3084, -123.06083],
+      [49.30839, -123.06027],
+      [49.30838, -123.059],
+      [49.30837, -123.05795],
+      QUEENSBURY_3RD_SW,
+    ],
+  },
   {
     routeNames: [ROUTES.thirdNv.name],
     description: "eb from queensbury",

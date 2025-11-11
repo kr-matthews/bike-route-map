@@ -7,6 +7,7 @@ import {
   HEYWOOD_SPIRIT_NE,
   QUEENSBURY_4TH_E,
   QUEENSBURY_4TH_W,
+  SAINT_DAVIDS_4TH,
   ST_ANDREWS_4TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -63,7 +64,7 @@ export const FOURTH_NV = [
       [49.31289, -123.07319],
       ST_ANDREWS_4TH,
       [49.31028, -123.06721],
-      [49.30976, -123.06603],
+      SAINT_DAVIDS_4TH,
       [49.3096, -123.06566],
       [49.30957, -123.06556],
       [49.30956, -123.06545],
