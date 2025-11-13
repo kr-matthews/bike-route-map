@@ -1,5 +1,6 @@
 import {
   ESPLANADE_WB_MERGE,
+  ST_ANDREWS_3RD,
   ST_ANDREWS_4TH,
   ST_ANDREWS_ESPLANADE_SE,
   ST_ANDREWS_SPIRIT,
@@ -54,7 +55,7 @@ export const ST_ANDREWS = [
       ST_ANDREWS_ESPLANADE_N,
       [49.30926, -123.07255],
       [49.31004, -123.07179],
-      [49.3108, -123.071],
+      ST_ANDREWS_3RD,
       ST_ANDREWS_4TH,
     ],
   },

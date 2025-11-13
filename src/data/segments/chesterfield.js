@@ -1,4 +1,6 @@
 import {
+  CHESTERFIELD_3RD_E,
+  CHESTERFIELD_3RD_W,
   CHESTERFIELD_4TH_E,
   CHESTERFIELD_4TH_W,
   CHESTERFIELD_CARRIE_CATES_NE,
@@ -14,10 +16,8 @@ import { ROUTES } from "../routes";
 const NB_PRE_ESPLANADE = [49.31219, -123.08274];
 const NB_POST_ESPLANADE = [49.31256, -123.08237];
 const NB_PRE_3RD = [49.3144, -123.08044];
-const CHESTERFIELD_3RD_SE = [49.31465, -123.08019];
 
 const SB_PRE_3RD = [49.31516, -123.07989];
-const CHESTERFIELD_3RD_W = [49.31483, -123.08024];
 const SB_PRE_ESPLANADE = [49.31261, -123.0825];
 const SB_POST_ESPLANADE = [49.31228, -123.08284];
 
@@ -82,18 +82,14 @@ export const CHESTERFIELD = [
     description: "nb before 3rd",
     type: "dedicated",
     oneWay: "required",
-    positions: [NB_PRE_3RD, CHESTERFIELD_3RD_SE],
+    positions: [NB_PRE_3RD, CHESTERFIELD_3RD_E],
   },
   {
     routeNames: [ROUTES.chesterfield.name],
     description: "nb 3rd to 4th",
     type: "painted",
     oneWay: "required",
-    positions: [
-      CHESTERFIELD_3RD_SE,
-      [49.31487, -123.08002],
-      CHESTERFIELD_4TH_E,
-    ],
+    positions: [CHESTERFIELD_3RD_E, [49.31487, -123.08002], CHESTERFIELD_4TH_E],
   },
   {
     routeNames: [ROUTES.chesterfield.name],

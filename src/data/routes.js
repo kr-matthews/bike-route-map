@@ -37,11 +37,10 @@ export const ROUTES = {
   },
   thirdNv: {
     name: "3rd St",
-    isIncomplete: true,
     regions: [REGIONS.northVancouver],
     legs: [{ videos: {} }],
     notes:
-      "Steep hill, lots of cars. Eastbound shared lane portion is a downhill bus/bike-only lane. The painted lanes are beside the curb (no parked cars). There is some varying infrastructure extending west to Saint Davids Ave which is not yet mapped.",
+      "Extremely steep hill at the east end, lots of cars. Eastbound shared lane portion is a downhill bus/bike-only lane. The painted lanes are beside the curb (no parked cars). Between Saint Davids Ave and Queensbury Ave, the north side has a lot of partially built separated lanes, but also painted lanes on the right of parked cars.",
   },
   fourth: {
     name: "4th",

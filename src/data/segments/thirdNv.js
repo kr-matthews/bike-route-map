@@ -1,4 +1,7 @@
 import {
+  CHESTERFIELD_3RD_E,
+  CHESTERFIELD_3RD_W,
+  FORBES_3RD_NE,
   LOW_LEVEL_COTTON_N,
   LOW_LEVEL_COTTON_S,
   QUEENSBURY_3RD_NE,
@@ -9,6 +12,7 @@ import {
   QUEENSBURY_4TH_W,
   SAINT_DAVIDS_1ST_E,
   SAINT_DAVIDS_4TH,
+  ST_ANDREWS_3RD,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
@@ -23,7 +27,29 @@ const EB_LANE_END = [49.30837, -123.05247];
 const EB_BUS_LANE_END = [49.30833, -123.04747];
 const WB_SIDEWALK_END = [49.30847, -123.05249];
 
+const WB_AFTER_QUEENSBURY = [49.30851, -123.05777];
+const WB_BEFORE_MOODY = [49.30854, -123.05986];
+const MOODY_3RD_N = [49.30854, -123.06026];
+const WB_AFTER_MOODY = [49.30855, -123.06091];
+const WB_BEFORE_RIDGEWAY = [49.30857, -123.06271];
+const RIDGEWAY_3RD_N = [49.30856, -123.06325];
+const SAINT_PATRICKS_3RD = [49.3095, -123.06798];
+
 export const THIRD_NV = [
+  // wb pieces
+  {
+    description: "wb queensbury to moody",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [[49.30856, -123.05783], [49.30858, -123.06017], MOODY_3RD_N],
+  },
+  {
+    description: "wb moody to ridgeway",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [[49.30859, -123.06111], [49.3086, -123.06314], RIDGEWAY_3RD_N],
+  },
+
   // saint davids
   {
     description: "st davids, 1st to almost 3rd",
@@ -204,6 +230,78 @@ export const THIRD_NV = [
       [49.30853, -123.05686],
       QUEENSBURY_3RD_NE,
       QUEENSBURY_3RD_NW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.thirdNv.name],
+    description: "wb post queensbury",
+    type: "shared",
+    oneWay: "required",
+    positions: [QUEENSBURY_3RD_NW, [49.30851, -123.05742], WB_AFTER_QUEENSBURY],
+  },
+  {
+    routeNames: [ROUTES.thirdNv.name],
+    description: "wb queensbury to moody",
+    type: "painted",
+    oneWay: "required",
+    positions: [WB_AFTER_QUEENSBURY, WB_BEFORE_MOODY],
+  },
+  {
+    routeNames: [ROUTES.thirdNv.name],
+    description: "wb at moody",
+    type: "shared",
+    oneWay: "required",
+    positions: [WB_BEFORE_MOODY, MOODY_3RD_N, WB_AFTER_MOODY],
+  },
+  {
+    routeNames: [ROUTES.thirdNv.name],
+    description: "wb moody to ridgeway",
+    type: "painted",
+    oneWay: "required",
+    positions: [WB_AFTER_MOODY, WB_BEFORE_RIDGEWAY],
+  },
+  {
+    routeNames: [ROUTES.thirdNv.name],
+    description: "wb ridgeway to saint davids",
+    type: "shared",
+    oneWay: "required",
+    positions: [
+      WB_BEFORE_RIDGEWAY,
+      RIDGEWAY_3RD_N,
+      [49.30856, -123.064],
+      [49.30858, -123.06547],
+      [49.30859, -123.06566],
+      [49.30862, -123.06583],
+      [49.30866, -123.06594],
+      SAINT_DAVIDS_3RD_NW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.thirdNv.name],
+    description: "wb saint davids to saint patricks",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      SAINT_DAVIDS_3RD_NW,
+      [49.30943, -123.06764],
+      [49.30951, -123.06785],
+      SAINT_PATRICKS_3RD,
+    ],
+  },
+  {
+    description: "forbes to saint patricks",
+    type: "shared",
+    undesignated: true,
+    positions: [
+      FORBES_3RD_NE,
+      [49.31716, -123.08557],
+      [49.31613, -123.08322],
+      CHESTERFIELD_3RD_W,
+      CHESTERFIELD_3RD_E,
+      [49.31345, -123.07704],
+      [49.3121, -123.074],
+      ST_ANDREWS_3RD,
+      SAINT_PATRICKS_3RD,
     ],
   },
 ];
