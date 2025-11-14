@@ -113,7 +113,8 @@ export const MAIN_COTTON = [
     description: "wb dedicated 2",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [ROUTE_VIDEOS.mainCottonWb.id],
+    videoIds: [ROUTE_VIDEOS.mainCottonWb.id, ROUTE_VIDEOS.thirdNvWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.thirdNvWb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.mainCottonWb.id],
     positions: [
       GLADSTONE_COTTON_NW_W,

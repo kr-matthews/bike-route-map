@@ -38,7 +38,14 @@ export const ROUTES = {
   thirdNv: {
     name: "3rd St",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.thirdNvEb,
+          westbound: ROUTE_VIDEOS.thirdNvWb,
+        },
+      },
+    ],
     notes:
       "Extremely steep hill at the east end, lots of cars. Eastbound shared lane portion is a downhill bus/bike-only lane. The painted lanes are beside the curb (no parked cars). Between Saint Davids Ave and Queensbury Ave, the north side has a lot of partially built separated lanes, but also painted lanes on the right of parked cars.",
   },
@@ -426,7 +433,14 @@ export const ROUTES = {
   bewickeGreenway: {
     name: "Bewicke Greenway",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: { northbound: ROUTE_VIDEOS.bewickeNb } }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.bewickeNb,
+          southbound: ROUTE_VIDEOS.bewickeSb,
+        },
+      },
+    ],
     notes:
       "A nice mostly flat shared use path, but the 2 intersections at the north end take forever to cross.",
   },

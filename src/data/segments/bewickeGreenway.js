@@ -13,8 +13,9 @@ export const BEWICKE_GREENWAY = [
     routeNames: [ROUTES.bewickeGreenway.name],
     description: "south tip",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.bewickeNb.id],
+    videoIds: [ROUTE_VIDEOS.bewickeNb.id, ROUTE_VIDEOS.bewickeSb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.bewickeNb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.bewickeSb.id],
     positions: [
       [49.31336, -123.09183],
       [49.31349, -123.09176],
@@ -26,10 +27,10 @@ export const BEWICKE_GREENWAY = [
   },
   {
     routeNames: [ROUTES.bewickeGreenway.name],
-    description: "north section",
+    description: "spirit to keith",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.bewickeNb.id],
-    videoIdsEndAtEnd: [ROUTE_VIDEOS.bewickeNb.id],
+    videoIds: [ROUTE_VIDEOS.bewickeSb.id, ROUTE_VIDEOS.bewickeNb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.bewickeSb.id],
     positions: [
       BEWICKE_SPIRIT_N,
       [49.31528, -123.09175],
@@ -45,6 +46,16 @@ export const BEWICKE_GREENWAY = [
       [49.31966, -123.09132],
       [49.31979, -123.09131],
       BEWICKE_3RD_S,
+      BEWICKE_THIRD_NE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bewickeGreenway.name],
+    description: "crossing keith",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.bewickeNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.bewickeNb.id],
+    positions: [
       BEWICKE_THIRD_NE,
       BEWICKE_KEITH_SE,
       [49.32005, -123.09117],

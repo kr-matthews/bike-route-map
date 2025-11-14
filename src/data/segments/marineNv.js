@@ -170,6 +170,7 @@ export const MARINE_NV = [
     type: "painted",
     oneWay: "required",
     hideArrows: true,
+    videoIds: [ROUTE_VIDEOS.thirdNvWb.id],
     positions: [FORBES_3RD_NE, FORBES_3RD_N],
   },
   {
@@ -177,7 +178,11 @@ export const MARINE_NV = [
     description: "wb: forbes to 2nd",
     type: "painted",
     oneWay: "required",
-    videoIds: [ROUTE_VIDEOS.marineNvWb.id, ROUTE_VIDEOS.first2ndWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.marineNvWb.id,
+      ROUTE_VIDEOS.first2ndWb.id,
+      ROUTE_VIDEOS.thirdNvWb.id,
+    ],
     positions: [
       FORBES_3RD_N,
       [49.31745, -123.08601],
@@ -190,14 +195,25 @@ export const MARINE_NV = [
   },
   {
     routeNames: [ROUTES.marineNv.name],
-    description: "wb: 2nd to 15th-ish",
+    description: "wb: 2nd to bewicke",
     type: "painted",
     oneWay: "required",
-    videoIds: [ROUTE_VIDEOS.marineNvWb.id],
+    videoIds: [ROUTE_VIDEOS.marineNvWb.id, ROUTE_VIDEOS.thirdNvWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.thirdNvWb.id],
     positions: [
       THIRD_2ND_N,
       [49.31936, -123.09022],
       [49.3197, -123.09075],
+      BEWICKE_THIRD_NE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.marineNv.name],
+    description: "wb: bewicke to 15th-ish",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.marineNvWb.id],
+    positions: [
       BEWICKE_THIRD_NE,
       [49.3201, -123.09135],
       [49.32018, -123.09149],

@@ -213,6 +213,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Dec 23, 2024"),
     minutes: 6,
   },
+  bewickeSb: {
+    id: "oBOnW_OdXtU",
+    date: new Date("Nov 11, 2025"),
+    minutes: 3,
+  },
   bigBendSb: {
     id: "YAF1x03OYcM",
     tlId: "ZnXqrbwJ4qY",
@@ -2032,6 +2037,17 @@ export const ROUTE_VIDEOS = {
     id: "B5KPg3I32Ws",
     date: new Date("Jun 07 2023"),
     minutes: 8,
+  },
+  thirdNvEb: {
+    id: "71ant6TAtd8",
+    date: new Date("Nov 08 2025"),
+    minutes: 4,
+  },
+  thirdNvWb: {
+    id: "--nnX8WJzo4",
+    tlId: "yE6K6HVaEi4",
+    date: new Date("Nov 11 2025"),
+    minutes: 12,
   },
   transCanadaHwyEb: {
     id: "62pilPL6YEo",

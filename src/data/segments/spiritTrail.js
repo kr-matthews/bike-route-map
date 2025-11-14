@@ -521,7 +521,11 @@ export const SPIRIT_TRAIL = [
     routeNames: [ROUTES.spiritTrail.name, ROUTES.bewickeGreenway.name],
     description: "bewicke overlap",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id, ROUTE_VIDEOS.bewickeNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.spiritTrailEb.id,
+      ROUTE_VIDEOS.bewickeNb.id,
+      ROUTE_VIDEOS.bewickeSb.id,
+    ],
     positions: [BEWICKE_SPIRIT_S, [49.31455, -123.09178], BEWICKE_SPIRIT_N],
   },
   {

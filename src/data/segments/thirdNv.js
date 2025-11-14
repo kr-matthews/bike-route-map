@@ -15,6 +15,7 @@ import {
   ST_ANDREWS_3RD,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const SAINT_DAVIDS_3RD_ALLEY = [49.30807, -123.06599];
 const SAINT_DAVIDS_3RD_SW = [49.30863, -123.06617];
@@ -70,6 +71,8 @@ export const THIRD_NV = [
   {
     description: "st davids, 3rd to 4th",
     type: "dedicated",
+    videoIds: [ROUTE_VIDEOS.thirdNvEb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.thirdNvEb.id],
     positions: [
       SAINT_DAVIDS_3RD_SW,
       SAINT_DAVIDS_3RD_NW,
@@ -134,6 +137,7 @@ export const THIRD_NV = [
     description: "st davids to queensbury",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.thirdNvEb.id],
     positions: [
       SAINT_DAVIDS_3RD_SW,
       [49.30851, -123.06584],
@@ -161,6 +165,7 @@ export const THIRD_NV = [
     description: "eb from queensbury",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.thirdNvEb.id],
     positions: [
       QUEENSBURY_3RD_SW,
       QUEENSBURY_3RD_SE,
@@ -177,6 +182,7 @@ export const THIRD_NV = [
     description: "eb bus lane",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.thirdNvEb.id],
     positions: [
       EB_LANE_END,
       [49.30839, -123.0518],
@@ -193,6 +199,8 @@ export const THIRD_NV = [
     description: "eb end, to cotton",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.thirdNvEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.thirdNvEb.id],
     positions: [EB_BUS_LANE_END, LOW_LEVEL_COTTON_S],
   },
 
@@ -202,6 +210,7 @@ export const THIRD_NV = [
     description: "wb sidewalk from cotton",
     type: "comfortable",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.thirdNvWb.id],
     positions: [
       LOW_LEVEL_COTTON_N,
       [49.30844, -123.04681],
@@ -223,6 +232,7 @@ export const THIRD_NV = [
     description: "wb uphill painted",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.thirdNvWb.id],
     positions: [
       WB_SIDEWALK_END,
       [49.3085, -123.05635],
@@ -237,6 +247,7 @@ export const THIRD_NV = [
     description: "wb post queensbury",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.thirdNvWb.id],
     positions: [QUEENSBURY_3RD_NW, [49.30851, -123.05742], WB_AFTER_QUEENSBURY],
   },
   {
@@ -244,6 +255,7 @@ export const THIRD_NV = [
     description: "wb queensbury to moody",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.thirdNvWb.id],
     positions: [WB_AFTER_QUEENSBURY, WB_BEFORE_MOODY],
   },
   {
@@ -251,6 +263,7 @@ export const THIRD_NV = [
     description: "wb at moody",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.thirdNvWb.id],
     positions: [WB_BEFORE_MOODY, MOODY_3RD_N, WB_AFTER_MOODY],
   },
   {
@@ -258,6 +271,7 @@ export const THIRD_NV = [
     description: "wb moody to ridgeway",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.thirdNvWb.id],
     positions: [WB_AFTER_MOODY, WB_BEFORE_RIDGEWAY],
   },
   {
@@ -265,6 +279,7 @@ export const THIRD_NV = [
     description: "wb ridgeway to saint davids",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.thirdNvWb.id],
     positions: [
       WB_BEFORE_RIDGEWAY,
       RIDGEWAY_3RD_N,
@@ -281,6 +296,7 @@ export const THIRD_NV = [
     description: "wb saint davids to saint patricks",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.thirdNvWb.id],
     positions: [
       SAINT_DAVIDS_3RD_NW,
       [49.30943, -123.06764],
@@ -292,6 +308,7 @@ export const THIRD_NV = [
     description: "forbes to saint patricks",
     type: "shared",
     undesignated: true,
+    videoIds: [ROUTE_VIDEOS.thirdNvWb.id],
     positions: [
       FORBES_3RD_NE,
       [49.31716, -123.08557],
