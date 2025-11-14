@@ -146,6 +146,8 @@ export const MARINE_NV = [
     description: "eb crossing forbes",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [ROUTE_VIDEOS.fourthNVEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.fourthNVEb.id],
     positions: [FORBES_3RD_SW, FORBES_3RD_SE],
   },
 

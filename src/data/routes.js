@@ -66,7 +66,14 @@ export const ROUTES = {
   fourthNV: {
     name: "4th St",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: { westbound: ROUTE_VIDEOS.fourthNVWb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.fourthNVEb,
+          westbound: ROUTE_VIDEOS.fourthNVWb,
+        },
+      },
+    ],
     notes:
       "Quiet-ish street with steep hill at the east end. No traffic calming.",
   },

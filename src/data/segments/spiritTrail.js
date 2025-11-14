@@ -828,11 +828,10 @@ export const SPIRIT_TRAIL = [
   },
   {
     routeNames: [ROUTES.spiritTrail.name],
-    description: "3rd overpass to east end",
+    description: "3rd overpass to heywood (4th)",
     type: "comfortable",
     elevation: 0.5,
     videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
-    videoIdsEndAtEnd: [ROUTE_VIDEOS.spiritTrailEb.id],
     positions: [
       E_3RD_OVERPASS_EAST,
       [49.30865, -123.05054],
@@ -843,6 +842,20 @@ export const SPIRIT_TRAIL = [
       [49.30884, -123.04958],
       [49.30883, -123.04954],
       [49.30877, -123.04944],
+      HEYWOOD_SPIRIT_NE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.spiritTrail.name],
+    description: "heywood (4th) to east end",
+    type: "comfortable",
+    elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id, ROUTE_VIDEOS.fourthNVEb.id],
+    videoIdsEndAtEnd: [
+      ROUTE_VIDEOS.spiritTrailEb.id,
+      ROUTE_VIDEOS.fourthNVEb.id,
+    ],
+    positions: [
       HEYWOOD_SPIRIT_NE,
       [49.30905, -123.0489],
       [49.30912, -123.04863],
