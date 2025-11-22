@@ -285,4 +285,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.28465, -123.11078],
     region: REGIONS.vancouver,
   },
+  sunrise22ndNb25: {
+    id: "Ekbk6Gd9ksU",
+    title: "Sunrise (Slocan) at 22nd",
+    routeNames: [ROUTES.sunrise.name],
+    direction: "northbound",
+    date: new Date("Nov 20 2025"),
+    minutes: 0,
+    position: [49.25069, -123.04964],
+    region: REGIONS.vancouver,
+  },
 };
