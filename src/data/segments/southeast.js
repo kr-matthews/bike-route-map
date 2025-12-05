@@ -6,6 +6,7 @@ import {
   FIFTEENTH_14TH_N,
   FIFTEENTH_LONDON,
   FIFTEENTH_STRIDE,
+  FOURTH_12TH,
   FOURTH_13TH,
   MARY_12TH,
   STATION_HILL_SOUTHPOINT_NE,
@@ -150,7 +151,7 @@ export const SOUTHEAST = [
   },
   {
     routeNames: [ROUTES.southeast.name],
-    description: "15th to cumberland",
+    description: "15th to 4th/midtown",
     type: "quiet",
     videoIds: [ROUTE_VIDEOS.southeastEb.id, ROUTE_VIDEOS.southeastWb.id],
     positions: [
@@ -166,7 +167,22 @@ export const SOUTHEAST = [
       [49.21844, -122.93338],
       [49.22023, -122.93007],
       [49.22051, -122.92953],
-      [49.22204, -122.92667],
+      FOURTH_12TH,
+    ],
+  },
+  {
+    routeNames: [ROUTES.southeast.name],
+    description: "4th (midtown)",
+    type: "quiet",
+    videoIds: [ROUTE_VIDEOS.southeastEb.id, ROUTE_VIDEOS.southeastWb.id],
+    positions: [FOURTH_12TH, FOURTH_13TH],
+  },
+  {
+    routeNames: [ROUTES.southeast.name],
+    description: "4th/midtown to cumberland",
+    type: "quiet",
+    videoIds: [ROUTE_VIDEOS.southeastEb.id, ROUTE_VIDEOS.southeastWb.id],
+    positions: [
       FOURTH_13TH,
       [49.22457, -122.92432],
       [49.22566, -122.92233],
