@@ -174,7 +174,11 @@ export const SOUTHEAST = [
     routeNames: [ROUTES.southeast.name],
     description: "4th (midtown)",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.southeastEb.id, ROUTE_VIDEOS.southeastWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.southeastEb.id,
+      ROUTE_VIDEOS.midtownBurnabyEb.id,
+      ROUTE_VIDEOS.southeastWb.id,
+    ],
     positions: [FOURTH_12TH, FOURTH_13TH],
   },
   {

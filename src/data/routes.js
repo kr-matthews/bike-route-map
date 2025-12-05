@@ -1842,7 +1842,10 @@ export const ROUTES = {
       },
       {
         name: "Burnaby",
-        videos: { westbound: ROUTE_VIDEOS.midtownBurnabyWb },
+        videos: {
+          eastbound: ROUTE_VIDEOS.midtownBurnabyEb,
+          westbound: ROUTE_VIDEOS.midtownBurnabyWb,
+        },
       },
     ],
     notes:

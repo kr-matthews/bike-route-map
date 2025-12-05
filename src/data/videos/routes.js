@@ -1306,6 +1306,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Jun 17 2024"),
     minutes: 15,
   },
+  midtownBurnabyEb: {
+    id: "syf0PJKUmqQ",
+    tlId: "SITN7d_Xfrc",
+    date: new Date("Nov 28 2025"),
+    minutes: 37,
+  },
   midtownBurnabyWb: {
     id: "chQm0UsQBMg",
     tlId: "6r07ys9ToHU",

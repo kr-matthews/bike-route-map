@@ -16,6 +16,7 @@ export const DEER_LAKE_PARKWAY = [
     type: "comfortable",
     videoIds: [
       ROUTE_VIDEOS.deerLakePkwyEb.id,
+      ROUTE_VIDEOS.midtownBurnabyEb.id,
       ROUTE_VIDEOS.deerLakePkwyWb.id,
       ROUTE_VIDEOS.midtownBurnabyWb.id,
     ],
@@ -95,6 +96,7 @@ export const DEER_LAKE_PARKWAY = [
     type: "mixed",
     videoIds: [
       ROUTE_VIDEOS.deerLakePkwyWb.id,
+      ROUTE_VIDEOS.midtownBurnabyEb.id,
       ROUTE_VIDEOS.deerLakePkwyEb.id,
       ROUTE_VIDEOS.midtownBurnabyWb.id,
     ],

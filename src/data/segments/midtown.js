@@ -344,9 +344,11 @@ export const MIDTOWN = [
     description: "just west of boundary",
     type: "quiet",
     videoIds: [
+      ROUTE_VIDEOS.midtownBurnabyEb.id,
       ROUTE_VIDEOS.midtownVancouverEb.id,
       ROUTE_VIDEOS.midtownBurnabyWb.id,
     ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.midtownBurnabyEb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.midtownBurnabyWb.id],
     positions: [WEST_OF_BOUNDARY, BOUNDARY_MOSCROP_S_W],
   },
@@ -355,6 +357,7 @@ export const MIDTOWN = [
     description: "along boundary",
     type: "combined",
     videoIds: [
+      ROUTE_VIDEOS.midtownBurnabyEb.id,
       ROUTE_VIDEOS.midtownVancouverEb.id,
       ROUTE_VIDEOS.midtownBurnabyWb.id,
     ],
@@ -367,6 +370,7 @@ export const MIDTOWN = [
     description: "beginning of boundary",
     type: "mixed",
     videoIds: [
+      ROUTE_VIDEOS.midtownBurnabyEb.id,
       ROUTE_VIDEOS.midtownVancouverEb.id,
       ROUTE_VIDEOS.midtownBurnabyWb.id,
     ],
@@ -377,7 +381,10 @@ export const MIDTOWN = [
     routeNames: [ROUTES.midtown.name],
     description: "boundary-ish to patterson",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.midtownBurnabyWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.midtownBurnabyEb.id,
+      ROUTE_VIDEOS.midtownBurnabyWb.id,
+    ],
     positions: [
       EAST_OF_BOUNDARY,
       [49.24311, -123.01983],
@@ -389,14 +396,21 @@ export const MIDTOWN = [
     routeNames: [ROUTES.midtown.name, ROUTES.seaToRiver.name],
     description: "patterson to carleton",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.midtownBurnabyWb.id, ROUTE_VIDEOS.seaToRiverNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.midtownBurnabyEb.id,
+      ROUTE_VIDEOS.seaToRiverNb.id,
+      ROUTE_VIDEOS.midtownBurnabyWb.id,
+    ],
     positions: [PATTERSON_MOSCROP, CARLETON_MOSCROP],
   },
   {
     routeNames: [ROUTES.midtown.name],
     description: "carleton to willingdon",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.midtownBurnabyWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.midtownBurnabyEb.id,
+      ROUTE_VIDEOS.midtownBurnabyWb.id,
+    ],
     positions: [
       CARLETON_MOSCROP,
       [49.24305, -123.01113],
@@ -412,7 +426,10 @@ export const MIDTOWN = [
     routeNames: [ROUTES.midtown.name],
     description: "garden grove and through courts",
     type: "comfortable",
-    videoIds: [ROUTE_VIDEOS.midtownBurnabyWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.midtownBurnabyEb.id,
+      ROUTE_VIDEOS.midtownBurnabyWb.id,
+    ],
     positions: [
       GARDEN_GROVE_DEER_LAKE,
       [49.2417, -122.99482],
@@ -424,7 +441,10 @@ export const MIDTOWN = [
     routeNames: [ROUTES.midtown.name],
     description: "moscrop courts to deer lake ave",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.midtownBurnabyWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.midtownBurnabyEb.id,
+      ROUTE_VIDEOS.midtownBurnabyWb.id,
+    ],
     positions: [
       MOSCROP_COURTS_E,
       [49.24171, -122.99128],
@@ -440,7 +460,10 @@ export const MIDTOWN = [
     routeNames: [ROUTES.midtown.name],
     description: "deer lake pkwy to lakes",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.midtownBurnabyWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.midtownBurnabyEb.id,
+      ROUTE_VIDEOS.midtownBurnabyWb.id,
+    ],
     positions: [
       DEER_LAKE_GILPIN_SW,
       [49.24174, -122.97553],
@@ -458,9 +481,10 @@ export const MIDTOWN = [
     description: "winding to canada/kensington",
     type: "mixed",
     videoIds: [
-      ROUTE_VIDEOS.midtownBurnabyWb.id,
+      ROUTE_VIDEOS.midtownBurnabyEb.id,
       ROUTE_VIDEOS.lakesNb.id,
       ROUTE_VIDEOS.kensingtonNb.id,
+      ROUTE_VIDEOS.midtownBurnabyWb.id,
       ROUTE_VIDEOS.kensingtonSb.id,
     ],
     videoIdsStartAtStart: [ROUTE_VIDEOS.kensingtonNb.id],
@@ -484,7 +508,10 @@ export const MIDTOWN = [
     routeNames: [ROUTES.midtown.name],
     description: "canada/kensington to sperling",
     type: "comfortable",
-    videoIds: [ROUTE_VIDEOS.midtownBurnabyWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.midtownBurnabyWb.id,
+      ROUTE_VIDEOS.midtownBurnabyEb.id,
+    ],
     positions: [
       KENSINGTON_CANADA_NW,
       [49.24178, -122.96815],
@@ -499,7 +526,10 @@ export const MIDTOWN = [
     routeNames: [ROUTES.midtown.name],
     description: "gilpin to wilton",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.midtownBurnabyWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.midtownBurnabyWb.id,
+      ROUTE_VIDEOS.midtownBurnabyEb.id,
+    ],
     positions: [
       SPERLING_GILPIN,
       [49.24076, -122.96467],
@@ -513,7 +543,10 @@ export const MIDTOWN = [
     routeNames: [ROUTES.midtown.name],
     description: "claude path",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.midtownBurnabyWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.midtownBurnabyWb.id,
+      ROUTE_VIDEOS.midtownBurnabyEb.id,
+    ],
     positions: [
       WILTON_CLAUDE,
       [49.2407, -122.96053],
@@ -527,7 +560,10 @@ export const MIDTOWN = [
     routeNames: [ROUTES.midtown.name],
     description: "mccarthy to donovan",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.midtownBurnabyWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.midtownBurnabyWb.id,
+      ROUTE_VIDEOS.midtownBurnabyEb.id,
+    ],
     positions: [
       MCCARTHY_CLAUDE,
       [49.23888, -122.95671],
@@ -539,7 +575,10 @@ export const MIDTOWN = [
     routeNames: [ROUTES.midtown.name],
     description: "donovan to 6th/burris",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.midtownBurnabyWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.midtownBurnabyWb.id,
+      ROUTE_VIDEOS.midtownBurnabyEb.id,
+    ],
     positions: [
       DONOVAN_E,
       [49.23873, -122.95452],
@@ -567,6 +606,7 @@ export const MIDTOWN = [
     routeNames: [ROUTES.midtown.name],
     description: "6th path",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.midtownBurnabyEb.id],
     positions: [
       SIXTH_BURRIS,
       [49.23759, -122.95103],
@@ -591,7 +631,10 @@ export const MIDTOWN = [
     routeNames: [ROUTES.midtown.name],
     description: "nursery/lakefield/4th",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.midtownBurnabyWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.midtownBurnabyWb.id,
+      ROUTE_VIDEOS.midtownBurnabyEb.id,
+    ],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.midtownBurnabyWb.id],
     positions: [
       SIXTH_NURSERY_E,
@@ -637,6 +680,7 @@ export const MIDTOWN = [
     description: "4th, 12th to 10th",
     type: "quiet",
     undesignated: true,
+    videoIds: [ROUTE_VIDEOS.midtownBurnabyEb.id],
     positions: [
       FOURTH_12TH,
       [49.22129, -122.92574],
@@ -652,6 +696,8 @@ export const MIDTOWN = [
     description: "4th crossing 10th",
     type: "other",
     undesignated: true,
+    videoIds: [ROUTE_VIDEOS.midtownBurnabyEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.midtownBurnabyEb.id],
     positions: [FOURTH_10TH, [49.22045, -122.92468], [49.22028, -122.925]],
   },
 ];
