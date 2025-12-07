@@ -10,8 +10,8 @@ import { ROUTE_VIDEOS } from "../videos/routes";
 const BUTE_DAVIE_S = [49.28179, -123.13337];
 const BUTE_PANTAGES_N = [49.28144, -123.13388];
 const BUTE_STOVOLD_N = [49.28496, -123.12858];
-const BUTE_ROSEMARY_BROWN = [49.28567, -123.12749];
-const BUTE_ROBSON = [49.286, -123.12698];
+const BUTE_ROSEMARY_BROWN_S = [49.28556, -123.12767];
+const BUTE_ROBSON = [49.28603, -123.12701];
 
 export const BUTE = [
   {
@@ -55,17 +55,33 @@ export const BUTE = [
   {
     routeNames: [ROUTES.bute.name],
     description: "haro to lane",
-    type: "quiet",
+    type: "dedicated",
     videoIds: [ROUTE_VIDEOS.buteSb.id, ROUTE_VIDEOS.buteNb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.buteNb.id],
-    positions: [BUTE_HARO, BUTE_ROSEMARY_BROWN],
+    positions: [BUTE_HARO, BUTE_ROSEMARY_BROWN_S],
   },
   {
     routeNames: [ROUTES.bute.name],
     description: "plaza at robson",
-    type: "mixed",
+    type: "dedicated",
     videoIds: [ROUTE_VIDEOS.buteSb.id],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.buteSb.id],
-    positions: [BUTE_ROSEMARY_BROWN, BUTE_ROBSON],
+    positions: [
+      BUTE_ROSEMARY_BROWN_S,
+      [49.28558, -123.12761],
+      [49.28561, -123.12757],
+      [49.28566, -123.12757],
+      [49.28571, -123.12752],
+      [49.28592, -123.12719],
+      [49.28594, -123.12713],
+      [49.28597, -123.1271],
+      BUTE_ROBSON,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bute.name],
+    description: "robson to alley-ish",
+    type: "dedicated",
+    positions: [BUTE_ROBSON, [49.28628, -123.12663]],
   },
 ];
