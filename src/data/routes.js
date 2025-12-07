@@ -589,7 +589,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "Flat with lots of traffic calming. The city intends to extend this all the way to the water at both ends and make it a greenway; those parts will be significantly steeper. The pedestrianized section at Robson is being upgraded in 2024/2025.",
+      "Flat with lots of traffic calming. The city intends to extend this all the way to the water at both ends and make it a greenway; those parts will be significantly steeper. The pedestrianized plaza at Robson was upgraded in December 2025.",
   },
   byrneCreek: {
     name: "Byrne Creek Urban Trail",
