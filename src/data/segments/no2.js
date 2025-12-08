@@ -3,6 +3,7 @@ import {
   LYNAS_DOVER_N,
   LYNAS_DOVER_S,
   LYNAS_RIVER,
+  LYNAS_WESTMINSTER_N,
   NO_2_RIVER_E_E,
   NO_2_RIVER_W_N,
   NO_2_RUSS_BAKER_E,
@@ -11,6 +12,7 @@ import {
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
+const NO_2_WESTMINSTER_NW = [49.1703, -123.15901];
 const NO_2_RIVER_E = [49.17229, -123.15866];
 const NB_ELEVATION_START = [49.17304, -123.15833];
 const NB_ELEVATION_END = [49.17805, -123.15538];
@@ -150,6 +152,22 @@ export const NO_2 = [
     positions: [NO_2_RIVER_E_E, NO_2_RIVER_E],
   },
 
+  // westminster hwy
+  {
+    routeNames: [ROUTES.no2.name],
+    description: "westminster",
+    type: "dedicated",
+    positions: [
+      LYNAS_WESTMINSTER_N,
+      [49.17023, -123.16291],
+      [49.17025, -123.1619],
+      [49.17028, -123.16097],
+      [49.17027, -123.15947],
+      [49.1703, -123.15929],
+      NO_2_WESTMINSTER_NW,
+    ],
+  },
+
   // nb
   {
     routeNames: [ROUTES.no2.name],
@@ -157,7 +175,8 @@ export const NO_2 = [
     type: "painted",
     oneWay: "required",
     positions: [
-      [49.17032, -123.15868],
+      NO_2_WESTMINSTER_NW,
+      [49.1703, -123.15868],
       [49.17143, -123.15866],
       [49.17188, -123.15871],
       NO_2_RIVER_E,
@@ -258,9 +277,7 @@ export const NO_2 = [
       [49.17182, -123.15895],
       [49.1706, -123.15899],
       [49.17052, -123.15901],
-      [49.17046, -123.15904],
-      [49.17042, -123.15908],
-      [49.17037, -123.15915],
+      NO_2_WESTMINSTER_NW,
     ],
   },
 ];

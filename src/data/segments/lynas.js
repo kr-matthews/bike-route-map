@@ -4,6 +4,7 @@ import {
   LYNAS_GRANVILLE_N,
   LYNAS_GRANVILLE_S,
   LYNAS_RIVER,
+  LYNAS_WESTMINSTER_N,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
@@ -52,7 +53,7 @@ export const LYNAS = [
       LYNAS_TIFFANY,
       [49.16736, -123.16454],
       [49.16874, -123.16452],
-      [49.17012, -123.16453],
+      LYNAS_WESTMINSTER_N,
       LYNAS_DOVER_S,
     ],
   },
