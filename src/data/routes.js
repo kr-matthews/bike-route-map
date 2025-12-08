@@ -1666,7 +1666,7 @@ export const ROUTES = {
     regions: [REGIONS.richmond],
     legs: [{ videos: { northbound: ROUTE_VIDEOS.lynasNb } }],
     notes:
-      "Very flat. The north part gets a lot of cars at times. Mainly useful as a connection with the No. 2 Bridge; connect to that via Dover Cr.",
+      "Very flat. The part north of Westminster Hwy gets a lot of cars at times - but you can avoid that as of late 2025, because there's a new protected lane along Westminster Hwy to connect to No. 2 Road and the bridge.",
   },
   mackay: {
     name: "MacKay",
@@ -1946,7 +1946,7 @@ export const ROUTES = {
     regions: [REGIONS.richmond],
     legs: [{ videos: { northbound: ROUTE_VIDEOS.no2Nb } }],
     notes:
-      "Painted lane over the bridge, beside the curb. Relatively flat. You can use the sidewalk as a shared use path instead. Doesn't connect to anything at the south end, and Westminster Hwy is not good for cyclists.",
+      "Painted lane over the bridge, beside the curb. Relatively flat, for a bridge. You can use the sidewalk as a shared use path instead. As of late 2025, you can now connect with Lynas Ln via a protected path along Westminster Hwy.",
   },
   no2Bridge: {
     name: "No. 2 Rd Bridge",
@@ -1960,7 +1960,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "The shared use sidewalk of the bridge - the only comfortable way to cross to Sea Island. There are no signs saying you have to use the right side, so I'd recommend the west side for both directions. The east side can only be accessed by briefly using the busy River Rd. As of 2024 there is some construction on the southwest side, so access to Dover Cr may be closed - which is the best way to exit the bridge.",
+      "The shared use sidewalk of the bridge - the only comfortable way to cross to Sea Island. There are no signs saying you have to use the right side, so I'd recommend the west side for both directions, accessed via Dover Cr - however, as of December 2025, this connection to Dover Cr has been closed for construction for over a year.",
   },
   no2Path: {
     name: "No. 2 Rd Path",
