@@ -27,7 +27,10 @@ export const GRANVILLE_CONNECTOR = [
   {
     description: "new path parallel to fir",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.granvilleConnectorFirPathSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.granvilleConnectorFirPathNb.id,
+      ROUTE_VIDEOS.granvilleConnectorFirPathSb.id,
+    ],
     positions: [ARBUTUS_GREENWAY_BEFORE_N_END, W_OF_FIR_5TH],
   },
   {
@@ -50,9 +53,11 @@ export const GRANVILLE_CONNECTOR = [
     type: "dedicated",
     videoIds: [
       ROUTE_VIDEOS.granvilleConnectorNb.id,
-      ROUTE_VIDEOS.granvilleConnectorFirPathSb.id,
+      ROUTE_VIDEOS.granvilleConnectorFirPathNb.id,
       ROUTE_VIDEOS.granvilleConnectorSb.id,
+      ROUTE_VIDEOS.granvilleConnectorFirPathSb.id,
     ],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.granvilleConnectorFirPathNb.id],
     positions: [
       W_OF_FIR_5TH,
       [49.26706, -123.14122],

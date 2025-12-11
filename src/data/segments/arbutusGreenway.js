@@ -244,10 +244,12 @@ export const ARBUTUS_GREENWAY = [
     description: "pine to path",
     type: "combined",
     videoIds: [
+      ROUTE_VIDEOS.granvilleConnectorFirPathNb.id,
       ROUTE_VIDEOS.arbutusGreenwayNb.id,
       ROUTE_VIDEOS.granvilleConnectorFirPathSb.id,
       ROUTE_VIDEOS.granvilleConnectorFirSb.id,
     ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.granvilleConnectorFirPathNb.id],
     videoIdsEndAtStart: [
       ROUTE_VIDEOS.granvilleConnectorFirSb.id,
       ROUTE_VIDEOS.granvilleConnectorFirPathSb.id,

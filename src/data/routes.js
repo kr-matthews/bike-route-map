@@ -299,8 +299,11 @@ export const ROUTES = {
     legs: [
       { videos: { northbound: ROUTE_VIDEOS.arbutusGreenwayNb } },
       {
-        name: "Path parallel to Fir St connecting to Granville Connector",
-        videos: { southbound: ROUTE_VIDEOS.granvilleConnectorFirPathSb },
+        name: "Connecting with Granville Connector through Burrard Slopes Park",
+        videos: {
+          northbound: ROUTE_VIDEOS.granvilleConnectorFirPathNb,
+          southbound: ROUTE_VIDEOS.granvilleConnectorFirPathSb,
+        },
       },
       {
         name: "Fir St connection with Granville Connector",
@@ -1261,8 +1264,11 @@ export const ROUTES = {
         },
       },
       {
-        name: "Path parallel to Fir St connecting to Arbutus Greenway",
-        videos: { southbound: ROUTE_VIDEOS.granvilleConnectorFirPathSb },
+        name: "Connecting with Arbutus Greenway through Burrard Slopes Park",
+        videos: {
+          northbound: ROUTE_VIDEOS.granvilleConnectorFirPathNb,
+          southbound: ROUTE_VIDEOS.granvilleConnectorFirPathSb,
+        },
       },
       {
         name: "Fir St connection with Arbutus Greenway",
@@ -2914,7 +2920,14 @@ export const ROUTES = {
     name: "Willingdon Urban Trail",
     shortName: "Willingdon Trail",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { southbound: ROUTE_VIDEOS.willingdonSb } }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.willingdonNb,
+          southbound: ROUTE_VIDEOS.willingdonSb,
+        },
+      },
+    ],
     notes:
       "Some hills. The section by the gas station at Canada Way is silly. Drivers at Costco will probably block the path. The crossing signals won't automatically change, so you're essentially guaranteed to have to stop and press the buttons.",
   },

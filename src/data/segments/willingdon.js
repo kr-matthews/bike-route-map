@@ -92,7 +92,8 @@ export const WILLINGDON = [
     routeNames: [ROUTES.willingdon.name],
     description: "deer lake to sidewalk",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.willingdonSb.id],
+    videoIds: [ROUTE_VIDEOS.willingdonNb.id, ROUTE_VIDEOS.willingdonSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.willingdonNb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.willingdonSb.id],
     positions: [
       WILLINGDON_DEER_LAKE,
@@ -126,9 +127,9 @@ export const WILLINGDON = [
   },
   {
     routeNames: [ROUTES.willingdon.name],
-    description: "deer lake to overpass",
+    description: "sidewalk at gas station",
     type: "other",
-    videoIds: [ROUTE_VIDEOS.willingdonSb.id],
+    videoIds: [ROUTE_VIDEOS.willingdonNb.id, ROUTE_VIDEOS.willingdonSb.id],
     positions: [SIDEWALK_START, [49.2548, -123.00411], SIDEWALK_END],
   },
   {
@@ -136,7 +137,7 @@ export const WILLINGDON = [
     description: "sidewalk to overpass",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [ROUTE_VIDEOS.willingdonSb.id],
+    videoIds: [ROUTE_VIDEOS.willingdonSb.id, ROUTE_VIDEOS.willingdonNb.id],
     positions: [
       SIDEWALK_END,
       [49.25561, -123.00402],
@@ -156,7 +157,7 @@ export const WILLINGDON = [
     description: "overpass",
     type: "mixed",
     elevation: 1,
-    videoIds: [ROUTE_VIDEOS.willingdonSb.id],
+    videoIds: [ROUTE_VIDEOS.willingdonSb.id, ROUTE_VIDEOS.willingdonNb.id],
     positions: [OVERPASS_START, OVERPASS_END],
   },
   {
@@ -164,8 +165,9 @@ export const WILLINGDON = [
     description: "overpass to central valley greenway",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [ROUTE_VIDEOS.willingdonSb.id],
+    videoIds: [ROUTE_VIDEOS.willingdonSb.id, ROUTE_VIDEOS.willingdonNb.id],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.willingdonSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.willingdonNb.id],
     positions: [
       OVERPASS_END,
       [49.25889, -123.00378],

@@ -893,6 +893,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Aug 09 2025"),
     minutes: 1,
   },
+  granvilleConnectorFirPathNb: {
+    id: "P5KemqaFBzk",
+    date: new Date("Dec 06 2025"),
+    minutes: 0,
+  },
   granvilleConnectorFirPathSb: {
     id: "gyTbb_TOR4k",
     date: new Date("Oct 29 2025"),
@@ -2243,6 +2248,12 @@ export const ROUTE_VIDEOS = {
     tlId: "DUDhA6fN3DI",
     date: new Date("Sep 11 2024"),
     minutes: 20,
+  },
+  willingdonNb: {
+    id: "4yMSr32qwwg",
+    tlId: "PgomkXVUWVg",
+    date: new Date("Dec 05 2025"),
+    minutes: 9,
   },
   willingdonSb: {
     id: "s58YehJpLE4",
