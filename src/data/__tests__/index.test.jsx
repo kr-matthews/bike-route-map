@@ -131,7 +131,8 @@ describe("data", () => {
     (upgrade) => {
       test(`has route names`, () => {
         expect(upgrade.routeNames).toEqual(expect.any(Array));
-        expect(upgrade.routeNames?.length).toBeGreaterThanOrEqual(1);
+        // some upgrades are not on routes
+        // expect(upgrade.routeNames.length).toBeGreaterThanOrEqual(1);
       });
       test(`has direction`, () => {
         expect(upgrade.direction).toBeTruthy();
