@@ -78,6 +78,7 @@ export const MILLER = [
     routeNames: [ROUTES.miller.name],
     description: "miller crossing aurora south side",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.seaIslandPathSeaIslandCenterNb.id],
     positions: [AURORA_MILLER_SW, AURORA_MILLER_SE],
   },
   {

@@ -2393,7 +2393,16 @@ export const ROUTES = {
   seaIslandPath: {
     name: "Sea Island Path",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { northbound: ROUTE_VIDEOS.seaIslandPathNb } }],
+    legs: [
+      {
+        name: "No. 2 Rd Bridge <-> Templeton Station",
+        videos: { northbound: ROUTE_VIDEOS.seaIslandPathNb },
+      },
+      {
+        name: "Gilbert <-> Sea Island Center Station",
+        videos: { northbound: ROUTE_VIDEOS.seaIslandPathSeaIslandCenterNb },
+      },
+    ],
     notes:
       "Very flat. Mostly quite good, some the sections under bridges can be quite low quality. At Templeton Station it turns into a regular sidewalk and it's not obvious that it's still a shared use path, but it is.",
   },

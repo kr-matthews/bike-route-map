@@ -1741,6 +1741,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("May 14 2024"),
     minutes: 13,
   },
+  seaIslandPathSeaIslandCenterNb: {
+    id: "IOxJtr41BEM",
+    date: new Date("Dec 07 2025"),
+    minutes: 5,
+  },
   seaIslandWayEb: {
     id: "wSwMTjMlKt4",
     date: new Date("Aug 19 2023"),
