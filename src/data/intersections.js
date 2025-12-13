@@ -762,6 +762,7 @@ export const RUPERT_29TH_W = [49.24453, -123.03415];
 export const RUPERT_45TH = [49.22929, -123.04313];
 export const RUPERT_CVG_E = [49.26067, -123.03354];
 export const RUPERT_CVG_W = [49.26042, -123.03397];
+export const RUSS_BAKER_GILBERT_NE = [49.18124, -123.15138];
 export const RUSS_BAKER_INGLIS_NW = [49.18008, -123.15359];
 export const RUSS_BAKER_INGLIS_SW = [49.17976, -123.15393];
 export const RUSS_BAKER_INGLIS_SW_S = [49.17954, -123.15402];

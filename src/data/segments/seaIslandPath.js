@@ -8,6 +8,7 @@ import {
   NO_2_RUSS_BAKER_E,
   NO_2_RUSS_BAKER_W,
   POST_SEA_ISLAND_CONNECTOR,
+  RUSS_BAKER_GILBERT_NE,
   RUSS_BAKER_INGLIS_NW,
   RUSS_BAKER_INGLIS_SW,
   SEA_ISLAND_CONNECTOR_ARTHUR_LAING_N,
@@ -23,6 +24,7 @@ import { ROUTE_VIDEOS } from "../videos/routes";
 const TEMPLETON_TERRACE_NE = [49.19034, -123.15052];
 const SEA_ISLAND_PATH_PRE_NO_2_W = [49.17875, -123.1551];
 const LARRY_BERG_PARK_SPLIT = [49.1847, -123.15035];
+const SEA_ISLAND_PATH_AIRPORT = [49.18492, -123.15033];
 const MILLER_PUMP_SPLIT = [49.19219, -123.1393];
 const UNDERNEATH_BRIDGES = [49.19241, -123.13883];
 const AIRPORT_S_END = [49.19373, -123.13903];
@@ -32,6 +34,15 @@ const POST_ARTHUR_LAING_SPLIT = [49.19548, -123.14004];
 const TEMPLETON_TEMPLETON_SE = [49.19738, -123.14478];
 
 export const SEA_ISLAND_PATH = [
+  {
+    description: "connection with russ baker @ gilbert",
+    type: "mixed",
+    positions: [
+      SEA_ISLAND_PATH_GILBERT_N,
+      [49.18144, -123.15168],
+      RUSS_BAKER_GILBERT_NE,
+    ],
+  },
   {
     description: "to sea island way",
     type: "mixed",
@@ -116,6 +127,16 @@ export const SEA_ISLAND_PATH = [
 
   // sea island center branch
   {
+    description: "airport, to burkeville",
+    type: "mixed",
+    positions: [
+      SEA_ISLAND_PATH_AIRPORT,
+      [49.18529, -123.1502],
+      [49.18565, -123.14977],
+      [49.18593, -123.14939],
+    ],
+  },
+  {
     description: "connecting to sea island center",
     type: "other",
     undesignated: true,
@@ -157,7 +178,7 @@ export const SEA_ISLAND_PATH = [
     positions: [
       LARRY_BERG_PARK_SPLIT,
       [49.18485, -123.15035],
-      [49.18492, -123.15033],
+      SEA_ISLAND_PATH_AIRPORT,
       [49.18498, -123.15042],
       [49.18504, -123.15044],
       [49.18575, -123.15041],
@@ -171,7 +192,6 @@ export const SEA_ISLAND_PATH = [
     ],
   },
   {
-    routeNames: [ROUTES.seaIslandPath.name],
     description: "templeton last block",
     type: "mixed",
     positions: [
