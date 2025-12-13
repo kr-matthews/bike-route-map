@@ -1958,7 +1958,16 @@ export const ROUTES = {
   no2: {
     name: "No. 2 Rd",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { northbound: ROUTE_VIDEOS.no2Nb } }],
+    legs: [
+      {
+        name: "From Lynas Ln, via Westminster Hwy",
+        videos: { northbound: ROUTE_VIDEOS.no2Nb25 },
+      },
+      {
+        name: "From Lynas Ln, via River Rd",
+        videos: { northbound: ROUTE_VIDEOS.no2Nb },
+      },
+    ],
     notes:
       "Painted lane over the bridge, beside the curb. Relatively flat, for a bridge. You can use the sidewalk as a shared use path instead. As of late 2025, you can now connect with Lynas Ln via a protected path along Westminster Hwy.",
   },

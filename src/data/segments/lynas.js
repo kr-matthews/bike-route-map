@@ -11,6 +11,7 @@ import { ROUTE_VIDEOS } from "../videos/routes";
 
 const LYNAS_OPAL = [49.16619, -123.16461];
 const LYNAS_TIFFANY = [49.16723, -123.16459];
+const LYNAS_TIFFANY_PARK = [49.16951, -123.16453];
 
 export const LYNAS = [
   {
@@ -46,16 +47,30 @@ export const LYNAS = [
   },
   {
     routeNames: [ROUTES.lynas.name],
-    description: "path to dover",
+    description: "path to tiffany park",
     type: "quiet",
     videoIds: [ROUTE_VIDEOS.lynasNb.id],
     positions: [
       LYNAS_TIFFANY,
       [49.16736, -123.16454],
       [49.16874, -123.16452],
-      LYNAS_WESTMINSTER_N,
-      LYNAS_DOVER_S,
+      LYNAS_TIFFANY_PARK,
     ],
+  },
+  {
+    routeNames: [ROUTES.lynas.name],
+    description: "just s of westminster",
+    type: "quiet",
+    videoIds: [ROUTE_VIDEOS.no2Nb25.id, ROUTE_VIDEOS.lynasNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.no2Nb25.id],
+    positions: [LYNAS_TIFFANY_PARK, LYNAS_WESTMINSTER_N],
+  },
+  {
+    routeNames: [ROUTES.lynas.name],
+    description: "westminster to dover",
+    type: "quiet",
+    videoIds: [ROUTE_VIDEOS.lynasNb.id],
+    positions: [LYNAS_WESTMINSTER_N, LYNAS_DOVER_S],
   },
   {
     routeNames: [ROUTES.lynas.name],

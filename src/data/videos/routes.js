@@ -1409,6 +1409,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("May 28 2024"),
     minutes: 4,
   },
+  no2Nb25: {
+    id: "sipxQKUXfos",
+    date: new Date("Dec 07 2025"),
+    minutes: 5,
+  },
   no2BridgeNb: {
     id: "tBc8qFUTNgc",
     date: new Date("May 14 2024"),
