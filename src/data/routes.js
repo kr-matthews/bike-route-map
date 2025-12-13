@@ -1480,8 +1480,16 @@ export const ROUTES = {
   inglis: {
     name: "Inglis Dr",
     regions: [REGIONS.richmond],
-    legs: [{ videos: {} }],
-    notes: "Very flat.",
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.inglisEb,
+          westbound: ROUTE_VIDEOS.inglisWb,
+        },
+      },
+    ],
+    notes:
+      "Very flat, a dead-end. Shoulder gets very narrow at the west end, but there's not much traffic.",
   },
   inverness: {
     name: "Inverness",

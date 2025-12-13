@@ -4,6 +4,7 @@ import {
   RUSS_BAKER_INGLIS_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const COWLEY_INGLIS_N = [49.17767, -123.1669];
 const SHOULDER_RESTART = [49.17763, -123.16921];
@@ -22,6 +23,8 @@ export const INGLIS = [
     description: "eb",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.inglisEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.inglisEb.id],
     positions: [
       [49.17961, -123.18196],
       [49.17946, -123.1815],
@@ -92,6 +95,15 @@ export const INGLIS = [
       [49.17986, -123.15401],
       [49.17982, -123.15396],
       RUSS_BAKER_INGLIS_SW,
+    ],
+  },
+
+  {
+    description: "eb end to russ baker",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
+      RUSS_BAKER_INGLIS_SW,
       [49.1797, -123.15392],
       [49.17964, -123.15395],
     ],
@@ -101,6 +113,8 @@ export const INGLIS = [
     description: "wb join from russ baker",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.inglisWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.inglisWb.id],
     positions: [
       RUSS_BAKER_INGLIS_SPLIT,
       [49.1809, -123.15242],
@@ -117,6 +131,7 @@ export const INGLIS = [
     description: "wb 1",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.inglisWb.id],
     positions: [
       RUSS_BAKER_INGLIS_NW,
       [49.18009, -123.15371],
@@ -152,6 +167,7 @@ export const INGLIS = [
     description: "wb 2 shared",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.inglisWb.id],
     positions: [
       COWLEY_INGLIS_N,
       [49.17763, -123.1671],
@@ -166,6 +182,8 @@ export const INGLIS = [
     description: "wb 3",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.inglisWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.inglisWb.id],
     positions: [
       SHOULDER_RESTART,
       [49.17764, -123.1695],

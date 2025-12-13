@@ -179,7 +179,7 @@ export const SEA_ISLAND_PATH = [
   },
   {
     routeNames: [ROUTES.seaIslandPath.name],
-    description: "no. 2 to larry berg flight path park",
+    description: "no. 2 to inglis",
     type: "mixed",
     videoIds: [ROUTE_VIDEOS.seaIslandPathNb.id],
     positions: [
@@ -190,8 +190,27 @@ export const SEA_ISLAND_PATH = [
       [49.17965, -123.15416],
       [49.17972, -123.15407],
       RUSS_BAKER_INGLIS_SW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaIslandPath.name],
+    description: "crossing inglis",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.seaIslandPathNb.id, ROUTE_VIDEOS.inglisEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.inglisEb.id],
+    positions: [
+      RUSS_BAKER_INGLIS_SW,
       [49.17979, -123.1538],
       [49.17996, -123.15358],
+      RUSS_BAKER_INGLIS_NW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaIslandPath.name],
+    description: "inglis to larry berg flight path park",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.seaIslandPathNb.id],
+    positions: [
       RUSS_BAKER_INGLIS_NW,
       [49.18015, -123.15357],
       [49.18018, -123.15347],
