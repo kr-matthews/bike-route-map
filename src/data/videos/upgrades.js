@@ -305,6 +305,16 @@ export const UPGRADE_VIDEOS = {
     position: [49.24925, -123.00988],
     region: REGIONS.burnaby,
   },
+  sperlingCanadaWaySb25: {
+    id: "he2RM2ec01M",
+    title: "Sperling Ave crossing Canada Way",
+    routeNames: [],
+    direction: "southbound",
+    date: new Date("Dec 05 2025"),
+    minutes: 1,
+    position: [49.23969, -122.96469],
+    region: REGIONS.burnaby,
+  },
   princeEdward16thNb25: {
     id: "LDXJxFIESe8",
     title: "Prince Edward @ 16th",
