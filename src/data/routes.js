@@ -2271,7 +2271,14 @@ export const ROUTES = {
   railwayGreenway: {
     name: "Railway Greenway",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { southbound: ROUTE_VIDEOS.railwayGreenwaySb } }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.railwayGreenwayNb,
+          southbound: ROUTE_VIDEOS.railwayGreenwaySb,
+        },
+      },
+    ],
     notes:
       "Very flat. Unfortunately, there's a gap in Steveston and you need to either walk, or use the road. The speed limit is 15 km/h (which, like street speed limits, is never enforced), and it's shared with pedestrians, so the painted lanes on the road may be preferable to some.",
   },

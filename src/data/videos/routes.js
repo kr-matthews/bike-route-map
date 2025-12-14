@@ -1648,6 +1648,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Sep 11 2024"),
     minutes: 13,
   },
+  railwayGreenwayNb: {
+    id: "LV_eg7TLzyc",
+    tlId: "seezc_LAao8",
+    date: new Date("Dec 07 2025"),
+    minutes: 17,
+  },
   railwayGreenwaySb: {
     id: "GVd9Sh3rgE4",
     tlId: "svGYFsk2en4",

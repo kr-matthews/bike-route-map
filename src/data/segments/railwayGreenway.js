@@ -1,12 +1,14 @@
 import {
   MCCALLAN_MIDDLE_ARM,
   RAILWAY_GARRY_NW,
+  RAILWAY_GARRY_SE,
   RAILWAY_GREENWAY_COLBECK,
   RAILWAY_GREENWAY_GRANVILLE_N,
   RAILWAY_GREENWAY_GRANVILLE_S,
   RAILWAY_GREENWAY_STEVESTON_S,
   RAILWAY_GREENWAY_WESTWATER,
   RAILWAY_GREENWAY_WOODWARDS,
+  RAILWAY_MONCTON_NE,
   RAILWAY_MONCTON_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -18,6 +20,8 @@ const MCCALLAN_WESTMINSTER_N = [49.17024, -123.17003];
 const MCCALLAN_WESTMINSTER_NE = [49.17024, -123.16992];
 
 const RAILWAY_GREENWAY_MONCTON_S = [49.12506, -123.17003];
+const RAILWAY_GREENWAY_MONCTON_N = [49.12522, -123.16997];
+const RAILWAY_GREENWAY_GARRY_S = [49.12926, -123.17];
 const RAILWAY_GREENWAY_GARRY_N = [49.1294, -123.16999];
 
 export const RAILWAY_GREENWAY = [
@@ -49,7 +53,11 @@ export const RAILWAY_GREENWAY = [
     routeNames: [ROUTES.railwayGreenway.name],
     description: "westwater to moncton",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.railwayGreenwaySb.id],
+    videoIds: [
+      ROUTE_VIDEOS.railwayGreenwayNb.id,
+      ROUTE_VIDEOS.railwayGreenwaySb.id,
+    ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.railwayGreenwayNb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.railwayGreenwaySb.id],
     positions: [
       RAILWAY_GREENWAY_WESTWATER,
@@ -72,7 +80,22 @@ export const RAILWAY_GREENWAY = [
     routeNames: [ROUTES.railwayGreenway.name],
     description: "crossing moncton",
     type: "mixed",
-    positions: [RAILWAY_GREENWAY_MONCTON_S, [49.12522, -123.16997]],
+    videoIds: [ROUTE_VIDEOS.railwayGreenwayNb.id],
+    positions: [RAILWAY_GREENWAY_MONCTON_S, RAILWAY_GREENWAY_MONCTON_N],
+  },
+  {
+    description: "crossing railway at moncton",
+    type: "other",
+    undesignated: true,
+    videoIds: [ROUTE_VIDEOS.railwayGreenwayNb.id],
+    positions: [RAILWAY_GREENWAY_MONCTON_N, RAILWAY_MONCTON_NE],
+  },
+  {
+    description: "crossing railway at garry",
+    type: "other",
+    undesignated: true,
+    videoIds: [ROUTE_VIDEOS.railwayGreenwayNb.id],
+    positions: [RAILWAY_GARRY_SE, RAILWAY_GREENWAY_GARRY_S],
   },
   {
     description: "greenway to road at moncton",
@@ -85,7 +108,8 @@ export const RAILWAY_GREENWAY = [
     routeNames: [ROUTES.railwayGreenway.name],
     description: "crossing garry",
     type: "comfortable",
-    positions: [[49.12926, -123.17], RAILWAY_GREENWAY_GARRY_N],
+    videoIds: [ROUTE_VIDEOS.railwayGreenwayNb.id],
+    positions: [RAILWAY_GREENWAY_GARRY_S, RAILWAY_GREENWAY_GARRY_N],
   },
   {
     description: "road to greenway at garry",
@@ -98,8 +122,12 @@ export const RAILWAY_GREENWAY = [
     routeNames: [ROUTES.railwayGreenway.name],
     description: "primary",
     type: "comfortable",
-    videoIds: [ROUTE_VIDEOS.railwayGreenwaySb.id],
+    videoIds: [
+      ROUTE_VIDEOS.railwayGreenwayNb.id,
+      ROUTE_VIDEOS.railwayGreenwaySb.id,
+    ],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.railwayGreenwaySb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.railwayGreenwayNb.id],
     positions: [
       RAILWAY_GREENWAY_GARRY_N,
       [49.12949, -123.17001],
