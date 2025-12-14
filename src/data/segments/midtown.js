@@ -33,6 +33,7 @@ import {
   RUPERT_29TH_E,
   RUPERT_29TH_W,
   SIXTH_BURRIS,
+  SPERLING_DEER_LAKE,
   WALES_38TH,
   WILLINGDON_DEER_LAKE,
   WILLOW_37TH,
@@ -56,6 +57,7 @@ const CARIBOO_29TH = [49.24449, -123.02744];
 const MOSCROP_COURTS_E = [49.24171, -122.99187];
 const KENSINGTON_GILPIN_NE = [49.24185, -122.96778];
 const SPERLING_GILPIN = [49.2415, -122.96468];
+const SPERLING_CLAUDE = [49.24076, -122.96468];
 const WILTON_CLAUDE = [49.24068, -122.96066];
 const MCCARTHY_CLAUDE = [49.24031, -122.95853];
 const DONOVAN_E = [49.2387, -122.95469];
@@ -72,6 +74,32 @@ export const MIDTOWN = [
       [49.23695, -123.01586],
       [49.23551, -123.01587],
       [49.233, -123.01587],
+    ],
+  },
+
+  {
+    description: "sperling @ canada way, nb",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      SPERLING_DEER_LAKE,
+      [49.23909, -122.96466],
+      [49.23918, -122.96462],
+      [49.24068, -122.96461],
+      SPERLING_CLAUDE,
+    ],
+  },
+  {
+    description: "sperling @ canada way, sb",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      SPERLING_CLAUDE,
+      [49.24069, -122.96477],
+      [49.23928, -122.96477],
+      [49.2392, -122.96478],
+      [49.23914, -122.96483],
+      SPERLING_DEER_LAKE,
     ],
   },
 
@@ -532,7 +560,7 @@ export const MIDTOWN = [
     ],
     positions: [
       SPERLING_GILPIN,
-      [49.24076, -122.96467],
+      SPERLING_CLAUDE,
       [49.24075, -122.96382],
       [49.24071, -122.96347],
       [49.2407, -122.96079],

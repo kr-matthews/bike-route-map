@@ -9,6 +9,7 @@ import {
   MARY_12TH,
   MARY_16TH,
   MARY_19TH,
+  SPERLING_DEER_LAKE,
   SPERLING_JOE_SAKIC_N,
   SPERLING_LOUGHEED_NE,
   SPERLING_LOUGHEED_SE,
@@ -25,7 +26,7 @@ const SPERLING_ADAIR_E = [49.26436, -122.96451];
 export const LAKES = [
   {
     routeNames: [ROUTES.lakes.name],
-    description: "southeast to midtown",
+    description: "southeast to deer lake/sperling",
     type: "quiet",
     videoIds: [ROUTE_VIDEOS.lakesNb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.lakesNb.id],
@@ -95,7 +96,16 @@ export const LAKES = [
       [49.23877, -122.9647],
       [49.2389, -122.9647],
       [49.23896, -122.96472],
-      [49.23906, -122.96481],
+      SPERLING_DEER_LAKE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lakes.name],
+    description: "deer lake/sperling to midtown",
+    type: "quiet",
+    videoIds: [ROUTE_VIDEOS.lakesNb.id],
+    positions: [
+      SPERLING_DEER_LAKE,
       [49.23903, -122.96488],
       [49.23902, -122.96497],
       [49.239, -122.9651],
