@@ -103,7 +103,11 @@ export const LAKES = [
     routeNames: [ROUTES.lakes.name],
     description: "deer lake/sperling to midtown",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.lakesNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.midtownBurnabyEbAltDeerLake.id,
+      ROUTE_VIDEOS.lakesNb.id,
+    ],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.midtownBurnabyEbAltDeerLake.id],
     positions: [
       SPERLING_DEER_LAKE,
       [49.23903, -122.96488],

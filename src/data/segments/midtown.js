@@ -81,6 +81,8 @@ export const MIDTOWN = [
     description: "sperling @ canada way, nb",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.midtownBurnabyEbAltDeerLake.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.midtownBurnabyEbAltDeerLake.id],
     positions: [
       SPERLING_DEER_LAKE,
       [49.23909, -122.96466],

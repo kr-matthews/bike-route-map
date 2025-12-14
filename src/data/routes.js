@@ -1861,6 +1861,12 @@ export const ROUTES = {
           westbound: ROUTE_VIDEOS.midtownBurnabyWb,
         },
       },
+      {
+        name: "Alternate route at Deer Lake",
+        videos: {
+          eastbound: ROUTE_VIDEOS.midtownBurnabyEbAltDeerLake,
+        },
+      },
     ],
     notes:
       "There are a lot of hills. The east bit of Vancouver, on 29th, is particularly bad - hills combined with fast traffic. The signage in Burnaby is lacking, so it's not entirely clear where the route ends, and its easy to miss multiple turns near the Trans-Canada Highway.",
