@@ -13,6 +13,7 @@ import {
   SPERLING_JOE_SAKIC_N,
   SPERLING_LOUGHEED_NE,
   SPERLING_LOUGHEED_SE,
+  SPERLING_SPROTT,
   SPERLING_WINSTON,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -160,7 +161,7 @@ export const LAKES = [
     positions: [
       KENSINGTON_SPROTT_W,
       KENSINGTON_SPROTT_E,
-      [49.24993, -122.96466],
+      SPERLING_SPROTT,
       [49.25211, -122.96465],
       SPERLING_JOE_SAKIC_N,
     ],
