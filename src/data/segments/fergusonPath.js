@@ -1,25 +1,61 @@
 import {
-  FERGUSON_PATH_W,
+  IONA_PARK_E,
   MCDONALD_FERGUSON_NW,
   MCDONALD_FERGUSON_SW,
+  W_DYKE_FERGUSON_N,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
+const W_DYKE_FERGUSON_PATH = [49.20769, -123.20157];
+
 export const FERGUSON_PATH = [
   {
     routeNames: [ROUTES.fergusonPath.name],
-    description: "all",
+    description: "w of w dyke",
+    type: "mixed",
+    positions: [
+      IONA_PARK_E,
+      [49.2167, -123.20311],
+      [49.21633, -123.20211],
+      [49.21606, -123.2015],
+      [49.21598, -123.20139],
+      [49.2159, -123.20134],
+      [49.21577, -123.20132],
+      [49.21473, -123.20181],
+      [49.21356, -123.20226],
+      [49.21223, -123.20267],
+      [49.2114, -123.20286],
+      [49.21137, -123.20263],
+      [49.21067, -123.2027],
+      [49.20992, -123.20275],
+      [49.20903, -123.20273],
+      [49.20876, -123.2027],
+      [49.20846, -123.20256],
+      [49.20817, -123.20235],
+      [49.20796, -123.20207],
+      [49.20782, -123.2018],
+      W_DYKE_FERGUSON_PATH,
+    ],
+  },
+  {
+    description: "initial w end connection",
+    type: "mixed",
+    undesignated: true,
+    videoIds: [ROUTE_VIDEOS.fergusonPathWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.fergusonPathWb.id],
+    positions: [W_DYKE_FERGUSON_N, W_DYKE_FERGUSON_PATH],
+  },
+  {
+    routeNames: [ROUTES.fergusonPath.name],
+    description: "e of w dyke",
     type: "mixed",
     videoIds: [ROUTE_VIDEOS.fergusonPathWb.id],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.fergusonPathWb.id],
-    videoIdsEndAtStart: [ROUTE_VIDEOS.fergusonPathWb.id],
     positions: [
-      FERGUSON_PATH_W,
-      [49.20769, -123.20157],
-      [49.20768, -123.20141],
-      [49.20765, -123.20123],
-      [49.2076, -123.20106],
+      W_DYKE_FERGUSON_PATH,
+      [49.20766, -123.20143],
+      [49.20758, -123.20108],
       [49.20756, -123.20083],
       [49.20754, -123.20032],
       [49.20759, -123.19983],
