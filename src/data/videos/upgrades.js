@@ -345,4 +345,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.17028, -123.15958],
     region: REGIONS.richmond,
   },
+  fergusonMupEb26: {
+    id: "X9KWSBuvh8U",
+    title: "Ferguson Rd MUP Extension",
+    routeNames: [ROUTES.fergusonPath.name],
+    direction: "eastbound",
+    date: new Date("Jan 13 2026"),
+    minutes: 2,
+    position: [49.21215, -123.20264],
+    region: REGIONS.richmond,
+  },
 };
