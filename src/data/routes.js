@@ -1065,7 +1065,7 @@ export const ROUTES = {
     regions: [REGIONS.richmond],
     legs: [{ videos: { westbound: ROUTE_VIDEOS.fergusonPathWb } }],
     notes:
-      "A brand new, very flat shared use path from late 2024. Unfortunately, you need to use roads to get to it, and it doesn't go all the way to Iona Island.",
+      "A very flat shared use path from late 2024, which was then extended in late 2025. Unfortunately, you need to use roads to get to it, and the last little bit to Iona Beach is still a shared lane.",
   },
   forbesEsplanade: {
     name: "Forbes/Esplanade",
