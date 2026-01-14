@@ -18,6 +18,7 @@ import { ROUTE_VIDEOS } from "../videos/routes";
 const RUSS_BAKER_GRANT_MCCONACHIE_N = [49.19465, -123.14375];
 const RUSS_BAKER_GRANT_MCCONACHIE_S = [49.19414, -123.14359];
 const SB_PRE_MILLER = [49.19356, -123.14297];
+const ARTHUR_LAING_TO_MILLER_MID = [49.19544, -123.1427];
 
 export const RUSS_BAKER = [
   {
@@ -72,10 +73,9 @@ export const RUSS_BAKER = [
   },
 
   {
-    description: "sb: arthur laing to miller 1",
+    description: "sb: arthur laing to miller 1a",
     type: "shoulder",
     oneWay: "required",
-    elevation: 0.5,
     videoIds: [ROUTE_VIDEOS.russBakerSb.id],
     positions: [
       SEA_ISLAND_CONNECTOR_ARTHUR_LAING_N,
@@ -87,7 +87,18 @@ export const RUSS_BAKER = [
       [49.19541, -123.14203],
       [49.19544, -123.14224],
       [49.19545, -123.14247],
-      [49.19544, -123.1427],
+      ARTHUR_LAING_TO_MILLER_MID,
+    ],
+  },
+
+  {
+    description: "sb: arthur laing to miller 1b",
+    type: "shoulder",
+    oneWay: "required",
+    elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.russBakerSb.id],
+    positions: [
+      ARTHUR_LAING_TO_MILLER_MID,
       [49.1954, -123.14287],
       [49.19532, -123.14314],
       [49.19521, -123.14336],
