@@ -20,11 +20,10 @@ export const GRAUER = [
   },
   {
     routeNames: [ROUTES.grauer.name],
-    description: "eb",
+    description: "eb 1",
     type: "shoulder",
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.grauerEb.id],
-    videoIdsEndAtEnd: [ROUTE_VIDEOS.grauerEb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.grauerEb.id],
     positions: [
       TEMPLETON_GRAUER_SE,
@@ -44,6 +43,20 @@ export const GRAUER = [
       [49.1987, -123.13981],
       [49.1986, -123.13931],
       MCDONALD_BEACH_PATH_GRAUER_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.grauer.name],
+    description: "eb 2",
+    type: "shoulder",
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.grauerEb.id, ROUTE_VIDEOS.mcdonaldBeachTrailEb.id],
+    videoIdsEndAtEnd: [
+      ROUTE_VIDEOS.grauerEb.id,
+      ROUTE_VIDEOS.mcdonaldBeachTrailEb.id,
+    ],
+    positions: [
+      MCDONALD_BEACH_PATH_GRAUER_S,
       [49.19841, -123.13849],
       [49.19829, -123.13814],
       [49.19808, -123.13758],
@@ -61,13 +74,17 @@ export const GRAUER = [
       AIRPORT_TEMPLETON_STATION_SW,
     ],
   },
+
   {
     routeNames: [ROUTES.grauer.name],
     description: "wb 1",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [ROUTE_VIDEOS.mcdonaldBeachTrailWb.id],
-    videoIdsStartAtStart: [ROUTE_VIDEOS.mcdonaldBeachTrailWb.id],
+    videoIds: [ROUTE_VIDEOS.grauerWb.id, ROUTE_VIDEOS.mcdonaldBeachTrailWb.id],
+    videoIdsStartAtStart: [
+      ROUTE_VIDEOS.grauerWb.id,
+      ROUTE_VIDEOS.mcdonaldBeachTrailWb.id,
+    ],
     positions: [
       AIRPORT_TEMPLETON_STATION_SW,
       [49.19616, -123.13693],
@@ -94,6 +111,8 @@ export const GRAUER = [
     description: "wb 2",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.grauerWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.grauerWb.id],
     positions: [
       MCDONALD_BEACH_PATH_GRAUER_N,
       [49.19873, -123.13958],
@@ -110,7 +129,13 @@ export const GRAUER = [
       [49.1994, -123.14767],
       [49.19942, -123.14886],
       TEMPLETON_GRAUER_NE,
-      TEMPLETON_GRAUER_NW,
     ],
+  },
+  {
+    routeNames: [ROUTES.grauer.name],
+    description: "wb crossing ferguson",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [TEMPLETON_GRAUER_NE, TEMPLETON_GRAUER_NW],
   },
 ];

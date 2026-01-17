@@ -12,7 +12,11 @@ export const MCDONALD_BEACH_TRAIL = [
   {
     description: "mcdonald rd",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.mcdonaldBeachTrailWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.mcdonaldBeachTrailEb.id,
+      ROUTE_VIDEOS.mcdonaldBeachTrailWb.id,
+    ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.mcdonaldBeachTrailEb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.mcdonaldBeachTrailWb.id],
     positions: [
       MCDONALD_FERGUSON_NW,
@@ -30,13 +34,17 @@ export const MCDONALD_BEACH_TRAIL = [
   {
     description: "crossing grauer",
     type: "shared",
+    videoIds: [ROUTE_VIDEOS.mcdonaldBeachTrailEb.id],
     positions: [MCDONALD_BEACH_PATH_GRAUER_N, MCDONALD_BEACH_PATH_GRAUER_S],
   },
   {
     routeNames: [ROUTES.mcdonaldBeachTrail.name],
     description: "trail",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.mcdonaldBeachTrailWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.mcdonaldBeachTrailWb.id,
+      ROUTE_VIDEOS.mcdonaldBeachTrailEb.id,
+    ],
     positions: [
       MCDONALD_BEACH_TRAIL_W,
       [49.2124, -123.16956],

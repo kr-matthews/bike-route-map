@@ -1056,14 +1056,28 @@ export const ROUTES = {
   ferguson: {
     name: "Ferguson Rd",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { eastbound: ROUTE_VIDEOS.fergusonEb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.fergusonEb,
+          westbound: ROUTE_VIDEOS.fergusonWb,
+        },
+      },
+    ],
     notes:
       "Very flat. The portion beside the shared use path is a new realignment of the road in late 2024. There is a lot of traffic up to the buildings around McDonald Rd, then it gets a lot quieter.",
   },
   fergusonPath: {
     name: "Ferguson Rd Path",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { westbound: ROUTE_VIDEOS.fergusonPathWb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.fergusonPathEb,
+          westbound: ROUTE_VIDEOS.fergusonPathWb,
+        },
+      },
+    ],
     notes:
       "A very flat shared use path from late 2024, which was then extended in late 2025. Unfortunately, you need to use roads to get to it, and the last little bit to Iona Beach is still a shared lane.",
   },
@@ -1289,7 +1303,14 @@ export const ROUTES = {
   grauer: {
     name: "Grauer Rd",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { eastbound: ROUTE_VIDEOS.grauerEb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.grauerEb,
+          westbound: ROUTE_VIDEOS.grauerWb,
+        },
+      },
+    ],
     notes: "A flat and quiet road.",
   },
   guildford: {
@@ -1821,7 +1842,14 @@ export const ROUTES = {
     name: "McDonald Beach Trail",
     shortName: "McDonald Beach T.",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { westbound: ROUTE_VIDEOS.mcdonaldBeachTrailWb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.mcdonaldBeachTrailEb,
+          westbound: ROUTE_VIDEOS.mcdonaldBeachTrailWb,
+        },
+      },
+    ],
     notes:
       "Very flat, but the surface has lots of holes/indentations, which may be full of water.",
   },

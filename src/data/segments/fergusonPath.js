@@ -14,6 +14,7 @@ export const FERGUSON_PATH = [
     routeNames: [ROUTES.fergusonPath.name],
     description: "w of w dyke",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.fergusonPathEb.id],
     positions: [
       IONA_PARK_E,
       [49.2167, -123.20311],
@@ -50,8 +51,9 @@ export const FERGUSON_PATH = [
     routeNames: [ROUTES.fergusonPath.name],
     description: "e of w dyke",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.fergusonPathWb.id],
+    videoIds: [ROUTE_VIDEOS.fergusonPathEb.id, ROUTE_VIDEOS.fergusonPathWb.id],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.fergusonPathWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.fergusonPathEb.id],
     positions: [
       W_DYKE_FERGUSON_PATH,
       [49.20766, -123.20143],

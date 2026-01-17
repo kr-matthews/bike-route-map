@@ -13,6 +13,7 @@ import { ROUTE_VIDEOS } from "../videos/routes";
 const EB_SHOULDER_OLD_END = [49.21162, -123.20275];
 const WB_LEFT_TURN_START = [49.21542, -123.20128];
 const FERGUSON_TREATMENT_PLANT = [49.2161, -123.20116];
+const JETTY_FERGUSON = [49.21705, -123.21191];
 
 export const FERGUSON = [
   // eb
@@ -136,6 +137,8 @@ export const FERGUSON = [
     description: "wb 1",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.fergusonWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.fergusonWb.id],
     positions: [
       TEMPLETON_GRAUER_NE,
       [49.19994, -123.1489],
@@ -204,6 +207,7 @@ export const FERGUSON = [
     description: "wb 2",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.fergusonWb.id],
     positions: [
       WB_LEFT_TURN_START,
       [49.21559, -123.20126],
@@ -217,6 +221,7 @@ export const FERGUSON = [
     description: "wb 3",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.fergusonWb.id],
     positions: [
       FERGUSON_TREATMENT_PLANT,
       [49.21619, -123.2014],
@@ -229,10 +234,14 @@ export const FERGUSON = [
   // the park itself
   {
     routeNames: [ROUTES.ferguson.name],
-    description: "west tip",
+    description: "east of jetty",
     type: "shared",
-    videoIds: [ROUTE_VIDEOS.fergusonEb.id],
-    videoIdsStartAtEnd: [ROUTE_VIDEOS.fergusonEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.fergusonEb.id,
+      ROUTE_VIDEOS.fergusonPathEb.id,
+      ROUTE_VIDEOS.fergusonWb.id,
+    ],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.fergusonPathEb.id],
     positions: [
       IONA_PARK_E,
       [49.21696, -123.20373],
@@ -246,7 +255,18 @@ export const FERGUSON = [
       [49.21689, -123.21053],
       [49.21694, -123.21112],
       [49.21696, -123.2114],
-      [49.21705, -123.21191],
+      JETTY_FERGUSON,
+    ],
+  },
+  {
+    routeNames: [ROUTES.ferguson.name],
+    description: "west of jetty",
+    type: "shared",
+    videoIds: [ROUTE_VIDEOS.fergusonEb.id, ROUTE_VIDEOS.fergusonWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.fergusonEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.fergusonWb.id],
+    positions: [
+      JETTY_FERGUSON,
       [49.21712, -123.21215],
       [49.21727, -123.21251],
       [49.21744, -123.2128],

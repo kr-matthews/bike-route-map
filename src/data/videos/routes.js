@@ -673,6 +673,18 @@ export const ROUTE_VIDEOS = {
     date: new Date("Nov 6 2024"),
     minutes: 15,
   },
+  fergusonWb: {
+    id: "zikuhWI9n18",
+    tlId: "cupYi9rfr_o",
+    date: new Date("Jan 13 2026"),
+    minutes: 15,
+  },
+  fergusonPathEb: {
+    id: "Dfj_Nzca3og",
+    tlId: "54LAotv5BJo",
+    date: new Date("Jan 13 2026"),
+    minutes: 10,
+  },
   fergusonPathWb: {
     id: "k8qPxIMJVos",
     tlId: "XJ8duP7vFtc",
@@ -922,6 +934,11 @@ export const ROUTE_VIDEOS = {
   grauerEb: {
     id: "FobrXUj-2eg",
     date: new Date("Nov 6 2024"),
+    minutes: 3,
+  },
+  grauerWb: {
+    id: "kop56Umf5Fg",
+    date: new Date("Jan 13 2026"),
     minutes: 3,
   },
   greenhousePathEb: {
@@ -1298,6 +1315,12 @@ export const ROUTE_VIDEOS = {
     tlId: "3uUyA1eQfh4",
     date: new Date("Oct 16 2023"),
     minutes: 23,
+  },
+  mcdonaldBeachTrailEb: {
+    id: "djzpoTYNAc4",
+    tlId: "pQcpuSAykUs",
+    date: new Date("Jan 13 2026"),
+    minutes: 12,
   },
   mcdonaldBeachTrailWb: {
     id: "hO_xU5C8E8Y",
