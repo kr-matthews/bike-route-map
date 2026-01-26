@@ -745,7 +745,14 @@ export const ROUTES = {
   cassiar: {
     name: "Cassiar",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { southbound: ROUTE_VIDEOS.cassiarSb } }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.cassiarNb,
+          southbound: ROUTE_VIDEOS.cassiarSb,
+        },
+      },
+    ],
     notes:
       "Flat-ish. Crossing Hastings is not great; technically you must dismount (nobody does).",
   },

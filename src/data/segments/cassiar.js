@@ -15,7 +15,7 @@ export const CASSIAR = [
     routeNames: [ROUTES.cassiar.name],
     description: "adanac to hastings",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.cassiarSb.id],
+    videoIds: [ROUTE_VIDEOS.cassiarNb.id, ROUTE_VIDEOS.cassiarSb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.cassiarSb.id],
     positions: [
       CASSIAR_ADANAC,
@@ -30,7 +30,7 @@ export const CASSIAR = [
     routeNames: [ROUTES.cassiar.name],
     description: "crossing hastings",
     type: "other",
-    videoIds: [ROUTE_VIDEOS.cassiarSb.id],
+    videoIds: [ROUTE_VIDEOS.cassiarNb.id, ROUTE_VIDEOS.cassiarSb.id],
     positions: [
       CASSIAR_HASTINGS_SE,
       [49.28099, -123.03128],
@@ -42,7 +42,7 @@ export const CASSIAR = [
     routeNames: [ROUTES.cassiar.name],
     description: "hastings to dundas (hastings park connection)",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.cassiarSb.id],
+    videoIds: [ROUTE_VIDEOS.cassiarNb.id, ROUTE_VIDEOS.cassiarSb.id],
     positions: [
       CASSIAR_HASTINGS_NE,
       [49.28206, -123.03083],
@@ -55,7 +55,11 @@ export const CASSIAR = [
     routeNames: [ROUTES.cassiar.name],
     description: "dundas (hastings park connection) to cambridge",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.cassiarSb.id, ROUTE_VIDEOS.secondNarrowsNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.cassiarSb.id,
+      ROUTE_VIDEOS.secondNarrowsNb.id,
+      ROUTE_VIDEOS.cassiarNb.id,
+    ],
     videoIdsStartAtStart: [ROUTE_VIDEOS.secondNarrowsNb.id],
     positions: [
       CASSIAR_DUNDAS_S,
@@ -71,7 +75,11 @@ export const CASSIAR = [
     routeNames: [ROUTES.cassiar.name],
     description: "path",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.cassiarSb.id, ROUTE_VIDEOS.secondNarrowsNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.cassiarSb.id,
+      ROUTE_VIDEOS.secondNarrowsNb.id,
+      ROUTE_VIDEOS.cassiarNb.id,
+    ],
     positions: [
       CASSIAR_CAMBRIDGE,
       [49.28701, -123.02974],

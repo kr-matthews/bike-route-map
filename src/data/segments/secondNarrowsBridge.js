@@ -64,7 +64,8 @@ export const SECOND_NARROWS_BRIDGE = [
     type: "mixed",
     oneWay: "recommended",
     elevation: 0.5,
-    videoIds: [ROUTE_VIDEOS.secondNarrowsNb.id],
+    videoIds: [ROUTE_VIDEOS.secondNarrowsNb.id, ROUTE_VIDEOS.cassiarNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.cassiarNb.id],
     positions: [
       CASSIAR_SKEENA_PATH,
       [49.28839, -123.02849],

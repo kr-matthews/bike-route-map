@@ -429,6 +429,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Sep 27 2024"),
     minutes: 4,
   },
+  cassiarNb: {
+    id: "olQwAnrYo0s",
+    date: new Date("Nov 11 2025"),
+    minutes: 5,
+  },
   cassiarSb: {
     id: "NR3XgAb9F2M",
     date: new Date("Oct 28 2023"),
