@@ -45,7 +45,8 @@ import { ROUTE_VIDEOS } from "../videos/routes";
 
 const CEMETERY_BLOCK_37TH = [49.23707, -123.09262];
 const FRASER_LANE_E_37TH = [49.23655, -123.08988];
-const CULLODEN_37TH_SW = [49.23649, -123.07912];
+const CULLODEN_37TH_S = [49.23649, -123.07912];
+const CULLODEN_37TH_N = [49.23689, -123.07911];
 const COMMERCIAL_LANE_E_37TH_LANE_S = [49.23632, -123.06821];
 const VICTORIA_38TH_W = [49.23594, -123.06551];
 const EAST_OF_BOUNDARY = [49.24311, -123.02253];
@@ -266,9 +267,22 @@ export const MIDTOWN = [
       ROUTE_VIDEOS.midtownVancouverEb.id,
       ROUTE_VIDEOS.ridgewayWb.id,
       ROUTE_VIDEOS.invernessSb.id,
+      ROUTE_VIDEOS.invernessNb.id,
     ],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.invernessSb.id],
-    positions: [INVERNESS_37TH, [49.23649, -123.07937], CULLODEN_37TH_SW],
+    positions: [INVERNESS_37TH, [49.23649, -123.07937], CULLODEN_37TH_S],
+  },
+  {
+    routeNames: [ROUTES.midtown.name, ROUTES.ridgeway.name],
+    description: "culloden",
+    type: "quiet",
+    videoIds: [
+      ROUTE_VIDEOS.midtownVancouverEb.id,
+      ROUTE_VIDEOS.ridgewayWb.id,
+      ROUTE_VIDEOS.invernessNb.id,
+    ],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.invernessNb.id],
+    positions: [CULLODEN_37TH_S, CULLODEN_37TH_N],
   },
   {
     routeNames: [ROUTES.midtown.name, ROUTES.ridgeway.name],
@@ -276,8 +290,7 @@ export const MIDTOWN = [
     type: "quiet",
     videoIds: [ROUTE_VIDEOS.midtownVancouverEb.id, ROUTE_VIDEOS.ridgewayWb.id],
     positions: [
-      CULLODEN_37TH_SW,
-      [49.23689, -123.07911],
+      CULLODEN_37TH_N,
       [49.23686, -123.07693],
       DUMFRIES_37TH,
       [49.2368, -123.07277],

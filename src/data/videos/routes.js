@@ -1128,6 +1128,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Dec 07 2025"),
     minutes: 6,
   },
+  invernessNb: {
+    id: "NvAL5i82rAI",
+    tlId: "Y4V3kcAUaSk",
+    date: new Date("Jan 22 2026"),
+    minutes: 13,
+  },
   invernessSb: {
     id: "eim5zDSdA2I",
     date: new Date("Aug 05 2023"),

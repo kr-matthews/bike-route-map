@@ -1522,7 +1522,14 @@ export const ROUTES = {
   inverness: {
     name: "Inverness",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { southbound: ROUTE_VIDEOS.invernessSb } }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.invernessNb,
+          southbound: ROUTE_VIDEOS.invernessSb,
+        },
+      },
+    ],
     notes:
       "Very steep. Quiet, but cars will be impatient to pass you going uphill. The configuration at Marine is confusing, you briefly travel on the left of opposing bikes.",
   },
