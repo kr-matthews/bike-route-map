@@ -1,4 +1,4 @@
-import { FIRST_AGNES, MERIVALE_AGNES } from "../intersections";
+import { FIRST_AGNES, MERIVALE_AGNES, SEVENTH_AGNES } from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
@@ -11,6 +11,7 @@ export const AGNES = [
     videoIdsStartAtStart: [ROUTE_VIDEOS.agnesEb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.agnesWb.id],
     positions: [
+      SEVENTH_AGNES,
       [49.20409, -122.91125],
       [49.20483, -122.90985],
       [49.2062, -122.90731],

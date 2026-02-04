@@ -180,6 +180,7 @@ import { SEASIDE } from "./seaside";
 import { SEASIDE_BYPASS } from "./seasideBypass";
 import { SEAVIEW } from "./seaview";
 import { SECOND_NARROWS_BRIDGE } from "./secondNarrowsBridge";
+import { SEVENTH } from "./seventh";
 import { SFU_PATHS } from "./sfuPaths";
 import { SHELL_ROAD_TRAIL } from "./shellRoadTrail";
 import { SIXTEENTH } from "./sixteenth";
@@ -414,6 +415,7 @@ export const SEGMENTS = [
   ...SEASIDE_BYPASS,
   ...SEAVIEW,
   ...SECOND_NARROWS_BRIDGE,
+  ...SEVENTH,
   ...SFU_PATHS,
   ...SHELL_ROAD_TRAIL,
   ...SIXTEENTH,

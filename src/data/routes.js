@@ -2606,6 +2606,13 @@ export const ROUTES = {
     notes:
       "Trucks on the road will sometimes buffer you with wind and dust, and the climb is long, but besides that it's alright. The switchbacks arriving in Vancouver force you to slow down. The adjacent Skeena tunnel in Vancouver is very narrow.",
   },
+  seventh: {
+    name: "Seventh St",
+    regions: [REGIONS.newWestminster],
+    legs: [{ videos: {} }],
+    notes:
+      "New as of early 2026, extending Agnes, but unfortunately not connecting to any other routes at all. The first few blocks at the south end are quite steep.",
+  },
   sfuPaths: {
     name: "Simon Fraser University Paths",
     shortName: "SFU Paths",
