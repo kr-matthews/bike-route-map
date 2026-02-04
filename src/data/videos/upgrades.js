@@ -355,4 +355,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.21215, -123.20264],
     region: REGIONS.richmond,
   },
+  seventhSb26: {
+    id: "Nx2Ju8OOXSA",
+    title: "Seventh St",
+    routeNames: [ROUTES.seventh.name],
+    direction: "southbound",
+    date: new Date("Feb 03 2026"),
+    minutes: 2,
+    position: [49.20806, -122.91651],
+    region: REGIONS.newWestminster,
+  },
 };
