@@ -43,6 +43,7 @@ const SIXTH_7TH_NE = [49.21456, -122.92199];
 const SIXTH_7TH_NW = [49.21448, -122.92214];
 const SIXTH_7TH_SE = [49.21448, -122.92188];
 const SIXTH_7TH_SW = [49.21439, -122.92203];
+const SIXTH_SCHOOL_E = [49.21706, -122.92512];
 const SIXTH_SCHOOL_W = [49.21699, -122.92525];
 
 export const CROSSTOWN_NEW_WESTMINSTER = [
@@ -54,6 +55,11 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     positions: [[49.21587, -122.92733], SIXTH_SCHOOL_W],
   },
   {
+    description: "sixth to fifth alley",
+    type: "comfortable",
+    positions: [SIXTH_SCHOOL_E, [49.21748, -122.92565], [49.21776, -122.92513]],
+  },
+  {
     description: "sixth nb",
     type: "dedicated",
     oneWay: "required",
@@ -62,9 +68,13 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
       SIXTH_7TH_NE,
       [49.21528, -122.9229],
       [49.21606, -122.92387],
-      [49.21706, -122.92512],
-      SIXTH_SCHOOL_W,
+      SIXTH_SCHOOL_E,
     ],
+  },
+  {
+    description: "sixth crossing at school",
+    type: "dedicated",
+    positions: [SIXTH_SCHOOL_W, SIXTH_SCHOOL_E],
   },
   {
     description: "sixth sb",
