@@ -1934,6 +1934,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Apr 06 2024"),
     minutes: 8,
   },
+  seventhNwNb: {
+    id: "MTssJcgkdWU",
+    tlId: "JsWl4qc7omA",
+    date: new Date("Feb 03 2026"),
+    minutes: 6,
+  },
   shellNb: {
     id: "kKSkUAXoGH4",
     tlId: "Su74TrHy5eg",

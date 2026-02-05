@@ -2609,7 +2609,7 @@ export const ROUTES = {
   seventh: {
     name: "Seventh St",
     regions: [REGIONS.newWestminster],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: ROUTE_VIDEOS.seventhNwNb } }],
     notes:
       "New as of early 2026, extending Agnes, but unfortunately not connecting to any other routes at all. The first few blocks at the south end are quite steep.",
   },
