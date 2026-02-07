@@ -365,4 +365,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.20806, -122.91651],
     region: REGIONS.newWestminster,
   },
+  crosstownGreenwayEb26: {
+    id: "6m24mejiW7E",
+    title: "Crosstown Greenway @ 12th & 10th",
+    routeNames: [ROUTES.crosstownNewWestminster.name],
+    direction: "eastbound",
+    date: new Date("Feb 03 2026"),
+    minutes: 1,
+    position: [49.20905, -122.9321],
+    region: REGIONS.newWestminster,
+  },
 };
