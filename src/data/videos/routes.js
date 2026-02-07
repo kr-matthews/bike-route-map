@@ -1962,6 +1962,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Feb 23 2024"),
     minutes: 6,
   },
+  sixthNwNb: {
+    id: "eUiKbozoJ2E",
+    date: new Date("Feb 03 2026"),
+    minutes: 1,
+  },
   sixtySeventhPlusWb: {
     id: "z5GzRN2_iNc",
     date: new Date("Jun 05 2023"),

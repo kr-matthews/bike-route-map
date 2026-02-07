@@ -915,6 +915,10 @@ export const ROUTES = {
         name: "Richmond St/Surrey St connection to Burnaby",
         videos: { northbound: ROUTE_VIDEOS.crosstownNWExtNb },
       },
+      {
+        name: "Sixth St connection to High School",
+        videos: { northbound: ROUTE_VIDEOS.sixthNwNb },
+      },
     ],
     notes:
       "Lots of hills. There are 2 options in the middle; one is quieter and steeper, one is flatter and has more traffic. The bridge crossing McBride is annoying, but the adjacent community center was just rebuilt.",

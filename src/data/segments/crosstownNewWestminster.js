@@ -45,6 +45,7 @@ const SIXTH_7TH_SE = [49.21448, -122.92188];
 const SIXTH_7TH_SW = [49.21439, -122.92203];
 const SIXTH_SCHOOL_E = [49.21706, -122.92512];
 const SIXTH_SCHOOL_W = [49.21699, -122.92525];
+const ALLEY_SIXTH_FIFTH = [49.21776, -122.92513];
 
 export const CROSSTOWN_NEW_WESTMINSTER = [
   {
@@ -55,16 +56,37 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     positions: [[49.21587, -122.92733], SIXTH_SCHOOL_W],
   },
   {
+    description: "alley to fifth",
+    type: "quiet",
+    undesignated: true,
+    videoIds: [ROUTE_VIDEOS.sixthNwNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.sixthNwNb.id],
+    positions: [
+      ALLEY_SIXTH_FIFTH,
+      [49.21782, -122.92517],
+      [49.21817, -122.92451],
+    ],
+  },
+  {
     description: "sixth to fifth alley",
     type: "comfortable",
-    positions: [SIXTH_SCHOOL_E, [49.21748, -122.92565], [49.21776, -122.92513]],
+    videoIds: [ROUTE_VIDEOS.sixthNwNb.id],
+    positions: [SIXTH_SCHOOL_E, [49.21748, -122.92565], ALLEY_SIXTH_FIFTH],
+  },
+  {
+    description: "sixth nb crossing seventh",
+    type: "shared",
+    oneWay: "required",
+    undesignated: true,
+    positions: [SIXTH_7TH_SE, SIXTH_7TH_NE],
   },
   {
     description: "sixth nb",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.sixthNwNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.sixthNwNb.id],
     positions: [
-      SIXTH_7TH_SE,
       SIXTH_7TH_NE,
       [49.21528, -122.9229],
       [49.21606, -122.92387],
@@ -86,8 +108,15 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
       [49.21599, -122.92401],
       [49.2152, -122.92303],
       SIXTH_7TH_NW,
-      SIXTH_7TH_SW,
     ],
+  },
+  {
+    description: "sixth sb crossing seventh",
+    type: "shared",
+    oneWay: "required",
+    undesignated: true,
+    videoIds: [ROUTE_VIDEOS.uptownDowntownSb.id],
+    positions: [SIXTH_7TH_NW, SIXTH_7TH_SW],
   },
 
   {
