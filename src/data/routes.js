@@ -402,6 +402,13 @@ export const ROUTES = {
         },
       },
       {
+        name: "Pattullo Bridge [Now Closed]",
+        videos: {
+          eastbound: ROUTE_VIDEOS.pattulloEb,
+          westbound: ROUTE_VIDEOS.pattulloWb,
+        },
+      },
+      {
         name: "Surrey",
         videos: {
           eastbound: ROUTE_VIDEOS.bcParkwaySurreyEb,
@@ -410,7 +417,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "The quality varies a lot. There are lots of hills. Burnaby is planning on upgrading several sections. New Westminster is upgrading the Stewardson portion in 2024/2025. The east end in Surrey can be quite bad, and it's not well-signed so it's not clear where the route ends. The Pattullo bridge is the worst, but it's being replaced.",
+      "The quality varies a lot. There are lots of hills. Burnaby is planning on upgrading several sections. New Westminster upgraded the Stewardson portion in 2025. The east end in Surrey can be quite bad, and it's not well-signed so it's not clear where the route ends. The Pattullo bridge was the worst, but it's now closed - unfortunately the new bridge won't have cyclist access for about 3 months or so.",
   },
   beatty: {
     name: "Beatty St",
