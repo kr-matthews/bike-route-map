@@ -191,9 +191,16 @@ export const ROUTES = {
   adanac: {
     name: "Adanac",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { westbound: ROUTE_VIDEOS.adanacWb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.adanacEb,
+          westbound: ROUTE_VIDEOS.adanacWb,
+        },
+      },
+    ],
     notes:
-      "Lots of hills towards the east. Between Rupert and Boundary can get very busy with cars, the rest is traffic calmed. The city plans on adding separated bike lanes to that part.",
+      "Lots of hills towards the east. Between Rupert and Boundary can get very busy with cars (but separated bike lanes are planned here for 2026), the rest is traffic calmed.",
   },
   agnes: {
     name: "Agnes St",

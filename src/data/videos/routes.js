@@ -1,4 +1,10 @@
 export const ROUTE_VIDEOS = {
+  adanacEb: {
+    id: "po1E1KIjTJI",
+    tlId: "e96VtLacb54",
+    date: new Date("Feb 26 2026"),
+    minutes: 20,
+  },
   adanacWb: {
     id: "ZDvPnT7PrUo",
     tlId: "c3NG7hyBGFY",

@@ -1245,7 +1245,8 @@ export const SEASIDE_BYPASS = [
   {
     description: "seawall to quebec/pacific",
     type: "combined",
-    videoIds: [ROUTE_VIDEOS.dunsmuirEb.id],
+    videoIds: [ROUTE_VIDEOS.adanacEb.id, ROUTE_VIDEOS.dunsmuirEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.adanacEb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.dunsmuirEb.id],
     positions: [
       QUEBEC_SEAWALL,
@@ -1261,6 +1262,7 @@ export const SEASIDE_BYPASS = [
     description: "quebec connection to union nb",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.adanacEb.id],
     positions: [
       QUEBEC_PATH_SPLIT,
       QUEBEC_QUEBEC_SW,
