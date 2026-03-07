@@ -112,6 +112,7 @@ import { KING_EDWARD } from "./kingEdward";
 import { KNIGHT_STREET_BRIDGE } from "./knightStBridge";
 import { LAKES } from "./lakes";
 import { LAKEWOOD } from "./lakewood";
+import { LANSDOWNE_HOLLYBRIDGE } from "./lansdowneHollybridge";
 import { LIONS_GATE_BRIDGE } from "./lionsGateBridge";
 import { LIONS_GATE_VILLAGE } from "./lionsGateVillage";
 import { LONDON_DUBLIN_GREENWAY } from "./londonDublin";
@@ -347,6 +348,7 @@ export const SEGMENTS = [
   ...KNIGHT_STREET_BRIDGE,
   ...LAKES,
   ...LAKEWOOD,
+  ...LANSDOWNE_HOLLYBRIDGE,
   ...LIONS_GATE_BRIDGE,
   ...LIONS_GATE_VILLAGE,
   ...LONDON_DUBLIN_GREENWAY,

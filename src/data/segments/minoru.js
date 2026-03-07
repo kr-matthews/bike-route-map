@@ -1,8 +1,8 @@
 import {
-  GILBERT_LANSDOWNE_NE,
-  GILBERT_LANSDOWNE_NW,
   MINORU_GRANVILLE_NE,
   MINORU_GRANVILLE_NW,
+  MINORU_LANSDOWNE_NW,
+  MINORU_LANSDOWNE_NE,
   NO_3_ACKROYD_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -14,8 +14,6 @@ const MINORU_ACKROYD_E = [49.17202, -123.1401];
 const MINORU_MINORU_GATEWAY = [49.16422, -123.1401];
 const MINORU_MURDOCH = [49.16705, -123.14034];
 const NB_POST_ACKROYD = [49.17269, -123.14012];
-const MINORU_LANSDOWNE_NE = [49.17397, -123.1401];
-const MINORU_LANSDOWNE_NW = [49.17398, -123.14028];
 const SB_PRE_ELMBRIDGE = [49.17286, -123.1403];
 const MINORU_ELMBRIDGE_SW = [49.17192, -123.14035];
 
@@ -28,38 +26,6 @@ export const MINORU = [
       MINORU_ACKROYD_E,
       NO_3_ACKROYD_W,
       // [49.17197, -123.14035], // left turn
-    ],
-  },
-  {
-    description: "lansdowne path",
-    type: "mixed",
-    positions: [
-      GILBERT_LANSDOWNE_NW,
-      GILBERT_LANSDOWNE_NE,
-      [49.17396, -123.14523],
-      [49.17396, -123.14509],
-      [49.17394, -123.145],
-      [49.17395, -123.14488],
-      [49.17396, -123.14426],
-      [49.17397, -123.14396],
-      [49.17396, -123.14383],
-      [49.17396, -123.14373],
-      [49.17396, -123.14258],
-      [49.17396, -123.14248],
-      [49.17397, -123.14236],
-      [49.17393, -123.14211],
-      [49.17394, -123.14041],
-      MINORU_LANSDOWNE_NW,
-      MINORU_LANSDOWNE_NE,
-    ],
-  },
-  {
-    description: "lansdowne lane",
-    type: "dedicated",
-    oneWay: "required",
-    positions: [
-      [49.17392, -123.1424],
-      [49.17391, -123.14392],
     ],
   },
 

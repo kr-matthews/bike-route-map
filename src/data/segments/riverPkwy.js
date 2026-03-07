@@ -3,8 +3,6 @@ import {
   GILBERT_RIVER_NW,
   GILBERT_RIVER_SE,
   GILBERT_RIVER_SW,
-  HOLLYBRIDGE_MIDDLE_ARM_E,
-  HOLLYBRIDGE_MIDDLE_ARM_W,
   RIVER_PKWY_CAMBIE_SE,
   RIVER_PKWY_CAMBIE_SW,
 } from "../intersections";
@@ -16,40 +14,8 @@ const SB_PAINT_END = [49.176, -123.14618];
 
 const HOLLYBRIDGE_RIVER_E = [49.17464, -123.14855];
 const HOLLYBRIDGE_RIVER_W = [49.17479, -123.14871];
-const HOLLYBRIDGE_MIDDLE_ARM_SPLIT = [49.17642, -123.1501];
 
 export const RIVER_PARKWAY = [
-  {
-    description: "hollybridge, primary and east split",
-    type: "combined",
-    positions: [
-      [49.17405, -123.14767],
-      [49.17412, -123.14789],
-      [49.17424, -123.14811],
-      [49.17461, -123.14853],
-      HOLLYBRIDGE_RIVER_E,
-      HOLLYBRIDGE_RIVER_W,
-      [49.17481, -123.14873],
-      [49.17613, -123.15022],
-      HOLLYBRIDGE_MIDDLE_ARM_SPLIT,
-      [49.1765, -123.15005],
-      [49.17658, -123.14995],
-      [49.17665, -123.14981],
-      HOLLYBRIDGE_MIDDLE_ARM_E,
-    ],
-  },
-  {
-    description: "hollybridge west split",
-    type: "combined",
-    positions: [
-      HOLLYBRIDGE_MIDDLE_ARM_SPLIT,
-      [49.17647, -123.15032],
-      [49.17647, -123.1504],
-      [49.17639, -123.15057],
-      HOLLYBRIDGE_MIDDLE_ARM_W,
-    ],
-  },
-
   {
     routeNames: [ROUTES.riverPkwy.name],
     description: "nb: dedicated",

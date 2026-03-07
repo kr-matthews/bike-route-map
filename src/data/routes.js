@@ -1669,6 +1669,14 @@ export const ROUTES = {
     notes:
       "Much hillier than the nearby car routes (such as Victoria and Nanaimo) unfortunately. But relatively quiet.",
   },
+  lansdowneHollybridge: {
+    name: "Lansdowne Rd/Hollybridge Way Path",
+    shortName: "Lansdowne Rd Path",
+    regions: [REGIONS.richmond],
+    legs: [{ videos: {} }],
+    notes:
+      "A flat MUP which doesn't connect to any other comfortable routes besides Middle Arm Trail.",
+  },
   lionsGate: {
     name: "Lions Gate Bridge & Stanley Park Causeway",
     shortName: "Lions Gate Bridge",
