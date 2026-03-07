@@ -852,11 +852,10 @@ export const ROUTES = {
   },
   chesterfield: {
     name: "Chesterfield Ave",
-    isIncomplete: true,
     regions: [REGIONS.northVancouver],
     legs: [{ videos: {} }],
     notes:
-      "Very steep, lots of cars. This route continues north to 23rd St, just short of the Trans-Canada Highway.",
+      "The south part is very steep, the north part is relatively flat. Lots of cars. At the north end a sign says to continue via 23rd St, but 24th St is much better for going west to Jones.",
   },
   chilco: {
     name: "Chilco",
