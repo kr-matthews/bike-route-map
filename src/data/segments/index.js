@@ -87,6 +87,7 @@ import { GRANT_MCCONACHIE } from "./grantMcconachie";
 import { GRANVILLE } from "./granville";
 import { GRANVILLE_CONNECTOR } from "./granvilleConnector";
 import { GRAUER } from "./grauer";
+import { GREEN_NECKLACE } from "./greenNecklace";
 import { GUILDFORD } from "./guildford";
 import { HARO } from "./haro";
 import { HASTINGS_PARK } from "./hastingsPark";
@@ -324,6 +325,7 @@ export const SEGMENTS = [
   ...GRANVILLE,
   ...GRANVILLE_CONNECTOR,
   ...GRAUER,
+  ...GREEN_NECKLACE,
   ...GUILDFORD,
   ...HARO,
   ...HASTINGS_PARK,

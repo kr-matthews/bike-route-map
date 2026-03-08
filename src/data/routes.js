@@ -1337,6 +1337,12 @@ export const ROUTES = {
     ],
     notes: "A flat and quiet road.",
   },
+  greenNecklace: {
+    name: "Green Necklace",
+    regions: [REGIONS.northVancouver],
+    legs: [{ videos: {} }],
+    notes: "A MUP circling through the city.",
+  },
   guildford: {
     name: "Guildford Way",
     regions: [REGIONS.portMoody, REGIONS.coquitlam],
