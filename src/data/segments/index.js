@@ -103,6 +103,7 @@ import { IMPERIAL_LANDING } from "./imperialLanding";
 import { IMPERIAL_POWERLINE } from "./imperialPowerline";
 import { INGLIS } from "./inglis";
 import { INVERNESS } from "./inverness";
+import { JONES } from "./jones";
 import { KEEFER } from "./keefer";
 import { KENSINGTON } from "./kensington";
 import { KENT } from "./kent";
@@ -339,6 +340,7 @@ export const SEGMENTS = [
   ...IMPERIAL_POWERLINE,
   ...INGLIS,
   ...INVERNESS,
+  ...JONES,
   ...KEEFER,
   ...KENSINGTON,
   ...KENT,

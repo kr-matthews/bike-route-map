@@ -1550,6 +1550,13 @@ export const ROUTES = {
     notes:
       "Very steep. Quiet, but cars will be impatient to pass you going uphill. The configuration at Marine is confusing, you briefly travel on the left of opposing bikes.",
   },
+  jonesMahon: {
+    name: "Jones/Mahon",
+    regions: [REGIONS.northVancouver],
+    legs: [{ videos: {} }],
+    notes:
+      "Gradual but steady hill. The middle section also has a MUP (the Green Necklace) along the side, which is a good alternative.",
+  },
   keefer: {
     name: "Keefer",
     regions: [REGIONS.vancouver],

@@ -5,6 +5,7 @@ import {
   FORBES_3RD_SE,
   FORBES_3RD_SW,
   HEYWOOD_SPIRIT_NE,
+  MAHON_4TH,
   QUEENSBURY_4TH_E,
   QUEENSBURY_4TH_W,
   SAINT_DAVIDS_4TH,
@@ -59,7 +60,7 @@ export const FOURTH_NV = [
     videoIds: [ROUTE_VIDEOS.fourthNVEb.id, ROUTE_VIDEOS.fourthNVWb.id],
     positions: [
       FORBES_4TH,
-      [49.31691, -123.08244],
+      MAHON_4TH,
       CHESTERFIELD_4TH_W,
       CHESTERFIELD_4TH_E,
       [49.31422, -123.07628],

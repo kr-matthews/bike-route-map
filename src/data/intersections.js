@@ -558,6 +558,7 @@ export const MACKAY_1ST_NW = [49.31819, -123.10252];
 export const MACKAY_1ST_SW = [49.31805, -123.10246];
 export const MACKAY_15TH = [49.32174, -123.10238];
 export const MACKAY_SPIRIT = [49.31822, -123.10254];
+export const MAHON_4TH = [49.31691, -123.08244];
 export const MAIN_1ST_NE = [49.27006, -123.10031];
 export const MAIN_ALEXANDER = [49.28409, -123.09951];
 export const MAIN_DUNSMUIR = [49.2776, -123.10001];
