@@ -14,6 +14,7 @@ import {
   JONES_24TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const NB_PRE_ESPLANADE = [49.31219, -123.08274];
 const NB_POST_ESPLANADE = [49.31256, -123.08237];
@@ -33,6 +34,8 @@ export const CHESTERFIELD = [
     description: "24th to jones",
     type: "quiet",
     undesignated: true,
+    videoIds: [ROUTE_VIDEOS.chesterfieldNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.chesterfieldNb.id],
     positions: [CHESTERFIELD_23RD, [49.33124, -123.07525], JONES_24TH],
   },
 
@@ -41,6 +44,8 @@ export const CHESTERFIELD = [
     routeNames: [ROUTES.chesterfield.name],
     description: "south of spirit",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.chesterfieldNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.chesterfieldNb.id],
     positions: [
       [49.31051, -123.08357],
       [49.31096, -123.08402],
@@ -60,6 +65,7 @@ export const CHESTERFIELD = [
     description: "nb spirit to esplanade",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.chesterfieldNb.id],
     positions: [
       CHESTERFIELD_CARRIE_CATES_NE,
       [49.3118, -123.08313],
@@ -72,6 +78,7 @@ export const CHESTERFIELD = [
     description: "nb esplanade",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.chesterfieldNb.id],
     positions: [
       NB_PRE_ESPLANADE,
       [49.31221, -123.08269],
@@ -86,6 +93,7 @@ export const CHESTERFIELD = [
     description: "nb esplanade to before 3rd",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.chesterfieldNb.id],
     positions: [
       NB_POST_ESPLANADE,
       [49.31277, -123.08215],
@@ -99,6 +107,7 @@ export const CHESTERFIELD = [
     description: "nb before 3rd",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.chesterfieldNb.id],
     positions: [NB_PRE_3RD, CHESTERFIELD_3RD_E],
   },
   {
@@ -106,6 +115,7 @@ export const CHESTERFIELD = [
     description: "nb 3rd to 4th",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.chesterfieldNb.id],
     positions: [CHESTERFIELD_3RD_E, [49.31487, -123.08002], CHESTERFIELD_4TH_E],
   },
   {
@@ -113,6 +123,7 @@ export const CHESTERFIELD = [
     description: "nb 4th to keith",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.chesterfieldNb.id],
     positions: [
       CHESTERFIELD_4TH_E,
       [49.31681, -123.07809],
@@ -129,6 +140,7 @@ export const CHESTERFIELD = [
     description: "nb crossing keith",
     type: "mixed",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.chesterfieldNb.id],
     positions: [
       CHESTERFIELD_KEITH_S_E,
       [49.31801, -123.07677],
@@ -145,6 +157,7 @@ export const CHESTERFIELD = [
     description: "nb keith to 13th",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.chesterfieldNb.id],
     positions: [
       CHESTERFIELD_KEITH_N_E,
       [49.31879, -123.07605],
@@ -161,6 +174,7 @@ export const CHESTERFIELD = [
     routeNames: [ROUTES.chesterfield.name],
     description: "13th to 23rd",
     type: "shared",
+    videoIds: [ROUTE_VIDEOS.chesterfieldNb.id],
     positions: [
       CHESTERFIELD_13TH_S,
       [49.32419, -123.07545], // 17th

@@ -9,7 +9,7 @@ import { ROUTE_VIDEOS } from "./videos/routes";
 // Richmond: south dyke; ...and around steveston
 // YVR:
 // New Westminster:
-// North Vancouver: queensbury; necklace: grand blvd & keith; dollarton; mt seymour;
+// North Vancouver: spirit-necklace, queensbury, st andrews, mosquito creek, 17th, keith/13th, 29th; grand blvd; dollarton; mt seymour;
 // West Vancouver: spirit trail alt.?; ...more
 // Surrey: scott rd; serpentine; timbers; fraser hwy;
 // Delta:
@@ -853,7 +853,13 @@ export const ROUTES = {
   chesterfield: {
     name: "Chesterfield Ave",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.chesterfieldNb,
+        },
+      },
+    ],
     notes:
       "The south part is very steep, the north part is relatively flat. Lots of cars. At the north end a sign says to continue via 23rd St, but 24th St is much better for going west to Jones.",
   },
@@ -1559,7 +1565,15 @@ export const ROUTES = {
   jonesMahon: {
     name: "Jones/Mahon",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: {} }],
+    legs: [
+      { videos: {} },
+      {
+        name: "Hwy 1 overpass",
+        videos: {
+          northbound: ROUTE_VIDEOS.jonesOverpassNb,
+        },
+      },
+    ],
     notes:
       "Gradual but steady hill. The middle section also has a MUP (the Green Necklace) along the side, which is a good alternative.",
   },

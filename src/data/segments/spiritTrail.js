@@ -599,11 +599,17 @@ export const SPIRIT_TRAIL = [
   },
   {
     routeNames: [ROUTES.spiritTrail.name, ROUTES.chesterfield.name],
-    description: "chesterfield to quay",
+    description: "chesterfield sb overlap",
     type: "mixed",
     videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
+    positions: [CHESTERFIELD_CARRIE_CATES_W, CHESTERFIELD_CARRIE_CATES_SW],
+  },
+  {
+    routeNames: [ROUTES.spiritTrail.name, ROUTES.chesterfield.name],
+    description: "chesterfield nb overlap",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id, ROUTE_VIDEOS.chesterfieldNb.id],
     positions: [
-      CHESTERFIELD_CARRIE_CATES_W,
       CHESTERFIELD_CARRIE_CATES_SW,
       [49.31163, -123.0833],
       [49.31164, -123.08321],

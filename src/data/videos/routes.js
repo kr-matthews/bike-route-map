@@ -508,6 +508,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Feb 07 2024"),
     minutes: 8,
   },
+  chesterfieldNb: {
+    id: "i5NmRvbPhsg",
+    tlId: "FURQmKYiYO8",
+    date: new Date("Mar 05 2026"),
+    minutes: 13,
+  },
   chancellorWb: {
     id: "fJ6OU2uS8C0",
     tlId: "8BRasaHwpzQ",
@@ -1144,6 +1150,11 @@ export const ROUTE_VIDEOS = {
     id: "eim5zDSdA2I",
     date: new Date("Aug 05 2023"),
     minutes: 9,
+  },
+  jonesOverpassNb: {
+    id: "zjXljS23kAs",
+    date: new Date("Mar 05 2026"),
+    minutes: 1,
   },
   keeferEb: {
     id: "X6E2j8v1EMU",

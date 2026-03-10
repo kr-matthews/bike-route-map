@@ -47,7 +47,7 @@ export const REGIONS = {
   northVancouver: {
     name: "North Vancouver",
     notes:
-      "In North Vancouver, most routes and infrastructure south of Marine Dr/4th St and west of the Second Narrows Bridge are mapped. There are a lot of routes north of there which are missing. ",
+      "In North Vancouver, most routes and infrastructure south of Marine Dr/4th St and west of the Second Narrows Bridge are mapped. I'm in the process of mapping out most of the city, but there are a lot of missing routes in the district.",
   },
   delta: {
     name: "Delta",

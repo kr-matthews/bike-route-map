@@ -1,5 +1,6 @@
 import { JONES_24TH, MAHON_4TH } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const MAHON_6TH_S = [49.31862, -123.0807];
 const MAHON_6TH_N = [49.31867, -123.08065];
@@ -73,15 +74,24 @@ export const JONES = [
   },
   {
     routeNames: [ROUTES.jonesMahon.name],
-    description: "23rd to overpass",
+    description: "23rd to 24th",
     type: "quiet",
-    positions: [JONES_23RD, JONES_24TH, JONES_HWY_S_S],
+    positions: [JONES_23RD, JONES_24TH],
+  },
+  {
+    routeNames: [ROUTES.jonesMahon.name],
+    description: "24th to overpass",
+    type: "quiet",
+    videoIds: [ROUTE_VIDEOS.jonesOverpassNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.jonesOverpassNb.id],
+    positions: [JONES_24TH, JONES_HWY_S_S],
   },
   {
     routeNames: [ROUTES.jonesMahon.name],
     description: "pre-overpass",
     type: "other",
     elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.jonesOverpassNb.id],
     positions: [JONES_HWY_S_S, [49.33183, -123.08117], JONES_HWY_S],
   },
   {
@@ -89,6 +99,7 @@ export const JONES = [
     description: "overpass",
     type: "other",
     elevation: 1,
+    videoIds: [ROUTE_VIDEOS.jonesOverpassNb.id],
     positions: [
       JONES_HWY_S,
       [49.33187, -123.08221],
@@ -101,6 +112,8 @@ export const JONES = [
     description: "overpass to 25th",
     type: "other",
     elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.jonesOverpassNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.jonesOverpassNb.id],
     positions: [
       JONES_HWY_N,
       [49.3323, -123.08158],
