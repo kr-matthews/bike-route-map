@@ -1,6 +1,7 @@
 import {
   GARDEN_CITY_PATTERSON_E,
   GREAT_CANADIAN_SEA_ISLAND_NE,
+  OAK_OAK_BRIDGE_PATH,
   SEA_ISLAND_WAY_E,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -317,7 +318,7 @@ export const OAK_STREET_BRIDGE = [
       [49.20443, -123.12983],
       [49.20441, -123.12999],
       [49.20433, -123.13022],
-      [49.20431, -123.13038],
+      OAK_OAK_BRIDGE_PATH,
     ],
   },
 ];

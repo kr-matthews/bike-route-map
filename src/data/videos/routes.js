@@ -100,6 +100,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Aug 19 2023"),
     minutes: 5,
   },
+  arthurLaingOakSb: {
+    id: "t3fPNp33PCA",
+    date: new Date("Mar 03 2026"),
+    minutes: 5,
+  },
   balaclavaNb: {
     id: "_t7bbctCh1g",
     tlId: "wl_y2UDnLUU",

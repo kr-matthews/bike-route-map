@@ -326,14 +326,21 @@ export const ROUTES = {
     regions: [REGIONS.vancouver, REGIONS.richmond],
     legs: [
       {
+        name: "Via west ramps",
         videos: {
           northbound: ROUTE_VIDEOS.arthurLaingNb,
           southbound: ROUTE_VIDEOS.arthurLaingSb,
         },
       },
+      {
+        name: "Via east ramps",
+        videos: {
+          southbound: ROUTE_VIDEOS.arthurLaingOakSb,
+        },
+      },
     ],
     notes:
-      "Very uncomfortable, especially when it's windy. And it only connects to SW Marine in Vancouver which is even worse.",
+      "Very uncomfortable, especially when it's windy. And it only connects to SW Marine in Vancouver which is even worse. The ends of both sets of ramps on the north end are quite terrible.",
   },
   balaclava: {
     name: "Balaclava",

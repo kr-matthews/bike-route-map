@@ -657,6 +657,7 @@ export const NORTH_FRASER_MARINE_SSE = [49.19647, -122.96854];
 export const NORTHWOOD_WESTPORT = [49.35217, -123.2511];
 export const NV_MARINE_W_N = [49.32546, -123.12603];
 export const NV_MARINE_W_S = [49.32542, -123.12682];
+export const OAK_OAK_BRIDGE_PATH = [49.20431, -123.1304];
 export const ONTARIO_1ST_N = [49.27029, -123.10461];
 export const ONTARIO_1ST_N_N = [49.27036, -123.10461];
 export const ONTARIO_1ST_S = [49.27014, -123.10462];
