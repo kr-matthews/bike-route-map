@@ -9,10 +9,13 @@ import {
   GILBERT_RIVER_SW,
   GILBERT_RUSS_BAKER_SE_E,
   GILBERT_RUSS_BAKER_SW_W,
+  RUSS_BAKER_GILBERT_N,
+  RUSS_BAKER_GILBERT_NE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
+const GILBERT_RUSS_BAKER_SW_S = [49.18091, -123.15151];
 const NB_POST_WESTMINSTER = [49.17112, -123.14758];
 const GILBERT_ELMBRIDGE_SE = [49.1724, -123.14666];
 const NB_POST_ELMBRIDGE = [49.17313, -123.14603];
@@ -21,8 +24,10 @@ const DINSMORE_NE = [49.17966, -123.14971];
 const DINSMORE_NW = [49.17963, -123.14976];
 const DINSMORE_SW = [49.17737, -123.14722];
 const GILBERT_ELMBRIDGE_NW = [49.17269, -123.14672];
+const RUSS_BAKER_CROSSWALK_END = [49.18105, -123.15156];
 
 export const GILBERT = [
+  // nb
   {
     routeNames: [ROUTES.gilbert.name],
     description: "nb: granville to beyond westminster",
@@ -122,18 +127,54 @@ export const GILBERT = [
     ],
   },
 
+  // sb
+  {
+    description: "crossing russ baker & gilbert",
+    type: "mixed",
+    undesignated: true,
+    videoIds: [ROUTE_VIDEOS.gilbertSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.gilbertSb.id],
+    positions: [
+      RUSS_BAKER_GILBERT_N,
+      RUSS_BAKER_GILBERT_NE,
+      [49.18121, -123.15133],
+      RUSS_BAKER_CROSSWALK_END,
+    ],
+  },
+  {
+    description: "gilbert post-crosswalk",
+    type: "shoulder",
+    oneWay: "required",
+    hideArrows: true,
+    undesignated: true,
+    videoIds: [ROUTE_VIDEOS.gilbertSb.id],
+    positions: [
+      RUSS_BAKER_CROSSWALK_END,
+      [49.18099, -123.1515],
+      GILBERT_RUSS_BAKER_SW_S,
+    ],
+  },
+  {
+    description: "sb: russ baker slip lane",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
+      GILBERT_RUSS_BAKER_SW_W,
+      [49.1809, -123.15171],
+      [49.18091, -123.15164],
+      [49.18092, -123.15157],
+      GILBERT_RUSS_BAKER_SW_S,
+    ],
+  },
   {
     routeNames: [ROUTES.gilbert.name],
     description: "sb: russ baker wb to bridge",
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.gilbertSb.id],
     positions: [
-      GILBERT_RUSS_BAKER_SW_W,
-      [49.1809, -123.15171],
-      [49.18091, -123.15164],
-      [49.18092, -123.15157],
-      [49.18091, -123.15151],
+      GILBERT_RUSS_BAKER_SW_S,
       [49.18087, -123.15135],
       [49.18021, -123.15057],
       [49.18017, -123.15049],
@@ -147,6 +188,7 @@ export const GILBERT = [
     type: "shared",
     oneWay: "required",
     elevation: 1,
+    videoIds: [ROUTE_VIDEOS.gilbertSb.id],
     positions: [DINSMORE_NW, DINSMORE_SW],
   },
   {
@@ -155,6 +197,7 @@ export const GILBERT = [
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.gilbertSb.id],
     positions: [
       DINSMORE_SW,
       [49.17728, -123.14718],
@@ -180,6 +223,8 @@ export const GILBERT = [
     description: "sb: elmbridge to granville",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.gilbertSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.gilbertSb.id],
     positions: [
       GILBERT_ELMBRIDGE_NW,
       [49.17246, -123.14685],

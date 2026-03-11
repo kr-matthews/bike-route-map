@@ -1237,9 +1237,16 @@ export const ROUTES = {
   gilbert: {
     name: "Gilbert Rd",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { northbound: ROUTE_VIDEOS.gilbertNb } }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.gilbertNb,
+          southbound: ROUTE_VIDEOS.gilbertSb,
+        },
+      },
+    ],
     notes:
-      "Terrible bike route, fast cars will not leave sufficient space when passing - especially on the bridge. The painted lanes are beside the curb. The city plans on adding a shared use path to improve part of this route.",
+      "Terrible bike route, fast cars will not leave sufficient space when passing - especially on the bridge. The painted lanes are beside the curb. The city plans on adding a shared use path to improve (part of) this route.",
   },
   gladstone: {
     name: "Gladstone",

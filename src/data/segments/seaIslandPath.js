@@ -8,7 +8,7 @@ import {
   NO_2_RUSS_BAKER_E,
   NO_2_RUSS_BAKER_W,
   POST_SEA_ISLAND_CONNECTOR,
-  RUSS_BAKER_GILBERT_NE,
+  RUSS_BAKER_GILBERT_N,
   RUSS_BAKER_INGLIS_NW,
   RUSS_BAKER_INGLIS_SW,
   SEA_ISLAND_CONNECTOR_ARTHUR_LAING_N,
@@ -37,11 +37,7 @@ export const SEA_ISLAND_PATH = [
   {
     description: "connection with russ baker @ gilbert",
     type: "mixed",
-    positions: [
-      SEA_ISLAND_PATH_GILBERT_N,
-      [49.18144, -123.15168],
-      RUSS_BAKER_GILBERT_NE,
-    ],
+    positions: [SEA_ISLAND_PATH_GILBERT_N, RUSS_BAKER_GILBERT_N],
   },
   {
     description: "to sea island way",
