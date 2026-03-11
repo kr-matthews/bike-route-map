@@ -2239,7 +2239,14 @@ export const ROUTES = {
   parkside: {
     name: "Parkside",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { northbound: ROUTE_VIDEOS.parksideNb } }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.parksideNb,
+          southbound: ROUTE_VIDEOS.parksideSb,
+        },
+      },
+    ],
     notes:
       "Very flat. The connections are either end are quite bad and there's nothing in the middle. It can be hard to follow north of Granville. At the north end, you cannot cross Westminster Hwy, so will have to approach/leave via the eastbound shoulder.",
   },
@@ -3116,9 +3123,16 @@ export const ROUTES = {
     name: "Woodwards/Saunders",
     shortName: "Woodwards",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { eastbound: ROUTE_VIDEOS.woodwardsSaundersEb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.woodwardsSaundersEb,
+          westbound: ROUTE_VIDEOS.woodwardsSaundersWb,
+        },
+      },
+    ],
     notes:
-      "Very flat. Too much traffic between Railway Ave and No. 2 Rd. It's an alley between Gilbert Rd and No. 3 Rd, with some easy-to-miss turns and a brief narrow path.",
+      "Very flat. Too much traffic between Railway Ave and No. 2 Rd. It's an alley between Gilbert Rd and No. 3 Rd, with a brief narrow path.",
   },
   york: {
     name: "York",

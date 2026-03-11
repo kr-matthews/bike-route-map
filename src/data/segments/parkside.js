@@ -17,13 +17,15 @@ export const PARKSIDE = [
     routeNames: [ROUTES.parkside.name],
     description: "crossing williams",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.parksideSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.parksideSb.id],
     positions: [ASH_WILLIAMS_S, ASH_WILLIAMS_N],
   },
   {
     routeNames: [ROUTES.parkside.name],
     description: "williams to walter lee",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.parksideNb.id],
+    videoIds: [ROUTE_VIDEOS.parksideNb.id, ROUTE_VIDEOS.parksideSb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.parksideNb.id],
     positions: [ASH_WILLIAMS_N, [49.14316, -123.11977], WALTER_LEE_S],
   },
@@ -31,7 +33,7 @@ export const PARKSIDE = [
     routeNames: [ROUTES.parkside.name],
     description: "through walter lee",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.parksideNb.id],
+    videoIds: [ROUTE_VIDEOS.parksideNb.id, ROUTE_VIDEOS.parksideSb.id],
     positions: [
       WALTER_LEE_S,
       [49.14449, -123.11932],
@@ -61,7 +63,7 @@ export const PARKSIDE = [
     routeNames: [ROUTES.parkside.name],
     description: "walter lee to granville",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.parksideNb.id],
+    videoIds: [ROUTE_VIDEOS.parksideNb.id, ROUTE_VIDEOS.parksideSb.id],
     positions: [
       WALTER_LEE_N,
       [49.14664, -123.11983],
@@ -85,7 +87,7 @@ export const PARKSIDE = [
     routeNames: [ROUTES.parkside.name],
     description: "granville to school",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.parksideNb.id],
+    videoIds: [ROUTE_VIDEOS.parksideSb.id, ROUTE_VIDEOS.parksideNb.id],
     positions: [
       ASH_GRANVILLE_NW,
       [49.16289, -123.12018],
@@ -119,6 +121,7 @@ export const PARKSIDE = [
     description: "school sb",
     type: "quiet",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.parksideSb.id],
     positions: [
       ALDER_ALBERTA,
       [49.16572, -123.11962],
@@ -131,7 +134,8 @@ export const PARKSIDE = [
     routeNames: [ROUTES.parkside.name],
     description: "alberta to westminster",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.parksideNb.id],
+    videoIds: [ROUTE_VIDEOS.parksideSb.id, ROUTE_VIDEOS.parksideNb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.parksideSb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.parksideNb.id],
     positions: [
       ALDER_ALBERTA,

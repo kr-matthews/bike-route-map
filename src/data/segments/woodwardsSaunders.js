@@ -13,8 +13,12 @@ export const WOODWARDS_SAUNDERS = [
   {
     description: "connection railway to woodwards",
     type: "other",
-    videoIds: [ROUTE_VIDEOS.woodwardsSaundersEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.woodwardsSaundersEb.id,
+      ROUTE_VIDEOS.woodwardsSaundersWb.id,
+    ],
     videoIdsStartAtStart: [ROUTE_VIDEOS.woodwardsSaundersEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.woodwardsSaundersWb.id],
     positions: [
       RAILWAY_GREENWAY_WOODWARDS,
       [49.14399, -123.16971],
@@ -31,7 +35,10 @@ export const WOODWARDS_SAUNDERS = [
     routeNames: [ROUTES.woodwardsSaunders.name],
     description: "railway to no. 3-ish",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.woodwardsSaundersEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.woodwardsSaundersEb.id,
+      ROUTE_VIDEOS.woodwardsSaundersWb.id,
+    ],
     positions: [
       RAILWAY_WOODWARDS_EE,
       [49.14391, -123.16758],
@@ -54,7 +61,10 @@ export const WOODWARDS_SAUNDERS = [
     routeNames: [ROUTES.woodwardsSaunders.name],
     description: "no. 3 sidewalk connection",
     type: "other",
-    videoIds: [ROUTE_VIDEOS.woodwardsSaundersEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.woodwardsSaundersEb.id,
+      ROUTE_VIDEOS.woodwardsSaundersWb.id,
+    ],
     positions: [
       NO_3_ALLEY_SAUNDERS,
       [49.14367, -123.13682],
@@ -67,7 +77,11 @@ export const WOODWARDS_SAUNDERS = [
     routeNames: [ROUTES.woodwardsSaunders.name],
     description: "saunders",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.woodwardsSaundersEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.woodwardsSaundersWb.id,
+      ROUTE_VIDEOS.woodwardsSaundersEb.id,
+    ],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.woodwardsSaundersWb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.woodwardsSaundersEb.id],
     positions: [
       NO_3_SAUNDERS_E,
