@@ -9,7 +9,8 @@ import { ROUTE_VIDEOS } from "./videos/routes";
 // Richmond: south dyke; ...and around steveston
 // YVR:
 // New Westminster:
-// North Vancouver: spirit-necklace, queensbury, st andrews, mosquito creek, 17th, keith/13th, 29th; grand blvd; dollarton; mt seymour;
+// North Vancouver (city): spirit-necklace, queensbury, st andrews, mosquito creek, keith/13th, 29th; grand blvd/lynn valley; larson/16th
+// North Vancouver (district): dollarton; mt seymour;
 // West Vancouver: spirit trail alt.?; ...more
 // Surrey: scott rd; serpentine; timbers; fraser hwy;
 // Delta:
@@ -138,6 +139,13 @@ export const ROUTES = {
     ],
     notes:
       "Mostly flat with few intersections but lots of cars. The painted lanes in the east half are right beside parked cars. Can continue on the road at roundabouts but the intention is to use the sidewalks. Awkward to turn left onto Marine Dr at the west end.",
+  },
+  seventeenthNv: {
+    name: "17th St",
+    regions: [REGIONS.northVancouver],
+    legs: [{ videos: {} }],
+    notes:
+      "Gentle hills. A wide road with lane markings, but usually not too busy.",
   },
   twentySecond: {
     name: "22nd Ave",
@@ -1361,7 +1369,8 @@ export const ROUTES = {
     name: "Green Necklace",
     regions: [REGIONS.northVancouver],
     legs: [{ videos: {} }],
-    notes: "A MUP circling through the city.",
+    notes:
+      "A MUP circling through the city. The part through Grand Boulevard Park has had some adjustments and may change again.",
   },
   guildford: {
     name: "Guildford Way",

@@ -1,4 +1,4 @@
-import { JONES_24TH, MAHON_4TH } from "../intersections";
+import { JONES_17TH, JONES_24TH, MAHON_4TH } from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
@@ -68,6 +68,7 @@ export const JONES = [
     positions: [
       KEITH_JONES_S,
       [49.32331, -123.08165],
+      JONES_17TH,
       [49.32831, -123.08153],
       JONES_23RD,
     ],

@@ -1,4 +1,4 @@
-import {} from "../intersections";
+import { GRAND_BLVD_W_17TH_E } from "../intersections";
 import { ROUTES } from "../routes";
 
 const GRAND_BLVD_W_KEITH_NE = [49.31362, -123.05764];
@@ -201,6 +201,7 @@ export const GREEN_NECKLACE = [
       [49.32599, -123.05734],
       [49.32416, -123.05739],
       [49.32407, -123.05735],
+      GRAND_BLVD_W_17TH_E,
       [49.32392, -123.05735],
       [49.32376, -123.05741],
       [49.32207, -123.05743],
