@@ -8,8 +8,6 @@ import {
   QUEENSBURY_3RD_NW,
   QUEENSBURY_3RD_SE,
   QUEENSBURY_3RD_SW,
-  QUEENSBURY_4TH_E,
-  QUEENSBURY_4TH_W,
   SAINT_DAVIDS_1ST_E,
   SAINT_DAVIDS_4TH,
   ST_ANDREWS_3RD,
@@ -20,9 +18,6 @@ import { ROUTE_VIDEOS } from "../videos/routes";
 const SAINT_DAVIDS_3RD_ALLEY = [49.30807, -123.06599];
 const SAINT_DAVIDS_3RD_SW = [49.30863, -123.06617];
 const SAINT_DAVIDS_3RD_NW = [49.30878, -123.06615];
-
-const QUEENSBURY_NB_LANE_START = [49.30903, -123.05718];
-const QUEENSBURY_SB_LANE_END = [49.30902, -123.05729];
 
 const EB_LANE_END = [49.30837, -123.05247];
 const EB_BUS_LANE_END = [49.30833, -123.04747];
@@ -80,55 +75,6 @@ export const THIRD_NV = [
       [49.3097, -123.0661],
       SAINT_DAVIDS_4TH,
     ],
-  },
-
-  // queensbury nb
-  {
-    description: "crossing 3rd at queensbury nb",
-    type: "painted",
-    oneWay: "required",
-    positions: [QUEENSBURY_3RD_SE, QUEENSBURY_3RD_NE],
-  },
-  {
-    description: "queensbury nb shared",
-    type: "shared",
-    oneWay: "required",
-    positions: [
-      QUEENSBURY_3RD_NE,
-      [49.30861, -123.05718],
-      [49.30892, -123.05717],
-      QUEENSBURY_NB_LANE_START,
-    ],
-  },
-  {
-    description: "queensbury nb painted",
-    type: "painted",
-    oneWay: "required",
-    positions: [QUEENSBURY_NB_LANE_START, QUEENSBURY_4TH_E],
-  },
-
-  // queensbury sb
-  {
-    description: "queensbury sb painted",
-    type: "painted",
-    oneWay: "required",
-    positions: [QUEENSBURY_4TH_W, QUEENSBURY_SB_LANE_END],
-  },
-  {
-    description: "queensbury sb shared",
-    type: "shared",
-    oneWay: "required",
-    positions: [
-      QUEENSBURY_SB_LANE_END,
-      [49.30861, -123.05729],
-      QUEENSBURY_3RD_NW,
-    ],
-  },
-  {
-    description: "crossing 3rd at queensbury sb",
-    type: "painted",
-    oneWay: "required",
-    positions: [QUEENSBURY_3RD_NW, QUEENSBURY_3RD_SW],
   },
 
   // eb

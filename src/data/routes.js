@@ -9,7 +9,7 @@ import { ROUTE_VIDEOS } from "./videos/routes";
 // Richmond: south dyke; ...and around steveston
 // YVR:
 // New Westminster:
-// North Vancouver (city): queensbury; st andrews; mosquito creek; w keith/13th; e keith; 29th; grand blvd/lynn valley; larson/16th
+// North Vancouver (city): st andrews; mosquito creek; w keith/13th; e keith; 29th; grand blvd/lynn valley; larson/16th
 // North Vancouver (district): dollarton; mt seymour;
 // West Vancouver: spirit trail alt.?; ...more
 // Surrey: scott rd; serpentine; timbers; fraser hwy;
@@ -2383,6 +2383,13 @@ export const ROUTES = {
     ],
     notes:
       "There's nothing saying you need to use the right side, but it's awkward to pass cyclists/pedestrians so I wouldn't recommend it. However, the west end is much more convenient as it's the only direct connection away from Stewardson.",
+  },
+  queensbury: {
+    name: "Queensbury Ave",
+    regions: [REGIONS.northVancouver],
+    legs: [{ videos: {} }],
+    notes:
+      "Steep hill. The painted lanes are usually beside the curb, but sometimes there is car parking between you and the curb.",
   },
   railway: {
     name: "Railway Ave",

@@ -1,7 +1,10 @@
-import { GRAND_BLVD_W_17TH_E, JONES_KEITH_SE_S } from "../intersections";
+import {
+  GRAND_BLVD_W_17TH_E,
+  GRAND_BLVD_W_KEITH_NE,
+  JONES_KEITH_SE_S,
+} from "../intersections";
 import { ROUTES } from "../routes";
 
-const GRAND_BLVD_W_KEITH_NE = [49.31362, -123.05764];
 const ST_GEORGES_KEITH_W_N = [49.31565, -123.07049];
 const W_VICTORIA_KEITH = [49.31785, -123.0757];
 const JONES_21ST_SE = [49.32831, -123.08144];
