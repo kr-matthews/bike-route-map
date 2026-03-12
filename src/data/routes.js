@@ -9,7 +9,7 @@ import { ROUTE_VIDEOS } from "./videos/routes";
 // Richmond: south dyke; ...and around steveston
 // YVR:
 // New Westminster:
-// North Vancouver (city): spirit-necklace, queensbury, st andrews, mosquito creek, keith/13th, 29th; grand blvd/lynn valley; larson/16th
+// North Vancouver (city): queensbury; st andrews; mosquito creek; w keith/13th; e keith; 29th; grand blvd/lynn valley; larson/16th
 // North Vancouver (district): dollarton; mt seymour;
 // West Vancouver: spirit trail alt.?; ...more
 // Surrey: scott rd; serpentine; timbers; fraser hwy;

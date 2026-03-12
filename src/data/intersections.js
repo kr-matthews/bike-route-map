@@ -516,6 +516,7 @@ export const IOCO_GUILDFORD_S = [49.28068, -122.82744];
 export const IONA_PARK_E = [49.21678, -123.2031];
 export const JONES_17TH = [49.32425, -123.08162];
 export const JONES_24TH = [49.33134, -123.08147];
+export const JONES_KEITH_SE_S = [49.31982, -123.0816];
 export const KASLO_ADANAC = [49.27746, -123.04677];
 export const KASLO_PANDORA = [49.28298, -123.04671];
 export const KASLO_WALL = [49.29164, -123.04668];

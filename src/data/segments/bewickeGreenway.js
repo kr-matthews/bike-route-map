@@ -4,11 +4,30 @@ import {
   BEWICKE_SPIRIT_N,
   BEWICKE_SPIRIT_S,
   BEWICKE_THIRD_NE,
+  JONES_KEITH_SE_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const BEWICKE_GREENWAY = [
+  // connection to green necklace
+  {
+    description: "keith MUP",
+    type: "comfortable",
+    positions: [
+      BEWICKE_KEITH_SE,
+      [49.3199, -123.0905],
+      [49.31992, -123.0904],
+      [49.31992, -123.09012],
+      [49.31994, -123.09],
+      [49.31993, -123.08904],
+      [49.31989, -123.08877],
+      [49.31988, -123.08773],
+      JONES_KEITH_SE_S,
+    ],
+  },
+
+  // route
   {
     routeNames: [ROUTES.bewickeGreenway.name],
     description: "south tip",
