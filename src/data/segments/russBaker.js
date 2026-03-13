@@ -27,7 +27,6 @@ export const RUSS_BAKER = [
     description: "nb: no. 2 bridge to miller",
     type: "shoulder",
     oneWay: "required",
-    elevation: 0.5,
     videoIds: [ROUTE_VIDEOS.russBakerNb.id],
     positions: [
       NO_2_RUSS_BAKER_E,
@@ -158,7 +157,6 @@ export const RUSS_BAKER = [
     description: "sb: miller to no. 2 bridge",
     type: "shoulder",
     oneWay: "required",
-    elevation: 0.5,
     videoIds: [ROUTE_VIDEOS.russBakerSb.id],
     positions: [
       RUSS_BAKER_MILLER_SW,

@@ -114,7 +114,14 @@ export function createDemoBorderPathOptions(
   };
 }
 
-export function getSegmentPane(elevation, hasMultipleRoutes) {
+export function getSegmentPane(elevation, type, hasMultipleRoutes) {
+  const isSeparated = [
+    "comfortable",
+    "dedicated",
+    "mixed",
+    "combined",
+  ].includes(type);
+
   switch (elevation) {
     case 2:
       return "elevated-2";
@@ -130,7 +137,9 @@ export function getSegmentPane(elevation, hasMultipleRoutes) {
       return "underground-1";
 
     default:
-      return hasMultipleRoutes ? "shared" : "solo";
+      return `${hasMultipleRoutes ? "shared" : "solo"}${
+        isSeparated ? "-good" : ""
+      }`;
   }
 }
 

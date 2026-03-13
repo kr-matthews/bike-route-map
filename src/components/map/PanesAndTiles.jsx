@@ -18,6 +18,10 @@ export default function PanesAndTiles() {
       <Pane name="elevated-1-adj" style={{ zIndex: 322 }} />
       <Pane name="elevated-1-adj-arrow" style={{ zIndex: 321 }} />
       <Pane name="elevated-1-border" style={{ zIndex: 320 }} />
+      <Pane name="shared-good" style={{ zIndex: 317 }} />
+      <Pane name="shared-good-arrow" style={{ zIndex: 316 }} />
+      <Pane name="solo-good" style={{ zIndex: 315 }} />
+      <Pane name="solo-good-arrow" style={{ zIndex: 314 }} />
       <Pane name="shared" style={{ zIndex: 313 }} />
       <Pane name="shared-arrow" style={{ zIndex: 312 }} />
       <Pane name="solo" style={{ zIndex: 311 }} />

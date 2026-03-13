@@ -17,8 +17,15 @@ export default function Segment({
   createBorderPathOptions = defaultCreateBorderPathOptions,
   createPathOptions = defaultCreatePathOptions,
 }) {
-  const { routeNames, oneWay, elevation, videoIds, hideArrows, positions } =
-    segment;
+  const {
+    routeNames,
+    oneWay,
+    elevation,
+    videoIds,
+    hideArrows,
+    positions,
+    type,
+  } = segment;
   // for main map, this gets the 'real' filter context,
   //  for the demo map, the demo hook provides its own modified values,
   //  definitely could be implemented better
@@ -35,7 +42,7 @@ export default function Segment({
   const primaryRouteName = routeNames?.find((x) => x) || null;
   const hasMultipleRoutes = (routeNames?.length ?? 0) > 1;
   const hasAnyVideos = (videoIds?.length ?? 0) > 0;
-  const pane = getSegmentPane(elevation, hasMultipleRoutes);
+  const pane = getSegmentPane(elevation, type, hasMultipleRoutes);
   const isHidden = isSegmentHidden(segment);
 
   const eventHandlers = useMemo(
