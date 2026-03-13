@@ -33,6 +33,7 @@ const VERNON_UNION = [49.27732, -123.0794];
 
 const DUNLEVY_UNION = [49.27759, -123.09552];
 const UNION_SPLIT = [49.27761, -123.10316];
+const RUPERT_ADANAC = [49.27745, -123.03359];
 const OVERPASS_W = [49.27744, -123.03193];
 const OVERPASS_E = [49.27745, -123.03111];
 const PRE_BOUNDARY = [49.27744, -123.02519];
@@ -211,9 +212,8 @@ export const ADANAC = [
   },
   {
     routeNames: [ROUTES.adanac.name],
-    description: "sunrise to highway",
+    description: "sunrise to rupert",
     type: "quiet",
-    elevation: 0.5,
     videoIds: [ROUTE_VIDEOS.adanacWb.id, ROUTE_VIDEOS.adanacEb.id],
     positions: [
       KASLO_ADANAC,
@@ -221,14 +221,21 @@ export const ADANAC = [
       [49.27745, -123.04132],
       [49.27745, -123.03884],
       WINDERMERE_ADANAC,
-      [49.27745, -123.03359],
-      OVERPASS_W,
+      RUPERT_ADANAC,
     ],
   },
   {
     routeNames: [ROUTES.adanac.name],
+    description: "rupert to highway",
+    type: "shared",
+    elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.adanacWb.id, ROUTE_VIDEOS.adanacEb.id],
+    positions: [RUPERT_ADANAC, OVERPASS_W],
+  },
+  {
+    routeNames: [ROUTES.adanac.name],
     description: "highway overpass",
-    type: "quiet",
+    type: "shared",
     elevation: 1,
     videoIds: [
       ROUTE_VIDEOS.adanacWb.id,
@@ -241,7 +248,7 @@ export const ADANAC = [
   {
     routeNames: [ROUTES.adanac.name],
     description: "highway to cassiar",
-    type: "quiet",
+    type: "shared",
     elevation: 0.5,
     videoIds: [
       ROUTE_VIDEOS.adanacWb.id,
@@ -253,7 +260,7 @@ export const ADANAC = [
   {
     routeNames: [ROUTES.adanac.name],
     description: "cassiar to almost boundary",
-    type: "quiet",
+    type: "shared",
     elevation: 0.5,
     videoIds: [ROUTE_VIDEOS.adanacWb.id, ROUTE_VIDEOS.adanacEb.id],
     positions: [
@@ -266,7 +273,7 @@ export const ADANAC = [
   {
     routeNames: [ROUTES.adanac.name],
     description: "pre-boundary",
-    type: "quiet",
+    type: "shared",
     videoIds: [
       ROUTE_VIDEOS.adanacWb.id,
       ROUTE_VIDEOS.francesUnionEb.id,
