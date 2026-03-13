@@ -189,7 +189,7 @@ export const CHESTERFIELD = [
     routeNames: [ROUTES.chesterfield.name],
     description: "sb 13th to 4th",
     type: "shared",
-    oneWay: "recommended",
+    oneWay: "required",
     positions: [
       CHESTERFIELD_13TH_S,
       [49.31989, -123.0756],
