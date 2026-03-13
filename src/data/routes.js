@@ -9,7 +9,7 @@ import { ROUTE_VIDEOS } from "./videos/routes";
 // Richmond: south dyke; ...and around steveston
 // YVR:
 // New Westminster:
-// North Vancouver (city): st andrews; mosquito creek; w keith/13th; e keith; 29th; grand blvd/lynn valley; larson/16th
+// North Vancouver (city): mosquito creek; e keith; w keith/13th; larson/16th; 29th; grand blvd/lynn valley
 // North Vancouver (district): dollarton; mt seymour;
 // West Vancouver: spirit trail alt.?; ...more
 // Surrey: scott rd; serpentine; timbers; fraser hwy;
@@ -2507,11 +2507,10 @@ export const ROUTES = {
   },
   stAndrews: {
     name: "St Andrews Ave",
-    isIncomplete: true,
     regions: [REGIONS.northVancouver],
     legs: [{ videos: {} }],
     notes:
-      "Very steep. This route continues north to 23rd St, just short of Trans-Canada Highway.",
+      "Very steep at the south end, then gets flatter but still on a hill.",
   },
   stGeorge: {
     name: "St George Rainway",

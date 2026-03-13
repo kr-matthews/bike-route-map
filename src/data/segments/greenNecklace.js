@@ -2,6 +2,7 @@ import {
   GRAND_BLVD_W_17TH_E,
   GRAND_BLVD_W_KEITH_NE,
   JONES_KEITH_SE_S,
+  ST_ANDREWS_23RD_N,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
@@ -123,7 +124,7 @@ export const GREEN_NECKLACE = [
   },
   {
     routeNames: [ROUTES.greenNecklace.name],
-    description: "21st, 22nd, 23rd",
+    description: "jones to st andrews: 21st, 22nd, 23rd",
     type: "mixed",
     positions: [
       JONES_21ST_SE,
@@ -154,14 +155,15 @@ export const GREEN_NECKLACE = [
       [49.33011, -123.06909],
       [49.33014, -123.06912],
       [49.33029, -123.06912],
-      RIDGEWAY_23RD_N,
+      ST_ANDREWS_23RD_N,
     ],
   },
   {
     routeNames: [ROUTES.greenNecklace.name],
-    description: "grand blvd, 19th",
+    description: "st andrews to grand blvd park: 23rd, grand blvd, 19th",
     type: "mixed",
     positions: [
+      ST_ANDREWS_23RD_N,
       RIDGEWAY_23RD_N,
       [49.33023, -123.0626],
       [49.33028, -123.06243],
