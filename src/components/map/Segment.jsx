@@ -58,7 +58,7 @@ export default function Segment({
         if (hasAnyVideos) {
           // cycle through videos
           const currentlySelectedVideoIndex = videoIds.findIndex(
-            (id) => id === selectedVideo?.id
+            (id) => id === selectedVideo?.id,
           );
           const nextVideoIndex =
             (currentlySelectedVideoIndex + 1) % videoIds.length;
@@ -68,7 +68,7 @@ export default function Segment({
           const routesWithVideo = getRoutesWithVideo(nextVideoId);
           const aRouteNameWithVideo =
             (routeNames ?? []).find((routeName) =>
-              routesWithVideo.some((route) => route.name === routeName)
+              routesWithVideo.some((route) => route.name === routeName),
             ) ?? routesWithVideo[0].name;
           selectRouteAndVideo(aRouteNameWithVideo, nextVideoId);
         }
@@ -83,7 +83,7 @@ export default function Segment({
       selectRoute,
       selectRouteAndVideo,
       selectedVideo,
-    ]
+    ],
   );
 
   const isSelected = (routeNames ?? []).includes(selectedRoute?.name);
@@ -115,7 +115,7 @@ export default function Segment({
       eventHandlers,
       pane,
       createPathOptions,
-    ]
+    ],
   );
 
   const hasBorder = normalizeElevation(elevation) !== 0;
@@ -139,13 +139,13 @@ export default function Segment({
       otherIsHighlighted,
       isHidden,
       createBorderPathOptions,
-    ]
+    ],
   );
 
   // not sure why using the component directly was causing `Polyline` to re-render every time
   const tooltipComponent = useMemo(
     () => <SegmentTooltip segment={segment} />,
-    [segment]
+    [segment],
   );
 
   // FIXME: tool tip not showing on decorator arrows hover

@@ -18,7 +18,7 @@ import {
 
 export function createPathOptions(
   { oneWay, isClosed, type, undesignated, elevation },
-  { isHighlighted, isSelected, hasActiveVideo, isHidden }
+  { isHighlighted, isSelected, hasActiveVideo, isHidden },
 ) {
   const isOneWay = oneWay === "required";
 
@@ -55,7 +55,7 @@ export function createPathOptions(
 
 export function createBorderPathOptions(
   { elevation },
-  { isSelected, isHidden }
+  { isSelected, isHidden },
 ) {
   if (!elevation) return null;
 
@@ -71,7 +71,7 @@ export function createBorderPathOptions(
 
 export function createDemoPathOptions(
   { oneWay, isClosed, type, undesignated, elevation, isAlt },
-  { isSelected, otherIsHighlighted, isHidden }
+  { isSelected, otherIsHighlighted, isHidden },
 ) {
   const isOneWay = oneWay === "required";
 
@@ -102,7 +102,7 @@ export function createDemoPathOptions(
 
 export function createDemoBorderPathOptions(
   { elevation },
-  { otherIsHighlighted, isHidden }
+  { otherIsHighlighted, isHidden },
 ) {
   if (!elevation) return null;
 
