@@ -1,4 +1,5 @@
 import {
+  BEWICKE_MOSQUITO_CREEK_S,
   GARDEN_SPIRIT_TRAIL,
   MACKAY_1ST_NW,
   MACKAY_1ST_SW,
@@ -13,7 +14,13 @@ import { ROUTE_VIDEOS } from "../videos/routes";
 const WHONOAK_WELCH_SW = [49.31766, -123.12133];
 const GARDEN_WELCH_SW = [49.31759, -123.11844];
 const GARDEN_WELCH_NE = [49.31767, -123.11833];
+const MOSQUITO_CREEK_2ND_SE = [49.3182, -123.09346];
 const BEWICKE_2ND_NE = [49.31911, -123.09145];
+
+const EB_ELEVATION_START = [49.31823, -123.09342];
+const EB_ELEVATION_END = [49.31866, -123.09297];
+const WB_ELEVATION_START = [49.31873, -123.09313];
+const WB_ELEVATION_END = [49.3183, -123.09361];
 
 export const FIRST_2ND = [
   {
@@ -25,6 +32,21 @@ export const FIRST_2ND = [
       [49.31776, -123.11831],
       [49.31786, -123.11826],
       GARDEN_SPIRIT_TRAIL,
+    ],
+  },
+  {
+    description: "bewicke <-> 1st/2nd @ mosquito creek",
+    type: "mixed",
+    oneWay: "recommended",
+    positions: [
+      MOSQUITO_CREEK_2ND_SE,
+      [49.31807, -123.09285],
+      [49.31805, -123.09269],
+      [49.31796, -123.09244],
+      [49.31784, -123.09224],
+      [49.31756, -123.09197],
+      [49.31751, -123.09187],
+      BEWICKE_MOSQUITO_CREEK_S,
     ],
   },
 
@@ -84,9 +106,10 @@ export const FIRST_2ND = [
   },
   {
     routeNames: [ROUTES.first2nd.name],
-    description: "eb protected",
+    description: "eb protected 1",
     type: "dedicated",
     oneWay: "required",
+    elevation: 0.5,
     videoIds: [ROUTE_VIDEOS.first2ndEb.id],
     positions: [
       MACKAY_1ST_SW,
@@ -97,7 +120,28 @@ export const FIRST_2ND = [
       [49.31798, -123.09394],
       [49.31803, -123.09375],
       [49.3181, -123.0936],
-      [49.3182, -123.09346],
+      MOSQUITO_CREEK_2ND_SE,
+      EB_ELEVATION_START,
+    ],
+  },
+  {
+    routeNames: [ROUTES.first2nd.name],
+    description: "eb protected - bridge",
+    type: "dedicated",
+    oneWay: "required",
+    elevation: 1,
+    videoIds: [ROUTE_VIDEOS.first2ndEb.id],
+    positions: [EB_ELEVATION_START, EB_ELEVATION_END],
+  },
+  {
+    routeNames: [ROUTES.first2nd.name],
+    description: "eb protected 2",
+    type: "dedicated",
+    oneWay: "required",
+    elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.first2ndEb.id],
+    positions: [
+      EB_ELEVATION_END,
       [49.31875, -123.09286],
       [49.31883, -123.09274],
       [49.3189, -123.09262],
@@ -131,9 +175,10 @@ export const FIRST_2ND = [
   },
   {
     routeNames: [ROUTES.first2nd.name],
-    description: "wb protected",
+    description: "wb protected 1",
     type: "dedicated",
     oneWay: "required",
+    elevation: 0.5,
     videoIds: [ROUTE_VIDEOS.first2ndWb.id],
     positions: [
       BEWICKE_2ND_NE,
@@ -144,8 +189,27 @@ export const FIRST_2ND = [
       [49.31903, -123.09275],
       [49.31897, -123.09286],
       [49.31891, -123.09295],
-      [49.31837, -123.09352],
-      [49.3183, -123.09361],
+      WB_ELEVATION_START,
+    ],
+  },
+  {
+    routeNames: [ROUTES.first2nd.name],
+    description: "wb protected - bridge",
+    type: "dedicated",
+    oneWay: "required",
+    elevation: 1,
+    videoIds: [ROUTE_VIDEOS.first2ndWb.id],
+    positions: [WB_ELEVATION_START, WB_ELEVATION_END],
+  },
+  {
+    routeNames: [ROUTES.first2nd.name],
+    description: "wb protected 2",
+    type: "dedicated",
+    oneWay: "required",
+    elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.first2ndWb.id],
+    positions: [
+      WB_ELEVATION_END,
       [49.31824, -123.0937],
       [49.31819, -123.0938],
       [49.31815, -123.09392],

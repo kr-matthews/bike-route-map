@@ -28,6 +28,11 @@ const WB_PRE_15TH = [49.32197, -123.09664];
 const MACKAY_RD_MARINE_N = [49.32388, -123.10212];
 const WB_POST_CAPILANO = [49.32469, -123.12338];
 
+const EB_ELEVATION_START = [49.32099, -123.09437];
+const EB_ELEVATION_END = [49.32086, -123.09403];
+const WB_ELEVATION_START = [49.32102, -123.09392];
+const WB_ELEVATION_END = [49.32116, -123.09432];
+
 export const MARINE_NV = [
   // eb
   {
@@ -98,13 +103,31 @@ export const MARINE_NV = [
   },
   {
     routeNames: [ROUTES.marineNv.name],
-    description: "eb: fell to 2nd",
+    description: "eb: fell to mosquito",
     type: "shared",
     oneWay: "required",
+    elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.marineNvEb.id],
+    positions: [EB_PRE_FELL, [49.32108, -123.09468], EB_ELEVATION_START],
+  },
+  {
+    routeNames: [ROUTES.marineNv.name],
+    description: "eb: crossing mosquito",
+    type: "shared",
+    oneWay: "required",
+    elevation: 1,
+    videoIds: [ROUTE_VIDEOS.marineNvEb.id],
+    positions: [EB_ELEVATION_START, EB_ELEVATION_END],
+  },
+  {
+    routeNames: [ROUTES.marineNv.name],
+    description: "eb: mosquito to 2nd",
+    type: "shared",
+    oneWay: "required",
+    elevation: 0.5,
     videoIds: [ROUTE_VIDEOS.marineNvEb.id],
     positions: [
-      EB_PRE_FELL,
-      [49.32108, -123.09468],
+      EB_ELEVATION_END,
       [49.32059, -123.09327],
       [49.31996, -123.09151],
       BEWICKE_3RD_S,
@@ -211,9 +234,10 @@ export const MARINE_NV = [
   },
   {
     routeNames: [ROUTES.marineNv.name],
-    description: "wb: bewicke to 15th-ish",
+    description: "wb: bewicke to mosquito",
     type: "painted",
     oneWay: "required",
+    elevation: 0.5,
     videoIds: [ROUTE_VIDEOS.marineNvWb.id],
     positions: [
       BEWICKE_THIRD_NE,
@@ -222,10 +246,26 @@ export const MARINE_NV = [
       [49.32023, -123.09167],
       [49.32028, -123.09182],
       [49.32067, -123.09293],
-      [49.32103, -123.09393],
-      [49.32164, -123.0957],
-      WB_PRE_15TH,
+      WB_ELEVATION_START,
     ],
+  },
+  {
+    routeNames: [ROUTES.marineNv.name],
+    description: "wb: crossing mosquito",
+    type: "painted",
+    oneWay: "required",
+    elevation: 1,
+    videoIds: [ROUTE_VIDEOS.marineNvWb.id],
+    positions: [WB_ELEVATION_START, WB_ELEVATION_END],
+  },
+  {
+    routeNames: [ROUTES.marineNv.name],
+    description: "wb: mosquito to 15th-ish",
+    type: "painted",
+    oneWay: "required",
+    elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.marineNvWb.id],
+    positions: [WB_ELEVATION_END, [49.32164, -123.0957], WB_PRE_15TH],
   },
   {
     routeNames: [ROUTES.marineNv.name],

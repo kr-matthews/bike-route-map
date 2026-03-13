@@ -9,7 +9,7 @@ import { ROUTE_VIDEOS } from "./videos/routes";
 // Richmond: south dyke; ...and around steveston
 // YVR:
 // New Westminster:
-// North Vancouver (city): mosquito creek; e keith; w keith/13th; larson/16th; 29th; grand blvd/lynn valley
+// North Vancouver (city): e keith; w keith/13th; larson/16th; 29th; grand blvd/lynn valley
 // North Vancouver (district): dollarton; mt seymour;
 // West Vancouver: spirit trail alt.?; ...more
 // Surrey: scott rd; serpentine; timbers; fraser hwy;
@@ -2021,6 +2021,15 @@ export const ROUTES = {
     ],
     notes:
       "Lots of hills, but mostly quiet. The south (east) end leads to an alley which eventually connects to BC Parkway. The Grandview Cut was closed to cars around 2022.",
+  },
+  mosquitoCreek: {
+    name: "Mosquito Creek",
+    regions: [REGIONS.northVancouver],
+    // isOneWay: true,
+    isIncomplete: true,
+    legs: [{ videos: {} }],
+    notes:
+      "Mostly gravel, mostly not very steep. There's a gap at Larson where you need to briefly use the sidewalk, and north of there it is one-way (uphill). May continue north of Queens Rd (restarting around Evergreen Pl).",
   },
   murray: {
     name: "Murray St",
