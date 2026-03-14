@@ -12,31 +12,26 @@ import {
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
-const OUTLET_MALL_BOYD = [49.19073, -122.94722];
+const OUTLET_MALL_BOYD_N = [49.19077, -122.94725];
+const OUTLET_MALL_BOYD_S = [49.19072, -122.94726];
 const DUNCAN_BOYD_NE = [49.19468, -122.93691];
-const HOWES_BOYD_NW = [49.19013, -122.94891];
+const HOWES_BOYD_NW = [49.19011, -122.9488];
+const HOWES_BOYD_NE = [49.19023, -122.9485];
 const WOOD_BOYD_N = [49.19281, -122.94235];
 
 export const BOYD = [
   {
-    description: "trail on duncan",
-    type: "comfortable",
-    positions: [
-      DUNCAN_BOYD_NE,
-      [49.19472, -122.93692],
-      [49.19476, -122.93691],
-      [49.19479, -122.93688],
-      [49.19509, -122.93615],
-      [49.19514, -122.93599],
-      [49.19516, -122.93584],
-      [49.19513, -122.93528],
-    ],
+    description: "outlet mall to road",
+    type: "painted",
+    oneWay: "required",
+    hideArrows: true,
+    positions: [OUTLET_MALL_BOYD_N, OUTLET_MALL_BOYD_S],
   },
   {
     description: "through outlet mall",
     type: "comfortable",
     positions: [
-      OUTLET_MALL_BOYD,
+      OUTLET_MALL_BOYD_N,
       [49.1908, -122.9473],
       [49.19125, -122.94774],
       [49.19162, -122.94809],
@@ -50,24 +45,22 @@ export const BOYD = [
       [49.19366, -122.95003],
     ],
   },
+  {
+    description: "crossing at bridge",
+    type: "mixed",
+    videoIds: [
+      ROUTE_VIDEOS.queensboroughBridgeNb.id,
+      ROUTE_VIDEOS.queensboroughBridgeSb.id,
+      ROUTE_VIDEOS.boydEb.id,
+    ],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.queensboroughBridgeSb.id],
+    positions: [QUEENSBOROUGH_BOYD_SW, QUEENSBOROUGH_BOYD_NW],
+  },
 
   // trail
   {
-    description: "pre-trail at howes",
-    type: "other",
-    undesignated: true,
-    videoIds: [ROUTE_VIDEOS.boydTrailWb.id],
-    videoIdsStartAtEnd: [ROUTE_VIDEOS.boydTrailWb.id],
-    positions: [
-      HOWES_BOYD_NW,
-      [49.19011, -122.9488],
-      [49.19023, -122.9485],
-      [49.19031, -122.94847],
-    ],
-  },
-  {
     routeNames: [ROUTES.boydTrail.name],
-    description: "trail from boundary",
+    description: "boundary to howes",
     type: "comfortable",
     videoIds: [ROUTE_VIDEOS.boydTrailWb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.boydTrailWb.id],
@@ -103,12 +96,93 @@ export const BOYD = [
       [49.18974, -122.94955],
       [49.18983, -122.94942],
       [49.19, -122.94903],
-      [49.19006, -122.94896],
       HOWES_BOYD_NW,
     ],
   },
+  {
+    routeNames: [ROUTES.boydTrail.name],
+    description: "crossing howes",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.boydTrailWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.boydTrailWb.id],
+    positions: [HOWES_BOYD_NW, HOWES_BOYD_NE],
+  },
+  {
+    routeNames: [ROUTES.boydTrail.name],
+    description: "howes to outlet mall",
+    type: "mixed",
+    positions: [
+      HOWES_BOYD_NE,
+      [49.19029, -122.94843],
+      [49.19073, -122.94739],
+      OUTLET_MALL_BOYD_N,
+    ],
+  },
+  {
+    routeNames: [ROUTES.boydTrail.name],
+    description: "outlet mall to bridge",
+    type: "mixed",
+    positions: [
+      OUTLET_MALL_BOYD_N,
+      [49.19078, -122.94715],
+      QUEENSBOROUGH_BOYD_NW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.boydTrail.name],
+    description: "bridge to duncan 1",
+    type: "comfortable",
+    videoIds: [
+      ROUTE_VIDEOS.queensboroughBridgeNb.id,
+      ROUTE_VIDEOS.boydWb.id,
+      ROUTE_VIDEOS.boydEb.id,
+    ],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.queensboroughBridgeNb.id],
+    positions: [
+      QUEENSBOROUGH_BOYD_NW,
+      [49.19231, -122.94328],
+      [49.19244, -122.94299],
+      [49.19255, -122.94278],
+      [49.19268, -122.94259],
+      WOOD_BOYD_N,
+    ],
+  },
+  {
+    routeNames: [ROUTES.boydTrail.name],
+    description: "bridge to duncan 2",
+    type: "comfortable",
+    videoIds: [ROUTE_VIDEOS.boydWb.id, ROUTE_VIDEOS.boydEb.id],
+    positions: [
+      WOOD_BOYD_N,
+      [49.19316, -122.94159],
+      [49.19368, -122.94025],
+      [49.19421, -122.93899],
+      [49.19446, -122.93839],
+      [49.19455, -122.93813],
+      [49.1946, -122.93796],
+      [49.19464, -122.93777],
+      [49.19467, -122.93748],
+      [49.19468, -122.93717],
+      DUNCAN_BOYD_NE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.boydTrail.name],
+    description: "duncan",
+    type: "comfortable",
+    positions: [
+      DUNCAN_BOYD_NE,
+      [49.19472, -122.93692],
+      [49.19476, -122.93691],
+      [49.19479, -122.93688],
+      [49.19509, -122.93615],
+      [49.19514, -122.93599],
+      [49.19516, -122.93584],
+      [49.19513, -122.93528],
+    ],
+  },
 
-  // st
+  // street
   {
     routeNames: [ROUTES.boyd.name],
     description: "eb boundary to after howes",
@@ -151,16 +225,28 @@ export const BOYD = [
     ],
   },
   {
+    description: "wb bridge to outlet mall (old)",
+    type: "painted",
+    oneWay: "required",
+    undesignated: true,
+    isClosed: true,
+    videoIds: [ROUTE_VIDEOS.boydWb.id],
+    positions: [
+      QUEENSBOROUGH_BOYD_NW,
+      [49.19226, -122.94335],
+      [49.19154, -122.94517],
+      OUTLET_MALL_BOYD_S,
+    ],
+  },
+  {
     routeNames: [ROUTES.boyd.name],
-    description: "wb to boundary",
+    description: "wb outlet mall to boundary",
     type: "painted",
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.boydWb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.boydWb.id],
     positions: [
-      QUEENSBOROUGH_BOYD_NW,
-      [49.19154, -122.94517],
-      OUTLET_MALL_BOYD,
+      OUTLET_MALL_BOYD_S,
       [49.19016, -122.94861],
       [49.18983, -122.94933],
       [49.18971, -122.94952],
@@ -184,56 +270,6 @@ export const BOYD = [
       [49.18408, -122.95587],
       BOUNDARY_WESTMINSTER_EN,
     ],
-  },
-  {
-    routeNames: [ROUTES.boyd.name],
-    description: "trail from bridge to duncan 1",
-    type: "comfortable",
-    videoIds: [
-      ROUTE_VIDEOS.queensboroughBridgeNb.id,
-      ROUTE_VIDEOS.boydWb.id,
-      ROUTE_VIDEOS.boydEb.id,
-    ],
-    videoIdsStartAtEnd: [ROUTE_VIDEOS.queensboroughBridgeNb.id],
-    positions: [
-      QUEENSBOROUGH_BOYD_NW,
-      [49.19231, -122.94328],
-      [49.19244, -122.94299],
-      [49.19255, -122.94278],
-      [49.19268, -122.94259],
-      WOOD_BOYD_N,
-    ],
-  },
-  {
-    routeNames: [ROUTES.boyd.name],
-    description: "trail from bridge to duncan 2",
-    type: "comfortable",
-    videoIds: [ROUTE_VIDEOS.boydWb.id, ROUTE_VIDEOS.boydEb.id],
-    positions: [
-      WOOD_BOYD_N,
-      [49.19316, -122.94159],
-      [49.19368, -122.94025],
-      [49.19421, -122.93899],
-      [49.19446, -122.93839],
-      [49.19455, -122.93813],
-      [49.1946, -122.93796],
-      [49.19464, -122.93777],
-      [49.19467, -122.93748],
-      [49.19468, -122.93717],
-      DUNCAN_BOYD_NE,
-    ],
-  },
-  {
-    routeNames: [ROUTES.boyd.name],
-    description: "crossing at bridge",
-    type: "mixed",
-    videoIds: [
-      ROUTE_VIDEOS.queensboroughBridgeNb.id,
-      ROUTE_VIDEOS.queensboroughBridgeSb.id,
-      ROUTE_VIDEOS.boydEb.id,
-    ],
-    videoIdsEndAtEnd: [ROUTE_VIDEOS.queensboroughBridgeSb.id],
-    positions: [QUEENSBOROUGH_BOYD_SW, QUEENSBOROUGH_BOYD_NW],
   },
   {
     routeNames: [ROUTES.boyd.name],

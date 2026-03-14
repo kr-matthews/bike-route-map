@@ -522,6 +522,7 @@ export const ROUTES = {
     regions: [REGIONS.newWestminster],
     legs: [
       {
+        name: "Before rebuild between Howes St & Queensborough Bridge",
         videos: {
           eastbound: ROUTE_VIDEOS.boydEb,
           westbound: ROUTE_VIDEOS.boydWb,
@@ -529,13 +530,21 @@ export const ROUTES = {
       },
     ],
     notes:
-      "Very flat. The painted lanes are mostly beside the curb. Traveling east is a bit awkward as you have to briefly switch to the left side, then switch back. The city plans on improving this route.",
+      "Very flat. The painted lanes are mostly beside the curb. Traveling east is a bit awkward past the Queensborough Bridge as you either need to uncomfortably share the road, or briefly switch to the left side MUP then switch back (or possibly use the 'other' Boyd St). Considering using the MUP on the north side for the entire way instead.",
   },
   boydTrail: {
     name: "Boyd St Trail",
     regions: [REGIONS.newWestminster],
-    legs: [{ videos: { westbound: ROUTE_VIDEOS.boydTrailWb } }],
-    notes: "Very flat. A nice alternative to the road.",
+    legs: [
+      {
+        name: "Before rebuild between Howes St & Queensborough Bridge",
+        videos: {
+          westbound: ROUTE_VIDEOS.boydTrailWb,
+        },
+      },
+    ],
+    notes:
+      "Very flat. A nice alternative to the road. The missing section between Howes St & the Queensborough Bridge was completed in early 2026.",
   },
   bridgeportTrail: {
     name: "Bridgeport Trail",
