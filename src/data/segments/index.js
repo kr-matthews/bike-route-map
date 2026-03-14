@@ -235,8 +235,6 @@ import { WOODWARDS_SAUNDERS } from "./woodwardsSaunders";
 import { YORK } from "./york";
 import { YUKON } from "./yukon";
 
-// !! reorder to make 'better' routes on top? such as sea island path/russ baker way
-
 // convention: bi-directional paths are stored northbound, eastbound, or clockwise
 export const SEGMENTS = [
   ...ACADIA,
