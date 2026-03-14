@@ -22,7 +22,6 @@ import { ROUTE_VIDEOS } from "../videos/routes";
 const ELLIOTT_KENT_W = [49.20582, -123.05698];
 const MORNINGSTAR_PARK_W = [49.20587, -123.0544];
 const MORNINGSTAR_PARK_E = [49.20593, -123.05372];
-const KINROSS_KENT_S = [49.2061, -123.0367];
 const KINROSS_KENT_S_S = [49.20575, -123.03672];
 const JACK_UPPAL_KENT_N = [49.20567, -123.03369];
 const JACK_UPPAL_KENT_S = [49.20531, -123.03383];
@@ -390,23 +389,29 @@ export const KENT = [
       [49.20671, -123.04126],
       [49.20662, -123.04044],
       [49.20611, -123.03681],
-      KINROSS_KENT_S,
+      KINROSS_KENT,
     ],
   },
   {
     routeNames: [ROUTES.kent.name],
+    description: "kent n: public storage",
+    type: "mixed",
+    positions: [
+      KINROSS_KENT,
+      [49.20609, -123.03648],
+      [49.20579, -123.03434],
+      [49.20577, -123.03401],
+      [49.20572, -123.03393],
+      JACK_UPPAL_KENT_N,
+    ],
+  },
+  {
     description: "kinross",
     type: "quiet",
     videoIds: [ROUTE_VIDEOS.kentWb.id],
-    positions: [KINROSS_KENT_S_S, KINROSS_KENT_S],
+    positions: [KINROSS_KENT_S_S, KINROSS_KENT],
   },
   {
-    description: "kinross to split",
-    type: "quiet",
-    positions: [KINROSS_KENT_S, KINROSS_KENT],
-  },
-  {
-    routeNames: [ROUTES.kent.name],
     description: "kent s bit",
     type: "mixed",
     videoIds: [ROUTE_VIDEOS.kentWb.id],
@@ -479,11 +484,21 @@ export const KENT = [
   //   ],
   // },
   {
-    routeNames: [ROUTES.kent.name],
     description: "uppal kent s to n",
     type: "combined",
     videoIds: [ROUTE_VIDEOS.kentWb.id],
     positions: [JACK_UPPAL_KENT_S, JACK_UPPAL_KENT_N],
+  },
+  {
+    description: "uppal s of kent s",
+    type: "combined",
+    positions: [
+      [49.20447, -123.03475],
+      [49.20494, -123.03411],
+      [49.20507, -123.03396],
+      [49.20518, -123.03387],
+      JACK_UPPAL_KENT_S,
+    ],
   },
   {
     routeNames: [ROUTES.kent.name],

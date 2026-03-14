@@ -1643,7 +1643,7 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [{ videos: { westbound: ROUTE_VIDEOS.kentWb } }],
     notes:
-      "Flat. The painted lanes are beside the curb. Generally, the further east you go the better this route is. But the surface is extremely bad in multiple places. The west portion might be the worst bike route in the city. The east has had detours for years due to adjacent construction.",
+      "Flat. The painted lanes are beside the curb. Generally, the further east you go the better this route is. But the surface is extremely bad in multiple places. The west portion might be the worst bike route in the city. The east has had detours for years due to adjacent construction, but it looks like that might be over as of early 2026.",
   },
   kerr: {
     name: "Kerr St",
