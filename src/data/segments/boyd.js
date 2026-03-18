@@ -6,17 +6,17 @@ import {
   BOYD_EB_SPLIT_FOR_HOWES,
   BOYD_EWEN_SE,
   BOYD_EWEN_SW,
+  HOWES_BOYD_NW,
   QUEENSBOROUGH_BOYD_NW,
   QUEENSBOROUGH_BOYD_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
-const OUTLET_MALL_BOYD_N = [49.19077, -122.94725];
+const OUTLET_MALL_BOYD_N = [49.19076, -122.94724];
 const OUTLET_MALL_BOYD_S = [49.19072, -122.94726];
 const DUNCAN_BOYD_NE = [49.19468, -122.93691];
-const HOWES_BOYD_NW = [49.19011, -122.9488];
-const HOWES_BOYD_NE = [49.19023, -122.9485];
+const HOWES_BOYD_NE = [49.19025, -122.94853];
 const WOOD_BOYD_N = [49.19281, -122.94235];
 
 export const BOYD = [
@@ -95,7 +95,7 @@ export const BOYD = [
       [49.18962, -122.94969],
       [49.18974, -122.94955],
       [49.18983, -122.94942],
-      [49.19, -122.94903],
+      [49.19001, -122.94903],
       HOWES_BOYD_NW,
     ],
   },
@@ -113,8 +113,10 @@ export const BOYD = [
     type: "mixed",
     positions: [
       HOWES_BOYD_NE,
-      [49.19029, -122.94843],
-      [49.19073, -122.94739],
+      [49.19044, -122.94807],
+      [49.19051, -122.94797],
+      [49.19059, -122.94778],
+      [49.19061, -122.94767],
       OUTLET_MALL_BOYD_N,
     ],
   },
@@ -124,7 +126,10 @@ export const BOYD = [
     type: "mixed",
     positions: [
       OUTLET_MALL_BOYD_N,
-      [49.19078, -122.94715],
+      [49.19077, -122.94716],
+      [49.19096, -122.94669],
+      [49.19108, -122.94635],
+      [49.19167, -122.94487],
       QUEENSBOROUGH_BOYD_NW,
     ],
   },

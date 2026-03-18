@@ -1,6 +1,7 @@
 import {
   BOYD_EB_JOIN_AFTER_HOWES,
   BOYD_EB_SPLIT_FOR_HOWES,
+  HOWES_BOYD_NW,
   HOWES_DYKE,
   HOWES_EWEN_SE,
   HOWES_EWEN_SW,
@@ -8,7 +9,7 @@ import {
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
-const HOWES_BOYD_SW = [49.18983, -122.9487];
+const HOWES_BOYD_SW = [49.18981, -122.94851];
 const SB_SHOULDER_END = [49.18957, -122.94825];
 const SB_LANE_START = [49.18938, -122.9482];
 const NB_LANE_START = [49.18775, -122.94795];
@@ -16,7 +17,7 @@ const NB_LANE_END = [49.18894, -122.94802];
 
 export const HOWES = [
   {
-    description: "sb: shoulder",
+    description: "sb: slip lane from boyd",
     type: "shoulder",
     oneWay: "required",
     positions: [
@@ -26,6 +27,19 @@ export const HOWES = [
       [49.18964, -122.94935],
       [49.18979, -122.949],
       [49.18982, -122.94887],
+      [49.18983, -122.9487],
+      HOWES_BOYD_SW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.howes.name],
+    description: "sb: crossing boyd",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
+      HOWES_BOYD_NW,
+      [49.18994, -122.94859],
+      [49.1899, -122.94855],
       HOWES_BOYD_SW,
     ],
   },
@@ -36,7 +50,6 @@ export const HOWES = [
     oneWay: "required",
     positions: [
       HOWES_BOYD_SW,
-      [49.18981, -122.94851],
       [49.18979, -122.94844],
       [49.18975, -122.94838],
       [49.18966, -122.9483],
