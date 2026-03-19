@@ -3,6 +3,7 @@ import {
   QUEENSBOROUGH_BOYD_SW,
   QUEENSBOROUGH_STEWARDSON_E,
   QUEENSBOROUGH_STEWARDSON_W,
+  WOOD_BOYD_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
@@ -41,11 +42,7 @@ export const QUEENSBOROUGH_BRIDGE = [
   {
     description: "south end: to wood st",
     type: "mixed",
-    positions: [
-      QUEENSBOROUGH_BOYD_S_SE,
-      [49.19245, -122.9425],
-      [49.1925, -122.94242],
-    ],
+    positions: [QUEENSBOROUGH_BOYD_S_SE, [49.19245, -122.9425], WOOD_BOYD_S],
   },
 
   {

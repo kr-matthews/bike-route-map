@@ -6,18 +6,23 @@ import {
   BOYD_EB_SPLIT_FOR_HOWES,
   BOYD_EWEN_SE,
   BOYD_EWEN_SW,
+  DERWENT_S_DYKE,
   HOWES_BOYD_NW,
   QUEENSBOROUGH_BOYD_NW,
   QUEENSBOROUGH_BOYD_SW,
+  WOOD_BOYD_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
 const OUTLET_MALL_BOYD_N = [49.19076, -122.94724];
 const OUTLET_MALL_BOYD_S = [49.19072, -122.94726];
-const DUNCAN_BOYD_NE = [49.19468, -122.93691];
+const DUNCAN_BOYD_NE = [49.19468, -122.93692];
+const DUNCAN_BOYD_S = [49.19455, -122.93696];
 const HOWES_BOYD_NE = [49.19025, -122.94853];
 const WOOD_BOYD_N = [49.19281, -122.94235];
+const JOHNSTON_BOYD = [49.19439, -122.93755];
+const DERWENT_NB_SHOULDER_END = [49.19141, -122.93311];
 
 export const BOYD = [
   {
@@ -166,15 +171,15 @@ export const BOYD = [
       [49.19455, -122.93813],
       [49.1946, -122.93796],
       [49.19464, -122.93777],
-      [49.19467, -122.93748],
-      [49.19468, -122.93717],
+      [49.19468, -122.93761],
+      [49.19472, -122.93732],
       DUNCAN_BOYD_NE,
     ],
   },
   {
     routeNames: [ROUTES.boydTrail.name],
     description: "duncan",
-    type: "comfortable",
+    type: "mixed",
     positions: [
       DUNCAN_BOYD_NE,
       [49.19472, -122.93692],
@@ -184,10 +189,41 @@ export const BOYD = [
       [49.19514, -122.93599],
       [49.19516, -122.93584],
       [49.19513, -122.93528],
+      [49.1951, -122.93471],
+      [49.19504, -122.93464],
+      [49.195, -122.9338],
     ],
   },
 
   // street
+  {
+    description: "other, quiet boyd",
+    type: "quiet",
+    undesignated: true,
+    positions: [
+      WOOD_BOYD_S,
+      [49.19256, -122.94242],
+      [49.1926, -122.94235],
+      [49.19433, -122.9382],
+      [49.1944, -122.93791],
+      [49.19441, -122.93771],
+      JOHNSTON_BOYD,
+    ],
+  },
+  {
+    description: "boyd to boyd at johnston/duncan",
+    type: "mixed",
+    undesignated: true,
+    positions: [
+      JOHNSTON_BOYD,
+      [49.19451, -122.93752],
+      [49.19454, -122.93749],
+      [49.19455, -122.93739],
+      [49.19454, -122.93712],
+      [49.19453, -122.93701],
+      DUNCAN_BOYD_S,
+    ],
+  },
   {
     routeNames: [ROUTES.boyd.name],
     description: "eb boundary to after howes",
@@ -277,6 +313,12 @@ export const BOYD = [
     ],
   },
   {
+    description: "duncan crossing boyd",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.boydEb.id],
+    positions: [DUNCAN_BOYD_NE, DUNCAN_BOYD_S],
+  },
+  {
     routeNames: [ROUTES.boyd.name],
     description: "eb duncan to ewen",
     type: "painted",
@@ -284,8 +326,7 @@ export const BOYD = [
     videoIds: [ROUTE_VIDEOS.boydEb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.boydEb.id],
     positions: [
-      DUNCAN_BOYD_NE,
-      [49.19455, -122.93694],
+      DUNCAN_BOYD_S,
       [49.19448, -122.93667],
       [49.19439, -122.93639],
       [49.1943, -122.9362],
@@ -295,6 +336,70 @@ export const BOYD = [
       [49.19275, -122.93463],
       [49.19224, -122.93415],
       BOYD_EWEN_SW,
+    ],
+  },
+  {
+    description: "derwent sb",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
+      BOYD_EWEN_SW,
+      [49.19144, -122.93338],
+      [49.19127, -122.93328],
+      [49.19111, -122.93324],
+      [49.19096, -122.93325],
+      [49.19082, -122.93329],
+      [49.19069, -122.93337],
+      [49.19048, -122.93354],
+      [49.19025, -122.93374],
+      [49.19015, -122.93381],
+      [49.18998, -122.93389],
+      [49.18967, -122.93398],
+      [49.18946, -122.934],
+      [49.18916, -122.93399],
+      [49.18879, -122.93393],
+      [49.18847, -122.93384],
+      [49.18811, -122.93365],
+      [49.1876, -122.93331],
+      DERWENT_S_DYKE,
+    ],
+  },
+  {
+    description: "derwent nb - 1",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
+      DERWENT_S_DYKE,
+      [49.18763, -122.93318],
+      [49.18798, -122.93343],
+      [49.18818, -122.93354],
+      [49.18855, -122.93373],
+      [49.18877, -122.93379],
+      [49.18907, -122.93386],
+      [49.18931, -122.93387],
+      [49.18952, -122.93386],
+      [49.18978, -122.93382],
+      [49.19002, -122.93374],
+      [49.19018, -122.93365],
+      [49.19039, -122.93349],
+      [49.19055, -122.93332],
+      [49.19073, -122.93314],
+      [49.19087, -122.93306],
+      [49.19099, -122.93302],
+      [49.19117, -122.93302],
+      [49.1913, -122.93306],
+      DERWENT_NB_SHOULDER_END,
+    ],
+  },
+  {
+    description: "derwent nb - 2",
+    type: "shared",
+    oneWay: "required",
+    positions: [
+      DERWENT_NB_SHOULDER_END,
+      [49.19143, -122.93317],
+      [49.19164, -122.93334],
+      BOYD_EWEN_SE,
     ],
   },
   {
@@ -310,11 +415,11 @@ export const BOYD = [
       [49.19311, -122.93474],
       [49.19382, -122.93545],
       [49.19413, -122.93577],
-      [49.19429, -122.93598],
-      [49.1944, -122.93617],
-      [49.19451, -122.93643],
-      [49.19459, -122.93669],
-      [49.19462, -122.93685],
+      [49.19429, -122.93594],
+      [49.1944, -122.93611],
+      [49.1945, -122.93632],
+      [49.19458, -122.93656],
+      [49.19464, -122.93683],
       DUNCAN_BOYD_NE,
     ],
   },

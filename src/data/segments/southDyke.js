@@ -1,5 +1,6 @@
 import {
   BOUNDARY_DYKE,
+  DERWENT_S_DYKE,
   DOCKSIDE_SOUTH_DYKE,
   HOWES_DYKE,
 } from "../intersections";
@@ -46,7 +47,7 @@ export const SOUTH_DYKE = [
       [49.18688, -122.9338],
       [49.18701, -122.93369],
       [49.18734, -122.93343],
-      [49.18745, -122.93322],
+      DERWENT_S_DYKE,
     ],
   },
 ];
