@@ -636,7 +636,19 @@ export const ROUTES = {
     name: "Byrne Creek Urban Trail",
     shortName: "Byrne Creek Trail",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { westbound: ROUTE_VIDEOS.byrneCreekWb } }],
+    legs: [
+      { videos: { westbound: ROUTE_VIDEOS.byrneCreekWb } },
+      {
+        name: "Connection with BC Parkway via Southridge Dr MUP",
+        videos: {},
+      },
+      {
+        name: "Connection with BC Parkway via Mission Ave/Taylor Park MUP",
+        videos: {
+          southbound: ROUTE_VIDEOS.taylorParkSb,
+        },
+      },
+    ],
     notes:
       "A hill. Unfortunately this doesn't quite connect to Glenlyon Urban Trail at the south end. The path continues, but it's hardly suitable for a bike.",
   },
@@ -1541,7 +1553,14 @@ export const ROUTES = {
   howes: {
     name: "Howes St",
     regions: [REGIONS.newWestminster],
-    legs: [{ videos: { northbound: ROUTE_VIDEOS.howesNb } }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.howesNb,
+          southbound: ROUTE_VIDEOS.howesSb,
+        },
+      },
+    ],
     notes:
       "Very flat. The south half is a nice shared use path, but the north half is terrible. Consider Wood St or Boundary Trail instead.",
   },

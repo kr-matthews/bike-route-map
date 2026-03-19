@@ -16,6 +16,7 @@ const NB_LANE_START = [49.18775, -122.94795];
 const NB_LANE_END = [49.18894, -122.94802];
 
 export const HOWES = [
+  // sb
   {
     description: "sb: slip lane from boyd",
     type: "shoulder",
@@ -36,6 +37,8 @@ export const HOWES = [
     description: "sb: crossing boyd",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.howesSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.howesSb.id],
     positions: [
       HOWES_BOYD_NW,
       [49.18994, -122.94859],
@@ -48,6 +51,7 @@ export const HOWES = [
     description: "sb: shoulder",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.howesSb.id],
     positions: [
       HOWES_BOYD_SW,
       [49.18979, -122.94844],
@@ -61,6 +65,7 @@ export const HOWES = [
     description: "sb: shared",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.howesSb.id],
     positions: [SB_SHOULDER_END, SB_LANE_START],
   },
   {
@@ -68,6 +73,7 @@ export const HOWES = [
     description: "sb: lane",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.howesSb.id],
     positions: [
       SB_LANE_START,
       [49.18919, -122.94822],
@@ -86,6 +92,8 @@ export const HOWES = [
       HOWES_EWEN_SW,
     ],
   },
+
+  // nb
   {
     routeNames: [ROUTES.howes.name],
     description: "nb: shared (was lane 10 years ago)",
@@ -135,12 +143,15 @@ export const HOWES = [
       BOYD_EB_JOIN_AFTER_HOWES,
     ],
   },
+
+  // mup
   {
     routeNames: [ROUTES.howes.name],
     description: "south of ewen",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.howesNb.id],
+    videoIds: [ROUTE_VIDEOS.howesNb.id, ROUTE_VIDEOS.howesSb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.howesNb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.howesSb.id],
     positions: [
       HOWES_DYKE,
       [49.18242, -122.94298],

@@ -20,8 +20,11 @@ export const BYRNE_CREEK = [
     positions: [BYRNE_CREEK_MARINE_SS, BYRNE_CREEK_MARINE_S],
   },
   {
-    description: "mission connection",
+    description: "mission ave/taylor park connection",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.taylorParkSb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.taylorParkSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.taylorParkSb.id],
     positions: [
       BC_PARKWAY_MISSION,
       [49.20571, -122.95845],

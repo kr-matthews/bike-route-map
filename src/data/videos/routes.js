@@ -1122,6 +1122,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Mar 13 2024"),
     minutes: 4,
   },
+  howesSb: {
+    id: "XNwex69kJw4",
+    date: new Date("Mar 13, 2026"),
+    minutes: 4,
+  },
   imperialNb: {
     id: "qjpT_0M2VYE",
     tlId: "85t130QEPFI",
@@ -2137,6 +2142,11 @@ export const ROUTE_VIDEOS = {
   tatlowNb: {
     id: "Davj2dfekgA",
     date: new Date("Dec 23, 2024"),
+    minutes: 2,
+  },
+  taylorParkSb: {
+    id: "ZYRrq2qFXnM",
+    date: new Date("Mar 13, 2026"),
     minutes: 2,
   },
   templetonNb: {
