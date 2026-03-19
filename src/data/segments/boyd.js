@@ -67,8 +67,11 @@ export const BOYD = [
     routeNames: [ROUTES.boydTrail.name],
     description: "boundary to howes",
     type: "comfortable",
-    videoIds: [ROUTE_VIDEOS.boydTrailWb.id],
-    videoIdsEndAtStart: [ROUTE_VIDEOS.boydTrailWb.id],
+    videoIds: [ROUTE_VIDEOS.boydTrailWb26.id, ROUTE_VIDEOS.boydTrailWb.id],
+    videoIdsEndAtStart: [
+      ROUTE_VIDEOS.boydTrailWb26.id,
+      ROUTE_VIDEOS.boydTrailWb.id,
+    ],
     positions: [
       BOUNDARY_WESTMINSTER_NE,
       [49.18399, -122.95681],
@@ -108,7 +111,7 @@ export const BOYD = [
     routeNames: [ROUTES.boydTrail.name],
     description: "crossing howes",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.boydTrailWb.id],
+    videoIds: [ROUTE_VIDEOS.boydTrailWb26.id, ROUTE_VIDEOS.boydTrailWb.id],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.boydTrailWb.id],
     positions: [HOWES_BOYD_NW, HOWES_BOYD_NE],
   },
@@ -116,6 +119,7 @@ export const BOYD = [
     routeNames: [ROUTES.boydTrail.name],
     description: "howes to outlet mall",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.boydTrailWb26.id],
     positions: [
       HOWES_BOYD_NE,
       [49.19044, -122.94807],
@@ -129,6 +133,7 @@ export const BOYD = [
     routeNames: [ROUTES.boydTrail.name],
     description: "outlet mall to bridge",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.boydTrailWb26.id],
     positions: [
       OUTLET_MALL_BOYD_N,
       [49.19077, -122.94716],
@@ -144,6 +149,7 @@ export const BOYD = [
     type: "comfortable",
     videoIds: [
       ROUTE_VIDEOS.queensboroughBridgeNb.id,
+      ROUTE_VIDEOS.boydTrailWb26.id,
       ROUTE_VIDEOS.boydWb.id,
       ROUTE_VIDEOS.boydEb.id,
     ],
@@ -161,7 +167,11 @@ export const BOYD = [
     routeNames: [ROUTES.boydTrail.name],
     description: "bridge to duncan 2",
     type: "comfortable",
-    videoIds: [ROUTE_VIDEOS.boydWb.id, ROUTE_VIDEOS.boydEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.boydTrailWb26.id,
+      ROUTE_VIDEOS.boydWb.id,
+      ROUTE_VIDEOS.boydEb.id,
+    ],
     positions: [
       WOOD_BOYD_N,
       [49.19316, -122.94159],
@@ -180,6 +190,8 @@ export const BOYD = [
     routeNames: [ROUTES.boydTrail.name],
     description: "duncan",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.boydTrailWb26.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.boydTrailWb26.id],
     positions: [
       DUNCAN_BOYD_NE,
       [49.19472, -122.93692],

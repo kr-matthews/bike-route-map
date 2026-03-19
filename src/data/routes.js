@@ -537,6 +537,11 @@ export const ROUTES = {
     regions: [REGIONS.newWestminster],
     legs: [
       {
+        videos: {
+          westbound: ROUTE_VIDEOS.boydTrailWb26,
+        },
+      },
+      {
         name: "Before rebuild between Howes St & Queensborough Bridge",
         videos: {
           westbound: ROUTE_VIDEOS.boydTrailWb,

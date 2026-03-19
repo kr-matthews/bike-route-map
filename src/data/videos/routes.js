@@ -270,6 +270,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Mar 13 2024"),
     minutes: 4,
   },
+  boydTrailWb26: {
+    id: "dC1Du8hLPyM",
+    tlId: "AOOUAE8kBxQ",
+    date: new Date("Mar 13 2026"),
+    minutes: 7,
+  },
   bridgeportTrailEb: {
     id: "isnLEyAJyPo",
     date: new Date("Feb 12 2024"),
