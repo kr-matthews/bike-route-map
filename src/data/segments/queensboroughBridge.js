@@ -26,13 +26,14 @@ export const QUEENSBOROUGH_BRIDGE = [
     videoIds: [
       ROUTE_VIDEOS.queensboroughBridgeNb.id,
       ROUTE_VIDEOS.queensboroughBridgeSb.id,
+      ROUTE_VIDEOS.boydEb26.id,
     ],
     positions: [QUEENSBOROUGH_BOYD_SW, QUEENSBOROUGH_BOYD_S_SW],
   },
   {
     description: "under south end",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.queensboroughBridgeNb.id],
+    videoIds: [ROUTE_VIDEOS.queensboroughBridgeNb.id, ROUTE_VIDEOS.boydEb26.id],
     positions: [
       QUEENSBOROUGH_BOYD_S_SW,
       [49.19237, -122.94263],
@@ -42,6 +43,7 @@ export const QUEENSBOROUGH_BRIDGE = [
   {
     description: "south end: to wood st",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.boydEb26.id],
     positions: [QUEENSBOROUGH_BOYD_S_SE, [49.19245, -122.9425], WOOD_BOYD_S],
   },
 

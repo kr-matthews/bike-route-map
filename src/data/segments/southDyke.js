@@ -7,6 +7,8 @@ import {
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
+const PEMBINA_S_DYKE = [49.18701, -122.93369];
+
 export const SOUTH_DYKE = [
   {
     routeNames: [ROUTES.southDyke.name],
@@ -24,10 +26,9 @@ export const SOUTH_DYKE = [
   },
   {
     routeNames: [ROUTES.southDyke.name],
-    description: "east of dockside",
+    description: "dockside to pembina",
     type: "quiet",
     videoIds: [ROUTE_VIDEOS.southDykeEb.id],
-    videoIdsEndAtEnd: [ROUTE_VIDEOS.southDykeEb.id],
     positions: [
       DOCKSIDE_SOUTH_DYKE,
       [49.17769, -122.95409],
@@ -45,9 +46,21 @@ export const SOUTH_DYKE = [
       [49.18553, -122.93557],
       [49.18632, -122.93444],
       [49.18688, -122.9338],
-      [49.18701, -122.93369],
-      [49.18734, -122.93343],
-      DERWENT_S_DYKE,
+      PEMBINA_S_DYKE,
     ],
+  },
+  {
+    routeNames: [ROUTES.southDyke.name],
+    description: "pembina to derwent",
+    type: "quiet",
+    videoIds: [
+      ROUTE_VIDEOS.boydWb26.id,
+      ROUTE_VIDEOS.southDykeEb.id,
+      ROUTE_VIDEOS.boydEb26.id,
+    ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.boydWb26.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.boydEb26.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.southDykeEb.id],
+    positions: [PEMBINA_S_DYKE, [49.18734, -122.93343], DERWENT_S_DYKE],
   },
 ];
