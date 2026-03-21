@@ -385,4 +385,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.20806, -122.91651],
     region: REGIONS.newWestminster,
   },
+  boydTrailWb26: {
+    id: "NDx5qv__qrs",
+    title: "Boyd St Trail",
+    routeNames: [ROUTES.boydTrail.name],
+    direction: "westbound",
+    date: new Date("Mar 13 2026"),
+    minutes: 2,
+    position: [49.19131, -122.94585],
+    region: REGIONS.newWestminster,
+  },
 };
