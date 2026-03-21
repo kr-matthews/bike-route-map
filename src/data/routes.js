@@ -1126,9 +1126,16 @@ export const ROUTES = {
   ewen: {
     name: "Ewen Ave Greenway",
     regions: [REGIONS.newWestminster],
-    legs: [{ videos: { westbound: ROUTE_VIDEOS.ewenWb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.ewenEb,
+          westbound: ROUTE_VIDEOS.ewenWb,
+        },
+      },
+    ],
     notes:
-      "Very flat shared use path. Sometimes there are large poles awkwardly in the middle of the path.",
+      "Very flat shared use path. Often there are large poles awkwardly in the middle of the path.",
   },
   ferguson: {
     name: "Ferguson Rd",

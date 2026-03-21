@@ -702,6 +702,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Oct 17 2024"),
     minutes: 1,
   },
+  ewenEb: {
+    id: "1zBOc4vSFUc",
+    tlId: "7XnjtIisZUY",
+    date: new Date("Mar 13 2026"),
+    minutes: 8,
+  },
   ewenWb: {
     id: "-7uHis88EXU",
     date: new Date("Mar 13 2024"),
