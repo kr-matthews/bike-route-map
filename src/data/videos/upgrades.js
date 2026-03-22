@@ -395,4 +395,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.19131, -122.94585],
     region: REGIONS.newWestminster,
   },
+  kentUppalWb26: {
+    id: "POTnr5410as",
+    title: "Kent @ Kinross",
+    routeNames: [ROUTES.kent.name],
+    direction: "westbound",
+    date: new Date("Mar 13 2026"),
+    minutes: 1,
+    position: [49.20591, -123.03517],
+    region: REGIONS.vancouver,
+  },
 };
