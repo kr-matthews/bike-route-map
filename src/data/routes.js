@@ -9,7 +9,7 @@ import { ROUTE_VIDEOS } from "./videos/routes";
 // Richmond: south dyke; ...and around steveston
 // YVR:
 // New Westminster:
-// North Vancouver (city): e keith; w keith/13th; larson/16th; 29th; grand blvd/lynn valley
+// North Vancouver (city): w keith/13th; larson/16th; 29th; grand blvd/lynn valley
 // North Vancouver (district): dollarton; mt seymour;
 // West Vancouver: spirit trail alt.?; ...more
 // Surrey: scott rd; serpentine; timbers; fraser hwy;
@@ -1090,6 +1090,14 @@ export const ROUTES = {
     legs: [{ videos: { westbound: ROUTE_VIDEOS.lionsGateBridgeNb } }],
     notes:
       "Uncomfortable, one-way downhill route. The painted lane is mostly beside parked cars. The city is planning on replacing this with an extension of the separated lane on Dunsmuir, via Melville, Jervis, Hastings, and Broughton - which will no longer connect to Georgia.",
+  },
+  eKeith: {
+    name: "E Keith Rd",
+    regions: [REGIONS.northVancouver],
+    isIncomplete: true,
+    legs: [{ videos: {} }],
+    notes:
+      "A painted lane between moving and parked cars. There are also bike lanes further east on E Keith Rd, around Mountain Hwy.",
   },
   eastMall: {
     name: "East Mall",

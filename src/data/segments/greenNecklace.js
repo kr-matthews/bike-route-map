@@ -1,8 +1,10 @@
 import {
   GRAND_BLVD_W_17TH_E,
   GRAND_BLVD_W_KEITH_NE,
+  GRAND_BLVD_W_KEITH_NW,
   JONES_KEITH_SE_S,
   ST_ANDREWS_23RD_N,
+  ST_ANDREWS_KEITH_N_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
@@ -19,6 +21,7 @@ export const GREEN_NECKLACE = [
     type: "mixed",
     positions: [
       GRAND_BLVD_W_KEITH_NE,
+      GRAND_BLVD_W_KEITH_NW,
       [49.31361, -123.05798],
       [49.31362, -123.05885],
       [49.3136, -123.05893],
@@ -30,6 +33,7 @@ export const GREEN_NECKLACE = [
       [49.31427, -123.06701],
       [49.31429, -123.06709],
       [49.31441, -123.06739],
+      ST_ANDREWS_KEITH_N_W,
       [49.31435, -123.06748],
       [49.31435, -123.06757],
       [49.31443, -123.06781],

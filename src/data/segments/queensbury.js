@@ -1,5 +1,6 @@
 import {
   GRAND_BLVD_W_KEITH_NE,
+  GRAND_BLVD_W_KEITH_SE,
   QUEENSBURY_3RD_NE,
   QUEENSBURY_3RD_NW,
   QUEENSBURY_3RD_SE,
@@ -16,19 +17,10 @@ const QUEENSBURY_7TH_W = [49.31249, -123.05721];
 const QUEENSBURY_KEITH_SE = [49.31343, -123.05706];
 const QUEENSBURY_KEITH_SW = [49.31343, -123.05721];
 
-const GRAND_BLVD_W_KEITH_S_W = [49.31346, -123.0581];
-const GRAND_BLVD_W_KEITH_SE = [49.31346, -123.05765];
 const GRAND_BLVD_E_KEITH_SW = [49.31344, -123.05667];
 
 export const QUEENSBURY = [
   // keith
-  {
-    // this is e keith
-    description: "keith s side, w of w",
-    type: "mixed",
-    oneWay: "required",
-    positions: [GRAND_BLVD_W_KEITH_S_W, GRAND_BLVD_W_KEITH_SE],
-  },
   {
     description: "keith s side, w to queensbury and crossing",
     type: "mixed",
