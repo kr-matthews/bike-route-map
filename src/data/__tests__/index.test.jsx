@@ -48,9 +48,9 @@ const routeVideoIds = [
   ...new Set(
     Object.values(ROUTES).flatMap((route) =>
       route.legs.flatMap((leg) =>
-        Object.values(leg.videos).map((video) => video.id)
-      )
-    )
+        Object.values(leg.videos).map((video) => video.id),
+      ),
+    ),
   ),
 ];
 
@@ -75,13 +75,13 @@ describe("data", () => {
     describe(`(${getARouteName(videoId)})`, () => {
       test(`has 1 start marker and 1 end marker OR 1 seam marker`, () => {
         const startMarkers = startMarkerIds.filter(
-          (startId) => startId === videoId
+          (startId) => startId === videoId,
         ).length;
         const endMarkers = endMarkerIds.filter(
-          (startId) => startId === videoId
+          (startId) => startId === videoId,
         ).length;
         const seamMarkers = seamMarkerIds.filter(
-          (startId) => startId === videoId
+          (startId) => startId === videoId,
         ).length;
 
         if (seamMarkers > 0) {
@@ -93,7 +93,7 @@ describe("data", () => {
 
       test(`each un-marked seam has a match`, () => {
         const seams = SEGMENTS.filter((segment) =>
-          segment.videoIds?.includes(videoId)
+          segment.videoIds?.includes(videoId),
         ).flatMap((segment) => {
           let segmentSeams = [];
           if (
@@ -118,7 +118,7 @@ describe("data", () => {
         const unmatchedSeams = seams.filter(
           (seam) =>
             seams.filter((s) => positionsMatch(seam, s)).length !== 2 &&
-            !EXCEPTIONAL_SEAMS.some((s) => positionsMatch(seam, s))
+            !EXCEPTIONAL_SEAMS.some((s) => positionsMatch(seam, s)),
         );
 
         expect(unmatchedSeams).toHaveLength(0);
@@ -143,12 +143,12 @@ describe("data", () => {
       test(`has region`, () => {
         expect(upgrade.region).toBeTruthy();
       });
-    }
+    },
   );
 
   test("no unused route videos", () => {
     const unusedRouteVideos = Object.values(ROUTE_VIDEOS).filter(
-      (video) => !routeVideoIds.includes(video.id)
+      (video) => !routeVideoIds.includes(video.id),
     );
     expect(unusedRouteVideos).toHaveLength(0);
   });
@@ -173,7 +173,7 @@ describe("data", () => {
 
   test("time-lapse ids are distinct from corresponding id", () => {
     Object.values(ROUTE_VIDEOS).forEach(({ id, tlId }) =>
-      expect(id).not.toEqual(tlId)
+      expect(id).not.toEqual(tlId),
     );
   });
 });
