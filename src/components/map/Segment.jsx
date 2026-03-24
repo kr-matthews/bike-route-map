@@ -1,4 +1,4 @@
-import { Fragment, useContext, useMemo } from "react";
+import { Fragment, useContext, useEffect, useMemo } from "react";
 import Polyline from "./Polyline";
 import EndpointMarkers from "./EndpointMarkers";
 import { FilterContext } from "../../App";
@@ -16,6 +16,7 @@ export default function Segment({
   segment,
   createBorderPathOptions = defaultCreateBorderPathOptions,
   createPathOptions = defaultCreatePathOptions,
+  mapRef,
 }) {
   const {
     routeNames,
@@ -25,6 +26,7 @@ export default function Segment({
     hideArrows,
     positions,
     type,
+    debug,
   } = segment;
   // for main map, this gets the 'real' filter context,
   //  for the demo map, the demo hook provides its own modified values,
@@ -87,9 +89,25 @@ export default function Segment({
   );
 
   const isSelected = (routeNames ?? []).includes(selectedRoute?.name);
-  const isHighlighted = (routeNames ?? []).includes(highlightedRoute?.name);
+  const isHighlighted =
+    debug || (routeNames ?? []).includes(highlightedRoute?.name);
   const otherIsHighlighted = highlightedRoute?.name && !isHighlighted;
   const hasActiveVideo = videoIds?.includes(selectedVideo?.id);
+
+  useEffect(
+    function zoomToDebug() {
+      const onKeyDown = async (e) => {
+        if (e.ctrlKey && e.altKey && e.key === "z") {
+          if (debug && mapRef) {
+            mapRef.fitBounds(positions);
+          }
+        }
+      };
+      document.addEventListener("keydown", onKeyDown);
+      return () => document.removeEventListener("keydown", onKeyDown);
+    },
+    [debug, mapRef, positions],
+  );
 
   const polylineProps = useMemo(
     () => ({

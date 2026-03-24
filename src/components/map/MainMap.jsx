@@ -31,7 +31,7 @@ export default function MainMap({ mapRef, setMapRef, fullWidth = false }) {
       document.addEventListener("keydown", onKeyDown);
       return () => document.removeEventListener("keydown", onKeyDown);
     },
-    [selectRoute]
+    [selectRoute],
   );
 
   return (
@@ -59,6 +59,7 @@ export default function MainMap({ mapRef, setMapRef, fullWidth = false }) {
           <Segment
             key={segment.routeNames?.join(",") + "|" + segment.description}
             segment={segment}
+            mapRef={mapRef}
           />
         ))}
 
