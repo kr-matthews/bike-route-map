@@ -219,6 +219,7 @@ import { UNIVERSITY_DR_E } from "./universityDrE";
 import { UPTOWN_DOWNTOWN } from "./uptown";
 import { VALLEY } from "./valley";
 import { VICTORY } from "./victory";
+import { W_KEITH_13TH } from "./wKeith13th";
 import { WALES_DUCHESS } from "./walesDuchess";
 import { WATER } from "./water";
 import { WATERFRONT } from "./waterfront";
@@ -459,6 +460,7 @@ export const SEGMENTS = [
   ...UPTOWN_DOWNTOWN,
   ...VALLEY,
   ...VICTORY,
+  ...W_KEITH_13TH,
   ...WALES_DUCHESS,
   ...WATER,
   ...WATERFRONT,

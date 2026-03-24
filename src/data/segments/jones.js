@@ -1,4 +1,9 @@
-import { JONES_17TH, JONES_24TH, MAHON_4TH } from "../intersections";
+import {
+  JONES_17TH,
+  JONES_24TH,
+  JONES_KEITH_S,
+  MAHON_4TH,
+} from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
@@ -6,7 +11,6 @@ const MAHON_6TH_S = [49.31862, -123.0807];
 const MAHON_6TH_N = [49.31867, -123.08065];
 const JONES_6TH_N = [49.31915, -123.08176];
 const JOIN_6TH = [49.31893, -123.08143];
-const KEITH_JONES_S = [49.31985, -123.08174];
 const JONES_23RD = [49.33035, -123.08149];
 const JONES_HWY_S_S = [49.3318, -123.08145];
 const JONES_HWY_S = [49.33188, -123.08153];
@@ -59,14 +63,14 @@ export const JONES = [
     routeNames: [ROUTES.jonesMahon.name],
     description: "jones, s of keith",
     type: "quiet",
-    positions: [JONES_6TH_N, [49.31982, -123.08174], KEITH_JONES_S],
+    positions: [JONES_6TH_N, [49.31982, -123.08174], JONES_KEITH_S],
   },
   {
     routeNames: [ROUTES.jonesMahon.name],
     description: "keith to 23rd",
     type: "shared",
     positions: [
-      KEITH_JONES_S,
+      JONES_KEITH_S,
       [49.32331, -123.08165],
       JONES_17TH,
       [49.32831, -123.08153],

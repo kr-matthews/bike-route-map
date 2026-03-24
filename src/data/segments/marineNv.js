@@ -1,5 +1,6 @@
 import {
   BEWICKE_3RD_S,
+  BEWICKE_MARINE_NW,
   BEWICKE_THIRD_NE,
   CAPILANO_MARINE_NW,
   FORBES_3RD_N,
@@ -242,7 +243,7 @@ export const MARINE_NV = [
     positions: [
       BEWICKE_THIRD_NE,
       [49.3201, -123.09135],
-      [49.32018, -123.09149],
+      BEWICKE_MARINE_NW,
       [49.32023, -123.09167],
       [49.32028, -123.09182],
       [49.32067, -123.09293],

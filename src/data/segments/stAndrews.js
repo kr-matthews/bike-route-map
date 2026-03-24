@@ -1,5 +1,6 @@
 import {
   ESPLANADE_WB_MERGE,
+  ST_ANDREWS_13TH,
   ST_ANDREWS_17TH,
   ST_ANDREWS_23RD_N,
   ST_ANDREWS_3RD,
@@ -13,7 +14,6 @@ import { ROUTES } from "../routes";
 const ST_ANDREWS_ESPLANADE_N = [49.30854, -123.07329];
 const ST_ANDREWS_KEITH_NW = [49.31438, -123.06728];
 const ST_ANDREWS_13TH_SE = [49.31985, -123.06611];
-const ST_ANDREWS_13TH_N = [49.31997, -123.06616];
 
 export const ST_ANDREWS = [
   {
@@ -81,7 +81,7 @@ export const ST_ANDREWS = [
       [49.31691, -123.06617],
       [49.31795, -123.06616],
       ST_ANDREWS_13TH_SE,
-      ST_ANDREWS_13TH_N,
+      ST_ANDREWS_13TH,
     ],
   },
   {
@@ -90,8 +90,8 @@ export const ST_ANDREWS = [
     type: "quiet",
     oneWay: "recommended",
     positions: [
-      ST_ANDREWS_13TH_N,
-      [49.31988, -123.06622],
+      ST_ANDREWS_13TH,
+      [49.31985, -123.06622],
       [49.31682, -123.06628],
       [49.3155, -123.0663],
       [49.31539, -123.06632],
@@ -117,6 +117,6 @@ export const ST_ANDREWS = [
     routeNames: [ROUTES.stAndrews.name],
     description: "13th to 23rd/necklace",
     type: "quiet",
-    positions: [ST_ANDREWS_13TH_N, ST_ANDREWS_17TH, ST_ANDREWS_23RD_N],
+    positions: [ST_ANDREWS_13TH, ST_ANDREWS_17TH, ST_ANDREWS_23RD_N],
   },
 ];

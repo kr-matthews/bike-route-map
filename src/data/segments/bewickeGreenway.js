@@ -1,6 +1,7 @@
 import {
   BEWICKE_3RD_S,
   BEWICKE_KEITH_SE,
+  BEWICKE_KEITH_SE_N,
   BEWICKE_MOSQUITO_CREEK_N,
   BEWICKE_MOSQUITO_CREEK_S,
   BEWICKE_SPIRIT_N,
@@ -15,7 +16,7 @@ export const BEWICKE_GREENWAY = [
   // connection to green necklace
   {
     description: "keith MUP",
-    type: "comfortable",
+    type: "mixed",
     positions: [
       BEWICKE_KEITH_SE,
       [49.3199, -123.0905],
@@ -79,6 +80,7 @@ export const BEWICKE_GREENWAY = [
     positions: [
       BEWICKE_THIRD_NE,
       BEWICKE_KEITH_SE,
+      BEWICKE_KEITH_SE_N,
       [49.32005, -123.09117],
       [49.32013, -123.0912],
       [49.32023, -123.09123],

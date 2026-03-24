@@ -1,4 +1,5 @@
 import {
+  CHESTERFIELD_13TH_N,
   CHESTERFIELD_13TH_S,
   CHESTERFIELD_17TH,
   CHESTERFIELD_3RD_E,
@@ -178,6 +179,7 @@ export const CHESTERFIELD = [
     videoIds: [ROUTE_VIDEOS.chesterfieldNb.id],
     positions: [
       CHESTERFIELD_13TH_S,
+      CHESTERFIELD_13TH_N,
       CHESTERFIELD_17TH,
       [49.32842, -123.07534], // 21st (necklace)
       CHESTERFIELD_23RD,
