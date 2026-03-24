@@ -176,4 +176,9 @@ describe("data", () => {
       expect(id).not.toEqual(tlId),
     );
   });
+
+  test("no debug segments", () => {
+    const debugSegments = SEGMENTS.filter((segment) => segment.debug);
+    expect(debugSegments).toHaveLength(0);
+  });
 });
