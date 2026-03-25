@@ -1,11 +1,12 @@
 import {
-  BARNET_ST_JOHN_SW,
+  BARNET_ST_JOHNS_SW,
   MOODY_OVERPASS_MURRAY_NE,
   MOODY_ST_JOHNS_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
+const QUEENS_ST_JOHNS = [49.27662, -122.85865];
 const MOODY_ST_JOHNS_SE = [49.27657, -122.85002];
 const MOODY_BRIDGE_S = [49.2779, -122.85008];
 const MOODY_BRIDGE_N = [49.27914, -122.85007];
@@ -71,18 +72,27 @@ export const ST_JOHNS = [
 
   {
     routeNames: [ROUTES.stJohns.name],
-    description: "primary",
-    type: "comfortable",
+    description: "barnet to queens",
+    type: "mixed",
     videoIds: [ROUTE_VIDEOS.stJohnsWb.id, ROUTE_VIDEOS.stJohnsEb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.stJohnsEb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.stJohnsWb.id],
     positions: [
-      BARNET_ST_JOHN_SW,
+      BARNET_ST_JOHNS_SW,
       [49.27653, -122.86665],
       [49.27652, -122.86568],
       [49.27654, -122.86422],
       [49.27658, -122.86174],
-      [49.27662, -122.85865],
+      QUEENS_ST_JOHNS,
+    ],
+  },
+  {
+    routeNames: [ROUTES.stJohns.name],
+    description: "queens to moody",
+    type: "dedicated",
+    videoIds: [ROUTE_VIDEOS.stJohnsWb.id, ROUTE_VIDEOS.stJohnsEb.id],
+    positions: [
+      QUEENS_ST_JOHNS,
       [49.27661, -122.85659],
       [49.2766, -122.85465],
       [49.27659, -122.85243],
@@ -92,7 +102,7 @@ export const ST_JOHNS = [
   {
     routeNames: [ROUTES.stJohns.name],
     description: "east half-crosswalk",
-    type: "comfortable",
+    type: "mixed",
     videoIds: [
       ROUTE_VIDEOS.stJohnsWb.id,
       ROUTE_VIDEOS.gatensburySb.id,

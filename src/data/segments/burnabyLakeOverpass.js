@@ -6,7 +6,7 @@ const W_OF_OVERPASS = [49.24151, -122.959];
 export const BURNABY_LAKE_OVERPASS = [
   {
     description: "sprott to roberts",
-    type: "comfortable",
+    type: "mixed",
     positions: [
       SPERLING_SPROTT,
       [49.24992, -122.96447],

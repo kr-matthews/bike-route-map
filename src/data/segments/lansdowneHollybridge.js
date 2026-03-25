@@ -25,7 +25,7 @@ export const LANSDOWNE_HOLLYBRIDGE = [
   {
     routeNames: [ROUTES.lansdowneHollybridge.name],
     description: "hollybridge & lansdowne",
-    type: "comfortable",
+    type: "mixed", // 1 block is combined (or dedicated?)
     positions: [
       HOLLYBRIDGE_MIDDLE_ARM_E,
       [49.17665, -123.14981],

@@ -83,13 +83,17 @@ export const GRANVILLE_CONNECTOR = [
 
   // n end
   {
-    description: "neon & rolston",
-    type: "comfortable",
+    description: "neon",
+    type: "dedicated",
+    videoIds: [ROUTE_VIDEOS.granvilleConnectorNb.id],
+    positions: [GRANVILLE_NEON_N, [49.27538, -123.12795], ROLSTON_NEON_NE],
+  },
+  {
+    description: "rolston",
+    type: "combined",
     videoIds: [ROUTE_VIDEOS.granvilleConnectorNb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.granvilleConnectorNb.id],
     positions: [
-      GRANVILLE_NEON_N,
-      [49.27538, -123.12795],
       ROLSTON_NEON_NE,
       [49.27531, -123.12785],
       [49.27526, -123.1279],
@@ -99,7 +103,7 @@ export const GRANVILLE_CONNECTOR = [
   },
   {
     description: "rolston crossing pacific",
-    type: "comfortable",
+    type: "dedicated",
     positions: [ROLSTON_PACIFIC_E, ROLSTON_PACIFIC_S],
   },
   {

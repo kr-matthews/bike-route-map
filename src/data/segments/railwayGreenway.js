@@ -27,7 +27,7 @@ const RAILWAY_GREENWAY_GARRY_N = [49.1294, -123.16999];
 export const RAILWAY_GREENWAY = [
   {
     description: "pre-mccallan split",
-    type: "comfortable",
+    type: "mixed",
     positions: [
       MCCALLAN_WESTMINSTER_SW_S,
       [49.17006, -123.17013],
@@ -107,13 +107,13 @@ export const RAILWAY_GREENWAY = [
   {
     routeNames: [ROUTES.railwayGreenway.name],
     description: "crossing garry",
-    type: "comfortable",
+    type: "mixed",
     videoIds: [ROUTE_VIDEOS.railwayGreenwayNb.id],
     positions: [RAILWAY_GREENWAY_GARRY_S, RAILWAY_GREENWAY_GARRY_N],
   },
   {
     description: "road to greenway at garry",
-    type: "comfortable",
+    type: "mixed",
     undesignated: true,
     videoIds: [ROUTE_VIDEOS.railwayGreenwaySb.id],
     positions: [RAILWAY_GARRY_NW, RAILWAY_GREENWAY_GARRY_N],
@@ -121,7 +121,7 @@ export const RAILWAY_GREENWAY = [
   {
     routeNames: [ROUTES.railwayGreenway.name],
     description: "primary",
-    type: "comfortable",
+    type: "mixed",
     videoIds: [
       ROUTE_VIDEOS.railwayGreenwayNb.id,
       ROUTE_VIDEOS.railwayGreenwaySb.id,

@@ -22,6 +22,7 @@ const HIGHWAY_BRIDGEWAY_MIDDLE = [49.28375, -123.03178];
 const HIGHWAY_BRIDGEWAY_N = [49.28379, -123.03209];
 const HIGHWAY_BRIDGEWAY_S = [49.28366, -123.03207];
 const HIGHWAY_BRIDGEWAY_SE = [49.28357, -123.03132];
+const PANDORA_EXTENSION_END = [49.28299, -123.0423];
 
 export const HASTINGS_PARK = [
   {
@@ -52,7 +53,7 @@ export const HASTINGS_PARK = [
   {
     routeNames: [ROUTES.hastingsPark.name],
     description: "fields west",
-    type: "mixed",
+    type: "dedicated",
     videoIds: [
       ROUTE_VIDEOS.hastingsWindermerePortside.id,
       ROUTE_VIDEOS.hastingsPortsideWindermere.id,
@@ -156,7 +157,7 @@ export const HASTINGS_PARK = [
   {
     routeNames: [ROUTES.hastingsPark.name],
     description: "overlap near bike track",
-    type: "comfortable",
+    type: "dedicated",
     videoIds: [
       ROUTE_VIDEOS.hastingsWindermerePortside.id,
       ROUTE_VIDEOS.hastingsPortsideWindermere.id,
@@ -167,7 +168,7 @@ export const HASTINGS_PARK = [
   {
     routeNames: [ROUTES.hastingsPark.name],
     description: "bridgewater path",
-    type: "comfortable",
+    type: "combined", // some is dedicated technically
     videoIds: [
       ROUTE_VIDEOS.hastingsPortsideWindermere.id,
       ROUTE_VIDEOS.hastingsWindermerePortside.id,
@@ -280,7 +281,7 @@ export const HASTINGS_PARK = [
   {
     routeNames: [ROUTES.hastingsPark.name],
     description: "miller east",
-    type: "comfortable",
+    type: "combined",
     videoIds: [ROUTE_VIDEOS.hastingsCassiarPandora.id],
     positions: [
       MILLER_MIDDLE,
@@ -300,7 +301,7 @@ export const HASTINGS_PARK = [
   {
     routeNames: [ROUTES.hastingsPark.name],
     description: "miller west",
-    type: "comfortable",
+    type: "combined",
     positions: [
       [49.28475, -123.04402],
       [49.28471, -123.0439],
@@ -318,13 +319,19 @@ export const HASTINGS_PARK = [
   },
   {
     routeNames: [ROUTES.hastingsPark.name],
-    description: "pandora",
-    type: "comfortable",
+    description: "pandora extension lane",
+    type: "dedicated",
     videoIds: [ROUTE_VIDEOS.hastingsCassiarPandora.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.hastingsCassiarPandora.id],
+    positions: [RENFREW_PANDORA, PANDORA_EXTENSION_END],
+  },
+  {
+    routeNames: [ROUTES.hastingsPark.name],
+    description: "pandora to miller",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.hastingsCassiarPandora.id],
     positions: [
-      RENFREW_PANDORA,
-      [49.28299, -123.0423],
+      PANDORA_EXTENSION_END,
       [49.28297, -123.04225],
       [49.28297, -123.04213],
       [49.28331, -123.0418],
@@ -389,7 +396,7 @@ export const HASTINGS_PARK = [
   {
     routeNames: [ROUTES.hastingsPark.name],
     description: "to bridgeway nb",
-    type: "comfortable",
+    type: "dedicated",
     oneWay: "recommended",
     hideArrows: true,
     positions: [

@@ -289,7 +289,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "eb: pre brunette fraser overpass",
-    type: "dedicated",
+    type: "combined",
     oneWay: "required",
     elevation: 0.5,
     videoIds: [ROUTE_VIDEOS.lougheedEb.id],
@@ -315,7 +315,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "eb: post brunette fraser overpass",
-    type: "dedicated",
+    type: "mixed",
     oneWay: "required",
     elevation: 0.5,
     videoIds: [ROUTE_VIDEOS.lougheedEb.id],
@@ -324,7 +324,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "eb: brunette fraser overpass to austin",
-    type: "comfortable",
+    type: "combined", // 1 bit of mixed
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.lougheedEb.id],
     positions: [
@@ -652,7 +652,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "wb: austin to brunette fraser overpass",
-    type: "comfortable",
+    type: "combined",
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.lougheedWb.id],
     positions: [
@@ -683,7 +683,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "wb: pre brunette fraser overpass",
-    type: "dedicated",
+    type: "mixed",
     oneWay: "required",
     elevation: 0.5,
     videoIds: [ROUTE_VIDEOS.lougheedWb.id],
@@ -705,7 +705,7 @@ export const LOUGHEED = [
   {
     routeNames: [ROUTES.lougheed.name],
     description: "wb: post brunette fraser overpass",
-    type: "dedicated",
+    type: "combined",
     oneWay: "required",
     elevation: 0.5,
     videoIds: [ROUTE_VIDEOS.lougheedWb.id],

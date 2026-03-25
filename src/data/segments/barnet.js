@@ -25,7 +25,7 @@ export const BARNET = [
   {
     routeNames: [ROUTES.barnet.name],
     description: "crossing barnet at view",
-    type: "comfortable",
+    type: "mixed",
     videoIds: [ROUTE_VIDEOS.barnetWb.id],
     positions: [
       BARNET_VIEW_NW,

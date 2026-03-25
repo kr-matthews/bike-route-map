@@ -136,7 +136,7 @@ export const SEA_ISLAND_WAY = [
   {
     routeNames: [ROUTES.seaIslandWay.name],
     description: "river to no 3",
-    type: "comfortable",
+    type: "mixed",
     oneWay: "required",
     videoIds: [
       ROUTE_VIDEOS.seaIslandWayEb25.id,

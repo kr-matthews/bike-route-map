@@ -35,7 +35,7 @@ export const BOYD = [
   },
   {
     description: "through outlet mall",
-    type: "comfortable",
+    type: "combined",
     positions: [
       OUTLET_MALL_BOYD_N,
       [49.1908, -122.9473],
@@ -73,7 +73,7 @@ export const BOYD = [
   {
     routeNames: [ROUTES.boydTrail.name],
     description: "boundary to howes",
-    type: "comfortable",
+    type: "mixed",
     videoIds: [ROUTE_VIDEOS.boydTrailWb26.id, ROUTE_VIDEOS.boydTrailWb.id],
     videoIdsEndAtStart: [
       ROUTE_VIDEOS.boydTrailWb26.id,
@@ -153,7 +153,7 @@ export const BOYD = [
   {
     routeNames: [ROUTES.boydTrail.name],
     description: "bridge to duncan 1",
-    type: "comfortable",
+    type: "mixed",
     videoIds: [
       ROUTE_VIDEOS.queensboroughBridgeNb.id,
       ROUTE_VIDEOS.boydTrailWb26.id,
@@ -174,7 +174,7 @@ export const BOYD = [
   {
     routeNames: [ROUTES.boydTrail.name],
     description: "bridge to duncan 2",
-    type: "comfortable",
+    type: "mixed",
     videoIds: [
       ROUTE_VIDEOS.boydTrailWb26.id,
       ROUTE_VIDEOS.boydWb26.id,

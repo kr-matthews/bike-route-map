@@ -9,11 +9,13 @@ import {
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
+const WAYBURNE_DEER_LAKE_NW = [49.24177, -122.99826];
+
 export const DEER_LAKE_PARKWAY = [
   {
     routeNames: [ROUTES.deerLakeParkway.name, ROUTES.midtown.name],
-    description: "midtown overlap",
-    type: "comfortable",
+    description: "willingdon to wayburne",
+    type: "dedicated",
     videoIds: [
       ROUTE_VIDEOS.deerLakePkwyEb.id,
       ROUTE_VIDEOS.midtownBurnabyEb.id,
@@ -34,7 +36,21 @@ export const DEER_LAKE_PARKWAY = [
       [49.24189, -122.99931],
       [49.24185, -122.99913],
       [49.24182, -122.99892],
-      [49.24177, -122.99826],
+      WAYBURNE_DEER_LAKE_NW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.deerLakeParkway.name, ROUTES.midtown.name],
+    description: "wayburne to garden grove",
+    type: "mixed",
+    videoIds: [
+      ROUTE_VIDEOS.deerLakePkwyEb.id,
+      ROUTE_VIDEOS.midtownBurnabyEb.id,
+      ROUTE_VIDEOS.deerLakePkwyWb.id,
+      ROUTE_VIDEOS.midtownBurnabyWb.id,
+    ],
+    positions: [
+      WAYBURNE_DEER_LAKE_NW,
       [49.24175, -122.99822],
       WAYBURNE_DEER_LAKE_NE,
       [49.2417, -122.99788],

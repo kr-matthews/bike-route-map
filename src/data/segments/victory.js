@@ -86,7 +86,7 @@ export const VICTORY = [
   },
   {
     description: "trail to bc parkway",
-    type: "comfortable",
+    type: "mixed",
     undesignated: true,
     videoIds: [ROUTE_VIDEOS.victoryWb.id, ROUTE_VIDEOS.victoryEb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.victoryEb.id],

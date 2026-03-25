@@ -169,8 +169,8 @@ export const SEASIDE = [
   // sections
   {
     routeNames: [ROUTES.seaside.name],
-    description: "spanish banks & jericho",
-    type: "comfortable",
+    description: "spanish banks",
+    type: "combined",
     videoIds: [
       ROUTE_VIDEOS.seasideJerichoEb.id,
       ROUTE_VIDEOS.seasideJerichoWb.id,
@@ -254,6 +254,18 @@ export const SEASIDE = [
       [49.27489, -123.20668],
       [49.27492, -123.20643],
       [49.27501, -123.20582],
+      MARINE_SEAWALL,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaside.name],
+    description: "locarno & jericho",
+    type: "mixed",
+    videoIds: [
+      ROUTE_VIDEOS.seasideJerichoEb.id,
+      ROUTE_VIDEOS.seasideJerichoWb.id,
+    ],
+    positions: [
       MARINE_SEAWALL,
       [49.27497, -123.20548],
       [49.27499, -123.20508],
@@ -413,7 +425,7 @@ export const SEASIDE = [
   {
     routeNames: [ROUTES.seaside.name],
     description: "kits - balsam to whyte-ish",
-    type: "comfortable",
+    type: "dedicated",
     videoIds: [ROUTE_VIDEOS.seasideKitsWb.id],
     positions: [
       BALSAM_CORNWALL_LANE_N,
@@ -877,7 +889,7 @@ export const SEASIDE = [
   {
     routeNames: [ROUTES.seaside.name],
     description: "false creek north (open): to before cambie",
-    type: "comfortable",
+    type: "dedicated",
     videoIds: [ROUTE_VIDEOS.seasideFalseCreekCw.id],
     positions: [
       HORNBY_SEABREEZE,
@@ -931,7 +943,7 @@ export const SEASIDE = [
       [49.27093, -123.12153],
       [49.27093, -123.12117],
       [49.27181, -123.11984],
-      SEAWALL_DAVIE_W,
+      SEAWALL_DAVIE_W, // this part is mixed
       [49.27271, -123.11977],
       [49.2728, -123.11958],
       [49.27288, -123.11945],
@@ -954,7 +966,7 @@ export const SEASIDE = [
   {
     routeNames: [ROUTES.seaside.name],
     description: "false creek north - under cambie-ish",
-    type: "comfortable",
+    type: "dedicated",
     videoIds: [
       ROUTE_VIDEOS.cambieBridgeNb.id,
       ROUTE_VIDEOS.cambieBridgeSb.id,
@@ -973,7 +985,7 @@ export const SEASIDE = [
   {
     routeNames: [ROUTES.seaside.name],
     description: "false creek north - beyond cambie",
-    type: "comfortable",
+    type: "dedicated",
     videoIds: [ROUTE_VIDEOS.seasideFalseCreekCw.id],
     positions: [
       MARINASIDE_SEAWALL,
@@ -1029,7 +1041,7 @@ export const SEASIDE = [
   {
     routeNames: [ROUTES.seaside.name],
     description: "false creek north - closed",
-    type: "comfortable",
+    type: "combined",
     isClosed: true,
     positions: [
       SEAWALL_UNDER_BURRARD_N,
@@ -1048,7 +1060,7 @@ export const SEASIDE = [
   {
     routeNames: [ROUTES.seaside.name],
     description: "west end - closed",
-    type: "comfortable",
+    type: "dedicated",
     isClosed: true,
     positions: [
       SEAWALL_STANLEY_PARK_WEST_END,

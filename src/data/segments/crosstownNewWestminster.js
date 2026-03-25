@@ -15,6 +15,7 @@ import { ROUTE_VIDEOS } from "../videos/routes";
 
 const BC_PARKWAY_22ND_STATION = [49.20009, -122.94948];
 const BC_PARKWAY_22ND_STATION_N = [49.20012, -122.94953];
+const STATION_LANE_START = [49.20032, -122.94922];
 const TWENTIETH_7TH_E_N = [49.20162, -122.94669];
 const TWENTIETH_7TH_E_S = [49.20136, -122.94635];
 const TWENTIETH_7TH_N = [49.20165, -122.94674];
@@ -69,7 +70,7 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   },
   {
     description: "sixth to fifth alley",
-    type: "comfortable",
+    type: "mixed",
     videoIds: [ROUTE_VIDEOS.sixthNwNb.id],
     positions: [SIXTH_SCHOOL_E, [49.21748, -122.92565], ALLEY_SIXTH_FIFTH],
   },
@@ -263,15 +264,19 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   },
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],
-    description: "lanes along seventh",
-    // partially mixed, partially dedicated
-    type: "comfortable",
+    description: "mup along seventh",
+    type: "mixed",
     positions: [
       BC_PARKWAY_22ND_STATION_N,
       [49.20027, -122.94929],
-      [49.20032, -122.94922],
-      TWENTIETH_7TH_N,
+      STATION_LANE_START,
     ],
+  },
+  {
+    routeNames: [ROUTES.crosstownNewWestminster.name],
+    description: "lanes along seventh",
+    type: "dedicated",
+    positions: [STATION_LANE_START, TWENTIETH_7TH_N],
   },
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],

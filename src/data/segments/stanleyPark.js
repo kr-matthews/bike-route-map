@@ -480,7 +480,7 @@ export const STANLEY_PARK_LOOP = [
   },
   {
     description: "bridle path",
-    type: "comfortable",
+    type: "mixed",
     videoIds: [ROUTE_VIDEOS.lostLagoonWb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.lostLagoonWb.id],
     positions: [
@@ -495,7 +495,7 @@ export const STANLEY_PARK_LOOP = [
   {
     routeNames: [ROUTES.stanleyParkLoop.name, ROUTES.seaside.name],
     description: "second beach: north",
-    type: "comfortable",
+    type: "dedicated",
     videoIds: [
       ROUTE_VIDEOS.lostLagoonEb.id,
       ROUTE_VIDEOS.lostLagoonWb.id,
@@ -515,7 +515,7 @@ export const STANLEY_PARK_LOOP = [
   {
     routeNames: [ROUTES.stanleyParkLoop.name, ROUTES.seaside.name],
     description: "second beach: south",
-    type: "comfortable",
+    type: "dedicated",
     videoIds: [
       ROUTE_VIDEOS.lostLagoonEb.id,
       ROUTE_VIDEOS.lostLagoonWb.id,
@@ -535,7 +535,7 @@ export const STANLEY_PARK_LOOP = [
   {
     routeNames: [ROUTES.stanleyParkLoop.name],
     description: "lost lagoon pre-tunnel",
-    type: "comfortable",
+    type: "dedicated",
     elevation: -0.5,
     videoIds: [
       ROUTE_VIDEOS.lostLagoonEb.id,
@@ -555,7 +555,7 @@ export const STANLEY_PARK_LOOP = [
   {
     routeNames: [ROUTES.stanleyParkLoop.name],
     description: "lost lagoon tunnel",
-    type: "comfortable",
+    type: "dedicated",
     elevation: -1,
     videoIds: [
       ROUTE_VIDEOS.lostLagoonEb.id,
@@ -567,7 +567,7 @@ export const STANLEY_PARK_LOOP = [
   {
     routeNames: [ROUTES.stanleyParkLoop.name],
     description: "lost lagoon brief post-tunnel",
-    type: "comfortable",
+    type: "dedicated",
     elevation: -0.5,
     videoIds: [
       ROUTE_VIDEOS.lostLagoonEb.id,
@@ -580,7 +580,7 @@ export const STANLEY_PARK_LOOP = [
   {
     routeNames: [ROUTES.stanleyParkLoop.name],
     description: "lost lagoon tunnel to alberni/chilco",
-    type: "comfortable",
+    type: "dedicated",
     videoIds: [ROUTE_VIDEOS.lostLagoonEb.id, ROUTE_VIDEOS.lostLagoonWb.id],
     positions: [
       AFTER_DR_TUNNEL,
@@ -632,7 +632,7 @@ export const STANLEY_PARK_LOOP = [
   {
     routeNames: [ROUTES.stanleyParkLoop.name],
     description: "alberni/chilco to underpass",
-    type: "comfortable",
+    type: "dedicated",
     videoIds: [
       ROUTE_VIDEOS.lostLagoonWb.id,
       ROUTE_VIDEOS.lostLagoonEb.id,
@@ -652,7 +652,7 @@ export const STANLEY_PARK_LOOP = [
   {
     routeNames: [ROUTES.stanleyParkLoop.name],
     description: "causeway underpass",
-    type: "comfortable",
+    type: "dedicated",
     videoIds: [
       ROUTE_VIDEOS.lostLagoonWb.id,
       ROUTE_VIDEOS.lostLagoonEb.id,

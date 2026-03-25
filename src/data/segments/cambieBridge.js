@@ -169,7 +169,7 @@ export const CAMBIE_BRIDGE = [
   {
     routeNames: [ROUTES.cambieBridge.name],
     description: "northbound post-bridge",
-    type: "comfortable",
+    type: "mixed",
     oneWay: "required",
     elevation: 0.5,
     videoIds: [ROUTE_VIDEOS.cambieBridgeSmitheNb.id],

@@ -4,6 +4,7 @@ import { ROUTE_VIDEOS } from "../videos/routes";
 
 const OVERPASS_START = [49.28294, -123.08513];
 const OVERPASS_END = [49.28273, -123.08131];
+const CLARK_POWELL = [49.28315, -123.07701];
 
 export const POWELL = [
   {
@@ -32,17 +33,23 @@ export const POWELL = [
   {
     routeNames: [ROUTES.powell.name],
     description: "post-overpass",
-    type: "comfortable",
+    type: "dedicated",
     elevation: 0.5,
     videoIds: [ROUTE_VIDEOS.powellWb.id, ROUTE_VIDEOS.powellEb.id],
-    videoIdsStartAtEnd: [ROUTE_VIDEOS.powellWb.id],
-    videoIdsEndAtEnd: [ROUTE_VIDEOS.powellEb.id],
     positions: [
       OVERPASS_END,
       [49.28301, -123.07924],
       [49.28304, -123.07894],
-      [49.28315, -123.07701],
-      MCLEAN_POWELL,
+      CLARK_POWELL,
     ],
+  },
+  {
+    routeNames: [ROUTES.powell.name],
+    description: "clark to mclean",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.powellWb.id, ROUTE_VIDEOS.powellEb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.powellWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.powellEb.id],
+    positions: [CLARK_POWELL, MCLEAN_POWELL],
   },
 ];

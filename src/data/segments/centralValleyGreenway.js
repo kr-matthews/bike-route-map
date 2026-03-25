@@ -45,6 +45,8 @@ import {
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
+const FRASER_GREAT_NORTHERN_WAY = [49.2668, -123.08908];
+
 const KEITH_6TH_NE = [49.26531, -123.07928];
 const KEITH_6TH_NW = [49.26531, -123.07949];
 const KEITH_6TH_SE = [49.26509, -123.07928];
@@ -62,6 +64,9 @@ const MAIN_1ST_SW = [49.27009, -123.10085];
 const LORNE_1ST = [49.26921, -123.09886];
 
 const SLOCAN_N_GRANDVIEW_SE = [49.25831, -123.04946];
+
+const ECO_CENTER_E = [49.26092, -122.99446];
+const DOUGLAS_STILL_CREEK_NE = [49.26094, -122.98462];
 
 const NORTH_CVG = [49.23865, -122.89262];
 const HUME_PARK_DR_N = [49.23711, -122.89228];
@@ -311,9 +316,8 @@ export const CENTRAL_VALLEY_GREENWAY = [
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
-    description: "emily carr to clark",
-    type: "comfortable",
-    elevation: 0.5,
+    description: "emily carr to fraser",
+    type: "combined",
     videoIds: [
       ROUTE_VIDEOS.centralValleyVancouverEb.id,
       ROUTE_VIDEOS.centralValleyVancouverWb.id,
@@ -323,7 +327,20 @@ export const CENTRAL_VALLEY_GREENWAY = [
       [49.26689, -123.09084],
       [49.26688, -123.08983],
       [49.26684, -123.08933],
-      [49.2668, -123.08908],
+      FRASER_GREAT_NORTHERN_WAY,
+    ],
+  },
+  {
+    routeNames: [ROUTES.centralValleyGreenway.name],
+    description: "fraser to clark",
+    type: "mixed",
+    elevation: 0.5,
+    videoIds: [
+      ROUTE_VIDEOS.centralValleyVancouverEb.id,
+      ROUTE_VIDEOS.centralValleyVancouverWb.id,
+    ],
+    positions: [
+      FRASER_GREAT_NORTHERN_WAY,
       [49.26633, -123.08662],
       [49.2654, -123.08175],
       GLEN_6TH_N,
@@ -651,8 +668,8 @@ export const CENTRAL_VALLEY_GREENWAY = [
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
-    description: "gilmore to overpass",
-    type: "comfortable",
+    description: "gilmore to eco-center",
+    type: "mixed",
     videoIds: [
       ROUTE_VIDEOS.centralValleyBurnabyEb.id,
       ROUTE_VIDEOS.centralValleyBurnabyWb.id,
@@ -705,7 +722,19 @@ export const CENTRAL_VALLEY_GREENWAY = [
       [49.261, -122.9954],
       [49.26095, -122.99515],
       [49.26093, -122.99497],
-      [49.26092, -122.99446],
+      ECO_CENTER_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.centralValleyGreenway.name],
+    description: "eco-center to douglas",
+    type: "dedicated",
+    videoIds: [
+      ROUTE_VIDEOS.centralValleyBurnabyEb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyWb.id,
+    ],
+    positions: [
+      ECO_CENTER_E,
       [49.26086, -122.99423],
       [49.26085, -122.99121],
       [49.26084, -122.9874],
@@ -713,7 +742,19 @@ export const CENTRAL_VALLEY_GREENWAY = [
       [49.26084, -122.98498],
       [49.26086, -122.98492],
       [49.26089, -122.98487],
-      [49.26094, -122.98462],
+      DOUGLAS_STILL_CREEK_NE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.centralValleyGreenway.name],
+    description: "douglas to overpass",
+    type: "mixed",
+    videoIds: [
+      ROUTE_VIDEOS.centralValleyBurnabyEb.id,
+      ROUTE_VIDEOS.centralValleyBurnabyWb.id,
+    ],
+    positions: [
+      DOUGLAS_STILL_CREEK_NE,
       [49.26019, -122.98391],
       [49.26033, -122.98306],
       [49.26054, -122.98276],

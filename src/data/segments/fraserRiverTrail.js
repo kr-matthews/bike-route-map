@@ -11,7 +11,9 @@ import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
 const FRASERVIEW_START = [49.20832, -123.07006];
+const W_OF_VICTORIA = [49.20663, -123.0671];
 const VICTORIA_FRASER_RIVER = [49.20683, -123.06619];
+const E_OF_VICTORIA = [49.20623, -123.06535];
 const VICTORIA_KENT_S = [49.20721, -123.06619];
 const RIVER_DISTRICT_CROSSING_FRASER_RIVER = [49.20301, -123.03199];
 
@@ -169,8 +171,8 @@ export const FRASER_RIVER_TRAIL = [
   },
   {
     routeNames: [ROUTES.fraserRiverTrail.name],
-    description: "victoria-fraserview",
-    type: "comfortable",
+    description: "victoria-fraserview - w",
+    type: "dedicated",
     videoIds: [ROUTE_VIDEOS.fraserRiverFraserviewEb.id],
     positions: [
       FRASERVIEW_START,
@@ -189,7 +191,16 @@ export const FRASER_RIVER_TRAIL = [
       [49.20716, -123.06778],
       [49.20713, -123.06767],
       [49.2068, -123.0673],
-      [49.20663, -123.0671],
+      W_OF_VICTORIA,
+    ],
+  },
+  {
+    routeNames: [ROUTES.fraserRiverTrail.name],
+    description: "victoria-fraserview - middle",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.fraserRiverFraserviewEb.id],
+    positions: [
+      W_OF_VICTORIA,
       [49.20652, -123.06678],
       [49.20653, -123.06669],
       [49.20677, -123.06652],
@@ -199,7 +210,16 @@ export const FRASER_RIVER_TRAIL = [
       [49.20675, -123.06593],
       [49.20627, -123.06594],
       [49.20624, -123.06589],
-      [49.20623, -123.06535],
+      E_OF_VICTORIA,
+    ],
+  },
+  {
+    routeNames: [ROUTES.fraserRiverTrail.name],
+    description: "victoria-fraserview - e",
+    type: "dedicated",
+    videoIds: [ROUTE_VIDEOS.fraserRiverFraserviewEb.id],
+    positions: [
+      E_OF_VICTORIA,
       [49.20618, -123.06507],
       [49.20619, -123.06461],
       [49.20617, -123.06447],
@@ -257,7 +277,7 @@ export const FRASER_RIVER_TRAIL = [
   {
     routeNames: [ROUTES.fraserRiverTrail.name],
     description: "fraserview - elliott to kerr",
-    type: "comfortable",
+    type: "dedicated",
     videoIds: [ROUTE_VIDEOS.fraserRiverFraserviewEb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.fraserRiverFraserviewEb.id],
     positions: [

@@ -72,7 +72,7 @@ export const OAKLAND_BURRIS = [
   {
     routeNames: [ROUTES.oaklandBurris.name],
     description: "eb: oakland to oakland pl",
-    type: "comfortable",
+    type: "mixed",
     oneWay: "recommended",
     videoIds: [ROUTE_VIDEOS.oaklandBurrisEb.id],
     positions: [ROYAL_OAK_DOVER_SW, [49.22978, -122.98875], OAKLAND_PL_W],

@@ -435,8 +435,8 @@ export const CANADA_LINE = [
   },
   {
     routeNames: [ROUTES.canadaLine.name],
-    description: "post-bridge",
-    type: "comfortable",
+    description: "post-bridge mup",
+    type: "mixed",
     elevation: 0.5,
     videoIds: [
       ROUTE_VIDEOS.northArmBridgeNb.id,
@@ -446,13 +446,28 @@ export const CANADA_LINE = [
       ROUTE_VIDEOS.canadaLineSb.id,
     ],
     videoIdsStartAtStart: [ROUTE_VIDEOS.cambieNb.id],
-    videoIdsStartAtEnd: [ROUTE_VIDEOS.northArmBridgeSb.id],
-    videoIdsEndAtEnd: [ROUTE_VIDEOS.northArmBridgeNb.id],
     positions: [
       ELEVATED_END,
       [49.2057, -123.11769],
       [49.20554, -123.11888],
       [49.20557, -123.11901],
+      ASH_KENT_NE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.canadaLine.name],
+    description: "kent",
+    type: "dedicated",
+    videoIds: [
+      ROUTE_VIDEOS.northArmBridgeNb.id,
+      ROUTE_VIDEOS.northArmBridgeSb.id,
+      ROUTE_VIDEOS.cambieNb.id,
+      ROUTE_VIDEOS.canadaLineNb.id,
+      ROUTE_VIDEOS.canadaLineSb.id,
+    ],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.northArmBridgeSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.northArmBridgeNb.id],
+    positions: [
       ASH_KENT_NE,
       // ASH_KENT_NE,
       CAMBIE_KENT_N_NE,

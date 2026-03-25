@@ -21,6 +21,7 @@ const SAINT_DAVIDS_3RD_NW = [49.30878, -123.06615];
 
 const EB_LANE_END = [49.30837, -123.05247];
 const EB_BUS_LANE_END = [49.30833, -123.04747];
+const SIDEWALK_LANE_START = [49.30848, -123.04841];
 const WB_SIDEWALK_END = [49.30847, -123.05249];
 
 const WB_AFTER_QUEENSBURY = [49.30851, -123.05777];
@@ -154,7 +155,7 @@ export const THIRD_NV = [
   {
     routeNames: [ROUTES.thirdNv.name],
     description: "wb sidewalk from cotton",
-    type: "comfortable",
+    type: "mixed",
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.thirdNvWb.id],
     positions: [
@@ -162,7 +163,17 @@ export const THIRD_NV = [
       [49.30844, -123.04681],
       [49.30844, -123.04706],
       [49.30846, -123.04711],
-      [49.30848, -123.04841],
+      SIDEWALK_LANE_START,
+    ],
+  },
+  {
+    routeNames: [ROUTES.thirdNv.name],
+    description: "wb sidewalk",
+    type: "dedicated",
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.thirdNvWb.id],
+    positions: [
+      SIDEWALK_LANE_START,
       [49.30852, -123.04855],
       [49.30853, -123.04906],
       [49.30857, -123.04932],

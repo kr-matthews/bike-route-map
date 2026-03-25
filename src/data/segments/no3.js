@@ -81,7 +81,7 @@ export const NO_3 = [
   },
   {
     description: "to bridgeport station",
-    type: "comfortable",
+    type: "combined", // little bit is mixed
     positions: [
       SEXSMITH_BECKWITH_W,
       [49.19424, -123.12821],

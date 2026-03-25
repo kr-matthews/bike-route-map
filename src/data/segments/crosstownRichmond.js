@@ -89,7 +89,7 @@ export const CROSSTOWN_RICHMOND = [
   {
     routeNames: [ROUTES.crosstownRichmond.name],
     description: "blundell park",
-    type: "comfortable",
+    type: "mixed",
     videoIds: [ROUTE_VIDEOS.crosstownRichmondWb.id],
     positions: [
       BLUNDELL_PARK_W,

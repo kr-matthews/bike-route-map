@@ -11,7 +11,7 @@ export const GUILDFORD = [
   // lafarge lake station
   {
     description: "continuing toward lake",
-    type: "comfortable",
+    type: "mixed",
     videoIds: [
       ROUTE_VIDEOS.guildfordMurrayWb.id,
       ROUTE_VIDEOS.guildfordMurrayEb.id,

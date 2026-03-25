@@ -28,6 +28,7 @@ const GILMORE_HALIFAX_SE = [49.26797, -123.01417];
 const GILMORE_HALIFAX_SW = [49.26795, -123.01441];
 const GILMORE_LANE_START = [49.26723, -123.01416];
 
+const GILMORE_1ST_NE = [49.26947, -123.01412];
 const CARLETON_DOUGLAS_N = [49.26937, -123.01323];
 
 const HIGHWAY_OVERPASS_START = [49.2573, -123.01212];
@@ -282,7 +283,7 @@ export const SEA_TO_RIVER = [
   },
   {
     description: "nb alt: lougheed to halifax part 2",
-    type: "comfortable",
+    type: "dedicated",
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.seaToRiverNb.id],
     positions: [GILMORE_LANE_START, GILMORE_HALIFAX_SE],
@@ -311,8 +312,8 @@ export const SEA_TO_RIVER = [
   },
   {
     routeNames: [ROUTES.seaToRiver.name],
-    description: "halifax to douglas",
-    type: "comfortable",
+    description: "halifax to 1st",
+    type: "dedicated",
     videoIds: [ROUTE_VIDEOS.seaToRiverNb.id],
     positions: [
       GILMORE_HALIFAX_SE,
@@ -320,7 +321,16 @@ export const SEA_TO_RIVER = [
       [49.26818, -123.01414],
       [49.2685, -123.01413],
       [49.26859, -123.01418],
-      [49.26947, -123.01412],
+      GILMORE_1ST_NE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.seaToRiver.name],
+    description: "1st",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.seaToRiverNb.id],
+    positions: [
+      GILMORE_1ST_NE,
       [49.26948, -123.0139],
       [49.26945, -123.01367],
       [49.26941, -123.01343],

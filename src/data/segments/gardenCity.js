@@ -29,6 +29,7 @@ const NB_LANE_END = [49.19014, -123.12459];
 const AFTER_SEA_ISLAND_RAMP = [49.19086, -123.12395];
 const NB_AFTER_WILLIAMS = [49.14139, -123.1252];
 const SB_BEFORE_WILLIAMS = [49.14139, -123.12538];
+const GARDEN_CITY_PATTERSON = [49.19017, -123.12442];
 
 export const GARDEN_CITY = [
   // north of granville
@@ -189,12 +190,20 @@ export const GARDEN_CITY = [
     ],
   },
   {
-    description: "patterson",
-    type: "comfortable",
-    oneWay: "recommended",
+    description: "sidewalk to patterson",
+    type: "mixed",
+    oneWay: "required",
+    hideArrows: true,
     videoIds: [ROUTE_VIDEOS.gardenCityNb.id, ROUTE_VIDEOS.oakNb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.oakNb.id],
-    positions: [NB_LANE_END, [49.19017, -123.12442], GARDEN_CITY_PATTERSON_E],
+    positions: [NB_LANE_END, GARDEN_CITY_PATTERSON],
+  },
+  {
+    description: "patterson",
+    type: "quiet",
+    oneWay: "recommended",
+    videoIds: [ROUTE_VIDEOS.gardenCityNb.id, ROUTE_VIDEOS.oakNb.id],
+    positions: [GARDEN_CITY_PATTERSON, GARDEN_CITY_PATTERSON_E],
   },
   {
     description: "patterson to sea island",

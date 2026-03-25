@@ -132,7 +132,7 @@ export const ROYAL_OAK = [
   {
     routeNames: [ROUTES.royalOak.name],
     description: "trail north end",
-    type: "comfortable",
+    type: "mixed",
     videoIds: [ROUTE_VIDEOS.royalOakSb.id],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.royalOakSb.id],
     positions: [

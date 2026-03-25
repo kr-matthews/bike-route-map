@@ -153,7 +153,7 @@ export const CHANCELLOR = [
   {
     routeNames: [ROUTES.chancellor.name],
     description: "eb: wesbrook 1",
-    type: "comfortable",
+    type: "mixed",
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.wesbrookSb.id],
     positions: [
@@ -165,10 +165,17 @@ export const CHANCELLOR = [
   {
     routeNames: [ROUTES.chancellor.name],
     description: "eb: wesbrook 2",
-    type: "comfortable",
+    type: "mixed",
+    oneWay: "required",
+    hideArrows: true,
+    positions: [WESBROOK_CHANCELLOR_SW, WESBROOK_CHANCELLOR_SE],
+  },
+  {
+    routeNames: [ROUTES.chancellor.name],
+    description: "eb: wesbrook 3",
+    type: "dedicated",
     oneWay: "required",
     positions: [
-      WESBROOK_CHANCELLOR_SW,
       WESBROOK_CHANCELLOR_SE,
       [49.27303, -123.24865],
       [49.27309, -123.24862],
@@ -214,7 +221,7 @@ export const CHANCELLOR = [
   {
     routeNames: [ROUTES.chancellor.name],
     description: "wb: wesbrook",
-    type: "comfortable",
+    type: "mixed",
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.wesbrookSb.id, ROUTE_VIDEOS.chancellorWb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.wesbrookSb.id],

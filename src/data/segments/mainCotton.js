@@ -7,6 +7,7 @@ import {
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
+const GLADSTONE_COTTON_SW = [49.30801, -123.04384];
 const COTTON_MAIN_S = [49.30686, -123.03937];
 const HARBOUR_MAIN_S = [49.30563, -123.0342];
 const COTTON_MAIN_N = [49.3068, -123.03826];
@@ -19,7 +20,7 @@ export const MAIN_COTTON = [
   {
     routeNames: [ROUTES.mainCotton.name],
     description: "eb protected",
-    type: "comfortable", // mostly dedicated, except the end
+    type: "dedicated",
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.mainCottonEb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.mainCottonEb.id],
@@ -30,7 +31,17 @@ export const MAIN_COTTON = [
       [49.3082, -123.04484],
       [49.30818, -123.0446],
       [49.30816, -123.04449],
-      [49.30801, -123.04384],
+      GLADSTONE_COTTON_SW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.mainCotton.name],
+    description: "eb sidewalk",
+    type: "mixed",
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.mainCottonEb.id],
+    positions: [
+      GLADSTONE_COTTON_SW,
       [49.30791, -123.04361],
       [49.30786, -123.04349],
       [49.3072, -123.04104],

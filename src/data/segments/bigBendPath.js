@@ -20,7 +20,7 @@ export const BIG_BEND_PATH = [
   },
   {
     description: "to 10th",
-    type: "comfortable",
+    type: "mixed",
     positions: [NORTH_FRASER_MARINE_SSE, NORTH_FRASER_MARINE_SE],
   },
   {

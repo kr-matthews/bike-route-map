@@ -227,7 +227,7 @@ export const MIDTOWN = [
   {
     routeNames: [ROUTES.midtown.name, ROUTES.ridgeway.name],
     description: "cemetery east",
-    type: "comfortable",
+    type: "mixed",
     videoIds: [ROUTE_VIDEOS.midtownVancouverEb.id, ROUTE_VIDEOS.ridgewayWb.id],
     positions: [
       CEMETERY_BLOCK_37TH,
@@ -468,7 +468,7 @@ export const MIDTOWN = [
   {
     routeNames: [ROUTES.midtown.name],
     description: "garden grove and through courts",
-    type: "comfortable",
+    type: "mixed",
     videoIds: [
       ROUTE_VIDEOS.midtownBurnabyEb.id,
       ROUTE_VIDEOS.midtownBurnabyWb.id,
@@ -550,7 +550,7 @@ export const MIDTOWN = [
   {
     routeNames: [ROUTES.midtown.name],
     description: "canada/kensington to sperling",
-    type: "comfortable",
+    type: "mixed",
     videoIds: [
       ROUTE_VIDEOS.midtownBurnabyWb.id,
       ROUTE_VIDEOS.midtownBurnabyEb.id,

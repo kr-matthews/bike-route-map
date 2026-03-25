@@ -26,6 +26,7 @@ import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
 const WILLOW_35TH_SW = [49.23927, -123.12382];
+const N_OF_35TH = [49.23969, -123.12381];
 const WILLOW_33RD_SW = [49.24113, -123.12371];
 
 const HEATHER_MARINE_W_N = [49.20716, -123.12449];
@@ -49,15 +50,16 @@ export const HEATHER = [
     ],
   },
   {
-    description: "willow 35 to 33",
-    type: "comfortable",
+    description: "willow near 35",
+    type: "mixed",
     videoIds: [ROUTE_VIDEOS.heatherEricHamberSb.id],
-    positions: [
-      WILLOW_35TH_SW,
-      [49.23969, -123.12381],
-      [49.23977, -123.12375],
-      WILLOW_33RD_SW,
-    ],
+    positions: [WILLOW_35TH_SW, N_OF_35TH],
+  },
+  {
+    description: "willow 35 to 33",
+    type: "dedicated",
+    videoIds: [ROUTE_VIDEOS.heatherEricHamberSb.id],
+    positions: [N_OF_35TH, [49.23977, -123.12375], WILLOW_33RD_SW],
   },
   {
     description: "33rd eb",

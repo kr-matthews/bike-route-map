@@ -6,8 +6,12 @@ import {
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
+const HUGH_MURRAY_NE = [49.27896, -122.84757];
 const ELECTRONIC_MURRAY_N = [49.27894, -122.84135];
 const ELECTRONIC_MURRAY_SE = [49.27878, -122.84126];
+const MURRAY_SHORELINE = [49.28068, -122.83735];
+const UPPER_SHORELINE_MURRAY = [49.28067, -122.83239];
+const TRACKS_E = [49.28065, -122.83181];
 const W_OF_IOCO = [49.28074, -122.8283];
 
 export const MURRAY = [
@@ -23,7 +27,7 @@ export const MURRAY = [
   {
     routeNames: [ROUTES.murray.name],
     description: "west of moody",
-    type: "comfortable",
+    type: "mixed",
     positions: [
       [49.27894, -122.85454],
       [49.27895, -122.85256],
@@ -35,23 +39,28 @@ export const MURRAY = [
   },
   {
     routeNames: [ROUTES.murray.name],
-    description: "moody to electronic",
-    type: "comfortable",
+    description: "moody to hugh",
+    type: "mixed",
     videoIds: [
       ROUTE_VIDEOS.guildfordMurrayEb.id,
       ROUTE_VIDEOS.guildfordMurrayWb.id,
     ],
-    positions: [
-      MOODY_OVERPASS_MURRAY_NE,
-      [49.27896, -122.84757],
-      [49.27896, -122.84745],
-      ELECTRONIC_MURRAY_N,
-    ],
+    positions: [MOODY_OVERPASS_MURRAY_NE, HUGH_MURRAY_NE],
   },
   {
     routeNames: [ROUTES.murray.name],
-    description: "electronic to almost ioco",
-    type: "comfortable",
+    description: "hugh to electronic",
+    type: "combined",
+    videoIds: [
+      ROUTE_VIDEOS.guildfordMurrayEb.id,
+      ROUTE_VIDEOS.guildfordMurrayWb.id,
+    ],
+    positions: [HUGH_MURRAY_NE, [49.27896, -122.84745], ELECTRONIC_MURRAY_N],
+  },
+  {
+    routeNames: [ROUTES.murray.name],
+    description: "electronic to shoreline",
+    type: "combined",
     videoIds: [ROUTE_VIDEOS.guildfordMurrayWb.id],
     positions: [
       ELECTRONIC_MURRAY_N,
@@ -73,16 +82,39 @@ export const MURRAY = [
       [49.28036, -122.83803],
       [49.28049, -122.83781],
       [49.28063, -122.8374],
-      [49.28068, -122.83735],
+      MURRAY_SHORELINE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.murray.name],
+    description: "shoreline overlap",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.guildfordMurrayWb.id],
+    positions: [
+      MURRAY_SHORELINE,
       [49.28073, -122.83709],
       [49.28079, -122.83686],
       [49.2808, -122.83671],
       [49.28078, -122.83658],
       [49.28072, -122.83608],
       [49.28068, -122.83434],
-      [49.28067, -122.83239],
-      [49.28065, -122.83221],
-      [49.28065, -122.83181],
+      UPPER_SHORELINE_MURRAY,
+    ],
+  },
+  {
+    routeNames: [ROUTES.murray.name],
+    description: "crossing tracks",
+    type: "other",
+    videoIds: [ROUTE_VIDEOS.guildfordMurrayWb.id],
+    positions: [UPPER_SHORELINE_MURRAY, [49.28065, -122.83221], TRACKS_E],
+  },
+  {
+    routeNames: [ROUTES.murray.name],
+    description: "tracks to almost ioco",
+    type: "combined",
+    videoIds: [ROUTE_VIDEOS.guildfordMurrayWb.id],
+    positions: [
+      TRACKS_E,
       [49.28069, -122.83176],
       [49.28071, -122.8317],
       [49.28071, -122.83162],
@@ -98,7 +130,7 @@ export const MURRAY = [
   {
     routeNames: [ROUTES.murray.name],
     description: "last bit at ioco",
-    type: "comfortable",
+    type: "combined",
     positions: [W_OF_IOCO, [49.28081, -122.82796]],
   },
 

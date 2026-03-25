@@ -10,6 +10,7 @@ import { ROUTE_VIDEOS } from "../videos/routes";
 
 const ELLIOT_CLARKSON_SW = [49.20689, -122.90225];
 const MERIVALE_ROYAL_S = [49.20807, -122.90616];
+const THIRD_ROYAL_NW = [49.20799, -122.9071];
 const FOURTH_QUEENS_S = [49.20849, -122.91017];
 const FIFTH_THIRD_E = [49.20941, -122.91337];
 const FIFTH_THIRD_W = [49.20932, -122.91353];
@@ -53,15 +54,24 @@ export const UPTOWN_DOWNTOWN = [
   },
   {
     routeNames: [ROUTES.uptownDowntown.name],
-    description: "park, fourth, third",
-    type: "comfortable",
+    description: "royal",
+    type: "dedicated",
     videoIds: [ROUTE_VIDEOS.uptownDowntownSb.id],
     positions: [
       MERIVALE_ROYAL_S,
       [49.20781, -122.90672],
       [49.20799, -122.90694],
       [49.20802, -122.90704],
-      [49.20799, -122.9071],
+      THIRD_ROYAL_NW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.uptownDowntown.name],
+    description: "tipperary park",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.uptownDowntownSb.id],
+    positions: [
+      THIRD_ROYAL_NW,
       [49.20796, -122.90721],
       [49.20795, -122.90727],
       [49.20796, -122.90733],
