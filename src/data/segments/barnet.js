@@ -1,7 +1,7 @@
 import {
   BARNET_FRANCES_WB_TRANSITION,
   BARNET_INLET_N,
-  BARNET_ST_JOHN_SW,
+  BARNET_ST_JOHNS_SW,
   INLET_BAYVIEW_E,
   INLET_BAYVIEW_W,
   INLET_RIDGE_E,
@@ -305,7 +305,7 @@ export const BARNET = [
       [49.27732, -122.86704],
       [49.27716, -122.86701],
       [49.27674, -122.86698],
-      BARNET_ST_JOHN_SW,
+      BARNET_ST_JOHNS_SW,
     ],
   },
   {
