@@ -7,7 +7,7 @@ import { COLOUR_HIGHLIGHTED } from "./constants";
 
 export function getRoute(name) {
   return Object.values(ROUTES).find(
-    (route) => route.name.toLowerCase() === name?.toLowerCase()
+    (route) => route.name.toLowerCase() === name?.toLowerCase(),
   );
 }
 
@@ -17,7 +17,7 @@ export function routeIsIncomplete(name) {
 
 export function getRouteBounds(routeName) {
   const routeSegments = SEGMENTS.filter(({ routeNames }) =>
-    (routeNames ?? []).includes(routeName)
+    (routeNames ?? []).includes(routeName),
   );
 
   if (routeSegments.length === 0) return null;
@@ -27,15 +27,15 @@ export function getRouteBounds(routeName) {
 
 export function getSegmentsBounds(segments) {
   const latitudes = segments.flatMap(({ positions }) =>
-    positions.map(([lat, _]) => lat)
+    positions.map(([lat, _]) => lat),
   );
   const longitudes = segments.flatMap(({ positions }) =>
-    positions.map(([_, long]) => long)
+    positions.map(([_, long]) => long),
   );
 
   return new LatLngBounds(
     [Math.min(...latitudes), Math.min(...longitudes)],
-    [Math.max(...latitudes), Math.max(...longitudes)]
+    [Math.max(...latitudes), Math.max(...longitudes)],
   );
 }
 
@@ -48,12 +48,12 @@ const getRouteSegments = (routeName) =>
 
 const getRouteSegmentsOfType = (routeName, segmentType) =>
   getRouteSegments(routeName).filter(
-    (segment) => normalizeType(segment.type ?? "comfortable") === segmentType
+    (segment) => normalizeType(segment.type ?? "comfortable") === segmentType,
   );
 
 const getRouteSegmentsOfDirections = (routeName, segmentDirections) =>
   getRouteSegments(routeName).filter((segment) =>
-    segmentDirections.includes(segment.oneWay)
+    segmentDirections.includes(segment.oneWay),
   );
 
 export const getWeightedRouteDistance = (routeName) =>
@@ -67,7 +67,7 @@ const getRouteBidirectionalDistance = (routeName) =>
 
 const getRouteOneWayDistance = (routeName) =>
   sumSegmentsLengths(
-    getRouteSegmentsOfDirections(routeName, ["required", "recommended"])
+    getRouteSegmentsOfDirections(routeName, ["required", "recommended"]),
   );
 
 const getRouteWeightedProportions = (routeName) =>
@@ -86,7 +86,7 @@ export const getBackgroundColor = (route, isHighlighted = false) => {
       ...acc,
       acc[acc.length - 1] + route.weightedProportions[key],
     ],
-    [0]
+    [0],
   );
   const totalWeightedDistance =
     cumulativeWeightedDistances[cumulativeWeightedDistances.length - 1];
@@ -100,14 +100,14 @@ export const getBackgroundColor = (route, isHighlighted = false) => {
             gradientPortion(
               colour ?? oneWayColour,
               cumulativeWeightedDistances[index],
-              totalWeightedDistance
+              totalWeightedDistance,
             ),
             gradientPortion(
               colour ?? oneWayColour,
               cumulativeWeightedDistances[index + 1],
-              totalWeightedDistance
+              totalWeightedDistance,
             ),
-          ]
+          ],
     ).join(", ");
 
   return `linear-gradient(${linearGradient})`;
@@ -128,7 +128,7 @@ export const AUGMENTED_ROUTES = Object.entries(ROUTES).reduce(
     };
     return acc;
   },
-  {}
+  {},
 );
 
 export const getAugmentedRoute = (routeName) =>
