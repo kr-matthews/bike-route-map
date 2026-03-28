@@ -15,6 +15,7 @@ import {
   W_LOOP_W,
 } from "../segments/goldenEarsBridge";
 import { VIDEOS } from "../videos";
+import { TYPES } from "../../utils/segmentTypes";
 
 const ALL_VIDEOS_VALUES = Object.values(VIDEOS)
   .map((videos) => Object.values(videos))
@@ -177,10 +178,13 @@ describe("data", () => {
     );
   });
 
-  test("every segment has a type", () => {
-    const segmentsWithoutAType = SEGMENTS.filter((segment) => !segment.type);
+  test("every segment has a valid type", () => {
+    const validTypes = TYPES.map((segment) => segment.key);
+    const segmentsWithoutAValidType = SEGMENTS.filter(
+      (segment) => !validTypes.includes(segment.type),
+    );
     expect(
-      segmentsWithoutAType.map(
+      segmentsWithoutAValidType.map(
         (segment) => (segment.routeNames ?? []).join(",") + segment.description,
       ),
     ).toHaveLength(0);
