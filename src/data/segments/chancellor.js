@@ -22,11 +22,13 @@ const TASMANIA_CHANCELLOR = [49.26804, -123.22379];
 export const CHANCELLOR = [
   {
     description: "crossing at wesbrook nb",
+    type: "mixed",
     oneWay: "recommended",
     positions: [WESBROOK_CHANCELLOR_ES, WESBROOK_CHANCELLOR_EN],
   },
   {
     description: "crossing at wesbrook sb",
+    type: "mixed",
     oneWay: "recommended",
     videoIds: [ROUTE_VIDEOS.wesbrookSb.id],
     positions: [WESBROOK_CHANCELLOR_WN, WESBROOK_CHANCELLOR_WS],

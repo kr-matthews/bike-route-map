@@ -278,6 +278,7 @@ export const CAMBIE_BRIDGE = [
   },
   {
     description: "crossing ash",
+    type: "mixed",
     videoIds: [ROUTE_VIDEOS.heatherSb.id],
     positions: [ASH_2ND_SW, ASH_2ND_SE],
   },
@@ -386,6 +387,7 @@ export const CAMBIE_BRIDGE = [
   },
   {
     description: "crossing 2nd, west side",
+    type: "combined",
     positions: [
       CAMBIE_LOOP_2ND_S,
       [49.26599, -123.11603],

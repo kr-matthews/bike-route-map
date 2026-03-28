@@ -23,6 +23,7 @@ export const CARRALL = [
   {
     routeNames: [ROUTES.carrall.name],
     description: "seawall end",
+    type: "dedicated",
     videoIds: [ROUTE_VIDEOS.carrallNb.id, ROUTE_VIDEOS.carrallSb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.carrallNb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.carrallSb.id],
@@ -31,6 +32,7 @@ export const CARRALL = [
   {
     routeNames: [ROUTES.carrall.name],
     description: "nb",
+    type: "dedicated",
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.carrallNb.id],
     positions: [
@@ -67,6 +69,7 @@ export const CARRALL = [
   {
     routeNames: [ROUTES.carrall.name],
     description: "sb",
+    type: "dedicated",
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.carrallSb.id],
     positions: [
@@ -105,6 +108,7 @@ export const CARRALL = [
   {
     routeNames: [ROUTES.carrall.name],
     description: "north end",
+    type: "combined",
     videoIds: [
       ROUTE_VIDEOS.carrallSb.id,
       ROUTE_VIDEOS.carrallNb.id,

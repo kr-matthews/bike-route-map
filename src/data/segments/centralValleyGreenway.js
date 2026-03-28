@@ -503,6 +503,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
   },
   {
     description: "median at 8th",
+    type: "dedicated",
     positions: [GRANDVIEW_8TH_S, GRANDVIEW_8TH_N],
   },
   {

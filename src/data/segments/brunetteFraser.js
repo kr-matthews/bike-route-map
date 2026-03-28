@@ -151,6 +151,7 @@ export const BRUNETTE_FRASER = [
   {
     routeNames: [ROUTES.brunetteFraser.name],
     description: "cumberland crossing brunette river",
+    type: "mixed",
     elevation: 1,
     videoIds: [ROUTE_VIDEOS.brunetteFraserSb.id],
     positions: [BRUNETTE_RIVER_CUMBERLAND_W, BRUNETTE_RIVER_CUMBERLAND_E],
@@ -282,6 +283,7 @@ export const BRUNETTE_FRASER = [
   {
     routeNames: [ROUTES.brunetteFraser.name],
     description: "cariboo to cliff",
+    type: "mixed",
     videoIds: [ROUTE_VIDEOS.brunetteFraserSb.id],
     positions: [
       CARIBOO_GOVERNMENT,

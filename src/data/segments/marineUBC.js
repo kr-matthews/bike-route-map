@@ -544,14 +544,17 @@ export const MARINE_UBC = [
   // nw marine
   {
     description: "spanish banks connection 1",
+    type: "quiet",
     positions: [SPANISH_BANKS_CONNECTION_1, MARINE_SEAWALL_CONNECTION_1],
   },
   {
     description: "spanish banks connection 2",
+    type: "quiet",
     positions: [SPANISH_BANKS_CONNECTION_2, MARINE_SEAWALL_CONNECTION_2],
   },
   {
     description: "spanish banks connection 3",
+    type: "quiet",
     positions: [
       SPANISH_BANKS_CONNECTION_3_S,
       SPANISH_BANKS_CONNECTION_3_N,

@@ -90,6 +90,7 @@ export const OAK_STREET_BRIDGE = [
   },
   {
     description: "sb following bus",
+    type: "mixed",
     positions: [
       BRIDGEPORT_SPLIT,
       [49.19193, -123.11942],
@@ -107,6 +108,7 @@ export const OAK_STREET_BRIDGE = [
   },
   {
     description: "connection with patterson - N",
+    type: "mixed",
     videoIds: [ROUTE_VIDEOS.oakNb.id],
     positions: [
       PATH_PATTERSON,
@@ -121,6 +123,7 @@ export const OAK_STREET_BRIDGE = [
   },
   {
     description: "connection with patterson - S",
+    type: "mixed",
     videoIds: [ROUTE_VIDEOS.oakNb.id, ROUTE_VIDEOS.seaIslandWayEb25.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.seaIslandWayEb25.id],
     positions: [
@@ -212,6 +215,7 @@ export const OAK_STREET_BRIDGE = [
   {
     routeNames: [ROUTES.oakStreetBridge.name],
     description: "nb under bridge",
+    type: "mixed",
     oneWay: "recommended",
     videoIds: [ROUTE_VIDEOS.oakNb.id],
     positions: [
@@ -234,6 +238,7 @@ export const OAK_STREET_BRIDGE = [
   {
     routeNames: [ROUTES.oakStreetBridge.name],
     description: "nb pre-bridge",
+    type: "mixed",
     oneWay: "recommended",
     elevation: 0.5,
     videoIds: [ROUTE_VIDEOS.oakNb.id],
