@@ -20,7 +20,7 @@ export const STANLEY_PARK_LOOP = [
   {
     routeNames: [ROUTES.stanleyParkLoop.name, ROUTES.seaside.name],
     description: "one-way start",
-    type: "combined",
+    type: "dedicated",
     oneWay: "required",
     videoIds: [
       ROUTE_VIDEOS.seasideStanleyPark.id,
@@ -41,7 +41,7 @@ export const STANLEY_PARK_LOOP = [
   {
     routeNames: [ROUTES.stanleyParkLoop.name, ROUTES.seaside.name],
     description: "seawall",
-    type: "combined",
+    type: "dedicated",
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.seasideStanleyPark.id],
     positions: [
@@ -462,7 +462,7 @@ export const STANLEY_PARK_LOOP = [
   {
     routeNames: [ROUTES.stanleyParkLoop.name, ROUTES.seaside.name],
     description: "just after pool",
-    type: "combined",
+    type: "dedicated",
     oneWay: "required",
     videoIds: [
       ROUTE_VIDEOS.lostLagoonEb.id,

@@ -27,6 +27,7 @@ const JACK_UPPAL_KENT_N = [49.20567, -123.03369];
 const JACK_UPPAL_KENT_S = [49.20531, -123.03383];
 // const RIVER_DISTRICT_CROSSING_KENT_S = [49.20504, -123.03116];
 const RIVER_DISTRICT_CROSSING_KENT_N = [49.2053, -123.03107];
+const RIVERGRASS_KENT_SW = [49.20494, -123.02856];
 
 const EB_BEFORE_BORDEN = [49.20952, -123.07505];
 const EAST_OF_ONTARIO = [49.20667, -123.10586];
@@ -412,7 +413,7 @@ export const KENT = [
   },
   {
     description: "kent s bit",
-    type: "mixed",
+    type: "dedicated",
     videoIds: [ROUTE_VIDEOS.kentWb.id],
     positions: [
       KINROSS_KENT_S_S,
@@ -457,10 +458,17 @@ export const KENT = [
   // },
   {
     routeNames: [ROUTES.kent.name],
-    description: "kent n: river district crossing to boundary",
+    description: "kent n: river district crossing to rivergrass",
     type: "dedicated",
     videoIds: [ROUTE_VIDEOS.kentWb.id],
-    positions: [RIVER_DISTRICT_CROSSING_KENT_N, BOUNDARY_KENT],
+    positions: [RIVER_DISTRICT_CROSSING_KENT_N, RIVERGRASS_KENT_SW],
+  },
+  {
+    routeNames: [ROUTES.kent.name],
+    description: "kent n: rivergrass to boundary",
+    type: "combined",
+    videoIds: [ROUTE_VIDEOS.kentWb.id],
+    positions: [RIVERGRASS_KENT_SW, BOUNDARY_KENT],
   },
   {
     description: "part of boundary",
@@ -490,7 +498,7 @@ export const KENT = [
   },
   {
     description: "uppal s of kent s",
-    type: "combined",
+    type: "dedicated",
     positions: [
       [49.20447, -123.03475],
       [49.20494, -123.03411],

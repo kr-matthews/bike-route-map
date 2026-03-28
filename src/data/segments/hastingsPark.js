@@ -16,6 +16,7 @@ const BRIDGEWAY_MCGILL_OFF_RAMP_NW = [49.28714, -123.03367];
 const BRIDGEWAY_MCGILL_OFF_RAMP_SW = [49.28707, -123.03368];
 const MILLER_E_END = [49.28377, -123.03395];
 const MILLER_MIDDLE = [49.28461, -123.03779];
+const BRIDGEWATER_PATH_SPLIT = [49.28516, -123.03338];
 const TUNNEL_START = [49.28724, -123.03362];
 const TUNNEL_END = [49.28791, -123.03367];
 const HIGHWAY_BRIDGEWAY_MIDDLE = [49.28375, -123.03178];
@@ -167,8 +168,8 @@ export const HASTINGS_PARK = [
   },
   {
     routeNames: [ROUTES.hastingsPark.name],
-    description: "bridgewater path",
-    type: "combined", // some is dedicated technically
+    description: "bridgewater path 1",
+    type: "combined",
     videoIds: [
       ROUTE_VIDEOS.hastingsPortsideWindermere.id,
       ROUTE_VIDEOS.hastingsWindermerePortside.id,
@@ -184,7 +185,19 @@ export const HASTINGS_PARK = [
       [49.28445, -123.03368],
       [49.28454, -123.03365],
       [49.28489, -123.03349],
-      [49.28516, -123.03338],
+      BRIDGEWATER_PATH_SPLIT,
+    ],
+  },
+  {
+    routeNames: [ROUTES.hastingsPark.name],
+    description: "bridgewater path 2",
+    type: "dedicated",
+    videoIds: [
+      ROUTE_VIDEOS.hastingsPortsideWindermere.id,
+      ROUTE_VIDEOS.hastingsWindermerePortside.id,
+    ],
+    positions: [
+      BRIDGEWATER_PATH_SPLIT,
       [49.28548, -123.03325],
       [49.28588, -123.03312],
       [49.2865, -123.03292],
