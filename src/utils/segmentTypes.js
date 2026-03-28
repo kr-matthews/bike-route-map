@@ -22,7 +22,7 @@ export const TYPES = [
     colour: COLOUR_COMFORTABLE,
     oneWayColour: COLOUR_COMFORTABLE_ONE_WAY,
     description:
-      "Physically separated from traffic (except at intersections of course): dedicated lane or protected path (possibly mixed with pedestrians).",
+      "Physically separated from vehicle traffic (except at intersections of course): dedicated lane or protected path (possibly mixed with pedestrians).",
   },
   {
     key: "quiet",
