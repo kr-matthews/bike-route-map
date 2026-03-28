@@ -177,6 +177,15 @@ describe("data", () => {
     );
   });
 
+  test("every segment has a type", () => {
+    const segmentsWithoutAType = SEGMENTS.filter((segment) => !segment.type);
+    expect(
+      segmentsWithoutAType.map(
+        (segment) => (segment.routeNames ?? []).join(",") + segment.description,
+      ),
+    ).toHaveLength(0);
+  });
+
   test("no debug segments", () => {
     const debugSegments = SEGMENTS.filter((segment) => segment.debug);
     expect(debugSegments).toHaveLength(0);
