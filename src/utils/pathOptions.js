@@ -115,12 +115,7 @@ export function createDemoBorderPathOptions(
 }
 
 export function getSegmentPane(elevation, type, hasMultipleRoutes) {
-  const isSeparated = [
-    "comfortable",
-    "dedicated",
-    "mixed",
-    "combined",
-  ].includes(type);
+  const isSeparated = ["dedicated", "mixed", "combined"].includes(type);
 
   switch (elevation) {
     case 2:

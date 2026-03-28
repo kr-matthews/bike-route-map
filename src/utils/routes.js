@@ -48,7 +48,7 @@ const getRouteSegments = (routeName) =>
 
 const getRouteSegmentsOfType = (routeName, segmentType) =>
   getRouteSegments(routeName).filter(
-    (segment) => normalizeType(segment.type ?? "comfortable") === segmentType,
+    (segment) => normalizeType(segment.type) === segmentType,
   );
 
 const getRouteSegmentsOfDirections = (routeName, segmentDirections) =>

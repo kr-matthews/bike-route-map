@@ -17,12 +17,28 @@ import {
 
 export const TYPES = [
   {
-    key: "comfortable",
-    name: "Separated",
+    key: "dedicated",
+    name: "Separated - Cyclists Only",
     colour: COLOUR_COMFORTABLE,
     oneWayColour: COLOUR_COMFORTABLE_ONE_WAY,
     description:
-      "Physically separated from vehicle traffic (except at intersections of course): dedicated lane or protected path (possibly mixed with pedestrians).",
+      "A lane or path which is physically separated from vehicle and pedestrian traffic (except at intersections).",
+  },
+  {
+    key: "combined",
+    name: "MUP - separated from pedestrians",
+    colour: COLOUR_COMFORTABLE,
+    oneWayColour: COLOUR_COMFORTABLE_ONE_WAY,
+    description:
+      "A multi-use path which is physically separated from vehicle traffic (except at intersections) but separated from pedestrian traffic only by paint or signs.",
+  },
+  {
+    key: "mixed",
+    name: "MUP - mixed with pedestrians",
+    colour: COLOUR_COMFORTABLE,
+    oneWayColour: COLOUR_COMFORTABLE_ONE_WAY,
+    description:
+      "A multi-use path which is physically separated from vehicle traffic (except at intersections) but is mixed with pedestrian traffic.",
   },
   {
     key: "quiet",
@@ -62,18 +78,10 @@ export const TYPES = [
   },
 ];
 
-const comfortableTypes = [
-  "dedicated",
-  "combined",
-  "mixed",
-  "comfortable", // a mix of the above
-  undefined, // catch-all (mostly for legacy reasons)
-];
-
 export const getType = (key) => TYPES.find((t) => t.key === key);
 
-export const normalizeType = (type) =>
-  comfortableTypes.includes(type) ? "comfortable" : type;
+// for legacy reasons, when multiple were grouped as "comfortable"
+export const normalizeType = (type) => type;
 
 const alwaysOneWayTypes = ["painted", "shoulder"];
 
