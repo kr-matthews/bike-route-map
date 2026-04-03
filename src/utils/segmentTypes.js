@@ -26,7 +26,7 @@ export const TYPES = [
   },
   {
     key: "combined",
-    name: "MUP - separated from pedestrians",
+    name: "MUP - Separated from Pedestrians",
     colour: COLOUR_COMFORTABLE,
     oneWayColour: COLOUR_COMFORTABLE_ONE_WAY,
     description:
@@ -34,7 +34,7 @@ export const TYPES = [
   },
   {
     key: "mixed",
-    name: "MUP - mixed with pedestrians",
+    name: "MUP - Mixed with Pedestrians",
     colour: COLOUR_COMFORTABLE,
     oneWayColour: COLOUR_COMFORTABLE_ONE_WAY,
     description:
