@@ -3,7 +3,7 @@ import {
   BEWICKE_MARINE_NW,
   CHESTERFIELD_13TH_N,
   CHESTERFIELD_13TH_S,
-  GRAND_BLVD_E_13TH,
+  GRAND_BLVD_E_13TH_W,
   GRAND_BLVD_W_13TH,
   JONES_KEITH_S,
   ST_ANDREWS_13TH,
@@ -152,6 +152,6 @@ export const W_KEITH_13TH = [
     routeNames: [ROUTES.wKeith13th.name],
     description: "st andrews to grand blvd",
     type: "shared",
-    positions: [ST_ANDREWS_13TH, GRAND_BLVD_W_13TH, GRAND_BLVD_E_13TH],
+    positions: [ST_ANDREWS_13TH, GRAND_BLVD_W_13TH, GRAND_BLVD_E_13TH_W],
   },
 ];

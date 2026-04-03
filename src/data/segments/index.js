@@ -84,6 +84,7 @@ import { GILBERT } from "./gilbert";
 import { GLADSTONE } from "./gladstone";
 import { GLENLYON } from "./glenlyon";
 import { GOLDEN_EARS_BRIDGE } from "./goldenEarsBridge";
+import { GRAND_BLVD } from "./grandBlvd";
 import { GRANT_MCCONACHIE } from "./grantMcconachie";
 import { GRANVILLE } from "./granville";
 import { GRANVILLE_CONNECTOR } from "./granvilleConnector";
@@ -325,6 +326,7 @@ export const SEGMENTS = [
   ...GLADSTONE,
   ...GLENLYON,
   ...GOLDEN_EARS_BRIDGE,
+  ...GRAND_BLVD,
   ...GRANT_MCCONACHIE,
   ...GRANVILLE,
   ...GRANVILLE_CONNECTOR,

@@ -9,7 +9,7 @@ import { ROUTE_VIDEOS } from "./videos/routes";
 // Richmond: south dyke; ...and around steveston
 // YVR:
 // New Westminster:
-// North Vancouver (city): larson/16th; grand blvd/lynn valley; 29th
+// North Vancouver (city): larson/16th; lynn valley; 29th
 // North Vancouver (district): dollarton; mt seymour;
 // West Vancouver: spirit trail alt.?; ...more
 // Surrey: scott rd; serpentine; timbers; fraser hwy;
@@ -1329,6 +1329,13 @@ export const ROUTES = {
     ],
     notes:
       "Going south, it's easy to miss the transition from shoulder to sidewalk. The roundabouts at the north end aren't very comfortable to use.",
+  },
+  grandBlvd: {
+    name: "Grand Blvd",
+    regions: [REGIONS.northVancouver],
+    legs: [{ videos: {} }],
+    notes:
+      "Originally a clockwise loop around the inside of the park, but then the northbound (west) section was shifted onto the (partially closed-off) road. Gradual but significant hill.",
   },
   grantMcconachie: {
     name: "Grant McConachie Way",

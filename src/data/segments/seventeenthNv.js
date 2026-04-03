@@ -1,5 +1,6 @@
 import {
   CHESTERFIELD_17TH,
+  GRAND_BLVD_E_17TH_W,
   GRAND_BLVD_W_17TH_E,
   JONES_17TH,
   ST_ANDREWS_17TH,
@@ -16,7 +17,7 @@ export const SEVENTEENTH_NV = [
       CHESTERFIELD_17TH,
       ST_ANDREWS_17TH,
       GRAND_BLVD_W_17TH_E,
-      [49.32399, -123.05644],
+      GRAND_BLVD_E_17TH_W,
     ],
   },
 ];

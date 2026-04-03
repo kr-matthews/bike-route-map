@@ -1,5 +1,7 @@
 import {
   GRAND_BLVD_W_17TH_E,
+  GRAND_BLVD_W_19TH_NE,
+  GRAND_BLVD_W_19TH_SE,
   GRAND_BLVD_W_KEITH_NE,
   GRAND_BLVD_W_KEITH_NW,
   JONES_KEITH_SE_S,
@@ -12,7 +14,6 @@ const ST_GEORGES_KEITH_W_N = [49.31565, -123.07049];
 const W_VICTORIA_KEITH = [49.31785, -123.0757];
 const JONES_21ST_SE = [49.32831, -123.08144];
 const RIDGEWAY_23RD_N = [49.33022, -123.06282];
-const GRAND_BLVD_W_19TH_NE = [49.32615, -123.05735];
 
 export const GREEN_NECKLACE = [
   {
@@ -207,7 +208,7 @@ export const GREEN_NECKLACE = [
     type: "mixed",
     positions: [
       GRAND_BLVD_W_19TH_NE,
-      [49.32599, -123.05734],
+      GRAND_BLVD_W_19TH_SE,
       [49.32416, -123.05739],
       [49.32407, -123.05735],
       GRAND_BLVD_W_17TH_E,
