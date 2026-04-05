@@ -1,7 +1,9 @@
 import {
   BEWICKE_MOSQUITO_CREEK_S,
   GARDEN_SPIRIT_TRAIL,
+  MACKAY_1ST_N,
   MACKAY_1ST_NW,
+  MACKAY_1ST_S,
   MACKAY_1ST_SW,
   THIRD_2ND_N,
   THIRD_2ND_NW,
@@ -113,6 +115,7 @@ export const FIRST_2ND = [
     videoIds: [ROUTE_VIDEOS.first2ndEb.id],
     positions: [
       MACKAY_1ST_SW,
+      MACKAY_1ST_S,
       [49.31805, -123.1022],
       [49.31801, -123.09882],
       [49.31797, -123.09487],
@@ -217,6 +220,7 @@ export const FIRST_2ND = [
       [49.31812, -123.09489],
       [49.31815, -123.09881],
       [49.31819, -123.10221],
+      MACKAY_1ST_N,
       MACKAY_1ST_NW,
     ],
   },

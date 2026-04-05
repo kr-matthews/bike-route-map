@@ -1863,9 +1863,12 @@ export const ROUTES = {
   mackay: {
     name: "MacKay",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: { southbound: ROUTE_VIDEOS.mackaySb } }],
+    legs: [
+      { videos: {} },
+      { name: "MacKay Rd MUP", videos: { southbound: ROUTE_VIDEOS.mackaySb } },
+    ],
     notes:
-      "A short, flat path. There are a few poles in the middle of the path. The path itself doesn't connect with anything comfortable at the north end, though you can use the painted lane to connect with Hamilton/16th.",
+      "This seems to be two disconnected routes with the same name, separated by Marine Dr. Southbound, it's not possible to turn left onto Marine Dr, there's no proper way to continue south. The north part is steep and quiet-ish, and doesn't connect to anything. The south part is flat and busy-ish, and also has a MUP along the west side with some poles in it.",
   },
   mainCotton: {
     name: "Main St/Cotton Rd",
