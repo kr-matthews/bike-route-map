@@ -1,4 +1,10 @@
-import { FELL_LARSON_NE, FELL_LARSON_SE, JONES_23RD } from "../intersections";
+import {
+  FELL_LARSON_NE,
+  FELL_LARSON_SE,
+  HAMILTON_MARINE_NE,
+  HAMILTON_MARINE_NW,
+  JONES_23RD,
+} from "../intersections";
 import { ROUTES } from "../routes";
 
 const EB_BARRIER_START = [49.32323, -123.09348];
@@ -11,6 +17,9 @@ const CR_LANE_END_START = [49.33018, -123.08234];
 const WB_BEFORE_BEWICKE = [49.3248, -123.09038];
 const BEWICKE_LARSON_NE = [49.32445, -123.09101];
 
+const E_OF_HAMILTON = [49.32329, -123.09921];
+const FELL_LARSON = [49.32324, -123.09461];
+
 export const LARSON = [
   {
     routeNames: [ROUTES.larson.name],
@@ -18,6 +27,7 @@ export const LARSON = [
     type: "painted",
     oneWay: "required",
     positions: [
+      FELL_LARSON,
       FELL_LARSON_SE,
       [49.32319, -123.09396],
       [49.32321, -123.0937],
@@ -160,6 +170,42 @@ export const LARSON = [
       [49.32331, -123.0937],
       [49.3233, -123.09392],
       FELL_LARSON_NE,
+      FELL_LARSON,
     ],
+  },
+
+  // 16th
+  {
+    description: "nv 16th eb",
+    type: "shared",
+    oneWay: "required",
+    undesignated: true,
+    positions: [
+      HAMILTON_MARINE_NE,
+      [49.32326, -123.09977],
+      [49.32327, -123.09959],
+      [49.32327, -123.09936],
+      E_OF_HAMILTON,
+    ],
+  },
+  {
+    description: "nv 16th wb",
+    type: "shared",
+    oneWay: "required",
+    undesignated: true,
+    positions: [
+      E_OF_HAMILTON,
+      [49.32331, -123.09932],
+      [49.32331, -123.09963],
+      [49.32331, -123.09986],
+      [49.32327, -123.1],
+      HAMILTON_MARINE_NW,
+    ],
+  },
+  {
+    description: "nv 16th",
+    type: "shared",
+    undesignated: true,
+    positions: [E_OF_HAMILTON, FELL_LARSON],
   },
 ];

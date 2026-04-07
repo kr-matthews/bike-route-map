@@ -84,8 +84,19 @@ export const MACKAY = [
       NB_LANE_SPLIT,
       [49.32301, -123.10034],
       HAMILTON_MARINE_SE,
-      HAMILTON_MARINE_NE,
     ],
+  },
+  {
+    description: "nb hamilton crossing marine",
+    type: "shared",
+    oneWay: "required",
+    positions: [HAMILTON_MARINE_SE, HAMILTON_MARINE_NE],
+  },
+  {
+    description: "sb hamilton crossing marine",
+    type: "shared",
+    oneWay: "required",
+    positions: [HAMILTON_MARINE_NW, HAMILTON_MARINE_SW],
   },
   {
     routeNames: [ROUTES.mackay.name],
@@ -93,7 +104,6 @@ export const MACKAY = [
     type: "painted",
     oneWay: "required",
     positions: [
-      HAMILTON_MARINE_NW,
       HAMILTON_MARINE_SW,
       [49.32303, -123.10052],
       [49.32292, -123.10069],
