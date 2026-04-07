@@ -9,7 +9,7 @@ import { ROUTE_VIDEOS } from "./videos/routes";
 // Richmond: south dyke; ...and around steveston
 // YVR:
 // New Westminster:
-// North Vancouver (city): larson/16th; lynn valley; 29th
+// North Vancouver (city): lynn valley; 29th
 // North Vancouver (district): dollarton; mt seymour;
 // West Vancouver: spirit trail alt.?; ...more
 // Surrey: scott rd; serpentine; timbers; fraser hwy;
@@ -1793,6 +1793,12 @@ export const ROUTES = {
     legs: [{ videos: {} }],
     notes:
       "A flat MUP which doesn't connect to any other comfortable routes besides Middle Arm Trail.",
+  },
+  larson: {
+    name: "Larson",
+    regions: [REGIONS.northVancouver],
+    legs: [{ videos: {} }],
+    notes: "A busy road on a hill with inconsistent infrastructure.",
   },
   lionsGate: {
     name: "Lions Gate Bridge & Stanley Park Causeway",
