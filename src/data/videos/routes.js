@@ -314,6 +314,16 @@ export const ROUTE_VIDEOS = {
     date: new Date("Apr 10 2024"),
     minutes: 4,
   },
+  burnabyLakeOverpassNb: {
+    id: "ZU4U3jCHOSU",
+    date: new Date("Apr 07 2026"),
+    minutes: 2,
+  },
+  burnabyLakeOverpassSb: {
+    id: "1MNv4EAmGnM",
+    date: new Date("Apr 07 2026"),
+    minutes: 2,
+  },
   burnabyMtnEb: {
     id: "76xwLmfeJpY",
     tlId: "hX3HMQYSZ4o",

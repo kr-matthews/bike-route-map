@@ -1,5 +1,6 @@
 import { BURNABY_LAKE_OVERPASS_S, SPERLING_SPROTT } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const SPERLING_ROBERTS_E = [49.24561, -122.96447];
 const W_OF_OVERPASS = [49.24151, -122.959];
@@ -34,6 +35,7 @@ export const BURNABY_LAKE_OVERPASS = [
   {
     description: "sperling, glencarin",
     type: "quiet",
+    undesignated: true,
     positions: [
       SPERLING_ROBERTS_E,
       [49.24561, -122.96468],
@@ -58,6 +60,8 @@ export const BURNABY_LAKE_OVERPASS = [
   {
     description: "glencarin path, nw of glencarin",
     type: "dedicated",
+    videoIds: [ROUTE_VIDEOS.burnabyLakeOverpassSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.burnabyLakeOverpassSb.id],
     positions: [
       W_OF_OVERPASS,
       [49.24153, -122.95881],
@@ -76,8 +80,9 @@ export const BURNABY_LAKE_OVERPASS = [
     ],
   },
   {
-    description: "glencarin path, se of glencarin, w of overpass",
+    description: "glencarin path, glencarin to overpass",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.burnabyLakeOverpassSb.id],
     positions: [
       GLENCARIN_GLENCARIN_PATH,
       [49.24109, -122.95655],
@@ -85,8 +90,9 @@ export const BURNABY_LAKE_OVERPASS = [
     ],
   },
   {
-    description: "glencarin path, se of glencarin, e of overpass",
+    description: "glencarin path, e of overpass",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.burnabyLakeOverpassNb.id],
     positions: [
       OVERPASS_GLENCARIN_PATH,
       [49.24081, -122.95572],
@@ -100,6 +106,8 @@ export const BURNABY_LAKE_OVERPASS = [
   {
     description: "freeway trail parking lot",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.burnabyLakeOverpassNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.burnabyLakeOverpassNb.id],
     positions: [PARKING_LOT_W, [49.24029, -122.95434], PARKING_LOT_E],
   },
 
@@ -109,6 +117,10 @@ export const BURNABY_LAKE_OVERPASS = [
     description: "overpass",
     type: "mixed",
     elevation: 1,
+    videoIds: [
+      ROUTE_VIDEOS.burnabyLakeOverpassNb.id,
+      ROUTE_VIDEOS.burnabyLakeOverpassSb.id,
+    ],
     positions: [BURNABY_LAKE_OVERPASS_S, OVERPASS_N],
   },
   {
@@ -116,6 +128,10 @@ export const BURNABY_LAKE_OVERPASS = [
     description: "overpass - ne",
     type: "mixed",
     elevation: 0.5,
+    videoIds: [
+      ROUTE_VIDEOS.burnabyLakeOverpassSb.id,
+      ROUTE_VIDEOS.burnabyLakeOverpassNb.id,
+    ],
     positions: [
       OVERPASS_N,
       [49.24081, -122.95658],

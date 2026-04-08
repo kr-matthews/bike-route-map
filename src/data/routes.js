@@ -603,7 +603,14 @@ export const ROUTES = {
     name: "Burnaby Lake Overpass",
     shortName: "Burnaby L. Overpass",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.burnabyLakeOverpassNb,
+          southbound: ROUTE_VIDEOS.burnabyLakeOverpassSb,
+        },
+      },
+    ],
     notes: "New as of April 2026. Relatively flat.",
   },
   burnabyMtnPkwy: {

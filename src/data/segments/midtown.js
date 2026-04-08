@@ -591,8 +591,10 @@ export const MIDTOWN = [
     type: "mixed",
     videoIds: [
       ROUTE_VIDEOS.midtownBurnabyWb.id,
+      ROUTE_VIDEOS.burnabyLakeOverpassNb.id,
       ROUTE_VIDEOS.midtownBurnabyEb.id,
     ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.burnabyLakeOverpassNb.id],
     positions: [
       WILTON_CLAUDE,
       [49.2407, -122.96053],
@@ -615,6 +617,7 @@ export const MIDTOWN = [
     description: "claude path to overpass",
     type: "mixed",
     elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.burnabyLakeOverpassNb.id],
     positions: [
       MCCARTHY_CLAUDE_NW,
       [49.24036, -122.95851],
@@ -628,6 +631,8 @@ export const MIDTOWN = [
     description: "overpass to donovan path",
     type: "mixed",
     elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.burnabyLakeOverpassSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.burnabyLakeOverpassSb.id],
     positions: [
       BURNABY_LAKE_OVERPASS_S,
       [49.24024, -122.95792],
