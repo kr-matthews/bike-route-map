@@ -599,6 +599,13 @@ export const ROUTES = {
     notes:
       "The west is a gradual hill. Too many stop signs. Should be extended all the way to Beach Ave.",
   },
+  burnabyLakeOverpass: {
+    name: "Burnaby Lake Overpass",
+    shortName: "Burnaby L. Overpass",
+    regions: [REGIONS.burnaby],
+    legs: [{ videos: {} }],
+    notes: "New as of April 2026. Relatively flat.",
+  },
   burnabyMtnPkwy: {
     name: "Burnaby Mountain Parkway",
     shortName: "Burnaby Mtn Pkwy",

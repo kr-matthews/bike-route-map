@@ -147,6 +147,7 @@ export const BULLER_N_OF_IRMIN = [49.21632, -122.97755];
 export const BULLER_PRENTER = [49.21747, -122.97757];
 export const BULLER_RUMBLE_N = [49.21488, -122.97752];
 export const BURGESS_12TH = [49.21781, -122.93442];
+export const BURNABY_LAKE_OVERPASS_S = [49.24033, -122.95803];
 export const BURRARD_1ST_E = [49.27066, -123.14538];
 export const BURRARD_1ST_W = [49.27066, -123.14564];
 export const BURRARD_7TH_W = [49.26547, -123.14582];

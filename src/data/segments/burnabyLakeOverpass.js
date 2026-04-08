@@ -1,9 +1,17 @@
-import { SPERLING_SPROTT } from "../intersections";
+import { BURNABY_LAKE_OVERPASS_S, SPERLING_SPROTT } from "../intersections";
+import { ROUTES } from "../routes";
 
 const SPERLING_ROBERTS_E = [49.24561, -122.96447];
 const W_OF_OVERPASS = [49.24151, -122.959];
+const PARKING_LOT_W = [49.24041, -122.95483];
+const PARKING_LOT_E = [49.24026, -122.95426];
+
+const OVERPASS_N = [49.24108, -122.95759];
+const OVERPASS_GLENCARIN_PATH = [49.24095, -122.95616];
+const GLENCARIN_GLENCARIN_PATH = [49.24122, -122.95688];
 
 export const BURNABY_LAKE_OVERPASS = [
+  // north side
   {
     description: "sprott to roberts",
     type: "mixed",
@@ -48,7 +56,7 @@ export const BURNABY_LAKE_OVERPASS = [
     ],
   },
   {
-    description: "little bit near overpass",
+    description: "glencarin path, nw of glencarin",
     type: "dedicated",
     positions: [
       W_OF_OVERPASS,
@@ -64,15 +72,57 @@ export const BURNABY_LAKE_OVERPASS = [
       [49.24126, -122.95725],
       [49.24128, -122.95712],
       [49.24127, -122.95701],
-      [49.24122, -122.95688],
+      GLENCARIN_GLENCARIN_PATH,
+    ],
+  },
+  {
+    description: "glencarin path, se of glencarin, w of overpass",
+    type: "mixed",
+    positions: [
+      GLENCARIN_GLENCARIN_PATH,
       [49.24109, -122.95655],
-      [49.24095, -122.95616],
+      OVERPASS_GLENCARIN_PATH,
+    ],
+  },
+  {
+    description: "glencarin path, se of glencarin, e of overpass",
+    type: "mixed",
+    positions: [
+      OVERPASS_GLENCARIN_PATH,
       [49.24081, -122.95572],
       [49.2407, -122.95544],
       [49.24059, -122.95524],
       [49.24047, -122.95503],
       [49.24043, -122.95493],
-      [49.24041, -122.95483],
+      PARKING_LOT_W,
+    ],
+  },
+  {
+    description: "freeway trail parking lot",
+    type: "quiet",
+    positions: [PARKING_LOT_W, [49.24029, -122.95434], PARKING_LOT_E],
+  },
+
+  // overpass
+  {
+    routeNames: [ROUTES.burnabyLakeOverpass.name],
+    description: "overpass",
+    type: "mixed",
+    elevation: 1,
+    positions: [BURNABY_LAKE_OVERPASS_S, OVERPASS_N],
+  },
+  {
+    routeNames: [ROUTES.burnabyLakeOverpass.name],
+    description: "overpass - ne",
+    type: "mixed",
+    elevation: 0.5,
+    positions: [
+      OVERPASS_N,
+      [49.24081, -122.95658],
+      [49.2408, -122.9564],
+      [49.24085, -122.95629],
+      [49.2409, -122.95622],
+      OVERPASS_GLENCARIN_PATH,
     ],
   },
 ];

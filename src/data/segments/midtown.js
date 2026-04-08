@@ -2,6 +2,7 @@ import {
   ANGUS_37TH,
   ARBUTUS_GREENWAY_37TH,
   BALACLAVA_37TH,
+  BURNABY_LAKE_OVERPASS_S,
   CAMBIE_37TH_E,
   CAMOSUN_MARINE_N,
   CAMOSUN_MARINE_S,
@@ -60,8 +61,10 @@ const KENSINGTON_GILPIN_NE = [49.24185, -122.96778];
 const SPERLING_GILPIN = [49.2415, -122.96468];
 const SPERLING_CLAUDE = [49.24076, -122.96468];
 const WILTON_CLAUDE = [49.24068, -122.96066];
+const MCCARTHY_CLAUDE_NW = [49.24036, -122.95858];
 const MCCARTHY_CLAUDE = [49.24031, -122.95853];
 const DONOVAN_E = [49.2387, -122.95469];
+const OVERPASS_PATH_DONOVAN_PATH = [49.23881, -122.95388];
 const SIXTH_NURSERY_E = [49.23675, -122.94996];
 
 export const MIDTOWN = [
@@ -595,13 +598,56 @@ export const MIDTOWN = [
       [49.2407, -122.96053],
       [49.24063, -122.95968],
       [49.24048, -122.95886],
-      [49.24036, -122.95858],
-      MCCARTHY_CLAUDE,
+      MCCARTHY_CLAUDE_NW,
+    ],
+  },
+  {
+    description: "claude path to claude",
+    type: "mixed",
+    videoIds: [
+      ROUTE_VIDEOS.midtownBurnabyWb.id,
+      ROUTE_VIDEOS.midtownBurnabyEb.id,
+    ],
+    positions: [MCCARTHY_CLAUDE_NW, MCCARTHY_CLAUDE],
+  },
+  {
+    routeNames: [ROUTES.midtown.name],
+    description: "claude path to overpass",
+    type: "mixed",
+    elevation: 0.5,
+    positions: [
+      MCCARTHY_CLAUDE_NW,
+      [49.24036, -122.95851],
+      [49.24033, -122.95833],
+      [49.24031, -122.95819],
+      BURNABY_LAKE_OVERPASS_S,
     ],
   },
   {
     routeNames: [ROUTES.midtown.name],
-    description: "mccarthy to donovan",
+    description: "overpass to donovan path",
+    type: "mixed",
+    elevation: 0.5,
+    positions: [
+      BURNABY_LAKE_OVERPASS_S,
+      [49.24024, -122.95792],
+      [49.24023, -122.95779],
+      [49.24026, -122.95763],
+      [49.24025, -122.9575],
+      [49.23994, -122.95641],
+      [49.23991, -122.95624],
+      [49.23983, -122.95603],
+      [49.23965, -122.9553],
+      [49.23961, -122.95521],
+      [49.23947, -122.95482],
+      [49.23945, -122.95471],
+      [49.23941, -122.95462],
+      [49.23934, -122.95457],
+      OVERPASS_PATH_DONOVAN_PATH,
+    ],
+  },
+  {
+    description: "mccarthy to donovan path",
     type: "quiet",
     videoIds: [
       ROUTE_VIDEOS.midtownBurnabyWb.id,
@@ -615,17 +661,24 @@ export const MIDTOWN = [
     ],
   },
   {
+    description: "donovan path connection",
+    type: "mixed",
+    videoIds: [
+      ROUTE_VIDEOS.midtownBurnabyWb.id,
+      ROUTE_VIDEOS.midtownBurnabyEb.id,
+    ],
+    positions: [DONOVAN_E, [49.23873, -122.95452], OVERPASS_PATH_DONOVAN_PATH],
+  },
+  {
     routeNames: [ROUTES.midtown.name],
-    description: "donovan to 6th/burris",
+    description: "donovan join to 6th/burris",
     type: "mixed",
     videoIds: [
       ROUTE_VIDEOS.midtownBurnabyWb.id,
       ROUTE_VIDEOS.midtownBurnabyEb.id,
     ],
     positions: [
-      DONOVAN_E,
-      [49.23873, -122.95452],
-      [49.23881, -122.95388],
+      OVERPASS_PATH_DONOVAN_PATH,
       [49.23881, -122.95363],
       [49.23878, -122.95349],
       [49.23854, -122.95308],
