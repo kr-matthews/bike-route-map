@@ -9,7 +9,7 @@ import { ROUTE_VIDEOS } from "./videos/routes";
 // Richmond: south dyke; ...and around steveston
 // YVR:
 // New Westminster:
-// North Vancouver (city): lynn valley; 29th
+// North Vancouver (city): lynn valley
 // North Vancouver (district): dollarton; mt seymour;
 // West Vancouver: spirit trail alt.?; ...more
 // Surrey: scott rd; serpentine; timbers; fraser hwy;
@@ -160,6 +160,12 @@ export const ROUTES = {
     ],
     notes:
       "Hills and lots of cars. One of the worst bike routes in the city, and doesn't have proper connections at either end. The painted lanes are beside parked cars.",
+  },
+  twentySeventh29th: {
+    name: "27th St/29th St",
+    regions: [REGIONS.northVancouver],
+    legs: [{ videos: {} }],
+    notes: "A steady uphill followed by a steady downhill.",
   },
   twentyNinth: {
     name: "29th",

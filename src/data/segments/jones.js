@@ -2,6 +2,7 @@ import {
   JONES_17TH,
   JONES_23RD,
   JONES_24TH,
+  JONES_27TH,
   JONES_KEITH_S,
   MAHON_4TH,
 } from "../intersections";
@@ -130,7 +131,7 @@ export const JONES = [
     routeNames: [ROUTES.jonesMahon.name],
     description: "25th to 29th",
     type: "quiet",
-    positions: [JONES_25TH, [49.33243, -123.08144], JONES_29TH],
+    positions: [JONES_25TH, [49.33243, -123.08144], JONES_27TH, JONES_29TH],
   },
   {
     routeNames: [ROUTES.jonesMahon.name],

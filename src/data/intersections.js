@@ -539,6 +539,7 @@ export const IONA_PARK_E = [49.21678, -123.2031];
 export const JONES_17TH = [49.32425, -123.08162];
 export const JONES_23RD = [49.33035, -123.08149];
 export const JONES_24TH = [49.33134, -123.08147];
+export const JONES_27TH = [49.33421, -123.0814];
 export const JONES_KEITH_S = [49.31985, -123.08174];
 export const JONES_KEITH_SE_S = [49.31982, -123.0816];
 export const KASLO_ADANAC = [49.27746, -123.04677];
