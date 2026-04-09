@@ -405,4 +405,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.20591, -123.03517],
     region: REGIONS.vancouver,
   },
+  midtownBurnabyLakeWb26: {
+    id: "1dTzvgkopmo",
+    title: "Midtown @ Burnaby Lake",
+    routeNames: [ROUTES.midtown.name],
+    direction: "westbound",
+    date: new Date("Apr 07 2026"),
+    minutes: 2,
+    position: [49.24003, -122.95672],
+    region: REGIONS.burnaby,
+  },
 };
