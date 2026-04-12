@@ -4,6 +4,7 @@ import {
   HAMILTON_MARINE_NE,
   HAMILTON_MARINE_NW,
   JONES_23RD,
+  MOSQUITO_CREEK_LARSON_RAMP_N,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
@@ -41,7 +42,7 @@ export const LARSON = [
     oneWay: "required",
     positions: [
       EB_BARRIER_START,
-      [49.32325, -123.09337],
+      MOSQUITO_CREEK_LARSON_RAMP_N,
       [49.3233, -123.09313],
       [49.32335, -123.09295],
       [49.32343, -123.09271],
