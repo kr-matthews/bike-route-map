@@ -2124,7 +2124,11 @@ export const ROUTES = {
     regions: [REGIONS.northVancouver],
     // isOneWay: true,
     isIncomplete: true,
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: { northbound: ROUTE_VIDEOS.mosquitoCreekNb },
+      },
+    ],
     notes:
       "Mostly gravel, mostly not very steep. There's a gap at Larson where you need to briefly use the sidewalk, and north of there it is one-way (uphill). May continue north of Queens Rd (restarting around Evergreen Pl).",
   },

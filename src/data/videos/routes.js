@@ -1474,6 +1474,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Oct 07 2023"),
     minutes: 12,
   },
+  mosquitoCreekNb: {
+    id: "cYVRGYAPVa8",
+    tlId: "4NuA_aMmULI",
+    date: new Date("Apr 08 2026"),
+    minutes: 12,
+  },
   nanaimoNb: {
     id: "bSexNi-FL1E",
     date: new Date("Apr 06 2024"),

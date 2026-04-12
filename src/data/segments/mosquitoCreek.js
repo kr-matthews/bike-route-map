@@ -5,6 +5,7 @@ import {
   MOSQUITO_CREEK_LARSON_RAMP_N,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const LARSON_RAMP_E = [49.32319, -123.09298];
 const LARSON_RAMP_W = [49.32322, -123.09333];
@@ -14,6 +15,7 @@ export const MOSQUITO_CREEK = [
     routeNames: [ROUTES.mosquitoCreek.name],
     description: "bewicke to almost larson",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.mosquitoCreekNb.id],
     positions: [
       BEWICKE_MOSQUITO_CREEK_N,
       [49.31847, -123.09181],
@@ -50,6 +52,7 @@ export const MOSQUITO_CREEK = [
   {
     description: "larson ramp",
     type: "other",
+    videoIds: [ROUTE_VIDEOS.mosquitoCreekNb.id],
     positions: [LARSON_RAMP_E, [49.32322, -123.09299], LARSON_RAMP_W],
   },
   {
@@ -61,6 +64,7 @@ export const MOSQUITO_CREEK = [
     description: "larson sidewalk & crosswalk",
     type: "other",
     undesignated: true,
+    videoIds: [ROUTE_VIDEOS.mosquitoCreekNb.id],
     positions: [
       LARSON_RAMP_W,
       [49.32321, -123.09343],
@@ -76,6 +80,8 @@ export const MOSQUITO_CREEK = [
     description: "fell/larson to queens",
     type: "mixed",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.mosquitoCreekNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.mosquitoCreekNb.id],
     positions: [
       FELL_LARSON_NE,
       [49.32332, -123.09448],

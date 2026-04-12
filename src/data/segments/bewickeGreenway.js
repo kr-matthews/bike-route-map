@@ -49,10 +49,9 @@ export const BEWICKE_GREENWAY = [
   },
   {
     routeNames: [ROUTES.bewickeGreenway.name],
-    description: "spirit to keith",
+    description: "spirit to mosquito creek s",
     type: "mixed",
     videoIds: [ROUTE_VIDEOS.bewickeSb.id, ROUTE_VIDEOS.bewickeNb.id],
-    videoIdsStartAtEnd: [ROUTE_VIDEOS.bewickeSb.id],
     positions: [
       BEWICKE_SPIRIT_N,
       [49.31528, -123.09175],
@@ -60,6 +59,27 @@ export const BEWICKE_GREENWAY = [
       [49.31659, -123.09179],
       [49.31667, -123.09176],
       BEWICKE_MOSQUITO_CREEK_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bewickeGreenway.name],
+    description: "crossing mosquito creek",
+    type: "mixed",
+    videoIds: [
+      ROUTE_VIDEOS.bewickeSb.id,
+      ROUTE_VIDEOS.mosquitoCreekNb.id,
+      ROUTE_VIDEOS.bewickeNb.id,
+    ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.mosquitoCreekNb.id],
+    positions: [BEWICKE_MOSQUITO_CREEK_S, BEWICKE_MOSQUITO_CREEK_N],
+  },
+  {
+    routeNames: [ROUTES.bewickeGreenway.name],
+    description: "mosquito creek to keith",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.bewickeSb.id, ROUTE_VIDEOS.bewickeNb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.bewickeSb.id],
+    positions: [
       BEWICKE_MOSQUITO_CREEK_N,
       [49.31895, -123.09171],
       [49.31895, -123.09146],
