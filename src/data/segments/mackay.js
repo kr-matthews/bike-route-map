@@ -39,13 +39,22 @@ export const MACKAY = [
     ],
   },
   {
-    description: "15th bridge to marine",
+    description: "15th bridge to crosswalk",
+    type: "mixed",
+    videoIds: [
+      ROUTE_VIDEOS.mackaySb.id,
+      ROUTE_VIDEOS.fifteenthEb.id,
+      ROUTE_VIDEOS.larsonEb.id,
+    ],
+    positions: [MACKAY_15TH, CROSSWALK_WW],
+  },
+  {
+    description: "crosswalk to marine",
     type: "mixed",
     videoIds: [ROUTE_VIDEOS.mackaySb.id, ROUTE_VIDEOS.fifteenthEb.id],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.mackaySb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.fifteenthEb.id],
     positions: [
-      MACKAY_15TH,
       CROSSWALK_WW,
       [49.32193, -123.10223],
       [49.32202, -123.10209],
@@ -61,6 +70,7 @@ export const MACKAY = [
   {
     description: "crosswalk",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.larsonEb.id],
     positions: [CROSSWALK_WW, CROSSWALK_W, CROSSWALK_E],
   },
   {
@@ -71,13 +81,23 @@ export const MACKAY = [
   },
   {
     routeNames: [ROUTES.mackay.name],
-    description: "nb rd lane",
+    description: "nb rd lane, pre-crosswalk",
     type: "painted",
     oneWay: "required",
     positions: [
       S_OF_15TH,
       [49.32158, -123.10218],
       [49.32171, -123.10216],
+      CROSSWALK_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.mackay.name],
+    description: "nb rd lane",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.larsonEb.id],
+    positions: [
       CROSSWALK_E,
       [49.32182, -123.10209],
       [49.32189, -123.10202],
@@ -90,6 +110,7 @@ export const MACKAY = [
     description: "nb hamilton crossing marine",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.larsonEb.id],
     positions: [HAMILTON_MARINE_SE, HAMILTON_MARINE_NE],
   },
   {

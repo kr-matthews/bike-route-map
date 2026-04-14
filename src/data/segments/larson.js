@@ -7,12 +7,13 @@ import {
   MOSQUITO_CREEK_LARSON_RAMP_N,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const EB_BARRIER_START = [49.32323, -123.09348];
 const EB_BARRIER_END = [49.32371, -123.0921];
 const WESTVIEW_LARSON_SW = [49.32511, -123.08956];
 const E_OF_WESTVIEW = [49.32573, -123.08853];
-const LARSON_LARSON = [49.32925, -123.0844];
+const LARSON_21ST = [49.32837, -123.08545];
 const CR_LANE_END_START = [49.33018, -123.08234];
 
 const WB_BEFORE_BEWICKE = [49.3248, -123.09038];
@@ -27,6 +28,7 @@ export const LARSON = [
     description: "eb from 16th",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.larsonEb.id],
     positions: [
       FELL_LARSON,
       FELL_LARSON_SE,
@@ -40,6 +42,7 @@ export const LARSON = [
     description: "eb protected",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.larsonEb.id],
     positions: [
       EB_BARRIER_START,
       MOSQUITO_CREEK_LARSON_RAMP_N,
@@ -55,6 +58,7 @@ export const LARSON = [
     description: "eb to westview",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.larsonEb.id],
     positions: [EB_BARRIER_END, [49.32423, -123.09116], WESTVIEW_LARSON_SW],
   },
   {
@@ -62,6 +66,7 @@ export const LARSON = [
     description: "eb e of westview",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.larsonEb.id],
     positions: [
       WESTVIEW_LARSON_SW,
       [49.32533, -123.08919],
@@ -71,19 +76,15 @@ export const LARSON = [
   },
   {
     routeNames: [ROUTES.larson.name],
-    description: "westview to larson",
+    description: "westview to 21st",
     type: "shared",
+    videoIds: [ROUTE_VIDEOS.larsonEb.id],
     positions: [
       E_OF_WESTVIEW,
       [49.32624, -123.08758],
       [49.3264, -123.08736],
       [49.32737, -123.08642],
-      [49.32837, -123.08545],
-      [49.32865, -123.08513],
-      [49.32894, -123.08478],
-      [49.32911, -123.08457],
-      [49.32917, -123.0845],
-      LARSON_LARSON,
+      LARSON_21ST,
     ],
   },
   {
@@ -91,8 +92,12 @@ export const LARSON = [
     description: "eb larson cr",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.larsonEb.id],
     positions: [
-      LARSON_LARSON,
+      LARSON_21ST,
+      [49.32843, -123.08533],
+      [49.32867, -123.08505],
+      [49.32903, -123.08464],
       [49.32931, -123.08425],
       [49.32944, -123.08407],
       [49.32964, -123.08374],
@@ -107,6 +112,8 @@ export const LARSON = [
     routeNames: [ROUTES.larson.name],
     description: "e end of cr",
     type: "shared",
+    videoIds: [ROUTE_VIDEOS.larsonEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.larsonEb.id],
     positions: [CR_LANE_END_START, [49.33026, -123.08205], JONES_23RD],
   },
   {
@@ -124,7 +131,11 @@ export const LARSON = [
       [49.32965, -123.08391],
       [49.3295, -123.08416],
       [49.32937, -123.08435],
-      LARSON_LARSON,
+      [49.32923, -123.08452],
+      [49.32898, -123.08482],
+      [49.32866, -123.08521],
+      [49.32846, -123.08543],
+      LARSON_21ST,
     ],
   },
   {
@@ -181,6 +192,7 @@ export const LARSON = [
     type: "shared",
     oneWay: "required",
     undesignated: true,
+    videoIds: [ROUTE_VIDEOS.larsonEb.id],
     positions: [
       HAMILTON_MARINE_NE,
       [49.32326, -123.09977],
@@ -207,6 +219,7 @@ export const LARSON = [
     description: "nv 16th",
     type: "shared",
     undesignated: true,
+    videoIds: [ROUTE_VIDEOS.larsonEb.id],
     positions: [E_OF_HAMILTON, FELL_LARSON],
   },
 ];

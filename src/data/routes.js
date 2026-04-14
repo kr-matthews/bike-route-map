@@ -1817,7 +1817,7 @@ export const ROUTES = {
   larson: {
     name: "Larson",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: ROUTE_VIDEOS.larsonEb } }],
     notes: "A busy road on a hill with inconsistent infrastructure.",
   },
   lionsGate: {

@@ -26,7 +26,8 @@ export const FIFTEENTH = [
     routeNames: [ROUTES.fifteenth.name],
     description: "path",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.fifteenthEb.id],
+    videoIds: [ROUTE_VIDEOS.larsonEb.id, ROUTE_VIDEOS.fifteenthEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.larsonEb.id],
     positions: [
       FIFTEENTH_E,
       [49.32192, -123.10339],

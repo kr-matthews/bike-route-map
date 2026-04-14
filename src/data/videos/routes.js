@@ -1301,6 +1301,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("May 08 2025"),
     minutes: 11,
   },
+  larsonEb: {
+    id: "2aZ5NSYNaA4",
+    tlId: "6seolTyaUa8",
+    date: new Date("Apr 08 2026"),
+    minutes: 9,
+  },
   laurelLandbridgeNb: {
     id: "qz1BzpXHl0s",
     date: new Date("Jul 01 2025"),
