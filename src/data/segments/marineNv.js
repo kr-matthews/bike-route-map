@@ -35,6 +35,8 @@ const EB_ELEVATION_END = [49.32086, -123.09403];
 const WB_ELEVATION_START = [49.32102, -123.09392];
 const WB_ELEVATION_END = [49.32116, -123.09432];
 
+const W_OF_BEWICKE = [49.3204, -123.09214];
+
 export const MARINE_NV = [
   // eb
   {
@@ -236,20 +238,34 @@ export const MARINE_NV = [
   },
   {
     routeNames: [ROUTES.marineNv.name],
-    description: "wb: bewicke to mosquito",
+    description: "wb: crossing bewicke",
+    type: "shared",
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.marineNvWb.id],
+    positions: [BEWICKE_THIRD_NE, [49.3201, -123.09135], BEWICKE_MARINE_NW],
+  },
+  {
+    routeNames: [ROUTES.marineNv.name],
+    description: "wb: bewicke to mosquito 1",
+    type: "shared",
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.marineNvWb.id, ROUTE_VIDEOS.wKeith13thWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.wKeith13thWb.id],
+    positions: [
+      BEWICKE_MARINE_NW,
+      [49.32023, -123.09167],
+      [49.32028, -123.09182],
+      W_OF_BEWICKE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.marineNv.name],
+    description: "wb: bewicke to mosquito 2",
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
     videoIds: [ROUTE_VIDEOS.marineNvWb.id],
-    positions: [
-      BEWICKE_THIRD_NE,
-      [49.3201, -123.09135],
-      BEWICKE_MARINE_NW,
-      [49.32023, -123.09167],
-      [49.32028, -123.09182],
-      [49.32067, -123.09293],
-      WB_ELEVATION_START,
-    ],
+    positions: [W_OF_BEWICKE, [49.32067, -123.09293], WB_ELEVATION_START],
   },
   {
     routeNames: [ROUTES.marineNv.name],

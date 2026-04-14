@@ -143,7 +143,7 @@ export const ROUTES = {
   seventeenthNv: {
     name: "17th St",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { eastbound: ROUTE_VIDEOS.seventeenthEb } }],
     notes:
       "Gentle hills. A wide road with lane markings, but usually not too busy.",
   },
@@ -1698,7 +1698,7 @@ export const ROUTES = {
   wKeith13th: {
     name: "W Keith Rd/13th St",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.wKeith13thWb } }],
     notes:
       "Varies in quality, but generally the further east you are the worse it is. The painted lane is usually against the curb. The westbound shared lane is downhill.",
   },

@@ -9,6 +9,7 @@ import {
   ST_ANDREWS_13TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const EB_LANE_START = [49.31996, -123.08997];
 const EB_LANE_END = [49.31987, -123.08033];
@@ -97,6 +98,7 @@ export const W_KEITH_13TH = [
     description: "wb st andrews to almost lonsdale",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.wKeith13thWb.id],
     positions: [
       ST_ANDREWS_13TH,
       [49.31996, -123.06635],
@@ -114,13 +116,15 @@ export const W_KEITH_13TH = [
     description: "wb lonsdale to chesterfield",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.wKeith13thWb.id],
     positions: [WB_BEFORE_LONSDALE, [49.32007, -123.0724], CHESTERFIELD_13TH_N],
   },
   {
     routeNames: [ROUTES.wKeith13th.name],
     description: "wb chesterfield to 8th",
-    type: "shared",
+    type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.wKeith13thWb.id],
     positions: [
       CHESTERFIELD_13TH_N,
       [49.32011, -123.07555],
@@ -134,6 +138,7 @@ export const W_KEITH_13TH = [
     description: "wb 8th to bewicke/marine",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.wKeith13thWb.id],
     positions: [
       WB_BEFORE_8TH,
       [49.32007, -123.07704],
@@ -152,6 +157,8 @@ export const W_KEITH_13TH = [
     routeNames: [ROUTES.wKeith13th.name],
     description: "st andrews to grand blvd",
     type: "shared",
+    videoIds: [ROUTE_VIDEOS.wKeith13thWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.wKeith13thWb.id],
     positions: [ST_ANDREWS_13TH, GRAND_BLVD_W_13TH, GRAND_BLVD_E_13TH_W],
   },
 ];

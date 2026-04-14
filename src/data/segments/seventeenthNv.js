@@ -6,12 +6,16 @@ import {
   ST_ANDREWS_17TH,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const SEVENTEENTH_NV = [
   {
     routeNames: [ROUTES.seventeenthNv.name],
     description: "all",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.seventeenthEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.seventeenthEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.seventeenthEb.id],
     positions: [
       JONES_17TH,
       CHESTERFIELD_17TH,

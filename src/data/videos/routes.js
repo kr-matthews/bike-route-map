@@ -2022,6 +2022,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Apr 06 2024"),
     minutes: 8,
   },
+  seventeenthEb: {
+    id: "aDybDvq7uXM",
+    date: new Date("Apr 08 2026"),
+    minutes: 7,
+  },
   seventhNwNb: {
     id: "MTssJcgkdWU",
     tlId: "JsWl4qc7omA",
@@ -2462,6 +2467,11 @@ export const ROUTE_VIDEOS = {
     tlId: "L27bOkl6h9g",
     date: new Date("Sep 09 2024"),
     minutes: 17,
+  },
+  wKeith13thWb: {
+    id: "2Ytk-2fQ-Zc",
+    date: new Date("Apr 08 2026"),
+    minutes: 6,
   },
   woodwardsSaundersEb: {
     id: "oy8xm7Oai8w",
