@@ -712,6 +712,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Oct 17 2024"),
     minutes: 1,
   },
+  eKeithWb: {
+    id: "2mKXiVwDsLI",
+    date: new Date("Apr 15 2026"),
+    minutes: 2,
+  },
   ewenEb: {
     id: "1zBOc4vSFUc",
     tlId: "7XnjtIisZUY",
@@ -1767,6 +1772,11 @@ export const ROUTE_VIDEOS = {
   queensboroughBridgeSb: {
     id: "TE-Q9lsFEsk",
     date: new Date("Mar 13 2024"),
+    minutes: 3,
+  },
+  queensburyNb: {
+    id: "Ot4ou5kMoco",
+    date: new Date("Apr 15 2026"),
     minutes: 3,
   },
   railwayNb: {

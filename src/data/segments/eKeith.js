@@ -1,10 +1,11 @@
 import {
-  GRAND_BLVD_W_KEITH_NW,
+  GRAND_BLVD_W_KEITH_E,
   GRAND_BLVD_W_KEITH_SE,
   ST_ANDREWS_KEITH_N_W,
   ST_ANDREWS_KEITH_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const GRAND_BLVD_W_KEITH_S_W = [49.31346, -123.0581];
 
@@ -54,8 +55,10 @@ export const E_KEITH = [
     description: "wb",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.eKeithWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.eKeithWb.id],
     positions: [
-      GRAND_BLVD_W_KEITH_NW,
+      GRAND_BLVD_W_KEITH_E,
       [49.31357, -123.05788],
       [49.31359, -123.06019],
       [49.31363, -123.0632],

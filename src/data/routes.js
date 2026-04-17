@@ -1691,7 +1691,14 @@ export const ROUTES = {
     name: "E Keith Rd",
     regions: [REGIONS.northVancouver],
     isIncomplete: true,
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        name: "Between St Andrews & Grand Blvd",
+        videos: {
+          westbound: ROUTE_VIDEOS.eKeithWb,
+        },
+      },
+    ],
     notes:
       "A painted lane between moving and parked cars. There are also bike lanes further east on E Keith Rd, around Mountain Hwy.",
   },
@@ -2497,7 +2504,13 @@ export const ROUTES = {
   queensbury: {
     name: "Queensbury Ave",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.queensburyNb,
+        },
+      },
+    ],
     notes:
       "Steep hill. The painted lanes are usually beside the curb, but sometimes there is car parking between you and the curb.",
   },
