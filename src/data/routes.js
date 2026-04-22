@@ -9,7 +9,7 @@ import { ROUTE_VIDEOS } from "./videos/routes";
 // Richmond: south dyke; ...and around steveston
 // YVR:
 // New Westminster:
-// North Vancouver (city): lynn valley
+// North Vancouver (city):
 // North Vancouver (district): dollarton; mt seymour;
 // West Vancouver: spirit trail alt.?; ...more
 // Surrey: scott rd; serpentine; timbers; fraser hwy;
@@ -1892,6 +1892,14 @@ export const ROUTES = {
     legs: [{ videos: { northbound: ROUTE_VIDEOS.lynasNb } }],
     notes:
       "Very flat. The part north of Westminster Hwy gets a lot of cars at times - but you can avoid that as of late 2025, because there's a new protected lane along Westminster Hwy to connect to No. 2 Road and the bridge.",
+  },
+  lynnValley: {
+    name: "Lynn Valley Rd",
+    regions: [REGIONS.northVancouver],
+    legs: [{ videos: {} }],
+    isIncomplete: true,
+    notes:
+      "Extends up to around Peters Rd. Inconsistent infrastructure, often very uncomfortable and bad.",
   },
   mackay: {
     name: "MacKay",

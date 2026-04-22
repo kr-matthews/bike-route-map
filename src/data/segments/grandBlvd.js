@@ -1,5 +1,4 @@
 import {
-  BLVD_CR_19TH_NE,
   BLVD_CR_19TH_NW,
   GRAND_BLVD_E_13TH_W,
   GRAND_BLVD_E_17TH_W,
@@ -27,12 +26,6 @@ export const GRAND_BLVD = [
     description: "crossing 19th, e blvd",
     type: "mixed",
     positions: [BLVD_CR_19TH_NW, [49.32601, -123.05641], GRAND_BLVD_E_19TH_SW],
-  },
-  {
-    description: "crossing blvd, 19th",
-    type: "mixed",
-    oneWay: "recommended",
-    positions: [BLVD_CR_19TH_NW, BLVD_CR_19TH_NE],
   },
   {
     description: "crossing keith, e blvd",

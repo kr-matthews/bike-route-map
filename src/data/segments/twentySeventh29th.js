@@ -1,4 +1,10 @@
-import { JONES_27TH } from "../intersections";
+import {
+  JONES_27TH,
+  LYNN_VALLEY_29TH_N,
+  LYNN_VALLEY_29TH_W,
+  LYNN_VALLEY_CENTER_E,
+  LYNN_VALLEY_CENTER_S,
+} from "../intersections";
 import { ROUTES } from "../routes";
 
 const S_OF_TEMPE_29TH = [49.33542, -123.05728];
@@ -7,10 +13,6 @@ const TEMPE_29TH_S = [49.33552, -123.05726];
 const CONNAUGHT_29TH_SW = [49.33555, -123.05654];
 const WB_MUP_START_AT_ROYAL = [49.33561, -123.05386];
 const ROYAL_29TH_SW = [49.33554, -123.05481];
-const LYNN_29TH_N = [49.33533, -123.04166];
-const LYNN_29TH_W = [49.33526, -123.04183];
-const LYNN_VALLEY_CENTER_E = [49.33519, -123.04149];
-const LYNN_VALLEY_CENTER_S = [49.33511, -123.04166];
 
 export const TWENTY_SEVENTH_29TH = [
   {
@@ -90,7 +92,7 @@ export const TWENTY_SEVENTH_29TH = [
       [49.3354, -123.04211],
       [49.33537, -123.04199],
       [49.33533, -123.04191],
-      LYNN_29TH_W,
+      LYNN_VALLEY_29TH_W,
     ],
   },
   {
@@ -113,7 +115,7 @@ export const TWENTY_SEVENTH_29TH = [
     type: "painted",
     oneWay: "required",
     positions: [
-      LYNN_29TH_N,
+      LYNN_VALLEY_29TH_N,
       [49.33543, -123.04179],
       [49.33548, -123.0419],
       [49.33552, -123.04206],
@@ -132,13 +134,13 @@ export const TWENTY_SEVENTH_29TH = [
     description: "valley center crossing lynn eb",
     type: "shared",
     oneWay: "required",
-    positions: [LYNN_29TH_W, LYNN_VALLEY_CENTER_S],
+    positions: [LYNN_VALLEY_29TH_W, LYNN_VALLEY_CENTER_S],
   },
   {
     description: "valley center crossing lynn wb",
     type: "shared",
     oneWay: "required",
-    positions: [LYNN_VALLEY_CENTER_E, LYNN_29TH_N],
+    positions: [LYNN_VALLEY_CENTER_E, LYNN_VALLEY_29TH_N],
   },
   {
     description: "valley center: eb",
