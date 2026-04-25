@@ -64,8 +64,8 @@ export const GRAND_BLVD = [
   {
     routeNames: [ROUTES.grandBlvd.name],
     description: "nb",
-    type: "painted",
-    oneWay: "required",
+    type: "quiet",
+    oneWay: "recommended",
     positions: [
       GRAND_BLVD_W_KEITH_NE,
       [49.31366, -123.0577],
