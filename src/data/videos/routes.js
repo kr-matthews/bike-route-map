@@ -944,6 +944,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("May 25 2024"),
     minutes: 13,
   },
+  grandBlvdNb: {
+    id: "z3Q72fXPncI",
+    tlId: "7ggscQUnzmc",
+    date: new Date("Apr 23 2026"),
+    minutes: 8,
+  },
   grantMcConachieEb: {
     id: "1P-bpc04h-Y",
     date: new Date("May 27 2025"),

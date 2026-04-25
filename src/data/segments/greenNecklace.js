@@ -9,6 +9,7 @@ import {
   ST_ANDREWS_KEITH_N_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const ST_GEORGES_KEITH_W_N = [49.31565, -123.07049];
 const W_VICTORIA_KEITH = [49.31785, -123.0757];
@@ -204,10 +205,16 @@ export const GREEN_NECKLACE = [
   },
   {
     routeNames: [ROUTES.greenNecklace.name],
+    description: "crossing 19th",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.grandBlvdNb.id],
+    positions: [GRAND_BLVD_W_19TH_NE, GRAND_BLVD_W_19TH_SE],
+  },
+  {
+    routeNames: [ROUTES.greenNecklace.name],
     description: "grand blvd w",
     type: "mixed",
     positions: [
-      GRAND_BLVD_W_19TH_NE,
       GRAND_BLVD_W_19TH_SE,
       [49.32416, -123.05739],
       [49.32407, -123.05735],

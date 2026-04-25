@@ -11,6 +11,7 @@ import {
   GRAND_BLVD_W_KEITH_NE,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const GRAND_BLVD_E_KEITH_NW_N = [49.31369, -123.05667];
 const GRAND_BLVD_E_KEITH_NW_W = [49.31361, -123.05682];
@@ -20,6 +21,7 @@ export const GRAND_BLVD = [
   {
     description: "n side of 19th",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.grandBlvdNb.id],
     positions: [GRAND_BLVD_W_19TH_NE, BLVD_CR_19TH_NW],
   },
   {
@@ -66,6 +68,7 @@ export const GRAND_BLVD = [
     description: "nb",
     type: "quiet",
     oneWay: "recommended",
+    videoIds: [ROUTE_VIDEOS.grandBlvdNb.id],
     positions: [
       GRAND_BLVD_W_KEITH_NE,
       [49.31366, -123.0577],

@@ -7,6 +7,7 @@ import {
   LYNN_VALLEY_CENTER_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const HWY_1_SIDEWALK_START = [49.32818, -123.05452];
 const HWY_1_SIDEWALK_END = [49.32924, -123.05272];
@@ -24,6 +25,8 @@ export const LYNN_VALLEY = [
     description: "crossing blvd, 19th",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [ROUTE_VIDEOS.grandBlvdNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.grandBlvdNb.id],
     positions: [BLVD_CR_19TH_NW, BLVD_CR_19TH_NE],
   },
   {

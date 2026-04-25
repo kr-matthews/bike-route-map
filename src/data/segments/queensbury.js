@@ -26,7 +26,11 @@ export const QUEENSBURY = [
   {
     description: "keith s side, w to queensbury and crossing",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.eKeithWb.id, ROUTE_VIDEOS.queensburyNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.grandBlvdNb.id,
+      ROUTE_VIDEOS.eKeithWb.id,
+      ROUTE_VIDEOS.queensburyNb.id,
+    ],
     positions: [
       GRAND_BLVD_W_KEITH_SE,
       QUEENSBURY_KEITH_SW,
@@ -43,7 +47,11 @@ export const QUEENSBURY = [
   {
     description: "w crossing keith 1",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.queensburyNb.id, ROUTE_VIDEOS.eKeithWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.grandBlvdNb.id,
+      ROUTE_VIDEOS.queensburyNb.id,
+      ROUTE_VIDEOS.eKeithWb.id,
+    ],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.queensburyNb.id],
     positions: [GRAND_BLVD_W_KEITH_SE, GRAND_BLVD_W_KEITH_E],
   },
@@ -51,6 +59,7 @@ export const QUEENSBURY = [
   {
     description: "w crossing keith 2",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.grandBlvdNb.id],
     positions: [GRAND_BLVD_W_KEITH_E, GRAND_BLVD_W_KEITH_NE],
   },
 
@@ -89,8 +98,15 @@ export const QUEENSBURY = [
     description: "nb ramp to sidewalk",
     type: "combined",
     oneWay: "required",
-    videoIds: [ROUTE_VIDEOS.queensburyNb.id, ROUTE_VIDEOS.eKeithWb.id],
-    videoIdsStartAtStart: [ROUTE_VIDEOS.eKeithWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.queensburyNb.id,
+      ROUTE_VIDEOS.grandBlvdNb.id,
+      ROUTE_VIDEOS.eKeithWb.id,
+    ],
+    videoIdsStartAtStart: [
+      ROUTE_VIDEOS.grandBlvdNb.id,
+      ROUTE_VIDEOS.eKeithWb.id,
+    ],
     positions: [NB_BEFORE_KEITH, QUEENSBURY_KEITH_SE],
   },
 

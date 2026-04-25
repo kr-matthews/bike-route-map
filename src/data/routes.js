@@ -1353,7 +1353,13 @@ export const ROUTES = {
   grandBlvd: {
     name: "Grand Blvd",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.grandBlvdNb,
+        },
+      },
+    ],
     notes:
       "Originally a clockwise loop around the inside of the park, but then the northbound (west) section was shifted onto the (partially closed-off) road. Gradual but significant hill.",
   },
