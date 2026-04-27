@@ -120,21 +120,21 @@ export default function Legend({ navigateTo }) {
       ...acc,
       [t.key]: t.key === segmentProps.type,
     }),
-    {}
+    {},
   );
   const directions = DIRECTIONS.reduce(
     (acc, d) => ({
       ...acc,
       [d.key]: d.key === segmentProps.oneWay,
     }),
-    {}
+    {},
   );
   const elevations = ELEVATIONS.reduce(
     (acc, e) => ({
       ...acc,
       [e.key ?? 0]: e.key === segmentProps.elevation,
     }),
-    {}
+    {},
   );
 
   return (
