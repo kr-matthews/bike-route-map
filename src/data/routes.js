@@ -9,7 +9,7 @@ import { ROUTE_VIDEOS } from "./videos/routes";
 // Richmond: south dyke; ...and around steveston
 // YVR:
 // New Westminster:
-// North Vancouver (city):
+// North Vancouver (city): MUP at NE corner of grand blvd
 // North Vancouver (district): dollarton; mt seymour;
 // West Vancouver: spirit trail alt.?; ...more
 // Surrey: scott rd; serpentine; timbers; fraser hwy;
@@ -164,7 +164,13 @@ export const ROUTES = {
   twentySeventh29th: {
     name: "27th St/29th St",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: {
+          westbound: ROUTE_VIDEOS.twentySeventh29thWb,
+        },
+      },
+    ],
     notes: "A steady uphill followed by a steady downhill.",
   },
   twentyNinth: {

@@ -6,6 +6,7 @@ import {
   LYNN_VALLEY_CENTER_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const S_OF_TEMPE_29TH = [49.33542, -123.05728];
 const TEMPE_29TH_SE = [49.33552, -123.05699];
@@ -19,6 +20,8 @@ export const TWENTY_SEVENTH_29TH = [
     routeNames: [ROUTES.twentySeventh29th.name],
     description: "27th & tempe",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.twentySeventh29thWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.twentySeventh29thWb.id],
     positions: [
       JONES_27TH,
       [49.33414, -123.07206],
@@ -48,6 +51,7 @@ export const TWENTY_SEVENTH_29TH = [
     description: "29th to tempe 1",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [ROUTE_VIDEOS.twentySeventh29thWb.id],
     positions: [TEMPE_29TH_SE, TEMPE_29TH_S],
   },
   {
@@ -56,18 +60,21 @@ export const TWENTY_SEVENTH_29TH = [
     type: "quiet",
     oneWay: "recommended",
     hideArrows: true,
+    videoIds: [ROUTE_VIDEOS.twentySeventh29thWb.id],
     positions: [TEMPE_29TH_S, S_OF_TEMPE_29TH],
   },
   {
     routeNames: [ROUTES.twentySeventh29th.name],
     description: "29th: tempe to connaught",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.twentySeventh29thWb.id],
     positions: [TEMPE_29TH_SE, [49.33554, -123.05679], CONNAUGHT_29TH_SW],
   },
   {
     routeNames: [ROUTES.twentySeventh29th.name],
     description: "29th: connaught to royal",
     type: "dedicated",
+    videoIds: [ROUTE_VIDEOS.twentySeventh29thWb.id],
     positions: [CONNAUGHT_29TH_SW, ROYAL_29TH_SW],
   },
   {
@@ -100,6 +107,7 @@ export const TWENTY_SEVENTH_29TH = [
     description: "29th: wb near royal",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [ROUTE_VIDEOS.twentySeventh29thWb.id],
     positions: [
       WB_MUP_START_AT_ROYAL,
       [49.33563, -123.05414],
@@ -114,6 +122,7 @@ export const TWENTY_SEVENTH_29TH = [
     description: "29th: wb",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.twentySeventh29thWb.id],
     positions: [
       LYNN_VALLEY_29TH_N,
       [49.33543, -123.04179],
@@ -140,6 +149,7 @@ export const TWENTY_SEVENTH_29TH = [
     description: "valley center crossing lynn wb",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.twentySeventh29thWb.id],
     positions: [LYNN_VALLEY_CENTER_E, LYNN_VALLEY_29TH_N],
   },
   {
@@ -156,6 +166,8 @@ export const TWENTY_SEVENTH_29TH = [
     description: "valley center: wb",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.twentySeventh29thWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.twentySeventh29thWb.id],
     positions: [
       [49.33489, -123.04117],
       [49.33493, -123.0412],
