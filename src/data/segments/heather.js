@@ -40,7 +40,11 @@ export const HEATHER = [
   {
     description: "willow 37 to 35",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.heatherEricHamberSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.heatherEricHamberNb.id,
+      ROUTE_VIDEOS.heatherEricHamberSb.id,
+    ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.heatherEricHamberNb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.heatherEricHamberSb.id],
     positions: [
       WILLOW_37TH,
@@ -52,19 +56,27 @@ export const HEATHER = [
   {
     description: "willow near 35",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.heatherEricHamberSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.heatherEricHamberNb.id,
+      ROUTE_VIDEOS.heatherEricHamberSb.id,
+    ],
     positions: [WILLOW_35TH_SW, N_OF_35TH],
   },
   {
     description: "willow 35 to 33",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.heatherEricHamberSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.heatherEricHamberNb.id,
+      ROUTE_VIDEOS.heatherEricHamberSb.id,
+    ],
     positions: [N_OF_35TH, [49.23977, -123.12375], WILLOW_33RD_SW],
   },
   {
     description: "33rd eb",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.heatherEricHamberNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.heatherEricHamberNb.id],
     positions: [
       WILLOW_33RD_SW,
       [49.24113, -123.12362],

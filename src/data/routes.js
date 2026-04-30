@@ -1522,6 +1522,7 @@ export const ROUTES = {
       {
         name: "Eric Hamber connection",
         videos: {
+          northbound: ROUTE_VIDEOS.heatherEricHamberNb,
           southbound: ROUTE_VIDEOS.heatherEricHamberSb,
         },
       },
