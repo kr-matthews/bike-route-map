@@ -9,7 +9,7 @@ import { ROUTE_VIDEOS } from "../videos/routes";
 
 const EAST_BLVD_68TH = [49.21064, -123.14522];
 const GRANVILLE_68TH_E = [49.21052, -123.14037];
-const GRANVILLE_67TH_E = [49.21089, -123.14036];
+const GRANVILLE_67TH_E = [49.21089, -123.14028];
 
 export const SIXTY_SEVENTH = [
   {
@@ -64,7 +64,12 @@ export const SIXTY_SEVENTH = [
       ROUTE_VIDEOS.sixtySeventhEb.id,
       ROUTE_VIDEOS.sixtySeventhPlusWb.id,
     ],
-    positions: [GRANVILLE_68TH_E, GRANVILLE_67TH_E],
+    positions: [
+      GRANVILLE_68TH_E,
+      [49.21052, -123.14033],
+      [49.21055, -123.14029],
+      GRANVILLE_67TH_E,
+    ],
   },
   {
     routeNames: [ROUTES.sixtySeventh.name],
