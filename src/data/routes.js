@@ -197,9 +197,16 @@ export const ROUTES = {
   sixtySeventh: {
     name: "67th",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { westbound: ROUTE_VIDEOS.sixtySeventhPlusWb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.sixtySeventhEb,
+          westbound: ROUTE_VIDEOS.sixtySeventhPlusWb,
+        },
+      },
+    ],
     notes:
-      "Flat. No traffic calming, can get very busy with cars. Crossing Granville can be confusing.",
+      "Flat. No traffic calming, can get very very busy with cars. The crossing at Granville was improved in 2026.",
   },
   acadia: {
     name: "Acadia Rd",

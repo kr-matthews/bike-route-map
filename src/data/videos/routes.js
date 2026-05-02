@@ -2092,6 +2092,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Jun 05 2023"),
     minutes: 11,
   },
+  sixtySeventhEb: {
+    id: "xSwGw_GoSsc",
+    date: new Date("Apr 29 2026"),
+    minutes: 6,
+  },
   smitheEb: {
     id: "slmvyyt8MRQ",
     date: new Date("Dec 18 2024"),
