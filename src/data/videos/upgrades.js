@@ -415,4 +415,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.24003, -122.95672],
     region: REGIONS.burnaby,
   },
+  sixtySeventhGranvilleWb26: {
+    id: "KOD09o_c1J4",
+    title: "67th crossing Granville St",
+    routeNames: [ROUTES.sixtySeventh.name],
+    direction: "westbound",
+    date: new Date("Apr 29 2026"),
+    minutes: 1,
+    position: [49.21071, -123.14028],
+    region: REGIONS.vancouver,
+  },
 };
