@@ -109,12 +109,19 @@ export const THIRD_NV = [
   },
   {
     routeNames: [ROUTES.thirdNv.name],
+    description: "eb crossing queensbury",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.thirdNvEb.id, ROUTE_VIDEOS.queensburySb.id],
+    positions: [QUEENSBURY_3RD_SW, QUEENSBURY_3RD_SE],
+  },
+  {
+    routeNames: [ROUTES.thirdNv.name],
     description: "eb from queensbury",
     type: "painted",
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.thirdNvEb.id],
     positions: [
-      QUEENSBURY_3RD_SW,
       QUEENSBURY_3RD_SE,
       [49.30837, -123.05689],
       [49.30839, -123.05662],

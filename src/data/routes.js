@@ -1370,6 +1370,7 @@ export const ROUTES = {
       {
         videos: {
           northbound: ROUTE_VIDEOS.grandBlvdNb,
+          southbound: ROUTE_VIDEOS.grandBlvdSb,
         },
       },
     ],
@@ -1682,7 +1683,11 @@ export const ROUTES = {
     name: "Jones/Mahon",
     regions: [REGIONS.northVancouver],
     legs: [
-      { videos: {} },
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.jonesNb,
+        },
+      },
       {
         name: "Hwy 1 overpass",
         videos: {
@@ -2536,6 +2541,7 @@ export const ROUTES = {
       {
         videos: {
           northbound: ROUTE_VIDEOS.queensburyNb,
+          southbound: ROUTE_VIDEOS.queensburySb,
         },
       },
     ],
@@ -2659,9 +2665,15 @@ export const ROUTES = {
   stAndrews: {
     name: "St Andrews Ave",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.stAndrewsNb,
+        },
+      },
+    ],
     notes:
-      "Very steep at the south end, then gets flatter but still on a hill.",
+      "Very steep at the south end, then gets flatter but still on a hill. The painted lane portions are parking-protected, which is nice.",
   },
   stGeorge: {
     name: "St George Rainway",

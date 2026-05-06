@@ -27,12 +27,14 @@ export const GRAND_BLVD = [
   {
     description: "crossing 19th, e blvd",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.grandBlvdSb.id],
     positions: [BLVD_CR_19TH_NW, [49.32601, -123.05641], GRAND_BLVD_E_19TH_SW],
   },
   {
     description: "crossing keith, e blvd",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [ROUTE_VIDEOS.queensburySb.id, ROUTE_VIDEOS.grandBlvdSb.id],
     positions: [GRAND_BLVD_E_KEITH_NW, GRAND_BLVD_E_KEITH_SW],
   },
 
@@ -51,6 +53,8 @@ export const GRAND_BLVD = [
     type: "dedicated",
     oneWay: "required",
     hideArrows: true,
+    videoIds: [ROUTE_VIDEOS.queensburySb.id, ROUTE_VIDEOS.grandBlvdSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.queensburySb.id],
     positions: [GRAND_BLVD_E_KEITH_NW_N, GRAND_BLVD_E_KEITH_NW],
   },
   {
@@ -89,6 +93,7 @@ export const GRAND_BLVD = [
     description: "sb",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.grandBlvdSb.id],
     positions: [
       GRAND_BLVD_E_19TH_SW,
       [49.32573, -123.05644],

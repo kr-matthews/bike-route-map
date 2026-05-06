@@ -24,23 +24,33 @@ const QUEENSBURY_KEITH_SW = [49.31343, -123.05721];
 export const QUEENSBURY = [
   // keith
   {
-    description: "keith s side, w to queensbury and crossing",
+    description: "keith s side, w to queensbury",
     type: "mixed",
     videoIds: [
       ROUTE_VIDEOS.grandBlvdNb.id,
       ROUTE_VIDEOS.eKeithWb.id,
       ROUTE_VIDEOS.queensburyNb.id,
     ],
-    positions: [
-      GRAND_BLVD_W_KEITH_SE,
-      QUEENSBURY_KEITH_SW,
-      QUEENSBURY_KEITH_SE,
+    positions: [GRAND_BLVD_W_KEITH_SE, QUEENSBURY_KEITH_SW],
+  },
+  {
+    description: "keith s side, crossing queensbury",
+    type: "mixed",
+    videoIds: [
+      ROUTE_VIDEOS.queensburySb.id,
+      ROUTE_VIDEOS.grandBlvdNb.id,
+      ROUTE_VIDEOS.eKeithWb.id,
+      ROUTE_VIDEOS.queensburyNb.id,
+      ROUTE_VIDEOS.grandBlvdSb.id,
     ],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.grandBlvdSb.id],
+    positions: [QUEENSBURY_KEITH_SW, QUEENSBURY_KEITH_SE],
   },
   {
     description: "keith s side, queensbury to e",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [ROUTE_VIDEOS.queensburySb.id, ROUTE_VIDEOS.grandBlvdSb.id],
     positions: [GRAND_BLVD_E_KEITH_SW, QUEENSBURY_KEITH_SE],
   },
 
@@ -116,6 +126,7 @@ export const QUEENSBURY = [
     description: "sb shared start",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.queensburySb.id],
     positions: [QUEENSBURY_KEITH_SW, [49.31295, -123.0572], QUEENSBURY_7TH_W],
   },
   {
@@ -123,6 +134,7 @@ export const QUEENSBURY = [
     description: "sb painted",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.queensburySb.id],
     positions: [QUEENSBURY_7TH_W, QUEENSBURY_4TH_W, QUEENSBURY_SB_LANE_END],
   },
   {
@@ -130,6 +142,7 @@ export const QUEENSBURY = [
     description: "sb shared end",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.queensburySb.id],
     positions: [
       QUEENSBURY_SB_LANE_END,
       [49.30861, -123.05729],
@@ -141,6 +154,7 @@ export const QUEENSBURY = [
     description: "sb crossing 3rd",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.queensburySb.id],
     positions: [QUEENSBURY_3RD_NW, QUEENSBURY_3RD_SW],
   },
 ];

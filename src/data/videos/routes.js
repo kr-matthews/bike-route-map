@@ -950,6 +950,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Apr 23 2026"),
     minutes: 8,
   },
+  grandBlvdSb: {
+    id: "B57bOJa2nNE",
+    date: new Date("Apr 30 2026"),
+    minutes: 4,
+  },
   grantMcConachieEb: {
     id: "1P-bpc04h-Y",
     date: new Date("May 27 2025"),
@@ -1215,6 +1220,12 @@ export const ROUTE_VIDEOS = {
     id: "eim5zDSdA2I",
     date: new Date("Aug 05 2023"),
     minutes: 9,
+  },
+  jonesNb: {
+    id: "l6VcmFMrJho",
+    tlId: "tfif06Qi1Gw",
+    date: new Date("Apr 30 2026"),
+    minutes: 12,
   },
   jonesOverpassNb: {
     id: "zjXljS23kAs",
@@ -1790,6 +1801,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Apr 15 2026"),
     minutes: 3,
   },
+  queensburySb: {
+    id: "-o6Yk2WfnaI",
+    date: new Date("Apr 30 2026"),
+    minutes: 2,
+  },
   railwayNb: {
     id: "nezDB-Z7ftA",
     tlId: "qY1oGzQ2uQk",
@@ -2124,6 +2140,12 @@ export const ROUTE_VIDEOS = {
     tlId: "PYdTvuyIhxc",
     date: new Date("Dec 08 2024"),
     minutes: 36,
+  },
+  stAndrewsNb: {
+    id: "367Y0w5y-pw",
+    tlId: "0H-PcTS3aJg",
+    date: new Date("Apr 30 2026"),
+    minutes: 13,
   },
   stevestonEb: {
     id: "ryKwp-INnrI",

@@ -10,6 +10,7 @@ import {
   ST_ANDREWS_SPIRIT,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const ST_ANDREWS_ESPLANADE_N = [49.30854, -123.07329];
 const ST_ANDREWS_KEITH_NW = [49.31438, -123.06728];
@@ -42,7 +43,8 @@ export const ST_ANDREWS = [
   },
   {
     description: "south bit",
-    type: "shared",
+    type: "quiet",
+    videoIds: [ROUTE_VIDEOS.stAndrewsNb.id],
     positions: [
       ST_ANDREWS_SPIRIT,
       [49.30836, -123.07301],
@@ -56,6 +58,7 @@ export const ST_ANDREWS = [
     routeNames: [ROUTES.stAndrews.name],
     description: "esplanade to keith",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.stAndrewsNb.id],
     positions: [
       ST_ANDREWS_ESPLANADE_N,
       [49.30926, -123.07255],
@@ -70,6 +73,7 @@ export const ST_ANDREWS = [
     description: "nb keith to 13th",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.stAndrewsNb.id],
     positions: [
       ST_ANDREWS_KEITH_S,
       [49.31419, -123.06743],
@@ -117,6 +121,8 @@ export const ST_ANDREWS = [
     routeNames: [ROUTES.stAndrews.name],
     description: "13th to 23rd/necklace",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.stAndrewsNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.stAndrewsNb.id],
     positions: [ST_ANDREWS_13TH, ST_ANDREWS_17TH, ST_ANDREWS_23RD_N],
   },
 ];

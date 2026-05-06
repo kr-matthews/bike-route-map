@@ -151,6 +151,8 @@ export const LYNN_VALLEY = [
     description: "blvd cr sb 1",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.grandBlvdSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.grandBlvdSb.id],
     positions: [
       S_OF_21ST,
       [49.32744, -123.05579],
@@ -170,6 +172,7 @@ export const LYNN_VALLEY = [
     description: "blvd cr sb 2",
     type: "mixed",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.grandBlvdSb.id],
     positions: [
       N_OF_19TH,
       [49.32639, -123.05633],

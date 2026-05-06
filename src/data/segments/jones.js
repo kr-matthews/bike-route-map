@@ -24,6 +24,8 @@ export const JONES = [
     routeNames: [ROUTES.jonesMahon.name],
     description: "mahon",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.jonesNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.jonesNb.id],
     positions: [MAHON_4TH, MAHON_6TH_S],
   },
   {
@@ -32,6 +34,7 @@ export const JONES = [
     type: "quiet",
     oneWay: "recommended",
     hideArrows: true,
+    videoIds: [ROUTE_VIDEOS.jonesNb.id],
     positions: [MAHON_6TH_S, MAHON_6TH_N],
   },
   {
@@ -39,6 +42,7 @@ export const JONES = [
     description: "6th wb",
     type: "quiet",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.jonesNb.id],
     positions: [MAHON_6TH_N, JONES_6TH_N],
   },
   {
@@ -64,12 +68,14 @@ export const JONES = [
     routeNames: [ROUTES.jonesMahon.name],
     description: "jones, s of keith",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.jonesNb.id],
     positions: [JONES_6TH_N, [49.31982, -123.08174], JONES_KEITH_S],
   },
   {
     routeNames: [ROUTES.jonesMahon.name],
     description: "keith to 23rd",
     type: "shared",
+    videoIds: [ROUTE_VIDEOS.jonesNb.id],
     positions: [
       JONES_KEITH_S,
       [49.32331, -123.08165],
@@ -82,13 +88,14 @@ export const JONES = [
     routeNames: [ROUTES.jonesMahon.name],
     description: "23rd to 24th",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.jonesNb.id],
     positions: [JONES_23RD, JONES_24TH],
   },
   {
     routeNames: [ROUTES.jonesMahon.name],
     description: "24th to overpass",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.jonesOverpassNb.id],
+    videoIds: [ROUTE_VIDEOS.jonesOverpassNb.id, ROUTE_VIDEOS.jonesNb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.jonesOverpassNb.id],
     positions: [JONES_24TH, JONES_HWY_S_S],
   },
@@ -97,7 +104,7 @@ export const JONES = [
     description: "pre-overpass",
     type: "other",
     elevation: 0.5,
-    videoIds: [ROUTE_VIDEOS.jonesOverpassNb.id],
+    videoIds: [ROUTE_VIDEOS.jonesOverpassNb.id, ROUTE_VIDEOS.jonesNb.id],
     positions: [JONES_HWY_S_S, [49.33183, -123.08117], JONES_HWY_S],
   },
   {
@@ -105,7 +112,7 @@ export const JONES = [
     description: "overpass",
     type: "other",
     elevation: 1,
-    videoIds: [ROUTE_VIDEOS.jonesOverpassNb.id],
+    videoIds: [ROUTE_VIDEOS.jonesOverpassNb.id, ROUTE_VIDEOS.jonesNb.id],
     positions: [
       JONES_HWY_S,
       [49.33187, -123.08221],
@@ -118,7 +125,7 @@ export const JONES = [
     description: "overpass to 25th",
     type: "other",
     elevation: 0.5,
-    videoIds: [ROUTE_VIDEOS.jonesOverpassNb.id],
+    videoIds: [ROUTE_VIDEOS.jonesOverpassNb.id, ROUTE_VIDEOS.jonesNb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.jonesOverpassNb.id],
     positions: [
       JONES_HWY_N,
@@ -131,12 +138,15 @@ export const JONES = [
     routeNames: [ROUTES.jonesMahon.name],
     description: "25th to 29th",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.jonesNb.id],
     positions: [JONES_25TH, [49.33243, -123.08144], JONES_27TH, JONES_29TH],
   },
   {
     routeNames: [ROUTES.jonesMahon.name],
     description: "29th & mahon",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.jonesNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.jonesNb.id],
     positions: [JONES_29TH, [49.33563, -123.07966], [49.33656, -123.07965]],
   },
 ];

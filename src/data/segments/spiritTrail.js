@@ -60,6 +60,8 @@ export const SPIRIT_TRAIL = [
   {
     description: "connection to queensbury/3rd",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.queensburySb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.queensburySb.id],
     positions: [
       MOODY_2ND,
       [49.30758, -123.06018],
@@ -639,7 +641,7 @@ export const SPIRIT_TRAIL = [
   },
   {
     routeNames: [ROUTES.spiritTrail.name],
-    description: "quay to alder",
+    description: "quay to st andrews",
     type: "mixed",
     elevation: -0.5,
     videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
@@ -673,7 +675,26 @@ export const SPIRIT_TRAIL = [
       [49.30917, -123.07534],
       [49.30812, -123.07329],
       ST_ANDREWS_ESPLANADE_SE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.spiritTrail.name],
+    description: "crossing low level at st andrews",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id, ROUTE_VIDEOS.stAndrewsNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.stAndrewsNb.id],
+    positions: [
+      ST_ANDREWS_ESPLANADE_SE,
       ST_ANDREWS_ESPLANADE_NE,
+      ST_ANDREWS_SPIRIT,
+    ],
+  },
+  {
+    routeNames: [ROUTES.spiritTrail.name],
+    description: "st andrews to alder",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
+    positions: [
       ST_ANDREWS_SPIRIT,
       [49.30803, -123.0725],
       [49.30782, -123.07202],
