@@ -415,6 +415,16 @@ export const UPGRADE_VIDEOS = {
     position: [49.24003, -122.95672],
     region: REGIONS.burnaby,
   },
+  midtownCemeteryWb26: {
+    id: "DoNt0P4eLso",
+    title: "Midtown/Ridgeway at M. View Cemetery",
+    routeNames: [ROUTES.midtown.name, ROUTES.ridgeway.name],
+    direction: "westbound",
+    date: new Date("Apr 29 2026"),
+    minutes: 1,
+    position: [49.23707, -123.09212],
+    region: REGIONS.vancouver,
+  },
   sixtySeventhGranvilleWb26: {
     id: "KOD09o_c1J4",
     title: "67th crossing Granville St",
