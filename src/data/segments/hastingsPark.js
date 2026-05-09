@@ -27,7 +27,7 @@ const PANDORA_EXTENSION_END = [49.28299, -123.0423];
 
 export const HASTINGS_PARK = [
   {
-    routeNames: [ROUTES.hastingsPark.name],
+    routeNames: [ROUTES.hastingsPark.name, ROUTES.eastsideCrosscut.name],
     description: "hastings st",
     type: "mixed",
     videoIds: [

@@ -60,6 +60,7 @@ import { DUNSMUIR } from "./dunsmuir";
 import { DUNSMUIR_MELVILLE_PENDER } from "./dunsmuirMelvillePender";
 import { E_KEITH } from "./eKeith";
 import { EAST_MALL } from "./eastMall";
+import { EASTSIDE_CROSSCUT } from "./eastsideCrosscut";
 import { EDMONDS } from "./edmonds";
 import { EWEN } from "./ewen";
 import { FERGUSON } from "./ferguson";
@@ -305,6 +306,7 @@ export const SEGMENTS = [
   ...DUNSMUIR_MELVILLE_PENDER,
   ...E_KEITH,
   ...EAST_MALL,
+  ...EASTSIDE_CROSSCUT,
   ...EDMONDS,
   ...EWEN,
   ...FERGUSON,

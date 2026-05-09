@@ -1131,6 +1131,13 @@ export const ROUTES = {
     notes:
       "The south bit is not great, but the rest is quiet and flat. The painted lanes are beside parked cars.",
   },
+  eastsideCrosscut: {
+    name: "Eastside Crosscut",
+    regions: [REGIONS.vancouver],
+    legs: [{ videos: {} }],
+    notes:
+      "Phase 1, between Central Valley Greenway and Hastings Park, was implemented in early 2026. Eventually it will extend south to the Fraser River, but the exact route has not been finalized.",
+  },
   edmonds: {
     name: "Edmonds",
     regions: [REGIONS.burnaby],
