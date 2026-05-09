@@ -1256,7 +1256,10 @@ export const ROUTES = {
       { name: "Marpole", videos: {} },
       {
         name: "Fraserview",
-        videos: { eastbound: ROUTE_VIDEOS.fraserRiverFraserviewEb },
+        videos: {
+          eastbound: ROUTE_VIDEOS.fraserRiverFraserviewEb,
+          westbound: ROUTE_VIDEOS.fraserRiverFraserviewWb,
+        },
       },
       { name: "River District", videos: {} },
     ],
@@ -1759,7 +1762,20 @@ export const ROUTES = {
   kent: {
     name: "Kent",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { westbound: ROUTE_VIDEOS.kentWb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.kentEb,
+          westbound: ROUTE_VIDEOS.kentWb,
+        },
+      },
+      {
+        name: "Connection to Kerr St via Kinross/Marine",
+        videos: {
+          westbound: ROUTE_VIDEOS.marineWayKinrossWb,
+        },
+      },
+    ],
     notes:
       "Flat. The painted lanes are beside the curb. Generally, the further east you go the better this route is. But the surface is extremely bad in multiple places. The west portion might be the worst bike route in the city. The east has had detours for years due to adjacent construction, but it looks like that might be over as of early 2026.",
   },
@@ -2028,12 +2044,18 @@ export const ROUTES = {
   },
   marineWay: {
     name: "Marine Way",
-    regions: [REGIONS.burnaby],
+    regions: [REGIONS.burnaby, REGIONS.vancouver],
     legs: [
       {
         videos: {
           eastbound: ROUTE_VIDEOS.marineWayEb,
           westbound: ROUTE_VIDEOS.marineWayWb,
+        },
+      },
+      {
+        name: "Between Kerr St and Kinross St",
+        videos: {
+          westbound: ROUTE_VIDEOS.marineWayKinrossWb,
         },
       },
     ],

@@ -155,13 +155,18 @@ export const FRASER_RIVER_TRAIL = [
   {
     description: "victoria st connection road",
     type: "quiet",
+    undesignated: true,
     positions: [VICTORIA_KENT_S, VICTORIA_KENT_N],
   },
   {
     description: "from kent to fraserview portion",
     type: "shared",
     undesignated: true,
-    videoIds: [ROUTE_VIDEOS.fraserRiverFraserviewEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.fraserRiverFraserviewEb.id,
+      ROUTE_VIDEOS.fraserRiverFraserviewWb.id,
+    ],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.fraserRiverFraserviewWb.id],
     positions: [
       ARGYLE_KENT_N_E,
       [49.20886, -123.07136],
@@ -173,7 +178,10 @@ export const FRASER_RIVER_TRAIL = [
     routeNames: [ROUTES.fraserRiverTrail.name],
     description: "victoria-fraserview - w",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.fraserRiverFraserviewEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.fraserRiverFraserviewEb.id,
+      ROUTE_VIDEOS.fraserRiverFraserviewWb.id,
+    ],
     positions: [
       FRASERVIEW_START,
       [49.20826, -123.07009],
@@ -198,7 +206,10 @@ export const FRASER_RIVER_TRAIL = [
     routeNames: [ROUTES.fraserRiverTrail.name],
     description: "victoria-fraserview - middle",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.fraserRiverFraserviewEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.fraserRiverFraserviewWb.id,
+      ROUTE_VIDEOS.fraserRiverFraserviewEb.id,
+    ],
     positions: [
       W_OF_VICTORIA,
       [49.20652, -123.06678],
@@ -217,7 +228,11 @@ export const FRASER_RIVER_TRAIL = [
     routeNames: [ROUTES.fraserRiverTrail.name],
     description: "victoria-fraserview - e",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.fraserRiverFraserviewEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.fraserRiverFraserviewWb.id,
+      ROUTE_VIDEOS.fraserRiverFraserviewEb.id,
+    ],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.fraserRiverFraserviewWb.id],
     positions: [
       E_OF_VICTORIA,
       [49.20618, -123.06507],

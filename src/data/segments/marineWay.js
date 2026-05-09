@@ -1,5 +1,6 @@
 import {
   BOUNDARY_FRASER_RIVER,
+  BOUNDARY_N_FRASER,
   BYRNE_CREEK_MARINE_S,
   KINROSS_KENT,
   NORTH_FRASER_MARINE_SE,
@@ -26,19 +27,24 @@ export const MARINE_WAY = [
   {
     description: "boundary parking lot",
     type: "quiet",
+    undesignated: true,
+    videoIds: [ROUTE_VIDEOS.kentEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.kentEb.id],
     positions: [
       BOUNDARY_FRASER_RIVER,
       [49.20165, -123.02342],
       [49.20216, -123.02339],
       [49.2024, -123.02327],
       [49.20246, -123.0232],
-      [49.20258, -123.02301],
+      BOUNDARY_N_FRASER,
       // [49.20263, -123.0229],
     ],
   },
   {
-    description: "near kinross",
+    description: "marine way MUP at kinross",
     type: "dedicated",
+    videoIds: [ROUTE_VIDEOS.marineWayKinrossWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.marineWayKinrossWb.id],
     positions: [
       [49.20802, -123.04044],
       [49.20794, -123.03999],
@@ -59,18 +65,20 @@ export const MARINE_WAY = [
     description: "kinross nb",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.marineWayKinrossWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.marineWayKinrossWb.id],
     positions: [
-      KINROSS_MARINE_SW,
-      KINROSS_MARINE_SE,
-      [49.2062, -123.03662],
       KINROSS_KENT,
+      [49.2062, -123.03662],
+      KINROSS_MARINE_SE,
+      KINROSS_MARINE_SW,
     ],
   },
   {
     description: "kinross sb",
     type: "painted",
     oneWay: "required",
-    positions: [KINROSS_KENT, [49.2062, -123.03674], KINROSS_MARINE_SW],
+    positions: [KINROSS_MARINE_SW, [49.2062, -123.03674], KINROSS_KENT],
   },
   {
     routeNames: [ROUTES.marineWay.name],

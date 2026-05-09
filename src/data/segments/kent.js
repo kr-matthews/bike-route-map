@@ -1,6 +1,7 @@
 import {
   ARGYLE_KENT_N_E,
   BORDEN_KENT_N_S,
+  BOUNDARY_N_FRASER,
   CAMBIE_KENT_N_S,
   CROMPTON_KENT_N_N,
   CROMPTON_KENT_N_S,
@@ -39,12 +40,15 @@ const DUFF_LANE_KENT_N = [49.20725, -123.06525];
 const KERR_KENT_N_SW_W = [49.20684, -123.04257];
 const BOUNDARY_KENT = [49.20422, -123.02343];
 
+const BOUNDARY_S_OF_KENT = [49.20366, -123.02335];
+
 export const KENT = [
   {
     routeNames: [ROUTES.kent.name],
     description: "kent n: heather to ontario",
     type: "shared",
-    videoIds: [ROUTE_VIDEOS.kentWb.id],
+    videoIds: [ROUTE_VIDEOS.kentEb.id, ROUTE_VIDEOS.kentWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.kentEb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.kentWb.id],
     positions: [
       HEATHER_KENT_N,
@@ -69,8 +73,9 @@ export const KENT = [
     description: "ontario",
     type: "quiet",
     videoIds: [
-      ROUTE_VIDEOS.kentWb.id,
+      ROUTE_VIDEOS.kentEb.id,
       ROUTE_VIDEOS.ontarioNb.id,
+      ROUTE_VIDEOS.kentWb.id,
       ROUTE_VIDEOS.ontarioSb.id,
     ],
     positions: [ONTARIO_KENT_S, ONTARIO_KENT_N],
@@ -80,8 +85,9 @@ export const KENT = [
     description: "kent s: near ontario",
     type: "dedicated",
     videoIds: [
-      ROUTE_VIDEOS.kentWb.id,
+      ROUTE_VIDEOS.kentEb.id,
       ROUTE_VIDEOS.ontarioNb.id,
+      ROUTE_VIDEOS.kentWb.id,
       ROUTE_VIDEOS.ontarioSb.id,
     ],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.ontarioNb.id],
@@ -92,14 +98,14 @@ export const KENT = [
     routeNames: [ROUTES.kent.name],
     description: "kent s: still near ontario",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.kentWb.id],
+    videoIds: [ROUTE_VIDEOS.kentEb.id, ROUTE_VIDEOS.kentWb.id],
     positions: [EAST_OF_ONTARIO, QUEBEC_KENT_S],
   },
   {
     routeNames: [ROUTES.kent.name],
     description: "kent s: quebec to chester",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.kentWb.id],
+    videoIds: [ROUTE_VIDEOS.kentEb.id, ROUTE_VIDEOS.kentWb.id],
     positions: [
       QUEBEC_KENT_S,
       [49.20697, -123.10246],
@@ -113,7 +119,7 @@ export const KENT = [
     routeNames: [ROUTES.kent.name],
     description: "kent s: chester to crompton",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.kentWb.id],
+    videoIds: [ROUTE_VIDEOS.kentEb.id, ROUTE_VIDEOS.kentWb.id],
     positions: [
       CHESTER_KENT_S,
       [49.2083, -123.08692],
@@ -126,8 +132,9 @@ export const KENT = [
     description: "kent s: pre-crompton",
     type: "quiet",
     videoIds: [
-      ROUTE_VIDEOS.kentWb.id,
+      ROUTE_VIDEOS.kentEb.id,
       ROUTE_VIDEOS.invernessNb.id,
+      ROUTE_VIDEOS.kentWb.id,
       ROUTE_VIDEOS.invernessSb.id,
     ],
     videoIdsStartAtStart: [ROUTE_VIDEOS.invernessNb.id],
@@ -139,8 +146,9 @@ export const KENT = [
     description: "crompton between kent s and kent n",
     type: "quiet",
     videoIds: [
-      ROUTE_VIDEOS.kentWb.id,
+      ROUTE_VIDEOS.kentEb.id,
       ROUTE_VIDEOS.invernessNb.id,
+      ROUTE_VIDEOS.kentWb.id,
       ROUTE_VIDEOS.invernessSb.id,
     ],
     positions: [CROMPTON_KENT_S, CROMPTON_KENT_N_S],
@@ -161,6 +169,7 @@ export const KENT = [
     description: "kent n: eb: crompton to borden-ish",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.kentEb.id],
     positions: [
       CROMPTON_KENT_N_S,
       [49.20932, -123.07752],
@@ -173,7 +182,7 @@ export const KENT = [
     description: "kent n: eb: before borden",
     type: "painted",
     oneWay: "required",
-    videoIds: [ROUTE_VIDEOS.dumfriesNb.id],
+    videoIds: [ROUTE_VIDEOS.kentEb.id, ROUTE_VIDEOS.dumfriesNb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.dumfriesNb.id],
     positions: [
       EB_BEFORE_BORDEN,
@@ -187,7 +196,7 @@ export const KENT = [
     description: "kent n: eb: borden to argyle",
     type: "painted",
     oneWay: "required",
-    videoIds: [ROUTE_VIDEOS.fraserRiverFraserviewEb.id],
+    videoIds: [ROUTE_VIDEOS.kentEb.id, ROUTE_VIDEOS.fraserRiverFraserviewEb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.fraserRiverFraserviewEb.id],
     positions: [
       BORDEN_KENT_N_S,
@@ -223,7 +232,7 @@ export const KENT = [
     routeNames: [ROUTES.kent.name],
     description: "kent n: borden to lane after victoria",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.kentWb.id],
+    videoIds: [ROUTE_VIDEOS.kentWb.id, ROUTE_VIDEOS.kentEb.id],
     positions: [
       ARGYLE_KENT_N_E,
       [49.20799, -123.06787],
@@ -235,7 +244,7 @@ export const KENT = [
     routeNames: [ROUTES.kent.name],
     description: "kent n: trail after victoria",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.kentWb.id],
+    videoIds: [ROUTE_VIDEOS.kentWb.id, ROUTE_VIDEOS.kentEb.id],
     positions: [
       DUFF_LANE_KENT_N,
       [49.20722, -123.0652],
@@ -247,7 +256,11 @@ export const KENT = [
     routeNames: [ROUTES.kent.name],
     description: "kent n: portside-ish to path at elliott",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.kentWb.id, ROUTE_VIDEOS.fraserRiverFraserviewEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.kentWb.id,
+      ROUTE_VIDEOS.fraserRiverFraserviewEb.id,
+      ROUTE_VIDEOS.kentEb.id,
+    ],
     positions: [
       GLADSTONE_KENT,
       [49.20638, -123.06219],
@@ -267,13 +280,18 @@ export const KENT = [
     routeNames: [ROUTES.kent.name],
     description: "kent n: elliott bit",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.sunriseNb.id, ROUTE_VIDEOS.sunriseSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.kentEb.id,
+      ROUTE_VIDEOS.sunriseNb.id,
+      ROUTE_VIDEOS.sunriseSb.id,
+    ],
     positions: [ELLIOTT_KENT_W, ELLIOTT_KENT],
   },
   {
     routeNames: [ROUTES.kent.name],
     description: "kent n: elliott to morningstar park",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.kentEb.id],
     positions: [
       ELLIOTT_KENT,
       [49.20582, -123.05638],
@@ -288,6 +306,7 @@ export const KENT = [
     routeNames: [ROUTES.kent.name],
     description: "kent n: morningstar park to before-kerr",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.kentEb.id],
     positions: [
       MORNINGSTAR_PARK_E,
       [49.206, -123.05363],
@@ -316,6 +335,7 @@ export const KENT = [
     routeNames: [ROUTES.kent.name],
     description: "kent n: path from road at kerr",
     type: "dedicated",
+    videoIds: [ROUTE_VIDEOS.kentEb.id],
     positions: [KERR_KENT_N_SW_W, KERR_KENT_N_SW],
   },
   {
@@ -348,7 +368,7 @@ export const KENT = [
     routeNames: [ROUTES.kent.name],
     description: "kent n path: morningstar park",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.kentWb.id],
+    videoIds: [ROUTE_VIDEOS.kentWb.id, ROUTE_VIDEOS.kentEb.id],
     positions: [MORNINGSTAR_PARK_W, MORNINGSTAR_PARK_E],
   },
   {
@@ -376,14 +396,18 @@ export const KENT = [
     routeNames: [ROUTES.kent.name, ROUTES.kerr.name],
     description: "crossing kerr",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.kentWb.id, ROUTE_VIDEOS.kerrSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.kentWb.id,
+      ROUTE_VIDEOS.kerrSb.id,
+      ROUTE_VIDEOS.kentEb.id,
+    ],
     positions: [KERR_KENT_N_SW, KERR_KENT_N_SE],
   },
   {
     routeNames: [ROUTES.kent.name],
     description: "kent n path: kerr to kinross",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.kentWb.id],
+    videoIds: [ROUTE_VIDEOS.kentWb.id, ROUTE_VIDEOS.kentEb.id],
     positions: [
       KERR_KENT_N_SE,
       [49.20676, -123.0419],
@@ -397,6 +421,7 @@ export const KENT = [
     routeNames: [ROUTES.kent.name],
     description: "kent n: public storage",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.kentEb.id],
     positions: [
       KINROSS_KENT,
       [49.20606, -123.03625],
@@ -460,23 +485,37 @@ export const KENT = [
     routeNames: [ROUTES.kent.name],
     description: "kent n: river district crossing to rivergrass",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.kentWb.id],
+    videoIds: [ROUTE_VIDEOS.kentWb.id, ROUTE_VIDEOS.kentEb.id],
     positions: [RIVER_DISTRICT_CROSSING_KENT_N, RIVERGRASS_KENT_SW],
   },
   {
     routeNames: [ROUTES.kent.name],
     description: "kent n: rivergrass to boundary",
     type: "combined",
-    videoIds: [ROUTE_VIDEOS.kentWb.id],
+    videoIds: [ROUTE_VIDEOS.kentWb.id, ROUTE_VIDEOS.kentEb.id],
     positions: [RIVERGRASS_KENT_SW, BOUNDARY_KENT],
   },
   {
-    description: "part of boundary",
+    description: "boundary, n of n fraser way",
     type: "shared",
     undesignated: true,
-    videoIds: [ROUTE_VIDEOS.kentWb.id],
+    videoIds: [ROUTE_VIDEOS.kentEb.id],
+    positions: [
+      BOUNDARY_N_FRASER,
+      [49.20265, -123.02299],
+      [49.20291, -123.02319],
+      [49.20323, -123.02331],
+      [49.20342, -123.02334],
+      BOUNDARY_S_OF_KENT,
+    ],
+  },
+  {
+    description: "boundary, s of kent",
+    type: "shared",
+    undesignated: true,
+    videoIds: [ROUTE_VIDEOS.kentWb.id, ROUTE_VIDEOS.kentEb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.kentWb.id],
-    positions: [[49.20366, -123.02335], [49.20417, -123.02337], BOUNDARY_KENT],
+    positions: [BOUNDARY_S_OF_KENT, [49.20417, -123.02337], BOUNDARY_KENT],
   },
   // was closed off as of 2024-02-04
   // {
@@ -511,7 +550,7 @@ export const KENT = [
     routeNames: [ROUTES.kent.name],
     description: "kent n: uppal to river district crossing",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.kentWb.id],
+    videoIds: [ROUTE_VIDEOS.kentWb.id, ROUTE_VIDEOS.kentEb.id],
     positions: [
       JACK_UPPAL_KENT_N,
       [49.20546, -123.03223],

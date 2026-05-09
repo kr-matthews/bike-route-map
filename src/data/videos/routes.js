@@ -857,6 +857,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Dec 23 2023"),
     minutes: 9,
   },
+  fraserRiverFraserviewWb: {
+    id: "MEIaBT6WX8E",
+    date: new Date("May 07 2026"),
+    minutes: 3,
+  },
   fraserRiverSouthlandsEb: {
     id: "sp6dUNsRfQc",
     date: new Date("Jan 09 2025"),
@@ -1253,6 +1258,12 @@ export const ROUTE_VIDEOS = {
     tlId: "MWrCZ5BteJA",
     date: new Date("Mar 17 2025"),
     minutes: 7,
+  },
+  kentEb: {
+    id: "N8Tf5yJ5F4E",
+    tlId: "BD49jdLZVIE",
+    date: new Date("May 07 2026"),
+    minutes: 23,
   },
   kentWb: {
     id: "S7VZgDfZ4XU",
@@ -2237,6 +2248,11 @@ export const ROUTE_VIDEOS = {
     tlId: "lwjABK_GyPA",
     date: new Date("Mar 13 2024"),
     minutes: 18,
+  },
+  marineWayKinrossWb: {
+    id: "bdwV0w6AXo0",
+    date: new Date("May 07 2026"),
+    minutes: 2,
   },
   tatlowNb: {
     id: "Davj2dfekgA",
