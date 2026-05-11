@@ -874,6 +874,7 @@ export const ROUTE_VIDEOS = {
   },
   fraserForeshoreEb: {
     id: "JpuMhCUJYSU",
+    tlId: "jmpD00JDl-I",
     date: new Date("Dec 23 2023"),
     minutes: 10,
   },
@@ -934,6 +935,7 @@ export const ROUTE_VIDEOS = {
   },
   glenlyonNb: {
     id: "MAR219VGiFA",
+    tlId: "WkqYBEGMdhc",
     date: new Date("Aug 17 2023"),
     minutes: 10,
   },
