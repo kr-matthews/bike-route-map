@@ -77,6 +77,7 @@ import { FRANCES_UNION } from "./francesUnion";
 import { FRASER_FORESHORE } from "./fraserForeshoreTrail";
 import { FRASER_RIVER_TRAIL } from "./fraserRiverTrail";
 import { FRASERWOOD_TRAIL } from "./fraserwoodTrail";
+import { FREEWAY_AVALON } from "./freewayAvalon";
 import { GAGLARDI } from "./gaglardi";
 import { GARDEN_CITY } from "./gardenCity";
 import { GATENSBURY } from "./gatensbury";
@@ -323,6 +324,7 @@ export const SEGMENTS = [
   ...FRASER_FORESHORE,
   ...FRASER_RIVER_TRAIL,
   ...FRASERWOOD_TRAIL,
+  ...FREEWAY_AVALON,
   ...GAGLARDI,
   ...GARDEN_CITY,
   ...GATENSBURY,

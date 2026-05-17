@@ -1,11 +1,14 @@
-import { BURNABY_LAKE_OVERPASS_S, SPERLING_SPROTT } from "../intersections";
+import {
+  BURNABY_LAKE_OVERPASS_S,
+  GLENCARIN_PARKING_LOT_E,
+  SPERLING_SPROTT,
+} from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
 const SPERLING_ROBERTS_E = [49.24561, -122.96447];
 const W_OF_OVERPASS = [49.24151, -122.959];
 const PARKING_LOT_W = [49.24041, -122.95483];
-const PARKING_LOT_E = [49.24026, -122.95426];
 
 const OVERPASS_N = [49.24108, -122.95759];
 const OVERPASS_GLENCARIN_PATH = [49.24095, -122.95616];
@@ -108,7 +111,7 @@ export const BURNABY_LAKE_OVERPASS = [
     type: "quiet",
     videoIds: [ROUTE_VIDEOS.burnabyLakeOverpassNb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.burnabyLakeOverpassNb.id],
-    positions: [PARKING_LOT_W, [49.24029, -122.95434], PARKING_LOT_E],
+    positions: [PARKING_LOT_W, [49.24029, -122.95434], GLENCARIN_PARKING_LOT_E],
   },
 
   // overpass
