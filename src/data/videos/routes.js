@@ -2070,11 +2070,13 @@ export const ROUTE_VIDEOS = {
   },
   secondNarrowsNb: {
     id: "salLq2Dkfao",
+    tlId: "Egrj7yyQ-hg",
     date: new Date("Apr 06 2024"),
     minutes: 9,
   },
   secondNarrowsSb: {
     id: "gfOPjc7y4ec",
+    tlId: "0VGG6UB-dk8",
     date: new Date("Apr 06 2024"),
     minutes: 8,
   },
