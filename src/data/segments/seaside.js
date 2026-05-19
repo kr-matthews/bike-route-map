@@ -74,7 +74,7 @@ const EAST_OF_SPYGLASS = [49.2712, -123.11435];
 const LAUREL_LANDBRIDGE_S = [49.26572, -123.12435];
 const LAUREL_LANDBRIDGE_N = [49.26632, -123.12433];
 
-const SCIENCE_WORLD_S = [49.27292, -123.10242];
+const SCIENCE_WORLD_S = [49.27257, -123.10253];
 
 export const SEASIDE = [
   // connections
@@ -832,18 +832,17 @@ export const SEASIDE = [
     type: "dedicated",
     positions: [
       ONTARIO_PATH_SEASIDE,
-      [49.27197, -123.10425],
-      [49.27196, -123.10298],
-      [49.27194, -123.10289],
-      [49.27194, -123.1028],
-      [49.272, -123.10269],
-      [49.27239, -123.10247],
-      [49.2728, -123.10246],
-      SCIENCE_WORLD_S,
+      [49.27194, -123.10423],
+      [49.27194, -123.10323],
+      [49.27192, -123.1031],
+      [49.27193, -123.10301],
+      [49.27197, -123.10291],
+      [49.27203, -123.10283],
+      [49.27237, -123.10254],
+      [49.27257, -123.10253],
     ],
   },
   {
-    routeNames: [ROUTES.seaside.name],
     description: "false creek south - ontario to terminal",
     type: "dedicated",
     isClosed: true,
@@ -855,10 +854,6 @@ export const SEASIDE = [
       [49.272, -123.10352],
       [49.27238, -123.10278],
       [49.27248, -123.10261],
-      [49.27255, -123.10254],
-      [49.27262, -123.10253],
-      [49.27274, -123.10252],
-      [49.27282, -123.10249],
       SCIENCE_WORLD_S,
     ],
   },
@@ -869,6 +864,9 @@ export const SEASIDE = [
     videoIds: [ROUTE_VIDEOS.seasideFalseCreekCw.id],
     positions: [
       SCIENCE_WORLD_S,
+      [49.27274, -123.10254],
+      [49.27288, -123.10248],
+      [49.27292, -123.10242],
       [49.27302, -123.10231],
       [49.27349, -123.10229],
       [49.27366, -123.10233],
