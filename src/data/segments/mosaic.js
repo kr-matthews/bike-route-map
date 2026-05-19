@@ -6,7 +6,8 @@ import {
   WOODLAND_10TH,
   WOODLAND_14TH,
   WOODLAND_7TH,
-  WOODLAND_GRANDVIEW,
+  WOODLAND_GRANDVIEW_N,
+  WOODLAND_GRANDVIEW_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
@@ -63,7 +64,12 @@ export const MOSAIC = [
       ROUTE_VIDEOS.offBroadwayWb.id,
       ROUTE_VIDEOS.offBroadwayEb.id,
     ],
-    positions: [WOODLAND_7TH, WOODLAND_GRANDVIEW],
+    positions: [
+      WOODLAND_7TH,
+      [49.26434, -123.07357],
+      [49.26487, -123.07356],
+      WOODLAND_GRANDVIEW_S,
+    ],
   },
   {
     routeNames: [ROUTES.mosaic.name],
@@ -72,7 +78,8 @@ export const MOSAIC = [
     elevation: 0.5,
     videoIds: [ROUTE_VIDEOS.mosaicSb.id, ROUTE_VIDEOS.mosaicNb.id],
     positions: [
-      WOODLAND_GRANDVIEW,
+      WOODLAND_GRANDVIEW_S,
+      WOODLAND_GRANDVIEW_N,
       [49.26601, -123.07357],
       [49.26783, -123.07353],
       [49.26962, -123.07351],

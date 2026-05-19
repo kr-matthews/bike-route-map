@@ -41,7 +41,8 @@ import {
   SLOCAN_N_GRANDVIEW_S,
   SPERLING_WINSTON,
   VICTORIA_BROADWAY_SE,
-  WOODLAND_GRANDVIEW,
+  WOODLAND_GRANDVIEW_N,
+  WOODLAND_GRANDVIEW_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
@@ -80,7 +81,8 @@ const WESTBOUND_CLOSURE = [49.26725, -123.0933];
 const THORNTON_GREAT_NORTHERN = [49.26694, -123.09508];
 const GREAT_NORTHERN_SPLIT = [49.26691, -123.09309];
 
-const COMMERCIAL_GRANDVIEW = [49.26373, -123.0698];
+const COMMERCIAL_GRANDVIEW_W = [49.26373, -123.0698];
+const COMMERCIAL_GRANDVIEW_E = [49.26372, -123.06966];
 const GRANDVIEW_BROADWAY_NE = [49.26241, -123.06631];
 const GRANDVIEW_BROADWAY_NW = [49.26241, -123.06681];
 const GRANDVIEW_BROADWAY_S = [49.2622, -123.06681];
@@ -379,7 +381,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
       [49.26606, -123.07721],
       [49.26609, -123.07698],
       [49.26563, -123.07557],
-      WOODLAND_GRANDVIEW,
+      WOODLAND_GRANDVIEW_S,
     ],
   },
   {
@@ -393,7 +395,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
       ROUTE_VIDEOS.offBroadwayWb.id,
       ROUTE_VIDEOS.offBroadwayEb.id,
     ],
-    positions: [WOODLAND_GRANDVIEW, COMMERCIAL_GRANDVIEW],
+    positions: [WOODLAND_GRANDVIEW_S, COMMERCIAL_GRANDVIEW_W],
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.offBroadway.name],
@@ -407,9 +409,21 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
     videoIdsStartAtStart: [ROUTE_VIDEOS.centralValleyVancouverEbAlt.id],
     positions: [
-      COMMERCIAL_GRANDVIEW,
-      [49.26372, -123.06966],
+      COMMERCIAL_GRANDVIEW_W,
+      COMMERCIAL_GRANDVIEW_E,
       GRANDVIEW_7_HALF_N,
+    ],
+  },
+  {
+    description: "old painted lane from commercial",
+    type: "painted",
+    oneWay: "required",
+    positions: [
+      COMMERCIAL_GRANDVIEW_E,
+      [49.26388, -123.06997],
+      [49.26407, -123.07049],
+      [49.26444, -123.07159],
+      WOODLAND_GRANDVIEW_N,
     ],
   },
   {
@@ -431,7 +445,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.centralValleyVancouverEb.id],
     positions: [
-      COMMERCIAL_GRANDVIEW,
+      COMMERCIAL_GRANDVIEW_W,
       [49.26345, -123.0691],
       GRANDVIEW_8TH_S,
       [49.26257, -123.06697],
