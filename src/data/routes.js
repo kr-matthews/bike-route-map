@@ -641,6 +641,18 @@ export const ROUTES = {
     notes:
       "Very steep and beside fast traffic. Better to use the adjacent shared use path, but unfortunately that only exists for the top half of the route (though the city plans to extend it all the way down), and does not allow you to cross Gaglardi directly.",
   },
+  burnabyMtnUrbanTrail: {
+    name: "Burnaby Mountain Urban Trail",
+    shortName: "Burnaby Mtn Trail",
+    regions: [REGIONS.burnaby],
+    legs: [
+      {
+        videos: {},
+      },
+    ],
+    notes:
+      "A gradual climb/descent roughly along the southwest edge of Burnaby Mountain.",
+  },
   burrard: {
     name: "Burrard St",
     regions: [REGIONS.vancouver],

@@ -331,7 +331,11 @@ export const FRANCES_UNION = [
     ],
   },
   {
-    routeNames: [ROUTES.brunetteFraser.name, ROUTES.francesUnion.name],
+    routeNames: [
+      ROUTES.burnabyMtnUrbanTrail.name,
+      ROUTES.brunetteFraser.name,
+      ROUTES.francesUnion.name,
+    ],
     description: "wb pre-overpass",
     type: "mixed",
     elevation: 0.5,
@@ -360,7 +364,11 @@ export const FRANCES_UNION = [
     ],
   },
   {
-    routeNames: [ROUTES.brunetteFraser.name, ROUTES.francesUnion.name],
+    routeNames: [
+      ROUTES.burnabyMtnUrbanTrail.name,
+      ROUTES.brunetteFraser.name,
+      ROUTES.francesUnion.name,
+    ],
     description: "hastings overpass",
     type: "mixed",
     elevation: 1,
@@ -385,7 +393,11 @@ export const FRANCES_UNION = [
     ],
   },
   {
-    routeNames: [ROUTES.brunetteFraser.name, ROUTES.francesUnion.name],
+    routeNames: [
+      ROUTES.burnabyMtnUrbanTrail.name,
+      ROUTES.brunetteFraser.name,
+      ROUTES.francesUnion.name,
+    ],
     description: "s of overpass",
     type: "mixed",
     elevation: 0.5,
@@ -401,7 +413,11 @@ export const FRANCES_UNION = [
     ],
   },
   {
-    routeNames: [ROUTES.brunetteFraser.name, ROUTES.francesUnion.name],
+    routeNames: [
+      ROUTES.burnabyMtnUrbanTrail.name,
+      ROUTES.brunetteFraser.name,
+      ROUTES.francesUnion.name,
+    ],
     description: "overpass to cliff",
     type: "mixed",
     videoIds: [
