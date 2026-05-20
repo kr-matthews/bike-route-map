@@ -25,6 +25,7 @@ const BARNET_INLET_S = [49.28822, -122.94958];
 const CLIFF_WESTRIDGE_PARK = [49.28122, -122.95928];
 const HASTINGS_OVERPASS_N = [49.28086, -122.96046];
 const HASTINGS_OVERPASS_S = [49.27997, -122.96001];
+const S_OF_HASTINGS_OVERPASS = [49.28001, -122.96014];
 
 const EAST_OF_BOUNDARY_ADANAC = [49.27756, -123.0221];
 
@@ -385,7 +386,7 @@ export const FRANCES_UNION = [
   },
   {
     routeNames: [ROUTES.brunetteFraser.name, ROUTES.francesUnion.name],
-    description: "overpass to cliff",
+    description: "s of overpass",
     type: "mixed",
     elevation: 0.5,
     videoIds: [
@@ -395,10 +396,23 @@ export const FRANCES_UNION = [
     ],
     positions: [
       HASTINGS_OVERPASS_S,
-      [49.28, -122.96009],
-      [49.28001, -122.96014],
-      [49.27999, -122.96025],
-      [49.27998, -122.96033],
+      [49.28, -122.96006],
+      S_OF_HASTINGS_OVERPASS,
+    ],
+  },
+  {
+    routeNames: [ROUTES.brunetteFraser.name, ROUTES.francesUnion.name],
+    description: "overpass to cliff",
+    type: "mixed",
+    videoIds: [
+      ROUTE_VIDEOS.brunetteFraserSb.id,
+      ROUTE_VIDEOS.francesUnionWb.id,
+      ROUTE_VIDEOS.lakesNb.id,
+    ],
+    positions: [
+      S_OF_HASTINGS_OVERPASS,
+      [49.28, -122.96025],
+      [49.27996, -122.96032],
       [49.27989, -122.96034],
       [49.27984, -122.96031],
       [49.27981, -122.96025],
