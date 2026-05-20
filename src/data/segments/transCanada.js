@@ -1,5 +1,6 @@
 import {
   CARLETON_YALE,
+  HASTINGS_OVERPASS_CASSIA,
   SKEENA_BRIDGEWAY,
   TRANS_CANADA_FRANCES_UNION_E,
   TRANS_CANADA_FRANCES_UNION_W,
@@ -14,14 +15,23 @@ const FELL_N = [49.28601, -122.97524];
 const FELL_HASTINGS_SE = [49.28023, -122.97543];
 const KENSINGTON_HASTINGS_SW = [49.28021, -122.97015];
 const KENSINGTON_TRANS_CANADA_N = [49.28083, -122.97002];
+const SPERLING_TRANS_CANADA = [49.28084, -122.96495];
+const ELLERSLIE_HASTINGS_N = [49.28031, -122.9614];
+const HASTINGS_OVERPASS_HASTINGS = [49.28032, -122.96045];
 
 export const TRANS_CANADA = [
   {
     routeNames: [ROUTES.transCanadaTrail.name],
     description: "from bridgeway",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.seaToRiverNb.id],
-    videoIdsEndAtStart: [ROUTE_VIDEOS.seaToRiverNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.transCanadaTrailBurnabyWb.id,
+      ROUTE_VIDEOS.seaToRiverNb.id,
+    ],
+    videoIdsEndAtStart: [
+      ROUTE_VIDEOS.transCanadaTrailBurnabyWb.id,
+      ROUTE_VIDEOS.seaToRiverNb.id,
+    ],
     positions: [
       SKEENA_BRIDGEWAY,
       [49.29081, -123.02836],
@@ -35,7 +45,10 @@ export const TRANS_CANADA = [
     routeNames: [ROUTES.transCanadaTrail.name],
     description: "~second narrows bridge to sea to river",
     type: "other",
-    videoIds: [ROUTE_VIDEOS.seaToRiverNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.transCanadaTrailBurnabyWb.id,
+      ROUTE_VIDEOS.seaToRiverNb.id,
+    ],
     positions: [
       UNDER_BRIDGE,
       [49.29233, -123.02564],
@@ -74,6 +87,7 @@ export const TRANS_CANADA = [
     routeNames: [ROUTES.transCanadaTrail.name],
     description: "sea to river to willingdon",
     type: "other",
+    videoIds: [ROUTE_VIDEOS.transCanadaTrailBurnabyWb.id],
     positions: [
       CARLETON_YALE,
       [49.28993, -123.01101],
@@ -115,6 +129,7 @@ export const TRANS_CANADA = [
     routeNames: [ROUTES.transCanadaTrail.name],
     description: "willingdon and/to penzance",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.transCanadaTrailBurnabyWb.id],
     positions: [
       WILLINGDON_CAMBRIDGE,
       [49.28648, -123.00295],
@@ -144,6 +159,7 @@ export const TRANS_CANADA = [
     routeNames: [ROUTES.transCanadaTrail.name],
     description: "penzance to fell",
     type: "other",
+    videoIds: [ROUTE_VIDEOS.transCanadaTrailBurnabyWb.id],
     positions: [
       TRANS_CANADA_PENZANCE,
       [49.28956, -122.99338],
@@ -198,6 +214,7 @@ export const TRANS_CANADA = [
     routeNames: [ROUTES.transCanadaTrail.name],
     description: "fell",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.transCanadaTrailBurnabyWb.id],
     positions: [
       FELL_N,
       [49.28427, -122.97533],
@@ -212,6 +229,7 @@ export const TRANS_CANADA = [
     routeNames: [ROUTES.transCanadaTrail.name],
     description: "connect to frances union",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.transCanadaTrailBurnabyWb.id],
     positions: [
       FELL_HASTINGS_SE,
       [49.28022, -122.97537],
@@ -222,6 +240,7 @@ export const TRANS_CANADA = [
     routeNames: [ROUTES.transCanadaTrail.name],
     description: "to kensington",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.transCanadaTrailBurnabyWb.id],
     positions: [
       TRANS_CANADA_FRANCES_UNION_E,
       [49.28011, -122.9731],
@@ -239,6 +258,7 @@ export const TRANS_CANADA = [
     routeNames: [ROUTES.transCanadaTrail.name],
     description: "kensington",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.transCanadaTrailBurnabyWb.id],
     positions: [
       KENSINGTON_HASTINGS_SW,
       [49.28026, -122.97004],
@@ -247,8 +267,9 @@ export const TRANS_CANADA = [
   },
   {
     routeNames: [ROUTES.transCanadaTrail.name],
-    description: "along hastings",
+    description: "along hastings - path",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.transCanadaTrailBurnabyWb.id],
     positions: [
       KENSINGTON_TRANS_CANADA_N,
       [49.28083, -122.96911],
@@ -262,7 +283,44 @@ export const TRANS_CANADA = [
       [49.28089, -122.96602],
       [49.28091, -122.96588],
       [49.28091, -122.96498],
-      [49.28085, -122.96495],
+      SPERLING_TRANS_CANADA,
+    ],
+  },
+  {
+    description: "along hastings - alley",
+    type: "quiet",
+    undesignated: true,
+    videoIds: [ROUTE_VIDEOS.transCanadaTrailBurnabyWb.id],
+    positions: [
+      SPERLING_TRANS_CANADA,
+      [49.28084, -122.96246],
+      [49.28073, -122.96246],
+      [49.28073, -122.96141],
+      ELLERSLIE_HASTINGS_N,
+    ],
+  },
+  {
+    description: "along hastings sidewalk",
+    type: "other",
+    undesignated: true,
+    videoIds: [ROUTE_VIDEOS.transCanadaTrailBurnabyWb.id],
+    positions: [
+      ELLERSLIE_HASTINGS_N,
+      [49.28029, -122.96126],
+      [49.28028, -122.96089],
+      HASTINGS_OVERPASS_HASTINGS,
+    ],
+  },
+  {
+    description: "below hastings overpass n side",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.transCanadaTrailBurnabyWb.id],
+    positions: [
+      HASTINGS_OVERPASS_HASTINGS,
+      [49.28045, -122.96046],
+      [49.28076, -122.96035],
+      [49.28082, -122.96022],
+      HASTINGS_OVERPASS_CASSIA,
     ],
   },
 ];

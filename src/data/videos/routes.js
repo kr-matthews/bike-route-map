@@ -2332,6 +2332,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Dec 29 2024"),
     minutes: 35,
   },
+  transCanadaTrailBurnabyWb: {
+    id: "M0F8KaTy5IA",
+    tlId: "3w-ry_NfT2U",
+    date: new Date("May 19 2026"),
+    minutes: 24,
+  },
   twentyNinthWb: {
     id: "ReFbPGbBm38",
     tlId: "10EB9bjmTHY",

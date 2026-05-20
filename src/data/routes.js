@@ -3127,7 +3127,10 @@ export const ROUTES = {
     isIncomplete: true,
     regions: [REGIONS.vancouver, REGIONS.burnaby],
     legs: [
-      { name: "Burnaby", videos: { westbound: ROUTE_VIDEOS.seaToRiverNb } },
+      {
+        name: "Burnaby Heights & Capitol Hill",
+        videos: { westbound: ROUTE_VIDEOS.transCanadaTrailBurnabyWb },
+      },
     ],
     notes:
       "This is a route across Canada. In Metro Vancouver, many portions overlap with other routes (so I haven't properly mapped it all out) and other portions it only exists for pedestrians (for example, at Sperling Ave near Hastings, you need to use the sidewalk). I've only mapped out the most connected/useful section, in Burnaby.",
