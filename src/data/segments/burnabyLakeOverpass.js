@@ -109,6 +109,7 @@ export const BURNABY_LAKE_OVERPASS = [
   {
     description: "freeway trail parking lot",
     type: "quiet",
+    undesignated: true,
     videoIds: [ROUTE_VIDEOS.burnabyLakeOverpassNb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.burnabyLakeOverpassNb.id],
     positions: [PARKING_LOT_W, [49.24029, -122.95434], GLENCARIN_PARKING_LOT_E],
