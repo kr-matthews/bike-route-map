@@ -78,9 +78,9 @@ export const FREEWAY_AVALON = [
     ],
   },
   {
-    routeNames: [ROUTES.freewayAvalon.name],
     description: "avalon with cars",
     type: "quiet",
+    undesignated: true,
     positions: [
       AVALON_PARKING_LOT_W,
       [49.24658, -122.91772],
@@ -90,9 +90,9 @@ export const FREEWAY_AVALON = [
     ],
   },
   {
-    routeNames: [ROUTES.freewayAvalon.name],
     description: "crossing cariboo",
     type: "shared",
+    undesignated: true,
     positions: [CARIBOO_AVALON_W, CARIBOO_AVALON_E],
   },
 ];
