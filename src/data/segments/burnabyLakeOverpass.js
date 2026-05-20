@@ -95,7 +95,10 @@ export const BURNABY_LAKE_OVERPASS = [
   {
     description: "glencarin path, e of overpass",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.burnabyLakeOverpassNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.freewayAvalonEb.id,
+      ROUTE_VIDEOS.burnabyLakeOverpassNb.id,
+    ],
     positions: [
       OVERPASS_GLENCARIN_PATH,
       [49.24081, -122.95572],
@@ -110,7 +113,10 @@ export const BURNABY_LAKE_OVERPASS = [
     description: "freeway trail parking lot",
     type: "quiet",
     undesignated: true,
-    videoIds: [ROUTE_VIDEOS.burnabyLakeOverpassNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.freewayAvalonEb.id,
+      ROUTE_VIDEOS.burnabyLakeOverpassNb.id,
+    ],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.burnabyLakeOverpassNb.id],
     positions: [PARKING_LOT_W, [49.24029, -122.95434], GLENCARIN_PARKING_LOT_E],
   },
@@ -122,6 +128,7 @@ export const BURNABY_LAKE_OVERPASS = [
     type: "mixed",
     elevation: 1,
     videoIds: [
+      ROUTE_VIDEOS.freewayAvalonEb.id,
       ROUTE_VIDEOS.burnabyLakeOverpassNb.id,
       ROUTE_VIDEOS.burnabyLakeOverpassSb.id,
     ],
@@ -133,6 +140,7 @@ export const BURNABY_LAKE_OVERPASS = [
     type: "mixed",
     elevation: 0.5,
     videoIds: [
+      ROUTE_VIDEOS.freewayAvalonEb.id,
       ROUTE_VIDEOS.burnabyLakeOverpassSb.id,
       ROUTE_VIDEOS.burnabyLakeOverpassNb.id,
     ],

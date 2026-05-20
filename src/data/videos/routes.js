@@ -878,6 +878,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Dec 23 2023"),
     minutes: 10,
   },
+  freewayAvalonEb: {
+    id: "WKfwiqj00mY",
+    tlId: "M5v-shNSkjM",
+    date: new Date("May 19 2026"),
+    minutes: 14,
+  },
   gaglardiNb: {
     id: "o-IUnGZKH2w",
     tlId: "Yh7PP0EKIgc",

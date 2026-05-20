@@ -1033,8 +1033,10 @@ export const CENTRAL_VALLEY_GREENWAY = [
     videoIds: [
       ROUTE_VIDEOS.centralValleyBurnabyWb.id,
       ROUTE_VIDEOS.brunetteFraserSb.id,
+      ROUTE_VIDEOS.freewayAvalonEb.id,
       ROUTE_VIDEOS.centralValleyBurnabyEb.id,
     ],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.freewayAvalonEb.id],
     positions: [
       CARIBOO_CARIBOO_PL_E,
       [49.24938, -122.91418],

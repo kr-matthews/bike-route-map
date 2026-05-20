@@ -4,6 +4,7 @@ import {
   GLENCARIN_PARKING_LOT_E,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const AVALON_PARKING_LOT_W = [49.24616, -122.91851];
 
@@ -12,6 +13,7 @@ export const FREEWAY_AVALON = [
     routeNames: [ROUTES.freewayAvalon.name],
     description: "freeway/avalon",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.freewayAvalonEb.id],
     positions: [
       GLENCARIN_PARKING_LOT_E,
       [49.2401, -122.95388],
@@ -81,6 +83,7 @@ export const FREEWAY_AVALON = [
     description: "avalon with cars",
     type: "quiet",
     undesignated: true,
+    videoIds: [ROUTE_VIDEOS.freewayAvalonEb.id],
     positions: [
       AVALON_PARKING_LOT_W,
       [49.24658, -122.91772],
@@ -93,6 +96,7 @@ export const FREEWAY_AVALON = [
     description: "crossing cariboo",
     type: "shared",
     undesignated: true,
+    videoIds: [ROUTE_VIDEOS.freewayAvalonEb.id],
     positions: [CARIBOO_AVALON_W, CARIBOO_AVALON_E],
   },
 ];

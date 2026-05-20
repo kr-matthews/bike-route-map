@@ -617,7 +617,11 @@ export const MIDTOWN = [
     description: "claude path to overpass",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [ROUTE_VIDEOS.burnabyLakeOverpassNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.freewayAvalonEb.id,
+      ROUTE_VIDEOS.burnabyLakeOverpassNb.id,
+    ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.freewayAvalonEb.id],
     positions: [
       MCCARTHY_CLAUDE_NW,
       [49.24036, -122.95851],

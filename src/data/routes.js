@@ -1288,7 +1288,13 @@ export const ROUTES = {
     name: "Freeway Trail/Avalon Trail",
     shortName: "Freeway/Avalon Trail",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.freewayAvalonEb,
+        },
+      },
+    ],
     notes:
       "Unpleasantly close to Highway 1. Only the west end of the trail is paved, most of it is (relatively smooth) gravel. Quite flat, besides the brief road at the east end (which is also paved).",
   },

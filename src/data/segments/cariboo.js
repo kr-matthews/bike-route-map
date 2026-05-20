@@ -142,7 +142,7 @@ export const CARIBOO = [
   },
   {
     routeNames: [ROUTES.cariboo.name],
-    description: "nb - after overpass",
+    description: "nb - overpass to gaglardi-ish",
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
@@ -151,6 +151,16 @@ export const CARIBOO = [
       NB_OVERPASS_END,
       [49.24556, -122.91125],
       [49.24576, -122.9116],
+      STORMONT_CARIBOO_NE_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.cariboo.name],
+    description: "nb - gaglardi-ish to avalon",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.caribooNb.id],
+    positions: [
       STORMONT_CARIBOO_NE_E,
       [49.24601, -122.91209],
       [49.24608, -122.91219],
@@ -170,6 +180,16 @@ export const CARIBOO = [
       [49.24799, -122.91364],
       [49.24811, -122.91391],
       [49.24827, -122.91414],
+      CARIBOO_AVALON_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.cariboo.name],
+    description: "nb - avalon to cvg",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.caribooNb.id, ROUTE_VIDEOS.freewayAvalonEb.id],
+    positions: [
       CARIBOO_AVALON_E,
       [49.24845, -122.91432],
       [49.24858, -122.91442],
