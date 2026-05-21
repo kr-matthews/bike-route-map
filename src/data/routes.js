@@ -647,7 +647,7 @@ export const ROUTES = {
     regions: [REGIONS.burnaby],
     legs: [
       {
-        videos: {},
+        videos: { northbound: ROUTE_VIDEOS.burnabyMtnUrbanTrailNb },
       },
     ],
     notes:

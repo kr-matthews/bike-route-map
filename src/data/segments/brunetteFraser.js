@@ -284,7 +284,10 @@ export const BRUNETTE_FRASER = [
     routeNames: [ROUTES.burnabyMtnUrbanTrail.name, ROUTES.brunetteFraser.name],
     description: "cariboo to cliff",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.brunetteFraserSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.burnabyMtnUrbanTrailNb.id,
+      ROUTE_VIDEOS.brunetteFraserSb.id,
+    ],
     positions: [
       CARIBOO_GOVERNMENT,
       [49.25065, -122.91355],

@@ -318,8 +318,10 @@ export const FRANCES_UNION = [
     videoIds: [
       ROUTE_VIDEOS.brunetteFraserSb.id,
       ROUTE_VIDEOS.francesUnionWb.id,
+      ROUTE_VIDEOS.burnabyMtnUrbanTrailNb.id,
     ],
     videoIdsStartAtStart: [ROUTE_VIDEOS.brunetteFraserSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.burnabyMtnUrbanTrailNb.id],
     positions: [
       MALIBU_LANE_W,
       [49.28596, -122.959],
@@ -345,8 +347,9 @@ export const FRANCES_UNION = [
     videoIds: [
       ROUTE_VIDEOS.brunetteFraserSb.id,
       ROUTE_VIDEOS.francesUnionWb.id,
-      ROUTE_VIDEOS.lakesNb.id,
       ROUTE_VIDEOS.transCanadaTrailBurnabyWb.id,
+      ROUTE_VIDEOS.burnabyMtnUrbanTrailNb.id,
+      ROUTE_VIDEOS.lakesNb.id,
     ],
     videoIdsEndAtStart: [ROUTE_VIDEOS.lakesNb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.transCanadaTrailBurnabyWb.id],
@@ -374,6 +377,7 @@ export const FRANCES_UNION = [
     videoIds: [
       ROUTE_VIDEOS.brunetteFraserSb.id,
       ROUTE_VIDEOS.francesUnionWb.id,
+      ROUTE_VIDEOS.burnabyMtnUrbanTrailNb.id,
       ROUTE_VIDEOS.lakesNb.id,
     ],
     positions: [
@@ -398,6 +402,7 @@ export const FRANCES_UNION = [
     videoIds: [
       ROUTE_VIDEOS.brunetteFraserSb.id,
       ROUTE_VIDEOS.francesUnionWb.id,
+      ROUTE_VIDEOS.burnabyMtnUrbanTrailNb.id,
       ROUTE_VIDEOS.lakesNb.id,
     ],
     positions: [
@@ -427,6 +432,7 @@ export const FRANCES_UNION = [
     videoIds: [
       ROUTE_VIDEOS.brunetteFraserSb.id,
       ROUTE_VIDEOS.francesUnionWb.id,
+      ROUTE_VIDEOS.burnabyMtnUrbanTrailNb.id,
       ROUTE_VIDEOS.lakesNb.id,
     ],
     positions: [
@@ -446,6 +452,7 @@ export const FRANCES_UNION = [
     videoIds: [
       ROUTE_VIDEOS.brunetteFraserSb.id,
       ROUTE_VIDEOS.francesUnionWb.id,
+      ROUTE_VIDEOS.burnabyMtnUrbanTrailNb.id,
       ROUTE_VIDEOS.lakesNb.id,
     ],
     positions: [

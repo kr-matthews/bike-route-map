@@ -341,6 +341,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Nov 17 2024"),
     minutes: 7,
   },
+  burnabyMtnUrbanTrailNb: {
+    id: "SsP1RnY2tYo",
+    tlId: "y6M8mLx_O0w",
+    date: new Date("May 19 2026"),
+    minutes: 25,
+  },
   burrardNb: {
     id: "62m58RRdHcg",
     date: new Date("Aug 12 2023"),

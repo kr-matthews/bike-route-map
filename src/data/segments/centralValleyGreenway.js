@@ -1007,6 +1007,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "government to cariboo plc",
     videoIds: [
       ROUTE_VIDEOS.centralValleyBurnabyWb.id,
+      ROUTE_VIDEOS.burnabyMtnUrbanTrailNb.id,
       ROUTE_VIDEOS.brunetteFraserSb.id,
       ROUTE_VIDEOS.caribooSb.id,
       ROUTE_VIDEOS.gaglardiNb.id,
@@ -1032,10 +1033,12 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "cariboo pl",
     videoIds: [
       ROUTE_VIDEOS.centralValleyBurnabyWb.id,
+      ROUTE_VIDEOS.burnabyMtnUrbanTrailNb.id,
       ROUTE_VIDEOS.brunetteFraserSb.id,
       ROUTE_VIDEOS.freewayAvalonEb.id,
       ROUTE_VIDEOS.centralValleyBurnabyEb.id,
     ],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.burnabyMtnUrbanTrailNb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.freewayAvalonEb.id],
     positions: [
       CARIBOO_CARIBOO_PL_E,
