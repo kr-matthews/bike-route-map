@@ -417,7 +417,7 @@ export const UPGRADE_VIDEOS = {
   },
   midtownCemeteryWb26: {
     id: "DoNt0P4eLso",
-    title: "Midtown/Ridgeway at M. View Cemetery",
+    title: "Midtown/Ridgeway @ M. View Cemetery",
     routeNames: [ROUTES.midtown.name, ROUTES.ridgeway.name],
     direction: "westbound",
     date: new Date("Apr 29 2026"),
