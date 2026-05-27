@@ -11,6 +11,8 @@ import {
   CAMBIE_64TH_E,
   CAMBIE_64TH_W,
   CAMBIE_DUNSMUIR,
+  CAMBIE_KING_EDWARD_NE,
+  CAMBIE_KING_EDWARD_SE,
   CAMBIE_MARINE_NE,
   CAMBIE_PENDER_NE,
   CAMBIE_PENDER_SE,
@@ -22,7 +24,8 @@ import {
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
-const CAMBIE_30TH_SW = [49.24377, -123.11754];
+const CAMBIE_30TH_SE = [49.24351, -123.11727];
+const CAMBIE_30TH_SW = [49.24376, -123.11758];
 const CAMBIE_33RD_E = [49.24112, -123.11824];
 const CAMBIE_42ND_E = [49.23252, -123.11606];
 const CAMBIE_58TH_W = [49.21776, -123.11706];
@@ -89,10 +92,9 @@ export const CAMBIE = [
     description: "crossing cambie at 30th",
     type: "dedicated",
     oneWay: "required",
-    positions: [CAMBIE_30TH_SW, [49.2437, -123.11743]],
+    positions: [CAMBIE_30TH_SW, CAMBIE_30TH_SE],
   },
   {
-    routeNames: [ROUTES.cambie.name],
     description: "sb brief lane 30th to 31st",
     type: "dedicated",
     oneWay: "required",
@@ -106,8 +108,7 @@ export const CAMBIE = [
     ],
   },
   {
-    routeNames: [ROUTES.cambie.name],
-    description: "sb brief lane to 34th",
+    description: "sb brief lane to 35th",
     type: "dedicated",
     oneWay: "required",
     positions: [
@@ -228,6 +229,7 @@ export const CAMBIE = [
       [49.2431, -123.11778],
       [49.2433, -123.11757],
       [49.24346, -123.11735],
+      CAMBIE_30TH_SE,
       [49.2436, -123.11711],
       [49.24414, -123.11615],
       [49.24429, -123.11593],
@@ -236,6 +238,18 @@ export const CAMBIE = [
       [49.24487, -123.11543],
       [49.24506, -123.11533],
       CAMBIE_29TH_SE,
+    ],
+  },
+  {
+    description: "nb: 26th to king edward",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      [49.248, -123.11519],
+      [49.24833, -123.1152],
+      [49.24854, -123.11515],
+      CAMBIE_KING_EDWARD_SE,
+      CAMBIE_KING_EDWARD_NE,
     ],
   },
 ];

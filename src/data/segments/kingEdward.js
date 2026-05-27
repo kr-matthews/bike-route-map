@@ -6,6 +6,8 @@ import {
   ARBUTUS_KING_EDWARD_SE,
   BALACLAVA_KING_EDWARD_N,
   BALACLAVA_KING_EDWARD_S,
+  CAMBIE_KING_EDWARD_SE,
+  CAMBIE_KING_EDWARD_SW,
   DUNBAR_KING_EDWARD_NE,
   DUNBAR_KING_EDWARD_NW,
   DUNBAR_KING_EDWARD_SE,
@@ -46,13 +48,20 @@ export const KING_EDWARD = [
     ],
   },
   {
-    description: "king edward/cambie 1",
+    description: "king edward, cambie to yukon",
     type: "dedicated",
     oneWay: "required",
-    positions: [[49.24886, -123.11429], YUKON_KING_EDWARD_SW],
+    positions: [
+      CAMBIE_KING_EDWARD_SW,
+      CAMBIE_KING_EDWARD_SE,
+      [49.24884, -123.11453],
+      [49.24886, -123.11444],
+      [49.24886, -123.11429],
+      YUKON_KING_EDWARD_SW,
+    ],
   },
   {
-    description: "king edward/cambie 2",
+    description: "king edward, yukon to beyond columbia",
     type: "dedicated",
     oneWay: "required",
     positions: [
@@ -60,6 +69,8 @@ export const KING_EDWARD = [
       [49.24883, -123.1121],
       [49.24881, -123.1104],
       COLUMBIA_KING_EDWARD,
+      [49.24883, -123.10988],
+      [49.24883, -123.10955],
     ],
   },
   {
