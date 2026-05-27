@@ -435,4 +435,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.21071, -123.14028],
     region: REGIONS.vancouver,
   },
+  cambie33rdNb26: {
+    id: "_3MmZZw9ftg",
+    title: "Cambie St, 33rd → 29th",
+    routeNames: [ROUTES.cambie.name],
+    direction: "northbound",
+    date: new Date("May 25 2026"),
+    minutes: 1,
+    position: [49.2428, -123.11797],
+    region: REGIONS.vancouver,
+  },
 };
