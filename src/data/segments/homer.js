@@ -1,5 +1,6 @@
 import {
   HOMER_BEACH,
+  HOMER_DRAKE_S,
   HOMER_DUNSMUIR,
   HOMER_HELMCKEN,
   HOMER_NELSON,
@@ -46,7 +47,7 @@ export const HOMER = [
       [49.2737, -123.12555],
       [49.27378, -123.12546],
       [49.27395, -123.12521],
-      [49.27419, -123.12484],
+      HOMER_DRAKE_S,
       [49.27525, -123.12324],
       HOMER_HELMCKEN,
       HOMER_NELSON,

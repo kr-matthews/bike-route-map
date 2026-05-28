@@ -2,14 +2,21 @@ import {
   BURRARD_DRAKE_E,
   BURRARD_DRAKE_W,
   GRANVILLE_DRAKE_W,
+  HOMER_DRAKE_S,
   HORNBY_DRAKE,
   HOWE_DRAKE_W,
+  PACIFIC_DRAKE_E,
+  PACIFIC_DRAKE_N,
+  PACIFIC_DRAKE_S,
+  PACIFIC_DRAKE_W,
+  RICHARDS_DRAKE_S,
   ROLSTON_DRAKE_SW,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
 const HORNBY_DRAKE_E_ALLEY = [49.27704, -123.12935];
+const HAMILTON_DRAKE_S = [49.27379, -123.12432];
 
 export const DRAKE = [
   {
@@ -64,5 +71,43 @@ export const DRAKE = [
     type: "dedicated",
     videoIds: [ROUTE_VIDEOS.drakeEb.id],
     positions: [GRANVILLE_DRAKE_W, ROLSTON_DRAKE_SW],
+  },
+  {
+    routeNames: [ROUTES.drake.name],
+    description: "rolston to hamilton",
+    type: "dedicated",
+    positions: [
+      ROLSTON_DRAKE_SW,
+      RICHARDS_DRAKE_S,
+      HOMER_DRAKE_S,
+      HAMILTON_DRAKE_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.drake.name],
+    description: "nb: s of pacific to hamilton",
+    type: "shared",
+    oneWay: "recommended",
+    positions: [
+      [49.27329, -123.12344],
+      PACIFIC_DRAKE_E,
+      PACIFIC_DRAKE_N,
+      [49.27383, -123.12422],
+      HAMILTON_DRAKE_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.drake.name],
+    description: "sb: hamilton to pacific",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [HAMILTON_DRAKE_S, PACIFIC_DRAKE_W],
+  },
+  {
+    routeNames: [ROUTES.drake.name],
+    description: "sb: s of pacific",
+    type: "painted",
+    oneWay: "required",
+    positions: [PACIFIC_DRAKE_W, PACIFIC_DRAKE_S, [49.27327, -123.12353]],
   },
 ];

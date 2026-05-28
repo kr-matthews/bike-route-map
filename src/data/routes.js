@@ -1072,9 +1072,17 @@ export const ROUTES = {
   drake: {
     name: "Drake",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { eastbound: ROUTE_VIDEOS.drakeEb } }],
+    legs: [
+      // {
+      //   videos: {},
+      // },
+      {
+        name: "Initial 2025 state",
+        videos: { eastbound: ROUTE_VIDEOS.drakeEb },
+      },
+    ],
     notes:
-      "New mid-2025 bike path. A bit of a hill. In the future it will extend all the way to Pacific Blvd.",
+      "A bit of a hill. Initially only from Burrard St to Rolston St in 2025, it was extended to Pacific Blvd in 2026.",
   },
   drummond: {
     name: "Drummond's Walk",
