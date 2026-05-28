@@ -17,9 +17,9 @@ const ELEVATION_S = [49.26764, -123.13858];
 const ELEVATION_N = [49.27522, -123.12927];
 const HOWE_ELEVATION_START = [49.2764, -123.12939];
 const HOWE_PROTECTED_START = [49.27525, -123.13036];
-const GRANVILLE_HOWE = [49.27427, -123.13085];
-const GRANVILLE_NEON_N = [49.27572, -123.12852];
-const ROLSTON_NEON_NE = [49.27535, -123.12788];
+const GRANVILLE_HOWE = [49.27418, -123.13095];
+const GRANVILLE_NEON_N = [49.27571, -123.12854];
+const ROLSTON_NEON_NE = [49.27534, -123.12794];
 const GRANVILLE_PAINT_START = [49.27623, -123.1277];
 
 export const GRANVILLE_CONNECTOR = [
@@ -86,7 +86,7 @@ export const GRANVILLE_CONNECTOR = [
     description: "neon",
     type: "dedicated",
     videoIds: [ROUTE_VIDEOS.granvilleConnectorNb.id],
-    positions: [GRANVILLE_NEON_N, [49.27538, -123.12795], ROLSTON_NEON_NE],
+    positions: [GRANVILLE_NEON_N, ROLSTON_NEON_NE],
   },
   {
     description: "rolston",
@@ -95,9 +95,9 @@ export const GRANVILLE_CONNECTOR = [
     videoIdsEndAtEnd: [ROUTE_VIDEOS.granvilleConnectorNb.id],
     positions: [
       ROLSTON_NEON_NE,
-      [49.27531, -123.12785],
-      [49.27526, -123.1279],
-      [49.2748, -123.1286],
+      [49.27532, -123.12793],
+      [49.27527, -123.12797],
+      [49.27481, -123.12864],
       ROLSTON_PACIFIC_E,
     ],
   },
@@ -167,6 +167,7 @@ export const GRANVILLE_CONNECTOR = [
       HOWE_PROTECTED_START,
       [49.27459, -123.13064],
       [49.27443, -123.13072],
+      [49.27427, -123.13085],
       GRANVILLE_HOWE,
     ],
   },
@@ -211,19 +212,20 @@ export const GRANVILLE_CONNECTOR = [
     ],
     positions: [
       ELEVATION_S,
-      [49.26817, -123.13854],
-      [49.26844, -123.13849],
-      [49.26864, -123.13842],
-      [49.26887, -123.13831],
-      [49.26925, -123.13803],
-      [49.26958, -123.13772],
-      [49.26968, -123.13769],
-      [49.26994, -123.13734],
+      [49.26804, -123.13857],
+      [49.26832, -123.13855],
+      [49.26861, -123.13846],
+      [49.26889, -123.13833],
+      [49.2691, -123.13819],
+      [49.26928, -123.13803],
+      [49.26948, -123.13781],
+      [49.26963, -123.13778],
+      [49.26999, -123.13726],
       [49.27042, -123.13661],
       [49.27396, -123.13126],
-      [49.27418, -123.13095],
       GRANVILLE_HOWE,
-      [49.27428, -123.1307],
+      [49.27422, -123.13074],
+      [49.2745, -123.13037],
       ELEVATION_N,
     ],
   },

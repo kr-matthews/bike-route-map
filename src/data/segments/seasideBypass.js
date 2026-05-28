@@ -682,7 +682,8 @@ export const SEASIDE_BYPASS = [
     videoIds: [ROUTE_VIDEOS.seasideBypassExpoWb25.id],
     positions: [
       SEYMOUR_PACIFIC,
-      [49.27465, -123.12861],
+      [49.27461, -123.12853],
+      [49.2747, -123.12863],
       ROLSTON_PACIFIC_E,
       [49.27502, -123.12911],
       [49.27504, -123.12919],
