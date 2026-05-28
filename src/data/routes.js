@@ -466,13 +466,20 @@ export const ROUTES = {
     legs: [
       {
         videos: {
+          northbound: ROUTE_VIDEOS.beattyNb26,
+          southbound: ROUTE_VIDEOS.beattySb26,
+        },
+      },
+      {
+        name: "Before 2026 upgrade around Robson",
+        videos: {
           northbound: ROUTE_VIDEOS.beattyNb,
           southbound: ROUTE_VIDEOS.beattySb,
         },
       },
     ],
     notes:
-      "The south end is a hill. It's protected, but often that protection is flimsy posts. The city intends to upgrade it eventually.",
+      "The south end is a hill. It's protected, but often that protection is flimsy posts. The city upgraded a portion of it in early 2026, to be a proper separated bike lane.",
   },
   bellevue: {
     name: "Bellevue Ave",

@@ -202,10 +202,20 @@ export const ROUTE_VIDEOS = {
     date: new Date("Feb 15 2024"),
     minutes: 3,
   },
+  beattyNb26: {
+    id: "bpdDg7wehFo",
+    date: new Date("May 26 2026"),
+    minutes: 4,
+  },
   beattySb: {
     id: "Kqxlkrkb33s",
     date: new Date("Oct 01 2023"),
     minutes: 5,
+  },
+  beattySb26: {
+    id: "qmQTgn_zuiY",
+    date: new Date("May 26 2026"),
+    minutes: 4,
   },
   bellevueEb: {
     id: "_TeL45EUKPE",

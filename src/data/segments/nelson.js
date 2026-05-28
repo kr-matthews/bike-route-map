@@ -66,8 +66,13 @@ export const NELSON = [
     videoIds: [
       ROUTE_VIDEOS.cambieBridgeNelsonSb.id,
       ROUTE_VIDEOS.cambieBridgeSb.id,
+      ROUTE_VIDEOS.beattyNb26.id,
+      ROUTE_VIDEOS.beattySb26.id,
       ROUTE_VIDEOS.beattyNb.id,
+      ROUTE_VIDEOS.beattySb.id,
     ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.beattyNb26.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.beattySb26.id, ROUTE_VIDEOS.beattySb.id],
     positions: [BEATTY_NELSON_SW, BEATTY_NELSON_SE],
   },
 ];
