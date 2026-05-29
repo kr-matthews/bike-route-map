@@ -445,6 +445,16 @@ export const UPGRADE_VIDEOS = {
     position: [49.2428, -123.11797],
     region: REGIONS.vancouver,
   },
+  mosaic7thSb: {
+    id: "lCGpIdwU_7s",
+    title: "Woodland Dr Bridge (@ 7th)",
+    routeNames: [ROUTES.mosaic.name],
+    direction: "southbound",
+    date: new Date("May 26 2026"),
+    minutes: 0,
+    position: [49.26463, -123.07364],
+    region: REGIONS.vancouver,
+  },
   beattyRobsonNb26: {
     id: "HPGMYUBVu2I",
     title: "Beatty St @ Robson St (NB)",
