@@ -713,6 +713,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Jul 01 2024"),
     minutes: 7,
   },
+  eastsideCrosscutNb: {
+    id: "-G8DQpdcoiM",
+    tlId: "RocGrqLZGss",
+    date: new Date("May 29 2026"),
+    minutes: 13,
+  },
   edmonds18thNb: {
     id: "5LIEMXMwp4g",
     date: new Date("Oct 17 2024"),

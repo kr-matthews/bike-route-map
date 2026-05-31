@@ -35,6 +35,7 @@ export const HASTINGS_PARK = [
       ROUTE_VIDEOS.hastingsPortsideWindermere.id,
       ROUTE_VIDEOS.hastingsWindermereCassiar.id,
       ROUTE_VIDEOS.windermereNb.id,
+      ROUTE_VIDEOS.eastsideCrosscutNb.id,
     ],
     videoIdsStartAtStart: [
       ROUTE_VIDEOS.hastingsWindermerePortside.id,
@@ -58,6 +59,7 @@ export const HASTINGS_PARK = [
     videoIds: [
       ROUTE_VIDEOS.hastingsWindermerePortside.id,
       ROUTE_VIDEOS.hastingsPortsideWindermere.id,
+      ROUTE_VIDEOS.eastsideCrosscutNb.id,
     ],
     positions: [
       FIELDS_SW,
@@ -163,6 +165,7 @@ export const HASTINGS_PARK = [
       ROUTE_VIDEOS.hastingsWindermerePortside.id,
       ROUTE_VIDEOS.hastingsPortsideWindermere.id,
       ROUTE_VIDEOS.hastingsCassiarPandora.id,
+      ROUTE_VIDEOS.eastsideCrosscutNb.id,
     ],
     positions: [FIELDS_NW, MILLER_E_END],
   },
@@ -173,6 +176,7 @@ export const HASTINGS_PARK = [
     videoIds: [
       ROUTE_VIDEOS.hastingsPortsideWindermere.id,
       ROUTE_VIDEOS.hastingsWindermerePortside.id,
+      ROUTE_VIDEOS.eastsideCrosscutNb.id,
     ],
     positions: [
       MILLER_E_END,
@@ -195,6 +199,7 @@ export const HASTINGS_PARK = [
     videoIds: [
       ROUTE_VIDEOS.hastingsPortsideWindermere.id,
       ROUTE_VIDEOS.hastingsWindermerePortside.id,
+      ROUTE_VIDEOS.eastsideCrosscutNb.id,
     ],
     positions: [
       BRIDGEWATER_PATH_SPLIT,
@@ -218,6 +223,7 @@ export const HASTINGS_PARK = [
       ROUTE_VIDEOS.hastingsPortsideWindermere.id,
       ROUTE_VIDEOS.hastingsWindermerePortside.id,
       ROUTE_VIDEOS.hastingsPortsideCassiar.id,
+      ROUTE_VIDEOS.eastsideCrosscutNb.id,
     ],
     positions: [BRIDGEWAY_MCGILL_OFF_RAMP_SW, BRIDGEWAY_MCGILL_OFF_RAMP_NW],
   },
@@ -231,6 +237,7 @@ export const HASTINGS_PARK = [
       ROUTE_VIDEOS.hastingsPortsideCassiar.id,
       ROUTE_VIDEOS.hastingsWindermerePortside.id,
       ROUTE_VIDEOS.hastingsCassiarPortside.id,
+      ROUTE_VIDEOS.eastsideCrosscutNb.id,
     ],
     positions: [BRIDGEWAY_MCGILL_OFF_RAMP_NW, TUNNEL_START],
   },
@@ -244,6 +251,7 @@ export const HASTINGS_PARK = [
       ROUTE_VIDEOS.hastingsPortsideCassiar.id,
       ROUTE_VIDEOS.hastingsWindermerePortside.id,
       ROUTE_VIDEOS.hastingsCassiarPortside.id,
+      ROUTE_VIDEOS.eastsideCrosscutNb.id,
     ],
     positions: [TUNNEL_START, TUNNEL_END],
   },
@@ -257,6 +265,7 @@ export const HASTINGS_PARK = [
       ROUTE_VIDEOS.hastingsPortsideCassiar.id,
       ROUTE_VIDEOS.hastingsWindermerePortside.id,
       ROUTE_VIDEOS.hastingsCassiarPortside.id,
+      ROUTE_VIDEOS.eastsideCrosscutNb.id,
     ],
     positions: [TUNNEL_END, BRIDGEWAY_CREEKWAY_PARK_S],
   },
@@ -280,8 +289,12 @@ export const HASTINGS_PARK = [
       ROUTE_VIDEOS.hastingsPortsideCassiar.id,
       ROUTE_VIDEOS.hastingsWindermerePortside.id,
       ROUTE_VIDEOS.hastingsCassiarPortside.id,
+      ROUTE_VIDEOS.eastsideCrosscutNb.id,
     ],
-    videoIdsEndAtEnd: [ROUTE_VIDEOS.hastingsCassiarPortside.id],
+    videoIdsEndAtEnd: [
+      ROUTE_VIDEOS.hastingsCassiarPortside.id,
+      ROUTE_VIDEOS.eastsideCrosscutNb.id,
+    ],
     positions: [
       BRIDGEWAY_CREEKWAY_PARK_S,
       [49.28808, -123.03379],

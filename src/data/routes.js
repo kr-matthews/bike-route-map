@@ -1161,7 +1161,12 @@ export const ROUTES = {
   eastsideCrosscut: {
     name: "Eastside Crosscut",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        name: "Phase 1 - North of CVG",
+        videos: { northbound: ROUTE_VIDEOS.eastsideCrosscutNb },
+      },
+    ],
     notes:
       "Phase 1, between Central Valley Greenway and Hastings Park, was implemented in early 2026. Eventually it will extend south to the Fraser River, but the exact route has not been finalized.",
   },

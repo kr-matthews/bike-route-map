@@ -4,6 +4,7 @@ import {
   WINDERMERE_PENDER,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const NOOTKA_BROADWAY_N = [49.26203, -123.04017];
 const N_OF_LILLOOET_BROADWAY = [49.26213, -123.0391];
@@ -13,12 +14,15 @@ export const EASTSIDE_CROSSCUT = [
     routeNames: [ROUTES.eastsideCrosscut.name],
     description: "cvg to broadway",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.eastsideCrosscutNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.eastsideCrosscutNb.id],
     positions: [NOOTKA_CVG, NOOTKA_BROADWAY_N],
   },
   {
     routeNames: [ROUTES.eastsideCrosscut.name],
     description: "along broadway",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.eastsideCrosscutNb.id],
     positions: [
       NOOTKA_BROADWAY_N,
       [49.26203, -123.0391],
@@ -29,6 +33,7 @@ export const EASTSIDE_CROSSCUT = [
     routeNames: [ROUTES.eastsideCrosscut.name],
     description: "broadway to windermere",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.eastsideCrosscutNb.id],
     positions: [
       N_OF_LILLOOET_BROADWAY,
       [49.26219, -123.03905],

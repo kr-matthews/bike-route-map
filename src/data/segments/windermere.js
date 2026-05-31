@@ -26,7 +26,11 @@ export const WINDERMERE = [
     routeNames: [ROUTES.windermere.name, ROUTES.eastsideCrosscut.name],
     description: "pender to hastings",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.windermereNb.id, ROUTE_VIDEOS.windermereSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.windermereNb.id,
+      ROUTE_VIDEOS.windermereSb.id,
+      ROUTE_VIDEOS.eastsideCrosscutNb.id,
+    ],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.windermereSb.id],
     positions: [WINDERMERE_PENDER, WINDERMERE_HASTINGS_N],
   },
