@@ -1460,6 +1460,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routeNames: [ROUTES.centralValleyGreenway.name],
     description: "columbia: crossing mcbride",
     type: "mixed",
+    isClosed: true,
     videoIds: [ROUTE_VIDEOS.centralValleyNWNb.id],
     positions: [MCBRIDE_COLUMBIA_NE, MCBRIDE_COLUMBIA_NW],
   },

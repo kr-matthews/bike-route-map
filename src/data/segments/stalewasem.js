@@ -1,16 +1,23 @@
 import {
-  BRIDGEVIEW_KING_GEORGE_SW,
+  MCBRIDE_COLUMBIA_NE,
   MCBRIDE_COLUMBIA_NW,
+  MILLENNIUM_MEMORIAL_OVERPASS,
 } from "../intersections";
 import { ROUTES } from "../routes";
 
-const EAST_SIDE_112 = [49.20646, -122.87865];
+const ONE_24_112_N = [49.20646, -122.87865];
 const EAST_SIDE_ELEVATION_START = [49.2061, -122.88218];
 const EAST_SIDE_ELEVATION_END = [49.21125, -122.89823];
 const EAST_SIDE_END = [49.21137, -122.89844];
 const MCBRIDE_EAST_SIDE = [49.21152, -122.89838];
 
-const BRIDGEVIEW_112A_W = [49.20695, -122.86749];
+const MCBRIDE_ROYAL_SE = [49.21208, -122.89877];
+const MCBRIDE_ROYAL_SW = [49.21198, -122.89896];
+const MCBRIDE_MEMORIAL_SE = [49.21503, -122.90243];
+const MEMORIAL_OVERPASS_E = [49.21471, -122.90195];
+const MEMORIAL_OVERPASS_W = [49.21451, -122.90258];
+
+// const BRIDGEVIEW_112A_W = [49.20695, -122.86749];
 
 export const STALEWASEM = [
   // west side
@@ -22,14 +29,14 @@ export const STALEWASEM = [
     type: "mixed",
     elevation: 0.5,
     positions: [
-      EAST_SIDE_112,
-      [49.20646, -122.8792],
-      [49.20645, -122.87952],
-      [49.20639, -122.87999],
-      [49.20631, -122.87999],
-      [49.2062, -122.87998],
-      [49.20615, -122.88004],
-      [49.20611, -122.88087],
+      ONE_24_112_N,
+      [49.20647, -122.8793],
+      [49.20645, -122.87971],
+      [49.20642, -122.87996],
+      [49.20627, -122.87996],
+      [49.20621, -122.87996],
+      [49.20618, -122.88001],
+      [49.20612, -122.88073],
       EAST_SIDE_ELEVATION_START,
     ],
   },
@@ -68,38 +75,20 @@ export const STALEWASEM = [
   },
 
   // south end
-  // !!!
   // {
-  //   description: "112/124/112A",
-  //   type: "shared",
-  //   undesignated: true,
+  //   description: "bridgeview connecting to bc parkway",
+  //   type: "dedicated",
+  //   oneWay: "required",
   //   positions: [
-  //     EAST_SIDE_112,
-  //     [49.20635, -122.87982],
-  //     [49.20637, -122.87954],
-  //     [49.20635, -122.87919],
-  //     [49.20634, -122.87881],
-  //     [49.20654, -122.87867],
-  //     [49.2071, -122.87865],
-  //     [49.20713, -122.87091],
-  //     ONE_26A_112A_S,
   //     BRIDGEVIEW_112A_W,
+  //     [49.2068, -122.86752],
+  //     [49.20667, -122.86756],
+  //     [49.20657, -122.86764],
+  //     [49.20652, -122.86751],
+  //     [49.20616, -122.86763],
+  //     BRIDGEVIEW_KING_GEORGE_SW,
   //   ],
   // },
-  {
-    description: "bridgeview connecting to bc parkway",
-    type: "dedicated",
-    oneWay: "required",
-    positions: [
-      BRIDGEVIEW_112A_W,
-      [49.2068, -122.86752],
-      [49.20667, -122.86756],
-      [49.20657, -122.86764],
-      [49.20652, -122.86751],
-      [49.20616, -122.86763],
-      BRIDGEVIEW_KING_GEORGE_SW,
-    ],
-  },
 
   // north end
   {
@@ -110,11 +99,76 @@ export const STALEWASEM = [
   {
     description: "mcbride w - columbia to east side",
     type: "mixed",
+    isClosed: true,
     positions: [MCBRIDE_COLUMBIA_NW, [49.21118, -122.89799], MCBRIDE_EAST_SIDE],
   },
   {
     description: "mcbride w - east side to royal",
     type: "mixed",
-    positions: [MCBRIDE_EAST_SIDE, [49.21198, -122.89896]],
+    positions: [MCBRIDE_EAST_SIDE, MCBRIDE_ROYAL_SW],
+  },
+  {
+    description: "mcbride e - columbia to royal",
+    type: "mixed",
+    positions: [
+      MCBRIDE_COLUMBIA_NE,
+      [49.21138, -122.8979],
+      [49.21186, -122.89853],
+      MCBRIDE_ROYAL_SE,
+    ],
+  },
+  {
+    description: "crossing mcbride at royal s",
+    type: "mixed",
+    positions: [MCBRIDE_ROYAL_SW, MCBRIDE_ROYAL_SE],
+  },
+  {
+    description: "royal s - bushby to mcbride",
+    type: "mixed",
+    positions: [
+      [49.21137, -122.90007],
+      [49.21166, -122.89952],
+      [49.21174, -122.89942],
+      MCBRIDE_ROYAL_SW,
+    ],
+  },
+  {
+    description: "mcbride e - royal to memorial-ish",
+    type: "mixed",
+    positions: [
+      MCBRIDE_ROYAL_SE,
+      [49.21226, -122.89895],
+      [49.2124, -122.8992],
+      [49.2124, -122.8992],
+      [49.21262, -122.89952],
+      [49.21367, -122.90081],
+      [49.21388, -122.90102],
+      [49.21412, -122.90132],
+      MCBRIDE_MEMORIAL_SE,
+    ],
+  },
+  {
+    description: "memorial overpass to queen's park - e",
+    type: "mixed",
+    elevation: 0.5,
+    positions: [
+      MCBRIDE_MEMORIAL_SE,
+      [49.21506, -122.90237],
+      [49.21501, -122.90226],
+      [49.21473, -122.90189],
+      MEMORIAL_OVERPASS_E,
+    ],
+  },
+  {
+    description: "memorial overpass to queen's park",
+    type: "mixed",
+    elevation: 1,
+    positions: [MEMORIAL_OVERPASS_E, MEMORIAL_OVERPASS_W],
+  },
+  {
+    description: "memorial overpass to queen's park - w",
+    type: "mixed",
+    elevation: 0.5,
+    positions: [MEMORIAL_OVERPASS_W, MILLENNIUM_MEMORIAL_OVERPASS],
   },
 ];
