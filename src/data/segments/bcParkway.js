@@ -13,6 +13,7 @@ import {
   BC_PARKWAY_TIN_SOLDIER,
   BC_PARKWAY_VICTORY_CONNECTION,
   BONSOR_BC_PARKWAY,
+  BRIDGEVIEW_KING_GEORGE_SW,
   BULLER_BERESFORD_W,
   BULLER_N_OF_IRMIN,
   BULLER_PRENTER,
@@ -26,6 +27,8 @@ import {
   LAKEWOOD_JOHN_HENDRY_PARK,
   MCKAY_BC_PARKWAY,
   NELSON_BC_PARKWAY_W,
+  ONE_26A_112A_S,
+  ONE_26A_OVERPASS_N,
   PATTERSON_BC_PARKWAY,
   PATTULLO_ALBERT,
   PRENTER_RUMBLE_ISH,
@@ -110,6 +113,10 @@ const EAST_OF_GILLEY_RUMBLE = [49.21487, -122.97131];
 
 const CITY_PARKWAY_N = [49.2013, -122.85083];
 const CITY_PARKWAY_LANE_N = [49.20012, -122.84915];
+
+const ONE_26A_OVERPASS_BC_PARKWAY = [49.20596, -122.87171];
+const KING_GEORGE_OVERPASS_S = [49.20599, -122.87168];
+const KING_GEORGE_OVERPASS_N = [49.20661, -122.87097];
 
 export const BC_PARKWAY = [
   // vancouver alternates
@@ -204,6 +211,46 @@ export const BC_PARKWAY = [
       BULLER_N_OF_IRMIN,
       BC_PARKWAY_BEFORE_IRMIN,
     ],
+  },
+
+  // surrey other stuff
+  {
+    description: "king george overpass s",
+    type: "other",
+    elevation: 0.5,
+    positions: [
+      ONE_26A_OVERPASS_BC_PARKWAY,
+      [49.20598, -122.87172],
+      KING_GEORGE_OVERPASS_S,
+    ],
+  },
+  {
+    description: "king george overpass",
+    type: "other",
+    elevation: 1,
+    positions: [
+      KING_GEORGE_OVERPASS_S,
+      [49.20608, -122.87097],
+      KING_GEORGE_OVERPASS_N,
+    ],
+  },
+  {
+    description: "king george overpass n",
+    type: "other",
+    elevation: 0.5,
+    positions: [
+      KING_GEORGE_OVERPASS_N,
+      [49.20661, -122.87093],
+      [49.20644, -122.87093],
+      [49.20644, -122.87089],
+      ONE_26A_OVERPASS_N,
+    ],
+  },
+  {
+    description: "126A from overpass",
+    type: "quiet",
+    undesignated: true,
+    positions: [ONE_26A_OVERPASS_N, [49.20665, -122.87085], ONE_26A_112A_S],
   },
 
   // vancouver
@@ -1671,7 +1718,7 @@ export const BC_PARKWAY = [
       [49.20576, -122.87223],
       [49.20581, -122.87217],
       [49.20589, -122.87202],
-      [49.20596, -122.87171],
+      ONE_26A_OVERPASS_BC_PARKWAY,
       [49.20604, -122.87089],
       [49.206, -122.87052],
       [49.20605, -122.86957],
@@ -1680,6 +1727,7 @@ export const BC_PARKWAY = [
       [49.2061, -122.86846],
       [49.20609, -122.86838],
       [49.20612, -122.86776],
+      BRIDGEVIEW_KING_GEORGE_SW,
       [49.20606, -122.86762],
       [49.20609, -122.86723],
       [49.20615, -122.86713],

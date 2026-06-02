@@ -24,6 +24,8 @@ import {
   LAKES_CVG_S,
   LAKEWOOD_GRANDVIEW,
   MAIN_1ST_NE,
+  MCBRIDE_COLUMBIA_NE,
+  MCBRIDE_COLUMBIA_NW,
   NOOTKA_CVG,
   ONTARIO_1ST_NE,
   ONTARIO_1ST_N_N,
@@ -1411,7 +1413,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
-    description: "columbia: separated part from cumberland",
+    description: "columbia: cumberland to mcbride",
     type: "mixed",
     videoIds: [ROUTE_VIDEOS.centralValleyNWNb.id],
     positions: [
@@ -1451,7 +1453,24 @@ export const CENTRAL_VALLEY_GREENWAY = [
       [49.21167, -122.89744],
       [49.21164, -122.89757],
       [49.21141, -122.89774],
-      [49.2113, -122.8977],
+      MCBRIDE_COLUMBIA_NE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.centralValleyGreenway.name],
+    description: "columbia: crossing mcbride",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.centralValleyNWNb.id],
+    positions: [MCBRIDE_COLUMBIA_NE, MCBRIDE_COLUMBIA_NW],
+  },
+  {
+    routeNames: [ROUTES.centralValleyGreenway.name],
+    description: "columbia: mcbride to bc parkway split",
+    type: "mixed",
+    isClosed: true,
+    videoIds: [ROUTE_VIDEOS.centralValleyNWNb.id],
+    positions: [
+      MCBRIDE_COLUMBIA_NW,
       [49.21101, -122.89795],
       [49.21082, -122.89816],
       [49.21063, -122.8983],

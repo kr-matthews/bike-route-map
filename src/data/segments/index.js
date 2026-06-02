@@ -204,6 +204,7 @@ import { SPIRIT_TRAIL } from "./spiritTrail";
 import { ST_ANDREWS } from "./stAndrews";
 import { ST_GEORGE } from "./stGeorge";
 import { ST_JOHNS } from "./stJohns";
+import { STALEWASEM } from "./stalewasem";
 import { STANLEY_PARK_LOOP } from "./stanleyPark";
 import { STEVESTON_HWY } from "./stevestonHwy";
 import { SUNRISE } from "./sunrise";
@@ -451,6 +452,7 @@ export const SEGMENTS = [
   ...ST_ANDREWS,
   ...ST_GEORGE,
   ...ST_JOHNS,
+  ...STALEWASEM,
   ...STANLEY_PARK_LOOP,
   ...STEVESTON_HWY,
   ...SUNRISE,

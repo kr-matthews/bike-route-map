@@ -3035,6 +3035,17 @@ export const ROUTES = {
     notes:
       "Mostly quite flat, though the Moodyville section is high up, and the portion just west of here has a few brief branches which can be confusing. The shipyards section get very busy with pedestrians. Harbourside construction will (apparently) last until 2025. There are plans to extend the trail all the way to Deep Cove, but the route has not been determined.",
   },
+  stalewasem: {
+    name: "stal̕əw̓asəm (Riverview) Bridge",
+    shortName: "stal̕əw̓asəm Bridge",
+    regions: [REGIONS.newWestminster, REGIONS.surrey],
+    legs: [
+      { name: "West MUP", videos: {} },
+      { name: "East MUP", videos: {} },
+    ],
+    notes:
+      "A new bridge which replaces the (terrible) Pattullo Bridge, with MUPs on both sides. The east MUP opened in June 2026, the west MUP will open sometime later in the summer along with the surrounding MUP network on each end.",
+  },
   stanleyParkLoop: {
     name: "Stanley Park Loop",
     regions: [REGIONS.vancouver],
