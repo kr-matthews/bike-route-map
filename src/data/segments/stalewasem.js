@@ -4,6 +4,7 @@ import {
   MILLENNIUM_MEMORIAL_OVERPASS,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const ONE_24_112_N = [49.20646, -122.87865];
 const EAST_SIDE_ELEVATION_START = [49.2061, -122.88218];
@@ -28,6 +29,7 @@ export const STALEWASEM = [
     description: "east - south pre-elevation",
     type: "mixed",
     elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.stalewasemEastSb.id],
     positions: [
       ONE_24_112_N,
       [49.20647, -122.8793],
@@ -45,6 +47,7 @@ export const STALEWASEM = [
     description: "east",
     type: "mixed",
     elevation: 1,
+    videoIds: [ROUTE_VIDEOS.stalewasemEastSb.id],
     positions: [
       EAST_SIDE_ELEVATION_START,
       [49.2061, -122.8836],
@@ -71,10 +74,19 @@ export const STALEWASEM = [
     description: "east - north post-elevation",
     type: "mixed",
     elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.stalewasemEastSb.id],
     positions: [EAST_SIDE_ELEVATION_END, [49.21133, -122.89831], EAST_SIDE_END],
   },
 
   // south end
+  {
+    description: "124 st at east end of bridge",
+    type: "quiet",
+    undesignated: true,
+    videoIds: [ROUTE_VIDEOS.stalewasemEastSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.stalewasemEastSb.id],
+    positions: [ONE_24_112_N, [49.20712, -122.87864]],
+  },
   // {
   //   description: "bridgeview connecting to bc parkway",
   //   type: "dedicated",
@@ -94,6 +106,7 @@ export const STALEWASEM = [
   {
     description: "east side to mcbride",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.stalewasemEastSb.id],
     positions: [EAST_SIDE_END, [49.2115, -122.89841], MCBRIDE_EAST_SIDE],
   },
   {
@@ -105,6 +118,7 @@ export const STALEWASEM = [
   {
     description: "mcbride w - east side to royal",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.stalewasemEastSb.id],
     positions: [MCBRIDE_EAST_SIDE, MCBRIDE_ROYAL_SW],
   },
   {
@@ -120,6 +134,7 @@ export const STALEWASEM = [
   {
     description: "crossing mcbride at royal s",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.stalewasemEastSb.id],
     positions: [MCBRIDE_ROYAL_SW, MCBRIDE_ROYAL_SE],
   },
   {
@@ -135,6 +150,8 @@ export const STALEWASEM = [
   {
     description: "mcbride e - royal to memorial-ish",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.stalewasemEastSb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.stalewasemEastSb.id],
     positions: [
       MCBRIDE_ROYAL_SE,
       [49.21226, -122.89895],
