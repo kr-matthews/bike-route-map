@@ -2184,6 +2184,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Dec 08 2024"),
     minutes: 36,
   },
+  stalewasemEastNb: {
+    id: "xa7VAgqjDPk",
+    tlId: "Yhnz4sBB4tY",
+    date: new Date("Jun 01 2026"),
+    minutes: 8,
+  },
   stalewasemEastSb: {
     id: "TJPukkn1J_Q",
     tlId: "Fo8q9zZWTbk",

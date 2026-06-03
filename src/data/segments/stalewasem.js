@@ -29,7 +29,10 @@ export const STALEWASEM = [
     description: "east - south pre-elevation",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [ROUTE_VIDEOS.stalewasemEastSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.stalewasemEastNb.id,
+      ROUTE_VIDEOS.stalewasemEastSb.id,
+    ],
     positions: [
       ONE_24_112_N,
       [49.20647, -122.8793],
@@ -47,7 +50,10 @@ export const STALEWASEM = [
     description: "east",
     type: "mixed",
     elevation: 1,
-    videoIds: [ROUTE_VIDEOS.stalewasemEastSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.stalewasemEastSb.id,
+      ROUTE_VIDEOS.stalewasemEastNb.id,
+    ],
     positions: [
       EAST_SIDE_ELEVATION_START,
       [49.2061, -122.8836],
@@ -74,7 +80,10 @@ export const STALEWASEM = [
     description: "east - north post-elevation",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [ROUTE_VIDEOS.stalewasemEastSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.stalewasemEastSb.id,
+      ROUTE_VIDEOS.stalewasemEastNb.id,
+    ],
     positions: [EAST_SIDE_ELEVATION_END, [49.21133, -122.89831], EAST_SIDE_END],
   },
 
@@ -83,7 +92,11 @@ export const STALEWASEM = [
     description: "124 st at east end of bridge",
     type: "quiet",
     undesignated: true,
-    videoIds: [ROUTE_VIDEOS.stalewasemEastSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.stalewasemEastNb.id,
+      ROUTE_VIDEOS.stalewasemEastSb.id,
+    ],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.stalewasemEastNb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.stalewasemEastSb.id],
     positions: [ONE_24_112_N, [49.20712, -122.87864]],
   },
@@ -106,7 +119,10 @@ export const STALEWASEM = [
   {
     description: "east side to mcbride",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.stalewasemEastSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.stalewasemEastSb.id,
+      ROUTE_VIDEOS.stalewasemEastNb.id,
+    ],
     positions: [EAST_SIDE_END, [49.2115, -122.89841], MCBRIDE_EAST_SIDE],
   },
   {
@@ -118,7 +134,10 @@ export const STALEWASEM = [
   {
     description: "mcbride w - east side to royal",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.stalewasemEastSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.stalewasemEastSb.id,
+      ROUTE_VIDEOS.stalewasemEastNb.id,
+    ],
     positions: [MCBRIDE_EAST_SIDE, MCBRIDE_ROYAL_SW],
   },
   {
@@ -139,6 +158,8 @@ export const STALEWASEM = [
   },
   {
     description: "royal s - bushby to mcbride",
+    videoIds: [ROUTE_VIDEOS.stalewasemEastNb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.stalewasemEastNb.id],
     type: "mixed",
     positions: [
       [49.21137, -122.90007],

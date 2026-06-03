@@ -3043,7 +3043,10 @@ export const ROUTES = {
       { name: "West MUP", videos: {} },
       {
         name: "East MUP",
-        videos: { southbound: ROUTE_VIDEOS.stalewasemEastSb },
+        videos: {
+          northbound: ROUTE_VIDEOS.stalewasemEastNb,
+          southbound: ROUTE_VIDEOS.stalewasemEastSb,
+        },
       },
     ],
     notes:
