@@ -3,7 +3,9 @@ import {
   ONTARIO_14TH,
   ONTARIO_1ST_N,
   ONTARIO_1ST_N_N,
+  ONTARIO_1ST_NE,
   ONTARIO_1ST_S,
+  ONTARIO_1ST_SE,
   ONTARIO_26TH_S,
   ONTARIO_30TH,
   ONTARIO_33RD_N,
@@ -17,19 +19,29 @@ import {
   ONTARIO_63RD,
   ONTARIO_KENT_N,
   ONTARIO_PATH_ATHLETES,
+  ONTARIO_PATH_SEASIDE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
+const ONTARIO_MARINE_N = [49.21249, -123.10655];
 const ONTARIO_69TH_NW = [49.20946, -123.10677];
 const ONTARIO_52ND_S = [49.22289, -123.10606];
 const ONTARIO_49TH_N = [49.22581, -123.10597];
 const NORTH_OF_ONTARIO_33RD = [49.24148, -123.10533];
 const ONTARIO_5TH_ALLEY = [49.26694, -123.10474];
-const ONTARIO_MARINE_N = [49.21249, -123.10655];
+const ONTARIO_2ND_S = [49.26912, -123.10466];
+const EAST_PARK_S = [49.27041, -123.10443];
 const ONTARIO_ATHLETES = [49.27151, -123.10456];
 
 export const ONTARIO = [
+  {
+    description: "athletes to path",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.ontarioSb.id, ROUTE_VIDEOS.ontarioNb.id],
+    positions: [ONTARIO_ATHLETES, ONTARIO_PATH_ATHLETES],
+  },
+
   {
     routeNames: [ROUTES.ontario.name],
     description: "kent to 69th",
@@ -188,23 +200,73 @@ export const ONTARIO = [
   },
   {
     routeNames: [ROUTES.ontario.name],
-    description: "just north of 5th to athletes",
+    description: "just north of 5th to 2nd",
     type: "quiet",
     videoIds: [ROUTE_VIDEOS.ontarioSb.id, ROUTE_VIDEOS.ontarioNb.id],
+    positions: [ONTARIO_5TH_ALLEY, [49.2683, -123.10468], ONTARIO_2ND_S],
+  },
+  {
+    routeNames: [ROUTES.ontario.name],
+    description: "2nd to 1st",
+    type: "dedicated",
     positions: [
-      ONTARIO_5TH_ALLEY,
-      [49.2683, -123.10468],
+      ONTARIO_2ND_S,
+      [49.26937, -123.10461],
+      [49.27011, -123.10457],
+      ONTARIO_1ST_SE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.ontario.name, ROUTES.centralValleyGreenway.name],
+    description: "east park path - north",
+    type: "mixed",
+    videoIds: [
+      ROUTE_VIDEOS.centralValleyVancouverEb.id,
+      ROUTE_VIDEOS.centralValleyVancouverWb.id,
+      ROUTE_VIDEOS.ontarioSb.id,
+      ROUTE_VIDEOS.ontarioNb.id,
+    ],
+    videoIdsStartAtStart: [
+      ROUTE_VIDEOS.centralValleyVancouverEb.id,
+      ROUTE_VIDEOS.ontarioSb.id,
+    ],
+    videoIdsEndAtStart: [
+      ROUTE_VIDEOS.centralValleyVancouverWb.id,
+      ROUTE_VIDEOS.ontarioNb.id,
+    ],
+    positions: [ONTARIO_PATH_SEASIDE, ONTARIO_PATH_ATHLETES],
+  },
+  {
+    routeNames: [ROUTES.ontario.name, ROUTES.centralValleyGreenway.name],
+    description: "east park path - south",
+    type: "mixed",
+    videoIds: [
+      ROUTE_VIDEOS.centralValleyVancouverEb.id,
+      ROUTE_VIDEOS.centralValleyVancouverWb.id,
+    ],
+    positions: [ONTARIO_PATH_ATHLETES, EAST_PARK_S, ONTARIO_1ST_NE],
+  },
+  {
+    routeNames: [ROUTES.ontario.name, ROUTES.centralValleyGreenway.name],
+    description: "crossing 1st path",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.centralValleyVancouverEb.id],
+    positions: [ONTARIO_1ST_NE, ONTARIO_1ST_SE],
+  },
+
+  // old
+  {
+    routeNames: [ROUTES.ontario.name],
+    description: "old - 2nd to athletes",
+    type: "quiet",
+    undesignated: true,
+    videoIds: [ROUTE_VIDEOS.ontarioSb.id, ROUTE_VIDEOS.ontarioNb.id],
+    positions: [
+      ONTARIO_2ND_S,
       ONTARIO_1ST_S,
       ONTARIO_1ST_N,
       ONTARIO_1ST_N_N,
       ONTARIO_ATHLETES,
     ],
-  },
-  {
-    routeNames: [ROUTES.ontario.name],
-    description: "athletes to path",
-    type: "mixed",
-    videoIds: [ROUTE_VIDEOS.ontarioSb.id, ROUTE_VIDEOS.ontarioNb.id],
-    positions: [ONTARIO_ATHLETES, ONTARIO_PATH_ATHLETES],
   },
 ];

@@ -27,11 +27,6 @@ import {
   MCBRIDE_COLUMBIA_NE,
   MCBRIDE_COLUMBIA_NW,
   NOOTKA_CVG,
-  ONTARIO_1ST_NE,
-  ONTARIO_1ST_N_N,
-  ONTARIO_1ST_SE,
-  ONTARIO_PATH_ATHLETES,
-  ONTARIO_PATH_SEASIDE,
   QUAYSIDE_JOIN,
   QUEBEC_1ST_NE,
   QUEBEC_1ST_NW,
@@ -94,8 +89,6 @@ const GRANDVIEW_7_HALF_N = [49.2635, -123.06909];
 const GRANDVIEW_8_HALF_N = [49.26277, -123.06724];
 const SEMLIN_GRANDVIEW = [49.26146, -123.06399];
 
-const EAST_PARK_S = [49.27036, -123.10443];
-
 const OVERPASS_START = [49.2573, -122.9647];
 const OVERPASS_END = [49.25833, -122.96425];
 
@@ -124,11 +117,6 @@ const PHILLIPS_WINSTON_S = [49.24967, -122.94875];
 
 export const CENTRAL_VALLEY_GREENWAY = [
   // connections
-  {
-    description: "connection with cvg",
-    type: "mixed",
-    positions: [ONTARIO_1ST_N_N, EAST_PARK_S],
-  },
   {
     description: "connection with windsor",
     type: "mixed",
@@ -165,43 +153,6 @@ export const CENTRAL_VALLEY_GREENWAY = [
   },
 
   // vancouver
-  {
-    routeNames: [ROUTES.centralValleyGreenway.name],
-    description: "east park path - north",
-    type: "mixed",
-    videoIds: [
-      ROUTE_VIDEOS.centralValleyVancouverEb.id,
-      ROUTE_VIDEOS.centralValleyVancouverWb.id,
-      ROUTE_VIDEOS.ontarioSb.id,
-      ROUTE_VIDEOS.ontarioNb.id,
-    ],
-    videoIdsStartAtStart: [
-      ROUTE_VIDEOS.centralValleyVancouverEb.id,
-      ROUTE_VIDEOS.ontarioSb.id,
-    ],
-    videoIdsEndAtStart: [
-      ROUTE_VIDEOS.centralValleyVancouverWb.id,
-      ROUTE_VIDEOS.ontarioNb.id,
-    ],
-    positions: [ONTARIO_PATH_SEASIDE, ONTARIO_PATH_ATHLETES],
-  },
-  {
-    routeNames: [ROUTES.centralValleyGreenway.name],
-    description: "east park path - south",
-    type: "mixed",
-    videoIds: [
-      ROUTE_VIDEOS.centralValleyVancouverEb.id,
-      ROUTE_VIDEOS.centralValleyVancouverWb.id,
-    ],
-    positions: [ONTARIO_PATH_ATHLETES, EAST_PARK_S, ONTARIO_1ST_NE],
-  },
-  {
-    routeNames: [ROUTES.centralValleyGreenway.name],
-    description: "crossing 1st path",
-    type: "mixed",
-    videoIds: [ROUTE_VIDEOS.centralValleyVancouverEb.id],
-    positions: [ONTARIO_1ST_NE, ONTARIO_1ST_SE],
-  },
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
     description: "1st quebec to lorne",
