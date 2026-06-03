@@ -475,4 +475,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.27756, -123.11417],
     region: REGIONS.vancouver,
   },
+  ontario1stNb26: {
+    id: "2jzDx2Lyem4",
+    title: "Ontario between 1st & 2nd",
+    routeNames: [ROUTES.ontario.name],
+    direction: "northbound",
+    date: new Date("June 02 2026"),
+    minutes: 1,
+    position: [49.2699, -123.10456],
+    region: REGIONS.vancouver,
+  },
 };
