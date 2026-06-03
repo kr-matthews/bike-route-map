@@ -76,9 +76,8 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   },
   {
     description: "sixth nb crossing seventh",
-    type: "shared",
+    type: "dedicated",
     oneWay: "required",
-    undesignated: true,
     positions: [SIXTH_7TH_SE, SIXTH_7TH_NE],
   },
   {
@@ -113,9 +112,8 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   },
   {
     description: "sixth sb crossing seventh",
-    type: "shared",
+    type: "dedicated",
     oneWay: "required",
-    undesignated: true,
     videoIds: [ROUTE_VIDEOS.uptownDowntownSb.id],
     positions: [SIXTH_7TH_NW, SIXTH_7TH_SW],
   },
@@ -362,7 +360,7 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "8th to 6th",
-    type: "painted",
+    type: "dedicated",
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.crosstownNWEb.id],
     positions: [
@@ -375,7 +373,7 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "6th to 5th",
-    type: "painted",
+    type: "dedicated",
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.crosstownNWEb.id, ROUTE_VIDEOS.uptownDowntownSb.id],
     positions: [SIXTH_7TH_SW, SIXTH_7TH_SE, [49.21505, -122.92084], FIFTH_7TH],
@@ -383,7 +381,7 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "5th to 8th",
-    type: "painted",
+    type: "dedicated",
     oneWay: "required",
     positions: [
       FIFTH_7TH,
