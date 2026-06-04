@@ -475,6 +475,16 @@ export const UPGRADE_VIDEOS = {
     position: [49.27756, -123.11417],
     region: REGIONS.vancouver,
   },
+  crosstownUptownEb26: {
+    id: "uq8EiBOIxP8",
+    title: "Crosstown Greenway @ Uptown",
+    routeNames: [ROUTES.crosstownNewWestminster.name],
+    direction: "eastbound",
+    date: new Date("June 01 2026"),
+    minutes: 2,
+    position: [49.21404, -122.92271],
+    region: REGIONS.newWestminster,
+  },
   ontario1stNb26: {
     id: "2jzDx2Lyem4",
     title: "Ontario between 1st & 2nd",
