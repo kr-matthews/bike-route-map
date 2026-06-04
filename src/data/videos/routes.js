@@ -1735,15 +1735,15 @@ export const ROUTE_VIDEOS = {
     date: new Date("Mar 03 2026"),
     minutes: 11,
   },
-  pattulloEb: {
-    id: "yIfKw9qbg_M",
-    date: new Date("Jan 01 2024"),
-    minutes: 6,
-  },
-  pattulloWb: {
+  pattulloNb: {
     id: "HOgQzqerUlI",
     date: new Date("Jan 01 2024"),
     minutes: 7,
+  },
+  pattulloSb: {
+    id: "yIfKw9qbg_M",
+    date: new Date("Jan 01 2024"),
+    minutes: 6,
   },
   penderEb: {
     id: "V1_06Q29Yzo",

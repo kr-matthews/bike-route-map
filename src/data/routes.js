@@ -445,8 +445,8 @@ export const ROUTES = {
       {
         name: "Pattullo Bridge [Now Closed]",
         videos: {
-          eastbound: ROUTE_VIDEOS.pattulloEb,
-          westbound: ROUTE_VIDEOS.pattulloWb,
+          northbound: ROUTE_VIDEOS.pattulloNb,
+          southbound: ROUTE_VIDEOS.pattulloSb,
         },
       },
       {
