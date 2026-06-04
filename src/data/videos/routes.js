@@ -1403,6 +1403,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Sep 18 2024"),
     minutes: 9,
   },
+  londonDublinWb: {
+    id: "fOXLehuF0-0",
+    tlId: "4i0AUD5Zsto",
+    date: new Date("Jun 01 2026"),
+    minutes: 10,
+  },
   lougheedEb: {
     id: "aRoGpCGsuS8",
     tlId: "KiE-ElJFG-Y",

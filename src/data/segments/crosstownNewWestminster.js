@@ -2,6 +2,7 @@ import {
   BC_PARKWAY_22ND_STATION_SPLIT,
   BC_PARKWAY_7TH,
   COLUMBIA_SHERBROOKE_W,
+  EIGHTH_8TH_NE,
   FIFTH_7TH,
   MCBRIDE_6TH_W,
   MCBRIDE_OVERPASS_E,
@@ -21,6 +22,10 @@ const TWENTIETH_7TH_E_S = [49.20136, -122.94635];
 const TWENTIETH_7TH_N = [49.20165, -122.94674];
 const TWENTIETH_7TH_N_N = [49.20172, -122.9467];
 const BOWLER_7TH = [49.20184, -122.94544];
+const MOODY_TRIANGLE_S = [49.21246, -122.92657];
+const MOODY_TRIANGLE_E = [49.2127, -122.92615];
+const MOODY_TRIANGLE_N = [49.21292, -122.92656];
+const EIGHTH_8TH_SE = [49.21402, -122.92745];
 const EIGHTH_7TH_W = [49.21243, -122.92577];
 const PRE_OVERPASS_W = [49.22112, -122.91061];
 const MCBRIDE_OVERPASS_W = [49.22113, -122.91066];
@@ -49,6 +54,38 @@ const SIXTH_SCHOOL_W = [49.21699, -122.92525];
 const ALLEY_SIXTH_FIFTH = [49.21776, -122.92513];
 
 export const CROSSTOWN_NEW_WESTMINSTER = [
+  // moody
+  {
+    description: "moody along eighth",
+    type: "mixed",
+    positions: [
+      MOODY_TRIANGLE_E,
+      [49.2127, -122.92624],
+      [49.21274, -122.92634],
+      MOODY_TRIANGLE_N,
+      [49.21301, -122.92662],
+      [49.21309, -122.92672],
+      [49.21321, -122.92699],
+      [49.21377, -122.92768],
+      [49.21383, -122.92769],
+      [49.21388, -122.92767],
+      EIGHTH_8TH_SE,
+    ],
+  },
+  {
+    description: "tennis triangle",
+    type: "mixed",
+    positions: [MOODY_TRIANGLE_S, MOODY_TRIANGLE_N],
+  },
+  {
+    description: "8th crossing eighth",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.londonDublinWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.londonDublinWb.id],
+    positions: [EIGHTH_8TH_SE, EIGHTH_8TH_NE],
+  },
+
+  // 6th
   {
     description: "sixth school",
     type: "dedicated",
@@ -326,7 +363,7 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
 
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],
-    description: "through park",
+    description: "through moody park",
     type: "mixed",
     videoIds: [ROUTE_VIDEOS.crosstownNWEb.id],
     positions: [
@@ -350,10 +387,8 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
       [49.21214, -122.92706],
       [49.21225, -122.92702],
       [49.2123, -122.92697],
-      [49.21243, -122.92664],
-      [49.21252, -122.92649],
-      [49.21258, -122.92636],
-      [49.2127, -122.92615],
+      MOODY_TRIANGLE_S,
+      MOODY_TRIANGLE_E,
       EIGHTH_7TH_W,
     ],
   },
