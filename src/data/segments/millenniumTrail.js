@@ -35,7 +35,7 @@ export const MILLENNIUM_TRAIL = [
   {
     description: "connection from agnes via first",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.millenniumSb.id],
+    videoIds: [ROUTE_VIDEOS.millenniumNb.id, ROUTE_VIDEOS.millenniumSb.id],
     positions: [
       FIRST_AGNES,
       [49.20958, -122.90229],
@@ -51,7 +51,7 @@ export const MILLENNIUM_TRAIL = [
     routeNames: [ROUTES.millenniumTrail.name],
     description: "main trail",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.millenniumSb.id],
+    videoIds: [ROUTE_VIDEOS.millenniumSb.id, ROUTE_VIDEOS.millenniumNb.id],
     positions: [
       GRANVILLE_VANCOUVER_S,
       [49.21175, -122.90283],
@@ -107,6 +107,8 @@ export const MILLENNIUM_TRAIL = [
     routeNames: [ROUTES.millenniumTrail.name],
     description: "north side trail",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.millenniumNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.millenniumNb.id],
     positions: [
       MILLENNIUM_TRAIL_NE_S,
       [49.21915, -122.90843],

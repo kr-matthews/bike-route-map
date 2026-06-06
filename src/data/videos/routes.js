@@ -1524,6 +1524,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Jun 10 2023"),
     minutes: 45,
   },
+  millenniumNb: {
+    id: "2BAnpY-NVCY",
+    tlId: "kBBXjYGMTuI",
+    date: new Date("Jun 01 2026"),
+    minutes: 8,
+  },
   millenniumSb: {
     id: "AfnrDXu0pTw",
     tlId: "HXP_6ywV2nU",

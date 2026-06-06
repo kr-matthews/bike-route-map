@@ -28,8 +28,8 @@ export const AGNES = [
     routeNames: [ROUTES.agnes.name],
     description: "east bit",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.agnesWb.id],
-    videoIdsStartAtEnd: [ROUTE_VIDEOS.agnesWb.id],
+    videoIds: [ROUTE_VIDEOS.agnesWb.id, ROUTE_VIDEOS.millenniumNb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.agnesWb.id, ROUTE_VIDEOS.millenniumNb.id],
     positions: [FIRST_AGNES, [49.20946, -122.90125]],
   },
 ];
