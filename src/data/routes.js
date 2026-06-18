@@ -2006,8 +2006,11 @@ export const ROUTES = {
     name: "MacKay",
     regions: [REGIONS.northVancouver],
     legs: [
-      { videos: {} },
-      { name: "MacKay Rd MUP", videos: { southbound: ROUTE_VIDEOS.mackaySb } },
+      { videos: { northbound: ROUTE_VIDEOS.mackayNb } },
+      {
+        name: "MacKay Rd MUP",
+        videos: { southbound: ROUTE_VIDEOS.mackayMupSb },
+      },
     ],
     notes:
       "This seems to be two disconnected routes with the same name, separated by Marine Dr. Southbound, it's not possible to turn left onto Marine Dr, there's no proper way to continue south. The north part is steep and quiet-ish, and doesn't connect to anything. The south part is flat and busy-ish, and also has a MUP along the west side with some poles in it.",

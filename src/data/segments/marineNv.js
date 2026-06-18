@@ -302,14 +302,24 @@ export const MARINE_NV = [
   },
   {
     routeNames: [ROUTES.marineNv.name],
-    description: "wb: hamilton to mackay rd",
+    description: "wb: hamilton to mackay ave",
     type: "painted",
     oneWay: "required",
-    videoIds: [ROUTE_VIDEOS.marineNvWb.id],
+    videoIds: [ROUTE_VIDEOS.marineNvWb.id, ROUTE_VIDEOS.mackayNb.id],
     positions: [
       HAMILTON_MARINE_NE,
       HAMILTON_MARINE_NW,
       [49.32359, -123.10113],
+      MACKAY_AVE_MARINE_N,
+    ],
+  },
+  {
+    routeNames: [ROUTES.marineNv.name],
+    description: "wb: mackay ave to mackay rd",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.marineNvWb.id],
+    positions: [
       MACKAY_AVE_MARINE_N,
       [49.32372, -123.10148],
       [49.32379, -123.10169],
