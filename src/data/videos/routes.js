@@ -950,6 +950,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Mar 03 2026"),
     minutes: 7,
   },
+  gilbertMupNb: {
+    id: "-gGUhZcx-B4",
+    date: new Date("Jun 17 2026"),
+    minutes: 6,
+  },
   gladstoneNb: {
     id: "zOUHEenuUnQ",
     date: new Date("Aug 17 2023"),

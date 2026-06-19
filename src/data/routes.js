@@ -1380,6 +1380,12 @@ export const ROUTES = {
           southbound: ROUTE_VIDEOS.gilbertSb,
         },
       },
+      {
+        name: "Adjacent MUP",
+        videos: {
+          northbound: ROUTE_VIDEOS.gilbertMupNb,
+        },
+      },
     ],
     notes:
       "Terrible bike route, fast cars will not leave sufficient space when passing - especially on the bridge. The painted lanes are beside the curb. In 2026 a MUP was added for a portion of this route, so you can now avoid most of the parts which are shared with cars (except the bridge) but will still need to use the painted lanes.",

@@ -68,7 +68,7 @@ export const GILBERT = [
     description: "nb: elmbridge to lane",
     type: "shared",
     oneWay: "required",
-    videoIds: [ROUTE_VIDEOS.gilbertNb.id],
+    videoIds: [ROUTE_VIDEOS.gilbertNb.id, ROUTE_VIDEOS.gilbertMupNb.id],
     positions: [
       GILBERT_ELMBRIDGE_SE,
       [49.17261, -123.14649],
@@ -78,14 +78,25 @@ export const GILBERT = [
   },
   {
     routeNames: [ROUTES.gilbert.name],
-    description: "nb: lane to bridge",
+    description: "nb: elmbridge to lansdowne",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.gilbertNb.id, ROUTE_VIDEOS.gilbertMupNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.gilbertMupNb.id],
+    positions: [
+      NB_POST_ELMBRIDGE,
+      [49.17374, -123.14551],
+      GILBERT_LANSDOWNE_NE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.gilbert.name],
+    description: "nb: lansdowne to bridge",
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
     videoIds: [ROUTE_VIDEOS.gilbertNb.id],
     positions: [
-      NB_POST_ELMBRIDGE,
-      [49.17374, -123.14551],
       GILBERT_LANSDOWNE_NE,
       [49.17419, -123.14518],
       [49.17438, -123.14507],
@@ -259,8 +270,19 @@ export const GILBERT = [
     positions: [GILBERT_ELMBRIDGE_NW, GILBERT_ELMBRIDGE_SW],
   },
   {
+    description: "leaving at elmbridge",
+    type: "mixed",
+    oneWay: "recommended",
+    undesignated: true,
+    videoIds: [ROUTE_VIDEOS.gilbertMupNb.id],
+    positions: [GILBERT_ELMBRIDGE_SW, GILBERT_ELMBRIDGE_SE],
+  },
+
+  {
     description: "gilbert mup 1",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.gilbertMupNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.gilbertMupNb.id],
     positions: [
       [49.16288, -123.14763],
       [49.16295, -123.14765],
@@ -271,11 +293,13 @@ export const GILBERT = [
   {
     description: "gilbert mup 2",
     type: "combined",
+    videoIds: [ROUTE_VIDEOS.gilbertMupNb.id],
     positions: [RICHMOND_TENNIS_CLUB, [49.1651, -123.1476], NANIKA],
   },
   {
     description: "gilbert mup 3",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.gilbertMupNb.id],
     positions: [
       NANIKA,
       [49.16605, -123.14748],
