@@ -1,8 +1,11 @@
 import {
   ANGUS_45TH,
+  ASH_45TH_NE,
+  ASH_45TH_SE,
   BALACLAVA_45TH,
   CAMBIE_45TH_E,
-  CAMBIE_45TH_W,
+  CAMBIE_45TH_NW,
+  CAMBIE_45TH_SW,
   CARNARVON_45TH,
   DUMFRIES_47TH,
   EAST_BLVD_45TH,
@@ -18,6 +21,7 @@ import {
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
+const W_OF_ASH = [49.22989, -123.11846];
 const NANAIMO_47TH = [49.22759, -123.05908];
 
 export const FORTY_FIFTH = [
@@ -82,14 +86,60 @@ export const FORTY_FIFTH = [
   },
   {
     routeNames: [ROUTES.fortyFifth.name],
-    description: "heather to inverness",
+    description: "heather to nearly ash",
+    type: "quiet",
+    videoIds: [ROUTE_VIDEOS.fortyFifthEb.id, ROUTE_VIDEOS.fortyFifthWb.id],
+    positions: [TISDALL_46TH, [49.23001, -123.12164], W_OF_ASH],
+  },
+  {
+    description: "old: ash-ish to cambie",
+    type: "quiet",
+    undesignated: true,
+    videoIds: [ROUTE_VIDEOS.fortyFifthEb.id, ROUTE_VIDEOS.fortyFifthWb.id],
+    positions: [W_OF_ASH, CAMBIE_45TH_E],
+  },
+  {
+    routeNames: [ROUTES.fortyFifth.name],
+    description: "eb: ash-ish to cambie",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      W_OF_ASH,
+      [49.22985, -123.11836],
+      ASH_45TH_SE,
+      [49.2298, -123.11692],
+      CAMBIE_45TH_SW,
+      [49.22976, -123.11624],
+      CAMBIE_45TH_E,
+    ],
+  },
+  {
+    routeNames: [ROUTES.fortyFifth.name],
+    description: "wb: crossing cambie",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [CAMBIE_45TH_E, [49.22993, -123.11623], CAMBIE_45TH_NW],
+  },
+  {
+    routeNames: [ROUTES.fortyFifth.name, ROUTES.oakridge.name],
+    description: "wb: cambie to ash",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [CAMBIE_45TH_NW, [49.22991, -123.11681], ASH_45TH_NE],
+  },
+  {
+    routeNames: [ROUTES.fortyFifth.name],
+    description: "wb: w of ash",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [ASH_45TH_NE, [49.22996, -123.11838], W_OF_ASH],
+  },
+  {
+    routeNames: [ROUTES.fortyFifth.name],
+    description: "cambie to inverness",
     type: "quiet",
     videoIds: [ROUTE_VIDEOS.fortyFifthEb.id, ROUTE_VIDEOS.fortyFifthWb.id],
     positions: [
-      TISDALL_46TH,
-      [49.23001, -123.12164],
-      [49.22987, -123.11796],
-      CAMBIE_45TH_W,
       CAMBIE_45TH_E,
       [49.22971, -123.11304],
       [49.22963, -123.11086],

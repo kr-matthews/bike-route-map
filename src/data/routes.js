@@ -2420,6 +2420,13 @@ export const ROUTES = {
     notes:
       "A long steep hill with lots of traffic. The painted lanes are beside the curb. At the east end, you can continue and connect with Midtown. At the west end, going eastbound is confusing as you briefly use an adjacent street, and the shared use paths on Dover and southwards on Royal Oak don't quite connect to anything.",
   },
+  oakridge: {
+    name: "Oakridge Park",
+    regions: [REGIONS.vancouver],
+    legs: [{ name: "Perimeter", videos: {} }],
+    notes:
+      "The perimeter of the re-developed mall includes bike lanes, though some sections are still under construction. They were meant to be bi-directional, but half appear to be one-way.",
+  },
   oakStreetBridge: {
     name: "Oak Street Bridge",
     regions: [REGIONS.vancouver, REGIONS.richmond],

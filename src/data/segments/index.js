@@ -158,6 +158,7 @@ import { NO_6_PATH } from "./no6Path";
 import { NORTH_SOUTH } from "./northSouth";
 import { OAK_STREET_BRIDGE } from "./oakStBridge";
 import { OAKLAND_BURRIS } from "./oaklandBurris";
+import { OAKRIDGE_PARK } from "./oakridgePark";
 import { ODLIN } from "./odlin";
 import { OFF_BROADWAY } from "./offBroadway";
 import { ONTARIO } from "./ontario";
@@ -406,6 +407,7 @@ export const SEGMENTS = [
   ...NORTH_SOUTH,
   ...OAK_STREET_BRIDGE,
   ...OAKLAND_BURRIS,
+  ...OAKRIDGE_PARK,
   ...ODLIN,
   ...OFF_BROADWAY,
   ...ONTARIO,
