@@ -16,6 +16,7 @@ import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
 const GILBERT_RUSS_BAKER_SW_S = [49.18091, -123.15151];
+const GILBERT_WESTMINSTER_NE = [49.17026, -123.1476];
 const NB_POST_WESTMINSTER = [49.17112, -123.14758];
 const GILBERT_ELMBRIDGE_SE = [49.1724, -123.14666];
 const NB_POST_ELMBRIDGE = [49.17313, -123.14603];
@@ -25,6 +26,11 @@ const DINSMORE_NW = [49.17963, -123.14976];
 const DINSMORE_SW = [49.17737, -123.14722];
 const GILBERT_ELMBRIDGE_NW = [49.17269, -123.14672];
 const RUSS_BAKER_CROSSWALK_END = [49.18105, -123.15156];
+
+const RICHMOND_TENNIS_CLUB = [49.1641, -123.14759];
+const NANIKA = [49.16553, -123.14759];
+const GILBERT_ELMBRIDGE_SW = [49.17249, -123.14691];
+const GILBERT_WESTMINSTER_SE = [49.17006, -123.14754];
 
 export const GILBERT = [
   // nb
@@ -38,7 +44,7 @@ export const GILBERT = [
       GILBERT_GRANVILLE_NE,
       [49.16615, -123.14768],
       [49.16903, -123.14763],
-      [49.17019, -123.1476],
+      GILBERT_WESTMINSTER_NE,
       [49.17103, -123.14759],
       NB_POST_WESTMINSTER,
     ],
@@ -236,6 +242,59 @@ export const GILBERT = [
       [49.16903, -123.14783],
       [49.16615, -123.14785],
       GILBERT_GRANVILLE_NW,
+    ],
+  },
+
+  // mup
+  {
+    description: "connection at westminster",
+    type: "painted",
+    oneWay: "required",
+    positions: [GILBERT_WESTMINSTER_SE, GILBERT_WESTMINSTER_NE],
+  },
+  {
+    description: "connection at elmbridge",
+    type: "painted",
+    oneWay: "required",
+    positions: [GILBERT_ELMBRIDGE_NW, GILBERT_ELMBRIDGE_SW],
+  },
+  {
+    description: "gilbert mup 1",
+    type: "mixed",
+    positions: [
+      [49.16288, -123.14763],
+      [49.16295, -123.14765],
+      [49.16373, -123.14766],
+      RICHMOND_TENNIS_CLUB,
+    ],
+  },
+  {
+    description: "gilbert mup 2",
+    type: "combined",
+    positions: [RICHMOND_TENNIS_CLUB, [49.1651, -123.1476], NANIKA],
+  },
+  {
+    description: "gilbert mup 3",
+    type: "mixed",
+    positions: [
+      NANIKA,
+      [49.16605, -123.14748],
+      [49.16606, -123.14761],
+      [49.16899, -123.14759],
+      [49.16914, -123.1475],
+      [49.16917, -123.14755],
+      [49.16925, -123.14758],
+      [49.17002, -123.14756],
+      GILBERT_WESTMINSTER_SE,
+      [49.17006, -123.14787],
+      [49.17036, -123.14787],
+      [49.17042, -123.14786],
+      [49.17106, -123.14785],
+      [49.17116, -123.14784],
+      [49.1713, -123.1478],
+      [49.17141, -123.14775],
+      [49.17166, -123.14757],
+      GILBERT_ELMBRIDGE_SW,
     ],
   },
 ];

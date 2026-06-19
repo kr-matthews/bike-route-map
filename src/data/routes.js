@@ -1382,7 +1382,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "Terrible bike route, fast cars will not leave sufficient space when passing - especially on the bridge. The painted lanes are beside the curb. The city plans on adding a shared use path to improve (part of) this route.",
+      "Terrible bike route, fast cars will not leave sufficient space when passing - especially on the bridge. The painted lanes are beside the curb. In 2026 a MUP was added for a portion of this route, so you can now avoid most of the parts which are shared with cars (except the bridge) but will still need to use the painted lanes.",
   },
   gladstone: {
     name: "Gladstone",
