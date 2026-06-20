@@ -1917,7 +1917,13 @@ export const ROUTES = {
     name: "Lansdowne Rd/Hollybridge Way Path",
     shortName: "Lansdowne Rd Path",
     regions: [REGIONS.richmond],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.lansdowneHollybridgeEb,
+        },
+      },
+    ],
     notes:
       "A flat MUP which doesn't connect to any other comfortable routes besides Middle Arm Trail.",
   },

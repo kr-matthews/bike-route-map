@@ -7,6 +7,7 @@ import {
   MINORU_LANSDOWNE_NW,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const HOLLYBRIDGE_RIVER_E = [49.17464, -123.14855];
 const HOLLYBRIDGE_RIVER_W = [49.17479, -123.14871];
@@ -25,7 +26,10 @@ export const LANSDOWNE_HOLLYBRIDGE = [
   {
     routeNames: [ROUTES.lansdowneHollybridge.name],
     description: "hollybridge & lansdowne",
-    type: "mixed", // 1 block is combined (or dedicated?)
+    type: "mixed", // 1 block is dedicated
+    videoIds: [ROUTE_VIDEOS.lansdowneHollybridgeEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.lansdowneHollybridgeEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.lansdowneHollybridgeEb.id],
     positions: [
       HOLLYBRIDGE_MIDDLE_ARM_E,
       [49.17665, -123.14981],
@@ -59,8 +63,13 @@ export const LANSDOWNE_HOLLYBRIDGE = [
       [49.17393, -123.14211],
       [49.17394, -123.14041],
       MINORU_LANSDOWNE_NW,
-      MINORU_LANSDOWNE_NE,
     ],
+  },
+  {
+    routeNames: [ROUTES.lansdowneHollybridge.name],
+    description: "crossing minoru",
+    type: "mixed",
+    positions: [MINORU_LANSDOWNE_NW, MINORU_LANSDOWNE_NE],
   },
   {
     routeNames: [ROUTES.lansdowneHollybridge.name],
