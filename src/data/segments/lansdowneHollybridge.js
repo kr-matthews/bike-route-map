@@ -15,15 +15,6 @@ const HOLLYBRIDGE_MIDDLE_ARM_SPLIT = [49.17642, -123.1501];
 
 export const LANSDOWNE_HOLLYBRIDGE = [
   {
-    description: "lansdowne lane",
-    type: "dedicated",
-    oneWay: "required",
-    positions: [
-      [49.17392, -123.1424],
-      [49.17391, -123.14392],
-    ],
-  },
-  {
     routeNames: [ROUTES.lansdowneHollybridge.name],
     description: "hollybridge & lansdowne",
     type: "mixed", // 1 block is dedicated
