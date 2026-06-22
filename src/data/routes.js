@@ -2245,7 +2245,14 @@ export const ROUTES = {
   minoru: {
     name: "Minoru Blvd",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { northbound: ROUTE_VIDEOS.minoruNb } }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.minoruNb,
+          southbound: ROUTE_VIDEOS.minoruSb,
+        },
+      },
+    ],
     notes:
       "Very flat, lots of traffic. The painted lanes are beside the curb. The painted lanes may be closed at CF Richmond Center due to construction.",
   },

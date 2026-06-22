@@ -1,6 +1,7 @@
 import {
   MINORU_GRANVILLE_NE,
   MINORU_GRANVILLE_NW,
+  MINORU_GRANVILLE_SW,
   MINORU_LANSDOWNE_NW,
   MINORU_LANSDOWNE_NE,
   NO_3_ACKROYD_W,
@@ -116,7 +117,7 @@ export const MINORU = [
 
   {
     routeNames: [ROUTES.minoru.name],
-    description: "sb: alderbridge to before elmbridge",
+    description: "sb: alderbridge to lansdowne",
     type: "painted",
     oneWay: "required",
     positions: [
@@ -127,14 +128,23 @@ export const MINORU = [
       [49.17577, -123.14028],
       [49.17564, -123.14027],
       MINORU_LANSDOWNE_NW,
-      SB_PRE_ELMBRIDGE,
     ],
   },
   {
     routeNames: [ROUTES.minoru.name],
-    description: "sb: lane",
+    description: "sb: lansdowne to before elmbridge",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.minoruSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.minoruSb.id],
+    positions: [MINORU_LANSDOWNE_NW, SB_PRE_ELMBRIDGE],
+  },
+  {
+    routeNames: [ROUTES.minoru.name],
+    description: "sb: shared lane",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.minoruSb.id],
     positions: [SB_PRE_ELMBRIDGE, [49.17213, -123.14033], MINORU_ELMBRIDGE_SW],
   },
   {
@@ -142,6 +152,7 @@ export const MINORU = [
     description: "sb: elmbridge to granville",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.minoruSb.id],
     positions: [
       MINORU_ELMBRIDGE_SW,
       [49.17021, -123.14036],
@@ -171,5 +182,15 @@ export const MINORU = [
       [49.16331, -123.14034],
       MINORU_GRANVILLE_NW,
     ],
+  },
+  {
+    routeNames: [ROUTES.minoru.name],
+    description: "sb: crossing granville",
+    type: "shared",
+    oneWay: "required",
+    undesignated: true,
+    videoIds: [ROUTE_VIDEOS.minoruSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.minoruSb.id],
+    positions: [MINORU_GRANVILLE_NW, MINORU_GRANVILLE_SW],
   },
 ];

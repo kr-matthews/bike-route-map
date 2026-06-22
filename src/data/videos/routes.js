@@ -1564,6 +1564,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Jun 04 2025"),
     minutes: 6,
   },
+  minoruSb: {
+    id: "IcZuTk5Cric",
+    date: new Date("Jun 17 2026"),
+    minutes: 5,
+  },
   mosaicNb: {
     id: "ptiQwQyVDsM",
     tlId: "jCRYUsd4FlQ",
