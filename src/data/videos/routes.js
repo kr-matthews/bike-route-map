@@ -1456,6 +1456,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("May 14 2024"),
     minutes: 5,
   },
+  lynasSb: {
+    id: "PGPmfaeZlU0",
+    date: new Date("Jun 17 2026"),
+    minutes: 7,
+  },
   mackayMupSb: {
     id: "KCcjD99lcC8",
     date: new Date("Dec 23, 2024"),

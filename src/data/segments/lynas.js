@@ -18,8 +18,9 @@ export const LYNAS = [
     routeNames: [ROUTES.lynas.name],
     description: "granville to path",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.lynasNb.id],
+    videoIds: [ROUTE_VIDEOS.lynasNb.id, ROUTE_VIDEOS.lynasSb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.lynasNb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.lynasSb.id],
     positions: [
       LYNAS_GRANVILLE_S,
       LYNAS_GRANVILLE_N,
@@ -33,7 +34,7 @@ export const LYNAS = [
     routeNames: [ROUTES.lynas.name],
     description: "path",
     type: "combined",
-    videoIds: [ROUTE_VIDEOS.lynasNb.id],
+    videoIds: [ROUTE_VIDEOS.lynasNb.id, ROUTE_VIDEOS.lynasSb.id],
     positions: [
       LYNAS_OPAL,
       [49.16626, -123.16458],
@@ -49,7 +50,7 @@ export const LYNAS = [
     routeNames: [ROUTES.lynas.name],
     description: "path to tiffany park",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.lynasNb.id],
+    videoIds: [ROUTE_VIDEOS.lynasNb.id, ROUTE_VIDEOS.lynasSb.id],
     positions: [
       LYNAS_TIFFANY,
       [49.16736, -123.16454],
@@ -61,7 +62,11 @@ export const LYNAS = [
     routeNames: [ROUTES.lynas.name],
     description: "just s of westminster",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.no2Nb25.id, ROUTE_VIDEOS.lynasNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.no2Nb25.id,
+      ROUTE_VIDEOS.lynasNb.id,
+      ROUTE_VIDEOS.lynasSb.id,
+    ],
     videoIdsStartAtStart: [ROUTE_VIDEOS.no2Nb25.id],
     positions: [LYNAS_TIFFANY_PARK, LYNAS_WESTMINSTER_N],
   },

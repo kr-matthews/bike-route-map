@@ -157,8 +157,13 @@ export const NO_2 = [
     routeNames: [ROUTES.no2.name],
     description: "westminster",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.no2Nb25.id, ROUTE_VIDEOS.no2Sb.id],
+    videoIds: [
+      ROUTE_VIDEOS.no2Nb25.id,
+      ROUTE_VIDEOS.lynasSb.id,
+      ROUTE_VIDEOS.no2Sb.id,
+    ],
     videoIdsEndAtStart: [ROUTE_VIDEOS.no2Sb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.lynasSb.id],
     positions: [
       LYNAS_WESTMINSTER_N,
       [49.17023, -123.16291],

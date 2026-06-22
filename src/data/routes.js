@@ -2002,7 +2002,14 @@ export const ROUTES = {
   lynas: {
     name: "Lynas Ln",
     regions: [REGIONS.richmond],
-    legs: [{ videos: { northbound: ROUTE_VIDEOS.lynasNb } }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.lynasNb,
+          southbound: ROUTE_VIDEOS.lynasSb,
+        },
+      },
+    ],
     notes:
       "Very flat. The part north of Westminster Hwy gets a lot of cars at times - but you can avoid that as of late 2025, because there's a new protected lane along Westminster Hwy to connect to No. 2 Road and the bridge.",
   },
