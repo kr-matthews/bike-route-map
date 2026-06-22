@@ -154,7 +154,7 @@ export const RUSS_BAKER = [
   },
   {
     routeNames: [ROUTES.russBaker.name],
-    description: "sb: miller to no. 2 bridge",
+    description: "sb: miller to inglis",
     type: "shoulder",
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.russBakerSb.id],
@@ -182,7 +182,15 @@ export const RUSS_BAKER = [
       [49.17991, -123.15357],
       [49.17978, -123.15373],
       RUSS_BAKER_INGLIS_SW_S,
-      NO_2_RUSS_BAKER_W,
     ],
+  },
+  {
+    routeNames: [ROUTES.russBaker.name],
+    description: "sb: inglis to no. 2 bridge",
+    type: "shoulder",
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.no2Sb.id, ROUTE_VIDEOS.russBakerSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.no2Sb.id],
+    positions: [RUSS_BAKER_INGLIS_SW_S, NO_2_RUSS_BAKER_W],
   },
 ];

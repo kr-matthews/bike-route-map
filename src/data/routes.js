@@ -2344,16 +2344,23 @@ export const ROUTES = {
     regions: [REGIONS.richmond],
     legs: [
       {
-        name: "From Lynas Ln, via Westminster Hwy",
-        videos: { northbound: ROUTE_VIDEOS.no2Nb25 },
+        name: "From/to Lynas Ln, via Westminster Hwy",
+        videos: {
+          northbound: ROUTE_VIDEOS.no2Nb25,
+          southbound: ROUTE_VIDEOS.no2Sb,
+        },
       },
       {
-        name: "From Lynas Ln, via River Rd",
+        name: "From/to Lynas Ln, via River Rd",
         videos: { northbound: ROUTE_VIDEOS.no2Nb },
+      },
+      {
+        name: "To Lynas Ln, via Dover Cr",
+        videos: {},
       },
     ],
     notes:
-      "Painted lane over the bridge, beside the curb. Relatively flat, for a bridge. You can use the sidewalk as a shared use path instead. As of late 2025, you can now connect with Lynas Ln via a protected path along Westminster Hwy.",
+      "Painted lane over the bridge, beside the curb. Relatively flat, for a bridge. You can use the sidewalk as a shared use path instead. As of late 2025, you can now connect with Lynas Ln via a protected path along Westminster Hwy, or via Dover Cr.",
   },
   no2Bridge: {
     name: "No. 2 Rd Bridge",

@@ -157,7 +157,8 @@ export const NO_2 = [
     routeNames: [ROUTES.no2.name],
     description: "westminster",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.no2Nb25.id],
+    videoIds: [ROUTE_VIDEOS.no2Nb25.id, ROUTE_VIDEOS.no2Sb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.no2Sb.id],
     positions: [
       LYNAS_WESTMINSTER_N,
       [49.17023, -123.16291],
@@ -239,7 +240,7 @@ export const NO_2 = [
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [ROUTE_VIDEOS.russBakerSb.id],
+    videoIds: [ROUTE_VIDEOS.no2Sb.id, ROUTE_VIDEOS.russBakerSb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.russBakerSb.id],
     positions: [NO_2_RUSS_BAKER_W, SB_ELEVATION_START],
   },
@@ -249,6 +250,7 @@ export const NO_2 = [
     type: "painted",
     oneWay: "required",
     elevation: 1,
+    videoIds: [ROUTE_VIDEOS.no2Sb.id],
     positions: [
       SB_ELEVATION_START,
       [49.17784, -123.15587],
@@ -266,6 +268,7 @@ export const NO_2 = [
     type: "painted",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.no2Sb.id],
     positions: [
       SB_ELEVATION_END,
       [49.17293, -123.15869],
@@ -278,6 +281,7 @@ export const NO_2 = [
     description: "sb: path to westminster",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.no2Sb.id],
     positions: [
       NO_2_RIVER_W,
       [49.17182, -123.15895],
