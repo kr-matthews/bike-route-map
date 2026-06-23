@@ -925,7 +925,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "Mostly flat through Vancouver and Burnaby, but New Westminster has lots of hills. The path near Burnaby Lake was paved late 2024. Winston St has been partially closed for construction for years. Improvements along E Columbia St and Sherbrooke St were finished in early 2025. The route has an annoying unnecessary steep detour at Cumberland St.",
+      "Mostly flat through Vancouver and Burnaby, but New Westminster has lots of hills. The path near Burnaby Lake was paved late 2024. Improvements along E Columbia St and Sherbrooke St were finished in early 2025. The route has an annoying unnecessary steep detour at Cumberland St.",
   },
   champlainHeightsGap: {
     name: "Champlain Heights Gap",
@@ -1577,7 +1577,7 @@ export const ROUTES = {
       { name: "Pandora <-> Windermere", videos: {} },
     ],
     notes:
-      "Numerous paths throughout the park. Some are easy to follow, others are confusing. Some paths may be closed during the PNE and other times. The amphitheatre is being rebuilt on Miller Rd (as of mid 2024) so that section may be closed.",
+      "Numerous paths throughout the park. Some are easy to follow, others are confusing. Some paths may be closed during the PNE and other times. It doesn't look like the bike lane was rebuilt when the amphitheatre was constructed on Miller Rd.",
   },
   heather: {
     name: "Heather",
@@ -2260,8 +2260,7 @@ export const ROUTES = {
         },
       },
     ],
-    notes:
-      "Very flat, lots of traffic. The painted lanes are beside the curb. The painted lanes may be closed at CF Richmond Center due to construction.",
+    notes: "Very flat, lots of traffic. The painted lanes are beside the curb.",
   },
   mosaic: {
     name: "Mosaic",
@@ -2275,7 +2274,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "Lots of hills, but mostly quiet. The south (east) end leads to an alley which eventually connects to BC Parkway. The Grandview Cut was closed to cars around 2022.",
+      "Lots of hills, but mostly quiet. The south (east) end leads to an alley which eventually connects to BC Parkway. The Grandview Cut crossing was closed to cars around 2022, and in 2026 was made a community space.",
   },
   mosquitoCreek: {
     name: "Mosquito Creek",
