@@ -1,9 +1,9 @@
 import {
-  LIGHTHOUSE_PLACE_PATH_JOIN,
   LYNAS_DOVER_N,
   LYNAS_DOVER_S,
   LYNAS_RIVER,
   LYNAS_WESTMINSTER_N,
+  NO_2_BRIDGE_SIDEWALK_SW,
   NO_2_RIVER_E_E,
   NO_2_RIVER_W_N,
   NO_2_RUSS_BAKER_E,
@@ -22,36 +22,21 @@ const NO_2_RIVER_W = [49.17227, -123.15891];
 
 const NO_2_RIVER = [49.17387, -123.1589];
 const RIVER_RIVER_W = [49.17228, -123.15713];
-const NO_2_DOVER_PATH_E = [49.17226, -123.15905];
+const NO_2_DOVER_PATH_E = [49.17228, -123.15895];
 const NO_2_DOVER_PATH_W = [49.17224, -123.1604];
 
 export const NO_2 = [
   // south west side
   {
-    description: "west side ground lane",
-    type: "painted",
-    oneWay: "required",
-    positions: [
-      NO_2_RIVER,
-      [49.17371, -123.15885],
-      [49.17294, -123.15885],
-      NO_2_RIVER_W,
-    ],
-  },
-  {
-    description: "west side path a",
+    description: "west side path, s half",
     type: "mixed",
-    positions: [
-      NO_2_DOVER_PATH_E,
-      [49.17305, -123.15896],
-      LIGHTHOUSE_PLACE_PATH_JOIN,
-    ],
+    positions: [NO_2_DOVER_PATH_E, NO_2_BRIDGE_SIDEWALK_SW],
   },
   {
-    description: "west side path b",
+    description: "west side path, n half",
     type: "mixed",
     videoIds: [ROUTE_VIDEOS.no2BridgeSb.id],
-    positions: [LIGHTHOUSE_PLACE_PATH_JOIN, NO_2_RIVER],
+    positions: [NO_2_BRIDGE_SIDEWALK_SW, NO_2_RIVER],
   },
   {
     description: "river to post-bridge lane",
@@ -60,14 +45,19 @@ export const NO_2 = [
     positions: [NO_2_RIVER, NO_2_RIVER_W_N],
   },
   {
-    description: "connection with dover",
+    description: "mup connection with dover",
     type: "mixed",
     positions: [
       NO_2_DOVER_PATH_W,
       [49.17224, -123.15914],
+      [49.17226, -123.15905],
       NO_2_DOVER_PATH_E,
-      NO_2_RIVER_W,
     ],
+  },
+  {
+    description: "curb connection to mup connection with dover",
+    type: "mixed",
+    positions: [NO_2_DOVER_PATH_E, NO_2_RIVER_W],
   },
   {
     description: "dover n",

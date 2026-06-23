@@ -1,6 +1,6 @@
 import {
-  LIGHTHOUSE_PLACE_PATH_JOIN,
   NO_2_BRIDGE_SIDEWALK_NE,
+  NO_2_BRIDGE_SIDEWALK_SW,
   NO_2_RIVER_E_E,
   NO_2_RUSS_BAKER_W,
 } from "../intersections";
@@ -112,9 +112,7 @@ export const NO_2_BRIDGE = [
     positions: [
       SB_ELEVATION_END,
       [49.17293, -123.15874],
-      [49.17294, -123.15888],
-      [49.17307, -123.15889],
-      LIGHTHOUSE_PLACE_PATH_JOIN,
+      NO_2_BRIDGE_SIDEWALK_SW,
     ],
   },
 ];

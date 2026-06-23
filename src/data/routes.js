@@ -2374,14 +2374,19 @@ export const ROUTES = {
     regions: [REGIONS.richmond],
     legs: [
       {
+        name: "To/from Middle Arm Trail",
         videos: {
           northbound: ROUTE_VIDEOS.no2BridgeNb,
           southbound: ROUTE_VIDEOS.no2BridgeSb,
         },
       },
+      {
+        name: "To Lynas Ln via Dover Cr",
+        videos: {},
+      },
     ],
     notes:
-      "The shared use sidewalk of the bridge - the only comfortable way to cross to Sea Island. There are no signs saying you have to use the right side, so I'd recommend the west side for both directions, accessed via Dover Cr - however, as of December 2025, this connection to Dover Cr has been closed for construction for over a year.",
+      "The shared use sidewalk of the bridge - the only comfortable way to cross to Sea Island. There are no signs saying you have to use the right side, so I'd recommend the west side for both directions, accessed via the MUP connections to Dover Cr or Middle Arm Trail.",
   },
   no2Path: {
     name: "No. 2 Rd Path",
