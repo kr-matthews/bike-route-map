@@ -515,4 +515,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.25891, -123.13835],
     region: REGIONS.vancouver,
   },
+  eastsideCrosscutBroadwayNb26: {
+    id: "2BkJ3Iwgjf0",
+    title: "Eastside Crosscut @ Broadway",
+    routeNames: [ROUTES.eastsideCrosscut.name],
+    direction: "northbound",
+    date: new Date("June 18 2026"),
+    minutes: 0,
+    position: [49.26204, -123.03957],
+    region: REGIONS.vancouver,
+  },
 };
