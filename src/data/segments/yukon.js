@@ -47,10 +47,10 @@ export const YUKON = [
     ],
   },
   {
-    routeNames: [ROUTES.yukon.name],
+    routeNames: [ROUTES.kingEdward.name, ROUTES.yukon.name],
     description: "king edward overlap",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.yukonSb.id],
+    videoIds: [ROUTE_VIDEOS.kingEdwardCambieEb.id, ROUTE_VIDEOS.yukonSb.id],
     positions: [YUKON_KING_EDWARD_SE, YUKON_KING_EDWARD_SW],
   },
   {

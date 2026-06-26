@@ -34,6 +34,7 @@ const HEATHER_MARINE_E_NN = [49.20747, -123.12424];
 const HEATHER_52ND = [49.22326, -123.12369];
 const NORTH_OF_49TH = [49.22709, -123.12176];
 const HEATHER_33RD_S = [49.24112, -123.12065];
+const HEATHER_23RD = [49.25068, -123.12032];
 
 export const HEATHER = [
   // willow/33rd extras
@@ -316,7 +317,7 @@ export const HEATHER = [
   },
   {
     routeNames: [ROUTES.heather.name],
-    description: "28th to 14th",
+    description: "28th to 23rd",
     type: "quiet",
     videoIds: [ROUTE_VIDEOS.heatherSb.id, ROUTE_VIDEOS.heatherNb.id],
     positions: [
@@ -325,6 +326,27 @@ export const HEATHER = [
       [49.248, -123.12042],
       [49.24907, -123.12038],
       HEATHER_24TH,
+    ],
+  },
+  {
+    routeNames: [ROUTES.heather.name],
+    description: "24th to 23rd",
+    type: "quiet",
+    videoIds: [
+      ROUTE_VIDEOS.heatherSb.id,
+      ROUTE_VIDEOS.heatherNb.id,
+      ROUTE_VIDEOS.heatherKingEdwardEb.id,
+    ],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.heatherKingEdwardEb.id],
+    positions: [HEATHER_24TH, HEATHER_23RD],
+  },
+  {
+    routeNames: [ROUTES.heather.name],
+    description: "23rd to 14th",
+    type: "quiet",
+    videoIds: [ROUTE_VIDEOS.heatherSb.id, ROUTE_VIDEOS.heatherNb.id],
+    positions: [
+      HEATHER_23RD,
       [49.25156, -123.1203],
       [49.25339, -123.12023],
       [49.2552, -123.12016],

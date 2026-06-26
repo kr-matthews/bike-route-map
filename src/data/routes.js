@@ -1596,6 +1596,12 @@ export const ROUTES = {
           southbound: ROUTE_VIDEOS.heatherEricHamberSb,
         },
       },
+      {
+        name: "King Edward Station connection",
+        videos: {
+          eastbound: ROUTE_VIDEOS.heatherKingEdwardEb,
+        },
+      },
     ],
     notes:
       "Lots of hills, some steep. Potentially confusing to follow between 52nd and 37th. The portion south of 49th has no traffic calming and can get very busy at times unfortunately.",
@@ -1860,13 +1866,20 @@ export const ROUTES = {
       "A brief alternative to Ridgeway which is one block over. Unfortunately it's a lot hillier than Ridgeway, but quieter and has a light instead of a 4-way stop at Elliott.",
   },
   kingEdward: {
-    name: "W King Edward Ave",
+    name: "King Edward Ave",
     regions: [REGIONS.vancouver],
     legs: [
       {
+        name: "Between Dunbar & Cypress",
         videos: {
           eastbound: ROUTE_VIDEOS.kingEdwardEb,
           westbound: ROUTE_VIDEOS.kingEdwardWb,
+        },
+      },
+      {
+        name: "At King Edward Station",
+        videos: {
+          eastbound: ROUTE_VIDEOS.kingEdwardCambieEb,
         },
       },
     ],
@@ -2510,8 +2523,12 @@ export const ROUTES = {
         },
       },
       {
-        name: "Connection with Oakridge Station via 42nd Ave",
+        name: "Oakridge Station connection",
         videos: { eastbound: ROUTE_VIDEOS.fortySecondEb },
+      },
+      {
+        name: "King Edward Station connection",
+        videos: { eastbound: ROUTE_VIDEOS.kingEdwardCambieEb },
       },
     ],
     notes:

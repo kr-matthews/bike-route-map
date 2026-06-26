@@ -1142,6 +1142,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Sep 10 2023"),
     minutes: 26,
   },
+  heatherKingEdwardEb: {
+    id: "U-kIzKQC1qw",
+    date: new Date("Jun 24 2026"),
+    minutes: 2,
+  },
   heatherEricHamberNb: {
     id: "8EY5dbd_q7Y",
     date: new Date("Apr 24 2026"),
@@ -1338,6 +1343,11 @@ export const ROUTE_VIDEOS = {
     tlId: "zxXIXx6_wTk",
     date: new Date("Aug 13 2025"),
     minutes: 10,
+  },
+  kingEdwardCambieEb: {
+    id: "WoZM8irT8KI",
+    date: new Date("Jun 24 2026"),
+    minutes: 4,
   },
   knightStBridgeNb: {
     id: "jHY8amhWxyU",

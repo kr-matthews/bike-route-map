@@ -6,6 +6,7 @@ import {
   ARBUTUS_KING_EDWARD_SE,
   BALACLAVA_KING_EDWARD_N,
   BALACLAVA_KING_EDWARD_S,
+  CAMBIE_KING_EDWARD_NE,
   CAMBIE_KING_EDWARD_SE,
   CAMBIE_KING_EDWARD_SW,
   DUNBAR_KING_EDWARD_NE,
@@ -29,30 +30,40 @@ const COLUMBIA_KING_EDWARD = [49.24884, -123.11006];
 export const KING_EDWARD = [
   // cambie
   {
-    description: "24th",
+    description: "24th to king edward station",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.heatherKingEdwardEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.heatherKingEdwardEb.id],
     positions: [
       HEATHER_24TH,
       [49.25005, -123.11837],
-      [49.25001, -123.11609],
-      [49.25008, -123.11552],
+      [49.25001, -123.11607],
+      [49.24914, -123.11611],
     ],
   },
   {
-    description: "crossing king edward",
-    type: "dedicated",
-    oneWay: "recommended",
-    positions: [
-      [49.24913, -123.11569],
-      [49.24888, -123.11573],
-    ],
-  },
-  {
-    description: "king edward, cambie to yukon",
+    description: "cambie crossing king edward sb",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.kingEdwardCambieEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.kingEdwardCambieEb.id],
+    positions: [[49.24912, -123.1157], CAMBIE_KING_EDWARD_SW],
+  },
+  {
+    description: "approaching cambie",
+    type: "painted",
+    oneWay: "required",
+    positions: [[49.24907, -123.11477], CAMBIE_KING_EDWARD_NE],
+  },
+  {
+    routeNames: [ROUTES.kingEdward.name],
+    description: "cambie to yukon",
+    type: "dedicated",
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.kingEdwardCambieEb.id],
     positions: [
       CAMBIE_KING_EDWARD_SW,
+      [49.24886, -123.11541],
       CAMBIE_KING_EDWARD_SE,
       [49.24884, -123.11453],
       [49.24886, -123.11444],
@@ -61,13 +72,23 @@ export const KING_EDWARD = [
     ],
   },
   {
-    description: "king edward, yukon to beyond columbia",
+    routeNames: [ROUTES.kingEdward.name],
+    description: "yukon to columbia",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.kingEdwardCambieEb.id],
     positions: [
       YUKON_KING_EDWARD_SE,
       [49.24883, -123.1121],
       [49.24881, -123.1104],
+      COLUMBIA_KING_EDWARD,
+    ],
+  },
+  {
+    description: "beyond columbia",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
       COLUMBIA_KING_EDWARD,
       [49.24883, -123.10988],
       [49.24883, -123.10955],
@@ -77,6 +98,8 @@ export const KING_EDWARD = [
     description: "columbia/26th",
     type: "quiet",
     oneWay: "recommended",
+    videoIds: [ROUTE_VIDEOS.kingEdwardCambieEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.kingEdwardCambieEb.id],
     positions: [
       COLUMBIA_KING_EDWARD,
       [49.24785, -123.11009],
