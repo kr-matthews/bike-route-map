@@ -12,7 +12,7 @@ import { ROUTE_VIDEOS } from "../videos/routes";
 export const SEVENTEENTH_NV = [
   {
     routeNames: [ROUTES.seventeenthNv.name],
-    description: "all",
+    description: "w of grand blvd",
     type: "quiet",
     videoIds: [ROUTE_VIDEOS.seventeenthEb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.seventeenthEb.id],
@@ -23,7 +23,12 @@ export const SEVENTEENTH_NV = [
       ST_ANDREWS_17TH,
       GRAND_BLVD_W_17TH_E,
       GRAND_BLVD_E_17TH_W,
-      RUFUS_17TH,
     ],
+  },
+  {
+    routeNames: [ROUTES.seventeenthNv.name],
+    description: "e of grand blvd",
+    type: "quiet",
+    positions: [GRAND_BLVD_E_17TH_W, RUFUS_17TH],
   },
 ];
