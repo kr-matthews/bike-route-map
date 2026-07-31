@@ -2917,7 +2917,10 @@ export const ROUTES = {
       },
       {
         name: "Kitsilano",
-        videos: { westbound: ROUTE_VIDEOS.seasideKitsWb },
+        videos: {
+          eastbound: ROUTE_VIDEOS.seasideKitsEb,
+          westbound: ROUTE_VIDEOS.seasideKitsWb,
+        },
       },
       {
         name: "Jericho & Spanish Banks",

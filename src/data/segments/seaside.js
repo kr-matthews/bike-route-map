@@ -311,10 +311,12 @@ export const SEASIDE = [
     description: "jericho/kits overlap",
     type: "mixed",
     videoIds: [
+      ROUTE_VIDEOS.seasideKitsEb.id,
       ROUTE_VIDEOS.seasideJerichoWb.id,
       ROUTE_VIDEOS.seasideKitsWb.id,
       ROUTE_VIDEOS.seasideJerichoEb.id,
     ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.seasideKitsEb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.seasideKitsWb.id],
     positions: [
       THIRD_SEASIDE,
@@ -328,6 +330,7 @@ export const SEASIDE = [
     description: "kits: point grey to alma",
     type: "dedicated",
     videoIds: [
+      ROUTE_VIDEOS.seasideKitsEb.id,
       ROUTE_VIDEOS.seasideJerichoWb.id,
       ROUTE_VIDEOS.seasideKitsWb.id,
       ROUTE_VIDEOS.seasideJerichoEb.id,
@@ -349,7 +352,7 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "kits: alma to tatlow",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.seasideKitsWb.id],
+    videoIds: [ROUTE_VIDEOS.seasideKitsEb.id, ROUTE_VIDEOS.seasideKitsWb.id],
     positions: [
       ALMA_POINT_GREY_NE_E,
       [49.27227, -123.18508],
@@ -378,7 +381,7 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "kits: tatlow to trafalgar",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.seasideKitsWb.id],
+    videoIds: [ROUTE_VIDEOS.seasideKitsEb.id, ROUTE_VIDEOS.seasideKitsWb.id],
     positions: [
       TATLOW_POINT_GREY,
       [49.27112, -123.16928],
@@ -397,7 +400,11 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "kits - bit near trafalgar",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.seasideKitsWb.id, ROUTE_VIDEOS.valleySb.id],
+    videoIds: [
+      ROUTE_VIDEOS.seasideKitsEb.id,
+      ROUTE_VIDEOS.seasideKitsWb.id,
+      ROUTE_VIDEOS.valleySb.id,
+    ],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.valleySb.id],
     positions: [
       TRAFALGAR_POINT_GREY,
@@ -410,7 +417,7 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "kits - trafalgar to balsam",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.seasideKitsWb.id],
+    videoIds: [ROUTE_VIDEOS.seasideKitsEb.id, ROUTE_VIDEOS.seasideKitsWb.id],
     positions: [
       EAST_OF_TRAFALGAR,
       [49.2736, -123.16393],
@@ -426,7 +433,7 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "kits - balsam to whyte-ish",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.seasideKitsWb.id],
+    videoIds: [ROUTE_VIDEOS.seasideKitsEb.id, ROUTE_VIDEOS.seasideKitsWb.id],
     positions: [
       BALSAM_CORNWALL_LANE_N,
       [49.27318, -123.15967],
@@ -454,7 +461,7 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "kits - mcnicoll to cypress",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.seasideKitsWb.id],
+    videoIds: [ROUTE_VIDEOS.seasideKitsWb.id, ROUTE_VIDEOS.seasideKitsEb.id],
     positions: [
       ARBUTUS_MCNICOLL,
       [49.27626, -123.15109],
@@ -470,7 +477,11 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "kits - cypress to chestnut",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.seasideKitsWb.id, ROUTE_VIDEOS.cypressSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.seasideKitsWb.id,
+      ROUTE_VIDEOS.cypressSb.id,
+      ROUTE_VIDEOS.seasideKitsEb.id,
+    ],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.cypressSb.id],
     positions: [CYPRESS_OGDEN, [49.2768, -123.14746], CHESTNUT_OGDEN],
   },
@@ -478,7 +489,11 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "kits - museum parking lot ramp",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.seasideKitsWb.id, ROUTE_VIDEOS.burrardBridgeSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.seasideKitsWb.id,
+      ROUTE_VIDEOS.burrardBridgeSb.id,
+      ROUTE_VIDEOS.seasideKitsEb.id,
+    ],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.burrardBridgeSb.id],
     positions: [CHESTNUT_OGDEN, CHESTNUT_SEASIDE],
   },
@@ -486,7 +501,7 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "kits - museum to whyte",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.seasideKitsWb.id],
+    videoIds: [ROUTE_VIDEOS.seasideKitsWb.id, ROUTE_VIDEOS.seasideKitsEb.id],
     positions: [
       CHESTNUT_SEASIDE,
       [49.27729, -123.14609],
@@ -525,6 +540,7 @@ export const SEASIDE = [
     videoIds: [
       ROUTE_VIDEOS.seasideKitsWb.id,
       ROUTE_VIDEOS.seasideFalseCreekCw.id,
+      ROUTE_VIDEOS.seasideKitsEb.id,
     ],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.seasideKitsWb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.seasideFalseCreekCw.id],
@@ -534,7 +550,10 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "false creek south: whyte to end of marina",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.seasideFalseCreekCw.id],
+    videoIds: [
+      ROUTE_VIDEOS.seasideKitsEb.id,
+      ROUTE_VIDEOS.seasideFalseCreekCw.id,
+    ],
     positions: [
       SEAWALL_WHYTE,
       [49.27525, -123.14005],
@@ -546,7 +565,11 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "false creek south: marina to creekside",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.seasideFalseCreekCw.id],
+    videoIds: [
+      ROUTE_VIDEOS.seasideKitsEb.id,
+      ROUTE_VIDEOS.seasideFalseCreekCw.id,
+    ],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.seasideKitsEb.id],
     positions: [
       SEASIDE_KITS_MARINA,
       [49.27475, -123.13982],

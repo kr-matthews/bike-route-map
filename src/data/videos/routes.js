@@ -2113,6 +2113,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("May 18 2024"),
     minutes: 22,
   },
+  seasideKitsEb: {
+    id: "Txe2xYuVfuM",
+    tlId: "P-58HFVidhk",
+    date: new Date("Jul 29 2026"),
+    minutes: 16,
+  },
   seasideKitsWb: {
     id: "htrdfMC4NBg",
     tlId: "dDcCGlmCLZ4",
