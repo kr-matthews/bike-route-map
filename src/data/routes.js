@@ -1016,6 +1016,13 @@ export const ROUTES = {
     notes:
       "Very flat, and also very hard to follow the almost 30 turns you need to make. The indirectness adds about 2km of distance. It's not entirely clear where the route ends in Steveston.",
   },
+  crosscutBridge: {
+    name: "Crosscut Bridge",
+    regions: [REGIONS.northVancouver],
+    legs: [{ videos: {} }],
+    notes:
+      "A new highway overpass as of August 2026 - a much better alternative to the Lynn Valley Rd underpass.",
+  },
   crosstownRichmond: {
     name: "Crosstown",
     regions: [REGIONS.richmond],

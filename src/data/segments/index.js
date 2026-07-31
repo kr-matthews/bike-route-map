@@ -48,6 +48,7 @@ import { COLUMBIA } from "./columbia";
 import { COMOX_HELMCKEN } from "./comoxHelmcken";
 import { CPR_TRAIL } from "./cprTrail";
 import { CRABAPPLE_RIDGE } from "./crabappleRidge";
+import { CROSSCUT_BRIDGE } from "./crosscutBridge";
 import { CROSSTOWN_NEW_WESTMINSTER } from "./crosstownNewWestminster";
 import { CROSSTOWN_RICHMOND } from "./crosstownRichmond";
 import { CYPRESS } from "./cypress";
@@ -297,6 +298,7 @@ export const SEGMENTS = [
   ...COMOX_HELMCKEN,
   ...CPR_TRAIL,
   ...CRABAPPLE_RIDGE,
+  ...CROSSCUT_BRIDGE,
   ...CROSSTOWN_NEW_WESTMINSTER,
   ...CROSSTOWN_RICHMOND,
   ...CYPRESS,

@@ -833,6 +833,7 @@ export const ROYAL_CHATHAM = [49.37147, -123.2772];
 export const ROYAL_OAK_DEER_LAKE_NW = [49.23998, -122.9892];
 export const ROYAL_OAK_DOVER_NW = [49.23001, -122.98915];
 export const ROYAL_OAK_DOVER_SW = [49.22979, -122.98916];
+export const RUFUS_17TH = [49.32389, -123.04622];
 export const RUPERT_22ND_E = [49.2506, -123.0337];
 export const RUPERT_22ND_W = [49.2506, -123.03392];
 export const RUPERT_29TH_E = [49.24453, -123.03397];
