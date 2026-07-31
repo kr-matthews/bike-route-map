@@ -2907,10 +2907,10 @@ export const ROUTES = {
         },
       },
       {
-        name: "Stanley Park",
+        name: "Stanley Park (One-way)",
         videos: { counterclockwise: ROUTE_VIDEOS.seasideStanleyPark },
       },
-      { name: "West End", videos: {} },
+      { name: "West End (Closed)", videos: {} },
       {
         name: "False Creek",
         videos: { clockwise: ROUTE_VIDEOS.seasideFalseCreekCw },
