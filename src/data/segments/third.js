@@ -28,7 +28,6 @@ export const THIRD = [
     positions: [STEPHENS_YORK, STEPHENS_POINT_GREY],
   },
   {
-    routeNames: [ROUTES.third.name],
     description: "beach to 2nd",
     type: "mixed",
     videoIds: [ROUTE_VIDEOS.thirdEb.id],
