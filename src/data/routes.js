@@ -33,7 +33,14 @@ export const ROUTES = {
   third: {
     name: "3rd",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { eastbound: ROUTE_VIDEOS.thirdEb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.thirdEb,
+          westbound: ROUTE_VIDEOS.thirdWb,
+        },
+      },
+    ],
     notes: "Quiet and mostly flat. Lots of stop signs.",
   },
   thirdNv: {
