@@ -22,6 +22,9 @@ import { ROUTE_VIDEOS } from "../videos/routes";
 
 const PUGET_29TH = [49.2461, -123.16597];
 const PUGET_EDDINGTON = [49.24505, -123.16339];
+const S_OF_YEW_NANTON = [49.2473, -123.15475];
+const YEW_NANTON_SE = [49.24762, -123.15467];
+const ARBUTUS_NANTON = [49.24763, -123.15322];
 const OAK_28TH_W = [49.24632, -123.12771];
 const LAUREL_28TH = [49.24626, -123.12454];
 const CAMBIE_29TH_W = [49.24519, -123.1159];
@@ -122,13 +125,59 @@ export const TWENTY_NINTH = [
   },
   {
     routeNames: [ROUTES.twentyNinth.name],
-    description: "valley to oak",
+    description: "yew little bit",
+    type: "quiet",
+    videoIds: [ROUTE_VIDEOS.twentyNinthWb.id],
+    positions: [YEW_EDDINGTON, S_OF_YEW_NANTON],
+  },
+  {
+    routeNames: [ROUTES.twentyNinth.name],
+    description: "old: yew and nanton",
+    type: "quiet",
+    undesignated: true,
+    videoIds: [ROUTE_VIDEOS.twentyNinthWb.id],
+    positions: [S_OF_YEW_NANTON, [49.24766, -123.15472], ARBUTUS_NANTON],
+  },
+  {
+    routeNames: [ROUTES.twentyNinth.name],
+    description: "new: valley to arbutus 1",
+    type: "quiet",
+    oneWay: "required",
+    positions: [
+      S_OF_YEW_NANTON,
+      [49.24737, -123.15472],
+      [49.2476, -123.15471],
+      YEW_NANTON_SE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.twentyNinth.name],
+    description: "new: valley to arbutus 2",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [YEW_NANTON_SE, [49.2476, -123.1534], ARBUTUS_NANTON],
+  },
+  {
+    routeNames: [ROUTES.twentyNinth.name],
+    description: "new: arbutus to valley",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      ARBUTUS_NANTON,
+      [49.24768, -123.15342],
+      [49.2477, -123.15464],
+      [49.24759, -123.1548],
+      [49.24735, -123.15481],
+      S_OF_YEW_NANTON,
+    ],
+  },
+  {
+    routeNames: [ROUTES.twentyNinth.name],
+    description: "arbutus to oak",
     type: "quiet",
     videoIds: [ROUTE_VIDEOS.twentyNinthWb.id],
     positions: [
-      YEW_EDDINGTON,
-      [49.24766, -123.15472],
-      [49.24763, -123.15322],
+      ARBUTUS_NANTON,
       ARBUTUS_GREENWAY_NANTON,
       ANGUS_NANTON,
       [49.24746, -123.14159],
