@@ -22,6 +22,8 @@ const EAST_OF_ELLIOTT = [49.20553, -123.05646];
 const DUDLEY_CREEK_W = [49.20234, -123.02829];
 const DUDLEY_CREEK_E = [49.20222, -123.02782];
 
+const OOLICHAN_FRASER_RIVER_TRAIL = [49.2036, -123.0344];
+
 export const FRASER_RIVER_TRAIL = [
   {
     routeNames: [ROUTES.fraserRiverTrail.name],
@@ -351,8 +353,8 @@ export const FRASER_RIVER_TRAIL = [
   },
   {
     routeNames: [ROUTES.fraserRiverTrail.name],
-    type: "mixed",
-    description: "river district - kerr to boundary",
+    type: "dedicated",
+    description: "river district - kerr to oolichan",
     positions: [
       KERR_FRASER_TRAIL,
       [49.20569, -123.0421],
@@ -361,18 +363,31 @@ export const FRASER_RIVER_TRAIL = [
       [49.20542, -123.04087],
       [49.20539, -123.04053],
       [49.20519, -123.0397],
-      [49.20491, -123.03878],
-      [49.20478, -123.03824],
-      [49.20477, -123.03798],
-      [49.20466, -123.03794],
-      [49.20448, -123.03713],
-      [49.20446, -123.03688],
-      [49.20438, -123.0368],
+      [49.20496, -123.03892],
+      [49.20487, -123.03868],
+      [49.2048, -123.03858],
+      [49.20463, -123.03843],
+      [49.20457, -123.03836],
+      [49.20456, -123.03828],
+      [49.20457, -123.03816],
+      [49.20464, -123.03769],
+      [49.20465, -123.0374],
+      [49.20462, -123.03717],
+      [49.20452, -123.03689],
+      [49.2044, -123.03679],
       [49.20428, -123.03662],
       [49.20402, -123.03577],
       [49.20379, -123.03515],
       [49.20367, -123.03457],
-      [49.2036, -123.0344],
+      OOLICHAN_FRASER_RIVER_TRAIL,
+    ],
+  },
+  {
+    routeNames: [ROUTES.fraserRiverTrail.name],
+    type: "mixed",
+    description: "river district - oolichan to boundary",
+    positions: [
+      OOLICHAN_FRASER_RIVER_TRAIL,
       [49.2035, -123.0344],
       [49.20339, -123.0341],
       [49.20338, -123.03403],
