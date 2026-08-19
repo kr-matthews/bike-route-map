@@ -884,6 +884,16 @@ export const ROUTE_VIDEOS = {
     date: new Date("May 07 2026"),
     minutes: 3,
   },
+  fraserRiverRiverDistrictEb: {
+    id: "niICblSPedQ",
+    date: new Date("Aug 13 2026"),
+    minutes: 5,
+  },
+  fraserRiverRiverDistrictWb: {
+    id: "h5ShfQI4G4E",
+    date: new Date("Aug 13 2026"),
+    minutes: 5,
+  },
   fraserRiverSouthlandsEb: {
     id: "sp6dUNsRfQc",
     date: new Date("Jan 09 2025"),

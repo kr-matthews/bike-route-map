@@ -1314,7 +1314,13 @@ export const ROUTES = {
           westbound: ROUTE_VIDEOS.fraserRiverFraserviewWb,
         },
       },
-      { name: "River District", videos: {} },
+      {
+        name: "River District",
+        videos: {
+          eastbound: ROUTE_VIDEOS.fraserRiverRiverDistrictEb,
+          westbound: ROUTE_VIDEOS.fraserRiverRiverDistrictWb,
+        },
+      },
     ],
     notes:
       "The city plans, in the very long term, to form a continuous trail. For now, it's very disjoint and the individual sections are often not very useful or convenient.",

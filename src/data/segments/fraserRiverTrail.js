@@ -355,6 +355,12 @@ export const FRASER_RIVER_TRAIL = [
     routeNames: [ROUTES.fraserRiverTrail.name],
     type: "dedicated",
     description: "river district - kerr to oolichan",
+    videoIds: [
+      ROUTE_VIDEOS.fraserRiverRiverDistrictEb.id,
+      ROUTE_VIDEOS.fraserRiverRiverDistrictWb.id,
+    ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.fraserRiverRiverDistrictEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.fraserRiverRiverDistrictWb.id],
     positions: [
       KERR_FRASER_TRAIL,
       [49.20569, -123.0421],
@@ -386,6 +392,12 @@ export const FRASER_RIVER_TRAIL = [
     routeNames: [ROUTES.fraserRiverTrail.name],
     type: "mixed",
     description: "river district - oolichan to boundary",
+    videoIds: [
+      ROUTE_VIDEOS.fraserRiverRiverDistrictEb.id,
+      ROUTE_VIDEOS.fraserRiverRiverDistrictWb.id,
+    ],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.fraserRiverRiverDistrictWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.fraserRiverRiverDistrictEb.id],
     positions: [
       OOLICHAN_FRASER_RIVER_TRAIL,
       [49.2035, -123.0344],
