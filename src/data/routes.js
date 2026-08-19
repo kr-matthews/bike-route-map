@@ -183,7 +183,14 @@ export const ROUTES = {
   twentyNinth: {
     name: "29th",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { westbound: ROUTE_VIDEOS.twentyNinthWb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.twentyNinthEb,
+          westbound: ROUTE_VIDEOS.twentyNinthWb,
+        },
+      },
+    ],
     notes:
       "A big dip in the middle around Valley/Yew with steep hills. The west end doesn't have enough traffic calming but the rest is quiet. The westbound painted lane through Hillcrest is beside parked cars; eastbound is not.",
   },

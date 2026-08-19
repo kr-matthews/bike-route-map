@@ -2436,6 +2436,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("May 19 2026"),
     minutes: 24,
   },
+  twentyNinthEb: {
+    id: "XjWvRTrRdNE",
+    tlId: "QyBzqVhtAMY",
+    date: new Date("Aug 13 2026"),
+    minutes: 26,
+  },
   twentyNinthWb: {
     id: "ReFbPGbBm38",
     tlId: "10EB9bjmTHY",
