@@ -1233,6 +1233,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Jul 01 2024"),
     minutes: 5,
   },
+  imperialSb: {
+    id: "nqBmuqPkP-s",
+    date: new Date("Aug 13 2026"),
+    minutes: 3,
+  },
   imperialLandingWb: {
     id: "ZhZvlvFyYCw",
     tlId: "g5yQjf1acxQ",

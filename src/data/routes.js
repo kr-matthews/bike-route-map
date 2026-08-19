@@ -1723,7 +1723,14 @@ export const ROUTES = {
     name: "Imperial Dr",
     isGap: true,
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { northbound: ROUTE_VIDEOS.imperialNb } }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.imperialNb,
+          southbound: ROUTE_VIDEOS.imperialSb,
+        },
+      },
+    ],
     notes: "Relatively flat. Quiet-ish, but the cars go very fast.",
   },
   imperialLandingTrail: {

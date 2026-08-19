@@ -8,8 +8,9 @@ export const IMPERIAL = [
     description: "imperial",
     type: "shared",
     undesignated: true,
-    videoIds: [ROUTE_VIDEOS.imperialNb.id],
+    videoIds: [ROUTE_VIDEOS.imperialSb.id, ROUTE_VIDEOS.imperialNb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.imperialNb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.imperialSb.id],
     positions: [
       IMPERIAL_29TH,
       [49.24943, -123.20478],
@@ -29,7 +30,8 @@ export const IMPERIAL = [
     description: "connection to ridgeway",
     type: "quiet",
     undesignated: true,
-    videoIds: [ROUTE_VIDEOS.imperialNb.id],
+    videoIds: [ROUTE_VIDEOS.imperialSb.id, ROUTE_VIDEOS.imperialNb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.imperialSb.id],
     positions: [IMPERIAL_16TH, DISCOVER_15TH],
   },
 ];
