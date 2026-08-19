@@ -110,6 +110,7 @@ export const SUNRISE = [
     type: "quiet",
     videoIds: [
       ROUTE_VIDEOS.sunriseNb.id,
+      ROUTE_VIDEOS.midtownVancouverWb.id,
       ROUTE_VIDEOS.sunriseSb.id,
       ROUTE_VIDEOS.midtownVancouverEb.id,
     ],

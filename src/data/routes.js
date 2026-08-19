@@ -2257,7 +2257,10 @@ export const ROUTES = {
     legs: [
       {
         name: "Vancouver",
-        videos: { eastbound: ROUTE_VIDEOS.midtownVancouverEb },
+        videos: {
+          eastbound: ROUTE_VIDEOS.midtownVancouverEb,
+          westbound: ROUTE_VIDEOS.midtownVancouverWb,
+        },
       },
       {
         name: "Burnaby",

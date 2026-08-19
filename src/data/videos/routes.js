@@ -1570,6 +1570,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Jun 10 2023"),
     minutes: 45,
   },
+  midtownVancouverWb: {
+    id: "jRqgNTmRvbs",
+    tlId: "rLxIuhPdIcM",
+    date: new Date("Aug 16 2026"),
+    minutes: 47,
+  },
   millenniumNb: {
     id: "2BAnpY-NVCY",
     tlId: "kBBXjYGMTuI",
