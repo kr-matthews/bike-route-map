@@ -11,7 +11,11 @@ export const CROSSCUT_BRIDGE = [
     routeNames: [ROUTES.crosscutBridge.name],
     description: "rufus",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.crosscutBridgeSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.crosscutBridgeNb.id,
+      ROUTE_VIDEOS.crosscutBridgeSb.id,
+    ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.crosscutBridgeNb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.crosscutBridgeSb.id],
     positions: [RUFUS_17TH, RUFUS_CROSSCUT_BRIDGE],
   },
@@ -20,7 +24,10 @@ export const CROSSCUT_BRIDGE = [
     description: "pre-bridge",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [ROUTE_VIDEOS.crosscutBridgeSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.crosscutBridgeNb.id,
+      ROUTE_VIDEOS.crosscutBridgeSb.id,
+    ],
     positions: [
       RUFUS_CROSSCUT_BRIDGE,
       [49.32441, -123.04563],
@@ -41,7 +48,10 @@ export const CROSSCUT_BRIDGE = [
     description: "bridge",
     type: "mixed",
     elevation: 1,
-    videoIds: [ROUTE_VIDEOS.crosscutBridgeSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.crosscutBridgeSb.id,
+      ROUTE_VIDEOS.crosscutBridgeNb.id,
+    ],
     positions: [
       S_END,
       [49.32552, -123.04682],
@@ -58,8 +68,12 @@ export const CROSSCUT_BRIDGE = [
     description: "post-bridge",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [ROUTE_VIDEOS.crosscutBridgeSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.crosscutBridgeSb.id,
+      ROUTE_VIDEOS.crosscutBridgeNb.id,
+    ],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.crosscutBridgeSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.crosscutBridgeNb.id],
     positions: [
       N_END,
       [49.3261, -123.04657],

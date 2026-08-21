@@ -1033,7 +1033,14 @@ export const ROUTES = {
   crosscutBridge: {
     name: "Crosscut Bridge",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: { southbound: ROUTE_VIDEOS.crosscutBridgeSb } }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.crosscutBridgeNb,
+          southbound: ROUTE_VIDEOS.crosscutBridgeSb,
+        },
+      },
+    ],
     notes:
       "A new highway overpass as of August 2026 - a much better alternative to the Lynn Valley Rd underpass.",
   },
