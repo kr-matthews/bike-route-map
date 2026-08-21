@@ -14,8 +14,10 @@ export const CROSSCUT_BRIDGE = [
     videoIds: [
       ROUTE_VIDEOS.crosscutBridgeNb.id,
       ROUTE_VIDEOS.crosscutBridgeSb.id,
+      ROUTE_VIDEOS.seventeenthWb.id,
     ],
     videoIdsStartAtStart: [ROUTE_VIDEOS.crosscutBridgeNb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.seventeenthWb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.crosscutBridgeSb.id],
     positions: [RUFUS_17TH, RUFUS_CROSSCUT_BRIDGE],
   },

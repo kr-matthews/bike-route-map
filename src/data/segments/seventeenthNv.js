@@ -14,8 +14,9 @@ export const SEVENTEENTH_NV = [
     routeNames: [ROUTES.seventeenthNv.name],
     description: "w of grand blvd",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.seventeenthEb.id],
+    videoIds: [ROUTE_VIDEOS.seventeenthEb.id, ROUTE_VIDEOS.seventeenthWb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.seventeenthEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.seventeenthWb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.seventeenthEb.id],
     positions: [
       JONES_17TH,
@@ -29,6 +30,7 @@ export const SEVENTEENTH_NV = [
     routeNames: [ROUTES.seventeenthNv.name],
     description: "e of grand blvd",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.seventeenthWb.id],
     positions: [GRAND_BLVD_E_17TH_W, RUFUS_17TH],
   },
 ];

@@ -150,9 +150,16 @@ export const ROUTES = {
   seventeenthNv: {
     name: "17th St",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: { eastbound: ROUTE_VIDEOS.seventeenthEb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.seventeenthEb,
+          westbound: ROUTE_VIDEOS.seventeenthWb,
+        },
+      },
+    ],
     notes:
-      "Gentle hills. A wide road with lane markings, but usually not too busy.",
+      "Gentle hills. A wide road with lane markings, but usually not too busy. Extended east to the new Crosscut Bridge in 2026.",
   },
   twentySecond: {
     name: "22nd Ave",
