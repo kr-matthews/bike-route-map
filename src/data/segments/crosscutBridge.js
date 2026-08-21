@@ -1,5 +1,6 @@
 import { RUFUS_17TH } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const RUFUS_CROSSCUT_BRIDGE = [49.32417, -123.04623];
 const S_END = [49.32548, -123.04702];
@@ -10,13 +11,16 @@ export const CROSSCUT_BRIDGE = [
     routeNames: [ROUTES.crosscutBridge.name],
     description: "rufus",
     type: "quiet",
-    positions: [RUFUS_CROSSCUT_BRIDGE, RUFUS_17TH],
+    videoIds: [ROUTE_VIDEOS.crosscutBridgeSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.crosscutBridgeSb.id],
+    positions: [RUFUS_17TH, RUFUS_CROSSCUT_BRIDGE],
   },
   {
     routeNames: [ROUTES.crosscutBridge.name],
     description: "pre-bridge",
     type: "mixed",
     elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.crosscutBridgeSb.id],
     positions: [
       RUFUS_CROSSCUT_BRIDGE,
       [49.32441, -123.04563],
@@ -37,6 +41,7 @@ export const CROSSCUT_BRIDGE = [
     description: "bridge",
     type: "mixed",
     elevation: 1,
+    videoIds: [ROUTE_VIDEOS.crosscutBridgeSb.id],
     positions: [
       S_END,
       [49.32552, -123.04682],
@@ -53,6 +58,8 @@ export const CROSSCUT_BRIDGE = [
     description: "post-bridge",
     type: "mixed",
     elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.crosscutBridgeSb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.crosscutBridgeSb.id],
     positions: [
       N_END,
       [49.3261, -123.04657],

@@ -617,6 +617,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Jun 24, 2025"),
     minutes: 25,
   },
+  crosscutBridgeSb: {
+    id: "de6jzSl6OYg",
+    date: new Date("Aug 20 2026"),
+    minutes: 2,
+  },
   crosstownNWEb: {
     id: "O77jstHnFRc",
     tlId: "sigGo6thZBg",
