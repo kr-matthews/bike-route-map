@@ -1,20 +1,34 @@
-import {} from "../intersections";
+import { RUFUS_17TH } from "../intersections";
 import { ROUTES } from "../routes";
 
+const RUFUS_CROSSCUT_BRIDGE = [49.32417, -123.04623];
 const S_END = [49.32548, -123.04702];
 const N_END = [49.32604, -123.04652];
 
 export const CROSSCUT_BRIDGE = [
   {
     routeNames: [ROUTES.crosscutBridge.name],
+    description: "rufus",
+    type: "quiet",
+    positions: [RUFUS_CROSSCUT_BRIDGE, RUFUS_17TH],
+  },
+  {
+    routeNames: [ROUTES.crosscutBridge.name],
     description: "pre-bridge",
     type: "mixed",
     elevation: 0.5,
     positions: [
-      [49.32533, -123.04706],
-      [49.32537, -123.04713],
-      [49.32543, -123.04714],
-      [49.32545, -123.04711],
+      RUFUS_CROSSCUT_BRIDGE,
+      [49.32441, -123.04563],
+      [49.32448, -123.04559],
+      [49.32459, -123.04558],
+      [49.3249, -123.04591],
+      [49.32519, -123.04632],
+      [49.32527, -123.04652],
+      [49.32529, -123.04703],
+      [49.32532, -123.0471],
+      [49.32538, -123.04714],
+      [49.32544, -123.04712],
       S_END,
     ],
   },
@@ -57,7 +71,9 @@ export const CROSSCUT_BRIDGE = [
       [49.32626, -123.04638],
       [49.32633, -123.04627],
       [49.3264, -123.04622],
-      [49.32649, -123.04624],
+      [49.32644, -123.04617],
+      [49.32646, -123.04611],
+      [49.32653, -123.04605],
     ],
   },
 ];
