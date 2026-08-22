@@ -2613,6 +2613,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Aug 09 2025"),
     minutes: 7,
   },
+  wesbrookNb: {
+    id: "sXwGZhpLEBM",
+    tlId: "xwoAcNtP_bg",
+    date: new Date("Aug 18 2026"),
+    minutes: 11,
+  },
   wesbrookSb: {
     id: "rh6b_Nk9q-4",
     tlId: "SUJjmGMkTmM",

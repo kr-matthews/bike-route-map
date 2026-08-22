@@ -188,7 +188,7 @@ export const SIXTEENTH = [
     description: "eb: wesbrook SE",
     type: "mixed",
     oneWay: "recommended",
-    videoIds: [ROUTE_VIDEOS.sixteenthEb.id],
+    videoIds: [ROUTE_VIDEOS.sixteenthEb.id, ROUTE_VIDEOS.wesbrookNb.id],
     positions: [
       WESBROOK_16TH_SE,
       [49.25559, -123.23591],
@@ -294,7 +294,7 @@ export const SIXTEENTH = [
     description: "wb: wesbrook NE",
     type: "mixed",
     oneWay: "recommended",
-    videoIds: [ROUTE_VIDEOS.sixteenthWb.id],
+    videoIds: [ROUTE_VIDEOS.sixteenthWb.id, ROUTE_VIDEOS.wesbrookNb.id],
     positions: [WESBROOK_16TH_EN, [49.25607, -123.23631], WESBROOK_16TH_NE],
   },
   {

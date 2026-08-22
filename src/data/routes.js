@@ -3420,7 +3420,14 @@ export const ROUTES = {
   wesbrook: {
     name: "Wesbrook Mall",
     regions: [REGIONS.ubc],
-    legs: [{ videos: { southbound: ROUTE_VIDEOS.wesbrookSb } }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.wesbrookNb,
+          southbound: ROUTE_VIDEOS.wesbrookSb,
+        },
+      },
+    ],
     notes:
       "Mostly flat, minor hill to the south. Some of the painted lanes are beside parked cars. The north portion was partially upgraded around 2022, but is far from perfect. The south portion can be uncomfortable at times.",
   },

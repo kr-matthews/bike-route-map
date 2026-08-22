@@ -24,6 +24,7 @@ export const CHANCELLOR = [
     description: "crossing at wesbrook nb",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [ROUTE_VIDEOS.wesbrookNb.id],
     positions: [WESBROOK_CHANCELLOR_ES, WESBROOK_CHANCELLOR_EN],
   },
   {
@@ -177,6 +178,7 @@ export const CHANCELLOR = [
     description: "eb: wesbrook 3",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.wesbrookNb.id],
     positions: [
       WESBROOK_CHANCELLOR_SE,
       [49.27303, -123.24865],
@@ -225,8 +227,13 @@ export const CHANCELLOR = [
     description: "wb: wesbrook",
     type: "mixed",
     oneWay: "required",
-    videoIds: [ROUTE_VIDEOS.wesbrookSb.id, ROUTE_VIDEOS.chancellorWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.wesbrookSb.id,
+      ROUTE_VIDEOS.chancellorWb.id,
+      ROUTE_VIDEOS.wesbrookNb.id,
+    ],
     videoIdsStartAtStart: [ROUTE_VIDEOS.wesbrookSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.wesbrookNb.id],
     positions: [
       WESBROOK_CHANCELLOR_EN,
       [49.27332, -123.24852],

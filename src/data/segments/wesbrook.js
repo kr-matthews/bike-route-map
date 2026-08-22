@@ -47,6 +47,8 @@ export const WESBROOK = [
     description: "from marine wb",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.wesbrookNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.wesbrookNb.id],
     positions: [WESBROOK_MARINE_PRE_SLIP, WESBROOK_MARINE_POST_SLIP],
   },
   {
@@ -56,12 +58,18 @@ export const WESBROOK = [
   },
   {
     routeNames: [ROUTES.wesbrook.name],
-    description: "marine to roundabout",
+    description: "marine to slip",
     type: "shared",
     videoIds: [ROUTE_VIDEOS.wesbrookSb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.wesbrookSb.id],
+    positions: [WESBROOK_MARINE_N, WESBROOK_MARINE_POST_SLIP],
+  },
+  {
+    routeNames: [ROUTES.wesbrook.name],
+    description: "marine slip to roundabout",
+    type: "shared",
+    videoIds: [ROUTE_VIDEOS.wesbrookNb.id, ROUTE_VIDEOS.wesbrookSb.id],
     positions: [
-      WESBROOK_MARINE_N,
       WESBROOK_MARINE_POST_SLIP,
       [49.24671, -123.23212],
       ROUNDABOUT_S,
@@ -72,6 +80,7 @@ export const WESBROOK = [
     description: "roundabout east",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.wesbrookNb.id],
     positions: [
       ROUNDABOUT_S,
       [49.24697, -123.23181],
@@ -108,7 +117,7 @@ export const WESBROOK = [
     routeNames: [ROUTES.wesbrook.name],
     description: "roundabout to berton",
     type: "shared",
-    videoIds: [ROUTE_VIDEOS.wesbrookSb.id],
+    videoIds: [ROUTE_VIDEOS.wesbrookNb.id, ROUTE_VIDEOS.wesbrookSb.id],
     positions: [
       ROUNDABOUT_N,
       [49.24829, -123.23179],
@@ -130,6 +139,7 @@ export const WESBROOK = [
     description: "berton to 16th",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.wesbrookNb.id],
     positions: [
       WESBROOK_BERTON,
       [49.25507, -123.23569],
@@ -157,6 +167,7 @@ export const WESBROOK = [
     description: "crossing 16th nb",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [ROUTE_VIDEOS.wesbrookNb.id],
     positions: [WESBROOK_16TH_ES, [49.25586, -123.23596], WESBROOK_16TH_EN],
   },
   {
@@ -172,6 +183,7 @@ export const WESBROOK = [
     description: "nb: after 16th",
     type: "mixed",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.wesbrookNb.id],
     positions: [WESBROOK_16TH_NE, [49.25623, -123.23658], NB_AFTER_16TH],
   },
   {
@@ -179,6 +191,7 @@ export const WESBROOK = [
     description: "16th to thunderbird",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.wesbrookNb.id],
     positions: [
       NB_AFTER_16TH,
       [49.25748, -123.23767],
@@ -193,6 +206,7 @@ export const WESBROOK = [
     description: "thunderbird to university",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.wesbrookNb.id],
     positions: [
       WESBROOK_THUNDERBIRD_NE,
       [49.2619, -123.2415],
@@ -212,6 +226,7 @@ export const WESBROOK = [
     description: "university to bus loop",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.wesbrookNb.id],
     positions: [
       WESBROOK_UNIVERSITY_SE,
       WESBROOK_UNIVERSITY_NE,
@@ -225,6 +240,7 @@ export const WESBROOK = [
     description: "bus loop to student union",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.wesbrookNb.id],
     positions: [
       WESBROOK_BUS_LOOP_E,
       [49.26806, -123.24686],
@@ -238,6 +254,7 @@ export const WESBROOK = [
     description: "student union to campus",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.wesbrookNb.id],
     positions: [WESBROOK_STUDENT_UNION_E, WESBROOK_CAMPUS],
   },
   {
@@ -245,6 +262,7 @@ export const WESBROOK = [
     description: "campus to iona",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.wesbrookNb.id],
     positions: [
       WESBROOK_CAMPUS,
       [49.27047, -123.24774],
@@ -259,12 +277,14 @@ export const WESBROOK = [
     description: "iona to chancellor",
     type: "mixed",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.wesbrookNb.id],
     positions: [
       WESBROOK_IONA_NE,
       [49.27227, -123.24831],
       WESBROOK_CHANCELLOR_SE,
     ],
   },
+
   {
     routeNames: [ROUTES.wesbrook.name],
     description: "chancellor to student union-ish",
