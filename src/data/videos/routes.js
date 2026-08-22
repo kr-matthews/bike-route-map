@@ -1740,6 +1740,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Apr 09 2025"),
     minutes: 8,
   },
+  nvOperationsCenter: {
+    id: "Ln8tA0TOIC8",
+    date: new Date("Aug 20 2026"),
+    minutes: 0,
+  },
   nwMarineEb: {
     id: "t1EWe9TW-rw",
     tlId: "iR6hAt-vsSo",

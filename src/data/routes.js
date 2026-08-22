@@ -26,6 +26,12 @@ export const ROUTES = {
           westbound: ROUTE_VIDEOS.first2ndWb,
         },
       },
+      {
+        name: "Connection to Bewicke Greenway via Mosquito Creek",
+        videos: {
+          eastbound: ROUTE_VIDEOS.nvOperationsCenter,
+        },
+      },
     ],
     notes:
       "Flat, lots of cars. The painted lane portion is sometimes right beside parked cars, sometimes beside the curb.",
@@ -524,6 +530,12 @@ export const ROUTES = {
         videos: {
           northbound: ROUTE_VIDEOS.bewickeNb,
           southbound: ROUTE_VIDEOS.bewickeSb,
+        },
+      },
+      {
+        name: "Connection from 2nd St via Mosquito Creek",
+        videos: {
+          eastbound: ROUTE_VIDEOS.nvOperationsCenter,
         },
       },
     ],

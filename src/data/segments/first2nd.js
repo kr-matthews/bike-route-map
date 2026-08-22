@@ -40,6 +40,9 @@ export const FIRST_2ND = [
     description: "bewicke <-> 1st/2nd @ mosquito creek",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [ROUTE_VIDEOS.nvOperationsCenter.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.nvOperationsCenter.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.nvOperationsCenter.id],
     positions: [
       MOSQUITO_CREEK_2ND_SE,
       [49.31807, -123.09285],
