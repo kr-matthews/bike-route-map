@@ -2475,6 +2475,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Nov 11 2025"),
     minutes: 12,
   },
+  thunderbirdOsoyoosWb: {
+    id: "Lrz-p3kcBmM",
+    date: new Date("Aug 18 2026"),
+    minutes: 4,
+  },
   transCanadaHwyEb: {
     id: "62pilPL6YEo",
     tlId: "7teI4QPjoE4",

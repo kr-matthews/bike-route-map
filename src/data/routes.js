@@ -3308,7 +3308,13 @@ export const ROUTES = {
     name: "Thunderbird Blvd/Osoyoos Cr",
     shortName: "Thunderbird Blvd",
     regions: [REGIONS.ubc],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: {
+          westbound: ROUTE_VIDEOS.thunderbirdOsoyoosWb,
+        },
+      },
+    ],
     notes:
       "A mild hill at the west end. The only designated connection from Thunderbird Blvd is around Osoyoos Cr, which is a bit indirect. You could continue east on Fairview Pl, but there are chains fully blocking the road at one point, requiring a dismount. It appears a connection to University Blvd may be added along Ortona Rd.",
   },

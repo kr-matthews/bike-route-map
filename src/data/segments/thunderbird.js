@@ -10,6 +10,7 @@ import {
   WEST_MALL_THUNDERBIRD,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const EAGLES_THUNDERBIRD_W = [49.25951, -123.24763];
 
@@ -18,6 +19,8 @@ export const THUNDERBIRD = [
     routeNames: [ROUTES.thunderbird.name],
     description: "west mall to eagles",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.thunderbirdOsoyoosWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.thunderbirdOsoyoosWb.id],
     positions: [
       WEST_MALL_THUNDERBIRD,
       [49.25911, -123.24894],
@@ -46,6 +49,7 @@ export const THUNDERBIRD = [
     description: "wb lane: wesbrook to east mall",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.thunderbirdOsoyoosWb.id],
     positions: [
       WESBROOK_THUNDERBIRD_E,
       WESBROOK_THUNDERBIRD_NW,
@@ -56,11 +60,19 @@ export const THUNDERBIRD = [
   },
   {
     routeNames: [ROUTES.thunderbird.name],
+    description: "wb: crossing east mall",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.thunderbirdOsoyoosWb.id],
+    positions: [EAST_MALL_THUNDERBIRD_NE, EAST_MALL_THUNDERBIRD_NW],
+  },
+  {
+    routeNames: [ROUTES.thunderbird.name],
     description: "wb: no lane",
     type: "quiet",
-    oneWay: "required",
+    oneWay: "recommended",
+    videoIds: [ROUTE_VIDEOS.thunderbirdOsoyoosWb.id],
     positions: [
-      EAST_MALL_THUNDERBIRD_NE,
       EAST_MALL_THUNDERBIRD_NW,
       [49.25957, -123.24749],
       EAGLES_THUNDERBIRD_W,
@@ -70,6 +82,8 @@ export const THUNDERBIRD = [
     routeNames: [ROUTES.thunderbird.name],
     description: "wesbrook to acadia",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.thunderbirdOsoyoosWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.thunderbirdOsoyoosWb.id],
     positions: [
       WESBROOK_THUNDERBIRD_E,
       [49.26193, -123.24066],
