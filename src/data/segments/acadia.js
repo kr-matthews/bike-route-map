@@ -1,15 +1,19 @@
 import {
+  ACADIA_CHANCELLOR_N,
+  ACADIA_CHANCELLOR_S,
+  ACADIA_MARINE,
   ACADIA_OSOYOOS,
   ACADIA_TORONTO,
   ACADIA_UNIVERSITY_N,
   ACADIA_UNIVERSITY_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 export const ACADIA = [
   {
     routeNames: [ROUTES.acadia.name],
-    description: "all",
+    description: "osoyoos/heron to chancellor",
     type: "quiet",
     positions: [
       ACADIA_OSOYOOS,
@@ -24,6 +28,40 @@ export const ACADIA = [
       ACADIA_TORONTO,
       ACADIA_UNIVERSITY_S,
       ACADIA_UNIVERSITY_N,
+      [49.26815, -123.23974],
+      [49.26928, -123.24065],
+      [49.26943, -123.24073],
+      [49.27235, -123.24176],
+      ACADIA_CHANCELLOR_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.acadia.name, ROUTES.chancellor.name],
+    description: "crossing chancellor",
+    type: "quiet",
+    videoIds: [ROUTE_VIDEOS.chancellorWb.id],
+    positions: [ACADIA_CHANCELLOR_S, ACADIA_CHANCELLOR_N],
+  },
+  {
+    routeNames: [ROUTES.acadia.name],
+    description: "chancellor to marine",
+    type: "quiet",
+    positions: [
+      ACADIA_CHANCELLOR_N,
+      [49.27487, -123.24263],
+      [49.27523, -123.24278],
+      [49.27551, -123.24297],
+      [49.27581, -123.24321],
+      [49.27613, -123.24358],
+      [49.27646, -123.24408],
+      [49.2767, -123.24454],
+      [49.27685, -123.24494],
+      [49.27701, -123.24546],
+      [49.27711, -123.24594],
+      [49.27718, -123.24638],
+      [49.27722, -123.24692],
+      [49.2772, -123.24756],
+      ACADIA_MARINE,
     ],
   },
 ];

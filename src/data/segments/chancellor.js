@@ -1,5 +1,6 @@
 import {
-  ACADIA_CHANCELLOR,
+  ACADIA_CHANCELLOR_N,
+  ACADIA_CHANCELLOR_S,
   BLANCA_8TH_E,
   BLANCA_8TH_NW,
   BLANCA_8TH_SW,
@@ -41,7 +42,7 @@ export const CHANCELLOR = [
     type: "mixed",
     videoIds: [ROUTE_VIDEOS.chancellorWb.id],
     positions: [
-      ACADIA_CHANCELLOR,
+      ACADIA_CHANCELLOR_S,
       [49.27333, -123.24171],
       [49.27329, -123.2411],
       [49.27322, -123.24033],
@@ -201,7 +202,7 @@ export const CHANCELLOR = [
       [49.27341, -123.24362],
       [49.2734, -123.24282],
       [49.27338, -123.24215],
-      ACADIA_CHANCELLOR,
+      ACADIA_CHANCELLOR_S,
     ],
   },
   {
@@ -211,8 +212,7 @@ export const CHANCELLOR = [
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.chancellorWb.id],
     positions: [
-      ACADIA_CHANCELLOR,
-      [49.27357, -123.24219],
+      ACADIA_CHANCELLOR_N,
       [49.27359, -123.24277],
       [49.27361, -123.24363],
       [49.2736, -123.24515],

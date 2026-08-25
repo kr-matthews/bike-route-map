@@ -40,6 +40,7 @@ import {
   WESBROOK_MARINE_S,
   WEST_MALL_MARINE_S,
   WEST_MALL_MARINE_N,
+  ACADIA_MARINE,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
@@ -751,7 +752,7 @@ export const MARINE_UBC = [
       [49.27681, -123.24933],
       [49.27692, -123.24913],
       [49.27713, -123.2486],
-      [49.27747, -123.24767],
+      ACADIA_MARINE,
       [49.27766, -123.24719],
       [49.27806, -123.24627],
       [49.27883, -123.2446],

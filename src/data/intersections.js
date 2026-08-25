@@ -1,6 +1,8 @@
 // convention: north-/south-bound street first
 
-export const ACADIA_CHANCELLOR = [49.27335, -123.24209];
+export const ACADIA_CHANCELLOR_N = [49.27357, -123.24219];
+export const ACADIA_CHANCELLOR_S = [49.27335, -123.24209];
+export const ACADIA_MARINE = [49.27747, -123.24767];
 export const ACADIA_OSOYOOS = [49.26076, -123.2338];
 export const ACADIA_TORONTO = [49.26594, -123.2379];
 export const ACADIA_UNIVERSITY_N = [49.26693, -123.23875];
