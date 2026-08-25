@@ -2409,6 +2409,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Dec 23, 2024"),
     minutes: 2,
   },
+  tatlowSb: {
+    id: "https://youtu.be/sYATuFEKKWY",
+    date: new Date("Aug 20, 2026"),
+    minutes: 1,
+  },
   taylorParkSb: {
     id: "ZYRrq2qFXnM",
     date: new Date("Mar 13, 2026"),

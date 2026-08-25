@@ -3252,7 +3252,14 @@ export const ROUTES = {
   tatlow: {
     name: "Tatlow",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: { northbound: ROUTE_VIDEOS.tatlowNb } }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.tatlowNb,
+          southbound: ROUTE_VIDEOS.tatlowSb,
+        },
+      },
+    ],
     notes:
       "Very flat. A brief protected lane to avoid the parking lot at the park. The route ends at Marine but you can continue north then turn left to access Lions Gate Village or Capilano Rd.",
   },
