@@ -75,10 +75,9 @@ export const BEWICKE_GREENWAY = [
   },
   {
     routeNames: [ROUTES.bewickeGreenway.name],
-    description: "mosquito creek to keith",
+    description: "mosquito creek to 3rd",
     type: "mixed",
     videoIds: [ROUTE_VIDEOS.bewickeSb.id, ROUTE_VIDEOS.bewickeNb.id],
-    videoIdsStartAtEnd: [ROUTE_VIDEOS.bewickeSb.id],
     positions: [
       BEWICKE_MOSQUITO_CREEK_N,
       [49.31895, -123.09171],
@@ -88,8 +87,27 @@ export const BEWICKE_GREENWAY = [
       [49.31966, -123.09132],
       [49.31979, -123.09131],
       BEWICKE_3RD_S,
-      BEWICKE_THIRD_NE,
     ],
+  },
+  {
+    routeNames: [ROUTES.bewickeGreenway.name],
+    description: "crossing 3rd",
+    type: "mixed",
+    videoIds: [
+      ROUTE_VIDEOS.bewickeSb.id,
+      ROUTE_VIDEOS.wKeith13thEb.id,
+      ROUTE_VIDEOS.bewickeNb.id,
+    ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.wKeith13thEb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.bewickeSb.id],
+    positions: [BEWICKE_3RD_S, BEWICKE_THIRD_NE],
+  },
+  {
+    routeNames: [ROUTES.bewickeGreenway.name],
+    description: "corner island",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.wKeith13thEb.id, ROUTE_VIDEOS.bewickeNb.id],
+    positions: [BEWICKE_THIRD_NE, BEWICKE_KEITH_SE, BEWICKE_KEITH_SE_N],
   },
   {
     routeNames: [ROUTES.bewickeGreenway.name],
@@ -98,8 +116,6 @@ export const BEWICKE_GREENWAY = [
     videoIds: [ROUTE_VIDEOS.bewickeNb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.bewickeNb.id],
     positions: [
-      BEWICKE_THIRD_NE,
-      BEWICKE_KEITH_SE,
       BEWICKE_KEITH_SE_N,
       [49.32005, -123.09117],
       [49.32013, -123.0912],

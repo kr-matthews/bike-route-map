@@ -26,6 +26,7 @@ export const W_KEITH_13TH = [
     description: "eb start",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.wKeith13thEb.id],
     positions: [
       BEWICKE_KEITH_SE_N,
       [49.32, -123.091],
@@ -38,6 +39,7 @@ export const W_KEITH_13TH = [
     description: "eb, to mahon",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.wKeith13thEb.id],
     positions: [
       EB_LANE_START,
       [49.31995, -123.08902],
@@ -52,6 +54,7 @@ export const W_KEITH_13TH = [
     description: "eb mahon to almost lonsdale",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.wKeith13thEb.id],
     positions: [
       EB_LANE_END,
       [49.3199, -123.08005],
@@ -72,6 +75,7 @@ export const W_KEITH_13TH = [
     description: "eb at lonsdale",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.wKeith13thEb.id],
     positions: [LONSDALE_ALLEY_13TH_S, LONSDALE_13TH_S],
   },
   {
@@ -79,6 +83,7 @@ export const W_KEITH_13TH = [
     description: "eb lonsdale to st andrews",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.wKeith13thEb.id],
     positions: [
       LONSDALE_13TH_S,
       [49.31993, -123.07152],
@@ -157,8 +162,9 @@ export const W_KEITH_13TH = [
     routeNames: [ROUTES.wKeith13th.name],
     description: "st andrews to grand blvd",
     type: "shared",
-    videoIds: [ROUTE_VIDEOS.wKeith13thWb.id],
+    videoIds: [ROUTE_VIDEOS.wKeith13thWb.id, ROUTE_VIDEOS.wKeith13thEb.id],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.wKeith13thWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.wKeith13thEb.id],
     positions: [ST_ANDREWS_13TH, GRAND_BLVD_W_13TH, GRAND_BLVD_E_13TH_W],
   },
 ];
