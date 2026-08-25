@@ -3485,8 +3485,7 @@ export const ROUTES = {
     name: "West Mall",
     regions: [REGIONS.ubc],
     legs: [{ videos: { southbound: ROUTE_VIDEOS.westMallSb } }],
-    notes:
-      "Flat and direct. There seems to always be light traffic. A portion appears to be one-way southbound for the foreseeable future due to construction.",
+    notes: "Flat and direct. There seems to always be light traffic.",
   },
   westminsterHwy: {
     name: "Westminster Hwy",
