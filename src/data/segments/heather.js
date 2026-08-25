@@ -362,9 +362,10 @@ export const HEATHER = [
     type: "quiet",
     videoIds: [
       ROUTE_VIDEOS.heatherSb.id,
-      ROUTE_VIDEOS.fourteenthEb.id,
+      ROUTE_VIDEOS.fourteenth26Eb.id,
       ROUTE_VIDEOS.heatherNb.id,
       ROUTE_VIDEOS.fourteenthWb.id,
+      ROUTE_VIDEOS.fourteenthEb.id,
     ],
     positions: [HEATHER_14TH_S, HEATHER_14TH_N],
   },

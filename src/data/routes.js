@@ -110,6 +110,11 @@ export const ROUTES = {
     regions: [REGIONS.vancouver],
     legs: [
       {
+        videos: {
+          eastbound: ROUTE_VIDEOS.fourteenth26Eb,
+        },
+      },
+      {
         name: "Original Alder <-> Prince Edward",
         videos: {
           eastbound: ROUTE_VIDEOS.fourteenthEb,

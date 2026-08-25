@@ -21,7 +21,8 @@ export const FOURTEENTH = [
     routeNames: [ROUTES.fourteenth.name],
     description: "arbutus greenway to granville",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.fourteenthExtWb.id],
+    videoIds: [ROUTE_VIDEOS.fourteenth26Eb.id, ROUTE_VIDEOS.fourteenthExtWb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.fourteenth26Eb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.fourteenthExtWb.id],
     positions: [
       ARBUTUS_GREENWAY_14TH,
@@ -34,14 +35,14 @@ export const FOURTEENTH = [
     routeNames: [ROUTES.fourteenth.name],
     description: "granville plaza",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.fourteenthExtWb.id],
+    videoIds: [ROUTE_VIDEOS.fourteenth26Eb.id, ROUTE_VIDEOS.fourteenthExtWb.id],
     positions: [GRANVILLE_14TH_E, GRANVILLE_14TH_E_ALLEY],
   },
   {
     routeNames: [ROUTES.fourteenth.name],
     description: "granville to alder",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.fourteenthExtWb.id],
+    videoIds: [ROUTE_VIDEOS.fourteenth26Eb.id, ROUTE_VIDEOS.fourteenthExtWb.id],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.fourteenthExtWb.id],
     positions: [GRANVILLE_14TH_E_ALLEY, [49.25884, -123.13391], ALDER_14TH],
   },
@@ -49,7 +50,11 @@ export const FOURTEENTH = [
     routeNames: [ROUTES.fourteenth.name],
     description: "alder to heather",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.fourteenthEb.id, ROUTE_VIDEOS.fourteenthWb.id],
+    videoIds: [
+      ROUTE_VIDEOS.fourteenth26Eb.id,
+      ROUTE_VIDEOS.fourteenthWb.id,
+      ROUTE_VIDEOS.fourteenthEb.id,
+    ],
     videoIdsStartAtStart: [ROUTE_VIDEOS.fourteenthEb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.fourteenthWb.id],
     positions: [
@@ -65,7 +70,11 @@ export const FOURTEENTH = [
     routeNames: [ROUTES.fourteenth.name],
     description: "heather to main",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.fourteenthWb.id, ROUTE_VIDEOS.fourteenthEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.fourteenth26Eb.id,
+      ROUTE_VIDEOS.fourteenthWb.id,
+      ROUTE_VIDEOS.fourteenthEb.id,
+    ],
     positions: [
       HEATHER_14TH_N,
       [49.25878, -123.1177],
@@ -84,16 +93,27 @@ export const FOURTEENTH = [
     routeNames: [ROUTES.fourteenth.name],
     description: "plaza: main to watson",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.fourteenthWb.id, ROUTE_VIDEOS.fourteenthEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.fourteenth26Eb.id,
+      ROUTE_VIDEOS.fourteenthWb.id,
+      ROUTE_VIDEOS.fourteenthEb.id,
+    ],
     positions: [MAIN_14TH, WATSON_14TH],
   },
   {
     routeNames: [ROUTES.fourteenth.name],
     description: "watson to prince edward",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.fourteenthWb.id, ROUTE_VIDEOS.fourteenthEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.fourteenth26Eb.id,
+      ROUTE_VIDEOS.fourteenthWb.id,
+      ROUTE_VIDEOS.fourteenthEb.id,
+    ],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.fourteenthWb.id],
-    videoIdsEndAtEnd: [ROUTE_VIDEOS.fourteenthEb.id],
+    videoIdsEndAtEnd: [
+      ROUTE_VIDEOS.fourteenthEb.id,
+      ROUTE_VIDEOS.fourteenth26Eb.id,
+    ],
     positions: [WATSON_14TH, [49.25837, -123.09838], PRINCE_EDWARD_14TH],
   },
 ];
