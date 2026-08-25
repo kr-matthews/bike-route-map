@@ -243,9 +243,15 @@ export const ROUTES = {
   acadia: {
     name: "Acadia Rd",
     regions: [REGIONS.ubc],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: {
+          southbound: ROUTE_VIDEOS.acadiaSb,
+        },
+      },
+    ],
     notes:
-      "Flat and quiet. There appears to be a shared use path beside the road at times, but it's not marked as such. It's unclear whether the route continues to Chancellor and/or NW Marine.",
+      "Flat and quiet, besides the part north of Chancellor Blvd which is a hill. There appears to be a shared use path beside the road south of University Blvd, but it's not marked as such. There's no signage or indication that any of this is a bike route besides some online UBC maps.",
   },
   adanac: {
     name: "Adanac",

@@ -15,6 +15,8 @@ export const ACADIA = [
     routeNames: [ROUTES.acadia.name],
     description: "osoyoos/heron to chancellor",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.acadiaSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.acadiaSb.id],
     positions: [
       ACADIA_OSOYOOS,
       [49.26083, -123.23379],
@@ -39,13 +41,15 @@ export const ACADIA = [
     routeNames: [ROUTES.acadia.name, ROUTES.chancellor.name],
     description: "crossing chancellor",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.chancellorWb.id],
+    videoIds: [ROUTE_VIDEOS.acadiaSb.id, ROUTE_VIDEOS.chancellorWb.id],
     positions: [ACADIA_CHANCELLOR_S, ACADIA_CHANCELLOR_N],
   },
   {
     routeNames: [ROUTES.acadia.name],
     description: "chancellor to marine",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.acadiaSb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.acadiaSb.id],
     positions: [
       ACADIA_CHANCELLOR_N,
       [49.27487, -123.24263],

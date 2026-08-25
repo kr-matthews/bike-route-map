@@ -1,4 +1,9 @@
 export const ROUTE_VIDEOS = {
+  acadiaSb: {
+    id: "kDtc4IKEbb4",
+    date: new Date("Aug 18 2026"),
+    minutes: 9,
+  },
   adanacEb: {
     id: "po1E1KIjTJI",
     tlId: "e96VtLacb54",
