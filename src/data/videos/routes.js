@@ -1,6 +1,7 @@
 export const ROUTE_VIDEOS = {
   acadiaSb: {
     id: "kDtc4IKEbb4",
+    tlId: "vfkUpFAy2O4",
     date: new Date("Aug 18 2026"),
     minutes: 9,
   },
@@ -567,6 +568,12 @@ export const ROUTE_VIDEOS = {
     tlId: "FURQmKYiYO8",
     date: new Date("Mar 05 2026"),
     minutes: 13,
+  },
+  chancellorEb: {
+    id: "qL_i_AoHQ90",
+    tlId: "vvwEn8yFUPM",
+    date: new Date("Aug 24 2026"),
+    minutes: 9,
   },
   chancellorWb: {
     id: "fJ6OU2uS8C0",

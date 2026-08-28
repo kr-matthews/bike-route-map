@@ -40,7 +40,7 @@ export const CHANCELLOR = [
     routeNames: [ROUTES.chancellor.name],
     description: "middle shared path",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.chancellorWb.id],
+    videoIds: [ROUTE_VIDEOS.chancellorEb.id, ROUTE_VIDEOS.chancellorWb.id],
     positions: [
       ACADIA_CHANCELLOR_S,
       [49.27333, -123.24171],
@@ -74,6 +74,7 @@ export const CHANCELLOR = [
     description: "east portion, eb",
     type: "quiet",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.chancellorEb.id],
     positions: [
       TASMANIA_CHANCELLOR,
       [49.26726, -123.22215],
@@ -97,8 +98,9 @@ export const CHANCELLOR = [
     type: "quiet",
     oneWay: "required",
     hideArrows: true,
-    videoIds: [ROUTE_VIDEOS.offBroadwayEb.id],
+    videoIds: [ROUTE_VIDEOS.offBroadwayEb.id, ROUTE_VIDEOS.chancellorEb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.offBroadwayEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.chancellorEb.id],
     positions: [BLANCA_8TH_SW, BLANCA_8TH_E],
   },
   {
@@ -142,6 +144,8 @@ export const CHANCELLOR = [
     description: "eb: to wesbrook",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.chancellorEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.chancellorEb.id],
     positions: [
       MARINE_CHANCELLOR_SE,
       [49.2712, -123.25383],
@@ -159,7 +163,7 @@ export const CHANCELLOR = [
     description: "eb: wesbrook 1",
     type: "mixed",
     oneWay: "required",
-    videoIds: [ROUTE_VIDEOS.wesbrookSb.id],
+    videoIds: [ROUTE_VIDEOS.chancellorEb.id, ROUTE_VIDEOS.wesbrookSb.id],
     positions: [
       WESBROOK_CHANCELLOR_WS,
       [49.27301, -123.24893],
@@ -172,6 +176,7 @@ export const CHANCELLOR = [
     type: "mixed",
     oneWay: "required",
     hideArrows: true,
+    videoIds: [ROUTE_VIDEOS.chancellorEb.id],
     positions: [WESBROOK_CHANCELLOR_SW, WESBROOK_CHANCELLOR_SE],
   },
   {
@@ -179,7 +184,7 @@ export const CHANCELLOR = [
     description: "eb: wesbrook 3",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [ROUTE_VIDEOS.wesbrookNb.id],
+    videoIds: [ROUTE_VIDEOS.chancellorEb.id, ROUTE_VIDEOS.wesbrookNb.id],
     positions: [
       WESBROOK_CHANCELLOR_SE,
       [49.27303, -123.24865],
@@ -192,6 +197,7 @@ export const CHANCELLOR = [
     description: "eb: from wesbrook",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.chancellorEb.id],
     positions: [
       WESBROOK_CHANCELLOR_ES,
       [49.27321, -123.24788],

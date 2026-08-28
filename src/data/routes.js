@@ -989,7 +989,14 @@ export const ROUTES = {
   chancellor: {
     name: "Chancellor Blvd",
     regions: [REGIONS.ubc],
-    legs: [{ videos: { westbound: ROUTE_VIDEOS.chancellorWb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.chancellorEb,
+          westbound: ROUTE_VIDEOS.chancellorWb,
+        },
+      },
+    ],
     notes:
       "Some gradual hills and fast cars. The painted lanes are beside the curb. Accessing the path at Tasmania Cr can be confusing as it's not well signed.",
   },
