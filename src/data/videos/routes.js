@@ -2161,6 +2161,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Apr 26 2024"),
     minutes: 24,
   },
+  seasideFalseCreekCcw: {
+    id: "4MMmz6zBJvM",
+    tlId: "I8GEpJECFwI",
+    date: new Date("Aug 25 2026"),
+    minutes: 24,
+  },
   seasideFalseCreekCw: {
     id: "ZSsCF2kpicg",
     tlId: "Mn5YqTM7zMM",

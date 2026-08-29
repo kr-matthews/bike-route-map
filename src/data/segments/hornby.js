@@ -24,11 +24,12 @@ export const HORNBY = [
     type: "quiet",
     videoIds: [
       ROUTE_VIDEOS.hornbyNb.id,
-      ROUTE_VIDEOS.hornbySb.id,
       ROUTE_VIDEOS.seasideFalseCreekCw.id,
       ROUTE_VIDEOS.seasideBypassBeachWb.id,
-      ROUTE_VIDEOS.seasideBypassBeachEb.id,
       ROUTE_VIDEOS.burrardBridgeNb.id,
+      ROUTE_VIDEOS.hornbySb.id,
+      ROUTE_VIDEOS.seasideFalseCreekCcw.id,
+      ROUTE_VIDEOS.seasideBypassBeachEb.id,
     ],
     videoIdsStartAtStart: [
       ROUTE_VIDEOS.hornbyNb.id,
@@ -47,13 +48,15 @@ export const HORNBY = [
     type: "dedicated",
     videoIds: [
       ROUTE_VIDEOS.hornbySb.id,
-      ROUTE_VIDEOS.hornbyNb.id,
-      ROUTE_VIDEOS.seasideBypassBeachWb.id,
       ROUTE_VIDEOS.seasideFalseCreekCw.id,
-      ROUTE_VIDEOS.seasideBypassBeachEb.id,
+      ROUTE_VIDEOS.seasideBypassBeachWb.id,
       ROUTE_VIDEOS.burrardBridgeNb.id,
+      ROUTE_VIDEOS.hornbyNb.id,
+      ROUTE_VIDEOS.seasideFalseCreekCcw.id,
+      ROUTE_VIDEOS.seasideBypassBeachEb.id,
     ],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.seasideFalseCreekCw.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.seasideFalseCreekCcw.id],
     positions: [HORNBY_BEACH_SE_S, HORNBY_BEACH],
   },
   {

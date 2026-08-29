@@ -2994,7 +2994,10 @@ export const ROUTES = {
       { name: "West End (Closed)", videos: {} },
       {
         name: "False Creek",
-        videos: { clockwise: ROUTE_VIDEOS.seasideFalseCreekCw },
+        videos: {
+          clockwise: ROUTE_VIDEOS.seasideFalseCreekCw,
+          counterclockwise: ROUTE_VIDEOS.seasideFalseCreekCcw,
+        },
       },
       {
         name: "Kitsilano",

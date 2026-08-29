@@ -539,9 +539,11 @@ export const SEASIDE = [
     type: "quiet",
     videoIds: [
       ROUTE_VIDEOS.seasideKitsWb.id,
-      ROUTE_VIDEOS.seasideFalseCreekCw.id,
+      ROUTE_VIDEOS.seasideFalseCreekCcw.id,
       ROUTE_VIDEOS.seasideKitsEb.id,
+      ROUTE_VIDEOS.seasideFalseCreekCw.id,
     ],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.seasideFalseCreekCcw.id],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.seasideKitsWb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.seasideFalseCreekCw.id],
     positions: [SEASIDE_WHYTE_E, SEAWALL_WHYTE],
@@ -551,6 +553,7 @@ export const SEASIDE = [
     description: "false creek south: whyte to end of marina",
     type: "quiet",
     videoIds: [
+      ROUTE_VIDEOS.seasideFalseCreekCcw.id,
       ROUTE_VIDEOS.seasideKitsEb.id,
       ROUTE_VIDEOS.seasideFalseCreekCw.id,
     ],
@@ -566,6 +569,7 @@ export const SEASIDE = [
     description: "false creek south: marina to creekside",
     type: "dedicated",
     videoIds: [
+      ROUTE_VIDEOS.seasideFalseCreekCcw.id,
       ROUTE_VIDEOS.seasideKitsEb.id,
       ROUTE_VIDEOS.seasideFalseCreekCw.id,
     ],
@@ -600,8 +604,9 @@ export const SEASIDE = [
     description: "false creek south: near 1st",
     type: "dedicated",
     videoIds: [
-      ROUTE_VIDEOS.seasideFalseCreekCw.id,
+      ROUTE_VIDEOS.seasideFalseCreekCcw.id,
       ROUTE_VIDEOS.burrardBridgeNb.id,
+      ROUTE_VIDEOS.seasideFalseCreekCw.id,
     ],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.burrardBridgeNb.id],
     positions: [
@@ -619,7 +624,10 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "false creek south: near 1st to spyglass",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.seasideFalseCreekCw.id],
+    videoIds: [
+      ROUTE_VIDEOS.seasideFalseCreekCcw.id,
+      ROUTE_VIDEOS.seasideFalseCreekCw.id,
+    ],
     positions: [
       SEASIDE_MARINER,
       [49.27116, -123.13938],
@@ -775,6 +783,7 @@ export const SEASIDE = [
     videoIds: [
       ROUTE_VIDEOS.cambieBridgeNb.id,
       ROUTE_VIDEOS.yukonSb.id,
+      ROUTE_VIDEOS.seasideFalseCreekCcw.id,
       ROUTE_VIDEOS.seasideFalseCreekCw.id,
     ],
     videoIdsStartAtEnd: [
@@ -794,7 +803,10 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "false creek south: cambie bridge to columbia-ish",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.seasideFalseCreekCw.id],
+    videoIds: [
+      ROUTE_VIDEOS.seasideFalseCreekCcw.id,
+      ROUTE_VIDEOS.seasideFalseCreekCw.id,
+    ],
     positions: [
       EAST_OF_SPYGLASS,
       [49.27121, -123.11419],
@@ -815,7 +827,11 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "false creek south - little bit west of columbia",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.seasideFalseCreekCw.id, ROUTE_VIDEOS.columbiaNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.seasideFalseCreekCcw.id,
+      ROUTE_VIDEOS.seasideFalseCreekCw.id,
+      ROUTE_VIDEOS.columbiaNb.id,
+    ],
     videoIdsEndAtStart: [ROUTE_VIDEOS.columbiaNb.id],
     positions: [
       WEST_OF_COLUMBIA,
@@ -830,7 +846,10 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "false creek south - columbia to ontario",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.seasideFalseCreekCw.id],
+    videoIds: [
+      ROUTE_VIDEOS.seasideFalseCreekCcw.id,
+      ROUTE_VIDEOS.seasideFalseCreekCw.id,
+    ],
     positions: [
       COLUMBIA_SEAWALL,
       [49.27219, -123.10827],
@@ -853,6 +872,7 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "false creek south - new science world to ontario",
     type: "dedicated",
+    videoIds: [ROUTE_VIDEOS.seasideFalseCreekCcw.id],
     positions: [
       ONTARIO_PATH_SEASIDE,
       [49.27194, -123.10423],
@@ -884,7 +904,10 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "false creek south - terminal to quebec",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.seasideFalseCreekCw.id],
+    videoIds: [
+      ROUTE_VIDEOS.seasideFalseCreekCcw.id,
+      ROUTE_VIDEOS.seasideFalseCreekCw.id,
+    ],
     positions: [
       SCIENCE_WORLD_S,
       [49.27274, -123.10254],
@@ -911,7 +934,10 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "false creek north (open): to before cambie",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.seasideFalseCreekCw.id],
+    videoIds: [
+      ROUTE_VIDEOS.seasideFalseCreekCw.id,
+      ROUTE_VIDEOS.seasideFalseCreekCcw.id,
+    ],
     positions: [
       HORNBY_SEABREEZE,
       [49.27417, -123.13265],
@@ -990,8 +1016,9 @@ export const SEASIDE = [
     type: "dedicated",
     videoIds: [
       ROUTE_VIDEOS.cambieBridgeNb.id,
-      ROUTE_VIDEOS.cambieBridgeSb.id,
       ROUTE_VIDEOS.seasideFalseCreekCw.id,
+      ROUTE_VIDEOS.cambieBridgeSb.id,
+      ROUTE_VIDEOS.seasideFalseCreekCcw.id,
     ],
     videoIdsStartAtStart: [ROUTE_VIDEOS.cambieBridgeSb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.cambieBridgeNb.id],
@@ -1007,7 +1034,10 @@ export const SEASIDE = [
     routeNames: [ROUTES.seaside.name],
     description: "false creek north - beyond cambie",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.seasideFalseCreekCw.id],
+    videoIds: [
+      ROUTE_VIDEOS.seasideFalseCreekCw.id,
+      ROUTE_VIDEOS.seasideFalseCreekCcw.id,
+    ],
     positions: [
       MARINASIDE_SEAWALL,
       [49.27328, -123.11468],
