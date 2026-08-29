@@ -3062,7 +3062,10 @@ export const ROUTES = {
       },
       {
         name: "Whyte",
-        videos: { westbound: ROUTE_VIDEOS.seasideBypassWhyteWb },
+        videos: {
+          eastbound: ROUTE_VIDEOS.seasideBypassWhyteEb,
+          westbound: ROUTE_VIDEOS.seasideBypassWhyteWb,
+        },
       },
     ],
     notes:

@@ -2138,6 +2138,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Apr 10 2024"),
     minutes: 11,
   },
+  seasideBypassWhyteEb: {
+    id: "rj69m47mNKw",
+    date: new Date("Aug 25 2026"),
+    minutes: 3,
+  },
   seasideBypassWhyteWb: {
     id: "L1dzMGDfgDU",
     date: new Date("May 18 2024"),
