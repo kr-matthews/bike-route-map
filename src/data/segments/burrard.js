@@ -30,6 +30,8 @@ import {
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
+const CHESTNUT_SENAKW = [49.2739, -123.14625];
+const N_OF_SENAKW = [49.27405, -123.14625];
 const BURRARD_4TH_E = [49.26806, -123.1455];
 const BURRARD_CORNWALL_E = [49.27232, -123.14504];
 const BURRARD_CORNWALL_SW = [49.27231, -123.14556];
@@ -47,21 +49,37 @@ const SOUTHBOUND_ENDPOINT = [49.26517, -123.14582];
 export const BURRARD = [
   // chestnut
   {
-    description: "chestnut",
-    type: "quiet",
+    description: "chestnut protected",
+    type: "dedicated",
     videoIds: [ROUTE_VIDEOS.burrardBridgeSb.id],
     positions: [
       CHESTNUT_CORNWALL,
-      [49.27267, -123.14633],
-      [49.27296, -123.14634],
-      [49.27305, -123.14636],
-      [49.27352, -123.14633],
-      [49.27358, -123.14631],
+      [49.27264, -123.1463],
+      [49.27271, -123.14633],
+      [49.27297, -123.14634],
+      [49.27345, -123.14631],
+      [49.27362, -123.14626],
+      CHESTNUT_SENAKW,
+      N_OF_SENAKW,
+    ],
+  },
+  {
+    description: "chestnut quiet",
+    type: "quiet",
+    videoIds: [ROUTE_VIDEOS.burrardBridgeSb.id],
+    positions: [
+      N_OF_SENAKW,
+      [49.27409, -123.14627],
       [49.27442, -123.14626],
       CHESTNUT_WHYTE,
       [49.27675, -123.14616],
       CHESTNUT_OGDEN,
     ],
+  },
+  {
+    description: "senakw",
+    type: "dedicated",
+    positions: [CHESTNUT_SENAKW, [49.27398, -123.14464]],
   },
 
   // connection
