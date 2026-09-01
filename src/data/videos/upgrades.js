@@ -525,4 +525,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.26204, -123.03957],
     region: REGIONS.vancouver,
   },
+  chestnutNb26: {
+    id: "bCOdSVK-RPE",
+    title: "Chestnut St @ Sen̓áḵw Ln",
+    routeNames: [],
+    direction: "northbound",
+    date: new Date("Aug 28 2026"),
+    minutes: 1,
+    position: [49.27345, -123.14632],
+    region: REGIONS.vancouver,
+  },
 };
