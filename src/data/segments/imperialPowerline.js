@@ -8,8 +8,12 @@ export const IMPERIAL_POWERLINE = [
   {
     description: "ubc greenway: ross dr to powerline trail",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.imperialPowerlineEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.imperialPowerlineEb.id,
+      ROUTE_VIDEOS.imperialPowerlineWb.id,
+    ],
     videoIdsStartAtStart: [ROUTE_VIDEOS.imperialPowerlineEb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.imperialPowerlineWb.id],
     positions: [
       [49.25107, -123.23448],
       [49.25099, -123.23444],
@@ -43,7 +47,11 @@ export const IMPERIAL_POWERLINE = [
     routeNames: [ROUTES.imperialPowerline.name],
     description: "all",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.imperialPowerlineEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.imperialPowerlineWb.id,
+      ROUTE_VIDEOS.imperialPowerlineEb.id,
+    ],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.imperialPowerlineWb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.imperialPowerlineEb.id],
     positions: [
       POWERLINE_W,

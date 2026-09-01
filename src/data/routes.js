@@ -1800,7 +1800,14 @@ export const ROUTES = {
     name: "Imperial Trail/Powerline Trail",
     shortName: "Imperial/Powerline",
     regions: [REGIONS.ubc],
-    legs: [{ videos: { eastbound: ROUTE_VIDEOS.imperialPowerlineEb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.imperialPowerlineEb,
+          westbound: ROUTE_VIDEOS.imperialPowerlineWb,
+        },
+      },
+    ],
     notes:
       "A gentle hill to the east. The shared use path gets wider as you go east, but also busier, with lots of dogs.",
   },

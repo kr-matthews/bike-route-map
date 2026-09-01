@@ -1293,6 +1293,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Jul 01 2024"),
     minutes: 8,
   },
+  imperialPowerlineWb: {
+    id: "etPNJZ_sj2M",
+    date: new Date("Aug 24 2026"),
+    minutes: 8,
+  },
   inglisEb: {
     id: "MAPqDMzMzgI",
     date: new Date("Dec 07 2025"),
