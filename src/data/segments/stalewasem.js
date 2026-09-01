@@ -128,7 +128,6 @@ export const STALEWASEM = [
   {
     description: "mcbride w - columbia to east side",
     type: "mixed",
-    isClosed: true,
     positions: [MCBRIDE_COLUMBIA_NW, [49.21118, -122.89799], MCBRIDE_EAST_SIDE],
   },
   {
