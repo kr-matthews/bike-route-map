@@ -729,6 +729,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Mar 29 2024"),
     minutes: 7,
   },
+  eastMallNb: {
+    id: "Gs9jjU-696c",
+    date: new Date("Aug 24 2026"),
+    minutes: 7,
+  },
   eastMallSb: {
     id: "cBhgHsApJRI",
     tlId: "Io9vab3Eweo",

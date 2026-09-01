@@ -1219,7 +1219,14 @@ export const ROUTES = {
   eastMall: {
     name: "East Mall",
     regions: [REGIONS.ubc],
-    legs: [{ videos: { southbound: ROUTE_VIDEOS.eastMallSb } }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.eastMallNb,
+          southbound: ROUTE_VIDEOS.eastMallSb,
+        },
+      },
+    ],
     notes:
       "The south bit is not great, but the rest is quiet and flat. The painted lanes are beside parked cars.",
   },

@@ -35,6 +35,8 @@ export const EAST_MALL = [
     type: "mixed",
     oneWay: "required",
     hideArrows: true,
+    videoIds: [ROUTE_VIDEOS.eastMallNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.eastMallNb.id],
     positions: [
       [49.25386, -123.24067],
       [49.25389, -123.24065],
@@ -71,6 +73,7 @@ export const EAST_MALL = [
     description: "crossing 16th east side",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [ROUTE_VIDEOS.eastMallNb.id],
     positions: [
       EAST_MALL_16TH_ES,
       [49.25422, -123.24066],
@@ -92,6 +95,7 @@ export const EAST_MALL = [
     description: "nb: post-16th",
     type: "mixed",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.eastMallNb.id],
     positions: [
       EAST_MALL_16TH_NE,
       [49.25467, -123.24128],
@@ -104,6 +108,7 @@ export const EAST_MALL = [
     description: "nb: 16th to lane end",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.eastMallNb.id],
     positions: [
       NB_POST_16TH,
       [49.25505, -123.24157],
@@ -161,7 +166,7 @@ export const EAST_MALL = [
     routeNames: [ROUTES.eastMall.name],
     description: "lanes to pedestrianized",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.eastMallSb.id],
+    videoIds: [ROUTE_VIDEOS.eastMallNb.id, ROUTE_VIDEOS.eastMallSb.id],
     positions: [
       AGRONOMY_LANE,
       EAST_MALL_AGRONOMY,
@@ -178,14 +183,14 @@ export const EAST_MALL = [
     routeNames: [ROUTES.eastMall.name],
     description: "pedestrianized",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.eastMallSb.id],
+    videoIds: [ROUTE_VIDEOS.eastMallSb.id, ROUTE_VIDEOS.eastMallNb.id],
     positions: [PEDESTRIANIZED_S, EAST_MALL_UNIVERSITY_S, PEDESTRIANIZED_N],
   },
   {
     routeNames: [ROUTES.eastMall.name],
     description: "pedestrianized to pre-marine",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.eastMallSb.id],
+    videoIds: [ROUTE_VIDEOS.eastMallSb.id, ROUTE_VIDEOS.eastMallNb.id],
     positions: [
       PEDESTRIANIZED_N,
       [49.26901, -123.25316],
@@ -198,6 +203,8 @@ export const EAST_MALL = [
     description: "nb: to marine",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.eastMallNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.eastMallNb.id],
     positions: [
       PRE_MARINE_SPLIT,
       [49.2708, -123.25398],

@@ -140,7 +140,7 @@ export const SIXTEENTH = [
     description: "eb: east mall SE",
     type: "mixed",
     oneWay: "recommended",
-    videoIds: [ROUTE_VIDEOS.sixteenthEb.id],
+    videoIds: [ROUTE_VIDEOS.sixteenthEb.id, ROUTE_VIDEOS.eastMallNb.id],
     positions: [EAST_MALL_16TH_SE, [49.25403, -123.24066], EAST_MALL_16TH_ES],
   },
   {
@@ -352,7 +352,7 @@ export const SIXTEENTH = [
     description: "wb: east mall NE",
     type: "mixed",
     oneWay: "recommended",
-    videoIds: [ROUTE_VIDEOS.sixteenthWb.id],
+    videoIds: [ROUTE_VIDEOS.sixteenthWb.id, ROUTE_VIDEOS.eastMallNb.id],
     positions: [EAST_MALL_16TH_EN, [49.25446, -123.24096], EAST_MALL_16TH_NE],
   },
   {
