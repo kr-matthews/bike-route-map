@@ -535,4 +535,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.27345, -123.14632],
     region: REGIONS.vancouver,
   },
+  twentyNinthNantonYew26: {
+    id: "TOl5EdwjTe4",
+    title: "29th @ Nanton Ave & Yew St",
+    routeNames: [ROUTES.twentyNinth.name],
+    direction: "westbound",
+    date: new Date("Sep 03 2026"),
+    minutes: 0,
+    position: [49.24766, -123.15449],
+    region: REGIONS.vancouver,
+  },
 };
