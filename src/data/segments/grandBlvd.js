@@ -5,7 +5,6 @@ import {
   GRAND_BLVD_E_19TH_SW,
   GRAND_BLVD_E_KEITH_NW,
   GRAND_BLVD_E_KEITH_SW,
-  GRAND_BLVD_W_13TH,
   GRAND_BLVD_W_19TH_NE,
   GRAND_BLVD_W_19TH_SE,
   GRAND_BLVD_W_KEITH_NE,
@@ -67,20 +66,6 @@ export const GRAND_BLVD = [
   },
 
   // route
-  {
-    routeNames: [ROUTES.grandBlvd.name],
-    description: "nb",
-    type: "quiet",
-    oneWay: "recommended",
-    videoIds: [ROUTE_VIDEOS.grandBlvdNb.id],
-    positions: [
-      GRAND_BLVD_W_KEITH_NE,
-      [49.31366, -123.0577],
-      GRAND_BLVD_W_13TH,
-      [49.32598, -123.05742],
-      GRAND_BLVD_W_19TH_SE,
-    ],
-  },
   {
     routeNames: [ROUTES.grandBlvd.name],
     description: "eb",

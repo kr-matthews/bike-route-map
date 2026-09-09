@@ -1505,17 +1505,23 @@ export const ROUTES = {
   },
   grandBlvd: {
     name: "Grand Blvd",
+    isOneWay: true,
     regions: [REGIONS.northVancouver],
     legs: [
       {
         videos: {
-          northbound: ROUTE_VIDEOS.grandBlvdNb,
           southbound: ROUTE_VIDEOS.grandBlvdSb,
+        },
+      },
+      {
+        name: "Former interim version of Grand Blvd W",
+        videos: {
+          northbound: ROUTE_VIDEOS.grandBlvdNb,
         },
       },
     ],
     notes:
-      "Originally a clockwise loop around the inside of the park, but then the northbound (west) section was shifted onto the (partially closed-off) road. Gradual but significant hill.",
+      "Originally a clockwise loop around the inside edge of the park, but then the west (northbound) portion was reallocated to pedestrians because part of Grand Blvd W was reallocated for an upgraded Green Necklace segment. Now it's only southbound and only on the east side. Gradual but significant hill.",
   },
   grantMcconachie: {
     name: "Grant McConachie Way",
