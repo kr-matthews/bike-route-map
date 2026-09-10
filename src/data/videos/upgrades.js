@@ -545,4 +545,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.24766, -123.15449],
     region: REGIONS.vancouver,
   },
+  greenNecklaceGrandBlvd26: {
+    id: "Hada8RcGpNY",
+    title: "Green Necklace along Grand Blvd",
+    routeNames: [ROUTES.greenNecklace.name, ROUTES.grandBlvd.name],
+    direction: "northbound",
+    date: new Date("Sep 07 2026"),
+    minutes: 4,
+    position: [49.31931, -123.0576],
+    region: REGIONS.northVancouver,
+  },
 };
