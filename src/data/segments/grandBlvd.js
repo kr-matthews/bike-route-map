@@ -64,6 +64,16 @@ export const GRAND_BLVD = [
     hideArrows: true,
     positions: [GRAND_BLVD_E_KEITH_NW, GRAND_BLVD_E_KEITH_NW_W],
   },
+  {
+    description: "connection to sutherland ave",
+    type: "mixed",
+    positions: [
+      GRAND_BLVD_E_19TH_SW,
+      [49.326, -123.05614],
+      [49.32599, -123.05473],
+      [49.326, -123.05453],
+    ],
+  },
 
   // route
   {
