@@ -174,6 +174,7 @@ import { PORTSIDE } from "./portside";
 import { PORTSIDE_GAP } from "./portsideGap";
 import { POWELL } from "./powell";
 import { PRINCE_EDWARD } from "./princeEdward";
+import { QUEENS } from "./queens";
 import { QUEENSBOROUGH_BRIDGE } from "./queensboroughBridge";
 import { QUEENSBURY } from "./queensbury";
 import { RAILWAY } from "./railway";
@@ -424,6 +425,7 @@ export const SEGMENTS = [
   ...PORTSIDE_GAP,
   ...POWELL,
   ...PRINCE_EDWARD,
+  ...QUEENS,
   ...QUEENSBOROUGH_BRIDGE,
   ...QUEENSBURY,
   ...RAILWAY,

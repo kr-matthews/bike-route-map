@@ -2780,6 +2780,13 @@ export const ROUTES = {
     notes:
       "Lots of hill. Traffic is light despite little calming (only at Sunset Park). Unfortunately there's no way to continue north or east at the north tip.",
   },
+  queens: {
+    name: "W Queens Rd",
+    regions: [REGIONS.northVancouver],
+    legs: [{ videos: {} }],
+    notes:
+      "New 2026 (semi-)protected lanes connecting (almost) Edgemont Village to Delbrook Community Center. It will be extended further east in a future phase.",
+  },
   queensboroughBridge: {
     name: "Queensborough Bridge",
     shortName: "Queensborough B.",

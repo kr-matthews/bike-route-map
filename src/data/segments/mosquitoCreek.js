@@ -3,6 +3,7 @@ import {
   FELL_LARSON_NE,
   FELL_LARSON_SE,
   MOSQUITO_CREEK_LARSON_RAMP_N,
+  MOSQUITO_CREEK_QUEENS_S,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
@@ -127,6 +128,7 @@ export const MOSQUITO_CREEK = [
       [49.3361, -123.09451],
       [49.33643, -123.09455],
       [49.33654, -123.09469],
+      MOSQUITO_CREEK_QUEENS_S,
     ],
   },
 ];
