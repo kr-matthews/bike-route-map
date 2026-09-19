@@ -2220,6 +2220,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Dec 23 2023"),
     minutes: 40,
   },
+  seaToRiverSb: {
+    id: "ZTf0J4qtknA",
+    tlId: "xV4k_5VEWhs",
+    date: new Date("Sep 26 2026"),
+    minutes: 48,
+  },
   seaviewEb: {
     id: "vJrAiNMm498",
     tlId: "qJDbMBrHirQ",

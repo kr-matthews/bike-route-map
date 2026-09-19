@@ -496,8 +496,9 @@ export const MIDTOWN = [
     type: "mixed",
     videoIds: [
       ROUTE_VIDEOS.midtownBurnabyEb.id,
-      ROUTE_VIDEOS.seaToRiverNb.id,
+      ROUTE_VIDEOS.seaToRiverSb.id,
       ROUTE_VIDEOS.midtownBurnabyWb.id,
+      ROUTE_VIDEOS.seaToRiverNb.id,
     ],
     positions: [PATTERSON_MOSCROP, CARLETON_MOSCROP],
   },

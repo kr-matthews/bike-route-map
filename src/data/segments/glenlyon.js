@@ -11,7 +11,8 @@ export const GLENLYON = [
     routeNames: [ROUTES.glenlyon.name],
     description: "west portion",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.glenlyonNb.id],
+    videoIds: [ROUTE_VIDEOS.glenlyonNb.id, ROUTE_VIDEOS.seaToRiverSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.seaToRiverSb.id],
     positions: [
       GLENLYON_FRASER_FORESHORE,
       [49.19773, -123.00893],

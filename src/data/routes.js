@@ -3101,7 +3101,14 @@ export const ROUTES = {
   seaToRiver: {
     name: "Sea to River",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { northbound: ROUTE_VIDEOS.seaToRiverNb } }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.seaToRiverNb,
+          southbound: ROUTE_VIDEOS.seaToRiverSb,
+        },
+      },
+    ],
     notes:
       "This route varies a lot in comfort and clarity, but is usually very hilly. It's not clear where it ends at the south end, nor how you're intended to connect to Glenlyon Urban Trail - either a steep low quality muddy path, or an alley plus busy road. The worst part is Patterson; at Central Park, you can use the shared path around the park instead, and north of Kingsway you can use Inman instead - but Inman has no connections at Kingsway so it's not practical (and is further). The section between Dawson and 1st was quite confusing and bad, but was being improved in late 2024.",
   },
