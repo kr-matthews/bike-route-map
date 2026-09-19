@@ -2783,7 +2783,7 @@ export const ROUTES = {
   queens: {
     name: "W Queens Rd",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { westbound: ROUTE_VIDEOS.wQueensWb } }],
     notes:
       "New 2026 (semi-)protected lanes connecting (almost) Edgemont Village to Delbrook Community Center. It will be extended further east in a future phase.",
   },

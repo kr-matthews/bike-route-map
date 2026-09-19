@@ -1,5 +1,6 @@
 import { MOSQUITO_CREEK_QUEENS_S } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const DEL_RIO_QUEENS_S = [49.33652, -123.0932];
 const DEL_RIO_QUEENS_N = [49.33663, -123.09317];
@@ -17,6 +18,8 @@ export const QUEENS = [
     description: "queens & edgemont",
     type: "shared",
     undesignated: true,
+    videoIds: [ROUTE_VIDEOS.wQueensWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.wQueensWb.id],
     positions: [
       [49.3375, -123.10192],
       [49.33666, -123.10078],
@@ -27,6 +30,8 @@ export const QUEENS = [
     description: "queens, bewicke to jones",
     type: "shared",
     undesignated: true,
+    videoIds: [ROUTE_VIDEOS.wQueensWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.wQueensWb.id],
     positions: [
       BEWICKE_QUEENS_E,
       [49.33656, -123.0881],
@@ -76,6 +81,7 @@ export const QUEENS = [
     oneWay: "recommended",
     hideArrows: true,
     undesignated: true,
+    videoIds: [ROUTE_VIDEOS.wQueensWb.id],
     positions: [BEWICKE_QUEENS_E, BEWICKE_QUEENS_NW],
   },
   {
@@ -83,6 +89,7 @@ export const QUEENS = [
     description: "wb painted",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.wQueensWb.id],
     positions: [BEWICKE_QUEENS_NW, DEL_RIO_QUEENS_N],
   },
   {
@@ -90,6 +97,7 @@ export const QUEENS = [
     description: "wb protected",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.wQueensWb.id],
     positions: [DEL_RIO_QUEENS_N, WOODBINE_QUEENS_NE],
   },
   {
@@ -98,6 +106,7 @@ export const QUEENS = [
     oneWay: "recommended",
     hideArrows: true,
     undesignated: true,
+    videoIds: [ROUTE_VIDEOS.wQueensWb.id],
     positions: [WOODBINE_QUEENS_NE, WOODBINE_QUEENS_W],
   },
 ];
