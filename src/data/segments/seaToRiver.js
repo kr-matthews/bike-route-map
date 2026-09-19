@@ -20,6 +20,7 @@ import {
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
+const MCKAY_BOXER_ALLEY = [49.20989, -123.00861];
 const MCKAY_BOXER = [49.21028, -123.00869];
 const MCKAY_MAYWOOD = [49.22372, -123.00896];
 const MAYWOOD_W = [49.22515, -123.01206];
@@ -54,10 +55,10 @@ export const SEA_TO_RIVER = [
     positions: [PATTERSON_MAYWOOD_W, PATTERSON_MAYWOOD],
   },
   {
-    description: "trail: marine dr to boxer",
+    description: "trail: marine dr to boxer alley",
     type: "other",
+    undesignated: true,
     videoIds: [ROUTE_VIDEOS.seaToRiverNb.id, ROUTE_VIDEOS.glenlyonNb.id],
-    videoIdsEndAtEnd: [ROUTE_VIDEOS.glenlyonNb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.seaToRiverNb.id],
     positions: [
       NEW_HAVEN_MARINE,
@@ -71,10 +72,16 @@ export const SEA_TO_RIVER = [
       [49.20976, -123.00854],
       [49.20983, -123.00857],
       [49.20988, -123.00858],
-      [49.20989, -123.00861],
-      [49.21017, -123.00861],
-      MCKAY_BOXER,
+      MCKAY_BOXER_ALLEY,
     ],
+  },
+  {
+    description: "alley: to boxer",
+    type: "quiet",
+    undesignated: true,
+    videoIds: [ROUTE_VIDEOS.seaToRiverNb.id, ROUTE_VIDEOS.glenlyonNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.glenlyonNb.id],
+    positions: [MCKAY_BOXER_ALLEY, [49.21017, -123.00861], MCKAY_BOXER],
   },
   {
     routeNames: [ROUTES.seaToRiver.name],
