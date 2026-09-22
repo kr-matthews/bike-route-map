@@ -16,8 +16,26 @@ const ST_GEORGES_KEITH_W_N = [49.31565, -123.07049];
 const W_VICTORIA_KEITH = [49.31785, -123.0757];
 const JONES_21ST_SE = [49.32831, -123.08144];
 const RIDGEWAY_23RD_N = [49.33022, -123.06282];
+const ST_GEORGES_23RD_NW = [49.33029, -123.06912];
 
 export const GREEN_NECKLACE = [
+  // harry jerome
+  {
+    description: "harry jerome s",
+    type: "dedicated",
+    positions: [
+      [49.33032, -123.07081],
+      [49.33032, -123.07075],
+      [49.33033, -123.07068],
+      [49.33032, -123.07002],
+      [49.33033, -123.06998],
+      [49.33033, -123.06968],
+      [49.33028, -123.06937],
+      [49.33027, -123.06917],
+      ST_GEORGES_23RD_NW,
+    ],
+  },
+
   {
     routeNames: [ROUTES.greenNecklace.name],
     description: "grand blvd to st georges",
@@ -162,7 +180,7 @@ export const GREEN_NECKLACE = [
       [49.33011, -123.06909],
       [49.33014, -123.06912],
       ST_GEORGES_23RD_W,
-      [49.33029, -123.06912],
+      ST_GEORGES_23RD_NW,
       ST_ANDREWS_23RD_N,
     ],
   },
