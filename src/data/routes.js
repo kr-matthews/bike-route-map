@@ -1485,7 +1485,14 @@ export const ROUTES = {
   glenlyon: {
     name: "Glenlyon Urban Trail",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { northbound: ROUTE_VIDEOS.glenlyonNb } }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.glenlyonNb,
+          southbound: ROUTE_VIDEOS.glenlyonSb,
+        },
+      },
+    ],
     notes:
       "Surface has lots of tree roots in places. Flat, except the north tip which is steep. Connecting to Sea to River at the north end is unclear - either use a dirt desire path, or the busy roads.",
   },

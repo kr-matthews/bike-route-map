@@ -60,8 +60,9 @@ export const SEA_TO_RIVER = [
     undesignated: true,
     videoIds: [
       ROUTE_VIDEOS.seaToRiverNb.id,
-      ROUTE_VIDEOS.glenlyonNb.id,
+      ROUTE_VIDEOS.glenlyonSb.id,
       ROUTE_VIDEOS.seaToRiverSb.id,
+      ROUTE_VIDEOS.glenlyonNb.id,
     ],
     videoIdsStartAtStart: [ROUTE_VIDEOS.seaToRiverNb.id],
     positions: [
@@ -85,10 +86,12 @@ export const SEA_TO_RIVER = [
     undesignated: true,
     videoIds: [
       ROUTE_VIDEOS.seaToRiverNb.id,
-      ROUTE_VIDEOS.glenlyonNb.id,
+      ROUTE_VIDEOS.glenlyonSb.id,
       ROUTE_VIDEOS.seaToRiverSb.id,
+      ROUTE_VIDEOS.glenlyonNb.id,
     ],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.glenlyonNb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.glenlyonSb.id],
     positions: [MCKAY_BOXER_ALLEY, [49.21017, -123.00861], MCKAY_BOXER],
   },
   {

@@ -1016,6 +1016,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Aug 17 2023"),
     minutes: 10,
   },
+  glenlyonSb: {
+    id: "uz2NKrvuEV8",
+    tlId: "VavSyrgoqCA",
+    date: new Date("Sep 16 2026"),
+    minutes: 11,
+  },
   goldenEarsBridgeNb: {
     id: "Oz2U8lnG9AA",
     tlId: "rbuatfyPSvU",

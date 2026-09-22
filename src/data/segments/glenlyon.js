@@ -11,7 +11,11 @@ export const GLENLYON = [
     routeNames: [ROUTES.glenlyon.name],
     description: "west portion",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.glenlyonNb.id, ROUTE_VIDEOS.seaToRiverSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.glenlyonSb.id,
+      ROUTE_VIDEOS.glenlyonNb.id,
+      ROUTE_VIDEOS.seaToRiverSb.id,
+    ],
     videoIdsEndAtStart: [ROUTE_VIDEOS.seaToRiverSb.id],
     positions: [
       GLENLYON_FRASER_FORESHORE,
@@ -48,7 +52,11 @@ export const GLENLYON = [
     routeNames: [ROUTES.glenlyon.name, ROUTES.fraserForeshoreTrail.name],
     description: "fraser foreshore trail",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.glenlyonNb.id, ROUTE_VIDEOS.fraserForeshoreEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.glenlyonNb.id,
+      ROUTE_VIDEOS.fraserForeshoreEb.id,
+      ROUTE_VIDEOS.glenlyonSb.id,
+    ],
     positions: [
       GLENLYON_FRASER_FORESHORE,
       [49.19728, -123.00814],
@@ -73,8 +81,9 @@ export const GLENLYON = [
     routeNames: [ROUTES.glenlyon.name],
     description: "east portion",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.glenlyonNb.id],
+    videoIds: [ROUTE_VIDEOS.glenlyonNb.id, ROUTE_VIDEOS.glenlyonSb.id],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.glenlyonNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.glenlyonSb.id],
     positions: [
       GLENLYON_BYRNE_CREEK,
       [49.19531, -123.00134],
