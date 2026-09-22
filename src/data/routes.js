@@ -1341,7 +1341,14 @@ export const ROUTES = {
     name: "Fraser Foreshore Urban Trail",
     shortName: "Fraser Foreshore T.",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { eastbound: ROUTE_VIDEOS.fraserForeshoreEb } }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.fraserForeshoreEb,
+          westbound: ROUTE_VIDEOS.fraserForeshoreWb,
+        },
+      },
+    ],
     notes:
       "A wide, flat, shared use path. Easy to accidentally continue on Glenlyon Pkwy Urban Trail instead of taking the correct turn. The trail continues to the east, but bikes are not allowed.",
   },

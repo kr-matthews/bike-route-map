@@ -944,6 +944,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Dec 23 2023"),
     minutes: 10,
   },
+  fraserForeshoreWb: {
+    id: "6n2P-bUvObM",
+    tlId: "bCy0skGyENw",
+    date: new Date("Sep 16 2026"),
+    minutes: 10,
+  },
   freewayAvalonEb: {
     id: "WKfwiqj00mY",
     tlId: "M5v-shNSkjM",

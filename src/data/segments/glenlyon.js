@@ -54,8 +54,9 @@ export const GLENLYON = [
     type: "mixed",
     videoIds: [
       ROUTE_VIDEOS.glenlyonNb.id,
-      ROUTE_VIDEOS.fraserForeshoreEb.id,
+      ROUTE_VIDEOS.fraserForeshoreWb.id,
       ROUTE_VIDEOS.glenlyonSb.id,
+      ROUTE_VIDEOS.fraserForeshoreEb.id,
     ],
     positions: [
       GLENLYON_FRASER_FORESHORE,
