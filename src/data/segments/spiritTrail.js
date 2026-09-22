@@ -603,7 +603,7 @@ export const SPIRIT_TRAIL = [
     routeNames: [ROUTES.spiritTrail.name, ROUTES.chesterfield.name],
     description: "chesterfield sb overlap",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id],
+    videoIds: [ROUTE_VIDEOS.spiritTrailEb.id, ROUTE_VIDEOS.chesterfieldSb.id],
     positions: [CHESTERFIELD_CARRIE_CATES_W, CHESTERFIELD_CARRIE_CATES_SW],
   },
   {

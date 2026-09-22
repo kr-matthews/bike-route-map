@@ -1007,6 +1007,7 @@ export const ROUTES = {
       {
         videos: {
           northbound: ROUTE_VIDEOS.chesterfieldNb,
+          southbound: ROUTE_VIDEOS.chesterfieldSb,
         },
       },
     ],

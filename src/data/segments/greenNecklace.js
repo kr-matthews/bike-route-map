@@ -7,6 +7,7 @@ import {
   JONES_KEITH_SE_S,
   ST_ANDREWS_23RD_N,
   ST_ANDREWS_KEITH_N_W,
+  ST_GEORGES_23RD_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
@@ -160,6 +161,7 @@ export const GREEN_NECKLACE = [
       [49.32933, -123.06911],
       [49.33011, -123.06909],
       [49.33014, -123.06912],
+      ST_GEORGES_23RD_W,
       [49.33029, -123.06912],
       ST_ANDREWS_23RD_N,
     ],

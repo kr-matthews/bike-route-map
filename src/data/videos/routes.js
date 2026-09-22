@@ -569,6 +569,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Mar 05 2026"),
     minutes: 13,
   },
+  chesterfieldSb: {
+    id: "jdwZvFxO_3Y",
+    tlId: "PdOJWLWVW68",
+    date: new Date("Sep 17 2026"),
+    minutes: 10,
+  },
   chancellorEb: {
     id: "qL_i_AoHQ90",
     tlId: "vvwEn8yFUPM",

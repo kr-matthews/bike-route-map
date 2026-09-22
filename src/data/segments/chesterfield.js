@@ -14,6 +14,7 @@ import {
   CHESTERFIELD_ESPLANADE_SE,
   CHESTERFIELD_ESPLANADE_SW,
   JONES_24TH,
+  ST_GEORGES_23RD_W,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
@@ -31,7 +32,7 @@ const CHESTERFIELD_KEITH_N_E = [49.31846, -123.0764];
 const CHESTERFIELD_23RD = [49.33028, -123.07529];
 
 export const CHESTERFIELD = [
-  // informal connection to jones
+  // informal connections north end
   {
     description: "24th to jones",
     type: "quiet",
@@ -40,14 +41,23 @@ export const CHESTERFIELD = [
     videoIdsEndAtEnd: [ROUTE_VIDEOS.chesterfieldNb.id],
     positions: [CHESTERFIELD_23RD, [49.33124, -123.07525], JONES_24TH],
   },
+  {
+    description: "23rd to harry jerome",
+    type: "shared",
+    undesignated: true,
+    videoIds: [ROUTE_VIDEOS.chesterfieldSb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.chesterfieldSb.id],
+    positions: [CHESTERFIELD_23RD, ST_GEORGES_23RD_W],
+  },
 
   // south end
   {
     routeNames: [ROUTES.chesterfield.name],
     description: "south of spirit",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.chesterfieldNb.id],
+    videoIds: [ROUTE_VIDEOS.chesterfieldNb.id, ROUTE_VIDEOS.chesterfieldSb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.chesterfieldNb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.chesterfieldSb.id],
     positions: [
       [49.31051, -123.08357],
       [49.31096, -123.08402],
@@ -176,7 +186,7 @@ export const CHESTERFIELD = [
     routeNames: [ROUTES.chesterfield.name],
     description: "13th to 23rd",
     type: "shared",
-    videoIds: [ROUTE_VIDEOS.chesterfieldNb.id],
+    videoIds: [ROUTE_VIDEOS.chesterfieldSb.id, ROUTE_VIDEOS.chesterfieldNb.id],
     positions: [
       CHESTERFIELD_13TH_S,
       CHESTERFIELD_13TH_N,
@@ -192,6 +202,7 @@ export const CHESTERFIELD = [
     description: "sb 13th to 4th",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.chesterfieldSb.id],
     positions: [
       CHESTERFIELD_13TH_S,
       [49.31989, -123.0756],
@@ -215,6 +226,7 @@ export const CHESTERFIELD = [
     description: "sb 4th to before 3rd",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.chesterfieldSb.id],
     positions: [CHESTERFIELD_4TH_W, [49.31551, -123.07954], SB_PRE_3RD],
   },
   {
@@ -222,6 +234,7 @@ export const CHESTERFIELD = [
     description: "sb before 3rd",
     type: "shared",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.chesterfieldSb.id],
     positions: [SB_PRE_3RD, CHESTERFIELD_3RD_W],
   },
   {
@@ -229,6 +242,7 @@ export const CHESTERFIELD = [
     description: "sb 3rd to esplanade",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.chesterfieldSb.id],
     positions: [
       CHESTERFIELD_3RD_W,
       [49.31405, -123.08103],
@@ -242,6 +256,7 @@ export const CHESTERFIELD = [
     description: "sb esplanade",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.chesterfieldSb.id],
     positions: [
       SB_PRE_ESPLANADE,
       [49.31255, -123.08259],
@@ -256,6 +271,7 @@ export const CHESTERFIELD = [
     description: "sb esplanade to spirit",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.chesterfieldSb.id],
     positions: [
       SB_POST_ESPLANADE,
       [49.31193, -123.08319],
