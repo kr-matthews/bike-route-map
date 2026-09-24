@@ -65,7 +65,24 @@ const BLUE_MOUNTAIN_LOUGHEED_N = [49.23702, -122.87312];
 const AUSTIN_LOUGHEED_NW = [49.24872, -122.89757];
 const BEYOND_BETA_SHOULDER_END = [49.26645, -122.99871];
 
+const LAKE_CITY_LOUGHEED_NE = [49.25435, -122.93787];
+const LAKE_CITY_LOUGHEED_NW = [49.25445, -122.9382];
+const EAGLE_CREEK_LOUGHEED_NW = [49.25548, -122.94347];
+
 export const LOUGHEED = [
+  // lake city
+  {
+    description: "lake city mup",
+    type: "mixed",
+    positions: [
+      LAKE_CITY_LOUGHEED_NW,
+      [49.25456, -122.93823],
+      [49.25473, -122.93823],
+      [49.2548, -122.93817],
+      [49.25763, -122.93815],
+    ],
+  },
+
   // eastbound
   {
     description: "from cvg",
@@ -721,7 +738,7 @@ export const LOUGHEED = [
   },
   {
     routeNames: [ROUTES.lougheed.name],
-    description: "wb: gaglardi to beta-ish",
+    description: "wb: gaglardi to lake city",
     type: "shoulder",
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.lougheedWb.id],
@@ -740,7 +757,18 @@ export const LOUGHEED = [
       [49.25429, -122.92853],
       [49.25429, -122.93153],
       [49.2543, -122.93467],
-      [49.25435, -122.93787],
+      LAKE_CITY_LOUGHEED_NE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "wb: old lake city shoulder",
+    type: "shoulder",
+    oneWay: "required",
+    undesignated: true,
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
+    positions: [
+      LAKE_CITY_LOUGHEED_NE,
       [49.25436, -122.93815],
       [49.25442, -122.93901],
       [49.25451, -122.9398],
@@ -748,6 +776,44 @@ export const LOUGHEED = [
       [49.25476, -122.94108],
       [49.25494, -122.9417],
       [49.25527, -122.94283],
+      EAGLE_CREEK_LOUGHEED_NW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "wb: crossing lake city",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [LAKE_CITY_LOUGHEED_NE, LAKE_CITY_LOUGHEED_NW],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "wb: mup from lake city",
+    type: "mixed",
+    oneWay: "recommended",
+    positions: [
+      LAKE_CITY_LOUGHEED_NW,
+      [49.25443, -122.9383],
+      [49.25444, -122.9386],
+      [49.25456, -122.93963],
+      [49.25464, -122.94011],
+      [49.25472, -122.94058],
+      [49.25483, -122.9408],
+      [49.25492, -122.94144],
+      [49.2551, -122.94203],
+      [49.25513, -122.94235],
+      [49.25548, -122.94342],
+      EAGLE_CREEK_LOUGHEED_NW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "wb: lake city mup to beta-ish",
+    type: "shoulder",
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
+    positions: [
+      EAGLE_CREEK_LOUGHEED_NW,
       [49.25621, -122.94569],
       [49.25719, -122.9487],
       [49.25806, -122.95137],
