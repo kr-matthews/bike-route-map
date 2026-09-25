@@ -30,7 +30,8 @@ const S_OF_HASTINGS_OVERPASS = [49.28001, -122.96014];
 
 const EAST_OF_BOUNDARY_ADANAC = [49.27756, -123.0221];
 
-const FELL_FRANCES = [49.27916, -122.97556];
+const E_OF_HOLDOM_FRANCES = [49.2791, -122.98073];
+const FELL_FRANCES_NE = [49.27921, -122.9755];
 const KENSINGTON_UNION_SW = [49.27773, -122.97025];
 const KENSINGTON_UNION_E = [49.27782, -122.96982];
 const MALIBU_LANE_E = [49.28655, -122.95643];
@@ -92,7 +93,7 @@ export const FRANCES_UNION = [
   },
   {
     routeNames: [ROUTES.francesUnion.name],
-    description: "adanac to kensington park",
+    description: "adanac to holdom/kensington park",
     type: "quiet",
     videoIds: [ROUTE_VIDEOS.francesUnionEb.id, ROUTE_VIDEOS.francesUnionWb.id],
     positions: [
@@ -110,9 +111,43 @@ export const FRANCES_UNION = [
       [49.27913, -122.98785],
       [49.27911, -122.9837],
       [49.2791, -122.98096],
+      E_OF_HOLDOM_FRANCES,
+    ],
+  },
+  {
+    routeNames: [ROUTES.francesUnion.name],
+    description: "old: frances along kensington park",
+    type: "quiet",
+    undesignated: true,
+    videoIds: [ROUTE_VIDEOS.francesUnionEb.id, ROUTE_VIDEOS.francesUnionWb.id],
+    positions: [
+      E_OF_HOLDOM_FRANCES,
       [49.27911, -122.98031],
       [49.27919, -122.9792],
-      FELL_FRANCES,
+      [49.27919, -122.97681],
+      [49.27917, -122.97623],
+      [49.27916, -122.97558],
+      FELL_FRANCES_NE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.francesUnion.name],
+    description: "new: frances MUP along kensington park",
+    type: "mixed",
+    positions: [
+      E_OF_HOLDOM_FRANCES,
+      [49.27902, -122.98072],
+      [49.27901, -122.98064],
+      [49.27905, -122.98008],
+      [49.27911, -122.97953],
+      [49.27911, -122.97882],
+      [49.27913, -122.97829],
+      [49.27914, -122.97816],
+      [49.27912, -122.97766],
+      [49.2791, -122.97752],
+      [49.27911, -122.97609],
+      [49.27911, -122.9755],
+      FELL_FRANCES_NE,
     ],
   },
   {
@@ -121,8 +156,8 @@ export const FRANCES_UNION = [
     type: "mixed",
     videoIds: [ROUTE_VIDEOS.francesUnionEb.id, ROUTE_VIDEOS.francesUnionWb.id],
     positions: [
-      FELL_FRANCES,
-      [49.27924, -122.97542],
+      FELL_FRANCES_NE,
+      [49.27926, -122.97545],
       [49.27938, -122.97545],
       [49.27965, -122.97543],
       [49.27971, -122.97545],
