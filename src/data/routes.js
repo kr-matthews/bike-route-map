@@ -1345,6 +1345,12 @@ export const ROUTES = {
           westbound: ROUTE_VIDEOS.francesUnionWb,
         },
       },
+      {
+        name: "Burnaby North Secondary School MUP",
+        videos: {
+          clockwise: ROUTE_VIDEOS.burnabyNorthSecondaryCw,
+        },
+      },
     ],
     notes:
       "Several steep hills, especially at each end. Quiet, but some major road crossings are not great. The path through Kensington Park is not super clear.",

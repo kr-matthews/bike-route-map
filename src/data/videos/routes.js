@@ -373,6 +373,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("May 19 2026"),
     minutes: 25,
   },
+  burnabyNorthSecondaryCw: {
+    id: "deD5nsuVLUo",
+    date: new Date("Sep 23 2026"),
+    minutes: 2,
+  },
   burrardNb: {
     id: "62m58RRdHcg",
     date: new Date("Aug 12 2023"),
