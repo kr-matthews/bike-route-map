@@ -361,7 +361,14 @@ export const ROUTES = {
   alpha: {
     name: "Alpha Ave",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: { southbound: ROUTE_VIDEOS.alphaSb } }],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.alphaNb,
+          southbound: ROUTE_VIDEOS.alphaSb,
+        },
+      },
+    ],
     notes:
       "New in 2025. A short shared use path on a gentle hill. It crosses a few driveways.",
   },

@@ -85,6 +85,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Apr 30 2025"),
     minutes: 0,
   },
+  alphaNb: {
+    id: "SSdhf4sVqys",
+    date: new Date("Sep 23 2026"),
+    minutes: 1,
+  },
   alphaSb: {
     id: "WiR9Shdi16U",
     date: new Date("Feb 26 2025"),

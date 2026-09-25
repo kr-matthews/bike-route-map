@@ -7,9 +7,11 @@ export const ALPHA = [
     routeNames: [ROUTES.alpha.name],
     description: "primary",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.alphaSb.id],
+    videoIds: [ROUTE_VIDEOS.alphaNb.id, ROUTE_VIDEOS.alphaSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.alphaNb.id],
     videoIdsStartAtEnd: [ROUTE_VIDEOS.alphaSb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.alphaSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.alphaNb.id],
     positions: [
       [49.27567, -123.00021],
       [49.27687, -123.00018],
