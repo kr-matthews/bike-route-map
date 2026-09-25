@@ -700,6 +700,10 @@ export const ROUTES = {
       {
         videos: { northbound: ROUTE_VIDEOS.burnabyMtnUrbanTrailNb },
       },
+      {
+        name: "Broadway MUP",
+        videos: { eastbound: ROUTE_VIDEOS.broadwayBurnabyEb },
+      },
     ],
     notes:
       "A gradual climb/descent roughly along the southwest edge of Burnaby Mountain.",

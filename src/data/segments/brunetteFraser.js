@@ -7,6 +7,7 @@ import {
   CARIBOO_GOVERNMENT,
   CLIFF_BRUNETTE_FRASER,
   COLUMBIA_CUMBERLAND_SW,
+  SPERLING_BROADWAY_E,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
@@ -20,11 +21,35 @@ const SAPPERTON_LANDING = [49.21816, -122.893];
 const BRUNETTE_FRASER_CUMBERLAND = [49.22047, -122.8922];
 const BRUNETTE_FRASER_EXPO_W = [49.22047, -122.8927];
 
+const BAINBRIDGE_BROADWAY_NW = [49.26148, -122.95605];
+
 export const BRUNETTE_FRASER = [
   {
-    description: "broadway",
-    type: "mixed",
+    description: "broadway gap",
+    type: "shared",
+    undesignated: true,
+    videoIds: [ROUTE_VIDEOS.broadwayBurnabyEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.broadwayBurnabyEb.id],
     positions: [
+      SPERLING_BROADWAY_E,
+      [49.26143, -122.96289],
+      [49.26143, -122.9627],
+      [49.262, -122.95909],
+      [49.26203, -122.95876],
+      [49.26201, -122.9585],
+      [49.26193, -122.95817],
+      [49.26155, -122.95699],
+      [49.26139, -122.95609],
+      BAINBRIDGE_BROADWAY_NW,
+    ],
+  },
+  {
+    description: "broadway mup",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.broadwayBurnabyEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.broadwayBurnabyEb.id],
+    positions: [
+      BAINBRIDGE_BROADWAY_NW,
       [49.26147, -122.95599],
       [49.26133, -122.95523],
       [49.26114, -122.95407],

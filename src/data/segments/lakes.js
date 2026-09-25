@@ -9,6 +9,7 @@ import {
   MARY_12TH,
   MARY_16TH,
   MARY_19TH,
+  SPERLING_BROADWAY_E,
   SPERLING_DEER_LAKE,
   SPERLING_JOE_SAKIC_N,
   SPERLING_LOUGHEED_NE,
@@ -246,6 +247,7 @@ export const LAKES = [
     type: "mixed",
     positions: [
       SPERLING_BROADWAY_SE,
+      SPERLING_BROADWAY_E,
       [49.26166, -122.96457],
       [49.26431, -122.96454],
       SPERLING_ADAIR_E,
