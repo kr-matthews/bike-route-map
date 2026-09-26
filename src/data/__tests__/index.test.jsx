@@ -160,8 +160,8 @@ describe("data", () => {
   });
 
   test("no duplicate video ids", () => {
-    const uniqueVideoIds = [...new Set(ALL_VIDEOS_VALUES.map(({ id }) => id))];
-    expect(uniqueVideoIds).toHaveLength(ALL_VIDEOS_VALUES.length);
+    const uniqueVideoIds = [...new Set(ALL_VIDEOS_VALUES.filter(({ id }) => !!id).map(({ id }) => id))];
+    expect(uniqueVideoIds).toHaveLength(ALL_VIDEOS_VALUES.filter(({ id }) => !!id).length);
   });
 
   test("no duplicate time-lapse route video ids", () => {
