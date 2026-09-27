@@ -555,4 +555,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.31931, -123.0576],
     region: REGIONS.northVancouver,
   },
+  francesUnionHoldom26: {
+    id: "CiRuEgdq7uM",
+    title: "Frances Union, Holdom → Fell",
+    routeNames: [ROUTES.francesUnion.name],
+    direction: "eastbound",
+    date: new Date("Sep 23 2026"),
+    minutes: 1,
+    position: [49.27911, -122.97846],
+    region: REGIONS.burnaby,
+  },
 };
