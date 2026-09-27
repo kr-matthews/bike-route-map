@@ -565,4 +565,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.27911, -122.97846],
     region: REGIONS.burnaby,
   },
+  lougheedLakeCity26: {
+    id: "RW-lJ9FpBVc",
+    title: "Lougheed Hwy @ Lake City Way Station",
+    routeNames: [ROUTES.lougheed.name],
+    direction: "westbound",
+    date: new Date("Sep 23 2026"),
+    minutes: 1,
+    position: [49.25451, -122.93923],
+    region: REGIONS.burnaby,
+  },
 };
