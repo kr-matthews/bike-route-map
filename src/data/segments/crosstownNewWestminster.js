@@ -110,7 +110,10 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     description: "sixth sb",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [ROUTE_VIDEOS.uptownDowntownSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.memorialParkEb.id,
+      ROUTE_VIDEOS.uptownDowntownSb.id,
+    ],
     positions: [
       SIXTH_NEW_WESTMINSTER_SECONDARY_W,
       [49.21599, -122.92401],
@@ -122,7 +125,10 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     description: "sixth sb crossing seventh",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [ROUTE_VIDEOS.uptownDowntownSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.memorialParkEb.id,
+      ROUTE_VIDEOS.uptownDowntownSb.id,
+    ],
     positions: [SIXTH_7TH_NW, SIXTH_7TH_SW],
   },
 
@@ -381,7 +387,12 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     description: "6th to 5th",
     type: "dedicated",
     oneWay: "required",
-    videoIds: [ROUTE_VIDEOS.crosstownNWEb.id, ROUTE_VIDEOS.uptownDowntownSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.crosstownNWEb.id,
+      ROUTE_VIDEOS.memorialParkEb.id,
+      ROUTE_VIDEOS.uptownDowntownSb.id,
+    ],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.memorialParkEb.id],
     positions: [SIXTH_7TH_SW, SIXTH_7TH_SE, [49.21505, -122.92084], FIFTH_7TH],
   },
   {
