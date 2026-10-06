@@ -1111,7 +1111,7 @@ export const ROUTES = {
         videos: { northbound: ROUTE_VIDEOS.crosstownNWExtNb },
       },
       {
-        name: "Sixth St connection to High School",
+        name: "Sixth St connection to New Westminster Secondary",
         videos: { northbound: ROUTE_VIDEOS.sixthNwNb },
       },
     ],
@@ -2124,7 +2124,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "The west end has a steep hill. It's a 'greenway' but is basically entirely on-street, though mostly quiet. The east end used to connect to the school, but the school was rebuilt on the other side of the property and is no longer accessible from here. The city plans to add a MUP at the east end to connect down to Moody Park.",
+      "The west end has a steep hill. It's a 'greenway' but is basically entirely on-street, though mostly quiet. The east end has a new MUP through Memorial Park to connect to New Westminster Secondary. The city plans to add a MUP at the east end to connect down to Moody Park, although it's already legal to use the sidewalk there.",
   },
   lougheed: {
     name: "Lougheed Hwy",
