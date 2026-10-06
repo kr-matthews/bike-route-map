@@ -35,6 +35,8 @@ export const LONDON_DUBLIN_GREENWAY = [
   {
     description: "memorial park",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.memorialParkEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.memorialParkEb.id],
     positions: [
       EIGHTH_DUBLIN_SE,
       [49.21548, -122.92934],
@@ -58,7 +60,10 @@ export const LONDON_DUBLIN_GREENWAY = [
   {
     description: "school",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.uptownDowntownSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.memorialParkEb.id,
+      ROUTE_VIDEOS.uptownDowntownSb.id,
+    ],
     videoIdsStartAtStart: [ROUTE_VIDEOS.uptownDowntownSb.id],
     positions: [NEW_WESTMINSTER_SECONDARY_W, SIXTH_NEW_WESTMINSTER_SECONDARY_W],
   },

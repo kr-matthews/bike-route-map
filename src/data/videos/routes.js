@@ -1603,6 +1603,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Nov 6 2024"),
     minutes: 11,
   },
+  memorialParkEb: {
+    id: "Ak28zcqMIMI",
+    date: new Date("Oct 5 2026"),
+    minutes: 4,
+  },
   metrotownCcw: {
     id: "EJCsejPUpnA",
     date: new Date("Jan 23 2024"),
