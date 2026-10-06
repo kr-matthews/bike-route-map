@@ -19,7 +19,7 @@ const CANFOR_BRUNETTE_RIVER_S = [49.22863, -122.87948];
 
 const SAPPERTON_LANDING = [49.21816, -122.893];
 const BRUNETTE_FRASER_CUMBERLAND = [49.22047, -122.8922];
-const BRUNETTE_FRASER_EXPO_W = [49.22047, -122.8927];
+const W_OF_CUMBERLAND_RIVER_W = [49.22047, -122.89206];
 
 const BAINBRIDGE_BROADWAY_NW = [49.26148, -122.95605];
 
@@ -123,21 +123,23 @@ export const BRUNETTE_FRASER = [
     ],
   },
   {
-    description: "cumberland connection with cvg: part 1",
+    description: "cumberland mup connection with cvg",
     type: "mixed",
     positions: [
       COLUMBIA_CUMBERLAND_SW,
-      [49.22032, -122.89316],
-      [49.22032, -122.89291],
+      [49.2203, -122.89316],
+      [49.2203, -122.8929],
       [49.22001, -122.89292],
       [49.22, -122.89282],
-      BRUNETTE_FRASER_EXPO_W,
+      [49.22036, -122.89274],
+      [49.2204, -122.8927],
+      [49.22043, -122.89263],
+      [49.22043, -122.89255],
+      [49.22042, -122.89228],
+      [49.22041, -122.89225],
+      [49.2204, -122.89207],
+      W_OF_CUMBERLAND_RIVER_W,
     ],
-  },
-  {
-    description: "cumberland connection with cvg: part 2",
-    type: "quiet",
-    positions: [BRUNETTE_FRASER_EXPO_W, BRUNETTE_FRASER_CUMBERLAND],
   },
   {
     routeNames: [ROUTES.brunetteFraser.name],
@@ -162,7 +164,6 @@ export const BRUNETTE_FRASER = [
     routeNames: [ROUTES.brunetteFraser.name],
     description: "sapperton landing to cumberland",
     type: "quiet",
-    elevation: 0.5,
     videoIds: [ROUTE_VIDEOS.brunetteFraserSb.id],
     positions: [
       SAPPERTON_LANDING,
@@ -170,6 +171,17 @@ export const BRUNETTE_FRASER = [
       [49.21972, -122.89249],
       [49.21986, -122.89234],
       BRUNETTE_FRASER_CUMBERLAND,
+    ],
+  },
+  {
+    routeNames: [ROUTES.brunetteFraser.name],
+    description: "cumberland, w of river",
+    type: "mixed",
+    elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.brunetteFraserSb.id],
+    positions: [
+      BRUNETTE_FRASER_CUMBERLAND,
+      W_OF_CUMBERLAND_RIVER_W,
       BRUNETTE_RIVER_CUMBERLAND_W,
     ],
   },
