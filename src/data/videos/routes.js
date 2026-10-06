@@ -131,7 +131,7 @@ export const ROUTE_VIDEOS = {
   barnetEb: {
     id: "SK5B60zclAY",
     tlId: "LNIkVVktJwQ",
-    date: new Date("Oct 7 2024"),
+    date: new Date("Oct 07 2024"),
     minutes: 20,
   },
   barnetWb: {
@@ -253,12 +253,12 @@ export const ROUTE_VIDEOS = {
   bigBendSb: {
     id: "YAF1x03OYcM",
     tlId: "ZnXqrbwJ4qY",
-    date: new Date("Mar 7 2025"),
+    date: new Date("Mar 07 2025"),
     minutes: 14,
   },
   bigBendTrappEb: {
     id: "PwXQ7BqFul4",
-    date: new Date("Mar 7 2025"),
+    date: new Date("Mar 07 2025"),
     minutes: 1,
   },
   blancaNb: {
@@ -391,7 +391,7 @@ export const ROUTE_VIDEOS = {
   },
   burrardBridgeNb: {
     id: "eoUBB6yuz1M",
-    date: new Date("Mar 3 2025"),
+    date: new Date("Mar 03 2025"),
     minutes: 6,
   },
   burrardBridgeSb: {
@@ -412,7 +412,7 @@ export const ROUTE_VIDEOS = {
   byrneCreekWb: {
     id: "MZRkt5flels",
     tlId: "Bxp_vAh_nr8",
-    date: new Date("Mar 7 2025"),
+    date: new Date("Mar 07 2025"),
     minutes: 9,
   },
   cambieNb: {
@@ -801,7 +801,7 @@ export const ROUTE_VIDEOS = {
   fergusonEb: {
     id: "Oovz9mKC5m4",
     tlId: "YypdawEqw6E",
-    date: new Date("Nov 6 2024"),
+    date: new Date("Nov 06 2024"),
     minutes: 15,
   },
   fergusonWb: {
@@ -819,7 +819,7 @@ export const ROUTE_VIDEOS = {
   fergusonPathWb: {
     id: "k8qPxIMJVos",
     tlId: "XJ8duP7vFtc",
-    date: new Date("Nov 6 2024"),
+    date: new Date("Nov 06 2024"),
     minutes: 6,
   },
   fifteenthEb: {
@@ -1008,7 +1008,7 @@ export const ROUTE_VIDEOS = {
   gatensburySb: {
     id: "JW2BxHwhgmA",
     tlId: "ObZaM3PRshY",
-    date: new Date("Oct 7 2024"),
+    date: new Date("Oct 07 2024"),
     minutes: 17,
   },
   gilbertNb: {
@@ -1127,7 +1127,7 @@ export const ROUTE_VIDEOS = {
   },
   grauerEb: {
     id: "FobrXUj-2eg",
-    date: new Date("Nov 6 2024"),
+    date: new Date("Nov 06 2024"),
     minutes: 3,
   },
   grauerWb: {
@@ -1600,12 +1600,12 @@ export const ROUTE_VIDEOS = {
   mcdonaldBeachTrailWb: {
     id: "hO_xU5C8E8Y",
     tlId: "_1O1k5chmIU",
-    date: new Date("Nov 6 2024"),
+    date: new Date("Nov 06 2024"),
     minutes: 11,
   },
   memorialParkEb: {
     id: "Ak28zcqMIMI",
-    date: new Date("Oct 5 2026"),
+    date: new Date("Oct 05 2026"),
     minutes: 4,
   },
   metrotownCcw: {
@@ -2416,7 +2416,7 @@ export const ROUTE_VIDEOS = {
   stJohnsEb: {
     id: "qjo0Ev2F8B8",
     tlId: "vTsBUeFXdOQ",
-    date: new Date("Oct 7 2024"),
+    date: new Date("Oct 07 2024"),
     minutes: 7,
   },
   stJohnsWb: {
@@ -2500,12 +2500,12 @@ export const ROUTE_VIDEOS = {
   },
   templetonNb: {
     id: "IaMY3iTsISs",
-    date: new Date("Nov 6 2024"),
+    date: new Date("Nov 06 2024"),
     minutes: 2,
   },
   templetonSb: {
     id: "L66M8xQKzkM",
-    date: new Date("Nov 6 2024"),
+    date: new Date("Nov 06 2024"),
     minutes: 3,
   },
   tenthEb: {
