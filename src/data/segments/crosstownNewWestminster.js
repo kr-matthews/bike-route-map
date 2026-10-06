@@ -35,7 +35,7 @@ const POST_OVERPASS_E = [49.2208, -122.90967];
 const W_OF_CUMBERLAND_7TH = [49.22257, -122.90696];
 const CUMBERLAND_7TH = [49.22276, -122.90658];
 const MCBRIDE_6TH_N = [49.21975, -122.90836];
-const CUMBERLAND_6TH_NW = [49.22147, -122.90493];
+const CUMBERLAND_6TH_N = [49.22152, -122.90504];
 const RICHMOND_SHILES = [49.22518, -122.89867];
 const RICHMOND_SHERBROOKE = [49.22797, -122.89861];
 const RICHMOND_EIGHTH_N = [49.22963, -122.89855];
@@ -51,6 +51,8 @@ const SIXTH_7TH_NE = [49.21456, -122.92199];
 const SIXTH_7TH_NW = [49.21448, -122.92214];
 const SIXTH_7TH_SE = [49.21448, -122.92188];
 const SIXTH_7TH_SW = [49.21439, -122.92203];
+
+const FIRE_HALL_1 = [49.22013, -122.90764];
 
 export const CROSSTOWN_NEW_WESTMINSTER = [
   // moody
@@ -516,8 +518,8 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     type: "shared",
     positions: [
       CUMBERLAND_7TH,
-      [49.22153, -122.90506],
-      CUMBERLAND_6TH_NW,
+      CUMBERLAND_6TH_N,
+      [49.22147, -122.90493],
       [49.22142, -122.90479],
       [49.22064, -122.90246],
       [49.2206, -122.90229],
@@ -539,15 +541,22 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     ],
   },
   {
-    description: "alt: 6th to cumberland",
+    description: "alt: 6th, at fire hall",
     type: "mixed",
+    positions: [MCBRIDE_6TH_N, FIRE_HALL_1],
+  },
+  {
+    description: "alt: 6th, at aquatic centre",
+    type: "dedicated",
     positions: [
-      MCBRIDE_6TH_N,
-      [49.22013, -122.90764],
-      [49.22025, -122.90738],
-      [49.22086, -122.90619],
-      [49.22145, -122.90509],
-      CUMBERLAND_6TH_NW,
+      FIRE_HALL_1,
+      [49.22022, -122.90739],
+      [49.22134, -122.90528],
+      [49.22139, -122.90524],
+      CUMBERLAND_6TH_N,
+      [49.22157, -122.90494],
+      [49.2216, -122.90484],
+      [49.22187, -122.90457],
     ],
   },
 ];
