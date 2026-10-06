@@ -622,6 +622,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Aug 31 2023"),
     minutes: 2,
   },
+  columbiaSappertonLandingEb: {
+    id: "JH2-n0FvaTM",
+    date: new Date("Oct 05 2026"),
+    minutes: 1,
+  },
   comoxHelmckenEb: {
     id: "_u16UGWH4VQ",
     date: new Date("Jun 16 2023"),

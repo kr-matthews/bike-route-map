@@ -125,6 +125,8 @@ export const BRUNETTE_FRASER = [
   {
     description: "cumberland mup connection with cvg",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.columbiaSappertonLandingEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.columbiaSappertonLandingEb.id],
     positions: [
       COLUMBIA_CUMBERLAND_SW,
       [49.2203, -122.89316],
@@ -175,22 +177,32 @@ export const BRUNETTE_FRASER = [
   },
   {
     routeNames: [ROUTES.brunetteFraser.name],
-    description: "cumberland, w of river",
+    description: "cumberland, w of river 1",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.brunetteFraserSb.id],
+    positions: [BRUNETTE_FRASER_CUMBERLAND, W_OF_CUMBERLAND_RIVER_W],
+  },
+  {
+    routeNames: [ROUTES.brunetteFraser.name],
+    description: "cumberland, w of river 2",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [ROUTE_VIDEOS.brunetteFraserSb.id],
-    positions: [
-      BRUNETTE_FRASER_CUMBERLAND,
-      W_OF_CUMBERLAND_RIVER_W,
-      BRUNETTE_RIVER_CUMBERLAND_W,
+    videoIds: [
+      ROUTE_VIDEOS.brunetteFraserSb.id,
+      ROUTE_VIDEOS.columbiaSappertonLandingEb.id,
     ],
+    positions: [W_OF_CUMBERLAND_RIVER_W, BRUNETTE_RIVER_CUMBERLAND_W],
   },
   {
     routeNames: [ROUTES.brunetteFraser.name],
     description: "cumberland crossing brunette river",
     type: "mixed",
     elevation: 1,
-    videoIds: [ROUTE_VIDEOS.brunetteFraserSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.brunetteFraserSb.id,
+      ROUTE_VIDEOS.columbiaSappertonLandingEb.id,
+    ],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.columbiaSappertonLandingEb.id],
     positions: [BRUNETTE_RIVER_CUMBERLAND_W, BRUNETTE_RIVER_CUMBERLAND_E],
   },
   {

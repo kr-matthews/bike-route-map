@@ -652,7 +652,13 @@ export const ROUTES = {
     name: "Brunette Fraser Regional Greenway",
     regions: [REGIONS.burnaby, REGIONS.newWestminster],
     shortName: "Brunette Fraser Gr.",
-    legs: [{ videos: { southbound: ROUTE_VIDEOS.brunetteFraserSb } }],
+    legs: [
+      { videos: { southbound: ROUTE_VIDEOS.brunetteFraserSb } },
+      {
+        name: "Connection to CVG at Cumberland",
+        videos: { eastbound: ROUTE_VIDEOS.columbiaSappertonLandingEb },
+      },
+    ],
     notes:
       "The signage for this route is very lacking. Its almost impossible to follow without taking a wrong turn. Lots of steep hills. The south end is a dead-end, but eventually it will hopefully continue to Quayside.",
   },
