@@ -764,7 +764,9 @@ export const ROUTES = {
       { videos: { westbound: ROUTE_VIDEOS.byrneCreekWb } },
       {
         name: "Connection with BC Parkway via Southridge Dr MUP",
-        videos: {},
+        videos: {
+          westbound: ROUTE_VIDEOS.southridgeWb,
+        },
       },
       {
         name: "Connection with BC Parkway via Mission Ave/Taylor Park MUP",

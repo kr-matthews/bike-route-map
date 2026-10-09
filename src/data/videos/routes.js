@@ -2374,6 +2374,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("May 09 2024"),
     minutes: 18,
   },
+  southridgeWb: {
+    id: "wdGhbMABACI",
+    date: new Date("Oct 05 2026"),
+    minutes: 2,
+  },
   spiritTrailEb: {
     id: "UqpR8zOPDuQ",
     tlId: "PYdTvuyIhxc",

@@ -59,6 +59,8 @@ export const BYRNE_CREEK = [
   {
     description: "southridge connection",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.southridgeWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.southridgeWb.id],
     positions: [
       BYRNEPARK_SOUTHRIDGE,
       [49.20583, -122.96831],

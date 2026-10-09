@@ -912,9 +912,8 @@ export const BC_PARKWAY = [
   },
   {
     routeNames: [ROUTES.bcParkway.name],
-    description: "school overpass branch to overpass",
+    description: "school overpass branch to southridge switchbacks",
     type: "mixed",
-    elevation: 0.5,
     videoIds: [
       ROUTE_VIDEOS.bcParkwayBurnabyEb.id,
       ROUTE_VIDEOS.bcParkwayBurnabyWb.id,
@@ -935,8 +934,19 @@ export const BC_PARKWAY = [
       BC_PARKWAY_MISSION,
       [49.20547, -122.9585],
       BC_PARKWAY_SOUTHRIDGE_TRAIL,
-      SOUTHRIDGE_OVERPASS_N,
     ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "just n of southridge overpass",
+    type: "mixed",
+    elevation: 0.5,
+    videoIds: [
+      ROUTE_VIDEOS.bcParkwayBurnabyEb.id,
+      ROUTE_VIDEOS.southridgeWb.id,
+      ROUTE_VIDEOS.bcParkwayBurnabyWb.id,
+    ],
+    positions: [BC_PARKWAY_SOUTHRIDGE_TRAIL, SOUTHRIDGE_OVERPASS_N],
   },
   {
     routeNames: [ROUTES.bcParkway.name],
@@ -945,8 +955,10 @@ export const BC_PARKWAY = [
     elevation: 1,
     videoIds: [
       ROUTE_VIDEOS.bcParkwayBurnabyEb.id,
+      ROUTE_VIDEOS.southridgeWb.id,
       ROUTE_VIDEOS.bcParkwayBurnabyWb.id,
     ],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.southridgeWb.id],
     positions: [SOUTHRIDGE_OVERPASS_N, SOUTHRIDGE_OVERPASS_S],
   },
   {
