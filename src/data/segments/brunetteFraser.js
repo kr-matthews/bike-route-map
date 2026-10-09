@@ -125,8 +125,8 @@ export const BRUNETTE_FRASER = [
   {
     description: "cumberland mup connection with cvg",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.columbiaSappertonLandingEb.id],
-    videoIdsStartAtStart: [ROUTE_VIDEOS.columbiaSappertonLandingEb.id],
+    videoIds: [ROUTE_VIDEOS.cumberlandSappertonLandingEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.cumberlandSappertonLandingEb.id],
     positions: [
       COLUMBIA_CUMBERLAND_SW,
       [49.2203, -122.89316],
@@ -189,7 +189,7 @@ export const BRUNETTE_FRASER = [
     elevation: 0.5,
     videoIds: [
       ROUTE_VIDEOS.brunetteFraserSb.id,
-      ROUTE_VIDEOS.columbiaSappertonLandingEb.id,
+      ROUTE_VIDEOS.cumberlandSappertonLandingEb.id,
     ],
     positions: [W_OF_CUMBERLAND_RIVER_W, BRUNETTE_RIVER_CUMBERLAND_W],
   },
@@ -200,9 +200,9 @@ export const BRUNETTE_FRASER = [
     elevation: 1,
     videoIds: [
       ROUTE_VIDEOS.brunetteFraserSb.id,
-      ROUTE_VIDEOS.columbiaSappertonLandingEb.id,
+      ROUTE_VIDEOS.cumberlandSappertonLandingEb.id,
     ],
-    videoIdsEndAtEnd: [ROUTE_VIDEOS.columbiaSappertonLandingEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.cumberlandSappertonLandingEb.id],
     positions: [BRUNETTE_RIVER_CUMBERLAND_W, BRUNETTE_RIVER_CUMBERLAND_E],
   },
   {

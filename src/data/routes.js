@@ -656,7 +656,7 @@ export const ROUTES = {
       { videos: { southbound: ROUTE_VIDEOS.brunetteFraserSb } },
       {
         name: "Connection to CVG at Cumberland",
-        videos: { eastbound: ROUTE_VIDEOS.columbiaSappertonLandingEb },
+        videos: { eastbound: ROUTE_VIDEOS.cumberlandSappertonLandingEb },
       },
     ],
     notes:

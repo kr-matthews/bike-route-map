@@ -622,11 +622,6 @@ export const ROUTE_VIDEOS = {
     date: new Date("Aug 31 2023"),
     minutes: 2,
   },
-  columbiaSappertonLandingEb: {
-    id: "JH2-n0FvaTM",
-    date: new Date("Oct 05 2026"),
-    minutes: 1,
-  },
   comoxHelmckenEb: {
     id: "_u16UGWH4VQ",
     date: new Date("Jun 16 2023"),
@@ -687,6 +682,11 @@ export const ROUTE_VIDEOS = {
     tlId: "ppo7N7Tmhds",
     date: new Date("May 14 2024"),
     minutes: 14,
+  },
+  cumberlandSappertonLandingEb: {
+    id: "JH2-n0FvaTM",
+    date: new Date("Oct 05 2026"),
+    minutes: 1,
   },
   cypressNb: {
     id: "6Gyv4URZdvQ",
