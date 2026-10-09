@@ -1645,7 +1645,13 @@ export const ROUTES = {
   greenNecklace: {
     name: "Green Necklace",
     regions: [REGIONS.northVancouver],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: {
+          clockwise: ROUTE_VIDEOS.greenNecklaceCw,
+        },
+      },
+    ],
     notes:
       "A MUP circling through the city. The part through Grand Boulevard Park has had some adjustments and may change again.",
   },

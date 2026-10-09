@@ -40,6 +40,8 @@ export const GREEN_NECKLACE = [
     routeNames: [ROUTES.greenNecklace.name],
     description: "grand blvd to st georges",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.greenNecklaceCw.id],
+    videoIdsLoopAtStart: [ROUTE_VIDEOS.greenNecklaceCw.id],
     positions: [
       GRAND_BLVD_W_KEITH_NE,
       GRAND_BLVD_W_KEITH_NW,
@@ -73,6 +75,7 @@ export const GREEN_NECKLACE = [
     routeNames: [ROUTES.greenNecklace.name],
     description: "victoria park, n",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.greenNecklaceCw.id],
     positions: [
       ST_GEORGES_KEITH_W_N,
       [49.3158, -123.07086],
@@ -122,6 +125,7 @@ export const GREEN_NECKLACE = [
     routeNames: [ROUTES.greenNecklace.name],
     description: "victoria park to jones/21st",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.greenNecklaceCw.id],
     positions: [
       W_VICTORIA_KEITH,
       [49.31792, -123.07583],
@@ -151,6 +155,7 @@ export const GREEN_NECKLACE = [
     routeNames: [ROUTES.greenNecklace.name],
     description: "jones to st andrews: 21st, 22nd, 23rd",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.greenNecklaceCw.id],
     positions: [
       JONES_21ST_SE,
       [49.32833, -123.0812],
@@ -188,6 +193,7 @@ export const GREEN_NECKLACE = [
     routeNames: [ROUTES.greenNecklace.name],
     description: "st andrews to grand blvd park: 23rd, grand blvd, 19th",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.greenNecklaceCw.id],
     positions: [
       ST_ANDREWS_23RD_N,
       RIDGEWAY_23RD_N,
@@ -227,14 +233,14 @@ export const GREEN_NECKLACE = [
     routeNames: [ROUTES.greenNecklace.name],
     description: "crossing 19th",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.grandBlvdNb.id],
+    videoIds: [ROUTE_VIDEOS.greenNecklaceCw.id, ROUTE_VIDEOS.grandBlvdNb.id],
     positions: [GRAND_BLVD_W_19TH_NE, GRAND_BLVD_W_19TH_SE],
   },
   {
     routeNames: [ROUTES.greenNecklace.name],
     description: "grand blvd w",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.grandBlvdNb.id],
+    videoIds: [ROUTE_VIDEOS.greenNecklaceCw.id, ROUTE_VIDEOS.grandBlvdNb.id],
     positions: [
       GRAND_BLVD_W_KEITH_NE,
       [49.31366, -123.05769],

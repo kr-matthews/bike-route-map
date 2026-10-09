@@ -1166,6 +1166,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Aug 09 2025"),
     minutes: 2,
   },
+  greenNecklaceCw: {
+    id: "lHocRyyngbI",
+    tlId: "3sY4dyny_CA",
+    date: new Date("Oct 07 2026"),
+    minutes: 24,
+  },
   guildfordMurrayEb: {
     id: "yfNWyB0D8IA",
     tlId: "KAk_lPp47xg",
