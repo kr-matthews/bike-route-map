@@ -16,6 +16,8 @@ export const E_KEITH = [
     description: "eb before st andrews",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.eKeithEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.eKeithEb.id],
     positions: [
       [49.3143, -123.06796],
       [49.31425, -123.06785],
@@ -27,6 +29,7 @@ export const E_KEITH = [
     description: "eb st andrews to grand blvd w",
     type: "painted",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.eKeithEb.id],
     positions: [
       ST_ANDREWS_KEITH_S,
       [49.31411, -123.06749],
@@ -46,6 +49,8 @@ export const E_KEITH = [
     description: "eb mup",
     type: "mixed",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.eKeithEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.eKeithEb.id],
     positions: [GRAND_BLVD_W_KEITH_S_W, GRAND_BLVD_W_KEITH_SE],
   },
 

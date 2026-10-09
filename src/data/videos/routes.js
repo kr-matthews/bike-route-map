@@ -793,6 +793,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Oct 17 2024"),
     minutes: 1,
   },
+  eKeithEb: {
+    id: "CGrvhhpXED4",
+    date: new Date("Oct 07 2026"),
+    minutes: 2,
+  },
   eKeithWb: {
     id: "2mKXiVwDsLI",
     date: new Date("Apr 15 2026"),

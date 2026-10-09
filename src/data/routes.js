@@ -1937,6 +1937,7 @@ export const ROUTES = {
       {
         name: "Between St Andrews & Grand Blvd",
         videos: {
+          eastbound: ROUTE_VIDEOS.eKeithEb,
           westbound: ROUTE_VIDEOS.eKeithWb,
         },
       },
