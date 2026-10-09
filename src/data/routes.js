@@ -1111,7 +1111,12 @@ export const ROUTES = {
     shortName: "Crosstown Gr.",
     regions: [REGIONS.newWestminster],
     legs: [
-      { videos: { eastbound: ROUTE_VIDEOS.crosstownNWEb } },
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.crosstownNWEb,
+          westbound: ROUTE_VIDEOS.crosstownNWWb,
+        },
+      },
       {
         name: "Richmond St/Surrey St connection to Burnaby",
         videos: { northbound: ROUTE_VIDEOS.crosstownNWExtNb },

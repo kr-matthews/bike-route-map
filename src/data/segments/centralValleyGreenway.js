@@ -1169,6 +1169,8 @@ export const CENTRAL_VALLEY_GREENWAY = [
   {
     description: "brunette fraser alt connection",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.crosstownNWWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.crosstownNWWb.id],
     positions: [BRUNETTE_FRASER_CVG_SE, BRUNETTE_FRASER_CVG_NE],
   },
   {
@@ -1195,7 +1197,10 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
     description: "brunette fraser split to garrett",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.centralValleyNWNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.crosstownNWWb.id,
+      ROUTE_VIDEOS.centralValleyNWNb.id,
+    ],
     positions: [
       BRUNETTE_FRASER_CVG_SE,
       [49.23325, -122.88862],
@@ -1210,7 +1215,10 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
     description: "garrett to sherbrooke",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.centralValleyNWNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.crosstownNWWb.id,
+      ROUTE_VIDEOS.centralValleyNWNb.id,
+    ],
     positions: [
       GARRETT_CVG,
       [49.23318, -122.88888],
@@ -1247,6 +1255,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
     description: "sherbrooke: fader to columbia",
     type: "dedicated",
+    videoIds: [ROUTE_VIDEOS.crosstownNWWb.id],
     positions: [FADER_SHERBROOKE_N, COLUMBIA_SHERBROOKE_NE],
   },
   {
@@ -1309,6 +1318,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     type: "dedicated",
     oneWay: "required",
     hideArrows: true,
+    videoIds: [ROUTE_VIDEOS.crosstownNWWb.id],
     positions: [COLUMBIA_SHERBROOKE_NE, COLUMBIA_SHERBROOKE_W],
   },
   {

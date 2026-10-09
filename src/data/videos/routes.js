@@ -671,6 +671,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Mar 25 2025"),
     minutes: 24,
   },
+  crosstownNWWb: {
+    id: "SdX5KK477ZY",
+    tlId: "uaqZg7bKOow",
+    date: new Date("Oct 05 2026"),
+    minutes: 28,
+  },
   crosstownNWExtNb: {
     id: "5cFYWO-sHAo",
     date: new Date("Mar 25 2025"),

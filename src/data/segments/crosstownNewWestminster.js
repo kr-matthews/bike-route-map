@@ -167,12 +167,14 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     type: "mixed",
     videoIds: [
       ROUTE_VIDEOS.bcParkway22ndStation.id,
+      ROUTE_VIDEOS.crosstownNWWb.id,
       ROUTE_VIDEOS.crosstownNWEb.id,
     ],
     videoIdsStartAtStart: [
       ROUTE_VIDEOS.bcParkway22ndStation.id,
       ROUTE_VIDEOS.crosstownNWEb.id,
     ],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.crosstownNWWb.id],
     positions: [
       BC_PARKWAY_22ND_STATION_SPLIT,
       [49.19973, -122.95081],
@@ -278,6 +280,7 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "mup along seventh",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.crosstownNWWb.id],
     positions: [
       BC_PARKWAY_22ND_STATION_N,
       [49.20027, -122.94929],
@@ -288,6 +291,7 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "lanes along seventh",
     type: "dedicated",
+    videoIds: [ROUTE_VIDEOS.crosstownNWWb.id],
     positions: [STATION_LANE_START, TWENTIETH_7TH_N],
   },
   {
@@ -300,12 +304,14 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "alt through alley at 20th, 1",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.crosstownNWWb.id],
     positions: [TWENTIETH_7TH_N, TWENTIETH_7TH_N_N],
   },
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "alt through alley at 20th, 2",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.crosstownNWWb.id],
     positions: [TWENTIETH_7TH_N_N, [49.20217, -122.94587], BOWLER_7TH],
   },
   {
@@ -320,12 +326,17 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   },
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],
-    description: "20th to 10th",
+    description: "20th to bowler",
     type: "quiet",
     videoIds: [ROUTE_VIDEOS.crosstownNWEb.id],
+    positions: [TWENTIETH_7TH_E_S, [49.20141, -122.94623], BOWLER_7TH],
+  },
+  {
+    routeNames: [ROUTES.crosstownNewWestminster.name],
+    description: "bowler to 10th",
+    type: "quiet",
+    videoIds: [ROUTE_VIDEOS.crosstownNWWb.id, ROUTE_VIDEOS.crosstownNWEb.id],
     positions: [
-      TWENTIETH_7TH_E_S,
-      [49.20141, -122.94623],
       BOWLER_7TH,
       [49.20253, -122.94417],
       [49.20361, -122.94216],
@@ -342,7 +353,7 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "through moody park",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.crosstownNWEb.id],
+    videoIds: [ROUTE_VIDEOS.crosstownNWWb.id, ROUTE_VIDEOS.crosstownNWEb.id],
     positions: [
       TENTH_7TH,
       [49.21099, -122.92846],
@@ -400,6 +411,7 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     description: "5th to 8th",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.crosstownNWWb.id],
     positions: [
       FIFTH_7TH,
       [49.21514, -122.92093],
@@ -414,7 +426,7 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "5th to nearly-mcbride",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.crosstownNWEb.id],
+    videoIds: [ROUTE_VIDEOS.crosstownNWWb.id, ROUTE_VIDEOS.crosstownNWEb.id],
     positions: [
       FIFTH_7TH,
       [49.21586, -122.91945],
@@ -431,7 +443,7 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "to west mcbride ramp",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.crosstownNWEb.id],
+    videoIds: [ROUTE_VIDEOS.crosstownNWWb.id, ROUTE_VIDEOS.crosstownNWEb.id],
     positions: [
       MCBRIDE_SEVENTH_W,
       [49.22079, -122.91035],
@@ -445,7 +457,7 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     description: "before mcbride",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [ROUTE_VIDEOS.crosstownNWEb.id],
+    videoIds: [ROUTE_VIDEOS.crosstownNWWb.id, ROUTE_VIDEOS.crosstownNWEb.id],
     positions: [PRE_OVERPASS_W, MCBRIDE_OVERPASS_W],
   },
   {
@@ -453,7 +465,7 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     description: "mcbride overpass",
     type: "mixed",
     elevation: 1,
-    videoIds: [ROUTE_VIDEOS.crosstownNWEb.id],
+    videoIds: [ROUTE_VIDEOS.crosstownNWWb.id, ROUTE_VIDEOS.crosstownNWEb.id],
     positions: [
       MCBRIDE_OVERPASS_W,
       [49.221, -122.91065],
@@ -473,14 +485,14 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     description: "after mcbride",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [ROUTE_VIDEOS.crosstownNWEb.id],
+    videoIds: [ROUTE_VIDEOS.crosstownNWWb.id, ROUTE_VIDEOS.crosstownNWEb.id],
     positions: [MCBRIDE_OVERPASS_E, POST_OVERPASS_E],
   },
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "through parking lot",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.crosstownNWEb.id],
+    videoIds: [ROUTE_VIDEOS.crosstownNWWb.id, ROUTE_VIDEOS.crosstownNWEb.id],
     positions: [
       POST_OVERPASS_E,
       [49.22105, -122.90993],
@@ -491,11 +503,17 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   },
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],
-    description: "parking lot to richmond; north branch",
+    description: "parking lot to cumberland",
+    type: "quiet",
+    videoIds: [ROUTE_VIDEOS.crosstownNWWb.id, ROUTE_VIDEOS.crosstownNWEb.id],
+    positions: [W_OF_CUMBERLAND_7TH, CUMBERLAND_7TH],
+  },
+  {
+    routeNames: [ROUTES.crosstownNewWestminster.name],
+    description: "cumberland to richmond; north branch",
     type: "quiet",
     videoIds: [ROUTE_VIDEOS.crosstownNWEb.id],
     positions: [
-      W_OF_CUMBERLAND_7TH,
       CUMBERLAND_7TH,
       [49.22475, -122.90286],
       [49.22491, -122.90262],
@@ -508,14 +526,14 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
     routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "richmond north half",
     type: "shared",
-    videoIds: [ROUTE_VIDEOS.crosstownNWEb.id],
+    videoIds: [ROUTE_VIDEOS.crosstownNWWb.id, ROUTE_VIDEOS.crosstownNWEb.id],
     positions: [RICHMOND_SHILES, RICHMOND_SHERBROOKE],
   },
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],
     description: "sherbrooke",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.crosstownNWEb.id],
+    videoIds: [ROUTE_VIDEOS.crosstownNWWb.id, ROUTE_VIDEOS.crosstownNWEb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.crosstownNWEb.id],
     positions: [
       RICHMOND_SHERBROOKE,
@@ -525,8 +543,9 @@ export const CROSSTOWN_NEW_WESTMINSTER = [
   },
   {
     routeNames: [ROUTES.crosstownNewWestminster.name],
-    description: "alt: cumberland & richmond",
+    description: "cumberland & richmond; south branch",
     type: "shared",
+    videoIds: [ROUTE_VIDEOS.crosstownNWWb.id],
     positions: [
       CUMBERLAND_7TH,
       CUMBERLAND_6TH_N,
