@@ -117,6 +117,7 @@ import { KERR } from "./kerr";
 import { KILLARNEY } from "./killarney";
 import { KING_EDWARD } from "./kingEdward";
 import { KNIGHT_STREET_BRIDGE } from "./knightStBridge";
+import { LAKE_CITY } from "./lakeCity";
 import { LAKES } from "./lakes";
 import { LAKEWOOD } from "./lakewood";
 import { LANSDOWNE_HOLLYBRIDGE } from "./lansdowneHollybridge";
@@ -368,6 +369,7 @@ export const SEGMENTS = [
   ...KILLARNEY,
   ...KING_EDWARD,
   ...KNIGHT_STREET_BRIDGE,
+  ...LAKE_CITY,
   ...LAKES,
   ...LAKEWOOD,
   ...LANSDOWNE_HOLLYBRIDGE,

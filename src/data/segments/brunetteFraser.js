@@ -7,6 +7,7 @@ import {
   CARIBOO_GOVERNMENT,
   CLIFF_BRUNETTE_FRASER,
   COLUMBIA_CUMBERLAND_SW,
+  LAKE_CITY_BROADWAY_N,
   SPERLING_BROADWAY_E,
 } from "../intersections";
 import { ROUTES } from "../routes";
@@ -47,7 +48,6 @@ export const BRUNETTE_FRASER = [
     description: "broadway mup",
     type: "mixed",
     videoIds: [ROUTE_VIDEOS.broadwayBurnabyEb.id],
-    videoIdsEndAtEnd: [ROUTE_VIDEOS.broadwayBurnabyEb.id],
     positions: [
       BAINBRIDGE_BROADWAY_NW,
       [49.26147, -122.95599],
@@ -70,7 +70,16 @@ export const BRUNETTE_FRASER = [
       [49.26101, -122.94191],
       [49.26097, -122.94165],
       [49.26099, -122.93965],
-      [49.26101, -122.937],
+      LAKE_CITY_BROADWAY_N,
+    ],
+  },
+  {
+    description: "broadway mup, e of lake city",
+    type: "mixed",
+    videoIds: [ROUTE_VIDEOS.broadwayBurnabyEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.broadwayBurnabyEb.id],
+    positions: [
+      LAKE_CITY_BROADWAY_N,
       [49.26102, -122.93668],
       ARDEN_BROADWAY_NEE,
     ],

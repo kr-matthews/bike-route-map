@@ -2062,6 +2062,12 @@ export const ROUTES = {
     notes:
       "One of the worst bridges, extremely narrow sidewalk, very annoying to pass a pedestrian. The slip lanes mid-way across are very bad to cross too. The south end doesn't connect to anything. The north end has several connections but some are unclear. The shared lane on Marine is mostly a bus lane and you only use it when traffic is stopped at a red light so it's ok.",
   },
+  lakeCity: {
+    name: "Lake City Way",
+    regions: [REGIONS.burnaby],
+    legs: [{ videos: {} }],
+    notes: "Half flat low-traffic MUP, half wide hilly industrial road.",
+  },
   lakes: {
     name: "Lakes",
     regions: [REGIONS.burnaby],

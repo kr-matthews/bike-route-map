@@ -9,6 +9,7 @@ import {
   GILMORE_LOUGHEED_SW,
   KING_EDWARD_LOUGHEED_NW,
   KING_EDWARD_LOUGHEED_SW,
+  LAKE_CITY_LOUGHEED_NW,
   LEEDER_UNITED,
   SKEENA_CVG,
   SPERLING_LOUGHEED_NE,
@@ -74,23 +75,9 @@ const AUSTIN_LOUGHEED_NW = [49.24872, -122.89757];
 const BEYOND_BETA_SHOULDER_END = [49.26645, -122.99871];
 
 const LAKE_CITY_LOUGHEED_NE = [49.25435, -122.93787];
-const LAKE_CITY_LOUGHEED_NW = [49.25445, -122.9382];
 const EAGLE_CREEK_LOUGHEED_NW = [49.25548, -122.94347];
 
 export const LOUGHEED = [
-  // lake city
-  {
-    description: "lake city mup",
-    type: "mixed",
-    positions: [
-      LAKE_CITY_LOUGHEED_NW,
-      [49.25456, -122.93823],
-      [49.25473, -122.93823],
-      [49.2548, -122.93817],
-      [49.25763, -122.93815],
-    ],
-  },
-
   // eastbound
   {
     description: "from cvg",
