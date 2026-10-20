@@ -3009,9 +3009,18 @@ export const ROUTES = {
   stGeorge: {
     name: "St George Rainway",
     regions: [REGIONS.vancouver],
-    legs: [{ videos: { northbound: ROUTE_VIDEOS.stGeorgeNb } }],
+    legs: [
+      {
+        name: "Phases 1 & 2: 10th Ave <-> 6th Ave",
+        videos: {},
+      },
+      {
+        name: "Phase 1: 8th Ave <-> 6th Ave",
+        videos: { northbound: ROUTE_VIDEOS.stGeorgeNb },
+      },
+    ],
     notes:
-      "Opened July 2025. A nice car-free/car-light street with rainwater infrastructure. Will eventually continue further south, hopefully to 14th/Prince Edward.",
+      "A nice car-free/car-light street with rainwater infrastructure. Phase 1 opened July 2025. Phase 2 opened October 2026. Will eventually continue further south, hopefully to 14th/Prince Edward.",
   },
   stJohns: {
     name: "Saint Johns St Path",
