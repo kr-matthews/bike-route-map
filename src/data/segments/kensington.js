@@ -1,4 +1,5 @@
 import {
+  KENSINGTON_BROADWAY_S_W,
   KENSINGTON_CANADA_NW,
   KENSINGTON_CVG,
   KENSINGTON_SPROTT_E,
@@ -275,7 +276,7 @@ export const KENSINGTON = [
       [49.26122, -122.96799],
       [49.26144, -122.96818],
       [49.26162, -122.96836],
-      [49.26173, -122.96848],
+      KENSINGTON_BROADWAY_S_W,
     ],
   },
   {

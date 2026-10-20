@@ -1,14 +1,42 @@
 import {
   ARDEN_BROADWAY_NEE,
+  KENSINGTON_BROADWAY_S_W,
   LAKE_CITY_BROADWAY_N,
   SPERLING_BROADWAY_E,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
+const KENSINGTON_BROADWAY = [49.2618, -122.96821];
 const BAINBRIDGE_BROADWAY_NW = [49.26148, -122.95605];
 
 export const BROADWAY_BURNABY = [
+  {
+    description: "kensington & broadway sw corner",
+    type: "mixed",
+    undesignated: true,
+    positions: [
+      KENSINGTON_BROADWAY_S_W,
+      [49.26177, -122.96839],
+      [49.26175, -122.96833],
+      KENSINGTON_BROADWAY,
+    ],
+  },
+  {
+    description: "broadway gap, kensington to sperling",
+    type: "shared",
+    undesignated: true,
+    positions: [
+      KENSINGTON_BROADWAY,
+      [49.26178, -122.96781],
+      [49.2618, -122.96718],
+      [49.26181, -122.96656],
+      [49.26178, -122.96617],
+      [49.2617, -122.96553],
+      [49.26161, -122.96483],
+      SPERLING_BROADWAY_E,
+    ],
+  },
   {
     description: "broadway gap, sperling to bainbridge",
     type: "shared",
