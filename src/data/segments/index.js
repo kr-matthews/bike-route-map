@@ -21,6 +21,7 @@ import { BLANCA } from "./blanca";
 import { BOUNDARY } from "./boundary";
 import { BOYD } from "./boyd";
 import { BRIDGEPORT_TRAIL } from "./bridgeportTrail";
+import { BROADWAY_BURNABY } from "./broadwayBurnaby";
 import { BRUNETTE_FRASER } from "./brunetteFraser";
 import { BURNABY } from "./burnaby";
 import { BURNABY_LAKE_OVERPASS } from "./burnabyLakeOverpass";
@@ -273,6 +274,7 @@ export const SEGMENTS = [
   ...BOUNDARY,
   ...BOYD,
   ...BRIDGEPORT_TRAIL,
+  ...BROADWAY_BURNABY,
   ...BRUNETTE_FRASER,
   ...BURNABY,
   ...BURNABY_LAKE_OVERPASS,

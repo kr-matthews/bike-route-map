@@ -648,6 +648,17 @@ export const ROUTES = {
     notes:
       "Very flat. Can be a bit narrow at times. Lots of bunnies. Not very useful since it doesn't connect to anything.",
   },
+  broadwayBurnaby: {
+    name: "Broadway (Burnaby)",
+    regions: [REGIONS.burnaby],
+    legs: [
+      {
+        videos: { eastbound: ROUTE_VIDEOS.broadwayBurnabyEb },
+      },
+    ],
+    notes:
+      "A MUP which connects to nothing at the west end and leaves you on a busy road. Fairly steep valley at Eagle Creek (at the east end).",
+  },
   brunetteFraser: {
     name: "Brunette Fraser Regional Greenway",
     regions: [REGIONS.burnaby, REGIONS.newWestminster],
@@ -712,10 +723,6 @@ export const ROUTES = {
     legs: [
       {
         videos: { northbound: ROUTE_VIDEOS.burnabyMtnUrbanTrailNb },
-      },
-      {
-        name: "Broadway MUP",
-        videos: { eastbound: ROUTE_VIDEOS.broadwayBurnabyEb },
       },
     ],
     notes:
