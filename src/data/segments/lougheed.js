@@ -28,16 +28,24 @@ const EASTBOUND_ELEVATION_1_PRE = [49.23167, -122.8489];
 const EASTBOUND_ELEVATION_1_START = [49.23143, -122.84848];
 const EASTBOUND_ELEVATION_1_END = [49.2301, -122.84571];
 const EASTBOUND_ELEVATION_1_POST = [49.22998, -122.84524];
-const EASTBOUND_ELEVATION_2_PRE = [49.22931, -122.84005];
+const EASTBOUND_ELEVATION_2_PRE = [49.22934, -122.84009];
 const EASTBOUND_ELEVATION_2_START = [49.2293, -122.83982];
 const EASTBOUND_ELEVATION_2_END = [49.22856, -122.8329];
+
+const UNITED_BLVD_OFF_RAMP_2_START = [49.23503, -122.82364];
+const UNITED_BLVD_OFF_RAMP_2_END = [49.23595, -122.82201];
+const COLONY_FARM_LOUGHEED_SE = [49.24002, -122.81369];
 
 const WB_INITIAL_PATH_END = [49.22844, -122.82389];
 
 const WESTBOUND_ELEVATION_1_PRE = [49.22982, -122.83067];
 const WESTBOUND_ELEVATION_1_START = [49.22984, -122.8322];
+const PORT_MANN_CONNECTION_JOIN = [49.23, -122.83522];
 const WESTBOUND_ELEVATION_1_END = [49.23005, -122.83592];
 const WESTBOUND_ELEVATION_1_POST = [49.23017, -122.83782];
+
+const CAPE_HORN_CONNECTION_START = [49.23179, -122.8319];
+const CAPE_HORN_CONNECTION_MID = [49.23032, -122.83429];
 
 const EASTBOUND_BRUNETTE_FRASER_PRE = [49.25215, -122.91204];
 const EASTBOUND_BRUNETTE_FRASER_START = [49.25194, -122.91008];
@@ -471,21 +479,84 @@ export const LOUGHEED = [
       EASTBOUND_ELEVATION_1_POST,
       [49.22985, -122.84442],
       [49.22947, -122.84141],
-      [49.22934, -122.84009],
       EASTBOUND_ELEVATION_2_PRE,
     ],
   },
   {
     routeNames: [ROUTES.lougheed.name],
+    description: "eb: continuing past united exit",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
+      EASTBOUND_ELEVATION_2_PRE,
+      [49.22934, -122.83994],
+      [49.22925, -122.839],
+      [49.22918, -122.8382],
+      [49.22917, -122.83774],
+      [49.22919, -122.83724],
+      [49.22923, -122.8369],
+      [49.22946, -122.83568],
+      [49.22963, -122.83492],
+      [49.22984, -122.83425],
+      [49.23008, -122.83361],
+      [49.23048, -122.83288],
+      [49.23088, -122.83216],
+      [49.23136, -122.83124],
+      [49.23194, -122.83004],
+      [49.23249, -122.82881],
+      [49.23319, -122.82738],
+      [49.23422, -122.82531],
+      UNITED_BLVD_OFF_RAMP_2_START,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "eb: under 2nd united exit",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      UNITED_BLVD_OFF_RAMP_2_START,
+      [49.23509, -122.82348],
+      [49.23546, -122.82273],
+      [49.23557, -122.82251],
+      [49.23566, -122.82232],
+      [49.23575, -122.82218],
+      [49.23588, -122.82211],
+      UNITED_BLVD_OFF_RAMP_2_END,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "eb: continuing past 2nd united exit, to colony farm",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
+      UNITED_BLVD_OFF_RAMP_2_END,
+      [49.23664, -122.82061],
+      [49.23731, -122.81924],
+      [49.23824, -122.81732],
+      [49.2386, -122.81659],
+      [49.23862, -122.81639],
+      [49.2388, -122.81608],
+      [49.23935, -122.81506],
+      COLONY_FARM_LOUGHEED_SE,
+    ],
+  },
+
+  // eb exit to united
+  {
     description: "eb: elevation 2a",
     type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
     videoIds: [ROUTE_VIDEOS.lougheedEb.id],
-    positions: [EASTBOUND_ELEVATION_2_PRE, EASTBOUND_ELEVATION_2_START],
+    positions: [
+      EASTBOUND_ELEVATION_2_PRE,
+      [49.22931, -122.84005],
+      EASTBOUND_ELEVATION_2_START,
+    ],
   },
   {
-    routeNames: [ROUTES.lougheed.name],
     description: "eb: elevation 2b part1",
     type: "dedicated",
     oneWay: "required",
@@ -500,7 +571,6 @@ export const LOUGHEED = [
     ],
   },
   {
-    routeNames: [ROUTES.lougheed.name],
     description: "eb: elevation 2b part 2",
     type: "shoulder",
     oneWay: "required",
@@ -515,7 +585,6 @@ export const LOUGHEED = [
     ],
   },
   {
-    routeNames: [ROUTES.lougheed.name],
     description: "eb: to leeder exit",
     type: "shoulder",
     oneWay: "required",
@@ -532,9 +601,8 @@ export const LOUGHEED = [
     ],
   },
 
-  // westbound
+  // westbound join from port mann
   {
-    routeNames: [ROUTES.lougheed.name],
     description: "wb: path from mary hill",
     type: "dedicated",
     oneWay: "required",
@@ -550,7 +618,6 @@ export const LOUGHEED = [
     ],
   },
   {
-    routeNames: [ROUTES.lougheed.name],
     description: "wb: after initial path",
     type: "shoulder",
     oneWay: "required",
@@ -570,7 +637,6 @@ export const LOUGHEED = [
     ],
   },
   {
-    routeNames: [ROUTES.lougheed.name],
     description: "wb: pre-elevation",
     type: "shoulder",
     oneWay: "required",
@@ -579,8 +645,7 @@ export const LOUGHEED = [
     positions: [WESTBOUND_ELEVATION_1_PRE, WESTBOUND_ELEVATION_1_START],
   },
   {
-    routeNames: [ROUTES.lougheed.name],
-    description: "wb: elevation",
+    description: "wb: elevation 1",
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
@@ -589,9 +654,83 @@ export const LOUGHEED = [
       WESTBOUND_ELEVATION_1_START,
       [49.22989, -122.83335],
       [49.22994, -122.83436],
-      [49.23, -122.83522], // join from other lougheed
-      WESTBOUND_ELEVATION_1_END,
+      PORT_MANN_CONNECTION_JOIN,
     ],
+  },
+
+  // westbound
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "wb: from colony road",
+    type: "shoulder",
+    oneWay: "required",
+    positions: [
+      [49.24015, -122.81421],
+      [49.23942, -122.81567],
+      [49.23914, -122.81625],
+      [49.23886, -122.81686],
+      [49.23854, -122.81767],
+      [49.23802, -122.81876],
+      [49.23794, -122.81884],
+      [49.23754, -122.81964],
+      [49.23754, -122.81979],
+      [49.23748, -122.81987],
+      [49.23739, -122.82004],
+      [49.23689, -122.82103],
+      [49.2366, -122.82154],
+      [49.23547, -122.8238],
+      [49.23498, -122.82476],
+      [49.2347, -122.82536],
+      [49.23443, -122.82596],
+      [49.23423, -122.82643],
+      [49.23405, -122.8269],
+      [49.23381, -122.82759],
+      [49.23361, -122.82821],
+      [49.23341, -122.82892],
+      [49.23323, -122.82954],
+      [49.23305, -122.83001],
+      [49.23277, -122.83059],
+      [49.23249, -122.83104],
+      [49.23228, -122.83132],
+      [49.23203, -122.83162],
+      CAPE_HORN_CONNECTION_START,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "wb: cape horn ramp 1",
+    type: "dedicated",
+    oneWay: "required",
+    elevation: 0.5,
+    positions: [
+      CAPE_HORN_CONNECTION_START,
+      [49.23179, -122.83199],
+      [49.23178, -122.83206],
+      [49.23175, -122.83212],
+      [49.23072, -122.83361],
+      CAPE_HORN_CONNECTION_MID,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "wb: cape horn ramp 2",
+    type: "dedicated",
+    oneWay: "required",
+    elevation: 1,
+    positions: [
+      CAPE_HORN_CONNECTION_MID,
+      [49.23012, -122.83461],
+      PORT_MANN_CONNECTION_JOIN,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "wb: elevation 2",
+    type: "shoulder",
+    oneWay: "required",
+    elevation: 1,
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
+    positions: [PORT_MANN_CONNECTION_JOIN, WESTBOUND_ELEVATION_1_END],
   },
   {
     routeNames: [ROUTES.lougheed.name],

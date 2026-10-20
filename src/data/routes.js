@@ -2149,17 +2149,22 @@ export const ROUTES = {
   lougheed: {
     name: "Lougheed Hwy",
     regions: [REGIONS.burnaby, REGIONS.coquitlam],
+    isIncomplete: true,
     legs: [
       {
-        name: "Burnaby/Coquitlam",
+        name: "Burnaby & Coquitlam: Vancouver <-> Mary Hill Bypass",
         videos: {
           eastbound: ROUTE_VIDEOS.lougheedEb,
           westbound: ROUTE_VIDEOS.lougheedWb,
         },
       },
+      {
+        name: "Coquitlam: Trans-Canada Hwy Interchange <-> Colony Farm Rd/Riverview Hospital",
+        videos: {},
+      },
     ],
     notes:
-      "A very uncomfortable route for the most part, though some sections are separated and nice. The east end, intertwined with the Trans-Canada Highway, is extremely uncomfortable, especially westbound. At the west end, it's best to connect to Central Valley Greenway via the path along Gilmore. The painted lanes are beside the curb.",
+      "A very uncomfortable route for the most part, though some sections are separated and nice. The portion which is intertwined with the Trans-Canada Highway is extremely uncomfortable, especially westbound. I would not recommend continuing east of Colony Farm Rd, the shoulder gets very narrow. At the west end, it's best to connect to Central Valley Greenway via the path along Gilmore. The painted lanes are beside the curb, not beside parked cars.",
   },
   lowLevel: {
     name: "Low Level Rd",
