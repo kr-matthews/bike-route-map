@@ -2053,7 +2053,14 @@ export const ROUTES = {
   kingswayPortCoquitlam: {
     name: "Kingsway Ave",
     regions: [REGIONS.portCoquitlam],
-    legs: [{ videos: {} }],
+    legs: [
+      {
+        videos: {
+          eastbound: ROUTE_VIDEOS.kingswayPortCoquitlamEb,
+          westbound: ROUTE_VIDEOS.kingswayPortCoquitlamWb,
+        },
+      },
+    ],
     notes:
       "A new MUP from late 2024. Very flat, a few zig-zags, and one terrible intersection at Mary Hill Bypass.",
   },

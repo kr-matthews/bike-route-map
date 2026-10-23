@@ -4,6 +4,7 @@ import {
   KINGSWAY_POCO_TRAIL,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const MARY_HILL_KELLY = [49.25908, -122.77854];
 const COMMUNITY_CENTER_W = [49.25908, -122.77773];
@@ -18,16 +19,20 @@ export const KINGSWAY_PORT_COQUITLAM = [
   {
     description: "kelly 1",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.kingswayPortCoquitlamWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.kingswayPortCoquitlamWb.id],
     positions: [MARY_HILL_KELLY, COMMUNITY_CENTER_W],
   },
   {
     description: "kelly 2",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.kingswayPortCoquitlamWb.id],
     positions: [COMMUNITY_CENTER_W, COMMUNITY_CENTER_E],
   },
   {
     description: "kelly 3",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.kingswayPortCoquitlamWb.id],
     positions: [COMMUNITY_CENTER_E, KINGSWAY_KELLY_W],
   },
   {
@@ -47,6 +52,7 @@ export const KINGSWAY_PORT_COQUITLAM = [
     description: "kelly e wb",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [ROUTE_VIDEOS.kingswayPortCoquitlamWb.id],
     positions: [
       KINGSWAY_KELLY_N_E,
       [49.25933, -122.77535],
@@ -62,6 +68,8 @@ export const KINGSWAY_PORT_COQUITLAM = [
     description: "port coquitlam train station",
     type: "quiet",
     undesignated: true,
+    videoIds: [ROUTE_VIDEOS.kingswayPortCoquitlamEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.kingswayPortCoquitlamEb.id],
     positions: [
       [49.26118, -122.7748],
       [49.26089, -122.77481],
@@ -74,12 +82,17 @@ export const KINGSWAY_PORT_COQUITLAM = [
     routeNames: [ROUTES.kingswayPortCoquitlam.name],
     description: "n of kelly",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.kingswayPortCoquitlamEb.id],
     positions: [KINGSWAY_WILSON_SE, KINGSWAY_KELLY_N_E],
   },
   {
     routeNames: [ROUTES.kingswayPortCoquitlam.name],
     description: "primary",
     type: "mixed",
+    videoIds: [
+      ROUTE_VIDEOS.kingswayPortCoquitlamEb.id,
+      ROUTE_VIDEOS.kingswayPortCoquitlamWb.id,
+    ],
     positions: [
       KINGSWAY_KELLY_N_E,
       [49.25926, -122.77522],
@@ -121,6 +134,10 @@ export const KINGSWAY_PORT_COQUITLAM = [
     routeNames: [ROUTES.kingswayPortCoquitlam.name],
     description: "crossing mary hill bypass",
     type: "other",
+    videoIds: [
+      ROUTE_VIDEOS.kingswayPortCoquitlamEb.id,
+      ROUTE_VIDEOS.kingswayPortCoquitlamWb.id,
+    ],
     positions: [
       KINGSWAY_MARY_HILL_BYPASS_NE,
       [49.24662, -122.74794],
@@ -134,6 +151,12 @@ export const KINGSWAY_PORT_COQUITLAM = [
     routeNames: [ROUTES.kingswayPortCoquitlam.name],
     description: "s of marry hill bypass",
     type: "mixed",
+    videoIds: [
+      ROUTE_VIDEOS.kingswayPortCoquitlamEb.id,
+      ROUTE_VIDEOS.kingswayPortCoquitlamWb.id,
+    ],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.kingswayPortCoquitlamWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.kingswayPortCoquitlamEb.id],
     positions: [
       KINGSWAY_MARY_HILL_BYPASS_SE,
       [49.24631, -122.74742],

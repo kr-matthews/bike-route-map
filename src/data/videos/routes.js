@@ -1458,6 +1458,18 @@ export const ROUTE_VIDEOS = {
     date: new Date("Jun 24 2026"),
     minutes: 4,
   },
+  kingswayPortCoquitlamEb: {
+    id: "xKlP438V_cY",
+    tlId: "FV16edIPYXk",
+    date: new Date("Oct 18 2026"),
+    minutes: 11,
+  },
+  kingswayPortCoquitlamWb: {
+    id: "ZBJZcEpqBQM",
+    tlId: "IPbhboLe_q8",
+    date: new Date("Oct 18 2026"),
+    minutes: 15,
+  },
   knightStBridgeNb: {
     id: "jHY8amhWxyU",
     tlId: "TvSAqBLCwns",
