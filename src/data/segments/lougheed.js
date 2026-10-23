@@ -910,6 +910,8 @@ export const LOUGHEED = [
     description: "wb: crossing lake city",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.lakeCityNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.lakeCityNb.id],
     positions: [LAKE_CITY_LOUGHEED_NE, LAKE_CITY_LOUGHEED_NW],
   },
   {

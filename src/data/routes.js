@@ -2086,7 +2086,7 @@ export const ROUTES = {
   lakeCity: {
     name: "Lake City Way",
     regions: [REGIONS.burnaby],
-    legs: [{ videos: {} }],
+    legs: [{ videos: { northbound: ROUTE_VIDEOS.lakeCityNb } }],
     notes: "Half flat low-traffic MUP, half wide hilly industrial road.",
   },
   lakes: {

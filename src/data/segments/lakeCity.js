@@ -1,5 +1,6 @@
 import { LAKE_CITY_BROADWAY_N, LAKE_CITY_LOUGHEED_NW } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const LAKE_CITY_VENTURE_SW = [49.25763, -122.93815];
 
@@ -8,6 +9,7 @@ export const LAKE_CITY = [
     routeNames: [ROUTES.lakeCity.name],
     description: "mup",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.lakeCityNb.id],
     positions: [
       LAKE_CITY_LOUGHEED_NW,
       [49.25456, -122.93823],
@@ -20,6 +22,7 @@ export const LAKE_CITY = [
     routeNames: [ROUTES.lakeCity.name],
     description: "road",
     type: "shared",
+    videoIds: [ROUTE_VIDEOS.lakeCityNb.id],
     positions: [
       LAKE_CITY_VENTURE_SW,
       [49.2577, -122.93796],

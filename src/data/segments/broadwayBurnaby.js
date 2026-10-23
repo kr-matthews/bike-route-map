@@ -90,8 +90,11 @@ export const BROADWAY_BURNABY = [
     routeNames: [ROUTES.broadwayBurnaby.name],
     description: "e of lake city",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.broadwayBurnabyEb.id],
-    videoIdsEndAtEnd: [ROUTE_VIDEOS.broadwayBurnabyEb.id],
+    videoIds: [ROUTE_VIDEOS.broadwayBurnabyEb.id, ROUTE_VIDEOS.lakeCityNb.id],
+    videoIdsEndAtEnd: [
+      ROUTE_VIDEOS.broadwayBurnabyEb.id,
+      ROUTE_VIDEOS.lakeCityNb.id,
+    ],
     positions: [
       LAKE_CITY_BROADWAY_N,
       [49.26102, -122.93668],

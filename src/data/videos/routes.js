@@ -1487,6 +1487,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Jul 06 2024"),
     minutes: 2,
   },
+  lakeCityNb: {
+    id: "rd2862cDQZ8",
+    date: new Date("Oct 18 2026"),
+    minutes: 3,
+  },
   lakesNb: {
     id: "hR8zZDWbVV8",
     tlId: "iJrl8LhEik4",
