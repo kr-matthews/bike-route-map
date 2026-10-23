@@ -266,7 +266,8 @@ export const KENSINGTON = [
     description: "west side: overpass to broadway",
     type: "mixed",
     elevation: 0.5,
-    videoIds: [ROUTE_VIDEOS.kensingtonNb.id],
+    videoIds: [ROUTE_VIDEOS.kensingtonNb.id, ROUTE_VIDEOS.broadwayBurnabyWb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.broadwayBurnabyWb.id],
     videoIdsEndAtEnd: [ROUTE_VIDEOS.kensingtonNb.id],
     positions: [
       LOUGHEED_OVERPASS_N,

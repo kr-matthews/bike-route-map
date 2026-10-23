@@ -653,7 +653,10 @@ export const ROUTES = {
     regions: [REGIONS.burnaby],
     legs: [
       {
-        videos: { eastbound: ROUTE_VIDEOS.broadwayBurnabyEb },
+        videos: {
+          eastbound: ROUTE_VIDEOS.broadwayBurnabyEb,
+          westbound: ROUTE_VIDEOS.broadwayBurnabyWb,
+        },
       },
     ],
     notes:

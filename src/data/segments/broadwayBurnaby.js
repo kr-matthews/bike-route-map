@@ -15,6 +15,7 @@ export const BROADWAY_BURNABY = [
     description: "kensington & broadway sw corner",
     type: "mixed",
     undesignated: true,
+    videoIds: [ROUTE_VIDEOS.broadwayBurnabyWb.id],
     positions: [
       KENSINGTON_BROADWAY_S_W,
       [49.26177, -122.96839],
@@ -26,6 +27,7 @@ export const BROADWAY_BURNABY = [
     description: "broadway gap, kensington to sperling",
     type: "shared",
     undesignated: true,
+    videoIds: [ROUTE_VIDEOS.broadwayBurnabyWb.id],
     positions: [
       KENSINGTON_BROADWAY,
       [49.26178, -122.96781],
@@ -41,7 +43,10 @@ export const BROADWAY_BURNABY = [
     description: "broadway gap, sperling to bainbridge",
     type: "shared",
     undesignated: true,
-    videoIds: [ROUTE_VIDEOS.broadwayBurnabyEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.broadwayBurnabyEb.id,
+      ROUTE_VIDEOS.broadwayBurnabyWb.id,
+    ],
     videoIdsStartAtStart: [ROUTE_VIDEOS.broadwayBurnabyEb.id],
     positions: [
       SPERLING_BROADWAY_E,
@@ -60,7 +65,10 @@ export const BROADWAY_BURNABY = [
     routeNames: [ROUTES.broadwayBurnaby.name],
     description: "mup",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.broadwayBurnabyEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.broadwayBurnabyWb.id,
+      ROUTE_VIDEOS.broadwayBurnabyEb.id,
+    ],
     positions: [
       BAINBRIDGE_BROADWAY_NW,
       [49.26147, -122.95599],
@@ -90,7 +98,12 @@ export const BROADWAY_BURNABY = [
     routeNames: [ROUTES.broadwayBurnaby.name],
     description: "e of lake city",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.broadwayBurnabyEb.id, ROUTE_VIDEOS.lakeCityNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.broadwayBurnabyWb.id,
+      ROUTE_VIDEOS.broadwayBurnabyEb.id,
+      ROUTE_VIDEOS.lakeCityNb.id,
+    ],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.broadwayBurnabyWb.id],
     videoIdsEndAtEnd: [
       ROUTE_VIDEOS.broadwayBurnabyEb.id,
       ROUTE_VIDEOS.lakeCityNb.id,

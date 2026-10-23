@@ -324,6 +324,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Sep 23 2026"),
     minutes: 6,
   },
+  broadwayBurnabyWb: {
+    id: "icuXo8tkpYk",
+    date: new Date("Oct 18 2026"),
+    minutes: 7,
+  },
   brunetteFraserSb: {
     id: "lzabq1p-VrM",
     tlId: "ydCTRDMB1Cc",
