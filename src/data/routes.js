@@ -2050,6 +2050,13 @@ export const ROUTES = {
     notes:
       "Flat in the middle with significant climbs out in either direction. The painted lanes are usually beside parked cars. The intersection at Arbutus was improved in late 2024. In 2025 the route was extending west from Quesnel Dr to Dunbar St.",
   },
+  kingswayPortCoquitlam: {
+    name: "Kingsway Ave",
+    regions: [REGIONS.portCoquitlam],
+    legs: [{ videos: {} }],
+    notes:
+      "A new MUP from late 2024. Very flat, a few zig-zags, and one terrible intersection at Mary Hill Bypass.",
+  },
   knightStreetBridge: {
     name: "Knight Street Bridge",
     regions: [REGIONS.vancouver, REGIONS.richmond],

@@ -2,6 +2,9 @@ import {
   ARGUE_MARY_HILL_SW,
   ARGUE_MARY_HILL_NW,
   POCO_TRAIL_BELFAST,
+  KINGSWAY_MARY_HILL_BYPASS_SE,
+  KINGSWAY_MARY_HILL_BYPASS_SE_S,
+  KINGSWAY_POCO_TRAIL,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
@@ -159,6 +162,7 @@ export const POCO_TRAIL = [
       [49.24342, -122.74863],
       [49.24402, -122.74713],
       [49.24501, -122.74476],
+      KINGSWAY_POCO_TRAIL,
       [49.24515, -122.74442],
       [49.24604, -122.74153],
       [49.24609, -122.74126],
@@ -215,7 +219,7 @@ export const POCO_TRAIL = [
     description: "south pitt river - extra sidewalk",
     type: "mixed",
     positions: [
-      [49.24636, -122.74744],
+      KINGSWAY_MARY_HILL_BYPASS_SE,
       [49.24642, -122.74736],
       [49.24644, -122.74727],
       [49.24645, -122.74713],
@@ -235,7 +239,7 @@ export const POCO_TRAIL = [
     description: "south pitt river - split from kingsway",
     type: "mixed",
     positions: [
-      [49.24616, -122.74686],
+      KINGSWAY_MARY_HILL_BYPASS_SE_S,
       [49.24622, -122.74682],
       [49.2464, -122.74662],
       KINGSWAY_SPLIT,
