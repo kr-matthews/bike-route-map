@@ -1,10 +1,13 @@
-import { IOCO_GUILDFORD_N, IOCO_GUILDFORD_S } from "../intersections";
+import {
+  IOCO_GUILDFORD_N,
+  IOCO_GUILDFORD_S,
+  PINETREE_GUILDFORD_NE,
+  PINETREE_GUILDFORD_SE,
+} from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
 const PORT_MOODY_COQUITLAM_S = [49.28466, -122.8209];
-const PINETREE_GUILDFORD_SE = [49.28469, -122.79228];
-const PINETREE_GUILDFORD_NE = [49.285, -122.79212];
 const PORT_MOODY_COQUITLAM_N = [49.28489, -122.8205];
 
 export const GUILDFORD = [
@@ -24,17 +27,6 @@ export const GUILDFORD = [
       [49.28495, -122.79177],
       [49.28496, -122.79163],
       [49.28493, -122.79127],
-    ],
-  },
-  {
-    description: "pinetree crossing guildford e",
-    type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.guildfordMurrayEb.id],
-    positions: [
-      PINETREE_GUILDFORD_SE,
-      [49.28473, -122.79224],
-      [49.28496, -122.79213],
-      PINETREE_GUILDFORD_NE,
     ],
   },
 

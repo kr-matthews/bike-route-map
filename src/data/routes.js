@@ -2777,6 +2777,12 @@ export const ROUTES = {
     notes:
       "A hill, lots of cars. The painted lanes are beside the curb. Before Dunsmuir was a bike route, the whole of Pender was the only east-west bike route around here (mostly just a shared lane with heavy traffic). Now only the painted portion remains as a bike route.",
   },
+  pinetree: {
+    name: "Pinetree Way",
+    regions: [REGIONS.coquitlam],
+    legs: [{ videos: {} }],
+    notes: "A relatively flat MUP through a fairly busy area.",
+  },
   pittRiverBridge: {
     name: "Pitt River Bridge",
     regions: [REGIONS.portCoquitlam, REGIONS.pittMeadows],

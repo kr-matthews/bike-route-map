@@ -169,6 +169,7 @@ import { ONTARIO } from "./ontario";
 import { PANDORA } from "./pandora";
 import { PARKSIDE } from "./parkside";
 import { PENDER } from "./pender";
+import { PINETREE } from "./pinetree";
 import { PITT_RIVER_BRIDGE } from "./pittRiverBridge";
 import { POCO_TRAIL } from "./pocoTrail";
 import { PORT_MANN_BRIDGE } from "./portMannBridge";
@@ -423,6 +424,7 @@ export const SEGMENTS = [
   ...PANDORA,
   ...PARKSIDE,
   ...PENDER,
+  ...PINETREE,
   ...PITT_RIVER_BRIDGE,
   ...POCO_TRAIL,
   ...PORT_MANN_BRIDGE,
