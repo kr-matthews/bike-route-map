@@ -6,7 +6,17 @@ import {
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
+const WEST_SIDE_FINAL_JOIN = [49.21018, -122.89953];
+const WEST_SIDE_ELEVATION_START = [49.21015, -122.8989];
+const WEST_SIDE_ELEVATION_BUMP_1 = [49.20986, -122.89794];
+const WEST_SIDE_ELEVATION_BUMP_2 = [49.2096, -122.89696];
+const WEST_SIDE_SPLIT = [49.20562, -122.88649];
+const WEST_SIDE_POST_SPLIT_UPPER = [49.20581, -122.88656];
+const WEST_UPPER_ELEVATION_END = [49.20586, -122.8822];
+const STALEWASEM_111A_N_N = [49.20572, -122.88074];
+
 const ONE_24_112_N = [49.20646, -122.87865];
+const STALEWASEM_NE = [49.20627, -122.87996];
 const EAST_SIDE_ELEVATION_START = [49.2061, -122.88218];
 const EAST_SIDE_ELEVATION_END = [49.21125, -122.89823];
 const EAST_SIDE_END = [49.21137, -122.89844];
@@ -22,13 +32,101 @@ const MEMORIAL_OVERPASS_W = [49.21451, -122.90258];
 
 export const STALEWASEM = [
   // west side
+  {
+    routeNames: [ROUTES.stalewasem.name],
+    description: "west - pre-elevation",
+    type: "mixed",
+    elevation: 0.5,
+    oneWay: "required",
+    positions: [
+      WEST_SIDE_FINAL_JOIN,
+      [49.2102, -122.89938],
+      [49.2102, -122.89919],
+      WEST_SIDE_ELEVATION_START,
+    ],
+  },
+  {
+    routeNames: [ROUTES.stalewasem.name],
+    description: "west - initial bit",
+    type: "mixed",
+    elevation: 1,
+    oneWay: "required",
+    positions: [WEST_SIDE_ELEVATION_START, WEST_SIDE_ELEVATION_BUMP_1],
+  },
+  {
+    routeNames: [ROUTES.stalewasem.name],
+    description: "west - next little bit",
+    type: "mixed",
+    elevation: 1.5,
+    oneWay: "required",
+    positions: [WEST_SIDE_ELEVATION_BUMP_1, WEST_SIDE_ELEVATION_BUMP_2],
+  },
+  {
+    routeNames: [ROUTES.stalewasem.name],
+    description: "west - primary",
+    type: "mixed",
+    elevation: 2,
+    oneWay: "required",
+    positions: [
+      WEST_SIDE_ELEVATION_BUMP_2,
+      [49.20804, -122.89245],
+      [49.20634, -122.88756],
+      [49.20608, -122.88689],
+      [49.20569, -122.88592],
+      [49.20542, -122.88537],
+      [49.20528, -122.88515],
+      [49.20519, -122.88511],
+      [49.20509, -122.88521],
+      [49.20547, -122.88623],
+      [49.20554, -122.88639],
+      WEST_SIDE_SPLIT,
+    ],
+  },
+  {
+    routeNames: [ROUTES.stalewasem.name],
+    description: "west - upper exit part 1",
+    type: "mixed",
+    elevation: 1.5,
+    oneWay: "required",
+    positions: [
+      WEST_SIDE_SPLIT,
+      [49.20573, -122.88655],
+      WEST_SIDE_POST_SPLIT_UPPER,
+    ],
+  },
+  {
+    routeNames: [ROUTES.stalewasem.name],
+    description: "west - upper exit part 2",
+    type: "mixed",
+    elevation: 1,
+    oneWay: "required",
+    positions: [
+      WEST_SIDE_POST_SPLIT_UPPER,
+      [49.20589, -122.88652],
+      [49.20595, -122.88632],
+      [49.20588, -122.88508],
+      WEST_UPPER_ELEVATION_END,
+    ],
+  },
+  {
+    routeNames: [ROUTES.stalewasem.name],
+    description: "west - upper exit part 3",
+    type: "mixed",
+    elevation: 0.5,
+    oneWay: "required",
+    positions: [
+      WEST_UPPER_ELEVATION_END,
+      [49.20585, -122.88119],
+      [49.20582, -122.88082],
+      STALEWASEM_111A_N_N,
+    ],
+  },
 
   // east side
   {
     routeNames: [ROUTES.stalewasem.name],
-    description: "east - south pre-elevation",
+    description: "mup along 112",
     type: "mixed",
-    elevation: 0.5,
     videoIds: [
       ROUTE_VIDEOS.stalewasemEastNb.id,
       ROUTE_VIDEOS.stalewasemEastSb.id,
@@ -38,7 +136,21 @@ export const STALEWASEM = [
       [49.20647, -122.8793],
       [49.20645, -122.87971],
       [49.20642, -122.87996],
-      [49.20627, -122.87996],
+      STALEWASEM_NE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.stalewasem.name],
+    description: "east - south pre-elevation",
+    type: "mixed",
+    elevation: 0.5,
+    oneWay: "required",
+    videoIds: [
+      ROUTE_VIDEOS.stalewasemEastNb.id,
+      ROUTE_VIDEOS.stalewasemEastSb.id,
+    ],
+    positions: [
+      STALEWASEM_NE,
       [49.20621, -122.87996],
       [49.20618, -122.88001],
       [49.20612, -122.88073],
@@ -50,6 +162,7 @@ export const STALEWASEM = [
     description: "east",
     type: "mixed",
     elevation: 1,
+    oneWay: "required",
     videoIds: [
       ROUTE_VIDEOS.stalewasemEastSb.id,
       ROUTE_VIDEOS.stalewasemEastNb.id,
@@ -80,6 +193,7 @@ export const STALEWASEM = [
     description: "east - north post-elevation",
     type: "mixed",
     elevation: 0.5,
+    oneWay: "required",
     videoIds: [
       ROUTE_VIDEOS.stalewasemEastSb.id,
       ROUTE_VIDEOS.stalewasemEastNb.id,

@@ -1475,6 +1475,7 @@ export const BC_PARKWAY = [
     routeNames: [ROUTES.bcParkway.name],
     description: "towards pattullo bridge",
     type: "mixed",
+    isClosed: true,
     videoIds: [
       ROUTE_VIDEOS.pattulloSb.id,
       ROUTE_VIDEOS.pattulloNb.id,

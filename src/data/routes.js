@@ -3367,7 +3367,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "A new bridge which replaces the (terrible) Pattullo Bridge, with MUPs on both sides. The east MUP opened in June 2026, the west MUP will open sometime later in the summer along with the surrounding MUP network on each end.",
+      "A new bridge which replaces the (terrible) Pattullo Bridge, with MUPs on both sides. The east MUP opened in June 2026, the west MUP opened in October 2026. Initially the east MUP was two-way, but now that both sides are open, they're both one-way, which is inconvenient.",
   },
   stanleyParkLoop: {
     name: "Stanley Park Loop",
