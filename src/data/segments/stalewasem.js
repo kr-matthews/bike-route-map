@@ -2,6 +2,7 @@ import {
   MCBRIDE_COLUMBIA_NE,
   MCBRIDE_COLUMBIA_NW,
   MILLENNIUM_MEMORIAL_OVERPASS,
+  STALEWASEM_111A_N_N,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
@@ -13,7 +14,6 @@ const WEST_SIDE_ELEVATION_BUMP_2 = [49.2096, -122.89696];
 const WEST_SIDE_SPLIT = [49.20562, -122.88649];
 const WEST_SIDE_POST_SPLIT_UPPER = [49.20581, -122.88656];
 const WEST_UPPER_ELEVATION_END = [49.20586, -122.8822];
-const STALEWASEM_111A_N_N = [49.20572, -122.88074];
 
 const ONE_24_112_N = [49.20646, -122.87865];
 const STALEWASEM_NE = [49.20627, -122.87996];
@@ -48,7 +48,7 @@ export const STALEWASEM = [
   {
     routeNames: [ROUTES.stalewasem.name],
     description: "west - initial bit",
-    type: "mixed",
+    type: "combined",
     elevation: 1,
     oneWay: "required",
     positions: [WEST_SIDE_ELEVATION_START, WEST_SIDE_ELEVATION_BUMP_1],
@@ -56,7 +56,7 @@ export const STALEWASEM = [
   {
     routeNames: [ROUTES.stalewasem.name],
     description: "west - next little bit",
-    type: "mixed",
+    type: "combined",
     elevation: 1.5,
     oneWay: "required",
     positions: [WEST_SIDE_ELEVATION_BUMP_1, WEST_SIDE_ELEVATION_BUMP_2],
@@ -64,7 +64,7 @@ export const STALEWASEM = [
   {
     routeNames: [ROUTES.stalewasem.name],
     description: "west - primary",
-    type: "mixed",
+    type: "combined",
     elevation: 2,
     oneWay: "required",
     positions: [
@@ -85,7 +85,7 @@ export const STALEWASEM = [
   {
     routeNames: [ROUTES.stalewasem.name],
     description: "west - upper exit part 1",
-    type: "mixed",
+    type: "combined",
     elevation: 1.5,
     oneWay: "required",
     positions: [
@@ -97,7 +97,7 @@ export const STALEWASEM = [
   {
     routeNames: [ROUTES.stalewasem.name],
     description: "west - upper exit part 2",
-    type: "mixed",
+    type: "combined",
     elevation: 1,
     oneWay: "required",
     positions: [
@@ -111,7 +111,7 @@ export const STALEWASEM = [
   {
     routeNames: [ROUTES.stalewasem.name],
     description: "west - upper exit part 3",
-    type: "mixed",
+    type: "combined",
     elevation: 0.5,
     oneWay: "required",
     positions: [
@@ -124,7 +124,6 @@ export const STALEWASEM = [
 
   // east side
   {
-    routeNames: [ROUTES.stalewasem.name],
     description: "mup along 112",
     type: "mixed",
     videoIds: [
@@ -142,7 +141,7 @@ export const STALEWASEM = [
   {
     routeNames: [ROUTES.stalewasem.name],
     description: "east - south pre-elevation",
-    type: "mixed",
+    type: "combined",
     elevation: 0.5,
     oneWay: "required",
     videoIds: [
@@ -160,7 +159,7 @@ export const STALEWASEM = [
   {
     routeNames: [ROUTES.stalewasem.name],
     description: "east",
-    type: "mixed",
+    type: "combined",
     elevation: 1,
     oneWay: "required",
     videoIds: [
@@ -191,7 +190,7 @@ export const STALEWASEM = [
   {
     routeNames: [ROUTES.stalewasem.name],
     description: "east - north post-elevation",
-    type: "mixed",
+    type: "combined",
     elevation: 0.5,
     oneWay: "required",
     videoIds: [
@@ -202,6 +201,24 @@ export const STALEWASEM = [
   },
 
   // south end
+  {
+    description: "under bridge",
+    type: "mixed",
+    positions: [
+      STALEWASEM_111A_N_N,
+      [49.20571, -122.88213],
+      [49.20566, -122.88346],
+      [49.2057, -122.8836],
+      [49.20583, -122.88369],
+      [49.20598, -122.88367],
+      [49.20607, -122.88361],
+      [49.20615, -122.88341],
+      [49.20615, -122.88334],
+      [49.20616, -122.88141],
+      [49.20618, -122.88095],
+      STALEWASEM_NE,
+    ],
+  },
   {
     description: "124 st at east end of bridge",
     type: "quiet",

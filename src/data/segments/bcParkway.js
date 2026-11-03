@@ -37,6 +37,7 @@ import {
   QUEENSBOROUGH_STEWARDSON_W,
   SLOCAN_29TH,
   SLOCAN_BC_PARKWAY,
+  STALEWASEM_111A_N_N,
   STATION_HILL_SOUTHPOINT_NE,
   STATION_HILL_SOUTHPOINT_SE,
   STEWARDSON_GRIMSTON_S,
@@ -1612,6 +1613,26 @@ export const BC_PARKWAY = [
       ONE_ONE_ONE_AV_START_N,
     ],
   },
+  {
+    // routeNames: [ROUTES.bcParkway.name],
+    description: "mup along 111a/124",
+    type: "mixed",
+    positions: [
+      STALEWASEM_111A_N_N,
+      [49.20571, -122.87984],
+      [49.2057, -122.87953],
+      [49.20565, -122.87925],
+      [49.20556, -122.87894],
+      [49.20543, -122.87869],
+      [49.2053, -122.87856],
+      [49.20513, -122.8785],
+      [49.20461, -122.87848],
+      [49.20458, -122.87852],
+      [49.20447, -122.87852],
+      [49.20445, -122.8787], // TODO refine/connect
+    ],
+  },
+
   {
     routeNames: [ROUTES.bcParkway.name],
     description: "eb: 111a ave & 124 st",
