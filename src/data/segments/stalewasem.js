@@ -33,7 +33,7 @@ const MEMORIAL_OVERPASS_W = [49.21451, -122.90258];
 export const STALEWASEM = [
   // west side
   {
-    routeNames: [ROUTES.stalewasem.name],
+    routeNames: [ROUTES.stalewasem.name, ROUTES.bcParkway.name],
     description: "west - pre-elevation",
     type: "mixed",
     elevation: 0.5,
@@ -46,7 +46,7 @@ export const STALEWASEM = [
     ],
   },
   {
-    routeNames: [ROUTES.stalewasem.name],
+    routeNames: [ROUTES.stalewasem.name, ROUTES.bcParkway.name],
     description: "west - initial bit",
     type: "combined",
     elevation: 1,
@@ -54,7 +54,7 @@ export const STALEWASEM = [
     positions: [WEST_SIDE_ELEVATION_START, WEST_SIDE_ELEVATION_BUMP_1],
   },
   {
-    routeNames: [ROUTES.stalewasem.name],
+    routeNames: [ROUTES.stalewasem.name, ROUTES.bcParkway.name],
     description: "west - next little bit",
     type: "combined",
     elevation: 1.5,
@@ -62,7 +62,7 @@ export const STALEWASEM = [
     positions: [WEST_SIDE_ELEVATION_BUMP_1, WEST_SIDE_ELEVATION_BUMP_2],
   },
   {
-    routeNames: [ROUTES.stalewasem.name],
+    routeNames: [ROUTES.stalewasem.name, ROUTES.bcParkway.name],
     description: "west - primary",
     type: "combined",
     elevation: 2,
@@ -83,7 +83,7 @@ export const STALEWASEM = [
     ],
   },
   {
-    routeNames: [ROUTES.stalewasem.name],
+    routeNames: [ROUTES.stalewasem.name, ROUTES.bcParkway.name],
     description: "west - upper exit part 1",
     type: "combined",
     elevation: 1.5,
@@ -95,7 +95,7 @@ export const STALEWASEM = [
     ],
   },
   {
-    routeNames: [ROUTES.stalewasem.name],
+    routeNames: [ROUTES.stalewasem.name, ROUTES.bcParkway.name],
     description: "west - upper exit part 2",
     type: "combined",
     elevation: 1,
@@ -109,7 +109,7 @@ export const STALEWASEM = [
     ],
   },
   {
-    routeNames: [ROUTES.stalewasem.name],
+    routeNames: [ROUTES.stalewasem.name, ROUTES.bcParkway.name],
     description: "west - upper exit part 3",
     type: "combined",
     elevation: 0.5,
@@ -139,7 +139,7 @@ export const STALEWASEM = [
     ],
   },
   {
-    routeNames: [ROUTES.stalewasem.name],
+    routeNames: [ROUTES.stalewasem.name, ROUTES.bcParkway.name],
     description: "east - south pre-elevation",
     type: "combined",
     elevation: 0.5,
@@ -157,7 +157,7 @@ export const STALEWASEM = [
     ],
   },
   {
-    routeNames: [ROUTES.stalewasem.name],
+    routeNames: [ROUTES.stalewasem.name, ROUTES.bcParkway.name],
     description: "east",
     type: "combined",
     elevation: 1,
@@ -188,7 +188,7 @@ export const STALEWASEM = [
     ],
   },
   {
-    routeNames: [ROUTES.stalewasem.name],
+    routeNames: [ROUTES.stalewasem.name, ROUTES.bcParkway.name],
     description: "east - north post-elevation",
     type: "combined",
     elevation: 0.5,
@@ -206,6 +206,7 @@ export const STALEWASEM = [
 
   // south end
   {
+    routeNames: [ROUTES.bcParkway.name],
     description: "under bridge",
     type: "mixed",
     positions: [
@@ -258,6 +259,7 @@ export const STALEWASEM = [
       ROUTE_VIDEOS.stalewasemEastSb.id,
       ROUTE_VIDEOS.stalewasemEastNb.id,
     ],
+    oneWay: "recommended",
     positions: [STALEWASEM_E_END, [49.2115, -122.89841], MCBRIDE_EAST_SIDE],
   },
   {

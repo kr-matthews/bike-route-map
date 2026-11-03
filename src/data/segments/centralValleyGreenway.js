@@ -1444,7 +1444,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
-    routeNames: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
     description: "columbia: one-way bc parkway overlap",
     type: "mixed",
     positions: [
@@ -1461,14 +1461,14 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
-    routeNames: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
     description: "columbia: n of on-ramp",
     type: "mixed",
     elevation: 0.5,
     positions: [CVG_STALEWASEM_S, COLUMBIA_ON_RAMP_N],
   },
   {
-    routeNames: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
     description: "columbia: over on-ramp",
     type: "mixed",
     elevation: 1,
@@ -1484,7 +1484,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
-    routeNames: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
     description: "columbia: s of on-ramp",
     type: "mixed",
     elevation: 0.5,
@@ -1500,7 +1500,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
   },
   {
-    routeNames: [ROUTES.centralValleyGreenway.name],
+    routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
     description: "columbia: old split, to albert",
     type: "mixed",
     positions: [

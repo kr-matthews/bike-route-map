@@ -123,6 +123,9 @@ const ONE_26A_OVERPASS_BC_PARKWAY = [49.20596, -122.87171];
 const KING_GEORGE_OVERPASS_S = [49.20599, -122.87168];
 const KING_GEORGE_OVERPASS_N = [49.20661, -122.87097];
 
+const ONE_24_BC_PARKWAY_E = [49.20445, -122.87859];
+const ONE_24_BC_PARKWAY_W = [49.20445, -122.8787];
+
 export const BC_PARKWAY = [
   // vancouver alternates
   {
@@ -1477,7 +1480,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    // routeNames: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "from cvg to stalewasem join",
     type: "mixed",
     oneWay: "recommended",
@@ -1492,9 +1495,10 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    // routeNames: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "from stalewasem to cvg",
     type: "mixed",
+    oneWay: "recommended",
     positions: [
       STALEWASEM_E_END,
       [49.21134, -122.89851],
@@ -1512,7 +1516,6 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routeNames: [ROUTES.bcParkway.name],
     description: "towards pattullo bridge",
     type: "mixed",
     isClosed: true,
@@ -1543,7 +1546,6 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routeNames: [ROUTES.bcParkway.name],
     description: "onto pattullo bridge",
     type: "mixed",
     videoIds: [
@@ -1564,7 +1566,6 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routeNames: [ROUTES.bcParkway.name],
     description: "pre pattullo bridge",
     elevation: 0.5,
     type: "mixed",
@@ -1581,7 +1582,6 @@ export const BC_PARKWAY = [
     positions: [PATTULLO_PRE_ELEVATION_START, PATTULLO_ELEVATION_START],
   },
   {
-    routeNames: [ROUTES.bcParkway.name],
     description: "pattullo bridge",
     type: "other",
     elevation: 1,
@@ -1617,7 +1617,6 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    routeNames: [ROUTES.bcParkway.name],
     description: "post pattullo bridge",
     type: "mixed",
     elevation: 0.5,
@@ -1632,7 +1631,6 @@ export const BC_PARKWAY = [
     positions: [PATTULLO_ELEVATION_END, PATTULLO_POST_ELEVATION_END],
   },
   {
-    routeNames: [ROUTES.bcParkway.name],
     description: "bridge to 111a av",
     type: "mixed",
     videoIds: [
@@ -1653,7 +1651,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
-    // routeNames: [ROUTES.bcParkway.name],
+    routeNames: [ROUTES.bcParkway.name],
     description: "mup along 111a/124",
     type: "mixed",
     positions: [
@@ -1666,19 +1664,25 @@ export const BC_PARKWAY = [
       [49.2053, -122.87856],
       [49.20513, -122.8785],
       [49.20461, -122.87848],
-      [49.20458, -122.87852],
-      [49.20447, -122.87852],
-      [49.20445, -122.8787], // TODO refine/connect
+      [49.20458, -122.87853],
+      [49.20445, -122.87853],
+      ONE_24_BC_PARKWAY_E,
     ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "crossing 124",
+    type: "mixed",
+    oneWay: "recommended",
+    hideArrows: true,
+    positions: [ONE_24_BC_PARKWAY_E, ONE_24_BC_PARKWAY_W],
   },
 
   {
-    routeNames: [ROUTES.bcParkway.name],
-    description: "eb: 111a ave & 124 st",
+    description: "eb: 111a ave & 124 st - old bit",
     type: "painted",
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.pattulloSb.id, ROUTE_VIDEOS.bcParkwaySurreyEb.id],
-    videoIdsEndAtEnd: [ROUTE_VIDEOS.pattulloSb.id],
     positions: [
       ONE_ONE_ONE_AV_START_N,
       ONE_ONE_ONE_AV_START_S,
@@ -1696,6 +1700,18 @@ export const BC_PARKWAY = [
       [49.20526, -122.87874],
       [49.2052, -122.87871],
       [49.20511, -122.8787],
+      ONE_24_BC_PARKWAY_W,
+    ],
+  },
+  {
+    routeNames: [ROUTES.bcParkway.name],
+    description: "eb: 111a ave & 124 st - remaining bit",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.pattulloSb.id, ROUTE_VIDEOS.bcParkwaySurreyEb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.pattulloSb.id],
+    positions: [
+      ONE_24_BC_PARKWAY_W,
       [49.20354, -122.87871],
       [49.20342, -122.8787],
       [49.20332, -122.87867],
@@ -1749,7 +1765,7 @@ export const BC_PARKWAY = [
   },
   {
     routeNames: [ROUTES.bcParkway.name],
-    description: "wb: 124 st & 111a ave",
+    description: "wb: 124 st & 111a ave - remaining",
     type: "painted",
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.pattulloNb.id, ROUTE_VIDEOS.bcParkwaySurreyWb.id],
@@ -1761,6 +1777,16 @@ export const BC_PARKWAY = [
       [49.20324, -122.87853],
       [49.20338, -122.87858],
       [49.20352, -122.8786],
+      ONE_24_BC_PARKWAY_E,
+    ],
+  },
+  {
+    description: "wb: 124 st & 111a ave - old",
+    type: "painted",
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.pattulloNb.id, ROUTE_VIDEOS.bcParkwaySurreyWb.id],
+    positions: [
+      ONE_24_BC_PARKWAY_E,
       [49.2051, -122.87859],
       [49.20523, -122.8786],
       [49.20531, -122.87863],
