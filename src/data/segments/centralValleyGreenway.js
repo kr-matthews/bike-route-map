@@ -1,5 +1,6 @@
 import {
-  BC_PARKWAY_CVG_SPLIT,
+  ALBERT_CVG,
+  BC_PARKWAY_CVG_SPLIT_OLD,
   BC_PARKWAY_TIN_SOLDIER,
   BEGBIE_COLUMBIA_N,
   BRUNETTE_FRASER_CVG_NE,
@@ -9,6 +10,8 @@ import {
   CARIBOO_GOVERNMENT,
   COLUMBIA_CUMBERLAND_SW,
   COLUMBIA_SHERBROOKE_W,
+  CVG_STALEWASEM_N,
+  CVG_STALEWASEM_S,
   EASTBROOK_STILL_CREEK,
   EIGHTH_CARNARVON_E,
   ELLIOT_COLUMBIA,
@@ -114,6 +117,9 @@ const EAST_OF_BOUNDARY = [49.26242, -123.02222];
 const WEST_OF_BOUNDARY = [49.26247, -123.02496];
 
 const PHILLIPS_WINSTON_S = [49.24967, -122.94875];
+
+const COLUMBIA_ON_RAMP_N = [49.20938, -122.8991];
+const COLUMBIA_ON_RAMP_S = [49.20906, -122.89942];
 
 export const CENTRAL_VALLEY_GREENWAY = [
   // connections
@@ -1426,7 +1432,89 @@ export const CENTRAL_VALLEY_GREENWAY = [
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name],
-    description: "columbia: mcbride to bc parkway split",
+    description: "columbia: mcbride to bc parkway/stalewasem",
+    type: "mixed",
+    positions: [
+      MCBRIDE_COLUMBIA_NW,
+      [49.21107, -122.89795],
+      [49.21095, -122.8981],
+      [49.21081, -122.89826],
+      [49.21065, -122.89838],
+      CVG_STALEWASEM_N,
+    ],
+  },
+  {
+    routeNames: [ROUTES.centralValleyGreenway.name],
+    description: "columbia: one-way bc parkway overlap",
+    type: "mixed",
+    positions: [
+      CVG_STALEWASEM_N,
+      [49.21023, -122.8986],
+      [49.21014, -122.89872],
+      [49.21006, -122.89885],
+      [49.21003, -122.89909],
+      [49.21003, -122.89935],
+      [49.21, -122.89945],
+      [49.20994, -122.89951],
+      [49.20985, -122.89953],
+      CVG_STALEWASEM_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.centralValleyGreenway.name],
+    description: "columbia: n of on-ramp",
+    type: "mixed",
+    elevation: 0.5,
+    positions: [CVG_STALEWASEM_S, COLUMBIA_ON_RAMP_N],
+  },
+  {
+    routeNames: [ROUTES.centralValleyGreenway.name],
+    description: "columbia: over on-ramp",
+    type: "mixed",
+    elevation: 1,
+    positions: [
+      COLUMBIA_ON_RAMP_N,
+      [49.20928, -122.89903],
+      [49.20919, -122.89902],
+      [49.20886, -122.89933],
+      [49.20885, -122.89943],
+      [49.20888, -122.89947],
+      [49.20893, -122.89948],
+      COLUMBIA_ON_RAMP_S,
+    ],
+  },
+  {
+    routeNames: [ROUTES.centralValleyGreenway.name],
+    description: "columbia: s of on-ramp",
+    type: "mixed",
+    elevation: 0.5,
+    positions: [
+      COLUMBIA_ON_RAMP_S,
+      [49.20914, -122.8994],
+      [49.20917, -122.89946],
+      [49.20916, -122.89953],
+      [49.20903, -122.89961],
+      [49.20891, -122.8998],
+      [49.20884, -122.89988],
+      ALBERT_CVG,
+    ],
+  },
+  {
+    routeNames: [ROUTES.centralValleyGreenway.name],
+    description: "columbia: old split, to albert",
+    type: "mixed",
+    positions: [
+      ALBERT_CVG,
+      [49.20851, -122.90006],
+      [49.20825, -122.90042],
+      [49.20804, -122.90058],
+      [49.20782, -122.90069],
+      [49.20767, -122.9007],
+      BC_PARKWAY_CVG_SPLIT_OLD,
+    ],
+  },
+  {
+    description: "OLD - columbia: mcbride to bc parkway split",
     type: "mixed",
     isClosed: true,
     videoIds: [ROUTE_VIDEOS.centralValleyNWNb.id],
@@ -1446,7 +1534,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
       [49.20794, -122.90018],
       [49.20791, -122.90026],
       [49.20775, -122.90036],
-      BC_PARKWAY_CVG_SPLIT,
+      BC_PARKWAY_CVG_SPLIT_OLD,
     ],
   },
   {
@@ -1462,7 +1550,11 @@ export const CENTRAL_VALLEY_GREENWAY = [
     ],
     videoIdsStartAtStart: [ROUTE_VIDEOS.carnarvonWb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.carnarvonEb.id],
-    positions: [BC_PARKWAY_CVG_SPLIT, [49.20694, -122.90122], ELLIOT_COLUMBIA],
+    positions: [
+      BC_PARKWAY_CVG_SPLIT_OLD,
+      [49.20694, -122.90122],
+      ELLIOT_COLUMBIA,
+    ],
   },
   {
     routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],

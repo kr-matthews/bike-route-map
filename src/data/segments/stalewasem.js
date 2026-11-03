@@ -3,11 +3,12 @@ import {
   MCBRIDE_COLUMBIA_NW,
   MILLENNIUM_MEMORIAL_OVERPASS,
   STALEWASEM_111A_N_N,
+  STALEWASEM_E_END,
+  STALEWASEM_W_START,
 } from "../intersections";
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
-const WEST_SIDE_FINAL_JOIN = [49.21018, -122.89953];
 const WEST_SIDE_ELEVATION_START = [49.21015, -122.8989];
 const WEST_SIDE_ELEVATION_BUMP_1 = [49.20986, -122.89794];
 const WEST_SIDE_ELEVATION_BUMP_2 = [49.2096, -122.89696];
@@ -15,11 +16,10 @@ const WEST_SIDE_SPLIT = [49.20562, -122.88649];
 const WEST_SIDE_POST_SPLIT_UPPER = [49.20581, -122.88656];
 const WEST_UPPER_ELEVATION_END = [49.20586, -122.8822];
 
-const ONE_24_112_N = [49.20646, -122.87865];
+const ONE_24_112_N = [49.2065, -122.87866];
 const STALEWASEM_NE = [49.20627, -122.87996];
 const EAST_SIDE_ELEVATION_START = [49.2061, -122.88218];
 const EAST_SIDE_ELEVATION_END = [49.21125, -122.89823];
-const EAST_SIDE_END = [49.21137, -122.89844];
 const MCBRIDE_EAST_SIDE = [49.21152, -122.89838];
 
 const MCBRIDE_ROYAL_SE = [49.21208, -122.89877];
@@ -39,7 +39,7 @@ export const STALEWASEM = [
     elevation: 0.5,
     oneWay: "required",
     positions: [
-      WEST_SIDE_FINAL_JOIN,
+      STALEWASEM_W_START,
       [49.2102, -122.89938],
       [49.2102, -122.89919],
       WEST_SIDE_ELEVATION_START,
@@ -197,7 +197,11 @@ export const STALEWASEM = [
       ROUTE_VIDEOS.stalewasemEastSb.id,
       ROUTE_VIDEOS.stalewasemEastNb.id,
     ],
-    positions: [EAST_SIDE_ELEVATION_END, [49.21133, -122.89831], EAST_SIDE_END],
+    positions: [
+      EAST_SIDE_ELEVATION_END,
+      [49.21133, -122.89831],
+      STALEWASEM_E_END,
+    ],
   },
 
   // south end
@@ -254,7 +258,7 @@ export const STALEWASEM = [
       ROUTE_VIDEOS.stalewasemEastSb.id,
       ROUTE_VIDEOS.stalewasemEastNb.id,
     ],
-    positions: [EAST_SIDE_END, [49.2115, -122.89841], MCBRIDE_EAST_SIDE],
+    positions: [STALEWASEM_E_END, [49.2115, -122.89841], MCBRIDE_EAST_SIDE],
   },
   {
     description: "mcbride w - columbia to east side",

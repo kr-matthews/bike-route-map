@@ -1,4 +1,5 @@
 import {
+  ALBERT_CVG,
   FIRST_AGNES,
   MCBRIDE_6TH_W,
   MCBRIDE_SEVENTH_W,
@@ -14,16 +15,35 @@ const MILLENNIUM_TRAIL_NE = [49.21926, -122.90845];
 const MILLENNIUM_TRAIL_NE_S = [49.21911, -122.90826];
 const MILLENNIUM_TRAIL_NE_W = [49.21914, -122.90867];
 
+const ALBERT_CR_S = [49.20881, -122.9001];
+
 export const MILLENNIUM_TRAIL = [
   {
-    description: "connection from pattullo bridge to agnes",
+    description: "connection from bridge to agnes (old bit)",
     type: "quiet",
+    undesignated: true,
     videoIds: [ROUTE_VIDEOS.millenniumSb.id, ROUTE_VIDEOS.agnesEb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.millenniumSb.id],
+    positions: [PATTULLO_ALBERT, [49.20884, -122.90003], ALBERT_CR_S],
+  },
+  {
+    description: "connection from cvg to albert cr",
+    type: "mixed",
     positions: [
-      PATTULLO_ALBERT,
-      [49.20884, -122.90003],
-      [49.20881, -122.9001],
+      ALBERT_CVG,
+      [49.2086, -122.90011],
+      [49.20866, -122.90018],
+      [49.2087, -122.90017],
+      [49.20877, -122.90008],
+      ALBERT_CR_S,
+    ],
+  },
+  {
+    description: "albert cr & 1st, cvg to agnes",
+    type: "quiet",
+    videoIds: [ROUTE_VIDEOS.millenniumSb.id, ROUTE_VIDEOS.agnesEb.id],
+    positions: [
+      ALBERT_CR_S,
       [49.20878, -122.9002],
       [49.20878, -122.90032],
       [49.20882, -122.90088],
