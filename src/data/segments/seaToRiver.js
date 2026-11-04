@@ -31,6 +31,8 @@ const GILMORE_LANE_START = [49.26723, -123.01416];
 
 const GILMORE_1ST_NE = [49.26947, -123.01412];
 const CARLETON_DOUGLAS_N = [49.26937, -123.01323];
+const GILMORE_WILLIAM_E = [49.27389, -123.01416];
+const CARLETON_WILLIAM = [49.27386, -123.01152];
 
 const HIGHWAY_OVERPASS_START = [49.2573, -123.01212];
 const HIGHWAY_OVERPASS_END = [49.25829, -123.01213];
@@ -350,8 +352,28 @@ export const SEA_TO_RIVER = [
     ],
   },
   {
+    description: "gilmore, 1st to william",
+    type: "mixed",
+    positions: [
+      GILMORE_1ST_NE,
+      [49.26991, -123.01408],
+      [49.2701, -123.01414],
+      [49.27062, -123.01417],
+      [49.27338, -123.01417],
+      [49.27347, -123.01419],
+      [49.2737, -123.01419],
+      GILMORE_WILLIAM_E,
+    ],
+  },
+  {
+    description: "william, gilmore to carleton",
+    type: "quiet",
+    undesignated: true,
+    positions: [GILMORE_WILLIAM_E, CARLETON_WILLIAM],
+  },
+  {
     routeNames: [ROUTES.seaToRiver.name],
-    description: "1st",
+    description: "douglas",
     type: "mixed",
     videoIds: [ROUTE_VIDEOS.seaToRiverSb.id, ROUTE_VIDEOS.seaToRiverNb.id],
     positions: [
@@ -377,7 +399,7 @@ export const SEA_TO_RIVER = [
       [49.27207, -123.01208],
       [49.27294, -123.01157],
       [49.2731, -123.01154],
-      [49.27384, -123.01152],
+      CARLETON_WILLIAM,
       [49.27568, -123.0115],
       [49.27744, -123.01149],
       CARLETON_FRANCES,
