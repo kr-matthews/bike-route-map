@@ -2430,6 +2430,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Jun 01 2026"),
     minutes: 6,
   },
+  stalewasemWestSb: {
+    id: "fBZofjSX6a0",
+    tlId: "W1Lsyh-AF2k",
+    date: new Date("Nov 02 2026"),
+    minutes: 8,
+  },
   stAndrewsNb: {
     id: "367Y0w5y-pw",
     tlId: "0H-PcTS3aJg",

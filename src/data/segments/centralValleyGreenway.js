@@ -1465,6 +1465,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "columbia: n of on-ramp",
     type: "mixed",
     elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
     positions: [CVG_STALEWASEM_S, COLUMBIA_ON_RAMP_N],
   },
   {
@@ -1472,6 +1473,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "columbia: over on-ramp",
     type: "mixed",
     elevation: 1,
+    videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
     positions: [
       COLUMBIA_ON_RAMP_N,
       [49.20928, -122.89903],
@@ -1488,6 +1490,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     description: "columbia: s of on-ramp",
     type: "mixed",
     elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
     positions: [
       COLUMBIA_ON_RAMP_S,
       [49.20914, -122.8994],
@@ -1503,6 +1506,7 @@ export const CENTRAL_VALLEY_GREENWAY = [
     routeNames: [ROUTES.centralValleyGreenway.name, ROUTES.bcParkway.name],
     description: "columbia: old split, to albert",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
     positions: [
       ALBERT_CVG,
       [49.20851, -122.90006],
@@ -1543,12 +1547,14 @@ export const CENTRAL_VALLEY_GREENWAY = [
     type: "mixed",
     videoIds: [
       ROUTE_VIDEOS.centralValleyNWNb.id,
+      ROUTE_VIDEOS.stalewasemWestSb.id,
       ROUTE_VIDEOS.bcParkwayNWWb.id,
       ROUTE_VIDEOS.bcParkwayNWEb.id,
       ROUTE_VIDEOS.carnarvonWb.id,
       ROUTE_VIDEOS.carnarvonEb.id,
     ],
     videoIdsStartAtStart: [ROUTE_VIDEOS.carnarvonWb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.stalewasemWestSb.id],
     videoIdsEndAtStart: [ROUTE_VIDEOS.carnarvonEb.id],
     positions: [
       BC_PARKWAY_CVG_SPLIT_OLD,

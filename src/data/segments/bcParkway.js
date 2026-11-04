@@ -1484,6 +1484,7 @@ export const BC_PARKWAY = [
     description: "from cvg to stalewasem join",
     type: "mixed",
     oneWay: "recommended",
+    videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
     positions: [
       CVG_STALEWASEM_S,
       [49.20973, -122.89966],
@@ -1659,6 +1660,7 @@ export const BC_PARKWAY = [
     routeNames: [ROUTES.bcParkway.name],
     description: "mup along 111a/124",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
     positions: [
       STALEWASEM_111A_N_N,
       [49.20571, -122.87984],
@@ -1680,6 +1682,7 @@ export const BC_PARKWAY = [
     type: "mixed",
     oneWay: "recommended",
     hideArrows: true,
+    videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
     positions: [ONE_24_BC_PARKWAY_E, ONE_24_BC_PARKWAY_W],
   },
 
@@ -1713,8 +1716,15 @@ export const BC_PARKWAY = [
     description: "eb: 111a ave & 124 st - remaining bit",
     type: "painted",
     oneWay: "required",
-    videoIds: [ROUTE_VIDEOS.pattulloSb.id, ROUTE_VIDEOS.bcParkwaySurreyEb.id],
-    videoIdsEndAtEnd: [ROUTE_VIDEOS.pattulloSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.bcParkwaySurreyEb.id,
+      ROUTE_VIDEOS.stalewasemWestSb.id,
+      ROUTE_VIDEOS.pattulloSb.id,
+    ],
+    videoIdsEndAtEnd: [
+      ROUTE_VIDEOS.stalewasemWestSb.id,
+      ROUTE_VIDEOS.pattulloSb.id,
+    ],
     positions: [
       ONE_24_BC_PARKWAY_W,
       [49.20354, -122.87871],

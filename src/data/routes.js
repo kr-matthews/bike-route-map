@@ -470,7 +470,7 @@ export const ROUTES = {
         },
       },
       {
-        name: "New Westminster",
+        name: "New Westminster (including old Pattullo Bridge)",
         videos: {
           eastbound: ROUTE_VIDEOS.bcParkwayNWEb,
           westbound: ROUTE_VIDEOS.bcParkwayNWWb,
@@ -488,6 +488,13 @@ export const ROUTES = {
         },
       },
       {
+        name: "stal̕əw̓asəm (Riverview) Bridge",
+        videos: {
+          // northbound: ROUTE_VIDEOS.stalewasemEastNb, // refilm
+          southbound: ROUTE_VIDEOS.stalewasemWestSb,
+        },
+      },
+      {
         name: "Pattullo Bridge [Now Closed]",
         videos: {
           northbound: ROUTE_VIDEOS.pattulloNb,
@@ -495,7 +502,7 @@ export const ROUTES = {
         },
       },
       {
-        name: "Surrey",
+        name: "Surrey (including old Pattullo Bridge)",
         videos: {
           eastbound: ROUTE_VIDEOS.bcParkwaySurreyEb,
           westbound: ROUTE_VIDEOS.bcParkwaySurreyWb,
@@ -503,7 +510,7 @@ export const ROUTES = {
       },
     ],
     notes:
-      "The quality varies a lot. There are lots of hills. Burnaby is planning on upgrading several sections. New Westminster upgraded the Stewardson portion in 2025. The east end in Surrey can be quite bad, and it's not well-signed so it's not clear where the route ends. The Pattullo bridge was the worst, but it's now closed - unfortunately the new bridge won't have cyclist access for about 3 months or so.",
+      "The quality varies a lot. There are lots of hills. Burnaby is planning on upgrading several sections. New Westminster upgraded the Stewardson portion in 2025. The east end in Surrey can be quite bad, and it's not well-signed so it's not clear where the route ends. The Pattullo bridge was the worst, but it's now closed and has been replaced by the stal̕əw̓asəm (Riverview) Bridge as of 2026, which is much better but still flawed.",
   },
   beatty: {
     name: "Beatty St",
@@ -3372,9 +3379,14 @@ export const ROUTES = {
     shortName: "stal̕əw̓asəm Bridge",
     regions: [REGIONS.newWestminster, REGIONS.surrey],
     legs: [
-      { name: "West MUP", videos: {} },
       {
-        name: "East MUP",
+        videos: {
+          northbound: ROUTE_VIDEOS.stalewasemEastNb, // to refilm
+          southbound: ROUTE_VIDEOS.stalewasemWestSb,
+        },
+      },
+      {
+        name: "Initial temporary two-way east MUP during construction",
         videos: {
           northbound: ROUTE_VIDEOS.stalewasemEastNb,
           southbound: ROUTE_VIDEOS.stalewasemEastSb,

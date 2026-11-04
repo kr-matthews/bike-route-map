@@ -38,6 +38,7 @@ export const STALEWASEM = [
     type: "mixed",
     elevation: 0.5,
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
     positions: [
       STALEWASEM_W_START,
       [49.2102, -122.89938],
@@ -51,6 +52,7 @@ export const STALEWASEM = [
     type: "combined",
     elevation: 1,
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
     positions: [WEST_SIDE_ELEVATION_START, WEST_SIDE_ELEVATION_BUMP_1],
   },
   {
@@ -59,6 +61,7 @@ export const STALEWASEM = [
     type: "combined",
     elevation: 1.5,
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
     positions: [WEST_SIDE_ELEVATION_BUMP_1, WEST_SIDE_ELEVATION_BUMP_2],
   },
   {
@@ -67,6 +70,7 @@ export const STALEWASEM = [
     type: "combined",
     elevation: 2,
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
     positions: [
       WEST_SIDE_ELEVATION_BUMP_2,
       [49.20804, -122.89245],
@@ -88,6 +92,7 @@ export const STALEWASEM = [
     type: "combined",
     elevation: 1.5,
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
     positions: [
       WEST_SIDE_SPLIT,
       [49.20573, -122.88655],
@@ -100,6 +105,7 @@ export const STALEWASEM = [
     type: "combined",
     elevation: 1,
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
     positions: [
       WEST_SIDE_POST_SPLIT_UPPER,
       [49.20589, -122.88652],
@@ -114,6 +120,7 @@ export const STALEWASEM = [
     type: "combined",
     elevation: 0.5,
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
     positions: [
       WEST_UPPER_ELEVATION_END,
       [49.20585, -122.88119],
