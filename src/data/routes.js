@@ -2763,6 +2763,21 @@ export const ROUTES = {
     notes:
       "Very flat. The connections are either end are quite bad and there's nothing in the middle. It can be hard to follow north of Granville. At the north end, you cannot cross Westminster Hwy, so will have to approach/leave via the eastbound shoulder.",
   },
+  pattullo: {
+    name: "Pattullo Bridge [Now Closed]",
+    shortName: "Pattullo Bridge",
+    regions: [REGIONS.newWestminster, REGIONS.surrey],
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.pattulloNb,
+          southbound: ROUTE_VIDEOS.pattulloSb,
+        },
+      },
+    ],
+    notes:
+      "The former bridge which the stal̕əw̓asəm (Riverview) Bridge replaced. It's closed now, and was absolutely terrible.",
+  },
   pender: {
     name: "Pender St",
     regions: [REGIONS.vancouver],

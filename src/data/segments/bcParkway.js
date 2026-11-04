@@ -1546,6 +1546,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
+    routeNames: [ROUTES.pattullo.name],
     description: "onto pattullo bridge",
     type: "mixed",
     videoIds: [
@@ -1566,6 +1567,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
+    routeNames: [ROUTES.pattullo.name],
     description: "pre pattullo bridge",
     elevation: 0.5,
     type: "mixed",
@@ -1582,6 +1584,7 @@ export const BC_PARKWAY = [
     positions: [PATTULLO_PRE_ELEVATION_START, PATTULLO_ELEVATION_START],
   },
   {
+    routeNames: [ROUTES.pattullo.name],
     description: "pattullo bridge",
     type: "other",
     elevation: 1,
@@ -1617,6 +1620,7 @@ export const BC_PARKWAY = [
     ],
   },
   {
+    routeNames: [ROUTES.pattullo.name],
     description: "post pattullo bridge",
     type: "mixed",
     elevation: 0.5,
@@ -1631,6 +1635,7 @@ export const BC_PARKWAY = [
     positions: [PATTULLO_ELEVATION_END, PATTULLO_POST_ELEVATION_END],
   },
   {
+    routeNames: [ROUTES.pattullo.name],
     description: "bridge to 111a av",
     type: "mixed",
     videoIds: [
