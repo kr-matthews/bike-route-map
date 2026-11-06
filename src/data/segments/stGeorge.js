@@ -12,12 +12,15 @@ export const ST_GEORGE = [
     routeNames: [ROUTES.stGeorge.name],
     description: "10th to broadway",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.stGeorgeSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.stGeorgeSb.id],
     positions: [ST_GEORGE_10TH, ST_GEORGE_BROADWAY],
   },
   {
     routeNames: [ROUTES.stGeorge.name],
     description: "broadway to alley",
     type: "dedicated",
+    videoIds: [ROUTE_VIDEOS.stGeorgeSb.id],
     positions: [
       ST_GEORGE_BROADWAY,
       [49.26262, -123.09303],
@@ -32,13 +35,14 @@ export const ST_GEORGE = [
     routeNames: [ROUTES.stGeorge.name],
     description: "broadway+ to 8th",
     type: "quiet",
+    videoIds: [ROUTE_VIDEOS.stGeorgeSb.id],
     positions: [ST_GEORGE_8TH_ALLEY, ST_GEORGE_8TH],
   },
   {
     routeNames: [ROUTES.stGeorge.name],
     description: "8th to 7th",
     type: "quiet",
-    videoIds: [ROUTE_VIDEOS.stGeorgeNb.id],
+    videoIds: [ROUTE_VIDEOS.stGeorgeSb.id, ROUTE_VIDEOS.stGeorgeNb.id],
     videoIdsStartAtStart: [ROUTE_VIDEOS.stGeorgeNb.id],
     positions: [[49.26353, -123.09301], ST_GEORGE_7TH_N],
   },
@@ -46,7 +50,8 @@ export const ST_GEORGE = [
     routeNames: [ROUTES.stGeorge.name],
     description: "7th to 6th",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.stGeorgeNb.id],
+    videoIds: [ROUTE_VIDEOS.stGeorgeSb.id, ROUTE_VIDEOS.stGeorgeNb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.stGeorgeSb.id], // slightly misleading
     videoIdsEndAtEnd: [ROUTE_VIDEOS.stGeorgeNb.id],
     positions: [
       ST_GEORGE_7TH_N,
