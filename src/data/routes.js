@@ -3386,6 +3386,10 @@ export const ROUTES = {
         },
       },
       {
+        name: "Under the south end",
+        videos: { northbound: ROUTE_VIDEOS.stalewasemSouthUnderNb },
+      },
+      {
         name: "Initial temporary two-way east MUP during construction",
         videos: {
           northbound: ROUTE_VIDEOS.stalewasemEastNb,

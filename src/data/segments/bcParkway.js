@@ -1660,7 +1660,10 @@ export const BC_PARKWAY = [
     routeNames: [ROUTES.bcParkway.name],
     description: "mup along 111a/124",
     type: "mixed",
-    videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
+    videoIds: [
+      ROUTE_VIDEOS.stalewasemSouthUnderNb.id,
+      ROUTE_VIDEOS.stalewasemWestSb.id,
+    ],
     positions: [
       STALEWASEM_111A_N_N,
       [49.20571, -122.87984],
@@ -1783,8 +1786,15 @@ export const BC_PARKWAY = [
     description: "wb: 124 st & 111a ave - remaining",
     type: "painted",
     oneWay: "required",
-    videoIds: [ROUTE_VIDEOS.pattulloNb.id, ROUTE_VIDEOS.bcParkwaySurreyWb.id],
-    videoIdsStartAtStart: [ROUTE_VIDEOS.pattulloNb.id],
+    videoIds: [
+      ROUTE_VIDEOS.stalewasemSouthUnderNb.id,
+      ROUTE_VIDEOS.pattulloNb.id,
+      ROUTE_VIDEOS.bcParkwaySurreyWb.id,
+    ],
+    videoIdsStartAtStart: [
+      ROUTE_VIDEOS.stalewasemSouthUnderNb.id,
+      ROUTE_VIDEOS.pattulloNb.id,
+    ],
     positions: [
       SCOTT_110_E,
       [49.20306, -122.87837],

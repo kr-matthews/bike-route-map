@@ -134,9 +134,11 @@ export const STALEWASEM = [
     description: "mup along 112",
     type: "mixed",
     videoIds: [
+      ROUTE_VIDEOS.stalewasemSouthUnderNb.id,
       ROUTE_VIDEOS.stalewasemEastNb.id,
       ROUTE_VIDEOS.stalewasemEastSb.id,
     ],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.stalewasemSouthUnderNb.id],
     positions: [
       ONE_24_112_N,
       [49.20647, -122.8793],
@@ -216,6 +218,7 @@ export const STALEWASEM = [
     routeNames: [ROUTES.bcParkway.name],
     description: "under bridge",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.stalewasemSouthUnderNb.id],
     positions: [
       STALEWASEM_111A_N_N,
       [49.20571, -122.88213],
