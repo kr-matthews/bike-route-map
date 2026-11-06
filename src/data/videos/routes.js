@@ -2826,6 +2826,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Sep 11 2024"),
     minutes: 20,
   },
+  willingdonHeightsNb: {
+    id: "NxkTXyj7Ng4",
+    date: new Date("Nov 03 2026"),
+    minutes: 2,
+  },
   willingdonNb: {
     id: "4yMSr32qwwg",
     tlId: "PgomkXVUWVg",

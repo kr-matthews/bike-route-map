@@ -354,6 +354,8 @@ export const SEA_TO_RIVER = [
   {
     description: "gilmore, 1st to william",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.willingdonHeightsNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.willingdonHeightsNb.id],
     positions: [
       GILMORE_1ST_NE,
       [49.26991, -123.01408],
@@ -369,6 +371,8 @@ export const SEA_TO_RIVER = [
     description: "william, gilmore to carleton",
     type: "quiet",
     undesignated: true,
+    videoIds: [ROUTE_VIDEOS.willingdonHeightsNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.willingdonHeightsNb.id],
     positions: [GILMORE_WILLIAM_E, CARLETON_WILLIAM],
   },
   {
