@@ -555,6 +555,12 @@ export const ROUTE_VIDEOS = {
     date: new Date("Mar 29 2024"),
     minutes: 22,
   },
+  centralValleyNWSb: {
+    id: "ZUVukczxjtw",
+    tlId: "51aQZNjqpbw",
+    date: new Date("Nov 03 2026"),
+    minutes: 26,
+  },
   centralValleyVancouverEb: {
     id: "UkRTUCueaYA",
     tlId: "-SYtRELiNRI",

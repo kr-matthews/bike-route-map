@@ -1001,7 +1001,10 @@ export const ROUTES = {
       },
       {
         name: "New Westminster",
-        videos: { northbound: ROUTE_VIDEOS.centralValleyNWNb },
+        videos: {
+          northbound: ROUTE_VIDEOS.centralValleyNWNb,
+          southbound: ROUTE_VIDEOS.centralValleyNWSb,
+        },
       },
     ],
     notes:
