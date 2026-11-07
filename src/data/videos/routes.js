@@ -2348,6 +2348,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("Feb 03 2026"),
     minutes: 6,
   },
+  seventhNwSb: {
+    id: "I8Wk4OEW8no",
+    date: new Date("Nov 02 2026"),
+    minutes: 4,
+  },
   shellNb: {
     id: "kKSkUAXoGH4",
     tlId: "Su74TrHy5eg",
