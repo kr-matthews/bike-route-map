@@ -101,7 +101,6 @@ export const STALEWASEM = [
     elevation: 1,
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
-    debug: true,
     positions: [
       WEST_SIDE_POST_SPLIT_UPPER,
       [49.20576, -122.8856],
