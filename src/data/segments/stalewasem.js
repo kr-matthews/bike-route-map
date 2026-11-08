@@ -12,8 +12,8 @@ import { ROUTE_VIDEOS } from "../videos/routes";
 const WEST_SIDE_ELEVATION_START = [49.21015, -122.8989];
 const WEST_SIDE_ELEVATION_BUMP_1 = [49.20986, -122.89794];
 const WEST_SIDE_ELEVATION_BUMP_2 = [49.2096, -122.89696];
-const WEST_SIDE_SPLIT = [49.20562, -122.88649];
-const WEST_SIDE_POST_SPLIT_UPPER = [49.20581, -122.88656];
+const WEST_SIDE_SPLIT = [49.20548, -122.88573];
+const WEST_SIDE_POST_SPLIT_UPPER = [49.2056, -122.88567];
 const WEST_UPPER_ELEVATION_END = [49.20586, -122.8822];
 
 const ONE_24_112_N = [49.2065, -122.87866];
@@ -76,13 +76,11 @@ export const STALEWASEM = [
       [49.20804, -122.89245],
       [49.20634, -122.88756],
       [49.20608, -122.88689],
-      [49.20569, -122.88592],
-      [49.20542, -122.88537],
-      [49.20528, -122.88515],
-      [49.20519, -122.88511],
-      [49.20509, -122.88521],
-      [49.20547, -122.88623],
-      [49.20554, -122.88639],
+      [49.20598, -122.88654],
+      [49.20573, -122.88581],
+      [49.20556, -122.88541],
+      [49.20527, -122.88506],
+      [49.20516, -122.88515],
       WEST_SIDE_SPLIT,
     ],
   },
@@ -92,12 +90,9 @@ export const STALEWASEM = [
     type: "combined",
     elevation: 1.5,
     oneWay: "required",
+    hideArrows: true,
     videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
-    positions: [
-      WEST_SIDE_SPLIT,
-      [49.20573, -122.88655],
-      WEST_SIDE_POST_SPLIT_UPPER,
-    ],
+    positions: [WEST_SIDE_SPLIT, WEST_SIDE_POST_SPLIT_UPPER],
   },
   {
     routeNames: [ROUTES.stalewasem.name, ROUTES.bcParkway.name],
@@ -106,11 +101,11 @@ export const STALEWASEM = [
     elevation: 1,
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
+    debug: true,
     positions: [
       WEST_SIDE_POST_SPLIT_UPPER,
-      [49.20589, -122.88652],
-      [49.20595, -122.88632],
-      [49.20588, -122.88508],
+      [49.20576, -122.8856],
+      [49.20586, -122.88517],
       WEST_UPPER_ELEVATION_END,
     ],
   },
