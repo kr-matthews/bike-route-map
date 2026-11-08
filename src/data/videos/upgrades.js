@@ -575,4 +575,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.25451, -122.93923],
     region: REGIONS.burnaby,
   },
+  stalewasemSb26: {
+    id: "d7FvdduApP0",
+    title: "Pattullo Bridge → stal̕əw̓asəm Bridge",
+    routeNames: [ROUTES.stalewasem.name, ROUTES.pattullo.name],
+    direction: "southbound",
+    date: new Date("Nov 02 2026"),
+    minutes: 4,
+    position: [49.20812, -122.89242],
+    region: REGIONS.newWestminster,
+  },
 };
