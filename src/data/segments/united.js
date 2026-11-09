@@ -1,6 +1,8 @@
 import {
   CANFOR_BRAID,
+  KING_EDWARD_LOUGHEED_NE,
   KING_EDWARD_LOUGHEED_NW,
+  KING_EDWARD_LOUGHEED_SE,
   KING_EDWARD_LOUGHEED_SW,
   LEEDER_UNITED,
   UNITED_MARY_HILL_NW,
@@ -18,16 +20,23 @@ const FAWCETT_UNITED_S = [49.22855, -122.83421];
 const FAWCETT_UNITED_NE = [49.22873, -122.83385];
 const UNITED_S_OF_PORT_MANN = [49.22681, -122.82055];
 
+const W_OF_CLIPPER_UNITED = [49.22961, -122.85494];
 const KING_EDWARD_UNITED_NW = [49.23061, -122.86184];
+const KING_EDWARD_UNITED_SE = [49.2304, -122.86133];
+const KING_EDWARD_UNITED_NE = [49.23061, -122.86133];
 const KING_EDWARD_ELEVATION_START = [49.23141, -122.86171];
-const KING_EDWARD_ELEVATION_END = [49.23318, -122.86179];
+const KING_EDWARD_ELEVATION_END = [49.23293, -122.86177];
+const KING_EDWARD_ELEVATION_START_NB = [49.23133, -122.86145];
+const KING_EDWARD_ELEVATION_END_NB = [49.23288, -122.8615];
+const KING_EDWARD_ELEVATION_START_SB = [49.23293, -122.86172];
+const KING_EDWARD_ELEVATION_END_SB = [49.23141, -122.86167];
 
 export const UNITED = [
   // king edward
   {
-    description: "king edward south end",
-    elevation: 0.5,
+    description: "king edward south end - mup",
     type: "mixed",
+    elevation: 0.5,
     positions: [
       KING_EDWARD_UNITED_NW,
       [49.23068, -122.86176],
@@ -35,13 +44,13 @@ export const UNITED = [
     ],
   },
   {
-    description: "king edward bridge",
+    description: "king edward bridge - mup",
     type: "mixed",
     elevation: 1,
     positions: [KING_EDWARD_ELEVATION_START, KING_EDWARD_ELEVATION_END],
   },
   {
-    description: "king edward bridge north end",
+    description: "king edward bridge north end - mup",
     type: "mixed",
     elevation: 0.5,
     positions: [
@@ -50,6 +59,70 @@ export const UNITED = [
       [49.23428, -122.86192],
       KING_EDWARD_LOUGHEED_SW,
       KING_EDWARD_LOUGHEED_NW,
+    ],
+  },
+
+  {
+    description: "king edward south end - road nb",
+    type: "painted",
+    elevation: 0.5,
+    oneWay: "required",
+    positions: [
+      KING_EDWARD_UNITED_NE,
+      [49.23066, -122.86141],
+      [49.23072, -122.86143],
+      KING_EDWARD_ELEVATION_START_NB,
+    ],
+  },
+  {
+    description: "king edward bridge - road nb",
+    type: "painted",
+    elevation: 1,
+    oneWay: "required",
+    positions: [KING_EDWARD_ELEVATION_START_NB, KING_EDWARD_ELEVATION_END_NB],
+  },
+  {
+    description: "king edward bridge north end - road nb",
+    type: "painted",
+    elevation: 0.5,
+    oneWay: "required",
+    positions: [
+      KING_EDWARD_ELEVATION_END_NB,
+      [49.2333, -122.86145],
+      KING_EDWARD_LOUGHEED_SE,
+      KING_EDWARD_LOUGHEED_NE,
+    ],
+  },
+
+  {
+    description: "king edward south end - road sb",
+    type: "painted",
+    elevation: 0.5,
+    oneWay: "required",
+    positions: [
+      KING_EDWARD_LOUGHEED_SW,
+      [49.23434, -122.86179],
+      KING_EDWARD_ELEVATION_START_SB,
+    ],
+  },
+  {
+    description: "king edward bridge - road sb",
+    type: "painted",
+    elevation: 1,
+    oneWay: "required",
+    positions: [KING_EDWARD_ELEVATION_START_SB, KING_EDWARD_ELEVATION_END_SB],
+  },
+  {
+    description: "king edward bridge north end - road sb",
+    type: "painted",
+    elevation: 0.5,
+    oneWay: "required",
+    positions: [
+      KING_EDWARD_ELEVATION_END_SB,
+      [49.23141, -122.86167],
+      [49.23072, -122.86171],
+      [49.23065, -122.86174],
+      KING_EDWARD_UNITED_NW,
     ],
   },
 
@@ -115,8 +188,55 @@ export const UNITED = [
   },
   {
     routeNames: [ROUTES.united.name],
-    description: "on road, king edward to brigantine",
+    description: "united, s side: king edward to nearly clipper",
+    type: "mixed",
+    positions: [
+      KING_EDWARD_UNITED_NW,
+      [49.23039, -122.86183],
+      KING_EDWARD_UNITED_SE,
+      [49.23041, -122.85941],
+      [49.23037, -122.85919],
+      [49.23037, -122.859],
+      [49.23038, -122.85881],
+      [49.23034, -122.85852],
+      [49.22984, -122.8567],
+      [49.2298, -122.85665],
+      [49.22975, -122.85647],
+      [49.22975, -122.85638],
+      [49.22951, -122.85509],
+      W_OF_CLIPPER_UNITED,
+    ],
+  },
+  {
+    routeNames: [ROUTES.united.name],
+    description: "king edward, crossing united, e side",
+    type: "mixed",
+    positions: [KING_EDWARD_UNITED_SE, KING_EDWARD_UNITED_NE],
+  },
+  {
+    routeNames: [ROUTES.united.name],
+    description: "united, n side: king edward to nearly clipper",
+    type: "mixed",
+    positions: [
+      KING_EDWARD_UNITED_NW,
+      KING_EDWARD_UNITED_NE,
+      [49.23059, -122.85926],
+      [49.23058, -122.85894],
+      [49.23054, -122.85862],
+      [49.23047, -122.85832],
+      [49.23, -122.85658],
+      [49.23, -122.8565],
+      [49.22996, -122.85631],
+      [49.22993, -122.85626],
+      [49.22972, -122.85505],
+      W_OF_CLIPPER_UNITED,
+    ],
+  },
+  {
+    routeNames: [ROUTES.united.name],
+    description: "OLD: on road, king edward to nearly clipper",
     type: "shared",
+    undesignated: true,
     videoIds: [ROUTE_VIDEOS.unitedWB.id, ROUTE_VIDEOS.unitedEB.id],
     positions: [
       KING_EDWARD_UNITED_NW,
@@ -128,7 +248,16 @@ export const UNITED = [
       [49.2299, -122.85646],
       [49.22982, -122.85612],
       [49.22974, -122.85565],
-      [49.22961, -122.85494],
+      W_OF_CLIPPER_UNITED,
+    ],
+  },
+  {
+    routeNames: [ROUTES.united.name],
+    description: "on road, nearly clipper to brigantine",
+    type: "shared",
+    videoIds: [ROUTE_VIDEOS.unitedWB.id, ROUTE_VIDEOS.unitedEB.id],
+    positions: [
+      W_OF_CLIPPER_UNITED,
       [49.22954, -122.85442],
       [49.22935, -122.85259],
       BRIGANTINE_UNITED,
