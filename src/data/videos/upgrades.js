@@ -585,6 +585,20 @@ export const UPGRADE_VIDEOS = {
     position: [49.20812, -122.89242],
     region: REGIONS.newWestminster,
   },
+  cvgStalewasemNb26: {
+    id: "156lt2neWpQ",
+    title: "CVG @ stal̕əw̓asəm Bridge",
+    routeNames: [
+      ROUTES.centralValleyGreenway.name,
+      ROUTES.bcParkway.name,
+      ROUTES.stalewasem.name,
+    ],
+    direction: "northbound",
+    date: new Date("Nov 02 2026"),
+    minutes: 2,
+    position: [49.20887, -122.89927],
+    region: REGIONS.newWestminster,
+  },
   stGeorgeRainwayPhase2Nb26: {
     id: "ZutJUw89EEU",
     title: "St George Rainway - Phase 2",
