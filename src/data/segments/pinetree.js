@@ -14,6 +14,9 @@ export const PINETREE = [
     routeNames: [ROUTES.pinetree.name],
     description: "barnet/lougheed to northern",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.pinetreeNb.id, ROUTE_VIDEOS.pinetreeSb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.pinetreeNb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.pinetreeSb.id],
     positions: [
       PINETREE_BARNET_NW,
       [49.2766, -122.79736],
@@ -31,6 +34,7 @@ export const PINETREE = [
     routeNames: [ROUTES.pinetree.name],
     description: "crossing northern, e",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.pinetreeSb.id],
     positions: [
       PINETREE_NORTHERN_SW,
       [49.28066, -122.79351],
@@ -42,6 +46,7 @@ export const PINETREE = [
     routeNames: [ROUTES.pinetree.name],
     description: "crossing northern, w",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.pinetreeNb.id],
     positions: [
       PINETREE_NORTHERN_SW,
       [49.28087, -122.79352],
@@ -53,6 +58,7 @@ export const PINETREE = [
     routeNames: [ROUTES.pinetree.name],
     description: "northern to guildford",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.pinetreeNb.id, ROUTE_VIDEOS.pinetreeSb.id],
     positions: [
       PINETREE_NORTHERN_NE,
       [49.28113, -122.79301],
@@ -71,7 +77,11 @@ export const PINETREE = [
     routeNames: [ROUTES.pinetree.name],
     description: "crossing guildford",
     type: "dedicated",
-    videoIds: [ROUTE_VIDEOS.guildfordMurrayEb.id],
+    videoIds: [
+      ROUTE_VIDEOS.pinetreeNb.id,
+      ROUTE_VIDEOS.guildfordMurrayEb.id,
+      ROUTE_VIDEOS.pinetreeSb.id,
+    ],
     positions: [
       PINETREE_GUILDFORD_SE,
       [49.28473, -122.79224],
@@ -83,6 +93,9 @@ export const PINETREE = [
     routeNames: [ROUTES.pinetree.name],
     description: "guildford to david",
     type: "mixed",
+    videoIds: [ROUTE_VIDEOS.pinetreeNb.id, ROUTE_VIDEOS.pinetreeSb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.pinetreeSb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.pinetreeNb.id],
     positions: [
       PINETREE_GUILDFORD_NE,
       [49.28513, -122.79209],
@@ -115,6 +128,8 @@ export const PINETREE = [
       [49.29279, -122.78674],
       [49.29281, -122.78667],
       [49.29284, -122.78664],
+      [49.29277, -122.78615],
+      [49.29275, -122.78583],
     ],
   },
 ];

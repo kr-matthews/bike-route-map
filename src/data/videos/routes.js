@@ -1961,6 +1961,18 @@ export const ROUTE_VIDEOS = {
     date: new Date("May 31 2024"),
     minutes: 2,
   },
+  pinetreeNb: {
+    id: "tCF20UiGXYs",
+    tlId: "vnYxbCrInCc",
+    date: new Date("Nov 07 2026"),
+    minutes: 10,
+  },
+  pinetreeSb: {
+    id: "zrauS8TDBps",
+    tlId: "mASAvm1D6ZA",
+    date: new Date("Nov 07 2026"),
+    minutes: 11,
+  },
   pittRiverBridgeEb: {
     id: "oazSL5osCX0",
     date: new Date("May 25 2024"),

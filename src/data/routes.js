@@ -2805,8 +2805,16 @@ export const ROUTES = {
   pinetree: {
     name: "Pinetree Way",
     regions: [REGIONS.coquitlam],
-    legs: [{ videos: {} }],
-    notes: "A relatively flat MUP through a fairly busy area.",
+    legs: [
+      {
+        videos: {
+          northbound: ROUTE_VIDEOS.pinetreeNb,
+          southbound: ROUTE_VIDEOS.pinetreeSb,
+        },
+      },
+    ],
+    notes:
+      "The south portion is a relatively flat MUP through a fairly busy area, with many sections which indicate separation between cyclists and pedestrians, but most pedestrians seem unaware of this. The north portion is a gentle climb along a park.",
   },
   pittRiverBridge: {
     name: "Pitt River Bridge",
