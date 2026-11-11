@@ -2486,6 +2486,11 @@ export const ROUTE_VIDEOS = {
     date: new Date("July 31 2025"),
     minutes: 0,
   },
+  stGeorgeNb26: {
+    id: "EuUgrss3C-4",
+    date: new Date("Nov 05 2026"),
+    minutes: 2,
+  },
   stGeorgeSb: {
     id: "HS3pKK0D19I",
     date: new Date("Nov 05 2026"),

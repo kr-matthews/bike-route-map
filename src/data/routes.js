@@ -3081,7 +3081,10 @@ export const ROUTES = {
     legs: [
       {
         name: "Phases 1 & 2: 10th Ave <-> 6th Ave",
-        videos: { southbound: ROUTE_VIDEOS.stGeorgeSb },
+        videos: {
+          northbound: ROUTE_VIDEOS.stGeorgeNb26,
+          southbound: ROUTE_VIDEOS.stGeorgeSb,
+        },
       },
       {
         name: "Phase 1: 8th Ave <-> 6th Ave",
