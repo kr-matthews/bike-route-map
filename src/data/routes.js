@@ -2063,6 +2063,22 @@ export const ROUTES = {
     notes:
       "Flat in the middle with significant climbs out in either direction. The painted lanes are usually beside parked cars. The intersection at Arbutus was improved in late 2024. In 2025 the route was extending west from Quesnel Dr to Dunbar St.",
   },
+  kingEdwardSt: {
+    name: "King Edward St",
+    regions: [REGIONS.coquitlam],
+    legs: [
+      {
+        name: "MUP",
+        videos: {},
+      },
+      {
+        name: "Roadway",
+        videos: {},
+      },
+    ],
+    notes:
+      "An overpass of Hwy 1 and the railway, with painted lanes on both sides and a MUP on the west side.",
+  },
   kingswayPortCoquitlam: {
     name: "Kingsway Ave",
     regions: [REGIONS.portCoquitlam],
