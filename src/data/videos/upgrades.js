@@ -585,4 +585,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.20812, -122.89242],
     region: REGIONS.newWestminster,
   },
+  stGeorgeRainwayPhase2Nb26: {
+    id: "ZutJUw89EEU",
+    title: "St George Rainway - Phase 2",
+    routeNames: [ROUTES.stGeorge.name],
+    direction: "northbound",
+    date: new Date("Nov 05 2026"),
+    minutes: 1,
+    position: [49.26277, -123.09301],
+    region: REGIONS.vancouver,
+  },
 };
