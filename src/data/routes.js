@@ -2069,11 +2069,11 @@ export const ROUTES = {
     legs: [
       {
         name: "MUP",
-        videos: {},
+        videos: { southbound: ROUTE_VIDEOS.kingEdwardStMupSb },
       },
       {
         name: "Roadway",
-        videos: {},
+        videos: { northbound: ROUTE_VIDEOS.kingEdwardStNb },
       },
     ],
     notes:

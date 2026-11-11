@@ -7,6 +7,7 @@ import {
   KING_EDWARD_UNITED_NW,
 } from "../intersections";
 import { ROUTES } from "../routes";
+import { ROUTE_VIDEOS } from "../videos/routes";
 
 const KING_EDWARD_ELEVATION_START = [49.23141, -122.86171];
 const KING_EDWARD_ELEVATION_END = [49.23293, -122.86177];
@@ -21,6 +22,8 @@ export const KING_EDWARD_ST = [
     description: "south end - mup",
     type: "mixed",
     elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.kingEdwardStMupSb.id],
+    videoIdsEndAtStart: [ROUTE_VIDEOS.kingEdwardStMupSb.id],
     positions: [
       KING_EDWARD_UNITED_NW,
       [49.23068, -122.86176],
@@ -32,6 +35,7 @@ export const KING_EDWARD_ST = [
     description: "bridge - mup",
     type: "mixed",
     elevation: 1,
+    videoIds: [ROUTE_VIDEOS.kingEdwardStMupSb.id],
     positions: [KING_EDWARD_ELEVATION_START, KING_EDWARD_ELEVATION_END],
   },
   {
@@ -39,6 +43,8 @@ export const KING_EDWARD_ST = [
     description: "north end - mup",
     type: "mixed",
     elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.kingEdwardStMupSb.id],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.kingEdwardStMupSb.id],
     positions: [
       KING_EDWARD_ELEVATION_END,
       [49.23416, -122.86184],
@@ -54,6 +60,8 @@ export const KING_EDWARD_ST = [
     type: "painted",
     elevation: 0.5,
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.kingEdwardStNb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.kingEdwardStNb.id],
     positions: [
       KING_EDWARD_UNITED_NE,
       [49.23066, -122.86141],
@@ -67,6 +75,7 @@ export const KING_EDWARD_ST = [
     type: "painted",
     elevation: 1,
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.kingEdwardStNb.id],
     positions: [KING_EDWARD_ELEVATION_START_NB, KING_EDWARD_ELEVATION_END_NB],
   },
   {
@@ -75,6 +84,8 @@ export const KING_EDWARD_ST = [
     type: "painted",
     elevation: 0.5,
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.kingEdwardStNb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.kingEdwardStNb.id],
     positions: [
       KING_EDWARD_ELEVATION_END_NB,
       [49.2333, -122.86145],

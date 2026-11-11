@@ -1469,6 +1469,16 @@ export const ROUTE_VIDEOS = {
     date: new Date("Jun 24 2026"),
     minutes: 4,
   },
+  kingEdwardStNb: {
+    id: "G0v0C40d7IU",
+    date: new Date("Nov 07 2026"),
+    minutes: 1,
+  },
+  kingEdwardStMupSb: {
+    id: "MaYa1e04gUo",
+    date: new Date("Nov 07 2026"),
+    minutes: 2,
+  },
   kingswayPortCoquitlamEb: {
     id: "xKlP438V_cY",
     tlId: "FV16edIPYXk",
