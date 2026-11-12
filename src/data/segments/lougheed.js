@@ -409,7 +409,7 @@ export const LOUGHEED = [
   },
   {
     routeNames: [ROUTES.lougheed.name],
-    description: "eb: woolridge to elevation",
+    description: "eb: woolridge to king edward",
     type: "shoulder",
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.lougheedEb.id],
@@ -418,6 +418,17 @@ export const LOUGHEED = [
       [49.23551, -122.86702],
       [49.23502, -122.86483],
       [49.23446, -122.8622],
+      KING_EDWARD_LOUGHEED_SW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "eb: king edward to elevation",
+    type: "shoulder",
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.lougheedCoquitlamEb.id, ROUTE_VIDEOS.lougheedEb.id],
+    videoIdsStartAtStart: [ROUTE_VIDEOS.lougheedCoquitlamEb.id],
+    positions: [
       KING_EDWARD_LOUGHEED_SW,
       KING_EDWARD_LOUGHEED_SE,
       [49.23347, -122.85737],
@@ -434,7 +445,7 @@ export const LOUGHEED = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedCoquitlamEb.id, ROUTE_VIDEOS.lougheedEb.id],
     positions: [EASTBOUND_ELEVATION_1_PRE, EASTBOUND_ELEVATION_1_START],
   },
   {
@@ -443,7 +454,7 @@ export const LOUGHEED = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
-    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedCoquitlamEb.id, ROUTE_VIDEOS.lougheedEb.id],
     positions: [
       EASTBOUND_ELEVATION_1_START,
       [49.23068, -122.84714],
@@ -458,7 +469,7 @@ export const LOUGHEED = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedCoquitlamEb.id, ROUTE_VIDEOS.lougheedEb.id],
     positions: [EASTBOUND_ELEVATION_1_END, EASTBOUND_ELEVATION_1_POST],
   },
   {
@@ -466,7 +477,7 @@ export const LOUGHEED = [
     description: "eb: between elevations",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [ROUTE_VIDEOS.lougheedEb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedCoquitlamEb.id, ROUTE_VIDEOS.lougheedEb.id],
     positions: [
       EASTBOUND_ELEVATION_1_POST,
       [49.22985, -122.84442],
@@ -479,6 +490,7 @@ export const LOUGHEED = [
     description: "eb: continuing past united exit",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.lougheedCoquitlamEb.id],
     positions: [
       EASTBOUND_ELEVATION_2_PRE,
       [49.22934, -122.83994],
@@ -506,6 +518,7 @@ export const LOUGHEED = [
     description: "eb: under 2nd united exit",
     type: "dedicated",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.lougheedCoquitlamEb.id],
     positions: [
       UNITED_BLVD_OFF_RAMP_2_START,
       [49.23509, -122.82348],
@@ -522,6 +535,7 @@ export const LOUGHEED = [
     description: "eb: continuing past 2nd united exit, to colony farm",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.lougheedCoquitlamEb.id],
     positions: [
       UNITED_BLVD_OFF_RAMP_2_END,
       [49.23664, -122.82061],
@@ -539,12 +553,17 @@ export const LOUGHEED = [
     description: "crossing lougheed at colony farm",
     type: "quiet",
     oneWay: "recommended",
+    videoIds: [ROUTE_VIDEOS.lougheedCoquitlamEb.id],
     positions: [COLONY_FARM_LOUGHEED_SE, COLONY_FARM_LOUGHEED_N],
   },
   {
     routeNames: [ROUTES.lougheed.name],
     description: "riverview: colony farm to bike path",
     type: "quiet",
+    videoIds: [
+      ROUTE_VIDEOS.lougheedCoquitlamEb.id,
+      ROUTE_VIDEOS.lougheedCoquitlamWb.id,
+    ],
     positions: [
       COLONY_FARM_LOUGHEED_N,
       [49.24056, -122.81424],
@@ -582,6 +601,12 @@ export const LOUGHEED = [
     routeNames: [ROUTES.lougheed.name],
     description: "bike path (from riverview)",
     type: "mixed",
+    videoIds: [
+      ROUTE_VIDEOS.lougheedCoquitlamWb.id,
+      ROUTE_VIDEOS.lougheedCoquitlamEb.id,
+    ],
+    videoIdsStartAtEnd: [ROUTE_VIDEOS.lougheedCoquitlamWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.lougheedCoquitlamEb.id],
     positions: [
       RIVERVIEW_LOUGHEED_PATH,
       [49.25299, -122.80118],
@@ -761,6 +786,7 @@ export const LOUGHEED = [
     description: "wb: from colony road",
     type: "shoulder",
     oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.lougheedCoquitlamWb.id],
     positions: [
       COLONY_FARM_LOUGHEED_N,
       [49.24015, -122.81421],
@@ -800,6 +826,7 @@ export const LOUGHEED = [
     type: "dedicated",
     oneWay: "required",
     elevation: 0.5,
+    videoIds: [ROUTE_VIDEOS.lougheedCoquitlamWb.id],
     positions: [
       CAPE_HORN_CONNECTION_START,
       [49.23179, -122.83199],
@@ -815,6 +842,7 @@ export const LOUGHEED = [
     type: "dedicated",
     oneWay: "required",
     elevation: 1,
+    videoIds: [ROUTE_VIDEOS.lougheedCoquitlamWb.id],
     positions: [
       CAPE_HORN_CONNECTION_MID,
       [49.23012, -122.83461],
@@ -827,7 +855,7 @@ export const LOUGHEED = [
     type: "shoulder",
     oneWay: "required",
     elevation: 1,
-    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id, ROUTE_VIDEOS.lougheedCoquitlamWb.id],
     positions: [PORT_MANN_CONNECTION_JOIN, WESTBOUND_ELEVATION_1_END],
   },
   {
@@ -836,15 +864,16 @@ export const LOUGHEED = [
     type: "shoulder",
     oneWay: "required",
     elevation: 0.5,
-    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id, ROUTE_VIDEOS.lougheedCoquitlamWb.id],
     positions: [WESTBOUND_ELEVATION_1_END, WESTBOUND_ELEVATION_1_POST],
   },
   {
     routeNames: [ROUTES.lougheed.name],
-    description: "wb: elevation to woolridge",
+    description: "wb: elevation to king edward",
     type: "shoulder",
     oneWay: "required",
-    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id, ROUTE_VIDEOS.lougheedCoquitlamWb.id],
+    videoIdsEndAtEnd: [ROUTE_VIDEOS.lougheedCoquitlamWb.id],
     positions: [
       WESTBOUND_ELEVATION_1_POST,
       [49.23025, -122.8389],
@@ -862,6 +891,16 @@ export const LOUGHEED = [
       [49.23358, -122.85667],
       [49.23392, -122.85845],
       KING_EDWARD_LOUGHEED_NE,
+      KING_EDWARD_LOUGHEED_NW,
+    ],
+  },
+  {
+    routeNames: [ROUTES.lougheed.name],
+    description: "wb: king edward to woolridge",
+    type: "shoulder",
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.lougheedWb.id],
+    positions: [
       KING_EDWARD_LOUGHEED_NW,
       [49.23518, -122.8646],
       [49.23594, -122.86795],

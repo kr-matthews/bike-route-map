@@ -1588,6 +1588,18 @@ export const ROUTE_VIDEOS = {
     date: new Date("May 26 2024"),
     minutes: 52,
   },
+  lougheedCoquitlamEb: {
+    id: "Q43p0Y_EjDY",
+    tlId: "VHFle5Tyt-k",
+    date: new Date("Nov 07 2026"),
+    minutes: 30,
+  },
+  lougheedCoquitlamWb: {
+    id: "QQ5nulSsMFk",
+    tlId: "cnOz76NXVQ8",
+    date: new Date("Nov 07 2026"),
+    minutes: 26,
+  },
   lostLagoonEb: {
     id: "ogyNA_swBTw",
     date: new Date("Apr 26 2024"),

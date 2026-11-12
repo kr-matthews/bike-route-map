@@ -2215,8 +2215,11 @@ export const ROUTES = {
         },
       },
       {
-        name: "Coquitlam: Trans-Canada Hwy Interchange <-> Colony Farm Rd/Riverview Hospital",
-        videos: {},
+        name: "Coquitlam: Cape Horn Interchange <-> Coquitlam Town Centre",
+        videos: {
+          eastbound: ROUTE_VIDEOS.lougheedCoquitlamEb,
+          westbound: ROUTE_VIDEOS.lougheedCoquitlamWb,
+        },
       },
     ],
     notes:
