@@ -2,6 +2,7 @@ import {
   CRANLEY_MARINE,
   GREENLEAF_WESTPORT,
   KEITH_MARINE,
+  LIONS_GATE_LOOP_W,
   MARINE_GREENLEAF,
   MARINE_MARINE_MARINE,
   RALEIGH_CHATHAM,
@@ -33,6 +34,10 @@ const PICCADILLY_S_MARINE = [49.34106, -123.24838];
 const PICCADILLY_N_MARINE = [49.34106, -123.24738];
 const TWENTY_SIXTH_MARINE_E = [49.33568, -123.18545];
 const MARINE_BEYOND_13TH = [49.32737, -123.15029];
+const EB_PRE_TAYLOR = [49.32696, -123.13699];
+const CAPILANO_BRIDGE_E = [49.32673, -123.13076];
+const CAPILANO_BRIDGE_W = [49.32712, -123.13242];
+const TAYLOR_MARINE_NE = [49.32731, -123.13472];
 const PARK_ROYAL_MARINE_NW = [49.32699, -123.14053];
 
 export const MARINE_WV = [
@@ -884,7 +889,7 @@ export const MARINE_WV = [
   },
   {
     routeNames: [ROUTES.marineWv.name],
-    description: "beyond 13th to taylor",
+    description: "beyond 13th to nearly taylor",
     type: "shared",
     oneWay: "required",
     positions: [
@@ -901,7 +906,72 @@ export const MARINE_WV = [
       [49.32678, -123.14053],
       [49.32679, -123.14037],
       [49.32692, -123.13778],
-      [49.32705, -123.13495],
+      EB_PRE_TAYLOR,
+    ],
+  },
+  {
+    routeNames: [ROUTES.marineWv.name],
+    description: "eb just before taylor",
+    type: "dedicated",
+    oneWay: "required",
+    positions: [
+      EB_PRE_TAYLOR,
+      [49.32693, -123.1369],
+      [49.32698, -123.13587],
+      [49.32697, -123.13543],
+      [49.32698, -123.13513],
+    ],
+  },
+
+  {
+    description: "6th st <-> capilano river",
+    type: "mixed",
+    elevation: 0.5,
+    positions: [
+      [49.3274, -123.13294],
+      [49.32734, -123.13294],
+      CAPILANO_BRIDGE_W,
+    ],
+  },
+
+  {
+    description: "lions gate loops to capilano river",
+    type: "mixed",
+    elevation: 0.5,
+    positions: [
+      LIONS_GATE_LOOP_W,
+      [49.32658, -123.12934],
+      [49.32653, -123.12943],
+      [49.3265, -123.12958],
+      [49.32652, -123.12978],
+      [49.32661, -123.13018],
+      [49.32665, -123.13042],
+      CAPILANO_BRIDGE_E,
+    ],
+  },
+  {
+    description: "capilano river bridge",
+    type: "mixed",
+    elevation: 1,
+    positions: [CAPILANO_BRIDGE_E, CAPILANO_BRIDGE_W],
+  },
+  {
+    routeNames: [ROUTES.marineWv.name],
+    description: "capilano river to taylor",
+    type: "dedicated",
+    oneWay: "required",
+    elevation: 0.5,
+    positions: [
+      CAPILANO_BRIDGE_W,
+      [49.32717, -123.13264],
+      [49.32726, -123.13301],
+      [49.3273, -123.13325],
+      [49.32733, -123.13352],
+      [49.32734, -123.13379],
+      [49.32734, -123.13441],
+      [49.32737, -123.13458],
+      [49.32731, -123.13464],
+      TAYLOR_MARINE_NE,
     ],
   },
   {
@@ -910,6 +980,7 @@ export const MARINE_WV = [
     type: "shared",
     oneWay: "required",
     positions: [
+      TAYLOR_MARINE_NE,
       [49.32725, -123.13495],
       [49.32712, -123.13778],
       [49.327, -123.14036],

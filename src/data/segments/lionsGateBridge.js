@@ -1,6 +1,7 @@
 import {
   CHILCO_GEORGIA_S,
   LIONS_GATE_KLAHANIE,
+  LIONS_GATE_LOOP_W,
   LIONS_GATE_NB_OFF_RAMP_SPLIT,
   LIONS_GATE_SPIRIT_TRAIL_E,
   LIONS_GATE_SPIRIT_TRAIL_W,
@@ -386,7 +387,7 @@ export const LIONS_GATE_BRIDGE = [
       [49.3268, -123.13],
       [49.32665, -123.12949],
       [49.32664, -123.12942],
-      [49.32664, -123.12933],
+      LIONS_GATE_LOOP_W,
       [49.32667, -123.12928],
       [49.32706, -123.12899],
       [49.32714, -123.12881],
@@ -404,7 +405,7 @@ export const LIONS_GATE_BRIDGE = [
   {
     description: "connection from marine westbound",
     type: "mixed",
-    oneWay: "required",
+    oneWay: "recommended",
     videoIds: [ROUTE_VIDEOS.marineNvWb.id],
     positions: [
       NV_MARINE_W_N,

@@ -24,6 +24,7 @@ import {
 import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
+const EB_MUP_START = [49.3254, -123.12686];
 const EB_MUP_END = [49.32451, -123.12375];
 const EB_PRE_FELL = [49.32137, -123.09548];
 const WB_PRE_15TH = [49.32197, -123.09664];
@@ -40,10 +41,9 @@ const W_OF_BEWICKE = [49.3204, -123.09214];
 export const MARINE_NV = [
   // eb
   {
-    routeNames: [ROUTES.marineNv.name],
-    description: "from lions gate bridge to pre-capilano",
+    description: "from lions gate bridge to marine mup",
     type: "dedicated",
-    oneWay: "required",
+    oneWay: "recommended",
     videoIds: [ROUTE_VIDEOS.marineNvEb.id],
     positions: [
       LIONS_GATE_NB_OFF_RAMP_SPLIT,
@@ -51,9 +51,16 @@ export const MARINE_NV = [
       [49.3256, -123.12812],
       [49.32558, -123.12785],
       [49.32547, -123.12725],
-      [49.3254, -123.12686],
-      EB_MUP_END,
+      EB_MUP_START,
     ],
+  },
+  {
+    routeNames: [ROUTES.marineNv.name],
+    description: "eb: marine mup",
+    type: "mixed",
+    oneWay: "recommended",
+    videoIds: [ROUTE_VIDEOS.marineNvEb.id],
+    positions: [EB_MUP_START, EB_MUP_END],
   },
   {
     routeNames: [ROUTES.marineNv.name],
