@@ -609,4 +609,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.26277, -123.09301],
     region: REGIONS.vancouver,
   },
+  seasideProspectPoint26: {
+    id: "2QAfKePs66g",
+    title: "Seaside @ Prospect Point",
+    routeNames: [ROUTES.stanleyParkLoop.name, ROUTES.seaside.name],
+    direction: "counter-clockwise",
+    date: new Date("Nov 16 2026"),
+    minutes: 1,
+    position: [49.31405, -123.14154],
+    region: REGIONS.vancouver,
+  },
 };
