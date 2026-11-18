@@ -118,6 +118,10 @@ export function getSegmentPane(elevation, type, hasMultipleRoutes) {
   const isSeparated = ["dedicated", "mixed", "combined"].includes(type);
 
   switch (elevation) {
+    case 3:
+      return "elevated-3";
+    case 2.5:
+      return "elevated-3-adj";
     case 2:
       return "elevated-2";
     case 1.5:
@@ -140,6 +144,9 @@ export function getSegmentPane(elevation, type, hasMultipleRoutes) {
 
 export function getBorderPane(elevation) {
   switch (elevation) {
+    case 3:
+      return "elevated-3-border";
+    case 2.5:
     case 2:
       return "elevated-2-border";
     case 1.5:

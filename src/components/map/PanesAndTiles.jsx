@@ -8,6 +8,11 @@ export default function PanesAndTiles() {
 
   return (
     <Fragment>
+      <Pane name="elevated-3" style={{ zIndex: 344 }} />
+      <Pane name="elevated-3-arrow" style={{ zIndex: 343 }} />
+      <Pane name="elevated-3-adj" style={{ zIndex: 342 }} />
+      <Pane name="elevated-3-adj-arrow" style={{ zIndex: 341 }} />
+      <Pane name="elevated-3-border" style={{ zIndex: 340 }} />
       <Pane name="elevated-2" style={{ zIndex: 334 }} />
       <Pane name="elevated-2-arrow" style={{ zIndex: 333 }} />
       <Pane name="elevated-2-adj" style={{ zIndex: 332 }} />
