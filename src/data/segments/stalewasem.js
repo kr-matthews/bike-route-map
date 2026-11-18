@@ -12,9 +12,17 @@ import { ROUTE_VIDEOS } from "../videos/routes";
 const WEST_SIDE_ELEVATION_START = [49.21015, -122.8989];
 const WEST_SIDE_ELEVATION_BUMP_1 = [49.20986, -122.89794];
 const WEST_SIDE_ELEVATION_BUMP_2 = [49.2096, -122.89696];
+const W_SIDE_SWERVE = [49.20634, -122.88756];
+const W_SIDE_OVER_TRAIN = [49.20608, -122.88689];
 const WEST_SIDE_SPLIT = [49.20548, -122.88573];
 const WEST_SIDE_POST_SPLIT_UPPER = [49.2056, -122.88567];
+const WEST_SIDE_POST_POST_SPLIT_UPPER = [49.20576, -122.8856];
+const WEST_SIDE_PRE_ELEVATION_END = [49.20586, -122.88517];
 const WEST_UPPER_ELEVATION_END = [49.20586, -122.8822];
+const LOWER_EXIT_POST_SPLIT = [49.20552, -122.88562];
+const LOWER_EXIT_POST_POST_SPLIT = [49.20528, -122.88509];
+const LOWER_EXIT_POST_POST_POST_SPLIT = [49.20519, -122.88515];
+const LOWER_EXIT_ELEVATION_END = [49.20574, -122.88506];
 
 const ONE_24_112_N = [49.2065, -122.87866];
 const STALEWASEM_NE = [49.20627, -122.87996];
@@ -74,8 +82,27 @@ export const STALEWASEM = [
     positions: [
       WEST_SIDE_ELEVATION_BUMP_2,
       [49.20804, -122.89245],
-      [49.20634, -122.88756],
-      [49.20608, -122.88689],
+      W_SIDE_SWERVE,
+    ],
+  },
+  {
+    routeNames: [ROUTES.stalewasem.name, ROUTES.bcParkway.name],
+    description: "west - swerve bit",
+    type: "combined",
+    elevation: 2.5,
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
+    positions: [W_SIDE_SWERVE, W_SIDE_OVER_TRAIN],
+  },
+  {
+    routeNames: [ROUTES.stalewasem.name, ROUTES.bcParkway.name],
+    description: "west - layer 3",
+    type: "combined",
+    elevation: 3,
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
+    positions: [
+      W_SIDE_OVER_TRAIN,
       [49.20598, -122.88654],
       [49.20573, -122.88581],
       [49.20556, -122.88541],
@@ -84,11 +111,80 @@ export const STALEWASEM = [
       WEST_SIDE_SPLIT,
     ],
   },
+
+  // west lower exit
+  {
+    routeNames: [ROUTES.stalewasem.name],
+    description: "west - lower exit part 1",
+    type: "mixed",
+    elevation: 2.5,
+    positions: [WEST_SIDE_SPLIT, LOWER_EXIT_POST_SPLIT],
+  },
+  {
+    routeNames: [ROUTES.stalewasem.name],
+    description: "west - lower exit part 2",
+    type: "mixed",
+    elevation: 2,
+    positions: [
+      LOWER_EXIT_POST_SPLIT,
+      [49.20557, -122.88549],
+      [49.20552, -122.88562],
+      [49.20557, -122.88549],
+      LOWER_EXIT_POST_POST_SPLIT,
+    ],
+  },
+  {
+    routeNames: [ROUTES.stalewasem.name],
+    description: "west - lower exit part 3",
+    type: "mixed",
+    elevation: 1.5,
+    positions: [LOWER_EXIT_POST_POST_SPLIT, LOWER_EXIT_POST_POST_POST_SPLIT],
+  },
+  {
+    routeNames: [ROUTES.stalewasem.name],
+    description: "west - lower exit part 4",
+    type: "mixed",
+    elevation: 1,
+    positions: [
+      LOWER_EXIT_POST_POST_POST_SPLIT,
+      [49.20549, -122.88568],
+      [49.20574, -122.88556],
+      LOWER_EXIT_ELEVATION_END,
+    ],
+  },
+  {
+    description: "bridge rd",
+    type: "mixed",
+    elevation: 0.5,
+    positions: [
+      LOWER_EXIT_ELEVATION_END,
+      [49.20574, -122.88491],
+      [49.20571, -122.8848],
+      [49.20567, -122.88474],
+      [49.20558, -122.88473],
+      [49.20527, -122.8848],
+      [49.20495, -122.88489],
+      [49.20468, -122.88506],
+      [49.20421, -122.88551],
+      [49.20401, -122.88578],
+      [49.20387, -122.88603],
+      [49.20373, -122.88636],
+      [49.2036, -122.8866],
+      [49.20347, -122.88677],
+      [49.2033, -122.88695],
+      [49.20301, -122.88711],
+      [49.2027, -122.88729],
+      [49.20242, -122.88752],
+      [49.20189, -122.88808],
+    ],
+  },
+
+  // west upper exit
   {
     routeNames: [ROUTES.stalewasem.name, ROUTES.bcParkway.name],
     description: "west - upper exit part 1",
     type: "combined",
-    elevation: 1.5,
+    elevation: 2.5,
     oneWay: "required",
     hideArrows: true,
     videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
@@ -98,19 +194,32 @@ export const STALEWASEM = [
     routeNames: [ROUTES.stalewasem.name, ROUTES.bcParkway.name],
     description: "west - upper exit part 2",
     type: "combined",
-    elevation: 1,
+    elevation: 2,
     oneWay: "required",
     videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
-    positions: [
-      WEST_SIDE_POST_SPLIT_UPPER,
-      [49.20576, -122.8856],
-      [49.20586, -122.88517],
-      WEST_UPPER_ELEVATION_END,
-    ],
+    positions: [WEST_SIDE_POST_SPLIT_UPPER, WEST_SIDE_POST_POST_SPLIT_UPPER],
   },
   {
     routeNames: [ROUTES.stalewasem.name, ROUTES.bcParkway.name],
     description: "west - upper exit part 3",
+    type: "combined",
+    elevation: 1.5,
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
+    positions: [WEST_SIDE_POST_POST_SPLIT_UPPER, WEST_SIDE_PRE_ELEVATION_END],
+  },
+  {
+    routeNames: [ROUTES.stalewasem.name, ROUTES.bcParkway.name],
+    description: "west - upper exit part 4",
+    type: "combined",
+    elevation: 1,
+    oneWay: "required",
+    videoIds: [ROUTE_VIDEOS.stalewasemWestSb.id],
+    positions: [WEST_SIDE_PRE_ELEVATION_END, WEST_UPPER_ELEVATION_END],
+  },
+  {
+    routeNames: [ROUTES.stalewasem.name, ROUTES.bcParkway.name],
+    description: "west - upper exit part 5",
     type: "combined",
     elevation: 0.5,
     oneWay: "required",
