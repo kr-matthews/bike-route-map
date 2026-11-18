@@ -1,6 +1,7 @@
 import {
   MCBRIDE_COLUMBIA_NE,
   MCBRIDE_COLUMBIA_NW,
+  MCBRIDE_ROYAL_SW,
   MILLENNIUM_MEMORIAL_OVERPASS,
   STALEWASEM_111A_N_N,
   STALEWASEM_E_END,
@@ -31,7 +32,6 @@ const EAST_SIDE_ELEVATION_END = [49.21125, -122.89823];
 const MCBRIDE_EAST_SIDE = [49.21152, -122.89838];
 
 const MCBRIDE_ROYAL_SE = [49.21208, -122.89877];
-const MCBRIDE_ROYAL_SW = [49.21198, -122.89896];
 const MCBRIDE_MEMORIAL_SE = [49.21503, -122.90243];
 const MEMORIAL_OVERPASS_E = [49.21471, -122.90195];
 const MEMORIAL_OVERPASS_W = [49.21451, -122.90258];
@@ -404,18 +404,6 @@ export const STALEWASEM = [
     type: "mixed",
     videoIds: [ROUTE_VIDEOS.stalewasemEastSb.id],
     positions: [MCBRIDE_ROYAL_SW, MCBRIDE_ROYAL_SE],
-  },
-  {
-    description: "royal s - bushby to mcbride",
-    videoIds: [ROUTE_VIDEOS.stalewasemEastNb.id],
-    videoIdsEndAtStart: [ROUTE_VIDEOS.stalewasemEastNb.id],
-    type: "mixed",
-    positions: [
-      [49.21137, -122.90007],
-      [49.21166, -122.89952],
-      [49.21174, -122.89942],
-      MCBRIDE_ROYAL_SW,
-    ],
   },
   {
     description: "mcbride e - royal to memorial-ish",
