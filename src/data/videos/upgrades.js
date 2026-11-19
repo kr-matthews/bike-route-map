@@ -609,6 +609,16 @@ export const UPGRADE_VIDEOS = {
     position: [49.26277, -123.09301],
     region: REGIONS.vancouver,
   },
+  unitedKingEdward26: {
+    id: "jTDUooMgQkk",
+    title: "United Blvd near King Edward St",
+    routeNames: [ROUTES.united.name],
+    direction: "eastbound", // technically also westbound...
+    date: new Date("Nov 07 2026"),
+    minutes: 2,
+    position: [49.23042, -122.85846],
+    region: REGIONS.coquitlam,
+  },
   seasideProspectPoint26: {
     id: "2QAfKePs66g",
     title: "Seaside @ Prospect Point",
