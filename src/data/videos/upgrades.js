@@ -629,4 +629,14 @@ export const UPGRADE_VIDEOS = {
     position: [49.31405, -123.14154],
     region: REGIONS.vancouver,
   },
+  arbutusGreenway41stNb26: {
+    id: "AdDjrSGvqaY",
+    title: "Arbutus Greenway @ 41st Ave",
+    routeNames: [ROUTES.arbutusGreenway.name],
+    direction: "northbound",
+    date: new Date("Nov 24 2026"),
+    minutes: 1,
+    position: [49.23467, -123.1552],
+    region: REGIONS.vancouver,
+  },
 };
