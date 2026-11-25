@@ -26,13 +26,11 @@ import { ROUTES } from "../routes";
 import { ROUTE_VIDEOS } from "../videos/routes";
 
 const ARBUTUS_GREENWAY_8TH = [49.26473, -123.15236];
-const ARBUTUS_GREENWAY_41ST_S = [49.23448, -123.1553];
-const EAST_BLVD_41ST_SW = [49.23448, -123.15515];
 
 export const ARBUTUS_GREENWAY = [
   {
     routeNames: [ROUTES.arbutusGreenway.name],
-    description: "south of 41st",
+    description: "south of 10th",
     type: "combined",
     videoIds: [ROUTE_VIDEOS.arbutusGreenwayNb.id],
     positions: [
@@ -86,25 +84,11 @@ export const ARBUTUS_GREENWAY = [
       [49.23093, -123.15526],
       [49.23106, -123.15542],
       [49.23278, -123.15535],
-      ARBUTUS_GREENWAY_41ST_S,
-    ],
-  },
-  {
-    routeNames: [ROUTES.arbutusGreenway.name],
-    description: "41st sidewalk",
-    type: "other",
-    videoIds: [ROUTE_VIDEOS.arbutusGreenwayNb.id],
-    positions: [ARBUTUS_GREENWAY_41ST_S, EAST_BLVD_41ST_SW],
-  },
-  {
-    routeNames: [ROUTES.arbutusGreenway.name],
-    description: "41st to 10th",
-    type: "combined",
-    videoIds: [ROUTE_VIDEOS.arbutusGreenwayNb.id],
-    positions: [
-      EAST_BLVD_41ST_SW,
-      [49.23468, -123.15515],
-      [49.23468, -123.15529],
+      [49.23416, -123.1553],
+      [49.23427, -123.1553],
+      [49.23448, -123.15515],
+      [49.2349, -123.15514],
+      [49.23513, -123.15527],
       [49.2364, -123.15521],
       [49.23814, -123.15517],
       [49.23823, -123.15533],
